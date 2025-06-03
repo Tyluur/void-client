@@ -25,14 +25,14 @@ final class Class192 {
             i_0_ = 0;
             i_1_ = 3;
         } else i_0_ = i_1_ = Class167.anInt2204;
-        client.method115();
+        GameClient.method115();
         for (int i_2_ = i_0_; i_2_ <= i_1_; i_2_++) {
-            client.method109();
-            client.method117(i_2_);
-            client.method104(i_2_);
+            GameClient.method109();
+            GameClient.method117(i_2_);
+            GameClient.method104(i_2_);
         }
-        client.method106();
-        if (i == -14988) client.method112();
+        GameClient.method106();
+        if (i == -14988) GameClient.method112();
     }
 
     final void method1435(byte i) {

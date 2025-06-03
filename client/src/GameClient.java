@@ -8,7 +8,7 @@ import java.net.Socket;
 import java.util.GregorianCalendar;
 import java.util.Vector;
 
-public final class client extends Applet_Sub1 {
+public final class GameClient extends BaseApplet {
     static int anInt5170;
     static int anInt5171 = 0;
     static int anInt5172;
@@ -163,7 +163,7 @@ public final class client extends Applet_Sub1 {
         }
         Class3.aClass161_125 = Class135_Sub2.aClass161_4839;
         try {
-            Class348_Sub40_Sub27.aClipboard9357 = Class79.aClient1367.getToolkit().getSystemClipboard();
+            Class348_Sub40_Sub27.aClipboard9357 = Class79.gameClient.getToolkit().getSystemClipboard();
         } catch (Exception exception) {
             /* empty */
         }
@@ -209,7 +209,7 @@ public final class client extends Applet_Sub1 {
         Class348.method2713(0);
         Class107.method1004((byte) 16);
         Class356.method3478(false);
-        Applet_Sub1.method98(i + 32609);
+        BaseApplet.method98(i + 32609);
         Class241.method1860((byte) -89);
         Class231.method1641((byte) 85);
         Class101.method906(-31777);
@@ -241,7 +241,7 @@ public final class client extends Applet_Sub1 {
         Class25.method305((byte) 79);
         Class319.method2545(true);
         Class65.method698(i + -106);
-        Class82.method811((byte) -123);
+        DebugConsole.clearCache((byte) -123);
         Class259.method1975((byte) -15);
         Class194.method1441((byte) 18);
         Class217.method1585(-1);
@@ -469,7 +469,7 @@ public final class client extends Applet_Sub1 {
         Class348_Sub23.method2962(-31055);
         Class256.method1944(1);
         Class338.method2662(4);
-        Canvas_Sub1.method120(false);
+        GameCanvas.method120(false);
         Class44.method387(67);
         Class272.method2048(1);
         IOException_Sub1.method130(i + -100);
@@ -721,7 +721,7 @@ public final class client extends Applet_Sub1 {
         Class50_Sub1.method460(i ^ 0x6e);
         Class59_Sub1_Sub2.method561(120);
         Class59_Sub2_Sub1.method568(true);
-        if (Applet_Sub1.aBoolean41) anInt5190 = ++i_4_;
+        if (BaseApplet.aBoolean41) anInt5190 = ++i_4_;
     }
 
     private final void method102(byte i) {
@@ -910,8 +910,8 @@ public final class client extends Applet_Sub1 {
                 Class222.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987);
                 ha.anInt4583 = 0;
                 Class14_Sub1.aString8605 = null;
-                client var_client = new client();
-                Class79.aClient1367 = var_client;
+                GameClient var_client = new GameClient();
+                Class79.gameClient = var_client;
                 var_client.method96(Class11.aClass231_196.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aClass230_10434.aString2985), 23499, 768);
                 Class52.aFrame4904.setLocation(40, 40);
             } catch (Exception exception) {
@@ -919,7 +919,7 @@ public final class client extends Applet_Sub1 {
             }
             anInt5178++;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, "client.main(" + (strings != null ? "{...}" : "null") + ')');
+            throw Class348_Sub17.method2929(runtimeexception, "GameClient.main(" + (strings != null ? "{...}" : "null") + ')');
         }
     }
 
@@ -1027,7 +1027,7 @@ public final class client extends Applet_Sub1 {
                 Class92.anInt1524 = 640;
                 ha_Sub2.anInt7666 = 480;
             }
-            Class79.aClient1367 = this;
+            Class79.gameClient = this;
             this.method95(Class92.anInt1524, 634, ha_Sub2.anInt7666, Class11.aClass231_196.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aClass230_10434.aString2985, 50);
         }
     }
@@ -1771,7 +1771,7 @@ public final class client extends Applet_Sub1 {
             if (Class139.method1167(Class240.anInt4674, (byte) -51)) {
                 Class52.method493(true);
                 Class94.method867(true);
-            } else if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -120)) Canvas_Sub1.method123(0);
+            } else if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -120)) GameCanvas.method123(0);
             if (i < 32) aClass262_5185 = null;
             if (Class348_Sub42_Sub8.method3196(Class240.anInt4674, -74) && !Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -55)) {
                 method113((byte) 112);
@@ -1900,7 +1900,7 @@ public final class client extends Applet_Sub1 {
             if (Class34.aFrame476 == null) {
                 java.awt.Container container;
                 if (Class52.aFrame4904 == null) {
-                    if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                    if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.baseApplet;
                     else container = Class93.anApplet1530;
                 } else container = Class52.aFrame4904;
                 int i = container.getSize().width;
@@ -1935,15 +1935,15 @@ public final class client extends Applet_Sub1 {
                         if (Class36.anInt489 == 1) {
                             if (Class268.anInt3441 > Class348_Sub46.anInt7115) Class348_Sub46.anInt7115 = Class268.anInt3441;
                             int i = ((-Class268.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115);
-                            Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654);
+                            Class362.method3511(true, BaseApplet.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654);
                         } else if (Class36.anInt489 == 2) {
                             if (Class31.anInt443 < Class154.anInt2101) Class31.anInt443 = Class154.anInt2101;
                             int i = (((Class31.anInt443 - Class154.anInt2101) * 50 / Class31.anInt443) + 50);
-                            Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654);
-                        } else Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654);
+                            Class362.method3511(true, BaseApplet.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654);
+                        } else Class362.method3511(true, BaseApplet.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654);
                     } else if (Class240.anInt4674 != 10) {
                         if (Class240.anInt4674 == 13)
-                            Class362.method3511(false, Applet_Sub1.aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3497.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aHa6654);
+                            Class362.method3511(false, BaseApplet.aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3497.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aHa6654);
                     } else Class302.method2284((byte) -43, l);
                 } else Class239_Sub10.method1761(85);
             } else Class239_Sub10.method1761(85);
@@ -2057,7 +2057,7 @@ public final class client extends Applet_Sub1 {
                 if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
                     Field field = ClassLoader.class.getDeclaredField("nativeLibraries");
                     field.setAccessible(true);
-                    Vector vector = ((Vector) field.get((aClass5189 != null ? aClass5189 : (aClass5189 = client.class)).getClassLoader()));
+                    Vector vector = ((Vector) field.get((aClass5189 != null ? aClass5189 : (aClass5189 = GameClient.class)).getClassLoader()));
                     for (int i_135_ = 0; i_135_ < vector.size(); i_135_++) {
                         try {
                             Object object = vector.elementAt(i_135_);

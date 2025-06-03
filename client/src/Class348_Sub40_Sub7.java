@@ -61,7 +61,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                         } else i_23_ = i_13_;
                         class46.anInt794 = Class367_Sub11.anInt7396;
                         class46.anInt760 = i_23_;
-                        if (!client.method111(class46)) {
+                        if (!GameClient.method111(class46)) {
                             if (class46.anInt765 != 0) Class348_Sub18.method2942(class46, (byte) -36);
                             int i_24_ = class46.anInt800 - -i_11_;
                             int i_25_ = class46.anInt750 + i_10_;
@@ -72,7 +72,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                 i_27_ = Class16.method260(bool_15_);
                             }
                             int i_28_ = class46.anInt696;
-                            if (Class299_Sub2.aBoolean6327 && (client.method105(class46).anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127;
+                            if (Class299_Sub2.aBoolean6327 && (GameClient.method105(class46).anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127;
                             if (class46 == Class289.aClass46_3701) {
                                 if (i_16_ != -1412584499 && ((Class312.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
                                     Class136.anInt4792 = i_10_;
@@ -174,7 +174,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                             if (Class298.aBoolean3811) {
                                                 int i_39_ = -256;
                                                 if (Class239_Sub5.anInt5891 < 20) i_39_ = -65536;
-                                                Applet_Sub1.aClass324_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_38_, i_39_, i_37_, -128, -1);
+                                                BaseApplet.aClass324_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_38_, i_39_, i_37_, -128, -1);
                                                 i_38_ += 15;
                                                 Runtime runtime = Runtime.getRuntime();
                                                 int i_40_ = (int) (((runtime.totalMemory()) + -(runtime.freeMemory())) / 1024L);
@@ -189,12 +189,12 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                         if (i_40_ > 65536) Class59.method544("WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.", false, 4);
                                                     }
                                                 }
-                                                Applet_Sub1.aClass324_20.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1);
+                                                BaseApplet.aClass324_20.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1);
                                                 i_38_ += 15;
-                                                Applet_Sub1.aClass324_20.method2569(("In:" + Class264.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1);
+                                                BaseApplet.aClass324_20.method2569(("In:" + Class264.anInt3372 + "B/s Out:" + (Class348_Sub48.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1);
                                                 i_38_ += 15;
                                                 int i_43_ = (Class348_Sub8.aHa6654.E() / 1024);
-                                                Applet_Sub1.aClass324_20.method2569("Offheap:" + i_43_ + "k", i_38_, (i_43_ <= 65536 ? -256 : -65536), i_37_, -125, -1);
+                                                BaseApplet.aClass324_20.method2569("Offheap:" + i_43_ + "k", i_38_, (i_43_ <= 65536 ? -256 : -65536), i_37_, -125, -1);
                                                 i_38_ += 15;
                                                 int i_44_ = 0;
                                                 int i_45_ = 0;

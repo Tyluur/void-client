@@ -27,8 +27,8 @@ final class Class302 {
             anInt3841++;
             if (Class147.aClass357ArrayArrayArray2029 != null) {
                 if (Class348_Sub40_Sub21.anInt9282 != 1 && Class348_Sub40_Sub21.anInt9282 != 5) {
-                    if (Class348_Sub40_Sub21.anInt9282 == 4) Class82.method814((byte) 125, l);
-                } else Canvas_Sub1.method119(-1, l);
+                    if (Class348_Sub40_Sub21.anInt9282 == 4) DebugConsole.updateCamera((byte) 125, l);
+                } else GameCanvas.method119(-1, l);
             }
             Class348_Sub47.method3324(Class348_Sub8.aHa6654, (byte) 83, Class367_Sub11.anInt7396);
             if (r.anInt9721 != -1) Class75_Sub1.method769(r.anInt9721, (byte) 118);

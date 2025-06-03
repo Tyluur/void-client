@@ -1015,7 +1015,7 @@ final class Class66 {
                 return;
             }
             if (i == 5429) {
-                Class82.method812(aStringArray1152[--anInt1170], false, false, (byte) -79);
+                DebugConsole.handleCommand(aStringArray1152[--anInt1170], false, false, (byte) -79);
                 return;
             }
             if (i == 5430) {
@@ -2118,7 +2118,7 @@ final class Class66 {
                     int i_214_ = anIntArray1149[anInt1173 + 2];
                     Class46 class46 = Class348_Sub22.method2957(i_214_, (byte) -54, i_212_ << 16 | i_213_);
                     Class341.method2678(-2049);
-                    Class348_Sub44 class348_sub44 = client.method105(class46);
+                    Class348_Sub44 class348_sub44 = GameClient.method105(class46);
                     Class339.method2666((class348_sub44.anInt7093), class348_sub44.method3307(100), class46, (byte) 21);
                     return;
                 }
@@ -2214,7 +2214,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 6911) {
-                    anIntArray1149[anInt1173++] = Applet_Sub1.anInt37;
+                    anIntArray1149[anInt1173++] = BaseApplet.anInt37;
                     return;
                 }
                 if (i == 6912) {
@@ -3414,7 +3414,7 @@ final class Class66 {
             } else if (i < 1900) {
                 Class46 class46 = bool ? aClass46_1169 : aClass46_1150;
                 if (i == 1800) {
-                    anIntArray1149[anInt1173++] = client.method105(class46).method3307(83);
+                    anIntArray1149[anInt1173++] = GameClient.method105(class46).method3307(83);
                     return;
                 }
                 if (i == 1801) {
@@ -3600,7 +3600,7 @@ final class Class66 {
             } else if (i < 2900) {
                 Class46 class46 = Class324.method2570(1512932720, anIntArray1149[--anInt1173]);
                 if (i == 2800) {
-                    anIntArray1149[anInt1173++] = client.method105(class46).method3307(11);
+                    anIntArray1149[anInt1173++] = GameClient.method105(class46).method3307(11);
                     return;
                 }
                 if (i == 2801) {
@@ -5074,7 +5074,7 @@ final class Class66 {
                 String string = exception.getMessage();
                 if (string != null && string.length() > 0) stringbuffer.append("Message: ").append(string).append("\n");
                 Class156.method1242(stringbuffer.toString(), exception, 15004);
-                Applet_Sub1.method94(stringbuffer.toString(), 90);
+                BaseApplet.method94(stringbuffer.toString(), 90);
             }
         }
     }

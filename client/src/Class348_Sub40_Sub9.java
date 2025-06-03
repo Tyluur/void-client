@@ -6,14 +6,14 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
     static int anInt9166;
     private int anInt9167 = 4096;
     static int anInt9168;
-    static Applet_Sub1 anApplet_Sub1_9169 = null;
+    static BaseApplet baseApplet = null;
     static int anInt9170;
     static Class60 aClass60_9171 = new Class60(4);
     static int anInt9172;
     static Class324 aClass324_9173;
 
     public static void method3071(byte i) {
-        if (i != 59) anApplet_Sub1_9169 = null;
+        if (i != 59) baseApplet = null;
         aClass60_9171 = null;
         aClass324_9173 = null;
     }

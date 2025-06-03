@@ -156,8 +156,8 @@ class Class59_Sub1 extends Class59 {
     static final void method555(boolean bool, int i) {
         anInt5286++;
         if (i != Class363.aString4461.length()) {
-            Applet_Sub1.method94("--> " + Class363.aString4461, 110);
-            Class82.method812(Class363.aString4461, false, bool, (byte) -79);
+            BaseApplet.method94("--> " + Class363.aString4461, 110);
+            DebugConsole.handleCommand(Class363.aString4461, false, bool, (byte) -79);
             Class348_Sub38.anInt7006 = 0;
             Class363.aString4461 = "";
             Class260.anInt3312 = 0;

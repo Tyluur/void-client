@@ -64,7 +64,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
                 else class46.anInt750 = ((i_4_ * class46.anInt739 >> 14) + (-class46.anInt789 + i_4_) / 2);
             } else class46.anInt750 = class46.anInt739 * i_4_ >> 14;
         } else class46.anInt750 = class46.anInt739;
-        if (Class299_Sub2.aBoolean6327 && (client.method105(class46).anInt7098 != 0 || class46.anInt774 == 0)) {
+        if (Class299_Sub2.aBoolean6327 && (GameClient.method105(class46).anInt7098 != 0 || class46.anInt774 == 0)) {
             if (class46.anInt750 < 0) class46.anInt750 = 0;
             else if (i_4_ < (class46.anInt789 + class46.anInt750)) class46.anInt750 = i_4_ - class46.anInt789;
             if (class46.anInt800 >= 0) {

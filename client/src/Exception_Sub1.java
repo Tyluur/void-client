@@ -21,7 +21,7 @@ final class Exception_Sub1 extends Exception {
     static final Class46 method141(Class46 class46, byte i) {
         anInt109++;
         int i_0_ = 98 / ((i - -14) / 41);
-        Class46 class46_1_ = client.method108(class46);
+        Class46 class46_1_ = GameClient.method108(class46);
         if (class46_1_ == null) class46_1_ = class46.aClass46_782;
         return class46_1_;
     }

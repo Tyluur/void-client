@@ -184,13 +184,13 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     if (!Class298.aBoolean3811) break;
                     int i_22_ = -5 + i_11_ + i_12_;
                     int i_23_ = -8 + i_13_ + i_14_;
-                    Applet_Sub1.aClass324_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_23_, 16776960, i_22_, i + -116, -1);
+                    BaseApplet.aClass324_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_23_, 16776960, i_22_, i + -116, -1);
                     i_23_ -= 15;
                     Runtime runtime = Runtime.getRuntime();
                     int i_24_ = (int) ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L);
                     int i_25_ = 16776960;
                     if (i_24_ > 65536) i_25_ = 16711680;
-                    Applet_Sub1.aClass324_20.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1);
+                    BaseApplet.aClass324_20.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1);
                     i_23_ -= 15;
                 }
             } catch (RuntimeException runtimeexception) {

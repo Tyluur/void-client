@@ -28,7 +28,7 @@ final class Class348_Sub22 extends Class348 {
         if (class45.method421(false, Class106.anInt1639)) i_2_++;
         if (class45.method421(false, Class373_Sub2.anInt7429)) i_2_++;
         if (class45.method421(false, ha.anInt4562)) i_2_++;
-        if (class45.method421(false, Class82.anInt1435)) i_2_++;
+        if (class45.method421(false, DebugConsole.anInt1435)) i_2_++;
         if (class45.method421(false, Class115.anInt1756)) i_2_++;
         if (class45.method421(false, Class291.anInt3739)) i_2_++;
         if (class45.method421(false, Class86.anInt1481)) i_2_++;
@@ -48,7 +48,7 @@ final class Class348_Sub22 extends Class348 {
         Class182.aClass346_2449.method2698(14174);
         anInt6860++;
         Class258_Sub4.aClass373_8552.method3592(0);
-        Class79.aClient1367.method87((byte) -49);
+        Class79.gameClient.method87((byte) -49);
         Class305.aCanvas3869.setBackground(Color.black);
         Class337.anInt4179 = i;
         Class182.aClass346_2449 = Class348_Sub3.method2743(Class305.aCanvas3869, (byte) 84);

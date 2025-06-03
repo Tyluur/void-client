@@ -109,7 +109,7 @@ final class Class255 {
             Class318_Sub1_Sub1_Sub1.aClass105Array9959 = new Class105[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class318_Sub1_Sub1_Sub1.aClass105Array9959[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(class45, Class82.anInt1435, 0);
+            class207s = Class207.method1519(class45, DebugConsole.anInt1435, 0);
             Class264.aClass105Array3378 = new Class105[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class264.aClass105Array3378[i] = var_ha.method3691(class207s[i], true);

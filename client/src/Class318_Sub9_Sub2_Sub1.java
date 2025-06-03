@@ -15,8 +15,8 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
 
     final void method2520() {
         this.aClass318_Sub7_10419.aClass318_Sub10_6439.aClass318_Sub9_Sub2_Sub1Array6475[aShort10416] = null;
-        Class239_Sub25.aClass318_Sub9_Sub2_Sub1Array6103[client.anInt5171] = this;
-        client.anInt5171 = client.anInt5171 + 1 & 0x3ff;
+        Class239_Sub25.aClass318_Sub9_Sub2_Sub1Array6103[GameClient.anInt5171] = this;
+        GameClient.anInt5171 = GameClient.anInt5171 + 1 & 0x3ff;
         this.method2373(false);
         this.method2514(-108);
     }

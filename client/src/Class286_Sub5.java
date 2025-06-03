@@ -138,7 +138,7 @@ final class Class286_Sub5 extends Class286 {
         Class106.anInt1639 = class45.method417("hitbar_default", 0);
         Class373_Sub2.anInt7429 = class45.method417("timerbar_default", 0);
         ha.anInt4562 = class45.method417("headicons_pk", 0);
-        Class82.anInt1435 = class45.method417("headicons_prayer", 0);
+        DebugConsole.anInt1435 = class45.method417("headicons_prayer", 0);
         Class115.anInt1756 = class45.method417("hint_headicons", 0);
         Class291.anInt3739 = class45.method417("hint_mapmarkers", 0);
         Class86.anInt1481 = class45.method417("mapflag", 0);

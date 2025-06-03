@@ -54,7 +54,7 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
                 Class36.anInt486 = (i_4_ * Class239_Sub19.anInt6042 + (Class239_Sub14.aClass190_5990.anInt2546 * i_5_)) >> 8;
                 Class160.aFloat2137 = (Class318_Sub1_Sub1.aFloat8725 + (-Class318_Sub1_Sub1.aFloat8725 + (Class239_Sub14.aClass190_5990.aFloat2547)) * f_6_);
                 Class244.aFloat4626 = (Class64.aFloat1136 + f_6_ * ((Class239_Sub14.aClass190_5990.aFloat2544) - Class64.aFloat1136));
-                Class187.anInt2500 = (((i_4_ * (0xff00 & Canvas_Sub1.anInt70) + (0xff00 & (Class239_Sub14.aClass190_5990.anInt2549)) * i_5_) & 0xff0000) + (~0xff00ff & (i_4_ * (0xff00ff & Canvas_Sub1.anInt70) - -(i_5_ * (0xff00ff & (Class239_Sub14.aClass190_5990.anInt2549)))))) >>> 8;
+                Class187.anInt2500 = (((i_4_ * (0xff00 & GameCanvas.anInt70) + (0xff00 & (Class239_Sub14.aClass190_5990.anInt2549)) * i_5_) & 0xff0000) + (~0xff00ff & (i_4_ * (0xff00ff & GameCanvas.anInt70) - -(i_5_ * (0xff00ff & (Class239_Sub14.aClass190_5990.anInt2549)))))) >>> 8;
                 Class361.aFloat4455 = (Class246.aFloat3177 + f_6_ * (-Class246.aFloat3177 + (Class239_Sub14.aClass190_5990.aFloat2536)));
                 Class269.aFloat3462 = (Class245.aFloat3172 + (Class239_Sub14.aClass190_5990.aFloat2542 - Class245.aFloat3172) * f_6_);
                 if (Class239_Sub24.aClass299_6098 != (Class239_Sub14.aClass190_5990.aClass299_2541)) Class158.aClass299_4938 = (Class60.aHa1098.method3706(Class239_Sub24.aClass299_6098, (Class239_Sub14.aClass190_5990.aClass299_2541), f_6_, Class158.aClass299_4938));

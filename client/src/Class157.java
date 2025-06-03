@@ -35,7 +35,7 @@ final class Class157 {
         class348_sub49_sub2.writeInt((byte) 97, Class348_Sub16_Sub3.aClass45_8926.method389(-96));
         class348_sub49_sub2.writeInt((byte) 111, Class348_Sub32.aClass45_6950.method389(109));
         class348_sub49_sub2.writeInt((byte) 108, Class130.aClass45_1897.method389(-106));
-        class348_sub49_sub2.writeInt((byte) 102, Class82.aClass45_1434.method389(102));
+        class348_sub49_sub2.writeInt((byte) 102, DebugConsole.aClass45_1434.method389(102));
         class348_sub49_sub2.writeInt((byte) 113, Class348_Sub11.aClass45_4770.method389(-122));
         class348_sub49_sub2.writeInt((byte) 86, Class239.aClass45_3146.method389(97));
         class348_sub49_sub2.writeInt((byte) 96, Class367_Sub8.aClass45_7362.method389(-6));

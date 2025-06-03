@@ -45,7 +45,7 @@ final class Class79 {
     int anInt1364;
     static Class105 aClass105_1365;
     int anInt1366;
-    static client aClient1367;
+    static GameClient gameClient;
     private int anInt1368;
     boolean aBoolean1369;
     boolean aBoolean1370;
@@ -310,7 +310,7 @@ final class Class79 {
             Class348_Sub40_Sub6.anInt9139 = i_29_;
             Class248.anInt3201 = 32 * i_29_;
         }
-        if (i_30_ <= 108) aClient1367 = null;
+        if (i_30_ <= 108) gameClient = null;
         if (Class286_Sub2.anInt6212 != i) {
             if (Class348_Sub40_Sub6.anInt9139 != i) {
                 Class239_Sub18.anIntArray6035 = new int[i];
@@ -679,7 +679,7 @@ final class Class79 {
 
     public static void method804(int i) {
         aClass105_1365 = null;
-        aClient1367 = null;
+        gameClient = null;
         if (i != -3752) anInt1387 = 14;
     }
 

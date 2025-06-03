@@ -346,7 +346,7 @@ final class Class318_Sub7 extends Class318 {
                                 i_52_ = (((int) (((double) (this.aClass181_6441.anInt2410) * Math.random()) + (double) (this.aClass181_6441.anInt2413)) << 24) | (((int) ((Math.random() * (double) (this.aClass181_6441.anInt2433)) + (double) (this.aClass181_6441.anInt2429)) << 16) | ((int) ((Math.random() * (double) (this.aClass181_6441.anInt2403)) + (double) (this.aClass181_6441.anInt2390)) << 8) | (int) (((double) (this.aClass181_6441.anInt2408) * Math.random()) + (double) (this.aClass181_6441.anInt2399))));
                             int i_53_ = (this.aClass181_6441.anInt2414);
                             if (!var_ha.method3644() && !(this.aClass181_6441.aBoolean2382)) i_53_ = -1;
-                            if (client.anInt5171 == Class348_Sub1_Sub1.anInt8808) {
+                            if (GameClient.anInt5171 == Class348_Sub1_Sub1.anInt8808) {
                                 Class318_Sub9_Sub2_Sub1 class318_sub9_sub2_sub1 = (new Class318_Sub9_Sub2_Sub1(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aClass181_6441.aBoolean2435), (this.aClass181_6441.aBoolean2430)));
                             } else {
                                 Class318_Sub9_Sub2_Sub1 class318_sub9_sub2_sub1 = (Class239_Sub25.aClass318_Sub9_Sub2_Sub1Array6103[Class348_Sub1_Sub1.anInt8808]);

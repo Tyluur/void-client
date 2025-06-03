@@ -117,7 +117,7 @@ final class Class164 {
             Class348_Sub16_Sub3.aClass45_8926 = Class369_Sub2.method3571(false, 22, (byte) -23, 1);
             Class348_Sub32.aClass45_6950 = Class369_Sub2.method3571(true, 23, (byte) -23, 1);
             Class130.aClass45_1897 = Class369_Sub2.method3571(false, 24, (byte) -23, 1);
-            Class82.aClass45_1434 = Class369_Sub2.method3571(false, 25, (byte) -23, 1);
+            DebugConsole.aClass45_1434 = Class369_Sub2.method3571(false, 25, (byte) -23, 1);
             Class348_Sub11.aClass45_4770 = Class369_Sub2.method3571(true, 26, (byte) -23, 1);
             Class239.aClass45_3146 = Class369_Sub2.method3571(false, 27, (byte) -23, 1);
             Class367_Sub8.aClass45_7362 = Class369_Sub2.method3571(true, 28, (byte) -23, 1);
@@ -175,14 +175,14 @@ final class Class164 {
             Class123.aClass25_1813 = new Class25(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
             Class348_Sub40_Sub18.aClass319_9245 = new Class319(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class78.aClass45_1322, aa_Sub3.aClass45_5207);
             Class136.aClass65_4787 = new Class65(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
-            Class91.aClass82_1523 = new Class82(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
+            Class91.aDebugConsole_1523 = new DebugConsole(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
             Class239_Sub14.aClass259_5995 = new Class259(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
             Class229.aClass194_2981 = new Class194(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926);
             Class269.aClass217_3453 = new Class217(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
             Class65.method699(Class104.aClass45_1627, (byte) -100, Class348_Sub35.aClass45_6980, Class21.aClass45_322, aa_Sub3.aClass45_5207);
-            Applet_Sub1.method85(0, Class262.aClass45_3323);
-            Class200.aClass226_2639 = new Class226(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434);
-            Class239_Sub6.aClass355_5900 = new Class355(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434, new Class28());
+            BaseApplet.method85(0, Class262.aClass45_3323);
+            Class200.aClass226_2639 = new Class226(Class348_Sub33.anInt6967, Class130.aClass45_1897, DebugConsole.aClass45_1434);
+            Class239_Sub6.aClass355_5900 = new Class355(Class348_Sub33.anInt6967, Class130.aClass45_1897, DebugConsole.aClass45_1434, new Class28());
             Class150.method1202(0);
             Class348_Sub40_Sub12.aClass263_9195.method2008(i + 28539, Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(i + -3690) == 0);
             Class318_Sub1_Sub3_Sub3.aClass170_10209 = new Class170();
@@ -210,7 +210,7 @@ final class Class164 {
             // TODO make cache edit to extend these or change id's
             Class77.anIntArray1303 = (new int[Class239_Sub14.aClass259_5995.anInt3305 + 1000]);
             Class286_Sub6.aBooleanArray6270 = (new boolean[Class239_Sub14.aClass259_5995.anInt3305 + 1000]);
-            Class258_Sub2.aStringArray8532 = new String[Class91.aClass82_1523.anInt1439];
+            Class258_Sub2.aStringArray8532 = new String[Class91.aDebugConsole_1523.anInt1439];
             for (int i_13_ = 0; Class239_Sub14.aClass259_5995.anInt3305 + 1000 > i_13_; i_13_++) {
                 if (Class239_Sub14.aClass259_5995.method1976(i_13_, i ^ ~0x6fc0).anInt2135 == 0) {
                     Class286_Sub6.aBooleanArray6270[i_13_] = true;
