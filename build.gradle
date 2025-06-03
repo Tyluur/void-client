@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'client/src'
+        }
+    }
+}
+
+dependencies {
+    implementation files('libs/clientlibs.jar')
+}
+
+application {
+    mainClass = 'Loader'
+}
