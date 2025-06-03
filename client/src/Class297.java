@@ -15,7 +15,7 @@ import java.net.Socket;
 import java.net.URL;
 
 final class Class297 implements Runnable {
-    private Callback_Sub1 aCallback_Sub1_3776;
+    private MouseCallback aMouseCallback_3776;
     boolean aBoolean3777;
     static String aString3778;
     Class234 aClass234_3779 = null;
@@ -161,12 +161,12 @@ final class Class297 implements Runnable {
                         } else if ((this.aBoolean3777) && i == 14) {
                             int i_5_ = (class144.anInt2000);
                             int i_6_ = (class144.anInt1999);
-                            if (this.aBoolean3794) aCallback_Sub1_3776.method3621(i_5_, (byte) 115, i_6_);
+                            if (this.aBoolean3794) aMouseCallback_3776.method3621(i_5_, (byte) 115, i_6_);
                             else ((Class165) anObject3791).method1280((new Integer(i_5_)), (new Integer(i_6_)));
                         } else if ((this.aBoolean3777) && (i == 15)) {
                             boolean bool = ((class144.anInt2000) != 0);
                             Component component = ((Component) (class144.anObject1996));
-                            if (this.aBoolean3794) aCallback_Sub1_3776.method3622(bool, 13259, component);
+                            if (this.aBoolean3794) aMouseCallback_3776.method3622(bool, 13259, component);
                             else ((Class165) anObject3791).method1281(component, (new Boolean(bool)));
                         } else if (!(this.aBoolean3794) && (i == 17)) {
                             Object[] objects = ((Object[]) (class144.anObject1996));
@@ -443,7 +443,7 @@ final class Class297 implements Runnable {
             }
             try {
                 if (!this.aBoolean3794) anObject3791 = new Class165();
-                else aCallback_Sub1_3776 = new Callback_Sub1();
+                else aMouseCallback_3776 = new MouseCallback();
             } catch (Throwable throwable) {
                 /* empty */
             }

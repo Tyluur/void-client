@@ -118,7 +118,7 @@ final class Class348_Sub18 extends Class348 {
             Class348_Sub16_Sub3.aClass45_8926.method412((byte) -114);
             Class348_Sub32.aClass45_6950.method412((byte) 36);
             Class130.aClass45_1897.method412((byte) -114);
-            Class82.aClass45_1434.method412((byte) -117);
+            DebugConsole.aClass45_1434.method412((byte) -117);
             Class348_Sub11.aClass45_4770.method412((byte) 78);
             Class239.aClass45_3146.method412((byte) 88);
             Class367_Sub8.aClass45_7362.method412((byte) -109);

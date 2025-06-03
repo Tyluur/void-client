@@ -7,7 +7,7 @@ final class Class91 {
     static int anInt1520;
     static int[] anIntArray1521 = {7, 8, 9, 10, 11, 12, 13, 15};
     static int anInt1522;
-    static Class82 aClass82_1523;
+    static DebugConsole aDebugConsole_1523;
 
     static final void method855(int i, int i_0_, int i_1_) {
         anInt1520++;
@@ -54,7 +54,7 @@ final class Class91 {
 
     public static void method857(int i) {
         anIntArray1521 = null;
-        aClass82_1523 = null;
+        aDebugConsole_1523 = null;
         aClass74_1519 = null;
         if (i < 121) method856((byte) -72);
     }

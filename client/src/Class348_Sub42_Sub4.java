@@ -18,7 +18,7 @@ final class Class348_Sub42_Sub4 extends Class348_Sub42 {
         if (i_0_ == 24235) {
             for (int i_1_ = 0; i_1_ < class46s.length; i_1_++) {
                 Class46 class46 = class46s[i_1_];
-                if (class46 != null && i == class46.anInt834 && !client.method111(class46)) {
+                if (class46 != null && i == class46.anInt834 && !GameClient.method111(class46)) {
                     if (class46.anInt774 == 0) {
                         method3180(class46.anInt830, class46s, 24235);
                         if (class46.aClass46Array798 != null) method3180(class46.anInt830, class46.aClass46Array798, i_0_);

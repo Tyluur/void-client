@@ -82,7 +82,7 @@ final class Class100 {
     static final int method888(byte i, int i_7_, Class46 class46) {
         anInt1580++;
         if (i != 57) method886(7);
-        if (!client.method105(class46).method3301(i_7_, false) && class46.anObjectArray741 == null) return -1;
+        if (!GameClient.method105(class46).method3301(i_7_, false) && class46.anObjectArray741 == null) return -1;
         if (class46.anIntArray706 != null && i_7_ < class46.anIntArray706.length) return class46.anIntArray706[i_7_];
         return -1;
     }

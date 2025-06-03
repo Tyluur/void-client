@@ -37,7 +37,7 @@ final class Class239_Sub28 extends Class239 {
         } else class46.anInt789 = class46.anInt728;
         if (class46.aByte778 == 4) class46.anInt709 = (class46.anInt789 * class46.anInt710 / class46.anInt775);
         if (class46.aByte724 == 4) class46.anInt789 = (class46.anInt775 * class46.anInt709 / class46.anInt710);
-        if (Class299_Sub2.aBoolean6327 && (client.method105(class46).anInt7098 != 0 || class46.anInt774 == 0)) {
+        if (Class299_Sub2.aBoolean6327 && (GameClient.method105(class46).anInt7098 != 0 || class46.anInt774 == 0)) {
             if (class46.anInt789 < 5 && class46.anInt709 < 5) {
                 class46.anInt789 = 5;
                 class46.anInt709 = 5;

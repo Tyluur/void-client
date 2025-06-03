@@ -110,7 +110,7 @@ final class Class258_Sub1 extends Class258 {
                 Class250.anIntArray3220 = is_16_;
                 Class59_Sub1_Sub2.anIntArray8666 = is_17_;
                 Class299_Sub2_Sub1.anIntArray8712 = is_18_;
-                client.anIntArray5176 = is_19_;
+                GameClient.anIntArray5176 = is_19_;
                 Class348_Sub42_Sub14.method3241(i_20_, (byte) 39, Class9.aHa171);
             }
         } else {

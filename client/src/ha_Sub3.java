@@ -341,7 +341,7 @@ abstract class ha_Sub3 extends ha {
     Class130 aClass130_8208;
     boolean aBoolean8209;
     private int anInt8210;
-    /*synthetic*/ static Class aClass8211;
+    /*synthetic*/ static Class aDebugConsole11;
 
     final void da(int i, int i_0_, int i_1_, int[] is) {
         try {
@@ -584,7 +584,7 @@ abstract class ha_Sub3 extends ha {
             if (Class147.aClass357ArrayArrayArray2029 == null) return;
             if (i_41_ == 0) {
                 Interface10 interface10 = (Interface10) r_Sub2.method3297(i_40_, i_37_, i);
-                Interface10 interface10_42_ = (Interface10) Class82.method813(i_40_, i_37_, i);
+                Interface10 interface10_42_ = (Interface10) DebugConsole.getTileObject(i_40_, i_37_, i);
                 if (interface10 != null && i_36_ != 2) {
                     if (interface10 instanceof Class318_Sub1_Sub4_Sub2) ((Class318_Sub1_Sub4_Sub2) interface10).aClass235_10115.method1671(262144, i_35_);
                     else Class218.method1591(i_37_, 89, i_41_, i_35_, interface10.method42(-76), i_36_, i, i_38_, i_40_);
@@ -611,7 +611,7 @@ abstract class ha_Sub3 extends ha {
                     }
                 }
             } else if (i_41_ == 2) {
-                Interface10 interface10 = ((Interface10) (Class177.method1353(i_40_, i_37_, i, (aClass8211 != null ? aClass8211 : (aClass8211 = Interface10.class)))));
+                Interface10 interface10 = ((Interface10) (Class177.method1353(i_40_, i_37_, i, (aDebugConsole11 != null ? aDebugConsole11 : (aDebugConsole11 = Interface10.class)))));
                 if (interface10 != null) {
                     if (i_36_ == 11) i_36_ = 10;
                     if (!(interface10 instanceof Class318_Sub1_Sub3_Sub2)) Class218.method1591(i_37_, 43, i_41_, i_35_, interface10.method42(-107), i_36_, i, i_38_, i_40_);

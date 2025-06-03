@@ -47,7 +47,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
     static final void method4011(int i, Class45 class45) {
         anInt4598++;
         if (i != 1024) method4012(null, (byte) 68);
-        client.anInt5171 = 0;
+        GameClient.anInt5171 = 0;
         Class348_Sub1_Sub1.anInt8808 = 0;
         Class152.aClass243_2077 = new Class243();
         Class239_Sub25.aClass318_Sub9_Sub2_Sub1Array6103 = new Class318_Sub9_Sub2_Sub1[1024];

@@ -66,7 +66,7 @@ final class Class239_Sub11 extends Class239 {
         if (Class367_Sub8.anInt7365 == 0) {
             Class267.aClass267_3401.method2025(new Class309("jaclib"), false);
             if (Class267.aClass267_3401.method2027(119).method31(28) != 100) return 1;
-            if (!((Class309) Class267.aClass267_3401.method2027(71)).method2313(124)) Class79.aClient1367.method97(i + 24);
+            if (!((Class309) Class267.aClass267_3401.method2027(71)).method2313(124)) Class79.gameClient.method97(i + 24);
             Class367_Sub8.anInt7365 = 1;
         }
         if (Class367_Sub8.anInt7365 == 1) {
@@ -89,7 +89,7 @@ final class Class239_Sub11 extends Class239 {
             Class267.aClass267_3416.method2025(new Class292(Class78.aClass45_1322), false);
             Class267.aClass267_3417.method2025(new Class292(Class348_Sub16_Sub3.aClass45_8926), false);
             Class267.aClass267_3418.method2025(new Class292(Class130.aClass45_1897), false);
-            Class267.aClass267_3419.method2025(new Class292(Class82.aClass45_1434), false);
+            Class267.aClass267_3419.method2025(new Class292(DebugConsole.aClass45_1434), false);
             Class267.aClass267_3420.method2025(new Class292(Class239.aClass45_3146), false);
             Class267.aClass267_3421.method2025(new Class292(Class262.aClass45_3323), false);
             Class267.aClass267_3422.method2025(new Class73((Class16.aClass45_233), "huffman"), false);
@@ -126,8 +126,8 @@ final class Class239_Sub11 extends Class239 {
             if (i_13_ < 100) bool = false;
         }
         if (bool) {
-            if (!((Class309) Class267.aClass267_3404.method2027(92)).method2313(102)) Class79.aClient1367.method83(true);
-            if (!((Class309) Class267.aClass267_3407.method2027(i ^ ~0x64)).method2313(103)) Class38.aBoolean510 = Class79.aClient1367.method100(i ^ ~0x12);
+            if (!((Class309) Class267.aClass267_3404.method2027(92)).method2313(102)) Class79.gameClient.method83(true);
+            if (!((Class309) Class267.aClass267_3407.method2027(i ^ ~0x64)).method2313(103)) Class38.aBoolean510 = Class79.gameClient.method100(i ^ ~0x12);
             Class126.aClass267Array4987 = null;
         }
         i_9_ -= Class348_Sub40_Sub24.anInt9327;

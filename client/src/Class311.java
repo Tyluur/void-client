@@ -95,14 +95,14 @@ final class Class311 implements Runnable {
                         try {
                             if (Class348_Sub8.aHa6654 != null && !(anInterface16_3907 instanceof Class294)) Class348_Sub8.aHa6654.method3689((byte) 57);
                         } catch (Exception_Sub1 exception_sub1) {
-                            Class156.method1242((exception_sub1.getMessage() + " (Recovered) " + Class79.aClient1367.method81((byte) 80)), exception_sub1, 15004);
+                            Class156.method1242((exception_sub1.getMessage() + " (Recovered) " + Class79.gameClient.method81((byte) 80)), exception_sub1, 15004);
                             Class367_Sub10.method3553(true, (byte) 114, 0);
                         }
                     }
                     java.awt.Container container;
                     if (Class52.aFrame4904 != null) container = Class52.aFrame4904;
                     else if (Class93.anApplet1530 != null) container = Class93.anApplet1530;
-                    else container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                    else container = Class348_Sub40_Sub9.baseApplet;
                     container.getSize();
                     container.getSize();
                     if (Class52.aFrame4904 == container) Class52.aFrame4904.getInsets();

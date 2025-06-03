@@ -281,7 +281,7 @@ final class Class361 {
         String string = ("tele " + i_62_ + "," + (i_63_ >> 6) + "," + (i >> 6) + "," + (0x3f & i_63_) + "," + (0x3f & i));
         System.out.println(string);
         if (i_61_ != 2) method3502(-25, -23, 24, 63);
-        Class82.method812(string, true, false, (byte) -79);
+        DebugConsole.handleCommand(string, true, false, (byte) -79);
     }
 
     final boolean method3503(int i, byte i_64_, int i_65_, int i_66_, int i_67_, int i_68_, int i_69_, int i_70_, int i_71_) {

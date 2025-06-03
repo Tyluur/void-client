@@ -301,7 +301,7 @@ final class Class101_Sub2 extends Class101 {
             }
             anInt5739++;
             if (bool) {
-                for (Class348_Sub9 class348_sub9 = (Class348_Sub9) client.aClass262_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) client.aClass262_5185.method1990((byte) 69))) {
+                for (Class348_Sub9 class348_sub9 = (Class348_Sub9) GameClient.aClass262_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) GameClient.aClass262_5185.method1990((byte) 69))) {
                     if ((class348_sub9.aClass348_Sub16_Sub5_6676) != null) {
                         Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676);
                         class348_sub9.aClass348_Sub16_Sub5_6676 = null;

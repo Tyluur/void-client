@@ -61,7 +61,7 @@ final class Class368 {
     static final String method3561(int i, Class46 class46, boolean bool) {
         anInt4495++;
         if (bool != true) method3560(68);
-        if (!client.method105(class46).method3301(i, !bool) && class46.anObjectArray741 == null) return null;
+        if (!GameClient.method105(class46).method3301(i, !bool) && class46.anObjectArray741 == null) return null;
         if (class46.aStringArray833 == null || (i >= class46.aStringArray833.length) || class46.aStringArray833[i] == null || class46.aStringArray833[i].trim().length() == 0) {
             if (Class299_Sub2.aBoolean6327) return "Hidden-" + i;
             return null;

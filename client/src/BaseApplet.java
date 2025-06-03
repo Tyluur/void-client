@@ -1,4 +1,4 @@
-/* Applet_Sub1 - Decompiled by JODE
+/* BaseApplet - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.Date;
 
-public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListener, WindowListener {
+public abstract class BaseApplet extends Applet implements Runnable, FocusListener, WindowListener {
     static int anInt1;
     static int anInt2;
     static int anInt3;
@@ -80,7 +80,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final void stop() {
         anInt24++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L;
+        if (this == Class348_Sub40_Sub9.baseApplet && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L;
     }
 
     public final String getParameter(String string) {
@@ -190,12 +190,12 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         Container container;
         if (Class34.aFrame476 == null) {
             if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.baseApplet;
                 else container = Class93.anApplet1530;
             } else container = Class52.aFrame4904;
         } else container = Class34.aFrame476;
         container.setLayout(null);
-        Class305.aCanvas3869 = new Canvas_Sub1(this);
+        Class305.aCanvas3869 = new GameCanvas(this);
         container.add(Class305.aCanvas3869);
         Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
         Class305.aCanvas3869.setVisible(true);
@@ -218,7 +218,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final synchronized void paint(Graphics graphics) {
         anInt18++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) {
+        if (this == Class348_Sub40_Sub9.baseApplet && !Class26.aBoolean384) {
             Class49.aBoolean4726 = true;
             if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
                 Rectangle rectangle = graphics.getClipBounds();
@@ -356,7 +356,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final void destroy() {
         anInt21++;
-        if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == this && !Class26.aBoolean384) {
+        if (Class348_Sub40_Sub9.baseApplet == this && !Class26.aBoolean384) {
             Class113.aLong1739 = Class62.method599(-108);
             Class286_Sub5.method2161((byte) 77, 5000L);
             Class231.aClass297_2993 = null;
@@ -392,7 +392,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
                     }
                     if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true;
                 }
-                Applet applet = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                Applet applet = Class348_Sub40_Sub9.baseApplet;
                 if (Class93.anApplet1530 != null) applet = Class93.anApplet1530;
                 Method method = Class297.aMethod3786;
                 if (method != null) {
@@ -458,13 +458,13 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     final void method95(int i, int i_15_, int i_16_, int i_17_, int i_18_, String string, int i_19_) {
         anInt25++;
         try {
-            if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == null) {
+            if (Class348_Sub40_Sub9.baseApplet == null) {
                 Class348_Sub48.anInt7129 = 0;
                 Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_;
                 Class272.anInt3473 = Class321.anInt4017 = i;
                 Class335.anInt4167 = 0;
                 Class348_Sub1_Sub3.anInt8818 = i_15_;
-                Class348_Sub40_Sub9.anApplet_Sub1_9169 = this;
+                Class348_Sub40_Sub9.baseApplet = this;
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530;
                 Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i_17_, string, i_18_, Class93.anApplet1530 != null);
                 Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, -10240, 1);
@@ -486,7 +486,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
             if (i_23_ != 23499) return;
             Class272.anInt3473 = Class321.anInt4017 = i_20_;
             Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_;
-            Class348_Sub40_Sub9.anApplet_Sub1_9169 = this;
+            Class348_Sub40_Sub9.baseApplet = this;
             Class335.anInt4167 = 0;
             Class348_Sub48.anInt7129 = 0;
             Class348_Sub1_Sub3.anInt8818 = i_21_;
@@ -526,7 +526,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final void start() {
         anInt36++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = 0L;
+        if (this == Class348_Sub40_Sub9.baseApplet && !Class26.aBoolean384) Class113.aLong1739 = 0L;
     }
 
     abstract void method99(byte i);

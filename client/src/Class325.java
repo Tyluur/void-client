@@ -690,7 +690,7 @@ final class Class325 {
                         Class26.anInt385 = i_73_;
                         Class348.anInt4292 = 0;
                         Class93.anInt1534 = i_72_;
-                        client.anInt5187++;
+                        GameClient.anInt5187++;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class344.aClass351_4264, (Class348_Sub23_Sub2.aClass77_9029), -127);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(za_Sub2.regionTileX - -i_74_, (byte) 3);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-85, Class301.anInt3829);
@@ -851,7 +851,7 @@ final class Class325 {
                             Class46 class46 = Class348_Sub22.method2957(i_74_, (byte) -54, i_75_);
                             if (class46 != null) {
                                 Class341.method2678(-2049);
-                                Class348_Sub44 class348_sub44 = client.method105(class46);
+                                Class348_Sub44 class348_sub44 = GameClient.method105(class46);
                                 Class339.method2666(class348_sub44.anInt7093, class348_sub44.method3307(14), class46, (byte) 21);
                                 Class28.aString5001 = Class239_Sub8.method1753(0, class46);
                                 Class28.aString5000 = (class46.aString752 + "<col=ffffff>");
