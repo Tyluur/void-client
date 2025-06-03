@@ -134,7 +134,7 @@ final class Class367_Sub11 extends Class367 {
                 if (Class34.aFrame476 == null) {
                     Container container;
                     if (Class52.aFrame4904 != null) container = Class52.aFrame4904;
-                    else if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                    else if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.baseApplet;
                     else container = Class93.anApplet1530;
                     Class272.anInt3473 = container.getSize().width;
                     Class348_Sub22.anInt6857 = container.getSize().height;

@@ -39,7 +39,7 @@ final class Class140 {
                     try {
                         java.awt.Container container;
                         if (Class52.aFrame4904 == null) {
-                            if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                            if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.baseApplet;
                             else container = Class93.anApplet1530;
                         } else container = Class52.aFrame4904;
                         int i_5_ = 0;

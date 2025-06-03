@@ -8,9 +8,9 @@ import java.util.Properties;
 
 public class Loader extends Applet {
 
-    public static Properties aProperties1 = new Properties();
-    public JFrame aJFrame2;
-    public JPanel aJPanel3 = new JPanel();
+    public static Properties parameters = new Properties();
+    public JFrame frame;
+    public JPanel panel = new JPanel();
     public static boolean loadRunescape = false;
     public static boolean showCoordinates = true;
     public static boolean skipLobby = true;
@@ -45,56 +45,56 @@ public class Loader extends Applet {
     }
 
     void setParms() {
-        aProperties1.put("cabbase", "g.cab");
-        aProperties1.put("java_arguments", "-Xmx102m -Dsun.java2d.noddraw=true");
-        aProperties1.put("colourid", "0");
-        aProperties1.put("worldid", "16");
-        aProperties1.put("lobbyid", "15");
-        aProperties1.put("lobbyaddress", loadRunescape ? "lobby16.runescape.com" : "127.0.0.1");
-        aProperties1.put("demoid", "0");
-        aProperties1.put("demoaddress", "");
-        aProperties1.put("modewhere", "0");
-        aProperties1.put("modewhat", "0");
-        aProperties1.put("lang", "0");
-        aProperties1.put("objecttag", "0");
-        aProperties1.put("js", "1");
-        aProperties1.put("game", "0");
-        aProperties1.put("affid", "0");
-        aProperties1.put("advert", "1");
-        aProperties1.put("settings", "wwGlrZHF5gJcZl7tf7KSRh0MZLhiU0gI0xDX6DwZ-Qk");
-        aProperties1.put("country", "0");
-        aProperties1.put("haveie6", "0");
-        aProperties1.put("havefirefox", "1");
-        aProperties1.put("cookieprefix", "");
-        aProperties1.put("cookiehost", "127.0.0.1");
-        aProperties1.put("cachesubdirid", "0");
-        aProperties1.put("crashurl", "");
-        aProperties1.put("unsignedurl", "");
-        aProperties1.put("sitesettings_member", "1");
-        aProperties1.put("frombilling", "false");
-        aProperties1.put("sskey", "");
-        aProperties1.put("force64mb", "false");
-        aProperties1.put("worldflags", "8");
+        parameters.put("cabbase", "g.cab");
+        parameters.put("java_arguments", "-Xmx102m -Dsun.java2d.noddraw=true");
+        parameters.put("colourid", "0");
+        parameters.put("worldid", "16");
+        parameters.put("lobbyid", "15");
+        parameters.put("lobbyaddress", loadRunescape ? "lobby16.runescape.com" : "127.0.0.1");
+        parameters.put("demoid", "0");
+        parameters.put("demoaddress", "");
+        parameters.put("modewhere", "0");
+        parameters.put("modewhat", "0");
+        parameters.put("lang", "0");
+        parameters.put("objecttag", "0");
+        parameters.put("js", "1");
+        parameters.put("game", "0");
+        parameters.put("affid", "0");
+        parameters.put("advert", "1");
+        parameters.put("settings", "wwGlrZHF5gJcZl7tf7KSRh0MZLhiU0gI0xDX6DwZ-Qk");
+        parameters.put("country", "0");
+        parameters.put("haveie6", "0");
+        parameters.put("havefirefox", "1");
+        parameters.put("cookieprefix", "");
+        parameters.put("cookiehost", "127.0.0.1");
+        parameters.put("cachesubdirid", "0");
+        parameters.put("crashurl", "");
+        parameters.put("unsignedurl", "");
+        parameters.put("sitesettings_member", "1");
+        parameters.put("frombilling", "false");
+        parameters.put("sskey", "");
+        parameters.put("force64mb", "false");
+        parameters.put("worldflags", "8");
     }
 
     void openFrame() {
-        aJFrame2 = new JFrame("Client");
-        aJFrame2.setLayout(new BorderLayout());
-        aJPanel3.setLayout(new BorderLayout());
-        aJPanel3.add(this);
-        aJPanel3.setPreferredSize(new Dimension(765, 503));
-        aJFrame2.getContentPane().add(aJPanel3, "Center");
-        aJFrame2.pack();
-        aJFrame2.setVisible(true);
-        aJFrame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame = new JFrame("Client");
+        frame.setLayout(new BorderLayout());
+        panel.setLayout(new BorderLayout());
+        panel.add(this);
+        panel.setPreferredSize(new Dimension(765, 503));
+        frame.getContentPane().add(panel, "Center");
+        frame.pack();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     void startClient() {
         try {
-            Applet_Sub1.provideLoaderApplet(this);
-            client var_client = new client();
-            var_client.init();
-            var_client.start();
+            BaseApplet.provideLoaderApplet(this);
+            client gameClient = new client();
+            gameClient.init();
+            gameClient.start();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -102,7 +102,7 @@ public class Loader extends Applet {
 
     @Override
     public String getParameter(String arg0) {
-        return (String) aProperties1.get(arg0);
+        return (String) parameters.get(arg0);
     }
 
     @Override

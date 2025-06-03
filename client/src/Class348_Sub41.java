@@ -77,7 +77,7 @@ final class Class348_Sub41 extends Class348 {
             Class167.anInt2204 = Class355.anInt4372;
             if (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 1) Class167.anInt2204 = 0;
             Class348_Sub49.method3379(2, i_17_);
-            Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654);
+            Class362.method3511(true, BaseApplet.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654);
             int i_18_ = za_Sub2.regionTileX;
             int i_19_ = Class90.regionTileY;
             za_Sub2.regionTileX = (-(Class367_Sub4.anInt7319 >> 4) + ha.anInt4581) * 8;

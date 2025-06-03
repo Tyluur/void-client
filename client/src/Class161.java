@@ -47,7 +47,7 @@ final class Class161 {
             if (Class206.anInt4889 == 0) Class348_Sub40_Sub32.method3134(-1);
             else {
                 Class318_Sub1_Sub1.aFloat8725 = Class160.aFloat2137;
-                Canvas_Sub1.anInt70 = Class187.anInt2500;
+                GameCanvas.anInt70 = Class187.anInt2500;
                 Class239_Sub24.aClass299_6098 = Class158.aClass299_4938;
                 Class64.aFloat1136 = Class244.aFloat4626;
                 Class245.aFloat3172 = Class269.aFloat3462;
