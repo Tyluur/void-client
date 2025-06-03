@@ -2214,7 +2214,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 6911) {
-                    anIntArray1149[anInt1173++] = Applet_Sub1.anInt37;
+                    anIntArray1149[anInt1173++] = BaseApplet.anInt37;
                     return;
                 }
                 if (i == 6912) {
@@ -5074,7 +5074,7 @@ final class Class66 {
                 String string = exception.getMessage();
                 if (string != null && string.length() > 0) stringbuffer.append("Message: ").append(string).append("\n");
                 Class156.method1242(stringbuffer.toString(), exception, 15004);
-                Applet_Sub1.method94(stringbuffer.toString(), 90);
+                BaseApplet.method94(stringbuffer.toString(), 90);
             }
         }
     }

@@ -180,7 +180,7 @@ final class Class164 {
             Class229.aClass194_2981 = new Class194(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.aClass45_8926);
             Class269.aClass217_3453 = new Class217(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.aClass45_1541);
             Class65.method699(Class104.aClass45_1627, (byte) -100, Class348_Sub35.aClass45_6980, Class21.aClass45_322, aa_Sub3.aClass45_5207);
-            Applet_Sub1.method85(0, Class262.aClass45_3323);
+            BaseApplet.method85(0, Class262.aClass45_3323);
             Class200.aClass226_2639 = new Class226(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434);
             Class239_Sub6.aClass355_5900 = new Class355(Class348_Sub33.anInt6967, Class130.aClass45_1897, Class82.aClass45_1434, new Class28());
             Class150.method1202(0);

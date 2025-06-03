@@ -69,7 +69,7 @@ final class Class342 {
     }
 
     static final void method2686() {
-        for (int i = Canvas_Sub1.anInt67; i < Class189.anInt2524; i++) {
+        for (int i = GameCanvas.anInt67; i < Class189.anInt2524; i++) {
             for (int i_8_ = 0; i_8_ < Class318_Sub7.anInt6451; i_8_++) {
                 for (int i_9_ = 0; i_9_ < Class348_Sub41.anInt7054; i_9_++) {
                     Class357 class357 = Class147.aClass357ArrayArrayArray2029[i][i_8_][i_9_];

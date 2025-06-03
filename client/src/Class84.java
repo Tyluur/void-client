@@ -120,7 +120,7 @@ final class Class84 {
     }
 
     static final void method824(int i) {
-        Canvas_Sub1.anInt67 = i;
+        GameCanvas.anInt67 = i;
         for (int i_22_ = 0; i_22_ < Class318_Sub7.anInt6451; i_22_++) {
             for (int i_23_ = 0; i_23_ < Class348_Sub41.anInt7054; i_23_++) {
                 if (Class147.aClass357ArrayArrayArray2029[i][i_22_][i_23_] == null) Class147.aClass357ArrayArrayArray2029[i][i_22_][i_23_] = new Class357(i);
