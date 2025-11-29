@@ -473,7 +473,7 @@ class Class75 {
         return method762(var_ha, i_103_, i_104_, 0, 0);
     }
 
-    private static final int method759(d var_d, int i, int i_105_, int i_106_) {
+    private static final int method759(TextureSource var_d, int i, int i_105_, int i_106_) {
         Class277 class277 = aFloorOverlayTypeList_1239.method2034(i, false);
         if (class277 == null) return 0;
         int i_107_ = class277.anInt3575;
@@ -561,7 +561,7 @@ class Class75 {
         }
     }
 
-    static final void method764(d var_d, int i, int i_129_) {
+    static final void method764(TextureSource var_d, int i, int i_129_) {
         for (int i_130_ = 0; i_130_ < aFloorOverlayTypeList_1239.anInt3429; i_130_++)
             anIntArray1260[i_130_ + 1] = method759(var_d, i_130_, i, i_129_);
     }

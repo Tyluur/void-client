@@ -5,7 +5,7 @@
 final class Class348_Sub40_Sub4 extends Class348_Sub40 {
     static Class262 aClass262_9111 = new Class262();
     static int anInt9112;
-    static d js5TextureSource; // aD9113
+    static TextureSource js5TextureSource; // aD9113
     static Class101 aClass101_9114;
     static int anInt9115;
 

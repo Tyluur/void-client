@@ -10,7 +10,7 @@ final class Class354 {
     static int[][][] anIntArrayArrayArray4356;
     static int anInt4357;
     static int anInt4358;
-    private final d aD4359;
+    private final TextureSource aD4359;
     static int anInt4360;
     private Class60 aClass60_4361 = new Class60(256);
 
@@ -121,7 +121,7 @@ final class Class354 {
         }
     }
 
-    Class354(ha_Sub2 var_ha_Sub2, d var_d) {
+    Class354(ha_Sub2 var_ha_Sub2, TextureSource var_d) {
         try {
             aHa_Sub2_4355 = var_ha_Sub2;
             aD4359 = var_d;

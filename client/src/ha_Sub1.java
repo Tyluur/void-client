@@ -1219,7 +1219,7 @@ final class ha_Sub1 extends ha {
         return this.aClass101_Sub1_7492;
     }
 
-    ha_Sub1(Canvas canvas, d var_d, int i, int i_355_) {
+    ha_Sub1(Canvas canvas, TextureSource var_d, int i, int i_355_) {
         this(var_d);
         try {
             method3643(canvas, i, i_355_);
@@ -1987,7 +1987,7 @@ final class ha_Sub1 extends ha {
         return this.aD4579.method4(-7953, i);
     }
 
-    private ha_Sub1(d var_d) {
+    private ha_Sub1(TextureSource var_d) {
         super(var_d);
         aClass356_7467 = new Class356(4);
         this.anInt7474 = 45823;

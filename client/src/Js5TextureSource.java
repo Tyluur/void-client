@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Js5TextureSource implements d {
+final class Js5TextureSource implements TextureSource {
     static int anInt4609 = -1;
     static int anInt4610;
     private final Class12[] aClass12Array4611;

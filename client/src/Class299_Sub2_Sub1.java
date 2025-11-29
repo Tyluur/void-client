@@ -24,7 +24,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
             Class270.anIntArray3464[3] = anInt8711;
             Class270.anIntArray3464[1] = anInt8717;
             Class270.anIntArray3464[4] = anInt8708;
-            d var_d = aHa_Sub3_8718.aD4579;
+            TextureSource var_d = aHa_Sub3_8718.aD4579;
             Class270.anIntArray3464[5] = anInt8714;
             Class270.anIntArray3464[2] = anInt8715;
             Class270.anIntArray3464[0] = anInt8716;

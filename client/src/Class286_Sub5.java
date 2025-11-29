@@ -5,7 +5,7 @@
 import jaggl.OpenGL;
 
 final class Class286_Sub5 extends Class286 {
-    static d aD6247;
+    static TextureSource aD6247;
     static int anInt6248 = -1;
     static int anInt6249;
     static int anInt6250;

@@ -578,7 +578,7 @@ final class s_Sub3 extends s {
     final void U(int i, int i_167_, int[] is, int[] is_168_, int[] is_169_, int[] is_170_, int[] is_171_, int[] is_172_, int[] is_173_, int[] is_174_, int i_175_, int i_176_, int i_177_, boolean bool) {
         try {
             anInt8295++;
-            d var_d = this.aHa_Sub3_8322.aD4579;
+            TextureSource var_d = this.aHa_Sub3_8322.aD4579;
             if (is_170_ != null && anIntArrayArrayArray8314 == null) anIntArrayArrayArray8314 = new int[this.anInt4587][this.anInt4590][];
             if (is_168_ != null && anIntArrayArrayArray8308 == null) anIntArrayArrayArray8308 = new int[this.anInt4587][this.anInt4590][];
             this.anIntArrayArrayArray8321[i][i_167_] = is;

@@ -5,7 +5,7 @@
 final class Class372 {
     private final ha_Sub3 aHa_Sub3_4526;
     static int anInt4527;
-    private final d aD4528;
+    private final TextureSource aD4528;
     static int anInt4529;
     static int anInt4530;
     private final Class60 aClass60_4531 = new Class60(256);
@@ -45,7 +45,7 @@ final class Class372 {
         return interface18_impl3;
     }
 
-    Class372(ha_Sub3 var_ha_Sub3, d var_d) {
+    Class372(ha_Sub3 var_ha_Sub3, TextureSource var_d) {
         try {
             aHa_Sub3_4526 = var_ha_Sub3;
             aD4528 = var_d;

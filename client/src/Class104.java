@@ -232,7 +232,7 @@ final class Class104 {
         }
     }
 
-    static final ha method958(boolean bool, int i, d var_d, int i_61_, Canvas canvas, Index index) {
+    static final ha method958(boolean bool, int i, TextureSource var_d, int i_61_, Canvas canvas, Index index) {
         try {
             if (bool != true) aClass221_1620 = null;
             anInt1610++;

@@ -24,7 +24,7 @@ abstract class ha {
     static int anInt4576;
     static int anInt4577;
     static int[] anIntArray4578 = new int[200];
-    d aD4579;
+    TextureSource aD4579;
     static int anInt4580;
     static int anInt4581;
     static float aFloat4582;
@@ -299,7 +299,7 @@ abstract class ha {
 
     abstract Sprite method3691(Class207 class207, boolean bool);
 
-    static final synchronized ha method3692(int i, int i_168_, int i_169_, Index index, int i_170_, d var_d, Canvas canvas, int i_171_) {
+    static final synchronized ha method3692(int i, int i_168_, int i_169_, Index index, int i_170_, TextureSource var_d, Canvas canvas, int i_171_) {
         try {
             anInt4576++;
             if (i_170_ == i_171_) return Class348_Sub5.method2753(true, i_168_, i_169_, canvas, var_d);
@@ -368,7 +368,7 @@ abstract class ha {
 
     abstract Sprite method3711(int[] is, int i, int i_212_, int i_213_, int i_214_, boolean bool);
 
-    ha(d var_d) {
+    ha(TextureSource var_d) {
         this.aD4579 = var_d;
         int i = -1;
         for (int i_215_ = 0; i_215_ < 8; i_215_++) {

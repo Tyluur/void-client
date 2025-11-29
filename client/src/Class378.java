@@ -219,7 +219,7 @@ public final class Class378 extends ha_Sub3 {
         this.anIDirect3DDevice9810.SetTextureStageState(this.anInt8175, 11, i_18_);
     }
 
-    static final ha createToolkit(Canvas canvas, d var_d, Index index, Integer integer) {
+    static final ha createToolkit(Canvas canvas, TextureSource var_d, Index index, Integer integer) {
         Class378 class378 = null;
         Class378 class378_19_;
         try {
@@ -432,7 +432,7 @@ public final class Class378 extends ha_Sub3 {
         if (i >= -19) method3855(null, -78, 86, null, false, 82, 55, -34);
     }
 
-    private Class378(int i, int i_38_, Canvas canvas, hb var_hb, IDirect3D idirect3d, IDirect3DDevice idirect3ddevice, Class53 class53, D3DPRESENT_PARAMETERS d3dpresent_parameters, D3DCAPS d3dcaps, d var_d, Index index, int i_39_) {
+    private Class378(int i, int i_38_, Canvas canvas, hb var_hb, IDirect3D idirect3d, IDirect3DDevice idirect3ddevice, Class53 class53, D3DPRESENT_PARAMETERS d3dpresent_parameters, D3DCAPS d3dcaps, TextureSource var_d, Index index, int i_39_) {
         super(canvas, class53, var_d, index, i_39_, 0);
         try {
             this.aHb9788 = var_hb;

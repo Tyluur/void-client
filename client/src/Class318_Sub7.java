@@ -102,7 +102,7 @@ final class Class318_Sub7 extends Class318 {
         }
     }
 
-    static final void method2512(d var_d, ha var_ha, int i) {
+    static final void method2512(TextureSource var_d, ha var_ha, int i) {
         try {
             anInt6440++;
             if (Class75.aClass348_Sub42_Sub14_1243 != null) {

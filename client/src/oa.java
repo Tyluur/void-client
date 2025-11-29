@@ -30,7 +30,7 @@ final class oa extends ha implements Interface19 {
     private boolean aBoolean5142;
     private a[] anAArray5143;
 
-    private final native void MA(d var_d, int i, int i_0_);
+    private final native void MA(TextureSource var_d, int i, int i_0_);
 
     final void method3628(int i, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_) {
         U(i, i_1_, i_2_, i_4_, i_5_);
@@ -454,7 +454,7 @@ final class oa extends ha implements Interface19 {
         /* empty */
     }
 
-    public oa(Canvas canvas, d var_d, int i, int i_177_) {
+    public oa(Canvas canvas, TextureSource var_d, int i, int i_177_) {
         super(var_d);
         aClass262_5123 = new Class262();
         anInt5127 = 4096;

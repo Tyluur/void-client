@@ -32,7 +32,7 @@ final class Class101_Sub1 extends Class101 {
     float aFloat5681;
     static int anInt5682;
     static int anInt5683;
-    static d aD5684;
+    static TextureSource aD5684;
     float aFloat5685;
     float aFloat5686;
     static int anInt5687;

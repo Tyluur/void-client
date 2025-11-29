@@ -1259,7 +1259,7 @@ final class Class64_Sub3 extends Class64 {
 
     final void aa(short i, short i_284_) {
         anInt5590++;
-        d var_d = aHa_Sub2_5598.aD4579;
+        TextureSource var_d = aHa_Sub2_5598.aD4579;
         for (int i_285_ = 0; i_285_ < anInt5632; i_285_++) {
             if (aShortArray5601[i_285_] == i) aShortArray5601[i_285_] = i_284_;
         }
@@ -2873,7 +2873,7 @@ final class Class64_Sub3 extends Class64 {
                 if (aa_Sub3.method166((byte) 69, i_697_, i)) aClass123_5563 = new Class123(null, 5126, 3, 0);
                 if (Class146.method1193(i_697_, i, true)) aClass123_5610 = new Class123(null, 5121, 4, 0);
                 if (Class156.method1238(i, i_697_, -31)) aClass270_5575 = new Class270();
-                d var_d = var_ha_Sub2.aD4579;
+                TextureSource var_d = var_ha_Sub2.aD4579;
                 anIntArray5528 = new int[class124.anInt1821 + 1];
                 int[] is = new int[class124.anInt1817];
                 for (int i_698_ = 0; (i_698_ < class124.anInt1817); i_698_++) {

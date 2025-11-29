@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-interface d {
+// d
+interface TextureSource {
     float[] method1(int i, float f, boolean bool, int i_0_, int i_1_, int i_2_);
 
     int method2(boolean bool);

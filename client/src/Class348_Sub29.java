@@ -20,7 +20,7 @@ final class Class348_Sub29 extends Node {
         this.aShort6911 = i;
     }
 
-    static final void method3004(Index index, boolean bool, d var_d) {
+    static final void method3004(Index index, boolean bool, TextureSource var_d) {
         do {
             try {
                 Class260.aIndex_3309 = index;

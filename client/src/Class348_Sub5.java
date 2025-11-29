@@ -33,7 +33,7 @@ abstract class Class348_Sub5 extends Node {
         return null;
     }
 
-    static final ha method2753(boolean bool, int i, int i_4_, Canvas canvas, d var_d) {
+    static final ha method2753(boolean bool, int i, int i_4_, Canvas canvas, TextureSource var_d) {
         try {
             anInt6628++;
             if (bool != true) aByteArray6624 = null;

@@ -1034,7 +1034,7 @@ final class ha_Sub2 extends ha {
         anInt7646++;
     }
 
-    ha_Sub2(Canvas canvas, d var_d, int i) {
+    ha_Sub2(Canvas canvas, TextureSource var_d, int i) {
         super(var_d);
         aClass233_7711 = new Class233();
         aClass101_Sub3_7725 = new Class101_Sub3();

@@ -1806,7 +1806,7 @@ final class Class64_Sub2 extends Class64 {
         this(var_ha_Sub3, i, i_336_, true, false);
         do {
             try {
-                d var_d = var_ha_Sub3.aD4579;
+                TextureSource var_d = var_ha_Sub3.aD4579;
                 int[] is = new int[class124.anInt1817];
                 anIntArray5455 = new int[1 + class124.anInt1821];
                 for (int i_337_ = 0; i_337_ < class124.anInt1817; i_337_++) {
@@ -2649,7 +2649,7 @@ final class Class64_Sub2 extends Class64 {
 
     final void aa(short i, short i_570_) {
         anInt5403++;
-        d var_d = aHa_Sub3_5419.aD4579;
+        TextureSource var_d = aHa_Sub3_5419.aD4579;
         for (int i_571_ = 0; anInt5478 > i_571_; i_571_++) {
             if (i == aShortArray5423[i_571_]) aShortArray5423[i_571_] = i_570_;
         }

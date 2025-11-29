@@ -2607,7 +2607,7 @@ abstract class ha_Sub3 extends ha {
         return true;
     }
 
-    ha_Sub3(Canvas canvas, Object object, d var_d, Index index, int i, int i_289_) {
+    ha_Sub3(Canvas canvas, Object object, TextureSource var_d, Index index, int i, int i_289_) {
         super(var_d);
         this.aFloat8089 = 3584.0F;
         this.anInt8095 = 50;

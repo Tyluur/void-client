@@ -2952,7 +2952,7 @@ final class Class64_Sub1 extends Class64 {
         anInt5316 = i;
         anInt5344 = i_785_;
         anInt5349 = i_786_;
-        d var_d = aHa_Sub1_5353.aD4579;
+        TextureSource var_d = aHa_Sub1_5353.aD4579;
         anInt5340 = class124.anInt1836;
         anInt5387 = class124.anInt1821;
         anIntArray5356 = class124.anIntArray1841;

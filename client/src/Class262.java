@@ -213,7 +213,7 @@ final class Class262 {
         node.aNode_4294.aNode_4295 = node;
     }
 
-    static final ha method2000(int i, int i_23_, Canvas canvas, d var_d) {
+    static final ha method2000(int i, int i_23_, Canvas canvas, TextureSource var_d) {
         try {
             anInt3324++;
             if (i != 3) method1992(null, -40, 69, -1);

@@ -20,7 +20,7 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
         anInt8692++;
         if (i != -121) method2256((byte) 33);
         if (aClass258_Sub2_8688 == null) {
-            d var_d = aHa_Sub2_8693.aD4579;
+            TextureSource var_d = aHa_Sub2_8693.aD4579;
             Class308.anIntArray3883[3] = anInt8690;
             Class308.anIntArray3883[4] = anInt8686;
             Class308.anIntArray3883[2] = anInt8691;

@@ -673,7 +673,7 @@ final class s_Sub2 extends s {
         try {
             anInt8261++;
             if (is_177_ != null && anIntArrayArrayArray8258 == null) anIntArrayArrayArray8258 = new int[this.anInt4587][this.anInt4590][];
-            d var_d = this.aHa_Sub2_8272.aD4579;
+            TextureSource var_d = this.aHa_Sub2_8272.aD4579;
             if (is_179_ != null && anIntArrayArrayArray8252 == null) anIntArrayArrayArray8252 = new int[this.anInt4587][this.anInt4590][];
             this.anIntArrayArrayArray8268[i][i_176_] = is;
             this.anIntArrayArrayArray8234[i][i_176_] = is_178_;

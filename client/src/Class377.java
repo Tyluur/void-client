@@ -636,7 +636,7 @@ final class Class377 extends ha_Sub3 {
         anInt9833++;
     }
 
-    Class377(OpenGL opengl, Canvas canvas, long l, d var_d, Index index, int i) {
+    Class377(OpenGL opengl, Canvas canvas, long l, TextureSource var_d, Index index, int i) {
         super(canvas, new Long(l), var_d, index, i, 1);
         try {
             try {

@@ -146,7 +146,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         return frame;
     }
 
-    static final void method2464(byte i, int i_11_, int i_12_, int i_13_, ha var_ha, int i_14_, d var_d) {
+    static final void method2464(byte i, int i_11_, int i_12_, int i_13_, ha var_ha, int i_14_, TextureSource var_d) {
         do {
             try {
                 anInt10357++;

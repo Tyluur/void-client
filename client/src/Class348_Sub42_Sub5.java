@@ -19,7 +19,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
     static Class351 aClass351_9533;
     static KeyLog[] KEYBOARD_EVENT_ARRAY_1 = new KeyLog[128];
 
-    final int[] method3183(d var_d, int i, int i_0_, boolean bool, double d, Index index, byte i_1_) {
+    final int[] method3183(TextureSource var_d, int i, int i_0_, boolean bool, double d, Index index, byte i_1_) {
         try {
             anInt9522++;
             Class286_Sub5.aD6247 = var_d;
@@ -82,7 +82,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
         }
     }
 
-    final boolean method3184(d var_d, Index index, int i) {
+    final boolean method3184(TextureSource var_d, Index index, int i) {
         try {
             anInt9529++;
             if (Class101_Sub2.anInt5713 < 0) {
@@ -105,7 +105,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
         }
     }
 
-    final int[] method3185(int i, d var_d, int i_21_, boolean bool, double d, boolean bool_22_, Index index, int i_23_) {
+    final int[] method3185(int i, TextureSource var_d, int i_21_, boolean bool, double d, boolean bool_22_, Index index, int i_23_) {
         try {
             Class286_Sub5.aD6247 = var_d;
             Node.aIndex_4286 = index;
@@ -171,7 +171,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
         }
     }
 
-    final float[] method3186(int i, d var_d, boolean bool, int i_41_, Index index, int i_42_) {
+    final float[] method3186(int i, TextureSource var_d, boolean bool, int i_41_, Index index, int i_42_) {
         try {
             anInt9525++;
             Node.aIndex_4286 = index;
