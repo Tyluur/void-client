@@ -44,7 +44,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
         for (int i_2_ = 0; i_2_ < anInt9301; i_2_++) {
             if (i_2_ > 0) {
                 int i_3_ = anInt9300;
-                int i_4_ = ((Class124.method1097((byte) 90, 4096, random) - 2048) * anInt9305 >> 12);
+                int i_4_ = ((Mesh.method1097((byte) 90, 4096, random) - 2048) * anInt9305 >> 12);
                 i_3_ += i_4_ * i_1_ >> 12;
                 anIntArray9297[i_2_] = i_3_ + anIntArray9297[-1 + i_2_];
             }
@@ -52,11 +52,11 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
             for (int i_5_ = 0; anInt9299 > i_5_; i_5_++) {
                 if (i_5_ > 0) {
                     int i_6_ = anInt9291;
-                    int i_7_ = ((Class124.method1097((byte) 117, 4096, random) - 2048) * anInt9302 >> 12);
+                    int i_7_ = ((Mesh.method1097((byte) 117, 4096, random) - 2048) * anInt9302 >> 12);
                     i_6_ += i_0_ * i_7_ >> 12;
                     anIntArrayArray9287[i_2_][i_5_] = anIntArrayArray9287[i_2_][i_5_ + -1] + i_6_;
                 }
-                anIntArrayArray9286[i_2_][i_5_] = (anInt9284 <= 0 ? 4096 : (-Class124.method1097((byte) 124, anInt9284, random) + 4096));
+                anIntArrayArray9286[i_2_][i_5_] = (anInt9284 <= 0 ? 4096 : (-Mesh.method1097((byte) 124, anInt9284, random) + 4096));
             }
             anIntArrayArray9287[i_2_][anInt9299] = 4096;
         }
@@ -78,7 +78,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
         aClass114_9285 = null;
     }
 
-    final void method3049(Class348_Sub49 class348_sub49, int i, int i_8_) {
+    final void method3049(Packet packet, int i, int i_8_) {
         anInt9292++;
         if (i_8_ != 31015) method3111(106, 16);
         int i_9_ = i;
@@ -96,7 +96,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
                             do {
                                 do {
                                     if (i_9_ == 0) {
-                                        anInt9299 = class348_sub49.readUnsignedByte(255);
+                                        anInt9299 = packet.readUnsignedByte(255);
                                         return;
                                     } else if (i_9_ != 1) {
                                         if (i_9_ != 2) {
@@ -114,25 +114,25 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
                                         } else break;
                                         break while_184_;
                                     }
-                                    anInt9301 = class348_sub49.readUnsignedByte(255);
+                                    anInt9301 = packet.readUnsignedByte(255);
                                     return;
                                 } while (false);
-                                anInt9302 = class348_sub49.readUnsignedShort(842397944);
+                                anInt9302 = packet.readUnsignedShort(842397944);
                                 return;
                             } while (false);
-                            anInt9305 = class348_sub49.readUnsignedShort(842397944);
+                            anInt9305 = packet.readUnsignedShort(842397944);
                             return;
                         } while (false);
-                        anInt9288 = class348_sub49.readUnsignedShort(842397944);
+                        anInt9288 = packet.readUnsignedShort(842397944);
                         return;
                     } while (false);
-                    anInt9293 = class348_sub49.readUnsignedShort(842397944);
+                    anInt9293 = packet.readUnsignedShort(842397944);
                     return;
                 } while (false);
-                anInt9294 = class348_sub49.readUnsignedShort(842397944);
+                anInt9294 = packet.readUnsignedShort(842397944);
                 return;
             } while (false);
-            anInt9284 = class348_sub49.readUnsignedShort(i_8_ + 842366929);
+            anInt9284 = packet.readUnsignedShort(i_8_ + 842366929);
         } while (false);
     }
 

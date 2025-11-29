@@ -36,13 +36,13 @@ final class Class253 {
         return 0x7f & i_10_;
     }
 
-    final void method1921(byte i, Class348_Sub49 class348_sub49) {
+    final void method1921(byte i, Packet packet) {
         if (i != -69) method1923(-117, -120, null);
         anInt3255++;
         for (; ; ) {
-            int i_11_ = class348_sub49.readUnsignedByte(255);
+            int i_11_ = packet.readUnsignedByte(255);
             if (i_11_ == 0) break;
-            method1923(i_11_, 4, class348_sub49);
+            method1923(i_11_, 4, packet);
         }
     }
 
@@ -59,15 +59,15 @@ final class Class253 {
         }
     }
 
-    private final void method1923(int i, int i_13_, Class348_Sub49 class348_sub49) {
+    private final void method1923(int i, int i_13_, Packet packet) {
         anInt3254++;
         if (i_13_ == 4) {
             if (i != 1) {
                 if (i != 2) {
-                    if (i == 3) this.anInt3244 = class348_sub49.readUnsignedShort(i_13_ ^ 0x3235f8fc);
-                    else if (i == 4) this.anInt3251 = class348_sub49.readShort(13638);
-                } else this.anInt3249 = class348_sub49.readUnsignedShort(i_13_ + 842397940);
-            } else this.anInt3245 = class348_sub49.readUnsignedByte(255);
+                    if (i == 3) this.anInt3244 = packet.readUnsignedShort(i_13_ ^ 0x3235f8fc);
+                    else if (i == 4) this.anInt3251 = packet.readShort(13638);
+                } else this.anInt3249 = packet.readUnsignedShort(i_13_ + 842397940);
+            } else this.anInt3245 = packet.readUnsignedByte(255);
         }
     }
 

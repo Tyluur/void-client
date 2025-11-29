@@ -32,7 +32,7 @@ abstract class Class272 {
             else {
                 ItemDefinition.aClass238_2773 = Class348_Sub40_Sub8.aClass238_9165;
                 Class348_Sub40_Sub8.aClass238_9165 = null;
-                Class348_Sub49.setStep(2, 13);
+                Packet.setStep(2, 13);
             }
         }
     }

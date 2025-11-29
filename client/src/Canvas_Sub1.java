@@ -107,10 +107,10 @@ final class Canvas_Sub1 extends Canvas {
         Class64 class64 = (Class64) Class15.aClass60_225.method583(l, 81);
         int i_18_ = 2055;
         if (class64 == null) {
-            Class124 class124 = Class300.method2277(0, aa_Sub3.MODELS, i_16_, -1);
-            if (class124 == null) return null;
-            if (class124.anInt1830 < 13) class124.method1092(2, 105);
-            class64 = var_ha.method3625(class124, i_18_, Class171.anInt2275, 64, 768);
+            Mesh mesh = Class300.method2277(0, aa_Sub3.MODELS, i_16_, -1);
+            if (mesh == null) return null;
+            if (mesh.version < 13) mesh.method1092(2, 105);
+            class64 = var_ha.method3625(mesh, i_18_, Class171.anInt2275, 64, 768);
             Class15.aClass60_225.method582(class64, l, (byte) -122);
         }
         class64 = class64.method614((byte) 2, i_18_, true);
@@ -141,9 +141,9 @@ final class Canvas_Sub1 extends Canvas {
                     bool = false;
                 }
             }
-            if (Class295.mapUndergroundTiles[i_19_] != -1 && Class129.aByteArrayArray1887[i_19_] == null) {
-                Class129.aByteArrayArray1887[i_19_] = Class367_Sub10.MAPS.method410(-1860, Class295.mapUndergroundTiles[i_19_], 0);
-                if (Class129.aByteArrayArray1887[i_19_] == null) {
+            if (Class295.mapUndergroundTiles[i_19_] != -1 && ModelParticleEmitter.aByteArrayArray1887[i_19_] == null) {
+                ModelParticleEmitter.aByteArrayArray1887[i_19_] = Class367_Sub10.MAPS.method410(-1860, Class295.mapUndergroundTiles[i_19_], 0);
+                if (ModelParticleEmitter.aByteArrayArray1887[i_19_] == null) {
                     FloorOverlayTypeList.anInt3441++;
                     bool = false;
                 }
@@ -206,7 +206,7 @@ final class Canvas_Sub1 extends Canvas {
                 boolean bool_25_ = false;
                 if (Class348_Sub8.aHa6654.method3639() && Class316.clientOptions.aClass239_Sub18_7259.method1800(-32350) == 2) {
                     for (int i_26_ = 0; (i_26_ < Class347.aByteArrayArray4281.length); i_26_++) {
-                        if ((Class348_Sub23_Sub1.aByteArrayArray8996[i_26_] != null) || Class129.aByteArrayArray1887[i_26_] != null) {
+                        if ((Class348_Sub23_Sub1.aByteArrayArray8996[i_26_] != null) || ModelParticleEmitter.aByteArrayArray1887[i_26_] != null) {
                             bool_25_ = true;
                             break;
                         }
@@ -247,10 +247,10 @@ final class Canvas_Sub1 extends Canvas {
                     Class243.method1879(true);
                     TimedVarDomain.aClass237_Sub1_5067 = new Class237_Sub1(1, Class367_Sub4.mapLength, Class348_Sub40_Sub3.mapWidth, true);
                     if (Class312.anInt3931 == 0) {
-                        Class348_Sub1_Sub1.method2727((byte) -44, (TimedVarDomain.aClass237_Sub1_5067), (Class129.aByteArrayArray1887));
+                        Class348_Sub1_Sub1.method2727((byte) -44, (TimedVarDomain.aClass237_Sub1_5067), (ModelParticleEmitter.aByteArrayArray1887));
                         Class289.method2193(true, (byte) -119);
                     } else {
-                        Class44.method385(false, TimedVarDomain.aClass237_Sub1_5067, Class129.aByteArrayArray1887);
+                        Class44.method385(false, TimedVarDomain.aClass237_Sub1_5067, ModelParticleEmitter.aByteArrayArray1887);
                         Class289.method2193(true, (byte) -125);
                     }
                     TimedVarDomain.aClass237_Sub1_5067.method1679(0, 0, (Class338.aClass237_Sub1_4197.anIntArrayArrayArray3122[0]));
@@ -323,13 +323,13 @@ final class Canvas_Sub1 extends Canvas {
                 }
                 if (Class240.mainLogicStep != 4) {
                     if (Class240.mainLogicStep != 8) {
-                        Class348_Sub49.setStep(2, 10);
+                        Packet.setStep(2, 10);
                         if (Class348_Sub40_Sub8.aClass238_9165 != null) {
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Js5MasterIndex.aClass351_4223), (Class348_Sub23_Sub2.aClass77_9029), -106);
                             Class348_Sub42_Sub14.method3243(127, class348_sub47);
                         }
-                    } else Class348_Sub49.setStep(2, 7);
-                } else Class348_Sub49.setStep(i ^ 0x2, 3);
+                    } else Packet.setStep(2, 7);
+                } else Packet.setStep(i ^ 0x2, 3);
                 Class348_Sub1.method2718(-106);
                 Class369_Sub1.method3570(false);
                 Class94.method867(true);

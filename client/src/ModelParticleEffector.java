@@ -4,7 +4,8 @@
 
 import java.awt.*;
 
-final class Class342 {
+// Class342
+final class ModelParticleEffector {
     int anInt4238;
     int anInt4239;
     int anInt4240;
@@ -15,7 +16,7 @@ final class Class342 {
     int anInt4245;
     static Class364 aClass364_4246 = new Class364("WTI", 5);
     static Class70 aClass70_4247;
-    Class342 aClass342_4248;
+    ModelParticleEffector aModelParticleEffector_4248;
     static Image anImage4249;
     static int[] anIntArray4250 = new int[64];
     static int anInt4251;
@@ -103,13 +104,13 @@ final class Class342 {
         }
     }
 
-    final Class342 method2687(byte i, int i_11_) {
+    final ModelParticleEffector method2687(byte i, int i_11_) {
         anInt4241++;
         if (i < 61) return null;
-        return new Class342(this.anInt4245, i_11_);
+        return new ModelParticleEffector(this.anInt4245, i_11_);
     }
 
-    Class342(int i, int i_12_) {
+    ModelParticleEffector(int i, int i_12_) {
         this.anInt4245 = i;
         this.anInt4244 = i_12_;
     }

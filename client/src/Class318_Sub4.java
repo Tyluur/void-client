@@ -41,42 +41,42 @@ final class Class318_Sub4 extends Class318 {
         if (i >= -76) return null;
         anInt6413++;
         ClientScript script = new ClientScript();
-        Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
-        class348_sub49.anInt7197 = -2 + class348_sub49.aByteArray7154.length;
-        int i_11_ = class348_sub49.readUnsignedShort(842397944);
-        int i_12_ = -12 + -i_11_ + (-2 + (class348_sub49.aByteArray7154).length);
-        class348_sub49.anInt7197 = i_12_;
-        int i_13_ = class348_sub49.readInt((byte) -126);
-        script.intVariableCount = class348_sub49.readUnsignedShort(842397944);
-        script.stringVariableCount = class348_sub49.readUnsignedShort(842397944);
-        script.intArgumentCount = class348_sub49.readUnsignedShort(842397944);
-        script.stringArgumentCount = class348_sub49.readUnsignedShort(842397944);
-        int i_14_ = class348_sub49.readUnsignedByte(255);
+        Packet packet = new Packet(is);
+        packet.pos = -2 + packet.aByteArray7154.length;
+        int i_11_ = packet.readUnsignedShort(842397944);
+        int i_12_ = -12 + -i_11_ + (-2 + (packet.aByteArray7154).length);
+        packet.pos = i_12_;
+        int i_13_ = packet.readInt((byte) -126);
+        script.intVariableCount = packet.readUnsignedShort(842397944);
+        script.stringVariableCount = packet.readUnsignedShort(842397944);
+        script.intArgumentCount = packet.readUnsignedShort(842397944);
+        script.stringArgumentCount = packet.readUnsignedShort(842397944);
+        int i_14_ = packet.readUnsignedByte(255);
         if (i_14_ > 0) {
             script.aClass356Array9693 = new Class356[i_14_];
             for (int i_15_ = 0; i_15_ < i_14_; i_15_++) {
-                int i_16_ = class348_sub49.readUnsignedShort(842397944);
+                int i_16_ = packet.readUnsignedShort(842397944);
                 Class356 class356 = new Class356(EnumTypeList.method340(i_16_, (byte) 108));
                 script.aClass356Array9693[i_15_] = class356;
                 while (i_16_-- > 0) {
-                    int i_17_ = class348_sub49.readInt((byte) -126);
-                    int i_18_ = class348_sub49.readInt((byte) -126);
+                    int i_17_ = packet.readInt((byte) -126);
+                    int i_18_ = packet.readInt((byte) -126);
                     class356.method3483((byte) 124, i_17_, new Class348_Sub35(i_18_));
                 }
             }
         }
-        class348_sub49.anInt7197 = 0;
-        script.name = class348_sub49.method3384(107);
+        packet.pos = 0;
+        script.name = packet.method3384(107);
         script.intOperands = new int[i_13_];
         script.instructions = new int[i_13_];
         script.stringOperands = new String[i_13_];
         int i_19_ = 0;
-        while (class348_sub49.anInt7197 < i_12_) {
-            int opcode = class348_sub49.readUnsignedShort(842397944);
+        while (packet.pos < i_12_) {
+            int opcode = packet.readUnsignedShort(842397944);
             if (opcode != 3) {
-                if (opcode >= 100 || opcode == 21 || opcode == 38 || opcode == 39) script.intOperands[i_19_] = class348_sub49.readUnsignedByte(255);
-                else script.intOperands[i_19_] = class348_sub49.readInt((byte) -126);
-            } else script.stringOperands[i_19_] = class348_sub49.readString((byte) -98).intern();
+                if (opcode >= 100 || opcode == 21 || opcode == 38 || opcode == 39) script.intOperands[i_19_] = packet.readUnsignedByte(255);
+                else script.intOperands[i_19_] = packet.readInt((byte) -126);
+            } else script.stringOperands[i_19_] = packet.readString((byte) -98).intern();
             script.instructions[i_19_++] = opcode;
         }
         return script;

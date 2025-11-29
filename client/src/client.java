@@ -75,10 +75,10 @@ public final class client extends Applet_Sub1 {
                 }
                 if (Class47.anInt846 == 2) {
                     Class193.aClass202_2589 = new Class202((Socket) aa.aClass144_114.anObject1998, Class348_Sub23_Sub1.aClass297_8992, 25000);
-                    Class348_Sub49 class348_sub49 = new Class348_Sub49(5);
-                    class348_sub49.writeByte(false, (Class178.aClass29_2341.anInt400));
-                    class348_sub49.writeInt((byte) 103, 634);
-                    Class193.aClass202_2589.method1470((class348_sub49.aByteArray7154), 5, 0, -1);
+                    Packet packet = new Packet(5);
+                    packet.writeByte(false, (Class178.aClass29_2341.anInt400));
+                    packet.writeInt((byte) 103, 634);
+                    Class193.aClass202_2589.method1470((packet.aByteArray7154), 5, 0, -1);
                     Class47.anInt846++;
                     Index.aLong667 = Class62.safeTime(-70);
                 }
@@ -98,10 +98,10 @@ public final class client extends Applet_Sub1 {
                 if (Class47.anInt846 == 4) {
                     boolean bool = (Class139.method1167(Class240.mainLogicStep, (byte) -100) || Class348_Sub42_Sub8.method3196(Class240.mainLogicStep, -87) || Js5MasterIndex.method2672(Class240.mainLogicStep, -127));
                     Class267[] class267s = Class267.method2029(105);
-                    Class348_Sub49 class348_sub49 = new Class348_Sub49(class267s.length * 4);
-                    Class193.aClass202_2589.method1474(class348_sub49.aByteArray7154, 0, (byte) -72, (class348_sub49.aByteArray7154).length);
+                    Packet packet = new Packet(class267s.length * 4);
+                    Class193.aClass202_2589.method1474(packet.aByteArray7154, 0, (byte) -72, (packet.aByteArray7154).length);
                     for (int i_1_ = 0; i_1_ < class267s.length; i_1_++)
-                        class267s[i_1_].method2030(1, class348_sub49.readInt((byte) -126));
+                        class267s[i_1_].method2030(1, packet.readInt((byte) -126));
                     SystemInfo.aClass248_6601.method1903(false, !bool, Class193.aClass202_2589);
                     Class47.anInt846 = 0;
                     aa.aClass144_114 = null;
@@ -264,7 +264,7 @@ public final class client extends Applet_Sub1 {
         Class227.method1627((byte) 116);
         Class19.method284((byte) 51);
         Class54.method501(1);
-        Class348_Sub49.method3376(i ^ ~0x6d);
+        Packet.method3376(i ^ ~0x6d);
         Class348_Sub47.method3323(-44);
         Class318_Sub1_Sub3_Sub3.method2429(-123);
         Class357.method3487(-65);
@@ -298,7 +298,7 @@ public final class client extends Applet_Sub1 {
         Class299.method2254(i ^ ~0x39bf);
         Class375.method3613(64);
         Class51.method486(-123);
-        Class124.method1096(i ^ 0x11);
+        Mesh.method1096(i ^ 0x11);
         Class2.method171((byte) 72);
         s.method3988(i + -182);
         NPCDefinition.method804(-3752);
@@ -403,9 +403,9 @@ public final class client extends Applet_Sub1 {
         r.method3285(88);
         Class178.method1355(-108);
         Class72.method731();
-        Class129.method1126(32);
-        Class342.method2682(i ^ 0x29);
-        Class162.method1267((byte) 85);
+        ModelParticleEmitter.method1126(32);
+        ModelParticleEffector.method2682(i ^ 0x29);
+        MeshBillboard.method1267((byte) 85);
         Class348_Sub33.method3024(-100);
         Class4.method177();
         Class222.method1609((byte) -121);
@@ -755,7 +755,7 @@ public final class client extends Applet_Sub1 {
             Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
             Class348_Sub40_Sub8.aClass238_9165 = null;
         }
-        Class162.method1265(16);
+        MeshBillboard.method1265(16);
         SystemInfo.aClass248_6601.method1901(i ^ ~0x44);
         Class39.aClass112_520.method1051(true);
         if (Class76.aClass169_1286 != null) {

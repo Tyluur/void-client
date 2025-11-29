@@ -211,10 +211,10 @@ final class Class133 {
                     if ((i_0_ & 0x10) != 0) {
                         int i_35_ = class348_sub49_sub2.readUnsignedByte(255);
                         byte[] is = new byte[i_35_];
-                        Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
+                        Packet packet = new Packet(is);
                         class348_sub49_sub2.method3347(is, 0, i_35_, (byte) -124);
-                        Class154.aClass348_Sub49Array2105[i] = class348_sub49;
-                        player.method2452((byte) 84, class348_sub49);
+                        Class154.aPacketArray2105[i] = packet;
+                        player.method2452((byte) 84, packet);
                     }
                     if ((0x800 & i_0_) != 0) tempSpeed = class348_sub49_sub2.readByteInverse(-622951480);
                     if (!player.aBoolean10539) break;

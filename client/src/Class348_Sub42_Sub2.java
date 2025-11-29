@@ -43,14 +43,14 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
                 [Class348_Sub41.anInt7054]);
         Class348_Sub1_Sub1.aSArray8801 = new s[i_1_];
         if (bool) {
-            Class342.anIntArrayArray4253 = new int[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
+            ModelParticleEffector.anIntArrayArray4253 = new int[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
             Class348_Sub1_Sub2.aByteArrayArray8816 = new byte[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
             Option_Sub1.aShortArrayArray5847 = new short[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
             Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = (new Class357[1][Class318_Sub7.anInt6451]
                     [Class348_Sub41.anInt7054]);
             Class332.aSArray4142 = new s[1];
         } else {
-            Class342.anIntArrayArray4253 = null;
+            ModelParticleEffector.anIntArrayArray4253 = null;
             Class348_Sub1_Sub2.aByteArrayArray8816 = null;
             Option_Sub1.aShortArrayArray5847 = null;
             Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = null;

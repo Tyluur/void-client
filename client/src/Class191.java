@@ -30,7 +30,7 @@ final class Class191 {
     }
 
     static final void method1428(boolean bool) {
-        Class342.anImage4249 = null;
+        ModelParticleEffector.anImage4249 = null;
         anInt2569++;
         Class351.aFont4329 = null;
         if (bool != true) method1431(-122);

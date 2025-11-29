@@ -18,7 +18,7 @@ final class Class154 {
     private long aLong2102;
     private int anInt2103;
     static int anInt2104;
-    static Class348_Sub49[] aClass348_Sub49Array2105 = new Class348_Sub49[2048];
+    static Packet[] aPacketArray2105 = new Packet[2048];
     static int anInt2106;
     static int anInt2107;
 
@@ -182,22 +182,22 @@ final class Class154 {
                     }
                     if (class64 == null || var_ha.method3667(class64.ua(), i_9_) != 0) return null;
                 } else {
-                    Class124[] class124s = new Class124[12];
+                    Mesh[] meshes = new Mesh[12];
                     for (int i_40_ = 0; i_40_ < 12; i_40_++) {
                         int i_41_ = is_10_[i_40_];
                         if ((0x40000000 & i_41_) == 0) {
                             if ((~0x7fffffff & i_41_) != 0) {
-                                Class124 class124 = IDKTypeList.method1203((byte) 33, i_41_ & 0x3fffffff).method341(91);
-                                if (class124 != null) class124s[i_40_] = class124;
+                                Mesh mesh = IDKTypeList.method1203((byte) 33, i_41_ & 0x3fffffff).method341(91);
+                                if (mesh != null) meshes[i_40_] = mesh;
                             }
                         } else {
-                            Class124 class124 = (itemTypeList.method1940(104, i_41_ & 0x3fffffff).method1558(this.aBoolean2100, !bool_2_));
-                            if (class124 != null) class124s[i_40_] = class124;
+                            Mesh mesh = (itemTypeList.method1940(104, i_41_ & 0x3fffffff).method1558(this.aBoolean2100, !bool_2_));
+                            if (mesh != null) meshes[i_40_] = mesh;
                         }
                     }
                     if (class225 != null && class225.anIntArrayArray2939 != null) {
                         for (int i_42_ = 0; ((class225.anIntArrayArray2939).length > i_42_); i_42_++) {
-                            if (class124s[i_42_] != null) {
+                            if (meshes[i_42_] != null) {
                                 int i_43_ = 0;
                                 int i_44_ = 0;
                                 int i_45_ = 0;
@@ -212,14 +212,14 @@ final class Class154 {
                                     i_46_ = ((class225.anIntArrayArray2939[i_42_][3]) << 3);
                                     i_45_ = (class225.anIntArrayArray2939[i_42_][2]);
                                 }
-                                if (i_46_ != 0 || i_47_ != 0 || i_48_ != 0) class124s[i_42_].method1107(6875, i_47_, i_48_, i_46_);
-                                if (i_43_ != 0 || i_44_ != 0 || i_45_ != 0) class124s[i_42_].method1099((byte) -82, i_45_, i_43_, i_44_);
+                                if (i_46_ != 0 || i_47_ != 0 || i_48_ != 0) meshes[i_42_].method1107(6875, i_47_, i_48_, i_46_);
+                                if (i_43_ != 0 || i_44_ != 0 || i_45_ != 0) meshes[i_42_].method1099((byte) -82, i_45_, i_43_, i_44_);
                             }
                         }
                     }
-                    Class124 class124 = new Class124(class124s, class124s.length);
+                    Mesh mesh = new Mesh(meshes, meshes.length);
                     i_36_ |= 0x4000;
-                    class64 = var_ha.method3625(class124, i_36_, Class168.anInt2251, 64, 850);
+                    class64 = var_ha.method3625(mesh, i_36_, Class168.anInt2251, 64, 850);
                     for (int i_49_ = 0; i_49_ < 5; i_49_++) {
                         for (int i_50_ = 0; (Class367_Sub2.aShortArrayArrayArray7290.length > i_50_); i_50_++) {
                             if ((Class367_Sub2.aShortArrayArrayArray7290[i_50_][i_49_]).length > this.anIntArray2095[i_49_]) class64.ia((Class136.aShortArrayArray4791[i_50_][i_49_]), (Class367_Sub2.aShortArrayArrayArray7290[i_50_][i_49_][(this.anIntArray2095[i_49_])]));
@@ -381,23 +381,23 @@ final class Class154 {
                     } else if ((~0x7fffffff & i_82_) != 0 && !IDKTypeList.method1203((byte) 33, i_82_ & 0x3fffffff).method342((byte) 110)) bool = true;
                 }
                 if (bool) return null;
-                Class124[] class124s = new Class124[12];
+                Mesh[] meshes = new Mesh[12];
                 int i_83_ = 0;
                 for (int i_84_ = 0; i_84_ < 12; i_84_++) {
                     int i_85_ = anIntArray2092[i_84_];
                     if ((i_85_ & 0x40000000) == 0) {
                         if ((i_85_ & ~0x7fffffff) != 0) {
-                            Class124 class124 = IDKTypeList.method1203((byte) 33, i_85_ & 0x3fffffff).method343((byte) -73);
-                            if (class124 != null) class124s[i_83_++] = class124;
+                            Mesh mesh = IDKTypeList.method1203((byte) 33, i_85_ & 0x3fffffff).method343((byte) -73);
+                            if (mesh != null) meshes[i_83_++] = mesh;
                         }
                     } else {
-                        Class124 class124 = (itemTypeList.method1940(-107, i_85_ & 0x3fffffff).method1554(this.aBoolean2100, -14));
-                        if (class124 != null) class124s[i_83_++] = class124;
+                        Mesh mesh = (itemTypeList.method1940(-107, i_85_ & 0x3fffffff).method1554(this.aBoolean2100, -14));
+                        if (mesh != null) meshes[i_83_++] = mesh;
                     }
                 }
                 i_80_ |= 0x4000;
-                Class124 class124 = new Class124(class124s, i_83_);
-                class64 = var_ha.method3625(class124, i_80_, Class168.anInt2251, 64, 768);
+                Mesh mesh = new Mesh(meshes, i_83_);
+                class64 = var_ha.method3625(mesh, i_80_, Class168.anInt2251, 64, 768);
                 for (int i_86_ = 0; i_86_ < 5; i_86_++) {
                     for (int i_87_ = 0; (Class367_Sub2.aShortArrayArrayArray7290.length > i_87_); i_87_++) {
                         if (this.anIntArray2095[i_86_] < (Class367_Sub2.aShortArrayArrayArray7290[i_87_][i_86_]).length) class64.ia((Class136.aShortArrayArray4791[i_87_][i_86_]), (Class367_Sub2.aShortArrayArrayArray7290[i_87_][i_86_][(this.anIntArray2095[i_86_])]));
@@ -475,18 +475,18 @@ final class Class154 {
             if (class64 == null || var_ha.method3667(class64.ua(), i_98_) != 0) {
                 if (class64 != null) i_98_ = var_ha.method3679(i_98_, class64.ua());
                 int i_108_ = i_98_;
-                Class124[] class124s = new Class124[3];
+                Mesh[] meshes = new Mesh[3];
                 int i_109_ = 0;
                 if (!IDKTypeList.method1203((byte) 33, i_95_).method342((byte) 114) || !IDKTypeList.method1203((byte) 33, i_93_).method342((byte) 102) || !IDKTypeList.method1203((byte) 33, i_92_).method342((byte) 94)) return null;
-                Class124 class124 = IDKTypeList.method1203((byte) 33, i_95_).method343((byte) -50);
-                if (class124 != null) class124s[i_109_++] = class124;
-                class124 = IDKTypeList.method1203((byte) 33, i_93_).method343((byte) -105);
-                if (class124 != null) class124s[i_109_++] = class124;
-                class124 = IDKTypeList.method1203((byte) 33, i_92_).method343((byte) -30);
-                if (class124 != null) class124s[i_109_++] = class124;
-                class124 = new Class124(class124s, i_109_);
+                Mesh mesh = IDKTypeList.method1203((byte) 33, i_95_).method343((byte) -50);
+                if (mesh != null) meshes[i_109_++] = mesh;
+                mesh = IDKTypeList.method1203((byte) 33, i_93_).method343((byte) -105);
+                if (mesh != null) meshes[i_109_++] = mesh;
+                mesh = IDKTypeList.method1203((byte) 33, i_92_).method343((byte) -30);
+                if (mesh != null) meshes[i_109_++] = mesh;
+                mesh = new Mesh(meshes, i_109_);
                 i_108_ |= 0x4000;
-                class64 = var_ha.method3625(class124, i_108_, Class168.anInt2251, 64, 768);
+                class64 = var_ha.method3625(mesh, i_108_, Class168.anInt2251, 64, 768);
                 for (int i_110_ = 0; i_110_ < 5; i_110_++) {
                     for (int i_111_ = 0; (i_111_ < Class367_Sub2.aShortArrayArrayArray7290.length); i_111_++) {
                         if (this.anIntArray2095[i_110_] < (Class367_Sub2.aShortArrayArrayArray7290[i_111_][i_110_]).length) class64.ia((Class136.aShortArrayArray4791[i_111_][i_110_]), (Class367_Sub2.aShortArrayArrayArray7290[i_111_][i_110_][(this.anIntArray2095[i_110_])]));
@@ -541,7 +541,7 @@ final class Class154 {
 
     public static void method1235(byte i) {
         if (i != 7) anInt2101 = -42;
-        aClass348_Sub49Array2105 = null;
+        aPacketArray2105 = null;
     }
 
     public Class154() {

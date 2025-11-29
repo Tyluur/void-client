@@ -47,7 +47,7 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
         do {
             try {
                 Option_Sub14.anInt5994 = 10000;
-                Class124.aIndex_1848 = index;
+                Mesh.aIndex_1848 = index;
                 Class58.anInt1059 = i_7_;
                 Class318_Sub1_Sub4_Sub1.anInt10074 = i;
                 Class346.aBoolean4275 = bool;

@@ -43,7 +43,7 @@ final class IDKTypeList {
         }
         class34 = new Class34();
         class34.aIDKTypeList_475 = this;
-        if (is != null) class34.method346(~i, new Class348_Sub49(is));
+        if (is != null) class34.method346(~i, new Packet(is));
         synchronized (aClass60_2050) {
             aClass60_2050.method582(class34, i_3_, (byte) -109);
         }
@@ -60,12 +60,12 @@ final class IDKTypeList {
 
     static final Class348_Sub42_Sub14 method1205(int i, boolean bool, Index index, int i_4_) {
         anInt2053++;
-        Class348_Sub49 class348_sub49 = new Class348_Sub49(index.method410(-1860, i_4_, i));
+        Packet packet = new Packet(index.method410(-1860, i_4_, i));
         if (bool != true) method1208(102);
-        Class348_Sub42_Sub14 class348_sub42_sub14 = new Class348_Sub42_Sub14(i, class348_sub49.readString((byte) 88), class348_sub49.readString((byte) 120), class348_sub49.readInt((byte) -126), class348_sub49.readInt((byte) -126), class348_sub49.readUnsignedByte(255) == 1, class348_sub49.readUnsignedByte(255), class348_sub49.readUnsignedByte(255));
-        int i_5_ = class348_sub49.readUnsignedByte(255);
+        Class348_Sub42_Sub14 class348_sub42_sub14 = new Class348_Sub42_Sub14(i, packet.readString((byte) 88), packet.readString((byte) 120), packet.readInt((byte) -126), packet.readInt((byte) -126), packet.readUnsignedByte(255) == 1, packet.readUnsignedByte(255), packet.readUnsignedByte(255));
+        int i_5_ = packet.readUnsignedByte(255);
         for (int i_6_ = 0; i_6_ < i_5_; i_6_++)
-            class348_sub42_sub14.aClass262_9629.method1999(new Class348_Sub18(class348_sub49.readUnsignedByte(255), class348_sub49.readUnsignedShort(842397944), class348_sub49.readUnsignedShort(842397944), class348_sub49.readUnsignedShort(842397944), class348_sub49.readUnsignedShort(842397944), class348_sub49.readUnsignedShort(842397944), class348_sub49.readUnsignedShort(842397944), class348_sub49.readUnsignedShort(842397944), class348_sub49.readUnsignedShort(842397944)), -20180);
+            class348_sub42_sub14.aClass262_9629.method1999(new Class348_Sub18(packet.readUnsignedByte(255), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944)), -20180);
         class348_sub42_sub14.method3240((byte) 37);
         return class348_sub42_sub14;
     }

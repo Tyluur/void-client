@@ -39,11 +39,11 @@ final class Class337 {
         return (0x70000 & i_0_) != 0 | Node.method2709(i_1_, i_0_, -1) || Class288.method2187(i_0_, -84, i_1_);
     }
 
-    static final Class288_Sub1 method2660(byte i, Class348_Sub49 class348_sub49) {
+    static final Class288_Sub1 method2660(byte i, Packet packet) {
         anInt4180++;
         if (i != 26) return null;
-        Class288 class288 = Class288_Sub1.method2189(class348_sub49, i + 59);
-        int i_3_ = class348_sub49.method3369((byte) 125);
+        Class288 class288 = Class288_Sub1.method2189(packet, i + 59);
+        int i_3_ = packet.method3369((byte) 125);
         return new Class288_Sub1(class288.anInt4958, class288.aClass221_4955, class288.aClass341_4952, class288.anInt4950, class288.anInt4951, i_3_);
     }
 }

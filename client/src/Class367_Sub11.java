@@ -59,13 +59,13 @@ final class Class367_Sub11 extends Class367 {
         this.aHa_Sub3_4479.method3897(1, -4382);
         this.aHa_Sub3_4479.method3850((byte) -128, null);
         this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 116, Class167.aClass229_2207);
-        this.aHa_Sub3_4479.method3849((byte) 47, 0, Class342.aClass70_4247);
+        this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
         this.aHa_Sub3_4479.method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
-        this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);
+        this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
         this.aHa_Sub3_4479.method3897(0, -4382);
         if (aBoolean7399) {
-            this.aHa_Sub3_4479.method3849((byte) 47, 0, Class342.aClass70_4247);
-            this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);
+            this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+            this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
             aBoolean7399 = false;
         }
         if (i != 87) aClass32_7415 = null;
@@ -85,8 +85,8 @@ final class Class367_Sub11 extends Class367 {
     final void method3527(int i, Interface18 interface18, int i_3_) {
         if (interface18 != null) {
             if (aBoolean7399) {
-                this.aHa_Sub3_4479.method3849((byte) 47, 0, Class342.aClass70_4247);
-                this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);
+                this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+                this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
                 aBoolean7399 = false;
             }
             this.aHa_Sub3_4479.method3850((byte) -122, interface18);
@@ -208,7 +208,7 @@ final class Class367_Sub11 extends Class367 {
         this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 109, Class248.aClass229_3196);
         this.aHa_Sub3_4479.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
         if (i == 15192) {
-            this.aHa_Sub3_4479.method3924(true, false, 2, Class342.aClass70_4247, false);
+            this.aHa_Sub3_4479.method3924(true, false, 2, ModelParticleEffector.aClass70_4247, false);
             this.aHa_Sub3_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);
             this.aHa_Sub3_4479.method3897(0, i + -19574);
             method3528(75);

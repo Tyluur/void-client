@@ -62,8 +62,8 @@ final class Class163 {
 
     static final void method1271(int i) {
         anInt2166++;
-        synchronized (Class342.aClass60_4254) {
-            Class342.aClass60_4254.method587(-86);
+        synchronized (ModelParticleEffector.aClass60_4254) {
+            ModelParticleEffector.aClass60_4254.method587(-86);
             if (i != 0) method1276(25);
         }
     }

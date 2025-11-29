@@ -229,7 +229,7 @@ final class InputStream_Sub2 extends InputStream {
                             if (bool) Class203.method1479(i_99_, (byte) -120, i_101_, (Class348_Sub40_Sub12.anInt9200));
                         }
                     }
-                } else if (class74 == Class162.aClass74_2157) {
+                } else if (class74 == MeshBillboard.aClass74_2157) {
                     int i_105_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(i + 247);
                     boolean bool = (0x80 & i_105_) != 0;
                     int i_106_ = NPCTypeList.anInt3581 - -(i_105_ >> 3 & 0x7);

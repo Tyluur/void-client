@@ -61,7 +61,7 @@ final class TimedVarDomain implements Interface17 {
         if (i_3_ != -65536) return -52;
         int i_5_ = class146.anInt2016;
         int i_6_ = class146.anInt2020;
-        int i_7_ = Class129.anIntArray1885[-i_5_ + i_6_];
+        int i_7_ = ModelParticleEmitter.anIntArray1885[-i_5_ + i_6_];
         return this.anIntArray5063[i_4_] >> i_5_ & i_7_;
     }
 
@@ -71,7 +71,7 @@ final class TimedVarDomain implements Interface17 {
         int i_10_ = class146.anInt2019;
         int i_11_ = class146.anInt2016;
         int i_12_ = class146.anInt2020;
-        int i_13_ = Class129.anIntArray1885[-i_11_ + i_12_];
+        int i_13_ = ModelParticleEmitter.anIntArray1885[-i_11_ + i_12_];
         if (i_8_ < (~i_9_) || i_13_ < i_9_) i_9_ = 0;
         i_13_ <<= i_11_;
         method1306((byte) -78, i_9_ << i_11_ & i_13_ | (this.anIntArray5063[i_10_]) & (~i_13_), i_10_);
@@ -107,9 +107,9 @@ final class TimedVarDomain implements Interface17 {
         }
     }
 
-    static final Class52 method1312(byte i, Class348_Sub49 class348_sub49) {
+    static final Class52 method1312(byte i, Packet packet) {
         anInt5075++;
-        int i_23_ = class348_sub49.readInt((byte) -126);
+        int i_23_ = packet.readInt((byte) -126);
         if (i < 47) method1315(4);
         return new Class52(i_23_);
     }
@@ -167,7 +167,7 @@ final class TimedVarDomain implements Interface17 {
         int i_33_ = class146.anInt2016;
         if (i < -56) {
             int i_34_ = class146.anInt2020;
-            int i_35_ = Class129.anIntArray1885[i_34_ - i_33_];
+            int i_35_ = ModelParticleEmitter.anIntArray1885[i_34_ - i_33_];
             if (i_31_ < 0 || i_35_ < i_31_) i_31_ = 0;
             i_35_ <<= i_33_;
             method1313((byte) 42, (i_31_ << i_33_ & i_35_ | (~i_35_) & anIntArray5078[i_32_]), i_32_);

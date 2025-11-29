@@ -77,7 +77,7 @@ final class Class367_Sub2 extends Class367 {
     final void method3520(byte i) {
         anInt7295++;
         if (i == 87) {
-            this.aHa_Sub3_4479.method3849((byte) 47, 0, Class342.aClass70_4247);
+            this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
             OpenGL.glBindProgramARB(34336, 0);
             OpenGL.glDisable(34820);
             OpenGL.glDisable(34336);

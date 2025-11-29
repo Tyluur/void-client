@@ -106,27 +106,27 @@ final class Class348_Sub13 extends Node {
                     if (is[i_30_] != -1 && !Exception_Sub1.itemTypeList.method1940(-91, is[i_30_]).method1565(bool, -1)) bool_29_ = true;
                 }
                 if (bool_29_) return null;
-                Class124[] class124s = new Class124[is.length];
+                Mesh[] meshes = new Mesh[is.length];
                 for (int i_31_ = 0; i_31_ < is.length; i_31_++) {
-                    if (is[i_31_] != -1) class124s[i_31_] = Exception_Sub1.itemTypeList.method1940(Class348_Sub21.method2955(i_14_, -112), is[i_31_]).method1558(bool, false);
+                    if (is[i_31_] != -1) meshes[i_31_] = Exception_Sub1.itemTypeList.method1940(Class348_Sub21.method2955(i_14_, -112), is[i_31_]).method1558(bool, false);
                 }
                 if (class225 != null && class225.anIntArrayArray2939 != null) {
                     for (int i_32_ = 0; (class225.anIntArrayArray2939.length > i_32_); i_32_++) {
-                        if ((class225.anIntArrayArray2939[i_32_] != null) && class124s[i_32_] != null) {
+                        if ((class225.anIntArrayArray2939[i_32_] != null) && meshes[i_32_] != null) {
                             int i_33_ = (class225.anIntArrayArray2939[i_32_][0]);
                             int i_34_ = (class225.anIntArrayArray2939[i_32_][1]);
                             int i_35_ = (class225.anIntArrayArray2939[i_32_][2]);
                             int i_36_ = (class225.anIntArrayArray2939[i_32_][3]);
                             int i_37_ = (class225.anIntArrayArray2939[i_32_][4]);
                             int i_38_ = (class225.anIntArrayArray2939[i_32_][5]);
-                            if (i_36_ != 0 || i_37_ != 0 || i_38_ != 0) class124s[i_32_].method1107(6875, i_37_, i_38_, i_36_);
-                            if (i_33_ != 0 || i_34_ != 0 || i_35_ != 0) class124s[i_32_].method1099((byte) -91, i_35_, i_33_, i_34_);
+                            if (i_36_ != 0 || i_37_ != 0 || i_38_ != 0) meshes[i_32_].method1107(6875, i_37_, i_38_, i_36_);
+                            if (i_33_ != 0 || i_34_ != 0 || i_35_ != 0) meshes[i_32_].method1099((byte) -91, i_35_, i_33_, i_34_);
                         }
                     }
                 }
                 if (class154 != null) i_28_ |= 0x4000;
-                Class124 class124 = new Class124(class124s, class124s.length);
-                class64 = var_ha.method3625(class124, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850);
+                Mesh mesh = new Mesh(meshes, meshes.length);
+                class64 = var_ha.method3625(mesh, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850);
                 if (class154 != null) {
                     for (int i_39_ = 0; i_39_ < 5; i_39_++) {
                         for (int i_40_ = 0; i_40_ < (Class367_Sub2.aShortArrayArrayArray7290).length; i_40_++) {

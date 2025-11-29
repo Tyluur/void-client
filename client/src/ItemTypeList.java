@@ -36,7 +36,7 @@ final class ItemTypeList {
     static final Class74[] method1929(byte i) {
         if (i != -19) method1933(null, null, false);
         anInt3280++;
-        return (new Class74[]{Class348_Sub42_Sub8_Sub2.aClass74_10437, Class348_Sub26.aClass74_6891, Class265.aClass74_4689, Class374.aClass74_4537, Class327.aClass74_4098, Class162.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, Class348_Sub35.aClass74_6977, Class286_Sub1.aClass74_6201, Class91.aClass74_1519, Class348_Sub16_Sub1.aClass74_8853, Class348_Sub40_Sub38.aClass74_9475, Class186.aClass74_2491});
+        return (new Class74[]{Class348_Sub42_Sub8_Sub2.aClass74_10437, Class348_Sub26.aClass74_6891, Class265.aClass74_4689, Class374.aClass74_4537, Class327.aClass74_4098, MeshBillboard.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, Class348_Sub35.aClass74_6977, Class286_Sub1.aClass74_6201, Class91.aClass74_1519, Class348_Sub16_Sub1.aClass74_8853, Class348_Sub40_Sub38.aClass74_9475, Class186.aClass74_2491});
     }
 
     final void method1930(int i) {
@@ -239,7 +239,7 @@ final class ItemTypeList {
         itemDefinition.anInt2769 = i_13_;
         itemDefinition.aStringArray2811 = new String[]{null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null};
         itemDefinition.aStringArray2763 = (new String[]{null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)});
-        if (is != null) itemDefinition.method1569(768, new Class348_Sub49(is));
+        if (is != null) itemDefinition.method1569(768, new Packet(is));
         itemDefinition.method1563((byte) 92);
         int i_14_ = 4 / ((i - 13) / 59);
         if (itemDefinition.anInt2833 != -1) itemDefinition.method1570(1, method1940(90, itemDefinition.anInt2758), method1940(101, itemDefinition.anInt2833));

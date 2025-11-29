@@ -3,7 +3,7 @@
  */
 
 final class Class348_Sub42_Sub20 extends Class348_Sub42 {
-    Class342 aClass342_9702;
+    ModelParticleEffector aModelParticleEffector_9702;
     static int anInt9703;
     Class174 aClass174_9704;
     int anInt9705;
@@ -19,11 +19,11 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
     static int anInt9715;
 
     final void method3279(int i) {
-        this.anInt9706 = (this.aClass342_9702.anInt4239);
+        this.anInt9706 = (this.aModelParticleEffector_9702.anInt4239);
         anInt9708++;
-        this.anInt9710 = (this.aClass342_9702.anInt4240);
-        this.anInt9712 = (this.aClass342_9702.anInt4238);
-        if ((this.aClass342_9702.aClass101_4252) != null) this.aClass342_9702.aClass101_4252.method905((this.aClass174_9704.anInt2291), (this.aClass174_9704.anInt2290), (this.aClass174_9704.anInt2294), Class348_Sub8.anIntArray6666);
+        this.anInt9710 = (this.aModelParticleEffector_9702.anInt4240);
+        this.anInt9712 = (this.aModelParticleEffector_9702.anInt4238);
+        if ((this.aModelParticleEffector_9702.aClass101_4252) != null) this.aModelParticleEffector_9702.aClass101_4252.method905((this.aClass174_9704.anInt2291), (this.aClass174_9704.anInt2290), (this.aClass174_9704.anInt2294), Class348_Sub8.anIntArray6666);
         this.anInt9705 = Class348_Sub8.anIntArray6666[0];
         this.anInt9707 = Class348_Sub8.anIntArray6666[i];
     }
@@ -52,13 +52,13 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
         anInt9703++;
     }
 
-    Class348_Sub42_Sub20(Class342 class342, Class318_Sub10 class318_sub10) {
+    Class348_Sub42_Sub20(ModelParticleEffector modelParticleEffector, Class318_Sub10 class318_sub10) {
         try {
-            this.aClass342_9702 = class342;
-            this.aClass174_9704 = this.aClass342_9702.method2685((byte) -13);
+            this.aModelParticleEffector_9702 = modelParticleEffector;
+            this.aClass174_9704 = this.aModelParticleEffector_9702.method2685((byte) -13);
             method3279(2);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jo.<init>(" + (class342 != null ? "{...}" : "null") + ',' + (class318_sub10 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("jo.<init>(" + (modelParticleEffector != null ? "{...}" : "null") + ',' + (class318_sub10 != null ? "{...}" : "null") + ')'));
         }
     }
 

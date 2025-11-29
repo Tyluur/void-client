@@ -404,12 +404,12 @@ final class ha_Sub2 extends ha {
         anInt7683++;
     }
 
-    final Class64 method3625(Class124 class124, int i, int i_2_, int i_3_, int i_4_) {
+    final Class64 method3625(Mesh mesh, int i, int i_2_, int i_3_, int i_4_) {
         try {
             anInt7579++;
-            return new Class64_Sub3(this, class124, i, i_3_, i_4_, i_2_);
+            return new Class64_Sub3(this, mesh, i, i_3_, i_4_, i_2_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.EG(" + (class124 != null ? "{...}" : "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.EG(" + (mesh != null ? "{...}" : "null") + ',' + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ')'));
         }
     }
 
@@ -2071,7 +2071,7 @@ final class ha_Sub2 extends ha {
                     class348_sub49_sub1.method3399(18291, 0.0F);
                     class348_sub49_sub1.method3399(18291, 0.0F);
                 }
-                anInterface2_7797 = method3731(2, false, 20, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.anInt7197));
+                anInterface2_7797 = method3731(2, false, 20, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.pos));
                 this.aClass123_7849 = new Class123(anInterface2_7797, 5126, 3, 0);
                 this.aClass123_7833 = new Class123(anInterface2_7797, 5126, 2, 12);
                 aClass233_7711.method1654(643267468, this);

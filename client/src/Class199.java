@@ -30,8 +30,8 @@ final class Class199 {
                 if (color_0_ == null) color_0_ = new Color(140, 17, 17);
                 if (color_2_ == null) color_2_ = new Color(255, 255, 255);
                 try {
-                    if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432));
-                    Graphics graphics_3_ = Class342.anImage4249.getGraphics();
+                    if (ModelParticleEffector.anImage4249 == null) ModelParticleEffector.anImage4249 = (Class305.aCanvas3869.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432));
+                    Graphics graphics_3_ = ModelParticleEffector.anImage4249.getGraphics();
                     graphics_3_.setColor(Color.black);
                     graphics_3_.fillRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
                     int i_4_ = -152 + Class321.anInt4017 / 2;
@@ -52,7 +52,7 @@ final class Class199 {
                         graphics_3_.setColor(color_2_);
                         graphics_3_.drawString(Class348_Sub42_Sub16.aString9665, (Class321.anInt4017 / 2 - (Class348_Sub42_Sub16.aString9665.length() * 6 / 2)), -26 + Class348_Sub42_Sub8_Sub2.anInt10432 / 2);
                     }
-                    graphics.drawImage(Class342.anImage4249, 0, 0, null);
+                    graphics.drawImage(ModelParticleEffector.anImage4249, 0, 0, null);
                 } catch (Exception exception) {
                     graphics.setColor(Color.black);
                     graphics.fillRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);

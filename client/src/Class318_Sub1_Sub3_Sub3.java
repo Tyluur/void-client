@@ -430,85 +430,85 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                             int i_68_ = 0;
                             int i_69_ = 0;
                             int i_70_ = 0;
-                            Class129[] class129s = class64.method619();
-                            Class342[] class342s = class64.method604();
-                            if (class342s != null) {
+                            ModelParticleEmitter[] modelParticleEmitters = class64.method619();
+                            ModelParticleEffector[] modelParticleEffectors = class64.method604();
+                            if (modelParticleEffectors != null) {
                                 i_70_++;
-                                i_69_ += class342s.length;
+                                i_69_ += modelParticleEffectors.length;
                             }
-                            if (class129s != null) {
-                                i_67_ += class129s.length;
+                            if (modelParticleEmitters != null) {
+                                i_67_ += modelParticleEmitters.length;
                                 i_68_++;
                             }
-                            Class129[] class129s_71_ = null;
-                            Class342[] class342s_72_ = null;
+                            ModelParticleEmitter[] modelParticleEmitterS_71_ = null;
+                            ModelParticleEffector[] modelParticleEffectorS_72_ = null;
                             if (class64_65_ != null) {
                                 class64_65_.method620(class101);
-                                class129s_71_ = class64_65_.method619();
-                                class342s_72_ = class64_65_.method604();
+                                modelParticleEmitterS_71_ = class64_65_.method619();
+                                modelParticleEffectorS_72_ = class64_65_.method604();
                             }
-                            if (class342s_72_ != null) {
+                            if (modelParticleEffectorS_72_ != null) {
                                 i_70_++;
-                                i_69_ += class342s_72_.length;
+                                i_69_ += modelParticleEffectorS_72_.length;
                             }
-                            if (class129s_71_ != null) {
+                            if (modelParticleEmitterS_71_ != null) {
                                 i_68_++;
-                                i_67_ += class129s_71_.length;
+                                i_67_ += modelParticleEmitterS_71_.length;
                             }
-                            Class129[] class129s_73_ = null;
-                            Class342[] class342s_74_ = null;
+                            ModelParticleEmitter[] modelParticleEmitterS_73_ = null;
+                            ModelParticleEffector[] modelParticleEffectorS_74_ = null;
                             if (class64_66_ != null) {
                                 class64_66_.method620(class101);
-                                class129s_73_ = class64_66_.method619();
-                                class342s_74_ = class64_66_.method604();
+                                modelParticleEmitterS_73_ = class64_66_.method619();
+                                modelParticleEffectorS_74_ = class64_66_.method604();
                             }
-                            if (class342s_74_ != null) {
+                            if (modelParticleEffectorS_74_ != null) {
                                 i_70_++;
-                                i_69_ += class342s_74_.length;
+                                i_69_ += modelParticleEffectorS_74_.length;
                             }
-                            if (class129s_73_ != null) {
-                                i_67_ += class129s_73_.length;
+                            if (modelParticleEmitterS_73_ != null) {
+                                i_67_ += modelParticleEmitterS_73_.length;
                                 i_68_++;
                             }
                             if (((this.aClass318_Sub10_10327) == null || this.aClass318_Sub10_10327.aBoolean6470) && (i_68_ > 0 || i_70_ > 0)) this.aClass318_Sub10_10327 = Class318_Sub10.method2526((Class367_Sub11.anInt7396), true);
                             if ((this.aClass318_Sub10_10327) != null) {
                                 Object object = null;
-                                Class129[] class129s_75_;
+                                ModelParticleEmitter[] modelParticleEmitterS_75_;
                                 if (i_68_ != 1) {
-                                    class129s_75_ = new Class129[i_67_];
+                                    modelParticleEmitterS_75_ = new ModelParticleEmitter[i_67_];
                                     int i_76_ = 0;
-                                    if (class129s != null) {
-                                        Class214.method1575(class129s, 0, class129s_75_, i_76_, class129s.length);
-                                        i_76_ += class129s.length;
+                                    if (modelParticleEmitters != null) {
+                                        Class214.method1575(modelParticleEmitters, 0, modelParticleEmitterS_75_, i_76_, modelParticleEmitters.length);
+                                        i_76_ += modelParticleEmitters.length;
                                     }
-                                    if (class129s_71_ != null) {
-                                        Class214.method1575(class129s_71_, 0, class129s_75_, i_76_, class129s_71_.length);
-                                        i_76_ += class129s_71_.length;
+                                    if (modelParticleEmitterS_71_ != null) {
+                                        Class214.method1575(modelParticleEmitterS_71_, 0, modelParticleEmitterS_75_, i_76_, modelParticleEmitterS_71_.length);
+                                        i_76_ += modelParticleEmitterS_71_.length;
                                     }
-                                    if (class129s_73_ != null) Class214.method1575(class129s_73_, 0, class129s_75_, i_76_, class129s_73_.length);
-                                } else if (class129s_71_ != null) class129s_75_ = class129s_71_;
-                                else if (class129s_73_ != null) class129s_75_ = class129s_73_;
-                                else class129s_75_ = class129s;
+                                    if (modelParticleEmitterS_73_ != null) Class214.method1575(modelParticleEmitterS_73_, 0, modelParticleEmitterS_75_, i_76_, modelParticleEmitterS_73_.length);
+                                } else if (modelParticleEmitterS_71_ != null) modelParticleEmitterS_75_ = modelParticleEmitterS_71_;
+                                else if (modelParticleEmitterS_73_ != null) modelParticleEmitterS_75_ = modelParticleEmitterS_73_;
+                                else modelParticleEmitterS_75_ = modelParticleEmitters;
                                 Object object_77_ = null;
-                                Class342[] class342s_78_;
+                                ModelParticleEffector[] modelParticleEffectorS_78_;
                                 if (i_70_ == 1) {
-                                    if (class342s_72_ != null) class342s_78_ = class342s_72_;
-                                    else if (class342s_74_ == null) class342s_78_ = class342s;
-                                    else class342s_78_ = class342s_74_;
+                                    if (modelParticleEffectorS_72_ != null) modelParticleEffectorS_78_ = modelParticleEffectorS_72_;
+                                    else if (modelParticleEffectorS_74_ == null) modelParticleEffectorS_78_ = modelParticleEffectors;
+                                    else modelParticleEffectorS_78_ = modelParticleEffectorS_74_;
                                 } else {
-                                    class342s_78_ = new Class342[i_69_];
+                                    modelParticleEffectorS_78_ = new ModelParticleEffector[i_69_];
                                     int i_79_ = 0;
-                                    if (class342s != null) {
-                                        Class214.method1575(class342s, 0, class342s_78_, i_79_, class342s.length);
-                                        i_79_ += class342s.length;
+                                    if (modelParticleEffectors != null) {
+                                        Class214.method1575(modelParticleEffectors, 0, modelParticleEffectorS_78_, i_79_, modelParticleEffectors.length);
+                                        i_79_ += modelParticleEffectors.length;
                                     }
-                                    if (class342s_72_ != null) {
-                                        Class214.method1575(class342s_72_, 0, class342s_78_, i_79_, class342s_72_.length);
-                                        i_79_ += class342s_72_.length;
+                                    if (modelParticleEffectorS_72_ != null) {
+                                        Class214.method1575(modelParticleEffectorS_72_, 0, modelParticleEffectorS_78_, i_79_, modelParticleEffectorS_72_.length);
+                                        i_79_ += modelParticleEffectorS_72_.length;
                                     }
-                                    if (class342s_74_ != null) Class214.method1575(class342s_74_, 0, class342s_78_, i_79_, class342s_74_.length);
+                                    if (modelParticleEffectorS_74_ != null) Class214.method1575(modelParticleEffectorS_74_, 0, modelParticleEffectorS_78_, i_79_, modelParticleEffectorS_74_.length);
                                 }
-                                this.aClass318_Sub10_10327.method2536(var_ha, Class367_Sub11.anInt7396, class129s_75_, class342s_78_, false);
+                                this.aClass318_Sub10_10327.method2536(var_ha, Class367_Sub11.anInt7396, modelParticleEmitterS_75_, modelParticleEffectorS_78_, false);
                             }
                             this.aBoolean10318 = true;
                         }
@@ -594,7 +594,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         Class71.aClass76_1208 = Class71.aClass76_1210;
         Class71.aClass76_1208.method775((byte) 69);
         Class348_Sub1_Sub2.aByteArrayArray8816 = null;
-        Class342.anIntArrayArray4253 = null;
+        ModelParticleEffector.anIntArrayArray4253 = null;
         Option_Sub1.aShortArrayArray5847 = null;
         if (Class348_Sub40_Sub34.aClass293Array9432 != null) {
             Class260.method1978();

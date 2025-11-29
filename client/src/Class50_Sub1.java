@@ -94,20 +94,20 @@ final class Class50_Sub1 extends Class50 {
 
     static final int[] method463(Class348_Sub47 class348_sub47, boolean bool) {
         anInt5210++;
-        Class348_Sub49 class348_sub49 = new Class348_Sub49(518);
+        Packet packet = new Packet(518);
         int[] is = new int[4];
         for (int i = 0; i < 4; i++)
             is[i] = (int) (Math.random() * 9.9999999E7);
-        class348_sub49.writeByte(bool, 10);
-        class348_sub49.writeInt((byte) 114, is[0]);
-        class348_sub49.writeInt((byte) 97, is[1]);
-        class348_sub49.writeInt((byte) 109, is[2]);
-        class348_sub49.writeInt((byte) 105, is[3]);
+        packet.writeByte(bool, 10);
+        packet.writeInt((byte) 114, is[0]);
+        packet.writeInt((byte) 97, is[1]);
+        packet.writeInt((byte) 109, is[2]);
+        packet.writeInt((byte) 105, is[3]);
         for (int i = 0; i < 10; i++)
-            class348_sub49.writeInt((byte) 120, (int) (9.9999999E7 * Math.random()));
-        class348_sub49.writeShort((byte) 107, (int) (9.9999999E7 * Math.random()));
-        class348_sub49.method3390(Class348_Sub31.aBigInteger6921, (byte) -98, Class318_Sub1_Sub4.aBigInteger8762);
-        class348_sub47.aClass348_Sub49_Sub2_7116.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154, 80);
+            packet.writeInt((byte) 120, (int) (9.9999999E7 * Math.random()));
+        packet.writeShort((byte) 107, (int) (9.9999999E7 * Math.random()));
+        packet.method3390(Class348_Sub31.aBigInteger6921, (byte) -98, Class318_Sub1_Sub4.aBigInteger8762);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeBytes(packet.pos, 0, packet.aByteArray7154, 80);
         return is;
     }
 

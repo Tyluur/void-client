@@ -59,12 +59,12 @@ final class Class367_Sub10 extends Class367 {
             this.aHa_Sub3_4479.method3871(IDKTypeList.aClass113_2047, i ^ 0x57);
             this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 103, (Class167.aClass229_2207));
             this.aHa_Sub3_4479.method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
-            this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);
+            this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
             this.aHa_Sub3_4479.method3879(-8629);
             this.aHa_Sub3_4479.method3850((byte) -111, null);
             this.aHa_Sub3_4479.method3897(0, -4382);
             aBoolean7385 = false;
-        } else this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);
+        } else this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
         this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, i ^ 0x2c, Class167.aClass229_2207);
     }
 

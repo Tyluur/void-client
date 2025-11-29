@@ -88,7 +88,7 @@ final class ItemDefinition {
     static int anInt2832;
     int anInt2833;
 
-    final Class124 method1554(boolean bool, int i) {
+    final Mesh method1554(boolean bool, int i) {
         anInt2796++;
         int i_0_ = anInt2792;
         int i_1_ = anInt2767;
@@ -97,23 +97,23 @@ final class ItemDefinition {
             i_0_ = anInt2822;
         }
         if (i_0_ == -1) return null;
-        Class124 class124 = Class300.method2277(0, this.aItemTypeList_2761.aIndex_3268, i_0_, -1);
-        if ((~class124.anInt1830) > i) class124.method1092(2, 54);
+        Mesh mesh = Class300.method2277(0, this.aItemTypeList_2761.aIndex_3268, i_0_, -1);
+        if ((~mesh.version) > i) mesh.method1092(2, 54);
         if (i_1_ != -1) {
-            Class124 class124_2_ = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), i_1_, -1);
-            if (class124_2_.anInt1830 < 13) class124_2_.method1092(2, i ^ ~0x78);
-            Class124[] class124s = {class124, class124_2_};
-            class124 = new Class124(class124s, 2);
+            Mesh mesh_2_ = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), i_1_, -1);
+            if (mesh_2_.version < 13) mesh_2_.method1092(2, i ^ ~0x78);
+            Mesh[] meshes = {mesh, mesh_2_};
+            mesh = new Mesh(meshes, 2);
         }
         if (aShortArray2777 != null) {
             for (int i_3_ = 0; i_3_ < aShortArray2777.length; i_3_++)
-                class124.method1098(aShortArray2777[i_3_], (byte) 126, aShortArray2771[i_3_]);
+                mesh.method1098(aShortArray2777[i_3_], (byte) 126, aShortArray2771[i_3_]);
         }
         if (aShortArray2785 != null) {
             for (int i_4_ = 0; i_4_ < aShortArray2785.length; i_4_++)
-                class124.method1095(aShortArray2785[i_4_], 0, aShortArray2801[i_4_]);
+                mesh.method1095(aShortArray2785[i_4_], 0, aShortArray2801[i_4_]);
         }
-        return class124;
+        return mesh;
     }
 
     final boolean method1555(byte i, boolean bool) {
@@ -189,7 +189,7 @@ final class ItemDefinition {
         return ("<col=00ff80>" + i / 1000000 + Class274.aClass274_3517.method2063((this.aItemTypeList_2761.anInt3286), 544) + "</col>");
     }
 
-    final Class124 method1558(boolean bool, boolean bool_13_) {
+    final Mesh method1558(boolean bool, boolean bool_13_) {
         anInt2809++;
         int i = this.anInt2815;
         int i_14_ = anInt2804;
@@ -201,33 +201,33 @@ final class ItemDefinition {
             i_14_ = anInt2760;
         }
         if (i == -1) return null;
-        Class124 class124 = Class300.method2277(0, this.aItemTypeList_2761.aIndex_3268, i, -1);
-        if (class124.anInt1830 < 13) class124.method1092(2, 64);
+        Mesh mesh = Class300.method2277(0, this.aItemTypeList_2761.aIndex_3268, i, -1);
+        if (mesh.version < 13) mesh.method1092(2, 64);
         if (i_14_ != -1) {
-            Class124 class124_16_ = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), i_14_, -1);
-            if (class124_16_.anInt1830 < 13) class124_16_.method1092(2, 89);
+            Mesh mesh_16_ = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), i_14_, -1);
+            if (mesh_16_.version < 13) mesh_16_.method1092(2, 89);
             if (i_15_ == -1) {
-                Class124[] class124s = {class124, class124_16_};
-                class124 = new Class124(class124s, 2);
+                Mesh[] meshes = {mesh, mesh_16_};
+                mesh = new Mesh(meshes, 2);
             } else {
-                Class124 class124_17_ = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), i_15_, -1);
-                if (class124_17_.anInt1830 < 13) class124_17_.method1092(2, 109);
-                Class124[] class124s = {class124, class124_16_, class124_17_};
-                class124 = new Class124(class124s, 3);
+                Mesh mesh_17_ = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), i_15_, -1);
+                if (mesh_17_.version < 13) mesh_17_.method1092(2, 109);
+                Mesh[] meshes = {mesh, mesh_16_, mesh_17_};
+                mesh = new Mesh(meshes, 3);
             }
         }
-        if (class124 == null) return null;
-        if (!bool && (anInt2807 != 0 || anInt2797 != 0 || anInt2808 != 0)) class124.method1099((byte) 110, anInt2808, anInt2807, anInt2797);
-        if (bool && (anInt2803 != 0 || anInt2753 != 0 || anInt2823 != 0)) class124.method1099((byte) 24, anInt2823, anInt2803, anInt2753);
+        if (mesh == null) return null;
+        if (!bool && (anInt2807 != 0 || anInt2797 != 0 || anInt2808 != 0)) mesh.method1099((byte) 110, anInt2808, anInt2807, anInt2797);
+        if (bool && (anInt2803 != 0 || anInt2753 != 0 || anInt2823 != 0)) mesh.method1099((byte) 24, anInt2823, anInt2803, anInt2753);
         if (aShortArray2777 != null) {
             for (int i_18_ = 0; aShortArray2777.length > i_18_; i_18_++)
-                class124.method1098(aShortArray2777[i_18_], (byte) 126, aShortArray2771[i_18_]);
+                mesh.method1098(aShortArray2777[i_18_], (byte) 126, aShortArray2771[i_18_]);
         }
         if (aShortArray2785 != null) {
             for (int i_19_ = 0; aShortArray2785.length > i_19_; i_19_++)
-                class124.method1095(aShortArray2785[i_19_], 0, aShortArray2801[i_19_]);
+                mesh.method1095(aShortArray2785[i_19_], 0, aShortArray2801[i_19_]);
         }
-        return class124;
+        return mesh;
     }
 
     final Class64 method1559(Class154 class154, Class17 class17, ha var_ha, int i, int i_20_, int i_21_, int i_22_, byte i_23_, int i_24_) {
@@ -255,10 +255,10 @@ final class ItemDefinition {
                 if (anInt2786 != 128) i_28_ |= 0x1;
                 if (anInt2786 != 128) i_28_ |= 0x2;
                 if (anInt2786 != 128) i_28_ |= 0x4;
-                Class124 class124 = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), anInt2756, -1);
-                if (class124 == null) return null;
-                if (class124.anInt1830 < 13) class124.method1092(2, 97);
-                class64 = var_ha.method3625(class124, i_28_, (this.aItemTypeList_2761.anInt3291), anInt2791 + 64, 850 - -anInt2824);
+                Mesh mesh = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), anInt2756, -1);
+                if (mesh == null) return null;
+                if (mesh.version < 13) mesh.method1092(2, 97);
+                class64 = var_ha.method3625(mesh, i_28_, (this.aItemTypeList_2761.anInt3291), anInt2791 + 64, 850 - -anInt2824);
                 if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) class64.O(anInt2786, anInt2794, anInt2765);
                 if (aShortArray2777 != null) {
                     for (int i_29_ = 0; (i_29_ < aShortArray2777.length); i_29_++) {
@@ -319,23 +319,23 @@ final class ItemDefinition {
     final int[] method1562(int i, boolean bool, int i_37_, ha var_ha, ha var_ha_38_, FontRenderer fontRenderer, Class154 class154, int i_39_, byte i_40_, int i_41_) {
         try {
             anInt2806++;
-            Class124 class124 = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), anInt2756, i_40_ ^ 0x65);
-            if (class124 == null) return null;
-            if (class124.anInt1830 < 13) class124.method1092(2, i_40_ ^ ~0xb);
+            Mesh mesh = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), anInt2756, i_40_ ^ 0x65);
+            if (mesh == null) return null;
+            if (mesh.version < 13) mesh.method1092(2, i_40_ ^ ~0xb);
             if (aShortArray2777 != null) {
                 for (int i_42_ = 0; (aShortArray2777.length > i_42_); i_42_++) {
-                    if (aByteArray2821 == null || i_42_ >= aByteArray2821.length) class124.method1098(aShortArray2777[i_42_], (byte) 126, aShortArray2771[i_42_]);
-                    else class124.method1098(aShortArray2777[i_42_], (byte) 126, (Class336.aShortArray4172[aByteArray2821[i_42_] & 0xff]));
+                    if (aByteArray2821 == null || i_42_ >= aByteArray2821.length) mesh.method1098(aShortArray2777[i_42_], (byte) 126, aShortArray2771[i_42_]);
+                    else mesh.method1098(aShortArray2777[i_42_], (byte) 126, (Class336.aShortArray4172[aByteArray2821[i_42_] & 0xff]));
                 }
             }
             if (aShortArray2785 != null) {
                 for (int i_43_ = 0; (aShortArray2785.length > i_43_); i_43_++)
-                    class124.method1095(aShortArray2785[i_43_], 0, aShortArray2801[i_43_]);
+                    mesh.method1095(aShortArray2785[i_43_], 0, aShortArray2801[i_43_]);
             }
             if (class154 != null) {
                 for (int i_44_ = 0; i_44_ < 5; i_44_++) {
                     for (int i_45_ = 0; (i_45_ < Class367_Sub2.aShortArrayArrayArray7290.length); i_45_++) {
-                        if ((Class367_Sub2.aShortArrayArrayArray7290[i_45_][i_44_]).length > class154.anIntArray2095[i_44_]) class124.method1098((Class136.aShortArrayArray4791[i_45_][i_44_]), (byte) 126, (Class367_Sub2.aShortArrayArrayArray7290[i_45_][i_44_][(class154.anIntArray2095[i_44_])]));
+                        if ((Class367_Sub2.aShortArrayArrayArray7290[i_45_][i_44_]).length > class154.anIntArray2095[i_44_]) mesh.method1098((Class136.aShortArrayArray4791[i_45_][i_44_]), (byte) 126, (Class367_Sub2.aShortArrayArrayArray7290[i_45_][i_44_][(class154.anIntArray2095[i_44_])]));
                     }
                 }
             }
@@ -345,7 +345,7 @@ final class ItemDefinition {
                 i_46_ |= 0x7;
                 bool_47_ = true;
             }
-            Class64 class64 = var_ha_38_.method3625(class124, i_46_, 64, anInt2791 + 64, 768 + anInt2824);
+            Class64 class64 = var_ha_38_.method3625(mesh, i_46_, 64, anInt2791 + 64, 768 + anInt2824);
             if (!class64.method618()) return null;
             if (bool_47_) class64.O(anInt2786, anInt2794, anInt2765);
             Sprite sprite = null;
@@ -433,62 +433,62 @@ final class ItemDefinition {
         return bool_56_;
     }
 
-    private final void method1566(int i, int i_57_, Class348_Sub49 class348_sub49) {
+    private final void method1566(int i, int i_57_, Packet packet) {
         try {
             if (i != 4) method1564(9);
             if (i_57_ != 1) {
                 if (i_57_ != 2) {
-                    if (i_57_ == 4) this.anInt2825 = class348_sub49.readUnsignedShort(i ^ 0x3235f8fc);
-                    else if (i_57_ == 5) this.anInt2787 = class348_sub49.readUnsignedShort(842397944);
-                    else if (i_57_ == 6) this.anInt2781 = class348_sub49.readUnsignedShort(i ^ 0x3235f8fc);
+                    if (i_57_ == 4) this.anInt2825 = packet.readUnsignedShort(i ^ 0x3235f8fc);
+                    else if (i_57_ == 5) this.anInt2787 = packet.readUnsignedShort(842397944);
+                    else if (i_57_ == 6) this.anInt2781 = packet.readUnsignedShort(i ^ 0x3235f8fc);
                     else if (i_57_ == 7) {
-                        this.anInt2779 = class348_sub49.readUnsignedShort(842397944);
+                        this.anInt2779 = packet.readUnsignedShort(842397944);
                         if (this.anInt2779 > 32767) this.anInt2779 -= 65536;
                     } else if (i_57_ == 8) {
-                        this.anInt2826 = class348_sub49.readUnsignedShort(842397944);
+                        this.anInt2826 = packet.readUnsignedShort(842397944);
                         if (this.anInt2826 > 32767) this.anInt2826 -= 65536;
                     } else if (i_57_ != 11) {
                         if (i_57_ != 12) {
                             if (i_57_ == 16) this.aBoolean2783 = true;
-                            else if (i_57_ == 18) this.anInt2802 = class348_sub49.readUnsignedShort(i ^ 0x3235f8fc);
-                            else if (i_57_ == 23) this.anInt2815 = class348_sub49.readUnsignedShort(842397944);
-                            else if (i_57_ == 24) anInt2804 = class348_sub49.readUnsignedShort(i ^ 0x3235f8fc);
-                            else if (i_57_ == 25) this.anInt2788 = class348_sub49.readUnsignedShort(i + 842397940);
-                            else if (i_57_ == 26) anInt2760 = class348_sub49.readUnsignedShort(i + 842397940);
+                            else if (i_57_ == 18) this.anInt2802 = packet.readUnsignedShort(i ^ 0x3235f8fc);
+                            else if (i_57_ == 23) this.anInt2815 = packet.readUnsignedShort(842397944);
+                            else if (i_57_ == 24) anInt2804 = packet.readUnsignedShort(i ^ 0x3235f8fc);
+                            else if (i_57_ == 25) this.anInt2788 = packet.readUnsignedShort(i + 842397940);
+                            else if (i_57_ == 26) anInt2760 = packet.readUnsignedShort(i + 842397940);
                             else if (i_57_ < 30 || i_57_ >= 35) {
-                                if (i_57_ >= 35 && i_57_ < 40) this.aStringArray2763[-35 + i_57_] = class348_sub49.readString((byte) 103);
+                                if (i_57_ >= 35 && i_57_ < 40) this.aStringArray2763[-35 + i_57_] = packet.readString((byte) 103);
                                 else if (i_57_ == 40) {
-                                    int i_58_ = class348_sub49.readUnsignedByte(255);
+                                    int i_58_ = packet.readUnsignedByte(255);
                                     aShortArray2777 = new short[i_58_];
                                     aShortArray2771 = new short[i_58_];
                                     for (int i_59_ = 0; i_58_ > i_59_; i_59_++) {
-                                        aShortArray2777[i_59_] = (short) (class348_sub49.readUnsignedShort(842397944));
-                                        aShortArray2771[i_59_] = (short) (class348_sub49.readUnsignedShort(842397944));
+                                        aShortArray2777[i_59_] = (short) (packet.readUnsignedShort(842397944));
+                                        aShortArray2771[i_59_] = (short) (packet.readUnsignedShort(842397944));
                                     }
                                 } else if (i_57_ == 41) {
-                                    int i_68_ = class348_sub49.readUnsignedByte(i + 251);
+                                    int i_68_ = packet.readUnsignedByte(i + 251);
                                     aShortArray2801 = new short[i_68_];
                                     aShortArray2785 = new short[i_68_];
                                     for (int i_69_ = 0; i_69_ < i_68_; i_69_++) {
-                                        aShortArray2785[i_69_] = (short) (class348_sub49.readUnsignedShort(842397944));
-                                        aShortArray2801[i_69_] = (short) (class348_sub49.readUnsignedShort(842397944));
+                                        aShortArray2785[i_69_] = (short) (packet.readUnsignedShort(842397944));
+                                        aShortArray2801[i_69_] = (short) (packet.readUnsignedShort(842397944));
                                     }
                                 } else if (i_57_ == 42) {
-                                    int i_60_ = class348_sub49.readUnsignedByte(i + 251);
+                                    int i_60_ = packet.readUnsignedByte(i + 251);
                                     aByteArray2821 = new byte[i_60_];
                                     for (int i_61_ = 0; i_61_ < i_60_; i_61_++)
-                                        aByteArray2821[i_61_] = class348_sub49.readByte(-114);
+                                        aByteArray2821[i_61_] = packet.readByte(-114);
                                 } else if (i_57_ == 65) this.aBoolean2755 = true;
-                                else if (i_57_ == 78) anInt2805 = class348_sub49.readUnsignedShort(842397944);
-                                else if (i_57_ == 79) anInt2770 = (class348_sub49.readUnsignedShort(i ^ 0x3235f8fc));
-                                else if (i_57_ == 90) anInt2792 = class348_sub49.readUnsignedShort(842397944);
-                                else if (i_57_ == 91) anInt2822 = class348_sub49.readUnsignedShort(842397944);
+                                else if (i_57_ == 78) anInt2805 = packet.readUnsignedShort(842397944);
+                                else if (i_57_ == 79) anInt2770 = (packet.readUnsignedShort(i ^ 0x3235f8fc));
+                                else if (i_57_ == 90) anInt2792 = packet.readUnsignedShort(842397944);
+                                else if (i_57_ == 91) anInt2822 = packet.readUnsignedShort(842397944);
                                 else if (i_57_ != 92) {
                                     if (i_57_ != 93) {
                                         if (i_57_ != 95) {
                                             if (i_57_ != 96) {
-                                                if (i_57_ == 97) this.anInt2758 = (class348_sub49.readUnsignedShort(842397944));
-                                                else if (i_57_ == 98) this.anInt2833 = (class348_sub49.readUnsignedShort(842397944));
+                                                if (i_57_ == 97) this.anInt2758 = (packet.readUnsignedShort(842397944));
+                                                else if (i_57_ == 98) this.anInt2833 = (packet.readUnsignedShort(842397944));
                                                 else if ((i_57_ >= 100) && (i_57_ < 110)) {
                                                     if ((this.anIntArray2762) == null) {
                                                         this.anIntArray2831 = (new int
@@ -496,73 +496,73 @@ final class ItemDefinition {
                                                         this.anIntArray2762 = (new int
                                                                 [10]);
                                                     }
-                                                    this.anIntArray2762[i_57_ - 100] = (class348_sub49.readUnsignedShort(842397944));
-                                                    this.anIntArray2831[i_57_ + -100] = (class348_sub49.readUnsignedShort(842397944));
-                                                } else if (i_57_ == 110) anInt2786 = (class348_sub49.readUnsignedShort(842397944));
+                                                    this.anIntArray2762[i_57_ - 100] = (packet.readUnsignedShort(842397944));
+                                                    this.anIntArray2831[i_57_ + -100] = (packet.readUnsignedShort(842397944));
+                                                } else if (i_57_ == 110) anInt2786 = (packet.readUnsignedShort(842397944));
                                                 else if (i_57_ != 111) {
-                                                    if (i_57_ == 112) anInt2765 = (class348_sub49.readUnsignedShort(842397944));
+                                                    if (i_57_ == 112) anInt2765 = (packet.readUnsignedShort(842397944));
                                                     else if (i_57_ != 113) {
-                                                        if (i_57_ == 114) anInt2824 = ((class348_sub49.readByte(-90)) * 5);
-                                                        else if (i_57_ == 115) this.anInt2827 = (class348_sub49.readUnsignedByte(255));
+                                                        if (i_57_ == 114) anInt2824 = ((packet.readByte(-90)) * 5);
+                                                        else if (i_57_ == 115) this.anInt2827 = (packet.readUnsignedByte(255));
                                                         else if (i_57_ != 121) {
                                                             if (i_57_ != 122) {
                                                                 if (i_57_ == 125) {
-                                                                    anInt2807 = class348_sub49.readByte(-99) << 2;
-                                                                    anInt2797 = class348_sub49.readByte(i + -99) << 2;
-                                                                    anInt2808 = class348_sub49.readByte(-111) << 2;
+                                                                    anInt2807 = packet.readByte(-99) << 2;
+                                                                    anInt2797 = packet.readByte(i + -99) << 2;
+                                                                    anInt2808 = packet.readByte(-111) << 2;
                                                                 } else if (i_57_ == 126) {
-                                                                    anInt2803 = class348_sub49.readByte(-121) << 2;
-                                                                    anInt2753 = class348_sub49.readByte(-92) << 2;
-                                                                    anInt2823 = class348_sub49.readByte(-93) << 2;
+                                                                    anInt2803 = packet.readByte(-121) << 2;
+                                                                    anInt2753 = packet.readByte(-92) << 2;
+                                                                    anInt2823 = packet.readByte(-93) << 2;
                                                                 } else if (i_57_ == 127) {
-                                                                    this.anInt2752 = class348_sub49.readUnsignedByte(255);
-                                                                    this.anInt2759 = class348_sub49.readUnsignedShort(842397944);
+                                                                    this.anInt2752 = packet.readUnsignedByte(255);
+                                                                    this.anInt2759 = packet.readUnsignedShort(842397944);
                                                                 } else if (i_57_ == 128) {
-                                                                    this.anInt2764 = class348_sub49.readUnsignedByte(255);
-                                                                    this.anInt2830 = class348_sub49.readUnsignedShort(842397944);
+                                                                    this.anInt2764 = packet.readUnsignedByte(255);
+                                                                    this.anInt2830 = packet.readUnsignedShort(842397944);
                                                                 } else if (i_57_ == 129) {
-                                                                    this.anInt2766 = class348_sub49.readUnsignedByte(i ^ 0xfb);
-                                                                    this.anInt2818 = class348_sub49.readUnsignedShort(842397944);
+                                                                    this.anInt2766 = packet.readUnsignedByte(i ^ 0xfb);
+                                                                    this.anInt2818 = packet.readUnsignedShort(842397944);
                                                                 } else if (i_57_ == 130) {
-                                                                    this.anInt2774 = class348_sub49.readUnsignedByte(255);
-                                                                    this.anInt2817 = class348_sub49.readUnsignedShort(842397944);
+                                                                    this.anInt2774 = packet.readUnsignedByte(255);
+                                                                    this.anInt2817 = packet.readUnsignedShort(842397944);
                                                                 } else if (i_57_ == 132) {
-                                                                    int i_62_ = class348_sub49.readUnsignedByte(i ^ 0xfb);
+                                                                    int i_62_ = packet.readUnsignedByte(i ^ 0xfb);
                                                                     this.anIntArray2772 = new int[i_62_];
                                                                     for (int i_63_ = 0; i_62_ > i_63_; i_63_++)
-                                                                        this.anIntArray2772[i_63_] = class348_sub49.readUnsignedShort(842397944);
-                                                                } else if (i_57_ == 134) this.anInt2784 = class348_sub49.readUnsignedByte(255);
+                                                                        this.anIntArray2772[i_63_] = packet.readUnsignedShort(842397944);
+                                                                } else if (i_57_ == 134) this.anInt2784 = packet.readUnsignedByte(255);
                                                                 else if (i_57_ == 249) {
-                                                                    int i_64_ = class348_sub49.readUnsignedByte(255);
+                                                                    int i_64_ = packet.readUnsignedByte(255);
                                                                     if (this.aClass356_2757 == null) {
                                                                         int i_65_ = EnumTypeList.method340(i_64_, (byte) 108);
                                                                         this.aClass356_2757 = new Class356(i_65_);
                                                                     }
                                                                     for (int i_66_ = 0; i_66_ < i_64_; i_66_++) {
-                                                                        boolean bool = class348_sub49.readUnsignedByte(255) == 1;
-                                                                        int i_67_ = class348_sub49.readMedium(-1);
+                                                                        boolean bool = packet.readUnsignedByte(255) == 1;
+                                                                        int i_67_ = packet.readMedium(-1);
                                                                         Node node;
-                                                                        if (bool) node = new Class348_Sub50(class348_sub49.readString((byte) 107));
-                                                                        else node = new Class348_Sub35(class348_sub49.readInt((byte) -126));
+                                                                        if (bool) node = new Class348_Sub50(packet.readString((byte) 107));
+                                                                        else node = new Class348_Sub35(packet.readInt((byte) -126));
                                                                         this.aClass356_2757.method3483((byte) 76, i_67_, node);
                                                                     }
                                                                 }
-                                                            } else this.anInt2812 = class348_sub49.readUnsignedShort(i + 842397940);
-                                                        } else this.anInt2778 = (class348_sub49.readUnsignedShort(842397944));
-                                                    } else anInt2791 = (class348_sub49.readByte(-88));
-                                                } else anInt2794 = (class348_sub49.readUnsignedShort(842397944));
-                                            } else this.anInt2799 = (class348_sub49.readUnsignedByte(255));
-                                        } else this.anInt2810 = (class348_sub49.readUnsignedShort(i + 842397940));
-                                    } else anInt2775 = (class348_sub49.readUnsignedShort(i + 842397940));
-                                } else anInt2767 = class348_sub49.readUnsignedShort(842397944);
-                            } else this.aStringArray2811[-30 + i_57_] = class348_sub49.readString((byte) 98);
-                        } else this.anInt2819 = class348_sub49.readInt((byte) -126);
+                                                            } else this.anInt2812 = packet.readUnsignedShort(i + 842397940);
+                                                        } else this.anInt2778 = (packet.readUnsignedShort(842397944));
+                                                    } else anInt2791 = (packet.readByte(-88));
+                                                } else anInt2794 = (packet.readUnsignedShort(842397944));
+                                            } else this.anInt2799 = (packet.readUnsignedByte(255));
+                                        } else this.anInt2810 = (packet.readUnsignedShort(i + 842397940));
+                                    } else anInt2775 = (packet.readUnsignedShort(i + 842397940));
+                                } else anInt2767 = packet.readUnsignedShort(842397944);
+                            } else this.aStringArray2811[-30 + i_57_] = packet.readString((byte) 98);
+                        } else this.anInt2819 = packet.readInt((byte) -126);
                     } else this.anInt2820 = 1;
-                } else this.aString2795 = class348_sub49.readString((byte) -42);
-            } else anInt2756 = class348_sub49.readUnsignedShort(i + 842397940);
+                } else this.aString2795 = packet.readString((byte) -42);
+            } else anInt2756 = packet.readUnsignedShort(i + 842397940);
             anInt2754++;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.L(" + i + ',' + i_57_ + ',' + (class348_sub49 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.L(" + i + ',' + i_57_ + ',' + (packet != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -613,17 +613,17 @@ final class ItemDefinition {
         }
     }
 
-    final void method1569(int i, Class348_Sub49 class348_sub49) {
+    final void method1569(int i, Packet packet) {
         try {
             if (i != 768) method1565(true, -71);
             for (; ; ) {
-                int i_93_ = class348_sub49.readUnsignedByte(i + -513);
+                int i_93_ = packet.readUnsignedByte(i + -513);
                 if (i_93_ == 0) break;
-                method1566(4, i_93_, class348_sub49);
+                method1566(4, i_93_, packet);
             }
             anInt2800++;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.I(" + i + ',' + (class348_sub49 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.I(" + i + ',' + (packet != null ? "{...}" : "null") + ')'));
         }
     }
 

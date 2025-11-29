@@ -42,7 +42,7 @@ final class Class16 {
     static final int method260(boolean bool) {
         if (bool != false) HUFFMAN = null;
         anInt232++;
-        if (Class348_Sub49.anInt7207 == 1) return Class348_Sub40_Sub8.anInt9157;
+        if (Packet.anInt7207 == 1) return Class348_Sub40_Sub8.anInt9157;
         return 0;
     }
 

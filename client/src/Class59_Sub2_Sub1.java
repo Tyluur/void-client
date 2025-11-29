@@ -12,7 +12,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
     static int anInt8673;
     private byte[] aByteArray8674;
 
-    static final Class358 method565(int i, int i_0_, Class124 class124, int[] is) {
+    static final Class358 method565(int i, int i_0_, Mesh mesh, int[] is) {
         try {
             anInt8673++;
             int[] is_1_ = null;
@@ -20,8 +20,8 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
             int[] is_2_ = null;
             int[] is_3_ = null;
             float[][] fs = null;
-            if (class124.aByteArray1820 != null) {
-                int i_4_ = class124.anInt1818;
+            if (mesh.faceTexSpace != null) {
+                int i_4_ = mesh.textSpaceCount;
                 int[] is_5_ = new int[i_4_];
                 int[] is_6_ = new int[i_4_];
                 int[] is_7_ = new int[i_4_];
@@ -41,17 +41,17 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                 is_2_ = new int[i_4_];
                 for (int i_12_ = 0; i_12_ < i_0_; i_12_++) {
                     int i_13_ = is[i_12_];
-                    if (class124.aByteArray1820[i_13_] != -1) {
-                        int i_14_ = (class124.aByteArray1820[i_13_] & 0xff);
+                    if (mesh.faceTexSpace[i_13_] != -1) {
+                        int i_14_ = (mesh.faceTexSpace[i_13_] & 0xff);
                         for (int i_15_ = 0; i_15_ < 3; i_15_++) {
                             short i_16_;
                             if (i_15_ != 0) {
-                                if (i_15_ == 1) i_16_ = (class124.aShortArray1835[i_13_]);
-                                else i_16_ = (class124.aShortArray1855[i_13_]);
-                            } else i_16_ = (class124.aShortArray1863[i_13_]);
-                            int i_17_ = class124.anIntArray1841[i_16_];
-                            int i_18_ = class124.anIntArray1847[i_16_];
-                            int i_19_ = class124.anIntArray1852[i_16_];
+                                if (i_15_ == 1) i_16_ = (mesh.faceB[i_13_]);
+                                else i_16_ = (mesh.faceC[i_13_]);
+                            } else i_16_ = (mesh.faceA[i_13_]);
+                            int i_17_ = mesh.vertexX[i_16_];
+                            int i_18_ = mesh.vertexY[i_16_];
+                            int i_19_ = mesh.vertexZ[i_16_];
                             if (i_17_ < is_5_[i_14_]) is_5_[i_14_] = i_17_;
                             if (is_6_[i_14_] < i_17_) is_6_[i_14_] = i_17_;
                             if (is_7_[i_14_] > i_18_) is_7_[i_14_] = i_18_;
@@ -63,7 +63,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                 }
                 is_1_ = new int[i_4_];
                 for (int i_20_ = 0; i_4_ > i_20_; i_20_++) {
-                    byte i_21_ = class124.aByteArray1823[i_20_];
+                    byte i_21_ = mesh.texMappingType[i_20_];
                     if (i_21_ > 0) {
                         is_1_[i_20_] = (is_6_[i_20_] + is_5_[i_20_]) / 2;
                         is_2_[i_20_] = (is_8_[i_20_] + is_7_[i_20_]) / 2;
@@ -72,7 +72,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                         float f_22_;
                         float f_23_;
                         if (i_21_ == 1) {
-                            int i_24_ = class124.anIntArray1859[i_20_];
+                            int i_24_ = mesh.texSpaceScaleX[i_20_];
                             if (i_24_ == 0) {
                                 f_22_ = 1.0F;
                                 f_23_ = 1.0F;
@@ -83,23 +83,23 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                                 f_23_ = 1.0F;
                                 f_22_ = (float) i_24_ / 1024.0F;
                             }
-                            f = 64.0F / (float) (class124.anIntArray1816[i_20_]);
+                            f = 64.0F / (float) (mesh.texSpaceScaleY[i_20_]);
                         } else if (i_21_ == 2) {
-                            f = 64.0F / (float) (class124.anIntArray1816[i_20_]);
-                            f_22_ = 64.0F / (float) (class124.anIntArray1844[i_20_]);
-                            f_23_ = 64.0F / (float) (class124.anIntArray1859[i_20_]);
+                            f = 64.0F / (float) (mesh.texSpaceScaleY[i_20_]);
+                            f_22_ = 64.0F / (float) (mesh.texSpaceScaleZ[i_20_]);
+                            f_23_ = 64.0F / (float) (mesh.texSpaceScaleX[i_20_]);
                         } else {
-                            f = (float) (class124.anIntArray1816[i_20_]) / 1024.0F;
-                            f_22_ = (float) (class124.anIntArray1844[i_20_]) / 1024.0F;
-                            f_23_ = (float) (class124.anIntArray1859[i_20_]) / 1024.0F;
+                            f = (float) (mesh.texSpaceScaleY[i_20_]) / 1024.0F;
+                            f_22_ = (float) (mesh.texSpaceScaleZ[i_20_]) / 1024.0F;
+                            f_23_ = (float) (mesh.texSpaceScaleX[i_20_]) / 1024.0F;
                         }
-                        fs[i_20_] = (Class175.method1347(class124.aShortArray1825[i_20_], class124.aShortArray1849[i_20_], f_22_, f_23_, 126, f, class124.aShortArray1829[i_20_], Class139.method1166(255, (class124.aByteArray1833[i_20_]))));
+                        fs[i_20_] = (Class175.method1347(mesh.texSpaceDefC[i_20_], mesh.texSpaceDefB[i_20_], f_22_, f_23_, 126, f, mesh.texSpaceDefA[i_20_], Class139.method1166(255, (mesh.texRotation[i_20_]))));
                     }
                 }
             }
             return new Class358(is_1_, is_2_, is_3_, fs);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("dha.B(" + i + ',' + i_0_ + ',' + (class124 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("dha.B(" + i + ',' + i_0_ + ',' + (mesh != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
         }
     }
 

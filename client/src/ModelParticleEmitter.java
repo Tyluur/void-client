@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class129 {
+// Class129
+final class ModelParticleEmitter {
     static int anInt1873;
     int anInt1874;
     byte aByte1875;
@@ -18,17 +19,17 @@ final class Class129 {
     static int[] anIntArray1885 = new int[32];
     private final int anInt1886;
     static byte[][] aByteArrayArray1887;
-    Class129 aClass129_1888;
+    ModelParticleEmitter aModelParticleEmitter_1888;
     int anInt1889;
     int anInt1890;
     int anInt1891;
     int anInt1892;
     static int anInt1893;
 
-    final Class129 method1124(int i, int i_0_, int i_1_, int i_2_) {
+    final ModelParticleEmitter method1124(int i, int i_0_, int i_1_, int i_2_) {
         anInt1893++;
         if (i_0_ != -1) return null;
-        return new Class129(anInt1886, i_2_, i, i_1_, this.aByte1875);
+        return new ModelParticleEmitter(anInt1886, i_2_, i, i_1_, this.aByte1875);
     }
 
     final Class181 method1125(byte i) {
@@ -45,7 +46,7 @@ final class Class129 {
         }
     }
 
-    Class129(int i, int i_3_, int i_4_, int i_5_, byte i_6_) {
+    ModelParticleEmitter(int i, int i_3_, int i_4_, int i_5_, byte i_6_) {
         anInt1886 = i;
         this.aByte1875 = i_6_;
         this.anInt1881 = i_3_;

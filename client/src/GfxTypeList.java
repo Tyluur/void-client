@@ -53,7 +53,7 @@ final class GfxTypeList {
         class368 = new Class368();
         class368.aGfxTypeList_4513 = this;
         class368.anInt4501 = i_1_;
-        if (is != null) class368.method3559(28105, new Class348_Sub49(is));
+        if (is != null) class368.method3559(28105, new Packet(is));
         synchronized (aClass60_3989) {
             aClass60_3989.method582(class368, i_1_, (byte) -127);
         }

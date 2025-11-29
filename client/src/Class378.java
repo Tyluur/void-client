@@ -660,7 +660,7 @@ public final class Class378 extends ha_Sub3 {
 
     private static final int method3961(Class70 class70, int i) {
         if (i != 2) aFloatArray9797 = null;
-        if (Class342.aClass70_4247 == class70) return 2;
+        if (ModelParticleEffector.aClass70_4247 == class70) return 2;
         if (class70 == Class285_Sub2.aClass70_8503) return 0;
         if (Class318_Sub1_Sub2.aClass70_8737 != class70) {
             if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 3;

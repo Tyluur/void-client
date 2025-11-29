@@ -40,7 +40,7 @@ final class Class367_Sub8 extends Class367 {
     }
 
     static final int method3547(int i, int i_6_) {
-        if (Class342.anIntArrayArray4253 != null) return Class342.anIntArrayArray4253[i][i_6_] & 0xffffff;
+        if (ModelParticleEffector.anIntArrayArray4253 != null) return ModelParticleEffector.anIntArrayArray4253[i][i_6_] & 0xffffff;
         return 0;
     }
 
@@ -96,12 +96,12 @@ final class Class367_Sub8 extends Class367 {
         if (i != 87) method3549(-29, (byte) -5);
         anInt7364++;
         this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 120, Class167.aClass229_2207);
-        this.aHa_Sub3_4479.method3849((byte) 47, 0, Class342.aClass70_4247);
-        this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);
+        this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+        this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
         this.aHa_Sub3_4479.method3910((byte) -26, 1);
         this.aHa_Sub3_4479.method3850((byte) 86, null);
         this.aHa_Sub3_4479.method3897(0, -4382);
-        this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);
+        this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
     }
 
     Class367_Sub8(ha_Sub3 var_ha_Sub3, Class269 class269) {
@@ -177,7 +177,7 @@ final class Class367_Sub8 extends Class367 {
         anInt7356++;
         this.aHa_Sub3_4479.method3897(1, i ^ ~0x2a45);
         this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 111, (Class348_Sub23_Sub2.aClass229_9011));
-        this.aHa_Sub3_4479.method3924(true, false, 0, Class342.aClass70_4247, false);
+        this.aHa_Sub3_4479.method3924(true, false, 0, ModelParticleEffector.aClass70_4247, false);
         this.aHa_Sub3_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);
         this.aHa_Sub3_4479.method3910((byte) -26, 0);
         this.aHa_Sub3_4479.method3897(0, -4382);

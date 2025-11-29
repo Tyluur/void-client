@@ -93,7 +93,7 @@ final class Class367_Sub4 extends Class367 {
             this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aClass251_9477);
             if (aBoolean7311) {
                 this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 113, (Class348_Sub23_Sub2.aClass229_9011));
-                this.aHa_Sub3_4479.method3924(true, false, 0, Class342.aClass70_4247, false);
+                this.aHa_Sub3_4479.method3924(true, false, 0, ModelParticleEffector.aClass70_4247, false);
                 this.aHa_Sub3_4479.method3885(0, true, Class285_Sub2.aClass70_8503);
             } else {
                 this.aHa_Sub3_4479.method3874((Class167.aClass229_2207), 117, (Class328_Sub3.aClass229_6519));
@@ -126,21 +126,21 @@ final class Class367_Sub4 extends Class367 {
             this.aHa_Sub3_4479.method3879(-8629);
             if (aBoolean7311) {
                 this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 120, Class167.aClass229_2207);
-                this.aHa_Sub3_4479.method3849((byte) 47, 0, Class342.aClass70_4247);
-                this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);
+                this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+                this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
             } else {
                 this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 115, Class167.aClass229_2207);
-                this.aHa_Sub3_4479.method3849((byte) 47, 0, Class342.aClass70_4247);
+                this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
                 this.aHa_Sub3_4479.method3897(2, i + -4469);
                 this.aHa_Sub3_4479.method3874((Class167.aClass229_2207), i ^ 0x21, (Class167.aClass229_2207));
-                this.aHa_Sub3_4479.method3849((byte) 47, 0, Class342.aClass70_4247);
+                this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
                 this.aHa_Sub3_4479.method3849((byte) 47, 1, (Class318_Sub1_Sub2.aClass70_8737));
-                this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);
+                this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
                 this.aHa_Sub3_4479.method3850((byte) 64, null);
             }
             this.aHa_Sub3_4479.method3897(0, i ^ ~0x114a);
             aBoolean7317 = false;
-        } else this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);
+        } else this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
         anInt7312++;
         if (i != 87) aBoolean7311 = true;
         this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, i + 13, Class167.aClass229_2207);
@@ -301,17 +301,17 @@ final class Class367_Sub4 extends Class367 {
         }
     }
 
-    static final int method3544(Class348_Sub49 class348_sub49, int i, String string) {
+    static final int method3544(Packet packet, int i, String string) {
         try {
             anInt7321++;
-            int i_38_ = class348_sub49.anInt7197;
+            int i_38_ = packet.pos;
             byte[] is = Class348_Sub24.method2992(string, (byte) -20);
             int i_39_ = 1 % ((-6 - i) / 63);
-            class348_sub49.method3381(5537, is.length);
-            class348_sub49.anInt7197 += (Class64.aClass296_1131.method2227(is.length, 0, class348_sub49.anInt7197, is, 103, class348_sub49.aByteArray7154));
-            return class348_sub49.anInt7197 + -i_38_;
+            packet.method3381(5537, is.length);
+            packet.pos += (Class64.aClass296_1131.method2227(is.length, 0, packet.pos, is, 103, packet.aByteArray7154));
+            return packet.pos + -i_38_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bk.O(" + (class348_sub49 != null ? "{...}" : "null") + ',' + i + ',' + (string != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bk.O(" + (packet != null ? "{...}" : "null") + ',' + i + ',' + (string != null ? "{...}" : "null") + ')'));
         }
     }
 

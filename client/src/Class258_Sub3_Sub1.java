@@ -62,11 +62,11 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3 {
         Class101.method901(Class113.aSpriteArray1744, 515880227);
         Class354.method3466(i ^ ~0x4f);
         Class348_Sub40.updateFeatureMask(-1);
-        if (Class240.mainLogicStep == 3) Class348_Sub49.setStep(2, 4);
-        else if (Class240.mainLogicStep == 7) Class348_Sub49.setStep(2, 8);
+        if (Class240.mainLogicStep == 3) Packet.setStep(2, 4);
+        else if (Class240.mainLogicStep == 7) Packet.setStep(2, 8);
         else if (Class240.mainLogicStep != 10) {
             if (Class240.mainLogicStep == 1 || Class240.mainLogicStep == 2) Class376.method3616(12639);
-        } else Class348_Sub49.setStep(2, 11);
+        } else Packet.setStep(2, 11);
     }
 
     Class258_Sub3_Sub1(ha_Sub2 var_ha_Sub2, int i, int i_12_, int i_13_, int i_14_, int i_15_, int i_16_, boolean bool) {

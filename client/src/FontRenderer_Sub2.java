@@ -178,6 +178,6 @@ final class FontRenderer_Sub2 extends FontRenderer {
         aHa_Sub3_6494.method3925(54, anInterface5_Impl1_6495, 0);
         aHa_Sub3_6494.method3862(0, aHa_Sub3_6494.aClass130_8204);
         aHa_Sub3_6494.method3899(2, c * '\004', Class348_Sub42_Sub16.aClass21_9661, true);
-        if (aBoolean6493 || bool) aHa_Sub3_6494.method3849((byte) 47, 0, Class342.aClass70_4247);
+        if (aBoolean6493 || bool) aHa_Sub3_6494.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
     }
 }

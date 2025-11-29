@@ -13,7 +13,7 @@ final class Class341 {
     static int[][] anIntArrayArray4233 = new int[6][];
     static Sprite[] aSpriteArray4234;
     static int anInt4235;
-    static Class124[] aClass124Array4236 = new Class124[4];
+    static Mesh[] aMeshArray4236 = new Mesh[4];
     static int anInt4237;
 
     static final void method2676(int i, int i_0_, int i_1_, byte i_2_, int i_3_) {
@@ -43,7 +43,7 @@ final class Class341 {
         aClass348_Sub24_4226 = null;
         if (i >= 93) {
             aSpriteArray4234 = null;
-            aClass124Array4236 = null;
+            aMeshArray4236 = null;
         }
     }
 

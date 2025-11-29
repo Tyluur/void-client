@@ -71,7 +71,7 @@ final class Option_Sub14 extends Option {
         try {
             Dimension dimension = Class305.aCanvas3869.getSize();
             Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3496.method2063(Class348_Sub33.language, 544), 2, Class348_Sub8.aHa6654);
-            Class124 class124 = Class300.method2277(0, aa_Sub3.MODELS, Class348_Sub31.anInt6923, -1);
+            Mesh mesh = Class300.method2277(0, aa_Sub3.MODELS, Class348_Sub31.anInt6923, -1);
             long l = Class62.safeTime(-88);
             Class348_Sub8.aHa6654.la();
             Class157.aClass101_2123.method894(0, Class348_Sub23_Sub2.anInt9037, 0);
@@ -80,7 +80,7 @@ final class Option_Sub14 extends Option {
             Class348_Sub8.aHa6654.xa(1.0F);
             if (i_1_ >= -66) aClass190_5990 = null;
             Class348_Sub8.aHa6654.ZA(16777215, 0.5F, 0.5F, 20.0F, -50.0F, 30.0F);
-            Class64 class64 = Class348_Sub8.aHa6654.method3625(class124, 2048, 64, 64, 768);
+            Class64 class64 = Class348_Sub8.aHa6654.method3625(mesh, 2048, 64, 64, 768);
             int i_3_ = 0;
             while_80_:
             for (int i_4_ = 0; i_4_ < 500; i_4_++) {

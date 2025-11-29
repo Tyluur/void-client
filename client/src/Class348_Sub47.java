@@ -65,7 +65,7 @@ final class Class348_Sub47 extends Node {
                 if (!Class59_Sub1.aBoolean5300) {
                     Dimension dimension = Class305.aCanvas3869.getSize();
                     Class348_Sub8.aHa6654.method3643(Class305.aCanvas3869, dimension.width, dimension.height);
-                } else Class124.method1108((byte) -99, Class305.aCanvas3869);
+                } else Mesh.method1108((byte) -99, Class305.aCanvas3869);
                 Class348_Sub8.aHa6654.method3677(Class305.aCanvas3869);
             } else Class367_Sub10.method3553(false, (byte) 100, Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350));
             anInt7123++;

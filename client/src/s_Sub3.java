@@ -550,8 +550,8 @@ final class s_Sub3 extends s {
                         Class348_Sub38 class348_sub38 = (Class348_Sub38) node;
                         class348_sub38.method3032(i_149_, i_153_, bools, false, i);
                     }
-                    this.aHa_Sub3_8322.method3849((byte) 47, 0, Class342.aClass70_4247);
-                    this.aHa_Sub3_8322.method3885(0, true, Class342.aClass70_4247);
+                    this.aHa_Sub3_8322.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+                    this.aHa_Sub3_8322.method3885(0, true, ModelParticleEffector.aClass70_4247);
                     this.aHa_Sub3_8322.method3850((byte) 90, null);
                     this.aHa_Sub3_8322.L(i_165_, i_166_, this.aHa_Sub3_8322.anInt8105);
                 }
@@ -772,7 +772,7 @@ final class s_Sub3 extends s {
     static final int method4008(byte i) {
         anInt8289++;
         if (i >= -121) aClass21_8320 = null;
-        if (Class348_Sub49.anInt7207 == 1) return Class339.anInt4211;
+        if (Packet.anInt7207 == 1) return Class339.anInt4211;
         return 0;
     }
 }

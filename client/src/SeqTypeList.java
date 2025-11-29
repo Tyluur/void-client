@@ -39,7 +39,7 @@ final class SeqTypeList {
         class17 = new Class17();
         class17.anInt269 = i;
         class17.aSeqTypeList_251 = this;
-        if (is != null) class17.method267(new Class348_Sub49(is), false);
+        if (is != null) class17.method267(new Packet(is), false);
         class17.method270((byte) 124);
         synchronized (aClass60_1487) {
             aClass60_1487.method582(class17, i, (byte) -126);

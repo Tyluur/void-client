@@ -66,14 +66,14 @@ final class Class218 {
         aClass114_2860 = null;
     }
 
-    private final void method1595(byte i, int i_17_, Class348_Sub49 class348_sub49) {
+    private final void method1595(byte i, int i_17_, Packet packet) {
         anInt2852++;
         if (i >= 5) {
-            if (i_17_ == 1) this.anInt2853 = class348_sub49.readUnsignedShort(842397944);
+            if (i_17_ == 1) this.anInt2853 = packet.readUnsignedShort(842397944);
             else if (i_17_ != 2) {
                 if (i_17_ == 3) this.aBoolean2854 = true;
                 else if (i_17_ == 4) this.anInt2853 = -1;
-            } else this.anInt2856 = class348_sub49.readMedium(-1);
+            } else this.anInt2856 = packet.readMedium(-1);
         }
     }
 
@@ -96,12 +96,12 @@ final class Class218 {
         return sprite;
     }
 
-    final void method1597(byte i, Class348_Sub49 class348_sub49) {
+    final void method1597(byte i, Packet packet) {
         anInt2850++;
         for (; ; ) {
-            int i_20_ = class348_sub49.readUnsignedByte(255);
+            int i_20_ = packet.readUnsignedByte(255);
             if (i_20_ == 0) break;
-            method1595((byte) 61, i_20_, class348_sub49);
+            method1595((byte) 61, i_20_, packet);
         }
         if (i != -114) aClass262_2859 = null;
     }

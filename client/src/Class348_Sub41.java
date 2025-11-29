@@ -19,26 +19,26 @@ final class Class348_Sub41 extends Node {
         anInt7047++;
         if (i_3_ != 39) aClass114_7052 = null;
         boolean bool = true;
-        Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
+        Packet packet = new Packet(is);
         int i_4_ = -1;
         for (; ; ) {
-            int i_5_ = class348_sub49.method3334(107);
+            int i_5_ = packet.method3334(107);
             if (i_5_ == 0) break;
             i_4_ += i_5_;
             int i_6_ = 0;
             boolean bool_7_ = false;
             for (; ; ) {
                 if (bool_7_) {
-                    int i_8_ = class348_sub49.readSmart(-118);
+                    int i_8_ = packet.readSmart(-118);
                     if (i_8_ == 0) break;
-                    class348_sub49.readUnsignedByte(255);
+                    packet.readUnsignedByte(255);
                 } else {
-                    int i_9_ = class348_sub49.readSmart(i_3_ ^ ~0x58);
+                    int i_9_ = packet.readSmart(i_3_ ^ ~0x58);
                     if (i_9_ == 0) break;
                     i_6_ += -1 + i_9_;
                     int i_10_ = i_6_ & 0x3f;
                     int i_11_ = i_6_ >> 6 & 0x3f;
-                    int i_12_ = class348_sub49.readUnsignedByte(255) >> 2;
+                    int i_12_ = packet.readUnsignedByte(255) >> 2;
                     int i_13_ = i_11_ - -i_0_;
                     int i_14_ = i_2_ + i_10_;
                     if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i && -1 + i_1_ > i_14_) {
@@ -76,7 +76,7 @@ final class Class348_Sub41 extends Node {
             Class327.anInt4095 = i;
             Class167.anInt2204 = QuickChatPhraseTypeList.anInt4372;
             if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1) Class167.anInt2204 = 0;
-            Class348_Sub49.setStep(2, i_17_);
+            Packet.setStep(2, i_17_);
             Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3495.method2063(Class348_Sub33.language, 544), 2, Class348_Sub8.aHa6654);
             int i_18_ = za_Sub2.regionTileX;
             int i_19_ = Class90.regionTileY;
@@ -203,15 +203,15 @@ final class Class348_Sub41 extends Node {
 
     static final byte[] method3158(byte[] is, int i) {
         anInt7046++;
-        Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
-        int i_37_ = class348_sub49.readUnsignedByte(255);
+        Packet packet = new Packet(is);
+        int i_37_ = packet.readUnsignedByte(255);
         if (i > -74) parseInt(true, null);
-        int i_38_ = class348_sub49.readInt((byte) -126);
+        int i_38_ = packet.readInt((byte) -126);
         if (i_38_ < 0 || (Class29.anInt401 != 0 && i_38_ > Class29.anInt401)) {
             throw new RuntimeException();
         }
         if (i_37_ != 0) {
-            int i_39_ = class348_sub49.readInt((byte) -126);
+            int i_39_ = packet.readInt((byte) -126);
             if (i_39_ < 0 || (Class29.anInt401 != 0 && i_39_ > Class29.anInt401) || i_39_ > 10000000) {
                 return new byte[4];
             }
@@ -219,13 +219,13 @@ final class Class348_Sub41 extends Node {
             if (i_37_ == 1) Class212.method1547(is_40_, i_39_, is, i_38_, 9);
             else {
                 synchronized (Class348_Sub33.aClass152_6955) {
-                    Class348_Sub33.aClass152_6955.method1218(is_40_, 29123, class348_sub49);
+                    Class348_Sub33.aClass152_6955.method1218(is_40_, 29123, packet);
                 }
             }
             return is_40_;
         }
         byte[] is_41_ = new byte[i_38_];
-        class348_sub49.method3389(2147483647, 0, i_38_, is_41_);
+        packet.method3389(2147483647, 0, i_38_, is_41_);
         return is_41_;
     }
 

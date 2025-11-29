@@ -189,10 +189,10 @@ final class Class72 {
 
     private static final void method738(ha var_ha) {
         if (aClass64_1227 == null) {
-            Class124 class124 = new Class124(580, 1104, 1);
-            class124.method1105(109, (byte) 0, (byte) 0, (short) 0, (short) 1024, (byte) 0, (short) 0, (short) 32767, (short) 1024, (short) 1024);
-            class124.method1101(128, 0, 0, -93);
-            class124.method1101(-128, 0, 0, 108);
+            Mesh mesh = new Mesh(580, 1104, 1);
+            mesh.method1105(109, (byte) 0, (byte) 0, (short) 0, (short) 1024, (byte) 0, (short) 0, (short) 32767, (short) 1024, (short) 1024);
+            mesh.method1101(128, 0, 0, -93);
+            mesh.method1101(-128, 0, 0, 108);
             for (int i = 0; i <= 24; i++) {
                 int i_41_ = i * 8192 / 24;
                 int i_42_ = Class70.anIntArray1207[i_41_];
@@ -202,28 +202,28 @@ final class Class72 {
                     int i_46_ = Class70.anIntArray1204[i_45_] >> 7;
                     int i_47_ = Class70.anIntArray1207[i_45_] * i_42_ >> 21;
                     int i_48_ = Class70.anIntArray1207[i_45_] * i_43_ >> 21;
-                    class124.method1101(i_46_, -i_47_, i_48_, 127);
+                    mesh.method1101(i_46_, -i_47_, i_48_, 127);
                 }
                 if (i > 0) {
                     int i_49_ = i * 23 + 2;
                     int i_50_ = i_49_ - 23;
-                    class124.method1102(0, (byte) 0, (byte) 0, (short) 0, (byte) 52, (short) 127, i_50_, (byte) 0, i_49_);
+                    mesh.method1102(0, (byte) 0, (byte) 0, (short) 0, (byte) 52, (short) 127, i_50_, (byte) 0, i_49_);
                     for (int i_51_ = 1; i_51_ < 23; i_51_++) {
                         int i_52_ = i_50_ + 1;
                         int i_53_ = i_49_ + 1;
-                        class124.method1102(i_50_, (byte) 0, (byte) 0, (short) 0, (byte) 41, (short) 127, i_52_, (byte) 0, i_49_);
-                        class124.method1102(i_52_, (byte) 0, (byte) 0, (short) 0, (byte) 67, (short) 127, i_53_, (byte) 0, i_49_);
+                        mesh.method1102(i_50_, (byte) 0, (byte) 0, (short) 0, (byte) 41, (short) 127, i_52_, (byte) 0, i_49_);
+                        mesh.method1102(i_52_, (byte) 0, (byte) 0, (short) 0, (byte) 67, (short) 127, i_53_, (byte) 0, i_49_);
                         i_50_ = i_52_;
                         i_49_ = i_53_;
                     }
-                    class124.method1102(i_49_, (byte) 0, (byte) 0, (short) 0, (byte) 98, (short) 127, i_50_, (byte) 0, 1);
+                    mesh.method1102(i_49_, (byte) 0, (byte) 0, (short) 0, (byte) 98, (short) 127, i_50_, (byte) 0, 1);
                 }
             }
-            class124.anInt1821 = class124.anInt1836;
-            class124.anIntArray1824 = null;
-            class124.anIntArray1868 = null;
-            class124.aByteArray1839 = null;
-            aClass64_1227 = var_ha.method3625(class124, 51200, 33, 64, 768);
+            mesh.maxVertex = mesh.vertexCount;
+            mesh.faceLabel = null;
+            mesh.vertexLabel = null;
+            mesh.facePriority = null;
+            aClass64_1227 = var_ha.method3625(mesh, 51200, 33, 64, 768);
         }
     }
 
@@ -244,8 +244,8 @@ final class Class72 {
     }
 
     private final void method740(ha var_ha, Class72 class72_60_) {
-        Class124 class124 = Class300.method2277(0, Class260.aIndex_3309, anInt1224, -1);
-        if (class124 != null) {
+        Mesh mesh = Class300.method2277(0, Class260.aIndex_3309, anInt1224, -1);
+        if (mesh != null) {
             var_ha.K(anIntArray1226);
             var_ha.KA(0, 0, anInt1220, anInt1220);
             var_ha.aa(0, 0, anInt1220, anInt1220, 0, 0);
@@ -281,7 +281,7 @@ final class Class72 {
             }
             var_ha.xa(1.0F);
             var_ha.ZA(16777215, 1.0F, 1.0F, (float) i, (float) i_61_, (float) i_62_);
-            Class64 class64 = var_ha.method3625(class124, 2048, 0, 64, 768);
+            Class64 class64 = var_ha.method3625(mesh, 2048, 0, 64, 768);
             int i_71_ = class64.RA() - class64.V();
             int i_72_ = class64.EA() - class64.fa();
             int i_73_ = class64.V() + i_71_ / 2;

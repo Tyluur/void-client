@@ -59,7 +59,7 @@ final class Option_Sub5 extends Option {
         player.y = (((player.anIntArray10317[0]) << 9) - -(player.method2436((byte) 85) << 8));
         QuickChatPhraseTypeList.anInt4372 = player.plane = player.aByte6376 = i_5_;
         if (NPCDefinition.method802((player.anIntArray10317[0]), (player.anIntArray10320[0]), true)) player.aByte6376++;
-        if (Class154.aClass348_Sub49Array2105[i_3_] != null) player.method2452((byte) 84, (Class154.aClass348_Sub49Array2105[i_3_]));
+        if (Class154.aPacketArray2105[i_3_] != null) player.method2452((byte) 84, (Class154.aPacketArray2105[i_3_]));
         Class328_Sub1.anInt6513 = 0;
         Class286_Sub7.anIntArray6290[Class328_Sub1.anInt6513++] = i_3_;
         Class348_Sub5.aByteArray6624[i_3_] = (byte) 0;

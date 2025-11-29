@@ -14,7 +14,7 @@ final class Class64_Sub1 extends Class64 {
     private Class64_Sub1 aClass64_Sub1_5319;
     private Class101_Sub1 aClass101_Sub1_5320;
     private int[] anIntArray5321;
-    private Class129[] aClass129Array5322;
+    private ModelParticleEmitter[] aModelParticleEmitterArray5322;
     private boolean aBoolean5323 = false;
     private short aShort5324;
     private byte[] aByteArray5325;
@@ -27,7 +27,7 @@ final class Class64_Sub1 extends Class64 {
     private int[] anIntArray5332;
     private short[] aShortArray5333;
     private int[][] anIntArrayArray5334;
-    private Class342[] aClass342Array5335;
+    private ModelParticleEffector[] aModelParticleEffectorArray5335;
     private Class167 aClass167_5336;
     private int[] anIntArray5337;
     private int anInt5338;
@@ -335,8 +335,8 @@ final class Class64_Sub1 extends Class64 {
         class64_sub1_7_.aShortArray5317 = aShortArray5317;
         class64_sub1_7_.aShortArray5394 = aShortArray5394;
         class64_sub1_7_.aShortArray5364 = aShortArray5364;
-        class64_sub1_7_.aClass129Array5322 = aClass129Array5322;
-        class64_sub1_7_.aClass342Array5335 = aClass342Array5335;
+        class64_sub1_7_.aModelParticleEmitterArray5322 = aModelParticleEmitterArray5322;
+        class64_sub1_7_.aModelParticleEffectorArray5335 = aModelParticleEffectorArray5335;
         class64_sub1_7_.aClass6Array5361 = aClass6Array5361;
         class64_sub1_7_.aShortArray5327 = aShortArray5327;
         class64_sub1_7_.anInt5316 = i;
@@ -351,8 +351,8 @@ final class Class64_Sub1 extends Class64 {
         } else method657(bool);
     }
 
-    final Class129[] method619() {
-        return aClass129Array5322;
+    final ModelParticleEmitter[] method619() {
+        return aModelParticleEmitterArray5322;
     }
 
     final int V() {
@@ -1173,32 +1173,32 @@ final class Class64_Sub1 extends Class64 {
 
     final void method620(Class101 class101) {
         Class101_Sub1 class101_sub1 = (Class101_Sub1) class101;
-        if (aClass129Array5322 != null) {
-            for (int i = 0; i < aClass129Array5322.length; i++) {
-                Class129 class129 = aClass129Array5322[i];
-                Class129 class129_285_ = class129;
-                if (class129.aClass129_1888 != null) class129_285_ = class129.aClass129_1888;
-                class129_285_.anInt1882 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (anIntArray5356[class129.anInt1881])) + (class101_sub1.aFloat5673 * (float) (anIntArray5332[(class129.anInt1881)])) + (class101_sub1.aFloat5669 * (float) (anIntArray5312[(class129.anInt1881)]))));
-                class129_285_.anInt1891 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (anIntArray5356[class129.anInt1881])) + (class101_sub1.aFloat5678 * (float) (anIntArray5332[(class129.anInt1881)])) + (class101_sub1.aFloat5666 * (float) (anIntArray5312[(class129.anInt1881)]))));
-                class129_285_.anInt1889 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (anIntArray5356[class129.anInt1881])) + (class101_sub1.aFloat5680 * (float) (anIntArray5332[(class129.anInt1881)])) + (class101_sub1.aFloat5664 * (float) (anIntArray5312[(class129.anInt1881)]))));
-                class129_285_.anInt1883 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (anIntArray5356[class129.anInt1877])) + (class101_sub1.aFloat5673 * (float) (anIntArray5332[(class129.anInt1877)])) + (class101_sub1.aFloat5669 * (float) (anIntArray5312[(class129.anInt1877)]))));
-                class129_285_.anInt1890 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (anIntArray5356[class129.anInt1877])) + (class101_sub1.aFloat5678 * (float) (anIntArray5332[(class129.anInt1877)])) + (class101_sub1.aFloat5666 * (float) (anIntArray5312[(class129.anInt1877)]))));
-                class129_285_.anInt1880 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (anIntArray5356[class129.anInt1877])) + (class101_sub1.aFloat5680 * (float) (anIntArray5332[(class129.anInt1877)])) + (class101_sub1.aFloat5664 * (float) (anIntArray5312[(class129.anInt1877)]))));
-                class129_285_.anInt1876 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (anIntArray5356[class129.anInt1892])) + (class101_sub1.aFloat5673 * (float) (anIntArray5332[(class129.anInt1892)])) + (class101_sub1.aFloat5669 * (float) (anIntArray5312[(class129.anInt1892)]))));
-                class129_285_.anInt1874 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (anIntArray5356[class129.anInt1892])) + (class101_sub1.aFloat5678 * (float) (anIntArray5332[(class129.anInt1892)])) + (class101_sub1.aFloat5666 * (float) (anIntArray5312[(class129.anInt1892)]))));
-                class129_285_.anInt1884 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (anIntArray5356[class129.anInt1892])) + (class101_sub1.aFloat5680 * (float) (anIntArray5332[(class129.anInt1892)])) + (class101_sub1.aFloat5664 * (float) (anIntArray5312[(class129.anInt1892)]))));
+        if (aModelParticleEmitterArray5322 != null) {
+            for (int i = 0; i < aModelParticleEmitterArray5322.length; i++) {
+                ModelParticleEmitter modelParticleEmitter = aModelParticleEmitterArray5322[i];
+                ModelParticleEmitter modelParticleEmitter_285_ = modelParticleEmitter;
+                if (modelParticleEmitter.aModelParticleEmitter_1888 != null) modelParticleEmitter_285_ = modelParticleEmitter.aModelParticleEmitter_1888;
+                modelParticleEmitter_285_.anInt1882 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (anIntArray5356[modelParticleEmitter.anInt1881])) + (class101_sub1.aFloat5673 * (float) (anIntArray5332[(modelParticleEmitter.anInt1881)])) + (class101_sub1.aFloat5669 * (float) (anIntArray5312[(modelParticleEmitter.anInt1881)]))));
+                modelParticleEmitter_285_.anInt1891 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (anIntArray5356[modelParticleEmitter.anInt1881])) + (class101_sub1.aFloat5678 * (float) (anIntArray5332[(modelParticleEmitter.anInt1881)])) + (class101_sub1.aFloat5666 * (float) (anIntArray5312[(modelParticleEmitter.anInt1881)]))));
+                modelParticleEmitter_285_.anInt1889 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (anIntArray5356[modelParticleEmitter.anInt1881])) + (class101_sub1.aFloat5680 * (float) (anIntArray5332[(modelParticleEmitter.anInt1881)])) + (class101_sub1.aFloat5664 * (float) (anIntArray5312[(modelParticleEmitter.anInt1881)]))));
+                modelParticleEmitter_285_.anInt1883 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (anIntArray5356[modelParticleEmitter.anInt1877])) + (class101_sub1.aFloat5673 * (float) (anIntArray5332[(modelParticleEmitter.anInt1877)])) + (class101_sub1.aFloat5669 * (float) (anIntArray5312[(modelParticleEmitter.anInt1877)]))));
+                modelParticleEmitter_285_.anInt1890 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (anIntArray5356[modelParticleEmitter.anInt1877])) + (class101_sub1.aFloat5678 * (float) (anIntArray5332[(modelParticleEmitter.anInt1877)])) + (class101_sub1.aFloat5666 * (float) (anIntArray5312[(modelParticleEmitter.anInt1877)]))));
+                modelParticleEmitter_285_.anInt1880 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (anIntArray5356[modelParticleEmitter.anInt1877])) + (class101_sub1.aFloat5680 * (float) (anIntArray5332[(modelParticleEmitter.anInt1877)])) + (class101_sub1.aFloat5664 * (float) (anIntArray5312[(modelParticleEmitter.anInt1877)]))));
+                modelParticleEmitter_285_.anInt1876 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (anIntArray5356[modelParticleEmitter.anInt1892])) + (class101_sub1.aFloat5673 * (float) (anIntArray5332[(modelParticleEmitter.anInt1892)])) + (class101_sub1.aFloat5669 * (float) (anIntArray5312[(modelParticleEmitter.anInt1892)]))));
+                modelParticleEmitter_285_.anInt1874 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (anIntArray5356[modelParticleEmitter.anInt1892])) + (class101_sub1.aFloat5678 * (float) (anIntArray5332[(modelParticleEmitter.anInt1892)])) + (class101_sub1.aFloat5666 * (float) (anIntArray5312[(modelParticleEmitter.anInt1892)]))));
+                modelParticleEmitter_285_.anInt1884 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (anIntArray5356[modelParticleEmitter.anInt1892])) + (class101_sub1.aFloat5680 * (float) (anIntArray5332[(modelParticleEmitter.anInt1892)])) + (class101_sub1.aFloat5664 * (float) (anIntArray5312[(modelParticleEmitter.anInt1892)]))));
             }
         }
-        if (aClass342Array5335 != null) {
-            for (int i = 0; i < aClass342Array5335.length; i++) {
-                Class342 class342 = aClass342Array5335[i];
-                Class342 class342_286_ = class342;
-                if (class342.aClass342_4248 != null) class342_286_ = class342.aClass342_4248;
-                if (class342.aClass101_4252 != null) class342.aClass101_4252.method898(class101_sub1);
-                else class342.aClass101_4252 = class101_sub1.method907();
-                class342_286_.anInt4238 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (anIntArray5356[class342.anInt4244])) + (class101_sub1.aFloat5673 * (float) (anIntArray5332[(class342.anInt4244)])) + (class101_sub1.aFloat5669 * (float) (anIntArray5312[(class342.anInt4244)]))));
-                class342_286_.anInt4239 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (anIntArray5356[class342.anInt4244])) + (class101_sub1.aFloat5678 * (float) (anIntArray5332[(class342.anInt4244)])) + (class101_sub1.aFloat5666 * (float) (anIntArray5312[(class342.anInt4244)]))));
-                class342_286_.anInt4240 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (anIntArray5356[class342.anInt4244])) + (class101_sub1.aFloat5680 * (float) (anIntArray5332[(class342.anInt4244)])) + (class101_sub1.aFloat5664 * (float) (anIntArray5312[(class342.anInt4244)]))));
+        if (aModelParticleEffectorArray5335 != null) {
+            for (int i = 0; i < aModelParticleEffectorArray5335.length; i++) {
+                ModelParticleEffector modelParticleEffector = aModelParticleEffectorArray5335[i];
+                ModelParticleEffector modelParticleEffector_286_ = modelParticleEffector;
+                if (modelParticleEffector.aModelParticleEffector_4248 != null) modelParticleEffector_286_ = modelParticleEffector.aModelParticleEffector_4248;
+                if (modelParticleEffector.aClass101_4252 != null) modelParticleEffector.aClass101_4252.method898(class101_sub1);
+                else modelParticleEffector.aClass101_4252 = class101_sub1.method907();
+                modelParticleEffector_286_.anInt4238 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (anIntArray5356[modelParticleEffector.anInt4244])) + (class101_sub1.aFloat5673 * (float) (anIntArray5332[(modelParticleEffector.anInt4244)])) + (class101_sub1.aFloat5669 * (float) (anIntArray5312[(modelParticleEffector.anInt4244)]))));
+                modelParticleEffector_286_.anInt4239 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (anIntArray5356[modelParticleEffector.anInt4244])) + (class101_sub1.aFloat5678 * (float) (anIntArray5332[(modelParticleEffector.anInt4244)])) + (class101_sub1.aFloat5666 * (float) (anIntArray5312[(modelParticleEffector.anInt4244)]))));
+                modelParticleEffector_286_.anInt4240 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (anIntArray5356[modelParticleEffector.anInt4244])) + (class101_sub1.aFloat5680 * (float) (anIntArray5332[(modelParticleEffector.anInt4244)])) + (class101_sub1.aFloat5664 * (float) (anIntArray5312[(modelParticleEffector.anInt4244)]))));
             }
         }
     }
@@ -1731,8 +1731,8 @@ final class Class64_Sub1 extends Class64 {
         return method645(i, i_474_, class101, bool, i_475_, i_476_);
     }
 
-    final Class342[] method604() {
-        return aClass342Array5335;
+    final ModelParticleEffector[] method604() {
+        return aModelParticleEffectorArray5335;
     }
 
     final int WA() {
@@ -2488,7 +2488,7 @@ final class Class64_Sub1 extends Class64 {
                 aClass109_5383.method1023((i_632_ & 0x2) != 0);
                 boolean bool_656_ = false;
                 boolean bool_657_ = i_636_ <= aHa_Sub1_5353.anInt7482;
-                boolean bool_658_ = (bool_657_ || aClass129Array5322 != null || aClass342Array5335 != null);
+                boolean bool_658_ = (bool_657_ || aModelParticleEmitterArray5322 != null || aModelParticleEffectorArray5335 != null);
                 aClass167_5367.anInt2221 = aClass109_5383.anInt1679;
                 aClass167_5367.anInt2229 = aClass109_5383.anInt1665;
                 aClass167_5367.anInt2215 = aClass109_5383.anInt1668;
@@ -2940,7 +2940,7 @@ final class Class64_Sub1 extends Class64 {
         aHa_Sub1_5353 = var_ha_Sub1;
     }
 
-    Class64_Sub1(ha_Sub1 var_ha_Sub1, Class124 class124, int i, int i_785_, int i_786_, int i_787_) {
+    Class64_Sub1(ha_Sub1 var_ha_Sub1, Mesh mesh, int i, int i_785_, int i_786_, int i_787_) {
         anInt5354 = 0;
         aBoolean5369 = false;
         anInt5351 = 0;
@@ -2953,23 +2953,23 @@ final class Class64_Sub1 extends Class64 {
         anInt5344 = i_785_;
         anInt5349 = i_786_;
         TextureSource var_d = aHa_Sub1_5353.aD4579;
-        anInt5340 = class124.anInt1836;
-        anInt5387 = class124.anInt1821;
-        anIntArray5356 = class124.anIntArray1841;
-        anIntArray5332 = class124.anIntArray1847;
-        anIntArray5312 = class124.anIntArray1852;
-        anInt5351 = class124.anInt1817;
-        aShortArray5317 = class124.aShortArray1863;
-        aShortArray5394 = class124.aShortArray1835;
-        aShortArray5364 = class124.aShortArray1855;
-        aByteArray5358 = class124.aByteArray1839;
-        aShortArray5311 = class124.aShortArray1862;
-        aByteArray5325 = class124.aByteArray1834;
-        aShortArray5370 = class124.aShortArray1856;
-        aByteArray5386 = class124.aByteArray1843;
-        aClass129Array5322 = class124.aClass129Array1846;
-        aClass342Array5335 = class124.aClass342Array1866;
-        aShortArray5333 = class124.aShortArray1842;
+        anInt5340 = mesh.vertexCount;
+        anInt5387 = mesh.maxVertex;
+        anIntArray5356 = mesh.vertexX;
+        anIntArray5332 = mesh.vertexY;
+        anIntArray5312 = mesh.vertexZ;
+        anInt5351 = mesh.faceCount;
+        aShortArray5317 = mesh.faceA;
+        aShortArray5394 = mesh.faceB;
+        aShortArray5364 = mesh.faceC;
+        aByteArray5358 = mesh.facePriority;
+        aShortArray5311 = mesh.faceColour;
+        aByteArray5325 = mesh.faceAlpha;
+        aShortArray5370 = mesh.aShortArray1856;
+        aByteArray5386 = mesh.shadingType;
+        aModelParticleEmitterArray5322 = mesh.emitters;
+        aModelParticleEffectorArray5335 = mesh.effectors;
+        aShortArray5333 = mesh.aShortArray1842;
         int[] is = new int[anInt5351];
         for (int i_788_ = 0; i_788_ < anInt5351; i_788_++)
             is[i_788_] = i_788_;
@@ -2982,12 +2982,12 @@ final class Class64_Sub1 extends Class64 {
             int i_792_ = 0;
             int i_793_ = 0;
             int i_794_ = 0;
-            if (class124.aClass162Array1832 != null) {
+            if (mesh.billboards != null) {
                 boolean bool_795_ = false;
-                for (int i_796_ = 0; i_796_ < class124.aClass162Array1832.length; i_796_++) {
-                    Class162 class162 = class124.aClass162Array1832[i_796_];
-                    if (i_790_ == class162.anInt2155) {
-                        Class189 class189 = Class73.method742(104, (class162.anInt2153));
+                for (int i_796_ = 0; i_796_ < mesh.billboards.length; i_796_++) {
+                    MeshBillboard meshBillboard = mesh.billboards[i_796_];
+                    if (i_790_ == meshBillboard.anInt2155) {
+                        Class189 class189 = Class73.method742(104, (meshBillboard.anInt2153));
                         if (class189.aBoolean2531) bool_795_ = true;
                         if (class189.anInt2525 != -1) {
                             Class12 class12_797_ = var_d.method3((class189.anInt2525), -6662);
@@ -2998,8 +2998,8 @@ final class Class64_Sub1 extends Class64 {
                 if (bool_795_) ls[i_789_] = 9223372036854775807L;
             }
             int i_798_ = -1;
-            if (class124.aShortArray1822 != null) {
-                i_798_ = class124.aShortArray1822[i_790_];
+            if (mesh.faceTexture != null) {
+                i_798_ = mesh.faceTexture[i_790_];
                 if (i_798_ != -1) {
                     class12 = var_d.method3(i_798_ & 0xffff, -6662);
                     if ((i_787_ & 0x40) == 0 || !class12.aBoolean209) {
@@ -3019,31 +3019,31 @@ final class Class64_Sub1 extends Class64 {
             aBoolean5382 |= bool_799_;
         }
         Class348_Sub16_Sub2.method2832(is, ls, 0);
-        if (class124.aClass162Array1832 != null) {
-            anInt5389 = class124.aClass162Array1832.length;
+        if (mesh.billboards != null) {
+            anInt5389 = mesh.billboards.length;
             aClass6Array5361 = new Class6[anInt5389];
             aClass350Array5363 = new Class350[anInt5389];
-            for (int i_800_ = 0; i_800_ < class124.aClass162Array1832.length; i_800_++) {
-                Class162 class162 = class124.aClass162Array1832[i_800_];
-                Class189 class189 = Class73.method742(104, class162.anInt2153);
-                int i_801_ = ((Class126.anIntArray4983[(class124.aShortArray1862[class162.anInt2155]) & 0xffff]) & 0xffffff);
-                i_801_ = (i_801_ | 255 - (class124.aByteArray1834 != null ? (class124.aByteArray1834[class162.anInt2155]) & 0xff : 0) << 24);
-                aClass6Array5361[i_800_] = new Class6(class162.anInt2155, (class124.aShortArray1863[class162.anInt2155]), (class124.aShortArray1835[class162.anInt2155]), (class124.aShortArray1855[class162.anInt2155]), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class162.anInt2158);
+            for (int i_800_ = 0; i_800_ < mesh.billboards.length; i_800_++) {
+                MeshBillboard meshBillboard = mesh.billboards[i_800_];
+                Class189 class189 = Class73.method742(104, meshBillboard.anInt2153);
+                int i_801_ = ((Class126.anIntArray4983[(mesh.faceColour[meshBillboard.anInt2155]) & 0xffff]) & 0xffffff);
+                i_801_ = (i_801_ | 255 - (mesh.faceAlpha != null ? (mesh.faceAlpha[meshBillboard.anInt2155]) & 0xff : 0) << 24);
+                aClass6Array5361[i_800_] = new Class6(meshBillboard.anInt2155, (mesh.faceA[meshBillboard.anInt2155]), (mesh.faceB[meshBillboard.anInt2155]), (mesh.faceC[meshBillboard.anInt2155]), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, meshBillboard.anInt2158);
                 aClass350Array5363[i_800_] = new Class350(i_801_);
             }
         }
         aFloatArrayArray5314 = new float[anInt5351][];
         aFloatArrayArray5345 = new float[anInt5351][];
-        Class358 class358 = Class59_Sub2_Sub1.method565(255, anInt5351, class124, is);
+        Class358 class358 = Class59_Sub2_Sub1.method565(255, anInt5351, mesh, is);
         Class167 class167 = aHa_Sub1_5353.method3724(Thread.currentThread());
         float[] fs = class167.aFloatArray2226;
         boolean bool_802_ = false;
         for (int i_803_ = 0; i_803_ < anInt5351; i_803_++) {
             int i_804_ = is[i_803_];
             int i_805_;
-            if (class124.aByteArray1820 == null) i_805_ = -1;
-            else i_805_ = class124.aByteArray1820[i_804_];
-            int i_806_ = (class124.aShortArray1822 == null ? -1 : class124.aShortArray1822[i_804_]);
+            if (mesh.faceTexSpace == null) i_805_ = -1;
+            else i_805_ = mesh.faceTexSpace[i_804_];
+            int i_806_ = (mesh.faceTexture == null ? -1 : mesh.faceTexture[i_804_]);
             if (i_806_ != -1 && (i_787_ & 0x40) != 0) {
                 Class12 class12 = var_d.method3(i_806_ & 0xffff, -6662);
                 if (class12.aBoolean209) i_806_ = -1;
@@ -3062,14 +3062,14 @@ final class Class64_Sub1 extends Class64 {
                     fs_808_[2] = 0.0F;
                 } else {
                     i_805_ &= 0xff;
-                    byte i_810_ = class124.aByteArray1823[i_805_];
+                    byte i_810_ = mesh.texMappingType[i_805_];
                     if (i_810_ == 0) {
                         short i_811_ = aShortArray5317[i_804_];
                         short i_812_ = aShortArray5394[i_804_];
                         short i_813_ = aShortArray5364[i_804_];
-                        short i_814_ = class124.aShortArray1829[i_805_];
-                        short i_815_ = class124.aShortArray1849[i_805_];
-                        short i_816_ = class124.aShortArray1825[i_805_];
+                        short i_814_ = mesh.texSpaceDefA[i_805_];
+                        short i_815_ = mesh.texSpaceDefB[i_805_];
+                        short i_816_ = mesh.texSpaceDefC[i_805_];
                         float f = (float) anIntArray5356[i_814_];
                         float f_817_ = (float) anIntArray5332[i_814_];
                         float f_818_ = (float) anIntArray5312[i_814_];
@@ -3113,10 +3113,10 @@ final class Class64_Sub1 extends Class64 {
                         int i_845_ = class358.anIntArray4415[i_805_];
                         int i_846_ = class358.anIntArray4414[i_805_];
                         float[] fs_847_ = (class358.aFloatArrayArray4412[i_805_]);
-                        byte i_848_ = class124.aByteArray1853[i_805_];
-                        float f = ((float) (class124.anIntArray1867[i_805_]) / 256.0F);
+                        byte i_848_ = mesh.rexDirection[i_805_];
+                        float f = ((float) (mesh.texOffsetX[i_805_]) / 256.0F);
                         if (i_810_ == 1) {
-                            float f_849_ = ((float) (class124.anIntArray1844[i_805_]) / 1024.0F);
+                            float f_849_ = ((float) (mesh.texSpaceScaleZ[i_805_]) / 1024.0F);
                             Class246.method1885(i_846_, anIntArray5312[i_841_], i_848_, 8, anIntArray5356[i_841_], fs, anIntArray5332[i_841_], f, i_845_, i_844_, f_849_, fs_847_);
                             fs_807_[0] = fs[0];
                             fs_808_[0] = fs[1];
@@ -3139,8 +3139,8 @@ final class Class64_Sub1 extends Class64 {
                                 else if (fs_808_[0] - fs_808_[2] > f_850_) fs_808_[2] += f_849_;
                             }
                         } else if (i_810_ == 2) {
-                            float f_851_ = ((float) (class124.anIntArray1857[i_805_]) / 256.0F);
-                            float f_852_ = ((float) (class124.anIntArray1865[i_805_]) / 256.0F);
+                            float f_851_ = ((float) (mesh.texOffsetY[i_805_]) / 256.0F);
+                            float f_852_ = ((float) (mesh.texOffsetZ[i_805_]) / 256.0F);
                             int i_853_ = (anIntArray5356[i_842_] - anIntArray5356[i_841_]);
                             int i_854_ = (anIntArray5332[i_842_] - anIntArray5332[i_841_]);
                             int i_855_ = (anIntArray5312[i_842_] - anIntArray5312[i_841_]);
@@ -3150,9 +3150,9 @@ final class Class64_Sub1 extends Class64 {
                             int i_859_ = i_854_ * i_858_ - i_857_ * i_855_;
                             int i_860_ = i_855_ * i_856_ - i_858_ * i_853_;
                             int i_861_ = i_853_ * i_857_ - i_856_ * i_854_;
-                            float f_862_ = 64.0F / (float) (class124.anIntArray1859[i_805_]);
-                            float f_863_ = 64.0F / (float) (class124.anIntArray1816[i_805_]);
-                            float f_864_ = 64.0F / (float) (class124.anIntArray1844[i_805_]);
+                            float f_862_ = 64.0F / (float) (mesh.texSpaceScaleX[i_805_]);
+                            float f_863_ = 64.0F / (float) (mesh.texSpaceScaleY[i_805_]);
+                            float f_864_ = 64.0F / (float) (mesh.texSpaceScaleZ[i_805_]);
                             float f_865_ = (((float) i_859_ * fs_847_[0] + (float) i_860_ * fs_847_[1] + (float) i_861_ * fs_847_[2]) / f_862_);
                             float f_866_ = (((float) i_859_ * fs_847_[3] + (float) i_860_ * fs_847_[4] + (float) i_861_ * fs_847_[5]) / f_863_);
                             float f_867_ = (((float) i_859_ * fs_847_[6] + (float) i_860_ * fs_847_[7] + (float) i_861_ * fs_847_[8]) / f_864_);
@@ -3193,14 +3193,14 @@ final class Class64_Sub1 extends Class64 {
             }
         }
         if (!bool_802_) aFloatArrayArray5314 = aFloatArrayArray5345 = null;
-        if (class124.anIntArray1868 != null && (anInt5316 & 0x20) != 0) anIntArrayArray5334 = class124.method1100(true, -122);
-        if (class124.anIntArray1824 != null && (anInt5316 & 0x180) != 0) anIntArrayArray5330 = class124.method1094((byte) 30);
-        if (class124.aClass162Array1832 != null && (anInt5316 & 0x400) != 0) anIntArrayArray5379 = class124.method1093((byte) -75);
-        if (class124.aShortArray1822 != null) {
+        if (mesh.vertexLabel != null && (anInt5316 & 0x20) != 0) anIntArrayArray5334 = mesh.method1100(true, -122);
+        if (mesh.faceLabel != null && (anInt5316 & 0x180) != 0) anIntArrayArray5330 = mesh.method1094((byte) 30);
+        if (mesh.billboards != null && (anInt5316 & 0x400) != 0) anIntArrayArray5379 = mesh.method1093((byte) -75);
+        if (mesh.faceTexture != null) {
             aShortArray5388 = new short[anInt5351];
             boolean bool_869_ = false;
             for (int i_870_ = 0; i_870_ < anInt5351; i_870_++) {
-                short i_871_ = class124.aShortArray1822[i_870_];
+                short i_871_ = mesh.faceTexture[i_870_];
                 if (i_871_ != -1) {
                     Class12 class12 = aHa_Sub1_5353.aD4579.method3(i_871_, -6662);
                     if ((i_787_ & 0x40) == 0 || !class12.aBoolean209) {

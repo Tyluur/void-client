@@ -64,7 +64,7 @@ final class VarBitTypeListClient {
         }
         class146 = new Class146();
         if (i_4_ != -1) return null;
-        if (is != null) class146.method1191(i_4_ ^ ~0x800, new Class348_Sub49(is));
+        if (is != null) class146.method1191(i_4_ ^ ~0x800, new Packet(is));
         synchronized (aClass60_2594) {
             aClass60_2594.method582(class146, i, (byte) -105);
         }

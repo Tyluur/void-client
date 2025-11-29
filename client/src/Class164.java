@@ -87,7 +87,7 @@ final class Class164 {
             }
             TimedVarDomain.method1311(5139, Class348_Sub8.aHa6654);
             Class369.method3568(Class348_Sub8.aHa6654, 4);
-            Class348_Sub49.setStep(2, 1);
+            Packet.setStep(2, 1);
         }
         if (Class348_Sub42_Sub15.state == LoadState.CREATE_COLLISION_MAPS) {
             for (int i_7_ = 0; i_7_ < 4; i_7_++)
@@ -99,7 +99,7 @@ final class Class164 {
             Class186.ANIMATION_SKINS = Class369_Sub2.index(false, 1, (byte) -23, 1);
             Class95.CONFIGS = Class369_Sub2.index(false, 2, (byte) -23, 1);
             Class348_Sub35.INTERFACES = Class369_Sub2.index(false, 3, (byte) -23, 1);
-            Class129.SOUND_EFFECTS = Class369_Sub2.index(false, 4, (byte) -23, 1);
+            ModelParticleEmitter.SOUND_EFFECTS = Class369_Sub2.index(false, 4, (byte) -23, 1);
             Class367_Sub10.MAPS = Class369_Sub2.index(true, 5, (byte) -23, 1);
             Class59_Sub2_Sub1.MUSIC = Class369_Sub2.index(true, 6, (byte) -23, 1);
             aa_Sub3.MODELS = Class369_Sub2.index(false, 7, (byte) -23, 1);
@@ -142,7 +142,7 @@ final class Class164 {
         if (LoadState.PLAY_THEME_MUSIC == Class348_Sub42_Sub15.state) {
             if (Class345.anInt4270 == -1) Class345.anInt4270 = Class59_Sub2_Sub1.MUSIC.method417("scape main", 0);
             r_Sub1.method3290(56);
-            Class348_Sub49.setStep(2, 2);
+            Packet.setStep(2, 2);
         }
         if (LoadState.SETUP_LIB_PATH == Class348_Sub42_Sub15.state) Class30.method323(Class126.NATIVE_LIBRARIES, Class348_Sub23_Sub1.aClass297_8992, (byte) 95);
         if (LoadState.DOWNLOAD_STUFF == Class348_Sub42_Sub15.state) {

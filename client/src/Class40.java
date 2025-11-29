@@ -47,7 +47,7 @@ final class Class40 {
         if (i_3_ > 0) {
             Class346.aBoolean4275 = bool;
             Class348_Sub43.anInt7068 = 1;
-            Class124.aIndex_1848 = index;
+            Mesh.aIndex_1848 = index;
             Class318_Sub1_Sub4_Sub1.anInt10074 = i_1_;
             Class285.aClass348_Sub16_Sub3_4743 = null;
             Class318.anInt3971 = i_2_;

@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class162 {
+// Class162
+final class MeshBillboard {
     static int anInt2152;
     int anInt2153;
     static int anInt2154;
@@ -18,13 +19,13 @@ final class Class162 {
         if (VarBitTypeListClient.aClass279_2596 != null) VarBitTypeListClient.aClass279_2596.method2093(true);
     }
 
-    final Class162 method1266(int i, int i_0_) {
+    final MeshBillboard method1266(int i, int i_0_) {
         if (i != 5) method1266(82, -25);
         anInt2154++;
-        return new Class162(this.anInt2153, i_0_, this.anInt2156, this.anInt2158);
+        return new MeshBillboard(this.anInt2153, i_0_, this.anInt2156, this.anInt2158);
     }
 
-    Class162(int i, int i_1_, int i_2_, int i_3_) {
+    MeshBillboard(int i, int i_1_, int i_2_, int i_3_) {
         this.anInt2156 = i_2_;
         this.anInt2155 = i_1_;
         this.anInt2158 = i_3_;

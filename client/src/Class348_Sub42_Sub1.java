@@ -30,32 +30,32 @@ final class Class348_Sub42_Sub1 extends Class348_Sub42 {
         return class348_sub35.anInt6976;
     }
 
-    private final void method3167(int i, Class348_Sub49 class348_sub49, byte i_2_) {
+    private final void method3167(int i, Packet packet, byte i_2_) {
         if (i_2_ == -86) {
             anInt9489++;
             if (i == 249) {
-                int i_3_ = class348_sub49.readUnsignedByte(255);
+                int i_3_ = packet.readUnsignedByte(255);
                 if (aClass356_9494 == null) {
                     int i_4_ = EnumTypeList.method340(i_3_, (byte) 108);
                     aClass356_9494 = new Class356(i_4_);
                 }
                 for (int i_5_ = 0; i_5_ < i_3_; i_5_++) {
-                    boolean bool = class348_sub49.readUnsignedByte(i_2_ + 341) == 1;
-                    int i_6_ = class348_sub49.readMedium(-1);
+                    boolean bool = packet.readUnsignedByte(i_2_ + 341) == 1;
+                    int i_6_ = packet.readMedium(-1);
                     Node node;
-                    if (bool) node = new Class348_Sub50(class348_sub49.readString((byte) -39));
-                    else node = new Class348_Sub35(class348_sub49.readInt((byte) -126));
+                    if (bool) node = new Class348_Sub50(packet.readString((byte) -39));
+                    else node = new Class348_Sub35(packet.readInt((byte) -126));
                     aClass356_9494.method3483((byte) 29, i_6_, node);
                 }
             }
         }
     }
 
-    final void method3168(Class348_Sub49 class348_sub49, byte i) {
+    final void method3168(Packet packet, byte i) {
         for (; ; ) {
-            int i_7_ = class348_sub49.readUnsignedByte(255);
+            int i_7_ = packet.readUnsignedByte(255);
             if (i_7_ == 0) break;
-            method3167(i_7_, class348_sub49, (byte) -86);
+            method3167(i_7_, packet, (byte) -86);
         }
         anInt9497++;
         if (i >= -59) method3169(-56, -67);

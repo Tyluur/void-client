@@ -33,7 +33,7 @@ final class MSITypeList {
         class218 = new Class218();
         if (i != 31) return null;
         class218.aMSITypeList_2851 = this;
-        if (is != null) class218.method1597((byte) -114, new Class348_Sub49(is));
+        if (is != null) class218.method1597((byte) -114, new Packet(is));
         synchronized (aClass60_1963) {
             aClass60_1963.method582(class218, i_0_, (byte) -108);
         }

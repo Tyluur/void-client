@@ -159,7 +159,7 @@ abstract class Class64 {
         }
     }
 
-    abstract Class342[] method604();
+    abstract ModelParticleEffector[] method604();
 
     abstract void C(int i);
 
@@ -340,7 +340,7 @@ abstract class Class64 {
 
     abstract void a(int i);
 
-    abstract Class129[] method619();
+    abstract ModelParticleEmitter[] method619();
 
     abstract int V();
 

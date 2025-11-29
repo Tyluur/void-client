@@ -188,8 +188,8 @@ final class Class294 implements LoadingScreen {
                 try {
                     int i_5_ = Class51.renderer.method2320((byte) 103);
                     String string = Class51.renderer.method2318(-9324);
-                    if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432));
-                    Graphics graphics_6_ = Class342.anImage4249.getGraphics();
+                    if (ModelParticleEffector.anImage4249 == null) ModelParticleEffector.anImage4249 = (Class305.aCanvas3869.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432));
+                    Graphics graphics_6_ = ModelParticleEffector.anImage4249.getGraphics();
                     graphics_6_.clearRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
                     int i_7_ = anImage5030.getWidth(null);
                     int i_8_ = anImage5026.getWidth(null);
@@ -247,7 +247,7 @@ final class Class294 implements LoadingScreen {
                     graphics_6_.setFont(aFont5053);
                     graphics_6_.setColor(aColor5034);
                     graphics_6_.drawString(string, i_26_ + (anInt5023 + -aFontMetrics5024.stringWidth(string)) / 2, anInt5046 + (4 + anInt5036 / 2 + i_27_));
-                    graphics.drawImage(Class342.anImage4249, 0, 0, null);
+                    graphics.drawImage(ModelParticleEffector.anImage4249, 0, 0, null);
                 } catch (Exception exception) {
                     aBoolean5022 = true;
                 }

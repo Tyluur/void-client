@@ -213,16 +213,16 @@ final class Class235 {
             try {
                 anInt3058++;
                 if (i_9_ != -73) this.anInt3052 = 62;
-                Class129[] class129s = class64.method619();
-                Class342[] class342s = class64.method604();
-                if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081.aBoolean6470) && (class129s != null || class342s != null)) {
+                ModelParticleEmitter[] modelParticleEmitters = class64.method619();
+                ModelParticleEffector[] modelParticleEffectors = class64.method604();
+                if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081.aBoolean6470) && (modelParticleEmitters != null || modelParticleEffectors != null)) {
                     Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, this.anInt3063);
                     if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47);
                     if (class51 != null) this.aClass318_Sub10_3081 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true);
                 }
                 if (this.aClass318_Sub10_3081 == null) break;
                 class64.method620(class101);
-                if (bool) this.aClass318_Sub10_3081.method2536(var_ha, Class367_Sub11.anInt7396, class129s, class342s, false);
+                if (bool) this.aClass318_Sub10_3081.method2536(var_ha, Class367_Sub11.anInt7396, modelParticleEmitters, modelParticleEffectors, false);
                 else this.aClass318_Sub10_3081.method2540(Class367_Sub11.anInt7396);
                 this.aClass318_Sub10_3081.method2533(aByte3085, i_8_, i, i_10_, i_7_);
             } catch (RuntimeException runtimeexception) {

@@ -54,7 +54,7 @@ final class Class367_Sub6 extends Class367 {
     final void method3520(byte i) {
         if (i == 87) {
             aClass378_7340.method3957(null, (byte) -89);
-            this.aHa_Sub3_4479.method3849((byte) 47, 0, Class342.aClass70_4247);
+            this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
             this.aHa_Sub3_4479.method3849((byte) 47, 1, Class285_Sub2.aClass70_8503);
             this.aHa_Sub3_4479.method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
             this.aHa_Sub3_4479.method3852(9, true);
@@ -118,7 +118,7 @@ final class Class367_Sub6 extends Class367 {
 
     final void method3525(int i, boolean bool) {
         if (i != 15192) method3531(true);
-        this.aHa_Sub3_4479.method3849((byte) 47, 0, Class342.aClass70_4247);
+        this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
         this.aHa_Sub3_4479.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
         this.aHa_Sub3_4479.method3924(false, false, 2, Class285_Sub2.aClass70_8503, true);
         this.aHa_Sub3_4479.method3852(9, false);

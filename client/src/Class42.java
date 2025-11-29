@@ -125,79 +125,79 @@ final class Class42 {
         return class348_sub50.aString7211;
     }
 
-    private final void method377(int i, Class348_Sub49 class348_sub49, int i_7_) {
+    private final void method377(int i, Packet packet, int i_7_) {
         anInt571++;
         if (i != 1) {
-            if (i == 2) this.anInt605 = class348_sub49.readUnsignedShort(842397944);
-            else if (i == 3) this.aString597 = class348_sub49.readString((byte) 93);
+            if (i == 2) this.anInt605 = packet.readUnsignedShort(842397944);
+            else if (i == 3) this.aString597 = packet.readString((byte) 93);
             else if (i != 4) {
-                if (i == 5) this.anInt567 = class348_sub49.readMedium(-1);
-                else if (i == 6) this.anInt576 = class348_sub49.readUnsignedByte(255);
+                if (i == 5) this.anInt567 = packet.readMedium(-1);
+                else if (i == 6) this.anInt576 = packet.readUnsignedByte(255);
                 else if (i == 7) {
-                    int i_8_ = class348_sub49.readUnsignedByte(255);
+                    int i_8_ = packet.readUnsignedByte(255);
                     if ((0x1 & i_8_) == 0) this.aBoolean574 = false;
                     if ((i_8_ & 0x2) == 2) this.aBoolean569 = true;
-                } else if (i == 8) this.aBoolean599 = class348_sub49.readUnsignedByte(255) == 1;
+                } else if (i == 8) this.aBoolean599 = packet.readUnsignedByte(255) == 1;
                 else if (i == 9) {
-                    anInt590 = class348_sub49.readUnsignedShort(842397944);
+                    anInt590 = packet.readUnsignedShort(842397944);
                     if (anInt590 == 65535) anInt590 = -1;
-                    anInt606 = class348_sub49.readUnsignedShort(842397944);
+                    anInt606 = packet.readUnsignedShort(842397944);
                     if (anInt606 == 65535) anInt606 = -1;
-                    anInt585 = class348_sub49.readInt((byte) -126);
-                    anInt592 = class348_sub49.readInt((byte) -126);
-                } else if (i >= 10 && i <= 14) this.aStringArray577[-10 + i] = class348_sub49.readString((byte) -45);
+                    anInt585 = packet.readInt((byte) -126);
+                    anInt592 = packet.readInt((byte) -126);
+                } else if (i >= 10 && i <= 14) this.aStringArray577[-10 + i] = packet.readString((byte) -45);
                 else if (i == 15) {
-                    int i_9_ = class348_sub49.readUnsignedByte(255);
+                    int i_9_ = packet.readUnsignedByte(255);
                     this.anIntArray591 = new int[i_9_ * 2];
                     for (int i_10_ = 0; i_10_ < i_9_ * 2; i_10_++)
-                        this.anIntArray591[i_10_] = class348_sub49.readShort(13638);
-                    this.anInt582 = class348_sub49.readInt((byte) -126);
-                    int i_11_ = class348_sub49.readUnsignedByte(255);
+                        this.anIntArray591[i_10_] = packet.readShort(13638);
+                    this.anInt582 = packet.readInt((byte) -126);
+                    int i_11_ = packet.readUnsignedByte(255);
                     this.anIntArray572 = new int[i_11_];
                     for (int i_12_ = 0; (this.anIntArray572.length > i_12_); i_12_++)
-                        this.anIntArray572[i_12_] = class348_sub49.readInt((byte) -126);
+                        this.anIntArray572[i_12_] = packet.readInt((byte) -126);
                     this.aByteArray564 = new byte[i_9_];
                     for (int i_13_ = 0; i_9_ > i_13_; i_13_++)
-                        this.aByteArray564[i_13_] = class348_sub49.readByte(-107);
+                        this.aByteArray564[i_13_] = packet.readByte(-107);
                 } else if (i != 16) {
-                    if (i == 17) this.aString565 = class348_sub49.readString((byte) 117);
-                    else if (i == 18) anInt598 = class348_sub49.readUnsignedShort(842397944);
-                    else if (i == 19) this.anInt596 = class348_sub49.readUnsignedShort(842397944);
+                    if (i == 17) this.aString565 = packet.readString((byte) 117);
+                    else if (i == 18) anInt598 = packet.readUnsignedShort(842397944);
+                    else if (i == 19) this.anInt596 = packet.readUnsignedShort(842397944);
                     else if (i == 20) {
-                        anInt573 = class348_sub49.readUnsignedShort(842397944);
+                        anInt573 = packet.readUnsignedShort(842397944);
                         if (anInt573 == 65535) anInt573 = -1;
-                        anInt583 = class348_sub49.readUnsignedShort(842397944);
+                        anInt583 = packet.readUnsignedShort(842397944);
                         if (anInt583 == 65535) anInt583 = -1;
-                        anInt587 = class348_sub49.readInt((byte) -126);
-                        anInt586 = class348_sub49.readInt((byte) -126);
+                        anInt587 = packet.readInt((byte) -126);
+                        anInt586 = packet.readInt((byte) -126);
                     } else if (i != 21) {
-                        if (i == 22) this.anInt602 = class348_sub49.readInt((byte) -126);
+                        if (i == 22) this.anInt602 = packet.readInt((byte) -126);
                         else if (i == 23) {
-                            this.anInt584 = class348_sub49.readUnsignedByte(255);
-                            this.anInt575 = class348_sub49.readUnsignedByte(255);
-                            this.anInt601 = class348_sub49.readUnsignedByte(255);
+                            this.anInt584 = packet.readUnsignedByte(255);
+                            this.anInt575 = packet.readUnsignedByte(255);
+                            this.anInt601 = packet.readUnsignedByte(255);
                         } else if (i == 24) {
-                            this.anInt566 = class348_sub49.readShort(13638);
-                            this.anInt568 = class348_sub49.readShort(13638);
+                            this.anInt566 = packet.readShort(13638);
+                            this.anInt568 = packet.readShort(13638);
                         } else if (i == 249) {
-                            int i_14_ = class348_sub49.readUnsignedByte(255);
+                            int i_14_ = packet.readUnsignedByte(255);
                             if (aClass356_588 == null) {
                                 int i_15_ = EnumTypeList.method340(i_14_, (byte) 108);
                                 aClass356_588 = new Class356(i_15_);
                             }
                             for (int i_16_ = 0; (i_16_ < i_14_); i_16_++) {
-                                boolean bool = (class348_sub49.readUnsignedByte(255) == 1);
-                                int i_17_ = class348_sub49.readMedium(-1);
+                                boolean bool = (packet.readUnsignedByte(255) == 1);
+                                int i_17_ = packet.readMedium(-1);
                                 Node node;
-                                if (!bool) node = (new Class348_Sub35(class348_sub49.readInt((byte) -126)));
-                                else node = (new Class348_Sub50(class348_sub49.readString((byte) -41)));
+                                if (!bool) node = (new Class348_Sub35(packet.readInt((byte) -126)));
+                                else node = (new Class348_Sub50(packet.readString((byte) -41)));
                                 aClass356_588.method3483((byte) 60, i_17_, node);
                             }
                         }
-                    } else this.anInt604 = class348_sub49.readInt((byte) -126);
+                    } else this.anInt604 = packet.readInt((byte) -126);
                 } else this.aBoolean609 = false;
-            } else this.anInt580 = class348_sub49.readMedium(-1);
-        } else this.anInt578 = class348_sub49.readUnsignedShort(842397944);
+            } else this.anInt580 = packet.readMedium(-1);
+        } else this.anInt578 = packet.readUnsignedShort(842397944);
         if (i_7_ > -113) method375(null, true);
     }
 
@@ -210,13 +210,13 @@ final class Class42 {
         return class348_sub35.anInt6976;
     }
 
-    final void method379(Class348_Sub49 class348_sub49, int i) {
+    final void method379(Packet packet, int i) {
         if (i < 81) anInt590 = 17;
         anInt610++;
         for (; ; ) {
-            int i_19_ = class348_sub49.readUnsignedByte(255);
+            int i_19_ = packet.readUnsignedByte(255);
             if (i_19_ == 0) break;
-            method377(i_19_, class348_sub49, -121);
+            method377(i_19_, packet, -121);
         }
     }
 

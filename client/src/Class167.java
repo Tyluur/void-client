@@ -84,13 +84,13 @@ final class Class167 {
 
     static final boolean method1294(byte i, byte[] is) {
         anInt2199++;
-        Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
+        Packet packet = new Packet(is);
         if (i > -98) method1294((byte) 73, null);
-        int i_0_ = class348_sub49.readUnsignedByte(255);
+        int i_0_ = packet.readUnsignedByte(255);
         if (i_0_ != 2) return false;
-        boolean bool = class348_sub49.readUnsignedByte(255) == 1;
-        if (bool) Class59_Sub2_Sub2.method569((byte) -123, class348_sub49);
-        Class348_Sub42_Sub6.method3188((byte) -67, class348_sub49);
+        boolean bool = packet.readUnsignedByte(255) == 1;
+        if (bool) Class59_Sub2_Sub2.method569((byte) -123, packet);
+        Class348_Sub42_Sub6.method3188((byte) -67, packet);
         return true;
     }
 

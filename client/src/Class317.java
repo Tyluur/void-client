@@ -52,18 +52,18 @@ final class Class317 {
         return is;
     }
 
-    private Class317(Class348_Sub49 class348_sub49) {
+    private Class317(Packet packet) {
         aClass80Array3969 = new Class80[10];
         for (int i = 0; i < 10; i++) {
-            int i_10_ = class348_sub49.readUnsignedByte(255);
+            int i_10_ = packet.readUnsignedByte(255);
             if (i_10_ != 0) {
-                class348_sub49.anInt7197--;
+                packet.pos--;
                 aClass80Array3969[i] = new Class80();
-                aClass80Array3969[i].method807(class348_sub49);
+                aClass80Array3969[i].method807(packet);
             }
         }
-        anInt3967 = class348_sub49.readUnsignedShort(842397944);
-        anInt3968 = class348_sub49.readUnsignedShort(842397944);
+        anInt3967 = packet.readUnsignedShort(842397944);
+        anInt3968 = packet.readUnsignedShort(842397944);
     }
 
     private Class317() {
@@ -73,6 +73,6 @@ final class Class317 {
     static final Class317 method2372(Index index, int i, int i_11_) {
         byte[] is = index.method410(-1860, i, i_11_);
         if (is == null) return null;
-        return new Class317(new Class348_Sub49(is));
+        return new Class317(new Packet(is));
     }
 }

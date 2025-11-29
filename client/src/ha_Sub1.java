@@ -1275,8 +1275,8 @@ final class ha_Sub1 extends ha {
         method3713();
     }
 
-    final Class64 method3625(Class124 class124, int i, int i_366_, int i_367_, int i_368_) {
-        return new Class64_Sub1(this, class124, i, i_367_, i_368_, i_366_);
+    final Class64 method3625(Mesh mesh, int i, int i_366_, int i_367_, int i_368_) {
+        return new Class64_Sub1(this, mesh, i, i_367_, i_368_, i_366_);
     }
 
     final Interface13 method3624(int i, int i_369_) {

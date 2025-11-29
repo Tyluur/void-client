@@ -308,13 +308,13 @@ final class Class46 {
                 Class64 class64 = (Class64) Class358.aClass60_4417.method583(l, -90);
                 if (class64 == null || var_ha.method3667(class64.ua(), i) != 0) {
                     if (class64 != null) i = var_ha.method3679(i, class64.ua());
-                    Class124 class124 = Class300.method2277(0, (Class348_Sub40_Sub28.aIndex_9365), this.anInt753, -1);
-                    if (class124 == null) {
+                    Mesh mesh = Class300.method2277(0, (Class348_Sub40_Sub28.aIndex_9365), this.anInt753, -1);
+                    if (mesh == null) {
                         Class348_Sub42_Sub13.aBoolean9616 = true;
                         return null;
                     }
-                    if (class124.anInt1830 < 13) class124.method1092(2, 114);
-                    class64 = var_ha.method3625(class124, i, Class14_Sub3.anInt8628, 64, 768);
+                    if (mesh.version < 13) mesh.method1092(2, 114);
+                    class64 = var_ha.method3625(mesh, i, Class14_Sub3.anInt8628, 64, 768);
                     Class358.aClass60_4417.method582(class64, l, (byte) -125);
                 }
                 if (class17 != null) class64 = class17.method269(-101, class64, i_24_, i_22_, i, i_21_);
@@ -390,215 +390,215 @@ final class Class46 {
         if (i_30_ > -18) this.anInt779 = 13;
     }
 
-    private final Object[] method432(Class348_Sub49 class348_sub49, int i) {
+    private final Object[] method432(Packet packet, int i) {
         if (i != -1) return null;
         anInt691++;
-        int i_33_ = class348_sub49.readUnsignedByte(255);
+        int i_33_ = packet.readUnsignedByte(255);
         if (i_33_ == 0) return null;
         Object[] objects = new Object[i_33_];
         for (int i_34_ = 0; i_34_ < i_33_; i_34_++) {
-            int i_35_ = class348_sub49.readUnsignedByte(255);
+            int i_35_ = packet.readUnsignedByte(255);
             if (i_35_ != 0) {
-                if (i_35_ == 1) objects[i_34_] = class348_sub49.readString((byte) 124);
-            } else objects[i_34_] = new Integer(class348_sub49.readInt((byte) -126));
+                if (i_35_ == 1) objects[i_34_] = packet.readString((byte) 124);
+            } else objects[i_34_] = new Integer(packet.readInt((byte) -126));
         }
         this.aBoolean682 = true;
         return objects;
     }
 
-    final void method433(Class348_Sub49 class348_sub49, boolean bool) {
+    final void method433(Packet packet, boolean bool) {
         anInt743++;
-        int i = class348_sub49.readUnsignedByte(255);
+        int i = packet.readUnsignedByte(255);
         if (i == 255) i = -1;
-        this.anInt774 = class348_sub49.readUnsignedByte(255);
+        this.anInt774 = packet.readUnsignedByte(255);
         if ((0x80 & this.anInt774) != 0) {
             this.anInt774 &= 0x7f;
-            this.aString721 = class348_sub49.readString((byte) -72);
+            this.aString721 = packet.readString((byte) -72);
         }
-        this.anInt765 = class348_sub49.readUnsignedShort(842397944);
-        this.anInt788 = class348_sub49.readShort(13638);
-        this.anInt739 = class348_sub49.readShort(13638);
-        this.anInt842 = class348_sub49.readUnsignedShort(842397944);
-        this.anInt728 = class348_sub49.readUnsignedShort(842397944);
-        this.aByte778 = class348_sub49.readByte(-96);
-        this.aByte724 = class348_sub49.readByte(-87);
-        this.aByte817 = class348_sub49.readByte(-86);
-        this.aByte681 = class348_sub49.readByte(-108);
-        this.anInt834 = class348_sub49.readUnsignedShort(842397944);
+        this.anInt765 = packet.readUnsignedShort(842397944);
+        this.anInt788 = packet.readShort(13638);
+        this.anInt739 = packet.readShort(13638);
+        this.anInt842 = packet.readUnsignedShort(842397944);
+        this.anInt728 = packet.readUnsignedShort(842397944);
+        this.aByte778 = packet.readByte(-96);
+        this.aByte724 = packet.readByte(-87);
+        this.aByte817 = packet.readByte(-86);
+        this.aByte681 = packet.readByte(-108);
+        this.anInt834 = packet.readUnsignedShort(842397944);
         if (this.anInt834 == 65535) this.anInt834 = -1;
         else this.anInt834 = ((~0xffff & this.anInt830) + this.anInt834);
-        int i_36_ = class348_sub49.readUnsignedByte(255);
+        int i_36_ = packet.readUnsignedByte(255);
         if (i >= 0) this.aBoolean776 = (0x2 & i_36_) != 0;
         this.aBoolean813 = (0x1 & i_36_) != 0;
         if (this.anInt774 == 0) {
-            this.anInt698 = class348_sub49.readUnsignedShort(842397944);
-            this.anInt791 = class348_sub49.readUnsignedShort(842397944);
-            if (i < 0) this.aBoolean776 = class348_sub49.readUnsignedByte(255) == 1;
+            this.anInt698 = packet.readUnsignedShort(842397944);
+            this.anInt791 = packet.readUnsignedShort(842397944);
+            if (i < 0) this.aBoolean776 = packet.readUnsignedByte(255) == 1;
         }
         if (this.anInt774 == 5) {
-            this.anInt756 = class348_sub49.readInt((byte) -126);
-            this.anInt828 = class348_sub49.readUnsignedShort(842397944);
-            int i_37_ = class348_sub49.readUnsignedByte(255);
+            this.anInt756 = packet.readInt((byte) -126);
+            this.anInt828 = packet.readUnsignedShort(842397944);
+            int i_37_ = packet.readUnsignedByte(255);
             this.aBoolean697 = (i_37_ & 0x1) != 0;
             this.aBoolean745 = (0x2 & i_37_) != 0;
-            this.anInt696 = class348_sub49.readUnsignedByte(255);
-            this.anInt672 = class348_sub49.readUnsignedByte(255);
-            this.anInt809 = class348_sub49.readInt((byte) -126);
-            this.aBoolean790 = class348_sub49.readUnsignedByte(255) == 1;
-            this.aBoolean735 = class348_sub49.readUnsignedByte(255) == 1;
-            this.anInt749 = class348_sub49.readInt((byte) -126);
+            this.anInt696 = packet.readUnsignedByte(255);
+            this.anInt672 = packet.readUnsignedByte(255);
+            this.anInt809 = packet.readInt((byte) -126);
+            this.aBoolean790 = packet.readUnsignedByte(255) == 1;
+            this.aBoolean735 = packet.readUnsignedByte(255) == 1;
+            this.anInt749 = packet.readInt((byte) -126);
         }
         if (this.anInt774 == 6) {
             this.anInt770 = 1;
-            this.anInt753 = class348_sub49.readUnsignedShort(842397944);
+            this.anInt753 = packet.readUnsignedShort(842397944);
             if (this.anInt753 == 65535) this.anInt753 = -1;
-            int i_38_ = class348_sub49.readUnsignedByte(255);
+            int i_38_ = packet.readUnsignedByte(255);
             this.aBoolean784 = (0x2 & i_38_) == 2;
             boolean bool_39_ = (i_38_ & 0x1) == 1;
             this.aBoolean689 = (i_38_ & 0x4) == 4;
             this.aBoolean754 = (i_38_ & 0x8) == 8;
             if (bool_39_) {
-                this.anInt688 = class348_sub49.readShort(13638);
-                this.anInt799 = class348_sub49.readShort(13638);
-                this.anInt757 = class348_sub49.readUnsignedShort(842397944);
-                this.anInt675 = class348_sub49.readUnsignedShort(842397944);
-                this.anInt717 = class348_sub49.readUnsignedShort(842397944);
-                this.anInt716 = class348_sub49.readUnsignedShort(842397944);
+                this.anInt688 = packet.readShort(13638);
+                this.anInt799 = packet.readShort(13638);
+                this.anInt757 = packet.readUnsignedShort(842397944);
+                this.anInt675 = packet.readUnsignedShort(842397944);
+                this.anInt717 = packet.readUnsignedShort(842397944);
+                this.anInt716 = packet.readUnsignedShort(842397944);
             } else if (this.aBoolean784) {
-                this.anInt688 = class348_sub49.readShort(13638);
-                this.anInt799 = class348_sub49.readShort(13638);
-                this.anInt787 = class348_sub49.readShort(13638);
-                this.anInt757 = class348_sub49.readUnsignedShort(842397944);
-                this.anInt675 = class348_sub49.readUnsignedShort(842397944);
-                this.anInt717 = class348_sub49.readUnsignedShort(842397944);
-                this.anInt716 = class348_sub49.readShort(13638);
+                this.anInt688 = packet.readShort(13638);
+                this.anInt799 = packet.readShort(13638);
+                this.anInt787 = packet.readShort(13638);
+                this.anInt757 = packet.readUnsignedShort(842397944);
+                this.anInt675 = packet.readUnsignedShort(842397944);
+                this.anInt717 = packet.readUnsignedShort(842397944);
+                this.anInt716 = packet.readShort(13638);
             }
-            this.anInt699 = class348_sub49.readUnsignedShort(842397944);
+            this.anInt699 = packet.readUnsignedShort(842397944);
             if (this.anInt699 == 65535) this.anInt699 = -1;
-            if (this.aByte778 != 0) this.anInt796 = class348_sub49.readUnsignedShort(842397944);
-            if (this.aByte724 != 0) this.anInt826 = class348_sub49.readUnsignedShort(842397944);
+            if (this.aByte778 != 0) this.anInt796 = packet.readUnsignedShort(842397944);
+            if (this.aByte724 != 0) this.anInt826 = packet.readUnsignedShort(842397944);
         }
         if (this.anInt774 == 4) {
-            this.anInt702 = class348_sub49.readUnsignedShort(842397944);
+            this.anInt702 = packet.readUnsignedShort(842397944);
             if (this.anInt702 == 65535) this.anInt702 = -1;
-            this.aString792 = class348_sub49.readString((byte) 111);
-            this.anInt673 = class348_sub49.readUnsignedByte(255);
-            this.anInt762 = class348_sub49.readUnsignedByte(255);
-            this.anInt700 = class348_sub49.readUnsignedByte(255);
-            this.aBoolean769 = class348_sub49.readUnsignedByte(255) == 1;
-            this.anInt749 = class348_sub49.readInt((byte) -126);
-            this.anInt696 = class348_sub49.readUnsignedByte(255);
-            if (i >= 0) this.anInt773 = class348_sub49.readUnsignedByte(255);
+            this.aString792 = packet.readString((byte) 111);
+            this.anInt673 = packet.readUnsignedByte(255);
+            this.anInt762 = packet.readUnsignedByte(255);
+            this.anInt700 = packet.readUnsignedByte(255);
+            this.aBoolean769 = packet.readUnsignedByte(255) == 1;
+            this.anInt749 = packet.readInt((byte) -126);
+            this.anInt696 = packet.readUnsignedByte(255);
+            if (i >= 0) this.anInt773 = packet.readUnsignedByte(255);
         }
         if (this.anInt774 == 3) {
-            this.anInt749 = class348_sub49.readInt((byte) -126);
-            this.aBoolean810 = class348_sub49.readUnsignedByte(255) == 1;
-            this.anInt696 = class348_sub49.readUnsignedByte(255);
+            this.anInt749 = packet.readInt((byte) -126);
+            this.aBoolean810 = packet.readUnsignedByte(255) == 1;
+            this.anInt696 = packet.readUnsignedByte(255);
         }
         if (this.anInt774 == 9) {
-            this.anInt690 = class348_sub49.readUnsignedByte(255);
-            this.anInt749 = class348_sub49.readInt((byte) -126);
-            this.aBoolean744 = class348_sub49.readUnsignedByte(255) == 1;
+            this.anInt690 = packet.readUnsignedByte(255);
+            this.anInt749 = packet.readInt((byte) -126);
+            this.aBoolean744 = packet.readUnsignedByte(255) == 1;
         }
-        int i_40_ = class348_sub49.readMedium(-1);
-        int i_41_ = class348_sub49.readUnsignedByte(255);
+        int i_40_ = packet.readMedium(-1);
+        int i_41_ = packet.readUnsignedByte(255);
         if (i_41_ != 0) {
             this.aByteArray832 = new byte[11];
             this.aByteArray746 = new byte[11];
             this.anIntArray707 = new int[11];
-            for (/**/; i_41_ != 0; i_41_ = class348_sub49.readUnsignedByte(255)) {
+            for (/**/; i_41_ != 0; i_41_ = packet.readUnsignedByte(255)) {
                 int i_42_ = -1 + (i_41_ >> 4);
-                i_41_ = i_41_ << 8 | class348_sub49.readUnsignedByte(255);
+                i_41_ = i_41_ << 8 | packet.readUnsignedByte(255);
                 i_41_ &= 0xfff;
                 if (i_41_ == 4095) i_41_ = -1;
-                byte i_43_ = class348_sub49.readByte(-87);
+                byte i_43_ = packet.readByte(-87);
                 if (i_43_ != 0) this.aBoolean676 = true;
-                byte i_44_ = class348_sub49.readByte(-102);
+                byte i_44_ = packet.readByte(-102);
                 this.anIntArray707[i_42_] = i_41_;
                 this.aByteArray746[i_42_] = i_43_;
                 this.aByteArray832[i_42_] = i_44_;
             }
         }
-        this.aString752 = class348_sub49.readString((byte) 82);
-        int i_45_ = class348_sub49.readUnsignedByte(255);
+        this.aString752 = packet.readString((byte) 82);
+        int i_45_ = packet.readUnsignedByte(255);
         int i_46_ = 0xf & i_45_;
         if (i_46_ > 0) {
             this.aStringArray833 = new String[i_46_];
             for (int i_47_ = 0; i_47_ < i_46_; i_47_++)
-                this.aStringArray833[i_47_] = class348_sub49.readString((byte) -68);
+                this.aStringArray833[i_47_] = packet.readString((byte) -68);
         }
         int i_48_ = i_45_ >> 4;
         if (i_48_ > 0) {
-            int i_49_ = class348_sub49.readUnsignedByte(255);
+            int i_49_ = packet.readUnsignedByte(255);
             this.anIntArray706 = new int[1 + i_49_];
             for (int i_50_ = 0; i_50_ < this.anIntArray706.length; i_50_++)
                 this.anIntArray706[i_50_] = -1;
-            this.anIntArray706[i_49_] = class348_sub49.readUnsignedShort(842397944);
+            this.anIntArray706[i_49_] = packet.readUnsignedShort(842397944);
         }
         if (i_48_ > 1) {
-            int i_51_ = class348_sub49.readUnsignedByte(255);
-            this.anIntArray706[i_51_] = class348_sub49.readUnsignedShort(842397944);
+            int i_51_ = packet.readUnsignedByte(255);
+            this.anIntArray706[i_51_] = packet.readUnsignedShort(842397944);
         }
-        this.aString816 = class348_sub49.readString((byte) 95);
+        this.aString816 = packet.readString((byte) 95);
         if (this.aString816.equals("")) this.aString816 = null;
-        this.anInt729 = class348_sub49.readUnsignedByte(255);
-        this.anInt703 = class348_sub49.readUnsignedByte(255);
-        this.anInt797 = class348_sub49.readUnsignedByte(255);
-        this.aString780 = class348_sub49.readString((byte) -87);
+        this.anInt729 = packet.readUnsignedByte(255);
+        this.anInt703 = packet.readUnsignedByte(255);
+        this.anInt797 = packet.readUnsignedByte(255);
+        this.aString780 = packet.readString((byte) -87);
         int i_52_ = -1;
         if (Class348_Sub40_Sub5.method3060(i_40_, bool) != 0) {
-            i_52_ = class348_sub49.readUnsignedShort(842397944);
-            this.anInt824 = class348_sub49.readUnsignedShort(842397944);
+            i_52_ = packet.readUnsignedShort(842397944);
+            this.anInt824 = packet.readUnsignedShort(842397944);
             if (i_52_ == 65535) i_52_ = -1;
             if (this.anInt824 == 65535) this.anInt824 = -1;
-            this.anInt695 = class348_sub49.readUnsignedShort(842397944);
+            this.anInt695 = packet.readUnsignedShort(842397944);
             if (this.anInt695 == 65535) this.anInt695 = -1;
         }
         if (i >= 0) {
-            this.anInt719 = class348_sub49.readUnsignedShort(842397944);
+            this.anInt719 = packet.readUnsignedShort(842397944);
             if (this.anInt719 == 65535) this.anInt719 = -1;
         }
         this.aClass348_Sub44_748 = new Class348_Sub44(i_40_, i_52_);
         if (i >= 0) {
-            int i_53_ = class348_sub49.readUnsignedByte(255);
+            int i_53_ = packet.readUnsignedByte(255);
             for (int i_54_ = 0; i_53_ > i_54_; i_54_++) {
-                int i_55_ = class348_sub49.readMedium(-1);
-                int i_56_ = class348_sub49.readInt((byte) -126);
+                int i_55_ = packet.readMedium(-1);
+                int i_56_ = packet.readInt((byte) -126);
                 aClass356_711.method3483((byte) 120, i_55_, new Class348_Sub35(i_56_));
             }
-            int i_57_ = class348_sub49.readUnsignedByte(255);
+            int i_57_ = packet.readUnsignedByte(255);
             for (int i_58_ = 0; i_58_ < i_57_; i_58_++) {
-                int i_59_ = class348_sub49.readMedium(-1);
-                String string = class348_sub49.method3371(-13487);
+                int i_59_ = packet.readMedium(-1);
+                String string = packet.method3371(-13487);
                 aClass356_711.method3483((byte) 119, i_59_, new Class348_Sub50(string));
             }
         }
-        this.anObjectArray815 = method432(class348_sub49, -1);
-        this.anObjectArray811 = method432(class348_sub49, -1);
-        this.anObjectArray683 = method432(class348_sub49, -1);
-        this.anObjectArray680 = method432(class348_sub49, -1);
-        this.anObjectArray714 = method432(class348_sub49, -1);
-        this.anObjectArray777 = method432(class348_sub49, -1);
-        this.anObjectArray751 = method432(class348_sub49, -1);
-        this.anObjectArray671 = method432(class348_sub49, -1);
-        this.anObjectArray764 = method432(class348_sub49, -1);
-        this.anObjectArray741 = method432(class348_sub49, -1);
-        if (i >= 0) this.anObjectArray679 = method432(class348_sub49, -1);
-        this.anObjectArray839 = method432(class348_sub49, -1);
-        this.anObjectArray763 = method432(class348_sub49, -1);
-        this.anObjectArray785 = method432(class348_sub49, -1);
-        this.anObjectArray742 = method432(class348_sub49, -1);
-        this.anObjectArray805 = method432(class348_sub49, -1);
-        this.anObjectArray823 = method432(class348_sub49, -1);
-        this.anObjectArray692 = method432(class348_sub49, -1);
-        this.anObjectArray803 = method432(class348_sub49, -1);
-        this.anObjectArray685 = method432(class348_sub49, -1);
-        this.anObjectArray708 = method432(class348_sub49, -1);
-        this.anIntArray686 = method441(!bool, class348_sub49);
-        this.anIntArray771 = method441(!bool, class348_sub49);
-        this.anIntArray731 = method441(!bool, class348_sub49);
-        this.anIntArray818 = method441(false, class348_sub49);
-        this.anIntArray831 = method441(false, class348_sub49);
+        this.anObjectArray815 = method432(packet, -1);
+        this.anObjectArray811 = method432(packet, -1);
+        this.anObjectArray683 = method432(packet, -1);
+        this.anObjectArray680 = method432(packet, -1);
+        this.anObjectArray714 = method432(packet, -1);
+        this.anObjectArray777 = method432(packet, -1);
+        this.anObjectArray751 = method432(packet, -1);
+        this.anObjectArray671 = method432(packet, -1);
+        this.anObjectArray764 = method432(packet, -1);
+        this.anObjectArray741 = method432(packet, -1);
+        if (i >= 0) this.anObjectArray679 = method432(packet, -1);
+        this.anObjectArray839 = method432(packet, -1);
+        this.anObjectArray763 = method432(packet, -1);
+        this.anObjectArray785 = method432(packet, -1);
+        this.anObjectArray742 = method432(packet, -1);
+        this.anObjectArray805 = method432(packet, -1);
+        this.anObjectArray823 = method432(packet, -1);
+        this.anObjectArray692 = method432(packet, -1);
+        this.anObjectArray803 = method432(packet, -1);
+        this.anObjectArray685 = method432(packet, -1);
+        this.anObjectArray708 = method432(packet, -1);
+        this.anIntArray686 = method441(!bool, packet);
+        this.anIntArray771 = method441(!bool, packet);
+        this.anIntArray731 = method441(!bool, packet);
+        this.anIntArray818 = method441(false, packet);
+        this.anIntArray831 = method441(false, packet);
     }
 
     final void method434(boolean bool) {
@@ -669,11 +669,11 @@ final class Class46 {
                 if (i != -20154) method438(15, -50, null);
                 anInt718++;
                 class64.method620(class101);
-                Class129[] class129s = class64.method619();
-                Class342[] class342s = class64.method604();
-                if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740.aBoolean6470) && (class129s != null || class342s != null)) this.aClass318_Sub10_740 = Class318_Sub10.method2526(i_63_, false);
+                ModelParticleEmitter[] modelParticleEmitters = class64.method619();
+                ModelParticleEffector[] modelParticleEffectors = class64.method604();
+                if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740.aBoolean6470) && (modelParticleEmitters != null || modelParticleEffectors != null)) this.aClass318_Sub10_740 = Class318_Sub10.method2526(i_63_, false);
                 if (this.aClass318_Sub10_740 == null) break;
-                this.aClass318_Sub10_740.method2536(var_ha, i_63_, class129s, class342s, false);
+                this.aClass318_Sub10_740.method2536(var_ha, i_63_, modelParticleEmitters, modelParticleEffectors, false);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (class64 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_63_ + ',' + (class101 != null ? "{...}" : "null") + ')'));
             }
@@ -720,14 +720,14 @@ final class Class46 {
         }
     }
 
-    private final int[] method441(boolean bool, Class348_Sub49 class348_sub49) {
+    private final int[] method441(boolean bool, Packet packet) {
         anInt722++;
-        int i = class348_sub49.readUnsignedByte(255);
+        int i = packet.readUnsignedByte(255);
         if (bool != false) return null;
         if (i == 0) return null;
         int[] is = new int[i];
         for (int i_68_ = 0; i_68_ < i; i_68_++)
-            is[i_68_] = class348_sub49.readInt((byte) -126);
+            is[i_68_] = packet.readInt((byte) -126);
         return is;
     }
 

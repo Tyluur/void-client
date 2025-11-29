@@ -30,7 +30,7 @@ abstract class Class59 {
             aShortArray1082[i_0_] = (short) i_0_;
         for (int i_1_ = 0; i_1_ < 255; i_1_++) {
             int i_2_ = -i_1_ + 255;
-            int i_3_ = Class124.method1097((byte) 106, i_2_, random);
+            int i_3_ = Mesh.method1097((byte) 106, i_2_, random);
             short i_4_ = aShortArray1082[i_3_];
             aShortArray1082[i_3_] = aShortArray1082[i_2_];
             aShortArray1082[i_2_] = aShortArray1082[256 + i_2_] = i_4_;

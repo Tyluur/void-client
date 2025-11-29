@@ -102,7 +102,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
     static final boolean isBuildingMap(int i, byte i_6_) {
         anInt9994++;
         if (i_6_ >= -52) return true;
-        return i == Class348_Sub49.STEP_LOGIN_SCREEN_MAP_BUILD || i == Class348_Sub49.STEP_LOBBY_SCREEN_MAP_BUILD || i == Class348_Sub49.STEP_GAME_SCREEN;
+        return i == Packet.STEP_LOGIN_SCREEN_MAP_BUILD || i == Packet.STEP_LOBBY_SCREEN_MAP_BUILD || i == Packet.STEP_GAME_SCREEN;
     }
 
     final void method2392(boolean bool) {

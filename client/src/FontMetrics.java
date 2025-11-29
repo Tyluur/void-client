@@ -353,7 +353,7 @@ final class FontMetrics {
     }
 
     FontMetrics(byte[] data) {
-        Class348_Sub49 buffer = new Class348_Sub49(data);
+        Packet buffer = new Packet(data);
         int end = buffer.readUnsignedByte(255);
         if (end != 0) throw new RuntimeException("");
         boolean kerning = buffer.readUnsignedByte(255) == 1;

@@ -182,7 +182,7 @@ final class Class104 {
                     int i_44_ = i_42_ << anInt1613;
                     int i_45_ = 1 + i_42_ << anInt1613;
                     Class348_Sub49_Sub1 class348_sub49_sub1 = aHa_Sub2_1616.aClass348_Sub49_Sub1_7798;
-                    class348_sub49_sub1.anInt7197 = 0;
+                    class348_sub49_sub1.pos = 0;
                     for (int i_46_ = i_40_; i_41_ > i_46_; i_46_++) {
                         if (-i_35_ <= -i_36_ + i_46_ && -i_36_ + i_46_ <= i_35_) {
                             int i_47_ = i_44_ + i_46_ * aS_Sub2_1622.anInt4587;
@@ -298,7 +298,7 @@ final class Class104 {
         anInt1611++;
         Class285.aClass348_Sub16_Sub3_4743 = null;
         Class348_Sub43.anInt7068 = i;
-        Class124.aIndex_1848 = null;
+        Mesh.aIndex_1848 = null;
     }
 
     Class104(ha_Sub2 var_ha_Sub2, s_Sub2 var_s_Sub2) {

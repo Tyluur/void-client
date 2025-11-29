@@ -74,7 +74,7 @@ final class CursorTypeList {
         }
         class222 = new Class222();
         class222.aCursorTypeList_2886 = this;
-        if (is != null) class222.method1611(new Class348_Sub49(is), false);
+        if (is != null) class222.method1611(new Packet(is), false);
         synchronized (aClass60_2185) {
             aClass60_2185.method582(class222, i_1_, (byte) -116);
         }

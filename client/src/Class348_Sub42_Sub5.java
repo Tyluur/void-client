@@ -244,20 +244,20 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
         aClass348_Sub40_9527.anInt7036 = 1;
     }
 
-    Class348_Sub42_Sub5(Class348_Sub49 class348_sub49) {
-        int i = class348_sub49.readUnsignedByte(255);
+    Class348_Sub42_Sub5(Packet packet) {
+        int i = packet.readUnsignedByte(255);
         int i_56_ = 0;
         int i_57_ = 0;
         int[][] is = new int[i][];
         aClass348_Sub40Array9520 = new Class348_Sub40[i];
         for (int i_58_ = 0; i_58_ < i; i_58_++) {
-            Class348_Sub40 class348_sub40 = Class348_Sub37.method3031(125, class348_sub49);
+            Class348_Sub40 class348_sub40 = Class348_Sub37.method3031(125, packet);
             if (class348_sub40.method3037(-121) >= 0) i_56_++;
             if (class348_sub40.method3043(-1) >= 0) i_57_++;
             int i_59_ = (class348_sub40.aClass348_Sub40Array7031).length;
             is[i_58_] = new int[i_59_];
             for (int i_60_ = 0; i_60_ < i_59_; i_60_++)
-                is[i_58_][i_60_] = class348_sub49.readUnsignedByte(255);
+                is[i_58_][i_60_] = packet.readUnsignedByte(255);
             aClass348_Sub40Array9520[i_58_] = class348_sub40;
         }
         anIntArray9524 = new int[i_56_];
@@ -275,9 +275,9 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
             if (i_65_ > 0) anIntArray9523[i_57_++] = i_65_;
             is[i_61_] = null;
         }
-        aClass348_Sub40_9521 = aClass348_Sub40Array9520[class348_sub49.readUnsignedByte(255)];
-        aClass348_Sub40_9527 = aClass348_Sub40Array9520[class348_sub49.readUnsignedByte(255)];
-        aClass348_Sub40_9528 = aClass348_Sub40Array9520[class348_sub49.readUnsignedByte(255)];
+        aClass348_Sub40_9521 = aClass348_Sub40Array9520[packet.readUnsignedByte(255)];
+        aClass348_Sub40_9527 = aClass348_Sub40Array9520[packet.readUnsignedByte(255)];
+        aClass348_Sub40_9528 = aClass348_Sub40Array9520[packet.readUnsignedByte(255)];
         Object object = null;
     }
 

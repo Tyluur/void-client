@@ -26,27 +26,27 @@ final class Class92 {
                 if (Class348_Sub50.aByteArrayArray7212[i_1_] != null) {
                     int i_2_ = -1;
                     for (int i_3_ = 0; i_3_ < Class27.anInt388; i_3_++) {
-                        if (Class342.anIntArray4250[i_3_] == Class348_Sub23_Sub3.mapRegionIds[i_1_]) {
+                        if (ModelParticleEffector.anIntArray4250[i_3_] == Class348_Sub23_Sub3.mapRegionIds[i_1_]) {
                             i_2_ = i_3_;
                             break;
                         }
                     }
                     if (i_2_ == -1) {
-                        Class342.anIntArray4250[Class27.anInt388] = Class348_Sub23_Sub3.mapRegionIds[i_1_];
+                        ModelParticleEffector.anIntArray4250[Class27.anInt388] = Class348_Sub23_Sub3.mapRegionIds[i_1_];
                         i_2_ = Class27.anInt388++;
                     }
-                    Class348_Sub49 class348_sub49 = new Class348_Sub49(Class348_Sub50.aByteArrayArray7212[i_1_]);
+                    Packet packet = new Packet(Class348_Sub50.aByteArrayArray7212[i_1_]);
                     int count = 0;
-                    while (class348_sub49.anInt7197 < Class348_Sub50.aByteArrayArray7212[i_1_].length) {
+                    while (packet.pos < Class348_Sub50.aByteArrayArray7212[i_1_].length) {
                         if (count >= 511 || IDKTypeList.anInt2057 >= 1023) break;
                         int i_5_ = i_2_ | count++ << 6;
-                        int packed = class348_sub49.readUnsignedShort(842397944);
+                        int packed = packet.readUnsignedShort(842397944);
                         int i_7_ = packed >> 14;
                         int i_8_ = 0x3f & packed >> 7;
                         int i_9_ = packed & 0x3f;
                         int x = (i_8_ + (-za_Sub2.regionTileX + (Class348_Sub23_Sub3.mapRegionIds[i_1_] >> 8) * 64));
                         int y = (-Class90.regionTileY + (64 * (0xff & (Class348_Sub23_Sub3.mapRegionIds[i_1_])) - -i_9_));
-                        NPCDefinition definition = (Class189.npcTypeList.method2079(class348_sub49.readUnsignedShort(842397944), -1));
+                        NPCDefinition definition = (Class189.npcTypeList.method2079(packet.readUnsignedShort(842397944), -1));
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_5_, -6008));
                         if (class348_sub22 == null && (definition.walkMask & 0x1) > 0 && i_7_ == Class167.anInt2204 && x >= 0 && (Class367_Sub4.mapLength > x - -definition.size) && y >= 0 && (Class348_Sub40_Sub3.mapWidth > y + definition.size)) {
                             Npc npc = new Npc();

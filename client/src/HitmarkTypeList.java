@@ -212,7 +212,7 @@ final class HitmarkTypeList {
         }
         class31 = new Class31();
         class31.aHitmarkTypeList_438 = this;
-        if (is != null) class31.method332(i ^ ~0x55, new Class348_Sub49(is));
+        if (is != null) class31.method332(i ^ ~0x55, new Packet(is));
         synchronized (aClass60_2875) {
             aClass60_2875.method582(class31, i_15_, (byte) -109);
         }

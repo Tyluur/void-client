@@ -24,7 +24,7 @@ final class QuickChatCatTypeList {
         if (i_0_ < 32768) is = aIndex_2961.method410(-1860, 0, i_0_);
         else is = aIndex_2965.method410(-1860, 0, 0x7fff & i_0_);
         class348_sub42_sub11 = new Class348_Sub42_Sub11();
-        if (is != null) class348_sub42_sub11.method3221(117, new Class348_Sub49(is));
+        if (is != null) class348_sub42_sub11.method3221(117, new Packet(is));
         if (i_0_ >= 32768) class348_sub42_sub11.method3224((byte) 104);
         if (i != 0) aIndex_2965 = null;
         aClass60_2960.method582(class348_sub42_sub11, i_0_, (byte) -123);

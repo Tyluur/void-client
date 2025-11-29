@@ -160,14 +160,14 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
         return (anInt7432 & 0x1) != 0;
     }
 
-    static final String method3607(int i, Class348_Sub49 class348_sub49, int i_10_) {
+    static final String method3607(int i, Packet packet, int i_10_) {
         int i_11_ = 17 % ((9 - i_10_) / 59);
         anInt7451++;
         try {
-            int i_12_ = class348_sub49.readSmart(-122);
+            int i_12_ = packet.readSmart(-122);
             if (i < i_12_) i_12_ = i;
             byte[] is = new byte[i_12_];
-            class348_sub49.anInt7197 += (Class64.aClass296_1131.method2226(is, class348_sub49.anInt7197, class348_sub49.aByteArray7154, i_12_, -1, 0));
+            packet.pos += (Class64.aClass296_1131.method2226(is, packet.pos, packet.aByteArray7154, i_12_, -1, 0));
             String string = Class367_Sub8.method3546(is, 0, i_12_, 0);
             return string;
         } catch (Exception exception) {

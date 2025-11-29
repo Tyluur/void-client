@@ -60,11 +60,11 @@ final class RuntimeException_Sub1 extends RuntimeException {
 
     static final void method4012(byte[] is, byte i) {
         anInt4605++;
-        Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
+        Packet packet = new Packet(is);
         int i_7_ = -91 % ((i - -51) / 42);
         boolean bool = false;
         for (; ; ) {
-            int i_8_ = class348_sub49.readUnsignedByte(255);
+            int i_8_ = packet.readUnsignedByte(255);
             if (i_8_ == 0) break;
             if (i_8_ == 1) {
                 if (Class118.anIntArray1786 == null) {
@@ -73,17 +73,17 @@ final class RuntimeException_Sub1 extends RuntimeException {
                     LoadingScreenOpFactory.anIntArray1636 = new int[4];
                 }
                 for (int i_9_ = 0; i_9_ < Class118.anIntArray1786.length; i_9_++) {
-                    Class118.anIntArray1786[i_9_] = class348_sub49.readShort(13638);
-                    LoadingScreenOpFactory.anIntArray1636[i_9_] = class348_sub49.readShort(13638);
+                    Class118.anIntArray1786[i_9_] = packet.readShort(13638);
+                    LoadingScreenOpFactory.anIntArray1636[i_9_] = packet.readShort(13638);
                 }
                 bool = true;
             } else if (i_8_ != 2) {
                 if (i_8_ == 3) {
-                    Class132.anInt1905 = class348_sub49.readUnsignedByte(255);
+                    Class132.anInt1905 = packet.readUnsignedByte(255);
                     Class118.anIntArray1786 = new int[Class132.anInt1905];
                     LoadingScreenOpFactory.anIntArray1636 = new int[Class132.anInt1905];
                 }
-            } else Class348_Sub31.anInt6923 = class348_sub49.readUnsignedShort(842397944);
+            } else Class348_Sub31.anInt6923 = packet.readUnsignedShort(842397944);
         }
         if (!bool) {
             if (Class118.anIntArray1786 == null) {

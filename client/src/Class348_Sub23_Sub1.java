@@ -57,10 +57,10 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
         return 0;
     }
 
-    static final Class50_Sub3 method2970(int i, Class348_Sub49 class348_sub49) {
+    static final Class50_Sub3 method2970(int i, Packet packet) {
         anInt8998++;
         if (i != 2) method2972(null, -114, 15);
-        return new Class50_Sub3(class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(i ^ 0x3544), class348_sub49.readShort(13638), class348_sub49.readShort(i + 13636), class348_sub49.readShort(13638), class348_sub49.readShort(13638), class348_sub49.readMedium(-1), class348_sub49.readUnsignedByte(255));
+        return new Class50_Sub3(packet.readShort(13638), packet.readShort(i + 13636), packet.readShort(13638), packet.readShort(i ^ 0x3544), packet.readShort(13638), packet.readShort(i + 13636), packet.readShort(13638), packet.readShort(13638), packet.readMedium(-1), packet.readUnsignedByte(255));
     }
 
     final Class348_Sub16_Sub2 method2971(int i) {

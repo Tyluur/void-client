@@ -36,18 +36,18 @@ final class Class38 {
         return null;
     }
 
-    private final void method361(int i, Class348_Sub49 class348_sub49, int i_2_) {
+    private final void method361(int i, Packet packet, int i_2_) {
         if (i != -6617) method363(95);
         anInt497++;
-        if (i_2_ == 1) this.anInt501 = class348_sub49.readUnsignedShort(842397944);
+        if (i_2_ == 1) this.anInt501 = packet.readUnsignedShort(842397944);
         else if (i_2_ == 2) this.aBoolean507 = true;
         else if (i_2_ == 3) {
-            this.anInt499 = class348_sub49.readShort(13638);
-            this.anInt502 = class348_sub49.readShort(13638);
-            this.anInt508 = class348_sub49.readShort(13638);
-        } else if (i_2_ == 4) this.anInt498 = class348_sub49.readUnsignedByte(255);
-        else if (i_2_ == 5) this.anInt504 = class348_sub49.readUnsignedShort(842397944);
-        else if (i_2_ == 6) this.anInt503 = class348_sub49.readMedium(-1);
+            this.anInt499 = packet.readShort(13638);
+            this.anInt502 = packet.readShort(13638);
+            this.anInt508 = packet.readShort(13638);
+        } else if (i_2_ == 4) this.anInt498 = packet.readUnsignedByte(255);
+        else if (i_2_ == 5) this.anInt504 = packet.readUnsignedShort(842397944);
+        else if (i_2_ == 6) this.anInt503 = packet.readMedium(-1);
     }
 
     static final void method362(int i) {
@@ -165,13 +165,13 @@ final class Class38 {
         }
     }
 
-    final void method364(Class348_Sub49 class348_sub49, byte i) {
+    final void method364(Packet packet, byte i) {
         anInt511++;
         if (i >= 22) {
             for (; ; ) {
-                int i_10_ = class348_sub49.readUnsignedByte(255);
+                int i_10_ = packet.readUnsignedByte(255);
                 if (i_10_ == 0) break;
-                method361(-6617, class348_sub49, i_10_);
+                method361(-6617, packet, i_10_);
             }
         }
     }

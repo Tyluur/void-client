@@ -72,12 +72,12 @@ final class Class54 {
         if (i_3_ != -74) method501(46);
     }
 
-    Class54(Class348_Sub49 class348_sub49) {
-        aByte966 = class348_sub49.readByte(-113);
-        this.anInt969 = class348_sub49.readUnsignedShort(842397944);
-        this.anInt976 = class348_sub49.readInt((byte) -126);
-        this.anInt967 = class348_sub49.readInt((byte) -126);
-        this.anInt977 = class348_sub49.readInt((byte) -126);
-        this.anInt973 = class348_sub49.readInt((byte) -126);
+    Class54(Packet packet) {
+        aByte966 = packet.readByte(-113);
+        this.anInt969 = packet.readUnsignedShort(842397944);
+        this.anInt976 = packet.readInt((byte) -126);
+        this.anInt967 = packet.readInt((byte) -126);
+        this.anInt977 = packet.readInt((byte) -126);
+        this.anInt973 = packet.readInt((byte) -126);
     }
 }

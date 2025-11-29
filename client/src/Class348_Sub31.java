@@ -27,7 +27,7 @@ abstract class Class348_Sub31 extends Node {
         if (i_0_ != 22684) anInt6913 = -117;
         anInt6922++;
         Class346.aBoolean4275 = false;
-        Class124.aIndex_1848 = null;
+        Mesh.aIndex_1848 = null;
         Class318.anInt3971 = -1;
         Option_Sub14.anInt5994 = i;
         Class348_Sub43.anInt7068 = 1;
@@ -190,17 +190,17 @@ abstract class Class348_Sub31 extends Node {
         return i & 0xff;
     }
 
-    static final void method3014(Class348_Sub49 class348_sub49, byte i) {
+    static final void method3014(Packet packet, byte i) {
         anInt6914++;
-        if ((class348_sub49.aByteArray7154.length - class348_sub49.anInt7197) >= 1) {
-            int i_89_ = class348_sub49.readUnsignedByte(255);
-            if (i_89_ >= 0 && i_89_ <= 1 && (class348_sub49.aByteArray7154.length - class348_sub49.anInt7197) >= 2) {
+        if ((packet.aByteArray7154.length - packet.pos) >= 1) {
+            int i_89_ = packet.readUnsignedByte(255);
+            if (i_89_ >= 0 && i_89_ <= 1 && (packet.aByteArray7154.length - packet.pos) >= 2) {
                 if (i != -40) method3012(13, -47, -27, 107, -90, (byte) -19, -61, 36);
-                int i_90_ = class348_sub49.readUnsignedShort(842397944);
-                if (i_90_ * 6 <= (-class348_sub49.anInt7197 + (class348_sub49.aByteArray7154).length)) {
+                int i_90_ = packet.readUnsignedShort(842397944);
+                if (i_90_ * 6 <= (-packet.pos + (packet.aByteArray7154).length)) {
                     for (int i_91_ = 0; i_91_ < i_90_; i_91_++) {
-                        int i_92_ = class348_sub49.readUnsignedShort(842397944);
-                        int i_93_ = class348_sub49.readInt((byte) -126);
+                        int i_92_ = packet.readUnsignedShort(842397944);
+                        int i_93_ = packet.readInt((byte) -126);
                         if ((Class77.anIntArray1303.length > i_92_) && Class286_Sub6.aBooleanArray6270[i_92_] && ((Option_Sub14.varcTypeList.method1976(i_92_, -107).aChar2132) != '1' || i_93_ >= -1 && i_93_ <= 1)) Class77.anIntArray1303[i_92_] = i_93_;
                     }
                 }

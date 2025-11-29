@@ -27,19 +27,19 @@ final class Class117 {
         aClass351_1766 = null;
     }
 
-    private final void method1065(Class348_Sub49 class348_sub49, int i, int i_0_) {
-        if (i_0_ == 1) this.aChar1778 = Class50_Sub1.method462(class348_sub49.readByte(-91), -128);
-        else if (i_0_ == 2) this.aChar1779 = Class50_Sub1.method462(class348_sub49.readByte(-119), -128);
-        else if (i_0_ == 3) aString1774 = class348_sub49.readString((byte) 86);
-        else if (i_0_ == 4) anInt1764 = class348_sub49.readInt((byte) -126);
+    private final void method1065(Packet packet, int i, int i_0_) {
+        if (i_0_ == 1) this.aChar1778 = Class50_Sub1.method462(packet.readByte(-91), -128);
+        else if (i_0_ == 2) this.aChar1779 = Class50_Sub1.method462(packet.readByte(-119), -128);
+        else if (i_0_ == 3) aString1774 = packet.readString((byte) 86);
+        else if (i_0_ == 4) anInt1764 = packet.readInt((byte) -126);
         else if (i_0_ == 5 || i_0_ == 6) {
-            int i_1_ = class348_sub49.readUnsignedShort(i ^ ~0x3235ab57);
+            int i_1_ = packet.readUnsignedShort(i ^ ~0x3235ab57);
             this.aClass356_1767 = new Class356(EnumTypeList.method340(i_1_, (byte) 108));
             for (int i_2_ = 0; i_2_ < i_1_; i_2_++) {
-                int i_3_ = class348_sub49.readInt((byte) -126);
+                int i_3_ = packet.readInt((byte) -126);
                 Node node;
-                if (i_0_ != 5) node = new Class348_Sub35(class348_sub49.readInt((byte) -126));
-                else node = new Class348_Sub50(class348_sub49.readString((byte) -35));
+                if (i_0_ != 5) node = new Class348_Sub35(packet.readInt((byte) -126));
+                else node = new Class348_Sub50(packet.readString((byte) -35));
                 this.aClass356_1767.method3483((byte) 21, i_3_, node);
             }
         }
@@ -77,12 +77,12 @@ final class Class117 {
         if (i < 85) method1069(111, null);
     }
 
-    final void method1069(int i, Class348_Sub49 class348_sub49) {
+    final void method1069(int i, Packet packet) {
         anInt1763++;
         for (; ; ) {
-            int i_5_ = class348_sub49.readUnsignedByte(i + 255);
+            int i_5_ = packet.readUnsignedByte(i + 255);
             if (i_5_ == 0) break;
-            method1065(class348_sub49, i + -21424, i_5_);
+            method1065(packet, i + -21424, i_5_);
         }
         if (i != 0) aString1774 = null;
     }

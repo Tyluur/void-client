@@ -461,7 +461,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
         }
     }
 
-    final void method3049(Class348_Sub49 class348_sub49, int i, int i_72_) {
+    final void method3049(Packet packet, int i, int i_72_) {
         while_146_:
         do {
             try {
@@ -470,21 +470,21 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                     int i_73_ = i;
                     do {
                         if (i_73_ == 0) {
-                            aBoolean9140 = class348_sub49.readUnsignedByte(255) == 1;
+                            aBoolean9140 = packet.readUnsignedByte(255) == 1;
                             return;
                         } else if (i_73_ != 1) {
                             if (i_73_ == 2) break;
                             break while_146_;
                         }
-                        aBoolean9147 = class348_sub49.readUnsignedByte(255) == 1;
+                        aBoolean9147 = packet.readUnsignedByte(255) == 1;
                         return;
                     } while (false);
-                    this.aBoolean7045 = class348_sub49.readUnsignedByte(255) == 1;
+                    this.aBoolean7045 = packet.readUnsignedByte(255) == 1;
                     break;
                 }
                 break;
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("jia.F(" + (class348_sub49 != null ? "{...}" : "null") + ',' + i + ',' + i_72_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("jia.F(" + (packet != null ? "{...}" : "null") + ',' + i + ',' + i_72_ + ')'));
             }
         } while (false);
     }

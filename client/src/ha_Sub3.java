@@ -961,8 +961,8 @@ abstract class ha_Sub3 extends ha {
         method3926((byte) 67, false);
         method3933(-70);
         method3926((byte) 83, true);
-        method3885(0, true, Class342.aClass70_4247);
-        method3849((byte) 47, 0, Class342.aClass70_4247);
+        method3885(0, true, ModelParticleEffector.aClass70_4247);
+        method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
     }
 
     private final void method3845(byte i) {
@@ -1036,8 +1036,8 @@ abstract class ha_Sub3 extends ha {
             method3926((byte) 45, false);
             method3907(true);
             method3926((byte) 48, true);
-            method3885(0, true, Class342.aClass70_4247);
-            method3849((byte) 47, 0, Class342.aClass70_4247);
+            method3885(0, true, ModelParticleEffector.aClass70_4247);
+            method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
         }
     }
 
@@ -1080,18 +1080,18 @@ abstract class ha_Sub3 extends ha {
             method3905((byte) 127);
             method3933(-127);
             method3879(-8629);
-            method3849((byte) 47, 0, Class342.aClass70_4247);
+            method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.A(" + i + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_85_ + ',' + i_86_ + ')'));
         }
     }
 
-    final Class64 method3625(Class124 class124, int i, int i_87_, int i_88_, int i_89_) {
+    final Class64 method3625(Mesh mesh, int i, int i_87_, int i_88_, int i_89_) {
         try {
             anInt8016++;
-            return new Class64_Sub2(this, class124, i, i_88_, i_89_, i_87_);
+            return new Class64_Sub2(this, mesh, i, i_88_, i_89_, i_87_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.EG(" + (class124 != null ? "{...}" : "null") + ',' + i + ',' + i_87_ + ',' + i_88_ + ',' + i_89_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.EG(" + (mesh != null ? "{...}" : "null") + ',' + i + ',' + i_87_ + ',' + i_88_ + ',' + i_89_ + ')'));
         }
     }
 
@@ -1427,8 +1427,8 @@ abstract class ha_Sub3 extends ha {
         method3862(0, aClass130_8190);
         method3899(256, 0, Class348_Sub42_Sub16.aClass21_9661, true);
         method3926((byte) 41, true);
-        method3885(0, true, Class342.aClass70_4247);
-        method3849((byte) 47, 0, Class342.aClass70_4247);
+        method3885(0, true, ModelParticleEffector.aClass70_4247);
+        method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
     }
 
     final int i() {
@@ -2266,8 +2266,8 @@ abstract class ha_Sub3 extends ha {
             f_248_ = f_244_;
         }
         method3926((byte) 88, true);
-        method3885(0, true, Class342.aClass70_4247);
-        method3849((byte) 47, 0, Class342.aClass70_4247);
+        method3885(0, true, ModelParticleEffector.aClass70_4247);
+        method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
     }
 
     final void pa() {
@@ -2474,8 +2474,8 @@ abstract class ha_Sub3 extends ha {
         method3926((byte) 98, false);
         method3860(Class348_Sub5_Sub1.aClass21_8832, 4, 8);
         method3926((byte) 104, true);
-        method3885(0, true, Class342.aClass70_4247);
-        method3849((byte) 47, 0, Class342.aClass70_4247);
+        method3885(0, true, ModelParticleEffector.aClass70_4247);
+        method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
     }
 
     final Class101_Sub2 method3934(int i) {

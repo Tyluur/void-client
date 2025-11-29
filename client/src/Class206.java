@@ -79,7 +79,7 @@ final class Class206 implements Interface11 {
                 class10.anInt188--;
                 if (class10.anInt188 >= (!class10.method220((byte) -66) ? -10 : -1500)) {
                     if (class10.aByte180 == 1 && class10.aClass317_183 == null) {
-                        class10.aClass317_183 = Class317.method2372(Class129.SOUND_EFFECTS, class10.anInt185, 0);
+                        class10.aClass317_183 = Class317.method2372(ModelParticleEmitter.SOUND_EFFECTS, class10.anInt185, 0);
                         if (class10.aClass317_183 == null) continue;
                         class10.anInt188 += class10.aClass317_183.method2370();
                     } else if (class10.method220((byte) -39) && ((class10.aClass348_Sub10_192 == null) || (class10.aClass348_Sub19_Sub1_189) == null)) {

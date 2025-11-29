@@ -128,8 +128,8 @@ final class Option_Sub25 extends Option {
     static final void method1828(int i) {
         if (i < 20) method1832(47);
         anInt6104++;
-        synchronized (Class342.aClass60_4254) {
-            Class342.aClass60_4254.method590(0);
+        synchronized (ModelParticleEffector.aClass60_4254) {
+            ModelParticleEffector.aClass60_4254.method590(0);
         }
     }
 

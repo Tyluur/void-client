@@ -14,7 +14,7 @@ final class Class157 {
         class348_sub49_sub2.writeInt((byte) 112, Class186.ANIMATION_SKINS.indexCrc(-106));
         class348_sub49_sub2.writeInt((byte) 118, Class95.CONFIGS.indexCrc(-109));
         class348_sub49_sub2.writeInt((byte) 120, Class348_Sub35.INTERFACES.indexCrc(-108));
-        class348_sub49_sub2.writeInt((byte) 93, Class129.SOUND_EFFECTS.indexCrc(-104));
+        class348_sub49_sub2.writeInt((byte) 93, ModelParticleEmitter.SOUND_EFFECTS.indexCrc(-104));
         class348_sub49_sub2.writeInt((byte) 90, Class367_Sub10.MAPS.indexCrc(-122));
         class348_sub49_sub2.writeInt((byte) 92, Class59_Sub2_Sub1.MUSIC.indexCrc(9));
         class348_sub49_sub2.writeInt((byte) 90, aa_Sub3.MODELS.indexCrc(120));

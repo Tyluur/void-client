@@ -45,7 +45,7 @@ final class VarPlayerTypeListClient {
             if (i >= -17) aClass60_2848 = null;
         }
         class159 = new Class159();
-        if (is != null) class159.method1253(new Class348_Sub49(is), true);
+        if (is != null) class159.method1253(new Packet(is), true);
         synchronized (aClass60_2848) {
             aClass60_2848.method582(class159, i_1_, (byte) -124);
         }

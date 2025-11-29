@@ -8,7 +8,7 @@ final class Js5MasterIndex {
     private final Class248 aClass248_4212;
     private final BigInteger aBigInteger4213;
     static int anInt4214;
-    private Class348_Sub49 aClass348_Sub49_4215;
+    private Packet aPacket_4215;
     private Js5ResourceProvider[] aClass314_Sub1Array4216;
     private Class112 aClass112_4217;
     private final BigInteger aBigInteger4218;
@@ -56,7 +56,7 @@ final class Js5MasterIndex {
 
     final boolean method2674(int i) {
         anInt4214++;
-        if (aClass348_Sub49_4215 != null) {
+        if (aPacket_4215 != null) {
             return true;
         }
         if (aClass348_Sub42_Sub16_Sub1_4220 == null) {
@@ -68,12 +68,12 @@ final class Js5MasterIndex {
         if (aClass348_Sub42_Sub16_Sub1_4220.aBoolean9664) {
             return false;
         }
-        Class348_Sub49 class348_sub49 = new Class348_Sub49(aClass348_Sub42_Sub16_Sub1_4220.method3259(i ^ 0x17));
-        class348_sub49.anInt7197 = 5;
-        int idxCount = class348_sub49.readUnsignedByte(i ^ 0xf8);
-        class348_sub49.anInt7197 += idxCount * 72;
-        byte[] is = new byte[(class348_sub49.aByteArray7154.length - class348_sub49.anInt7197)];
-        class348_sub49.method3389(2147483647, 0, is.length, is);
+        Packet packet = new Packet(aClass348_Sub42_Sub16_Sub1_4220.method3259(i ^ 0x17));
+        packet.pos = 5;
+        int idxCount = packet.readUnsignedByte(i ^ 0xf8);
+        packet.pos += idxCount * 72;
+        byte[] is = new byte[(packet.aByteArray7154.length - packet.pos)];
+        packet.method3389(2147483647, 0, is.length, is);
         byte[] is_6_;
         if (aBigInteger4213 != null && aBigInteger4218 != null) {
             BigInteger biginteger = new BigInteger(is);
@@ -85,13 +85,13 @@ final class Js5MasterIndex {
         if (is_6_.length != 65) {
             throw new RuntimeException();
         }
-        byte[] is_8_ = Class348_Sub1_Sub2.method2730(4567, 5, (class348_sub49.aByteArray7154), (class348_sub49.anInt7197) - (is.length + 5));
+        byte[] is_8_ = Class348_Sub1_Sub2.method2730(4567, 5, (packet.aByteArray7154), (packet.pos) - (is.length + 5));
         for (int i_9_ = 0; i_9_ < 64; i_9_++) {
             if (is_8_[i_9_] != is_6_[i_9_ + 1]) {
                 throw new RuntimeException();
             }
         }
-        aClass348_Sub49_4215 = class348_sub49;
+        aPacket_4215 = packet;
         aClass314_Sub1Array4216 = new Js5ResourceProvider[idxCount];
         return true;
     }
@@ -99,14 +99,14 @@ final class Js5MasterIndex {
     private final Js5ResourceProvider method2675(byte i, boolean bool, int i_10_, Class137 class137, Class137 class137_11_) {
         try {
             anInt4221++;
-            if (aClass348_Sub49_4215 == null) throw new RuntimeException();
+            if (aPacket_4215 == null) throw new RuntimeException();
             if (i_10_ < 0 || i_10_ >= aClass314_Sub1Array4216.length) throw new RuntimeException();
             if (aClass314_Sub1Array4216[i_10_] != null) return aClass314_Sub1Array4216[i_10_];
-            aClass348_Sub49_4215.anInt7197 = 6 + i_10_ * 72;
-            int i_12_ = aClass348_Sub49_4215.readInt((byte) -126);
-            int i_13_ = aClass348_Sub49_4215.readInt((byte) -126);
+            aPacket_4215.pos = 6 + i_10_ * 72;
+            int i_12_ = aPacket_4215.readInt((byte) -126);
+            int i_13_ = aPacket_4215.readInt((byte) -126);
             byte[] is = new byte[64];
-            aClass348_Sub49_4215.method3389(2147483647, 0, 64, is);
+            aPacket_4215.method3389(2147483647, 0, 64, is);
             if (i >= -18) method2671(103);
             Js5ResourceProvider class314_sub1 = new Js5ResourceProvider(i_10_, class137, class137_11_, aClass248_4212, aClass112_4217, i_12_, is, i_13_, bool);
             aClass314_Sub1Array4216[i_10_] = class314_sub1;

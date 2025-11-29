@@ -92,12 +92,12 @@ final class Class348_Sub18 extends Node {
             Class66.aClass60_1174.method590(0);
             Class348_Sub8.aHa6654.method3663();
             Class238_Sub1.method1707(26469);
-            Class348_Sub49.method3354(-52);
+            Packet.method3354(-52);
             Class348_Sub29.ANIMATION_SKELETONS.method412((byte) -124);
             Class186.ANIMATION_SKINS.method412((byte) -119);
             Class95.CONFIGS.method412((byte) 37);
             Class348_Sub35.INTERFACES.method412((byte) -113);
-            Class129.SOUND_EFFECTS.method412((byte) -116);
+            ModelParticleEmitter.SOUND_EFFECTS.method412((byte) -116);
             Class367_Sub10.MAPS.method412((byte) -110);
             Class59_Sub2_Sub1.MUSIC.method412((byte) 64);
             aa_Sub3.MODELS.method412((byte) 120);

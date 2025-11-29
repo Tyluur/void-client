@@ -37,7 +37,7 @@ final class Class211 {
             Class359 class359 = Class348_Sub17.aClass359Array6802[i];
             Player player = (Class294.aPlayerArray5058[i] = new Player());
             player.anInt10290 = i;
-            if (Class154.aClass348_Sub49Array2105[i] != null) player.method2452((byte) 84, Class154.aClass348_Sub49Array2105[i]);
+            if (Class154.aPacketArray2105[i] != null) player.method2452((byte) 84, Class154.aPacketArray2105[i]);
             player.method2435((byte) -108, (class359.anInt4423), true);
             player.anInt10275 = class359.anInt4425;
             int i_4_ = class359.anInt4420;
@@ -347,21 +347,21 @@ final class Class211 {
         method1542(32402);
     }
 
-    Class211(ha var_ha, Class348_Sub49 class348_sub49, int i) {
+    Class211(ha var_ha, Packet packet, int i) {
         try {
             if (Class291.anIntArray3726 == null) MSITypeList.method1177((byte) 122);
-            this.anInt2731 = class348_sub49.readUnsignedByte(255);
+            this.anInt2731 = packet.readUnsignedByte(255);
             this.aBoolean2737 = (0x8 & this.anInt2731) != 0;
             this.aBoolean2749 = (this.anInt2731 & 0x10) != 0;
             this.anInt2731 = 0x7 & this.anInt2731;
-            int i_43_ = class348_sub49.readUnsignedShort(842397944) << i;
-            int i_44_ = class348_sub49.readUnsignedShort(842397944) << i;
-            int i_45_ = class348_sub49.readUnsignedShort(842397944) << i;
-            int i_46_ = class348_sub49.readUnsignedByte(255);
+            int i_43_ = packet.readUnsignedShort(842397944) << i;
+            int i_44_ = packet.readUnsignedShort(842397944) << i;
+            int i_45_ = packet.readUnsignedShort(842397944) << i;
+            int i_46_ = packet.readUnsignedByte(255);
             int i_47_ = 1 + i_46_ * 2;
             this.aShortArray2742 = new short[i_47_];
             for (int i_48_ = 0; (i_48_ < this.aShortArray2742.length); i_48_++) {
-                int i_49_ = (short) class348_sub49.readUnsignedShort(842397944);
+                int i_49_ = (short) packet.readUnsignedShort(842397944);
                 int i_50_ = i_49_ >>> 8;
                 if (i_47_ <= i_50_) i_50_ = i_47_ - 1;
                 int i_51_ = 0xff & i_49_;
@@ -369,14 +369,14 @@ final class Class211 {
                 this.aShortArray2742[i_48_] = (short) Class273.method2057(i_51_, i_50_ << 8);
             }
             i_46_ = ((i_46_ << Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037);
-            int i_52_ = (Class10.anIntArray179 == null ? (Class126.anIntArray4983[SkyBoxSphereTypeList.method303(class348_sub49.readUnsignedShort(842397944), 30) & 0xffff]) : (Class10.anIntArray179[class348_sub49.readUnsignedShort(842397944)]));
-            int i_53_ = class348_sub49.readUnsignedByte(255);
+            int i_52_ = (Class10.anIntArray179 == null ? (Class126.anIntArray4983[SkyBoxSphereTypeList.method303(packet.readUnsignedShort(842397944), 30) & 0xffff]) : (Class10.anIntArray179[packet.readUnsignedShort(842397944)]));
+            int i_53_ = packet.readUnsignedByte(255);
             anInt2739 = (0xe0 & i_53_) << 3;
             this.anInt2734 = 0x1f & i_53_;
             if (this.anInt2734 != 31) method1542(32402);
             method1541(i_45_, var_ha, i_44_, i_43_, 3, i_52_, i_46_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ro.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (class348_sub49 != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ro.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (packet != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 }

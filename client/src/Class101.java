@@ -41,7 +41,7 @@ abstract class Class101 {
         Class347.aByteArrayArray4281 = new byte[index][];
         Applet_Sub1.mapLocations = new int[index];
         Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[index][];
-        Class129.aByteArrayArray1887 = new byte[index][];
+        ModelParticleEmitter.aByteArrayArray1887 = new byte[index][];
         index = 0;
         for (int regionX = (i_4_ + -(Class367_Sub4.mapLength >> 4)) / 8; (i_4_ - -(Class367_Sub4.mapLength >> 4)) / 8 >= regionX; regionX++) {
             for (int regionY = (-(Class348_Sub40_Sub3.mapWidth >> 4) + i_5_) / 8; ((i_5_ + (Class348_Sub40_Sub3.mapWidth >> 4)) / 8 >= regionY); regionY++) {

@@ -5,7 +5,7 @@
 import jaggl.OpenGL;
 
 final class Class299_Sub1_Sub2 extends Class299_Sub1 {
-    static Class348_Sub49 aClass348_Sub49_8698;
+    static Packet aPacket_8698;
     static int anInt8699;
     static int anInt8700;
     private final Class258_Sub2 aClass258_Sub2_8701;
@@ -202,14 +202,14 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
     }
 
     static final void method2264(boolean bool) {
-        if (bool != false) aClass348_Sub49_8698 = null;
+        if (bool != false) aPacket_8698 = null;
         anInt8704++;
         Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(0, (byte) 105, 15);
         class348_sub42_sub15.method3251(-16058);
     }
 
     public static void method2265(int i) {
-        aClass348_Sub49_8698 = null;
+        aPacket_8698 = null;
         if (i != -10794) aClass351_8706 = null;
         aClass351_8706 = null;
     }

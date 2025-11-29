@@ -21,7 +21,7 @@ final class InvTypeList {
         }
         class348_sub42_sub7 = new Class348_Sub42_Sub7();
         if (i < 78) method2046();
-        if (is != null) class348_sub42_sub7.method3192((byte) 16, new Class348_Sub49(is));
+        if (is != null) class348_sub42_sub7.method3192((byte) 16, new Packet(is));
         synchronized (aClass60_3466) {
             aClass60_3466.method582(class348_sub42_sub7, i_0_, (byte) -93);
         }

@@ -12,7 +12,7 @@ final class Class348_Sub32 extends Node {
     static int anInt6933;
     private int anInt6934;
     private final int anInt6935;
-    private Class348_Sub49 aClass348_Sub49_6936;
+    private Packet aPacket_6936;
     private final Class348_Sub1 aClass348_Sub1_6937;
     static int anInt6938;
     static int anInt6939;
@@ -154,8 +154,8 @@ final class Class348_Sub32 extends Node {
     private final void method3022(byte i, short i_34_) {
         anInt6939++;
         if (i == -46) {
-            if (!aHa_Sub2_6951.aBoolean7775) aClass348_Sub49_6936.method3397(i + 135, i_34_);
-            else aClass348_Sub49_6936.writeShort((byte) 107, i_34_);
+            if (!aHa_Sub2_6951.aBoolean7775) aPacket_6936.method3397(i + 135, i_34_);
+            else aPacket_6936.writeShort((byte) 107, i_34_);
         }
     }
 
@@ -230,7 +230,7 @@ final class Class348_Sub32 extends Node {
                 } else i_50_ += anInt6942 - anInt6935;
             }
             if (anInt6934 > 0) {
-                aClass348_Sub49_6936 = new Class348_Sub49(anInt6934 * 2);
+                aPacket_6936 = new Packet(anInt6934 * 2);
                 aClass348_Sub49_Sub1_6953 = new Class348_Sub49_Sub1(anInt6934 * 16);
                 aClass356_6932 = new Class356(EnumTypeList.method340(anInt6934, (byte) 108));
                 int i_56_ = 0;
@@ -283,8 +283,8 @@ final class Class348_Sub32 extends Node {
                     } else i_50_ += anInt6942 - anInt6935;
                     i_56_++;
                 }
-                anInterface8_6945 = (aHa_Sub2_6951.method3733(5123, -49, aClass348_Sub49_6936.anInt7197, aClass348_Sub49_6936.aByteArray7154, false));
-                anInterface2_6952 = aHa_Sub2_6951.method3731(2, false, 16, (aClass348_Sub49_Sub1_6953.aByteArray7154), (aClass348_Sub49_Sub1_6953.anInt7197));
+                anInterface8_6945 = (aHa_Sub2_6951.method3733(5123, -49, aPacket_6936.pos, aPacket_6936.aByteArray7154, false));
+                anInterface2_6952 = aHa_Sub2_6951.method3731(2, false, 16, (aClass348_Sub49_Sub1_6953.aByteArray7154), (aClass348_Sub49_Sub1_6953.pos));
                 aClass123_6927 = new Class123(anInterface2_6952, 5126, 3, 0);
                 aClass123_6943 = new Class123(anInterface2_6952, 5121, 4, 12);
             } else {
@@ -295,7 +295,7 @@ final class Class348_Sub32 extends Node {
             }
             aClass348_Sub49_Sub1_6953 = null;
             aFloatArrayArray6949 = aFloatArrayArray6947 = aFloatArrayArray6928 = null;
-            aClass348_Sub49_6936 = null;
+            aPacket_6936 = null;
             aClass356_6932 = null;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qw.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (var_s_Sub2 != null ? "{...}" : "null") + ',' + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));

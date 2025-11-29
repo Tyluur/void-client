@@ -32,7 +32,7 @@ final class Class57 {
     static final int method531(byte i, Class70 class70) {
         int i_0_ = -45 / ((i - 54) / 43);
         anInt1049++;
-        if (Class342.aClass70_4247 != class70) {
+        if (ModelParticleEffector.aClass70_4247 != class70) {
             if (class70 != Class285_Sub2.aClass70_8503) {
                 if (Class318_Sub1_Sub2.aClass70_8737 != class70) {
                     if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 34166;

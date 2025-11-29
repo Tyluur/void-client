@@ -34,7 +34,7 @@ abstract class ha {
 
     abstract void b(int i, int i_1_, int i_2_, int i_3_, double d);
 
-    abstract Class64 method3625(Class124 class124, int i, int i_4_, int i_5_, int i_6_);
+    abstract Class64 method3625(Mesh mesh, int i, int i_4_, int i_5_, int i_6_);
 
     abstract void F(int i, int i_7_);
 
@@ -191,7 +191,7 @@ abstract class ha {
                 is[i_89_] = (byte) i_89_;
             for (int i_90_ = 0; i_90_ < 255; i_90_++) {
                 int i_91_ = -i_90_ + 255;
-                int i_92_ = Class124.method1097((byte) 95, i_91_, random);
+                int i_92_ = Mesh.method1097((byte) 95, i_91_, random);
                 byte i_93_ = is[i_92_];
                 is[i_92_] = is[i_91_];
                 is[i_91_] = is[511 + -i_90_] = i_93_;

@@ -42,13 +42,13 @@ final class Class368 {
         }
     }
 
-    final void method3559(int i, Class348_Sub49 class348_sub49) {
+    final void method3559(int i, Packet packet) {
         anInt4497++;
         if (i == 28105) {
             for (; ; ) {
-                int i_4_ = class348_sub49.readUnsignedByte(255);
+                int i_4_ = packet.readUnsignedByte(255);
                 if (i_4_ == 0) break;
-                method3564(i ^ ~0x6db5, class348_sub49, i_4_);
+                method3564(i ^ ~0x6db5, packet, i_4_);
             }
         }
     }
@@ -85,12 +85,12 @@ final class Class368 {
         return (i & 0x800) != 0;
     }
 
-    private final void method3564(int i, Class348_Sub49 class348_sub49, int i_11_) {
+    private final void method3564(int i, Packet packet, int i_11_) {
         anInt4486++;
         if (i < -119) {
-            if (i_11_ == 1) anInt4506 = class348_sub49.readUnsignedShort(842397944);
+            if (i_11_ == 1) anInt4506 = packet.readUnsignedShort(842397944);
             else if (i_11_ != 2) {
-                if (i_11_ == 4) anInt4498 = class348_sub49.readUnsignedShort(842397944);
+                if (i_11_ == 4) anInt4498 = packet.readUnsignedShort(842397944);
                 else if (i_11_ != 5) {
                     if (i_11_ != 6) {
                         if (i_11_ != 7) {
@@ -104,37 +104,37 @@ final class Class368 {
                                         else if (i_11_ == 13) this.aByte4488 = (byte) 5;
                                         else if (i_11_ == 14) {
                                             this.aByte4488 = (byte) 2;
-                                            anInt4507 = class348_sub49.readUnsignedByte(255) * 256;
+                                            anInt4507 = packet.readUnsignedByte(255) * 256;
                                         } else if (i_11_ == 15) {
                                             this.aByte4488 = (byte) 3;
-                                            anInt4507 = class348_sub49.readUnsignedShort(842397944);
+                                            anInt4507 = packet.readUnsignedShort(842397944);
                                         } else if (i_11_ == 16) {
                                             this.aByte4488 = (byte) 3;
-                                            anInt4507 = (class348_sub49.readInt((byte) -126));
+                                            anInt4507 = (packet.readInt((byte) -126));
                                         } else if (i_11_ == 40) {
-                                            int i_14_ = class348_sub49.readUnsignedByte(255);
+                                            int i_14_ = packet.readUnsignedByte(255);
                                             aShortArray4490 = new short[i_14_];
                                             aShortArray4502 = new short[i_14_];
                                             for (int i_15_ = 0; i_14_ > i_15_; i_15_++) {
-                                                aShortArray4490[i_15_] = (short) (class348_sub49.readUnsignedShort(842397944));
-                                                aShortArray4502[i_15_] = (short) (class348_sub49.readUnsignedShort(842397944));
+                                                aShortArray4490[i_15_] = (short) (packet.readUnsignedShort(842397944));
+                                                aShortArray4502[i_15_] = (short) (packet.readUnsignedShort(842397944));
                                             }
                                         } else if (i_11_ == 41) {
-                                            int i_12_ = (class348_sub49.readUnsignedByte(255));
+                                            int i_12_ = (packet.readUnsignedByte(255));
                                             aShortArray4504 = new short[i_12_];
                                             aShortArray4499 = new short[i_12_];
                                             for (int i_13_ = 0; i_12_ > i_13_; i_13_++) {
-                                                aShortArray4499[i_13_] = (short) (class348_sub49.readUnsignedShort(842397944));
-                                                aShortArray4504[i_13_] = (short) (class348_sub49.readUnsignedShort(842397944));
+                                                aShortArray4499[i_13_] = (short) (packet.readUnsignedShort(842397944));
+                                                aShortArray4504[i_13_] = (short) (packet.readUnsignedShort(842397944));
                                             }
                                         }
                                     } else this.aByte4488 = (byte) 1;
                                 } else this.aBoolean4487 = true;
-                            } else anInt4512 = class348_sub49.readUnsignedByte(255);
-                        } else anInt4489 = class348_sub49.readUnsignedByte(255);
-                    } else anInt4508 = class348_sub49.readUnsignedShort(842397944);
-                } else anInt4492 = class348_sub49.readUnsignedShort(842397944);
-            } else this.anInt4503 = class348_sub49.readUnsignedShort(842397944);
+                            } else anInt4512 = packet.readUnsignedByte(255);
+                        } else anInt4489 = packet.readUnsignedByte(255);
+                    } else anInt4508 = packet.readUnsignedShort(842397944);
+                } else anInt4492 = packet.readUnsignedShort(842397944);
+            } else this.anInt4503 = packet.readUnsignedShort(842397944);
         }
     }
 
@@ -177,10 +177,10 @@ final class Class368 {
                 int i_34_ = i_33_;
                 if (aShortArray4490 != null) i_34_ |= 0x4000;
                 if (aShortArray4499 != null) i_34_ |= 0x8000;
-                Class124 class124 = Class300.method2277(0, (this.aGfxTypeList_4513.aIndex_3981), anInt4506, -1);
-                if (class124 == null) return null;
-                if (class124.anInt1830 < 13) class124.method1092(2, 114);
-                class64 = var_ha.method3625(class124, i_34_, (this.aGfxTypeList_4513.anInt3991), 64 + anInt4489, anInt4512 - -850);
+                Mesh mesh = Class300.method2277(0, (this.aGfxTypeList_4513.aIndex_3981), anInt4506, -1);
+                if (mesh == null) return null;
+                if (mesh.version < 13) mesh.method1092(2, 114);
+                class64 = var_ha.method3625(mesh, i_34_, (this.aGfxTypeList_4513.anInt3991), 64 + anInt4489, anInt4512 - -850);
                 if (aShortArray4490 != null) {
                     for (int i_35_ = 0; (i_35_ < aShortArray4490.length); i_35_++)
                         class64.ia(aShortArray4490[i_35_], aShortArray4502[i_35_]);

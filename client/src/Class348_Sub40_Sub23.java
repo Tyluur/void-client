@@ -24,7 +24,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
     private int anInt9322;
     private int anInt9323;
 
-    final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
+    final void method3049(Packet packet, int i, int i_0_) {
         anInt9308++;
         if (i_0_ != 31015) aBoolean9307 = true;
         int i_1_ = i;
@@ -44,7 +44,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                                 do {
                                     do {
                                         if (i_1_ == 0) {
-                                            anInt9318 = class348_sub49.readUnsignedByte(255);
+                                            anInt9318 = packet.readUnsignedByte(255);
                                             return;
                                         } else if (i_1_ != 1) {
                                             if (i_1_ != 2) {
@@ -65,28 +65,28 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                                             } else break;
                                             break while_190_;
                                         }
-                                        anInt9317 = class348_sub49.readUnsignedShort(842397944);
+                                        anInt9317 = packet.readUnsignedShort(842397944);
                                         return;
                                     } while (false);
-                                    anInt9320 = class348_sub49.readUnsignedShort(842397944);
+                                    anInt9320 = packet.readUnsignedShort(842397944);
                                     return;
                                 } while (false);
-                                anInt9322 = class348_sub49.readUnsignedShort(i_0_ ^ 0x323581df);
+                                anInt9322 = packet.readUnsignedShort(i_0_ ^ 0x323581df);
                                 return;
                             } while (false);
-                            anInt9323 = class348_sub49.readUnsignedShort(842397944);
+                            anInt9323 = packet.readUnsignedShort(842397944);
                             return;
                         } while (false);
-                        anInt9311 = class348_sub49.readUnsignedShort(842397944);
+                        anInt9311 = packet.readUnsignedShort(842397944);
                         return;
                     } while (false);
-                    anInt9312 = class348_sub49.readUnsignedByte(i_0_ ^ 0x79d8);
+                    anInt9312 = packet.readUnsignedByte(i_0_ ^ 0x79d8);
                     return;
                 } while (false);
-                anInt9314 = class348_sub49.readUnsignedShort(842397944);
+                anInt9314 = packet.readUnsignedShort(842397944);
                 return;
             } while (false);
-            anInt9310 = class348_sub49.readUnsignedShort(842397944);
+            anInt9310 = packet.readUnsignedShort(842397944);
         } while (false);
     }
 
@@ -97,10 +97,10 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
     private final void method3112(int i, int i_2_, int[][] is, Random random, int i_3_, int i_4_, int i_5_) {
         try {
             anInt9309++;
-            int i_6_ = (anInt9310 <= 0 ? 4096 : 4096 - Class124.method1097((byte) 117, anInt9310, random));
+            int i_6_ = (anInt9310 <= 0 ? 4096 : 4096 - Mesh.method1097((byte) 117, anInt9310, random));
             int i_7_ = 88 % ((i - 57) / 55);
             int i_8_ = anInt9306 * anInt9314 >> 12;
-            int i_9_ = (anInt9306 - (i_8_ > 0 ? Class124.method1097((byte) 82, i_8_, random) : 0));
+            int i_9_ = (anInt9306 - (i_8_ > 0 ? Mesh.method1097((byte) 82, i_8_, random) : 0));
             if (Class348_Sub40_Sub6.anInt9139 <= i_3_) i_3_ -= Class348_Sub40_Sub6.anInt9139;
             if (i_9_ <= 0) {
                 if (Class348_Sub40_Sub6.anInt9139 < i_3_ + i_5_) {
@@ -242,8 +242,8 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
             int[][] is_57_ = new int[i_55_][3];
             Random random = new Random(anInt9318);
             for (; ; ) {
-                int i_58_ = i_51_ + Class124.method1097((byte) 106, i_52_ - i_51_, random);
-                int i_59_ = (Class124.method1097((byte) 117, -i_53_ + i_54_, random) + i_53_);
+                int i_58_ = i_51_ + Mesh.method1097((byte) 106, i_52_ - i_51_, random);
+                int i_59_ = (Mesh.method1097((byte) 117, -i_53_ + i_54_, random) + i_53_);
                 int i_60_ = i_46_ + i_58_;
                 if (i_60_ > Class348_Sub40_Sub6.anInt9139) {
                     i_60_ = Class348_Sub40_Sub6.anInt9139;
@@ -315,7 +315,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                     i_49_ = i_50_;
                     i_45_ = i_44_;
                     i_50_ = 0;
-                    i_44_ = Class124.method1097((byte) 113, Class348_Sub40_Sub6.anInt9139, random);
+                    i_44_ = Mesh.method1097((byte) 113, Class348_Sub40_Sub6.anInt9139, random);
                     i_43_ = -i_45_ + i_44_;
                     i_46_ = 0;
                     int i_80_ = i_43_;

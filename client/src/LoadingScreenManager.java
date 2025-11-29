@@ -24,7 +24,7 @@ final class LoadingScreenManager {
         byte[] is = aIndex_1718.method410(-1860, 1, i);
         if (i_0_ < 12) return null;
         Class287 class287 = new Class287();
-        class287.method2183(new Class348_Sub49(is), 21890);
+        class287.method2183(new Packet(is), 21890);
         return class287;
     }
 
@@ -63,7 +63,7 @@ final class LoadingScreenManager {
         int[] is = new int[anIntArrayArray1724[i].length];
         Class214.method1578(anIntArrayArray1724[i], 0, is, 0, is.length);
         for (int i_10_ = i_9_; is.length > i_10_; i_10_++) {
-            int i_11_ = i_9_ + Class124.method1097((byte) 80, is.length - i_9_, random);
+            int i_11_ = i_9_ + Mesh.method1097((byte) 80, is.length - i_9_, random);
             int i_12_ = is[i_10_];
             is[i_10_] = is[i_11_];
             is[i_11_] = i_12_;
@@ -97,19 +97,19 @@ final class LoadingScreenManager {
         try {
             aIndex_1718 = index;
             aIndex_1718.method407(0, 1);
-            Class348_Sub49 class348_sub49 = new Class348_Sub49(aIndex_1718.method410(-1860, 0, 0));
-            int i_17_ = class348_sub49.readUnsignedByte(255);
+            Packet packet = new Packet(aIndex_1718.method410(-1860, 0, 0));
+            int i_17_ = packet.readUnsignedByte(255);
             if (i_17_ > 3) {
                 anIntArrayArray1724 = new int[0][];
                 aBooleanArray1725 = new boolean[0];
                 anInt1715 = -1;
             } else {
-                int i_18_ = class348_sub49.readUnsignedByte(255);
+                int i_18_ = packet.readUnsignedByte(255);
                 Class223[] class223s = Class19.method285(-122);
                 boolean bool = true;
                 if (class223s.length == i_18_) {
                     for (int i_19_ = 0; (class223s.length > i_19_); i_19_++) {
-                        int i_20_ = class348_sub49.readUnsignedByte(255);
+                        int i_20_ = packet.readUnsignedByte(255);
                         if (i_20_ != class223s[i_19_].anInt2896) {
                             bool = false;
                             break;
@@ -117,25 +117,25 @@ final class LoadingScreenManager {
                     }
                 } else bool = false;
                 if (bool) {
-                    int i_21_ = class348_sub49.readUnsignedByte(255);
-                    int i_22_ = class348_sub49.readUnsignedByte(255);
-                    if (i_17_ > 2) anInt1715 = class348_sub49.readShort(13638);
+                    int i_21_ = packet.readUnsignedByte(255);
+                    int i_22_ = packet.readUnsignedByte(255);
+                    if (i_17_ > 2) anInt1715 = packet.readShort(13638);
                     else anInt1715 = -1;
                     anIntArrayArray1724 = new int[i_22_ - -1][];
                     aBooleanArray1725 = new boolean[i_22_ + 1];
                     for (int i_23_ = 0; i_21_ > i_23_; i_23_++) {
-                        int i_24_ = class348_sub49.readUnsignedByte(255);
-                        aBooleanArray1725[i_24_] = class348_sub49.readUnsignedByte(255) == 1;
-                        int i_25_ = class348_sub49.readUnsignedShort(842397944);
+                        int i_24_ = packet.readUnsignedByte(255);
+                        aBooleanArray1725[i_24_] = packet.readUnsignedByte(255) == 1;
+                        int i_25_ = packet.readUnsignedShort(842397944);
                         if (anInt1715 == -1) {
                             anIntArrayArray1724[i_24_] = new int[i_25_];
                             for (int i_26_ = 0; i_25_ > i_26_; i_26_++)
-                                anIntArrayArray1724[i_24_][i_26_] = class348_sub49.readUnsignedShort(842397944);
+                                anIntArrayArray1724[i_24_][i_26_] = packet.readUnsignedShort(842397944);
                         } else {
                             anIntArrayArray1724[i_24_] = new int[1 + i_25_];
                             anIntArrayArray1724[i_24_][0] = anInt1715;
                             for (int i_27_ = 0; i_25_ > i_27_; i_27_++)
-                                anIntArrayArray1724[i_24_][1 + i_27_] = class348_sub49.readUnsignedShort(842397944);
+                                anIntArrayArray1724[i_24_][1 + i_27_] = packet.readUnsignedShort(842397944);
                         }
                     }
                     for (int i_28_ = 0; i_22_ + 1 > i_28_; i_28_++) {

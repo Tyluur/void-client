@@ -52,31 +52,31 @@ final class SystemInfo extends Node {
         return i_0_;
     }
 
-    final void method2747(int i, Class348_Sub49 class348_sub49) {
-        class348_sub49.writeByte(false, 5);
+    final void method2747(int i, Packet packet) {
+        packet.writeByte(false, 5);
         anInt6611++;
-        class348_sub49.writeByte(false, anInt6613);
-        class348_sub49.writeByte(false, aBoolean6608 ? 1 : 0);
-        class348_sub49.writeByte(false, anInt6595);
-        class348_sub49.writeByte(false, anInt6594);
-        class348_sub49.writeByte(false, anInt6616);
-        class348_sub49.writeByte(false, anInt6605);
-        class348_sub49.writeByte(false, anInt6612);
-        class348_sub49.writeByte(false, !aBoolean6607 ? 0 : 1);
-        class348_sub49.writeShort((byte) 107, anInt6592);
-        class348_sub49.writeByte(false, anInt6599);
-        class348_sub49.method3340(i ^ ~0x26b6, this.anInt6609);
-        class348_sub49.writeShort((byte) 107, anInt6591);
-        class348_sub49.writeByte(false, anInt6598);
-        class348_sub49.writeByte(false, anInt6596);
-        class348_sub49.writeByte(false, anInt6603);
-        class348_sub49.method3386(aString6604, 123);
-        class348_sub49.method3386(aString6614, -45);
-        class348_sub49.method3386(aString6610, 100);
+        packet.writeByte(false, anInt6613);
+        packet.writeByte(false, aBoolean6608 ? 1 : 0);
+        packet.writeByte(false, anInt6595);
+        packet.writeByte(false, anInt6594);
+        packet.writeByte(false, anInt6616);
+        packet.writeByte(false, anInt6605);
+        packet.writeByte(false, anInt6612);
+        packet.writeByte(false, !aBoolean6607 ? 0 : 1);
+        packet.writeShort((byte) 107, anInt6592);
+        packet.writeByte(false, anInt6599);
+        packet.method3340(i ^ ~0x26b6, this.anInt6609);
+        packet.writeShort((byte) 107, anInt6591);
+        packet.writeByte(false, anInt6598);
+        packet.writeByte(false, anInt6596);
+        packet.writeByte(false, anInt6603);
+        packet.method3386(aString6604, 123);
+        packet.method3386(aString6614, -45);
+        packet.method3386(aString6610, 100);
         if (i == 1) {
-            class348_sub49.method3386(aString6597, -14);
-            class348_sub49.writeByte(false, anInt6606);
-            class348_sub49.writeShort((byte) 107, anInt6617);
+            packet.method3386(aString6597, -14);
+            packet.writeByte(false, anInt6606);
+            packet.writeShort((byte) 107, anInt6617);
         }
     }
 

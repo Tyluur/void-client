@@ -37,7 +37,7 @@ final class Class90 {
             }
         }
         Class299.aClass348_Sub49_Sub2_3813.stopBitAccess(false);
-        int i_7_ = (-Class299.aClass348_Sub49_Sub2_3813.anInt7197 + Class348_Sub40_Sub25.anInt9341) / 16;
+        int i_7_ = (-Class299.aClass348_Sub49_Sub2_3813.pos + Class348_Sub40_Sub25.anInt9341) / 16;
         Option_Sub6.anIntArrayArray5894 = new int[i_7_][4];
         int i_8_ = 0;
         if (i != 99) method852(-55);
@@ -53,7 +53,7 @@ final class Class90 {
         Class295.mapUndergroundTiles = new int[i_7_];
         Class348_Sub50.aByteArrayArray7212 = null;
         Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[i_7_][];
-        Class129.aByteArrayArray1887 = new byte[i_7_][];
+        ModelParticleEmitter.aByteArrayArray1887 = new byte[i_7_][];
         Class14_Sub4.aByteArrayArray8642 = new byte[i_7_][];
         Class347.aByteArrayArray4281 = new byte[i_7_][];
         i_7_ = 0;

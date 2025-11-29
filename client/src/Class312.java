@@ -51,7 +51,7 @@ final class Class312 {
         if (i == 86) {
             Class348_Sub40_Sub25.anInt9341 = 0;
             Class348_Sub40_Sub36.aClass114_9456 = null;
-            Class299.aClass348_Sub49_Sub2_3813.anInt7197 = 0;
+            Class299.aClass348_Sub49_Sub2_3813.pos = 0;
             Class238.aClass114_3133 = null;
             Option.aClass114_3145 = null;
             Class348_Sub50.anInt7213 = 0;
@@ -69,7 +69,7 @@ final class Class312 {
             Class363.method3515(i + 36);
             Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
             Class348_Sub40_Sub21.anInt9282 = 1;
-            Class348_Sub49.setStep(2, 10);
+            Packet.setStep(2, 10);
             for (int i_2_ = 0; i_2_ < 100; i_2_++)
                 Class152.aBooleanArray2076[i_2_] = true;
             Class286_Sub2.method2145(-24498);

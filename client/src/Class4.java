@@ -28,29 +28,29 @@ final class Class4 {
         this.anInt126 = 0;
         this.aClass348_Sub33_134 = class348_sub33;
         try {
-            Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
-            Class348_Sub49 class348_sub49_0_ = new Class348_Sub49(is);
-            class348_sub49.readUnsignedByte(255);
-            class348_sub49.anInt7197 += 2;
-            int i = class348_sub49.readUnsignedByte(255);//byte
+            Packet packet = new Packet(is);
+            Packet packet_0_ = new Packet(is);
+            packet.readUnsignedByte(255);
+            packet.pos += 2;
+            int i = packet.readUnsignedByte(255);//byte
             int i_1_ = 0;
             int i_2_ = -1;
             int i_3_ = -1;
-            class348_sub49_0_.anInt7197 = class348_sub49.anInt7197 + i;
+            packet_0_.pos = packet.pos + i;
             for (int i_4_ = 0; i_4_ < i; i_4_++) {
                 int i_5_ = (this.aClass348_Sub33_134.anIntArray6957[i_4_]);
                 if (i_5_ == 0) i_2_ = i_4_;
-                int i_6_ = class348_sub49.readUnsignedByte(255);//byte
+                int i_6_ = packet.readUnsignedByte(255);//byte
                 if (i_6_ > 0) {
                     if (i_5_ == 0) i_3_ = i_4_;
                     aShortArray141[i_1_] = (short) i_4_;
                     short i_7_ = 0;
                     if (i_5_ == 3 || i_5_ == 10) i_7_ = (short) 128;
-                    if ((i_6_ & 0x1) != 0) aShortArray127[i_1_] = (short) class348_sub49_0_.method3362((byte) 77);//smart
+                    if ((i_6_ & 0x1) != 0) aShortArray127[i_1_] = (short) packet_0_.readSmarts((byte) 77);//smart
                     else aShortArray127[i_1_] = i_7_;
-                    if ((i_6_ & 0x2) != 0) aShortArray133[i_1_] = (short) class348_sub49_0_.method3362((byte) 77);//smart
+                    if ((i_6_ & 0x2) != 0) aShortArray133[i_1_] = (short) packet_0_.readSmarts((byte) 77);//smart
                     else aShortArray133[i_1_] = i_7_;
-                    if ((i_6_ & 0x4) != 0) aShortArray142[i_1_] = (short) class348_sub49_0_.method3362((byte) 77);//smart
+                    if ((i_6_ & 0x4) != 0) aShortArray142[i_1_] = (short) packet_0_.readSmarts((byte) 77);//smart
                     else aShortArray142[i_1_] = i_7_;
                     aByteArray136[i_1_] = (byte) (i_6_ >>> 3 & 0x3);
                     if (i_5_ == 2 || i_5_ == 9) {
@@ -70,7 +70,7 @@ final class Class4 {
                     i_1_++;
                 }
             }
-            if (class348_sub49_0_.anInt7197 != is.length) throw new RuntimeException();
+            if (packet_0_.pos != is.length) throw new RuntimeException();
             this.anInt126 = i_1_;
             this.aShortArray130 = new short[i_1_];
             this.aShortArray140 = new short[i_1_];

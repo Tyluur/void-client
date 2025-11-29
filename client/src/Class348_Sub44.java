@@ -48,7 +48,7 @@ final class Class348_Sub44 extends Node {
     static final int method3306(byte i) {
         if (i >= -90) anInt7101 = -7;
         anInt7097++;
-        if (Class348_Sub49.anInt7207 == 1) return Option_Sub16.anInt6008;
+        if (Packet.anInt7207 == 1) return Option_Sub16.anInt6008;
         return Class107.anInt1651;
     }
 

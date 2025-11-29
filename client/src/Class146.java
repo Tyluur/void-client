@@ -13,24 +13,24 @@ final class Class146 {
     int anInt2019;
     int anInt2020;
 
-    final void method1191(int i, Class348_Sub49 class348_sub49) {
+    final void method1191(int i, Packet packet) {
         if (i == 2048) {
             anInt2018++;
             for (; ; ) {
-                int i_0_ = class348_sub49.readUnsignedByte(255);
+                int i_0_ = packet.readUnsignedByte(255);
                 if (i_0_ == 0) break;
-                method1192(i_0_, class348_sub49, (byte) 17);
+                method1192(i_0_, packet, (byte) 17);
             }
         }
     }
 
-    private final void method1192(int i, Class348_Sub49 class348_sub49, byte i_1_) {
+    private final void method1192(int i, Packet packet, byte i_1_) {
         anInt2014++;
         if (i_1_ != 17) method1194(-80);
         if (i == 1) {
-            this.anInt2019 = class348_sub49.readUnsignedShort(842397944);
-            this.anInt2016 = class348_sub49.readUnsignedByte(255);
-            this.anInt2020 = class348_sub49.readUnsignedByte(i_1_ ^ 0xee);
+            this.anInt2019 = packet.readUnsignedShort(842397944);
+            this.anInt2016 = packet.readUnsignedByte(255);
+            this.anInt2020 = packet.readUnsignedByte(i_1_ ^ 0xee);
         }
     }
 

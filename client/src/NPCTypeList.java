@@ -110,7 +110,7 @@ final class NPCTypeList {
         NPCDefinition = new NPCDefinition();
         NPCDefinition.anInt1344 = i;
         NPCDefinition.aNPCTypeList_1348 = this;
-        if (is != null) NPCDefinition.method798(111, new Class348_Sub49(is));
+        if (is != null) NPCDefinition.method798(111, new Packet(is));
         NPCDefinition.method799(-117);
         synchronized (aClass60_3577) {
             aClass60_3577.method582(NPCDefinition, i, (byte) -102);

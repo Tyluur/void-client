@@ -131,8 +131,8 @@ final class Index {
         if (is == null || (is[0] == 0 && is[1] == 0 && is[2] == 0 && is[3] == 0)) is_14_ = Class50_Sub1.method461(false, anObjectArray656[i_9_], 53146732);
         else {
             is_14_ = Class50_Sub1.method461(true, anObjectArray656[i_9_], 53146732);
-            Class348_Sub49 class348_sub49 = new Class348_Sub49(is_14_);
-            class348_sub49.method3367(607818341, is, 5, (class348_sub49.aByteArray7154).length);
+            Packet packet = new Packet(is_14_);
+            packet.method3367(607818341, is, 5, (packet.aByteArray7154).length);
         }
         byte[] is_15_;
         try {
@@ -147,14 +147,14 @@ final class Index {
                 int i_30_ = is_15_.length;
                 int i_31_ = 0xff & is_15_[--i_30_];
                 i_30_ -= 4 * (i_31_ * i_10_);
-                Class348_Sub49 class348_sub49 = new Class348_Sub49(is_15_);
+                Packet packet = new Packet(is_15_);
                 int i_32_ = 0;
                 int i_33_ = 0;
-                class348_sub49.anInt7197 = i_30_;
+                packet.pos = i_30_;
                 for (int i_34_ = 0; i_34_ < i_31_; i_34_++) {
                     int i_35_ = 0;
                     for (int i_36_ = 0; i_36_ < i_10_; i_36_++) {
-                        i_35_ += class348_sub49.readInt((byte) -126);
+                        i_35_ += packet.readInt((byte) -126);
                         int i_37_;
                         if (is_11_ == null) i_37_ = i_36_;
                         else i_37_ = is_11_[i_36_];
@@ -166,13 +166,13 @@ final class Index {
                 }
                 if (i_32_ == 0) return true;
                 byte[] is_38_ = new byte[i_32_];
-                class348_sub49.anInt7197 = i_30_;
+                packet.pos = i_30_;
                 i_32_ = 0;
                 int i_39_ = 0;
                 for (int i_40_ = 0; i_40_ < i_31_; i_40_++) {
                     int i_41_ = 0;
                     for (int i_42_ = 0; i_42_ < i_10_; i_42_++) {
-                        i_41_ += class348_sub49.readInt((byte) -126);
+                        i_41_ += packet.readInt((byte) -126);
                         int i_43_;
                         if (is_11_ != null) i_43_ = is_11_[i_42_];
                         else i_43_ = i_42_;
@@ -188,13 +188,13 @@ final class Index {
                 int i_16_ = is_15_.length;
                 int i_17_ = 0xff & is_15_[--i_16_];
                 i_16_ -= 4 * (i_10_ * i_17_);
-                Class348_Sub49 class348_sub49 = new Class348_Sub49(is_15_);
+                Packet packet = new Packet(is_15_);
                 int[] is_18_ = new int[i_10_];
-                class348_sub49.anInt7197 = i_16_;
+                packet.pos = i_16_;
                 for (int i_19_ = 0; i_19_ < i_17_; i_19_++) {
                     int i_20_ = 0;
                     for (int i_21_ = 0; i_21_ < i_10_; i_21_++) {
-                        i_20_ += class348_sub49.readInt((byte) -126);
+                        i_20_ += packet.readInt((byte) -126);
                         is_18_[i_21_] += i_20_;
                     }
                 }
@@ -203,12 +203,12 @@ final class Index {
                     is_22_[i_23_] = new byte[is_18_[i_23_]];
                     is_18_[i_23_] = 0;
                 }
-                class348_sub49.anInt7197 = i_16_;
+                packet.pos = i_16_;
                 int i_24_ = 0;
                 for (int i_25_ = 0; i_25_ < i_17_; i_25_++) {
                     int i_26_ = 0;
                     for (int i_27_ = 0; i_10_ > i_27_; i_27_++) {
-                        i_26_ += class348_sub49.readInt((byte) -126);
+                        i_26_ += packet.readInt((byte) -126);
                         Class214.method1577(is_15_, i_24_, is_22_[i_27_], is_18_[i_27_], i_26_);
                         i_24_ += i_26_;
                         is_18_[i_27_] += i_26_;
@@ -233,7 +233,7 @@ final class Index {
     }
 
     static final void method395(int i) throws Exception_Sub1 {
-        if (Class348_Sub49.anInt7207 == 1) Class21.aHa326.method3626(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157);
+        if (Packet.anInt7207 == 1) Class21.aHa326.method3626(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157);
         else Class21.aHa326.method3626(0, 0);
         if (i >= 73) anInt642++;
     }

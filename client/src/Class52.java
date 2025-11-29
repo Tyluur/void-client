@@ -21,10 +21,10 @@ final class Class52 implements Interface12 {
     static int[] anIntArray4906;
     static Class351 aClass351_4907;
 
-    static final Class43 method490(byte i, Class348_Sub49 class348_sub49) {
+    static final Class43 method490(byte i, Packet packet) {
         anInt4897++;
         Class43 class43 = new Class43();
-        class43.anInt615 = class348_sub49.readUnsignedShort(842397944);
+        class43.anInt615 = packet.readUnsignedShort(842397944);
         class43.aClass348_Sub42_Sub10_614 = Option_Sub6.quickChatPhraseTypeList.method3471(class43.anInt615, (byte) -90);
         int i_0_ = -91 / ((9 - i) / 54);
         return class43;
@@ -79,7 +79,7 @@ final class Class52 implements Interface12 {
             if (Class348_Sub42_Sub15.state.displayPercentage) Class64_Sub2.loadingText += Class251.loadPercentage + "%";
         } else if (Class348_Sub42_Sub15.state == LoadState.COMPLETE) {
             Class51.renderer = null;
-            Class348_Sub49.setStep(2, 3);
+            Packet.setStep(2, 3);
         } else {
             Class64_Sub2.loadingText = oldState.aClass274_1015.method2063(Class348_Sub33.language, 544);
             if (Class348_Sub42_Sub15.state.displayPercentage) Class64_Sub2.loadingText += oldState.anInt1021 + "%";

@@ -35,9 +35,9 @@ class Class348_Sub40_Sub17 extends Class348_Sub40 {
         super(0, false);
     }
 
-    final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
+    final void method3049(Packet packet, int i, int i_0_) {
         if (i_0_ == 31015) {
-            if (i == 0) anInt9243 = class348_sub49.readUnsignedShort(842397944);
+            if (i == 0) anInt9243 = packet.readUnsignedShort(842397944);
             anInt9236++;
         }
     }

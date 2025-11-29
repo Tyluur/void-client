@@ -100,36 +100,36 @@ final class Class287 {
         /* empty */
     }
 
-    private final Interface12 method2182(boolean bool, Class223 class223, Class348_Sub49 class348_sub49) {
+    private final Interface12 method2182(boolean bool, Class223 class223, Packet packet) {
         try {
             anInt3692++;
-            if (HitmarkTypeList.aClass223_2868 == class223) return TimedVarDomain.method1312((byte) 64, class348_sub49);
-            if (Class348_Sub49.aClass223_7175 == class223) return Sprite_Sub1.method987(743571200, class348_sub49);
-            if (Class101_Sub1.aClass223_5689 == class223) return Class303.method2287(class348_sub49, (byte) -112);
-            if (class223 == Class28.aClass223_4997) return Class337.method2660((byte) 26, class348_sub49);
+            if (HitmarkTypeList.aClass223_2868 == class223) return TimedVarDomain.method1312((byte) 64, packet);
+            if (Packet.aClass223_7175 == class223) return Sprite_Sub1.method987(743571200, packet);
+            if (Class101_Sub1.aClass223_5689 == class223) return Class303.method2287(packet, (byte) -112);
+            if (class223 == Class28.aClass223_4997) return Class337.method2660((byte) 26, packet);
             if (bool != true) method2180((byte) -104);
-            if (class223 == Class348_Sub40_Sub21.aClass223_9274) return Class288_Sub1.method2189(class348_sub49, 86);
-            if (class223 == Class313.aClass223_3934) return Class5.method179(16533, class348_sub49);
-            if (LightTypeList.aClass223_2489 == class223) return Class348_Sub46.method3322(0, class348_sub49);
-            if (class223 == Class174.aClass223_2307) return Class50_Sub4.method472(-27794, class348_sub49);
-            if (Class149.aClass223_2045 == class223) return Class328_Sub2.method2612(class348_sub49, true);
-            if (QuestTypeList.aClass223_2507 == class223) return Class285_Sub1.method2128(-1730, class348_sub49);
+            if (class223 == Class348_Sub40_Sub21.aClass223_9274) return Class288_Sub1.method2189(packet, 86);
+            if (class223 == Class313.aClass223_3934) return Class5.method179(16533, packet);
+            if (LightTypeList.aClass223_2489 == class223) return Class348_Sub46.method3322(0, packet);
+            if (class223 == Class174.aClass223_2307) return Class50_Sub4.method472(-27794, packet);
+            if (Class149.aClass223_2045 == class223) return Class328_Sub2.method2612(packet, true);
+            if (QuestTypeList.aClass223_2507 == class223) return Class285_Sub1.method2128(-1730, packet);
             return null;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vp.F(" + bool + ',' + (class223 != null ? "{...}" : "null") + ',' + (class348_sub49 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("vp.F(" + bool + ',' + (class223 != null ? "{...}" : "null") + ',' + (packet != null ? "{...}" : "null") + ')'));
         }
     }
 
-    final void method2183(Class348_Sub49 class348_sub49, int i) {
-        this.anInt3690 = class348_sub49.readMedium(-1);
+    final void method2183(Packet packet, int i) {
+        this.anInt3690 = packet.readMedium(-1);
         anInt3693++;
-        this.anInt3687 = class348_sub49.readUnsignedShort(842397944);
-        this.anInterface12Array3688 = new Interface12[class348_sub49.readUnsignedByte(i ^ 0x557d)];
+        this.anInt3687 = packet.readUnsignedShort(842397944);
+        this.anInterface12Array3688 = new Interface12[packet.readUnsignedByte(i ^ 0x557d)];
         Class223[] class223s = Class19.method285(-99);
         int i_27_ = 0;
         if (i != 21890) method2180((byte) 25);
         for (/**/; this.anInterface12Array3688.length > i_27_; i_27_++)
-            this.anInterface12Array3688[i_27_] = method2182(true, class223s[(class348_sub49.readUnsignedByte(Class348_Sub21.method2955(i, 21885)))], class348_sub49);
+            this.anInterface12Array3688[i_27_] = method2182(true, class223s[(packet.readUnsignedByte(Class348_Sub21.method2955(i, 21885)))], packet);
     }
 
     static final char method2184(char c, int i) {

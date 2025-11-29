@@ -103,8 +103,8 @@ final class a implements Interface19 {
             var_i_49_ = anI5105;
         } else var_i_49_ = var_i_48_ = new i(anOa5115);
         var_i.ZA(var_i_49_, var_i_48_, i_47_, i != 0, bool);
-        var_i_49_.aClass129Array5119 = var_i.aClass129Array5119;
-        var_i_49_.aClass342Array5118 = var_i.aClass342Array5118;
+        var_i_49_.aModelParticleEmitterArray5119 = var_i.aModelParticleEmitterArray5119;
+        var_i_49_.aModelParticleEffectorArray5118 = var_i.aModelParticleEffectorArray5118;
         return var_i_49_;
     }
 

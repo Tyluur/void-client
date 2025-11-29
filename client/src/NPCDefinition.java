@@ -117,69 +117,69 @@ final class NPCDefinition {
         return this.aNPCTypeList_1348.method2079(this.anIntArray1377[i_2_], -1);
     }
 
-    private final void method795(Class348_Sub49 class348_sub49, int i, int i_4_) {
+    private final void method795(Packet packet, int i, int i_4_) {
         if (i_4_ != 127) this.aBoolean1381 = true;
         if (i == 1) {
-            int i_5_ = class348_sub49.readUnsignedByte(255);
+            int i_5_ = packet.readUnsignedByte(255);
             anIntArray1402 = new int[i_5_];
             for (int i_6_ = 0; i_5_ > i_6_; i_6_++) {
-                anIntArray1402[i_6_] = class348_sub49.readUnsignedShort(842397944);
+                anIntArray1402[i_6_] = packet.readUnsignedShort(842397944);
                 if (anIntArray1402[i_6_] == 65535) anIntArray1402[i_6_] = -1;
             }
         } else if (i == 2) {
-            this.aString1372 = class348_sub49.readString((byte) 122);
+            this.aString1372 = packet.readString((byte) 122);
         } else {
             if (i != 12) {
                 if (i < 30 || i >= 35) {
                     if (i == 40) {
-                        int i_25_ = class348_sub49.readUnsignedByte(255);
+                        int i_25_ = packet.readUnsignedByte(255);
                         aShortArray1328 = new short[i_25_];
                         aShortArray1352 = new short[i_25_];
                         for (int i_26_ = 0; i_26_ < i_25_; i_26_++) {
-                            aShortArray1328[i_26_] = (short) class348_sub49.readUnsignedShort(842397944);
-                            aShortArray1352[i_26_] = (short) class348_sub49.readUnsignedShort(842397944);
+                            aShortArray1328[i_26_] = (short) packet.readUnsignedShort(842397944);
+                            aShortArray1352[i_26_] = (short) packet.readUnsignedShort(842397944);
                         }
                     } else if (i == 41) {
-                        int i_23_ = class348_sub49.readUnsignedByte(255);
+                        int i_23_ = packet.readUnsignedByte(255);
                         aShortArray1393 = new short[i_23_];
                         aShortArray1391 = new short[i_23_];
                         for (int i_24_ = 0; i_24_ < i_23_; i_24_++) {
-                            aShortArray1393[i_24_] = (short) class348_sub49.readUnsignedShort(842397944);
-                            aShortArray1391[i_24_] = (short) class348_sub49.readUnsignedShort(842397944);
+                            aShortArray1393[i_24_] = (short) packet.readUnsignedShort(842397944);
+                            aShortArray1391[i_24_] = (short) packet.readUnsignedShort(842397944);
                         }
                     } else if (i == 42) {
-                        int i_7_ = class348_sub49.readUnsignedByte(i_4_ ^ 0x80);
+                        int i_7_ = packet.readUnsignedByte(i_4_ ^ 0x80);
                         aByteArray1374 = new byte[i_7_];
                         for (int i_8_ = 0; i_8_ < i_7_; i_8_++)
-                            aByteArray1374[i_8_] = class348_sub49.readByte(-88);
+                            aByteArray1374[i_8_] = packet.readByte(-88);
                     } else if (i == 60) {
-                        int i_9_ = class348_sub49.readUnsignedByte(255);
+                        int i_9_ = packet.readUnsignedByte(255);
                         anIntArray1380 = new int[i_9_];
                         for (int i_10_ = 0; i_9_ > i_10_; i_10_++)
-                            anIntArray1380[i_10_] = class348_sub49.readUnsignedShort(842397944);
+                            anIntArray1380[i_10_] = packet.readUnsignedShort(842397944);
                     } else if (i != 93) {
                         if (i != 95) {
                             if (i != 97) {
                                 if (i != 98) {
                                     if (i == 99) this.aBoolean1345 = true;
                                     else if (i != 100) {
-                                        if (i == 101) anInt1406 = 5 * (class348_sub49.readByte(i_4_ ^ ~0x27));
-                                        else if (i == 102) this.anInt1375 = (class348_sub49.readUnsignedShort(i_4_ + 842397817));
-                                        else if (i == 103) this.anInt1329 = (class348_sub49.readUnsignedShort(842397944));
+                                        if (i == 101) anInt1406 = 5 * (packet.readByte(i_4_ ^ ~0x27));
+                                        else if (i == 102) this.anInt1375 = (packet.readUnsignedShort(i_4_ + 842397817));
+                                        else if (i == 103) this.anInt1329 = (packet.readUnsignedShort(842397944));
                                         else if ((i == 106) || i == 118) {
-                                            anInt1368 = (class348_sub49.readUnsignedShort(842397944));
+                                            anInt1368 = (packet.readUnsignedShort(842397944));
                                             if (anInt1368 == 65535) anInt1368 = -1;
-                                            anInt1354 = (class348_sub49.readUnsignedShort(842397944));
+                                            anInt1354 = (packet.readUnsignedShort(842397944));
                                             if (anInt1354 == 65535) anInt1354 = -1;
                                             int i_11_ = -1;
                                             if (i == 118) {
-                                                i_11_ = (class348_sub49.readUnsignedShort(842397944));
+                                                i_11_ = (packet.readUnsignedShort(842397944));
                                                 if (i_11_ == 65535) i_11_ = -1;
                                             }
-                                            int i_12_ = class348_sub49.readUnsignedByte(255);
+                                            int i_12_ = packet.readUnsignedByte(255);
                                             this.anIntArray1377 = new int[2 + i_12_];
                                             for (int i_13_ = 0; i_13_ <= i_12_; i_13_++) {
-                                                this.anIntArray1377[i_13_] = (class348_sub49.readUnsignedShort(842397944));
+                                                this.anIntArray1377[i_13_] = (packet.readUnsignedShort(842397944));
                                                 if ((this.anIntArray1377[i_13_]) == 65535) this.anIntArray1377[i_13_] = -1;
                                             }
                                             this.anIntArray1377[1 + i_12_] = i_11_;
@@ -187,107 +187,107 @@ final class NPCDefinition {
                                         else if (i != 109) {
                                             if (i == 111) this.aBoolean1369 = false;
                                             else if (i == 113) {
-                                                this.aShort1339 = (short) (class348_sub49.readUnsignedShort(842397944));
-                                                this.aShort1350 = (short) (class348_sub49.readUnsignedShort(842397944));
+                                                this.aShort1339 = (short) (packet.readUnsignedShort(842397944));
+                                                this.aShort1350 = (short) (packet.readUnsignedShort(842397944));
                                             } else if (i == 114) {
-                                                this.aByte1353 = (class348_sub49.readByte(-110));
-                                                this.aByte1347 = (class348_sub49.readByte(-85));
+                                                this.aByte1353 = (packet.readByte(-110));
+                                                this.aByte1347 = (packet.readByte(-85));
                                             } else if (i != 119) {
                                                 if (i == 121) {
                                                     anIntArrayArray1388 = (new int
                                                             [anIntArray1402.length]
                                                             []);
-                                                    int i_14_ = (class348_sub49.readUnsignedByte(255));
+                                                    int i_14_ = (packet.readUnsignedByte(255));
                                                     for (int i_15_ = 0; (i_14_ > i_15_); i_15_++) {
-                                                        int i_16_ = (class348_sub49.readUnsignedByte(255));
+                                                        int i_16_ = (packet.readUnsignedByte(255));
                                                         int[] is = (anIntArrayArray1388[i_16_] = new int[3]);
-                                                        is[0] = (class348_sub49.readByte(Class348_Sub21.method2955(i_4_, -50)));
-                                                        is[1] = (class348_sub49.readByte(-113));
-                                                        is[2] = (class348_sub49.readByte(-84));
+                                                        is[0] = (packet.readByte(Class348_Sub21.method2955(i_4_, -50)));
+                                                        is[1] = (packet.readByte(-113));
+                                                        is[2] = (packet.readByte(-84));
                                                     }
-                                                } else if (i == 122) this.anInt1373 = (class348_sub49.readUnsignedShort(842397944));
+                                                } else if (i == 122) this.anInt1373 = (packet.readUnsignedShort(842397944));
                                                 else if (i != 123) {
-                                                    if (i == 125) this.aByte1355 = (class348_sub49.readByte(-95));
-                                                    else if (i == 127) this.anInt1366 = (class348_sub49.readUnsignedShort(i_4_ + 842397817));
+                                                    if (i == 125) this.aByte1355 = (packet.readByte(-95));
+                                                    else if (i == 127) this.anInt1366 = (packet.readUnsignedShort(i_4_ + 842397817));
                                                     else if (i != 128) {
                                                         if (i == 134) {
-                                                            this.anInt1343 = class348_sub49.readUnsignedShort(842397944);
+                                                            this.anInt1343 = packet.readUnsignedShort(842397944);
                                                             if (this.anInt1343 == 65535) this.anInt1343 = -1;
-                                                            this.anInt1395 = class348_sub49.readUnsignedShort(842397944);
+                                                            this.anInt1395 = packet.readUnsignedShort(842397944);
                                                             if (this.anInt1395 == 65535) this.anInt1395 = -1;
-                                                            this.anInt1364 = class348_sub49.readUnsignedShort(842397944);
+                                                            this.anInt1364 = packet.readUnsignedShort(842397944);
                                                             if (this.anInt1364 == 65535) this.anInt1364 = -1;
-                                                            this.anInt1327 = class348_sub49.readUnsignedShort(i_4_ ^ 0x3235f887);
+                                                            this.anInt1327 = packet.readUnsignedShort(i_4_ ^ 0x3235f887);
                                                             if (this.anInt1327 == 65535) this.anInt1327 = -1;
-                                                            this.anInt1392 = class348_sub49.readUnsignedByte(255);
+                                                            this.anInt1392 = packet.readUnsignedByte(255);
                                                         } else if (i == 135) {
-                                                            this.anInt1335 = class348_sub49.readUnsignedByte(255);
-                                                            this.anInt1371 = class348_sub49.readUnsignedShort(842397944);
+                                                            this.anInt1335 = packet.readUnsignedByte(255);
+                                                            this.anInt1371 = packet.readUnsignedShort(842397944);
                                                         } else if (i == 136) {
-                                                            this.anInt1385 = class348_sub49.readUnsignedByte(255);
-                                                            this.anInt1338 = class348_sub49.readUnsignedShort(842397944);
+                                                            this.anInt1385 = packet.readUnsignedByte(255);
+                                                            this.anInt1338 = packet.readUnsignedShort(842397944);
                                                         } else if (i != 137) {
                                                             if (i != 138) {
                                                                 if (i != 139) {
                                                                     if (i != 140) {
                                                                         if (i == 141) this.aBoolean1362 = true;
-                                                                        else if (i == 142) this.anInt1383 = class348_sub49.readUnsignedShort(842397944);
+                                                                        else if (i == 142) this.anInt1383 = packet.readUnsignedShort(842397944);
                                                                         else if (i != 143) {
                                                                             if (i >= 150 && i < 155) {
-                                                                                this.aStringArray1349[-150 + i] = class348_sub49.readString((byte) -73);
+                                                                                this.aStringArray1349[-150 + i] = packet.readString((byte) -73);
                                                                                 if (!this.aNPCTypeList_1348.aBoolean3583) this.aStringArray1349[i + -150] = null;
                                                                             } else if (i == 155) {
-                                                                                aByte1376 = class348_sub49.readByte(i_4_ ^ ~0x16);
-                                                                                aByte1360 = class348_sub49.readByte(-113);
-                                                                                aByte1330 = class348_sub49.readByte(-112);
-                                                                                aByte1405 = class348_sub49.readByte(-87);
+                                                                                aByte1376 = packet.readByte(i_4_ ^ ~0x16);
+                                                                                aByte1360 = packet.readByte(-113);
+                                                                                aByte1330 = packet.readByte(-112);
+                                                                                aByte1405 = packet.readByte(-87);
                                                                             } else if (i == 158) this.aByte1384 = (byte) 1;
                                                                             else if (i != 159) {
                                                                                 if (i == 160) {
-                                                                                    int i_21_ = class348_sub49.readUnsignedByte(255);
+                                                                                    int i_21_ = packet.readUnsignedByte(255);
                                                                                     this.anIntArray1342 = new int[i_21_];
                                                                                     for (int i_22_ = 0; i_22_ < i_21_; i_22_++)
-                                                                                        this.anIntArray1342[i_22_] = class348_sub49.readUnsignedShort(i_4_ + 842397817);
+                                                                                        this.anIntArray1342[i_22_] = packet.readUnsignedShort(i_4_ + 842397817);
                                                                                 } else if (i == 162) this.aBoolean1370 = true;
                                                                                 else if (i != 163) {
                                                                                     if (i == 164) {
-                                                                                        this.anInt1340 = class348_sub49.readUnsignedShort(842397944);
-                                                                                        this.anInt1363 = class348_sub49.readUnsignedShort(842397944);
+                                                                                        this.anInt1340 = packet.readUnsignedShort(842397944);
+                                                                                        this.anInt1363 = packet.readUnsignedShort(842397944);
                                                                                     } else if (i != 165) {
                                                                                         if (i == 249) {
-                                                                                            int i_17_ = class348_sub49.readUnsignedByte(255);
+                                                                                            int i_17_ = packet.readUnsignedByte(255);
                                                                                             if (aClass356_1386 == null) {
                                                                                                 int i_18_ = EnumTypeList.method340(i_17_, (byte) 108);
                                                                                                 aClass356_1386 = new Class356(i_18_);
                                                                                             }
                                                                                             for (int i_19_ = 0; i_17_ > i_19_; i_19_++) {
-                                                                                                boolean bool = class348_sub49.readUnsignedByte(255) == 1;
-                                                                                                int i_20_ = class348_sub49.readMedium(-1);
+                                                                                                boolean bool = packet.readUnsignedByte(255) == 1;
+                                                                                                int i_20_ = packet.readMedium(-1);
                                                                                                 Node node;
-                                                                                                if (!bool) node = new Class348_Sub35(class348_sub49.readInt((byte) -126));
-                                                                                                else node = new Class348_Sub50(class348_sub49.readString((byte) -120));
+                                                                                                if (!bool) node = new Class348_Sub35(packet.readInt((byte) -126));
+                                                                                                else node = new Class348_Sub50(packet.readString((byte) -120));
                                                                                                 aClass356_1386.method3483((byte) 61, i_20_, node);
                                                                                             }
                                                                                         }
-                                                                                    } else this.anInt1337 = class348_sub49.readUnsignedByte(255);
-                                                                                } else this.anInt1333 = class348_sub49.readUnsignedByte(i_4_ + 128);
+                                                                                    } else this.anInt1337 = packet.readUnsignedByte(255);
+                                                                                } else this.anInt1333 = packet.readUnsignedByte(i_4_ + 128);
                                                                             } else this.aByte1384 = (byte) 0;
                                                                         } else this.aBoolean1381 = true;
-                                                                    } else this.anInt1356 = class348_sub49.readUnsignedByte(i_4_ + 128);
-                                                                } else this.anInt1382 = class348_sub49.readUnsignedShort(i_4_ + 842397817);
-                                                            } else this.anInt1336 = class348_sub49.readUnsignedShort(842397944);
-                                                        } else this.anInt1401 = class348_sub49.readUnsignedShort(842397944);
-                                                    } else class348_sub49.readUnsignedByte(255);
-                                                } else this.anInt1390 = (class348_sub49.readUnsignedShort(i_4_ ^ 0x3235f887));
-                                            } else this.walkMask = (class348_sub49.readByte(i_4_ + -245));
+                                                                    } else this.anInt1356 = packet.readUnsignedByte(i_4_ + 128);
+                                                                } else this.anInt1382 = packet.readUnsignedShort(i_4_ + 842397817);
+                                                            } else this.anInt1336 = packet.readUnsignedShort(842397944);
+                                                        } else this.anInt1401 = packet.readUnsignedShort(842397944);
+                                                    } else packet.readUnsignedByte(255);
+                                                } else this.anInt1390 = (packet.readUnsignedShort(i_4_ ^ 0x3235f887));
+                                            } else this.walkMask = (packet.readByte(i_4_ + -245));
                                         } else this.aBoolean1331 = false;
-                                    } else anInt1398 = class348_sub49.readByte(-123);
-                                } else anInt1358 = (class348_sub49.readUnsignedShort(i_4_ + 842397817));
-                            } else anInt1346 = class348_sub49.readUnsignedShort(842397944);
-                        } else this.anInt1361 = class348_sub49.readUnsignedShort(842397944);
+                                    } else anInt1398 = packet.readByte(-123);
+                                } else anInt1358 = (packet.readUnsignedShort(i_4_ + 842397817));
+                            } else anInt1346 = packet.readUnsignedShort(842397944);
+                        } else this.anInt1361 = packet.readUnsignedShort(842397944);
                     } else this.aBoolean1397 = false;
-                } else this.aStringArray1349[-30 + i] = class348_sub49.readString((byte) 124);
-            } else this.size = class348_sub49.readUnsignedByte(i_4_ + 128);
+                } else this.aStringArray1349[-30 + i] = packet.readString((byte) 124);
+            } else this.size = packet.readUnsignedByte(i_4_ + 128);
         }
         anInt1357++;
     }
@@ -327,11 +327,11 @@ final class NPCDefinition {
         }
     }
 
-    final void method798(int i, Class348_Sub49 class348_sub49) {
+    final void method798(int i, Packet packet) {
         for (; ; ) {
-            int i_33_ = class348_sub49.readUnsignedByte(255);
+            int i_33_ = packet.readUnsignedByte(255);
             if (i_33_ == 0) break;
-            method795(class348_sub49, i_33_, 127);
+            method795(packet, i_33_, 127);
         }
         anInt1400++;
         if (i <= 35) method798(-16, null);
@@ -488,21 +488,21 @@ final class NPCDefinition {
                     }
                 }
                 if (bool_70_) return null;
-                Class124[] class124s = new Class124[anIntArray1402.length];
+                Mesh[] meshes = new Mesh[anIntArray1402.length];
                 for (int i_72_ = 0; i_72_ < anIntArray1402.length; i_72_++) {
                     if (anIntArray1402[i_72_] != -1) {
                         synchronized (this.aNPCTypeList_1348.aIndex_3576) {
-                            class124s[i_72_] = Class300.method2277(0, (this.aNPCTypeList_1348.aIndex_3576), anIntArray1402[i_72_], -1);
+                            meshes[i_72_] = Class300.method2277(0, (this.aNPCTypeList_1348.aIndex_3576), anIntArray1402[i_72_], -1);
                         }
-                        if (class124s[i_72_] != null) {
-                            if (class124s[i_72_].anInt1830 < 13) class124s[i_72_].method1092(2, 115);
-                            if (anIntArrayArray1388 != null && anIntArrayArray1388[i_72_] != null) class124s[i_72_].method1099((byte) 44, anIntArrayArray1388[i_72_][2], anIntArrayArray1388[i_72_][0], anIntArrayArray1388[i_72_][1]);
+                        if (meshes[i_72_] != null) {
+                            if (meshes[i_72_].version < 13) meshes[i_72_].method1092(2, 115);
+                            if (anIntArrayArray1388 != null && anIntArrayArray1388[i_72_] != null) meshes[i_72_].method1099((byte) 44, anIntArrayArray1388[i_72_][2], anIntArrayArray1388[i_72_][0], anIntArrayArray1388[i_72_][1]);
                         }
                     }
                 }
                 if (class225 != null && class225.anIntArrayArray2939 != null) {
                     for (int i_73_ = 0; (i_73_ < class225.anIntArrayArray2939.length); i_73_++) {
-                        if (class124s.length > i_73_ && class124s[i_73_] != null) {
+                        if (meshes.length > i_73_ && meshes[i_73_] != null) {
                             int i_74_ = 0;
                             int i_75_ = 0;
                             int i_76_ = 0;
@@ -517,18 +517,18 @@ final class NPCDefinition {
                                 i_77_ = ((class225.anIntArrayArray2939[i_73_][3]) << 3);
                                 i_74_ = (class225.anIntArrayArray2939[i_73_][0]);
                             }
-                            if (i_77_ != 0 || i_78_ != 0 || i_79_ != 0) class124s[i_73_].method1107(6875, i_78_, i_79_, i_77_);
-                            if (i_74_ != 0 || i_75_ != 0 || i_76_ != 0) class124s[i_73_].method1099((byte) 93, i_76_, i_74_, i_75_);
+                            if (i_77_ != 0 || i_78_ != 0 || i_79_ != 0) meshes[i_73_].method1107(6875, i_78_, i_79_, i_77_);
+                            if (i_74_ != 0 || i_75_ != 0 || i_76_ != 0) meshes[i_73_].method1099((byte) 93, i_76_, i_74_, i_75_);
                         }
                     }
                 }
-                Class124 class124;
-                if (class124s.length == 1) class124 = class124s[0];
-                else class124 = new Class124(class124s, class124s.length);
+                Mesh mesh;
+                if (meshes.length == 1) mesh = meshes[0];
+                else mesh = new Mesh(meshes, meshes.length);
                 if (aShortArray1328 != null) i_69_ |= 0x4000;
                 if (aShortArray1393 != null) i_69_ |= 0x8000;
                 if (aByte1405 != 0) i_69_ |= 0x80000;
-                class64 = var_ha.method3625(class124, i_69_, (this.aNPCTypeList_1348.anInt3593), 64 + anInt1398, 850 + anInt1406);
+                class64 = var_ha.method3625(mesh, i_69_, (this.aNPCTypeList_1348.anInt3593), 64 + anInt1398, 850 + anInt1406);
                 if (aShortArray1328 != null) {
                     for (int i_80_ = 0; (i_80_ < aShortArray1328.length); i_80_++) {
                         if (aByteArray1374 == null || aByteArray1374.length <= i_80_) class64.ia(aShortArray1328[i_80_], aShortArray1352[i_80_]);
@@ -643,21 +643,21 @@ final class NPCDefinition {
                     }
                 }
                 if (bool) return null;
-                Class124[] class124s = new Class124[anIntArray1380.length];
+                Mesh[] meshes = new Mesh[anIntArray1380.length];
                 synchronized (this.aNPCTypeList_1348.aIndex_3576) {
                     for (int i_102_ = 0; (anIntArray1380.length > i_102_); i_102_++)
-                        class124s[i_102_] = Class300.method2277(0, (this.aNPCTypeList_1348.aIndex_3576), anIntArray1380[i_102_], -1);
+                        meshes[i_102_] = Class300.method2277(0, (this.aNPCTypeList_1348.aIndex_3576), anIntArray1380[i_102_], -1);
                 }
                 for (int i_103_ = 0; (i_103_ < anIntArray1380.length); i_103_++) {
-                    if (class124s[i_103_] != null && class124s[i_103_].anInt1830 < 13) class124s[i_103_].method1092(2, 66);
+                    if (meshes[i_103_] != null && meshes[i_103_].version < 13) meshes[i_103_].method1092(2, 66);
                 }
-                Class124 class124;
-                if (class124s.length == 1) class124 = class124s[0];
-                else class124 = new Class124(class124s, class124s.length);
+                Mesh mesh;
+                if (meshes.length == 1) mesh = meshes[0];
+                else mesh = new Mesh(meshes, meshes.length);
                 if (aShortArray1328 != null) i_100_ |= 0x4000;
                 if (aShortArray1393 != null) i_100_ |= 0x8000;
                 if (aByte1405 != 0) i_100_ |= 0x80000;
-                class64 = var_ha.method3625(class124, i_100_, (this.aNPCTypeList_1348.anInt3593), 64, 768);
+                class64 = var_ha.method3625(mesh, i_100_, (this.aNPCTypeList_1348.anInt3593), 64, 768);
                 if (aShortArray1328 != null) {
                     for (int i_104_ = 0; (aShortArray1328.length > i_104_); i_104_++) {
                         if (aByteArray1374 != null && aByteArray1374.length > i_104_) class64.ia(aShortArray1328[i_104_], (Class348_Sub42_Sub3.aShortArray9502[0xff & aByteArray1374[i_104_]]));

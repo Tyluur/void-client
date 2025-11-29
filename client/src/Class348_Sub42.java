@@ -33,7 +33,7 @@ class Class348_Sub42 extends Node {
         anInt7062++;
         if (i == -114) {
             for (int i_0_ = 0; i_0_ < 2048; i_0_++) {
-                Class154.aClass348_Sub49Array2105[i_0_] = null;
+                Class154.aPacketArray2105[i_0_] = null;
                 VarcTypeList.aByteArray3300[i_0_] = (byte) 1;
                 Class348_Sub17.aClass359Array6802[i_0_] = null;
             }

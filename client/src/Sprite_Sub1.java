@@ -57,12 +57,12 @@ final class Sprite_Sub1 extends Sprite {
         anInterface18_Impl3_8403.method68(i_7_, 22809, is, i, i_6_, i_4_, i_3_, i_5_);
     }
 
-    static final Class369_Sub2 method987(int i, Class348_Sub49 class348_sub49) {
+    static final Class369_Sub2 method987(int i, Packet packet) {
         anInt8405++;
-        Class369 class369 = Class348_Sub16_Sub2.method2834((byte) -118, class348_sub49);
+        Class369 class369 = Class348_Sub16_Sub2.method2834((byte) -118, packet);
         if (i != 743571200) method989(-21, 36, 81);
-        int i_8_ = class348_sub49.readInt((byte) -126);
-        int i_9_ = class348_sub49.readInt((byte) -126);
+        int i_8_ = packet.readInt((byte) -126);
+        int i_9_ = packet.readInt((byte) -126);
         return new Class369_Sub2(class369.aClass221_4968, class369.aClass341_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_8_, i_9_);
     }
 
@@ -296,7 +296,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3915(0);
         aHa_Sub3_8407.method3933(-109);
         aHa_Sub3_8407.method3879(-8629);
-        aHa_Sub3_8407.method3849((byte) 47, 0, Class342.aClass70_4247);
+        aHa_Sub3_8407.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
         aHa_Sub3_8407.method3874(Class167.aClass229_2207, 118, Class167.aClass229_2207);
         aHa_Sub3_8407.method3850((byte) 98, null);
         aHa_Sub3_8407.method3897(0, -4382);
@@ -448,7 +448,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
         aHa_Sub3_8407.method3933(-81);
         aHa_Sub3_8407.method3879(-8629);
-        aHa_Sub3_8407.method3849((byte) 47, 0, Class342.aClass70_4247);
+        aHa_Sub3_8407.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
         aHa_Sub3_8407.method3874(Class167.aClass229_2207, 127, Class167.aClass229_2207);
         aHa_Sub3_8407.method3850((byte) -84, null);
         aHa_Sub3_8407.method3897(0, -4382);

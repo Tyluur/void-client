@@ -254,7 +254,7 @@ final class Class107 {
         Class27.anInt394 = is[3];
         Option_Sub5.anInt5886 = is[1];
         if (bool_42_) {
-            Class21.aHa326.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, Class129.anInt1879);
+            Class21.aHa326.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, ModelParticleEmitter.anInt1879);
             r.method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120);
         } else {
             Class21.aHa326.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95);

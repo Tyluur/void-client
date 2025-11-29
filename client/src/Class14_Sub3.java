@@ -47,7 +47,7 @@ final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
                     i_2_ = class234.method1656(is, i_3_, (byte) -49, -i_3_ + is.length);
                     if (i_2_ == -1) throw new IOException("EOF");
                 }
-                clientOptions = new ClientOptions(new Class348_Sub49(is), (Class348_Sub42_Sub8_Sub2.modeGame), 0);
+                clientOptions = new ClientOptions(new Packet(is), (Class348_Sub42_Sub8_Sub2.modeGame), 0);
             }
         } catch (Exception exception) {
             /* empty */

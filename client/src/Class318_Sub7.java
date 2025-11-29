@@ -6,7 +6,7 @@ final class Class318_Sub7 extends Class318 {
     Class243 aClass243_6433;
     private int anInt6434 = 0;
     private final long aLong6435;
-    Class129 aClass129_6436;
+    ModelParticleEmitter aModelParticleEmitter_6436;
     static int anInt6437;
     static int anInt6438;
     Class318_Sub10 aClass318_Sub10_6439;
@@ -32,17 +32,17 @@ final class Class318_Sub7 extends Class318 {
     private int anInt6459;
 
     final void method2507(boolean bool) {
-        this.aClass284_6444.anInt3670 = this.aClass129_6436.anInt1890;
+        this.aClass284_6444.anInt3670 = this.aModelParticleEmitter_6436.anInt1890;
         anInt6448++;
-        this.aClass284_6444.anInt3666 = this.aClass129_6436.anInt1889;
-        this.aClass284_6444.anInt3668 = this.aClass129_6436.anInt1883;
-        this.aClass284_6444.anInt3669 = this.aClass129_6436.anInt1874;
-        this.aClass284_6444.anInt3680 = this.aClass129_6436.anInt1876;
-        this.aClass284_6444.anInt3679 = this.aClass129_6436.anInt1880;
-        this.aClass284_6444.anInt3678 = this.aClass129_6436.anInt1891;
-        this.aClass284_6444.anInt3672 = this.aClass129_6436.anInt1884;
+        this.aClass284_6444.anInt3666 = this.aModelParticleEmitter_6436.anInt1889;
+        this.aClass284_6444.anInt3668 = this.aModelParticleEmitter_6436.anInt1883;
+        this.aClass284_6444.anInt3669 = this.aModelParticleEmitter_6436.anInt1874;
+        this.aClass284_6444.anInt3680 = this.aModelParticleEmitter_6436.anInt1876;
+        this.aClass284_6444.anInt3679 = this.aModelParticleEmitter_6436.anInt1880;
+        this.aClass284_6444.anInt3678 = this.aModelParticleEmitter_6436.anInt1891;
+        this.aClass284_6444.anInt3672 = this.aModelParticleEmitter_6436.anInt1884;
         if (bool == true) {
-            this.aClass284_6444.anInt3675 = this.aClass129_6436.anInt1882;
+            this.aClass284_6444.anInt3675 = this.aModelParticleEmitter_6436.anInt1882;
             if ((this.aClass284_6444.anInt3675 == (this.aClass284_6444.anInt3668)) && ((this.aClass284_6444.anInt3680) == (this.aClass284_6444.anInt3668)) && ((this.aClass284_6444.anInt3670) == (this.aClass284_6444.anInt3678)) && ((this.aClass284_6444.anInt3669) == (this.aClass284_6444.anInt3670)) && ((this.aClass284_6444.anInt3679) == (this.aClass284_6444.anInt3666)) && ((this.aClass284_6444.anInt3679) == (this.aClass284_6444.anInt3672)))
                 aBoolean6453 = true;
             else if (aBoolean6453) {
@@ -360,18 +360,18 @@ final class Class318_Sub7 extends Class318 {
                     Class284 class284 = aClass284_6449;
                     aClass284_6449 = this.aClass284_6444;
                     this.aClass284_6444 = class284;
-                    this.aClass284_6444.anInt3678 = (this.aClass129_6436.anInt1891);
-                    this.aClass284_6444.anInt3675 = (this.aClass129_6436.anInt1882);
-                    this.aClass284_6444.anInt3670 = (this.aClass129_6436.anInt1890);
-                    this.aClass284_6444.anInt3672 = (this.aClass129_6436.anInt1884);
-                    this.aClass284_6444.anInt3680 = (this.aClass129_6436.anInt1876);
-                    this.aClass284_6444.anInt3679 = (this.aClass129_6436.anInt1880);
-                    this.aClass284_6444.anInt3666 = (this.aClass129_6436.anInt1889);
+                    this.aClass284_6444.anInt3678 = (this.aModelParticleEmitter_6436.anInt1891);
+                    this.aClass284_6444.anInt3675 = (this.aModelParticleEmitter_6436.anInt1882);
+                    this.aClass284_6444.anInt3670 = (this.aModelParticleEmitter_6436.anInt1890);
+                    this.aClass284_6444.anInt3672 = (this.aModelParticleEmitter_6436.anInt1884);
+                    this.aClass284_6444.anInt3680 = (this.aModelParticleEmitter_6436.anInt1876);
+                    this.aClass284_6444.anInt3679 = (this.aModelParticleEmitter_6436.anInt1880);
+                    this.aClass284_6444.anInt3666 = (this.aModelParticleEmitter_6436.anInt1889);
                     this.aClass284_6444.anInt3673 = aClass284_6449.anInt3673;
-                    this.aClass284_6444.anInt3669 = (this.aClass129_6436.anInt1874);
+                    this.aClass284_6444.anInt3669 = (this.aModelParticleEmitter_6436.anInt1874);
                     this.aClass284_6444.anInt3671 = aClass284_6449.anInt3671;
                     this.aClass284_6444.anInt3667 = aClass284_6449.anInt3667;
-                    this.aClass284_6444.anInt3668 = (this.aClass129_6436.anInt1883);
+                    this.aClass284_6444.anInt3668 = (this.aModelParticleEmitter_6436.anInt1883);
                 }
                 this.anInt6447 = 0;
                 for (Class318_Sub9_Sub2_Sub1 class318_sub9_sub2_sub1 = (Class318_Sub9_Sub2_Sub1) this.aClass243_6433.method1872(i_9_ + 5); class318_sub9_sub2_sub1 != null; class318_sub9_sub2_sub1 = ((Class318_Sub9_Sub2_Sub1) this.aClass243_6433.method1878((byte) 122))) {
@@ -388,15 +388,15 @@ final class Class318_Sub7 extends Class318 {
         } while (false);
     }
 
-    Class318_Sub7(ha var_ha, Class129 class129, Class318_Sub10 class318_sub10, long l) {
+    Class318_Sub7(ha var_ha, ModelParticleEmitter modelParticleEmitter, Class318_Sub10 class318_sub10, long l) {
         this.aClass284_6444 = new Class284();
         aClass284_6449 = new Class284();
         aBoolean6453 = false;
         try {
             aLong6435 = l;
-            this.aClass129_6436 = class129;
+            this.aModelParticleEmitter_6436 = modelParticleEmitter;
             this.aClass318_Sub10_6439 = class318_sub10;
-            this.aClass181_6441 = this.aClass129_6436.method1125((byte) 59);
+            this.aClass181_6441 = this.aModelParticleEmitter_6436.method1125((byte) 59);
             if (!var_ha.method3644() && (this.aClass181_6441.anInt2387) != -1) this.aClass181_6441 = Class373.method3591((this.aClass181_6441.anInt2387), 0);
             this.aClass243_6433 = new Class243();
             anInt6434 += 64.0 * Math.random();
@@ -411,7 +411,7 @@ final class Class318_Sub7 extends Class318 {
             aClass284_6449.anInt3672 = this.aClass284_6444.anInt3672;
             aClass284_6449.anInt3679 = this.aClass284_6444.anInt3679;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rba.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (class129 != null ? "{...}" : "null") + ',' + (class318_sub10 != null ? "{...}" : "null") + ',' + l + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rba.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (modelParticleEmitter != null ? "{...}" : "null") + ',' + (class318_sub10 != null ? "{...}" : "null") + ',' + l + ')'));
         }
     }
 }

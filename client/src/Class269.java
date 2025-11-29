@@ -30,8 +30,8 @@ final class Class269 {
         LightTypeList.anInt2482 = i;
         if (bool != true) aFloat3462 = -0.54794437F;
         anInt3450++;
-        synchronized (Class342.aClass60_4254) {
-            Class342.aClass60_4254.method590(0);
+        synchronized (ModelParticleEffector.aClass60_4254) {
+            ModelParticleEffector.aClass60_4254.method590(0);
         }
     }
 

@@ -12,7 +12,7 @@ final class Class333 {
     private Node aNode_4150;
 
     static final void method2643(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
-        if (Class342.anIntArrayArray4253 != null) Class342.anIntArrayArray4253[i][i_0_] = ~0xffffff | i_1_;
+        if (ModelParticleEffector.anIntArrayArray4253 != null) ModelParticleEffector.anIntArrayArray4253[i][i_0_] = ~0xffffff | i_1_;
         if (Option_Sub1.aShortArrayArray5847 != null) Option_Sub1.aShortArrayArray5847[i][i_0_] = (short) i_2_;
         if (Class348_Sub1_Sub2.aByteArrayArray8816 != null) Class348_Sub1_Sub2.aByteArrayArray8816[i][i_0_] = (byte) i_3_;
     }

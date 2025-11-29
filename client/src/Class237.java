@@ -882,7 +882,7 @@ class Class237 {
         }
     }
 
-    final void method1681(Class348_Sub49 class348_sub49, int i, Class361[] class361s, int i_197_, int i_198_, int i_199_, byte i_200_) {
+    final void method1681(Packet packet, int i, Class361[] class361s, int i_197_, int i_198_, int i_199_, byte i_200_) {
         try {
             anInt3107++;
             if (!this.aBoolean3109) {
@@ -903,15 +903,15 @@ class Class237 {
             for (int i_209_ = 0; this.anInt3130 > i_209_; i_209_++) {
                 for (int i_210_ = 0; i_210_ < 64; i_210_++) {
                     for (int i_211_ = 0; i_211_ < 64; i_211_++)
-                        method1682(false, 0, i_211_ + i_199_, 0, class348_sub49, 0, 1115212770, i + i_210_, i_206_ + i_210_, i_208_ - -i_211_, i_209_);
+                        method1682(false, 0, i_211_ + i_199_, 0, packet, 0, 1115212770, i + i_210_, i_206_ + i_210_, i_208_ - -i_211_, i_209_);
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sr.I(" + (class348_sub49 != null ? "{...}" : "null") + ',' + i + ',' + (class361s != null ? "{...}" : "null") + ',' + i_197_ + ',' + i_198_ + ',' + i_199_ + ',' + i_200_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("sr.I(" + (packet != null ? "{...}" : "null") + ',' + i + ',' + (class361s != null ? "{...}" : "null") + ',' + i_197_ + ',' + i_198_ + ',' + i_199_ + ',' + i_200_ + ')'));
         }
     }
 
-    private final void method1682(boolean bool, int i, int i_212_, int i_213_, Class348_Sub49 class348_sub49, int i_214_, int i_215_, int i_216_, int i_217_, int i_218_, int i_219_) {
+    private final void method1682(boolean bool, int i, int i_212_, int i_213_, Packet packet, int i_214_, int i_215_, int i_216_, int i_217_, int i_218_, int i_219_) {
         anInt3125++;
         if (i_213_ != 1) {
             if (i_213_ == 2) {
@@ -921,18 +921,18 @@ class Class237 {
         } else i = 1;
         if (i_216_ < 0 || i_216_ >= this.anInt3117 || i_212_ < 0 || this.anInt3114 <= i_212_) {
             for (; ; ) {
-                int i_220_ = class348_sub49.readUnsignedByte(255);
+                int i_220_ = packet.readUnsignedByte(255);
                 if (i_220_ == 0) break;
                 if (i_220_ == 1) {
-                    class348_sub49.readUnsignedByte(i_215_ ^ 0x4278cb1d);
+                    packet.readUnsignedByte(i_215_ ^ 0x4278cb1d);
                     break;
                 }
-                if (i_220_ <= 49) class348_sub49.readUnsignedByte(255);
+                if (i_220_ <= 49) packet.readUnsignedByte(255);
             }
         } else {
             if (!this.aBoolean3109 && !bool) Class348_Sub33.aByteArrayArrayArray6962[i_219_][i_216_][i_212_] = (byte) 0;
             for (; ; ) {
-                int i_221_ = class348_sub49.readUnsignedByte(i_215_ ^ 0x4278cb1d);
+                int i_221_ = packet.readUnsignedByte(i_215_ ^ 0x4278cb1d);
                 if (i_221_ == 0) {
                     if (this.aBoolean3109) this.anIntArrayArrayArray3122[0][i_214_ + i_216_][i + i_212_] = 0;
                     else if (i_219_ != 0) this.anIntArrayArrayArray3122[i_219_][i_214_ + i_216_][i + i_212_] = -960 + (this.anIntArrayArrayArray3122[-1 + i_219_][i_214_ + i_216_][i + i_212_]);
@@ -940,7 +940,7 @@ class Class237 {
                     break;
                 }
                 if (i_221_ == 1) {
-                    int i_222_ = class348_sub49.readUnsignedByte(255);
+                    int i_222_ = packet.readUnsignedByte(255);
                     if (this.aBoolean3109) this.anIntArrayArrayArray3122[0][i_216_ - -i_214_][i_212_ + i] = i_222_ * 8 << 2;
                     else {
                         if (i_222_ == 1) i_222_ = 0;
@@ -950,9 +950,9 @@ class Class237 {
                     break;
                 }
                 if (i_221_ <= 49) {
-                    if (bool) class348_sub49.readUnsignedByte(255);
+                    if (bool) packet.readUnsignedByte(255);
                     else {
-                        aByteArrayArrayArray3123[i_219_][i_216_][i_212_] = class348_sub49.readByte(i_215_ + -1115212859);
+                        aByteArrayArrayArray3123[i_219_][i_216_][i_212_] = packet.readByte(i_215_ + -1115212859);
                         aByteArrayArrayArray3126[i_219_][i_216_][i_212_] = (byte) ((i_221_ + -2) / 4);
                         aByteArrayArrayArray3129[i_219_][i_216_][i_212_] = (byte) Class139.method1166(3, -2 + i_221_ + i_213_);
                     }
@@ -1108,7 +1108,7 @@ class Class237 {
         } while (false);
     }
 
-    final void method1684(int i, int i_272_, int i_273_, Class348_Sub49 class348_sub49, int i_274_, int i_275_, int i_276_, Class361[] class361s, int i_277_, int i_278_) {
+    final void method1684(int i, int i_272_, int i_273_, Packet packet, int i_274_, int i_275_, int i_276_, Class361[] class361s, int i_277_, int i_278_) {
         try {
             if (i_273_ == -1) {
                 anInt3115++;
@@ -1137,7 +1137,7 @@ class Class237 {
                 for (int i_289_ = 0; this.anInt3130 > i_289_; i_289_++) {
                     for (int i_290_ = 0; i_290_ < 64; i_290_++) {
                         for (int i_291_ = 0; i_291_ < 64; i_291_++) {
-                            if (i_278_ != i_289_ || i_279_ > i_290_ || i_290_ > i_279_ - -8 || i_280_ > i_291_ || 8 + i_280_ < i_291_) method1682(false, 0, -1, 0, class348_sub49, 0, 1115212770, -1, 0, 0, 0);
+                            if (i_278_ != i_289_ || i_279_ > i_290_ || i_290_ > i_279_ - -8 || i_280_ > i_291_ || 8 + i_280_ < i_291_) method1682(false, 0, -1, 0, packet, 0, 1115212770, -1, 0, 0, 0);
                             else {
                                 int i_292_;
                                 int i_293_;
@@ -1155,11 +1155,11 @@ class Class237 {
                                         i_293_ = i_280_ - (i_291_ - i) - -8;
                                         i_292_ = i_275_ - (i_279_ + -i_290_);
                                     }
-                                    method1682(true, 0, i_292_, 0, class348_sub49, 0, 1115212770, i_293_, i_290_ + i_285_, i_291_ + i_286_, i_272_);
+                                    method1682(true, 0, i_292_, 0, packet, 0, 1115212770, i_293_, i_290_ + i_285_, i_291_ + i_286_, i_272_);
                                 } else {
                                     i_293_ = Class295.method2220(0x7 & i_291_, i_277_, i_290_ & 0x7, (byte) 71) + i;
                                     i_292_ = (i_275_ + SeqTypeList.method837(0x7 & i_290_, true, 0x7 & i_291_, i_277_));
-                                    method1682(false, i_288_, i_292_, i_277_, class348_sub49, i_287_, 1115212770, i_293_, i_285_ - -i_290_, i_291_ + i_286_, i_272_);
+                                    method1682(false, i_288_, i_292_, i_277_, packet, i_287_, 1115212770, i_293_, i_285_ - -i_290_, i_291_ + i_286_, i_272_);
                                 }
                                 if (i_290_ == 63 || i_291_ == 63) {
                                     int i_294_ = 1;
@@ -1196,7 +1196,7 @@ class Class237 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sr.E(" + i + ',' + i_272_ + ',' + i_273_ + ',' + (class348_sub49 != null ? "{...}" : "null") + ',' + i_274_ + ',' + i_275_ + ',' + i_276_ + ',' + (class361s != null ? "{...}" : "null") + ',' + i_277_ + ',' + i_278_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("sr.E(" + i + ',' + i_272_ + ',' + i_273_ + ',' + (packet != null ? "{...}" : "null") + ',' + i_274_ + ',' + i_275_ + ',' + i_276_ + ',' + (class361s != null ? "{...}" : "null") + ',' + i_277_ + ',' + i_278_ + ')'));
         }
     }
 

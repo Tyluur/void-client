@@ -13,14 +13,14 @@ final class Class348_Sub40_Sub3 extends Class348_Sub40 {
     static int mapWidth = 104;
     static int anInt9110;
 
-    final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
+    final void method3049(Packet packet, int i, int i_0_) {
         int i_1_ = i;
         do {
             if (i_1_ == 0) {
-                anInt9104 = class348_sub49.readUnsignedShort(842397944);
+                anInt9104 = packet.readUnsignedShort(842397944);
                 break;
             } else if (i_1_ != 1) break;
-            anInt9107 = class348_sub49.readUnsignedShort(842397944);
+            anInt9107 = packet.readUnsignedShort(842397944);
         } while (false);
         anInt9102++;
         if (i_0_ != 31015) method3056(-75, 18, 53);

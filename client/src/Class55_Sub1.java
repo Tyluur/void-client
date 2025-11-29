@@ -14,9 +14,9 @@ final class Class55_Sub1 extends Class55 {
     static Class364 aClass364_5271 = new Class364("LIVE", 0);
     private final int anInt5272;
     static int anInt5273;
-    private final Class348_Sub49 aClass348_Sub49_5274;
+    private final Packet aPacket_5274;
     private byte[][] aByteArrayArray5275 = new byte[10][];
-    private final Class348_Sub49 aClass348_Sub49_5276;
+    private final Packet aPacket_5276;
 
     final void method522(byte i) {
         anInt5266++;
@@ -34,8 +34,8 @@ final class Class55_Sub1 extends Class55 {
 
     private Class55_Sub1(int i, Index index, int i_1_) {
         super(i);
-        aClass348_Sub49_5274 = new Class348_Sub49(null);
-        aClass348_Sub49_5276 = new Class348_Sub49(null);
+        aPacket_5274 = new Packet(null);
+        aPacket_5276 = new Packet(null);
         aIndex_5267 = index;
         anInt5272 = i_1_;
     }
@@ -58,47 +58,47 @@ final class Class55_Sub1 extends Class55 {
             if (!aIndex_5267.requestDownload(-10499, anInt5272, 0)) return 0;
             byte[] is_4_ = aIndex_5267.method410(-1860, anInt5272, 0);
             if (is_4_ == null) throw new IllegalStateException("");
-            aClass348_Sub49_5276.aByteArray7154 = is_4_;
-            aClass348_Sub49_5276.anInt7197 = 0;
+            aPacket_5276.aByteArray7154 = is_4_;
+            aPacket_5276.pos = 0;
             int i_5_ = is_4_.length >> 1;
             anIntArray5269 = new int[i_5_];
             for (int i_6_ = 0; i_6_ < i_5_; i_6_++)
-                anIntArray5269[i_6_] = aClass348_Sub49_5276.readUnsignedShort(842397944);
+                anIntArray5269[i_6_] = aPacket_5276.readUnsignedShort(842397944);
         }
         if (anInt5270 >= anIntArray5269.length) return -1;
         method522((byte) -74);
         if (i != 21) aByteArrayArray5275 = null;
-        aClass348_Sub49_5276.aByteArray7154 = is;
-        aClass348_Sub49_5276.anInt7197 = 0;
-        while (aClass348_Sub49_5276.anInt7197 < aClass348_Sub49_5276.aByteArray7154.length) {
-            if (aClass348_Sub49_5274.aByteArray7154 == null) {
+        aPacket_5276.aByteArray7154 = is;
+        aPacket_5276.pos = 0;
+        while (aPacket_5276.pos < aPacket_5276.aByteArray7154.length) {
+            if (aPacket_5274.aByteArray7154 == null) {
                 if (aByteArrayArray5275[0] == null) {
-                    aClass348_Sub49_5276.aByteArray7154 = null;
-                    return aClass348_Sub49_5276.anInt7197;
+                    aPacket_5276.aByteArray7154 = null;
+                    return aPacket_5276.pos;
                 }
-                aClass348_Sub49_5274.aByteArray7154 = aByteArrayArray5275[0];
+                aPacket_5274.aByteArray7154 = aByteArrayArray5275[0];
             }
-            int i_7_ = (-aClass348_Sub49_5276.anInt7197 + (aClass348_Sub49_5276.aByteArray7154).length);
-            int i_8_ = (-aClass348_Sub49_5274.anInt7197 + (aClass348_Sub49_5274.aByteArray7154).length);
+            int i_7_ = (-aPacket_5276.pos + (aPacket_5276.aByteArray7154).length);
+            int i_8_ = (-aPacket_5274.pos + (aPacket_5274.aByteArray7154).length);
             if (i_8_ <= i_7_) {
-                aClass348_Sub49_5276.writeBytes(i_8_, aClass348_Sub49_5274.anInt7197, aClass348_Sub49_5274.aByteArray7154, -58);
-                aClass348_Sub49_5274.anInt7197 = 0;
-                aClass348_Sub49_5274.aByteArray7154 = null;
+                aPacket_5276.writeBytes(i_8_, aPacket_5274.pos, aPacket_5274.aByteArray7154, -58);
+                aPacket_5274.pos = 0;
+                aPacket_5274.aByteArray7154 = null;
                 anInt5270++;
                 for (int i_9_ = 0; i_9_ < 9; i_9_++)
                     aByteArrayArray5275[i_9_] = aByteArrayArray5275[i_9_ - -1];
                 aByteArrayArray5275[9] = null;
                 if (anInt5270 >= anIntArray5269.length) {
-                    aClass348_Sub49_5276.aByteArray7154 = null;
-                    return aClass348_Sub49_5276.anInt7197;
+                    aPacket_5276.aByteArray7154 = null;
+                    return aPacket_5276.pos;
                 }
             } else {
-                aClass348_Sub49_5274.method3389(2147483647, aClass348_Sub49_5276.anInt7197, i_7_, aClass348_Sub49_5276.aByteArray7154);
-                aClass348_Sub49_5276.aByteArray7154 = null;
+                aPacket_5274.method3389(2147483647, aPacket_5276.pos, i_7_, aPacket_5276.aByteArray7154);
+                aPacket_5276.aByteArray7154 = null;
                 return is.length;
             }
         }
-        aClass348_Sub49_5276.aByteArray7154 = null;
+        aPacket_5276.aByteArray7154 = null;
         return is.length;
     }
 }

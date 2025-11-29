@@ -27,31 +27,31 @@ final class Class34 {
     static int anInt481;
     static long aLong482 = -1L;
 
-    final Class124 method341(int i) {
+    final Mesh method341(int i) {
         anInt468++;
         if (anIntArray472 == null) return null;
-        Class124[] class124s = new Class124[anIntArray472.length];
+        Mesh[] meshes = new Mesh[anIntArray472.length];
         synchronized (this.aIDKTypeList_475.aIndex_2054) {
             for (int i_0_ = 0; i_0_ < anIntArray472.length; i_0_++)
-                class124s[i_0_] = Class300.method2277(0, (this.aIDKTypeList_475.aIndex_2054), anIntArray472[i_0_], -1);
+                meshes[i_0_] = Class300.method2277(0, (this.aIDKTypeList_475.aIndex_2054), anIntArray472[i_0_], -1);
         }
         for (int i_1_ = 0; anIntArray472.length > i_1_; i_1_++) {
-            if (class124s[i_1_].anInt1830 < 13) class124s[i_1_].method1092(2, 113);
+            if (meshes[i_1_].version < 13) meshes[i_1_].method1092(2, 113);
         }
-        Class124 class124;
-        if (class124s.length != 1) class124 = new Class124(class124s, class124s.length);
-        else class124 = class124s[0];
-        if (class124 == null) return null;
+        Mesh mesh;
+        if (meshes.length != 1) mesh = new Mesh(meshes, meshes.length);
+        else mesh = meshes[0];
+        if (mesh == null) return null;
         if (i < 53) method341(-22);
         if (aShortArray474 != null) {
             for (int i_2_ = 0; i_2_ < aShortArray474.length; i_2_++)
-                class124.method1098(aShortArray474[i_2_], (byte) 126, aShortArray480[i_2_]);
+                mesh.method1098(aShortArray474[i_2_], (byte) 126, aShortArray480[i_2_]);
         }
         if (aShortArray465 != null) {
             for (int i_3_ = 0; i_3_ < aShortArray465.length; i_3_++)
-                class124.method1095(aShortArray465[i_3_], 0, aShortArray477[i_3_]);
+                mesh.method1095(aShortArray465[i_3_], 0, aShortArray477[i_3_]);
         }
-        return class124;
+        return mesh;
     }
 
     final boolean method342(byte i) {
@@ -66,58 +66,58 @@ final class Class34 {
         return bool;
     }
 
-    final Class124 method343(byte i) {
+    final Mesh method343(byte i) {
         anInt471++;
-        Class124[] class124s = new Class124[5];
+        Mesh[] meshes = new Mesh[5];
         int i_5_ = 0;
         synchronized (this.aIDKTypeList_475.aIndex_2054) {
             for (int i_6_ = 0; i_6_ < 5; i_6_++) {
-                if (anIntArray464[i_6_] != -1) class124s[i_5_++] = Class300.method2277(0, (this.aIDKTypeList_475.aIndex_2054), anIntArray464[i_6_], -1);
+                if (anIntArray464[i_6_] != -1) meshes[i_5_++] = Class300.method2277(0, (this.aIDKTypeList_475.aIndex_2054), anIntArray464[i_6_], -1);
             }
         }
         for (int i_7_ = 0; i_7_ < 5; i_7_++) {
-            if (class124s[i_7_] != null && class124s[i_7_].anInt1830 < 13) class124s[i_7_].method1092(2, 99);
+            if (meshes[i_7_] != null && meshes[i_7_].version < 13) meshes[i_7_].method1092(2, 99);
         }
         if (i > -27) return null;
-        Class124 class124 = new Class124(class124s, i_5_);
+        Mesh mesh = new Mesh(meshes, i_5_);
         if (aShortArray474 != null) {
             for (int i_8_ = 0; aShortArray474.length > i_8_; i_8_++)
-                class124.method1098(aShortArray474[i_8_], (byte) 126, aShortArray480[i_8_]);
+                mesh.method1098(aShortArray474[i_8_], (byte) 126, aShortArray480[i_8_]);
         }
         if (aShortArray465 != null) {
             for (int i_9_ = 0; aShortArray465.length > i_9_; i_9_++)
-                class124.method1095(aShortArray465[i_9_], 0, aShortArray477[i_9_]);
+                mesh.method1095(aShortArray465[i_9_], 0, aShortArray477[i_9_]);
         }
-        return class124;
+        return mesh;
     }
 
-    private final void method344(int i, Class348_Sub49 class348_sub49, byte i_10_) {
+    private final void method344(int i, Packet packet, byte i_10_) {
         if (i != 1) {
             if (i == 2) {
-                int i_11_ = class348_sub49.readUnsignedByte(i_10_ + 320);
+                int i_11_ = packet.readUnsignedByte(i_10_ + 320);
                 anIntArray472 = new int[i_11_];
                 for (int i_12_ = 0; i_12_ < i_11_; i_12_++)
-                    anIntArray472[i_12_] = class348_sub49.readUnsignedShort(842397944);
+                    anIntArray472[i_12_] = packet.readUnsignedShort(842397944);
             } else if (i != 3) {
                 if (i == 40) {
-                    int i_13_ = class348_sub49.readUnsignedByte(i_10_ ^ ~0xbf);
+                    int i_13_ = packet.readUnsignedByte(i_10_ ^ ~0xbf);
                     aShortArray480 = new short[i_13_];
                     aShortArray474 = new short[i_13_];
                     for (int i_14_ = 0; i_14_ < i_13_; i_14_++) {
-                        aShortArray474[i_14_] = (short) class348_sub49.readUnsignedShort(842397944);
-                        aShortArray480[i_14_] = (short) class348_sub49.readUnsignedShort(842397944);
+                        aShortArray474[i_14_] = (short) packet.readUnsignedShort(842397944);
+                        aShortArray480[i_14_] = (short) packet.readUnsignedShort(842397944);
                     }
                 } else if (i == 41) {
-                    int i_15_ = class348_sub49.readUnsignedByte(255);
+                    int i_15_ = packet.readUnsignedByte(255);
                     aShortArray465 = new short[i_15_];
                     aShortArray477 = new short[i_15_];
                     for (int i_16_ = 0; i_15_ > i_16_; i_16_++) {
-                        aShortArray465[i_16_] = (short) class348_sub49.readUnsignedShort(i_10_ + 842398009);
-                        aShortArray477[i_16_] = (short) class348_sub49.readUnsignedShort(842397944);
+                        aShortArray465[i_16_] = (short) packet.readUnsignedShort(i_10_ + 842398009);
+                        aShortArray477[i_16_] = (short) packet.readUnsignedShort(842397944);
                     }
-                } else if (i >= 60 && i < 70) anIntArray464[i + -60] = class348_sub49.readUnsignedShort(842397944);
+                } else if (i >= 60 && i < 70) anIntArray464[i + -60] = packet.readUnsignedShort(842397944);
             }
-        } else class348_sub49.readUnsignedByte(i_10_ + 320);
+        } else packet.readUnsignedByte(i_10_ + 320);
         anInt479++;
         if (i_10_ != -65) aLong482 = -90L;
     }
@@ -129,12 +129,12 @@ final class Class34 {
         if (i_17_ > -26) method349(-111);
     }
 
-    final void method346(int i, Class348_Sub49 class348_sub49) {
+    final void method346(int i, Packet packet) {
         anInt467++;
         for (; ; ) {
-            int i_18_ = class348_sub49.readUnsignedByte(255);
+            int i_18_ = packet.readUnsignedByte(255);
             if (i_18_ == 0) break;
-            method344(i_18_, class348_sub49, (byte) -65);
+            method344(i_18_, packet, (byte) -65);
         }
         int i_19_ = -5 / ((73 - i) / 49);
     }

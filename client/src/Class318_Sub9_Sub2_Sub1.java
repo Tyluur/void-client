@@ -137,7 +137,7 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
         aShort10423 = (short) i_12_;
         aShort10422 = (short) i_13_;
         anInt10421 = i_14_;
-        this.aByte8795 = this.aClass318_Sub7_10419.aClass129_6436.aByte1875;
+        this.aByte8795 = this.aClass318_Sub7_10419.aModelParticleEmitter_6436.aByte1875;
         method2521();
     }
 
@@ -359,7 +359,7 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
         aShort10423 = (short) i_68_;
         aShort10422 = (short) i_69_;
         anInt10421 = i_70_;
-        this.aByte8795 = this.aClass318_Sub7_10419.aClass129_6436.aByte1875;
+        this.aByte8795 = this.aClass318_Sub7_10419.aModelParticleEmitter_6436.aByte1875;
         method2521();
     }
 }

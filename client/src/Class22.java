@@ -22,28 +22,28 @@ final class Class22 {
     boolean aBoolean342;
     int anInt343;
 
-    final void method290(Class348_Sub49 class348_sub49, int i) {
+    final void method290(Packet packet, int i) {
         if (i != -1) this.anInt332 = 25;
         for (; ; ) {
-            int i_0_ = class348_sub49.readUnsignedByte(255);
+            int i_0_ = packet.readUnsignedByte(255);
             if (i_0_ == 0) break;
-            method291(i_0_, -4, class348_sub49);
+            method291(i_0_, -4, packet);
         }
         anInt329++;
     }
 
-    private final void method291(int i, int i_1_, Class348_Sub49 class348_sub49) {
+    private final void method291(int i, int i_1_, Packet packet) {
         if (i == 1) {
-            anInt337 = class348_sub49.readMedium(-1);
+            anInt337 = packet.readMedium(-1);
             method292(anInt337, (byte) 117);
         } else if (i == 2) {
-            this.anInt331 = class348_sub49.readUnsignedShort(i_1_ + 842397948);
+            this.anInt331 = packet.readUnsignedShort(i_1_ + 842397948);
             if (this.anInt331 == 65535) this.anInt331 = -1;
         } else if (i != 3) {
             if (i != 4) {
                 if (i == 5) this.aBoolean334 = false;
             } else this.aBoolean342 = false;
-        } else this.anInt336 = class348_sub49.readUnsignedShort(842397944) << 2;
+        } else this.anInt336 = packet.readUnsignedShort(842397944) << 2;
         if (i_1_ != -4) method290(null, 12);
         anInt333++;
     }

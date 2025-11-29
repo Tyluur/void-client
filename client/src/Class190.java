@@ -39,11 +39,11 @@ final class Class190 {
         return true;
     }
 
-    final void method1423(int i, Class348_Sub49 class348_sub49) {
+    final void method1423(int i, Packet packet) {
         anInt2553++;
-        this.aFloat2545 = (float) (class348_sub49.readUnsignedByte(255) * 8) / 255.0F;
-        this.aFloat2542 = (float) (8 * class348_sub49.readUnsignedByte(i + 247)) / 255.0F;
-        this.aFloat2551 = (float) (i * class348_sub49.readUnsignedByte(i + 247)) / 255.0F;
+        this.aFloat2545 = (float) (packet.readUnsignedByte(255) * 8) / 255.0F;
+        this.aFloat2542 = (float) (8 * packet.readUnsignedByte(i + 247)) / 255.0F;
+        this.aFloat2551 = (float) (i * packet.readUnsignedByte(i + 247)) / 255.0F;
     }
 
     final boolean method1424(Class190 class190_4_, byte i) {
@@ -134,7 +134,7 @@ final class Class190 {
                 }
                 sprite.method974((class348_sub21.anInt6853 + -(sprite.scaleWidth() >> 1)), (class348_sub21.anInt6855 + -(sprite.method980() >> 1)));
             }
-            if (class42.aString597 != null && class323 != null) Class342.method2683(class323, class348_sub21, i_16_, 64, i_15_, var_ha, i_17_, i_18_, class42);
+            if (class42.aString597 != null && class323 != null) ModelParticleEffector.method2683(class323, class348_sub21, i_16_, 64, i_15_, var_ha, i_17_, i_18_, class42);
             if (class42.anInt578 != -1 || class42.aString597 != null) {
                 Class348_Sub12 class348_sub12 = new Class348_Sub12(class348_sub21);
                 class348_sub12.anInt6746 = i_13_;
@@ -173,25 +173,25 @@ final class Class190 {
         this.aFloat2547 = 1.1523438F;
     }
 
-    Class190(Class348_Sub49 class348_sub49) {
-        int i = class348_sub49.readUnsignedByte(255);
+    Class190(Packet packet) {
+        int i = packet.readUnsignedByte(255);
         if (Class316.clientOptions.aClass239_Sub28_7230.method1845(-32350) != 1 || Class60.aHa1098.method3704() <= 0) {
-            if ((0x1 & i) != 0) class348_sub49.readInt((byte) -126);
-            if ((0x2 & i) != 0) class348_sub49.readUnsignedShort(842397944);
-            if ((i & 0x4) != 0) class348_sub49.readUnsignedShort(842397944);
-            if ((0x8 & i) != 0) class348_sub49.readUnsignedShort(842397944);
+            if ((0x1 & i) != 0) packet.readInt((byte) -126);
+            if ((0x2 & i) != 0) packet.readUnsignedShort(842397944);
+            if ((i & 0x4) != 0) packet.readUnsignedShort(842397944);
+            if ((0x8 & i) != 0) packet.readUnsignedShort(842397944);
             this.anInt2540 = FloorOverlayTypeList.anInt3439;
             this.aFloat2547 = 1.1523438F;
             this.aFloat2544 = 0.69921875F;
             this.aFloat2536 = 1.2F;
         } else {
-            if ((i & 0x1) != 0) this.anInt2540 = class348_sub49.readInt((byte) -126);
+            if ((i & 0x1) != 0) this.anInt2540 = packet.readInt((byte) -126);
             else this.anInt2540 = FloorOverlayTypeList.anInt3439;
-            if ((0x2 & i) != 0) this.aFloat2547 = (float) class348_sub49.readUnsignedShort(842397944) / 256.0F;
+            if ((0x2 & i) != 0) this.aFloat2547 = (float) packet.readUnsignedShort(842397944) / 256.0F;
             else this.aFloat2547 = 1.1523438F;
             if ((i & 0x4) == 0) this.aFloat2544 = 0.69921875F;
-            else this.aFloat2544 = (float) class348_sub49.readUnsignedShort(842397944) / 256.0F;
-            if ((0x8 & i) != 0) this.aFloat2536 = (float) class348_sub49.readUnsignedShort(842397944) / 256.0F;
+            else this.aFloat2544 = (float) packet.readUnsignedShort(842397944) / 256.0F;
+            if ((0x8 & i) != 0) this.aFloat2536 = (float) packet.readUnsignedShort(842397944) / 256.0F;
             else this.aFloat2536 = 1.2F;
         }
         if ((i & 0x10) == 0) {
@@ -199,21 +199,21 @@ final class Class190 {
             this.anInt2535 = -50;
             this.anInt2538 = -50;
         } else {
-            this.anInt2538 = class348_sub49.readShort(13638);
-            this.anInt2548 = class348_sub49.readShort(13638);
-            this.anInt2535 = class348_sub49.readShort(13638);
+            this.anInt2538 = packet.readShort(13638);
+            this.anInt2548 = packet.readShort(13638);
+            this.anInt2535 = packet.readShort(13638);
         }
         if ((0x20 & i) == 0) this.anInt2549 = FloorOverlayTypeList.anInt3444;
-        else this.anInt2549 = class348_sub49.readInt((byte) -126);
-        if ((i & 0x40) != 0) this.anInt2546 = class348_sub49.readUnsignedShort(842397944);
+        else this.anInt2549 = packet.readInt((byte) -126);
+        if ((i & 0x40) != 0) this.anInt2546 = packet.readUnsignedShort(842397944);
         else this.anInt2546 = 0;
         if ((0x80 & i) != 0) {
-            int i_27_ = class348_sub49.readUnsignedShort(842397944);
-            int i_28_ = class348_sub49.readUnsignedShort(842397944);
-            int i_29_ = class348_sub49.readUnsignedShort(842397944);
-            int i_30_ = class348_sub49.readUnsignedShort(842397944);
-            int i_31_ = class348_sub49.readUnsignedShort(842397944);
-            int i_32_ = class348_sub49.readUnsignedShort(842397944);
+            int i_27_ = packet.readUnsignedShort(842397944);
+            int i_28_ = packet.readUnsignedShort(842397944);
+            int i_29_ = packet.readUnsignedShort(842397944);
+            int i_30_ = packet.readUnsignedShort(842397944);
+            int i_31_ = packet.readUnsignedShort(842397944);
+            int i_32_ = packet.readUnsignedShort(842397944);
             this.aClass299_2541 = Class230.method1636(i_31_, i_30_, i_27_, i_32_, i_28_, -1, i_29_);
         } else this.aClass299_2541 = Class348_Sub42_Sub10.aClass299_9571;
     }

@@ -335,8 +335,8 @@ final class oa extends ha implements Interface19 {
 
     final native void X(int i);
 
-    final Class64 method3625(Class124 class124, int i, int i_131_, int i_132_, int i_133_) {
-        return new i(this, aYa5121, class124, i, i_131_, i_132_, i_133_);
+    final Class64 method3625(Mesh mesh, int i, int i_131_, int i_132_, int i_133_) {
+        return new i(this, aYa5121, mesh, i, i_131_, i_132_, i_133_);
     }
 
     final Class365 c() {//
