@@ -512,76 +512,111 @@ class Class348_Sub49 extends Node {
         if (bool != false) this.anInt7197 = -121;
     }
 
+    public static final int STEP_LOADING = 0;
+
+    public static final int STEP_LOADING_1 = 1;
+
+    public static final int STEP_LOADING_2 = 2;
+
+    public static final int STEP_LOGIN_SCREEN = 3;
+
+    public static final int STEP_LOGIN_SCREEN_MAP_BUILD = 4;
+
+    public static final int STEP_LOGGING_IN_FROM_LOGINSCREEN_TO_LOBBY = 5;
+
+    public static final int STEP_LOGGING_IN_FROM_LOGINSCREEN_TO_GAME = 6;
+
+    public static final int STEP_LOBBY_SCREEN = 7;
+
+    public static final int STEP_LOBBY_SCREEN_MAP_BUILD = 8;
+
+    public static final int STEP_LOGGING_IN_FROM_LOBBYSCREEN_TO_GAME = 9;
+
+    public static final int STEP_LOGGING_IN_FROM_LOBBYSCREEN_TO_GAME_MAP_BUILD = 10;
+
+    public static final int STEP_GAME_SCREEN = 11;
+
+    public static final int STEP_GAME_SCREEN_MAP_BUILD = 12;
+
+    public static final int STEP_LOGGING_IN_FROM_GAMESCREEN_TO_LOBBY = 13;
+
+    public static final int STEP_RECONNECTING = 14;
+
+    public static final int STEP_SWITCH_WORLD = 15;
+
+    public static final int STEP_ERROR = 16;
+
     // method3379
-    static final void setStep(int i, int i_71_) {
+    static final void setStep(int i, int newStep) {
         anInt7201++;
-        if (i_71_ != Class240.anInt4674) {
-            if (i_71_ == 13) {
-                if (Class348_Sub23_Sub3.aString9043 != null) Class135_Sub2.method1157(RuntimeException_Sub1.anInt4596, (byte) -81);
-                else Class253.method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
-            }
-            if (i_71_ != 13 && ItemDefinition.aClass238_2773 != null) {
-                ItemDefinition.aClass238_2773.method1700((byte) 36);
-                ItemDefinition.aClass238_2773 = null;
-            }
-            if (i_71_ == 3) Class348_Sub42_Sub8.method3198((Class285.anInt4737 != r.anInt9721), (byte) -45);
-            if (i_71_ == 7) Class107.method1006((r.anInt9721 != Class54.anInt970), (byte) 102);
-            if (i_71_ == 5) {
-                if (Class348_Sub23_Sub3.aString9043 == null) Class151.method1213(Class64_Sub3.aString5600, Class186.aString2496, -124);
-                else Class182.method1372(-1);
-            } else if (i_71_ != 6) {
-                if (i_71_ == 9) {
-                    if (Class348_Sub23_Sub3.aString9043 != null) Class135_Sub2.method1157((RuntimeException_Sub1.anInt4596), (byte) -120);
-                    else Class253.method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
-                } else if (i_71_ == 12) {
-                    if (Class348_Sub23_Sub3.aString9043 == null) Class151.method1213(Class64_Sub3.aString5600, Class186.aString2496, -98);
-                    else Class182.method1372(-1);
-                }
-            } else if (Class348_Sub23_Sub3.aString9043 == null) Class253.method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
-            else Class135_Sub2.method1157(RuntimeException_Sub1.anInt4596, (byte) -99);
-            if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -78)) {
-                Class95.CONFIGS.anInt634 = 2;
-                Class247.ENUMS.anInt634 = 2;
-                Class94.OBJECTS.anInt634 = 2;
-                Class216.NPCS.anInt634 = 2;
-                Class174.ITEMS.anInt634 = 2;
-                r_Sub2.ANIMATIONS.anInt634 = 2;
-                Class78.GRAPHICS.anInt634 = 2;
-            }
-            if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (byte) -119)) {
-                Class31.anInt443 = 1;
-                Class36.anInt489 = 0;
-                Class348_Sub46.anInt7115 = 1;
-                Class154.anInt2101 = 0;
-                FloorOverlayTypeList.anInt3441 = 0;
-                Class348_Sub42_Sub3.method3177(-111, true);
-                Class95.CONFIGS.anInt634 = 1;
-                Class247.ENUMS.anInt634 = 1;
-                Class94.OBJECTS.anInt634 = 1;
-                Class216.NPCS.anInt634 = 1;
-                Class174.ITEMS.anInt634 = 1;
-                r_Sub2.ANIMATIONS.anInt634 = 1;
-                Class78.GRAPHICS.anInt634 = 1;
-            }
-            if (i_71_ == 11 || i_71_ == 3) Class348_Sub40_Sub16.method3088(9);
-            boolean bool = (i == i_71_ || Class348_Sub42_Sub8.method3196(i_71_, i ^ ~0x58) || Js5MasterIndex.method2672(i_71_, -100));
-            boolean bool_72_ = (Class240.anInt4674 == 2 || Class348_Sub42_Sub8.method3196(Class240.anInt4674, -110) || Js5MasterIndex.method2672(Class240.anInt4674, -128));
-            if (bool != bool_72_) {
-                if (bool) {
-                    Class267.anInt3428 = Class345.anInt4270;
-                    if (Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350) != 0) {
-                        Class315.method2355(Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350), (byte) 50, false, Class59_Sub2_Sub1.MUSIC, Class345.anInt4270, 0, 2);
-                        Class348_Sub40_Sub17_Sub1.method3093(i ^ 0x66);
-                    } else Class348_Sub31.method3007(2, 22684);
-                    SystemInfo.aClass248_6601.method1892(-117, false);
-                } else {
-                    Class348_Sub31.method3007(2, 22684);
-                    SystemInfo.aClass248_6601.method1892(i ^ ~0x4b, true);
-                }
-            }
-            if (Class318_Sub1_Sub1_Sub2.method2402(i_71_, (byte) -64) || i_71_ == 13) Class348_Sub8.aHa6654.method3673();
-            Class240.anInt4674 = i_71_;
+        if (newStep == Class240.mainLogicStep) {
+            return;
         }
+        if (newStep == STEP_LOGGING_IN_FROM_GAMESCREEN_TO_LOBBY) {
+            if (Class348_Sub23_Sub3.aString9043 != null) Class135_Sub2.method1157(RuntimeException_Sub1.anInt4596, (byte) -81);
+            else Class253.method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
+        }
+        if (newStep != STEP_LOGGING_IN_FROM_GAMESCREEN_TO_LOBBY && ItemDefinition.aClass238_2773 != null) {
+            ItemDefinition.aClass238_2773.method1700((byte) 36);
+            ItemDefinition.aClass238_2773 = null;
+        }
+        if (newStep == STEP_LOGIN_SCREEN) Class348_Sub42_Sub8.method3198((Class285.anInt4737 != r.anInt9721), (byte) -45);
+        if (newStep == STEP_LOBBY_SCREEN) Class107.method1006((r.anInt9721 != Class54.anInt970), (byte) 102);
+        if (newStep == STEP_LOGGING_IN_FROM_LOGINSCREEN_TO_LOBBY) {
+            if (Class348_Sub23_Sub3.aString9043 == null) Class151.method1213(Class64_Sub3.aString5600, Class186.aString2496, -124);
+            else Class182.method1372(-1);
+        } else if (newStep == STEP_LOGGING_IN_FROM_LOGINSCREEN_TO_GAME) {
+            if (Class348_Sub23_Sub3.aString9043 == null) Class253.method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
+            else Class135_Sub2.method1157(RuntimeException_Sub1.anInt4596, (byte) -99);
+        } else if (newStep == STEP_LOGGING_IN_FROM_LOBBYSCREEN_TO_GAME) {
+            if (Class348_Sub23_Sub3.aString9043 != null) Class135_Sub2.method1157((RuntimeException_Sub1.anInt4596), (byte) -120);
+            else Class253.method1922(Class186.aString2496, RuntimeException_Sub1.anInt4596, Class64_Sub3.aString5600, true);
+        } else if (newStep == STEP_GAME_SCREEN_MAP_BUILD) {
+            if (Class348_Sub23_Sub3.aString9043 == null) Class151.method1213(Class64_Sub3.aString5600, Class186.aString2496, -98);
+            else Class182.method1372(-1);
+        }
+        if (Class318_Sub1_Sub1_Sub2.isBuildingMap(Class240.mainLogicStep, (byte) -78)) {
+            Class95.CONFIGS.discardUnpacked = 2;
+            Class247.ENUMS.discardUnpacked = 2;
+            Class94.OBJECTS.discardUnpacked = 2;
+            Class216.NPCS.discardUnpacked = 2;
+            Class174.ITEMS.discardUnpacked = 2;
+            r_Sub2.ANIMATIONS.discardUnpacked = 2;
+            Class78.GRAPHICS.discardUnpacked = 2;
+        }
+        if (Class318_Sub1_Sub1_Sub2.isBuildingMap(newStep, (byte) -119)) {
+            Class31.anInt443 = 1;
+            Class36.anInt489 = 0;
+            Class348_Sub46.anInt7115 = 1;
+            Class154.anInt2101 = 0;
+            FloorOverlayTypeList.anInt3441 = 0;
+            Class348_Sub42_Sub3.method3177(-111, true);
+            Class95.CONFIGS.discardUnpacked = 1;
+            Class247.ENUMS.discardUnpacked = 1;
+            Class94.OBJECTS.discardUnpacked = 1;
+            Class216.NPCS.discardUnpacked = 1;
+            Class174.ITEMS.discardUnpacked = 1;
+            r_Sub2.ANIMATIONS.discardUnpacked = 1;
+            Class78.GRAPHICS.discardUnpacked = 1;
+        }
+        if (newStep == STEP_GAME_SCREEN || newStep == STEP_LOGIN_SCREEN) Class348_Sub40_Sub16.method3088(9);
+        boolean bool = (i == newStep || Class348_Sub42_Sub8.method3196(newStep, i ^ ~0x58) || Js5MasterIndex.method2672(newStep, -100));
+        boolean bool_72_ = (Class240.mainLogicStep == 2 || Class348_Sub42_Sub8.method3196(Class240.mainLogicStep, -110) || Js5MasterIndex.method2672(Class240.mainLogicStep, -128));
+        if (bool != bool_72_) {
+            if (bool) {
+                Class267.anInt3428 = Class345.anInt4270;
+                if (Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350) != 0) {
+                    Class315.method2355(Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350), (byte) 50, false, Class59_Sub2_Sub1.MUSIC, Class345.anInt4270, 0, 2);
+                    Class348_Sub40_Sub17_Sub1.method3093(i ^ 0x66);
+                } else Class348_Sub31.method3007(2, 22684);
+                SystemInfo.aClass248_6601.method1892(-117, false);
+            } else {
+                Class348_Sub31.method3007(2, 22684);
+                SystemInfo.aClass248_6601.method1892(i ^ ~0x4b, true);
+            }
+        }
+        if (Class318_Sub1_Sub1_Sub2.isBuildingMap(newStep, (byte) -64) || newStep == STEP_LOGGING_IN_FROM_GAMESCREEN_TO_LOBBY) Class348_Sub8.aHa6654.method3673();
+        Class240.mainLogicStep = newStep;
     }
 
     final void writeBytes(int i, int i_73_, byte[] is, int i_74_) {

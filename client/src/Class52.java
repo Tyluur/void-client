@@ -94,7 +94,7 @@ final class Class52 implements Interface12 {
             return;
         }
         for (int i = Class375.currentScreen - -1; (Class182.loadingScreens.length > i); i++) {
-            if (Class182.loadingScreens[i].percentage(-19079) >= 100 && Class375.currentScreen == -1 + i && Class240.anInt4674 >= 1 && Class51.renderer.method2322(0)) {
+            if (Class182.loadingScreens[i].percentage(-19079) >= 100 && Class375.currentScreen == -1 + i && Class240.mainLogicStep >= 1 && Class51.renderer.method2322(0)) {
                 try {
                     Class182.loadingScreens[i].init(117);
                 } catch (Exception exception) {

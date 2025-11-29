@@ -28,7 +28,7 @@ final class Class348_Sub24 extends Node {
             for (int i_0_ = 0; i_0_ < 100; i_0_++) {
                 if (!Class292.method2203((byte) -52)) break;
             }
-            if (Class240.anInt4674 == 10) {
+            if (Class240.mainLogicStep == 10) {
                 while (Class286.method2138(i ^ 0x2ca2)) {
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class140.aClass351_1961, (Class348_Sub23_Sub2.aClass77_9029), -92);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0);
@@ -172,7 +172,7 @@ final class Class348_Sub24 extends Node {
                 if (!Class50_Sub1.aBoolean5224) Class348_Sub27.aFloat6898 /= 2.0F;
                 else Class50_Sub1.aBoolean5224 = false;
                 Class348_Sub35.method3027((byte) 33);
-                if (Class240.anInt4674 == 10) {
+                if (Class240.mainLogicStep == 10) {
                     Class348_Sub42_Sub3.method3175((byte) 55);
                     Class38.method362(i + -11335);
                     Class206.method1501(-123);

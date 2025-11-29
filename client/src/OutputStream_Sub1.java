@@ -103,7 +103,7 @@ final class OutputStream_Sub1 extends OutputStream {
                 } else
                     Class258_Sub1.method1960(Class367_Sub11.anInt7396, Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, Class289.aByteArrayArrayArray3700, Class327.anIntArray4097, Class156.anIntArray2117, Class348_Sub40_Sub19.anIntArray9259, LoadState.anIntArray1045, Class64.anIntArray1127, (Class132.aPlayer_1907.plane) - -1, i_16_, (Class132.aPlayer_1907.x) >> 9, (Class132.aPlayer_1907.y) >> 9, Class316.clientOptions.aClass239_Sub1_7246.method1720(-32350) == 0, true, !Class305.aBoolean3870 ? -1 : Class132.anInt1906, 0, false);
                 Class369_Sub1.method3570(false);
-                if (Class240.anInt4674 == 10) {
+                if (Class240.mainLogicStep == 10) {
                     Class19.method283(-127, i_0_, 256, i_2_, i_1_, i_3_, 256);
                     ha_Sub2.method3802(i_3_, i_2_, 2, i_1_, i_0_, 256, 256);
                     Class318_Sub1_Sub1_Sub2.method2403(i_1_, 256, i_3_, i_0_, 19206, i_2_, 256);

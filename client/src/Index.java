@@ -11,7 +11,7 @@ final class Index {
     static int anInt631;
     static int anInt632;
     static int anInt633;
-    int anInt634;
+    int discardUnpacked; // anInt634
     static int anInt635;
     static int anInt636;
     static int anInt637;
@@ -101,10 +101,10 @@ final class Index {
             }
         }
         byte[] is_7_ = Class50_Sub1.method461(false, anObjectArrayArray664[i][i_5_], 53146732);
-        if (this.anInt634 == 1) {
+        if (this.discardUnpacked == 1) {
             anObjectArrayArray664[i][i_5_] = null;
             if (aClass291_629.anIntArray3724[i] == 1) anObjectArrayArray664[i] = null;
-        } else if (this.anInt634 == 2) anObjectArrayArray664[i] = null;
+        } else if (this.discardUnpacked == 2) anObjectArrayArray664[i] = null;
         return is_7_;
     }
 
@@ -143,7 +143,7 @@ final class Index {
         if (aBoolean655) anObjectArray656[i_9_] = null;
         if (i_8_ >= -17) method415((byte) 70, -7);
         if (i_10_ > 1) {
-            if (this.anInt634 == 2) {
+            if (this.discardUnpacked == 2) {
                 int i_30_ = is_15_.length;
                 int i_31_ = 0xff & is_15_[--i_30_];
                 i_30_ -= 4 * (i_31_ * i_10_);
@@ -218,7 +218,7 @@ final class Index {
                     int i_29_;
                     if (is_11_ == null) i_29_ = i_28_;
                     else i_29_ = is_11_[i_28_];
-                    if (this.anInt634 != 0) objects[i_29_] = is_22_[i_28_];
+                    if (this.discardUnpacked != 0) objects[i_29_] = is_22_[i_28_];
                     else objects[i_29_] = Class179.method1357(is_22_[i_28_], false, (byte) 126);
                 }
             }
@@ -226,7 +226,7 @@ final class Index {
             int i_44_;
             if (is_11_ != null) i_44_ = is_11_[0];
             else i_44_ = 0;
-            if (this.anInt634 != 0) objects[i_44_] = is_15_;
+            if (this.discardUnpacked != 0) objects[i_44_] = is_15_;
             else objects[i_44_] = Class179.method1357(is_15_, false, (byte) 104);
         }
         return true;
@@ -381,7 +381,7 @@ final class Index {
         if (anObjectArray656[i_63_] != null) return true;
         method406(i_63_, -124);
         if (anObjectArray656[i_63_] != null) return true;
-        if (i > -112) this.anInt634 = -26;
+        if (i > -112) this.discardUnpacked = -26;
         return false;
     }
 
@@ -529,7 +529,7 @@ final class Index {
         if (i < 0 || i > 2) throw new IllegalArgumentException("js5: Invalid value " + i + " supplied for discardunpacked");
         aResourceProvider_659 = resourceProvider;
         aBoolean655 = bool;
-        this.anInt634 = i;
+        this.discardUnpacked = i;
     }
 
     static {

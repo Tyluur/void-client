@@ -301,7 +301,7 @@ final class Canvas_Sub1 extends Canvas {
                 Class363.method3514((byte) -105);
                 Class348_Sub18.method2938((byte) 62);
                 Class130_Sub1.method1131(99);
-                if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aClass238_9165 != null && Class240.anInt4674 == 11) {
+                if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aClass238_9165 != null && Class240.mainLogicStep == 11) {
                     Class352.anInt4335++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class327.aClass351_4094, (Class348_Sub23_Sub2.aClass77_9029), i ^ ~0x55);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 108, 1057001181);
@@ -321,8 +321,8 @@ final class Canvas_Sub1 extends Canvas {
                         }
                     }
                 }
-                if (Class240.anInt4674 != 4) {
-                    if (Class240.anInt4674 != 8) {
+                if (Class240.mainLogicStep != 4) {
+                    if (Class240.mainLogicStep != 8) {
                         Class348_Sub49.setStep(2, 10);
                         if (Class348_Sub40_Sub8.aClass238_9165 != null) {
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Js5MasterIndex.aClass351_4223), (Class348_Sub23_Sub2.aClass77_9029), -106);

@@ -36,7 +36,7 @@ final class Class130_Sub1 extends Class130 {
     }
 
     static final void method1135(int i) {
-        Class95.CONFIGS.anInt634 = 1;
+        Class95.CONFIGS.discardUnpacked = 1;
         anInt5798++;
         Class348_Sub42_Sub10.method3211((byte) -119);
         Class101_Sub2.anInt5740 = 0;
@@ -4179,7 +4179,7 @@ final class Class130_Sub1 extends Class130 {
         Class286_Sub2.method2145(-24498);
         Class101_Sub2.aLong5745 = 0L;
         Option_Sub4.aClass348_Sub26_5881 = null;
-        Class95.CONFIGS.anInt634 = 2;
+        Class95.CONFIGS.discardUnpacked = 2;
     }
 
     static int anInt5795;

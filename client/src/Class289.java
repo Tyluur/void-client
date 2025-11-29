@@ -35,7 +35,7 @@ final class Class289 {
     static final void method2193(boolean bool, byte i) {
         anInt3698++;
         Class369_Sub1.method3570(false);
-        if (Class334.method2653(true, Class240.anInt4674)) {
+        if (Class334.method2653(true, Class240.mainLogicStep)) {
             Class11.anInt193++;
             if (i < -118 && (Class11.anInt193 >= 50 || bool)) {
                 Class11.anInt193 = 0;

@@ -228,14 +228,14 @@ final class Class164 {
             Class104.FONT_INDEX.method404(0, true, true);
             Class16.HUFFMAN.method404(0, true, true);
             Class348_Sub35.INTERFACES.method404(0, true, true);
-            Class95.CONFIGS.anInt634 = 2;
+            Class95.CONFIGS.discardUnpacked = 2;
             GfxTypeList.aBoolean3988 = true;
-            Class247.ENUMS.anInt634 = 2;
-            Class94.OBJECTS.anInt634 = 2;
-            Class216.NPCS.anInt634 = 2;
-            Class174.ITEMS.anInt634 = 2;
-            r_Sub2.ANIMATIONS.anInt634 = 2;
-            Class78.GRAPHICS.anInt634 = 2;
+            Class247.ENUMS.discardUnpacked = 2;
+            Class94.OBJECTS.discardUnpacked = 2;
+            Class216.NPCS.discardUnpacked = 2;
+            Class174.ITEMS.discardUnpacked = 2;
+            r_Sub2.ANIMATIONS.discardUnpacked = 2;
+            Class78.GRAPHICS.discardUnpacked = 2;
         }
         if (Class348_Sub42_Sub15.state == LoadState.LOAD_LOGIN_WINDOW) {
             if (!Class320.method2547(Class285.anInt4737, (byte) 84)) return 0;

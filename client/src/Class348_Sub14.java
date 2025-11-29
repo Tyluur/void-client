@@ -217,7 +217,7 @@ final class Class348_Sub14 extends Node {
                     }
                 }
                 if (r_Sub2.aClass252_10488 != null) {
-                    Class95.CONFIGS.anInt634 = 1;
+                    Class95.CONFIGS.discardUnpacked = 1;
                     Class348_Sub23_Sub2.mapElementTypeList.method1220((byte) 116, 64, 1024);
                     for (int i_51_ = 0; i_51_ < r_Sub2.aClass252_10488.anInt3241; i_51_++) {
                         int i_52_ = (r_Sub2.aClass252_10488.anIntArray3238[i_51_]);
@@ -233,7 +233,7 @@ final class Class348_Sub14 extends Node {
                         }
                     }
                     Class348_Sub23_Sub2.mapElementTypeList.method1220((byte) 13, 64, 128);
-                    Class95.CONFIGS.anInt634 = 2;
+                    Class95.CONFIGS.discardUnpacked = 2;
                     Class95.CONFIGS.method412((byte) -126);
                 }
             }

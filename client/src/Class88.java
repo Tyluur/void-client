@@ -42,7 +42,7 @@ final class Class88 {
     static final void method842(boolean bool) {
         anInt1501++;
         Class138.aClass46Array1942 = null;
-        if (Class59_Sub1.aBoolean5300 && Class348_Sub42_Sub12.method3229(-82) != 1) OutputStream_Sub1.method132(106, (Class240.anInt4674 == 3) || Class240.anInt4674 == 7, za_Sub1.method3439(107), 0, Class348_Sub44.method3306((byte) -111), 0);
+        if (Class59_Sub1.aBoolean5300 && Class348_Sub42_Sub12.method3229(-82) != 1) OutputStream_Sub1.method132(106, (Class240.mainLogicStep == 3) || Class240.mainLogicStep == 7, za_Sub1.method3439(107), 0, Class348_Sub44.method3306((byte) -111), 0);
         int i = 0;
         if (bool != false) method847(null, -110);
         int i_1_ = 0;
@@ -130,7 +130,7 @@ final class Class88 {
                     Class348_Sub47 class348_sub47 = Class203.method1478(true);
                     Class348_Sub49_Sub2 class348_sub49_sub2 = (class348_sub47.aClass348_Sub49_Sub2_7116);
                     if (Option_Sub12.anInt5969 == 2) {
-                        if (Class240.anInt4674 != 13) class348_sub49_sub2.writeByte(false, Class178.aClass29_2342.anInt400);
+                        if (Class240.mainLogicStep != 13) class348_sub49_sub2.writeByte(false, Class178.aClass29_2342.anInt400);
                         else class348_sub49_sub2.writeByte(false, Class178.aClass29_2344.anInt400);
                         class348_sub49_sub2.writeShort((byte) 107, 0);
                         int i_6_ = class348_sub49_sub2.anInt7197;

@@ -1513,7 +1513,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class260.aClass114_3307) {
-            if (!Js5MasterIndex.method2672(Class240.anInt4674, -105)) Class289.anInt3699 = (Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944) * 30);
+            if (!Js5MasterIndex.method2672(Class240.mainLogicStep, -105)) Class289.anInt3699 = (Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944) * 30);
             else Class289.anInt3699 = (int) ((float) Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944) * 2.5F);
             Class348_Sub40_Sub23.anInt9313 = LoadingScreenRenderer.anInt3918;
             Class348_Sub3.aClass114_6584 = null;

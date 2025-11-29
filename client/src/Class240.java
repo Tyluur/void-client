@@ -5,7 +5,7 @@
 final class Class240 implements Interface1 {
     static Class323 aClass323_4672;
     static float aFloat4673;
-    static int anInt4674 = 0;
+    static int mainLogicStep = 0;
     static int anInt4675;
     static int anInt4676;
     static int anInt4677;
@@ -43,7 +43,7 @@ final class Class240 implements Interface1 {
 
     public static void method1853(byte i) {
         aSpriteArray4679 = null;
-        if (i != 48) anInt4674 = -62;
+        if (i != 48) mainLogicStep = -62;
         aClass323_4672 = null;
         aFontRenderer_4684 = null;
     }

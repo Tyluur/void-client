@@ -134,9 +134,9 @@ final class VarcstrTypeList {
                         }
                         if (string.equalsIgnoreCase("clientdrop")) {
                             Applet_Sub1.method94("Dropped client connection", -119);
-                            if (Class240.anInt4674 == 10) Class272.method2049(105);
+                            if (Class240.mainLogicStep == 10) Class272.method2049(105);
                             else {
-                                if (Class240.anInt4674 == 11) Class110.aBoolean1712 = true;
+                                if (Class240.mainLogicStep == 11) Class110.aBoolean1712 = true;
                                 break;
                             }
                             break;
@@ -626,7 +626,7 @@ final class VarcstrTypeList {
                             if (i_24_ > 0) Class320.aShort3992 = i_24_;
                             break;
                         }
-                        if (Class240.anInt4674 == 10) {
+                        if (Class240.mainLogicStep == 10) {
                             Class292.anInt4799++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class101_Sub2.aClass351_5699), (Class348_Sub23_Sub2.aClass77_9029), i ^ 0x24);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, string.length() + 3);
@@ -644,7 +644,7 @@ final class VarcstrTypeList {
                         break;
                     }
                 }
-                if (Class240.anInt4674 == 10) break;
+                if (Class240.mainLogicStep == 10) break;
                 Applet_Sub1.method94(Class274.aClass274_3486.method2063(Class348_Sub33.language, 544) + string, 57);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("lba.B(" + (string != null ? "{...}" : "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'));

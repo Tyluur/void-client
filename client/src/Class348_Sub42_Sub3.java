@@ -69,7 +69,7 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
     }
 
     static final void method3175(byte i) {
-        if (!Class348_Sub42_Sub8.method3196(Class240.anInt4674, -114) && !Js5MasterIndex.method2672(Class240.anInt4674, -103)) {
+        if (!Class348_Sub42_Sub8.method3196(Class240.mainLogicStep, -114) && !Js5MasterIndex.method2672(Class240.mainLogicStep, -103)) {
             int i_12_ = ((Class132.aPlayer_1907.anIntArray10320[0]) >> 3);
             int i_13_ = ((Class132.aPlayer_1907.anIntArray10317[0]) >> 3);
             if (i_12_ < 0 || Class367_Sub4.mapLength >> 3 <= i_12_ || i_13_ < 0 || (Class348_Sub40_Sub3.mapWidth >> 3 <= i_13_)) Class346_Sub1.method2703(0, Class367_Sub4.mapLength >> 4, (Class348_Sub40_Sub3.mapWidth >> 4), (byte) -13);

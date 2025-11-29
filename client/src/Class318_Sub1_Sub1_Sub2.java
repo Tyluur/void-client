@@ -47,7 +47,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
         do {
             try {
                 anInt9970++;
-                if (i_1_ > -106) method2402(-5, (byte) 56);
+                if (i_1_ > -106) isBuildingMap(-5, (byte) 56);
                 if (!(class318_sub1 instanceof Class318_Sub1_Sub1_Sub2)) break;
                 Class318_Sub1_Sub1_Sub2 class318_sub1_sub1_sub2_3_ = (Class318_Sub1_Sub1_Sub2) class318_sub1;
                 if (aClass64_9993 == null || class318_sub1_sub1_sub2_3_.aClass64_9993 == null) break;
@@ -98,10 +98,11 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
         return class51.method476(var_ha, var_s_5_, 22, i, this.x, bool, var_s, this.anInt6382, this.y, aByte9980, 128);
     }
 
-    static final boolean method2402(int i, byte i_6_) {
+    // method2402
+    static final boolean isBuildingMap(int i, byte i_6_) {
         anInt9994++;
         if (i_6_ >= -52) return true;
-        return i == 4 || i == 8 || i == 11;
+        return i == Class348_Sub49.STEP_LOGIN_SCREEN_MAP_BUILD || i == Class348_Sub49.STEP_LOBBY_SCREEN_MAP_BUILD || i == Class348_Sub49.STEP_GAME_SCREEN;
     }
 
     final void method2392(boolean bool) {
@@ -165,7 +166,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
 
     static final void method2403(int i, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_) {
         anInt9977++;
-        if (i_10_ != 19206) method2402(-3, (byte) 46);
+        if (i_10_ != 19206) isBuildingMap(-3, (byte) 46);
         Class302[] class302s = Class348_Sub27.aClass302Array6897;
         for (int i_13_ = 0; i_13_ < class302s.length; i_13_++) {
             Class302 class302 = class302s[i_13_];

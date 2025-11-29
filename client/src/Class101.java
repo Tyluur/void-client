@@ -69,7 +69,7 @@ abstract class Class101 {
             r.mapUndergroundLocations[i_10_] = -1;
         }
         int i_11_;
-        if (Class240.anInt4674 != 3) i_11_ = 8;
+        if (Class240.mainLogicStep != 3) i_11_ = 8;
         else i_11_ = 4;
         Class348_Sub41.method3157(i_5_, (byte) 123, i_4_, i_11_, false);
     }
