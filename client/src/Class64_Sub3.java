@@ -2949,7 +2949,7 @@ final class Class64_Sub3 extends Class64 {
                 anIntArray5593 = mesh.vertexY;
                 anInt5642 = mesh.vertexCount;
                 anIntArray5543 = mesh.vertexX;
-                aShortArray5608 = mesh.aShortArray1842;
+                aShortArray5608 = mesh.originalModels;
                 anInt5557 = mesh.maxVertex;
                 aModelParticleEffectorArray5541 = mesh.effectors;
                 Class8[] class8s = new Class8[anInt5557];

@@ -242,7 +242,7 @@ final class i extends Class64 implements Interface19 {
             MeshBillboard meshBillboard = mesh.billboards[i_91_];
             is_88_[i_89_++] = meshBillboard.anInt2156;
         }
-        R(anOa5117, aYa5120, mesh.vertexCount, mesh.maxVertex, mesh.vertexX, mesh.vertexY, mesh.vertexZ, mesh.vertexLabel, mesh.aShortArray1842, mesh.faceCount, mesh.faceA, mesh.faceB, mesh.faceC, mesh.shadingType, mesh.facePriority, mesh.faceAlpha, mesh.faceTexSpace, mesh.faceColour, mesh.faceTexture, mesh.faceLabel, mesh.aByte1851, mesh.aShortArray1856, mesh.textSpaceCount, mesh.texMappingType, mesh.texSpaceDefA, mesh.texSpaceDefB, mesh.texSpaceDefC, mesh.texSpaceScaleX, mesh.texSpaceScaleY, mesh.texSpaceScaleZ, mesh.texRotation, mesh.rexDirection, mesh.texOffsetX, mesh.texOffsetY, mesh.texOffsetZ, is, i_82_, i_83_, i, i_79_, i_80_, i_81_, is_88_);
+        R(anOa5117, aYa5120, mesh.vertexCount, mesh.maxVertex, mesh.vertexX, mesh.vertexY, mesh.vertexZ, mesh.vertexLabel, mesh.originalModels, mesh.faceCount, mesh.faceA, mesh.faceB, mesh.faceC, mesh.shadingType, mesh.facePriority, mesh.faceAlpha, mesh.faceTexSpace, mesh.faceColour, mesh.faceTexture, mesh.faceLabel, mesh.globalPriority, mesh.aShortArray1856, mesh.texSpaceCount, mesh.texMappingType, mesh.texSpaceDefA, mesh.texSpaceDefB, mesh.texSpaceDefC, mesh.texSpaceScaleX, mesh.texSpaceScaleY, mesh.texSpaceScaleZ, mesh.texRotation, mesh.rexDirection, mesh.texOffsetX, mesh.texOffsetY, mesh.texOffsetZ, is, i_82_, i_83_, i, i_79_, i_80_, i_81_, is_88_);
     }
 
     private final native void A(long l, int i, boolean bool);

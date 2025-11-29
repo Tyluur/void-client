@@ -9,7 +9,7 @@ import java.util.Random;
 final class Mesh {
     int[] texSpaceScaleY;
     int faceCount;
-    int textSpaceCount;
+    int texSpaceCount;
     static int anInt1819;
     byte[] faceTexSpace;
     int maxVertex;
@@ -33,7 +33,7 @@ final class Mesh {
     byte[] facePriority;
     static int anInt1840;
     int[] vertexX;
-    short[] aShortArray1842;
+    short[] originalModels;
     byte[] shadingType;
     int[] texSpaceScaleZ;
     static int anInt1845;
@@ -42,7 +42,7 @@ final class Mesh {
     static Index aIndex_1848;
     short[] texSpaceDefB;
     static int anInt1850;
-    byte aByte1851;
+    byte globalPriority;
     int[] vertexZ;
     byte[] rexDirection;
     static int anInt1854;
@@ -70,7 +70,7 @@ final class Mesh {
             this.vertexZ[i_1_] <<= i;
         }
         if (i_0_ <= 39) method1107(40, -7, -80, -24);
-        if (this.textSpaceCount > 0 && this.texSpaceScaleX != null) {
+        if (this.texSpaceCount > 0 && this.texSpaceScaleX != null) {
             for (int i_2_ = 0; i_2_ < this.texSpaceScaleX.length; i_2_++) {
                 this.texSpaceScaleX[i_2_] <<= i;
                 this.texSpaceScaleY[i_2_] <<= i;
@@ -237,7 +237,7 @@ final class Mesh {
         packet.pos = is.length - 18;
         this.vertexCount = packet.readUnsignedShort(1 ^ 0x3235f8f9);
         this.faceCount = packet.readUnsignedShort(842397944);
-        this.textSpaceCount = packet.readUnsignedByte(255);
+        this.texSpaceCount = packet.readUnsignedByte(255);
         int customShadingFlag = packet.readUnsignedByte(255);
         int priorityFlag = packet.readUnsignedByte(255);
         int alphaFlag = packet.readUnsignedByte(255);
@@ -267,7 +267,7 @@ final class Mesh {
         int faceCountPtr = ptr;
         ptr += this.faceCount * 2;
         int textFacePtr = ptr;
-        ptr += this.textSpaceCount * 6;
+        ptr += this.texSpaceCount * 6;
         int vXPtr = ptr;
         ptr += xLen;
         int vYPtr = ptr;
@@ -275,7 +275,7 @@ final class Mesh {
         int vZPtr = ptr;
         this.faceColour = new short[this.faceCount];
         if (priorityFlag == 255) this.facePriority = new byte[this.faceCount];
-        else this.aByte1851 = (byte) priorityFlag;
+        else this.globalPriority = (byte) priorityFlag;
         if (vertexLabelFlag == 1) this.vertexLabel = new int[this.vertexCount];
         if (alphaFlag == 1) this.faceAlpha = new byte[this.faceCount];
         this.faceA = new short[this.faceCount];
@@ -287,11 +287,11 @@ final class Mesh {
         this.vertexY = new int[this.vertexCount];
         if (faceLabelFlag == 1) this.faceLabel = new int[this.faceCount];
         this.faceC = new short[this.faceCount];
-        if (this.textSpaceCount > 0) {
-            this.texMappingType = new byte[this.textSpaceCount];
-            this.texSpaceDefA = new short[this.textSpaceCount];
-            this.texSpaceDefB = new short[this.textSpaceCount];
-            this.texSpaceDefC = new short[this.textSpaceCount];
+        if (this.texSpaceCount > 0) {
+            this.texMappingType = new byte[this.texSpaceCount];
+            this.texSpaceDefA = new short[this.texSpaceCount];
+            this.texSpaceDefB = new short[this.texSpaceCount];
+            this.texSpaceDefC = new short[this.texSpaceCount];
         }
         this.faceB = new short[this.faceCount];
         this.vertexZ = new int[this.vertexCount];
@@ -403,7 +403,7 @@ final class Mesh {
         }
         this.maxVertex++;
         packet.pos = textFacePtr;
-        for (int i = 0; i < this.textSpaceCount; i++) {
+        for (int i = 0; i < this.texSpaceCount; i++) {
             this.texMappingType[i] = (byte) 0;
             this.texSpaceDefA[i] = (short) packet.readUnsignedShort(842397944);
             this.texSpaceDefB[i] = (short) packet.readUnsignedShort(842397944);
@@ -424,40 +424,41 @@ final class Mesh {
         if (!hasTextures) this.faceTexture = null;
     }
 
-    private final int method1104(Mesh mesh_101_, int i, int i_102_, short i_103_) {
+    // method1104
+    private final int addVertex(Mesh mesh, int v, short modelFlag) {
         anInt1858++;
-        int i_104_ = mesh_101_.vertexX[i_102_];
-        int i_105_ = mesh_101_.vertexY[i_102_];
-        int i_106_ = mesh_101_.vertexZ[i_102_];
-        for (int i_107_ = i; i_107_ < this.vertexCount; i_107_++) {
-            if (this.vertexX[i_107_] == i_104_ && i_105_ == this.vertexY[i_107_] && (i_106_ == this.vertexZ[i_107_])) {
-                this.aShortArray1842[i_107_] = (short) Class273.method2057((this.aShortArray1842[i_107_]), i_103_);
-                return i_107_;
+        int x = mesh.vertexX[v];
+        int y = mesh.vertexY[v];
+        int z = mesh.vertexZ[v];
+        for (int i = 0; i < this.vertexCount; i++) {
+            if (this.vertexX[i] == x && y == this.vertexY[i] && (z == this.vertexZ[i])) {
+                this.originalModels[i] = (short) Class273.method2057((this.originalModels[i]), modelFlag);
+                return i;
             }
         }
-        this.vertexX[this.vertexCount] = i_104_;
-        this.vertexY[this.vertexCount] = i_105_;
-        this.vertexZ[this.vertexCount] = i_106_;
-        this.aShortArray1842[this.vertexCount] = i_103_;
-        this.vertexLabel[this.vertexCount] = (mesh_101_.vertexLabel != null ? mesh_101_.vertexLabel[i_102_] : -1);
+        this.vertexX[this.vertexCount] = x;
+        this.vertexY[this.vertexCount] = y;
+        this.vertexZ[this.vertexCount] = z;
+        this.originalModels[this.vertexCount] = modelFlag;
+        this.vertexLabel[this.vertexCount] = (mesh.vertexLabel != null ? mesh.vertexLabel[v] : -1);
         return this.vertexCount++;
     }
 
     final byte method1105(int i, byte i_108_, byte i_109_, short i_110_, short i_111_, byte i_112_, short i_113_, short i_114_, short i_115_, short i_116_) {
         anInt1838++;
-        if (this.textSpaceCount >= 255) throw new IllegalStateException();
-        this.texMappingType[this.textSpaceCount] = (byte) 3;
-        this.texSpaceDefA[this.textSpaceCount] = i_110_;
-        this.texSpaceDefB[this.textSpaceCount] = i_114_;
-        this.texSpaceDefC[this.textSpaceCount] = i_113_;
-        this.texSpaceScaleX[this.textSpaceCount] = i_115_;
-        this.texSpaceScaleY[this.textSpaceCount] = i_111_;
-        this.texSpaceScaleZ[this.textSpaceCount] = i_116_;
-        this.texRotation[this.textSpaceCount] = i_108_;
-        this.rexDirection[this.textSpaceCount] = i_112_;
-        this.texOffsetX[this.textSpaceCount] = i_109_;
+        if (this.texSpaceCount >= 255) throw new IllegalStateException();
+        this.texMappingType[this.texSpaceCount] = (byte) 3;
+        this.texSpaceDefA[this.texSpaceCount] = i_110_;
+        this.texSpaceDefB[this.texSpaceCount] = i_114_;
+        this.texSpaceDefC[this.texSpaceCount] = i_113_;
+        this.texSpaceScaleX[this.texSpaceCount] = i_115_;
+        this.texSpaceScaleY[this.texSpaceCount] = i_111_;
+        this.texSpaceScaleZ[this.texSpaceCount] = i_116_;
+        this.texRotation[this.texSpaceCount] = i_108_;
+        this.rexDirection[this.texSpaceCount] = i_112_;
+        this.texOffsetX[this.texSpaceCount] = i_109_;
         int i_117_ = 93 % ((i - -19) / 56);
-        return (byte) this.textSpaceCount++;
+        return (byte) this.texSpaceCount++;
     }
 
     // method1106
@@ -473,7 +474,7 @@ final class Mesh {
         packet.pos = -23 + data.length;
         this.vertexCount = packet.readUnsignedShort(842397944);
         this.faceCount = packet.readUnsignedShort(842397944);
-        this.textSpaceCount = packet.readUnsignedByte(255);
+        this.texSpaceCount = packet.readUnsignedByte(255);
         int globalFlags = packet.readUnsignedByte(255);
         boolean hasFlatShading = (0x1 & globalFlags) == 1;
         boolean hasParticleEffects = (globalFlags & 0x2) == 2;
@@ -497,17 +498,17 @@ final class Mesh {
         int planarMappingCount = 0;
         int complexMappingCount = 0;
         int cubeMappingCount = 0;
-        if (this.textSpaceCount > 0) {
+        if (this.texSpaceCount > 0) {
             packet.pos = 0;
-            this.texMappingType = new byte[this.textSpaceCount];
-            for (int i = 0; (i < this.textSpaceCount); i++) {
+            this.texMappingType = new byte[this.texSpaceCount];
+            for (int i = 0; (i < this.texSpaceCount); i++) {
                 byte type = (this.texMappingType[i] = packet.readByte(-124));
                 if (type >= 1 && type <= 3) complexMappingCount++;
                 if (type == 2) cubeMappingCount++;
                 if (type == 0) planarMappingCount++;
             }
         }
-        int ptr = this.textSpaceCount;
+        int ptr = this.texSpaceCount;
         int vertexFlagsPtr = ptr;
         ptr += this.vertexCount;
         int smoothingPtr = ptr;
@@ -554,13 +555,13 @@ final class Mesh {
         this.faceB = new short[this.faceCount];
         this.faceColour = new short[this.faceCount];
         if (faceGroupFlag == 1) this.faceLabel = new int[this.faceCount];
-        if (this.textSpaceCount > 0) {
+        if (this.texSpaceCount > 0) {
             if (cubeMappingCount > 0) {
                 this.texOffsetY = new int[cubeMappingCount];
                 this.texOffsetZ = new int[cubeMappingCount];
             }
-            this.texSpaceDefB = new short[this.textSpaceCount];
-            this.texSpaceDefA = new short[this.textSpaceCount];
+            this.texSpaceDefB = new short[this.texSpaceCount];
+            this.texSpaceDefA = new short[this.texSpaceCount];
             if (complexMappingCount > 0) {
                 this.texOffsetX = new int[complexMappingCount];
                 this.rexDirection = new byte[complexMappingCount];
@@ -569,16 +570,16 @@ final class Mesh {
                 this.texSpaceScaleZ = new int[complexMappingCount];
                 this.texSpaceScaleX = new int[complexMappingCount];
             }
-            this.texSpaceDefC = new short[this.textSpaceCount];
+            this.texSpaceDefC = new short[this.texSpaceCount];
         }
         if (hasFlatShading) this.shadingType = new byte[this.faceCount];
         if (faceAlphaFlag == 1) this.faceAlpha = new byte[this.faceCount];
         if (priorityFlag == 255) this.facePriority = new byte[this.faceCount];
-        else this.aByte1851 = (byte) priorityFlag;
+        else this.globalPriority = (byte) priorityFlag;
         this.faceC = new short[this.faceCount];
         this.vertexY = new int[this.vertexCount];
         this.faceA = new short[this.faceCount];
-        if (faceTextureFlag == 1 && this.textSpaceCount > 0) this.faceTexSpace = new byte[this.faceCount];
+        if (faceTextureFlag == 1 && this.texSpaceCount > 0) this.faceTexSpace = new byte[this.faceCount];
         int i_165_ = ptr;
         this.vertexZ = new int[this.vertexCount];
         this.vertexX = new int[this.vertexCount];
@@ -687,7 +688,7 @@ final class Mesh {
         packet4.pos = texSpaceRotationPtr;
         packet5.pos = texSpaceOrientationPtr;
         packet6.pos = texSpaceOffsePtr;
-        for (int i = 0; this.textSpaceCount > i; i++) {
+        for (int i = 0; this.texSpaceCount > i; i++) {
             int type = this.texMappingType[i] & 0xff;
             if (type == 0) {
                 this.texSpaceDefA[i] = (short) packet.readUnsignedShort(842397944);
@@ -824,16 +825,16 @@ final class Mesh {
 
     public Mesh() {
         this.faceCount = 0;
-        this.aByte1851 = (byte) 0;
+        this.globalPriority = (byte) 0;
         this.maxVertex = 0;
-        this.textSpaceCount = 0;
+        this.texSpaceCount = 0;
     }
 
     Mesh(byte[] is) {
         this.faceCount = 0;
-        this.aByte1851 = (byte) 0;
+        this.globalPriority = (byte) 0;
         this.maxVertex = 0;
-        this.textSpaceCount = 0;
+        this.texSpaceCount = 0;
         if (is[is.length + -1] == -1 && is[-2 + is.length] == -1) decodeNew(is);
         else decodeOld(is);
     }
@@ -849,9 +850,9 @@ final class Mesh {
 
     Mesh(int i, int i_214_, int i_215_) {
         this.faceCount = 0;
-        this.aByte1851 = (byte) 0;
+        this.globalPriority = (byte) 0;
         this.maxVertex = 0;
-        this.textSpaceCount = 0;
+        this.texSpaceCount = 0;
         this.faceTexSpace = new byte[i_214_];
         this.faceA = new short[i_214_];
         this.faceColour = new short[i_214_];
@@ -882,165 +883,165 @@ final class Mesh {
         this.faceAlpha = new byte[i_214_];
     }
 
-    Mesh(Mesh[] meshes, int i) {
+    Mesh(Mesh[] meshes, int meshCount) {
         this.faceCount = 0;
-        this.aByte1851 = (byte) 0;
+        this.globalPriority = (byte) 0;
         this.maxVertex = 0;
-        this.textSpaceCount = 0;
-        this.textSpaceCount = 0;
+        this.texSpaceCount = 0;
+        this.texSpaceCount = 0;
         this.faceCount = 0;
         this.vertexCount = 0;
-        int i_216_ = 0;
-        int i_217_ = 0;
-        int i_218_ = 0;
-        boolean bool = false;
-        boolean bool_219_ = false;
-        boolean bool_220_ = false;
-        boolean bool_221_ = false;
-        boolean bool_222_ = false;
-        this.aByte1851 = (byte) -1;
-        boolean bool_223_ = false;
-        for (int i_224_ = 0; i > i_224_; i_224_++) {
-            Mesh mesh_225_ = meshes[i_224_];
-            if (mesh_225_ != null) {
-                this.faceCount += mesh_225_.faceCount;
-                this.vertexCount += mesh_225_.vertexCount;
-                this.textSpaceCount += mesh_225_.textSpaceCount;
-                bool = bool | mesh_225_.shadingType != null;
-                if (mesh_225_.billboards != null) i_218_ += (mesh_225_.billboards).length;
-                if (mesh_225_.emitters != null) i_216_ += (mesh_225_.emitters).length;
-                if (mesh_225_.effectors != null) i_217_ += (mesh_225_.effectors).length;
-                bool_222_ = (bool_222_ | mesh_225_.faceTexture != null);
-                bool_221_ = (bool_221_ | mesh_225_.faceTexSpace != null);
-                if (mesh_225_.facePriority == null) {
-                    if (this.aByte1851 == -1) this.aByte1851 = mesh_225_.aByte1851;
-                    if (this.aByte1851 != mesh_225_.aByte1851) bool_219_ = true;
-                } else bool_219_ = true;
-                bool_220_ = (bool_220_ | mesh_225_.faceAlpha != null);
-                bool_223_ = (bool_223_ | mesh_225_.faceLabel != null);
+        int emitterCount = 0;
+        int effectorCount = 0;
+        int billboardCount = 0;
+        boolean hasShadingTypes = false;
+        boolean hasPriorities = false;
+        boolean hasTexSpaces = false;
+        boolean hasAlpha = false;
+        boolean hasFaceTextures = false;
+        this.globalPriority = (byte) -1;
+        boolean hasFaceGroups = false;
+        for (int i = 0; meshCount > i; i++) {
+            Mesh mesh = meshes[i];
+            if (mesh != null) {
+                this.faceCount += mesh.faceCount;
+                this.vertexCount += mesh.vertexCount;
+                this.texSpaceCount += mesh.texSpaceCount;
+                hasShadingTypes = hasShadingTypes | mesh.shadingType != null;
+                if (mesh.billboards != null) billboardCount += (mesh.billboards).length;
+                if (mesh.emitters != null) emitterCount += (mesh.emitters).length;
+                if (mesh.effectors != null) effectorCount += (mesh.effectors).length;
+                hasFaceTextures = (hasFaceTextures | mesh.faceTexture != null);
+                hasAlpha = (hasAlpha | mesh.faceTexSpace != null);
+                if (mesh.facePriority == null) {
+                    if (this.globalPriority == -1) this.globalPriority = mesh.globalPriority;
+                    if (this.globalPriority != mesh.globalPriority) hasPriorities = true;
+                } else hasPriorities = true;
+                hasTexSpaces = (hasTexSpaces | mesh.faceAlpha != null);
+                hasFaceGroups = (hasFaceGroups | mesh.faceLabel != null);
             }
         }
         this.faceB = new short[this.faceCount];
-        if (this.textSpaceCount > 0) {
-            this.texSpaceDefA = new short[this.textSpaceCount];
-            this.texMappingType = new byte[this.textSpaceCount];
-            this.texOffsetX = new int[this.textSpaceCount];
-            this.texSpaceScaleZ = new int[this.textSpaceCount];
-            this.texRotation = new byte[this.textSpaceCount];
-            this.texOffsetY = new int[this.textSpaceCount];
-            this.texOffsetZ = new int[this.textSpaceCount];
-            this.texSpaceScaleX = new int[this.textSpaceCount];
-            this.rexDirection = new byte[this.textSpaceCount];
-            this.texSpaceDefB = new short[this.textSpaceCount];
-            this.texSpaceScaleY = new int[this.textSpaceCount];
-            this.texSpaceDefC = new short[this.textSpaceCount];
+        if (this.texSpaceCount > 0) {
+            this.texSpaceDefA = new short[this.texSpaceCount];
+            this.texMappingType = new byte[this.texSpaceCount];
+            this.texOffsetX = new int[this.texSpaceCount];
+            this.texSpaceScaleZ = new int[this.texSpaceCount];
+            this.texRotation = new byte[this.texSpaceCount];
+            this.texOffsetY = new int[this.texSpaceCount];
+            this.texOffsetZ = new int[this.texSpaceCount];
+            this.texSpaceScaleX = new int[this.texSpaceCount];
+            this.rexDirection = new byte[this.texSpaceCount];
+            this.texSpaceDefB = new short[this.texSpaceCount];
+            this.texSpaceScaleY = new int[this.texSpaceCount];
+            this.texSpaceDefC = new short[this.texSpaceCount];
         }
         this.aShortArray1856 = new short[this.faceCount];
-        if (bool_222_) this.faceTexture = new short[this.faceCount];
+        if (hasFaceTextures) this.faceTexture = new short[this.faceCount];
         this.faceA = new short[this.faceCount];
-        if (bool_223_) this.faceLabel = new int[this.faceCount];
-        if (bool_219_) this.facePriority = new byte[this.faceCount];
-        if (bool) this.shadingType = new byte[this.faceCount];
-        if (i_218_ > 0) this.billboards = new MeshBillboard[i_218_];
-        if (i_217_ > 0) this.effectors = new ModelParticleEffector[i_217_];
+        if (hasFaceGroups) this.faceLabel = new int[this.faceCount];
+        if (hasPriorities) this.facePriority = new byte[this.faceCount];
+        if (hasShadingTypes) this.shadingType = new byte[this.faceCount];
+        if (billboardCount > 0) this.billboards = new MeshBillboard[billboardCount];
+        if (effectorCount > 0) this.effectors = new ModelParticleEffector[effectorCount];
         this.vertexLabel = new int[this.vertexCount];
-        if (bool_221_) this.faceTexSpace = new byte[this.faceCount];
+        if (hasAlpha) this.faceTexSpace = new byte[this.faceCount];
         this.vertexZ = new int[this.vertexCount];
         this.faceColour = new short[this.faceCount];
         this.vertexX = new int[this.vertexCount];
         this.vertexY = new int[this.vertexCount];
-        if (i_216_ > 0) this.emitters = new ModelParticleEmitter[i_216_];
+        if (emitterCount > 0) this.emitters = new ModelParticleEmitter[emitterCount];
         this.faceC = new short[this.faceCount];
-        if (bool_220_) this.faceAlpha = new byte[this.faceCount];
-        this.aShortArray1842 = new short[this.vertexCount];
-        this.textSpaceCount = 0;
-        i_217_ = 0;
-        i_218_ = 0;
-        i_216_ = 0;
+        if (hasTexSpaces) this.faceAlpha = new byte[this.faceCount];
+        this.originalModels = new short[this.vertexCount];
+        this.texSpaceCount = 0;
+        effectorCount = 0;
+        billboardCount = 0;
+        emitterCount = 0;
         this.faceCount = 0;
         this.vertexCount = 0;
-        for (int i_226_ = 0; i > i_226_; i_226_++) {
-            short i_227_ = (short) (1 << i_226_);
-            Mesh mesh_228_ = meshes[i_226_];
-            if (mesh_228_ != null) {
-                if (mesh_228_.billboards != null) {
-                    for (int i_229_ = 0; (mesh_228_.billboards.length > i_229_); i_229_++) {
-                        MeshBillboard meshBillboard = (mesh_228_.billboards[i_229_]);
-                        this.billboards[i_218_++] = meshBillboard.method1266(5, ((meshBillboard.anInt2155) - -(this.faceCount)));
+        for (int i = 0; meshCount > i; i++) {
+            short s = (short) (1 << i);
+            Mesh mesh = meshes[i];
+            if (mesh != null) {
+                if (mesh.billboards != null) {
+                    for (int j = 0; (mesh.billboards.length > j); j++) {
+                        MeshBillboard meshBillboard = (mesh.billboards[j]);
+                        this.billboards[billboardCount++] = meshBillboard.method1266(5, ((meshBillboard.anInt2155) - -(this.faceCount)));
                     }
                 }
-                for (int i_230_ = 0; mesh_228_.faceCount > i_230_; i_230_++) {
-                    if (bool && mesh_228_.shadingType != null) this.shadingType[(this.faceCount)] = (mesh_228_.shadingType[i_230_]);
-                    if (bool_219_) {
-                        if (mesh_228_.facePriority != null) this.facePriority[(this.faceCount)] = (mesh_228_.facePriority[i_230_]);
-                        else this.facePriority[(this.faceCount)] = mesh_228_.aByte1851;
+                for (int j = 0; mesh.faceCount > j; j++) {
+                    if (hasShadingTypes && mesh.shadingType != null) this.shadingType[(this.faceCount)] = (mesh.shadingType[j]);
+                    if (hasPriorities) {
+                        if (mesh.facePriority != null) this.facePriority[(this.faceCount)] = (mesh.facePriority[j]);
+                        else this.facePriority[(this.faceCount)] = mesh.globalPriority;
                     }
-                    if (bool_220_ && mesh_228_.faceAlpha != null) this.faceAlpha[(this.faceCount)] = (mesh_228_.faceAlpha[i_230_]);
-                    if (bool_222_) {
-                        if (mesh_228_.faceTexture == null) this.faceTexture[this.faceCount] = (short) -1;
-                        else this.faceTexture[this.faceCount] = (mesh_228_.faceTexture[i_230_]);
+                    if (hasTexSpaces && mesh.faceAlpha != null) this.faceAlpha[(this.faceCount)] = (mesh.faceAlpha[j]);
+                    if (hasFaceTextures) {
+                        if (mesh.faceTexture == null) this.faceTexture[this.faceCount] = (short) -1;
+                        else this.faceTexture[this.faceCount] = (mesh.faceTexture[j]);
                     }
-                    if (bool_223_) {
-                        if (mesh_228_.faceLabel == null) this.faceLabel[(this.faceCount)] = -1;
-                        else this.faceLabel[(this.faceCount)] = (mesh_228_.faceLabel[i_230_]);
+                    if (hasFaceGroups) {
+                        if (mesh.faceLabel == null) this.faceLabel[(this.faceCount)] = -1;
+                        else this.faceLabel[(this.faceCount)] = (mesh.faceLabel[j]);
                     }
-                    this.faceA[(this.faceCount)] = (short) method1104(mesh_228_, 0, (mesh_228_.faceA[i_230_]), i_227_);
-                    this.faceB[(this.faceCount)] = (short) method1104(mesh_228_, 0, (mesh_228_.faceB[i_230_]), i_227_);
-                    this.faceC[(this.faceCount)] = (short) method1104(mesh_228_, 0, (mesh_228_.faceC[i_230_]), i_227_);
-                    this.aShortArray1856[(this.faceCount)] = i_227_;
-                    this.faceColour[(this.faceCount)] = mesh_228_.faceColour[i_230_];
+                    this.faceA[(this.faceCount)] = (short) addVertex(mesh, (mesh.faceA[j]), s);
+                    this.faceB[(this.faceCount)] = (short) addVertex(mesh, (mesh.faceB[j]), s);
+                    this.faceC[(this.faceCount)] = (short) addVertex(mesh, (mesh.faceC[j]), s);
+                    this.aShortArray1856[(this.faceCount)] = s;
+                    this.faceColour[(this.faceCount)] = mesh.faceColour[j];
                     this.faceCount++;
                 }
-                if (mesh_228_.emitters != null) {
-                    for (int i_231_ = 0; (mesh_228_.emitters.length > i_231_); i_231_++) {
-                        int i_232_ = method1104(mesh_228_, 0, mesh_228_.emitters[i_231_].anInt1881, i_227_);
-                        int i_233_ = method1104(mesh_228_, 0, mesh_228_.emitters[i_231_].anInt1877, i_227_);
-                        int i_234_ = method1104(mesh_228_, 0, mesh_228_.emitters[i_231_].anInt1892, i_227_);
-                        this.emitters[i_216_] = mesh_228_.emitters[i_231_].method1124(i_233_, -1, i_234_, i_232_);
-                        i_216_++;
+                if (mesh.emitters != null) {
+                    for (int i_231_ = 0; (mesh.emitters.length > i_231_); i_231_++) {
+                        int a = addVertex(mesh, mesh.emitters[i_231_].anInt1881, s);
+                        int b = addVertex(mesh, mesh.emitters[i_231_].anInt1877, s);
+                        int c = addVertex(mesh, mesh.emitters[i_231_].anInt1892, s);
+                        this.emitters[emitterCount] = mesh.emitters[i_231_].copy(b, -1, c, a);
+                        emitterCount++;
                     }
                 }
-                if (mesh_228_.effectors != null) {
-                    for (int i_235_ = 0; (mesh_228_.effectors).length > i_235_; i_235_++) {
-                        int i_236_ = method1104(mesh_228_, 0, mesh_228_.effectors[i_235_].anInt4244, i_227_);
-                        this.effectors[i_217_] = mesh_228_.effectors[i_235_].method2687((byte) 94, i_236_);
-                        i_217_++;
+                if (mesh.effectors != null) {
+                    for (int i_235_ = 0; (mesh.effectors).length > i_235_; i_235_++) {
+                        int i_236_ = addVertex(mesh, mesh.effectors[i_235_].anInt4244, s);
+                        this.effectors[effectorCount] = mesh.effectors[i_235_].method2687((byte) 94, i_236_);
+                        effectorCount++;
                     }
                 }
             }
         }
-        int i_237_ = 0;
+        int texSpaceCount = 0;
         this.maxVertex = this.vertexCount;
-        for (int i_238_ = 0; i > i_238_; i_238_++) {
-            short i_239_ = (short) (1 << i_238_);
-            Mesh mesh_240_ = meshes[i_238_];
-            if (mesh_240_ != null) {
-                for (int i_241_ = 0; mesh_240_.faceCount > i_241_; i_241_++) {
-                    if (bool_221_) this.faceTexSpace[i_237_++] = (byte) (((mesh_240_.faceTexSpace) != null && (mesh_240_.faceTexSpace[i_241_]) != -1) ? ((mesh_240_.faceTexSpace[i_241_]) + this.textSpaceCount) : -1);
+        for (int i = 0; meshCount > i; i++) {
+            short modelFlag = (short) (1 << i);
+            Mesh mesh = meshes[i];
+            if (mesh != null) {
+                for (int j = 0; mesh.faceCount > j; j++) {
+                    if (hasAlpha) this.faceTexSpace[texSpaceCount++] = (byte) (((mesh.faceTexSpace) != null && (mesh.faceTexSpace[j]) != -1) ? ((mesh.faceTexSpace[j]) + this.texSpaceCount) : -1);
                 }
-                for (int i_242_ = 0; (mesh_240_.textSpaceCount > i_242_); i_242_++) {
-                    byte i_243_ = (this.texMappingType[(this.textSpaceCount)] = (mesh_240_.texMappingType[i_242_]));
-                    if (i_243_ == 0) {
-                        this.texSpaceDefA[(this.textSpaceCount)] = (short) method1104(mesh_240_, 0, (mesh_240_.texSpaceDefA[i_242_]), i_239_);
-                        this.texSpaceDefB[(this.textSpaceCount)] = (short) method1104(mesh_240_, 0, (mesh_240_.texSpaceDefB[i_242_]), i_239_);
-                        this.texSpaceDefC[(this.textSpaceCount)] = (short) method1104(mesh_240_, 0, (mesh_240_.texSpaceDefC[i_242_]), i_239_);
+                for (int j = 0; (mesh.texSpaceCount > j); j++) {
+                    byte type = (this.texMappingType[(this.texSpaceCount)] = (mesh.texMappingType[j]));
+                    if (type == 0) {
+                        this.texSpaceDefA[(this.texSpaceCount)] = (short) addVertex(mesh, (mesh.texSpaceDefA[j]), modelFlag);
+                        this.texSpaceDefB[(this.texSpaceCount)] = (short) addVertex(mesh, (mesh.texSpaceDefB[j]), modelFlag);
+                        this.texSpaceDefC[(this.texSpaceCount)] = (short) addVertex(mesh, (mesh.texSpaceDefC[j]), modelFlag);
                     }
-                    if (i_243_ >= 1 && i_243_ <= 3) {
-                        this.texSpaceDefA[(this.textSpaceCount)] = (mesh_240_.texSpaceDefA[i_242_]);
-                        this.texSpaceDefB[(this.textSpaceCount)] = (mesh_240_.texSpaceDefB[i_242_]);
-                        this.texSpaceDefC[(this.textSpaceCount)] = (mesh_240_.texSpaceDefC[i_242_]);
-                        this.texSpaceScaleX[(this.textSpaceCount)] = (mesh_240_.texSpaceScaleX[i_242_]);
-                        this.texSpaceScaleY[(this.textSpaceCount)] = (mesh_240_.texSpaceScaleY[i_242_]);
-                        this.texSpaceScaleZ[(this.textSpaceCount)] = (mesh_240_.texSpaceScaleZ[i_242_]);
-                        this.texRotation[(this.textSpaceCount)] = (mesh_240_.texRotation[i_242_]);
-                        this.rexDirection[(this.textSpaceCount)] = (mesh_240_.rexDirection[i_242_]);
-                        this.texOffsetX[(this.textSpaceCount)] = (mesh_240_.texOffsetX[i_242_]);
+                    if (type >= 1 && type <= 3) {
+                        this.texSpaceDefA[(this.texSpaceCount)] = (mesh.texSpaceDefA[j]);
+                        this.texSpaceDefB[(this.texSpaceCount)] = (mesh.texSpaceDefB[j]);
+                        this.texSpaceDefC[(this.texSpaceCount)] = (mesh.texSpaceDefC[j]);
+                        this.texSpaceScaleX[(this.texSpaceCount)] = (mesh.texSpaceScaleX[j]);
+                        this.texSpaceScaleY[(this.texSpaceCount)] = (mesh.texSpaceScaleY[j]);
+                        this.texSpaceScaleZ[(this.texSpaceCount)] = (mesh.texSpaceScaleZ[j]);
+                        this.texRotation[(this.texSpaceCount)] = (mesh.texRotation[j]);
+                        this.rexDirection[(this.texSpaceCount)] = (mesh.rexDirection[j]);
+                        this.texOffsetX[(this.texSpaceCount)] = (mesh.texOffsetX[j]);
                     }
-                    if (i_243_ == 2) {
-                        this.texOffsetY[(this.textSpaceCount)] = (mesh_240_.texOffsetY[i_242_]);
-                        this.texOffsetZ[(this.textSpaceCount)] = (mesh_240_.texOffsetZ[i_242_]);
+                    if (type == 2) {
+                        this.texOffsetY[(this.texSpaceCount)] = (mesh.texOffsetY[j]);
+                        this.texOffsetZ[(this.texSpaceCount)] = (mesh.texOffsetZ[j]);
                     }
-                    this.textSpaceCount++;
+                    this.texSpaceCount++;
                 }
             }
         }

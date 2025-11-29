@@ -2969,7 +2969,7 @@ final class Class64_Sub1 extends Class64 {
         aByteArray5386 = mesh.shadingType;
         aModelParticleEmitterArray5322 = mesh.emitters;
         aModelParticleEffectorArray5335 = mesh.effectors;
-        aShortArray5333 = mesh.aShortArray1842;
+        aShortArray5333 = mesh.originalModels;
         int[] is = new int[anInt5351];
         for (int i_788_ = 0; i_788_ < anInt5351; i_788_++)
             is[i_788_] = i_788_;

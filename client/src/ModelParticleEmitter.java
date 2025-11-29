@@ -26,7 +26,8 @@ final class ModelParticleEmitter {
     int anInt1892;
     static int anInt1893;
 
-    final ModelParticleEmitter method1124(int i, int i_0_, int i_1_, int i_2_) {
+    // method1124
+    final ModelParticleEmitter copy(int i, int i_0_, int i_1_, int i_2_) {
         anInt1893++;
         if (i_0_ != -1) return null;
         return new ModelParticleEmitter(anInt1886, i_2_, i, i_1_, this.aByte1875);

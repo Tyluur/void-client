@@ -21,7 +21,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
             int[] is_3_ = null;
             float[][] fs = null;
             if (mesh.faceTexSpace != null) {
-                int i_4_ = mesh.textSpaceCount;
+                int i_4_ = mesh.texSpaceCount;
                 int[] is_5_ = new int[i_4_];
                 int[] is_6_ = new int[i_4_];
                 int[] is_7_ = new int[i_4_];

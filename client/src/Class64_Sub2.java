@@ -1880,7 +1880,7 @@ final class Class64_Sub2 extends Class64 {
                 anInt5497 = mesh.vertexCount;
                 anIntArray5429 = mesh.vertexZ;
                 anIntArray5519 = mesh.vertexY;
-                aShortArray5494 = mesh.aShortArray1842;
+                aShortArray5494 = mesh.originalModels;
                 anInt5433 = mesh.maxVertex;
                 anIntArray5511 = mesh.vertexX;
                 aModelParticleEffectorArray5474 = mesh.effectors;
