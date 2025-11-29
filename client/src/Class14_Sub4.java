@@ -216,8 +216,8 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         if (Loader.skipLobby) {
             Class348_Sub6.anInt6634 = i;
             Class107.anInt1645 = i;
-        } else if (Class239_Sub12.anInt5969 != 1) {
-            if (Class239_Sub12.anInt5969 == 2) Class348_Sub6.anInt6634 = i;
+        } else if (Option_Sub12.anInt5969 != 1) {
+            if (Option_Sub12.anInt5969 == 2) Class348_Sub6.anInt6634 = i;
         } else Class107.anInt1645 = i;
         anInt8643++;
     }

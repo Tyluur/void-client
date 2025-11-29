@@ -96,13 +96,13 @@ final class Class297 implements Runnable {
             try {
                 int i = class144.anInt1994;
                 if (i == 1) {
-                    if (aLong3781 > Class62.method599(-53)) throw new IOException();
+                    if (aLong3781 > Class62.safeTime(-53)) throw new IOException();
                     if (Loader.debug) {
                         System.out.println("Connect: " + class144.anObject1996 + " " + class144.anInt2000);
                     }
                     class144.anObject1998 = new Socket(InetAddress.getByName((String) (class144.anObject1996)), class144.anInt2000);
                 } else if (i == 22) {
-                    if (aLong3781 > Class62.method599(-92)) throw new IOException();
+                    if (aLong3781 > Class62.safeTime(-92)) throw new IOException();
                     try {
                         class144.anObject1998 = Class61.method593(class144.anInt2000, (byte) -90, ((String) class144.anObject1996)).method2050(-112);
                     } catch (IOException_Sub1 ioexception_sub1) {
@@ -116,7 +116,7 @@ final class Class297 implements Runnable {
                     thread.setPriority(class144.anInt2000);
                     class144.anObject1998 = thread;
                 } else if (i == 4) {
-                    if (Class62.method599(-73) < aLong3781) throw new IOException();
+                    if (Class62.safeTime(-73) < aLong3781) throw new IOException();
                     class144.anObject1998 = new DataInputStream(((URL) (class144.anObject1996)).openStream());
                 } else if (i == 8) {
                     Object[] objects = ((Object[]) class144.anObject1996);
@@ -135,11 +135,11 @@ final class Class297 implements Runnable {
                     clipboard.setContents(transferable, null);
                 } else if (this.aBoolean3777) {
                     if (i == 3) {
-                        if (aLong3781 > Class62.method599(-123)) throw new IOException();
+                        if (aLong3781 > Class62.safeTime(-123)) throw new IOException();
                         String string = (((0xff & (class144.anInt2000 >> 24))) + "." + (0xff & (class144.anInt2000 >> 16)) + "." + ((class144.anInt2000 >> 8) & 0xff) + "." + (0xff & class144.anInt2000));
                         class144.anObject1998 = InetAddress.getByName(string).getHostName();
                     } else if (i == 21) {
-                        if (Class62.method599(-82) < aLong3781) throw new IOException();
+                        if (Class62.safeTime(-82) < aLong3781) throw new IOException();
                         class144.anObject1998 = InetAddress.getByName((String) (class144.anObject1996)).getAddress();
                     } else if (i != 5) {
                         if (i == 6) {
@@ -273,7 +273,7 @@ final class Class297 implements Runnable {
 
     final void method2239(int i) {
         if (i > -90) this.aClass234_3779 = null;
-        aLong3781 = 5000L + Class62.method599(-107);
+        aLong3781 = 5000L + Class62.safeTime(-107);
     }
 
     final Class144 method2240(int i) {

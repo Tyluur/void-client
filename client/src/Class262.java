@@ -16,7 +16,7 @@ final class Class262 {
     static Object anObject3331;
     static int anInt3332;
     static int anInt3333;
-    Class348 aClass348_3334 = new Class348();
+    Node aNode_3334 = new Node();
     static Class190[][] aClass190ArrayArray3335;
     static int anInt3336;
     static int anInt3337;
@@ -24,46 +24,46 @@ final class Class262 {
     static int anInt3339;
     static int anInt3340;
     static int anInt3341;
-    private Class348 aClass348_3342;
+    private Node aNode_3342;
 
     final void method1988(Class262 class262_0_, byte i) {
         if (i != -115) method1995(-53);
-        method1989((this.aClass348_3334.aClass348_4294), false, class262_0_);
+        method1989((this.aNode_3334.aNode_4294), false, class262_0_);
         anInt3340++;
     }
 
-    private final void method1989(Class348 class348, boolean bool, Class262 class262_1_) {
+    private final void method1989(Node node, boolean bool, Class262 class262_1_) {
         do {
             try {
                 anInt3325++;
-                Class348 class348_2_ = (this.aClass348_3334.aClass348_4295);
-                this.aClass348_3334.aClass348_4295 = class348.aClass348_4295;
-                class348.aClass348_4295.aClass348_4294 = this.aClass348_3334;
-                if (this.aClass348_3334 != class348) {
-                    class348.aClass348_4295 = (class262_1_.aClass348_3334.aClass348_4295);
-                    class348.aClass348_4295.aClass348_4294 = class348;
-                    class262_1_.aClass348_3334.aClass348_4295 = class348_2_;
-                    class348_2_.aClass348_4294 = class262_1_.aClass348_3334;
+                Node node_2_ = (this.aNode_3334.aNode_4295);
+                this.aNode_3334.aNode_4295 = node.aNode_4295;
+                node.aNode_4295.aNode_4294 = this.aNode_3334;
+                if (this.aNode_3334 != node) {
+                    node.aNode_4295 = (class262_1_.aNode_3334.aNode_4295);
+                    node.aNode_4295.aNode_4294 = node;
+                    class262_1_.aNode_3334.aNode_4295 = node_2_;
+                    node_2_.aNode_4294 = class262_1_.aNode_3334;
                 }
                 if (bool == false) break;
                 BILLBOARDS = null;
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uh.K(" + (class348 != null ? "{...}" : "null") + ',' + bool + ',' + (class262_1_ != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("uh.K(" + (node != null ? "{...}" : "null") + ',' + bool + ',' + (class262_1_ != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
     }
 
-    final Class348 method1990(byte i) {
+    final Node method1990(byte i) {
         anInt3329++;
-        if (i < 29) aClass348_3342 = null;
-        Class348 class348 = aClass348_3342;
-        if (this.aClass348_3334 == class348) {
-            aClass348_3342 = null;
+        if (i < 29) aNode_3342 = null;
+        Node node = aNode_3342;
+        if (this.aNode_3334 == node) {
+            aNode_3342 = null;
             return null;
         }
-        aClass348_3342 = class348.aClass348_4294;
-        return class348;
+        aNode_3342 = node.aNode_4294;
+        return node;
     }
 
     static final void method1991(float f, float f_3_, float[] fs, int i, int i_4_, boolean bool, int i_5_, int i_6_, int i_7_, int i_8_, float f_9_, float[] fs_10_, int i_11_, int i_12_) {
@@ -139,16 +139,16 @@ final class Class262 {
         }
     }
 
-    final Class348 method1993(int i) {
+    final Node method1993(int i) {
         anInt3336++;
-        Class348 class348 = this.aClass348_3334.aClass348_4295;
-        if (this.aClass348_3334 == class348) {
-            aClass348_3342 = null;
+        Node node = this.aNode_3334.aNode_4295;
+        if (this.aNode_3334 == node) {
+            aNode_3342 = null;
             return null;
         }
-        aClass348_3342 = class348.aClass348_4295;
+        aNode_3342 = node.aNode_4295;
         if (i > -65) method1993(67);
-        return class348;
+        return node;
     }
 
     public static void method1994(int i) {
@@ -159,58 +159,58 @@ final class Class262 {
         aFontRenderer_3326 = null;
     }
 
-    final Class348 method1995(int i) {
+    final Node method1995(int i) {
         if (i != 4) method2001(null, -30);
         anInt3332++;
-        Class348 class348 = this.aClass348_3334.aClass348_4294;
-        if (class348 == this.aClass348_3334) {
-            aClass348_3342 = null;
+        Node node = this.aNode_3334.aNode_4294;
+        if (node == this.aNode_3334) {
+            aNode_3342 = null;
             return null;
         }
-        aClass348_3342 = class348.aClass348_4294;
-        return class348;
+        aNode_3342 = node.aNode_4294;
+        return node;
     }
 
     final void method1996(int i) {
         if (i > 97) {
             anInt3339++;
             for (; ; ) {
-                Class348 class348 = (this.aClass348_3334.aClass348_4294);
-                if (this.aClass348_3334 == class348) break;
-                class348.method2715((byte) 24);
+                Node node = (this.aNode_3334.aNode_4294);
+                if (this.aNode_3334 == node) break;
+                node.method2715((byte) 24);
             }
-            aClass348_3342 = null;
+            aNode_3342 = null;
         }
     }
 
-    final Class348 method1997(int i) {
+    final Node method1997(int i) {
         anInt3341++;
         if (i != 8) aClass190ArrayArray3335 = null;
-        Class348 class348 = this.aClass348_3334.aClass348_4294;
-        if (this.aClass348_3334 == class348) return null;
-        class348.method2715((byte) 114);
-        return class348;
+        Node node = this.aNode_3334.aNode_4294;
+        if (this.aNode_3334 == node) return null;
+        node.method2715((byte) 114);
+        return node;
     }
 
     final int method1998(int i) {
         anInt3333++;
         int i_22_ = i;
-        Class348 class348 = this.aClass348_3334.aClass348_4294;
-        while (class348 != this.aClass348_3334) {
-            class348 = class348.aClass348_4294;
+        Node node = this.aNode_3334.aNode_4294;
+        while (node != this.aNode_3334) {
+            node = node.aNode_4294;
             i_22_++;
         }
         return i_22_;
     }
 
-    final void method1999(Class348 class348, int i) {
-        if (class348.aClass348_4295 != null) class348.method2715((byte) 91);
+    final void method1999(Node node, int i) {
+        if (node.aNode_4295 != null) node.method2715((byte) 91);
         anInt3328++;
-        class348.aClass348_4294 = this.aClass348_3334;
-        class348.aClass348_4295 = this.aClass348_3334.aClass348_4295;
-        class348.aClass348_4295.aClass348_4294 = class348;
+        node.aNode_4294 = this.aNode_3334;
+        node.aNode_4295 = this.aNode_3334.aNode_4295;
+        node.aNode_4295.aNode_4294 = node;
         if (i != -20180) method2001(null, -94);
-        class348.aClass348_4294.aClass348_4295 = class348;
+        node.aNode_4294.aNode_4295 = node;
     }
 
     static final ha method2000(int i, int i_23_, Canvas canvas, d var_d) {
@@ -223,36 +223,36 @@ final class Class262 {
         }
     }
 
-    final void method2001(Class348 class348, int i) {
+    final void method2001(Node node, int i) {
         anInt3330++;
-        if (class348.aClass348_4295 != null) class348.method2715((byte) 63);
-        class348.aClass348_4295 = this.aClass348_3334;
-        class348.aClass348_4294 = this.aClass348_3334.aClass348_4294;
+        if (node.aNode_4295 != null) node.method2715((byte) 63);
+        node.aNode_4295 = this.aNode_3334;
+        node.aNode_4294 = this.aNode_3334.aNode_4294;
         if (i > -89) aFontRenderer_3326 = null;
-        class348.aClass348_4295.aClass348_4294 = class348;
-        class348.aClass348_4294.aClass348_4295 = class348;
+        node.aNode_4295.aNode_4294 = node;
+        node.aNode_4294.aNode_4295 = node;
     }
 
     final boolean method2002(byte i) {
         if (i != 18) aClass190ArrayArray3335 = null;
         anInt3327++;
-        return this.aClass348_3334 == this.aClass348_3334.aClass348_4294;
+        return this.aNode_3334 == this.aNode_3334.aNode_4294;
     }
 
-    final Class348 method2003(int i) {
+    final Node method2003(int i) {
         anInt3337++;
-        Class348 class348 = aClass348_3342;
-        if (class348 == this.aClass348_3334) {
-            aClass348_3342 = null;
+        Node node = aNode_3342;
+        if (node == this.aNode_3334) {
+            aNode_3342 = null;
             return null;
         }
         int i_24_ = -111 / ((i - -88) / 38);
-        aClass348_3342 = class348.aClass348_4295;
-        return class348;
+        aNode_3342 = node.aNode_4295;
+        return node;
     }
 
     public Class262() {
-        this.aClass348_3334.aClass348_4295 = this.aClass348_3334;
-        this.aClass348_3334.aClass348_4294 = this.aClass348_3334;
+        this.aNode_3334.aNode_4295 = this.aNode_3334;
+        this.aNode_3334.aNode_4294 = this.aNode_3334;
     }
 }

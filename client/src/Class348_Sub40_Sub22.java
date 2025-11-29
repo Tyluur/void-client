@@ -142,7 +142,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
         if (this.aClass191_7032.aBoolean2570) {
             int i_11_ = 0;
             int i_12_;
-            for (i_12_ = anInt9293 + Class239_Sub18.anIntArray6035[i]; i_12_ < 0; i_12_ += 4096) {
+            for (i_12_ = anInt9293 + Option_Sub18.anIntArray6035[i]; i_12_ < 0; i_12_ += 4096) {
                 /* empty */
             }
             for (/**/; i_12_ > 4096; i_12_ -= 4096) {
@@ -185,20 +185,20 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
         anInt9290++;
         if (i_23_ != Class348_Sub15.anInt6769) {
             if (i < 18) aClass304_9303 = null;
-            Class367_Sub4.anInt7319 = Class348_Sub40_Sub3.anInt9109 = Class73.anIntArray4780[i_23_];
+            Class367_Sub4.mapLength = Class348_Sub40_Sub3.mapWidth = Class73.anIntArray4780[i_23_];
             Class290.method2196((byte) -9);
-            Class62.anIntArrayArrayArray1116 = (new int[4][Class367_Sub4.anInt7319 >> 3]
-                    [Class348_Sub40_Sub3.anInt9109 >> 3]);
-            Class239_Sub8.anIntArrayArray5921 = (new int[Class367_Sub4.anInt7319]
-                    [Class348_Sub40_Sub3.anInt9109]);
-            Class348_Sub42_Sub17.anIntArrayArray9678 = (new int[Class367_Sub4.anInt7319]
-                    [Class348_Sub40_Sub3.anInt9109]);
+            Class62.anIntArrayArrayArray1116 = (new int[4][Class367_Sub4.mapLength >> 3]
+                    [Class348_Sub40_Sub3.mapWidth >> 3]);
+            Option_Sub8.anIntArrayArray5921 = (new int[Class367_Sub4.mapLength]
+                    [Class348_Sub40_Sub3.mapWidth]);
+            Class348_Sub42_Sub17.anIntArrayArray9678 = (new int[Class367_Sub4.mapLength]
+                    [Class348_Sub40_Sub3.mapWidth]);
             for (int i_24_ = 0; i_24_ < 4; i_24_++)
-                Class348_Sub45.aClass361Array7108[i_24_] = Sprite_Sub1.method988(Class348_Sub40_Sub3.anInt9109, 1, Class367_Sub4.anInt7319);
-            Class289.aByteArrayArrayArray3700 = (new byte[4][Class367_Sub4.anInt7319]
-                    [Class348_Sub40_Sub3.anInt9109]);
-            Class239.method1717(19278, Class348_Sub40_Sub3.anInt9109, Class367_Sub4.anInt7319, 4);
-            Class97.method873(Class367_Sub4.anInt7319 >> 3, 21719, Class348_Sub8.aHa6654, Class348_Sub40_Sub3.anInt9109 >> 3);
+                Class348_Sub45.collisionMaps[i_24_] = Sprite_Sub1.method988(Class348_Sub40_Sub3.mapWidth, 1, Class367_Sub4.mapLength);
+            Class289.aByteArrayArrayArray3700 = (new byte[4][Class367_Sub4.mapLength]
+                    [Class348_Sub40_Sub3.mapWidth]);
+            Option.method1717(19278, Class348_Sub40_Sub3.mapWidth, Class367_Sub4.mapLength, 4);
+            Class97.method873(Class367_Sub4.mapLength >> 3, 21719, Class348_Sub8.aHa6654, Class348_Sub40_Sub3.mapWidth >> 3);
             Class348_Sub15.anInt6769 = i_23_;
         }
     }

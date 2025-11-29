@@ -2,11 +2,11 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub17 extends Class348 {
+final class Class348_Sub17 extends Node {
     static boolean aBoolean6788 = false;
     static int anInt6789;
     static int anInt6790;
-    static long aLong6791 = 0L;
+    static long lastmemoryCheck = 0L;
     byte[] aByteArray6792;
     private int[] anIntArray6793;
     static int anInt6794;

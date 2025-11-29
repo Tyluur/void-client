@@ -14,7 +14,7 @@ final class Class367_Sub4 extends Class367 {
     static int anInt7316;
     private boolean aBoolean7317 = false;
     static Class351 aClass351_7318 = new Class351(21, 2);
-    static int anInt7319 = 104;
+    static int mapLength = 104;
     static boolean aBoolean7320 = false;
     static int anInt7321;
     static int anInt7322;
@@ -148,7 +148,7 @@ final class Class367_Sub4 extends Class367 {
 
     static final boolean method3542(int i, Class357[][][] class357s, int i_13_, int i_14_, int i_15_, boolean bool) {
         anInt7310++;
-        byte i_16_ = bool ? (byte) 1 : (byte) (Class239_Sub15.anInt6006 & 0xff);
+        byte i_16_ = bool ? (byte) 1 : (byte) (Option_Sub15.anInt6006 & 0xff);
         if (i_16_ == Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_13_][i]) return false;
         if (((Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_13_][i]) & 0x4) == 0) return false;
         int i_17_ = i_14_;
@@ -234,7 +234,7 @@ final class Class367_Sub4 extends Class367 {
                     i_17_ = 0xfff & 1 + i_17_;
                     Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - 1][i_22_] = i_16_;
                 }
-                if (++i_22_ < Class348_Sub40_Sub3.anInt9109) {
+                if (++i_22_ < Class348_Sub40_Sub3.mapWidth) {
                     if (i_19_ - 1 >= 0 && i_16_ != (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][i_22_]) && ((Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_]) & 0x4) == 0 && (0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][-1 + i_22_])) == 0) {
                         Class348_Sub16_Sub2.anIntArray8862[i_17_] = (Class273.method2057(1375731712, Class273.method2057(i_19_ + -1, 1179648)));
                         Exception_Sub1.anIntArray110[i_17_] = Class273.method2057(i_22_, 1245184);
@@ -247,7 +247,7 @@ final class Class367_Sub4 extends Class367 {
                         Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_] = i_16_;
                         i_17_ = i_17_ + 1 & 0xfff;
                     }
-                    if (1 + i_19_ < anInt7319 && ((Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ + 1][i_22_]) != i_16_) && (0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_])) == 0 && (0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][1 + i_19_][i_22_ + -1])) == 0) {
+                    if (1 + i_19_ < mapLength && ((Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ + 1][i_22_]) != i_16_) && (0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_])) == 0 && (0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][1 + i_19_][i_22_ + -1])) == 0) {
                         Class348_Sub16_Sub2.anIntArray8862[i_17_] = (Class273.method2057(-1845493760, Class273.method2057(1 + i_19_, 5373952)));
                         Exception_Sub1.anIntArray110[i_17_] = Class273.method2057(5439488, i_22_);
                         i_17_ = 1 + i_17_ & 0xfff;
@@ -255,7 +255,7 @@ final class Class367_Sub4 extends Class367 {
                     }
                 }
                 i_22_--;
-                if (i_19_ - -1 < anInt7319 && (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - -1][i_22_]) != i_16_) {
+                if (i_19_ - -1 < mapLength && (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - -1][i_22_]) != i_16_) {
                     Class348_Sub16_Sub2.anIntArray8862[i_17_] = Class273.method2057(1392508928, Class273.method2057(9568256, 1 + i_19_));
                     Exception_Sub1.anIntArray110[i_17_] = Class273.method2057(i_22_, 9633792);
                     i_17_ = 1 + i_17_ & 0xfff;
@@ -274,7 +274,7 @@ final class Class367_Sub4 extends Class367 {
                         Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_] = i_16_;
                         i_17_ = 0xfff & i_17_ - -1;
                     }
-                    if (anInt7319 > 1 + i_19_ && (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][1 + i_19_][i_22_]) != i_16_ && ((Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_]) & 0x4) == 0 && ((Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_ + 1][i_22_ + 1]) & 0x4) == 0) {
+                    if (mapLength > 1 + i_19_ && (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][1 + i_19_][i_22_]) != i_16_ && ((Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_]) & 0x4) == 0 && ((Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_ + 1][i_22_ + 1]) & 0x4) == 0) {
                         Class348_Sub16_Sub2.anIntArray8862[i_17_] = (Class273.method2057(-771751936, Class273.method2057(i_19_ - -1, 9568256)));
                         Exception_Sub1.anIntArray110[i_17_] = Class273.method2057(i_22_, 9633792);
                         Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - -1][i_22_] = i_16_;

@@ -60,7 +60,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
                             if (NPCDefinition.anIntArray1377 != null) NPCDefinition = (NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.timedVarDomain), -1));
                             if (NPCDefinition != null) is = NPCDefinition.anIntArray1342;
                         }
-                    } else if (Class239_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
+                    } else if (Option_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                         Object object = null;
                         Class51 class51;
                         if ((class348_sub42_sub12.anInt9608) != 1001) class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) ((class348_sub42_sub12.aLong9605) >>> 32 & 0x7fffffffL)));

@@ -25,14 +25,14 @@ final class Class24 {
 
     static final void method298(boolean bool, int i, int i_0_, int i_1_, int i_2_) {
         anInt354++;
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 0) Class348_Sub42_Sub3.method3177(-98, false);
+        if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 0) Class348_Sub42_Sub3.method3177(-98, false);
         else {
-            Class111.anInt1720 = Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350);
+            LoadingScreenManager.anInt1720 = Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350);
             Class367_Sub10.method3553(true, (byte) 103, 0);
         }
         Class88.aBoolean1500 = bool;
         Class339.anInt4202 = i;
-        Class239_Sub7.anInt5909 = i_0_;
+        Option_Sub7.anInt5909 = i_0_;
         Class75.method754(i_1_);
         if (i_2_ > -41) method297(true);
     }

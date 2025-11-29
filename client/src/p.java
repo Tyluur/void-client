@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class p extends Class348 implements Interface19 {
+final class p extends Node implements Interface19 {
     long nativeid;
     private static boolean aBoolean5144 = false;
     int anInt5145;
@@ -22,9 +22,9 @@ final class p extends Class348 implements Interface19 {
 
     private final void method3432(Exception exception) {
         if (!aBoolean5144) {
-            aLong5146 = Class62.method599(-54);
+            aLong5146 = Class62.safeTime(-54);
             aBoolean5144 = true;
-        } else if (Class62.method599(-88) - aLong5146 < 30000L) this.aCanvas5147.repaint();
+        } else if (Class62.safeTime(-88) - aLong5146 < 30000L) this.aCanvas5147.repaint();
         else throw new RuntimeException(exception.getMessage());
     }
 

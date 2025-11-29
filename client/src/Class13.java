@@ -9,7 +9,7 @@ final class Class13 {
     static Class114 aClass114_220 = new Class114(40, -1);
     static int anInt221;
     static int[] anIntArray222;
-    static Class314_Sub1[] aClass314_Sub1Array223 = new Class314_Sub1[37];
+    static Js5ResourceProvider[] js5ResourceProviders = new Js5ResourceProvider[37]; // aClass314_Sub1Array223
     static int[] anIntArray224;
 
     public static void method225(byte i) {
@@ -17,7 +17,7 @@ final class Class13 {
             aClass114_220 = null;
             anIntArray224 = null;
             anIntArray222 = null;
-            aClass314_Sub1Array223 = null;
+            js5ResourceProviders = null;
         }
     }
 

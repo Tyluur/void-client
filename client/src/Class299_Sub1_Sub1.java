@@ -46,7 +46,7 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
     static final void method2260(int i, int i_4_, long l, int i_5_, boolean bool, Index index, byte i_6_, int i_7_) {
         do {
             try {
-                Class239_Sub14.anInt5994 = 10000;
+                Option_Sub14.anInt5994 = 10000;
                 Class124.aIndex_1848 = index;
                 Class58.anInt1059 = i_7_;
                 Class318_Sub1_Sub4_Sub1.anInt10074 = i;
@@ -54,7 +54,7 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
                 Class285.aClass348_Sub16_Sub3_4743 = null;
                 Class318.anInt3971 = i_4_;
                 anInt8687++;
-                Class239_Sub12.aLong5971 = l;
+                Option_Sub12.aLong5971 = l;
                 Class348_Sub43.anInt7068 = 1;
                 Class348_Sub40_Sub35.anInt9444 = i_5_;
                 if (i_6_ >= 54) break;

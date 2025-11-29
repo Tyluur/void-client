@@ -45,33 +45,33 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
         if (bool) {
             Class342.anIntArrayArray4253 = new int[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
             Class348_Sub1_Sub2.aByteArrayArray8816 = new byte[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
-            Class239_Sub1.aShortArrayArray5847 = new short[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
+            Option_Sub1.aShortArrayArray5847 = new short[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
             Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = (new Class357[1][Class318_Sub7.anInt6451]
                     [Class348_Sub41.anInt7054]);
             Class332.aSArray4142 = new s[1];
         } else {
             Class342.anIntArrayArray4253 = null;
             Class348_Sub1_Sub2.aByteArrayArray8816 = null;
-            Class239_Sub1.aShortArrayArray5847 = null;
+            Option_Sub1.aShortArrayArray5847 = null;
             Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = null;
             Class332.aSArray4142 = null;
         }
         if (bool_5_) {
             Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = new long[i_1_][i_2_][i_3_];
-            Class239_Sub14.aClass211Array5993 = new Class211[65535];
+            Option_Sub14.aClass211Array5993 = new Class211[65535];
             r.aBooleanArray9718 = new boolean[65535];
             Class331.anInt4135 = 0;
         } else {
             Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = null;
-            Class239_Sub14.aClass211Array5993 = null;
+            Option_Sub14.aClass211Array5993 = null;
             r.aBooleanArray9718 = null;
             Class331.anInt4135 = 0;
         }
         Class243.method1879(false);
-        Class348.aClass318_Sub1Array4293 = new Class318_Sub1[2];
+        Node.aClass318_Sub1Array4293 = new Class318_Sub1[2];
         Class250.aClass318_Sub1Array3226 = new Class318_Sub1[2];
         Class115.aClass318_Sub1Array1754 = new Class318_Sub1[2];
-        Class239_Sub21.aClass318_Sub1Array6066 = new Class318_Sub1[10000];
+        Option_Sub21.aClass318_Sub1Array6066 = new Class318_Sub1[10000];
         Class5_Sub1_Sub1.anInt9930 = 0;
         Class291.aClass318_Sub1Array3737 = new Class318_Sub1[5000];
         Class348_Sub42_Sub3.anInt9504 = 0;
@@ -111,7 +111,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
             }
             GfxTypeList.aClass315Array3982 = new Class315[i_7_];
             for (int i_8_ = 0; i_8_ < i_7_; i_8_++)
-                GfxTypeList.aClass315Array3982[i_8_] = new Class315(Class239_Sub24.aStringArrayArray6093[(Npc.anInt10503 - 2)][i_8_]);
+                GfxTypeList.aClass315Array3982[i_8_] = new Class315(Option_Sub24.aStringArrayArray6093[(Npc.anInt10503 - 2)][i_8_]);
         } else Class75_Sub1.anInt5652 = 1;
         Class17.anIntArray256 = new int[Class75_Sub1.anInt5652 - 1];
         Class345.anIntArray4271 = new int[Class75_Sub1.anInt5652 - 1];

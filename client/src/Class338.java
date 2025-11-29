@@ -38,7 +38,7 @@ final class Class338 {
         Class348_Sub42_Sub17.method3270((byte) 120);
         if (class46 != null) Class251.method1913(!bool, i_2_ + -104, class46);
         if (!bool) Class66.method703(i);
-        if (!bool && r.anInt9721 != -1) Class239_Sub12.method1775((byte) -8, r.anInt9721, 1);
+        if (!bool && r.anInt9721 != -1) Option_Sub12.method1775((byte) -8, r.anInt9721, 1);
         return class348_sub41;
     }
 
@@ -63,7 +63,7 @@ final class Class338 {
                 for (int i_11_ = i_9_; i_11_ <= i_10_; i_11_++) {
                     int i_12_ = (Class350.method3452(i_11_ + Class286.anInt3682, (byte) -15, Class250.anInt3225) * Class31.anInt425);
                     for (int i_13_ = i_7_; i_8_ >= i_13_; i_13_++) {
-                        int i_14_ = (i_12_ + Class350.method3452((Class239_Sub24.anInt6095 + i_13_), (byte) -15, Class31.anInt425));
+                        int i_14_ = (i_12_ + Class350.method3452((Option_Sub24.anInt6095 + i_13_), (byte) -15, Class31.anInt425));
                         Class132.anIntArray1909[i_14_] = Class318_Sub1_Sub1_Sub2.anInt9997;
                     }
                 }

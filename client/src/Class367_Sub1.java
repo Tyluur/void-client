@@ -43,7 +43,7 @@ final class Class367_Sub1 extends Class367 {
             for (int i_8_ = 0; i_8_ < class46s.length; i_8_++) {
                 Class46 class46 = class46s[i_8_];
                 if (class46 != null && i == class46.anInt834) {
-                    Class239_Sub28.method1843(i_5_, -326, class46, bool_6_, i_7_);
+                    Option_Sub28.method1843(i_5_, -326, class46, bool_6_, i_7_);
                     Class14_Sub1.method239((byte) 115, i_5_, i_7_, class46);
                     if ((-class46.anInt709 + class46.anInt698) < class46.anInt747) class46.anInt747 = (class46.anInt698 - class46.anInt709);
                     if (class46.anInt747 < 0) class46.anInt747 = 0;

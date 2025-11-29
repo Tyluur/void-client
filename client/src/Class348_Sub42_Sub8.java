@@ -57,7 +57,7 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
             Class125.aClass356_4915 = new Class356(8);
             Class99.method882((byte) 11);
             r.anInt9721 = Class285.anInt4737;
-            Class239.method1713(false, 520);
+            Option.method1713(false, 520);
             Class354.method3466(100);
             Class66.method703(r.anInt9721);
         }
@@ -67,10 +67,10 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
         Class362.anInt4458 = -1;
         EnumTypeList.method338(i + 45, Class348_Sub42_Sub16_Sub1.anInt10447);
         Class132.aPlayer_1907 = new Player();
-        Class132.aPlayer_1907.x = 512 * Class367_Sub4.anInt7319 / 2;
-        Class132.aPlayer_1907.anIntArray10320[0] = Class367_Sub4.anInt7319 / 2;
-        Class132.aPlayer_1907.y = 512 * Class348_Sub40_Sub3.anInt9109 / 2;
-        Class132.aPlayer_1907.anIntArray10317[0] = Class348_Sub40_Sub3.anInt9109 / 2;
+        Class132.aPlayer_1907.x = 512 * Class367_Sub4.mapLength / 2;
+        Class132.aPlayer_1907.anIntArray10320[0] = Class367_Sub4.mapLength / 2;
+        Class132.aPlayer_1907.y = 512 * Class348_Sub40_Sub3.mapWidth / 2;
+        Class132.aPlayer_1907.anIntArray10317[0] = Class348_Sub40_Sub3.mapWidth / 2;
         Class286_Sub4.anInt6246 = Class59_Sub2_Sub2.anInt8685 = 0;
         if (Class348_Sub40_Sub21.anInt9282 == 2) {
             Class286_Sub4.anInt6246 = Class348_Sub35.anInt6981 << 9;

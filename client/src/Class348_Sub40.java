@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class348_Sub40 extends Class348 {
+abstract class Class348_Sub40 extends Node {
     static int anInt7026;
     static int anInt7027;
     static int anInt7028;
@@ -40,14 +40,14 @@ abstract class Class348_Sub40 extends Class348 {
     static final void updateFeatureMask(int i) {
         anInt7044++;
         int i_0_ = 0;
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub28_7230.method1845(-32350) == 1) {
+        if (Class316.clientOptions.aClass239_Sub28_7230.method1845(-32350) == 1) {
             i_0_ |= 0x1;
             i_0_ |= 0x10;
             i_0_ |= 0x20;
             i_0_ |= 0x2;
             i_0_ |= 0x4;
         }
-        if ((~Class316.aClass348_Sub51_3959.aClass239_Sub24_7235.method1820(-32350)) == i) i_0_ |= 0x40;
+        if ((~Class316.clientOptions.aClass239_Sub24_7235.method1820(-32350)) == i) i_0_ |= 0x40;
         Class318_Sub1_Sub3_Sub3.method2420(i_0_, i);
         Class348_Sub40_Sub12.objectTypeList.method2009(i_0_, (byte) 109);
         Exception_Sub1.itemTypeList.method1942(i_0_, (byte) -125);
@@ -56,7 +56,7 @@ abstract class Class348_Sub40 extends Class348 {
         Class367_Sub1.method3535(i_0_, ~i);
         Class269.method2040(i_0_, true);
         Class69.method720(i_0_, i + 1227);
-        Class239_Sub8.method1750(14056, i_0_);
+        Option_Sub8.method1750(14056, i_0_);
         Class348_Sub20.method2953((byte) -106);
     }
 

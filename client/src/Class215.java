@@ -13,7 +13,7 @@ final class Class215 {
     static int anInt2839;
 
     static final void method1580(byte i, boolean bool, int i_0_, int i_1_, int i_2_, int i_3_) {
-        if (Class34.aFrame476 != null && (i_2_ != 3 || i_0_ != Class346.anInt4276 || i_3_ != Class239_Sub8.anInt5911)) {
+        if (Class34.aFrame476 != null && (i_2_ != 3 || i_0_ != Class346.anInt4276 || i_3_ != Option_Sub8.anInt5911)) {
             LoadState.method527(Class34.aFrame476, Class348_Sub23_Sub1.aClass297_8992, false);
             Class34.aFrame476 = null;
         }
@@ -23,11 +23,11 @@ final class Class215 {
             Class34.aFrame476 = Class318_Sub1_Sub3_Sub4.method2463(i_3_, i_0_, (Class348_Sub23_Sub1.aClass297_8992), 0, 14199, 0);
             if (Class34.aFrame476 != null) {
                 Class346.anInt4276 = i_0_;
-                Class239_Sub8.anInt5911 = i_3_;
+                Option_Sub8.anInt5911 = i_3_;
                 Class14_Sub2.method243(37);
             }
         }
-        if (i_2_ == 3 && Class34.aFrame476 == null) method1580((byte) -126, true, -1, i_1_, Class316.aClass348_Sub51_3959.aClass239_Sub8_7227.method1751(-32350), -1);
+        if (i_2_ == 3 && Class34.aFrame476 == null) method1580((byte) -126, true, -1, i_1_, Class316.clientOptions.aClass239_Sub8_7227.method1751(-32350), -1);
         else {
             java.awt.Container container;
             if (Class34.aFrame476 != null) {
@@ -67,7 +67,7 @@ final class Class215 {
                 } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
             }
             Class50_Sub1.aBoolean5219 = i_2_ >= 2;
-            if (r.anInt9721 != -1) Class239.method1713(true, 520);
+            if (r.anInt9721 != -1) Option.method1713(true, 520);
             if (Class348_Sub40_Sub8.aClass238_9165 != null && Class334.method2653(true, Class240.anInt4674)) Class286_Sub2.method2145(-24498);
             for (int i_5_ = 0; i_5_ < 100; i_5_++)
                 Class152.aBooleanArray2076[i_5_] = true;
@@ -89,7 +89,7 @@ final class Class215 {
                     if (Class348_Sub43.anInt7068 == 1) {
                         int i_6_ = Class98.aClass348_Sub16_Sub3_1564.method2844((byte) 123);
                         if (i_6_ > 0 && Class98.aClass348_Sub16_Sub3_1564.method2860(124)) {
-                            i_6_ -= Class239_Sub14.anInt5994;
+                            i_6_ -= Option_Sub14.anInt5994;
                             if (i_6_ < 0) i_6_ = 0;
                             Class98.aClass348_Sub16_Sub3_1564.method2861(0, i_6_);
                             break;

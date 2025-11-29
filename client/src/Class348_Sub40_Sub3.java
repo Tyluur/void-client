@@ -10,7 +10,7 @@ final class Class348_Sub40_Sub3 extends Class348_Sub40 {
     static int anInt9106;
     private int anInt9107 = 4096;
     static int anInt9108;
-    static int anInt9109 = 104;
+    static int mapWidth = 104;
     static int anInt9110;
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
@@ -68,7 +68,7 @@ final class Class348_Sub40_Sub3 extends Class348_Sub40 {
     }
 
     static final boolean method3056(int i, int i_7_, int i_8_) {
-        if (i < 0) anInt9109 = 114;
+        if (i < 0) mapWidth = 114;
         anInt9108++;
         return (0x22 & i_7_) != 0;
     }

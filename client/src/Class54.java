@@ -57,15 +57,15 @@ final class Class54 {
                     }
                 } else return;
                 Class348_Sub3.anInt6585 = i;
-                Class314.anInt3941 = i_2_;
-                Class239.anInt3142 = i_5_;
+                ResourceProvider.anInt3941 = i_2_;
+                Option.anInt3142 = i_5_;
                 Class348_Sub42_Sub16_Sub2.anInt10463 = 2;
-                Class314.anInt3939 = i_4_;
+                ResourceProvider.anInt3939 = i_4_;
                 return;
             } while (false);
-            if (Class314.anInt3939 < i_4_) Class314.anInt3939 = i_4_;
-            if (Class314.anInt3941 > i_2_) Class314.anInt3941 = i_2_;
-            if (Class239.anInt3142 > i_5_) Class239.anInt3142 = i_5_;
+            if (ResourceProvider.anInt3939 < i_4_) ResourceProvider.anInt3939 = i_4_;
+            if (ResourceProvider.anInt3941 > i_2_) ResourceProvider.anInt3941 = i_2_;
+            if (Option.anInt3142 > i_5_) Option.anInt3142 = i_5_;
             if (i > Class348_Sub3.anInt6585) Class348_Sub3.anInt6585 = i;
             return;
         } while (false);

@@ -128,12 +128,12 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                         if (anInt9312 == 0) {
                             for (int i_23_ = 0; i_23_ < i_16_; i_23_++) {
                                 int i_24_ = i_6_ * i_23_ / i_16_;
-                                is_21_[Class139.method1166(i_23_ + i_3_, (Class239_Sub22.anInt6076))] = is_21_[(Class139.method1166(Class239_Sub22.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))] = i_22_ * i_24_ >> 12;
+                                is_21_[Class139.method1166(i_23_ + i_3_, (Option_Sub22.anInt6076))] = is_21_[(Class139.method1166(Option_Sub22.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))] = i_22_ * i_24_ >> 12;
                             }
                         } else {
                             for (int i_25_ = 0; i_16_ > i_25_; i_25_++) {
                                 int i_26_ = i_6_ * i_25_ / i_16_;
-                                is_21_[Class139.method1166((Class239_Sub22.anInt6076), i_25_ + i_3_)] = is_21_[(Class139.method1166(i_3_ - -i_5_ + (-i_25_ - 1), Class239_Sub22.anInt6076))] = Math.min(i_26_, i_22_);
+                                is_21_[Class139.method1166((Option_Sub22.anInt6076), i_25_ + i_3_)] = is_21_[(Class139.method1166(i_3_ - -i_5_ + (-i_25_ - 1), Option_Sub22.anInt6076))] = Math.min(i_26_, i_22_);
                             }
                         }
                         if (Class348_Sub40_Sub6.anInt9139 >= i_19_ + i_18_) Class214.method1579(is_21_, i_18_, i_19_, i_22_);
@@ -149,12 +149,12 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                             if (anInt9312 == 0) {
                                 for (int i_30_ = 0; i_16_ > i_30_; i_30_++) {
                                     int i_31_ = i_6_ * i_30_ / i_16_;
-                                    is_21_[Class139.method1166((Class239_Sub22.anInt6076), i_30_ + i_3_)] = is_21_[(Class139.method1166(Class239_Sub22.anInt6076, -1 + i_5_ + i_3_ - i_30_))] = i_31_ * i_29_ >> 12;
+                                    is_21_[Class139.method1166((Option_Sub22.anInt6076), i_30_ + i_3_)] = is_21_[(Class139.method1166(Option_Sub22.anInt6076, -1 + i_5_ + i_3_ - i_30_))] = i_31_ * i_29_ >> 12;
                                 }
                             } else {
                                 for (int i_32_ = 0; (i_16_ > i_32_); i_32_++) {
                                     int i_33_ = i_32_ * i_6_ / i_16_;
-                                    is_21_[Class139.method1166((Class239_Sub22.anInt6076), i_3_ + i_32_)] = is_21_[(Class139.method1166(Class239_Sub22.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))] = Math.min(i_29_, i_33_);
+                                    is_21_[Class139.method1166((Option_Sub22.anInt6076), i_3_ + i_32_)] = is_21_[(Class139.method1166(Option_Sub22.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))] = Math.min(i_29_, i_33_);
                                 }
                             }
                             if (i_19_ + i_18_ <= Class348_Sub40_Sub6.anInt9139) Class214.method1579(is_21_, i_18_, i_19_, i_29_);
@@ -165,7 +165,7 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40 {
                             }
                         } else {
                             for (int i_35_ = 0; i_35_ < i_16_; i_35_++)
-                                is_21_[Class139.method1166(i_35_ + i_3_, (Class239_Sub22.anInt6076))] = is_21_[(Class139.method1166(Class239_Sub22.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))] = i_6_ * i_35_ / i_16_;
+                                is_21_[Class139.method1166(i_35_ + i_3_, (Option_Sub22.anInt6076))] = is_21_[(Class139.method1166(Option_Sub22.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))] = i_6_ * i_35_ / i_16_;
                             if (Class348_Sub40_Sub6.anInt9139 >= i_18_ - -i_19_) Class214.method1579(is_21_, i_18_, i_19_, i_6_);
                             else {
                                 int i_36_ = -i_18_ + Class348_Sub40_Sub6.anInt9139;

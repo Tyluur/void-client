@@ -7,7 +7,7 @@ final class Class173 {
     static int anInt2283;
     static int anInt2284;
     static Class114 aClass114_2285 = new Class114(77, 4);
-    static long aLong2286 = 0L;
+    static long lastGc = 0L;
 
     public final String toString() {
         anInt2282++;

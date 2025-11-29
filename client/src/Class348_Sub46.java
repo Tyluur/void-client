@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub46 extends Class348 {
+final class Class348_Sub46 extends Node {
     static int anInt7109;
     static int anInt7110;
     String aString7111;

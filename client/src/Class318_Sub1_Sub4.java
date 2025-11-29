@@ -21,8 +21,8 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         int i_1_ = this.y >> Class362.anInt4459;
         int i_2_ = -103 / ((i - -14) / 61);
         int i_3_ = 0;
-        if (Class239_Sub25.anInt6111 == i_0_) i_3_++;
-        else if (Class239_Sub25.anInt6111 < i_0_) i_3_ += 2;
+        if (Option_Sub25.anInt6111 == i_0_) i_3_++;
+        else if (Option_Sub25.anInt6111 < i_0_) i_3_ += 2;
         if (i_1_ == Class285_Sub2.anInt8502) i_3_ += 3;
         else if (i_1_ < Class285_Sub2.anInt8502) i_3_ += 6;
         int i_4_ = Class318_Sub9_Sub2.anIntArray8797[i_3_];
@@ -54,13 +54,13 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         if (Class221.aBoolean2881) bool = false;
         if (Class330.aBoolean4117) bool_5_ = false;
         if (Class348_Sub1.aBoolean6558) bool_6_ = false;
-        if (!bool && !bool_5_ && !bool_6_) return Class314_Sub1.method2348(-8454);
+        if (!bool && !bool_5_ && !bool_6_) return Js5ResourceProvider.method2348(-8454);
         int i_7_ = -1;
         int i_8_ = -1;
         int i_9_ = -1;
         if (bool) {
             try {
-                i_7_ = Class239_Sub14.method1781(2, -126, 1000);
+                i_7_ = Option_Sub14.method1781(2, -126, 1000);
             } catch (Exception exception) {
                 /* empty */
             }
@@ -68,8 +68,8 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         do {
             if (bool_6_) {
                 try {
-                    i_9_ = Class239_Sub14.method1781(3, -70, 1000);
-                    if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(i + -33350) == 3) {
+                    i_9_ = Option_Sub14.method1781(3, -70, 1000);
+                    if (Class316.clientOptions.aClass239_Sub25_7271.method1829(i + -33350) == 3) {
                         Class365 class365 = Class348_Sub8.aHa6654.c();
                         long l = (0xffffffffffffL & class365.aLong4471);
                         int i_10_ = class365.anInt4476;
@@ -86,12 +86,12 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         } while (false);
         if (bool_5_) {
             try {
-                i_8_ = Class239_Sub14.method1781(1, i ^ ~0x3ab, 1000);
+                i_8_ = Option_Sub14.method1781(1, i ^ ~0x3ab, 1000);
             } catch (Exception exception) {
                 /* empty */
             }
         }
-        if (i_7_ == -1 && i_8_ == -1 && i_9_ == -1) return Class314_Sub1.method2348(i + -9454);
+        if (i_7_ == -1 && i_8_ == -1 && i_9_ == -1) return Js5ResourceProvider.method2348(i + -9454);
         i_9_ *= 1.1F;
         i_8_ *= 1.1F;
         if (i_7_ > i_9_ && i_8_ < i_7_) return Class49.method454(i_7_, (byte) -116);
@@ -124,7 +124,7 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
     final boolean method2378(int i) {
         anInt8757++;
         if (i != 0) method2378(-104);
-        return (Class99.aBooleanArrayArray1572[(-Class239_Sub25.anInt6111 + (this.x >> Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)][(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class285_Sub2.anInt8502 + (this.y >> Class362.anInt4459))]);
+        return (Class99.aBooleanArrayArray1572[(-Option_Sub25.anInt6111 + (this.x >> Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)][(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class285_Sub2.anInt8502 + (this.y >> Class362.anInt4459))]);
     }
 
     static final void method2480(int i) {

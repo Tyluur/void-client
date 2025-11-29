@@ -43,7 +43,7 @@ final class ObjectTypeList {
         if (class51 != null) return class51;
         byte[] is;
         synchronized (aIndex_3343) {
-            is = aIndex_3343.method410(i + -1860, Class239_Sub29.method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (byte) -90));
+            is = aIndex_3343.method410(i + -1860, Option_Sub29.method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (byte) -90));
         }
         class51 = new Class51();
         class51.anInt941 = i_0_;
@@ -133,7 +133,7 @@ final class ObjectTypeList {
                                     } else break;
                                     break while_82_;
                                 }
-                                if (Class239_Sub28.method1842(i_5_, i_2_, -1, 2, i_10_, i_11_, i_3_, 2, i_6_)) {
+                                if (Option_Sub28.method1842(i_5_, i_2_, -1, 2, i_10_, i_11_, i_3_, 2, i_6_)) {
                                     Class115.anInt1753 = i_11_;
                                     Class348_Sub40_Sub30.anInt9388 = i_10_;
                                     return true;
@@ -317,10 +317,10 @@ final class ObjectTypeList {
                 }
             } else if (i_23_ == 5) {
                 int i_26_ = class348_sub49.readUnsignedByte(255);
-                Class239_Sub17.anIntArray6021 = new int[i_26_];
+                Option_Sub17.anIntArray6021 = new int[i_26_];
                 for (int i_27_ = 0; i_27_ < i_26_; i_27_++) {
-                    Class239_Sub17.anIntArray6021[i_27_] = class348_sub49.readUnsignedShort(842397944);
-                    if (Class239_Sub17.anIntArray6021[i_27_] == 65535) Class239_Sub17.anIntArray6021[i_27_] = -1;
+                    Option_Sub17.anIntArray6021[i_27_] = class348_sub49.readUnsignedShort(842397944);
+                    if (Option_Sub17.anIntArray6021[i_27_] == 65535) Option_Sub17.anIntArray6021[i_27_] = -1;
                 }
             }
         }

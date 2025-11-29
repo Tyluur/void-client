@@ -38,7 +38,7 @@ abstract class Class318_Sub1_Sub2 extends Class318_Sub1 {
         } catch (Exception exception) {
             /* empty */
         }
-        Class34.aLong482 = Class62.method599(-117);
+        Class34.aLong482 = Class62.safeTime(-117);
         Class184.aBoolean2469 = false;
     }
 
@@ -53,7 +53,7 @@ abstract class Class318_Sub1_Sub2 extends Class318_Sub1 {
     final boolean method2378(int i) {
         if (i != 0) method2406(79);
         anInt8734++;
-        return (Class99.aBooleanArrayArray1572[(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class239_Sub25.anInt6111 + (this.x >> Class362.anInt4459))][(Class318_Sub1_Sub4_Sub1.anInt10084 + (-Class285_Sub2.anInt8502 + (this.y >> Class362.anInt4459)))]);
+        return (Class99.aBooleanArrayArray1572[(Class318_Sub1_Sub4_Sub1.anInt10084 + -Option_Sub25.anInt6111 + (this.x >> Class362.anInt4459))][(Class318_Sub1_Sub4_Sub1.anInt10084 + (-Class285_Sub2.anInt8502 + (this.y >> Class362.anInt4459)))]);
     }
 
     final void method2392(boolean bool) {

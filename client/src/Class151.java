@@ -34,8 +34,8 @@ final class Class151 {
             if (sprite != null) {
                 int i_6_;
                 if (Class348_Sub40_Sub21.anInt9282 != 4)
-                    i_6_ = (0x3fff & (int) Class314.aFloat3938 - -r_Sub2.anInt10483);
-                else i_6_ = 0x3fff & (int) Class314.aFloat3938;
+                    i_6_ = (0x3fff & (int) ResourceProvider.aFloat3938 - -r_Sub2.anInt10483);
+                else i_6_ = 0x3fff & (int) ResourceProvider.aFloat3938;
                 int i_7_ = 10 + Math.max(class46.anInt709 / 2, class46.anInt789 / i_4_);
                 int i_8_ = i_5_ * i_5_ - -(i_3_ * i_3_);
                 if (i_7_ * i_7_ >= i_8_) {
@@ -57,7 +57,7 @@ final class Class151 {
 
     static final void method1212(int i, int i_13_, int i_14_, int i_15_) {
         anInt2059++;
-        i = Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350) * i >> 8;
+        i = Class316.clientOptions.aClass239_Sub26_7260.method1838(-32350) * i >> 8;
         if (i_14_ == i_13_ && !Class74.aBoolean1236) Class104.method960(1);
         else if (i_13_ != -1 && (i_13_ != Class267.anInt3428 || !Class167.method1296(true)) && i != 0 && !Class74.aBoolean1236) {
             Class40.method368(i, 18002, false, i_13_, Class59_Sub2_Sub1.MUSIC, 0, i_15_);
@@ -72,7 +72,7 @@ final class Class151 {
             if (i > -48) aClass114_2068 = null;
             anInt2063++;
             RuntimeException_Sub1.anInt4596 = -1;
-            Class239_Sub12.anInt5969 = Loader.skipLobby ? 2 : 1;
+            Option_Sub12.anInt5969 = Loader.skipLobby ? 2 : 1;
             Class132.method1138(string, false, string_16_, (byte) -95);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ok.E(" + (string != null ? "{...}" : "null") + ',' + (string_16_ != null ? "{...}" : "null") + ',' + i + ')'));

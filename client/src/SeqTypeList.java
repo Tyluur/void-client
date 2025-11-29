@@ -102,7 +102,7 @@ final class SeqTypeList {
                 int i_8_ = aIndex_1488.method414(-1) + -1;
                 aIndex_1488.method407(0, i_8_);
             }
-            Class239.method1711(7, index_6_, 2, index_7_);
+            Option.method1711(7, index_6_, 2, index_7_);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("lfa.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_6_ != null ? "{...}" : "null") + ',' + (index_7_ != null ? "{...}" : "null") + ')'));
         }

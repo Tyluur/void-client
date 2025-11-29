@@ -27,7 +27,7 @@ final class TimedVarDomain implements Interface17 {
     final int method1305(byte i, boolean bool) {
         anInt5071++;
         if (i >= -124) method1308(-105, 89, -65, -52, (byte) 76, 37, -61, 73);
-        long l = Class62.method599(-79);
+        long l = Class62.safeTime(-79);
         for (Class348_Sub14 class348_sub14 = (bool ? (Class348_Sub14) aClass356_5070.method3484(0) : (Class348_Sub14) aClass356_5070.method3482(0)); class348_sub14 != null; class348_sub14 = (Class348_Sub14) aClass356_5070.method3482(0)) {
             if (l > (class348_sub14.aLong6762 & 0x3fffffffffffffffL)) {
                 if ((0x4000000000000000L & class348_sub14.aLong6762) != 0L) {
@@ -48,9 +48,9 @@ final class TimedVarDomain implements Interface17 {
             this.anIntArray5063[i_2_] = i_1_;
             Class348_Sub14 class348_sub14 = ((Class348_Sub14) aClass356_5070.method3480(i_2_, -6008));
             if (class348_sub14 == null) {
-                class348_sub14 = new Class348_Sub14(500L + Class62.method599(-122));
+                class348_sub14 = new Class348_Sub14(500L + Class62.safeTime(-122));
                 aClass356_5070.method3483((byte) 73, i_2_, class348_sub14);
-            } else class348_sub14.aLong6762 = Class62.method599(-88) - -500L;
+            } else class348_sub14.aLong6762 = Class62.safeTime(-88) - -500L;
         }
     }
 
@@ -79,16 +79,16 @@ final class TimedVarDomain implements Interface17 {
 
     static final void method1308(int i, int i_14_, int i_15_, int i_16_, byte i_17_, int i_18_, int i_19_, int i_20_) {
         anInt5072++;
-        if (Class369.anInt4960 <= i_15_ && i_19_ <= Class113.anInt1745 && i_14_ >= Class132.anInt1910 && Class38.anInt513 >= i_20_) Class239_Sub3.method1730(i_16_, i_20_, i_14_, i_19_, i, i_18_, -128, i_15_);
+        if (Class369.anInt4960 <= i_15_ && i_19_ <= Class113.anInt1745 && i_14_ >= Class132.anInt1910 && Class38.anInt513 >= i_20_) Option_Sub3.method1730(i_16_, i_20_, i_14_, i_19_, i, i_18_, -128, i_15_);
         else s_Sub3.method4004(i_20_, i_19_, i_14_, i, i_18_, -80, i_15_, i_16_);
         if (i_17_ > -113) aClass237_Sub1_5067 = null;
     }
 
     static final void method1309(boolean bool, int i) {
-        if (Class51.aClass311_897 == null) Class70.method726(92);
+        if (Class51.renderer == null) Class70.startRenderer(92);
         if (i < 116) aClass237_Sub1_5067 = null;
         anInt5062++;
-        if (bool) Class51.aClass311_897.method2326(96);
+        if (bool) Class51.renderer.method2326(96);
     }
 
     public static void method1310(boolean bool) {
@@ -101,7 +101,7 @@ final class TimedVarDomain implements Interface17 {
         if (i != 5139) anInt5065 = 62;
         for (int i_21_ = 0; (i_21_ < Class348_Sub1.anIntArray6547.length); i_21_++) {
             int i_22_ = Class348_Sub1.anIntArray6547[i_21_];
-            FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -86, i_22_, s.aIndex_4585);
+            FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -86, i_22_, s.aIndex_4585);
             FontRenderer fontRenderer = var_ha.method3686(fontMetrics, Class207.method1523(Class39.aIndex_518, i_22_), true);
             Class199.aClass352Array2636[i_21_] = new Class352(fontRenderer, fontMetrics);
         }
@@ -122,7 +122,7 @@ final class TimedVarDomain implements Interface17 {
         if (class348_sub14 == null) {
             class348_sub14 = new Class348_Sub14(4611686018427387905L);
             aClass356_5070.method3483((byte) 19, i_25_, class348_sub14);
-        } else if (class348_sub14.aLong6762 != 4611686018427387905L) class348_sub14.aLong6762 = 0x4000000000000000L | 500L + Class62.method599(-108);
+        } else if (class348_sub14.aLong6762 != 4611686018427387905L) class348_sub14.aLong6762 = 0x4000000000000000L | 500L + Class62.safeTime(-108);
     }
 
     final void method1314(byte i) {

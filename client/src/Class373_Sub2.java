@@ -11,7 +11,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
     static int anInt7426;
     static int anInt7427;
     static int anInt7428;
-    static int anInt7429;
+    static int timerbarDefaultGroup;
     static int anInt7430;
     static int anInt7431;
     private int anInt7432;
@@ -108,7 +108,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
     private final void method3605(int i, byte i_3_, int i_4_) {
         anInt7445++;
         anInt7454 = i_4_;
-        if (i_3_ != -76) anInt7429 = 51;
+        if (i_3_ != -76) timerbarDefaultGroup = 51;
         anInt7453 = i;
         if (aBoolean7458) method3606(-1, i, i_4_, 0, -125);
     }
@@ -132,7 +132,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
         class348_sub45_sub2.anInt9733 = i_5_;
         class348_sub45_sub2.anInt9730 = i_7_;
         class348_sub45_sub2.anInt9736 = i;
-        class348_sub45_sub2.aLong9734 = Class62.method599(-110);
+        class348_sub45_sub2.aLong9734 = Class62.safeTime(-110);
         aClass262_7450.method1999(class348_sub45_sub2, -20180);
         if (i_8_ >= -110) method3607(28, null, -68);
     }

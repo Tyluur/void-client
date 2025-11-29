@@ -33,12 +33,12 @@ final class Class184 {
             Class167.method1294((byte) -113, (Class299_Sub1_Sub2.aClass348_Sub49_8698.aByteArray7154));
             StructTypeList.aClass110_Sub1Array1146 = new Class110_Sub1[Class225.anInt2956];
             int i_2_ = 0;
-            for (int i_3_ = Class318_Sub1_Sub2.anInt8731; (Class239_Sub29.anInt6151 >= i_3_); i_3_++) {
-                Class110_Sub1 class110_sub1 = Class239_Sub5.method1742(false, i_3_);
+            for (int i_3_ = Class318_Sub1_Sub2.anInt8731; (Option_Sub29.anInt6151 >= i_3_); i_3_++) {
+                Class110_Sub1 class110_sub1 = Option_Sub5.method1742(false, i_3_);
                 if (class110_sub1 != null) StructTypeList.aClass110_Sub1Array1146[i_2_++] = class110_sub1;
             }
             Class130.aBoolean1899 = false;
-            Class240.aLong4683 = Class62.method599(-92);
+            Class240.aLong4683 = Class62.safeTime(-92);
             Class299_Sub1_Sub2.aClass348_Sub49_8698 = null;
         }
         if (i > -21) aBoolean2469 = true;

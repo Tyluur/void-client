@@ -7,7 +7,7 @@ import java.math.BigInteger;
 
 final class Class52 implements Interface12 {
     static int anInt4894;
-    static int anInt4895;
+    static int compassGroup;
     static BigInteger aBigInteger4896 = new BigInteger("10001", 16);
     static int anInt4897;
     static int anInt4898;
@@ -25,7 +25,7 @@ final class Class52 implements Interface12 {
         anInt4897++;
         Class43 class43 = new Class43();
         class43.anInt615 = class348_sub49.readUnsignedShort(842397944);
-        class43.aClass348_Sub42_Sub10_614 = Class239_Sub6.quickChatPhraseTypeList.method3471(class43.anInt615, (byte) -90);
+        class43.aClass348_Sub42_Sub10_614 = Option_Sub6.quickChatPhraseTypeList.method3471(class43.anInt615, (byte) -90);
         int i_0_ = -91 / ((9 - i) / 54);
         return class43;
     }
@@ -62,44 +62,45 @@ final class Class52 implements Interface12 {
         this.anInt4899 = i;
     }
 
-    static final void method493(boolean bool) {
-        if (Class328_Sub2.aLoadStateArray6515 == null) {
-            Class328_Sub2.aLoadStateArray6515 = LoadState.method528(-91);
-            Class348_Sub42_Sub15.state = Class328_Sub2.aLoadStateArray6515[0];
-            Class283.aLong3660 = Class62.method599(-119);
+    // method493
+    static final void update(boolean bool) {
+        if (Class328_Sub2.loadStates == null) {
+            Class328_Sub2.loadStates = LoadState.method528(-91);
+            Class348_Sub42_Sub15.state = Class328_Sub2.loadStates[0];
+            Class283.lastRendererUpdate = Class62.safeTime(-119);
         }
         anInt4900++;
-        if (Class51.aClass311_897 == null) Class70.method726(116);
-        LoadState loadState = Class348_Sub42_Sub15.state;
-        int i = Class164.method1278(-28660);
-        if (loadState == Class348_Sub42_Sub15.state) {
+        if (Class51.renderer == null) Class70.startRenderer(116);
+        LoadState oldState = Class348_Sub42_Sub15.state;
+        int essentials = Class164.essentials(-28660);
+        if (oldState == Class348_Sub42_Sub15.state) {
             Class64_Sub2.aString5420 = Class348_Sub42_Sub15.state.aClass274_1012.method2063(Class348_Sub33.language, 544);
-            if (Class348_Sub42_Sub15.state.aBoolean1016) Class251.anInt3236 = (i * ((Class348_Sub42_Sub15.state.anInt1021) + -(Class348_Sub42_Sub15.state.anInt1025)) / 100 + (Class348_Sub42_Sub15.state.anInt1025));
+            if (Class348_Sub42_Sub15.state.aBoolean1016) Class251.anInt3236 = (essentials * ((Class348_Sub42_Sub15.state.anInt1021) + -(Class348_Sub42_Sub15.state.anInt1025)) / 100 + (Class348_Sub42_Sub15.state.anInt1025));
             if (Class348_Sub42_Sub15.state.aBoolean1013) Class64_Sub2.aString5420 += Class251.anInt3236 + "%";
         } else if (Class348_Sub42_Sub15.state == LoadState.COMPLETE) {
-            Class51.aClass311_897 = null;
+            Class51.renderer = null;
             Class348_Sub49.method3379(2, 3);
         } else {
-            Class64_Sub2.aString5420 = loadState.aClass274_1015.method2063(Class348_Sub33.language, 544);
-            if (Class348_Sub42_Sub15.state.aBoolean1013) Class64_Sub2.aString5420 += loadState.anInt1021 + "%";
-            Class251.anInt3236 = loadState.anInt1021;
-            if (Class348_Sub42_Sub15.state.aBoolean1016 || loadState.aBoolean1016) Class283.aLong3660 = Class62.method599(-128);
+            Class64_Sub2.aString5420 = oldState.aClass274_1015.method2063(Class348_Sub33.language, 544);
+            if (Class348_Sub42_Sub15.state.aBoolean1013) Class64_Sub2.aString5420 += oldState.anInt1021 + "%";
+            Class251.anInt3236 = oldState.anInt1021;
+            if (Class348_Sub42_Sub15.state.aBoolean1016 || oldState.aBoolean1016) Class283.lastRendererUpdate = Class62.safeTime(-128);
         }
         if (bool == true) {
-            if (Class51.aClass311_897 != null) {
-                Class51.aClass311_897.method2316((Class348_Sub42_Sub15.state), Class64_Sub2.aString5420, Class251.anInt3236, Class283.aLong3660, false);
-                if (Class182.anInterface16Array2447 != null) {
-                    for (int i_5_ = Class375.anInt4544 - -1; (Class182.anInterface16Array2447.length > i_5_); i_5_++) {
-                        if (Class182.anInterface16Array2447[i_5_].method60(-19079) >= 100 && Class375.anInt4544 == -1 + i_5_ && Class240.anInt4674 >= 1 && Class51.aClass311_897.method2322(0)) {
+            if (Class51.renderer != null) {
+                Class51.renderer.method2316((Class348_Sub42_Sub15.state), Class64_Sub2.aString5420, Class251.anInt3236, Class283.lastRendererUpdate, false);
+                if (Class182.loadingScreens != null) {
+                    for (int i_5_ = Class375.anInt4544 - -1; (Class182.loadingScreens.length > i_5_); i_5_++) {
+                        if (Class182.loadingScreens[i_5_].percentage(-19079) >= 100 && Class375.anInt4544 == -1 + i_5_ && Class240.anInt4674 >= 1 && Class51.renderer.method2322(0)) {
                             try {
-                                Class182.anInterface16Array2447[i_5_].method57(117);
+                                Class182.loadingScreens[i_5_].method57(117);
                             } catch (Exception exception) {
-                                Class182.anInterface16Array2447 = null;
+                                Class182.loadingScreens = null;
                                 break;
                             }
-                            Class51.aClass311_897.method2321(10559, Class182.anInterface16Array2447[i_5_]);
+                            Class51.renderer.method2321(10559, Class182.loadingScreens[i_5_]);
                             Class375.anInt4544++;
-                            if ((Class375.anInt4544 >= (-1 + Class182.anInterface16Array2447.length)) && Class182.anInterface16Array2447.length > 1) Class375.anInt4544 = !Class186_Sub1.aClass111_5813.method1044(26) ? -1 : 0;
+                            if ((Class375.anInt4544 >= (-1 + Class182.loadingScreens.length)) && Class182.loadingScreens.length > 1) Class375.anInt4544 = !Class186_Sub1.loadingScreenManager.hasDefault(26) ? -1 : 0;
                         }
                     }
                 }

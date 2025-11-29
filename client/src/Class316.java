@@ -4,7 +4,7 @@
 
 final class Class316 {
     static int anInt3958;
-    static Class348_Sub51 aClass348_Sub51_3959;
+    static ClientOptions clientOptions;
     static int anInt3960;
     private final int[] anIntArray3961;
     static int anInt3962;
@@ -94,7 +94,7 @@ final class Class316 {
 
     public static void method2366(boolean bool) {
         aClass348_Sub42_Sub12_3963 = null;
-        aClass348_Sub51_3959 = null;
+        clientOptions = null;
         if (bool != true) method2368(46);
     }
 
@@ -112,6 +112,6 @@ final class Class316 {
     static final void method2368(int i) {
         Class15.aClass60_225.method590(0);
         anInt3965++;
-        if (i != -1) aClass348_Sub51_3959 = null;
+        if (i != -1) clientOptions = null;
     }
 }

@@ -37,7 +37,7 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
         StringBuffer stringbuffer = new StringBuffer(i_2_);
         for (int i_3_ = i_0_; i_1_ > i_3_; i_3_++) {
             char c = string.charAt(i_3_);
-            if (Class239_Sub29.method1849(c, i + 108)) {
+            if (Option_Sub29.method1849(c, i + 108)) {
                 char c_4_ = Class287.method2184(c, -10072);
                 if (c_4_ != 0) stringbuffer.append(c_4_);
             }
@@ -57,7 +57,7 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
         anInt8494++;
         Class21.aHa326.method3638(r.aClass101_9720);
         if (i < 9) anInt8492 = -40;
-        Class21.aHa326.DA(Class248.anInt3202, Class239_Sub5.anInt5886, Class14_Sub3.anInt8630, Class27.anInt394);
+        Class21.aHa326.DA(Class248.anInt3202, Option_Sub5.anInt5886, Class14_Sub3.anInt8630, Class27.anInt394);
     }
 
     public final void method21(int i) {

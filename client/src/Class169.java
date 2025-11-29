@@ -23,16 +23,16 @@ final class Class169 implements Runnable {
         for (; ; ) {
             Class348_Sub26 class348_sub26;
             synchronized (aClass262_2258) {
-                Class348 class348;
-                for (class348 = aClass262_2258.method1997(8); class348 == null; class348 = aClass262_2258.method1997(8)) {
+                Node node;
+                for (node = aClass262_2258.method1997(8); node == null; node = aClass262_2258.method1997(8)) {
                     try {
                         aClass262_2258.wait();
                     } catch (InterruptedException interruptedexception) {
                         /* empty */
                     }
                 }
-                if (!(class348 instanceof Class348_Sub26)) break;
-                class348_sub26 = (Class348_Sub26) class348;
+                if (!(node instanceof Class348_Sub26)) break;
+                class348_sub26 = (Class348_Sub26) node;
             }
             int i;
             try {
@@ -82,7 +82,7 @@ final class Class169 implements Runnable {
     final void method1303(byte i) {
         anInt2257++;
         if (aThread2259 != null) {
-            method1304(1000, new Class348());
+            method1304(1000, new Node());
             try {
                 aThread2259.join();
             } catch (InterruptedException interruptedexception) {
@@ -93,10 +93,10 @@ final class Class169 implements Runnable {
         }
     }
 
-    private final void method1304(int i, Class348 class348) {
+    private final void method1304(int i, Node node) {
         if (i != 1000) method1303((byte) 95);
         synchronized (aClass262_2258) {
-            aClass262_2258.method1999(class348, -20180);
+            aClass262_2258.method1999(node, -20180);
             aClass262_2258.notify();
         }
         anInt2262++;

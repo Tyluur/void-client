@@ -19,7 +19,7 @@ final class aa_Sub2 extends aa {
     static final int method163(int i) {
         anInt5198++;
         if (i != 512) method165(122, 62, -125, 72, -74, 116, 43, (byte) 104, 62, -115);
-        return Class51.aClass311_897.method2325((byte) -98);
+        return Class51.renderer.method2325((byte) -98);
     }
 
     static final boolean method164(int i, int i_0_, byte i_1_, int i_2_) {
@@ -44,7 +44,7 @@ final class aa_Sub2 extends aa {
 
     static final void method165(int i, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, byte i_12_, int i_13_, int i_14_) {
         anInt5194++;
-        if (i_9_ < 512 || i_11_ < 512 || (-2 + Class367_Sub4.anInt7319) * 512 < i_9_ || (-2 + Class348_Sub40_Sub3.anInt9109) * 512 < i_11_) Class239_Sub21.anIntArray6062[0] = Class239_Sub21.anIntArray6062[1] = -1;
+        if (i_9_ < 512 || i_11_ < 512 || (-2 + Class367_Sub4.mapLength) * 512 < i_9_ || (-2 + Class348_Sub40_Sub3.mapWidth) * 512 < i_11_) Option_Sub21.anIntArray6062[0] = Option_Sub21.anIntArray6062[1] = -1;
         else if (i_12_ >= 22) {
             int i_15_ = Class275.method2064(i_9_, i, 11219, i_11_) - i_7_;
             if (Class59_Sub1.aBoolean5300) Class107.method1010(false, true);
@@ -52,8 +52,8 @@ final class aa_Sub2 extends aa {
                 Class157.aClass101_2123.method891(i_10_, 0, 0);
                 Class348_Sub8.aHa6654.method3638(Class157.aClass101_2123);
             }
-            if (!Class305.aBoolean3870) Class348_Sub8.aHa6654.da(i_9_, i_15_, i_11_, Class239_Sub21.anIntArray6062);
-            else Class348_Sub8.aHa6654.HA(i_9_, i_15_, i_11_, Class132.anInt1906, Class239_Sub21.anIntArray6062);
+            if (!Class305.aBoolean3870) Class348_Sub8.aHa6654.da(i_9_, i_15_, i_11_, Option_Sub21.anIntArray6062);
+            else Class348_Sub8.aHa6654.HA(i_9_, i_15_, i_11_, Class132.anInt1906, Option_Sub21.anIntArray6062);
             if (Class59_Sub1.aBoolean5300) Class285_Sub1.method2129((byte) 60);
             else {
                 Class157.aClass101_2123.method891(-i_10_, 0, 0);

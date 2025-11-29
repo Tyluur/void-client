@@ -29,7 +29,7 @@ final class Class348_Sub40_Sub6 extends Class348_Sub40 {
                 int i_5_ = anInt9133 * is_2_[i_3_] >> 12;
                 int i_6_ = Class127.anIntArray4654[i_4_] * i_5_ >> 12;
                 int i_7_ = Class235.anIntArray3068[i_4_] * i_5_ >> 12;
-                int i_8_ = i_3_ - -(i_6_ >> 12) & Class239_Sub22.anInt6076;
+                int i_8_ = i_3_ - -(i_6_ >> 12) & Option_Sub22.anInt6076;
                 int i_9_ = i - -(i_7_ >> 12) & Class299_Sub2.anInt6325;
                 int[] is_10_ = this.method3048(i_9_, 633706337, 0);
                 is[i_3_] = is_10_[i_8_];
@@ -78,7 +78,7 @@ final class Class348_Sub40_Sub6 extends Class348_Sub40 {
                 int i_21_ = anInt9133 * is_15_[i_19_] >> 12;
                 int i_22_ = i_21_ * Class127.anIntArray4654[i_20_] >> 12;
                 int i_23_ = i_21_ * Class235.anIntArray3068[i_20_] >> 12;
-                int i_24_ = i_19_ + (i_22_ >> 12) & Class239_Sub22.anInt6076;
+                int i_24_ = i_19_ + (i_22_ >> 12) & Option_Sub22.anInt6076;
                 int i_25_ = (i_23_ >> 12) + i & Class299_Sub2.anInt6325;
                 int[][] is_26_ = this.method3039((byte) -57, i_25_, 0);
                 is_16_[i_19_] = is_26_[0][i_24_];
@@ -93,7 +93,7 @@ final class Class348_Sub40_Sub6 extends Class348_Sub40 {
         anInt9132++;
         int i = Class348_Sub42_Sub15.state.method525(-125);
         if (bool != false) anIntArray9135 = null;
-        if (i < Class328_Sub2.aLoadStateArray6515.length + -1) Class348_Sub42_Sub15.state = Class328_Sub2.aLoadStateArray6515[1 + i];
+        if (i < Class328_Sub2.loadStates.length + -1) Class348_Sub42_Sub15.state = Class328_Sub2.loadStates[1 + i];
         return 100;
     }
 }

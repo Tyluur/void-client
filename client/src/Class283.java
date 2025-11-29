@@ -7,7 +7,7 @@ final class Class283 {
     int anInt3657;
     static float[] aFloatArray3658 = new float[2];
     static int[] anIntArray3659;
-    static long aLong3660;
+    static long lastRendererUpdate;
     static int[] anIntArray3661 = {8, 11, 4, 6, 9, 7, 10, 0};
     static int anInt3662;
     String aString3663;

@@ -33,7 +33,7 @@ abstract class Class5 implements Interface1 {
     public void method7(int i) {
         anInt4639++;
         if (i == 10286) {
-            FontMetrics fontMetrics = Class239_Sub10.getFontMetrics((byte) -85, (this.aClass369_4635.anInt4965), aIndex_4631);
+            FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -85, (this.aClass369_4635.anInt4965), aIndex_4631);
             aFontRenderer_4637 = (Class348_Sub8.aHa6654.method3686(fontMetrics, Class207.method1523(this.aIndex_4632, (this.aClass369_4635.anInt4965)), true));
         }
     }
@@ -73,18 +73,18 @@ abstract class Class5 implements Interface1 {
     final int method183(int i) {
         anInt4633++;
         if (i <= 16) this.aClass369_4635 = null;
-        int i_8_ = Class51.aClass311_897.method2320((byte) 106);
+        int i_8_ = Class51.renderer.method2320((byte) 106);
         int i_9_ = 100 * i_8_;
         if (anInt4630 != i_8_ || i_8_ == 0) {
             anInt4630 = i_8_;
-            aLong4640 = Class62.method599(-125);
+            aLong4640 = Class62.safeTime(-125);
         } else {
-            int i_10_ = Class51.aClass311_897.method2315((byte) 121);
+            int i_10_ = Class51.renderer.method2315((byte) 121);
             if (i_8_ < i_10_) {
-                long l = aLong4640 - Class51.aClass311_897.method2323(0);
+                long l = aLong4640 - Class51.renderer.method2323(0);
                 if (l > 0L) {
                     long l_11_ = (long) (i_10_ - i_8_) * (10000L * l / (long) i_8_);
-                    long l_12_ = (-aLong4640 + Class62.method599(-89)) * 10000L;
+                    long l_12_ = (-aLong4640 + Class62.safeTime(-89)) * 10000L;
                     if (l_11_ > l_12_) i_9_ = (int) ((long) (i_8_ * 100) + ((long) (i_10_ + -i_8_) * (l_12_ * 100L) / l_11_));
                     else i_9_ = i_10_ * 100;
                 }
@@ -100,8 +100,8 @@ abstract class Class5 implements Interface1 {
             int i_14_ = ((this.aClass369_4635.aClass341_4973.method2679(ha_Sub2.anInt7666, this.aClass369_4635.anInt4963, i ^ ~0x60b)) + this.aClass369_4635.anInt4959);
             method178(i_13_, bool, (byte) -84, i_14_);
             method182(63, i_14_, i_13_, bool);
-            String string = Class51.aClass311_897.method2318(i ^ 0x245b);
-            if (-aLong4640 + Class62.method599(-100) > 10000L) string += " (" + Class51.aClass311_897.method2324(i + 149).method525(-117) + ")";
+            String string = Class51.renderer.method2318(i ^ 0x245b);
+            if (-aLong4640 + Class62.safeTime(-100) > 10000L) string += " (" + Class51.renderer.method2324(i + 149).method525(-117) + ")";
             aFontRenderer_4637.method2575((byte) 115, (i_13_ + this.aClass369_4635.anInt4971 / 2), this.aClass369_4635.anInt4961, string, -1, (this.aClass369_4635.anInt4966 + 4 + (i_14_ - -(this.aClass369_4635.anInt4963 / 2))));
         }
     }

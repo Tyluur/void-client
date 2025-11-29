@@ -5,7 +5,7 @@
 final class Class182 {
     int anInt2445;
     static int anInt2446;
-    static Interface16[] anInterface16Array2447;
+    static LoadingScreen[] loadingScreens;
     int anInt2448;
     static Class346 aClass346_2449;
     static int anInt2450;
@@ -18,7 +18,7 @@ final class Class182 {
 
     static final void method1372(int i) {
         RuntimeException_Sub1.anInt4596 = i;
-        Class239_Sub12.anInt5969 = 1;
+        Option_Sub12.anInt5969 = 1;
         anInt2452++;
         long l = 0L;
         if (Class348_Sub23_Sub3.aString9043 == null) {
@@ -49,7 +49,7 @@ final class Class182 {
     public static void method1375(int i) {
         if (i != 5616) aClass346_2449 = null;
         aClass346_2449 = null;
-        anInterface16Array2447 = null;
+        loadingScreens = null;
     }
 
     public Class182() {

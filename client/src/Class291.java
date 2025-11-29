@@ -23,7 +23,7 @@ final class Class291 {
     static int anInt3736;
     static Class318_Sub1[] aClass318_Sub1Array3737;
     int[] anIntArray3738;
-    static int anInt3739;
+    static int hintMapmarkersGroup;
     private byte[] aByteArray3740;
     static int anInt3741;
 

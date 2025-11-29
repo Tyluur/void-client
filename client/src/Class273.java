@@ -20,7 +20,7 @@ final class Class273 implements Interface21 {
         anInt5168++;
         if (!Class146.method1193(i_1_, i, true)) return false;
         if (Class122.method1087(12644, i_1_, i) | (i & 0xb000) != 0 | NPCTypeList.method2075(i, -128, i_1_)) return true;
-        return ((Class156.method1241(i_1_, i, -128) | Class239_Sub1.method1722(i, i_1_, (byte) 92)) & (0x37 & i_1_) == 0);
+        return ((Class156.method1241(i_1_, i, -128) | Option_Sub1.method1722(i, i_1_, (byte) 92)) & (0x37 & i_1_) == 0);
     }
 
     static int method2057(int i, int i_2_) {

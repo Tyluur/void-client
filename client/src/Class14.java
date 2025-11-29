@@ -155,7 +155,7 @@ abstract class Class14 implements Interface18 {
     static final FontRenderer method232(ha var_ha, byte i, boolean bool, int i_22_) {
         if (i != -53) method237(true);
         anInt5094++;
-        Class352 class352 = Class239_Sub3.method1734(i_22_, var_ha, (byte) 55, bool);
+        Class352 class352 = Option_Sub3.method1734(i_22_, var_ha, (byte) 55, bool);
         if (class352 == null) return null;
         return class352.aFontRenderer_4332;
     }

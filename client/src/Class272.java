@@ -46,8 +46,8 @@ abstract class Class272 {
     static final void method2051(int i, int i_0_, Class221 class221, Class341 class341, int i_1_, int i_2_, int i_3_, byte i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
         try {
             Class95.aClass221_1542 = class221;
-            Class239_Sub3.anInt5871 = i_7_;
-            Class239_Sub27.aClass341_6128 = class341;
+            Option_Sub3.anInt5871 = i_7_;
+            Option_Sub27.aClass341_6128 = class341;
             Class86.anInt1479 = i;
             Class348_Sub7.aClass207_6643 = null;
             Class295.anInt3762 = i_8_;

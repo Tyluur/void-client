@@ -36,7 +36,7 @@ final class Class337 {
     static final boolean method2659(byte i, int i_0_, int i_1_) {
         int i_2_ = 24 % ((i - 76) / 42);
         anInt4176++;
-        return (0x70000 & i_0_) != 0 | Class348.method2709(i_1_, i_0_, -1) || Class288.method2187(i_0_, -84, i_1_);
+        return (0x70000 & i_0_) != 0 | Node.method2709(i_1_, i_0_, -1) || Class288.method2187(i_0_, -84, i_1_);
     }
 
     static final Class288_Sub1 method2660(byte i, Class348_Sub49 class348_sub49) {

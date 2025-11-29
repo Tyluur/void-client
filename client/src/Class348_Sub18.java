@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.lang.reflect.Constructor;
 
-final class Class348_Sub18 extends Class348 {
+final class Class348_Sub18 extends Node {
     static int anInt6804;
     static int anInt6805;
     private final int anInt6806;
@@ -71,7 +71,7 @@ final class Class348_Sub18 extends Class348 {
         Class30.skyBoxTypeList.method822((byte) -120);
         Class123.skyBoxSphereTypeList.method300((byte) -123);
         Class348_Sub1.lightTypeList.method1393((byte) -13);
-        Class239.cursorTypeList.method1290(-8);
+        Option.cursorTypeList.method1290(-8);
         Class136.structTypeList.method695(true);
         Class73.hitmarkTypeList.method1602(0);
         Class369_Sub3.method3573(-15326);
@@ -85,7 +85,7 @@ final class Class348_Sub18 extends Class348 {
         }
         Class364.method3517(83);
         Class316.method2368(-1);
-        Class239_Sub25.method1828(87);
+        Option_Sub25.method1828(87);
         if (i > 53) {
             Class24.method297(false);
             Class186_Sub1.method1402(1);
@@ -107,7 +107,7 @@ final class Class348_Sub18 extends Class348 {
             Class348_Sub23_Sub2.MUSIC_EFFECTS.method412((byte) 89);
             Class113.CLIENT_SCRIPTS.method412((byte) -125);
             Class104.FONT_INDEX.method412((byte) -117);
-            Class239_Sub4.MIDI_INSTRUMENTS.method412((byte) 29);
+            Option_Sub4.MIDI_INSTRUMENTS.method412((byte) 29);
             Class123.aIndex_1815.method412((byte) 80);
             Class94.OBJECTS.method412((byte) 34);
             Class247.ENUMS.method412((byte) -116);
@@ -120,12 +120,12 @@ final class Class348_Sub18 extends Class348 {
             Class130.QUICK_CHAT_MESSAGES.method412((byte) -114);
             VarcstrTypeList.QUICK_CHAT_MENUS.method412((byte) -117);
             Class348_Sub11.TEXTURE_DEFINITIONS.method412((byte) 78);
-            Class239.PARTICLES.method412((byte) 88);
+            Option.PARTICLES.method412((byte) 88);
             Class367_Sub8.DEFAULTS.method412((byte) -109);
             Class262.BILLBOARDS.method412((byte) 112);
             Class126.NATIVE_LIBRARIES.method412((byte) 85);
             Class136.SHADERS.method412((byte) 93);
-            Class146.aIndex_2015.method412((byte) -122);
+            Class146.VIDEOS.method412((byte) -122);
             Class353.aClass60_4346.method590(0);
             Class328_Sub2.aClass60_6517.method590(0);
             Class348_Sub1_Sub1.aClass60_8807.method590(0);

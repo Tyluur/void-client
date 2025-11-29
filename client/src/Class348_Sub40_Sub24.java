@@ -20,7 +20,7 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40 {
         anInt9328++;
         int[] is = this.aClass191_7032.method1433(0, i);
         if (this.aClass191_7032.aBoolean2570) {
-            int i_1_ = Class239_Sub18.anIntArray6035[i];
+            int i_1_ = Option_Sub18.anIntArray6035[i];
             if (anInt9325 == 0) {
                 int i_7_ = 0;
                 for (int i_8_ = 0; i_8_ < anInt9329; i_8_++) {

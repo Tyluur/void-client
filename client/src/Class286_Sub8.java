@@ -61,7 +61,7 @@ final class Class286_Sub8 extends Class286 {
         if (Class93.anApplet1530 != null) {
             try {
                 String string = Class93.anApplet1530.getParameter("cookiehost");
-                int i_3_ = (int) (Class62.method599(-74) / 86400000L) - 11745;
+                int i_3_ = (int) (Class62.safeTime(-74) / 86400000L) - 11745;
                 String string_4_ = ("usrdob=" + i_3_ + "; version=1; path=/; domain=" + string);
                 Class224.method1615(Class93.anApplet1530, -15092, "document.cookie=\"" + string_4_ + "\"");
             } catch (Throwable throwable) {

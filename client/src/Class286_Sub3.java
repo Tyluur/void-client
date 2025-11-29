@@ -219,7 +219,7 @@ final class Class286_Sub3 extends Class286 {
                 }
                 if (!bool) {
                     String[] strings = NPCDefinition.aStringArray1349;
-                    if (za_Sub2.aBoolean9783) strings = Class239_Sub28.method1847(strings, 0);
+                    if (za_Sub2.aBoolean9783) strings = Option_Sub28.method1847(strings, 0);
                     if (strings != null) {
                         for (int i = 4; i >= 0; i--) {
                             if (strings[i] != null && (NPCDefinition.aByte1384 == 0 || !(strings[i].equalsIgnoreCase(Class274.aClass274_3506.method2063(Class348_Sub33.language, 544))))) {

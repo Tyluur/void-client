@@ -188,10 +188,10 @@ final class Class42 {
                             for (int i_16_ = 0; (i_16_ < i_14_); i_16_++) {
                                 boolean bool = (class348_sub49.readUnsignedByte(255) == 1);
                                 int i_17_ = class348_sub49.readMedium(-1);
-                                Class348 class348;
-                                if (!bool) class348 = (new Class348_Sub35(class348_sub49.readInt((byte) -126)));
-                                else class348 = (new Class348_Sub50(class348_sub49.readString((byte) -41)));
-                                aClass356_588.method3483((byte) 60, i_17_, class348);
+                                Node node;
+                                if (!bool) node = (new Class348_Sub35(class348_sub49.readInt((byte) -126)));
+                                else node = (new Class348_Sub50(class348_sub49.readString((byte) -41)));
+                                aClass356_588.method3483((byte) 60, i_17_, node);
                             }
                         }
                     } else this.anInt604 = class348_sub49.readInt((byte) -126);

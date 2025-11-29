@@ -21,7 +21,7 @@ final class Class192 {
             Class318_Sub1_Sub3_Sub4.method2461(class318_sub6, true);
         int i_0_;
         int i_1_;
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 1) {
+        if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1) {
             i_0_ = 0;
             i_1_ = 3;
         } else i_0_ = i_1_ = Class167.anInt2204;

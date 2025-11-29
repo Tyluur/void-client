@@ -17,8 +17,8 @@ final class Class300 {
     static final Class348_Sub47 method2273(byte i) {
         anInt3824++;
         if (i != -103) return null;
-        if (Class239_Sub13.anInt5980 == 0) return new Class348_Sub47();
-        return Class176.aClass348_Sub47Array2334[--Class239_Sub13.anInt5980];
+        if (Option_Sub13.anInt5980 == 0) return new Class348_Sub47();
+        return Class176.aClass348_Sub47Array2334[--Option_Sub13.anInt5980];
     }
 
     static final int method2274(String string, int i) {

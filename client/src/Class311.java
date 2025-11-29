@@ -13,7 +13,7 @@ final class Class311 implements Runnable {
     static int anInt3904;
     static int anInt3905;
     static int anInt3906;
-    private Interface16 anInterface16_3907 = new Class294();
+    private LoadingScreen anLoadingScreen_3907 = new Class294();
     private boolean aBoolean3908;
     static int anInt3909;
     private volatile boolean aBoolean3910;
@@ -25,7 +25,7 @@ final class Class311 implements Runnable {
     private LoadState aLoadState_3916;
     private long aLong3917;
     static int anInt3918 = 1;
-    private Interface16 anInterface16_3919 = null;
+    private LoadingScreen anLoadingScreen_3919 = null;
     private int anInt3920;
     private String aString3921;
 
@@ -35,7 +35,7 @@ final class Class311 implements Runnable {
         if (i < 103) aLong3917 = -58L;
         int i_0_ = aLoadState_3916.method525(-118);
         if (aLoadState_3916.aBoolean1016 && (anInt3915 < aLoadState_3916.anInt1021)) return 1 + anInt3915;
-        if (i_0_ < 0 || -1 + Class328_Sub2.aLoadStateArray6515.length <= i_0_) return 100;
+        if (i_0_ < 0 || -1 + Class328_Sub2.loadStates.length <= i_0_) return 100;
         if (aLoadState_3916.anInt1025 == anInt3915) return aLoadState_3916.anInt1021;
         return aLoadState_3916.anInt1025;
     }
@@ -56,15 +56,15 @@ final class Class311 implements Runnable {
     public final void run() {
         anInt3902++;
         while (!aBoolean3910) {
-            long l = Class62.method599(-61);
+            long l = Class62.safeTime(-61);
             synchronized (this) {
                 try {
                     anInt3920++;
-                    if (anInterface16_3907 instanceof Class294) anInterface16_3907.method58(aBoolean3908, -104);
+                    if (anLoadingScreen_3907 instanceof Class294) anLoadingScreen_3907.method58(aBoolean3908, -104);
                     else {
-                        long l_1_ = Class62.method599(-104);
-                        if (Class348_Sub8.aHa6654 != null && anInterface16_3919 != null && anInterface16_3919.method55((byte) -58) != 0 && (aLong3914 >= l_1_ - (long) anInterface16_3919.method55((byte) -58))) {
-                            int i = (int) ((l_1_ + -aLong3914) * 255L / (long) anInterface16_3919.method55((byte) -58));
+                        long l_1_ = Class62.safeTime(-104);
+                        if (Class348_Sub8.aHa6654 != null && anLoadingScreen_3919 != null && anLoadingScreen_3919.method55((byte) -58) != 0 && (aLong3914 >= l_1_ - (long) anLoadingScreen_3919.method55((byte) -58))) {
+                            int i = (int) ((l_1_ + -aLong3914) * 255L / (long) anLoadingScreen_3919.method55((byte) -58));
                             int i_2_ = -i + 255;
                             i_2_ = 0xffffff | i_2_ << 24;
                             i = 0xffffff | i << 24;
@@ -72,28 +72,28 @@ final class Class311 implements Runnable {
                             Class348_Sub8.aHa6654.GA(0);
                             Sprite sprite = (Class348_Sub8.aHa6654.method3629(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, true));
                             Class348_Sub8.aHa6654.method3681(sprite, 0);
-                            anInterface16_3919.method58(true, -126);
+                            anLoadingScreen_3919.method58(true, -126);
                             Class348_Sub8.aHa6654.method3672();
                             sprite.method964(0, 0, 0, i_2_, 1);
                             Class348_Sub8.aHa6654.method3681(sprite, 0);
                             Class348_Sub8.aHa6654.GA(0);
-                            anInterface16_3907.method58(true, -114);
+                            anLoadingScreen_3907.method58(true, -114);
                             Class348_Sub8.aHa6654.method3672();
                             sprite.method964(0, 0, 0, i, 1);
                         } else {
-                            if (anInterface16_3919 != null) {
+                            if (anLoadingScreen_3919 != null) {
                                 aBoolean3908 = true;
-                                anInterface16_3919.method59(-9719);
-                                anInterface16_3919 = null;
+                                anLoadingScreen_3919.method59(-9719);
+                                anLoadingScreen_3919 = null;
                             }
                             if (aBoolean3908) {
                                 Class140.method1170((byte) -64);
                                 if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654.GA(0);
                             }
-                            anInterface16_3907.method58((aBoolean3908 || (Class348_Sub8.aHa6654 != null && Class348_Sub8.aHa6654.method3655())), -90);
+                            anLoadingScreen_3907.method58((aBoolean3908 || (Class348_Sub8.aHa6654 != null && Class348_Sub8.aHa6654.method3655())), -90);
                         }
                         try {
-                            if (Class348_Sub8.aHa6654 != null && !(anInterface16_3907 instanceof Class294)) Class348_Sub8.aHa6654.method3689((byte) 57);
+                            if (Class348_Sub8.aHa6654 != null && !(anLoadingScreen_3907 instanceof Class294)) Class348_Sub8.aHa6654.method3689((byte) 57);
                         } catch (Exception_Sub1 exception_sub1) {
                             Class156.method1242((exception_sub1.getMessage() + " (Recovered) " + NPCDefinition.aClient1367.method81((byte) 80)), exception_sub1, 15004);
                             Class367_Sub10.method3553(true, (byte) 114, 0);
@@ -107,12 +107,12 @@ final class Class311 implements Runnable {
                     container.getSize();
                     if (Class52.aFrame4904 == container) Class52.aFrame4904.getInsets();
                     aBoolean3908 = false;
-                    if (Class348_Sub8.aHa6654 != null && !(anInterface16_3907 instanceof Class294) && (aLoadState_3916.method525(-112) < LoadState.SHOW_LOGIN_WINDOW.method525(-127))) Class367_Sub11.method3556(false);
+                    if (Class348_Sub8.aHa6654 != null && !(anLoadingScreen_3907 instanceof Class294) && (aLoadState_3916.method525(-112) < LoadState.SHOW_LOGIN_WINDOW.method525(-127))) Class367_Sub11.method3556(false);
                 } catch (Exception exception) {
                     continue;
                 }
             }
-            long l_3_ = Class62.method599(-73);
+            long l_3_ = Class62.safeTime(-73);
             int i = (int) (-l_3_ - -l + 20L);
             if (i > 0) Class286_Sub5.method2161((byte) -3, i);
         }
@@ -143,18 +143,18 @@ final class Class311 implements Runnable {
         return anInt3915;
     }
 
-    final synchronized void method2321(int i, Interface16 interface16) {
+    final synchronized void method2321(int i, LoadingScreen loadingScreen) {
         anInt3911++;
         if (i != 10559) aClass46_3913 = null;
-        anInterface16_3919 = anInterface16_3907;
-        anInterface16_3907 = interface16;
-        aLong3914 = Class62.method599(-67);
+        anLoadingScreen_3919 = anLoadingScreen_3907;
+        anLoadingScreen_3907 = loadingScreen;
+        aLong3914 = Class62.safeTime(-67);
     }
 
     final synchronized boolean method2322(int i) {
         anInt3900++;
         if (i != 0) return false;
-        return anInterface16_3907.method56((byte) 125, aLong3914);
+        return anLoadingScreen_3907.method56((byte) 125, aLong3914);
     }
 
     final long method2323(int i) {

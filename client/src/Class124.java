@@ -842,7 +842,7 @@ final class Class124 {
         if (i != -99) method1096(57);
         Class85.method828((byte) 38, dimension.height, dimension.width);
         if (Class348_Sub49.anInt7207 != 1) Class21.aHa326.method3643(canvas, Class59_Sub1.anInt5283, Class107.anInt1651);
-        else Class21.aHa326.method3643(canvas, Class348_Sub16_Sub1.anInt8854, Class239_Sub16.anInt6008);
+        else Class21.aHa326.method3643(canvas, Class348_Sub16_Sub1.anInt8854, Option_Sub16.anInt6008);
     }
 
     Class124(int i, int i_214_, int i_215_) {

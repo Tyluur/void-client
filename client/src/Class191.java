@@ -55,8 +55,8 @@ final class Class191 {
                     Class348_Sub1_Sub1.aClass60_8807.method582(sprite, i_9_, (byte) -115);
                 }
                 aa_Sub2.method165(class318_sub1_sub3_sub3_8_.plane, i_5_, 0, i_3_ >> 1, class318_sub1_sub3_sub3_8_.x, class318_sub1_sub3_sub3_8_.method2436((byte) 126) * 256, class318_sub1_sub3_sub3_8_.y, (byte) 92, i_6_ >> 1, i_2_);
-                int i_10_ = i_7_ + (Class239_Sub21.anIntArray6062[0] + -18);
-                int i_11_ = -54 + (Class239_Sub21.anIntArray6062[1] + i_4_) - 16;
+                int i_10_ = i_7_ + (Option_Sub21.anIntArray6062[0] + -18);
+                int i_11_ = -54 + (Option_Sub21.anIntArray6062[1] + i_4_) - 16;
                 i_10_ += i / 4 * 18;
                 i_11_ += 18 * (i % 4);
                 int i_12_ = -76 / ((i_1_ - 3) / 38);

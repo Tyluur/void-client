@@ -17,13 +17,13 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
     static double aDouble9531;
     static int anInt9532;
     static Class351 aClass351_9533;
-    static Interface6[] anInterface6Array9534 = new Interface6[128];
+    static KeyLog[] KEYBOARD_EVENT_ARRAY_1 = new KeyLog[128];
 
     final int[] method3183(d var_d, int i, int i_0_, boolean bool, double d, Index index, byte i_1_) {
         try {
             anInt9522++;
             Class286_Sub5.aD6247 = var_d;
-            Class348.aIndex_4286 = index;
+            Node.aIndex_4286 = index;
             for (int i_2_ = 0; aClass348_Sub40Array9520.length > i_2_; i_2_++)
                 aClass348_Sub40Array9520[i_2_].method3045(i, i_0_, -256);
             Class348_Sub42_Sub13.method3232(d, (byte) -122);
@@ -108,7 +108,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
     final int[] method3185(int i, d var_d, int i_21_, boolean bool, double d, boolean bool_22_, Index index, int i_23_) {
         try {
             Class286_Sub5.aD6247 = var_d;
-            Class348.aIndex_4286 = index;
+            Node.aIndex_4286 = index;
             anInt9526++;
             for (int i_24_ = 0; aClass348_Sub40Array9520.length > i_24_; i_24_++)
                 aClass348_Sub40Array9520[i_24_].method3045(i, i_23_, i_21_ + -256);
@@ -174,7 +174,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
     final float[] method3186(int i, d var_d, boolean bool, int i_41_, Index index, int i_42_) {
         try {
             anInt9525++;
-            Class348.aIndex_4286 = index;
+            Node.aIndex_4286 = index;
             Class286_Sub5.aD6247 = var_d;
             if (i_42_ >= -1) method3183(null, -60, 98, false, -0.11623531533038078, null, (byte) -72);
             for (int i_43_ = 0; aClass348_Sub40Array9520.length > i_43_; i_43_++)
@@ -226,7 +226,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
     }
 
     public static void method3187(byte i) {
-        anInterface6Array9534 = null;
+        KEYBOARD_EVENT_ARRAY_1 = null;
         int i_55_ = 19 % ((76 - i) / 39);
         aClass351_9533 = null;
         aClass138_9530 = null;

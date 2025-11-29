@@ -38,8 +38,8 @@ final class Class49 implements Interface4 {
             i_2_ = 2;
             Class161.method1263(true);
         }
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) != 2) {
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), 2);
+        if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) != 2) {
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 2);
             Class367_Sub10.method3553(false, (byte) 119, 2);
         }
         Class14_Sub2.method243(37);

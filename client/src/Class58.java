@@ -78,7 +78,7 @@ final class Class58 {
         anInt1066++;
         if ((Class348_Sub33.aByteArrayArrayArray6962[0][i_24_][i] & 0x2) != 0) return true;
         if ((0x10 & Class348_Sub33.aByteArrayArrayArray6962[i_26_][i_24_][i]) != 0) return false;
-        return i_25_ == Class239_Sub10.method1762(-55, i_26_, i, i_24_);
+        return i_25_ == Option_Sub10.method1762(-55, i_26_, i, i_24_);
     }
 
     final Class325 method537(int i, int i_27_) {

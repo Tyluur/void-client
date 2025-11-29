@@ -65,8 +65,8 @@ abstract class Class318_Sub1 extends Class318 {
                                 [class42.anIntArray591.length]);
                         for (int i_9_ = 0; is.length / 2 > i_9_; i_9_++) {
                             int i_10_;
-                            if (Class348_Sub40_Sub21.anInt9282 != 4) i_10_ = 0x3fff & (r_Sub2.anInt10483 + (int) Class314.aFloat3938);
-                            else i_10_ = (int) Class314.aFloat3938 & 0x3fff;
+                            if (Class348_Sub40_Sub21.anInt9282 != 4) i_10_ = 0x3fff & (r_Sub2.anInt10483 + (int) ResourceProvider.aFloat3938);
+                            else i_10_ = (int) ResourceProvider.aFloat3938 & 0x3fff;
                             int i_11_ = Class70.anIntArray1207[i_10_];
                             int i_12_ = Class70.anIntArray1204[i_10_];
                             if (Class348_Sub40_Sub21.anInt9282 != 4) {
@@ -169,7 +169,7 @@ abstract class Class318_Sub1 extends Class318 {
         for (/**/; l_32_ <= 48; l_32_ += 16L) {
             int i_34_ = (int) (0xffffL & l >> (int) l_32_);
             if (i_34_ <= 0) break;
-            class348_sub1s[i_33_++] = (Class239_Sub14.aClass211Array5993[i_34_ + -1].aClass348_Sub1_2745);
+            class348_sub1s[i_33_++] = (Option_Sub14.aClass211Array5993[i_34_ + -1].aClass348_Sub1_2745);
         }
         for (int i_35_ = i_33_; i_35_ < 4; i_35_++)
             class348_sub1s[i_35_] = null;

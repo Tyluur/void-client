@@ -59,13 +59,13 @@ final class Class348_Sub42_Sub12 extends Class348_Sub42 {
 
     static final void method3231(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_) {
         if (i_7_ > -123) method3229(14);
-        Class239_Sub12.anInt5973 = i_5_;
+        Option_Sub12.anInt5973 = i_5_;
         Class121.anInt1797 = i_4_;
         Class352.anInt4336 = i_3_;
         Class367_Sub11.anInt7403 = i_6_;
         anInt9598++;
         Class281.anInt3647 = i;
-        if (Class239_Sub12.anInt5973 >= 100) {
+        if (Option_Sub12.anInt5973 >= 100) {
             int i_8_ = Class352.anInt4336 * 512 - -256;
             int i_9_ = Class281.anInt3647 * 512 - -256;
             int i_10_ = (Class275.method2064(i_8_, QuickChatPhraseTypeList.anInt4372, 11219, i_9_) + -Class121.anInt1797);

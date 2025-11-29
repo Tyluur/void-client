@@ -27,7 +27,7 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
         class348_sub45_sub1.anInt9725 = i_3_;
         class348_sub45_sub1.anInt9728 = i_1_;
         class348_sub45_sub1.anInt9729 = i;
-        class348_sub45_sub1.aLong9726 = Class62.method599(-115);
+        class348_sub45_sub1.aLong9726 = Class62.safeTime(-115);
         class348_sub45_sub1.anInt9727 = i_2_;
         if (bool) mouseDragged(null);
         aClass262_7420.method1999(class348_sub45_sub1, -20180);

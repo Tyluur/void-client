@@ -24,7 +24,7 @@ final class Class251 {
         Class367_Sub1.method3534(false, class46.anInt830, i_1_, bool, i_2_, (Class348_Sub40_Sub33.aClass46ArrayArray9427[(class46.anInt830 >> 16)]));
         if (class46.aClass46Array798 != null) Class367_Sub1.method3534(false, class46.anInt830, i_1_, bool, i_2_, class46.aClass46Array798);
         Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3480(class46.anInt830, -6008));
-        if (class348_sub41 != null) Class239_Sub3.method1728(i_2_, -1, (class348_sub41.anInt7050), bool, i_1_);
+        if (class348_sub41 != null) Option_Sub3.method1728(i_2_, -1, (class348_sub41.anInt7050), bool, i_1_);
     }
 
     static final int method1914(int i, int i_3_) {

@@ -25,9 +25,9 @@ final class Class369_Sub2 extends Class369 {
         if (i_0_ != -23) return null;
         Class137 class137 = null;
         if (Class299_Sub2.aClass78_6328 != null) class137 = new Class137(index, Class299_Sub2.aClass78_6328, Class100.aClass78Array1579[index], 1000000);
-        Class13.aClass314_Sub1Array223[index] = Class175.aClass340_2327.method2673(class137, index, Class277.aClass137_3568, 255);
-        Class13.aClass314_Sub1Array223[index].method2346(27872);
-        return new Index(Class13.aClass314_Sub1Array223[index], bool, i_1_);
+        Class13.js5ResourceProviders[index] = Class175.js5MasterIndex.method2673(class137, index, Class277.aClass137_3568, 255);
+        Class13.js5ResourceProviders[index].method2346(27872);
+        return new Index(Class13.js5ResourceProviders[index], bool, i_1_);
     }
 
     Class369_Sub2(Class221 class221, Class341 class341, int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_) {

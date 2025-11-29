@@ -24,8 +24,8 @@ final class Class44 {
                 int[] is_5_ = {-1, 0, 0, 0, 0};
                 for (int i = 0; i < class237_sub1.anInt3130; i++) {
                     Class369_Sub1.method3570(false);
-                    for (int i_6_ = 0; (Class367_Sub4.anInt7319 >> 3 > i_6_); i_6_++) {
-                        for (int i_7_ = 0; i_7_ < Class348_Sub40_Sub3.anInt9109 >> 3; i_7_++) {
+                    for (int i_6_ = 0; (Class367_Sub4.mapLength >> 3 > i_6_); i_6_++) {
+                        for (int i_7_ = 0; i_7_ < Class348_Sub40_Sub3.mapWidth >> 3; i_7_++) {
                             int i_8_ = (Class62.anIntArrayArrayArray1116[i][i_6_][i_7_]);
                             if (i_8_ != -1) {
                                 int i_9_ = i_8_ >> 24 & 0x3;
@@ -37,7 +37,7 @@ final class Class44 {
                                     for (int i_14_ = 0; i_14_ < (Class348_Sub23_Sub3.mapRegionIds).length; i_14_++) {
                                         if ((i_13_ == (Class348_Sub23_Sub3.mapRegionIds[i_14_])) && is[i_14_] != null) {
                                             Class348_Sub49 class348_sub49 = new Class348_Sub49(is[i_14_]);
-                                            class237_sub1.method1684(i_6_ * 8, i, -1, class348_sub49, i_12_, 8 * i_7_, i_11_, (Class348_Sub45.aClass361Array7108), i_10_, i_9_);
+                                            class237_sub1.method1684(i_6_ * 8, i, -1, class348_sub49, i_12_, 8 * i_7_, i_11_, (Class348_Sub45.collisionMaps), i_10_, i_9_);
                                             class237_sub1.method1696(class348_sub49, false, i_12_, i_11_, 8 * i_6_, i, i_10_, 8 * i_7_, Class348_Sub8.aHa6654, is_5_[0] != -1 ? null : is_5_, i_9_);
                                             break;
                                         }
@@ -49,8 +49,8 @@ final class Class44 {
                 }
                 for (int i = 0; class237_sub1.anInt3130 > i; i++) {
                     Class369_Sub1.method3570(false);
-                    for (int i_15_ = 0; (i_15_ < Class367_Sub4.anInt7319 >> 3); i_15_++) {
-                        for (int i_16_ = 0; (i_16_ < Class348_Sub40_Sub3.anInt9109 >> 3); i_16_++) {
+                    for (int i_15_ = 0; (i_15_ < Class367_Sub4.mapLength >> 3); i_15_++) {
+                        for (int i_16_ = 0; (i_16_ < Class348_Sub40_Sub3.mapWidth >> 3); i_16_++) {
                             int i_17_ = (Class62.anIntArrayArrayArray1116[i][i_15_][i_16_]);
                             if (i_17_ == -1) class237_sub1.method1678(i_15_ * 8, 8, i_16_ * 8, -100, 8, i);
                         }
@@ -92,8 +92,8 @@ final class Class44 {
                     class318_sub1_sub5.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226[i_21_];
                     Class250.aClass318_Sub1Array3226[i_21_] = class318_sub1_sub5;
                 } else {
-                    class318_sub1_sub5.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293[i_21_];
-                    Class348.aClass318_Sub1Array4293[i_21_] = class318_sub1_sub5;
+                    class318_sub1_sub5.aClass318_Sub1_6379 = Node.aClass318_Sub1Array4293[i_21_];
+                    Node.aClass318_Sub1Array4293[i_21_] = class318_sub1_sub5;
                     Class348_Sub16_Sub2.aBoolean8870 = true;
                 }
             } else {
@@ -106,8 +106,8 @@ final class Class44 {
                         class318_sub1_sub5_20_.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226[i_21_];
                         Class250.aClass318_Sub1Array3226[i_21_] = class318_sub1_sub5_20_;
                     } else {
-                        class318_sub1_sub5_20_.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293[i_21_];
-                        Class348.aClass318_Sub1Array4293[i_21_] = class318_sub1_sub5_20_;
+                        class318_sub1_sub5_20_.aClass318_Sub1_6379 = Node.aClass318_Sub1Array4293[i_21_];
+                        Node.aClass318_Sub1Array4293[i_21_] = class318_sub1_sub5_20_;
                         Class348_Sub16_Sub2.aBoolean8870 = true;
                     }
                 } else {

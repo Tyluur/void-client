@@ -19,6 +19,6 @@ final class Class11 {
         if (i_0_ != 4) anInt194 = -100;
         int[] is = new int[4];
         Class214.method1579(is, 0, is.length, i);
-        Class239_Sub16.method1791(23946, is, i_1_, player);
+        Option_Sub16.method1791(23946, is, i_1_, player);
     }
 }

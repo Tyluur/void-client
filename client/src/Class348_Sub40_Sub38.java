@@ -8,7 +8,7 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
     private int anInt9470 = 4096;
     static Class304 aClass304_9471 = new Class304(1);
     static int anInt9472;
-    static int anInt9473;
+    static int nameIconsGroup;
     private int anInt9474 = 0;
     static Class74 aClass74_9475 = new Class74(12, 7);
     static int anInt9476;

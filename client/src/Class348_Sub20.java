@@ -6,7 +6,7 @@ import jaclib.memory.Stream;
 import jaclib.memory.heap.NativeHeapBuffer;
 import jaggl.OpenGL;
 
-final class Class348_Sub20 extends Class348 {
+final class Class348_Sub20 extends Node {
     int anInt6825;
     int anInt6826;
     static int anInt6827;
@@ -46,7 +46,7 @@ final class Class348_Sub20 extends Class348 {
     static final void method2947(boolean bool, int i, int i_4_, int i_5_, int i_6_, int i_7_) {
         anInt6837++;
         if (bool != true) method2950(121);
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub26_7272.method1838(-32350) != 0 && i_5_ != 0 && Class147.anInt2021 < 50 && i_4_ != -1) Class258_Sub2.aClass10Array8531[Class147.anInt2021++] = new Class10((byte) 1, i_4_, i_5_, i_6_, i, 0, i_7_, null);
+        if (Class316.clientOptions.aClass239_Sub26_7272.method1838(-32350) != 0 && i_5_ != 0 && Class147.anInt2021 < 50 && i_4_ != -1) Class258_Sub2.aClass10Array8531[Class147.anInt2021++] = new Class10((byte) 1, i_4_, i_5_, i_6_, i, 0, i_7_, null);
     }
 
     final void method2948(int i, int i_8_, int[] is) {

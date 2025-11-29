@@ -2,14 +2,14 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class348_Sub45 extends Class348 {
+abstract class Class348_Sub45 extends Node {
     static int anInt7102 = 1400;
     static Class304 aClass304_7103 = new Class304(3);
     static int anInt7104;
     static Class114 aClass114_7105 = new Class114(101, 20);
     static Class114 aClass114_7106 = new Class114(36, -2);
     static Sprite[] aSpriteArray7107;
-    static Class361[] aClass361Array7108 = new Class361[4];
+    static Class361[] collisionMaps = new Class361[4];
 
     abstract int method3308(byte i);
 
@@ -24,7 +24,7 @@ abstract class Class348_Sub45 extends Class348 {
         Class50_Sub1.aBoolean5226 = false;
         Class147.aClass338Array2034 = new Class338[500];
         Class69.anInt1200 = 0;
-        Class239_Sub26.anInt6115 = 0;
+        Option_Sub26.anInt6115 = 0;
         Class294.aClass338Array5060 = new Class338[1000];
         if (i > -113) aClass304_7103 = null;
         Class348_Sub42_Sub10.anInt9577 = 0;
@@ -50,7 +50,7 @@ abstract class Class348_Sub45 extends Class348 {
         aClass114_7106 = null;
         if (i != 5) method3313(-103, null);
         aClass114_7105 = null;
-        aClass361Array7108 = null;
+        collisionMaps = null;
         aSpriteArray7107 = null;
         aClass304_7103 = null;
     }

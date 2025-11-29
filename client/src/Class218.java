@@ -19,16 +19,16 @@ final class Class218 {
 
     static final void method1591(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_) {
         anInt2855++;
-        if (i >= 1 && i_5_ >= 1 && -2 + Class367_Sub4.anInt7319 >= i && i_5_ <= -2 + Class348_Sub40_Sub3.anInt9109) {
+        if (i >= 1 && i_5_ >= 1 && -2 + Class367_Sub4.mapLength >= i && i_5_ <= -2 + Class348_Sub40_Sub3.mapWidth) {
             int i_8_ = i_7_;
             if (i_8_ < 3 && NPCDefinition.method802(i_5_, i, true)) i_8_++;
-            if ((Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 0 && !Class58.method536(i_5_, false, i, Class167.anInt2204, i_8_)) || Class147.aClass357ArrayArrayArray2029 == null) return;
-            Class338.aClass237_Sub1_4197.method1694((Class348_Sub45.aClass361Array7108[i_7_]), i_1_, i_7_, Class348_Sub8.aHa6654, i, i_5_, (byte) 106);
+            if ((Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 0 && !Class58.method536(i_5_, false, i, Class167.anInt2204, i_8_)) || Class147.aClass357ArrayArrayArray2029 == null) return;
+            Class338.aClass237_Sub1_4197.method1694((Class348_Sub45.collisionMaps[i_7_]), i_1_, i_7_, Class348_Sub8.aHa6654, i, i_5_, (byte) 106);
             if (i_3_ >= 0) {
-                int i_9_ = Class316.aClass348_Sub51_3959.aClass239_Sub4_7220.method1737(-32350);
-                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub4_7220), 1);
-                Class338.aClass237_Sub1_4197.method1689(i, i_7_, i_3_, Class348_Sub8.aHa6654, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (Class348_Sub45.aClass361Array7108[i_7_]));
-                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub4_7220), i_9_);
+                int i_9_ = Class316.clientOptions.aClass239_Sub4_7220.method1737(-32350);
+                Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub4_7220), 1);
+                Class338.aClass237_Sub1_4197.method1689(i, i_7_, i_3_, Class348_Sub8.aHa6654, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (Class348_Sub45.collisionMaps[i_7_]));
+                Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub4_7220), i_9_);
             }
         }
         if (i_0_ < 12) aClass262_2859 = null;
@@ -38,8 +38,8 @@ final class Class218 {
         anInt2849++;
         int i_13_ = (player.anIntArray10320[0]);
         int i_14_ = (player.anIntArray10317[0]);
-        if (i_13_ >= 0 && Class367_Sub4.anInt7319 > i_13_ && i_14_ >= 0 && i_14_ < Class348_Sub40_Sub3.anInt9109 && (i_12_ >= 0 && i_12_ < Class367_Sub4.anInt7319 && i_10_ >= 0 && Class348_Sub40_Sub3.anInt9109 > i_10_)) {
-            int i_15_ = (Class59_Sub2_Sub2.method574(i_12_, player.method2436((byte) 62), 0, Class348_Sub40_Sub11.anIntArray9185, true, (byte) 120, -4, i_13_, i_14_, Class348_Sub42_Sub14.anIntArray9626, i_10_, (Class348_Sub45.aClass361Array7108[(player.plane)]), 0, 0, 0));
+        if (i_13_ >= 0 && Class367_Sub4.mapLength > i_13_ && i_14_ >= 0 && i_14_ < Class348_Sub40_Sub3.mapWidth && (i_12_ >= 0 && i_12_ < Class367_Sub4.mapLength && i_10_ >= 0 && Class348_Sub40_Sub3.mapWidth > i_10_)) {
+            int i_15_ = (Class59_Sub2_Sub2.method574(i_12_, player.method2436((byte) 62), 0, Class348_Sub40_Sub11.anIntArray9185, true, (byte) 120, -4, i_13_, i_14_, Class348_Sub42_Sub14.anIntArray9626, i_10_, (Class348_Sub45.collisionMaps[(player.plane)]), 0, 0, 0));
             if (i_15_ >= 1) {
                 if (i_11_ != 4) aClass262_2859 = null;
                 if (i_15_ <= 3) {

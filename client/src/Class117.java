@@ -37,10 +37,10 @@ final class Class117 {
             this.aClass356_1767 = new Class356(EnumTypeList.method340(i_1_, (byte) 108));
             for (int i_2_ = 0; i_2_ < i_1_; i_2_++) {
                 int i_3_ = class348_sub49.readInt((byte) -126);
-                Class348 class348;
-                if (i_0_ != 5) class348 = new Class348_Sub35(class348_sub49.readInt((byte) -126));
-                else class348 = new Class348_Sub50(class348_sub49.readString((byte) -35));
-                this.aClass356_1767.method3483((byte) 21, i_3_, class348);
+                Node node;
+                if (i_0_ != 5) node = new Class348_Sub35(class348_sub49.readInt((byte) -126));
+                else node = new Class348_Sub50(class348_sub49.readString((byte) -35));
+                this.aClass356_1767.method3483((byte) 21, i_3_, node);
             }
         }
         anInt1765++;
@@ -104,7 +104,7 @@ final class Class117 {
 
     static final void method1072(Index index, byte i) {
         if (i >= -91) method1070((byte) -93, 92);
-        Class239_Sub12.aIndex_5964 = index;
+        Option_Sub12.aIndex_5964 = index;
         anInt1771++;
     }
 

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class195 implements Interface16 {
+final class Class195 implements LoadingScreen {
     static int anInt5003;
     static int anInt5004;
     static int anInt5005;
@@ -82,24 +82,24 @@ final class Class195 implements Interface16 {
         try {
             anInt5005++;
             if (i < 30) method1449(-81, 10, -115);
-            return l - -(long) aClass287_5006.anInt3690 <= Class62.method599(-97);
+            return l - -(long) aClass287_5006.anInt3690 <= Class62.safeTime(-97);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "qt.I(" + i + ',' + l + ')');
         }
     }
 
-    Class195(Class287 class287, Class106 class106) {
+    Class195(Class287 class287, LoadingScreenOpFactory loadingScreenOpFactory) {
         try {
             aClass287_5006 = class287;
             anInterface1Array5012 = new Interface1[(aClass287_5006.anInterface12Array3688).length];
             for (int i = 0; (i < anInterface1Array5012.length); i++)
-                anInterface1Array5012[i] = class106.method1000(true, (aClass287_5006.anInterface12Array3688[i]));
+                anInterface1Array5012[i] = loadingScreenOpFactory.method1000(true, (aClass287_5006.anInterface12Array3688[i]));
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qt.<init>(" + (class287 != null ? "{...}" : "null") + ',' + (class106 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qt.<init>(" + (class287 != null ? "{...}" : "null") + ',' + (loadingScreenOpFactory != null ? "{...}" : "null") + ')'));
         }
     }
 
-    public final int method60(int i) {
+    public final int percentage(int i) {
         if (i != -19079) method58(false, 116);
         anInt5014++;
         int i_4_ = 0;

@@ -275,10 +275,10 @@ final class s_Sub3 extends s {
                                     f_103_ = ((f_103_ * (!(f_103_ > 0.0F) ? (this.aHa_Sub3_8322.aFloat8186) : (this.aHa_Sub3_8322.aFloat8174))) + (this.aHa_Sub3_8322.aFloat8093));
                                 }
                             }
-                            Class348 class348 = null;
-                            if ((i_79_ & anInt8311 - 1) == 0 && (-1 + anInt8311 & i_80_) == 0) class348 = class356.method3480(l, -6008);
+                            Node node = null;
+                            if ((i_79_ & anInt8311 - 1) == 0 && (-1 + anInt8311 & i_80_) == 0) node = class356.method3480(l, -6008);
                             int i_105_;
-                            if (class348 == null) {
+                            if (node == null) {
                                 int i_106_;
                                 if (i_84_ != i_83_) {
                                     int i_107_ = (0x7f & i_84_) * i_88_ >> 7;
@@ -338,7 +338,7 @@ final class s_Sub3 extends s {
                                 if (i_83_ != -1) class348_sub3s_47_[i_105_] = class348_sub3s_52_[i_78_];
                                 class356.method3483((byte) 108, l, new Class348_Sub29(is_77_[i_78_]));
                             } else {
-                                is_77_[i_78_] = ((Class348_Sub29) class348).aShort6911;
+                                is_77_[i_78_] = ((Class348_Sub29) node).aShort6911;
                                 i_105_ = 0xffff & is_77_[i_78_];
                                 if (i_83_ != -1 && (class348_sub3s_47_[i_105_].aLong4291 > class348_sub3s_52_[i_78_].aLong4291)) class348_sub3s_47_[i_105_] = class348_sub3s_52_[i_78_];
                             }
@@ -546,8 +546,8 @@ final class s_Sub3 extends s {
                     this.aHa_Sub3_8322.method3874(Class328_Sub3.aClass229_6519, 116, Class167.aClass229_2207);
                     this.aHa_Sub3_8322.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
                     this.aHa_Sub3_8322.method3885(0, true, Class285_Sub2.aClass70_8503);
-                    for (Class348 class348 = aClass262_8286.method1995(i_151_ + 5); class348 != null; class348 = aClass262_8286.method1990((byte) 106)) {
-                        Class348_Sub38 class348_sub38 = (Class348_Sub38) class348;
+                    for (Node node = aClass262_8286.method1995(i_151_ + 5); node != null; node = aClass262_8286.method1990((byte) 106)) {
+                        Class348_Sub38 class348_sub38 = (Class348_Sub38) node;
                         class348_sub38.method3032(i_149_, i_153_, bools, false, i);
                     }
                     this.aHa_Sub3_8322.method3849((byte) 47, 0, Class342.aClass70_4247);
@@ -596,15 +596,15 @@ final class s_Sub3 extends s {
                     i_179_ = -1;
                 }
                 long l = (long) i_179_ | ((long) (i_180_ << 14) | ((long) i_176_ << 42 | (long) i_177_ << 48 | (long) i_175_ << 28));
-                Class348 class348;
-                for (class348 = aClass356_8325.method3480(l, -6008); class348 != null; class348 = aClass356_8325.method3476(true)) {
-                    Class348_Sub3 class348_sub3 = (Class348_Sub3) class348;
+                Node node;
+                for (node = aClass356_8325.method3480(l, -6008); node != null; node = aClass356_8325.method3476(true)) {
+                    Class348_Sub3 class348_sub3 = (Class348_Sub3) node;
                     if (i_179_ == class348_sub3.anInt6567 && (class348_sub3.aFloat6582 == (float) i_180_) && i_175_ == class348_sub3.anInt6571 && class348_sub3.anInt6575 == i_176_ && class348_sub3.anInt6569 == i_177_) break;
                 }
-                if (class348 == null) {
+                if (node == null) {
                     class348_sub3s[i_178_] = new Class348_Sub3(this, i_179_, i_180_, i_175_, i_176_, i_177_);
                     aClass356_8325.method3483((byte) 27, l, class348_sub3s[i_178_]);
-                } else class348_sub3s[i_178_] = (Class348_Sub3) class348;
+                } else class348_sub3s[i_178_] = (Class348_Sub3) node;
             }
             if (bool) aByteArrayArray8317[i][i_167_] = (byte) Class273.method2057((aByteArrayArray8317[i][i_167_]), 1);
             if (is_171_.length > anInt8331) anInt8331 = is_171_.length;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub12 extends Class348 {
+final class Class348_Sub12 extends Node {
     static int anInt6734;
     int anInt6735;
     static short[][][] aShortArrayArrayArray6736;
@@ -59,7 +59,7 @@ final class Class348_Sub12 extends Class348 {
                 class348_sub27.anInt6904 = i_7_;
                 class348_sub27.anInt6896 = i_4_;
                 class348_sub27.anInt6905 = i_11_;
-                if (i_11_ >= 0 && i_4_ >= 0 && Class367_Sub4.anInt7319 > i_11_ && Class348_Sub40_Sub3.anInt9109 > i_4_) Class184.method1387(-69, class348_sub27);
+                if (i_11_ >= 0 && i_4_ >= 0 && Class367_Sub4.mapLength > i_11_ && Class348_Sub40_Sub3.mapWidth > i_4_) Class184.method1387(-69, class348_sub27);
                 Class348_Sub42_Sub20.aClass262_9711.method1999(class348_sub27, -20180);
             }
             class348_sub27.anInt6893 = i_5_;

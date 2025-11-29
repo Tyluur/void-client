@@ -80,7 +80,7 @@ final class Class348_Sub23_Sub4 extends Class348_Sub23 {
                     aFloat9048 = ((float) ((l - -l_4_) * (long) anInt9054) / (float) anInt9055);
                     int i_6_ = class348_sub49.method3359(-93);
                     if (i_6_ < 0 || i_6_ > (-class348_sub49.anInt7197 + (class348_sub49.aByteArray7154).length)) throw new IllegalStateException();
-                    aString9058 = (Class239_Sub17.method1793(class348_sub49.aByteArray7154, class348_sub49.anInt7197, -123, i_6_));
+                    aString9058 = (Option_Sub17.method1793(class348_sub49.aByteArray7154, class348_sub49.anInt7197, -123, i_6_));
                 }
                 if ((i_2_ | 0x80) != 0) return;
             }
@@ -118,7 +118,7 @@ final class Class348_Sub23_Sub4 extends Class348_Sub23 {
     }
 
     static final void method2988(boolean bool) {
-        Class60.aHa1098.xa(((float) Class316.aClass348_Sub51_3959.aClass239_Sub10_7232.method1764(-32350) * 0.1F + 0.7F) * Class160.aFloat2137);
+        Class60.aHa1098.xa(((float) Class316.clientOptions.aClass239_Sub10_7232.method1764(-32350) * 0.1F + 0.7F) * Class160.aFloat2137);
         anInt9049++;
         Class60.aHa1098.ZA(Class119_Sub1.anInt4703, Js5TextureSource.aFloat4626, Class361.aFloat4455, (float) (Class21.anInt325 << 2), (float) (Class318_Sub1_Sub3_Sub1.anInt10023 << 2), (float) (Class196.anInt2601 << 2));
         Class60.aHa1098.method3653(Class158.aClass299_4938);

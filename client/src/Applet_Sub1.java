@@ -80,7 +80,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final void stop() {
         anInt24++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L;
+        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.safeTime(-73) - -4000L;
     }
 
     public final String getParameter(String string) {
@@ -132,7 +132,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     private final void method84(int i) {
         anInt8++;
-        long l = Class62.method599(i + -88);
+        long l = Class62.safeTime(i + -88);
         long l_1_ = Class328_Sub2_Sub1.aLongArray8800[Js5TextureSource.anInt4613];
         Class328_Sub2_Sub1.aLongArray8800[Js5TextureSource.anInt4613] = l;
         Js5TextureSource.anInt4613 = 0x1f & 1 + Js5TextureSource.anInt4613;
@@ -210,7 +210,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         Class175.aBoolean2329 = true;
         Class49.aBoolean4726 = true;
         Class203.aBoolean2674 = false;
-        Class348_Sub12.aLong6748 = Class62.method599(-106);
+        Class348_Sub12.aLong6748 = Class62.safeTime(-106);
     }
 
     public final void windowOpened(WindowEvent windowevent) {
@@ -221,7 +221,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         anInt18++;
         if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) {
             Class49.aBoolean4726 = true;
-            if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
+            if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.safeTime(-57) > 1000) {
                 Rectangle rectangle = graphics.getClipBounds();
                 if (rectangle == null || (rectangle.width >= Class272.anInt3473 && (Class348_Sub22.anInt6857 <= rectangle.height))) Class203.aBoolean2674 = true;
             }
@@ -230,12 +230,12 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     private final void method88(int i) {
         anInt2++;
-        long l = Class62.method599(-119);
+        long l = Class62.safeTime(-119);
         long l_2_ = Class348_Sub49.aLongArray7206[Class152.anInt2071];
         Class348_Sub49.aLongArray7206[Class152.anInt2071] = l;
         if (l_2_ != 0L && l_2_ < l) {
             int i_3_ = (int) (l - l_2_);
-            Class239_Sub5.anInt5891 = (32000 + (i_3_ >> 1)) / i_3_;
+            Option_Sub5.anInt5891 = (32000 + (i_3_ >> 1)) / i_3_;
         }
         Class152.anInt2071 = Class152.anInt2071 - -1 & 0x1f;
         if (Class159.anInt2127++ > 50) {
@@ -358,7 +358,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     public final void destroy() {
         anInt21++;
         if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == this && !Class26.aBoolean384) {
-            Class113.aLong1739 = Class62.method599(-108);
+            Class113.aLong1739 = Class62.safeTime(-108);
             Class286_Sub5.method2161((byte) 77, 5000L);
             Class231.aClass297_2993 = null;
             method90(false, false);
@@ -408,7 +408,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
                 method87((byte) -97);
                 method92(28740);
                 Class348_Sub8.tickScheduler = Class229.method1631(false);
-                while (Class113.aLong1739 == 0L || (Class62.method599(-124) < Class113.aLong1739)) {
+                while (Class113.aLong1739 == 0L || (Class62.safeTime(-124) < Class113.aLong1739)) {
                     Class101_Sub2.anInt5744 = Class348_Sub8.tickScheduler.method1861(0, Class73.aLong4783);
                     for (int i = 0; Class101_Sub2.anInt5744 > i; i++)
                         method84(-1);
@@ -431,7 +431,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     static final void method94(String string, int i) {
         anInt6++;
         if (Class286_Sub1.aStringArray6200 == null) Class14_Sub3.method249(2);
-        Class286_Sub3.aCalendar6221.setTime(new Date(Class62.method599(-102)));
+        Class286_Sub3.aCalendar6221.setTime(new Date(Class62.safeTime(-102)));
         int i_8_ = Class286_Sub3.aCalendar6221.get(11);
         int i_9_ = Class286_Sub3.aCalendar6221.get(12);
         int i_10_ = Class286_Sub3.aCalendar6221.get(13);
@@ -472,8 +472,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
                 if (i_19_ != 50) anInt37 = -13;
                 while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) -126, 10L);
             } else {
-                Class348_Sub51.anInt7252++;
-                if (Class348_Sub51.anInt7252 >= 3) method82(112, "alreadyloaded");
+                ClientOptions.anInt7252++;
+                if (ClientOptions.anInt7252 >= 3) method82(112, "alreadyloaded");
                 else getAppletContext().showDocument(getDocumentBase(), "_self");
             }
         } catch (Throwable throwable) {

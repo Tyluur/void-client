@@ -37,7 +37,7 @@ final class Canvas_Sub1 extends Canvas {
                 Class130_Sub1.anInt5799 += i_3_;
             }
             if (i == -1) {
-                Class314.aFloat3938 += Class205.aFloat2687 * (float) l / 6.0F;
+                ResourceProvider.aFloat3938 += Class205.aFloat2687 * (float) l / 6.0F;
                 if (i_1_ != Class192.anInt2578) {
                     int i_4_ = i_1_ - Class192.anInt2578;
                     int i_5_ = (int) ((long) i_4_ * l / 320L);
@@ -51,7 +51,7 @@ final class Canvas_Sub1 extends Canvas {
                     Class192.anInt2578 += i_5_;
                 }
                 Class76.aFloat1287 += Class348_Sub27.aFloat6898 * (float) l / 6.0F;
-                Class239_Sub2.method1725(262144);
+                Option_Sub2.method1725(262144);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "vg.A(" + i + ',' + l + ')');
@@ -135,7 +135,7 @@ final class Canvas_Sub1 extends Canvas {
                 }
             }
             if (Applet_Sub1.mapLocations[i_19_] != -1 && Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
-                Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.MAPS.method393(Applet_Sub1.mapLocations[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
+                Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.MAPS.method393(Applet_Sub1.mapLocations[i_19_], 0, i + 2, Option_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
                     FloorOverlayTypeList.anInt3441++;
                     bool = false;
@@ -156,7 +156,7 @@ final class Canvas_Sub1 extends Canvas {
                 }
             }
             if (Class322.mapNpcs != null && Class348_Sub50.aByteArrayArray7212[i_19_] == null && Class322.mapNpcs[i_19_] != -1) {
-                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.MAPS.method393(Class322.mapNpcs[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
+                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.MAPS.method393(Class322.mapNpcs[i_19_], 0, i + 2, Option_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class348_Sub50.aByteArrayArray7212[i_19_] == null) {
                     bool = false;
                     FloorOverlayTypeList.anInt3441++;
@@ -185,7 +185,7 @@ final class Canvas_Sub1 extends Canvas {
                         i_22_ = 10;
                         i_21_ = 10;
                     }
-                    bool &= Class348_Sub41.method3154(Class367_Sub4.anInt7319, i_21_, (Class348_Sub40_Sub3.anInt9109), i_22_, is, (byte) 39);
+                    bool &= Class348_Sub41.method3154(Class367_Sub4.mapLength, i_21_, (Class348_Sub40_Sub3.mapWidth), i_22_, is, (byte) 39);
                 }
                 is = Class348_Sub23_Sub1.aByteArrayArray8996[i_20_];
                 if (is != null) {
@@ -195,16 +195,16 @@ final class Canvas_Sub1 extends Canvas {
                         i_24_ = 10;
                         i_23_ = 10;
                     }
-                    bool &= Class348_Sub41.method3154(Class367_Sub4.anInt7319, i_23_, (Class348_Sub40_Sub3.anInt9109), i_24_, is, (byte) 39);
+                    bool &= Class348_Sub41.method3154(Class367_Sub4.mapLength, i_23_, (Class348_Sub40_Sub3.mapWidth), i_24_, is, (byte) 39);
                 }
             }
             if (bool) {
                 if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3495.method2063(Class348_Sub33.language, 544)) + "<br>(100%)"), 2, Class348_Sub8.aHa6654);
                 Class369_Sub1.method3570(false);
                 Class348_Sub18.method2938((byte) 102);
-                Class239_Sub12.method1772(i ^ 0x41);
+                Option_Sub12.method1772(i ^ 0x41);
                 boolean bool_25_ = false;
-                if (Class348_Sub8.aHa6654.method3639() && Class316.aClass348_Sub51_3959.aClass239_Sub18_7259.method1800(-32350) == 2) {
+                if (Class348_Sub8.aHa6654.method3639() && Class316.clientOptions.aClass239_Sub18_7259.method1800(-32350) == 2) {
                     for (int i_26_ = 0; (i_26_ < Class347.aByteArrayArray4281.length); i_26_++) {
                         if ((Class348_Sub23_Sub1.aByteArrayArray8996[i_26_] != null) || Class129.aByteArrayArray1887[i_26_] != null) {
                             bool_25_ = true;
@@ -213,15 +213,15 @@ final class Canvas_Sub1 extends Canvas {
                     }
                 }
                 int i_27_;
-                if (Class316.aClass348_Sub51_3959.aClass239_Sub16_7247.method1789(-32350) != 1) i_27_ = Class9.anIntArray168[Class348_Sub15.anInt6769];
+                if (Class316.clientOptions.aClass239_Sub16_7247.method1789(-32350) != 1) i_27_ = Class9.anIntArray168[Class348_Sub15.anInt6769];
                 else i_27_ = (Class286_Sub8.anIntArray6296[Class348_Sub15.anInt6769]);
                 if (Class348_Sub8.aHa6654.method3670()) i_27_++;
-                Class348_Sub42_Sub2.method3171(Class348_Sub8.aHa6654, Class239_Sub16.anInt6012, 9, 4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, i_27_, bool_25_, Class348_Sub8.aHa6654.method3704() > 0);
+                Class348_Sub42_Sub2.method3171(Class348_Sub8.aHa6654, Option_Sub16.anInt6012, 9, 4, Class367_Sub4.mapLength, Class348_Sub40_Sub3.mapWidth, i_27_, bool_25_, Class348_Sub8.aHa6654.method3704() > 0);
                 Class348_Sub32.method3018(Class318_Sub1_Sub4_Sub2.anInt10096);
                 if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(Class240.aFontRenderer_4684);
                 else Class348_Sub48.method3328(null);
                 for (int i_28_ = 0; i_28_ < 4; i_28_++)
-                    Class348_Sub45.aClass361Array7108[i_28_].method3500(i ^ 0x2bc);
+                    Class348_Sub45.collisionMaps[i_28_].method3500(i ^ 0x2bc);
                 Class52.method491((byte) -86);
                 Class101_Sub2.method921((byte) 99, false);
                 ha_Sub3.method3936(i + i);
@@ -231,21 +231,21 @@ final class Canvas_Sub1 extends Canvas {
                 System.gc();
                 Class289.method2193(true, (byte) -128);
                 Class36.method354(2);
-                Class291.anInt3720 = Class316.aClass348_Sub51_3959.aClass239_Sub7_7238.method1748(-32350);
+                Class291.anInt3720 = Class316.clientOptions.aClass239_Sub7_7238.method1748(-32350);
                 Class296.aBoolean3767 = QuickChatCatTypeList.anInt2964 >= 96;
-                Class369.aBoolean4972 = Class316.aClass348_Sub51_3959.aClass239_Sub18_7259.method1800(-32350) == 2;
-                Class186.aBoolean2492 = Class316.aClass348_Sub51_3959.aClass239_Sub28_7230.method1845(i + -32350) == 1;
-                OutputStream_Sub2.anInt101 = Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 1 ? -1 : Class167.anInt2204;
-                IOException_Sub1.aBoolean86 = Class316.aClass348_Sub51_3959.aClass239_Sub9_7256.method1759(-32350) == 1;
-                Class47.aBoolean845 = Class316.aClass348_Sub51_3959.aClass239_Sub24_7235.method1820(i ^ ~0x7e5d) == 1;
-                Class338.aClass237_Sub1_4197 = new Class237_Sub1(4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, false);
+                Class369.aBoolean4972 = Class316.clientOptions.aClass239_Sub18_7259.method1800(-32350) == 2;
+                Class186.aBoolean2492 = Class316.clientOptions.aClass239_Sub28_7230.method1845(i + -32350) == 1;
+                OutputStream_Sub2.anInt101 = Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1 ? -1 : Class167.anInt2204;
+                IOException_Sub1.aBoolean86 = Class316.clientOptions.aClass239_Sub9_7256.method1759(-32350) == 1;
+                Class47.aBoolean845 = Class316.clientOptions.aClass239_Sub24_7235.method1820(i ^ ~0x7e5d) == 1;
+                Class338.aClass237_Sub1_4197 = new Class237_Sub1(4, Class367_Sub4.mapLength, Class348_Sub40_Sub3.mapWidth, false);
                 if (Class312.anInt3931 != 0) Class44.method385(false, Class338.aClass237_Sub1_4197, Class347.aByteArrayArray4281);
                 else Class348_Sub1_Sub1.method2727((byte) -65, Class338.aClass237_Sub1_4197, (Class347.aByteArrayArray4281));
-                Class108.method1015(Class367_Sub4.anInt7319 >> 4, (Class348_Sub40_Sub3.anInt9109 >> 4), true);
+                Class108.method1015(Class367_Sub4.mapLength >> 4, (Class348_Sub40_Sub3.mapWidth >> 4), true);
                 Class348_Sub42_Sub3.method3175((byte) -77);
                 if (bool_25_) {
                     Class243.method1879(true);
-                    TimedVarDomain.aClass237_Sub1_5067 = new Class237_Sub1(1, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, true);
+                    TimedVarDomain.aClass237_Sub1_5067 = new Class237_Sub1(1, Class367_Sub4.mapLength, Class348_Sub40_Sub3.mapWidth, true);
                     if (Class312.anInt3931 == 0) {
                         Class348_Sub1_Sub1.method2727((byte) -44, (TimedVarDomain.aClass237_Sub1_5067), (Class129.aByteArrayArray1887));
                         Class289.method2193(true, (byte) -119);
@@ -257,7 +257,7 @@ final class Canvas_Sub1 extends Canvas {
                     TimedVarDomain.aClass237_Sub1_5067.method1685(Class348_Sub8.aHa6654, null, 21407, null);
                     Class243.method1879(false);
                 }
-                Class338.aClass237_Sub1_4197.method1685(Class348_Sub8.aHa6654, (!bool_25_ ? null : (TimedVarDomain.aClass237_Sub1_5067.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108);
+                Class338.aClass237_Sub1_4197.method1685(Class348_Sub8.aHa6654, (!bool_25_ ? null : (TimedVarDomain.aClass237_Sub1_5067.anIntArrayArrayArray3122)), 21407, Class348_Sub45.collisionMaps);
                 if (Class312.anInt3931 == 0) {
                     Class289.method2193(true, (byte) -128);
                     Class122.method1090(Class14_Sub4.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197);
@@ -288,11 +288,11 @@ final class Canvas_Sub1 extends Canvas {
                 int i_29_ = Class338.aClass237_Sub1_4197.anInt5824;
                 if (i_29_ > QuickChatPhraseTypeList.anInt4372) i_29_ = QuickChatPhraseTypeList.anInt4372;
                 if (i_29_ < -1 + QuickChatPhraseTypeList.anInt4372) i_29_ = QuickChatPhraseTypeList.anInt4372 - 1;
-                if (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 0) SkyBoxTypeList.method824(i_29_);
+                if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 0) SkyBoxTypeList.method824(i_29_);
                 else SkyBoxTypeList.method824(0);
                 for (int i_30_ = 0; i_30_ < 4; i_30_++) {
-                    for (int i_31_ = 0; Class367_Sub4.anInt7319 > i_31_; i_31_++) {
-                        for (int i_32_ = 0; Class348_Sub40_Sub3.anInt9109 > i_32_; i_32_++)
+                    for (int i_31_ = 0; Class367_Sub4.mapLength > i_31_; i_31_++) {
+                        for (int i_32_ = 0; Class348_Sub40_Sub3.mapWidth > i_32_; i_32_++)
                             Class203.method1479(i_32_, (byte) -126, i_31_, i_30_);
                     }
                 }
@@ -308,10 +308,10 @@ final class Canvas_Sub1 extends Canvas {
                     Class348_Sub42_Sub14.method3243(-122, class348_sub47);
                 }
                 if (Class312.anInt3931 == 0) {
-                    int i_33_ = ((ha.anInt4581 + -(Class367_Sub4.anInt7319 >> 4)) / 8);
-                    int i_34_ = ((ha.anInt4581 - -(Class367_Sub4.anInt7319 >> 4)) / 8);
-                    int i_35_ = ((Class327.anInt4095 + -(Class348_Sub40_Sub3.anInt9109 >> 4)) / 8);
-                    int i_36_ = (((Class348_Sub40_Sub3.anInt9109 >> 4) + Class327.anInt4095) / 8);
+                    int i_33_ = ((ha.anInt4581 + -(Class367_Sub4.mapLength >> 4)) / 8);
+                    int i_34_ = ((ha.anInt4581 - -(Class367_Sub4.mapLength >> 4)) / 8);
+                    int i_35_ = ((Class327.anInt4095 + -(Class348_Sub40_Sub3.mapWidth >> 4)) / 8);
+                    int i_36_ = (((Class348_Sub40_Sub3.mapWidth >> 4) + Class327.anInt4095) / 8);
                     for (int i_37_ = i_33_ - 1; i_37_ <= i_34_ - -1; i_37_++) {
                         for (int i_38_ = i_35_ + -1; i_38_ <= i_36_ - -1; i_38_++) {
                             if (i_33_ > i_37_ || i_34_ < i_37_ || i_38_ < i_35_ || i_38_ > i_36_) {
@@ -325,7 +325,7 @@ final class Canvas_Sub1 extends Canvas {
                     if (Class240.anInt4674 != 8) {
                         Class348_Sub49.method3379(2, 10);
                         if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class340.aClass351_4223), (Class348_Sub23_Sub2.aClass77_9029), -106);
+                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Js5MasterIndex.aClass351_4223), (Class348_Sub23_Sub2.aClass77_9029), -106);
                             Class348_Sub42_Sub14.method3243(127, class348_sub47);
                         }
                     } else Class348_Sub49.method3379(2, 7);
@@ -335,7 +335,7 @@ final class Canvas_Sub1 extends Canvas {
                 Class94.method867(true);
                 Class348_Sub16_Sub2.aBoolean8870 = true;
                 if (Class258_Sub4.aBoolean8558) {
-                    Applet_Sub1.method94(("Took: " + (Class62.method599(-117) + -Class90.aLong1516) + "ms"), i + 52);
+                    Applet_Sub1.method94(("Took: " + (Class62.safeTime(-117) + -Class90.aLong1516) + "ms"), i + 52);
                     Class258_Sub4.aBoolean8558 = false;
                 }
             } else Class36.anInt489 = 2;

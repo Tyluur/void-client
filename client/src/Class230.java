@@ -25,8 +25,8 @@ final class Class230 {
                     int i_20_ = i_18_;
                     int i_21_ = i_19_;
                     if (Class348_Sub49.anInt7207 == 1) {
-                        i_20_ = (int) ((double) i_18_ * (double) Class107.anInt1651 / (double) Class239_Sub16.anInt6008);
-                        i_21_ = (int) ((double) Class107.anInt1651 * (double) i_19_ / (double) Class239_Sub16.anInt6008);
+                        i_20_ = (int) ((double) i_18_ * (double) Class107.anInt1651 / (double) Option_Sub16.anInt6008);
+                        i_21_ = (int) ((double) Class107.anInt1651 * (double) i_19_ / (double) Option_Sub16.anInt6008);
                     }
                     if (!Class348_Sub16_Sub2.aBoolean8870) {
                         if (Class348_Sub49.anInt7207 == 1) Class43.method383(0);
@@ -40,8 +40,8 @@ final class Class230 {
                         int i_28_ = (Class348_Sub42_Sub9_Sub1.anInt10444 + i_26_ + -Class348_Sub3.anInt6568);
                         int i_29_ = Class59_Sub1.anInt5283 + i_27_;
                         int i_30_ = Class107.anInt1651 + i_28_;
-                        if ((i_27_ < 0 || i_28_ < 0 || i_29_ > Class348_Sub16_Sub1.anInt8854 || (i_30_ > Class239_Sub16.anInt6008)) && Class348_Sub49.anInt7207 != 2) {
-                            if (i_29_ <= 0 || i_30_ <= 0 || (Class348_Sub16_Sub1.anInt8854 <= i_27_) || (i_28_ >= Class239_Sub16.anInt6008)) Class348_Sub16_Sub2.aBoolean8870 = true;
+                        if ((i_27_ < 0 || i_28_ < 0 || i_29_ > Class348_Sub16_Sub1.anInt8854 || (i_30_ > Option_Sub16.anInt6008)) && Class348_Sub49.anInt7207 != 2) {
+                            if (i_29_ <= 0 || i_30_ <= 0 || (Class348_Sub16_Sub1.anInt8854 <= i_27_) || (i_28_ >= Option_Sub16.anInt6008)) Class348_Sub16_Sub2.aBoolean8870 = true;
                             else {
                                 int i_31_ = i_27_ - Class211.anInt2747;
                                 int i_32_ = (i_28_ - Class348_Sub42_Sub9_Sub1.anInt10444);
@@ -98,7 +98,7 @@ final class Class230 {
                                 int i_52_;
                                 int i_53_;
                                 if (i_34_ >= 0) {
-                                    i_50_ = Class239_Sub16.anInt6008 + -i_34_;
+                                    i_50_ = Option_Sub16.anInt6008 + -i_34_;
                                     i_48_ = 0;
                                     i_49_ = i_50_;
                                     i_51_ = i_34_;
@@ -113,7 +113,7 @@ final class Class230 {
                                 } else {
                                     i_48_ = -i_34_;
                                     i_49_ = 0;
-                                    i_50_ = Class239_Sub16.anInt6008 + i_34_;
+                                    i_50_ = Option_Sub16.anInt6008 + i_34_;
                                     i_51_ = i_48_;
                                     i_52_ = i_50_;
                                     i_53_ = i_51_;
@@ -143,7 +143,7 @@ final class Class230 {
                                             int i_61_ = -i_60_ + (Math.min(i_58_, i_56_));
                                             if (i_61_ <= Class348_Sub16_Sub1.anInt8854) {
                                                 int i_62_ = (-i_60_ + (Math.min(i_59_, i_57_)));
-                                                if (Class239_Sub16.anInt6008 >= i_62_) {
+                                                if (Option_Sub16.anInt6008 >= i_62_) {
                                                     int i_63_ = ((Math.max(i_58_, i_56_)) - -i_60_);
                                                     if (i_63_ >= 0) {
                                                         int i_64_ = ((Math.max(i_59_, i_57_)) + i_60_);
@@ -198,12 +198,12 @@ final class Class230 {
                                 Class348_Sub40_Sub8.anInt9157 = (-Class348_Sub3.anInt6568 + i_26_ + Class348_Sub42_Sub9_Sub1.anInt10444);
                                 Class339.anInt4211 = (-Class328.anInt4100 + Class211.anInt2747 + i_25_);
                                 if (Class348_Sub49.anInt7207 == 1) {
-                                    Class239_Sub24.anInt6095 += i_35_;
+                                    Option_Sub24.anInt6095 += i_35_;
                                     Class286.anInt3682 += i_36_;
                                     for (int i_65_ = 0; i_65_ < Class250.anInt3225; i_65_++) {
                                         int i_66_ = ((Class350.method3452(i_65_ - -Class286.anInt3682, (byte) -15, Class250.anInt3225)) * Class31.anInt425);
                                         for (int i_67_ = 0; (Class31.anInt425 > i_67_); i_67_++) {
-                                            int i_68_ = ((Class350.method3452(i_67_ + (Class239_Sub24.anInt6095), (byte) -15, Class31.anInt425)) + i_66_);
+                                            int i_68_ = ((Class350.method3452(i_67_ + (Option_Sub24.anInt6095), (byte) -15, Class31.anInt425)) + i_66_);
                                             boolean bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)));
                                             Class92.anInterface4Array1525[i_68_].method15(Class58.anInt1067 * i_67_, i_65_ * Class344.anInt4267, Class58.anInt1067, Class344.anInt4267, 0, 0, bool_69_, true);
                                         }

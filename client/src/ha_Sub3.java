@@ -455,7 +455,7 @@ abstract class ha_Sub3 extends ha {
                         int i_27_ = i_26_ * 50;
                         Class101_Sub2 class101_sub2 = method3820(false);
                         class101_sub2.method916(((float) (this.anInt8146 % i_27_ * class12.aByte211) / (float) i_27_), true, 0.0F, ((float) (class12.aByte198 * (this.anInt8146 % i_27_)) / (float) i_27_));
-                        method3853(-32, Class239_Sub18.aClass251_6030);
+                        method3853(-32, Option_Sub18.aClass251_6030);
                     }
                     i_22_ = class12.anInt203;
                     if (!this.aBoolean8160) {
@@ -579,7 +579,7 @@ abstract class ha_Sub3 extends ha {
 
     static final void method3824(int i, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_, int i_40_, int i_41_) {
         anInt7933++;
-        if (i_37_ >= 0 && i >= 0 && -1 + Class367_Sub4.anInt7319 > i_37_ && (i < -1 + Class348_Sub40_Sub3.anInt9109)) {
+        if (i_37_ >= 0 && i >= 0 && -1 + Class367_Sub4.mapLength > i_37_ && (i < -1 + Class348_Sub40_Sub3.mapWidth)) {
             if (Class147.aClass357ArrayArrayArray2029 == null) return;
             if (i_41_ == 0) {
                 Interface10 interface10 = (Interface10) r_Sub2.method3297(i_40_, i_37_, i);
@@ -653,8 +653,8 @@ abstract class ha_Sub3 extends ha {
     void method3652() {
         anInt8065++;
         if (!aBoolean8176) {
-            for (Class348 class348 = aClass262_7927.method1995(4); class348 != null; class348 = aClass262_7927.method1990((byte) 102))
-                ((za_Sub2) class348).method3445(-9503);
+            for (Node node = aClass262_7927.method1995(4); node != null; node = aClass262_7927.method1990((byte) 102))
+                ((za_Sub2) node).method3445(-9503);
             Enumeration enumeration = aHashtable8014.keys();
             while (enumeration.hasMoreElements()) {
                 Canvas canvas = (Canvas) enumeration.nextElement();
@@ -1076,7 +1076,7 @@ abstract class ha_Sub3 extends ha {
             method3915(0);
             this.aClass101_Sub2Array8131[0].method932(1.0F, interface18_impl3.method71((byte) -46, (float) this.anInt7962), interface18_impl3.method67((float) this.anInt7931, 109), (byte) -37);
             this.aClass101_Sub2Array8131[0].method920(interface18_impl3.method71((byte) -52, (float) -i_86_), false, 0.0F, interface18_impl3.method67((float) -i_85_, 94));
-            this.aClass251Array8113[0] = Class239_Sub18.aClass251_6030;
+            this.aClass251Array8113[0] = Option_Sub18.aClass251_6030;
             method3905((byte) 127);
             method3933(-127);
             method3879(-8629);

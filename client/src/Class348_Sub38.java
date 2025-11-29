@@ -5,7 +5,7 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
-final class Class348_Sub38 extends Class348 {
+final class Class348_Sub38 extends Node {
     static int anInt7000;
     private float[][] aFloatArrayArray7001;
     private final Interface5_Impl2 anInterface5_Impl2_7002;
@@ -61,9 +61,9 @@ final class Class348_Sub38 extends Class348 {
         int i_14_ = aS_Sub3_7019.method3986(i_12_, i_13_, (byte) -127);
         if ((i_10_ & 0x7f) == 0 || (i_8_ & 0x7f) == 0) {
             l = ((long) i_13_ & 0xffffL) << 16 | (long) i_12_ & 0xffffL;
-            Class348 class348 = aClass356_7011.method3480(l, i_7_ + 23335);
-            if (class348 != null) {
-                method3034((((Class348_Sub29) class348).aShort6911), (byte) 49);
+            Node node = aClass356_7011.method3480(l, i_7_ + 23335);
+            if (node != null) {
+                method3034((((Class348_Sub29) node).aShort6911), (byte) 49);
                 return;
             }
         }

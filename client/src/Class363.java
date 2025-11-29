@@ -25,7 +25,7 @@ final class Class363 {
         for (Class348_Sub27 class348_sub27 = ((Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711.method1995(4)); class348_sub27 != null; class348_sub27 = (Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711.method1990((byte) 57)) {
             if (class348_sub27.anInt6893 == -1) {
                 class348_sub27.anInt6894 = 0;
-                if ((class348_sub27.anInt6905 >= 0) && class348_sub27.anInt6896 >= 0 && (class348_sub27.anInt6905 < Class367_Sub4.anInt7319) && (class348_sub27.anInt6896 < Class348_Sub40_Sub3.anInt9109)) Class184.method1387(i + 26, class348_sub27);
+                if ((class348_sub27.anInt6905 >= 0) && class348_sub27.anInt6896 >= 0 && (class348_sub27.anInt6905 < Class367_Sub4.mapLength) && (class348_sub27.anInt6896 < Class348_Sub40_Sub3.mapWidth)) Class184.method1387(i + 26, class348_sub27);
             } else class348_sub27.method2715((byte) 39);
         }
         if (i != -105) method3516(-128);

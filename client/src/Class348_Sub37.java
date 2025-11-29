@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub37 extends Class348 {
+final class Class348_Sub37 extends Node {
     static int anInt6996;
     static boolean aBoolean6997 = false;
     Class262 aClass262_6998 = new Class262();

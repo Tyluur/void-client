@@ -27,7 +27,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
         if (i != 0) this.aShort8747 = (short) -75;
         for (int i_0_ = this.aShort8743; i_0_ <= this.aShort8751; i_0_++) {
             for (int i_1_ = this.aShort8750; (i_1_ <= this.aShort8747); i_1_++) {
-                int i_2_ = (-Class239_Sub25.anInt6111 + i_0_ + Class318_Sub1_Sub4_Sub1.anInt10084);
+                int i_2_ = (-Option_Sub25.anInt6111 + i_0_ + Class318_Sub1_Sub4_Sub1.anInt10084);
                 if (i_2_ >= 0 && (Class99.aBooleanArrayArray1572.length > i_2_)) {
                     int i_3_ = (Class318_Sub1_Sub4_Sub1.anInt10084 + (i_1_ - Class285_Sub2.anInt8502));
                     if (i_3_ >= 0 && (Class99.aBooleanArrayArray1572.length > i_3_) && Class99.aBooleanArrayArray1572[i_2_][i_3_]) return true;
@@ -120,7 +120,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
                 while (l_22_ <= 48L) {
                     int i_23_ = (int) (l >>> (int) l_22_ & 0xffffL);
                     if (i_23_ <= 0) break;
-                    Class211 class211 = Class239_Sub14.aClass211Array5993[-1 + i_23_];
+                    Class211 class211 = Option_Sub14.aClass211Array5993[-1 + i_23_];
                     for (int i_24_ = 0; i_19_ > i_24_; i_24_++) {
                         if (class211.aClass348_Sub1_2745 == class348_sub1s[i_24_]) {
                             l_22_ += 16L;
@@ -137,7 +137,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
         for (int i_26_ = i_19_; i_26_ < 4; i_26_++)
             class348_sub1s[i_26_] = null;
         if (this.aByte8745 != 0) {
-            int i_27_ = (this.aShort8743 + -Class239_Sub25.anInt6111);
+            int i_27_ = (this.aShort8743 + -Option_Sub25.anInt6111);
             int i_28_ = (-Class285_Sub2.anInt8502 + this.aShort8750);
             int i_29_;
             short i_30_;
@@ -171,13 +171,13 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
             for (/**/; i_19_ > i_33_; i_33_++) {
                 long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.plane][i_32_][i_31_]);
                 while (l != 0L) {
-                    Class211 class211 = (Class239_Sub14.aClass211Array5993[(int) (-1L + (l & 0xffffL))]);
+                    Class211 class211 = (Option_Sub14.aClass211Array5993[(int) (-1L + (l & 0xffffL))]);
                     l >>>= 16;
                     if (class211.aClass348_Sub1_2745 == class348_sub1s[i_33_]) continue while_106_;
                 }
                 l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.plane][i_29_][i_30_]);
                 while (l != 0) {
-                    Class211 class211 = (Class239_Sub14.aClass211Array5993[(int) (-1L + (0xffffL & l))]);
+                    Class211 class211 = (Option_Sub14.aClass211Array5993[(int) (-1L + (0xffffL & l))]);
                     l >>>= 16;
                     if (class348_sub1s[i_33_] == class211.aClass348_Sub1_2745) continue while_106_;
                 }

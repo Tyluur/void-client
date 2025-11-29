@@ -33,16 +33,16 @@ final class Class284 {
         anInt3665++;
         ha var_ha = Class348_Sub8.aHa6654;
         boolean bool = false;
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(i + -5766) != 0) {
+        if (Class316.clientOptions.aClass239_Sub25_7271.method1829(i + -5766) != 0) {
             Canvas canvas = new Canvas();
             canvas.setSize(100, 100);
             var_ha = Class104.method958(true, 0, null, 0, canvas, null);
             bool = true;
         }
-        long l = Class62.method599(i + 26482);
+        long l = Class62.safeTime(i + 26482);
         for (int i_1_ = 0; i_1_ < 10000; i_1_++)
             var_ha.method3676(5, 10, 100, 75, 50, 100, 15, 90, 100, -65536, -65536, -65536, 1);
-        int i_2_ = (int) (-l + Class62.method599(-71));
+        int i_2_ = (int) (-l + Class62.safeTime(-71));
         if (i != -26584) method2116(-124);
         var_ha.method3675(100, (byte) -125, 0, 0, 100, -16777216);
         if (bool) var_ha.method3635((byte) 121);

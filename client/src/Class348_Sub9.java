@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub9 extends Class348 {
+final class Class348_Sub9 extends Node {
     int anInt6668;
     static int anInt6669;
     int anInt6670;
@@ -52,7 +52,7 @@ final class Class348_Sub9 extends Class348 {
             for (int i_6_ = i_3_; i_6_ <= i_4_; i_6_++) {
                 if ((class318_sub1.aByte6376 < Class189.anInt2524) && i_5_ >= Class37.anInt492 && i_5_ < Class27.anInt387 && i_6_ >= Class348_Sub34.anInt6974 && i_6_ < Class59_Sub1.anInt5293) {
                     if ((is != null && class318_sub1.plane >= i && (is[class318_sub1.plane][i_5_][i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((byte) -79)) {
-                        if (!bool && i_5_ >= Class239_Sub25.anInt6111 - 16 && i_5_ <= Class239_Sub25.anInt6111 + 16 && i_6_ >= Class285_Sub2.anInt8502 - 16 && i_6_ <= Class285_Sub2.anInt8502 + 16) {
+                        if (!bool && i_5_ >= Option_Sub25.anInt6111 - 16 && i_5_ <= Option_Sub25.anInt6111 + 16 && i_6_ >= Class285_Sub2.anInt8502 - 16 && i_6_ <= Class285_Sub2.anInt8502 + 16) {
                             if (Class348_Sub40_Sub5.aBoolean9121) {
                                 GfxTypeList.aClass315Array3982[Class139.anInt1949++].method2361(-15481, class318_sub1);
                                 Class139.anInt1949 %= Class75_Sub1.anInt5652;

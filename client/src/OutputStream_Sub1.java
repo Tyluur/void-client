@@ -20,10 +20,10 @@ final class OutputStream_Sub1 extends OutputStream {
     static final void method132(int i, boolean bool, int i_0_, int i_1_, int i_2_, int i_3_) {
         anInt94++;
         if (Class147.aClass357ArrayArrayArray2029 == null) Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
-        else if (Class132.aPlayer_1907.x < 0 || (Class132.aPlayer_1907.x >= Class367_Sub4.anInt7319 * 512) || Class132.aPlayer_1907.y < 0 || (512 * Class348_Sub40_Sub3.anInt9109 <= Class132.aPlayer_1907.y))
+        else if (Class132.aPlayer_1907.x < 0 || (Class132.aPlayer_1907.x >= Class367_Sub4.mapLength * 512) || Class132.aPlayer_1907.y < 0 || (512 * Class348_Sub40_Sub3.mapWidth <= Class132.aPlayer_1907.y))
             Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
         else {
-            Class239_Sub15.anInt6006++;
+            Option_Sub15.anInt6006++;
             if (Class132.aPlayer_1907 != null && Class248.anInt3203 == (Class132.aPlayer_1907.x + -(256 * Class132.aPlayer_1907.method2436((byte) 90)) - -256) >> 9 && Class97.anInt1548 == (Class132.aPlayer_1907.y + 256 + -(256 * Class132.aPlayer_1907.method2436((byte) 112))) >> 9) {
                 Class97.anInt1548 = -1;
                 Class248.anInt3203 = -1;
@@ -42,13 +42,13 @@ final class OutputStream_Sub1 extends OutputStream {
                 int i_4_ = (int) Class76.aFloat1287;
                 if (Class348_Sub35.anInt6979 >> 8 > i_4_) i_4_ = Class348_Sub35.anInt6979 >> 8;
                 if (Class181.aBooleanArray2374[4] && ItemTypeList.anIntArray3273[4] + 128 > i_4_) i_4_ = ItemTypeList.anIntArray3273[4] + 128;
-                int i_5_ = (int) Class314.aFloat3938 + Class195.anInt5016 & 0x3fff;
+                int i_5_ = (int) ResourceProvider.aFloat3938 + Class195.anInt5016 & 0x3fff;
                 Class17.method268(i_4_, -200 + (Class275.method2064((Class132.aPlayer_1907.x), QuickChatPhraseTypeList.anInt4372, 11219, (Class132.aPlayer_1907.y))), i_5_, Class192.anInt2578, i_2_, -19360, Class130_Sub1.anInt5799, (i_4_ >> 3) * 3 + 600 << 2);
             } else if (Class348_Sub40_Sub21.anInt9282 == 4) {
                 int i_6_ = (int) Class76.aFloat1287;
                 if (i_6_ < Class348_Sub35.anInt6979 >> 8) i_6_ = Class348_Sub35.anInt6979 >> 8;
                 if (Class181.aBooleanArray2374[4] && (i_6_ < ItemTypeList.anIntArray3273[4] + 128)) i_6_ = 128 + ItemTypeList.anIntArray3273[4];
-                int i_7_ = (int) Class314.aFloat3938 & 0x3fff;
+                int i_7_ = (int) ResourceProvider.aFloat3938 & 0x3fff;
                 Class17.method268(i_6_, -200 + Class275.method2064(Class348_Sub6.anInt6633, QuickChatPhraseTypeList.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, Class192.anInt2578, i_2_, -19360, Class130_Sub1.anInt5799, 600 - -((i_6_ >> 3) * 3) << 2);
             } else if (Class348_Sub40_Sub21.anInt9282 == 5) FloorOverlayTypeList.method2035(i_2_, 0);
             int i_8_ = Class286_Sub4.anInt6246;
@@ -96,12 +96,12 @@ final class OutputStream_Sub1 extends OutputStream {
                 Class348_Sub8.aHa6654.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 << 1, Class97.anInt1550 << 1);
                 Class30.method319(Class97.anInt1550 << 1, Class97.anInt1550 << 1, (byte) -18, i_1_ + i_0_ / 2, i_3_ + i_2_ / 2);
                 Class348_Sub42_Sub20.method3282(0x3fff & -(ClientScript.anInt9701), Class59_Sub2_Sub2.anInt8685, Class305.anInt3855, 0, -Class5.anInt4638 & 0x3fff, Class286_Sub4.anInt6246, -Class338.anInt4186 & 0x3fff);
-                byte i_16_ = (Class316.aClass348_Sub51_3959.aClass239_Sub14_7264.method1778(-32350) != 2 ? (byte) 1 : (byte) Class239_Sub15.anInt6006);
+                byte i_16_ = (Class316.clientOptions.aClass239_Sub14_7264.method1778(-32350) != 2 ? (byte) 1 : (byte) Option_Sub15.anInt6006);
                 if (Class59_Sub1.aBoolean5300) {
                     Class21.method289(-15902, 0x3fff & -Class5.anInt4638, -Class338.anInt4186 & 0x3fff, (-ClientScript.anInt9701 & 0x3fff));
-                    Class230.method1634(Class64.anIntArray1127, -2, Class289.aByteArrayArrayArray3700, (Class132.aPlayer_1907.y) >> 9, (Class132.aPlayer_1907.plane) - -1, Class327.anIntArray4097, Class286_Sub4.anInt6246, Class59_Sub2_Sub2.anInt8685, Class316.aClass348_Sub51_3959.aClass239_Sub1_7246.method1720(-32350) == 0, Class305.anInt3855, (Class132.aPlayer_1907.x) >> 9, Class156.anIntArray2117, Class348_Sub40_Sub19.anIntArray9259, i_16_, LoadState.anIntArray1045, Class367_Sub11.anInt7396, true, Class132.anInt1906);
+                    Class230.method1634(Class64.anIntArray1127, -2, Class289.aByteArrayArrayArray3700, (Class132.aPlayer_1907.y) >> 9, (Class132.aPlayer_1907.plane) - -1, Class327.anIntArray4097, Class286_Sub4.anInt6246, Class59_Sub2_Sub2.anInt8685, Class316.clientOptions.aClass239_Sub1_7246.method1720(-32350) == 0, Class305.anInt3855, (Class132.aPlayer_1907.x) >> 9, Class156.anIntArray2117, Class348_Sub40_Sub19.anIntArray9259, i_16_, LoadState.anIntArray1045, Class367_Sub11.anInt7396, true, Class132.anInt1906);
                 } else
-                    Class258_Sub1.method1960(Class367_Sub11.anInt7396, Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, Class289.aByteArrayArrayArray3700, Class327.anIntArray4097, Class156.anIntArray2117, Class348_Sub40_Sub19.anIntArray9259, LoadState.anIntArray1045, Class64.anIntArray1127, (Class132.aPlayer_1907.plane) - -1, i_16_, (Class132.aPlayer_1907.x) >> 9, (Class132.aPlayer_1907.y) >> 9, Class316.aClass348_Sub51_3959.aClass239_Sub1_7246.method1720(-32350) == 0, true, !Class305.aBoolean3870 ? -1 : Class132.anInt1906, 0, false);
+                    Class258_Sub1.method1960(Class367_Sub11.anInt7396, Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, Class289.aByteArrayArrayArray3700, Class327.anIntArray4097, Class156.anIntArray2117, Class348_Sub40_Sub19.anIntArray9259, LoadState.anIntArray1045, Class64.anIntArray1127, (Class132.aPlayer_1907.plane) - -1, i_16_, (Class132.aPlayer_1907.x) >> 9, (Class132.aPlayer_1907.y) >> 9, Class316.clientOptions.aClass239_Sub1_7246.method1720(-32350) == 0, true, !Class305.aBoolean3870 ? -1 : Class132.anInt1906, 0, false);
                 Class369_Sub1.method3570(false);
                 if (Class240.anInt4674 == 10) {
                     Class19.method283(-127, i_0_, 256, i_2_, i_1_, i_3_, 256);

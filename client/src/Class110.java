@@ -45,11 +45,11 @@ abstract class Class110 {
         anInt1701++;
         int i_1_ = 0;
         if (i != -1) method1034(117, null, null, 29);
-        Field[] fields = (aClass1713 != null ? aClass1713 : (aClass1713 = Class348_Sub51.class)).getDeclaredFields();
+        Field[] fields = (aClass1713 != null ? aClass1713 : (aClass1713 = ClientOptions.class)).getDeclaredFields();
         Field[] fields_2_ = fields;
         for (int i_3_ = 0; fields_2_.length > i_3_; i_3_++) {
             Field field = fields_2_[i_3_];
-            if ((aClass1714 != null ? aClass1714 : (aClass1714 = Class239.class)).isAssignableFrom(field.getType())) i_1_++;
+            if ((aClass1714 != null ? aClass1714 : (aClass1714 = Option.class)).isAssignableFrom(field.getType())) i_1_++;
         }
         return i_1_ - -1;
     }

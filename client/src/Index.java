@@ -36,7 +36,7 @@ final class Index {
     private Object[] anObjectArray656;
     static int anInt657;
     static int anInt658;
-    private Class314 aClass314_659;
+    private ResourceProvider aResourceProvider_659;
     static int anInt660;
     static int anInt661;
     static int anInt662;
@@ -49,7 +49,8 @@ final class Index {
     static int anInt669 = 0;
     static float aFloat670;
 
-    final int method389(int i) {
+    // method389
+    final int indexCrc(int i) {
         int i_0_ = -117 / ((-60 - i) / 33);
         anInt657++;
         if (!method399(false)) throw new IllegalStateException("");
@@ -239,7 +240,7 @@ final class Index {
 
     final int[] method396(int i, int i_45_) {
         anInt640++;
-        if (i_45_ != 0) method389(-55);
+        if (i_45_ != 0) indexCrc(-55);
         if (!method392(i, (byte) -40)) return null;
         int[] is = aClass291_629.anIntArrayArray3721[i];
         if (is == null) {
@@ -254,12 +255,13 @@ final class Index {
         anInt633++;
         if (!method399(false)) return 0;
         string = string.toLowerCase();
-        if (i != 0) aClass314_659 = null;
+        if (i != 0) aResourceProvider_659 = null;
         int i_47_ = aClass291_629.aClass316_3723.method2365(1, Class281.method2108(string, i ^ ~0x7265));
         return method419(i, i_47_);
     }
 
-    final int method398(byte i) {
+    // method398
+    final int completePercentage(byte i) {
         anInt641++;
         if (!method399(false)) return 0;
         int i_48_ = 0;
@@ -280,12 +282,12 @@ final class Index {
     private final boolean method399(boolean bool) {
         anInt652++;
         if (aClass291_629 == null) {
-            aClass291_629 = aClass314_659.method2340((byte) 56);
+            aClass291_629 = aResourceProvider_659.method2340((byte) 56);
             if (aClass291_629 == null) return false;
             anObjectArray656 = new Object[aClass291_629.anInt3734];
             anObjectArrayArray664 = new Object[aClass291_629.anInt3734][];
         }
-        if (bool != false) aClass314_659 = null;
+        if (bool != false) aResourceProvider_659 = null;
         return true;
     }
 
@@ -298,7 +300,8 @@ final class Index {
         return i_52_ >= 0;
     }
 
-    final boolean method401(int i) {
+    // method401
+    final boolean isComplete(int i) {
         anInt648++;
         if (!method399(false)) return false;
         boolean bool = true;
@@ -315,7 +318,7 @@ final class Index {
 
     private final void method402(byte i, int i_55_) {
         anInt658++;
-        if (i < -70) aClass314_659.method2338((byte) -52, i_55_);
+        if (i < -70) aResourceProvider_659.method2338((byte) -52, i_55_);
     }
 
     private final boolean method403(String string, int i, String string_56_) {
@@ -360,13 +363,13 @@ final class Index {
 
     private final void method406(int i, int i_61_) {
         if (i_61_ > -105) anObjectArrayArray664 = null;
-        if (!aBoolean655) anObjectArray656[i] = Class179.method1357(aClass314_659.method2339(i, (byte) 73), false, (byte) 123);
-        else anObjectArray656[i] = aClass314_659.method2339(i, (byte) 12);
+        if (!aBoolean655) anObjectArray656[i] = Class179.method1357(aResourceProvider_659.method2339(i, (byte) 73), false, (byte) 123);
+        else anObjectArray656[i] = aResourceProvider_659.method2339(i, (byte) 12);
         anInt665++;
     }
 
     final int method407(int i, int i_62_) {
-        if (i != 0) method389(-61);
+        if (i != 0) indexCrc(-61);
         anInt645++;
         if (!method392(i_62_, (byte) -40)) return 0;
         return aClass291_629.anIntArray3724[i_62_];
@@ -473,7 +476,7 @@ final class Index {
         anInt653++;
         if (!method392(i_75_, (byte) -40)) return 0;
         if (anObjectArray656[i_75_] != null) return 100;
-        return aClass314_659.method2335(i_75_, i + -22197);
+        return aResourceProvider_659.method2335(i_75_, i + -22197);
     }
 
     // method420
@@ -522,9 +525,9 @@ final class Index {
         return i_82_;
     }
 
-    Index(Class314 class314, boolean bool, int i) {
+    Index(ResourceProvider resourceProvider, boolean bool, int i) {
         if (i < 0 || i > 2) throw new IllegalArgumentException("js5: Invalid value " + i + " supplied for discardunpacked");
-        aClass314_659 = class314;
+        aResourceProvider_659 = resourceProvider;
         aBoolean655 = bool;
         this.anInt634 = i;
     }

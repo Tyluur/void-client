@@ -5,7 +5,7 @@
 import jagtheora.ogg.OggPacket;
 import jagtheora.ogg.OggStreamState;
 
-abstract class Class348_Sub23 extends Class348 {
+abstract class Class348_Sub23 extends Node {
     static int anInt6863;
     static int anInt6864;
     static float[] aFloatArray6865 = new float[16384];
@@ -53,14 +53,15 @@ abstract class Class348_Sub23 extends Class348 {
 
     abstract void method2964(byte i, OggPacket oggpacket);
 
-    static final void method2965(String string, int i, boolean bool, int i_1_) {
+    // method2965
+    static final void setToolkit(String string, int i, boolean bool, int i_1_) {
         anInt6866++;
         QuestTypeList.method1406(true);
         if (i == 0) {
-            Class348_Sub8.aHa6654 = Class104.method958(true, 0, Class348_Sub40_Sub4.js5TextureSource, Class316.aClass348_Sub51_3959.aClass239_Sub20_7248.method1808(-32350) * 2, Class305.aCanvas3869, Class136.SHADERS);
+            Class348_Sub8.aHa6654 = Class104.method958(true, 0, Class348_Sub40_Sub4.js5TextureSource, Class316.clientOptions.aClass239_Sub20_7248.method1808(-32350) * 2, Class305.aCanvas3869, Class136.SHADERS);
             if (string != null) {
                 Class348_Sub8.aHa6654.GA(0);
-                FontMetrics fontMetrics = Class239_Sub23.getFontMetrics(Class17.anInt235, 0, -117, Class104.FONT_INDEX);
+                FontMetrics fontMetrics = Option_Sub23.getFontMetrics(Class17.anInt235, 0, -117, Class104.FONT_INDEX);
                 FontRenderer fontRenderer = (Class348_Sub8.aHa6654.method3686(fontMetrics, Class207.method1519(Class21.SPRITES, Class17.anInt235, 0), true));
                 Class140.method1170((byte) -89);
                 Class362.method3511(true, fontRenderer, fontMetrics, string, 2, Class348_Sub8.aHa6654);
@@ -70,16 +71,16 @@ abstract class Class348_Sub23 extends Class348 {
             if (string != null) {
                 var_ha = Class104.method958(true, 0, Class348_Sub40_Sub4.js5TextureSource, 0, Class305.aCanvas3869, Class136.SHADERS);
                 var_ha.GA(0);
-                FontMetrics fontMetrics = Class239_Sub23.getFontMetrics(Class17.anInt235, 0, -115, Class104.FONT_INDEX);
+                FontMetrics fontMetrics = Option_Sub23.getFontMetrics(Class17.anInt235, 0, -115, Class104.FONT_INDEX);
                 FontRenderer fontRenderer = var_ha.method3686(fontMetrics, Class207.method1519((Class21.SPRITES), Class17.anInt235, 0), true);
                 Class140.method1170((byte) -107);
                 Class362.method3511(true, fontRenderer, fontMetrics, string, i_1_ + 2, var_ha);
             }
             try {
-                Class348_Sub8.aHa6654 = Class104.method958(true, i, Class348_Sub40_Sub4.js5TextureSource, 2 * Class316.aClass348_Sub51_3959.aClass239_Sub20_7248.method1808(i_1_ + -32350), Class305.aCanvas3869, Class136.SHADERS);
+                Class348_Sub8.aHa6654 = Class104.method958(true, i, Class348_Sub40_Sub4.js5TextureSource, 2 * Class316.clientOptions.aClass239_Sub20_7248.method1808(i_1_ + -32350), Class305.aCanvas3869, Class136.SHADERS);
                 if (string != null) {
                     var_ha.GA(0);
-                    FontMetrics fontMetrics = Class239_Sub23.getFontMetrics(Class17.anInt235, 0, -51, Class104.FONT_INDEX);
+                    FontMetrics fontMetrics = Option_Sub23.getFontMetrics(Class17.anInt235, 0, -51, Class104.FONT_INDEX);
                     FontRenderer fontRenderer = (var_ha.method3686(fontMetrics, Class207.method1519(Class21.SPRITES, Class17.anInt235, 0), true));
                     Class140.method1170((byte) -26);
                     Class362.method3511(true, fontRenderer, fontMetrics, string, i_1_ + 2, var_ha);
@@ -97,10 +98,10 @@ abstract class Class348_Sub23 extends Class348 {
                     Class348_Sub8.aHa6654.method3651(var_za);
                 }
             } catch (Throwable throwable) {
-                int i_3_ = Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350);
+                int i_3_ = Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350);
                 if (i_3_ == 2) Class139.aBoolean1952 = true;
-                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271), 0);
-                method2965(string, i_3_, bool, i_1_);
+                Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7271), 0);
+                setToolkit(string, i_3_, bool, i_1_);
                 return;
             } finally {
                 if (var_ha != null) {
@@ -112,17 +113,17 @@ abstract class Class348_Sub23 extends Class348 {
                 }
             }
         }
-        Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1826(!bool, -142238264);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271), i);
+        Class316.clientOptions.aClass239_Sub25_7271.method1826(!bool, -142238264);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7271), i);
         Class348_Sub49.method3354(i_1_ + -78);
         Class348_Sub8.aHa6654.method3650(10000);
         Class348_Sub8.aHa6654.X(32);
         Class157.aClass101_2123 = Class348_Sub8.aHa6654.method3654();
         Class50_Sub1.aClass101_5209 = Class348_Sub8.aHa6654.method3654();
         Class290.method2196((byte) -9);
-        Class348_Sub8.aHa6654.method3630(Class316.aClass348_Sub51_3959.aClass239_Sub2_7228.method1726(-32350) == 1);
-        if (Class348_Sub8.aHa6654.method3627()) Class348_Sub40_Sub33.method3137(Class316.aClass348_Sub51_3959.aClass239_Sub12_7243.method1771(-32350) == 1, (byte) -24);
-        Class97.method873(Class367_Sub4.anInt7319 >> 3, 21719, Class348_Sub8.aHa6654, Class348_Sub40_Sub3.anInt9109 >> 3);
+        Class348_Sub8.aHa6654.method3630(Class316.clientOptions.aClass239_Sub2_7228.method1726(-32350) == 1);
+        if (Class348_Sub8.aHa6654.method3627()) Class348_Sub40_Sub33.method3137(Class316.clientOptions.aClass239_Sub12_7243.method1771(-32350) == 1, (byte) -24);
+        Class97.method873(Class367_Sub4.mapLength >> 3, 21719, Class348_Sub8.aHa6654, Class348_Sub40_Sub3.mapWidth >> 3);
         Class76.method773(true);
         r.aBoolean9719 = false;
         Class228.aClass57Array2974 = null;

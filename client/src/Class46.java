@@ -201,7 +201,7 @@ final class Class46 {
 
     final aa method425(ha var_ha, byte i) {
         anInt767++;
-        aa var_aa = (aa) Class239_Sub24.aClass60_6096.method583(this.anInt830, 119);
+        aa var_aa = (aa) Option_Sub24.aClass60_6096.method583(this.anInt830, 119);
         if (var_aa != null) return var_aa;
         Class207 class207 = Class207.method1521(Class318_Sub1_Sub3.aIndex_8755, this.anInt756, 0);
         if (class207 == null) return null;
@@ -229,7 +229,7 @@ final class Class46 {
         }
         if (i < 0) method433(null, false);
         var_aa = var_ha.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772);
-        Class239_Sub24.aClass60_6096.method582(var_aa, this.anInt830, (byte) -104);
+        Option_Sub24.aClass60_6096.method582(var_aa, this.anInt830, (byte) -104);
         return var_aa;
     }
 
@@ -261,7 +261,7 @@ final class Class46 {
         Class30.skyBoxTypeList.method816(false);
         Class123.skyBoxSphereTypeList.method302(-797644856);
         Class348_Sub1.lightTypeList.method1390(23);
-        Class239.cursorTypeList.method1283(1);
+        Option.cursorTypeList.method1283(1);
         Class136.structTypeList.method694(-1007);
         Class73.hitmarkTypeList.method1598(111);
         Class331.method2638(-4631);
@@ -645,8 +645,8 @@ final class Class46 {
     final void method435(int i, int i_60_) {
         anInt802++;
         if (aClass356_711 != null) {
-            Class348 class348 = aClass356_711.method3480(i, -6008);
-            if (class348 != null) class348.method2715((byte) 63);
+            Node node = aClass356_711.method3480(i, -6008);
+            if (node != null) node.method2715((byte) 63);
         }
         if (i_60_ != -3437) method425(null, (byte) 83);
     }

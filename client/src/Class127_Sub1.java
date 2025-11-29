@@ -36,7 +36,7 @@ final class Class127_Sub1 extends Class127 {
             Class46 class46 = FontRenderer.method2570(1512932720, i_4_);
             if (class46 != null) Class251.method1916(-9343, class46);
             Class348_Sub42_Sub17.method3270((byte) 119);
-            if (!bool_2_ && r.anInt9721 != -1) Class239_Sub12.method1775((byte) -8, r.anInt9721, 1);
+            if (!bool_2_ && r.anInt9721 != -1) Option_Sub12.method1775((byte) -8, r.anInt9721, 1);
             Class333 class333 = new Class333(Class125.aClass356_4915);
             for (Class348_Sub41 class348_sub41_5_ = (Class348_Sub41) class333.method2644((byte) 123); class348_sub41_5_ != null; class348_sub41_5_ = (Class348_Sub41) class333.method2646((byte) 99)) {
                 if (!class348_sub41_5_.method2712((byte) 4)) {

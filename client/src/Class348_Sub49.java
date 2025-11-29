@@ -4,7 +4,7 @@
 
 import java.math.BigInteger;
 
-class Class348_Sub49 extends Class348 {
+class Class348_Sub49 extends Node {
     static int anInt7137;
     static int anInt7138;
     static int anInt7139;
@@ -563,13 +563,13 @@ class Class348_Sub49 extends Class348 {
                 Class78.GRAPHICS.anInt634 = 1;
             }
             if (i_71_ == 11 || i_71_ == 3) Class348_Sub40_Sub16.method3088(9);
-            boolean bool = (i == i_71_ || Class348_Sub42_Sub8.method3196(i_71_, i ^ ~0x58) || Class340.method2672(i_71_, -100));
-            boolean bool_72_ = (Class240.anInt4674 == 2 || Class348_Sub42_Sub8.method3196(Class240.anInt4674, -110) || Class340.method2672(Class240.anInt4674, -128));
+            boolean bool = (i == i_71_ || Class348_Sub42_Sub8.method3196(i_71_, i ^ ~0x58) || Js5MasterIndex.method2672(i_71_, -100));
+            boolean bool_72_ = (Class240.anInt4674 == 2 || Class348_Sub42_Sub8.method3196(Class240.anInt4674, -110) || Js5MasterIndex.method2672(Class240.anInt4674, -128));
             if (bool != bool_72_) {
                 if (bool) {
                     Class267.anInt3428 = Class345.anInt4270;
-                    if (Class316.aClass348_Sub51_3959.aClass239_Sub26_7245.method1838(-32350) != 0) {
-                        Class315.method2355(Class316.aClass348_Sub51_3959.aClass239_Sub26_7245.method1838(-32350), (byte) 50, false, Class59_Sub2_Sub1.MUSIC, Class345.anInt4270, 0, 2);
+                    if (Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350) != 0) {
+                        Class315.method2355(Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350), (byte) 50, false, Class59_Sub2_Sub1.MUSIC, Class345.anInt4270, 0, 2);
                         Class348_Sub40_Sub17_Sub1.method3093(i ^ 0x66);
                     } else Class348_Sub31.method3007(2, 22684);
                     SystemInfo.aClass248_6601.method1892(-117, false);

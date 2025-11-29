@@ -51,7 +51,7 @@ final class Class253 {
             if (bool == true) {
                 anInt3247++;
                 RuntimeException_Sub1.anInt4596 = i;
-                Class239_Sub12.anInt5969 = 2;
+                Option_Sub12.anInt5969 = 2;
                 Class132.method1138(string_12_, false, string, (byte) -45);
             }
         } catch (RuntimeException runtimeexception) {

@@ -49,9 +49,9 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
         if (Class316.aClass348_Sub42_Sub12_3963 == null) return 0;
         if (i >= -11) return -42;
         int i_1_ = (Class316.aClass348_Sub42_Sub12_3963.anInt9608);
-        if (Class239_Sub17.method1796(80, i_1_)) return 1;
+        if (Option_Sub17.method1796(80, i_1_)) return 1;
         if (Class148.method1197(-12081, i_1_)) return 2;
-        if (Class239_Sub21.method1813(8806, i_1_)) return 3;
+        if (Option_Sub21.method1813(8806, i_1_)) return 3;
         if (Class367_Sub8.method3549(i_1_, (byte) 126)) return 4;
         return 5;
     }
@@ -202,7 +202,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
                 aBoolean10138 = bool;
                 this.x = i_8_;
                 aByte10118 = (byte) i_14_;
-                aBoolean10137 = (var_ha.method3682() && class51.aBoolean894 && !aBoolean10138 && Class316.aClass348_Sub51_3959.aClass239_Sub7_7238.method1748(-32350) != 0);
+                aBoolean10137 = (var_ha.method3682() && class51.aBoolean894 && !aBoolean10138 && Class316.clientOptions.aClass239_Sub7_7238.method1748(-32350) != 0);
                 Class2 class2 = method2491((byte) -51, aBoolean10137, 2048, var_ha);
                 if (class2 == null) break;
                 aClass64_10124 = class2.aClass64_119;

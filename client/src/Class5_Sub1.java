@@ -107,7 +107,7 @@ class Class5_Sub1 extends Class5 {
                                     } else break;
                                     break while_0_;
                                 }
-                                if (Class239_Sub28.method1842(i_11_, i_7_, -1, 1, i_16_, i_17_, i, 1, i_13_)) {
+                                if (Option_Sub28.method1842(i_11_, i_7_, -1, 1, i_16_, i_17_, i, 1, i_13_)) {
                                     Class115.anInt1753 = i_17_;
                                     Class348_Sub40_Sub30.anInt9388 = i_16_;
                                     return true;

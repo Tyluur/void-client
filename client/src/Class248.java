@@ -60,7 +60,7 @@ final class Class248 {
 
     final boolean method1893(byte i) {
         if (aClass202_3209 != null) {
-            long l = Class62.method599(-106);
+            long l = Class62.safeTime(-106);
             int i_0_ = (int) (-aLong3207 + l);
             if (i_0_ > 200) i_0_ = 200;
             aLong3207 = l;
@@ -313,7 +313,7 @@ final class Class248 {
             }
         }
         anInt3210 = 0;
-        aLong3207 = Class62.method599(-105);
+        aLong3207 = Class62.safeTime(-105);
     }
 
     final void method1904(int i) {

@@ -64,12 +64,12 @@ final class Class101_Sub1 extends Class101 {
 
     final void method903(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_) {
         anInt5682++;
-        float f = Class239_Sub4.aFloatArray5876[i_4_ & 0x3fff];
-        float f_7_ = Class239_Sub4.aFloatArray5874[0x3fff & i_4_];
-        float f_8_ = Class239_Sub4.aFloatArray5876[i_5_ & 0x3fff];
-        float f_9_ = Class239_Sub4.aFloatArray5874[0x3fff & i_5_];
-        float f_10_ = Class239_Sub4.aFloatArray5876[0x3fff & i_6_];
-        float f_11_ = Class239_Sub4.aFloatArray5874[0x3fff & i_6_];
+        float f = Option_Sub4.aFloatArray5876[i_4_ & 0x3fff];
+        float f_7_ = Option_Sub4.aFloatArray5874[0x3fff & i_4_];
+        float f_8_ = Option_Sub4.aFloatArray5876[i_5_ & 0x3fff];
+        float f_9_ = Option_Sub4.aFloatArray5874[0x3fff & i_5_];
+        float f_10_ = Option_Sub4.aFloatArray5876[0x3fff & i_6_];
+        float f_11_ = Option_Sub4.aFloatArray5874[0x3fff & i_6_];
         float f_12_ = f_10_ * f_7_;
         float f_13_ = f_7_ * f_11_;
         this.aFloat5666 = f_11_ * f_9_ + f_8_ * f_12_;
@@ -125,8 +125,8 @@ final class Class101_Sub1 extends Class101 {
 
     final void method908(int i) {
         anInt5656++;
-        float f = Class239_Sub4.aFloatArray5876[i & 0x3fff];
-        float f_19_ = Class239_Sub4.aFloatArray5874[i & 0x3fff];
+        float f = Option_Sub4.aFloatArray5876[i & 0x3fff];
+        float f_19_ = Option_Sub4.aFloatArray5874[i & 0x3fff];
         float f_20_ = this.aFloat5672;
         float f_21_ = this.aFloat5673;
         float f_22_ = this.aFloat5669;
@@ -143,8 +143,8 @@ final class Class101_Sub1 extends Class101 {
 
     final void method900(int i) {
         anInt5658++;
-        float f = Class239_Sub4.aFloatArray5876[0x3fff & i];
-        float f_24_ = Class239_Sub4.aFloatArray5874[0x3fff & i];
+        float f = Option_Sub4.aFloatArray5876[0x3fff & i];
+        float f_24_ = Option_Sub4.aFloatArray5874[0x3fff & i];
         float f_25_ = this.aFloat5655;
         float f_26_ = this.aFloat5678;
         float f_27_ = this.aFloat5666;
@@ -172,8 +172,8 @@ final class Class101_Sub1 extends Class101 {
     final void method899(int i) {
         anInt5670++;
         this.aFloat5672 = 1.0F;
-        this.aFloat5678 = this.aFloat5664 = Class239_Sub4.aFloatArray5876[i & 0x3fff];
-        this.aFloat5680 = Class239_Sub4.aFloatArray5874[0x3fff & i];
+        this.aFloat5678 = this.aFloat5664 = Option_Sub4.aFloatArray5876[i & 0x3fff];
+        this.aFloat5680 = Option_Sub4.aFloatArray5874[0x3fff & i];
         this.aFloat5666 = -this.aFloat5680;
         this.aFloat5673 = this.aFloat5669 = this.aFloat5686 = this.aFloat5655 = this.aFloat5685 = this.aFloat5662 = this.aFloat5681 = 0.0F;
     }
@@ -181,8 +181,8 @@ final class Class101_Sub1 extends Class101 {
     final void method902(int i) {
         anInt5667++;
         this.aFloat5664 = 1.0F;
-        this.aFloat5672 = this.aFloat5678 = Class239_Sub4.aFloatArray5876[0x3fff & i];
-        this.aFloat5655 = Class239_Sub4.aFloatArray5874[0x3fff & i];
+        this.aFloat5672 = this.aFloat5678 = Option_Sub4.aFloatArray5876[0x3fff & i];
+        this.aFloat5655 = Option_Sub4.aFloatArray5874[0x3fff & i];
         this.aFloat5669 = this.aFloat5686 = this.aFloat5666 = this.aFloat5685 = this.aFloat5662 = this.aFloat5680 = this.aFloat5681 = 0.0F;
         this.aFloat5673 = -this.aFloat5655;
     }
@@ -208,16 +208,16 @@ final class Class101_Sub1 extends Class101 {
     final void method895(int i) {
         this.aFloat5678 = 1.0F;
         anInt5676++;
-        this.aFloat5672 = this.aFloat5664 = Class239_Sub4.aFloatArray5876[0x3fff & i];
-        this.aFloat5669 = Class239_Sub4.aFloatArray5874[i & 0x3fff];
+        this.aFloat5672 = this.aFloat5664 = Option_Sub4.aFloatArray5876[0x3fff & i];
+        this.aFloat5669 = Option_Sub4.aFloatArray5874[i & 0x3fff];
         this.aFloat5673 = this.aFloat5686 = this.aFloat5655 = this.aFloat5666 = this.aFloat5685 = this.aFloat5680 = this.aFloat5681 = 0.0F;
         this.aFloat5662 = -this.aFloat5669;
     }
 
     final void method896(int i) {
         anInt5659++;
-        float f = Class239_Sub4.aFloatArray5876[0x3fff & i];
-        float f_32_ = Class239_Sub4.aFloatArray5874[i & 0x3fff];
+        float f = Option_Sub4.aFloatArray5876[0x3fff & i];
+        float f_32_ = Option_Sub4.aFloatArray5874[i & 0x3fff];
         float f_33_ = this.aFloat5672;
         float f_34_ = this.aFloat5673;
         float f_35_ = this.aFloat5669;

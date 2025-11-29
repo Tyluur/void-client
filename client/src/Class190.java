@@ -95,7 +95,7 @@ final class Class190 {
             int i_21_ = 0;
             int i_22_ = 0;
             if (class42.aString597 != null) {
-                class323 = Class239_Sub15.method1782(class42.anInt576, 10144);
+                class323 = Option_Sub15.method1782(class42.anInt576, 10144);
                 if (class323 != null) {
                     i_15_ = (Class258_Sub1.aFontMetrics_8527.splitLines(class42.aString597, null, ha_Sub3.aStringArray8019, (byte) 87, null));
                     i_17_ = (class348_sub21.anInt6855 - (class42.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)));
@@ -175,7 +175,7 @@ final class Class190 {
 
     Class190(Class348_Sub49 class348_sub49) {
         int i = class348_sub49.readUnsignedByte(255);
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub28_7230.method1845(-32350) != 1 || Class60.aHa1098.method3704() <= 0) {
+        if (Class316.clientOptions.aClass239_Sub28_7230.method1845(-32350) != 1 || Class60.aHa1098.method3704() <= 0) {
             if ((0x1 & i) != 0) class348_sub49.readInt((byte) -126);
             if ((0x2 & i) != 0) class348_sub49.readUnsignedShort(842397944);
             if ((i & 0x4) != 0) class348_sub49.readUnsignedShort(842397944);

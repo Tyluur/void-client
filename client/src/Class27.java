@@ -121,7 +121,7 @@ final class Class27 {
                         else {
                             Class5.anInt4628++;
                             Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(ClientScript.aClass351_9687, Class348_Sub23_Sub2.aClass77_9029, -94));
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class239_Sub6.method1745(string, -65) - -1);
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Option_Sub6.method1745(string, -65) - -1);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, !bool ? 0 : 1);
                             Class348_Sub42_Sub14.method3243(-116, class348_sub47);

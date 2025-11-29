@@ -33,7 +33,7 @@ final class QuickChatCatTypeList {
 
     static final void method1626(int i, boolean bool) {
         anInt2962++;
-        int i_1_ = Class239_Sub19.anInt6043;
+        int i_1_ = Option_Sub19.anInt6043;
         int i_2_ = Class348_Sub33.anInt6964;
         if (i == 1) {
             if (bool && Class305.aBoolean3870) {

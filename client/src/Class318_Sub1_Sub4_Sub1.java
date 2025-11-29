@@ -49,7 +49,7 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
                 this.y = i_3_;
                 aByte10079 = (byte) i_4_;
                 aByte10062 = (byte) i_5_;
-                aBoolean10064 = (var_ha.method3682() && class51.aBoolean894 && !aBoolean10066 && Class316.aClass348_Sub51_3959.aClass239_Sub7_7238.method1748(-32350) != 0);
+                aBoolean10064 = (var_ha.method3682() && class51.aBoolean894 && !aBoolean10066 && Class316.clientOptions.aClass239_Sub7_7238.method1748(-32350) != 0);
                 int i_7_ = 2048;
                 if (aBoolean10090) i_7_ |= 0x10000;
                 Class2 class2 = method2481(aBoolean10064, i_7_, -4, var_ha);

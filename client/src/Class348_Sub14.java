@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub14 extends Class348 {
+final class Class348_Sub14 extends Node {
     static int anInt6760;
     static int anInt6761;
     long aLong6762;
@@ -74,8 +74,8 @@ final class Class348_Sub14 extends Class348 {
     static final boolean method2808(int i, ha var_ha, boolean bool) {
         try {
             anInt6763++;
-            int i_5_ = (-104 + Class367_Sub4.anInt7319) / 2;
-            int i_6_ = (Class348_Sub40_Sub3.anInt9109 - 104) / 2;
+            int i_5_ = (-104 + Class367_Sub4.mapLength) / 2;
+            int i_6_ = (Class348_Sub40_Sub3.mapWidth - 104) / 2;
             boolean bool_7_ = bool;
             for (int i_8_ = i_5_; i_8_ < 104 + i_5_; i_8_++) {
                 for (int i_9_ = i_6_; i_6_ + 104 > i_9_; i_9_++) {
@@ -140,7 +140,7 @@ final class Class348_Sub14 extends Class348 {
                         }
                     }
                     if (Class375.aBoolean4542) {
-                        Class361 class361 = Class348_Sub45.aClass361Array7108[i];
+                        Class361 class361 = Class348_Sub45.collisionMaps[i];
                         for (int i_32_ = 0; i_32_ < RuntimeException_Sub1.anInt4600; i_32_++) {
                             for (int i_33_ = 0; (RuntimeException_Sub1.anInt4600 > i_33_); i_33_++) {
                                 int i_34_ = i_16_ + i_32_;
@@ -194,9 +194,9 @@ final class Class348_Sub14 extends Class348 {
                                             int i_44_ = i_37_;
                                             int i_45_ = i_38_;
                                             if (bool_43_) {
-                                                int[][] is_46_ = (Class348_Sub45.aClass361Array7108[i_39_].anIntArrayArray4438);
-                                                int i_47_ = (Class348_Sub45.aClass361Array7108[i_39_].anInt4453);
-                                                int i_48_ = (Class348_Sub45.aClass361Array7108[i_39_].anInt4441);
+                                                int[][] is_46_ = (Class348_Sub45.collisionMaps[i_39_].anIntArrayArray4438);
+                                                int i_47_ = (Class348_Sub45.collisionMaps[i_39_].anInt4453);
+                                                int i_48_ = (Class348_Sub45.collisionMaps[i_39_].anInt4441);
                                                 for (int i_49_ = 0; i_49_ < 10; i_49_++) {
                                                     int i_50_ = (int) (Math.random() * 4.0);
                                                     if ((i_50_ == 0) && (i_44_ > i_5_) && i_37_ + -3 < i_44_ && ((0x2c0108 & (is_46_[(-i_47_ + (i_44_ - 1))][(-i_48_ + i_45_)])) == 0)) i_44_--;
@@ -224,10 +224,10 @@ final class Class348_Sub14 extends Class348 {
                         if ((Class132.aPlayer_1907.plane) == i_52_ >> 28) {
                             int i_53_ = ((i_52_ >> 14 & 0x3fff) - za_Sub2.regionTileX);
                             int i_54_ = (i_52_ & 0x3fff) + -Class90.regionTileY;
-                            if (i_53_ >= 0 && i_53_ < Class367_Sub4.anInt7319 && i_54_ >= 0 && (Class348_Sub40_Sub3.anInt9109 > i_54_)) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1999(new Class348_Sub35(i_51_), -20180);
+                            if (i_53_ >= 0 && i_53_ < Class367_Sub4.mapLength && i_54_ >= 0 && (Class348_Sub40_Sub3.mapWidth > i_54_)) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1999(new Class348_Sub35(i_51_), -20180);
                             else {
                                 Class42 class42 = (Class348_Sub23_Sub2.mapElementTypeList.method1225((r_Sub2.aClass252_10488.anIntArray3239[i_51_]), (byte) 120));
-                                if (class42.anIntArray591 != null && (i_53_ + class42.anInt595 >= 0) && (Class367_Sub4.anInt7319 > class42.anInt603 + i_53_) && i_54_ + class42.anInt570 >= 0 && (Class348_Sub40_Sub3.anInt9109 > (i_54_ - -class42.anInt607)))
+                                if (class42.anIntArray591 != null && (i_53_ + class42.anInt595 >= 0) && (Class367_Sub4.mapLength > class42.anInt603 + i_53_) && i_54_ + class42.anInt570 >= 0 && (Class348_Sub40_Sub3.mapWidth > (i_54_ - -class42.anInt607)))
                                     Class318_Sub1_Sub5_Sub1.aClass262_10125.method1999(new Class348_Sub35(i_51_), -20180);
                             }
                         }

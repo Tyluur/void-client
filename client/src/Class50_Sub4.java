@@ -68,14 +68,14 @@ final class Class50_Sub4 extends Class50 {
     static final int method473(byte i, int i_25_, Class110_Sub1 class110_sub1, int i_26_, boolean bool, boolean bool_27_, Class110_Sub1 class110_sub1_28_) {
         try {
             anInt5257++;
-            int i_29_ = Class239_Sub8.method1749(class110_sub1_28_, class110_sub1, bool, i_25_, (byte) -30);
+            int i_29_ = Option_Sub8.method1749(class110_sub1_28_, class110_sub1, bool, i_25_, (byte) -30);
             if (i_29_ != 0) {
                 if (!bool) return i_29_;
                 return -i_29_;
             }
             if (i_26_ == -1) return 0;
             if (i >= -42) return -65;
-            int i_30_ = Class239_Sub8.method1749(class110_sub1_28_, class110_sub1, bool_27_, i_26_, (byte) -30);
+            int i_30_ = Option_Sub8.method1749(class110_sub1_28_, class110_sub1, bool_27_, i_26_, (byte) -30);
             if (bool_27_) return -i_30_;
             return i_30_;
         } catch (RuntimeException runtimeexception) {

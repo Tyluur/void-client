@@ -7,7 +7,7 @@ final class Class5_Sub3 extends Class5 {
     static int anInt8367;
     static int anInt8368;
     static int anInt8369;
-    static int anInt8370;
+    static int hintMapEdgeGroup;
     static int anInt8371;
     static int anInt8372;
     static int anInt8373;
@@ -30,7 +30,7 @@ final class Class5_Sub3 extends Class5 {
         Class348_Sub21 class348_sub21 = (Class348_Sub21) r.aClass312_9716.method2327((byte) -53);
         if (class348_sub21 == null) return null;
         Class42 class42 = Class75.aMapElementTypeList_1238.method1225(class348_sub21.anInt6847, (byte) 50);
-        if (i != 1) anInt8370 = -75;
+        if (i != 1) hintMapEdgeGroup = -75;
         if (class42 != null && class42.aBoolean609 && class42.method373(Class75.anInterface17_1244, 98)) return class348_sub21;
         return Class356.method3479(-1);
     }
@@ -66,7 +66,7 @@ final class Class5_Sub3 extends Class5 {
                             bool = true;
                             if (i == 1) {
                                 Class127.anInt4657++;
-                                Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class239_Sub9.aClass351_5929, Class348_Sub23_Sub2.aClass77_9029, i_5_ + 7158));
+                                Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Option_Sub9.aClass351_5929, Class348_Sub23_Sub2.aClass77_9029, i_5_ + 7158));
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, is[i_7_]);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -75, 0);
                                 Class348_Sub42_Sub14.method3243(i_5_ ^ 0x1c2a, class348_sub47);

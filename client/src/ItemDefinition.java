@@ -541,10 +541,10 @@ final class ItemDefinition {
                                                                     for (int i_66_ = 0; i_66_ < i_64_; i_66_++) {
                                                                         boolean bool = class348_sub49.readUnsignedByte(255) == 1;
                                                                         int i_67_ = class348_sub49.readMedium(-1);
-                                                                        Class348 class348;
-                                                                        if (bool) class348 = new Class348_Sub50(class348_sub49.readString((byte) 107));
-                                                                        else class348 = new Class348_Sub35(class348_sub49.readInt((byte) -126));
-                                                                        this.aClass356_2757.method3483((byte) 76, i_67_, class348);
+                                                                        Node node;
+                                                                        if (bool) node = new Class348_Sub50(class348_sub49.readString((byte) 107));
+                                                                        else node = new Class348_Sub35(class348_sub49.readInt((byte) -126));
+                                                                        this.aClass356_2757.method3483((byte) 76, i_67_, node);
                                                                     }
                                                                 }
                                                             } else this.anInt2812 = class348_sub49.readUnsignedShort(i + 842397940);

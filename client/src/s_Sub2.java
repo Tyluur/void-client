@@ -250,10 +250,10 @@ final class s_Sub2 extends s {
                                 }
                                 i_75_ = (Class10.anIntArray179[0xff80 & i_69_ | i_90_]);
                             }
-                            Class348 class348 = null;
-                            if ((i_65_ & -1 + anInt8260) == 0 && (anInt8260 + -1 & i_66_) == 0) class348 = class356.method3480(l, -6008);
+                            Node node = null;
+                            if ((i_65_ & -1 + anInt8260) == 0 && (anInt8260 + -1 & i_66_) == 0) node = class356.method3480(l, -6008);
                             int i_91_;
-                            if (class348 == null) {
+                            if (node == null) {
                                 int i_92_;
                                 if (i_69_ != i_70_) {
                                     int i_93_ = (i_70_ & 0x7f) * i_74_ >> 7;
@@ -317,7 +317,7 @@ final class s_Sub2 extends s {
                                 if (i_69_ != -1) class348_sub20s[i_91_] = class348_sub20s_38_[i_64_];
                                 class356.method3483((byte) 114, l, new Class348_Sub29(is_63_[i_64_]));
                             } else {
-                                is_63_[i_64_] = ((Class348_Sub29) class348).aShort6911;
+                                is_63_[i_64_] = ((Class348_Sub29) node).aShort6911;
                                 i_91_ = 0xffff & is_63_[i_64_];
                                 if (i_69_ != -1 && ((class348_sub20s[i_91_].aLong4291) > class348_sub20s_38_[i_64_].aLong4291)) class348_sub20s[i_91_] = class348_sub20s_38_[i_64_];
                             }
@@ -690,15 +690,15 @@ final class s_Sub2 extends s {
                     i_189_ = 128;
                 }
                 long l = ((long) i_184_ << 28 | ((long) i_185_ << 42 | (long) i_186_ << 48) | (long) (i_189_ << 14) | (long) i_188_);
-                Class348 class348;
-                for (class348 = aClass356_8278.method3480(l, -6008); class348 != null; class348 = aClass356_8278.method3476(true)) {
-                    Class348_Sub20 class348_sub20 = (Class348_Sub20) class348;
+                Node node;
+                for (node = aClass356_8278.method3480(l, -6008); node != null; node = aClass356_8278.method3476(true)) {
+                    Class348_Sub20 class348_sub20 = (Class348_Sub20) node;
                     if (i_188_ == class348_sub20.anInt6841 && (class348_sub20.aFloat6832 == (float) i_189_) && (class348_sub20.anInt6825 == i_184_) && (i_185_ == class348_sub20.anInt6833) && (class348_sub20.anInt6826 == i_186_)) break;
                 }
-                if (class348 == null) {
+                if (node == null) {
                     class348_sub20s[i_187_] = new Class348_Sub20(this, i_188_, i_189_, i_184_, i_185_, i_186_);
                     aClass356_8278.method3483((byte) 99, l, class348_sub20s[i_187_]);
-                } else class348_sub20s[i_187_] = (Class348_Sub20) class348;
+                } else class348_sub20s[i_187_] = (Class348_Sub20) node;
             }
             if (bool) aByteArrayArray8240[i][i_176_] = (byte) Class273.method2057((aByteArrayArray8240[i][i_176_]), 1);
             if (is_180_.length > anInt8280) anInt8280 = is_180_.length;
@@ -758,8 +758,8 @@ final class s_Sub2 extends s {
                 this.aHa_Sub2_8272.method3729(8448, (byte) 98, 7681);
                 this.aHa_Sub2_8272.method3762(34166, 770, (byte) -87, 0);
                 this.aHa_Sub2_8272.method3775(false, 0, 770, 34167);
-                for (Class348 class348 = aClass262_8256.method1995(4); class348 != null; class348 = aClass262_8256.method1990((byte) 92)) {
-                    Class348_Sub32 class348_sub32 = (Class348_Sub32) class348;
+                for (Node node = aClass262_8256.method1995(4); node != null; node = aClass262_8256.method1990((byte) 92)) {
+                    Class348_Sub32 class348_sub32 = (Class348_Sub32) node;
                     class348_sub32.method3023(bools, 255, i_194_, i_196_, i_192_);
                 }
                 this.aHa_Sub2_8272.method3762(5890, 768, (byte) -87, 0);

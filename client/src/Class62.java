@@ -32,7 +32,8 @@ final class Class62 {
         }
     }
 
-    static final synchronized long method599(int i) {
+    // method599
+    static final synchronized long safeTime(int i) {
         if (i > -52) return -121L;
         anInt1113++;
         long l = System.currentTimeMillis();
@@ -61,8 +62,8 @@ final class Class62 {
             Class133.method1140(120);
             i_3_ = 4;
         }
-        if (i_1_ != Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350)) {
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), i_1_);
+        if (i_1_ != Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350)) {
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), i_1_);
             Class367_Sub10.method3553(false, (byte) 122, i_1_);
         }
         if (i >= -20) aClass243_1114 = null;

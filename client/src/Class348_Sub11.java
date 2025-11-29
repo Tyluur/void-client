@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub11 extends Class348 implements Interface6 {
+final class Class348_Sub11 extends Node implements KeyLog {
     static int anInt4760;
     char aChar4761;
     static int anInt4762;
@@ -22,7 +22,7 @@ final class Class348_Sub11 extends Class348 implements Interface6 {
         return this.anInt4771;
     }
 
-    public final char method28(byte i) {
+    public final char getKeyChar(byte i) {
         anInt4768++;
         if (i < 8) method27(113);
         return this.aChar4761;

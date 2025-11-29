@@ -55,7 +55,7 @@ final class Class202 implements Runnable {
     static final void method1469(int i) {
         anInt2662++;
         Class286.anInt3682 = 0;
-        Class239_Sub24.anInt6095 = 0;
+        Option_Sub24.anInt6095 = 0;
         int i_0_ = 29 % ((-42 - i) / 63);
         for (int i_1_ = 0; Class250.anInt3225 > i_1_; i_1_++) {
             int i_2_ = Class31.anInt425 * i_1_;

@@ -200,7 +200,7 @@ final class Class361 {
                 anInt4442++;
                 var_ha.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i);
                 var_ha.method3675(i_40_, (byte) -125, i_39_, i_41_, i, -16777216);
-                if (Class348.anInt4290 >= 100) {
+                if (Node.anInt4290 >= 100) {
                     float f = ((float) Class75.anInt1267 / (float) Class75.anInt1259);
                     int i_42_ = i_40_;
                     int i_43_ = i;
@@ -287,7 +287,7 @@ final class Class361 {
     final boolean method3503(int i, byte i_64_, int i_65_, int i_66_, int i_67_, int i_68_, int i_69_, int i_70_, int i_71_) {
         anInt4436++;
         if (i_66_ > 1) {
-            if (Class239_Sub28.method1842(i_68_, i_65_, -1, i_66_, i, i_70_, i_71_, i_66_, i_67_)) return true;
+            if (Option_Sub28.method1842(i_68_, i_65_, -1, i_66_, i, i_70_, i_71_, i_66_, i_67_)) return true;
             return method3497(-28388, i_71_, i_69_, i_66_, i_67_, i, i_66_, i_70_, i_65_, i_68_);
         }
         int i_72_ = 64 % ((2 - i_64_) / 45);

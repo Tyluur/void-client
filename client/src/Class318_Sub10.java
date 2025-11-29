@@ -26,7 +26,7 @@ final class Class318_Sub10 extends Class318 {
 
     static final Class318_Sub10 method2526(int i, boolean bool) {
         if (Class258_Sub3.anInt8550 != Class376.anInt4559) {
-            Class318_Sub10 class318_sub10 = Class348_Sub51.aClass318_Sub10Array7249[Class376.anInt4559];
+            Class318_Sub10 class318_sub10 = ClientOptions.aClass318_Sub10Array7249[Class376.anInt4559];
             Class376.anInt4559 = Class376.anInt4559 + 1 & (Class348_Sub42_Sub9.anIntArray9558[Class348_Sub6.anInt6637]);
             class318_sub10.method2531(i, bool);
             return class318_sub10;
@@ -66,7 +66,7 @@ final class Class318_Sub10 extends Class318 {
         this.aClass262_6479 = new Class262();
         anInt6485 = 0;
         this.method2373(false);
-        Class348_Sub51.aClass318_Sub10Array7249[Class258_Sub3.anInt8550] = this;
+        ClientOptions.aClass318_Sub10Array7249[Class258_Sub3.anInt8550] = this;
         Class258_Sub3.anInt8550 = (Class258_Sub3.anInt8550 + 1 & Class348_Sub42_Sub9.anIntArray9558[Class348_Sub6.anInt6637]);
     }
 

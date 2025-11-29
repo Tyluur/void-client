@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class348_Sub1 extends Class348 {
+abstract class Class348_Sub1 extends Node {
     private final int anInt6545;
     static int anInt6546;
     static int[] anIntArray6547 = null;
@@ -34,9 +34,9 @@ abstract class Class348_Sub1 extends Class348 {
     static final void method2718(int i) {
         if (i >= -95) method2719(90);
         anInt6560++;
-        if (Class239_Sub13.anInt5976 != -1) {
-            Class24.method298(false, -1, -1, Class239_Sub13.anInt5976, -67);
-            Class239_Sub13.anInt5976 = -1;
+        if (Option_Sub13.anInt5976 != -1) {
+            Class24.method298(false, -1, -1, Option_Sub13.anInt5976, -67);
+            Option_Sub13.anInt5976 = -1;
         }
     }
 

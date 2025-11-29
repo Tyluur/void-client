@@ -52,24 +52,24 @@ final class Class40 {
             Class285.aClass348_Sub16_Sub3_4743 = null;
             Class318.anInt3971 = i_2_;
             Class58.anInt1059 = i;
-            Class239_Sub14.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564.method2844((byte) 103) / i_3_);
-            if (Class239_Sub14.anInt5994 < 1) Class239_Sub14.anInt5994 = 1;
+            Option_Sub14.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564.method2844((byte) 103) / i_3_);
+            if (Option_Sub14.anInt5994 < 1) Option_Sub14.anInt5994 = 1;
         } else Class348_Sub1_Sub3.method2732(i_2_, i_1_, bool, 123, index, i);
     }
 
     static final void method369(int i) {
         Class348_Sub45.aSpriteArray7107 = null;
-        Class239_Sub2.aSpriteArray5857 = null;
+        Option_Sub2.aSpriteArray5857 = null;
         Class348_Sub12.aSpriteArray6742 = null;
         Class240.aSpriteArray4679 = null;
         if (i != -29776) method370(true);
         NPCDefinition.aSprite_1365 = null;
         SkyBoxSphereTypeList.aSpriteArray367 = null;
-        Class239_Sub9.aSpriteArray5933 = null;
+        Option_Sub9.aSpriteArray5933 = null;
         Class200.aSpriteArray2640 = null;
         Class348_Sub40_Sub37.aSpriteArray9467 = null;
         Class262.aFontRenderer_3326 = null;
-        Class239_Sub24.aSprite_6097 = null;
+        Option_Sub24.aSprite_6097 = null;
         Applet_Sub1.aFontRenderer_20 = null;
         Class240.aFontRenderer_4684 = null;
         Class169.aSpriteArray2260 = null;

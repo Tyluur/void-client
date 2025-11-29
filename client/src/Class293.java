@@ -65,7 +65,7 @@ final class Class293 implements Runnable {
                         for (int i_0_ = 0; i_0_ < (Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084); i_0_++) {
                             for (int i_1_ = 0; i_1_ < (Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084); i_1_++) {
                                 if (Class115.aBooleanArrayArrayArray1751[i - 1][i_0_][i_1_]) {
-                                    int i_2_ = (Class239_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_0_);
+                                    int i_2_ = (Option_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_0_);
                                     int i_3_ = (Class285_Sub2.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_1_);
                                     if (i_2_ >= 0 && i_2_ < var_s.anInt4587 && i_3_ >= 0 && i_3_ < var_s.anInt4590) {
                                         Class9.aHa171.H(i_2_ << Class362.anInt4459, var_s.method3982((byte) -86, i_3_, i_2_), i_3_ << Class362.anInt4459, anIntArray3747);

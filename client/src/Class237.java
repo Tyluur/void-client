@@ -408,7 +408,7 @@ class Class237 {
                             } else if (bool_75_) {
                                 i_100_ = (class277 == null ? 0 : Class48.anIntArray860[i_76_]);
                                 is_96_ = Class98.anIntArrayArray1566[i_76_];
-                                is_95_ = Class106.anIntArrayArray1638[i_76_];
+                                is_95_ = LoadingScreenOpFactory.anIntArrayArray1638[i_76_];
                                 is_97_ = Class163.anIntArrayArray2165[i_76_];
                                 is_99_ = (Class348_Sub15.anIntArrayArray6780[i_76_]);
                                 i_98_ = (class22 != null ? Class283.anIntArray3659[i_76_] : 0);
@@ -416,7 +416,7 @@ class Class237 {
                                 i_98_ = (class22 == null ? 0 : Class246.anIntArray3173[i_76_]);
                                 i_100_ = (class277 == null ? 0 : Class334.anIntArray4152[i_76_]);
                                 is_97_ = Class284.anIntArrayArray3677[i_76_];
-                                is_99_ = (Class239_Sub20.anIntArrayArray6054[i_76_]);
+                                is_99_ = (Option_Sub20.anIntArrayArray6054[i_76_]);
                                 is_96_ = (Exception_Sub1.anIntArrayArray111[i_76_]);
                                 is_95_ = (Class348_Sub16_Sub3.anIntArrayArray8910[i_76_]);
                             }
@@ -453,48 +453,48 @@ class Class237 {
                                             if (!bools[-i_77_ + 2 & 0x3] || is_95_[2] != i_102_) {
                                                 if (!bools[-i_77_ + 1 & 0x3] || (is_95_[1] != i_102_)) {
                                                     if (!(bools[0x3 & -i_77_ + 3]) || (i_102_ != is_95_[3])) {
-                                                        Class348.anIntArray4288[0] = is_96_[i_102_];
-                                                        Class348.anIntArray4288[1] = is_97_[i_102_];
-                                                        Class348.anIntArray4288[2] = is_99_[i_102_];
+                                                        Node.anIntArray4288[0] = is_96_[i_102_];
+                                                        Node.anIntArray4288[1] = is_97_[i_102_];
+                                                        Node.anIntArray4288[2] = is_99_[i_102_];
                                                         i_119_ = 3;
                                                     } else {
-                                                        Class348.anIntArray4288[0] = is_96_[i_102_];
-                                                        Class348.anIntArray4288[1] = 7;
-                                                        Class348.anIntArray4288[2] = is_99_[i_102_];
-                                                        Class348.anIntArray4288[3] = 7;
-                                                        Class348.anIntArray4288[4] = is_97_[i_102_];
+                                                        Node.anIntArray4288[0] = is_96_[i_102_];
+                                                        Node.anIntArray4288[1] = 7;
+                                                        Node.anIntArray4288[2] = is_99_[i_102_];
+                                                        Node.anIntArray4288[3] = 7;
+                                                        Node.anIntArray4288[4] = is_97_[i_102_];
                                                         i_119_ = 6;
-                                                        Class348.anIntArray4288[5] = is_99_[i_102_];
+                                                        Node.anIntArray4288[5] = is_99_[i_102_];
                                                     }
                                                 } else {
-                                                    Class348.anIntArray4288[0] = is_96_[i_102_];
-                                                    Class348.anIntArray4288[1] = 3;
-                                                    Class348.anIntArray4288[2] = is_99_[i_102_];
-                                                    Class348.anIntArray4288[3] = 3;
-                                                    Class348.anIntArray4288[4] = is_97_[i_102_];
+                                                    Node.anIntArray4288[0] = is_96_[i_102_];
+                                                    Node.anIntArray4288[1] = 3;
+                                                    Node.anIntArray4288[2] = is_99_[i_102_];
+                                                    Node.anIntArray4288[3] = 3;
+                                                    Node.anIntArray4288[4] = is_97_[i_102_];
                                                     i_119_ = 6;
-                                                    Class348.anIntArray4288[5] = is_99_[i_102_];
+                                                    Node.anIntArray4288[5] = is_99_[i_102_];
                                                 }
                                             } else {
-                                                Class348.anIntArray4288[0] = is_96_[i_102_];
-                                                Class348.anIntArray4288[1] = 5;
-                                                Class348.anIntArray4288[2] = is_99_[i_102_];
-                                                Class348.anIntArray4288[3] = 5;
-                                                Class348.anIntArray4288[4] = is_97_[i_102_];
+                                                Node.anIntArray4288[0] = is_96_[i_102_];
+                                                Node.anIntArray4288[1] = 5;
+                                                Node.anIntArray4288[2] = is_99_[i_102_];
+                                                Node.anIntArray4288[3] = 5;
+                                                Node.anIntArray4288[4] = is_97_[i_102_];
                                                 i_119_ = 6;
-                                                Class348.anIntArray4288[5] = is_99_[i_102_];
+                                                Node.anIntArray4288[5] = is_99_[i_102_];
                                             }
                                         } else {
-                                            Class348.anIntArray4288[0] = is_96_[i_102_];
-                                            Class348.anIntArray4288[1] = 1;
-                                            Class348.anIntArray4288[2] = is_99_[i_102_];
-                                            Class348.anIntArray4288[3] = 1;
-                                            Class348.anIntArray4288[4] = is_97_[i_102_];
-                                            Class348.anIntArray4288[5] = is_99_[i_102_];
+                                            Node.anIntArray4288[0] = is_96_[i_102_];
+                                            Node.anIntArray4288[1] = 1;
+                                            Node.anIntArray4288[2] = is_99_[i_102_];
+                                            Node.anIntArray4288[3] = 1;
+                                            Node.anIntArray4288[4] = is_97_[i_102_];
+                                            Node.anIntArray4288[5] = is_99_[i_102_];
                                             i_119_ = 6;
                                         }
                                         for (int i_120_ = 0; (i_119_ > i_120_); i_120_++) {
-                                            int i_121_ = (Class348.anIntArray4288[i_120_]);
+                                            int i_121_ = (Node.anIntArray4288[i_120_]);
                                             int i_122_ = -(2 * i_77_) + i_121_ & 0x7;
                                             int i_123_ = anIntArray3124[i_121_];
                                             int i_124_ = anIntArray3128[i_121_];
@@ -567,48 +567,48 @@ class Class237 {
                                         if (!bools[-i_77_ & 0x3] || i_102_ != is_95_[0]) {
                                             if (!bools[2 + -i_77_ & 0x3] || i_102_ != is_95_[2]) {
                                                 if (bools[0x3 & -i_77_ + 1] && (is_95_[1] == i_102_)) {
-                                                    Class348.anIntArray4288[0] = is_96_[i_102_];
-                                                    Class348.anIntArray4288[1] = 3;
-                                                    Class348.anIntArray4288[2] = is_99_[i_102_];
-                                                    Class348.anIntArray4288[3] = 3;
-                                                    Class348.anIntArray4288[4] = is_97_[i_102_];
-                                                    Class348.anIntArray4288[5] = is_99_[i_102_];
+                                                    Node.anIntArray4288[0] = is_96_[i_102_];
+                                                    Node.anIntArray4288[1] = 3;
+                                                    Node.anIntArray4288[2] = is_99_[i_102_];
+                                                    Node.anIntArray4288[3] = 3;
+                                                    Node.anIntArray4288[4] = is_97_[i_102_];
+                                                    Node.anIntArray4288[5] = is_99_[i_102_];
                                                     i_139_ = 6;
                                                 } else if ((bools[-i_77_ + 3 & 0x3]) && (i_102_ == is_95_[3])) {
-                                                    Class348.anIntArray4288[0] = is_96_[i_102_];
-                                                    Class348.anIntArray4288[1] = 7;
-                                                    Class348.anIntArray4288[2] = is_99_[i_102_];
-                                                    Class348.anIntArray4288[3] = 7;
-                                                    Class348.anIntArray4288[4] = is_97_[i_102_];
-                                                    Class348.anIntArray4288[5] = is_99_[i_102_];
+                                                    Node.anIntArray4288[0] = is_96_[i_102_];
+                                                    Node.anIntArray4288[1] = 7;
+                                                    Node.anIntArray4288[2] = is_99_[i_102_];
+                                                    Node.anIntArray4288[3] = 7;
+                                                    Node.anIntArray4288[4] = is_97_[i_102_];
+                                                    Node.anIntArray4288[5] = is_99_[i_102_];
                                                     i_139_ = 6;
                                                 } else {
-                                                    Class348.anIntArray4288[0] = is_96_[i_102_];
-                                                    Class348.anIntArray4288[1] = is_97_[i_102_];
+                                                    Node.anIntArray4288[0] = is_96_[i_102_];
+                                                    Node.anIntArray4288[1] = is_97_[i_102_];
                                                     i_139_ = 3;
-                                                    Class348.anIntArray4288[2] = is_99_[i_102_];
+                                                    Node.anIntArray4288[2] = is_99_[i_102_];
                                                 }
                                             } else {
-                                                Class348.anIntArray4288[0] = is_96_[i_102_];
-                                                Class348.anIntArray4288[1] = 5;
-                                                Class348.anIntArray4288[2] = is_99_[i_102_];
-                                                Class348.anIntArray4288[3] = 5;
-                                                Class348.anIntArray4288[4] = is_97_[i_102_];
+                                                Node.anIntArray4288[0] = is_96_[i_102_];
+                                                Node.anIntArray4288[1] = 5;
+                                                Node.anIntArray4288[2] = is_99_[i_102_];
+                                                Node.anIntArray4288[3] = 5;
+                                                Node.anIntArray4288[4] = is_97_[i_102_];
                                                 i_139_ = 6;
-                                                Class348.anIntArray4288[5] = is_99_[i_102_];
+                                                Node.anIntArray4288[5] = is_99_[i_102_];
                                             }
                                         } else {
-                                            Class348.anIntArray4288[0] = is_96_[i_102_];
-                                            Class348.anIntArray4288[1] = 1;
-                                            Class348.anIntArray4288[2] = is_99_[i_102_];
-                                            Class348.anIntArray4288[3] = 1;
-                                            Class348.anIntArray4288[4] = is_97_[i_102_];
+                                            Node.anIntArray4288[0] = is_96_[i_102_];
+                                            Node.anIntArray4288[1] = 1;
+                                            Node.anIntArray4288[2] = is_99_[i_102_];
+                                            Node.anIntArray4288[3] = 1;
+                                            Node.anIntArray4288[4] = is_97_[i_102_];
                                             i_139_ = 6;
-                                            Class348.anIntArray4288[5] = is_99_[i_102_];
+                                            Node.anIntArray4288[5] = is_99_[i_102_];
                                         }
                                         i_102_++;
                                         for (int i_140_ = 0; (i_140_ < i_139_); i_140_++) {
-                                            int i_141_ = (Class348.anIntArray4288[i_140_]);
+                                            int i_141_ = (Node.anIntArray4288[i_140_]);
                                             int i_142_ = -(2 * i_77_) + i_141_ & 0x7;
                                             int i_143_ = anIntArray3124[i_141_];
                                             int i_144_ = anIntArray3128[i_141_];
@@ -738,7 +738,7 @@ class Class237 {
 
     static final Class231 method1677(int i, int i_164_) {
         anInt3116++;
-        Class231[] class231s = Class239.method1709(-126);
+        Class231[] class231s = Option.method1709(-126);
         if (i >= -111) return null;
         for (int i_165_ = 0; i_165_ < class231s.length; i_165_++) {
             Class231 class231 = class231s[i_165_];
@@ -1240,8 +1240,8 @@ class Class237 {
 
     static final void method1686(int i) {
         int i_308_ = -110 / ((i - -74) / 44);
-        if (Class348_Sub40_Sub29.anInt9372 > 1) Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub17_7263), 4);
-        else Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub17_7263), 2);
+        if (Class348_Sub40_Sub29.anInt9372 > 1) Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub17_7263), 4);
+        else Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub17_7263), 2);
         anInt3106++;
     }
 

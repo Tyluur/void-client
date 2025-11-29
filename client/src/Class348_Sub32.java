@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub32 extends Class348 {
+final class Class348_Sub32 extends Node {
     private final Class123 aClass123_6927;
     private float[][] aFloatArrayArray6928;
     private final s_Sub2 aS_Sub2_6929;
@@ -43,9 +43,9 @@ final class Class348_Sub32 extends Class348 {
         int i_8_ = aS_Sub2_6929.method3986(i_6_, i_7_, (byte) -17);
         if ((i_3_ & 0x7f) == 0 || (i & 0x7f) == 0) {
             l = ((long) i_7_ << 16 & 65535L << 16 | 0xffffL & (long) i_6_);
-            Class348 class348 = aClass356_6932.method3480(l, -6008);
-            if (class348 != null) {
-                method3022((byte) -46, (((Class348_Sub29) class348).aShort6911));
+            Node node = aClass356_6932.method3480(l, -6008);
+            if (node != null) {
+                method3022((byte) -46, (((Class348_Sub29) node).aShort6911));
                 return;
             }
         }

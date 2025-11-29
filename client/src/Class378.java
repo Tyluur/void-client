@@ -722,10 +722,10 @@ public final class Class378 extends ha_Sub3 {
     private static final int method3963(int i, Class251 class251) {
         if (i != 594) return 7;
         if (class251 == Class135_Sub2.aClass251_4835) return 1;
-        if (class251 != Class239_Sub18.aClass251_6030) {
+        if (class251 != Option_Sub18.aClass251_6030) {
             if (class251 != Class348_Sub40_Sub38.aClass251_9477) {
                 if (Class57.aClass251_1051 == class251) return 4;
-                if (class251 == Class239_Sub14.aClass251_5989) return 256;
+                if (class251 == Option_Sub14.aClass251_5989) return 256;
             } else return 3;
         } else return 2;
         return 0;
@@ -789,7 +789,7 @@ public final class Class378 extends ha_Sub3 {
 
     final void method3940(int i) {
         if (anIDirect3DVertexShader9794 == null && ((this.aClass251Array8113[this.anInt8175]) != Class348_Sub42_Sub18.aClass251_9685)) {
-            if (Class239_Sub18.aClass251_6030 == (this.aClass251Array8113[this.anInt8175])) this.anIDirect3DDevice9810.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175].method928(aFloatArray9797, i));
+            if (Option_Sub18.aClass251_6030 == (this.aClass251Array8113[this.anInt8175])) this.anIDirect3DDevice9810.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175].method928(aFloatArray9797, i));
             else this.anIDirect3DDevice9810.SetTransform(16 - -this.anInt8175, this.aClass101_Sub2Array8131[this.anInt8175].method918(aFloatArray9797, i ^ 0x1));
             int i_72_ = method3963(594, (this.aClass251Array8113[this.anInt8175]));
             if (anIntArray9805[this.anInt8175] != i_72_) {

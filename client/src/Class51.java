@@ -34,7 +34,7 @@ final class Class51 {
     boolean aBoolean894;
     int anInt895;
     boolean aBoolean896;
-    static Class311 aClass311_897;
+    static Class311 renderer;
     static int anInt898;
     static int anInt899;
     private int anInt900;
@@ -479,10 +479,10 @@ final class Class51 {
                                                                                                                     for (int i_44_ = 0; i_44_ < i_42_; i_44_++) {
                                                                                                                         boolean bool = class348_sub49.readUnsignedByte(255) == 1;
                                                                                                                         int i_45_ = class348_sub49.readMedium(-1);
-                                                                                                                        Class348 class348;
-                                                                                                                        if (!bool) class348 = new Class348_Sub35(class348_sub49.readInt((byte) -126));
-                                                                                                                        else class348 = new Class348_Sub50(class348_sub49.readString((byte) -87));
-                                                                                                                        aClass356_881.method3483((byte) 86, i_45_, class348);
+                                                                                                                        Node node;
+                                                                                                                        if (!bool) node = new Class348_Sub35(class348_sub49.readInt((byte) -126));
+                                                                                                                        else node = new Class348_Sub50(class348_sub49.readString((byte) -87));
+                                                                                                                        aClass356_881.method3483((byte) 86, i_45_, node);
                                                                                                                     }
                                                                                                                 }
                                                                                                             } else this.anInt909 = class348_sub49.readSmart(-121);
@@ -620,7 +620,7 @@ final class Class51 {
         aStringArray932 = null;
         if (i > -19) method486(-34);
         aClass101_905 = null;
-        aClass311_897 = null;
+        renderer = null;
     }
 
     final int method487(int i, int i_79_, int i_80_) {

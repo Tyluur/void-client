@@ -263,10 +263,10 @@ final class NPCDefinition {
                                                                                             for (int i_19_ = 0; i_17_ > i_19_; i_19_++) {
                                                                                                 boolean bool = class348_sub49.readUnsignedByte(255) == 1;
                                                                                                 int i_20_ = class348_sub49.readMedium(-1);
-                                                                                                Class348 class348;
-                                                                                                if (!bool) class348 = new Class348_Sub35(class348_sub49.readInt((byte) -126));
-                                                                                                else class348 = new Class348_Sub50(class348_sub49.readString((byte) -120));
-                                                                                                aClass356_1386.method3483((byte) 61, i_20_, class348);
+                                                                                                Node node;
+                                                                                                if (!bool) node = new Class348_Sub35(class348_sub49.readInt((byte) -126));
+                                                                                                else node = new Class348_Sub50(class348_sub49.readString((byte) -120));
+                                                                                                aClass356_1386.method3483((byte) 61, i_20_, node);
                                                                                             }
                                                                                         }
                                                                                     } else this.anInt1337 = class348_sub49.readUnsignedByte(255);
@@ -311,17 +311,17 @@ final class NPCDefinition {
             Class318_Sub6.anIntArray6432 = new int[i_29_];
             for (int i_31_ = 0; i_31_ < i_29_; i_31_++)
                 Class318_Sub6.anIntArray6432[i_31_] = (i_31_ << 12) / i_29_;
-            Class239_Sub22.anInt6076 = i_29_ + -1;
+            Option_Sub22.anInt6076 = i_29_ + -1;
             Class348_Sub40_Sub6.anInt9139 = i_29_;
             Class248.anInt3201 = 32 * i_29_;
         }
         if (i_30_ <= 108) aClient1367 = null;
         if (Class286_Sub2.anInt6212 != i) {
             if (Class348_Sub40_Sub6.anInt9139 != i) {
-                Class239_Sub18.anIntArray6035 = new int[i];
+                Option_Sub18.anIntArray6035 = new int[i];
                 for (int i_32_ = 0; i_32_ < i; i_32_++)
-                    Class239_Sub18.anIntArray6035[i_32_] = (i_32_ << 12) / i;
-            } else Class239_Sub18.anIntArray6035 = Class318_Sub6.anIntArray6432;
+                    Option_Sub18.anIntArray6035[i_32_] = (i_32_ << 12) / i;
+            } else Option_Sub18.anIntArray6035 = Class318_Sub6.anIntArray6432;
             Class286_Sub2.anInt6212 = i;
             Class299_Sub2.anInt6325 = -1 + i;
         }

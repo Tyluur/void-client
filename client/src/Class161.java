@@ -40,22 +40,22 @@ final class Class161 {
             i = 0;
         }
         anInt2140++;
-        if (Class239_Sub14.aClass190_5990 == null || !Class239_Sub14.aClass190_5990.method1424(class190, (byte) 84)) {
-            Class239_Sub14.aClass190_5990 = class190;
-            Class348_Sub33.aLong6963 = Class62.method599(-78);
+        if (Option_Sub14.aClass190_5990 == null || !Option_Sub14.aClass190_5990.method1424(class190, (byte) 84)) {
+            Option_Sub14.aClass190_5990 = class190;
+            Class348_Sub33.aLong6963 = Class62.safeTime(-78);
             Class206.anInt4889 = Class286_Sub5.anInt6248 = i;
             if (Class206.anInt4889 == 0) Class348_Sub40_Sub32.method3134(-1);
             else {
                 Class318_Sub1_Sub1.aFloat8725 = Class160.aFloat2137;
                 Canvas_Sub1.anInt70 = QuestTypeList.anInt2500;
-                Class239_Sub24.aClass299_6098 = Class158.aClass299_4938;
+                Option_Sub24.aClass299_6098 = Class158.aClass299_4938;
                 Class64.aFloat1136 = Js5TextureSource.aFloat4626;
                 Class245.aFloat3172 = Class269.aFloat3462;
                 Index.aFloat670 = Class348_Sub3.aFloat6586;
-                Class258_Sub4.aFloat8560 = Class239_Sub10.aFloat5945;
+                Class258_Sub4.aFloat8560 = Option_Sub10.aFloat5945;
                 Class246.aFloat3177 = Class361.aFloat4455;
                 Class318_Sub1_Sub3.anInt8739 = Class119_Sub1.anInt4703;
-                Class239_Sub19.anInt6042 = Class36.anInt486;
+                Option_Sub19.anInt6042 = Class36.anInt486;
             }
         }
         if (bool != false) aBoolean2151 = true;
@@ -72,29 +72,29 @@ final class Class161 {
     }
 
     static final void method1263(boolean bool) {
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub27_7255), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub27_7255), 1);
         anInt2142++;
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub14_7250), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub14_7264), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub4_7220), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub9_7256), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub13_7236), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub1_7246), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub21_7270), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub7_7238), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub24_7235), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub28_7230), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub18_7259), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub16_7247), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub20_7216), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub20_7248), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub15_7224), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub6_7226), 0);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub12_7243), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub27_7261), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub14_7250), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub14_7264), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub4_7220), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub9_7256), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub13_7236), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub1_7246), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub21_7270), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub7_7238), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub24_7235), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub28_7230), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub18_7259), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub16_7247), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub20_7216), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub20_7248), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub15_7224), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub6_7226), 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub12_7243), 0);
         Class237.method1686(55);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub23_7231), 2);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub29_7229), 2);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub23_7231), 2);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub29_7229), 2);
         Class348_Sub40.updateFeatureMask(-1);
         Class76.method773(bool);
         RuntimeException_Sub1.aBoolean4604 = true;

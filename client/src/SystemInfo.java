@@ -4,7 +4,7 @@
 
 import jaclib.hardware_info.HardwareInfo;
 
-final class SystemInfo extends Class348 {
+final class SystemInfo extends Node {
     private int anInt6591;
     private int anInt6592;
     static int anInt6593;

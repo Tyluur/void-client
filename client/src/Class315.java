@@ -44,7 +44,7 @@ final class Class315 {
         Class346.aBoolean4275 = bool;
         Class285.aClass348_Sub16_Sub3_4743 = null;
         Class318_Sub1_Sub4_Sub1.anInt10074 = i_1_;
-        Class239_Sub14.anInt5994 = i_3_;
+        Option_Sub14.anInt5994 = i_3_;
         Class348_Sub43.anInt7068 = 1;
         if (i_0_ != 50) method2357(-59, null);
         Class318.anInt3971 = i_2_;

@@ -136,8 +136,8 @@ final class Class235 {
         }
         method1672(aClass318_Sub1_3051, true);
         if (bool_3_) {
-            bool_3_ = bool_3_ & (aBoolean3065 & Class316.aClass348_Sub51_3959.aClass239_Sub7_7238.method1748(-32350) != 0);
-            bool_3_ = (bool_3_ & (class51.anInt941 != anInt3056 || (aClass17_3057 != null && Class316.aClass348_Sub51_3959.aClass239_Sub7_7238.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aClass17_3057.aBoolean254 || Class28.aBoolean5002) && (anInt3083 != anInt3084))))));
+            bool_3_ = bool_3_ & (aBoolean3065 & Class316.clientOptions.aClass239_Sub7_7238.method1748(-32350) != 0);
+            bool_3_ = (bool_3_ & (class51.anInt941 != anInt3056 || (aClass17_3057 != null && Class316.clientOptions.aClass239_Sub7_7238.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aClass17_3057.aBoolean254 || Class28.aBoolean5002) && (anInt3083 != anInt3084))))));
         }
         if (bool && !bool_3_) {
             anInt3053 = class51.anInt941;

@@ -86,7 +86,7 @@ abstract class Class55 {
             return !aClass348_Sub23_Sub2_1001.method2976(-1) || method519(126) > aClass348_Sub23_Sub2_1001.method2980((byte) 100);
         }
         double d = aClass348_Sub23_Sub2_1001.method2977(0);
-        return d == 0.0 || (double) Class62.method599(-74) >= 1000.0 / d + (double) aClass348_Sub23_Sub2_1001.method2979(30);
+        return d == 0.0 || (double) Class62.safeTime(-74) >= 1000.0 / d + (double) aClass348_Sub23_Sub2_1001.method2979(30);
     }
 
     final void method508(int i) {

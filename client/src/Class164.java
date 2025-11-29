@@ -14,16 +14,17 @@ final class Class164 {
         anInt2175++;
         Class351.aClass60_4327.method590(i + -62);
         Class358.aClass60_4417.method590(0);
-        Class239_Sub24.aClass60_6096.method590(0);
+        Option_Sub24.aClass60_6096.method590(0);
         if (i != 62) method1277((byte) 43);
         Class348_Sub40_Sub9.aClass60_9171.method590(0);
     }
 
-    static final int method1278(int i) {
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub11_7265.method1768(i + -3690) == 0) {
+    // method1278
+    static final int essentials(int i) {
+        if (Class316.clientOptions.safeMode.getValue(i + -3690) == 0) {
             for (int i_0_ = 0; (i_0_ < ClientScript.anInt9699); i_0_++) {
-                if (Class348_Sub42_Sub5.anInterface6Array9534[i_0_].method28((byte) 31) == 115 || Class348_Sub42_Sub5.anInterface6Array9534[i_0_].method28((byte) 71) == 83) {
-                    Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub11_7265), 1);
+                if (Class348_Sub42_Sub5.KEYBOARD_EVENT_ARRAY_1[i_0_].getKeyChar((byte) 31) == 115 || Class348_Sub42_Sub5.KEYBOARD_EVENT_ARRAY_1[i_0_].getKeyChar((byte) 71) == 83) {
+                    Class316.clientOptions.update((byte) 74, (Class316.clientOptions.safeMode), 1);
                     Class304.aBoolean3847 = true;
                     break;
                 }
@@ -32,57 +33,57 @@ final class Class164 {
         anInt2174++;
         if (Class348_Sub42_Sub15.state == LoadState.WAIT_FOR_MEMORY) {
             Runtime runtime = Runtime.getRuntime();
-            int i_1_ = (int) ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L);
-            long l = Class62.method599(i + 28559);
-            if (Class348_Sub17.aLong6791 == 0) Class348_Sub17.aLong6791 = l;
-            if (i_1_ > 16384 && -Class348_Sub17.aLong6791 + l < 5000) {
-                if (-Class173.aLong2286 + l > 1000L) {
+            int usedMemory = (int) ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L);
+            long now = Class62.safeTime(i + 28559);
+            if (Class348_Sub17.lastmemoryCheck == 0) Class348_Sub17.lastmemoryCheck = now;
+            if (usedMemory > 16384 && -Class348_Sub17.lastmemoryCheck + now < 5000) {
+                if (-Class173.lastGc + now > 1000L) {
                     System.gc();
-                    Class173.aLong2286 = l;
+                    Class173.lastGc = now;
                 }
                 return 0;
             }
         }
         if (LoadState.INIT_LOADING_SCREEN_ARCHIVES == Class348_Sub42_Sub15.state) {
-            if (Class175.aClass340_2327 == null) Class175.aClass340_2327 = new Class340(SystemInfo.aClass248_6601, Class39.aClass112_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657);
-            if (!Class175.aClass340_2327.method2674(7)) return 0;
-            Class348_Sub23.method2965(null, 0, true, 0);
-            Class286_Sub7.aBoolean6289 = !Class348_Sub14.method2804((byte) -63);
-            Class286_Sub7.aIndex_6277 = Class369_Sub2.index(false, (Class286_Sub7.aBoolean6289 ? 34 : 32), (byte) -23, 1);
-            Class348_Sub40_Sub17_Sub1.aIndex_10426 = Class369_Sub2.index(false, 33, (byte) -23, 1);
+            if (Class175.js5MasterIndex == null) Class175.js5MasterIndex = new Js5MasterIndex(SystemInfo.aClass248_6601, Class39.aClass112_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657);
+            if (!Class175.js5MasterIndex.method2674(7)) return 0;
+            Class348_Sub23.setToolkit(null, 0, true, 0);
+            Class286_Sub7.loadSpritesRaw = !Class348_Sub14.method2804((byte) -63);
+            Class286_Sub7.LOADING_SPRITES = Class369_Sub2.index(false, (Class286_Sub7.loadSpritesRaw ? 34 : 32), (byte) -23, 1);
+            Class348_Sub40_Sub17_Sub1.LOADING_SCREENS = Class369_Sub2.index(false, 33, (byte) -23, 1);
             Class104.FONT_INDEX = Class369_Sub2.index(false, 13, (byte) -23, 1);
         }
         if (LoadState.FETCH_LOADING_SCREEN_RESOURCES == Class348_Sub42_Sub15.state) {
-            boolean bool = Class348_Sub40_Sub17_Sub1.aIndex_10426.method401(89);
-            int i_2_ = Class13.aClass314_Sub1Array223[33].method2349(1);
-            i_2_ = i_2_ + Class13.aClass314_Sub1Array223[!Class286_Sub7.aBoolean6289 ? 32 : 34].method2349(1);
-            i_2_ += Class13.aClass314_Sub1Array223[13].method2349(1);
-            i_2_ = i_2_ + (!bool ? Class348_Sub40_Sub17_Sub1.aIndex_10426.method398((byte) -31) : 100);
+            boolean bool = Class348_Sub40_Sub17_Sub1.LOADING_SCREENS.isComplete(89);
+            int i_2_ = Class13.js5ResourceProviders[33].indexPercentage(1);
+            i_2_ = i_2_ + Class13.js5ResourceProviders[!Class286_Sub7.loadSpritesRaw ? 32 : 34].indexPercentage(1);
+            i_2_ += Class13.js5ResourceProviders[13].indexPercentage(1);
+            i_2_ = i_2_ + (!bool ? Class348_Sub40_Sub17_Sub1.LOADING_SCREENS.completePercentage((byte) -31) : 100);
             if (i_2_ != 400) return i_2_ / 4;
-            Class348_Sub31.anInt6924 = Class286_Sub7.aIndex_6277.method389(77);
-            Class108.anInt1663 = Class348_Sub40_Sub17_Sub1.aIndex_10426.method389(i + 28561);
-            Class106.method1001(Class286_Sub7.aIndex_6277, 0);
-            int i_3_ = Class316.aClass348_Sub51_3959.aClass239_Sub19_7257.method1805(i ^ 0x11ae);
-            Class186_Sub1.aClass111_5813 = new Class111(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class348_Sub40_Sub17_Sub1.aIndex_10426);
-            int[] is = Class186_Sub1.aClass111_5813.method1046(i_3_, 0);
-            if (is.length == 0) is = Class186_Sub1.aClass111_5813.method1046(0, 0);
-            Class106 class106 = new Class106(Class286_Sub7.aIndex_6277, Class104.FONT_INDEX);
+            Class348_Sub31.anInt6924 = Class286_Sub7.LOADING_SPRITES.indexCrc(77);
+            Class108.anInt1663 = Class348_Sub40_Sub17_Sub1.LOADING_SCREENS.indexCrc(i + 28561);
+            LoadingScreenOpFactory.loadFonts(Class286_Sub7.LOADING_SPRITES, 0);
+            int i_3_ = Class316.clientOptions.aClass239_Sub19_7257.method1805(i ^ 0x11ae);
+            Class186_Sub1.loadingScreenManager = new LoadingScreenManager(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class348_Sub40_Sub17_Sub1.LOADING_SCREENS);
+            int[] is = Class186_Sub1.loadingScreenManager.getSequence(i_3_, 0);
+            if (is.length == 0) is = Class186_Sub1.loadingScreenManager.getSequence(0, 0);
+            LoadingScreenOpFactory opFactory = new LoadingScreenOpFactory(Class286_Sub7.LOADING_SPRITES, Class104.FONT_INDEX);
             if (is.length > 0) {
-                Class182.anInterface16Array2447 = new Interface16[is.length];
-                for (int i_4_ = 0; (Class182.anInterface16Array2447.length > i_4_); i_4_++)
-                    Class182.anInterface16Array2447[i_4_] = new Class195(Class186_Sub1.aClass111_5813.method1043(is[i_4_], (byte) 102), class106);
+                Class182.loadingScreens = new LoadingScreen[is.length];
+                for (int i_4_ = 0; (Class182.loadingScreens.length > i_4_); i_4_++)
+                    Class182.loadingScreens[i_4_] = new Class195(Class186_Sub1.loadingScreenManager.get(is[i_4_], (byte) 102), opFactory);
             }
         }
-        if (Class348_Sub42_Sub15.state == LoadState.INIT_FONT_INFO) Class348_Sub42_Sub3.method3178(Class104.FONT_INDEX, -81, Class5_Sub1.method184(1084489728), Class286_Sub7.aIndex_6277);
+        if (Class348_Sub42_Sub15.state == LoadState.INIT_FONT_INFO) Class348_Sub42_Sub3.initFontTypeList(Class104.FONT_INDEX, -81, Class5_Sub1.method184(1084489728), Class286_Sub7.LOADING_SPRITES);
         if (LoadState.LOAD_FONTS == Class348_Sub42_Sub15.state) {
             int i_5_ = Class348_Sub50.method3420(0);
             int i_6_ = Class348_Sub42_Sub16.method3256(2);
             if (i_6_ > i_5_) return 100 * i_5_ / i_6_;
         }
         if (Class348_Sub42_Sub15.state == LoadState.FETCH_FONTS) {
-            if (Class182.anInterface16Array2447 != null && (Class182.anInterface16Array2447.length > 0)) {
-                if (Class182.anInterface16Array2447[0].method60(-19079) < 100) return 0;
-                if (Class182.anInterface16Array2447.length > 1 && Class186_Sub1.aClass111_5813.method1044(86) && (Class182.anInterface16Array2447[1].method60(i + 9581) < 100)) return 0;
+            if (Class182.loadingScreens != null && (Class182.loadingScreens.length > 0)) {
+                if (Class182.loadingScreens[0].percentage(-19079) < 100) return 0;
+                if (Class182.loadingScreens.length > 1 && Class186_Sub1.loadingScreenManager.hasDefault(86) && (Class182.loadingScreens[1].percentage(i + 9581) < 100)) return 0;
             }
             TimedVarDomain.method1311(5139, Class348_Sub8.aHa6654);
             Class369.method3568(Class348_Sub8.aHa6654, 4);
@@ -90,7 +91,7 @@ final class Class164 {
         }
         if (Class348_Sub42_Sub15.state == LoadState.CREATE_COLLISION_MAPS) {
             for (int i_7_ = 0; i_7_ < 4; i_7_++)
-                Class348_Sub45.aClass361Array7108[i_7_] = Sprite_Sub1.method988(Class348_Sub40_Sub3.anInt9109, 1, Class367_Sub4.anInt7319);
+                Class348_Sub45.collisionMaps[i_7_] = Sprite_Sub1.method988(Class348_Sub40_Sub3.mapWidth, 1, Class367_Sub4.mapLength);
         }
         if (Class348_Sub42_Sub15.state == LoadState.OPEN_JS5_GROUPS) {
             Class21.SPRITES = Class369_Sub2.index(false, 8, (byte) -23, 1);
@@ -106,7 +107,7 @@ final class Class164 {
             Class16.HUFFMAN = Class369_Sub2.index(false, 10, (byte) -23, 1);
             Class348_Sub23_Sub2.MUSIC_EFFECTS = Class369_Sub2.index(false, 11, (byte) -23, 1);
             Class113.CLIENT_SCRIPTS = Class369_Sub2.index(false, 12, (byte) -23, 1);
-            Class239_Sub4.MIDI_INSTRUMENTS = Class369_Sub2.index(false, 14, (byte) -23, 1);
+            Option_Sub4.MIDI_INSTRUMENTS = Class369_Sub2.index(false, 14, (byte) -23, 1);
             Class123.aIndex_1815 = Class369_Sub2.index(false, 15, (byte) -23, 1);
             Class94.OBJECTS = Class369_Sub2.index(false, 16, (byte) -23, 1);
             Class247.ENUMS = Class369_Sub2.index(false, 17, (byte) -23, 1);
@@ -119,24 +120,24 @@ final class Class164 {
             Class130.QUICK_CHAT_MESSAGES = Class369_Sub2.index(false, 24, (byte) -23, 1);
             VarcstrTypeList.QUICK_CHAT_MENUS = Class369_Sub2.index(false, 25, (byte) -23, 1);
             Class348_Sub11.TEXTURE_DEFINITIONS = Class369_Sub2.index(true, 26, (byte) -23, 1);
-            Class239.PARTICLES = Class369_Sub2.index(false, 27, (byte) -23, 1);
+            Option.PARTICLES = Class369_Sub2.index(false, 27, (byte) -23, 1);
             Class367_Sub8.DEFAULTS = Class369_Sub2.index(true, 28, (byte) -23, 1);
             Class262.BILLBOARDS = Class369_Sub2.index(false, 29, (byte) -23, 1);
             Class126.NATIVE_LIBRARIES = Class369_Sub2.index(true, 30, (byte) -23, 1);
             Class136.SHADERS = Class369_Sub2.index(true, 31, (byte) -23, 1);
-            Class146.aIndex_2015 = Class369_Sub2.index(true, 36, (byte) -23, 2);
+            Class146.VIDEOS = Class369_Sub2.index(true, 36, (byte) -23, 2);
         }
         if (LoadState.GET_JS5_INDEXES == Class348_Sub42_Sub15.state) {
-            int i_8_ = 0;
+            int percentage = 0;
             for (int i_9_ = 0; i_9_ < 37; i_9_++) {
-                if (Class13.aClass314_Sub1Array223[i_9_] != null) i_8_ += (Class13.aClass314_Sub1Array223[i_9_].method2349(i + 28661) * Class8.anIntArray164[i_9_] / 100);
+                if (Class13.js5ResourceProviders[i_9_] != null) percentage += (Class13.js5ResourceProviders[i_9_].indexPercentage(i + 28661) * Class8.JS5_PERCENTAGES[i_9_] / 100);
             }
-            if (i_8_ != 100) {
-                if (FloorOverlayTypeList.anInt3435 < 0) FloorOverlayTypeList.anInt3435 = i_8_;
-                return ((i_8_ + -FloorOverlayTypeList.anInt3435) * 100 / (-FloorOverlayTypeList.anInt3435 + 100));
+            if (percentage != 100) {
+                if (FloorOverlayTypeList.anInt3435 < 0) FloorOverlayTypeList.anInt3435 = percentage;
+                return ((percentage + -FloorOverlayTypeList.anInt3435) * 100 / (-FloorOverlayTypeList.anInt3435 + 100));
             }
-            Class286_Sub5.method2159((byte) -109, Class21.SPRITES);
-            Class348_Sub42_Sub3.method3178(Class104.FONT_INDEX, -124, Class5_Sub1.method184(i ^ ~0x40a46ff3), Class21.SPRITES);
+            Class286_Sub5.getJs5Indexes((byte) -109, Class21.SPRITES);
+            Class348_Sub42_Sub3.initFontTypeList(Class104.FONT_INDEX, -124, Class5_Sub1.method184(i ^ ~0x40a46ff3), Class21.SPRITES);
         }
         if (LoadState.PLAY_THEME_MUSIC == Class348_Sub42_Sub15.state) {
             if (Class345.anInt4270 == -1) Class345.anInt4270 = Class59_Sub2_Sub1.MUSIC.method417("scape main", 0);
@@ -145,7 +146,7 @@ final class Class164 {
         }
         if (LoadState.SETUP_LIB_PATH == Class348_Sub42_Sub15.state) Class30.method323(Class126.NATIVE_LIBRARIES, Class348_Sub23_Sub1.aClass297_8992, (byte) 95);
         if (LoadState.DOWNLOAD_STUFF == Class348_Sub42_Sub15.state) {
-            int i_10_ = Class239_Sub11.method1770((byte) -25);
+            int i_10_ = SafeModeOption.method1770((byte) -25);
             if (i_10_ < 100) return i_10_;
             ObjectTypeList.method2013(Class367_Sub8.DEFAULTS.method415((byte) 73, 1), (byte) 112);
             RuntimeException_Sub1.method4012(Class367_Sub8.DEFAULTS.method415((byte) 73, 3), (byte) -111);
@@ -156,7 +157,7 @@ final class Class164 {
             Class348_Sub40_Sub4.js5TextureSource = new Js5TextureSource(Class348_Sub11.TEXTURE_DEFINITIONS, Class369_Sub2.TEXTURES, Class21.SPRITES);
             Class101_Sub3.paramTypeList = new ParamTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
             Class64_Sub3.basTypeList = new BASTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
-            Class239.cursorTypeList = new CursorTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS, Class21.SPRITES);
+            Option.cursorTypeList = new CursorTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS, Class21.SPRITES);
             Class348_Sub7.enumTypeList = new EnumTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class247.ENUMS);
             Class229.floorOverlayTypeList = new FloorOverlayTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
             Class362.floorUnderlayTypeList = new FloorUnderlayTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
@@ -176,18 +177,18 @@ final class Class164 {
             Class348_Sub40_Sub18.gfxTypeList = new GfxTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class78.GRAPHICS, aa_Sub3.MODELS);
             Class136.structTypeList = new StructTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
             Class91.varcStrTypeList = new VarcstrTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
-            Class239_Sub14.varcTypeList = new VarcTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Option_Sub14.varcTypeList = new VarcTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
             Class229.varBitTypeList = new VarBitTypeListClient(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class348_Sub16_Sub3.VARBITS);
             Class269.varPlayerTypeList = new VarPlayerTypeListClient(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
             StructTypeList.initInterfaces(Class104.FONT_INDEX, (byte) -100, Class348_Sub35.INTERFACES, Class21.SPRITES, aa_Sub3.MODELS);
             Applet_Sub1.setBillboardJs5(0, Class262.BILLBOARDS);
             Class200.quickChatCatTypeList = new QuickChatCatTypeList(Class348_Sub33.language, Class130.QUICK_CHAT_MESSAGES, VarcstrTypeList.QUICK_CHAT_MENUS);
-            Class239_Sub6.quickChatPhraseTypeList = new QuickChatPhraseTypeList(Class348_Sub33.language, Class130.QUICK_CHAT_MESSAGES, VarcstrTypeList.QUICK_CHAT_MENUS, new Class28());
+            Option_Sub6.quickChatPhraseTypeList = new QuickChatPhraseTypeList(Class348_Sub33.language, Class130.QUICK_CHAT_MESSAGES, VarcstrTypeList.QUICK_CHAT_MENUS, new Class28());
             IDKTypeList.initWornItemIds(0);
-            Class348_Sub40_Sub12.objectTypeList.method2008(i + 28539, Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(i + -3690) == 0);
+            Class348_Sub40_Sub12.objectTypeList.method2008(i + 28539, Class316.clientOptions.aClass239_Sub27_7261.method1840(i + -3690) == 0);
             Class318_Sub1_Sub3_Sub3.timedVarDomain = new TimedVarDomain();
             Class348_Sub40.updateFeatureMask(-1);
-            RuntimeException_Sub1.method4011(i + 29684, Class239.PARTICLES);
+            RuntimeException_Sub1.method4011(i + 29684, Option.PARTICLES);
             Class348_Sub29.method3004(aa_Sub3.MODELS, false, Class348_Sub40_Sub4.js5TextureSource);
             Class296 codec = new Class296(Class16.HUFFMAN.method391("huffman", "", -29832));
             ha_Sub3.setHuffman(codec, (byte) 13);
@@ -208,11 +209,11 @@ final class Class164 {
             Class75.method752(Class348_Sub32.WORLD_MAP, Class229.floorOverlayTypeList, Class362.floorUnderlayTypeList, Class348_Sub40_Sub12.objectTypeList, Class348_Sub23_Sub2.mapElementTypeList, Class2.msiTypeList, Class318_Sub1_Sub3_Sub3.timedVarDomain);
         if (LoadState.SETUP_VARC_SYSTEM == Class348_Sub42_Sub15.state) {
             // TODO make cache edit to extend these or change id's
-            Class77.anIntArray1303 = (new int[Class239_Sub14.varcTypeList.anInt3305 + 1000]);
-            Class286_Sub6.aBooleanArray6270 = (new boolean[Class239_Sub14.varcTypeList.anInt3305 + 1000]);
+            Class77.anIntArray1303 = (new int[Option_Sub14.varcTypeList.anInt3305 + 1000]);
+            Class286_Sub6.aBooleanArray6270 = (new boolean[Option_Sub14.varcTypeList.anInt3305 + 1000]);
             Class258_Sub2.aStringArray8532 = new String[Class91.varcStrTypeList.anInt1439];
-            for (int i_13_ = 0; Class239_Sub14.varcTypeList.anInt3305 + 1000 > i_13_; i_13_++) {
-                if (Class239_Sub14.varcTypeList.method1976(i_13_, i ^ ~0x6fc0).anInt2135 == 0) {
+            for (int i_13_ = 0; Option_Sub14.varcTypeList.anInt3305 + 1000 > i_13_; i_13_++) {
+                if (Option_Sub14.varcTypeList.method1976(i_13_, i ^ ~0x6fc0).anInt2135 == 0) {
                     Class286_Sub6.aBooleanArray6270[i_13_] = true;
                     Class335.anInt4168++;
                 }
@@ -247,28 +248,28 @@ final class Class164 {
         }
         if (LoadState.SHOW_LOGIN_WINDOW == Class348_Sub42_Sub15.state) Class348_Sub42_Sub8.method3198(true, (byte) -45);
         if (Class348_Sub42_Sub15.state == LoadState.CLEANUP) {
-            Class51.aClass311_897.method2319((byte) -56);
+            Class51.renderer.method2319((byte) -56);
             try {
                 Class348_Sub32.aThread6946.join();
             } catch (InterruptedException interruptedexception) {
                 return 0;
             }
-            Class186_Sub1.aClass111_5813 = null;
-            Class348_Sub40_Sub17_Sub1.aIndex_10426 = null;
-            Class51.aClass311_897 = null;
-            Class182.anInterface16Array2447 = null;
+            Class186_Sub1.loadingScreenManager = null;
+            Class348_Sub40_Sub17_Sub1.LOADING_SCREENS = null;
+            Class51.renderer = null;
+            Class182.loadingScreens = null;
             Class348_Sub32.aThread6946 = null;
-            Class286_Sub7.aIndex_6277 = null;
+            Class286_Sub7.LOADING_SPRITES = null;
             ha_Sub3.method3886(i + 28556);
-            Class348_Sub23_Sub2.aBoolean9038 = Class316.aClass348_Sub51_3959.aClass239_Sub11_7265.method1768(-32350) == 1;
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub11_7265), 1);
-            if (Class348_Sub23_Sub2.aBoolean9038) Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), 0);
-            else if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251.aBoolean6113 && Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 < 512 && Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 != 0)
-                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), 0);
+            Class348_Sub23_Sub2.aBoolean9038 = Class316.clientOptions.safeMode.getValue(-32350) == 1;
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.safeMode), 1);
+            if (Class348_Sub23_Sub2.aBoolean9038) Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 0);
+            else if (Class316.clientOptions.aClass239_Sub25_7251.aBoolean6113 && Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 < 512 && Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 != 0)
+                Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 0);
             Class14_Sub2.method243(i ^ ~0x6fd6);
             if (Class348_Sub23_Sub2.aBoolean9038) Class367_Sub10.method3553(false, (byte) 108, 0);
-            else Class367_Sub10.method3553(false, (byte) 102, Class316.aClass348_Sub51_3959.aClass239_Sub25_7251.method1829(-32350));
-            Class85.method830(Class316.aClass348_Sub51_3959.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
+            else Class367_Sub10.method3553(false, (byte) 102, Class316.clientOptions.aClass239_Sub25_7251.method1829(-32350));
+            Class85.method830(Class316.clientOptions.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
             TimedVarDomain.method1311(5139, Class348_Sub8.aHa6654);
             Class369.method3568(Class348_Sub8.aHa6654, i ^ ~0x6ff7);
             ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.aHa6654, true);

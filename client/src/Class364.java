@@ -6,7 +6,7 @@ final class Class364 {
     int anInt4466;
     static int anInt4467;
     static int anInt4468;
-    static int anInt4469;
+    static int scrollBarGround;
 
     public final String toString() {
         anInt4467++;

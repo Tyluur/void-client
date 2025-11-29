@@ -68,11 +68,11 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
 
     static final void method3225(int i) {
         anInt9589++;
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub14_7264.method1778(-32350) == 2) {
-            byte i_5_ = (byte) (0xff & -4 + Class239_Sub15.anInt6006);
-            int i_6_ = Class239_Sub15.anInt6006 % Class367_Sub4.anInt7319;
+        if (Class316.clientOptions.aClass239_Sub14_7264.method1778(-32350) == 2) {
+            byte i_5_ = (byte) (0xff & -4 + Option_Sub15.anInt6006);
+            int i_6_ = Option_Sub15.anInt6006 % Class367_Sub4.mapLength;
             for (int i_7_ = 0; i_7_ < 4; i_7_++) {
-                for (int i_8_ = 0; Class348_Sub40_Sub3.anInt9109 > i_8_; i_8_++)
+                for (int i_8_ = 0; Class348_Sub40_Sub3.mapWidth > i_8_; i_8_++)
                     Class289.aByteArrayArrayArray3700[i_7_][i_6_][i_8_] = i_5_;
             }
             if (QuickChatPhraseTypeList.anInt4372 != 3) {
@@ -103,7 +103,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                             int i_17_;
                             if (i_15_ <= i_13_) i_17_ = -i_15_ + i_13_;
                             else i_17_ = i_15_ + -i_13_;
-                            if (i_16_ == 0 && i_17_ == 0 || -Class367_Sub4.anInt7319 >= i_16_ || (Class367_Sub4.anInt7319 <= i_16_) || i_17_ <= -Class348_Sub40_Sub3.anInt9109 || Class348_Sub40_Sub3.anInt9109 <= i_17_)
+                            if (i_16_ == 0 && i_17_ == 0 || -Class367_Sub4.mapLength >= i_16_ || (Class367_Sub4.mapLength <= i_16_) || i_17_ <= -Class348_Sub40_Sub3.mapWidth || Class348_Sub40_Sub3.mapWidth <= i_17_)
                                 Class156.method1242(("RC: " + i_12_ + "," + i_13_ + " " + i_14_ + "," + i_15_ + " " + za_Sub2.regionTileX + "," + Class90.regionTileY), null, 15004);
                             else if (i_16_ <= i_17_) {
                                 int i_18_ = i_16_ * 65536 / i_17_;

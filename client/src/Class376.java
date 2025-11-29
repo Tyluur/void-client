@@ -39,11 +39,11 @@ final class Class376 implements Runnable {
 
     static final void method3616(int i) {
         anInt4549++;
-        if (Class182.anInterface16Array2447 != null) {
-            Interface16[] interface16s = Class182.anInterface16Array2447;
-            for (int i_0_ = 0; i_0_ < interface16s.length; i_0_++) {
-                Interface16 interface16 = interface16s[i_0_];
-                interface16.method57(108);
+        if (Class182.loadingScreens != null) {
+            LoadingScreen[] loadingScreens = Class182.loadingScreens;
+            for (int i_0_ = 0; i_0_ < loadingScreens.length; i_0_++) {
+                LoadingScreen loadingScreen = loadingScreens[i_0_];
+                loadingScreen.method57(108);
             }
         }
         if (i != 12639) anInt4559 = 72;

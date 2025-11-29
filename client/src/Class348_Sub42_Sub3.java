@@ -69,10 +69,10 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
     }
 
     static final void method3175(byte i) {
-        if (!Class348_Sub42_Sub8.method3196(Class240.anInt4674, -114) && !Class340.method2672(Class240.anInt4674, -103)) {
+        if (!Class348_Sub42_Sub8.method3196(Class240.anInt4674, -114) && !Js5MasterIndex.method2672(Class240.anInt4674, -103)) {
             int i_12_ = ((Class132.aPlayer_1907.anIntArray10320[0]) >> 3);
             int i_13_ = ((Class132.aPlayer_1907.anIntArray10317[0]) >> 3);
-            if (i_12_ < 0 || Class367_Sub4.anInt7319 >> 3 <= i_12_ || i_13_ < 0 || (Class348_Sub40_Sub3.anInt9109 >> 3 <= i_13_)) Class346_Sub1.method2703(0, Class367_Sub4.anInt7319 >> 4, (Class348_Sub40_Sub3.anInt9109 >> 4), (byte) -13);
+            if (i_12_ < 0 || Class367_Sub4.mapLength >> 3 <= i_12_ || i_13_ < 0 || (Class348_Sub40_Sub3.mapWidth >> 3 <= i_13_)) Class346_Sub1.method2703(0, Class367_Sub4.mapLength >> 4, (Class348_Sub40_Sub3.mapWidth >> 4), (byte) -13);
             else Class346_Sub1.method2703(5000, i_12_, i_13_, (byte) -13);
         } else Class346_Sub1.method2703(5000, Class286_Sub4.anInt6246 >> 12, Class59_Sub2_Sub2.anInt8685 >> 12, (byte) -13);
         anInt9509++;
@@ -95,12 +95,12 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
     }
 
     static final void method3177(int i, boolean bool) {
-        if (!bool || Class75.aClass348_Sub42_Sub14_1243 == null) Class239_Sub13.anInt5976 = -1;
-        else Class239_Sub13.anInt5976 = (Class75.aClass348_Sub42_Sub14_1243.anInt9628);
+        if (!bool || Class75.aClass348_Sub42_Sub14_1243 == null) Option_Sub13.anInt5976 = -1;
+        else Option_Sub13.anInt5976 = (Class75.aClass348_Sub42_Sub14_1243.anInt9628);
         anInt9500++;
         Class75.aClass348_Sub42_Sub14_1243 = null;
         Class168.aClass46_2249 = null;
-        Class348.anInt4290 = 0;
+        Node.anInt4290 = 0;
         Class289.aClass262_3705 = null;
         Class75.method749();
         Class75.aClass262_1254.method1996(127);
@@ -127,7 +127,8 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         }
     }
 
-    static final void method3178(Index index, int i, int[] is, Index index_15_) {
+    // method3178
+    static final void initFontTypeList(Index index, int i, int[] is, Index index_15_) {
         try {
             anInt9506++;
             if (is != null) Class348_Sub1.anIntArray6547 = is;
@@ -142,7 +143,7 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
     static final void method3179(int i) {
         Class3.method175((byte) -50);
         anInt9508++;
-        int i_16_ = Class316.aClass348_Sub51_3959.aClass239_Sub3_7222.method1727(-32350);
+        int i_16_ = Class316.clientOptions.aClass239_Sub3_7222.method1727(-32350);
         do {
             if (i_16_ == 2) {
                 Class121.method1083(Class348_Sub8.aHa6654, 100, (byte) 9, Class348_Sub42_Sub8_Sub2.anInt10432, 100, Class321.anInt4017);
@@ -150,10 +151,10 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
             } else if (i_16_ != 3) break;
             Class18.method282(2, Class348_Sub8.aHa6654, Class321.anInt4017, (byte) 73, Index.anInt666, Class186_Sub1.anInt5812, Class348_Sub42_Sub8_Sub2.anInt10432, 2);
         } while (false);
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub3_7222.method1735(false)) s.method3980(i + 93, Class305.aCanvas3869);
+        if (Class316.clientOptions.aClass239_Sub3_7222.method1735(false)) s.method3980(i + 93, Class305.aCanvas3869);
         if (Class348_Sub8.aHa6654 != null) Class290.method2196((byte) -9);
-        Class305.aBoolean3870 = i != Class316.aClass348_Sub51_3959.aClass239_Sub3_7222.method1727(-32350);
-        Class59_Sub1.aBoolean5300 = Class316.aClass348_Sub51_3959.aClass239_Sub3_7222.method1735(false);
+        Class305.aBoolean3870 = i != Class316.clientOptions.aClass239_Sub3_7222.method1727(-32350);
+        Class59_Sub1.aBoolean5300 = Class316.clientOptions.aClass239_Sub3_7222.method1735(false);
     }
 
     static {

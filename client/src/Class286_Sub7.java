@@ -5,7 +5,7 @@
 import jaggl.OpenGL;
 
 final class Class286_Sub7 extends Class286 {
-    static Index aIndex_6277;
+    static Index LOADING_SPRITES;
     private final Class83 aClass83_6278;
     static int anInt6279;
     static int anInt6280;
@@ -17,7 +17,7 @@ final class Class286_Sub7 extends Class286 {
     static int anInt6286;
     static int anInt6287;
     static int anInt6288;
-    static boolean aBoolean6289;
+    static boolean loadSpritesRaw; // aBoolean6289
     static int[] anIntArray6290 = new int[2048];
     static int anInt6291;
 
@@ -44,13 +44,13 @@ final class Class286_Sub7 extends Class286 {
                         Class126.anInt4985 = Class311.anInt3918;
                         Class348_Sub42_Sub7.anInt9540++;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class357.aClass351_4394, (Class348_Sub23_Sub2.aClass77_9029), -99);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class239_Sub6.method1745(string, -65));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Option_Sub6.method1745(string, -65));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                         Class348_Sub42_Sub14.method3243(117, class348_sub47);
                         break;
                     }
                 }
-                if (bool != true) aBoolean6289 = true;
+                if (bool != true) loadSpritesRaw = true;
             }
         }
     }
@@ -108,7 +108,7 @@ final class Class286_Sub7 extends Class286 {
 
     public static void method2166(int i) {
         if (i == 6336) {
-            aIndex_6277 = null;
+            LOADING_SPRITES = null;
             anIntArray6290 = null;
         }
     }

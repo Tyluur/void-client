@@ -7,6 +7,6 @@ final class Class86 {
     static float aFloat1478;
     static int anInt1479;
     static int anInt1480 = -1;
-    static int anInt1481;
+    static int mapFlagGround;
     static int anInt1482 = 0;
 }

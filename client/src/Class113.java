@@ -6,7 +6,7 @@ final class Class113 {
     static long aLong1739 = 0L;
     static int anInt1740;
     static int anInt1741;
-    static int anInt1742;
+    static int mapDotsGround;
     static Index CLIENT_SCRIPTS;
     static Sprite[] aSpriteArray1744;
     static int anInt1745 = 100;

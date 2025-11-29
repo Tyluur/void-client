@@ -48,7 +48,7 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
         if (this.aClass191_7032.aBoolean2570) {
             for (int i_3_ = 0; i_3_ < Class348_Sub40_Sub6.anInt9139; i_3_++) {
                 int i_4_ = anInt9339 + (Class318_Sub6.anIntArray6432[i_3_] << 12) / anInt9340;
-                int i_5_ = anInt9338 + (Class239_Sub18.anIntArray6035[i] << 12) / anInt9340;
+                int i_5_ = anInt9338 + (Option_Sub18.anIntArray6035[i] << 12) / anInt9340;
                 int i_6_ = i_4_;
                 int i_7_ = i_5_;
                 int i_8_ = i_4_;

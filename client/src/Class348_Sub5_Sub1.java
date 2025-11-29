@@ -162,7 +162,7 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
             OpenGL.glUseProgramObjectARB(l_7_);
             OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l_7_, "sceneTex"), 0);
             OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l_7_, "bloomTex"), 1);
-            OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l_7_, "params"), Class348_Sub40_Sub13.aFloat9204, Class239_Sub26.aFloat6120, 0.0F);
+            OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l_7_, "params"), Class348_Sub40_Sub13.aFloat9204, Option_Sub26.aFloat6120, 0.0F);
             this.aHa_Sub2_6618.method3738(-15039, 1);
             this.aHa_Sub2_6618.method3771((byte) -99, aClass258_Sub3_8835);
             this.aHa_Sub2_6618.method3738(-15039, 0);

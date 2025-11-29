@@ -63,8 +63,8 @@ final class Class101_Sub2 extends Class101 {
     final void method902(int i) {
         this.aFloat5716 = 1.0F;
         anInt5712++;
-        this.aFloat5711 = this.aFloat5722 = Class239_Sub4.aFloatArray5876[0x3fff & i];
-        this.aFloat5708 = Class239_Sub4.aFloatArray5874[i & 0x3fff];
+        this.aFloat5711 = this.aFloat5722 = Option_Sub4.aFloatArray5876[0x3fff & i];
+        this.aFloat5708 = Option_Sub4.aFloatArray5874[i & 0x3fff];
         this.aFloat5700 = -this.aFloat5708;
         this.aFloat5704 = this.aFloat5729 = this.aFloat5732 = this.aFloat5710 = this.aFloat5736 = this.aFloat5691 = this.aFloat5724 = 0.0F;
     }
@@ -117,12 +117,12 @@ final class Class101_Sub2 extends Class101 {
 
     final void method903(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
         anInt5733++;
-        float f = Class239_Sub4.aFloatArray5876[i_6_ & 0x3fff];
-        float f_9_ = Class239_Sub4.aFloatArray5874[i_6_ & 0x3fff];
-        float f_10_ = Class239_Sub4.aFloatArray5876[0x3fff & i_7_];
-        float f_11_ = Class239_Sub4.aFloatArray5874[0x3fff & i_7_];
-        float f_12_ = Class239_Sub4.aFloatArray5876[0x3fff & i_8_];
-        float f_13_ = Class239_Sub4.aFloatArray5874[i_8_ & 0x3fff];
+        float f = Option_Sub4.aFloatArray5876[i_6_ & 0x3fff];
+        float f_9_ = Option_Sub4.aFloatArray5874[i_6_ & 0x3fff];
+        float f_10_ = Option_Sub4.aFloatArray5876[0x3fff & i_7_];
+        float f_11_ = Option_Sub4.aFloatArray5874[0x3fff & i_7_];
+        float f_12_ = Option_Sub4.aFloatArray5876[0x3fff & i_8_];
+        float f_13_ = Option_Sub4.aFloatArray5874[i_8_ & 0x3fff];
         float f_14_ = f_12_ * f_9_;
         float f_15_ = f_9_ * f_13_;
         this.aFloat5700 = f_13_ * f;
@@ -142,8 +142,8 @@ final class Class101_Sub2 extends Class101 {
     final void method895(int i) {
         this.aFloat5722 = 1.0F;
         anInt5738++;
-        this.aFloat5711 = this.aFloat5716 = Class239_Sub4.aFloatArray5876[0x3fff & i];
-        this.aFloat5704 = Class239_Sub4.aFloatArray5874[i & 0x3fff];
+        this.aFloat5711 = this.aFloat5716 = Option_Sub4.aFloatArray5876[0x3fff & i];
+        this.aFloat5704 = Option_Sub4.aFloatArray5874[i & 0x3fff];
         this.aFloat5736 = -this.aFloat5704;
         this.aFloat5700 = this.aFloat5729 = this.aFloat5708 = this.aFloat5732 = this.aFloat5710 = this.aFloat5691 = this.aFloat5724 = 0.0F;
     }
@@ -151,8 +151,8 @@ final class Class101_Sub2 extends Class101 {
     final void method899(int i) {
         this.aFloat5711 = 1.0F;
         anInt5721++;
-        this.aFloat5722 = this.aFloat5716 = Class239_Sub4.aFloatArray5876[0x3fff & i];
-        this.aFloat5691 = Class239_Sub4.aFloatArray5874[0x3fff & i];
+        this.aFloat5722 = this.aFloat5716 = Option_Sub4.aFloatArray5876[0x3fff & i];
+        this.aFloat5691 = Option_Sub4.aFloatArray5874[0x3fff & i];
         this.aFloat5700 = this.aFloat5704 = this.aFloat5729 = this.aFloat5708 = this.aFloat5710 = this.aFloat5736 = this.aFloat5724 = 0.0F;
         this.aFloat5732 = -this.aFloat5691;
     }
@@ -262,8 +262,8 @@ final class Class101_Sub2 extends Class101 {
 
     final void method900(int i) {
         anInt5734++;
-        float f = Class239_Sub4.aFloatArray5876[0x3fff & i];
-        float f_39_ = Class239_Sub4.aFloatArray5874[0x3fff & i];
+        float f = Option_Sub4.aFloatArray5876[0x3fff & i];
+        float f_39_ = Option_Sub4.aFloatArray5874[0x3fff & i];
         float f_40_ = this.aFloat5708;
         float f_41_ = this.aFloat5722;
         float f_42_ = this.aFloat5732;
@@ -448,8 +448,8 @@ final class Class101_Sub2 extends Class101 {
 
     final void method908(int i) {
         anInt5702++;
-        float f = Class239_Sub4.aFloatArray5876[i & 0x3fff];
-        float f_57_ = Class239_Sub4.aFloatArray5874[i & 0x3fff];
+        float f = Option_Sub4.aFloatArray5876[i & 0x3fff];
+        float f_57_ = Option_Sub4.aFloatArray5874[i & 0x3fff];
         float f_58_ = this.aFloat5711;
         float f_59_ = this.aFloat5700;
         float f_60_ = this.aFloat5704;
@@ -529,8 +529,8 @@ final class Class101_Sub2 extends Class101 {
 
     final void method896(int i) {
         anInt5725++;
-        float f = Class239_Sub4.aFloatArray5876[i & 0x3fff];
-        float f_69_ = Class239_Sub4.aFloatArray5874[i & 0x3fff];
+        float f = Option_Sub4.aFloatArray5876[i & 0x3fff];
+        float f_69_ = Option_Sub4.aFloatArray5874[i & 0x3fff];
         float f_70_ = this.aFloat5711;
         float f_71_ = this.aFloat5700;
         float f_72_ = this.aFloat5704;
@@ -630,8 +630,8 @@ final class Class101_Sub2 extends Class101 {
             this.aFloat5722 = (float) (2 * i_88_);
             this.aFloat5724 = f_89_;
         } else {
-            float f_92_ = Class239_Sub4.aFloatArray5876[i & 0x3fff];
-            float f_93_ = Class239_Sub4.aFloatArray5874[0x3fff & i];
+            float f_92_ = Option_Sub4.aFloatArray5876[i & 0x3fff];
+            float f_93_ = Option_Sub4.aFloatArray5874[0x3fff & i];
             this.aFloat5711 = 2.0F * f_92_ * (float) i_91_;
             this.aFloat5710 = (-0.5F * f_93_ - f_92_ * 0.5F) * (float) (2 * i_88_) + f_90_;
             this.aFloat5722 = (float) i_88_ * (f_92_ * 2.0F);

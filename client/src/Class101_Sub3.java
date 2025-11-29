@@ -314,8 +314,8 @@ final class Class101_Sub3 extends Class101 {
             anInt5752++;
             for (int i_52_ = 0; i_52_ < class237_sub1.anInt3130; i_52_++) {
                 Class369_Sub1.method3570(false);
-                for (int i_53_ = 0; (i_53_ < Class367_Sub4.anInt7319 >> 3); i_53_++) {
-                    for (int i_54_ = 0; (Class348_Sub40_Sub3.anInt9109 >> 3 > i_54_); i_54_++) {
+                for (int i_53_ = 0; (i_53_ < Class367_Sub4.mapLength >> 3); i_53_++) {
+                    for (int i_54_ = 0; (Class348_Sub40_Sub3.mapWidth >> 3 > i_54_); i_54_++) {
                         int i_55_ = (Class62.anIntArrayArrayArray1116[i_52_][i_53_][i_54_]);
                         if (i_55_ != -1) {
                             int i_56_ = 0x3 & i_55_ >> 24;
@@ -326,7 +326,7 @@ final class Class101_Sub3 extends Class101 {
                                 int i_60_ = i_59_ / 8 + (i_58_ / 8 << 8);
                                 for (int i_61_ = 0; i_61_ < Class348_Sub23_Sub3.mapRegionIds.length; i_61_++) {
                                     if (i_60_ == (Class348_Sub23_Sub3.mapRegionIds[i_61_]) && is[i_61_] != null) {
-                                        class237_sub1.method1692((i_58_ & 0x7) * 8, i_57_, is[i_61_], i_56_, (i_59_ & 0x7) * 8, Class348_Sub8.aHa6654, 8 * i_54_, 8 * i_53_, i + 8219, Class348_Sub45.aClass361Array7108, i_52_);
+                                        class237_sub1.method1692((i_58_ & 0x7) * 8, i_57_, is[i_61_], i_56_, (i_59_ & 0x7) * 8, Class348_Sub8.aHa6654, 8 * i_54_, 8 * i_53_, i + 8219, Class348_Sub45.collisionMaps, i_52_);
                                         break;
                                     }
                                 }

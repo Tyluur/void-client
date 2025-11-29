@@ -117,7 +117,7 @@ final class Class188 {
         Class30.skyBoxTypeList.method819((byte) 74, 5);
         Class123.skyBoxSphereTypeList.method299(5, 16);
         Class348_Sub1.lightTypeList.method1392(88, 5);
-        Class239.cursorTypeList.method1285(i, 8);
+        Option.cursorTypeList.method1285(i, 8);
         Class136.structTypeList.method697(5, 26);
         Class73.hitmarkTypeList.method1603(5, -66);
         Class97.method876(5, 0);

@@ -15,7 +15,7 @@ final class QuestTypeList {
     static Class223 aClass223_2507 = new Class223(9, 2);
     static int anInt2508;
     static int[] anIntArray2509 = new int[2];
-    static int anInt2510;
+    static int floorShadowsGroup;
 
     final void method1404(byte i) {
         synchronized (aClass60_2501) {

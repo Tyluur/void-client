@@ -22,7 +22,7 @@ final class ClientScript extends Class348_Sub42 {
     static final void method3276(Class211 class211) {
         if (Class331.anInt4135 < 65535) {
             Class348_Sub1 class348_sub1 = class211.aClass348_Sub1_2745;
-            Class239_Sub14.aClass211Array5993[Class331.anInt4135] = class211;
+            Option_Sub14.aClass211Array5993[Class331.anInt4135] = class211;
             r.aBooleanArray9718[Class331.anInt4135] = false;
             Class331.anInt4135++;
             int i = class211.anInt2731;

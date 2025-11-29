@@ -134,7 +134,7 @@ final class Class348_Sub40_Sub8 extends Class348_Sub40 {
 
     final void method3069(int i, int[] is, byte i_8_) {
         anInt9161++;
-        int i_9_ = (Class239_Sub18.anIntArray6035[i] * this.anInt9164);
+        int i_9_ = (Option_Sub18.anIntArray6035[i] * this.anInt9164);
         if (i_8_ > 91) {
             if (this.anInt9150 == 1) {
                 int i_39_ = aShortArray9162[0] << 12;

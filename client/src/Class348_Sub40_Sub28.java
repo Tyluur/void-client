@@ -116,7 +116,7 @@ final class Class348_Sub40_Sub28 extends Class348_Sub40 {
                     int i_23_ = i_10_ <= i_8_ ? -1 : 1;
                     for (int i_24_ = i_7_; i_24_ < i_9_; i_24_++) {
                         int i_25_ = (i_24_ - i_7_) * i_21_ + (i_22_ + 1024);
-                        int i_26_ = Class239_Sub22.anInt6076 & i_24_;
+                        int i_26_ = Option_Sub22.anInt6076 & i_24_;
                         int i_27_ = i_17_ & Class299_Sub2.anInt6325;
                         if (bool) is_4_[i_27_][i_26_] = i_25_;
                         else is_4_[i_26_][i_27_] = i_25_;

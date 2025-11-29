@@ -62,13 +62,13 @@ final class Class69 {
     static final boolean method723(int i, int i_2_, byte i_3_) {
         anInt1196++;
         if (i_3_ >= -66) return true;
-        return (Class314_Sub1.method2352(113, i_2_, i) & Class156.method1238(i, i_2_, -29));
+        return (Js5ResourceProvider.method2352(113, i_2_, i) & Class156.method1238(i, i_2_, -29));
     }
 
     static final boolean method724(int i, int i_4_, int i_5_) {
         anInt1191++;
         if (i_5_ != 393216) method723(25, 30, (byte) -113);
-        return Class314_Sub1.method2352(124, i_4_, i) | (0x60000 & i) != 0 || Class273.method2056(i, 90, i_4_) || method723(i, i_4_, (byte) -120);
+        return Js5ResourceProvider.method2352(124, i_4_, i) | (0x60000 & i) != 0 || Class273.method2056(i, 90, i_4_) || method723(i, i_4_, (byte) -120);
     }
 
     public final String toString() {

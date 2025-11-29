@@ -9,14 +9,14 @@ import java.io.FileOutputStream;
 
 final class VarcstrTypeList {
     static Index QUICK_CHAT_MENUS;
-    static int anInt1435;
+    static int headIconsPrayerGroup;
     private final Index aIndex_1436;
     static int anInt1437;
     static int anInt1438;
     int anInt1439;
 
     public static void method811(byte i) {
-        if (i > -109) anInt1435 = 69;
+        if (i > -109) headIconsPrayerGroup = 69;
         QUICK_CHAT_MENUS = null;
     }
 
@@ -70,7 +70,7 @@ final class VarcstrTypeList {
                     if (string.equals("nativememerror")) throw new OutOfMemoryError("native(MPR");
                     try {
                         if (string.equalsIgnoreCase("printfps")) {
-                            Applet_Sub1.method94(("FPS: " + Class239_Sub5.anInt5891), -58);
+                            Applet_Sub1.method94(("FPS: " + Option_Sub5.anInt5891), -58);
                             break;
                         }
                         if (string.equalsIgnoreCase("occlude")) {
@@ -170,7 +170,7 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.equalsIgnoreCase("rebuildprofile")) {
-                            Class90.aLong1516 = Class62.method599(-75);
+                            Class90.aLong1516 = Class62.safeTime(-75);
                             Class258_Sub4.aBoolean8558 = true;
                             Class348_Sub20.method2953((byte) -114);
                             Class50_Sub2.method464(-1);
@@ -205,9 +205,9 @@ final class VarcstrTypeList {
                         }
                         if (string.equalsIgnoreCase("tk0")) {
                             Class367_Sub10.method3553(false, (byte) 104, 0);
-                            if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 0) {
+                            if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 0) {
                                 Applet_Sub1.method94("Entered tk0", 101);
-                                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), 0);
+                                Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 0);
                                 Class14_Sub2.method243(37);
                                 r.aBoolean9719 = false;
                                 break;
@@ -216,9 +216,9 @@ final class VarcstrTypeList {
                         }
                         if (string.equalsIgnoreCase("tk1")) {
                             Class367_Sub10.method3553(false, (byte) 109, 1);
-                            if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 1) {
+                            if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 1) {
                                 Applet_Sub1.method94("Entered tk1", -65);
-                                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), 1);
+                                Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 1);
                                 Class14_Sub2.method243(i ^ ~0x6b);
                                 r.aBoolean9719 = false;
                                 break;
@@ -227,9 +227,9 @@ final class VarcstrTypeList {
                         }
                         if (string.equalsIgnoreCase("tk2")) {
                             Class367_Sub10.method3553(false, (byte) 115, 2);
-                            if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
+                            if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 2) {
                                 Applet_Sub1.method94("Entered tk2", i + 151);
-                                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), 2);
+                                Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 2);
                                 Class14_Sub2.method243(37);
                                 r.aBoolean9719 = false;
                             } else {
@@ -240,9 +240,9 @@ final class VarcstrTypeList {
                         }
                         if (string.equalsIgnoreCase("tk3")) {
                             Class367_Sub10.method3553(false, (byte) 107, 3);
-                            if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 3) {
+                            if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 3) {
                                 Applet_Sub1.method94("Entered tk3", 78);
-                                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), 3);
+                                Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 3);
                                 Class14_Sub2.method243(37);
                                 r.aBoolean9719 = false;
                                 break;
@@ -251,9 +251,9 @@ final class VarcstrTypeList {
                         }
                         if (string.equalsIgnoreCase("tk5")) {
                             Class367_Sub10.method3553(false, (byte) 113, 5);
-                            if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(i ^ 0x7e13) == 5) {
+                            if (Class316.clientOptions.aClass239_Sub25_7271.method1829(i ^ 0x7e13) == 5) {
                                 Applet_Sub1.method94("Entered tk5", -108);
-                                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), 5);
+                                Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 5);
                                 Class14_Sub2.method243(37);
                                 r.aBoolean9719 = false;
                             } else {
@@ -266,12 +266,12 @@ final class VarcstrTypeList {
                             if (string.length() < 6) Applet_Sub1.method94("Invalid buildarea value", i + -36);
                             else {
                                 int i_6_ = (Class348_Sub41.parseInt(true, string.substring(6)));
-                                if (i_6_ < 0 || (Class348.method2710(-126, QuickChatCatTypeList.anInt2964) < i_6_)) Applet_Sub1.method94("Invalid buildarea value", 53);
+                                if (i_6_ < 0 || (Node.method2710(-126, QuickChatCatTypeList.anInt2964) < i_6_)) Applet_Sub1.method94("Invalid buildarea value", 53);
                                 else {
-                                    Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub6_7226), i_6_);
+                                    Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub6_7226), i_6_);
                                     Class14_Sub2.method243(37);
                                     r.aBoolean9719 = false;
-                                    Applet_Sub1.method94(("maxbuildarea=" + Class316.aClass348_Sub51_3959.aClass239_Sub6_7226.method1743(-32350)), 98);
+                                    Applet_Sub1.method94(("maxbuildarea=" + Class316.clientOptions.aClass239_Sub6_7226.method1743(-32350)), 98);
                                     break;
                                 }
                                 break;
@@ -353,9 +353,9 @@ final class VarcstrTypeList {
                                 if (i_8_ >= 1) {
                                     if (i_8_ > 4) i_8_ = 4;
                                 } else i_8_ = 1;
-                                Class239_Sub16.anInt6012 = i_8_;
+                                Option_Sub16.anInt6012 = i_8_;
                                 Class348_Sub20.method2953((byte) -128);
-                                Applet_Sub1.method94(("Render cores now: " + (Class239_Sub16.anInt6012)), -77);
+                                Applet_Sub1.method94(("Render cores now: " + (Option_Sub16.anInt6012)), -77);
                             } else {
                                 Applet_Sub1.method94("Current toolkit doesn't support multiple cores", i + 138);
                                 break;
@@ -397,13 +397,13 @@ final class VarcstrTypeList {
                                 }
                             }
                             if (i_9_ == -1) {
-                                Applet_Sub1.method94(("Java toolkit: " + Class239_Sub14.method1781(0, -85, i_10_)), i + -32);
-                                Applet_Sub1.method94(("SSE toolkit:  " + Class239_Sub14.method1781(2, -73, i_10_)), 60);
-                                Applet_Sub1.method94(("D3D toolkit:  " + Class239_Sub14.method1781(3, i + -24, i_10_)), i ^ ~0x11);
-                                Applet_Sub1.method94(("GL toolkit:   " + Class239_Sub14.method1781(1, -84, i_10_)), -121);
-                                Applet_Sub1.method94(("GLX toolkit:  " + Class239_Sub14.method1781(5, -77, i_10_)), -101);
+                                Applet_Sub1.method94(("Java toolkit: " + Option_Sub14.method1781(0, -85, i_10_)), i + -32);
+                                Applet_Sub1.method94(("SSE toolkit:  " + Option_Sub14.method1781(2, -73, i_10_)), 60);
+                                Applet_Sub1.method94(("D3D toolkit:  " + Option_Sub14.method1781(3, i + -24, i_10_)), i ^ ~0x11);
+                                Applet_Sub1.method94(("GL toolkit:   " + Option_Sub14.method1781(1, -84, i_10_)), -121);
+                                Applet_Sub1.method94(("GLX toolkit:  " + Option_Sub14.method1781(5, -77, i_10_)), -101);
                                 break;
-                            } else Applet_Sub1.method94(("Performance: " + Class239_Sub14.method1781(i_9_, -69, i_10_)), -84);
+                            } else Applet_Sub1.method94(("Performance: " + Option_Sub14.method1781(i_9_, -69, i_10_)), -84);
                             break;
                         }
                         if (string.equals("nonpcs")) {
@@ -418,7 +418,7 @@ final class VarcstrTypeList {
                         }
                         if (string.startsWith("switchworld")) {
                             int i_11_ = Integer.parseInt(string.substring(12));
-                            Class348_Sub23_Sub1.method2972((Class239_Sub5.method1742(false, i_11_).aString5794), i_11_, -93);
+                            Class348_Sub23_Sub1.method2972((Option_Sub5.method1742(false, i_11_).aString5794), i_11_, -93);
                             Applet_Sub1.method94("switched", 70);
                             break;
                         }
@@ -515,7 +515,7 @@ final class VarcstrTypeList {
                         }
                         if (string.equals("autosetup")) {
                             Class318_Sub1_Sub4.method2478(1000);
-                            Applet_Sub1.method94(("Complete. Toolkit now: " + Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(i + -32271)), -97);
+                            Applet_Sub1.method94(("Complete. Toolkit now: " + Class316.clientOptions.aClass239_Sub25_7271.method1829(i + -32271)), -97);
                             break;
                         }
                         if (string.equals("errormessage")) {
@@ -546,11 +546,11 @@ final class VarcstrTypeList {
                             if (i_20_ < 0) Applet_Sub1.method94("Syntax: ortho <n>", 66);
                             else {
                                 int i_21_ = (Class348_Sub41.parseInt(true, string.substring(1 + i_20_)));
-                                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub3_7222), i_21_);
+                                Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub3_7222), i_21_);
                                 Class14_Sub2.method243(37);
                                 r.aBoolean9719 = false;
                                 Class348_Sub42_Sub3.method3179(i + 79);
-                                if (Class316.aClass348_Sub51_3959.aClass239_Sub3_7222.method1727(-32350) == i_21_) {
+                                if (Class316.clientOptions.aClass239_Sub3_7222.method1727(-32350) == i_21_) {
                                     Applet_Sub1.method94("Successfully changed ortho mode", -82);
                                     break;
                                 } else Applet_Sub1.method94("Failed to change ortho mode", -112);
@@ -559,7 +559,7 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.startsWith("orthozoom ")) {
-                            if (Class316.aClass348_Sub51_3959.aClass239_Sub3_7222.method1727(i + -32271) == 0) Applet_Sub1.method94("enable ortho mode first (use 'ortho <n>')", i + 182);
+                            if (Class316.clientOptions.aClass239_Sub3_7222.method1727(i + -32271) == 0) Applet_Sub1.method94("enable ortho mode first (use 'ortho <n>')", i + 182);
                             else {
                                 int i_22_ = (Class348_Sub41.parseInt(true, string.substring(string.indexOf(' ') - -1)));
                                 Class132.anInt1911 = i_22_;
@@ -583,7 +583,7 @@ final class VarcstrTypeList {
                         if (string.startsWith("setoutput ")) {
                             File file = new File(string.substring(10));
                             if (file.exists()) {
-                                file = new File(string.substring(10) + "." + Class62.method599(-76) + ".log");
+                                file = new File(string.substring(10) + "." + Class62.safeTime(-76) + ".log");
                                 if (file.exists()) {
                                     Applet_Sub1.method94("file already exists!", 80);
                                     break;
@@ -613,12 +613,12 @@ final class VarcstrTypeList {
                                 Applet_Sub1.method94("No such file", 120);
                                 break;
                             }
-                            byte[] is = Class239_Sub24.method1821(i ^ 0x41, file);
+                            byte[] is = Option_Sub24.method1821(i ^ 0x41, file);
                             if (is == null) {
                                 Applet_Sub1.method94("Failed to read file", 119);
                                 break;
                             }
-                            String[] strings = (Class348_Sub40_Sub23.method3113('\n', true, (BASTypeList.method1981(Class239_Sub17.method1795(is, true), (byte) -89, '\r', ""))));
+                            String[] strings = (Class348_Sub40_Sub23.method3113('\n', true, (BASTypeList.method1981(Option_Sub17.method1795(is, true), (byte) -89, '\r', ""))));
                             Class348_Sub42_Sub6.method3189(0, strings);
                         }
                         if (string.startsWith("zoom ")) {
@@ -677,7 +677,7 @@ final class VarcstrTypeList {
                 }
                 int i_30_ = Class348_Sub7.anInt6652;
                 Class76.aFloat1287 += Class348_Sub27.aFloat6898 * (float) l / 40.0F * 8.0F;
-                Class314.aFloat3938 += Class205.aFloat2687 * (float) l / 40.0F * 8.0F;
+                ResourceProvider.aFloat3938 += Class205.aFloat2687 * (float) l / 40.0F * 8.0F;
                 if (Class192.anInt2578 != i_30_) {
                     int i_31_ = -Class192.anInt2578 + i_30_;
                     int i_32_ = (int) (l * (long) i_31_ / 320L);
@@ -689,7 +689,7 @@ final class VarcstrTypeList {
                     } else i_32_ = 1;
                     Class192.anInt2578 += i_32_;
                 }
-                Class239_Sub2.method1725(262144);
+                Option_Sub2.method1725(262144);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "lba.A(" + i + ',' + l + ')');

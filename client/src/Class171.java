@@ -27,7 +27,7 @@ final class Class171 {
     static final void method1320() {
         for (int i = 0; i < Class331.anInt4135; i++) {
             if (!r.aBooleanArray9718[i]) {
-                Class211 class211 = Class239_Sub14.aClass211Array5993[i];
+                Class211 class211 = Option_Sub14.aClass211Array5993[i];
                 Class348_Sub1 class348_sub1 = class211.aClass348_Sub1_2745;
                 int i_3_ = class211.anInt2731;
                 int i_4_ = (class348_sub1.method2723(-1) - Class348_Sub23_Sub2.anInt9037);
@@ -116,8 +116,8 @@ final class Class171 {
         if (i_35_ < 3) {
             int i_38_ = i_32_ >> 9;
             int i_39_ = i_33_ >> 9;
-            if (i_34_ < 0 || i_36_ < 0 || -1 + Class367_Sub4.anInt7319 < i_34_ || (i_36_ > Class348_Sub40_Sub3.anInt9109 - 1)) return 0;
-            if (i_38_ < 1 || i_39_ < 1 || -1 + Class367_Sub4.anInt7319 < i_38_ || -1 + Class348_Sub40_Sub3.anInt9109 < i_39_) return 0;
+            if (i_34_ < 0 || i_36_ < 0 || -1 + Class367_Sub4.mapLength < i_34_ || (i_36_ > Class348_Sub40_Sub3.mapWidth - 1)) return 0;
+            if (i_38_ < 1 || i_39_ < 1 || -1 + Class367_Sub4.mapLength < i_38_ || -1 + Class348_Sub40_Sub3.mapWidth < i_39_) return 0;
             boolean bool = ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1][i_32_ >> 9][i_33_ >> 9])) != 0);
             if ((i_32_ & 0x1ff) == 0) {
                 boolean bool_40_ = ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1][-1 + i_38_][i_33_ >> 9])) != 0);

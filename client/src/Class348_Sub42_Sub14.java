@@ -106,7 +106,7 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
             Class348_Sub42_Sub10.anInt9577 = 0;
             int i_8_ = 0;
             if (i_7_ < 37) method3241(-25, (byte) 65, null);
-            for (/**/; Class239_Sub26.anInt6115 > i_8_; i_8_++)
+            for (/**/; Option_Sub26.anInt6115 > i_8_; i_8_++)
                 Class318_Sub2.method2498(Class147.aClass338Array2034[i_8_], var_ha, (byte) -112, i);
             for (int i_9_ = 0; i_9_ < Class69.anInt1200; i_9_++)
                 Class318_Sub2.method2498((Class318_Sub1_Sub3_Sub4.aClass338Array10330[i_9_]), var_ha, (byte) -127, i);

@@ -318,8 +318,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.seqTypeList.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1;
         }
         this.anInt10524 = -1;
-        if (i_52_ >= 0 && Class367_Sub4.anInt7319 > i_52_ && i >= 0 && Class348_Sub40_Sub3.anInt9109 > i) {
-            if (this.anIntArray10320[0] >= 0 && (this.anIntArray10320[0] < Class367_Sub4.anInt7319) && this.anIntArray10317[0] >= 0 && (Class348_Sub40_Sub3.anInt9109 > this.anIntArray10317[0])) {
+        if (i_52_ >= 0 && Class367_Sub4.mapLength > i_52_ && i >= 0 && Class348_Sub40_Sub3.mapWidth > i) {
+            if (this.anIntArray10320[0] >= 0 && (this.anIntArray10320[0] < Class367_Sub4.mapLength) && this.anIntArray10317[0] >= 0 && (Class348_Sub40_Sub3.mapWidth > this.anIntArray10317[0])) {
                 if (i_51_ == 2) Class218.method1592((byte) 2, i, 4, i_52_, this);
                 method2451(i_51_, i_52_, -29034, i);
             } else method2449(i, i_52_, (byte) 111);
@@ -341,12 +341,12 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         class101.method891(this.x, (-20 + (this.anInt6382 - this.anInt10274)), this.y);
         Class318_Sub4 class318_sub4 = null;
         this.aBoolean10324 = false;
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub21_7270.method1812(-32350) == 1) {
+        if (Class316.clientOptions.aClass239_Sub21_7270.method1812(-32350) == 1) {
             Class225 class225 = this.method2422((byte) 72);
             if (class225.aBoolean2913 && (this.aClass154_10536.anInt2093 == -1 || Class189.npcTypeList.method2079(this.aClass154_10536.anInt2093, i + -2).aBoolean1369)) {
                 Class17 class17 = ((this.anInt10286 != -1 && this.anInt10218 == 0) ? (Class10.seqTypeList.method835(this.anInt10286, 7)) : null);
                 Class17 class17_55_ = ((this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) ? null : (Class10.seqTypeList.method835(this.anInt10268, 7)));
-                Class64 class64 = (Class348.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (class17_55_ == null ? this.anInt10267 : this.anInt10245), 0, 1, this.anInt10252, var_ha, 160, 0, 240, class17_55_ == null ? class17 : class17_55_));
+                Class64 class64 = (Node.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (class17_55_ == null ? this.anInt10267 : this.anInt10245), 0, 1, this.anInt10252, var_ha, 160, 0, 240, class17_55_ == null ? class17 : class17_55_));
                 if (class64 != null) {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).length, true, false));
                     this.aBoolean10324 = true;
@@ -416,7 +416,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
             if (this.aClass64Array10323[i_67_] != null) this.aBoolean10324 |= this.aClass64Array10323[i_67_].F();
         }
         this.aClass64Array10323[0] = this.aClass64Array10323[i] = this.aClass64Array10323[2] = null;
-        this.anInt10301 = Class239_Sub15.anInt6006;
+        this.anInt10301 = Option_Sub15.anInt6006;
         return class318_sub4;
     }
 
@@ -425,8 +425,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         String string = "";
         if (Class367_Sub9.aStringArray7378 != null) string += Class367_Sub9.aStringArray7378[aByte10552];
         int[] is;
-        if (aByte10538 != 1 || Class239_Sub17.anIntArray6021 == null) is = RuntimeException_Sub1.anIntArray4603;
-        else is = Class239_Sub17.anIntArray6021;
+        if (aByte10538 != 1 || Option_Sub17.anIntArray6021 == null) is = RuntimeException_Sub1.anIntArray4603;
+        else is = Option_Sub17.anIntArray6021;
         if (i != 255) anInt10567 = 81;
         if (is != null && is[aByte10552] != -1) {
             Class117 class117 = Class348_Sub7.enumTypeList.findEnum(true, is[aByte10552]);

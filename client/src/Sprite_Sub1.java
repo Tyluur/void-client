@@ -127,7 +127,7 @@ final class Sprite_Sub1 extends Sprite {
         class101_sub2.method935(1.0F, f_14_ - f_12_, -f + f_15_, 0.0F, 0.0F, -f_12_ + f_16_, 0.0F, 0.0F, f_13_ - f, 0);
         class101_sub2.method920(f_12_, false, 0.0F, f);
         class101_sub2_20_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -47, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 123), (byte) -66);
-        aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
         aHa_Sub3_8407.method3915(0);
         aHa_Sub3_8407.method3933(-44);
         aHa_Sub3_8407.method3879(-8629);
@@ -153,14 +153,14 @@ final class Sprite_Sub1 extends Sprite {
             class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -26, (float) i_37_), anInterface18_Impl3_8403.method67((float) i_36_, 118), (byte) -75);
             class101_sub2.method932(0.0F, (float) i_37_, (float) i_36_, (byte) -83);
             class101_sub2.method891(i, i_35_, 0);
-            aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+            aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
             aHa_Sub3_8407.method3915(0);
             aHa_Sub3_8407.method3933(-63);
         } else if (bool_42_) {
             int i_43_ = i_37_ + i_35_;
             int i_44_ = method980();
             class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -99, (float) anInt8417), anInterface18_Impl3_8403.method67((float) i_36_, 110), (byte) -120);
-            aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+            aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
             int i_45_ = anInt8419 + i_35_;
             int i_46_ = i_45_ - -anInt8417;
             while (i_46_ <= i_43_) {
@@ -174,7 +174,7 @@ final class Sprite_Sub1 extends Sprite {
             if (i_43_ > i_45_) {
                 int i_47_ = i_43_ - i_45_;
                 class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -81, (float) i_47_), anInterface18_Impl3_8403.method67((float) i_36_, 127), (byte) -16);
-                aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+                aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
                 class101_sub2.method932(0.0F, (float) i_47_, (float) i_36_, (byte) -101);
                 class101_sub2.method891(i, i_45_, 0);
                 aHa_Sub3_8407.method3915(0);
@@ -184,7 +184,7 @@ final class Sprite_Sub1 extends Sprite {
             int i_61_ = i - -i_36_;
             int i_62_ = scaleWidth();
             class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -121, (float) i_37_), anInterface18_Impl3_8403.method67((float) anInt8411, 77), (byte) -27);
-            aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+            aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
             int i_63_ = i - -anInt8400;
             for (int i_64_ = anInt8411 + i_63_; i_64_ <= i_61_; i_64_ += i_62_) {
                 class101_sub2.method932(0.0F, (float) i_37_, (float) anInt8411, (byte) -69);
@@ -196,7 +196,7 @@ final class Sprite_Sub1 extends Sprite {
             if (i_63_ < i_61_) {
                 int i_65_ = -i_63_ + i_61_;
                 class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -62, (float) i_37_), anInterface18_Impl3_8403.method67((float) i_65_, 119), (byte) -10);
-                aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+                aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
                 class101_sub2.method932(0.0F, (float) i_37_, (float) i_65_, (byte) -120);
                 class101_sub2.method891(i_63_, i_35_, 0);
                 aHa_Sub3_8407.method3915(0);
@@ -211,7 +211,7 @@ final class Sprite_Sub1 extends Sprite {
             int i_53_ = i_52_ + anInt8417;
             while (i_48_ >= i_53_) {
                 class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -89, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 88), (byte) -16);
-                aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+                aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
                 int i_54_ = anInt8400 + i;
                 for (int i_55_ = i_54_ - -anInt8411; i_55_ <= i_49_; i_55_ += i_50_) {
                     class101_sub2.method932(0.0F, (float) anInt8417, (float) anInt8411, (byte) -65);
@@ -223,7 +223,7 @@ final class Sprite_Sub1 extends Sprite {
                 if (i_49_ > i_54_) {
                     int i_56_ = -i_54_ + i_49_;
                     class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -82, (float) anInt8417), anInterface18_Impl3_8403.method67((float) i_56_, 86), (byte) -35);
-                    aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+                    aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
                     class101_sub2.method932(0.0F, (float) anInt8417, (float) i_56_, (byte) -26);
                     class101_sub2.method891(i_54_, i_52_, 0);
                     aHa_Sub3_8407.method3915(0);
@@ -235,7 +235,7 @@ final class Sprite_Sub1 extends Sprite {
             if (i_52_ < i_48_) {
                 int i_57_ = i_48_ + -i_52_;
                 class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -121, (float) i_57_), anInterface18_Impl3_8403.method67((float) anInt8411, 102), (byte) -59);
-                aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+                aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
                 int i_58_ = anInt8400 + i;
                 int i_59_ = anInt8411 + i_58_;
                 while (i_49_ >= i_59_) {
@@ -249,7 +249,7 @@ final class Sprite_Sub1 extends Sprite {
                 if (i_49_ > i_58_) {
                     int i_60_ = i_49_ - i_58_;
                     class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -102, (float) i_57_), anInterface18_Impl3_8403.method67((float) i_60_, 115), (byte) -90);
-                    aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+                    aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
                     class101_sub2.method932(0.0F, (float) i_57_, (float) i_60_, (byte) -95);
                     class101_sub2.method891(i_58_, i_52_, 0);
                     aHa_Sub3_8407.method3915(0);
@@ -283,7 +283,7 @@ final class Sprite_Sub1 extends Sprite {
             class101_sub2.method920(f_66_, false, 0.0F, f);
         }
         class101_sub2_73_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -87, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 75), (byte) -60);
-        aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
         aHa_Sub3_8407.method3897(1, -4382);
         aHa_Sub3_8407.method3850((byte) -31, interface18_impl3);
         aHa_Sub3_8407.method3874(Class167.aClass229_2207, 127, Class328_Sub3.aClass229_6519);
@@ -292,7 +292,7 @@ final class Sprite_Sub1 extends Sprite {
         class101_sub2_76_.method898(class101_sub2);
         class101_sub2_76_.method891(-i_71_, -i_72_, 0);
         class101_sub2_76_.method914(interface18_impl3.method71((byte) -32, 1.0F), 1.0F, 0, interface18_impl3.method67(1.0F, 71));
-        aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
         aHa_Sub3_8407.method3915(0);
         aHa_Sub3_8407.method3933(-109);
         aHa_Sub3_8407.method3879(-8629);
@@ -364,7 +364,7 @@ final class Sprite_Sub1 extends Sprite {
         }
         class101_sub2.method932(0.0F, (float) i_96_, (float) i_95_, (byte) -100);
         class101_sub2.method891(i, i_94_, 0);
-        aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
         aHa_Sub3_8407.method3915(0);
         aHa_Sub3_8407.method3933(-118);
         aHa_Sub3_8407.method3879(-8629);
@@ -397,7 +397,7 @@ final class Sprite_Sub1 extends Sprite {
         class101_sub2.method932(0.0F, (float) anInt8417, (float) anInt8411, (byte) -44);
         class101_sub2.method891(i, i_102_, 0);
         class101_sub2_106_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -125, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 111), (byte) -19);
-        aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
         aHa_Sub3_8407.method3915(0);
         aHa_Sub3_8407.method3933(-41);
         aHa_Sub3_8407.method3879(-8629);
@@ -437,7 +437,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3915(0);
         Class101_Sub2 class101_sub2_116_ = aHa_Sub3_8407.method3820(false);
         class101_sub2_116_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -102, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 106), (byte) -33);
-        aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
         aHa_Sub3_8407.method3897(1, -4382);
         aHa_Sub3_8407.method3850((byte) 101, interface18_impl3);
         aHa_Sub3_8407.method3874(Class167.aClass229_2207, 110, Class328_Sub3.aClass229_6519);
@@ -445,7 +445,7 @@ final class Sprite_Sub1 extends Sprite {
         Class101_Sub2 class101_sub2_117_ = aHa_Sub3_8407.method3820(false);
         class101_sub2_117_.method932(1.0F, interface18_impl3.method71((byte) -108, (float) anInt8417), interface18_impl3.method67((float) anInt8411, 95), (byte) -81);
         class101_sub2_117_.method920(interface18_impl3.method71((byte) -27, (float) (i_113_ + -i_115_)), false, 0.0F, interface18_impl3.method67((float) (i - i_114_), 122));
-        aHa_Sub3_8407.method3853(-32, Class239_Sub18.aClass251_6030);
+        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
         aHa_Sub3_8407.method3933(-81);
         aHa_Sub3_8407.method3879(-8629);
         aHa_Sub3_8407.method3849((byte) 47, 0, Class342.aClass70_4247);

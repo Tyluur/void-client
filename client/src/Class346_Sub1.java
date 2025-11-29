@@ -31,10 +31,10 @@ final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener
     private boolean[] aBooleanArray6543 = new boolean[112];
     private Component aComponent6544;
 
-    final Interface6 method2697(int i) {
+    final KeyLog method2697(int i) {
         if (i != 0) aBooleanArray6543 = null;
         anInt6525++;
-        return (Interface6) aClass262_6541.method1997(8);
+        return (KeyLog) aClass262_6541.method1997(8);
     }
 
     final boolean method2696(int i, int i_0_) {
@@ -95,7 +95,7 @@ final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener
         class348_sub11.anInt4771 = i_5_;
         class348_sub11.anInt4767 = i;
         class348_sub11.aChar4761 = c;
-        class348_sub11.aLong4764 = Class62.method599(-102);
+        class348_sub11.aLong4764 = Class62.safeTime(-102);
         aClass262_6542.method1999(class348_sub11, -20180);
         if (i_4_ != 128) aComponent6544 = null;
     }

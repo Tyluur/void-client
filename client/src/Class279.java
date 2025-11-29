@@ -53,11 +53,11 @@ class Class279 {
     final synchronized void method2084(int i) {
         anInt3595++;
         if (!aBoolean3610) {
-            long l = Class62.method599(-107);
+            long l = Class62.safeTime(-107);
             try {
                 if (l > aLong3602 + 6000L) aLong3602 = -6000L + l;
                 if (i != -6858) anInt3616 = 114;
-                for (/**/; aLong3602 + 5000L < l; l = Class62.method599(-96)) {
+                for (/**/; aLong3602 + 5000L < l; l = Class62.safeTime(-96)) {
                     method2089(256, (byte) -99);
                     aLong3602 += 256000 / Class22.anInt339;
                 }
@@ -197,7 +197,7 @@ class Class279 {
         }
         if (anInt3615 < 0) anInt3615 = 0;
         if (aClass348_Sub16_3604 != null) aClass348_Sub16_3604.method2817(is, 0, i);
-        aLong3602 = Class62.method599(-102);
+        aLong3602 = Class62.safeTime(-102);
     }
 
     final synchronized void method2087(int i) {
@@ -208,7 +208,7 @@ class Class279 {
             method2083();
         } catch (Exception exception) {
             method2091();
-            aLong3614 = 2000L + Class62.method599(-96);
+            aLong3614 = 2000L + Class62.safeTime(-96);
         }
     }
 
@@ -227,7 +227,7 @@ class Class279 {
     }
 
     static final void method2090(int i, int i_20_, boolean bool, byte i_21_, int i_22_, int i_23_, int i_24_) {
-        if ((bool ? Class316.aClass348_Sub51_3959.aClass239_Sub26_7215.method1838(-32350) : Class316.aClass348_Sub51_3959.aClass239_Sub26_7272.method1838(-32350)) != 0 && i != 0 && Class147.anInt2021 < 50 && i_24_ != -1)
+        if ((bool ? Class316.clientOptions.aClass239_Sub26_7215.method1838(-32350) : Class316.clientOptions.aClass239_Sub26_7272.method1838(-32350)) != 0 && i != 0 && Class147.anInt2021 < 50 && i_24_ != -1)
             Class258_Sub2.aClass10Array8531[Class147.anInt2021++] = new Class10(!bool ? (byte) 2 : (byte) 3, i_24_, i, i_23_, i_22_, 0, i_20_, null);
         if (i_21_ == -35) anInt3608++;
     }
@@ -300,7 +300,7 @@ class Class279 {
     }
 
     public Class279() {
-        aLong3602 = Class62.method599(-99);
+        aLong3602 = Class62.safeTime(-99);
         aLong3614 = 0L;
         aLong3618 = 0L;
         anInt3615 = 0;

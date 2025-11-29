@@ -29,11 +29,11 @@ final class EnumTypeList {
     }
 
     static final void method338(int i, int i_0_) {
-        if (i == Class316.aClass348_Sub51_3959.aClass239_Sub22_7253.method1815(-32350)) i_0_ = -1;
+        if (i == Class316.clientOptions.aClass239_Sub22_7253.method1815(-32350)) i_0_ = -1;
         anInt456++;
         if (i_0_ != Class337.anInt4179) {
             if (i_0_ != -1) {
-                Class222 class222 = Class239.cursorTypeList.method1287((byte) -104, i_0_);
+                Class222 class222 = Option.cursorTypeList.method1287((byte) -104, i_0_);
                 Class207 class207 = class222.method1610((byte) 71);
                 if (class207 == null) i_0_ = -1;
                 else {

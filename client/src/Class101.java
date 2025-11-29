@@ -22,7 +22,7 @@ abstract class Class101 {
     abstract void method892(int i, int i_2_, int i_3_, int[] is);
 
     static final void method893(byte i) {
-        Class348_Sub40_Sub22.method3111(91, Class316.aClass348_Sub51_3959.aClass239_Sub6_7226.method1743(-32350));
+        Class348_Sub40_Sub22.method3111(91, Class316.clientOptions.aClass239_Sub6_7226.method1743(-32350));
         anInt1595++;
         int i_4_ = ((Class286_Sub4.anInt6246 >> 12) - -(za_Sub2.regionTileX >> 3));
         int i_5_ = ((Class90.regionTileY >> 3) + (Class59_Sub2_Sub2.anInt8685 >> 12));
@@ -32,7 +32,7 @@ abstract class Class101 {
         int index = 18;
         Class322.mapNpcs = new int[index];
         Class348_Sub50.aByteArrayArray7212 = new byte[index][];
-        Class239_Sub6.anIntArrayArray5894 = new int[index][4];
+        Option_Sub6.anIntArrayArray5894 = new int[index][4];
         aa_Sub1.mapTiles = new int[index];
         Class14_Sub4.aByteArrayArray8642 = new byte[index][];
         Class348_Sub23_Sub3.mapRegionIds = new int[index];
@@ -43,8 +43,8 @@ abstract class Class101 {
         Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[index][];
         Class129.aByteArrayArray1887 = new byte[index][];
         index = 0;
-        for (int regionX = (i_4_ + -(Class367_Sub4.anInt7319 >> 4)) / 8; (i_4_ - -(Class367_Sub4.anInt7319 >> 4)) / 8 >= regionX; regionX++) {
-            for (int regionY = (-(Class348_Sub40_Sub3.anInt9109 >> 4) + i_5_) / 8; ((i_5_ + (Class348_Sub40_Sub3.anInt9109 >> 4)) / 8 >= regionY); regionY++) {
+        for (int regionX = (i_4_ + -(Class367_Sub4.mapLength >> 4)) / 8; (i_4_ - -(Class367_Sub4.mapLength >> 4)) / 8 >= regionX; regionX++) {
+            for (int regionY = (-(Class348_Sub40_Sub3.mapWidth >> 4) + i_5_) / 8; ((i_5_ + (Class348_Sub40_Sub3.mapWidth >> 4)) / 8 >= regionY); regionY++) {
                 int regionId = regionY + (regionX << 8);
                 Class348_Sub23_Sub3.mapRegionIds[index] = regionId;
                 aa_Sub1.mapTiles[index] = Class367_Sub10.MAPS.method417("m" + regionX + "_" + regionY, i + 49);
@@ -91,14 +91,14 @@ abstract class Class101 {
     static final void method901(Sprite[] sprites, int i) {
         try {
             anInt1599++;
-            Class239_Sub1.anInt5850 = sprites.length;
-            Class175.anIntArray2330 = new int[Class239_Sub1.anInt5850 + 10];
-            Class341.aSpriteArray4234 = new Sprite[Class239_Sub1.anInt5850 + 10];
-            Class214.method1575(sprites, 0, Class341.aSpriteArray4234, 0, Class239_Sub1.anInt5850);
-            for (int i_17_ = 0; Class239_Sub1.anInt5850 > i_17_; i_17_++)
+            Option_Sub1.anInt5850 = sprites.length;
+            Class175.anIntArray2330 = new int[Option_Sub1.anInt5850 + 10];
+            Class341.aSpriteArray4234 = new Sprite[Option_Sub1.anInt5850 + 10];
+            Class214.method1575(sprites, 0, Class341.aSpriteArray4234, 0, Option_Sub1.anInt5850);
+            for (int i_17_ = 0; Option_Sub1.anInt5850 > i_17_; i_17_++)
                 Class175.anIntArray2330[i_17_] = Class341.aSpriteArray4234[i_17_].method980();
             if (i != 515880227) anInt1597 = 49;
-            for (int i_18_ = Class239_Sub1.anInt5850; (i_18_ < Class341.aSpriteArray4234.length); i_18_++)
+            for (int i_18_ = Option_Sub1.anInt5850; (i_18_ < Class341.aSpriteArray4234.length); i_18_++)
                 Class175.anIntArray2330[i_18_] = 12;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("bca.RA(" + (sprites != null ? "{...}" : "null") + ',' + i + ')'));

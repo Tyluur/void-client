@@ -184,7 +184,7 @@ final class Class274 {
 
     static final void method2062(byte i) {
         if (Class147.aClass338Array2034 != null) {
-            for (int i_3_ = 0; i_3_ < Class239_Sub26.anInt6115; i_3_++)
+            for (int i_3_ = 0; i_3_ < Option_Sub26.anInt6115; i_3_++)
                 Class147.aClass338Array2034[i_3_] = null;
             Class147.aClass338Array2034 = null;
         }

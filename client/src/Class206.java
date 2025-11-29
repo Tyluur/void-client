@@ -83,7 +83,7 @@ final class Class206 implements Interface11 {
                         if (class10.aClass317_183 == null) continue;
                         class10.anInt188 += class10.aClass317_183.method2370();
                     } else if (class10.method220((byte) -39) && ((class10.aClass348_Sub10_192 == null) || (class10.aClass348_Sub19_Sub1_189) == null)) {
-                        if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = Class348_Sub10.method2793((Class239_Sub4.MIDI_INSTRUMENTS), (class10.anInt185));
+                        if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = Class348_Sub10.method2793((Option_Sub4.MIDI_INSTRUMENTS), (class10.anInt185));
                         if (class10.aClass348_Sub10_192 == null) continue;
                         if (class10.aClass348_Sub19_Sub1_189 == null) {
                             class10.aClass348_Sub19_Sub1_189 = class10.aClass348_Sub10_192.method2791(new int[]{22050});
@@ -93,7 +93,7 @@ final class Class206 implements Interface11 {
                     if (class10.anInt188 < 0) {
                         int i_5_ = 8192;
                         int i_6_;
-                        if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (class10.aByte180 == 3 ? Class316.aClass348_Sub51_3959.aClass239_Sub26_7215.method1838(-32350) : Class316.aClass348_Sub51_3959.aClass239_Sub26_7272.method1838(-32350))) >> 2);
+                        if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (class10.aByte180 == 3 ? Class316.clientOptions.aClass239_Sub26_7215.method1838(-32350) : Class316.clientOptions.aClass239_Sub26_7272.method1838(-32350))) >> 2);
                         else {
                             int i_7_ = 0x3 & (class10.anInt178 >> 24);
                             if ((Class132.aPlayer_1907.plane) == i_7_) {
@@ -109,7 +109,7 @@ final class Class206 implements Interface11 {
                                     continue;
                                 }
                                 if (i_14_ < 0) i_14_ = 0;
-                                i_6_ = ((i_8_ + -i_14_) * (Class316.aClass348_Sub51_3959.aClass239_Sub26_7234.method1838(-32350) * class10.anInt184) / i_8_) >> 2;
+                                i_6_ = ((i_8_ + -i_14_) * (Class316.clientOptions.aClass239_Sub26_7234.method1838(-32350) * class10.anInt184) / i_8_) >> 2;
                                 if ((class10.aClass318_Sub1_172 != null) && (class10.aClass318_Sub1_172 instanceof Class318_Sub1_Sub3)) {
                                     Class318_Sub1_Sub3 class318_sub1_sub3 = ((Class318_Sub1_Sub3) (class10.aClass318_Sub1_172));
                                     short i_15_ = (class318_sub1_sub3.aShort8743);
@@ -147,13 +147,13 @@ final class Class206 implements Interface11 {
         }
         anInt4890++;
         if (Class74.aBoolean1236 && !Class167.method1296(true)) {
-            if (Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350) != 0 && Class267.anInt3428 != -1) {
-                if (Class209.aClass348_Sub16_Sub3_2718 != null) Class348_Sub40_Sub15.method3086(2, Class209.aClass348_Sub16_Sub3_2718, Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350), Class59_Sub2_Sub1.MUSIC, false, 0, Class267.anInt3428);
-                else Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 124, Class59_Sub2_Sub1.MUSIC, Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350));
+            if (Class316.clientOptions.aClass239_Sub26_7260.method1838(-32350) != 0 && Class267.anInt3428 != -1) {
+                if (Class209.aClass348_Sub16_Sub3_2718 != null) Class348_Sub40_Sub15.method3086(2, Class209.aClass348_Sub16_Sub3_2718, Class316.clientOptions.aClass239_Sub26_7260.method1838(-32350), Class59_Sub2_Sub1.MUSIC, false, 0, Class267.anInt3428);
+                else Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 124, Class59_Sub2_Sub1.MUSIC, Class316.clientOptions.aClass239_Sub26_7260.method1838(-32350));
             }
             Class74.aBoolean1236 = false;
             Class209.aClass348_Sub16_Sub3_2718 = null;
-        } else if (Class316.aClass348_Sub51_3959.aClass239_Sub26_7260.method1838(-32350) != 0 && Class267.anInt3428 != -1 && !Class167.method1296(true)) {
+        } else if (Class316.clientOptions.aClass239_Sub26_7260.method1838(-32350) != 0 && Class267.anInt3428 != -1 && !Class167.method1296(true)) {
             Class318.anInt3973++;
             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(ha_Sub2.aClass351_7554, Class348_Sub23_Sub2.aClass77_9029, -107);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 118, Class267.anInt3428);
@@ -280,8 +280,8 @@ final class Class206 implements Interface11 {
         anInt4873 = -1;
         if (!var_ha_Sub2.aBoolean7820) throw new IllegalStateException("");
         aHa_Sub2_4883 = var_ha_Sub2;
-        OpenGL.glGenFramebuffersEXT(1, Class106.anIntArray1635, 0);
-        anInt4891 = Class106.anIntArray1635[0];
+        OpenGL.glGenFramebuffersEXT(1, LoadingScreenOpFactory.anIntArray1635, 0);
+        anInt4891 = LoadingScreenOpFactory.anIntArray1635[0];
     }
 
     static {

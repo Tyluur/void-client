@@ -8,7 +8,7 @@ final class Class308 {
     static int anInt3881;
     static byte[][] aByteArrayArray3882;
     static int[] anIntArray3883;
-    static Interface6[] anInterface6Array3884 = new Interface6[75];
+    static KeyLog[] anKeyLogArray3884 = new KeyLog[75];
     static int anInt3885;
     static int anInt3886;
     private Class348_Sub42 aClass348_Sub42_3887 = new Class348_Sub42();
@@ -80,7 +80,7 @@ final class Class308 {
     public static void method2306(byte i) {
         if (i != -90) method2306((byte) -74);
         anIntArray3883 = null;
-        anInterface6Array3884 = null;
+        anKeyLogArray3884 = null;
         aByteArrayArray3882 = null;
     }
 

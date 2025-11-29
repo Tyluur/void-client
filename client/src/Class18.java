@@ -46,7 +46,7 @@ final class Class18 {
         if (var_aa != null) {
             Class348_Sub8.aHa6654.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789);
             if (VarcTypeList.anInt3306 >= 3) Class348_Sub8.aHa6654.A(-16777216, var_aa, i_1_, i);
-            else NPCDefinition.aSprite_1365.method976(((float) class46.anInt709 / 2.0F + (float) i_1_), (float) i + (float) class46.anInt789 / 2.0F, 4096, (0x3fff & (int) -Class314.aFloat3938) << 2, var_aa, i_1_, i);
+            else NPCDefinition.aSprite_1365.method976(((float) class46.anInt709 / 2.0F + (float) i_1_), (float) i + (float) class46.anInt789 / 2.0F, 4096, (0x3fff & (int) -ResourceProvider.aFloat3938) << 2, var_aa, i_1_, i);
             if (i_0_ != -98) method271(88, null, (byte) 15, 71);
         }
     }
@@ -152,8 +152,8 @@ final class Class18 {
         if (anInt286 != i || i_10_ != anInt275) {
             anInt286 = i;
             anInt275 = i_10_;
-            for (Class348 class348 = aClass262_292.method1995(i_12_ ^ ~0x4); aClass262_292.aClass348_3334 != class348; class348 = class348.aClass348_4294)
-                ((Class348_Sub5) class348).method2754(anInt275, (byte) 41, anInt286);
+            for (Node node = aClass262_292.method1995(i_12_ ^ ~0x4); aClass262_292.aNode_3334 != node; node = node.aNode_4294)
+                ((Class348_Sub5) node).method2754(anInt275, (byte) 41, anInt286);
             aBoolean297 = true;
             aBoolean293 = true;
             aBoolean294 = true;
@@ -270,8 +270,8 @@ final class Class18 {
         aClass348_Sub42_Sub2_298 = null;
         aClass258_Sub3Array295 = null;
         if (!aClass262_292.method2002((byte) 18)) {
-            for (Class348 class348 = aClass262_292.method1995(4); aClass262_292.aClass348_3334 != class348; class348 = class348.aClass348_4294)
-                ((Class348_Sub5) class348).method2763((byte) -124);
+            for (Node node = aClass262_292.method1995(4); aClass262_292.aNode_3334 != node; node = node.aNode_4294)
+                ((Class348_Sub5) node).method2763((byte) -124);
         }
         anInt286 = anInt275 = 1;
     }
@@ -321,14 +321,14 @@ final class Class18 {
         Class44.aClass101_624 = Class21.aHa326.method3654();
         r.aClass101_9720 = Class21.aHa326.method3654();
         Class73.anInt4784 = i_26_;
-        Class239_Sub24.anInt6095 = 0;
+        Option_Sub24.anInt6095 = 0;
         if (i_22_ <= 64) anIntArray279 = null;
         Class344.anInt4267 = i_23_;
         Class286.anInt3682 = 0;
         Class58.anInt1067 = i_24_;
         Class17.anInterface4_252 = null;
         Class348_Sub49.anInt7207 = 1;
-        Class239_Sub12.anInt5965 = i;
+        Option_Sub12.anInt5965 = i;
         Class85.method828((byte) 38, i_25_, i_21_);
     }
 

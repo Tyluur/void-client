@@ -388,7 +388,7 @@ final class Class325 {
         do {
             try {
                 anInt4067++;
-                if (class348_sub42_sub12 != null && (class348_sub42_sub12 != (Class348_Sub40_Sub4.aClass262_9111.aClass348_3334))) {
+                if (class348_sub42_sub12 != null && (class348_sub42_sub12 != (Class348_Sub40_Sub4.aClass262_9111.aNode_3334))) {
                     int i_74_ = (class348_sub42_sub12.anInt9602);
                     int i_75_ = (class348_sub42_sub12.anInt9607);
                     int i_76_ = (class348_sub42_sub12.anInt9608);
@@ -401,7 +401,7 @@ final class Class325 {
                             if (i_77_ == 1) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, -1);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, -1);
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, (int) Class314.aFloat3938);
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, (int) ResourceProvider.aFloat3938);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 57);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, r_Sub2.anInt10483);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class348_Sub49_Sub1.anInt9750);
@@ -412,8 +412,8 @@ final class Class325 {
                             } else {
                                 Class93.anInt1534 = i_72_;
                                 Class26.anInt385 = i_73_;
-                                Class348.anInt4292 = 0;
-                                Class239_Sub20.anInt6048 = 1;
+                                Node.anInt4292 = 0;
+                                Option_Sub20.anInt6048 = 1;
                             }
                             Class348_Sub42_Sub14.method3243(123, class348_sub47);
                             Class298.method2252(true, i_74_, i_75_, (byte) -120, 1, 0, 1, -4, 0);
@@ -421,9 +421,9 @@ final class Class325 {
                     }
                     if (i_76_ == 4) {
                         Class93.anInt1534 = i_72_;
-                        Class239_Sub20.anInt6048 = 2;
+                        Option_Sub20.anInt6048 = 2;
                         Class26.anInt385 = i_73_;
-                        Class348.anInt4292 = 0;
+                        Node.anInt4292 = 0;
                         Class21.anInt321++;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub42_Sub8.aClass351_9553), (Class348_Sub23_Sub2.aClass77_9029), -113);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class90.regionTileY + i_75_);
@@ -434,10 +434,10 @@ final class Class325 {
                         Class309.method2307(i_75_, l, i_74_, 51);
                     }
                     if (i_76_ == 1008) {
-                        Class239_Sub20.anInt6048 = 2;
+                        Option_Sub20.anInt6048 = 2;
                         Class93.anInt1534 = i_72_;
                         Class26.anInt385 = i_73_;
-                        Class348.anInt4292 = 0;
+                        Node.anInt4292 = 0;
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
@@ -454,11 +454,11 @@ final class Class325 {
                     if (i_76_ == 48) {
                         Player player = (Class294.aPlayerArray5058[i_77_]);
                         if (player != null) {
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
                             Class216.anInt4979++;
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub42_Sub18.aClass351_9684, Class348_Sub23_Sub2.aClass77_9029, -126));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(81, i_77_);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -126) ? 0 : 1));
@@ -468,8 +468,8 @@ final class Class325 {
                     }
                     if (i_76_ == 49) {
                         Class26.anInt385 = i_73_;
-                        Class348.anInt4292 = 0;
-                        Class239_Sub20.anInt6048 = 2;
+                        Node.anInt4292 = 0;
+                        Option_Sub20.anInt6048 = 2;
                         Class93.anInt1534 = i_72_;
                         Class205.anInt2689++;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class344.aClass351_4262, (Class348_Sub23_Sub2.aClass77_9029), -107);
@@ -488,10 +488,10 @@ final class Class325 {
                         if (class46 != null) Class155.method1237((byte) 71, class46);
                     }
                     if (i_76_ == 5) {
-                        Class348.anInt4292 = 0;
+                        Node.anInt4292 = 0;
                         Class15.anInt226++;
                         Class26.anInt385 = i_73_;
-                        Class239_Sub20.anInt6048 = 2;
+                        Option_Sub20.anInt6048 = 2;
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class190.aClass351_2539, (Class348_Sub23_Sub2.aClass77_9029), -110);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class90.regionTileY + i_75_);
@@ -504,10 +504,10 @@ final class Class325 {
                     if (i_76_ == 46) {
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
                         if (class348_sub22 != null) {
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             QuestTypeList.anInt2499++;
                             Class26.anInt385 = i_73_;
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class93.anInt1534 = i_72_;
                             Npc npc = (class348_sub22.aNpc_6859);
                             Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class318_Sub1_Sub5_Sub1.aClass351_10134, Class348_Sub23_Sub2.aClass77_9029, -96));
@@ -520,12 +520,12 @@ final class Class325 {
                     if (i_76_ == 11) {
                         Player player = (Class294.aPlayerArray5058[i_77_]);
                         if (player != null) {
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class127.anInt4657++;
                             Class93.anInt1534 = i_72_;
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class26.anInt385 = i_73_;
-                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class239_Sub9.aClass351_5929), (Class348_Sub23_Sub2.aClass77_9029), -94);
+                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Option_Sub9.aClass351_5929), (Class348_Sub23_Sub2.aClass77_9029), -94);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, i_77_);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -108, (Class182.aClass346_2449.method2696(82, -124) ? 1 : 0));
                             Class348_Sub42_Sub14.method3243(119, class348_sub47);
@@ -535,9 +535,9 @@ final class Class325 {
                     if (i_76_ == 59) {
                         Class26.anInt385 = i_73_;
                         Class93.anInt1534 = i_72_;
-                        Class348.anInt4292 = 0;
+                        Node.anInt4292 = 0;
                         Class178.anInt2336++;
-                        Class239_Sub20.anInt6048 = 2;
+                        Option_Sub20.anInt6048 = 2;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class101_Sub1.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 86, (!Class182.aClass346_2449.method2696(82, -121) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(31, (int) (l >>> 32) & 0x7fffffff);
@@ -549,11 +549,11 @@ final class Class325 {
                     if (i_76_ == 30) {
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
                         if (class348_sub22 != null) {
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
                             Npc npc = (class348_sub22.aNpc_6859);
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class348_Sub7.anInt6646++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class131.aClass351_1904), (Class348_Sub23_Sub2.aClass77_9029), -119);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class9.anInt169);
@@ -571,8 +571,8 @@ final class Class325 {
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
                             Class55.anInt994++;
-                            Class348.anInt4292 = 0;
-                            Class239_Sub20.anInt6048 = 1;
+                            Node.anInt4292 = 0;
+                            Option_Sub20.anInt6048 = 1;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class195.aClass351_5015), (Class348_Sub23_Sub2.aClass77_9029), -123);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(101, za_Sub2.regionTileX + i_74_);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class90.regionTileY - -i_75_);
@@ -582,8 +582,8 @@ final class Class325 {
                     if (i_76_ == 1001) {
                         Class93.anInt1534 = i_72_;
                         Class35.anInt484++;
-                        Class239_Sub20.anInt6048 = 2;
-                        Class348.anInt4292 = 0;
+                        Option_Sub20.anInt6048 = 2;
+                        Node.anInt4292 = 0;
                         Class26.anInt385 = i_73_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class205.aClass351_2691, (Class348_Sub23_Sub2.aClass77_9029), -115);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
@@ -593,9 +593,9 @@ final class Class325 {
                         Player player = (Class294.aPlayerArray5058[i_77_]);
                         if (player != null) {
                             Class26.anInt385 = i_73_;
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class228.anInt2975++;
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class52.aClass351_4907), (Class348_Sub23_Sub2.aClass77_9029), -93);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class9.anInt169);
@@ -610,10 +610,10 @@ final class Class325 {
                     if (i_76_ == 45) {
                         Player player = (Class294.aPlayerArray5058[i_77_]);
                         if (player != null) {
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
                             Class101.anInt1596++;
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class26.anInt385 = i_73_;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class299_Sub1_Sub2.aClass351_8706), (Class348_Sub23_Sub2.aClass77_9029), -84);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -125, (Class182.aClass346_2449.method2696(82, -126) ? 1 : 0));
@@ -623,10 +623,10 @@ final class Class325 {
                         }
                     }
                     if (i_76_ == 1007) {
-                        Class239_Sub20.anInt6048 = 2;
+                        Option_Sub20.anInt6048 = 2;
                         Class318_Sub1_Sub5_Sub2.anInt10164++;
                         Class26.anInt385 = i_73_;
-                        Class348.anInt4292 = 0;
+                        Node.anInt4292 = 0;
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class193.aClass351_2587, (Class348_Sub23_Sub2.aClass77_9029), -112);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class90.regionTileY + i_75_, (byte) 3);
@@ -639,9 +639,9 @@ final class Class325 {
                     if (i_76_ == 23) {
                         Player player = (Class294.aPlayerArray5058[i_77_]);
                         if (player != null) {
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class318_Sub1_Sub4_Sub1.anInt10073++;
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class26.anInt385 = i_73_;
                             Class93.anInt1534 = i_72_;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class52.aClass351_4905), (Class348_Sub23_Sub2.aClass77_9029), -113);
@@ -661,9 +661,9 @@ final class Class325 {
                         if (player != null) {
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class296.anInt3768++;
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class251.aClass351_3232), (Class348_Sub23_Sub2.aClass77_9029), -84);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -128) ? 0 : 1));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-99, i_77_);
@@ -673,9 +673,9 @@ final class Class325 {
                     }
                     if (i_76_ == 21) {
                         Class93.anInt1534 = i_72_;
-                        Class239_Sub8.anInt5919++;
-                        Class348.anInt4292 = 0;
-                        Class239_Sub20.anInt6048 = 2;
+                        Option_Sub8.anInt5919++;
+                        Node.anInt4292 = 0;
+                        Option_Sub20.anInt6048 = 2;
                         Class26.anInt385 = i_73_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(r_Sub1.aClass351_10477, (Class348_Sub23_Sub2.aClass77_9029), -107);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
@@ -686,9 +686,9 @@ final class Class325 {
                         Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
                     }
                     if (i_76_ == 15) {
-                        Class239_Sub20.anInt6048 = 1;
+                        Option_Sub20.anInt6048 = 1;
                         Class26.anInt385 = i_73_;
-                        Class348.anInt4292 = 0;
+                        Node.anInt4292 = 0;
                         Class93.anInt1534 = i_72_;
                         client.anInt5187++;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class344.aClass351_4264, (Class348_Sub23_Sub2.aClass77_9029), -127);
@@ -704,11 +704,11 @@ final class Class325 {
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
                         if (class348_sub22 != null) {
                             Class290.anInt3707++;
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class26.anInt385 = i_73_;
                             Class93.anInt1534 = i_72_;
                             Npc npc = (class348_sub22.aNpc_6859);
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(RuntimeException_Sub1.aClass351_4601, Class348_Sub23_Sub2.aClass77_9029, -123));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -67, (Class182.aClass346_2449.method2696(82, -122) ? 1 : 0));
@@ -717,8 +717,8 @@ final class Class325 {
                         }
                     }
                     if (i_76_ == 2) {
-                        Class348.anInt4292 = 0;
-                        Class239_Sub20.anInt6048 = 2;
+                        Node.anInt4292 = 0;
+                        Option_Sub20.anInt6048 = 2;
                         r_Sub1.anInt10476++;
                         Class26.anInt385 = i_73_;
                         Class93.anInt1534 = i_72_;
@@ -736,10 +736,10 @@ final class Class325 {
                     if (i_76_ == 58) {
                         Player player = (Class294.aPlayerArray5058[i_77_]);
                         if (player != null) {
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class98.anInt1570++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class175.aClass351_2315), (Class348_Sub23_Sub2.aClass77_9029), -90);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -121) ? 0 : 1));
@@ -751,11 +751,11 @@ final class Class325 {
                     if (i_76_ == 17) {
                         Player player = (Class294.aPlayerArray5058[i_77_]);
                         if (player != null) {
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class93.anInt1534 = i_72_;
                             Class14_Sub3.anInt8625++;
                             Class26.anInt385 = i_73_;
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((SkyBoxSphereTypeList.aClass351_364), (Class348_Sub23_Sub2.aClass77_9029), -113);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -126) ? 0 : 1));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
@@ -765,8 +765,8 @@ final class Class325 {
                     }
                     if (i_76_ == 47) {
                         Class26.anInt385 = i_73_;
-                        Class239_Sub20.anInt6048 = 2;
-                        Class348.anInt4292 = 0;
+                        Option_Sub20.anInt6048 = 2;
+                        Node.anInt4292 = 0;
                         Class316.anInt3966++;
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub49_Sub1.aClass351_9749), (Class348_Sub23_Sub2.aClass77_9029), -81);
@@ -780,8 +780,8 @@ final class Class325 {
                     if (i_76_ == 3) {
                         Class151.anInt2065++;
                         Class26.anInt385 = i_73_;
-                        Class348.anInt4292 = 0;
-                        Class239_Sub20.anInt6048 = 2;
+                        Node.anInt4292 = 0;
+                        Option_Sub20.anInt6048 = 2;
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub42_Sub17.aClass351_9679), (Class348_Sub23_Sub2.aClass77_9029), -98);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -83, (!Class182.aClass346_2449.method2696(82, -128) ? 0 : 1));
@@ -794,11 +794,11 @@ final class Class325 {
                     if (i_76_ == 20) {
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
                         if (class348_sub22 != null) {
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class26.anInt385 = i_73_;
                             Class93.anInt1534 = i_72_;
                             Npc npc = (class348_sub22.aNpc_6859);
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class328_Sub2.anInt6516++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class339.aClass351_4207), (Class348_Sub23_Sub2.aClass77_9029), -81);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, i_77_);
@@ -809,18 +809,18 @@ final class Class325 {
                     }
                     if (i > 97) {
                         if (i_76_ == 1010) {
-                            Class239_Sub20.anInt6048 = 2;
+                            Option_Sub20.anInt6048 = 2;
                             Class348_Sub42_Sub18.anInt9686++;
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
-                            Class348.anInt4292 = 0;
+                            Node.anInt4292 = 0;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((StructTypeList.aClass351_1144), (Class348_Sub23_Sub2.aClass77_9029), -96);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
                             Class348_Sub42_Sub14.method3243(125, class348_sub47);
                         }
                         if (i_76_ == 22) {
-                            Class239_Sub20.anInt6048 = 2;
-                            Class348.anInt4292 = 0;
+                            Option_Sub20.anInt6048 = 2;
+                            Node.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
                             Class348_Sub42_Sub13.anInt9620++;
@@ -834,8 +834,8 @@ final class Class325 {
                         }
                         if (i_76_ == 50) {
                             Class26.anInt385 = i_73_;
-                            Class239_Sub20.anInt6048 = 2;
-                            Class348.anInt4292 = 0;
+                            Option_Sub20.anInt6048 = 2;
+                            Node.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
                             Class228.anInt2975++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class52.aClass351_4907), (Class348_Sub23_Sub2.aClass77_9029), -127);
@@ -853,7 +853,7 @@ final class Class325 {
                                 Class341.method2678(-2049);
                                 Class348_Sub44 class348_sub44 = client.method105(class46);
                                 Class339.method2666(class348_sub44.anInt7093, class348_sub44.method3307(14), class46, (byte) 21);
-                                Class28.aString5001 = Class239_Sub8.method1753(0, class46);
+                                Class28.aString5001 = Option_Sub8.method1753(0, class46);
                                 Class28.aString5000 = (class46.aString752 + "<col=ffffff>");
                                 if (Class28.aString5001 == null) Class28.aString5001 = "Null";
                             }
@@ -862,12 +862,12 @@ final class Class325 {
                             if (i_76_ == 25) {
                                 Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
                                 if (class348_sub22 != null) {
-                                    Class239_Sub20.anInt6048 = 2;
+                                    Option_Sub20.anInt6048 = 2;
                                     Class93.anInt1534 = i_72_;
                                     Class299_Sub1_Sub2.anInt8702++;
                                     Npc npc = (class348_sub22.aNpc_6859);
                                     Class26.anInt385 = i_73_;
-                                    Class348.anInt4292 = 0;
+                                    Node.anInt4292 = 0;
                                     Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub18.aClass351_6814, Class348_Sub23_Sub2.aClass77_9029, -125));
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, !Class182.aClass346_2449.method2696(82, -125) ? 0 : 1);
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_77_, (byte) 3);
@@ -878,10 +878,10 @@ final class Class325 {
                             if (i_76_ == 57) {
                                 Player player = (Class294.aPlayerArray5058[i_77_]);
                                 if (player != null) {
-                                    Class239_Sub20.anInt6048 = 2;
+                                    Option_Sub20.anInt6048 = 2;
                                     Class93.anInt1534 = i_72_;
                                     Class369_Sub2.anInt8588++;
-                                    Class348.anInt4292 = 0;
+                                    Node.anInt4292 = 0;
                                     Class26.anInt385 = i_73_;
                                     Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub42_Sub5.aClass351_9533, Class348_Sub23_Sub2.aClass77_9029, -115));
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-88, i_77_);
@@ -893,8 +893,8 @@ final class Class325 {
                             if (i_76_ == 9) {
                                 Class318_Sub1_Sub3_Sub4.anInt10364++;
                                 Class26.anInt385 = i_73_;
-                                Class348.anInt4292 = 0;
-                                Class239_Sub20.anInt6048 = 2;
+                                Node.anInt4292 = 0;
+                                Option_Sub20.anInt6048 = 2;
                                 Class93.anInt1534 = i_72_;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class252.aClass351_3237, Class348_Sub23_Sub2.aClass77_9029, -125));
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-96, Class90.regionTileY + i_75_);
@@ -909,9 +909,9 @@ final class Class325 {
                                 if (class348_sub22 != null) {
                                     Npc npc = (class348_sub22.aNpc_6859);
                                     Class93.anInt1534 = i_72_;
-                                    Class348.anInt4292 = 0;
+                                    Node.anInt4292 = 0;
                                     Class26.anInt385 = i_73_;
-                                    Class239_Sub20.anInt6048 = 2;
+                                    Option_Sub20.anInt6048 = 2;
                                     Class73.anInt4773++;
                                     Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class43.aClass351_618, Class348_Sub23_Sub2.aClass77_9029, -117));
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
@@ -921,9 +921,9 @@ final class Class325 {
                                 }
                             }
                             if (i_76_ == 10) {
-                                Class239_Sub20.anInt6048 = 2;
+                                Option_Sub20.anInt6048 = 2;
                                 Class26.anInt385 = i_73_;
-                                Class348.anInt4292 = 0;
+                                Node.anInt4292 = 0;
                                 Class300.anInt3820++;
                                 Class93.anInt1534 = i_72_;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class188.aClass351_2512, Class348_Sub23_Sub2.aClass77_9029, -91));

@@ -97,7 +97,7 @@ final class Class341 {
                 Class50_Sub2.method464(i + -9865);
                 Class274.method2061(-127);
                 Class363.method3513(-113);
-                Class239_Sub14.method1779((byte) 124);
+                Option_Sub14.method1779((byte) 124);
                 if (VarcTypeList.aClass305_3304 != null) VarcTypeList.aClass305_3304.method2295((byte) 96);
                 Class299_Sub2.method2269(true);
                 Class348_Sub18.method2938((byte) 127);

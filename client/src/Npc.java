@@ -143,10 +143,10 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         NPCDefinition NPCDefinition = (this.aNPCDefinition_10505.anIntArray1377 != null ? this.aNPCDefinition_10505.method794(Class318_Sub1_Sub3_Sub3.timedVarDomain, -1) : this.aNPCDefinition_10505);
         this.aBoolean10324 = false;
         Class318_Sub4 class318_sub4 = null;
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub21_7270.method1812(-32350) == i && NPCDefinition.aBoolean1369 && class225.aBoolean2913) {
+        if (Class316.clientOptions.aClass239_Sub21_7270.method1812(-32350) == i && NPCDefinition.aBoolean1369 && class225.aBoolean2913) {
             Class17 class17 = ((this.anInt10286 == -1 || this.anInt10218 != 0) ? null : Class10.seqTypeList.method835(this.anInt10286, 7));
             Class17 class17_22_ = ((this.anInt10268 == -1 || (this.aBoolean10213 && class17 != null)) ? null : Class10.seqTypeList.method835(this.anInt10268, 7));
-            Class64 class64 = (Class348.method2711(this.anInt10302, i_20_, this.aClass64Array10323[0], this.anInt10208, false, (class17_22_ == null ? this.anInt10267 : this.anInt10245), 0xffff & this.aNPCDefinition_10505.aShort1339, this.aNPCDefinition_10505.size, this.anInt10252, var_ha, 0xff & this.aNPCDefinition_10505.aByte1353, this.aNPCDefinition_10505.aShort1350 & 0xffff, this.aNPCDefinition_10505.aByte1347 & 0xff, class17_22_ == null ? class17 : class17_22_));
+            Class64 class64 = (Node.method2711(this.anInt10302, i_20_, this.aClass64Array10323[0], this.anInt10208, false, (class17_22_ == null ? this.anInt10267 : this.anInt10245), 0xffff & this.aNPCDefinition_10505.aShort1339, this.aNPCDefinition_10505.size, this.anInt10252, var_ha, 0xff & this.aNPCDefinition_10505.aByte1353, this.aNPCDefinition_10505.aShort1350 & 0xffff, this.aNPCDefinition_10505.aByte1347 & 0xff, class17_22_ == null ? class17 : class17_22_));
             if (class64 != null) {
                 class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).length, method2442(1810797122), false));
                 this.aBoolean10324 = true;
@@ -177,7 +177,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         for (int i_25_ = 0; (this.aClass64Array10323.length > i_25_); i_25_++) {
             if (this.aClass64Array10323[i_25_] != null) this.aBoolean10324 |= this.aClass64Array10323[i_25_].F();
         }
-        this.anInt10301 = Class239_Sub15.anInt6006;
+        this.anInt10301 = Option_Sub15.anInt6006;
         this.aClass64Array10323[0] = this.aClass64Array10323[1] = this.aClass64Array10323[2] = null;
         return class318_sub4;
     }

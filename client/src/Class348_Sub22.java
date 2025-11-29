@@ -4,13 +4,13 @@
 
 import java.awt.*;
 
-final class Class348_Sub22 extends Class348 {
+final class Class348_Sub22 extends Node {
     static int anInt6857;
     static int anInt6858;
     Npc aNpc_6859;
     static int anInt6860;
     static int anInt6861;
-    static int anInt6862;
+    static int hitmarksGroup;
 
     static final Class46 method2957(int i, byte i_0_, int i_1_) {
         anInt6858++;
@@ -24,23 +24,23 @@ final class Class348_Sub22 extends Class348 {
     static final int method2958(int i, Index index) {
         anInt6861++;
         int i_2_ = 0;
-        if (index.method421(false, anInt6862)) i_2_++;
-        if (index.method421(false, Class106.anInt1639)) i_2_++;
-        if (index.method421(false, Class373_Sub2.anInt7429)) i_2_++;
-        if (index.method421(false, ha.anInt4562)) i_2_++;
-        if (index.method421(false, VarcstrTypeList.anInt1435)) i_2_++;
-        if (index.method421(false, Class115.anInt1756)) i_2_++;
-        if (index.method421(false, Class291.anInt3739)) i_2_++;
-        if (index.method421(false, Class86.anInt1481)) i_2_++;
-        if (index.method421(false, Class239_Sub10.anInt5948)) i_2_++;
-        if (index.method421(false, Class113.anInt1742)) i_2_++;
-        if (index.method421(false, Class364.anInt4469)) i_2_++;
+        if (index.method421(false, hitmarksGroup)) i_2_++;
+        if (index.method421(false, LoadingScreenOpFactory.hitbarDefaultGroup)) i_2_++;
+        if (index.method421(false, Class373_Sub2.timerbarDefaultGroup)) i_2_++;
+        if (index.method421(false, ha.headIconsPkGroup)) i_2_++;
+        if (index.method421(false, VarcstrTypeList.headIconsPrayerGroup)) i_2_++;
+        if (index.method421(false, Class115.hintHeadIconsGroup)) i_2_++;
+        if (index.method421(false, Class291.hintMapmarkersGroup)) i_2_++;
+        if (index.method421(false, Class86.mapFlagGround)) i_2_++;
+        if (index.method421(false, Option_Sub10.crossGroup)) i_2_++;
+        if (index.method421(false, Class113.mapDotsGround)) i_2_++;
+        if (index.method421(false, Class364.scrollBarGround)) i_2_++;
         if (i != 22388) return 8;
-        if (index.method421(false, Class348_Sub40_Sub38.anInt9473)) i_2_++;
-        if (index.method421(false, QuestTypeList.anInt2510)) i_2_++;
-        if (index.method421(false, Class52.anInt4895)) i_2_++;
-        if (index.method421(false, Class186_Sub1.anInt5814)) i_2_++;
-        if (index.method421(false, Class5_Sub3.anInt8370)) i_2_++;
+        if (index.method421(false, Class348_Sub40_Sub38.nameIconsGroup)) i_2_++;
+        if (index.method421(false, QuestTypeList.floorShadowsGroup)) i_2_++;
+        if (index.method421(false, Class52.compassGroup)) i_2_++;
+        if (index.method421(false, Class186_Sub1.otherLevelGroup)) i_2_++;
+        if (index.method421(false, Class5_Sub3.hintMapEdgeGroup)) i_2_++;
         return i_2_;
     }
 

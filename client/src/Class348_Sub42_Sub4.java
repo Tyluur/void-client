@@ -28,7 +28,7 @@ final class Class348_Sub42_Sub4 extends Class348_Sub42 {
                     if (class46.anInt774 == 6 && class46.anInt699 != -1) {
                         Class17 class17 = Class10.seqTypeList.method835(class46.anInt699, 7);
                         if (class17 != null) {
-                            class46.anInt841 += Class348_Sub51.anInt7267;
+                            class46.anInt841 += ClientOptions.anInt7267;
                             int i_2_ = class46.anInt795;
                             while (class46.anInt841 > (class17.anIntArray267[class46.anInt795])) {
                                 class46.anInt841 -= (class17.anIntArray267[class46.anInt795]);

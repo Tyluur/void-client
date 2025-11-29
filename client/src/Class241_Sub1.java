@@ -46,7 +46,7 @@ final class Class241_Sub1 extends Class241 {
     }
 
     private final long method1863(int i) {
-        long l = Class62.method599(-56) * 1000000L;
+        long l = Class62.safeTime(-56) * 1000000L;
         long l_1_ = l + -aLong6155;
         aLong6155 = l;
         if (l_1_ > -5000000000L && l_1_ < 5000000000L) {

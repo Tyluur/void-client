@@ -467,7 +467,7 @@ final class Class64_Sub3 extends Class64 {
                     float f_90_ = ((float) ((anIntArray5593[class118.anInt1788]) + ((anIntArray5593[class118.anInt1781]) + (anIntArray5593[class118.anInt1782]))) * 0.3333333F);
                     float f_91_ = ((float) ((anIntArray5644[class118.anInt1788]) + (anIntArray5644[class118.anInt1781]) + (anIntArray5644[class118.anInt1782])) * 0.3333333F);
                     float f_92_ = (Class190.aFloat2555 + (f_91_ * Class313.aFloat3935 + (f_90_ * Class299_Sub1_Sub1.aFloat8696 + Class167.aFloat2203 * f)));
-                    float f_93_ = (Class156.aFloat2111 + (Class215.aFloat2836 * f_91_ + (f_90_ * Class252.aFloat3242 + Class314.aFloat3943 * f)));
+                    float f_93_ = (Class156.aFloat2111 + (Class215.aFloat2836 * f_91_ + (f_90_ * Class252.aFloat3242 + ResourceProvider.aFloat3943 * f)));
                     float f_94_ = (f * Class318_Sub9_Sub1.aFloat8784 + f_90_ * Class320.aFloat3994 + f_91_ * Class286_Sub8.aFloat6304 + Class49.aFloat4720);
                     float f_95_ = ((float) (1.0 / Math.sqrt(f_94_ * f_94_ + (f_93_ * f_93_ + (f_92_ * f_92_)))) * (float) class118.anInt1784);
                     class101_sub3.method939(-f_94_ + f_94_ * f_95_, (class118.aShort1785 * class48.anInt856) >> 7, (-(f_92_ * f_95_) + (f_92_ + (float) class48.anInt854)), (class118.aShort1790 * class48.anInt857) >> 7, class48.anInt853, 90, (f_95_ * f_93_ + (-f_93_ + (float) class48.anInt847)));
@@ -533,7 +533,7 @@ final class Class64_Sub3 extends Class64 {
             Class286_Sub8.aFloat6304 = ((class101_sub3.aFloat5781 * class101_sub3_112_.aFloat5756) + (class101_sub3.aFloat5762 * class101_sub3_112_.aFloat5754) + (class101_sub3_112_.aFloat5784 * class101_sub3.aFloat5784));
             float f_114_ = ((class101_sub3_112_.aFloat5756 * class101_sub3.aFloat5747) + (class101_sub3_112_.aFloat5754 * class101_sub3.aFloat5772) + (class101_sub3.aFloat5751 * class101_sub3_112_.aFloat5784) + class101_sub3_112_.aFloat5751);
             Class252.aFloat3242 = ((class101_sub3_112_.aFloat5761 * class101_sub3.aFloat5750) + (class101_sub3_112_.aFloat5769 * class101_sub3.aFloat5769) + (class101_sub3_112_.aFloat5762 * class101_sub3.aFloat5754));
-            Class314.aFloat3943 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5762) + ((class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5769) + (class101_sub3_112_.aFloat5761 * class101_sub3.aFloat5770)));
+            ResourceProvider.aFloat3943 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5762) + ((class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5769) + (class101_sub3_112_.aFloat5761 * class101_sub3.aFloat5770)));
             Class313.aFloat3935 = ((class101_sub3_112_.aFloat5750 * class101_sub3.aFloat5762) + (class101_sub3_112_.aFloat5770 * class101_sub3.aFloat5781) + (class101_sub3.aFloat5784 * class101_sub3_112_.aFloat5781));
             Class167.aFloat2203 = ((class101_sub3.aFloat5756 * class101_sub3_112_.aFloat5781) + ((class101_sub3.aFloat5770 * class101_sub3_112_.aFloat5770) + (class101_sub3.aFloat5761 * class101_sub3_112_.aFloat5750)));
             Class320.aFloat3994 = ((class101_sub3_112_.aFloat5784 * class101_sub3.aFloat5754) + ((class101_sub3.aFloat5769 * class101_sub3_112_.aFloat5754) + (class101_sub3.aFloat5750 * class101_sub3_112_.aFloat5756)));
@@ -587,7 +587,7 @@ final class Class64_Sub3 extends Class64 {
                 float f_136_ = (float) IOException_Sub1.anIntArray91[i_134_];
                 float f_137_ = (float) Class318_Sub2.anIntArray6393[i_134_];
                 float f_138_ = (Class286_Sub8.aFloat6304 * f_135_ + (f_137_ * Class318_Sub9_Sub1.aFloat8784 + Class320.aFloat3994 * f_136_) + f_114_);
-                float f_139_ = f_113_ + (Class314.aFloat3943 * f_137_ + Class252.aFloat3242 * f_136_ + Class215.aFloat2836 * f_135_);
+                float f_139_ = f_113_ + (ResourceProvider.aFloat3943 * f_137_ + Class252.aFloat3242 * f_136_ + Class215.aFloat2836 * f_135_);
                 float f_140_ = f + (Class299_Sub1_Sub1.aFloat8696 * f_136_ + f_137_ * Class167.aFloat2203 + Class313.aFloat3935 * f_135_);
                 if ((float) aHa_Sub2_5598.anInt7826 <= f_138_) {
                     if (i_108_ > 0) f_138_ = (float) i_108_;
@@ -614,7 +614,7 @@ final class Class64_Sub3 extends Class64 {
                     float f_147_ = (float) anIntArray5593[i_144_];
                     float f_148_ = f_114_ + (f_146_ * Class286_Sub8.aFloat6304 + (Class318_Sub9_Sub1.aFloat8784 * f_145_ + f_147_ * Class320.aFloat3994));
                     float f_149_ = f + (f_147_ * Class299_Sub1_Sub1.aFloat8696 + f_145_ * Class167.aFloat2203 + Class313.aFloat3935 * f_146_);
-                    float f_150_ = f_113_ + (Class252.aFloat3242 * f_147_ + f_145_ * Class314.aFloat3943 + f_146_ * Class215.aFloat2836);
+                    float f_150_ = f_113_ + (Class252.aFloat3242 * f_147_ + f_145_ * ResourceProvider.aFloat3943 + f_146_ * Class215.aFloat2836);
                     if (f_148_ >= (float) aHa_Sub2_5598.anInt7826) {
                         if (i_108_ > 0) f_148_ = (float) i_108_;
                         int i_155_ = (int) ((float) (aHa_Sub2_5598.anInt7853) + f_149_ * (float) i_120_ / f_148_);
@@ -847,7 +847,7 @@ final class Class64_Sub3 extends Class64 {
             class64_sub3_211_.anInt5557 = anInt5557;
             if ((i & 0x100) == 0) class64_sub3_211_.aBoolean5595 = aBoolean5595;
             else class64_sub3_211_.aBoolean5595 = true;
-            boolean bool_215_ = Class348.method2709(anInt5556, i, -1);
+            boolean bool_215_ = Node.method2709(anInt5556, i, -1);
             boolean bool_216_ = Class223.method1613(false, anInt5556, i);
             boolean bool_217_ = Class299_Sub1.method2259(i_212_, anInt5556, i);
             boolean bool_218_ = bool_217_ | (bool_216_ | bool_215_);
@@ -975,7 +975,7 @@ final class Class64_Sub3 extends Class64 {
                 class64_sub3_211_.aClass123_5620.aByte1812 = aClass123_5620.aByte1812;
             } else if (Class137.method1163(anInt5556, (byte) -60, i)) class64_sub3_211_.aClass123_5620 = aClass123_5620;
             else class64_sub3_211_.aClass123_5620 = null;
-            if (Class314_Sub1.method2352(-19, anInt5556, i)) {
+            if (Js5ResourceProvider.method2352(-19, anInt5556, i)) {
                 if (class64_sub3_213_.aShortArray5592 != null && (anInt5632 <= class64_sub3_213_.aShortArray5592.length)) {
                     class64_sub3_211_.aShortArray5579 = class64_sub3_213_.aShortArray5579;
                     class64_sub3_211_.aShortArray5592 = class64_sub3_213_.aShortArray5592;
@@ -1118,7 +1118,7 @@ final class Class64_Sub3 extends Class64 {
                         }
                         if (!(f_247_ / (float) i >= aHa_Sub2_5598.aFloat7830) && !(aHa_Sub2_5598.aFloat7836 >= f_246_ / (float) i)) {
                             if (class318_sub3 != null || aClass118Array5621 != null) {
-                                Class314.aFloat3943 = (((class101_sub3_236_.aFloat5770) * (class101_sub3.aFloat5761)) + ((class101_sub3.aFloat5769) * class101_sub3_236_.aFloat5761) + ((class101_sub3_236_.aFloat5756) * (class101_sub3.aFloat5762)));
+                                ResourceProvider.aFloat3943 = (((class101_sub3_236_.aFloat5770) * (class101_sub3.aFloat5761)) + ((class101_sub3.aFloat5769) * class101_sub3_236_.aFloat5761) + ((class101_sub3_236_.aFloat5756) * (class101_sub3.aFloat5762)));
                                 Class313.aFloat3935 = (((class101_sub3.aFloat5781) * (class101_sub3_236_.aFloat5784)) + ((class101_sub3_236_.aFloat5781 * (class101_sub3.aFloat5770)) + ((class101_sub3.aFloat5750) * (class101_sub3_236_.aFloat5762))));
                                 Class318_Sub9_Sub1.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_236_.aFloat5756)) + ((class101_sub3_236_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_236_.aFloat5761))));
                                 Class215.aFloat2836 = (((class101_sub3_236_.aFloat5762) * (class101_sub3.aFloat5769)) + ((class101_sub3_236_.aFloat5781) * (class101_sub3.aFloat5761)) + ((class101_sub3.aFloat5762) * class101_sub3_236_.aFloat5784));
@@ -1129,10 +1129,10 @@ final class Class64_Sub3 extends Class64 {
                                 int i_248_ = aShort5586 + aShort5540 >> 1;
                                 int i_249_ = aShort5617 + aShort5646 >> 1;
                                 int i_250_ = (int) (((float) aShort5591 * Class299_Sub1_Sub1.aFloat8696) + (((float) i_248_ * Class167.aFloat2203) + Class190.aFloat2555) + (Class313.aFloat3935 * (float) i_249_));
-                                int i_251_ = (int) (Class156.aFloat2111 + ((float) i_248_ * Class314.aFloat3943) + (Class252.aFloat3242 * (float) aShort5591) + (Class215.aFloat2836 * (float) i_249_));
+                                int i_251_ = (int) (Class156.aFloat2111 + ((float) i_248_ * ResourceProvider.aFloat3943) + (Class252.aFloat3242 * (float) aShort5591) + (Class215.aFloat2836 * (float) i_249_));
                                 int i_252_ = (int) (Class49.aFloat4720 + ((float) i_248_ * (Class318_Sub9_Sub1.aFloat8784)) + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_249_));
                                 int i_253_ = (int) ((Class313.aFloat3935 * (float) i_249_) + ((Class299_Sub1_Sub1.aFloat8696 * (float) aShort5629) + (Class190.aFloat2555 + (Class167.aFloat2203 * (float) i_248_))));
-                                int i_254_ = (int) (Class156.aFloat2111 + (Class314.aFloat3943 * (float) i_248_) + (Class252.aFloat3242 * (float) aShort5629) + ((float) i_249_ * Class215.aFloat2836));
+                                int i_254_ = (int) (Class156.aFloat2111 + (ResourceProvider.aFloat3943 * (float) i_248_) + (Class252.aFloat3242 * (float) aShort5629) + ((float) i_249_ * Class215.aFloat2836));
                                 class318_sub3.anInt6405 = (aHa_Sub2_5598.anInt7853 - -(i_250_ * (aHa_Sub2_5598.anInt7771) / i));
                                 class318_sub3.anInt6402 = ((i_251_ * aHa_Sub2_5598.anInt7794 / i) + aHa_Sub2_5598.anInt7810);
                                 class318_sub3.anInt6404 = (aHa_Sub2_5598.anInt7810 + (i_254_ * aHa_Sub2_5598.anInt7794 / i));
@@ -1618,7 +1618,7 @@ final class Class64_Sub3 extends Class64 {
                                 Class286_Sub8.aFloat6304 = (((class101_sub3_350_.aFloat5762) * (class101_sub3.aFloat5754)) + ((class101_sub3_350_.aFloat5781) * (class101_sub3.aFloat5756)) + ((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5784)));
                                 Class318_Sub9_Sub1.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_350_.aFloat5756)) + ((class101_sub3_350_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_350_.aFloat5761))));
                                 Class313.aFloat3935 = (((class101_sub3.aFloat5781) * (class101_sub3_350_.aFloat5784)) + ((class101_sub3_350_.aFloat5762 * (class101_sub3.aFloat5750)) + (class101_sub3_350_.aFloat5781 * (class101_sub3.aFloat5770))));
-                                Class314.aFloat3943 = (((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5770)) + ((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5769)) + ((class101_sub3_350_.aFloat5756) * (class101_sub3.aFloat5762)));
+                                ResourceProvider.aFloat3943 = (((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5770)) + ((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5769)) + ((class101_sub3_350_.aFloat5756) * (class101_sub3.aFloat5762)));
                                 Class167.aFloat2203 = (((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5750)) + ((class101_sub3.aFloat5770) * class101_sub3_350_.aFloat5770) + ((class101_sub3.aFloat5781) * class101_sub3_350_.aFloat5756));
                                 Class215.aFloat2836 = (((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5762)) + (((class101_sub3.aFloat5769) * class101_sub3_350_.aFloat5762) + ((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5781))));
                             }
@@ -1628,14 +1628,14 @@ final class Class64_Sub3 extends Class64 {
                                 int i_363_ = aShort5540 - -aShort5586 >> 1;
                                 int i_364_ = aShort5617 - -aShort5646 >> 1;
                                 int i_365_ = (int) (((float) i_364_ * Class313.aFloat3935) + ((Class167.aFloat2203 * (float) i_363_) + Class190.aFloat2555 + ((float) aShort5591 * (Class299_Sub1_Sub1.aFloat8696))));
-                                int i_366_ = (int) (Class156.aFloat2111 + ((float) i_363_ * Class314.aFloat3943) + ((float) aShort5591 * Class252.aFloat3242) + ((float) i_364_ * Class215.aFloat2836));
+                                int i_366_ = (int) (Class156.aFloat2111 + ((float) i_363_ * ResourceProvider.aFloat3943) + ((float) aShort5591 * Class252.aFloat3242) + ((float) i_364_ * Class215.aFloat2836));
                                 int i_367_ = (int) ((Class318_Sub9_Sub1.aFloat8784 * (float) i_363_) + Class49.aFloat4720 + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_364_));
                                 if (aHa_Sub2_5598.anInt7826 <= i_367_) {
                                     class318_sub3.anInt6405 = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853));
                                     class318_sub3.anInt6402 = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810));
                                 } else bool = true;
                                 int i_368_ = (int) (Class190.aFloat2555 + (Class167.aFloat2203 * (float) i_363_) + (Class299_Sub1_Sub1.aFloat8696 * (float) aShort5629) + (Class313.aFloat3935 * (float) i_364_));
-                                int i_369_ = (int) (((float) i_364_ * Class215.aFloat2836) + ((Class252.aFloat3242 * (float) aShort5629) + (Class156.aFloat2111 + (Class314.aFloat3943 * (float) i_363_))));
+                                int i_369_ = (int) (((float) i_364_ * Class215.aFloat2836) + ((Class252.aFloat3242 * (float) aShort5629) + (Class156.aFloat2111 + (ResourceProvider.aFloat3943 * (float) i_363_))));
                                 int i_370_ = (int) ((Class286_Sub8.aFloat6304 * (float) i_364_) + (((float) i_363_ * (Class318_Sub9_Sub1.aFloat8784)) + Class49.aFloat4720 + ((float) aShort5629 * Class320.aFloat3994)));
                                 if (i_370_ >= aHa_Sub2_5598.anInt7826) {
                                     class318_sub3.anInt6406 = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853));
@@ -1748,7 +1748,7 @@ final class Class64_Sub3 extends Class64 {
                 if (aClass123_5610 == null || aClass123_5610.anInterface2_1811 != null) aShortArray5580 = null;
                 else aBoolean5555 = true;
             }
-            if (aByteArray5542 != null && !Class239_Sub28.method1846(anInt5556, anInt5648, 74)) {
+            if (aByteArray5542 != null && !Option_Sub28.method1846(anInt5556, anInt5648, 74)) {
                 if (aClass123_5610 == null || aClass123_5610.anInterface2_1811 != null) aByteArray5542 = null;
                 else aBoolean5555 = true;
             }

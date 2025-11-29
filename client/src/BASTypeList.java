@@ -55,7 +55,7 @@ final class BASTypeList {
         Class348_Sub42_Sub12.anInt9594++;
         anInt3318++;
         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class117.aClass351_1766, Class348_Sub23_Sub2.aClass77_9029, i + -107);
-        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 1 - -Class239_Sub6.method1745(string, -65));
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 1 - -Option_Sub6.method1745(string, -65));
         if (i == 16) {
             class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -70, i_8_);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
@@ -122,9 +122,9 @@ final class BASTypeList {
         CursorTypeList.aClass262_2187.method1988(Class348_Sub40_Sub4.aClass262_9111, (byte) -115);
         Class348_Sub40_Sub38.aClass262_9478.method1988(Class348_Sub40_Sub4.aClass262_9111, (byte) -115);
         if (Class73.anInt4776 > 1) {
-            if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aClass348_3334.aClass348_4295);
-            else Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aClass348_3334.aClass348_4295.aClass348_4295);
-            Class135_Sub2.aClass348_Sub42_Sub12_4846 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aClass348_3334.aClass348_4295);
+            if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aNode_3334.aNode_4295);
+            else Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aNode_3334.aNode_4295.aNode_4295);
+            Class135_Sub2.aClass348_Sub42_Sub12_4846 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aNode_3334.aNode_4295);
         } else {
             Class316.aClass348_Sub42_Sub12_3963 = null;
             Class135_Sub2.aClass348_Sub42_Sub12_4846 = null;
@@ -267,7 +267,7 @@ final class BASTypeList {
                 else Class282.anInt3655 = 2;
             }
             if (i_14_ == 0) {
-                if (Class316.aClass348_Sub42_Sub12_3963 != null) Class239_Sub3.method1731(1);
+                if (Class316.aClass348_Sub42_Sub12_3963 != null) Option_Sub3.method1731(1);
                 else if (r.aBoolean9722) Class341.method2678(-2049);
             }
             if (Class289.aClass46_3701 == null && Class348_Sub42.anInt7059 == 0) {

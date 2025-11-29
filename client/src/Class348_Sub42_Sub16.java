@@ -42,8 +42,8 @@ abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
                     class318_sub1_sub4.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226[i_5_];
                     Class250.aClass318_Sub1Array3226[i_5_] = class318_sub1_sub4;
                 } else {
-                    class318_sub1_sub4.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293[i_5_];
-                    Class348.aClass318_Sub1Array4293[i_5_] = class318_sub1_sub4;
+                    class318_sub1_sub4.aClass318_Sub1_6379 = Node.aClass318_Sub1Array4293[i_5_];
+                    Node.aClass318_Sub1Array4293[i_5_] = class318_sub1_sub4;
                     Class348_Sub16_Sub2.aBoolean8870 = true;
                 }
             } else {
@@ -56,8 +56,8 @@ abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
                         class318_sub1_sub4_4_.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226[i_5_];
                         Class250.aClass318_Sub1Array3226[i_5_] = class318_sub1_sub4_4_;
                     } else {
-                        class318_sub1_sub4_4_.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293[i_5_];
-                        Class348.aClass318_Sub1Array4293[i_5_] = class318_sub1_sub4_4_;
+                        class318_sub1_sub4_4_.aClass318_Sub1_6379 = Node.aClass318_Sub1Array4293[i_5_];
+                        Node.aClass318_Sub1Array4293[i_5_] = class318_sub1_sub4_4_;
                         Class348_Sub16_Sub2.aBoolean8870 = true;
                     }
                 } else {

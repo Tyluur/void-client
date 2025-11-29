@@ -68,10 +68,10 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         Class322.method2554((byte) -45);
         Class348_Sub40_Sub22.method3111(111, i_15_);
         int i_18_ = (-Class299.aClass348_Sub49_Sub2_3813.anInt7197 + Class348_Sub40_Sub25.anInt9341) / 16;
-        Class239_Sub6.anIntArrayArray5894 = new int[i_18_][4];
+        Option_Sub6.anIntArrayArray5894 = new int[i_18_][4];
         for (int i_19_ = 0; i_19_ < i_18_; i_19_++) {
             for (int i_20_ = 0; i_20_ < 4; i_20_++)
-                Class239_Sub6.anIntArrayArray5894[i_19_][i_20_] = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
+                Option_Sub6.anIntArrayArray5894[i_19_][i_20_] = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
         }
         Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[i_18_][];
         Class129.aByteArrayArray1887 = new byte[i_18_][];
@@ -86,8 +86,8 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40 {
         Class295.mapUndergroundTiles = new int[i_18_];
         Class348_Sub23_Sub3.mapRegionIds = new int[i_18_];
         i_18_ = 0;
-        for (int i_21_ = (-(Class367_Sub4.anInt7319 >> 4) + i_17_) / 8; i_21_ <= (i_17_ + (Class367_Sub4.anInt7319 >> 4)) / 8; i_21_++) {
-            for (int i_22_ = (i_16_ - (Class348_Sub40_Sub3.anInt9109 >> 4)) / 8; (i_22_ <= ((Class348_Sub40_Sub3.anInt9109 >> 4) + i_16_) / 8); i_22_++) {
+        for (int i_21_ = (-(Class367_Sub4.mapLength >> 4) + i_17_) / 8; i_21_ <= (i_17_ + (Class367_Sub4.mapLength >> 4)) / 8; i_21_++) {
+            for (int i_22_ = (i_16_ - (Class348_Sub40_Sub3.mapWidth >> 4)) / 8; (i_22_ <= ((Class348_Sub40_Sub3.mapWidth >> 4) + i_16_) / 8); i_22_++) {
                 Class348_Sub23_Sub3.mapRegionIds[i_18_] = i_22_ + (i_21_ << 8);
                 aa_Sub1.mapTiles[i_18_] = Class367_Sub10.MAPS.method417("m" + i_21_ + "_" + i_22_, 0);
                 Applet_Sub1.mapLocations[i_18_] = Class367_Sub10.MAPS.method417("l" + i_21_ + "_" + i_22_, 0);

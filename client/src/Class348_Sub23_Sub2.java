@@ -123,7 +123,7 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
         anInt9017++;
         if (i < -91) {
             if (aBoolean9016) {
-                aLong9018 = Class62.method599(-102);
+                aLong9018 = Class62.safeTime(-102);
                 int i_1_ = aDecoderContext9032.decodePacketIn(oggpacket, aGranulePos9019);
                 if (i_1_ < 0) throw new IllegalStateException(String.valueOf(i_1_));
                 aDecoderContext9032.granuleFrame(aGranulePos9019);

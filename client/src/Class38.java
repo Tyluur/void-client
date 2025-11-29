@@ -58,7 +58,7 @@ final class Class38 {
             if (class348_sub27.anInt6893 > 0) class348_sub27.anInt6893--;
             if (class348_sub27.anInt6893 != 0) {
                 if (class348_sub27.anInt6894 > 0) class348_sub27.anInt6894--;
-                if (class348_sub27.anInt6894 == 0 && class348_sub27.anInt6905 >= 1 && class348_sub27.anInt6896 >= 1 && (class348_sub27.anInt6905 <= -2 + Class367_Sub4.anInt7319) && (class348_sub27.anInt6896 <= -2 + Class348_Sub40_Sub3.anInt9109) && (class348_sub27.anInt6907 < 0 || (Class5_Sub2.method195(class348_sub27.anInt6895, false, class348_sub27.anInt6907)))) {
+                if (class348_sub27.anInt6894 == 0 && class348_sub27.anInt6905 >= 1 && class348_sub27.anInt6896 >= 1 && (class348_sub27.anInt6905 <= -2 + Class367_Sub4.mapLength) && (class348_sub27.anInt6896 <= -2 + Class348_Sub40_Sub3.mapWidth) && (class348_sub27.anInt6907 < 0 || (Class5_Sub2.method195(class348_sub27.anInt6895, false, class348_sub27.anInt6907)))) {
                     Class218.method1591(class348_sub27.anInt6905, 70, class348_sub27.anInt6904, -1, class348_sub27.anInt6907, class348_sub27.anInt6895, class348_sub27.anInt6896, class348_sub27.anInt6900, class348_sub27.anInt6899);
                     class348_sub27.anInt6894 = -1;
                     if ((class348_sub27.anInt6907 != class348_sub27.anInt6902) || class348_sub27.anInt6902 != -1) {
@@ -75,7 +75,7 @@ final class Class38 {
     static final void method363(int i) {
         if (Class168.anInt2254 < 102) Class168.anInt2254 += 6;
         anInt512++;
-        if (Class121.anInt1794 != -1 && (Class299_Sub1_Sub1.aLong8694 < Class62.method599(-127))) {
+        if (Class121.anInt1794 != -1 && (Class299_Sub1_Sub1.aLong8694 < Class62.safeTime(-127))) {
             for (int i_4_ = Class121.anInt1794; i_4_ < Class50_Sub1.aStringArray5223.length; i_4_++) {
                 if (Class50_Sub1.aStringArray5223[i_4_].startsWith("pause")) {
                     int i_5_ = 5;
@@ -86,7 +86,7 @@ final class Class38 {
                     }
                     Applet_Sub1.method94("Pausing for " + i_5_ + " seconds...", 58);
                     Class121.anInt1794 = 1 + i_4_;
-                    Class299_Sub1_Sub1.aLong8694 = (long) (1000 * i_5_) + Class62.method599(-97);
+                    Class299_Sub1_Sub1.aLong8694 = (long) (1000 * i_5_) + Class62.safeTime(-97);
                     return;
                 } else {
                     Class363.aString4461 = Class50_Sub1.aStringArray5223[i_4_];
@@ -103,10 +103,10 @@ final class Class38 {
         }
         if (i >= 124) {
             for (int i_6_ = 0; (ClientScript.anInt9699 > i_6_); i_6_++) {
-                Interface6 interface6 = Class348_Sub42_Sub5.anInterface6Array9534[i_6_];
-                int i_7_ = interface6.method30(false);
-                char c = interface6.method28((byte) 46);
-                int i_8_ = interface6.method26(-7616);
+                KeyLog keyLog = Class348_Sub42_Sub5.KEYBOARD_EVENT_ARRAY_1[i_6_];
+                int i_7_ = keyLog.method30(false);
+                char c = keyLog.getKeyChar((byte) 46);
+                int i_8_ = keyLog.method26(-7616);
                 if (i_7_ == 84) Class59_Sub1.method555(false, 0);
                 if (i_7_ != 80) {
                     if (i_7_ == 66 && (0x4 & i_8_) != 0) {
@@ -130,7 +130,7 @@ final class Class38 {
                                         aa.method159(-615751774);
                                         Class348_Sub38.anInt7006 = Class363.aString4461.length();
                                     } else if (Npc.method2446(c, (byte) 105) || c == 92 || c == 47 || c == 46 || c == 58 || c == 44 || c == 32 || c == 95 || c == 45 || c == 43 || c == 91 || c == 93) {
-                                        Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + Class348_Sub42_Sub5.anInterface6Array9534[i_6_].method28((byte) 23) + (Class363.aString4461.substring(Class348_Sub38.anInt7006)));
+                                        Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + Class348_Sub42_Sub5.KEYBOARD_EVENT_ARRAY_1[i_6_].getKeyChar((byte) 23) + (Class363.aString4461.substring(Class348_Sub38.anInt7006)));
                                         Class348_Sub38.anInt7006++;
                                     }
                                 } else {

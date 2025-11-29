@@ -27,29 +27,29 @@ final class Class133 {
 
     static final void method1140(int i) {
         anInt1916++;
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub27_7255), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub14_7250), 2);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub14_7264), 2);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub4_7220), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub9_7256), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub13_7236), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub1_7246), 1);
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub21_7270), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub27_7255), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub27_7261), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub14_7250), 2);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub14_7264), 2);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub4_7220), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub9_7256), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub13_7236), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub1_7246), 1);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub21_7270), 1);
         if (i >= 45) {
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub24_7235), 1);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub7_7238), 2);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub28_7230), 1);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub18_7259), 2);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub16_7247), 1);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub20_7216), 0);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub20_7248), 0);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub15_7224), 2);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub6_7226), 0);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub12_7243), 0);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub24_7235), 1);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub7_7238), 2);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub28_7230), 1);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub18_7259), 2);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub16_7247), 1);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub20_7216), 0);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub20_7248), 0);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub15_7224), 2);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub6_7226), 0);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub12_7243), 0);
             Class237.method1686(-127);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub23_7231), 0);
-            Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub29_7229), 4);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub23_7231), 0);
+            Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub29_7229), 4);
             Class348_Sub40.updateFeatureMask(-1);
             Class76.method773(true);
             RuntimeException_Sub1.aBoolean4604 = true;
@@ -206,7 +206,7 @@ final class Class133 {
                             if (is[i_33_] == 65535) is[i_33_] = -1;
                         }
                         int i_34_ = class348_sub49_sub2.readByteAdd((byte) -101);
-                        Class239_Sub16.method1791(23946, is, i_34_, player);
+                        Option_Sub16.method1791(23946, is, i_34_, player);
                     }
                     if ((i_0_ & 0x10) != 0) {
                         int i_35_ = class348_sub49_sub2.readUnsignedByte(255);

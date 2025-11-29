@@ -46,8 +46,8 @@ final class Class334 {
         try {
             anInt4153++;
             int i_7_;
-            if (Class348_Sub40_Sub21.anInt9282 == 4) i_7_ = (int) Class314.aFloat3938 & 0x3fff;
-            else i_7_ = 0x3fff & r_Sub2.anInt10483 + (int) Class314.aFloat3938;
+            if (Class348_Sub40_Sub21.anInt9282 == 4) i_7_ = (int) ResourceProvider.aFloat3938 & 0x3fff;
+            else i_7_ = 0x3fff & r_Sub2.anInt10483 + (int) ResourceProvider.aFloat3938;
             int i_8_ = (Math.max(class46.anInt709 / 2, class46.anInt789 / 2) + 10);
             int i_9_ = i_5_ * i_5_ - -(i_1_ * i_1_);
             if (i_9_ <= i_8_ * i_8_) {

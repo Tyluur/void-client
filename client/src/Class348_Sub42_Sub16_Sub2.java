@@ -31,17 +31,17 @@ final class Class348_Sub42_Sub16_Sub2 extends Class348_Sub42_Sub16 {
         return 100;
     }
 
-    static final void method3265(int i, Class348 class348, Class348 class348_0_) {
+    static final void method3265(int i, Node node, Node node_0_) {
         try {
-            if (class348.aClass348_4295 != null) class348.method2715((byte) 27);
+            if (node.aNode_4295 != null) node.method2715((byte) 27);
             int i_1_ = -109 % ((6 - i) / 43);
             anInt10462++;
-            class348.aClass348_4295 = class348_0_.aClass348_4295;
-            class348.aClass348_4294 = class348_0_;
-            class348.aClass348_4295.aClass348_4294 = class348;
-            class348.aClass348_4294.aClass348_4295 = class348;
+            node.aNode_4295 = node_0_.aNode_4295;
+            node.aNode_4294 = node_0_;
+            node.aNode_4295.aNode_4294 = node;
+            node.aNode_4294.aNode_4295 = node;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qh.K(" + i + ',' + (class348 != null ? "{...}" : "null") + ',' + (class348_0_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qh.K(" + i + ',' + (node != null ? "{...}" : "null") + ',' + (node_0_ != null ? "{...}" : "null") + ')'));
         }
     }
 

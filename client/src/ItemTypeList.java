@@ -93,57 +93,57 @@ final class ItemTypeList {
     static final void method1933(Index index, ha var_ha, boolean bool) {
         try {
             anInt3279++;
-            Class207[] class207s = Class207.method1519(index, Class348_Sub22.anInt6862, 0);
+            Class207[] class207s = Class207.method1519(index, Class348_Sub22.hitmarksGroup, 0);
             Class169.aSpriteArray2260 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class169.aSpriteArray2260[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class106.anInt1639, 0);
+            class207s = Class207.method1519(index, LoadingScreenOpFactory.hitbarDefaultGroup, 0);
             Class348_Sub45.aSpriteArray7107 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class348_Sub45.aSpriteArray7107[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class373_Sub2.anInt7429, 0);
-            Class239_Sub2.aSpriteArray5857 = new Sprite[class207s.length];
+            class207s = Class207.method1519(index, Class373_Sub2.timerbarDefaultGroup, 0);
+            Option_Sub2.aSpriteArray5857 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                Class239_Sub2.aSpriteArray5857[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, ha.anInt4562, 0);
+                Option_Sub2.aSpriteArray5857[i] = var_ha.method3691(class207s[i], true);
+            class207s = Class207.method1519(index, ha.headIconsPkGroup, 0);
             Class318_Sub1_Sub1_Sub1.aSpriteArray9959 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class318_Sub1_Sub1_Sub1.aSpriteArray9959[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, VarcstrTypeList.anInt1435, 0);
+            class207s = Class207.method1519(index, VarcstrTypeList.headIconsPrayerGroup, 0);
             Class264.aSpriteArray3378 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class264.aSpriteArray3378[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class115.anInt1756, 0);
-            Class239_Sub9.aSpriteArray5933 = new Sprite[class207s.length];
+            class207s = Class207.method1519(index, Class115.hintHeadIconsGroup, 0);
+            Option_Sub9.aSpriteArray5933 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
-                Class239_Sub9.aSpriteArray5933[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class291.anInt3739, 0);
+                Option_Sub9.aSpriteArray5933[i] = var_ha.method3691(class207s[i], true);
+            class207s = Class207.method1519(index, Class291.hintMapmarkersGroup, 0);
             Class59_Sub1.aSpriteArray5294 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class59_Sub1.aSpriteArray5294[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class86.anInt1481, 0);
+            class207s = Class207.method1519(index, Class86.mapFlagGround, 0);
             SkyBoxSphereTypeList.aSpriteArray367 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 SkyBoxSphereTypeList.aSpriteArray367[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class239_Sub10.anInt5948, 0);
+            class207s = Class207.method1519(index, Option_Sub10.crossGroup, 0);
             Class348_Sub40_Sub37.aSpriteArray9467 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
                 Class348_Sub40_Sub37.aSpriteArray9467[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class113.anInt1742, 0);
+            class207s = Class207.method1519(index, Class113.mapDotsGround, 0);
             Class348_Sub12.aSpriteArray6742 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class348_Sub12.aSpriteArray6742[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class364.anInt4469, 0);
+            class207s = Class207.method1519(index, Class364.scrollBarGround, 0);
             Class240.aSpriteArray4679 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
                 Class240.aSpriteArray4679[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class348_Sub40_Sub38.anInt9473, 0);
+            class207s = Class207.method1519(index, Class348_Sub40_Sub38.nameIconsGroup, 0);
             Class113.aSpriteArray1744 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class113.aSpriteArray1744[i] = var_ha.method3691(class207s[i], true);
-            NPCDefinition.aSprite_1365 = var_ha.method3691(Class207.method1521(index, Class52.anInt4895, 0), bool);
-            Class239_Sub24.aSprite_6097 = var_ha.method3691(Class207.method1521(index, (Class186_Sub1.anInt5814), 0), true);
-            class207s = Class207.method1519(index, Class5_Sub3.anInt8370, 0);
+            NPCDefinition.aSprite_1365 = var_ha.method3691(Class207.method1521(index, Class52.compassGroup, 0), bool);
+            Option_Sub24.aSprite_6097 = var_ha.method3691(Class207.method1521(index, (Class186_Sub1.otherLevelGroup), 0), true);
+            class207s = Class207.method1519(index, Class5_Sub3.hintMapEdgeGroup, 0);
             Class200.aSpriteArray2640 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
                 Class200.aSpriteArray2640[i] = var_ha.method3691(class207s[i], true);
@@ -253,9 +253,9 @@ final class ItemTypeList {
             itemDefinition.anIntArray2772 = null;
             if (itemDefinition.aClass356_2757 != null) {
                 boolean bool = false;
-                for (Class348 class348 = itemDefinition.aClass356_2757.method3484(0); class348 != null; class348 = itemDefinition.aClass356_2757.method3482(0)) {
-                    Class254 class254 = aParamTypeList_3292.method2600((int) class348.aLong4291, 28364);
-                    if (class254.aBoolean3261) class348.method2715((byte) 60);
+                for (Node node = itemDefinition.aClass356_2757.method3484(0); node != null; node = itemDefinition.aClass356_2757.method3482(0)) {
+                    Class254 class254 = aParamTypeList_3292.method2600((int) node.aLong4291, 28364);
+                    if (class254.aBoolean3261) node.method2715((byte) 60);
                     else bool = true;
                 }
                 if (!bool) itemDefinition.aClass356_2757 = null;

@@ -20,7 +20,7 @@ final class Class175 {
     private final int anInt2324;
     static int anInt2325;
     static boolean[] aBooleanArray2326 = new boolean[100];
-    static Class340 aClass340_2327;
+    static Js5MasterIndex js5MasterIndex; // aClass340_2327
     static int anInt2328;
     static boolean aBoolean2329;
     static int[] anIntArray2330;
@@ -231,7 +231,7 @@ final class Class175 {
 
     public static void method1349(byte i) {
         anIntArray2330 = null;
-        aClass340_2327 = null;
+        js5MasterIndex = null;
         aBooleanArray2326 = null;
         aClass351_2315 = null;
         if (i > -103) aBooleanArray2326 = null;

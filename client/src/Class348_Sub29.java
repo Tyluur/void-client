@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub29 extends Class348 {
+final class Class348_Sub29 extends Node {
     static Index ANIMATION_SKELETONS;
     static int anInt6910;
     short aShort6911;

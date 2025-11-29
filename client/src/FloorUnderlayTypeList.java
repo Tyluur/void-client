@@ -19,10 +19,10 @@ final class FloorUnderlayTypeList {
         if (class318_sub1 != null) {
             for (int i = 0; i < 2; i++) {
                 Class318_Sub1 class318_sub1_0_ = null;
-                for (Class318_Sub1 class318_sub1_1_ = Class348.aClass318_Sub1Array4293[i]; class318_sub1_1_ != null; class318_sub1_1_ = (class318_sub1_1_.aClass318_Sub1_6379)) {
+                for (Class318_Sub1 class318_sub1_1_ = Node.aClass318_Sub1Array4293[i]; class318_sub1_1_ != null; class318_sub1_1_ = (class318_sub1_1_.aClass318_Sub1_6379)) {
                     if (class318_sub1_1_ == class318_sub1) {
                         if (class318_sub1_0_ != null) class318_sub1_0_.aClass318_Sub1_6379 = (class318_sub1_1_.aClass318_Sub1_6379);
-                        else Class348.aClass318_Sub1Array4293[i] = (class318_sub1_1_.aClass318_Sub1_6379);
+                        else Node.aClass318_Sub1Array4293[i] = (class318_sub1_1_.aClass318_Sub1_6379);
                         Class348_Sub16_Sub2.aBoolean8870 = true;
                         return;
                     }
@@ -69,7 +69,7 @@ final class FloorUnderlayTypeList {
     static final boolean method1379(int i, int i_4_, int i_5_) {
         anInt2459++;
         if (i != 4) return true;
-        return (Class348_Sub42_Sub8.method3194(i_5_, i_4_, (byte) 126) & Class239_Sub26.method1837(i_4_, 46, i_5_));
+        return (Class348_Sub42_Sub8.method3194(i_5_, i_4_, (byte) 126) & Option_Sub26.method1837(i_4_, 46, i_5_));
     }
 
     final Class22 method1380(boolean bool, int i) {

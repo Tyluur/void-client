@@ -38,8 +38,8 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
                 if (class12.aByte205 > 0) bool_0_ = true;
             }
             for (int i_3_ = 0; i_3_ < 6; i_3_++)
-                Class239_Sub14.anIntArrayArray5991[i_3_] = var_d.method5(false, Class270.anIntArray3464[i_3_], 1.0F, i, i, 81);
-            anInterface18_Impl2_8719 = aHa_Sub3_8718.method3900(Class239_Sub14.anIntArrayArray5991, bool_0_, 61, i);
+                Option_Sub14.anIntArrayArray5991[i_3_] = var_d.method5(false, Class270.anIntArray3464[i_3_], 1.0F, i, i, 81);
+            anInterface18_Impl2_8719 = aHa_Sub3_8718.method3900(Option_Sub14.anIntArrayArray5991, bool_0_, 61, i);
         }
         return anInterface18_Impl2_8719;
     }

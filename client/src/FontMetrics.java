@@ -388,7 +388,7 @@ final class FontMetrics {
             for (int left = 0; left < 256; left++) {
                 if (left != 32 && left != 160) {
                     for (int right = 0; right < 256; right++) {
-                        if (right != 32 && right != 160) this.kerningAdjustments[left][right] = (byte) (Class239_Sub8.calculateKerning(this.glyphWidths, -34, right, left, rightGlyphData, leftGlyphData, leftOffsets, rightOffsets));
+                        if (right != 32 && right != 160) this.kerningAdjustments[left][right] = (byte) (Option_Sub8.calculateKerning(this.glyphWidths, -34, right, left, rightGlyphData, leftGlyphData, leftOffsets, rightOffsets));
                     }
                 }
             }

@@ -31,7 +31,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
         Class318_Sub1_Sub3_Sub3.method2433();
         if (i != 11) anIntArray9436 = null;
         for (int i_2_ = 0; i_2_ < 4; i_2_++)
-            Class348_Sub45.aClass361Array7108[i_2_].method3500(700);
+            Class348_Sub45.collisionMaps[i_2_].method3500(700);
         Class348_Sub42_Sub3.method3177(-50, false);
         System.gc();
         Class348_Sub31.method3007(2, 22684);
@@ -59,7 +59,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
         Class301.method2282(-12648);
         Class50_Sub3.method465(i + -1636518175);
         Class101_Sub2.aLong5745 = 0L;
-        Class239_Sub4.aClass348_Sub26_5881 = null;
+        Option_Sub4.aClass348_Sub26_5881 = null;
         if (bool) Class348_Sub49.method3379(2, 12);
         else {
             Class348_Sub49.method3379(i + -9, 3);
@@ -113,7 +113,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
             int[] is_13_ = is[2];
             for (int i_14_ = 0; Class348_Sub40_Sub6.anInt9139 > i_14_; i_14_++) {
                 int i_15_ = (-is_8_[i_14_] + is_10_[i_14_]) * anInt9438;
-                int i_16_ = (anInt9438 * (is_9_[1 + i_14_ & Class239_Sub22.anInt6076] - is_9_[Class239_Sub22.anInt6076 & -1 + i_14_]));
+                int i_16_ = (anInt9438 * (is_9_[1 + i_14_ & Option_Sub22.anInt6076] - is_9_[Option_Sub22.anInt6076 & -1 + i_14_]));
                 int i_17_ = i_16_ >> 12;
                 int i_18_ = i_15_ >> 12;
                 int i_19_ = i_17_ * i_17_ >> 12;

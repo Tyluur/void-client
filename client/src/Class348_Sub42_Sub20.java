@@ -42,7 +42,7 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
     }
 
     static final void method3282(int i, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_) {
-        Class348_Sub51.anInt7244 = i_6_;
+        ClientOptions.anInt7244 = i_6_;
         Class14_Sub4.anInt8633 = i_5_;
         Class59_Sub2_Sub1.anInt8668 = i_2_;
         Class348_Sub44.anInt7092 = i;

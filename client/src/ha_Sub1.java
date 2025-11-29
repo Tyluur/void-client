@@ -2014,7 +2014,7 @@ final class ha_Sub1 extends ha {
             method3659(0);
             Class59_Sub2_Sub1.method566(true, true, (byte) -126);
             aBoolean7471 = true;
-            anInt7466 = (int) Class62.method599(-70);
+            anInt7466 = (int) Class62.safeTime(-70);
         } catch (Throwable throwable) {
             throwable.printStackTrace();
             this.method3635((byte) -98);

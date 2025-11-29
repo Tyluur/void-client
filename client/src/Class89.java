@@ -57,7 +57,7 @@ final class Class89 {
                     }
                     if (bool_13_ && (Class342.anIntArrayArray4253[i_17_][i_18_] & ~0xffffff) != 0) {
                         i = Class342.anIntArrayArray4253[i_17_][i_18_];
-                        i_14_ = Class239_Sub1.aShortArrayArray5847[i_17_][i_18_];
+                        i_14_ = Option_Sub1.aShortArrayArray5847[i_17_][i_18_];
                         i_15_ = (Class348_Sub1_Sub2.aByteArrayArray8816[i_17_][i_18_]);
                     }
                     if (!bool && (class357.aClass318_Sub1_Sub1_4402 != null) && (class357.aClass318_Sub1_Sub1_4402.aShort8727) > i_16_) i_16_ = (class357.aClass318_Sub1_Sub1_4402.aShort8727);
@@ -69,7 +69,7 @@ final class Class89 {
                 for (int i_21_ = (class318_sub1_sub3.aShort8750); (i_21_ <= class318_sub1_sub3.aShort8747); i_21_++) {
                     if ((Class342.anIntArrayArray4253[i_20_][i_21_] & ~0xffffff) == 0) {
                         Class342.anIntArrayArray4253[i_20_][i_21_] = i;
-                        Class239_Sub1.aShortArrayArray5847[i_20_][i_21_] = i_14_;
+                        Option_Sub1.aShortArrayArray5847[i_20_][i_21_] = i_14_;
                         Class348_Sub1_Sub2.aByteArrayArray8816[i_20_][i_21_] = i_15_;
                     }
                 }
@@ -83,8 +83,8 @@ final class Class89 {
                     class318_sub1_sub3.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226[i_22_];
                     Class250.aClass318_Sub1Array3226[i_22_] = class318_sub1_sub3;
                 } else {
-                    class318_sub1_sub3.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293[i_22_];
-                    Class348.aClass318_Sub1Array4293[i_22_] = class318_sub1_sub3;
+                    class318_sub1_sub3.aClass318_Sub1_6379 = Node.aClass318_Sub1Array4293[i_22_];
+                    Node.aClass318_Sub1Array4293[i_22_] = class318_sub1_sub3;
                     Class348_Sub16_Sub2.aBoolean8870 = true;
                 }
             } else {

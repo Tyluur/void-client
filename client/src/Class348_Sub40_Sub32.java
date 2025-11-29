@@ -41,35 +41,35 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
     static final void method3134(int i) {
         anInt9419++;
         if ((~Class286_Sub5.anInt6248) <= i) {
-            long l = Class62.method599(i ^ 0x3c);
+            long l = Class62.safeTime(i ^ 0x3c);
             Class286_Sub5.anInt6248 -= -Class348_Sub33.aLong6963 + l;
             if (Class286_Sub5.anInt6248 > 0) {
                 int i_4_ = ((Class286_Sub5.anInt6248 << 8) / Class206.anInt4889);
                 int i_5_ = -i_4_ + 255;
                 float f = (float) i_4_ / 255.0F;
                 float f_6_ = 1.0F - f;
-                Class119_Sub1.anInt4703 = (((i_5_ * ((Class239_Sub14.aClass190_5990.anInt2540) & 0xff00ff) + (Class318_Sub1_Sub3.anInt8739 & 0xff00ff) * i_4_) & ~0xff00ff) - -(0xff0000 & (i_4_ * (0xff00 & Class318_Sub1_Sub3.anInt8739) + (0xff00 & (Class239_Sub14.aClass190_5990.anInt2540)) * i_5_))) >>> 8;
-                Class239_Sub10.aFloat5945 = (Class258_Sub4.aFloat8560 + f_6_ * ((Class239_Sub14.aClass190_5990.aFloat2551) - Class258_Sub4.aFloat8560));
-                Class348_Sub3.aFloat6586 = (Class239_Sub14.aClass190_5990.aFloat2545 - Index.aFloat670) * f_6_ + Index.aFloat670;
-                Class36.anInt486 = (i_4_ * Class239_Sub19.anInt6042 + (Class239_Sub14.aClass190_5990.anInt2546 * i_5_)) >> 8;
-                Class160.aFloat2137 = (Class318_Sub1_Sub1.aFloat8725 + (-Class318_Sub1_Sub1.aFloat8725 + (Class239_Sub14.aClass190_5990.aFloat2547)) * f_6_);
-                Js5TextureSource.aFloat4626 = (Class64.aFloat1136 + f_6_ * ((Class239_Sub14.aClass190_5990.aFloat2544) - Class64.aFloat1136));
-                QuestTypeList.anInt2500 = (((i_4_ * (0xff00 & Canvas_Sub1.anInt70) + (0xff00 & (Class239_Sub14.aClass190_5990.anInt2549)) * i_5_) & 0xff0000) + (~0xff00ff & (i_4_ * (0xff00ff & Canvas_Sub1.anInt70) - -(i_5_ * (0xff00ff & (Class239_Sub14.aClass190_5990.anInt2549)))))) >>> 8;
-                Class361.aFloat4455 = (Class246.aFloat3177 + f_6_ * (-Class246.aFloat3177 + (Class239_Sub14.aClass190_5990.aFloat2536)));
-                Class269.aFloat3462 = (Class245.aFloat3172 + (Class239_Sub14.aClass190_5990.aFloat2542 - Class245.aFloat3172) * f_6_);
-                if (Class239_Sub24.aClass299_6098 != (Class239_Sub14.aClass190_5990.aClass299_2541)) Class158.aClass299_4938 = (Class60.aHa1098.method3706(Class239_Sub24.aClass299_6098, (Class239_Sub14.aClass190_5990.aClass299_2541), f_6_, Class158.aClass299_4938));
+                Class119_Sub1.anInt4703 = (((i_5_ * ((Option_Sub14.aClass190_5990.anInt2540) & 0xff00ff) + (Class318_Sub1_Sub3.anInt8739 & 0xff00ff) * i_4_) & ~0xff00ff) - -(0xff0000 & (i_4_ * (0xff00 & Class318_Sub1_Sub3.anInt8739) + (0xff00 & (Option_Sub14.aClass190_5990.anInt2540)) * i_5_))) >>> 8;
+                Option_Sub10.aFloat5945 = (Class258_Sub4.aFloat8560 + f_6_ * ((Option_Sub14.aClass190_5990.aFloat2551) - Class258_Sub4.aFloat8560));
+                Class348_Sub3.aFloat6586 = (Option_Sub14.aClass190_5990.aFloat2545 - Index.aFloat670) * f_6_ + Index.aFloat670;
+                Class36.anInt486 = (i_4_ * Option_Sub19.anInt6042 + (Option_Sub14.aClass190_5990.anInt2546 * i_5_)) >> 8;
+                Class160.aFloat2137 = (Class318_Sub1_Sub1.aFloat8725 + (-Class318_Sub1_Sub1.aFloat8725 + (Option_Sub14.aClass190_5990.aFloat2547)) * f_6_);
+                Js5TextureSource.aFloat4626 = (Class64.aFloat1136 + f_6_ * ((Option_Sub14.aClass190_5990.aFloat2544) - Class64.aFloat1136));
+                QuestTypeList.anInt2500 = (((i_4_ * (0xff00 & Canvas_Sub1.anInt70) + (0xff00 & (Option_Sub14.aClass190_5990.anInt2549)) * i_5_) & 0xff0000) + (~0xff00ff & (i_4_ * (0xff00ff & Canvas_Sub1.anInt70) - -(i_5_ * (0xff00ff & (Option_Sub14.aClass190_5990.anInt2549)))))) >>> 8;
+                Class361.aFloat4455 = (Class246.aFloat3177 + f_6_ * (-Class246.aFloat3177 + (Option_Sub14.aClass190_5990.aFloat2536)));
+                Class269.aFloat3462 = (Class245.aFloat3172 + (Option_Sub14.aClass190_5990.aFloat2542 - Class245.aFloat3172) * f_6_);
+                if (Option_Sub24.aClass299_6098 != (Option_Sub14.aClass190_5990.aClass299_2541)) Class158.aClass299_4938 = (Class60.aHa1098.method3706(Option_Sub24.aClass299_6098, (Option_Sub14.aClass190_5990.aClass299_2541), f_6_, Class158.aClass299_4938));
             } else {
-                Class158.aClass299_4938 = (Class239_Sub14.aClass190_5990.aClass299_2541);
-                Js5TextureSource.aFloat4626 = Class239_Sub14.aClass190_5990.aFloat2544;
-                Class348_Sub3.aFloat6586 = Class239_Sub14.aClass190_5990.aFloat2545;
-                Class239_Sub10.aFloat5945 = Class239_Sub14.aClass190_5990.aFloat2551;
-                Class36.anInt486 = Class239_Sub14.aClass190_5990.anInt2546;
-                Class269.aFloat3462 = Class239_Sub14.aClass190_5990.aFloat2542;
-                Class361.aFloat4455 = Class239_Sub14.aClass190_5990.aFloat2536;
+                Class158.aClass299_4938 = (Option_Sub14.aClass190_5990.aClass299_2541);
+                Js5TextureSource.aFloat4626 = Option_Sub14.aClass190_5990.aFloat2544;
+                Class348_Sub3.aFloat6586 = Option_Sub14.aClass190_5990.aFloat2545;
+                Option_Sub10.aFloat5945 = Option_Sub14.aClass190_5990.aFloat2551;
+                Class36.anInt486 = Option_Sub14.aClass190_5990.anInt2546;
+                Class269.aFloat3462 = Option_Sub14.aClass190_5990.aFloat2542;
+                Class361.aFloat4455 = Option_Sub14.aClass190_5990.aFloat2536;
                 Class286_Sub5.anInt6248 = -1;
-                QuestTypeList.anInt2500 = Class239_Sub14.aClass190_5990.anInt2549;
-                Class119_Sub1.anInt4703 = Class239_Sub14.aClass190_5990.anInt2540;
-                Class160.aFloat2137 = Class239_Sub14.aClass190_5990.aFloat2547;
+                QuestTypeList.anInt2500 = Option_Sub14.aClass190_5990.anInt2549;
+                Class119_Sub1.anInt4703 = Option_Sub14.aClass190_5990.anInt2540;
+                Class160.aFloat2137 = Option_Sub14.aClass190_5990.aFloat2547;
             }
             Class348_Sub33.aLong6963 = l;
         }

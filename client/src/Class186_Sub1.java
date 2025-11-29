@@ -16,8 +16,8 @@ final class Class186_Sub1 extends Class186 {
     static int anInt5810;
     static int anInt5811;
     static int anInt5812 = 100;
-    static Class111 aClass111_5813;
-    static int anInt5814;
+    static LoadingScreenManager loadingScreenManager;
+    static int otherLevelGroup;
 
     final void method1398(int i, int i_0_, float f, float f_1_, int i_2_, float f_3_, int i_4_, float f_5_, int i_6_, int i_7_, float[] fs) {
         anInt5810++;
@@ -59,7 +59,7 @@ final class Class186_Sub1 extends Class186 {
                 i_32_ &= i_8_;
                 i_33_ &= i_8_;
                 float f_36_ = Class342.method2684(i_4_ ^ 0x7, f_34_);
-                fs[i_2_++] = f_3_ * (Class314.method2337((Class314.method2337((Class314.method2337((Class285.method2119(f_24_, Class139.method1166((anIntArray5804[i_26_ + i_32_]), 7), f_15_, -70, f_35_)), true, (Class285.method2119(f_24_, Class139.method1166(7, (anIntArray5804[i_33_ - -i_26_])), f_15_, -73, f_34_)), f_36_)), true, (Class314.method2337((Class285.method2119(f_23_, Class139.method1166(7, (anIntArray5804[i_32_ + i_27_])), f_15_, -75, f_35_)), true, (Class285.method2119(f_23_, Class139.method1166((anIntArray5804[i_27_ + i_33_]), 7), f_15_, -91, f_34_)), f_36_)), f_25_)), true, (Class314.method2337((Class314.method2337((Class285.method2119(f_24_, Class139.method1166((anIntArray5804[i_28_ + i_32_]), 7), f_14_, -72, f_35_)), true, (Class285.method2119(f_24_, Class139.method1166((anIntArray5804[i_28_ + i_33_]), 7), f_14_, -75, f_34_)), f_36_)), true, (Class314.method2337((Class285.method2119(f_23_, Class139.method1166((anIntArray5804[i_29_ + i_32_]), 7), f_14_, -100, f_35_)), true, (Class285.method2119(f_23_, Class139.method1166((anIntArray5804[i_29_ + i_33_]), 7), f_14_, -72, f_34_)), f_36_)), f_25_)), f_16_));
+                fs[i_2_++] = f_3_ * (ResourceProvider.method2337((ResourceProvider.method2337((ResourceProvider.method2337((Class285.method2119(f_24_, Class139.method1166((anIntArray5804[i_26_ + i_32_]), 7), f_15_, -70, f_35_)), true, (Class285.method2119(f_24_, Class139.method1166(7, (anIntArray5804[i_33_ - -i_26_])), f_15_, -73, f_34_)), f_36_)), true, (ResourceProvider.method2337((Class285.method2119(f_23_, Class139.method1166(7, (anIntArray5804[i_32_ + i_27_])), f_15_, -75, f_35_)), true, (Class285.method2119(f_23_, Class139.method1166((anIntArray5804[i_27_ + i_33_]), 7), f_15_, -91, f_34_)), f_36_)), f_25_)), true, (ResourceProvider.method2337((ResourceProvider.method2337((Class285.method2119(f_24_, Class139.method1166((anIntArray5804[i_28_ + i_32_]), 7), f_14_, -72, f_35_)), true, (Class285.method2119(f_24_, Class139.method1166((anIntArray5804[i_28_ + i_33_]), 7), f_14_, -75, f_34_)), f_36_)), true, (ResourceProvider.method2337((Class285.method2119(f_23_, Class139.method1166((anIntArray5804[i_29_ + i_32_]), 7), f_14_, -100, f_35_)), true, (Class285.method2119(f_23_, Class139.method1166((anIntArray5804[i_29_ + i_33_]), 7), f_14_, -72, f_34_)), f_36_)), f_25_)), f_16_));
             }
         }
     }
@@ -67,14 +67,14 @@ final class Class186_Sub1 extends Class186 {
     static final int method1399(int i, char c) {
         anInt5805++;
         if (i != 7) method1400(-22);
-        if (c >= 0 && Class239_Sub6.anIntArray5902.length > c) return Class239_Sub6.anIntArray5902[c];
+        if (c >= 0 && Option_Sub6.anIntArray5902.length > c) return Option_Sub6.anIntArray5902[c];
         return -1;
     }
 
     public static void method1400(int i) {
         if (i != 1) method1401(null, 48, -14, -102, 78, 29);
         aClass341_5808 = null;
-        aClass111_5813 = null;
+        loadingScreenManager = null;
     }
 
     static final Class258_Sub3_Sub1 method1401(ha_Sub2 var_ha_Sub2, int i, int i_37_, int i_38_, int i_39_, int i_40_) {

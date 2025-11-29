@@ -15,7 +15,7 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
 
     final void method2520() {
         this.aClass318_Sub7_10419.aClass318_Sub10_6439.aClass318_Sub9_Sub2_Sub1Array6475[aShort10416] = null;
-        Class239_Sub25.aClass318_Sub9_Sub2_Sub1Array6103[client.anInt5171] = this;
+        Option_Sub25.aClass318_Sub9_Sub2_Sub1Array6103[client.anInt5171] = this;
         client.anInt5171 = client.anInt5171 + 1 & 0x3ff;
         this.method2373(false);
         this.method2514(-108);
@@ -198,9 +198,9 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
                 anInt10421 -= (long) anInt10421 * l_38_ >> 28;
             }
             if (class181.anIntArray2402 != null) {
-                Class348 class348 = (class318_sub10.aClass262_6479.aClass348_3334);
-                for (Class348 class348_39_ = class348.aClass348_4294; class348_39_ != class348; class348_39_ = class348_39_.aClass348_4294) {
-                    Class348_Sub42_Sub20 class348_sub42_sub20 = (Class348_Sub42_Sub20) class348_39_;
+                Node node = (class318_sub10.aClass262_6479.aNode_3334);
+                for (Node node_39_ = node.aNode_4294; node_39_ != node; node_39_ = node_39_.aNode_4294) {
+                    Class348_Sub42_Sub20 class348_sub42_sub20 = (Class348_Sub42_Sub20) node_39_;
                     Class174 class174 = (class348_sub42_sub20.aClass174_9704);
                     if (class174.anInt2296 != 1) {
                         boolean bool_40_ = false;

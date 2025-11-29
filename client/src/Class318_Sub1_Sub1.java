@@ -39,9 +39,9 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1 {
             Class338.anInt4186 = i_2_;
             ClientScript.anInt9701 = i;
         }
-        Class314.aFloat3938 = (float) i_1_;
+        ResourceProvider.aFloat3938 = (float) i_1_;
         Class76.aFloat1287 = (float) i;
-        Class239_Sub2.method1725(262144);
+        Option_Sub2.method1725(262144);
         Class369_Sub3_Sub1.aBoolean10174 = true;
     }
 
@@ -57,6 +57,6 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1 {
     final boolean method2378(int i) {
         if (i != 0) aClass351_8724 = null;
         anInt8721++;
-        return (Class99.aBooleanArrayArray1572[(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class239_Sub25.anInt6111 + (this.x >> Class362.anInt4459))][((this.y >> Class362.anInt4459) + -Class285_Sub2.anInt8502 + Class318_Sub1_Sub4_Sub1.anInt10084)]);
+        return (Class99.aBooleanArrayArray1572[(Class318_Sub1_Sub4_Sub1.anInt10084 + -Option_Sub25.anInt6111 + (this.x >> Class362.anInt4459))][((this.y >> Class362.anInt4459) + -Class285_Sub2.anInt8502 + Class318_Sub1_Sub4_Sub1.anInt10084)]);
     }
 }

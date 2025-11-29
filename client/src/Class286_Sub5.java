@@ -24,7 +24,7 @@ final class Class286_Sub5 extends Class286 {
     static final void method2158(byte i) {
         anInt6256++;
         int i_0_ = 0;
-        if (Class316.aClass348_Sub51_3959 != null) i_0_ = Class316.aClass348_Sub51_3959.aClass239_Sub23_7231.method1818(-32350);
+        if (Class316.clientOptions != null) i_0_ = Class316.clientOptions.aClass239_Sub23_7231.method1818(-32350);
         if (i == 56) {
             if (i_0_ == 2) {
                 int i_1_ = (Math.min(Class272.anInt3473, 800));
@@ -132,25 +132,26 @@ final class Class286_Sub5 extends Class286 {
         }
     }
 
-    static final void method2159(byte i, Index index) {
-        Class348_Sub22.anInt6862 = index.method417("hitmarks", 0);
+    // method2159
+    static final void getJs5Indexes(byte i, Index index) {
+        Class348_Sub22.hitmarksGroup = index.method417("hitmarks", 0);
         anInt6258++;
-        Class106.anInt1639 = index.method417("hitbar_default", 0);
-        Class373_Sub2.anInt7429 = index.method417("timerbar_default", 0);
-        ha.anInt4562 = index.method417("headicons_pk", 0);
-        VarcstrTypeList.anInt1435 = index.method417("headicons_prayer", 0);
-        Class115.anInt1756 = index.method417("hint_headicons", 0);
-        Class291.anInt3739 = index.method417("hint_mapmarkers", 0);
-        Class86.anInt1481 = index.method417("mapflag", 0);
-        Class239_Sub10.anInt5948 = index.method417("cross", 0);
-        Class113.anInt1742 = index.method417("mapdots", 0);
-        Class364.anInt4469 = index.method417("scrollbar", 0);
-        Class348_Sub40_Sub38.anInt9473 = index.method417("name_icons", 0);
-        QuestTypeList.anInt2510 = index.method417("floorshadows", 0);
-        Class52.anInt4895 = index.method417("compass", 0);
+        LoadingScreenOpFactory.hitbarDefaultGroup = index.method417("hitbar_default", 0);
+        Class373_Sub2.timerbarDefaultGroup = index.method417("timerbar_default", 0);
+        ha.headIconsPkGroup = index.method417("headicons_pk", 0);
+        VarcstrTypeList.headIconsPrayerGroup = index.method417("headicons_prayer", 0);
+        Class115.hintHeadIconsGroup = index.method417("hint_headicons", 0);
+        Class291.hintMapmarkersGroup = index.method417("hint_mapmarkers", 0);
+        Class86.mapFlagGround = index.method417("mapflag", 0);
+        Option_Sub10.crossGroup = index.method417("cross", 0);
+        Class113.mapDotsGround = index.method417("mapdots", 0);
+        Class364.scrollBarGround = index.method417("scrollbar", 0);
+        Class348_Sub40_Sub38.nameIconsGroup = index.method417("name_icons", 0);
+        QuestTypeList.floorShadowsGroup = index.method417("floorshadows", 0);
+        Class52.compassGroup = index.method417("compass", 0);
         if (i > -72) method2161((byte) 106, 125L);
-        Class186_Sub1.anInt5814 = index.method417("otherlevel", 0);
-        Class5_Sub3.anInt8370 = index.method417("hint_mapedge", 0);
+        Class186_Sub1.otherLevelGroup = index.method417("otherlevel", 0);
+        Class5_Sub3.hintMapEdgeGroup = index.method417("hint_mapedge", 0);
     }
 
     final void method2134(boolean bool, boolean bool_11_) {

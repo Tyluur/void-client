@@ -21,14 +21,14 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1 {
     short aShort8781;
 
     static final int method2483(int i, int i_0_) {
-        if (Class239_Sub1.aShortArrayArray5847 != null) return Class239_Sub1.aShortArrayArray5847[i][i_0_] & 0xffff;
+        if (Option_Sub1.aShortArrayArray5847 != null) return Option_Sub1.aShortArrayArray5847[i][i_0_] & 0xffff;
         return 0;
     }
 
     final boolean method2378(int i) {
         if (i != 0) method2378(29);
         anInt8767++;
-        return (Class99.aBooleanArrayArray1572[(-Class239_Sub25.anInt6111 + ((this.x >> Class362.anInt4459) - -Class318_Sub1_Sub4_Sub1.anInt10084))][(Class318_Sub1_Sub4_Sub1.anInt10084 + (-Class285_Sub2.anInt8502 + (this.y >> Class362.anInt4459)))]);
+        return (Class99.aBooleanArrayArray1572[(-Option_Sub25.anInt6111 + ((this.x >> Class362.anInt4459) - -Class318_Sub1_Sub4_Sub1.anInt10084))][(Class318_Sub1_Sub4_Sub1.anInt10084 + (-Class285_Sub2.anInt8502 + (this.y >> Class362.anInt4459)))]);
     }
 
     public static void method2484(int i) {
@@ -75,7 +75,7 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1 {
 
     static final void method2486(int i, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_) {
         if (i_8_ >= Class369.anInt4960 && i_5_ <= Class113.anInt1745 && Class132.anInt1910 <= i_9_ && Class38.anInt513 >= i_7_) Class125.method1111(i_7_, i, i_5_, i_8_, i_9_, i_6_);
-        else Class239_Sub16.method1792(i_9_, i_8_, i_7_, i_5_, (byte) -114, i_6_);
+        else Option_Sub16.method1792(i_9_, i_8_, i_7_, i_5_, (byte) -114, i_6_);
         if (i != 0) anInt8780 = 42;
         anInt8777++;
     }

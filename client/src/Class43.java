@@ -28,7 +28,7 @@ final class Class43 {
 
     static final void method382(String string, boolean bool) {
         anInt613++;
-        Class239_Sub12.aString5966 = string;
+        Option_Sub12.aString5966 = string;
         if (bool != true) method381((byte) -48);
         if (Class93.anApplet1530 != null) {
             try {
@@ -36,7 +36,7 @@ final class Class43 {
                 String string_1_ = Class93.anApplet1530.getParameter("cookiehost");
                 String string_2_ = (string_0_ + "settings=" + string + "; version=1; path=/; domain=" + string_1_);
                 if (string.length() == 0) string_2_ += "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
-                else string_2_ += ("; Expires=" + (Class348_Sub42_Sub16_Sub1.method3261(Class62.method599(-53) + 94608000000L, 63)) + "; Max-Age=" + 94608000L);
+                else string_2_ += ("; Expires=" + (Class348_Sub42_Sub16_Sub1.method3261(Class62.safeTime(-53) + 94608000000L, 63)) + "; Max-Age=" + 94608000L);
                 Class224.method1615(Class93.anApplet1530, -15092, "document.cookie=\"" + string_2_ + "\"");
             } catch (Throwable throwable) {
                 /* empty */
@@ -48,7 +48,7 @@ final class Class43 {
         for (int i_3_ = i; Class250.anInt3225 > i_3_; i_3_++) {
             int i_4_ = (Class350.method3452(Class286.anInt3682 + i_3_, (byte) -15, Class250.anInt3225) * Class31.anInt425);
             for (int i_5_ = 0; Class31.anInt425 > i_5_; i_5_++) {
-                int i_6_ = (Class350.method3452(i_5_ - -Class239_Sub24.anInt6095, (byte) -15, Class31.anInt425) + i_4_);
+                int i_6_ = (Class350.method3452(i_5_ - -Option_Sub24.anInt6095, (byte) -15, Class31.anInt425) + i_4_);
                 if (Class132.anIntArray1909[i_6_] == Class318_Sub1_Sub1_Sub2.anInt9997) Class92.anInterface4Array1525[i_6_].method14(0, 0, Class58.anInt1067, Class344.anInt4267, i_5_ * Class58.anInt1067, Class344.anInt4267 * i_3_, true, true);
             }
         }

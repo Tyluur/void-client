@@ -74,13 +74,13 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                 int[] is_21_ = new int[Class348_Sub40_Sub6.anInt9139];
                 int i_22_ = 0;
                 for (int i_23_ = -anInt9466; anInt9466 >= i_23_; i_23_++)
-                    i_22_ += is_20_[i_23_ & Class239_Sub22.anInt6076];
+                    i_22_ += is_20_[i_23_ & Option_Sub22.anInt6076];
                 int i_24_ = 0;
                 while (i_24_ < Class348_Sub40_Sub6.anInt9139) {
                     is_21_[i_24_] = i_17_ * i_22_ >> 16;
-                    i_22_ -= (is_20_[-anInt9466 + i_24_ & Class239_Sub22.anInt6076]);
+                    i_22_ -= (is_20_[-anInt9466 + i_24_ & Option_Sub22.anInt6076]);
                     i_24_++;
-                    i_22_ += (is_20_[i_24_ + anInt9466 & Class239_Sub22.anInt6076]);
+                    i_22_ += (is_20_[i_24_ + anInt9466 & Option_Sub22.anInt6076]);
                 }
                 is_18_[-i + (i_19_ + anInt9463)] = is_21_;
             }
@@ -122,7 +122,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                 int[] is_41_ = is_35_[1];
                 int[] is_42_ = is_35_[2];
                 for (int i_43_ = -anInt9466; i_43_ <= anInt9466; i_43_++) {
-                    int i_44_ = Class239_Sub22.anInt6076 & i_43_;
+                    int i_44_ = Option_Sub22.anInt6076 & i_43_;
                     i_39_ += is_42_[i_44_];
                     i_37_ += is_40_[i_44_];
                     i_38_ += is_41_[i_44_];
@@ -135,12 +135,12 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
                     is_45_[i_48_] = i_37_ * i_32_ >> 16;
                     is_46_[i_48_] = i_38_ * i_32_ >> 16;
                     is_47_[i_48_] = i_39_ * i_32_ >> 16;
-                    int i_49_ = Class239_Sub22.anInt6076 & -anInt9466 + i_48_;
+                    int i_49_ = Option_Sub22.anInt6076 & -anInt9466 + i_48_;
                     i_37_ -= is_40_[i_49_];
                     i_48_++;
                     i_38_ -= is_41_[i_49_];
                     i_39_ -= is_42_[i_49_];
-                    i_49_ = i_48_ - -anInt9466 & Class239_Sub22.anInt6076;
+                    i_49_ = i_48_ - -anInt9466 & Option_Sub22.anInt6076;
                     i_39_ += is_42_[i_49_];
                     i_38_ += is_41_[i_49_];
                     i_37_ += is_40_[i_49_];

@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.math.BigInteger;
 
-abstract class Class348_Sub31 extends Class348 {
+abstract class Class348_Sub31 extends Node {
     static int anInt6913 = 0;
     static int anInt6914;
     static int anInt6915;
@@ -29,7 +29,7 @@ abstract class Class348_Sub31 extends Class348 {
         Class346.aBoolean4275 = false;
         Class124.aIndex_1848 = null;
         Class318.anInt3971 = -1;
-        Class239_Sub14.anInt5994 = i;
+        Option_Sub14.anInt5994 = i;
         Class348_Sub43.anInt7068 = 1;
         Class58.anInt1059 = 0;
     }
@@ -63,11 +63,11 @@ abstract class Class348_Sub31 extends Class348 {
                 int i_34_ = i_25_ * i_26_;
                 int i_35_ = i_11_ + (i_29_ + (i_31_ + i_33_) >> 12);
                 int i_36_ = i_9_ + (i_30_ - -i_32_ + i_34_ >> 12);
-                Class239_Sub15.method1783(i_12_, -1, i_13_, i_36_, i_35_, i_10_);
+                Option_Sub15.method1783(i_12_, -1, i_13_, i_36_, i_35_, i_10_);
                 i_13_ = i_36_;
                 i_12_ = i_35_;
             }
-        } else Class239_Sub15.method1783(i_11_, -1, i_9_, i_6_, i_5_, i_10_);
+        } else Option_Sub15.method1783(i_11_, -1, i_9_, i_6_, i_5_, i_10_);
         anInt6919++;
         int i_37_ = 64 % ((50 - i_7_) / 51);
     }
@@ -201,7 +201,7 @@ abstract class Class348_Sub31 extends Class348 {
                     for (int i_91_ = 0; i_91_ < i_90_; i_91_++) {
                         int i_92_ = class348_sub49.readUnsignedShort(842397944);
                         int i_93_ = class348_sub49.readInt((byte) -126);
-                        if ((Class77.anIntArray1303.length > i_92_) && Class286_Sub6.aBooleanArray6270[i_92_] && ((Class239_Sub14.varcTypeList.method1976(i_92_, -107).aChar2132) != '1' || i_93_ >= -1 && i_93_ <= 1)) Class77.anIntArray1303[i_92_] = i_93_;
+                        if ((Class77.anIntArray1303.length > i_92_) && Class286_Sub6.aBooleanArray6270[i_92_] && ((Option_Sub14.varcTypeList.method1976(i_92_, -107).aChar2132) != '1' || i_93_ >= -1 && i_93_ <= 1)) Class77.anIntArray1303[i_92_] = i_93_;
                     }
                 }
             }

@@ -33,7 +33,7 @@ final class Class2 {
         try {
             anInt120++;
             Class348_Sub38.anInt7009++;
-            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class239_Sub9.aClass351_5934, Class348_Sub23_Sub2.aClass77_9029, -104);
+            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Option_Sub9.aClass351_5934, Class348_Sub23_Sub2.aClass77_9029, -104);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 112, class46.anInt830);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(class46_0_.anInt704, (byte) 3);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeIntMiddle(class46_0_.anInt830, (byte) 44);

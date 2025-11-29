@@ -150,15 +150,15 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         do {
             try {
                 anInt10357++;
-                if (Class348.anInt4290 < 100) Class318_Sub7.method2512(var_d, var_ha, i ^ 0x74);
+                if (Node.anInt4290 < 100) Class318_Sub7.method2512(var_d, var_ha, i ^ 0x74);
                 var_ha.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_);
-                if (Class348.anInt4290 < 100) {
+                if (Node.anInt4290 < 100) {
                     int i_15_ = 20;
                     int i_16_ = i_12_ / 2 + i_11_;
                     int i_17_ = i_14_ - -(i_13_ / 2) - 18 - i_15_;
                     var_ha.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0);
                     var_ha.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884].getRGB(), 0);
-                    var_ha.aa(i_16_ - 150, 2 + i_17_, Class348.anInt4290 * 3, 30, Class135.aColorArray1928[Class222.anInt2884].getRGB(), 0);
+                    var_ha.aa(i_16_ - 150, 2 + i_17_, Node.anInt4290 * 3, 30, Class135.aColorArray1928[Class222.anInt2884].getRGB(), 0);
                     Class262.aFontRenderer_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(Class348_Sub33.language, i + 551), -1, i_15_ + i_17_);
                 } else {
                     int i_18_ = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
@@ -184,7 +184,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     if (!Class298.aBoolean3811) break;
                     int i_22_ = -5 + i_11_ + i_12_;
                     int i_23_ = -8 + i_13_ + i_14_;
-                    Applet_Sub1.aFontRenderer_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_23_, 16776960, i_22_, i + -116, -1);
+                    Applet_Sub1.aFontRenderer_20.method2569("Fps:" + (Option_Sub5.anInt5891), i_23_, 16776960, i_22_, i + -116, -1);
                     i_23_ -= 15;
                     Runtime runtime = Runtime.getRuntime();
                     int i_24_ = (int) ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L);
@@ -282,8 +282,8 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         anInt10348++;
         if (i == 3613) {
             int i_31_ = 0;
-            for (int i_32_ = 0; Class367_Sub4.anInt7319 > i_32_; i_32_++) {
-                for (int i_33_ = 0; Class348_Sub40_Sub3.anInt9109 > i_33_; i_33_++) {
+            for (int i_32_ = 0; Class367_Sub4.mapLength > i_32_; i_32_++) {
+                for (int i_33_ = 0; Class348_Sub40_Sub3.mapWidth > i_33_; i_33_++) {
                     if (Class367_Sub4.method3542(i_33_, Class147.aClass357ArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++;
                     if (i_31_ >= 512) return;
                 }

@@ -163,7 +163,7 @@ final class Class367_Sub11 extends Class367 {
                         Insets insets = Class52.aFrame4904.getInsets();
                         Class305.aCanvas3869.setLocation(insets.left - -Class348_Sub48.anInt7129, Class335.anInt4167 + insets.top);
                     } else Class305.aCanvas3869.setLocation((Class348_Sub48.anInt7129), Class335.anInt4167);
-                    if (r.anInt9721 != -1) Class239.method1713(true, 520);
+                    if (r.anInt9721 != -1) Option.method1713(true, 520);
                     Class140.method1170((byte) -78);
                 } else {
                     /* empty */

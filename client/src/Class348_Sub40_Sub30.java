@@ -27,7 +27,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
 
     static final void method3126(byte i) {
         if (i != 98) anInt9388 = 46;
-        Class60.aHa1098.method3700(Class239_Sub10.aFloat5945, Class348_Sub3.aFloat6586, Class269.aFloat3462);
+        Class60.aHa1098.method3700(Option_Sub10.aFloat5945, Class348_Sub3.aFloat6586, Class269.aFloat3462);
         anInt9387++;
     }
 
@@ -47,7 +47,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
         do {
             class348_sub42_sub15 = (Class348_Sub42_Sub15) s_Sub2.aClass107_8241.method1011(-87);
             if (class348_sub42_sub15 == null) return null;
-            if (Class62.method599(-59) < class348_sub42_sub15.method3250((byte) -51)) return null;
+            if (Class62.safeTime(-59) < class348_sub42_sub15.method3250((byte) -51)) return null;
             class348_sub42_sub15.method2715((byte) 113);
             class348_sub42_sub15.method3162(true);
         } while ((~0x7fffffffffffffffL & class348_sub42_sub15.aLong7057) == 0L);
@@ -98,7 +98,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
                             else {
                                 Class146.anInt2012++;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class294.aClass351_5057, Class348_Sub23_Sub2.aClass77_9029, -85));
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class239_Sub6.method1745(string, -65));
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Option_Sub6.method1745(string, -65));
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                                 Class348_Sub42_Sub14.method3243(123, class348_sub47);
                                 if (i <= -31) break;

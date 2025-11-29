@@ -24,7 +24,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
 
     static final void method3072(byte i) {
         anInt9168++;
-        int i_0_ = Class316.aClass348_Sub51_3959.aClass239_Sub14_7264.method1778(-32350);
+        int i_0_ = Class316.clientOptions.aClass239_Sub14_7264.method1778(-32350);
         int i_1_ = 14 / ((i - -34) / 61);
         if (i_0_ == 0) {
             Class289.aByteArrayArrayArray3700 = null;
@@ -34,7 +34,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
             Class46.method440(512, (byte) -61);
             if (Class348_Sub33.aByteArrayArrayArray6962 != null) Class318_Sub1_Sub3_Sub4.method2468(3613);
         } else {
-            Class301.method2280((byte) (-4 + Class239_Sub15.anInt6006 & 0xff), 28587);
+            Class301.method2280((byte) (-4 + Option_Sub15.anInt6006 & 0xff), 28587);
             Class46.method440(2, (byte) -61);
         }
         Class318_Sub1_Sub3_Sub5.anInt10395 = QuickChatPhraseTypeList.anInt4372;
@@ -61,7 +61,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
             int[] is_8_ = this.method3048(i - -1 & Class299_Sub2.anInt6325, 633706337, 0);
             for (int i_9_ = 0; Class348_Sub40_Sub6.anInt9139 > i_9_; i_9_++) {
                 int i_10_ = anInt9167 * (-is_6_[i_9_] + is_8_[i_9_]);
-                int i_11_ = (anInt9167 * (-is_7_[Class239_Sub22.anInt6076 & -1 + i_9_] + is_7_[Class239_Sub22.anInt6076 & i_9_ - -1]));
+                int i_11_ = (anInt9167 * (-is_7_[Option_Sub22.anInt6076 & -1 + i_9_] + is_7_[Option_Sub22.anInt6076 & i_9_ - -1]));
                 int i_12_ = i_11_ >> 12;
                 int i_13_ = i_10_ >> 12;
                 int i_14_ = i_12_ * i_12_ >> 12;

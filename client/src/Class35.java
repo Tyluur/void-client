@@ -10,7 +10,7 @@ final class Class35 {
     static final void method352(int i) {
         anInt483++;
         Class162.method1265(i + 15);
-        IOException_Sub1.method131(Class316.aClass348_Sub51_3959.aClass239_Sub5_7240.method1739(-32350) == 1, 2, true, 22050);
+        IOException_Sub1.method131(Class316.clientOptions.aClass239_Sub5_7240.method1739(-32350) == 1, 2, true, 22050);
         Class348_Sub40.aClass279_7042 = Class193.method1439(22050, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, 0, 7);
         Class348_Sub42_Sub18.method3273(true, i + -82, Class172.method1326(null, 9));
         VarBitTypeListClient.aClass279_2596 = Class193.method1439(2048, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, i, 7);

@@ -52,8 +52,8 @@ final class Class302 {
             EnumTypeList.method338(0, i_4_);
             if (i == -43) {
                 int i_5_ = (Class132.aPlayer_1907.method2436((byte) 103) << 8);
-                Class335.method2655(98, Class132.aPlayer_1907.plane, Class348_Sub51.anInt7267, i_5_ + (Class132.aPlayer_1907.y), (Class132.aPlayer_1907.x - -i_5_));
-                Class348_Sub51.anInt7267 = 0;
+                Class335.method2655(98, Class132.aPlayer_1907.plane, ClientOptions.anInt7267, i_5_ + (Class132.aPlayer_1907.y), (Class132.aPlayer_1907.x - -i_5_));
+                ClientOptions.anInt7267 = 0;
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "wo.B(" + i + ',' + l + ')');

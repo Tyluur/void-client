@@ -8,7 +8,7 @@ import jaclib.memory.heap.NativeHeapBuffer;
 
 import java.awt.*;
 
-final class Class348_Sub3 extends Class348 {
+final class Class348_Sub3 extends Node {
     private final s_Sub3 aS_Sub3_6566;
     int anInt6567;
     static int anInt6568;
@@ -102,7 +102,7 @@ final class Class348_Sub3 extends Class348 {
                 if (aHa_Sub3_6590.aBoolean8160) aHa_Sub3_6590.EA(2147483647, this.anInt6571, this.anInt6575, this.anInt6569);
                 Class101_Sub2 class101_sub2 = aHa_Sub3_6590.method3820(false);
                 class101_sub2.method932(1.0F, 1.0F / this.aFloat6582, 1.0F / this.aFloat6582, (byte) -80);
-                aHa_Sub3_6590.method3853(i + -2, Class239_Sub18.aClass251_6030);
+                aHa_Sub3_6590.method3853(i + -2, Option_Sub18.aClass251_6030);
                 aHa_Sub3_6590.method3925(55, anInterface5_Impl1_6577, 1);
                 aHa_Sub3_6590.method3862(i + 30, (aS_Sub3_6566.aClass130_8324));
                 aHa_Sub3_6590.method3938(Class247.aClass21_3181, i_2_, interface5_impl2, i_3_, 0, 1 + -i_3_ + i_4_, 104);

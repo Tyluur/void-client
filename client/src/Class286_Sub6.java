@@ -51,7 +51,7 @@ final class Class286_Sub6 extends Class286 {
             } else string = "www-wtqa";
         } else string = "www-wtrc";
         String string_2_ = "";
-        if (Class239_Sub12.aString5966 != null) string_2_ = "/p=" + Class239_Sub12.aString5966;
+        if (Option_Sub12.aString5966 != null) string_2_ = "/p=" + Option_Sub12.aString5966;
         return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.modeGame.aString2985) + ".com/l=" + Class348_Sub33.language + "/a=" + Class202.anInt2670 + string_2_ + "/");
     }
 
@@ -85,13 +85,13 @@ final class Class286_Sub6 extends Class286 {
                         }
                     }
                     if (Class285.aClass348_Sub16_Sub3_4743 == null) {
-                        if (Class239_Sub12.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564.method2869(Class286.aClass348_Sub2_3683, Class346.aBoolean4275, false);
-                        else Class98.aClass348_Sub16_Sub3_1564.method2870(Class286.aClass348_Sub2_3683, Class239_Sub12.aLong5971, Class346.aBoolean4275, true, (byte) 24);
+                        if (Option_Sub12.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564.method2869(Class286.aClass348_Sub2_3683, Class346.aBoolean4275, false);
+                        else Class98.aClass348_Sub16_Sub3_1564.method2870(Class286.aClass348_Sub2_3683, Option_Sub12.aLong5971, Class346.aBoolean4275, true, (byte) 24);
                     }
                     if (Class318_Sub1_Sub4.aClass279_8764 != null) Class318_Sub1_Sub4.aClass279_8764.method2088(bool, Class98.aClass348_Sub16_Sub3_1564);
                     Class124.aIndex_1848 = null;
                     Class286.aClass348_Sub2_3683 = null;
-                    Class239_Sub12.aLong5971 = 0L;
+                    Option_Sub12.aLong5971 = 0L;
                     MSITypeList.aClass26_1977 = null;
                     Class285.aClass348_Sub16_Sub3_4743 = null;
                     return true;

@@ -24,12 +24,12 @@ final class Class290 {
     }
 
     static final void method2196(byte i) {
-        Class239_Sub19.anInt6043 = (int) ((double) Class367_Sub4.anInt7319 * 34.46);
+        Option_Sub19.anInt6043 = (int) ((double) Class367_Sub4.mapLength * 34.46);
         Class348_Sub33.anInt6964 = 200;
         anInt3716++;
         if (i == -9) {
-            Class239_Sub19.anInt6043 <<= 2;
-            if (Class348_Sub8.aHa6654.method3670()) Class239_Sub19.anInt6043 += 512;
+            Option_Sub19.anInt6043 <<= 2;
+            if (Class348_Sub8.aHa6654.method3670()) Option_Sub19.anInt6043 += 512;
             QuickChatCatTypeList.method1626(1, false);
         }
     }

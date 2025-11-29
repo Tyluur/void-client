@@ -138,7 +138,7 @@ abstract class Class59 {
         anInt1077++;
         Class358.aClass60_4417.method578(2, i);
         if (i_49_ != -1) aClass114_1068 = null;
-        Class239_Sub24.aClass60_6096.method578(2, i);
+        Option_Sub24.aClass60_6096.method578(2, i);
         Class348_Sub40_Sub9.aClass60_9171.method578(i_49_ ^ ~0x2, i);
     }
 
@@ -167,7 +167,7 @@ abstract class Class59 {
         }
         if (is != null && file != null) {
             boolean bool = true;
-            byte[] is_54_ = Class239_Sub24.method1821(i ^ 0x1d5b, file);
+            byte[] is_54_ = Option_Sub24.method1821(i ^ 0x1d5b, file);
             if (is_54_ == null || is_54_.length != is.length) bool = false;
             else {
                 for (int i_55_ = 0; i_55_ < is_54_.length; i_55_++) {

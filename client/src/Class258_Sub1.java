@@ -55,12 +55,12 @@ final class Class258_Sub1 extends Class258 {
         Class23.aBoolean351 = true;
         Class318_Sub1_Sub3_Sub3.aBoolean10221 = Class9.aHa171.method3704() > 0;
         Class348_Sub40_Sub17.aBoolean9242 = bool_24_;
-        Class239_Sub25.anInt6111 = i_12_ >> Class362.anInt4459;
+        Option_Sub25.anInt6111 = i_12_ >> Class362.anInt4459;
         Class285_Sub2.anInt8502 = i_14_ >> Class362.anInt4459;
         MSITypeList.anInt1974 = i_12_;
         Class348_Sub40_Sub27.anInt9360 = i_14_;
         Class232.anInt3006 = i_13_;
-        Class37.anInt492 = Class239_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084;
+        Class37.anInt492 = Option_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084;
         if (Class37.anInt492 < 0) {
             Sprite_Sub1.anInt8412 = -Class37.anInt492;
             Class37.anInt492 = 0;
@@ -70,7 +70,7 @@ final class Class258_Sub1 extends Class258 {
             Class240.anInt4686 = -Class348_Sub34.anInt6974;
             Class348_Sub34.anInt6974 = 0;
         } else Class240.anInt4686 = 0;
-        Class27.anInt387 = Class239_Sub25.anInt6111 + Class318_Sub1_Sub4_Sub1.anInt10084;
+        Class27.anInt387 = Option_Sub25.anInt6111 + Class318_Sub1_Sub4_Sub1.anInt10084;
         if (Class27.anInt387 > Class318_Sub7.anInt6451) Class27.anInt387 = Class318_Sub7.anInt6451;
         Class59_Sub1.anInt5293 = Class285_Sub2.anInt8502 + Class318_Sub1_Sub4_Sub1.anInt10084;
         if (Class59_Sub1.anInt5293 > Class348_Sub41.anInt7054) Class59_Sub1.anInt5293 = Class348_Sub41.anInt7054;
@@ -83,7 +83,7 @@ final class Class258_Sub1 extends Class258 {
                 for (int i_32_ = 0; i_32_ < (Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2); i_32_++) {
                     if (i_32_ > 1) Class171.anIntArray2272[i_32_ - 2] = i_30_;
                     i_30_ = i_31_;
-                    int i_33_ = (Class239_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_29_);
+                    int i_33_ = (Option_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_29_);
                     int i_34_ = (Class285_Sub2.anInt8502 - Class318_Sub1_Sub4_Sub1.anInt10084 + i_32_);
                     if (i_33_ >= 0 && i_34_ >= 0 && i_33_ < Class318_Sub7.anInt6451 && i_34_ < Class348_Sub41.anInt7054) {
                         int i_35_ = i_33_ << Class362.anInt4459;
@@ -139,7 +139,7 @@ final class Class258_Sub1 extends Class258 {
         }
         if (Class318_Sub1_Sub3_Sub3.aBoolean10221) {
             for (int i_42_ = 0; i_42_ < Class331.anInt4135; i_42_++)
-                Class239_Sub14.aClass211Array5993[i_42_].method1544(8688, bool, i);
+                Option_Sub14.aClass211Array5993[i_42_].method1544(8688, bool, i);
         }
         if (Class348_Sub40_Sub5.aBoolean9121) {
             Class52.anIntArray4906 = Class9.aHa171.Y();

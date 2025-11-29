@@ -26,7 +26,7 @@ abstract class s {
             Dimension dimension = canvas.getSize();
             Class85.method828((byte) 38, dimension.height, dimension.width);
             if (Class348_Sub49.anInt7207 != 1) Class21.aHa326.method3669(canvas, Class59_Sub1.anInt5283, Class107.anInt1651);
-            else Class21.aHa326.method3669(canvas, Class348_Sub16_Sub1.anInt8854, Class239_Sub16.anInt6008);
+            else Class21.aHa326.method3669(canvas, Class348_Sub16_Sub1.anInt8854, Option_Sub16.anInt6008);
         }
     }
 

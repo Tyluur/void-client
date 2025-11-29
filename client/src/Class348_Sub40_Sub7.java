@@ -25,9 +25,9 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
             int[] is_7_ = is[2];
             if (aBoolean9140) {
                 for (int i_8_ = 0; i_8_ < Class348_Sub40_Sub6.anInt9139; i_8_++) {
-                    is_5_[i_8_] = is_2_[Class239_Sub22.anInt6076 + -i_8_];
-                    is_6_[i_8_] = is_3_[Class239_Sub22.anInt6076 - i_8_];
-                    is_7_[i_8_] = is_4_[-i_8_ + Class239_Sub22.anInt6076];
+                    is_5_[i_8_] = is_2_[Option_Sub22.anInt6076 + -i_8_];
+                    is_6_[i_8_] = is_3_[Option_Sub22.anInt6076 - i_8_];
+                    is_7_[i_8_] = is_4_[-i_8_ + Option_Sub22.anInt6076];
                 }
             } else {
                 for (int i_9_ = 0; (i_9_ < Class348_Sub40_Sub6.anInt9139); i_9_++) {
@@ -117,7 +117,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                             }
                             if (i_31_ < i_34_ && i_32_ < i_33_) {
                                 if (class46.anInt765 != 0) {
-                                    if ((Class239_Sub10.anInt5943 == class46.anInt765) || (class46.anInt765 == Class312.anInt3932)) {
+                                    if ((Option_Sub10.anInt5943 == class46.anInt765) || (class46.anInt765 == Class312.anInt3932)) {
                                         Class5_Sub2.method198(class46, false, i_25_, i_24_);
                                         if (!Class59_Sub1.aBoolean5300) {
                                             OutputStream_Sub1.method132(124, (Class312.anInt3932 == (class46.anInt765)), class46.anInt709, i_24_, class46.anInt789, i_25_);
@@ -139,7 +139,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                         }
                                         continue;
                                     }
-                                    if (class46.anInt765 == Class239_Sub11.anInt5951) {
+                                    if (class46.anInt765 == SafeModeOption.anInt5951) {
                                         if (class46.method425((Class348_Sub8.aHa6654), (byte) 26) != null) {
                                             Class18.method271(i_25_, class46, (byte) -98, i_24_);
                                             FloorOverlayTypeList.aBooleanArray3438[i_23_] = true;
@@ -173,8 +173,8 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                             }
                                             if (Class298.aBoolean3811) {
                                                 int i_39_ = -256;
-                                                if (Class239_Sub5.anInt5891 < 20) i_39_ = -65536;
-                                                Applet_Sub1.aFontRenderer_20.method2569("Fps:" + (Class239_Sub5.anInt5891), i_38_, i_39_, i_37_, -128, -1);
+                                                if (Option_Sub5.anInt5891 < 20) i_39_ = -65536;
+                                                Applet_Sub1.aFontRenderer_20.method2569("Fps:" + (Option_Sub5.anInt5891), i_38_, i_39_, i_37_, -128, -1);
                                                 i_38_ += 15;
                                                 Runtime runtime = Runtime.getRuntime();
                                                 int i_40_ = (int) (((runtime.totalMemory()) + -(runtime.freeMemory())) / 1024L);
@@ -200,10 +200,10 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                 int i_45_ = 0;
                                                 int i_46_ = 0;
                                                 for (int i_47_ = 0; (i_47_ < 37); i_47_++) {
-                                                    if ((Class13.aClass314_Sub1Array223[i_47_]) != null) {
-                                                        i_44_ += (Class13.aClass314_Sub1Array223[i_47_].method2345(0));
-                                                        i_45_ += (Class13.aClass314_Sub1Array223[i_47_].method2351(0));
-                                                        i_46_ += (Class13.aClass314_Sub1Array223[i_47_].method2341(24940));
+                                                    if ((Class13.js5ResourceProviders[i_47_]) != null) {
+                                                        i_44_ += (Class13.js5ResourceProviders[i_47_].method2345(0));
+                                                        i_45_ += (Class13.js5ResourceProviders[i_47_].method2351(0));
+                                                        i_46_ += (Class13.js5ResourceProviders[i_47_].method2341(24940));
                                                     }
                                                 }
                                                 int i_48_ = i_46_ * 100 / i_44_;
@@ -511,7 +511,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
             int[] is_76_ = this.method3048((aBoolean9147 ? Class299_Sub2.anInt6325 - i : i), i_75_ + 633706082, 0);
             if (aBoolean9140) {
                 for (int i_77_ = 0; (i_77_ < Class348_Sub40_Sub6.anInt9139); i_77_++)
-                    is[i_77_] = is_76_[Class239_Sub22.anInt6076 + -i_77_];
+                    is[i_77_] = is_76_[Option_Sub22.anInt6076 + -i_77_];
             } else Class214.method1578(is_76_, 0, is, 0, Class348_Sub40_Sub6.anInt9139);
         }
         return is;

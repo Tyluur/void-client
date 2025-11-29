@@ -74,7 +74,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
 
     static final void method1157(int i, byte i_7_) {
         if (i_7_ < -77) {
-            Class239_Sub12.anInt5969 = 2;
+            Option_Sub12.anInt5969 = 2;
             anInt4834++;
             RuntimeException_Sub1.anInt4596 = i;
             long l = 0L;

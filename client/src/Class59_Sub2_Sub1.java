@@ -108,7 +108,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
         int i_26_ = -94 / ((-67 - i) / 59);
         if (bool) {
             Class348_Sub40_Sub26.anInt9346++;
-            Class239_Sub25.method1827(1415665776);
+            Option_Sub25.method1827(1415665776);
         }
         if (bool_25_) {
             Class26.anInt383++;

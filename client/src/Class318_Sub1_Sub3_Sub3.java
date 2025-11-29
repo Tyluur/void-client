@@ -566,12 +566,12 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                 Class24.aClass318_Sub1_Sub3Array357[i] = null;
             Class86.anInt1477 = 0;
         }
-        Class348.aClass318_Sub1Array4293 = null;
+        Node.aClass318_Sub1Array4293 = null;
         Class250.aClass318_Sub1Array3226 = null;
         Class115.aClass318_Sub1Array1754 = null;
-        if (Class239_Sub21.aClass318_Sub1Array6066 != null) {
-            for (int i = 0; i < Class239_Sub21.aClass318_Sub1Array6066.length; i++)
-                Class239_Sub21.aClass318_Sub1Array6066[i] = null;
+        if (Option_Sub21.aClass318_Sub1Array6066 != null) {
+            for (int i = 0; i < Option_Sub21.aClass318_Sub1Array6066.length; i++)
+                Option_Sub21.aClass318_Sub1Array6066[i] = null;
             Class5_Sub1_Sub1.anInt9930 = 0;
         }
         if (Class291.aClass318_Sub1Array3737 != null) {
@@ -579,9 +579,9 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                 Class291.aClass318_Sub1Array3737[i] = null;
             Class348_Sub42_Sub3.anInt9504 = 0;
         }
-        if (Class239_Sub14.aClass211Array5993 != null) {
+        if (Option_Sub14.aClass211Array5993 != null) {
             for (int i = 0; i < Class331.anInt4135; i++)
-                Class239_Sub14.aClass211Array5993[i] = null;
+                Option_Sub14.aClass211Array5993[i] = null;
             for (int i = 0; i < Class189.anInt2524; i++) {
                 for (int i_84_ = 0; i_84_ < Class318_Sub7.anInt6451; i_84_++) {
                     for (int i_85_ = 0; i_85_ < Class348_Sub41.anInt7054; i_85_++)
@@ -595,7 +595,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         Class71.aClass76_1208.method775((byte) 69);
         Class348_Sub1_Sub2.aByteArrayArray8816 = null;
         Class342.anIntArrayArray4253 = null;
-        Class239_Sub1.aShortArrayArray5847 = null;
+        Option_Sub1.aShortArrayArray5847 = null;
         if (Class348_Sub40_Sub34.aClass293Array9432 != null) {
             Class260.method1978();
             Class9.aHa171.method3631(1);

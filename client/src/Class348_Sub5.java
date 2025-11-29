@@ -6,7 +6,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.net.Socket;
 
-abstract class Class348_Sub5 extends Class348 {
+abstract class Class348_Sub5 extends Node {
     ha_Sub2 aHa_Sub2_6618;
     static int anInt6619;
     static int anInt6620;
@@ -88,7 +88,7 @@ abstract class Class348_Sub5 extends Class348 {
                         if (Class130_Sub1.aClass144_5800.anInt1997 != 1) return;
                         Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982(((Socket) (Class130_Sub1.aClass144_5800.anObject1998)), (byte) 24, 7500);
                         Class130_Sub1.aClass144_5800 = null;
-                        Class239_Sub18.method1802(0);
+                        Option_Sub18.method1802(0);
                         Class367_Sub2.anInt7297 = 4;
                     }
                     if (Class367_Sub2.anInt7297 == 4) {

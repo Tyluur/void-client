@@ -18,7 +18,7 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
         if (!bool) Class348_Sub8.aHa6654.method3710();
         else if (!Class348_Sub8.aHa6654.method3671()) bool = false;
         if (bool_0_ == bool) return false;
-        Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub12_7243), bool ? 1 : 0);
+        Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub12_7243), bool ? 1 : 0);
         Class14_Sub2.method243(37);
         return true;
     }
@@ -74,7 +74,7 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
     private final void method3139(int i, int i_12_, byte i_13_) {
         anInt9425++;
         int i_14_ = Class318_Sub6.anIntArray6432[i];
-        int i_15_ = Class239_Sub18.anIntArray6035[i_12_];
+        int i_15_ = Option_Sub18.anIntArray6035[i_12_];
         if (i_13_ != -31) method3139(-44, -111, (byte) 48);
         float f = (float) Math.atan2(i_14_ + -2048, i_15_ + -2048);
         if ((double) f >= -3.141592653589793 && (double) f <= -2.356194490192345) {
@@ -113,6 +113,6 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
             Class121.anInt1796 = i_12_;
         }
         Class344.anInt4265 &= Class299_Sub2.anInt6325;
-        Class121.anInt1796 &= Class239_Sub22.anInt6076;
+        Class121.anInt1796 &= Option_Sub22.anInt6076;
     }
 }

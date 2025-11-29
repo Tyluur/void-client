@@ -186,20 +186,20 @@ final class Class377 extends ha_Sub3 {
             OpenGL.glDeleteLists((int) class348_sub35.aLong4291, class348_sub35.anInt6976);
         }
         while (!aClass262_9904.method2002((byte) 18)) {
-            Class348 class348 = aClass262_9904.method1997(8);
-            OpenGL.glDeleteProgramARB((int) class348.aLong4291);
+            Node node = aClass262_9904.method1997(8);
+            OpenGL.glDeleteProgramARB((int) node.aLong4291);
         }
         while (!aClass262_9905.method2002((byte) 18)) {
-            Class348 class348 = aClass262_9905.method1997(8);
-            OpenGL.glDeleteObjectARB(class348.aLong4291);
+            Node node = aClass262_9905.method1997(8);
+            OpenGL.glDeleteObjectARB(node.aLong4291);
         }
         while (!aClass262_9869.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass262_9869.method1997(8);
             OpenGL.glDeleteLists((int) class348_sub35.aLong4291, class348_sub35.anInt6976);
         }
-        if (this.E() > 100663296 && (Class62.method599(-82) > 60000L + aLong9906)) {
+        if (this.E() > 100663296 && (Class62.safeTime(-82) > 60000L + aLong9906)) {
             System.gc();
-            aLong9906 = Class62.method599(-96);
+            aLong9906 = Class62.safeTime(-96);
         }
         super.method3646(i);
     }
@@ -301,9 +301,9 @@ final class Class377 extends ha_Sub3 {
     final synchronized void method3966(long l, int i) {
         try {
             anInt9853++;
-            Class348 class348 = new Class348();
-            class348.aLong4291 = l;
-            if (i == 34192) aClass262_9905.method1999(class348, i ^ ~0xcb43);
+            Node node = new Node();
+            node.aLong4291 = l;
+            if (i == 34192) aClass262_9905.method1999(node, i ^ ~0xcb43);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "bga.N(" + l + ',' + i + ')');
         }
@@ -966,9 +966,9 @@ final class Class377 extends ha_Sub3 {
 
     final synchronized void method3971(int i, int i_70_) {
         anInt9819++;
-        Class348 class348 = new Class348();
-        class348.aLong4291 = i_70_;
-        aClass262_9904.method1999(class348, -20180);
+        Node node = new Node();
+        node.aLong4291 = i_70_;
+        aClass262_9904.method1999(node, -20180);
         if (i != 16386) method3928(-86);
     }
 

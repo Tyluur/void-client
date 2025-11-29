@@ -65,7 +65,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
         int[] is = this.aClass191_7032.method1433(0, i);
         if (i_0_ != 255) method3044(-57);
         if (this.aClass191_7032.aBoolean2570) {
-            int i_1_ = anInt9117 * Class239_Sub18.anIntArray6035[i] + 2048;
+            int i_1_ = anInt9117 * Option_Sub18.anIntArray6035[i] + 2048;
             int i_2_ = i_1_ >> 12;
             int i_3_ = 1 + i_2_;
             int i_4_ = 0;

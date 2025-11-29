@@ -16,7 +16,7 @@ abstract class Class346 {
         /* empty */
     }
 
-    abstract Interface6 method2697(int i);
+    abstract KeyLog method2697(int i);
 
     abstract void method2698(int i);
 

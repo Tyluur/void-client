@@ -171,10 +171,10 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
             Class302 class302 = class302s[i_13_];
             if (class302 != null && class302.anInt3840 == 2) {
                 Class318_Sub5.method2505(i_9_ >> 1, 2 * class302.anInt3839, 0, i_12_, i_11_ >> 1, class302.anInt3838, class302.anInt3832, i_7_, class302.anInt3835);
-                if (Class239_Sub21.anIntArray6062[0] > -1 && Class367_Sub11.anInt7396 % 20 < 10) {
-                    Sprite sprite = (Class239_Sub9.aSpriteArray5933[class302.anInt3831]);
-                    int i_14_ = -12 + (i - -Class239_Sub21.anIntArray6062[0]);
-                    int i_15_ = i_8_ - -Class239_Sub21.anIntArray6062[1] - 28;
+                if (Option_Sub21.anIntArray6062[0] > -1 && Class367_Sub11.anInt7396 % 20 < 10) {
+                    Sprite sprite = (Option_Sub9.aSpriteArray5933[class302.anInt3831]);
+                    int i_14_ = -12 + (i - -Option_Sub21.anIntArray6062[0]);
+                    int i_15_ = i_8_ - -Option_Sub21.anIntArray6062[1] - 28;
                     sprite.method974(i_14_, i_15_);
                     Class338.method2663(-5590, i_14_, i_14_ - -sprite.scaleWidth(), i_15_, sprite.method980() + i_15_);
                 }
@@ -244,7 +244,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
                 this.x = i_21_;
                 aByte9980 = (byte) i_24_;
                 aShort9991 = (short) class51.anInt941;
-                aBoolean9988 = (var_ha.method3682() && class51.aBoolean894 && !aBoolean9983 && Class316.aClass348_Sub51_3959.aClass239_Sub7_7238.method1748(-32350) != 0);
+                aBoolean9988 = (var_ha.method3682() && class51.aBoolean894 && !aBoolean9983 && Class316.clientOptions.aClass239_Sub7_7238.method1748(-32350) != 0);
                 int i_26_ = 2048;
                 if (aBoolean9989) i_26_ |= 0x10000;
                 Class2 class2 = method2401(var_ha, i_26_, aBoolean9988, 22);

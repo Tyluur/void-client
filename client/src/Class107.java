@@ -69,7 +69,7 @@ final class Class107 {
             Class125.aClass356_4915 = new Class356(8);
             Class99.method882((byte) 11);
             r.anInt9721 = Class54.anInt970;
-            Class239.method1713(false, 520);
+            Option.method1713(false, 520);
             Class354.method3466(-119);
             Class66.method703(r.anInt9721);
         }
@@ -93,15 +93,15 @@ final class Class107 {
                         i_3_ = Class348_Sub7.anInt6652;
                         i_4_ = Class348_Sub6.anInt6633;
                         i_5_ = 4096;
-                        i_6_ = 0x3fff & (int) -Class314.aFloat3938;
+                        i_6_ = 0x3fff & (int) -ResourceProvider.aFloat3938;
                     } else {
                         i_5_ = 4096 - 16 * Class348_Sub49_Sub1.anInt9750;
                         i_3_ = (Class132.aPlayer_1907.y);
-                        i_6_ = ((int) -Class314.aFloat3938 - -r_Sub2.anInt10483 & 0x3fff);
+                        i_6_ = ((int) -ResourceProvider.aFloat3938 - -r_Sub2.anInt10483 & 0x3fff);
                         i_4_ = (Class132.aPlayer_1907.x);
                     }
-                    int i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.anInt7319 * 2)) - -208;
-                    int i_8_ = (208 - (Class348_Sub40_Sub3.anInt9109 * 2 - 48) + 4 * Class348_Sub40_Sub3.anInt9109 - i_3_ / 128);
+                    int i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.mapLength * 2)) - -208;
+                    int i_8_ = (208 - (Class348_Sub40_Sub3.mapWidth * 2 - 48) + 4 * Class348_Sub40_Sub3.mapWidth - i_3_ / 128);
                     Class108.aSprite_1664.method967(((float) class46.anInt709 / 2.0F + (float) i), ((float) class46.anInt789 / 2.0F + (float) i_1_), (float) i_7_, (float) i_8_, i_5_, i_6_ << 2, var_aa, i, i_1_);
                     for (Class348_Sub35 class348_sub35 = (Class348_Sub35) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1995(i_2_ ^ 0x59b4); class348_sub35 != null; class348_sub35 = (Class348_Sub35) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1990((byte) 92)) {
                         int i_9_ = class348_sub35.anInt6976;
@@ -252,7 +252,7 @@ final class Class107 {
         Class14_Sub3.anInt8630 = is[2];
         Class248.anInt3202 = is[0];
         Class27.anInt394 = is[3];
-        Class239_Sub5.anInt5886 = is[1];
+        Option_Sub5.anInt5886 = is[1];
         if (bool_42_) {
             Class21.aHa326.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, Class129.anInt1879);
             r.method3284(true, Class318_Sub1_Sub5_Sub1.aDouble10120);

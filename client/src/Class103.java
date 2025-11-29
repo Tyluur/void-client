@@ -17,7 +17,7 @@ final class Class103 {
         anInt1609++;
         for (int i_5_ = i_3_; i_0_ >= i_5_; i_5_++) {
             for (int i_6_ = i; i_4_ >= i_6_; i_6_++) {
-                if ((Class348_Sub42_Sub17.anIntArrayArray9678[i_5_][i_6_] == i_1_) && Class239_Sub8.anIntArrayArray5921[i_5_][i_6_] <= 1) return true;
+                if ((Class348_Sub42_Sub17.anIntArrayArray9678[i_5_][i_6_] == i_1_) && Option_Sub8.anIntArrayArray5921[i_5_][i_6_] <= 1) return true;
             }
         }
         return false;

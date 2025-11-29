@@ -8,7 +8,7 @@ final class Class318_Sub9_Sub1 extends Class318_Sub9 {
     static float aFloat8784;
     static int[] anIntArray8785;
     short aShort8786;
-    int anInt8787 = (int) (Class62.method599(-92) / 1000L);
+    int anInt8787 = (int) (Class62.safeTime(-92) / 1000L);
     static int anInt8788;
 
     static final Class57[] method2515(int i) {
@@ -18,7 +18,7 @@ final class Class318_Sub9_Sub1 extends Class318_Sub9 {
             Class57[] class57s = Class19.method286((byte) -107, Class348_Sub23_Sub1.aClass297_8992);
             Class57[] class57s_0_ = new Class57[class57s.length];
             int i_1_ = 0;
-            int i_2_ = Class316.aClass348_Sub51_3959.aClass239_Sub23_7231.method1818(-32350);
+            int i_2_ = Class316.clientOptions.aClass239_Sub23_7231.method1818(-32350);
             while_108_:
             for (int i_3_ = 0; class57s.length > i_3_; i_3_++) {
                 Class57 class57 = class57s[i_3_];

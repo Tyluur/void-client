@@ -28,8 +28,8 @@ final class Class90 {
         Class348_Sub40_Sub22.method3111(125, i_0_);
         Class299.aClass348_Sub49_Sub2_3813.startBitAccess(-122);
         for (int i_3_ = 0; i_3_ < 4; i_3_++) {
-            for (int i_4_ = 0; (Class367_Sub4.anInt7319 >> 3 > i_4_); i_4_++) {
-                for (int i_5_ = 0; (i_5_ < Class348_Sub40_Sub3.anInt9109 >> 3); i_5_++) {
+            for (int i_4_ = 0; (Class367_Sub4.mapLength >> 3 > i_4_); i_4_++) {
+                for (int i_5_ = 0; (i_5_ < Class348_Sub40_Sub3.mapWidth >> 3); i_5_++) {
                     int i_6_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
                     if (i_6_ != 1) Class62.anIntArrayArrayArray1116[i_3_][i_4_][i_5_] = -1;
                     else Class62.anIntArrayArrayArray1116[i_3_][i_4_][i_5_] = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 26);
@@ -38,12 +38,12 @@ final class Class90 {
         }
         Class299.aClass348_Sub49_Sub2_3813.stopBitAccess(false);
         int i_7_ = (-Class299.aClass348_Sub49_Sub2_3813.anInt7197 + Class348_Sub40_Sub25.anInt9341) / 16;
-        Class239_Sub6.anIntArrayArray5894 = new int[i_7_][4];
+        Option_Sub6.anIntArrayArray5894 = new int[i_7_][4];
         int i_8_ = 0;
         if (i != 99) method852(-55);
         for (/**/; i_8_ < i_7_; i_8_++) {
             for (int i_9_ = 0; i_9_ < 4; i_9_++)
-                Class239_Sub6.anIntArrayArray5894[i_8_][i_9_] = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
+                Option_Sub6.anIntArrayArray5894[i_8_][i_9_] = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
         }
         Class322.mapNpcs = null;
         Applet_Sub1.mapLocations = new int[i_7_];
@@ -58,8 +58,8 @@ final class Class90 {
         Class347.aByteArrayArray4281 = new byte[i_7_][];
         i_7_ = 0;
         for (int i_10_ = 0; i_10_ < 4; i_10_++) {
-            for (int i_11_ = 0; (Class367_Sub4.anInt7319 >> 3 > i_11_); i_11_++) {
-                for (int i_12_ = 0; i_12_ < Class348_Sub40_Sub3.anInt9109 >> 3; i_12_++) {
+            for (int i_11_ = 0; (Class367_Sub4.mapLength >> 3 > i_11_); i_11_++) {
+                for (int i_12_ = 0; i_12_ < Class348_Sub40_Sub3.mapWidth >> 3; i_12_++) {
                     int i_13_ = (Class62.anIntArrayArrayArray1116[i_10_][i_11_][i_12_]);
                     if (i_13_ != -1) {
                         int i_14_ = i_13_ >> 14 & 0x3ff;

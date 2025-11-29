@@ -28,7 +28,7 @@ final class Class359 {
             else Class112.aClass207_1727 = Class207.method1512(Class21.SPRITES, Class295.anInt3762);
         }
         if (Class281.aFontMetrics_3649 == null) {
-            if (Class104.FONT_INDEX.method421(false, Class20.anInt317)) Class281.aFontMetrics_3649 = Class239_Sub10.getFontMetrics((byte) -89, Class20.anInt317, Class104.FONT_INDEX);
+            if (Class104.FONT_INDEX.method421(false, Class20.anInt317)) Class281.aFontMetrics_3649 = Option_Sub10.getFontMetrics((byte) -89, Class20.anInt317, Class104.FONT_INDEX);
             else bool_0_ = false;
         }
         if (Class5_Sub1_Sub1.aClass207Array9929 == null) {

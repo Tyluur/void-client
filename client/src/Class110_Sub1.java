@@ -49,7 +49,7 @@ final class Class110_Sub1 extends Class110 {
                         continue;
                     }
                 } else i_3_ += 10 + (i_1_ - 97);
-                if (i_3_ != 0 && Class239_Sub3.method1732((byte) i_3_, -129)) stringbuffer.append(Class50_Sub1.method462((byte) i_3_, -128));
+                if (i_3_ != 0 && Option_Sub3.method1732((byte) i_3_, -129)) stringbuffer.append(Class50_Sub1.method462((byte) i_3_, -128));
                 i_0_ += 2;
             } else if (c != 43) stringbuffer.append(c);
             else stringbuffer.append(' ');

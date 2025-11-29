@@ -8,7 +8,7 @@ final class Class115 {
     static int anInt1753;
     static Class318_Sub1[] aClass318_Sub1Array1754;
     static int anInt1755;
-    static int anInt1756;
+    static int hintHeadIconsGroup;
     static int[] anIntArray1757 = {16776960, 16711680, 65280, 65535, 16711935, 16777215};
 
     static final int method1060(int i, byte i_0_) {
