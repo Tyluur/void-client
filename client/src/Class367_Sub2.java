@@ -131,7 +131,7 @@ final class Class367_Sub2 extends Class367 {
                             Class367_Sub3.aBooleanArray7304[i_10_] = Class367_Sub3.aBooleanArray7304[i_10_ - -1];
                         }
                         Class285_Sub1.anInt8493++;
-                        Class126.anInt4985 = Class311.anInt3918;
+                        Class126.anInt4985 = LoadingScreenRenderer.anInt3918;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(ha.aClass351_4571, (Class348_Sub23_Sub2.aClass77_9029), -123);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Option_Sub6.method1745(string, -65));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);

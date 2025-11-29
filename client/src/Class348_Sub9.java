@@ -143,7 +143,7 @@ final class Class348_Sub9 extends Node {
                         }
                         if (i_8_ == 9) {
                             Class339.anInt4198++;
-                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class311.aClass351_3898), (Class348_Sub23_Sub2.aClass77_9029), -107);
+                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((LoadingScreenRenderer.aClass351_3898), (Class348_Sub23_Sub2.aClass77_9029), -107);
                             Class375.method3614(i_9_, i, class46.anInt812, class348_sub47, -19692);
                             Class348_Sub42_Sub14.method3243(119, class348_sub47);
                         }

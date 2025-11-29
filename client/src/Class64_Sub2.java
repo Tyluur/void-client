@@ -25,7 +25,7 @@ final class Class64_Sub2 extends Class64 {
     static int anInt5417;
     private int anInt5418;
     private final ha_Sub3 aHa_Sub3_5419;
-    static String aString5420;
+    static String loadingText;
     static int anInt5421;
     static int anInt5422;
     private short[] aShortArray5423;
@@ -2723,7 +2723,7 @@ final class Class64_Sub2 extends Class64 {
     }
 
     public static void method676(int i) {
-        aString5420 = null;
+        loadingText = null;
         if (i <= 11) method661((byte) -43);
     }
 

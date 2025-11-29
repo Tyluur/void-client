@@ -935,8 +935,8 @@ final class Class325 {
                                 Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
                             }
                             if (r.aBoolean9722) Class341.method2678(-2049);
-                            if (Class311.aClass46_3913 == null || Class108.anInt1656 != 0) break;
-                            Class251.method1916(-9343, Class311.aClass46_3913);
+                            if (LoadingScreenRenderer.aClass46_3913 == null || Class108.anInt1656 != 0) break;
+                            Class251.method1916(-9343, LoadingScreenRenderer.aClass46_3913);
                         }
                     }
                 }

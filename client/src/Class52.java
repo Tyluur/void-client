@@ -63,9 +63,9 @@ final class Class52 implements Interface12 {
     }
 
     // method493
-    static final void update(boolean bool) {
+    static final void update() {
         if (Class328_Sub2.loadStates == null) {
-            Class328_Sub2.loadStates = LoadState.method528(-91);
+            Class328_Sub2.loadStates = LoadState.values(-91);
             Class348_Sub42_Sub15.state = Class328_Sub2.loadStates[0];
             Class283.lastRendererUpdate = Class62.safeTime(-119);
         }
@@ -74,36 +74,36 @@ final class Class52 implements Interface12 {
         LoadState oldState = Class348_Sub42_Sub15.state;
         int essentials = Class164.essentials(-28660);
         if (oldState == Class348_Sub42_Sub15.state) {
-            Class64_Sub2.aString5420 = Class348_Sub42_Sub15.state.aClass274_1012.method2063(Class348_Sub33.language, 544);
-            if (Class348_Sub42_Sub15.state.aBoolean1016) Class251.anInt3236 = (essentials * ((Class348_Sub42_Sub15.state.anInt1021) + -(Class348_Sub42_Sub15.state.anInt1025)) / 100 + (Class348_Sub42_Sub15.state.anInt1025));
-            if (Class348_Sub42_Sub15.state.aBoolean1013) Class64_Sub2.aString5420 += Class251.anInt3236 + "%";
+            Class64_Sub2.loadingText = Class348_Sub42_Sub15.state.aClass274_1012.method2063(Class348_Sub33.language, 544);
+            if (Class348_Sub42_Sub15.state.updatePercentage) Class251.loadPercentage = (essentials * ((Class348_Sub42_Sub15.state.anInt1021) + -(Class348_Sub42_Sub15.state.anInt1025)) / 100 + (Class348_Sub42_Sub15.state.anInt1025));
+            if (Class348_Sub42_Sub15.state.displayPercentage) Class64_Sub2.loadingText += Class251.loadPercentage + "%";
         } else if (Class348_Sub42_Sub15.state == LoadState.COMPLETE) {
             Class51.renderer = null;
-            Class348_Sub49.method3379(2, 3);
+            Class348_Sub49.setStep(2, 3);
         } else {
-            Class64_Sub2.aString5420 = oldState.aClass274_1015.method2063(Class348_Sub33.language, 544);
-            if (Class348_Sub42_Sub15.state.aBoolean1013) Class64_Sub2.aString5420 += oldState.anInt1021 + "%";
-            Class251.anInt3236 = oldState.anInt1021;
-            if (Class348_Sub42_Sub15.state.aBoolean1016 || oldState.aBoolean1016) Class283.lastRendererUpdate = Class62.safeTime(-128);
+            Class64_Sub2.loadingText = oldState.aClass274_1015.method2063(Class348_Sub33.language, 544);
+            if (Class348_Sub42_Sub15.state.displayPercentage) Class64_Sub2.loadingText += oldState.anInt1021 + "%";
+            Class251.loadPercentage = oldState.anInt1021;
+            if (Class348_Sub42_Sub15.state.updatePercentage || oldState.updatePercentage) Class283.lastRendererUpdate = Class62.safeTime(-128);
         }
-        if (bool == true) {
-            if (Class51.renderer != null) {
-                Class51.renderer.method2316((Class348_Sub42_Sub15.state), Class64_Sub2.aString5420, Class251.anInt3236, Class283.lastRendererUpdate, false);
-                if (Class182.loadingScreens != null) {
-                    for (int i_5_ = Class375.anInt4544 - -1; (Class182.loadingScreens.length > i_5_); i_5_++) {
-                        if (Class182.loadingScreens[i_5_].percentage(-19079) >= 100 && Class375.anInt4544 == -1 + i_5_ && Class240.anInt4674 >= 1 && Class51.renderer.method2322(0)) {
-                            try {
-                                Class182.loadingScreens[i_5_].method57(117);
-                            } catch (Exception exception) {
-                                Class182.loadingScreens = null;
-                                break;
-                            }
-                            Class51.renderer.method2321(10559, Class182.loadingScreens[i_5_]);
-                            Class375.anInt4544++;
-                            if ((Class375.anInt4544 >= (-1 + Class182.loadingScreens.length)) && Class182.loadingScreens.length > 1) Class375.anInt4544 = !Class186_Sub1.loadingScreenManager.hasDefault(26) ? -1 : 0;
-                        }
-                    }
+        if (Class51.renderer == null) {
+            return;
+        }
+        Class51.renderer.updateState((Class348_Sub42_Sub15.state), Class64_Sub2.loadingText, Class251.loadPercentage, Class283.lastRendererUpdate, false);
+        if (Class182.loadingScreens == null) {
+            return;
+        }
+        for (int i = Class375.currentScreen - -1; (Class182.loadingScreens.length > i); i++) {
+            if (Class182.loadingScreens[i].percentage(-19079) >= 100 && Class375.currentScreen == -1 + i && Class240.anInt4674 >= 1 && Class51.renderer.method2322(0)) {
+                try {
+                    Class182.loadingScreens[i].init(117);
+                } catch (Exception exception) {
+                    Class182.loadingScreens = null;
+                    break;
                 }
+                Class51.renderer.method2321(10559, Class182.loadingScreens[i]);
+                Class375.currentScreen++;
+                if ((Class375.currentScreen >= (-1 + Class182.loadingScreens.length)) && Class182.loadingScreens.length > 1) Class375.currentScreen = !Class186_Sub1.loadingScreenManager.hasDefault(26) ? -1 : 0;
             }
         }
     }

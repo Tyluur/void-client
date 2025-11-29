@@ -76,7 +76,7 @@ final class Class348_Sub41 extends Node {
             Class327.anInt4095 = i;
             Class167.anInt2204 = QuickChatPhraseTypeList.anInt4372;
             if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1) Class167.anInt2204 = 0;
-            Class348_Sub49.method3379(2, i_17_);
+            Class348_Sub49.setStep(2, i_17_);
             Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3495.method2063(Class348_Sub33.language, 544), 2, Class348_Sub8.aHa6654);
             int i_18_ = za_Sub2.regionTileX;
             int i_19_ = Class90.regionTileY;

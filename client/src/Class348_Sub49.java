@@ -364,7 +364,7 @@ class Class348_Sub49 extends Node {
     final int method3363(int i) {
         this.anInt7197 += 3;
         anInt7144++;
-        if (i != -13309) method3379(94, 83);
+        if (i != -13309) setStep(94, 83);
         return (((this.aByteArray7154[this.anInt7197 - 3]) & 0xff) + (((this.aByteArray7154[-2 + this.anInt7197]) << 8 & 0xff00) + ((this.aByteArray7154[-1 + this.anInt7197]) << 16 & 0xff0000)));
     }
 
@@ -512,7 +512,8 @@ class Class348_Sub49 extends Node {
         if (bool != false) this.anInt7197 = -121;
     }
 
-    static final void method3379(int i, int i_71_) {
+    // method3379
+    static final void setStep(int i, int i_71_) {
         anInt7201++;
         if (i_71_ != Class240.anInt4674) {
             if (i_71_ == 13) {

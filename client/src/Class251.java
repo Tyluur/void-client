@@ -10,7 +10,7 @@ final class Class251 {
     static int anInt3233;
     static int anInt3234 = 0;
     static int anInt3235;
-    static int anInt3236;
+    static int loadPercentage; // anInt3236
 
     public static void method1912(int i) {
         if (i == 8549) aClass351_3232 = null;

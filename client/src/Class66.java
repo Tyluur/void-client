@@ -1189,7 +1189,7 @@ final class Class66 {
                     Class64_Sub3.aString5600 = string;
                     Class186.aString2496 = string_142_;
                     RuntimeException_Sub1.anInt4596 = i_143_;
-                    Class348_Sub49.method3379(2, 6);
+                    Class348_Sub49.setStep(2, 6);
                     return;
                 }
                 return;
@@ -1250,7 +1250,7 @@ final class Class66 {
                         Class348_Sub40_Sub8.aClass238_9165 = null;
                     }
                     RuntimeException_Sub1.anInt4596 = i_144_;
-                    Class348_Sub49.method3379(2, 9);
+                    Class348_Sub49.setStep(2, 9);
                     return;
                 }
                 return;
@@ -1270,7 +1270,7 @@ final class Class66 {
                     }
                     Class64_Sub3.aString5600 = string;
                     Class186.aString2496 = string_145_;
-                    Class348_Sub49.method3379(2, 5);
+                    Class348_Sub49.setStep(2, 5);
                     return;
                 }
                 return;

@@ -34,7 +34,7 @@ final class Class51 {
     boolean aBoolean894;
     int anInt895;
     boolean aBoolean896;
-    static Class311 renderer;
+    static LoadingScreenRenderer renderer;
     static int anInt898;
     static int anInt899;
     private int anInt900;

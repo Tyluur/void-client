@@ -22,7 +22,7 @@ final class Class348_Sub32 extends Node {
     private final Class123 aClass123_6943;
     private final int anInt6944;
     private final Interface8 anInterface8_6945;
-    static Thread aThread6946;
+    static Thread rendererThread;
     private float[][] aFloatArrayArray6947;
     private final int anInt6948;
     private float[][] aFloatArrayArray6949;
@@ -135,7 +135,7 @@ final class Class348_Sub32 extends Node {
     public static void method3020(byte i) {
         if (i == -64) {
             WORLD_MAP = null;
-            aThread6946 = null;
+            rendererThread = null;
         }
     }
 

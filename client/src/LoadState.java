@@ -6,10 +6,10 @@ import java.awt.*;
 
 final class LoadState {
     Class274 aClass274_1012;
-    boolean aBoolean1013;
+    boolean displayPercentage; // aBoolean1013
     static int anInt1014;
     Class274 aClass274_1015;
-    boolean aBoolean1016;
+    boolean updatePercentage; // aBoolean1016
     private final int anInt1017;
     static LoadState WAIT_FOR_MEMORY = new LoadState(0, Class274.aClass274_3499, Class274.aClass274_3499, 0, 1);
     static int anInt1019;
@@ -103,7 +103,8 @@ final class LoadState {
         this(i, class274, class274_1_, i_2_, i_3_, true, false);
     }
 
-    static final LoadState[] method528(int i) {
+    // method528
+    static final LoadState[] values(int i) {
         anInt1014++;
         int i_4_ = 108 / ((i - 34) / 55);
         return (new LoadState[]{WAIT_FOR_MEMORY, INIT_LOADING_SCREEN_ARCHIVES, FETCH_LOADING_SCREEN_RESOURCES, INIT_FONT_INFO, LOAD_FONTS, FETCH_FONTS, CREATE_COLLISION_MAPS, OPEN_JS5_GROUPS, GET_JS5_INDEXES, PLAY_THEME_MUSIC, SETUP_LIB_PATH, DOWNLOAD_STUFF, SETUP_CONFIG_DECODERS, A_LOAD_STATE_13, SETUP_STATIC_SPRITES, SETUP_WORLD_MAP, SETUP_VARC_SYSTEM, LOAD_LOGIN_WINDOW, SHOW_LOGIN_WINDOW, CLEANUP, COMPLETE});
@@ -116,8 +117,8 @@ final class LoadState {
             anInt1017 = i;
             this.anInt1025 = i_6_;
             this.aClass274_1015 = class274_5_;
-            this.aBoolean1016 = bool_8_;
-            this.aBoolean1013 = bool;
+            this.updatePercentage = bool_8_;
+            this.displayPercentage = bool;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("jj.<init>(" + i + ',' + (class274 != null ? "{...}" : "null") + ',' + (class274_5_ != null ? "{...}" : "null") + ',' + i_6_ + ',' + i_7_ + ',' + bool + ',' + bool_8_ + ')'));
         }

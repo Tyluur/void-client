@@ -34,7 +34,7 @@ final class Class195 implements LoadingScreen {
         if (i <= -55) Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144 = new Class348_Sub42_Sub12((Class274.aClass274_3487.method2063(Class348_Sub33.language, 544)), "", Class362.anInt4458, 1004, -1, 0L, 0, 0, true, false, 0L, true);
     }
 
-    public final void method57(int i) {
+    public final void init(int i) {
         anInt5004++;
         if (aHa5010 != Class348_Sub8.aHa6654) {
             aHa5010 = Class348_Sub8.aHa6654;

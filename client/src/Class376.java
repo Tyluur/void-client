@@ -43,7 +43,7 @@ final class Class376 implements Runnable {
             LoadingScreen[] loadingScreens = Class182.loadingScreens;
             for (int i_0_ = 0; i_0_ < loadingScreens.length; i_0_++) {
                 LoadingScreen loadingScreen = loadingScreens[i_0_];
-                loadingScreen.method57(108);
+                loadingScreen.init(108);
             }
         }
         if (i != 12639) anInt4559 = 72;

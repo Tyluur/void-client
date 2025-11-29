@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class311 implements Runnable {
+final class LoadingScreenRenderer implements Runnable {
     static int anInt3897;
     static Class351 aClass351_3898 = new Class351(11, 8);
     static int anInt3899;
@@ -34,13 +34,14 @@ final class Class311 implements Runnable {
         if (aLoadState_3916 == null) return 0;
         if (i < 103) aLong3917 = -58L;
         int i_0_ = aLoadState_3916.method525(-118);
-        if (aLoadState_3916.aBoolean1016 && (anInt3915 < aLoadState_3916.anInt1021)) return 1 + anInt3915;
+        if (aLoadState_3916.updatePercentage && (anInt3915 < aLoadState_3916.anInt1021)) return 1 + anInt3915;
         if (i_0_ < 0 || -1 + Class328_Sub2.loadStates.length <= i_0_) return 100;
         if (aLoadState_3916.anInt1025 == anInt3915) return aLoadState_3916.anInt1021;
         return aLoadState_3916.anInt1025;
     }
 
-    final synchronized void method2316(LoadState loadState, String string, int i, long l, boolean bool) {
+    // method2316
+    final synchronized void updateState(LoadState loadState, String string, int i, long l, boolean bool) {
         try {
             if (bool != false) method2318(9);
             aString3921 = string;
@@ -181,7 +182,8 @@ final class Class311 implements Runnable {
         aBoolean3908 = true;
     }
 
-    public Class311() {
+    // Class311
+    public LoadingScreenRenderer() {
         /* empty */
     }
 }

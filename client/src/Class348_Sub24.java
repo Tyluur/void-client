@@ -16,7 +16,7 @@ final class Class348_Sub24 extends Node {
 
     static final void method2991(int i) {
         if (Class289.anInt3699 > 1) {
-            Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918;
+            Class348_Sub40_Sub23.anInt9313 = LoadingScreenRenderer.anInt3918;
             Class289.anInt3699--;
         }
         anInt6874++;
@@ -308,11 +308,11 @@ final class Class348_Sub24 extends Node {
                             Node.anInt4292 += 20;
                             if (Node.anInt4292 >= 400) Option_Sub20.anInt6048 = 0;
                         }
-                        if (Class311.aClass46_3913 != null) {
+                        if (LoadingScreenRenderer.aClass46_3913 != null) {
                             Class108.anInt1656++;
                             if (Class108.anInt1656 >= 15) {
-                                Class251.method1916(-9343, Class311.aClass46_3913);
-                                Class311.aClass46_3913 = null;
+                                Class251.method1916(-9343, LoadingScreenRenderer.aClass46_3913);
+                                LoadingScreenRenderer.aClass46_3913 = null;
                             }
                         }
                         Class318_Sub1_Sub3_Sub4.aClass46_10336 = null;
@@ -323,7 +323,7 @@ final class Class348_Sub24 extends Node {
                         Class175.method1343(-1, null, 1, -1);
                         if (!r.aBoolean9722) Class362.anInt4458 = -1;
                         Class216.method1583((byte) -73);
-                        Class311.anInt3918++;
+                        LoadingScreenRenderer.anInt3918++;
                         if (Class237.aBoolean3103) {
                             Class98.anInt1568++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((ha_Sub2.aClass351_7715), (Class348_Sub23_Sub2.aClass77_9029), i + -11525);

@@ -362,7 +362,7 @@ public final class client extends Applet_Sub1 {
         LoadingScreenManager.method1047(1);
         Class160.method1254((byte) 62);
         Class75.method746();
-        Class311.method2317((byte) 79);
+        LoadingScreenRenderer.method2317((byte) 79);
         Class301.method2281(1);
         Class140.method1169(false);
         Class176.method1351(1);
@@ -1489,7 +1489,7 @@ public final class client extends Applet_Sub1 {
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray836;
                                 Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
                             }
-                            class46.anInt726 = Class311.anInt3918;
+                            class46.anInt726 = LoadingScreenRenderer.anInt3918;
                             if (class46.anObjectArray822 != null) {
                                 for (int i_89_ = 0; i_89_ < ClientScript.anInt9699; i_89_++) {
                                     Class348_Sub36 class348_sub36 = new Class348_Sub36();
@@ -1591,7 +1591,7 @@ public final class client extends Applet_Sub1 {
     private final void method113(byte i) {
         if (Class240.anInt4674 == 7 && Class225.anInt2955 == 0) {
             if (Class289.anInt3699 > 1) {
-                Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918;
+                Class348_Sub40_Sub23.anInt9313 = LoadingScreenRenderer.anInt3918;
                 Class289.anInt3699--;
             }
             if (!Class5_Sub1.aBoolean8335) Class64_Sub2.method661((byte) 111);
@@ -1604,7 +1604,7 @@ public final class client extends Applet_Sub1 {
         Class5_Sub2.method198(null, false, -1, -1);
         Class175.method1343(-1, null, 1, -1);
         Class216.method1583((byte) -73);
-        Class311.anInt3918++;
+        LoadingScreenRenderer.anInt3918++;
         for (int i_96_ = 0; Class348_Sub32.anInt6930 > i_96_; i_96_++) {
             Npc npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_96_].aNpc_6859);
             if (npc != null) {
@@ -1769,7 +1769,7 @@ public final class client extends Applet_Sub1 {
             }
             if (Class348_Sub42_Sub16_Sub2.method3263(true)) Class38.method363(125);
             if (Class139.method1167(Class240.anInt4674, (byte) -51)) {
-                Class52.update(true);
+                Class52.update();
                 Class94.method867(true);
             } else if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -120)) Canvas_Sub1.method123(0);
             if (i < 32) aClass262_5185 = null;

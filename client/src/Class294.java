@@ -140,7 +140,7 @@ final class Class294 implements LoadingScreen {
         return 0;
     }
 
-    public final void method57(int i) {
+    public final void init(int i) {
         anInt5043++;
         if (i <= 84) anInt5023 = -93;
     }

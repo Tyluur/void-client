@@ -31,9 +31,9 @@ final class Class152 {
         if (i != 3) method1217(-39, null);
         anInt2078++;
         if (Class240.anInt4674 != 9) {
-            if (Class240.anInt4674 == 5 || Class240.anInt4674 == 6) Class348_Sub49.method3379(2, 3);
-            else if (Class240.anInt4674 == 12) Class348_Sub49.method3379(2, 3);
-        } else Class348_Sub49.method3379(2, 5);
+            if (Class240.anInt4674 == 5 || Class240.anInt4674 == 6) Class348_Sub49.setStep(2, 3);
+            else if (Class240.anInt4674 == 12) Class348_Sub49.setStep(2, 3);
+        } else Class348_Sub49.setStep(2, 5);
     }
 
     public static void method1216(byte i) {

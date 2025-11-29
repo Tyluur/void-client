@@ -28,7 +28,7 @@ final class Class130_Sub1 extends Class130 {
     }
 
     static final void method1134(int i) {
-        Class348_Sub49.method3379(2, 11);
+        Class348_Sub49.setStep(2, 11);
         anInt5802++;
         if (i < 28) aClass144_5800 = null;
         Class301.method2282(-12648);
@@ -87,7 +87,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub42.anInt7064 = 0;
         Class64_Sub2.anInt5468 = 0;
         Class318_Sub1_Sub4_Sub1.anInt10089 = 0;
-        Class311.anInt3899 = 0;
+        LoadingScreenRenderer.anInt3899 = 0;
         ha_Sub2.anInt7624 = 0;
         Option_Sub2.anInt5851 = 0;
         Class286_Sub5.anInt6261 = 0;
@@ -256,7 +256,7 @@ final class Class130_Sub1 extends Class130 {
         CursorTypeList.anInt2184 = 0;
         client.anInt5178 = 0;
         Class287.anInt3685 = 0;
-        Class311.anInt3911 = 0;
+        LoadingScreenRenderer.anInt3911 = 0;
         Class64_Sub3.anInt5615 = 0;
         Option_Sub8.anInt5917 = 0;
         Class114.anInt1748 = 0;
@@ -384,7 +384,7 @@ final class Class130_Sub1 extends Class130 {
         Class373_Sub2.anInt7439 = 0;
         Class64_Sub2.anInt5405 = 0;
         Option_Sub4.anInt5875 = 0;
-        Class311.anInt3901 = 0;
+        LoadingScreenRenderer.anInt3901 = 0;
         Class348_Sub40_Sub3.anInt9106 = 0;
         Class318_Sub1_Sub5_Sub2.anInt10166 = 0;
         ha_Sub2.anInt7603 = 0;
@@ -713,7 +713,7 @@ final class Class130_Sub1 extends Class130 {
         Class14_Sub1.anInt8613 = 0;
         Class325.anInt4074 = 0;
         Js5TextureSource.anInt4614 = 0;
-        Class311.anInt3897 = 0;
+        LoadingScreenRenderer.anInt3897 = 0;
         Class101_Sub1.anInt5670 = 0;
         Option_Sub10.anInt5941 = 0;
         Class318_Sub1_Sub3_Sub4.anInt10364 = 0;
@@ -1166,7 +1166,7 @@ final class Class130_Sub1 extends Class130 {
         Class97.anInt1552 = 0;
         ha_Sub3.anInt7992 = 0;
         ha_Sub2.anInt7692 = 0;
-        Class311.anInt3900 = 0;
+        LoadingScreenRenderer.anInt3900 = 0;
         ha_Sub2.anInt7719 = 0;
         Class203.anInt2673 = 0;
         Class348_Sub16_Sub3.anInt8943 = 0;
@@ -1257,7 +1257,7 @@ final class Class130_Sub1 extends Class130 {
         Class37.anInt493 = 0;
         Class286_Sub5.anInt6258 = 0;
         Class377.anInt9882 = 0;
-        Class311.anInt3906 = 0;
+        LoadingScreenRenderer.anInt3906 = 0;
         Class286_Sub7.anInt6282 = 0;
         Class315.anInt3949 = 0;
         Index.anInt644 = 0;
@@ -1383,7 +1383,7 @@ final class Class130_Sub1 extends Class130 {
         Class34.anInt479 = 0;
         Class348_Sub45_Sub2.anInt9731 = 0;
         Class348_Sub16_Sub3.anInt8931 = 0;
-        Class311.anInt3909 = 0;
+        LoadingScreenRenderer.anInt3909 = 0;
         Class112.anInt1737 = 0;
         Class258.anInt4854 = 0;
         Class93.anInt1529 = 0;
@@ -1894,7 +1894,7 @@ final class Class130_Sub1 extends Class130 {
         Class2.anInt116 = 0;
         Class88.anInt1496 = 0;
         Class231.anInt2991 = 0;
-        Class311.anInt3912 = 0;
+        LoadingScreenRenderer.anInt3912 = 0;
         InputStream_Sub1.anInt72 = 0;
         Class318_Sub2.anInt6398 = 0;
         Class348_Sub42_Sub11.anInt9584 = 0;
@@ -2255,7 +2255,7 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub2.anInt5500 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10262 = 0;
         Class299_Sub1_Sub2.anInt8702 = 0;
-        Class311.anInt3902 = 0;
+        LoadingScreenRenderer.anInt3902 = 0;
         Class124.anInt1819 = 0;
         ha_Sub2.anInt7644 = 0;
         Class101_Sub3.anInt5774 = 0;
@@ -2975,7 +2975,7 @@ final class Class130_Sub1 extends Class130 {
         Class248.anInt3191 = 0;
         Option_Sub3.anInt5864 = 0;
         Class300.anInt3816 = 0;
-        Class311.anInt3904 = 0;
+        LoadingScreenRenderer.anInt3904 = 0;
         Class251.anInt3231 = 0;
         ClientScript.anInt9698 = 0;
         Class318_Sub1_Sub2.anInt8733 = 0;
@@ -3535,7 +3535,7 @@ final class Class130_Sub1 extends Class130 {
         Class10.anInt182 = 0;
         FontRenderer.anInt4056 = 0;
         Class348_Sub40_Sub36.anInt9454 = 0;
-        Class311.anInt3905 = 0;
+        LoadingScreenRenderer.anInt3905 = 0;
         Class348_Sub1_Sub1.anInt8804 = 0;
         Class306.anInt3876 = 0;
         ha_Sub3.anInt7928 = 0;
@@ -3750,7 +3750,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub40_Sub37.anInt9462 = 0;
         Class356.anInt4386 = 0;
         Class348_Sub42_Sub3.anInt9506 = 0;
-        Class311.anInt3903 = 0;
+        LoadingScreenRenderer.anInt3903 = 0;
         Option_Sub23.anInt6083 = 0;
         Option_Sub20.anInt6051 = 0;
         Class258_Sub3.anInt8541 = 0;

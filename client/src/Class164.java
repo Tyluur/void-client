@@ -87,7 +87,7 @@ final class Class164 {
             }
             TimedVarDomain.method1311(5139, Class348_Sub8.aHa6654);
             Class369.method3568(Class348_Sub8.aHa6654, 4);
-            Class348_Sub49.method3379(2, 1);
+            Class348_Sub49.setStep(2, 1);
         }
         if (Class348_Sub42_Sub15.state == LoadState.CREATE_COLLISION_MAPS) {
             for (int i_7_ = 0; i_7_ < 4; i_7_++)
@@ -142,7 +142,7 @@ final class Class164 {
         if (LoadState.PLAY_THEME_MUSIC == Class348_Sub42_Sub15.state) {
             if (Class345.anInt4270 == -1) Class345.anInt4270 = Class59_Sub2_Sub1.MUSIC.method417("scape main", 0);
             r_Sub1.method3290(56);
-            Class348_Sub49.method3379(2, 2);
+            Class348_Sub49.setStep(2, 2);
         }
         if (LoadState.SETUP_LIB_PATH == Class348_Sub42_Sub15.state) Class30.method323(Class126.NATIVE_LIBRARIES, Class348_Sub23_Sub1.aClass297_8992, (byte) 95);
         if (LoadState.DOWNLOAD_STUFF == Class348_Sub42_Sub15.state) {
@@ -250,7 +250,7 @@ final class Class164 {
         if (Class348_Sub42_Sub15.state == LoadState.CLEANUP) {
             Class51.renderer.method2319((byte) -56);
             try {
-                Class348_Sub32.aThread6946.join();
+                Class348_Sub32.rendererThread.join();
             } catch (InterruptedException interruptedexception) {
                 return 0;
             }
@@ -258,7 +258,7 @@ final class Class164 {
             Class348_Sub40_Sub17_Sub1.LOADING_SCREENS = null;
             Class51.renderer = null;
             Class182.loadingScreens = null;
-            Class348_Sub32.aThread6946 = null;
+            Class348_Sub32.rendererThread = null;
             Class286_Sub7.LOADING_SPRITES = null;
             ha_Sub3.method3886(i + 28556);
             Class348_Sub23_Sub2.aBoolean9038 = Class316.clientOptions.safeMode.getValue(-32350) == 1;

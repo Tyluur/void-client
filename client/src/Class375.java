@@ -8,7 +8,7 @@ final class Class375 {
     static int anInt4541;
     static boolean aBoolean4542 = false;
     static Class60 aClass60_4543 = new Class60(8);
-    static int anInt4544 = -1;
+    static int currentScreen = -1;
     static int anInt4545 = -1;
 
     static final void method3612(int i, Class348_Sub49_Sub2 class348_sub49_sub2) {

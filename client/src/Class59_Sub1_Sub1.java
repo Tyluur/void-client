@@ -19,10 +19,10 @@ final class Class59_Sub1_Sub1 extends Class59_Sub1 {
         anInt8656++;
         if (Class51.renderer != null) Class51.renderer.method2319((byte) -75);
         if (bool == false) {
-            if (Class348_Sub32.aThread6946 != null) {
+            if (Class348_Sub32.rendererThread != null) {
                 for (; ; ) {
                     try {
-                        Class348_Sub32.aThread6946.join();
+                        Class348_Sub32.rendererThread.join();
                         break;
                     } catch (InterruptedException interruptedexception) {
                         /* empty */

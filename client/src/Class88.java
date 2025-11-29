@@ -342,7 +342,7 @@ final class Class88 {
                             Class225.anInt2955 = 0;
                             Class14_Sub4.method254(2, (byte) -92);
                             Option_Sub19.method1804(8839);
-                            Class348_Sub49.method3379(2, 7);
+                            Class348_Sub49.setStep(2, 7);
                             Class348_Sub3.aClass114_6584 = null;
                             return;
                         }
