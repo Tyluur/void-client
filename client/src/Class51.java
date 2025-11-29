@@ -70,7 +70,7 @@ final class Class51 {
     int anInt930;
     boolean aBoolean931;
     static String[] aStringArray932 = new String[100];
-    Class263 aClass263_933;
+    ObjectTypeList aObjectTypeList_933;
     private int anInt934;
     private int anInt935;
     int anInt936;
@@ -108,7 +108,7 @@ final class Class51 {
         }
         for (int i_0_ = 0; i_0_ < this.anIntArray945.length; i_0_++) {
             if (this.anIntArray945[i_0_] != -1) {
-                Class51 class51_1_ = this.aClass263_933.method2005(0, this.anIntArray945[i_0_]);
+                Class51 class51_1_ = this.aObjectTypeList_933.method2005(0, this.anIntArray945[i_0_]);
                 if (class51_1_.anInt887 != -1 || class51_1_.anIntArray904 != null) return true;
             }
         }
@@ -140,8 +140,8 @@ final class Class51 {
             }
             if (bool) i_11_ |= 0x40000;
             Class2 class2;
-            synchronized (this.aClass263_933.aClass60_3361) {
-                class2 = (Class2) this.aClass263_933.aClass60_3361.method583(l, i_10_ + -25);
+            synchronized (this.aObjectTypeList_933.aClass60_3361) {
+                class2 = (Class2) this.aObjectTypeList_933.aClass60_3361.method583(l, i_10_ + -25);
             }
             Class64 class64 = class2 == null ? null : class2.aClass64_119;
             r var_r = null;
@@ -157,8 +157,8 @@ final class Class51 {
                 class2 = new Class2();
                 class2.aClass64_119 = class64;
                 class2.aR118 = var_r;
-                synchronized (this.aClass263_933.aClass60_3361) {
-                    this.aClass263_933.aClass60_3361.method582(class2, l, (byte) -120);
+                synchronized (this.aObjectTypeList_933.aClass60_3361) {
+                    this.aObjectTypeList_933.aClass60_3361.method582(class2, l, (byte) -120);
                 }
             } else {
                 class64 = class2.aClass64_119;
@@ -213,8 +213,8 @@ final class Class51 {
             long l = var_ha.anInt4567;
             for (int i_24_ = 0; i_23_ > i_24_; i_24_++)
                 l = l * 67783L + (long) anIntArrayArray907[i_21_][i_24_];
-            synchronized (this.aClass263_933.aClass60_3360) {
-                class64 = (Class64) this.aClass263_933.aClass60_3360.method583(l, 78);
+            synchronized (this.aObjectTypeList_933.aClass60_3360) {
+                class64 = (Class64) this.aObjectTypeList_933.aClass60_3360.method583(l, 78);
             }
             if (class64 != null) {
                 if (i_18_ != class64.WA()) i_17_ |= 0x1000;
@@ -226,8 +226,8 @@ final class Class51 {
                 Class124 class124 = null;
                 synchronized (Class341.aClass124Array4236) {
                     for (int i_26_ = 0; i_26_ < i_23_; i_26_++) {
-                        synchronized (this.aClass263_933.aIndex_3345) {
-                            class124 = Class300.method2277(0, (this.aClass263_933.aIndex_3345), (0xffff & (anIntArrayArray907[i_21_][i_26_])), -1);
+                        synchronized (this.aObjectTypeList_933.aIndex_3345) {
+                            class124 = Class300.method2277(0, (this.aObjectTypeList_933.aIndex_3345), (0xffff & (anIntArrayArray907[i_21_][i_26_])), -1);
                         }
                         if (class124 == null) return null;
                         if (class124.anInt1830 < 13) class124.method1092(2, 96);
@@ -235,9 +235,9 @@ final class Class51 {
                     }
                     if (i_23_ > 1) class124 = new Class124(Class341.aClass124Array4236, i_23_);
                 }
-                class64 = var_ha.method3625(class124, i_25_, (this.aClass263_933.anInt3363), i_18_, i_19_);
-                synchronized (this.aClass263_933.aClass60_3360) {
-                    this.aClass263_933.aClass60_3360.method582(class64, l, (byte) -95);
+                class64 = var_ha.method3625(class124, i_25_, (this.aObjectTypeList_933.anInt3363), i_18_, i_19_);
+                synchronized (this.aObjectTypeList_933.aClass60_3360) {
+                    this.aObjectTypeList_933.aClass60_3360.method582(class64, l, (byte) -95);
                 }
             }
         }
@@ -275,11 +275,11 @@ final class Class51 {
         if (i_30_ != -31076) return false;
         anInt901++;
         if (anIntArrayArray907 == null) return true;
-        synchronized (this.aClass263_933.aIndex_3345) {
+        synchronized (this.aObjectTypeList_933.aIndex_3345) {
             for (int i_31_ = 0; aByteArray885.length > i_31_; i_31_++) {
                 if (aByteArray885[i_31_] == i) {
                     for (int i_32_ = 0; (anIntArrayArray907[i_31_].length > i_32_); i_32_++) {
-                        if (!this.aClass263_933.aIndex_3345.method420(i_30_ ^ 0x5061, anIntArrayArray907[i_31_][i_32_], 0)) return false;
+                        if (!this.aObjectTypeList_933.aIndex_3345.method420(i_30_ ^ 0x5061, anIntArrayArray907[i_31_][i_32_], 0)) return false;
                     }
                     return true;
                 }
@@ -308,9 +308,9 @@ final class Class51 {
         if (i_34_ < 0 || -1 + this.anIntArray945.length <= i_34_ || this.anIntArray945[i_34_] == -1) {
             int i_35_ = (this.anIntArray945[-1 + this.anIntArray945.length]);
             if (i_35_ == -1) return null;
-            return this.aClass263_933.method2005(0, i_35_);
+            return this.aObjectTypeList_933.method2005(0, i_35_);
         }
-        return this.aClass263_933.method2005(i + -47, this.anIntArray945[i_34_]);
+        return this.aObjectTypeList_933.method2005(i + -47, this.anIntArray945[i_34_]);
     }
 
     final boolean method481(byte i, int i_36_) {
@@ -329,7 +329,7 @@ final class Class51 {
     private final void method482(Class348_Sub49 class348_sub49, int i, byte i_38_) {
         anInt960++;
         if (i == 1 || i == 5) {
-            if (i == 5 && this.aClass263_933.aBoolean3355) method484(class348_sub49, -528);
+            if (i == 5 && this.aObjectTypeList_933.aBoolean3355) method484(class348_sub49, -528);
             int i_59_ = class348_sub49.readUnsignedByte(255);
             anIntArrayArray907 = new int[i_59_][];
             aByteArray885 = new byte[i_59_];
@@ -340,7 +340,7 @@ final class Class51 {
                 for (int i_62_ = 0; i_62_ < i_61_; i_62_++)
                     anIntArrayArray907[i_60_][i_62_] = class348_sub49.readUnsignedShort(842397944);
             }
-            if (i == 5 && !this.aClass263_933.aBoolean3355) method484(class348_sub49, -528);
+            if (i == 5 && !this.aObjectTypeList_933.aBoolean3355) method484(class348_sub49, -528);
         } else if (i == 2) this.aString884 = class348_sub49.readString((byte) 121);
         else if (i == 14) this.anInt961 = class348_sub49.readUnsignedByte(255);
         else if (i != 15) {
@@ -445,7 +445,7 @@ final class Class51 {
                                                                                     } else if (i != 107) {
                                                                                         if (i >= 150 && i < 155) {
                                                                                             this.aStringArray913[i + -150] = class348_sub49.readString((byte) -41);
-                                                                                            if (!this.aClass263_933.aBoolean3359) this.aStringArray913[-150 + i] = null;
+                                                                                            if (!this.aObjectTypeList_933.aBoolean3359) this.aStringArray913[-150 + i] = null;
                                                                                         } else if (i == 160) {
                                                                                             int i_46_ = class348_sub49.readUnsignedByte(255);
                                                                                             this.anIntArray917 = new int[i_46_];
@@ -473,7 +473,7 @@ final class Class51 {
                                                                                                                 } else if (i == 249) {
                                                                                                                     int i_42_ = class348_sub49.readUnsignedByte(255);
                                                                                                                     if (aClass356_881 == null) {
-                                                                                                                        int i_43_ = Class33.method340(i_42_, (byte) 108);
+                                                                                                                        int i_43_ = EnumTypeList.method340(i_42_, (byte) 108);
                                                                                                                         aClass356_881 = new Class356(i_43_);
                                                                                                                     }
                                                                                                                     for (int i_44_ = 0; i_44_ < i_42_; i_44_++) {
@@ -546,15 +546,15 @@ final class Class51 {
             } else i_67_ |= 0x7;
             if (i_64_ == 10 && i_66_ > 3) i_67_ |= 0x5;
             Class64 class64;
-            synchronized (this.aClass263_933.aClass60_3362) {
-                class64 = (Class64) this.aClass263_933.aClass60_3362.method583(l, 100);
+            synchronized (this.aObjectTypeList_933.aClass60_3362) {
+                class64 = (Class64) this.aObjectTypeList_933.aClass60_3362.method583(l, 100);
             }
             if (class64 == null || var_ha.method3667(class64.ua(), i_67_) != 0) {
                 if (class64 != null) i_67_ = var_ha.method3679(i_67_, class64.ua());
                 class64 = method477(i_66_, var_ha, i_64_, -125, i_67_);
                 if (class64 == null) return null;
-                synchronized (this.aClass263_933.aClass60_3362) {
-                    this.aClass263_933.aClass60_3362.method582(class64, l, (byte) -127);
+                synchronized (this.aObjectTypeList_933.aClass60_3362) {
+                    this.aObjectTypeList_933.aClass60_3362.method582(class64, l, (byte) -127);
                 }
             }
             boolean bool = false;
@@ -607,10 +607,10 @@ final class Class51 {
         if (i != 9773) method485(-109);
         if (anIntArrayArray907 == null) return true;
         boolean bool = true;
-        synchronized (this.aClass263_933.aIndex_3345) {
+        synchronized (this.aObjectTypeList_933.aIndex_3345) {
             for (int i_77_ = 0; i_77_ < anIntArrayArray907.length; i_77_++) {
                 for (int i_78_ = 0; (anIntArrayArray907[i_77_].length > i_78_); i_78_++)
-                    bool &= (this.aClass263_933.aIndex_3345.method420(-10499, anIntArrayArray907[i_77_][i_78_], 0));
+                    bool &= (this.aObjectTypeList_933.aIndex_3345.method420(-10499, anIntArrayArray907[i_77_][i_78_], 0));
             }
         }
         return bool;

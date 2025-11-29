@@ -47,7 +47,7 @@ class Class59_Sub1 extends Class59 {
         anInt5277++;
         if (i_4_ < i && !Class192.method1436(i_4_ + -23, i)) throw new IllegalArgumentException("");
         if (i_5_ > 0 && !Class192.method1436(56, i_5_)) throw new IllegalArgumentException("");
-        int i_7_ = Class183.method1382(i_2_, -6409);
+        int i_7_ = FloorUnderlayTypeList.method1382(i_2_, -6409);
         int i_8_ = 0;
         int i_9_ = Math.min(i_5_, i);
         int i_10_ = i >> 1;
@@ -157,7 +157,7 @@ class Class59_Sub1 extends Class59 {
         anInt5286++;
         if (i != Class363.aString4461.length()) {
             Applet_Sub1.method94("--> " + Class363.aString4461, 110);
-            Class82.method812(Class363.aString4461, false, bool, (byte) -79);
+            VarcstrTypeList.method812(Class363.aString4461, false, bool, (byte) -79);
             Class348_Sub38.anInt7006 = 0;
             Class363.aString4461 = "";
             Class260.anInt3312 = 0;

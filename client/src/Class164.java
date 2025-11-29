@@ -44,7 +44,7 @@ final class Class164 {
             }
         }
         if (Class56.aClass56_1023 == Class348_Sub42_Sub15.aClass56_9660) {
-            if (Class175.aClass340_2327 == null) Class175.aClass340_2327 = new Class340(Class348_Sub4.aClass248_6601, Class39.aClass112_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657);
+            if (Class175.aClass340_2327 == null) Class175.aClass340_2327 = new Class340(SystemInfo.aClass248_6601, Class39.aClass112_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657);
             if (!Class175.aClass340_2327.method2674(7)) return 0;
             Class348_Sub23.method2965(null, 0, true, 0);
             Class286_Sub7.aBoolean6289 = !Class348_Sub14.method2804((byte) -63);
@@ -63,7 +63,7 @@ final class Class164 {
             Class108.anInt1663 = Class348_Sub40_Sub17_Sub1.aIndex_10426.method389(i + 28561);
             Class106.method1001(Class286_Sub7.aIndex_6277, 0);
             int i_3_ = Class316.aClass348_Sub51_3959.aClass239_Sub19_7257.method1805(i ^ 0x11ae);
-            Class186_Sub1.aClass111_5813 = new Class111(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub40_Sub17_Sub1.aIndex_10426);
+            Class186_Sub1.aClass111_5813 = new Class111(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class348_Sub40_Sub17_Sub1.aIndex_10426);
             int[] is = Class186_Sub1.aClass111_5813.method1046(i_3_, 0);
             if (is.length == 0) is = Class186_Sub1.aClass111_5813.method1046(0, 0);
             Class106 class106 = new Class106(Class286_Sub7.aIndex_6277, Class104.FONT_INDEX);
@@ -84,7 +84,7 @@ final class Class164 {
                 if (Class182.anInterface16Array2447[0].method60(-19079) < 100) return 0;
                 if (Class182.anInterface16Array2447.length > 1 && Class186_Sub1.aClass111_5813.method1044(86) && (Class182.anInterface16Array2447[1].method60(i + 9581) < 100)) return 0;
             }
-            Class170.method1311(5139, Class348_Sub8.aHa6654);
+            TimedVarDomain.method1311(5139, Class348_Sub8.aHa6654);
             Class369.method3568(Class348_Sub8.aHa6654, 4);
             Class348_Sub49.method3379(2, 1);
         }
@@ -117,7 +117,7 @@ final class Class164 {
             Class348_Sub16_Sub3.VARBITS = Class369_Sub2.index(false, 22, (byte) -23, 1);
             Class348_Sub32.WORLD_MAP = Class369_Sub2.index(true, 23, (byte) -23, 1);
             Class130.QUICK_CHAT_MESSAGES = Class369_Sub2.index(false, 24, (byte) -23, 1);
-            Class82.QUICK_CHAT_MENUS = Class369_Sub2.index(false, 25, (byte) -23, 1);
+            VarcstrTypeList.QUICK_CHAT_MENUS = Class369_Sub2.index(false, 25, (byte) -23, 1);
             Class348_Sub11.TEXTURE_DEFINITIONS = Class369_Sub2.index(true, 26, (byte) -23, 1);
             Class239.PARTICLES = Class369_Sub2.index(false, 27, (byte) -23, 1);
             Class367_Sub8.DEFAULTS = Class369_Sub2.index(true, 28, (byte) -23, 1);
@@ -132,8 +132,8 @@ final class Class164 {
                 if (Class13.aClass314_Sub1Array223[i_9_] != null) i_8_ += (Class13.aClass314_Sub1Array223[i_9_].method2349(i + 28661) * Class8.anIntArray164[i_9_] / 100);
             }
             if (i_8_ != 100) {
-                if (Class268.anInt3435 < 0) Class268.anInt3435 = i_8_;
-                return ((i_8_ + -Class268.anInt3435) * 100 / (-Class268.anInt3435 + 100));
+                if (FloorOverlayTypeList.anInt3435 < 0) FloorOverlayTypeList.anInt3435 = i_8_;
+                return ((i_8_ + -FloorOverlayTypeList.anInt3435) * 100 / (-FloorOverlayTypeList.anInt3435 + 100));
             }
             Class286_Sub5.method2159((byte) -109, Class21.SPRITES);
             Class348_Sub42_Sub3.method3178(Class104.FONT_INDEX, -124, Class5_Sub1.method184(i ^ ~0x40a46ff3), Class21.SPRITES);
@@ -147,57 +147,57 @@ final class Class164 {
         if (Class56.aClass56_1034 == Class348_Sub42_Sub15.aClass56_9660) {
             int i_10_ = Class239_Sub11.method1770((byte) -25);
             if (i_10_ < 100) return i_10_;
-            Class263.method2013(Class367_Sub8.DEFAULTS.method415((byte) 73, 1), (byte) 112);
+            ObjectTypeList.method2013(Class367_Sub8.DEFAULTS.method415((byte) 73, 1), (byte) 112);
             RuntimeException_Sub1.method4012(Class367_Sub8.DEFAULTS.method415((byte) 73, 3), (byte) -111);
         }
         if (i != -28660) return 2;
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1035) {
             if (Class348_Sub31.anInt6923 != -1 && !aa_Sub3.MODELS.method420(-10499, Class348_Sub31.anInt6923, 0)) return 99;
-            Class348_Sub40_Sub4.aD9113 = new Class244(Class348_Sub11.TEXTURE_DEFINITIONS, Class369_Sub2.TEXTURES, Class21.SPRITES);
-            Class101_Sub3.aClass326_5764 = new Class326(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class64_Sub3.aClass261_5558 = new Class261(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class239.aClass166_3147 = new Class166(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS, Class21.SPRITES);
-            Class348_Sub7.aClass33_6653 = new Class33(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class247.ENUMS);
-            Class229.aClass268_2979 = new Class268(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class362.aClass183_4460 = new Class183(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class73.aClass219_4782 = new Class219(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS, Class21.SPRITES);
-            Class348_Sub40_Sub25.aClass150_9342 = new Class150(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS, aa_Sub3.MODELS);
-            Class127_Sub1.aClass271_8378 = new Class271(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class348_Sub1.aClass185_6559 = new Class185(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class348_Sub40_Sub12.aClass263_9195 = new Class263(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class94.OBJECTS, aa_Sub3.MODELS);
-            Class348_Sub23_Sub2.aClass153_9031 = new Class153(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS, Class21.SPRITES);
-            Class2.aClass141_117 = new Class141(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS, Class21.SPRITES);
-            Class189.aClass278_2529 = new Class278(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class216.NPCS, aa_Sub3.MODELS);
-            Exception_Sub1.aClass255_112 = new Class255(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, true, Class101_Sub3.aClass326_5764, Class174.ITEMS, aa_Sub3.MODELS);
-            Class348_Sub23_Sub2.aClass187_9036 = new Class187(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class10.aClass87_191 = new Class87(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, r_Sub2.ANIMATIONS, Class348_Sub29.ANIMATION_SKELETONS, Class186.ANIMATION_SKINS);
-            Class30.aClass84_413 = new Class84(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class123.aClass25_1813 = new Class25(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class348_Sub40_Sub18.aClass319_9245 = new Class319(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class78.GRAPHICS, aa_Sub3.MODELS);
-            Class136.aClass65_4787 = new Class65(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class91.aClass82_1523 = new Class82(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class239_Sub14.aClass259_5995 = new Class259(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class229.aClass194_2981 = new Class194(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class348_Sub16_Sub3.VARBITS);
-            Class269.aClass217_3453 = new Class217(Class348_Sub42_Sub8_Sub2.aClass230_10434, Class348_Sub33.anInt6967, Class95.CONFIGS);
-            Class65.method699(Class104.FONT_INDEX, (byte) -100, Class348_Sub35.INTERFACES, Class21.SPRITES, aa_Sub3.MODELS);
-            Applet_Sub1.method85(0, Class262.BILLBOARDS);
-            Class200.aClass226_2639 = new Class226(Class348_Sub33.anInt6967, Class130.QUICK_CHAT_MESSAGES, Class82.QUICK_CHAT_MENUS);
-            Class239_Sub6.aClass355_5900 = new Class355(Class348_Sub33.anInt6967, Class130.QUICK_CHAT_MESSAGES, Class82.QUICK_CHAT_MENUS, new Class28());
-            Class150.method1202(0);
-            Class348_Sub40_Sub12.aClass263_9195.method2008(i + 28539, Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(i + -3690) == 0);
-            Class318_Sub1_Sub3_Sub3.aClass170_10209 = new Class170();
-            Class348_Sub40.method3038(-1);
+            Class348_Sub40_Sub4.js5TextureSource = new Js5TextureSource(Class348_Sub11.TEXTURE_DEFINITIONS, Class369_Sub2.TEXTURES, Class21.SPRITES);
+            Class101_Sub3.paramTypeList = new ParamTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class64_Sub3.basTypeList = new BASTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class239.cursorTypeList = new CursorTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS, Class21.SPRITES);
+            Class348_Sub7.enumTypeList = new EnumTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class247.ENUMS);
+            Class229.floorOverlayTypeList = new FloorOverlayTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class362.floorUnderlayTypeList = new FloorUnderlayTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class73.hitmarkTypeList = new HitmarkTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS, Class21.SPRITES);
+            Class348_Sub40_Sub25.idkTypeList = new IDKTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS, aa_Sub3.MODELS);
+            Class127_Sub1.invTypeList = new InvTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class348_Sub1.lightTypeList = new LightTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class348_Sub40_Sub12.objectTypeList = new ObjectTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, true, Class94.OBJECTS, aa_Sub3.MODELS);
+            Class348_Sub23_Sub2.mapElementTypeList = new MapElementTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS, Class21.SPRITES);
+            Class2.msiTypeList = new MSITypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS, Class21.SPRITES);
+            Class189.npcTypeList = new NPCTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, true, Class216.NPCS, aa_Sub3.MODELS);
+            Exception_Sub1.itemTypeList = new ItemTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, true, Class101_Sub3.paramTypeList, Class174.ITEMS, aa_Sub3.MODELS);
+            Class348_Sub23_Sub2.questTypeList = new QuestTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class10.seqTypeList = new SeqTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, r_Sub2.ANIMATIONS, Class348_Sub29.ANIMATION_SKELETONS, Class186.ANIMATION_SKINS);
+            Class30.skyBoxTypeList = new SkyBoxTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class123.skyBoxSphereTypeList = new SkyBoxSphereTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class348_Sub40_Sub18.gfxTypeList = new GfxTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class78.GRAPHICS, aa_Sub3.MODELS);
+            Class136.structTypeList = new StructTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class91.varcStrTypeList = new VarcstrTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class239_Sub14.varcTypeList = new VarcTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            Class229.varBitTypeList = new VarBitTypeListClient(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class348_Sub16_Sub3.VARBITS);
+            Class269.varPlayerTypeList = new VarPlayerTypeListClient(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
+            StructTypeList.method699(Class104.FONT_INDEX, (byte) -100, Class348_Sub35.INTERFACES, Class21.SPRITES, aa_Sub3.MODELS);
+            Applet_Sub1.setBillboardJs5(0, Class262.BILLBOARDS);
+            Class200.quickChatCatTypeList = new QuickChatCatTypeList(Class348_Sub33.language, Class130.QUICK_CHAT_MESSAGES, VarcstrTypeList.QUICK_CHAT_MENUS);
+            Class239_Sub6.quickChatPhraseTypeList = new QuickChatPhraseTypeList(Class348_Sub33.language, Class130.QUICK_CHAT_MESSAGES, VarcstrTypeList.QUICK_CHAT_MENUS, new Class28());
+            IDKTypeList.initWornItemIds(0);
+            Class348_Sub40_Sub12.objectTypeList.method2008(i + 28539, Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(i + -3690) == 0);
+            Class318_Sub1_Sub3_Sub3.timedVarDomain = new TimedVarDomain();
+            Class348_Sub40.updateFeatureMask(-1);
             RuntimeException_Sub1.method4011(i + 29684, Class239.PARTICLES);
-            Class348_Sub29.method3004(aa_Sub3.MODELS, false, Class348_Sub40_Sub4.aD9113);
-            Class296 class296 = new Class296(Class16.HUFFMAN.method391("huffman", "", -29832));
-            ha_Sub3.method3896(class296, (byte) 13);
+            Class348_Sub29.method3004(aa_Sub3.MODELS, false, Class348_Sub40_Sub4.js5TextureSource);
+            Class296 codec = new Class296(Class16.HUFFMAN.method391("huffman", "", -29832));
+            ha_Sub3.setHuffman(codec, (byte) 13);
             try {
                 jagmisc.init();
             } catch (Throwable throwable) {
                 /* empty */
             }
-            Class348_Sub8.aClass241_6660 = Class229.method1631(false);
-            Class348_Sub40_Sub20.aClass348_Sub4_9264 = new Class348_Sub4(true, Class348_Sub23_Sub1.aClass297_8992);
+            Class348_Sub8.tickScheduler = Class229.method1631(false);
+            Class348_Sub40_Sub20.aClass348_Sub4_9264 = new SystemInfo(true, Class348_Sub23_Sub1.aClass297_8992);
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1037) {
             int i_11_ = (Class348_Sub22.method2958(22388, Class21.SPRITES) + Class348_Sub49_Sub2.method3405(2012104999, true));
@@ -205,14 +205,14 @@ final class Class164 {
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_;
         }
         if (Class56.aClass56_1038 == Class348_Sub42_Sub15.aClass56_9660)
-            Class75.method752(Class348_Sub32.WORLD_MAP, Class229.aClass268_2979, Class362.aClass183_4460, Class348_Sub40_Sub12.aClass263_9195, Class348_Sub23_Sub2.aClass153_9031, Class2.aClass141_117, Class318_Sub1_Sub3_Sub3.aClass170_10209);
+            Class75.method752(Class348_Sub32.WORLD_MAP, Class229.floorOverlayTypeList, Class362.floorUnderlayTypeList, Class348_Sub40_Sub12.objectTypeList, Class348_Sub23_Sub2.mapElementTypeList, Class2.msiTypeList, Class318_Sub1_Sub3_Sub3.timedVarDomain);
         if (Class56.aClass56_1039 == Class348_Sub42_Sub15.aClass56_9660) {
             // TODO make cache edit to extend these or change id's
-            Class77.anIntArray1303 = (new int[Class239_Sub14.aClass259_5995.anInt3305 + 1000]);
-            Class286_Sub6.aBooleanArray6270 = (new boolean[Class239_Sub14.aClass259_5995.anInt3305 + 1000]);
-            Class258_Sub2.aStringArray8532 = new String[Class91.aClass82_1523.anInt1439];
-            for (int i_13_ = 0; Class239_Sub14.aClass259_5995.anInt3305 + 1000 > i_13_; i_13_++) {
-                if (Class239_Sub14.aClass259_5995.method1976(i_13_, i ^ ~0x6fc0).anInt2135 == 0) {
+            Class77.anIntArray1303 = (new int[Class239_Sub14.varcTypeList.anInt3305 + 1000]);
+            Class286_Sub6.aBooleanArray6270 = (new boolean[Class239_Sub14.varcTypeList.anInt3305 + 1000]);
+            Class258_Sub2.aStringArray8532 = new String[Class91.varcStrTypeList.anInt1439];
+            for (int i_13_ = 0; Class239_Sub14.varcTypeList.anInt3305 + 1000 > i_13_; i_13_++) {
+                if (Class239_Sub14.varcTypeList.method1976(i_13_, i ^ ~0x6fc0).anInt2135 == 0) {
                     Class286_Sub6.aBooleanArray6270[i_13_] = true;
                     Class335.anInt4168++;
                 }
@@ -228,7 +228,7 @@ final class Class164 {
             Class16.HUFFMAN.method404(0, true, true);
             Class348_Sub35.INTERFACES.method404(0, true, true);
             Class95.CONFIGS.anInt634 = 2;
-            Class319.aBoolean3988 = true;
+            GfxTypeList.aBoolean3988 = true;
             Class247.ENUMS.anInt634 = 2;
             Class94.OBJECTS.anInt634 = 2;
             Class216.NPCS.anInt634 = 2;
@@ -269,9 +269,9 @@ final class Class164 {
             if (Class348_Sub23_Sub2.aBoolean9038) Class367_Sub10.method3553(false, (byte) 108, 0);
             else Class367_Sub10.method3553(false, (byte) 102, Class316.aClass348_Sub51_3959.aClass239_Sub25_7251.method1829(-32350));
             Class85.method830(Class316.aClass348_Sub51_3959.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
-            Class170.method1311(5139, Class348_Sub8.aHa6654);
+            TimedVarDomain.method1311(5139, Class348_Sub8.aHa6654);
             Class369.method3568(Class348_Sub8.aHa6654, i ^ ~0x6ff7);
-            Class255.method1933(Class21.SPRITES, Class348_Sub8.aHa6654, true);
+            ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.aHa6654, true);
             Class101.method901(Class113.aSpriteArray1744, 515880227);
         }
         return Class348_Sub40_Sub6.method3063(false);

@@ -72,7 +72,7 @@ final class Class100 {
                 Class289.aClass46_3701 = class46;
                 Class331.aClass46_4130 = Exception_Sub1.method141(class46, (byte) -117);
                 Class318_Sub1.anInt6392 = 0;
-                Class219.anInt2872 = i_5_;
+                HitmarkTypeList.anInt2872 = i_5_;
                 Class318_Sub4.anInt6411 = i;
                 Class300.aBoolean3819 = false;
             }

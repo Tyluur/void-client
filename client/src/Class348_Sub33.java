@@ -21,11 +21,11 @@ final class Class348_Sub33 extends Class348 {
     static int anInt6964;
     int anInt6965;
     static long aLong6966;
-    static int anInt6967 = 0;
+    static int language = 0;
 
     public static void method3024(int i) {
         aClass152_6955 = null;
-        if (i >= -74) anInt6967 = 12;
+        if (i >= -74) language = 12;
         aByteArrayArrayArray6962 = null;
     }
 

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class261 {
+final class BASTypeList {
     static int anInt3313;
     static Class113 aClass113_3314 = new Class113();
     static int anInt3315;
@@ -109,17 +109,17 @@ final class Class261 {
         int i_12_ = 81 % ((i - -70) / 35);
         anInt3313++;
         if (!Class5_Sub1.aBoolean8335) Class348_Sub42_Sub6.aBoolean9535 = ((Class332.anInt4143 != -1 && Class73.anInt4776 >= Class332.anInt4143) || (Class348_Sub42_Sub8_Sub2.anInt10432 < 16 * Class73.anInt4776 - -(!Class71.aBoolean1211 ? 22 : 26)));
-        Class166.aClass262_2187.method1996(103);
+        CursorTypeList.aClass262_2187.method1996(103);
         Class348_Sub40_Sub38.aClass262_9478.method1996(104);
         for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1990((byte) 83)) {
             int i_13_ = class348_sub42_sub12.anInt9608;
             if (i_13_ < 1000) {
                 class348_sub42_sub12.method2715((byte) 97);
                 if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) Class348_Sub40_Sub38.aClass262_9478.method1999(class348_sub42_sub12, -20180);
-                else Class166.aClass262_2187.method1999(class348_sub42_sub12, -20180);
+                else CursorTypeList.aClass262_2187.method1999(class348_sub42_sub12, -20180);
             }
         }
-        Class166.aClass262_2187.method1988(Class348_Sub40_Sub4.aClass262_9111, (byte) -115);
+        CursorTypeList.aClass262_2187.method1988(Class348_Sub40_Sub4.aClass262_9111, (byte) -115);
         Class348_Sub40_Sub38.aClass262_9478.method1988(Class348_Sub40_Sub4.aClass262_9111, (byte) -115);
         if (Class73.anInt4776 > 1) {
             if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.aClass348_3334.aClass348_4295);
@@ -277,7 +277,8 @@ final class Class261 {
         }
     }
 
-    Class261(Class230 class230, int i, Index index) {
+    // Class261
+    BASTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_3319 = index;
             aIndex_3319.method407(0, 32);

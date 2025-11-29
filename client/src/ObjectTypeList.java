@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class263 {
+final class ObjectTypeList {
     private final Index aIndex_3343;
     static int anInt3344;
     Index aIndex_3345;
@@ -47,7 +47,7 @@ final class Class263 {
         }
         class51 = new Class51();
         class51.anInt941 = i_0_;
-        class51.aClass263_933 = this;
+        class51.aObjectTypeList_933 = this;
         if (is != null) class51.method479((byte) 0, new Class348_Sub49(is));
         class51.method488(-105);
         if (i != 0) this.aClass60_3361 = null;
@@ -332,7 +332,8 @@ final class Class263 {
         if (bool != true) this.aClass60_3362 = null;
     }
 
-    Class263(Class230 class230, int i, boolean bool, Index index, Index index_29_) {
+    // Class263
+    ObjectTypeList(Class230 class230, int i, boolean bool, Index index, Index index_29_) {
         aClass60_3350 = new Class60(64);
         this.aClass60_3360 = new Class60(500);
         this.aClass60_3361 = new Class60(30);

@@ -274,16 +274,16 @@ class Class279 {
 
     final synchronized void method2093(boolean bool) {
         anInt3609++;
-        if (Class183.aClass250_2462 != null) {
+        if (FloorUnderlayTypeList.aClass250_2462 != null) {
             boolean bool_35_ = true;
             for (int i = 0; i < 2; i++) {
-                if (Class183.aClass250_2462.aClass279Array3218[i] == this) Class183.aClass250_2462.aClass279Array3218[i] = null;
-                if (Class183.aClass250_2462.aClass279Array3218[i] != null) bool_35_ = false;
+                if (FloorUnderlayTypeList.aClass250_2462.aClass279Array3218[i] == this) FloorUnderlayTypeList.aClass250_2462.aClass279Array3218[i] = null;
+                if (FloorUnderlayTypeList.aClass250_2462.aClass279Array3218[i] != null) bool_35_ = false;
             }
             if (bool_35_) {
-                Class183.aClass250_2462.aBoolean3221 = true;
-                while (Class183.aClass250_2462.aBoolean3223) Class286_Sub5.method2161((byte) 68, 50L);
-                Class183.aClass250_2462 = null;
+                FloorUnderlayTypeList.aClass250_2462.aBoolean3221 = true;
+                while (FloorUnderlayTypeList.aClass250_2462.aBoolean3223) Class286_Sub5.method2161((byte) 68, 50L);
+                FloorUnderlayTypeList.aClass250_2462 = null;
             }
         }
         method2091();

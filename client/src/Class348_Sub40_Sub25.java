@@ -10,7 +10,7 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
     private int anInt9339 = 0;
     private int anInt9340 = 1365;
     static int anInt9341 = 0;
-    static Class150 aClass150_9342;
+    static IDKTypeList idkTypeList; // aClass150_9342
     private int anInt9343 = 20;
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_0_) {
@@ -69,7 +69,7 @@ final class Class348_Sub40_Sub25 extends Class348_Sub40 {
     }
 
     public static void method3117(int i) {
-        aClass150_9342 = null;
+        idkTypeList = null;
         if (i < 10) anInt9335 = 113;
     }
 

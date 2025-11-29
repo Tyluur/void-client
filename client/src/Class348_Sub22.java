@@ -28,7 +28,7 @@ final class Class348_Sub22 extends Class348 {
         if (index.method421(false, Class106.anInt1639)) i_2_++;
         if (index.method421(false, Class373_Sub2.anInt7429)) i_2_++;
         if (index.method421(false, ha.anInt4562)) i_2_++;
-        if (index.method421(false, Class82.anInt1435)) i_2_++;
+        if (index.method421(false, VarcstrTypeList.anInt1435)) i_2_++;
         if (index.method421(false, Class115.anInt1756)) i_2_++;
         if (index.method421(false, Class291.anInt3739)) i_2_++;
         if (index.method421(false, Class86.anInt1481)) i_2_++;
@@ -37,7 +37,7 @@ final class Class348_Sub22 extends Class348 {
         if (index.method421(false, Class364.anInt4469)) i_2_++;
         if (i != 22388) return 8;
         if (index.method421(false, Class348_Sub40_Sub38.anInt9473)) i_2_++;
-        if (index.method421(false, Class187.anInt2510)) i_2_++;
+        if (index.method421(false, QuestTypeList.anInt2510)) i_2_++;
         if (index.method421(false, Class52.anInt4895)) i_2_++;
         if (index.method421(false, Class186_Sub1.anInt5814)) i_2_++;
         if (index.method421(false, Class5_Sub3.anInt8370)) i_2_++;

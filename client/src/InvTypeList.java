@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class271 {
+final class InvTypeList {
     private final Class60 aClass60_3466 = new Class60(64);
     static Class114 aClass114_3467 = new Class114(45, 8);
     private final Index aIndex_3468;
@@ -37,7 +37,8 @@ final class Class271 {
         Class71.aClass76_1208 = Class71.aClass76_1210;
     }
 
-    Class271(Class230 class230, int i, Index index) {
+    // Class271
+    InvTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_3468 = index;
             aIndex_3468.method407(0, 5);

@@ -48,7 +48,7 @@ final class Class348_Sub42_Sub9_Sub1 extends Class348_Sub42_Sub9 {
                 class318_sub1_sub3_sub3.anInt10232 = 0;
                 class318_sub1_sub3_sub3.anInt10294 = 0;
                 class318_sub1_sub3_sub3.anInt10267 = 0;
-                if ((class318_sub1_sub3_sub3.anInt10286) != -1) Class287.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10267, (Class10.aClass87_191.method835(class318_sub1_sub3_sub3.anInt10286, 7)), -83);
+                if ((class318_sub1_sub3_sub3.anInt10286) != -1) Class287.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10267, (Class10.seqTypeList.method835(class318_sub1_sub3_sub3.anInt10286, 7)), -83);
             }
         }
         if (i_2_ > -4) method3207((byte) -83);

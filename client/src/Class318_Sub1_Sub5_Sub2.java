@@ -112,7 +112,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
         }
         aBoolean10148 = class64.F() || (this.aClass235_10155.aClass318_Sub10_3081) != null;
         if (aClass30_10150 == null) aClass30_10150 = (Class348_Sub23_Sub1.method2967(this.x, class64, this.y, this.anInt6382, 2));
-        else Class255.method1935(this.y, this.anInt6382, aClass30_10150, class64, false, this.x);
+        else ItemTypeList.method1935(this.y, this.anInt6382, aClass30_10150, class64, false, this.x);
         return class318_sub4;
     }
 
@@ -166,16 +166,16 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
             for (int i_17_ = 0; class242s.length > i_17_; i_17_++)
                 OpenGL.glAttachObjectARB(l, (class242s[i_17_].aLong3156));
             OpenGL.glLinkProgramARB(l);
-            OpenGL.glGetObjectParameterivARB(l, 35714, Class187.anIntArray2509, 0);
-            if ((~Class187.anIntArray2509[0]) == i) {
-                if (Class187.anIntArray2509[0] == 0) System.out.println("Shader linking failed:");
-                OpenGL.glGetObjectParameterivARB(l, 35716, Class187.anIntArray2509, 1);
-                if (Class187.anIntArray2509[1] > 1) {
-                    byte[] is = new byte[Class187.anIntArray2509[1]];
-                    OpenGL.glGetInfoLogARB(l, Class187.anIntArray2509[1], Class187.anIntArray2509, 0, is, 0);
+            OpenGL.glGetObjectParameterivARB(l, 35714, QuestTypeList.anIntArray2509, 0);
+            if ((~QuestTypeList.anIntArray2509[0]) == i) {
+                if (QuestTypeList.anIntArray2509[0] == 0) System.out.println("Shader linking failed:");
+                OpenGL.glGetObjectParameterivARB(l, 35716, QuestTypeList.anIntArray2509, 1);
+                if (QuestTypeList.anIntArray2509[1] > 1) {
+                    byte[] is = new byte[QuestTypeList.anIntArray2509[1]];
+                    OpenGL.glGetInfoLogARB(l, QuestTypeList.anIntArray2509[1], QuestTypeList.anIntArray2509, 0, is, 0);
                     System.out.println(new String(is));
                 }
-                if (Class187.anIntArray2509[0] == 0) {
+                if (QuestTypeList.anIntArray2509[0] == 0) {
                     for (int i_18_ = 0; class242s.length > i_18_; i_18_++)
                         OpenGL.glDetachObjectARB(l, (class242s[i_18_].aLong3156));
                     OpenGL.glDeleteObjectARB(l);

@@ -115,7 +115,7 @@ final class Class243 {
             Class147.aClass357ArrayArrayArray2029 = Class348_Sub31_Sub2.aClass357ArrayArrayArray9082;
             aa_Sub1.aSArray5191 = Class332.aSArray4142;
         } else {
-            Class147.aClass357ArrayArrayArray2029 = Class65.aClass357ArrayArrayArray1148;
+            Class147.aClass357ArrayArrayArray2029 = StructTypeList.aClass357ArrayArrayArray1148;
             aa_Sub1.aSArray5191 = Class348_Sub1_Sub1.aSArray8801;
         }
         Class189.anInt2524 = Class147.aClass357ArrayArrayArray2029.length;

@@ -7,7 +7,7 @@ final class Class362 {
     static int anInt4457;
     static int anInt4458 = -1;
     static int anInt4459;
-    static Class183 aClass183_4460;
+    static FloorUnderlayTypeList floorUnderlayTypeList; // aClass183_4460
 
     static final void method3511(boolean bool, FontRenderer fontRenderer, FontMetrics fontMetrics, String string, int i, ha var_ha) {
         try {
@@ -77,7 +77,7 @@ final class Class362 {
     }
 
     public static void method3512(int i) {
-        aClass183_4460 = null;
+        floorUnderlayTypeList = null;
         if (i != 4) anInt4458 = 96;
         aFontRenderer_4456 = null;
     }

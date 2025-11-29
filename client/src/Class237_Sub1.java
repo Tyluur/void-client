@@ -22,7 +22,7 @@ final class Class237_Sub1 extends Class237 {
             anInt5823++;
             if (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(i_3_ ^ ~0x7e6f) != 0 || Class58.method536(i_5_, false, i, Class167.anInt2204, i_2_)) {
                 if (this.anInt5824 > i_0_) this.anInt5824 = i_0_;
-                Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_1_);
+                Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, i_1_);
                 if (Class316.aClass348_Sub51_3959.aClass239_Sub24_7235.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {
                     int i_8_;
                     int i_9_;
@@ -235,7 +235,7 @@ final class Class237_Sub1 extends Class237 {
                         } else if (i_4_ == 5) {
                             int i_27_ = 65;
                             Interface10 interface10 = ((Interface10) r_Sub2.method3297(i_0_, i, i_5_));
-                            if (interface10 != null) i_27_ = 1 + (Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-93)).anInt883);
+                            if (interface10 != null) i_27_ = 1 + (Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-93)).anInt883);
                             Class318_Sub1_Sub5 class318_sub1_sub5;
                             if (bool_17_) {
                                 Class318_Sub1_Sub5_Sub1 class318_sub1_sub5_sub1 = (new Class318_Sub1_Sub5_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * Class148.anIntArray2039[i_7_], (Class348_Sub40_Sub16.anIntArray9230[i_7_]) * i_27_, i_4_, i_7_));
@@ -246,7 +246,7 @@ final class Class237_Sub1 extends Class237 {
                         } else if (i_4_ == 6) {
                             int i_28_ = 33;
                             Interface10 interface10 = ((Interface10) r_Sub2.method3297(i_0_, i, i_5_));
-                            if (interface10 != null) i_28_ = 1 + (Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-117)).anInt883) / 2;
+                            if (interface10 != null) i_28_ = 1 + (Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-117)).anInt883) / 2;
                             Class318_Sub1_Sub5 class318_sub1_sub5;
                             if (bool_17_) {
                                 Class318_Sub1_Sub5_Sub1 class318_sub1_sub5_sub1 = (new Class318_Sub1_Sub5_Sub1(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * Class148.anIntArray2039[i_7_], (Class348_Sub40_Sub16.anIntArray9230[i_7_]) * i_28_, i_4_, 4 + i_7_));
@@ -267,7 +267,7 @@ final class Class237_Sub1 extends Class237 {
                             int i_30_ = 2 + i_7_ & 0x3;
                             int i_31_ = 33;
                             Interface10 interface10 = ((Interface10) r_Sub2.method3297(i_0_, i, i_5_));
-                            if (interface10 != null) i_31_ = (Class348_Sub40_Sub12.aClass263_9195.method2005(i_3_ + -50, interface10.method42(-122)).anInt883) / 2 + 1;
+                            if (interface10 != null) i_31_ = (Class348_Sub40_Sub12.objectTypeList.method2005(i_3_ + -50, interface10.method42(-122)).anInt883) / 2 + 1;
                             Class318_Sub1_Sub5 class318_sub1_sub5;
                             Class318_Sub1_Sub5 class318_sub1_sub5_32_;
                             if (bool_17_) {
@@ -322,7 +322,7 @@ final class Class237_Sub1 extends Class237 {
                                 for (int i_59_ = 0; i_58_ > i_59_; i_59_++) {
                                     Class211 class211 = new Class211(var_ha, class348_sub49, 2);
                                     if (class211.anInt2734 == 31) {
-                                        Class253 class253 = (Class348_Sub1.aClass185_6559.method1391((byte) -1, class348_sub49.readUnsignedShort(842397944)));
+                                        Class253 class253 = (Class348_Sub1.lightTypeList.method1391((byte) -1, class348_sub49.readUnsignedShort(842397944)));
                                         class211.method1539(class253.anInt3251, (byte) 115, class253.anInt3249, class253.anInt3245, class253.anInt3244);
                                     }
                                     if (var_ha.method3704() > 0) {
@@ -468,7 +468,7 @@ final class Class237_Sub1 extends Class237 {
                     int i_88_ = i_87_ >> 2;
                     int i_89_ = i_87_ & 0x3;
                     if (i_74_ == i_86_ && i <= i_85_ && i - -8 > i_85_ && i_75_ <= i_84_ && i_75_ - -8 > i_84_) {
-                        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_80_);
+                        Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, i_80_);
                         int i_90_ = Class249.method1908(0x7 & i_84_, i_85_ & 0x7, i_73_, true, class51.anInt926, class51.anInt961, i_89_) + i_77_;
                         int i_91_ = i_76_ + Class111.method1045(0x7 & i_85_, (class51.anInt926), i_89_, (class51.anInt961), i_84_ & 0x7, i_73_, (byte) 16);
                         if (i_90_ > 0 && i_91_ > 0 && i_90_ < -1 + this.anInt3117 && -1 + this.anInt3114 > i_91_) {
@@ -505,7 +505,7 @@ final class Class237_Sub1 extends Class237 {
                     Interface10 interface10 = method1690(i, i_95_, i_94_, i_93_, 30987);
                     if (i_96_ <= 66) anInt5819 = -107;
                     if (interface10 == null) break while_77_;
-                    Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, interface10.method42(-89));
+                    Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-89));
                     int i_97_ = interface10.method39(-128);
                     int i_98_ = interface10.method41(-32228);
                     if (class51.method474((byte) -50)) Class314.method2336(class51, i_94_, i_95_, i_93_, -128);
@@ -590,7 +590,7 @@ final class Class237_Sub1 extends Class237 {
     }
 
     Class237_Sub1(int i, int i_114_, int i_115_, boolean bool) {
-        super(i, i_114_, i_115_, bool, Class229.aClass268_2979, Class362.aClass183_4460);
+        super(i, i_114_, i_115_, bool, Class229.floorOverlayTypeList, Class362.floorUnderlayTypeList);
     }
 
     final void method1696(Class348_Sub49 class348_sub49, boolean bool, int i, int i_116_, int i_117_, int i_118_, int i_119_, int i_120_, ha var_ha, int[] is, int i_121_) {
@@ -612,7 +612,7 @@ final class Class237_Sub1 extends Class237 {
                                     for (int i_127_ = 0; (i_126_ > i_127_); i_127_++) {
                                         Class211 class211 = new Class211(var_ha, class348_sub49, 2);
                                         if (class211.anInt2734 == 31) {
-                                            Class253 class253 = (Class348_Sub1.aClass185_6559.method1391((byte) 111, (class348_sub49.readUnsignedShort(842397944))));
+                                            Class253 class253 = (Class348_Sub1.lightTypeList.method1391((byte) 111, (class348_sub49.readUnsignedShort(842397944))));
                                             class211.method1539((class253.anInt3251), (byte) 124, (class253.anInt3249), (class253.anInt3245), (class253.anInt3244));
                                         }
                                         if (var_ha.method3704() > 0) {
@@ -680,7 +680,7 @@ final class Class237_Sub1 extends Class237 {
                                                         for (int i_142_ = i_139_; (i_142_ < i_139_ - -4); i_142_++) {
                                                             if ((i_141_ >= i_123_) && (i_141_ < 8 + i_123_) && (i_124_ <= i_142_) && (8 + i_124_ > i_124_)) {
                                                                 int i_143_ = (i_117_ - -(Class295.method2220((0x7 & i_142_), i_119_, (i_141_ & 0x7), (byte) 71)));
-                                                                int i_144_ = (i_120_ + (Class87.method837((i_141_ & 0x7), true, (0x7 & i_142_), i_119_)));
+                                                                int i_144_ = (i_120_ + (SeqTypeList.method837((i_141_ & 0x7), true, (0x7 & i_142_), i_119_)));
                                                                 if (i_143_ >= 0 && (this.anInt3117 > i_143_) && (i_144_ >= 0) && ((this.anInt3114) > i_144_)) this.aByteArrayArrayArray3104[i_118_][i_143_][i_144_] = i_140_;
                                                             }
                                                         }

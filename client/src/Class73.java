@@ -13,7 +13,7 @@ final class Class73 implements Interface7 {
     static Class114 aClass114_4779;
     static int[] anIntArray4780;
     static int anInt4781;
-    static Class219 aClass219_4782;
+    static HitmarkTypeList hitmarkTypeList; // aClass219_4782
     static long aLong4783 = 20000000L;
     static int anInt4784;
     private final Index aIndex_4785;
@@ -24,18 +24,18 @@ final class Class73 implements Interface7 {
         anIntArray4780 = null;
         if (i != -128) method743(113, -98);
         aClass114_4779 = null;
-        aClass219_4782 = null;
+        hitmarkTypeList = null;
     }
 
     static final Class189 method742(int i, int i_0_) {
         anInt4777++;
-        Class189 class189 = (Class189) Class217.aClass60_2844.method583(i_0_, -104);
+        Class189 class189 = (Class189) VarPlayerTypeListClient.aClass60_2844.method583(i_0_, -104);
         if (class189 != null) return class189;
         byte[] is = Class369_Sub3.aIndex_8601.method410(-1860, 0, i_0_);
         if (i != 104) method741((byte) 98);
         class189 = new Class189();
         if (is != null) class189.method1419(i_0_, new Class348_Sub49(is), (byte) 64);
-        Class217.aClass60_2844.method582(class189, i_0_, (byte) -114);
+        VarPlayerTypeListClient.aClass60_2844.method582(class189, i_0_, (byte) -114);
         return class189;
     }
 

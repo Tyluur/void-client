@@ -6,7 +6,7 @@ final class Class269 {
     static int anInt3450;
     static int anInt3451;
     Interface18_Impl1 anInterface18_Impl1_3452 = null;
-    static Class217 aClass217_3453;
+    static VarPlayerTypeListClient varPlayerTypeList; // aClass217_3453
     private Interface18_Impl3[] anInterface18_Impl3Array3454;
     Interface18_Impl1 anInterface18_Impl1_3455 = null;
     static int anInt3456;
@@ -27,7 +27,7 @@ final class Class269 {
     }
 
     static final void method2040(int i, boolean bool) {
-        Class185.anInt2482 = i;
+        LightTypeList.anInt2482 = i;
         if (bool != true) aFloat3462 = -0.54794437F;
         anInt3450++;
         synchronized (Class342.aClass60_4254) {
@@ -70,7 +70,7 @@ final class Class269 {
     }
 
     public static void method2042(byte i) {
-        if (i == -67) aClass217_3453 = null;
+        if (i == -67) varPlayerTypeList = null;
     }
 
     Class269(ha_Sub3 var_ha_Sub3) {
@@ -82,14 +82,14 @@ final class Class269 {
         if (this.aBoolean3458 || aHa_Sub3_3457.method3880(Class68.aClass68_1183, Class191.aClass304_2571, (byte) 123)) {
             OutputStream_Sub1.method134((byte) -126);
             if (this.aBoolean3458) {
-                byte[] is = Class50_Sub1.method461(false, Class355.anObject4366, 53146732);
+                byte[] is = Class50_Sub1.method461(false, QuickChatPhraseTypeList.anObject4366, 53146732);
                 this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, is);
                 is = Class50_Sub1.method461(false, Class227.anObject2969, 53146732);
                 aHa_Sub3_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, is);
             } else {
                 this.anInterface18_Impl3Array3459 = new Interface18_Impl3[16];
                 for (int i = 0; i < 16; i++) {
-                    byte[] is = Class173.method1331((byte) 100, Class355.anObject4366, 128 * (i * 128 * 2), 32768);
+                    byte[] is = Class173.method1331((byte) 100, QuickChatPhraseTypeList.anObject4366, 128 * (i * 128 * 2), 32768);
                     this.anInterface18_Impl3Array3459[i] = aHa_Sub3_3457.method3944(is, 128, Class191.aClass304_2571, 2, true, 128);
                 }
                 anInterface18_Impl3Array3454 = new Interface18_Impl3[16];

@@ -31,7 +31,7 @@ final class Class279_Sub1 extends Class279 {
             if (1 == Class286_Sub4.method2155(i, (byte) 43)) {
                 aSourceDataLine6177 = null;
                 throw lineunavailableexception;
-            } else method2082(Class33.method340(i, (byte) 108));
+            } else method2082(EnumTypeList.method340(i, (byte) 108));
         }
     }
 

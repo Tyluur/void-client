@@ -23,7 +23,7 @@ final class Class335 {
             if (class348_sub9.anInt6675 != i_4_) {
                 int i_5_ = Class8.method214((class348_sub9.aNpc_6691), -1);
                 NPCDefinition NPCDefinition = (class348_sub9.aNpc_6691.aNPCDefinition_10505);
-                if (NPCDefinition.anIntArray1377 != null) NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1);
+                if (NPCDefinition.anIntArray1377 != null) NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.timedVarDomain), -1);
                 if (NPCDefinition == null || i_5_ == -1) {
                     class348_sub9.anInt6675 = i_4_;
                     class348_sub9.aBoolean6674 = false;

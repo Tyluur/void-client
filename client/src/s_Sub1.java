@@ -40,12 +40,12 @@ final class s_Sub1 extends s {
         if (is != null && is.length != 0) {
             for (int i_12_ = 0; i_12_ < is_4_.length; i_12_++) {
                 if (is_4_[i_12_] == -1) is_4_[i_12_] = 0;
-                else is_4_[i_12_] = ((Class126.anIntArray4983[Class25.method303(is_4_[i_12_], 30) & 0xffff]) << 8) | 0xff;
+                else is_4_[i_12_] = ((Class126.anIntArray4983[SkyBoxSphereTypeList.method303(is_4_[i_12_], 30) & 0xffff]) << 8) | 0xff;
             }
             if (is_5_ != null) {
                 for (int i_13_ = 0; i_13_ < is_5_.length; i_13_++) {
                     if (is_5_[i_13_] == -1) is_5_[i_13_] = 0;
-                    else is_5_[i_13_] = ((Class126.anIntArray4983[Class25.method303(is_5_[i_13_], 30) & 0xffff]) << 8) | 0xff;
+                    else is_5_[i_13_] = ((Class126.anIntArray4983[SkyBoxSphereTypeList.method303(is_5_[i_13_], 30) & 0xffff]) << 8) | 0xff;
                 }
             }
             if (bool_11_) {
@@ -321,11 +321,11 @@ final class s_Sub1 extends s {
                             } else {
                                 if (bool_57_) {
                                     i_59_ = is_6_[i_54_];
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_54_] = (Class126.anIntArray4983[(Class25.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_54_] = (Class126.anIntArray4983[(SkyBoxSphereTypeList.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
                                     i_59_ = is_6_[i_55_];
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_55_] = (Class126.anIntArray4983[(Class25.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_55_] = (Class126.anIntArray4983[(SkyBoxSphereTypeList.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
                                     i_59_ = is_6_[i_56_];
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_56_] = (Class126.anIntArray4983[(Class25.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_56_] = (Class126.anIntArray4983[(SkyBoxSphereTypeList.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
                                 }
                                 class145.aShortArray2008[i_53_] = (short) -1;
                             }
@@ -406,10 +406,10 @@ final class s_Sub1 extends s {
             }
             for (int i_91_ = 0; i_91_ < i_79_; i_91_++) {
                 if (is_67_[i_91_] >= 0 || is_68_ != null && is_68_[i_91_] >= 0) {
-                    if (is_67_[i_91_] >= 0) class236.anIntArray3093[class236.aShort3099] = Class25.method303(is_67_[i_91_], 30);
+                    if (is_67_[i_91_] >= 0) class236.anIntArray3093[class236.aShort3099] = SkyBoxSphereTypeList.method303(is_67_[i_91_], 30);
                     else class236.anIntArray3093[class236.aShort3099] = -1;
                     if (is_68_ != null) {
-                        if (is_68_[i_91_] != -1) class236.anIntArray3092[class236.aShort3099] = Class25.method303(is_68_[i_91_], 30);
+                        if (is_68_[i_91_] != -1) class236.anIntArray3092[class236.aShort3099] = SkyBoxSphereTypeList.method303(is_68_[i_91_], 30);
                         else class236.anIntArray3092[class236.aShort3099] = -1;
                     }
                     class236.aShortArray3091[class236.aShort3099] = (short) is_64_[i_91_];
@@ -430,7 +430,7 @@ final class s_Sub1 extends s {
             int i_92_ = is_67_[0];
             int i_93_ = is_69_[0];
             if (is_68_ != null) {
-                class102.anInt1600 = Class291.method2198(0, (aByteArrayArray8220[i][i_60_] - aByteArrayArray8232[i][i_60_]), Class25.method303(is_68_[0], 30));
+                class102.anInt1600 = Class291.method2198(0, (aByteArrayArray8220[i][i_60_] - aByteArrayArray8232[i][i_60_]), SkyBoxSphereTypeList.method303(is_68_[0], 30));
                 if (i_92_ == -1) class102.aByte1606 |= 0x2;
             }
             if ((this.anIntArrayArray4584[i][i_60_] == this.anIntArrayArray4584[i + 1][i_60_]) && (this.anIntArrayArray4584[i][i_60_] == this.anIntArrayArray4584[i + 1][i_60_ + 1]) && (this.anIntArrayArray4584[i][i_60_] == this.anIntArrayArray4584[i][i_60_ + 1])) class102.aByte1606 |= 0x1;
@@ -444,7 +444,7 @@ final class s_Sub1 extends s {
                 class102.aShort1605 = (short) i_93_;
                 if (method3997(class12.aByte213) || class12.aByte198 != 0 || class12.aByte211 != 0) class102.aByte1606 |= 0x4;
             } else {
-                short i_94_ = Class25.method303(i_92_, 30);
+                short i_94_ = SkyBoxSphereTypeList.method303(i_92_, 30);
                 class102.aShort1601 = (short) Class291.method2198(0, ((aByteArrayArray8220[i][i_60_]) - (aByteArrayArray8232[i][i_60_])), i_94_);
                 class102.aShort1603 = (short) Class291.method2198(0, ((aByteArrayArray8220[i + 1][i_60_]) - (aByteArrayArray8232[i + 1][i_60_])), i_94_);
                 class102.aShort1602 = (short) Class291.method2198(0, ((aByteArrayArray8220[i + 1][i_60_ + 1]) - (aByteArrayArray8232[i + 1][i_60_ + 1])), i_94_);

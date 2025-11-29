@@ -4,7 +4,7 @@
 
 import java.io.File;
 
-final class Class166 {
+final class CursorTypeList {
     static int anInt2178;
     static int anInt2179;
     Index aIndex_2180;
@@ -73,7 +73,7 @@ final class Class166 {
             is = aIndex_2188.method410(-1860, 33, i_1_);
         }
         class222 = new Class222();
-        class222.aClass166_2886 = this;
+        class222.aCursorTypeList_2886 = this;
         if (is != null) class222.method1611(new Class348_Sub49(is), false);
         synchronized (aClass60_2185) {
             aClass60_2185.method582(class222, i_1_, (byte) -116);
@@ -83,7 +83,7 @@ final class Class166 {
 
     static final void method1288(int i, int i_2_) {
         anInt2186++;
-        for (Class348 class348 = Class226.aClass356_2959.method3484(0); class348 != null; class348 = Class226.aClass356_2959.method3482(0)) {
+        for (Class348 class348 = QuickChatCatTypeList.aClass356_2959.method3484(0); class348 != null; class348 = QuickChatCatTypeList.aClass356_2959.method3482(0)) {
             if ((class348.aLong4291 >> 48 & 0xffffL) == (long) i_2_) class348.method2715((byte) 119);
         }
     }
@@ -121,7 +121,8 @@ final class Class166 {
         }
     }
 
-    Class166(Class230 class230, int i, Index index, Index index_9_) {
+    // Class166
+    CursorTypeList(Class230 class230, int i, Index index, Index index_9_) {
         try {
             aIndex_2188 = index;
             this.aIndex_2180 = index_9_;

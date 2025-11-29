@@ -43,7 +43,7 @@ abstract class Class47 {
         Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub23_7231), 1);
         if (i == -59) {
             Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub29_7229), 3);
-            Class348_Sub40.method3038(i ^ 0x3a);
+            Class348_Sub40.updateFeatureMask(i ^ 0x3a);
             Class76.method773(true);
             RuntimeException_Sub1.aBoolean4604 = true;
         }

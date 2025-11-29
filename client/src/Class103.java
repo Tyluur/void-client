@@ -28,18 +28,18 @@ final class Class103 {
         if (i_8_ > i_7_) {
             int i_13_ = (i_8_ + i_7_) / 2;
             int i_14_ = i_7_;
-            Class110_Sub1 class110_sub1 = Class65.aClass110_Sub1Array1146[i_13_];
-            Class65.aClass110_Sub1Array1146[i_13_] = Class65.aClass110_Sub1Array1146[i_8_];
-            Class65.aClass110_Sub1Array1146[i_8_] = class110_sub1;
+            Class110_Sub1 class110_sub1 = StructTypeList.aClass110_Sub1Array1146[i_13_];
+            StructTypeList.aClass110_Sub1Array1146[i_13_] = StructTypeList.aClass110_Sub1Array1146[i_8_];
+            StructTypeList.aClass110_Sub1Array1146[i_8_] = class110_sub1;
             for (int i_15_ = i_7_; i_15_ < i_8_; i_15_++) {
-                if (Class50_Sub4.method473((byte) -122, i_10_, class110_sub1, i, bool_11_, bool, (Class65.aClass110_Sub1Array1146[i_15_])) <= 0) {
-                    Class110_Sub1 class110_sub1_16_ = Class65.aClass110_Sub1Array1146[i_15_];
-                    Class65.aClass110_Sub1Array1146[i_15_] = Class65.aClass110_Sub1Array1146[i_14_];
-                    Class65.aClass110_Sub1Array1146[i_14_++] = class110_sub1_16_;
+                if (Class50_Sub4.method473((byte) -122, i_10_, class110_sub1, i, bool_11_, bool, (StructTypeList.aClass110_Sub1Array1146[i_15_])) <= 0) {
+                    Class110_Sub1 class110_sub1_16_ = StructTypeList.aClass110_Sub1Array1146[i_15_];
+                    StructTypeList.aClass110_Sub1Array1146[i_15_] = StructTypeList.aClass110_Sub1Array1146[i_14_];
+                    StructTypeList.aClass110_Sub1Array1146[i_14_++] = class110_sub1_16_;
                 }
             }
-            Class65.aClass110_Sub1Array1146[i_8_] = Class65.aClass110_Sub1Array1146[i_14_];
-            Class65.aClass110_Sub1Array1146[i_14_] = class110_sub1;
+            StructTypeList.aClass110_Sub1Array1146[i_8_] = StructTypeList.aClass110_Sub1Array1146[i_14_];
+            StructTypeList.aClass110_Sub1Array1146[i_14_] = class110_sub1;
             method950(i, i_7_, i_14_ + -1, bool, (byte) 114, i_10_, bool_11_);
             method950(i, i_14_ - -1, i_8_, bool, (byte) 50, i_10_, bool_11_);
         }

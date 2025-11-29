@@ -55,13 +55,13 @@ final class r_Sub1 extends r {
                         i -= i_7_;
                         i_7_ = this.anInt10466 * i_7_;
                         while (--i >= 0) {
-                            Class33.method339(i_7_, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
+                            EnumTypeList.method339(i_7_, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
                             i_9_ += i_10_;
                             i_7_ += this.anInt10466;
                             i_6_ += i_11_;
                         }
                         while (--i_8_ >= 0) {
-                            Class33.method339(i_7_, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
+                            EnumTypeList.method339(i_7_, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
                             i_6_ += i_11_;
                             i_7_ += this.anInt10466;
                             i_5_ += i_13_;
@@ -71,13 +71,13 @@ final class r_Sub1 extends r {
                         i -= i_7_;
                         i_7_ = this.anInt10466 * i_7_;
                         while (--i >= 0) {
-                            Class33.method339(i_7_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
+                            EnumTypeList.method339(i_7_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
                             i_7_ += this.anInt10466;
                             i_6_ += i_11_;
                             i_9_ += i_10_;
                         }
                         while (--i_8_ >= 0) {
-                            Class33.method339(i_7_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
+                            EnumTypeList.method339(i_7_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
                             i_6_ += i_11_;
                             i_5_ += i_13_;
                             i_7_ += this.anInt10466;
@@ -100,13 +100,13 @@ final class r_Sub1 extends r {
                         i_8_ -= i_7_;
                         i_7_ *= this.anInt10466;
                         while (--i_8_ >= 0) {
-                            Class33.method339(i_7_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
+                            EnumTypeList.method339(i_7_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
                             i_7_ += this.anInt10466;
                             i_5_ += i_10_;
                             i_6_ += i_11_;
                         }
                         while (--i >= 0) {
-                            Class33.method339(i_7_, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
+                            EnumTypeList.method339(i_7_, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
                             i_7_ += this.anInt10466;
                             i_5_ += i_10_;
                             i_9_ += i_13_;
@@ -116,13 +116,13 @@ final class r_Sub1 extends r {
                         i_8_ -= i_7_;
                         i_7_ *= this.anInt10466;
                         while (--i_8_ >= 0) {
-                            Class33.method339(i_7_, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
+                            EnumTypeList.method339(i_7_, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
                             i_6_ += i_11_;
                             i_7_ += this.anInt10466;
                             i_5_ += i_10_;
                         }
                         while (--i >= 0) {
-                            Class33.method339(i_7_, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
+                            EnumTypeList.method339(i_7_, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
                             i_7_ += this.anInt10466;
                             i_9_ += i_13_;
                             i_5_ += i_10_;
@@ -146,13 +146,13 @@ final class r_Sub1 extends r {
                     i -= i_8_;
                     i_8_ *= this.anInt10466;
                     while (--i >= 0) {
-                        Class33.method339(i_8_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
+                        EnumTypeList.method339(i_8_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
                         i_8_ += this.anInt10466;
                         i_6_ += i_11_;
                         i_9_ += i_13_;
                     }
                     while (--i_7_ >= 0) {
-                        Class33.method339(i_8_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
+                        EnumTypeList.method339(i_8_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
                         i_5_ += i_10_;
                         i_8_ += this.anInt10466;
                         i_6_ += i_11_;
@@ -162,13 +162,13 @@ final class r_Sub1 extends r {
                     i -= i_8_;
                     i_8_ = this.anInt10466 * i_8_;
                     while (--i >= 0) {
-                        Class33.method339(i_8_, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
+                        EnumTypeList.method339(i_8_, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
                         i_6_ += i_11_;
                         i_8_ += this.anInt10466;
                         i_9_ += i_13_;
                     }
                     while (--i_7_ >= 0) {
-                        Class33.method339(i_8_, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
+                        EnumTypeList.method339(i_8_, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
                         i_5_ += i_10_;
                         i_8_ += this.anInt10466;
                         i_6_ += i_11_;
@@ -191,13 +191,13 @@ final class r_Sub1 extends r {
                     i_7_ -= i_8_;
                     i_8_ = this.anInt10466 * i_8_;
                     while (--i_7_ >= 0) {
-                        Class33.method339(i_8_, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
+                        EnumTypeList.method339(i_8_, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
                         i_8_ += this.anInt10466;
                         i_5_ += i_11_;
                         i_9_ += i_13_;
                     }
                     while (--i >= 0) {
-                        Class33.method339(i_8_, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
+                        EnumTypeList.method339(i_8_, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
                         i_6_ += i_10_;
                         i_9_ += i_13_;
                         i_8_ += this.anInt10466;
@@ -207,13 +207,13 @@ final class r_Sub1 extends r {
                     i_7_ -= i_8_;
                     i_8_ = this.anInt10466 * i_8_;
                     while (--i_7_ >= 0) {
-                        Class33.method339(i_8_, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
+                        EnumTypeList.method339(i_8_, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
                         i_5_ += i_11_;
                         i_9_ += i_13_;
                         i_8_ += this.anInt10466;
                     }
                     while (--i >= 0) {
-                        Class33.method339(i_8_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
+                        EnumTypeList.method339(i_8_, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
                         i_9_ += i_13_;
                         i_8_ += this.anInt10466;
                         i_6_ += i_10_;
@@ -237,13 +237,13 @@ final class r_Sub1 extends r {
                 i_8_ -= i;
                 i = this.anInt10466 * i;
                 while (--i_8_ >= 0) {
-                    Class33.method339(i, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
+                    EnumTypeList.method339(i, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
                     i += this.anInt10466;
                     i_5_ += i_10_;
                     i_6_ += i_13_;
                 }
                 while (--i_7_ >= 0) {
-                    Class33.method339(i, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
+                    EnumTypeList.method339(i, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
                     i += this.anInt10466;
                     i_9_ += i_11_;
                     i_5_ += i_10_;
@@ -253,13 +253,13 @@ final class r_Sub1 extends r {
                 i_8_ -= i;
                 i *= this.anInt10466;
                 while (--i_8_ >= 0) {
-                    Class33.method339(i, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
+                    EnumTypeList.method339(i, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
                     i_6_ += i_13_;
                     i_5_ += i_10_;
                     i += this.anInt10466;
                 }
                 while (--i_7_ >= 0) {
-                    Class33.method339(i, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
+                    EnumTypeList.method339(i, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
                     i += this.anInt10466;
                     i_9_ += i_11_;
                     i_5_ += i_10_;
@@ -282,13 +282,13 @@ final class r_Sub1 extends r {
                 i_7_ -= i;
                 i = this.anInt10466 * i;
                 while (--i_7_ >= 0) {
-                    Class33.method339(i, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
+                    EnumTypeList.method339(i, i_5_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
                     i_9_ += i_13_;
                     i += this.anInt10466;
                     i_5_ += i_10_;
                 }
                 while (--i_8_ >= 0) {
-                    Class33.method339(i, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
+                    EnumTypeList.method339(i, i_6_ >> 16, this.aByteArray10471, 0, 1354705384, i_9_ >> 16);
                     i_6_ += i_11_;
                     i += this.anInt10466;
                     i_9_ += i_13_;
@@ -298,13 +298,13 @@ final class r_Sub1 extends r {
                 i_7_ -= i;
                 i *= this.anInt10466;
                 while (--i_7_ >= 0) {
-                    Class33.method339(i, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
+                    EnumTypeList.method339(i, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_5_ >> 16);
                     i_5_ += i_10_;
                     i_9_ += i_13_;
                     i += this.anInt10466;
                 }
                 while (--i_8_ >= 0) {
-                    Class33.method339(i, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
+                    EnumTypeList.method339(i, i_9_ >> 16, this.aByteArray10471, 0, 1354705384, i_6_ >> 16);
                     i += this.anInt10466;
                     i_9_ += i_13_;
                     i_6_ += i_11_;
@@ -344,9 +344,9 @@ final class r_Sub1 extends r {
         anInt10470++;
         Class348_Sub40.aClass279_7042 = Class193.method1439(22050, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, 0, 7);
         Class348_Sub42_Sub18.method3273(true, -114, Class172.method1326(null, 9));
-        Class194.aClass279_2596 = Class193.method1439(2048, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, 1, 7);
+        VarBitTypeListClient.aClass279_2596 = Class193.method1439(2048, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, 1, 7);
         Class348_Sub43.aClass348_Sub16_Sub4_7065 = new Class348_Sub16_Sub4();
-        Class194.aClass279_2596.method2088(false, Class348_Sub43.aClass348_Sub16_Sub4_7065);
+        VarBitTypeListClient.aClass279_2596.method2088(false, Class348_Sub43.aClass348_Sub16_Sub4_7065);
         Class57.aClass163_1050 = new Class163(22050, Class22.anInt339);
         Class348_Sub40_Sub17_Sub1.method3093(110);
     }

@@ -84,7 +84,7 @@ final class Class107 {
             if (var_aa != null) {
                 if (i_2_ != 22960) anIntArray1650 = null;
                 var_ha.KA(i, i_1_, i + class46.anInt709, class46.anInt789 + i_1_);
-                if (Class259.anInt3306 != 2 && Class259.anInt3306 != 5 && Class108.aSprite_1664 != null) {
+                if (VarcTypeList.anInt3306 != 2 && VarcTypeList.anInt3306 != 5 && Class108.aSprite_1664 != null) {
                     int i_3_;
                     int i_4_;
                     int i_5_;
@@ -114,9 +114,9 @@ final class Class107 {
                     for (int i_14_ = 0; (Class348_Sub40_Sub38.anInt9479 > i_14_); i_14_++) {
                         int i_15_ = (Class348_Sub15.anIntArray6770[i_14_] * 4 - -2 - i_4_ / 128);
                         int i_16_ = (-(i_3_ / 128) + Class348_Sub40_Sub37.anIntArray9458[i_14_] * 4 - -2);
-                        Class51 class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, Class263.anIntArray3347[i_14_]));
+                        Class51 class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, ObjectTypeList.anIntArray3347[i_14_]));
                         if (class51.anIntArray945 != null) {
-                            class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209), (byte) 47);
+                            class51 = class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47);
                             if (class51 == null || (class51.anInt921 == -1)) continue;
                         }
                         Class318_Sub1.method2385(class46, i_1_, var_aa, class51.anInt921, i_15_, i, (byte) -113, i_16_, var_ha);
@@ -131,13 +131,13 @@ final class Class107 {
                             Class151.method1211(i_1_, (Class348_Sub12.aSpriteArray6742[0]), i, class46, var_aa, i_21_, i_2_ ^ 0x59b2, i_20_);
                         }
                     }
-                    for (int i_22_ = 0; (i_22_ < Class150.anInt2057); i_22_++) {
+                    for (int i_22_ = 0; (i_22_ < IDKTypeList.anInt2057); i_22_++) {
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_22_], -6008)));
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
                             if (npc.method2445((byte) -126) && ((npc.plane) == (Class132.aPlayer_1907.plane))) {
                                 NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);
-                                if (NPCDefinition != null && (NPCDefinition.anIntArray1377 != null)) NPCDefinition = (NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
+                                if (NPCDefinition != null && (NPCDefinition.anIntArray1377 != null)) NPCDefinition = (NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.timedVarDomain), -1));
                                 if (NPCDefinition != null && NPCDefinition.aBoolean1397 && NPCDefinition.aBoolean1396) {
                                     int i_23_ = (-(i_4_ / 128) + (npc.x) / 128);
                                     int i_24_ = ((npc.y) / 128 + -(i_3_ / 128));
@@ -213,7 +213,7 @@ final class Class107 {
                         if (Class248.anInt3203 != 0) {
                             int i_40_ = (-(i_4_ / 128) + (Class248.anInt3203 * 4 + 2) - (-(2 * Class132.aPlayer_1907.method2436((byte) 77)) - -2));
                             int i_41_ = (4 * Class97.anInt1548 - (-2 + i_3_ / 128) + (2 * (Class132.aPlayer_1907.method2436((byte) 59) - 1)));
-                            Class151.method1211(i_1_, (Class25.aSpriteArray367[(!Class348_Sub13.aBoolean6759 ? 0 : 1)]), i, class46, var_aa, i_41_, 2, i_40_);
+                            Class151.method1211(i_1_, (SkyBoxSphereTypeList.aSpriteArray367[(!Class348_Sub13.aBoolean6759 ? 0 : 1)]), i, class46, var_aa, i_41_, 2, i_40_);
                         }
                         if (!Class132.aPlayer_1907.aBoolean10551) var_ha.method3675(3, (byte) -125, -1 + (i - -((class46.anInt709) / 2)), -1 + ((class46.anInt789) / 2 + i_1_), 3, -1);
                     }

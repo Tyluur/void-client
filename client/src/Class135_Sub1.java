@@ -69,7 +69,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
         int i_8_ = Class63.anInt1117;
         int i_9_ = -3 + Class237_Sub1.anInt5819;
         int i_10_ = 20;
-        Class299_Sub2_Sub1.method2270(Class63.anInt1117, i_4_ + anInt4717, var_ha, Class274.aClass274_3507.method2063(Class348_Sub33.anInt6967, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, Class237_Sub1.anInt5819, i_10_);
+        Class299_Sub2_Sub1.method2270(Class63.anInt1117, i_4_ + anInt4717, var_ha, Class274.aClass274_3507.method2063(Class348_Sub33.language, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, Class237_Sub1.anInt5819, i_10_);
         int i_11_ = i_4_ + Class258_Sub4.aClass373_8552.method3597(true);
         if (i != 16) method1154((byte) 9);
         int i_12_ = i_5_ + Class258_Sub4.aClass373_8552.method3594((byte) 95);
@@ -90,7 +90,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                         var_ha.aa(Class50_Sub3.anInt5252, i_17_ - 12, Class348_Sub1_Sub1.anInt8806, 16, (-Class348_Sub42_Sub4.anInt9511 + 255 << 24) | Class264.anInt3374, 1);
                     i_15_++;
                 }
-                Class84.method826(i_10_, Class50_Sub3.anInt5252, Class348_Sub1_Sub1.anInt8806, Class177.anInt4669, 125, Class373.anInt4534, var_ha);
+                SkyBoxTypeList.method826(i_10_, Class50_Sub3.anInt5252, Class348_Sub1_Sub1.anInt8806, Class177.anInt4669, 125, Class373.anInt4534, var_ha);
             }
         } else {
             int i_13_ = 0;
@@ -101,7 +101,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
                 i_13_++;
             }
         }
-        Class84.method826(i_10_, anInt4717 + i_4_, Class63.anInt1117, Class237_Sub1.anInt5819, -75, Class348_Sub42_Sub5.anInt9532 - -i_5_, var_ha);
+        SkyBoxTypeList.method826(i_10_, anInt4717 + i_4_, Class63.anInt1117, Class237_Sub1.anInt5819, -75, Class348_Sub42_Sub5.anInt9532 - -i_5_, var_ha);
         if (Class348_Sub42_Sub6.aBoolean9535) {
             int i_20_ = 0;
             for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-77)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 111))) {

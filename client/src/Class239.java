@@ -16,7 +16,7 @@ abstract class Class239 {
     static byte[] aByteArray3144 = new byte[520];
     static Class114 aClass114_3145;
     static Index PARTICLES;
-    static Class166 aClass166_3147;
+    static CursorTypeList cursorTypeList; // aClass166_3147
 
     static final Class231[] method1709(int i) {
         if (i > -110) method1715(97);
@@ -52,7 +52,7 @@ abstract class Class239 {
         PARTICLES = null;
         aClass114_3135 = null;
         aByteArray3144 = null;
-        aClass166_3147 = null;
+        cursorTypeList = null;
         if (i < 13) method1709(-99);
     }
 

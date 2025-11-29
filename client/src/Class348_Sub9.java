@@ -54,7 +54,7 @@ final class Class348_Sub9 extends Class348 {
                     if ((is != null && class318_sub1.plane >= i && (is[class318_sub1.plane][i_5_][i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((byte) -79)) {
                         if (!bool && i_5_ >= Class239_Sub25.anInt6111 - 16 && i_5_ <= Class239_Sub25.anInt6111 + 16 && i_6_ >= Class285_Sub2.anInt8502 - 16 && i_6_ <= Class285_Sub2.anInt8502 + 16) {
                             if (Class348_Sub40_Sub5.aBoolean9121) {
-                                Class319.aClass315Array3982[Class139.anInt1949++].method2361(-15481, class318_sub1);
+                                GfxTypeList.aClass315Array3982[Class139.anInt1949++].method2361(-15481, class318_sub1);
                                 Class139.anInt1949 %= Class75_Sub1.anInt5652;
                             } else class318_sub1.method2387(Class9.aHa171, -128);
                         }
@@ -181,7 +181,7 @@ final class Class348_Sub9 extends Class348 {
                     if (i_12_ != i_11_) {
                         this.anInt6685 = i_12_;
                         NPCDefinition NPCDefinition = (this.aNpc_6691.aNPCDefinition_10505);
-                        if (NPCDefinition.anIntArray1377 != null) NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1);
+                        if (NPCDefinition.anIntArray1377 != null) NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.timedVarDomain), -1);
                         if (NPCDefinition == null) {
                             this.anInt6677 = this.anInt6694 = 0;
                             this.anInt6681 = 256;
@@ -197,7 +197,7 @@ final class Class348_Sub9 extends Class348 {
                     }
                 }
             } else {
-                Class51 class51 = (this.aClass51_6695.method480(Class318_Sub1_Sub3_Sub3.aClass170_10209, (byte) 47));
+                Class51 class51 = (this.aClass51_6695.method480(Class318_Sub1_Sub3_Sub3.timedVarDomain, (byte) 47));
                 if (class51 == null) {
                     this.anInt6681 = 256;
                     this.aBoolean6674 = false;

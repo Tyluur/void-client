@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class217 {
+final class VarPlayerTypeListClient {
     static int anInt2840;
     static int anInt2841;
     private final Index aIndex_2842;
@@ -68,7 +68,8 @@ final class Class217 {
         }
     }
 
-    Class217(Class230 class230, int i, Index index) {
+    // Class217
+    VarPlayerTypeListClient(Class230 class230, int i, Index index) {
         try {
             aIndex_2842 = index;
             if (aIndex_2842 != null) this.anInt2845 = aIndex_2842.method407(0, 16);

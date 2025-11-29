@@ -22,7 +22,7 @@ final class Class10 {
     int anInt188;
     Class348_Sub19_Sub1 aClass348_Sub19_Sub1_189;
     static int anInt190;
-    static Class87 aClass87_191;
+    static SeqTypeList seqTypeList; // aClass87_191
     Class348_Sub10 aClass348_Sub10_192;
 
     static final String method217(byte i) {
@@ -37,14 +37,14 @@ final class Class10 {
         anIntArray187 = null;
         anIntArray179 = null;
         aClass230_186 = null;
-        aClass87_191 = null;
+        seqTypeList = null;
         anIntArrayArray174 = null;
     }
 
     static final boolean method219(int i, boolean bool, int i_0_) {
         if (bool != false) return false;
         anInt190++;
-        return (i & 0x800) != 0 | Class278.method2077(-106, i_0_, i) || Class348_Sub42_Sub8_Sub2.method3200(i, i_0_, (byte) 88);
+        return (i & 0x800) != 0 | NPCTypeList.method2077(-106, i_0_, i) || Class348_Sub42_Sub8_Sub2.method3200(i, i_0_, (byte) 88);
     }
 
     final boolean method220(byte i) {

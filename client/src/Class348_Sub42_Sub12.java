@@ -68,7 +68,7 @@ final class Class348_Sub42_Sub12 extends Class348_Sub42 {
         if (Class239_Sub12.anInt5973 >= 100) {
             int i_8_ = Class352.anInt4336 * 512 - -256;
             int i_9_ = Class281.anInt3647 * 512 - -256;
-            int i_10_ = (Class275.method2064(i_8_, Class355.anInt4372, 11219, i_9_) + -Class121.anInt1797);
+            int i_10_ = (Class275.method2064(i_8_, QuickChatPhraseTypeList.anInt4372, 11219, i_9_) + -Class121.anInt1797);
             int i_11_ = i_8_ - Class286_Sub4.anInt6246;
             int i_12_ = -Class305.anInt3855 + i_10_;
             int i_13_ = i_9_ - Class59_Sub2_Sub2.anInt8685;

@@ -49,13 +49,13 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
         Class348_Sub42.method3163((byte) -114);
         for (int i_4_ = 0; i_4_ < 2048; i_4_++)
             Class294.aPlayerArray5058[i_4_] = null;
-        Class150.anInt2057 = 0;
+        IDKTypeList.anInt2057 = 0;
         Class282.aClass356_3654.method3481(i ^ 0xb);
         Class348_Sub32.anInt6930 = 0;
         Class130.aClass356_1895.method3481(0);
         Class128.method1122(0);
         Class135_Sub1.anInt4718 = 0;
-        Class318_Sub1_Sub3_Sub3.aClass170_10209.method1314((byte) -107);
+        Class318_Sub1_Sub3_Sub3.timedVarDomain.method1314((byte) -107);
         Class301.method2282(-12648);
         Class50_Sub3.method465(i + -1636518175);
         Class101_Sub2.aLong5745 = 0L;

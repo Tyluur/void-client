@@ -37,7 +37,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40 {
             Class301.method2280((byte) (-4 + Class239_Sub15.anInt6006 & 0xff), 28587);
             Class46.method440(2, (byte) -61);
         }
-        Class318_Sub1_Sub3_Sub5.anInt10395 = Class355.anInt4372;
+        Class318_Sub1_Sub3_Sub5.anInt10395 = QuickChatPhraseTypeList.anInt4372;
     }
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_2_) {

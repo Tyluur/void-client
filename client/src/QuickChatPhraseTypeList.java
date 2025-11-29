@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class355 {
+final class QuickChatPhraseTypeList {
     private final Class60 aClass60_4362;
     static int anInt4363;
     int anInt4364;
@@ -35,7 +35,7 @@ final class Class355 {
         if (i >= 32768) is = aIndex_4369.method410(-1860, 1, 0x7fff & i);
         else is = aIndex_4368.method410(-1860, 1, i);
         class348_sub42_sub10 = new Class348_Sub42_Sub10();
-        class348_sub42_sub10.aClass355_9567 = this;
+        class348_sub42_sub10.aQuickChatPhraseTypeList_9567 = this;
         if (is != null) class348_sub42_sub10.method3218(new Class348_Sub49(is), 0);
         if (i_0_ >= -86) method3473(-12);
         if (i >= 32768) class348_sub42_sub10.method3209(false);
@@ -62,7 +62,8 @@ final class Class355 {
         anObject4366 = null;
     }
 
-    Class355(int i, Index index, Index index_1_, Interface15 interface15) {
+    // Class355
+    QuickChatPhraseTypeList(int i, Index index, Index index_1_, Interface15 interface15) {
         this.anInt4364 = 0;
         aClass60_4362 = new Class60(64);
         anInterface15_4373 = null;

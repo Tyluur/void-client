@@ -98,7 +98,7 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements Interf
             else var_ha.method3684(class98);
         }
         aBoolean9945 = (class64.F() || (this.aClass235_9955.aClass318_Sub10_3081) != null);
-        if (aClass30_9950 != null) Class255.method1935(this.y, this.anInt6382, aClass30_9950, class64, false, this.x);
+        if (aClass30_9950 != null) ItemTypeList.method1935(this.y, this.anInt6382, aClass30_9950, class64, false, this.x);
         else aClass30_9950 = (Class348_Sub23_Sub1.method2967(this.x, class64, this.y, this.anInt6382, 2));
         return class318_sub4;
     }

@@ -5,7 +5,7 @@
 final class Class348_Sub40_Sub4 extends Class348_Sub40 {
     static Class262 aClass262_9111 = new Class262();
     static int anInt9112;
-    static d aD9113;
+    static d js5TextureSource; // aD9113
     static Class101 aClass101_9114;
     static int anInt9115;
 
@@ -21,7 +21,7 @@ final class Class348_Sub40_Sub4 extends Class348_Sub40 {
         if (i > -32) method3058(-76, 25, -12);
         aClass101_9114 = null;
         aClass262_9111 = null;
-        aD9113 = null;
+        js5TextureSource = null;
     }
 
     public Class348_Sub40_Sub4() {
@@ -31,8 +31,8 @@ final class Class348_Sub40_Sub4 extends Class348_Sub40 {
     static final void method3058(int i, int i_1_, int i_2_) {
         Class357 class357 = Class147.aClass357ArrayArrayArray2029[i][i_1_][i_2_];
         if (class357 != null) {
-            Class183.method1376(class357.aClass318_Sub1_Sub4_4406);
-            Class183.method1376(class357.aClass318_Sub1_Sub4_4403);
+            FloorUnderlayTypeList.method1376(class357.aClass318_Sub1_Sub4_4406);
+            FloorUnderlayTypeList.method1376(class357.aClass318_Sub1_Sub4_4403);
             if (class357.aClass318_Sub1_Sub4_4406 != null) class357.aClass318_Sub1_Sub4_4406 = null;
             if (class357.aClass318_Sub1_Sub4_4403 != null) class357.aClass318_Sub1_Sub4_4403 = null;
         }

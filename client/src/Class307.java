@@ -38,13 +38,13 @@ final class Class307 {
         anInt3878++;
         if (bool) return 0;
         Class348_Sub13 class348_sub13 = Class258_Sub4.method1974((byte) -9, i_6_, bool);
-        if (class348_sub13 == null) return (Class127_Sub1.aClass271_8378.method2044(109, i_6_).anInt9542);
+        if (class348_sub13 == null) return (Class127_Sub1.invTypeList.method2044(109, i_6_).anInt9542);
         int i_7_ = 0;
         for (int i_8_ = 0; (i_8_ < class348_sub13.anIntArray6757.length); i_8_++) {
             if (class348_sub13.anIntArray6757[i_8_] == -1) i_7_++;
         }
         if (i != 35) method2301((byte) -102, 43, true);
-        i_7_ += (Class127_Sub1.aClass271_8378.method2044(82, i_6_).anInt9542 + -class348_sub13.anIntArray6757.length);
+        i_7_ += (Class127_Sub1.invTypeList.method2044(82, i_6_).anInt9542 + -class348_sub13.anIntArray6757.length);
         return i_7_;
     }
 }

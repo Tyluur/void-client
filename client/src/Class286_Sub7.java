@@ -168,8 +168,8 @@ final class Class286_Sub7 extends Class286 {
     static final void method2168(int i, int i_7_, int i_8_) {
         Class357 class357 = Class147.aClass357ArrayArrayArray2029[i][i_7_][i_8_];
         if (class357 != null) {
-            Class183.method1376(class357.aClass318_Sub1_Sub5_4395);
-            Class183.method1376(class357.aClass318_Sub1_Sub5_4407);
+            FloorUnderlayTypeList.method1376(class357.aClass318_Sub1_Sub5_4395);
+            FloorUnderlayTypeList.method1376(class357.aClass318_Sub1_Sub5_4407);
             if (class357.aClass318_Sub1_Sub5_4395 != null) class357.aClass318_Sub1_Sub5_4395 = null;
             if (class357.aClass318_Sub1_Sub5_4407 != null) class357.aClass318_Sub1_Sub5_4407 = null;
         }

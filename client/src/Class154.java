@@ -22,10 +22,10 @@ final class Class154 {
     static int anInt2106;
     static int anInt2107;
 
-    final Class64 method1226(Interface17 interface17, Class17 class17, Class182[] class182s, boolean bool, Class255 class255, int i, Class17 class17_0_, int i_1_, boolean bool_2_, int i_3_, int[] is, int i_4_, Class150 class150, int i_5_, ha var_ha, Class278 class278, Class87 class87, int i_6_, int i_7_, int i_8_, Class261 class261) {
+    final Class64 method1226(Interface17 interface17, Class17 class17, Class182[] class182s, boolean bool, ItemTypeList itemTypeList, int i, Class17 class17_0_, int i_1_, boolean bool_2_, int i_3_, int[] is, int i_4_, IDKTypeList IDKTypeList, int i_5_, ha var_ha, NPCTypeList NPCTypeList, SeqTypeList seqTypeList, int i_6_, int i_7_, int i_8_, BASTypeList BASTypeList) {
         try {
             anInt2097++;
-            if (this.anInt2093 != -1) return (class278.method2079(this.anInt2093, -1).method800(i, class182s, class87, !bool_2_, class17, i_8_, class261, i_7_, class17_0_, interface17, var_ha, i_3_, is, i_1_, i_6_, i_4_, i_5_));
+            if (this.anInt2093 != -1) return (NPCTypeList.method2079(this.anInt2093, -1).method800(i, class182s, seqTypeList, !bool_2_, class17, i_8_, BASTypeList, i_7_, class17_0_, interface17, var_ha, i_3_, is, i_1_, i_6_, i_4_, i_5_));
             int i_9_ = i_4_;
             long l = aLong2102;
             int[] is_10_ = anIntArray2092;
@@ -60,14 +60,14 @@ final class Class154 {
             for (int i_17_ = 0; i_16_ > i_17_; i_17_++) {
                 Class95.aClass348_Sub42_Sub17Array1543[i_17_] = null;
                 if (class182s[i_17_] != null) {
-                    Class17 class17_18_ = class87.method835((class182s[i_17_].anInt2454), 7);
+                    Class17 class17_18_ = seqTypeList.method835((class182s[i_17_].anInt2454), 7);
                     if (class17_18_.anIntArray237 != null) {
                         bool_15_ = true;
                         Class57.aClass17Array1048[i_17_] = class17_18_;
                         int i_19_ = class182s[i_17_].anInt2451;
                         int i_20_ = class182s[i_17_].anInt2455;
                         int i_21_ = class17_18_.anIntArray237[i_19_];
-                        Class95.aClass348_Sub42_Sub17Array1543[i_17_] = class87.method839(i_21_ >>> 16, 3);
+                        Class95.aClass348_Sub42_Sub17Array1543[i_17_] = seqTypeList.method839(i_21_ >>> 16, 3);
                         i_21_ &= 0xffff;
                         Class184.anIntArray2471[i_17_] = i_21_;
                         if (Class95.aClass348_Sub42_Sub17Array1543[i_17_] != null) {
@@ -79,7 +79,7 @@ final class Class154 {
                             Class100.anIntArray1583[i_17_] = class17_18_.anIntArray267[i_19_];
                             Class50_Sub3.anIntArray5241[i_17_] = class182s[i_17_].anInt2456;
                             int i_22_ = class17_18_.anIntArray237[i_20_];
-                            Class295.aClass348_Sub42_Sub17Array3753[i_17_] = class87.method839(i_22_ >>> 16, 3);
+                            Class295.aClass348_Sub42_Sub17Array3753[i_17_] = seqTypeList.method839(i_22_ >>> 16, 3);
                             i_22_ &= 0xffff;
                             Class227.anIntArray2967[i_17_] = i_22_;
                             if (Class295.aClass348_Sub42_Sub17Array3753[i_17_] != null) {
@@ -110,7 +110,7 @@ final class Class154 {
                 if (class17_0_ != null) {
                     i_23_ = class17_0_.anIntArray237[i_7_];
                     int i_32_ = i_23_ >>> 16;
-                    class348_sub42_sub17 = class87.method839(i_32_, 3);
+                    class348_sub42_sub17 = seqTypeList.method839(i_32_, 3);
                     i_23_ &= 0xffff;
                     if (class348_sub42_sub17 != null) {
                         bool_13_ |= class348_sub42_sub17.method3272(i_23_, 0);
@@ -121,7 +121,7 @@ final class Class154 {
                         i_24_ = class17_0_.anIntArray237[i_1_];
                         i_25_ = class17_0_.anIntArray267[i_7_];
                         int i_33_ = i_24_ >>> 16;
-                        class348_sub42_sub17_26_ = (i_32_ == i_33_ ? class348_sub42_sub17 : class87.method839(i_33_, 3));
+                        class348_sub42_sub17_26_ = (i_32_ == i_33_ ? class348_sub42_sub17 : seqTypeList.method839(i_33_, 3));
                         i_24_ &= 0xffff;
                         if (class348_sub42_sub17_26_ != null) {
                             bool_13_ |= class348_sub42_sub17_26_.method3272(i_24_, 0);
@@ -135,7 +135,7 @@ final class Class154 {
                     i_27_ = class17.anIntArray237[i_6_];
                     int i_34_ = i_27_ >>> 16;
                     i_27_ &= 0xffff;
-                    class348_sub42_sub17_30_ = class87.method839(i_34_, 3);
+                    class348_sub42_sub17_30_ = seqTypeList.method839(i_34_, 3);
                     if (class348_sub42_sub17_30_ != null) {
                         bool_13_ |= class348_sub42_sub17_30_.method3272(i_27_, 0);
                         bool_12_ |= class348_sub42_sub17_30_.method3271(i_27_, 14);
@@ -146,7 +146,7 @@ final class Class154 {
                         i_29_ = class17.anIntArray267[i_6_];
                         int i_35_ = i_28_ >>> 16;
                         i_28_ &= 0xffff;
-                        class348_sub42_sub17_31_ = (i_35_ == i_34_ ? class348_sub42_sub17_30_ : class87.method839(i_35_, 3));
+                        class348_sub42_sub17_31_ = (i_35_ == i_34_ ? class348_sub42_sub17_30_ : seqTypeList.method839(i_35_, 3));
                         if (class348_sub42_sub17_31_ != null) {
                             bool_13_ |= class348_sub42_sub17_31_.method3272(i_28_, 0);
                             bool_12_ |= class348_sub42_sub17_31_.method3271(i_28_, 14);
@@ -163,7 +163,7 @@ final class Class154 {
                 class64 = (Class64) Class24.aClass60_355.method583(l, -47);
             }
             Class225 class225 = null;
-            if (anInt2103 != -1) class225 = class261.method1983(anInt2103, 32);
+            if (anInt2103 != -1) class225 = BASTypeList.method1983(anInt2103, 32);
             if (class64 == null || var_ha.method3667(class64.ua(), i_9_) != 0) {
                 if (class64 != null) i_9_ = var_ha.method3679(i_9_, class64.ua());
                 int i_36_ = i_9_;
@@ -171,8 +171,8 @@ final class Class154 {
                 for (int i_38_ = 0; i_38_ < 12; i_38_++) {
                     int i_39_ = is_10_[i_38_];
                     if ((0x40000000 & i_39_) == 0) {
-                        if ((~0x7fffffff & i_39_) != 0 && !class150.method1203((byte) 33, i_39_ & 0x3fffffff).method348((byte) 34)) bool_37_ = true;
-                    } else if (!class255.method1940(94, 0x3fffffff & i_39_).method1565(this.aBoolean2100, -1)) bool_37_ = true;
+                        if ((~0x7fffffff & i_39_) != 0 && !IDKTypeList.method1203((byte) 33, i_39_ & 0x3fffffff).method348((byte) 34)) bool_37_ = true;
+                    } else if (!itemTypeList.method1940(94, 0x3fffffff & i_39_).method1565(this.aBoolean2100, -1)) bool_37_ = true;
                 }
                 if (bool_37_) {
                     if (aLong2094 != -1) {
@@ -187,11 +187,11 @@ final class Class154 {
                         int i_41_ = is_10_[i_40_];
                         if ((0x40000000 & i_41_) == 0) {
                             if ((~0x7fffffff & i_41_) != 0) {
-                                Class124 class124 = class150.method1203((byte) 33, i_41_ & 0x3fffffff).method341(91);
+                                Class124 class124 = IDKTypeList.method1203((byte) 33, i_41_ & 0x3fffffff).method341(91);
                                 if (class124 != null) class124s[i_40_] = class124;
                             }
                         } else {
-                            Class124 class124 = (class255.method1940(104, i_41_ & 0x3fffffff).method1558(this.aBoolean2100, !bool_2_));
+                            Class124 class124 = (itemTypeList.method1940(104, i_41_ & 0x3fffffff).method1558(this.aBoolean2100, !bool_2_));
                             if (class124 != null) class124s[i_40_] = class124;
                         }
                     }
@@ -283,22 +283,22 @@ final class Class154 {
             }
             return class64_51_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.C(" + (interface17 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (class182s != null ? "{...}" : "null") + ',' + bool + ',' + (class255 != null ? "{...}" : "null") + ',' + i + ',' + (class17_0_ != null ? "{...}" : "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (is != null ? "{...}" : "null") + ',' + i_4_ + ',' + (class150 != null ? "{...}" : "null") + ',' + i_5_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (class278 != null ? "{...}" : "null") + ',' + (class87 != null ? "{...}" : "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (class261 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.C(" + (interface17 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (class182s != null ? "{...}" : "null") + ',' + bool + ',' + (itemTypeList != null ? "{...}" : "null") + ',' + i + ',' + (class17_0_ != null ? "{...}" : "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (is != null ? "{...}" : "null") + ',' + i_4_ + ',' + (IDKTypeList != null ? "{...}" : "null") + ',' + i_5_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (BASTypeList != null ? "{...}" : "null") + ')'));
         }
     }
 
-    final void method1227(byte i, int i_61_, int i_62_, Class255 class255) {
+    final void method1227(byte i, int i_61_, int i_62_, ItemTypeList itemTypeList) {
         try {
             if (i == 42) {
                 anInt2099++;
                 if (i_62_ == -1) anIntArray2092[i_61_] = 0;
-                else if (class255.method1940(-125, i_62_) != null) {
+                else if (itemTypeList.method1940(-125, i_62_) != null) {
                     anIntArray2092[i_61_] = Class273.method2057(1073741824, i_62_);
                     method1234(-100);
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (class255 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (itemTypeList != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -324,10 +324,10 @@ final class Class154 {
         method1234(-78);
     }
 
-    final Class64 method1230(Class255 class255, int i, Class87 class87, Class150 class150, Interface17 interface17, Class278 class278, int i_66_, int i_67_, int i_68_, Class17 class17, int i_69_, ha var_ha) {
+    final Class64 method1230(ItemTypeList itemTypeList, int i, SeqTypeList seqTypeList, IDKTypeList IDKTypeList, Interface17 interface17, NPCTypeList NPCTypeList, int i_66_, int i_67_, int i_68_, Class17 class17, int i_69_, ha var_ha) {
         try {
             anInt2107++;
-            if (this.anInt2093 != -1) return (class278.method2079(this.anInt2093, -1).method803(interface17, var_ha, i_69_, i_67_, class17, class87, i_66_, 121, i_68_));
+            if (this.anInt2093 != -1) return (NPCTypeList.method2079(this.anInt2093, -1).method803(interface17, var_ha, i_69_, i_67_, class17, seqTypeList, i_66_, 121, i_68_));
             int i_70_ = i_68_;
             if (class17 != null) {
                 boolean bool = false;
@@ -342,7 +342,7 @@ final class Class154 {
                 i_74_ = class17.anIntArray237[i_66_];
                 int i_77_ = i_74_ >>> 16;
                 i_74_ &= 0xffff;
-                Class348_Sub42_Sub17 class348_sub42_sub17 = class87.method839(i_77_, 3);
+                Class348_Sub42_Sub17 class348_sub42_sub17 = seqTypeList.method839(i_77_, 3);
                 if (class348_sub42_sub17 != null) {
                     bool_71_ |= class348_sub42_sub17.method3272(i_74_, 0);
                     bool |= class348_sub42_sub17.method3271(i_74_, 14);
@@ -352,7 +352,7 @@ final class Class154 {
                 if ((class17.aBoolean241 || Class28.aBoolean5002) && i_67_ != -1 && i_67_ < class17.anIntArray237.length) {
                     i_75_ = class17.anIntArray237[i_67_];
                     int i_78_ = i_75_ >>> 16;
-                    Class348_Sub42_Sub17 class348_sub42_sub17_79_ = (i_78_ != i_77_ ? class87.method839(i_78_, i ^ ~0x17f6eb54) : class348_sub42_sub17);
+                    Class348_Sub42_Sub17 class348_sub42_sub17_79_ = (i_78_ != i_77_ ? seqTypeList.method839(i_78_, i ^ ~0x17f6eb54) : class348_sub42_sub17);
                     i_75_ &= 0xffff;
                     if (class348_sub42_sub17_79_ != null) {
                         bool_71_ |= class348_sub42_sub17_79_.method3272(i_75_, 0);
@@ -377,8 +377,8 @@ final class Class154 {
                 for (int i_81_ = 0; i_81_ < 12; i_81_++) {
                     int i_82_ = anIntArray2092[i_81_];
                     if ((i_82_ & 0x40000000) != 0) {
-                        if (!class255.method1940(i ^ 0x17f6eb2c, 0x3fffffff & i_82_).method1555((byte) 97, this.aBoolean2100)) bool = true;
-                    } else if ((~0x7fffffff & i_82_) != 0 && !class150.method1203((byte) 33, i_82_ & 0x3fffffff).method342((byte) 110)) bool = true;
+                        if (!itemTypeList.method1940(i ^ 0x17f6eb2c, 0x3fffffff & i_82_).method1555((byte) 97, this.aBoolean2100)) bool = true;
+                    } else if ((~0x7fffffff & i_82_) != 0 && !IDKTypeList.method1203((byte) 33, i_82_ & 0x3fffffff).method342((byte) 110)) bool = true;
                 }
                 if (bool) return null;
                 Class124[] class124s = new Class124[12];
@@ -387,11 +387,11 @@ final class Class154 {
                     int i_85_ = anIntArray2092[i_84_];
                     if ((i_85_ & 0x40000000) == 0) {
                         if ((i_85_ & ~0x7fffffff) != 0) {
-                            Class124 class124 = class150.method1203((byte) 33, i_85_ & 0x3fffffff).method343((byte) -73);
+                            Class124 class124 = IDKTypeList.method1203((byte) 33, i_85_ & 0x3fffffff).method343((byte) -73);
                             if (class124 != null) class124s[i_83_++] = class124;
                         }
                     } else {
-                        Class124 class124 = (class255.method1940(-107, i_85_ & 0x3fffffff).method1554(this.aBoolean2100, -14));
+                        Class124 class124 = (itemTypeList.method1940(-107, i_85_ & 0x3fffffff).method1554(this.aBoolean2100, -14));
                         if (class124 != null) class124s[i_83_++] = class124;
                     }
                 }
@@ -413,7 +413,7 @@ final class Class154 {
             class64_88_ = class17.method269(123, class64, i_67_, i_69_, i_68_, i_66_);
             return class64_88_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.J(" + (class255 != null ? "{...}" : "null") + ',' + i + ',' + (class87 != null ? "{...}" : "null") + ',' + (class150 != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (class278 != null ? "{...}" : "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (class17 != null ? "{...}" : "null") + ',' + i_69_ + ',' + (var_ha != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.J(" + (itemTypeList != null ? "{...}" : "null") + ',' + i + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + (IDKTypeList != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (class17 != null ? "{...}" : "null") + ',' + i_69_ + ',' + (var_ha != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -425,7 +425,7 @@ final class Class154 {
         }
     }
 
-    final Class64 method1232(int i, int i_91_, int i_92_, int i_93_, Class87 class87, Class150 class150, int i_94_, int i_95_, int i_96_, ha var_ha, int i_97_, Class17 class17) {
+    final Class64 method1232(int i, int i_91_, int i_92_, int i_93_, SeqTypeList seqTypeList, IDKTypeList IDKTypeList, int i_94_, int i_95_, int i_96_, ha var_ha, int i_97_, Class17 class17) {
         try {
             anInt2106++;
             int i_98_ = i_91_;
@@ -441,7 +441,7 @@ final class Class154 {
                 i_98_ |= 0x20;
                 i_102_ = class17.anIntArray237[i_97_];
                 int i_105_ = i_102_ >>> 16;
-                Class348_Sub42_Sub17 class348_sub42_sub17 = class87.method839(i_105_, 3);
+                Class348_Sub42_Sub17 class348_sub42_sub17 = seqTypeList.method839(i_105_, 3);
                 i_102_ &= 0xffff;
                 if (class348_sub42_sub17 != null) {
                     bool_99_ |= class348_sub42_sub17.method3272(i_102_, i_94_ ^ ~0x3be2);
@@ -454,7 +454,7 @@ final class Class154 {
                     int i_106_ = i_103_ >>> 16;
                     i_103_ &= 0xffff;
                     Class348_Sub42_Sub17 class348_sub42_sub17_107_;
-                    if (i_105_ != i_106_) class348_sub42_sub17_107_ = class87.method839(i_103_ >>> 16, 3);
+                    if (i_105_ != i_106_) class348_sub42_sub17_107_ = seqTypeList.method839(i_103_ >>> 16, 3);
                     else class348_sub42_sub17_107_ = class348_sub42_sub17;
                     if (class348_sub42_sub17_107_ != null) {
                         bool_99_ |= class348_sub42_sub17_107_.method3272(i_103_, 0);
@@ -477,12 +477,12 @@ final class Class154 {
                 int i_108_ = i_98_;
                 Class124[] class124s = new Class124[3];
                 int i_109_ = 0;
-                if (!class150.method1203((byte) 33, i_95_).method342((byte) 114) || !class150.method1203((byte) 33, i_93_).method342((byte) 102) || !class150.method1203((byte) 33, i_92_).method342((byte) 94)) return null;
-                Class124 class124 = class150.method1203((byte) 33, i_95_).method343((byte) -50);
+                if (!IDKTypeList.method1203((byte) 33, i_95_).method342((byte) 114) || !IDKTypeList.method1203((byte) 33, i_93_).method342((byte) 102) || !IDKTypeList.method1203((byte) 33, i_92_).method342((byte) 94)) return null;
+                Class124 class124 = IDKTypeList.method1203((byte) 33, i_95_).method343((byte) -50);
                 if (class124 != null) class124s[i_109_++] = class124;
-                class124 = class150.method1203((byte) 33, i_93_).method343((byte) -105);
+                class124 = IDKTypeList.method1203((byte) 33, i_93_).method343((byte) -105);
                 if (class124 != null) class124s[i_109_++] = class124;
-                class124 = class150.method1203((byte) 33, i_92_).method343((byte) -30);
+                class124 = IDKTypeList.method1203((byte) 33, i_92_).method343((byte) -30);
                 if (class124 != null) class124s[i_109_++] = class124;
                 class124 = new Class124(class124s, i_109_);
                 i_108_ |= 0x4000;
@@ -503,21 +503,21 @@ final class Class154 {
             class64 = class17.method269(-32, class64, i, i_96_, i_91_, i_97_);
             return class64;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (class87 != null ? "{...}" : "null") + ',' + (class150 != null ? "{...}" : "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_97_ + ',' + (class17 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + (IDKTypeList != null ? "{...}" : "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_97_ + ',' + (class17 != null ? "{...}" : "null") + ')'));
         }
     }
 
-    final void method1233(Class150 class150, int i, int i_112_, int i_113_) {
+    final void method1233(IDKTypeList IDKTypeList, int i, int i_112_, int i_113_) {
         try {
             anInt2098++;
             int i_114_ = Class283.anIntArray3661[i_113_];
-            if (class150.method1203((byte) 33, i) != null) {
+            if (IDKTypeList.method1203((byte) 33, i) != null) {
                 if (i_112_ != -1) aLong2094 = -53L;
                 anIntArray2092[i_114_] = Class273.method2057(i, -2147483648);
                 method1234(-54);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.D(" + (class150 != null ? "{...}" : "null") + ',' + i + ',' + i_112_ + ',' + i_113_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.D(" + (IDKTypeList != null ? "{...}" : "null") + ',' + i + ',' + i_112_ + ',' + i_113_ + ')'));
         }
     }
 

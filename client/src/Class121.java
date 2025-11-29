@@ -63,7 +63,7 @@ final class Class121 {
         if (!Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_9_, i_15_, i_14_, i_14_, i_14_, i_15_, false)) return false;
         if (i_12_ != 18507) method1082(-107, false);
         if (!Class286_Sub7.method2169(i_9_, i_13_, i_8_, i_13_, i_15_, i_14_, i_14_, i_14_, i_8_, false)) return false;
-        if (Class141.anInt1974 > i_9_) {
+        if (MSITypeList.anInt1974 > i_9_) {
             if (!Class286_Sub7.method2169(i_9_, i_9_, i_15_, i_9_, i_15_, i_14_, i_14_, i_10_, i_8_, false)) return false;
             if (!Class286_Sub7.method2169(i_9_, i_9_, i_15_, i_9_, i_8_, i_14_, i_10_, i_10_, i_8_, false)) return false;
         } else {

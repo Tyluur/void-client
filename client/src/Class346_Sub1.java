@@ -75,6 +75,9 @@ final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener
             } else i_3_ = 0;
         } else i_3_ = 0;
         if (i != i_3_) {
+            // space 83
+            // 1-5 - 16-20
+            System.out.println("Key pressed: " + i_3_ + " type:" + i_2_);
             method2702(i_3_, 128, '\0', i_2_);
             keyevent.consume();
         }

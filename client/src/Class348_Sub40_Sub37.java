@@ -98,7 +98,7 @@ final class Class348_Sub40_Sub37 extends Class348_Sub40 {
         if (i != 27) method3146(-85, 87, (byte) 91, 46, -77, 54, null, null, -117);
         Class248.anInt3203 = -1;
         Class97.anInt1548 = -1;
-        Class259.anInt3306 = 0;
+        VarcTypeList.anInt3306 = 0;
         anInt9459++;
     }
 

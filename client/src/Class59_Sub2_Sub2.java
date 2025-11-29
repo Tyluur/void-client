@@ -115,7 +115,7 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
             anInt8676++;
             boolean bool_29_;
             if (i_16_ != 1) {
-                if (i_16_ == 2) bool_29_ = Class263.method2007(i_19_, -125, i_23_, class361, i, i_21_, i_24_, i_17_, i_25_, i_20_, i_26_);
+                if (i_16_ == 2) bool_29_ = ObjectTypeList.method2007(i_19_, -125, i_23_, class361, i, i_21_, i_24_, i_17_, i_25_, i_20_, i_26_);
                 else bool_29_ = Class189.method1420(i_24_, i_26_, -73, i_21_, i_17_, i, i_20_, i_25_, i_16_, class361, i_19_, i_23_);
             } else bool_29_ = Class5_Sub1.method187(i, i_23_, i_21_, i_26_, i_25_, i_24_, class361, i_19_, i_17_, i_20_, 1109655552);
             int i_30_ = i_20_ - 64;

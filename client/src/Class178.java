@@ -52,7 +52,7 @@ final class Class178 {
             int i_4_ = -1;
             String string_5_ = null;
             if (i_0_ != -1) {
-                Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_0_, 28364);
+                Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_0_, 28364);
                 if (class254 == null || bool != class254.method1925(!bool_3_)) return;
                 if (class254.method1925(!bool_3_)) string_5_ = class254.aString3258;
                 else i_4_ = class254.anInt3256;
@@ -60,8 +60,8 @@ final class Class178 {
             int i_6_ = 0;
             int i_7_ = 0;
             if (bool_3_ != true) aClass29_2352 = null;
-            for (/**/; i_7_ < Exception_Sub1.aClass255_112.anInt3271; i_7_++) {
-                ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(-74, i_7_);
+            for (/**/; i_7_ < Exception_Sub1.itemTypeList.anInt3271; i_7_++) {
+                ItemDefinition itemDefinition = Exception_Sub1.itemTypeList.method1940(-74, i_7_);
                 if ((!bool_1_ || itemDefinition.aBoolean2755) && itemDefinition.anInt2833 == -1 && itemDefinition.anInt2812 == -1 && itemDefinition.anInt2799 == 0 && itemDefinition.aString2795.toLowerCase().indexOf(string_2_) != -1) {
                     if (i_0_ != -1) {
                         if (bool) {
@@ -87,7 +87,7 @@ final class Class178 {
             Class148.anInt2037 = 0;
             String[] strings = new String[Class76.anInt1285];
             for (int i_10_ = 0; Class76.anInt1285 > i_10_; i_10_++)
-                strings[i_10_] = Exception_Sub1.aClass255_112.method1940(123, is[i_10_]).aString2795;
+                strings[i_10_] = Exception_Sub1.itemTypeList.method1940(123, is[i_10_]).aString2795;
             Class174.method1333(Class192.aShortArray2579, 26073, strings);
             Class174.ITEMS.method412((byte) 116);
             Class174.ITEMS.anInt634 = 2;

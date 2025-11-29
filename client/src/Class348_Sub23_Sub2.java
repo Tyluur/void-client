@@ -31,12 +31,12 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
     private boolean aBoolean9028;
     static Class77 aClass77_9029;
     static int anInt9030;
-    static Class153 aClass153_9031;
+    static MapElementTypeList mapElementTypeList; // aClass153_9031
     private DecoderContext aDecoderContext9032;
     static Index MUSIC_EFFECTS;
     static Class351 aClass351_9034 = new Class351(30, 4);
     private final SetupInfo aSetupInfo9035 = new SetupInfo();
-    static Class187 aClass187_9036;
+    static QuestTypeList questTypeList; // aClass187_9036
     static int anInt9037;
     static boolean aBoolean9038 = false;
     static int anInt9039;
@@ -47,8 +47,8 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
         MUSIC_EFFECTS = null;
         aClass229_9011 = null;
         aClass77_9029 = null;
-        aClass153_9031 = null;
-        aClass187_9036 = null;
+        mapElementTypeList = null;
+        questTypeList = null;
     }
 
     final Sprite method2975(ha var_ha, int i) {

@@ -36,7 +36,7 @@ final class Class348_Sub42_Sub1 extends Class348_Sub42 {
             if (i == 249) {
                 int i_3_ = class348_sub49.readUnsignedByte(255);
                 if (aClass356_9494 == null) {
-                    int i_4_ = Class33.method340(i_3_, (byte) 108);
+                    int i_4_ = EnumTypeList.method340(i_3_, (byte) 108);
                     aClass356_9494 = new Class356(i_4_);
                 }
                 for (int i_5_ = 0; i_5_ < i_3_; i_5_++) {

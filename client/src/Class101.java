@@ -26,7 +26,7 @@ abstract class Class101 {
         anInt1595++;
         int i_4_ = ((Class286_Sub4.anInt6246 >> 12) - -(za_Sub2.regionTileX >> 3));
         int i_5_ = ((Class90.regionTileY >> 3) + (Class59_Sub2_Sub2.anInt8685 >> 12));
-        Class355.anInt4372 = Class132.aPlayer_1907.plane = (byte) 0;
+        QuickChatPhraseTypeList.anInt4372 = Class132.aPlayer_1907.plane = (byte) 0;
         Class132.aPlayer_1907.method2449(8, 8, (byte) 118);
         if (i != -49) anInt1597 = 115;
         int index = 18;
@@ -115,7 +115,7 @@ abstract class Class101 {
             if (i <= 42) method906(123);
             if (var_ha_Sub2.aBoolean7793 || (Class192.method1436(82, i_25_) && Class192.method1436(81, i_26_))) return new Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_24_, i_25_, i_26_);
             if (var_ha_Sub2.aBoolean7837) return new Class258_Sub3_Sub1(var_ha_Sub2, 34037, i_24_, i_25_, i_26_);
-            return new Class258_Sub3_Sub1(var_ha_Sub2, i_24_, i_25_, i_26_, Class33.method340(i_25_, (byte) 108), Class33.method340(i_26_, (byte) 108));
+            return new Class258_Sub3_Sub1(var_ha_Sub2, i_24_, i_25_, i_26_, EnumTypeList.method340(i_25_, (byte) 108), EnumTypeList.method340(i_26_, (byte) 108));
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("bca.TA(" + i + ',' + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'));
         }
@@ -135,8 +135,8 @@ abstract class Class101 {
     static final void method909(int i) {
         anInt1598++;
         if (Class348_Sub40_Sub30.aBoolean9403 && i == 3553) {
-            while (Class215.anInt2834 < Class65.aClass110_Sub1Array1146.length) {
-                Class110_Sub1 class110_sub1 = Class65.aClass110_Sub1Array1146[Class215.anInt2834];
+            while (Class215.anInt2834 < StructTypeList.aClass110_Sub1Array1146.length) {
+                Class110_Sub1 class110_sub1 = StructTypeList.aClass110_Sub1Array1146[Class215.anInt2834];
                 if (class110_sub1 == null || class110_sub1.anInt5788 != -1) Class215.anInt2834++;
                 else {
                     if (Class176.aClass348_Sub26_2332 == null) Class176.aClass348_Sub26_2332 = (Class76.aClass169_1286.method1302(i ^ ~0x1967, class110_sub1.aString5794));

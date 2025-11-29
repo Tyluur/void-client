@@ -220,7 +220,7 @@ final class Class348_Sub38 extends Class348 {
                 } else i_48_ += -anInt7023 + anInt7017;
             }
             if (anInt7018 > 0) {
-                aClass356_7011 = new Class356(Class33.method340(anInt7018, (byte) 108));
+                aClass356_7011 = new Class356(EnumTypeList.method340(anInt7018, (byte) 108));
                 anInterface5_Impl2_7002 = aHa_Sub3_7007.method3840(-28633, false);
                 anInterface5_Impl2_7002.method23(15959, anInt7018);
                 jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer = aHa_Sub3_7007.method3869((byte) 86, false, 16 * anInt7018);

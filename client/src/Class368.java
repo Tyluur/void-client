@@ -30,15 +30,15 @@ final class Class368 {
     static int anInt4510;
     static int anInt4511;
     private int anInt4512;
-    Class319 aClass319_4513;
+    GfxTypeList aGfxTypeList_4513;
 
-    final Class64 method3558(int i, int i_0_, ha var_ha, int i_1_, int i_2_, Class87 class87, int i_3_) {
+    final Class64 method3558(int i, int i_0_, ha var_ha, int i_1_, int i_2_, SeqTypeList seqTypeList, int i_3_) {
         try {
             if (i_2_ != 3172) aShortArray4504 = null;
             anInt4505++;
-            return method3566(var_ha, i_3_, i_1_, null, 0, class87, i, (byte) 5, null, 0, false, 0, (byte) -68, i_0_);
+            return method3566(var_ha, i_3_, i_1_, null, 0, seqTypeList, i, (byte) 5, null, 0, false, 0, (byte) -68, i_0_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + (class87 != null ? "{...}" : "null") + ',' + i_3_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_3_ + ')'));
         }
     }
 
@@ -69,13 +69,13 @@ final class Class368 {
         return class46.aStringArray833[i];
     }
 
-    final Class64 method3562(int i, ha var_ha, int i_5_, int i_6_, int i_7_, Class87 class87, byte i_8_) {
+    final Class64 method3562(int i, ha var_ha, int i_5_, int i_6_, int i_7_, SeqTypeList seqTypeList, byte i_8_) {
         try {
             if (i_8_ <= 24) return null;
             anInt4511++;
-            return method3566(var_ha, i, i_6_, null, 0, class87, i_5_, (byte) 2, null, 0, false, 0, (byte) -68, i_7_);
+            return method3566(var_ha, i, i_6_, null, 0, seqTypeList, i_5_, (byte) 2, null, 0, false, 0, (byte) -68, i_7_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.A(" + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (class87 != null ? "{...}" : "null") + ',' + i_8_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.A(" + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_8_ + ')'));
         }
     }
 
@@ -138,13 +138,13 @@ final class Class368 {
         }
     }
 
-    final Class64 method3565(int i, int i_16_, int i_17_, int i_18_, boolean bool, ha var_ha, int i_19_, int i_20_, int i_21_, Class87 class87, s var_s, int i_22_, s var_s_23_) {
+    final Class64 method3565(int i, int i_16_, int i_17_, int i_18_, boolean bool, ha var_ha, int i_19_, int i_20_, int i_21_, SeqTypeList seqTypeList, s var_s, int i_22_, s var_s_23_) {
         try {
             anInt4496++;
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, (byte) 54, null, -17, true, -42, (byte) 95, -81);
-            return method3566(var_ha, i_16_, i_18_, var_s, i_22_, class87, i, (byte) 2, var_s_23_, i_17_, bool, i_20_, (byte) -68, i_19_);
+            return method3566(var_ha, i_16_, i_18_, var_s, i_22_, seqTypeList, i, (byte) 2, var_s_23_, i_17_, bool, i_20_, (byte) -68, i_19_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (class87 != null ? "{...}" : "null") + ',' + (var_s != null ? "{...}" : "null") + ',' + i_22_ + ',' + (var_s_23_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + (var_s != null ? "{...}" : "null") + ',' + i_22_ + ',' + (var_s_23_ != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -158,29 +158,29 @@ final class Class368 {
         anInt4512 = 0;
     }
 
-    private final Class64 method3566(ha var_ha, int i, int i_24_, s var_s, int i_25_, Class87 class87, int i_26_, byte i_27_, s var_s_28_, int i_29_, boolean bool, int i_30_, byte i_31_, int i_32_) {
+    private final Class64 method3566(ha var_ha, int i, int i_24_, s var_s, int i_25_, SeqTypeList seqTypeList, int i_26_, byte i_27_, s var_s_28_, int i_29_, boolean bool, int i_30_, byte i_31_, int i_32_) {
         try {
             anInt4491++;
             int i_33_ = i_24_;
-            Class17 class17 = (this.anInt4503 != -1 && i != -1 ? class87.method835(this.anInt4503, 7) : null);
+            Class17 class17 = (this.anInt4503 != -1 && i != -1 ? seqTypeList.method835(this.anInt4503, 7) : null);
             bool = bool & this.aByte4488 != 0;
             if (class17 != null) i_33_ |= class17.method263(i_32_, 110, i, false);
             if (bool) i_33_ = i_33_ | (this.aByte4488 != 3 ? 2 : 7);
             if (anInt4492 != 128) i_33_ |= 0x2;
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ |= 0x5;
             Class64 class64;
-            synchronized (this.aClass319_4513.aClass60_3990) {
-                class64 = ((Class64) (this.aClass319_4513.aClass60_3990.method583(this.anInt4501 |= var_ha.anInt4567 << 29, -122)));
+            synchronized (this.aGfxTypeList_4513.aClass60_3990) {
+                class64 = ((Class64) (this.aGfxTypeList_4513.aClass60_3990.method583(this.anInt4501 |= var_ha.anInt4567 << 29, -122)));
             }
             if (class64 == null || var_ha.method3667(class64.ua(), i_33_) != 0) {
                 if (class64 != null) i_33_ = var_ha.method3679(i_33_, class64.ua());
                 int i_34_ = i_33_;
                 if (aShortArray4490 != null) i_34_ |= 0x4000;
                 if (aShortArray4499 != null) i_34_ |= 0x8000;
-                Class124 class124 = Class300.method2277(0, (this.aClass319_4513.aIndex_3981), anInt4506, -1);
+                Class124 class124 = Class300.method2277(0, (this.aGfxTypeList_4513.aIndex_3981), anInt4506, -1);
                 if (class124 == null) return null;
                 if (class124.anInt1830 < 13) class124.method1092(2, 114);
-                class64 = var_ha.method3625(class124, i_34_, (this.aClass319_4513.anInt3991), 64 + anInt4489, anInt4512 - -850);
+                class64 = var_ha.method3625(class124, i_34_, (this.aGfxTypeList_4513.anInt3991), 64 + anInt4489, anInt4512 - -850);
                 if (aShortArray4490 != null) {
                     for (int i_35_ = 0; (i_35_ < aShortArray4490.length); i_35_++)
                         class64.ia(aShortArray4490[i_35_], aShortArray4502[i_35_]);
@@ -190,8 +190,8 @@ final class Class368 {
                         class64.aa(aShortArray4499[i_36_], aShortArray4504[i_36_]);
                 }
                 class64.s(i_33_);
-                synchronized (this.aClass319_4513.aClass60_3990) {
-                    this.aClass319_4513.aClass60_3990.method582(class64, this.anInt4501 |= var_ha.anInt4567 << 29, (byte) -113);
+                synchronized (this.aGfxTypeList_4513.aClass60_3990) {
+                    this.aGfxTypeList_4513.aClass60_3990.method582(class64, this.anInt4501 |= var_ha.anInt4567 << 29, (byte) -113);
                 }
             }
             if (i_31_ != -68) return null;
@@ -206,7 +206,7 @@ final class Class368 {
             class64_37_.s(i_24_);
             return class64_37_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.I(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_24_ + ',' + (var_s != null ? "{...}" : "null") + ',' + i_25_ + ',' + (class87 != null ? "{...}" : "null") + ',' + i_26_ + ',' + i_27_ + ',' + (var_s_28_ != null ? "{...}" : "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.I(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_24_ + ',' + (var_s != null ? "{...}" : "null") + ',' + i_25_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_26_ + ',' + i_27_ + ',' + (var_s_28_ != null ? "{...}" : "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'));
         }
     }
 }

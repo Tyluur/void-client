@@ -321,8 +321,8 @@ abstract class Class14 implements Interface18 {
             this.aClass68_5088 = class68;
             aBoolean5099 = bool;
             this.anInt5093 = i;
-            OpenGL.glGenTextures(1, Class141.anIntArray1975, 0);
-            anInt5096 = Class141.anIntArray1975[0];
+            OpenGL.glGenTextures(1, MSITypeList.anIntArray1975, 0);
+            anInt5096 = MSITypeList.anIntArray1975[0];
             method229(true);
             method236(0, (byte) -126);
         } catch (RuntimeException runtimeexception) {

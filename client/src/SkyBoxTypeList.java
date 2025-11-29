@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class84 {
+final class SkyBoxTypeList {
     private final Class60 aClass60_1449 = new Class60(16);
     static int[] anIntArray1450 = {1, 2, 4, 8};
     static int anInt1451;
@@ -104,7 +104,7 @@ final class Class84 {
         anInt1452++;
     }
 
-    final Class305 method823(int i, int i_17_, int i_18_, int i_19_, Class25 class25, int i_20_) {
+    final Class305 method823(int i, int i_17_, int i_18_, int i_19_, SkyBoxSphereTypeList skyBoxSphereTypeList, int i_20_) {
         anInt1453++;
         Class72[] class72s = null;
         Class300 class300 = method820(i_20_, 29);
@@ -112,7 +112,7 @@ final class Class84 {
         if (class300.anIntArray3821 != null) {
             class72s = new Class72[class300.anIntArray3821.length];
             for (int i_21_ = 0; class72s.length > i_21_; i_21_++) {
-                Class38 class38 = class25.method301((class300.anIntArray3821[i_21_]), 29);
+                Class38 class38 = skyBoxSphereTypeList.method301((class300.anIntArray3821[i_21_]), 29);
                 class72s[i_21_] = new Class72(class38.anInt498, class38.anInt504, class38.anInt499, class38.anInt502, class38.anInt508, class38.anInt501, class38.anInt503, class38.aBoolean507);
             }
         }
@@ -161,7 +161,8 @@ final class Class84 {
         int i_34_ = -24 % ((i_27_ - 85) / 35);
     }
 
-    Class84(Class230 class230, int i, Index index) {
+    // Class84
+    SkyBoxTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_1460 = index;
             aIndex_1460.method407(0, 29);

@@ -60,8 +60,8 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
                     class237_sub1.method1681(class348_sub49, i_18_, Class348_Sub45.aClass361Array7108, Class90.regionTileY, za_Sub2.regionTileX, i_19_, (byte) 110);
                     class237_sub1.method1691(i_19_, Class348_Sub8.aHa6654, class348_sub49, is_11_, i_18_, (byte) -126);
                     if (!class237_sub1.aBoolean3109 && i_16_ == ha.anInt4581 / 8 && (i_17_ == Class327.anInt4095 / 8) && is_11_[0] != -1) {
-                        Class259.aClass305_3304 = Class30.aClass84_413.method823(is_11_[2], is_11_[3], is_11_[1], -66, (Class123.aClass25_1813), is_11_[0]);
-                        Class185.anInt2481 = is_11_[4];
+                        VarcTypeList.aClass305_3304 = Class30.skyBoxTypeList.method823(is_11_[2], is_11_[3], is_11_[1], -66, (Class123.skyBoxSphereTypeList), is_11_[0]);
+                        LightTypeList.anInt2481 = is_11_[4];
                     }
                 }
             }

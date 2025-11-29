@@ -308,7 +308,7 @@ final class Class64_Sub2 extends Class64 {
         for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-93)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 46))) {
             if (class348_sub42_sub13.anInt9615 > 1) {
                 class348_sub42_sub13.anInt9615 = 0;
-                Class259.aClass60_3301.method582(class348_sub42_sub13, ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063).aLong9600, (byte) -124);
+                VarcTypeList.aClass60_3301.method582(class348_sub42_sub13, ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063).aLong9600, (byte) -124);
                 class348_sub42_sub13.aClass107_9621.method1009(2110355138);
             }
         }
@@ -531,7 +531,7 @@ final class Class64_Sub2 extends Class64 {
         if (aBoolean5402) {
             aBoolean5402 = false;
             if (aClass129Array5457 == null && aClass342Array5474 == null && aClass353Array5524 == null) {
-                if (anIntArray5511 != null && !Class170.method1317(anInt5472, (byte) -91, anInt5463)) {
+                if (anIntArray5511 != null && !TimedVarDomain.method1317(anInt5472, (byte) -91, anInt5463)) {
                     if (aClass290_5520 == null || aClass290_5520.method2197((byte) -62)) {
                         if (!aBoolean5477) method675(0);
                         anIntArray5511 = null;
@@ -1069,7 +1069,7 @@ final class Class64_Sub2 extends Class64 {
                 class64_sub2_154_.aFloatArray5476 = aFloatArray5476;
                 class64_sub2_154_.aFloatArray5506 = aFloatArray5506;
             }
-            if (Class183.method1379(4, anInt5472, i)) {
+            if (FloorUnderlayTypeList.method1379(4, anInt5472, i)) {
                 class64_sub2_154_.aClass290_5460 = class64_sub2_153_.aClass290_5460;
                 class64_sub2_154_.aClass290_5460.anInterface5_Impl1_3711 = aClass290_5460.anInterface5_Impl1_3711;
                 class64_sub2_154_.aClass290_5460.aBoolean3714 = aClass290_5460.aBoolean3714;
@@ -1104,7 +1104,7 @@ final class Class64_Sub2 extends Class64 {
                 class64_sub2_154_.aClass192_5485.anInterface5_Impl2_2572 = aClass192_5485.anInterface5_Impl2_2572;
             } else if (Class368.method3563(i, (byte) 56, anInt5472)) class64_sub2_154_.aClass192_5485 = aClass192_5485;
             else class64_sub2_154_.aClass192_5485 = null;
-            if (Class278.method2077(-122, anInt5472, i)) {
+            if (NPCTypeList.method2077(-122, anInt5472, i)) {
                 if (class64_sub2_153_.aShortArray5423 != null && class64_sub2_153_.aShortArray5423.length >= anInt5478) class64_sub2_154_.aShortArray5423 = class64_sub2_153_.aShortArray5423;
                 else {
                     int i_172_ = anInt5478;
@@ -1772,7 +1772,7 @@ final class Class64_Sub2 extends Class64 {
     final void s(int i) {
         anInt5445++;
         if (aClass290_5520 != null) aClass290_5520.aBoolean3709 = Class264.method2015(i, anInt5472, 7);
-        if (aClass290_5460 != null) aClass290_5460.aBoolean3709 = Class183.method1379(4, anInt5472, i);
+        if (aClass290_5460 != null) aClass290_5460.aBoolean3709 = FloorUnderlayTypeList.method1379(4, anInt5472, i);
         if (aClass290_5482 != null) aClass290_5482.aBoolean3709 = Class348_Sub42_Sub8_Sub2.method3200(i, anInt5472, (byte) 73);
         if (aClass290_5424 != null) aClass290_5424.aBoolean3709 = Class126.method1113(i, anInt5472, -10);
         anInt5463 = i;
@@ -3199,7 +3199,7 @@ final class Class64_Sub2 extends Class64 {
             anInt5472 = i_764_;
             aHa_Sub3_5419 = var_ha_Sub3;
             if (bool || Class161.method1258(anInt5463, -9301, anInt5472)) aClass290_5520 = new Class290(Class264.method2015(anInt5463, anInt5472, 7));
-            if (bool || Class239_Sub26.method1837(anInt5472, 102, anInt5463)) aClass290_5460 = new Class290(Class183.method1379(4, anInt5472, anInt5463));
+            if (bool || Class239_Sub26.method1837(anInt5472, 102, anInt5463)) aClass290_5460 = new Class290(FloorUnderlayTypeList.method1379(4, anInt5472, anInt5463));
             if (bool || Class296.method2224(anInt5463, (byte) 110, anInt5472)) aClass290_5482 = new Class290(Class348_Sub42_Sub8_Sub2.method3200(anInt5463, anInt5472, (byte) -82));
             if (bool || Class188.method1412((byte) -35, anInt5472, anInt5463)) aClass290_5424 = new Class290(Class126.method1113(anInt5463, anInt5472, -21));
             if (bool || Class368.method3563(anInt5463, (byte) 56, anInt5472)) aClass192_5485 = new Class192(Class348_Sub9.method2783(anInt5472, (byte) -97, anInt5463));

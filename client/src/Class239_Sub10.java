@@ -41,7 +41,7 @@ final class Class239_Sub10 extends Class239 {
         if (i != 85) anInt5943 = -99;
         if (r.anInt9721 != -1) Class75_Sub1.method769(r.anInt9721, (byte) 118);
         for (int i_6_ = 0; Class348_Sub38.anInt7008 > i_6_; i_6_++) {
-            if (Class152.aBooleanArray2076[i_6_]) Class268.aBooleanArray3438[i_6_] = true;
+            if (Class152.aBooleanArray2076[i_6_]) FloorOverlayTypeList.aBooleanArray3438[i_6_] = true;
             Class175.aBooleanArray2326[i_6_] = Class152.aBooleanArray2076[i_6_];
             Class152.aBooleanArray2076[i_6_] = false;
         }
@@ -55,7 +55,7 @@ final class Class239_Sub10 extends Class239 {
         int i_7_ = Class112.method1053(3112);
         if (i_7_ == -1) i_7_ = Class362.anInt4458;
         if (i_7_ == -1) i_7_ = Class348_Sub42_Sub16_Sub1.anInt10447;
-        Class33.method338(0, i_7_);
+        EnumTypeList.method338(0, i_7_);
         Class348_Sub51.anInt7267 = 0;
     }
 

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class87 {
+final class SeqTypeList {
     static int anInt1483;
     static int anInt1484;
     static int anInt1485;
@@ -38,7 +38,7 @@ final class Class87 {
         }
         class17 = new Class17();
         class17.anInt269 = i;
-        class17.aClass87_251 = this;
+        class17.aSeqTypeList_251 = this;
         if (is != null) class17.method267(new Class348_Sub49(is), false);
         class17.method270((byte) 124);
         synchronized (aClass60_1487) {
@@ -94,7 +94,8 @@ final class Class87 {
         return class348_sub42_sub17;
     }
 
-    Class87(Class230 class230, int i, Index index, Index index_6_, Index index_7_) {
+    // Class87
+    SeqTypeList(Class230 class230, int i, Index index, Index index_6_, Index index_7_) {
         try {
             aIndex_1488 = index;
             if (aIndex_1488 != null) {

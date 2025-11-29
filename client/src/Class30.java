@@ -12,7 +12,7 @@ final class Class30 {
     static int anInt410;
     static int anInt411;
     private int anInt412;
-    static Class84 aClass84_413;
+    static SkyBoxTypeList skyBoxTypeList; // aClass84_413
     static int anInt414;
     static int anInt415;
     private int anInt416;
@@ -41,7 +41,7 @@ final class Class30 {
         anInt418 = i_9_ + anInt409;
         anInt416 = i_4_ + anInt417;
         anInt406 = anInt417 - -i;
-        if (i_5_ != -4) aClass84_413 = null;
+        if (i_5_ != -4) skyBoxTypeList = null;
     }
 
     final boolean method321(int i, int i_14_, int i_15_, int i_16_) {
@@ -57,7 +57,7 @@ final class Class30 {
 
     public static void method322(int i) {
         anIntArray407 = null;
-        aClass84_413 = null;
+        skyBoxTypeList = null;
         if (i != 1) method322(-112);
     }
 

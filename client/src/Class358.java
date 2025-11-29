@@ -21,8 +21,8 @@ final class Class358 {
     static final void method3489(int i) {
         Class60.aHa1098.xa(((float) Class316.aClass348_Sub51_3959.aClass239_Sub10_7232.method1764(-32350) * 0.1F + 0.7F) * 1.1523438F);
         anInt4413++;
-        Class60.aHa1098.ZA(Class268.anInt3439, 0.69921875F, 1.2F, -200.0F, -240.0F, -200.0F);
-        Class60.aHa1098.L(Class268.anInt3444, -1, 0);
+        Class60.aHa1098.ZA(FloorOverlayTypeList.anInt3439, 0.69921875F, 1.2F, -200.0F, -240.0F, -200.0F);
+        Class60.aHa1098.L(FloorOverlayTypeList.anInt3444, -1, 0);
         int i_0_ = -35 / ((45 - i) / 44);
         Class60.aHa1098.method3653(Class348_Sub42_Sub10.aClass299_9571);
     }

@@ -79,14 +79,14 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
                 Class3.aClass161_125.anInt2138 = 50000 - -Class3.aClass161_125.anInt2143;
                 Class3.aClass161_125.anInt2148 = 40000 - -Class3.aClass161_125.anInt2143;
             }
-            if (i < Class65.aClass110_Sub1Array1146.length && Class65.aClass110_Sub1Array1146[i] != null) Class251.anInt3234 = (Class65.aClass110_Sub1Array1146[i].anInt1708);
+            if (i < StructTypeList.aClass110_Sub1Array1146.length && StructTypeList.aClass110_Sub1Array1146[i] != null) Class251.anInt3234 = (StructTypeList.aClass110_Sub1Array1146[i].anInt1708);
             return true;
         }
         String string_4_ = "";
         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) string_4_ = ":" + (7000 + i);
         String string_5_ = "";
         if (Class239_Sub12.aString5966 != null) string_5_ = "/p=" + Class239_Sub12.aString5966;
-        String string_6_ = ("http://" + string + string_4_ + "/l=" + Class348_Sub33.anInt6967 + "/a=" + Class202.anInt2670 + string_5_ + "/j" + (!Class289.aBoolean3697 ? "0" : "1") + ",o" + (Class348_Sub37.aBoolean6997 ? "1" : "0") + ",a2");
+        String string_6_ = ("http://" + string + string_4_ + "/l=" + Class348_Sub33.language + "/a=" + Class202.anInt2670 + string_5_ + "/j" + (!Class289.aBoolean3697 ? "0" : "1") + ",o" + (Class348_Sub37.aBoolean6997 ? "1" : "0") + ",a2");
         try {
             NPCDefinition.aClient1367.getAppletContext().showDocument(new URL(string_6_), "_self");
             if (i_3_ >= -17) aClass297_8992 = null;

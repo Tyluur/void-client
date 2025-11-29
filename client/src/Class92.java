@@ -38,7 +38,7 @@ final class Class92 {
                     Class348_Sub49 class348_sub49 = new Class348_Sub49(Class348_Sub50.aByteArrayArray7212[i_1_]);
                     int count = 0;
                     while (class348_sub49.anInt7197 < Class348_Sub50.aByteArrayArray7212[i_1_].length) {
-                        if (count >= 511 || Class150.anInt2057 >= 1023) break;
+                        if (count >= 511 || IDKTypeList.anInt2057 >= 1023) break;
                         int i_5_ = i_2_ | count++ << 6;
                         int packed = class348_sub49.readUnsignedShort(842397944);
                         int i_7_ = packed >> 14;
@@ -46,7 +46,7 @@ final class Class92 {
                         int i_9_ = packed & 0x3f;
                         int x = (i_8_ + (-za_Sub2.regionTileX + (Class348_Sub23_Sub3.mapRegionIds[i_1_] >> 8) * 64));
                         int y = (-Class90.regionTileY + (64 * (0xff & (Class348_Sub23_Sub3.mapRegionIds[i_1_])) - -i_9_));
-                        NPCDefinition definition = (Class189.aClass278_2529.method2079(class348_sub49.readUnsignedShort(842397944), -1));
+                        NPCDefinition definition = (Class189.npcTypeList.method2079(class348_sub49.readUnsignedShort(842397944), -1));
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_5_, -6008));
                         if (class348_sub22 == null && (definition.walkMask & 0x1) > 0 && i_7_ == Class167.anInt2204 && x >= 0 && (Class367_Sub4.anInt7319 > x - -definition.size) && y >= 0 && (Class348_Sub40_Sub3.anInt9109 > y + definition.size)) {
                             Npc npc = new Npc();
@@ -54,7 +54,7 @@ final class Class92 {
                             Class348_Sub22 class348_sub22_12_ = (new Class348_Sub22(npc));
                             Class282.aClass356_3654.method3483((byte) 91, i_5_, class348_sub22_12_);
                             Class348_Sub40_Sub23.aClass348_Sub22Array9319[Class348_Sub32.anInt6930++] = class348_sub22_12_;
-                            Class74.anIntArray1233[Class150.anInt2057++] = i_5_;
+                            Class74.anIntArray1233[IDKTypeList.anInt2057++] = i_5_;
                             npc.anInt10306 = Class367_Sub11.anInt7396;
                             npc.method2448(definition, -2);
                             npc.method2434((byte) 120, npc.aNPCDefinition_10505.size);

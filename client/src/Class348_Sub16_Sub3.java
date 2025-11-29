@@ -84,7 +84,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
 
     static final void method2839(int i, int i_0_, int i_1_) {
         anInt8890++;
-        Class244.anInt4609 = i - Class75.anInt1266;
+        Js5TextureSource.anInt4609 = i - Class75.anInt1266;
         Class48.anInt859 = i_1_ + -Class75.anInt1263;
         if (i_0_ != -17) method2839(-112, -58, -95);
     }
@@ -910,7 +910,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
     static final void method2879(int i, int i_105_, int i_106_) {
         Class357 class357 = Class147.aClass357ArrayArrayArray2029[i][i_105_][i_106_];
         if (class357 != null) {
-            Class183.method1376(class357.aClass318_Sub1_Sub1_4402);
+            FloorUnderlayTypeList.method1376(class357.aClass318_Sub1_Sub1_4402);
             if (class357.aClass318_Sub1_Sub1_4402 != null) class357.aClass318_Sub1_Sub1_4402 = null;
         }
     }

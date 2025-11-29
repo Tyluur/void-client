@@ -50,7 +50,7 @@ final class Class133 {
             Class237.method1686(-127);
             Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub23_7231), 0);
             Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub29_7229), 4);
-            Class348_Sub40.method3038(-1);
+            Class348_Sub40.updateFeatureMask(-1);
             Class76.method773(true);
             RuntimeException_Sub1.aBoolean4604 = true;
         }
@@ -187,7 +187,7 @@ final class Class133 {
                         player.anInt10250 = (Class367_Sub11.anInt7396 + class348_sub49_sub2.readShortAdd(125));
                     }
                     if ((i_0_ & 0x80) != 0) {
-                        Class259.aByteArray3300[i] = class348_sub49_sub2.readByteSubtract(-27697);
+                        VarcTypeList.aByteArray3300[i] = class348_sub49_sub2.readByteSubtract(-27697);
                     }
                     if ((i_0_ & 0x20) != 0) {
                         int i_28_ = class348_sub49_sub2.readShortAddLittle(-126);
@@ -221,7 +221,7 @@ final class Class133 {
                     if (tempSpeed != 127) {
                         byte i_36_;
                         if (tempSpeed != -1) i_36_ = tempSpeed;
-                        else i_36_ = Class259.aByteArray3300[i];
+                        else i_36_ = VarcTypeList.aByteArray3300[i];
                         Class348_Sub42_Sub9_Sub1.method3208(player, i_36_, -21);
                         player.method2455(player.anInt10531, -26443, i_36_, player.anInt10549);
                     } else {

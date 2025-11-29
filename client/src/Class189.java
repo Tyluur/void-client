@@ -11,7 +11,7 @@ final class Class189 {
     int anInt2526;
     static Class114 aClass114_2527 = new Class114(98, -2);
     static int anInt2528;
-    static Class278 aClass278_2529;
+    static NPCTypeList npcTypeList; // aClass278_2529
     int anInt2530;
     boolean aBoolean2531 = false;
     static int anInt2532;
@@ -240,7 +240,7 @@ final class Class189 {
     }
 
     public static void method1421(byte i) {
-        aClass278_2529 = null;
+        npcTypeList = null;
         if (i != -85) method1421((byte) 39);
         aClass114_2527 = null;
     }

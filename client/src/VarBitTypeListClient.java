@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class194 {
+final class VarBitTypeListClient {
     static int anInt2591;
     static int anInt2592;
     static int anInt2593;
@@ -71,7 +71,8 @@ final class Class194 {
         return class146;
     }
 
-    Class194(Class230 class230, int i, Index index) {
+    // Class194
+    VarBitTypeListClient(Class230 class230, int i, Index index) {
         do {
             try {
                 aIndex_2597 = index;

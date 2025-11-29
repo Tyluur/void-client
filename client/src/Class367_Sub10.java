@@ -22,7 +22,7 @@ final class Class367_Sub10 extends Class367 {
 
     static final void method3553(boolean bool, byte i, int i_1_) {
         if (i <= 98) method3553(true, (byte) 34, 120);
-        Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544), bool, i_1_);
+        Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3495.method2063(Class348_Sub33.language, 544), bool, i_1_);
         anInt7388++;
     }
 
@@ -33,7 +33,7 @@ final class Class367_Sub10 extends Class367 {
         if (interface18_impl2 != null && bool) {
             this.aHa_Sub3_4479.method3897(1, i + -19574);
             this.aHa_Sub3_4479.method3850((byte) 96, interface18_impl2);
-            this.aHa_Sub3_4479.method3871(Class261.aClass113_3314, i + -15192);
+            this.aHa_Sub3_4479.method3871(BASTypeList.aClass113_3314, i + -15192);
             this.aHa_Sub3_4479.method3897(1, -4382);
             this.aHa_Sub3_4479.method3874(Class328_Sub3.aClass229_6519, 104, Class248.aClass229_3196);
             this.aHa_Sub3_4479.method3924(true, false, 2, (Class318_Sub1_Sub2.aClass70_8737), false);
@@ -56,7 +56,7 @@ final class Class367_Sub10 extends Class367 {
         anInt7386++;
         if (aBoolean7385) {
             this.aHa_Sub3_4479.method3897(1, -4382);
-            this.aHa_Sub3_4479.method3871(Class150.aClass113_2047, i ^ 0x57);
+            this.aHa_Sub3_4479.method3871(IDKTypeList.aClass113_2047, i ^ 0x57);
             this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 103, (Class167.aClass229_2207));
             this.aHa_Sub3_4479.method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
             this.aHa_Sub3_4479.method3885(0, true, Class342.aClass70_4247);

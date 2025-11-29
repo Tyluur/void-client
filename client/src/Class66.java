@@ -39,7 +39,7 @@ final class Class66 {
     private static int anInt1177;
 
     static final void method701(Class273 class273, int i, int i_0_) {
-        ClientScript clientScript = Class153.method1223(i, i_0_, 96837648, class273);
+        ClientScript clientScript = MapElementTypeList.method1223(i, i_0_, 96837648, class273);
         if (clientScript != null) {
             anIntArray1164 = (new int
                     [clientScript.intVariableCount]);
@@ -224,7 +224,7 @@ final class Class66 {
                 return;
             }
             if (i == 5017) {
-                anIntArray1149[anInt1173++] = Class348_Sub4.method2749(-1);
+                anIntArray1149[anInt1173++] = SystemInfo.method2749(-1);
                 return;
             }
             if (i == 5018) {
@@ -276,12 +276,12 @@ final class Class66 {
             }
             if (i == 5050) {
                 int i_29_ = anIntArray1149[--anInt1173];
-                aStringArray1152[anInt1170++] = (Class200.aClass226_2639.method1625(0, i_29_).aString9587);
+                aStringArray1152[anInt1170++] = (Class200.quickChatCatTypeList.method1625(0, i_29_).aString9587);
                 return;
             }
             if (i == 5051) {
                 int i_30_ = anIntArray1149[--anInt1173];
-                Class348_Sub42_Sub11 class348_sub42_sub11 = Class200.aClass226_2639.method1625(0, i_30_);
+                Class348_Sub42_Sub11 class348_sub42_sub11 = Class200.quickChatCatTypeList.method1625(0, i_30_);
                 if ((class348_sub42_sub11.anIntArray9592) == null) anIntArray1149[anInt1173++] = 0;
                 else {
                     anIntArray1149[anInt1173++] = (class348_sub42_sub11.anIntArray9592).length;
@@ -293,14 +293,14 @@ final class Class66 {
                 anInt1173 -= 2;
                 int i_31_ = anIntArray1149[anInt1173];
                 int i_32_ = anIntArray1149[anInt1173 + 1];
-                Class348_Sub42_Sub11 class348_sub42_sub11 = Class200.aClass226_2639.method1625(0, i_31_);
+                Class348_Sub42_Sub11 class348_sub42_sub11 = Class200.quickChatCatTypeList.method1625(0, i_31_);
                 int i_33_ = (class348_sub42_sub11.anIntArray9592[i_32_]);
                 anIntArray1149[anInt1173++] = i_33_;
                 return;
             }
             if (i == 5053) {
                 int i_34_ = anIntArray1149[--anInt1173];
-                Class348_Sub42_Sub11 class348_sub42_sub11 = Class200.aClass226_2639.method1625(0, i_34_);
+                Class348_Sub42_Sub11 class348_sub42_sub11 = Class200.quickChatCatTypeList.method1625(0, i_34_);
                 if ((class348_sub42_sub11.anIntArray9580) == null) anIntArray1149[anInt1173++] = 0;
                 else {
                     anIntArray1149[anInt1173++] = (class348_sub42_sub11.anIntArray9580).length;
@@ -312,17 +312,17 @@ final class Class66 {
                 anInt1173 -= 2;
                 int i_35_ = anIntArray1149[anInt1173];
                 int i_36_ = anIntArray1149[anInt1173 + 1];
-                anIntArray1149[anInt1173++] = (Class200.aClass226_2639.method1625(0, i_35_).anIntArray9580[i_36_]);
+                anIntArray1149[anInt1173++] = (Class200.quickChatCatTypeList.method1625(0, i_35_).anIntArray9580[i_36_]);
                 return;
             }
             if (i == 5055) {
                 int i_37_ = anIntArray1149[--anInt1173];
-                aStringArray1152[anInt1170++] = Class239_Sub6.aClass355_5900.method3471(i_37_, (byte) -112).method3219(127);
+                aStringArray1152[anInt1170++] = Class239_Sub6.quickChatPhraseTypeList.method3471(i_37_, (byte) -112).method3219(127);
                 return;
             }
             if (i == 5056) {
                 int i_38_ = anIntArray1149[--anInt1173];
-                Class348_Sub42_Sub10 class348_sub42_sub10 = Class239_Sub6.aClass355_5900.method3471(i_38_, (byte) -125);
+                Class348_Sub42_Sub10 class348_sub42_sub10 = Class239_Sub6.quickChatPhraseTypeList.method3471(i_38_, (byte) -125);
                 if ((class348_sub42_sub10.anIntArray9566) == null) anIntArray1149[anInt1173++] = 0;
                 else {
                     anIntArray1149[anInt1173++] = (class348_sub42_sub10.anIntArray9566).length;
@@ -334,13 +334,13 @@ final class Class66 {
                 anInt1173 -= 2;
                 int i_39_ = anIntArray1149[anInt1173];
                 int i_40_ = anIntArray1149[anInt1173 + 1];
-                anIntArray1149[anInt1173++] = (Class239_Sub6.aClass355_5900.method3471(i_39_, (byte) -126).anIntArray9566[i_40_]);
+                anIntArray1149[anInt1173++] = (Class239_Sub6.quickChatPhraseTypeList.method3471(i_39_, (byte) -126).anIntArray9566[i_40_]);
                 return;
             }
             if (i == 5058) {
                 aClass43_1151 = new Class43();
                 aClass43_1151.anInt615 = anIntArray1149[--anInt1173];
-                aClass43_1151.aClass348_Sub42_Sub10_614 = Class239_Sub6.aClass355_5900.method3471((aClass43_1151.anInt615), (byte) -87);
+                aClass43_1151.aClass348_Sub42_Sub10_614 = Class239_Sub6.quickChatPhraseTypeList.method3471((aClass43_1151.anInt615), (byte) -87);
                 aClass43_1151.anIntArray617 = new int[aClass43_1151.aClass348_Sub42_Sub10_614.method3215((byte) -48)];
                 return;
             }
@@ -385,14 +385,14 @@ final class Class66 {
                 anInt1173 -= 2;
                 int i_44_ = anIntArray1149[anInt1173];
                 int i_45_ = anIntArray1149[anInt1173 + 1];
-                anIntArray1149[anInt1173++] = (Class200.aClass226_2639.method1625(0, i_44_).aCharArray9588[i_45_]);
+                anIntArray1149[anInt1173++] = (Class200.quickChatCatTypeList.method1625(0, i_44_).aCharArray9588[i_45_]);
                 return;
             }
             if (i == 5063) {
                 anInt1173 -= 2;
                 int i_46_ = anIntArray1149[anInt1173];
                 int i_47_ = anIntArray1149[anInt1173 + 1];
-                anIntArray1149[anInt1173++] = (Class200.aClass226_2639.method1625(0, i_46_).aCharArray9582[i_47_]);
+                anIntArray1149[anInt1173++] = (Class200.quickChatCatTypeList.method1625(0, i_46_).aCharArray9582[i_47_]);
                 return;
             }
             if (i == 5064) {
@@ -401,7 +401,7 @@ final class Class66 {
                 int i_49_ = anIntArray1149[anInt1173 + 1];
                 if (i_49_ == -1) anIntArray1149[anInt1173++] = -1;
                 else {
-                    anIntArray1149[anInt1173++] = Class200.aClass226_2639.method1625(0, i_48_).method3226((char) i_49_, 57249897);
+                    anIntArray1149[anInt1173++] = Class200.quickChatCatTypeList.method1625(0, i_48_).method3226((char) i_49_, 57249897);
                     return;
                 }
                 return;
@@ -412,21 +412,21 @@ final class Class66 {
                 int i_51_ = anIntArray1149[anInt1173 + 1];
                 if (i_51_ == -1) anIntArray1149[anInt1173++] = -1;
                 else {
-                    anIntArray1149[anInt1173++] = Class200.aClass226_2639.method1625(0, i_50_).method3222((byte) -122, (char) i_51_);
+                    anIntArray1149[anInt1173++] = Class200.quickChatCatTypeList.method1625(0, i_50_).method3222((byte) -122, (char) i_51_);
                     return;
                 }
                 return;
             }
             if (i == 5066) {
                 int i_52_ = anIntArray1149[--anInt1173];
-                anIntArray1149[anInt1173++] = Class239_Sub6.aClass355_5900.method3471(i_52_, (byte) -123).method3215((byte) -127);
+                anIntArray1149[anInt1173++] = Class239_Sub6.quickChatPhraseTypeList.method3471(i_52_, (byte) -123).method3215((byte) -127);
                 return;
             }
             if (i == 5067) {
                 anInt1173 -= 2;
                 int i_53_ = anIntArray1149[anInt1173];
                 int i_54_ = anIntArray1149[anInt1173 + 1];
-                int i_55_ = Class239_Sub6.aClass355_5900.method3471(i_53_, (byte) -127).method3212(0, i_54_).anInt1941;
+                int i_55_ = Class239_Sub6.quickChatPhraseTypeList.method3471(i_53_, (byte) -127).method3212(0, i_54_).anInt1941;
                 anIntArray1149[anInt1173++] = i_55_;
                 return;
             }
@@ -449,7 +449,7 @@ final class Class66 {
                 int i_60_ = anIntArray1149[anInt1173];
                 int i_61_ = anIntArray1149[anInt1173 + 1];
                 int i_62_ = anIntArray1149[anInt1173 + 2];
-                Class348_Sub42_Sub10 class348_sub42_sub10 = Class239_Sub6.aClass355_5900.method3471(i_60_, (byte) -127);
+                Class348_Sub42_Sub10 class348_sub42_sub10 = Class239_Sub6.quickChatPhraseTypeList.method3471(i_60_, (byte) -127);
                 if ((class348_sub42_sub10.method3212(0, i_61_).anInt1941) != 0) throw new RuntimeException("bad command");
                 anIntArray1149[anInt1173++] = class348_sub42_sub10.method3213(i_62_, i_61_, true);
                 return;
@@ -531,7 +531,7 @@ final class Class66 {
                 return;
             }
             if (i == 5208) {
-                anIntArray1149[anInt1173++] = Class25.anInt370;
+                anIntArray1149[anInt1173++] = SkyBoxSphereTypeList.anInt370;
                 anIntArray1149[anInt1173++] = Class182.anInt2446;
                 return;
             }
@@ -882,9 +882,9 @@ final class Class66 {
             if (i == 5401) {
                 anInt1173 -= 2;
                 Class318_Sub6.aShortArray6428[anIntArray1149[anInt1173]] = (short) aa.method160(27076, anIntArray1149[anInt1173 + 1]);
-                Exception_Sub1.aClass255_112.method1930(-21804);
-                Exception_Sub1.aClass255_112.method1936(-71);
-                Class189.aClass278_2529.method2074(-118);
+                Exception_Sub1.itemTypeList.method1930(-21804);
+                Exception_Sub1.itemTypeList.method1936(-71);
+                Class189.npcTypeList.method2074(-118);
                 Class354.method3466(125);
                 return;
             }
@@ -954,11 +954,11 @@ final class Class66 {
                 String string_120_ = aStringArray1152[anInt1170 + 1];
                 int i_121_ = anIntArray1149[--anInt1173];
                 if (string.length() > 0) {
-                    if (Class367_Sub9.aStringArray7378 == null) Class367_Sub9.aStringArray7378 = new String[(Class272.anIntArray3475[Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987])];
+                    if (Class367_Sub9.aStringArray7378 == null) Class367_Sub9.aStringArray7378 = new String[(Class272.anIntArray3475[Class348_Sub42_Sub8_Sub2.modeGame.anInt2987])];
                     Class367_Sub9.aStringArray7378[i_121_] = string;
                 }
                 if (string_120_.length() > 0) {
-                    if (Class54.aStringArray974 == null) Class54.aStringArray974 = new String[(Class272.anIntArray3475[Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987])];
+                    if (Class54.aStringArray974 == null) Class54.aStringArray974 = new String[(Class272.anIntArray3475[Class348_Sub42_Sub8_Sub2.modeGame.anInt2987])];
                     Class54.aStringArray974[i_121_] = string_120_;
                 }
                 return;
@@ -1015,7 +1015,7 @@ final class Class66 {
                 return;
             }
             if (i == 5429) {
-                Class82.method812(aStringArray1152[--anInt1170], false, false, (byte) -79);
+                VarcstrTypeList.method812(aStringArray1152[--anInt1170], false, false, (byte) -79);
                 return;
             }
             if (i == 5430) {
@@ -1116,7 +1116,7 @@ final class Class66 {
                 return;
             }
             if (i == 5508) {
-                Class355.method3470(1);
+                QuickChatPhraseTypeList.method3470(1);
                 return;
             }
             if (i == 5509) {
@@ -1309,8 +1309,8 @@ final class Class66 {
                 return;
             }
             if (i == 5624) {
-                anIntArray1149[anInt1173++] = (int) (Class244.aLong4615 >> 32);
-                anIntArray1149[anInt1173++] = (int) (Class244.aLong4615 & 0xffffL);
+                anIntArray1149[anInt1173++] = (int) (Js5TextureSource.aLong4615 >> 32);
+                anIntArray1149[anInt1173++] = (int) (Js5TextureSource.aLong4615 & 0xffffL);
                 return;
             }
             if (i == 5625) {
@@ -1384,7 +1384,7 @@ final class Class66 {
             }
             if (i == 6012) {
                 Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub28_7230), anIntArray1149[--anInt1173] == 1 ? 1 : 0);
-                Class348_Sub40.method3038(-1);
+                Class348_Sub40.updateFeatureMask(-1);
                 Class76.method773(true);
                 Class14_Sub2.method243(37);
                 r.aBoolean9719 = false;
@@ -1519,7 +1519,7 @@ final class Class66 {
             if (i == 6034) {
                 Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub24_7235), anIntArray1149[--anInt1173] == 1 ? 1 : 0);
                 Class14_Sub2.method243(37);
-                Class348_Sub40.method3038(-1);
+                Class348_Sub40.updateFeatureMask(-1);
                 r.aBoolean9719 = false;
                 return;
             }
@@ -2125,7 +2125,7 @@ final class Class66 {
             } else if (i < 6900) {
                 if (i == 6800) {
                     int i_215_ = anIntArray1149[--anInt1173];
-                    Class42 class42 = Class348_Sub23_Sub2.aClass153_9031.method1225(i_215_, (byte) 96);
+                    Class42 class42 = Class348_Sub23_Sub2.mapElementTypeList.method1225(i_215_, (byte) 96);
                     if (class42.aString597 == null) aStringArray1152[anInt1170++] = "";
                     else {
                         aStringArray1152[anInt1170++] = class42.aString597;
@@ -2135,19 +2135,19 @@ final class Class66 {
                 }
                 if (i == 6801) {
                     int i_216_ = anIntArray1149[--anInt1173];
-                    Class42 class42 = Class348_Sub23_Sub2.aClass153_9031.method1225(i_216_, (byte) 111);
+                    Class42 class42 = Class348_Sub23_Sub2.mapElementTypeList.method1225(i_216_, (byte) 111);
                     anIntArray1149[anInt1173++] = class42.anInt578;
                     return;
                 }
                 if (i == 6802) {
                     int i_217_ = anIntArray1149[--anInt1173];
-                    Class42 class42 = Class348_Sub23_Sub2.aClass153_9031.method1225(i_217_, (byte) 91);
+                    Class42 class42 = Class348_Sub23_Sub2.mapElementTypeList.method1225(i_217_, (byte) 91);
                     anIntArray1149[anInt1173++] = class42.anInt576;
                     return;
                 }
                 if (i == 6803) {
                     int i_218_ = anIntArray1149[--anInt1173];
-                    Class42 class42 = Class348_Sub23_Sub2.aClass153_9031.method1225(i_218_, (byte) 44);
+                    Class42 class42 = Class348_Sub23_Sub2.mapElementTypeList.method1225(i_218_, (byte) 44);
                     anIntArray1149[anInt1173++] = class42.anInt596;
                     return;
                 }
@@ -2155,10 +2155,10 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_219_ = anIntArray1149[anInt1173];
                     int i_220_ = anIntArray1149[anInt1173 + 1];
-                    Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_220_, 28364);
-                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Class348_Sub23_Sub2.aClass153_9031.method1225(i_219_, (byte) 79).method376(class254.aString3258, i_220_, (byte) 126));
+                    Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_220_, 28364);
+                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Class348_Sub23_Sub2.mapElementTypeList.method1225(i_219_, (byte) 79).method376(class254.aString3258, i_220_, (byte) 126));
                     else {
-                        anIntArray1149[anInt1173++] = (Class348_Sub23_Sub2.aClass153_9031.method1225(i_219_, (byte) 50).method378(class254.anInt3256, i_220_, false));
+                        anIntArray1149[anInt1173++] = (Class348_Sub23_Sub2.mapElementTypeList.method1225(i_219_, (byte) 50).method378(class254.anInt3256, i_220_, false));
                         return;
                     }
                     return;
@@ -2494,43 +2494,43 @@ final class Class66 {
             } else if (string_240_.startsWith(Class274.aClass274_3541.method2063(0, 544))) {
                 i_241_ = 11;
                 string = string.substring(Class274.aClass274_3541.method2063(0, 544).length());
-            } else if (Class348_Sub33.anInt6967 != 0) {
-                if (string_240_.startsWith(Class274.aClass274_3530.method2063(Class348_Sub33.anInt6967, 544))) {
+            } else if (Class348_Sub33.language != 0) {
+                if (string_240_.startsWith(Class274.aClass274_3530.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 0;
-                    string = string.substring(Class274.aClass274_3530.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3531.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3530.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3531.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 1;
-                    string = string.substring(Class274.aClass274_3531.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3532.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3531.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3532.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 2;
-                    string = string.substring(Class274.aClass274_3532.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3533.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3532.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3533.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 3;
-                    string = string.substring(Class274.aClass274_3533.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3534.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3533.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3534.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 4;
-                    string = string.substring(Class274.aClass274_3534.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3535.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3534.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3535.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 5;
-                    string = string.substring(Class274.aClass274_3535.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3536.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3535.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3536.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 6;
-                    string = string.substring(Class274.aClass274_3536.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3537.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3536.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3537.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 7;
-                    string = string.substring(Class274.aClass274_3537.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3538.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3537.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3538.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 8;
-                    string = string.substring(Class274.aClass274_3538.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3539.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3538.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3539.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 9;
-                    string = string.substring(Class274.aClass274_3539.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3540.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3539.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3540.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 10;
-                    string = string.substring(Class274.aClass274_3540.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3541.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3540.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3541.method2063(Class348_Sub33.language, 544))) {
                     i_241_ = 11;
-                    string = string.substring(Class274.aClass274_3541.method2063(Class348_Sub33.anInt6967, 544).length());
+                    string = string.substring(Class274.aClass274_3541.method2063(Class348_Sub33.language, 544).length());
                 }
             }
             string_240_ = string.toLowerCase();
@@ -2550,22 +2550,22 @@ final class Class66 {
             } else if (string_240_.startsWith(Class274.aClass274_3546.method2063(0, 544))) {
                 i_242_ = 5;
                 string = string.substring(Class274.aClass274_3546.method2063(0, 544).length());
-            } else if (Class348_Sub33.anInt6967 != 0) {
-                if (string_240_.startsWith(Class274.aClass274_3542.method2063(Class348_Sub33.anInt6967, 544))) {
+            } else if (Class348_Sub33.language != 0) {
+                if (string_240_.startsWith(Class274.aClass274_3542.method2063(Class348_Sub33.language, 544))) {
                     i_242_ = 1;
-                    string = string.substring(Class274.aClass274_3542.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3543.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3542.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3543.method2063(Class348_Sub33.language, 544))) {
                     i_242_ = 2;
-                    string = string.substring(Class274.aClass274_3543.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3544.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3543.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3544.method2063(Class348_Sub33.language, 544))) {
                     i_242_ = 3;
-                    string = string.substring(Class274.aClass274_3544.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3545.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3544.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3545.method2063(Class348_Sub33.language, 544))) {
                     i_242_ = 4;
-                    string = string.substring(Class274.aClass274_3545.method2063(Class348_Sub33.anInt6967, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3546.method2063(Class348_Sub33.anInt6967, 544))) {
+                    string = string.substring(Class274.aClass274_3545.method2063(Class348_Sub33.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3546.method2063(Class348_Sub33.language, 544))) {
                     i_242_ = 5;
-                    string = string.substring(Class274.aClass274_3546.method2063(Class348_Sub33.anInt6967, 544).length());
+                    string = string.substring(Class274.aClass274_3546.method2063(Class348_Sub33.language, 544).length());
                 }
             }
             anInt1158++;
@@ -2683,15 +2683,15 @@ final class Class66 {
                 int i_258_ = anIntArray1149[anInt1173];
                 int i_259_ = anIntArray1149[anInt1173 + 1];
                 if ((Class132.aPlayer_1907.aClass154_10536) != null) {
-                    for (int i_260_ = 0; i_260_ < Class141.anIntArray1973.length; i_260_++) {
-                        if (Class141.anIntArray1973[i_260_] == i_258_) {
-                            Class132.aPlayer_1907.aClass154_10536.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_260_);
+                    for (int i_260_ = 0; i_260_ < MSITypeList.anIntArray1973.length; i_260_++) {
+                        if (MSITypeList.anIntArray1973[i_260_] == i_258_) {
+                            Class132.aPlayer_1907.aClass154_10536.method1233(Class348_Sub40_Sub25.idkTypeList, i_259_, -1, i_260_);
                             return;
                         }
                     }
                     for (int i_261_ = 0; i_261_ < Class91.anIntArray1521.length; i_261_++) {
                         if (Class91.anIntArray1521[i_261_] == i_258_) {
-                            Class132.aPlayer_1907.aClass154_10536.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_261_);
+                            Class132.aPlayer_1907.aClass154_10536.method1233(Class348_Sub40_Sub25.idkTypeList, i_259_, -1, i_261_);
                             break;
                         }
                     }
@@ -2722,7 +2722,7 @@ final class Class66 {
                 int i_265_ = anIntArray1149[anInt1173];
                 int i_266_ = anIntArray1149[anInt1173 + 1];
                 if ((Class132.aPlayer_1907.aClass154_10536) != null) {
-                    Class132.aPlayer_1907.aClass154_10536.method1227((byte) 42, i_265_, i_266_, Exception_Sub1.aClass255_112);
+                    Class132.aPlayer_1907.aClass154_10536.method1227((byte) 42, i_265_, i_266_, Exception_Sub1.itemTypeList);
                     return;
                 }
                 return;
@@ -2878,7 +2878,7 @@ final class Class66 {
                     class46.anInt795 = 0;
                     class46.anInt730 = 1;
                     class46.anInt841 = 0;
-                    Class17 class17 = (class46.anInt699 == -1 ? null : Class10.aClass87_191.method835(class46.anInt699, 7));
+                    Class17 class17 = (class46.anInt699 == -1 ? null : Class10.seqTypeList.method835(class46.anInt699, 7));
                     if (class17 != null) Class264.method2017(class46.anInt795, class17, 46);
                     Class251.method1916(-9343, class46);
                 }
@@ -2979,7 +2979,7 @@ final class Class66 {
                 anInt1173 -= 2;
                 int i_275_ = anIntArray1149[anInt1173];
                 int i_276_ = anIntArray1149[anInt1173 + 1];
-                Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_275_, 28364);
+                Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_275_, 28364);
                 if (i_276_ == class254.anInt3256) {
                     class46.method435(i_275_, -3437);
                     return;
@@ -2989,7 +2989,7 @@ final class Class66 {
             if (i == 1128) {
                 int i_277_ = anIntArray1149[--anInt1173];
                 String string = aStringArray1152[--anInt1170];
-                Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_277_, 28364);
+                Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_277_, 28364);
                 if (class254.aString3258.equals(string)) {
                     class46.method435(i_277_, -3437);
                     return;
@@ -3032,7 +3032,7 @@ final class Class66 {
                     class46.anInt812 = i_279_;
                     class46.anInt781 = i_280_;
                     class46.aBoolean720 = i == 1208 || i == 1209;
-                    ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(74, i_279_);
+                    ItemDefinition itemDefinition = Exception_Sub1.itemTypeList.method1940(74, i_279_);
                     class46.anInt757 = itemDefinition.anInt2787;
                     class46.anInt675 = itemDefinition.anInt2781;
                     class46.anInt717 = itemDefinition.anInt2810;
@@ -3379,7 +3379,7 @@ final class Class66 {
                 }
                 if (i == 1613) {
                     int i_295_ = anIntArray1149[--anInt1173];
-                    Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_295_, 28364);
+                    Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_295_, 28364);
                     if (class254.method1925(false)) aStringArray1152[anInt1170++] = class46.method429(i_295_, (class254.aString3258), -1);
                     else {
                         anIntArray1149[anInt1173++] = class46.method428((class254.anInt3256), i_295_, -126);
@@ -3810,7 +3810,7 @@ final class Class66 {
                 }
                 if (i == 3304) {
                     int i_323_ = anIntArray1149[--anInt1173];
-                    anIntArray1149[anInt1173++] = (Class127_Sub1.aClass271_8378.method2044(106, i_323_).anInt9542);
+                    anIntArray1149[anInt1173++] = (Class127_Sub1.invTypeList.method2044(106, i_323_).anInt9542);
                     return;
                 }
                 if (i == 3305) {
@@ -3955,7 +3955,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 3335) {
-                    anIntArray1149[anInt1173++] = Class348_Sub33.anInt6967;
+                    anIntArray1149[anInt1173++] = Class348_Sub33.language;
                     return;
                 }
                 if (i == 3336) {
@@ -4029,7 +4029,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_348_ = anIntArray1149[anInt1173];
                     int i_349_ = anIntArray1149[anInt1173 + 1];
-                    Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, i_348_);
+                    Class117 class117 = Class348_Sub7.enumTypeList.findEnum(true, i_348_);
                     aStringArray1152[anInt1170++] = class117.lookup(i_349_, 124);
                     return;
                 }
@@ -4039,7 +4039,7 @@ final class Class66 {
                     int i_351_ = anIntArray1149[anInt1173 + 1];
                     int i_352_ = anIntArray1149[anInt1173 + 2];
                     int i_353_ = anIntArray1149[anInt1173 + 3];
-                    Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, i_352_);
+                    Class117 class117 = Class348_Sub7.enumTypeList.findEnum(true, i_352_);
                     if (class117.aChar1778 != i_350_ || class117.aChar1779 != i_351_)
                         throw new RuntimeException("C3408-1 " + i_352_ + "-" + i_353_);
                     if (i_351_ == 115) {
@@ -4057,7 +4057,7 @@ final class Class66 {
                     int i_355_ = anIntArray1149[anInt1173 + 1];
                     int i_356_ = anIntArray1149[anInt1173 + 2];
                     if (i_355_ == -1) throw new RuntimeException("C3409-2");
-                    Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, i_355_);
+                    Class117 class117 = Class348_Sub7.enumTypeList.findEnum(true, i_355_);
                     if (class117.aChar1779 != i_354_) throw new RuntimeException("C3409-1");
                     anIntArray1149[anInt1173++] = class117.method1067(true, i_356_) ? 1 : 0;
                     return;
@@ -4066,14 +4066,14 @@ final class Class66 {
                     int i_357_ = anIntArray1149[--anInt1173];
                     String string = aStringArray1152[--anInt1170];
                     if (i_357_ == -1) throw new RuntimeException("C3410-2");
-                    Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, i_357_);
+                    Class117 class117 = Class348_Sub7.enumTypeList.findEnum(true, i_357_);
                     if (class117.aChar1779 != 's') throw new RuntimeException("C3410-1");
                     anIntArray1149[anInt1173++] = class117.method1066(false, string) ? 1 : 0;
                     return;
                 }
                 if (i == 3411) {
                     int i_358_ = anIntArray1149[--anInt1173];
-                    Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, i_358_);
+                    Class117 class117 = Class348_Sub7.enumTypeList.findEnum(true, i_358_);
                     anIntArray1149[anInt1173++] = class117.aClass356_1767.method3474(1);
                     return;
                 }
@@ -4124,7 +4124,7 @@ final class Class66 {
                 if (i == 3604) {
                     String string = aStringArray1152[--anInt1170];
                     int i_362_ = anIntArray1149[--anInt1173];
-                    Class261.method1982(16, i_362_, string);
+                    BASTypeList.method1982(16, i_362_, string);
                     return;
                 }
                 if (i == 3605) {
@@ -4204,7 +4204,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 3616) {
-                    anIntArray1149[anInt1173++] = Class219.aByte2871;
+                    anIntArray1149[anInt1173++] = HitmarkTypeList.aByte2871;
                     return;
                 }
                 if (i == 3617) {
@@ -4581,7 +4581,7 @@ final class Class66 {
                 }
                 if (i == 4107) {
                     anInt1170 -= 2;
-                    anIntArray1149[anInt1173++] = Class239_Sub21.method1811(9152, (aStringArray1152[anInt1170 + 1]), Class348_Sub33.anInt6967, (aStringArray1152[anInt1170]));
+                    anIntArray1149[anInt1173++] = Class239_Sub21.method1811(9152, (aStringArray1152[anInt1170 + 1]), Class348_Sub33.language, (aStringArray1152[anInt1170]));
                     return;
                 }
                 if (i == 4108) {
@@ -4703,7 +4703,7 @@ final class Class66 {
                 if (i == 4124) {
                     boolean bool_453_ = anIntArray1149[--anInt1173] != 0;
                     int i_454_ = anIntArray1149[--anInt1173];
-                    aStringArray1152[anInt1170++] = Class357.method3486(0, bool_453_, Class348_Sub33.anInt6967, i_454_, 16980);
+                    aStringArray1152[anInt1170++] = Class357.method3486(0, bool_453_, Class348_Sub33.language, i_454_, 16980);
                     return;
                 }
                 if (i == 4125) {
@@ -4716,14 +4716,14 @@ final class Class66 {
             } else if (i < 4300) {
                 if (i == 4200) {
                     int i_456_ = anIntArray1149[--anInt1173];
-                    aStringArray1152[anInt1170++] = (Exception_Sub1.aClass255_112.method1940(-52, i_456_).aString2795) + Loader.getDebug(i_456_);
+                    aStringArray1152[anInt1170++] = (Exception_Sub1.itemTypeList.method1940(-52, i_456_).aString2795) + Loader.getDebug(i_456_);
                     return;
                 }
                 if (i == 4201) {
                     anInt1173 -= 2;
                     int i_457_ = anIntArray1149[anInt1173];
                     int i_458_ = anIntArray1149[anInt1173 + 1];
-                    ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(-79, i_457_);
+                    ItemDefinition itemDefinition = Exception_Sub1.itemTypeList.method1940(-79, i_457_);
                     if (i_458_ >= 1 && i_458_ <= 5 && (itemDefinition.aStringArray2811[i_458_ - 1] != null)) aStringArray1152[anInt1170++] = (itemDefinition.aStringArray2811[i_458_ - 1]);
                     else {
                         aStringArray1152[anInt1170++] = "";
@@ -4735,7 +4735,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_459_ = anIntArray1149[anInt1173];
                     int i_460_ = anIntArray1149[anInt1173 + 1];
-                    ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(112, i_459_);
+                    ItemDefinition itemDefinition = Exception_Sub1.itemTypeList.method1940(112, i_459_);
                     if (i_460_ >= 1 && i_460_ <= 5 && (itemDefinition.aStringArray2763[i_460_ - 1] != null)) aStringArray1152[anInt1170++] = (itemDefinition.aStringArray2763[i_460_ - 1]);
                     else {
                         aStringArray1152[anInt1170++] = "";
@@ -4745,17 +4745,17 @@ final class Class66 {
                 }
                 if (i == 4203) {
                     int i_461_ = anIntArray1149[--anInt1173];
-                    anIntArray1149[anInt1173++] = Exception_Sub1.aClass255_112.method1940(-52, i_461_).anInt2819;
+                    anIntArray1149[anInt1173++] = Exception_Sub1.itemTypeList.method1940(-52, i_461_).anInt2819;
                     return;
                 }
                 if (i == 4204) {
                     int i_462_ = anIntArray1149[--anInt1173];
-                    anIntArray1149[anInt1173++] = (Exception_Sub1.aClass255_112.method1940(82, i_462_).anInt2820 == 1) ? 1 : 0;
+                    anIntArray1149[anInt1173++] = (Exception_Sub1.itemTypeList.method1940(82, i_462_).anInt2820 == 1) ? 1 : 0;
                     return;
                 }
                 if (i == 4205) {
                     int i_463_ = anIntArray1149[--anInt1173];
-                    ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(80, i_463_);
+                    ItemDefinition itemDefinition = Exception_Sub1.itemTypeList.method1940(80, i_463_);
                     if (itemDefinition.anInt2833 == -1 && itemDefinition.anInt2758 >= 0) anIntArray1149[anInt1173++] = itemDefinition.anInt2758;
                     else {
                         anIntArray1149[anInt1173++] = i_463_;
@@ -4765,7 +4765,7 @@ final class Class66 {
                 }
                 if (i == 4206) {
                     int i_464_ = anIntArray1149[--anInt1173];
-                    ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(-56, i_464_);
+                    ItemDefinition itemDefinition = Exception_Sub1.itemTypeList.method1940(-56, i_464_);
                     if (itemDefinition.anInt2833 >= 0 && itemDefinition.anInt2758 >= 0) anIntArray1149[anInt1173++] = itemDefinition.anInt2758;
                     else {
                         anIntArray1149[anInt1173++] = i_464_;
@@ -4775,17 +4775,17 @@ final class Class66 {
                 }
                 if (i == 4207) {
                     int i_465_ = anIntArray1149[--anInt1173];
-                    anIntArray1149[anInt1173++] = (Exception_Sub1.aClass255_112.method1940(87, i_465_).aBoolean2783) ? 1 : 0;
+                    anIntArray1149[anInt1173++] = (Exception_Sub1.itemTypeList.method1940(87, i_465_).aBoolean2783) ? 1 : 0;
                     return;
                 }
                 if (i == 4208) {
                     anInt1173 -= 2;
                     int i_466_ = anIntArray1149[anInt1173];
                     int i_467_ = anIntArray1149[anInt1173 + 1];
-                    Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_467_, 28364);
-                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Exception_Sub1.aClass255_112.method1940(-96, i_466_).method1561(class254.aString3258, i_467_, -1511086397));
+                    Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_467_, 28364);
+                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Exception_Sub1.itemTypeList.method1940(-96, i_466_).method1561(class254.aString3258, i_467_, -1511086397));
                     else {
-                        anIntArray1149[anInt1173++] = (Exception_Sub1.aClass255_112.method1940(-82, i_466_).method1567(class254.anInt3256, -106, i_467_));
+                        anIntArray1149[anInt1173++] = (Exception_Sub1.itemTypeList.method1940(-82, i_466_).method1567(class254.anInt3256, -106, i_467_));
                         return;
                     }
                     return;
@@ -4794,7 +4794,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_468_ = anIntArray1149[anInt1173];
                     int i_469_ = anIntArray1149[anInt1173 + 1] - 1;
-                    ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(108, i_468_);
+                    ItemDefinition itemDefinition = Exception_Sub1.itemTypeList.method1940(108, i_468_);
                     if (itemDefinition.anInt2766 == i_469_) anIntArray1149[anInt1173++] = itemDefinition.anInt2818;
                     else {
                         if (itemDefinition.anInt2774 == i_469_) anIntArray1149[anInt1173++] = itemDefinition.anInt2817;
@@ -4809,7 +4809,7 @@ final class Class66 {
                 if (i == 4210) {
                     String string = aStringArray1152[--anInt1170];
                     int i_470_ = anIntArray1149[--anInt1173];
-                    Class217.method1586(i_470_ == 1, (byte) -108, string);
+                    VarPlayerTypeListClient.method1586(i_470_ == 1, (byte) -108, string);
                     anIntArray1149[anInt1173++] = Class76.anInt1285;
                     return;
                 }
@@ -4827,7 +4827,7 @@ final class Class66 {
                 }
                 if (i == 4213) {
                     int i_471_ = anIntArray1149[--anInt1173];
-                    anIntArray1149[anInt1173++] = Exception_Sub1.aClass255_112.method1940(-115, i_471_).anInt2802;
+                    anIntArray1149[anInt1173++] = Exception_Sub1.itemTypeList.method1940(-115, i_471_).anInt2802;
                     return;
                 }
                 if (i == 4214) {
@@ -4856,10 +4856,10 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_478_ = anIntArray1149[anInt1173];
                     int i_479_ = anIntArray1149[anInt1173 + 1];
-                    Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_479_, 28364);
-                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Class189.aClass278_2529.method2079(i_478_, -1).method801((byte) 17, i_479_, class254.aString3258));
+                    Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_479_, 28364);
+                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Class189.npcTypeList.method2079(i_478_, -1).method801((byte) 17, i_479_, class254.aString3258));
                     else {
-                        anIntArray1149[anInt1173++] = (Class189.aClass278_2529.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48));
+                        anIntArray1149[anInt1173++] = (Class189.npcTypeList.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48));
                         return;
                     }
                     return;
@@ -4869,10 +4869,10 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_480_ = anIntArray1149[anInt1173];
                     int i_481_ = anIntArray1149[anInt1173 + 1];
-                    Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_481_, 28364);
-                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16));
+                    Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_481_, 28364);
+                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Class348_Sub40_Sub12.objectTypeList.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16));
                     else {
-                        anIntArray1149[anInt1173++] = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_480_).method487(i_481_, class254.anInt3256, 81));
+                        anIntArray1149[anInt1173++] = (Class348_Sub40_Sub12.objectTypeList.method2005(0, i_480_).method487(i_481_, class254.anInt3256, 81));
                         return;
                     }
                     return;
@@ -4882,12 +4882,12 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_482_ = anIntArray1149[anInt1173];
                     int i_483_ = anIntArray1149[anInt1173 + 1];
-                    Class254 class254 = Class101_Sub3.aClass326_5764.method2600(i_483_, 28364);
+                    Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_483_, 28364);
                     if (class254.method1925(false)) {
-                        aStringArray1152[anInt1170++] = (Class136.aClass65_4787.method700(i_482_, -121).method3170(-250, class254.aString3258, i_483_));
+                        aStringArray1152[anInt1170++] = (Class136.structTypeList.method700(i_482_, -121).method3170(-250, class254.aString3258, i_483_));
                         System.out.println("AttributeMap: " + i_482_ + ", " + i_483_ + " = " + aStringArray1152[anInt1170 - 1]);
                     } else {
-                        anIntArray1149[anInt1173++] = (Class136.aClass65_4787.method700(i_482_, 81).method3166(i_483_, class254.anInt3256, (byte) 124));
+                        anIntArray1149[anInt1173++] = (Class136.structTypeList.method700(i_482_, 81).method3166(i_483_, class254.anInt3256, (byte) 124));
                         System.out.println("AttributeMap: " + i_482_ + ", " + i_483_ + " = " + anIntArray1149[anInt1173 - 1]);
                         return;
                     }
@@ -4895,7 +4895,7 @@ final class Class66 {
                 }
             } else if (i < 4700 && i == 4600) {
                 int i_484_ = anIntArray1149[--anInt1173];
-                Class225 class225 = Class64_Sub3.aClass261_5558.method1983(i_484_, 32);
+                Class225 class225 = Class64_Sub3.basTypeList.method1983(i_484_, 32);
                 if (class225.anIntArray2915 != null && class225.anIntArray2915.length > 0) {
                     int i_485_ = 0;
                     int i_486_ = class225.anIntArray2929[0];
@@ -4933,10 +4933,10 @@ final class Class66 {
                     if (i_490_ == 0) anIntArray1149[anInt1173++] = is_489_[i_488_];
                     else if (i_490_ == 1) {
                         int i_492_ = is_489_[i_488_];
-                        anIntArray1149[anInt1173++] = (Class318_Sub1_Sub3_Sub3.aClass170_10209.anIntArray5063[i_492_]);
+                        anIntArray1149[anInt1173++] = (Class318_Sub1_Sub3_Sub3.timedVarDomain.anIntArray5063[i_492_]);
                     } else if (i_490_ == 2) {
                         int i_493_ = is_489_[i_488_];
-                        Class318_Sub1_Sub3_Sub3.aClass170_10209.method1306((byte) -78, anIntArray1149[--anInt1173], i_493_);
+                        Class318_Sub1_Sub3_Sub3.timedVarDomain.method1306((byte) -78, anIntArray1149[--anInt1173], i_493_);
                     } else if (i_490_ == 3) aStringArray1152[anInt1170++] = (clientScript.stringOperands[i_488_]);
                     else if (i_490_ == 6) i_488_ += is_489_[i_488_];
                     else if (i_490_ == 7) {
@@ -4962,10 +4962,10 @@ final class Class66 {
                         aStringArray1155 = class184.aStringArray2473;
                     } else if (i_490_ == 25) {
                         int i_494_ = is_489_[i_488_];
-                        anIntArray1149[anInt1173++] = Class318_Sub1_Sub3_Sub3.aClass170_10209.method62(i_494_, -65536);
+                        anIntArray1149[anInt1173++] = Class318_Sub1_Sub3_Sub3.timedVarDomain.method62(i_494_, -65536);
                     } else if (i_490_ == 27) {
                         int i_495_ = is_489_[i_488_];
-                        Class318_Sub1_Sub3_Sub3.aClass170_10209.method1307(i_495_, -1, anIntArray1149[--anInt1173]);
+                        Class318_Sub1_Sub3_Sub3.timedVarDomain.method1307(i_495_, -1, anIntArray1149[--anInt1173]);
                     } else if (i_490_ == 31) {
                         anInt1173 -= 2;
                         if (anIntArray1149[anInt1173] <= anIntArray1149[anInt1173 + 1]) i_488_ += is_489_[i_488_];

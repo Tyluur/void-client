@@ -47,9 +47,9 @@ final class Class161 {
             if (Class206.anInt4889 == 0) Class348_Sub40_Sub32.method3134(-1);
             else {
                 Class318_Sub1_Sub1.aFloat8725 = Class160.aFloat2137;
-                Canvas_Sub1.anInt70 = Class187.anInt2500;
+                Canvas_Sub1.anInt70 = QuestTypeList.anInt2500;
                 Class239_Sub24.aClass299_6098 = Class158.aClass299_4938;
-                Class64.aFloat1136 = Class244.aFloat4626;
+                Class64.aFloat1136 = Js5TextureSource.aFloat4626;
                 Class245.aFloat3172 = Class269.aFloat3462;
                 Index.aFloat670 = Class348_Sub3.aFloat6586;
                 Class258_Sub4.aFloat8560 = Class239_Sub10.aFloat5945;
@@ -95,7 +95,7 @@ final class Class161 {
         Class237.method1686(55);
         Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub23_7231), 2);
         Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub29_7229), 2);
-        Class348_Sub40.method3038(-1);
+        Class348_Sub40.updateFeatureMask(-1);
         Class76.method773(bool);
         RuntimeException_Sub1.aBoolean4604 = true;
     }

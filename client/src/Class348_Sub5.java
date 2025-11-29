@@ -74,13 +74,13 @@ abstract class Class348_Sub5 extends Class348 {
                             Class352.anInt4337 = -5;
                             return;
                         }
-                        Class255.aClass161_3285.method1259(0);
+                        ItemTypeList.aClass161_3285.method1259(0);
                         Class367_Sub2.anInt7297 = 1;
                         Class169.anInt2264 = 0;
                         Sprite_Sub1.anInt8398++;
                     }
                     if (Class367_Sub2.anInt7297 == 1) {
-                        Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
+                        Class130_Sub1.aClass144_5800 = (ItemTypeList.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
                         Class367_Sub2.anInt7297 = 2;
                     }
                     if (Class367_Sub2.anInt7297 == 2) {
@@ -108,7 +108,7 @@ abstract class Class348_Sub5 extends Class348 {
                     Class348_Sub40_Sub8.aClass238_9165 = null;
                 }
                 if (Sprite_Sub1.anInt8398 < 2) {
-                    Class255.aClass161_3285.method1259(0);
+                    ItemTypeList.aClass161_3285.method1259(0);
                     Class169.anInt2264 = 0;
                     Sprite_Sub1.anInt8398++;
                     Class367_Sub2.anInt7297 = 1;

@@ -214,13 +214,13 @@ final class Class361 {
                         Class67.aSprite_4643 = var_ha.method3683(i_39_, i_41_, i_42_, i_43_, false);
                     }
                     Class67.aSprite_4643.method974(i_39_, i_41_);
-                    int i_44_ = Class25.anInt370 * i_42_ / Class75.anInt1259;
+                    int i_44_ = SkyBoxSphereTypeList.anInt370 * i_42_ / Class75.anInt1259;
                     int i_45_ = i_43_ * Class182.anInt2446 / Class75.anInt1267;
                     int i_46_ = i_39_ - -(i_42_ * Class368.anInt4509 / Class75.anInt1259);
                     if (bool != true) method3498(44, null, -27, -91, true, -26);
                     int i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * Class59_Sub1_Sub2.anInt8665 / Class75.anInt1267)));
                     int i_48_ = -1996554240;
-                    if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) i_48_ = -1996488705;
+                    if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.modeGame) i_48_ = -1996488705;
                     var_ha.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1);
                     var_ha.method3628(i_46_, i_47_, i_44_, i_45_, i_48_, 0);
                     if (Class367_Sub9.anInt7379 <= 0) break;
@@ -228,7 +228,7 @@ final class Class361 {
                     if (Class164.anInt2173 <= 50) i_49_ = Class164.anInt2173 * 5;
                     else i_49_ = -(5 * Class164.anInt2173) + 500;
                     for (Class348_Sub21 class348_sub21 = ((Class348_Sub21) Class75.aClass262_1254.method1995(4)); class348_sub21 != null; class348_sub21 = (Class348_Sub21) Class75.aClass262_1254.method1990((byte) 126)) {
-                        Class42 class42 = (Class75.aClass153_1238.method1225(class348_sub21.anInt6847, (byte) 71));
+                        Class42 class42 = (Class75.aMapElementTypeList_1238.method1225(class348_sub21.anInt6847, (byte) 71));
                         if (Class60.method589(class42, -4)) {
                             if (Class348_Sub40_Sub30.anInt9399 == (class348_sub21.anInt6847)) {
                                 int i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / Class75.anInt1259));
@@ -281,7 +281,7 @@ final class Class361 {
         String string = ("tele " + i_62_ + "," + (i_63_ >> 6) + "," + (i >> 6) + "," + (0x3f & i_63_) + "," + (0x3f & i));
         System.out.println(string);
         if (i_61_ != 2) method3502(-25, -23, 24, 63);
-        Class82.method812(string, true, false, (byte) -79);
+        VarcstrTypeList.method812(string, true, false, (byte) -79);
     }
 
     final boolean method3503(int i, byte i_64_, int i_65_, int i_66_, int i_67_, int i_68_, int i_69_, int i_70_, int i_71_) {

@@ -4,7 +4,7 @@
 
 final class Class348_Sub40_Sub18 extends Class348_Sub40 {
     private int anInt9244;
-    static Class319 aClass319_9245;
+    static GfxTypeList gfxTypeList; // aClass319_9245
     static int anInt9246;
     static int anInt9247;
     static int anInt9248;
@@ -134,8 +134,8 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40 {
 
     public static void method3096(int i) {
         anIntArray9249 = null;
-        aClass319_9245 = null;
-        if (i != 32462) aClass319_9245 = null;
+        gfxTypeList = null;
+        if (i != 32462) gfxTypeList = null;
     }
 
     final void method3049(Class348_Sub49 class348_sub49, int i, int i_20_) {

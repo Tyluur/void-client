@@ -56,7 +56,7 @@ final class Class348_Sub42_Sub13 extends Class348_Sub42 {
             this.method2715((byte) 112);
             this.method3162(true);
             Class8.anInt166--;
-            Class259.aClass60_3301.method582(this, class348_sub42_sub12.aLong9600, (byte) -128);
+            VarcTypeList.aClass60_3301.method582(this, class348_sub42_sub12.aLong9600, (byte) -128);
             return false;
         }
         return i_5_ != method3235(-17937);

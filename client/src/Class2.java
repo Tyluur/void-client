@@ -4,7 +4,7 @@
 
 final class Class2 {
     static int anInt116;
-    static Class141 aClass141_117;
+    static MSITypeList msiTypeList; // aClass141_117
     r aR118;
     Class64 aClass64_119;
     static int anInt120;
@@ -14,12 +14,12 @@ final class Class2 {
     static final Class110_Sub1 method170(boolean bool) {
         if (bool != true) method174(-106, -36);
         anInt122++;
-        if (Class348_Sub36.anInt6985 < Class65.aClass110_Sub1Array1146.length) return Class65.aClass110_Sub1Array1146[Class348_Sub36.anInt6985++];
+        if (Class348_Sub36.anInt6985 < StructTypeList.aClass110_Sub1Array1146.length) return StructTypeList.aClass110_Sub1Array1146[Class348_Sub36.anInt6985++];
         return null;
     }
 
     public static void method171(byte i) {
-        aClass141_117 = null;
+        msiTypeList = null;
         if (i != 72) method173(39, null, null);
     }
 
@@ -40,7 +40,7 @@ final class Class2 {
             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, class46_0_.anInt812);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, class46.anInt704);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, class46.anInt812);
-            if (i > -50) aClass141_117 = null;
+            if (i > -50) msiTypeList = null;
             Class348_Sub42_Sub14.method3243(-100, class348_sub47);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ak.E(" + i + ',' + (class46 != null ? "{...}" : "null") + ',' + (class46_0_ != null ? "{...}" : "null") + ')'));
@@ -48,7 +48,7 @@ final class Class2 {
     }
 
     static final void method174(int i, int i_1_) {
-        if (i_1_ != -30742) aClass141_117 = null;
+        if (i_1_ != -30742) msiTypeList = null;
         anInt121++;
         Class332.aClass60_4139.method578(2, i);
     }

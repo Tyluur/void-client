@@ -84,7 +84,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1 implements Interf
     private final Class2 method2401(ha var_ha, int i, boolean bool, int i_4_) {
         anInt9985++;
         if (i_4_ != 22) method2404(null, -21, -25);
-        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, aShort9991 & 0xffff);
+        Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, aShort9991 & 0xffff);
         s var_s;
         s var_s_5_;
         if (aBoolean9983) {

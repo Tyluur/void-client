@@ -171,9 +171,9 @@ abstract class Class64 {
         short[] is = new short[16];
         int i_52_ = i;
         int i_53_ = bool ? 32768 : 0;
-        int i_54_ = ((!bool ? Class239_Sub6.aClass355_5900.anInt4365 : Class239_Sub6.aClass355_5900.anInt4364) + i_53_);
+        int i_54_ = ((!bool ? Class239_Sub6.quickChatPhraseTypeList.anInt4365 : Class239_Sub6.quickChatPhraseTypeList.anInt4364) + i_53_);
         for (int i_55_ = i_53_; i_55_ < i_54_; i_55_++) {
-            Class348_Sub42_Sub10 class348_sub42_sub10 = Class239_Sub6.aClass355_5900.method3471(i_55_, (byte) -102);
+            Class348_Sub42_Sub10 class348_sub42_sub10 = Class239_Sub6.quickChatPhraseTypeList.method3471(i_55_, (byte) -102);
             if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).toLowerCase().indexOf(string) != -1) {
                 if (i_52_ >= 50) {
                     Class192.aShortArray2579 = null;
@@ -194,7 +194,7 @@ abstract class Class64 {
         Class192.aShortArray2579 = is;
         String[] strings = new String[Class76.anInt1285];
         for (int i_58_ = 0; Class76.anInt1285 > i_58_; i_58_++)
-            strings[i_58_] = Class239_Sub6.aClass355_5900.method3471(is[i_58_], (byte) -91).method3219(Class348_Sub21.method2955(i, 81));
+            strings[i_58_] = Class239_Sub6.quickChatPhraseTypeList.method3471(is[i_58_], (byte) -91).method3219(Class348_Sub21.method2955(i, 81));
         Class174.method1333(Class192.aShortArray2579, i + 26073, strings);
     }
 

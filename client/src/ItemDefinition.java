@@ -14,7 +14,7 @@ final class ItemDefinition {
     int anInt2758;
     int anInt2759;
     private int anInt2760;
-    Class255 aClass255_2761;
+    ItemTypeList aItemTypeList_2761;
     int[] anIntArray2762;
     String[] aStringArray2763;
     int anInt2764;
@@ -97,10 +97,10 @@ final class ItemDefinition {
             i_0_ = anInt2822;
         }
         if (i_0_ == -1) return null;
-        Class124 class124 = Class300.method2277(0, this.aClass255_2761.aIndex_3268, i_0_, -1);
+        Class124 class124 = Class300.method2277(0, this.aItemTypeList_2761.aIndex_3268, i_0_, -1);
         if ((~class124.anInt1830) > i) class124.method1092(2, 54);
         if (i_1_ != -1) {
-            Class124 class124_2_ = Class300.method2277(0, (this.aClass255_2761.aIndex_3268), i_1_, -1);
+            Class124 class124_2_ = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), i_1_, -1);
             if (class124_2_.anInt1830 < 13) class124_2_.method1092(2, i ^ ~0x78);
             Class124[] class124s = {class124, class124_2_};
             class124 = new Class124(class124s, 2);
@@ -127,8 +127,8 @@ final class ItemDefinition {
         }
         if (i_5_ == -1) return true;
         boolean bool_8_ = true;
-        if (!this.aClass255_2761.aIndex_3268.method420(-10499, i_5_, 0)) bool_8_ = false;
-        if (i_7_ != -1 && !this.aClass255_2761.aIndex_3268.method420(-10499, i_7_, 0)) bool_8_ = false;
+        if (!this.aItemTypeList_2761.aIndex_3268.method420(-10499, i_5_, 0)) bool_8_ = false;
+        if (i_7_ != -1 && !this.aItemTypeList_2761.aIndex_3268.method420(-10499, i_7_, 0)) bool_8_ = false;
         return bool_8_;
     }
 
@@ -175,7 +175,7 @@ final class ItemDefinition {
                 for (int i_11_ = 0; i_11_ < 4; i_11_++)
                     this.aStringArray2763[i_11_] = itemDefinition_9_.aStringArray2763[i_11_];
             }
-            this.aStringArray2763[4] = Class274.aClass274_3489.method2063((this.aClass255_2761.anInt3286), 544);
+            this.aStringArray2763[4] = Class274.aClass274_3489.method2063((this.aItemTypeList_2761.anInt3286), 544);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("rq.G(" + (itemDefinition_9_ != null ? "{...}" : "null") + ',' + i + ',' + (itemDefinition_10_ != null ? "{...}" : "null") + ')'));
         }
@@ -185,8 +185,8 @@ final class ItemDefinition {
         anInt2816++;
         if (i_12_ != -11619) this.anInt2788 = -113;
         if (i < 100000) return "<col=ffff00>" + i + "</col>";
-        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + Class274.aClass274_3519.method2063((this.aClass255_2761.anInt3286), 544) + "</col>");
-        return ("<col=00ff80>" + i / 1000000 + Class274.aClass274_3517.method2063((this.aClass255_2761.anInt3286), 544) + "</col>");
+        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + Class274.aClass274_3519.method2063((this.aItemTypeList_2761.anInt3286), 544) + "</col>");
+        return ("<col=00ff80>" + i / 1000000 + Class274.aClass274_3517.method2063((this.aItemTypeList_2761.anInt3286), 544) + "</col>");
     }
 
     final Class124 method1558(boolean bool, boolean bool_13_) {
@@ -201,16 +201,16 @@ final class ItemDefinition {
             i_14_ = anInt2760;
         }
         if (i == -1) return null;
-        Class124 class124 = Class300.method2277(0, this.aClass255_2761.aIndex_3268, i, -1);
+        Class124 class124 = Class300.method2277(0, this.aItemTypeList_2761.aIndex_3268, i, -1);
         if (class124.anInt1830 < 13) class124.method1092(2, 64);
         if (i_14_ != -1) {
-            Class124 class124_16_ = Class300.method2277(0, (this.aClass255_2761.aIndex_3268), i_14_, -1);
+            Class124 class124_16_ = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), i_14_, -1);
             if (class124_16_.anInt1830 < 13) class124_16_.method1092(2, 89);
             if (i_15_ == -1) {
                 Class124[] class124s = {class124, class124_16_};
                 class124 = new Class124(class124s, 2);
             } else {
-                Class124 class124_17_ = Class300.method2277(0, (this.aClass255_2761.aIndex_3268), i_15_, -1);
+                Class124 class124_17_ = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), i_15_, -1);
                 if (class124_17_.anInt1830 < 13) class124_17_.method1092(2, 109);
                 Class124[] class124s = {class124, class124_16_, class124_17_};
                 class124 = new Class124(class124s, 3);
@@ -238,14 +238,14 @@ final class ItemDefinition {
                 for (int i_26_ = 0; i_26_ < 10; i_26_++) {
                     if (i_21_ >= this.anIntArray2831[i_26_] && this.anIntArray2831[i_26_] != 0) i_25_ = this.anIntArray2762[i_26_];
                 }
-                if (i_25_ != -1) return (this.aClass255_2761.method1940(103, i_25_).method1559(class154, class17, var_ha, i, i_20_, 1, i_22_, (byte) 88, i_24_));
+                if (i_25_ != -1) return (this.aItemTypeList_2761.method1940(103, i_25_).method1559(class154, class17, var_ha, i, i_20_, 1, i_22_, (byte) 88, i_24_));
             }
             if (i_23_ != 88) this.aString2795 = null;
             int i_27_ = i;
             if (class17 != null) i_27_ |= class17.method263(i_24_, 105, i_22_, true);
             Class64 class64;
-            synchronized (this.aClass255_2761.aClass60_3287) {
-                class64 = (Class64) (this.aClass255_2761.aClass60_3287.method583(var_ha.anInt4567 << 29 | this.anInt2769, 69));
+            synchronized (this.aItemTypeList_2761.aClass60_3287) {
+                class64 = (Class64) (this.aItemTypeList_2761.aClass60_3287.method583(var_ha.anInt4567 << 29 | this.anInt2769, 69));
             }
             if (class64 == null || var_ha.method3667(class64.ua(), i_27_) != 0) {
                 if (class64 != null) i_27_ = var_ha.method3679(i_27_, class64.ua());
@@ -255,10 +255,10 @@ final class ItemDefinition {
                 if (anInt2786 != 128) i_28_ |= 0x1;
                 if (anInt2786 != 128) i_28_ |= 0x2;
                 if (anInt2786 != 128) i_28_ |= 0x4;
-                Class124 class124 = Class300.method2277(0, (this.aClass255_2761.aIndex_3268), anInt2756, -1);
+                Class124 class124 = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), anInt2756, -1);
                 if (class124 == null) return null;
                 if (class124.anInt1830 < 13) class124.method1092(2, 97);
-                class64 = var_ha.method3625(class124, i_28_, (this.aClass255_2761.anInt3291), anInt2791 + 64, 850 - -anInt2824);
+                class64 = var_ha.method3625(class124, i_28_, (this.aItemTypeList_2761.anInt3291), anInt2791 + 64, 850 - -anInt2824);
                 if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) class64.O(anInt2786, anInt2794, anInt2765);
                 if (aShortArray2777 != null) {
                     for (int i_29_ = 0; (i_29_ < aShortArray2777.length); i_29_++) {
@@ -278,8 +278,8 @@ final class ItemDefinition {
                     }
                 }
                 class64.s(i_27_);
-                synchronized (this.aClass255_2761.aClass60_3287) {
-                    this.aClass255_2761.aClass60_3287.method582(class64, var_ha.anInt4567 << 29 | this.anInt2769, (byte) -111);
+                synchronized (this.aItemTypeList_2761.aClass60_3287) {
+                    this.aItemTypeList_2761.aClass60_3287.method582(class64, var_ha.anInt4567 << 29 | this.anInt2769, (byte) -111);
                 }
             }
             if (class17 != null) class64 = class17.method269(116, class64, i_24_, i_20_, i_27_, i_22_);
@@ -298,7 +298,7 @@ final class ItemDefinition {
             for (int i_35_ = 0; i_35_ < 10; i_35_++) {
                 if (i >= this.anIntArray2831[i_35_] && this.anIntArray2831[i_35_] != 0) i_34_ = this.anIntArray2762[i_35_];
             }
-            if (i_34_ != -1) return this.aClass255_2761.method1940(95, i_34_);
+            if (i_34_ != -1) return this.aItemTypeList_2761.method1940(95, i_34_);
         }
         return this;
     }
@@ -319,7 +319,7 @@ final class ItemDefinition {
     final int[] method1562(int i, boolean bool, int i_37_, ha var_ha, ha var_ha_38_, FontRenderer fontRenderer, Class154 class154, int i_39_, byte i_40_, int i_41_) {
         try {
             anInt2806++;
-            Class124 class124 = Class300.method2277(0, (this.aClass255_2761.aIndex_3268), anInt2756, i_40_ ^ 0x65);
+            Class124 class124 = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), anInt2756, i_40_ ^ 0x65);
             if (class124 == null) return null;
             if (class124.anInt1830 < 13) class124.method1092(2, i_40_ ^ ~0xb);
             if (aShortArray2777 != null) {
@@ -351,11 +351,11 @@ final class ItemDefinition {
             Sprite sprite = null;
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
-                    sprite = (this.aClass255_2761.method1932(var_ha_38_, i_37_, i, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2778, false, i_41_));
+                    sprite = (this.aItemTypeList_2761.method1932(var_ha_38_, i_37_, i, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2778, false, i_41_));
                     if (sprite == null) return null;
                 }
             } else {
-                sprite = (this.aClass255_2761.method1932(var_ha_38_, 0, 10, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2758, true, 1));
+                sprite = (this.aItemTypeList_2761.method1932(var_ha_38_, 0, 10, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2758, true, 1));
                 if (sprite == null) return null;
             }
             int i_48_;
@@ -427,9 +427,9 @@ final class ItemDefinition {
         }
         if (i_53_ == -1) return true;
         boolean bool_56_ = true;
-        if (!this.aClass255_2761.aIndex_3268.method420(-10499, i_53_, 0)) bool_56_ = false;
-        if (i_54_ != -1 && !this.aClass255_2761.aIndex_3268.method420(i ^ 0x2902, i_54_, 0)) bool_56_ = false;
-        if (i != i_55_ && !this.aClass255_2761.aIndex_3268.method420(-10499, i_55_, 0)) bool_56_ = false;
+        if (!this.aItemTypeList_2761.aIndex_3268.method420(-10499, i_53_, 0)) bool_56_ = false;
+        if (i_54_ != -1 && !this.aItemTypeList_2761.aIndex_3268.method420(i ^ 0x2902, i_54_, 0)) bool_56_ = false;
+        if (i != i_55_ && !this.aItemTypeList_2761.aIndex_3268.method420(-10499, i_55_, 0)) bool_56_ = false;
         return bool_56_;
     }
 
@@ -535,7 +535,7 @@ final class ItemDefinition {
                                                                 else if (i_57_ == 249) {
                                                                     int i_64_ = class348_sub49.readUnsignedByte(255);
                                                                     if (this.aClass356_2757 == null) {
-                                                                        int i_65_ = Class33.method340(i_64_, (byte) 108);
+                                                                        int i_65_ = EnumTypeList.method340(i_64_, (byte) 108);
                                                                         this.aClass356_2757 = new Class356(i_65_);
                                                                     }
                                                                     for (int i_66_ = 0; i_66_ < i_64_; i_66_++) {

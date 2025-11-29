@@ -26,7 +26,7 @@ final class Class348_Sub42_Sub4 extends Class348_Sub42 {
                         if (class348_sub41 != null) Class75_Sub1.method769(class348_sub41.anInt7050, (byte) 116);
                     }
                     if (class46.anInt774 == 6 && class46.anInt699 != -1) {
-                        Class17 class17 = Class10.aClass87_191.method835(class46.anInt699, 7);
+                        Class17 class17 = Class10.seqTypeList.method835(class46.anInt699, 7);
                         if (class17 != null) {
                             class46.anInt841 += Class348_Sub51.anInt7267;
                             int i_2_ = class46.anInt795;

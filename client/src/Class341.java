@@ -28,7 +28,7 @@ final class Class341 {
         Class48.anInt859 = -1;
         Class245.anInt3170 = -(Class75.anInt1267 * i_3_ / i_5_) + Class75.anInt1267;
         Class348_Sub36.anInt6992 = Class75.anInt1259 * i_1_ / i_4_;
-        Class244.anInt4609 = -1;
+        Js5TextureSource.anInt4609 = -1;
         int i_6_ = 50 / ((-12 - i_2_) / 40);
         Class348_Sub15.method2811(false);
     }
@@ -91,14 +91,14 @@ final class Class341 {
         if (i == 9864) {
             anInt4230++;
             if (Class348_Sub8.aHa6654 != null) {
-                if (Class59_Sub1.aBoolean5300) Class187.method1406(true);
+                if (Class59_Sub1.aBoolean5300) QuestTypeList.method1406(true);
                 Class71.aClass76_1208.method775((byte) 69);
                 Class318_Sub1_Sub3_Sub3.method2433();
                 Class50_Sub2.method464(i + -9865);
                 Class274.method2061(-127);
                 Class363.method3513(-113);
                 Class239_Sub14.method1779((byte) 124);
-                if (Class259.aClass305_3304 != null) Class259.aClass305_3304.method2295((byte) 96);
+                if (VarcTypeList.aClass305_3304 != null) VarcTypeList.aClass305_3304.method2295((byte) 96);
                 Class299_Sub2.method2269(true);
                 Class348_Sub18.method2938((byte) 127);
                 Class40.method369(-29776);

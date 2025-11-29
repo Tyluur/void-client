@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class25 {
+final class SkyBoxSphereTypeList {
     private Class60 aClass60_360 = new Class60(16);
     static int anInt361;
     static int anInt362;
@@ -91,7 +91,8 @@ final class Class25 {
         aSpriteArray367 = null;
     }
 
-    Class25(Class230 class230, int i, Index index) {
+    // Class25
+    SkyBoxSphereTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_366 = index;
             aIndex_366.method407(0, 30);

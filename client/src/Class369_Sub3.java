@@ -17,7 +17,7 @@ class Class369_Sub3 extends Class369 {
     public Class223 method51(byte i) {
         anInt8594++;
         if (i <= 116) return null;
-        return Class185.aClass223_2489;
+        return LightTypeList.aClass223_2489;
     }
 
     static final void method3573(int i) {

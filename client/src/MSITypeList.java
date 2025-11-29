@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class141 {
+final class MSITypeList {
     private Class60 aClass60_1963 = new Class60(64);
     static int anInt1964;
     Index aIndex_1965;
@@ -32,7 +32,7 @@ final class Class141 {
         }
         class218 = new Class218();
         if (i != 31) return null;
-        class218.aClass141_2851 = this;
+        class218.aMSITypeList_2851 = this;
         if (is != null) class218.method1597((byte) -114, new Class348_Sub49(is));
         synchronized (aClass60_1963) {
             aClass60_1963.method582(class218, i_0_, (byte) -108);
@@ -95,7 +95,8 @@ final class Class141 {
         if (i >= -111) method1177((byte) 47);
     }
 
-    Class141(Class230 class230, int i, Index index, Index index_4_) {
+    // Class141
+    MSITypeList(Class230 class230, int i, Index index, Index index_4_) {
         try {
             this.aIndex_1965 = index_4_;
             aIndex_1971 = index;

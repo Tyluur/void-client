@@ -83,7 +83,7 @@ final class Class348_Sub40_Sub38 extends Class348_Sub40 {
         anInt9469++;
         int i = 0;
         if (bool != true) method3150(false);
-        for (/**/; Class150.anInt2057 > i; i++) {
+        for (/**/; IDKTypeList.anInt2057 > i; i++) {
             int i_14_ = Class74.anIntArray1233[i];
             Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_14_, -6008));
             if (class348_sub22 != null) {

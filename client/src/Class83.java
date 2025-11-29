@@ -26,7 +26,7 @@ final class Class83 {
         if (this.aBoolean1442) {
             byte[] is = Class50_Sub1.method461(false, Class337.anObject4177, 53146732);
             this.aClass258_Sub1_1440 = new Class258_Sub1(var_ha_Sub2, 6410, 128, 128, 16, is, 6410);
-            is = Class50_Sub1.method461(false, Class319.anObject3985, 53146732);
+            is = Class50_Sub1.method461(false, GfxTypeList.anObject3985, 53146732);
             this.aClass258_Sub1_1446 = new Class258_Sub1(var_ha_Sub2, 6410, 128, 128, 16, is, 6410);
             Class188 class188 = var_ha_Sub2.aClass188_7736;
             if (class188.method1414(35632)) {
@@ -47,7 +47,7 @@ final class Class83 {
             }
             this.aClass258_Sub3Array1448 = new Class258_Sub3[16];
             for (int i = 0; i < 16; i++) {
-                byte[] is = Class173.method1331((byte) 110, Class319.anObject3985, 2 * i * 16384, 32768);
+                byte[] is = Class173.method1331((byte) 110, GfxTypeList.anObject3985, 2 * i * 16384, 32768);
                 this.aClass258_Sub3Array1448[i] = new Class258_Sub3(var_ha_Sub2, 3553, 6410, 128, 128, true, is, 6410, false);
             }
         }

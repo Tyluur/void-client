@@ -85,7 +85,7 @@ class Class348 {
                         }
                     }
                 }
-                class64_13_ = var_ha.method3625(class124, i_12_, Class185.anInt2482, 64, 768);
+                class64_13_ = var_ha.method3625(class124, i_12_, LightTypeList.anInt2482, 64, 768);
                 synchronized (Class342.aClass60_4254) {
                     Class342.aClass60_4254.method582(class64_13_, l, (byte) -103);
                 }
@@ -97,7 +97,7 @@ class Class348 {
             Class348_Sub42_Sub17 class348_sub42_sub17 = null;
             if (class17 != null) {
                 i_5_ = class17.anIntArray237[i_5_];
-                class348_sub42_sub17 = Class10.aClass87_191.method839(i_5_ >> 16, 3);
+                class348_sub42_sub17 = Class10.seqTypeList.method839(i_5_ >> 16, 3);
                 i_5_ &= 0xffff;
             }
             if (class348_sub42_sub17 == null) {

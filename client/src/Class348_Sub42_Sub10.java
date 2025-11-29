@@ -10,7 +10,7 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
     private String[] aStringArray9564;
     private int[][] anIntArrayArray9565;
     int[] anIntArray9566;
-    Class355 aClass355_9567;
+    QuickChatPhraseTypeList aQuickChatPhraseTypeList_9567;
     static int anInt9568;
     static int anInt9569;
     static int anInt9570;
@@ -138,7 +138,7 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
                 int type = anIntArray9574[i_13_];
                 int size = Class348_Sub5.method2752(type, 0).anInt1943;
                 long l = class348_sub49.method3368(size, 3060);
-                stringbuffer.append(this.aClass355_9567.method3472(l, anIntArrayArray9565[i_13_], -1, method3212(0, i_13_)));
+                stringbuffer.append(this.aQuickChatPhraseTypeList_9567.method3472(l, anIntArrayArray9565[i_13_], -1, method3212(0, i_13_)));
             }
         }
         stringbuffer.append(aStringArray9564[aStringArray9564.length + -1]);

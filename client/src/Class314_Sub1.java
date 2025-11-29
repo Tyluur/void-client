@@ -202,7 +202,7 @@ final class Class314_Sub1 extends Class314 {
         anInt6353++;
         if (i != -8454) method2352(44, -11, 126);
         int i_6_;
-        if (Class226.anInt2964 < 96) {
+        if (QuickChatCatTypeList.anInt2964 < 96) {
             Class348_Sub40_Sub12.method3076(0, true);
             i_6_ = 1;
         } else {

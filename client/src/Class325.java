@@ -442,7 +442,7 @@ final class Class325 {
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
                             NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);
-                            if (NPCDefinition.anIntArray1377 != null) NPCDefinition = (NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
+                            if (NPCDefinition.anIntArray1377 != null) NPCDefinition = (NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.timedVarDomain), -1));
                             if (NPCDefinition != null) {
                                 Class306.anInt3874++;
                                 Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class318_Sub7.aClass351_6443, Class348_Sub23_Sub2.aClass77_9029, -111));
@@ -505,7 +505,7 @@ final class Class325 {
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
                         if (class348_sub22 != null) {
                             Class348.anInt4292 = 0;
-                            Class187.anInt2499++;
+                            QuestTypeList.anInt2499++;
                             Class26.anInt385 = i_73_;
                             Class239_Sub20.anInt6048 = 2;
                             Class93.anInt1534 = i_72_;
@@ -756,7 +756,7 @@ final class Class325 {
                             Class14_Sub3.anInt8625++;
                             Class26.anInt385 = i_73_;
                             Class348.anInt4292 = 0;
-                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class25.aClass351_364), (Class348_Sub23_Sub2.aClass77_9029), -113);
+                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((SkyBoxSphereTypeList.aClass351_364), (Class348_Sub23_Sub2.aClass77_9029), -113);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -126) ? 0 : 1));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
                             Class348_Sub42_Sub14.method3243(121, class348_sub47);
@@ -814,7 +814,7 @@ final class Class325 {
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
                             Class348.anInt4292 = 0;
-                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class65.aClass351_1144), (Class348_Sub23_Sub2.aClass77_9029), -96);
+                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((StructTypeList.aClass351_1144), (Class348_Sub23_Sub2.aClass77_9029), -96);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
                             Class348_Sub42_Sub14.method3243(125, class348_sub47);
                         }
@@ -858,7 +858,7 @@ final class Class325 {
                                 if (Class28.aString5001 == null) Class28.aString5001 = "Null";
                             }
                         } else {
-                            if (i_76_ == 1009 || i_76_ == 1012 || i_76_ == 1002 || i_76_ == 1003 || i_76_ == 1006) Class65.method696(i_76_, i_74_, i_77_, -1007);
+                            if (i_76_ == 1009 || i_76_ == 1012 || i_76_ == 1002 || i_76_ == 1003 || i_76_ == 1006) StructTypeList.method696(i_76_, i_74_, i_77_, -1007);
                             if (i_76_ == 25) {
                                 Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
                                 if (class348_sub22 != null) {

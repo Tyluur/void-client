@@ -33,15 +33,15 @@ final class Class13 {
     static final void method227(Class318_Sub1 class318_sub1, boolean bool, boolean bool_5_) {
         class318_sub1.aBoolean6391 = bool_5_;
         if (Class348_Sub40_Sub5.aBoolean9121) {
-            if (bool) Class319.aClass315Array3982[Class319.aClass315Array3982.length - 1].method2353(class318_sub1, false);
+            if (bool) GfxTypeList.aClass315Array3982[GfxTypeList.aClass315Array3982.length - 1].method2353(class318_sub1, false);
             else {
                 int i = Class286_Sub4.method2154(class318_sub1.anInt6386);
                 int i_6_ = (Class52.anIntArray4906[2] * class318_sub1.method2379(-25675) / class318_sub1.anInt6389);
                 int i_7_ = Class286_Sub4.method2154((class318_sub1.anInt6386) - i_6_);
                 int i_8_ = Class286_Sub4.method2154((class318_sub1.anInt6386) + i_6_);
-                if (i_7_ == i_8_) Class319.aClass315Array3982[i].method2353(class318_sub1, false);
-                else if (i_8_ - i_7_ == 1) Class319.aClass315Array3982[Class75_Sub1.anInt5652 + i_7_].method2353(class318_sub1, false);
-                else Class319.aClass315Array3982[Class319.aClass315Array3982.length - 1].method2353(class318_sub1, false);
+                if (i_7_ == i_8_) GfxTypeList.aClass315Array3982[i].method2353(class318_sub1, false);
+                else if (i_8_ - i_7_ == 1) GfxTypeList.aClass315Array3982[Class75_Sub1.anInt5652 + i_7_].method2353(class318_sub1, false);
+                else GfxTypeList.aClass315Array3982[GfxTypeList.aClass315Array3982.length - 1].method2353(class318_sub1, false);
             }
         } else Class38.method365(class318_sub1, Class115.aClass348_Sub1Array1752);
     }

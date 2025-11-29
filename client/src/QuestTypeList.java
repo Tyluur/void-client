@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class187 {
+final class QuestTypeList {
     private Index aIndex_2498;
     static int anInt2499;
     static int anInt2500;
@@ -87,7 +87,8 @@ final class Class187 {
         anInt2502++;
     }
 
-    Class187(Class230 class230, int i, Index index) {
+    // Class187
+    QuestTypeList(Class230 class230, int i, Index index) {
         do {
             try {
                 aIndex_2498 = index;

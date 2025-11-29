@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class65 {
+final class StructTypeList {
     static int anInt1138;
     static int anInt1139;
     static int anInt1140;
@@ -93,7 +93,8 @@ final class Class65 {
         return class348_sub42_sub1;
     }
 
-    Class65(Class230 class230, int i, Index index) {
+    // Class65
+    StructTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_1141 = index;
             aIndex_1141.method407(0, 26);

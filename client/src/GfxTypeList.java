@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class319 {
+final class GfxTypeList {
     static int anInt3978;
     private final Index aIndex_3979;
     static double aDouble3980;
@@ -51,7 +51,7 @@ final class Class319 {
             is = aIndex_3979.method410(-1860, Class318_Sub1_Sub3_Sub1.method2419((byte) 127, i_1_), Class348_Sub1_Sub2.method2729(i_1_, 16));
         }
         class368 = new Class368();
-        class368.aClass319_4513 = this;
+        class368.aGfxTypeList_4513 = this;
         class368.anInt4501 = i_1_;
         if (is != null) class368.method3559(28105, new Class348_Sub49(is));
         synchronized (aClass60_3989) {
@@ -88,7 +88,8 @@ final class Class319 {
         }
     }
 
-    Class319(Class230 class230, int i, Index index, Index index_3_) {
+    // Class319
+    GfxTypeList(Class230 class230, int i, Index index, Index index_3_) {
         try {
             this.aIndex_3981 = index_3_;
             aIndex_3979 = index;

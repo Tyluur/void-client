@@ -103,17 +103,17 @@ final class Class287 {
     private final Interface12 method2182(boolean bool, Class223 class223, Class348_Sub49 class348_sub49) {
         try {
             anInt3692++;
-            if (Class219.aClass223_2868 == class223) return Class170.method1312((byte) 64, class348_sub49);
+            if (HitmarkTypeList.aClass223_2868 == class223) return TimedVarDomain.method1312((byte) 64, class348_sub49);
             if (Class348_Sub49.aClass223_7175 == class223) return Sprite_Sub1.method987(743571200, class348_sub49);
             if (Class101_Sub1.aClass223_5689 == class223) return Class303.method2287(class348_sub49, (byte) -112);
             if (class223 == Class28.aClass223_4997) return Class337.method2660((byte) 26, class348_sub49);
             if (bool != true) method2180((byte) -104);
             if (class223 == Class348_Sub40_Sub21.aClass223_9274) return Class288_Sub1.method2189(class348_sub49, 86);
             if (class223 == Class313.aClass223_3934) return Class5.method179(16533, class348_sub49);
-            if (Class185.aClass223_2489 == class223) return Class348_Sub46.method3322(0, class348_sub49);
+            if (LightTypeList.aClass223_2489 == class223) return Class348_Sub46.method3322(0, class348_sub49);
             if (class223 == Class174.aClass223_2307) return Class50_Sub4.method472(-27794, class348_sub49);
             if (Class149.aClass223_2045 == class223) return Class328_Sub2.method2612(class348_sub49, true);
-            if (Class187.aClass223_2507 == class223) return Class285_Sub1.method2128(-1730, class348_sub49);
+            if (QuestTypeList.aClass223_2507 == class223) return Class285_Sub1.method2128(-1730, class348_sub49);
             return null;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("vp.F(" + bool + ',' + (class223 != null ? "{...}" : "null") + ',' + (class348_sub49 != null ? "{...}" : "null") + ')'));

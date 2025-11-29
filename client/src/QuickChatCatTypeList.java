@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class226 {
+final class QuickChatCatTypeList {
     static Class356 aClass356_2959 = new Class356(512);
     private final Class60 aClass60_2960 = new Class60(64);
     private final Index aIndex_2961;
@@ -44,7 +44,8 @@ final class Class226 {
         }
     }
 
-    Class226(int i, Index index, Index index_3_) {
+    // Class226
+    QuickChatCatTypeList(int i, Index index, Index index_3_) {
         do {
             try {
                 aIndex_2961 = index;

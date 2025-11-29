@@ -11,7 +11,7 @@ final class Class348_Sub8 extends Class348 {
     byte[] aByteArray6657;
     private static short[] aShortArray6658;
     static int anInt6659;
-    static Class241 aClass241_6660;
+    static Class241 tickScheduler; // aClass241_6660
     private static short[] aShortArray6661 = {967, 20428, -21577, 11219, -10290};
     static Applet anApplet6662;
     private static short[] aShortArray6663 = {957, 20418, -21587, 11209, -10300};
@@ -64,7 +64,7 @@ final class Class348_Sub8 extends Class348 {
         aShortArray6663 = null;
         anIntArray6655 = null;
         if (i > -123) method2776((byte) -65, -91);
-        aClass241_6660 = null;
+        tickScheduler = null;
         aBooleanArrayArray6656 = null;
         anApplet6662 = null;
         aShortArrayArray6664 = null;

@@ -16,7 +16,7 @@ final class Class303 {
             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class241.aClass351_3150, Class348_Sub23_Sub2.aClass77_9029, -126);
             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_0_);
             Class348_Sub42_Sub14.method3243(42, class348_sub47);
-        } else Class66.method701(Class141.aClass273_1966, i_0_, -1);
+        } else Class66.method701(MSITypeList.aClass273_1966, i_0_, -1);
     }
 
     public static void method2286(int i) {

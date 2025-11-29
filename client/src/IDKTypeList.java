@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class150 {
+final class IDKTypeList {
     static Class113 aClass113_2047;
     private Index aIndex_2048;
     static int anInt2049;
@@ -15,17 +15,18 @@ final class Class150 {
     static int anInt2056;
     static int anInt2057 = 0;
 
-    static final void method1202(int i) {
+    // method1202
+    static final void initWornItemIds(int i) {
         anInt2052++;
-        int[] is = new int[Exception_Sub1.aClass255_112.anInt3271];
+        int[] is = new int[Exception_Sub1.itemTypeList.anInt3271];
         int i_0_ = i;
-        for (int i_1_ = 0; Exception_Sub1.aClass255_112.anInt3271 > i_1_; i_1_++) {
-            ItemDefinition itemDefinition = Exception_Sub1.aClass255_112.method1940(-104, i_1_);
+        for (int i_1_ = 0; Exception_Sub1.itemTypeList.anInt3271 > i_1_; i_1_++) {
+            ItemDefinition itemDefinition = Exception_Sub1.itemTypeList.method1940(-104, i_1_);
             if (itemDefinition.anInt2815 >= 0 || itemDefinition.anInt2788 >= 0) is[i_0_++] = i_1_;
         }
-        Class25.anIntArray369 = new int[i_0_];
+        SkyBoxSphereTypeList.anIntArray369 = new int[i_0_];
         for (int i_2_ = 0; i_2_ < i_0_; i_2_++)
-            Class25.anIntArray369[i_2_] = is[i_2_];
+            SkyBoxSphereTypeList.anIntArray369[i_2_] = is[i_2_];
     }
 
     final Class34 method1203(byte i, int i_3_) {
@@ -41,7 +42,7 @@ final class Class150 {
             is = aIndex_2048.method410(i + -1893, 3, i_3_);
         }
         class34 = new Class34();
-        class34.aClass150_475 = this;
+        class34.aIDKTypeList_475 = this;
         if (is != null) class34.method346(~i, new Class348_Sub49(is));
         synchronized (aClass60_2050) {
             aClass60_2050.method582(class34, i_3_, (byte) -109);
@@ -91,7 +92,8 @@ final class Class150 {
         int i_8_ = -65 / ((i - -58) / 57);
     }
 
-    Class150(Class230 class230, int i, Index index, Index index_9_) {
+    // Class150
+    IDKTypeList(Class230 class230, int i, Index index, Index index_9_) {
         try {
             this.aIndex_2054 = index_9_;
             aIndex_2048 = index;

@@ -6,7 +6,7 @@ final class Class222 {
     int anInt2883;
     static int anInt2884 = 0;
     static Class138 aClass138_2885 = new Class138(4, 1, 1, 1);
-    Class166 aClass166_2886;
+    CursorTypeList aCursorTypeList_2886;
     static int anInt2887;
     static int anInt2888;
     static int anInt2889;
@@ -33,11 +33,11 @@ final class Class222 {
 
     final synchronized Class207 method1610(byte i) {
         anInt2888++;
-        Class207 class207 = (Class207) this.aClass166_2886.aClass60_2190.method583(anInt2891, -70);
+        Class207 class207 = (Class207) this.aCursorTypeList_2886.aClass60_2190.method583(anInt2891, -70);
         if (class207 != null) return class207;
-        class207 = Class207.method1521(this.aClass166_2886.aIndex_2180, anInt2891, 0);
+        class207 = Class207.method1521(this.aCursorTypeList_2886.aIndex_2180, anInt2891, 0);
         if (i < 49) method1609((byte) 93);
-        if (class207 != null) this.aClass166_2886.aClass60_2190.method582(class207, anInt2891, (byte) -120);
+        if (class207 != null) this.aCursorTypeList_2886.aClass60_2190.method582(class207, anInt2891, (byte) -120);
         return class207;
     }
 

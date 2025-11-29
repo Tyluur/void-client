@@ -26,19 +26,19 @@ final class Class318_Sub2 extends Class318 {
                             if (class348_sub22 != null) {
                                 Npc npc = (class348_sub22.aNpc_6859);
                                 NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);
-                                if (NPCDefinition.anIntArray1377 != null) NPCDefinition = (NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1));
+                                if (NPCDefinition.anIntArray1377 != null) NPCDefinition = (NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.timedVarDomain), -1));
                                 if (NPCDefinition != null) is = NPCDefinition.anIntArray1342;
                             }
                         } else if (Class239_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                             Object object = null;
                             Class51 class51;
-                            if (class348_sub42_sub12.anInt9608 != 1001) class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) (0x7fffffffL & ((class348_sub42_sub12.aLong9605) >>> 32))));
-                            else class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
-                            if (class51.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209), (byte) 47));
+                            if (class348_sub42_sub12.anInt9608 != 1001) class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) (0x7fffffffL & ((class348_sub42_sub12.aLong9605) >>> 32))));
+                            else class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
+                            if (class51.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47));
                             if (class51 != null) is = class51.anIntArray917;
                         }
-                    } else is = Exception_Sub1.aClass255_112.method1940(113, (class348_sub42_sub12.anInt9599)).anIntArray2772;
-                } else is = (Exception_Sub1.aClass255_112.method1940(-67, (int) (class348_sub42_sub12.aLong9605)).anIntArray2772);
+                    } else is = Exception_Sub1.itemTypeList.method1940(113, (class348_sub42_sub12.anInt9599)).anIntArray2772;
+                } else is = (Exception_Sub1.itemTypeList.method1940(-67, (int) (class348_sub42_sub12.aLong9605)).anIntArray2772);
                 String string = Class316.method2367((byte) 125, class348_sub42_sub12);
                 if (is != null) string += Class163.method1273(is, true);
                 Class262.aFontRenderer_3326.method2567(i_1_, string, (byte) 116, i_4_, 0, i_7_ - -3, Class341.aSpriteArray4234, Class175.anIntArray2330);
@@ -123,7 +123,7 @@ final class Class318_Sub2 extends Class318 {
                         }
                     }
                     if (bool) {
-                        float f = (float) (Class141.anInt1974 - (class338.anIntArray4187[0]));
+                        float f = (float) (MSITypeList.anInt1974 - (class338.anIntArray4187[0]));
                         if (f < 0.0F) f *= -1.0F;
                         if (!(f < (float) Class11.anInt194) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338))
                             ClientScript.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
@@ -159,7 +159,7 @@ final class Class318_Sub2 extends Class318 {
                 if (i_26_ >= 0 && i_26_ <= (Class318_Sub1_Sub4_Sub1.anInt10084 - -Class318_Sub1_Sub4_Sub1.anInt10084)) {
                     int i_27_ = (class338.aShort4193 + (-Class285_Sub2.anInt8502 - -Class318_Sub1_Sub4_Sub1.anInt10084));
                     if (i_27_ >= 0 && ((Class318_Sub1_Sub4_Sub1.anInt10084 - -Class318_Sub1_Sub4_Sub1.anInt10084) >= i_27_) && Class99.aBooleanArrayArray1572[i_26_][i_27_]) {
-                        float f = (float) (Class141.anInt1974 - (class338.anIntArray4187[0]));
+                        float f = (float) (MSITypeList.anInt1974 - (class338.anIntArray4187[0]));
                         if (f < 0.0F) f *= -1.0F;
                         float f_28_ = (float) (Class348_Sub40_Sub27.anInt9360 + -(class338.anIntArray4184[0]));
                         if (f_28_ < 0.0F) f_28_ *= -1.0F;

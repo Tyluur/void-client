@@ -78,7 +78,7 @@ final class Class356 {
         if (i != -1) anInt4383 = 43;
         if (Class75.aClass262_1254 == null || r.aClass312_9716 == null) return null;
         for (Class348_Sub21 class348_sub21 = (Class348_Sub21) r.aClass312_9716.method2329(10); class348_sub21 != null; class348_sub21 = (Class348_Sub21) r.aClass312_9716.method2329(i ^ ~0xa)) {
-            Class42 class42 = Class75.aClass153_1238.method1225(class348_sub21.anInt6847, (byte) 92);
+            Class42 class42 = Class75.aMapElementTypeList_1238.method1225(class348_sub21.anInt6847, (byte) 92);
             if (class42 != null && class42.aBoolean609 && class42.method373(Class75.anInterface17_1244, 127)) return class348_sub21;
         }
         return null;

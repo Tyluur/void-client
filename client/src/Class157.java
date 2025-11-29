@@ -35,7 +35,7 @@ final class Class157 {
         class348_sub49_sub2.writeInt((byte) 97, Class348_Sub16_Sub3.VARBITS.method389(-96));
         class348_sub49_sub2.writeInt((byte) 111, Class348_Sub32.WORLD_MAP.method389(109));
         class348_sub49_sub2.writeInt((byte) 108, Class130.QUICK_CHAT_MESSAGES.method389(-106));
-        class348_sub49_sub2.writeInt((byte) 102, Class82.QUICK_CHAT_MENUS.method389(102));
+        class348_sub49_sub2.writeInt((byte) 102, VarcstrTypeList.QUICK_CHAT_MENUS.method389(102));
         class348_sub49_sub2.writeInt((byte) 113, Class348_Sub11.TEXTURE_DEFINITIONS.method389(-122));
         class348_sub49_sub2.writeInt((byte) 86, Class239.PARTICLES.method389(97));
         class348_sub49_sub2.writeInt((byte) 96, Class367_Sub8.DEFAULTS.method389(-6));
@@ -50,7 +50,7 @@ final class Class157 {
     static final String method1245(String string, boolean bool) {
         if (bool != false) method1244(22, null);
         anInt2122++;
-        String string_0_ = Class239_Sub16.method1788((byte) 115, Class268.method2031(-1994, string));
+        String string_0_ = Class239_Sub16.method1788((byte) 115, FloorOverlayTypeList.method2031(-1994, string));
         if (string_0_ == null) string_0_ = "";
         return string_0_;
     }

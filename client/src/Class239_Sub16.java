@@ -98,7 +98,7 @@ final class Class239_Sub16 extends Class239 {
                         }
                     }
                     if (bool && player.anInt10286 != -1) {
-                        Class17 class17 = (Class10.aClass87_191.method835(player.anInt10286, 7));
+                        Class17 class17 = (Class10.seqTypeList.method835(player.anInt10286, 7));
                         int i_10_ = class17.anInt248;
                         if (i_10_ == 1) {
                             player.anInt10232 = 0;
@@ -115,7 +115,7 @@ final class Class239_Sub16 extends Class239 {
                 if (i != 23946) method1791(126, null, -73, null);
                 for (int i_11_ = 0; is.length > i_11_; i_11_++) {
                     if (is[i_11_] != -1) bool = false;
-                    if (player.anIntArray10236 == null || (player.anIntArray10236[i_11_]) == -1 || (Class10.aClass87_191.method835((player.anIntArray10236[i_11_]), 7).anInt239 <= (Class10.aClass87_191.method835(is[i_11_], i ^ 0x5d8d).anInt239))) {
+                    if (player.anIntArray10236 == null || (player.anIntArray10236[i_11_]) == -1 || (Class10.seqTypeList.method835((player.anIntArray10236[i_11_]), 7).anInt239 <= (Class10.seqTypeList.method835(is[i_11_], i ^ 0x5d8d).anInt239))) {
                         player.anInt10218 = i_8_;
                         player.anIntArray10236 = is;
                         break;

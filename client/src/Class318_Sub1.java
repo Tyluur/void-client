@@ -40,7 +40,7 @@ abstract class Class318_Sub1 extends Class318 {
             try {
                 if (i != -2) method2383(null, -63, null);
                 anInt6385++;
-                boolean bool = ((Exception_Sub1.aClass255_112.method1941(class46.anInt672, (byte) -74, class46.anInt812, class46.anInt781, ~0xffffff | class46.anInt809, class46.anInt678, var_ha, (!class46.aBoolean720 ? null : (Class132.aPlayer_1907.aClass154_10536)))) == null);
+                boolean bool = ((Exception_Sub1.itemTypeList.method1941(class46.anInt672, (byte) -74, class46.anInt812, class46.anInt781, ~0xffffff | class46.anInt809, class46.anInt678, var_ha, (!class46.aBoolean720 ? null : (Class132.aPlayer_1907.aClass154_10536)))) == null);
                 if (!bool) break;
                 Class5_Sub1_Sub1.aClass262_9931.method1999(new Class348_Sub7(class46.anInt812, class46.anInt781, class46.anInt672, (~0xffffff | class46.anInt809), class46.anInt678, class46.aBoolean720), i ^ 0x4ed2);
                 Class251.method1916(-9343, class46);
@@ -57,9 +57,9 @@ abstract class Class318_Sub1 extends Class318 {
         do {
             try {
                 anInt6390++;
-                Class42 class42 = Class348_Sub23_Sub2.aClass153_9031.method1225(i_4_, (byte) 98);
+                Class42 class42 = Class348_Sub23_Sub2.mapElementTypeList.method1225(i_4_, (byte) 98);
                 if (i_7_ < -52) {
-                    if (class42 == null || !class42.aBoolean569 || !class42.method373((Class318_Sub1_Sub3_Sub3.aClass170_10209), 69)) break;
+                    if (class42 == null || !class42.aBoolean569 || !class42.method373((Class318_Sub1_Sub3_Sub3.timedVarDomain), 69)) break;
                     if (class42.anIntArray591 != null) {
                         int[] is = (new int
                                 [class42.anIntArray591.length]);

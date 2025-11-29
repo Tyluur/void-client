@@ -185,7 +185,7 @@ abstract class Class59 {
                 }
                 return -1;
             }
-            Class166.method1286(file, 64, string);
+            CursorTypeList.method1286(file, 64, string);
             return 100;
         }
         return -1;

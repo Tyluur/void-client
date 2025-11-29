@@ -81,7 +81,7 @@ final class Class186_Sub1 extends Class186 {
         anInt5809++;
         if (i_37_ != 34037) aClass341_5808 = null;
         if (var_ha_Sub2.aBoolean7793 || Class192.method1436(-20, i_38_) && Class192.method1436(-119, i_40_)) return new Class258_Sub3_Sub1(var_ha_Sub2, 3553, i, i_39_, i_38_, i_40_, true);
-        if (!var_ha_Sub2.aBoolean7837) return new Class258_Sub3_Sub1(var_ha_Sub2, i, i_39_, i_38_, i_40_, Class33.method340(i_38_, (byte) 108), Class33.method340(i_40_, (byte) 108), true);
+        if (!var_ha_Sub2.aBoolean7837) return new Class258_Sub3_Sub1(var_ha_Sub2, i, i_39_, i_38_, i_40_, EnumTypeList.method340(i_38_, (byte) 108), EnumTypeList.method340(i_40_, (byte) 108), true);
         return new Class258_Sub3_Sub1(var_ha_Sub2, 34037, i, i_39_, i_38_, i_40_, true);
     }
 
@@ -108,7 +108,7 @@ final class Class186_Sub1 extends Class186 {
         anInt5806++;
         if (i_45_ > 0 && !Class192.method1436(69, i_45_)) throw new IllegalArgumentException("");
         if (i > 0 && !Class192.method1436(100, i)) throw new IllegalArgumentException("");
-        int i_49_ = Class183.method1382(i_46_, -6409);
+        int i_49_ = FloorUnderlayTypeList.method1382(i_46_, -6409);
         int i_50_ = 0;
         int i_51_ = Math.min(i_45_, i);
         if (bool != false) anInt5807 = -127;

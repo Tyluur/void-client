@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class153 {
+final class MapElementTypeList {
     static int anInt2079;
     static int anInt2080;
     static int anInt2081;
@@ -126,7 +126,7 @@ final class Class153 {
             is = aIndex_2084.method410(-1860, 36, i);
         }
         class42 = new Class42();
-        class42.aClass153_593 = this;
+        class42.aMapElementTypeList_593 = this;
         class42.anInt581 = i;
         if (is != null) class42.method379(new Class348_Sub49(is), 109);
         class42.method372(-25359);
@@ -136,7 +136,8 @@ final class Class153 {
         return class42;
     }
 
-    Class153(Class230 class230, int i, Index index, Index index_10_) {
+    // Class153
+    MapElementTypeList(Class230 class230, int i, Index index, Index index_10_) {
         try {
             aIndex_2084 = index;
             this.aIndex_2087 = index_10_;

@@ -44,7 +44,7 @@ final class Class239_Sub29 extends Class239 {
         anInt6149++;
         if (Character.isISOControl(c)) return false;
         if (Npc.method2446(c, (byte) 105)) return true;
-        char[] cs = Class185.aCharArray2488;
+        char[] cs = LightTypeList.aCharArray2488;
         for (int i_2_ = 0; cs.length > i_2_; i_2_++) {
             int i_3_ = cs[i_2_];
             if (c == i_3_) return true;

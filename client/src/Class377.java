@@ -363,7 +363,7 @@ final class Class377 extends ha_Sub3 {
             if (i_14_ != 32) anOpenGL9856 = null;
             if (!aBoolean9926 && (!Class192.method1436(i_14_ ^ 0x46, i_12_) || !Class192.method1436(i_14_ + 83, i))) {
                 if (aBoolean9919) return new Class14_Sub4(this, class304, i_12_, i, is, i_11_, i_13_);
-                Class14_Sub1 class14_sub1 = new Class14_Sub1(this, class304, Class68.aClass68_1183, Class33.method340(i_12_, (byte) 108), Class33.method340(i, (byte) 108));
+                Class14_Sub1 class14_sub1 = new Class14_Sub1(this, class304, Class68.aClass68_1183, EnumTypeList.method340(i_12_, (byte) 108), EnumTypeList.method340(i, (byte) 108));
                 class14_sub1.method70(0, i_11_, (byte) -45, i_13_, i, i_12_, 0, is, class304);
                 return class14_sub1;
             }
@@ -381,7 +381,7 @@ final class Class377 extends ha_Sub3 {
         try {
             if (i == 0) {
                 anInt9836++;
-                if (class113 == Class150.aClass113_2047) {
+                if (class113 == IDKTypeList.aClass113_2047) {
                     OpenGL.glDisable(3168);
                     OpenGL.glDisable(3169);
                     OpenGL.glDisable(3170);
@@ -864,7 +864,7 @@ final class Class377 extends ha_Sub3 {
             if (i_56_ != 2) this.aMapBuffer9913 = null;
             if (!aBoolean9926 && (!Class192.method1436(60, i) || !Class192.method1436(-73, i_57_))) {
                 if (aBoolean9919) return new Class14_Sub4(this, class304, i, i_57_, fs, i_54_, i_55_);
-                Class14_Sub1 class14_sub1 = new Class14_Sub1(this, class304, Class68.aClass68_1187, Class33.method340(i, (byte) 108), Class33.method340(i_57_, (byte) 108));
+                Class14_Sub1 class14_sub1 = new Class14_Sub1(this, class304, Class68.aClass68_1187, EnumTypeList.method340(i, (byte) 108), EnumTypeList.method340(i_57_, (byte) 108));
                 class14_sub1.method240(i_55_, (byte) -126, fs, class304, 0, i_54_, 0, i, i_57_);
                 return class14_sub1;
             }
@@ -905,7 +905,7 @@ final class Class377 extends ha_Sub3 {
             anInt9830++;
             if (aBoolean9926 || Class192.method1436(103, i) && Class192.method1436(-53, i_63_)) return new Class14_Sub1(this, i, i_63_, bool, is, i_61_, i_62_);
             if (!aBoolean9919) {
-                Class14_Sub1 class14_sub1 = new Class14_Sub1(this, Class108.aClass304_1662, Class68.aClass68_1183, Class33.method340(i, (byte) 108), Class33.method340(i_63_, (byte) 108));
+                Class14_Sub1 class14_sub1 = new Class14_Sub1(this, Class108.aClass304_1662, Class68.aClass68_1183, EnumTypeList.method340(i, (byte) 108), EnumTypeList.method340(i_63_, (byte) 108));
                 class14_sub1.method68(i_62_, 22809, is, 0, i_61_, i, 0, i_63_);
                 return class14_sub1;
             }
@@ -1161,7 +1161,7 @@ final class Class377 extends ha_Sub3 {
             if (i_88_ != -84) method3842(false);
             anInt9882++;
             if (aBoolean9926 || (Class192.method1436(i_88_ + 15, i_89_) && Class192.method1436(65, i))) return new Class14_Sub1(this, class304, class68, i_89_, i);
-            if (!aBoolean9919) return new Class14_Sub1(this, class304, class68, Class33.method340(i_89_, (byte) 108), Class33.method340(i, (byte) 108));
+            if (!aBoolean9919) return new Class14_Sub1(this, class304, class68, EnumTypeList.method340(i_89_, (byte) 108), EnumTypeList.method340(i, (byte) 108));
             return new Class14_Sub4(this, class304, class68, i_89_, i);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.NC(" + i + ',' + i_88_ + ',' + i_89_ + ',' + (class68 != null ? "{...}" : "null") + ',' + (class304 != null ? "{...}" : "null") + ')'));
@@ -1184,7 +1184,7 @@ final class Class377 extends ha_Sub3 {
 
     final void method3950(int i) {
         anInt9886++;
-        if (Class348_Sub4.aClass173_6602 == this.aClass173_8163) OpenGL.glBlendFunc(770, 771);
+        if (SystemInfo.aClass173_6602 == this.aClass173_8163) OpenGL.glBlendFunc(770, 771);
         else if (Class69.aClass173_1201 == this.aClass173_8163) OpenGL.glBlendFunc(1, 1);
         else if (Class273.aClass173_5169 == this.aClass173_8163) OpenGL.glBlendFunc(774, 1);
         if (i != 0) this.anInt9918 = 74;

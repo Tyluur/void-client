@@ -9,7 +9,7 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
     static int anInt9192;
     static int anInt9193;
     private int[][] anIntArrayArray9194;
-    static Class263 aClass263_9195;
+    static ObjectTypeList objectTypeList; // aClass263_9195
     static int anInt9196;
     static Class114 aClass114_9197 = new Class114(61, -1);
     static int anInt9198;
@@ -57,7 +57,7 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
         Class237.method1686(i ^ 0x6e);
         Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub23_7231), 2);
         Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub29_7229), 1);
-        Class348_Sub40.method3038(-1);
+        Class348_Sub40.updateFeatureMask(-1);
         Class76.method773(true);
         RuntimeException_Sub1.aBoolean4604 = true;
     }
@@ -88,7 +88,7 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40 {
         aClass351_9189 = null;
         aClass114_9197 = null;
         if (i != -98) method3077((byte) 27);
-        aClass263_9195 = null;
+        objectTypeList = null;
     }
 
     final void method3044(int i) {

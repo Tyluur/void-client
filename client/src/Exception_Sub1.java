@@ -6,14 +6,14 @@ final class Exception_Sub1 extends Exception {
     static int anInt109;
     static int[] anIntArray110 = new int[4096];
     static int[][] anIntArrayArray111 = {{0, 2, 4, 6}, {6, 0, 2, 4}, {6, 0, 2}, {2, 6, 0}, {0, 2, 6}, {6, 0, 2}, {5, 6, 0, 1, 2, 4}, {7, 2, 4, 4}, {2, 4, 4, 7}, {6, 6, 4, 0, 2, 2}, {0, 2, 2, 6, 6, 4}, {0, 2, 2, 4, 6, 6}, {0, 2, 4, 6}};
-    static Class255 aClass255_112;
+    static ItemTypeList itemTypeList; // aClass255_112
 
     public Exception_Sub1() {
         /* empty */
     }
 
     public static void method140(byte i) {
-        aClass255_112 = null;
+        itemTypeList = null;
         anIntArray110 = null;
         if (i == -126) anIntArrayArray111 = null;
     }

@@ -56,7 +56,7 @@ final class Class318_Sub4 extends Class318 {
             script.aClass356Array9693 = new Class356[i_14_];
             for (int i_15_ = 0; i_15_ < i_14_; i_15_++) {
                 int i_16_ = class348_sub49.readUnsignedShort(842397944);
-                Class356 class356 = new Class356(Class33.method340(i_16_, (byte) 108));
+                Class356 class356 = new Class356(EnumTypeList.method340(i_16_, (byte) 108));
                 script.aClass356Array9693[i_15_] = class356;
                 while (i_16_-- > 0) {
                     int i_17_ = class348_sub49.readInt((byte) -126);

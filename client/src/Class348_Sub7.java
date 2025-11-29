@@ -15,7 +15,7 @@ final class Class348_Sub7 extends Class348 {
     boolean aBoolean6650;
     static long aLong6651 = -1L;
     static int anInt6652 = 0;
-    static Class33 aClass33_6653;
+    static EnumTypeList enumTypeList; // aClass33_6653
 
     static final void method2772(int i, byte i_0_) {
         anInt6641++;
@@ -35,7 +35,7 @@ final class Class348_Sub7 extends Class348 {
     public static void method2773(int i) {
         aClass207_6643 = null;
         aClass229_6644 = null;
-        if (i == 0) aClass33_6653 = null;
+        if (i == 0) enumTypeList = null;
     }
 
     Class348_Sub7(int i, int i_2_, int i_3_, int i_4_, int i_5_, boolean bool) {

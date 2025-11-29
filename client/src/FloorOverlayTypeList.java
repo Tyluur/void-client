@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class268 {
+final class FloorOverlayTypeList {
     int anInt3429;
     private static short[] aShortArray3430 = {-1, -1, -1, -1, -1};
     static int anInt3431;
@@ -75,7 +75,7 @@ final class Class268 {
         }
         class277 = new Class277();
         class277.anInt3573 = i;
-        class277.aClass268_3562 = this;
+        class277.aFloorOverlayTypeList_3562 = this;
         if (is != null) class277.method2070(true, new Class348_Sub49(is));
         class277.method2067(-4860);
         synchronized (aClass60_3433) {
@@ -93,10 +93,10 @@ final class Class268 {
         } else {
             int i_6_ = (int) Class76.aFloat1287;
             if (i_6_ < Class348_Sub35.anInt6979 >> 8) i_6_ = Class348_Sub35.anInt6979 >> 8;
-            if (Class181.aBooleanArray2374[4] && Class255.anIntArray3273[4] - -128 > i_6_) i_6_ = Class255.anIntArray3273[4] + 128;
+            if (Class181.aBooleanArray2374[4] && ItemTypeList.anIntArray3273[4] - -128 > i_6_) i_6_ = ItemTypeList.anIntArray3273[4] + 128;
             int i_7_ = 0x3fff & (int) Class314.aFloat3938 + Class195.anInt5016;
             if (i_4_ != 0) method2031(-117, null);
-            Class17.method268(i_6_, -200 + (Class275.method2064((Class132.aPlayer_1907.x), Class355.anInt4372, 11219, (Class132.aPlayer_1907.y))), i_7_, Class192.anInt2578, i, -19360, Class130_Sub1.anInt5799, 3 * (i_6_ >> 3) + 600 << 2);
+            Class17.method268(i_6_, -200 + (Class275.method2064((Class132.aPlayer_1907.x), QuickChatPhraseTypeList.anInt4372, 11219, (Class132.aPlayer_1907.y))), i_7_, Class192.anInt2578, i, -19360, Class130_Sub1.anInt5799, 3 * (i_6_ >> 3) + 600 << 2);
             float f = (-((float) ((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)) / 1000000.0F) + 1.0F);
             Class286_Sub4.anInt6246 = (int) ((float) Class318_Sub1_Sub3_Sub2.anInt10047 + f * (float) (-Class318_Sub1_Sub3_Sub2.anInt10047 + Class286_Sub4.anInt6246));
             Class305.anInt3855 = (int) ((float) (-Class5_Sub3.anInt8368 + Class305.anInt3855) * f + (float) Class5_Sub3.anInt8368);
@@ -141,7 +141,8 @@ final class Class268 {
         }
     }
 
-    Class268(Class230 class230, int i, Index index) {
+    // Class268
+    FloorOverlayTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_3442 = index;
             this.anInt3429 = aIndex_3442.method407(0, 4);

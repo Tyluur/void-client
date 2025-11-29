@@ -3,7 +3,7 @@
  */
 
 final class Class127_Sub1 extends Class127 {
-    static Class271 aClass271_8378;
+    static InvTypeList invTypeList; // aClass271_8378
     static int anInt8379;
     static int anInt8380;
     static int anInt8381;
@@ -32,7 +32,7 @@ final class Class127_Sub1 extends Class127 {
         if (i == 2533) {
             class348_sub41.method2715((byte) 35);
             if (bool) Class14.method235(i_3_, (byte) -116);
-            Class166.method1288(i ^ ~0x9e2, i_3_);
+            CursorTypeList.method1288(i ^ ~0x9e2, i_3_);
             Class46 class46 = FontRenderer.method2570(1512932720, i_4_);
             if (class46 != null) Class251.method1916(-9343, class46);
             Class348_Sub42_Sub17.method3270((byte) 119);
@@ -73,7 +73,7 @@ final class Class127_Sub1 extends Class127 {
 
     public static void method1120(int i) {
         aClass114_8384 = null;
-        aClass271_8378 = null;
+        invTypeList = null;
         aClass114_8385 = null;
         if (i != 1) method1119(true);
     }

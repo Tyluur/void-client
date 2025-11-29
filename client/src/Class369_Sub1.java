@@ -28,7 +28,7 @@ final class Class369_Sub1 extends Class369 {
     static final void method3570(boolean bool) {
         if (Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042.method2084(-6858);
         anInt8579++;
-        if (Class194.aClass279_2596 != null) Class194.aClass279_2596.method2084(-6858);
+        if (VarBitTypeListClient.aClass279_2596 != null) VarBitTypeListClient.aClass279_2596.method2084(-6858);
         if (bool != false) anInt8583 = 30;
     }
 }

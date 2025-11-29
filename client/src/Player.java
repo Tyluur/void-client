@@ -165,9 +165,9 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                     break;
                 }
                 if (i_18_ >= 32768) {
-                    i_18_ = Class25.anIntArray369[-32768 + i_18_];
+                    i_18_ = SkyBoxSphereTypeList.anIntArray369[-32768 + i_18_];
                     is[i_15_] = Class273.method2057(1073741824, i_18_);
-                    int i_19_ = (Exception_Sub1.aClass255_112.method1940(-111, i_18_).anInt2827);
+                    int i_19_ = (Exception_Sub1.itemTypeList.method1940(-111, i_18_).anInt2827);
                     if (i_19_ != 0) this.anInt10542 = i_19_;
                 } else is[i_15_] = Class273.method2057(-256 + i_18_, -2147483648);
             }
@@ -222,7 +222,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         if ((Class348_Sub42_Sub11.index == this.anInt10290) && is_30_ != null) {
             for (int i_31_ = 0; i_31_ < is_20_.length; i_31_++) {
                 if (is_20_[i_31_] != is_30_[i_31_]) {
-                    Exception_Sub1.aClass255_112.method1936(72);
+                    Exception_Sub1.itemTypeList.method1936(72);
                     break;
                 }
             }
@@ -305,17 +305,17 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
     final void method2455(int i, int i_50_, byte i_51_, int i_52_) {
         anInt10529++;
         if (i_50_ != -26443) method2451((byte) -35, 9, 26, 87);
-        if (this.anInt10286 != -1 && Class10.aClass87_191.method835(this.anInt10286, 7).anInt245 == 1) {
+        if (this.anInt10286 != -1 && Class10.seqTypeList.method835(this.anInt10286, 7).anInt245 == 1) {
             this.anInt10286 = -1;
             this.anIntArray10236 = null;
         }
         if (this.anInt10269 != -1) {
-            Class368 class368 = (Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 59, this.anInt10269));
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && Class10.aClass87_191.method835((class368.anInt4503), i_50_ ^ ~0x674d).anInt245 == 1) this.anInt10269 = -1;
+            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 59, this.anInt10269));
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && Class10.seqTypeList.method835((class368.anInt4503), i_50_ ^ ~0x674d).anInt245 == 1) this.anInt10269 = -1;
         }
         if (this.anInt10291 != -1) {
-            Class368 class368 = (Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 124, this.anInt10291));
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.aClass87_191.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1;
+            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 124, this.anInt10291));
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.seqTypeList.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1;
         }
         this.anInt10524 = -1;
         if (i_52_ >= 0 && Class367_Sub4.anInt7319 > i_52_ && i >= 0 && Class348_Sub40_Sub3.anInt9109 > i) {
@@ -343,9 +343,9 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         this.aBoolean10324 = false;
         if (Class316.aClass348_Sub51_3959.aClass239_Sub21_7270.method1812(-32350) == 1) {
             Class225 class225 = this.method2422((byte) 72);
-            if (class225.aBoolean2913 && (this.aClass154_10536.anInt2093 == -1 || Class189.aClass278_2529.method2079(this.aClass154_10536.anInt2093, i + -2).aBoolean1369)) {
-                Class17 class17 = ((this.anInt10286 != -1 && this.anInt10218 == 0) ? (Class10.aClass87_191.method835(this.anInt10286, 7)) : null);
-                Class17 class17_55_ = ((this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) ? null : (Class10.aClass87_191.method835(this.anInt10268, 7)));
+            if (class225.aBoolean2913 && (this.aClass154_10536.anInt2093 == -1 || Class189.npcTypeList.method2079(this.aClass154_10536.anInt2093, i + -2).aBoolean1369)) {
+                Class17 class17 = ((this.anInt10286 != -1 && this.anInt10218 == 0) ? (Class10.seqTypeList.method835(this.anInt10286, 7)) : null);
+                Class17 class17_55_ = ((this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) ? null : (Class10.seqTypeList.method835(this.anInt10268, 7)));
                 Class64 class64 = (Class348.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (class17_55_ == null ? this.anInt10267 : this.anInt10245), 0, 1, this.anInt10252, var_ha, 160, 0, 240, class17_55_ == null ? class17 : class17_55_));
                 if (class64 != null) {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).length, true, false));
@@ -429,7 +429,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         else is = Class239_Sub17.anIntArray6021;
         if (i != 255) anInt10567 = 81;
         if (is != null && is[aByte10552] != -1) {
-            Class117 class117 = Class348_Sub7.aClass33_6653.findEnum(true, is[aByte10552]);
+            Class117 class117 = Class348_Sub7.enumTypeList.findEnum(true, is[aByte10552]);
             if (class117.aChar1779 != 115) {
                 Class156.method1242("gdn1", new Throwable(), 15004);
                 is[aByte10552] = -1;
@@ -462,7 +462,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
     final int method2436(byte i) {
         if (i <= 39) method2455(-97, -62, (byte) 0, 103);
         anInt10546++;
-        if (this.aClass154_10536 != null && this.aClass154_10536.anInt2093 != -1) return (Class189.aClass278_2529.method2079(this.aClass154_10536.anInt2093, -1).size);
+        if (this.aClass154_10536 != null && this.aClass154_10536.anInt2093 != -1) return (Class189.npcTypeList.method2079(this.aClass154_10536.anInt2093, -1).size);
         return super.method2436((byte) 72);
     }
 
@@ -476,17 +476,17 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         anInt10525++;
         int i_70_ = i;
         Class225 class225 = this.method2422((byte) 72);
-        Class17 class17 = ((this.anInt10286 == -1 || this.anInt10218 != 0) ? null : Class10.aClass87_191.method835(this.anInt10286, 7));
-        Class17 class17_71_ = ((this.anInt10268 != -1 && !this.aBoolean10521 && (!this.aBoolean10213 || class17 == null)) ? Class10.aClass87_191.method835(this.anInt10268, 7) : null);
+        Class17 class17 = ((this.anInt10286 == -1 || this.anInt10218 != 0) ? null : Class10.seqTypeList.method835(this.anInt10286, 7));
+        Class17 class17_71_ = ((this.anInt10268 != -1 && !this.aBoolean10521 && (!this.aBoolean10213 || class17 == null)) ? Class10.seqTypeList.method835(this.anInt10268, 7) : null);
         int i_72_ = class225.anInt2932;
         int i_73_ = class225.anInt2941;
         if (i_72_ != 0 || i_73_ != 0 || class225.anInt2950 != 0 || class225.anInt2926 != 0) i |= 0x7;
         int i_74_ = this.aClass264_10217.method2019((byte) -106);
         boolean bool = (this.aByte10279 != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250));
         if (bool) i |= 0x80000;
-        Class64 class64 = (this.aClass64Array10323[0] = (this.aClass154_10536.method1226(Class318_Sub1_Sub3_Sub3.aClass170_10209, class17_71_, this.aClass182Array10308, true, Exception_Sub1.aClass255_112, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.aClass150_9342, this.anInt10232, var_ha, Class189.aClass278_2529, Class10.aClass87_191, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.aClass261_5558)));
+        Class64 class64 = (this.aClass64Array10323[0] = (this.aClass154_10536.method1226(Class318_Sub1_Sub3_Sub3.timedVarDomain, class17_71_, this.aClass182Array10308, true, Exception_Sub1.itemTypeList, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.idkTypeList, this.anInt10232, var_ha, Class189.npcTypeList, Class10.seqTypeList, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.basTypeList)));
         int i_75_ = Class292.method2201(2121);
-        if (Class226.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268);
+        if (QuickChatCatTypeList.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268);
         int i_76_ = 3 % ((63 - i_69_) / 47);
         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165 && i_75_ < 50) {
             int i_77_;
@@ -512,7 +512,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         } else this.method2424(i_74_, method2436((byte) 124) << 9, 0, method2436((byte) 58) << 9, (byte) 65, 0);
         if (bool) class64.method624(this.aByte10255, this.aByte10206, this.aByte10270, (this.aByte10279 & 0xff));
         if (!this.aBoolean10521 && this.anInt10269 != -1 && this.anInt10240 != -1) {
-            Class368 class368 = (Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 76, this.anInt10269));
+            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 76, this.anInt10269));
             boolean bool_78_ = (class368.aByte4488 == 3 && (i_72_ != 0 || i_73_ != 0));
             int i_79_ = i_70_;
             if (!bool_78_) {
@@ -520,7 +520,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                 if (this.anInt10220 != 0) i_79_ |= 0x2;
                 if (this.anInt10278 >= 0) i_79_ |= 0x7;
             } else i_79_ |= 0x7;
-            Class64 class64_80_ = (this.aClass64Array10323[1] = (class368.method3562(this.anInt10240, var_ha, this.anInt10243, i_79_, this.anInt10283, Class10.aClass87_191, (byte) 46)));
+            Class64 class64_80_ = (this.aClass64Array10323[1] = (class368.method3562(this.anInt10240, var_ha, this.anInt10243, i_79_, this.anInt10283, Class10.seqTypeList, (byte) 46)));
             if (class64_80_ != null) {
                 if (this.anInt10278 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939[this.anInt10278]) != null)) {
                     int i_81_ = 0;
@@ -559,7 +559,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         } else this.aClass64Array10323[1] = null;
         if (this.aBoolean10521 || this.anInt10291 == -1 || this.anInt10224 == -1) this.aClass64Array10323[2] = null;
         else {
-            Class368 class368 = (Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 76, this.anInt10291));
+            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 76, this.anInt10291));
             boolean bool_89_ = (class368.aByte4488 == 3 && (i_72_ != 0 || i_73_ != 0));
             int i_90_ = i_70_;
             if (bool_89_) i_90_ |= 0x7;
@@ -568,7 +568,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                 if (this.anInt10260 != 0) i_90_ |= 0x2;
                 if (this.anInt10289 >= 0) i_90_ |= 0x7;
             }
-            Class64 class64_91_ = (this.aClass64Array10323[2] = (class368.method3558(this.anInt10273, this.anInt10276, var_ha, i_90_, 3172, Class10.aClass87_191, this.anInt10224)));
+            Class64 class64_91_ = (this.aClass64Array10323[2] = (class368.method3558(this.anInt10273, this.anInt10276, var_ha, i_90_, 3172, Class10.seqTypeList, this.anInt10224)));
             if (class64_91_ != null) {
                 if (this.anInt10289 < 0 || class225.anIntArrayArray2939 == null || ((class225.anIntArrayArray2939[this.anInt10289]) == null)) {
                     if (this.anInt10202 != 0) class64_91_.a(2048 * (this.anInt10202));

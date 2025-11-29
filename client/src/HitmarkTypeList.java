@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class219 {
+final class HitmarkTypeList {
     Class60 aClass60_2862 = new Class60(20);
     static int anInt2863;
     static Class196 aClass196_2864 = new Class196();
@@ -44,7 +44,7 @@ final class Class219 {
             Class127_Sub1.anInt8387 = 0;
         } else {
             if (i != (~(class318_sub1_sub3_sub3.anInt10286)) && (class318_sub1_sub3_sub3.anInt10218) == 0) {
-                Class17 class17 = (Class10.aClass87_191.method835((class318_sub1_sub3_sub3.anInt10286), i + 7));
+                Class17 class17 = (Class10.seqTypeList.method835((class318_sub1_sub3_sub3.anInt10286), i + 7));
                 if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
                     Class235.anInt3062 = -1;
                     Class127_Sub1.anInt8387 = 0;
@@ -59,9 +59,9 @@ final class Class219 {
                 }
             }
             if (class318_sub1_sub3_sub3.anInt10269 != -1 && (class318_sub1_sub3_sub3.anInt10225) <= Class367_Sub11.anInt7396) {
-                Class368 class368 = (Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 118, (class318_sub1_sub3_sub3.anInt10269)));
+                Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 118, (class318_sub1_sub3_sub3.anInt10269)));
                 if (class368.aBoolean4487 && class368.anInt4503 != -1) {
-                    Class17 class17 = Class10.aClass87_191.method835(class368.anInt4503, 7);
+                    Class17 class17 = Class10.seqTypeList.method835(class368.anInt4503, 7);
                     if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
                         Class127_Sub1.anInt8387 = 0;
                         class318_sub1_sub3_sub3.anInt10326++;
@@ -77,9 +77,9 @@ final class Class219 {
                 }
             }
             if (class318_sub1_sub3_sub3.anInt10269 != -1 && ((class318_sub1_sub3_sub3.anInt10225) <= Class367_Sub11.anInt7396)) {
-                Class368 class368 = (Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 98, (class318_sub1_sub3_sub3.anInt10269)));
+                Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 98, (class318_sub1_sub3_sub3.anInt10269)));
                 if (class368.aBoolean4487 && class368.anInt4503 != -1) {
-                    Class17 class17 = Class10.aClass87_191.method835((class368.anInt4503), i ^ 0x7);
+                    Class17 class17 = Class10.seqTypeList.method835((class368.anInt4503), i ^ 0x7);
                     if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
                         Class127_Sub1.anInt8387 = 0;
                         class318_sub1_sub3_sub3.anInt10326++;
@@ -211,7 +211,7 @@ final class Class219 {
             is = aIndex_2866.method410(-1860, i, i_15_);
         }
         class31 = new Class31();
-        class31.aClass219_438 = this;
+        class31.aHitmarkTypeList_438 = this;
         if (is != null) class31.method332(i ^ ~0x55, new Class348_Sub49(is));
         synchronized (aClass60_2875) {
             aClass60_2875.method582(class31, i_15_, (byte) -109);
@@ -246,7 +246,8 @@ final class Class219 {
         if (i != 11868) anInt2872 = -94;
     }
 
-    Class219(Class230 class230, int i, Index index, Index index_17_) {
+    // Class219
+    HitmarkTypeList(Class230 class230, int i, Index index, Index index_17_) {
         try {
             this.aIndex_2873 = index_17_;
             aIndex_2866 = index;

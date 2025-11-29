@@ -243,27 +243,27 @@ final class Class46 {
 
     static final void method427(int i) {
         anInt837++;
-        Class229.aClass268_2979.method2033((byte) 46);
-        Class362.aClass183_4460.method1377(2);
-        Class348_Sub40_Sub25.aClass150_9342.method1204(0);
-        Class348_Sub40_Sub12.aClass263_9195.method2006(88);
-        Class189.aClass278_2529.method2080(127);
-        Exception_Sub1.aClass255_112.method1938(126);
-        Class10.aClass87_191.method838(7);
-        Class348_Sub40_Sub18.aClass319_9245.method2542(-101);
-        Class229.aClass194_2981.method1443(83);
-        Class269.aClass217_3453.method1590(0);
-        Class64_Sub3.aClass261_5558.method1986((byte) -91);
-        Class2.aClass141_117.method1174((byte) -99);
-        Class348_Sub23_Sub2.aClass153_9031.method1222(true);
-        Class348_Sub23_Sub2.aClass187_9036.method1410(-27995);
-        Class101_Sub3.aClass326_5764.method2602(0);
-        Class30.aClass84_413.method816(false);
-        Class123.aClass25_1813.method302(-797644856);
-        Class348_Sub1.aClass185_6559.method1390(23);
-        Class239.aClass166_3147.method1283(1);
-        Class136.aClass65_4787.method694(-1007);
-        Class73.aClass219_4782.method1598(111);
+        Class229.floorOverlayTypeList.method2033((byte) 46);
+        Class362.floorUnderlayTypeList.method1377(2);
+        Class348_Sub40_Sub25.idkTypeList.method1204(0);
+        Class348_Sub40_Sub12.objectTypeList.method2006(88);
+        Class189.npcTypeList.method2080(127);
+        Exception_Sub1.itemTypeList.method1938(126);
+        Class10.seqTypeList.method838(7);
+        Class348_Sub40_Sub18.gfxTypeList.method2542(-101);
+        Class229.varBitTypeList.method1443(83);
+        Class269.varPlayerTypeList.method1590(0);
+        Class64_Sub3.basTypeList.method1986((byte) -91);
+        Class2.msiTypeList.method1174((byte) -99);
+        Class348_Sub23_Sub2.mapElementTypeList.method1222(true);
+        Class348_Sub23_Sub2.questTypeList.method1410(-27995);
+        Class101_Sub3.paramTypeList.method2602(0);
+        Class30.skyBoxTypeList.method816(false);
+        Class123.skyBoxSphereTypeList.method302(-797644856);
+        Class348_Sub1.lightTypeList.method1390(23);
+        Class239.cursorTypeList.method1283(1);
+        Class136.structTypeList.method694(-1007);
+        Class73.hitmarkTypeList.method1598(111);
         Class331.method2638(-4631);
         Class172.method1328(-26162);
         Class348_Sub40_Sub20.method3102(22385);
@@ -295,7 +295,7 @@ final class Class46 {
         return class348_sub50.aString7211;
     }
 
-    final Class64 method430(Class150 class150, Class87 class87, int i, ha var_ha, int i_21_, int i_22_, Class255 class255, Interface17 interface17, int i_23_, Class154 class154, Class17 class17, Class261 class261, Class278 class278, int i_24_) {
+    final Class64 method430(IDKTypeList IDKTypeList, SeqTypeList seqTypeList, int i, ha var_ha, int i_21_, int i_22_, ItemTypeList itemTypeList, Interface17 interface17, int i_23_, Class154 class154, Class17 class17, BASTypeList BASTypeList, NPCTypeList NPCTypeList, int i_24_) {
         try {
             anInt684++;
             Class348_Sub42_Sub13.aBoolean9616 = false;
@@ -322,7 +322,7 @@ final class Class46 {
                 return class64;
             }
             if (this.anInt770 == 2) {
-                Class64 class64 = (class278.method2079(this.anInt753, -1).method803(interface17, var_ha, i_22_, i_24_, class17, class87, i_21_, 104, i));
+                Class64 class64 = (NPCTypeList.method2079(this.anInt753, -1).method803(interface17, var_ha, i_22_, i_24_, class17, seqTypeList, i_21_, 104, i));
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -332,7 +332,7 @@ final class Class46 {
             if (i_23_ != 255) method432(null, -50);
             if (this.anInt770 == 3) {
                 if (class154 == null) return null;
-                Class64 class64 = class154.method1230(class255, -402058072, class87, class150, interface17, class278, i_21_, i_24_, i, class17, i_22_, var_ha);
+                Class64 class64 = class154.method1230(itemTypeList, -402058072, seqTypeList, IDKTypeList, interface17, NPCTypeList, i_21_, i_24_, i, class17, i_22_, var_ha);
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -340,7 +340,7 @@ final class Class46 {
                 return class64;
             }
             if (this.anInt770 == 4) {
-                ItemDefinition itemDefinition = class255.method1940(i_23_ + -365, this.anInt753);
+                ItemDefinition itemDefinition = itemTypeList.method1940(i_23_ + -365, this.anInt753);
                 Class64 class64 = itemDefinition.method1559(class154, class17, var_ha, i, i_22_, 10, i_21_, (byte) 88, i_24_);
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
@@ -349,7 +349,7 @@ final class Class46 {
                 return class64;
             }
             if (this.anInt770 == 6) {
-                Class64 class64 = (class278.method2079(this.anInt753, -1).method800(0, null, class87, false, null, 0, class261, i_21_, class17, interface17, var_ha, 0, null, i_24_, 0, i, i_22_));
+                Class64 class64 = (NPCTypeList.method2079(this.anInt753, -1).method800(0, null, seqTypeList, false, null, 0, BASTypeList, i_21_, class17, interface17, var_ha, 0, null, i_24_, 0, i, i_22_));
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -361,7 +361,7 @@ final class Class46 {
                 int i_26_ = this.anInt753 >>> 16;
                 int i_27_ = 0xffff & this.anInt753;
                 int i_28_ = this.anInt779;
-                Class64 class64 = class154.method1232(i_24_, i, i_28_, i_27_, class87, class150, -15331, i_26_, i_22_, var_ha, i_21_, class17);
+                Class64 class64 = class154.method1232(i_24_, i, i_28_, i_27_, seqTypeList, IDKTypeList, -15331, i_26_, i_22_, var_ha, i_21_, class17);
                 if (class64 == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -370,7 +370,7 @@ final class Class46 {
             }
             return null;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("at.G(" + (class150 != null ? "{...}" : "null") + ',' + (class87 != null ? "{...}" : "null") + ',' + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_21_ + ',' + i_22_ + ',' + (class255 != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + i_23_ + ',' + (class154 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (class261 != null ? "{...}" : "null") + ',' + (class278 != null ? "{...}" : "null") + ',' + i_24_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("at.G(" + (IDKTypeList != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_21_ + ',' + i_22_ + ',' + (itemTypeList != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + i_23_ + ',' + (class154 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + i_24_ + ')'));
         }
     }
 
@@ -762,7 +762,7 @@ final class Class46 {
         return sprite;
     }
 
-    final Class305 method444(boolean bool, Class25 class25, Class84 class84) {
+    final Class305 method444(boolean bool, SkyBoxSphereTypeList skyBoxSphereTypeList, SkyBoxTypeList skyBoxTypeList) {
         try {
             if (bool != false) method424(122, -123, null, -111, 40, 28, -109, null, 76, 127, -66, 8, -45);
             anInt804++;
@@ -770,12 +770,12 @@ final class Class46 {
             long l = (((long) this.anInt693 << 16 & 65535L << 16) | (((long) this.anInt733 << 32 & 65535L << 32) | ((long) this.anInt674 << 48 & 65535L << 48)) | (long) this.anInt705 & 0xffffL);
             Class305 class305 = ((Class305) Class348_Sub40_Sub9.aClass60_9171.method583(l, 78));
             if (class305 == null) {
-                class305 = class84.method823(this.anInt733, this.anInt693, this.anInt674, -43, class25, this.anInt705);
+                class305 = skyBoxTypeList.method823(this.anInt733, this.anInt693, this.anInt674, -43, skyBoxSphereTypeList, this.anInt705);
                 Class348_Sub40_Sub9.aClass60_9171.method582(class305, l, (byte) -120);
             }
             return class305;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("at.N(" + bool + ',' + (class25 != null ? "{...}" : "null") + ',' + (class84 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("at.N(" + bool + ',' + (skyBoxSphereTypeList != null ? "{...}" : "null") + ',' + (skyBoxTypeList != null ? "{...}" : "null") + ')'));
         }
     }
 

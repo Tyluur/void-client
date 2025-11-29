@@ -504,7 +504,7 @@ abstract class ha_Sub3 extends ha {
             boolean bool_30_;
             if (i_29_ == 1) {
                 bool = true;
-                class173 = Class348_Sub4.aClass173_6602;
+                class173 = SystemInfo.aClass173_6602;
                 bool_30_ = true;
             } else if (i_29_ == 2) {
                 class173 = Class69.aClass173_1201;
@@ -583,7 +583,7 @@ abstract class ha_Sub3 extends ha {
             if (Class147.aClass357ArrayArrayArray2029 == null) return;
             if (i_41_ == 0) {
                 Interface10 interface10 = (Interface10) r_Sub2.method3297(i_40_, i_37_, i);
-                Interface10 interface10_42_ = (Interface10) Class82.method813(i_40_, i_37_, i);
+                Interface10 interface10_42_ = (Interface10) VarcstrTypeList.method813(i_40_, i_37_, i);
                 if (interface10 != null && i_36_ != 2) {
                     if (interface10 instanceof Class318_Sub1_Sub4_Sub2) ((Class318_Sub1_Sub4_Sub2) interface10).aClass235_10115.method1671(262144, i_35_);
                     else Class218.method1591(i_37_, 89, i_41_, i_35_, interface10.method42(-76), i_36_, i, i_38_, i_40_);
@@ -1721,7 +1721,8 @@ abstract class ha_Sub3 extends ha {
         }
     }
 
-    static final void method3896(Class296 class296, byte i) {
+    // method3896
+    static final void setHuffman(Class296 class296, byte i) {
         do {
             try {
                 anInt8028++;
@@ -2421,9 +2422,9 @@ abstract class ha_Sub3 extends ha {
     abstract boolean method3931(boolean bool, Class304 class304, Class68 class68);
 
     final void method3932(byte i) {
-        if (this.aClass196_8184 != Class219.aClass196_2864) {
+        if (this.aClass196_8184 != HitmarkTypeList.aClass196_2864) {
             Class196 class196 = this.aClass196_8184;
-            this.aClass196_8184 = Class219.aClass196_2864;
+            this.aClass196_8184 = HitmarkTypeList.aClass196_2864;
             if (class196.method1450(-116)) method3913((byte) -100);
             anInt8100 &= ~0x1f;
             this.aFloatArray8135 = aFloatArray8111;
@@ -2645,7 +2646,7 @@ abstract class ha_Sub3 extends ha {
         aFloatArray8140 = new float[]{0.0F, 0.0F, 1.0F, 0.0F};
         this.aFloat8169 = 3584.0F;
         this.aBoolean8141 = true;
-        this.aClass173_8163 = Class348_Sub4.aClass173_6602;
+        this.aClass173_8163 = SystemInfo.aClass173_6602;
         this.aBoolean8148 = true;
         aBoolean8097 = false;
         this.anInt8165 = 0;
@@ -2665,7 +2666,7 @@ abstract class ha_Sub3 extends ha {
         this.aFloat8174 = -1.0F;
         this.aFloatArray8170 = new float[]{0.0F, 0.0F, 1.0F, 0.0F};
         this.anInt8181 = 0;
-        this.aClass196_8184 = Class219.aClass196_2864;
+        this.aClass196_8184 = HitmarkTypeList.aClass196_2864;
         this.aFloat8180 = 1.0F;
         this.aFloat8186 = -1.0F;
         anInt8172 = 16777215;

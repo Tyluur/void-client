@@ -735,7 +735,7 @@ public final class Class378 extends ha_Sub3 {
         int i_68_ = i;
         if (Class31.aClass113_430 == class113) i_68_ = 65536;
         else if (za_Sub1.aClass113_9773 == class113) i_68_ = 131072;
-        else if (class113 == Class261.aClass113_3314) i_68_ = 196608;
+        else if (class113 == BASTypeList.aClass113_3314) i_68_ = 196608;
         this.anIDirect3DDevice9810.SetTextureStageState(this.anInt8175, 11, this.anInt8175 | i_68_);
     }
 
@@ -870,7 +870,7 @@ public final class Class378 extends ha_Sub3 {
 
     final void method3950(int i) {
         if (i != 0) anIntArray9809 = null;
-        if (Class348_Sub4.aClass173_6602 == this.aClass173_8163) {
+        if (SystemInfo.aClass173_6602 == this.aClass173_8163) {
             this.anIDirect3DDevice9810.SetRenderState(19, 5);
             this.anIDirect3DDevice9810.SetRenderState(20, 6);
         } else if (this.aClass173_8163 == Class69.aClass173_1201) {

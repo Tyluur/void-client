@@ -138,7 +138,7 @@ final class Class286_Sub5 extends Class286 {
         Class106.anInt1639 = index.method417("hitbar_default", 0);
         Class373_Sub2.anInt7429 = index.method417("timerbar_default", 0);
         ha.anInt4562 = index.method417("headicons_pk", 0);
-        Class82.anInt1435 = index.method417("headicons_prayer", 0);
+        VarcstrTypeList.anInt1435 = index.method417("headicons_prayer", 0);
         Class115.anInt1756 = index.method417("hint_headicons", 0);
         Class291.anInt3739 = index.method417("hint_mapmarkers", 0);
         Class86.anInt1481 = index.method417("mapflag", 0);
@@ -146,7 +146,7 @@ final class Class286_Sub5 extends Class286 {
         Class113.anInt1742 = index.method417("mapdots", 0);
         Class364.anInt4469 = index.method417("scrollbar", 0);
         Class348_Sub40_Sub38.anInt9473 = index.method417("name_icons", 0);
-        Class187.anInt2510 = index.method417("floorshadows", 0);
+        QuestTypeList.anInt2510 = index.method417("floorshadows", 0);
         Class52.anInt4895 = index.method417("compass", 0);
         if (i > -72) method2161((byte) 106, 125L);
         Class186_Sub1.anInt5814 = index.method417("otherlevel", 0);

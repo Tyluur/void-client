@@ -96,7 +96,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
         anInt8742++;
         if (class113 == za_Sub1.aClass113_9773) return 9216;
         if (class113 == Class31.aClass113_430) return 34065;
-        if (Class261.aClass113_3314 == class113) return 34066;
+        if (BASTypeList.aClass113_3314 == class113) return 34066;
         if (i != 25602) method2413(-121, null);
         throw new IllegalArgumentException();
     }

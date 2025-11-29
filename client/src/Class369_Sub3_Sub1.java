@@ -63,7 +63,7 @@ final class Class369_Sub3_Sub1 extends Class369_Sub3 {
     public final Class223 method51(byte i) {
         anInt10175++;
         if (i < 116) this.anInt10177 = -10;
-        return Class187.aClass223_2507;
+        return QuestTypeList.aClass223_2507;
     }
 
     static final Sprite method3577(int i, byte i_10_, Index index) {

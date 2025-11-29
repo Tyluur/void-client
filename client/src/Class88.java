@@ -74,7 +74,7 @@ final class Class88 {
                         Class14_Sub4.method254(-5, (byte) -111);
                         return;
                     }
-                    if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285.method1259(0);
+                    if (Class239_Sub12.anInt5969 != 2) ItemTypeList.aClass161_3285.method1259(0);
                     else Class3.aClass161_125.method1259(0);
                     Class318_Sub1_Sub1_Sub2.anInt9971++;
                     Class225.anInt2955 = 1;
@@ -82,7 +82,7 @@ final class Class88 {
                 }
                 if (Class225.anInt2955 == 1) {
                     if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) Class130_Sub1.aClass144_5800 = (Class3.aClass161_125.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
-                    else Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
+                    else Class130_Sub1.aClass144_5800 = (ItemTypeList.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992, (byte) 36));
                     Class225.anInt2955 = 2;
                 }
                 if (Class225.anInt2955 == 2) {
@@ -154,7 +154,7 @@ final class Class88 {
                         Class348_Sub40_Sub20.aClass348_Sub4_9264.method2747(1, class348_sub49_9_);
                         class348_sub49_sub2.writeBytes((class348_sub49_9_.aByteArray7154).length, 0, (class348_sub49_9_.aByteArray7154), -73);
                         class348_sub49_sub2.writeShort((byte) 107, Class135_Sub1.anInt4718);
-                        class348_sub49_sub2.writeLong(Class244.aLong4615, (byte) -63);
+                        class348_sub49_sub2.writeLong(Js5TextureSource.aLong4615, (byte) -63);
                         class348_sub49_sub2.writeByte(false, Class14_Sub1.aString8605 == null ? 0 : 1);
                         if (Class14_Sub1.aString8605 != null) class348_sub49_sub2.writeString((byte) -5, (Class14_Sub1.aString8605));
                         class348_sub49_sub2.writeByte(false, (!Class348_Sub40_Sub31.method3131((byte) 50, "jagtheora") ? 0 : 1));
@@ -169,8 +169,8 @@ final class Class88 {
                         class348_sub49_sub2.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154, -109);
                         int i_5_ = class348_sub49_sub2.anInt7197;
                         class348_sub49_sub2.writeString((byte) -5, Class64_Sub3.aString5600);
-                        class348_sub49_sub2.writeByte(false, Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987);
-                        class348_sub49_sub2.writeByte(false, Class348_Sub33.anInt6967);
+                        class348_sub49_sub2.writeByte(false, Class348_Sub42_Sub8_Sub2.modeGame.anInt2987);
+                        class348_sub49_sub2.writeByte(false, Class348_Sub33.language);
                         s_Sub2.method4002(class348_sub49_sub2, (byte) 55);
                         class348_sub49_sub2.writeString((byte) -5, Class239_Sub12.aString5966);
                         class348_sub49_sub2.writeInt((byte) 106, Class202.anInt2670);
@@ -275,9 +275,9 @@ final class Class88 {
                             Class206.isMember = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class24.anInt359 = class348_sub49_sub2.method3369((byte) 125);
                             Class130.membersWorld = class348_sub49_sub2.readUnsignedByte(255) == 1;
-                            Class348_Sub40_Sub12.aClass263_9195.method2004(Class130.membersWorld, (byte) 25);
-                            Exception_Sub1.aClass255_112.method1934((byte) 11, Class130.membersWorld);
-                            Class189.aClass278_2529.method2072((byte) 88, Class130.membersWorld);
+                            Class348_Sub40_Sub12.objectTypeList.method2004(Class130.membersWorld, (byte) 25);
+                            Exception_Sub1.itemTypeList.method1934((byte) 11, Class130.membersWorld);
+                            Class189.npcTypeList.method2072((byte) 88, Class130.membersWorld);
                         } else {
                             if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class76.anInt1288, 107)) return;
                             Class348_Sub40_Sub8.aClass238_9165.method1701(Class76.anInt1288, 0, (byte) 85, (class348_sub49_sub2.aByteArray7154));
@@ -292,8 +292,8 @@ final class Class88 {
                             Class135_Sub1.anInt4716 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class322.anInt4026 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class206.anInt4870 = class348_sub49_sub2.readUnsignedShort(842397944);
-                            Class170.anInt5065 = class348_sub49_sub2.readInt((byte) -126);
-                            Class348_Sub42_Sub6.aClass144_9536 = Class348_Sub23_Sub1.aClass297_8992.method2232(116, Class170.anInt5065);
+                            TimedVarDomain.anInt5065 = class348_sub49_sub2.readInt((byte) -126);
+                            Class348_Sub42_Sub6.aClass144_9536 = Class348_Sub23_Sub1.aClass297_8992.method2232(116, TimedVarDomain.anInt5065);
                             Class216.anInt4976 = class348_sub49_sub2.readUnsignedByte(255);
                             Class130_Sub1.anInt5797 = class348_sub49_sub2.readUnsignedShort(842397944);
                             Class348_Sub6.anInt6632 = class348_sub49_sub2.readUnsignedShort(842397944);
@@ -411,7 +411,7 @@ final class Class88 {
                     Class14_Sub4.method254(-4, (byte) -87);
                     Class152.method1215((byte) 3);
                 } else {
-                    if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285.method1259(0);
+                    if (Class239_Sub12.anInt5969 != 2) ItemTypeList.aClass161_3285.method1259(0);
                     else Class3.aClass161_125.method1259(0);
                     Class318_Sub1_Sub1_Sub2.anInt9971++;
                     Class11.anInt197 = 0;

@@ -115,15 +115,15 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         Class14_Sub4.aClass323_8644 = null;
         Class48.anInt859 = -1;
         if (i <= -44) {
-            Class244.anInt4609 = -1;
+            Js5TextureSource.anInt4609 = -1;
             Class240.aClass323_4672 = null;
-            if (Class75.aClass153_1238 != null) {
-                Class75.aClass153_1238.method1219(7851);
-                Class75.aClass153_1238.method1220((byte) -100, 64, 128);
+            if (Class75.aMapElementTypeList_1238 != null) {
+                Class75.aMapElementTypeList_1238.method1219(7851);
+                Class75.aMapElementTypeList_1238.method1220((byte) -100, 64, 128);
             }
-            if (Class75.aClass141_1242 != null) Class75.aClass141_1242.method1178(64, 1, 64);
-            if (Class75.aClass263_1245 != null) Class75.aClass263_1245.method2014(64, true);
-            Class229.aClass194_2981.method1444(64, -124);
+            if (Class75.aMSITypeList_1242 != null) Class75.aMSITypeList_1242.method1178(64, 1, 64);
+            if (Class75.aObjectTypeList_1245 != null) Class75.aObjectTypeList_1245.method2014(64, true);
+            Class229.varBitTypeList.method1444(64, -124);
         }
     }
 

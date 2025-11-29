@@ -22,7 +22,7 @@ final class Class8 {
         anInt163++;
         NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);
         if (NPCDefinition.anIntArray1377 != null) {
-            NPCDefinition = NPCDefinition.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, i);
+            NPCDefinition = NPCDefinition.method794(Class318_Sub1_Sub3_Sub3.timedVarDomain, i);
             if (NPCDefinition == null) return -1;
         }
         int i_0_ = NPCDefinition.anInt1364;

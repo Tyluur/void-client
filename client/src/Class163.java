@@ -103,7 +103,7 @@ final class Class163 {
         StringBuffer stringbuffer = new StringBuffer();
         int i = Class239_Sub1.anInt5850;
         for (int i_24_ = 0; is.length > i_24_; i_24_++) {
-            Class321 class321 = Class348_Sub23_Sub2.aClass187_9036.method1408(-12637, is[i_24_]);
+            Class321 class321 = Class348_Sub23_Sub2.questTypeList.method1408(-12637, is[i_24_]);
             if (class321.itemSprite != -1) {
                 Sprite sprite = ((Sprite) Class34.aClass60_463.method583(class321.itemSprite, -74));
                 if (sprite == null) {

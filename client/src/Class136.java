@@ -3,7 +3,7 @@
  */
 
 final class Class136 implements Interface7 {
-    static Class65 aClass65_4787;
+    static StructTypeList structTypeList; // aClass65_4787
     private final String aString4788;
     private final Index aIndex_4789;
     static int anInt4790;
@@ -16,7 +16,7 @@ final class Class136 implements Interface7 {
 
     public static void method1159(byte i) {
         aShortArrayArray4791 = null;
-        aClass65_4787 = null;
+        structTypeList = null;
         if (i >= 36) SHADERS = null;
     }
 

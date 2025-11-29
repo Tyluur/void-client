@@ -21,7 +21,7 @@ final class Class101_Sub3 extends Class101 {
     float aFloat5761;
     float aFloat5762;
     static int anInt5763;
-    static Class326 aClass326_5764;
+    static ParamTypeList paramTypeList; // aClass326_5764
     static int anInt5765;
     static int anInt5766;
     static int anInt5767;
@@ -89,8 +89,8 @@ final class Class101_Sub3 extends Class101 {
     }
 
     public static void method938(int i) {
-        aClass326_5764 = null;
-        if (i <= 8) aClass326_5764 = null;
+        paramTypeList = null;
+        if (i <= 8) paramTypeList = null;
     }
 
     final void method900(int i) {
@@ -240,7 +240,7 @@ final class Class101_Sub3 extends Class101 {
     static final void method941(int i, int i_48_) {
         Class77.anInt1290 = i_48_;
         anInt5755++;
-        if (i <= 113) aClass326_5764 = null;
+        if (i <= 113) paramTypeList = null;
     }
 
     final void method942(int i) {

@@ -120,15 +120,15 @@ final class Class228 {
             Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, i + 12871);
         }
         anInt2971++;
-        if (i != (~Class244.anInt4609) && Class48.anInt859 != -1) {
-            int i_8_ = Class244.anInt4609 - Class348_Sub36.anInt6992;
+        if (i != (~Js5TextureSource.anInt4609) && Class48.anInt859 != -1) {
+            int i_8_ = Js5TextureSource.anInt4609 - Class348_Sub36.anInt6992;
             if (i_8_ < 2 || i_8_ > 2) i_8_ /= 8;
             int i_9_ = -Class245.anInt3170 + Class48.anInt859;
             Class348_Sub36.anInt6992 = i_8_ + Class348_Sub36.anInt6992;
             if (i_9_ < 2 || i_9_ > 2) i_9_ /= 8;
             Class245.anInt3170 -= -i_9_;
             if (i_8_ == 0 && i_9_ == 0) {
-                Class244.anInt4609 = -1;
+                Js5TextureSource.anInt4609 = -1;
                 Class48.anInt859 = -1;
             }
             Class348_Sub15.method2811(false);
@@ -145,7 +145,7 @@ final class Class228 {
         }
         if (Class246.aBoolean3174 && Class289.aClass262_3705 != null) {
             for (Class348_Sub12 class348_sub12 = (Class348_Sub12) Class289.aClass262_3705.method1995(4); class348_sub12 != null; class348_sub12 = ((Class348_Sub12) Class289.aClass262_3705.method1990((byte) 116))) {
-                Class42 class42 = (Class75.aClass153_1238.method1225(class348_sub12.aClass348_Sub21_6751.anInt6847, (byte) 125));
+                Class42 class42 = (Class75.aMapElementTypeList_1238.method1225(class348_sub12.aClass348_Sub21_6751.anInt6847, (byte) 125));
                 if (class348_sub12.method2799(i_6_, i_7_, 95)) {
                     if (class42.aStringArray577 != null) {
                         if (class42.aStringArray577[4] != null) Class50_Sub3.method466(false, class42.aString565, 0, (byte) -100, false, class42.anInt596, -1, true, 1006, class348_sub12.aClass348_Sub21_6751.anInt6847, class42.aStringArray577[4], class348_sub12.aClass348_Sub21_6751.anInt6847, -1);

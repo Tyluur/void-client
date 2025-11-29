@@ -144,7 +144,7 @@ final class Class339 implements Runnable {
         if (aClass144_4201 == null) {
             try {
                 int i_15_ = (Class8.aClass364_165 == Class55_Sub1.aClass364_5271 ? 80 : 7000 - -(Class135_Sub2.aClass161_4839.anInt2143));
-                aClass144_4201 = (Class348_Sub23_Sub1.aClass297_8992.method2237(new URL("http://" + (Class135_Sub2.aClass161_4839.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987), 8362));
+                aClass144_4201 = (Class348_Sub23_Sub1.aClass297_8992.method2237(new URL("http://" + (Class135_Sub2.aClass161_4839.aString2147) + ":" + i_15_ + "/news.ws?game=" + Class348_Sub42_Sub8_Sub2.modeGame.anInt2987), 8362));
             } catch (java.net.MalformedURLException malformedurlexception) {
                 return true;
             }

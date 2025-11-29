@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class185 {
+final class LightTypeList {
     private final Class60 aClass60_2479 = new Class60(64);
     private final Index aIndex_2480;
     static int anInt2481;
@@ -68,7 +68,8 @@ final class Class185 {
         }
     }
 
-    Class185(Class230 class230, int i, Index index) {
+    // Class185
+    LightTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_2480 = index;
             aIndex_2480.method407(0, 31);

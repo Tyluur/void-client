@@ -294,8 +294,8 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
         anInt10381 = i_29_;
         this.anInt10411 = i_27_;
         anInt10387 = i_31_;
-        int i_35_ = (Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 72, anInt10391).anInt4503);
-        if (i_35_ != -1) aClass17_10375 = Class10.aClass87_191.method835(i_35_, 7);
+        int i_35_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 72, anInt10391).anInt4503);
+        if (i_35_ != -1) aClass17_10375 = Class10.seqTypeList.method835(i_35_, 7);
         else aClass17_10375 = null;
     }
 
@@ -314,9 +314,9 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
 
     private final Class64 method2476(int i, ha var_ha, byte i_36_) {
         anInt10377++;
-        Class368 class368 = Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 75, anInt10391);
+        Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 75, anInt10391);
         if (i_36_ < 126) aClass318_Sub10_10378 = null;
-        return class368.method3562(anInt10365, var_ha, anInt10403, i, anInt10369, Class10.aClass87_191, (byte) 121);
+        return class368.method3562(anInt10365, var_ha, anInt10403, i, anInt10369, Class10.seqTypeList, (byte) 121);
     }
 
     static final void method2477(String string, String string_37_, byte i, int i_38_, String string_39_, String string_40_, int i_41_, int i_42_, String string_43_) {

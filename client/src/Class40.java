@@ -64,7 +64,7 @@ final class Class40 {
         Class240.aSpriteArray4679 = null;
         if (i != -29776) method370(true);
         NPCDefinition.aSprite_1365 = null;
-        Class25.aSpriteArray367 = null;
+        SkyBoxSphereTypeList.aSpriteArray367 = null;
         Class239_Sub9.aSpriteArray5933 = null;
         Class200.aSpriteArray2640 = null;
         Class348_Sub40_Sub37.aSpriteArray9467 = null;

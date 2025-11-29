@@ -21,11 +21,11 @@ final class Class348_Sub21 extends Class348 {
             Class117.anInt1780 += i_0_;
             if (Class117.anInt1780 < 65535) {
                 Class347.aBoolean4284 = false;
-                Class25.aBoolean368 = false;
+                SkyBoxSphereTypeList.aBoolean368 = false;
             } else {
-                Class347.aBoolean4284 = !Class25.aBoolean368;
+                Class347.aBoolean4284 = !SkyBoxSphereTypeList.aBoolean368;
                 Class117.anInt1780 = 65535;
-                Class25.aBoolean368 = true;
+                SkyBoxSphereTypeList.aBoolean368 = true;
             }
             float f = (float) Class117.anInt1780 / 65535.0F;
             float[] fs = new float[3];

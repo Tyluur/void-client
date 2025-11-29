@@ -208,7 +208,7 @@ class Class258_Sub3 extends Class258 {
         if (i_63_ == 0) i_63_ = i_62_;
         anInt8539++;
         if (bool) {
-            int i_68_ = Class183.method1382(i_65_, -6409);
+            int i_68_ = FloorUnderlayTypeList.method1382(i_65_, -6409);
             int i_69_ = i_68_ * i_62_;
             int i_70_ = i_63_ * i_68_;
             byte[] is_71_ = new byte[i_64_ * i_69_];

@@ -677,7 +677,7 @@ final class ha_Sub2 extends ha {
                             if (class348_sub42_sub13.aString9617.equals(class348_sub42_sub12.aString9601)) break;
                         }
                         if (class348_sub42_sub13 == null) {
-                            class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class259.aClass60_3301.method583(l, i ^ 0x3a));
+                            class348_sub42_sub13 = ((Class348_Sub42_Sub13) VarcTypeList.aClass60_3301.method583(l, i ^ 0x3a));
                             if (class348_sub42_sub13 != null && !(class348_sub42_sub13.aString9617.equals(class348_sub42_sub12.aString9601))) class348_sub42_sub13 = null;
                             if (class348_sub42_sub13 == null) class348_sub42_sub13 = (new Class348_Sub42_Sub13(class348_sub42_sub12.aString9601));
                             Class348_Sub42_Sub12.aClass356_9603.method3483((byte) 71, l, class348_sub42_sub13);
@@ -2917,7 +2917,7 @@ final class ha_Sub2 extends ha {
         int i_321_ = Class328_Sub1.anInt6513;
         Class88.anInt1497 = 0;
         int[] is = Class286_Sub7.anIntArray6290;
-        for (int i_322_ = 0; (i_322_ < Class150.anInt2057 + i_321_); i_322_++) {
+        for (int i_322_ = 0; (i_322_ < IDKTypeList.anInt2057 + i_321_); i_322_++) {
             NPCDefinition NPCDefinition = null;
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_322_]]);
@@ -2925,7 +2925,7 @@ final class ha_Sub2 extends ha {
                 class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_322_ + -i_321_], i_316_ ^ ~0x1775)).aNpc_6859);
                 NPCDefinition = ((Npc) class318_sub1_sub3_sub3).aNPCDefinition_10505;
                 if (NPCDefinition.anIntArray1377 != null) {
-                    NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), i_316_ + -3);
+                    NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.timedVarDomain), i_316_ + -3);
                     if (NPCDefinition == null) continue;
                 }
             }
@@ -3088,12 +3088,12 @@ final class ha_Sub2 extends ha {
                         int i_347_ = 0;
                         if (i_346_ >= 0) {
                             if (i_345_ <= Class367_Sub11.anInt7396) continue;
-                            class31 = (Class73.aClass219_4782.method1601(46, (class318_sub1_sub3_sub3.anIntArray10259[i_344_])));
+                            class31 = (Class73.hitmarkTypeList.method1601(46, (class318_sub1_sub3_sub3.anIntArray10259[i_344_])));
                             i_347_ = class31.anInt434;
                         } else if (i_345_ < 0) continue;
                         int i_348_ = (class318_sub1_sub3_sub3.anIntArray10304[i_344_]);
                         Class31 class31_349_ = null;
-                        if (i_348_ >= 0) class31_349_ = Class73.aClass219_4782.method1601(46, i_348_);
+                        if (i_348_ >= 0) class31_349_ = Class73.hitmarkTypeList.method1601(46, i_348_);
                         if (-i_347_ + i_345_ <= Class367_Sub11.anInt7396) {
                             int i_350_ = (class318_sub1_sub3_sub3.anIntArray10303[i_344_]);
                             if (i_350_ >= 0) {
@@ -3351,7 +3351,7 @@ final class ha_Sub2 extends ha {
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_434_ >= 2048) class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_434_, -6008)).aNpc_6859);
             else class318_sub1_sub3_sub3 = Class294.aPlayerArray5058[i_434_];
-            int i_435_ = Class268.anIntArray3432[i_433_];
+            int i_435_ = FloorOverlayTypeList.anIntArray3432[i_433_];
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_436_;
             if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_435_, -6008)).aNpc_6859);
             else class318_sub1_sub3_sub3_436_ = Class294.aPlayerArray5058[i_435_];

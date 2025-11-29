@@ -37,7 +37,7 @@ final class Class64_Sub3 extends Class64 {
     private boolean aBoolean5555 = true;
     private int anInt5556;
     private int anInt5557;
-    static Class261 aClass261_5558;
+    static BASTypeList basTypeList; // aClass261_5558
     private short aShort5559;
     static int anInt5560;
     static int anInt5561;
@@ -447,7 +447,7 @@ final class Class64_Sub3 extends Class64 {
     }
 
     public static void method681(int i) {
-        aClass261_5558 = null;
+        basTypeList = null;
         if (i <= 75) aString5600 = null;
         aString5600 = null;
     }
@@ -560,30 +560,30 @@ final class Class64_Sub3 extends Class64 {
             Class318_Sub2.anIntArray6393[0] = i_128_;
             IOException_Sub1.anIntArray91[0] = i_129_;
             Class318_Sub2.anIntArray6393[1] = i_131_;
-            Class244.anIntArray4623[0] = i_130_;
+            Js5TextureSource.anIntArray4623[0] = i_130_;
             IOException_Sub1.anIntArray91[1] = i_129_;
             Class318_Sub2.anIntArray6393[2] = i_128_;
             if (i != 1566382404) method621();
-            Class244.anIntArray4623[1] = i_130_;
+            Js5TextureSource.anIntArray4623[1] = i_130_;
             IOException_Sub1.anIntArray91[2] = i_132_;
-            Class244.anIntArray4623[2] = i_130_;
+            Js5TextureSource.anIntArray4623[2] = i_130_;
             Class318_Sub2.anIntArray6393[3] = i_131_;
             IOException_Sub1.anIntArray91[3] = i_132_;
             Class318_Sub2.anIntArray6393[4] = i_128_;
-            Class244.anIntArray4623[3] = i_130_;
+            Js5TextureSource.anIntArray4623[3] = i_130_;
             IOException_Sub1.anIntArray91[4] = i_129_;
-            Class244.anIntArray4623[4] = i_133_;
+            Js5TextureSource.anIntArray4623[4] = i_133_;
             Class318_Sub2.anIntArray6393[5] = i_131_;
             IOException_Sub1.anIntArray91[5] = i_129_;
-            Class244.anIntArray4623[5] = i_133_;
+            Js5TextureSource.anIntArray4623[5] = i_133_;
             Class318_Sub2.anIntArray6393[6] = i_128_;
             IOException_Sub1.anIntArray91[6] = i_132_;
             Class318_Sub2.anIntArray6393[7] = i_131_;
-            Class244.anIntArray4623[6] = i_133_;
+            Js5TextureSource.anIntArray4623[6] = i_133_;
             IOException_Sub1.anIntArray91[7] = i_132_;
-            Class244.anIntArray4623[7] = i_133_;
+            Js5TextureSource.anIntArray4623[7] = i_133_;
             for (int i_134_ = 0; i_134_ < 8; i_134_++) {
-                float f_135_ = (float) Class244.anIntArray4623[i_134_];
+                float f_135_ = (float) Js5TextureSource.anIntArray4623[i_134_];
                 float f_136_ = (float) IOException_Sub1.anIntArray91[i_134_];
                 float f_137_ = (float) Class318_Sub2.anIntArray6393[i_134_];
                 float f_138_ = (Class286_Sub8.aFloat6304 * f_135_ + (f_137_ * Class318_Sub9_Sub1.aFloat8784 + Class320.aFloat3994 * f_136_) + f_114_);
@@ -886,7 +886,7 @@ final class Class64_Sub3 extends Class64 {
                 for (int i_220_ = 0; i_220_ < anInt5632; i_220_++)
                     class64_sub3_211_.aShortArray5580[i_220_] = aShortArray5580[i_220_];
             } else class64_sub3_211_.aShortArray5580 = aShortArray5580;
-            if (Class278.method2075(i, -128, anInt5556)) {
+            if (NPCTypeList.method2075(i, -128, anInt5556)) {
                 if (class64_sub3_213_.aByteArray5542 == null || (class64_sub3_213_.aByteArray5542.length < anInt5632)) class64_sub3_211_.aByteArray5542 = class64_sub3_213_.aByteArray5542 = new byte[anInt5632];
                 else class64_sub3_211_.aByteArray5542 = class64_sub3_213_.aByteArray5542;
                 for (int i_221_ = 0; anInt5632 > i_221_; i_221_++)
@@ -1010,7 +1010,7 @@ final class Class64_Sub3 extends Class64 {
                 for (int i_231_ = 0; anInt5632 > i_231_; i_231_++)
                     class64_sub3_211_.aShortArray5601[i_231_] = aShortArray5601[i_231_];
             } else class64_sub3_211_.aShortArray5601 = aShortArray5601;
-            if (Class219.method1599((byte) -113, i, anInt5556)) {
+            if (HitmarkTypeList.method1599((byte) -113, i, anInt5556)) {
                 if (class64_sub3_213_.aClass48Array5596 != null && (class64_sub3_213_.aClass48Array5596.length >= anInt5536)) {
                     class64_sub3_211_.aClass48Array5596 = class64_sub3_213_.aClass48Array5596;
                     for (int i_232_ = 0; i_232_ < anInt5536; i_232_++)
@@ -1685,7 +1685,7 @@ final class Class64_Sub3 extends Class64 {
 
     static final void method689(byte i, int i_377_) {
         Class48.anInt859 = -1;
-        Class244.anInt4609 = -1;
+        Js5TextureSource.anInt4609 = -1;
         if (i != -59) anInt5584 = 77;
         anInt5577++;
         Class348_Sub36.anInt6992 = i_377_;
@@ -1721,7 +1721,7 @@ final class Class64_Sub3 extends Class64 {
                         anIntArray5593 = null;
                     }
                 }
-                if (anIntArray5644 != null && !Class153.method1221(-3157, anInt5648, anInt5556)) {
+                if (anIntArray5644 != null && !MapElementTypeList.method1221(-3157, anInt5648, anInt5556)) {
                     if (aClass123_5605 == null || (aClass123_5605.anInterface2_1811 != null)) {
                         if (!aBoolean5527) method692((byte) -123);
                         anIntArray5644 = null;

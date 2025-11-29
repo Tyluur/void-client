@@ -159,7 +159,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     var_ha.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0);
                     var_ha.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884].getRGB(), 0);
                     var_ha.aa(i_16_ - 150, 2 + i_17_, Class348.anInt4290 * 3, 30, Class135.aColorArray1928[Class222.anInt2884].getRGB(), 0);
-                    Class262.aFontRenderer_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(Class348_Sub33.anInt6967, i + 551), -1, i_15_ + i_17_);
+                    Class262.aFontRenderer_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(Class348_Sub33.language, i + 551), -1, i_15_ + i_17_);
                 } else {
                     int i_18_ = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
                     int i_19_ = ((int) ((float) i_13_ / Class75.aFloat1247) + Class245.anInt3170);
@@ -168,7 +168,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     Class368.anInt4509 = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
                     int i_21_ = (Class245.anInt3170 + -(int) ((float) i_13_ / Class75.aFloat1247));
                     Class182.anInt2446 = (int) ((float) (2 * i_13_) / Class75.aFloat1247);
-                    Class25.anInt370 = (int) ((float) (i_12_ * 2) / Class75.aFloat1247);
+                    SkyBoxSphereTypeList.anInt370 = (int) ((float) (i_12_ * 2) / Class75.aFloat1247);
                     Class75.method751(i_18_ + Class75.anInt1266, i_19_ + Class75.anInt1263, i_20_ - -Class75.anInt1266, Class75.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1);
                     Class75.method748(var_ha);
                     if (i != -7) method2462(63, -7, -14);
@@ -203,11 +203,11 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
     private final Class64 method2465(ha var_ha, int i, int i_26_, byte i_27_) {
         anInt10353++;
         if (i_27_ != -82) return null;
-        Class368 class368 = Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 122, i);
+        Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 122, i);
         s var_s = Class348_Sub1_Sub1.aSArray8801[this.plane];
         s var_s_28_ = (this.aByte6376 < 3 ? (Class348_Sub1_Sub1.aSArray8801[1 + this.aByte6376]) : null);
-        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_ha, anInt10350, this.x, -129, Class10.aClass87_191, var_s_28_, this.y, var_s);
-        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_ha, -1, this.x, -129, Class10.aClass87_191, var_s_28_, this.y, var_s);
+        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_ha, anInt10350, this.x, -129, Class10.seqTypeList, var_s_28_, this.y, var_s);
+        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_ha, -1, this.x, -129, Class10.seqTypeList, var_s_28_, this.y, var_s);
     }
 
     final void method2466(boolean bool) {
@@ -307,11 +307,11 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         anInt10355 = i;
         anInt10334 = i_45_;
         this.anInt10349 = i_35_ + i_34_;
-        Class368 class368 = Class348_Sub40_Sub18.aClass319_9245.method2543((byte) 57, anInt10355);
+        Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 57, anInt10355);
         int i_46_ = class368.anInt4503;
         if (i_46_ == -1) this.aBoolean10345 = true;
         else {
-            aClass17_10332 = Class10.aClass87_191.method835(i_46_, 7);
+            aClass17_10332 = Class10.seqTypeList.method835(i_46_, 7);
             this.aBoolean10345 = false;
         }
         if (this.anInt10349 == i_35_) Class287.method2178(this, anInt10335, aClass17_10332, -99);

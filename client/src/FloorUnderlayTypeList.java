@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class183 {
+final class FloorUnderlayTypeList {
     static int anInt2457;
     private final Class60 aClass60_2458 = new Class60(128);
     static int anInt2459;
@@ -123,7 +123,8 @@ final class Class183 {
         if (i != 32841) anInt2464 = 86;
     }
 
-    Class183(Class230 class230, int i, Index index) {
+    // Class183
+    FloorUnderlayTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_2461 = index;
             aIndex_2461.method407(0, 1);

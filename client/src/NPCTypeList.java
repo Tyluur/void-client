@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class278 {
+final class NPCTypeList {
     Index aIndex_3576;
     private Class60 aClass60_3577 = new Class60(64);
     Class230 aClass230_3578;
@@ -109,7 +109,7 @@ final class Class278 {
         }
         NPCDefinition = new NPCDefinition();
         NPCDefinition.anInt1344 = i;
-        NPCDefinition.aClass278_1348 = this;
+        NPCDefinition.aNPCTypeList_1348 = this;
         if (is != null) NPCDefinition.method798(111, new Class348_Sub49(is));
         NPCDefinition.method799(-117);
         synchronized (aClass60_3577) {
@@ -133,7 +133,8 @@ final class Class278 {
         if (i <= 122) method2075(-125, -46, 9);
     }
 
-    Class278(Class230 class230, int i, boolean bool, Index index, Index index_7_) {
+    // Class278
+    NPCTypeList(Class230 class230, int i, boolean bool, Index index, Index index_7_) {
         do {
             try {
                 this.aBoolean3583 = bool;

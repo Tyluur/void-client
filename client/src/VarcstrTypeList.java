@@ -7,7 +7,7 @@ import jagex3.jagmisc.jagmisc;
 import java.io.File;
 import java.io.FileOutputStream;
 
-final class Class82 {
+final class VarcstrTypeList {
     static Index QUICK_CHAT_MENUS;
     static int anInt1435;
     private final Index aIndex_1436;
@@ -58,11 +58,11 @@ final class Class82 {
                         break;
                     }
                     if (string.equals("heap")) {
-                        Applet_Sub1.method94(("Heap: " + Class226.anInt2964 + "MB"), 69);
+                        Applet_Sub1.method94(("Heap: " + QuickChatCatTypeList.anInt2964 + "MB"), 69);
                         break;
                     }
                 } catch (Exception exception) {
-                    Applet_Sub1.method94((Class274.aClass274_3485.method2063(Class348_Sub33.anInt6967, 544)), -99);
+                    Applet_Sub1.method94((Class274.aClass274_3485.method2063(Class348_Sub33.language, 544)), -99);
                     break;
                 }
                 if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271 || Class192.rights >= 2) {
@@ -147,19 +147,19 @@ final class Class82 {
                             break;
                         }
                         if (string.equalsIgnoreCase("clientjs5drop")) {
-                            Class348_Sub4.aClass248_6601.method1901(-83);
+                            SystemInfo.aClass248_6601.method1901(-83);
                             Applet_Sub1.method94("Dropped client js5 net queue", -116);
                             break;
                         }
                         if (string.equalsIgnoreCase("serverjs5drop")) {
-                            Class348_Sub4.aClass248_6601.method1905(0);
+                            SystemInfo.aClass248_6601.method1905(0);
                             Applet_Sub1.method94("Dropped server js5 net queue", -100);
                             break;
                         }
                         if (string.equalsIgnoreCase("breakcon")) {
                             Class348_Sub23_Sub1.aClass297_8992.method2239(-95);
                             Class348_Sub40_Sub8.aClass238_9165.method1702(i + 123);
-                            Class348_Sub4.aClass248_6601.method1898(true);
+                            SystemInfo.aClass248_6601.method1898(true);
                             Applet_Sub1.method94("Breaking new connections for 5 seconds", i + -4);
                             break;
                         }
@@ -266,7 +266,7 @@ final class Class82 {
                             if (string.length() < 6) Applet_Sub1.method94("Invalid buildarea value", i + -36);
                             else {
                                 int i_6_ = (Class348_Sub41.parseInt(true, string.substring(6)));
-                                if (i_6_ < 0 || (Class348.method2710(-126, Class226.anInt2964) < i_6_)) Applet_Sub1.method94("Invalid buildarea value", 53);
+                                if (i_6_ < 0 || (Class348.method2710(-126, QuickChatCatTypeList.anInt2964) < i_6_)) Applet_Sub1.method94("Invalid buildarea value", 53);
                                 else {
                                     Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub6_7226), i_6_);
                                     Class14_Sub2.method243(37);
@@ -341,8 +341,8 @@ final class Class82 {
                         if (string.equalsIgnoreCase("resetminimap")) {
                             Class21.SPRITES.method405(i ^ ~0x4e);
                             Class21.SPRITES.method412((byte) 127);
-                            Class2.aClass141_117.method1175((byte) 125);
-                            Class348_Sub23_Sub2.aClass153_9031.method1219(7851);
+                            Class2.msiTypeList.method1175((byte) 125);
+                            Class348_Sub23_Sub2.mapElementTypeList.method1219(7851);
                             Class50_Sub2.method464(-1);
                             Applet_Sub1.method94("Minimap reset", 70);
                             break;
@@ -365,7 +365,7 @@ final class Class82 {
                         if (string.startsWith("cachespace")) {
                             Applet_Sub1.method94(("I(s): " + Class351.aClass60_4327.method581(-18529) + "/" + Class351.aClass60_4327.method577(-4)), -101);
                             Applet_Sub1.method94(("I(m): " + Class358.aClass60_4417.method581(-18529) + "/" + Class358.aClass60_4417.method577(i ^ 0x4d)), 127);
-                            Applet_Sub1.method94(("O(s): " + Exception_Sub1.aClass255_112.aClass175_3288.method1350((byte) 126) + "/" + Exception_Sub1.aClass255_112.aClass175_3288.method1339(100)), i + 203);
+                            Applet_Sub1.method94(("O(s): " + Exception_Sub1.itemTypeList.aClass175_3288.method1350((byte) 126) + "/" + Exception_Sub1.itemTypeList.aClass175_3288.method1339(100)), i + 203);
                             break;
                         }
                         if (string.equalsIgnoreCase("getcamerapos")) {
@@ -476,12 +476,12 @@ final class Class82 {
                         }
                         if (string.startsWith("getclientvarpbit")) {
                             int i_15_ = Integer.parseInt(string.substring(17));
-                            Applet_Sub1.method94("varpbit=" + Class318_Sub1_Sub3_Sub3.aClass170_10209.method62(i_15_, i ^ 0xffb1), i + 198);
+                            Applet_Sub1.method94("varpbit=" + Class318_Sub1_Sub3_Sub3.timedVarDomain.method62(i_15_, i ^ 0xffb1), i + 198);
                             break;
                         }
                         if (string.startsWith("getclientvarp")) {
                             int i_16_ = Integer.parseInt(string.substring(14));
-                            Applet_Sub1.method94("varp=" + Class318_Sub1_Sub3_Sub3.aClass170_10209.method61(i_16_, (byte) -16), -68);
+                            Applet_Sub1.method94("varp=" + Class318_Sub1_Sub3_Sub3.timedVarDomain.method61(i_16_, (byte) -16), -68);
                             break;
                         }
                         if (string.startsWith("directlogin")) {
@@ -618,7 +618,7 @@ final class Class82 {
                                 Applet_Sub1.method94("Failed to read file", 119);
                                 break;
                             }
-                            String[] strings = (Class348_Sub40_Sub23.method3113('\n', true, (Class261.method1981(Class239_Sub17.method1795(is, true), (byte) -89, '\r', ""))));
+                            String[] strings = (Class348_Sub40_Sub23.method3113('\n', true, (BASTypeList.method1981(Class239_Sub17.method1795(is, true), (byte) -89, '\r', ""))));
                             Class348_Sub42_Sub6.method3189(0, strings);
                         }
                         if (string.startsWith("zoom ")) {
@@ -640,12 +640,12 @@ final class Class82 {
                             break;
                         }
                     } catch (Exception exception) {
-                        Applet_Sub1.method94(Class274.aClass274_3485.method2063(Class348_Sub33.anInt6967, 544), -92);
+                        Applet_Sub1.method94(Class274.aClass274_3485.method2063(Class348_Sub33.language, 544), -92);
                         break;
                     }
                 }
                 if (Class240.anInt4674 == 10) break;
-                Applet_Sub1.method94(Class274.aClass274_3486.method2063(Class348_Sub33.anInt6967, 544) + string, 57);
+                Applet_Sub1.method94(Class274.aClass274_3486.method2063(Class348_Sub33.language, 544) + string, 57);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("lba.B(" + (string != null ? "{...}" : "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'));
             }
@@ -696,7 +696,8 @@ final class Class82 {
         }
     }
 
-    Class82(Class230 class230, int i, Index index) {
+    // Class82
+    VarcstrTypeList(Class230 class230, int i, Index index) {
         new Class60(64);
         try {
             aIndex_1436 = index;

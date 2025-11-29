@@ -100,7 +100,7 @@ final class Class72 {
             aSprite_1221 = null;
             return false;
         }
-        int i_18_ = Class33.method340(anInt1217, (byte) 108);
+        int i_18_ = EnumTypeList.method340(anInt1217, (byte) 108);
         if (i_18_ > i_13_) i_18_ = Class348_Sub40_Sub1.method3051(i_13_, 4096);
         if (i_18_ > 512) i_18_ = 512;
         if (i_18_ != anInt1220) anInt1220 = i_18_;

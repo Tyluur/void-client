@@ -47,7 +47,7 @@ final class Class348_Sub24 extends Class348 {
                     }
                 } else if (Class101_Sub2.aLong5745 <= Class62.method599(-121)) Class239_Sub4.aClass348_Sub26_5881 = Class76.aClass169_1286.method1302(-5255, (Class3.aClass161_125.aString2147));
                 Class348_Sub45 class348_sub45 = ((Class348_Sub45) Class318_Sub1_Sub3.aClass262_8744.method1995(4));
-                if (class348_sub45 != null || (Class355.aLong4367 < -2000L + Class62.method599(-97))) {
+                if (class348_sub45 != null || (QuickChatPhraseTypeList.aLong4367 < -2000L + Class62.method599(-97))) {
                     Class348_Sub47 class348_sub47 = null;
                     int i_2_ = 0;
                     for (Class348_Sub45 class348_sub45_3_ = ((Class348_Sub45) r_Sub1.aClass262_10479.method1995(4)); class348_sub45_3_ != null; class348_sub45_3_ = (Class348_Sub45) r_Sub1.aClass262_10479.method1990((byte) 79)) {
@@ -72,7 +72,7 @@ final class Class348_Sub24 extends Class348 {
                             s_Sub2.anInt8270 = i_5_;
                             int i_7_ = i_4_ - Class322.anInt4032;
                             Class322.anInt4032 = i_4_;
-                            int i_8_ = (int) ((class348_sub45_3_.method3312((byte) -107) + -Class355.aLong4367) / 20L);
+                            int i_8_ = (int) ((class348_sub45_3_.method3312((byte) -107) + -QuickChatPhraseTypeList.aLong4367) / 20L);
                             if (i_8_ >= 8 || i_6_ < -32 || i_6_ > 31 || i_7_ < -32 || i_7_ > 31) {
                                 if (i_8_ < 32 && i_6_ >= -128 && i_6_ <= 127 && i_7_ >= -128 && i_7_ <= 127) {
                                     i_6_ += 128;
@@ -93,7 +93,7 @@ final class Class348_Sub24 extends Class348 {
                                 i_7_ += 32;
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, (i_7_ + (i_6_ << 6) + (i_8_ << 12)));
                             }
-                            Class355.aLong4367 = class348_sub45_3_.method3312((byte) -109);
+                            QuickChatPhraseTypeList.aLong4367 = class348_sub45_3_.method3312((byte) -109);
                         }
                     }
                     if (class348_sub47 != null) {
@@ -182,7 +182,7 @@ final class Class348_Sub24 extends Class348 {
                         Class34.method349(i + -6692);
                         Class348_Sub40_Sub38.method3150(true);
                         Class186.method1397(0);
-                        for (int i_15_ = Class318_Sub1_Sub3_Sub3.aClass170_10209.method1305((byte) -126, true); i_15_ != -1; i_15_ = Class318_Sub1_Sub3_Sub3.aClass170_10209.method1305((byte) -128, false)) {
+                        for (int i_15_ = Class318_Sub1_Sub3_Sub3.timedVarDomain.method1305((byte) -126, true); i_15_ != -1; i_15_ = Class318_Sub1_Sub3_Sub3.timedVarDomain.method1305((byte) -128, false)) {
                             Class239_Sub11.method1767(true, i_15_);
                             Class327.anIntArray4096[Class139.method1166(31, Class287.anInt3695++)] = i_15_;
                         }
@@ -220,7 +220,7 @@ final class Class348_Sub24 extends Class348 {
                                     class46.anInt795 = 0;
                                     class46.anInt841 = 0;
                                     class46.anInt730 = 1;
-                                    Class17 class17 = ((class46.anInt699 == -1) ? null : (Class10.aClass87_191.method835((class46.anInt699), 7)));
+                                    Class17 class17 = ((class46.anInt699 == -1) ? null : (Class10.seqTypeList.method835((class46.anInt699), 7)));
                                     if (class17 != null) Class264.method2017((class46.anInt795), class17, 30);
                                     Class251.method1916(-9343, class46);
                                 }
@@ -370,7 +370,7 @@ final class Class348_Sub24 extends Class348 {
                             } else i_30_ = 0;
                             Class361.method3502((Class132.aPlayer_1907.anIntArray10317[0]) + Class90.regionTileY, i ^ 0x2caa, i_30_, (Class132.aPlayer_1907.anIntArray10320[0]) + za_Sub2.regionTileX);
                         }
-                        Class261.method1987(-120);
+                        BASTypeList.method1987(-120);
                         int i_31_ = 0;
                         if (i == 11432) {
                             for (/**/; i_31_ < 5; i_31_++)
@@ -378,8 +378,8 @@ final class Class348_Sub24 extends Class348 {
                             if (Class184.aBoolean2469 && (-60000L + Class62.method599(-84) > Class34.aLong482)) Class318_Sub1_Sub2.method2405(i + -11313);
                             for (Class318_Sub9_Sub1 class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1872(i + -11424)); class318_sub9_sub1 != null; class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1878((byte) -105))) {
                                 if ((Class62.method599(i ^ ~0x2ce9) / 1000L + -5L) > (long) class318_sub9_sub1.anInt8787) {
-                                    if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (byte) -128, 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3502.method2063(Class348_Sub33.anInt6967, 544))), "", "");
-                                    if (class318_sub9_sub1.aShort8786 == 0) Class286_Sub2.method2144("", 5, (byte) -105, 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3503.method2063(Class348_Sub33.anInt6967, 544))), "", "");
+                                    if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (byte) -128, 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3502.method2063(Class348_Sub33.language, 544))), "", "");
+                                    if (class318_sub9_sub1.aShort8786 == 0) Class286_Sub2.method2144("", 5, (byte) -105, 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3503.method2063(Class348_Sub33.language, 544))), "", "");
                                     class318_sub9_sub1.method2373(false);
                                 }
                             }

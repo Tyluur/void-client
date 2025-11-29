@@ -12,7 +12,7 @@ abstract class Class241 {
     static final long method1857(byte i) {
         anInt3148++;
         if (i != -45) return -58L;
-        return Class348_Sub8.aClass241_6660.method1862(-18931);
+        return Class348_Sub8.tickScheduler.method1862(-18931);
     }
 
     abstract long method1858(int i);

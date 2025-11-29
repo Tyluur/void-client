@@ -18,10 +18,10 @@ final class Class239_Sub11 extends Class239 {
     static final void method1767(boolean bool, int i) {
         anInt5953++;
         Class101_Sub3.method947((byte) 41);
-        int i_0_ = (Class269.aClass217_3453.method1588(-51, i).anInt2125);
+        int i_0_ = (Class269.varPlayerTypeList.method1588(-51, i).anInt2125);
         if (i_0_ != 0) {
             if (bool != true) method1769(-43);
-            int i_1_ = (Class318_Sub1_Sub3_Sub3.aClass170_10209.anIntArray5063[i]);
+            int i_1_ = (Class318_Sub1_Sub3_Sub3.timedVarDomain.anIntArray5063[i]);
             if (i_0_ == 5) Class318_Sub1_Sub5.anInt8770 = i_1_;
             if (i_0_ == 6) Class348_Sub40_Sub31.anInt9408 = i_1_;
         }
@@ -89,7 +89,7 @@ final class Class239_Sub11 extends Class239 {
             Class267.aClass267_3416.method2025(new Class292(Class78.GRAPHICS), false);
             Class267.aClass267_3417.method2025(new Class292(Class348_Sub16_Sub3.VARBITS), false);
             Class267.aClass267_3418.method2025(new Class292(Class130.QUICK_CHAT_MESSAGES), false);
-            Class267.aClass267_3419.method2025(new Class292(Class82.QUICK_CHAT_MENUS), false);
+            Class267.aClass267_3419.method2025(new Class292(VarcstrTypeList.QUICK_CHAT_MENUS), false);
             Class267.aClass267_3420.method2025(new Class292(Class239.PARTICLES), false);
             Class267.aClass267_3421.method2025(new Class292(Class262.BILLBOARDS), false);
             Class267.aClass267_3422.method2025(new Class73((Class16.HUFFMAN), "huffman"), false);

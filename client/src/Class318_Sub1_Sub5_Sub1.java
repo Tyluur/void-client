@@ -170,7 +170,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
     private final Class2 method2491(byte i, boolean bool, int i_5_, ha var_ha) {
         if (i != -51) aClass262_10125 = null;
         anInt10142++;
-        Class51 class51 = Class348_Sub40_Sub12.aClass263_9195.method2005(0, 0xffff & aShort10129);
+        Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, 0xffff & aShort10129);
         s var_s;
         s var_s_6_;
         if (aBoolean10138) {

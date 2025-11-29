@@ -15,10 +15,10 @@ final class Class348_Sub37 extends Class348 {
             byte[] is = class59_sub1_sub2.method562(128, 128, (byte) 121, 16);
             Class337.anObject4177 = Class179.method1357(is, false, (byte) 81);
         }
-        if (Class319.anObject3985 == null) {
+        if (GfxTypeList.anObject3985 == null) {
             Class59_Sub2_Sub1 class59_sub2_sub1 = new Class59_Sub2_Sub1();
             byte[] is = class59_sub2_sub1.method567(128, (byte) 111, 16, 128);
-            Class319.anObject3985 = Class179.method1357(is, false, (byte) 103);
+            GfxTypeList.anObject3985 = Class179.method1357(is, false, (byte) 103);
         }
         if (i != 8) method3031(-39, null);
         Class188 class188 = var_ha_Sub2.aClass188_7736;

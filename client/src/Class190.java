@@ -165,11 +165,11 @@ final class Class190 {
         this.aFloat2536 = 1.2F;
         this.aClass299_2541 = Class348_Sub42_Sub10.aClass299_9571;
         this.anInt2546 = 0;
-        this.anInt2549 = Class268.anInt3444;
+        this.anInt2549 = FloorOverlayTypeList.anInt3444;
         this.anInt2548 = -60;
         this.anInt2538 = -50;
         this.aFloat2544 = 0.69921875F;
-        this.anInt2540 = Class268.anInt3439;
+        this.anInt2540 = FloorOverlayTypeList.anInt3439;
         this.aFloat2547 = 1.1523438F;
     }
 
@@ -180,13 +180,13 @@ final class Class190 {
             if ((0x2 & i) != 0) class348_sub49.readUnsignedShort(842397944);
             if ((i & 0x4) != 0) class348_sub49.readUnsignedShort(842397944);
             if ((0x8 & i) != 0) class348_sub49.readUnsignedShort(842397944);
-            this.anInt2540 = Class268.anInt3439;
+            this.anInt2540 = FloorOverlayTypeList.anInt3439;
             this.aFloat2547 = 1.1523438F;
             this.aFloat2544 = 0.69921875F;
             this.aFloat2536 = 1.2F;
         } else {
             if ((i & 0x1) != 0) this.anInt2540 = class348_sub49.readInt((byte) -126);
-            else this.anInt2540 = Class268.anInt3439;
+            else this.anInt2540 = FloorOverlayTypeList.anInt3439;
             if ((0x2 & i) != 0) this.aFloat2547 = (float) class348_sub49.readUnsignedShort(842397944) / 256.0F;
             else this.aFloat2547 = 1.1523438F;
             if ((i & 0x4) == 0) this.aFloat2544 = 0.69921875F;
@@ -203,7 +203,7 @@ final class Class190 {
             this.anInt2548 = class348_sub49.readShort(13638);
             this.anInt2535 = class348_sub49.readShort(13638);
         }
-        if ((0x20 & i) == 0) this.anInt2549 = Class268.anInt3444;
+        if ((0x20 & i) == 0) this.anInt2549 = FloorOverlayTypeList.anInt3444;
         else this.anInt2549 = class348_sub49.readInt((byte) -126);
         if ((i & 0x40) != 0) this.anInt2546 = class348_sub49.readUnsignedShort(842397944);
         else this.anInt2546 = 0;

@@ -47,7 +47,7 @@ final class Class348_Sub13 extends Class348 {
             Class64 class64 = null;
             int i_15_ = i_13_;
             Class225 class225 = null;
-            if (i != -1) class225 = Class64_Sub3.aClass261_5558.method1983(i, 32);
+            if (i != -1) class225 = Class64_Sub3.basTypeList.method1983(i, 32);
             int[] is = this.anIntArray6757;
             if (class225 != null && class225.anIntArray2906 != null) {
                 is = new int[class225.anIntArray2906.length];
@@ -70,7 +70,7 @@ final class Class348_Sub13 extends Class348 {
                 i_22_ = class17.anIntArray237[i_10_];
                 i_15_ |= 0x20;
                 int i_26_ = i_22_ >>> 16;
-                class348_sub42_sub17 = Class10.aClass87_191.method839(i_26_, i_14_ + 4);
+                class348_sub42_sub17 = Class10.seqTypeList.method839(i_26_, i_14_ + 4);
                 i_22_ &= 0xffff;
                 if (class348_sub42_sub17 != null) {
                     bool_19_ |= class348_sub42_sub17.method3272(i_22_, 0);
@@ -84,7 +84,7 @@ final class Class348_Sub13 extends Class348 {
                     int i_27_ = i_23_ >>> 16;
                     i_23_ &= 0xffff;
                     if (i_27_ == i_26_) class348_sub42_sub17_25_ = class348_sub42_sub17;
-                    else class348_sub42_sub17_25_ = Class10.aClass87_191.method839(i_23_ >>> 16, 3);
+                    else class348_sub42_sub17_25_ = Class10.seqTypeList.method839(i_23_ >>> 16, 3);
                     if (class348_sub42_sub17_25_ != null) {
                         bool_19_ |= class348_sub42_sub17_25_.method3272(i_23_, 0);
                         bool_18_ |= class348_sub42_sub17_25_.method3271(i_23_, 14);
@@ -103,12 +103,12 @@ final class Class348_Sub13 extends Class348 {
                 int i_28_ = i_15_;
                 boolean bool_29_ = false;
                 for (int i_30_ = 0; is.length > i_30_; i_30_++) {
-                    if (is[i_30_] != -1 && !Exception_Sub1.aClass255_112.method1940(-91, is[i_30_]).method1565(bool, -1)) bool_29_ = true;
+                    if (is[i_30_] != -1 && !Exception_Sub1.itemTypeList.method1940(-91, is[i_30_]).method1565(bool, -1)) bool_29_ = true;
                 }
                 if (bool_29_) return null;
                 Class124[] class124s = new Class124[is.length];
                 for (int i_31_ = 0; i_31_ < is.length; i_31_++) {
-                    if (is[i_31_] != -1) class124s[i_31_] = Exception_Sub1.aClass255_112.method1940(Class348_Sub21.method2955(i_14_, -112), is[i_31_]).method1558(bool, false);
+                    if (is[i_31_] != -1) class124s[i_31_] = Exception_Sub1.itemTypeList.method1940(Class348_Sub21.method2955(i_14_, -112), is[i_31_]).method1558(bool, false);
                 }
                 if (class225 != null && class225.anIntArrayArray2939 != null) {
                     for (int i_32_ = 0; (class225.anIntArrayArray2939.length > i_32_); i_32_++) {

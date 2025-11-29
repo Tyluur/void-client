@@ -48,7 +48,7 @@ final class Class223 {
                     NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);
                     if (NPCDefinition.anIntArray1377 != null) {
                         class348_sub9.aBoolean6684 = true;
-                        NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), i ^ ~0x3a5d4149);
+                        NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.timedVarDomain), i ^ ~0x3a5d4149);
                     }
                     if (NPCDefinition != null) {
                         class348_sub9.anInt6698 = (i_4_ + NPCDefinition.size << 9);

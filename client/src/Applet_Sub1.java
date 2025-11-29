@@ -133,9 +133,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     private final void method84(int i) {
         anInt8++;
         long l = Class62.method599(i + -88);
-        long l_1_ = Class328_Sub2_Sub1.aLongArray8800[Class244.anInt4613];
-        Class328_Sub2_Sub1.aLongArray8800[Class244.anInt4613] = l;
-        Class244.anInt4613 = 0x1f & 1 + Class244.anInt4613;
+        long l_1_ = Class328_Sub2_Sub1.aLongArray8800[Js5TextureSource.anInt4613];
+        Class328_Sub2_Sub1.aLongArray8800[Js5TextureSource.anInt4613] = l;
+        Js5TextureSource.anInt4613 = 0x1f & 1 + Js5TextureSource.anInt4613;
         if (l_1_ != 0L && l > l_1_) {
             /* empty */
         }
@@ -151,7 +151,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         paint(graphics);
     }
 
-    static final void method85(int i, Index index) {
+    // method85
+    static final void setBillboardJs5(int i, Index index) {
         anInt32++;
         Class369_Sub3.aIndex_8601 = index;
         if (i != 0) anInt37 = 101;
@@ -406,9 +407,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
                 Class127_Sub1.method1119(false);
                 method87((byte) -97);
                 method92(28740);
-                Class348_Sub8.aClass241_6660 = Class229.method1631(false);
+                Class348_Sub8.tickScheduler = Class229.method1631(false);
                 while (Class113.aLong1739 == 0L || (Class62.method599(-124) < Class113.aLong1739)) {
-                    Class101_Sub2.anInt5744 = Class348_Sub8.aClass241_6660.method1861(0, Class73.aLong4783);
+                    Class101_Sub2.anInt5744 = Class348_Sub8.tickScheduler.method1861(0, Class73.aLong4783);
                     for (int i = 0; Class101_Sub2.anInt5744 > i; i++)
                         method84(-1);
                     method88(-119);

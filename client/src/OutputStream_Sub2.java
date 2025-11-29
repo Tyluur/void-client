@@ -60,19 +60,19 @@ final class OutputStream_Sub2 extends OutputStream {
                     if (class348_sub22 != null) {
                         Npc npc = (class348_sub22.aNpc_6859);
                         NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);
-                        if (NPCDefinition.anIntArray1377 != null) NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1);
+                        if (NPCDefinition.anIntArray1377 != null) NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.timedVarDomain), -1);
                         if (NPCDefinition != null) is = NPCDefinition.anIntArray1342;
                     }
                 } else if (Class239_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                     Object object = null;
                     Class51 class51;
-                    if ((class348_sub42_sub12.anInt9608) == 1001) class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
-                    else class51 = (Class348_Sub40_Sub12.aClass263_9195.method2005(0, (int) (0x7fffffffL & (class348_sub42_sub12.aLong9605) >>> 32)));
-                    if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209), (byte) 47);
+                    if ((class348_sub42_sub12.anInt9608) == 1001) class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
+                    else class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) (0x7fffffffL & (class348_sub42_sub12.aLong9605) >>> 32)));
+                    if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47);
                     if (class51 != null) is = class51.anIntArray917;
                 }
-            } else is = (Exception_Sub1.aClass255_112.method1940(-76, class348_sub42_sub12.anInt9599).anIntArray2772);
-        } else is = (Exception_Sub1.aClass255_112.method1940(-115, (int) class348_sub42_sub12.aLong9605).anIntArray2772);
+            } else is = (Exception_Sub1.itemTypeList.method1940(-76, class348_sub42_sub12.anInt9599).anIntArray2772);
+        } else is = (Exception_Sub1.itemTypeList.method1940(-115, (int) class348_sub42_sub12.aLong9605).anIntArray2772);
         if (is != null) string += Class163.method1273(is, true);
         int i = Class369.aFontMetrics_4962.textWidth(string, Class341.aSpriteArray4234, bool);
         if (class348_sub42_sub12.aBoolean9597) i += Class239_Sub24.aSprite_6097.method971() + 4;

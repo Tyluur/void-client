@@ -47,7 +47,7 @@ final class Class282 {
         if (class357 == null) return null;
         Class318_Sub1_Sub2 class318_sub1_sub2 = class357.aClass318_Sub1_Sub2_4408;
         class357.aClass318_Sub1_Sub2_4408 = null;
-        Class183.method1376(class318_sub1_sub2);
+        FloorUnderlayTypeList.method1376(class318_sub1_sub2);
         return class318_sub1_sub2;
     }
 

@@ -96,7 +96,7 @@ final class Class215 {
                         }
                         Class98.aClass348_Sub16_Sub3_1564.method2877(-128);
                         Class98.aClass348_Sub16_Sub3_1564.method2867(i ^ 0x1eaf);
-                        Class141.aClass26_1977 = null;
+                        MSITypeList.aClass26_1977 = null;
                         if (Class124.aIndex_1848 != null) Class348_Sub43.anInt7068 = 2;
                         else Class348_Sub43.anInt7068 = 0;
                         Class286.aClass348_Sub2_3683 = null;
@@ -117,7 +117,7 @@ final class Class215 {
                     Class124.aIndex_1848 = null;
                     Class286.aClass348_Sub2_3683 = null;
                     Class285.aClass348_Sub16_Sub3_4743 = null;
-                    Class141.aClass26_1977 = null;
+                    MSITypeList.aClass26_1977 = null;
                     Class348_Sub43.anInt7068 = 0;
                     break;
                 }

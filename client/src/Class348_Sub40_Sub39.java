@@ -49,7 +49,7 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
         for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-49)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 51))) {
             if (class348_sub42_sub13.anInt9615 > 1) {
                 class348_sub42_sub13.anInt9615 = 0;
-                Class259.aClass60_3301.method582(class348_sub42_sub13, ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063).aLong9600, (byte) -108);
+                VarcTypeList.aClass60_3301.method582(class348_sub42_sub13, ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063).aLong9600, (byte) -108);
                 class348_sub42_sub13.aClass107_9621.method1009(i ^ 0x7dc976c2);
             }
         }

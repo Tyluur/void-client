@@ -18,7 +18,7 @@ final class Class239_Sub14 extends Class239 {
     static Class114 aClass114_5992 = new Class114(17, 4);
     static Class211[] aClass211Array5993;
     static int anInt5994;
-    static Class259 aClass259_5995;
+    static VarcTypeList varcTypeList; // aClass259_5995
 
     final int method1778(int i) {
         if (i != -32350) aClass190_5990 = null;
@@ -56,7 +56,7 @@ final class Class239_Sub14 extends Class239 {
         int i_0_ = 108 % ((-24 - i) / 54);
         aClass251_5989 = null;
         anIntArrayArray5991 = null;
-        aClass259_5995 = null;
+        varcTypeList = null;
         aClass211Array5993 = null;
         aClass190_5990 = null;
     }
@@ -65,12 +65,12 @@ final class Class239_Sub14 extends Class239 {
         anInt5983++;
         if (Class348_Sub31.anInt6923 == -1) return 1;
         if (i != Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350)) {
-            Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3496.method2063(Class348_Sub33.anInt6967, 544), true, i);
+            Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3496.method2063(Class348_Sub33.language, 544), true, i);
             if (i != Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350)) return -1;
         }
         try {
             Dimension dimension = Class305.aCanvas3869.getSize();
-            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3496.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654);
+            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3496.method2063(Class348_Sub33.language, 544), 2, Class348_Sub8.aHa6654);
             Class124 class124 = Class300.method2277(0, aa_Sub3.MODELS, Class348_Sub31.anInt6923, -1);
             long l = Class62.method599(-88);
             Class348_Sub8.aHa6654.la();

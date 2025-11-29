@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class33 {
+final class EnumTypeList {
     static int anInt456;
     static int anInt457;
     private final Index aIndex_458;
@@ -33,7 +33,7 @@ final class Class33 {
         anInt456++;
         if (i_0_ != Class337.anInt4179) {
             if (i_0_ != -1) {
-                Class222 class222 = Class239.aClass166_3147.method1287((byte) -104, i_0_);
+                Class222 class222 = Class239.cursorTypeList.method1287((byte) -104, i_0_);
                 Class207 class207 = class222.method1610((byte) 71);
                 if (class207 == null) i_0_ = -1;
                 else {
@@ -77,7 +77,8 @@ final class Class33 {
         return 1 + i;
     }
 
-    Class33(Class230 class230, int i, Index index) {
+    // Class33
+    EnumTypeList(Class230 class230, int i, Index index) {
         do {
             try {
                 aIndex_458 = index;

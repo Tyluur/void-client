@@ -16,7 +16,7 @@ final class Class371 {
             if (i_1_ > -17) return null;
             if (var_ha_Sub2.aBoolean7793 || Class192.method1436(-58, i_3_) && Class192.method1436(-68, i_0_)) return new Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_2_, i_3_, i_0_, bool, is, i);
             if (var_ha_Sub2.aBoolean7837) return new Class258_Sub3_Sub1(var_ha_Sub2, 34037, i_2_, i_3_, i_0_, bool, is, i);
-            return new Class258_Sub3_Sub1(var_ha_Sub2, i_2_, i_3_, i_0_, Class33.method340(i_3_, (byte) 108), Class33.method340(i_0_, (byte) 108), is, i);
+            return new Class258_Sub3_Sub1(var_ha_Sub2, i_2_, i_3_, i_0_, EnumTypeList.method340(i_3_, (byte) 108), EnumTypeList.method340(i_0_, (byte) 108), is, i);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("fr.B(" + bool + ',' + (is != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ')'));
         }

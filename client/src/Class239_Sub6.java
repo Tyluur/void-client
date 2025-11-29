@@ -9,7 +9,7 @@ final class Class239_Sub6 extends Class239 {
     static int anInt5897;
     static int anInt5898;
     static int anInt5899;
-    static Class355 aClass355_5900;
+    static QuickChatPhraseTypeList quickChatPhraseTypeList; // aClass355_5900
     static int anInt5901;
     static int[] anIntArray5902 = new int[128];
     static int anInt5903;
@@ -37,7 +37,7 @@ final class Class239_Sub6 extends Class239 {
         anInt5897++;
         int i = this.aClass348_Sub51_3136.method3428((byte) -105).method1458(-23688);
         if (i < 96) this.anInt3138 = 0;
-        if (bool != false) aClass355_5900 = null;
+        if (bool != false) quickChatPhraseTypeList = null;
         if (this.anInt3138 > 1 && i < 128) this.anInt3138 = 1;
         if (this.anInt3138 > 2 && i < 192) this.anInt3138 = 2;
         if (this.anInt3138 < 0 || this.anInt3138 > 3) this.anInt3138 = method1710(20014);
@@ -70,8 +70,8 @@ final class Class239_Sub6 extends Class239 {
 
     public static void method1746(int i) {
         anIntArray5902 = null;
-        if (i != -15628) aClass355_5900 = null;
-        aClass355_5900 = null;
+        if (i != -15628) quickChatPhraseTypeList = null;
+        quickChatPhraseTypeList = null;
         anIntArrayArray5894 = null;
     }
 

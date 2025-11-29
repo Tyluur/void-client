@@ -366,7 +366,7 @@ final class Class348_Sub40_Sub16 extends Class348_Sub40 {
         Class97.anInt1548 = -1;
         Class334.anInt4155 = -1;
         anInt9222++;
-        Class259.anInt3306 = 0;
+        VarcTypeList.anInt3306 = 0;
         int i_67_ = -95 % ((i - -46) / 52);
     }
 

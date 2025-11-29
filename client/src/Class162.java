@@ -15,7 +15,7 @@ final class Class162 {
         anInt2152++;
         if (i != 16) aClass74_2157 = null;
         if (Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042.method2093(true);
-        if (Class194.aClass279_2596 != null) Class194.aClass279_2596.method2093(true);
+        if (VarBitTypeListClient.aClass279_2596 != null) VarBitTypeListClient.aClass279_2596.method2093(true);
     }
 
     final Class162 method1266(int i, int i_0_) {

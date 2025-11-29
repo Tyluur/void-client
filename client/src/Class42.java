@@ -34,7 +34,7 @@ final class Class42 {
     private int anInt590;
     int[] anIntArray591;
     private int anInt592;
-    Class153 aClass153_593;
+    MapElementTypeList aMapElementTypeList_593;
     static int anInt594;
     int anInt595;
     int anInt596;
@@ -91,13 +91,13 @@ final class Class42 {
         int i_3_ = bool ? this.anInt605 : this.anInt578;
         if (i != 127) return null;
         int i_4_ = i_3_ | var_ha.anInt4567 << 29;
-        Sprite sprite = (Sprite) this.aClass153_593.aClass60_2089.method583(i_4_, 64);
+        Sprite sprite = (Sprite) this.aMapElementTypeList_593.aClass60_2089.method583(i_4_, 64);
         if (sprite != null) return sprite;
-        if (!this.aClass153_593.aIndex_2087.method421(false, i_3_)) return null;
-        Class207 class207 = Class207.method1521((this.aClass153_593.aIndex_2087), i_3_, 0);
+        if (!this.aMapElementTypeList_593.aIndex_2087.method421(false, i_3_)) return null;
+        Class207 class207 = Class207.method1521((this.aMapElementTypeList_593.aIndex_2087), i_3_, 0);
         if (class207 != null) {
             sprite = var_ha.method3691(class207, true);
-            this.aClass153_593.aClass60_2089.method582(sprite, i_4_, (byte) -111);
+            this.aMapElementTypeList_593.aClass60_2089.method582(sprite, i_4_, (byte) -111);
         }
         return sprite;
     }
@@ -105,13 +105,13 @@ final class Class42 {
     final Sprite method375(ha var_ha, boolean bool) {
         anInt563++;
         if (bool != false) method375(null, true);
-        Sprite sprite = (Sprite) (this.aClass153_593.aClass60_2089.method583(anInt598 | 0x20000 | var_ha.anInt4567 << 29, -75));
+        Sprite sprite = (Sprite) (this.aMapElementTypeList_593.aClass60_2089.method583(anInt598 | 0x20000 | var_ha.anInt4567 << 29, -75));
         if (sprite != null) return sprite;
-        this.aClass153_593.aIndex_2087.method421(bool, anInt598);
-        Class207 class207 = Class207.method1521((this.aClass153_593.aIndex_2087), anInt598, 0);
+        this.aMapElementTypeList_593.aIndex_2087.method421(bool, anInt598);
+        Class207 class207 = Class207.method1521((this.aMapElementTypeList_593.aIndex_2087), anInt598, 0);
         if (class207 != null) {
             sprite = var_ha.method3691(class207, true);
-            this.aClass153_593.aClass60_2089.method582(sprite, var_ha.anInt4567 << 29 | (anInt598 | 0x20000), (byte) -121);
+            this.aMapElementTypeList_593.aClass60_2089.method582(sprite, var_ha.anInt4567 << 29 | (anInt598 | 0x20000), (byte) -121);
         }
         return sprite;
     }
@@ -182,7 +182,7 @@ final class Class42 {
                         } else if (i == 249) {
                             int i_14_ = class348_sub49.readUnsignedByte(255);
                             if (aClass356_588 == null) {
-                                int i_15_ = Class33.method340(i_14_, (byte) 108);
+                                int i_15_ = EnumTypeList.method340(i_14_, (byte) 108);
                                 aClass356_588 = new Class356(i_15_);
                             }
                             for (int i_16_ = 0; (i_16_ < i_14_); i_16_++) {

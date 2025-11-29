@@ -112,7 +112,7 @@ final class Class321 {
                             } else if (i == 249) {
                                 int i_9_ = class348_sub49.readUnsignedByte(255);
                                 if (parameters == null) {
-                                    int i_10_ = (Class33.method340(i_9_, (byte) 108));
+                                    int i_10_ = (EnumTypeList.method340(i_9_, (byte) 108));
                                     parameters = new Class356(i_10_);
                                 }
                                 for (int i_11_ = 0; i_9_ > i_11_; i_11_++) {

@@ -4,7 +4,7 @@
 
 import jaclib.hardware_info.HardwareInfo;
 
-final class Class348_Sub4 extends Class348 {
+final class SystemInfo extends Class348 {
     private int anInt6591;
     private int anInt6592;
     static int anInt6593;
@@ -92,11 +92,12 @@ final class Class348_Sub4 extends Class348 {
         return za_Sub1.anInt9774;
     }
 
-    public Class348_Sub4() {
+    public SystemInfo() {
         /* empty */
     }
 
-    Class348_Sub4(boolean bool, Class297 class297) {
+    // Class348_Sub4
+    SystemInfo(boolean bool, Class297 class297) {
         if (bool) {
             if (Class297.aString3803.startsWith("win")) anInt6613 = 1;
             else if (Class297.aString3803.startsWith("mac")) anInt6613 = 2;
@@ -165,7 +166,7 @@ final class Class348_Sub4 extends Class348 {
             }
             aBoolean6607 = !class297.aBoolean3777;
             anInt6612 = i_3_;
-            anInt6592 = Class226.anInt2964;
+            anInt6592 = QuickChatCatTypeList.anInt2964;
             if (anInt6616 <= 3) anInt6599 = 0;
             else anInt6599 = Class348_Sub40_Sub29.anInt9372;
             try {

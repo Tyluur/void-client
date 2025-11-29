@@ -46,7 +46,7 @@ final class Class286_Sub9 extends Class286 {
         anInt6319++;
         if (i_3_ >= -14) return 64;
         if (i_4_ == 1 || i_4_ == 3) return Class348_Sub20.anIntArray6830[i & 0x3];
-        return Class84.anIntArray1450[0x3 & i];
+        return SkyBoxTypeList.anIntArray1450[0x3 & i];
     }
 
     final void method2140(Class258 class258, byte i, int i_5_) {
@@ -246,7 +246,7 @@ final class Class286_Sub9 extends Class286 {
                 player.anInt10531 = i_26_;
                 player.aBoolean10539 = true;
                 player.anInt10549 = i_25_;
-            } else player.method2455(i_26_, -26443, (Class259.aByteArray3300[i_22_]), i_25_);
+            } else player.method2455(i_26_, -26443, (VarcTypeList.aByteArray3300[i_22_]), i_25_);
         } else if (i_23_ == 2) {
             int i_27_ = class348_sub49_sub2.readBits((byte) -24, 4);
             int i_28_ = (player.anIntArray10320[0]);
@@ -298,7 +298,7 @@ final class Class286_Sub9 extends Class286 {
                 player.aBoolean10539 = true;
                 player.anInt10549 = i_28_;
                 player.anInt10531 = i_29_;
-            } else player.method2455(i_29_, -26443, (Class259.aByteArray3300[i_22_]), i_28_);
+            } else player.method2455(i_29_, -26443, (VarcTypeList.aByteArray3300[i_22_]), i_28_);
         } else {
             int i_30_ = class348_sub49_sub2.readBits((byte) -24, 1);
             if (i_30_ == 0) {
@@ -314,12 +314,12 @@ final class Class286_Sub9 extends Class286 {
                     player.anInt10531 = i_36_;
                     player.anInt10549 = i_35_;
                     player.aBoolean10539 = true;
-                } else player.method2455(i_36_, -26443, (Class259.aByteArray3300[i_22_]), i_35_);
+                } else player.method2455(i_36_, -26443, (VarcTypeList.aByteArray3300[i_22_]), i_35_);
                 player.plane = player.aByte6376 = (byte) (0x3 & (player.plane) + i_32_);
                 if (NPCDefinition.method802(i_36_, i_35_, true)) player.aByte6376++;
                 if (Class348_Sub42_Sub11.index == i_22_) {
-                    if ((player.plane) != Class355.anInt4372) Class348_Sub16_Sub2.aBoolean8870 = true;
-                    Class355.anInt4372 = (player.plane);
+                    if ((player.plane) != QuickChatPhraseTypeList.anInt4372) Class348_Sub16_Sub2.aBoolean8870 = true;
+                    QuickChatPhraseTypeList.anInt4372 = (player.plane);
                 }
             } else {
                 int i_37_ = class348_sub49_sub2.readBits((byte) -24, 30);
@@ -332,10 +332,10 @@ final class Class286_Sub9 extends Class286 {
                     player.aBoolean10539 = true;
                     player.anInt10531 = i_42_;
                     player.anInt10549 = i_41_;
-                } else player.method2455(i_42_, -26443, (Class259.aByteArray3300[i_22_]), i_41_);
+                } else player.method2455(i_42_, -26443, (VarcTypeList.aByteArray3300[i_22_]), i_41_);
                 player.plane = player.aByte6376 = (byte) ((player.plane) + i_38_ & 0x3);
                 if (NPCDefinition.method802(i_42_, i_41_, true)) player.aByte6376++;
-                if (Class348_Sub42_Sub11.index == i_22_) Class355.anInt4372 = (player.plane);
+                if (Class348_Sub42_Sub11.index == i_22_) QuickChatPhraseTypeList.anInt4372 = (player.plane);
             }
         }
     }

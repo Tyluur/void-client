@@ -5,7 +5,7 @@
 final class Class218 {
     static int anInt2849;
     static int anInt2850;
-    Class141 aClass141_2851;
+    MSITypeList aMSITypeList_2851;
     static int anInt2852;
     int anInt2853;
     boolean aBoolean2854 = false;
@@ -55,9 +55,9 @@ final class Class218 {
     }
 
     final boolean method1593(int i) {
-        if (i != 106) this.aClass141_2851 = null;
+        if (i != 106) this.aMSITypeList_2851 = null;
         anInt2858++;
-        return this.aClass141_2851.aIndex_1965.method421(false, this.anInt2853);
+        return this.aMSITypeList_2851.aIndex_1965.method421(false, this.anInt2853);
     }
 
     public static void method1594(int i) {
@@ -81,10 +81,10 @@ final class Class218 {
         anInt2857++;
         if (i_18_ < 51) aClass114_2860 = null;
         long l = var_ha.anInt4567 << 19 | (this.anInt2853 | i << 16 | (!bool ? 0 : 262144));
-        Sprite sprite = (Sprite) this.aClass141_2851.aClass60_1976.method583(l, -87);
+        Sprite sprite = (Sprite) this.aMSITypeList_2851.aClass60_1976.method583(l, -87);
         if (sprite != null) return sprite;
-        if (!this.aClass141_2851.aIndex_1965.method421(false, this.anInt2853)) return null;
-        Class207 class207 = Class207.method1521(this.aClass141_2851.aIndex_1965, this.anInt2853, 0);
+        if (!this.aMSITypeList_2851.aIndex_1965.method421(false, this.anInt2853)) return null;
+        Class207 class207 = Class207.method1521(this.aMSITypeList_2851.aIndex_1965, this.anInt2853, 0);
         if (class207 != null) {
             class207.anInt2701 = class207.anInt2703 = class207.anInt2698 = class207.anInt2700 = 0;
             if (bool) class207.method1514();
@@ -92,7 +92,7 @@ final class Class218 {
                 class207.method1520();
         }
         sprite = var_ha.method3691(class207, true);
-        if (sprite != null) this.aClass141_2851.aClass60_1976.method582(sprite, l, (byte) -101);
+        if (sprite != null) this.aMSITypeList_2851.aClass60_1976.method582(sprite, l, (byte) -101);
         return sprite;
     }
 

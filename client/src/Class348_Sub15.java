@@ -31,22 +31,22 @@ final class Class348_Sub15 extends Class348 {
         anInt6777++;
         if (Class348_Sub36.anInt6992 < 0) {
             Class348_Sub36.anInt6992 = 0;
-            Class244.anInt4609 = -1;
+            Js5TextureSource.anInt4609 = -1;
             Class48.anInt859 = -1;
         }
         if (Class348_Sub36.anInt6992 > Class75.anInt1259) {
             Class348_Sub36.anInt6992 = Class75.anInt1259;
             Class48.anInt859 = -1;
-            Class244.anInt4609 = -1;
+            Js5TextureSource.anInt4609 = -1;
         }
         if (Class245.anInt3170 < 0) {
             Class48.anInt859 = -1;
             Class245.anInt3170 = 0;
-            Class244.anInt4609 = -1;
+            Js5TextureSource.anInt4609 = -1;
         }
         if (Class75.anInt1267 < Class245.anInt3170) {
             Class245.anInt3170 = Class75.anInt1267;
-            Class244.anInt4609 = -1;
+            Js5TextureSource.anInt4609 = -1;
             Class48.anInt859 = -1;
         }
         if (bool != false) aDouble6774 = 1.5874482848681375;

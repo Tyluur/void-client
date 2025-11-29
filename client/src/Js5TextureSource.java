@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class244 implements d {
+final class Js5TextureSource implements d {
     static int anInt4609 = -1;
     static int anInt4610;
     private final Class12[] aClass12Array4611;
@@ -76,7 +76,8 @@ final class Class244 implements d {
         return anInt4625;
     }
 
-    Class244(Index index, Index index_12_, Index index_13_) {
+    // Class244
+    Js5TextureSource(Index index, Index index_12_, Index index_13_) {
         try {
             aIndex_4619 = index_12_;
             aIndex_4624 = index_13_;

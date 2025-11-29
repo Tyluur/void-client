@@ -232,7 +232,7 @@ final class Class348_Sub32 extends Class348 {
             if (anInt6934 > 0) {
                 aClass348_Sub49_6936 = new Class348_Sub49(anInt6934 * 2);
                 aClass348_Sub49_Sub1_6953 = new Class348_Sub49_Sub1(anInt6934 * 16);
-                aClass356_6932 = new Class356(Class33.method340(anInt6934, (byte) 108));
+                aClass356_6932 = new Class356(EnumTypeList.method340(anInt6934, (byte) 108));
                 int i_56_ = 0;
                 i_50_ = 0;
                 for (int i_57_ = anInt6948; anInt6944 >= i_57_; i_57_++) {

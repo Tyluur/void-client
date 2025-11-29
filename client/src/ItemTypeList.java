@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class255 {
+final class ItemTypeList {
     static Class114 aClass114_3265;
     static int anInt3266;
     private final Index aIndex_3267;
@@ -30,7 +30,7 @@ final class Class255 {
     private Class126 aClass126_3289 = new Class126();
     private final String[] aStringArray3290;
     int anInt3291;
-    private Class326 aClass326_3292;
+    private ParamTypeList aParamTypeList_3292;
     private final String[] aStringArray3293;
 
     static final Class74[] method1929(byte i) {
@@ -109,7 +109,7 @@ final class Class255 {
             Class318_Sub1_Sub1_Sub1.aSpriteArray9959 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class318_Sub1_Sub1_Sub1.aSpriteArray9959[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class82.anInt1435, 0);
+            class207s = Class207.method1519(index, VarcstrTypeList.anInt1435, 0);
             Class264.aSpriteArray3378 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class264.aSpriteArray3378[i] = var_ha.method3691(class207s[i], true);
@@ -122,9 +122,9 @@ final class Class255 {
             for (int i = 0; class207s.length > i; i++)
                 Class59_Sub1.aSpriteArray5294[i] = var_ha.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Class86.anInt1481, 0);
-            Class25.aSpriteArray367 = new Sprite[class207s.length];
+            SkyBoxSphereTypeList.aSpriteArray367 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                Class25.aSpriteArray367[i] = var_ha.method3691(class207s[i], true);
+                SkyBoxSphereTypeList.aSpriteArray367[i] = var_ha.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Class239_Sub10.anInt5948, 0);
             Class348_Sub40_Sub37.aSpriteArray9467 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
@@ -211,7 +211,7 @@ final class Class255 {
 
     final void method1939(int i) {
         synchronized (aClass60_3278) {
-            if (i > -28) aClass326_3292 = null;
+            if (i > -28) aParamTypeList_3292 = null;
             aClass60_3278.method590(0);
         }
         anInt3277++;
@@ -235,7 +235,7 @@ final class Class255 {
             is = aIndex_3267.method410(-1860, Class54.method500(7, i_13_), Class251.method1914(-23590, i_13_));
         }
         itemDefinition = new ItemDefinition();
-        itemDefinition.aClass255_2761 = this;
+        itemDefinition.aItemTypeList_2761 = this;
         itemDefinition.anInt2769 = i_13_;
         itemDefinition.aStringArray2811 = new String[]{null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null};
         itemDefinition.aStringArray2763 = (new String[]{null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)});
@@ -254,7 +254,7 @@ final class Class255 {
             if (itemDefinition.aClass356_2757 != null) {
                 boolean bool = false;
                 for (Class348 class348 = itemDefinition.aClass356_2757.method3484(0); class348 != null; class348 = itemDefinition.aClass356_2757.method3482(0)) {
-                    Class254 class254 = aClass326_3292.method2600((int) class348.aLong4291, 28364);
+                    Class254 class254 = aParamTypeList_3292.method2600((int) class348.aLong4291, 28364);
                     if (class254.aBoolean3261) class348.method2715((byte) 60);
                     else bool = true;
                 }
@@ -293,10 +293,11 @@ final class Class255 {
         }
     }
 
-    Class255(Class230 class230, int i, boolean bool, Class326 class326, Index index, Index index_22_) {
+    // Class255
+    ItemTypeList(Class230 class230, int i, boolean bool, ParamTypeList paramTypeList, Index index, Index index_22_) {
         try {
             aBoolean3269 = bool;
-            aClass326_3292 = class326;
+            aParamTypeList_3292 = paramTypeList;
             this.aIndex_3268 = index_22_;
             this.anInt3286 = i;
             aIndex_3267 = index;
@@ -307,7 +308,7 @@ final class Class255 {
             aStringArray3290 = (new String[]{null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null});
             aStringArray3293 = (new String[]{null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)});
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class326 != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + (index_22_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (paramTypeList != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + (index_22_ != null ? "{...}" : "null") + ')'));
         }
     }
 

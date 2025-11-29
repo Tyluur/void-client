@@ -4,14 +4,14 @@
 
 class Class75 {
     static Index aIndex_1237;
-    static Class153 aClass153_1238;
-    private static Class268 aClass268_1239;
-    private static Class183 aClass183_1240;
+    static MapElementTypeList aMapElementTypeList_1238;
+    private static FloorOverlayTypeList aFloorOverlayTypeList_1239;
+    private static FloorUnderlayTypeList aFloorUnderlayTypeList_1240;
     private static Class356 aClass356_1241 = new Class356(16);
-    static Class141 aClass141_1242;
+    static MSITypeList aMSITypeList_1242;
     static Class348_Sub42_Sub14 aClass348_Sub42_Sub14_1243;
     static Interface17 anInterface17_1244;
-    static Class263 aClass263_1245;
+    static ObjectTypeList aObjectTypeList_1245;
     static Class252 aClass252_1246;
     static float aFloat1247;
     private static byte[] aByteArray1248;
@@ -101,11 +101,11 @@ class Class75 {
     }
 
     public static void method746() {
-        aClass268_1239 = null;
-        aClass183_1240 = null;
-        aClass263_1245 = null;
-        aClass153_1238 = null;
-        aClass141_1242 = null;
+        aFloorOverlayTypeList_1239 = null;
+        aFloorUnderlayTypeList_1240 = null;
+        aObjectTypeList_1245 = null;
+        aMapElementTypeList_1238 = null;
+        aMSITypeList_1242 = null;
         anInterface17_1244 = null;
         aClass348_Sub42_Sub14_1243 = null;
         aIndex_1237 = null;
@@ -232,20 +232,20 @@ class Class75 {
         anInt1268 = i_46_;
     }
 
-    static final void method752(Index index, Class268 class268, Class183 class183, Class263 class263, Class153 class153, Class141 class141, Interface17 interface17) {
+    static final void method752(Index index, FloorOverlayTypeList floorOverlayTypeList, FloorUnderlayTypeList floorUnderlayTypeList, ObjectTypeList objectTypeList, MapElementTypeList mapElementTypeList, MSITypeList MSITypeList, Interface17 interface17) {
         aIndex_1237 = index;
-        aClass268_1239 = class268;
-        aClass183_1240 = class183;
-        aClass263_1245 = class263;
-        aClass153_1238 = class153;
-        aClass141_1242 = class141;
+        aFloorOverlayTypeList_1239 = floorOverlayTypeList;
+        aFloorUnderlayTypeList_1240 = floorUnderlayTypeList;
+        aObjectTypeList_1245 = objectTypeList;
+        aMapElementTypeList_1238 = mapElementTypeList;
+        aMSITypeList_1242 = MSITypeList;
         anInterface17_1244 = interface17;
         aClass356_1241.method3481(0);
         int i = aIndex_1237.method417("details", 0);
         int[] is = aIndex_1237.method396(i, 0);
         if (is != null) {
             for (int i_47_ = 0; i_47_ < is.length; i_47_++) {
-                Class348_Sub42_Sub14 class348_sub42_sub14 = Class150.method1205(is[i_47_], true, aIndex_1237, i);
+                Class348_Sub42_Sub14 class348_sub42_sub14 = IDKTypeList.method1205(is[i_47_], true, aIndex_1237, i);
                 aClass356_1241.method3483((byte) 25, class348_sub42_sub14.anInt9628, class348_sub42_sub14);
             }
         }
@@ -261,7 +261,7 @@ class Class75 {
                         Class348_Sub39 class348_sub39 = ((Class348_Sub39) aClass356_1271.method3480(i << 16 | i_48_, -6008));
                         if (class348_sub39 != null) {
                             for (int i_50_ = 0; i_50_ < (class348_sub39.aShortArray7024).length; i_50_++) {
-                                Class51 class51 = (aClass263_1245.method2005(0, (class348_sub39.aShortArray7024[i_50_]) & 0xffff));
+                                Class51 class51 = (aObjectTypeList_1245.method2005(0, (class348_sub39.aShortArray7024[i_50_]) & 0xffff));
                                 int i_51_ = class51.anInt921;
                                 if (class51.anIntArray945 != null) {
                                     class51 = class51.method480(anInterface17_1244, (byte) 47);
@@ -276,7 +276,7 @@ class Class75 {
                             }
                         }
                     } else {
-                        Class51 class51 = aClass263_1245.method2005(0, i_49_ - 1);
+                        Class51 class51 = aObjectTypeList_1245.method2005(0, i_49_ - 1);
                         int i_52_ = class51.anInt921;
                         if (class51.anIntArray945 != null) {
                             class51 = class51.method480(anInterface17_1244, (byte) 47);
@@ -300,7 +300,7 @@ class Class75 {
                         for (Class318_Sub8 class318_sub8 = (Class318_Sub8) class243.method1872(8); class318_sub8 != null; class318_sub8 = ((Class318_Sub8) class243.method1878((byte) 127))) {
                             if (class318_sub8.aShortArray6461 != null) {
                                 for (int i_55_ = 0; i_55_ < (class318_sub8.aShortArray6461).length; i_55_++) {
-                                    Class51 class51 = (aClass263_1245.method2005(0, (class318_sub8.aShortArray6461[i_55_]) & 0xffff));
+                                    Class51 class51 = (aObjectTypeList_1245.method2005(0, (class318_sub8.aShortArray6461[i_55_]) & 0xffff));
                                     int i_56_ = class51.anInt921;
                                     if (class51.anIntArray945 != null) {
                                         class51 = (class51.method480(anInterface17_1244, (byte) 47));
@@ -349,7 +349,7 @@ class Class75 {
             for (int i_69_ = 0; i_69_ < is.length; i_69_++) {
                 int i_70_ = is_63_[i_69_] & 0x3f;
                 if (i_70_ == 0 || i_70_ == 2 || i_70_ == 3 || i_70_ == 9) {
-                    Class51 class51 = aClass263_1245.method2005(0, is[i_69_] & 0xffff);
+                    Class51 class51 = aObjectTypeList_1245.method2005(0, is[i_69_] & 0xffff);
                     if (class51.anInt875 == -1) {
                         int i_71_ = -3355444;
                         if (class51.anInt874 == 1) i_71_ = -3407872;
@@ -474,7 +474,7 @@ class Class75 {
     }
 
     private static final int method759(d var_d, int i, int i_105_, int i_106_) {
-        Class277 class277 = aClass268_1239.method2034(i, false);
+        Class277 class277 = aFloorOverlayTypeList_1239.method2034(i, false);
         if (class277 == null) return 0;
         int i_107_ = class277.anInt3575;
         if (i_107_ >= 0 && var_d.method3(i_107_, -6662).aBoolean209) i_107_ = -1;
@@ -485,8 +485,8 @@ class Class75 {
             if (i_110_ < 0) i_110_ = 0;
             else if (i_110_ > 127) i_110_ = 127;
             int i_111_ = (i_109_ + i_105_ & 0xfc00) + (i_109_ & 0x380) + i_110_;
-            i_108_ = ~0xffffff | (Class126.anIntArray4983[Class25.method303(Class35.method353(96, -119, i_111_), 30) & 0xffff]);
-        } else if (i_107_ >= 0) i_108_ = (~0xffffff | (Class126.anIntArray4983[(Class25.method303(Class35.method353(96, -85, (var_d.method3(i_107_, -6662).aShort208)), 30)) & 0xffff]));
+            i_108_ = ~0xffffff | (Class126.anIntArray4983[SkyBoxSphereTypeList.method303(Class35.method353(96, -119, i_111_), 30) & 0xffff]);
+        } else if (i_107_ >= 0) i_108_ = (~0xffffff | (Class126.anIntArray4983[(SkyBoxSphereTypeList.method303(Class35.method353(96, -85, (var_d.method3(i_107_, -6662).aShort208)), 30)) & 0xffff]));
         else if (class277.anInt3563 == -1) i_108_ = 0;
         else {
             int i_112_ = class277.anInt3563;
@@ -494,7 +494,7 @@ class Class75 {
             if (i_113_ < 0) i_113_ = 0;
             else if (i_113_ > 127) i_113_ = 127;
             int i_114_ = (i_112_ + i_105_ & 0xfc00) + (i_112_ & 0x380) + i_113_;
-            i_108_ = ~0xffffff | (Class126.anIntArray4983[Class25.method303(Class35.method353(96, -80, i_114_), 30) & 0xffff]);
+            i_108_ = ~0xffffff | (Class126.anIntArray4983[SkyBoxSphereTypeList.method303(Class35.method353(96, -80, i_114_), 30) & 0xffff]);
         }
         return i_108_;
     }
@@ -507,7 +507,7 @@ class Class75 {
         aByteArray1258 = new byte[anInt1259 * anInt1267];
         aClass356_1271 = new Class356(1024);
         aClass243ArrayArrayArray1269 = new Class243[3][anInt1259 >> 6][anInt1267 >> 6];
-        anIntArray1260 = new int[aClass268_1239.anInt3429 + 1];
+        anIntArray1260 = new int[aFloorOverlayTypeList_1239.anInt3429 + 1];
     }
 
     static final void method761() {
@@ -532,10 +532,10 @@ class Class75 {
     private static final void method763(ha var_ha, int i, int i_118_, int i_119_, int i_120_, short[] is, byte[] is_121_) {
         if (is != null) {
             for (int i_122_ = 0; i_122_ < is.length; i_122_++) {
-                Class51 class51 = aClass263_1245.method2005(0, is[i_122_] & 0xffff);
+                Class51 class51 = aObjectTypeList_1245.method2005(0, is[i_122_] & 0xffff);
                 int i_123_ = class51.anInt875;
                 if (i_123_ != -1) {
-                    Class218 class218 = aClass141_1242.method1173((byte) 31, i_123_);
+                    Class218 class218 = aMSITypeList_1242.method1173((byte) 31, i_123_);
                     Sprite sprite = class218.method1596((class51.aBoolean912 ? is_121_[i_122_] >> 6 & 0x3 : 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_ha);
                     if (sprite != null) {
                         int i_124_ = i_119_ * sprite.scaleWidth() >> 2;
@@ -562,7 +562,7 @@ class Class75 {
     }
 
     static final void method764(d var_d, int i, int i_129_) {
-        for (int i_130_ = 0; i_130_ < aClass268_1239.anInt3429; i_130_++)
+        for (int i_130_ = 0; i_130_ < aFloorOverlayTypeList_1239.anInt3429; i_130_++)
             anIntArray1260[i_130_ + 1] = method759(var_d, i_130_, i, i_129_);
     }
 
@@ -597,7 +597,7 @@ class Class75 {
                             if (i_152_ == 0 && i_153_ == 0 && i_154_ == 0) {
                                 if (aClass348_Sub42_Sub14_1243.anInt9634 != -1) i_152_ = (~0xffffff | (aClass348_Sub42_Sub14_1243.anInt9634));
                                 else if ((i_136_ + anInt1274 & 0x4) != (i_146_ + anInt1277 & 0x4)) i_152_ = -11840664;
-                                else i_152_ = (anIntArray1260[(aClass268_1239.anInt3447) + 1]);
+                                else i_152_ = (anIntArray1260[(aFloorOverlayTypeList_1239.anInt3447) + 1]);
                                 if (i_152_ == 0) i_152_ = -16777216;
                                 var_ha.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0);
                             } else if (i_154_ > 0) {
@@ -620,7 +620,7 @@ class Class75 {
                         int i_145_;
                         if (aClass348_Sub42_Sub14_1243.anInt9634 != -1) i_145_ = ~0xffffff | (aClass348_Sub42_Sub14_1243.anInt9634);
                         else if ((i_136_ + anInt1274 & 0x4) != (i_141_ + anInt1277 & 0x4)) i_145_ = -11840664;
-                        else i_145_ = anIntArray1260[(aClass268_1239.anInt3447) + 1];
+                        else i_145_ = anIntArray1260[(aFloorOverlayTypeList_1239.anInt3447) + 1];
                         if (i_145_ == 0) i_145_ = -16777216;
                         var_ha.aa(i_137_, i_142_, i_139_, i_144_, i_145_, 0);
                     }
@@ -734,7 +734,7 @@ class Class75 {
                 if (i_202_ < anInt1259) {
                     int i_205_ = is[i_202_ + i_204_ * anInt1259] & 0xff;
                     if (i_205_ > 0) {
-                        Class22 class22 = aClass183_1240.method1380(true, i_205_ - 1);
+                        Class22 class22 = aFloorUnderlayTypeList_1240.method1380(true, i_205_ - 1);
                         is_196_[i_204_] += class22.anInt341;
                         is_197_[i_204_] += class22.anInt332;
                         is_198_[i_204_] += class22.anInt335;
@@ -745,7 +745,7 @@ class Class75 {
                 if (i_203_ >= 0) {
                     int i_206_ = is[i_203_ + i_204_ * anInt1259] & 0xff;
                     if (i_206_ > 0) {
-                        Class22 class22 = aClass183_1240.method1380(true, i_206_ - 1);
+                        Class22 class22 = aFloorUnderlayTypeList_1240.method1380(true, i_206_ - 1);
                         is_196_[i_204_] -= class22.anInt341;
                         is_197_[i_204_] -= class22.anInt332;
                         is_198_[i_204_] -= class22.anInt335;
@@ -789,7 +789,7 @@ class Class75 {
                             else if (i_217_ > 127) i_217_ = 127;
                             int i_218_ = ((i_216_ + i & 0xfc00) + (i_216_ & 0x380) + i_217_);
                             int i_219_ = i_201_ + i_212_ * anInt1259;
-                            int i_220_ = (Class126.anIntArray4983[(Class25.method303(Class348_Sub49_Sub1.method3401(i_218_, 96, (byte) 76), 30)) & 0xffff]);
+                            int i_220_ = (Class126.anIntArray4983[(SkyBoxSphereTypeList.method303(Class348_Sub49_Sub1.method3401(i_218_, 96, (byte) 76), 30)) & 0xffff]);
                             is_193_[i_219_] = (byte) (i_220_ >> 16 & 0xff);
                             is_194_[i_219_] = (short) (i_220_ & 0xffff);
                         }

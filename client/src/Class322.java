@@ -45,7 +45,7 @@ final class Class322 {
         anInt4030++;
         if (Class312.anInt3931 == 1 || Class312.anInt3931 == 3 || (Class312.anInt3931 != Class83.anInt1447 && (Class312.anInt3931 == 0 || Class83.anInt1447 == 0))) {
             Class348_Sub32.anInt6930 = 0;
-            Class150.anInt2057 = 0;
+            IDKTypeList.anInt2057 = 0;
             Class282.aClass356_3654.method3481(0);
         }
         Class83.anInt1447 = Class312.anInt3931;
@@ -65,7 +65,7 @@ final class Class322 {
         if (Class367_Sub11.anInt7396 < class318_sub1_sub3_sub3.anInt10239) Class239_Sub26.method1834(class318_sub1_sub3_sub3, (byte) -16);
         else if (Class367_Sub11.anInt7396 <= (class318_sub1_sub3_sub3.anInt10300)) Class110_Sub1.method1041(-1, class318_sub1_sub3_sub3);
         else {
-            Class219.method1600(false, 0, class318_sub1_sub3_sub3);
+            HitmarkTypeList.method1600(false, 0, class318_sub1_sub3_sub3);
             i_3_ = Class235.anInt3062;
             i_4_ = Class127_Sub1.anInt8387;
         }

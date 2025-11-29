@@ -44,7 +44,7 @@ final class Class21 {
             if (i != -15902) method288((byte) -120);
             Class348_Sub42_Sub5.aDouble9531 = d_7_ * -d_4_;
             Class357.aDouble4404 = d_5_;
-            Class319.aDouble3980 = 0.0;
+            GfxTypeList.aDouble3980 = 0.0;
             Class59.aDouble1083 = d_6_ * -d_5_;
             Class348_Sub23_Sub2.aDouble9023 = d_5_ * d_7_;
         }

@@ -53,30 +53,30 @@ final class Class348_Sub18 extends Class348 {
 
     static final void method2938(byte i) {
         anInt6804++;
-        Class229.aClass268_2979.method2037(10205);
-        Class362.aClass183_4460.method1381(true);
-        Class348_Sub40_Sub25.aClass150_9342.method1206((byte) -37);
-        Class348_Sub40_Sub12.aClass263_9195.method2012(-23828);
-        Class189.aClass278_2529.method2078(-6080);
-        Exception_Sub1.aClass255_112.method1939(-110);
-        Class10.aClass87_191.method834((byte) -116);
-        Class348_Sub40_Sub18.aClass319_9245.method2546(60);
-        Class229.aClass194_2981.method1445(64);
-        Class269.aClass217_3453.method1589((byte) 127);
-        Class64_Sub3.aClass261_5558.method1985(0);
-        Class2.aClass141_117.method1175((byte) 125);
-        Class348_Sub23_Sub2.aClass153_9031.method1219(7851);
-        Class348_Sub23_Sub2.aClass187_9036.method1404((byte) -82);
-        Class101_Sub3.aClass326_5764.method2601((byte) -44);
-        Class30.aClass84_413.method822((byte) -120);
-        Class123.aClass25_1813.method300((byte) -123);
-        Class348_Sub1.aClass185_6559.method1393((byte) -13);
-        Class239.aClass166_3147.method1290(-8);
-        Class136.aClass65_4787.method695(true);
-        Class73.aClass219_4782.method1602(0);
+        Class229.floorOverlayTypeList.method2037(10205);
+        Class362.floorUnderlayTypeList.method1381(true);
+        Class348_Sub40_Sub25.idkTypeList.method1206((byte) -37);
+        Class348_Sub40_Sub12.objectTypeList.method2012(-23828);
+        Class189.npcTypeList.method2078(-6080);
+        Exception_Sub1.itemTypeList.method1939(-110);
+        Class10.seqTypeList.method834((byte) -116);
+        Class348_Sub40_Sub18.gfxTypeList.method2546(60);
+        Class229.varBitTypeList.method1445(64);
+        Class269.varPlayerTypeList.method1589((byte) 127);
+        Class64_Sub3.basTypeList.method1985(0);
+        Class2.msiTypeList.method1175((byte) 125);
+        Class348_Sub23_Sub2.mapElementTypeList.method1219(7851);
+        Class348_Sub23_Sub2.questTypeList.method1404((byte) -82);
+        Class101_Sub3.paramTypeList.method2601((byte) -44);
+        Class30.skyBoxTypeList.method822((byte) -120);
+        Class123.skyBoxSphereTypeList.method300((byte) -123);
+        Class348_Sub1.lightTypeList.method1393((byte) -13);
+        Class239.cursorTypeList.method1290(-8);
+        Class136.structTypeList.method695(true);
+        Class73.hitmarkTypeList.method1602(0);
         Class369_Sub3.method3573(-15326);
         Class164.method1277((byte) 62);
-        Class84.method821(-126);
+        SkyBoxTypeList.method821(-126);
         Class318.method2375(16127);
         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
             for (int i_6_ = 0; Class308.aByteArrayArray3882.length > i_6_; i_6_++)
@@ -118,7 +118,7 @@ final class Class348_Sub18 extends Class348 {
             Class348_Sub16_Sub3.VARBITS.method412((byte) -114);
             Class348_Sub32.WORLD_MAP.method412((byte) 36);
             Class130.QUICK_CHAT_MESSAGES.method412((byte) -114);
-            Class82.QUICK_CHAT_MENUS.method412((byte) -117);
+            VarcstrTypeList.QUICK_CHAT_MENUS.method412((byte) -117);
             Class348_Sub11.TEXTURE_DEFINITIONS.method412((byte) 78);
             Class239.PARTICLES.method412((byte) 88);
             Class367_Sub8.DEFAULTS.method412((byte) -109);
@@ -160,7 +160,7 @@ final class Class348_Sub18 extends Class348 {
 
     static final void method2942(Class46 class46, byte i) {
         anInt6805++;
-        if (class46.anInt765 == Class244.anInt4610) {
+        if (class46.anInt765 == Js5TextureSource.anInt4610) {
             if (Class132.aPlayer_1907.aString10544 == null) {
                 class46.anInt779 = 0;
                 class46.anInt753 = 0;
@@ -174,7 +174,7 @@ final class Class348_Sub18 extends Class348 {
                 class46.anInt841 = 0;
                 class46.anInt730 = Class132.aPlayer_1907.anInt10312;
                 class46.anInt795 = Class132.aPlayer_1907.anInt10245;
-                Class17 class17 = (class46.anInt699 != -1 ? Class10.aClass87_191.method835(class46.anInt699, 7) : null);
+                Class17 class17 = (class46.anInt699 != -1 ? Class10.seqTypeList.method835(class46.anInt699, 7) : null);
                 if (class17 != null) Class264.method2017(class46.anInt795, class17, 50);
             }
         } else {

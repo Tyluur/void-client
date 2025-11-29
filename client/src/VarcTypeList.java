@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class259 {
+final class VarcTypeList {
     private final Index aIndex_3299;
     static byte[] aByteArray3300 = new byte[2048];
     static Class60 aClass60_3301 = new Class60(30);
@@ -39,7 +39,8 @@ final class Class259 {
         return class160;
     }
 
-    Class259(Class230 class230, int i, Index index) {
+    // Class259
+    VarcTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_3299 = index;
             this.anInt3305 = aIndex_3299.method407(0, 19);

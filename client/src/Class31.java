@@ -21,7 +21,7 @@ final class Class31 {
     int anInt435;
     static int anInt436;
     static int anInt437;
-    Class219 aClass219_438;
+    HitmarkTypeList aHitmarkTypeList_438;
     private int anInt439;
     static int anInt440;
     static int anInt441;
@@ -35,10 +35,10 @@ final class Class31 {
         anInt440++;
         if (bool != true) return null;
         if (anInt429 < 0) return null;
-        Sprite sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt429, -62);
+        Sprite sprite = (Sprite) this.aHitmarkTypeList_438.aClass60_2862.method583(anInt429, -62);
         if (sprite == null) {
             method330(var_ha, -41);
-            sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt429, 53);
+            sprite = (Sprite) this.aHitmarkTypeList_438.aClass60_2862.method583(anInt429, 53);
         }
         return sprite;
     }
@@ -46,11 +46,11 @@ final class Class31 {
     final Sprite method325(ha var_ha, int i) {
         anInt428++;
         if (anInt439 < 0) return null;
-        Sprite sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt439, -59);
+        Sprite sprite = (Sprite) this.aHitmarkTypeList_438.aClass60_2862.method583(anInt439, -59);
         if (i < 23) return null;
         if (sprite == null) {
             method330(var_ha, -118);
-            sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt439, 123);
+            sprite = (Sprite) this.aHitmarkTypeList_438.aClass60_2862.method583(anInt439, 123);
         }
         return sprite;
     }
@@ -68,10 +68,10 @@ final class Class31 {
     final Sprite method327(ha var_ha, byte i) {
         anInt432++;
         if (anInt421 < 0) return null;
-        Sprite sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt421, 118);
+        Sprite sprite = (Sprite) this.aHitmarkTypeList_438.aClass60_2862.method583(anInt421, 118);
         if (sprite == null) {
             method330(var_ha, -66);
-            sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt421, 119);
+            sprite = (Sprite) this.aHitmarkTypeList_438.aClass60_2862.method583(anInt421, 119);
         }
         int i_0_ = 20 % ((i - 19) / 51);
         return sprite;
@@ -110,23 +110,23 @@ final class Class31 {
 
     private final void method330(ha var_ha, int i) {
         anInt446++;
-        Index index = this.aClass219_438.aIndex_2873;
-        if (anInt421 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt421, 121) == null && index.method421(false, anInt421)) {
+        Index index = this.aHitmarkTypeList_438.aIndex_2873;
+        if (anInt421 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt421, 121) == null && index.method421(false, anInt421)) {
             Class207 class207 = Class207.method1512(index, anInt421);
-            this.aClass219_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt421, (byte) -112);
+            this.aHitmarkTypeList_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt421, (byte) -112);
         }
-        if (anInt433 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt433, -99) == null && index.method421(false, anInt433)) {
+        if (anInt433 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt433, -99) == null && index.method421(false, anInt433)) {
             Class207 class207 = Class207.method1512(index, anInt433);
-            this.aClass219_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt433, (byte) -128);
+            this.aHitmarkTypeList_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt433, (byte) -128);
         }
-        if (anInt429 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt429, 86) == null && index.method421(false, anInt429)) {
+        if (anInt429 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt429, 86) == null && index.method421(false, anInt429)) {
             Class207 class207 = Class207.method1512(index, anInt429);
-            this.aClass219_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt429, (byte) -108);
+            this.aHitmarkTypeList_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt429, (byte) -108);
         }
         if (i > -7) this.anInt434 = -14;
-        if (anInt439 >= 0 && this.aClass219_438.aClass60_2862.method583(anInt439, -83) == null && index.method421(false, anInt439)) {
+        if (anInt439 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt439, -83) == null && index.method421(false, anInt439)) {
             Class207 class207 = Class207.method1512(index, anInt439);
-            this.aClass219_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt439, (byte) -101);
+            this.aHitmarkTypeList_438.aClass60_2862.method582(var_ha.method3691(class207, true), anInt439, (byte) -101);
         }
     }
 
@@ -134,10 +134,10 @@ final class Class31 {
         anInt441++;
         if (anInt433 < 0) return null;
         int i_2_ = -84 % ((i - 32) / 35);
-        Sprite sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt433, -50);
+        Sprite sprite = (Sprite) this.aHitmarkTypeList_438.aClass60_2862.method583(anInt433, -50);
         if (sprite == null) {
             method330(var_ha, -89);
-            sprite = (Sprite) this.aClass219_438.aClass60_2862.method583(anInt433, -117);
+            sprite = (Sprite) this.aHitmarkTypeList_438.aClass60_2862.method583(anInt433, -117);
         }
         return sprite;
     }

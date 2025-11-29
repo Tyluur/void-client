@@ -6,13 +6,13 @@ final class Class229 {
     static int anInt2976;
     static int anInt2977;
     static Index aIndex_2978;
-    static Class268 aClass268_2979;
+    static FloorOverlayTypeList floorOverlayTypeList; // aClass268_2979
     static int anInt2980;
-    static Class194 aClass194_2981;
+    static VarBitTypeListClient varBitTypeList; // aClass194_2981
 
     static final Class241 method1631(boolean bool) {
         anInt2980++;
-        if (bool != false) aClass194_2981 = null;
+        if (bool != false) varBitTypeList = null;
         try {
             return new Class241_Sub2();
         } catch (Throwable throwable) {
@@ -27,8 +27,8 @@ final class Class229 {
     public static void method1632(int i) {
         aIndex_2978 = null;
         int i_1_ = -20 / ((-87 - i) / 34);
-        aClass194_2981 = null;
-        aClass268_2979 = null;
+        varBitTypeList = null;
+        floorOverlayTypeList = null;
     }
 
     public Class229() {

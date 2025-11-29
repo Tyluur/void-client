@@ -29,7 +29,7 @@ final class NPCDefinition {
     boolean aBoolean1345;
     private int anInt1346;
     byte aByte1347;
-    Class278 aClass278_1348;
+    NPCTypeList aNPCTypeList_1348;
     String[] aStringArray1349;
     short aShort1350 = 0;
     static int anInt1351;
@@ -96,7 +96,7 @@ final class NPCDefinition {
         }
         for (int i_0_ = i; this.anIntArray1377.length > i_0_; i_0_++) {
             if (this.anIntArray1377[i_0_] != -1) {
-                NPCDefinition NPCDefinition_1_ = (this.aClass278_1348.method2079(this.anIntArray1377[i_0_], -1));
+                NPCDefinition NPCDefinition_1_ = (this.aNPCTypeList_1348.method2079(this.anIntArray1377[i_0_], -1));
                 if (NPCDefinition_1_.anInt1343 != -1 || NPCDefinition_1_.anInt1364 != -1 || NPCDefinition_1_.anInt1327 != -1) return true;
             }
         }
@@ -112,9 +112,9 @@ final class NPCDefinition {
         if (i_2_ < 0 || (-1 + this.anIntArray1377.length <= i_2_) || this.anIntArray1377[i_2_] == -1) {
             int i_3_ = (this.anIntArray1377[this.anIntArray1377.length - 1]);
             if (i_3_ == -1) return null;
-            return this.aClass278_1348.method2079(i_3_, i);
+            return this.aNPCTypeList_1348.method2079(i_3_, i);
         }
-        return this.aClass278_1348.method2079(this.anIntArray1377[i_2_], -1);
+        return this.aNPCTypeList_1348.method2079(this.anIntArray1377[i_2_], -1);
     }
 
     private final void method795(Class348_Sub49 class348_sub49, int i, int i_4_) {
@@ -235,7 +235,7 @@ final class NPCDefinition {
                                                                         else if (i != 143) {
                                                                             if (i >= 150 && i < 155) {
                                                                                 this.aStringArray1349[-150 + i] = class348_sub49.readString((byte) -73);
-                                                                                if (!this.aClass278_1348.aBoolean3583) this.aStringArray1349[i + -150] = null;
+                                                                                if (!this.aNPCTypeList_1348.aBoolean3583) this.aStringArray1349[i + -150] = null;
                                                                             } else if (i == 155) {
                                                                                 aByte1376 = class348_sub49.readByte(i_4_ ^ ~0x16);
                                                                                 aByte1360 = class348_sub49.readByte(-113);
@@ -257,7 +257,7 @@ final class NPCDefinition {
                                                                                         if (i == 249) {
                                                                                             int i_17_ = class348_sub49.readUnsignedByte(255);
                                                                                             if (aClass356_1386 == null) {
-                                                                                                int i_18_ = Class33.method340(i_17_, (byte) 108);
+                                                                                                int i_18_ = EnumTypeList.method340(i_17_, (byte) 108);
                                                                                                 aClass356_1386 = new Class356(i_18_);
                                                                                             }
                                                                                             for (int i_19_ = 0; i_17_ > i_19_; i_19_++) {
@@ -342,18 +342,18 @@ final class NPCDefinition {
         if (i >= -75) aByte1376 = (byte) 102;
         anInt1334++;
         if (this.aByte1384 == -1) {
-            if (Class10.aClass230_186 == this.aClass278_1348.aClass230_3578) this.aByte1384 = (byte) 1;
+            if (Class10.aClass230_186 == this.aNPCTypeList_1348.aClass230_3578) this.aByte1384 = (byte) 1;
             else this.aByte1384 = (byte) 0;
         }
     }
 
-    final Class64 method800(int i, Class182[] class182s, Class87 class87, boolean bool, Class17 class17, int i_34_, Class261 class261, int i_35_, Class17 class17_36_, Interface17 interface17, ha var_ha, int i_37_, int[] is, int i_38_, int i_39_, int i_40_, int i_41_) {
+    final Class64 method800(int i, Class182[] class182s, SeqTypeList seqTypeList, boolean bool, Class17 class17, int i_34_, BASTypeList BASTypeList, int i_35_, Class17 class17_36_, Interface17 interface17, ha var_ha, int i_37_, int[] is, int i_38_, int i_39_, int i_40_, int i_41_) {
         try {
             anInt1341++;
             if (this.anIntArray1377 != null) {
                 NPCDefinition NPCDefinition_42_ = method794(interface17, -1);
                 if (NPCDefinition_42_ == null) return null;
-                return NPCDefinition_42_.method800(i, class182s, class87, false, class17, i_34_, class261, i_35_, class17_36_, interface17, var_ha, i_37_, is, i_38_, i_39_, i_40_, i_41_);
+                return NPCDefinition_42_.method800(i, class182s, seqTypeList, false, class17, i_34_, BASTypeList, i_35_, class17_36_, interface17, var_ha, i_37_, is, i_38_, i_39_, i_40_, i_41_);
             }
             int i_43_ = i_40_;
             if (anInt1358 != 128) i_43_ |= 0x2;
@@ -367,14 +367,14 @@ final class NPCDefinition {
             for (int i_50_ = 0; i_50_ < i_49_; i_50_++) {
                 Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_] = null;
                 if (class182s[i_50_] != null) {
-                    Class17 class17_51_ = class87.method835((class182s[i_50_].anInt2454), 7);
+                    Class17 class17_51_ = seqTypeList.method835((class182s[i_50_].anInt2454), 7);
                     if (class17_51_.anIntArray237 != null) {
                         bool_44_ = true;
                         Class163.aClass17Array2169[i_50_] = class17_51_;
                         int i_52_ = class182s[i_50_].anInt2451;
                         int i_53_ = class182s[i_50_].anInt2455;
                         int i_54_ = class17_51_.anIntArray237[i_52_];
-                        Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_] = class87.method839(i_54_ >>> 16, 3);
+                        Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_] = seqTypeList.method839(i_54_ >>> 16, 3);
                         i_54_ &= 0xffff;
                         Class90.anIntArray1518[i_50_] = i_54_;
                         if ((Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_]) != null) {
@@ -387,9 +387,9 @@ final class NPCDefinition {
                             Class348_Sub23_Sub4.anIntArray9050[i_50_] = class17_51_.anIntArray267[i_52_];
                             Class67.anIntArray4648[i_50_] = class182s[i_50_].anInt2456;
                             int i_55_ = class17_51_.anIntArray237[i_53_];
-                            Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_] = class87.method839(i_55_ >>> 16, 3);
+                            Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_] = seqTypeList.method839(i_55_ >>> 16, 3);
                             i_55_ &= 0xffff;
-                            Class183.anIntArray2466[i_50_] = i_55_;
+                            FloorUnderlayTypeList.anIntArray2466[i_50_] = i_55_;
                             if ((Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_]) != null) {
                                 bool_46_ |= Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_].method3272(i_55_, 0);
                                 bool_45_ |= Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_].method3271(i_55_, 14);
@@ -399,7 +399,7 @@ final class NPCDefinition {
                             Class348_Sub23_Sub4.anIntArray9050[i_50_] = 0;
                             Class67.anIntArray4648[i_50_] = 0;
                             Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_] = null;
-                            Class183.anIntArray2466[i_50_] = -1;
+                            FloorUnderlayTypeList.anIntArray2466[i_50_] = -1;
                         }
                     }
                 }
@@ -420,7 +420,7 @@ final class NPCDefinition {
                     i_56_ = class17_36_.anIntArray237[i_35_];
                     int i_65_ = i_56_ >>> 16;
                     i_56_ &= 0xffff;
-                    class348_sub42_sub17 = class87.method839(i_65_, 3);
+                    class348_sub42_sub17 = seqTypeList.method839(i_65_, 3);
                     if (class348_sub42_sub17 != null) {
                         bool_46_ |= class348_sub42_sub17.method3272(i_56_, 0);
                         bool_45_ |= class348_sub42_sub17.method3271(i_56_, 14);
@@ -432,7 +432,7 @@ final class NPCDefinition {
                         i_58_ = class17_36_.anIntArray267[i_35_];
                         int i_66_ = i_57_ >>> 16;
                         if (i_65_ == i_66_) class348_sub42_sub17_59_ = class348_sub42_sub17;
-                        else class348_sub42_sub17_59_ = class87.method839(i_66_, 3);
+                        else class348_sub42_sub17_59_ = seqTypeList.method839(i_66_, 3);
                         i_57_ &= 0xffff;
                         if (class348_sub42_sub17_59_ != null) {
                             bool_46_ |= class348_sub42_sub17_59_.method3272(i_57_, 0);
@@ -444,7 +444,7 @@ final class NPCDefinition {
                 if (class17 != null) {
                     i_60_ = class17.anIntArray237[i_39_];
                     int i_67_ = i_60_ >>> 16;
-                    class348_sub42_sub17_63_ = class87.method839(i_67_, 3);
+                    class348_sub42_sub17_63_ = seqTypeList.method839(i_67_, 3);
                     i_60_ &= 0xffff;
                     if (class348_sub42_sub17_63_ != null) {
                         bool_46_ |= class348_sub42_sub17_63_.method3272(i_60_, 0);
@@ -457,7 +457,7 @@ final class NPCDefinition {
                         i_61_ = class17.anIntArray237[i_37_];
                         int i_68_ = i_61_ >>> 16;
                         if (i_68_ == i_67_) class348_sub42_sub17_64_ = class348_sub42_sub17_63_;
-                        else class348_sub42_sub17_64_ = class87.method839(i_68_, 3);
+                        else class348_sub42_sub17_64_ = seqTypeList.method839(i_68_, 3);
                         i_61_ &= 0xffff;
                         if (class348_sub42_sub17_64_ != null) {
                             bool_46_ |= class348_sub42_sub17_64_.method3272(i_61_, 0);
@@ -473,26 +473,26 @@ final class NPCDefinition {
             }
             long l = var_ha.anInt4567 << 16 | this.anInt1344;
             Class64 class64;
-            synchronized (this.aClass278_1348.aClass60_3590) {
-                class64 = (Class64) this.aClass278_1348.aClass60_3590.method583(l, 80);
+            synchronized (this.aNPCTypeList_1348.aClass60_3590) {
+                class64 = (Class64) this.aNPCTypeList_1348.aClass60_3590.method583(l, 80);
             }
             Class225 class225 = null;
-            if (this.anInt1366 != -1) class225 = class261.method1983(this.anInt1366, 32);
+            if (this.anInt1366 != -1) class225 = BASTypeList.method1983(this.anInt1366, 32);
             if (class64 == null || i_43_ != (i_43_ & class64.ua())) {
                 if (class64 != null) i_43_ |= class64.ua();
                 int i_69_ = i_43_;
                 boolean bool_70_ = false;
-                synchronized (this.aClass278_1348.aIndex_3576) {
+                synchronized (this.aNPCTypeList_1348.aIndex_3576) {
                     for (int i_71_ = 0; (anIntArray1402.length > i_71_); i_71_++) {
-                        if (anIntArray1402[i_71_] != -1 && !(this.aClass278_1348.aIndex_3576.method420(-10499, anIntArray1402[i_71_], 0))) bool_70_ = true;
+                        if (anIntArray1402[i_71_] != -1 && !(this.aNPCTypeList_1348.aIndex_3576.method420(-10499, anIntArray1402[i_71_], 0))) bool_70_ = true;
                     }
                 }
                 if (bool_70_) return null;
                 Class124[] class124s = new Class124[anIntArray1402.length];
                 for (int i_72_ = 0; i_72_ < anIntArray1402.length; i_72_++) {
                     if (anIntArray1402[i_72_] != -1) {
-                        synchronized (this.aClass278_1348.aIndex_3576) {
-                            class124s[i_72_] = Class300.method2277(0, (this.aClass278_1348.aIndex_3576), anIntArray1402[i_72_], -1);
+                        synchronized (this.aNPCTypeList_1348.aIndex_3576) {
+                            class124s[i_72_] = Class300.method2277(0, (this.aNPCTypeList_1348.aIndex_3576), anIntArray1402[i_72_], -1);
                         }
                         if (class124s[i_72_] != null) {
                             if (class124s[i_72_].anInt1830 < 13) class124s[i_72_].method1092(2, 115);
@@ -528,7 +528,7 @@ final class NPCDefinition {
                 if (aShortArray1328 != null) i_69_ |= 0x4000;
                 if (aShortArray1393 != null) i_69_ |= 0x8000;
                 if (aByte1405 != 0) i_69_ |= 0x80000;
-                class64 = var_ha.method3625(class124, i_69_, (this.aClass278_1348.anInt3593), 64 + anInt1398, 850 + anInt1406);
+                class64 = var_ha.method3625(class124, i_69_, (this.aNPCTypeList_1348.anInt3593), 64 + anInt1398, 850 + anInt1406);
                 if (aShortArray1328 != null) {
                     for (int i_80_ = 0; (i_80_ < aShortArray1328.length); i_80_++) {
                         if (aByteArray1374 == null || aByteArray1374.length <= i_80_) class64.ia(aShortArray1328[i_80_], aShortArray1352[i_80_]);
@@ -541,8 +541,8 @@ final class NPCDefinition {
                 }
                 if (aByte1405 != 0) class64.method624(aByte1376, aByte1360, aByte1330, aByte1405 & 0xff);
                 class64.s(i_43_);
-                synchronized (this.aClass278_1348.aClass60_3590) {
-                    this.aClass278_1348.aClass60_3590.method582(class64, this.anInt1344 | var_ha.anInt4567 << 16, (byte) -125);
+                synchronized (this.aNPCTypeList_1348.aClass60_3590) {
+                    this.aNPCTypeList_1348.aClass60_3590.method582(class64, this.anInt1344 | var_ha.anInt4567 << 16, (byte) -125);
                 }
             }
             Class64 class64_82_ = class64.method614((byte) 4, i_43_, true);
@@ -564,7 +564,7 @@ final class NPCDefinition {
             int i_87_ = 1;
             while (i_86_ < i_49_) {
                 if ((Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_86_]) != null)
-                    class64_82_.method603((byte) -55, -1 + Class67.anIntArray4648[i_86_], null, i_87_, Class90.anIntArray1518[i_86_], Class183.anIntArray2466[i_86_], (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_86_]), 0, (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_86_]), (Class163.aClass17Array2169[i_86_].aBoolean242), Class348_Sub23_Sub4.anIntArray9050[i_86_]);
+                    class64_82_.method603((byte) -55, -1 + Class67.anIntArray4648[i_86_], null, i_87_, Class90.anIntArray1518[i_86_], FloorUnderlayTypeList.anIntArray2466[i_86_], (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_86_]), 0, (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_86_]), (Class163.aClass17Array2169[i_86_].aBoolean242), Class348_Sub23_Sub4.anIntArray9050[i_86_]);
                 i_86_++;
                 i_87_ <<= 1;
             }
@@ -597,7 +597,7 @@ final class NPCDefinition {
             class64_82_.s(i_40_);
             return class64_82_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bb.F(" + i + ',' + (class182s != null ? "{...}" : "null") + ',' + (class87 != null ? "{...}" : "null") + ',' + bool + ',' + (class17 != null ? "{...}" : "null") + ',' + i_34_ + ',' + (class261 != null ? "{...}" : "null") + ',' + i_35_ + ',' + (class17_36_ != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_37_ + ',' + (is != null ? "{...}" : "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bb.F(" + i + ',' + (class182s != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + bool + ',' + (class17 != null ? "{...}" : "null") + ',' + i_34_ + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + i_35_ + ',' + (class17_36_ != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_37_ + ',' + (is != null ? "{...}" : "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
         }
     }
 
@@ -617,36 +617,36 @@ final class NPCDefinition {
         return (Class348_Sub33.aByteArrayArrayArray6962[1][x][y] & 0x2) != 0;
     }
 
-    final Class64 method803(Interface17 interface17, ha var_ha, int i, int i_94_, Class17 class17, Class87 class87, int i_95_, int i_96_, int i_97_) {
+    final Class64 method803(Interface17 interface17, ha var_ha, int i, int i_94_, Class17 class17, SeqTypeList seqTypeList, int i_95_, int i_96_, int i_97_) {
         try {
             anInt1389++;
             if (this.anIntArray1377 != null) {
                 NPCDefinition NPCDefinition_98_ = method794(interface17, -1);
                 if (NPCDefinition_98_ == null) return null;
-                return NPCDefinition_98_.method803(interface17, var_ha, i, i_94_, class17, class87, i_95_, 104, i_97_);
+                return NPCDefinition_98_.method803(interface17, var_ha, i, i_94_, class17, seqTypeList, i_95_, 104, i_97_);
             }
             if (i_96_ <= 98) method796(null, -10);
             if (anIntArray1380 == null) return null;
             int i_99_ = i_97_;
             if (class17 != null && i_95_ != -1) i_99_ |= class17.method263(i_94_, 97, i_95_, true);
             Class64 class64;
-            synchronized (this.aClass278_1348.aClass60_3592) {
-                class64 = ((Class64) (this.aClass278_1348.aClass60_3592.method583(var_ha.anInt4567 << 16 | this.anInt1344, 64)));
+            synchronized (this.aNPCTypeList_1348.aClass60_3592) {
+                class64 = ((Class64) (this.aNPCTypeList_1348.aClass60_3592.method583(var_ha.anInt4567 << 16 | this.anInt1344, 64)));
             }
             if (class64 == null || i_99_ != (class64.ua() & i_99_)) {
                 if (class64 != null) i_99_ |= class64.ua();
                 int i_100_ = i_99_;
                 boolean bool = false;
-                synchronized (this.aClass278_1348.aIndex_3576) {
+                synchronized (this.aNPCTypeList_1348.aIndex_3576) {
                     for (int i_101_ = 0; (anIntArray1380.length > i_101_); i_101_++) {
-                        if (!this.aClass278_1348.aIndex_3576.method420(-10499, anIntArray1380[i_101_], 0)) bool = true;
+                        if (!this.aNPCTypeList_1348.aIndex_3576.method420(-10499, anIntArray1380[i_101_], 0)) bool = true;
                     }
                 }
                 if (bool) return null;
                 Class124[] class124s = new Class124[anIntArray1380.length];
-                synchronized (this.aClass278_1348.aIndex_3576) {
+                synchronized (this.aNPCTypeList_1348.aIndex_3576) {
                     for (int i_102_ = 0; (anIntArray1380.length > i_102_); i_102_++)
-                        class124s[i_102_] = Class300.method2277(0, (this.aClass278_1348.aIndex_3576), anIntArray1380[i_102_], -1);
+                        class124s[i_102_] = Class300.method2277(0, (this.aNPCTypeList_1348.aIndex_3576), anIntArray1380[i_102_], -1);
                 }
                 for (int i_103_ = 0; (i_103_ < anIntArray1380.length); i_103_++) {
                     if (class124s[i_103_] != null && class124s[i_103_].anInt1830 < 13) class124s[i_103_].method1092(2, 66);
@@ -657,7 +657,7 @@ final class NPCDefinition {
                 if (aShortArray1328 != null) i_100_ |= 0x4000;
                 if (aShortArray1393 != null) i_100_ |= 0x8000;
                 if (aByte1405 != 0) i_100_ |= 0x80000;
-                class64 = var_ha.method3625(class124, i_100_, (this.aClass278_1348.anInt3593), 64, 768);
+                class64 = var_ha.method3625(class124, i_100_, (this.aNPCTypeList_1348.anInt3593), 64, 768);
                 if (aShortArray1328 != null) {
                     for (int i_104_ = 0; (aShortArray1328.length > i_104_); i_104_++) {
                         if (aByteArray1374 != null && aByteArray1374.length > i_104_) class64.ia(aShortArray1328[i_104_], (Class348_Sub42_Sub3.aShortArray9502[0xff & aByteArray1374[i_104_]]));
@@ -670,15 +670,15 @@ final class NPCDefinition {
                 }
                 if (aByte1405 != 0) class64.method624(aByte1376, aByte1360, aByte1330, aByte1405 & 0xff);
                 class64.s(i_99_);
-                synchronized (this.aClass278_1348.aClass60_3592) {
-                    this.aClass278_1348.aClass60_3592.method582(class64, var_ha.anInt4567 << 16 | this.anInt1344, (byte) -96);
+                synchronized (this.aNPCTypeList_1348.aClass60_3592) {
+                    this.aNPCTypeList_1348.aClass60_3592.method582(class64, var_ha.anInt4567 << 16 | this.anInt1344, (byte) -96);
                 }
             }
             if (class17 != null && i_95_ != -1) class64 = class17.method269(-9, class64, i_94_, i, i_99_, i_95_);
             class64.s(i_97_);
             return class64;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bb.H(" + (interface17 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_94_ + ',' + (class17 != null ? "{...}" : "null") + ',' + (class87 != null ? "{...}" : "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bb.H(" + (interface17 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_94_ + ',' + (class17 != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'));
         }
     }
 

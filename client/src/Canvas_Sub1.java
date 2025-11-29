@@ -124,27 +124,27 @@ final class Canvas_Sub1 extends Canvas {
     static final void method123(int i) {
         anInt63++;
         Class289.method2193(false, (byte) -125);
-        Class268.anInt3441 = 0;
+        FloorOverlayTypeList.anInt3441 = 0;
         boolean bool = true;
         for (int i_19_ = 0; Class347.aByteArrayArray4281.length > i_19_; i_19_++) {
             if (aa_Sub1.mapTiles[i_19_] != -1 && Class347.aByteArrayArray4281[i_19_] == null) {
                 Class347.aByteArrayArray4281[i_19_] = Class367_Sub10.MAPS.method410(-1860, aa_Sub1.mapTiles[i_19_], 0);
                 if (Class347.aByteArrayArray4281[i_19_] == null) {
                     bool = false;
-                    Class268.anInt3441++;
+                    FloorOverlayTypeList.anInt3441++;
                 }
             }
             if (Applet_Sub1.mapLocations[i_19_] != -1 && Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
                 Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.MAPS.method393(Applet_Sub1.mapLocations[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
-                    Class268.anInt3441++;
+                    FloorOverlayTypeList.anInt3441++;
                     bool = false;
                 }
             }
             if (Class295.mapUndergroundTiles[i_19_] != -1 && Class129.aByteArrayArray1887[i_19_] == null) {
                 Class129.aByteArrayArray1887[i_19_] = Class367_Sub10.MAPS.method410(-1860, Class295.mapUndergroundTiles[i_19_], 0);
                 if (Class129.aByteArrayArray1887[i_19_] == null) {
-                    Class268.anInt3441++;
+                    FloorOverlayTypeList.anInt3441++;
                     bool = false;
                 }
             }
@@ -152,14 +152,14 @@ final class Canvas_Sub1 extends Canvas {
                 Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] = Class367_Sub10.MAPS.method410(-1860, r.mapUndergroundLocations[i_19_], 0);
                 if (Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] == null) {
                     bool = false;
-                    Class268.anInt3441++;
+                    FloorOverlayTypeList.anInt3441++;
                 }
             }
             if (Class322.mapNpcs != null && Class348_Sub50.aByteArrayArray7212[i_19_] == null && Class322.mapNpcs[i_19_] != -1) {
                 Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.MAPS.method393(Class322.mapNpcs[i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class348_Sub50.aByteArrayArray7212[i_19_] == null) {
                     bool = false;
-                    Class268.anInt3441++;
+                    FloorOverlayTypeList.anInt3441++;
                 }
             }
         }
@@ -169,7 +169,7 @@ final class Canvas_Sub1 extends Canvas {
                     r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.WORLD_MAP, ((Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"), Class130.membersWorld, (byte) -91);
                 else {
                     bool = false;
-                    Class268.anInt3441++;
+                    FloorOverlayTypeList.anInt3441++;
                 }
             } else r_Sub2.aClass252_10488 = new Class252(0);
         }
@@ -199,7 +199,7 @@ final class Canvas_Sub1 extends Canvas {
                 }
             }
             if (bool) {
-                if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aHa6654);
+                if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3495.method2063(Class348_Sub33.language, 544)) + "<br>(100%)"), 2, Class348_Sub8.aHa6654);
                 Class369_Sub1.method3570(false);
                 Class348_Sub18.method2938((byte) 102);
                 Class239_Sub12.method1772(i ^ 0x41);
@@ -225,14 +225,14 @@ final class Canvas_Sub1 extends Canvas {
                 Class52.method491((byte) -86);
                 Class101_Sub2.method921((byte) 99, false);
                 ha_Sub3.method3936(i + i);
-                Class259.aClass305_3304 = null;
+                VarcTypeList.aClass305_3304 = null;
                 Class55_Sub1.aBoolean5265 = false;
                 Class369_Sub1.method3570(false);
                 System.gc();
                 Class289.method2193(true, (byte) -128);
                 Class36.method354(2);
                 Class291.anInt3720 = Class316.aClass348_Sub51_3959.aClass239_Sub7_7238.method1748(-32350);
-                Class296.aBoolean3767 = Class226.anInt2964 >= 96;
+                Class296.aBoolean3767 = QuickChatCatTypeList.anInt2964 >= 96;
                 Class369.aBoolean4972 = Class316.aClass348_Sub51_3959.aClass239_Sub18_7259.method1800(-32350) == 2;
                 Class186.aBoolean2492 = Class316.aClass348_Sub51_3959.aClass239_Sub28_7230.method1845(i + -32350) == 1;
                 OutputStream_Sub2.anInt101 = Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 1 ? -1 : Class167.anInt2204;
@@ -245,19 +245,19 @@ final class Canvas_Sub1 extends Canvas {
                 Class348_Sub42_Sub3.method3175((byte) -77);
                 if (bool_25_) {
                     Class243.method1879(true);
-                    Class170.aClass237_Sub1_5067 = new Class237_Sub1(1, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, true);
+                    TimedVarDomain.aClass237_Sub1_5067 = new Class237_Sub1(1, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, true);
                     if (Class312.anInt3931 == 0) {
-                        Class348_Sub1_Sub1.method2727((byte) -44, (Class170.aClass237_Sub1_5067), (Class129.aByteArrayArray1887));
+                        Class348_Sub1_Sub1.method2727((byte) -44, (TimedVarDomain.aClass237_Sub1_5067), (Class129.aByteArrayArray1887));
                         Class289.method2193(true, (byte) -119);
                     } else {
-                        Class44.method385(false, Class170.aClass237_Sub1_5067, Class129.aByteArrayArray1887);
+                        Class44.method385(false, TimedVarDomain.aClass237_Sub1_5067, Class129.aByteArrayArray1887);
                         Class289.method2193(true, (byte) -125);
                     }
-                    Class170.aClass237_Sub1_5067.method1679(0, 0, (Class338.aClass237_Sub1_4197.anIntArrayArrayArray3122[0]));
-                    Class170.aClass237_Sub1_5067.method1685(Class348_Sub8.aHa6654, null, 21407, null);
+                    TimedVarDomain.aClass237_Sub1_5067.method1679(0, 0, (Class338.aClass237_Sub1_4197.anIntArrayArrayArray3122[0]));
+                    TimedVarDomain.aClass237_Sub1_5067.method1685(Class348_Sub8.aHa6654, null, 21407, null);
                     Class243.method1879(false);
                 }
-                Class338.aClass237_Sub1_4197.method1685(Class348_Sub8.aHa6654, (!bool_25_ ? null : (Class170.aClass237_Sub1_5067.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108);
+                Class338.aClass237_Sub1_4197.method1685(Class348_Sub8.aHa6654, (!bool_25_ ? null : (TimedVarDomain.aClass237_Sub1_5067.anIntArrayArrayArray3122)), 21407, Class348_Sub45.aClass361Array7108);
                 if (Class312.anInt3931 == 0) {
                     Class289.method2193(true, (byte) -128);
                     Class122.method1090(Class14_Sub4.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197);
@@ -267,7 +267,7 @@ final class Canvas_Sub1 extends Canvas {
                     Class101_Sub3.method944(i + -8212, Class14_Sub4.aByteArrayArray8642, Class338.aClass237_Sub1_4197);
                 }
                 Class348_Sub18.method2938((byte) 66);
-                if (Class226.anInt2964 < 96) Class299_Sub2_Sub1.method2271(31268);
+                if (QuickChatCatTypeList.anInt2964 < 96) Class299_Sub2_Sub1.method2271(31268);
                 Class289.method2193(true, (byte) -119);
                 Class338.aClass237_Sub1_4197.method1680(null, (byte) -125, (!bool_25_ ? null : (Class332.aSArray4142[0])), Class348_Sub8.aHa6654);
                 Class338.aClass237_Sub1_4197.method1697(false, Class348_Sub8.aHa6654, -36);
@@ -275,21 +275,21 @@ final class Canvas_Sub1 extends Canvas {
                 if (bool_25_) {
                     Class243.method1879(true);
                     Class289.method2193(true, (byte) -124);
-                    if (Class312.anInt3931 != 0) Class101_Sub3.method944(-8212, (Class348_Sub23_Sub1.aByteArrayArray8996), Class170.aClass237_Sub1_5067);
-                    else Class122.method1090((Class348_Sub23_Sub1.aByteArrayArray8996), i + 65536, Class170.aClass237_Sub1_5067);
+                    if (Class312.anInt3931 != 0) Class101_Sub3.method944(-8212, (Class348_Sub23_Sub1.aByteArrayArray8996), TimedVarDomain.aClass237_Sub1_5067);
+                    else Class122.method1090((Class348_Sub23_Sub1.aByteArrayArray8996), i + 65536, TimedVarDomain.aClass237_Sub1_5067);
                     Class348_Sub18.method2938((byte) 73);
                     Class289.method2193(true, (byte) -121);
-                    Class170.aClass237_Sub1_5067.method1680((Class348_Sub1_Sub1.aSArray8801[0]), (byte) -127, null, (Class348_Sub8.aHa6654));
-                    Class170.aClass237_Sub1_5067.method1697(true, Class348_Sub8.aHa6654, i + -60);
+                    TimedVarDomain.aClass237_Sub1_5067.method1680((Class348_Sub1_Sub1.aSArray8801[0]), (byte) -127, null, (Class348_Sub8.aHa6654));
+                    TimedVarDomain.aClass237_Sub1_5067.method1697(true, Class348_Sub8.aHa6654, i + -60);
                     Class289.method2193(true, (byte) -126);
                     Class243.method1879(false);
                 }
                 Class348_Sub50.method3419(13022);
                 int i_29_ = Class338.aClass237_Sub1_4197.anInt5824;
-                if (i_29_ > Class355.anInt4372) i_29_ = Class355.anInt4372;
-                if (i_29_ < -1 + Class355.anInt4372) i_29_ = Class355.anInt4372 - 1;
-                if (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 0) Class84.method824(i_29_);
-                else Class84.method824(0);
+                if (i_29_ > QuickChatPhraseTypeList.anInt4372) i_29_ = QuickChatPhraseTypeList.anInt4372;
+                if (i_29_ < -1 + QuickChatPhraseTypeList.anInt4372) i_29_ = QuickChatPhraseTypeList.anInt4372 - 1;
+                if (Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) == 0) SkyBoxTypeList.method824(i_29_);
+                else SkyBoxTypeList.method824(0);
                 for (int i_30_ = 0; i_30_ < 4; i_30_++) {
                     for (int i_31_ = 0; Class367_Sub4.anInt7319 > i_31_; i_31_++) {
                         for (int i_32_ = 0; Class348_Sub40_Sub3.anInt9109 > i_32_; i_32_++)

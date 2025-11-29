@@ -17,7 +17,7 @@ abstract class Class348_Sub1 extends Class348 {
     static int anInt6556;
     static int anInt6557;
     static boolean aBoolean6558 = false;
-    static Class185 aClass185_6559;
+    static LightTypeList lightTypeList; // aClass185_6559
     static int anInt6560;
     static Class46 aClass46_6561 = null;
     int anInt6562;
@@ -44,7 +44,7 @@ abstract class Class348_Sub1 extends Class348 {
         if (i != 11339) method2719(87);
         aClass46_6561 = null;
         anIntArray6547 = null;
-        aClass185_6559 = null;
+        lightTypeList = null;
     }
 
     final int method2720(int i) {

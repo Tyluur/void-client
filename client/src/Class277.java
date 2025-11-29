@@ -7,7 +7,7 @@ final class Class277 {
     int anInt3559;
     boolean aBoolean3560;
     boolean aBoolean3561 = true;
-    Class268 aClass268_3562;
+    FloorOverlayTypeList aFloorOverlayTypeList_3562;
     int anInt3563;
     int anInt3564 = 8;
     static int anInt3565;
@@ -46,7 +46,7 @@ final class Class277 {
                     if (this.anInt3575 == 65535) this.anInt3575 = -1;
                 } else if (i_1_ != 5) {
                     if (i_1_ != 7) {
-                        if (i_1_ == 8) this.aClass268_3562.anInt3447 = this.anInt3573;
+                        if (i_1_ == 8) this.aFloorOverlayTypeList_3562.anInt3447 = this.anInt3573;
                         else if (i_1_ == 9) this.anInt3570 = (class348_sub49.readUnsignedShort(842397944) << 2);
                         else if (i_1_ == 10) this.aBoolean3566 = false;
                         else if (i_1_ == 11) this.anInt3564 = class348_sub49.readUnsignedByte(255);

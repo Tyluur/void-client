@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class326 {
+final class ParamTypeList {
     static int anInt4083;
     static int anInt4084;
     private final Index aIndex_4085;
@@ -55,7 +55,8 @@ final class Class326 {
         anInt4083++;
     }
 
-    Class326(Class230 class230, int i, Index index) {
+    // Class326
+    ParamTypeList(Class230 class230, int i, Index index) {
         do {
             try {
                 aIndex_4085 = index;

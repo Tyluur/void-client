@@ -34,7 +34,7 @@ final class aa_Sub3 extends aa {
                     try {
                         Runtime runtime = Runtime.getRuntime();
                         Long var_long = runtime.maxMemory();
-                        Class226.anInt2964 = 1 + (int) (var_long.longValue() / 1048576L);
+                        QuickChatCatTypeList.anInt2964 = 1 + (int) (var_long.longValue() / 1048576L);
                     } catch (Throwable throwable) {
                         /* empty */
                     }
@@ -43,7 +43,7 @@ final class aa_Sub3 extends aa {
                     break;
                 }
             }
-            Class226.anInt2964 = 96;
+            QuickChatCatTypeList.anInt2964 = 96;
         } while (false);
         int i_2_ = 15 % (i / 51);
         anInt5205++;

@@ -19,7 +19,7 @@ final class Class94 {
     }
 
     static final void method867(boolean bool) {
-        Class348_Sub8.aClass241_6660.method1856((byte) 106);
+        Class348_Sub8.tickScheduler.method1856((byte) 106);
         if (bool != true) OBJECTS = null;
         anInt1535++;
         for (int i = 0; i < 32; i++)
