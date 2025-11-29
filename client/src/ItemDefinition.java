@@ -127,8 +127,8 @@ final class ItemDefinition {
         }
         if (i_5_ == -1) return true;
         boolean bool_8_ = true;
-        if (!this.aItemTypeList_2761.aIndex_3268.method420(-10499, i_5_, 0)) bool_8_ = false;
-        if (i_7_ != -1 && !this.aItemTypeList_2761.aIndex_3268.method420(-10499, i_7_, 0)) bool_8_ = false;
+        if (!this.aItemTypeList_2761.aIndex_3268.requestDownload(-10499, i_5_, 0)) bool_8_ = false;
+        if (i_7_ != -1 && !this.aItemTypeList_2761.aIndex_3268.requestDownload(-10499, i_7_, 0)) bool_8_ = false;
         return bool_8_;
     }
 
@@ -427,9 +427,9 @@ final class ItemDefinition {
         }
         if (i_53_ == -1) return true;
         boolean bool_56_ = true;
-        if (!this.aItemTypeList_2761.aIndex_3268.method420(-10499, i_53_, 0)) bool_56_ = false;
-        if (i_54_ != -1 && !this.aItemTypeList_2761.aIndex_3268.method420(i ^ 0x2902, i_54_, 0)) bool_56_ = false;
-        if (i != i_55_ && !this.aItemTypeList_2761.aIndex_3268.method420(-10499, i_55_, 0)) bool_56_ = false;
+        if (!this.aItemTypeList_2761.aIndex_3268.requestDownload(-10499, i_53_, 0)) bool_56_ = false;
+        if (i_54_ != -1 && !this.aItemTypeList_2761.aIndex_3268.requestDownload(i ^ 0x2902, i_54_, 0)) bool_56_ = false;
+        if (i != i_55_ && !this.aItemTypeList_2761.aIndex_3268.requestDownload(-10499, i_55_, 0)) bool_56_ = false;
         return bool_56_;
     }
 

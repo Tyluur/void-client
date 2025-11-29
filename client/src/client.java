@@ -351,7 +351,7 @@ public final class client extends Applet_Sub1 {
         Class363.method3516(124);
         Class15.method255(6725);
         Class20.method287(51);
-        Class56.method526(85);
+        LoadState.method526(85);
         Class336.method2657((byte) 124);
         Class16.method261((byte) -120);
         Js5TextureSource.method1880(i + -221);
@@ -748,7 +748,7 @@ public final class client extends Applet_Sub1 {
         Class59_Sub1_Sub1.method556(false);
         if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654.method3635((byte) 89);
         if (Class34.aFrame476 != null) {
-            Class56.method527(Class34.aFrame476, Class348_Sub23_Sub1.aClass297_8992, false);
+            LoadState.method527(Class34.aFrame476, Class348_Sub23_Sub1.aClass297_8992, false);
             Class34.aFrame476 = null;
         }
         if (Class348_Sub40_Sub8.aClass238_9165 != null) {

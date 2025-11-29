@@ -91,7 +91,7 @@ final class Class348_Sub42_Sub5 extends Class348_Sub42 {
                 }
             } else {
                 for (int i_18_ = 0; (i_18_ < anIntArray9524.length); i_18_++) {
-                    if (!index.method420(-10499, Class101_Sub2.anInt5713, anIntArray9524[i_18_])) return false;
+                    if (!index.requestDownload(-10499, Class101_Sub2.anInt5713, anIntArray9524[i_18_])) return false;
                 }
             }
             int i_19_ = 0;

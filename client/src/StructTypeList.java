@@ -59,7 +59,8 @@ final class StructTypeList {
         aClass110_Sub1Array1146 = null;
     }
 
-    static final void method699(Index index, byte i, Index index_4_, Index index_5_, Index index_6_) {
+    //method699
+    static final void initInterfaces(Index index, byte i, Index index_4_, Index index_5_, Index index_6_) {
         try {
             Class348_Sub40_Sub28.aIndex_9365 = index_6_;
             anInt1147++;

@@ -22,7 +22,7 @@ final class Class311 implements Runnable {
     static Class46 aClass46_3913;
     private long aLong3914;
     private int anInt3915;
-    private Class56 aClass56_3916;
+    private LoadState aLoadState_3916;
     private long aLong3917;
     static int anInt3918 = 1;
     private Interface16 anInterface16_3919 = null;
@@ -31,25 +31,25 @@ final class Class311 implements Runnable {
 
     final int method2315(byte i) {
         anInt3909++;
-        if (aClass56_3916 == null) return 0;
+        if (aLoadState_3916 == null) return 0;
         if (i < 103) aLong3917 = -58L;
-        int i_0_ = aClass56_3916.method525(-118);
-        if (aClass56_3916.aBoolean1016 && (anInt3915 < aClass56_3916.anInt1021)) return 1 + anInt3915;
-        if (i_0_ < 0 || -1 + Class328_Sub2.aClass56Array6515.length <= i_0_) return 100;
-        if (aClass56_3916.anInt1025 == anInt3915) return aClass56_3916.anInt1021;
-        return aClass56_3916.anInt1025;
+        int i_0_ = aLoadState_3916.method525(-118);
+        if (aLoadState_3916.aBoolean1016 && (anInt3915 < aLoadState_3916.anInt1021)) return 1 + anInt3915;
+        if (i_0_ < 0 || -1 + Class328_Sub2.aLoadStateArray6515.length <= i_0_) return 100;
+        if (aLoadState_3916.anInt1025 == anInt3915) return aLoadState_3916.anInt1021;
+        return aLoadState_3916.anInt1025;
     }
 
-    final synchronized void method2316(Class56 class56, String string, int i, long l, boolean bool) {
+    final synchronized void method2316(LoadState loadState, String string, int i, long l, boolean bool) {
         try {
             if (bool != false) method2318(9);
             aString3921 = string;
             anInt3915 = i;
             anInt3897++;
             aLong3917 = l;
-            aClass56_3916 = class56;
+            aLoadState_3916 = loadState;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ae.J(" + (class56 != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + i + ',' + l + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ae.J(" + (loadState != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + i + ',' + l + ',' + bool + ')'));
         }
     }
 
@@ -107,7 +107,7 @@ final class Class311 implements Runnable {
                     container.getSize();
                     if (Class52.aFrame4904 == container) Class52.aFrame4904.getInsets();
                     aBoolean3908 = false;
-                    if (Class348_Sub8.aHa6654 != null && !(anInterface16_3907 instanceof Class294) && (aClass56_3916.method525(-112) < Class56.aClass56_1041.method525(-127))) Class367_Sub11.method3556(false);
+                    if (Class348_Sub8.aHa6654 != null && !(anInterface16_3907 instanceof Class294) && (aLoadState_3916.method525(-112) < LoadState.SHOW_LOGIN_WINDOW.method525(-127))) Class367_Sub11.method3556(false);
                 } catch (Exception exception) {
                     continue;
                 }
@@ -163,10 +163,10 @@ final class Class311 implements Runnable {
         return aLong3917;
     }
 
-    final Class56 method2324(int i) {
+    final LoadState method2324(int i) {
         anInt3904++;
         if (i <= 45) return null;
-        return aClass56_3916;
+        return aLoadState_3916;
     }
 
     final int method2325(byte i) {

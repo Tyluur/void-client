@@ -224,7 +224,7 @@ final class Class367_Sub4 extends Class367 {
                 else if (i_36_ > Class348_Sub40_Sub19.anIntArray9259[i_15_]) Class348_Sub40_Sub19.anIntArray9259[i_15_] = i_36_;
                 int i_37_ = i_22_ << 9;
                 if (i_37_ >= Class64.anIntArray1127[i_15_]) {
-                    if (Class56.anIntArray1045[i_15_] < i_37_) Class56.anIntArray1045[i_15_] = i_37_;
+                    if (LoadState.anIntArray1045[i_15_] < i_37_) LoadState.anIntArray1045[i_15_] = i_37_;
                 } else Class64.anIntArray1127[i_15_] = i_37_;
             }
             if (!bool_24_) {
@@ -287,7 +287,7 @@ final class Class367_Sub4 extends Class367 {
             Class327.anIntArray4097[i_15_] += 40;
             Class156.anIntArray2117[i_15_] -= 512;
             Class348_Sub40_Sub19.anIntArray9259[i_15_] += 512;
-            Class56.anIntArray1045[i_15_] += 512;
+            LoadState.anIntArray1045[i_15_] += 512;
             Class64.anIntArray1127[i_15_] -= 512;
         }
         return true;

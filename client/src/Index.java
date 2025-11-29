@@ -328,7 +328,7 @@ final class Index {
             if (i != 7195) method403(null, -20, null);
             if (!method392(i_57_, (byte) -40)) return false;
             int i_58_ = aClass291_629.aClass316Array3728[i_57_].method2365(1, Class281.method2108(string_56_, -29286));
-            return method420(i + -17694, i_57_, i_58_);
+            return requestDownload(i + -17694, i_57_, i_58_);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("in.Q(" + (string != null ? "{...}" : "null") + ',' + i + ',' + (string_56_ != null ? "{...}" : "null") + ')'));
         }
@@ -476,7 +476,8 @@ final class Index {
         return aClass314_659.method2335(i_75_, i + -22197);
     }
 
-    final boolean method420(int i, int i_76_, int i_77_) {
+    // method420
+    final boolean requestDownload(int i, int i_76_, int i_77_) {
         anInt638++;
         if (!method418(i_77_, 0, i_76_)) return false;
         if (anObjectArrayArray664[i_76_] != null && anObjectArrayArray664[i_76_][i_77_] != null) return true;
@@ -489,9 +490,9 @@ final class Index {
     final boolean method421(boolean bool, int i) {
         anInt661++;
         if (!method399(bool)) return false;
-        if (aClass291_629.anIntArray3724.length == 1) return method420(-10499, 0, i);
+        if (aClass291_629.anIntArray3724.length == 1) return requestDownload(-10499, 0, i);
         if (!method392(i, (byte) -40)) return false;
-        if (aClass291_629.anIntArray3724[i] == 1) return method420(-10499, i, 0);
+        if (aClass291_629.anIntArray3724[i] == 1) return requestDownload(-10499, i, 0);
         if (bool != false) return false;
         throw new RuntimeException();
     }

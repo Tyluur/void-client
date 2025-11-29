@@ -21,7 +21,7 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
     static BigInteger aBigInteger9657 = Loader.FILE_SERVER_RSA_MODULUS;
     static Sprite aSprite_9658;
     static Sprite aSprite_9659;
-    static Class56 aClass56_9660;
+    static LoadState state; // aClass56_9660
 
     final int method3245(boolean bool) {
         anInt9646++;
@@ -38,7 +38,7 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
 
     public static void method3247(int i) {
         if (i > -49) method3247(49);
-        aClass56_9660 = null;
+        state = null;
         aSprite_9658 = null;
         aSprite_9659 = null;
         aBigInteger9657 = null;

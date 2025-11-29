@@ -3,7 +3,7 @@
  */
 
 class Class328_Sub2 extends Class328 {
-    static Class56[] aClass56Array6515;
+    static LoadState[] aLoadStateArray6515;
     static int anInt6516;
     static Class60 aClass60_6517 = new Class60(4);
     static int anInt6518;
@@ -16,7 +16,7 @@ class Class328_Sub2 extends Class328 {
     }
 
     public static void method2613(int i) {
-        aClass56Array6515 = null;
+        aLoadStateArray6515 = null;
         aClass60_6517 = null;
         if (i != -1) method2613(58);
     }

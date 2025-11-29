@@ -91,9 +91,9 @@ final class Class348_Sub40_Sub6 extends Class348_Sub40 {
 
     static final int method3063(boolean bool) {
         anInt9132++;
-        int i = Class348_Sub42_Sub15.aClass56_9660.method525(-125);
+        int i = Class348_Sub42_Sub15.state.method525(-125);
         if (bool != false) anIntArray9135 = null;
-        if (i < Class328_Sub2.aClass56Array6515.length + -1) Class348_Sub42_Sub15.aClass56_9660 = Class328_Sub2.aClass56Array6515[1 + i];
+        if (i < Class328_Sub2.aLoadStateArray6515.length + -1) Class348_Sub42_Sub15.state = Class328_Sub2.aLoadStateArray6515[1 + i];
         return 100;
     }
 }

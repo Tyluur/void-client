@@ -81,7 +81,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                     Class156.anIntArray2117[i_9_] = 1000000;
                     Class348_Sub40_Sub19.anIntArray9259[i_9_] = 0;
                     Class64.anIntArray1127[i_9_] = 1000000;
-                    Class56.anIntArray1045[i_9_] = 0;
+                    LoadState.anIntArray1045[i_9_] = 0;
                 }
                 int i_10_ = (Class132.aPlayer_1907.x);
                 int i_11_ = (Class132.aPlayer_1907.y);

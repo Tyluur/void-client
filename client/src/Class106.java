@@ -49,7 +49,7 @@ final class Class106 {
 
     static final void method1001(Index index, int i) {
         anInt1634++;
-        Class56.anInt1044 = index.method417("p11_full", i);
+        LoadState.anInt1044 = index.method417("p11_full", i);
         Class17.anInt235 = index.method417("p12_full", i);
         Class291.anInt3736 = index.method417("b12_full", 0);
     }

@@ -279,7 +279,7 @@ final class Class51 {
             for (int i_31_ = 0; aByteArray885.length > i_31_; i_31_++) {
                 if (aByteArray885[i_31_] == i) {
                     for (int i_32_ = 0; (anIntArrayArray907[i_31_].length > i_32_); i_32_++) {
-                        if (!this.aObjectTypeList_933.aIndex_3345.method420(i_30_ ^ 0x5061, anIntArrayArray907[i_31_][i_32_], 0)) return false;
+                        if (!this.aObjectTypeList_933.aIndex_3345.requestDownload(i_30_ ^ 0x5061, anIntArrayArray907[i_31_][i_32_], 0)) return false;
                     }
                     return true;
                 }
@@ -610,7 +610,7 @@ final class Class51 {
         synchronized (this.aObjectTypeList_933.aIndex_3345) {
             for (int i_77_ = 0; i_77_ < anIntArrayArray907.length; i_77_++) {
                 for (int i_78_ = 0; (anIntArrayArray907[i_77_].length > i_78_); i_78_++)
-                    bool &= (this.aObjectTypeList_933.aIndex_3345.method420(-10499, anIntArrayArray907[i_77_][i_78_], 0));
+                    bool &= (this.aObjectTypeList_933.aIndex_3345.requestDownload(-10499, anIntArrayArray907[i_77_][i_78_], 0));
             }
         }
         return bool;

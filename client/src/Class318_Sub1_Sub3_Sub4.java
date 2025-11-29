@@ -140,7 +140,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         if (frame == null) return null;
         if (i_8_ != 14199) return null;
         if (class144.anInt1997 == 2) {
-            Class56.method527(frame, class297, false);
+            LoadState.method527(frame, class297, false);
             return null;
         }
         return frame;

@@ -59,7 +59,7 @@ final class Class34 {
         boolean bool = true;
         synchronized (this.aIDKTypeList_475.aIndex_2054) {
             for (int i_4_ = 0; i_4_ < 5; i_4_++) {
-                if (anIntArray464[i_4_] != -1 && !this.aIDKTypeList_475.aIndex_2054.method420(-10499, anIntArray464[i_4_], 0)) bool = false;
+                if (anIntArray464[i_4_] != -1 && !this.aIDKTypeList_475.aIndex_2054.requestDownload(-10499, anIntArray464[i_4_], 0)) bool = false;
             }
             if (i <= 87) method351(96);
         }
@@ -184,7 +184,7 @@ final class Class34 {
         boolean bool = true;
         synchronized (this.aIDKTypeList_475.aIndex_2054) {
             for (int i_31_ = 0; anIntArray472.length > i_31_; i_31_++) {
-                if (!this.aIDKTypeList_475.aIndex_2054.method420(-10499, anIntArray472[i_31_], 0)) bool = false;
+                if (!this.aIDKTypeList_475.aIndex_2054.requestDownload(-10499, anIntArray472[i_31_], 0)) bool = false;
             }
         }
         return bool;

@@ -712,7 +712,7 @@ final class Class46 {
     static final void method440(int i, byte i_67_) {
         Class348_Sub40_Sub19.anIntArray9259 = new int[i];
         if (i_67_ == -61) {
-            Class56.anIntArray1045 = new int[i];
+            LoadState.anIntArray1045 = new int[i];
             Class156.anIntArray2117 = new int[i];
             anInt825++;
             Class64.anIntArray1127 = new int[i];

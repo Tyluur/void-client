@@ -26,8 +26,8 @@ class Class369 implements Interface12 {
 
     static final void method3568(ha var_ha, int i) {
         anInt4964++;
-        Class240.aFontRenderer_4684 = Class14.method232(var_ha, (byte) -53, true, Class56.anInt1044);
-        Class258_Sub1.aFontMetrics_8527 = Class135.method1151(-25411, var_ha, Class56.anInt1044);
+        Class240.aFontRenderer_4684 = Class14.method232(var_ha, (byte) -53, true, LoadState.anInt1044);
+        Class258_Sub1.aFontMetrics_8527 = Class135.method1151(-25411, var_ha, LoadState.anInt1044);
         if (i != 4) aFontMetrics_4962 = null;
         Applet_Sub1.aFontRenderer_20 = Class14.method232(var_ha, (byte) -53, true, Class17.anInt235);
         Class246.aFontMetrics_3179 = Class135.method1151(-25411, var_ha, Class17.anInt235);

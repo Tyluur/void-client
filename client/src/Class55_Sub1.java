@@ -22,7 +22,7 @@ final class Class55_Sub1 extends Class55 {
         anInt5266++;
         if (anIntArray5269 != null && i < -27) {
             for (int i_0_ = 0; i_0_ < 10 && anIntArray5269.length > anInt5270 + i_0_; i_0_++) {
-                if (aByteArrayArray5275[i_0_] == null && aIndex_5267.method420(-10499, (anIntArray5269[i_0_ + anInt5270]), 0)) aByteArrayArray5275[i_0_] = aIndex_5267.method410(-1860, (anIntArray5269[anInt5270 + i_0_]), 0);
+                if (aByteArrayArray5275[i_0_] == null && aIndex_5267.requestDownload(-10499, (anIntArray5269[i_0_ + anInt5270]), 0)) aByteArrayArray5275[i_0_] = aIndex_5267.method410(-1860, (anIntArray5269[anInt5270 + i_0_]), 0);
             }
         }
     }
@@ -55,7 +55,7 @@ final class Class55_Sub1 extends Class55 {
     final int method516(byte i, byte[] is) throws IOException {
         anInt5273++;
         if (anIntArray5269 == null) {
-            if (!aIndex_5267.method420(-10499, anInt5272, 0)) return 0;
+            if (!aIndex_5267.requestDownload(-10499, anInt5272, 0)) return 0;
             byte[] is_4_ = aIndex_5267.method410(-1860, anInt5272, 0);
             if (is_4_ == null) throw new IllegalStateException("");
             aClass348_Sub49_5276.aByteArray7154 = is_4_;

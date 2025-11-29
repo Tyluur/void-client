@@ -450,7 +450,7 @@ final class Class348_Sub10 extends Class348 {
 
     static final Class348_Sub10 method2795(Index index, int i, int i_115_) {
         if (!method2792(index)) {
-            index.method420(-10499, i, i_115_);
+            index.requestDownload(-10499, i, i_115_);
             return null;
         }
         byte[] is = index.method410(-1860, i, i_115_);

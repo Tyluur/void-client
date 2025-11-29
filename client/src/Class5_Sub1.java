@@ -30,7 +30,7 @@ class Class5_Sub1 extends Class5 {
     static final int[] method184(int i) {
         anInt8346++;
         if (i != 1084489728) method189((byte) 33);
-        return (new int[]{Class56.anInt1044, Class17.anInt235, Class291.anInt3736});
+        return (new int[]{LoadState.anInt1044, Class17.anInt235, Class291.anInt3736});
     }
 
     public final boolean method8(byte i) {
