@@ -256,7 +256,7 @@ final class Class64_Sub3 extends Class64 {
     private final int method680(int i, int i_29_, byte i_30_, short i_31_, int i_32_) {
         if (i != 19995) return -13;
         anInt5582++;
-        int i_33_ = (Class10.anIntArray179[Class184.method1384(i_32_, i ^ 0x54b313bc, i_29_)]);
+        int i_33_ = (Class10.HSL_TO_RGB[Class184.method1384(i_32_, i ^ 0x54b313bc, i_29_)]);
         if (i_31_ != -1) {
             Class12 class12 = aHa_Sub2_5598.aD4579.method3(i_31_ & 0xffff, -6662);
             int i_34_ = 0xff & class12.aByte201;
@@ -791,7 +791,7 @@ final class Class64_Sub3 extends Class64 {
             for (int i_203_ = 0; i_203_ < anInt5536; i_203_++) {
                 Class118 class118 = aClass118Array5621[i_203_];
                 Class48 class48 = aClass48Array5596[i_203_];
-                class48.anInt858 = ((0xffffff & (Class10.anIntArray179[0xffff & (aShortArray5580[class118.anInt1783])])) | class48.anInt858 & ~0xffffff);
+                class48.anInt858 = ((0xffffff & (Class10.HSL_TO_RGB[0xffff & (aShortArray5580[class118.anInt1783])])) | class48.anInt858 & ~0xffffff);
             }
         }
         if (aClass123_5610 != null) aClass123_5610.anInterface2_1811 = null;
@@ -1283,7 +1283,7 @@ final class Class64_Sub3 extends Class64 {
                 for (int i_290_ = 0; i_290_ < anInt5536; i_290_++) {
                     Class118 class118 = aClass118Array5621[i_290_];
                     Class48 class48 = aClass48Array5596[i_290_];
-                    class48.anInt858 = ((0xffffff & (Class10.anIntArray179[0xffff & (aShortArray5580[class118.anInt1783])])) | class48.anInt858 & ~0xffffff);
+                    class48.anInt858 = ((0xffffff & (Class10.HSL_TO_RGB[0xffff & (aShortArray5580[class118.anInt1783])])) | class48.anInt858 & ~0xffffff);
                 }
             }
             if (aClass123_5610 != null) aClass123_5610.anInterface2_1811 = null;
@@ -1791,7 +1791,7 @@ final class Class64_Sub3 extends Class64 {
             for (int i_383_ = 0; i_383_ < anInt5536; i_383_++) {
                 Class118 class118 = aClass118Array5621[i_383_];
                 Class48 class48 = aClass48Array5596[i_383_];
-                class48.anInt858 = ((Class10.anIntArray179[(aShortArray5580[class118.anInt1783] & 0xffff)]) & 0xffffff | ~0xffffff & class48.anInt858);
+                class48.anInt858 = ((Class10.HSL_TO_RGB[(aShortArray5580[class118.anInt1783] & 0xffff)]) & 0xffffff | ~0xffffff & class48.anInt858);
             }
         }
         if (aClass123_5610 != null) aClass123_5610.anInterface2_1811 = null;
@@ -2095,7 +2095,7 @@ final class Class64_Sub3 extends Class64 {
                         for (int i_466_ = 0; anInt5536 > i_466_; i_466_++) {
                             Class118 class118 = aClass118Array5621[i_466_];
                             Class48 class48 = aClass48Array5596[i_466_];
-                            class48.anInt858 = (0xffffff & (Class10.anIntArray179[(aShortArray5580[(class118.anInt1783)]) & 0xffff]) | ~0xffffff & class48.anInt858);
+                            class48.anInt858 = (0xffffff & (Class10.HSL_TO_RGB[(aShortArray5580[(class118.anInt1783)]) & 0xffff]) | ~0xffffff & class48.anInt858);
                         }
                     }
                 }
@@ -2265,7 +2265,7 @@ final class Class64_Sub3 extends Class64 {
                 for (int i_504_ = 0; i_504_ < anInt5536; i_504_++) {
                     Class118 class118 = aClass118Array5621[i_504_];
                     Class48 class48 = aClass48Array5596[i_504_];
-                    class48.anInt858 = (((Class10.anIntArray179[0xffff & (aShortArray5580[class118.anInt1783])]) & 0xffffff) | class48.anInt858 & ~0xffffff);
+                    class48.anInt858 = (((Class10.HSL_TO_RGB[0xffff & (aShortArray5580[class118.anInt1783])]) & 0xffffff) | class48.anInt858 & ~0xffffff);
                 }
             }
         } else if (i == 8) {
@@ -2743,7 +2743,7 @@ final class Class64_Sub3 extends Class64 {
                         for (int i_669_ = 0; anInt5536 > i_669_; i_669_++) {
                             Class118 class118 = aClass118Array5621[i_669_];
                             Class48 class48 = aClass48Array5596[i_669_];
-                            class48.anInt858 = (0xffffff & (Class10.anIntArray179[(aShortArray5580[(class118.anInt1783)]) & 0xffff]) | class48.anInt858 & ~0xffffff);
+                            class48.anInt858 = (0xffffff & (Class10.HSL_TO_RGB[(aShortArray5580[(class118.anInt1783)]) & 0xffff]) | class48.anInt858 & ~0xffffff);
                         }
                     }
                 }
@@ -2969,7 +2969,7 @@ final class Class64_Sub3 extends Class64 {
                             }
                         }
                         if (i_712_ == -1) throw new RuntimeException();
-                        int i_714_ = ((Class10.anIntArray179[0xffff & (mesh.faceColour[meshBillboard.anInt2155])]) & 0xffffff);
+                        int i_714_ = ((Class10.HSL_TO_RGB[0xffff & (mesh.faceColour[meshBillboard.anInt2155])]) & 0xffffff);
                         i_714_ = i_714_ | (255 + -((mesh.faceAlpha) == null ? 0 : (mesh.faceAlpha[(meshBillboard.anInt2155)])) << 24);
                         aClass118Array5621[i_711_] = new Class118(i_712_, (mesh.faceA[meshBillboard.anInt2155]), (mesh.faceB[meshBillboard.anInt2155]), (mesh.faceC[meshBillboard.anInt2155]), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, meshBillboard.anInt2158);
                         aClass48Array5596[i_711_] = new Class48(i_714_);

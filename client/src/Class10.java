@@ -10,7 +10,7 @@ final class Class10 {
     Class348_Sub16_Sub5 aClass348_Sub16_Sub5_176;
     int anInt177;
     int anInt178;
-    static int[] anIntArray179;
+    static int[] HSL_TO_RGB;
     byte aByte180;
     static int anInt181;
     static int anInt182;
@@ -35,7 +35,7 @@ final class Class10 {
     public static void method218(byte i) {
         if (i < 101) method218((byte) -85);
         anIntArray187 = null;
-        anIntArray179 = null;
+        HSL_TO_RGB = null;
         aClass230_186 = null;
         seqTypeList = null;
         anIntArrayArray174 = null;

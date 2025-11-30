@@ -5,7 +5,7 @@
 final class Class126 implements Interface14 {
     int anInt4981;
     int anInt4982;
-    static int[] anIntArray4983;
+    static int[] HSV_TO_RGB;
     static Index NATIVE_LIBRARIES;
     static int anInt4985 = 0;
     static int anInt4986;
@@ -22,7 +22,7 @@ final class Class126 implements Interface14 {
     public static void method1112(int i) {
         if (i != 1) aClass267Array4987 = null;
         NATIVE_LIBRARIES = null;
-        anIntArray4983 = null;
+        HSV_TO_RGB = null;
         aClass267Array4987 = null;
     }
 

@@ -369,7 +369,7 @@ final class Class211 {
                 this.aShortArray2742[i_48_] = (short) Class273.method2057(i_51_, i_50_ << 8);
             }
             i_46_ = ((i_46_ << Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037);
-            int i_52_ = (Class10.anIntArray179 == null ? (Class126.anIntArray4983[SkyBoxSphereTypeList.method303(packet.readUnsignedShort(842397944), 30) & 0xffff]) : (Class10.anIntArray179[packet.readUnsignedShort(842397944)]));
+            int i_52_ = (Class10.HSL_TO_RGB == null ? (Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303(packet.readUnsignedShort(842397944), 30) & 0xffff]) : (Class10.HSL_TO_RGB[packet.readUnsignedShort(842397944)]));
             int i_53_ = packet.readUnsignedByte(255);
             anInt2739 = (0xe0 & i_53_) << 3;
             this.anInt2734 = 0x1f & i_53_;

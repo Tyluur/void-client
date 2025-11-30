@@ -40,12 +40,12 @@ final class s_Sub1 extends s {
         if (is != null && is.length != 0) {
             for (int i_12_ = 0; i_12_ < is_4_.length; i_12_++) {
                 if (is_4_[i_12_] == -1) is_4_[i_12_] = 0;
-                else is_4_[i_12_] = ((Class126.anIntArray4983[SkyBoxSphereTypeList.method303(is_4_[i_12_], 30) & 0xffff]) << 8) | 0xff;
+                else is_4_[i_12_] = ((Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303(is_4_[i_12_], 30) & 0xffff]) << 8) | 0xff;
             }
             if (is_5_ != null) {
                 for (int i_13_ = 0; i_13_ < is_5_.length; i_13_++) {
                     if (is_5_[i_13_] == -1) is_5_[i_13_] = 0;
-                    else is_5_[i_13_] = ((Class126.anIntArray4983[SkyBoxSphereTypeList.method303(is_5_[i_13_], 30) & 0xffff]) << 8) | 0xff;
+                    else is_5_[i_13_] = ((Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303(is_5_[i_13_], 30) & 0xffff]) << 8) | 0xff;
                 }
             }
             if (bool_11_) {
@@ -321,11 +321,11 @@ final class s_Sub1 extends s {
                             } else {
                                 if (bool_57_) {
                                     i_59_ = is_6_[i_54_];
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_54_] = (Class126.anIntArray4983[(SkyBoxSphereTypeList.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_54_] = (Class126.HSV_TO_RGB[(SkyBoxSphereTypeList.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
                                     i_59_ = is_6_[i_55_];
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_55_] = (Class126.anIntArray4983[(SkyBoxSphereTypeList.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_55_] = (Class126.HSV_TO_RGB[(SkyBoxSphereTypeList.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
                                     i_59_ = is_6_[i_56_];
-                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_56_] = (Class126.anIntArray4983[(SkyBoxSphereTypeList.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
+                                    if (i_59_ != -1 && !(aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aBoolean209)) class145.anIntArray2001[i_56_] = (Class126.HSV_TO_RGB[(SkyBoxSphereTypeList.method303((aHa_Sub1_8217.aD4579.method3(i_59_, -6662).aShort208) & 0xffff, 30)) & 0xffff]);
                                 }
                                 class145.aShortArray2008[i_53_] = (short) -1;
                             }
@@ -1185,7 +1185,7 @@ final class s_Sub1 extends s {
                                 if (i_383_ != -1)
                                     class109.method1022((float) i_379_, (float) i_380_, (float) i_381_, (float) i_376_, (float) i_377_, (float) i_378_, (float) is_302_[i_373_], (float) is_302_[i_374_], (float) is_302_[i_375_], (float) (Class291.method2198(0, (class236.aShortArray3088[i_373_]), i_383_)), (float) (Class291.method2198(0, (class236.aShortArray3088[i_374_]), i_383_)), (float) (Class291.method2198(0, (class236.aShortArray3088[i_375_]), i_383_)));
                             } else
-                                class109.method1024((float) i_379_, (float) i_380_, (float) i_381_, (float) i_376_, (float) i_377_, (float) i_378_, (float) is_302_[i_373_], (float) is_302_[i_374_], (float) is_302_[i_375_], ((float) (class236.aShortArray3096[i_373_]) / (float) this.anInt4592), ((float) (class236.aShortArray3096[i_374_]) / (float) this.anInt4592), ((float) (class236.aShortArray3096[i_375_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_373_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_374_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_375_]) / (float) this.anInt4592), ~0xffffff | ((Class126.anIntArray4983[(class236.aShortArray3088[i_373_]) & 0xffff]) & 0xffffff), ~0xffffff | ((Class126.anIntArray4983[(class236.aShortArray3088[i_374_]) & 0xffff]) & 0xffffff), ~0xffffff | ((Class126.anIntArray4983[(class236.aShortArray3088[i_375_]) & 0xffff]) & 0xffffff), 0, 0, 0, 0, i_382_);
+                                class109.method1024((float) i_379_, (float) i_380_, (float) i_381_, (float) i_376_, (float) i_377_, (float) i_378_, (float) is_302_[i_373_], (float) is_302_[i_374_], (float) is_302_[i_375_], ((float) (class236.aShortArray3096[i_373_]) / (float) this.anInt4592), ((float) (class236.aShortArray3096[i_374_]) / (float) this.anInt4592), ((float) (class236.aShortArray3096[i_375_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_373_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_374_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_375_]) / (float) this.anInt4592), ~0xffffff | ((Class126.HSV_TO_RGB[(class236.aShortArray3088[i_373_]) & 0xffff]) & 0xffffff), ~0xffffff | ((Class126.HSV_TO_RGB[(class236.aShortArray3088[i_374_]) & 0xffff]) & 0xffffff), ~0xffffff | ((Class126.HSV_TO_RGB[(class236.aShortArray3088[i_375_]) & 0xffff]) & 0xffffff), 0, 0, 0, 0, i_382_);
                         }
                     }
                 } else {
@@ -1207,7 +1207,7 @@ final class s_Sub1 extends s {
                                 if (i_395_ != -1)
                                     class109.method1022((float) i_391_, (float) i_392_, (float) i_393_, (float) i_388_, (float) i_389_, (float) i_390_, (float) is_302_[i_385_], (float) is_302_[i_386_], (float) is_302_[i_387_], (float) (Class291.method2198(0, (class236.aShortArray3088[i_385_]), i_395_)), (float) (Class291.method2198(0, (class236.aShortArray3088[i_386_]), i_395_)), (float) (Class291.method2198(0, (class236.aShortArray3088[i_387_]), i_395_)));
                             } else
-                                class109.method1024((float) i_391_, (float) i_392_, (float) i_393_, (float) i_388_, (float) i_389_, (float) i_390_, (float) is_302_[i_385_], (float) is_302_[i_386_], (float) is_302_[i_387_], ((float) (class236.aShortArray3096[i_385_]) / (float) this.anInt4592), ((float) (class236.aShortArray3096[i_386_]) / (float) this.anInt4592), ((float) (class236.aShortArray3096[i_387_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_385_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_386_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_387_]) / (float) this.anInt4592), ~0xffffff | ((Class126.anIntArray4983[(class236.aShortArray3088[i_385_]) & 0xffff]) & 0xffffff), ~0xffffff | ((Class126.anIntArray4983[(class236.aShortArray3088[i_386_]) & 0xffff]) & 0xffffff), ~0xffffff | ((Class126.anIntArray4983[(class236.aShortArray3088[i_387_]) & 0xffff]) & 0xffffff), 0, 0, 0, 0, i_394_);
+                                class109.method1024((float) i_391_, (float) i_392_, (float) i_393_, (float) i_388_, (float) i_389_, (float) i_390_, (float) is_302_[i_385_], (float) is_302_[i_386_], (float) is_302_[i_387_], ((float) (class236.aShortArray3096[i_385_]) / (float) this.anInt4592), ((float) (class236.aShortArray3096[i_386_]) / (float) this.anInt4592), ((float) (class236.aShortArray3096[i_387_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_385_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_386_]) / (float) this.anInt4592), ((float) (class236.aShortArray3094[i_387_]) / (float) this.anInt4592), ~0xffffff | ((Class126.HSV_TO_RGB[(class236.aShortArray3088[i_385_]) & 0xffff]) & 0xffffff), ~0xffffff | ((Class126.HSV_TO_RGB[(class236.aShortArray3088[i_386_]) & 0xffff]) & 0xffffff), ~0xffffff | ((Class126.HSV_TO_RGB[(class236.aShortArray3088[i_387_]) & 0xffff]) & 0xffffff), 0, 0, 0, 0, i_394_);
                         }
                     }
                 }
@@ -1346,14 +1346,14 @@ final class s_Sub1 extends s {
                 if (((i_316_ - i_318_) * (i_315_ - i_319_) - (i_317_ - i_319_) * (i_314_ - i_318_)) > 0) {
                     class109.aBoolean1671 = (i_316_ < 0 || i_318_ < 0 || i_314_ < 0 || i_316_ > class109.anInt1679 || i_318_ > class109.anInt1679 || i_314_ > class109.anInt1679);
                     if (class102.aShort1605 >= 0)
-                        class109.method1024((float) i_317_, (float) i_319_, (float) i_315_, (float) i_316_, (float) i_318_, (float) i_314_, f_310_, f_311_, f_309_, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, (~0xffffff | (Class126.anIntArray4983[(class102.aShort1602 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.anIntArray4983[(class102.aShort1604 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.anIntArray4983[(class102.aShort1603 & 0xffff)]) & 0xffffff), 0, 0, 0, 0, class102.aShort1605);
+                        class109.method1024((float) i_317_, (float) i_319_, (float) i_315_, (float) i_316_, (float) i_318_, (float) i_314_, f_310_, f_311_, f_309_, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1602 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1604 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1603 & 0xffff)]) & 0xffffff), 0, 0, 0, 0, class102.aShort1605);
                     else
                         class109.method1022((float) i_317_, (float) i_319_, (float) i_315_, (float) i_316_, (float) i_318_, (float) i_314_, (float) (int) f_310_, (float) (int) f_311_, (float) (int) f_309_, (float) (class102.aShort1602 & 0xffff), (float) (class102.aShort1604 & 0xffff), (float) (class102.aShort1603 & 0xffff));
                 }
                 if (((i_312_ - i_314_) * (i_319_ - i_315_) - (i_313_ - i_315_) * (i_318_ - i_314_)) > 0) {
                     class109.aBoolean1671 = (i_312_ < 0 || i_314_ < 0 || i_318_ < 0 || i_312_ > class109.anInt1679 || i_314_ > class109.anInt1679 || i_318_ > class109.anInt1679);
                     if (class102.aShort1605 >= 0)
-                        class109.method1024((float) i_313_, (float) i_315_, (float) i_319_, (float) i_312_, (float) i_314_, (float) i_318_, f, f_309_, f_311_, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 1.0F, (~0xffffff | (Class126.anIntArray4983[(class102.aShort1601 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.anIntArray4983[(class102.aShort1603 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.anIntArray4983[(class102.aShort1604 & 0xffff)]) & 0xffffff), 0, 0, 0, 0, class102.aShort1605);
+                        class109.method1024((float) i_313_, (float) i_315_, (float) i_319_, (float) i_312_, (float) i_314_, (float) i_318_, f, f_309_, f_311_, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 1.0F, (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1601 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1603 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1604 & 0xffff)]) & 0xffffff), 0, 0, 0, 0, class102.aShort1605);
                     else
                         class109.method1022((float) i_313_, (float) i_315_, (float) i_319_, (float) i_312_, (float) i_314_, (float) i_318_, (float) (int) f, (float) (int) f_309_, (float) (int) f_311_, (float) (class102.aShort1601 & 0xffff), (float) (class102.aShort1603 & 0xffff), (float) (class102.aShort1604 & 0xffff));
                 }
@@ -1361,14 +1361,14 @@ final class s_Sub1 extends s {
                 if (((i_316_ - i_318_) * (i_315_ - i_319_) - (i_317_ - i_319_) * (i_314_ - i_318_)) > 0) {
                     class109.aBoolean1671 = (i_316_ < 0 || i_318_ < 0 || i_314_ < 0 || i_316_ > class109.anInt1679 || i_318_ > class109.anInt1679 || i_314_ > class109.anInt1679);
                     if (class102.aShort1605 >= 0)
-                        class109.method1024((float) i_317_, (float) i_319_, (float) i_315_, (float) i_316_, (float) i_318_, (float) i_314_, f_310_, f_311_, f_309_, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, (~0xffffff | (Class126.anIntArray4983[(class102.aShort1602 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.anIntArray4983[(class102.aShort1604 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.anIntArray4983[(class102.aShort1603 & 0xffff)]) & 0xffffff), 0, 0, 0, 0, class102.aShort1605);
+                        class109.method1024((float) i_317_, (float) i_319_, (float) i_315_, (float) i_316_, (float) i_318_, (float) i_314_, f_310_, f_311_, f_309_, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1602 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1604 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1603 & 0xffff)]) & 0xffffff), 0, 0, 0, 0, class102.aShort1605);
                     else
                         class109.method1022((float) i_317_, (float) i_319_, (float) i_315_, (float) i_316_, (float) i_318_, (float) i_314_, (float) (int) f_310_, (float) (int) f_311_, (float) (int) f_309_, (float) (class102.aShort1602 & 0xffff), (float) (class102.aShort1604 & 0xffff), (float) (class102.aShort1603 & 0xffff));
                 }
                 if (((i_312_ - i_314_) * (i_319_ - i_315_) - (i_313_ - i_315_) * (i_318_ - i_314_)) > 0) {
                     class109.aBoolean1671 = (i_312_ < 0 || i_314_ < 0 || i_318_ < 0 || i_312_ > class109.anInt1679 || i_314_ > class109.anInt1679 || i_318_ > class109.anInt1679);
                     if (class102.aShort1605 >= 0)
-                        class109.method1024((float) i_313_, (float) i_315_, (float) i_319_, (float) i_312_, (float) i_314_, (float) i_318_, f, f_309_, f_311_, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 1.0F, (~0xffffff | (Class126.anIntArray4983[(class102.aShort1601 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.anIntArray4983[(class102.aShort1603 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.anIntArray4983[(class102.aShort1604 & 0xffff)]) & 0xffffff), 0, 0, 0, 0, class102.aShort1605);
+                        class109.method1024((float) i_313_, (float) i_315_, (float) i_319_, (float) i_312_, (float) i_314_, (float) i_318_, f, f_309_, f_311_, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 1.0F, (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1601 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1603 & 0xffff)]) & 0xffffff), (~0xffffff | (Class126.HSV_TO_RGB[(class102.aShort1604 & 0xffff)]) & 0xffffff), 0, 0, 0, 0, class102.aShort1605);
                     else
                         class109.method1022((float) i_313_, (float) i_315_, (float) i_319_, (float) i_312_, (float) i_314_, (float) i_318_, (float) (int) f, (float) (int) f_309_, (float) (int) f_311_, (float) (class102.aShort1601 & 0xffff), (float) (class102.aShort1603 & 0xffff), (float) (class102.aShort1604 & 0xffff));
                 }

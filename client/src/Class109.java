@@ -481,7 +481,7 @@ final class Class109 {
                         if (this.anInt1674 == 0) {
                             if (i_62_ > 0) {
                                 do {
-                                    i_61_ = Class126.anIntArray4983[(int) f];
+                                    i_61_ = Class126.HSV_TO_RGB[(int) f];
                                     f += f_65_;
                                     if (f_66_ < fs[++i]) {
                                         is[i] = i_61_;
@@ -507,7 +507,7 @@ final class Class109 {
                             }
                             i_62_ = i_64_ - i_63_ & 0x3;
                             if (i_62_ > 0) {
-                                i_61_ = Class126.anIntArray4983[(int) f];
+                                i_61_ = Class126.HSV_TO_RGB[(int) f];
                                 do {
                                     if (f_66_ < fs[++i]) {
                                         is[i] = i_61_;
@@ -521,7 +521,7 @@ final class Class109 {
                             int i_69_ = 256 - this.anInt1674;
                             if (i_62_ > 0) {
                                 do {
-                                    i_61_ = Class126.anIntArray4983[(int) f];
+                                    i_61_ = Class126.HSV_TO_RGB[(int) f];
                                     f += f_65_;
                                     i_61_ = (((i_61_ & 0xff00ff) * i_69_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_69_ >> 8 & 0xff00));
                                     if (f_66_ < fs[++i]) {
@@ -552,7 +552,7 @@ final class Class109 {
                             }
                             i_62_ = i_64_ - i_63_ & 0x3;
                             if (i_62_ <= 0) break;
-                            i_61_ = Class126.anIntArray4983[(int) f];
+                            i_61_ = Class126.HSV_TO_RGB[(int) f];
                             i_61_ = (((i_61_ & 0xff00ff) * i_69_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_69_ >> 8 & 0xff00));
                             do {
                                 if (f_66_ < fs[++i]) {
@@ -569,7 +569,7 @@ final class Class109 {
                     if (this.anInt1674 == 0) {
                         do {
                             if (f_66_ < fs[++i]) {
-                                is[i] = Class126.anIntArray4983[(int) f];
+                                is[i] = Class126.HSV_TO_RGB[(int) f];
                                 fs[i] = f_66_;
                             }
                             f_66_ += f_67_;
@@ -581,7 +581,7 @@ final class Class109 {
                     int i_76_ = 256 - this.anInt1674;
                     do {
                         if (f_66_ < fs[++i]) {
-                            i_61_ = Class126.anIntArray4983[(int) f];
+                            i_61_ = Class126.HSV_TO_RGB[(int) f];
                             i_61_ = (((i_61_ & 0xff00ff) * i_76_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_76_ >> 8 & 0xff00));
                             int i_77_ = is[i];
                             is[i] = (i_61_ + ((i_77_ & 0xff00ff) * i_75_ >> 8 & 0xff00ff) + ((i_77_ & 0xff00) * i_75_ >> 8 & 0xff00));
@@ -599,7 +599,7 @@ final class Class109 {
                         if (this.anInt1674 == 0) {
                             if (i_62_ > 0) {
                                 do {
-                                    i_61_ = Class126.anIntArray4983[(int) f];
+                                    i_61_ = Class126.HSV_TO_RGB[(int) f];
                                     f += f_65_;
                                     if (f_66_ < fs[++i]) is[i] = i_61_;
                                     f_66_ += f_67_;
@@ -613,7 +613,7 @@ final class Class109 {
                             }
                             i_62_ = i_64_ - i_63_ & 0x3;
                             if (i_62_ > 0) {
-                                i_61_ = Class126.anIntArray4983[(int) f];
+                                i_61_ = Class126.HSV_TO_RGB[(int) f];
                                 do {
                                     if (f_66_ < fs[++i]) is[i] = i_61_;
                                     f_66_ += f_67_;
@@ -624,7 +624,7 @@ final class Class109 {
                             int i_79_ = 256 - this.anInt1674;
                             if (i_62_ > 0) {
                                 do {
-                                    i_61_ = Class126.anIntArray4983[(int) f];
+                                    i_61_ = Class126.HSV_TO_RGB[(int) f];
                                     f += f_65_;
                                     i_61_ = (((i_61_ & 0xff00ff) * i_79_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_79_ >> 8 & 0xff00));
                                     if (f_66_ < fs[++i]) {
@@ -651,7 +651,7 @@ final class Class109 {
                             }
                             i_62_ = i_64_ - i_63_ & 0x3;
                             if (i_62_ <= 0) break;
-                            i_61_ = Class126.anIntArray4983[(int) f];
+                            i_61_ = Class126.HSV_TO_RGB[(int) f];
                             i_61_ = (((i_61_ & 0xff00ff) * i_79_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_79_ >> 8 & 0xff00));
                             do {
                                 if (f_66_ < fs[++i]) {
@@ -666,7 +666,7 @@ final class Class109 {
                     i_62_ = i_64_ - i_63_;
                     if (this.anInt1674 == 0) {
                         do {
-                            if (f_66_ < fs[++i]) is[i] = Class126.anIntArray4983[(int) f];
+                            if (f_66_ < fs[++i]) is[i] = Class126.HSV_TO_RGB[(int) f];
                             f_66_ += f_67_;
                             f += f_65_;
                         } while (--i_62_ > 0);
@@ -676,7 +676,7 @@ final class Class109 {
                     int i_86_ = 256 - this.anInt1674;
                     do {
                         if (f_66_ < fs[++i]) {
-                            i_61_ = Class126.anIntArray4983[(int) f];
+                            i_61_ = Class126.HSV_TO_RGB[(int) f];
                             i_61_ = (((i_61_ & 0xff00ff) * i_86_ >> 8 & 0xff00ff) + ((i_61_ & 0xff00) * i_86_ >> 8 & 0xff00));
                             int i_87_ = is[i];
                             is[i] = (i_61_ + ((i_87_ & 0xff00ff) * i_85_ >> 8 & 0xff00ff) + ((i_87_ & 0xff00) * i_85_ >> 8 & 0xff00));
@@ -2401,9 +2401,9 @@ final class Class109 {
 
     final void method1022(float f, float f_314_, float f_315_, float f_316_, float f_317_, float f_318_, float f_319_, float f_320_, float f_321_, float f_322_, float f_323_, float f_324_) {
         if (aBoolean1675) {
-            aHa_Sub1_1666.method3645((int) f, (int) f_316_, (int) f_317_, -8003, Class126.anIntArray4983[(int) f_322_], (int) f_314_);
-            aHa_Sub1_1666.method3645((int) f_314_, (int) f_317_, (int) f_318_, -8003, Class126.anIntArray4983[(int) f_322_], (int) f_315_);
-            aHa_Sub1_1666.method3645((int) f_315_, (int) f_318_, (int) f_316_, -8003, Class126.anIntArray4983[(int) f_322_], (int) f);
+            aHa_Sub1_1666.method3645((int) f, (int) f_316_, (int) f_317_, -8003, Class126.HSV_TO_RGB[(int) f_322_], (int) f_314_);
+            aHa_Sub1_1666.method3645((int) f_314_, (int) f_317_, (int) f_318_, -8003, Class126.HSV_TO_RGB[(int) f_322_], (int) f_315_);
+            aHa_Sub1_1666.method3645((int) f_315_, (int) f_318_, (int) f_316_, -8003, Class126.HSV_TO_RGB[(int) f_322_], (int) f);
         } else {
             float f_325_ = f_317_ - f_316_;
             float f_326_ = f_314_ - f;

@@ -55,9 +55,10 @@ final class Class348_Sub6 extends Node {
         this.anInt6630 = i;
     }
 
-    static final void method2770(int i) {
+    // method2770
+    static final void initHSLToRGB(int i) {
         anInt6638++;
-        if (Class10.anIntArray179 == null) Class10.anIntArray179 = new int[65536];
+        if (Class10.HSL_TO_RGB == null) Class10.HSL_TO_RGB = new int[65536];
         else return;
         double d = 0.7 + (0.03 * Math.random() - 0.015);
         for (int i_5_ = 0; i_5_ < 65536; i_5_++) {
@@ -101,7 +102,7 @@ final class Class348_Sub6 extends Node {
             int i_18_ = (int) (d_10_ * 256.0);
             int i_19_ = (int) (d_11_ * 256.0);
             int i_20_ = (i_18_ << 8) + (i_17_ << 16) - -i_19_;
-            Class10.anIntArray179[i_5_] = i_20_;
+            Class10.HSL_TO_RGB[i_5_] = i_20_;
         }
         if (i != 2) anInt6634 = 92;
     }

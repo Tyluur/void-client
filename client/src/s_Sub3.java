@@ -269,7 +269,7 @@ final class s_Sub3 extends s {
                                 int i_104_ = i_88_ * (i_83_ & 0x7f) >> 7;
                                 if (i_104_ < 2) i_104_ = 2;
                                 else if (i_104_ > 126) i_104_ = 126;
-                                i_89_ = (Class10.anIntArray179[i_104_ | i_83_ & 0xff80]);
+                                i_89_ = (Class10.HSL_TO_RGB[i_104_ | i_83_ & 0xff80]);
                                 if ((this.anInt8294 & 0x7) == 0) {
                                     f_103_ = ((f_91_ * (this.aHa_Sub3_8322.aFloatArray8170[0])) + f_90_ * (this.aHa_Sub3_8322.aFloatArray8170[1]) + (this.aHa_Sub3_8322.aFloatArray8170[2]) * f_92_);
                                     f_103_ = ((f_103_ * (!(f_103_ > 0.0F) ? (this.aHa_Sub3_8322.aFloat8186) : (this.aHa_Sub3_8322.aFloat8174))) + (this.aHa_Sub3_8322.aFloat8093));
@@ -285,7 +285,7 @@ final class s_Sub3 extends s {
                                     if (i_107_ >= 2) {
                                         if (i_107_ > 126) i_107_ = 126;
                                     } else i_107_ = 2;
-                                    i_106_ = (Class10.anIntArray179[i_107_ | i_84_ & 0xff80]);
+                                    i_106_ = (Class10.HSL_TO_RGB[i_107_ | i_84_ & 0xff80]);
                                     if ((0x7 & this.anInt8294) == 0) {
                                         float f_108_ = ((this.aHa_Sub3_8322.aFloatArray8170[2]) * f_92_ + (f_90_ * (this.aHa_Sub3_8322.aFloatArray8170[1]) + ((this.aHa_Sub3_8322.aFloatArray8170[0]) * f_91_)));
                                         f_108_ = ((this.aHa_Sub3_8322.aFloat8093) + (f_103_ > 0.0F ? (this.aHa_Sub3_8322.aFloat8174) : (this.aHa_Sub3_8322.aFloat8186)) * f_103_);
