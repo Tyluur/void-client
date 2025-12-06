@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class oa extends ha implements Interface19 {
+final class oa extends Toolkit implements Interface19 {
     private ya aYa5121;
     private static final int[] anIntArray5122 = new int[Math.max(Math.max(104, 20), 24573)];
     long nativeid = 0L;
@@ -470,7 +470,7 @@ final class oa extends ha implements Interface19 {
                 Class59_Sub2_Sub1.method566(false, true, (byte) 23);
                 aBoolean5142 = true;
                 aMatrix_5131 = new ja();
-                method3638(new ja());
+                setCamera(new ja());
                 method3631(1);
                 method3659(0);
                 if (canvas == null) break;
@@ -564,7 +564,7 @@ final class oa extends ha implements Interface19 {
         /* empty */
     }
 
-    final void method3638(Matrix matrix) {
+    final void setCamera(Matrix matrix) {
         aMatrix_5125 = matrix;
         ma(((ja) matrix).nativeid);
     }
@@ -573,7 +573,7 @@ final class oa extends ha implements Interface19 {
         method3677(aP5137.aCanvas5147);
     }
 
-    final s method3648(int i, int i_222_, int[][] is, int[][] is_223_, int i_224_, int i_225_, int i_226_) {
+    final Ground method3648(int i, int i_222_, int[][] is, int[][] is_223_, int i_224_, int i_225_, int i_226_) {
         return new t(this, aYa5121, i, i_222_, is, is_223_, i_224_, i_225_, i_226_);
     }
 

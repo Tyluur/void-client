@@ -14,7 +14,7 @@ abstract class Matrix {
 
     abstract void method890(int[] is);
 
-    abstract void method891(int i, int i_0_, int i_1_);
+    abstract void translate(int i, int i_0_, int i_1_);
 
     public Matrix() {
         /* empty */
@@ -108,7 +108,7 @@ abstract class Matrix {
 
     abstract void method902(int i);
 
-    abstract void method903(int i, int i_19_, int i_20_, int i_21_, int i_22_, int i_23_);
+    abstract void rotate(int i, int i_19_, int i_20_, int i_21_, int i_22_, int i_23_);
 
     static final Class258_Sub3_Sub1 method904(int i, ha_Sub2 var_ha_Sub2, int i_24_, int i_25_, int i_26_) {
         try {

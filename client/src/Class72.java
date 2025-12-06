@@ -22,15 +22,15 @@ final class Class72 {
     private int anInt1231;
     int anInt1232;
 
-    private final boolean method730(ha var_ha, Class72 class72_0_) {
+    private final boolean method730(Toolkit var_toolkit, Class72 class72_0_) {
         if (aSprite_1221 == null) {
             if (anInt1230 == 0) {
                 if (JavaMatrix.aD5684.method4(-7953, anInt1224)) {
                     int[] is = JavaMatrix.aD5684.method6(-21540, anInt1220, 0.7F, anInt1224, false, anInt1220);
-                    aSprite_1221 = var_ha.method3662(anInt1220, is, (byte) 94, 0, anInt1220, anInt1220);
+                    aSprite_1221 = var_toolkit.method3662(anInt1220, is, (byte) 94, 0, anInt1220, anInt1220);
                 }
-            } else if (anInt1230 == 2) method740(var_ha, class72_0_);
-            else if (anInt1230 == 1) method735(var_ha, class72_0_);
+            } else if (anInt1230 == 2) method740(var_toolkit, class72_0_);
+            else if (anInt1230 == 1) method735(var_toolkit, class72_0_);
         }
         return aSprite_1221 != null;
     }
@@ -42,7 +42,7 @@ final class Class72 {
         anIntArray1226 = null;
     }
 
-    private static final void method732(ha var_ha) {
+    private static final void method732(Toolkit var_toolkit) {
         if (aSprite_1228 == null) {
             int[] is = new int[16384];
             int[] is_1_ = new int[16384];
@@ -65,8 +65,8 @@ final class Class72 {
                     is[i_4_ + i_6_] = is[i_4_ + i_8_] = is[i_5_ + i_6_] = is[i_5_ + i_8_] = 127 - i_10_ << 24 | 0xffffff;
                 }
             }
-            aSprite_1228 = var_ha.method3662(128, is_1_, (byte) 94, 0, 128, 128);
-            aSprite_1215 = var_ha.method3662(128, is, (byte) 94, 0, 128, 128);
+            aSprite_1228 = var_toolkit.method3662(128, is_1_, (byte) 94, 0, 128, 128);
+            aSprite_1215 = var_toolkit.method3662(128, is, (byte) 94, 0, 128, 128);
         }
     }
 
@@ -114,13 +114,13 @@ final class Class72 {
         aSprite_1221 = null;
     }
 
-    private final void method735(ha var_ha, Class72 class72_19_) {
-        method738(var_ha);
-        method732(var_ha);
-        var_ha.K(anIntArray1226);
-        var_ha.KA(0, 0, anInt1220, anInt1220);
-        var_ha.ya();
-        var_ha.aa(0, 0, anInt1220, anInt1220, ~0xffffff | anInt1222, 0);
+    private final void method735(Toolkit var_toolkit, Class72 class72_19_) {
+        method738(var_toolkit);
+        method732(var_toolkit);
+        var_toolkit.K(anIntArray1226);
+        var_toolkit.KA(0, 0, anInt1220, anInt1220);
+        var_toolkit.ya();
+        var_toolkit.aa(0, 0, anInt1220, anInt1220, ~0xffffff | anInt1222, 0);
         int i = 0;
         int i_20_ = 0;
         int i_21_ = 256;
@@ -151,31 +151,31 @@ final class Class72 {
         }
         Model model = aModel_1227.method614((byte) 0, 51200, true);
         model.aa((short) 0, (short) anInt1224);
-        var_ha.xa(1.0F);
-        var_ha.ZA(16777215, 1.0F, 1.0F, (float) i, (float) i_20_, (float) i_21_);
+        var_toolkit.xa(1.0F);
+        var_toolkit.ZA(16777215, 1.0F, 1.0F, (float) i, (float) i_20_, (float) i_21_);
         int i_28_ = 1024 * anInt1220 / (model.RA() - model.V());
         if (anInt1222 != 0) i_28_ = i_28_ * 13 / 16;
-        var_ha.DA(anInt1220 / 2, anInt1220 / 2, i_28_, i_28_);
-        var_ha.method3638(var_ha.method3654());
-        Matrix matrix = var_ha.method3654();
-        matrix.method894(0, 0, var_ha.i() - model.HA());
+        var_toolkit.DA(anInt1220 / 2, anInt1220 / 2, i_28_, i_28_);
+        var_toolkit.setCamera(var_toolkit.method3654());
+        Matrix matrix = var_toolkit.method3654();
+        matrix.method894(0, 0, var_toolkit.i() - model.HA());
         model.method608(matrix, null, 1024, 1);
         int i_29_ = anInt1220 * 13 / 16;
         int i_30_ = (anInt1220 - i_29_) / 2;
         aSprite_1215.method970(i_30_, i_30_, i_29_, i_29_, 0, ~0xffffff | anInt1222, 1);
-        aSprite_1221 = var_ha.method3683(0, 0, anInt1220, anInt1220, true);
-        var_ha.ya();
-        var_ha.aa(0, 0, anInt1220, anInt1220, 0, 0);
+        aSprite_1221 = var_toolkit.method3683(0, 0, anInt1220, anInt1220, true);
+        var_toolkit.ya();
+        var_toolkit.aa(0, 0, anInt1220, anInt1220, 0, 0);
         aSprite_1228.method970(0, 0, anInt1220, anInt1220, 1, 0, 0);
         aSprite_1221.method968(0, 0, 0);
-        var_ha.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2], anIntArray1226[3]);
+        var_toolkit.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2], anIntArray1226[3]);
     }
 
-    final boolean method736(ha var_ha, Class72 class72_31_) {
-        return aSprite_1221 != null || method730(var_ha, class72_31_);
+    final boolean method736(Toolkit var_toolkit, Class72 class72_31_) {
+        return aSprite_1221 != null || method730(var_toolkit, class72_31_);
     }
 
-    final void method737(ha var_ha, int i, int i_32_, int i_33_, int i_34_, int i_35_, int i_36_) {
+    final void method737(Toolkit var_toolkit, int i, int i_32_, int i_33_, int i_34_, int i_35_, int i_36_) {
         if (aSprite_1221 != null) {
             int i_37_ = anInt1231 - i_35_ & 0x3fff;
             int i_38_ = anInt1219 - i_36_ & 0x3fff;
@@ -187,7 +187,7 @@ final class Class72 {
         }
     }
 
-    private static final void method738(ha var_ha) {
+    private static final void method738(Toolkit var_toolkit) {
         if (aModel_1227 == null) {
             Mesh mesh = new Mesh(580, 1104, 1);
             mesh.method1105(109, (byte) 0, (byte) 0, (short) 0, (short) 1024, (byte) 0, (short) 0, (short) 32767, (short) 1024, (short) 1024);
@@ -223,7 +223,7 @@ final class Class72 {
             mesh.faceLabel = null;
             mesh.vertexLabel = null;
             mesh.facePriority = null;
-            aModel_1227 = var_ha.method3625(mesh, 51200, 33, 64, 768);
+            aModel_1227 = var_toolkit.method3625(mesh, 51200, 33, 64, 768);
         }
     }
 
@@ -243,12 +243,12 @@ final class Class72 {
         anInt1230 = i;
     }
 
-    private final void method740(ha var_ha, Class72 class72_60_) {
+    private final void method740(Toolkit var_toolkit, Class72 class72_60_) {
         Mesh mesh = Class300.method2277(0, Class260.aIndex_3309, anInt1224, -1);
         if (mesh != null) {
-            var_ha.K(anIntArray1226);
-            var_ha.KA(0, 0, anInt1220, anInt1220);
-            var_ha.aa(0, 0, anInt1220, anInt1220, 0, 0);
+            var_toolkit.K(anIntArray1226);
+            var_toolkit.KA(0, 0, anInt1220, anInt1220);
+            var_toolkit.aa(0, 0, anInt1220, anInt1220, 0, 0);
             int i = 0;
             int i_61_ = 0;
             int i_62_ = 256;
@@ -279,22 +279,22 @@ final class Class72 {
                 i_62_ = i_62_ * i_69_ - i * i_68_ >> 14;
                 i = i_70_;
             }
-            var_ha.xa(1.0F);
-            var_ha.ZA(16777215, 1.0F, 1.0F, (float) i, (float) i_61_, (float) i_62_);
-            Model model = var_ha.method3625(mesh, 2048, 0, 64, 768);
+            var_toolkit.xa(1.0F);
+            var_toolkit.ZA(16777215, 1.0F, 1.0F, (float) i, (float) i_61_, (float) i_62_);
+            Model model = var_toolkit.method3625(mesh, 2048, 0, 64, 768);
             int i_71_ = model.RA() - model.V();
             int i_72_ = model.EA() - model.fa();
             int i_73_ = model.V() + i_71_ / 2;
             int i_74_ = model.fa() + i_72_ / 2;
             int i_75_ = Math.max(i_71_, i_72_);
-            var_ha.DA(i_73_, i_74_, i_75_, i_75_);
-            var_ha.method3638(var_ha.method3654());
-            Matrix matrix = var_ha.method3705();
-            matrix.method894(0, 0, var_ha.i() - model.HA());
-            model.method608(matrix, null, var_ha.i(), 1);
-            aSprite_1221 = var_ha.method3683(0, 0, anInt1220, anInt1220, true);
+            var_toolkit.DA(i_73_, i_74_, i_75_, i_75_);
+            var_toolkit.setCamera(var_toolkit.method3654());
+            Matrix matrix = var_toolkit.method3705();
+            matrix.method894(0, 0, var_toolkit.i() - model.HA());
+            model.method608(matrix, null, var_toolkit.i(), 1);
+            aSprite_1221 = var_toolkit.method3683(0, 0, anInt1220, anInt1220, true);
             aSprite_1221.method968(0, 0, 3);
-            var_ha.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2], anIntArray1226[3]);
+            var_toolkit.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2], anIntArray1226[3]);
         }
     }
 }

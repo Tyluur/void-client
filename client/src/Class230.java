@@ -17,7 +17,7 @@ final class Class230 {
             try {
                 anInt2982++;
                 if (Packet.anInt7207 != -1) {
-                    int[] is_15_ = Class21.aHa326.Y();
+                    int[] is_15_ = Class21.aToolkit326.Y();
                     int i_16_ = is_15_[0];
                     int i_17_ = is_15_[1];
                     int i_18_ = is_15_[2];
@@ -126,19 +126,19 @@ final class Class230 {
                                 }
                                 Class243 class243 = (Class348_Sub42_Sub8_Sub2.aClass76_10436.aClass243_1282);
                                 for (Class318_Sub4 class318_sub4 = ((Class318_Sub4) class243.method1872(8)); class318_sub4 != null; class318_sub4 = ((Class318_Sub4) class243.method1878((byte) 122))) {
-                                    Class318_Sub3[] class318_sub3s = (class318_sub4.aClass318_Sub3Array6414);
+                                    LabelBounds[] class318_sub3s = (class318_sub4.aClass318_Sub3Array6414);
                                     boolean bool_54_ = true;
                                     for (int i_55_ = 0; class318_sub3s.length > i_55_; i_55_++) {
-                                        Class318_Sub3 class318_sub3 = class318_sub3s[i_55_];
-                                        int i_56_ = (class318_sub3.anInt6405);
-                                        int i_57_ = (class318_sub3.anInt6402);
-                                        int i_58_ = (class318_sub3.anInt6406);
-                                        int i_59_ = (class318_sub3.anInt6404);
-                                        int i_60_ = (class318_sub3.anInt6403);
-                                        class318_sub3.anInt6404 = i_59_ = -i_34_ + i_59_;
-                                        class318_sub3.anInt6405 = i_56_ = -i_33_ + i_56_;
-                                        class318_sub3.anInt6406 = i_58_ += -i_33_;
-                                        class318_sub3.anInt6402 = i_57_ = -i_34_ + i_57_;
+                                        LabelBounds class318_sub3 = class318_sub3s[i_55_];
+                                        int i_56_ = (class318_sub3.bottomX);
+                                        int i_57_ = (class318_sub3.bottomY);
+                                        int i_58_ = (class318_sub3.topX);
+                                        int i_59_ = (class318_sub3.topY);
+                                        int i_60_ = (class318_sub3.width);
+                                        class318_sub3.topY = i_59_ = -i_34_ + i_59_;
+                                        class318_sub3.bottomX = i_56_ = -i_33_ + i_56_;
+                                        class318_sub3.topX = i_58_ += -i_33_;
+                                        class318_sub3.bottomY = i_57_ = -i_34_ + i_57_;
                                         if (bool_54_) {
                                             int i_61_ = -i_60_ + (Math.min(i_58_, i_56_));
                                             if (i_61_ <= Class348_Sub16_Sub1.anInt8854) {
@@ -158,9 +158,9 @@ final class Class230 {
                                         Class59_Sub1_Sub1.method560(class318_sub4, i ^ 0x4b);
                                     }
                                 }
-                                if (Packet.anInt7207 == 0) Class21.aHa326.method3687(Class17.anInterface4_252);
-                                Class21.aHa326.F(-i_33_, -i_34_);
-                                Class21.aHa326.b(i_45_, i_48_, i_43_, i_50_, d_37_);
+                                if (Packet.anInt7207 == 0) Class21.aToolkit326.method3687(Class17.anInterface4_252);
+                                Class21.aToolkit326.F(-i_33_, -i_34_);
+                                Class21.aToolkit326.b(i_45_, i_48_, i_43_, i_50_, d_37_);
                                 r.method3284(true, (Class348_Sub42_Sub4.aDouble9517 + d_37_));
                                 Class14_Sub2.aDouble8621 = d_37_ + Class348_Sub42_Sub4.aDouble9517;
                                 if (Packet.anInt7207 == 1) {
@@ -168,30 +168,30 @@ final class Class230 {
                                     OutputStream_Sub1.anInt95 = i_21_;
                                     Class120.anInt4910 = -Class328.anInt4100 + (i_16_ - i_33_);
                                     Class286_Sub5.anInt6255 = i_20_;
-                                    Class21.aHa326.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95));
+                                    Class21.aToolkit326.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95));
                                 } else {
                                     Class286_Sub5.anInt6255 = i_20_;
                                     Class328_Sub1_Sub1.anInt8799 = (-Class348_Sub3.anInt6568 + i_17_ - (-(Class348_Sub42_Sub9_Sub1.anInt10444) - -i_34_));
                                     Class120.anInt4910 = (-Class328.anInt4100 + i_16_ + (Class211.anInt2747 + -i_33_));
                                     OutputStream_Sub1.anInt95 = i_21_;
-                                    Class21.aHa326.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95));
+                                    Class21.aToolkit326.DA(Class120.anInt4910, (Class328_Sub1_Sub1.anInt8799), Class286_Sub5.anInt6255, (OutputStream_Sub1.anInt95));
                                 }
                                 Class163.method1274(Class348_Sub42_Sub8_Sub2.aClass76_10436);
                                 if (i_51_ > 0) {
-                                    Class21.aHa326.KA(0, i_49_, (Class348_Sub16_Sub1.anInt8854), i_51_ + i_49_);
-                                    Class21.aHa326.ya();
-                                    Class21.aHa326.GA(Class77.anInt1290);
+                                    Class21.aToolkit326.KA(0, i_49_, (Class348_Sub16_Sub1.anInt8854), i_51_ + i_49_);
+                                    Class21.aToolkit326.ya();
+                                    Class21.aToolkit326.GA(Class77.anInt1290);
                                     Class258_Sub1.method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, is, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false);
                                 }
                                 if (i_46_ > 0) {
-                                    Class21.aHa326.KA(i_44_, i_53_, i_44_ - -i_46_, i_53_ + i_52_);
-                                    Class21.aHa326.ya();
-                                    Class21.aHa326.GA(Class77.anInt1290);
+                                    Class21.aToolkit326.KA(i_44_, i_53_, i_44_ - -i_46_, i_53_ + i_52_);
+                                    Class21.aToolkit326.ya();
+                                    Class21.aToolkit326.GA(Class77.anInt1290);
                                     Class258_Sub1.method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, is, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false);
                                 }
-                                Class21.aHa326.la();
+                                Class21.aToolkit326.la();
                                 InvTypeList.method2046();
-                                if (Packet.anInt7207 == 0) Class21.aHa326.method3672();
+                                if (Packet.anInt7207 == 0) Class21.aToolkit326.method3672();
                                 Class348_Sub3.anInt6568 += i_34_;
                                 Class328.anInt4100 += i_33_;
                                 Class348_Sub42_Sub4.aDouble9517 += d_37_;
@@ -225,24 +225,24 @@ final class Class230 {
                         Sprite_Sub1.anInt8422 = i_4_;
                         Class348_Sub3.anInt6568 = 0;
                         Class348_Sub42_Sub4.aDouble9517 = 0.0;
-                        if (Packet.anInt7207 == 0) Class21.aHa326.method3687(Class17.anInterface4_252);
-                        Class21.aHa326.la();
-                        Class21.aHa326.ya();
-                        Class21.aHa326.GA(Class77.anInt1290);
-                        Class51.aMatrix_905.method903(Sprite_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396);
-                        Class21.aHa326.method3638(Class51.aMatrix_905);
+                        if (Packet.anInt7207 == 0) Class21.aToolkit326.method3687(Class17.anInterface4_252);
+                        Class21.aToolkit326.la();
+                        Class21.aToolkit326.ya();
+                        Class21.aToolkit326.GA(Class77.anInt1290);
+                        Class51.aMatrix_905.rotate(Sprite_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396);
+                        Class21.aToolkit326.setCamera(Class51.aMatrix_905);
                         if (Packet.anInt7207 == 1) {
                             Class328_Sub1_Sub1.anInt8799 = i_17_;
                             Class120.anInt4910 = i_16_;
                             OutputStream_Sub1.anInt95 = i_21_;
                             Class286_Sub5.anInt6255 = i_20_;
-                            Class21.aHa326.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95);
+                            Class21.aToolkit326.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95);
                         } else {
                             Class120.anInt4910 = i_16_ - -Class211.anInt2747;
                             Class328_Sub1_Sub1.anInt8799 = Class348_Sub42_Sub9_Sub1.anInt10444 + i_17_;
                             Class286_Sub5.anInt6255 = i_20_;
                             OutputStream_Sub1.anInt95 = i_21_;
-                            Class21.aHa326.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95);
+                            Class21.aToolkit326.DA(Class120.anInt4910, Class328_Sub1_Sub1.anInt8799, Class286_Sub5.anInt6255, OutputStream_Sub1.anInt95);
                         }
                         Class14_Sub2.aDouble8621 = 0.0;
                         Class348_Sub42_Sub8_Sub2.aClass76_10436.method775((byte) 69);
@@ -250,7 +250,7 @@ final class Class230 {
                         Class258_Sub1.method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, is, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false);
                         InvTypeList.method2046();
                         Class348_Sub16_Sub2.aBoolean8870 = false;
-                        if (Packet.anInt7207 == 0) Class21.aHa326.method3672();
+                        if (Packet.anInt7207 == 0) Class21.aToolkit326.method3672();
                         if (Packet.anInt7207 == 1) Class202.method1469(-117);
                     }
                     if (Packet.anInt7207 == 0) Class17.anInterface4_252.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, Class107.anInt1651, 0, 0, true, true);
@@ -259,25 +259,25 @@ final class Class230 {
                     Class318_Sub1_Sub5_Sub1.aDouble10120 = Class348_Sub42_Sub4.aDouble9517;
                     if (Packet.anInt7207 == 0 || Packet.anInt7207 == 2) {
                         if (Packet.anInt7207 == 2) {
-                            Class21.aHa326.GA(Class77.anInt1290);
-                            Class21.aHa326.ya();
+                            Class21.aToolkit326.GA(Class77.anInt1290);
+                            Class21.aToolkit326.ya();
                         }
                         Class193.anInt2590 = i_20_;
                         ModelParticleEmitter.anInt1879 = i_21_;
                         Class94.anInt1537 = (-Class339.anInt4211 + -Class328.anInt4100 + (i_16_ + Class211.anInt2747));
                         Class318_Sub5.anInt6417 = (-Class348_Sub40_Sub8.anInt9157 + (i_17_ + Class348_Sub42_Sub9_Sub1.anInt10444 + -Class348_Sub3.anInt6568));
-                        Class21.aHa326.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, ModelParticleEmitter.anInt1879);
+                        Class21.aToolkit326.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, ModelParticleEmitter.anInt1879);
                     } else if (Packet.anInt7207 == 1) {
                         Class193.anInt2590 = i_20_;
                         Class94.anInt1537 = i_16_ + -Class328.anInt4100;
                         Class318_Sub5.anInt6417 = -Class348_Sub3.anInt6568 + i_17_;
                         ModelParticleEmitter.anInt1879 = i_21_;
-                        Class21.aHa326.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, ModelParticleEmitter.anInt1879);
-                        Class21.aHa326.KA(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (Class107.anInt1651 + Class348_Sub40_Sub8.anInt9157));
+                        Class21.aToolkit326.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, ModelParticleEmitter.anInt1879);
+                        Class21.aToolkit326.KA(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (Class107.anInt1651 + Class348_Sub40_Sub8.anInt9157));
                     }
                     Class258_Sub1.method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, is, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, Packet.anInt7207 != 2 ? 2 : 0, Packet.anInt7207 == 1);
-                    Class21.aHa326.la();
-                    Class21.aHa326.DA(i_16_, i_17_, i_18_, i_19_);
+                    Class21.aToolkit326.la();
+                    Class21.aToolkit326.DA(i_16_, i_17_, i_18_, i_19_);
                     if (i == -2) break;
                     anInt2986 = -82;
                 }
@@ -513,7 +513,7 @@ final class Class230 {
         long l = ((long) i_76_ * 76724863L ^ ((long) i * 32147369L ^ ((long) i_74_ * 986053L ^ ((long) i_75_ * 67481L ^ (long) i_77_ * 97549L ^ (long) i_79_ * 475427L))));
         Class299 class299 = (Class299) Class375.aClass60_4543.method583(l, 90);
         if (class299 != null) return class299;
-        class299 = Class60.aHa1098.method3697(i_75_, i_77_, i_79_, i_74_, i, i_76_);
+        class299 = Class60.aToolkit1098.method3697(i_75_, i_77_, i_79_, i_74_, i, i_76_);
         if (i_78_ != -1) method1636(58, 63, -99, -89, -7, 18, 71);
         Class375.aClass60_4543.method582(class299, l, (byte) -106);
         return class299;

@@ -196,10 +196,10 @@ abstract class Class59 {
         if (i != 10) aClass114_1068 = null;
     }
 
-    static final void method549(byte i, Class348_Sub21 class348_sub21, ha var_ha, Class42 class42) {
+    static final void method549(byte i, Class348_Sub21 class348_sub21, Toolkit var_toolkit, Class42 class42) {
         try {
             anInt1080++;
-            Sprite sprite = class42.method375(var_ha, false);
+            Sprite sprite = class42.method375(var_toolkit, false);
             if (sprite != null) {
                 int i_56_ = sprite.method971();
                 if (i_56_ < sprite.method969()) i_56_ = sprite.method969();
@@ -249,12 +249,12 @@ abstract class Class59 {
                     i_68_ = i_65_ + -(i_61_ / 2) - 5;
                     i_71_ = 3 + (i_60_ * Class39.aClass323_521.method2565() + i_69_);
                     i_70_ = i_61_ + (i_68_ + 10);
-                    if (class42.anInt602 != 0) var_ha.method3675(-i_68_ + i_70_, (byte) -125, i_68_, i_69_, i_71_ - i_69_, class42.anInt602);
-                    if (class42.anInt604 != 0) var_ha.method3668(-i_68_ + i_70_, i_69_, class42.anInt604, i_68_, -i_69_ + i_71_, 67);
+                    if (class42.anInt602 != 0) var_toolkit.method3675(-i_68_ + i_70_, (byte) -125, i_68_, i_69_, i_71_ - i_69_, class42.anInt602);
+                    if (class42.anInt604 != 0) var_toolkit.method3668(-i_68_ + i_70_, i_69_, class42.anInt604, i_68_, -i_69_ + i_71_, 67);
                     for (int i_72_ = 0; i_60_ > i_72_; i_72_++) {
                         String string = ha_Sub3.aStringArray8019[i_72_];
                         if (i_72_ < i_60_ + -1) string = string.substring(0, -4 + string.length());
-                        Class39.aClass323_521.method2563(var_ha, string, i_65_, i_66_, (class42.anInt580), true);
+                        Class39.aClass323_521.method2563(var_toolkit, string, i_65_, i_66_, (class42.anInt580), true);
                         i_66_ += Class39.aClass323_521.method2565();
                     }
                 }
@@ -273,7 +273,7 @@ abstract class Class59 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jp.I(" + i + ',' + (class348_sub21 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + (class42 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("jp.I(" + i + ',' + (class348_sub21 != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + (class42 != null ? "{...}" : "null") + ')'));
         }
     }
 

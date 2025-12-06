@@ -7,7 +7,7 @@ final class Class9 {
     static int[] anIntArray168 = {28, 35, 40, 44};
     static int anInt169 = -1;
     static int anInt170;
-    static ha aHa171;
+    static Toolkit aToolkit171;
 
     static final boolean method215(int i) {
         anInt170++;
@@ -19,6 +19,6 @@ final class Class9 {
     public static void method216(boolean bool) {
         anIntArray168 = null;
         if (bool != false) method216(true);
-        aHa171 = null;
+        aToolkit171 = null;
     }
 }

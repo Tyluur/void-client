@@ -65,12 +65,12 @@ final class Class318_Sub7 extends Class318 {
         aClass351_6443 = null;
     }
 
-    static final void method2509(int i, int i_0_, ha var_ha, int i_1_, int i_2_, boolean bool, int i_3_, int i_4_) {
+    static final void method2509(int i, int i_0_, Toolkit var_toolkit, int i_1_, int i_2_, boolean bool, int i_3_, int i_4_) {
         anInt6438++;
         if (bool != true) anInt6451 = -14;
-        var_ha.method3675(i, (byte) -125, i_1_, i_0_, i_3_, i_2_);
-        var_ha.method3675(i - 2, (byte) -125, 1 + i_1_, 1 + i_0_, 16, i_4_);
-        var_ha.method3668(-2 + i, 18 + i_0_, i_4_, 1 + i_1_, -19 + i_3_, 115);
+        var_toolkit.method3675(i, (byte) -125, i_1_, i_0_, i_3_, i_2_);
+        var_toolkit.method3675(i - 2, (byte) -125, 1 + i_1_, 1 + i_0_, 16, i_4_);
+        var_toolkit.method3668(-2 + i, 18 + i_0_, i_4_, 1 + i_1_, -19 + i_3_, 115);
     }
 
     static final boolean method2510(Index index, Class348_Sub16_Sub3 class348_sub16_sub3, Index index_5_, boolean bool, Class279 class279, Index index_6_) {
@@ -91,18 +91,18 @@ final class Class318_Sub7 extends Class318 {
         }
     }
 
-    final void method2511(boolean bool, ha var_ha, long l) {
+    final void method2511(boolean bool, Toolkit var_toolkit, long l) {
         try {
             anInt6437++;
             if (bool != true) this.aClass243_6433 = null;
             for (Class318_Sub9_Sub2_Sub1 class318_sub9_sub2_sub1 = ((Class318_Sub9_Sub2_Sub1) this.aClass243_6433.method1872(8)); class318_sub9_sub2_sub1 != null; class318_sub9_sub2_sub1 = (Class318_Sub9_Sub2_Sub1) this.aClass243_6433.method1878((byte) 126))
-                class318_sub9_sub2_sub1.method2522(var_ha, l);
+                class318_sub9_sub2_sub1.method2522(var_toolkit, l);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rba.F(" + bool + ',' + (var_ha != null ? "{...}" : "null") + ',' + l + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rba.F(" + bool + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + l + ')'));
         }
     }
 
-    static final void method2512(TextureSource var_d, ha var_ha, int i) {
+    static final void method2512(TextureSource var_d, Toolkit var_toolkit, int i) {
         try {
             anInt6440++;
             if (Class75.aClass348_Sub42_Sub14_1243 != null) {
@@ -174,7 +174,7 @@ final class Class318_Sub7 extends Class318 {
                     Node.anInt4290 = 20;
                 } else if (Node.anInt4290 == 20) {
                     Class289.method2193(true, (byte) -123);
-                    Class75.method756(var_ha, Class75.anInt1250, Class75.anInt1253);
+                    Class75.method756(var_toolkit, Class75.anInt1250, Class75.anInt1253);
                     Node.anInt4290 = 60;
                     Class289.method2193(true, (byte) -122);
                     Class94.method867(true);
@@ -189,42 +189,42 @@ final class Class318_Sub7 extends Class318 {
                         Class289.method2193(true, (byte) -127);
                         Class94.method867(true);
                     } else if (Node.anInt4290 == 70) {
-                        Class125.aClass323_4921 = new Class323(var_ha, 11, true, Class305.aCanvas3869);
+                        Class125.aClass323_4921 = new Class323(var_toolkit, 11, true, Class305.aCanvas3869);
                         Node.anInt4290 = 73;
                         Class289.method2193(true, (byte) -123);
                         Class94.method867(true);
                     } else if (Node.anInt4290 == 73) {
-                        Class14_Sub4.aClass323_8644 = new Class323(var_ha, 12, true, Class305.aCanvas3869);
+                        Class14_Sub4.aClass323_8644 = new Class323(var_toolkit, 12, true, Class305.aCanvas3869);
                         Node.anInt4290 = 76;
                         Class289.method2193(true, (byte) -125);
                         Class94.method867(true);
                     } else if (Node.anInt4290 == 76) {
-                        Class39.aClass323_521 = new Class323(var_ha, 14, true, Class305.aCanvas3869);
+                        Class39.aClass323_521 = new Class323(var_toolkit, 14, true, Class305.aCanvas3869);
                         Node.anInt4290 = 79;
                         Class289.method2193(true, (byte) -123);
                         Class94.method867(true);
                     } else if (Node.anInt4290 == 79) {
-                        Class168.aClass323_2252 = new Class323(var_ha, 17, true, Class305.aCanvas3869);
+                        Class168.aClass323_2252 = new Class323(var_toolkit, 17, true, Class305.aCanvas3869);
                         Node.anInt4290 = 82;
                         Class289.method2193(true, (byte) -124);
                         Class94.method867(true);
                     } else if (Node.anInt4290 == 82) {
-                        Class176.aClass323_2333 = new Class323(var_ha, 19, true, Class305.aCanvas3869);
+                        Class176.aClass323_2333 = new Class323(var_toolkit, 19, true, Class305.aCanvas3869);
                         Node.anInt4290 = 85;
                         Class289.method2193(true, (byte) -128);
                         Class94.method867(true);
                     } else if (Node.anInt4290 == 85) {
-                        Class285.aClass323_4754 = new Class323(var_ha, 22, true, Class305.aCanvas3869);
+                        Class285.aClass323_4754 = new Class323(var_toolkit, 22, true, Class305.aCanvas3869);
                         Node.anInt4290 = 88;
                         Class289.method2193(true, (byte) -124);
                         Class94.method867(true);
                     } else if (Node.anInt4290 == 88) {
-                        Class348_Sub3.aClass323_6581 = new Class323(var_ha, 26, true, Class305.aCanvas3869);
+                        Class348_Sub3.aClass323_6581 = new Class323(var_toolkit, 26, true, Class305.aCanvas3869);
                         Node.anInt4290 = 91;
                         Class289.method2193(true, (byte) -125);
                         Class94.method867(true);
                     } else {
-                        Class240.aClass323_4672 = new Class323(var_ha, 30, true, Class305.aCanvas3869);
+                        Class240.aClass323_4672 = new Class323(var_toolkit, 30, true, Class305.aCanvas3869);
                         Node.anInt4290 = 100;
                         Class289.method2193(true, (byte) -119);
                         Class94.method867(true);
@@ -233,11 +233,11 @@ final class Class318_Sub7 extends Class318 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rba.A(" + (var_d != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rba.A(" + (var_d != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 
-    final void method2513(ha var_ha, int i, long l, int i_9_, boolean bool) {
+    final void method2513(Toolkit var_toolkit, int i, long l, int i_9_, boolean bool) {
         do {
             try {
                 if (!this.aBoolean6446) {
@@ -345,7 +345,7 @@ final class Class318_Sub7 extends Class318 {
                             } else
                                 i_52_ = (((int) (((double) (this.aClass181_6441.anInt2410) * Math.random()) + (double) (this.aClass181_6441.anInt2413)) << 24) | (((int) ((Math.random() * (double) (this.aClass181_6441.anInt2433)) + (double) (this.aClass181_6441.anInt2429)) << 16) | ((int) ((Math.random() * (double) (this.aClass181_6441.anInt2403)) + (double) (this.aClass181_6441.anInt2390)) << 8) | (int) (((double) (this.aClass181_6441.anInt2408) * Math.random()) + (double) (this.aClass181_6441.anInt2399))));
                             int i_53_ = (this.aClass181_6441.anInt2414);
-                            if (!var_ha.method3644() && !(this.aClass181_6441.aBoolean2382)) i_53_ = -1;
+                            if (!var_toolkit.method3644() && !(this.aClass181_6441.aBoolean2382)) i_53_ = -1;
                             if (client.anInt5171 == Class348_Sub1_Sub1.anInt8808) {
                                 Class318_Sub9_Sub2_Sub1 class318_sub9_sub2_sub1 = (new Class318_Sub9_Sub2_Sub1(this, i_46_, i_47_, i_48_, i_25_, i_26_, i_27_, i_49_, i_50_, i_52_, i_51_, i_53_, (this.aClass181_6441.aBoolean2435), (this.aClass181_6441.aBoolean2430)));
                             } else {
@@ -382,13 +382,13 @@ final class Class318_Sub7 extends Class318 {
                 if (i_9_ == 3) break;
                 method2508(124);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("rba.C(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + l + ',' + i_9_ + ',' + bool + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("rba.C(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + l + ',' + i_9_ + ',' + bool + ')'));
             }
             break;
         } while (false);
     }
 
-    Class318_Sub7(ha var_ha, ModelParticleEmitter modelParticleEmitter, Class318_Sub10 class318_sub10, long l) {
+    Class318_Sub7(Toolkit var_toolkit, ModelParticleEmitter modelParticleEmitter, Class318_Sub10 class318_sub10, long l) {
         this.aClass284_6444 = new Class284();
         aClass284_6449 = new Class284();
         aBoolean6453 = false;
@@ -397,7 +397,7 @@ final class Class318_Sub7 extends Class318 {
             this.aModelParticleEmitter_6436 = modelParticleEmitter;
             this.aClass318_Sub10_6439 = class318_sub10;
             this.aClass181_6441 = this.aModelParticleEmitter_6436.method1125((byte) 59);
-            if (!var_ha.method3644() && (this.aClass181_6441.anInt2387) != -1) this.aClass181_6441 = Class373.method3591((this.aClass181_6441.anInt2387), 0);
+            if (!var_toolkit.method3644() && (this.aClass181_6441.anInt2387) != -1) this.aClass181_6441 = Class373.method3591((this.aClass181_6441.anInt2387), 0);
             this.aClass243_6433 = new Class243();
             anInt6434 += 64.0 * Math.random();
             method2507(true);
@@ -411,7 +411,7 @@ final class Class318_Sub7 extends Class318 {
             aClass284_6449.anInt3672 = this.aClass284_6444.anInt3672;
             aClass284_6449.anInt3679 = this.aClass284_6444.anInt3679;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rba.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (modelParticleEmitter != null ? "{...}" : "null") + ',' + (class318_sub10 != null ? "{...}" : "null") + ',' + l + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rba.<init>(" + (var_toolkit != null ? "{...}" : "null") + ',' + (modelParticleEmitter != null ? "{...}" : "null") + ',' + (class318_sub10 != null ? "{...}" : "null") + ',' + l + ')'));
         }
     }
 }

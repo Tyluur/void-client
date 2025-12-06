@@ -56,7 +56,7 @@ final class Class348_Sub9 extends Node {
                             if (Class348_Sub40_Sub5.aBoolean9121) {
                                 GfxTypeList.aClass315Array3982[Class139.anInt1949++].method2361(-15481, class318_sub1);
                                 Class139.anInt1949 %= Class75_Sub1.anInt5652;
-                            } else class318_sub1.method2387(Class9.aHa171, -128);
+                            } else class318_sub1.method2387(Class9.aToolkit171, -128);
                         }
                     } else return false;
                 }

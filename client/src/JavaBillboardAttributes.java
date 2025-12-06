@@ -3,12 +3,12 @@
  */
 
 final class JavaBillboardAttributes {
-    int anInt4307;
+    int screenHeight;
     int anInt4308;
-    int anInt4309;
-    int anInt4310;
+    int screenWidth;
+    int screenY;
     int anInt4311 = 128;
-    int anInt4312;
+    int screenX;
     int anInt4313;
     int anInt4314 = 128;
     static int anInt4315;
@@ -16,7 +16,7 @@ final class JavaBillboardAttributes {
     int anInt4317;
     static int anInt4318;
     static int anInt4319;
-    int anInt4320;
+    int screenZ;
     static int anInt4321;
 
     static final int method3452(int i, byte i_0_, int i_1_) {

@@ -133,17 +133,17 @@ final class SkyBoxTypeList {
         if (i > -73) anIntArray1450 = null;
     }
 
-    static final void method826(int i, int i_24_, int i_25_, int i_26_, int i_27_, int i_28_, ha var_ha) {
+    static final void method826(int i, int i_24_, int i_25_, int i_26_, int i_27_, int i_28_, Toolkit var_toolkit) {
         if ((Class174.aSprite_2309 == null || Class348_Sub42_Sub15.aSprite_9658 == null || Class348_Sub42_Sub15.aSprite_9659 == null) && Class21.SPRITES.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257) && Class21.SPRITES.method421(false, Class313.anInt3937) && Class21.SPRITES.method421(false, NPCDefinition.anInt1387)) {
             Class207 class207 = Class207.method1521(Class21.SPRITES, Class313.anInt3937, 0);
-            Class348_Sub42_Sub15.aSprite_9658 = var_ha.method3691(class207, true);
+            Class348_Sub42_Sub15.aSprite_9658 = var_toolkit.method3691(class207, true);
             class207.method1518();
-            Class309.aSprite_4808 = var_ha.method3691(class207, true);
-            Class174.aSprite_2309 = (var_ha.method3691(Class207.method1521(Class21.SPRITES, Class318_Sub1_Sub3_Sub3.anInt10257, 0), true));
+            Class309.aSprite_4808 = var_toolkit.method3691(class207, true);
+            Class174.aSprite_2309 = (var_toolkit.method3691(Class207.method1521(Class21.SPRITES, Class318_Sub1_Sub3_Sub3.anInt10257, 0), true));
             Class207 class207_29_ = Class207.method1521(Class21.SPRITES, NPCDefinition.anInt1387, 0);
-            Class348_Sub42_Sub15.aSprite_9659 = var_ha.method3691(class207_29_, true);
+            Class348_Sub42_Sub15.aSprite_9659 = var_toolkit.method3691(class207_29_, true);
             class207_29_.method1518();
-            Class110.aSprite_1706 = var_ha.method3691(class207_29_, true);
+            Class110.aSprite_1706 = var_toolkit.method3691(class207_29_, true);
         }
         anInt1454++;
         if (Class174.aSprite_2309 != null && Class348_Sub42_Sub15.aSprite_9658 != null && Class348_Sub42_Sub15.aSprite_9659 != null) {

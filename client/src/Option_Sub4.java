@@ -5,9 +5,9 @@
 final class Option_Sub4 extends Option {
     static int anInt5872;
     static int anInt5873;
-    static float[] aFloatArray5874 = new float[16384];
+    static float[] SIN_TABLE = new float[16384];
     static int anInt5875;
-    static float[] aFloatArray5876 = new float[16384];
+    static float[] COS_TABLE = new float[16384];
     static int anInt5877;
     static Index MIDI_INSTRUMENTS;
     static int anInt5879;
@@ -63,10 +63,10 @@ final class Option_Sub4 extends Option {
 
     public static void method1738(int i) {
         MIDI_INSTRUMENTS = null;
-        aFloatArray5874 = null;
+        SIN_TABLE = null;
         aString5882 = null;
         if (i != 21921) method1738(11);
-        aFloatArray5876 = null;
+        COS_TABLE = null;
         aClass348_Sub26_5881 = null;
         aClass114_5883 = null;
     }
@@ -76,10 +76,10 @@ final class Option_Sub4 extends Option {
     }
 
     static {
-        double d = 3.834951969714103E-4;
+        double angle = 3.834951969714103E-4;
         for (int i = 0; i < 16384; i++) {
-            aFloatArray5874[i] = (float) Math.sin(d * (double) i);
-            aFloatArray5876[i] = (float) Math.cos((double) i * d);
+            SIN_TABLE[i] = (float) Math.sin(angle * (double) i);
+            COS_TABLE[i] = (float) Math.cos((double) i * angle);
         }
         aClass114_5883 = new Class114(34, 12);
     }

@@ -11,7 +11,7 @@ final class Class306 {
     static int anInt3875;
     static int anInt3876;
 
-    static final ha method2297(int i, int i_0_, TextureSource var_d, Canvas canvas, int i_1_) {
+    static final Toolkit method2297(int i, int i_0_, TextureSource var_d, Canvas canvas, int i_1_) {
         try {
             if (i != -6) method2297(23, -44, null, null, -57);
             anInt3875++;

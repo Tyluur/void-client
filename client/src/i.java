@@ -49,17 +49,17 @@ final class i extends Model implements Interface19 {
 
     final native void P(int i, int i_11_, int i_12_, int i_13_);
 
-    final void method608(Matrix matrix, Class318_Sub3 class318_sub3, int i, int i_14_) {
+    final void method608(Matrix matrix, LabelBounds class318_sub3, int i, int i_14_) {
         if (class318_sub3 == null) anOa5117.method3973().method149(this, matrix, null, i, i_14_);
         else {
             oa.anIntArray5132[5] = 0;
             anOa5117.method3973().method149(this, matrix, oa.anIntArray5132, i, i_14_);
-            class318_sub3.anInt6405 = oa.anIntArray5132[0];
-            class318_sub3.anInt6402 = oa.anIntArray5132[1];
-            class318_sub3.anInt6406 = oa.anIntArray5132[2];
-            class318_sub3.anInt6404 = oa.anIntArray5132[3];
-            class318_sub3.anInt6403 = oa.anIntArray5132[4];
-            class318_sub3.aBoolean6401 = oa.anIntArray5132[5] != 0;
+            class318_sub3.bottomX = oa.anIntArray5132[0];
+            class318_sub3.bottomY = oa.anIntArray5132[1];
+            class318_sub3.topX = oa.anIntArray5132[2];
+            class318_sub3.topY = oa.anIntArray5132[3];
+            class318_sub3.width = oa.anIntArray5132[4];
+            class318_sub3.visible = oa.anIntArray5132[5] != 0;
         }
     }
 
@@ -98,7 +98,7 @@ final class i extends Model implements Interface19 {
         /* empty */
     }
 
-    final native void p(int i, int i_22_, s var_s, s var_s_23_, int i_24_, int i_25_, int i_26_);
+    final native void p(int i, int i_22_, Ground var_ground, Ground var_ground_23_, int i_24_, int i_25_, int i_26_);
 
     final native int V();
 
@@ -147,17 +147,17 @@ final class i extends Model implements Interface19 {
         }
     }
 
-    final void method615(Matrix matrix, Class318_Sub3 class318_sub3, int i) {
+    final void method615(Matrix matrix, LabelBounds class318_sub3, int i) {
         if (class318_sub3 == null) anOa5117.method3973().method145(this, matrix, null, i);
         else {
             oa.anIntArray5132[5] = 0;
             anOa5117.method3973().method145(this, matrix, oa.anIntArray5132, i);
-            class318_sub3.anInt6405 = oa.anIntArray5132[0];
-            class318_sub3.anInt6402 = oa.anIntArray5132[1];
-            class318_sub3.anInt6406 = oa.anIntArray5132[2];
-            class318_sub3.anInt6404 = oa.anIntArray5132[3];
-            class318_sub3.anInt6403 = oa.anIntArray5132[4];
-            class318_sub3.aBoolean6401 = oa.anIntArray5132[5] != 0;
+            class318_sub3.bottomX = oa.anIntArray5132[0];
+            class318_sub3.bottomY = oa.anIntArray5132[1];
+            class318_sub3.topX = oa.anIntArray5132[2];
+            class318_sub3.topY = oa.anIntArray5132[3];
+            class318_sub3.width = oa.anIntArray5132[4];
+            class318_sub3.visible = oa.anIntArray5132[5] != 0;
         }
     }
 

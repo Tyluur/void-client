@@ -29,7 +29,7 @@ final class Class290 {
         anInt3716++;
         if (i == -9) {
             Option_Sub19.anInt6043 <<= 2;
-            if (Class348_Sub8.aHa6654.method3670()) Option_Sub19.anInt6043 += 512;
+            if (Class348_Sub8.aToolkit6654.method3670()) Option_Sub19.anInt6043 += 512;
             QuickChatCatTypeList.method1626(1, false);
         }
     }

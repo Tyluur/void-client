@@ -45,7 +45,7 @@ class Class75 {
     static int anInt1276;
     static int anInt1277;
 
-    static final void method745(ha var_ha, Class348_Sub21 class348_sub21, Class42 class42) {
+    static final void method745(Toolkit var_toolkit, Class348_Sub21 class348_sub21, Class42 class42) {
         if (class42.anIntArray591 != null) {
             int[] is = new int[class42.anIntArray591.length];
             for (int i = 0; i < is.length / 2; i++) {
@@ -54,7 +54,7 @@ class Class75 {
                 is[i * 2] = anInt1272 + ((anInt1276 - anInt1272) * (i_0_ - anInt1274) / (anInt1265 - anInt1274));
                 is[i * 2 + 1] = anInt1268 - ((anInt1268 - anInt1262) * (i_1_ - anInt1257) / (anInt1277 - anInt1257));
             }
-            Class329.method2620(var_ha, is, class42.anInt582);
+            Class329.method2620(var_toolkit, is, class42.anInt582);
             if (class42.anInt584 > 0) {
                 for (int i = 0; i < is.length / 2 - 1; i++) {
                     int i_2_ = is[i * 2];
@@ -73,7 +73,7 @@ class Class75 {
                         i_3_ = i_5_;
                         i_5_ = i_8_;
                     }
-                    var_ha.method3674(i_2_, i_3_, i_4_, i_5_, (class42.anIntArray572[(class42.aByteArray564[i] & 0xff)]), 1, class42.anInt584, class42.anInt575, class42.anInt601);
+                    var_toolkit.method3674(i_2_, i_3_, i_4_, i_5_, (class42.anIntArray572[(class42.aByteArray564[i] & 0xff)]), 1, class42.anInt584, class42.anInt575, class42.anInt601);
                 }
                 int i = is[is.length - 2];
                 int i_9_ = is[is.length - 1];
@@ -91,11 +91,11 @@ class Class75 {
                     i_9_ = i_11_;
                     i_11_ = i_14_;
                 }
-                var_ha.method3674(i, i_9_, i_10_, i_11_, (class42.anIntArray572[(class42.aByteArray564[(class42.aByteArray564.length - 1)]) & 0xff]), 1, class42.anInt584, class42.anInt575, class42.anInt601);
+                var_toolkit.method3674(i, i_9_, i_10_, i_11_, (class42.anIntArray572[(class42.aByteArray564[(class42.aByteArray564.length - 1)]) & 0xff]), 1, class42.anInt584, class42.anInt575, class42.anInt601);
             } else {
                 for (int i = 0; i < is.length / 2 - 1; i++)
-                    var_ha.method3645(is[i * 2 + 1], is[i * 2], is[(i + 1) * 2], -8003, (class42.anIntArray572[(class42.aByteArray564[i] & 0xff)]), is[(i + 1) * 2 + 1]);
-                var_ha.method3645(is[is.length - 1], is[is.length - 2], is[0], -8003, (class42.anIntArray572[(class42.aByteArray564[(class42.aByteArray564.length - 1)]) & 0xff]), is[1]);
+                    var_toolkit.method3645(is[i * 2 + 1], is[i * 2], is[(i + 1) * 2], -8003, (class42.anIntArray572[(class42.aByteArray564[i] & 0xff)]), is[(i + 1) * 2 + 1]);
+                var_toolkit.method3645(is[is.length - 1], is[is.length - 2], is[0], -8003, (class42.anIntArray572[(class42.aByteArray564[(class42.aByteArray564.length - 1)]) & 0xff]), is[1]);
             }
         }
     }
@@ -127,17 +127,17 @@ class Class75 {
         aClass243ArrayArrayArray1269 = null;
     }
 
-    private static final void method747(ha var_ha, Class348_Sub21 class348_sub21, int i, int i_15_, int i_16_, int i_17_) {
+    private static final void method747(Toolkit var_toolkit, Class348_Sub21 class348_sub21, int i, int i_15_, int i_16_, int i_17_) {
         class348_sub21.anInt6853 = (anInt1272 + (i_16_ + i * (class348_sub21.anInt6852 - anInt1274) >> 16));
         class348_sub21.anInt6855 = (anInt1268 - (i_17_ + i_15_ * (class348_sub21.anInt6851 - anInt1257) >> 16));
     }
 
-    static final void method748(ha var_ha) {
+    static final void method748(Toolkit var_toolkit) {
         int i = anInt1265 - anInt1274;
         int i_18_ = anInt1277 - anInt1257;
         int i_19_ = (anInt1276 - anInt1272 << 16) / i;
         int i_20_ = (anInt1268 - anInt1262 << 16) / i_18_;
-        method765(var_ha, i_19_, i_20_, 0, 0);
+        method765(var_toolkit, i_19_, i_20_, 0, 0);
     }
 
     static final void method749() {
@@ -153,7 +153,7 @@ class Class75 {
         anIntArray1260 = null;
     }
 
-    private static final void method750(ha var_ha, Packet packet, int i, int i_21_, int i_22_, int i_23_, int[] is, int[] is_24_) {
+    private static final void method750(Toolkit var_toolkit, Packet packet, int i, int i_21_, int i_22_, int i_23_, int[] is, int[] is_24_) {
         int i_25_ = packet.readUnsignedByte(255);
         if ((i_25_ & 0x1) == 0) {
             boolean bool = (i_25_ & 0x2) == 0;
@@ -325,17 +325,17 @@ class Class75 {
         aClass348_Sub42_Sub14_1243 = (Class348_Sub42_Sub14) aClass356_1241.method3480(i, -6008);
     }
 
-    private static final void method755(ha var_ha, int i, int i_57_, int i_58_, int i_59_, int i_60_, int i_61_, int i_62_, short[] is, byte[] is_63_, boolean bool) {
+    private static final void method755(Toolkit var_toolkit, int i, int i_57_, int i_58_, int i_59_, int i_60_, int i_61_, int i_62_, short[] is, byte[] is_63_, boolean bool) {
         if (bool || i_60_ != 0 || i_61_ > 0) {
-            if (i_61_ == 0) var_ha.aa(i, i_57_, i_58_, i_59_, i_60_, 0);
+            if (i_61_ == 0) var_toolkit.aa(i, i_57_, i_58_, i_59_, i_60_, 0);
             else {
                 int i_64_ = i_62_ & 0x3f;
                 if (i_64_ == 0 || i_58_ <= 1 || i_59_ <= 1) {
                     int i_65_ = anIntArray1260[i_61_];
-                    if (bool || i_65_ != 0) var_ha.aa(i, i_57_, i_58_, i_59_, i_65_, 0);
+                    if (bool || i_65_ != 0) var_toolkit.aa(i, i_57_, i_58_, i_59_, i_65_, 0);
                 } else {
                     int i_66_ = bool ? 0 : 1;
-                    Class46.method424(anIntArray1260[i_61_], i_60_, var_ha, 0, i_66_, anInt1255, i_62_ >> 6 & 0x3, aByteArrayArrayArray1251, i_58_, i, i_64_, i_59_, i_57_);
+                    Class46.method424(anIntArray1260[i_61_], i_60_, var_toolkit, 0, i_66_, anInt1255, i_62_ >> 6 & 0x3, aByteArrayArrayArray1251, i_58_, i, i_64_, i_59_, i_57_);
                 }
             }
         }
@@ -355,36 +355,36 @@ class Class75 {
                         if (class51.anInt874 == 1) i_71_ = -3407872;
                         int i_72_ = is_63_[i_69_] >> 6 & 0x3;
                         if (i_70_ == 0) {
-                            if (i_72_ == 0) var_ha.P(i, i_57_, i_59_, i_71_, 0);
-                            else if (i_72_ == 1) var_ha.U(i, i_57_, i_58_, i_71_, 0);
-                            else if (i_72_ == 2) var_ha.P(i_67_, i_57_, i_59_, i_71_, 0);
-                            else var_ha.U(i, i_68_, i_58_, i_71_, 0);
+                            if (i_72_ == 0) var_toolkit.P(i, i_57_, i_59_, i_71_, 0);
+                            else if (i_72_ == 1) var_toolkit.U(i, i_57_, i_58_, i_71_, 0);
+                            else if (i_72_ == 2) var_toolkit.P(i_67_, i_57_, i_59_, i_71_, 0);
+                            else var_toolkit.U(i, i_68_, i_58_, i_71_, 0);
                         } else if (i_70_ == 2) {
                             if (i_72_ == 0) {
-                                var_ha.P(i, i_57_, i_59_, -1, 0);
-                                var_ha.U(i, i_57_, i_58_, i_71_, 0);
+                                var_toolkit.P(i, i_57_, i_59_, -1, 0);
+                                var_toolkit.U(i, i_57_, i_58_, i_71_, 0);
                             } else if (i_72_ == 1) {
-                                var_ha.P(i_67_, i_57_, i_59_, -1, 0);
-                                var_ha.U(i, i_57_, i_58_, i_71_, 0);
+                                var_toolkit.P(i_67_, i_57_, i_59_, -1, 0);
+                                var_toolkit.U(i, i_57_, i_58_, i_71_, 0);
                             } else if (i_72_ == 2) {
-                                var_ha.P(i_67_, i_57_, i_59_, -1, 0);
-                                var_ha.U(i, i_68_, i_58_, i_71_, 0);
+                                var_toolkit.P(i_67_, i_57_, i_59_, -1, 0);
+                                var_toolkit.U(i, i_68_, i_58_, i_71_, 0);
                             } else {
-                                var_ha.P(i, i_57_, i_59_, -1, 0);
-                                var_ha.U(i, i_68_, i_58_, i_71_, 0);
+                                var_toolkit.P(i, i_57_, i_59_, -1, 0);
+                                var_toolkit.U(i, i_68_, i_58_, i_71_, 0);
                             }
                         } else if (i_70_ == 3) {
-                            if (i_72_ == 0) var_ha.U(i, i_57_, 1, i_71_, 0);
-                            else if (i_72_ == 1) var_ha.U(i_67_, i_57_, 1, i_71_, 0);
-                            else if (i_72_ == 2) var_ha.U(i_67_, i_68_, 1, i_71_, 0);
-                            else var_ha.U(i, i_68_, 1, i_71_, 0);
+                            if (i_72_ == 0) var_toolkit.U(i, i_57_, 1, i_71_, 0);
+                            else if (i_72_ == 1) var_toolkit.U(i_67_, i_57_, 1, i_71_, 0);
+                            else if (i_72_ == 2) var_toolkit.U(i_67_, i_68_, 1, i_71_, 0);
+                            else var_toolkit.U(i, i_68_, 1, i_71_, 0);
                         } else if (i_70_ == 9) {
                             if (i_72_ == 0 || i_72_ == 2) {
                                 for (int i_73_ = 0; i_73_ < i_59_; i_73_++)
-                                    var_ha.U(i + i_73_, i_68_ - i_73_, 1, i_71_, 0);
+                                    var_toolkit.U(i + i_73_, i_68_ - i_73_, 1, i_71_, 0);
                             } else {
                                 for (int i_74_ = 0; i_74_ < i_59_; i_74_++)
-                                    var_ha.U(i + i_74_, i_57_ + i_74_, 1, i_71_, 0);
+                                    var_toolkit.U(i + i_74_, i_57_ + i_74_, 1, i_71_, 0);
                             }
                         }
                     }
@@ -393,7 +393,7 @@ class Class75 {
         }
     }
 
-    static final void method756(ha var_ha, int i, int i_75_) {
+    static final void method756(Toolkit var_toolkit, int i, int i_75_) {
         Packet packet = (new Packet(aIndex_1237.method391((aClass348_Sub42_Sub14_1243.aString9625), "area", -29832)));
         int i_76_ = packet.readUnsignedByte(255);
         int[] is = new int[i_76_];
@@ -411,7 +411,7 @@ class Class75 {
                     for (int i_84_ = 0; i_84_ < 64; i_84_++) {
                         int i_85_ = i_81_ * 64 + i_83_ - anInt1266;
                         int i_86_ = i_82_ * 64 + i_84_ - anInt1263;
-                        method750(var_ha, packet, i_81_, i_82_, i_85_, i_86_, is, is_79_);
+                        method750(var_toolkit, packet, i_81_, i_82_, i_85_, i_86_, is, is_79_);
                     }
                 }
             } else {
@@ -423,7 +423,7 @@ class Class75 {
                     for (int i_92_ = 0; i_92_ < 8; i_92_++) {
                         int i_93_ = i_87_ * 64 + i_89_ * 8 + i_91_ - anInt1266;
                         int i_94_ = i_88_ * 64 + i_90_ * 8 + i_92_ - anInt1263;
-                        method750(var_ha, packet, i_87_, i_88_, i_93_, i_94_, is, is_79_);
+                        method750(var_toolkit, packet, i_87_, i_88_, i_93_, i_94_, is, is_79_);
                     }
                 }
             }
@@ -465,12 +465,12 @@ class Class75 {
         return ((Class348_Sub42_Sub14) aClass356_1241.method3480(i, -6008));
     }
 
-    static final Class262 method758(ha var_ha) {
+    static final Class262 method758(Toolkit var_toolkit) {
         int i = anInt1265 - anInt1274;
         int i_102_ = anInt1277 - anInt1257;
         int i_103_ = (anInt1276 - anInt1272 << 16) / i;
         int i_104_ = (anInt1268 - anInt1262 << 16) / i_102_;
-        return method762(var_ha, i_103_, i_104_, 0, 0);
+        return method762(var_toolkit, i_103_, i_104_, 0, 0);
     }
 
     private static final int method759(TextureSource var_d, int i, int i_105_, int i_106_) {
@@ -523,20 +523,20 @@ class Class75 {
         }
     }
 
-    private static final Class262 method762(ha var_ha, int i, int i_115_, int i_116_, int i_117_) {
+    private static final Class262 method762(Toolkit var_toolkit, int i, int i_115_, int i_116_, int i_117_) {
         for (Class348_Sub21 class348_sub21 = (Class348_Sub21) aClass262_1254.method1995(4); class348_sub21 != null; class348_sub21 = (Class348_Sub21) aClass262_1254.method1990((byte) 74))
-            method747(var_ha, class348_sub21, i, i_115_, i_116_, i_117_);
+            method747(var_toolkit, class348_sub21, i, i_115_, i_116_, i_117_);
         return aClass262_1254;
     }
 
-    private static final void method763(ha var_ha, int i, int i_118_, int i_119_, int i_120_, short[] is, byte[] is_121_) {
+    private static final void method763(Toolkit var_toolkit, int i, int i_118_, int i_119_, int i_120_, short[] is, byte[] is_121_) {
         if (is != null) {
             for (int i_122_ = 0; i_122_ < is.length; i_122_++) {
                 Class51 class51 = aObjectTypeList_1245.method2005(0, is[i_122_] & 0xffff);
                 int i_123_ = class51.anInt875;
                 if (i_123_ != -1) {
                     Class218 class218 = aMSITypeList_1242.method1173((byte) 31, i_123_);
-                    Sprite sprite = class218.method1596((class51.aBoolean912 ? is_121_[i_122_] >> 6 & 0x3 : 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_ha);
+                    Sprite sprite = class218.method1596((class51.aBoolean912 ? is_121_[i_122_] >> 6 & 0x3 : 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_toolkit);
                     if (sprite != null) {
                         int i_124_ = i_119_ * sprite.scaleWidth() >> 2;
                         int i_125_ = i_120_ * sprite.method980() >> 2;
@@ -566,7 +566,7 @@ class Class75 {
             anIntArray1260[i_130_ + 1] = method759(var_d, i_130_, i, i_129_);
     }
 
-    private static final void method765(ha var_ha, int i, int i_131_, int i_132_, int i_133_) {
+    private static final void method765(Toolkit var_toolkit, int i, int i_131_, int i_132_, int i_133_) {
         int i_134_ = anInt1265 - anInt1274;
         int i_135_ = anInt1277 - anInt1257;
         if (anInt1265 < anInt1259) i_134_++;
@@ -599,17 +599,17 @@ class Class75 {
                                 else if ((i_136_ + anInt1274 & 0x4) != (i_146_ + anInt1277 & 0x4)) i_152_ = -11840664;
                                 else i_152_ = (anIntArray1260[(aFloorOverlayTypeList_1239.anInt3447) + 1]);
                                 if (i_152_ == 0) i_152_ = -16777216;
-                                var_ha.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0);
+                                var_toolkit.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0);
                             } else if (i_154_ > 0) {
                                 if (i_154_ == 65535) {
                                     Class348_Sub39 class348_sub39 = ((Class348_Sub39) (aClass356_1271.method3480(i_140_ << 16 | i_150_, -6008)));
-                                    if (class348_sub39 != null) method755(var_ha, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275[i_151_], (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025), true);
+                                    if (class348_sub39 != null) method755(var_toolkit, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275[i_151_], (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025), true);
                                 } else {
                                     aShortArray1252[0] = (short) (i_154_ - 1);
                                     aByteArray1248[0] = aByteArray1258[i_151_];
-                                    method755(var_ha, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275[i_151_], aShortArray1252, aByteArray1248, true);
+                                    method755(var_toolkit, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275[i_151_], aShortArray1252, aByteArray1248, true);
                                 }
-                            } else method755(var_ha, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275[i_151_], null, null, true);
+                            } else method755(var_toolkit, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275[i_151_], null, null, true);
                         }
                     }
                 } else {
@@ -622,7 +622,7 @@ class Class75 {
                         else if ((i_136_ + anInt1274 & 0x4) != (i_141_ + anInt1277 & 0x4)) i_145_ = -11840664;
                         else i_145_ = anIntArray1260[(aFloorOverlayTypeList_1239.anInt3447) + 1];
                         if (i_145_ == 0) i_145_ = -16777216;
-                        var_ha.aa(i_137_, i_142_, i_139_, i_144_, i_145_, 0);
+                        var_toolkit.aa(i_137_, i_142_, i_139_, i_144_, i_145_, 0);
                     }
                 }
             }
@@ -645,13 +645,13 @@ class Class75 {
                                 if (i_165_ > 0) {
                                     if (i_165_ == 65535) {
                                         Class348_Sub39 class348_sub39 = ((Class348_Sub39) (aClass356_1271.method3480(i_159_ << 16 | i_164_, -6008)));
-                                        if (class348_sub39 != null) method763(var_ha, i_156_, i_161_, i_158_, i_163_, (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025));
+                                        if (class348_sub39 != null) method763(var_toolkit, i_156_, i_161_, i_158_, i_163_, (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025));
                                     } else {
                                         aShortArray1252[0] = (short) (i_165_ - 1);
                                         aByteArray1248[0] = (aByteArray1258[i_159_ + i_164_ * anInt1259]);
-                                        method763(var_ha, i_156_, i_161_, i_158_, i_163_, aShortArray1252, aByteArray1248);
+                                        method763(var_toolkit, i_156_, i_161_, i_158_, i_163_, aShortArray1252, aByteArray1248);
                                     }
-                                } else method763(var_ha, i_156_, i_161_, i_158_, i_163_, null, null);
+                                } else method763(var_toolkit, i_156_, i_161_, i_158_, i_163_, null, null);
                             }
                         }
                     }
@@ -680,7 +680,7 @@ class Class75 {
                             int i_178_ = ((i_132_ + i * (i_175_ + 1) >> 16) + anInt1272);
                             int i_179_ = (anInt1268 - (i_133_ + i_131_ * (i_176_ + 1) >> 16));
                             int i_180_ = anInt1268 - (i_133_ + i_131_ * i_176_ >> 16);
-                            method755(var_ha, i_177_, i_179_, i_178_ - i_177_, i_180_ - i_179_, (class318_sub8.anInt6465), (class318_sub8.aByte6460) & 0xff, (class318_sub8.aByte6463), (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462), false);
+                            method755(var_toolkit, i_177_, i_179_, i_178_ - i_177_, i_180_ - i_179_, (class318_sub8.anInt6465), (class318_sub8.aByte6460) & 0xff, (class318_sub8.aByte6463), (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462), false);
                         }
                     }
                 }
@@ -698,7 +698,7 @@ class Class75 {
                             int i_188_ = ((i_132_ + i * (i_185_ + 1) >> 16) + anInt1272);
                             int i_189_ = (anInt1268 - (i_133_ + i_131_ * (i_186_ + 1) >> 16));
                             int i_190_ = anInt1268 - (i_133_ + i_131_ * i_186_ >> 16);
-                            method763(var_ha, i_187_, i_189_, i_188_ - i_187_, i_190_ - i_189_, (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462));
+                            method763(var_toolkit, i_187_, i_189_, i_188_ - i_187_, i_190_ - i_189_, (class318_sub8.aShortArray6461), (class318_sub8.aByteArray6462));
                         }
                     }
                 }

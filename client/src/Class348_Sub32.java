@@ -199,8 +199,8 @@ final class Class348_Sub32 extends Node {
                     for (int i_46_ = 0; i_42_ >= i_46_; i_46_++) {
                         int i_47_ = i_46_ - -anInt6935;
                         if (i_47_ > 0 && i_47_ < aS_Sub2_6929.anInt4587 + -1) {
-                            int i_48_ = (var_s_Sub2.method3982((byte) -86, i_45_, i_47_ + 1) - var_s_Sub2.method3982((byte) -86, i_45_, i_47_ + -1));
-                            int i_49_ = (var_s_Sub2.method3982((byte) -86, 1 + i_45_, i_47_) - var_s_Sub2.method3982((byte) -86, -1 + i_45_, i_47_));
+                            int i_48_ = (var_s_Sub2.tileHeight((byte) -86, i_45_, i_47_ + 1) - var_s_Sub2.tileHeight((byte) -86, i_45_, i_47_ + -1));
+                            int i_49_ = (var_s_Sub2.tileHeight((byte) -86, 1 + i_45_, i_47_) - var_s_Sub2.tileHeight((byte) -86, -1 + i_45_, i_47_));
                             float f = (float) (1.0 / (Math.sqrt(i_48_ * i_48_ + (65536 - -(i_49_ * i_49_)))));
                             aFloatArrayArray6949[i_46_][i_44_] = (float) i_48_ * f;
                             aFloatArrayArray6947[i_46_][i_44_] = -256.0F * f;

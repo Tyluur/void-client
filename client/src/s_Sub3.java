@@ -5,7 +5,7 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
-final class s_Sub3 extends s {
+final class s_Sub3 extends Ground {
     private final Class262 aClass262_8286;
     static int anInt8287;
     static int anInt8288;
@@ -472,7 +472,7 @@ final class s_Sub3 extends s {
                         [1 + this.anInt4590]);
                 for (int i_144_ = 0; (this.anInt4590 >= i_144_); i_144_++) {
                     for (int i_145_ = 0; this.anInt4587 >= i_145_; i_145_++) {
-                        int i_146_ = this.anIntArrayArray4584[i_145_][i_144_];
+                        int i_146_ = this.tileHeights[i_145_][i_144_];
                         if ((float) i_146_ > aFloat8305) aFloat8305 = (float) i_146_;
                         if ((float) i_146_ < aFloat8306) aFloat8306 = (float) i_146_;
                         if (i_145_ > 0 && i_144_ > 0 && (i_145_ < this.anInt4587) && this.anInt4590 > i_144_) {

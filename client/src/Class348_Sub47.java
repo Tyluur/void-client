@@ -21,7 +21,7 @@ final class Class348_Sub47 extends Node {
         aClass114_7124 = null;
     }
 
-    static final void method3324(ha var_ha, byte i, long l) {
+    static final void method3324(Toolkit var_toolkit, byte i, long l) {
         do {
             try {
                 Class122.anInt1803 = 0;
@@ -33,14 +33,14 @@ final class Class348_Sub47 extends Node {
                 Class318_Sub10 class318_sub10 = (Class318_Sub10) Class152.aClass243_2077.method1872(8);
                 if (i > 40) {
                     for (/**/; class318_sub10 != null; class318_sub10 = (Class318_Sub10) Class152.aClass243_2077.method1878((byte) -64)) {
-                        if (class318_sub10.method2535(var_ha, l)) Class318_Sub1_Sub5.anInt8780++;
+                        if (class318_sub10.method2535(var_toolkit, l)) Class318_Sub1_Sub5.anInt8780++;
                     }
                     if (!Class348_Sub16_Sub2.aBoolean8874 || l % 100L != 0) break;
                     System.out.println("Particle system count: " + Class152.aClass243_2077.method1874(0) + ", running: " + Class318_Sub1_Sub5.anInt8780);
                     System.out.println("Emitters: " + Class122.anInt1803 + " Particles: " + Class313.anInt3936 + ". Time taken: " + (-l_1_ + Class62.safeTime(-112)) + "ms");
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("wm.A(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + l + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("wm.A(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + l + ')'));
             }
             break;
         } while (false);
@@ -59,14 +59,14 @@ final class Class348_Sub47 extends Node {
 
     static final void method3327(int i) {
         if (i == 1406) {
-            if (Class348_Sub8.aHa6654.method3694()) {
-                Class348_Sub8.aHa6654.method3701(Class305.aCanvas3869);
+            if (Class348_Sub8.aToolkit6654.method3694()) {
+                Class348_Sub8.aToolkit6654.method3701(Class305.aCanvas3869);
                 Class348_Sub22.method2959(-1);
                 if (!Class59_Sub1.aBoolean5300) {
                     Dimension dimension = Class305.aCanvas3869.getSize();
-                    Class348_Sub8.aHa6654.method3643(Class305.aCanvas3869, dimension.width, dimension.height);
+                    Class348_Sub8.aToolkit6654.method3643(Class305.aCanvas3869, dimension.width, dimension.height);
                 } else Mesh.method1108((byte) -99, Class305.aCanvas3869);
-                Class348_Sub8.aHa6654.method3677(Class305.aCanvas3869);
+                Class348_Sub8.aToolkit6654.method3677(Class305.aCanvas3869);
             } else Class367_Sub10.method3553(false, (byte) 100, Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350));
             anInt7123++;
             Class354.method3466(i + -1347);

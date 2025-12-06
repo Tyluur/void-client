@@ -16,7 +16,7 @@ final class Class323 {
     private static int[] anIntArray4043 = new int[256];
     private final int[] anIntArray4044 = new int[4];
 
-    private final void method2559(ha var_ha, Font font, FontMetrics fontmetrics, char c, int i, boolean bool) {
+    private final void method2559(Toolkit var_toolkit, Font font, FontMetrics fontmetrics, char c, int i, boolean bool) {
         int i_0_ = fontmetrics.charWidth(c);
         int i_1_ = i_0_;
         if (bool) {
@@ -64,14 +64,14 @@ final class Class323 {
         anInt4041 = i_2_ - i_5_;
         anInt4040 = i_4_;
         anIntArray4039[i] = i_1_;
-        aSpriteArray4042[i] = var_ha.method3662(i_0_, is, (byte) 94, 0, i_0_, i_3_);
+        aSpriteArray4042[i] = var_toolkit.method3662(i_0_, is, (byte) 94, 0, i_0_, i_3_);
     }
 
     final int method2560() {
         return anInt4041;
     }
 
-    private final void method2561(ha var_ha, String string, int[] is, int i, int i_10_, int i_11_, boolean bool) {
+    private final void method2561(Toolkit var_toolkit, String string, int[] is, int i, int i_10_, int i_11_, boolean bool) {
         if (i_11_ == 0) bool = false;
         i_11_ |= ~0xffffff;
         for (int i_12_ = 0; i_12_ < string.length(); i_12_++) {
@@ -86,10 +86,10 @@ final class Class323 {
         anIntArray4043 = null;
     }
 
-    final void method2563(ha var_ha, String string, int i, int i_14_, int i_15_, boolean bool) {
+    final void method2563(Toolkit var_toolkit, String string, int i, int i_14_, int i_15_, boolean bool) {
         int i_16_ = method2564(string) / 2;
-        var_ha.K(anIntArray4044);
-        if (i - i_16_ <= anIntArray4044[2] && i + i_16_ >= anIntArray4044[0] && i_14_ - anInt4041 <= anIntArray4044[3] && i_14_ + anInt4040 >= anIntArray4044[1]) method2561(var_ha, string, anIntArray4044, i - i_16_, i_14_, i_15_, bool);
+        var_toolkit.K(anIntArray4044);
+        if (i - i_16_ <= anIntArray4044[2] && i + i_16_ >= anIntArray4044[0] && i_14_ - anInt4041 <= anIntArray4044[3] && i_14_ + anInt4040 >= anIntArray4044[1]) method2561(var_toolkit, string, anIntArray4044, i - i_16_, i_14_, i_15_, bool);
     }
 
     final int method2564(String string) {
@@ -105,24 +105,24 @@ final class Class323 {
         return anInt4040 - 1;
     }
 
-    Class323(ha var_ha, int i, boolean bool, Component component) {
+    Class323(Toolkit var_toolkit, int i, boolean bool, Component component) {
         aBoolean4037 = false;
         aSpriteArray4042 = new Sprite[256];
         anIntArray4039 = new int[256];
         Font font = new Font("Helvetica", bool ? 1 : 0, i);
         FontMetrics fontmetrics = component.getFontMetrics(font);
         for (int i_19_ = 0; i_19_ < anInt4038; i_19_++)
-            method2559(var_ha, font, fontmetrics, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".charAt(i_19_), i_19_, false);
+            method2559(var_toolkit, font, fontmetrics, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".charAt(i_19_), i_19_, false);
         if (bool && aBoolean4037) {
             aBoolean4037 = false;
             font = new Font("Helvetica", 0, i);
             fontmetrics = component.getFontMetrics(font);
             for (int i_20_ = 0; i_20_ < anInt4038; i_20_++)
-                method2559(var_ha, font, fontmetrics, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".charAt(i_20_), i_20_, false);
+                method2559(var_toolkit, font, fontmetrics, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".charAt(i_20_), i_20_, false);
             if (!aBoolean4037) {
                 aBoolean4037 = false;
                 for (int i_21_ = 0; i_21_ < anInt4038; i_21_++)
-                    method2559(var_ha, font, fontmetrics, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".charAt(i_21_), i_21_, true);
+                    method2559(var_toolkit, font, fontmetrics, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".charAt(i_21_), i_21_, true);
             }
         }
     }

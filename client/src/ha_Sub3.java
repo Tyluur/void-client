@@ -12,7 +12,7 @@ import java.awt.*;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-abstract class ha_Sub3 extends ha {
+abstract class ha_Sub3 extends Toolkit {
     static int anInt7884;
     static int anInt7885;
     static int anInt7886;
@@ -701,7 +701,7 @@ abstract class ha_Sub3 extends ha {
         }
     }
 
-    final void method3638(Matrix matrix) {
+    final void setCamera(Matrix matrix) {
         do {
             try {
                 this.aClass101_Sub2_8080 = (Class101_Sub2) matrix;
@@ -956,7 +956,7 @@ abstract class ha_Sub3 extends ha {
         method3885(0, true, Class348_Sub40_Sub39.aClass70_9485);
         method3817(113, i_74_);
         this.aClass101_Sub2_8074.method932(1.0F, (float) i_72_, (float) i_71_, (byte) -22);
-        this.aClass101_Sub2_8074.method891(i, i_70_, 0);
+        this.aClass101_Sub2_8074.translate(i, i_70_, 0);
         method3915(0);
         method3926((byte) 67, false);
         method3933(-70);
@@ -1320,7 +1320,7 @@ abstract class ha_Sub3 extends ha {
         }
     }
 
-    final s method3648(int i, int i_122_, int[][] is, int[][] is_123_, int i_124_, int i_125_, int i_126_) {
+    final Ground method3648(int i, int i_122_, int[][] is, int[][] is_123_, int i_124_, int i_125_, int i_126_) {
         try {
             anInt8011++;
             return new s_Sub3(this, i_125_, i_126_, i, i_122_, is, is_123_, i_124_);
@@ -1420,7 +1420,7 @@ abstract class ha_Sub3 extends ha {
         method3885(0, true, Class348_Sub40_Sub39.aClass70_9485);
         method3817(83, i_137_);
         this.aClass101_Sub2_8074.method932(1.0F, (float) i_135_, (float) i_135_, (byte) -75);
-        this.aClass101_Sub2_8074.method891(i, i_134_, 0);
+        this.aClass101_Sub2_8074.translate(i, i_134_, 0);
         method3915(0);
         method3926((byte) 75, false);
         method3925(23, anInterface5_Impl1_8201, 0);

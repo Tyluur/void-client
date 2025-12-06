@@ -70,7 +70,7 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
                 try {
                     i_9_ = Option_Sub14.method1781(3, -70, 1000);
                     if (Class316.clientOptions.aClass239_Sub25_7271.method1829(i + -33350) == 3) {
-                        Class365 class365 = Class348_Sub8.aHa6654.c();
+                        Class365 class365 = Class348_Sub8.aToolkit6654.c();
                         long l = (0xffffffffffffL & class365.aLong4471);
                         int i_10_ = class365.anInt4476;
                         if (i_10_ == 4318) {

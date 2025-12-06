@@ -30,7 +30,7 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
         this.aClass318_Sub7_10419.aClass243_6433.method1869(-98, this);
     }
 
-    final void method2522(ha var_ha, long l) {
+    final void method2522(Toolkit var_toolkit, long l) {
         int i = this.anInt8791 >> 12 + Class362.anInt4459;
         int i_0_ = this.anInt8789 >> 12 + Class362.anInt4459;
         int i_1_ = this.anInt8796 >> 12;
@@ -38,20 +38,20 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
         else {
             Class318_Sub10 class318_sub10 = (this.aClass318_Sub7_10419.aClass318_Sub10_6439);
             Class181 class181 = (this.aClass318_Sub7_10419.aClass181_6441);
-            s[] var_ses = aa_Sub1.aSArray5191;
+            Ground[] var_grounds = aa_Sub1.aGroundArray5191;
             int i_2_ = class318_sub10.anInt6483;
             Class357 class357 = (Class147.aClass357ArrayArrayArray2029[class318_sub10.anInt6483][i][i_0_]);
             if (class357 != null) i_2_ = class357.aByte4399;
-            int i_3_ = var_ses[i_2_].method3982((byte) -86, i_0_, i);
+            int i_3_ = var_grounds[i_2_].tileHeight((byte) -86, i_0_, i);
             int i_4_;
-            if (i_2_ < BillboardType.anInt2524 - 1) i_4_ = var_ses[i_2_ + 1].method3982((byte) -86, i_0_, i);
+            if (i_2_ < BillboardType.anInt2524 - 1) i_4_ = var_grounds[i_2_ + 1].tileHeight((byte) -86, i_0_, i);
             else i_4_ = i_3_ - (8 << Class362.anInt4459);
             if (class181.aBoolean2397) {
                 if (class181.anInt2384 == -1 && i_1_ > i_3_) {
                     method2520();
                     return;
                 }
-                if (class181.anInt2384 >= 0 && i_1_ > var_ses[class181.anInt2384].method3982((byte) -86, i_0_, i)) {
+                if (class181.anInt2384 >= 0 && i_1_ > var_grounds[class181.anInt2384].tileHeight((byte) -86, i_0_, i)) {
                     method2520();
                     return;
                 }
@@ -59,17 +59,17 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
                     method2520();
                     return;
                 }
-                if (class181.anInt2423 >= 0 && i_1_ < var_ses[class181.anInt2423 + 1].method3982((byte) -86, i_0_, i)) {
+                if (class181.anInt2423 >= 0 && i_1_ < var_grounds[class181.anInt2423 + 1].tileHeight((byte) -86, i_0_, i)) {
                     method2520();
                     return;
                 }
             }
             int i_5_;
-            for (i_5_ = BillboardType.anInt2524 - 1; (i_5_ > 0 && i_1_ > var_ses[i_5_].method3982((byte) -86, i_0_, i)); i_5_--) {
+            for (i_5_ = BillboardType.anInt2524 - 1; (i_5_ > 0 && i_1_ > var_grounds[i_5_].tileHeight((byte) -86, i_0_, i)); i_5_--) {
                 /* empty */
             }
-            if (class181.aBoolean2376 && i_5_ == 0 && i_1_ > var_ses[0].method3982((byte) -86, i_0_, i)) method2520();
-            else if (i_5_ == BillboardType.anInt2524 - 1 && (var_ses[i_5_].method3982((byte) -86, i_0_, i) - i_1_ > 8 << Class362.anInt4459)) method2520();
+            if (class181.aBoolean2376 && i_5_ == 0 && i_1_ > var_grounds[0].tileHeight((byte) -86, i_0_, i)) method2520();
+            else if (i_5_ == BillboardType.anInt2524 - 1 && (var_grounds[i_5_].tileHeight((byte) -86, i_0_, i) - i_1_ > 8 << Class362.anInt4459)) method2520();
             else {
                 class357 = Class147.aClass357ArrayArrayArray2029[i_5_][i][i_0_];
                 if (class357 == null) {
@@ -90,28 +90,28 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
                     int i_7_ = this.anInt8791 >> 12;
                     int i_8_ = this.anInt8789 >> 12;
                     if (class357.aClass318_Sub1_Sub4_4406 != null) {
-                        Class30 class30 = class357.aClass318_Sub1_Sub4_4406.method2381(var_ha, 7);
+                        Class30 class30 = class357.aClass318_Sub1_Sub4_4406.method2381(var_toolkit, 7);
                         if (class30 != null && class30.method321(-14735, i_8_, i_1_, i_7_)) {
                             method2520();
                             return;
                         }
                     }
                     if (class357.aClass318_Sub1_Sub4_4403 != null) {
-                        Class30 class30 = class357.aClass318_Sub1_Sub4_4403.method2381(var_ha, 7);
+                        Class30 class30 = class357.aClass318_Sub1_Sub4_4403.method2381(var_toolkit, 7);
                         if (class30 != null && class30.method321(-14735, i_8_, i_1_, i_7_)) {
                             method2520();
                             return;
                         }
                     }
                     if (class357.aClass318_Sub1_Sub1_4402 != null) {
-                        Class30 class30 = class357.aClass318_Sub1_Sub1_4402.method2381(var_ha, 7);
+                        Class30 class30 = class357.aClass318_Sub1_Sub1_4402.method2381(var_toolkit, 7);
                         if (class30 != null && class30.method321(-14735, i_8_, i_1_, i_7_)) {
                             method2520();
                             return;
                         }
                     }
                     for (Class148 class148 = class357.aClass148_4396; class148 != null; class148 = class148.aClass148_2038) {
-                        Class30 class30 = class148.aClass318_Sub1_Sub3_2040.method2381(var_ha, 7);
+                        Class30 class30 = class148.aClass318_Sub1_Sub3_2040.method2381(var_toolkit, 7);
                         if (class30 != null && class30.method321(-14735, i_8_, i_1_, i_7_)) {
                             method2520();
                             return;

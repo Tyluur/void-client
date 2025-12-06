@@ -7,7 +7,7 @@ import jaggl.OpenGL;
 
 import java.io.IOException;
 
-final class s_Sub2 extends s {
+final class s_Sub2 extends Ground {
     int[][][] anIntArrayArrayArray8234;
     int anInt8235;
     static int anInt8236;
@@ -611,7 +611,7 @@ final class s_Sub2 extends s {
     }
 
     static final void method4001(Class318_Sub1 class318_sub1) {
-        Class9.aHa171.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) >> 1)), class318_sub1.y, Class348_Sub42_Sub3.anIntArray9505);
+        Class9.aToolkit171.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) >> 1)), class318_sub1.y, Class348_Sub42_Sub3.anIntArray9505);
         class318_sub1.anInt6386 = Class348_Sub42_Sub3.anIntArray9505[0];
         class318_sub1.anInt6380 = Class348_Sub42_Sub3.anIntArray9505[1];
         class318_sub1.anInt6389 = Class348_Sub42_Sub3.anIntArray9505[2];

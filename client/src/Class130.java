@@ -50,18 +50,18 @@ abstract class Class130 {
 
     static final boolean method1130(r var_r, int i, int i_1_, int i_2_, boolean[] bools) {
         boolean bool = false;
-        if (aa_Sub1.aSArray5191 != Class332.aSArray4142) {
-            int i_3_ = Class348_Sub1_Sub1.aSArray8801[i].method3986(i_1_, i_2_, (byte) -109);
+        if (aa_Sub1.aGroundArray5191 != Class332.aGroundArray4142) {
+            int i_3_ = Class348_Sub1_Sub1.aGroundArray8801[i].method3986(i_1_, i_2_, (byte) -109);
             int i_4_ = 0;
             for (/**/; i_4_ <= i; i_4_++) {
-                s var_s = Class348_Sub1_Sub1.aSArray8801[i_4_];
-                if (var_s != null) {
-                    int i_5_ = i_3_ - var_s.method3986(i_1_, i_2_, (byte) 72);
+                Ground var_ground = Class348_Sub1_Sub1.aGroundArray8801[i_4_];
+                if (var_ground != null) {
+                    int i_5_ = i_3_ - var_ground.method3986(i_1_, i_2_, (byte) 72);
                     if (bools != null) {
-                        bools[i_4_] = var_s.method3989(var_r, i_1_, i_5_, i_2_, 0, false);
+                        bools[i_4_] = var_ground.method3989(var_r, i_1_, i_5_, i_2_, 0, false);
                         if (!bools[i_4_]) continue;
                     }
-                    var_s.CA(var_r, i_1_, i_5_, i_2_, 0, false);
+                    var_ground.CA(var_r, i_1_, i_5_, i_2_, 0, false);
                     bool = true;
                 }
             }

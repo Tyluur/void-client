@@ -1068,7 +1068,7 @@ final class Class64_Sub3 extends Model {
         aBoolean5527 = false;
     }
 
-    final void method608(Matrix matrix, Class318_Sub3 class318_sub3, int i, int i_235_) {
+    final void method608(Matrix matrix, LabelBounds class318_sub3, int i, int i_235_) {
         try {
             anInt5639++;
             if (anInt5529 != 0) {
@@ -1133,14 +1133,14 @@ final class Class64_Sub3 extends Model {
                                 int i_252_ = (int) (Class49.aFloat4720 + ((float) i_248_ * (Class318_Sub9_Sub1.aFloat8784)) + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_249_));
                                 int i_253_ = (int) ((Class313.aFloat3935 * (float) i_249_) + ((Class299_Sub1_Sub1.aFloat8696 * (float) aShort5629) + (Class190.aFloat2555 + (JavaThreadResource.aFloat2203 * (float) i_248_))));
                                 int i_254_ = (int) (Class156.aFloat2111 + (ResourceProvider.aFloat3943 * (float) i_248_) + (Class252.aFloat3242 * (float) aShort5629) + ((float) i_249_ * Class215.aFloat2836));
-                                class318_sub3.anInt6405 = (aHa_Sub2_5598.anInt7853 - -(i_250_ * (aHa_Sub2_5598.anInt7771) / i));
-                                class318_sub3.anInt6402 = ((i_251_ * aHa_Sub2_5598.anInt7794 / i) + aHa_Sub2_5598.anInt7810);
-                                class318_sub3.anInt6404 = (aHa_Sub2_5598.anInt7810 + (i_254_ * aHa_Sub2_5598.anInt7794 / i));
+                                class318_sub3.bottomX = (aHa_Sub2_5598.anInt7853 - -(i_250_ * (aHa_Sub2_5598.anInt7771) / i));
+                                class318_sub3.bottomY = ((i_251_ * aHa_Sub2_5598.anInt7794 / i) + aHa_Sub2_5598.anInt7810);
+                                class318_sub3.topY = (aHa_Sub2_5598.anInt7810 + (i_254_ * aHa_Sub2_5598.anInt7794 / i));
                                 int i_255_ = (int) (((float) i_249_ * Class286_Sub8.aFloat6304) + ((Class320.aFloat3994 * (float) aShort5629) + (((Class318_Sub9_Sub1.aFloat8784) * (float) i_248_) + Class49.aFloat4720)));
-                                class318_sub3.anInt6406 = (aHa_Sub2_5598.anInt7853 + (i_253_ * aHa_Sub2_5598.anInt7771 / i));
+                                class318_sub3.topX = (aHa_Sub2_5598.anInt7853 + (i_253_ * aHa_Sub2_5598.anInt7771 / i));
                                 if (i_252_ >= aHa_Sub2_5598.anInt7826 || i_255_ >= (aHa_Sub2_5598.anInt7826)) {
-                                    class318_sub3.aBoolean6401 = true;
-                                    class318_sub3.anInt6403 = (-(class318_sub3.anInt6405) + ((aHa_Sub2_5598.anInt7853) + ((aHa_Sub2_5598.anInt7771) * (aShort5634 + i_250_) / i)));
+                                    class318_sub3.visible = true;
+                                    class318_sub3.width = (-(class318_sub3.bottomX) + ((aHa_Sub2_5598.anInt7853) + ((aHa_Sub2_5598.anInt7771) * (aShort5634 + i_250_) / i)));
                                 }
                             }
                             aHa_Sub2_5598.method3789((byte) -122, (float) i);
@@ -1189,7 +1189,7 @@ final class Class64_Sub3 extends Model {
         return aShort5646;
     }
 
-    final void p(int i, int i_256_, s var_s, s var_s_257_, int i_258_, int i_259_, int i_260_) {
+    final void p(int i, int i_256_, Ground var_ground, Ground var_ground_257_, int i_258_, int i_259_, int i_260_) {
         do {
             try {
                 anInt5532++;
@@ -1198,43 +1198,43 @@ final class Class64_Sub3 extends Model {
                 int i_262_ = i_258_ - -aShort5586;
                 int i_263_ = i_260_ - -aShort5617;
                 int i_264_ = aShort5646 + i_260_;
-                if ((i != 1 && i != 2 && i != 3 && i != 5) || (i_261_ >= 0 && (var_s.anInt4587 > (var_s.anInt4592 + i_262_ >> var_s.anInt4588)) && i_263_ >= 0 && (var_s.anInt4590 > (i_264_ - -var_s.anInt4592 >> var_s.anInt4588)))) {
+                if ((i != 1 && i != 2 && i != 3 && i != 5) || (i_261_ >= 0 && (var_ground.anInt4587 > (var_ground.anInt4592 + i_262_ >> var_ground.anInt4588)) && i_263_ >= 0 && (var_ground.anInt4590 > (i_264_ - -var_ground.anInt4592 >> var_ground.anInt4588)))) {
                     if (i != 4 && i != 5) {
-                        i_261_ >>= var_s.anInt4588;
-                        i_262_ = (i_262_ - -var_s.anInt4592 - 1 >> var_s.anInt4588);
-                        i_263_ >>= var_s.anInt4588;
-                        i_264_ = (i_264_ + var_s.anInt4592 + -1 >> var_s.anInt4588);
-                        if (i_259_ == var_s.method3982((byte) -86, i_263_, i_261_) && i_259_ == var_s.method3982((byte) -86, i_263_, i_262_) && i_259_ == var_s.method3982((byte) -86, i_264_, i_261_) && (var_s.method3982((byte) -86, i_264_, i_262_) == i_259_)) break;
-                    } else if (var_s_257_ == null || (i_261_ < 0 || (((i_262_ - -var_s_257_.anInt4592) >> var_s_257_.anInt4588) >= var_s_257_.anInt4587) || i_263_ < 0 || (var_s_257_.anInt4590 <= (var_s_257_.anInt4592 + i_264_ >> var_s_257_.anInt4588)))) break;
+                        i_261_ >>= var_ground.anInt4588;
+                        i_262_ = (i_262_ - -var_ground.anInt4592 - 1 >> var_ground.anInt4588);
+                        i_263_ >>= var_ground.anInt4588;
+                        i_264_ = (i_264_ + var_ground.anInt4592 + -1 >> var_ground.anInt4588);
+                        if (i_259_ == var_ground.tileHeight((byte) -86, i_263_, i_261_) && i_259_ == var_ground.tileHeight((byte) -86, i_263_, i_262_) && i_259_ == var_ground.tileHeight((byte) -86, i_264_, i_261_) && (var_ground.tileHeight((byte) -86, i_264_, i_262_) == i_259_)) break;
+                    } else if (var_ground_257_ == null || (i_261_ < 0 || (((i_262_ - -var_ground_257_.anInt4592) >> var_ground_257_.anInt4588) >= var_ground_257_.anInt4587) || i_263_ < 0 || (var_ground_257_.anInt4590 <= (var_ground_257_.anInt4592 + i_264_ >> var_ground_257_.anInt4588)))) break;
                     if (i == 1) {
                         for (int i_265_ = 0; i_265_ < anInt5557; i_265_++)
-                            anIntArray5593[i_265_] = (-i_259_ + anIntArray5593[i_265_] + var_s.method3986((anIntArray5543[i_265_] + i_258_), i_260_ + (anIntArray5644[i_265_]), (byte) -93));
+                            anIntArray5593[i_265_] = (-i_259_ + anIntArray5593[i_265_] + var_ground.method3986((anIntArray5543[i_265_] + i_258_), i_260_ + (anIntArray5644[i_265_]), (byte) -93));
                     } else if (i == 2) {
                         int i_279_ = aShort5591;
                         if (i_279_ == 0) break;
                         for (int i_280_ = 0; anInt5557 > i_280_; i_280_++) {
                             int i_281_ = ((anIntArray5593[i_280_] << 16) / i_279_);
-                            if (i_281_ < i_256_) anIntArray5593[i_280_] = (anIntArray5593[i_280_] - -((-i_259_ + (var_s.method3986((anIntArray5543[i_280_] - -i_258_), (i_260_ + anIntArray5644[i_280_]), (byte) -94))) * (-i_281_ + i_256_) / i_256_));
+                            if (i_281_ < i_256_) anIntArray5593[i_280_] = (anIntArray5593[i_280_] - -((-i_259_ + (var_ground.method3986((anIntArray5543[i_280_] - -i_258_), (i_260_ + anIntArray5644[i_280_]), (byte) -94))) * (-i_281_ + i_256_) / i_256_));
                         }
                     } else if (i == 3) {
                         int i_266_ = (0xff & i_256_) * 4;
                         int i_267_ = 4 * ((0xff0e & i_256_) >> 8);
                         int i_268_ = 0x3fc0 & i_256_ >> 16 << 6;
                         int i_269_ = (0xff & i_256_ >> 24) << 6;
-                        if (i_258_ + -(i_266_ >> 1) < 0 || (((i_266_ >> 1) + (i_258_ - -var_s.anInt4592)) >= (var_s.anInt4587 << var_s.anInt4588)) || -(i_267_ >> 1) + i_260_ < 0 || ((var_s.anInt4590 << var_s.anInt4588) <= ((i_267_ >> 1) + i_260_ + var_s.anInt4592)))
+                        if (i_258_ + -(i_266_ >> 1) < 0 || (((i_266_ >> 1) + (i_258_ - -var_ground.anInt4592)) >= (var_ground.anInt4587 << var_ground.anInt4588)) || -(i_267_ >> 1) + i_260_ < 0 || ((var_ground.anInt4590 << var_ground.anInt4588) <= ((i_267_ >> 1) + i_260_ + var_ground.anInt4592)))
                             break;
-                        this.method626(i_266_, 10947, i_269_, i_258_, i_267_, i_259_, i_268_, var_s, i_260_);
+                        this.method626(i_266_, 10947, i_269_, i_258_, i_267_, i_259_, i_268_, var_ground, i_260_);
                     } else if (i == 4) {
                         int i_277_ = aShort5629 - aShort5591;
                         for (int i_278_ = 0; anInt5557 > i_278_; i_278_++)
-                            anIntArray5593[i_278_] = (anIntArray5593[i_278_] - (-(var_s_257_.method3986(anIntArray5543[i_278_] + i_258_, anIntArray5644[i_278_] + i_260_, (byte) 71)) - -i_259_ - i_277_));
+                            anIntArray5593[i_278_] = (anIntArray5593[i_278_] - (-(var_ground_257_.method3986(anIntArray5543[i_278_] + i_258_, anIntArray5644[i_278_] + i_260_, (byte) 71)) - -i_259_ - i_277_));
                     } else if (i == 5) {
                         int i_270_ = -aShort5591 + aShort5629;
                         for (int i_271_ = 0; anInt5557 > i_271_; i_271_++) {
                             int i_272_ = anIntArray5543[i_271_] + i_258_;
                             int i_273_ = anIntArray5644[i_271_] + i_260_;
-                            int i_274_ = var_s.method3986(i_272_, i_273_, (byte) -100);
-                            int i_275_ = var_s_257_.method3986(i_272_, i_273_, (byte) 93);
+                            int i_274_ = var_ground.method3986(i_272_, i_273_, (byte) -100);
+                            int i_275_ = var_ground_257_.method3986(i_272_, i_273_, (byte) 93);
                             int i_276_ = -i_256_ + i_274_ + -i_275_;
                             anIntArray5593[i_271_] = i_274_ + (-i_259_ + (((anIntArray5593[i_271_] << 8) / i_270_ * i_276_) >> 8));
                         }
@@ -1244,7 +1244,7 @@ final class Class64_Sub3 extends Model {
                     aClass123_5605.anInterface2_1811 = null;
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (var_s != null ? "{...}" : "null") + ',' + (var_s_257_ != null ? "{...}" : "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("paa.p(" + i + ',' + i_256_ + ',' + (var_ground != null ? "{...}" : "null") + ',' + (var_ground_257_ != null ? "{...}" : "null") + ',' + i_258_ + ',' + i_259_ + ',' + i_260_ + ')'));
             }
             break;
         } while (false);
@@ -1565,7 +1565,7 @@ final class Class64_Sub3 extends Model {
         }
     }
 
-    final void method615(Matrix matrix, Class318_Sub3 class318_sub3, int i) {
+    final void method615(Matrix matrix, LabelBounds class318_sub3, int i) {
         try {
             anInt5611++;
             if (anInt5529 != 0) {
@@ -1631,37 +1631,37 @@ final class Class64_Sub3 extends Model {
                                 int i_366_ = (int) (Class156.aFloat2111 + ((float) i_363_ * ResourceProvider.aFloat3943) + ((float) aShort5591 * Class252.aFloat3242) + ((float) i_364_ * Class215.aFloat2836));
                                 int i_367_ = (int) ((Class318_Sub9_Sub1.aFloat8784 * (float) i_363_) + Class49.aFloat4720 + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_364_));
                                 if (aHa_Sub2_5598.anInt7826 <= i_367_) {
-                                    class318_sub3.anInt6405 = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853));
-                                    class318_sub3.anInt6402 = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810));
+                                    class318_sub3.bottomX = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853));
+                                    class318_sub3.bottomY = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810));
                                 } else bool = true;
                                 int i_368_ = (int) (Class190.aFloat2555 + (JavaThreadResource.aFloat2203 * (float) i_363_) + (Class299_Sub1_Sub1.aFloat8696 * (float) aShort5629) + (Class313.aFloat3935 * (float) i_364_));
                                 int i_369_ = (int) (((float) i_364_ * Class215.aFloat2836) + ((Class252.aFloat3242 * (float) aShort5629) + (Class156.aFloat2111 + (ResourceProvider.aFloat3943 * (float) i_363_))));
                                 int i_370_ = (int) ((Class286_Sub8.aFloat6304 * (float) i_364_) + (((float) i_363_ * (Class318_Sub9_Sub1.aFloat8784)) + Class49.aFloat4720 + ((float) aShort5629 * Class320.aFloat3994)));
                                 if (i_370_ >= aHa_Sub2_5598.anInt7826) {
-                                    class318_sub3.anInt6406 = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853));
-                                    class318_sub3.anInt6404 = (i_369_ * (aHa_Sub2_5598.anInt7794) / i_370_ + (aHa_Sub2_5598.anInt7810));
+                                    class318_sub3.topX = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853));
+                                    class318_sub3.topY = (i_369_ * (aHa_Sub2_5598.anInt7794) / i_370_ + (aHa_Sub2_5598.anInt7810));
                                 } else bool = true;
                                 if (bool) {
                                     if ((aHa_Sub2_5598.anInt7826 <= i_367_) || ((aHa_Sub2_5598.anInt7826) <= i_370_)) {
                                         if (i_367_ < (aHa_Sub2_5598.anInt7826)) {
                                             int i_371_ = ((-(aHa_Sub2_5598.anInt7826) + i_370_ << 16) / (i_370_ + -i_367_));
                                             int i_372_ = (((-i_365_ + i_368_) * i_371_ >> 16) + i_368_);
-                                            class318_sub3.anInt6405 = ((aHa_Sub2_5598.anInt7853) - -(i_372_ * (aHa_Sub2_5598.anInt7771) / (aHa_Sub2_5598.anInt7826)));
+                                            class318_sub3.bottomX = ((aHa_Sub2_5598.anInt7853) - -(i_372_ * (aHa_Sub2_5598.anInt7771) / (aHa_Sub2_5598.anInt7826)));
                                             int i_373_ = ((i_371_ * (i_369_ - i_366_) >> 16) + i_369_);
-                                            class318_sub3.anInt6402 = ((i_373_ * aHa_Sub2_5598.anInt7794 / (aHa_Sub2_5598.anInt7826)) + (aHa_Sub2_5598.anInt7810));
+                                            class318_sub3.bottomY = ((i_373_ * aHa_Sub2_5598.anInt7794 / (aHa_Sub2_5598.anInt7826)) + (aHa_Sub2_5598.anInt7810));
                                         } else if (i_370_ < (aHa_Sub2_5598.anInt7826)) {
                                             int i_374_ = ((-(aHa_Sub2_5598.anInt7826) + i_367_ << 16) / (i_367_ - i_370_));
                                             int i_375_ = (i_365_ - -(i_374_ * (-i_368_ + i_365_) >> 16));
                                             int i_376_ = (((i_366_ - i_369_) * i_374_ >> 16) + i_366_);
-                                            class318_sub3.anInt6405 = ((i_375_ * aHa_Sub2_5598.anInt7771 / (aHa_Sub2_5598.anInt7826)) + (aHa_Sub2_5598.anInt7853));
-                                            class318_sub3.anInt6402 = ((aHa_Sub2_5598.anInt7810) + (aHa_Sub2_5598.anInt7794 * i_376_ / (aHa_Sub2_5598.anInt7826)));
+                                            class318_sub3.bottomX = ((i_375_ * aHa_Sub2_5598.anInt7771 / (aHa_Sub2_5598.anInt7826)) + (aHa_Sub2_5598.anInt7853));
+                                            class318_sub3.bottomY = ((aHa_Sub2_5598.anInt7810) + (aHa_Sub2_5598.anInt7794 * i_376_ / (aHa_Sub2_5598.anInt7826)));
                                         }
                                     } else bool_362_ = false;
                                 }
                                 if (bool_362_) {
-                                    if (i_370_ < i_367_) class318_sub3.anInt6403 = ((aHa_Sub2_5598.anInt7853) + ((aHa_Sub2_5598.anInt7771) * (i_365_ - -aShort5634) / i_367_) - class318_sub3.anInt6405);
-                                    else class318_sub3.anInt6403 = ((aHa_Sub2_5598.anInt7853) - -((aHa_Sub2_5598.anInt7771) * (aShort5634 + i_368_) / i_370_) + -class318_sub3.anInt6406);
-                                    class318_sub3.aBoolean6401 = true;
+                                    if (i_370_ < i_367_) class318_sub3.width = ((aHa_Sub2_5598.anInt7853) + ((aHa_Sub2_5598.anInt7771) * (i_365_ - -aShort5634) / i_367_) - class318_sub3.bottomX);
+                                    else class318_sub3.width = ((aHa_Sub2_5598.anInt7853) - -((aHa_Sub2_5598.anInt7771) * (aShort5634 + i_368_) / i_370_) + -class318_sub3.topX);
+                                    class318_sub3.visible = true;
                                 }
                             }
                             aHa_Sub2_5598.method3784((byte) -62);

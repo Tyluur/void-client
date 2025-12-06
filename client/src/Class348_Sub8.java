@@ -5,7 +5,7 @@
 import java.applet.Applet;
 
 final class Class348_Sub8 extends Node {
-    static ha aHa6654;
+    static Toolkit aToolkit6654;
     static int[] anIntArray6655;
     static boolean[][] aBooleanArrayArray6656;
     byte[] aByteArray6657;
@@ -58,7 +58,7 @@ final class Class348_Sub8 extends Node {
 
     public static void method2775(byte i) {
         aShortArray6658 = null;
-        aHa6654 = null;
+        aToolkit6654 = null;
         aShortArray6665 = null;
         anIntArray6666 = null;
         aShortArray6663 = null;

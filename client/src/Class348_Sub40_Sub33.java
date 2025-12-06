@@ -12,11 +12,11 @@ final class Class348_Sub40_Sub33 extends Class348_Sub40 {
 
     static final boolean method3137(boolean bool, byte i) {
         anInt9426++;
-        boolean bool_0_ = Class348_Sub8.aHa6654.method3666();
+        boolean bool_0_ = Class348_Sub8.aToolkit6654.method3666();
         if (i != -24) return true;
         if (!bool_0_ == !bool) return true;
-        if (!bool) Class348_Sub8.aHa6654.method3710();
-        else if (!Class348_Sub8.aHa6654.method3671()) bool = false;
+        if (!bool) Class348_Sub8.aToolkit6654.method3710();
+        else if (!Class348_Sub8.aToolkit6654.method3671()) bool = false;
         if (bool_0_ == bool) return false;
         Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub12_7243), bool ? 1 : 0);
         Class14_Sub2.method243(37);

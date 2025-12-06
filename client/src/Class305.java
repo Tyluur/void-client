@@ -26,7 +26,7 @@ final class Class305 {
     static boolean aBoolean3870 = false;
     private final Class72 aClass72_3871;
 
-    final boolean method2292(int i, ha var_ha, int i_0_) {
+    final boolean method2292(int i, Toolkit var_toolkit, int i_0_) {
         if (anInt3859 != i_0_) {
             anInt3859 = i_0_;
             int i_1_ = Class348_Sub40_Sub1.method3051(i_0_, 4096);
@@ -56,7 +56,7 @@ final class Class305 {
         if (aBoolean3857) {
             aBoolean3857 = false;
             for (int i_3_ = -1 + anInt3852; i_3_ >= 0; i_3_--) {
-                boolean bool_4_ = aClass72Array3865[i_3_].method736(var_ha, aClass72_3871);
+                boolean bool_4_ = aClass72Array3865[i_3_].method736(var_toolkit, aClass72_3871);
                 bool |= bool_4_;
                 Class305 class305_5_ = this;
                 class305_5_.aBoolean3857 = class305_5_.aBoolean3857 | !bool_4_;
@@ -65,16 +65,16 @@ final class Class305 {
         return bool;
     }
 
-    final void method2293(int i, ha var_ha, byte i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_) {
+    final void method2293(int i, Toolkit var_toolkit, byte i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_) {
         i_10_ = 0x3fff & i + i_10_;
         anInt3860++;
         if (anInt3858 != -1 && anInt3863 != 0) {
             TextureMetrics textureMetrics = JavaMatrix.aD5684.getMetrics(anInt3858, -6662);
             if (aSprite_3867 == null && JavaMatrix.aD5684.method4(-7953, anInt3858)) {
                 int[] is = (textureMetrics.alphaBlendMode == 2 ? JavaMatrix.aD5684.method6(-21540, anInt3863, 0.7F, anInt3858, false, anInt3863) : JavaMatrix.aD5684.method5(false, anInt3858, 0.7F, anInt3863, anInt3863, -119));
-                aSprite_3867 = var_ha.method3662(anInt3863, is, (byte) 94, 0, anInt3863, anInt3863);
+                aSprite_3867 = var_toolkit.method3662(anInt3863, is, (byte) 94, 0, anInt3863, anInt3863);
             }
-            if (textureMetrics.alphaBlendMode == 2) var_ha.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);
+            if (textureMetrics.alphaBlendMode == 2) var_toolkit.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);
             if (aSprite_3867 != null) {
                 int i_14_ = textureMetrics.alphaBlendMode == 2 ? 1 : 0;
                 int i_15_ = i_13_ * i_11_ / -4096;
@@ -96,9 +96,9 @@ final class Class305 {
                         aSprite_3867.method970(i_7_ + i_17_, i_18_ + i_9_, i_13_, i_13_, 1, 0, i_14_);
                 }
             }
-        } else var_ha.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);
+        } else var_toolkit.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);
         for (int i_19_ = -1 + anInt3852; i_19_ >= 0; i_19_--)
-            aClass72Array3865[i_19_].method737(var_ha, i_7_, i_9_, i_8_, i_13_, i_11_, i_10_);
+            aClass72Array3865[i_19_].method737(var_toolkit, i_7_, i_9_, i_8_, i_13_, i_11_, i_10_);
         int i_20_ = 103 % ((i_6_ - 14) / 32);
     }
 

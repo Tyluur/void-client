@@ -43,21 +43,21 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
     static int anInt10363;
     static int anInt10364;
 
-    final Class318_Sub4 method2386(int i, ha var_ha) {
+    final Class318_Sub4 method2386(int i, Toolkit var_toolkit) {
         anInt10352++;
-        Model model = method2465(var_ha, anInt10355, (anInt10334 == 0 ? 0 : 5) | 0x800, (byte) -82);
+        Model model = method2465(var_toolkit, anInt10355, (anInt10334 == 0 ? 0 : 5) | 0x800, (byte) -82);
         if (model == null) return null;
         if (anInt10334 != 0) model.a(anInt10334 * 2048);
-        Matrix matrix = var_ha.method3705();
+        Matrix matrix = var_toolkit.method3705();
         matrix.method894(this.x, this.anInt6382, this.y);
-        method2467(model, var_ha, -1, matrix);
+        method2467(model, var_toolkit, -1, matrix);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, false, false);
         if (Class305.aBoolean3870) model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
         else model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
         if (aClass318_Sub10_10341 != null) {
             Class98 class98 = aClass318_Sub10_10341.method2525();
-            if (!Class305.aBoolean3870) var_ha.method3684(class98);
-            else var_ha.method3685(class98, Class132.anInt1906);
+            if (!Class305.aBoolean3870) var_toolkit.method3684(class98);
+            else var_toolkit.method3685(class98, Class132.anInt1906);
         }
         aBoolean10338 = model.F();
         anInt10331 = model.fa();
@@ -81,13 +81,13 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         }
     }
 
-    final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_0_, byte i_1_, int i_2_) {
+    final void method2380(Toolkit var_toolkit, int i, boolean bool, Class318_Sub1 class318_sub1, int i_0_, byte i_1_, int i_2_) {
         try {
             anInt10347++;
             if (i_1_ > -106) this.aBoolean10345 = false;
             throw new IllegalStateException();
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lf.N(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class318_sub1 != null ? "{...}" : "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lf.N(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class318_sub1 != null ? "{...}" : "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'));
         }
     }
 
@@ -146,19 +146,19 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         return frame;
     }
 
-    static final void method2464(byte i, int i_11_, int i_12_, int i_13_, ha var_ha, int i_14_, TextureSource var_d) {
+    static final void method2464(byte i, int i_11_, int i_12_, int i_13_, Toolkit var_toolkit, int i_14_, TextureSource var_d) {
         do {
             try {
                 anInt10357++;
-                if (Node.anInt4290 < 100) Class318_Sub7.method2512(var_d, var_ha, i ^ 0x74);
-                var_ha.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_);
+                if (Node.anInt4290 < 100) Class318_Sub7.method2512(var_d, var_toolkit, i ^ 0x74);
+                var_toolkit.KA(i_11_, i_14_, i_12_ + i_11_, i_14_ + i_13_);
                 if (Node.anInt4290 < 100) {
                     int i_15_ = 20;
                     int i_16_ = i_12_ / 2 + i_11_;
                     int i_17_ = i_14_ - -(i_13_ / 2) - 18 - i_15_;
-                    var_ha.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0);
-                    var_ha.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884].getRGB(), 0);
-                    var_ha.aa(i_16_ - 150, 2 + i_17_, Node.anInt4290 * 3, 30, Class135.aColorArray1928[Class222.anInt2884].getRGB(), 0);
+                    var_toolkit.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0);
+                    var_toolkit.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884].getRGB(), 0);
+                    var_toolkit.aa(i_16_ - 150, 2 + i_17_, Node.anInt4290 * 3, 30, Class135.aColorArray1928[Class222.anInt2884].getRGB(), 0);
                     Class262.aFontRenderer_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(Class348_Sub33.language, i + 551), -1, i_15_ + i_17_);
                 } else {
                     int i_18_ = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
@@ -170,10 +170,10 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     Class182.anInt2446 = (int) ((float) (2 * i_13_) / Class75.aFloat1247);
                     SkyBoxSphereTypeList.anInt370 = (int) ((float) (i_12_ * 2) / Class75.aFloat1247);
                     Class75.method751(i_18_ + Class75.anInt1266, i_19_ + Class75.anInt1263, i_20_ - -Class75.anInt1266, Class75.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1);
-                    Class75.method748(var_ha);
+                    Class75.method748(var_toolkit);
                     if (i != -7) method2462(63, -7, -14);
-                    Class262 class262 = Class75.method758(var_ha);
-                    Class309.method2312(-13084, 0, class262, 0, var_ha);
+                    Class262 class262 = Class75.method758(var_toolkit);
+                    Class309.method2312(-13084, 0, class262, 0, var_toolkit);
                     if (Class367_Sub9.anInt7379 > 0) {
                         Class164.anInt2173--;
                         if (Class164.anInt2173 == 0) {
@@ -194,20 +194,20 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     i_23_ -= 15;
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_14_ + ',' + (var_d != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("lf.L(" + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_14_ + ',' + (var_d != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
     }
 
-    private final Model method2465(ha var_ha, int i, int i_26_, byte i_27_) {
+    private final Model method2465(Toolkit var_toolkit, int i, int i_26_, byte i_27_) {
         anInt10353++;
         if (i_27_ != -82) return null;
         Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 122, i);
-        s var_s = Class348_Sub1_Sub1.aSArray8801[this.plane];
-        s var_s_28_ = (this.aByte6376 < 3 ? (Class348_Sub1_Sub1.aSArray8801[1 + this.aByte6376]) : null);
-        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_ha, anInt10350, this.x, -129, Class10.seqTypeList, var_s_28_, this.y, var_s);
-        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_ha, -1, this.x, -129, Class10.seqTypeList, var_s_28_, this.y, var_s);
+        Ground var_ground = Class348_Sub1_Sub1.aGroundArray8801[this.plane];
+        Ground var_ground_28_ = (this.aByte6376 < 3 ? (Class348_Sub1_Sub1.aGroundArray8801[1 + this.aByte6376]) : null);
+        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_toolkit, anInt10350, this.x, -129, Class10.seqTypeList, var_ground_28_, this.y, var_ground);
+        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_toolkit, -1, this.x, -129, Class10.seqTypeList, var_ground_28_, this.y, var_ground);
     }
 
     final void method2466(boolean bool) {
@@ -223,7 +223,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         return aBoolean10338;
     }
 
-    private final void method2467(Model model, ha var_ha, int i, Matrix matrix) {
+    private final void method2467(Model model, Toolkit var_toolkit, int i, Matrix matrix) {
         do {
             try {
                 model.method620(matrix);
@@ -233,11 +233,11 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                 if (i == -1) {
                     if ((aClass318_Sub10_10341 == null || (aClass318_Sub10_10341.aBoolean6470)) && (modelParticleEmitters != null || modelParticleEffectors != null)) aClass318_Sub10_10341 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true);
                     if (aClass318_Sub10_10341 == null) break;
-                    aClass318_Sub10_10341.method2536(var_ha, Class367_Sub11.anInt7396, modelParticleEmitters, modelParticleEffectors, false);
+                    aClass318_Sub10_10341.method2536(var_toolkit, Class367_Sub11.anInt7396, modelParticleEmitters, modelParticleEffectors, false);
                     aClass318_Sub10_10341.method2533(this.plane, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (model != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (matrix != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (model != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + (matrix != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -249,7 +249,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         return anInt10356;
     }
 
-    final Class30 method2381(ha var_ha, int i) {
+    final Class30 method2381(Toolkit var_toolkit, int i) {
         if (i != 7) method2387(null, -106);
         anInt10363++;
         return null;
@@ -261,18 +261,18 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         return false;
     }
 
-    final void method2387(ha var_ha, int i) {
+    final void method2387(Toolkit var_toolkit, int i) {
         if (i >= -125) anInt10331 = 38;
         anInt10354++;
-        Model model = method2465(var_ha, anInt10355, 0, (byte) -82);
+        Model model = method2465(var_toolkit, anInt10355, 0, (byte) -82);
         if (model != null) {
-            Matrix matrix = var_ha.method3705();
+            Matrix matrix = var_toolkit.method3705();
             matrix.method894(this.x, this.anInt6382, this.y);
-            method2467(model, var_ha, -1, matrix);
+            method2467(model, var_toolkit, -1, matrix);
         }
     }
 
-    final boolean method2391(ha var_ha, int i, int i_29_, int i_30_) {
+    final boolean method2391(Toolkit var_toolkit, int i, int i_29_, int i_30_) {
         anInt10346++;
         if (i_30_ != 0) return false;
         return false;

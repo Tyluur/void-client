@@ -38,7 +38,7 @@ final class Class348_Sub49_Sub2 extends Packet {
         for (int i_2_ = 0; Class348_Sub1.anIntArray6547.length > i_2_; i_2_++) {
             int i_3_ = Class348_Sub1.anIntArray6547[i_2_];
             if (Class39.aIndex_518.method421(false, i_3_)) i_1_++;
-            if (s.aIndex_4585.method421(false, i_3_)) i_1_++;
+            if (Ground.aIndex_4585.method421(false, i_3_)) i_1_++;
         }
         return i_1_;
     }

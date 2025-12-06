@@ -138,7 +138,7 @@ final class Class286_Sub5 extends Class286 {
         anInt6258++;
         LoadingScreenOpFactory.hitbarDefaultGroup = index.method417("hitbar_default", 0);
         Class373_Sub2.timerbarDefaultGroup = index.method417("timerbar_default", 0);
-        ha.headIconsPkGroup = index.method417("headicons_pk", 0);
+        Toolkit.headIconsPkGroup = index.method417("headicons_pk", 0);
         VarcstrTypeList.headIconsPrayerGroup = index.method417("headicons_prayer", 0);
         Class115.hintHeadIconsGroup = index.method417("hint_headicons", 0);
         Class291.hintMapmarkersGroup = index.method417("hint_mapmarkers", 0);

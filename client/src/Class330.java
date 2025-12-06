@@ -129,7 +129,7 @@ final class Class330 {
                                     if (-i_24_ <= i_34_ + -i_26_ && i_24_ >= -i_26_ + i_34_ && (bools[i_24_ + (-i_25_ + i_33_)][-i_26_ + i_34_ + i_24_])) {
                                         Class101_Sub2 class101_sub2 = aHa_Sub3_4111.method3820(false);
                                         class101_sub2.method932(1.0F, f, f, (byte) -65);
-                                        class101_sub2.method891(-i_30_, -i_27_, 0);
+                                        class101_sub2.translate(-i_30_, -i_27_, 0);
                                         aHa_Sub3_4111.method3853(i ^ ~0x9f, Option_Sub18.aClass251_6030);
                                         aClass97ArrayArray4122[i_30_][i_27_].method871((byte) 116);
                                         break while_119_;
@@ -182,7 +182,7 @@ final class Class330 {
                             if (interface5_impl2.method22(-23) && i_39_ > 0) {
                                 Class101_Sub2 class101_sub2 = aHa_Sub3_4111.method3820(false);
                                 class101_sub2.method932(1.0F, f, f, (byte) -62);
-                                class101_sub2.method891(-i_38_, -i_35_, 0);
+                                class101_sub2.translate(-i_38_, -i_35_, 0);
                                 aHa_Sub3_4111.method3853(i ^ ~0x9f, (Option_Sub18.aClass251_6030));
                                 class97.method875(-82, interface5_impl2, i_39_ / 3);
                             }

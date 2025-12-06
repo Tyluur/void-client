@@ -219,7 +219,7 @@ public final class Class378 extends ha_Sub3 {
         this.anIDirect3DDevice9810.SetTextureStageState(this.anInt8175, 11, i_18_);
     }
 
-    static final ha createToolkit(Canvas canvas, TextureSource var_d, Index index, Integer integer) {
+    static final Toolkit createToolkit(Canvas canvas, TextureSource var_d, Index index, Integer integer) {
         Class378 class378 = null;
         Class378 class378_19_;
         try {

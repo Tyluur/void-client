@@ -29,23 +29,23 @@ abstract class Class318_Sub1 extends Class318 {
 
     abstract int method2379(int i);
 
-    abstract void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1_0_, int i_1_, byte i_2_, int i_3_);
+    abstract void method2380(Toolkit var_toolkit, int i, boolean bool, Class318_Sub1 class318_sub1_0_, int i_1_, byte i_2_, int i_3_);
 
-    abstract Class30 method2381(ha var_ha, int i);
+    abstract Class30 method2381(Toolkit var_toolkit, int i);
 
     abstract boolean method2382(byte i);
 
-    static final void method2383(ha var_ha, int i, Class46 class46) {
+    static final void method2383(Toolkit var_toolkit, int i, Class46 class46) {
         do {
             try {
                 if (i != -2) method2383(null, -63, null);
                 anInt6385++;
-                boolean bool = ((Exception_Sub1.itemTypeList.method1941(class46.anInt672, (byte) -74, class46.anInt812, class46.anInt781, ~0xffffff | class46.anInt809, class46.anInt678, var_ha, (!class46.aBoolean720 ? null : (Class132.aPlayer_1907.aClass154_10536)))) == null);
+                boolean bool = ((Exception_Sub1.itemTypeList.method1941(class46.anInt672, (byte) -74, class46.anInt812, class46.anInt781, ~0xffffff | class46.anInt809, class46.anInt678, var_toolkit, (!class46.aBoolean720 ? null : (Class132.aPlayer_1907.aClass154_10536)))) == null);
                 if (!bool) break;
                 Class5_Sub1_Sub1.aClass262_9931.method1999(new Class348_Sub7(class46.anInt812, class46.anInt781, class46.anInt672, (~0xffffff | class46.anInt809), class46.anInt678, class46.aBoolean720), i ^ 0x4ed2);
                 Class251.method1916(-9343, class46);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ga.QA(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class46 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("ga.QA(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + (class46 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -53,7 +53,7 @@ abstract class Class318_Sub1 extends Class318 {
 
     abstract int method2384(Class348_Sub1[] class348_sub1s, int i);
 
-    static final void method2385(Class46 class46, int i, aa var_aa, int i_4_, int i_5_, int i_6_, byte i_7_, int i_8_, ha var_ha) {
+    static final void method2385(Class46 class46, int i, aa var_aa, int i_4_, int i_5_, int i_6_, byte i_7_, int i_8_, Toolkit var_toolkit) {
         do {
             try {
                 anInt6390++;
@@ -76,7 +76,7 @@ abstract class Class318_Sub1 extends Class318 {
                             is[i_9_ * 2] = (((i_11_ * (((class42.anIntArray591[i_9_ * 2 - -1]) * 4) + i_8_) + (i_5_ - -(4 * (class42.anIntArray591[2 * i_9_]))) * i_12_) >> 14) + (i_6_ - -(class46.anInt709 / 2)));
                             is[i_9_ * 2 - -1] = (-((((class42.anIntArray591[1 + i_9_ * 2]) * 4 + i_8_) * i_12_ - (i_5_ - -((class42.anIntArray591[i_9_ * 2]) * 4)) * i_11_) >> 14) + i + class46.anInt789 / 2);
                         }
-                        Class329.method2619(var_ha, is, class42.anInt582, class46.anIntArray677, class46.anIntArray772);
+                        Class329.method2619(var_toolkit, is, class42.anInt582, class46.anIntArray677, class46.anIntArray772);
                         if (class42.anInt584 > 0) {
                             for (int i_13_ = 0; (i_13_ < -1 + is.length / 2); i_13_++) {
                                 int i_14_ = is[i_13_ * 2];
@@ -97,7 +97,7 @@ abstract class Class318_Sub1 extends Class318 {
                                     i_16_ = i_19_;
                                     i_17_ = i_20_;
                                 }
-                                var_ha.method3703(i_14_, i_15_, i_16_, i_17_, (class42.anIntArray572[((class42.aByteArray564[i_13_]) & 0xff)]), 1, var_aa, i_6_, i, class42.anInt584, class42.anInt575, (class42.anInt601));
+                                var_toolkit.method3703(i_14_, i_15_, i_16_, i_17_, (class42.anIntArray572[((class42.aByteArray564[i_13_]) & 0xff)]), 1, var_aa, i_6_, i, class42.anInt584, class42.anInt575, (class42.anInt601));
                             }
                             int i_21_ = is[-2 + is.length];
                             int i_22_ = is[-1 + is.length];
@@ -115,16 +115,16 @@ abstract class Class318_Sub1 extends Class318 {
                                 i_22_ = i_24_;
                                 i_24_ = i_27_;
                             }
-                            var_ha.method3703(i_21_, i_22_, i_23_, i_24_, (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).length - 1)]) & 0xff]), 1, var_aa, i_6_, i, class42.anInt584, class42.anInt575, class42.anInt601);
+                            var_toolkit.method3703(i_21_, i_22_, i_23_, i_24_, (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).length - 1)]) & 0xff]), 1, var_aa, i_6_, i, class42.anInt584, class42.anInt575, class42.anInt601);
                         } else {
                             for (int i_28_ = 0; -1 + is.length / 2 > i_28_; i_28_++)
-                                var_ha.method3636(is[i_28_ * 2], is[2 * i_28_ + 1], is[2 * (i_28_ - -1)], is[2 * i_28_ + 3], (class42.anIntArray572[((class42.aByteArray564[i_28_]) & 0xff)]), 1, var_aa, i_6_, i);
-                            var_ha.method3636(is[is.length + -2], is[-1 + is.length], is[0], is[1], (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).length + -1)]) & 0xff]), 1, var_aa, i_6_, i);
+                                var_toolkit.method3636(is[i_28_ * 2], is[2 * i_28_ + 1], is[2 * (i_28_ - -1)], is[2 * i_28_ + 3], (class42.anIntArray572[((class42.aByteArray564[i_28_]) & 0xff)]), 1, var_aa, i_6_, i);
+                            var_toolkit.method3636(is[is.length + -2], is[-1 + is.length], is[0], is[1], (class42.anIntArray572[(class42.aByteArray564[((class42.aByteArray564).length + -1)]) & 0xff]), 1, var_aa, i_6_, i);
                         }
                     }
                     Sprite sprite = null;
                     if (class42.anInt578 != -1) {
-                        sprite = class42.method374(false, var_ha, (byte) 127);
+                        sprite = class42.method374(false, var_toolkit, (byte) 127);
                         if (sprite != null) Class151.method1211(i, sprite, i_6_, class46, var_aa, i_8_, 2, i_5_);
                     }
                     if (class42.aString597 == null) break;
@@ -143,15 +143,15 @@ abstract class Class318_Sub1 extends Class318 {
                     Class334.method2650(fontMetrics, class42.anInt580, var_aa, i_8_, i_6_, class42.aString597, i, fontRenderer, i_29_, class46, i_5_, 100);
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ga.KA(" + (class46 != null ? "{...}" : "null") + ',' + i + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (var_ha != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("ga.KA(" + (class46 != null ? "{...}" : "null") + ',' + i + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (var_toolkit != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
     }
 
-    abstract Class318_Sub4 method2386(int i, ha var_ha);
+    abstract Class318_Sub4 method2386(int i, Toolkit var_toolkit);
 
-    abstract void method2387(ha var_ha, int i);
+    abstract void method2387(Toolkit var_toolkit, int i);
 
     abstract boolean method2388(int i);
 
@@ -176,7 +176,7 @@ abstract class Class318_Sub1 extends Class318 {
         return i_33_;
     }
 
-    abstract boolean method2391(ha var_ha, int i, int i_36_, int i_37_);
+    abstract boolean method2391(Toolkit var_toolkit, int i, int i_36_, int i_37_);
 
     abstract void method2392(boolean bool);
 

@@ -51,11 +51,11 @@ final class Class348_Sub23_Sub2 extends Class348_Sub23 {
         questTypeList = null;
     }
 
-    final Sprite method2975(ha var_ha, int i) {
+    final Sprite method2975(Toolkit var_toolkit, int i) {
         anInt9026++;
         if (aFrame9024 == null) return null;
         if (!aBoolean9014 && aSprite_9020 != null) return aSprite_9020;
-        aSprite_9020 = var_ha.method3711(aFrame9024.pixels, i, aFrame9024.a, aFrame9024.a, aFrame9024.b, false);
+        aSprite_9020 = var_toolkit.method3711(aFrame9024.pixels, i, aFrame9024.a, aFrame9024.a, aFrame9024.b, false);
         aBoolean9014 = false;
         return aSprite_9020;
     }

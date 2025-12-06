@@ -125,12 +125,12 @@ final class Class51 {
         return class348_sub50.aString7211;
     }
 
-    final Class2 method476(ha var_ha, s var_s, int i, int i_4_, int i_5_, boolean bool, s var_s_6_, int i_7_, int i_8_, int i_9_, int i_10_) {
+    final Class2 method476(Toolkit var_toolkit, Ground var_ground, int i, int i_4_, int i_5_, boolean bool, Ground var_ground_6_, int i_7_, int i_8_, int i_9_, int i_10_) {
         try {
             if (Class104.method955(22311, i)) i = 4;
             anInt938++;
             long l = i_9_ + (i << 3) + (this.anInt941 << 10);
-            l |= var_ha.anInt4567 << 29;
+            l |= var_toolkit.anInt4567 << 29;
             int i_11_ = i_4_;
             if (aByte886 == 3) i_11_ |= 0x7;
             else {
@@ -145,11 +145,11 @@ final class Class51 {
             }
             Model model = class2 == null ? null : class2.aModel_119;
             r var_r = null;
-            if (model == null || var_ha.method3667(model.ua(), i_11_) != 0) {
-                if (model != null) i_11_ = var_ha.method3679(i_11_, model.ua());
+            if (model == null || var_toolkit.method3667(model.ua(), i_11_) != 0) {
+                if (model != null) i_11_ = var_toolkit.method3679(i_11_, model.ua());
                 int i_12_ = i_11_;
                 if (i == 10 && i_9_ > 3) i_12_ |= 0x5;
-                model = method477(i_9_, var_ha, i, i_10_ ^ ~0xec, i_12_);
+                model = method477(i_9_, var_toolkit, i, i_10_ ^ ~0xec, i_12_);
                 if (model == null) return null;
                 if (i == 10 && i_9_ > 3) model.a(2048);
                 if (bool) var_r = model.ba(null);
@@ -166,11 +166,11 @@ final class Class51 {
                 if (bool && var_r == null) var_r = class2.aR118 = model.ba(null);
             }
             if (i_10_ != 128) method477(-4, null, 72, 42, -33);
-            boolean bool_13_ = (aByte886 != 0 && (var_s_6_ != null || var_s != null));
+            boolean bool_13_ = (aByte886 != 0 && (var_ground_6_ != null || var_ground != null));
             boolean bool_14_ = (anInt893 != 0 || anInt954 != 0 || anInt890 != 0);
             if (bool_13_ || bool_14_) {
                 model = model.method614((byte) 0, i_11_, true);
-                if (bool_13_) model.p(aByte886, anInt915, var_s_6_, var_s, i_5_, i_7_, i_8_);
+                if (bool_13_) model.p(aByte886, anInt915, var_ground_6_, var_ground, i_5_, i_7_, i_8_);
                 if (bool_14_) model.H(anInt893, anInt954, anInt890);
                 model.s(i_4_);
             } else model = model.method614((byte) 0, i_4_, true);
@@ -178,11 +178,11 @@ final class Class51 {
             Class348_Sub42.aClass2_7058.aR118 = var_r;
             return Class348_Sub42.aClass2_7058;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("iv.B(" + (var_ha != null ? "{...}" : "null") + ',' + (var_s != null ? "{...}" : "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (var_s_6_ != null ? "{...}" : "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("iv.B(" + (var_toolkit != null ? "{...}" : "null") + ',' + (var_ground != null ? "{...}" : "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (var_ground_6_ != null ? "{...}" : "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'));
         }
     }
 
-    private final Model method477(int i, ha var_ha, int i_15_, int i_16_, int i_17_) {
+    private final Model method477(int i, Toolkit var_toolkit, int i_15_, int i_16_, int i_17_) {
         anInt958++;
         int i_18_ = anInt949 - -64;
         int i_19_ = 850 + anInt880;
@@ -210,7 +210,7 @@ final class Class51 {
         if (i_21_ == -1) return null;
         int i_23_ = anIntArrayArray907[i_21_].length;
         if (i_23_ > 0) {
-            long l = var_ha.anInt4567;
+            long l = var_toolkit.anInt4567;
             for (int i_24_ = 0; i_23_ > i_24_; i_24_++)
                 l = l * 67783L + (long) anIntArrayArray907[i_21_][i_24_];
             synchronized (this.aObjectTypeList_933.aClass60_3360) {
@@ -220,9 +220,9 @@ final class Class51 {
                 if (i_18_ != model.WA()) i_17_ |= 0x1000;
                 if (i_19_ != model.da()) i_17_ |= 0x2000;
             }
-            if (model == null || var_ha.method3667(model.ua(), i_17_) != 0) {
+            if (model == null || var_toolkit.method3667(model.ua(), i_17_) != 0) {
                 int i_25_ = i_17_ | 0x1f01f;
-                if (model != null) i_25_ = var_ha.method3679(i_25_, model.ua());
+                if (model != null) i_25_ = var_toolkit.method3679(i_25_, model.ua());
                 Mesh mesh = null;
                 synchronized (Class341.aMeshArray4236) {
                     for (int i_26_ = 0; i_26_ < i_23_; i_26_++) {
@@ -235,7 +235,7 @@ final class Class51 {
                     }
                     if (i_23_ > 1) mesh = new Mesh(Class341.aMeshArray4236, i_23_);
                 }
-                model = var_ha.method3625(mesh, i_25_, (this.aObjectTypeList_933.anInt3363), i_18_, i_19_);
+                model = var_toolkit.method3625(mesh, i_25_, (this.aObjectTypeList_933.anInt3363), i_18_, i_19_);
                 synchronized (this.aObjectTypeList_933.aClass60_3360) {
                     this.aObjectTypeList_933.aClass60_3360.method582(model, l, (byte) -95);
                 }
@@ -531,13 +531,13 @@ final class Class51 {
         if (i_38_ >= -93) aByteArray885 = null;
     }
 
-    final Model method483(int i, int i_63_, int i_64_, int i_65_, ha var_ha, int i_66_, int i_67_, byte i_68_, s var_s, int i_69_, int i_70_, int i_71_, Class17 class17, s var_s_72_) {
+    final Model method483(int i, int i_63_, int i_64_, int i_65_, Toolkit var_toolkit, int i_66_, int i_67_, byte i_68_, Ground var_ground, int i_69_, int i_70_, int i_71_, Class17 class17, Ground var_ground_72_) {
         try {
             if (Class104.method955(22311, i_64_)) i_64_ = 4;
             anInt910++;
             long l = (this.anInt941 << 10) + ((i_64_ << 3) - -i_66_);
             int i_73_ = i_67_;
-            l |= var_ha.anInt4567 << 29;
+            l |= var_toolkit.anInt4567 << 29;
             if (class17 != null) i_67_ |= class17.method263(i, 123, i_70_, false);
             if (aByte886 != 3) {
                 if (aByte886 != 0 || anInt954 != 0) i_67_ |= 0x2;
@@ -549,9 +549,9 @@ final class Class51 {
             synchronized (this.aObjectTypeList_933.aClass60_3362) {
                 model = (Model) this.aObjectTypeList_933.aClass60_3362.method583(l, 100);
             }
-            if (model == null || var_ha.method3667(model.ua(), i_67_) != 0) {
-                if (model != null) i_67_ = var_ha.method3679(i_67_, model.ua());
-                model = method477(i_66_, var_ha, i_64_, -125, i_67_);
+            if (model == null || var_toolkit.method3667(model.ua(), i_67_) != 0) {
+                if (model != null) i_67_ = var_toolkit.method3679(i_67_, model.ua());
+                model = method477(i_66_, var_toolkit, i_64_, -125, i_67_);
                 if (model == null) return null;
                 synchronized (this.aObjectTypeList_933.aClass60_3362) {
                     this.aObjectTypeList_933.aClass60_3362.method582(model, l, (byte) -127);
@@ -575,7 +575,7 @@ final class Class51 {
                     bool = true;
                     model = model.method614((byte) 3, i_67_, true);
                 }
-                model.p(aByte886, anInt915, var_s_72_, var_s, i_71_, i_65_, i_69_);
+                model.p(aByte886, anInt915, var_ground_72_, var_ground, i_71_, i_65_, i_69_);
             }
             if (anInt893 != 0 || anInt954 != 0 || anInt890 != 0) {
                 if (!bool) {
@@ -587,7 +587,7 @@ final class Class51 {
             if (bool) model.s(i_73_);
             return model;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (var_s != null ? "{...}" : "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (class17 != null ? "{...}" : "null") + ',' + (var_s_72_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (var_ground != null ? "{...}" : "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (class17 != null ? "{...}" : "null") + ',' + (var_ground_72_ != null ? "{...}" : "null") + ')'));
         }
     }
 

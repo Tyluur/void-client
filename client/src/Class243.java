@@ -90,11 +90,11 @@ final class Class243 {
         }
     }
 
-    static final void method1877(ha var_ha, int i) {
+    static final void method1877(Toolkit var_toolkit, int i) {
         anInt3164++;
         if (i >= -20) method1877(null, -112);
         for (Class318_Sub10 class318_sub10 = (Class318_Sub10) Class152.aClass243_2077.method1872(8); class318_sub10 != null; class318_sub10 = (Class318_Sub10) Class152.aClass243_2077.method1878((byte) 124)) {
-            if (class318_sub10.aBoolean6482) class318_sub10.method2528(var_ha);
+            if (class318_sub10.aBoolean6482) class318_sub10.method2528(var_toolkit);
         }
     }
 
@@ -113,10 +113,10 @@ final class Class243 {
     static final void method1879(boolean bool) {
         if (bool) {
             Class147.aClass357ArrayArrayArray2029 = Class348_Sub31_Sub2.aClass357ArrayArrayArray9082;
-            aa_Sub1.aSArray5191 = Class332.aSArray4142;
+            aa_Sub1.aGroundArray5191 = Class332.aGroundArray4142;
         } else {
             Class147.aClass357ArrayArrayArray2029 = StructTypeList.aClass357ArrayArrayArray1148;
-            aa_Sub1.aSArray5191 = Class348_Sub1_Sub1.aSArray8801;
+            aa_Sub1.aGroundArray5191 = Class348_Sub1_Sub1.aGroundArray8801;
         }
         BillboardType.anInt2524 = Class147.aClass357ArrayArrayArray2029.length;
     }

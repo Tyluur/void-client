@@ -230,7 +230,7 @@ final class ItemDefinition {
         return mesh;
     }
 
-    final Model method1559(Class154 class154, Class17 class17, ha var_ha, int i, int i_20_, int i_21_, int i_22_, byte i_23_, int i_24_) {
+    final Model method1559(Class154 class154, Class17 class17, Toolkit var_toolkit, int i, int i_20_, int i_21_, int i_22_, byte i_23_, int i_24_) {
         try {
             anInt2813++;
             if (this.anIntArray2762 != null && i_21_ > 1) {
@@ -238,17 +238,17 @@ final class ItemDefinition {
                 for (int i_26_ = 0; i_26_ < 10; i_26_++) {
                     if (i_21_ >= this.anIntArray2831[i_26_] && this.anIntArray2831[i_26_] != 0) i_25_ = this.anIntArray2762[i_26_];
                 }
-                if (i_25_ != -1) return (this.aItemTypeList_2761.method1940(103, i_25_).method1559(class154, class17, var_ha, i, i_20_, 1, i_22_, (byte) 88, i_24_));
+                if (i_25_ != -1) return (this.aItemTypeList_2761.method1940(103, i_25_).method1559(class154, class17, var_toolkit, i, i_20_, 1, i_22_, (byte) 88, i_24_));
             }
             if (i_23_ != 88) this.aString2795 = null;
             int i_27_ = i;
             if (class17 != null) i_27_ |= class17.method263(i_24_, 105, i_22_, true);
             Model model;
             synchronized (this.aItemTypeList_2761.aClass60_3287) {
-                model = (Model) (this.aItemTypeList_2761.aClass60_3287.method583(var_ha.anInt4567 << 29 | this.anInt2769, 69));
+                model = (Model) (this.aItemTypeList_2761.aClass60_3287.method583(var_toolkit.anInt4567 << 29 | this.anInt2769, 69));
             }
-            if (model == null || var_ha.method3667(model.ua(), i_27_) != 0) {
-                if (model != null) i_27_ = var_ha.method3679(i_27_, model.ua());
+            if (model == null || var_toolkit.method3667(model.ua(), i_27_) != 0) {
+                if (model != null) i_27_ = var_toolkit.method3679(i_27_, model.ua());
                 int i_28_ = i_27_;
                 if (aShortArray2785 != null) i_28_ |= 0x8000;
                 if (aShortArray2777 != null || class154 != null) i_28_ |= 0x4000;
@@ -258,7 +258,7 @@ final class ItemDefinition {
                 Mesh mesh = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), anInt2756, -1);
                 if (mesh == null) return null;
                 if (mesh.version < 13) mesh.method1092(2, 97);
-                model = var_ha.method3625(mesh, i_28_, (this.aItemTypeList_2761.anInt3291), anInt2791 + 64, 850 - -anInt2824);
+                model = var_toolkit.method3625(mesh, i_28_, (this.aItemTypeList_2761.anInt3291), anInt2791 + 64, 850 - -anInt2824);
                 if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) model.O(anInt2786, anInt2794, anInt2765);
                 if (aShortArray2777 != null) {
                     for (int i_29_ = 0; (i_29_ < aShortArray2777.length); i_29_++) {
@@ -279,14 +279,14 @@ final class ItemDefinition {
                 }
                 model.s(i_27_);
                 synchronized (this.aItemTypeList_2761.aClass60_3287) {
-                    this.aItemTypeList_2761.aClass60_3287.method582(model, var_ha.anInt4567 << 29 | this.anInt2769, (byte) -111);
+                    this.aItemTypeList_2761.aClass60_3287.method582(model, var_toolkit.anInt4567 << 29 | this.anInt2769, (byte) -111);
                 }
             }
             if (class17 != null) model = class17.method269(116, model, i_24_, i_20_, i_27_, i_22_);
             model.s(i);
             return model;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.S(" + (class154 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.S(" + (class154 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'));
         }
     }
 
@@ -316,7 +316,7 @@ final class ItemDefinition {
         }
     }
 
-    final int[] method1562(int i, boolean bool, int i_37_, ha var_ha, ha var_ha_38_, FontRenderer fontRenderer, Class154 class154, int i_39_, byte i_40_, int i_41_) {
+    final int[] method1562(int i, boolean bool, int i_37_, Toolkit var_toolkit, Toolkit var_toolkit_38_, FontRenderer fontRenderer, Class154 class154, int i_39_, byte i_40_, int i_41_) {
         try {
             anInt2806++;
             Mesh mesh = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), anInt2756, i_40_ ^ 0x65);
@@ -345,17 +345,17 @@ final class ItemDefinition {
                 i_46_ |= 0x7;
                 bool_47_ = true;
             }
-            Model model = var_ha_38_.method3625(mesh, i_46_, 64, anInt2791 + 64, 768 + anInt2824);
+            Model model = var_toolkit_38_.method3625(mesh, i_46_, 64, anInt2791 + 64, 768 + anInt2824);
             if (!model.method618()) return null;
             if (bool_47_) model.O(anInt2786, anInt2794, anInt2765);
             Sprite sprite = null;
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
-                    sprite = (this.aItemTypeList_2761.method1932(var_ha_38_, i_37_, i, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2778, false, i_41_));
+                    sprite = (this.aItemTypeList_2761.method1932(var_toolkit_38_, i_37_, i, fontRenderer, class154, 0, true, (byte) 83, var_toolkit, this.anInt2778, false, i_41_));
                     if (sprite == null) return null;
                 }
             } else {
-                sprite = (this.aItemTypeList_2761.method1932(var_ha_38_, 0, 10, fontRenderer, class154, 0, true, (byte) 83, var_ha, this.anInt2758, true, 1));
+                sprite = (this.aItemTypeList_2761.method1932(var_toolkit_38_, 0, 10, fontRenderer, class154, 0, true, (byte) 83, var_toolkit, this.anInt2758, true, 1));
                 if (sprite == null) return null;
             }
             int i_48_;
@@ -363,45 +363,45 @@ final class ItemDefinition {
                 if (i_41_ == 2) i_48_ = ((int) (1.04 * (double) this.anInt2825) << 2);
                 else i_48_ = this.anInt2825 << 2;
             } else i_48_ = ((int) (1.5 * (double) this.anInt2825) << 2);
-            var_ha_38_.DA(16, 16, 512, 512);
-            Matrix matrix = var_ha_38_.method3654();
+            var_toolkit_38_.DA(16, 16, 512, 512);
+            Matrix matrix = var_toolkit_38_.method3654();
             matrix.method910();
-            var_ha_38_.method3638(matrix);
-            var_ha_38_.xa(1.0F);
-            var_ha_38_.ZA(16777215, 1.0F, 1.0F, -50.0F, -10.0F, -50.0F);
-            Matrix matrix_49_ = var_ha_38_.method3705();
+            var_toolkit_38_.setCamera(matrix);
+            var_toolkit_38_.xa(1.0F);
+            var_toolkit_38_.ZA(16777215, 1.0F, 1.0F, -50.0F, -10.0F, -50.0F);
+            Matrix matrix_49_ = var_toolkit_38_.method3705();
             matrix_49_.method902(-this.anInt2810 << 3);
             matrix_49_.method896(this.anInt2781 << 3);
-            matrix_49_.method891(this.anInt2779 << 2, ((i_48_ * (Class70.SIN[this.anInt2787 << 3]) >> 14) - model.fa() / 2 + (this.anInt2826 << 2)), ((i_48_ * (Class70.COS[this.anInt2787 << 3]) >> 14) - -(this.anInt2826 << 2)));
+            matrix_49_.translate(this.anInt2779 << 2, ((i_48_ * (Class70.SIN[this.anInt2787 << 3]) >> 14) - model.fa() / 2 + (this.anInt2826 << 2)), ((i_48_ * (Class70.COS[this.anInt2787 << 3]) >> 14) - -(this.anInt2826 << 2)));
             matrix_49_.method900(this.anInt2787 << 3);
-            int i_50_ = var_ha_38_.i();
-            int i_51_ = var_ha_38_.XA();
-            var_ha_38_.f(50, 2147483647);
-            var_ha_38_.ya();
-            var_ha_38_.la();
-            var_ha_38_.aa(0, 0, 36, 32, 0, 0);
+            int i_50_ = var_toolkit_38_.i();
+            int i_51_ = var_toolkit_38_.XA();
+            var_toolkit_38_.f(50, 2147483647);
+            var_toolkit_38_.ya();
+            var_toolkit_38_.la();
+            var_toolkit_38_.aa(0, 0, 36, 32, 0, 0);
             model.method615(matrix_49_, null, 1);
-            var_ha_38_.f(i_50_, i_51_);
-            int[] is = var_ha_38_.na(0, 0, 36, 32);
+            var_toolkit_38_.f(i_50_, i_51_);
+            int[] is = var_toolkit_38_.na(0, 0, 36, 32);
             if (i_40_ != -102) method1554(false, 37);
             if (i_41_ >= 1) {
                 is = method1572(-16777214, -1, is);
                 if (i_41_ >= 2) is = method1572(-1, -1, is);
             }
             if (i_37_ != 0) method1571(i_37_, is, (byte) 119);
-            var_ha_38_.method3662(36, is, (byte) 94, 0, 36, 32).method974(0, 0);
+            var_toolkit_38_.method3662(36, is, (byte) 94, 0, 36, 32).method974(0, 0);
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) sprite.method974(0, 0);
             } else sprite.method974(0, 0);
             if (i_39_ == 1 || (i_39_ == 2 && (this.anInt2820 == 1 || i != 1) && i != -1)) fontRenderer.method2576(method1557(i, i_40_ + -11517), -256, 9, 0, -16777215, i_40_ + -15);
-            is = var_ha_38_.na(0, 0, 36, 32);
+            is = var_toolkit_38_.na(0, 0, 36, 32);
             for (int i_52_ = 0; i_52_ < is.length; i_52_++) {
                 if ((0xffffff & is[i_52_]) != 0) is[i_52_] = Class273.method2057(is[i_52_], -16777216);
                 else is[i_52_] = 0;
             }
             return is;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (var_ha_38_ != null ? "{...}" : "null") + ',' + (fontRenderer != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.O(" + i + ',' + bool + ',' + i_37_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + (var_toolkit_38_ != null ? "{...}" : "null") + ',' + (fontRenderer != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
         }
     }
 

@@ -122,9 +122,9 @@ final class Class211 {
         if (i >= -84) anIntArray2744 = null;
     }
 
-    private final void method1541(int i, ha var_ha, int i_33_, int i_34_, int i_35_, int i_36_, int i_37_) {
+    private final void method1541(int i, Toolkit var_toolkit, int i_33_, int i_34_, int i_35_, int i_36_, int i_37_) {
         anInt2736++;
-        if (i_35_ == 3) this.aClass348_Sub1_2745 = var_ha.method3690(i_34_, i, i_33_, i_37_, i_36_, 1.0F);
+        if (i_35_ == 3) this.aClass348_Sub1_2745 = var_toolkit.method3690(i_34_, i, i_33_, i_37_, i_36_, 1.0F);
     }
 
     private final void method1542(int i) {
@@ -347,7 +347,7 @@ final class Class211 {
         method1542(32402);
     }
 
-    Class211(ha var_ha, Packet packet, int i) {
+    Class211(Toolkit var_toolkit, Packet packet, int i) {
         try {
             if (Class291.anIntArray3726 == null) MSITypeList.method1177((byte) 122);
             this.anInt2731 = packet.readUnsignedByte(255);
@@ -374,9 +374,9 @@ final class Class211 {
             anInt2739 = (0xe0 & i_53_) << 3;
             this.anInt2734 = 0x1f & i_53_;
             if (this.anInt2734 != 31) method1542(32402);
-            method1541(i_45_, var_ha, i_44_, i_43_, 3, i_52_, i_46_);
+            method1541(i_45_, var_toolkit, i_44_, i_43_, 3, i_52_, i_46_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ro.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (packet != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ro.<init>(" + (var_toolkit != null ? "{...}" : "null") + ',' + (packet != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 }

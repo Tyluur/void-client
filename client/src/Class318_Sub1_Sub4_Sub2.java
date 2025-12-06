@@ -33,22 +33,22 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         return (this.aClass235_10115.anInt3079);
     }
 
-    public final void method44(int i, ha var_ha) {
-        this.aClass235_10115.method1667((byte) 116, var_ha);
+    public final void method44(int i, Toolkit var_toolkit) {
+        this.aClass235_10115.method1667((byte) 116, var_toolkit);
         if (i != 836) method2379(42);
         anInt10099++;
     }
 
-    final void method2387(ha var_ha, int i) {
+    final void method2387(Toolkit var_toolkit, int i) {
         anInt10113++;
         if (i >= -125) method2386(111, null);
-        Model model = this.aClass235_10115.method1668(true, true, -128, 262144, var_ha);
+        Model model = this.aClass235_10115.method1668(true, true, -128, 262144, var_toolkit);
         if (model != null) {
             int i_1_ = this.x >> 9;
             int i_2_ = this.y >> 9;
-            Matrix matrix = var_ha.method3705();
+            Matrix matrix = var_toolkit.method3705();
             matrix.method894(this.x, this.anInt6382, this.y);
-            this.aClass235_10115.method1670(i_1_, matrix, i_2_, var_ha, i_1_, model, false, (byte) -73, i_2_);
+            this.aClass235_10115.method1670(i_1_, matrix, i_2_, var_toolkit, i_1_, model, false, (byte) -73, i_2_);
         }
     }
 
@@ -58,11 +58,11 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         return this.aClass235_10115.method1663(109);
     }
 
-    final boolean method2391(ha var_ha, int i, int i_3_, int i_4_) {
+    final boolean method2391(Toolkit var_toolkit, int i, int i_3_, int i_4_) {
         anInt10101++;
-        Model model = this.aClass235_10115.method1668(false, false, -127, 131072, var_ha);
+        Model model = this.aClass235_10115.method1668(false, false, -127, 131072, var_toolkit);
         if (model == null) return false;
-        Matrix matrix = var_ha.method3705();
+        Matrix matrix = var_toolkit.method3705();
         matrix.method894(this.x, this.anInt6382, this.y);
         if (i_4_ != 0) return true;
         if (Class305.aBoolean3870) return model.method623(i_3_, i, matrix, false, 0, Class132.anInt1906);
@@ -75,13 +75,13 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         return false;
     }
 
-    Class318_Sub1_Sub4_Sub2(ha var_ha, Class51 class51, int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_, int i_10_, int i_11_) {
+    Class318_Sub1_Sub4_Sub2(Toolkit var_toolkit, Class51 class51, int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_, int i_10_, int i_11_) {
         super(i_6_, i_7_, i_8_, i, i_5_, Class95.method868(i_9_, i_10_, false));
         try {
-            this.aClass235_10115 = new Class235(var_ha, class51, i_9_, i_10_, this.plane, i_5_, this, bool, i_11_);
+            this.aClass235_10115 = new Class235(var_toolkit, class51, i_9_, i_10_, this.plane, i_5_, this, bool, i_11_);
             aBoolean10114 = class51.anInt874 != 0 && !bool;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ju.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (class51 != null ? "{...}" : "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ju.<init>(" + (var_toolkit != null ? "{...}" : "null") + ',' + (class51 != null ? "{...}" : "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'));
         }
     }
 
@@ -103,28 +103,28 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         return (this.aClass235_10115.anInt3063);
     }
 
-    public final void method43(ha var_ha, int i) {
+    public final void method43(Toolkit var_toolkit, int i) {
         anInt10110++;
-        this.aClass235_10115.method1674(-1, var_ha);
+        this.aClass235_10115.method1674(-1, var_toolkit);
         if (i != -14218) aBoolean10114 = true;
     }
 
-    final Class318_Sub4 method2386(int i, ha var_ha) {
+    final Class318_Sub4 method2386(int i, Toolkit var_toolkit) {
         anInt10111++;
-        Model model = this.aClass235_10115.method1668(false, true, i ^ ~0x7f, 2048, var_ha);
+        Model model = this.aClass235_10115.method1668(false, true, i ^ ~0x7f, 2048, var_toolkit);
         if (model == null) return null;
-        Matrix matrix = var_ha.method3705();
+        Matrix matrix = var_toolkit.method3705();
         matrix.method894(this.x, this.anInt6382, this.y);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean10114, false);
         int i_12_ = this.x >> 9;
         int i_13_ = this.y >> 9;
-        this.aClass235_10115.method1670(i_12_, matrix, i_13_, var_ha, i_12_, model, true, (byte) -73, i_13_);
+        this.aClass235_10115.method1670(i_12_, matrix, i_13_, var_toolkit, i_12_, model, true, (byte) -73, i_13_);
         if (!Class305.aBoolean3870) model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
         else model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
         if ((this.aClass235_10115.aClass318_Sub10_3081) != null) {
             Class98 class98 = this.aClass235_10115.aClass318_Sub10_3081.method2525();
-            if (Class305.aBoolean3870) var_ha.method3685(class98, Class132.anInt1906);
-            else var_ha.method3684(class98);
+            if (Class305.aBoolean3870) var_toolkit.method3685(class98, Class132.anInt1906);
+            else var_toolkit.method3684(class98);
         }
         aBoolean10095 = model.F() || (this.aClass235_10115.aClass318_Sub10_3081) != null;
         if (aClass30_10116 != null) ItemTypeList.method1935(this.y, this.anInt6382, aClass30_10116, model, false, this.x);
@@ -132,7 +132,7 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         return class318_sub4;
     }
 
-    final Class30 method2381(ha var_ha, int i) {
+    final Class30 method2381(Toolkit var_toolkit, int i) {
         anInt10109++;
         if (i != 7) return null;
         return aClass30_10116;
@@ -167,12 +167,12 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         return aBoolean10095;
     }
 
-    final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_14_, byte i_15_, int i_16_) {
+    final void method2380(Toolkit var_toolkit, int i, boolean bool, Class318_Sub1 class318_sub1, int i_14_, byte i_15_, int i_16_) {
         try {
             anInt10112++;
             if (i_15_ < -106) throw new IllegalStateException();
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ju.N(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class318_sub1 != null ? "{...}" : "null") + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ju.N(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class318_sub1 != null ? "{...}" : "null") + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'));
         }
     }
 }

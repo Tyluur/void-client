@@ -41,10 +41,10 @@ final class Class303 {
         return new Class125(i_1_, class221, class341, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, bool);
     }
 
-    static final void method2288(boolean bool, ha var_ha) {
+    static final void method2288(boolean bool, Toolkit var_toolkit) {
         anInt3845++;
-        if (!Class71.aBoolean1211) Class231.method1642((byte) 108, var_ha);
-        else Class135_Sub1.method1153(var_ha, 16);
+        if (!Class71.aBoolean1211) Class231.method1642((byte) 108, var_toolkit);
+        else Class135_Sub1.method1153(var_toolkit, 16);
         if (bool != false) anInt3844 = -97;
     }
 

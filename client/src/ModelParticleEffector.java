@@ -35,25 +35,25 @@ final class ModelParticleEffector {
         }
     }
 
-    static final void method2683(Class323 class323, Class348_Sub21 class348_sub21, int i, int i_0_, int i_1_, ha var_ha, int i_2_, int i_3_, Class42 class42) {
+    static final void method2683(Class323 class323, Class348_Sub21 class348_sub21, int i, int i_0_, int i_1_, Toolkit var_toolkit, int i_2_, int i_3_, Class42 class42) {
         try {
             if (i_0_ == 64) {
                 anInt4242++;
                 int i_4_ = -5 + i - i_3_ / 2;
                 int i_5_ = i_2_ - -2;
-                if (class42.anInt602 != 0) var_ha.method3675(i_3_ + 10, (byte) -125, i_4_, i_5_, (i_2_ - -(class323.method2565() * i_1_) - (i_5_ - 1)), class42.anInt602);
-                if (class42.anInt604 != 0) var_ha.method3668(i_3_ + 10, i_5_, class42.anInt604, i_4_, (i_1_ * class323.method2565() + i_2_ - (i_5_ + -1)), 92);
+                if (class42.anInt602 != 0) var_toolkit.method3675(i_3_ + 10, (byte) -125, i_4_, i_5_, (i_2_ - -(class323.method2565() * i_1_) - (i_5_ - 1)), class42.anInt602);
+                if (class42.anInt604 != 0) var_toolkit.method3668(i_3_ + 10, i_5_, class42.anInt604, i_4_, (i_1_ * class323.method2565() + i_2_ - (i_5_ + -1)), 92);
                 int i_6_ = class42.anInt580;
                 if (class348_sub21.aBoolean6848 && class42.anInt567 != -1) i_6_ = class42.anInt567;
                 for (int i_7_ = 0; i_1_ > i_7_; i_7_++) {
                     String string = ha_Sub3.aStringArray8019[i_7_];
                     if (-1 + i_1_ > i_7_) string = string.substring(0, -4 + string.length());
-                    class323.method2563(var_ha, string, i, i_2_, i_6_, true);
+                    class323.method2563(var_toolkit, string, i, i_2_, i_6_, true);
                     i_2_ += class323.method2565();
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eca.A(" + (class323 != null ? "{...}" : "null") + ',' + (class348_sub21 != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_2_ + ',' + i_3_ + ',' + (class42 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("eca.A(" + (class323 != null ? "{...}" : "null") + ',' + (class348_sub21 != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_2_ + ',' + i_3_ + ',' + (class42 != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -81,7 +81,7 @@ final class ModelParticleEffector {
                             Class318_Sub9_Sub2.method2519(class318_sub1_sub4, i, i_8_, i_9_, 1, 1);
                             if (class318_sub1_sub4_10_ != null && class318_sub1_sub4_10_.method2388(-125)) {
                                 Class318_Sub9_Sub2.method2519(class318_sub1_sub4_10_, i, i_8_, i_9_, 1, 1);
-                                class318_sub1_sub4_10_.method2380(Class9.aHa171, 0, false, class318_sub1_sub4, 0, (byte) -110, 0);
+                                class318_sub1_sub4_10_.method2380(Class9.aToolkit171, 0, false, class318_sub1_sub4, 0, (byte) -110, 0);
                                 class318_sub1_sub4_10_.method2392(true);
                             }
                             class318_sub1_sub4.method2392(true);

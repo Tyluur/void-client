@@ -44,16 +44,16 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
         return anInterface18_Impl2_8719;
     }
 
-    static final void method2270(int i, int i_4_, ha var_ha, String string, boolean bool, int i_5_, int i_6_, int i_7_) {
+    static final void method2270(int i, int i_4_, Toolkit var_toolkit, String string, boolean bool, int i_5_, int i_6_, int i_7_) {
         try {
             if (OutputStream_Sub2.aSprite_106 == null || Class121.aSprite_1800 == null) {
                 if (Class21.SPRITES.method421(false, Class231.anInt2996) && Class21.SPRITES.method421(false, Class348_Sub40_Sub16.anInt9231)) {
-                    OutputStream_Sub2.aSprite_106 = (var_ha.method3691(Class207.method1521(Class21.SPRITES, Class231.anInt2996, 0), true));
+                    OutputStream_Sub2.aSprite_106 = (var_toolkit.method3691(Class207.method1521(Class21.SPRITES, Class231.anInt2996, 0), true));
                     Class207 class207 = Class207.method1521(Class21.SPRITES, Class348_Sub40_Sub16.anInt9231, 0);
-                    Class121.aSprite_1800 = var_ha.method3691(class207, true);
+                    Class121.aSprite_1800 = var_toolkit.method3691(class207, true);
                     class207.method1518();
-                    Class348_Sub5.aSprite_6627 = var_ha.method3691(class207, true);
-                } else var_ha.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 << 24 | Class264.anInt3376), 1);
+                    Class348_Sub5.aSprite_6627 = var_toolkit.method3691(class207, true);
+                } else var_toolkit.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 << 24 | Class264.anInt3376), 1);
             }
             anInt8709++;
             if (OutputStream_Sub2.aSprite_106 != null && Class121.aSprite_1800 != null) {
@@ -65,10 +65,10 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
             }
             if (bool == false) {
                 Class262.aFontRenderer_3326.method2576(string, (Class348_Sub42_Sub11.anInt9586) | ~0xffffff, 14 + i_5_, 3 + i_4_, -1, -127);
-                var_ha.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Class264.anInt3376 | 255 + -Class51.anInt948 << 24), 1);
+                var_toolkit.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Class264.anInt3376 | 255 + -Class51.anInt948 << 24), 1);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kv.G(" + i + ',' + i_4_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kv.G(" + i + ',' + i_4_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'));
         }
     }
 

@@ -194,12 +194,12 @@ final class Class361 {
         return false;
     }
 
-    static final void method3498(int i, ha var_ha, int i_39_, int i_40_, boolean bool, int i_41_) {
+    static final void method3498(int i, Toolkit var_toolkit, int i_39_, int i_40_, boolean bool, int i_41_) {
         do {
             try {
                 anInt4442++;
-                var_ha.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i);
-                var_ha.method3675(i_40_, (byte) -125, i_39_, i_41_, i, -16777216);
+                var_toolkit.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i);
+                var_toolkit.method3675(i_40_, (byte) -125, i_39_, i_41_, i, -16777216);
                 if (Node.anInt4290 >= 100) {
                     float f = ((float) Class75.anInt1267 / (float) Class75.anInt1259);
                     int i_42_ = i_40_;
@@ -210,8 +210,8 @@ final class Class361 {
                     i_39_ += (i_40_ + -i_42_) / 2;
                     if (Class67.aSprite_4643 == null || i_40_ != Class67.aSprite_4643.method971() || (Class67.aSprite_4643.method969() != i)) {
                         Class75.method751(Class75.anInt1266, (Class75.anInt1267 + Class75.anInt1263), (Class75.anInt1266 - -Class75.anInt1259), Class75.anInt1263, i_39_, i_41_, i_42_ + i_39_, i_43_ + i_41_);
-                        Class75.method748(var_ha);
-                        Class67.aSprite_4643 = var_ha.method3683(i_39_, i_41_, i_42_, i_43_, false);
+                        Class75.method748(var_toolkit);
+                        Class67.aSprite_4643 = var_toolkit.method3683(i_39_, i_41_, i_42_, i_43_, false);
                     }
                     Class67.aSprite_4643.method974(i_39_, i_41_);
                     int i_44_ = SkyBoxSphereTypeList.anInt370 * i_42_ / Class75.anInt1259;
@@ -221,8 +221,8 @@ final class Class361 {
                     int i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * Class59_Sub1_Sub2.anInt8665 / Class75.anInt1267)));
                     int i_48_ = -1996554240;
                     if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.modeGame) i_48_ = -1996488705;
-                    var_ha.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1);
-                    var_ha.method3628(i_46_, i_47_, i_44_, i_45_, i_48_, 0);
+                    var_toolkit.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1);
+                    var_toolkit.method3628(i_46_, i_47_, i_44_, i_45_, i_48_, 0);
                     if (Class367_Sub9.anInt7379 <= 0) break;
                     int i_49_;
                     if (Class164.anInt2173 <= 50) i_49_ = Class164.anInt2173 * 5;
@@ -233,17 +233,17 @@ final class Class361 {
                             if (Class348_Sub40_Sub30.anInt9399 == (class348_sub21.anInt6847)) {
                                 int i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / Class75.anInt1259));
                                 int i_51_ = (((Class75.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / Class75.anInt1267) + i_41_);
-                                var_ha.method3675(4, (byte) -125, i_50_ - 2, -2 + i_51_, 4, (i_49_ << 24 | 0xffff00));
+                                var_toolkit.method3675(4, (byte) -125, i_50_ - 2, -2 + i_51_, 4, (i_49_ << 24 | 0xffff00));
                             } else if (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)) {
                                 int i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / Class75.anInt1259));
                                 int i_53_ = i_41_ - -(i_43_ * (Class75.anInt1267 + -(class348_sub21.anInt6851)) / Class75.anInt1267);
-                                var_ha.method3675(4, (byte) -125, i_52_ + -2, -2 + i_53_, 4, (i_49_ << 24 | 0xffff00));
+                                var_toolkit.method3675(4, (byte) -125, i_52_ + -2, -2 + i_53_, 4, (i_49_ << 24 | 0xffff00));
                             }
                         }
                     }
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("fe.E(" + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_39_ + ',' + i_40_ + ',' + bool + ',' + i_41_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("fe.E(" + i + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_39_ + ',' + i_40_ + ',' + bool + ',' + i_41_ + ')'));
             }
             break;
         } while (false);

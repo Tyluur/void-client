@@ -150,7 +150,7 @@ final class Class367_Sub4 extends Class367 {
         anInt7310++;
         byte i_16_ = bool ? (byte) 1 : (byte) (Option_Sub15.anInt6006 & 0xff);
         if (i_16_ == Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_13_][i]) return false;
-        if (((Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_13_][i]) & 0x4) == 0) return false;
+        if (((Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_13_][i]) & 0x4) == 0) return false;
         int i_17_ = i_14_;
         int i_18_ = 0;
         Class348_Sub16_Sub2.anIntArray8862[i_17_] = i_13_;
@@ -164,13 +164,13 @@ final class Class367_Sub4 extends Class367 {
             int i_23_ = ((0xff5347 & Exception_Sub1.anIntArray110[i_18_]) >> 16);
             i_18_ = i_18_ + 1 & 0xfff;
             boolean bool_24_ = false;
-            if ((0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_])) == 0) bool_24_ = true;
+            if ((0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_])) == 0) bool_24_ = true;
             boolean bool_25_ = false;
             if (class357s != null) {
                 int i_26_ = QuickChatPhraseTypeList.anInt4372 + 1;
                 while_223_:
                 for (/**/; i_26_ <= 3; i_26_++) {
-                    if (class357s[i_26_] != null && (0x8 & (Class348_Sub33.aByteArrayArrayArray6962[i_26_][i_19_][i_22_])) == 0) {
+                    if (class357s[i_26_] != null && (0x8 & (Class348_Sub33.tileFlags[i_26_][i_19_][i_22_])) == 0) {
                         if (bool_24_ && class357s[i_26_][i_19_][i_22_] != null) {
                             if ((class357s[i_26_][i_19_][i_22_].aClass318_Sub1_Sub4_4406) != null) {
                                 int i_27_ = Class359.method3492(i_20_, 226);
@@ -217,7 +217,7 @@ final class Class367_Sub4 extends Class367 {
                 }
             }
             if (bool_25_) {
-                int i_35_ = aa_Sub1.aSArray5191[1 + QuickChatPhraseTypeList.anInt4372].method3982((byte) -86, i_22_, i_19_);
+                int i_35_ = aa_Sub1.aGroundArray5191[1 + QuickChatPhraseTypeList.anInt4372].tileHeight((byte) -86, i_22_, i_19_);
                 if (i_35_ > Class327.anIntArray4097[i_15_]) Class327.anIntArray4097[i_15_] = i_35_;
                 int i_36_ = i_19_ << 9;
                 if (i_36_ < Class156.anIntArray2117[i_15_]) Class156.anIntArray2117[i_15_] = i_36_;
@@ -235,7 +235,7 @@ final class Class367_Sub4 extends Class367 {
                     Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - 1][i_22_] = i_16_;
                 }
                 if (++i_22_ < Class348_Sub40_Sub3.mapWidth) {
-                    if (i_19_ - 1 >= 0 && i_16_ != (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][i_22_]) && ((Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_]) & 0x4) == 0 && (0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][-1 + i_22_])) == 0) {
+                    if (i_19_ - 1 >= 0 && i_16_ != (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][i_22_]) && ((Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_]) & 0x4) == 0 && (0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][-1 + i_22_])) == 0) {
                         Class348_Sub16_Sub2.anIntArray8862[i_17_] = (Class273.method2057(1375731712, Class273.method2057(i_19_ + -1, 1179648)));
                         Exception_Sub1.anIntArray110[i_17_] = Class273.method2057(i_22_, 1245184);
                         Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][i_22_] = i_16_;
@@ -247,7 +247,7 @@ final class Class367_Sub4 extends Class367 {
                         Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_] = i_16_;
                         i_17_ = i_17_ + 1 & 0xfff;
                     }
-                    if (1 + i_19_ < mapLength && ((Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ + 1][i_22_]) != i_16_) && (0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_])) == 0 && (0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][1 + i_19_][i_22_ + -1])) == 0) {
+                    if (1 + i_19_ < mapLength && ((Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ + 1][i_22_]) != i_16_) && (0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_])) == 0 && (0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][1 + i_19_][i_22_ + -1])) == 0) {
                         Class348_Sub16_Sub2.anIntArray8862[i_17_] = (Class273.method2057(-1845493760, Class273.method2057(1 + i_19_, 5373952)));
                         Exception_Sub1.anIntArray110[i_17_] = Class273.method2057(5439488, i_22_);
                         i_17_ = 1 + i_17_ & 0xfff;
@@ -262,7 +262,7 @@ final class Class367_Sub4 extends Class367 {
                     Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - -1][i_22_] = i_16_;
                 }
                 if (--i_22_ >= 0) {
-                    if (i_19_ + -1 >= 0 && i_16_ != (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - 1][i_22_]) && (0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_])) == 0 && (0x4 & (Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][1 + i_22_])) == 0) {
+                    if (i_19_ + -1 >= 0 && i_16_ != (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - 1][i_22_]) && (0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_])) == 0 && (0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][1 + i_22_])) == 0) {
                         Class348_Sub16_Sub2.anIntArray8862[i_17_] = (Class273.method2057(301989888, Class273.method2057(13762560, -1 + i_19_)));
                         Exception_Sub1.anIntArray110[i_17_] = Class273.method2057(i_22_, 13828096);
                         Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - 1][i_22_] = i_16_;
@@ -274,7 +274,7 @@ final class Class367_Sub4 extends Class367 {
                         Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_] = i_16_;
                         i_17_ = 0xfff & i_17_ - -1;
                     }
-                    if (mapLength > 1 + i_19_ && (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][1 + i_19_][i_22_]) != i_16_ && ((Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_]) & 0x4) == 0 && ((Class348_Sub33.aByteArrayArrayArray6962[QuickChatPhraseTypeList.anInt4372][i_19_ + 1][i_22_ + 1]) & 0x4) == 0) {
+                    if (mapLength > 1 + i_19_ && (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][1 + i_19_][i_22_]) != i_16_ && ((Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_]) & 0x4) == 0 && ((Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_19_ + 1][i_22_ + 1]) & 0x4) == 0) {
                         Class348_Sub16_Sub2.anIntArray8862[i_17_] = (Class273.method2057(-771751936, Class273.method2057(i_19_ - -1, 9568256)));
                         Exception_Sub1.anIntArray110[i_17_] = Class273.method2057(i_22_, 9633792);
                         Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - -1][i_22_] = i_16_;

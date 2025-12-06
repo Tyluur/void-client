@@ -29,11 +29,11 @@ final class Class348_Sub46 extends Node {
         aClass114_7113 = null;
     }
 
-    static final void method3319(ha var_ha, byte i) {
+    static final void method3319(Toolkit var_toolkit, byte i) {
         if (i > -108) method3321(19, 60, 108);
         anInt7114++;
         if (((Class132.aPlayer_1907.plane) != Class334.anInt4155) && Class147.aClass357ArrayArrayArray2029 != null) {
-            if (Class348_Sub14.method2808((Class132.aPlayer_1907.plane), var_ha, true)) Class334.anInt4155 = Class132.aPlayer_1907.plane;
+            if (Class348_Sub14.method2808((Class132.aPlayer_1907.plane), var_toolkit, true)) Class334.anInt4155 = Class132.aPlayer_1907.plane;
         }
     }
 

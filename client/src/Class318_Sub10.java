@@ -39,10 +39,10 @@ final class Class318_Sub10 extends Class318 {
         aBooleanArray6477 = null;
     }
 
-    final void method2528(ha var_ha) {
+    final void method2528(Toolkit var_toolkit) {
         this.aClass98_6481.aClass88_1569.method845((byte) 89);
         for (Class318_Sub7 class318_sub7 = (Class318_Sub7) aClass243_6478.method1872(8); class318_sub7 != null; class318_sub7 = (Class318_Sub7) aClass243_6478.method1878((byte) 126))
-            class318_sub7.method2511(true, var_ha, aLong6471);
+            class318_sub7.method2511(true, var_toolkit, aLong6471);
     }
 
     final void method2529() {
@@ -78,7 +78,7 @@ final class Class318_Sub10 extends Class318 {
         this.aBoolean6482 = bool;
     }
 
-    private final void method2532(ha var_ha, ModelParticleEmitter[] modelParticleEmitters, boolean bool) {
+    private final void method2532(Toolkit var_toolkit, ModelParticleEmitter[] modelParticleEmitters, boolean bool) {
         for (int i = 0; i < 32; i++)
             aBooleanArray6474[i] = false;
         while_110_:
@@ -104,7 +104,7 @@ final class Class318_Sub10 extends Class318 {
             for (int i = 0; i < modelParticleEmitters.length; i++) {
                 if (i == 32 || anInt6480 == 32) break;
                 if (!aBooleanArray6474[i]) {
-                    Class318_Sub7 class318_sub7 = new Class318_Sub7(var_ha, modelParticleEmitters[i], this, aLong6472);
+                    Class318_Sub7 class318_sub7 = new Class318_Sub7(var_toolkit, modelParticleEmitters[i], this, aLong6472);
                     aClass243_6478.method1869(-126, class318_sub7);
                     anInt6480++;
                     aBooleanArray6474[i] = true;
@@ -121,7 +121,7 @@ final class Class318_Sub10 extends Class318 {
         aBoolean6473 = true;
     }
 
-    final boolean method2535(ha var_ha, long l) {
+    final boolean method2535(Toolkit var_toolkit, long l) {
         if (aLong6472 != aLong6471) method2534();
         else method2537();
         if (l - aLong6472 > 750L) {
@@ -132,19 +132,19 @@ final class Class318_Sub10 extends Class318 {
         if (aBoolean6484) {
             for (Class318_Sub7 class318_sub7 = (Class318_Sub7) aClass243_6478.method1872(8); class318_sub7 != null; class318_sub7 = (Class318_Sub7) aClass243_6478.method1878((byte) 122)) {
                 for (int i_4_ = 0; i_4_ < class318_sub7.aClass181_6441.anInt2422; i_4_++)
-                    class318_sub7.method2513(var_ha, 1, l, 3, !aBoolean6473);
+                    class318_sub7.method2513(var_toolkit, 1, l, 3, !aBoolean6473);
             }
             aBoolean6484 = false;
         }
         for (Class318_Sub7 class318_sub7 = (Class318_Sub7) aClass243_6478.method1872(8); class318_sub7 != null; class318_sub7 = (Class318_Sub7) aClass243_6478.method1878((byte) -72))
-            class318_sub7.method2513(var_ha, i, l, 3, !aBoolean6473);
+            class318_sub7.method2513(var_toolkit, i, l, 3, !aBoolean6473);
         aLong6471 = l;
         return true;
     }
 
-    final void method2536(ha var_ha, long l, ModelParticleEmitter[] modelParticleEmitters, ModelParticleEffector[] modelParticleEffectors, boolean bool) {
+    final void method2536(Toolkit var_toolkit, long l, ModelParticleEmitter[] modelParticleEmitters, ModelParticleEffector[] modelParticleEffectors, boolean bool) {
         if (!this.aBoolean6470) {
-            method2532(var_ha, modelParticleEmitters, bool);
+            method2532(var_toolkit, modelParticleEmitters, bool);
             method2538(modelParticleEffectors, bool);
             aLong6472 = l;
         }

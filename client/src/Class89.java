@@ -35,7 +35,7 @@ final class Class89 {
     }
 
     static final boolean method850(Class318_Sub1_Sub3 class318_sub1_sub3, boolean bool) {
-        boolean bool_13_ = aa_Sub1.aSArray5191 == Class332.aSArray4142;
+        boolean bool_13_ = aa_Sub1.aGroundArray5191 == Class332.aGroundArray4142;
         int i = 0;
         short i_14_ = 0;
         byte i_15_ = 0;
@@ -77,7 +77,7 @@ final class Class89 {
         }
         if (bool) Class24.aClass318_Sub1_Sub3Array357[Class86.anInt1477++] = class318_sub1_sub3;
         else {
-            int i_22_ = aa_Sub1.aSArray5191 == Class332.aSArray4142 ? 1 : 0;
+            int i_22_ = aa_Sub1.aGroundArray5191 == Class332.aGroundArray4142 ? 1 : 0;
             if (class318_sub1_sub3.method2376(-118)) {
                 if (class318_sub1_sub3.method2377((byte) 122)) {
                     class318_sub1_sub3.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226[i_22_];

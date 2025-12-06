@@ -86,32 +86,32 @@ final class Class42 {
         return i_2_ >= anInt587 && i_2_ <= anInt586;
     }
 
-    final Sprite method374(boolean bool, ha var_ha, byte i) {
+    final Sprite method374(boolean bool, Toolkit var_toolkit, byte i) {
         anInt579++;
         int i_3_ = bool ? this.anInt605 : this.anInt578;
         if (i != 127) return null;
-        int i_4_ = i_3_ | var_ha.anInt4567 << 29;
+        int i_4_ = i_3_ | var_toolkit.anInt4567 << 29;
         Sprite sprite = (Sprite) this.aMapElementTypeList_593.aClass60_2089.method583(i_4_, 64);
         if (sprite != null) return sprite;
         if (!this.aMapElementTypeList_593.aIndex_2087.method421(false, i_3_)) return null;
         Class207 class207 = Class207.method1521((this.aMapElementTypeList_593.aIndex_2087), i_3_, 0);
         if (class207 != null) {
-            sprite = var_ha.method3691(class207, true);
+            sprite = var_toolkit.method3691(class207, true);
             this.aMapElementTypeList_593.aClass60_2089.method582(sprite, i_4_, (byte) -111);
         }
         return sprite;
     }
 
-    final Sprite method375(ha var_ha, boolean bool) {
+    final Sprite method375(Toolkit var_toolkit, boolean bool) {
         anInt563++;
         if (bool != false) method375(null, true);
-        Sprite sprite = (Sprite) (this.aMapElementTypeList_593.aClass60_2089.method583(anInt598 | 0x20000 | var_ha.anInt4567 << 29, -75));
+        Sprite sprite = (Sprite) (this.aMapElementTypeList_593.aClass60_2089.method583(anInt598 | 0x20000 | var_toolkit.anInt4567 << 29, -75));
         if (sprite != null) return sprite;
         this.aMapElementTypeList_593.aIndex_2087.method421(bool, anInt598);
         Class207 class207 = Class207.method1521((this.aMapElementTypeList_593.aIndex_2087), anInt598, 0);
         if (class207 != null) {
-            sprite = var_ha.method3691(class207, true);
-            this.aMapElementTypeList_593.aClass60_2089.method582(sprite, var_ha.anInt4567 << 29 | (anInt598 | 0x20000), (byte) -121);
+            sprite = var_toolkit.method3691(class207, true);
+            this.aMapElementTypeList_593.aClass60_2089.method582(sprite, var_toolkit.anInt4567 << 29 | (anInt598 | 0x20000), (byte) -121);
         }
         return sprite;
     }

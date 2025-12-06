@@ -53,12 +53,12 @@ final class Class169 implements Runnable {
     }
 
     static final void method1301(r var_r, int i, int i_0_, int i_1_, boolean[] bools) {
-        if (aa_Sub1.aSArray5191 != Class332.aSArray4142) {
-            int i_2_ = Class348_Sub1_Sub1.aSArray8801[i].method3986(i_0_, i_1_, (byte) -93);
+        if (aa_Sub1.aGroundArray5191 != Class332.aGroundArray4142) {
+            int i_2_ = Class348_Sub1_Sub1.aGroundArray8801[i].method3986(i_0_, i_1_, (byte) -93);
             for (int i_3_ = 0; i_3_ <= i; i_3_++) {
                 if (bools == null || bools[i_3_]) {
-                    s var_s = Class348_Sub1_Sub1.aSArray8801[i_3_];
-                    if (var_s != null) var_s.wa(var_r, i_0_, i_2_ - var_s.method3986(i_0_, i_1_, (byte) -103), i_1_, 0, false);
+                    Ground var_ground = Class348_Sub1_Sub1.aGroundArray8801[i_3_];
+                    if (var_ground != null) var_ground.wa(var_r, i_0_, i_2_ - var_ground.method3986(i_0_, i_1_, (byte) -103), i_1_, 0, false);
                 }
             }
         }

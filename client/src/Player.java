@@ -59,14 +59,14 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
     static int[] anIntArray10566;
     static int anInt10567 = -1;
 
-    final void method2387(ha var_ha, int i) {
+    final void method2387(Toolkit var_toolkit, int i) {
         anInt10533++;
-        if (this.aClass154_10536 != null && (this.aBoolean10318 || method2459(0, var_ha, -123))) {
-            Matrix matrix = var_ha.method3705();
+        if (this.aClass154_10536 != null && (this.aBoolean10318 || method2459(0, var_toolkit, -123))) {
+            Matrix matrix = var_toolkit.method3705();
             if (i >= -125) method2457((byte) -106);
             matrix.method895(this.aClass264_10217.method2019((byte) -116));
-            matrix.method891(this.x, -5 + this.anInt6382, this.y);
-            this.method2432(var_ha, -15074, matrix, this.aBoolean10318, (this.aModelArray10323));
+            matrix.translate(this.x, -5 + this.anInt6382, this.y);
+            this.method2432(var_toolkit, -15074, matrix, this.aBoolean10318, (this.aModelArray10323));
             this.aModelArray10323[0] = this.aModelArray10323[1] = this.aModelArray10323[2] = null;
         }
     }
@@ -107,13 +107,13 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         this.anIntArray10317[0] = i_5_;
     }
 
-    final boolean method2391(ha var_ha, int i, int i_7_, int i_8_) {
+    final boolean method2391(Toolkit var_toolkit, int i, int i_7_, int i_8_) {
         anInt10562++;
-        if (this.aClass154_10536 == null || !method2459(131072, var_ha, 113)) return false;
-        Matrix matrix = var_ha.method3705();
+        if (this.aClass154_10536 == null || !method2459(131072, var_toolkit, 113)) return false;
+        Matrix matrix = var_toolkit.method3705();
         int i_9_ = this.aClass264_10217.method2019((byte) -31);
         matrix.method895(i_9_);
-        matrix.method891(this.x, this.anInt6382, this.y);
+        matrix.translate(this.x, this.anInt6382, this.y);
         boolean bool = false;
         for (int i_10_ = 0; (this.aModelArray10323.length > i_10_); i_10_++) {
             if ((this.aModelArray10323[i_10_] != null) && (Class305.aBoolean3870 ? (this.aModelArray10323[i_10_].method623(i_7_, i, matrix, true, 0, Class132.anInt1906)) : this.aModelArray10323[i_10_].method628(i_7_, i, matrix, true, 0))) {
@@ -237,7 +237,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         }
     }
 
-    private final void method2453(int i, ha var_ha, int i_32_, Model model, int i_33_, int i_34_, Matrix matrix, int i_35_) {
+    private final void method2453(int i, Toolkit var_toolkit, int i_32_, Model model, int i_33_, int i_34_, Matrix matrix, int i_35_) {
         do {
             try {
                 anInt10548++;
@@ -245,21 +245,21 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                     int i_36_ = i * i + i_34_ * i_34_;
                     if (i_36_ >= 262144 && i_32_ >= i_36_) {
                         int i_37_ = 0x3fff & (int) (Math.atan2(i, i_34_) * 2607.5945876176133);
-                        Model model_38_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_37_, i_35_, (byte) -35, var_ha));
+                        Model model_38_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_37_, i_35_, (byte) -35, var_toolkit));
                         if (model_38_ == null) break;
-                        var_ha.C(false);
+                        var_toolkit.C(false);
                         model_38_.method615(matrix, null, 0);
-                        var_ha.C(true);
+                        var_toolkit.C(true);
                     }
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ke.OB(" + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_32_ + ',' + (model != null ? "{...}" : "null") + ',' + i_33_ + ',' + i_34_ + ',' + (matrix != null ? "{...}" : "null") + ',' + i_35_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("ke.OB(" + i + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_32_ + ',' + (model != null ? "{...}" : "null") + ',' + i_33_ + ',' + i_34_ + ',' + (matrix != null ? "{...}" : "null") + ',' + i_35_ + ')'));
             }
             break;
         } while (false);
     }
 
-    private final void method2454(int i, int i_39_, int i_40_, int i_41_, Model model, int i_42_, Matrix matrix, ha var_ha, int i_43_) {
+    private final void method2454(int i, int i_39_, int i_40_, int i_41_, Model model, int i_42_, Matrix matrix, Toolkit var_toolkit, int i_43_) {
         do {
             try {
                 if (i != 6253) this.aString10544 = null;
@@ -267,20 +267,20 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                 int i_44_ = i_43_ * i_43_ + i_39_ * i_39_;
                 if (i_44_ >= 262144 && i_44_ <= i_42_) {
                     int i_45_ = ((int) (2607.5945876176133 * Math.atan2(i_39_, i_43_)) & 0x3fff);
-                    Model model_46_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_45_, i_41_, (byte) -35, var_ha));
+                    Model model_46_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_45_, i_41_, (byte) -35, var_toolkit));
                     if (model_46_ == null) break;
-                    var_ha.C(false);
+                    var_toolkit.C(false);
                     model_46_.method608(matrix, null, i_40_, 0);
-                    var_ha.C(true);
+                    var_toolkit.C(true);
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (model != null ? "{...}" : "null") + ',' + i_42_ + ',' + (matrix != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_43_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("ke.V(" + i + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ',' + (model != null ? "{...}" : "null") + ',' + i_42_ + ',' + (matrix != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_43_ + ')'));
             }
             break;
         } while (false);
     }
 
-    final Class30 method2381(ha var_ha, int i) {
+    final Class30 method2381(Toolkit var_toolkit, int i) {
         if (i != 7) this.aString10544 = null;
         anInt10518++;
         return null;
@@ -292,13 +292,13 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         throw new IllegalStateException();
     }
 
-    final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_47_, byte i_48_, int i_49_) {
+    final void method2380(Toolkit var_toolkit, int i, boolean bool, Class318_Sub1 class318_sub1, int i_47_, byte i_48_, int i_49_) {
         try {
             if (i_48_ >= -106) anInt10520 = 116;
             anInt10545++;
             throw new IllegalStateException();
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ke.N(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class318_sub1 != null ? "{...}" : "null") + ',' + i_47_ + ',' + i_48_ + ',' + i_49_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ke.N(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class318_sub1 != null ? "{...}" : "null") + ',' + i_47_ + ',' + i_48_ + ',' + i_49_ + ')'));
         }
     }
 
@@ -326,10 +326,10 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         } else method2449(i, i_52_, (byte) 112);
     }
 
-    final Class318_Sub4 method2386(int i, ha var_ha) {
+    final Class318_Sub4 method2386(int i, Toolkit var_toolkit) {
         anInt10527++;
-        if (this.aClass154_10536 == null || !method2459(2048, var_ha, -95)) return null;
-        Matrix matrix = var_ha.method3705();
+        if (this.aClass154_10536 == null || !method2459(2048, var_toolkit, -95)) return null;
+        Matrix matrix = var_toolkit.method3705();
         int i_53_ = this.aClass264_10217.method2019((byte) -126);
         matrix.method895(i_53_);
         Class357 class357 = (Class147.aClass357ArrayArrayArray2029[this.plane][this.x >> Class362.anInt4459][this.y >> Class362.anInt4459]);
@@ -338,7 +338,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
             int i_54_ = (this.anInt10274 + -(class357.aClass318_Sub1_Sub1_4402.aShort8727));
             this.anInt10274 -= (float) i_54_ / 10.0F;
         }
-        matrix.method891(this.x, (-20 + (this.anInt6382 - this.anInt10274)), this.y);
+        matrix.translate(this.x, (-20 + (this.anInt6382 - this.anInt10274)), this.y);
         Class318_Sub4 class318_sub4 = null;
         this.aBoolean10324 = false;
         if (Class316.clientOptions.aClass239_Sub21_7270.method1812(-32350) == 1) {
@@ -346,14 +346,14 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
             if (class225.aBoolean2913 && (this.aClass154_10536.anInt2093 == -1 || BillboardType.npcTypeList.method2079(this.aClass154_10536.anInt2093, i + -2).aBoolean1369)) {
                 Class17 class17 = ((this.anInt10286 != -1 && this.anInt10218 == 0) ? (Class10.seqTypeList.method835(this.anInt10286, 7)) : null);
                 Class17 class17_55_ = ((this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) ? null : (Class10.seqTypeList.method835(this.anInt10268, 7)));
-                Model model = (Node.method2711(this.anInt10302, i_53_, this.aModelArray10323[0], this.anInt10208, false, (class17_55_ == null ? this.anInt10267 : this.anInt10245), 0, 1, this.anInt10252, var_ha, 160, 0, 240, class17_55_ == null ? class17 : class17_55_));
+                Model model = (Node.method2711(this.anInt10302, i_53_, this.aModelArray10323[0], this.anInt10208, false, (class17_55_ == null ? this.anInt10267 : this.anInt10245), 0, 1, this.anInt10252, var_toolkit, 160, 0, 240, class17_55_ == null ? class17 : class17_55_));
                 if (model != null) {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aModelArray10323).length, true, false));
                     this.aBoolean10324 = true;
-                    var_ha.C(false);
+                    var_toolkit.C(false);
                     if (Class305.aBoolean3870) model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), Class132.anInt1906, 0);
                     else model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), 0);
-                    var_ha.C(true);
+                    var_toolkit.C(true);
                 }
             }
         }
@@ -368,8 +368,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                             Npc npc = (class348_sub22.aNpc_6859);
                             int i_57_ = (-(Class132.aPlayer_1907.x) + npc.x);
                             int i_58_ = (-(Class132.aPlayer_1907.y) + npc.y);
-                            if (Class305.aBoolean3870) method2454(6253, i_57_, Class132.anInt1906, class302.anInt3834, (this.aModelArray10323[0]), 92160000, matrix, var_ha, i_58_);
-                            else method2453(i_57_, var_ha, 92160000, (this.aModelArray10323[0]), 0, i_58_, matrix, class302.anInt3834);
+                            if (Class305.aBoolean3870) method2454(6253, i_57_, Class132.anInt1906, class302.anInt3834, (this.aModelArray10323[0]), 92160000, matrix, var_toolkit, i_58_);
+                            else method2453(i_57_, var_toolkit, 92160000, (this.aModelArray10323[0]), 0, i_58_, matrix, class302.anInt3834);
                         }
                     }
                     if (class302.anInt3840 == 2) {
@@ -377,27 +377,27 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                         int i_60_ = (-(Class132.aPlayer_1907.y) + 256 + class302.anInt3832);
                         int i_61_ = class302.anInt3837 << 9;
                         i_61_ *= i_61_;
-                        if (Class305.aBoolean3870) method2454(6253, i_59_, Class132.anInt1906, class302.anInt3834, (this.aModelArray10323[0]), i_61_, matrix, var_ha, i_60_);
-                        else method2453(i_59_, var_ha, i_61_, (this.aModelArray10323[0]), 0, i_60_, matrix, class302.anInt3834);
+                        if (Class305.aBoolean3870) method2454(6253, i_59_, Class132.anInt1906, class302.anInt3834, (this.aModelArray10323[0]), i_61_, matrix, var_toolkit, i_60_);
+                        else method2453(i_59_, var_toolkit, i_61_, (this.aModelArray10323[0]), 0, i_60_, matrix, class302.anInt3834);
                     }
                     if (class302.anInt3840 == 10 && class302.anInt3833 >= 0 && (class302.anInt3833 < (Class294.aPlayerArray5058).length)) {
                         Player player_62_ = (Class294.aPlayerArray5058[class302.anInt3833]);
                         if (player_62_ != null) {
                             int i_63_ = (-(Class132.aPlayer_1907.x) + (player_62_.x));
                             int i_64_ = (-(Class132.aPlayer_1907.y) + (player_62_.y));
-                            if (Class305.aBoolean3870) method2454(6253, i_63_, Class132.anInt1906, class302.anInt3834, (this.aModelArray10323[0]), 92160000, matrix, var_ha, i_64_);
-                            else method2453(i_63_, var_ha, 92160000, (this.aModelArray10323[0]), i ^ 0x1, i_64_, matrix, class302.anInt3834);
+                            if (Class305.aBoolean3870) method2454(6253, i_63_, Class132.anInt1906, class302.anInt3834, (this.aModelArray10323[0]), 92160000, matrix, var_toolkit, i_64_);
+                            else method2453(i_63_, var_toolkit, 92160000, (this.aModelArray10323[0]), i ^ 0x1, i_64_, matrix, class302.anInt3834);
                         }
                     }
                 }
             }
             matrix.method895(i_53_);
-            matrix.method891(this.x, this.anInt6382, this.y);
+            matrix.translate(this.x, this.anInt6382, this.y);
         }
         matrix.method895(i_53_);
-        matrix.method891(this.x, (this.anInt6382 + (-5 + -(this.anInt10274))), this.y);
+        matrix.translate(this.x, (this.anInt6382 + (-5 + -(this.anInt10274))), this.y);
         if (class318_sub4 == null) class318_sub4 = OutputStream_Sub2.method136((this.aModelArray10323).length, true, false);
-        this.method2432(var_ha, -15074, matrix, false, this.aModelArray10323);
+        this.method2432(var_toolkit, -15074, matrix, false, this.aModelArray10323);
         if (Class305.aBoolean3870) {
             for (int i_65_ = 0; i_65_ < (this.aModelArray10323).length; i_65_++) {
                 if (this.aModelArray10323[i_65_] != null) this.aModelArray10323[i_65_].method608(matrix, (class318_sub4.aClass318_Sub3Array6414[i_65_]), Class132.anInt1906, (this != Class132.aPlayer_1907 ? 0 : 1));
@@ -409,8 +409,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         }
         if (this.aClass318_Sub10_10327 != null) {
             Class98 class98 = this.aClass318_Sub10_10327.method2525();
-            if (Class305.aBoolean3870) var_ha.method3685(class98, Class132.anInt1906);
-            else var_ha.method3684(class98);
+            if (Class305.aBoolean3870) var_toolkit.method3685(class98, Class132.anInt1906);
+            else var_toolkit.method3684(class98);
         }
         for (int i_67_ = 0; (i_67_ < this.aModelArray10323.length); i_67_++) {
             if (this.aModelArray10323[i_67_] != null) this.aBoolean10324 |= this.aModelArray10323[i_67_].F();
@@ -472,7 +472,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         aHashtable10565 = null;
     }
 
-    private final boolean method2459(int i, ha var_ha, int i_69_) {
+    private final boolean method2459(int i, Toolkit var_toolkit, int i_69_) {
         anInt10525++;
         int i_70_ = i;
         Class225 class225 = this.method2422((byte) 72);
@@ -484,7 +484,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         int i_74_ = this.aClass264_10217.method2019((byte) -106);
         boolean bool = (this.aByte10279 != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250));
         if (bool) i |= 0x80000;
-        Model model = (this.aModelArray10323[0] = (this.aClass154_10536.method1226(Class318_Sub1_Sub3_Sub3.timedVarDomain, class17_71_, this.aClass182Array10308, true, Exception_Sub1.itemTypeList, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.idkTypeList, this.anInt10232, var_ha, BillboardType.npcTypeList, Class10.seqTypeList, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.basTypeList)));
+        Model model = (this.aModelArray10323[0] = (this.aClass154_10536.method1226(Class318_Sub1_Sub3_Sub3.timedVarDomain, class17_71_, this.aClass182Array10308, true, Exception_Sub1.itemTypeList, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.idkTypeList, this.anInt10232, var_toolkit, BillboardType.npcTypeList, Class10.seqTypeList, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.basTypeList)));
         int i_75_ = Class292.method2201(2121);
         if (QuickChatCatTypeList.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268);
         int i_76_ = 3 % ((63 - i_69_) / 47);
@@ -520,7 +520,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                 if (this.anInt10220 != 0) i_79_ |= 0x2;
                 if (this.anInt10278 >= 0) i_79_ |= 0x7;
             } else i_79_ |= 0x7;
-            Model model_80_ = (this.aModelArray10323[1] = (class368.method3562(this.anInt10240, var_ha, this.anInt10243, i_79_, this.anInt10283, Class10.seqTypeList, (byte) 46)));
+            Model model_80_ = (this.aModelArray10323[1] = (class368.method3562(this.anInt10240, var_toolkit, this.anInt10243, i_79_, this.anInt10283, Class10.seqTypeList, (byte) 46)));
             if (model_80_ != null) {
                 if (this.anInt10278 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939[this.anInt10278]) != null)) {
                     int i_81_ = 0;
@@ -568,7 +568,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                 if (this.anInt10260 != 0) i_90_ |= 0x2;
                 if (this.anInt10289 >= 0) i_90_ |= 0x7;
             }
-            Model model_91_ = (this.aModelArray10323[2] = (class368.method3558(this.anInt10273, this.anInt10276, var_ha, i_90_, 3172, Class10.seqTypeList, this.anInt10224)));
+            Model model_91_ = (this.aModelArray10323[2] = (class368.method3558(this.anInt10273, this.anInt10276, var_toolkit, i_90_, 3172, Class10.seqTypeList, this.anInt10224)));
             if (model_91_ != null) {
                 if (this.anInt10289 < 0 || class225.anIntArrayArray2939 == null || ((class225.anIntArrayArray2939[this.anInt10289]) == null)) {
                     if (this.anInt10202 != 0) model_91_.a(2048 * (this.anInt10202));

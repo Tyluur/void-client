@@ -31,8 +31,8 @@ final class Class108 {
             int i_17_ = (int) f_15_ >> 9;
             if (i_16_ > 0 && i_17_ > 0 && Class367_Sub4.mapLength > i_16_ && (i_17_ < Class348_Sub40_Sub3.mapWidth)) {
                 int i_18_ = (Class132.aPlayer_1907.plane);
-                if (i_18_ < 3 && ((Class348_Sub33.aByteArrayArrayArray6962[1][i_16_][i_17_]) & 0x2) != 0) i_18_++;
-                int i_19_ = Class348_Sub1_Sub1.aSArray8801[i_18_].method3986((int) f_13_, (int) f_15_, (byte) 109);
+                if (i_18_ < 3 && ((Class348_Sub33.tileFlags[1][i_16_][i_17_]) & 0x2) != 0) i_18_++;
+                int i_19_ = Class348_Sub1_Sub1.aGroundArray8801[i_18_].method3986((int) f_13_, (int) f_15_, (byte) 109);
                 if (f_14_ > (float) i_19_) {
                     if (i < 2) return f_6_;
                     return (f_6_ - 0.1F + method1012(f_11_, f_13_, f_12_, f_15_, i - 1, f_10_, (byte) 122, f_14_) * 0.1F);

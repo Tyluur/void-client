@@ -37,7 +37,7 @@ final class Option_Sub10 extends Option {
 
     static final void method1761(int i) {
         anInt5935++;
-        Class348_Sub47.method3324(Class348_Sub8.aHa6654, (byte) 105, Class367_Sub11.anInt7396);
+        Class348_Sub47.method3324(Class348_Sub8.aToolkit6654, (byte) 105, Class367_Sub11.anInt7396);
         if (i != 85) anInt5943 = -99;
         if (r.anInt9721 != -1) Class75_Sub1.method769(r.anInt9721, (byte) 118);
         for (int i_6_ = 0; Class348_Sub38.anInt7008 > i_6_; i_6_++) {
@@ -50,8 +50,8 @@ final class Option_Sub10 extends Option {
             Class348_Sub38.anInt7008 = 0;
             Class88.method842(false);
         }
-        Class348_Sub8.aHa6654.la();
-        Class348_Sub42_Sub20.method3281((byte) 77, Class348_Sub8.aHa6654);
+        Class348_Sub8.aToolkit6654.la();
+        Class348_Sub42_Sub20.method3281((byte) 77, Class348_Sub8.aToolkit6654);
         int i_7_ = Class112.method1053(3112);
         if (i_7_ == -1) i_7_ = Class362.anInt4458;
         if (i_7_ == -1) i_7_ = Class348_Sub42_Sub16_Sub1.anInt10447;
@@ -68,8 +68,8 @@ final class Option_Sub10 extends Option {
     static final int method1762(int i, int i_10_, int i_11_, int i_12_) {
         int i_13_ = 56 / ((i - 74) / 43);
         anInt5947++;
-        if ((0x8 & Class348_Sub33.aByteArrayArrayArray6962[i_10_][i_12_][i_11_]) != 0) return 0;
-        if (i_10_ > 0 && ((0x2 & Class348_Sub33.aByteArrayArrayArray6962[1][i_12_][i_11_]) != 0)) return i_10_ + -1;
+        if ((0x8 & Class348_Sub33.tileFlags[i_10_][i_12_][i_11_]) != 0) return 0;
+        if (i_10_ > 0 && ((0x2 & Class348_Sub33.tileFlags[1][i_12_][i_11_]) != 0)) return i_10_ + -1;
         return i_10_;
     }
 

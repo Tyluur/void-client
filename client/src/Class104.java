@@ -232,7 +232,7 @@ final class Class104 {
         }
     }
 
-    static final ha method958(boolean bool, int i, TextureSource var_d, int i_61_, Canvas canvas, Index index) {
+    static final Toolkit method958(boolean bool, int i, TextureSource var_d, int i_61_, Canvas canvas, Index index) {
         try {
             if (bool != true) aClass221_1620 = null;
             anInt1610++;
@@ -243,7 +243,7 @@ final class Class104 {
                 i_63_ = dimension.height;
                 i_62_ = dimension.width;
             }
-            return ha.method3692(i_61_, i_63_, i_62_, index, 0, var_d, canvas, i);
+            return Toolkit.method3692(i_61_, i_63_, i_62_, index, 0, var_d, canvas, i);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("mha.E(" + bool + ',' + i + ',' + (var_d != null ? "{...}" : "null") + ',' + i_61_ + ',' + (canvas != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ')'));
         }

@@ -1183,7 +1183,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 for (int i_154_ = 0; (i_154_ < Class348_Sub40_Sub30.anInt9383); i_154_++) {
                     if (!bool_149_) {
                         if (string.equals(Class83.aStringArray1441[i_154_])) {
-                            if (i != ha.anIntArray4578[i_154_]) {
+                            if (i != Toolkit.anIntArray4578[i_154_]) {
                                 boolean bool_155_ = true;
                                 for (Class318_Sub9_Sub1 class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1872(8)); class318_sub9_sub1 != null; class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1878((byte) 124))) {
                                     if (class318_sub9_sub1.aString8783.equals(string)) {
@@ -1199,7 +1199,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                     }
                                 }
                                 if (bool_155_) Class348_Sub42_Sub14.aClass243_9642.method1869(-95, new Class318_Sub9_Sub1(string, i));
-                                ha.anIntArray4578[i_154_] = i;
+                                Toolkit.anIntArray4578[i_154_] = i;
                             }
                             Class286_Sub2.aStringArray6205[i_154_] = string_150_;
                             Class285.aStringArray4744[i_154_] = string_152_;
@@ -1218,7 +1218,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 if (string != null && Class348_Sub40_Sub30.anInt9383 < 200) {
                     Class83.aStringArray1441[Class348_Sub40_Sub30.anInt9383] = string;
                     Class286_Sub2.aStringArray6205[(Class348_Sub40_Sub30.anInt9383)] = string_150_;
-                    ha.anIntArray4578[Class348_Sub40_Sub30.anInt9383] = i;
+                    Toolkit.anIntArray4578[Class348_Sub40_Sub30.anInt9383] = i;
                     Class285.aStringArray4744[Class348_Sub40_Sub30.anInt9383] = string_152_;
                     Class172.anIntArray2280[Class348_Sub40_Sub30.anInt9383] = i_151_;
                     Class122.aBooleanArray1806[Class348_Sub40_Sub30.anInt9383] = bool_153_;
@@ -1233,10 +1233,10 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 i--;
                 bool_156_ = true;
                 for (int i_157_ = 0; i > i_157_; i_157_++) {
-                    if (((Class3.aClass161_125.anInt2143 != ha.anIntArray4578[i_157_]) && (ha.anIntArray4578[i_157_ - -1] == Class3.aClass161_125.anInt2143)) || (ha.anIntArray4578[i_157_] == 0 && (ha.anIntArray4578[1 + i_157_] != 0))) {
-                        int i_158_ = ha.anIntArray4578[i_157_];
-                        ha.anIntArray4578[i_157_] = ha.anIntArray4578[1 + i_157_];
-                        ha.anIntArray4578[i_157_ - -1] = i_158_;
+                    if (((Class3.aClass161_125.anInt2143 != Toolkit.anIntArray4578[i_157_]) && (Toolkit.anIntArray4578[i_157_ - -1] == Class3.aClass161_125.anInt2143)) || (Toolkit.anIntArray4578[i_157_] == 0 && (Toolkit.anIntArray4578[1 + i_157_] != 0))) {
+                        int i_158_ = Toolkit.anIntArray4578[i_157_];
+                        Toolkit.anIntArray4578[i_157_] = Toolkit.anIntArray4578[1 + i_157_];
+                        Toolkit.anIntArray4578[i_157_ - -1] = i_158_;
                         String string = Class285.aStringArray4744[i_157_];
                         Class285.aStringArray4744[i_157_] = Class285.aStringArray4744[1 + i_157_];
                         Class285.aStringArray4744[1 + i_157_] = string;

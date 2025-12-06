@@ -109,7 +109,7 @@ final class Class163 {
                 if (sprite == null) {
                     Class207 class207 = Class207.method1521(Class21.SPRITES, class321.itemSprite, 0);
                     if (class207 != null) {
-                        sprite = Class348_Sub8.aHa6654.method3691(class207, true);
+                        sprite = Class348_Sub8.aToolkit6654.method3691(class207, true);
                         Class34.aClass60_463.method582(sprite, class321.itemSprite, (byte) -127);
                     }
                 }

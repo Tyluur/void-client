@@ -32,13 +32,13 @@ final class Class368 {
     private int anInt4512;
     GfxTypeList aGfxTypeList_4513;
 
-    final Model method3558(int i, int i_0_, ha var_ha, int i_1_, int i_2_, SeqTypeList seqTypeList, int i_3_) {
+    final Model method3558(int i, int i_0_, Toolkit var_toolkit, int i_1_, int i_2_, SeqTypeList seqTypeList, int i_3_) {
         try {
             if (i_2_ != 3172) aShortArray4504 = null;
             anInt4505++;
-            return method3566(var_ha, i_3_, i_1_, null, 0, seqTypeList, i, (byte) 5, null, 0, false, 0, (byte) -68, i_0_);
+            return method3566(var_toolkit, i_3_, i_1_, null, 0, seqTypeList, i, (byte) 5, null, 0, false, 0, (byte) -68, i_0_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_3_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_3_ + ')'));
         }
     }
 
@@ -69,13 +69,13 @@ final class Class368 {
         return class46.aStringArray833[i];
     }
 
-    final Model method3562(int i, ha var_ha, int i_5_, int i_6_, int i_7_, SeqTypeList seqTypeList, byte i_8_) {
+    final Model method3562(int i, Toolkit var_toolkit, int i_5_, int i_6_, int i_7_, SeqTypeList seqTypeList, byte i_8_) {
         try {
             if (i_8_ <= 24) return null;
             anInt4511++;
-            return method3566(var_ha, i, i_6_, null, 0, seqTypeList, i_5_, (byte) 2, null, 0, false, 0, (byte) -68, i_7_);
+            return method3566(var_toolkit, i, i_6_, null, 0, seqTypeList, i_5_, (byte) 2, null, 0, false, 0, (byte) -68, i_7_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.A(" + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_8_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.A(" + i + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_8_ + ')'));
         }
     }
 
@@ -138,13 +138,13 @@ final class Class368 {
         }
     }
 
-    final Model method3565(int i, int i_16_, int i_17_, int i_18_, boolean bool, ha var_ha, int i_19_, int i_20_, int i_21_, SeqTypeList seqTypeList, s var_s, int i_22_, s var_s_23_) {
+    final Model method3565(int i, int i_16_, int i_17_, int i_18_, boolean bool, Toolkit var_toolkit, int i_19_, int i_20_, int i_21_, SeqTypeList seqTypeList, Ground var_ground, int i_22_, Ground var_ground_23_) {
         try {
             anInt4496++;
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, (byte) 54, null, -17, true, -42, (byte) 95, -81);
-            return method3566(var_ha, i_16_, i_18_, var_s, i_22_, seqTypeList, i, (byte) 2, var_s_23_, i_17_, bool, i_20_, (byte) -68, i_19_);
+            return method3566(var_toolkit, i_16_, i_18_, var_ground, i_22_, seqTypeList, i, (byte) 2, var_ground_23_, i_17_, bool, i_20_, (byte) -68, i_19_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + (var_s != null ? "{...}" : "null") + ',' + i_22_ + ',' + (var_s_23_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + (var_ground != null ? "{...}" : "null") + ',' + i_22_ + ',' + (var_ground_23_ != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -158,7 +158,7 @@ final class Class368 {
         anInt4512 = 0;
     }
 
-    private final Model method3566(ha var_ha, int i, int i_24_, s var_s, int i_25_, SeqTypeList seqTypeList, int i_26_, byte i_27_, s var_s_28_, int i_29_, boolean bool, int i_30_, byte i_31_, int i_32_) {
+    private final Model method3566(Toolkit var_toolkit, int i, int i_24_, Ground var_ground, int i_25_, SeqTypeList seqTypeList, int i_26_, byte i_27_, Ground var_ground_28_, int i_29_, boolean bool, int i_30_, byte i_31_, int i_32_) {
         try {
             anInt4491++;
             int i_33_ = i_24_;
@@ -170,17 +170,17 @@ final class Class368 {
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ |= 0x5;
             Model model;
             synchronized (this.aGfxTypeList_4513.aClass60_3990) {
-                model = ((Model) (this.aGfxTypeList_4513.aClass60_3990.method583(this.anInt4501 |= var_ha.anInt4567 << 29, -122)));
+                model = ((Model) (this.aGfxTypeList_4513.aClass60_3990.method583(this.anInt4501 |= var_toolkit.anInt4567 << 29, -122)));
             }
-            if (model == null || var_ha.method3667(model.ua(), i_33_) != 0) {
-                if (model != null) i_33_ = var_ha.method3679(i_33_, model.ua());
+            if (model == null || var_toolkit.method3667(model.ua(), i_33_) != 0) {
+                if (model != null) i_33_ = var_toolkit.method3679(i_33_, model.ua());
                 int i_34_ = i_33_;
                 if (aShortArray4490 != null) i_34_ |= 0x4000;
                 if (aShortArray4499 != null) i_34_ |= 0x8000;
                 Mesh mesh = Class300.method2277(0, (this.aGfxTypeList_4513.aIndex_3981), anInt4506, -1);
                 if (mesh == null) return null;
                 if (mesh.version < 13) mesh.method1092(2, 114);
-                model = var_ha.method3625(mesh, i_34_, (this.aGfxTypeList_4513.anInt3991), 64 + anInt4489, anInt4512 - -850);
+                model = var_toolkit.method3625(mesh, i_34_, (this.aGfxTypeList_4513.anInt3991), 64 + anInt4489, anInt4512 - -850);
                 if (aShortArray4490 != null) {
                     for (int i_35_ = 0; (i_35_ < aShortArray4490.length); i_35_++)
                         model.ia(aShortArray4490[i_35_], aShortArray4502[i_35_]);
@@ -191,7 +191,7 @@ final class Class368 {
                 }
                 model.s(i_33_);
                 synchronized (this.aGfxTypeList_4513.aClass60_3990) {
-                    this.aGfxTypeList_4513.aClass60_3990.method582(model, this.anInt4501 |= var_ha.anInt4567 << 29, (byte) -113);
+                    this.aGfxTypeList_4513.aClass60_3990.method582(model, this.anInt4501 |= var_toolkit.anInt4567 << 29, (byte) -113);
                 }
             }
             if (i_31_ != -68) return null;
@@ -202,11 +202,11 @@ final class Class368 {
                 if (anInt4508 == 180) model_37_.a(8192);
                 if (anInt4508 == 270) model_37_.a(12288);
             }
-            if (bool) model_37_.p(this.aByte4488, anInt4507, var_s_28_, var_s, i_30_, i_29_, i_25_);
+            if (bool) model_37_.p(this.aByte4488, anInt4507, var_ground_28_, var_ground, i_30_, i_29_, i_25_);
             model_37_.s(i_24_);
             return model_37_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.I(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_24_ + ',' + (var_s != null ? "{...}" : "null") + ',' + i_25_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_26_ + ',' + i_27_ + ',' + (var_s_28_ != null ? "{...}" : "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.I(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_24_ + ',' + (var_ground != null ? "{...}" : "null") + ',' + i_25_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_26_ + ',' + i_27_ + ',' + (var_ground_28_ != null ? "{...}" : "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'));
         }
     }
 }

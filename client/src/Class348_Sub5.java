@@ -33,11 +33,11 @@ abstract class Class348_Sub5 extends Node {
         return null;
     }
 
-    static final ha method2753(boolean bool, int i, int i_4_, Canvas canvas, TextureSource var_d) {
+    static final Toolkit method2753(boolean bool, int i, int i_4_, Canvas canvas, TextureSource var_d) {
         try {
             anInt6628++;
             if (bool != true) aByteArray6624 = null;
-            return new ha_Sub1(canvas, var_d, i_4_, i);
+            return new JavaToolkit(canvas, var_d, i_4_, i);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("fba.M(" + bool + ',' + i + ',' + i_4_ + ',' + (canvas != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ')'));
         }

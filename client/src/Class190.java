@@ -52,7 +52,7 @@ final class Class190 {
         return (this.anInt2540 == class190_4_.anInt2540) && (this.aFloat2547 == class190_4_.aFloat2547) && (class190_4_.aFloat2544 == this.aFloat2544) && (this.aFloat2536 == class190_4_.aFloat2536) && (class190_4_.aFloat2542 == this.aFloat2542) && (class190_4_.aFloat2545 == this.aFloat2545) && (class190_4_.aFloat2551 == this.aFloat2551) && (class190_4_.anInt2549 == this.anInt2549) && (class190_4_.anInt2546 == this.anInt2546) && (class190_4_.aClass299_2541 == this.aClass299_2541);
     }
 
-    static final boolean method1425(byte i, Class42 class42, Class348_Sub21 class348_sub21, int i_5_, ha var_ha, int i_6_) {
+    static final boolean method1425(byte i, Class42 class42, Class348_Sub21 class348_sub21, int i_5_, Toolkit var_toolkit, int i_6_) {
         try {
             anInt2537++;
             int i_7_ = 2147483647;
@@ -72,8 +72,8 @@ final class Class190 {
             int i_13_ = 0;
             int i_14_ = 0;
             if (class42.anInt578 != -1) {
-                if (class348_sub21.aBoolean6848 && class42.anInt605 != -1) sprite = class42.method374(true, var_ha, (byte) 127);
-                else sprite = class42.method374(false, var_ha, (byte) 127);
+                if (class348_sub21.aBoolean6848 && class42.anInt605 != -1) sprite = class42.method374(true, var_toolkit, (byte) 127);
+                else sprite = class42.method374(false, var_toolkit, (byte) 127);
                 if (sprite != null) {
                     i_11_ = (class348_sub21.anInt6853 + -(sprite.scaleWidth() - -1 >> 1));
                     i_12_ = (class348_sub21.anInt6853 + (1 + sprite.scaleWidth() >> 1));
@@ -119,22 +119,22 @@ final class Class190 {
                 }
             }
             if (Class75.anInt1272 > i_8_ || i_7_ > Class75.anInt1276 || i_10_ < Class75.anInt1262 || i_9_ > Class75.anInt1268) return true;
-            Class75.method745(var_ha, class348_sub21, class42);
+            Class75.method745(var_toolkit, class348_sub21, class42);
             if (sprite != null) {
                 if (Class367_Sub9.anInt7379 > 0 && ((Class348_Sub40_Sub30.anInt9399 != -1 && (Class348_Sub40_Sub30.anInt9399 == class348_sub21.anInt6847)) || (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)))) {
                     int i_25_;
                     if (Class164.anInt2173 <= 50) i_25_ = 2 * Class164.anInt2173;
                     else i_25_ = -(Class164.anInt2173 * 2) + 200;
                     int i_26_ = 0xffff00 | i_25_ << 24;
-                    var_ha.method3656((byte) -105, i_26_, sprite.method971() / 2 - -7, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
-                    var_ha.method3656((byte) -120, i_26_, sprite.method971() / 2 - -5, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
-                    var_ha.method3656((byte) -126, i_26_, 3 + sprite.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
-                    var_ha.method3656((byte) -112, i_26_, 1 + sprite.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
-                    var_ha.method3656((byte) -123, i_26_, sprite.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
+                    var_toolkit.method3656((byte) -105, i_26_, sprite.method971() / 2 - -7, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
+                    var_toolkit.method3656((byte) -120, i_26_, sprite.method971() / 2 - -5, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
+                    var_toolkit.method3656((byte) -126, i_26_, 3 + sprite.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
+                    var_toolkit.method3656((byte) -112, i_26_, 1 + sprite.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
+                    var_toolkit.method3656((byte) -123, i_26_, sprite.method971() / 2, (class348_sub21.anInt6853), (class348_sub21.anInt6855));
                 }
                 sprite.method974((class348_sub21.anInt6853 + -(sprite.scaleWidth() >> 1)), (class348_sub21.anInt6855 + -(sprite.method980() >> 1)));
             }
-            if (class42.aString597 != null && class323 != null) ModelParticleEffector.method2683(class323, class348_sub21, i_16_, 64, i_15_, var_ha, i_17_, i_18_, class42);
+            if (class42.aString597 != null && class323 != null) ModelParticleEffector.method2683(class323, class348_sub21, i_16_, 64, i_15_, var_toolkit, i_17_, i_18_, class42);
             if (class42.anInt578 != -1 || class42.aString597 != null) {
                 Class348_Sub12 class348_sub12 = new Class348_Sub12(class348_sub21);
                 class348_sub12.anInt6746 = i_13_;
@@ -149,7 +149,7 @@ final class Class190 {
             }
             return false;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bp.C(" + i + ',' + (class42 != null ? "{...}" : "null") + ',' + (class348_sub21 != null ? "{...}" : "null") + ',' + i_5_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_6_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bp.C(" + i + ',' + (class42 != null ? "{...}" : "null") + ',' + (class348_sub21 != null ? "{...}" : "null") + ',' + i_5_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_6_ + ')'));
         }
     }
 
@@ -175,7 +175,7 @@ final class Class190 {
 
     Class190(Packet packet) {
         int i = packet.readUnsignedByte(255);
-        if (Class316.clientOptions.aClass239_Sub28_7230.method1845(-32350) != 1 || Class60.aHa1098.method3704() <= 0) {
+        if (Class316.clientOptions.aClass239_Sub28_7230.method1845(-32350) != 1 || Class60.aToolkit1098.method3704() <= 0) {
             if ((0x1 & i) != 0) packet.readInt((byte) -126);
             if ((0x2 & i) != 0) packet.readUnsignedShort(842397944);
             if ((i & 0x4) != 0) packet.readUnsignedShort(842397944);

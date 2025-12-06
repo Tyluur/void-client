@@ -69,7 +69,7 @@ final class Option_Sub24 extends Option {
         return 3;
     }
 
-    static final void method1823(ha var_ha, int i, int i_4_, byte i_5_) {
+    static final void method1823(Toolkit var_toolkit, int i, int i_4_, byte i_5_) {
         anInt6088++;
         int i_6_ = 56 % ((68 - i_5_) / 58);
         if (i >= 0 && i_4_ >= 0 && Class18.anInt282 != 0 && Class305.anInt3861 != 0) {
@@ -82,8 +82,8 @@ final class Option_Sub24 extends Option {
             int i_12_;
             if (Class59_Sub1.aBoolean5300) {
                 Class107.method1010(false, false);
-                matrix = var_ha.method3640();
-                int[] is = var_ha.Y();
+                matrix = var_toolkit.method3640();
+                int[] is = var_toolkit.Y();
                 i_7_ = is[0];
                 i_8_ = is[1];
                 i_9_ = is[3];
@@ -91,26 +91,26 @@ final class Option_Sub24 extends Option {
                 i_11_ = i + Class121.method1082(-81, false);
                 i_12_ = Class348_Sub23.method2960(false, -52) + i_4_;
             } else {
-                var_ha.DA(Class336.anInt4171, Class205.anInt2688, Class18.anInt282, Class305.anInt3861);
+                var_toolkit.DA(Class336.anInt4171, Class205.anInt2688, Class18.anInt282, Class305.anInt3861);
                 i_8_ = Class205.anInt2688;
                 i_9_ = Class305.anInt3861;
                 i_7_ = Class336.anInt4171;
                 i_10_ = Class18.anInt282;
-                var_ha.KA(Class120.anInt4911, Class238_Sub1.anInt5832, Class18.anInt282, Class305.anInt3861);
-                matrix = var_ha.method3654();
-                matrix.method903(Class14_Sub4.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, ClientOptions.anInt7244);
-                var_ha.method3638(matrix);
+                var_toolkit.KA(Class120.anInt4911, Class238_Sub1.anInt5832, Class18.anInt282, Class305.anInt3861);
+                matrix = var_toolkit.method3654();
+                matrix.rotate(Class14_Sub4.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, ClientOptions.anInt7244);
+                var_toolkit.setCamera(matrix);
                 i_12_ = i_4_;
                 i_11_ = i;
             }
             QuickChatCatTypeList.method1626(1, true);
             if (i_10_ == 0) i_10_ = 1;
             if (i_9_ == 0) i_9_ = 1;
-            if (Class348_Sub1_Sub1.aSArray8801 != null && (!r.aBoolean9722 || (0x40 & Class38.anInt500) != 0)) {
+            if (Class348_Sub1_Sub1.aGroundArray8801 != null && (!r.aBoolean9722 || (0x40 & Class38.anInt500) != 0)) {
                 int i_13_ = -1;
                 int i_14_ = -1;
-                int i_15_ = var_ha.i();
-                int i_16_ = var_ha.XA();
+                int i_15_ = var_toolkit.i();
+                int i_16_ = var_toolkit.XA();
                 int i_17_;
                 int i_18_;
                 int i_19_;
@@ -137,7 +137,7 @@ final class Option_Sub24 extends Option {
                     i_13_ = (Class132.aPlayer_1907.method2436((byte) 71) + -1 << 8) + i_24_ >> 9;
                     i_14_ = i_25_ - -(Class132.aPlayer_1907.method2436((byte) 73) + -1 << 8) >> 9;
                     int i_26_ = (Class132.aPlayer_1907.plane);
-                    if (i_26_ < 3 && ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1][i_24_ >> 9][i_25_ >> 9])) != 0)) i_26_++;
+                    if (i_26_ < 3 && ((0x2 & (Class348_Sub33.tileFlags[1][i_24_ >> 9][i_25_ >> 9])) != 0)) i_26_++;
                 }
                 if (i_13_ != -1 && i_14_ != -1) {
                     if (!r.aBoolean9722 || (0x40 & Class38.anInt500) == 0) {
@@ -164,7 +164,7 @@ final class Option_Sub24 extends Option {
                 }
                 Class243 class243 = class76.aClass243_1282;
                 for (Class318_Sub4 class318_sub4 = (Class318_Sub4) class243.method1872(8); class318_sub4 != null; class318_sub4 = (Class318_Sub4) class243.method1878((byte) -123)) {
-                    if ((RuntimeException_Sub1.aBoolean4599 || ((Class132.aPlayer_1907.plane) == class318_sub4.aClass318_Sub1_6410.plane)) && class318_sub4.method2504(i_29_, i_28_, var_ha, -115)) {
+                    if ((RuntimeException_Sub1.aBoolean4599 || ((Class132.aPlayer_1907.plane) == class318_sub4.aClass318_Sub1_6410.plane)) && class318_sub4.method2504(i_29_, i_28_, var_toolkit, -115)) {
                         boolean bool_30_ = false;
                         boolean bool_31_ = false;
                         int i_32_;

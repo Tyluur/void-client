@@ -13,7 +13,7 @@ abstract class Sprite_Sub3 extends Sprite {
     static int anInt8457;
     static int anInt8458;
     private static int anInt8459;
-    ha_Sub1 aHa_Sub1_8460;
+    JavaToolkit aJavaToolkit_8460;
     int anInt8461;
     private int[] anIntArray8462;
     static int anInt8463;
@@ -51,10 +51,10 @@ abstract class Sprite_Sub3 extends Sprite {
     }
 
     final void method965(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_) {
-        if (this.aHa_Sub1_8460.method3716()) throw new IllegalStateException();
+        if (this.aJavaToolkit_8460.method3716()) throw new IllegalStateException();
         if (anIntArray8462 == null) anIntArray8462 = new int[4];
-        this.aHa_Sub1_8460.K(anIntArray8462);
-        this.aHa_Sub1_8460.T(this.aHa_Sub1_8460.anInt7496, this.aHa_Sub1_8460.anInt7476, i + i_5_, i_4_ + i_6_);
+        this.aJavaToolkit_8460.K(anIntArray8462);
+        this.aJavaToolkit_8460.T(this.aJavaToolkit_8460.clipX1, this.aJavaToolkit_8460.clipY1, i + i_5_, i_4_ + i_6_);
         int i_10_ = scaleWidth();
         int i_11_ = method980();
         int i_12_ = (i_5_ + i_10_ - 1) / i_10_;
@@ -64,11 +64,11 @@ abstract class Sprite_Sub3 extends Sprite {
             for (int i_16_ = 0; i_16_ < i_12_; i_16_++)
                 method964(i + i_16_ * i_10_, i_4_ + i_15_, i_7_, i_8_, i_9_);
         }
-        this.aHa_Sub1_8460.KA(anIntArray8462[0], anIntArray8462[1], anIntArray8462[2], anIntArray8462[3]);
+        this.aJavaToolkit_8460.KA(anIntArray8462[0], anIntArray8462[1], anIntArray8462[2], anIntArray8462[3]);
     }
 
     final void method983(float f, float f_17_, float f_18_, float f_19_, float f_20_, float f_21_, int i, aa var_aa, int i_22_, int i_23_) {
-        if (this.aHa_Sub1_8460.method3716()) throw new IllegalStateException();
+        if (this.aJavaToolkit_8460.method3716()) throw new IllegalStateException();
         if (method997(f, f_17_, f_18_, f_19_, f_20_, f_21_)) {
             aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
             method995(var_aa_Sub3.anIntArray5201, var_aa_Sub3.anIntArray5202, anInt8473 - i_22_, -i_23_ - (anInt8468 - anInt8466));
@@ -87,7 +87,7 @@ abstract class Sprite_Sub3 extends Sprite {
     abstract void method995(int[] is, int[] is_28_, int i, int i_29_);
 
     final void method962(float f, float f_30_, float f_31_, float f_32_, float f_33_, float f_34_, int i, int i_35_, int i_36_, int i_37_) {
-        if (this.aHa_Sub1_8460.method3716()) throw new IllegalStateException();
+        if (this.aJavaToolkit_8460.method3716()) throw new IllegalStateException();
         if (method997(f, f_30_, f_31_, f_32_, f_33_, f_34_)) {
             anInt8480 = i_35_;
             if (i != 1) {
@@ -137,8 +137,8 @@ abstract class Sprite_Sub3 extends Sprite {
         return (this.anInt8464 + this.anInt8470 + this.anInt8456);
     }
 
-    Sprite_Sub3(ha_Sub1 var_ha_Sub1, int i, int i_55_) {
-        this.aHa_Sub1_8460 = var_ha_Sub1;
+    Sprite_Sub3(JavaToolkit var_javaToolkit, int i, int i_55_) {
+        this.aJavaToolkit_8460 = var_javaToolkit;
         this.anInt8471 = i;
         this.anInt8470 = i_55_;
     }
@@ -200,15 +200,15 @@ abstract class Sprite_Sub3 extends Sprite {
         if (f_78_ < f_81_) f_81_ = f_78_;
         if (f_63_ > f_82_) f_82_ = f_63_;
         if (f_78_ > f_82_) f_82_ = f_78_;
-        if (f_79_ < (float) (this.aHa_Sub1_8460.anInt7496)) f_79_ = (float) (this.aHa_Sub1_8460.anInt7496);
-        if (f_80_ > (float) (this.aHa_Sub1_8460.anInt7507)) f_80_ = (float) (this.aHa_Sub1_8460.anInt7507);
-        if (f_81_ < (float) (this.aHa_Sub1_8460.anInt7476)) f_81_ = (float) (this.aHa_Sub1_8460.anInt7476);
-        if (f_82_ > (float) (this.aHa_Sub1_8460.anInt7503)) f_82_ = (float) (this.aHa_Sub1_8460.anInt7503);
+        if (f_79_ < (float) (this.aJavaToolkit_8460.clipX1)) f_79_ = (float) (this.aJavaToolkit_8460.clipX1);
+        if (f_80_ > (float) (this.aJavaToolkit_8460.clipX2)) f_80_ = (float) (this.aJavaToolkit_8460.clipX2);
+        if (f_81_ < (float) (this.aJavaToolkit_8460.clipY1)) f_81_ = (float) (this.aJavaToolkit_8460.clipY1);
+        if (f_82_ > (float) (this.aJavaToolkit_8460.clipY2)) f_82_ = (float) (this.aJavaToolkit_8460.clipY2);
         f_80_ = f_79_ - f_80_;
         if (f_80_ >= 0.0F) return false;
         f_82_ = f_81_ - f_82_;
         if (f_82_ >= 0.0F) return false;
-        anInt8453 = this.aHa_Sub1_8460.anInt7477;
+        anInt8453 = this.aJavaToolkit_8460.surfaceWidth;
         anInt8451 = (int) ((float) ((int) f_81_ * anInt8453) + f_79_);
         float f_83_ = (f_60_ - f) * (f_63_ - f_59_) - (f_61_ - f_59_) * (f_62_ - f);
         float f_84_ = (f_62_ - f) * (f_61_ - f_59_) - (f_63_ - f_59_) * (f_60_ - f);

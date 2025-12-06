@@ -24,15 +24,15 @@ class Class369 implements Interface12 {
         int i_0_ = 105 % ((-15 - i) / 36);
     }
 
-    static final void method3568(ha var_ha, int i) {
+    static final void method3568(Toolkit var_toolkit, int i) {
         anInt4964++;
-        Class240.aFontRenderer_4684 = Class14.method232(var_ha, (byte) -53, true, LoadState.anInt1044);
-        Class258_Sub1.aFontMetrics_8527 = Class135.method1151(-25411, var_ha, LoadState.anInt1044);
+        Class240.aFontRenderer_4684 = Class14.method232(var_toolkit, (byte) -53, true, LoadState.anInt1044);
+        Class258_Sub1.aFontMetrics_8527 = Class135.method1151(-25411, var_toolkit, LoadState.anInt1044);
         if (i != 4) aFontMetrics_4962 = null;
-        Applet_Sub1.aFontRenderer_20 = Class14.method232(var_ha, (byte) -53, true, Class17.anInt235);
-        Class246.aFontMetrics_3179 = Class135.method1151(-25411, var_ha, Class17.anInt235);
-        Class262.aFontRenderer_3326 = Class14.method232(var_ha, (byte) -53, true, Class291.anInt3736);
-        aFontMetrics_4962 = Class135.method1151(-25411, var_ha, Class291.anInt3736);
+        Applet_Sub1.aFontRenderer_20 = Class14.method232(var_toolkit, (byte) -53, true, Class17.anInt235);
+        Class246.aFontMetrics_3179 = Class135.method1151(-25411, var_toolkit, Class17.anInt235);
+        Class262.aFontRenderer_3326 = Class14.method232(var_toolkit, (byte) -53, true, Class291.anInt3736);
+        aFontMetrics_4962 = Class135.method1151(-25411, var_toolkit, Class291.anInt3736);
     }
 
     static final void method3569(int i, int i_1_) {

@@ -55,9 +55,9 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
 
     static final void method2129(byte i) {
         anInt8494++;
-        Class21.aHa326.method3638(r.aMatrix_9720);
+        Class21.aToolkit326.setCamera(r.aMatrix_9720);
         if (i < 9) anInt8492 = -40;
-        Class21.aHa326.DA(Class248.anInt3202, Option_Sub5.anInt5886, Class14_Sub3.anInt8630, Class27.anInt394);
+        Class21.aToolkit326.DA(Class248.anInt3202, Option_Sub5.anInt5886, Class14_Sub3.anInt8630, Class27.anInt394);
     }
 
     public final void method21(int i) {

@@ -19,9 +19,9 @@ final class OutputStream_Sub1 extends OutputStream {
 
     static final void method132(int i, boolean bool, int i_0_, int i_1_, int i_2_, int i_3_) {
         anInt94++;
-        if (Class147.aClass357ArrayArrayArray2029 == null) Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
+        if (Class147.aClass357ArrayArrayArray2029 == null) Class348_Sub8.aToolkit6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
         else if (Class132.aPlayer_1907.x < 0 || (Class132.aPlayer_1907.x >= Class367_Sub4.mapLength * 512) || Class132.aPlayer_1907.y < 0 || (512 * Class348_Sub40_Sub3.mapWidth <= Class132.aPlayer_1907.y))
-            Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
+            Class348_Sub8.aToolkit6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
         else {
             Option_Sub15.anInt6006++;
             if (Class132.aPlayer_1907 != null && Class248.anInt3203 == (Class132.aPlayer_1907.x + -(256 * Class132.aPlayer_1907.method2436((byte) 90)) - -256) >> 9 && Class97.anInt1548 == (Class132.aPlayer_1907.y + 256 + -(256 * Class132.aPlayer_1907.method2436((byte) 112))) >> 9) {
@@ -77,23 +77,23 @@ final class OutputStream_Sub1 extends OutputStream {
             if (Class59_Sub2_Sub2.anInt8685 > (Class348_Sub41.anInt7054 << 9) + -1) Class59_Sub2_Sub2.anInt8685 = (Class348_Sub41.anInt7054 << 9) - 1;
             Class348_Sub42_Sub11.method3225(114);
             Class348_Sub42_Sub3.method3175((byte) -107);
-            Class348_Sub8.aHa6654.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_);
+            Class348_Sub8.aToolkit6654.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_);
             QuickChatCatTypeList.method1626(1, true);
             if (Class59_Sub1.aBoolean5300) {
                 Class101_Sub3.method941(124, QuestTypeList.anInt2500);
                 if (Class132.anInt1906 != Class375.anInt4545) Class348_Sub16_Sub2.aBoolean8870 = true;
                 Class375.anInt4545 = Class132.anInt1906;
             } else {
-                Class348_Sub8.aHa6654.ya();
+                Class348_Sub8.aToolkit6654.ya();
                 int i_15_ = QuestTypeList.anInt2500;
-                if (VarcTypeList.aClass305_3304 != null) VarcTypeList.aClass305_3304.method2293(LightTypeList.anInt2481 << 3, Class348_Sub8.aHa6654, (byte) -72, i_1_, i_0_, i_3_, Class5.anInt4638, ClientScript.anInt9701, i_15_, i_2_);
-                else Class348_Sub8.aHa6654.GA(i_15_);
+                if (VarcTypeList.aClass305_3304 != null) VarcTypeList.aClass305_3304.method2293(LightTypeList.anInt2481 << 3, Class348_Sub8.aToolkit6654, (byte) -72, i_1_, i_0_, i_3_, Class5.anInt4638, ClientScript.anInt9701, i_15_, i_2_);
+                else Class348_Sub8.aToolkit6654.GA(i_15_);
             }
             Class369_Sub1.method3570(false);
             if (i >= 80) {
-                Class157.aMatrix_2123.method903(Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, -ClientScript.anInt9701 & 0x3fff, -Class5.anInt4638 & 0x3fff, 0x3fff & -Class338.anInt4186);
-                Class348_Sub8.aHa6654.method3638(Class157.aMatrix_2123);
-                Class348_Sub8.aHa6654.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 << 1, Class97.anInt1550 << 1);
+                Class157.aMatrix_2123.rotate(Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, -ClientScript.anInt9701 & 0x3fff, -Class5.anInt4638 & 0x3fff, 0x3fff & -Class338.anInt4186);
+                Class348_Sub8.aToolkit6654.setCamera(Class157.aMatrix_2123);
+                Class348_Sub8.aToolkit6654.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 << 1, Class97.anInt1550 << 1);
                 Class30.method319(Class97.anInt1550 << 1, Class97.anInt1550 << 1, (byte) -18, i_1_ + i_0_ / 2, i_3_ + i_2_ / 2);
                 Class348_Sub42_Sub20.method3282(0x3fff & -(ClientScript.anInt9701), Class59_Sub2_Sub2.anInt8685, Class305.anInt3855, 0, -Class5.anInt4638 & 0x3fff, Class286_Sub4.anInt6246, -Class338.anInt4186 & 0x3fff);
                 byte i_16_ = (Class316.clientOptions.aClass239_Sub14_7264.method1778(-32350) != 2 ? (byte) 1 : (byte) Option_Sub15.anInt6006);
@@ -117,8 +117,8 @@ final class OutputStream_Sub1 extends OutputStream {
                 Class59_Sub2_Sub2.anInt8685 = i_10_;
                 if (Class238_Sub1.aBoolean5840 && SystemInfo.aClass248_6601.method1902(4) == 0) Class238_Sub1.aBoolean5840 = false;
                 if (Class238_Sub1.aBoolean5840) {
-                    Class348_Sub8.aHa6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
-                    Class362.method3511(false, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.language, 544)), 2, Class348_Sub8.aHa6654);
+                    Class348_Sub8.aToolkit6654.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
+                    Class362.method3511(false, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.language, 544)), 2, Class348_Sub8.aToolkit6654);
                 }
                 QuickChatCatTypeList.method1626(1, false);
             }

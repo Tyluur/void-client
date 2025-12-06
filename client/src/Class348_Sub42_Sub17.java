@@ -16,19 +16,19 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
     static Class351 aClass351_9679 = new Class351(27, 7);
     static int anInt9680;
 
-    static final int method3266(ha var_ha, int i, Class277 class277) {
+    static final int method3266(Toolkit var_toolkit, int i, Class277 class277) {
         try {
             anInt9674++;
             if (class277.anInt3569 == -1) {
                 if (class277.anInt3575 != -1) {
-                    TextureMetrics textureMetrics = var_ha.aD4579.getMetrics(class277.anInt3575, -6662);
+                    TextureMetrics textureMetrics = var_toolkit.aD4579.getMetrics(class277.anInt3575, -6662);
                     if (!textureMetrics.disableable) return textureMetrics.aShort208;
                 }
             } else return class277.anInt3569;
             if (i <= 123) return -68;
             return class277.anInt3563;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("gw.F(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class277 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("gw.F(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + (class277 != null ? "{...}" : "null") + ')'));
         }
     }
 

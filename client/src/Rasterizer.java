@@ -5,41 +5,42 @@
 // Class109
 final class Rasterizer {
     int minX;
-    private final ha_Sub1 aHa_Sub1_1666;
+    private final JavaToolkit aJavaToolkit_1666;
     boolean aBoolean1667 = false;
     int minY;
     boolean aBoolean1669;
     private final JavaThreadResource aJavaThreadResource_1670;
-    boolean aBoolean1671;
-    int anInt1672;
-    private final int[] anIntArray1673;
+    boolean restrictEdges;
+    int height;
+    private final int[] raster;
     int alpha = 0;
-    private boolean aBoolean1675 = false;
-    int[] anIntArray1676 = new int[4096];
-    private final float[] aFloatArray1677;
-    private final int anInt1678;
+    private boolean useExternalRenderer = false;
+    int[] lineOffsets = new int[4096];
+    private final float[] depthBuffer;
+    private final int rasterWidth;
     int width;
     private final boolean aBoolean1680;
     private float aFloat1681;
     private float aFloat1682;
-    private int anInt1683;
+    private int textureAlphaBlendMode;
     private float aFloat1684;
     private int[] anIntArray1685;
     private int anInt1686;
     private final int anInt1687;
     private int anInt1688;
     private final int anInt1689;
-    private int anInt1690;
+    private int textureLastIndex;
     private int anInt1691;
     private int[] anIntArray1692;
-    private int anInt1693;
-    private boolean aBoolean1694;
+    private int textureSize;
+    private boolean repeatTexture;
     private int anInt1695;
     private int anInt1696;
     private final int anInt1697;
-    private int[] anIntArray1698;
+    private int[] texturePixels;
 
-    private final void method1016(int[] is, int[] is_0_, int i, int i_1_, int i_2_, float f, float f_3_, float f_4_, float f_5_, float f_6_, float f_7_, float f_8_, float f_9_, float f_10_, float f_11_, float f_12_, float f_13_, float f_14_, float f_15_, float f_16_, float f_17_) {
+    // method1016
+    private final void drawTexturedScanline(int[] is, int[] is_0_, int i, int i_1_, int i_2_, float f, float f_3_, float f_4_, float f_5_, float f_6_, float f_7_, float f_8_, float f_9_, float f_10_, float f_11_, float f_12_, float f_13_, float f_14_, float f_15_, float f_16_, float f_17_) {
         int i_18_ = i_2_ - i_1_;
         float f_19_ = 1.0F / (float) i_18_;
         float f_20_ = (f_3_ - f) * f_19_;
@@ -50,7 +51,7 @@ final class Rasterizer {
         float f_25_ = (f_13_ - f_12_) * f_19_;
         float f_26_ = (f_15_ - f_14_) * f_19_;
         float f_27_ = (f_17_ - f_16_) * f_19_;
-        if (this.aBoolean1671) {
+        if (this.restrictEdges) {
             if (i_2_ > this.width) i_2_ = this.width;
             if (i_1_ < 0) {
                 f -= f_20_ * (float) i_1_;
@@ -69,19 +70,19 @@ final class Rasterizer {
             i += i_1_;
             while (i_18_-- > 0) {
                 float f_28_ = 1.0F / f;
-                if (f_28_ < aFloatArray1677[i]) {
-                    int i_29_ = (int) (f_4_ * f_28_ * (float) anInt1693);
-                    if (aBoolean1694) i_29_ &= anInt1690;
+                if (f_28_ < depthBuffer[i]) {
+                    int i_29_ = (int) (f_4_ * f_28_ * (float) textureSize);
+                    if (repeatTexture) i_29_ &= textureLastIndex;
                     else if (i_29_ < 0) i_29_ = 0;
-                    else if (i_29_ > anInt1690) i_29_ = anInt1690;
-                    int i_30_ = (int) (f_6_ * f_28_ * (float) anInt1693);
-                    if (aBoolean1694) i_30_ &= anInt1690;
+                    else if (i_29_ > textureLastIndex) i_29_ = textureLastIndex;
+                    int i_30_ = (int) (f_6_ * f_28_ * (float) textureSize);
+                    if (repeatTexture) i_30_ &= textureLastIndex;
                     else if (i_30_ < 0) i_30_ = 0;
-                    else if (i_30_ > anInt1690) i_30_ = anInt1690;
-                    int i_31_ = anIntArray1698[i_30_ * anInt1693 + i_29_];
+                    else if (i_30_ > textureLastIndex) i_30_ = textureLastIndex;
+                    int i_31_ = texturePixels[i_30_ * textureSize + i_29_];
                     int i_32_ = 255;
-                    if (anInt1683 == 2) i_32_ = i_31_ >> 24 & 0xff;
-                    else if (anInt1683 == 1) i_32_ = i_31_ == 0 ? 0 : 255;
+                    if (textureAlphaBlendMode == 2) i_32_ = i_31_ >> 24 & 0xff;
+                    else if (textureAlphaBlendMode == 1) i_32_ = i_31_ == 0 ? 0 : 255;
                     else i_32_ = (int) f_10_;
                     if (i_32_ != 0) {
                         if (i_32_ == 255) {
@@ -92,7 +93,7 @@ final class Rasterizer {
                                 i_38_ = (((i_38_ & 0xff00ff) * i_39_ & ~0xff00ff | (i_38_ & 0xff00) * i_39_ & 0xff0000) >>> 8) + i_40_;
                             }
                             is[i] = i_38_;
-                            aFloatArray1677[i] = f_28_;
+                            depthBuffer[i] = f_28_;
                         } else {
                             int i_33_ = (~0xffffff | ((int) (f_12_ * (float) (i_31_ >> 16 & 0xff)) << 8 & 0xff0000) | (int) (f_14_ * (float) (i_31_ >> 8 & 0xff)) & 0xff00 | ((int) (f_16_ * (float) (i_31_ & 0xff)) >> 8));
                             if (f_8_ != 0.0F) {
@@ -104,7 +105,7 @@ final class Rasterizer {
                             int i_37_ = 255 - i_32_;
                             i_33_ = ((((i_36_ & 0xff00ff) * i_37_ + (i_33_ & 0xff00ff) * i_32_) & ~0xff00ff) + (((i_36_ & 0xff00) * i_37_ + (i_33_ & 0xff00) * i_32_) & 0xff0000)) >> 8;
                             is[i] = i_33_;
-                            aFloatArray1677[i] = f_28_;
+                            depthBuffer[i] = f_28_;
                         }
                     }
                 }
@@ -122,341 +123,342 @@ final class Rasterizer {
     }
 
     final int method1017() {
-        return this.anIntArray1676[0] / anInt1678;
+        return this.lineOffsets[0] / rasterWidth;
     }
 
-    final void method1018(float f, float f_41_, float f_42_, float f_43_, float f_44_, float f_45_, float f_46_, float f_47_, float f_48_, int i) {
-        if (aBoolean1675) {
-            aHa_Sub1_1666.method3645((int) f, (int) f_43_, (int) f_44_, -8003, i, (int) f_41_);
-            aHa_Sub1_1666.method3645((int) f_41_, (int) f_44_, (int) f_45_, -8003, i, (int) f_42_);
-            aHa_Sub1_1666.method3645((int) f_42_, (int) f_45_, (int) f_43_, -8003, i, (int) f);
+    // method1018
+    final void drawColouredTriangle(float yA, float yB, float yC, float xA, float xB, float xC, float zA, float zB, float zC, int colour) {
+        if (useExternalRenderer) {
+            aJavaToolkit_1666.method3645((int) yA, (int) xA, (int) xB, -8003, colour, (int) yB);
+            aJavaToolkit_1666.method3645((int) yB, (int) xB, (int) xC, -8003, colour, (int) yC);
+            aJavaToolkit_1666.method3645((int) yC, (int) xC, (int) xA, -8003, colour, (int) yA);
         } else {
-            float f_49_ = f_44_ - f_43_;
-            float f_50_ = f_41_ - f;
-            float f_51_ = f_45_ - f_43_;
-            float f_52_ = f_42_ - f;
-            float f_53_ = f_47_ - f_46_;
-            float f_54_ = f_48_ - f_46_;
-            float f_55_ = 0.0F;
-            if (f_41_ != f) f_55_ = (f_44_ - f_43_) / (f_41_ - f);
-            float f_56_ = 0.0F;
-            if (f_42_ != f_41_) f_56_ = (f_45_ - f_44_) / (f_42_ - f_41_);
-            float f_57_ = 0.0F;
-            if (f_42_ != f) f_57_ = (f_43_ - f_45_) / (f - f_42_);
-            float f_58_ = f_49_ * f_52_ - f_51_ * f_50_;
-            if (f_58_ != 0.0F) {
-                float f_59_ = (f_53_ * f_52_ - f_54_ * f_50_) / f_58_;
-                float f_60_ = (f_54_ * f_49_ - f_53_ * f_51_) / f_58_;
-                if (f <= f_41_ && f <= f_42_) {
-                    if (!(f >= (float) this.anInt1672)) {
-                        if (f_41_ > (float) this.anInt1672) f_41_ = (float) this.anInt1672;
-                        if (f_42_ > (float) this.anInt1672) f_42_ = (float) this.anInt1672;
-                        f_46_ = f_46_ - f_59_ * f_43_ + f_59_;
-                        if (f_41_ < f_42_) {
-                            f_45_ = f_43_;
-                            if (f < 0.0F) {
-                                f_45_ -= f_57_ * f;
-                                f_43_ -= f_55_ * f;
-                                f_46_ -= f_60_ * f;
-                                f = 0.0F;
+            float baX = xB - xA;
+            float baY = yB - yA;
+            float caX = xC - xA;
+            float caY = yC - yA;
+            float baZ = zB - zA;
+            float caZ = zC - zA;
+            float aToB = 0.0F;
+            if (yB != yA) aToB = (xB - xA) / (yB - yA);
+            float bToC = 0.0F;
+            if (yC != yB) bToC = (xC - xB) / (yC - yB);
+            float cToA = 0.0F;
+            if (yC != yA) cToA = (xA - xC) / (yA - yC);
+            float div = baX * caY - caX * baY;
+            if (div != 0.0F) {
+                float depthSlope = (baZ * caY - caZ * baY) / div;
+                float depth_increment = (caZ * baX - baZ * caX) / div;
+                if (yA <= yB && yA <= yC) {
+                    if (!(yA >= (float) this.height)) {
+                        if (yB > (float) this.height) yB = (float) this.height;
+                        if (yC > (float) this.height) yC = (float) this.height;
+                        zA = zA - depthSlope * xA + depthSlope;
+                        if (yB < yC) {
+                            xC = xA;
+                            if (yA < 0.0F) {
+                                xC -= cToA * yA;
+                                xA -= aToB * yA;
+                                zA -= depth_increment * yA;
+                                yA = 0.0F;
                             }
-                            if (f_41_ < 0.0F) {
-                                f_44_ -= f_56_ * f_41_;
-                                f_41_ = 0.0F;
+                            if (yB < 0.0F) {
+                                xB -= bToC * yB;
+                                yB = 0.0F;
                             }
-                            if (f != f_41_ && f_57_ < f_55_ || f == f_41_ && f_57_ > f_56_) {
-                                f_42_ -= f_41_;
-                                f_41_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
-                                while (--f_41_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_45_, (int) f_43_, f_46_, f_59_);
-                                    f_45_ += f_57_;
-                                    f_43_ += f_55_;
-                                    f_46_ += f_60_;
-                                    f += (float) anInt1678;
+                            if (yA != yB && cToA < aToB || yA == yB && cToA > bToC) {
+                                yC -= yB;
+                                yB -= yA;
+                                yA = (float) (this.lineOffsets[(int) yA]);
+                                while (--yB >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yA, colour, 0, (int) xC, (int) xA, zA, depthSlope);
+                                    xC += cToA;
+                                    xA += aToB;
+                                    zA += depth_increment;
+                                    yA += (float) rasterWidth;
                                 }
-                                while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_45_, (int) f_44_, f_46_, f_59_);
-                                    f_45_ += f_57_;
-                                    f_44_ += f_56_;
-                                    f_46_ += f_60_;
-                                    f += (float) anInt1678;
+                                while (--yC >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yA, colour, 0, (int) xC, (int) xB, zA, depthSlope);
+                                    xC += cToA;
+                                    xB += bToC;
+                                    zA += depth_increment;
+                                    yA += (float) rasterWidth;
                                 }
                             } else {
-                                f_42_ -= f_41_;
-                                f_41_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
-                                while (--f_41_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_43_, (int) f_45_, f_46_, f_59_);
-                                    f_45_ += f_57_;
-                                    f_43_ += f_55_;
-                                    f_46_ += f_60_;
-                                    f += (float) anInt1678;
+                                yC -= yB;
+                                yB -= yA;
+                                yA = (float) (this.lineOffsets[(int) yA]);
+                                while (--yB >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yA, colour, 0, (int) xA, (int) xC, zA, depthSlope);
+                                    xC += cToA;
+                                    xA += aToB;
+                                    zA += depth_increment;
+                                    yA += (float) rasterWidth;
                                 }
-                                while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_44_, (int) f_45_, f_46_, f_59_);
-                                    f_45_ += f_57_;
-                                    f_44_ += f_56_;
-                                    f_46_ += f_60_;
-                                    f += (float) anInt1678;
+                                while (--yC >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yA, colour, 0, (int) xB, (int) xC, zA, depthSlope);
+                                    xC += cToA;
+                                    xB += bToC;
+                                    zA += depth_increment;
+                                    yA += (float) rasterWidth;
                                 }
                             }
                         } else {
-                            f_44_ = f_43_;
-                            if (f < 0.0F) {
-                                f_44_ -= f_57_ * f;
-                                f_43_ -= f_55_ * f;
-                                f_46_ -= f_60_ * f;
-                                f = 0.0F;
+                            xB = xA;
+                            if (yA < 0.0F) {
+                                xB -= cToA * yA;
+                                xA -= aToB * yA;
+                                zA -= depth_increment * yA;
+                                yA = 0.0F;
                             }
-                            if (f_42_ < 0.0F) {
-                                f_45_ -= f_56_ * f_42_;
-                                f_42_ = 0.0F;
+                            if (yC < 0.0F) {
+                                xC -= bToC * yC;
+                                yC = 0.0F;
                             }
-                            if (f != f_42_ && f_57_ < f_55_ || f == f_42_ && f_56_ > f_55_) {
-                                f_41_ -= f_42_;
-                                f_42_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
-                                while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_44_, (int) f_43_, f_46_, f_59_);
-                                    f_44_ += f_57_;
-                                    f_43_ += f_55_;
-                                    f_46_ += f_60_;
-                                    f += (float) anInt1678;
+                            if (yA != yC && cToA < aToB || yA == yC && bToC > aToB) {
+                                yB -= yC;
+                                yC -= yA;
+                                yA = (float) (this.lineOffsets[(int) yA]);
+                                while (--yC >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yA, colour, 0, (int) xB, (int) xA, zA, depthSlope);
+                                    xB += cToA;
+                                    xA += aToB;
+                                    zA += depth_increment;
+                                    yA += (float) rasterWidth;
                                 }
-                                while (--f_41_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_45_, (int) f_43_, f_46_, f_59_);
-                                    f_45_ += f_56_;
-                                    f_43_ += f_55_;
-                                    f_46_ += f_60_;
-                                    f += (float) anInt1678;
+                                while (--yB >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yA, colour, 0, (int) xC, (int) xA, zA, depthSlope);
+                                    xC += bToC;
+                                    xA += aToB;
+                                    zA += depth_increment;
+                                    yA += (float) rasterWidth;
                                 }
                             } else {
-                                f_41_ -= f_42_;
-                                f_42_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
-                                while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_43_, (int) f_44_, f_46_, f_59_);
-                                    f_44_ += f_57_;
-                                    f_43_ += f_55_;
-                                    f_46_ += f_60_;
-                                    f += (float) anInt1678;
+                                yB -= yC;
+                                yC -= yA;
+                                yA = (float) (this.lineOffsets[(int) yA]);
+                                while (--yC >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yA, colour, 0, (int) xA, (int) xB, zA, depthSlope);
+                                    xB += cToA;
+                                    xA += aToB;
+                                    zA += depth_increment;
+                                    yA += (float) rasterWidth;
                                 }
-                                while (--f_41_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f, i, 0, (int) f_43_, (int) f_45_, f_46_, f_59_);
-                                    f_45_ += f_56_;
-                                    f_43_ += f_55_;
-                                    f_46_ += f_60_;
-                                    f += (float) anInt1678;
+                                while (--yB >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yA, colour, 0, (int) xA, (int) xC, zA, depthSlope);
+                                    xC += bToC;
+                                    xA += aToB;
+                                    zA += depth_increment;
+                                    yA += (float) rasterWidth;
                                 }
                             }
                         }
                     }
-                } else if (f_41_ <= f_42_) {
-                    if (!(f_41_ >= (float) this.anInt1672)) {
-                        if (f_42_ > (float) this.anInt1672) f_42_ = (float) this.anInt1672;
-                        if (f > (float) this.anInt1672) f = (float) this.anInt1672;
-                        f_47_ = f_47_ - f_59_ * f_44_ + f_59_;
-                        if (f_42_ < f) {
-                            f_43_ = f_44_;
-                            if (f_41_ < 0.0F) {
-                                f_43_ -= f_55_ * f_41_;
-                                f_44_ -= f_56_ * f_41_;
-                                f_47_ -= f_60_ * f_41_;
-                                f_41_ = 0.0F;
+                } else if (yB <= yC) {
+                    if (!(yB >= (float) this.height)) {
+                        if (yC > (float) this.height) yC = (float) this.height;
+                        if (yA > (float) this.height) yA = (float) this.height;
+                        zB = zB - depthSlope * xB + depthSlope;
+                        if (yC < yA) {
+                            xA = xB;
+                            if (yB < 0.0F) {
+                                xA -= aToB * yB;
+                                xB -= bToC * yB;
+                                zB -= depth_increment * yB;
+                                yB = 0.0F;
                             }
-                            if (f_42_ < 0.0F) {
-                                f_45_ -= f_57_ * f_42_;
-                                f_42_ = 0.0F;
+                            if (yC < 0.0F) {
+                                xC -= cToA * yC;
+                                yC = 0.0F;
                             }
-                            if (f_41_ != f_42_ && f_55_ < f_56_ || f_41_ == f_42_ && f_55_ > f_57_) {
-                                f -= f_42_;
-                                f_42_ -= f_41_;
-                                f_41_ = (float) (this.anIntArray1676[(int) f_41_]);
-                                while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_43_, (int) f_44_, f_47_, f_59_);
-                                    f_43_ += f_55_;
-                                    f_44_ += f_56_;
-                                    f_47_ += f_60_;
-                                    f_41_ += (float) anInt1678;
+                            if (yB != yC && aToB < bToC || yB == yC && aToB > cToA) {
+                                yA -= yC;
+                                yC -= yB;
+                                yB = (float) (this.lineOffsets[(int) yB]);
+                                while (--yC >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yB, colour, 0, (int) xA, (int) xB, zB, depthSlope);
+                                    xA += aToB;
+                                    xB += bToC;
+                                    zB += depth_increment;
+                                    yB += (float) rasterWidth;
                                 }
-                                while (--f >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_43_, (int) f_45_, f_47_, f_59_);
-                                    f_43_ += f_55_;
-                                    f_45_ += f_57_;
-                                    f_47_ += f_60_;
-                                    f_41_ += (float) anInt1678;
+                                while (--yA >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yB, colour, 0, (int) xA, (int) xC, zB, depthSlope);
+                                    xA += aToB;
+                                    xC += cToA;
+                                    zB += depth_increment;
+                                    yB += (float) rasterWidth;
                                 }
                             } else {
-                                f -= f_42_;
-                                f_42_ -= f_41_;
-                                f_41_ = (float) (this.anIntArray1676[(int) f_41_]);
-                                while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_44_, (int) f_43_, f_47_, f_59_);
-                                    f_43_ += f_55_;
-                                    f_44_ += f_56_;
-                                    f_47_ += f_60_;
-                                    f_41_ += (float) anInt1678;
+                                yA -= yC;
+                                yC -= yB;
+                                yB = (float) (this.lineOffsets[(int) yB]);
+                                while (--yC >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yB, colour, 0, (int) xB, (int) xA, zB, depthSlope);
+                                    xA += aToB;
+                                    xB += bToC;
+                                    zB += depth_increment;
+                                    yB += (float) rasterWidth;
                                 }
-                                while (--f >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_45_, (int) f_43_, f_47_, f_59_);
-                                    f_43_ += f_55_;
-                                    f_45_ += f_57_;
-                                    f_47_ += f_60_;
-                                    f_41_ += (float) anInt1678;
+                                while (--yA >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yB, colour, 0, (int) xC, (int) xA, zB, depthSlope);
+                                    xA += aToB;
+                                    xC += cToA;
+                                    zB += depth_increment;
+                                    yB += (float) rasterWidth;
                                 }
                             }
                         } else {
-                            f_45_ = f_44_;
-                            if (f_41_ < 0.0F) {
-                                f_45_ -= f_55_ * f_41_;
-                                f_44_ -= f_56_ * f_41_;
-                                f_47_ -= f_60_ * f_41_;
-                                f_41_ = 0.0F;
+                            xC = xB;
+                            if (yB < 0.0F) {
+                                xC -= aToB * yB;
+                                xB -= bToC * yB;
+                                zB -= depth_increment * yB;
+                                yB = 0.0F;
                             }
-                            if (f < 0.0F) {
-                                f_43_ -= f_57_ * f;
-                                f = 0.0F;
+                            if (yA < 0.0F) {
+                                xA -= cToA * yA;
+                                yA = 0.0F;
                             }
-                            if (f_55_ < f_56_) {
-                                f_42_ -= f;
-                                f -= f_41_;
-                                f_41_ = (float) (this.anIntArray1676[(int) f_41_]);
-                                while (--f >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_45_, (int) f_44_, f_47_, f_59_);
-                                    f_45_ += f_55_;
-                                    f_44_ += f_56_;
-                                    f_47_ += f_60_;
-                                    f_41_ += (float) anInt1678;
+                            if (aToB < bToC) {
+                                yC -= yA;
+                                yA -= yB;
+                                yB = (float) (this.lineOffsets[(int) yB]);
+                                while (--yA >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yB, colour, 0, (int) xC, (int) xB, zB, depthSlope);
+                                    xC += aToB;
+                                    xB += bToC;
+                                    zB += depth_increment;
+                                    yB += (float) rasterWidth;
                                 }
-                                while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_43_, (int) f_44_, f_47_, f_59_);
-                                    f_43_ += f_57_;
-                                    f_44_ += f_56_;
-                                    f_47_ += f_60_;
-                                    f_41_ += (float) anInt1678;
+                                while (--yC >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yB, colour, 0, (int) xA, (int) xB, zB, depthSlope);
+                                    xA += cToA;
+                                    xB += bToC;
+                                    zB += depth_increment;
+                                    yB += (float) rasterWidth;
                                 }
                             } else {
-                                f_42_ -= f;
-                                f -= f_41_;
-                                f_41_ = (float) (this.anIntArray1676[(int) f_41_]);
-                                while (--f >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_44_, (int) f_45_, f_47_, f_59_);
-                                    f_45_ += f_55_;
-                                    f_44_ += f_56_;
-                                    f_47_ += f_60_;
-                                    f_41_ += (float) anInt1678;
+                                yC -= yA;
+                                yA -= yB;
+                                yB = (float) (this.lineOffsets[(int) yB]);
+                                while (--yA >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yB, colour, 0, (int) xB, (int) xC, zB, depthSlope);
+                                    xC += aToB;
+                                    xB += bToC;
+                                    zB += depth_increment;
+                                    yB += (float) rasterWidth;
                                 }
-                                while (--f_42_ >= 0.0F) {
-                                    method1026(anIntArray1673, aFloatArray1677, (int) f_41_, i, 0, (int) f_44_, (int) f_43_, f_47_, f_59_);
-                                    f_43_ += f_57_;
-                                    f_44_ += f_56_;
-                                    f_47_ += f_60_;
-                                    f_41_ += (float) anInt1678;
+                                while (--yC >= 0.0F) {
+                                    drawFlatScanLine(raster, depthBuffer, (int) yB, colour, 0, (int) xB, (int) xA, zB, depthSlope);
+                                    xA += cToA;
+                                    xB += bToC;
+                                    zB += depth_increment;
+                                    yB += (float) rasterWidth;
                                 }
                             }
                         }
                     }
-                } else if (!(f_42_ >= (float) this.anInt1672)) {
-                    if (f > (float) this.anInt1672) f = (float) this.anInt1672;
-                    if (f_41_ > (float) this.anInt1672) f_41_ = (float) this.anInt1672;
-                    f_48_ = f_48_ - f_59_ * f_45_ + f_59_;
-                    if (f < f_41_) {
-                        f_44_ = f_45_;
-                        if (f_42_ < 0.0F) {
-                            f_44_ -= f_56_ * f_42_;
-                            f_45_ -= f_57_ * f_42_;
-                            f_48_ -= f_60_ * f_42_;
-                            f_42_ = 0.0F;
+                } else if (!(yC >= (float) this.height)) {
+                    if (yA > (float) this.height) yA = (float) this.height;
+                    if (yB > (float) this.height) yB = (float) this.height;
+                    zC = zC - depthSlope * xC + depthSlope;
+                    if (yA < yB) {
+                        xB = xC;
+                        if (yC < 0.0F) {
+                            xB -= bToC * yC;
+                            xC -= cToA * yC;
+                            zC -= depth_increment * yC;
+                            yC = 0.0F;
                         }
-                        if (f < 0.0F) {
-                            f_43_ -= f_55_ * f;
-                            f = 0.0F;
+                        if (yA < 0.0F) {
+                            xA -= aToB * yA;
+                            yA = 0.0F;
                         }
-                        if (f_56_ < f_57_) {
-                            f_41_ -= f;
-                            f -= f_42_;
-                            f_42_ = (float) (this.anIntArray1676[(int) f_42_]);
-                            while (--f >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_44_, (int) f_45_, f_48_, f_59_);
-                                f_44_ += f_56_;
-                                f_45_ += f_57_;
-                                f_48_ += f_60_;
-                                f_42_ += (float) anInt1678;
+                        if (bToC < cToA) {
+                            yB -= yA;
+                            yA -= yC;
+                            yC = (float) (this.lineOffsets[(int) yC]);
+                            while (--yA >= 0.0F) {
+                                drawFlatScanLine(raster, depthBuffer, (int) yC, colour, 0, (int) xB, (int) xC, zC, depthSlope);
+                                xB += bToC;
+                                xC += cToA;
+                                zC += depth_increment;
+                                yC += (float) rasterWidth;
                             }
-                            while (--f_41_ >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_44_, (int) f_43_, f_48_, f_59_);
-                                f_44_ += f_56_;
-                                f_43_ += f_55_;
-                                f_48_ += f_60_;
-                                f_42_ += (float) anInt1678;
+                            while (--yB >= 0.0F) {
+                                drawFlatScanLine(raster, depthBuffer, (int) yC, colour, 0, (int) xB, (int) xA, zC, depthSlope);
+                                xB += bToC;
+                                xA += aToB;
+                                zC += depth_increment;
+                                yC += (float) rasterWidth;
                             }
                         } else {
-                            f_41_ -= f;
-                            f -= f_42_;
-                            f_42_ = (float) (this.anIntArray1676[(int) f_42_]);
-                            while (--f >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_45_, (int) f_44_, f_48_, f_59_);
-                                f_44_ += f_56_;
-                                f_45_ += f_57_;
-                                f_48_ += f_60_;
-                                f_42_ += (float) anInt1678;
+                            yB -= yA;
+                            yA -= yC;
+                            yC = (float) (this.lineOffsets[(int) yC]);
+                            while (--yA >= 0.0F) {
+                                drawFlatScanLine(raster, depthBuffer, (int) yC, colour, 0, (int) xC, (int) xB, zC, depthSlope);
+                                xB += bToC;
+                                xC += cToA;
+                                zC += depth_increment;
+                                yC += (float) rasterWidth;
                             }
-                            while (--f_41_ >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_43_, (int) f_44_, f_48_, f_59_);
-                                f_44_ += f_56_;
-                                f_43_ += f_55_;
-                                f_48_ += f_60_;
-                                f_42_ += (float) anInt1678;
+                            while (--yB >= 0.0F) {
+                                drawFlatScanLine(raster, depthBuffer, (int) yC, colour, 0, (int) xA, (int) xB, zC, depthSlope);
+                                xB += bToC;
+                                xA += aToB;
+                                zC += depth_increment;
+                                yC += (float) rasterWidth;
                             }
                         }
                     } else {
-                        f_43_ = f_45_;
-                        if (f_42_ < 0.0F) {
-                            f_43_ -= f_56_ * f_42_;
-                            f_45_ -= f_57_ * f_42_;
-                            f_48_ -= f_60_ * f_42_;
-                            f_42_ = 0.0F;
+                        xA = xC;
+                        if (yC < 0.0F) {
+                            xA -= bToC * yC;
+                            xC -= cToA * yC;
+                            zC -= depth_increment * yC;
+                            yC = 0.0F;
                         }
-                        if (f_41_ < 0.0F) {
-                            f_44_ -= f_55_ * f_41_;
-                            f_41_ = 0.0F;
+                        if (yB < 0.0F) {
+                            xB -= aToB * yB;
+                            yB = 0.0F;
                         }
-                        if (f_56_ < f_57_) {
-                            f -= f_41_;
-                            f_41_ -= f_42_;
-                            f_42_ = (float) (this.anIntArray1676[(int) f_42_]);
-                            while (--f_41_ >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_43_, (int) f_45_, f_48_, f_59_);
-                                f_43_ += f_56_;
-                                f_45_ += f_57_;
-                                f_48_ += f_60_;
-                                f_42_ += (float) anInt1678;
+                        if (bToC < cToA) {
+                            yA -= yB;
+                            yB -= yC;
+                            yC = (float) (this.lineOffsets[(int) yC]);
+                            while (--yB >= 0.0F) {
+                                drawFlatScanLine(raster, depthBuffer, (int) yC, colour, 0, (int) xA, (int) xC, zC, depthSlope);
+                                xA += bToC;
+                                xC += cToA;
+                                zC += depth_increment;
+                                yC += (float) rasterWidth;
                             }
-                            while (--f >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_44_, (int) f_45_, f_48_, f_59_);
-                                f_44_ += f_55_;
-                                f_45_ += f_57_;
-                                f_48_ += f_60_;
-                                f_42_ += (float) anInt1678;
+                            while (--yA >= 0.0F) {
+                                drawFlatScanLine(raster, depthBuffer, (int) yC, colour, 0, (int) xB, (int) xC, zC, depthSlope);
+                                xB += aToB;
+                                xC += cToA;
+                                zC += depth_increment;
+                                yC += (float) rasterWidth;
                             }
                         } else {
-                            f -= f_41_;
-                            f_41_ -= f_42_;
-                            f_42_ = (float) (this.anIntArray1676[(int) f_42_]);
-                            while (--f_41_ >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_45_, (int) f_43_, f_48_, f_59_);
-                                f_43_ += f_56_;
-                                f_45_ += f_57_;
-                                f_48_ += f_60_;
-                                f_42_ += (float) anInt1678;
+                            yA -= yB;
+                            yB -= yC;
+                            yC = (float) (this.lineOffsets[(int) yC]);
+                            while (--yB >= 0.0F) {
+                                drawFlatScanLine(raster, depthBuffer, (int) yC, colour, 0, (int) xC, (int) xA, zC, depthSlope);
+                                xA += bToC;
+                                xC += cToA;
+                                zC += depth_increment;
+                                yC += (float) rasterWidth;
                             }
-                            while (--f >= 0.0F) {
-                                method1026(anIntArray1673, aFloatArray1677, (int) f_42_, i, 0, (int) f_45_, (int) f_44_, f_48_, f_59_);
-                                f_44_ += f_55_;
-                                f_45_ += f_57_;
-                                f_48_ += f_60_;
-                                f_42_ += (float) anInt1678;
+                            while (--yA >= 0.0F) {
+                                drawFlatScanLine(raster, depthBuffer, (int) yC, colour, 0, (int) xC, (int) xB, zC, depthSlope);
+                                xB += aToB;
+                                xC += cToA;
+                                zC += depth_increment;
+                                yC += (float) rasterWidth;
                             }
                         }
                     }
@@ -465,8 +467,9 @@ final class Rasterizer {
         }
     }
 
-    private final void method1019(int[] is, float[] fs, int i, int i_61_, int i_62_, int i_63_, int i_64_, float f, float f_65_, float f_66_, float f_67_) {
-        if (this.aBoolean1671) {
+    // method1019
+    private final void drawGoraudScanline(int[] is, float[] fs, int i, int i_61_, int i_62_, int i_63_, int i_64_, float f, float f_65_, float f_66_, float f_67_) {
+        if (this.restrictEdges) {
             if (i_64_ > this.width) i_64_ = this.width;
             if (i_63_ < 0) i_63_ = 0;
         }
@@ -692,33 +695,33 @@ final class Rasterizer {
 
     final void method1020(float f, float f_88_, float f_89_, float f_90_, float f_91_, float f_92_, float f_93_, float f_94_, float f_95_, float f_96_, float f_97_, float f_98_, float f_99_, float f_100_, float f_101_, int i, int i_102_, int i_103_, int i_104_, int i_105_, int i_106_, int i_107_, int i_108_, float f_109_, int i_110_, float f_111_, int i_112_, float f_113_) {
         if (i_108_ != anInt1697) {
-            anIntArray1698 = aHa_Sub1_1666.method3718(i_108_);
-            if (anIntArray1698 == null) {
-                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, JavaBillboardFace.method206(i, i_104_ | i_105_ << 24, 255), JavaBillboardFace.method206(i_102_, i_104_ | i_106_ << 24, 255), JavaBillboardFace.method206(i_103_, i_104_ | i_107_ << 24, 255));
+            texturePixels = aJavaToolkit_1666.method3718(i_108_);
+            if (texturePixels == null) {
+                renderTriangleRgb((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, JavaBillboardFace.method206(i, i_104_ | i_105_ << 24, 255), JavaBillboardFace.method206(i_102_, i_104_ | i_106_ << 24, 255), JavaBillboardFace.method206(i_103_, i_104_ | i_107_ << 24, 255));
                 return;
             }
-            anInt1693 = (aHa_Sub1_1666.method3727(i_108_) ? 64 : aHa_Sub1_1666.anInt7501);
-            anInt1690 = anInt1693 - 1;
-            anInt1683 = aHa_Sub1_1666.method3726(i_108_);
+            textureSize = (aJavaToolkit_1666.smallTexture(i_108_) ? 64 : aJavaToolkit_1666.textureSize);
+            textureLastIndex = textureSize - 1;
+            textureAlphaBlendMode = aJavaToolkit_1666.textureAlphaBlendMode(i_108_);
         }
         aFloat1681 = f_109_;
         if (i_110_ != anInt1689) {
-            anIntArray1685 = aHa_Sub1_1666.method3718(i_110_);
+            anIntArray1685 = aJavaToolkit_1666.method3718(i_110_);
             if (anIntArray1685 == null) {
-                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, JavaBillboardFace.method206(i, i_104_ | i_105_ << 24, 255), JavaBillboardFace.method206(i_102_, i_104_ | i_106_ << 24, 255), JavaBillboardFace.method206(i_103_, i_104_ | i_107_ << 24, 255));
+                renderTriangleRgb((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, JavaBillboardFace.method206(i, i_104_ | i_105_ << 24, 255), JavaBillboardFace.method206(i_102_, i_104_ | i_106_ << 24, 255), JavaBillboardFace.method206(i_103_, i_104_ | i_107_ << 24, 255));
                 return;
             }
-            anInt1691 = (aHa_Sub1_1666.method3727(i_110_) ? 64 : aHa_Sub1_1666.anInt7501);
+            anInt1691 = (aJavaToolkit_1666.smallTexture(i_110_) ? 64 : aJavaToolkit_1666.textureSize);
             anInt1686 = anInt1691 - 1;
         }
         aFloat1684 = f_111_;
         if (i_112_ != anInt1687) {
-            anIntArray1692 = aHa_Sub1_1666.method3718(i_112_);
+            anIntArray1692 = aJavaToolkit_1666.method3718(i_112_);
             if (anIntArray1692 == null) {
-                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, JavaBillboardFace.method206(i, i_104_ | i_105_ << 24, 255), JavaBillboardFace.method206(i_102_, i_104_ | i_106_ << 24, 255), JavaBillboardFace.method206(i_103_, i_104_ | i_107_ << 24, 255));
+                renderTriangleRgb((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, JavaBillboardFace.method206(i, i_104_ | i_105_ << 24, 255), JavaBillboardFace.method206(i_102_, i_104_ | i_106_ << 24, 255), JavaBillboardFace.method206(i_103_, i_104_ | i_107_ << 24, 255));
                 return;
             }
-            anInt1695 = (aHa_Sub1_1666.method3727(i_112_) ? 64 : aHa_Sub1_1666.anInt7501);
+            anInt1695 = (aJavaToolkit_1666.smallTexture(i_112_) ? 64 : aJavaToolkit_1666.textureSize);
             anInt1688 = anInt1695 - 1;
         }
         aFloat1682 = f_113_;
@@ -826,9 +829,9 @@ final class Rasterizer {
             f_166_ = (f_129_ - f_131_) / f_167_;
         }
         if (f <= f_88_ && f <= f_89_) {
-            if (!(f >= (float) this.anInt1672)) {
-                if (f_88_ > (float) this.anInt1672) f_88_ = (float) this.anInt1672;
-                if (f_89_ > (float) this.anInt1672) f_89_ = (float) this.anInt1672;
+            if (!(f >= (float) this.height)) {
+                if (f_88_ > (float) this.height) f_88_ = (float) this.height;
+                if (f_89_ > (float) this.height) f_89_ = (float) this.height;
                 if (f_88_ < f_89_) {
                     f_92_ = f_90_;
                     f_95_ = f_93_;
@@ -883,9 +886,9 @@ final class Rasterizer {
                     if (f != f_88_ && f_156_ < f_132_ || f == f_88_ && f_156_ > f_144_) {
                         f_89_ -= f_88_;
                         f_88_ -= f;
-                        f = (float) this.anIntArray1676[(int) f];
+                        f = (float) this.lineOffsets[(int) f];
                         while (--f_88_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
+                            method1025(raster, texturePixels, (int) f, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
                             f_90_ += f_132_;
                             f_92_ += f_156_;
                             f_93_ += f_133_;
@@ -908,10 +911,10 @@ final class Rasterizer {
                             f_128_ += f_165_;
                             f_129_ += f_142_;
                             f_131_ += f_142_;
-                            f += (float) anInt1678;
+                            f += (float) rasterWidth;
                         }
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
+                            method1025(raster, texturePixels, (int) f, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
                             f_91_ += f_144_;
                             f_92_ += f_156_;
                             f_94_ += f_145_;
@@ -934,14 +937,14 @@ final class Rasterizer {
                             f_128_ += f_165_;
                             f_130_ += f_154_;
                             f_131_ += f_166_;
-                            f += (float) anInt1678;
+                            f += (float) rasterWidth;
                         }
                     } else {
                         f_89_ -= f_88_;
                         f_88_ -= f;
-                        f = (float) this.anIntArray1676[(int) f];
+                        f = (float) this.lineOffsets[(int) f];
                         while (--f_88_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
+                            method1025(raster, texturePixels, (int) f, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
                             f_90_ += f_132_;
                             f_92_ += f_156_;
                             f_93_ += f_133_;
@@ -964,10 +967,10 @@ final class Rasterizer {
                             f_128_ += f_165_;
                             f_129_ += f_142_;
                             f_131_ += f_166_;
-                            f += (float) anInt1678;
+                            f += (float) rasterWidth;
                         }
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
+                            method1025(raster, texturePixels, (int) f, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
                             f_91_ += f_144_;
                             f_92_ += f_156_;
                             f_94_ += f_145_;
@@ -990,7 +993,7 @@ final class Rasterizer {
                             f_128_ += f_165_;
                             f_130_ += f_154_;
                             f_131_ += f_166_;
-                            f += (float) anInt1678;
+                            f += (float) rasterWidth;
                         }
                     }
                 } else {
@@ -1047,9 +1050,9 @@ final class Rasterizer {
                     if (f != f_89_ && f_156_ < f_132_ || f == f_89_ && f_144_ > f_132_) {
                         f_88_ -= f_89_;
                         f_89_ -= f;
-                        f = (float) this.anIntArray1676[(int) f];
+                        f = (float) this.lineOffsets[(int) f];
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
+                            method1025(raster, texturePixels, (int) f, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
                             f_90_ += f_132_;
                             f_91_ += f_156_;
                             f_93_ += f_133_;
@@ -1072,10 +1075,10 @@ final class Rasterizer {
                             f_127_ += f_165_;
                             f_129_ += f_142_;
                             f_130_ += f_166_;
-                            f += (float) anInt1678;
+                            f += (float) rasterWidth;
                         }
                         while (--f_88_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
+                            method1025(raster, texturePixels, (int) f, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
                             f_92_ += f_144_;
                             f_90_ += f_132_;
                             f_95_ += f_145_;
@@ -1098,14 +1101,14 @@ final class Rasterizer {
                             f_126_ += f_141_;
                             f_131_ += f_154_;
                             f_129_ += f_142_;
-                            f += (float) anInt1678;
+                            f += (float) rasterWidth;
                         }
                     } else {
                         f_88_ -= f_89_;
                         f_89_ -= f;
-                        f = (float) this.anIntArray1676[(int) f];
+                        f = (float) this.lineOffsets[(int) f];
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
+                            method1025(raster, texturePixels, (int) f, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
                             f_91_ += f_156_;
                             f_90_ += f_132_;
                             f_94_ += f_157_;
@@ -1128,10 +1131,10 @@ final class Rasterizer {
                             f_126_ += f_141_;
                             f_130_ += f_166_;
                             f_129_ += f_142_;
-                            f += (float) anInt1678;
+                            f += (float) rasterWidth;
                         }
                         while (--f_88_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
+                            method1025(raster, texturePixels, (int) f, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
                             f_90_ += f_132_;
                             f_92_ += f_144_;
                             f_93_ += f_133_;
@@ -1154,15 +1157,15 @@ final class Rasterizer {
                             f_128_ += f_153_;
                             f_129_ += f_142_;
                             f_131_ += f_154_;
-                            f += (float) anInt1678;
+                            f += (float) rasterWidth;
                         }
                     }
                 }
             }
         } else if (f_88_ <= f_89_) {
-            if (!(f_88_ >= (float) this.anInt1672)) {
-                if (f_89_ > (float) this.anInt1672) f_89_ = (float) this.anInt1672;
-                if (f > (float) this.anInt1672) f = (float) this.anInt1672;
+            if (!(f_88_ >= (float) this.height)) {
+                if (f_89_ > (float) this.height) f_89_ = (float) this.height;
+                if (f > (float) this.height) f = (float) this.height;
                 if (f_89_ < f) {
                     f_90_ = f_91_;
                     f_93_ = f_94_;
@@ -1217,9 +1220,9 @@ final class Rasterizer {
                     if (f_88_ != f_89_ && f_132_ < f_144_ || f_88_ == f_89_ && f_132_ > f_156_) {
                         f -= f_89_;
                         f_89_ -= f_88_;
-                        f_88_ = (float) (this.anIntArray1676[(int) f_88_]);
+                        f_88_ = (float) (this.lineOffsets[(int) f_88_]);
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
+                            method1025(raster, texturePixels, (int) f_88_, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
                             f_90_ += f_132_;
                             f_91_ += f_144_;
                             f_93_ += f_133_;
@@ -1242,10 +1245,10 @@ final class Rasterizer {
                             f_127_ += f_153_;
                             f_129_ += f_142_;
                             f_130_ += f_154_;
-                            f_88_ += (float) anInt1678;
+                            f_88_ += (float) rasterWidth;
                         }
                         while (--f >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
+                            method1025(raster, texturePixels, (int) f_88_, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
                             f_90_ += f_132_;
                             f_92_ += f_156_;
                             f_93_ += f_133_;
@@ -1268,14 +1271,14 @@ final class Rasterizer {
                             f_128_ += f_165_;
                             f_129_ += f_142_;
                             f_131_ += f_166_;
-                            f_88_ += (float) anInt1678;
+                            f_88_ += (float) rasterWidth;
                         }
                     } else {
                         f -= f_89_;
                         f_89_ -= f_88_;
-                        f_88_ = (float) (this.anIntArray1676[(int) f_88_]);
+                        f_88_ = (float) (this.lineOffsets[(int) f_88_]);
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
+                            method1025(raster, texturePixels, (int) f_88_, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
                             f_91_ += f_144_;
                             f_90_ += f_132_;
                             f_94_ += f_145_;
@@ -1298,10 +1301,10 @@ final class Rasterizer {
                             f_126_ += f_141_;
                             f_130_ += f_154_;
                             f_129_ += f_142_;
-                            f_88_ += (float) anInt1678;
+                            f_88_ += (float) rasterWidth;
                         }
                         while (--f >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
+                            method1025(raster, texturePixels, (int) f_88_, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
                             f_92_ += f_156_;
                             f_90_ += f_132_;
                             f_95_ += f_157_;
@@ -1324,7 +1327,7 @@ final class Rasterizer {
                             f_126_ += f_141_;
                             f_131_ += f_166_;
                             f_129_ += f_142_;
-                            f_88_ += (float) anInt1678;
+                            f_88_ += (float) rasterWidth;
                         }
                     }
                 } else {
@@ -1380,10 +1383,10 @@ final class Rasterizer {
                     }
                     f_89_ -= f;
                     f -= f_88_;
-                    f_88_ = (float) (this.anIntArray1676[(int) f_88_]);
+                    f_88_ = (float) (this.lineOffsets[(int) f_88_]);
                     if (f_132_ < f_144_) {
                         while (--f >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
+                            method1025(raster, texturePixels, (int) f_88_, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
                             f_92_ += f_132_;
                             f_91_ += f_144_;
                             f_95_ += f_133_;
@@ -1406,10 +1409,10 @@ final class Rasterizer {
                             f_127_ += f_153_;
                             f_131_ += f_142_;
                             f_130_ += f_154_;
-                            f_88_ += (float) anInt1678;
+                            f_88_ += (float) rasterWidth;
                         }
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
+                            method1025(raster, texturePixels, (int) f_88_, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
                             f_90_ += f_156_;
                             f_91_ += f_144_;
                             f_93_ += f_157_;
@@ -1432,11 +1435,11 @@ final class Rasterizer {
                             f_127_ += f_153_;
                             f_129_ += f_166_;
                             f_130_ += f_154_;
-                            f_88_ += (float) anInt1678;
+                            f_88_ += (float) rasterWidth;
                         }
                     } else {
                         while (--f >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
+                            method1025(raster, texturePixels, (int) f_88_, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
                             f_91_ += f_144_;
                             f_92_ += f_132_;
                             f_94_ += f_145_;
@@ -1459,10 +1462,10 @@ final class Rasterizer {
                             f_128_ += f_141_;
                             f_130_ += f_154_;
                             f_131_ += f_142_;
-                            f_88_ += (float) anInt1678;
+                            f_88_ += (float) rasterWidth;
                         }
                         while (--f_89_ >= 0.0F) {
-                            method1025(anIntArray1673, anIntArray1698, (int) f_88_, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
+                            method1025(raster, texturePixels, (int) f_88_, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
                             f_91_ += f_144_;
                             f_90_ += f_156_;
                             f_94_ += f_145_;
@@ -1485,14 +1488,14 @@ final class Rasterizer {
                             f_126_ += f_165_;
                             f_130_ += f_154_;
                             f_129_ += f_166_;
-                            f_88_ += (float) anInt1678;
+                            f_88_ += (float) rasterWidth;
                         }
                     }
                 }
             }
-        } else if (!(f_89_ >= (float) this.anInt1672)) {
-            if (f > (float) this.anInt1672) f = (float) this.anInt1672;
-            if (f_88_ > (float) this.anInt1672) f_88_ = (float) this.anInt1672;
+        } else if (!(f_89_ >= (float) this.height)) {
+            if (f > (float) this.height) f = (float) this.height;
+            if (f_88_ > (float) this.height) f_88_ = (float) this.height;
             if (f < f_88_) {
                 f_91_ = f_92_;
                 f_94_ = f_95_;
@@ -1547,9 +1550,9 @@ final class Rasterizer {
                 if (f_144_ < f_156_) {
                     f_88_ -= f;
                     f -= f_89_;
-                    f_89_ = (float) (this.anIntArray1676[(int) f_89_]);
+                    f_89_ = (float) (this.lineOffsets[(int) f_89_]);
                     while (--f >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
+                        method1025(raster, texturePixels, (int) f_89_, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
                         f_91_ += f_144_;
                         f_92_ += f_156_;
                         f_94_ += f_145_;
@@ -1572,10 +1575,10 @@ final class Rasterizer {
                         f_128_ += f_165_;
                         f_130_ += f_154_;
                         f_131_ += f_166_;
-                        f_89_ += (float) anInt1678;
+                        f_89_ += (float) rasterWidth;
                     }
                     while (--f_88_ >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
+                        method1025(raster, texturePixels, (int) f_89_, (int) f_91_, (int) f_90_, f_94_, f_93_, f_97_, f_96_, f_100_, f_99_, (float) i_106_, (float) i_105_, f_115_, f_114_, f_118_, f_117_, f_121_, f_120_, f_124_, f_123_, f_127_, f_126_, f_130_, f_129_);
                         f_91_ += f_144_;
                         f_90_ += f_132_;
                         f_94_ += f_145_;
@@ -1598,14 +1601,14 @@ final class Rasterizer {
                         f_126_ += f_141_;
                         f_130_ += f_154_;
                         f_129_ += f_142_;
-                        f_89_ += (float) anInt1678;
+                        f_89_ += (float) rasterWidth;
                     }
                 } else {
                     f_88_ -= f;
                     f -= f_89_;
-                    f_89_ = (float) (this.anIntArray1676[(int) f_89_]);
+                    f_89_ = (float) (this.lineOffsets[(int) f_89_]);
                     while (--f >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
+                        method1025(raster, texturePixels, (int) f_89_, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
                         f_92_ += f_156_;
                         f_91_ += f_144_;
                         f_95_ += f_157_;
@@ -1628,10 +1631,10 @@ final class Rasterizer {
                         f_127_ += f_153_;
                         f_131_ += f_166_;
                         f_130_ += f_154_;
-                        f_89_ += (float) anInt1678;
+                        f_89_ += (float) rasterWidth;
                     }
                     while (--f_88_ >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
+                        method1025(raster, texturePixels, (int) f_89_, (int) f_90_, (int) f_91_, f_93_, f_94_, f_96_, f_97_, f_99_, f_100_, (float) i_105_, (float) i_106_, f_114_, f_115_, f_117_, f_118_, f_120_, f_121_, f_123_, f_124_, f_126_, f_127_, f_129_, f_130_);
                         f_90_ += f_132_;
                         f_91_ += f_144_;
                         f_93_ += f_133_;
@@ -1654,7 +1657,7 @@ final class Rasterizer {
                         f_127_ += f_153_;
                         f_129_ += f_142_;
                         f_130_ += f_154_;
-                        f_89_ += (float) anInt1678;
+                        f_89_ += (float) rasterWidth;
                     }
                 }
             } else {
@@ -1711,9 +1714,9 @@ final class Rasterizer {
                 if (f_144_ < f_156_) {
                     f -= f_88_;
                     f_88_ -= f_89_;
-                    f_89_ = (float) (this.anIntArray1676[(int) f_89_]);
+                    f_89_ = (float) (this.lineOffsets[(int) f_89_]);
                     while (--f_88_ >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
+                        method1025(raster, texturePixels, (int) f_89_, (int) f_90_, (int) f_92_, f_93_, f_95_, f_96_, f_98_, f_99_, f_101_, (float) i_105_, (float) i_107_, f_114_, f_116_, f_117_, f_119_, f_120_, f_122_, f_123_, f_125_, f_126_, f_128_, f_129_, f_131_);
                         f_90_ += f_144_;
                         f_92_ += f_156_;
                         f_93_ += f_145_;
@@ -1736,10 +1739,10 @@ final class Rasterizer {
                         f_128_ += f_165_;
                         f_129_ += f_154_;
                         f_131_ += f_166_;
-                        f_89_ += (float) anInt1678;
+                        f_89_ += (float) rasterWidth;
                     }
                     while (--f >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
+                        method1025(raster, texturePixels, (int) f_89_, (int) f_91_, (int) f_92_, f_94_, f_95_, f_97_, f_98_, f_100_, f_101_, (float) i_106_, (float) i_107_, f_115_, f_116_, f_118_, f_119_, f_121_, f_122_, f_124_, f_125_, f_127_, f_128_, f_130_, f_131_);
                         f_91_ += f_132_;
                         f_92_ += f_156_;
                         f_94_ += f_133_;
@@ -1762,14 +1765,14 @@ final class Rasterizer {
                         f_128_ += f_165_;
                         f_130_ += f_142_;
                         f_131_ += f_166_;
-                        f_89_ += (float) anInt1678;
+                        f_89_ += (float) rasterWidth;
                     }
                 } else {
                     f -= f_88_;
                     f_88_ -= f_89_;
-                    f_89_ = (float) (this.anIntArray1676[(int) f_89_]);
+                    f_89_ = (float) (this.lineOffsets[(int) f_89_]);
                     while (--f_88_ >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
+                        method1025(raster, texturePixels, (int) f_89_, (int) f_92_, (int) f_90_, f_95_, f_93_, f_98_, f_96_, f_101_, f_99_, (float) i_107_, (float) i_105_, f_116_, f_114_, f_119_, f_117_, f_122_, f_120_, f_125_, f_123_, f_128_, f_126_, f_131_, f_129_);
                         f_92_ += f_156_;
                         f_90_ += f_144_;
                         f_95_ += f_157_;
@@ -1792,10 +1795,10 @@ final class Rasterizer {
                         f_126_ += f_153_;
                         f_131_ += f_166_;
                         f_129_ += f_154_;
-                        f_89_ += (float) anInt1678;
+                        f_89_ += (float) rasterWidth;
                     }
                     while (--f >= 0.0F) {
-                        method1025(anIntArray1673, anIntArray1698, (int) f_89_, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
+                        method1025(raster, texturePixels, (int) f_89_, (int) f_92_, (int) f_91_, f_95_, f_94_, f_98_, f_97_, f_101_, f_100_, (float) i_107_, (float) i_106_, f_116_, f_115_, f_119_, f_118_, f_122_, f_121_, f_125_, f_124_, f_128_, f_127_, f_131_, f_130_);
                         f_92_ += f_156_;
                         f_91_ += f_132_;
                         f_95_ += f_157_;
@@ -1818,7 +1821,7 @@ final class Rasterizer {
                         f_127_ += f_141_;
                         f_131_ += f_166_;
                         f_130_ += f_142_;
-                        f_89_ += (float) anInt1678;
+                        f_89_ += (float) rasterWidth;
                     }
                 }
             }
@@ -1826,7 +1829,7 @@ final class Rasterizer {
     }
 
     private final void method1021(int[] is, float[] fs, int i, int i_168_, int i_169_, int i_170_, int i_171_, float f, float f_172_, float f_173_, float f_174_, float f_175_, float f_176_, float f_177_, float f_178_) {
-        if (this.aBoolean1671) {
+        if (this.restrictEdges) {
             if (i_171_ > this.width) i_171_ = this.width;
             if (i_170_ < 0) i_170_ = 0;
         }
@@ -2400,378 +2403,383 @@ final class Rasterizer {
         }
     }
 
-    final void method1022(float f, float f_314_, float f_315_, float f_316_, float f_317_, float f_318_, float f_319_, float f_320_, float f_321_, float f_322_, float f_323_, float f_324_) {
-        if (aBoolean1675) {
-            aHa_Sub1_1666.method3645((int) f, (int) f_316_, (int) f_317_, -8003, Class126.HSV_TO_RGB[(int) f_322_], (int) f_314_);
-            aHa_Sub1_1666.method3645((int) f_314_, (int) f_317_, (int) f_318_, -8003, Class126.HSV_TO_RGB[(int) f_322_], (int) f_315_);
-            aHa_Sub1_1666.method3645((int) f_315_, (int) f_318_, (int) f_316_, -8003, Class126.HSV_TO_RGB[(int) f_322_], (int) f);
+    // method1022
+    final void drawGouraudTriangle(float yA, float yB, float yC, float xA, float xB, float xC, float zA, float zB, float zC, float hsvA, float hsvB, float hsvC) {
+        if (useExternalRenderer) {
+            aJavaToolkit_1666.method3645((int) yA, (int) xA, (int) xB, -8003, Class126.HSV_TO_RGB[(int) hsvA], (int) yB);
+            aJavaToolkit_1666.method3645((int) yB, (int) xB, (int) xC, -8003, Class126.HSV_TO_RGB[(int) hsvA], (int) yC);
+            aJavaToolkit_1666.method3645((int) yC, (int) xC, (int) xA, -8003, Class126.HSV_TO_RGB[(int) hsvA], (int) yA);
         } else {
-            float f_325_ = f_317_ - f_316_;
-            float f_326_ = f_314_ - f;
-            float f_327_ = f_318_ - f_316_;
-            float f_328_ = f_315_ - f;
-            float f_329_ = f_323_ - f_322_;
-            float f_330_ = f_324_ - f_322_;
-            float f_331_ = f_320_ - f_319_;
-            float f_332_ = f_321_ - f_319_;
-            float f_333_;
-            if (f_315_ != f_314_) f_333_ = (f_318_ - f_317_) / (f_315_ - f_314_);
-            else f_333_ = 0.0F;
-            float f_334_;
-            if (f_314_ != f) f_334_ = f_325_ / f_326_;
-            else f_334_ = 0.0F;
-            float f_335_;
-            if (f_315_ != f) f_335_ = f_327_ / f_328_;
-            else f_335_ = 0.0F;
-            float f_336_ = f_325_ * f_328_ - f_327_ * f_326_;
-            if (f_336_ != 0.0F) {
-                float f_337_ = (f_329_ * f_328_ - f_330_ * f_326_) / f_336_;
-                float f_338_ = (f_330_ * f_325_ - f_329_ * f_327_) / f_336_;
-                float f_339_ = (f_331_ * f_328_ - f_332_ * f_326_) / f_336_;
-                float f_340_ = (f_332_ * f_325_ - f_331_ * f_327_) / f_336_;
-                if (f <= f_314_ && f <= f_315_) {
-                    if (!(f >= (float) this.anInt1672)) {
-                        if (f_314_ > (float) this.anInt1672) f_314_ = (float) this.anInt1672;
-                        if (f_315_ > (float) this.anInt1672) f_315_ = (float) this.anInt1672;
-                        f_322_ = f_322_ - f_337_ * f_316_ + f_337_;
-                        f_319_ = f_319_ - f_339_ * f_316_ + f_339_;
-                        if (f_314_ < f_315_) {
-                            f_318_ = f_316_;
-                            if (f < 0.0F) {
-                                f_318_ -= f_335_ * f;
-                                f_316_ -= f_334_ * f;
-                                f_322_ -= f_338_ * f;
-                                f_319_ -= f_340_ * f;
-                                f = 0.0F;
-                            }
-                            if (f_314_ < 0.0F) {
-                                f_317_ -= f_333_ * f_314_;
-                                f_314_ = 0.0F;
-                            }
-                            if (f != f_314_ && f_335_ < f_334_ || f == f_314_ && f_335_ > f_333_) {
-                                f_315_ -= f_314_;
-                                f_314_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
-                                while (--f_314_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_318_, (int) f_316_, f_322_, f_337_, f_319_, f_339_);
-                                    f_318_ += f_335_;
-                                    f_316_ += f_334_;
-                                    f_322_ += f_338_;
-                                    f_319_ += f_340_;
-                                    f += (float) anInt1678;
-                                }
-                                while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_318_, (int) f_317_, f_322_, f_337_, f_319_, f_339_);
-                                    f_318_ += f_335_;
-                                    f_317_ += f_333_;
-                                    f_322_ += f_338_;
-                                    f_319_ += f_340_;
-                                    f += (float) anInt1678;
-                                }
-                            } else {
-                                f_315_ -= f_314_;
-                                f_314_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
-                                while (--f_314_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_316_, (int) f_318_, f_322_, f_337_, f_319_, f_339_);
-                                    f_318_ += f_335_;
-                                    f_316_ += f_334_;
-                                    f_322_ += f_338_;
-                                    f_319_ += f_340_;
-                                    f += (float) anInt1678;
-                                }
-                                while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_317_, (int) f_318_, f_322_, f_337_, f_319_, f_339_);
-                                    f_318_ += f_335_;
-                                    f_317_ += f_333_;
-                                    f_322_ += f_338_;
-                                    f_319_ += f_340_;
-                                    f += (float) anInt1678;
-                                }
-                            }
-                        } else {
-                            f_317_ = f_316_;
-                            if (f < 0.0F) {
-                                f_317_ -= f_335_ * f;
-                                f_316_ -= f_334_ * f;
-                                f_322_ -= f_338_ * f;
-                                f_319_ -= f_340_ * f;
-                                f = 0.0F;
-                            }
-                            if (f_315_ < 0.0F) {
-                                f_318_ -= f_333_ * f_315_;
-                                f_315_ = 0.0F;
-                            }
-                            if (f != f_315_ && f_335_ < f_334_ || f == f_315_ && f_333_ > f_334_) {
-                                f_314_ -= f_315_;
-                                f_315_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
-                                while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_317_, (int) f_316_, f_322_, f_337_, f_319_, f_339_);
-                                    f_317_ += f_335_;
-                                    f_316_ += f_334_;
-                                    f_322_ += f_338_;
-                                    f_319_ += f_340_;
-                                    f += (float) anInt1678;
-                                }
-                                while (--f_314_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_318_, (int) f_316_, f_322_, f_337_, f_319_, f_339_);
-                                    f_318_ += f_333_;
-                                    f_316_ += f_334_;
-                                    f_322_ += f_338_;
-                                    f_319_ += f_340_;
-                                    f += (float) anInt1678;
-                                }
-                            } else {
-                                f_314_ -= f_315_;
-                                f_315_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
-                                while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_316_, (int) f_317_, f_322_, f_337_, f_319_, f_339_);
-                                    f_317_ += f_335_;
-                                    f_316_ += f_334_;
-                                    f_322_ += f_338_;
-                                    f_319_ += f_340_;
-                                    f += (float) anInt1678;
-                                }
-                                while (--f_314_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_316_, (int) f_318_, f_322_, f_337_, f_319_, f_339_);
-                                    f_318_ += f_333_;
-                                    f_316_ += f_334_;
-                                    f_322_ += f_338_;
-                                    f_319_ += f_340_;
-                                    f += (float) anInt1678;
-                                }
-                            }
-                        }
+            float baX = xB - xA;
+            float baY = yB - yA;
+            float caX = xC - xA;
+            float caY = yC - yA;
+            float hsv1 = hsvB - hsvA;
+            float hsv2 = hsvC - hsvA;
+            float baZ = zB - zA;
+            float caZ = zC - zA;
+            float aToB;
+            if (yC != yB) aToB = (xC - xB) / (yC - yB);
+            else aToB = 0.0F;
+            float bToC;
+            if (yB != yA) bToC = baX / baY;
+            else bToC = 0.0F;
+            float cToA;
+            if (yC != yA) cToA = caX / caY;
+            else cToA = 0.0F;
+            float div = baX * caY - caX * baY;
+            if (div != 0.0F) {
+                float dhsv1 = (hsv1 * caY - hsv2 * baY) / div;
+                float dhsv2 = (hsv2 * baX - hsv1 * caX) / div;
+                float depthSlope = (baZ * caY - caZ * baY) / div;
+                float depthIncrement = (caZ * baX - baZ * caX) / div;
+                if (yA <= yB && yA <= yC) {
+                    if (yA >= (float) this.height) {
+                        return;
                     }
-                } else if (f_314_ <= f_315_) {
-                    if (!(f_314_ >= (float) this.anInt1672)) {
-                        if (f_315_ > (float) this.anInt1672) f_315_ = (float) this.anInt1672;
-                        if (f > (float) this.anInt1672) f = (float) this.anInt1672;
-                        f_323_ = f_323_ - f_337_ * f_317_ + f_337_;
-                        f_320_ = f_320_ - f_339_ * f_317_ + f_339_;
-                        if (f_315_ < f) {
-                            f_316_ = f_317_;
-                            if (f_314_ < 0.0F) {
-                                f_316_ -= f_334_ * f_314_;
-                                f_317_ -= f_333_ * f_314_;
-                                f_323_ -= f_338_ * f_314_;
-                                f_320_ -= f_340_ * f_314_;
-                                f_314_ = 0.0F;
+                    if (yB > (float) this.height) yB = (float) this.height;
+                    if (yC > (float) this.height) yC = (float) this.height;
+                    hsvA = hsvA - dhsv1 * xA + dhsv1;
+                    zA = zA - depthSlope * xA + depthSlope;
+                    if (yB < yC) {
+                        xC = xA;
+                        if (yA < 0.0F) {
+                            xC -= cToA * yA;
+                            xA -= bToC * yA;
+                            hsvA -= dhsv2 * yA;
+                            zA -= depthIncrement * yA;
+                            yA = 0.0F;
+                        }
+                        if (yB < 0.0F) {
+                            xB -= aToB * yB;
+                            yB = 0.0F;
+                        }
+                        if (yA != yB && cToA < bToC || yA == yB && cToA > aToB) {
+                            yC -= yB;
+                            yB -= yA;
+                            yA = (float) (this.lineOffsets[(int) yA]);
+                            while (--yB >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yA, 0, 0, (int) xC, (int) xA, hsvA, dhsv1, zA, depthSlope);
+                                xC += cToA;
+                                xA += bToC;
+                                hsvA += dhsv2;
+                                zA += depthIncrement;
+                                yA += (float) rasterWidth;
                             }
-                            if (f_315_ < 0.0F) {
-                                f_318_ -= f_335_ * f_315_;
-                                f_315_ = 0.0F;
-                            }
-                            if (f_314_ != f_315_ && f_334_ < f_333_ || f_314_ == f_315_ && f_334_ > f_335_) {
-                                f -= f_315_;
-                                f_315_ -= f_314_;
-                                f_314_ = (float) (this.anIntArray1676[(int) f_314_]);
-                                while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_316_, (int) f_317_, f_323_, f_337_, f_320_, f_339_);
-                                    f_316_ += f_334_;
-                                    f_317_ += f_333_;
-                                    f_323_ += f_338_;
-                                    f_320_ += f_340_;
-                                    f_314_ += (float) anInt1678;
-                                }
-                                while (--f >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_316_, (int) f_318_, f_323_, f_337_, f_320_, f_339_);
-                                    f_316_ += f_334_;
-                                    f_318_ += f_335_;
-                                    f_323_ += f_338_;
-                                    f_320_ += f_340_;
-                                    f_314_ += (float) anInt1678;
-                                }
-                            } else {
-                                f -= f_315_;
-                                f_315_ -= f_314_;
-                                f_314_ = (float) (this.anIntArray1676[(int) f_314_]);
-                                while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_317_, (int) f_316_, f_323_, f_337_, f_320_, f_339_);
-                                    f_316_ += f_334_;
-                                    f_317_ += f_333_;
-                                    f_323_ += f_338_;
-                                    f_320_ += f_340_;
-                                    f_314_ += (float) anInt1678;
-                                }
-                                while (--f >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_318_, (int) f_316_, f_323_, f_337_, f_320_, f_339_);
-                                    f_316_ += f_334_;
-                                    f_318_ += f_335_;
-                                    f_323_ += f_338_;
-                                    f_320_ += f_340_;
-                                    f_314_ += (float) anInt1678;
-                                }
+                            while (--yC >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yA, 0, 0, (int) xC, (int) xB, hsvA, dhsv1, zA, depthSlope);
+                                xC += cToA;
+                                xB += aToB;
+                                hsvA += dhsv2;
+                                zA += depthIncrement;
+                                yA += (float) rasterWidth;
                             }
                         } else {
-                            f_318_ = f_317_;
-                            if (f_314_ < 0.0F) {
-                                f_318_ -= f_334_ * f_314_;
-                                f_317_ -= f_333_ * f_314_;
-                                f_323_ -= f_338_ * f_314_;
-                                f_320_ -= f_340_ * f_314_;
-                                f_314_ = 0.0F;
+                            yC -= yB;
+                            yB -= yA;
+                            yA = (float) (this.lineOffsets[(int) yA]);
+                            while (--yB >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yA, 0, 0, (int) xA, (int) xC, hsvA, dhsv1, zA, depthSlope);
+                                xC += cToA;
+                                xA += bToC;
+                                hsvA += dhsv2;
+                                zA += depthIncrement;
+                                yA += (float) rasterWidth;
                             }
-                            if (f < 0.0F) {
-                                f_316_ -= f_335_ * f;
-                                f = 0.0F;
-                            }
-                            if (f_334_ < f_333_) {
-                                f_315_ -= f;
-                                f -= f_314_;
-                                f_314_ = (float) (this.anIntArray1676[(int) f_314_]);
-                                while (--f >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_318_, (int) f_317_, f_323_, f_337_, f_320_, f_339_);
-                                    f_318_ += f_334_;
-                                    f_317_ += f_333_;
-                                    f_323_ += f_338_;
-                                    f_320_ += f_340_;
-                                    f_314_ += (float) anInt1678;
-                                }
-                                while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_316_, (int) f_317_, f_323_, f_337_, f_320_, f_339_);
-                                    f_316_ += f_335_;
-                                    f_317_ += f_333_;
-                                    f_323_ += f_338_;
-                                    f_320_ += f_340_;
-                                    f_314_ += (float) anInt1678;
-                                }
-                            } else {
-                                f_315_ -= f;
-                                f -= f_314_;
-                                f_314_ = (float) (this.anIntArray1676[(int) f_314_]);
-                                while (--f >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_317_, (int) f_318_, f_323_, f_337_, f_320_, f_339_);
-                                    f_318_ += f_334_;
-                                    f_317_ += f_333_;
-                                    f_323_ += f_338_;
-                                    f_320_ += f_340_;
-                                    f_314_ += (float) anInt1678;
-                                }
-                                while (--f_315_ >= 0.0F) {
-                                    method1019(anIntArray1673, aFloatArray1677, (int) f_314_, 0, 0, (int) f_317_, (int) f_316_, f_323_, f_337_, f_320_, f_339_);
-                                    f_316_ += f_335_;
-                                    f_317_ += f_333_;
-                                    f_323_ += f_338_;
-                                    f_320_ += f_340_;
-                                    f_314_ += (float) anInt1678;
-                                }
-                            }
-                        }
-                    }
-                } else if (!(f_315_ >= (float) this.anInt1672)) {
-                    if (f > (float) this.anInt1672) f = (float) this.anInt1672;
-                    if (f_314_ > (float) this.anInt1672) f_314_ = (float) this.anInt1672;
-                    f_324_ = f_324_ - f_337_ * f_318_ + f_337_;
-                    f_321_ = f_321_ - f_339_ * f_318_ + f_339_;
-                    if (f < f_314_) {
-                        f_317_ = f_318_;
-                        if (f_315_ < 0.0F) {
-                            f_317_ -= f_333_ * f_315_;
-                            f_318_ -= f_335_ * f_315_;
-                            f_324_ -= f_338_ * f_315_;
-                            f_321_ -= f_340_ * f_315_;
-                            f_315_ = 0.0F;
-                        }
-                        if (f < 0.0F) {
-                            f_316_ -= f_334_ * f;
-                            f = 0.0F;
-                        }
-                        if (f_333_ < f_335_) {
-                            f_314_ -= f;
-                            f -= f_315_;
-                            f_315_ = (float) (this.anIntArray1676[(int) f_315_]);
-                            while (--f >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_317_, (int) f_318_, f_324_, f_337_, f_321_, f_339_);
-                                f_317_ += f_333_;
-                                f_318_ += f_335_;
-                                f_324_ += f_338_;
-                                f_321_ += f_340_;
-                                f_315_ += (float) anInt1678;
-                            }
-                            while (--f_314_ >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_317_, (int) f_316_, f_324_, f_337_, f_321_, f_339_);
-                                f_317_ += f_333_;
-                                f_316_ += f_334_;
-                                f_324_ += f_338_;
-                                f_321_ += f_340_;
-                                f_315_ += (float) anInt1678;
-                            }
-                        } else {
-                            f_314_ -= f;
-                            f -= f_315_;
-                            f_315_ = (float) (this.anIntArray1676[(int) f_315_]);
-                            while (--f >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_318_, (int) f_317_, f_324_, f_337_, f_321_, f_339_);
-                                f_317_ += f_333_;
-                                f_318_ += f_335_;
-                                f_324_ += f_338_;
-                                f_321_ += f_340_;
-                                f_315_ += (float) anInt1678;
-                            }
-                            while (--f_314_ >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_316_, (int) f_317_, f_324_, f_337_, f_321_, f_339_);
-                                f_317_ += f_333_;
-                                f_316_ += f_334_;
-                                f_324_ += f_338_;
-                                f_321_ += f_340_;
-                                f_315_ += (float) anInt1678;
+                            while (--yC >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yA, 0, 0, (int) xB, (int) xC, hsvA, dhsv1, zA, depthSlope);
+                                xC += cToA;
+                                xB += aToB;
+                                hsvA += dhsv2;
+                                zA += depthIncrement;
+                                yA += (float) rasterWidth;
                             }
                         }
                     } else {
-                        f_316_ = f_318_;
-                        if (f_315_ < 0.0F) {
-                            f_316_ -= f_333_ * f_315_;
-                            f_318_ -= f_335_ * f_315_;
-                            f_324_ -= f_338_ * f_315_;
-                            f_321_ -= f_340_ * f_315_;
-                            f_315_ = 0.0F;
+                        xB = xA;
+                        if (yA < 0.0F) {
+                            xB -= cToA * yA;
+                            xA -= bToC * yA;
+                            hsvA -= dhsv2 * yA;
+                            zA -= depthIncrement * yA;
+                            yA = 0.0F;
                         }
-                        if (f_314_ < 0.0F) {
-                            f_317_ -= f_334_ * f_314_;
-                            f_314_ = 0.0F;
+                        if (yC < 0.0F) {
+                            xC -= aToB * yC;
+                            yC = 0.0F;
                         }
-                        if (f_333_ < f_335_) {
-                            f -= f_314_;
-                            f_314_ -= f_315_;
-                            f_315_ = (float) (this.anIntArray1676[(int) f_315_]);
-                            while (--f_314_ >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_316_, (int) f_318_, f_324_, f_337_, f_321_, f_339_);
-                                f_316_ += f_333_;
-                                f_318_ += f_335_;
-                                f_324_ += f_338_;
-                                f_321_ += f_340_;
-                                f_315_ += (float) anInt1678;
+                        if (yA != yC && cToA < bToC || yA == yC && aToB > bToC) {
+                            yB -= yC;
+                            yC -= yA;
+                            yA = (float) (this.lineOffsets[(int) yA]);
+                            while (--yC >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yA, 0, 0, (int) xB, (int) xA, hsvA, dhsv1, zA, depthSlope);
+                                xB += cToA;
+                                xA += bToC;
+                                hsvA += dhsv2;
+                                zA += depthIncrement;
+                                yA += (float) rasterWidth;
                             }
-                            while (--f >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_317_, (int) f_318_, f_324_, f_337_, f_321_, f_339_);
-                                f_317_ += f_334_;
-                                f_318_ += f_335_;
-                                f_324_ += f_338_;
-                                f_321_ += f_340_;
-                                f_315_ += (float) anInt1678;
+                            while (--yB >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yA, 0, 0, (int) xC, (int) xA, hsvA, dhsv1, zA, depthSlope);
+                                xC += aToB;
+                                xA += bToC;
+                                hsvA += dhsv2;
+                                zA += depthIncrement;
+                                yA += (float) rasterWidth;
                             }
                         } else {
-                            f -= f_314_;
-                            f_314_ -= f_315_;
-                            f_315_ = (float) (this.anIntArray1676[(int) f_315_]);
-                            while (--f_314_ >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_318_, (int) f_316_, f_324_, f_337_, f_321_, f_339_);
-                                f_316_ += f_333_;
-                                f_318_ += f_335_;
-                                f_324_ += f_338_;
-                                f_321_ += f_340_;
-                                f_315_ += (float) anInt1678;
+                            yB -= yC;
+                            yC -= yA;
+                            yA = (float) (this.lineOffsets[(int) yA]);
+                            while (--yC >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yA, 0, 0, (int) xA, (int) xB, hsvA, dhsv1, zA, depthSlope);
+                                xB += cToA;
+                                xA += bToC;
+                                hsvA += dhsv2;
+                                zA += depthIncrement;
+                                yA += (float) rasterWidth;
                             }
-                            while (--f >= 0.0F) {
-                                method1019(anIntArray1673, aFloatArray1677, (int) f_315_, 0, 0, (int) f_318_, (int) f_317_, f_324_, f_337_, f_321_, f_339_);
-                                f_317_ += f_334_;
-                                f_318_ += f_335_;
-                                f_324_ += f_338_;
-                                f_321_ += f_340_;
-                                f_315_ += (float) anInt1678;
+                            while (--yB >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yA, 0, 0, (int) xA, (int) xC, hsvA, dhsv1, zA, depthSlope);
+                                xC += aToB;
+                                xA += bToC;
+                                hsvA += dhsv2;
+                                zA += depthIncrement;
+                                yA += (float) rasterWidth;
+                            }
+                        }
+                    }
+                } else if (yB <= yC) {
+                    if (!(yB >= (float) this.height)) {
+                        if (yC > (float) this.height) yC = (float) this.height;
+                        if (yA > (float) this.height) yA = (float) this.height;
+                        hsvB = hsvB - dhsv1 * xB + dhsv1;
+                        zB = zB - depthSlope * xB + depthSlope;
+                        if (yC < yA) {
+                            xA = xB;
+                            if (yB < 0.0F) {
+                                xA -= bToC * yB;
+                                xB -= aToB * yB;
+                                hsvB -= dhsv2 * yB;
+                                zB -= depthIncrement * yB;
+                                yB = 0.0F;
+                            }
+                            if (yC < 0.0F) {
+                                xC -= cToA * yC;
+                                yC = 0.0F;
+                            }
+                            if (yB != yC && bToC < aToB || yB == yC && bToC > cToA) {
+                                yA -= yC;
+                                yC -= yB;
+                                yB = (float) (this.lineOffsets[(int) yB]);
+                                while (--yC >= 0.0F) {
+                                    drawGoraudScanline(raster, depthBuffer, (int) yB, 0, 0, (int) xA, (int) xB, hsvB, dhsv1, zB, depthSlope);
+                                    xA += bToC;
+                                    xB += aToB;
+                                    hsvB += dhsv2;
+                                    zB += depthIncrement;
+                                    yB += (float) rasterWidth;
+                                }
+                                while (--yA >= 0.0F) {
+                                    drawGoraudScanline(raster, depthBuffer, (int) yB, 0, 0, (int) xA, (int) xC, hsvB, dhsv1, zB, depthSlope);
+                                    xA += bToC;
+                                    xC += cToA;
+                                    hsvB += dhsv2;
+                                    zB += depthIncrement;
+                                    yB += (float) rasterWidth;
+                                }
+                            } else {
+                                yA -= yC;
+                                yC -= yB;
+                                yB = (float) (this.lineOffsets[(int) yB]);
+                                while (--yC >= 0.0F) {
+                                    drawGoraudScanline(raster, depthBuffer, (int) yB, 0, 0, (int) xB, (int) xA, hsvB, dhsv1, zB, depthSlope);
+                                    xA += bToC;
+                                    xB += aToB;
+                                    hsvB += dhsv2;
+                                    zB += depthIncrement;
+                                    yB += (float) rasterWidth;
+                                }
+                                while (--yA >= 0.0F) {
+                                    drawGoraudScanline(raster, depthBuffer, (int) yB, 0, 0, (int) xC, (int) xA, hsvB, dhsv1, zB, depthSlope);
+                                    xA += bToC;
+                                    xC += cToA;
+                                    hsvB += dhsv2;
+                                    zB += depthIncrement;
+                                    yB += (float) rasterWidth;
+                                }
+                            }
+                        } else {
+                            xC = xB;
+                            if (yB < 0.0F) {
+                                xC -= bToC * yB;
+                                xB -= aToB * yB;
+                                hsvB -= dhsv2 * yB;
+                                zB -= depthIncrement * yB;
+                                yB = 0.0F;
+                            }
+                            if (yA < 0.0F) {
+                                xA -= cToA * yA;
+                                yA = 0.0F;
+                            }
+                            if (bToC < aToB) {
+                                yC -= yA;
+                                yA -= yB;
+                                yB = (float) (this.lineOffsets[(int) yB]);
+                                while (--yA >= 0.0F) {
+                                    drawGoraudScanline(raster, depthBuffer, (int) yB, 0, 0, (int) xC, (int) xB, hsvB, dhsv1, zB, depthSlope);
+                                    xC += bToC;
+                                    xB += aToB;
+                                    hsvB += dhsv2;
+                                    zB += depthIncrement;
+                                    yB += (float) rasterWidth;
+                                }
+                                while (--yC >= 0.0F) {
+                                    drawGoraudScanline(raster, depthBuffer, (int) yB, 0, 0, (int) xA, (int) xB, hsvB, dhsv1, zB, depthSlope);
+                                    xA += cToA;
+                                    xB += aToB;
+                                    hsvB += dhsv2;
+                                    zB += depthIncrement;
+                                    yB += (float) rasterWidth;
+                                }
+                            } else {
+                                yC -= yA;
+                                yA -= yB;
+                                yB = (float) (this.lineOffsets[(int) yB]);
+                                while (--yA >= 0.0F) {
+                                    drawGoraudScanline(raster, depthBuffer, (int) yB, 0, 0, (int) xB, (int) xC, hsvB, dhsv1, zB, depthSlope);
+                                    xC += bToC;
+                                    xB += aToB;
+                                    hsvB += dhsv2;
+                                    zB += depthIncrement;
+                                    yB += (float) rasterWidth;
+                                }
+                                while (--yC >= 0.0F) {
+                                    drawGoraudScanline(raster, depthBuffer, (int) yB, 0, 0, (int) xB, (int) xA, hsvB, dhsv1, zB, depthSlope);
+                                    xA += cToA;
+                                    xB += aToB;
+                                    hsvB += dhsv2;
+                                    zB += depthIncrement;
+                                    yB += (float) rasterWidth;
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    if (yC >= (float) this.height) {
+                        return;
+                    }
+                    if (yA > (float) this.height) yA = (float) this.height;
+                    if (yB > (float) this.height) yB = (float) this.height;
+                    hsvC = hsvC - dhsv1 * xC + dhsv1;
+                    zC = zC - depthSlope * xC + depthSlope;
+                    if (yA < yB) {
+                        xB = xC;
+                        if (yC < 0.0F) {
+                            xB -= aToB * yC;
+                            xC -= cToA * yC;
+                            hsvC -= dhsv2 * yC;
+                            zC -= depthIncrement * yC;
+                            yC = 0.0F;
+                        }
+                        if (yA < 0.0F) {
+                            xA -= bToC * yA;
+                            yA = 0.0F;
+                        }
+                        if (aToB < cToA) {
+                            yB -= yA;
+                            yA -= yC;
+                            yC = (float) (this.lineOffsets[(int) yC]);
+                            while (--yA >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yC, 0, 0, (int) xB, (int) xC, hsvC, dhsv1, zC, depthSlope);
+                                xB += aToB;
+                                xC += cToA;
+                                hsvC += dhsv2;
+                                zC += depthIncrement;
+                                yC += (float) rasterWidth;
+                            }
+                            while (--yB >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yC, 0, 0, (int) xB, (int) xA, hsvC, dhsv1, zC, depthSlope);
+                                xB += aToB;
+                                xA += bToC;
+                                hsvC += dhsv2;
+                                zC += depthIncrement;
+                                yC += (float) rasterWidth;
+                            }
+                        } else {
+                            yB -= yA;
+                            yA -= yC;
+                            yC = (float) (this.lineOffsets[(int) yC]);
+                            while (--yA >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yC, 0, 0, (int) xC, (int) xB, hsvC, dhsv1, zC, depthSlope);
+                                xB += aToB;
+                                xC += cToA;
+                                hsvC += dhsv2;
+                                zC += depthIncrement;
+                                yC += (float) rasterWidth;
+                            }
+                            while (--yB >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yC, 0, 0, (int) xA, (int) xB, hsvC, dhsv1, zC, depthSlope);
+                                xB += aToB;
+                                xA += bToC;
+                                hsvC += dhsv2;
+                                zC += depthIncrement;
+                                yC += (float) rasterWidth;
+                            }
+                        }
+                    } else {
+                        xA = xC;
+                        if (yC < 0.0F) {
+                            xA -= aToB * yC;
+                            xC -= cToA * yC;
+                            hsvC -= dhsv2 * yC;
+                            zC -= depthIncrement * yC;
+                            yC = 0.0F;
+                        }
+                        if (yB < 0.0F) {
+                            xB -= bToC * yB;
+                            yB = 0.0F;
+                        }
+                        if (aToB < cToA) {
+                            yA -= yB;
+                            yB -= yC;
+                            yC = (float) (this.lineOffsets[(int) yC]);
+                            while (--yB >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yC, 0, 0, (int) xA, (int) xC, hsvC, dhsv1, zC, depthSlope);
+                                xA += aToB;
+                                xC += cToA;
+                                hsvC += dhsv2;
+                                zC += depthIncrement;
+                                yC += (float) rasterWidth;
+                            }
+                            while (--yA >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yC, 0, 0, (int) xB, (int) xC, hsvC, dhsv1, zC, depthSlope);
+                                xB += bToC;
+                                xC += cToA;
+                                hsvC += dhsv2;
+                                zC += depthIncrement;
+                                yC += (float) rasterWidth;
+                            }
+                        } else {
+                            yA -= yB;
+                            yB -= yC;
+                            yC = (float) (this.lineOffsets[(int) yC]);
+                            while (--yB >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yC, 0, 0, (int) xC, (int) xA, hsvC, dhsv1, zC, depthSlope);
+                                xA += aToB;
+                                xC += cToA;
+                                hsvC += dhsv2;
+                                zC += depthIncrement;
+                                yC += (float) rasterWidth;
+                            }
+                            while (--yA >= 0.0F) {
+                                drawGoraudScanline(raster, depthBuffer, (int) yC, 0, 0, (int) xC, (int) xB, hsvC, dhsv1, zC, depthSlope);
+                                xB += bToC;
+                                xC += cToA;
+                                hsvC += dhsv2;
+                                zC += depthIncrement;
+                                yC += (float) rasterWidth;
                             }
                         }
                     }
@@ -2781,43 +2789,44 @@ final class Rasterizer {
     }
 
     final void method1023(boolean bool) {
-        aBoolean1675 = bool;
+        useExternalRenderer = bool;
     }
 
-    final void method1024(float f, float f_341_, float f_342_, float f_343_, float f_344_, float f_345_, float f_346_, float f_347_, float f_348_, float f_349_, float f_350_, float f_351_, float f_352_, float f_353_, float f_354_, int i, int i_355_, int i_356_, int i_357_, int i_358_, int i_359_, int i_360_, int i_361_) {
-        if (i_361_ != anInt1697) {
-            anIntArray1698 = aHa_Sub1_1666.method3719(i_361_);
-            if (anIntArray1698 == null) {
-                method1027((float) (int) f, (float) (int) f_341_, (float) (int) f_342_, (float) (int) f_343_, (float) (int) f_344_, (float) (int) f_345_, (float) (int) f_346_, (float) (int) f_347_, (float) (int) f_348_, JavaBillboardFace.method206(i, i_357_ | i_358_ << 24, 255), JavaBillboardFace.method206(i_355_, i_357_ | i_359_ << 24, 255), JavaBillboardFace.method206(i_356_, i_357_ | i_360_ << 24, 255));
+    // method1024
+    final void drawTexturedTriangle(float yA, float yB, float yC, float xA, float xB, float xC, float zA, float zB, float zC, float texCoordUA, float texCoordUB, float texCoordUC, float texCoordVA, float texCoordVB, float texCoordVC, int hsvA, int hsvB, int hsvC, int i_357_, int i_358_, int i_359_, int i_360_, int texture) {
+        if (texture != anInt1697) {
+            texturePixels = aJavaToolkit_1666.getArgbTexture(texture);
+            if (texturePixels == null) {
+                renderTriangleRgb((float) (int) yA, (float) (int) yB, (float) (int) yC, (float) (int) xA, (float) (int) xB, (float) (int) xC, (float) (int) zA, (float) (int) zB, (float) (int) zC, JavaBillboardFace.method206(hsvA, i_357_ | i_358_ << 24, 255), JavaBillboardFace.method206(hsvB, i_357_ | i_359_ << 24, 255), JavaBillboardFace.method206(hsvC, i_357_ | i_360_ << 24, 255));
                 return;
             }
-            anInt1693 = (aHa_Sub1_1666.method3727(i_361_) ? 64 : aHa_Sub1_1666.anInt7501);
-            anInt1690 = anInt1693 - 1;
-            anInt1683 = aHa_Sub1_1666.method3726(i_361_);
-            aBoolean1694 = aHa_Sub1_1666.method3714(i_361_);
+            textureSize = (aJavaToolkit_1666.smallTexture(texture) ? 64 : aJavaToolkit_1666.textureSize);
+            textureLastIndex = textureSize - 1;
+            textureAlphaBlendMode = aJavaToolkit_1666.textureAlphaBlendMode(texture);
+            repeatTexture = aJavaToolkit_1666.textureRepeats(texture);
         }
         anInt1696 = i_357_;
-        float f_362_ = (float) (i >> 24 & 0xff);
-        float f_363_ = (float) (i_355_ >> 24 & 0xff);
-        float f_364_ = (float) (i_356_ >> 24 & 0xff);
-        float f_365_ = (float) (i >> 16 & 0xff);
-        float f_366_ = (float) (i_355_ >> 16 & 0xff);
-        float f_367_ = (float) (i_356_ >> 16 & 0xff);
-        float f_368_ = (float) (i >> 8 & 0xff);
-        float f_369_ = (float) (i_355_ >> 8 & 0xff);
-        float f_370_ = (float) (i_356_ >> 8 & 0xff);
-        float f_371_ = (float) (i & 0xff);
-        float f_372_ = (float) (i_355_ & 0xff);
-        float f_373_ = (float) (i_356_ & 0xff);
-        f_349_ /= f_346_;
-        f_350_ /= f_347_;
-        f_351_ /= f_348_;
-        f_352_ /= f_346_;
-        f_353_ /= f_347_;
-        f_354_ /= f_348_;
-        f_346_ = 1.0F / f_346_;
-        f_347_ = 1.0F / f_347_;
-        f_348_ = 1.0F / f_348_;
+        float f_362_ = (float) (hsvA >> 24 & 0xff);
+        float f_363_ = (float) (hsvB >> 24 & 0xff);
+        float f_364_ = (float) (hsvC >> 24 & 0xff);
+        float f_365_ = (float) (hsvA >> 16 & 0xff);
+        float f_366_ = (float) (hsvB >> 16 & 0xff);
+        float f_367_ = (float) (hsvC >> 16 & 0xff);
+        float f_368_ = (float) (hsvA >> 8 & 0xff);
+        float f_369_ = (float) (hsvB >> 8 & 0xff);
+        float f_370_ = (float) (hsvC >> 8 & 0xff);
+        float f_371_ = (float) (hsvA & 0xff);
+        float f_372_ = (float) (hsvB & 0xff);
+        float f_373_ = (float) (hsvC & 0xff);
+        texCoordUA /= zA;
+        texCoordUB /= zB;
+        texCoordUC /= zC;
+        texCoordVA /= zA;
+        texCoordVB /= zB;
+        texCoordVC /= zC;
+        zA = 1.0F / zA;
+        zB = 1.0F / zB;
+        zC = 1.0F / zC;
         float f_374_ = 0.0F;
         float f_375_ = 0.0F;
         float f_376_ = 0.0F;
@@ -2827,12 +2836,12 @@ final class Rasterizer {
         float f_380_ = 0.0F;
         float f_381_ = 0.0F;
         float f_382_ = 0.0F;
-        if (f_341_ != f) {
-            float f_383_ = f_341_ - f;
-            f_374_ = (f_344_ - f_343_) / f_383_;
-            f_375_ = (f_347_ - f_346_) / f_383_;
-            f_376_ = (f_350_ - f_349_) / f_383_;
-            f_377_ = (f_353_ - f_352_) / f_383_;
+        if (yB != yA) {
+            float f_383_ = yB - yA;
+            f_374_ = (xB - xA) / f_383_;
+            f_375_ = (zB - zA) / f_383_;
+            f_376_ = (texCoordUB - texCoordUA) / f_383_;
+            f_377_ = (texCoordVB - texCoordVA) / f_383_;
             f_378_ = (float) (i_359_ - i_358_) / f_383_;
             f_379_ = (f_363_ - f_362_) / f_383_;
             f_380_ = (f_366_ - f_365_) / f_383_;
@@ -2848,12 +2857,12 @@ final class Rasterizer {
         float f_390_ = 0.0F;
         float f_391_ = 0.0F;
         float f_392_ = 0.0F;
-        if (f_342_ != f_341_) {
-            float f_393_ = f_342_ - f_341_;
-            f_384_ = (f_345_ - f_344_) / f_393_;
-            f_385_ = (f_348_ - f_347_) / f_393_;
-            f_386_ = (f_351_ - f_350_) / f_393_;
-            f_387_ = (f_354_ - f_353_) / f_393_;
+        if (yC != yB) {
+            float f_393_ = yC - yB;
+            f_384_ = (xC - xB) / f_393_;
+            f_385_ = (zC - zB) / f_393_;
+            f_386_ = (texCoordUC - texCoordUB) / f_393_;
+            f_387_ = (texCoordVC - texCoordVB) / f_393_;
             f_388_ = (float) (i_360_ - i_359_) / f_393_;
             f_389_ = (f_364_ - f_363_) / f_393_;
             f_390_ = (f_367_ - f_366_) / f_393_;
@@ -2869,365 +2878,366 @@ final class Rasterizer {
         float f_400_ = 0.0F;
         float f_401_ = 0.0F;
         float f_402_ = 0.0F;
-        if (f != f_342_) {
-            float f_403_ = f - f_342_;
-            f_394_ = (f_343_ - f_345_) / f_403_;
-            f_395_ = (f_346_ - f_348_) / f_403_;
-            f_396_ = (f_349_ - f_351_) / f_403_;
-            f_397_ = (f_352_ - f_354_) / f_403_;
+        if (yA != yC) {
+            float f_403_ = yA - yC;
+            f_394_ = (xA - xC) / f_403_;
+            f_395_ = (zA - zC) / f_403_;
+            f_396_ = (texCoordUA - texCoordUC) / f_403_;
+            f_397_ = (texCoordVA - texCoordVC) / f_403_;
             f_398_ = (float) (i_358_ - i_360_) / f_403_;
             f_399_ = (f_362_ - f_364_) / f_403_;
             f_400_ = (f_365_ - f_367_) / f_403_;
             f_401_ = (f_368_ - f_370_) / f_403_;
             f_402_ = (f_371_ - f_373_) / f_403_;
         }
-        if (f <= f_341_ && f <= f_342_) {
-            if (!(f >= (float) this.anInt1672)) {
-                if (f_341_ > (float) this.anInt1672) f_341_ = (float) this.anInt1672;
-                if (f_342_ > (float) this.anInt1672) f_342_ = (float) this.anInt1672;
-                if (f_341_ < f_342_) {
-                    f_345_ = f_343_;
-                    f_348_ = f_346_;
-                    f_351_ = f_349_;
-                    f_354_ = f_352_;
-                    i_360_ = i_358_;
-                    f_364_ = f_362_;
-                    f_367_ = f_365_;
-                    f_370_ = f_368_;
-                    f_373_ = f_371_;
-                    if (f < 0.0F) {
-                        f_343_ -= f_374_ * f;
-                        f_345_ -= f_394_ * f;
-                        f_346_ -= f_375_ * f;
-                        f_348_ -= f_395_ * f;
-                        f_349_ -= f_376_ * f;
-                        f_351_ -= f_396_ * f;
-                        f_352_ -= f_377_ * f;
-                        f_354_ -= f_397_ * f;
-                        i_358_ -= f_378_ * f;
-                        i_360_ -= f_398_ * f;
-                        f_362_ -= f_379_ * f;
-                        f_364_ -= f_399_ * f;
-                        f_365_ -= f_379_ * f;
-                        f_367_ -= f_399_ * f;
-                        f_368_ -= f_379_ * f;
-                        f_370_ -= f_399_ * f;
-                        f_371_ -= f_379_ * f;
-                        f_373_ -= f_399_ * f;
-                        f = 0.0F;
+        if (yA <= yB && yA <= yC) {
+            if (yA >= (float) this.height) {
+                return;
+            }
+            if (yB > (float) this.height) yB = (float) this.height;
+            if (yC > (float) this.height) yC = (float) this.height;
+            if (yB < yC) {
+                xC = xA;
+                zC = zA;
+                texCoordUC = texCoordUA;
+                texCoordVC = texCoordVA;
+                i_360_ = i_358_;
+                f_364_ = f_362_;
+                f_367_ = f_365_;
+                f_370_ = f_368_;
+                f_373_ = f_371_;
+                if (yA < 0.0F) {
+                    xA -= f_374_ * yA;
+                    xC -= f_394_ * yA;
+                    zA -= f_375_ * yA;
+                    zC -= f_395_ * yA;
+                    texCoordUA -= f_376_ * yA;
+                    texCoordUC -= f_396_ * yA;
+                    texCoordVA -= f_377_ * yA;
+                    texCoordVC -= f_397_ * yA;
+                    i_358_ -= f_378_ * yA;
+                    i_360_ -= f_398_ * yA;
+                    f_362_ -= f_379_ * yA;
+                    f_364_ -= f_399_ * yA;
+                    f_365_ -= f_379_ * yA;
+                    f_367_ -= f_399_ * yA;
+                    f_368_ -= f_379_ * yA;
+                    f_370_ -= f_399_ * yA;
+                    f_371_ -= f_379_ * yA;
+                    f_373_ -= f_399_ * yA;
+                    yA = 0.0F;
+                }
+                if (yB < 0.0F) {
+                    xB -= f_384_ * yB;
+                    zB -= f_385_ * yB;
+                    texCoordUB -= f_386_ * yB;
+                    texCoordVB -= f_387_ * yB;
+                    i_359_ -= f_388_ * yB;
+                    f_363_ -= f_389_ * yB;
+                    f_366_ -= f_390_ * yB;
+                    f_369_ -= f_391_ * yB;
+                    f_372_ -= f_392_ * yB;
+                    yB = 0.0F;
+                }
+                if (yA != yB && f_394_ < f_374_ || yA == yB && f_394_ > f_384_) {
+                    yC -= yB;
+                    yB -= yA;
+                    yA = (float) this.lineOffsets[(int) yA];
+                    while (--yB >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yA, (int) xC, (int) xA, zC, zA, texCoordUC, texCoordUA, texCoordVC, texCoordVA, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
+                        xA += f_374_;
+                        xC += f_394_;
+                        zA += f_375_;
+                        zC += f_395_;
+                        texCoordUA += f_376_;
+                        texCoordUC += f_396_;
+                        texCoordVA += f_377_;
+                        texCoordVC += f_397_;
+                        i_358_ += f_378_;
+                        i_360_ += f_398_;
+                        f_362_ += f_379_;
+                        f_364_ += f_399_;
+                        f_365_ += f_380_;
+                        f_367_ += f_400_;
+                        f_368_ += f_381_;
+                        f_370_ += f_401_;
+                        f_371_ += f_382_;
+                        f_373_ += f_402_;
+                        yA += (float) rasterWidth;
                     }
-                    if (f_341_ < 0.0F) {
-                        f_344_ -= f_384_ * f_341_;
-                        f_347_ -= f_385_ * f_341_;
-                        f_350_ -= f_386_ * f_341_;
-                        f_353_ -= f_387_ * f_341_;
-                        i_359_ -= f_388_ * f_341_;
-                        f_363_ -= f_389_ * f_341_;
-                        f_366_ -= f_390_ * f_341_;
-                        f_369_ -= f_391_ * f_341_;
-                        f_372_ -= f_392_ * f_341_;
-                        f_341_ = 0.0F;
-                    }
-                    if (f != f_341_ && f_394_ < f_374_ || f == f_341_ && f_394_ > f_384_) {
-                        f_342_ -= f_341_;
-                        f_341_ -= f;
-                        f = (float) this.anIntArray1676[(int) f];
-                        while (--f_341_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_345_, (int) f_343_, f_348_, f_346_, f_351_, f_349_, f_354_, f_352_, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
-                            f_343_ += f_374_;
-                            f_345_ += f_394_;
-                            f_346_ += f_375_;
-                            f_348_ += f_395_;
-                            f_349_ += f_376_;
-                            f_351_ += f_396_;
-                            f_352_ += f_377_;
-                            f_354_ += f_397_;
-                            i_358_ += f_378_;
-                            i_360_ += f_398_;
-                            f_362_ += f_379_;
-                            f_364_ += f_399_;
-                            f_365_ += f_380_;
-                            f_367_ += f_400_;
-                            f_368_ += f_381_;
-                            f_370_ += f_401_;
-                            f_371_ += f_382_;
-                            f_373_ += f_402_;
-                            f += (float) anInt1678;
-                        }
-                        while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_345_, (int) f_344_, f_348_, f_347_, f_351_, f_350_, f_354_, f_353_, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
-                            f_344_ += f_384_;
-                            f_345_ += f_394_;
-                            f_347_ += f_385_;
-                            f_348_ += f_395_;
-                            f_350_ += f_386_;
-                            f_351_ += f_396_;
-                            f_353_ += f_387_;
-                            f_354_ += f_397_;
-                            i_359_ += f_388_;
-                            i_360_ += f_398_;
-                            f_363_ += f_389_;
-                            f_364_ += f_399_;
-                            f_366_ += f_390_;
-                            f_367_ += f_400_;
-                            f_369_ += f_391_;
-                            f_370_ += f_401_;
-                            f_372_ += f_392_;
-                            f_373_ += f_402_;
-                            f += (float) anInt1678;
-                        }
-                    } else {
-                        f_342_ -= f_341_;
-                        f_341_ -= f;
-                        f = (float) this.anIntArray1676[(int) f];
-                        while (--f_341_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_343_, (int) f_345_, f_346_, f_348_, f_349_, f_351_, f_352_, f_354_, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
-                            f_343_ += f_374_;
-                            f_345_ += f_394_;
-                            f_346_ += f_375_;
-                            f_348_ += f_395_;
-                            f_349_ += f_376_;
-                            f_351_ += f_396_;
-                            f_352_ += f_377_;
-                            f_354_ += f_397_;
-                            i_358_ += f_378_;
-                            i_360_ += f_398_;
-                            f_362_ += f_379_;
-                            f_364_ += f_399_;
-                            f_365_ += f_380_;
-                            f_367_ += f_400_;
-                            f_368_ += f_381_;
-                            f_370_ += f_401_;
-                            f_371_ += f_382_;
-                            f_373_ += f_402_;
-                            f += (float) anInt1678;
-                        }
-                        while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_344_, (int) f_345_, f_347_, f_348_, f_350_, f_351_, f_353_, f_354_, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
-                            f_344_ += f_384_;
-                            f_345_ += f_394_;
-                            f_347_ += f_385_;
-                            f_348_ += f_395_;
-                            f_350_ += f_386_;
-                            f_351_ += f_396_;
-                            f_353_ += f_387_;
-                            f_354_ += f_397_;
-                            i_359_ += f_388_;
-                            i_360_ += f_398_;
-                            f_363_ += f_389_;
-                            f_364_ += f_399_;
-                            f_366_ += f_390_;
-                            f_367_ += f_400_;
-                            f_369_ += f_391_;
-                            f_370_ += f_401_;
-                            f_372_ += f_392_;
-                            f_373_ += f_402_;
-                            f += (float) anInt1678;
-                        }
+                    while (--yC >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yA, (int) xC, (int) xB, zC, zB, texCoordUC, texCoordUB, texCoordVC, texCoordVB, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
+                        xB += f_384_;
+                        xC += f_394_;
+                        zB += f_385_;
+                        zC += f_395_;
+                        texCoordUB += f_386_;
+                        texCoordUC += f_396_;
+                        texCoordVB += f_387_;
+                        texCoordVC += f_397_;
+                        i_359_ += f_388_;
+                        i_360_ += f_398_;
+                        f_363_ += f_389_;
+                        f_364_ += f_399_;
+                        f_366_ += f_390_;
+                        f_367_ += f_400_;
+                        f_369_ += f_391_;
+                        f_370_ += f_401_;
+                        f_372_ += f_392_;
+                        f_373_ += f_402_;
+                        yA += (float) rasterWidth;
                     }
                 } else {
-                    f_344_ = f_343_;
-                    f_347_ = f_346_;
-                    f_350_ = f_349_;
-                    f_353_ = f_352_;
-                    i_359_ = i_358_;
-                    f_363_ = f_362_;
-                    f_366_ = f_365_;
-                    f_369_ = f_368_;
-                    f_372_ = f_371_;
-                    if (f < 0.0F) {
-                        f_343_ -= f_374_ * f;
-                        f_344_ -= f_394_ * f;
-                        f_346_ -= f_375_ * f;
-                        f_347_ -= f_395_ * f;
-                        f_349_ -= f_376_ * f;
-                        f_350_ -= f_396_ * f;
-                        f_352_ -= f_377_ * f;
-                        f_353_ -= f_397_ * f;
-                        i_358_ -= f_378_ * f;
-                        i_359_ -= f_398_ * f;
-                        f_362_ -= f_379_ * f;
-                        f_363_ -= f_399_ * f;
-                        f_365_ -= f_379_ * f;
-                        f_366_ -= f_399_ * f;
-                        f_368_ -= f_379_ * f;
-                        f_369_ -= f_399_ * f;
-                        f_371_ -= f_379_ * f;
-                        f_372_ -= f_399_ * f;
-                        f = 0.0F;
+                    yC -= yB;
+                    yB -= yA;
+                    yA = (float) this.lineOffsets[(int) yA];
+                    while (--yB >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yA, (int) xA, (int) xC, zA, zC, texCoordUA, texCoordUC, texCoordVA, texCoordVC, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
+                        xA += f_374_;
+                        xC += f_394_;
+                        zA += f_375_;
+                        zC += f_395_;
+                        texCoordUA += f_376_;
+                        texCoordUC += f_396_;
+                        texCoordVA += f_377_;
+                        texCoordVC += f_397_;
+                        i_358_ += f_378_;
+                        i_360_ += f_398_;
+                        f_362_ += f_379_;
+                        f_364_ += f_399_;
+                        f_365_ += f_380_;
+                        f_367_ += f_400_;
+                        f_368_ += f_381_;
+                        f_370_ += f_401_;
+                        f_371_ += f_382_;
+                        f_373_ += f_402_;
+                        yA += (float) rasterWidth;
                     }
-                    if (f_342_ < 0.0F) {
-                        f_345_ -= f_384_ * f_342_;
-                        f_348_ -= f_385_ * f_342_;
-                        f_351_ -= f_386_ * f_342_;
-                        f_354_ -= f_387_ * f_342_;
-                        i_360_ -= f_388_ * f_342_;
-                        f_364_ -= f_389_ * f_342_;
-                        f_367_ -= f_390_ * f_342_;
-                        f_370_ -= f_391_ * f_342_;
-                        f_373_ -= f_392_ * f_342_;
-                        f_342_ = 0.0F;
+                    while (--yC >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yA, (int) xB, (int) xC, zB, zC, texCoordUB, texCoordUC, texCoordVB, texCoordVC, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
+                        xB += f_384_;
+                        xC += f_394_;
+                        zB += f_385_;
+                        zC += f_395_;
+                        texCoordUB += f_386_;
+                        texCoordUC += f_396_;
+                        texCoordVB += f_387_;
+                        texCoordVC += f_397_;
+                        i_359_ += f_388_;
+                        i_360_ += f_398_;
+                        f_363_ += f_389_;
+                        f_364_ += f_399_;
+                        f_366_ += f_390_;
+                        f_367_ += f_400_;
+                        f_369_ += f_391_;
+                        f_370_ += f_401_;
+                        f_372_ += f_392_;
+                        f_373_ += f_402_;
+                        yA += (float) rasterWidth;
                     }
-                    if (f != f_342_ && f_394_ < f_374_ || f == f_342_ && f_384_ > f_374_) {
-                        f_341_ -= f_342_;
-                        f_342_ -= f;
-                        f = (float) this.anIntArray1676[(int) f];
-                        while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_344_, (int) f_343_, f_347_, f_346_, f_350_, f_349_, f_353_, f_352_, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
-                            f_343_ += f_374_;
-                            f_344_ += f_394_;
-                            f_346_ += f_375_;
-                            f_347_ += f_395_;
-                            f_349_ += f_376_;
-                            f_350_ += f_396_;
-                            f_352_ += f_377_;
-                            f_353_ += f_397_;
-                            i_358_ += f_378_;
-                            i_359_ += f_398_;
-                            f_362_ += f_379_;
-                            f_363_ += f_399_;
-                            f_365_ += f_380_;
-                            f_366_ += f_400_;
-                            f_368_ += f_381_;
-                            f_369_ += f_401_;
-                            f_371_ += f_382_;
-                            f_372_ += f_402_;
-                            f += (float) anInt1678;
-                        }
-                        while (--f_341_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_345_, (int) f_343_, f_348_, f_346_, f_351_, f_349_, f_354_, f_352_, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
-                            f_345_ += f_384_;
-                            f_343_ += f_374_;
-                            f_348_ += f_385_;
-                            f_346_ += f_375_;
-                            f_351_ += f_386_;
-                            f_349_ += f_376_;
-                            f_354_ += f_387_;
-                            f_352_ += f_377_;
-                            i_360_ += f_388_;
-                            i_358_ += f_378_;
-                            f_364_ += f_389_;
-                            f_362_ += f_379_;
-                            f_367_ += f_390_;
-                            f_365_ += f_380_;
-                            f_370_ += f_391_;
-                            f_368_ += f_381_;
-                            f_373_ += f_392_;
-                            f_371_ += f_382_;
-                            f += (float) anInt1678;
-                        }
-                    } else {
-                        f_341_ -= f_342_;
-                        f_342_ -= f;
-                        f = (float) this.anIntArray1676[(int) f];
-                        while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_343_, (int) f_344_, f_346_, f_347_, f_349_, f_350_, f_352_, f_353_, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
-                            f_344_ += f_394_;
-                            f_343_ += f_374_;
-                            f_347_ += f_395_;
-                            f_346_ += f_375_;
-                            f_350_ += f_396_;
-                            f_349_ += f_376_;
-                            f_353_ += f_397_;
-                            f_352_ += f_377_;
-                            i_359_ += f_398_;
-                            i_358_ += f_378_;
-                            f_363_ += f_399_;
-                            f_362_ += f_379_;
-                            f_366_ += f_400_;
-                            f_365_ += f_380_;
-                            f_369_ += f_401_;
-                            f_368_ += f_381_;
-                            f_372_ += f_402_;
-                            f_371_ += f_382_;
-                            f += (float) anInt1678;
-                        }
-                        while (--f_341_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f, (int) f_343_, (int) f_345_, f_346_, f_348_, f_349_, f_351_, f_352_, f_354_, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
-                            f_343_ += f_374_;
-                            f_345_ += f_384_;
-                            f_346_ += f_375_;
-                            f_348_ += f_385_;
-                            f_349_ += f_376_;
-                            f_351_ += f_386_;
-                            f_352_ += f_377_;
-                            f_354_ += f_387_;
-                            i_358_ += f_378_;
-                            i_360_ += f_388_;
-                            f_362_ += f_379_;
-                            f_364_ += f_389_;
-                            f_365_ += f_380_;
-                            f_367_ += f_390_;
-                            f_368_ += f_381_;
-                            f_370_ += f_391_;
-                            f_371_ += f_382_;
-                            f_373_ += f_392_;
-                            f += (float) anInt1678;
-                        }
+                }
+            } else {
+                xB = xA;
+                zB = zA;
+                texCoordUB = texCoordUA;
+                texCoordVB = texCoordVA;
+                i_359_ = i_358_;
+                f_363_ = f_362_;
+                f_366_ = f_365_;
+                f_369_ = f_368_;
+                f_372_ = f_371_;
+                if (yA < 0.0F) {
+                    xA -= f_374_ * yA;
+                    xB -= f_394_ * yA;
+                    zA -= f_375_ * yA;
+                    zB -= f_395_ * yA;
+                    texCoordUA -= f_376_ * yA;
+                    texCoordUB -= f_396_ * yA;
+                    texCoordVA -= f_377_ * yA;
+                    texCoordVB -= f_397_ * yA;
+                    i_358_ -= f_378_ * yA;
+                    i_359_ -= f_398_ * yA;
+                    f_362_ -= f_379_ * yA;
+                    f_363_ -= f_399_ * yA;
+                    f_365_ -= f_379_ * yA;
+                    f_366_ -= f_399_ * yA;
+                    f_368_ -= f_379_ * yA;
+                    f_369_ -= f_399_ * yA;
+                    f_371_ -= f_379_ * yA;
+                    f_372_ -= f_399_ * yA;
+                    yA = 0.0F;
+                }
+                if (yC < 0.0F) {
+                    xC -= f_384_ * yC;
+                    zC -= f_385_ * yC;
+                    texCoordUC -= f_386_ * yC;
+                    texCoordVC -= f_387_ * yC;
+                    i_360_ -= f_388_ * yC;
+                    f_364_ -= f_389_ * yC;
+                    f_367_ -= f_390_ * yC;
+                    f_370_ -= f_391_ * yC;
+                    f_373_ -= f_392_ * yC;
+                    yC = 0.0F;
+                }
+                if (yA != yC && f_394_ < f_374_ || yA == yC && f_384_ > f_374_) {
+                    yB -= yC;
+                    yC -= yA;
+                    yA = (float) this.lineOffsets[(int) yA];
+                    while (--yC >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yA, (int) xB, (int) xA, zB, zA, texCoordUB, texCoordUA, texCoordVB, texCoordVA, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
+                        xA += f_374_;
+                        xB += f_394_;
+                        zA += f_375_;
+                        zB += f_395_;
+                        texCoordUA += f_376_;
+                        texCoordUB += f_396_;
+                        texCoordVA += f_377_;
+                        texCoordVB += f_397_;
+                        i_358_ += f_378_;
+                        i_359_ += f_398_;
+                        f_362_ += f_379_;
+                        f_363_ += f_399_;
+                        f_365_ += f_380_;
+                        f_366_ += f_400_;
+                        f_368_ += f_381_;
+                        f_369_ += f_401_;
+                        f_371_ += f_382_;
+                        f_372_ += f_402_;
+                        yA += (float) rasterWidth;
+                    }
+                    while (--yB >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yA, (int) xC, (int) xA, zC, zA, texCoordUC, texCoordUA, texCoordVC, texCoordVA, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
+                        xC += f_384_;
+                        xA += f_374_;
+                        zC += f_385_;
+                        zA += f_375_;
+                        texCoordUC += f_386_;
+                        texCoordUA += f_376_;
+                        texCoordVC += f_387_;
+                        texCoordVA += f_377_;
+                        i_360_ += f_388_;
+                        i_358_ += f_378_;
+                        f_364_ += f_389_;
+                        f_362_ += f_379_;
+                        f_367_ += f_390_;
+                        f_365_ += f_380_;
+                        f_370_ += f_391_;
+                        f_368_ += f_381_;
+                        f_373_ += f_392_;
+                        f_371_ += f_382_;
+                        yA += (float) rasterWidth;
+                    }
+                } else {
+                    yB -= yC;
+                    yC -= yA;
+                    yA = (float) this.lineOffsets[(int) yA];
+                    while (--yC >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yA, (int) xA, (int) xB, zA, zB, texCoordUA, texCoordUB, texCoordVA, texCoordVB, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
+                        xB += f_394_;
+                        xA += f_374_;
+                        zB += f_395_;
+                        zA += f_375_;
+                        texCoordUB += f_396_;
+                        texCoordUA += f_376_;
+                        texCoordVB += f_397_;
+                        texCoordVA += f_377_;
+                        i_359_ += f_398_;
+                        i_358_ += f_378_;
+                        f_363_ += f_399_;
+                        f_362_ += f_379_;
+                        f_366_ += f_400_;
+                        f_365_ += f_380_;
+                        f_369_ += f_401_;
+                        f_368_ += f_381_;
+                        f_372_ += f_402_;
+                        f_371_ += f_382_;
+                        yA += (float) rasterWidth;
+                    }
+                    while (--yB >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yA, (int) xA, (int) xC, zA, zC, texCoordUA, texCoordUC, texCoordVA, texCoordVC, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
+                        xA += f_374_;
+                        xC += f_384_;
+                        zA += f_375_;
+                        zC += f_385_;
+                        texCoordUA += f_376_;
+                        texCoordUC += f_386_;
+                        texCoordVA += f_377_;
+                        texCoordVC += f_387_;
+                        i_358_ += f_378_;
+                        i_360_ += f_388_;
+                        f_362_ += f_379_;
+                        f_364_ += f_389_;
+                        f_365_ += f_380_;
+                        f_367_ += f_390_;
+                        f_368_ += f_381_;
+                        f_370_ += f_391_;
+                        f_371_ += f_382_;
+                        f_373_ += f_392_;
+                        yA += (float) rasterWidth;
                     }
                 }
             }
-        } else if (f_341_ <= f_342_) {
-            if (!(f_341_ >= (float) this.anInt1672)) {
-                if (f_342_ > (float) this.anInt1672) f_342_ = (float) this.anInt1672;
-                if (f > (float) this.anInt1672) f = (float) this.anInt1672;
-                if (f_342_ < f) {
-                    f_343_ = f_344_;
-                    f_346_ = f_347_;
-                    f_349_ = f_350_;
-                    f_352_ = f_353_;
+        } else if (yB <= yC) {
+            if (!(yB >= (float) this.height)) {
+                if (yC > (float) this.height) yC = (float) this.height;
+                if (yA > (float) this.height) yA = (float) this.height;
+                if (yC < yA) {
+                    xA = xB;
+                    zA = zB;
+                    texCoordUA = texCoordUB;
+                    texCoordVA = texCoordVB;
                     i_358_ = i_359_;
                     f_362_ = f_363_;
                     f_365_ = f_366_;
                     f_368_ = f_369_;
                     f_371_ = f_372_;
-                    if (f_341_ < 0.0F) {
-                        f_343_ -= f_374_ * f_341_;
-                        f_344_ -= f_384_ * f_341_;
-                        f_346_ -= f_375_ * f_341_;
-                        f_347_ -= f_385_ * f_341_;
-                        f_349_ -= f_376_ * f_341_;
-                        f_350_ -= f_386_ * f_341_;
-                        f_352_ -= f_377_ * f_341_;
-                        f_353_ -= f_387_ * f_341_;
-                        i_358_ -= f_378_ * f_341_;
-                        i_359_ -= f_388_ * f_341_;
-                        f_362_ -= f_379_ * f_341_;
-                        f_363_ -= f_389_ * f_341_;
-                        f_365_ -= f_380_ * f_341_;
-                        f_366_ -= f_390_ * f_341_;
-                        f_368_ -= f_381_ * f_341_;
-                        f_369_ -= f_391_ * f_341_;
-                        f_371_ -= f_382_ * f_341_;
-                        f_372_ -= f_392_ * f_341_;
-                        f_341_ = 0.0F;
+                    if (yB < 0.0F) {
+                        xA -= f_374_ * yB;
+                        xB -= f_384_ * yB;
+                        zA -= f_375_ * yB;
+                        zB -= f_385_ * yB;
+                        texCoordUA -= f_376_ * yB;
+                        texCoordUB -= f_386_ * yB;
+                        texCoordVA -= f_377_ * yB;
+                        texCoordVB -= f_387_ * yB;
+                        i_358_ -= f_378_ * yB;
+                        i_359_ -= f_388_ * yB;
+                        f_362_ -= f_379_ * yB;
+                        f_363_ -= f_389_ * yB;
+                        f_365_ -= f_380_ * yB;
+                        f_366_ -= f_390_ * yB;
+                        f_368_ -= f_381_ * yB;
+                        f_369_ -= f_391_ * yB;
+                        f_371_ -= f_382_ * yB;
+                        f_372_ -= f_392_ * yB;
+                        yB = 0.0F;
                     }
-                    if (f_342_ < 0.0F) {
-                        f_345_ -= f_394_ * f_342_;
-                        f_348_ -= f_395_ * f_342_;
-                        f_351_ -= f_396_ * f_342_;
-                        f_354_ -= f_397_ * f_342_;
-                        i_360_ -= f_398_ * f_342_;
-                        f_364_ -= f_399_ * f_342_;
-                        f_367_ -= f_400_ * f_342_;
-                        f_370_ -= f_401_ * f_342_;
-                        f_373_ -= f_402_ * f_342_;
-                        f_342_ = 0.0F;
+                    if (yC < 0.0F) {
+                        xC -= f_394_ * yC;
+                        zC -= f_395_ * yC;
+                        texCoordUC -= f_396_ * yC;
+                        texCoordVC -= f_397_ * yC;
+                        i_360_ -= f_398_ * yC;
+                        f_364_ -= f_399_ * yC;
+                        f_367_ -= f_400_ * yC;
+                        f_370_ -= f_401_ * yC;
+                        f_373_ -= f_402_ * yC;
+                        yC = 0.0F;
                     }
-                    if (f_341_ != f_342_ && f_374_ < f_384_ || f_341_ == f_342_ && f_374_ > f_394_) {
-                        f -= f_342_;
-                        f_342_ -= f_341_;
-                        f_341_ = (float) (this.anIntArray1676[(int) f_341_]);
-                        while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_343_, (int) f_344_, f_346_, f_347_, f_349_, f_350_, f_352_, f_353_, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
-                            f_343_ += f_374_;
-                            f_344_ += f_384_;
-                            f_346_ += f_375_;
-                            f_347_ += f_385_;
-                            f_349_ += f_376_;
-                            f_350_ += f_386_;
-                            f_352_ += f_377_;
-                            f_353_ += f_387_;
+                    if (yB != yC && f_374_ < f_384_ || yB == yC && f_374_ > f_394_) {
+                        yA -= yC;
+                        yC -= yB;
+                        yB = (float) (this.lineOffsets[(int) yB]);
+                        while (--yC >= 0.0F) {
+                            drawTexturedScanline(raster, texturePixels, (int) yB, (int) xA, (int) xB, zA, zB, texCoordUA, texCoordUB, texCoordVA, texCoordVB, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
+                            xA += f_374_;
+                            xB += f_384_;
+                            zA += f_375_;
+                            zB += f_385_;
+                            texCoordUA += f_376_;
+                            texCoordUB += f_386_;
+                            texCoordVA += f_377_;
+                            texCoordVB += f_387_;
                             i_358_ += f_378_;
                             i_359_ += f_388_;
                             f_362_ += f_379_;
@@ -3238,18 +3248,18 @@ final class Rasterizer {
                             f_369_ += f_391_;
                             f_371_ += f_382_;
                             f_372_ += f_392_;
-                            f_341_ += (float) anInt1678;
+                            yB += (float) rasterWidth;
                         }
-                        while (--f >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_343_, (int) f_345_, f_346_, f_348_, f_349_, f_351_, f_352_, f_354_, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
-                            f_343_ += f_374_;
-                            f_345_ += f_394_;
-                            f_346_ += f_375_;
-                            f_348_ += f_395_;
-                            f_349_ += f_376_;
-                            f_351_ += f_396_;
-                            f_352_ += f_377_;
-                            f_354_ += f_397_;
+                        while (--yA >= 0.0F) {
+                            drawTexturedScanline(raster, texturePixels, (int) yB, (int) xA, (int) xC, zA, zC, texCoordUA, texCoordUC, texCoordVA, texCoordVC, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
+                            xA += f_374_;
+                            xC += f_394_;
+                            zA += f_375_;
+                            zC += f_395_;
+                            texCoordUA += f_376_;
+                            texCoordUC += f_396_;
+                            texCoordVA += f_377_;
+                            texCoordVC += f_397_;
                             i_358_ += f_378_;
                             i_360_ += f_398_;
                             f_362_ += f_379_;
@@ -3260,22 +3270,22 @@ final class Rasterizer {
                             f_370_ += f_401_;
                             f_371_ += f_382_;
                             f_373_ += f_402_;
-                            f_341_ += (float) anInt1678;
+                            yB += (float) rasterWidth;
                         }
                     } else {
-                        f -= f_342_;
-                        f_342_ -= f_341_;
-                        f_341_ = (float) (this.anIntArray1676[(int) f_341_]);
-                        while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_344_, (int) f_343_, f_347_, f_346_, f_350_, f_349_, f_353_, f_352_, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
-                            f_344_ += f_384_;
-                            f_343_ += f_374_;
-                            f_347_ += f_385_;
-                            f_346_ += f_375_;
-                            f_350_ += f_386_;
-                            f_349_ += f_376_;
-                            f_353_ += f_387_;
-                            f_352_ += f_377_;
+                        yA -= yC;
+                        yC -= yB;
+                        yB = (float) (this.lineOffsets[(int) yB]);
+                        while (--yC >= 0.0F) {
+                            drawTexturedScanline(raster, texturePixels, (int) yB, (int) xB, (int) xA, zB, zA, texCoordUB, texCoordUA, texCoordVB, texCoordVA, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
+                            xB += f_384_;
+                            xA += f_374_;
+                            zB += f_385_;
+                            zA += f_375_;
+                            texCoordUB += f_386_;
+                            texCoordUA += f_376_;
+                            texCoordVB += f_387_;
+                            texCoordVA += f_377_;
                             i_359_ += f_388_;
                             i_358_ += f_378_;
                             f_363_ += f_389_;
@@ -3286,18 +3296,18 @@ final class Rasterizer {
                             f_368_ += f_381_;
                             f_372_ += f_392_;
                             f_371_ += f_382_;
-                            f_341_ += (float) anInt1678;
+                            yB += (float) rasterWidth;
                         }
-                        while (--f >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_345_, (int) f_343_, f_348_, f_346_, f_351_, f_349_, f_354_, f_352_, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
-                            f_345_ += f_394_;
-                            f_343_ += f_374_;
-                            f_348_ += f_395_;
-                            f_346_ += f_375_;
-                            f_351_ += f_396_;
-                            f_349_ += f_376_;
-                            f_354_ += f_397_;
-                            f_352_ += f_377_;
+                        while (--yA >= 0.0F) {
+                            drawTexturedScanline(raster, texturePixels, (int) yB, (int) xC, (int) xA, zC, zA, texCoordUC, texCoordUA, texCoordVC, texCoordVA, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
+                            xC += f_394_;
+                            xA += f_374_;
+                            zC += f_395_;
+                            zA += f_375_;
+                            texCoordUC += f_396_;
+                            texCoordUA += f_376_;
+                            texCoordVC += f_397_;
+                            texCoordVA += f_377_;
                             i_360_ += f_398_;
                             i_358_ += f_378_;
                             f_364_ += f_399_;
@@ -3308,66 +3318,66 @@ final class Rasterizer {
                             f_368_ += f_381_;
                             f_373_ += f_402_;
                             f_371_ += f_382_;
-                            f_341_ += (float) anInt1678;
+                            yB += (float) rasterWidth;
                         }
                     }
                 } else {
-                    f_345_ = f_344_;
-                    f_348_ = f_347_;
-                    f_351_ = f_350_;
-                    f_354_ = f_353_;
+                    xC = xB;
+                    zC = zB;
+                    texCoordUC = texCoordUB;
+                    texCoordVC = texCoordVB;
                     i_360_ = i_359_;
                     f_364_ = f_363_;
                     f_367_ = f_366_;
                     f_370_ = f_369_;
                     f_373_ = f_372_;
-                    if (f_341_ < 0.0F) {
-                        f_345_ -= f_374_ * f_341_;
-                        f_344_ -= f_384_ * f_341_;
-                        f_348_ -= f_375_ * f_341_;
-                        f_347_ -= f_385_ * f_341_;
-                        f_351_ -= f_376_ * f_341_;
-                        f_350_ -= f_386_ * f_341_;
-                        f_354_ -= f_377_ * f_341_;
-                        f_353_ -= f_387_ * f_341_;
-                        i_360_ -= f_378_ * f_341_;
-                        i_359_ -= f_388_ * f_341_;
-                        f_364_ -= f_379_ * f_341_;
-                        f_363_ -= f_389_ * f_341_;
-                        f_367_ -= f_380_ * f_341_;
-                        f_366_ -= f_390_ * f_341_;
-                        f_370_ -= f_381_ * f_341_;
-                        f_369_ -= f_391_ * f_341_;
-                        f_373_ -= f_382_ * f_341_;
-                        f_372_ -= f_392_ * f_341_;
-                        f_341_ = 0.0F;
+                    if (yB < 0.0F) {
+                        xC -= f_374_ * yB;
+                        xB -= f_384_ * yB;
+                        zC -= f_375_ * yB;
+                        zB -= f_385_ * yB;
+                        texCoordUC -= f_376_ * yB;
+                        texCoordUB -= f_386_ * yB;
+                        texCoordVC -= f_377_ * yB;
+                        texCoordVB -= f_387_ * yB;
+                        i_360_ -= f_378_ * yB;
+                        i_359_ -= f_388_ * yB;
+                        f_364_ -= f_379_ * yB;
+                        f_363_ -= f_389_ * yB;
+                        f_367_ -= f_380_ * yB;
+                        f_366_ -= f_390_ * yB;
+                        f_370_ -= f_381_ * yB;
+                        f_369_ -= f_391_ * yB;
+                        f_373_ -= f_382_ * yB;
+                        f_372_ -= f_392_ * yB;
+                        yB = 0.0F;
                     }
-                    if (f < 0.0F) {
-                        f_343_ -= f_394_ * f;
-                        f_346_ -= f_395_ * f;
-                        f_349_ -= f_396_ * f;
-                        f_352_ -= f_397_ * f;
-                        i_358_ -= f_398_ * f;
-                        f_362_ -= f_399_ * f;
-                        f_365_ -= f_400_ * f;
-                        f_368_ -= f_401_ * f;
-                        f_371_ -= f_402_ * f;
-                        f = 0.0F;
+                    if (yA < 0.0F) {
+                        xA -= f_394_ * yA;
+                        zA -= f_395_ * yA;
+                        texCoordUA -= f_396_ * yA;
+                        texCoordVA -= f_397_ * yA;
+                        i_358_ -= f_398_ * yA;
+                        f_362_ -= f_399_ * yA;
+                        f_365_ -= f_400_ * yA;
+                        f_368_ -= f_401_ * yA;
+                        f_371_ -= f_402_ * yA;
+                        yA = 0.0F;
                     }
-                    f_342_ -= f;
-                    f -= f_341_;
-                    f_341_ = (float) (this.anIntArray1676[(int) f_341_]);
+                    yC -= yA;
+                    yA -= yB;
+                    yB = (float) (this.lineOffsets[(int) yB]);
                     if (f_374_ < f_384_) {
-                        while (--f >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_345_, (int) f_344_, f_348_, f_347_, f_351_, f_350_, f_354_, f_353_, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
-                            f_345_ += f_374_;
-                            f_344_ += f_384_;
-                            f_348_ += f_375_;
-                            f_347_ += f_385_;
-                            f_351_ += f_376_;
-                            f_350_ += f_386_;
-                            f_354_ += f_377_;
-                            f_353_ += f_387_;
+                        while (--yA >= 0.0F) {
+                            drawTexturedScanline(raster, texturePixels, (int) yB, (int) xC, (int) xB, zC, zB, texCoordUC, texCoordUB, texCoordVC, texCoordVB, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
+                            xC += f_374_;
+                            xB += f_384_;
+                            zC += f_375_;
+                            zB += f_385_;
+                            texCoordUC += f_376_;
+                            texCoordUB += f_386_;
+                            texCoordVC += f_377_;
+                            texCoordVB += f_387_;
                             i_360_ += f_378_;
                             i_359_ += f_388_;
                             f_364_ += f_379_;
@@ -3378,18 +3388,18 @@ final class Rasterizer {
                             f_369_ += f_391_;
                             f_373_ += f_382_;
                             f_372_ += f_392_;
-                            f_341_ += (float) anInt1678;
+                            yB += (float) rasterWidth;
                         }
-                        while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_343_, (int) f_344_, f_346_, f_347_, f_349_, f_350_, f_352_, f_353_, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
-                            f_343_ += f_394_;
-                            f_344_ += f_384_;
-                            f_346_ += f_395_;
-                            f_347_ += f_385_;
-                            f_349_ += f_396_;
-                            f_350_ += f_386_;
-                            f_352_ += f_397_;
-                            f_353_ += f_387_;
+                        while (--yC >= 0.0F) {
+                            drawTexturedScanline(raster, texturePixels, (int) yB, (int) xA, (int) xB, zA, zB, texCoordUA, texCoordUB, texCoordVA, texCoordVB, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
+                            xA += f_394_;
+                            xB += f_384_;
+                            zA += f_395_;
+                            zB += f_385_;
+                            texCoordUA += f_396_;
+                            texCoordUB += f_386_;
+                            texCoordVA += f_397_;
+                            texCoordVB += f_387_;
                             i_358_ += f_398_;
                             i_359_ += f_388_;
                             f_362_ += f_399_;
@@ -3400,19 +3410,19 @@ final class Rasterizer {
                             f_369_ += f_391_;
                             f_371_ += f_402_;
                             f_372_ += f_392_;
-                            f_341_ += (float) anInt1678;
+                            yB += (float) rasterWidth;
                         }
                     } else {
-                        while (--f >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_344_, (int) f_345_, f_347_, f_348_, f_350_, f_351_, f_353_, f_354_, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
-                            f_344_ += f_384_;
-                            f_345_ += f_374_;
-                            f_347_ += f_385_;
-                            f_348_ += f_375_;
-                            f_350_ += f_386_;
-                            f_351_ += f_376_;
-                            f_353_ += f_387_;
-                            f_354_ += f_377_;
+                        while (--yA >= 0.0F) {
+                            drawTexturedScanline(raster, texturePixels, (int) yB, (int) xB, (int) xC, zB, zC, texCoordUB, texCoordUC, texCoordVB, texCoordVC, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
+                            xB += f_384_;
+                            xC += f_374_;
+                            zB += f_385_;
+                            zC += f_375_;
+                            texCoordUB += f_386_;
+                            texCoordUC += f_376_;
+                            texCoordVB += f_387_;
+                            texCoordVC += f_377_;
                             i_359_ += f_388_;
                             i_360_ += f_378_;
                             f_363_ += f_389_;
@@ -3423,18 +3433,18 @@ final class Rasterizer {
                             f_370_ += f_381_;
                             f_372_ += f_392_;
                             f_373_ += f_382_;
-                            f_341_ += (float) anInt1678;
+                            yB += (float) rasterWidth;
                         }
-                        while (--f_342_ >= 0.0F) {
-                            method1016(anIntArray1673, anIntArray1698, (int) f_341_, (int) f_344_, (int) f_343_, f_347_, f_346_, f_350_, f_349_, f_353_, f_352_, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
-                            f_344_ += f_384_;
-                            f_343_ += f_394_;
-                            f_347_ += f_385_;
-                            f_346_ += f_395_;
-                            f_350_ += f_386_;
-                            f_349_ += f_396_;
-                            f_353_ += f_387_;
-                            f_352_ += f_397_;
+                        while (--yC >= 0.0F) {
+                            drawTexturedScanline(raster, texturePixels, (int) yB, (int) xB, (int) xA, zB, zA, texCoordUB, texCoordUA, texCoordVB, texCoordVA, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
+                            xB += f_384_;
+                            xA += f_394_;
+                            zB += f_385_;
+                            zA += f_395_;
+                            texCoordUB += f_386_;
+                            texCoordUA += f_396_;
+                            texCoordVB += f_387_;
+                            texCoordVA += f_397_;
                             i_359_ += f_388_;
                             i_358_ += f_398_;
                             f_363_ += f_389_;
@@ -3445,71 +3455,71 @@ final class Rasterizer {
                             f_368_ += f_401_;
                             f_372_ += f_392_;
                             f_371_ += f_402_;
-                            f_341_ += (float) anInt1678;
+                            yB += (float) rasterWidth;
                         }
                     }
                 }
             }
-        } else if (!(f_342_ >= (float) this.anInt1672)) {
-            if (f > (float) this.anInt1672) f = (float) this.anInt1672;
-            if (f_341_ > (float) this.anInt1672) f_341_ = (float) this.anInt1672;
-            if (f < f_341_) {
-                f_344_ = f_345_;
-                f_347_ = f_348_;
-                f_350_ = f_351_;
-                f_353_ = f_354_;
+        } else if (!(yC >= (float) this.height)) {
+            if (yA > (float) this.height) yA = (float) this.height;
+            if (yB > (float) this.height) yB = (float) this.height;
+            if (yA < yB) {
+                xB = xC;
+                zB = zC;
+                texCoordUB = texCoordUC;
+                texCoordVB = texCoordVC;
                 i_359_ = i_360_;
                 f_363_ = f_364_;
                 f_366_ = f_367_;
                 f_369_ = f_370_;
                 f_372_ = f_373_;
-                if (f_342_ < 0.0F) {
-                    f_345_ -= f_394_ * f_342_;
-                    f_344_ -= f_384_ * f_342_;
-                    f_348_ -= f_395_ * f_342_;
-                    f_347_ -= f_385_ * f_342_;
-                    f_351_ -= f_396_ * f_342_;
-                    f_350_ -= f_386_ * f_342_;
-                    f_354_ -= f_397_ * f_342_;
-                    f_353_ -= f_387_ * f_342_;
+                if (yC < 0.0F) {
+                    xC -= f_394_ * yC;
+                    xB -= f_384_ * yC;
+                    zC -= f_395_ * yC;
+                    zB -= f_385_ * yC;
+                    texCoordUC -= f_396_ * yC;
+                    texCoordUB -= f_386_ * yC;
+                    texCoordVC -= f_397_ * yC;
+                    texCoordVB -= f_387_ * yC;
                     i_360_ -= f_398_ * 3.0F;
-                    i_359_ -= f_388_ * f_342_;
-                    f_364_ -= f_399_ * f_342_;
-                    f_363_ -= f_389_ * f_342_;
-                    f_367_ -= f_400_ * f_342_;
-                    f_366_ -= f_390_ * f_342_;
-                    f_370_ -= f_401_ * f_342_;
-                    f_369_ -= f_391_ * f_342_;
-                    f_373_ -= f_402_ * f_342_;
-                    f_372_ -= f_392_ * f_342_;
-                    f_342_ = 0.0F;
+                    i_359_ -= f_388_ * yC;
+                    f_364_ -= f_399_ * yC;
+                    f_363_ -= f_389_ * yC;
+                    f_367_ -= f_400_ * yC;
+                    f_366_ -= f_390_ * yC;
+                    f_370_ -= f_401_ * yC;
+                    f_369_ -= f_391_ * yC;
+                    f_373_ -= f_402_ * yC;
+                    f_372_ -= f_392_ * yC;
+                    yC = 0.0F;
                 }
-                if (f < 0.0F) {
-                    f_343_ -= f_374_ * f;
-                    f_346_ -= f_375_ * f;
-                    f_349_ -= f_376_ * f;
-                    f_352_ -= f_377_ * f;
-                    i_358_ -= f_378_ * f;
-                    f_362_ -= f_379_ * f;
-                    f_365_ -= f_380_ * f;
-                    f_368_ -= f_381_ * f;
-                    f_371_ -= f_382_ * f;
-                    f = 0.0F;
+                if (yA < 0.0F) {
+                    xA -= f_374_ * yA;
+                    zA -= f_375_ * yA;
+                    texCoordUA -= f_376_ * yA;
+                    texCoordVA -= f_377_ * yA;
+                    i_358_ -= f_378_ * yA;
+                    f_362_ -= f_379_ * yA;
+                    f_365_ -= f_380_ * yA;
+                    f_368_ -= f_381_ * yA;
+                    f_371_ -= f_382_ * yA;
+                    yA = 0.0F;
                 }
                 if (f_384_ < f_394_) {
-                    f_341_ -= f;
-                    f -= f_342_;
-                    f_342_ = (float) (this.anIntArray1676[(int) f_342_]);
-                    while (--f >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_344_, (int) f_345_, f_347_, f_348_, f_350_, f_351_, f_353_, f_354_, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
-                        f_344_ += f_384_;
-                        f_345_ += f_394_;
-                        f_347_ += f_385_;
-                        f_348_ += f_395_;
-                        f_350_ += f_386_;
-                        f_351_ += f_396_;
-                        f_353_ += f_387_;
-                        f_354_ += f_397_;
+                    yB -= yA;
+                    yA -= yC;
+                    yC = (float) (this.lineOffsets[(int) yC]);
+                    while (--yA >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yC, (int) xB, (int) xC, zB, zC, texCoordUB, texCoordUC, texCoordVB, texCoordVC, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
+                        xB += f_384_;
+                        xC += f_394_;
+                        zB += f_385_;
+                        zC += f_395_;
+                        texCoordUB += f_386_;
+                        texCoordUC += f_396_;
+                        texCoordVB += f_387_;
+                        texCoordVC += f_397_;
                         i_359_ += f_388_;
                         i_360_ += f_398_;
                         f_363_ += f_389_;
@@ -3520,18 +3530,18 @@ final class Rasterizer {
                         f_370_ += f_401_;
                         f_372_ += f_392_;
                         f_373_ += f_402_;
-                        f_342_ += (float) anInt1678;
+                        yC += (float) rasterWidth;
                     }
-                    while (--f_341_ >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_344_, (int) f_343_, f_347_, f_346_, f_350_, f_349_, f_353_, f_352_, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
-                        f_344_ += f_384_;
-                        f_343_ += f_374_;
-                        f_347_ += f_385_;
-                        f_346_ += f_375_;
-                        f_350_ += f_386_;
-                        f_349_ += f_376_;
-                        f_353_ += f_387_;
-                        f_352_ += f_377_;
+                    while (--yB >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yC, (int) xB, (int) xA, zB, zA, texCoordUB, texCoordUA, texCoordVB, texCoordVA, (float) i_359_, (float) i_358_, f_363_, f_362_, f_366_, f_365_, f_369_, f_368_, f_372_, f_371_);
+                        xB += f_384_;
+                        xA += f_374_;
+                        zB += f_385_;
+                        zA += f_375_;
+                        texCoordUB += f_386_;
+                        texCoordUA += f_376_;
+                        texCoordVB += f_387_;
+                        texCoordVA += f_377_;
                         i_359_ += f_388_;
                         i_358_ += f_378_;
                         f_363_ += f_389_;
@@ -3542,22 +3552,22 @@ final class Rasterizer {
                         f_368_ += f_381_;
                         f_372_ += f_392_;
                         f_371_ += f_382_;
-                        f_342_ += (float) anInt1678;
+                        yC += (float) rasterWidth;
                     }
                 } else {
-                    f_341_ -= f;
-                    f -= f_342_;
-                    f_342_ = (float) (this.anIntArray1676[(int) f_342_]);
-                    while (--f >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_345_, (int) f_344_, f_348_, f_347_, f_351_, f_350_, f_354_, f_353_, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
-                        f_345_ += f_394_;
-                        f_344_ += f_384_;
-                        f_348_ += f_395_;
-                        f_347_ += f_385_;
-                        f_351_ += f_396_;
-                        f_350_ += f_386_;
-                        f_354_ += f_397_;
-                        f_353_ += f_387_;
+                    yB -= yA;
+                    yA -= yC;
+                    yC = (float) (this.lineOffsets[(int) yC]);
+                    while (--yA >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yC, (int) xC, (int) xB, zC, zB, texCoordUC, texCoordUB, texCoordVC, texCoordVB, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
+                        xC += f_394_;
+                        xB += f_384_;
+                        zC += f_395_;
+                        zB += f_385_;
+                        texCoordUC += f_396_;
+                        texCoordUB += f_386_;
+                        texCoordVC += f_397_;
+                        texCoordVB += f_387_;
                         i_360_ += f_398_;
                         i_359_ += f_388_;
                         f_364_ += f_399_;
@@ -3568,18 +3578,18 @@ final class Rasterizer {
                         f_369_ += f_391_;
                         f_373_ += f_402_;
                         f_372_ += f_392_;
-                        f_342_ += (float) anInt1678;
+                        yC += (float) rasterWidth;
                     }
-                    while (--f_341_ >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_343_, (int) f_344_, f_346_, f_347_, f_349_, f_350_, f_352_, f_353_, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
-                        f_343_ += f_374_;
-                        f_344_ += f_384_;
-                        f_346_ += f_375_;
-                        f_347_ += f_385_;
-                        f_349_ += f_376_;
-                        f_350_ += f_386_;
-                        f_352_ += f_377_;
-                        f_353_ += f_387_;
+                    while (--yB >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yC, (int) xA, (int) xB, zA, zB, texCoordUA, texCoordUB, texCoordVA, texCoordVB, (float) i_358_, (float) i_359_, f_362_, f_363_, f_365_, f_366_, f_368_, f_369_, f_371_, f_372_);
+                        xA += f_374_;
+                        xB += f_384_;
+                        zA += f_375_;
+                        zB += f_385_;
+                        texCoordUA += f_376_;
+                        texCoordUB += f_386_;
+                        texCoordVA += f_377_;
+                        texCoordVB += f_387_;
                         i_358_ += f_378_;
                         i_359_ += f_388_;
                         f_362_ += f_379_;
@@ -3590,66 +3600,66 @@ final class Rasterizer {
                         f_369_ += f_391_;
                         f_371_ += f_382_;
                         f_372_ += f_392_;
-                        f_342_ += (float) anInt1678;
+                        yC += (float) rasterWidth;
                     }
                 }
             } else {
-                f_343_ = f_345_;
-                f_346_ = f_348_;
-                f_349_ = f_351_;
-                f_352_ = f_354_;
+                xA = xC;
+                zA = zC;
+                texCoordUA = texCoordUC;
+                texCoordVA = texCoordVC;
                 i_358_ = i_360_;
                 f_362_ = f_364_;
                 f_365_ = f_367_;
                 f_368_ = f_370_;
                 f_371_ = f_373_;
-                if (f_342_ < 0.0F) {
-                    f_345_ -= f_394_ * f_342_;
-                    f_343_ -= f_384_ * f_342_;
-                    f_348_ -= f_395_ * f_342_;
-                    f_346_ -= f_385_ * f_342_;
-                    f_351_ -= f_396_ * f_342_;
-                    f_349_ -= f_386_ * f_342_;
-                    f_354_ -= f_397_ * f_342_;
-                    f_352_ -= f_387_ * f_342_;
+                if (yC < 0.0F) {
+                    xC -= f_394_ * yC;
+                    xA -= f_384_ * yC;
+                    zC -= f_395_ * yC;
+                    zA -= f_385_ * yC;
+                    texCoordUC -= f_396_ * yC;
+                    texCoordUA -= f_386_ * yC;
+                    texCoordVC -= f_397_ * yC;
+                    texCoordVA -= f_387_ * yC;
                     i_360_ -= f_398_ * 3.0F;
-                    i_358_ -= f_388_ * f_342_;
-                    f_364_ -= f_399_ * f_342_;
-                    f_362_ -= f_389_ * f_342_;
-                    f_367_ -= f_400_ * f_342_;
-                    f_365_ -= f_390_ * f_342_;
-                    f_370_ -= f_401_ * f_342_;
-                    f_368_ -= f_391_ * f_342_;
-                    f_373_ -= f_402_ * f_342_;
-                    f_371_ -= f_392_ * f_342_;
-                    f_342_ = 0.0F;
+                    i_358_ -= f_388_ * yC;
+                    f_364_ -= f_399_ * yC;
+                    f_362_ -= f_389_ * yC;
+                    f_367_ -= f_400_ * yC;
+                    f_365_ -= f_390_ * yC;
+                    f_370_ -= f_401_ * yC;
+                    f_368_ -= f_391_ * yC;
+                    f_373_ -= f_402_ * yC;
+                    f_371_ -= f_392_ * yC;
+                    yC = 0.0F;
                 }
-                if (f_341_ < 0.0F) {
-                    f_344_ -= f_374_ * f_341_;
-                    f_347_ -= f_375_ * f_341_;
-                    f_350_ -= f_376_ * f_341_;
-                    f_353_ -= f_377_ * f_341_;
-                    i_359_ -= f_378_ * f_341_;
-                    f_363_ -= f_379_ * f_341_;
-                    f_366_ -= f_380_ * f_341_;
-                    f_369_ -= f_381_ * f_341_;
-                    f_372_ -= f_382_ * f_341_;
-                    f_341_ = 0.0F;
+                if (yB < 0.0F) {
+                    xB -= f_374_ * yB;
+                    zB -= f_375_ * yB;
+                    texCoordUB -= f_376_ * yB;
+                    texCoordVB -= f_377_ * yB;
+                    i_359_ -= f_378_ * yB;
+                    f_363_ -= f_379_ * yB;
+                    f_366_ -= f_380_ * yB;
+                    f_369_ -= f_381_ * yB;
+                    f_372_ -= f_382_ * yB;
+                    yB = 0.0F;
                 }
                 if (f_384_ < f_394_) {
-                    f -= f_341_;
-                    f_341_ -= f_342_;
-                    f_342_ = (float) (this.anIntArray1676[(int) f_342_]);
-                    while (--f_341_ >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_343_, (int) f_345_, f_346_, f_348_, f_349_, f_351_, f_352_, f_354_, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
-                        f_343_ += f_384_;
-                        f_345_ += f_394_;
-                        f_346_ += f_385_;
-                        f_348_ += f_395_;
-                        f_349_ += f_386_;
-                        f_351_ += f_396_;
-                        f_352_ += f_387_;
-                        f_354_ += f_397_;
+                    yA -= yB;
+                    yB -= yC;
+                    yC = (float) (this.lineOffsets[(int) yC]);
+                    while (--yB >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yC, (int) xA, (int) xC, zA, zC, texCoordUA, texCoordUC, texCoordVA, texCoordVC, (float) i_358_, (float) i_360_, f_362_, f_364_, f_365_, f_367_, f_368_, f_370_, f_371_, f_373_);
+                        xA += f_384_;
+                        xC += f_394_;
+                        zA += f_385_;
+                        zC += f_395_;
+                        texCoordUA += f_386_;
+                        texCoordUC += f_396_;
+                        texCoordVA += f_387_;
+                        texCoordVC += f_397_;
                         i_358_ += f_388_;
                         i_360_ += f_398_;
                         f_362_ += f_389_;
@@ -3660,18 +3670,18 @@ final class Rasterizer {
                         f_370_ += f_401_;
                         f_371_ += f_392_;
                         f_373_ += f_402_;
-                        f_342_ += (float) anInt1678;
+                        yC += (float) rasterWidth;
                     }
-                    while (--f >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_344_, (int) f_345_, f_347_, f_348_, f_350_, f_351_, f_353_, f_354_, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
-                        f_344_ += f_374_;
-                        f_345_ += f_394_;
-                        f_347_ += f_375_;
-                        f_348_ += f_395_;
-                        f_350_ += f_376_;
-                        f_351_ += f_396_;
-                        f_353_ += f_377_;
-                        f_354_ += f_397_;
+                    while (--yA >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yC, (int) xB, (int) xC, zB, zC, texCoordUB, texCoordUC, texCoordVB, texCoordVC, (float) i_359_, (float) i_360_, f_363_, f_364_, f_366_, f_367_, f_369_, f_370_, f_372_, f_373_);
+                        xB += f_374_;
+                        xC += f_394_;
+                        zB += f_375_;
+                        zC += f_395_;
+                        texCoordUB += f_376_;
+                        texCoordUC += f_396_;
+                        texCoordVB += f_377_;
+                        texCoordVC += f_397_;
                         i_359_ += f_378_;
                         i_360_ += f_398_;
                         f_363_ += f_379_;
@@ -3682,22 +3692,22 @@ final class Rasterizer {
                         f_370_ += f_401_;
                         f_372_ += f_382_;
                         f_373_ += f_402_;
-                        f_342_ += (float) anInt1678;
+                        yC += (float) rasterWidth;
                     }
                 } else {
-                    f -= f_341_;
-                    f_341_ -= f_342_;
-                    f_342_ = (float) (this.anIntArray1676[(int) f_342_]);
-                    while (--f_341_ >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_345_, (int) f_343_, f_348_, f_346_, f_351_, f_349_, f_354_, f_352_, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
-                        f_345_ += f_394_;
-                        f_343_ += f_384_;
-                        f_348_ += f_395_;
-                        f_346_ += f_385_;
-                        f_351_ += f_396_;
-                        f_349_ += f_386_;
-                        f_354_ += f_397_;
-                        f_352_ += f_387_;
+                    yA -= yB;
+                    yB -= yC;
+                    yC = (float) (this.lineOffsets[(int) yC]);
+                    while (--yB >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yC, (int) xC, (int) xA, zC, zA, texCoordUC, texCoordUA, texCoordVC, texCoordVA, (float) i_360_, (float) i_358_, f_364_, f_362_, f_367_, f_365_, f_370_, f_368_, f_373_, f_371_);
+                        xC += f_394_;
+                        xA += f_384_;
+                        zC += f_395_;
+                        zA += f_385_;
+                        texCoordUC += f_396_;
+                        texCoordUA += f_386_;
+                        texCoordVC += f_397_;
+                        texCoordVA += f_387_;
                         i_360_ += f_398_;
                         i_358_ += f_388_;
                         f_364_ += f_399_;
@@ -3708,18 +3718,18 @@ final class Rasterizer {
                         f_368_ += f_391_;
                         f_373_ += f_402_;
                         f_371_ += f_392_;
-                        f_342_ += (float) anInt1678;
+                        yC += (float) rasterWidth;
                     }
-                    while (--f >= 0.0F) {
-                        method1016(anIntArray1673, anIntArray1698, (int) f_342_, (int) f_345_, (int) f_344_, f_348_, f_347_, f_351_, f_350_, f_354_, f_353_, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
-                        f_345_ += f_394_;
-                        f_344_ += f_374_;
-                        f_348_ += f_395_;
-                        f_347_ += f_375_;
-                        f_351_ += f_396_;
-                        f_350_ += f_376_;
-                        f_354_ += f_397_;
-                        f_353_ += f_377_;
+                    while (--yA >= 0.0F) {
+                        drawTexturedScanline(raster, texturePixels, (int) yC, (int) xC, (int) xB, zC, zB, texCoordUC, texCoordUB, texCoordVC, texCoordVB, (float) i_360_, (float) i_359_, f_364_, f_363_, f_367_, f_366_, f_370_, f_369_, f_373_, f_372_);
+                        xC += f_394_;
+                        xB += f_374_;
+                        zC += f_395_;
+                        zB += f_375_;
+                        texCoordUC += f_396_;
+                        texCoordUB += f_376_;
+                        texCoordVC += f_397_;
+                        texCoordVB += f_377_;
                         i_360_ += f_398_;
                         i_359_ += f_378_;
                         f_364_ += f_399_;
@@ -3730,7 +3740,7 @@ final class Rasterizer {
                         f_369_ += f_381_;
                         f_373_ += f_402_;
                         f_372_ += f_382_;
-                        f_342_ += (float) anInt1678;
+                        yC += (float) rasterWidth;
                     }
                 }
             }
@@ -3749,7 +3759,7 @@ final class Rasterizer {
         float f_434_ = (f_421_ - f_420_) * f_427_;
         float f_435_ = (f_423_ - f_422_) * f_427_;
         float f_436_ = (f_425_ - f_424_) * f_427_;
-        if (this.aBoolean1671) {
+        if (this.restrictEdges) {
             if (i_406_ > this.width) i_406_ = this.width;
             if (i_405_ < 0) {
                 f -= f_428_ * (float) i_405_;
@@ -3769,12 +3779,12 @@ final class Rasterizer {
             i += i_405_;
             while (i_426_-- > 0) {
                 float f_437_ = 1.0F / f;
-                if (f_437_ < aFloatArray1677[i]) {
+                if (f_437_ < depthBuffer[i]) {
                     float f_438_ = f_408_ * f_437_;
                     float f_439_ = f_410_ * f_437_;
-                    int i_440_ = ((int) (f_438_ * (float) anInt1693 * aFloat1681) & anInt1690);
-                    int i_441_ = ((int) (f_439_ * (float) anInt1693 * aFloat1681) & anInt1690);
-                    int i_442_ = anIntArray1698[i_441_ * anInt1693 + i_440_];
+                    int i_440_ = ((int) (f_438_ * (float) textureSize * aFloat1681) & textureLastIndex);
+                    int i_441_ = ((int) (f_439_ * (float) textureSize * aFloat1681) & textureLastIndex);
+                    int i_442_ = texturePixels[i_441_ * textureSize + i_440_];
                     i_440_ = ((int) (f_438_ * (float) anInt1691 * aFloat1684) & anInt1686);
                     i_441_ = ((int) (f_439_ * (float) anInt1691 * aFloat1684) & anInt1686);
                     int i_443_ = anIntArray1685[i_441_ * anInt1691 + i_440_];
@@ -3793,7 +3803,7 @@ final class Rasterizer {
                         i_447_ = (((i_447_ & 0xff00ff) * i_448_ & ~0xff00ff | (i_447_ & 0xff00) * i_448_ & 0xff0000) >>> 8) + i_449_;
                     }
                     is[i] = i_447_;
-                    aFloatArray1677[i] = f_437_;
+                    depthBuffer[i] = f_437_;
                 }
                 i++;
                 f += f_428_;
@@ -3809,182 +3819,184 @@ final class Rasterizer {
         }
     }
 
-    private final void method1026(int[] is, float[] fs, int i, int i_450_, int i_451_, int i_452_, int i_453_, float f, float f_454_) {
-        if (this.aBoolean1671) {
-            if (i_453_ > this.width) i_453_ = this.width;
-            if (i_452_ < 0) i_452_ = 0;
+    // method1026
+    private final void drawFlatScanLine(int[] dest, float[] depthBuffer, int destOff, int i_450_, int loops, int startX, int endX, float depth, float depthSlope) {
+        if (this.restrictEdges) {
+            if (endX > this.width) endX = this.width;
+            if (startX < 0) startX = 0;
         }
-        if (i_452_ < i_453_) {
-            i += i_452_ - 1;
-            i_451_ = i_453_ - i_452_ >> 2;
-            f += f_454_ * (float) i_452_;
+        if (startX < endX) {
+            destOff += startX - 1;
+            loops = endX - startX >> 2;
+            depth += depthSlope * (float) startX;
             if (aJavaThreadResource_1670.aBoolean2202) {
                 if (this.alpha == 0) {
-                    while (--i_451_ >= 0) {
-                        if (f < fs[++i]) {
-                            is[i] = i_450_;
-                            fs[i] = f;
+                    while (--loops >= 0) {
+                        if (depth < depthBuffer[++destOff]) {
+                            dest[destOff] = i_450_;
+                            depthBuffer[destOff] = depth;
                         }
-                        f += f_454_;
-                        if (f < fs[++i]) {
-                            is[i] = i_450_;
-                            fs[i] = f;
+                        depth += depthSlope;
+                        if (depth < depthBuffer[++destOff]) {
+                            dest[destOff] = i_450_;
+                            depthBuffer[destOff] = depth;
                         }
-                        f += f_454_;
-                        if (f < fs[++i]) {
-                            is[i] = i_450_;
-                            fs[i] = f;
+                        depth += depthSlope;
+                        if (depth < depthBuffer[++destOff]) {
+                            dest[destOff] = i_450_;
+                            depthBuffer[destOff] = depth;
                         }
-                        f += f_454_;
-                        if (f < fs[++i]) {
-                            is[i] = i_450_;
-                            fs[i] = f;
+                        depth += depthSlope;
+                        if (depth < depthBuffer[++destOff]) {
+                            dest[destOff] = i_450_;
+                            depthBuffer[destOff] = depth;
                         }
-                        f += f_454_;
+                        depth += depthSlope;
                     }
-                    i_451_ = i_453_ - i_452_ & 0x3;
-                    while (--i_451_ >= 0) {
-                        if (f < fs[++i]) {
-                            is[i] = i_450_;
-                            fs[i] = f;
+                    loops = endX - startX & 0x3;
+                    while (--loops >= 0) {
+                        if (depth < depthBuffer[++destOff]) {
+                            dest[destOff] = i_450_;
+                            depthBuffer[destOff] = depth;
                         }
-                        f += f_454_;
+                        depth += depthSlope;
                     }
                 } else if (this.alpha == 254) {
-                    if (i_452_ != 0 && i_453_ <= this.width - 1) {
-                        while (--i_451_ >= 0) {
-                            if (f < fs[++i]) is[i - 1] = is[i];
-                            f += f_454_;
-                            if (f < fs[++i]) is[i - 1] = is[i];
-                            f += f_454_;
-                            if (f < fs[++i]) is[i - 1] = is[i];
-                            f += f_454_;
-                            if (f < fs[++i]) is[i - 1] = is[i];
-                            f += f_454_;
+                    if (startX != 0 && endX <= this.width - 1) {
+                        while (--loops >= 0) {
+                            if (depth < depthBuffer[++destOff]) dest[destOff - 1] = dest[destOff];
+                            depth += depthSlope;
+                            if (depth < depthBuffer[++destOff]) dest[destOff - 1] = dest[destOff];
+                            depth += depthSlope;
+                            if (depth < depthBuffer[++destOff]) dest[destOff - 1] = dest[destOff];
+                            depth += depthSlope;
+                            if (depth < depthBuffer[++destOff]) dest[destOff - 1] = dest[destOff];
+                            depth += depthSlope;
                         }
-                        i_451_ = i_453_ - i_452_ & 0x3;
-                        while (--i_451_ >= 0) {
-                            if (f < fs[++i]) is[i - 1] = is[i];
-                            f += f_454_;
+                        loops = endX - startX & 0x3;
+                        while (--loops >= 0) {
+                            if (depth < depthBuffer[++destOff]) dest[destOff - 1] = dest[destOff];
+                            depth += depthSlope;
                         }
                     }
                 } else {
                     int i_455_ = this.alpha;
                     int i_456_ = 256 - this.alpha;
                     i_450_ = (((i_450_ & 0xff00ff) * i_456_ >> 8 & 0xff00ff) + ((i_450_ & 0xff00) * i_456_ >> 8 & 0xff00));
-                    while (--i_451_ >= 0) {
-                        if (f < fs[++i]) {
-                            int i_457_ = is[i];
-                            is[i] = (i_450_ + ((i_457_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_457_ & 0xff00) * i_455_ >> 8 & 0xff00));
-                            fs[i] = f;
+                    while (--loops >= 0) {
+                        if (depth < depthBuffer[++destOff]) {
+                            int i_457_ = dest[destOff];
+                            dest[destOff] = (i_450_ + ((i_457_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_457_ & 0xff00) * i_455_ >> 8 & 0xff00));
+                            depthBuffer[destOff] = depth;
                         }
-                        f += f_454_;
-                        if (f < fs[++i]) {
-                            int i_458_ = is[i];
-                            is[i] = (i_450_ + ((i_458_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_458_ & 0xff00) * i_455_ >> 8 & 0xff00));
-                            fs[i] = f;
+                        depth += depthSlope;
+                        if (depth < depthBuffer[++destOff]) {
+                            int i_458_ = dest[destOff];
+                            dest[destOff] = (i_450_ + ((i_458_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_458_ & 0xff00) * i_455_ >> 8 & 0xff00));
+                            depthBuffer[destOff] = depth;
                         }
-                        f += f_454_;
-                        if (f < fs[++i]) {
-                            int i_459_ = is[i];
-                            is[i] = (i_450_ + ((i_459_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_459_ & 0xff00) * i_455_ >> 8 & 0xff00));
-                            fs[i] = f;
+                        depth += depthSlope;
+                        if (depth < depthBuffer[++destOff]) {
+                            int i_459_ = dest[destOff];
+                            dest[destOff] = (i_450_ + ((i_459_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_459_ & 0xff00) * i_455_ >> 8 & 0xff00));
+                            depthBuffer[destOff] = depth;
                         }
-                        f += f_454_;
-                        if (f < fs[++i]) {
-                            int i_460_ = is[i];
-                            is[i] = (i_450_ + ((i_460_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_460_ & 0xff00) * i_455_ >> 8 & 0xff00));
-                            fs[i] = f;
+                        depth += depthSlope;
+                        if (depth < depthBuffer[++destOff]) {
+                            int i_460_ = dest[destOff];
+                            dest[destOff] = (i_450_ + ((i_460_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_460_ & 0xff00) * i_455_ >> 8 & 0xff00));
+                            depthBuffer[destOff] = depth;
                         }
-                        f += f_454_;
+                        depth += depthSlope;
                     }
-                    i_451_ = i_453_ - i_452_ & 0x3;
-                    while (--i_451_ >= 0) {
-                        if (f < fs[++i]) {
-                            int i_461_ = is[i];
-                            is[i] = (i_450_ + ((i_461_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_461_ & 0xff00) * i_455_ >> 8 & 0xff00));
-                            fs[i] = f;
+                    loops = endX - startX & 0x3;
+                    while (--loops >= 0) {
+                        if (depth < depthBuffer[++destOff]) {
+                            int i_461_ = dest[destOff];
+                            dest[destOff] = (i_450_ + ((i_461_ & 0xff00ff) * i_455_ >> 8 & 0xff00ff) + ((i_461_ & 0xff00) * i_455_ >> 8 & 0xff00));
+                            depthBuffer[destOff] = depth;
                         }
-                        f += f_454_;
+                        depth += depthSlope;
                     }
                 }
             } else if (this.alpha == 0) {
-                while (--i_451_ >= 0) {
-                    if (f < fs[++i]) is[i] = i_450_;
-                    f += f_454_;
-                    if (f < fs[++i]) is[i] = i_450_;
-                    f += f_454_;
-                    if (f < fs[++i]) is[i] = i_450_;
-                    f += f_454_;
-                    if (f < fs[++i]) is[i] = i_450_;
-                    f += f_454_;
+                while (--loops >= 0) {
+                    if (depth < depthBuffer[++destOff]) dest[destOff] = i_450_;
+                    depth += depthSlope;
+                    if (depth < depthBuffer[++destOff]) dest[destOff] = i_450_;
+                    depth += depthSlope;
+                    if (depth < depthBuffer[++destOff]) dest[destOff] = i_450_;
+                    depth += depthSlope;
+                    if (depth < depthBuffer[++destOff]) dest[destOff] = i_450_;
+                    depth += depthSlope;
                 }
-                i_451_ = i_453_ - i_452_ & 0x3;
-                while (--i_451_ >= 0) {
-                    if (f < fs[++i]) is[i] = i_450_;
-                    f += f_454_;
+                loops = endX - startX & 0x3;
+                while (--loops >= 0) {
+                    if (depth < depthBuffer[++destOff]) dest[destOff] = i_450_;
+                    depth += depthSlope;
                 }
             } else if (this.alpha == 254) {
-                if (i_452_ != 0 && i_453_ <= this.width - 1) {
-                    while (--i_451_ >= 0) {
-                        if (f < fs[++i]) is[i - 1] = is[i];
-                        f += f_454_;
-                        if (f < fs[++i]) is[i - 1] = is[i];
-                        f += f_454_;
-                        if (f < fs[++i]) is[i - 1] = is[i];
-                        f += f_454_;
-                        if (f < fs[++i]) is[i - 1] = is[i];
-                        f += f_454_;
+                if (startX != 0 && endX <= this.width - 1) {
+                    while (--loops >= 0) {
+                        if (depth < depthBuffer[++destOff]) dest[destOff - 1] = dest[destOff];
+                        depth += depthSlope;
+                        if (depth < depthBuffer[++destOff]) dest[destOff - 1] = dest[destOff];
+                        depth += depthSlope;
+                        if (depth < depthBuffer[++destOff]) dest[destOff - 1] = dest[destOff];
+                        depth += depthSlope;
+                        if (depth < depthBuffer[++destOff]) dest[destOff - 1] = dest[destOff];
+                        depth += depthSlope;
                     }
-                    i_451_ = i_453_ - i_452_ & 0x3;
-                    while (--i_451_ >= 0) {
-                        if (f < fs[++i]) is[i - 1] = is[i];
-                        f += f_454_;
+                    loops = endX - startX & 0x3;
+                    while (--loops >= 0) {
+                        if (depth < depthBuffer[++destOff]) dest[destOff - 1] = dest[destOff];
+                        depth += depthSlope;
                     }
                 }
             } else {
                 int i_462_ = this.alpha;
                 int i_463_ = 256 - this.alpha;
                 i_450_ = (((i_450_ & 0xff00ff) * i_463_ >> 8 & 0xff00ff) + ((i_450_ & 0xff00) * i_463_ >> 8 & 0xff00));
-                while (--i_451_ >= 0) {
-                    if (f < fs[++i]) {
-                        int i_464_ = is[i];
-                        is[i] = (i_450_ + ((i_464_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_464_ & 0xff00) * i_462_ >> 8 & 0xff00));
+                while (--loops >= 0) {
+                    if (depth < depthBuffer[++destOff]) {
+                        int i_464_ = dest[destOff];
+                        dest[destOff] = (i_450_ + ((i_464_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_464_ & 0xff00) * i_462_ >> 8 & 0xff00));
                     }
-                    f += f_454_;
-                    if (f < fs[++i]) {
-                        int i_465_ = is[i];
-                        is[i] = (i_450_ + ((i_465_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_465_ & 0xff00) * i_462_ >> 8 & 0xff00));
+                    depth += depthSlope;
+                    if (depth < depthBuffer[++destOff]) {
+                        int i_465_ = dest[destOff];
+                        dest[destOff] = (i_450_ + ((i_465_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_465_ & 0xff00) * i_462_ >> 8 & 0xff00));
                     }
-                    f += f_454_;
-                    if (f < fs[++i]) {
-                        int i_466_ = is[i];
-                        is[i] = (i_450_ + ((i_466_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_466_ & 0xff00) * i_462_ >> 8 & 0xff00));
+                    depth += depthSlope;
+                    if (depth < depthBuffer[++destOff]) {
+                        int i_466_ = dest[destOff];
+                        dest[destOff] = (i_450_ + ((i_466_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_466_ & 0xff00) * i_462_ >> 8 & 0xff00));
                     }
-                    f += f_454_;
-                    if (f < fs[++i]) {
-                        int i_467_ = is[i];
-                        is[i] = (i_450_ + ((i_467_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_467_ & 0xff00) * i_462_ >> 8 & 0xff00));
+                    depth += depthSlope;
+                    if (depth < depthBuffer[++destOff]) {
+                        int i_467_ = dest[destOff];
+                        dest[destOff] = (i_450_ + ((i_467_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_467_ & 0xff00) * i_462_ >> 8 & 0xff00));
                     }
-                    f += f_454_;
+                    depth += depthSlope;
                 }
-                i_451_ = i_453_ - i_452_ & 0x3;
-                while (--i_451_ >= 0) {
-                    if (f < fs[++i]) {
-                        int i_468_ = is[i];
-                        is[i] = (i_450_ + ((i_468_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_468_ & 0xff00) * i_462_ >> 8 & 0xff00));
+                loops = endX - startX & 0x3;
+                while (--loops >= 0) {
+                    if (depth < depthBuffer[++destOff]) {
+                        int i_468_ = dest[destOff];
+                        dest[destOff] = (i_450_ + ((i_468_ & 0xff00ff) * i_462_ >> 8 & 0xff00ff) + ((i_468_ & 0xff00) * i_462_ >> 8 & 0xff00));
                     }
-                    f += f_454_;
+                    depth += depthSlope;
                 }
             }
         }
     }
 
-    final void method1027(float f, float f_469_, float f_470_, float f_471_, float f_472_, float f_473_, float f_474_, float f_475_, float f_476_, int i, int i_477_, int i_478_) {
-        if (aBoolean1675) {
-            aHa_Sub1_1666.method3645((int) f, (int) f_471_, (int) f_472_, -8003, ~0xffffff | i, (int) f_469_);
-            aHa_Sub1_1666.method3645((int) f_469_, (int) f_472_, (int) f_473_, -8003, ~0xffffff | i, (int) f_470_);
-            aHa_Sub1_1666.method3645((int) f_470_, (int) f_473_, (int) f_471_, -8003, ~0xffffff | i, (int) f);
+    // method1027
+    final void renderTriangleRgb(float f, float f_469_, float f_470_, float f_471_, float f_472_, float f_473_, float f_474_, float f_475_, float f_476_, int i, int i_477_, int i_478_) {
+        if (useExternalRenderer) {
+            aJavaToolkit_1666.method3645((int) f, (int) f_471_, (int) f_472_, -8003, ~0xffffff | i, (int) f_469_);
+            aJavaToolkit_1666.method3645((int) f_469_, (int) f_472_, (int) f_473_, -8003, ~0xffffff | i, (int) f_470_);
+            aJavaToolkit_1666.method3645((int) f_470_, (int) f_473_, (int) f_471_, -8003, ~0xffffff | i, (int) f);
         } else {
             float f_479_ = f_472_ - f_471_;
             float f_480_ = f_469_ - f;
@@ -4018,9 +4030,9 @@ final class Rasterizer {
                 float f_501_ = (f_489_ * f_482_ - f_490_ * f_480_) / f_494_;
                 float f_502_ = (f_490_ * f_479_ - f_489_ * f_481_) / f_494_;
                 if (f <= f_469_ && f <= f_470_) {
-                    if (!(f >= (float) this.anInt1672)) {
-                        if (f_469_ > (float) this.anInt1672) f_469_ = (float) this.anInt1672;
-                        if (f_470_ > (float) this.anInt1672) f_470_ = (float) this.anInt1672;
+                    if (!(f >= (float) this.height)) {
+                        if (f_469_ > (float) this.height) f_469_ = (float) this.height;
+                        if (f_470_ > (float) this.height) f_470_ = (float) this.height;
                         f_474_ = f_474_ - f_495_ * f_471_ + f_495_;
                         float f_503_ = ((float) (i & 0xff0000) - f_497_ * f_471_ + f_497_);
                         float f_504_ = (float) (i & 0xff00) - f_499_ * f_471_ + f_499_;
@@ -4043,50 +4055,50 @@ final class Rasterizer {
                             if (f != f_469_ && f_493_ < f_492_ || f == f_469_ && f_493_ > f_491_) {
                                 f_470_ -= f_469_;
                                 f_469_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
+                                f = (float) (this.lineOffsets[(int) f]);
                                 while (--f_469_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_473_, (int) f_471_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f, 0, 0, (int) f_473_, (int) f_471_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_493_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
                                     f_503_ += f_498_;
                                     f_504_ += f_500_;
                                     f_505_ += f_502_;
-                                    f += (float) anInt1678;
+                                    f += (float) rasterWidth;
                                 }
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_473_, (int) f_472_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f, 0, 0, (int) f_473_, (int) f_472_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_493_;
                                     f_472_ += f_491_;
                                     f_474_ += f_496_;
                                     f_503_ += f_498_;
                                     f_504_ += f_500_;
                                     f_505_ += f_502_;
-                                    f += (float) anInt1678;
+                                    f += (float) rasterWidth;
                                 }
                             } else {
                                 f_470_ -= f_469_;
                                 f_469_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
+                                f = (float) (this.lineOffsets[(int) f]);
                                 while (--f_469_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_471_, (int) f_473_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f, 0, 0, (int) f_471_, (int) f_473_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_493_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
                                     f_503_ += f_498_;
                                     f_504_ += f_500_;
                                     f_505_ += f_502_;
-                                    f += (float) anInt1678;
+                                    f += (float) rasterWidth;
                                 }
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_472_, (int) f_473_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f, 0, 0, (int) f_472_, (int) f_473_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_493_;
                                     f_472_ += f_491_;
                                     f_474_ += f_496_;
                                     f_503_ += f_498_;
                                     f_504_ += f_500_;
                                     f_505_ += f_502_;
-                                    f += (float) anInt1678;
+                                    f += (float) rasterWidth;
                                 }
                             }
                         } else {
@@ -4107,58 +4119,58 @@ final class Rasterizer {
                             if (f != f_470_ && f_493_ < f_492_ || f == f_470_ && f_491_ > f_492_) {
                                 f_469_ -= f_470_;
                                 f_470_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
+                                f = (float) (this.lineOffsets[(int) f]);
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_472_, (int) f_471_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f, 0, 0, (int) f_472_, (int) f_471_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_472_ += f_493_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
                                     f_503_ += f_498_;
                                     f_504_ += f_500_;
                                     f_505_ += f_502_;
-                                    f += (float) anInt1678;
+                                    f += (float) rasterWidth;
                                 }
                                 while (--f_469_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_473_, (int) f_471_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f, 0, 0, (int) f_473_, (int) f_471_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_491_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
                                     f_503_ += f_498_;
                                     f_504_ += f_500_;
                                     f_505_ += f_502_;
-                                    f += (float) anInt1678;
+                                    f += (float) rasterWidth;
                                 }
                             } else {
                                 f_469_ -= f_470_;
                                 f_470_ -= f;
-                                f = (float) (this.anIntArray1676[(int) f]);
+                                f = (float) (this.lineOffsets[(int) f]);
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_471_, (int) f_472_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f, 0, 0, (int) f_471_, (int) f_472_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_472_ += f_493_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
                                     f_503_ += f_498_;
                                     f_504_ += f_500_;
                                     f_505_ += f_502_;
-                                    f += (float) anInt1678;
+                                    f += (float) rasterWidth;
                                 }
                                 while (--f_469_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f, 0, 0, (int) f_471_, (int) f_473_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f, 0, 0, (int) f_471_, (int) f_473_, f_474_, f_495_, f_503_, f_497_, f_504_, f_499_, f_505_, f_501_);
                                     f_473_ += f_491_;
                                     f_471_ += f_492_;
                                     f_474_ += f_496_;
                                     f_503_ += f_498_;
                                     f_504_ += f_500_;
                                     f_505_ += f_502_;
-                                    f += (float) anInt1678;
+                                    f += (float) rasterWidth;
                                 }
                             }
                         }
                     }
                 } else if (f_469_ <= f_470_) {
-                    if (!(f_469_ >= (float) this.anInt1672)) {
-                        if (f_470_ > (float) this.anInt1672) f_470_ = (float) this.anInt1672;
-                        if (f > (float) this.anInt1672) f = (float) this.anInt1672;
+                    if (!(f_469_ >= (float) this.height)) {
+                        if (f_470_ > (float) this.height) f_470_ = (float) this.height;
+                        if (f > (float) this.height) f = (float) this.height;
                         f_475_ = f_475_ - f_495_ * f_472_ + f_495_;
                         float f_506_ = ((float) (i_477_ & 0xff0000) - f_497_ * f_472_ + f_497_);
                         float f_507_ = ((float) (i_477_ & 0xff00) - f_499_ * f_472_ + f_499_);
@@ -4181,50 +4193,50 @@ final class Rasterizer {
                             if (f_469_ != f_470_ && f_492_ < f_491_ || f_469_ == f_470_ && f_492_ > f_493_) {
                                 f -= f_470_;
                                 f_470_ -= f_469_;
-                                f_469_ = (float) (this.anIntArray1676[(int) f_469_]);
+                                f_469_ = (float) (this.lineOffsets[(int) f_469_]);
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_471_, (int) f_472_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f_469_, 0, 0, (int) f_471_, (int) f_472_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_492_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
                                     f_506_ += f_498_;
                                     f_507_ += f_500_;
                                     f_508_ += f_502_;
-                                    f_469_ += (float) anInt1678;
+                                    f_469_ += (float) rasterWidth;
                                 }
                                 while (--f >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_471_, (int) f_473_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f_469_, 0, 0, (int) f_471_, (int) f_473_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_492_;
                                     f_473_ += f_493_;
                                     f_475_ += f_496_;
                                     f_506_ += f_498_;
                                     f_507_ += f_500_;
                                     f_508_ += f_502_;
-                                    f_469_ += (float) anInt1678;
+                                    f_469_ += (float) rasterWidth;
                                 }
                             } else {
                                 f -= f_470_;
                                 f_470_ -= f_469_;
-                                f_469_ = (float) (this.anIntArray1676[(int) f_469_]);
+                                f_469_ = (float) (this.lineOffsets[(int) f_469_]);
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_472_, (int) f_471_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f_469_, 0, 0, (int) f_472_, (int) f_471_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_492_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
                                     f_506_ += f_498_;
                                     f_507_ += f_500_;
                                     f_508_ += f_502_;
-                                    f_469_ += (float) anInt1678;
+                                    f_469_ += (float) rasterWidth;
                                 }
                                 while (--f >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_473_, (int) f_471_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f_469_, 0, 0, (int) f_473_, (int) f_471_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_492_;
                                     f_473_ += f_493_;
                                     f_475_ += f_496_;
                                     f_506_ += f_498_;
                                     f_507_ += f_500_;
                                     f_508_ += f_502_;
-                                    f_469_ += (float) anInt1678;
+                                    f_469_ += (float) rasterWidth;
                                 }
                             }
                         } else {
@@ -4245,57 +4257,57 @@ final class Rasterizer {
                             if (f_492_ < f_491_) {
                                 f_470_ -= f;
                                 f -= f_469_;
-                                f_469_ = (float) (this.anIntArray1676[(int) f_469_]);
+                                f_469_ = (float) (this.lineOffsets[(int) f_469_]);
                                 while (--f >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_473_, (int) f_472_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f_469_, 0, 0, (int) f_473_, (int) f_472_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_473_ += f_492_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
                                     f_506_ += f_498_;
                                     f_507_ += f_500_;
                                     f_508_ += f_502_;
-                                    f_469_ += (float) anInt1678;
+                                    f_469_ += (float) rasterWidth;
                                 }
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_471_, (int) f_472_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f_469_, 0, 0, (int) f_471_, (int) f_472_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_493_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
                                     f_506_ += f_498_;
                                     f_507_ += f_500_;
                                     f_508_ += f_502_;
-                                    f_469_ += (float) anInt1678;
+                                    f_469_ += (float) rasterWidth;
                                 }
                             } else {
                                 f_470_ -= f;
                                 f -= f_469_;
-                                f_469_ = (float) (this.anIntArray1676[(int) f_469_]);
+                                f_469_ = (float) (this.lineOffsets[(int) f_469_]);
                                 while (--f >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_472_, (int) f_473_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f_469_, 0, 0, (int) f_472_, (int) f_473_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_473_ += f_492_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
                                     f_506_ += f_498_;
                                     f_507_ += f_500_;
                                     f_508_ += f_502_;
-                                    f_469_ += (float) anInt1678;
+                                    f_469_ += (float) rasterWidth;
                                 }
                                 while (--f_470_ >= 0.0F) {
-                                    method1021(anIntArray1673, aFloatArray1677, (int) f_469_, 0, 0, (int) f_472_, (int) f_471_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
+                                    method1021(raster, depthBuffer, (int) f_469_, 0, 0, (int) f_472_, (int) f_471_, f_475_, f_495_, f_506_, f_497_, f_507_, f_499_, f_508_, f_501_);
                                     f_471_ += f_493_;
                                     f_472_ += f_491_;
                                     f_475_ += f_496_;
                                     f_506_ += f_498_;
                                     f_507_ += f_500_;
                                     f_508_ += f_502_;
-                                    f_469_ += (float) anInt1678;
+                                    f_469_ += (float) rasterWidth;
                                 }
                             }
                         }
                     }
-                } else if (!(f_470_ >= (float) this.anInt1672)) {
-                    if (f > (float) this.anInt1672) f = (float) this.anInt1672;
-                    if (f_469_ > (float) this.anInt1672) f_469_ = (float) this.anInt1672;
+                } else if (!(f_470_ >= (float) this.height)) {
+                    if (f > (float) this.height) f = (float) this.height;
+                    if (f_469_ > (float) this.height) f_469_ = (float) this.height;
                     f_476_ = f_476_ - f_495_ * f_473_ + f_495_;
                     float f_509_ = ((float) (i_478_ & 0xff0000) - f_497_ * f_473_ + f_497_);
                     float f_510_ = (float) (i_478_ & 0xff00) - f_499_ * f_473_ + f_499_;
@@ -4318,50 +4330,50 @@ final class Rasterizer {
                         if (f_491_ < f_493_) {
                             f_469_ -= f;
                             f -= f_470_;
-                            f_470_ = (float) (this.anIntArray1676[(int) f_470_]);
+                            f_470_ = (float) (this.lineOffsets[(int) f_470_]);
                             while (--f >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_472_, (int) f_473_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
+                                method1021(raster, depthBuffer, (int) f_470_, 0, 0, (int) f_472_, (int) f_473_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_491_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
                                 f_509_ += f_498_;
                                 f_510_ += f_500_;
                                 f_511_ += f_502_;
-                                f_470_ += (float) anInt1678;
+                                f_470_ += (float) rasterWidth;
                             }
                             while (--f_469_ >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_472_, (int) f_471_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
+                                method1021(raster, depthBuffer, (int) f_470_, 0, 0, (int) f_472_, (int) f_471_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_491_;
                                 f_471_ += f_492_;
                                 f_476_ += f_496_;
                                 f_509_ += f_498_;
                                 f_510_ += f_500_;
                                 f_511_ += f_502_;
-                                f_470_ += (float) anInt1678;
+                                f_470_ += (float) rasterWidth;
                             }
                         } else {
                             f_469_ -= f;
                             f -= f_470_;
-                            f_470_ = (float) (this.anIntArray1676[(int) f_470_]);
+                            f_470_ = (float) (this.lineOffsets[(int) f_470_]);
                             while (--f >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_473_, (int) f_472_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
+                                method1021(raster, depthBuffer, (int) f_470_, 0, 0, (int) f_473_, (int) f_472_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_491_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
                                 f_509_ += f_498_;
                                 f_510_ += f_500_;
                                 f_511_ += f_502_;
-                                f_470_ += (float) anInt1678;
+                                f_470_ += (float) rasterWidth;
                             }
                             while (--f_469_ >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_471_, (int) f_472_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
+                                method1021(raster, depthBuffer, (int) f_470_, 0, 0, (int) f_471_, (int) f_472_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_491_;
                                 f_471_ += f_492_;
                                 f_476_ += f_496_;
                                 f_509_ += f_498_;
                                 f_510_ += f_500_;
                                 f_511_ += f_502_;
-                                f_470_ += (float) anInt1678;
+                                f_470_ += (float) rasterWidth;
                             }
                         }
                     } else {
@@ -4382,50 +4394,50 @@ final class Rasterizer {
                         if (f_491_ < f_493_) {
                             f -= f_469_;
                             f_469_ -= f_470_;
-                            f_470_ = (float) (this.anIntArray1676[(int) f_470_]);
+                            f_470_ = (float) (this.lineOffsets[(int) f_470_]);
                             while (--f_469_ >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_471_, (int) f_473_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
+                                method1021(raster, depthBuffer, (int) f_470_, 0, 0, (int) f_471_, (int) f_473_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_471_ += f_491_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
                                 f_509_ += f_498_;
                                 f_510_ += f_500_;
                                 f_511_ += f_502_;
-                                f_470_ += (float) anInt1678;
+                                f_470_ += (float) rasterWidth;
                             }
                             while (--f >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_472_, (int) f_473_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
+                                method1021(raster, depthBuffer, (int) f_470_, 0, 0, (int) f_472_, (int) f_473_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_492_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
                                 f_509_ += f_498_;
                                 f_510_ += f_500_;
                                 f_511_ += f_502_;
-                                f_470_ += (float) anInt1678;
+                                f_470_ += (float) rasterWidth;
                             }
                         } else {
                             f -= f_469_;
                             f_469_ -= f_470_;
-                            f_470_ = (float) (this.anIntArray1676[(int) f_470_]);
+                            f_470_ = (float) (this.lineOffsets[(int) f_470_]);
                             while (--f_469_ >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_473_, (int) f_471_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
+                                method1021(raster, depthBuffer, (int) f_470_, 0, 0, (int) f_473_, (int) f_471_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_471_ += f_491_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
                                 f_509_ += f_498_;
                                 f_510_ += f_500_;
                                 f_511_ += f_502_;
-                                f_470_ += (float) anInt1678;
+                                f_470_ += (float) rasterWidth;
                             }
                             while (--f >= 0.0F) {
-                                method1021(anIntArray1673, aFloatArray1677, (int) f_470_, 0, 0, (int) f_473_, (int) f_472_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
+                                method1021(raster, depthBuffer, (int) f_470_, 0, 0, (int) f_473_, (int) f_472_, f_476_, f_495_, f_509_, f_497_, f_510_, f_499_, f_511_, f_501_);
                                 f_472_ += f_492_;
                                 f_473_ += f_493_;
                                 f_476_ += f_496_;
                                 f_509_ += f_498_;
                                 f_510_ += f_500_;
                                 f_511_ += f_502_;
-                                f_470_ += (float) anInt1678;
+                                f_470_ += (float) rasterWidth;
                             }
                         }
                     }
@@ -4435,34 +4447,34 @@ final class Rasterizer {
     }
 
     final int method1028() {
-        return this.anIntArray1676[0] % anInt1678;
+        return this.lineOffsets[0] % rasterWidth;
     }
 
-    Rasterizer(ha_Sub1 var_ha_Sub1, JavaThreadResource javaThreadResource) {
+    Rasterizer(JavaToolkit var_javaToolkit, JavaThreadResource javaThreadResource) {
         this.aBoolean1669 = true;
-        this.aBoolean1671 = false;
+        this.restrictEdges = false;
         aBoolean1680 = false;
         aFloat1682 = 0.0F;
         anIntArray1685 = null;
         anInt1687 = -1;
         aFloat1684 = 0.0F;
-        anInt1693 = 0;
+        textureSize = 0;
         anInt1691 = 0;
         anIntArray1692 = null;
         anInt1689 = -1;
-        anInt1683 = 0;
+        textureAlphaBlendMode = 0;
         aFloat1681 = 0.0F;
-        aBoolean1694 = true;
+        repeatTexture = true;
         anInt1688 = 0;
         anInt1695 = 0;
         anInt1686 = 0;
-        anInt1690 = 0;
+        textureLastIndex = 0;
         anInt1697 = -1;
-        anIntArray1698 = null;
-        aHa_Sub1_1666 = var_ha_Sub1;
+        texturePixels = null;
+        aJavaToolkit_1666 = var_javaToolkit;
         aJavaThreadResource_1670 = javaThreadResource;
-        anInt1678 = aHa_Sub1_1666.anInt7477;
-        anIntArray1673 = aHa_Sub1_1666.anIntArray7483;
-        aFloatArray1677 = aHa_Sub1_1666.aFloatArray7511;
+        rasterWidth = aJavaToolkit_1666.surfaceWidth;
+        raster = aJavaToolkit_1666.anIntArray7483;
+        depthBuffer = aJavaToolkit_1666.aFloatArray7511;
     }
 }

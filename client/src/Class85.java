@@ -62,17 +62,17 @@ final class Class85 {
     static final void method828(byte i, int i_13_, int i_14_) {
         if (i != 38) method828((byte) 63, 119, 33);
         anInt1467++;
-        if (Class21.aHa326 != null) {
+        if (Class21.aToolkit326 != null) {
             int i_15_ = Class31.anInt425;
             int i_16_ = Class250.anInt3225;
             Option_Sub8.method1752(-1, i_13_, i_14_);
             if (Packet.anInt7207 == 0) {
                 Class17.anInterface4_252 = null;
-                Class17.anInterface4_252 = (Class21.aHa326.method3634(Class21.aHa326.method3665((Class348_Sub16_Sub1.anInt8854), Option_Sub16.anInt6008), Class21.aHa326.method3624((Class348_Sub16_Sub1.anInt8854), Option_Sub16.anInt6008)));
+                Class17.anInterface4_252 = (Class21.aToolkit326.method3634(Class21.aToolkit326.method3665((Class348_Sub16_Sub1.anInt8854), Option_Sub16.anInt6008), Class21.aToolkit326.method3624((Class348_Sub16_Sub1.anInt8854), Option_Sub16.anInt6008)));
             } else if (Packet.anInt7207 == 1 && (Class92.anInterface4Array1525 == null || i_15_ != Class31.anInt425 || i_16_ != Class250.anInt3225)) {
                 Class92.anInterface4Array1525 = new Interface4[Class250.anInt3225 * Class31.anInt425];
                 for (int i_17_ = 0; Class92.anInterface4Array1525.length > i_17_; i_17_++)
-                    Class92.anInterface4Array1525[i_17_] = (Class21.aHa326.method3634(Class21.aHa326.method3665(Class58.anInt1067, Class344.anInt4267), Class21.aHa326.method3624(Class58.anInt1067, Class344.anInt4267)));
+                    Class92.anInterface4Array1525[i_17_] = (Class21.aToolkit326.method3634(Class21.aToolkit326.method3665(Class58.anInt1067, Class344.anInt4267), Class21.aToolkit326.method3624(Class58.anInt1067, Class344.anInt4267)));
                 Class132.anIntArray1909 = new int[Class31.anInt425 * Class250.anInt3225];
                 Class318_Sub1_Sub1_Sub2.anInt9997 = 1;
             }
@@ -98,7 +98,7 @@ final class Class85 {
         int i_24_ = Class348_Sub42_Sub12.method3229(-82);
         if (i_22_ == 102) {
             if (i == 3 || i_24_ == 3) bool = true;
-            if (!Class348_Sub8.aHa6654.method3695()) bool = true;
+            if (!Class348_Sub8.aToolkit6654.method3695()) bool = true;
             Class215.method1580((byte) -125, bool, i_21_, i_24_, i, i_23_);
         }
     }

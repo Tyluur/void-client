@@ -21,7 +21,7 @@ final class Class93 {
         anApplet1530 = null;
     }
 
-    static final ha method862(Canvas canvas, TextureSource var_d, Index index, int i, int i_1_) {
+    static final Toolkit method862(Canvas canvas, TextureSource var_d, Index index, int i, int i_1_) {
         try {
             anInt1532++;
             if (!Class9.method215(27165)) throw new RuntimeException("");

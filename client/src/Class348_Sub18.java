@@ -90,7 +90,7 @@ final class Class348_Sub18 extends Node {
             Class24.method297(false);
             Class186_Sub1.method1402(1);
             Class66.aClass60_1174.method590(0);
-            Class348_Sub8.aHa6654.method3663();
+            Class348_Sub8.aToolkit6654.method3663();
             Class238_Sub1.method1707(26469);
             Packet.method3354(-52);
             Class348_Sub29.ANIMATION_SKELETONS.method412((byte) -124);

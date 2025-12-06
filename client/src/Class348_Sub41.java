@@ -71,18 +71,18 @@ final class Class348_Sub41 extends Node {
 
     static final void method3157(int i, byte i_15_, int i_16_, int i_17_, boolean bool) {
         anInt7049++;
-        if (bool || i_16_ != ha.anInt4581 || Class327.anInt4095 != i || (QuickChatPhraseTypeList.anInt4372 != JavaThreadResource.anInt2204 && Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) != 1)) {
-            ha.anInt4581 = i_16_;
+        if (bool || i_16_ != Toolkit.anInt4581 || Class327.anInt4095 != i || (QuickChatPhraseTypeList.anInt4372 != JavaThreadResource.anInt2204 && Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) != 1)) {
+            Toolkit.anInt4581 = i_16_;
             Class327.anInt4095 = i;
             JavaThreadResource.anInt2204 = QuickChatPhraseTypeList.anInt4372;
             if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1) JavaThreadResource.anInt2204 = 0;
             Packet.setStep(2, i_17_);
-            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3495.method2063(Class348_Sub33.language, 544), 2, Class348_Sub8.aHa6654);
+            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3495.method2063(Class348_Sub33.language, 544), 2, Class348_Sub8.aToolkit6654);
             int i_18_ = za_Sub2.regionTileX;
             int i_19_ = Class90.regionTileY;
-            za_Sub2.regionTileX = (-(Class367_Sub4.mapLength >> 4) + ha.anInt4581) * 8;
+            za_Sub2.regionTileX = (-(Class367_Sub4.mapLength >> 4) + Toolkit.anInt4581) * 8;
             Class90.regionTileY = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.mapWidth >> 4));
-            Class348_Sub26.aClass348_Sub42_Sub14_6885 = Class75.method766(ha.anInt4581 * 8, Class327.anInt4095 * 8);
+            Class348_Sub26.aClass348_Sub42_Sub14_6885 = Class75.method766(Toolkit.anInt4581 * 8, Class327.anInt4095 * 8);
             r_Sub2.aClass252_10488 = null;
             int i_20_ = za_Sub2.regionTileX - i_18_;
             int i_21_ = -i_19_ + Class90.regionTileY;
@@ -229,7 +229,7 @@ final class Class348_Sub41 extends Node {
         return is_41_;
     }
 
-    static final void method3159(int i, int i_42_, boolean bool, int i_43_, int i_44_, int i_45_, ha var_ha, int i_46_, int i_47_) {
+    static final void method3159(int i, int i_42_, boolean bool, int i_43_, int i_44_, int i_45_, Toolkit var_toolkit, int i_46_, int i_47_) {
         anInt7051++;
         Interface10 interface10 = (Interface10) r_Sub2.method3297(i_43_, i_45_, i_44_);
         if (interface10 != null) {
@@ -241,28 +241,28 @@ final class Class348_Sub41 extends Node {
                 if (class51.anInt874 > 0) i_50_ = i;
                 if (i_49_ == 0 || i_49_ == 2) {
                     if (i_48_ != 0) {
-                        if (i_48_ == 1) var_ha.method3649((byte) -79, 4, i_42_, i_50_, i_46_);
-                        else if (i_48_ == 2) var_ha.method3660(3 + i_46_, i_50_, 4, i_42_, true);
-                        else if (i_48_ == 3) var_ha.method3649((byte) -121, 4, i_42_ + 3, i_50_, i_46_);
-                    } else var_ha.method3660(i_46_, i_50_, 4, i_42_, !bool);
+                        if (i_48_ == 1) var_toolkit.method3649((byte) -79, 4, i_42_, i_50_, i_46_);
+                        else if (i_48_ == 2) var_toolkit.method3660(3 + i_46_, i_50_, 4, i_42_, true);
+                        else if (i_48_ == 3) var_toolkit.method3649((byte) -121, 4, i_42_ + 3, i_50_, i_46_);
+                    } else var_toolkit.method3660(i_46_, i_50_, 4, i_42_, !bool);
                 }
                 if (i_49_ == 3) {
                     if (i_48_ != 0) {
-                        if (i_48_ == 1) var_ha.method3675(1, (byte) -125, 3 + i_46_, i_42_, 1, i_50_);
+                        if (i_48_ == 1) var_toolkit.method3675(1, (byte) -125, 3 + i_46_, i_42_, 1, i_50_);
                         else if (i_48_ != 2) {
-                            if (i_48_ == 3) var_ha.method3675(1, (byte) -125, i_46_, 3 + i_42_, 1, i_50_);
-                        } else var_ha.method3675(1, (byte) -125, 3 + i_46_, 3 + i_42_, 1, i_50_);
-                    } else var_ha.method3675(1, (byte) -125, i_46_, i_42_, 1, i_50_);
+                            if (i_48_ == 3) var_toolkit.method3675(1, (byte) -125, i_46_, 3 + i_42_, 1, i_50_);
+                        } else var_toolkit.method3675(1, (byte) -125, 3 + i_46_, 3 + i_42_, 1, i_50_);
+                    } else var_toolkit.method3675(1, (byte) -125, i_46_, i_42_, 1, i_50_);
                 }
                 if (i_49_ == 2) {
                     if (i_48_ != 0) {
-                        if (i_48_ == 1) var_ha.method3660(3 + i_46_, i_50_, 4, i_42_, true);
+                        if (i_48_ == 1) var_toolkit.method3660(3 + i_46_, i_50_, 4, i_42_, true);
                         else if (i_48_ != 2) {
-                            if (i_48_ == 3) var_ha.method3660(i_46_, i_50_, 4, i_42_, true);
-                        } else var_ha.method3649((byte) -106, 4, 3 + i_42_, i_50_, i_46_);
-                    } else var_ha.method3649((byte) -96, 4, i_42_, i_50_, i_46_);
+                            if (i_48_ == 3) var_toolkit.method3660(i_46_, i_50_, 4, i_42_, true);
+                        } else var_toolkit.method3649((byte) -106, 4, 3 + i_42_, i_50_, i_46_);
+                    } else var_toolkit.method3649((byte) -96, 4, i_42_, i_50_, i_46_);
                 }
-            } else Class267.method2028(i_46_, class51, i_42_, var_ha, i_48_, 126);
+            } else Class267.method2028(i_46_, class51, i_42_, var_toolkit, i_48_, 126);
         }
         if (bool != false) anInt7054 = 122;
         interface10 = ((Interface10) Class177.method1353(i_43_, i_45_, i_44_, (aClass7056 != null ? aClass7056 : (aClass7056 = Interface10.class))));
@@ -270,19 +270,19 @@ final class Class348_Sub41 extends Node {
             Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-88));
             int i_51_ = interface10.method41(-32228) & 0x3;
             int i_52_ = interface10.method39(-126);
-            if (class51.anInt875 != -1) Class267.method2028(i_46_, class51, i_42_, var_ha, i_51_, -86);
+            if (class51.anInt875 != -1) Class267.method2028(i_46_, class51, i_42_, var_toolkit, i_51_, -86);
             else if (i_52_ == 9) {
                 int i_53_ = -1118482;
                 if (class51.anInt874 > 0) i_53_ = -1179648;
-                if (i_51_ != 0 && i_51_ != 2) var_ha.method3645(i_42_, i_46_, 3 + i_46_, -8003, i_53_, i_42_ + 3);
-                else var_ha.method3645(i_42_ + 3, i_46_, 3 + i_46_, -8003, i_53_, i_42_);
+                if (i_51_ != 0 && i_51_ != 2) var_toolkit.method3645(i_42_, i_46_, 3 + i_46_, -8003, i_53_, i_42_ + 3);
+                else var_toolkit.method3645(i_42_ + 3, i_46_, 3 + i_46_, -8003, i_53_, i_42_);
             }
         }
         interface10 = (Interface10) Class348_Sub16_Sub3.method2878(i_43_, i_45_, i_44_);
         if (interface10 != null) {
             Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-118));
             int i_54_ = interface10.method41(-32228) & 0x3;
-            if (class51.anInt875 != -1) Class267.method2028(i_46_, class51, i_42_, var_ha, i_54_, -5);
+            if (class51.anInt875 != -1) Class267.method2028(i_46_, class51, i_42_, var_toolkit, i_54_, -5);
         }
     }
 

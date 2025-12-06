@@ -9,12 +9,12 @@ final class Class332 {
     static Class60 aClass60_4139;
     static int anInt4140;
     static int anInt4141 = -1;
-    static s[] aSArray4142;
+    static Ground[] aGroundArray4142;
     static int anInt4143;
 
     public static void method2640(boolean bool) {
         aClass60_4139 = null;
-        aSArray4142 = null;
+        aGroundArray4142 = null;
         if (bool != true) anInt4143 = 110;
     }
 

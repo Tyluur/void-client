@@ -10,7 +10,7 @@ final class Class195 implements LoadingScreen {
     static int[] anIntArray5007 = new int[4];
     static int anInt5008;
     static int anInt5009;
-    private ha aHa5010;
+    private Toolkit aToolkit5010;
     private boolean aBoolean5011;
     private final Interface1[] anInterface1Array5012;
     static boolean aBoolean5013 = false;
@@ -36,11 +36,11 @@ final class Class195 implements LoadingScreen {
 
     public final void init(int i) {
         anInt5004++;
-        if (aHa5010 != Class348_Sub8.aHa6654) {
-            aHa5010 = Class348_Sub8.aHa6654;
+        if (aToolkit5010 != Class348_Sub8.aToolkit6654) {
+            aToolkit5010 = Class348_Sub8.aToolkit6654;
             aBoolean5011 = true;
         }
-        aHa5010.GA(0);
+        aToolkit5010.GA(0);
         Interface1[] interface1s = anInterface1Array5012;
         for (int i_0_ = 0; interface1s.length > i_0_; i_0_++) {
             Interface1 interface1 = interface1s[i_0_];

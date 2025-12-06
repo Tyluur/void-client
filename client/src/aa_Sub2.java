@@ -29,11 +29,11 @@ final class aa_Sub2 extends aa {
         int i_3_ = Class354.anIntArrayArrayArray4356[i][i_0_][i_2_];
         if (i_3_ == -Class234.anInt3049) return false;
         if (Class234.anInt3049 == i_3_) return true;
-        if (Class332.aSArray4142 == aa_Sub1.aSArray5191) return false;
+        if (Class332.aGroundArray4142 == aa_Sub1.aGroundArray5191) return false;
         int i_4_ = i_0_ << Class362.anInt4459;
         int i_5_ = i_2_ << Class362.anInt4459;
         if (i_1_ != -97) method163(-4);
-        if ((Class286_Sub7.method2169(i_4_ - -1, i_4_ - (-Class270.anInt3465 - -1), 1 + i_5_, 1 + i_4_, -1 + (i_5_ - -Class270.anInt3465), aa_Sub1.aSArray5191[i].method3982((byte) -86, 1 + i_2_, i_0_), aa_Sub1.aSArray5191[i].method3982((byte) -86, 1 + i_2_, 1 + i_0_), aa_Sub1.aSArray5191[i].method3982((byte) -86, i_2_, i_0_), -1 + Class270.anInt3465 + i_5_, false)) && (Class286_Sub7.method2169(1 + i_4_, Class270.anInt3465 + (i_4_ + -1), i_5_ + 1, Class270.anInt3465 + (i_4_ - 1), i_5_ + Class270.anInt3465 - 1, aa_Sub1.aSArray5191[i].method3982((byte) -86, i_2_ - -1, 1 + i_0_), aa_Sub1.aSArray5191[i].method3982((byte) -86, i_2_, i_0_ + 1), aa_Sub1.aSArray5191[i].method3982((byte) -86, i_2_, i_0_), 1 + i_5_, false))) {
+        if ((Class286_Sub7.method2169(i_4_ - -1, i_4_ - (-Class270.anInt3465 - -1), 1 + i_5_, 1 + i_4_, -1 + (i_5_ - -Class270.anInt3465), aa_Sub1.aGroundArray5191[i].tileHeight((byte) -86, 1 + i_2_, i_0_), aa_Sub1.aGroundArray5191[i].tileHeight((byte) -86, 1 + i_2_, 1 + i_0_), aa_Sub1.aGroundArray5191[i].tileHeight((byte) -86, i_2_, i_0_), -1 + Class270.anInt3465 + i_5_, false)) && (Class286_Sub7.method2169(1 + i_4_, Class270.anInt3465 + (i_4_ + -1), i_5_ + 1, Class270.anInt3465 + (i_4_ - 1), i_5_ + Class270.anInt3465 - 1, aa_Sub1.aGroundArray5191[i].tileHeight((byte) -86, i_2_ - -1, 1 + i_0_), aa_Sub1.aGroundArray5191[i].tileHeight((byte) -86, i_2_, i_0_ + 1), aa_Sub1.aGroundArray5191[i].tileHeight((byte) -86, i_2_, i_0_), 1 + i_5_, false))) {
             Class348_Sub23_Sub2.anInt9039++;
             Class354.anIntArrayArrayArray4356[i][i_0_][i_2_] = Class234.anInt3049;
             return true;
@@ -49,15 +49,15 @@ final class aa_Sub2 extends aa {
             int i_15_ = Class275.method2064(i_9_, i, 11219, i_11_) - i_7_;
             if (Class59_Sub1.aBoolean5300) Class107.method1010(false, true);
             else {
-                Class157.aMatrix_2123.method891(i_10_, 0, 0);
-                Class348_Sub8.aHa6654.method3638(Class157.aMatrix_2123);
+                Class157.aMatrix_2123.translate(i_10_, 0, 0);
+                Class348_Sub8.aToolkit6654.setCamera(Class157.aMatrix_2123);
             }
-            if (!Class305.aBoolean3870) Class348_Sub8.aHa6654.da(i_9_, i_15_, i_11_, Option_Sub21.anIntArray6062);
-            else Class348_Sub8.aHa6654.HA(i_9_, i_15_, i_11_, Class132.anInt1906, Option_Sub21.anIntArray6062);
+            if (!Class305.aBoolean3870) Class348_Sub8.aToolkit6654.da(i_9_, i_15_, i_11_, Option_Sub21.anIntArray6062);
+            else Class348_Sub8.aToolkit6654.HA(i_9_, i_15_, i_11_, Class132.anInt1906, Option_Sub21.anIntArray6062);
             if (Class59_Sub1.aBoolean5300) Class285_Sub1.method2129((byte) 60);
             else {
-                Class157.aMatrix_2123.method891(-i_10_, 0, 0);
-                Class348_Sub8.aHa6654.method3638(Class157.aMatrix_2123);
+                Class157.aMatrix_2123.translate(-i_10_, 0, 0);
+                Class348_Sub8.aToolkit6654.setCamera(Class157.aMatrix_2123);
             }
         }
     }

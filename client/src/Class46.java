@@ -176,7 +176,7 @@ final class Class46 {
     int anInt841;
     int anInt842;
 
-    static final void method424(int i, int i_0_, ha var_ha, int i_1_, int i_2_, int i_3_, int i_4_, byte[][][] is, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_) {
+    static final void method424(int i, int i_0_, Toolkit var_toolkit, int i_1_, int i_2_, int i_3_, int i_4_, byte[][][] is, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_) {
         try {
             anInt768++;
             if (i_7_ != i_1_ && i_3_ != 0) {
@@ -192,14 +192,14 @@ final class Class46 {
                     i_4_ = i_4_ + 3 & 0x3;
                     i_7_ = 8;
                 }
-                var_ha.Q(i_6_, i_9_, i_5_, i_8_, i_0_, i, is[i_7_ - 1][i_4_], i_3_, i_2_);
+                var_toolkit.Q(i_6_, i_9_, i_5_, i_8_, i_0_, i, is[i_7_ - 1][i_4_], i_3_, i_2_);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("at.S(" + i + ',' + i_0_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (is != null ? "{...}" : "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("at.S(" + i + ',' + i_0_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (is != null ? "{...}" : "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ')'));
         }
     }
 
-    final aa method425(ha var_ha, byte i) {
+    final aa method425(Toolkit var_toolkit, byte i) {
         anInt767++;
         aa var_aa = (aa) Option_Sub24.aClass60_6096.method583(this.anInt830, 119);
         if (var_aa != null) return var_aa;
@@ -228,14 +228,14 @@ final class Class46 {
             this.anIntArray772[(i_12_ + class207.anInt2700)] = i_15_ + -i_13_;
         }
         if (i < 0) method433(null, false);
-        var_aa = var_ha.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772);
+        var_aa = var_toolkit.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772);
         Option_Sub24.aClass60_6096.method582(var_aa, this.anInt830, (byte) -104);
         return var_aa;
     }
 
-    final FontRenderer method426(ha var_ha, byte i) {
+    final FontRenderer method426(Toolkit var_toolkit, byte i) {
         anInt827++;
-        FontRenderer fontRenderer = Class14.method232(var_ha, (byte) -53, false, this.anInt702);
+        FontRenderer fontRenderer = Class14.method232(var_toolkit, (byte) -53, false, this.anInt702);
         if (i != 68) method436(-71, -56, -125);
         Class348_Sub42_Sub13.aBoolean9616 = fontRenderer == null;
         return fontRenderer;
@@ -295,7 +295,7 @@ final class Class46 {
         return class348_sub50.aString7211;
     }
 
-    final Model method430(IDKTypeList IDKTypeList, SeqTypeList seqTypeList, int i, ha var_ha, int i_21_, int i_22_, ItemTypeList itemTypeList, Interface17 interface17, int i_23_, Class154 class154, Class17 class17, BASTypeList BASTypeList, NPCTypeList NPCTypeList, int i_24_) {
+    final Model method430(IDKTypeList IDKTypeList, SeqTypeList seqTypeList, int i, Toolkit var_toolkit, int i_21_, int i_22_, ItemTypeList itemTypeList, Interface17 interface17, int i_23_, Class154 class154, Class17 class17, BASTypeList BASTypeList, NPCTypeList NPCTypeList, int i_24_) {
         try {
             anInt684++;
             Class348_Sub42_Sub13.aBoolean9616 = false;
@@ -304,17 +304,17 @@ final class Class46 {
             if (this.anInt770 == 1) {
                 int i_25_ = i;
                 if (class17 != null) i |= class17.method263(i_24_, 106, i_21_, true);
-                long l = this.anInt753 + ((this.anInt770 << 16) + (var_ha.anInt4567 << 29));
+                long l = this.anInt753 + ((this.anInt770 << 16) + (var_toolkit.anInt4567 << 29));
                 Model model = (Model) TextureUniverse.aClass60_4417.method583(l, -90);
-                if (model == null || var_ha.method3667(model.ua(), i) != 0) {
-                    if (model != null) i = var_ha.method3679(i, model.ua());
+                if (model == null || var_toolkit.method3667(model.ua(), i) != 0) {
+                    if (model != null) i = var_toolkit.method3679(i, model.ua());
                     Mesh mesh = Class300.method2277(0, (Class348_Sub40_Sub28.aIndex_9365), this.anInt753, -1);
                     if (mesh == null) {
                         Class348_Sub42_Sub13.aBoolean9616 = true;
                         return null;
                     }
                     if (mesh.version < 13) mesh.method1092(2, 114);
-                    model = var_ha.method3625(mesh, i, Class14_Sub3.anInt8628, 64, 768);
+                    model = var_toolkit.method3625(mesh, i, Class14_Sub3.anInt8628, 64, 768);
                     TextureUniverse.aClass60_4417.method582(model, l, (byte) -125);
                 }
                 if (class17 != null) model = class17.method269(-101, model, i_24_, i_22_, i, i_21_);
@@ -322,7 +322,7 @@ final class Class46 {
                 return model;
             }
             if (this.anInt770 == 2) {
-                Model model = (NPCTypeList.method2079(this.anInt753, -1).method803(interface17, var_ha, i_22_, i_24_, class17, seqTypeList, i_21_, 104, i));
+                Model model = (NPCTypeList.method2079(this.anInt753, -1).method803(interface17, var_toolkit, i_22_, i_24_, class17, seqTypeList, i_21_, 104, i));
                 if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -332,7 +332,7 @@ final class Class46 {
             if (i_23_ != 255) method432(null, -50);
             if (this.anInt770 == 3) {
                 if (class154 == null) return null;
-                Model model = class154.method1230(itemTypeList, -402058072, seqTypeList, IDKTypeList, interface17, NPCTypeList, i_21_, i_24_, i, class17, i_22_, var_ha);
+                Model model = class154.method1230(itemTypeList, -402058072, seqTypeList, IDKTypeList, interface17, NPCTypeList, i_21_, i_24_, i, class17, i_22_, var_toolkit);
                 if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -341,7 +341,7 @@ final class Class46 {
             }
             if (this.anInt770 == 4) {
                 ItemDefinition itemDefinition = itemTypeList.method1940(i_23_ + -365, this.anInt753);
-                Model model = itemDefinition.method1559(class154, class17, var_ha, i, i_22_, 10, i_21_, (byte) 88, i_24_);
+                Model model = itemDefinition.method1559(class154, class17, var_toolkit, i, i_22_, 10, i_21_, (byte) 88, i_24_);
                 if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -349,7 +349,7 @@ final class Class46 {
                 return model;
             }
             if (this.anInt770 == 6) {
-                Model model = (NPCTypeList.method2079(this.anInt753, -1).method800(0, null, seqTypeList, false, null, 0, BASTypeList, i_21_, class17, interface17, var_ha, 0, null, i_24_, 0, i, i_22_));
+                Model model = (NPCTypeList.method2079(this.anInt753, -1).method800(0, null, seqTypeList, false, null, 0, BASTypeList, i_21_, class17, interface17, var_toolkit, 0, null, i_24_, 0, i, i_22_));
                 if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -361,7 +361,7 @@ final class Class46 {
                 int i_26_ = this.anInt753 >>> 16;
                 int i_27_ = 0xffff & this.anInt753;
                 int i_28_ = this.anInt779;
-                Model model = class154.method1232(i_24_, i, i_28_, i_27_, seqTypeList, IDKTypeList, -15331, i_26_, i_22_, var_ha, i_21_, class17);
+                Model model = class154.method1232(i_24_, i, i_28_, i_27_, seqTypeList, IDKTypeList, -15331, i_26_, i_22_, var_toolkit, i_21_, class17);
                 if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -370,7 +370,7 @@ final class Class46 {
             }
             return null;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("at.G(" + (IDKTypeList != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_21_ + ',' + i_22_ + ',' + (itemTypeList != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + i_23_ + ',' + (class154 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + i_24_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("at.G(" + (IDKTypeList != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_21_ + ',' + i_22_ + ',' + (itemTypeList != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + i_23_ + ',' + (class154 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + i_24_ + ')'));
         }
     }
 
@@ -663,7 +663,7 @@ final class Class46 {
         }
     }
 
-    final void method437(int i, Model model, ha var_ha, int i_63_, Matrix matrix) {
+    final void method437(int i, Model model, Toolkit var_toolkit, int i_63_, Matrix matrix) {
         do {
             try {
                 if (i != -20154) method438(15, -50, null);
@@ -673,9 +673,9 @@ final class Class46 {
                 ModelParticleEffector[] modelParticleEffectors = model.method604();
                 if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740.aBoolean6470) && (modelParticleEmitters != null || modelParticleEffectors != null)) this.aClass318_Sub10_740 = Class318_Sub10.method2526(i_63_, false);
                 if (this.aClass318_Sub10_740 == null) break;
-                this.aClass318_Sub10_740.method2536(var_ha, i_63_, modelParticleEmitters, modelParticleEffectors, false);
+                this.aClass318_Sub10_740.method2536(var_toolkit, i_63_, modelParticleEmitters, modelParticleEffectors, false);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (model != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_63_ + ',' + (matrix != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (model != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_63_ + ',' + (matrix != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -738,7 +738,7 @@ final class Class46 {
         }
     }
 
-    final Sprite method443(ha var_ha, byte i) {
+    final Sprite method443(Toolkit var_toolkit, byte i) {
         anInt819++;
         Class348_Sub42_Sub13.aBoolean9616 = false;
         long l = (((long) this.anInt809 << 40) + (((this.aBoolean790 ? 1L : 0L) << 38) + (((long) this.anInt672 << 36) + ((this.aBoolean745 ? 1L : 0L) << 35))) + ((long) this.anInt756 + ((!this.aBoolean735 ? 0L : 1L) << 39)));
@@ -757,7 +757,7 @@ final class Class46 {
         if (this.anInt672 >= 1) class207.method1515(1);
         if (this.anInt672 >= 2) class207.method1515(16777215);
         if (this.anInt809 != 0) class207.method1511(~0xffffff | this.anInt809);
-        sprite = var_ha.method3691(class207, true);
+        sprite = var_toolkit.method3691(class207, true);
         Class351.aClass60_4327.method580(31902, sprite, l, (sprite.method971() * sprite.method969() * 4));
         return sprite;
     }

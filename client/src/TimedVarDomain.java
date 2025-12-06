@@ -95,14 +95,14 @@ final class TimedVarDomain implements Interface17 {
         if (bool == true) aClass237_Sub1_5067 = null;
     }
 
-    static final void method1311(int i, ha var_ha) {
+    static final void method1311(int i, Toolkit var_toolkit) {
         Class199.aClass352Array2636 = new Class352[Class348_Sub1.anIntArray6547.length];
         anInt5064++;
         if (i != 5139) anInt5065 = 62;
         for (int i_21_ = 0; (i_21_ < Class348_Sub1.anIntArray6547.length); i_21_++) {
             int i_22_ = Class348_Sub1.anIntArray6547[i_21_];
-            FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -86, i_22_, s.aIndex_4585);
-            FontRenderer fontRenderer = var_ha.method3686(fontMetrics, Class207.method1523(Class39.aIndex_518, i_22_), true);
+            FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -86, i_22_, Ground.aIndex_4585);
+            FontRenderer fontRenderer = var_toolkit.method3686(fontMetrics, Class207.method1523(Class39.aIndex_518, i_22_), true);
             Class199.aClass352Array2636[i_21_] = new Class352(fontRenderer, fontMetrics);
         }
     }

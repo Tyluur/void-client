@@ -54,7 +54,7 @@ final class Class348_Sub40_Sub5 extends Class348_Sub40 {
 
     final void method3044(int i) {
         if (i > 108) {
-            aByteArray9119 = ha.method3664(anInt9122, 124);
+            aByteArray9119 = Toolkit.method3664(anInt9122, 124);
             anInt9126++;
             method3061(true);
         }

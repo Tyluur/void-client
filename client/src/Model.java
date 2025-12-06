@@ -21,7 +21,7 @@ abstract class Model {
 
     abstract void FA(int i);
 
-    abstract void p(int i, int i_0_, s var_s, s var_s_1_, int i_2_, int i_3_, int i_4_);
+    abstract void p(int i, int i_0_, Ground var_ground, Ground var_ground_1_, int i_2_, int i_3_, int i_4_);
 
     private final void method602(int i, Class348_Sub33 class348_sub33, int i_5_, boolean bool, int i_6_, Class4 class4, int i_7_, int[] is, boolean[] bools, Class4 class4_8_, int i_9_, boolean bool_10_) {
         try {
@@ -244,7 +244,7 @@ abstract class Model {
 
     abstract void LA(int i);
 
-    abstract void method608(Matrix matrix, Class318_Sub3 class318_sub3, int i, int i_71_);
+    abstract void method608(Matrix matrix, LabelBounds class318_sub3, int i, int i_71_);
 
     abstract int ua();
 
@@ -302,7 +302,7 @@ abstract class Model {
 
     abstract Model method614(byte i, int i_80_, boolean bool);
 
-    abstract void method615(Matrix matrix, Class318_Sub3 class318_sub3, int i);
+    abstract void method615(Matrix matrix, LabelBounds class318_sub3, int i);
 
     static final boolean method616(int i, int i_81_, int i_82_) {
         anInt1129++;
@@ -404,24 +404,24 @@ abstract class Model {
 
     abstract void ia(short i, short i_115_);
 
-    final void method626(int i, int i_116_, int i_117_, int i_118_, int i_119_, int i_120_, int i_121_, s var_s, int i_122_) {
+    final void method626(int i, int i_116_, int i_117_, int i_118_, int i_119_, int i_120_, int i_121_, Ground var_ground, int i_122_) {
         anInt1137++;
         boolean bool = false;
         boolean bool_123_ = false;
         boolean bool_124_ = false;
         int i_125_ = -i / 2;
         int i_126_ = -i_119_ / 2;
-        int i_127_ = var_s.method3986(i_118_ + i_125_, i_126_ + i_122_, (byte) 10);
+        int i_127_ = var_ground.method3986(i_118_ + i_125_, i_126_ + i_122_, (byte) 10);
         int i_128_ = i / 2;
         int i_129_ = -i_119_ / 2;
-        int i_130_ = var_s.method3986(i_128_ + i_118_, i_122_ - -i_129_, (byte) -116);
+        int i_130_ = var_ground.method3986(i_128_ + i_118_, i_122_ - -i_129_, (byte) -116);
         int i_131_ = -i / 2;
         int i_132_ = i_119_ / 2;
-        int i_133_ = var_s.method3986(i_118_ + i_131_, i_122_ - -i_132_, (byte) -111);
+        int i_133_ = var_ground.method3986(i_118_ + i_131_, i_122_ - -i_132_, (byte) -111);
         int i_134_ = i / 2;
         if (i_116_ != 10947) EA();
         int i_135_ = i_119_ / 2;
-        int i_136_ = var_s.method3986(i_118_ + i_134_, i_135_ + i_122_, (byte) 50);
+        int i_136_ = var_ground.method3986(i_118_ + i_134_, i_135_ + i_122_, (byte) 50);
         int i_137_ = Math.min(i_130_, i_127_);
         int i_138_ = Math.min(i_136_, i_133_);
         int i_139_ = Math.min(i_136_, i_130_);

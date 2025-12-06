@@ -17,7 +17,7 @@ final class Class60 {
     static int anInt1095;
     static int anInt1096;
     static int anInt1097;
-    static ha aHa1098;
+    static Toolkit aToolkit1098;
     static int anInt1099;
     private final Class356 aClass356_1100;
     static int anInt1101;
@@ -84,7 +84,7 @@ final class Class60 {
             class348_sub42_sub8_4_.method3162(true);
             anInt1086 += class348_sub42_sub8_4_.anInt9545;
         }
-        if (i > -67) aHa1098 = null;
+        if (i > -67) aToolkit1098 = null;
         return null;
     }
 
@@ -155,7 +155,7 @@ final class Class60 {
     }
 
     public static void method584(byte i) {
-        aHa1098 = null;
+        aToolkit1098 = null;
         int i_7_ = -19 % ((i - 59) / 55);
     }
 

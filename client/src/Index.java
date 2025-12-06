@@ -233,8 +233,8 @@ final class Index {
     }
 
     static final void method395(int i) throws Exception_Sub1 {
-        if (Packet.anInt7207 == 1) Class21.aHa326.method3626(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157);
-        else Class21.aHa326.method3626(0, 0);
+        if (Packet.anInt7207 == 1) Class21.aToolkit326.method3626(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157);
+        else Class21.aToolkit326.method3626(0, 0);
         if (i >= 73) anInt642++;
     }
 

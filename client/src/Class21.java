@@ -8,7 +8,7 @@ final class Class21 {
     static Class46 aClass46_323 = null;
     static int anInt324;
     static int anInt325 = -50;
-    static ha aHa326;
+    static Toolkit aToolkit326;
     static int anInt327;
 
     public final String toString() {
@@ -19,7 +19,7 @@ final class Class21 {
     public static void method288(byte i) {
         SPRITES = null;
         if (i > 93) {
-            aHa326 = null;
+            aToolkit326 = null;
             aClass46_323 = null;
         }
     }

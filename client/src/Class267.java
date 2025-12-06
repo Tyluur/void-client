@@ -100,7 +100,7 @@ final class Class267 {
         return anInterface7_3398;
     }
 
-    static final void method2028(int i, Class51 class51, int i_0_, ha var_ha, int i_1_, int i_2_) {
+    static final void method2028(int i, Class51 class51, int i_0_, Toolkit var_toolkit, int i_1_, int i_2_) {
         try {
             anInt3395++;
             Class218 class218 = Class2.msiTypeList.method1173((byte) 31, class51.anInt875);
@@ -109,7 +109,7 @@ final class Class267 {
                     i_1_ += class51.anInt923;
                     i_1_ &= 0x3;
                 } else i_1_ = 0;
-                Sprite sprite = class218.method1596(i_1_, class51.aBoolean925, 82, var_ha);
+                Sprite sprite = class218.method1596(i_1_, class51.aBoolean925, 82, var_toolkit);
                 if (sprite != null) {
                     int i_3_ = class51.anInt961;
                     int i_4_ = class51.anInt926;
@@ -129,7 +129,7 @@ final class Class267 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("up.C(" + i + ',' + (class51 != null ? "{...}" : "null") + ',' + i_0_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("up.C(" + i + ',' + (class51 != null ? "{...}" : "null") + ',' + i_0_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ')'));
         }
     }
 

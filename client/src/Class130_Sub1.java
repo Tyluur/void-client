@@ -9,7 +9,7 @@ final class Class130_Sub1 extends Class130 {
     static final void method1131(int i) {
         int j = 64 / ((11 - i) / 54);
         anInt5795++;
-        Class60.aHa1098.L(QuestTypeList.anInt2500, Class316.clientOptions.aClass239_Sub16_7247.method1789(-32350) != 1 ? -1 : Class36.anInt486 - -256 << 2, 0);
+        Class60.aToolkit1098.L(QuestTypeList.anInt2500, Class316.clientOptions.aClass239_Sub16_7247.method1789(-32350) != 1 ? -1 : Class36.anInt486 - -256 << 2, 0);
     }
 
     static final boolean method1132(int i, int j, int k) {
@@ -557,7 +557,7 @@ final class Class130_Sub1 extends Class130 {
         Class367_Sub11.anInt7402 = 0;
         Class51.anInt938 = 0;
         Class55.anInt1005 = 0;
-        ha.anInt4561 = 0;
+        Toolkit.anInt4561 = 0;
         Class27.anInt393 = 0;
         Class318_Sub1_Sub4.anInt8761 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10272 = 0;
@@ -852,7 +852,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub4_Sub2.anInt10117 = 0;
         Class101_Sub3.anInt5753 = 0;
         TimedVarDomain.anInt5066 = 0;
-        s.anInt4589 = 0;
+        Ground.anInt4589 = 0;
         Class179.anInt2358 = 0;
         Class348_Sub23_Sub4.anInt9061 = 0;
         ha_Sub2.anInt7668 = 0;
@@ -880,7 +880,7 @@ final class Class130_Sub1 extends Class130 {
         Class330.anInt4114 = 0;
         Class258.anInt4855 = 0;
         Class348_Sub49_Sub2.anInt9764 = 0;
-        s.anInt4591 = 0;
+        Ground.anInt4591 = 0;
         Class286_Sub2.anInt6204 = 0;
         Class361.anInt4442 = 0;
         Class264.anInt3366 = 0;
@@ -1041,7 +1041,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7583 = 0;
         Canvas_Sub1.anInt61 = 0;
         Index.anInt640 = 0;
-        ha.anInt4568 = 0;
+        Toolkit.anInt4568 = 0;
         Class377.anInt9875 = 0;
         SeqTypeList.anInt1483 = 0;
         Class322.anInt4028 = 0;
@@ -1237,7 +1237,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub5_Sub1.anInt8829 = 0;
         Class100.anInt1580 = 0;
         Class31.anInt432 = 0;
-        ha.anInt4566 = 0;
+        Toolkit.anInt4566 = 0;
         Class130.anInt1896 = 0;
         Class318_Sub1_Sub3_Sub2.anInt10038 = 0;
         Class318_Sub1_Sub4.anInt8763 = 0;
@@ -1587,7 +1587,7 @@ final class Class130_Sub1 extends Class130 {
         Class211.anInt2732 = 0;
         Class288.anInt4954 = 0;
         Class60.anInt1096 = 0;
-        ha.anInt4572 = 0;
+        Toolkit.anInt4572 = 0;
         Option_Sub25.anInt6108 = 0;
         Class286_Sub2.anInt6207 = 0;
         Node.anInt4297 = 0;
@@ -1787,7 +1787,7 @@ final class Class130_Sub1 extends Class130 {
         Option_Sub7.anInt5905 = 0;
         Class286_Sub3.anInt6226 = 0;
         Player.anInt10562 = 0;
-        ha.anInt4576 = 0;
+        Toolkit.anInt4576 = 0;
         Class348_Sub15.anInt6771 = 0;
         ha_Sub2.anInt7576 = 0;
         Applet_Sub1.anInt21 = 0;
@@ -2018,7 +2018,7 @@ final class Class130_Sub1 extends Class130 {
         ModelParticleEffector.anInt4241 = 0;
         Class101_Sub2.anInt5741 = 0;
         Class318_Sub1_Sub5.anInt8779 = 0;
-        ha.anInt4580 = 0;
+        Toolkit.anInt4580 = 0;
         Class190.anInt2537 = 0;
         Class348_Sub33.anInt6961 = 0;
         Class348_Sub40_Sub11.anInt9188 = 0;
@@ -2086,7 +2086,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt7983 = 0;
         ParamTypeList.anInt4088 = 0;
         ha_Sub2.anInt7614 = 0;
-        ha.anInt4577 = 0;
+        Toolkit.anInt4577 = 0;
         Class352.anInt4335 = 0;
         Class318_Sub1_Sub3_Sub1.anInt10021 = 0;
         Class112.anInt1729 = 0;
@@ -2104,7 +2104,7 @@ final class Class130_Sub1 extends Class130 {
         CursorTypeList.anInt2179 = 0;
         Class348_Sub23_Sub4.anInt9052 = 0;
         ha_Sub2.anInt7637 = 0;
-        ha.anInt4575 = 0;
+        Toolkit.anInt4575 = 0;
         Mesh.anInt1828 = 0;
         aa_Sub2.anInt5194 = 0;
         RuntimeException_Sub1.anInt4605 = 0;
@@ -2459,7 +2459,7 @@ final class Class130_Sub1 extends Class130 {
         Class202.anInt2653 = 0;
         Class308.anInt3880 = 0;
         Class43.anInt613 = 0;
-        s.anInt4593 = 0;
+        Ground.anInt4593 = 0;
         FontRenderer.anInt4049 = 0;
         Class59_Sub2_Sub2.anInt8676 = 0;
         Class59_Sub1.anInt5295 = 0;
@@ -2601,7 +2601,7 @@ final class Class130_Sub1 extends Class130 {
         Option_Sub23.anInt6078 = 0;
         Class348_Sub40.anInt7039 = 0;
         Class101_Sub2.anInt5693 = 0;
-        ha.anInt4570 = 0;
+        Toolkit.anInt4570 = 0;
         Class273.anInt5168 = 0;
         Class237.anInt3116 = 0;
         ha_Sub3.anInt8036 = 0;
@@ -2634,7 +2634,7 @@ final class Class130_Sub1 extends Class130 {
         Sprite_Sub2.anInt8437 = 0;
         Option_Sub5.anInt5892 = 0;
         Class34.anInt478 = 0;
-        s.anInt4586 = 0;
+        Ground.anInt4586 = 0;
         Class286_Sub1.anInt6186 = 0;
         Class361.anInt4451 = 0;
         Class318_Sub1_Sub3_Sub4.anInt10340 = 0;
@@ -2793,7 +2793,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7663 = 0;
         Class300.anInt3822 = 0;
         Class377.anInt9872 = 0;
-        ha.anInt4565 = 0;
+        Toolkit.anInt4565 = 0;
         Class348_Sub16_Sub3.anInt8946 = 0;
         ha_Sub3.anInt7897 = 0;
         ha_Sub2.anInt7689 = 0;
@@ -2875,7 +2875,7 @@ final class Class130_Sub1 extends Class130 {
         ResourceProvider.anInt3940 = 0;
         Class265.anInt4696 = 0;
         Class318_Sub2.anInt6399 = 0;
-        ha.anInt4573 = 0;
+        Toolkit.anInt4573 = 0;
         NPCDefinition.anInt1334 = 0;
         Class101_Sub2.anInt5725 = 0;
         Class318_Sub1_Sub4_Sub1.anInt10068 = 0;
@@ -3507,7 +3507,7 @@ final class Class130_Sub1 extends Class130 {
         Js5ResourceProvider.anInt6358 = 0;
         FontMetrics.anInt1980 = 0;
         Applet_Sub1.anInt40 = 0;
-        ha.anInt4563 = 0;
+        Toolkit.anInt4563 = 0;
         Class119_Sub2.anInt4828 = 0;
         Packet.anInt7182 = 0;
         Class101_Sub3.anInt5783 = 0;
@@ -3682,7 +3682,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub44.anInt7099 = 0;
         LoadState.anInt1022 = 0;
         Class348_Sub21.anInt6856 = 0;
-        ha.anInt4569 = 0;
+        Toolkit.anInt4569 = 0;
         Class373_Sub2.anInt7451 = 0;
         Class248.anInt3185 = 0;
         Class248.anInt3199 = 0;
@@ -3910,7 +3910,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub5_Sub1.anInt10142 = 0;
         Class61.anInt1106 = 0;
         Class51.anInt901 = 0;
-        ha.anInt4564 = 0;
+        Toolkit.anInt4564 = 0;
         Class262.anInt3336 = 0;
         Class186_Sub1.anInt5806 = 0;
         Class222.anInt2889 = 0;
@@ -3952,7 +3952,7 @@ final class Class130_Sub1 extends Class130 {
         Class31.anInt436 = 0;
         Class315.anInt3948 = 0;
         Class230.anInt2988 = 0;
-        ha.anInt4574 = 0;
+        Toolkit.anInt4574 = 0;
         Class46.anInt819 = 0;
         Class318_Sub1_Sub5_Sub1.anInt10119 = 0;
         Class64_Sub2.anInt5483 = 0;

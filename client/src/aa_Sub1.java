@@ -3,13 +3,13 @@
  */
 
 final class aa_Sub1 extends aa {
-    static s[] aSArray5191;
+    static Ground[] aGroundArray5191;
     static int[] mapTiles;
     Class258_Sub3_Sub1 aClass258_Sub3_Sub1_5193;
 
     public static void method161(int i) {
         int i_0_ = -70 / ((i - 42) / 48);
-        aSArray5191 = null;
+        aGroundArray5191 = null;
         mapTiles = null;
     }
 

@@ -347,13 +347,13 @@ final class NPCDefinition {
         }
     }
 
-    final Model method800(int i, Class182[] class182s, SeqTypeList seqTypeList, boolean bool, Class17 class17, int i_34_, BASTypeList BASTypeList, int i_35_, Class17 class17_36_, Interface17 interface17, ha var_ha, int i_37_, int[] is, int i_38_, int i_39_, int i_40_, int i_41_) {
+    final Model method800(int i, Class182[] class182s, SeqTypeList seqTypeList, boolean bool, Class17 class17, int i_34_, BASTypeList BASTypeList, int i_35_, Class17 class17_36_, Interface17 interface17, Toolkit var_toolkit, int i_37_, int[] is, int i_38_, int i_39_, int i_40_, int i_41_) {
         try {
             anInt1341++;
             if (this.anIntArray1377 != null) {
                 NPCDefinition NPCDefinition_42_ = method794(interface17, -1);
                 if (NPCDefinition_42_ == null) return null;
-                return NPCDefinition_42_.method800(i, class182s, seqTypeList, false, class17, i_34_, BASTypeList, i_35_, class17_36_, interface17, var_ha, i_37_, is, i_38_, i_39_, i_40_, i_41_);
+                return NPCDefinition_42_.method800(i, class182s, seqTypeList, false, class17, i_34_, BASTypeList, i_35_, class17_36_, interface17, var_toolkit, i_37_, is, i_38_, i_39_, i_40_, i_41_);
             }
             int i_43_ = i_40_;
             if (anInt1358 != 128) i_43_ |= 0x2;
@@ -471,7 +471,7 @@ final class NPCDefinition {
                 if (bool_47_) i_43_ |= 0x200;
                 if (bool_48_) i_43_ |= 0x400;
             }
-            long l = var_ha.anInt4567 << 16 | this.anInt1344;
+            long l = var_toolkit.anInt4567 << 16 | this.anInt1344;
             Model model;
             synchronized (this.aNPCTypeList_1348.aClass60_3590) {
                 model = (Model) this.aNPCTypeList_1348.aClass60_3590.method583(l, 80);
@@ -528,7 +528,7 @@ final class NPCDefinition {
                 if (aShortArray1328 != null) i_69_ |= 0x4000;
                 if (aShortArray1393 != null) i_69_ |= 0x8000;
                 if (aByte1405 != 0) i_69_ |= 0x80000;
-                model = var_ha.method3625(mesh, i_69_, (this.aNPCTypeList_1348.anInt3593), 64 + anInt1398, 850 + anInt1406);
+                model = var_toolkit.method3625(mesh, i_69_, (this.aNPCTypeList_1348.anInt3593), 64 + anInt1398, 850 + anInt1406);
                 if (aShortArray1328 != null) {
                     for (int i_80_ = 0; (i_80_ < aShortArray1328.length); i_80_++) {
                         if (aByteArray1374 == null || aByteArray1374.length <= i_80_) model.ia(aShortArray1328[i_80_], aShortArray1352[i_80_]);
@@ -542,7 +542,7 @@ final class NPCDefinition {
                 if (aByte1405 != 0) model.method624(aByte1376, aByte1360, aByte1330, aByte1405 & 0xff);
                 model.s(i_43_);
                 synchronized (this.aNPCTypeList_1348.aClass60_3590) {
-                    this.aNPCTypeList_1348.aClass60_3590.method582(model, this.anInt1344 | var_ha.anInt4567 << 16, (byte) -125);
+                    this.aNPCTypeList_1348.aClass60_3590.method582(model, this.anInt1344 | var_toolkit.anInt4567 << 16, (byte) -125);
                 }
             }
             Model model_82_ = model.method614((byte) 4, i_43_, true);
@@ -554,7 +554,7 @@ final class NPCDefinition {
             }
             if (!bool_44_ && !bool_83_) return model_82_;
             Matrix[] matrices = null;
-            if (class225 != null) matrices = class225.method1618(var_ha, 0);
+            if (class225 != null) matrices = class225.method1618(var_toolkit, 0);
             if (bool_83_ && matrices != null) {
                 for (int i_85_ = 0; i_85_ < 12; i_85_++) {
                     if (matrices[i_85_] != null) model_82_.method610(matrices[i_85_], 1 << i_85_, true);
@@ -573,7 +573,7 @@ final class NPCDefinition {
                     if (is[i_88_] != -1) {
                         int i_89_ = -i + is[i_88_];
                         i_89_ &= 0x3fff;
-                        Matrix matrix = var_ha.method3654();
+                        Matrix matrix = var_toolkit.method3654();
                         matrix.method895(i_89_);
                         model_82_.method610(matrix, 1 << i_88_, false);
                     }
@@ -597,7 +597,7 @@ final class NPCDefinition {
             model_82_.s(i_40_);
             return model_82_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bb.F(" + i + ',' + (class182s != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + bool + ',' + (class17 != null ? "{...}" : "null") + ',' + i_34_ + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + i_35_ + ',' + (class17_36_ != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_37_ + ',' + (is != null ? "{...}" : "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bb.F(" + i + ',' + (class182s != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + bool + ',' + (class17 != null ? "{...}" : "null") + ',' + i_34_ + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + i_35_ + ',' + (class17_36_ != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_37_ + ',' + (is != null ? "{...}" : "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
         }
     }
 
@@ -613,17 +613,17 @@ final class NPCDefinition {
     static final boolean method802(int y, int x, boolean bool) {
         if (bool != true) return false;
         anInt1332++;
-        if (x < 0 || y < 0 || x >= Class348_Sub33.aByteArrayArrayArray6962[1].length || y >= Class348_Sub33.aByteArrayArrayArray6962[1][x].length) return false;
-        return (Class348_Sub33.aByteArrayArrayArray6962[1][x][y] & 0x2) != 0;
+        if (x < 0 || y < 0 || x >= Class348_Sub33.tileFlags[1].length || y >= Class348_Sub33.tileFlags[1][x].length) return false;
+        return (Class348_Sub33.tileFlags[1][x][y] & 0x2) != 0;
     }
 
-    final Model method803(Interface17 interface17, ha var_ha, int i, int i_94_, Class17 class17, SeqTypeList seqTypeList, int i_95_, int i_96_, int i_97_) {
+    final Model method803(Interface17 interface17, Toolkit var_toolkit, int i, int i_94_, Class17 class17, SeqTypeList seqTypeList, int i_95_, int i_96_, int i_97_) {
         try {
             anInt1389++;
             if (this.anIntArray1377 != null) {
                 NPCDefinition NPCDefinition_98_ = method794(interface17, -1);
                 if (NPCDefinition_98_ == null) return null;
-                return NPCDefinition_98_.method803(interface17, var_ha, i, i_94_, class17, seqTypeList, i_95_, 104, i_97_);
+                return NPCDefinition_98_.method803(interface17, var_toolkit, i, i_94_, class17, seqTypeList, i_95_, 104, i_97_);
             }
             if (i_96_ <= 98) method796(null, -10);
             if (anIntArray1380 == null) return null;
@@ -631,7 +631,7 @@ final class NPCDefinition {
             if (class17 != null && i_95_ != -1) i_99_ |= class17.method263(i_94_, 97, i_95_, true);
             Model model;
             synchronized (this.aNPCTypeList_1348.aClass60_3592) {
-                model = ((Model) (this.aNPCTypeList_1348.aClass60_3592.method583(var_ha.anInt4567 << 16 | this.anInt1344, 64)));
+                model = ((Model) (this.aNPCTypeList_1348.aClass60_3592.method583(var_toolkit.anInt4567 << 16 | this.anInt1344, 64)));
             }
             if (model == null || i_99_ != (model.ua() & i_99_)) {
                 if (model != null) i_99_ |= model.ua();
@@ -657,7 +657,7 @@ final class NPCDefinition {
                 if (aShortArray1328 != null) i_100_ |= 0x4000;
                 if (aShortArray1393 != null) i_100_ |= 0x8000;
                 if (aByte1405 != 0) i_100_ |= 0x80000;
-                model = var_ha.method3625(mesh, i_100_, (this.aNPCTypeList_1348.anInt3593), 64, 768);
+                model = var_toolkit.method3625(mesh, i_100_, (this.aNPCTypeList_1348.anInt3593), 64, 768);
                 if (aShortArray1328 != null) {
                     for (int i_104_ = 0; (aShortArray1328.length > i_104_); i_104_++) {
                         if (aByteArray1374 != null && aByteArray1374.length > i_104_) model.ia(aShortArray1328[i_104_], (Class348_Sub42_Sub3.aShortArray9502[0xff & aByteArray1374[i_104_]]));
@@ -671,14 +671,14 @@ final class NPCDefinition {
                 if (aByte1405 != 0) model.method624(aByte1376, aByte1360, aByte1330, aByte1405 & 0xff);
                 model.s(i_99_);
                 synchronized (this.aNPCTypeList_1348.aClass60_3592) {
-                    this.aNPCTypeList_1348.aClass60_3592.method582(model, var_ha.anInt4567 << 16 | this.anInt1344, (byte) -96);
+                    this.aNPCTypeList_1348.aClass60_3592.method582(model, var_toolkit.anInt4567 << 16 | this.anInt1344, (byte) -96);
                 }
             }
             if (class17 != null && i_95_ != -1) model = class17.method269(-9, model, i_94_, i, i_99_, i_95_);
             model.s(i_97_);
             return model;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bb.H(" + (interface17 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_94_ + ',' + (class17 != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bb.H(" + (interface17 != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_94_ + ',' + (class17 != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'));
         }
     }
 

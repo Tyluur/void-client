@@ -29,7 +29,7 @@ abstract class Class348_Sub45 extends Node {
         if (i > -113) aClass304_7103 = null;
         Class348_Sub42_Sub10.anInt9577 = 0;
         ClientScript.aClass338Array9700 = new Class338[500];
-        Class348_Sub40_Sub23.aBoolean9307 = !(Class9.aHa171 instanceof oa);
+        Class348_Sub40_Sub23.aBoolean9307 = !(Class9.aToolkit171 instanceof oa);
     }
 
     public Class348_Sub45() {
@@ -42,8 +42,8 @@ abstract class Class348_Sub45 extends Node {
 
     abstract long method3312(byte i);
 
-    static final void method3313(int i, s var_s) {
-        aa_Sub1.aSArray5191[i] = var_s;
+    static final void method3313(int i, Ground var_ground) {
+        aa_Sub1.aGroundArray5191[i] = var_ground;
     }
 
     public static void method3314(int i) {

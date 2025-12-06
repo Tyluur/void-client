@@ -6,14 +6,14 @@ final class FontRenderer_Sub4 extends FontRenderer {
     private final int[] anIntArray6503;
     private final byte[][] aByteArrayArray6504;
     private final int[] anIntArray6505;
-    private ha_Sub1 aHa_Sub1_6506;
+    private JavaToolkit aJavaToolkit_6506;
     private final int[] anIntArray6507;
     private final int[] anIntArray6508;
 
-    FontRenderer_Sub4(ha_Sub1 var_ha_Sub1, FontMetrics fontMetrics, Class207[] class207s, int[] is, int[] is_0_) {
-        super(var_ha_Sub1, fontMetrics);
-        aHa_Sub1_6506 = var_ha_Sub1;
-        aHa_Sub1_6506 = var_ha_Sub1;
+    FontRenderer_Sub4(JavaToolkit var_javaToolkit, FontMetrics fontMetrics, Class207[] class207s, int[] is, int[] is_0_) {
+        super(var_javaToolkit, fontMetrics);
+        aJavaToolkit_6506 = var_javaToolkit;
+        aJavaToolkit_6506 = var_javaToolkit;
         anIntArray6503 = is;
         anIntArray6505 = is_0_;
         aByteArrayArray6504 = new byte[class207s.length][];
@@ -36,11 +36,11 @@ final class FontRenderer_Sub4 extends FontRenderer {
         aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
         int[] is_16_ = var_aa_Sub3.anIntArray5201;
         int[] is_17_ = var_aa_Sub3.anIntArray5202;
-        int i_18_ = i_11_ - aHa_Sub1_6506.anInt7496;
+        int i_18_ = i_11_ - aJavaToolkit_6506.clipX1;
         int i_19_ = i_12_;
         if (i_15_ > i_19_) {
             i_19_ = i_15_;
-            i_6_ += (i_15_ - i_12_) * aHa_Sub1_6506.anInt7477;
+            i_6_ += (i_15_ - i_12_) * aJavaToolkit_6506.surfaceWidth;
             i_5_ += (i_15_ - i_12_) * i_13_;
         }
         int i_20_ = (Math.min(i_15_ + is_16_.length, i_12_ + i_8_));
@@ -107,35 +107,35 @@ final class FontRenderer_Sub4 extends FontRenderer {
             i_44_ += anIntArray6508[c];
             int i_48_ = anIntArray6503[c];
             int i_49_ = anIntArray6505[c];
-            int i_50_ = aHa_Sub1_6506.anInt7477;
+            int i_50_ = aJavaToolkit_6506.surfaceWidth;
             int i_51_ = i + i_44_ * i_50_;
             int i_52_ = i_50_ - i_48_;
             int i_53_ = 0;
             int i_54_ = 0;
-            if (i_44_ < aHa_Sub1_6506.anInt7476) {
-                int i_55_ = aHa_Sub1_6506.anInt7476 - i_44_;
+            if (i_44_ < aJavaToolkit_6506.clipY1) {
+                int i_55_ = aJavaToolkit_6506.clipY1 - i_44_;
                 i_49_ -= i_55_;
-                i_44_ = aHa_Sub1_6506.anInt7476;
+                i_44_ = aJavaToolkit_6506.clipY1;
                 i_54_ += i_55_ * i_48_;
                 i_51_ += i_55_ * i_50_;
             }
-            if (i_44_ + i_49_ > aHa_Sub1_6506.anInt7503) i_49_ -= i_44_ + i_49_ - aHa_Sub1_6506.anInt7503;
-            if (i < aHa_Sub1_6506.anInt7496) {
-                int i_56_ = aHa_Sub1_6506.anInt7496 - i;
+            if (i_44_ + i_49_ > aJavaToolkit_6506.clipY2) i_49_ -= i_44_ + i_49_ - aJavaToolkit_6506.clipY2;
+            if (i < aJavaToolkit_6506.clipX1) {
+                int i_56_ = aJavaToolkit_6506.clipX1 - i;
                 i_48_ -= i_56_;
-                i = aHa_Sub1_6506.anInt7496;
+                i = aJavaToolkit_6506.clipX1;
                 i_54_ += i_56_;
                 i_51_ += i_56_;
                 i_53_ += i_56_;
                 i_52_ += i_56_;
             }
-            if (i + i_48_ > aHa_Sub1_6506.anInt7507) {
-                int i_57_ = i + i_48_ - aHa_Sub1_6506.anInt7507;
+            if (i + i_48_ > aJavaToolkit_6506.clipX2) {
+                int i_57_ = i + i_48_ - aJavaToolkit_6506.clipX2;
                 i_48_ -= i_57_;
                 i_53_ += i_57_;
                 i_52_ += i_57_;
             }
-            if (i_48_ > 0 && i_49_ > 0) method2594(aByteArrayArray6504[c], aHa_Sub1_6506.anIntArray7483, i_45_, i_54_, i_51_, i_48_, i_49_, i_52_, i_53_, i, i_44_, anIntArray6503[c], var_aa, i_46_, i_47_);
+            if (i_48_ > 0 && i_49_ > 0) method2594(aByteArrayArray6504[c], aJavaToolkit_6506.anIntArray7483, i_45_, i_54_, i_51_, i_48_, i_49_, i_52_, i_53_, i, i_44_, anIntArray6503[c], var_aa, i_46_, i_47_);
         }
     }
 
@@ -144,34 +144,34 @@ final class FontRenderer_Sub4 extends FontRenderer {
         i_58_ += anIntArray6508[c];
         int i_60_ = anIntArray6503[c];
         int i_61_ = anIntArray6505[c];
-        int i_62_ = aHa_Sub1_6506.anInt7477;
+        int i_62_ = aJavaToolkit_6506.surfaceWidth;
         int i_63_ = i + i_58_ * i_62_;
         int i_64_ = i_62_ - i_60_;
         int i_65_ = 0;
         int i_66_ = 0;
-        if (i_58_ < aHa_Sub1_6506.anInt7476) {
-            int i_67_ = aHa_Sub1_6506.anInt7476 - i_58_;
+        if (i_58_ < aJavaToolkit_6506.clipY1) {
+            int i_67_ = aJavaToolkit_6506.clipY1 - i_58_;
             i_61_ -= i_67_;
-            i_58_ = aHa_Sub1_6506.anInt7476;
+            i_58_ = aJavaToolkit_6506.clipY1;
             i_66_ += i_67_ * i_60_;
             i_63_ += i_67_ * i_62_;
         }
-        if (i_58_ + i_61_ > aHa_Sub1_6506.anInt7503) i_61_ -= i_58_ + i_61_ - aHa_Sub1_6506.anInt7503;
-        if (i < aHa_Sub1_6506.anInt7496) {
-            int i_68_ = aHa_Sub1_6506.anInt7496 - i;
+        if (i_58_ + i_61_ > aJavaToolkit_6506.clipY2) i_61_ -= i_58_ + i_61_ - aJavaToolkit_6506.clipY2;
+        if (i < aJavaToolkit_6506.clipX1) {
+            int i_68_ = aJavaToolkit_6506.clipX1 - i;
             i_60_ -= i_68_;
-            i = aHa_Sub1_6506.anInt7496;
+            i = aJavaToolkit_6506.clipX1;
             i_66_ += i_68_;
             i_63_ += i_68_;
             i_65_ += i_68_;
             i_64_ += i_68_;
         }
-        if (i + i_60_ > aHa_Sub1_6506.anInt7507) {
-            int i_69_ = i + i_60_ - aHa_Sub1_6506.anInt7507;
+        if (i + i_60_ > aJavaToolkit_6506.clipX2) {
+            int i_69_ = i + i_60_ - aJavaToolkit_6506.clipX2;
             i_60_ -= i_69_;
             i_65_ += i_69_;
             i_64_ += i_69_;
         }
-        if (i_60_ > 0 && i_61_ > 0) method2595(aByteArrayArray6504[c], aHa_Sub1_6506.anIntArray7483, i_59_, i_66_, i_63_, i_60_, i_61_, i_64_, i_65_);
+        if (i_60_ > 0 && i_61_ > 0) method2595(aByteArrayArray6504[c], aJavaToolkit_6506.anIntArray7483, i_59_, i_66_, i_63_, i_60_, i_61_, i_64_, i_65_);
     }
 }

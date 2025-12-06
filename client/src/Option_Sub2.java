@@ -66,8 +66,8 @@ final class Option_Sub2 extends Option {
                     if (i_9_ < 3 && NPCDefinition.method802(i_8_, i_7_, true)) i_9_++;
                     int i_10_ = 0;
                     if ((Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104) != null && (Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104[i_9_]) != null) i_10_ = 8 * ((Class338.aClass237_Sub1_4197.aByteArrayArrayArray3104[i_9_][i_7_][i_8_]) & 0xff) << 2;
-                    if (aa_Sub1.aSArray5191 != null && aa_Sub1.aSArray5191[i_9_] != null) {
-                        int i_11_ = (i_5_ + i_10_ + -aa_Sub1.aSArray5191[i_9_].method3982((byte) -86, i_8_, i_7_));
+                    if (aa_Sub1.aGroundArray5191 != null && aa_Sub1.aGroundArray5191[i_9_] != null) {
+                        int i_11_ = (i_5_ + i_10_ + -aa_Sub1.aGroundArray5191[i_9_].tileHeight((byte) -86, i_8_, i_7_));
                         if (i_6_ < i_11_) i_6_ = i_11_;
                     }
                 }

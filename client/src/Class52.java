@@ -37,10 +37,10 @@ final class Class52 implements Interface12 {
     }
 
     static final void method491(byte i) {
-        for (int i_1_ = 0; (Class348_Sub33.aByteArrayArrayArray6962.length > i_1_); i_1_++) {
-            for (int i_2_ = 0; i_2_ < Class348_Sub33.aByteArrayArrayArray6962[0].length; i_2_++) {
-                for (int i_3_ = 0; (Class348_Sub33.aByteArrayArrayArray6962[0][0].length > i_3_); i_3_++)
-                    Class348_Sub33.aByteArrayArrayArray6962[i_1_][i_2_][i_3_] = (byte) 0;
+        for (int i_1_ = 0; (Class348_Sub33.tileFlags.length > i_1_); i_1_++) {
+            for (int i_2_ = 0; i_2_ < Class348_Sub33.tileFlags[0].length; i_2_++) {
+                for (int i_3_ = 0; (Class348_Sub33.tileFlags[0][0].length > i_3_); i_3_++)
+                    Class348_Sub33.tileFlags[i_1_][i_2_][i_3_] = (byte) 0;
             }
         }
         int i_4_ = 119 / ((i - 47) / 34);

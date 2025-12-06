@@ -5,7 +5,8 @@
 import java.awt.*;
 import java.util.Random;
 
-abstract class ha {
+// ha
+abstract class Toolkit {
     static int anInt4561;
     static int headIconsPkGroup;
     static int anInt4563;
@@ -79,7 +80,8 @@ abstract class ha {
 
     abstract Class365 c();//c
 
-    abstract void method3638(Matrix matrix);
+    // method3638
+    abstract void setCamera(Matrix matrix);
 
     abstract int[] na(int i, int i_23_, int i_24_, int i_25_);
 
@@ -115,7 +117,7 @@ abstract class ha {
 
     abstract void method3647(boolean bool);
 
-    abstract s method3648(int i, int i_46_, int[][] is, int[][] is_47_, int i_48_, int i_49_, int i_50_);
+    abstract Ground method3648(int i, int i_46_, int[][] is, int[][] is_47_, int i_48_, int i_49_, int i_50_);
 
     final void method3649(byte i, int i_51_, int i_52_, int i_53_, int i_54_) {
         anInt4569++;
@@ -299,7 +301,7 @@ abstract class ha {
 
     abstract Sprite method3691(Class207 class207, boolean bool);
 
-    static final synchronized ha method3692(int i, int i_168_, int i_169_, Index index, int i_170_, TextureSource var_d, Canvas canvas, int i_171_) {
+    static final synchronized Toolkit method3692(int i, int i_168_, int i_169_, Index index, int i_170_, TextureSource var_d, Canvas canvas, int i_171_) {
         try {
             anInt4576++;
             if (i_170_ == i_171_) return Class348_Sub5.method2753(true, i_168_, i_169_, canvas, var_d);
@@ -368,7 +370,7 @@ abstract class ha {
 
     abstract Sprite method3711(int[] is, int i, int i_212_, int i_213_, int i_214_, boolean bool);
 
-    ha(TextureSource var_d) {
+    Toolkit(TextureSource var_d) {
         this.aD4579 = var_d;
         int i = -1;
         for (int i_215_ = 0; i_215_ < 8; i_215_++) {

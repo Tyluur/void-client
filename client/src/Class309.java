@@ -101,7 +101,7 @@ final class Class309 implements Interface7 {
         int i_13_ = 126 / ((i - -54) / 38);
     }
 
-    static final void method2312(int i, int i_14_, Class262 class262, int i_15_, ha var_ha) {
+    static final void method2312(int i, int i_14_, Class262 class262, int i_15_, Toolkit var_toolkit) {
         do {
             try {
                 anInt4811++;
@@ -110,15 +110,15 @@ final class Class309 implements Interface7 {
                     for (Class348_Sub21 class348_sub21 = (Class348_Sub21) class262.method1995(4); class348_sub21 != null; class348_sub21 = ((Class348_Sub21) class262.method1990((byte) 104))) {
                         Class42 class42 = (Class75.aMapElementTypeList_1238.method1225(class348_sub21.anInt6847, (byte) 82));
                         if (Class60.method589(class42, -4)) {
-                            boolean bool = Class190.method1425((byte) -31, class42, class348_sub21, i_14_, var_ha, i_15_);
-                            if (bool) Class59.method549((byte) -43, class348_sub21, var_ha, class42);
+                            boolean bool = Class190.method1425((byte) -31, class42, class348_sub21, i_14_, var_toolkit, i_15_);
+                            if (bool) Class59.method549((byte) -43, class348_sub21, var_toolkit, class42);
                         }
                     }
                     if (i == -13084) break;
                     aStringArray4818 = null;
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (class262 != null ? "{...}" : "null") + ',' + i_15_ + ',' + (var_ha != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (class262 != null ? "{...}" : "null") + ',' + i_15_ + ',' + (var_toolkit != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

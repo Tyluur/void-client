@@ -68,7 +68,7 @@ final class Class122 {
                         int i_16_ = (64 * (Class348_Sub23_Sub3.mapRegionIds[i_14_] >> 8) + -za_Sub2.regionTileX);
                         int i_17_ = ((Class348_Sub23_Sub3.mapRegionIds[i_14_] & 0xff) * 64 - Class90.regionTileY);
                         Class369_Sub1.method3570(false);
-                        class237_sub1.method1695(is_15_, (Class348_Sub45.collisionMaps), i_17_, Class348_Sub8.aHa6654, i_16_, i ^ 0x1054f);
+                        class237_sub1.method1695(is_15_, (Class348_Sub45.collisionMaps), i_17_, Class348_Sub8.aToolkit6654, i_16_, i ^ 0x1054f);
                     }
                 }
             }

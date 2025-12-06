@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class198 {
+// Class198
+final class JavaGenericBlendedTile {
     short[] aShortArray2613;
     short[] aShortArray2614;
     int[] anIntArray2615;
@@ -15,7 +16,7 @@ final class Class198 {
     short[] aShortArray2622;
     int[] anIntArray2623;
 
-    public Class198() {
+    public JavaGenericBlendedTile() {
         /* empty */
     }
 }

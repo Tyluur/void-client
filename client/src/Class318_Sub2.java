@@ -12,7 +12,7 @@ final class Class318_Sub2 extends Class318 {
     static int anInt6399;
     static Class147[] aClass147Array6400 = new Class147[100];
 
-    static final void method2494(int i, int i_0_, int i_1_, ha var_ha, Class348_Sub42_Sub12 class348_sub42_sub12, int i_2_, int i_3_, int i_4_, byte i_5_, int i_6_, int i_7_, int i_8_) {
+    static final void method2494(int i, int i_0_, int i_1_, Toolkit var_toolkit, Class348_Sub42_Sub12 class348_sub42_sub12, int i_2_, int i_3_, int i_4_, byte i_5_, int i_6_, int i_7_, int i_8_) {
         do {
             try {
                 anInt6397++;
@@ -45,7 +45,7 @@ final class Class318_Sub2 extends Class318 {
                 if (!class348_sub42_sub12.aBoolean9597) break;
                 Option_Sub24.aSprite_6097.method974(Class369.aFontMetrics_4962.width(true, string) + (i_7_ - -5), -12 + i_1_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vo.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (class348_sub42_sub12 != null ? "{...}" : "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("vo.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + (class348_sub42_sub12 != null ? "{...}" : "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'));
             }
             break;
         } while (false);
@@ -96,7 +96,7 @@ final class Class318_Sub2 extends Class318 {
         }
     }
 
-    static final void method2498(Class338 class338, ha var_ha, byte i, int i_18_) {
+    static final void method2498(Class338 class338, Toolkit var_toolkit, byte i, int i_18_) {
         try {
             anInt6395++;
             if (i > -101) anIntArray6393 = null;
@@ -198,7 +198,7 @@ final class Class318_Sub2 extends Class318 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vo.A(" + (class338 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_18_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("vo.A(" + (class338 != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_18_ + ')'));
         }
     }
 
@@ -210,7 +210,7 @@ final class Class318_Sub2 extends Class318 {
             if (!aa_Sub2.method164(i, i_38_, (byte) -97, i_36_)) return false;
             int i_41_ = i_38_ << Class362.anInt4459;
             int i_42_ = i_36_ << Class362.anInt4459;
-            if (Class121.method1084(i_37_, Class270.anInt3465, i_42_, i_41_, aa_Sub1.aSArray5191[i].method3982((byte) -86, i_36_, i_38_), Class270.anInt3465, 18507)) {
+            if (Class121.method1084(i_37_, Class270.anInt3465, i_42_, i_41_, aa_Sub1.aGroundArray5191[i].tileHeight((byte) -86, i_36_, i_38_), Class270.anInt3465, 18507)) {
                 Class348_Sub40_Sub4.anInt9112++;
                 return true;
             }
@@ -224,7 +224,7 @@ final class Class318_Sub2 extends Class318 {
         }
         int i_45_ = (i_38_ << Class362.anInt4459) + 1;
         int i_46_ = (i_36_ << Class362.anInt4459) + 2;
-        if (!Class121.method1084(i_37_, (1 + -i_38_ + i_40_) * Class270.anInt3465, i_46_, i_45_, aa_Sub1.aSArray5191[i].method3982((byte) -86, i_36_, i_38_), Class270.anInt3465 * (i_35_ + -i_36_ + 1), 18507)) return false;
+        if (!Class121.method1084(i_37_, (1 + -i_38_ + i_40_) * Class270.anInt3465, i_46_, i_45_, aa_Sub1.aGroundArray5191[i].tileHeight((byte) -86, i_36_, i_38_), Class270.anInt3465 * (i_35_ + -i_36_ + 1), 18507)) return false;
         Class348_Sub40_Sub4.anInt9112++;
         return true;
     }

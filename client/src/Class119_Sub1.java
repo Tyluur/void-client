@@ -39,7 +39,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
         return this.aBuffer1792.getAddress();
     }
 
-    static final void method1077(ha var_ha, byte i) {
+    static final void method1077(Toolkit var_toolkit, byte i) {
         anInt4700++;
         if ((Class73.anInt4776 >= 2 || r.aBoolean9722) && Class289.aClass46_3701 == null) {
             if (i >= -71) method1077(null, (byte) -41);
@@ -73,7 +73,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
             } else string = Class316.method2367((byte) 125, Class316.aClass348_Sub42_Sub12_3963);
             if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508.method2063(Class348_Sub33.language, 544));
             if (Class348_Sub36.aClass46_6990 != null) {
-                FontRenderer fontRenderer = Class348_Sub36.aClass46_6990.method426(var_ha, (byte) 68);
+                FontRenderer fontRenderer = Class348_Sub36.aClass46_6990.method426(var_toolkit, (byte) 68);
                 if (fontRenderer == null) fontRenderer = Class262.aFontRenderer_3326;
                 fontRenderer.method2585(Class175.anIntArray2330, Class348_Sub36.aClass46_6990.anInt709, Class341.aSpriteArray4234, Class348_Sub36.aClass46_6990.anInt700, Class348_Sub36.aClass46_6990.anInt749, Class348_Sub36.aClass46_6990.anInt789, Class348_Sub36.aClass46_6990.anInt809, OutputStream_Sub1.aRandom93, Class348_Sub36.aClass46_6990.anInt762, Class32.anInt451, Class356.anInt4383, -33, Class332.anInt4141, string, Class195.anIntArray5007);
                 Class13.method226(Class195.anIntArray5007[0], Class195.anIntArray5007[2], Class195.anIntArray5007[1], 0, Class195.anIntArray5007[3]);

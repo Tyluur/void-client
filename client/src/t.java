@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class t extends s implements Interface19 {
+final class t extends Ground implements Interface19 {
     long nativeid;
     private final Class262 aClass262_5149 = new Class262();
     private final oa anOa5150;
@@ -106,7 +106,7 @@ final class t extends s implements Interface19 {
     t(oa var_oa, ya var_ya, int i, int i_50_, int[][] is, int[][] is_51_, int i_52_, int i_53_, int i_54_) {
         super(i, i_50_, i_52_, is);
         anOa5150 = var_oa;
-        ga(anOa5150, var_ya, i, i_50_, this.anIntArrayArray4584, is_51_, i_52_, i_53_, i_54_);
+        ga(anOa5150, var_ya, i, i_50_, this.tileHeights, is_51_, i_52_, i_53_, i_54_);
     }
 
     final boolean method3989(r var_r, int i, int i_55_, int i_56_, int i_57_, boolean bool) {

@@ -3,7 +3,7 @@
  */
 
 final class Class348_Sub34 extends Node {
-    static ha aHa6968;
+    static Toolkit aToolkit6968;
     static int anInt6969;
     static Class351 aClass351_6970;
     int anInt6971;
@@ -15,7 +15,7 @@ final class Class348_Sub34 extends Node {
         anIntArray6972 = null;
         if (bool != true) method3026(false);
         aClass351_6970 = null;
-        aHa6968 = null;
+        aToolkit6968 = null;
     }
 
     Class348_Sub34(int i, int i_0_) {

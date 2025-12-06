@@ -49,7 +49,7 @@ final class VarcstrTypeList {
                         break;
                     }
                     if (string.equals("renderer")) {
-                        Class365 class365 = Class348_Sub8.aHa6654.c();
+                        Class365 class365 = Class348_Sub8.aToolkit6654.c();
                         Applet_Sub1.method94("Vendor: " + class365.anInt4476, 89);
                         Applet_Sub1.method94("Name: " + (class365.aString4470), 71);
                         Applet_Sub1.method94(("Version: " + (class365.anInt4475)), -110);
@@ -298,7 +298,7 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.startsWith("bloom")) {
-                            boolean bool_7_ = Class348_Sub8.aHa6654.method3666();
+                            boolean bool_7_ = Class348_Sub8.aToolkit6654.method3666();
                             if (Class348_Sub40_Sub33.method3137(!bool_7_, (byte) -24)) {
                                 if (bool_7_) {
                                     Applet_Sub1.method94("Bloom disabled", i + -49);
@@ -335,7 +335,7 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.equalsIgnoreCase("getheight")) {
-                            Applet_Sub1.method94(("Height: " + (aa_Sub1.aSArray5191[(Class132.aPlayer_1907.plane)].method3982((byte) -86, (Class132.aPlayer_1907.y) >> 9, (Class132.aPlayer_1907.x) >> 9))), i ^ 0x1);
+                            Applet_Sub1.method94(("Height: " + (aa_Sub1.aGroundArray5191[(Class132.aPlayer_1907.plane)].tileHeight((byte) -86, (Class132.aPlayer_1907.y) >> 9, (Class132.aPlayer_1907.x) >> 9))), i ^ 0x1);
                             break;
                         }
                         if (string.equalsIgnoreCase("resetminimap")) {
@@ -348,7 +348,7 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.startsWith("mc")) {
-                            if (Class348_Sub8.aHa6654.method3708()) {
+                            if (Class348_Sub8.aToolkit6654.method3708()) {
                                 int i_8_ = Integer.parseInt(string.substring(3));
                                 if (i_8_ >= 1) {
                                     if (i_8_ > 4) i_8_ = 4;
@@ -375,7 +375,7 @@ final class VarcstrTypeList {
                         }
                         if (string.equals("renderprofile") || string.equals("rp")) {
                             Class188.aBoolean2514 = !Class188.aBoolean2514;
-                            Class348_Sub8.aHa6654.method3647(Class188.aBoolean2514);
+                            Class348_Sub8.aToolkit6654.method3647(Class188.aBoolean2514);
                             Class110_Sub1.method1042((byte) 23);
                             Applet_Sub1.method94(("showprofiling=" + Class188.aBoolean2514), 106);
                             break;
@@ -506,7 +506,7 @@ final class VarcstrTypeList {
                         }
                         if (string.startsWith("texsize")) {
                             int i_18_ = Integer.parseInt(string.substring(8));
-                            Class348_Sub8.aHa6654.method3696(i_18_);
+                            Class348_Sub8.aToolkit6654.method3696(i_18_);
                             break;
                         }
                         if (string.equals("soundstreamcount")) {

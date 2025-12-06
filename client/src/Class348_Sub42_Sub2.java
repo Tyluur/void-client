@@ -25,10 +25,10 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
         super.finalize();
     }
 
-    static final void method3171(ha var_ha, int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, boolean bool, boolean bool_5_) {
-        Class9.aHa171 = var_ha;
+    static final void method3171(Toolkit var_toolkit, int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, boolean bool, boolean bool_5_) {
+        Class9.aToolkit171 = var_toolkit;
         Npc.anInt10503 = i;
-        Class348_Sub40_Sub5.aBoolean9121 = (Npc.anInt10503 > 1 && Class9.aHa171.method3708());
+        Class348_Sub40_Sub5.aBoolean9121 = (Npc.anInt10503 > 1 && Class9.aToolkit171.method3708());
         Class362.anInt4459 = i_0_;
         Class270.anInt3465 = 1 << Class362.anInt4459;
         Class348_Sub23_Sub2.anInt9037 = Class270.anInt3465 >> 1;
@@ -41,20 +41,20 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
         Class348_Sub45.method3309(-124);
         StructTypeList.aClass357ArrayArrayArray1148 = (new Class357[i_1_][Class318_Sub7.anInt6451]
                 [Class348_Sub41.anInt7054]);
-        Class348_Sub1_Sub1.aSArray8801 = new s[i_1_];
+        Class348_Sub1_Sub1.aGroundArray8801 = new Ground[i_1_];
         if (bool) {
             ModelParticleEffector.anIntArrayArray4253 = new int[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
             Class348_Sub1_Sub2.aByteArrayArray8816 = new byte[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
             Option_Sub1.aShortArrayArray5847 = new short[Class318_Sub7.anInt6451][Class348_Sub41.anInt7054];
             Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = (new Class357[1][Class318_Sub7.anInt6451]
                     [Class348_Sub41.anInt7054]);
-            Class332.aSArray4142 = new s[1];
+            Class332.aGroundArray4142 = new Ground[1];
         } else {
             ModelParticleEffector.anIntArrayArray4253 = null;
             Class348_Sub1_Sub2.aByteArrayArray8816 = null;
             Option_Sub1.aShortArrayArray5847 = null;
             Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = null;
-            Class332.aSArray4142 = null;
+            Class332.aGroundArray4142 = null;
         }
         if (bool_5_) {
             Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431 = new long[i_1_][i_2_][i_3_];
@@ -92,10 +92,10 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
             Class5_Sub2.aBooleanArrayArrayArray8361 = new boolean[i_1_][][];
             if (Class348_Sub40_Sub34.aClass293Array9432 != null) Class260.method1978();
             Class348_Sub40_Sub34.aClass293Array9432 = new Class293[Npc.anInt10503];
-            Class9.aHa171.method3631((Class348_Sub40_Sub34.aClass293Array9432).length + 1);
-            Class9.aHa171.method3659(0);
+            Class9.aToolkit171.method3631((Class348_Sub40_Sub34.aClass293Array9432).length + 1);
+            Class9.aToolkit171.method3659(0);
             for (int i_6_ = 0; i_6_ < Class348_Sub40_Sub34.aClass293Array9432.length; i_6_++) {
-                Class348_Sub40_Sub34.aClass293Array9432[i_6_] = new Class293(i_6_ + 1, Class9.aHa171);
+                Class348_Sub40_Sub34.aClass293Array9432[i_6_] = new Class293(i_6_ + 1, Class9.aToolkit171);
                 new Thread(Class348_Sub40_Sub34.aClass293Array9432[i_6_], "wr" + i_6_).start();
             }
             int i_7_;

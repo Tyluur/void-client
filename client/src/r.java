@@ -21,8 +21,8 @@ abstract class r extends Class348_Sub42 {
         Class44.aMatrix_624.method898(Class51.aMatrix_905);
         anInt9717++;
         if (bool != true) method3285(10);
-        Class44.aMatrix_624.method891(0, 0, (int) d);
-        Class21.aHa326.method3638(Class44.aMatrix_624);
+        Class44.aMatrix_624.translate(0, 0, (int) d);
+        Class21.aToolkit326.setCamera(Class44.aMatrix_624);
     }
 
     public static void method3285(int i) {

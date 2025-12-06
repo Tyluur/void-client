@@ -60,7 +60,7 @@ final class Class50_Sub1 extends Class50 {
         int i_17_ = anInt5213 * i_14_ >> 12;
         int i_18_ = anInt5212 * i_15_ >> 12;
         int i_19_ = i_15_ * anInt5222 >> 12;
-        ha.method3641(i_18_, i_19_, (byte) -75, this.anInt864, i_17_, i_16_);
+        Toolkit.method3641(i_18_, i_19_, (byte) -75, this.anInt864, i_17_, i_16_);
     }
 
     static final byte[] method461(boolean bool, Object object, int i) {

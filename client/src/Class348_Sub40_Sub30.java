@@ -27,7 +27,7 @@ final class Class348_Sub40_Sub30 extends Class348_Sub40 {
 
     static final void method3126(byte i) {
         if (i != 98) anInt9388 = 46;
-        Class60.aHa1098.method3700(Option_Sub10.aFloat5945, Class348_Sub3.aFloat6586, Class269.aFloat3462);
+        Class60.aToolkit1098.method3700(Option_Sub10.aFloat5945, Class348_Sub3.aFloat6586, Class269.aFloat3462);
         anInt9387++;
     }
 

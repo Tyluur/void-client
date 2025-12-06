@@ -42,7 +42,7 @@ final class Class125 implements Interface12 {
         int i_4_ = i_3_ << Class362.anInt4459;
         int i_5_ = i << Class362.anInt4459;
         if (i_2_ != -79) anInt4919 = 64;
-        if (Class121.method1084(i_0_, Class270.anInt3465, i_5_, i_4_, aa_Sub1.aSArray5191[i_1_].method3982((byte) -86, i, i_3_), Class270.anInt3465, 18507)) {
+        if (Class121.method1084(i_0_, Class270.anInt3465, i_5_, i_4_, aa_Sub1.aGroundArray5191[i_1_].tileHeight((byte) -86, i, i_3_), Class270.anInt3465, 18507)) {
             Class348_Sub40_Sub4.anInt9112++;
             return true;
         }

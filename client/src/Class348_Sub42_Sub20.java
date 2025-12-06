@@ -34,9 +34,9 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
         int i_0_ = 112 / ((i - 16) / 57);
     }
 
-    static final void method3281(byte i, ha var_ha) {
-        if (Class5_Sub1.aBoolean8335) Class303.method2288(false, var_ha);
-        else Class119_Sub1.method1077(var_ha, (byte) -123);
+    static final void method3281(byte i, Toolkit var_toolkit) {
+        if (Class5_Sub1.aBoolean8335) Class303.method2288(false, var_toolkit);
+        else Class119_Sub1.method1077(var_toolkit, (byte) -123);
         anInt9709++;
         if (i < 29) method3280(81);
     }

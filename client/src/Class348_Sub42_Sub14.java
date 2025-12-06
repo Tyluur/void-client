@@ -83,7 +83,7 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
         }
     }
 
-    static final void method3241(int i, byte i_7_, ha var_ha) {
+    static final void method3241(int i, byte i_7_, Toolkit var_toolkit) {
         anInt9637++;
         if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) Class348_Sub42_Sub10.anInt9577 = 0;
         else {
@@ -91,10 +91,10 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
             Class42.anInt562 = 0;
             Class348_Sub23_Sub2.anInt9039 = 0;
             Class348_Sub40_Sub4.anInt9112 = 0;
-            int[] is = var_ha.Y();
+            int[] is = var_toolkit.Y();
             Class285_Sub2.anInt8498 = (int) ((float) is[3] / 3.0F);
             Class140.anInt1962 = (int) ((float) is[2] / 3.0F);
-            var_ha.method3632(Class348_Sub40_Sub34.anIntArray9436);
+            var_toolkit.method3632(Class348_Sub40_Sub34.anIntArray9436);
             if ((Class306.anInt3872 != (int) ((float) Class348_Sub40_Sub34.anIntArray9436[0] / 3.0F)) || Class86.anInt1480 != (int) ((float) Class348_Sub40_Sub34.anIntArray9436[1] / 3.0F)) {
                 Class86.anInt1480 = (int) ((float) Class348_Sub40_Sub34.anIntArray9436[1] / 3.0F);
                 Class306.anInt3872 = (int) ((float) Class348_Sub40_Sub34.anIntArray9436[0] / 3.0F);
@@ -102,16 +102,16 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
                 Class14.anIntArray5091 = new int[Class86.anInt1480 * Class306.anInt3872];
                 Class69.anInt1202 = Class306.anInt3872 >> 1;
             }
-            Class348_Sub40_Sub4.aMatrix_9114 = var_ha.method3640();
+            Class348_Sub40_Sub4.aMatrix_9114 = var_toolkit.method3640();
             Class348_Sub42_Sub10.anInt9577 = 0;
             int i_8_ = 0;
             if (i_7_ < 37) method3241(-25, (byte) 65, null);
             for (/**/; Option_Sub26.anInt6115 > i_8_; i_8_++)
-                Class318_Sub2.method2498(Class147.aClass338Array2034[i_8_], var_ha, (byte) -112, i);
+                Class318_Sub2.method2498(Class147.aClass338Array2034[i_8_], var_toolkit, (byte) -112, i);
             for (int i_9_ = 0; i_9_ < Class69.anInt1200; i_9_++)
-                Class318_Sub2.method2498((Class318_Sub1_Sub3_Sub4.aClass338Array10330[i_9_]), var_ha, (byte) -127, i);
+                Class318_Sub2.method2498((Class318_Sub1_Sub3_Sub4.aClass338Array10330[i_9_]), var_toolkit, (byte) -127, i);
             for (int i_10_ = 0; i_10_ < Class348_Sub44.anInt7101; i_10_++)
-                Class318_Sub2.method2498(Class294.aClass338Array5060[i_10_], var_ha, (byte) -128, i);
+                Class318_Sub2.method2498(Class294.aClass338Array5060[i_10_], var_toolkit, (byte) -128, i);
             Class225.anInt2946 = 0;
             if (Class348_Sub42_Sub10.anInt9577 > 0) {
                 int i_11_ = Class14.anIntArray5091.length;

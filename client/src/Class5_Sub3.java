@@ -19,8 +19,8 @@ final class Class5_Sub3 extends Class5 {
     final void method178(int i, boolean bool, byte i_0_, int i_1_) {
         if (i_0_ >= -6) method202(-4, null);
         anInt8376++;
-        Class348_Sub8.aHa6654.method3628(-2 + i, i_1_, 4 + this.aClass369_4635.anInt4971, this.aClass369_4635.anInt4963 + 2, (((Class369_Sub1) this.aClass369_4635).anInt8580), 0);
-        Class348_Sub8.aHa6654.method3628(i + -1, i_1_ + 1, this.aClass369_4635.anInt4971 + 2, this.aClass369_4635.anInt4963, 0, 0);
+        Class348_Sub8.aToolkit6654.method3628(-2 + i, i_1_, 4 + this.aClass369_4635.anInt4971, this.aClass369_4635.anInt4963 + 2, (((Class369_Sub1) this.aClass369_4635).anInt8580), 0);
+        Class348_Sub8.aToolkit6654.method3628(i + -1, i_1_ + 1, this.aClass369_4635.anInt4971 + 2, this.aClass369_4635.anInt4963, 0, 0);
     }
 
     static final Class348_Sub21 method199(int i) {
@@ -121,10 +121,10 @@ final class Class5_Sub3 extends Class5 {
         int i_10_ = (this.method183(48) * this.aClass369_4635.anInt4971 / 10000);
         int[] is = new int[4];
         int i_11_ = -50 % ((-20 - i) / 57);
-        Class348_Sub8.aHa6654.K(is);
-        Class348_Sub8.aHa6654.KA(i_9_, 2 + i_8_, i_9_ - -i_10_, i_8_ - -(this.aClass369_4635.anInt4963));
+        Class348_Sub8.aToolkit6654.K(is);
+        Class348_Sub8.aToolkit6654.KA(i_9_, 2 + i_8_, i_9_ - -i_10_, i_8_ - -(this.aClass369_4635.anInt4963));
         aSprite_8366.method972(i_9_, 2 + i_8_, (this.aClass369_4635.anInt4971), (this.aClass369_4635.anInt4963));
-        Class348_Sub8.aHa6654.KA(is[0], is[1], is[2], is[3]);
+        Class348_Sub8.aToolkit6654.KA(is[0], is[1], is[2], is[3]);
     }
 
     static final void method202(int i, Class348_Sub42_Sub12 class348_sub42_sub12) {

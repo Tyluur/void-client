@@ -81,7 +81,7 @@ final class Class101_Sub3 extends Matrix {
         fs[3] = -(fs[0] * f_4_ + f_3_ * fs[1] + f_5_ * fs[2]);
     }
 
-    final void method891(int i, int i_9_, int i_10_) {
+    final void translate(int i, int i_9_, int i_10_) {
         this.aFloat5751 += (float) i_10_;
         this.aFloat5772 += (float) i_9_;
         this.aFloat5747 += (float) i;
@@ -160,7 +160,7 @@ final class Class101_Sub3 extends Matrix {
         is[0] = (int) (this.aFloat5770 * f + this.aFloat5761 * f_28_ + f_29_ * this.aFloat5756);
     }
 
-    final void method903(int i, int i_30_, int i_31_, int i_32_, int i_33_, int i_34_) {
+    final void rotate(int i, int i_30_, int i_31_, int i_32_, int i_33_, int i_34_) {
         anInt5782++;
         float f = Class348_Sub23.aFloatArray6867[i_32_ & 0x3fff];
         float f_35_ = Class348_Sub23.aFloatArray6865[i_32_ & 0x3fff];
@@ -312,21 +312,21 @@ final class Class101_Sub3 extends Matrix {
         try {
             if (i != -8212) method944(65, null, null);
             anInt5752++;
-            for (int i_52_ = 0; i_52_ < class237_sub1.anInt3130; i_52_++) {
+            for (int i_52_ = 0; i_52_ < class237_sub1.levels; i_52_++) {
                 Class369_Sub1.method3570(false);
                 for (int i_53_ = 0; (i_53_ < Class367_Sub4.mapLength >> 3); i_53_++) {
                     for (int i_54_ = 0; (Class348_Sub40_Sub3.mapWidth >> 3 > i_54_); i_54_++) {
                         int i_55_ = (Class62.anIntArrayArrayArray1116[i_52_][i_53_][i_54_]);
                         if (i_55_ != -1) {
                             int i_56_ = 0x3 & i_55_ >> 24;
-                            if (!class237_sub1.aBoolean3109 || i_56_ == 0) {
+                            if (!class237_sub1.underwater || i_56_ == 0) {
                                 int i_57_ = (0x6 & i_55_) >> 1;
                                 int i_58_ = i_55_ >> 14 & 0x3ff;
                                 int i_59_ = (0x3ff9 & i_55_) >> 3;
                                 int i_60_ = i_59_ / 8 + (i_58_ / 8 << 8);
                                 for (int i_61_ = 0; i_61_ < Class348_Sub23_Sub3.mapRegionIds.length; i_61_++) {
                                     if (i_60_ == (Class348_Sub23_Sub3.mapRegionIds[i_61_]) && is[i_61_] != null) {
-                                        class237_sub1.method1692((i_58_ & 0x7) * 8, i_57_, is[i_61_], i_56_, (i_59_ & 0x7) * 8, Class348_Sub8.aHa6654, 8 * i_54_, 8 * i_53_, i + 8219, Class348_Sub45.collisionMaps, i_52_);
+                                        class237_sub1.method1692((i_58_ & 0x7) * 8, i_57_, is[i_61_], i_56_, (i_59_ & 0x7) * 8, Class348_Sub8.aToolkit6654, 8 * i_54_, 8 * i_53_, i + 8219, Class348_Sub45.collisionMaps, i_52_);
                                         break;
                                     }
                                 }

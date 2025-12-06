@@ -36,7 +36,7 @@ abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
         if (class357 != null) {
             class357.aClass318_Sub1_Sub4_4406 = class318_sub1_sub4;
             class357.aClass318_Sub1_Sub4_4403 = class318_sub1_sub4_4_;
-            int i_5_ = aa_Sub1.aSArray5191 == Class332.aSArray4142 ? 1 : 0;
+            int i_5_ = aa_Sub1.aGroundArray5191 == Class332.aGroundArray4142 ? 1 : 0;
             if (class318_sub1_sub4.method2376(-109)) {
                 if (class318_sub1_sub4.method2377((byte) 122)) {
                     class318_sub1_sub4.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226[i_5_];

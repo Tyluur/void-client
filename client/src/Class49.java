@@ -13,7 +13,7 @@ final class Class49 implements Interface4 {
     static volatile boolean aBoolean4726 = true;
     static int anInt4727;
     static boolean aBoolean4728 = false;
-    private final ha_Sub1 aHa_Sub1_4729;
+    private final JavaToolkit aJavaToolkit_4729;
     static Class46 aClass46_4730 = null;
     int[] anIntArray4731;
 
@@ -48,18 +48,18 @@ final class Class49 implements Interface4 {
 
     public final void method14(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, boolean bool, boolean bool_8_) {
         anInt4723++;
-        ItemDefinition.method1568((aHa_Sub1_4729.aClass348_Sub31_7469.anIntArray6916), i_3_, i, i_7_, bool_8_ ? aHa_Sub1_4729.aFloatArray7502 : null, bool ? this.anIntArray4731 : null, i_4_, 115, i_5_, (aHa_Sub1_4729.aClass348_Sub31_7469.anInt6917), this.anInt4725, i_6_, !bool_8_ ? null : this.aFloatArray4719);
+        ItemDefinition.method1568((aJavaToolkit_4729.aClass348_Sub31_7469.anIntArray6916), i_3_, i, i_7_, bool_8_ ? aJavaToolkit_4729.aFloatArray7502 : null, bool ? this.anIntArray4731 : null, i_4_, 115, i_5_, (aJavaToolkit_4729.aClass348_Sub31_7469.anInt6917), this.anInt4725, i_6_, !bool_8_ ? null : this.aFloatArray4719);
     }
 
     public final void method15(int i, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, boolean bool, boolean bool_14_) {
         anInt4721++;
-        ItemDefinition.method1568(this.anIntArray4731, i_9_, i, i_13_, bool_14_ ? this.aFloatArray4719 : null, !bool ? null : (aHa_Sub1_4729.aClass348_Sub31_7469.anIntArray6916), i_10_, 113, i_11_, this.anInt4725, (aHa_Sub1_4729.aClass348_Sub31_7469.anInt6917), i_12_, bool_14_ ? aHa_Sub1_4729.aFloatArray7502 : null);
+        ItemDefinition.method1568(this.anIntArray4731, i_9_, i, i_13_, bool_14_ ? this.aFloatArray4719 : null, !bool ? null : (aJavaToolkit_4729.aClass348_Sub31_7469.anIntArray6916), i_10_, 113, i_11_, this.anInt4725, (aJavaToolkit_4729.aClass348_Sub31_7469.anInt6917), i_12_, bool_14_ ? aJavaToolkit_4729.aFloatArray7502 : null);
     }
 
-    Class49(ha_Sub1 var_ha_Sub1, Sprite sprite, Class216 class216) {
+    Class49(JavaToolkit var_javaToolkit, Sprite sprite, Class216 class216) {
         do {
             try {
-                aHa_Sub1_4729 = var_ha_Sub1;
+                aJavaToolkit_4729 = var_javaToolkit;
                 if (sprite instanceof Sprite_Sub3_Sub1) {
                     Sprite_Sub3_Sub1 class105_sub3_sub1 = (Sprite_Sub3_Sub1) sprite;
                     this.anIntArray4731 = (class105_sub3_sub1.anIntArray9933);
@@ -77,7 +77,7 @@ final class Class49 implements Interface4 {
                 if ((aClass216_4724.anInt4974 != this.anInt4725) || (this.anInt4722 != aClass216_4724.anInt4978)) throw new RuntimeException();
                 this.aFloatArray4719 = aClass216_4724.aFloatArray4980;
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("it.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + (sprite != null ? "{...}" : "null") + ',' + (class216 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("it.<init>(" + (var_javaToolkit != null ? "{...}" : "null") + ',' + (sprite != null ? "{...}" : "null") + ',' + (class216 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

@@ -4,8 +4,9 @@
 
 import java.awt.*;
 
-abstract class s {
-    int[][] anIntArrayArray4584;
+// s
+abstract class Ground {
+    int[][] tileHeights;
     static Index aIndex_4585;
     static int anInt4586;
     int anInt4587;
@@ -25,8 +26,8 @@ abstract class s {
             anInt4586++;
             Dimension dimension = canvas.getSize();
             Class85.method828((byte) 38, dimension.height, dimension.width);
-            if (Packet.anInt7207 != 1) Class21.aHa326.method3669(canvas, Class59_Sub1.anInt5283, Class107.anInt1651);
-            else Class21.aHa326.method3669(canvas, Class348_Sub16_Sub1.anInt8854, Option_Sub16.anInt6008);
+            if (Packet.anInt7207 != 1) Class21.aToolkit326.method3669(canvas, Class59_Sub1.anInt5283, Class107.anInt1651);
+            else Class21.aToolkit326.method3669(canvas, Class348_Sub16_Sub1.anInt8854, Option_Sub16.anInt6008);
         }
     }
 
@@ -36,10 +37,11 @@ abstract class s {
 
     abstract void method3981(Class348_Sub1 class348_sub1, int[] is);
 
-    final int method3982(byte i, int i_20_, int i_21_) {
+    // method3982
+    final int tileHeight(byte i, int y, int x) {
         anInt4593++;
         if (i != -86) this.anInt4590 = -59;
-        return this.anIntArrayArray4584[i_21_][i_20_];
+        return this.tileHeights[x][y];
     }
 
     abstract void method3983(int i, int i_22_, int i_23_, boolean[][] bools, boolean bool, int i_24_);
@@ -61,8 +63,8 @@ abstract class s {
         int i_34_ = -78 % ((i_31_ - -53) / 36);
         int i_35_ = i & this.anInt4592 + -1;
         int i_36_ = i_30_ & this.anInt4592 - 1;
-        int i_37_ = ((((-i_35_ + this.anInt4592) * this.anIntArrayArray4584[i_32_][i_33_]) - -(this.anIntArrayArray4584[i_32_ - -1][i_33_] * i_35_)) >> this.anInt4588);
-        int i_38_ = ((i_35_ * this.anIntArrayArray4584[1 + i_32_][1 + i_33_] + ((this.anInt4592 - i_35_) * this.anIntArrayArray4584[i_32_][i_33_ + 1])) >> this.anInt4588);
+        int i_37_ = ((((-i_35_ + this.anInt4592) * this.tileHeights[i_32_][i_33_]) - -(this.tileHeights[i_32_ - -1][i_33_] * i_35_)) >> this.anInt4588);
+        int i_38_ = ((i_35_ * this.tileHeights[1 + i_32_][1 + i_33_] + ((this.anInt4592 - i_35_) * this.tileHeights[i_32_][i_33_ + 1])) >> this.anInt4588);
         return (i_36_ * i_38_ + (this.anInt4592 + -i_36_) * i_37_ >> this.anInt4588);
     }
 
@@ -77,14 +79,14 @@ abstract class s {
 
     abstract void CA(r var_r, int i, int i_57_, int i_58_, int i_59_, boolean bool);
 
-    s(int i, int i_60_, int i_61_, int[][] is) {
+    Ground(int i, int i_60_, int i_61_, int[][] is) {
         this.anInt4587 = i;
         this.anInt4590 = i_60_;
         int i_62_ = 0;
         for (/**/; i_61_ > 1; i_61_ >>= 1)
             i_62_++;
         this.anInt4592 = 1 << i_62_;
-        this.anIntArrayArray4584 = is;
+        this.tileHeights = is;
         this.anInt4588 = i_62_;
     }
 

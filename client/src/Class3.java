@@ -13,7 +13,7 @@ final class Class3 {
         r.aMatrix_9720 = null;
         Class132.anIntArray1909 = null;
         Class92.anInterface4Array1525 = null;
-        Class21.aHa326 = null;
+        Class21.aToolkit326 = null;
         Class44.aMatrix_624 = null;
         anInt124++;
         int i_0_ = 9 / ((62 - i) / 47);

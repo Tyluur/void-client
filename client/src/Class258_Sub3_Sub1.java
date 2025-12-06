@@ -55,9 +55,9 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3 {
         Class348_Sub22.method2959(-1);
         Class348_Sub23.setToolkit(string, i_11_, bool, 0);
         Class348_Sub24.method2994(2);
-        TimedVarDomain.method1311(5139, Class348_Sub8.aHa6654);
-        Class369.method3568(Class348_Sub8.aHa6654, 4);
-        ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.aHa6654, true);
+        TimedVarDomain.method1311(5139, Class348_Sub8.aToolkit6654);
+        Class369.method3568(Class348_Sub8.aToolkit6654, 4);
+        ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.aToolkit6654, true);
         Class274.method2061(-128);
         Matrix.method901(Class113.aSpriteArray1744, 515880227);
         Class354.method3466(i ^ ~0x4f);

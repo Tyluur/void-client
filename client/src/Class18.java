@@ -42,10 +42,10 @@ final class Class18 {
 
     static final void method271(int i, Class46 class46, byte i_0_, int i_1_) {
         anInt278++;
-        aa var_aa = class46.method425(Class348_Sub8.aHa6654, (byte) 19);
+        aa var_aa = class46.method425(Class348_Sub8.aToolkit6654, (byte) 19);
         if (var_aa != null) {
-            Class348_Sub8.aHa6654.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789);
-            if (VarcTypeList.anInt3306 >= 3) Class348_Sub8.aHa6654.A(-16777216, var_aa, i_1_, i);
+            Class348_Sub8.aToolkit6654.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789);
+            if (VarcTypeList.anInt3306 >= 3) Class348_Sub8.aToolkit6654.A(-16777216, var_aa, i_1_, i);
             else NPCDefinition.aSprite_1365.method976(((float) class46.anInt709 / 2.0F + (float) i_1_), (float) i + (float) class46.anInt789 / 2.0F, 4096, (0x3fff & (int) -ResourceProvider.aFloat3938) << 2, var_aa, i_1_, i);
             if (i_0_ != -98) method271(88, null, (byte) 15, 71);
         }
@@ -123,7 +123,7 @@ final class Class18 {
 
     static final void method273(Class46 class46, int i) {
         anInt288++;
-        if (class46.anInt774 == 5 && class46.anInt812 != -1) Class318_Sub1.method2383(Class348_Sub8.aHa6654, -2, class46);
+        if (class46.anInt774 == 5 && class46.anInt812 != -1) Class318_Sub1.method2383(Class348_Sub8.aToolkit6654, -2, class46);
         if (i != -2835) method273(null, 44);
     }
 
@@ -314,12 +314,12 @@ final class Class18 {
         if (i_20_ != i_19_) aBoolean294 = aBoolean297 = true;
     }
 
-    static final void method282(int i, ha var_ha, int i_21_, byte i_22_, int i_23_, int i_24_, int i_25_, int i_26_) {
+    static final void method282(int i, Toolkit var_toolkit, int i_21_, byte i_22_, int i_23_, int i_24_, int i_25_, int i_26_) {
         anInt274++;
-        Class21.aHa326 = var_ha;
-        Class51.aMatrix_905 = Class21.aHa326.method3654();
-        Class44.aMatrix_624 = Class21.aHa326.method3654();
-        r.aMatrix_9720 = Class21.aHa326.method3654();
+        Class21.aToolkit326 = var_toolkit;
+        Class51.aMatrix_905 = Class21.aToolkit326.method3654();
+        Class44.aMatrix_624 = Class21.aToolkit326.method3654();
+        r.aMatrix_9720 = Class21.aToolkit326.method3654();
         Class73.anInt4784 = i_26_;
         Option_Sub24.anInt6095 = 0;
         if (i_22_ <= 64) anIntArray279 = null;

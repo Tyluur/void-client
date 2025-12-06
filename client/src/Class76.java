@@ -77,9 +77,9 @@ final class Class76 {
         anInt1280++;
         Class318_Sub1 class318_sub1 = class318_sub4.aClass318_Sub1_6410;
         boolean bool = true;
-        Class318_Sub3[] class318_sub3s = class318_sub4.aClass318_Sub3Array6414;
+        LabelBounds[] class318_sub3s = class318_sub4.aClass318_Sub3Array6414;
         for (int i_6_ = 0; class318_sub3s.length > i_6_; i_6_++) {
-            if (class318_sub3s[i_6_].aBoolean6401) {
+            if (class318_sub3s[i_6_].visible) {
                 bool = false;
                 break;
             }

@@ -17,8 +17,8 @@ final class a implements Interface19 {
     private final oa anOa5115;
     private final i anI5116;
 
-    final void method142(s var_s, int i, int i_0_) {
-        H(this.nativeid, ((t) var_s).nativeid, i, i_0_);
+    final void method142(Ground var_ground, int i, int i_0_) {
+        H(this.nativeid, ((t) var_ground).nativeid, i, i_0_);
     }
 
     private final native boolean R(long l, long l_1_, int i, int i_2_, long l_3_, boolean bool);
@@ -51,28 +51,28 @@ final class a implements Interface19 {
         return R(this.nativeid, ((i) model).nativeid, i, i_15_, ((ja) matrix).nativeid, bool);
     }
 
-    final void method147(s var_s, int i, int i_16_, int i_17_) {
-        Z(this.nativeid, ((t) var_s).nativeid, i, i_16_, i_17_);
+    final void method147(Ground var_ground, int i, int i_16_, int i_17_) {
+        Z(this.nativeid, ((t) var_ground).nativeid, i, i_16_, i_17_);
     }
 
     public final void w(boolean bool) {
         E(this.nativeid, bool);
     }
 
-    final void method148(s var_s, int i, int i_18_, int i_19_, int i_20_, int i_21_, int i_22_, int i_23_, boolean[][] bools) {
-        ta(this.nativeid, ((t) var_s).nativeid, i, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, bools);
+    final void method148(Ground var_ground, int i, int i_18_, int i_19_, int i_20_, int i_21_, int i_22_, int i_23_, boolean[][] bools) {
+        ta(this.nativeid, ((t) var_ground).nativeid, i, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, bools);
     }
 
     final void method149(Model model, Matrix matrix, int[] is, int i, int i_24_) {
         f(this.nativeid, ((i) model).nativeid, ((ja) matrix).nativeid, is, i, i_24_);
     }
 
-    private final native void na(long l, ha var_ha, int i, int i_25_, int i_26_, int i_27_, int i_28_, int i_29_, int i_30_);
+    private final native void na(long l, Toolkit var_toolkit, int i, int i_25_, int i_26_, int i_27_, int i_28_, int i_29_, int i_30_);
 
-    private final native void O(long l, ha var_ha, int[] is, int[] is_31_, int[] is_32_, short[] is_33_, int i);
+    private final native void O(long l, Toolkit var_toolkit, int[] is, int[] is_31_, int[] is_32_, short[] is_33_, int i);
 
-    final void method150(ha var_ha, int i, int i_34_, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_) {
-        na(this.nativeid, var_ha, i, i_34_, i_35_, i_36_, i_37_, i_38_, i_39_);
+    final void method150(Toolkit var_toolkit, int i, int i_34_, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_) {
+        na(this.nativeid, var_toolkit, i, i_34_, i_35_, i_36_, i_37_, i_38_, i_39_);
     }
 
     private final native void f(long l, long l_40_, long l_41_, int[] is, int i, int i_42_);
@@ -127,11 +127,11 @@ final class a implements Interface19 {
 
     private final native void UA(long l, long l_62_, long l_63_, int[] is, int i);
 
-    final void method155(ha var_ha, int[] is, int[] is_64_, int[] is_65_, short[] is_66_, int i) {
-        O(this.nativeid, var_ha, is, is_64_, is_65_, is_66_, i);
+    final void method155(Toolkit var_toolkit, int[] is, int[] is_64_, int[] is_65_, short[] is_66_, int i) {
+        O(this.nativeid, var_toolkit, is, is_64_, is_65_, is_66_, i);
     }
 
-    private final native void HA(long l, ha var_ha, int i, int i_67_);
+    private final native void HA(long l, Toolkit var_toolkit, int i, int i_67_);
 
     final void method156() {
         this.aRunnable5112 = null;

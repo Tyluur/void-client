@@ -33,9 +33,9 @@ final class OutputStream_Sub2 extends OutputStream {
                 Class331.anIntArray4128[i]--;
             } else {
                 class318_sub4 = new Class318_Sub4();
-                class318_sub4.aClass318_Sub3Array6414 = new Class318_Sub3[i];
+                class318_sub4.aClass318_Sub3Array6414 = new LabelBounds[i];
                 for (int i_3_ = 0; i > i_3_; i_3_++)
-                    class318_sub4.aClass318_Sub3Array6414[i_3_] = new Class318_Sub3();
+                    class318_sub4.aClass318_Sub3Array6414[i_3_] = new LabelBounds();
             }
             class318_sub4.aBoolean6409 = bool;
             if (bool_2_ != false) aLong108 = 43L;

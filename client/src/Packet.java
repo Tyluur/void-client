@@ -289,10 +289,10 @@ class Packet extends Node {
     }
 
     static final void method3354(int i) {
-        if (Class348_Sub34.aHa6968 != null) {
-            Class348_Sub34.aHa6968.method3635((byte) -44);
+        if (Class348_Sub34.aToolkit6968 != null) {
+            Class348_Sub34.aToolkit6968.method3635((byte) -44);
             Class348_Sub40_Sub9.aFontRenderer_9173 = null;
-            Class348_Sub34.aHa6968 = null;
+            Class348_Sub34.aToolkit6968 = null;
         }
         int i_37_ = -97 % ((i - -14) / 37);
         anInt7173++;
@@ -616,7 +616,7 @@ class Packet extends Node {
                 SystemInfo.aClass248_6601.method1892(i ^ ~0x4b, true);
             }
         }
-        if (Class318_Sub1_Sub1_Sub2.isBuildingMap(newStep, (byte) -64) || newStep == STEP_LOGGING_IN_FROM_GAMESCREEN_TO_LOBBY) Class348_Sub8.aHa6654.method3673();
+        if (Class318_Sub1_Sub1_Sub2.isBuildingMap(newStep, (byte) -64) || newStep == STEP_LOGGING_IN_FROM_GAMESCREEN_TO_LOBBY) Class348_Sub8.aToolkit6654.method3673();
         Class240.mainLogicStep = newStep;
     }
 

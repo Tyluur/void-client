@@ -403,7 +403,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         } while (false);
     }
 
-    static final void method2431(int i, int i_56_, Class348_Sub42_Sub13 class348_sub42_sub13, int i_57_, int i_58_, int i_59_, int i_60_, ha var_ha, int i_61_, int i_62_, int i_63_, int i_64_) {
+    static final void method2431(int i, int i_56_, Class348_Sub42_Sub13 class348_sub42_sub13, int i_57_, int i_58_, int i_59_, int i_60_, Toolkit var_toolkit, int i_61_, int i_62_, int i_63_, int i_64_) {
         try {
             if (i_62_ < 111) aShortArrayArray10246 = null;
             if (i_63_ < i_57_ && i_57_ < i_58_ + i_63_ && i_60_ > i_56_ - 13 && i_60_ < 3 + i_56_) i = i_59_;
@@ -411,11 +411,11 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
             String string = Class348_Sub15.method2812(-44, class348_sub42_sub13);
             Class262.aFontRenderer_3326.method2567(i_56_, string, (byte) 120, i, 0, i_63_ - -3, Class341.aSpriteArray4234, Class175.anIntArray2330);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kda.VA(" + i + ',' + i_56_ + ',' + (class348_sub42_sub13 != null ? "{...}" : "null") + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ',' + i_64_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kda.VA(" + i + ',' + i_56_ + ',' + (class348_sub42_sub13 != null ? "{...}" : "null") + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ',' + i_64_ + ')'));
         }
     }
 
-    final void method2432(ha var_ha, int i, Matrix matrix, boolean bool, Model[] models) {
+    final void method2432(Toolkit var_toolkit, int i, Matrix matrix, boolean bool, Model[] models) {
         do {
             try {
                 if (i == -15074) {
@@ -508,7 +508,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                                     }
                                     if (modelParticleEffectorS_74_ != null) Class214.method1575(modelParticleEffectorS_74_, 0, modelParticleEffectorS_78_, i_79_, modelParticleEffectorS_74_.length);
                                 }
-                                this.aClass318_Sub10_10327.method2536(var_ha, Class367_Sub11.anInt7396, modelParticleEmitterS_75_, modelParticleEffectorS_78_, false);
+                                this.aClass318_Sub10_10327.method2536(var_toolkit, Class367_Sub11.anInt7396, modelParticleEmitterS_75_, modelParticleEffectorS_78_, false);
                             }
                             this.aBoolean10318 = true;
                         }
@@ -517,7 +517,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                     this.aClass318_Sub10_10327.method2533(this.plane, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (matrix != null ? "{...}" : "null") + ',' + bool + ',' + (models != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + (matrix != null ? "{...}" : "null") + ',' + bool + ',' + (models != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -540,7 +540,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
             }
         }
         StructTypeList.aClass357ArrayArrayArray1148 = null;
-        Class348_Sub1_Sub1.aSArray8801 = null;
+        Class348_Sub1_Sub1.aGroundArray8801 = null;
         if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) {
             for (int i = 0; i < Class348_Sub31_Sub2.aClass357ArrayArrayArray9082.length; i++) {
                 for (int i_82_ = 0; i_82_ < Class318_Sub7.anInt6451; i_82_++) {
@@ -552,9 +552,9 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
             }
         }
         Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 = null;
-        Class332.aSArray4142 = null;
+        Class332.aGroundArray4142 = null;
         Class147.aClass357ArrayArrayArray2029 = null;
-        aa_Sub1.aSArray5191 = null;
+        aa_Sub1.aGroundArray5191 = null;
         Class99.aBooleanArrayArray1572 = null;
         Class348_Sub8.aBooleanArrayArray6656 = null;
         Class171.anIntArray2272 = null;
@@ -598,11 +598,11 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         Option_Sub1.aShortArrayArray5847 = null;
         if (Class348_Sub40_Sub34.aClass293Array9432 != null) {
             Class260.method1978();
-            Class9.aHa171.method3631(1);
-            Class9.aHa171.method3659(0);
+            Class9.aToolkit171.method3631(1);
+            Class9.aToolkit171.method3659(0);
         }
         if (GfxTypeList.aClass315Array3982 != null) GfxTypeList.aClass315Array3982 = null;
-        Class9.aHa171 = null;
+        Class9.aToolkit171 = null;
     }
 
     final void method2434(byte i, int i_86_) {

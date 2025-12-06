@@ -36,7 +36,7 @@ final class Class286_Sub7 extends Class286 {
                         for (int i_2_ = i; i_2_ < Class348_Sub40_Sub30.anInt9383; i_2_++) {
                             Class83.aStringArray1441[i_2_] = Class83.aStringArray1441[i_2_ - -1];
                             Class286_Sub2.aStringArray6205[i_2_] = Class286_Sub2.aStringArray6205[1 + i_2_];
-                            ha.anIntArray4578[i_2_] = ha.anIntArray4578[i_2_ - -1];
+                            Toolkit.anIntArray4578[i_2_] = Toolkit.anIntArray4578[i_2_ - -1];
                             Class285.aStringArray4744[i_2_] = Class285.aStringArray4744[1 + i_2_];
                             Class172.anIntArray2280[i_2_] = Class172.anIntArray2280[i_2_ - -1];
                             Class122.aBooleanArray1806[i_2_] = Class122.aBooleanArray1806[1 + i_2_];

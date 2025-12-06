@@ -6,7 +6,7 @@ final class FontRenderer_Sub3 extends FontRenderer {
     private final int[] anIntArray6496;
     private final int[] anIntArray6497;
     private final int[] anIntArray6498;
-    private ha_Sub1 aHa_Sub1_6499;
+    private JavaToolkit aJavaToolkit_6499;
     private final int[] anIntArray6500;
     private final int[] anIntArray6501;
     private final byte[][] aByteArrayArray6502;
@@ -64,11 +64,11 @@ final class FontRenderer_Sub3 extends FontRenderer {
         aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
         int[] is_36_ = var_aa_Sub3.anIntArray5201;
         int[] is_37_ = var_aa_Sub3.anIntArray5202;
-        int i_38_ = i_31_ - aHa_Sub1_6499.anInt7496;
+        int i_38_ = i_31_ - aJavaToolkit_6499.clipX1;
         int i_39_ = i_32_;
         if (i_35_ > i_39_) {
             i_39_ = i_35_;
-            i_26_ += (i_35_ - i_32_) * aHa_Sub1_6499.anInt7477;
+            i_26_ += (i_35_ - i_32_) * aJavaToolkit_6499.surfaceWidth;
             i_25_ += (i_35_ - i_32_) * i_33_;
         }
         int i_40_ = (Math.min(i_35_ + is_36_.length, i_32_ + i_28_));
@@ -107,10 +107,10 @@ final class FontRenderer_Sub3 extends FontRenderer {
         }
     }
 
-    FontRenderer_Sub3(ha_Sub1 var_ha_Sub1, FontMetrics fontMetrics, Class207[] class207s, int[] is, int[] is_49_) {
-        super(var_ha_Sub1, fontMetrics);
-        aHa_Sub1_6499 = var_ha_Sub1;
-        aHa_Sub1_6499 = var_ha_Sub1;
+    FontRenderer_Sub3(JavaToolkit var_javaToolkit, FontMetrics fontMetrics, Class207[] class207s, int[] is, int[] is_49_) {
+        super(var_javaToolkit, fontMetrics);
+        aJavaToolkit_6499 = var_javaToolkit;
+        aJavaToolkit_6499 = var_javaToolkit;
         anIntArray6500 = is;
         anIntArray6497 = is_49_;
         aByteArrayArray6502 = new byte[class207s.length][];
@@ -131,37 +131,37 @@ final class FontRenderer_Sub3 extends FontRenderer {
             i_50_ += anIntArray6501[c];
             int i_54_ = anIntArray6500[c];
             int i_55_ = anIntArray6497[c];
-            int i_56_ = aHa_Sub1_6499.anInt7477;
+            int i_56_ = aJavaToolkit_6499.surfaceWidth;
             int i_57_ = i + i_50_ * i_56_;
             int i_58_ = i_56_ - i_54_;
             int i_59_ = 0;
             int i_60_ = 0;
-            if (i_50_ < aHa_Sub1_6499.anInt7476) {
-                int i_61_ = aHa_Sub1_6499.anInt7476 - i_50_;
+            if (i_50_ < aJavaToolkit_6499.clipY1) {
+                int i_61_ = aJavaToolkit_6499.clipY1 - i_50_;
                 i_55_ -= i_61_;
-                i_50_ = aHa_Sub1_6499.anInt7476;
+                i_50_ = aJavaToolkit_6499.clipY1;
                 i_60_ += i_61_ * i_54_;
                 i_57_ += i_61_ * i_56_;
             }
-            if (i_50_ + i_55_ > aHa_Sub1_6499.anInt7503) i_55_ -= i_50_ + i_55_ - aHa_Sub1_6499.anInt7503;
-            if (i < aHa_Sub1_6499.anInt7496) {
-                int i_62_ = aHa_Sub1_6499.anInt7496 - i;
+            if (i_50_ + i_55_ > aJavaToolkit_6499.clipY2) i_55_ -= i_50_ + i_55_ - aJavaToolkit_6499.clipY2;
+            if (i < aJavaToolkit_6499.clipX1) {
+                int i_62_ = aJavaToolkit_6499.clipX1 - i;
                 i_54_ -= i_62_;
-                i = aHa_Sub1_6499.anInt7496;
+                i = aJavaToolkit_6499.clipX1;
                 i_60_ += i_62_;
                 i_57_ += i_62_;
                 i_59_ += i_62_;
                 i_58_ += i_62_;
             }
-            if (i + i_54_ > aHa_Sub1_6499.anInt7507) {
-                int i_63_ = i + i_54_ - aHa_Sub1_6499.anInt7507;
+            if (i + i_54_ > aJavaToolkit_6499.clipX2) {
+                int i_63_ = i + i_54_ - aJavaToolkit_6499.clipX2;
                 i_54_ -= i_63_;
                 i_59_ += i_63_;
                 i_58_ += i_63_;
             }
             if (i_54_ > 0 && i_55_ > 0) {
-                if (bool) method2592(aByteArrayArray6502[c], aHa_Sub1_6499.anIntArray7483, i_51_, i_60_, i_57_, i_54_, i_55_, i_58_, i_59_, i, i_50_, anIntArray6500[c], var_aa, i_52_, i_53_);
-                else method2593(aByteArrayArray6502[c], aHa_Sub1_6499.anIntArray7483, anIntArray6496, i_51_, i_60_, i_57_, i_54_, i_55_, i_58_, i_59_, i, i_50_, anIntArray6500[c], var_aa, i_52_, i_53_);
+                if (bool) method2592(aByteArrayArray6502[c], aJavaToolkit_6499.anIntArray7483, i_51_, i_60_, i_57_, i_54_, i_55_, i_58_, i_59_, i, i_50_, anIntArray6500[c], var_aa, i_52_, i_53_);
+                else method2593(aByteArrayArray6502[c], aJavaToolkit_6499.anIntArray7483, anIntArray6496, i_51_, i_60_, i_57_, i_54_, i_55_, i_58_, i_59_, i, i_50_, anIntArray6500[c], var_aa, i_52_, i_53_);
             }
         }
     }
@@ -171,37 +171,37 @@ final class FontRenderer_Sub3 extends FontRenderer {
         i_64_ += anIntArray6501[c];
         int i_66_ = anIntArray6500[c];
         int i_67_ = anIntArray6497[c];
-        int i_68_ = aHa_Sub1_6499.anInt7477;
+        int i_68_ = aJavaToolkit_6499.surfaceWidth;
         int i_69_ = i + i_64_ * i_68_;
         int i_70_ = i_68_ - i_66_;
         int i_71_ = 0;
         int i_72_ = 0;
-        if (i_64_ < aHa_Sub1_6499.anInt7476) {
-            int i_73_ = aHa_Sub1_6499.anInt7476 - i_64_;
+        if (i_64_ < aJavaToolkit_6499.clipY1) {
+            int i_73_ = aJavaToolkit_6499.clipY1 - i_64_;
             i_67_ -= i_73_;
-            i_64_ = aHa_Sub1_6499.anInt7476;
+            i_64_ = aJavaToolkit_6499.clipY1;
             i_72_ += i_73_ * i_66_;
             i_69_ += i_73_ * i_68_;
         }
-        if (i_64_ + i_67_ > aHa_Sub1_6499.anInt7503) i_67_ -= i_64_ + i_67_ - aHa_Sub1_6499.anInt7503;
-        if (i < aHa_Sub1_6499.anInt7496) {
-            int i_74_ = aHa_Sub1_6499.anInt7496 - i;
+        if (i_64_ + i_67_ > aJavaToolkit_6499.clipY2) i_67_ -= i_64_ + i_67_ - aJavaToolkit_6499.clipY2;
+        if (i < aJavaToolkit_6499.clipX1) {
+            int i_74_ = aJavaToolkit_6499.clipX1 - i;
             i_66_ -= i_74_;
-            i = aHa_Sub1_6499.anInt7496;
+            i = aJavaToolkit_6499.clipX1;
             i_72_ += i_74_;
             i_69_ += i_74_;
             i_71_ += i_74_;
             i_70_ += i_74_;
         }
-        if (i + i_66_ > aHa_Sub1_6499.anInt7507) {
-            int i_75_ = i + i_66_ - aHa_Sub1_6499.anInt7507;
+        if (i + i_66_ > aJavaToolkit_6499.clipX2) {
+            int i_75_ = i + i_66_ - aJavaToolkit_6499.clipX2;
             i_66_ -= i_75_;
             i_71_ += i_75_;
             i_70_ += i_75_;
         }
         if (i_66_ > 0 && i_67_ > 0) {
-            if (bool) method2590(aByteArrayArray6502[c], aHa_Sub1_6499.anIntArray7483, i_65_, i_72_, i_69_, i_66_, i_67_, i_70_, i_71_);
-            else method2591(aByteArrayArray6502[c], aHa_Sub1_6499.anIntArray7483, anIntArray6496, i_72_, i_69_, i_66_, i_67_, i_70_, i_71_);
+            if (bool) method2590(aByteArrayArray6502[c], aJavaToolkit_6499.anIntArray7483, i_65_, i_72_, i_69_, i_66_, i_67_, i_70_, i_71_);
+            else method2591(aByteArrayArray6502[c], aJavaToolkit_6499.anIntArray7483, anIntArray6496, i_72_, i_69_, i_66_, i_67_, i_70_, i_71_);
         }
     }
 
@@ -209,11 +209,11 @@ final class FontRenderer_Sub3 extends FontRenderer {
         aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
         int[] is_89_ = var_aa_Sub3.anIntArray5201;
         int[] is_90_ = var_aa_Sub3.anIntArray5202;
-        int i_91_ = i_84_ - aHa_Sub1_6499.anInt7496;
+        int i_91_ = i_84_ - aJavaToolkit_6499.clipX1;
         int i_92_ = i_85_;
         if (i_88_ > i_92_) {
             i_92_ = i_88_;
-            i_79_ += (i_88_ - i_85_) * aHa_Sub1_6499.anInt7477;
+            i_79_ += (i_88_ - i_85_) * aJavaToolkit_6499.surfaceWidth;
             i_78_ += (i_88_ - i_85_) * i_86_;
         }
         int i_93_ = (Math.min(i_88_ + is_89_.length, i_85_ + i_81_));

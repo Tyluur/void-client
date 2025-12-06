@@ -85,8 +85,8 @@ final class Class164 {
                 if (Class182.loadingScreens[0].percentage(-19079) < 100) return 0;
                 if (Class182.loadingScreens.length > 1 && Class186_Sub1.loadingScreenManager.hasDefault(86) && (Class182.loadingScreens[1].percentage(i + 9581) < 100)) return 0;
             }
-            TimedVarDomain.method1311(5139, Class348_Sub8.aHa6654);
-            Class369.method3568(Class348_Sub8.aHa6654, 4);
+            TimedVarDomain.method1311(5139, Class348_Sub8.aToolkit6654);
+            Class369.method3568(Class348_Sub8.aToolkit6654, 4);
             Packet.setStep(2, 1);
         }
         if (Class348_Sub42_Sub15.state == LoadState.CREATE_COLLISION_MAPS) {
@@ -270,9 +270,9 @@ final class Class164 {
             if (Class348_Sub23_Sub2.aBoolean9038) Class367_Sub10.method3553(false, (byte) 108, 0);
             else Class367_Sub10.method3553(false, (byte) 102, Class316.clientOptions.aClass239_Sub25_7251.method1829(-32350));
             Class85.method830(Class316.clientOptions.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
-            TimedVarDomain.method1311(5139, Class348_Sub8.aHa6654);
-            Class369.method3568(Class348_Sub8.aHa6654, i ^ ~0x6ff7);
-            ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.aHa6654, true);
+            TimedVarDomain.method1311(5139, Class348_Sub8.aToolkit6654);
+            Class369.method3568(Class348_Sub8.aToolkit6654, i ^ ~0x6ff7);
+            ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.aToolkit6654, true);
             Matrix.method901(Class113.aSpriteArray1744, 515880227);
         }
         return Class348_Sub40_Sub6.method3063(false);

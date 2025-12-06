@@ -98,7 +98,7 @@ final class Class171 {
                     i_6_++;
                 }
                 r.aBooleanArray9718[i] = true;
-                aa_Sub1.aSArray5191[i_3_].method3981(class348_sub1, is);
+                aa_Sub1.aGroundArray5191[i_3_].method3981(class348_sub1, is);
             }
         }
     }
@@ -112,26 +112,26 @@ final class Class171 {
     static final int method1321(byte i, int i_32_, int i_33_, int i_34_, int i_35_, int i_36_) {
         int i_37_ = 4 / ((-51 - i) / 63);
         anInt2273++;
-        if (aa_Sub1.aSArray5191 == null) return 0;
+        if (aa_Sub1.aGroundArray5191 == null) return 0;
         if (i_35_ < 3) {
             int i_38_ = i_32_ >> 9;
             int i_39_ = i_33_ >> 9;
             if (i_34_ < 0 || i_36_ < 0 || -1 + Class367_Sub4.mapLength < i_34_ || (i_36_ > Class348_Sub40_Sub3.mapWidth - 1)) return 0;
             if (i_38_ < 1 || i_39_ < 1 || -1 + Class367_Sub4.mapLength < i_38_ || -1 + Class348_Sub40_Sub3.mapWidth < i_39_) return 0;
-            boolean bool = ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1][i_32_ >> 9][i_33_ >> 9])) != 0);
+            boolean bool = ((0x2 & (Class348_Sub33.tileFlags[1][i_32_ >> 9][i_33_ >> 9])) != 0);
             if ((i_32_ & 0x1ff) == 0) {
-                boolean bool_40_ = ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1][-1 + i_38_][i_33_ >> 9])) != 0);
-                boolean bool_41_ = ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1][i_38_][i_33_ >> 9])) != 0);
-                if (bool_40_ == !bool_41_) bool = (0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1][i_34_][i_36_])) != 0;
+                boolean bool_40_ = ((0x2 & (Class348_Sub33.tileFlags[1][-1 + i_38_][i_33_ >> 9])) != 0);
+                boolean bool_41_ = ((0x2 & (Class348_Sub33.tileFlags[1][i_38_][i_33_ >> 9])) != 0);
+                if (bool_40_ == !bool_41_) bool = (0x2 & (Class348_Sub33.tileFlags[1][i_34_][i_36_])) != 0;
             }
             if ((i_33_ & 0x1ff) == 0) {
-                boolean bool_42_ = ((Class348_Sub33.aByteArrayArrayArray6962[1][i_32_ >> 9][-1 + i_39_]) & 0x2) != 0;
-                boolean bool_43_ = ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1][i_32_ >> 9][i_39_])) != 0);
-                if (bool_42_ == !bool_43_) bool = (0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1][i_34_][i_36_])) != 0;
+                boolean bool_42_ = ((Class348_Sub33.tileFlags[1][i_32_ >> 9][-1 + i_39_]) & 0x2) != 0;
+                boolean bool_43_ = ((0x2 & (Class348_Sub33.tileFlags[1][i_32_ >> 9][i_39_])) != 0);
+                if (bool_42_ == !bool_43_) bool = (0x2 & (Class348_Sub33.tileFlags[1][i_34_][i_36_])) != 0;
             }
             if (bool) i_35_++;
         }
-        return aa_Sub1.aSArray5191[i_35_].method3986(i_32_, i_33_, (byte) 22);
+        return aa_Sub1.aGroundArray5191[i_35_].method3986(i_32_, i_33_, (byte) 22);
     }
 
     public static void method1322(byte i) {

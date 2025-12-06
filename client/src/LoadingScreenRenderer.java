@@ -64,22 +64,22 @@ final class LoadingScreenRenderer implements Runnable {
                     if (anLoadingScreen_3907 instanceof Class294) anLoadingScreen_3907.method58(aBoolean3908, -104);
                     else {
                         long l_1_ = Class62.safeTime(-104);
-                        if (Class348_Sub8.aHa6654 != null && anLoadingScreen_3919 != null && anLoadingScreen_3919.method55((byte) -58) != 0 && (aLong3914 >= l_1_ - (long) anLoadingScreen_3919.method55((byte) -58))) {
+                        if (Class348_Sub8.aToolkit6654 != null && anLoadingScreen_3919 != null && anLoadingScreen_3919.method55((byte) -58) != 0 && (aLong3914 >= l_1_ - (long) anLoadingScreen_3919.method55((byte) -58))) {
                             int i = (int) ((l_1_ + -aLong3914) * 255L / (long) anLoadingScreen_3919.method55((byte) -58));
                             int i_2_ = -i + 255;
                             i_2_ = 0xffffff | i_2_ << 24;
                             i = 0xffffff | i << 24;
                             Class140.method1170((byte) -121);
-                            Class348_Sub8.aHa6654.GA(0);
-                            Sprite sprite = (Class348_Sub8.aHa6654.method3629(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, true));
-                            Class348_Sub8.aHa6654.method3681(sprite, 0);
+                            Class348_Sub8.aToolkit6654.GA(0);
+                            Sprite sprite = (Class348_Sub8.aToolkit6654.method3629(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, true));
+                            Class348_Sub8.aToolkit6654.method3681(sprite, 0);
                             anLoadingScreen_3919.method58(true, -126);
-                            Class348_Sub8.aHa6654.method3672();
+                            Class348_Sub8.aToolkit6654.method3672();
                             sprite.method964(0, 0, 0, i_2_, 1);
-                            Class348_Sub8.aHa6654.method3681(sprite, 0);
-                            Class348_Sub8.aHa6654.GA(0);
+                            Class348_Sub8.aToolkit6654.method3681(sprite, 0);
+                            Class348_Sub8.aToolkit6654.GA(0);
                             anLoadingScreen_3907.method58(true, -114);
-                            Class348_Sub8.aHa6654.method3672();
+                            Class348_Sub8.aToolkit6654.method3672();
                             sprite.method964(0, 0, 0, i, 1);
                         } else {
                             if (anLoadingScreen_3919 != null) {
@@ -89,12 +89,12 @@ final class LoadingScreenRenderer implements Runnable {
                             }
                             if (aBoolean3908) {
                                 Class140.method1170((byte) -64);
-                                if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654.GA(0);
+                                if (Class348_Sub8.aToolkit6654 != null) Class348_Sub8.aToolkit6654.GA(0);
                             }
-                            anLoadingScreen_3907.method58((aBoolean3908 || (Class348_Sub8.aHa6654 != null && Class348_Sub8.aHa6654.method3655())), -90);
+                            anLoadingScreen_3907.method58((aBoolean3908 || (Class348_Sub8.aToolkit6654 != null && Class348_Sub8.aToolkit6654.method3655())), -90);
                         }
                         try {
-                            if (Class348_Sub8.aHa6654 != null && !(anLoadingScreen_3907 instanceof Class294)) Class348_Sub8.aHa6654.method3689((byte) 57);
+                            if (Class348_Sub8.aToolkit6654 != null && !(anLoadingScreen_3907 instanceof Class294)) Class348_Sub8.aToolkit6654.method3689((byte) 57);
                         } catch (Exception_Sub1 exception_sub1) {
                             Class156.method1242((exception_sub1.getMessage() + " (Recovered) " + NPCDefinition.aClient1367.method81((byte) 80)), exception_sub1, 15004);
                             Class367_Sub10.method3553(true, (byte) 114, 0);
@@ -108,7 +108,7 @@ final class LoadingScreenRenderer implements Runnable {
                     container.getSize();
                     if (Class52.aFrame4904 == container) Class52.aFrame4904.getInsets();
                     aBoolean3908 = false;
-                    if (Class348_Sub8.aHa6654 != null && !(anLoadingScreen_3907 instanceof Class294) && (aLoadState_3916.method525(-112) < LoadState.SHOW_LOGIN_WINDOW.method525(-127))) Class367_Sub11.method3556(false);
+                    if (Class348_Sub8.aToolkit6654 != null && !(anLoadingScreen_3907 instanceof Class294) && (aLoadState_3916.method525(-112) < LoadState.SHOW_LOGIN_WINDOW.method525(-127))) Class367_Sub11.method3556(false);
                 } catch (Exception exception) {
                     continue;
                 }

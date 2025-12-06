@@ -62,9 +62,9 @@ final class Class225 {
     static Class243 aClass243_2957;
     int anInt2958;
 
-    final Matrix[] method1618(ha var_ha, int i) {
+    final Matrix[] method1618(Toolkit var_toolkit, int i) {
         anInt2952++;
-        if (aMatrixArray2925 != null && var_ha.anInt4567 == anInt2942) return aMatrixArray2925;
+        if (aMatrixArray2925 != null && var_toolkit.anInt4567 == anInt2942) return aMatrixArray2925;
         if (this.anIntArrayArray2939 == null) return null;
         aMatrixArray2925 = new Matrix[this.anIntArrayArray2939.length];
         for (int i_0_ = i; (this.anIntArrayArray2939.length > i_0_); i_0_++) {
@@ -83,11 +83,11 @@ final class Class225 {
                 i_6_ = (this.anIntArrayArray2939[i_0_][5] << 3);
             }
             if (i_1_ != 0 || i_2_ != 0 || i_3_ != 0 || i_4_ != 0 || i_5_ != 0 || i_6_ != 0) {
-                Matrix matrix = aMatrixArray2925[i_0_] = var_ha.method3654();
+                Matrix matrix = aMatrixArray2925[i_0_] = var_toolkit.method3654();
                 if (i_6_ != 0) matrix.method908(i_6_);
                 if (i_4_ != 0) matrix.method900(i_4_);
                 if (i_5_ != 0) matrix.method896(i_5_);
-                matrix.method891(i_1_, i_2_, i_3_);
+                matrix.translate(i_1_, i_2_, i_3_);
             }
         }
         return aMatrixArray2925;

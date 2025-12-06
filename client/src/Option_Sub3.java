@@ -122,7 +122,7 @@ final class Option_Sub3 extends Option {
         return 1;
     }
 
-    static final Class352 method1734(int i, ha var_ha, byte i_25_, boolean bool) {
+    static final Class352 method1734(int i, Toolkit var_toolkit, byte i_25_, boolean bool) {
         try {
             anInt5859++;
             if (i == -1) return null;
@@ -134,7 +134,7 @@ final class Option_Sub3 extends Option {
             Class352 class352 = (Class352) Class332.aClass60_4139.method583(i, -92);
             if (class352 != null) {
                 if (bool && class352.aFontMetrics_4333 == null) {
-                    FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -76, i, s.aIndex_4585);
+                    FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -76, i, Ground.aIndex_4585);
                     if (fontMetrics == null) return null;
                     class352.aFontMetrics_4333 = fontMetrics;
                 }
@@ -143,14 +143,14 @@ final class Option_Sub3 extends Option {
             int i_27_ = -118 / ((-33 - i_25_) / 44);
             Class207[] class207s = Class207.method1523(Class39.aIndex_518, i);
             if (class207s == null) return null;
-            FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -39, i, s.aIndex_4585);
+            FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -39, i, Ground.aIndex_4585);
             if (fontMetrics == null) return null;
-            if (!bool) class352 = new Class352(var_ha.method3686(fontMetrics, class207s, true));
-            else class352 = new Class352(var_ha.method3686(fontMetrics, class207s, true), fontMetrics);
+            if (!bool) class352 = new Class352(var_toolkit.method3686(fontMetrics, class207s, true));
+            else class352 = new Class352(var_toolkit.method3686(fontMetrics, class207s, true), fontMetrics);
             Class332.aClass60_4139.method582(class352, i, (byte) -109);
             return class352;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jaa.K(" + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_25_ + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("jaa.K(" + i + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_25_ + ',' + bool + ')'));
         }
     }
 

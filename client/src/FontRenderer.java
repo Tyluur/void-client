@@ -10,7 +10,7 @@ abstract class FontRenderer {
     static int anInt4045;
     static int anInt4046;
     static int anInt4047;
-    private ha aHa4048;
+    private Toolkit aToolkit4048;
     static int anInt4049;
     static int anInt4050;
     static int anInt4051;
@@ -98,8 +98,8 @@ abstract class FontRenderer {
                             }
                             line++;
                             int i_16_ = aFontMetrics_4063.glyphWidth((byte) -48, c);
-                            if (Player.anInt10567 != -1) aHa4048.method3649((byte) -103, i_16_, y - -(int) ((double) (aFontMetrics_4063.verticalSpacing) * 0.7), Player.anInt10567, x);
-                            if (Class348_Sub40_Sub2.anInt9101 != -1) aHa4048.method3649((byte) -96, i_16_, (aFontMetrics_4063.verticalSpacing) + y, (Class348_Sub40_Sub2.anInt9101), x);
+                            if (Player.anInt10567 != -1) aToolkit4048.method3649((byte) -103, i_16_, y - -(int) ((double) (aFontMetrics_4063.verticalSpacing) * 0.7), Player.anInt10567, x);
+                            if (Class348_Sub40_Sub2.anInt9101 != -1) aToolkit4048.method3649((byte) -96, i_16_, (aFontMetrics_4063.verticalSpacing) + y, (Class348_Sub40_Sub2.anInt9101), x);
                             previous = c;
                             x += i_16_;
                         }
@@ -259,7 +259,7 @@ abstract class FontRenderer {
             method2579(i_60_, 108, i);
             int i_62_ = string.length();
             int[] is = new int[i_62_];
-            if (bool != false) aHa4048 = null;
+            if (bool != false) aToolkit4048 = null;
             for (int i_63_ = 0; i_63_ < i_62_; i_63_++)
                 is[i_63_] = (int) (5.0 * Math.sin((double) i_63_ / 2.0 + (double) i_61_ / 5.0));
             method2566(null, is, -(aFontMetrics_4063.width(!bool, string) / 2) + i_59_, null, null, i_58_, string, 174);
@@ -437,8 +437,8 @@ abstract class FontRenderer {
                                 Class258.anInt4848 &= 0xff;
                             }
                             int i_114_ = aFontMetrics_4063.glyphWidth((byte) -48, c);
-                            if (Player.anInt10567 != -1) aHa4048.method3649((byte) -119, i_114_, (int) ((double) aFontMetrics_4063.verticalSpacing * 0.7) + i_103_, Player.anInt10567, i_106_);
-                            if (Class348_Sub40_Sub2.anInt9101 != -1) aHa4048.method3649((byte) -114, i_114_, (aFontMetrics_4063.verticalSpacing) + (i_103_ + 1), (Class348_Sub40_Sub2.anInt9101), i_106_);
+                            if (Player.anInt10567 != -1) aToolkit4048.method3649((byte) -119, i_114_, (int) ((double) aFontMetrics_4063.verticalSpacing * 0.7) + i_103_, Player.anInt10567, i_106_);
+                            if (Class348_Sub40_Sub2.anInt9101 != -1) aToolkit4048.method3649((byte) -114, i_114_, (aFontMetrics_4063.verticalSpacing) + (i_103_ + 1), (Class348_Sub40_Sub2.anInt9101), i_106_);
                             i_106_ += i_114_;
                             i_108_ = c;
                         }
@@ -450,12 +450,12 @@ abstract class FontRenderer {
         }
     }
 
-    FontRenderer(ha var_ha, FontMetrics fontMetrics) {
+    FontRenderer(Toolkit var_toolkit, FontMetrics fontMetrics) {
         try {
             aFontMetrics_4063 = fontMetrics;
-            aHa4048 = var_ha;
+            aToolkit4048 = var_toolkit;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (fontMetrics != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("da.<init>(" + (var_toolkit != null ? "{...}" : "null") + ',' + (fontMetrics != null ? "{...}" : "null") + ')'));
         }
     }
 

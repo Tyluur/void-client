@@ -40,12 +40,12 @@ final class Class329 {
         }
     }
 
-    static final void method2619(ha var_ha, int[] is, int i, int[] is_9_, int[] is_10_) {
-        method2623(var_ha, is, 0, is.length, i, is_9_, is_10_);
+    static final void method2619(Toolkit var_toolkit, int[] is, int i, int[] is_9_, int[] is_10_) {
+        method2623(var_toolkit, is, 0, is.length, i, is_9_, is_10_);
     }
 
-    static final void method2620(ha var_ha, int[] is, int i) {
-        method2623(var_ha, is, 0, is.length, i, null, null);
+    static final void method2620(Toolkit var_toolkit, int[] is, int i) {
+        method2623(var_toolkit, is, 0, is.length, i, null, null);
     }
 
     public static void method2621() {
@@ -80,9 +80,9 @@ final class Class329 {
         }
     }
 
-    private static final void method2623(ha var_ha, int[] is, int i, int i_19_, int i_20_, int[] is_21_, int[] is_22_) {
+    private static final void method2623(Toolkit var_toolkit, int[] is, int i, int i_19_, int i_20_, int[] is_21_, int[] is_22_) {
         int[] is_23_ = new int[4];
-        var_ha.K(is_23_);
+        var_toolkit.K(is_23_);
         if (is_21_ != null && is_23_[3] - is_23_[1] != is_21_.length) throw new IllegalStateException();
         method2624();
         method2622(is, i, i_19_);
@@ -97,7 +97,7 @@ final class Class329 {
                 if (i_25_ > is_21_[i_27_] + is_22_[i_27_] + is_23_[0]) i_25_ = is_21_[i_27_] + is_22_[i_27_] + is_23_[0];
                 if (i_25_ - i_24_ <= 0) continue;
             }
-            var_ha.U(i_24_, i_26_, i_25_ - i_24_, i_20_, 1);
+            var_toolkit.U(i_24_, i_26_, i_25_ - i_24_, i_20_, 1);
         }
     }
 

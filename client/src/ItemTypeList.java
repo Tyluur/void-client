@@ -54,10 +54,10 @@ final class ItemTypeList {
         aClass161_3285 = null;
     }
 
-    final Sprite method1932(ha var_ha, int i, int i_0_, FontRenderer fontRenderer, Class154 class154, int i_1_, boolean bool, byte i_2_, ha var_ha_3_, int i_4_, boolean bool_5_, int i_6_) {
+    final Sprite method1932(Toolkit var_toolkit, int i, int i_0_, FontRenderer fontRenderer, Class154 class154, int i_1_, boolean bool, byte i_2_, Toolkit var_toolkit_3_, int i_4_, boolean bool_5_, int i_6_) {
         try {
             anInt3266++;
-            Sprite sprite = method1941(i_6_, (byte) -74, i_4_, i_0_, i, i_1_, var_ha_3_, class154);
+            Sprite sprite = method1941(i_6_, (byte) -74, i_4_, i_0_, i, i_1_, var_toolkit_3_, class154);
             if (sprite != null) return sprite;
             ItemDefinition itemDefinition = method1940(90, i_4_);
             if (i_0_ > 1 && itemDefinition.anIntArray2762 != null) {
@@ -68,11 +68,11 @@ final class ItemTypeList {
                 if (i_7_ != -1) itemDefinition = method1940(127, i_7_);
             }
             if (i_2_ != 83) method1935(-83, -37, null, null, false, -49);
-            int[] is = itemDefinition.method1562(i_0_, bool_5_, i, var_ha_3_, var_ha, fontRenderer, class154, i_1_, (byte) -102, i_6_);
+            int[] is = itemDefinition.method1562(i_0_, bool_5_, i, var_toolkit_3_, var_toolkit, fontRenderer, class154, i_1_, (byte) -102, i_6_);
             if (is == null) return null;
             Sprite sprite_9_;
-            if (bool) sprite_9_ = var_ha.method3662(36, is, (byte) 94, 0, 36, 32);
-            else sprite_9_ = var_ha_3_.method3662(36, is, (byte) 94, 0, 36, 32);
+            if (bool) sprite_9_ = var_toolkit.method3662(36, is, (byte) 94, 0, 36, 32);
+            else sprite_9_ = var_toolkit_3_.method3662(36, is, (byte) 94, 0, 36, 32);
             if (!bool) {
                 Class126 class126 = new Class126();
                 class126.anInt4982 = i;
@@ -80,75 +80,75 @@ final class ItemTypeList {
                 class126.anInt4989 = i_0_;
                 class126.anInt4992 = i_4_;
                 class126.anInt4981 = i_1_;
-                class126.anInt4991 = var_ha_3_.anInt4567;
+                class126.anInt4991 = var_toolkit_3_.anInt4567;
                 class126.anInt4993 = i_6_;
                 this.aClass175_3288.method1348(70, sprite_9_, class126);
             }
             return sprite_9_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + (fontRenderer != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (var_ha_3_ != null ? "{...}" : "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.C(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + (fontRenderer != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i_1_ + ',' + bool + ',' + i_2_ + ',' + (var_toolkit_3_ != null ? "{...}" : "null") + ',' + i_4_ + ',' + bool_5_ + ',' + i_6_ + ')'));
         }
     }
 
-    static final void method1933(Index index, ha var_ha, boolean bool) {
+    static final void method1933(Index index, Toolkit var_toolkit, boolean bool) {
         try {
             anInt3279++;
             Class207[] class207s = Class207.method1519(index, Class348_Sub22.hitmarksGroup, 0);
             Class169.aSpriteArray2260 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                Class169.aSpriteArray2260[i] = var_ha.method3691(class207s[i], true);
+                Class169.aSpriteArray2260[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, LoadingScreenOpFactory.hitbarDefaultGroup, 0);
             Class348_Sub45.aSpriteArray7107 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                Class348_Sub45.aSpriteArray7107[i] = var_ha.method3691(class207s[i], true);
+                Class348_Sub45.aSpriteArray7107[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Class373_Sub2.timerbarDefaultGroup, 0);
             Option_Sub2.aSpriteArray5857 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                Option_Sub2.aSpriteArray5857[i] = var_ha.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, ha.headIconsPkGroup, 0);
+                Option_Sub2.aSpriteArray5857[i] = var_toolkit.method3691(class207s[i], true);
+            class207s = Class207.method1519(index, Toolkit.headIconsPkGroup, 0);
             Class318_Sub1_Sub1_Sub1.aSpriteArray9959 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                Class318_Sub1_Sub1_Sub1.aSpriteArray9959[i] = var_ha.method3691(class207s[i], true);
+                Class318_Sub1_Sub1_Sub1.aSpriteArray9959[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, VarcstrTypeList.headIconsPrayerGroup, 0);
             Class264.aSpriteArray3378 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                Class264.aSpriteArray3378[i] = var_ha.method3691(class207s[i], true);
+                Class264.aSpriteArray3378[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Class115.hintHeadIconsGroup, 0);
             Option_Sub9.aSpriteArray5933 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
-                Option_Sub9.aSpriteArray5933[i] = var_ha.method3691(class207s[i], true);
+                Option_Sub9.aSpriteArray5933[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Class291.hintMapmarkersGroup, 0);
             Class59_Sub1.aSpriteArray5294 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                Class59_Sub1.aSpriteArray5294[i] = var_ha.method3691(class207s[i], true);
+                Class59_Sub1.aSpriteArray5294[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Class86.mapFlagGround, 0);
             SkyBoxSphereTypeList.aSpriteArray367 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                SkyBoxSphereTypeList.aSpriteArray367[i] = var_ha.method3691(class207s[i], true);
+                SkyBoxSphereTypeList.aSpriteArray367[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Option_Sub10.crossGroup, 0);
             Class348_Sub40_Sub37.aSpriteArray9467 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
-                Class348_Sub40_Sub37.aSpriteArray9467[i] = var_ha.method3691(class207s[i], true);
+                Class348_Sub40_Sub37.aSpriteArray9467[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Class113.mapDotsGround, 0);
             Class348_Sub12.aSpriteArray6742 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                Class348_Sub12.aSpriteArray6742[i] = var_ha.method3691(class207s[i], true);
+                Class348_Sub12.aSpriteArray6742[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Class364.scrollBarGround, 0);
             Class240.aSpriteArray4679 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
-                Class240.aSpriteArray4679[i] = var_ha.method3691(class207s[i], true);
+                Class240.aSpriteArray4679[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Class348_Sub40_Sub38.nameIconsGroup, 0);
             Class113.aSpriteArray1744 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
-                Class113.aSpriteArray1744[i] = var_ha.method3691(class207s[i], true);
-            NPCDefinition.aSprite_1365 = var_ha.method3691(Class207.method1521(index, Class52.compassGroup, 0), bool);
-            Option_Sub24.aSprite_6097 = var_ha.method3691(Class207.method1521(index, (Class186_Sub1.otherLevelGroup), 0), true);
+                Class113.aSpriteArray1744[i] = var_toolkit.method3691(class207s[i], true);
+            NPCDefinition.aSprite_1365 = var_toolkit.method3691(Class207.method1521(index, Class52.compassGroup, 0), bool);
+            Option_Sub24.aSprite_6097 = var_toolkit.method3691(Class207.method1521(index, (Class186_Sub1.otherLevelGroup), 0), true);
             class207s = Class207.method1519(index, Class5_Sub3.hintMapEdgeGroup, 0);
             Class200.aSpriteArray2640 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
-                Class200.aSpriteArray2640[i] = var_ha.method3691(class207s[i], true);
+                Class200.aSpriteArray2640[i] = var_toolkit.method3691(class207s[i], true);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.N(" + (index != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.N(" + (index != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + bool + ')'));
         }
     }
 
@@ -267,11 +267,11 @@ final class ItemTypeList {
         return itemDefinition;
     }
 
-    final Sprite method1941(int i, byte i_15_, int i_16_, int i_17_, int i_18_, int i_19_, ha var_ha, Class154 class154) {
+    final Sprite method1941(int i, byte i_15_, int i_16_, int i_17_, int i_18_, int i_19_, Toolkit var_toolkit, Class154 class154) {
         try {
             aClass126_3289.anInt4992 = i_16_;
             aClass126_3289.anInt4989 = i_17_;
-            aClass126_3289.anInt4991 = var_ha.anInt4567;
+            aClass126_3289.anInt4991 = var_toolkit.anInt4567;
             aClass126_3289.anInt4981 = i_19_;
             if (i_15_ != -74) aClass126_3289 = null;
             aClass126_3289.aBoolean4990 = class154 != null;
@@ -280,7 +280,7 @@ final class ItemTypeList {
             aClass126_3289.anInt4993 = i;
             return (Sprite) this.aClass175_3288.method1340(123, aClass126_3289);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.D(" + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ')'));
         }
     }
 

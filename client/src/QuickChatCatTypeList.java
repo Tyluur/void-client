@@ -40,7 +40,7 @@ final class QuickChatCatTypeList {
                 i_1_ <<= 1;
                 i_2_ = -i_1_;
             }
-            Class348_Sub8.aHa6654.f(i_2_, i_1_);
+            Class348_Sub8.aToolkit6654.f(i_2_, i_1_);
         }
     }
 

@@ -124,19 +124,19 @@ final class Class262 {
     static final void method1992(Class318_Sub1 class318_sub1, int i, int i_20_, int i_21_) {
         if (i_20_ < Class318_Sub7.anInt6451) {
             Class357 class357 = Class147.aClass357ArrayArrayArray2029[i][i_20_ + 1][i_21_];
-            if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402.method2388(-107)) class318_sub1.method2380(Class9.aHa171, 0, true, (class357.aClass318_Sub1_Sub1_4402), 0, (byte) -116, Class270.anInt3465);
+            if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402.method2388(-107)) class318_sub1.method2380(Class9.aToolkit171, 0, true, (class357.aClass318_Sub1_Sub1_4402), 0, (byte) -116, Class270.anInt3465);
         }
         if (i_21_ < Class318_Sub7.anInt6451) {
             Class357 class357 = Class147.aClass357ArrayArrayArray2029[i][i_20_][i_21_ + 1];
-            if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402.method2388(-92)) class318_sub1.method2380(Class9.aHa171, 0, true, (class357.aClass318_Sub1_Sub1_4402), Class270.anInt3465, (byte) -128, 0);
+            if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402.method2388(-92)) class318_sub1.method2380(Class9.aToolkit171, 0, true, (class357.aClass318_Sub1_Sub1_4402), Class270.anInt3465, (byte) -128, 0);
         }
         if (i_20_ < Class318_Sub7.anInt6451 && i_21_ < Class348_Sub41.anInt7054) {
             Class357 class357 = (Class147.aClass357ArrayArrayArray2029[i][i_20_ + 1][i_21_ + 1]);
-            if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402.method2388(-107)) class318_sub1.method2380(Class9.aHa171, 0, true, (class357.aClass318_Sub1_Sub1_4402), Class270.anInt3465, (byte) -117, Class270.anInt3465);
+            if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402.method2388(-107)) class318_sub1.method2380(Class9.aToolkit171, 0, true, (class357.aClass318_Sub1_Sub1_4402), Class270.anInt3465, (byte) -117, Class270.anInt3465);
         }
         if (i_20_ < Class318_Sub7.anInt6451 && i_21_ > 0) {
             Class357 class357 = (Class147.aClass357ArrayArrayArray2029[i][i_20_ + 1][i_21_ - 1]);
-            if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402.method2388(-90)) class318_sub1.method2380(Class9.aHa171, 0, true, (class357.aClass318_Sub1_Sub1_4402), -Class270.anInt3465, (byte) -116, Class270.anInt3465);
+            if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null && class357.aClass318_Sub1_Sub1_4402.method2388(-90)) class318_sub1.method2380(Class9.aToolkit171, 0, true, (class357.aClass318_Sub1_Sub1_4402), -Class270.anInt3465, (byte) -116, Class270.anInt3465);
         }
     }
 
@@ -214,7 +214,7 @@ final class Class262 {
         node.aNode_4294.aNode_4295 = node;
     }
 
-    static final ha method2000(int i, int i_23_, Canvas canvas, TextureSource var_d) {
+    static final Toolkit method2000(int i, int i_23_, Canvas canvas, TextureSource var_d) {
         try {
             anInt3324++;
             if (i != 3) method1992(null, -40, 69, -1);

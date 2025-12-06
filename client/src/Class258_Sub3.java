@@ -197,7 +197,7 @@ class Class258_Sub3 extends Class258 {
                 int[] is_60_ = new int[i_59_ * i_58_];
                 PixelGrabber pixelgrabber = new PixelGrabber(image, 0, 0, i_58_, i_59_, is_60_, 0, i_58_);
                 pixelgrabber.grabPixels();
-                return Class348_Sub8.aHa6654.method3662(i_58_, is_60_, (byte) 94, 0, i_58_, i_59_);
+                return Class348_Sub8.aToolkit6654.method3662(i_58_, is_60_, (byte) 94, 0, i_58_, i_59_);
             } catch (InterruptedException interruptedexception) {
                 /* empty */
             }

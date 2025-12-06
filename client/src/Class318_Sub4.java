@@ -10,7 +10,7 @@ final class Class318_Sub4 extends Class318 {
     static int anInt6411 = 0;
     static int anInt6412;
     static int anInt6413;
-    Class318_Sub3[] aClass318_Sub3Array6414;
+    LabelBounds[] aClass318_Sub3Array6414;
 
     static final aa_Sub2 method2501(int i, ha_Sub3 var_ha_Sub3, int[] is, byte i_0_, int[] is_1_, int i_2_) {
         try {
@@ -103,18 +103,18 @@ final class Class318_Sub4 extends Class318 {
         return false;
     }
 
-    final boolean method2504(int i, int i_32_, ha var_ha, int i_33_) {
+    final boolean method2504(int i, int i_32_, Toolkit var_toolkit, int i_33_) {
         if (i_33_ >= -37) method2502(null, -82);
         anInt6407++;
         int i_34_ = this.aClass318_Sub1_6410.method2393(-117);
         if (this.aClass318_Sub3Array6414 != null) {
             for (int i_35_ = 0; this.aClass318_Sub3Array6414.length > i_35_; i_35_++) {
-                this.aClass318_Sub3Array6414[i_35_].anInt6403 <<= i_34_;
-                if (this.aClass318_Sub3Array6414[i_35_].method2500(i_32_, i) && this.aClass318_Sub1_6410.method2391(var_ha, i, i_32_, 0)) {
-                    this.aClass318_Sub3Array6414[i_35_].anInt6403 >>= i_34_;
+                this.aClass318_Sub3Array6414[i_35_].width <<= i_34_;
+                if (this.aClass318_Sub3Array6414[i_35_].method2500(i_32_, i) && this.aClass318_Sub1_6410.method2391(var_toolkit, i, i_32_, 0)) {
+                    this.aClass318_Sub3Array6414[i_35_].width >>= i_34_;
                     return true;
                 }
-                this.aClass318_Sub3Array6414[i_35_].anInt6403 >>= i_34_;
+                this.aClass318_Sub3Array6414[i_35_].width >>= i_34_;
             }
         }
         return false;

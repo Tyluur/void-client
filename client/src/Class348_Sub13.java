@@ -41,7 +41,7 @@ final class Class348_Sub13 extends Node {
         }
     }
 
-    final Model method2803(Class17 class17, Class154 class154, int i, int i_10_, int i_11_, int i_12_, int i_13_, ha var_ha, boolean bool, int i_14_) {
+    final Model method2803(Class17 class17, Class154 class154, int i, int i_10_, int i_11_, int i_12_, int i_13_, Toolkit var_toolkit, boolean bool, int i_14_) {
         try {
             anInt6756++;
             Model model = null;
@@ -98,8 +98,8 @@ final class Class348_Sub13 extends Node {
             }
             long l = method2802((class154 != null ? class154.anIntArray2095 : null), i, bool, is, (byte) -74);
             if (Class202.aClass60_2671 != null) model = (Model) Class202.aClass60_2671.method583(l, i_14_ ^ 0x56);
-            if (model == null || var_ha.method3667(model.ua(), i_15_) != 0) {
-                if (model != null) i_15_ = var_ha.method3679(i_15_, model.ua());
+            if (model == null || var_toolkit.method3667(model.ua(), i_15_) != 0) {
+                if (model != null) i_15_ = var_toolkit.method3679(i_15_, model.ua());
                 int i_28_ = i_15_;
                 boolean bool_29_ = false;
                 for (int i_30_ = 0; is.length > i_30_; i_30_++) {
@@ -126,7 +126,7 @@ final class Class348_Sub13 extends Node {
                 }
                 if (class154 != null) i_28_ |= 0x4000;
                 Mesh mesh = new Mesh(meshes, meshes.length);
-                model = var_ha.method3625(mesh, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850);
+                model = var_toolkit.method3625(mesh, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850);
                 if (class154 != null) {
                     for (int i_39_ = 0; i_39_ < 5; i_39_++) {
                         for (int i_40_ = 0; i_40_ < (Class367_Sub2.aShortArrayArrayArray7290).length; i_40_++) {
@@ -144,7 +144,7 @@ final class Class348_Sub13 extends Node {
             model_41_.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, class17.aBoolean242, i_23_, i_11_ + i_14_);
             return model_41_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ie.B(" + (class17 != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + bool + ',' + i_14_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ie.B(" + (class17 != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + bool + ',' + i_14_ + ')'));
         }
     }
 

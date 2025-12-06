@@ -40,13 +40,13 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         return (this.aNPCDefinition_10505.aBoolean1396);
     }
 
-    final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_6_, byte i_7_, int i_8_) {
+    final void method2380(Toolkit var_toolkit, int i, boolean bool, Class318_Sub1 class318_sub1, int i_6_, byte i_7_, int i_8_) {
         try {
             if (i_7_ > -106) this.aNPCDefinition_10505 = null;
             anInt10513++;
             throw new IllegalStateException();
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ff.N(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class318_sub1 != null ? "{...}" : "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ff.N(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (class318_sub1 != null ? "{...}" : "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'));
         }
     }
 
@@ -56,13 +56,13 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         throw new IllegalStateException();
     }
 
-    final boolean method2391(ha var_ha, int i, int i_9_, int i_10_) {
+    final boolean method2391(Toolkit var_toolkit, int i, int i_9_, int i_10_) {
         anInt10514++;
-        if (this.aNPCDefinition_10505 == null || !method2447(97, 131072, var_ha)) return false;
-        Matrix matrix = var_ha.method3705();
+        if (this.aNPCDefinition_10505 == null || !method2447(97, 131072, var_toolkit)) return false;
+        Matrix matrix = var_toolkit.method3705();
         int i_11_ = this.aClass264_10217.method2019((byte) -78);
         matrix.method895(i_11_);
-        matrix.method891(this.x, this.anInt6382, this.y);
+        matrix.translate(this.x, this.anInt6382, this.y);
         boolean bool = false;
         for (int i_12_ = i_10_; (this.aModelArray10323.length > i_12_); i_12_++) {
             if (this.aModelArray10323[i_12_] != null) {
@@ -127,10 +127,10 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         this.aByteArray10321[0] = (byte) i_15_;
     }
 
-    final Class318_Sub4 method2386(int i, ha var_ha) {
+    final Class318_Sub4 method2386(int i, Toolkit var_toolkit) {
         anInt10501++;
-        if (this.aNPCDefinition_10505 == null || !method2447(i + 114, 2048, var_ha)) return null;
-        Matrix matrix = var_ha.method3705();
+        if (this.aNPCDefinition_10505 == null || !method2447(i + 114, 2048, var_toolkit)) return null;
+        Matrix matrix = var_toolkit.method3705();
         int i_20_ = this.aClass264_10217.method2019((byte) -69);
         matrix.method895(i_20_);
         Class357 class357 = (Class147.aClass357ArrayArrayArray2029[this.plane][this.x >> Class362.anInt4459][this.y >> Class362.anInt4459]);
@@ -138,7 +138,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
             int i_21_ = (-class357.aClass318_Sub1_Sub1_4402.aShort8727 + this.anInt10274);
             this.anInt10274 -= (float) i_21_ / 10.0F;
         } else this.anInt10274 -= (float) this.anInt10274 / 10.0F;
-        matrix.method891(this.x, (-this.anInt10274 + this.anInt6382 + -20), this.y);
+        matrix.translate(this.x, (-this.anInt10274 + this.anInt6382 + -20), this.y);
         Class225 class225 = this.method2422((byte) 72);
         NPCDefinition NPCDefinition = (this.aNPCDefinition_10505.anIntArray1377 != null ? this.aNPCDefinition_10505.method794(Class318_Sub1_Sub3_Sub3.timedVarDomain, -1) : this.aNPCDefinition_10505);
         this.aBoolean10324 = false;
@@ -146,20 +146,20 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         if (Class316.clientOptions.aClass239_Sub21_7270.method1812(-32350) == i && NPCDefinition.aBoolean1369 && class225.aBoolean2913) {
             Class17 class17 = ((this.anInt10286 == -1 || this.anInt10218 != 0) ? null : Class10.seqTypeList.method835(this.anInt10286, 7));
             Class17 class17_22_ = ((this.anInt10268 == -1 || (this.aBoolean10213 && class17 != null)) ? null : Class10.seqTypeList.method835(this.anInt10268, 7));
-            Model model = (Node.method2711(this.anInt10302, i_20_, this.aModelArray10323[0], this.anInt10208, false, (class17_22_ == null ? this.anInt10267 : this.anInt10245), 0xffff & this.aNPCDefinition_10505.aShort1339, this.aNPCDefinition_10505.size, this.anInt10252, var_ha, 0xff & this.aNPCDefinition_10505.aByte1353, this.aNPCDefinition_10505.aShort1350 & 0xffff, this.aNPCDefinition_10505.aByte1347 & 0xff, class17_22_ == null ? class17 : class17_22_));
+            Model model = (Node.method2711(this.anInt10302, i_20_, this.aModelArray10323[0], this.anInt10208, false, (class17_22_ == null ? this.anInt10267 : this.anInt10245), 0xffff & this.aNPCDefinition_10505.aShort1339, this.aNPCDefinition_10505.size, this.anInt10252, var_toolkit, 0xff & this.aNPCDefinition_10505.aByte1353, this.aNPCDefinition_10505.aShort1350 & 0xffff, this.aNPCDefinition_10505.aByte1347 & 0xff, class17_22_ == null ? class17 : class17_22_));
             if (model != null) {
                 class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aModelArray10323).length, method2442(1810797122), false));
                 this.aBoolean10324 = true;
-                var_ha.C(false);
+                var_toolkit.C(false);
                 if (!Class305.aBoolean3870) model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), 0);
                 else model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), Class132.anInt1906, 0);
-                var_ha.C(true);
+                var_toolkit.C(true);
             }
         }
         matrix.method895(i_20_);
-        matrix.method891(this.x, (-this.anInt10274 + (-5 + this.anInt6382)), this.y);
+        matrix.translate(this.x, (-this.anInt10274 + (-5 + this.anInt6382)), this.y);
         if (class318_sub4 == null) class318_sub4 = OutputStream_Sub2.method136((this.aModelArray10323).length, method2442(1810797122), false);
-        this.method2432(var_ha, -15074, matrix, false, this.aModelArray10323);
+        this.method2432(var_toolkit, -15074, matrix, false, this.aModelArray10323);
         if (Class305.aBoolean3870) {
             for (int i_24_ = 0; (this.aModelArray10323.length > i_24_); i_24_++) {
                 if (this.aModelArray10323[i_24_] != null) this.aModelArray10323[i_24_].method608(matrix, (class318_sub4.aClass318_Sub3Array6414[i_24_]), Class132.anInt1906, 0);
@@ -171,8 +171,8 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         }
         if (this.aClass318_Sub10_10327 != null) {
             Class98 class98 = this.aClass318_Sub10_10327.method2525();
-            if (Class305.aBoolean3870) var_ha.method3685(class98, Class132.anInt1906);
-            else var_ha.method3684(class98);
+            if (Class305.aBoolean3870) var_toolkit.method3685(class98, Class132.anInt1906);
+            else var_toolkit.method3684(class98);
         }
         for (int i_25_ = 0; (this.aModelArray10323.length > i_25_); i_25_++) {
             if (this.aModelArray10323[i_25_] != null) this.aBoolean10324 |= this.aModelArray10323[i_25_].F();
@@ -243,7 +243,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         }
     }
 
-    final Class30 method2381(ha var_ha, int i) {
+    final Class30 method2381(Toolkit var_toolkit, int i) {
         if (i != 7) this.anInt10512 = 102;
         anInt10493++;
         return null;
@@ -282,14 +282,14 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         return (this.aNPCDefinition_10505.anInt1390);
     }
 
-    final void method2387(ha var_ha, int i) {
+    final void method2387(Toolkit var_toolkit, int i) {
         anInt10509++;
-        if (this.aNPCDefinition_10505 != null && (this.aBoolean10318 || method2447(123, 0, var_ha))) {
+        if (this.aNPCDefinition_10505 != null && (this.aBoolean10318 || method2447(123, 0, var_toolkit))) {
             if (i > -125) method2391(null, -2, -103, 34);
-            Matrix matrix = var_ha.method3705();
+            Matrix matrix = var_toolkit.method3705();
             matrix.method895(this.aClass264_10217.method2019((byte) -118));
-            matrix.method891(this.x, -20 + this.anInt6382, this.y);
-            this.method2432(var_ha, -15074, matrix, this.aBoolean10318, (this.aModelArray10323));
+            matrix.translate(this.x, -20 + this.anInt6382, this.y);
+            this.method2432(var_toolkit, -15074, matrix, this.aBoolean10318, (this.aModelArray10323));
             this.aModelArray10323[0] = this.aModelArray10323[1] = this.aModelArray10323[2] = null;
         }
     }
@@ -304,7 +304,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         return (c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122);
     }
 
-    private final boolean method2447(int i, int i_34_, ha var_ha) {
+    private final boolean method2447(int i, int i_34_, Toolkit var_toolkit) {
         if (i <= 84) this.aNPCDefinition_10505 = null;
         anInt10494++;
         int i_35_ = i_34_;
@@ -317,7 +317,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         boolean bool = (this.aByte10279 != 0 && (Class367_Sub11.anInt7396 >= this.anInt10248) && (Class367_Sub11.anInt7396 < this.anInt10250));
         if (bool) i_34_ |= 0x80000;
         int i_39_ = this.aClass264_10217.method2019((byte) -25);
-        Model model = (this.aModelArray10323[0] = (this.aNPCDefinition_10505.method800(i_39_, this.aClass182Array10308, Class10.seqTypeList, false, class17_36_, this.anInt10203, Class64_Sub3.basTypeList, this.anInt10267, class17, Class318_Sub1_Sub3_Sub3.timedVarDomain, var_ha, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232)));
+        Model model = (this.aModelArray10323[0] = (this.aNPCDefinition_10505.method800(i_39_, this.aClass182Array10308, Class10.seqTypeList, false, class17_36_, this.anInt10203, Class64_Sub3.basTypeList, this.anInt10267, class17, Class318_Sub1_Sub3_Sub3.timedVarDomain, var_toolkit, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232)));
         if (model == null) return false;
         this.anInt10207 = model.fa();
         this.anInt10230 = model.ma();
@@ -339,7 +339,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
                 if (this.anInt10220 != 0) i_41_ |= 0x2;
                 if (this.anInt10278 >= 0) i_41_ |= 0x7;
             } else i_41_ |= 0x7;
-            Model model_42_ = (this.aModelArray10323[1] = (class368.method3562(this.anInt10240, var_ha, this.anInt10243, i_41_, this.anInt10283, Class10.seqTypeList, (byte) 78)));
+            Model model_42_ = (this.aModelArray10323[1] = (class368.method3562(this.anInt10240, var_toolkit, this.anInt10243, i_41_, this.anInt10283, Class10.seqTypeList, (byte) 78)));
             if (model_42_ != null) {
                 if (this.anInt10278 < 0) {
                     if (this.anInt10237 != 0) model_42_.a(2048 * (this.anInt10237));
@@ -388,7 +388,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
                 if (this.anInt10260 != 0) i_52_ |= 0x2;
                 if (this.anInt10289 >= 0) i_52_ |= 0x7;
             } else i_52_ |= 0x7;
-            Model model_53_ = (this.aModelArray10323[2] = (class368.method3558(this.anInt10273, this.anInt10276, var_ha, i_52_, 3172, Class10.seqTypeList, this.anInt10224)));
+            Model model_53_ = (this.aModelArray10323[2] = (class368.method3558(this.anInt10273, this.anInt10276, var_toolkit, i_52_, 3172, Class10.seqTypeList, this.anInt10224)));
             if (model_53_ != null) {
                 if (this.anInt10289 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939[this.anInt10289]) != null)) {
                     int i_54_ = 0;

@@ -15,7 +15,7 @@ final class ja extends Matrix implements Interface19 {
 
     private final native void NA(long l, int i);
 
-    final void method891(int i, int i_0_, int i_1_) {
+    final void translate(int i, int i_0_, int i_1_) {
         a(this.nativeid, i, i_0_, i_1_);
     }
 
@@ -45,7 +45,7 @@ final class ja extends Matrix implements Interface19 {
 
     private final native void XA(long l, int i, int i_5_, int i_6_, int[] is);
 
-    final void method903(int i, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_) {
+    final void rotate(int i, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_) {
         P(this.nativeid, i, i_7_, i_8_, i_9_, i_10_, i_11_);
     }
 

@@ -16,7 +16,7 @@ final class Class348_Sub33 extends Node {
     int[][] anIntArrayArray6959;
     int[] anIntArray6960;
     static int anInt6961;
-    static byte[][][] aByteArrayArrayArray6962;
+    static byte[][][] tileFlags;
     static long aLong6963 = 0L;
     static int anInt6964;
     int anInt6965;
@@ -26,7 +26,7 @@ final class Class348_Sub33 extends Node {
     public static void method3024(int i) {
         aClass152_6955 = null;
         if (i >= -74) language = 12;
-        aByteArrayArrayArray6962 = null;
+        tileFlags = null;
     }
 
     static final void method3025(byte i, Class348_Sub49_Sub2 class348_sub49_sub2) {

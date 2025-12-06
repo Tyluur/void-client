@@ -372,7 +372,7 @@ final class Class88 {
                             Class14_Sub4.method254(2, (byte) -124);
                             Class130_Sub1.method1135(0);
                             Option_Sub5.method1741(Class299.aClass348_Sub49_Sub2_3813, (byte) 118);
-                            ha.anInt4581 = -1;
+                            Toolkit.anInt4581 = -1;
                             if (Class348_Sub3.aClass114_6584 != Class19.aClass114_304) Class348_Sub40_Sub26.method3120(-92);
                             else Class90.method853((byte) 99);
                             if (i_13_ != Class299.aClass348_Sub49_Sub2_3813.pos) throw new RuntimeException("lswp pos:" + (Class299.aClass348_Sub49_Sub2_3813.pos) + " psize:" + i_13_);

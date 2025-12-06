@@ -179,9 +179,9 @@ final class Class38 {
     static final void method365(Class318_Sub1 class318_sub1, Class348_Sub1[] class348_sub1s) {
         if (Class318_Sub1_Sub3_Sub3.aBoolean10221) {
             int i = class318_sub1.method2384(class348_sub1s, 49);
-            Class9.aHa171.method3642(i, class348_sub1s);
+            Class9.aToolkit171.method3642(i, class348_sub1s);
         }
-        if (Class332.aSArray4142 == aa_Sub1.aSArray5191) {
+        if (Class332.aGroundArray4142 == aa_Sub1.aGroundArray5191) {
             boolean bool = false;
             boolean bool_11_ = false;
             int i;
@@ -193,15 +193,15 @@ final class Class38 {
                 i = (class318_sub1.x >> Class362.anInt4459);
                 i_12_ = (class318_sub1.y >> Class362.anInt4459);
             }
-            Class9.aHa171.EA((Class348_Sub1_Sub1.aSArray8801[0].method3986(class318_sub1.x, class318_sub1.y, (byte) -118)), Class367_Sub8.method3547(i, i_12_), Class318_Sub1_Sub5.method2483(i, i_12_), Class199.method1457(i, i_12_));
+            Class9.aToolkit171.EA((Class348_Sub1_Sub1.aGroundArray8801[0].method3986(class318_sub1.x, class318_sub1.y, (byte) -118)), Class367_Sub8.method3547(i, i_12_), Class318_Sub1_Sub5.method2483(i, i_12_), Class199.method1457(i, i_12_));
         }
-        Class318_Sub4 class318_sub4 = class318_sub1.method2386(1, Class9.aHa171);
+        Class318_Sub4 class318_sub4 = class318_sub1.method2386(1, Class9.aToolkit171);
         if (class318_sub4 != null) {
             if (class318_sub1.aBoolean6391) {
-                Class318_Sub3[] class318_sub3s = class318_sub4.aClass318_Sub3Array6414;
+                LabelBounds[] class318_sub3s = class318_sub4.aClass318_Sub3Array6414;
                 for (int i = 0; i < class318_sub3s.length; i++) {
-                    Class318_Sub3 class318_sub3 = class318_sub3s[i];
-                    if (class318_sub3.aBoolean6401) Class338.method2663(-5590, (class318_sub3.anInt6405 - class318_sub3.anInt6403), (class318_sub3.anInt6406 + class318_sub3.anInt6403), (class318_sub3.anInt6402 - class318_sub3.anInt6403), (class318_sub3.anInt6404 + class318_sub3.anInt6403));
+                    LabelBounds class318_sub3 = class318_sub3s[i];
+                    if (class318_sub3.visible) Class338.method2663(-5590, (class318_sub3.bottomX - class318_sub3.width), (class318_sub3.topX + class318_sub3.width), (class318_sub3.bottomY - class318_sub3.width), (class318_sub3.topY + class318_sub3.width));
                 }
             }
             if (class318_sub4.aBoolean6409) {

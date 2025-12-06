@@ -23,11 +23,11 @@ final class Class218 {
             int i_8_ = i_7_;
             if (i_8_ < 3 && NPCDefinition.method802(i_5_, i, true)) i_8_++;
             if ((Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 0 && !Class58.method536(i_5_, false, i, JavaThreadResource.anInt2204, i_8_)) || Class147.aClass357ArrayArrayArray2029 == null) return;
-            Class338.aClass237_Sub1_4197.method1694((Class348_Sub45.collisionMaps[i_7_]), i_1_, i_7_, Class348_Sub8.aHa6654, i, i_5_, (byte) 106);
+            Class338.aClass237_Sub1_4197.method1694((Class348_Sub45.collisionMaps[i_7_]), i_1_, i_7_, Class348_Sub8.aToolkit6654, i, i_5_, (byte) 106);
             if (i_3_ >= 0) {
                 int i_9_ = Class316.clientOptions.aClass239_Sub4_7220.method1737(-32350);
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub4_7220), 1);
-                Class338.aClass237_Sub1_4197.method1689(i, i_7_, i_3_, Class348_Sub8.aHa6654, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (Class348_Sub45.collisionMaps[i_7_]));
+                Class338.aClass237_Sub1_4197.method1689(i, i_7_, i_3_, Class348_Sub8.aToolkit6654, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (Class348_Sub45.collisionMaps[i_7_]));
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub4_7220), i_9_);
             }
         }
@@ -77,10 +77,10 @@ final class Class218 {
         }
     }
 
-    final Sprite method1596(int i, boolean bool, int i_18_, ha var_ha) {
+    final Sprite method1596(int i, boolean bool, int i_18_, Toolkit var_toolkit) {
         anInt2857++;
         if (i_18_ < 51) aClass114_2860 = null;
-        long l = var_ha.anInt4567 << 19 | (this.anInt2853 | i << 16 | (!bool ? 0 : 262144));
+        long l = var_toolkit.anInt4567 << 19 | (this.anInt2853 | i << 16 | (!bool ? 0 : 262144));
         Sprite sprite = (Sprite) this.aMSITypeList_2851.aClass60_1976.method583(l, -87);
         if (sprite != null) return sprite;
         if (!this.aMSITypeList_2851.aIndex_1965.method421(false, this.anInt2853)) return null;
@@ -91,7 +91,7 @@ final class Class218 {
             for (int i_19_ = 0; i_19_ < i; i_19_++)
                 class207.method1520();
         }
-        sprite = var_ha.method3691(class207, true);
+        sprite = var_toolkit.method3691(class207, true);
         if (sprite != null) this.aMSITypeList_2851.aClass60_1976.method582(sprite, l, (byte) -101);
         return sprite;
     }

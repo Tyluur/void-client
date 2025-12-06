@@ -65,7 +65,7 @@ final class Class348_Sub49_Sub1 extends Packet {
             for (int i_6_ = 0; i_6_ < Class5_Sub1_Sub1.anInt9930; i_6_++)
                 Class13.method227(Option_Sub21.aClass318_Sub1Array6066[i_6_], true, bool_3_);
         }
-        if (Class318_Sub1_Sub3_Sub3.aBoolean10221) Class9.aHa171.method3642(0, null);
+        if (Class318_Sub1_Sub3_Sub3.aBoolean10221) Class9.aToolkit171.method3642(0, null);
         if ((i_2_ & 0x2) == 0) {
             for (int i_7_ = Canvas_Sub1.anInt67; i_7_ < BillboardType.anInt2524; i_7_++) {
                 if (i_7_ >= i && is != null) {
@@ -93,12 +93,12 @@ final class Class348_Sub49_Sub1 extends Packet {
                         }
                     }
                     if (Class348_Sub40_Sub5.aBoolean9121) {
-                        if (i_1_ >= 0) aa_Sub1.aSArray5191[i_7_].method3984(0, 0, 0, null, false, i_1_, i_2_);
-                        else aa_Sub1.aSArray5191[i_7_].method3983(0, 0, 0, null, false, i_2_);
+                        if (i_1_ >= 0) aa_Sub1.aGroundArray5191[i_7_].method3984(0, 0, 0, null, false, i_1_, i_2_);
+                        else aa_Sub1.aGroundArray5191[i_7_].method3983(0, 0, 0, null, false, i_2_);
                         for (int i_15_ = 0; i_15_ < Npc.anInt10503; i_15_++)
                             GfxTypeList.aClass315Array3982[i_15_].method2359(new Class318_Sub2(i_7_ + 1), -1);
-                    } else if (i_1_ >= 0) aa_Sub1.aSArray5191[i_7_].method3984(Option_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, false, i_1_, i_2_);
-                    else aa_Sub1.aSArray5191[i_7_].method3983(Option_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, false, i_2_);
+                    } else if (i_1_ >= 0) aa_Sub1.aGroundArray5191[i_7_].method3984(Option_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, false, i_1_, i_2_);
+                    else aa_Sub1.aGroundArray5191[i_7_].method3983(Option_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, false, i_2_);
                 } else {
                     int i_16_ = Class99.aBooleanArrayArray1572.length;
                     if ((Class37.anInt492 + Class99.aBooleanArrayArray1572.length) > Class318_Sub7.anInt6451) i_16_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572.length - Class318_Sub7.anInt6451);
@@ -115,12 +115,12 @@ final class Class348_Sub49_Sub1 extends Packet {
                         }
                     }
                     if (Class348_Sub40_Sub5.aBoolean9121) {
-                        if (i_1_ >= 0) aa_Sub1.aSArray5191[i_7_].method3984(0, 0, 0, null, false, i_1_, i_2_);
-                        else aa_Sub1.aSArray5191[i_7_].method3983(0, 0, 0, null, false, i_2_);
+                        if (i_1_ >= 0) aa_Sub1.aGroundArray5191[i_7_].method3984(0, 0, 0, null, false, i_1_, i_2_);
+                        else aa_Sub1.aGroundArray5191[i_7_].method3983(0, 0, 0, null, false, i_2_);
                         for (int i_21_ = 0; i_21_ < Npc.anInt10503; i_21_++)
                             GfxTypeList.aClass315Array3982[i_21_].method2359(new Class318_Sub2(i_7_ + 1), -1);
-                    } else if (i_1_ >= 0) aa_Sub1.aSArray5191[i_7_].method3984(Option_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, true, i_1_, i_2_);
-                    else aa_Sub1.aSArray5191[i_7_].method3983(Option_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, true, i_2_);
+                    } else if (i_1_ >= 0) aa_Sub1.aGroundArray5191[i_7_].method3984(Option_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, true, i_1_, i_2_);
+                    else aa_Sub1.aGroundArray5191[i_7_].method3983(Option_Sub25.anInt6111, Class285_Sub2.anInt8502, Class318_Sub1_Sub4_Sub1.anInt10084, Class348_Sub8.aBooleanArrayArray6656, true, i_2_);
                 }
             }
         }

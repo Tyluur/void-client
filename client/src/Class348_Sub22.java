@@ -27,7 +27,7 @@ final class Class348_Sub22 extends Node {
         if (index.method421(false, hitmarksGroup)) i_2_++;
         if (index.method421(false, LoadingScreenOpFactory.hitbarDefaultGroup)) i_2_++;
         if (index.method421(false, Class373_Sub2.timerbarDefaultGroup)) i_2_++;
-        if (index.method421(false, ha.headIconsPkGroup)) i_2_++;
+        if (index.method421(false, Toolkit.headIconsPkGroup)) i_2_++;
         if (index.method421(false, VarcstrTypeList.headIconsPrayerGroup)) i_2_++;
         if (index.method421(false, Class115.hintHeadIconsGroup)) i_2_++;
         if (index.method421(false, Class291.hintMapmarkersGroup)) i_2_++;

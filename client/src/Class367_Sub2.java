@@ -25,7 +25,7 @@ final class Class367_Sub2 extends Class367 {
             class318_sub1_sub2.anInt6382 = i_2_;
             class318_sub1_sub2.y = (i_1_ << Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037;
             class357.aClass318_Sub1_Sub2_4408 = class318_sub1_sub2;
-            int i_3_ = aa_Sub1.aSArray5191 == Class332.aSArray4142 ? 1 : 0;
+            int i_3_ = aa_Sub1.aGroundArray5191 == Class332.aGroundArray4142 ? 1 : 0;
             if (class318_sub1_sub2.method2376(-52)) {
                 if (class318_sub1_sub2.method2377((byte) 122)) {
                     class318_sub1_sub2.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226[i_3_];
@@ -132,7 +132,7 @@ final class Class367_Sub2 extends Class367 {
                         }
                         Class285_Sub1.anInt8493++;
                         Class126.anInt4985 = LoadingScreenRenderer.anInt3918;
-                        Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(ha.aClass351_4571, (Class348_Sub23_Sub2.aClass77_9029), -123);
+                        Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Toolkit.aClass351_4571, (Class348_Sub23_Sub2.aClass77_9029), -123);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Option_Sub6.method1745(string, -65));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                         Class348_Sub42_Sub14.method3243(118, class348_sub47);

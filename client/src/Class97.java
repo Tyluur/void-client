@@ -42,8 +42,8 @@ final class Class97 {
         if (i_0_ != 1) method873(47, 5, null, 1);
     }
 
-    static final void method873(int i, int i_6_, ha var_ha, int i_7_) {
-        Class60.aHa1098 = var_ha;
+    static final void method873(int i, int i_6_, Toolkit var_toolkit, int i_7_) {
+        Class60.aToolkit1098 = var_toolkit;
         Class262.aClass190ArrayArray3335 = new Class190[i][i_7_];
         if (i_6_ == 21719) {
             anInt1549++;

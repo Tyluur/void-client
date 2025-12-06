@@ -41,7 +41,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
         Class101_Sub2.method921((byte) 99, true);
         Class90.regionTileY = 0;
         za_Sub2.regionTileX = 0;
-        ha.anInt4581 = 0;
+        Toolkit.anInt4581 = 0;
         Class327.anInt4095 = 0;
         Class83.anInt1447 = Class312.anInt3931 = 0;
         for (int i_3_ = 0; (i_3_ < Class348_Sub27.aClass302Array6897.length); i_3_++)

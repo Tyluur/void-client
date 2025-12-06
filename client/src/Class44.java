@@ -22,14 +22,14 @@ final class Class44 {
             try {
                 anInt622++;
                 int[] is_5_ = {-1, 0, 0, 0, 0};
-                for (int i = 0; i < class237_sub1.anInt3130; i++) {
+                for (int i = 0; i < class237_sub1.levels; i++) {
                     Class369_Sub1.method3570(false);
                     for (int i_6_ = 0; (Class367_Sub4.mapLength >> 3 > i_6_); i_6_++) {
                         for (int i_7_ = 0; i_7_ < Class348_Sub40_Sub3.mapWidth >> 3; i_7_++) {
                             int i_8_ = (Class62.anIntArrayArrayArray1116[i][i_6_][i_7_]);
                             if (i_8_ != -1) {
                                 int i_9_ = i_8_ >> 24 & 0x3;
-                                if (!class237_sub1.aBoolean3109 || i_9_ == 0) {
+                                if (!class237_sub1.underwater || i_9_ == 0) {
                                     int i_10_ = (i_8_ & 0x6) >> 1;
                                     int i_11_ = (i_8_ & 0xffd064) >> 14;
                                     int i_12_ = i_8_ >> 3 & 0x7ff;
@@ -38,7 +38,7 @@ final class Class44 {
                                         if ((i_13_ == (Class348_Sub23_Sub3.mapRegionIds[i_14_])) && is[i_14_] != null) {
                                             Packet packet = new Packet(is[i_14_]);
                                             class237_sub1.method1684(i_6_ * 8, i, -1, packet, i_12_, 8 * i_7_, i_11_, (Class348_Sub45.collisionMaps), i_10_, i_9_);
-                                            class237_sub1.method1696(packet, false, i_12_, i_11_, 8 * i_6_, i, i_10_, 8 * i_7_, Class348_Sub8.aHa6654, is_5_[0] != -1 ? null : is_5_, i_9_);
+                                            class237_sub1.method1696(packet, false, i_12_, i_11_, 8 * i_6_, i, i_10_, 8 * i_7_, Class348_Sub8.aToolkit6654, is_5_[0] != -1 ? null : is_5_, i_9_);
                                             break;
                                         }
                                     }
@@ -47,7 +47,7 @@ final class Class44 {
                         }
                     }
                 }
-                for (int i = 0; class237_sub1.anInt3130 > i; i++) {
+                for (int i = 0; class237_sub1.levels > i; i++) {
                     Class369_Sub1.method3570(false);
                     for (int i_15_ = 0; (i_15_ < Class367_Sub4.mapLength >> 3); i_15_++) {
                         for (int i_16_ = 0; (i_16_ < Class348_Sub40_Sub3.mapWidth >> 3); i_16_++) {
@@ -86,7 +86,7 @@ final class Class44 {
         if (class357 != null) {
             class357.aClass318_Sub1_Sub5_4395 = class318_sub1_sub5;
             class357.aClass318_Sub1_Sub5_4407 = class318_sub1_sub5_20_;
-            int i_21_ = aa_Sub1.aSArray5191 == Class332.aSArray4142 ? 1 : 0;
+            int i_21_ = aa_Sub1.aGroundArray5191 == Class332.aGroundArray4142 ? 1 : 0;
             if (class318_sub1_sub5.method2376(-62)) {
                 if (class318_sub1_sub5.method2377((byte) 122)) {
                     class318_sub1_sub5.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226[i_21_];
