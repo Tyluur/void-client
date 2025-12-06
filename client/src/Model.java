@@ -244,7 +244,7 @@ abstract class Model {
 
     abstract void LA(int i);
 
-    abstract void method608(Matrix matrix, LabelBounds class318_sub3, int i, int i_71_);
+    abstract void render(Matrix matrix, LabelBounds class318_sub3, int i, int i_71_);
 
     abstract int ua();
 
@@ -302,7 +302,7 @@ abstract class Model {
 
     abstract Model method614(byte i, int i_80_, boolean bool);
 
-    abstract void method615(Matrix matrix, LabelBounds class318_sub3, int i);
+    abstract void render(Matrix matrix, LabelBounds class318_sub3, int i);
 
     static final boolean method616(int i, int i_81_, int i_82_) {
         anInt1129++;

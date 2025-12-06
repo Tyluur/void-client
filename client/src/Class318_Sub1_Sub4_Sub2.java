@@ -119,8 +119,8 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
         int i_12_ = this.x >> 9;
         int i_13_ = this.y >> 9;
         this.aClass235_10115.method1670(i_12_, matrix, i_13_, var_toolkit, i_12_, model, true, (byte) -73, i_13_);
-        if (!Class305.aBoolean3870) model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
-        else model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+        if (!Class305.aBoolean3870) model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+        else model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
         if ((this.aClass235_10115.aClass318_Sub10_3081) != null) {
             Class98 class98 = this.aClass235_10115.aClass318_Sub10_3081.method2525();
             if (Class305.aBoolean3870) var_toolkit.method3685(class98, Class132.anInt1906);

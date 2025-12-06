@@ -110,7 +110,7 @@ final class Class318_Sub4 extends Class318 {
         if (this.aClass318_Sub3Array6414 != null) {
             for (int i_35_ = 0; this.aClass318_Sub3Array6414.length > i_35_; i_35_++) {
                 this.aClass318_Sub3Array6414[i_35_].width <<= i_34_;
-                if (this.aClass318_Sub3Array6414[i_35_].method2500(i_32_, i) && this.aClass318_Sub1_6410.method2391(var_toolkit, i, i_32_, 0)) {
+                if (this.aClass318_Sub3Array6414[i_35_].contains(i_32_, i) && this.aClass318_Sub1_6410.method2391(var_toolkit, i, i_32_, 0)) {
                     this.aClass318_Sub3Array6414[i_35_].width >>= i_34_;
                     return true;
                 }

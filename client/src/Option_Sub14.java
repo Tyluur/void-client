@@ -90,7 +90,7 @@ final class Option_Sub14 extends Option {
                     for (int i_6_ = 0; i_6_ <= i_5_; i_6_++) {
                         Class50_Sub1.aMatrix_5209.method894((int) ((-((float) i_5_ / 2.0F) + (float) i_6_) * (float) Class270.anInt3465), 0, (i_5_ + 1) * Class270.anInt3465);
                         i_3_++;
-                        model.method615(Class50_Sub1.aMatrix_5209, null, 0);
+                        model.render(Class50_Sub1.aMatrix_5209, null, 0);
                         if (Class62.safeTime(-105) + -l >= (long) i_2_) break while_80_;
                     }
                 }

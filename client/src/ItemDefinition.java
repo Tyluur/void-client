@@ -380,7 +380,7 @@ final class ItemDefinition {
             var_toolkit_38_.ya();
             var_toolkit_38_.la();
             var_toolkit_38_.aa(0, 0, 36, 32, 0, 0);
-            model.method615(matrix_49_, null, 1);
+            model.render(matrix_49_, null, 1);
             var_toolkit_38_.f(i_50_, i_51_);
             int[] is = var_toolkit_38_.na(0, 0, 36, 32);
             if (i_40_ != -102) method1554(false, 37);

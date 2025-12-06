@@ -412,12 +412,12 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                             if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aToolkit6654.T(i_24_, i_25_, (class46.anInt709) + i_24_, (i_25_ + (class46.anInt789)));
                                             if (!class46.aBoolean784) {
                                                 if (!class46.aBoolean689) {
-                                                    model.method615((Class50_Sub1.aMatrix_5209), null, 1);
+                                                    model.render((Class50_Sub1.aMatrix_5209), null, 1);
                                                     if ((class46.aClass318_Sub10_740) != null) Class348_Sub8.aToolkit6654.method3684(class46.aClass318_Sub10_740.method2539());
-                                                } else model.method608((Class50_Sub1.aMatrix_5209), null, ((class46.anInt716) << 2), 1);
-                                            } else if (class46.aBoolean689) model.method608((Class50_Sub1.aMatrix_5209), null, (class46.anInt716), 1);
+                                                } else model.render((Class50_Sub1.aMatrix_5209), null, ((class46.anInt716) << 2), 1);
+                                            } else if (class46.aBoolean689) model.render((Class50_Sub1.aMatrix_5209), null, (class46.anInt716), 1);
                                             else {
-                                                model.method615((Class50_Sub1.aMatrix_5209), null, 1);
+                                                model.render((Class50_Sub1.aMatrix_5209), null, 1);
                                                 if ((class46.aClass318_Sub10_740) != null) Class348_Sub8.aToolkit6654.method3684(class46.aClass318_Sub10_740.method2539());
                                             }
                                             if (Class318_Sub1_Sub3_Sub2.aBoolean10046) Class348_Sub8.aToolkit6654.KA(i, i_12_, i_14_, i_17_);

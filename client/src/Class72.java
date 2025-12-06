@@ -159,7 +159,7 @@ final class Class72 {
         var_toolkit.setCamera(var_toolkit.method3654());
         Matrix matrix = var_toolkit.method3654();
         matrix.method894(0, 0, var_toolkit.i() - model.HA());
-        model.method608(matrix, null, 1024, 1);
+        model.render(matrix, null, 1024, 1);
         int i_29_ = anInt1220 * 13 / 16;
         int i_30_ = (anInt1220 - i_29_) / 2;
         aSprite_1215.method970(i_30_, i_30_, i_29_, i_29_, 0, ~0xffffff | anInt1222, 1);
@@ -291,7 +291,7 @@ final class Class72 {
             var_toolkit.setCamera(var_toolkit.method3654());
             Matrix matrix = var_toolkit.method3705();
             matrix.method894(0, 0, var_toolkit.i() - model.HA());
-            model.method608(matrix, null, var_toolkit.i(), 1);
+            model.render(matrix, null, var_toolkit.i(), 1);
             aSprite_1221 = var_toolkit.method3683(0, 0, anInt1220, anInt1220, true);
             aSprite_1221.method968(0, 0, 3);
             var_toolkit.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2], anIntArray1226[3]);

@@ -147,8 +147,8 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
         if (this.anInt10180 != -1) {
             Model model = (Exception_Sub1.itemTypeList.method1940(i ^ 0x6c, this.anInt10180).method1559(null, null, var_toolkit, 2048, 0, this.anInt10186, 0, (byte) 88, -1));
             if (model != null) {
-                if (Class305.aBoolean3870) model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[2]), Class132.anInt1906, 0);
-                else model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[2]), 0);
+                if (Class305.aBoolean3870) model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[2]), Class132.anInt1906, 0);
+                else model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[2]), 0);
                 aBoolean10191 |= model.F();
                 anInt10184 = model.ma();
             }
@@ -156,16 +156,16 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
         if (this.anInt10189 != -1) {
             Model model = (Exception_Sub1.itemTypeList.method1940(i ^ ~0x3b, this.anInt10189).method1559(null, null, var_toolkit, 2048, 0, this.anInt10190, 0, (byte) 88, -1));
             if (model != null) {
-                if (!Class305.aBoolean3870) model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[1]), 0);
-                else model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[1]), Class132.anInt1906, 0);
+                if (!Class305.aBoolean3870) model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[1]), 0);
+                else model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[1]), Class132.anInt1906, 0);
                 aBoolean10191 |= model.F();
                 if (anInt10184 < model.ma()) anInt10184 = model.ma();
             }
         }
         Model model = (Exception_Sub1.itemTypeList.method1940(-48, this.anInt10181).method1559(null, null, var_toolkit, 2048, 0, this.anInt10185, 0, (byte) 88, -1));
         if (model != null) {
-            if (!Class305.aBoolean3870) model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
-            else model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+            if (!Class305.aBoolean3870) model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+            else model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
             aBoolean10191 |= model.F();
             if (anInt10184 < model.ma()) anInt10184 = model.ma();
         }

@@ -217,8 +217,8 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
         matrix.translate((int) aDouble10408, (int) aDouble10384, (int) aDouble10371);
         method2473(matrix, model, var_toolkit, -2393);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, false, false);
-        if (!Class305.aBoolean3870) model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
-        else model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+        if (!Class305.aBoolean3870) model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+        else model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
         if (aClass318_Sub10_10378 != null) {
             Class98 class98 = aClass318_Sub10_10378.method2525();
             if (Class305.aBoolean3870) var_toolkit.method3685(class98, Class132.anInt1906);

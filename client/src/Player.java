@@ -248,7 +248,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                         Model model_38_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_37_, i_35_, (byte) -35, var_toolkit));
                         if (model_38_ == null) break;
                         var_toolkit.C(false);
-                        model_38_.method615(matrix, null, 0);
+                        model_38_.render(matrix, null, 0);
                         var_toolkit.C(true);
                     }
                 }
@@ -270,7 +270,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                     Model model_46_ = (Canvas_Sub1.method122(this.anInt10252, this.anInt10302, this.anInt10208, i_45_, i_41_, (byte) -35, var_toolkit));
                     if (model_46_ == null) break;
                     var_toolkit.C(false);
-                    model_46_.method608(matrix, null, i_40_, 0);
+                    model_46_.render(matrix, null, i_40_, 0);
                     var_toolkit.C(true);
                 }
             } catch (RuntimeException runtimeexception) {
@@ -351,8 +351,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aModelArray10323).length, true, false));
                     this.aBoolean10324 = true;
                     var_toolkit.C(false);
-                    if (Class305.aBoolean3870) model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), Class132.anInt1906, 0);
-                    else model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), 0);
+                    if (Class305.aBoolean3870) model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), Class132.anInt1906, 0);
+                    else model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), 0);
                     var_toolkit.C(true);
                 }
             }
@@ -400,11 +400,11 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         this.method2432(var_toolkit, -15074, matrix, false, this.aModelArray10323);
         if (Class305.aBoolean3870) {
             for (int i_65_ = 0; i_65_ < (this.aModelArray10323).length; i_65_++) {
-                if (this.aModelArray10323[i_65_] != null) this.aModelArray10323[i_65_].method608(matrix, (class318_sub4.aClass318_Sub3Array6414[i_65_]), Class132.anInt1906, (this != Class132.aPlayer_1907 ? 0 : 1));
+                if (this.aModelArray10323[i_65_] != null) this.aModelArray10323[i_65_].render(matrix, (class318_sub4.aClass318_Sub3Array6414[i_65_]), Class132.anInt1906, (this != Class132.aPlayer_1907 ? 0 : 1));
             }
         } else {
             for (int i_66_ = 0; i_66_ < (this.aModelArray10323).length; i_66_++) {
-                if (this.aModelArray10323[i_66_] != null) this.aModelArray10323[i_66_].method615(matrix, (class318_sub4.aClass318_Sub3Array6414[i_66_]), (this == Class132.aPlayer_1907 ? 1 : 0));
+                if (this.aModelArray10323[i_66_] != null) this.aModelArray10323[i_66_].render(matrix, (class318_sub4.aClass318_Sub3Array6414[i_66_]), (this == Class132.aPlayer_1907 ? 1 : 0));
             }
         }
         if (this.aClass318_Sub10_10327 != null) {

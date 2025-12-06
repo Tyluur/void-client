@@ -49,7 +49,7 @@ final class i extends Model implements Interface19 {
 
     final native void P(int i, int i_11_, int i_12_, int i_13_);
 
-    final void method608(Matrix matrix, LabelBounds class318_sub3, int i, int i_14_) {
+    final void render(Matrix matrix, LabelBounds class318_sub3, int i, int i_14_) {
         if (class318_sub3 == null) anOa5117.method3973().method149(this, matrix, null, i, i_14_);
         else {
             oa.anIntArray5132[5] = 0;
@@ -147,7 +147,7 @@ final class i extends Model implements Interface19 {
         }
     }
 
-    final void method615(Matrix matrix, LabelBounds class318_sub3, int i) {
+    final void render(Matrix matrix, LabelBounds class318_sub3, int i) {
         if (class318_sub3 == null) anOa5117.method3973().method145(this, matrix, null, i);
         else {
             oa.anIntArray5132[5] = 0;

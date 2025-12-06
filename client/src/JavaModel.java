@@ -384,7 +384,8 @@ final class JavaModel extends Model {
         }
     }
 
-    final void method615(Matrix matrix, LabelBounds class318_sub3, int i) {
+    // method615
+    final void render(Matrix matrix, LabelBounds class318_sub3, int i) {
         renderModel(matrix, class318_sub3, -1, i);
     }
 
@@ -1346,7 +1347,8 @@ final class JavaModel extends Model {
         return i_307_;
     }
 
-    final void method608(Matrix matrix, LabelBounds class318_sub3, int i, int i_316_) {
+    // method608
+    final void render(Matrix matrix, LabelBounds class318_sub3, int i, int i_316_) {
         renderModel(matrix, class318_sub3, i, i_316_);
     }
 

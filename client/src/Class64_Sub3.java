@@ -1068,7 +1068,7 @@ final class Class64_Sub3 extends Model {
         aBoolean5527 = false;
     }
 
-    final void method608(Matrix matrix, LabelBounds class318_sub3, int i, int i_235_) {
+    final void render(Matrix matrix, LabelBounds class318_sub3, int i, int i_235_) {
         try {
             anInt5639++;
             if (anInt5529 != 0) {
@@ -1565,7 +1565,7 @@ final class Class64_Sub3 extends Model {
         }
     }
 
-    final void method615(Matrix matrix, LabelBounds class318_sub3, int i) {
+    final void render(Matrix matrix, LabelBounds class318_sub3, int i) {
         try {
             anInt5611++;
             if (anInt5529 != 0) {

@@ -151,8 +151,8 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
                 class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aModelArray10323).length, method2442(1810797122), false));
                 this.aBoolean10324 = true;
                 var_toolkit.C(false);
-                if (!Class305.aBoolean3870) model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), 0);
-                else model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), Class132.anInt1906, 0);
+                if (!Class305.aBoolean3870) model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), 0);
+                else model.render(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), Class132.anInt1906, 0);
                 var_toolkit.C(true);
             }
         }
@@ -162,11 +162,11 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         this.method2432(var_toolkit, -15074, matrix, false, this.aModelArray10323);
         if (Class305.aBoolean3870) {
             for (int i_24_ = 0; (this.aModelArray10323.length > i_24_); i_24_++) {
-                if (this.aModelArray10323[i_24_] != null) this.aModelArray10323[i_24_].method608(matrix, (class318_sub4.aClass318_Sub3Array6414[i_24_]), Class132.anInt1906, 0);
+                if (this.aModelArray10323[i_24_] != null) this.aModelArray10323[i_24_].render(matrix, (class318_sub4.aClass318_Sub3Array6414[i_24_]), Class132.anInt1906, 0);
             }
         } else {
             for (int i_23_ = 0; (this.aModelArray10323.length > i_23_); i_23_++) {
-                if (this.aModelArray10323[i_23_] != null) this.aModelArray10323[i_23_].method615(matrix, (class318_sub4.aClass318_Sub3Array6414[i_23_]), 0);
+                if (this.aModelArray10323[i_23_] != null) this.aModelArray10323[i_23_].render(matrix, (class318_sub4.aClass318_Sub3Array6414[i_23_]), 0);
             }
         }
         if (this.aClass318_Sub10_10327 != null) {

@@ -62,8 +62,8 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
         Matrix matrix = var_toolkit.method3705();
         matrix.method894((this.x - -this.aShort8781), this.anInt6382, (this.y - -this.aShort8769));
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean10130, false);
-        if (Class305.aBoolean3870) aModel_10124.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
-        else aModel_10124.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+        if (Class305.aBoolean3870) aModel_10124.render(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+        else aModel_10124.render(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
         return class318_sub4;
     }
 
