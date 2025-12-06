@@ -448,20 +448,20 @@ abstract class ha_Sub3 extends ha {
                 byte i_25_ = this.aBoolean8160 ? (byte) 3 : (byte) 0;
                 if (i >= 0) {
                     interface18_impl3 = aClass372_8137.method3587((byte) -97, i);
-                    Class12 class12 = this.aD4579.method3(i, -6662);
-                    if (class12.aByte198 == 0 && class12.aByte211 == 0) method3879(-8629);
+                    TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+                    if (textureMetrics.speedU == 0 && textureMetrics.speedV == 0) method3879(-8629);
                     else {
-                        int i_26_ = !class12.aBoolean199 ? 128 : 64;
+                        int i_26_ = !textureMetrics.aBoolean199 ? 128 : 64;
                         int i_27_ = i_26_ * 50;
                         Class101_Sub2 class101_sub2 = method3820(false);
-                        class101_sub2.method916(((float) (this.anInt8146 % i_27_ * class12.aByte211) / (float) i_27_), true, 0.0F, ((float) (class12.aByte198 * (this.anInt8146 % i_27_)) / (float) i_27_));
+                        class101_sub2.method916(((float) (this.anInt8146 % i_27_ * textureMetrics.speedV) / (float) i_27_), true, 0.0F, ((float) (textureMetrics.speedU * (this.anInt8146 % i_27_)) / (float) i_27_));
                         method3853(-32, Option_Sub18.aClass251_6030);
                     }
-                    i_22_ = class12.anInt203;
+                    i_22_ = textureMetrics.anInt203;
                     if (!this.aBoolean8160) {
-                        i_23_ = class12.aByte202;
-                        i_25_ = class12.aByte213;
-                        i_24_ = class12.anInt206;
+                        i_23_ = textureMetrics.effectParam1;
+                        i_25_ = textureMetrics.effectType;
+                        i_24_ = textureMetrics.anInt206;
                     }
                 } else method3879(-8629);
                 method3875(i_23_, bool_20_, bool, i_25_, i_24_, -103);
@@ -701,10 +701,10 @@ abstract class ha_Sub3 extends ha {
         }
     }
 
-    final void method3638(Class101 class101) {
+    final void method3638(Matrix matrix) {
         do {
             try {
-                this.aClass101_Sub2_8080 = (Class101_Sub2) class101;
+                this.aClass101_Sub2_8080 = (Class101_Sub2) matrix;
                 anInt7923++;
                 this.aClass101_Sub2_8083.method898(this.aClass101_Sub2_8080);
                 this.aClass101_Sub2_8083.method934((byte) 64);
@@ -713,7 +713,7 @@ abstract class ha_Sub3 extends ha {
                 if (!this.aClass196_8184.method1450(-112)) break;
                 method3913((byte) 107);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, "wga.DE(" + (class101 != null ? "{...}" : "null") + ')');
+                throw Class348_Sub17.method2929(runtimeexception, "wga.DE(" + (matrix != null ? "{...}" : "null") + ')');
             }
             break;
         } while (false);
@@ -1056,7 +1056,7 @@ abstract class ha_Sub3 extends ha {
         }
     }
 
-    final Class101 method3640() {
+    final Matrix method3640() {
         anInt7945++;
         return this.aClass101_Sub2_8080;
     }
@@ -1229,7 +1229,7 @@ abstract class ha_Sub3 extends ha {
         anInt7930++;
     }
 
-    final Class101 method3705() {
+    final Matrix method3705() {
         anInt8077++;
         return aClass101_Sub2_8196;
     }
@@ -2006,7 +2006,7 @@ abstract class ha_Sub3 extends ha {
 
     abstract void method3911(Canvas canvas, int i, Object object);
 
-    final Class101 method3654() {
+    final Matrix method3654() {
         anInt8060++;
         return new Class101_Sub2();
     }
@@ -2299,9 +2299,9 @@ abstract class ha_Sub3 extends ha {
         if (i != 1) {
             if (i != 0) {
                 if (i == 2) method3874(Class328_Sub3.aClass229_6519, 117, Class248.aClass229_3196);
-                else if (i == 3) method3874(Class167.aClass229_2207, 111, Class348_Sub23_Sub2.aClass229_9011);
+                else if (i == 3) method3874(JavaThreadResource.aClass229_2207, 111, Class348_Sub23_Sub2.aClass229_9011);
                 else if (i == 4) method3874(Class348_Sub7.aClass229_6644, 126, Class348_Sub7.aClass229_6644);
-            } else method3874(Class167.aClass229_2207, 120, Class167.aClass229_2207);
+            } else method3874(JavaThreadResource.aClass229_2207, 120, JavaThreadResource.aClass229_2207);
         } else method3874(Class328_Sub3.aClass229_6519, 127, Class328_Sub3.aClass229_6519);
         anInt8034++;
         if (bool != true) aFloatArray8152 = null;
@@ -2374,8 +2374,8 @@ abstract class ha_Sub3 extends ha {
         this.aClass251Array8113 = new Class251[this.anInt8090];
         anInt7889++;
         for (int i_263_ = 0; this.anInt8090 > i_263_; i_263_++) {
-            this.aClass229Array8092[i_263_] = Class167.aClass229_2207;
-            this.aClass229Array8086[i_263_] = Class167.aClass229_2207;
+            this.aClass229Array8092[i_263_] = JavaThreadResource.aClass229_2207;
+            this.aClass229Array8086[i_263_] = JavaThreadResource.aClass229_2207;
             this.aClass251Array8113[i_263_] = Class348_Sub42_Sub18.aClass251_9685;
             this.aClass101_Sub2Array8131[i_263_] = new Class101_Sub2();
         }
@@ -2691,8 +2691,8 @@ abstract class ha_Sub3 extends ha {
                     aClass372_8137 = new Class372(this, this.aD4579);
                     this.aNativeInterface7924 = new NativeInterface(this.aD4579.method2(true), this.anInt8178);
                     for (int i_290_ = 0; this.aD4579.method2(true) > i_290_; i_290_++) {
-                        Class12 class12 = this.aD4579.method3(i_290_, -6662);
-                        if (class12 != null) this.aNativeInterface7924.initTextureMetrics(i_290_, class12.aByte201, class12.aByte216);
+                        TextureMetrics textureMetrics = this.aD4579.getMetrics(i_290_, -6662);
+                        if (textureMetrics != null) this.aNativeInterface7924.initTextureMetrics(i_290_, textureMetrics.aByte201, textureMetrics.aByte216);
                     }
                 }
             } catch (Throwable throwable) {

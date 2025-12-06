@@ -13,7 +13,7 @@ final class Class164 {
     static final void method1277(byte i) {
         anInt2175++;
         Class351.aClass60_4327.method590(i + -62);
-        Class358.aClass60_4417.method590(0);
+        TextureUniverse.aClass60_4417.method590(0);
         Option_Sub24.aClass60_6096.method590(0);
         if (i != 62) method1277((byte) 43);
         Class348_Sub40_Sub9.aClass60_9171.method590(0);
@@ -168,7 +168,7 @@ final class Class164 {
             Class348_Sub40_Sub12.objectTypeList = new ObjectTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, true, Class94.OBJECTS, aa_Sub3.MODELS);
             Class348_Sub23_Sub2.mapElementTypeList = new MapElementTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS, Class21.SPRITES);
             Class2.msiTypeList = new MSITypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS, Class21.SPRITES);
-            Class189.npcTypeList = new NPCTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, true, Class216.NPCS, aa_Sub3.MODELS);
+            BillboardType.npcTypeList = new NPCTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, true, Class216.NPCS, aa_Sub3.MODELS);
             Exception_Sub1.itemTypeList = new ItemTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, true, Class101_Sub3.paramTypeList, Class174.ITEMS, aa_Sub3.MODELS);
             Class348_Sub23_Sub2.questTypeList = new QuestTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
             Class10.seqTypeList = new SeqTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, r_Sub2.ANIMATIONS, Class348_Sub29.ANIMATION_SKELETONS, Class186.ANIMATION_SKINS);
@@ -273,7 +273,7 @@ final class Class164 {
             TimedVarDomain.method1311(5139, Class348_Sub8.aHa6654);
             Class369.method3568(Class348_Sub8.aHa6654, i ^ ~0x6ff7);
             ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.aHa6654, true);
-            Class101.method901(Class113.aSpriteArray1744, 515880227);
+            Matrix.method901(Class113.aSpriteArray1744, 515880227);
         }
         return Class348_Sub40_Sub6.method3063(false);
     }

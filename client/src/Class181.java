@@ -76,7 +76,8 @@ final class Class181 {
     boolean aBoolean2443;
     private int anInt2444;
 
-    static final void method1367(int i, int i_0_, float f, int i_1_, float[] fs, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, float[] fs_7_) {
+    // method1367
+    static final void sphereMap(int i, int i_0_, float f, int i_1_, float[] fs, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, float[] fs_7_) {
         try {
             i_2_ -= i;
             anInt2409++;

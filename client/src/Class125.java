@@ -31,7 +31,7 @@ final class Class125 implements Interface12 {
     public final Class223 method51(byte i) {
         if (i <= 116) return null;
         anInt4927++;
-        return Class101_Sub1.aClass223_5689;
+        return JavaMatrix.aClass223_5689;
     }
 
     static final boolean method1110(int i, int i_0_, int i_1_, byte i_2_, int i_3_) {

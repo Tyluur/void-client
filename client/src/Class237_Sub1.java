@@ -20,7 +20,7 @@ final class Class237_Sub1 extends Class237 {
     final void method1689(int i, int i_0_, int i_1_, ha var_ha, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, Class361 class361) {
         try {
             anInt5823++;
-            if (Class316.clientOptions.aClass239_Sub27_7261.method1840(i_3_ ^ ~0x7e6f) != 0 || Class58.method536(i_5_, false, i, Class167.anInt2204, i_2_)) {
+            if (Class316.clientOptions.aClass239_Sub27_7261.method1840(i_3_ ^ ~0x7e6f) != 0 || Class58.method536(i_5_, false, i, JavaThreadResource.anInt2204, i_2_)) {
                 if (this.anInt5824 > i_0_) this.anInt5824 = i_0_;
                 Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, i_1_);
                 if (Class316.clientOptions.aClass239_Sub24_7235.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {

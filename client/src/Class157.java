@@ -5,10 +5,10 @@
 final class Class157 {
     static int anInt2121;
     static int anInt2122;
-    static Class101 aClass101_2123;
+    static Matrix aMatrix_2123;
 
     static final void method1244(int i, Class348_Sub49_Sub2 class348_sub49_sub2) {
-        if (i < 10) aClass101_2123 = null;
+        if (i < 10) aMatrix_2123 = null;
         class348_sub49_sub2.writeInt((byte) 121, Class348_Sub29.ANIMATION_SKELETONS.indexCrc(26));
         anInt2121++;
         class348_sub49_sub2.writeInt((byte) 112, Class186.ANIMATION_SKINS.indexCrc(-106));
@@ -43,7 +43,7 @@ final class Class157 {
         class348_sub49_sub2.writeInt((byte) 107, Class126.NATIVE_LIBRARIES.indexCrc(-107));
         class348_sub49_sub2.writeInt((byte) 125, Class136.SHADERS.indexCrc(-118));
         class348_sub49_sub2.writeInt((byte) 90, Class172.method1327(31));
-        class348_sub49_sub2.writeInt((byte) 120, Class101_Sub1.method912(0));
+        class348_sub49_sub2.writeInt((byte) 120, JavaMatrix.method912(0));
         class348_sub49_sub2.writeInt((byte) 87, Class146.VIDEOS.indexCrc(-94));
     }
 
@@ -57,6 +57,6 @@ final class Class157 {
 
     public static void method1246(int i) {
         if (i >= -71) method1244(-50, null);
-        aClass101_2123 = null;
+        aMatrix_2123 = null;
     }
 }

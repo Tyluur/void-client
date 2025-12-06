@@ -242,11 +242,11 @@ final class Class154 {
                 }
             }
             if (!bool_15_ && !bool_52_) return model_51_;
-            Class101[] class101s = null;
-            if (class225 != null) class101s = class225.method1618(var_ha, 0);
-            if (bool_52_ && class101s != null) {
+            Matrix[] matrices = null;
+            if (class225 != null) matrices = class225.method1618(var_ha, 0);
+            if (bool_52_ && matrices != null) {
                 for (int i_54_ = 0; i_54_ < 12; i_54_++) {
-                    if (class101s[i_54_] != null) model_51_.method610(class101s[i_54_], 1 << i_54_, true);
+                    if (matrices[i_54_] != null) model_51_.method610(matrices[i_54_], 1 << i_54_, true);
                 }
             }
             int i_55_ = 0;
@@ -261,15 +261,15 @@ final class Class154 {
                     if (is[i_57_] != -1) {
                         int i_58_ = is[i_57_] - i;
                         i_58_ &= 0x3fff;
-                        Class101 class101 = var_ha.method3654();
-                        class101.method895(i_58_);
-                        model_51_.method610(class101, 1 << i_57_, false);
+                        Matrix matrix = var_ha.method3654();
+                        matrix.method895(i_58_);
+                        model_51_.method610(matrix, 1 << i_57_, false);
                     }
                 }
             }
-            if (bool_52_ && class101s != null) {
+            if (bool_52_ && matrices != null) {
                 for (int i_59_ = 0; i_59_ < 12; i_59_++) {
-                    if (class101s[i_59_] != null) model_51_.method610(class101s[i_59_], 1 << i_59_, false);
+                    if (matrices[i_59_] != null) model_51_.method610(matrices[i_59_], 1 << i_59_, false);
                 }
             }
             if (class348_sub42_sub17 != null && class348_sub42_sub17_30_ != null)

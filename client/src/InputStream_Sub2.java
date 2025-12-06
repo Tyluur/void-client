@@ -266,7 +266,7 @@ final class InputStream_Sub2 extends InputStream {
                     int i_122_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
                     int i_123_ = Class299.aClass348_Sub49_Sub2_3813.readMedium(-1);
                     String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -126);
-                    Class6.method205(i_121_, i_119_, i_123_, string, i_122_, -109, i_120_, Class348_Sub40_Sub12.anInt9200);
+                    JavaBillboardFace.method205(i_121_, i_119_, i_123_, string, i_122_, -109, i_120_, Class348_Sub40_Sub12.anInt9200);
                 } else {
                     Class156.method1242("T3 - " + class74, null, 15004);
                     Class348_Sub40_Sub34.method3141(false, (byte) 11);

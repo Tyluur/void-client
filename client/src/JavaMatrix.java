@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class101_Sub1 extends Class101 {
+// Class101_Sub1
+final class JavaMatrix extends Matrix {
     float aFloat5655;
     static int anInt5656;
     static int anInt5657;
@@ -92,21 +93,21 @@ final class Class101_Sub1 extends Class101 {
         return Class108.anInt1663;
     }
 
-    final void method898(Class101 class101) {
+    final void method898(Matrix matrix) {
         anInt5683++;
-        Class101_Sub1 class101_sub1_14_ = (Class101_Sub1) class101;
-        this.aFloat5669 = class101_sub1_14_.aFloat5669;
-        this.aFloat5681 = class101_sub1_14_.aFloat5681;
-        this.aFloat5655 = class101_sub1_14_.aFloat5655;
-        this.aFloat5664 = class101_sub1_14_.aFloat5664;
-        this.aFloat5666 = class101_sub1_14_.aFloat5666;
-        this.aFloat5678 = class101_sub1_14_.aFloat5678;
-        this.aFloat5680 = class101_sub1_14_.aFloat5680;
-        this.aFloat5672 = class101_sub1_14_.aFloat5672;
-        this.aFloat5662 = class101_sub1_14_.aFloat5662;
-        this.aFloat5686 = class101_sub1_14_.aFloat5686;
-        this.aFloat5673 = class101_sub1_14_.aFloat5673;
-        this.aFloat5685 = class101_sub1_14_.aFloat5685;
+        JavaMatrix javaMatrix_14_ = (JavaMatrix) matrix;
+        this.aFloat5669 = javaMatrix_14_.aFloat5669;
+        this.aFloat5681 = javaMatrix_14_.aFloat5681;
+        this.aFloat5655 = javaMatrix_14_.aFloat5655;
+        this.aFloat5664 = javaMatrix_14_.aFloat5664;
+        this.aFloat5666 = javaMatrix_14_.aFloat5666;
+        this.aFloat5678 = javaMatrix_14_.aFloat5678;
+        this.aFloat5680 = javaMatrix_14_.aFloat5680;
+        this.aFloat5672 = javaMatrix_14_.aFloat5672;
+        this.aFloat5662 = javaMatrix_14_.aFloat5662;
+        this.aFloat5686 = javaMatrix_14_.aFloat5686;
+        this.aFloat5673 = javaMatrix_14_.aFloat5673;
+        this.aFloat5685 = javaMatrix_14_.aFloat5685;
     }
 
     final void method905(int i, int i_15_, int i_16_, int[] is) {
@@ -187,22 +188,22 @@ final class Class101_Sub1 extends Class101 {
         this.aFloat5673 = -this.aFloat5655;
     }
 
-    final Class101 method907() {
+    final Matrix method907() {
         anInt5660++;
-        Class101_Sub1 class101_sub1_31_ = new Class101_Sub1();
-        class101_sub1_31_.aFloat5664 = this.aFloat5664;
-        class101_sub1_31_.aFloat5681 = this.aFloat5681;
-        class101_sub1_31_.aFloat5662 = this.aFloat5662;
-        class101_sub1_31_.aFloat5669 = this.aFloat5669;
-        class101_sub1_31_.aFloat5655 = this.aFloat5655;
-        class101_sub1_31_.aFloat5666 = this.aFloat5666;
-        class101_sub1_31_.aFloat5686 = this.aFloat5686;
-        class101_sub1_31_.aFloat5678 = this.aFloat5678;
-        class101_sub1_31_.aFloat5673 = this.aFloat5673;
-        class101_sub1_31_.aFloat5685 = this.aFloat5685;
-        class101_sub1_31_.aFloat5672 = this.aFloat5672;
-        class101_sub1_31_.aFloat5680 = this.aFloat5680;
-        return class101_sub1_31_;
+        JavaMatrix javaMatrix_31_ = new JavaMatrix();
+        javaMatrix_31_.aFloat5664 = this.aFloat5664;
+        javaMatrix_31_.aFloat5681 = this.aFloat5681;
+        javaMatrix_31_.aFloat5662 = this.aFloat5662;
+        javaMatrix_31_.aFloat5669 = this.aFloat5669;
+        javaMatrix_31_.aFloat5655 = this.aFloat5655;
+        javaMatrix_31_.aFloat5666 = this.aFloat5666;
+        javaMatrix_31_.aFloat5686 = this.aFloat5686;
+        javaMatrix_31_.aFloat5678 = this.aFloat5678;
+        javaMatrix_31_.aFloat5673 = this.aFloat5673;
+        javaMatrix_31_.aFloat5685 = this.aFloat5685;
+        javaMatrix_31_.aFloat5672 = this.aFloat5672;
+        javaMatrix_31_.aFloat5680 = this.aFloat5680;
+        return javaMatrix_31_;
     }
 
     final void method895(int i) {
@@ -248,7 +249,7 @@ final class Class101_Sub1 extends Class101 {
         return Class73.anInt4776 > 0;
     }
 
-    public Class101_Sub1() {
+    public JavaMatrix() {
         method910();
     }
 

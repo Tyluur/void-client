@@ -28,7 +28,7 @@ final class ClientScript extends Class348_Sub42 {
             int i = class211.anInt2731;
             if (class211.aBoolean2749) i = 0;
             int i_0_ = class211.anInt2731;
-            if (class211.aBoolean2737) i_0_ = Class189.anInt2524 - 1;
+            if (class211.aBoolean2737) i_0_ = BillboardType.anInt2524 - 1;
             for (int i_1_ = i; i_1_ <= i_0_; i_1_++) {
                 int i_2_ = 0;
                 int i_3_ = ((class348_sub1.method2717((byte) 89) - class348_sub1.method2723(-1) + Class348_Sub23_Sub2.anInt9037) >> Class362.anInt4459);

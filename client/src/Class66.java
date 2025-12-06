@@ -884,7 +884,7 @@ final class Class66 {
                 Class318_Sub6.aShortArray6428[anIntArray1149[anInt1173]] = (short) aa.method160(27076, anIntArray1149[anInt1173 + 1]);
                 Exception_Sub1.itemTypeList.method1930(-21804);
                 Exception_Sub1.itemTypeList.method1936(-71);
-                Class189.npcTypeList.method2074(-118);
+                BillboardType.npcTypeList.method2074(-118);
                 Class354.method3466(125);
                 return;
             }
@@ -4857,9 +4857,9 @@ final class Class66 {
                     int i_478_ = anIntArray1149[anInt1173];
                     int i_479_ = anIntArray1149[anInt1173 + 1];
                     Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_479_, 28364);
-                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Class189.npcTypeList.method2079(i_478_, -1).method801((byte) 17, i_479_, class254.aString3258));
+                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (BillboardType.npcTypeList.method2079(i_478_, -1).method801((byte) 17, i_479_, class254.aString3258));
                     else {
-                        anIntArray1149[anInt1173++] = (Class189.npcTypeList.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48));
+                        anIntArray1149[anInt1173++] = (BillboardType.npcTypeList.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48));
                         return;
                     }
                     return;

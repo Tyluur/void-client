@@ -66,20 +66,20 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
 
     final boolean method2391(ha var_ha, int i, int i_7_, int i_8_) {
         anInt10188++;
-        Class101 class101 = var_ha.method3705();
-        class101.method894(this.x, -10 + this.anInt6382, this.y);
+        Matrix matrix = var_ha.method3705();
+        matrix.method894(this.x, -10 + this.anInt6382, this.y);
         ItemDefinition itemDefinition = (Exception_Sub1.itemTypeList.method1940(i_8_ ^ 0x6b, this.anInt10181));
         Model model = itemDefinition.method1559(null, null, var_ha, 131072, 0, this.anInt10185, 0, (byte) 88, -1);
-        if (model != null && (Class305.aBoolean3870 ? model.method623(i_7_, i, class101, true, itemDefinition.anInt2784, Class132.anInt1906) : model.method628(i_7_, i, class101, true, itemDefinition.anInt2784))) return true;
+        if (model != null && (Class305.aBoolean3870 ? model.method623(i_7_, i, matrix, true, itemDefinition.anInt2784, Class132.anInt1906) : model.method628(i_7_, i, matrix, true, itemDefinition.anInt2784))) return true;
         if ((~this.anInt10189) != i_8_) {
             ItemDefinition itemDefinition_9_ = (Exception_Sub1.itemTypeList.method1940(-88, this.anInt10189));
             model = itemDefinition_9_.method1559(null, null, var_ha, 131072, 0, (this.anInt10190), 0, (byte) 88, -1);
-            if (model != null && (Class305.aBoolean3870 ? model.method623(i_7_, i, class101, true, itemDefinition_9_.anInt2784, Class132.anInt1906) : model.method628(i_7_, i, class101, true, itemDefinition_9_.anInt2784))) return true;
+            if (model != null && (Class305.aBoolean3870 ? model.method623(i_7_, i, matrix, true, itemDefinition_9_.anInt2784, Class132.anInt1906) : model.method628(i_7_, i, matrix, true, itemDefinition_9_.anInt2784))) return true;
         }
         if (this.anInt10180 != -1) {
             ItemDefinition itemDefinition_10_ = (Exception_Sub1.itemTypeList.method1940(-99, this.anInt10180));
             model = itemDefinition_10_.method1559(null, null, var_ha, 131072, 0, (this.anInt10186), 0, (byte) 88, -1);
-            return model != null && (!Class305.aBoolean3870 ? model.method628(i_7_, i, class101, true, itemDefinition_10_.anInt2784) : model.method623(i_7_, i, class101, true, itemDefinition_10_.anInt2784, Class132.anInt1906));
+            return model != null && (!Class305.aBoolean3870 ? model.method628(i_7_, i, matrix, true, itemDefinition_10_.anInt2784) : model.method623(i_7_, i, matrix, true, itemDefinition_10_.anInt2784, Class132.anInt1906));
         }
         return false;
     }
@@ -102,8 +102,8 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
                 this.anInt6382 += i_11_;
             }
         }
-        Class101 class101 = var_ha.method3705();
-        class101.method910();
+        Matrix matrix = var_ha.method3705();
+        matrix.method910();
         if (class148 == null || !(class148.aClass318_Sub1_Sub3_2040.aBoolean8741)) {
             boolean bool = false;
             boolean bool_12_ = false;
@@ -128,27 +128,27 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
             int i_30_ = Math.min(i_27_, i_21_);
             if (i_15_ != 0) {
                 int i_31_ = ((int) (2607.5945876176133 * Math.atan2(i_28_ + -i_29_, i_15_)) & 0x3fff);
-                if (i_31_ != 0) class101.method900(i_31_);
+                if (i_31_ != 0) matrix.method900(i_31_);
             }
             int i_32_ = Math.min(i_24_, i_18_);
             int i_33_ = i_18_ - -i_27_;
             if (i_14_ != 0) {
                 int i_34_ = ((int) (2607.5945876176133 * Math.atan2(i_32_ - i_30_, i_14_)) & 0x3fff);
-                if (i_34_ != 0) class101.method908(-i_34_);
+                if (i_34_ != 0) matrix.method908(-i_34_);
             }
             if (i_24_ + i_21_ < i_33_) i_33_ = i_24_ + i_21_;
             i_33_ = (i_33_ >> 1) + -this.anInt6382;
-            if (i_33_ != 0) class101.method891(0, i_33_, 0);
+            if (i_33_ != 0) matrix.method891(0, i_33_, 0);
         }
-        class101.method891(this.x, -10 + this.anInt6382, this.y);
+        matrix.method891(this.x, -10 + this.anInt6382, this.y);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(3, true, false);
         aBoolean10191 = false;
         anInt10184 = 0;
         if (this.anInt10180 != -1) {
             Model model = (Exception_Sub1.itemTypeList.method1940(i ^ 0x6c, this.anInt10180).method1559(null, null, var_ha, 2048, 0, this.anInt10186, 0, (byte) 88, -1));
             if (model != null) {
-                if (Class305.aBoolean3870) model.method608(class101, (class318_sub4.aClass318_Sub3Array6414[2]), Class132.anInt1906, 0);
-                else model.method615(class101, (class318_sub4.aClass318_Sub3Array6414[2]), 0);
+                if (Class305.aBoolean3870) model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[2]), Class132.anInt1906, 0);
+                else model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[2]), 0);
                 aBoolean10191 |= model.F();
                 anInt10184 = model.ma();
             }
@@ -156,16 +156,16 @@ final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
         if (this.anInt10189 != -1) {
             Model model = (Exception_Sub1.itemTypeList.method1940(i ^ ~0x3b, this.anInt10189).method1559(null, null, var_ha, 2048, 0, this.anInt10190, 0, (byte) 88, -1));
             if (model != null) {
-                if (!Class305.aBoolean3870) model.method615(class101, (class318_sub4.aClass318_Sub3Array6414[1]), 0);
-                else model.method608(class101, (class318_sub4.aClass318_Sub3Array6414[1]), Class132.anInt1906, 0);
+                if (!Class305.aBoolean3870) model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[1]), 0);
+                else model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[1]), Class132.anInt1906, 0);
                 aBoolean10191 |= model.F();
                 if (anInt10184 < model.ma()) anInt10184 = model.ma();
             }
         }
         Model model = (Exception_Sub1.itemTypeList.method1940(-48, this.anInt10181).method1559(null, null, var_ha, 2048, 0, this.anInt10185, 0, (byte) 88, -1));
         if (model != null) {
-            if (!Class305.aBoolean3870) model.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
-            else model.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+            if (!Class305.aBoolean3870) model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+            else model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
             aBoolean10191 |= model.F();
             if (anInt10184 < model.ma()) anInt10184 = model.ma();
         }

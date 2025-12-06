@@ -208,7 +208,7 @@ final class Class235 {
         return ((0xff & i_6_ >> 24) + "." + ((i_6_ & 0xffb428) >> 16) + "." + (i_6_ >> 8 & 0xff) + "." + (i_6_ & 0xff));
     }
 
-    final void method1670(int i, Class101 class101, int i_7_, ha var_ha, int i_8_, Model model, boolean bool, byte i_9_, int i_10_) {
+    final void method1670(int i, Matrix matrix, int i_7_, ha var_ha, int i_8_, Model model, boolean bool, byte i_9_, int i_10_) {
         do {
             try {
                 anInt3058++;
@@ -221,12 +221,12 @@ final class Class235 {
                     if (class51 != null) this.aClass318_Sub10_3081 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true);
                 }
                 if (this.aClass318_Sub10_3081 == null) break;
-                model.method620(class101);
+                model.method620(matrix);
                 if (bool) this.aClass318_Sub10_3081.method2536(var_ha, Class367_Sub11.anInt7396, modelParticleEmitters, modelParticleEffectors, false);
                 else this.aClass318_Sub10_3081.method2540(Class367_Sub11.anInt7396);
                 this.aClass318_Sub10_3081.method2533(aByte3085, i_8_, i, i_10_, i_7_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bv.E(" + i + ',' + (class101 != null ? "{...}" : "null") + ',' + i_7_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_8_ + ',' + (model != null ? "{...}" : "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("bv.E(" + i + ',' + (matrix != null ? "{...}" : "null") + ',' + i_7_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_8_ + ',' + (model != null ? "{...}" : "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'));
             }
             break;
         } while (false);

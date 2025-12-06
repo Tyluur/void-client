@@ -91,8 +91,8 @@ final class OutputStream_Sub1 extends OutputStream {
             }
             Class369_Sub1.method3570(false);
             if (i >= 80) {
-                Class157.aClass101_2123.method903(Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, -ClientScript.anInt9701 & 0x3fff, -Class5.anInt4638 & 0x3fff, 0x3fff & -Class338.anInt4186);
-                Class348_Sub8.aHa6654.method3638(Class157.aClass101_2123);
+                Class157.aMatrix_2123.method903(Class286_Sub4.anInt6246, Class305.anInt3855, Class59_Sub2_Sub2.anInt8685, -ClientScript.anInt9701 & 0x3fff, -Class5.anInt4638 & 0x3fff, 0x3fff & -Class338.anInt4186);
+                Class348_Sub8.aHa6654.method3638(Class157.aMatrix_2123);
                 Class348_Sub8.aHa6654.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, Class97.anInt1550 << 1, Class97.anInt1550 << 1);
                 Class30.method319(Class97.anInt1550 << 1, Class97.anInt1550 << 1, (byte) -18, i_1_ + i_0_ / 2, i_3_ + i_2_ / 2);
                 Class348_Sub42_Sub20.method3282(0x3fff & -(ClientScript.anInt9701), Class59_Sub2_Sub2.anInt8685, Class305.anInt3855, 0, -Class5.anInt4638 & 0x3fff, Class286_Sub4.anInt6246, -Class338.anInt4186 & 0x3fff);

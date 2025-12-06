@@ -364,7 +364,7 @@ final class VarcstrTypeList {
                         }
                         if (string.startsWith("cachespace")) {
                             Applet_Sub1.method94(("I(s): " + Class351.aClass60_4327.method581(-18529) + "/" + Class351.aClass60_4327.method577(-4)), -101);
-                            Applet_Sub1.method94(("I(m): " + Class358.aClass60_4417.method581(-18529) + "/" + Class358.aClass60_4417.method577(i ^ 0x4d)), 127);
+                            Applet_Sub1.method94(("I(m): " + TextureUniverse.aClass60_4417.method581(-18529) + "/" + TextureUniverse.aClass60_4417.method577(i ^ 0x4d)), 127);
                             Applet_Sub1.method94(("O(s): " + Exception_Sub1.itemTypeList.aClass175_3288.method1350((byte) 126) + "/" + Exception_Sub1.itemTypeList.aClass175_3288.method1339(100)), i + 203);
                             break;
                         }

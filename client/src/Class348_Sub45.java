@@ -14,7 +14,7 @@ abstract class Class348_Sub45 extends Node {
     abstract int method3308(byte i);
 
     static final void method3309(int i) {
-        Class354.anIntArrayArrayArray4356 = (new int[Class189.anInt2524][1 + Class318_Sub7.anInt6451]
+        Class354.anIntArrayArrayArray4356 = (new int[BillboardType.anInt2524][1 + Class318_Sub7.anInt6451]
                 [1 + Class348_Sub41.anInt7054]);
         anInt7104++;
         Class348_Sub44.anInt7101 = 0;

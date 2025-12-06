@@ -66,7 +66,7 @@ final class Class367_Sub5 extends Class367 {
         if (i != 87) method3527(55, null, -69);
         this.aHa_Sub3_4479.method3897(1, -4382);
         this.aHa_Sub3_4479.method3850((byte) 82, null);
-        this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, i + 25, Class167.aClass229_2207);
+        this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, i + 25, JavaThreadResource.aClass229_2207);
         this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
         this.aHa_Sub3_4479.method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
         this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);

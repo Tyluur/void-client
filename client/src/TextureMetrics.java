@@ -2,23 +2,24 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class12 {
-    byte aByte198;
+// Class12
+final class TextureMetrics {
+    byte speedU;
     boolean aBoolean199;
-    int anInt200;
+    int alphaBlendMode;
     byte aByte201;
-    byte aByte202;
+    byte effectParam1;
     int anInt203;
     boolean aBoolean204;
     byte aByte205;
     int anInt206;
     boolean aBoolean207;
     short aShort208;
-    boolean aBoolean209;
+    boolean disableable;
     static int anInt210;
-    byte aByte211;
+    byte speedV;
     boolean aBoolean212;
-    byte aByte213;
+    byte effectType;
     static int anInt214;
     boolean aBoolean215;
     byte aByte216;
@@ -40,7 +41,7 @@ final class Class12 {
         if (i != -40) method224((byte) 100, null);
     }
 
-    public Class12() {
+    public TextureMetrics() {
         /* empty */
     }
 }

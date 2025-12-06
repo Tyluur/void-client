@@ -25,8 +25,8 @@ final class Class72 {
     private final boolean method730(ha var_ha, Class72 class72_0_) {
         if (aSprite_1221 == null) {
             if (anInt1230 == 0) {
-                if (Class101_Sub1.aD5684.method4(-7953, anInt1224)) {
-                    int[] is = Class101_Sub1.aD5684.method6(-21540, anInt1220, 0.7F, anInt1224, false, anInt1220);
+                if (JavaMatrix.aD5684.method4(-7953, anInt1224)) {
+                    int[] is = JavaMatrix.aD5684.method6(-21540, anInt1220, 0.7F, anInt1224, false, anInt1220);
                     aSprite_1221 = var_ha.method3662(anInt1220, is, (byte) 94, 0, anInt1220, anInt1220);
                 }
             } else if (anInt1230 == 2) method740(var_ha, class72_0_);
@@ -157,9 +157,9 @@ final class Class72 {
         if (anInt1222 != 0) i_28_ = i_28_ * 13 / 16;
         var_ha.DA(anInt1220 / 2, anInt1220 / 2, i_28_, i_28_);
         var_ha.method3638(var_ha.method3654());
-        Class101 class101 = var_ha.method3654();
-        class101.method894(0, 0, var_ha.i() - model.HA());
-        model.method608(class101, null, 1024, 1);
+        Matrix matrix = var_ha.method3654();
+        matrix.method894(0, 0, var_ha.i() - model.HA());
+        model.method608(matrix, null, 1024, 1);
         int i_29_ = anInt1220 * 13 / 16;
         int i_30_ = (anInt1220 - i_29_) / 2;
         aSprite_1215.method970(i_30_, i_30_, i_29_, i_29_, 0, ~0xffffff | anInt1222, 1);
@@ -289,9 +289,9 @@ final class Class72 {
             int i_75_ = Math.max(i_71_, i_72_);
             var_ha.DA(i_73_, i_74_, i_75_, i_75_);
             var_ha.method3638(var_ha.method3654());
-            Class101 class101 = var_ha.method3705();
-            class101.method894(0, 0, var_ha.i() - model.HA());
-            model.method608(class101, null, var_ha.i(), 1);
+            Matrix matrix = var_ha.method3705();
+            matrix.method894(0, 0, var_ha.i() - model.HA());
+            model.method608(matrix, null, var_ha.i(), 1);
             aSprite_1221 = var_ha.method3683(0, 0, anInt1220, anInt1220, true);
             aSprite_1221.method968(0, 0, 3);
             var_ha.KA(anIntArray1226[0], anIntArray1226[1], anIntArray1226[2], anIntArray1226[3]);

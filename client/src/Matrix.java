@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class101 {
+// Class101
+abstract class Matrix {
     static int[] anIntArray1593 = new int[1];
     static int anInt1594;
     static int anInt1595;
@@ -15,7 +16,7 @@ abstract class Class101 {
 
     abstract void method891(int i, int i_0_, int i_1_);
 
-    public Class101() {
+    public Matrix() {
         /* empty */
     }
 
@@ -82,7 +83,7 @@ abstract class Class101 {
 
     abstract void method897(int i, int i_14_, int i_15_, int[] is);
 
-    abstract void method898(Class101 class101_16_);
+    abstract void method898(Matrix matrix_16_);
 
     abstract void method899(int i);
 
@@ -128,7 +129,7 @@ abstract class Class101 {
         if (i != -31777) method901(null, -89);
     }
 
-    abstract Class101 method907();
+    abstract Matrix method907();
 
     abstract void method908(int i);
 

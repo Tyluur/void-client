@@ -59,11 +59,11 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
     final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10122++;
         if (aModel_10124 == null) return null;
-        Class101 class101 = var_ha.method3705();
-        class101.method894((this.x - -this.aShort8781), this.anInt6382, (this.y - -this.aShort8769));
+        Matrix matrix = var_ha.method3705();
+        matrix.method894((this.x - -this.aShort8781), this.anInt6382, (this.y - -this.aShort8769));
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean10130, false);
-        if (Class305.aBoolean3870) aModel_10124.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
-        else aModel_10124.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+        if (Class305.aBoolean3870) aModel_10124.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+        else aModel_10124.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
         return class318_sub4;
     }
 
@@ -103,10 +103,10 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
         anInt10119++;
         Model model = method2488(131072, i_3_, var_ha);
         if (model != null) {
-            Class101 class101 = var_ha.method3705();
-            class101.method894(this.x, this.anInt6382, this.y);
-            if (Class305.aBoolean3870) return model.method623(i_2_, i, class101, false, 0, Class132.anInt1906);
-            return model.method628(i_2_, i, class101, false, 0);
+            Matrix matrix = var_ha.method3705();
+            matrix.method894(this.x, this.anInt6382, this.y);
+            if (Class305.aBoolean3870) return model.method623(i_2_, i, matrix, false, 0, Class132.anInt1906);
+            return model.method628(i_2_, i, matrix, false, 0);
         }
         return false;
     }

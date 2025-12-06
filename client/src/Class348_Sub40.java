@@ -51,7 +51,7 @@ abstract class Class348_Sub40 extends Node {
         Class318_Sub1_Sub3_Sub3.method2420(i_0_, i);
         Class348_Sub40_Sub12.objectTypeList.method2009(i_0_, (byte) 109);
         Exception_Sub1.itemTypeList.method1942(i_0_, (byte) -125);
-        Class189.npcTypeList.method2073(-25032, i_0_);
+        BillboardType.npcTypeList.method2073(-25032, i_0_);
         Class348_Sub40_Sub18.gfxTypeList.method2541(119, i_0_);
         Class367_Sub1.method3535(i_0_, ~i);
         Class269.method2040(i_0_, true);

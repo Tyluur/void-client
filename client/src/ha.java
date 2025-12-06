@@ -79,7 +79,7 @@ abstract class ha {
 
     abstract Class365 c();//c
 
-    abstract void method3638(Class101 class101);
+    abstract void method3638(Matrix matrix);
 
     abstract int[] na(int i, int i_23_, int i_24_, int i_25_);
 
@@ -89,7 +89,7 @@ abstract class ha {
 
     abstract boolean method3639();
 
-    abstract Class101 method3640();
+    abstract Matrix method3640();
 
     static final void method3641(int i, int i_35_, byte i_36_, int i_37_, int i_38_, int i_39_) {
         anInt4575++;
@@ -134,7 +134,7 @@ abstract class ha {
 
     abstract void method3653(Class299 class299);
 
-    abstract Class101 method3654();
+    abstract Matrix method3654();
 
     abstract int JA(int i, int i_63_, int i_64_, int i_65_, int i_66_, int i_67_);
 
@@ -346,7 +346,7 @@ abstract class ha {
 
     abstract int method3704();
 
-    abstract Class101 method3705();
+    abstract Matrix method3705();
 
     abstract int XA();
 

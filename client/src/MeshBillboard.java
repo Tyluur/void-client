@@ -7,7 +7,7 @@ final class MeshBillboard {
     static int anInt2152;
     int anInt2153;
     static int anInt2154;
-    int anInt2155;
+    int face;
     int anInt2156;
     static Class74 aClass74_2157 = new Class74(5, 16);
     int anInt2158;
@@ -27,7 +27,7 @@ final class MeshBillboard {
 
     MeshBillboard(int i, int i_1_, int i_2_, int i_3_) {
         this.anInt2156 = i_2_;
-        this.anInt2155 = i_1_;
+        this.face = i_1_;
         this.anInt2158 = i_3_;
         this.anInt2153 = i;
     }

@@ -21,8 +21,8 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
             anInt9674++;
             if (class277.anInt3569 == -1) {
                 if (class277.anInt3575 != -1) {
-                    Class12 class12 = var_ha.aD4579.method3(class277.anInt3575, -6662);
-                    if (!class12.aBoolean209) return class12.aShort208;
+                    TextureMetrics textureMetrics = var_ha.aD4579.getMetrics(class277.anInt3575, -6662);
+                    if (!textureMetrics.disableable) return textureMetrics.aShort208;
                 }
             } else return class277.anInt3569;
             if (i <= 123) return -68;

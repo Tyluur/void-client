@@ -33,7 +33,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
         Class270.anInt3465 = 1 << Class362.anInt4459;
         Class348_Sub23_Sub2.anInt9037 = Class270.anInt3465 >> 1;
         Math.sqrt((Class348_Sub23_Sub2.anInt9037 * Class348_Sub23_Sub2.anInt9037) + (Class348_Sub23_Sub2.anInt9037 * Class348_Sub23_Sub2.anInt9037));
-        Class189.anInt2524 = i_1_;
+        BillboardType.anInt2524 = i_1_;
         Class318_Sub7.anInt6451 = i_2_;
         Class348_Sub41.anInt7054 = i_3_;
         Class318_Sub1_Sub4_Sub1.anInt10084 = i_4_;

@@ -103,7 +103,7 @@ final class Class188 {
         Class362.floorUnderlayTypeList.method1383(i ^ 0x804c, 5);
         Class348_Sub40_Sub25.idkTypeList.method1207(-17452, 5);
         Class348_Sub40_Sub12.objectTypeList.method2010(5, i + -6);
-        Class189.npcTypeList.method2076(5, true);
+        BillboardType.npcTypeList.method2076(5, true);
         Exception_Sub1.itemTypeList.method1937(5, false);
         Class10.seqTypeList.method836(5, 93);
         Class348_Sub40_Sub18.gfxTypeList.method2544(5, (byte) -41);

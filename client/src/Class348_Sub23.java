@@ -118,8 +118,8 @@ abstract class Class348_Sub23 extends Node {
         Packet.method3354(i_1_ + -78);
         Class348_Sub8.aHa6654.method3650(10000);
         Class348_Sub8.aHa6654.X(32);
-        Class157.aClass101_2123 = Class348_Sub8.aHa6654.method3654();
-        Class50_Sub1.aClass101_5209 = Class348_Sub8.aHa6654.method3654();
+        Class157.aMatrix_2123 = Class348_Sub8.aHa6654.method3654();
+        Class50_Sub1.aMatrix_5209 = Class348_Sub8.aHa6654.method3654();
         Class290.method2196((byte) -9);
         Class348_Sub8.aHa6654.method3630(Class316.clientOptions.aClass239_Sub2_7228.method1726(-32350) == 1);
         if (Class348_Sub8.aHa6654.method3627()) Class348_Sub40_Sub33.method3137(Class316.clientOptions.aClass239_Sub12_7243.method1771(-32350) == 1, (byte) -24);

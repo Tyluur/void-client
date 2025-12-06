@@ -118,7 +118,7 @@ final class Class243 {
             Class147.aClass357ArrayArrayArray2029 = StructTypeList.aClass357ArrayArrayArray1148;
             aa_Sub1.aSArray5191 = Class348_Sub1_Sub1.aSArray8801;
         }
-        Class189.anInt2524 = Class147.aClass357ArrayArrayArray2029.length;
+        BillboardType.anInt2524 = Class147.aClass357ArrayArrayArray2029.length;
     }
 
     public Class243() {

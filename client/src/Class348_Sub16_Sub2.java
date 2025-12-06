@@ -74,7 +74,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
         }
     }
 
-    static final void method2832(int[] is, long[] ls, int i) {
+    static final void quickSort(int[] is, long[] ls, int i) {
         try {
             IOException_Sub1.method129(i, i + -107, ls, ls.length - 1, is);
             anInt8882++;

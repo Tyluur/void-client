@@ -19,7 +19,7 @@ final class Class139 {
         if (i == 1) {
             if (i_0_ < IDKTypeList.anInt2057) {
                 for (int i_1_ = i_0_; IDKTypeList.anInt2057 > i_1_; i_1_++)
-                    Class5_Sub1_Sub1.anIntArray9932[Class358.anInt4411++] = Class74.anIntArray1233[i_1_];
+                    Class5_Sub1_Sub1.anIntArray9932[TextureUniverse.anInt4411++] = Class74.anIntArray1233[i_1_];
             }
             if (i_0_ > IDKTypeList.anInt2057) throw new RuntimeException("gnpov1");
             IDKTypeList.anInt2057 = 0;
@@ -35,14 +35,14 @@ final class Class139 {
                     if (i_5_ == 0) {
                         Class74.anIntArray1233[IDKTypeList.anInt2057++] = i_3_;
                         npc.anInt10306 = Class348_Sub23_Sub3.anInt9041;
-                        Class13.anIntArray224[Class101.anInt1597++] = i_3_;
+                        Class13.anIntArray224[Matrix.anInt1597++] = i_3_;
                     } else if (i_5_ == 1) {
                         Class74.anIntArray1233[IDKTypeList.anInt2057++] = i_3_;
                         npc.anInt10306 = Class348_Sub23_Sub3.anInt9041;
                         int i_6_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 3);
                         npc.method2443(i_6_, 1, -10);
                         int i_7_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
-                        if (i_7_ == 1) Class13.anIntArray224[Class101.anInt1597++] = i_3_;
+                        if (i_7_ == 1) Class13.anIntArray224[Matrix.anInt1597++] = i_3_;
                     } else if (i_5_ == 2) {
                         Class74.anIntArray1233[IDKTypeList.anInt2057++] = i_3_;
                         npc.anInt10306 = Class348_Sub23_Sub3.anInt9041;
@@ -56,8 +56,8 @@ final class Class139 {
                             npc.method2443(i_8_, 0, i + -11);
                         }
                         int i_11_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
-                        if (i_11_ == 1) Class13.anIntArray224[Class101.anInt1597++] = i_3_;
-                    } else if (i_5_ == 3) Class5_Sub1_Sub1.anIntArray9932[Class358.anInt4411++] = i_3_;
+                        if (i_11_ == 1) Class13.anIntArray224[Matrix.anInt1597++] = i_3_;
+                    } else if (i_5_ == 3) Class5_Sub1_Sub1.anIntArray9932[TextureUniverse.anInt4411++] = i_3_;
                 }
             }
         }

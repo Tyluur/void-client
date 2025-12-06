@@ -887,7 +887,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class189.aClass114_2527 == Class348_Sub3.aClass114_6584) {
+        if (BillboardType.aClass114_2527 == Class348_Sub3.aClass114_6584) {
             boolean bool_108_ = (Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 1);
             byte[] is = new byte[Class348_Sub40_Sub25.anInt9341 - 1];
             Class299.aClass348_Sub49_Sub2_3813.method3389(2147483647, 0, (Class348_Sub40_Sub25.anInt9341) + -1, is);
@@ -939,7 +939,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class167.aClass114_2196 == Class348_Sub3.aClass114_6584) {
+        if (JavaThreadResource.aClass114_2196 == Class348_Sub3.aClass114_6584) {
             boolean bool_113_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 1;
             String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -81);
             String string_114_ = string;
@@ -1132,7 +1132,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 Option_Sub26.aClass54Array6114[i] = new Class54(Class299.aClass348_Sub49_Sub2_3813);
             }
             Class348_Sub3.aClass114_6584 = null;
-            Class189.anInt2523 = LoadingScreenRenderer.anInt3918;
+            BillboardType.anInt2523 = LoadingScreenRenderer.anInt3918;
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class110.aClass114_1702) {

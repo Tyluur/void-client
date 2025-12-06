@@ -509,7 +509,7 @@ final class Sprite_Sub2 extends Sprite {
         anInt8447 = 0;
         anInt8449 = 0;
         aHa_Sub2_8430 = var_ha_Sub2;
-        aClass258_Sub3_Sub1_8434 = Class101.method904(81, var_ha_Sub2, bool ? 6408 : 6407, i, i_105_);
+        aClass258_Sub3_Sub1_8434 = Matrix.method904(81, var_ha_Sub2, bool ? 6408 : 6407, i, i_105_);
     }
 
     Sprite_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_106_, int i_107_, int i_108_) {

@@ -538,7 +538,7 @@ final class Class325 {
                         Node.anInt4292 = 0;
                         Class178.anInt2336++;
                         Option_Sub20.anInt6048 = 2;
-                        Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class101_Sub1.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83);
+                        Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((JavaMatrix.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 86, (!Class182.aClass346_2449.method2696(82, -121) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(31, (int) (l >>> 32) & 0x7fffffff);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-104, za_Sub2.regionTileX + i_74_);
@@ -612,7 +612,7 @@ final class Class325 {
                         if (player != null) {
                             Node.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
-                            Class101.anInt1596++;
+                            Matrix.anInt1596++;
                             Option_Sub20.anInt6048 = 2;
                             Class26.anInt385 = i_73_;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class299_Sub1_Sub2.aClass351_8706), (Class348_Sub23_Sub2.aClass77_9029), -84);

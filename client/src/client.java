@@ -212,7 +212,7 @@ public final class client extends Applet_Sub1 {
         Applet_Sub1.method98(i + 32609);
         Class241.method1860((byte) -89);
         Class231.method1641((byte) 85);
-        Class101.method906(-31777);
+        Matrix.method906(-31777);
         ha.method3680(-24016);
         ClientOptions.method3430(false);
         SystemInfo.method2748(-86);
@@ -463,7 +463,7 @@ public final class client extends Applet_Sub1 {
         Class339.method2664(i ^ 0x6f);
         Class348_Sub42_Sub5.method3187((byte) -52);
         Class117.method1064(-3);
-        Class189.method1421((byte) -85);
+        BillboardType.method1421((byte) -85);
         Class348_Sub42_Sub11.method3220((byte) 102);
         if (i != 108) anInt5171 = -60;
         Class348_Sub23.method2962(-31055);
@@ -543,8 +543,8 @@ public final class client extends Applet_Sub1 {
         Class348_Sub46.method3318((byte) -80);
         Class348_Sub31.method3010(-1316);
         Class49.method453(-2001);
-        Class101_Sub1.method911(0);
-        Class167.method1293(1);
+        JavaMatrix.method911(0);
+        JavaThreadResource.method1293(1);
         ha_Sub2.method3736((byte) 100);
         Class354.method3468(-1401);
         Class100.method886(16);
@@ -611,7 +611,7 @@ public final class client extends Applet_Sub1 {
         Class348_Sub25.method2996();
         Class216.method1584((byte) -64);
         aa_Sub3.method167(19612);
-        Class6.method208((byte) 0);
+        JavaBillboardFace.method208((byte) 0);
         Class348_Sub31_Sub2.method3016(65280);
         Class348_Sub1_Sub2.method2731((byte) -23);
         Class11.method221(0);
@@ -695,7 +695,7 @@ public final class client extends Applet_Sub1 {
         InputStream_Sub2.method127((byte) 118);
         OutputStream_Sub2.method139(88);
         Class126.method1112(1);
-        Class358.method3488(64);
+        TextureUniverse.method3488(64);
         Class348_Sub42_Sub4.method3181((byte) 2);
         Class348_Sub7.method2773(0);
         Class348_Sub12.method2798(122);
@@ -1248,7 +1248,7 @@ public final class client extends Applet_Sub1 {
                                     } else {
                                         if (Class348_Sub42.anInt7059 > 0 && !Class348_Sub17.aBoolean6788) {
                                             if (((Class318_Sub1_Sub5.anInt8770 == 1) || Class318_Sub1_Sub5.method2485(-124)) && Class73.anInt4776 > 2) Class5_Sub2.method191(true, Class318_Sub4.anInt6411, HitmarkTypeList.anInt2872);
-                                            else if (Class101_Sub1.method913((byte) 117)) Class5_Sub2.method191(true, Class318_Sub4.anInt6411, HitmarkTypeList.anInt2872);
+                                            else if (JavaMatrix.method913((byte) 117)) Class5_Sub2.method191(true, Class318_Sub4.anInt6411, HitmarkTypeList.anInt2872);
                                         }
                                         Class348_Sub42.anInt7059 = 0;
                                     }
@@ -1477,7 +1477,7 @@ public final class client extends Applet_Sub1 {
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray761;
                                 Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
                             }
-                            if ((Class189.anInt2523 > class46.anInt726) && (class46.anObjectArray807 != null)) {
+                            if ((BillboardType.anInt2523 > class46.anInt726) && (class46.anObjectArray807 != null)) {
                                 Class348_Sub36 class348_sub36 = new Class348_Sub36();
                                 class348_sub36.aClass46_6989 = class46;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray807;
@@ -1646,7 +1646,7 @@ public final class client extends Applet_Sub1 {
             if (Class348_Sub40_Sub21.anInt9282 == 2) Class14_Sub1.method241((byte) 127);
             else Class348_Sub21.method2954((byte) -127);
             if (Class286_Sub4.anInt6246 >> 9 < 14 || (Class286_Sub4.anInt6246 >> 9 >= -14 + Class367_Sub4.mapLength) || (Class59_Sub2_Sub2.anInt8685 >> 9 < 14) || (Class348_Sub40_Sub3.mapWidth + -14 <= Class59_Sub2_Sub2.anInt8685 >> 9))
-                Class101.method893((byte) -49);
+                Matrix.method893((byte) -49);
         }
         if (i != 112) anInt5171 = 22;
         for (; ; ) {
@@ -1682,7 +1682,7 @@ public final class client extends Applet_Sub1 {
         if (Class289.aClass46_3701 != null) Class347.method2708(-30206);
         if (Class367_Sub11.anInt7396 % 1500 == 0) Class348_Sub40_Sub16.method3088(9);
         if (Class240.mainLogicStep == 7 && Class225.anInt2955 == 0) BASTypeList.method1987(-124);
-        Class101.method909(3553);
+        Matrix.method909(3553);
         if (Class184.aBoolean2469 && (Class34.aLong482 < Class62.safeTime(-107) + -60000L)) Class318_Sub1_Sub2.method2405(41);
         for (Class318_Sub9_Sub1 class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1872(8)); class318_sub9_sub1 != null; class318_sub9_sub1 = (Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1878((byte) -43)) {
             if ((long) class318_sub9_sub1.anInt8787 < -5L + Class62.safeTime(-80) / 1000L) {
@@ -1955,7 +1955,7 @@ public final class client extends Applet_Sub1 {
                     else Class348_Sub8.aHa6654.method3668(rectangle.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40);
                 }
             }
-            if (Class348_Sub42_Sub16_Sub2.method3263(bool)) Class6.method207(Class348_Sub8.aHa6654, (byte) 124);
+            if (Class348_Sub42_Sub16_Sub2.method3263(bool)) JavaBillboardFace.method207(Class348_Sub8.aHa6654, (byte) 124);
             if (Class348_Sub23_Sub1.aClass297_8992.aBoolean3794 && Class260.method1977((byte) -79, Class240.mainLogicStep) && ha_Sub3.anInt8045 == 0 && Class348_Sub42_Sub12.method3229(-85) == 1 && !bool_120_) {
                 int i = 0;
                 for (int i_121_ = 0; (Class348_Sub38.anInt7008 > i_121_); i_121_++) {

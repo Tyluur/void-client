@@ -8,7 +8,8 @@ interface TextureSource {
 
     int method2(boolean bool);
 
-    Class12 method3(int i, int i_3_);
+    // method3
+    TextureMetrics getMetrics(int i, int i_3_);
 
     boolean method4(int i, int i_4_);
 

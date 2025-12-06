@@ -62,7 +62,7 @@ final class Class348_Sub46 extends Node {
     static final Class357 method3321(int i, int i_2_, int i_3_) {
         if (Class147.aClass357ArrayArrayArray2029[i][i_2_][i_3_] == null) {
             boolean bool = (Class147.aClass357ArrayArrayArray2029[0][i_2_][i_3_] != null && Class147.aClass357ArrayArrayArray2029[0][i_2_][i_3_].aClass357_4400 != null);
-            if (bool && i >= Class189.anInt2524 - 1) return null;
+            if (bool && i >= BillboardType.anInt2524 - 1) return null;
             LightTypeList.method1394(i, i_2_, i_3_);
         }
         return Class147.aClass357ArrayArrayArray2029[i][i_2_][i_3_];

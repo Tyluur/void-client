@@ -20,19 +20,19 @@ final class ha_Sub1 extends ha {
     int anInt7477;
     int anInt7478;
     int anInt7479;
-    private Class167[] aClass167Array7480;
+    private JavaThreadResource[] aJavaThreadResourceArray7480;
     private int anInt7481;
-    int anInt7482;
+    int zNear;
     int[] anIntArray7483;
     int anInt7484;
-    int anInt7485;
+    int threadCount;
     private int anInt7486;
     private int anInt7487;
     private int anInt7488;
     private boolean aBoolean7489;
     int anInt7490;
     int anInt7491;
-    Class101_Sub1 camera;
+    JavaMatrix camera;
     private int anInt7493;
     int anInt7494;
     private int anInt7495;
@@ -82,9 +82,9 @@ final class ha_Sub1 extends ha {
     }
 
     final void pa() {
-        for (int i = 0; i < aClass167Array7480.length; i++) {
-            aClass167Array7480[i].anInt2192 = aClass167Array7480[i].anInt2205;
-            aClass167Array7480[i].aBoolean2195 = false;
+        for (int i = 0; i < aJavaThreadResourceArray7480.length; i++) {
+            aJavaThreadResourceArray7480[i].anInt2192 = aJavaThreadResourceArray7480[i].anInt2205;
+            aJavaThreadResourceArray7480[i].aBoolean2195 = false;
         }
     }
 
@@ -240,7 +240,7 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3685(Class98 class98, int i) {
-        Class167 class167 = method3724(Thread.currentThread());
+        JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
         Class318_Sub9 class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503);
         for (Class318_Sub9 class318_sub9_65_ = class318_sub9.aClass318_Sub9_6469; class318_sub9_65_ != class318_sub9; class318_sub9_65_ = class318_sub9_65_.aClass318_Sub9_6469) {
             Class318_Sub9_Sub2 class318_sub9_sub2 = (Class318_Sub9_Sub2) class318_sub9_65_;
@@ -248,7 +248,7 @@ final class ha_Sub1 extends ha {
             int i_67_ = class318_sub9_sub2.anInt8796 >> 12;
             int i_68_ = class318_sub9_sub2.anInt8789 >> 12;
             float f = ((this.camera.aFloat5681) + ((this.camera.aFloat5662) * (float) i_66_ + (this.camera.aFloat5680) * (float) i_67_ + (this.camera.aFloat5664) * (float) i_68_));
-            if (!(f < (float) this.anInt7482) && !(f > (float) class167.anInt2210)) {
+            if (!(f < (float) this.zNear) && !(f > (float) javaThreadResource.anInt2210)) {
                 int i_69_ = (this.anInt7510 + (int) ((float) this.anInt7491 * ((this.camera.aFloat5686) + ((this.camera.aFloat5672) * (float) i_66_ + (this.camera.aFloat5673) * (float) i_67_ + (this.camera.aFloat5669) * (float) i_68_)) / (float) i));
                 int i_70_ = (this.anInt7504 + (int) ((float) this.anInt7497 * ((this.camera.aFloat5685) + ((this.camera.aFloat5655) * (float) i_66_ + (this.camera.aFloat5678) * (float) i_67_ + (this.camera.aFloat5666) * (float) i_68_)) / (float) i));
                 if (i_69_ >= this.anInt7496 && i_69_ <= this.anInt7507 && i_70_ >= this.anInt7476 && i_70_ <= this.anInt7503) {
@@ -314,12 +314,12 @@ final class ha_Sub1 extends ha {
     }
 
     final void ra(int i, int i_87_, int i_88_, int i_89_) {
-        for (int i_90_ = 0; i_90_ < aClass167Array7480.length; i_90_++) {
-            aClass167Array7480[i_90_].anInt2205 = aClass167Array7480[i_90_].anInt2192;
-            aClass167Array7480[i_90_].anInt2211 = i;
-            aClass167Array7480[i_90_].anInt2192 = i_87_;
-            aClass167Array7480[i_90_].anInt2197 = i_88_;
-            aClass167Array7480[i_90_].aBoolean2195 = true;
+        for (int i_90_ = 0; i_90_ < aJavaThreadResourceArray7480.length; i_90_++) {
+            aJavaThreadResourceArray7480[i_90_].anInt2205 = aJavaThreadResourceArray7480[i_90_].anInt2192;
+            aJavaThreadResourceArray7480[i_90_].anInt2211 = i;
+            aJavaThreadResourceArray7480[i_90_].anInt2192 = i_87_;
+            aJavaThreadResourceArray7480[i_90_].anInt2197 = i_88_;
+            aJavaThreadResourceArray7480[i_90_].aBoolean2195 = true;
         }
     }
 
@@ -356,32 +356,32 @@ final class ha_Sub1 extends ha {
         this.anInt7508 = this.anInt7507 - this.anInt7510;
         this.anInt7490 = this.anInt7476 - this.anInt7504;
         this.anInt7506 = this.anInt7503 - this.anInt7504;
-        for (int i = 0; i < this.anInt7485; i++) {
-            Class109 class109 = aClass167Array7480[i].aClass109_2220;
-            class109.anInt1665 = this.anInt7510 - this.anInt7496;
-            class109.anInt1668 = this.anInt7504 - this.anInt7476;
-            class109.anInt1679 = this.anInt7507 - this.anInt7496;
-            class109.anInt1672 = this.anInt7503 - this.anInt7476;
+        for (int i = 0; i < this.threadCount; i++) {
+            Rasterizer rasterizer = aJavaThreadResourceArray7480[i].aRasterizer_2220;
+            rasterizer.minX = this.anInt7510 - this.anInt7496;
+            rasterizer.minY = this.anInt7504 - this.anInt7476;
+            rasterizer.width = this.anInt7507 - this.anInt7496;
+            rasterizer.anInt1672 = this.anInt7503 - this.anInt7476;
         }
         int i = (this.anInt7476 * this.anInt7477 + this.anInt7496);
         for (int i_97_ = this.anInt7476; i_97_ < this.anInt7503; i_97_++) {
-            for (int i_98_ = 0; i_98_ < this.anInt7485; i_98_++)
-                aClass167Array7480[i_98_].aClass109_2220.anIntArray1676[i_97_ - this.anInt7476] = i;
+            for (int i_98_ = 0; i_98_ < this.threadCount; i_98_++)
+                aJavaThreadResourceArray7480[i_98_].aRasterizer_2220.anIntArray1676[i_97_ - this.anInt7476] = i;
             i += this.anInt7477;
         }
     }
 
     final int i() {
-        return this.anInt7482;
+        return this.zNear;
     }
 
-    final Class101 method3705() {
-        Class167 class167 = method3724(Thread.currentThread());
-        return class167.aClass101_Sub1_2209;
+    final Matrix method3705() {
+        JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
+        return javaThreadResource.aJavaMatrix_2209;
     }
 
     final boolean method3714(int i) {
-        return this.aD4579.method3(i, -6662).aBoolean217 || this.aD4579.method3(i, -6662).aBoolean215;
+        return this.aD4579.getMetrics(i, -6662).aBoolean217 || this.aD4579.getMetrics(i, -6662).aBoolean215;
     }
 
     final void Q(int i, int i_99_, int i_100_, int i_101_, int i_102_, int i_103_, byte[] is, int i_104_, int i_105_) {
@@ -491,8 +491,8 @@ final class ha_Sub1 extends ha {
         /* empty */
     }
 
-    final void method3638(Class101 class101) {
-        this.camera = (Class101_Sub1) class101;
+    final void method3638(Matrix matrix) {
+        this.camera = (JavaMatrix) matrix;
     }
 
     final void A(int i, aa var_aa, int i_145_, int i_146_) {
@@ -531,10 +531,10 @@ final class ha_Sub1 extends ha {
     }
 
     final void f(int i, int i_156_) {
-        Class167 class167 = method3724(Thread.currentThread());
-        this.anInt7482 = i;
+        JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
+        this.zNear = i;
         this.anInt7494 = i_156_;
-        class167.anInt2210 = this.anInt7494 - 255;
+        javaThreadResource.anInt2210 = this.anInt7494 - 255;
     }
 
     private final void method3715(int i, int i_157_, int i_158_, int i_159_, int i_160_, int i_161_, int i_162_, int i_163_) {
@@ -669,7 +669,7 @@ final class ha_Sub1 extends ha {
 
     final void HA(int i, int i_200_, int i_201_, int i_202_, int[] is) {
         float f = ((this.camera.aFloat5681) + ((this.camera.aFloat5662) * (float) i + (this.camera.aFloat5680) * (float) i_200_ + (this.camera.aFloat5664) * (float) i_201_));
-        if (f >= (float) this.anInt7482 && f <= (float) this.anInt7494) {
+        if (f >= (float) this.zNear && f <= (float) this.anInt7494) {
             int i_203_ = (int) ((float) this.anInt7491 * (this.camera.aFloat5686 + ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673) * (float) i_200_ + (this.camera.aFloat5669) * (float) i_201_)) / (float) i_202_);
             int i_204_ = (int) ((float) this.anInt7497 * (this.camera.aFloat5685 + ((this.camera.aFloat5655) * (float) i + (this.camera.aFloat5678) * (float) i_200_ + (this.camera.aFloat5666) * (float) i_201_)) / (float) i_202_);
             if (i_203_ >= this.anInt7509 && i_203_ <= this.anInt7508 && i_204_ >= this.anInt7490 && i_204_ <= this.anInt7506) {
@@ -689,7 +689,7 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3684(Class98 class98) {
-        Class167 class167 = method3724(Thread.currentThread());
+        JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
         Class318_Sub9 class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503);
         for (Class318_Sub9 class318_sub9_208_ = class318_sub9.aClass318_Sub9_6469; class318_sub9_208_ != class318_sub9; class318_sub9_208_ = class318_sub9_208_.aClass318_Sub9_6469) {
             Class318_Sub9_Sub2 class318_sub9_sub2 = (Class318_Sub9_Sub2) class318_sub9_208_;
@@ -697,7 +697,7 @@ final class ha_Sub1 extends ha {
             int i_209_ = class318_sub9_sub2.anInt8796 >> 12;
             int i_210_ = class318_sub9_sub2.anInt8789 >> 12;
             float f = ((this.camera.aFloat5681) + ((this.camera.aFloat5662) * (float) i + (this.camera.aFloat5680) * (float) i_209_ + (this.camera.aFloat5664) * (float) i_210_));
-            if (!(f < (float) this.anInt7482) && !(f > (float) class167.anInt2210)) {
+            if (!(f < (float) this.zNear) && !(f > (float) javaThreadResource.anInt2210)) {
                 int i_211_ = (this.anInt7510 + (int) ((float) this.anInt7491 * ((this.camera.aFloat5686) + ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673) * (float) i_209_ + (this.camera.aFloat5669) * (float) i_210_)) / f));
                 int i_212_ = (this.anInt7504 + (int) ((float) this.anInt7497 * ((this.camera.aFloat5685) + ((this.camera.aFloat5655) * (float) i + (this.camera.aFloat5678) * (float) i_209_ + (this.camera.aFloat5666) * (float) i_210_)) / f));
                 if (i_211_ >= this.anInt7496 && i_211_ <= this.anInt7507 && i_212_ >= this.anInt7476 && i_212_ <= this.anInt7503) {
@@ -727,8 +727,8 @@ final class ha_Sub1 extends ha {
     }
 
     private final void method3717() {
-        for (int i = 0; i < this.anInt7485; i++)
-            aClass167Array7480[i].method1292(64);
+        for (int i = 0; i < this.threadCount; i++)
+            aJavaThreadResourceArray7480[i].method1292(64);
         la();
     }
 
@@ -755,17 +755,17 @@ final class ha_Sub1 extends ha {
     }
 
     final void L(int i, int i_226_, int i_227_) {
-        for (int i_228_ = 0; i_228_ < aClass167Array7480.length; i_228_++) {
-            Class167 class167 = aClass167Array7480[i_228_];
-            class167.anInt2192 = i & 0xffffff;
-            int i_229_ = class167.anInt2192 >>> 16 & 0xff;
+        for (int i_228_ = 0; i_228_ < aJavaThreadResourceArray7480.length; i_228_++) {
+            JavaThreadResource javaThreadResource = aJavaThreadResourceArray7480[i_228_];
+            javaThreadResource.anInt2192 = i & 0xffffff;
+            int i_229_ = javaThreadResource.anInt2192 >>> 16 & 0xff;
             if (i_229_ < 2) i_229_ = 2;
-            int i_230_ = class167.anInt2192 >> 8 & 0xff;
+            int i_230_ = javaThreadResource.anInt2192 >> 8 & 0xff;
             if (i_230_ < 2) i_230_ = 2;
-            int i_231_ = class167.anInt2192 & 0xff;
+            int i_231_ = javaThreadResource.anInt2192 & 0xff;
             if (i_231_ < 2) i_231_ = 2;
-            class167.anInt2192 = i_229_ << 16 | i_230_ << 8 | i_231_;
-            class167.aBoolean2201 = i_226_ >= 0;
+            javaThreadResource.anInt2192 = i_229_ << 16 | i_230_ << 8 | i_231_;
+            javaThreadResource.aBoolean2201 = i_226_ >= 0;
         }
     }
 
@@ -804,10 +804,10 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3631(int i) {
-        this.anInt7485 = i;
-        aClass167Array7480 = new Class167[this.anInt7485];
-        for (int i_240_ = 0; i_240_ < this.anInt7485; i_240_++)
-            aClass167Array7480[i_240_] = new Class167(this);
+        this.threadCount = i;
+        aJavaThreadResourceArray7480 = new JavaThreadResource[this.threadCount];
+        for (int i_240_ = 0; i_240_ < this.threadCount; i_240_++)
+            aJavaThreadResourceArray7480[i_240_] = new JavaThreadResource(this);
     }
 
     final void method3709(int i, int i_241_, int i_242_, int i_243_, int i_244_, int i_245_) {
@@ -926,31 +926,31 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3676(int i, int i_270_, int i_271_, int i_272_, int i_273_, int i_274_, int i_275_, int i_276_, int i_277_, int i_278_, int i_279_, int i_280_, int i_281_) {
-        Class167 class167 = method3724(Thread.currentThread());
-        Class109 class109 = class167.aClass109_2220;
-        class109.aBoolean1669 = false;
+        JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
+        Rasterizer rasterizer = javaThreadResource.aRasterizer_2220;
+        rasterizer.aBoolean1669 = false;
         i -= this.anInt7509;
         i_272_ -= this.anInt7509;
         i_275_ -= this.anInt7509;
         i_270_ -= this.anInt7490;
         i_273_ -= this.anInt7490;
         i_276_ -= this.anInt7490;
-        class109.aBoolean1671 = (i < 0 || i > class109.anInt1679 || i_272_ < 0 || i_272_ > class109.anInt1679 || i_275_ < 0 || i_275_ > class109.anInt1679);
+        rasterizer.aBoolean1671 = (i < 0 || i > rasterizer.width || i_272_ < 0 || i_272_ > rasterizer.width || i_275_ < 0 || i_275_ > rasterizer.width);
         int i_282_ = i_278_ >>> 24;
         if (i_281_ == 0 || i_281_ == 1 && i_282_ == 255) {
-            class109.alpha = 0;
-            class109.aBoolean1667 = false;
-            class109.method1027((float) i_270_, (float) i_273_, (float) i_276_, (float) i, (float) i_272_, (float) i_275_, (float) i_271_, (float) i_274_, (float) i_277_, i_278_, i_279_, i_280_);
+            rasterizer.alpha = 0;
+            rasterizer.aBoolean1667 = false;
+            rasterizer.method1027((float) i_270_, (float) i_273_, (float) i_276_, (float) i, (float) i_272_, (float) i_275_, (float) i_271_, (float) i_274_, (float) i_277_, i_278_, i_279_, i_280_);
         } else if (i_281_ == 1) {
-            class109.alpha = 255 - i_282_;
-            class109.aBoolean1667 = false;
-            class109.method1027((float) i_270_, (float) i_273_, (float) i_276_, (float) i, (float) i_272_, (float) i_275_, (float) i_271_, (float) i_274_, (float) i_277_, i_278_, i_279_, i_280_);
+            rasterizer.alpha = 255 - i_282_;
+            rasterizer.aBoolean1667 = false;
+            rasterizer.method1027((float) i_270_, (float) i_273_, (float) i_276_, (float) i, (float) i_272_, (float) i_275_, (float) i_271_, (float) i_274_, (float) i_277_, i_278_, i_279_, i_280_);
         } else if (i_281_ == 2) {
-            class109.alpha = 128;
-            class109.aBoolean1667 = true;
-            class109.method1027((float) i_270_, (float) i_273_, (float) i_276_, (float) i, (float) i_272_, (float) i_275_, (float) i_271_, (float) i_274_, (float) i_277_, i_278_, i_279_, i_280_);
+            rasterizer.alpha = 128;
+            rasterizer.aBoolean1667 = true;
+            rasterizer.method1027((float) i_270_, (float) i_273_, (float) i_276_, (float) i, (float) i_272_, (float) i_275_, (float) i_271_, (float) i_274_, (float) i_277_, i_278_, i_279_, i_280_);
         } else throw new IllegalArgumentException();
-        class109.aBoolean1669 = true;
+        rasterizer.aBoolean1669 = true;
     }
 
     final FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
@@ -975,8 +975,8 @@ final class ha_Sub1 extends ha {
     }
 
     final void C(boolean bool) {
-        Class167 class167 = method3724(Thread.currentThread());
-        class167.aBoolean2202 = bool;
+        JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
+        javaThreadResource.aBoolean2202 = bool;
     }
 
     final void method3636(int i, int i_285_, int i_286_, int i_287_, int i_288_, int i_289_, aa var_aa, int i_290_, int i_291_) {
@@ -1192,9 +1192,9 @@ final class ha_Sub1 extends ha {
             class348_sub25 = (Class348_Sub25) aClass60_7498.method583(i, 77);
             if (class348_sub25 == null) {
                 if (!this.aD4579.method4(-7953, i)) return null;
-                Class12 class12 = this.aD4579.method3(i, -6662);
-                int i_354_ = (class12.aBoolean199 || aBoolean7489 ? 64 : this.anInt7501);
-                class348_sub25 = new Class348_Sub25(i, i_354_, this.aD4579.method5(true, i, 0.7F, i_354_, i_354_, 71), class12.anInt200 != 1);
+                TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+                int i_354_ = (textureMetrics.aBoolean199 || aBoolean7489 ? 64 : this.anInt7501);
+                class348_sub25 = new Class348_Sub25(i, i_354_, this.aD4579.method5(true, i, 0.7F, i_354_, i_354_, 71), textureMetrics.alphaBlendMode != 1);
                 aClass60_7498.method582(class348_sub25, i, (byte) -122);
             }
         }
@@ -1215,7 +1215,7 @@ final class ha_Sub1 extends ha {
         aBoolean7470 = true;
     }
 
-    final Class101 method3640() {
+    final Matrix method3640() {
         return this.camera;
     }
 
@@ -1237,9 +1237,9 @@ final class ha_Sub1 extends ha {
             class348_sub25 = ((Class348_Sub25) aClass60_7498.method583((long) i | ~0x7fffffffffffffffL, 107));
             if (class348_sub25 == null) {
                 if (!this.aD4579.method4(-7953, i)) return null;
-                Class12 class12 = this.aD4579.method3(i, -6662);
-                int i_356_ = (class12.aBoolean199 || aBoolean7489 ? 64 : this.anInt7501);
-                class348_sub25 = new Class348_Sub25(i, i_356_, this.aD4579.method6(-21540, i_356_, 0.7F, i, true, i_356_), class12.anInt200 != 1);
+                TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+                int i_356_ = (textureMetrics.aBoolean199 || aBoolean7489 ? 64 : this.anInt7501);
+                class348_sub25 = new Class348_Sub25(i, i_356_, this.aD4579.method6(-21540, i_356_, 0.7F, i, true, i_356_), textureMetrics.alphaBlendMode != 1);
                 aClass60_7498.method582(class348_sub25, (long) i | ~0x7fffffffffffffffL, (byte) -126);
             }
         }
@@ -1263,8 +1263,8 @@ final class ha_Sub1 extends ha {
         }
     }
 
-    final Class101 method3654() {
-        return new Class101_Sub1();
+    final Matrix method3654() {
+        return new JavaMatrix();
     }
 
     final void la() {
@@ -1325,7 +1325,7 @@ final class ha_Sub1 extends ha {
 
     final void method3720(int i, int i_377_, int i_378_, int i_379_, int i_380_, int i_381_, int i_382_, int i_383_, int i_384_, int i_385_) {
         if (i_379_ != 0 && i_380_ != 0) {
-            if (i_382_ != 65535 && !(this.aD4579.method3(i_382_, -6662).aBoolean209)) {
+            if (i_382_ != 65535 && !(this.aD4579.getMetrics(i_382_, -6662).disableable)) {
                 if (anInt7512 != i_382_) {
                     Sprite sprite = ((Sprite) aClass60_7499.method583(i_382_, 97));
                     if (sprite == null) {
@@ -1348,10 +1348,10 @@ final class ha_Sub1 extends ha {
     }
 
     final void EA(int i, int i_387_, int i_388_, int i_389_) {
-        Class167 class167 = method3724(Thread.currentThread());
-        class167.anInt2211 = i;
-        class167.anInt2192 = i_387_;
-        class167.anInt2197 = i_388_;
+        JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
+        javaThreadResource.anInt2211 = i;
+        javaThreadResource.anInt2192 = i_387_;
+        javaThreadResource.anInt2197 = i_388_;
     }
 
     private final void method3721(int i, int i_390_, int i_391_, int i_392_, int i_393_, int i_394_, int i_395_, int i_396_) {
@@ -1438,7 +1438,7 @@ final class ha_Sub1 extends ha {
         if (f < 1.0F) f = 1.0F;
         float f_417_ = ((this.camera.aFloat5662) * (float) i_413_ + (this.camera.aFloat5680) * (float) i_414_ + (this.camera.aFloat5664) * (float) i_415_ + (this.camera.aFloat5681));
         if (f_417_ < 1.0F) f_417_ = 1.0F;
-        if (f < (float) this.anInt7482 && f_417_ < (float) this.anInt7482) i_416_ |= 0x10;
+        if (f < (float) this.zNear && f_417_ < (float) this.zNear) i_416_ |= 0x10;
         else if (f > (float) this.anInt7494 && f_417_ > (float) this.anInt7494) i_416_ |= 0x20;
         int i_418_ = (int) ((float) this.anInt7491 * ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673 * (float) i_411_) + (this.camera.aFloat5669 * (float) i_412_) + this.camera.aFloat5686) / f);
         int i_419_ = (int) ((float) this.anInt7491 * ((this.camera.aFloat5672) * (float) i_413_ + (this.camera.aFloat5673 * (float) i_414_) + (this.camera.aFloat5669 * (float) i_415_) + this.camera.aFloat5686) / f_417_);
@@ -1452,7 +1452,7 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3678(int i) {
-        aClass167Array7480[i].method1291(10000, null);
+        aJavaThreadResourceArray7480[i].method1291(10000, null);
     }
 
     final void method3672() {
@@ -1476,7 +1476,7 @@ final class ha_Sub1 extends ha {
     }
 
     final int method3722(int i) {
-        return (this.aD4579.method3(i, -6662).aShort208 & 0xffff);
+        return (this.aD4579.getMetrics(i, -6662).aShort208 & 0xffff);
     }
 
     final boolean method3699() {
@@ -1700,8 +1700,8 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3688(int i, int i_494_, int i_495_, int i_496_, int i_497_, int i_498_, int i_499_) {
-        Class167 class167 = method3724(Thread.currentThread());
-        Class109 class109 = class167.aClass109_2220;
+        JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
+        Rasterizer rasterizer = javaThreadResource.aRasterizer_2220;
         int i_500_ = i_495_ - i;
         int i_501_ = i_496_ - i_494_;
         int i_502_ = i_500_ >= 0 ? i_500_ : -i_500_;
@@ -1719,8 +1719,8 @@ final class ha_Sub1 extends ha {
             int i_508_ = i_498_ * i_506_ + 1 >> 17;
             int i_509_ = i_498_ * i_505_ >> 17;
             int i_510_ = i_498_ * i_505_ + 1 >> 17;
-            i -= class109.method1028();
-            i_494_ -= class109.method1017();
+            i -= rasterizer.method1028();
+            i_494_ -= rasterizer.method1017();
             int i_511_ = i + i_507_;
             int i_512_ = i - i_508_;
             int i_513_ = i + i_500_ - i_508_;
@@ -1729,14 +1729,14 @@ final class ha_Sub1 extends ha {
             int i_516_ = i_494_ - i_510_;
             int i_517_ = i_494_ + i_501_ - i_510_;
             int i_518_ = i_494_ + i_501_ + i_509_;
-            if (i_499_ == 0) class109.alpha = 0;
-            else if (i_499_ == 1) class109.alpha = 255 - (i_497_ >>> 24);
+            if (i_499_ == 0) rasterizer.alpha = 0;
+            else if (i_499_ == 1) rasterizer.alpha = 255 - (i_497_ >>> 24);
             else throw new IllegalArgumentException();
             C(false);
-            class109.aBoolean1671 = (i_511_ < 0 || i_511_ > class109.anInt1679 || i_512_ < 0 || i_512_ > class109.anInt1679 || i_513_ < 0 || i_513_ > class109.anInt1679);
-            class109.method1018((float) i_515_, (float) i_516_, (float) i_517_, (float) i_511_, (float) i_512_, (float) i_513_, 100.0F, 100.0F, 100.0F, i_497_);
-            class109.aBoolean1671 = (i_511_ < 0 || i_511_ > class109.anInt1679 || i_513_ < 0 || i_513_ > class109.anInt1679 || i_514_ < 0 || i_514_ > class109.anInt1679);
-            class109.method1018((float) i_515_, (float) i_517_, (float) i_518_, (float) i_511_, (float) i_513_, (float) i_514_, 100.0F, 100.0F, 100.0F, i_497_);
+            rasterizer.aBoolean1671 = (i_511_ < 0 || i_511_ > rasterizer.width || i_512_ < 0 || i_512_ > rasterizer.width || i_513_ < 0 || i_513_ > rasterizer.width);
+            rasterizer.method1018((float) i_515_, (float) i_516_, (float) i_517_, (float) i_511_, (float) i_512_, (float) i_513_, 100.0F, 100.0F, 100.0F, i_497_);
+            rasterizer.aBoolean1671 = (i_511_ < 0 || i_511_ > rasterizer.width || i_513_ < 0 || i_513_ > rasterizer.width || i_514_ < 0 || i_514_ > rasterizer.width);
+            rasterizer.method1018((float) i_515_, (float) i_517_, (float) i_518_, (float) i_511_, (float) i_513_, (float) i_514_, 100.0F, 100.0F, 100.0F, i_497_);
             C(true);
         }
     }
@@ -1753,8 +1753,8 @@ final class ha_Sub1 extends ha {
 
     final void method3650(int i) {
         JavaModel.anInt5346 = JavaModel.anInt5350 = i;
-        if (this.anInt7485 > 1) throw new IllegalStateException("No MT");
-        method3631(this.anInt7485);
+        if (this.threadCount > 1) throw new IllegalStateException("No MT");
+        method3631(this.threadCount);
         method3659(0);
     }
 
@@ -1907,9 +1907,9 @@ final class ha_Sub1 extends ha {
         } else throw new IllegalArgumentException();
     }
 
-    final Class167 method3724(Runnable runnable) {
-        for (int i = 0; i < this.anInt7485; i++) {
-            if (aClass167Array7480[i].aRunnable2198 == runnable) return aClass167Array7480[i];
+    final JavaThreadResource method3724(Runnable runnable) {
+        for (int i = 0; i < this.threadCount; i++) {
+            if (aJavaThreadResourceArray7480[i].aRunnable2198 == runnable) return aJavaThreadResourceArray7480[i];
         }
         return null;
     }
@@ -1970,7 +1970,7 @@ final class ha_Sub1 extends ha {
         float f = ((this.camera.aFloat5662) * (float) i + (this.camera.aFloat5680) * (float) i_579_ + (this.camera.aFloat5664) * (float) i_580_ + (this.camera.aFloat5681));
         float f_585_ = ((this.camera.aFloat5662) * (float) i_581_ + (this.camera.aFloat5680) * (float) i_582_ + (this.camera.aFloat5664) * (float) i_583_ + (this.camera.aFloat5681));
         int i_586_ = 0;
-        if (f < (float) this.anInt7482 && f_585_ < (float) this.anInt7482) i_586_ |= 0x10;
+        if (f < (float) this.zNear && f_585_ < (float) this.zNear) i_586_ |= 0x10;
         else if (f > (float) this.anInt7494 && f_585_ > (float) this.anInt7494) i_586_ |= 0x20;
         int i_587_ = (int) ((float) this.anInt7491 * ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673 * (float) i_579_) + (this.camera.aFloat5669 * (float) i_580_) + this.camera.aFloat5686) / (float) i_584_);
         int i_588_ = (int) ((float) this.anInt7491 * ((this.camera.aFloat5672) * (float) i_581_ + (this.camera.aFloat5673 * (float) i_582_) + (this.camera.aFloat5669 * (float) i_583_) + this.camera.aFloat5686) / (float) i_584_);
@@ -1995,7 +1995,7 @@ final class ha_Sub1 extends ha {
         anInt7487 = 0;
         this.anInt7501 = 128;
         this.anInt7476 = 0;
-        this.anInt7482 = 50;
+        this.zNear = 50;
         this.anInt7503 = 0;
         this.anInt7496 = 0;
         this.anInt7497 = 512;
@@ -2009,7 +2009,7 @@ final class ha_Sub1 extends ha {
         anInt7512 = -1;
         try {
             aClass60_7498 = new Class60(256);
-            this.camera = new Class101_Sub1();
+            this.camera = new JavaMatrix();
             method3631(1);
             method3659(0);
             Class59_Sub2_Sub1.method566(true, true, (byte) -126);
@@ -2199,7 +2199,7 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3659(int i) {
-        aClass167Array7480[i].method1291(10000, Thread.currentThread());
+        aJavaThreadResourceArray7480[i].method1291(10000, Thread.currentThread());
     }
 
     final void method3707(Rectangle[] rectangles, int i, int i_631_, int i_632_) throws Exception_Sub1 {
@@ -2223,7 +2223,7 @@ final class ha_Sub1 extends ha {
     }
 
     final int method3726(int i) {
-        return this.aD4579.method3(i, -6662).anInt200;
+        return this.aD4579.getMetrics(i, -6662).alphaBlendMode;
     }
 
     final int I() {
@@ -2244,8 +2244,8 @@ final class ha_Sub1 extends ha {
                 class348_sub25.anInt6879 += i_634_;
                 int i_635_ = class348_sub25.anInt6879 / 20;
                 if (i_635_ > 0) {
-                    Class12 class12 = this.aD4579.method3((class348_sub25.anInt6883), -6662);
-                    class348_sub25.method2995((class12.aByte198 * i_634_ * 50 / 1000), (class12.aByte211 * i_634_ * 50 / 1000));
+                    TextureMetrics textureMetrics = this.aD4579.getMetrics((class348_sub25.anInt6883), -6662);
+                    class348_sub25.method2995((textureMetrics.speedU * i_634_ * 50 / 1000), (textureMetrics.speedV * i_634_ * 50 / 1000));
                     class348_sub25.anInt6879 -= i_635_ * 20;
                 }
                 class348_sub25.aBoolean6882 = false;
@@ -2262,7 +2262,7 @@ final class ha_Sub1 extends ha {
 
     final void da(int i, int i_636_, int i_637_, int[] is) {
         float f = ((this.camera.aFloat5681) + ((this.camera.aFloat5662) * (float) i + (this.camera.aFloat5680) * (float) i_636_ + (this.camera.aFloat5664) * (float) i_637_));
-        if (f >= (float) this.anInt7482 && f <= (float) this.anInt7494) {
+        if (f >= (float) this.zNear && f <= (float) this.anInt7494) {
             int i_638_ = (int) ((float) this.anInt7491 * (this.camera.aFloat5686 + ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673) * (float) i_636_ + (this.camera.aFloat5669) * (float) i_637_)) / f);
             int i_639_ = (int) ((float) this.anInt7497 * (this.camera.aFloat5685 + ((this.camera.aFloat5655) * (float) i + (this.camera.aFloat5678) * (float) i_636_ + (this.camera.aFloat5666) * (float) i_637_)) / f);
             if (i_638_ >= this.anInt7509 && i_638_ <= this.anInt7508 && i_639_ >= this.anInt7490 && i_639_ <= this.anInt7506) {
@@ -2291,6 +2291,6 @@ final class ha_Sub1 extends ha {
     }
 
     final boolean method3727(int i) {
-        return aBoolean7489 || this.aD4579.method3(i, -6662).aBoolean199;
+        return aBoolean7489 || this.aD4579.getMetrics(i, -6662).aBoolean199;
     }
 }

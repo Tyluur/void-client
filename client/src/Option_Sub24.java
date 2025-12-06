@@ -73,7 +73,7 @@ final class Option_Sub24 extends Option {
         anInt6088++;
         int i_6_ = 56 % ((68 - i_5_) / 58);
         if (i >= 0 && i_4_ >= 0 && Class18.anInt282 != 0 && Class305.anInt3861 != 0) {
-            Class101 class101;
+            Matrix matrix;
             int i_7_;
             int i_8_;
             int i_9_;
@@ -82,7 +82,7 @@ final class Option_Sub24 extends Option {
             int i_12_;
             if (Class59_Sub1.aBoolean5300) {
                 Class107.method1010(false, false);
-                class101 = var_ha.method3640();
+                matrix = var_ha.method3640();
                 int[] is = var_ha.Y();
                 i_7_ = is[0];
                 i_8_ = is[1];
@@ -97,9 +97,9 @@ final class Option_Sub24 extends Option {
                 i_7_ = Class336.anInt4171;
                 i_10_ = Class18.anInt282;
                 var_ha.KA(Class120.anInt4911, Class238_Sub1.anInt5832, Class18.anInt282, Class305.anInt3861);
-                class101 = var_ha.method3654();
-                class101.method903(Class14_Sub4.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, ClientOptions.anInt7244);
-                var_ha.method3638(class101);
+                matrix = var_ha.method3654();
+                matrix.method903(Class14_Sub4.anInt8633, Class59_Sub2_Sub1.anInt8668, Class43.anInt620, Class348_Sub44.anInt7092, Class281.anInt3650, ClientOptions.anInt7244);
+                var_ha.method3638(matrix);
                 i_12_ = i_4_;
                 i_11_ = i;
             }
@@ -126,8 +126,8 @@ final class Option_Sub24 extends Option {
                 }
                 int[] is = {i_17_, i_19_, i_15_};
                 int[] is_21_ = {i_18_, i_20_, i_16_};
-                class101.method890(is);
-                class101.method890(is_21_);
+                matrix.method890(is);
+                matrix.method890(is_21_);
                 float f = Class108.method1012((float) is[1], (float) is_21_[0], (float) is[2], (float) is_21_[2], 4, (float) is[0], (byte) 123, (float) is_21_[1]);
                 if (f > 0.0F) {
                     int i_22_ = is_21_[0] + -is[0];

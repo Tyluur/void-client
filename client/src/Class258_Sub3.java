@@ -170,7 +170,7 @@ class Class258_Sub3 extends Class258 {
     }
 
     static final void method1968() {
-        za.method3437(1, Class189.anInt2524);
+        za.method3437(1, BillboardType.anInt2524);
     }
 
     public final void method37(int i) {

@@ -74,8 +74,8 @@ final class Option_Sub14 extends Option {
             Mesh mesh = Class300.method2277(0, aa_Sub3.MODELS, Class348_Sub31.anInt6923, -1);
             long l = Class62.safeTime(-88);
             Class348_Sub8.aHa6654.la();
-            Class157.aClass101_2123.method894(0, Class348_Sub23_Sub2.anInt9037, 0);
-            Class348_Sub8.aHa6654.method3638(Class157.aClass101_2123);
+            Class157.aMatrix_2123.method894(0, Class348_Sub23_Sub2.anInt9037, 0);
+            Class348_Sub8.aHa6654.method3638(Class157.aMatrix_2123);
             Class348_Sub8.aHa6654.DA(dimension.width / 2, dimension.height / 2, 512, 512);
             Class348_Sub8.aHa6654.xa(1.0F);
             if (i_1_ >= -66) aClass190_5990 = null;
@@ -88,9 +88,9 @@ final class Option_Sub14 extends Option {
                 Class348_Sub8.aHa6654.ya();
                 for (int i_5_ = 15; i_5_ >= 0; i_5_--) {
                     for (int i_6_ = 0; i_6_ <= i_5_; i_6_++) {
-                        Class50_Sub1.aClass101_5209.method894((int) ((-((float) i_5_ / 2.0F) + (float) i_6_) * (float) Class270.anInt3465), 0, (i_5_ + 1) * Class270.anInt3465);
+                        Class50_Sub1.aMatrix_5209.method894((int) ((-((float) i_5_ / 2.0F) + (float) i_6_) * (float) Class270.anInt3465), 0, (i_5_ + 1) * Class270.anInt3465);
                         i_3_++;
-                        model.method615(Class50_Sub1.aClass101_5209, null, 0);
+                        model.method615(Class50_Sub1.aMatrix_5209, null, 0);
                         if (Class62.safeTime(-105) + -l >= (long) i_2_) break while_80_;
                     }
                 }

@@ -118,9 +118,9 @@ final class Class348_Sub20 extends Node {
     final void method2949(byte i, int i_22_, int i_23_, int i_24_, float f) {
         if (i == 97) {
             if (this.anInt6841 != -1) {
-                Class12 class12 = aHa_Sub2_6831.aD4579.method3(this.anInt6841, -6662);
-                int i_25_ = 0xff & class12.aByte201;
-                if (i_25_ != 0 && class12.aByte213 != 4) {
+                TextureMetrics textureMetrics = aHa_Sub2_6831.aD4579.getMetrics(this.anInt6841, -6662);
+                int i_25_ = 0xff & textureMetrics.aByte201;
+                if (i_25_ != 0 && textureMetrics.effectType != 4) {
                     int i_26_;
                     if (i_23_ >= 0) {
                         if (i_23_ > 127) i_26_ = 16777215;
@@ -132,7 +132,7 @@ final class Class348_Sub20 extends Node {
                         i_24_ = ((((i_28_ * (i_24_ & 0xff00ff) + (i_26_ & 0xff00ff) * i_27_) & ~0xff00ff) - -(0xff0000 & (i_28_ * (0xff00 & i_24_) + i_27_ * (0xff00 & i_26_)))) >> 8);
                     } else i_24_ = i_26_;
                 }
-                int i_29_ = 0xff & class12.aByte216;
+                int i_29_ = 0xff & textureMetrics.aByte216;
                 if (i_29_ != 0) {
                     i_29_ += 256;
                     int i_30_ = i_29_ * ((0xff0000 & i_24_) >> 16);

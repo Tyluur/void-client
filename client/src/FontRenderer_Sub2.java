@@ -168,7 +168,7 @@ final class FontRenderer_Sub2 extends FontRenderer {
         aHa_Sub3_6494.method3927(true);
         aHa_Sub3_6494.method3850((byte) -41, anInterface18_Impl3_6492);
         if (aBoolean6493 || bool) {
-            aHa_Sub3_6494.method3874(Class167.aClass229_2207, 112, Class328_Sub3.aClass229_6519);
+            aHa_Sub3_6494.method3874(JavaThreadResource.aClass229_2207, 112, Class328_Sub3.aClass229_6519);
             aHa_Sub3_6494.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
             aHa_Sub3_6494.method3894(-28186, i_50_);
         } else aHa_Sub3_6494.method3874(Class328_Sub3.aClass229_6519, 126, Class328_Sub3.aClass229_6519);

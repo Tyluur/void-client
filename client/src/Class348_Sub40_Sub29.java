@@ -49,7 +49,7 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
         super.method3045(i, i_10_, i_11_);
         anInt9382++;
         if (anInt9380 >= 0 && Class286_Sub5.aD6247 != null) {
-            int i_12_ = (!(Class286_Sub5.aD6247.method3(anInt9380, -6662).aBoolean199) ? 128 : 64);
+            int i_12_ = (!(Class286_Sub5.aD6247.getMetrics(anInt9380, -6662).aBoolean199) ? 128 : 64);
             anIntArray9375 = Class286_Sub5.aD6247.method5(false, anInt9380, 1.0F, i_12_, i_12_, -123);
             anInt9379 = i_12_;
             anInt9374 = i_12_;
@@ -84,7 +84,7 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40 {
         anInt9377++;
         if (i_16_ > 2000 || i_21_ > 2000 || i_24_ > 2000 || i_23_ > 2000 || i_17_ > 2000 || i > 2000) return false;
         if (i_16_ < -2000 || i_21_ < -2000 || i_24_ < -2000 || i_23_ < -2000 || i_17_ < -2000 || i < -2000) return false;
-        if (Class350.anInt4319 == 2) {
+        if (JavaBillboardAttributes.anInt4319 == 2) {
             int i_25_ = i_23_ + i_16_ * Class306.anInt3872;
             if (i_25_ >= 0 && Class14.anIntArray5091.length > i_25_ && Class14.anIntArray5091[i_25_] > -38400 + (i_22_ << 8)) return false;
             i_25_ = i_17_ + i_21_ * Class306.anInt3872;

@@ -66,7 +66,7 @@ final class Class30 {
             Class348_Sub41.aString7048 = "";
             Class59_Sub1.aClass297_5297 = class297;
             anInt410++;
-            Class167.aIndex_2208 = index;
+            JavaThreadResource.aIndex_2208 = index;
             if (!Class348_Sub24.aString6877.startsWith("win")) {
                 if (!Class348_Sub24.aString6877.startsWith("linux")) {
                     if (Class348_Sub24.aString6877.startsWith("mac")) Class348_Sub41.aString7048 += "macos/";

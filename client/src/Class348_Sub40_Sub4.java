@@ -6,7 +6,7 @@ final class Class348_Sub40_Sub4 extends Class348_Sub40 {
     static Class262 aClass262_9111 = new Class262();
     static int anInt9112;
     static TextureSource js5TextureSource; // aD9113
-    static Class101 aClass101_9114;
+    static Matrix aMatrix_9114;
     static int anInt9115;
 
     final int[] method3042(int i, int i_0_) {
@@ -19,7 +19,7 @@ final class Class348_Sub40_Sub4 extends Class348_Sub40 {
 
     public static void method3057(byte i) {
         if (i > -32) method3058(-76, 25, -12);
-        aClass101_9114 = null;
+        aMatrix_9114 = null;
         aClass262_9111 = null;
         js5TextureSource = null;
     }

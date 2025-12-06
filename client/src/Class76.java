@@ -24,7 +24,7 @@ final class Class76 {
         i_5_ += -1 + i_4_;
         i_1_ += i * i_4_;
         i_2_ = -i_4_ + i_3_ >> 2;
-        if (Class350.anInt4319 == 1) {
+        if (JavaBillboardAttributes.anInt4319 == 1) {
             Class225.anInt2946 += i_2_;
             while (--i_2_ >= 0) {
                 if (is[++i_5_] > i_1_) is[i_5_] = i_1_;

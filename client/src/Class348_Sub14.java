@@ -93,7 +93,7 @@ final class Class348_Sub14 extends Node {
             for (int i_12_ = 0; is.length > i_12_; i_12_++)
                 is[i_12_] = -16777216;
             Class108.aSprite_1664 = var_ha.method3662(512, is, (byte) 94, 0, 512, 512);
-            Class358.method3489(-3);
+            TextureUniverse.method3489(-3);
             int i_13_ = (((-10 + (238 + (int) (20.0 * Math.random())) << 8) + (-10 + (int) (Math.random() * 20.0) + 238 << 16) - (-(int) (Math.random() * 20.0) + -228)) | ~0xffffff);
             int i_14_ = (228 - -(int) (20.0 * Math.random()) << 16 | ~0xffffff);
             int i_15_ = ((int) (8.0 * Math.random()) | ((int) (8.0 * Math.random()) << 16 | (int) (8.0 * Math.random()) << 8));

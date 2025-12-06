@@ -57,7 +57,7 @@ final class Class367_Sub10 extends Class367 {
         if (aBoolean7385) {
             this.aHa_Sub3_4479.method3897(1, -4382);
             this.aHa_Sub3_4479.method3871(IDKTypeList.aClass113_2047, i ^ 0x57);
-            this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 103, (Class167.aClass229_2207));
+            this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, 103, (JavaThreadResource.aClass229_2207));
             this.aHa_Sub3_4479.method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
             this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
             this.aHa_Sub3_4479.method3879(-8629);
@@ -65,7 +65,7 @@ final class Class367_Sub10 extends Class367 {
             this.aHa_Sub3_4479.method3897(0, -4382);
             aBoolean7385 = false;
         } else this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
-        this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, i ^ 0x2c, Class167.aClass229_2207);
+        this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, i ^ 0x2c, JavaThreadResource.aClass229_2207);
     }
 
     final void method3526(int i, int i_2_, int i_3_) {
@@ -82,7 +82,7 @@ final class Class367_Sub10 extends Class367 {
     final void method3521(boolean bool, byte i) {
         if (i == -103) {
             anInt7383++;
-            this.aHa_Sub3_4479.method3874(Class328_Sub3.aClass229_6519, 99, Class167.aClass229_2207);
+            this.aHa_Sub3_4479.method3874(Class328_Sub3.aClass229_6519, 99, JavaThreadResource.aClass229_2207);
         }
     }
 

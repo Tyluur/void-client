@@ -42,7 +42,7 @@ final class Class51 {
     boolean aBoolean902;
     boolean aBoolean903;
     int[] anIntArray904;
-    static Class101 aClass101_905;
+    static Matrix aMatrix_905;
     boolean aBoolean906;
     private int[][] anIntArrayArray907;
     private short[] aShortArray908;
@@ -619,7 +619,7 @@ final class Class51 {
     public static void method486(int i) {
         aStringArray932 = null;
         if (i > -19) method486(-34);
-        aClass101_905 = null;
+        aMatrix_905 = null;
         renderer = null;
     }
 

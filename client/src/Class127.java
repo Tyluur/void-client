@@ -41,7 +41,7 @@ class Class127 implements Interface1 {
     }
 
     static final void method1116(int i, int i_8_, int i_9_, int i_10_, byte i_11_) {
-        if (Class369.anInt4960 > i_9_ + -i_10_ || Class113.anInt1745 < i_10_ + i_9_ || Class132.anInt1910 > i - i_10_ || i - -i_10_ > Class38.anInt513) Class6.method203(-107, i_9_, i_8_, i, i_10_);
+        if (Class369.anInt4960 > i_9_ + -i_10_ || Class113.anInt1745 < i_10_ + i_9_ || Class132.anInt1910 > i - i_10_ || i - -i_10_ > Class38.anInt513) JavaBillboardFace.method203(-107, i_9_, i_8_, i, i_10_);
         else Class14_Sub4.method253(i, i_9_, -648, i_8_, i_10_);
         anInt4662++;
         int i_12_ = -68 / ((40 - i_11_) / 36);

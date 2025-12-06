@@ -3,7 +3,7 @@
  */
 
 final class Class50_Sub1 extends Class50 {
-    static Class101 aClass101_5209;
+    static Matrix aMatrix_5209;
     static int anInt5210;
     static int anInt5211;
     private final int anInt5212;
@@ -34,7 +34,7 @@ final class Class50_Sub1 extends Class50 {
 
     public static void method460(int i) {
         if (i != 2) method460(-52);
-        aClass101_5209 = null;
+        aMatrix_5209 = null;
         aBooleanArrayArray5225 = null;
         aStringArray5223 = null;
         aClass351_5217 = null;

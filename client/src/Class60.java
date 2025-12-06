@@ -48,11 +48,11 @@ final class Class60 {
     final void method578(int i, int i_2_) {
         if (i == 2) {
             anInt1093++;
-            if (Class101_Sub1.aClass246_5675 != null) {
+            if (JavaMatrix.aClass246_5675 != null) {
                 for (Class348_Sub42_Sub8 class348_sub42_sub8 = ((Class348_Sub42_Sub8) aClass107_1089.method1011(-59)); class348_sub42_sub8 != null; class348_sub42_sub8 = ((Class348_Sub42_Sub8) aClass107_1089.method1003((byte) 97))) {
                     if (!class348_sub42_sub8.method3195(-4)) {
                         if ((long) i_2_ < ++class348_sub42_sub8.aLong7057) {
-                            Class348_Sub42_Sub8 class348_sub42_sub8_3_ = Class101_Sub1.aClass246_5675.method1888(3, class348_sub42_sub8);
+                            Class348_Sub42_Sub8 class348_sub42_sub8_3_ = JavaMatrix.aClass246_5675.method1888(3, class348_sub42_sub8);
                             aClass356_1100.method3483((byte) 86, (class348_sub42_sub8.aLong4291), class348_sub42_sub8_3_);
                             Class59_Sub2_Sub2.method573(class348_sub42_sub8_3_, class348_sub42_sub8, (byte) 63);
                             class348_sub42_sub8.method2715((byte) 116);

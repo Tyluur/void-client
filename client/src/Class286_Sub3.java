@@ -274,7 +274,7 @@ final class Class286_Sub3 extends Class286 {
             Class318_Sub1_Sub3_Sub4.aClass338Array10330[i] = null;
         anInt6223++;
         Class69.anInt1200 = 0;
-        for (int i = 0; Class189.anInt2524 > i; i++) {
+        for (int i = 0; BillboardType.anInt2524 > i; i++) {
             for (int i_20_ = 0; i_20_ < Class318_Sub7.anInt6451; i_20_++) {
                 for (int i_21_ = 0; (i_21_ < Class348_Sub41.anInt7054); i_21_++) {
                     Class357 class357 = (Class147.aClass357ArrayArrayArray2029[i][i_21_][i_20_]);
@@ -286,7 +286,7 @@ final class Class286_Sub3 extends Class286 {
             }
         }
         if (bool != false) anIntArray6228 = null;
-        for (int i = 0; Class189.anInt2524 > i; i++) {
+        for (int i = 0; BillboardType.anInt2524 > i; i++) {
             for (int i_22_ = 0; i_22_ < Class318_Sub7.anInt6451; i_22_++) {
                 for (int i_23_ = 0; Class348_Sub41.anInt7054 > i_23_; i_23_++) {
                     Class357 class357 = (Class147.aClass357ArrayArrayArray2029[i][i_23_][i_22_]);

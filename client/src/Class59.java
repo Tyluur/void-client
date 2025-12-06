@@ -136,7 +136,7 @@ abstract class Class59 {
     static final void method545(int i, int i_49_) {
         Class351.aClass60_4327.method578(2, i);
         anInt1077++;
-        Class358.aClass60_4417.method578(2, i);
+        TextureUniverse.aClass60_4417.method578(2, i);
         if (i_49_ != -1) aClass114_1068 = null;
         Option_Sub24.aClass60_6096.method578(2, i);
         Class348_Sub40_Sub9.aClass60_9171.method578(i_49_ ^ ~0x2, i);
@@ -152,9 +152,9 @@ abstract class Class59 {
         if (string_52_ == null) return -1;
         String string_53_ = Class348_Sub41.aString7048 + string_52_;
         if (i != 7468) method549((byte) 28, null, null, null);
-        if (!Class167.aIndex_2208.method422("", string_53_, -88)) return -1;
-        if (!Class167.aIndex_2208.method413(i ^ 0x1d48, string_53_)) return Class167.aIndex_2208.method397(string_53_, 0);
-        byte[] is = Class167.aIndex_2208.method391(string_53_, "", -29832);
+        if (!JavaThreadResource.aIndex_2208.method422("", string_53_, -88)) return -1;
+        if (!JavaThreadResource.aIndex_2208.method413(i ^ 0x1d48, string_53_)) return JavaThreadResource.aIndex_2208.method397(string_53_, 0);
+        byte[] is = JavaThreadResource.aIndex_2208.method391(string_53_, "", -29832);
         Object object = null;
         File file;
         try {

@@ -35,8 +35,8 @@ final class i extends Model implements Interface19 {
 
     final native void aa(short i, short i_7_);
 
-    final boolean method623(int i, int i_8_, Class101 class101, boolean bool, int i_9_, int i_10_) {
-        return anOa5117.method3973().method143(this, i, i_8_, class101, bool, i_10_);
+    final boolean method623(int i, int i_8_, Matrix matrix, boolean bool, int i_9_, int i_10_) {
+        return anOa5117.method3973().method143(this, i, i_8_, matrix, bool, i_10_);
     }
 
     final native int EA();
@@ -49,11 +49,11 @@ final class i extends Model implements Interface19 {
 
     final native void P(int i, int i_11_, int i_12_, int i_13_);
 
-    final void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_14_) {
-        if (class318_sub3 == null) anOa5117.method3973().method149(this, class101, null, i, i_14_);
+    final void method608(Matrix matrix, Class318_Sub3 class318_sub3, int i, int i_14_) {
+        if (class318_sub3 == null) anOa5117.method3973().method149(this, matrix, null, i, i_14_);
         else {
             oa.anIntArray5132[5] = 0;
-            anOa5117.method3973().method149(this, class101, oa.anIntArray5132, i, i_14_);
+            anOa5117.method3973().method149(this, matrix, oa.anIntArray5132, i, i_14_);
             class318_sub3.anInt6405 = oa.anIntArray5132[0];
             class318_sub3.anInt6402 = oa.anIntArray5132[1];
             class318_sub3.anInt6406 = oa.anIntArray5132[2];
@@ -82,8 +82,8 @@ final class i extends Model implements Interface19 {
 
     final native void VA(int i);
 
-    final boolean method628(int i, int i_19_, Class101 class101, boolean bool, int i_20_) {
-        return anOa5117.method3973().method146(this, i, i_19_, class101, bool);
+    final boolean method628(int i, int i_19_, Matrix matrix, boolean bool, int i_20_) {
+        return anOa5117.method3973().method146(this, i, i_19_, matrix, bool);
     }
 
     final Model method614(byte i, int i_21_, boolean bool) {
@@ -128,8 +128,8 @@ final class i extends Model implements Interface19 {
 
     final native int WA();
 
-    final void method610(Class101 class101, int i, boolean bool) {
-        A(((ja) class101).nativeid, i, bool);
+    final void method610(Matrix matrix, int i, boolean bool) {
+        A(((ja) matrix).nativeid, i, bool);
     }
 
     final void method622() {
@@ -147,11 +147,11 @@ final class i extends Model implements Interface19 {
         }
     }
 
-    final void method615(Class101 class101, Class318_Sub3 class318_sub3, int i) {
-        if (class318_sub3 == null) anOa5117.method3973().method145(this, class101, null, i);
+    final void method615(Matrix matrix, Class318_Sub3 class318_sub3, int i) {
+        if (class318_sub3 == null) anOa5117.method3973().method145(this, matrix, null, i);
         else {
             oa.anIntArray5132[5] = 0;
-            anOa5117.method3973().method145(this, class101, oa.anIntArray5132, i);
+            anOa5117.method3973().method145(this, matrix, oa.anIntArray5132, i);
             class318_sub3.anInt6405 = oa.anIntArray5132[0];
             class318_sub3.anInt6402 = oa.anIntArray5132[1];
             class318_sub3.anInt6406 = oa.anIntArray5132[2];
@@ -163,8 +163,8 @@ final class i extends Model implements Interface19 {
 
     final native boolean r();
 
-    final void method620(Class101 class101) {
-        method693(oa.anIntArray5140, class101);
+    final void method620(Matrix matrix) {
+        method693(oa.anIntArray5140, matrix);
         int i = 0;
         if (this.aModelParticleEmitterArray5119 != null) {
             for (int i_74_ = 0; i_74_ < this.aModelParticleEmitterArray5119.length; i_74_++) {
@@ -185,8 +185,8 @@ final class i extends Model implements Interface19 {
                 ModelParticleEffector modelParticleEffector = this.aModelParticleEffectorArray5118[i_75_];
                 ModelParticleEffector modelParticleEffector_76_ = modelParticleEffector;
                 if (modelParticleEffector.aModelParticleEffector_4248 != null) modelParticleEffector_76_ = modelParticleEffector.aModelParticleEffector_4248;
-                if (modelParticleEffector.aClass101_4252 != null) modelParticleEffector.aClass101_4252.method898(class101);
-                else modelParticleEffector.aClass101_4252 = class101.method907();
+                if (modelParticleEffector.aMatrix_4252 != null) modelParticleEffector.aMatrix_4252.method898(matrix);
+                else modelParticleEffector.aMatrix_4252 = matrix.method907();
                 modelParticleEffector_76_.anInt4238 = oa.anIntArray5140[i++];
                 modelParticleEffector_76_.anInt4239 = oa.anIntArray5140[i++];
                 modelParticleEffector_76_.anInt4240 = oa.anIntArray5140[i++];
@@ -200,8 +200,8 @@ final class i extends Model implements Interface19 {
         return this.aModelParticleEffectorArray5118;
     }
 
-    private final void method693(int[] is, Class101 class101) {
-        anOa5117.method3973().method151(this, is, class101);
+    private final void method693(int[] is, Matrix matrix) {
+        anOa5117.method3973().method151(this, is, matrix);
     }
 
     final native int ua();
@@ -229,14 +229,14 @@ final class i extends Model implements Interface19 {
         int i_89_ = 0;
         for (int i_90_ = 0; i_90_ < i_87_; i_90_++) {
             MeshBillboard meshBillboard = mesh.billboards[i_90_];
-            Class189 class189 = Class73.method742(104, meshBillboard.anInt2153);
-            is_88_[i_89_++] = meshBillboard.anInt2155;
-            is_88_[i_89_++] = class189.anInt2526;
-            is_88_[i_89_++] = class189.anInt2530;
-            is_88_[i_89_++] = class189.anInt2525;
-            is_88_[i_89_++] = class189.anInt2533;
-            is_88_[i_89_++] = class189.anInt2534;
-            is_88_[i_89_++] = class189.aBoolean2531 ? -1 : 0;
+            BillboardType billboardType = Class73.billboardTypeList(104, meshBillboard.anInt2153);
+            is_88_[i_89_++] = meshBillboard.face;
+            is_88_[i_89_++] = billboardType.anInt2526;
+            is_88_[i_89_++] = billboardType.anInt2530;
+            is_88_[i_89_++] = billboardType.texture;
+            is_88_[i_89_++] = billboardType.anInt2533;
+            is_88_[i_89_++] = billboardType.anInt2534;
+            is_88_[i_89_++] = billboardType.hideFace ? -1 : 0;
         }
         for (int i_91_ = 0; i_91_ < i_87_; i_91_++) {
             MeshBillboard meshBillboard = mesh.billboards[i_91_];

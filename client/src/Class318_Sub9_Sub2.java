@@ -24,7 +24,7 @@ class Class318_Sub9_Sub2 extends Class318_Sub9 {
         int i_6_ = i_1_ - 1;
         int i_7_ = i_1_ + i_3_;
         for (int i_8_ = i; i_8_ <= i + 1; i_8_++) {
-            if (i_8_ != Class189.anInt2524) {
+            if (i_8_ != BillboardType.anInt2524) {
                 for (int i_9_ = i_4_; i_9_ <= i_5_; i_9_++) {
                     if (i_9_ >= 0 && i_9_ < Class318_Sub7.anInt6451) {
                         for (int i_10_ = i_6_; i_10_ <= i_7_; i_10_++) {

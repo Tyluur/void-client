@@ -685,7 +685,7 @@ final class s_Sub2 extends s {
             for (int i_187_ = 0; i_187_ < is_180_.length; i_187_++) {
                 int i_188_ = is_182_[i_187_];
                 int i_189_ = is_183_[i_187_];
-                if ((0x20 & this.anInt8235) != 0 && i_188_ != -1 && var_d.method3(i_188_, -6662).aBoolean209) {
+                if ((0x20 & this.anInt8235) != 0 && i_188_ != -1 && var_d.getMetrics(i_188_, -6662).disableable) {
                     i_188_ = -1;
                     i_189_ = 128;
                 }

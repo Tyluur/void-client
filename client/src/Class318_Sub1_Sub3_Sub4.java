@@ -48,12 +48,12 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         Model model = method2465(var_ha, anInt10355, (anInt10334 == 0 ? 0 : 5) | 0x800, (byte) -82);
         if (model == null) return null;
         if (anInt10334 != 0) model.a(anInt10334 * 2048);
-        Class101 class101 = var_ha.method3705();
-        class101.method894(this.x, this.anInt6382, this.y);
-        method2467(model, var_ha, -1, class101);
+        Matrix matrix = var_ha.method3705();
+        matrix.method894(this.x, this.anInt6382, this.y);
+        method2467(model, var_ha, -1, matrix);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, false, false);
-        if (Class305.aBoolean3870) model.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
-        else model.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+        if (Class305.aBoolean3870) model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+        else model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
         if (aClass318_Sub10_10341 != null) {
             Class98 class98 = aClass318_Sub10_10341.method2525();
             if (!Class305.aBoolean3870) var_ha.method3684(class98);
@@ -223,10 +223,10 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         return aBoolean10338;
     }
 
-    private final void method2467(Model model, ha var_ha, int i, Class101 class101) {
+    private final void method2467(Model model, ha var_ha, int i, Matrix matrix) {
         do {
             try {
-                model.method620(class101);
+                model.method620(matrix);
                 anInt10360++;
                 ModelParticleEmitter[] modelParticleEmitters = model.method619();
                 ModelParticleEffector[] modelParticleEffectors = model.method604();
@@ -237,7 +237,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     aClass318_Sub10_10341.method2533(this.plane, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (model != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class101 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (model != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (matrix != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -266,9 +266,9 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         anInt10354++;
         Model model = method2465(var_ha, anInt10355, 0, (byte) -82);
         if (model != null) {
-            Class101 class101 = var_ha.method3705();
-            class101.method894(this.x, this.anInt6382, this.y);
-            method2467(model, var_ha, -1, class101);
+            Matrix matrix = var_ha.method3705();
+            matrix.method894(this.x, this.anInt6382, this.y);
+            method2467(model, var_ha, -1, matrix);
         }
     }
 

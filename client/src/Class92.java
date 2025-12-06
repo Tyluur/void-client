@@ -46,9 +46,9 @@ final class Class92 {
                         int i_9_ = packed & 0x3f;
                         int x = (i_8_ + (-za_Sub2.regionTileX + (Class348_Sub23_Sub3.mapRegionIds[i_1_] >> 8) * 64));
                         int y = (-Class90.regionTileY + (64 * (0xff & (Class348_Sub23_Sub3.mapRegionIds[i_1_])) - -i_9_));
-                        NPCDefinition definition = (Class189.npcTypeList.method2079(packet.readUnsignedShort(842397944), -1));
+                        NPCDefinition definition = (BillboardType.npcTypeList.method2079(packet.readUnsignedShort(842397944), -1));
                         Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_5_, -6008));
-                        if (class348_sub22 == null && (definition.walkMask & 0x1) > 0 && i_7_ == Class167.anInt2204 && x >= 0 && (Class367_Sub4.mapLength > x - -definition.size) && y >= 0 && (Class348_Sub40_Sub3.mapWidth > y + definition.size)) {
+                        if (class348_sub22 == null && (definition.walkMask & 0x1) > 0 && i_7_ == JavaThreadResource.anInt2204 && x >= 0 && (Class367_Sub4.mapLength > x - -definition.size) && y >= 0 && (Class348_Sub40_Sub3.mapWidth > y + definition.size)) {
                             Npc npc = new Npc();
                             npc.anInt10290 = i_5_;
                             Class348_Sub22 class348_sub22_12_ = (new Class348_Sub22(npc));

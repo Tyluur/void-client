@@ -16,7 +16,7 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40 {
         if (i != -27) method3152(86);
         int i_0_ = Class348_Sub40_Sub6.anInt9139;
         int i_1_ = Class286_Sub2.anInt6212;
-        Class12.method224((byte) -40, is);
+        TextureMetrics.method224((byte) -40, is);
         Class348_Sub27.method3000(Option_Sub22.anInt6076, 0, Class299_Sub2.anInt6325, 0, i ^ 0x28);
         if (aClass50Array9481 != null) {
             for (int i_2_ = 0; aClass50Array9481.length > i_2_; i_2_++) {

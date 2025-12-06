@@ -36,7 +36,7 @@ final class Class88 {
     static final Class227[] method841(int i) {
         if (i > -126) method847(null, -66);
         anInt1504++;
-        return (new Class227[]{Class191.aClass227_2568, Class100.aClass227_1591, Class6.aClass227_151});
+        return (new Class227[]{Class191.aClass227_2568, Class100.aClass227_1591, JavaBillboardFace.aClass227_151});
     }
 
     static final void method842(boolean bool) {
@@ -277,7 +277,7 @@ final class Class88 {
                             Class130.membersWorld = class348_sub49_sub2.readUnsignedByte(255) == 1;
                             Class348_Sub40_Sub12.objectTypeList.method2004(Class130.membersWorld, (byte) 25);
                             Exception_Sub1.itemTypeList.method1934((byte) 11, Class130.membersWorld);
-                            Class189.npcTypeList.method2072((byte) 88, Class130.membersWorld);
+                            BillboardType.npcTypeList.method2072((byte) 88, Class130.membersWorld);
                         } else {
                             if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class76.anInt1288, 107)) return;
                             Class348_Sub40_Sub8.aClass238_9165.method1701(Class76.anInt1288, 0, (byte) 85, (class348_sub49_sub2.aByteArray7154));

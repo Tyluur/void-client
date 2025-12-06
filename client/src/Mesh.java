@@ -148,7 +148,7 @@ final class Mesh {
         if (i < 78) aIndex_1848 = null;
         int i_22_;
         do i_22_ = random.nextInt(); while (i_22_ >= i_21_);
-        return Class350.method3452(i_22_, (byte) -15, i_20_);
+        return JavaBillboardAttributes.method3452(i_22_, (byte) -15, i_20_);
     }
 
     final void method1098(short i, byte i_23_, short i_24_) {
@@ -969,7 +969,7 @@ final class Mesh {
                 if (mesh.billboards != null) {
                     for (int j = 0; (mesh.billboards.length > j); j++) {
                         MeshBillboard meshBillboard = (mesh.billboards[j]);
-                        this.billboards[billboardCount++] = meshBillboard.method1266(5, ((meshBillboard.anInt2155) - -(this.faceCount)));
+                        this.billboards[billboardCount++] = meshBillboard.method1266(5, ((meshBillboard.face) - -(this.faceCount)));
                     }
                 }
                 for (int j = 0; mesh.faceCount > j; j++) {

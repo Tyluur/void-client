@@ -348,7 +348,7 @@ final class Class130_Sub1 extends Class130 {
         Class300.anInt3818 = 0;
         Class58.anInt1056 = 0;
         Class64_Sub3.anInt5532 = 0;
-        Class167.anInt2194 = 0;
+        JavaThreadResource.anInt2194 = 0;
         Class92.anInt1526 = 0;
         Js5ResourceProvider.anInt6366 = 0;
         Class348_Sub1.anInt6556 = 0;
@@ -501,7 +501,7 @@ final class Class130_Sub1 extends Class130 {
         Class21.anInt321 = 0;
         Class377.anInt9836 = 0;
         Class348_Sub16_Sub1.anInt8846 = 0;
-        Class12.anInt210 = 0;
+        TextureMetrics.anInt210 = 0;
         Option_Sub27.anInt6129 = 0;
         s_Sub3.anInt8292 = 0;
         Class285_Sub1.anInt8487 = 0;
@@ -638,7 +638,7 @@ final class Class130_Sub1 extends Class130 {
         NPCTypeList.anInt3589 = 0;
         ItemDefinition.anInt2829 = 0;
         Class5_Sub1.anInt8345 = 0;
-        Class101.anInt1594 = 0;
+        Matrix.anInt1594 = 0;
         Class348_Sub42_Sub3.anInt9500 = 0;
         Packet.anInt7170 = 0;
         ItemDefinition.anInt2832 = 0;
@@ -714,7 +714,7 @@ final class Class130_Sub1 extends Class130 {
         Class325.anInt4074 = 0;
         Js5TextureSource.anInt4614 = 0;
         LoadingScreenRenderer.anInt3897 = 0;
-        Class101_Sub1.anInt5670 = 0;
+        JavaMatrix.anInt5670 = 0;
         Option_Sub10.anInt5941 = 0;
         Class318_Sub1_Sub3_Sub4.anInt10364 = 0;
         ha_Sub2.anInt7516 = 0;
@@ -739,7 +739,7 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub3.anInt5616 = 0;
         ha_Sub2.anInt7686 = 0;
         Class60.anInt1087 = 0;
-        Class167.anInt2199 = 0;
+        JavaThreadResource.anInt2199 = 0;
         Option_Sub8.anInt5912 = 0;
         Class64_Sub3.anInt5587 = 0;
         Option_Sub24.anInt6094 = 0;
@@ -865,7 +865,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7592 = 0;
         Class348_Sub23_Sub4.anInt9063 = 0;
         Class356.anInt4382 = 0;
-        Class101.anInt1595 = 0;
+        Matrix.anInt1595 = 0;
         ha_Sub3.anInt8076 = 0;
         ItemTypeList.anInt3281 = 0;
         Class66.anInt1163 = 0;
@@ -896,7 +896,7 @@ final class Class130_Sub1 extends Class130 {
         Class369_Sub3.anInt8598 = 0;
         Class377.anInt9816 = 0;
         VarBitTypeListClient.anInt2593 = 0;
-        Class101_Sub1.anInt5656 = 0;
+        JavaMatrix.anInt5656 = 0;
         Class348_Sub27.anInt6906 = 0;
         Class318_Sub1_Sub4_Sub1.anInt10070 = 0;
         FontRenderer.anInt4060 = 0;
@@ -924,7 +924,7 @@ final class Class130_Sub1 extends Class130 {
         Class59.anInt1073 = 0;
         Class267.anInt3391 = 0;
         Class50_Sub3.anInt5254 = 0;
-        Class101_Sub1.anInt5665 = 0;
+        JavaMatrix.anInt5665 = 0;
         ha_Sub3.anInt7950 = 0;
         Class346_Sub1.anInt6535 = 0;
         Class206.anInt4892 = 0;
@@ -1025,12 +1025,12 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub9.anInt6671 = 0;
         Class172.anInt2277 = 0;
         ItemDefinition.anInt2768 = 0;
-        Class350.anInt4321 = 0;
+        JavaBillboardAttributes.anInt4321 = 0;
         ha_Sub2.anInt7621 = 0;
-        Class101_Sub1.anInt5687 = 0;
+        JavaMatrix.anInt5687 = 0;
         ha_Sub2.anInt7586 = 0;
         Class367_Sub3.anInt7305 = 0;
-        Class101_Sub1.anInt5676 = 0;
+        JavaMatrix.anInt5676 = 0;
         Class154.anInt2098 = 0;
         Class373.anInt4533 = 0;
         Class348_Sub16_Sub3.anInt8935 = 0;
@@ -1122,7 +1122,7 @@ final class Class130_Sub1 extends Class130 {
         Class140.anInt1956 = 0;
         ItemTypeList.anInt3275 = 0;
         Class215.anInt2838 = 0;
-        Class12.anInt214 = 0;
+        TextureMetrics.anInt214 = 0;
         Class258_Sub3.anInt8542 = 0;
         Class101_Sub2.anInt5717 = 0;
         Class373_Sub2.anInt7438 = 0;
@@ -1186,7 +1186,7 @@ final class Class130_Sub1 extends Class130 {
         Class44.anInt622 = 0;
         Class348_Sub42_Sub17.anInt9677 = 0;
         Option_Sub19.anInt6039 = 0;
-        Class6.anInt155 = 0;
+        JavaBillboardFace.anInt155 = 0;
         ha_Sub3.anInt7979 = 0;
         Option_Sub2.anInt5853 = 0;
         ha_Sub2.anInt7571 = 0;
@@ -1555,7 +1555,7 @@ final class Class130_Sub1 extends Class130 {
         ObjectTypeList.anInt3357 = 0;
         Class50_Sub4.anInt5260 = 0;
         s_Sub2.anInt8250 = 0;
-        Class167.anInt2200 = 0;
+        JavaThreadResource.anInt2200 = 0;
         Class318_Sub1_Sub1_Sub1.anInt9967 = 0;
         Class156.anInt2114 = 0;
         ha_Sub3.anInt8065 = 0;
@@ -1570,7 +1570,7 @@ final class Class130_Sub1 extends Class130 {
         Class172.anInt2278 = 0;
         Option.anInt3139 = 0;
         Class348_Sub40_Sub21.anInt9267 = 0;
-        Class101_Sub1.anInt5671 = 0;
+        JavaMatrix.anInt5671 = 0;
         Option_Sub10.anInt5939 = 0;
         Class368.anInt4497 = 0;
         Index.anInt632 = 0;
@@ -1579,7 +1579,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub38.anInt7009 = 0;
         ha_Sub3.anInt8010 = 0;
         Class377.anInt9840 = 0;
-        Class101.anInt1598 = 0;
+        Matrix.anInt1598 = 0;
         ha_Sub2.anInt7709 = 0;
         Class348_Sub42_Sub8.anInt9548 = 0;
         Class318_Sub1_Sub3_Sub1.anInt10030 = 0;
@@ -1622,7 +1622,7 @@ final class Class130_Sub1 extends Class130 {
         IDKTypeList.anInt2052 = 0;
         Class318_Sub1_Sub3_Sub2.anInt10053 = 0;
         ha_Sub3.anInt7947 = 0;
-        Class101_Sub1.anInt5660 = 0;
+        JavaMatrix.anInt5660 = 0;
         ha_Sub2.anInt7541 = 0;
         StructTypeList.anInt1140 = 0;
         ha_Sub3.anInt7885 = 0;
@@ -1924,7 +1924,7 @@ final class Class130_Sub1 extends Class130 {
         Class286_Sub8.anInt6298 = 0;
         Class374.anInt4536 = 0;
         Option_Sub3.anInt5863 = 0;
-        Class6.anInt152 = 0;
+        JavaBillboardFace.anInt152 = 0;
         za_Sub2.anInt9777 = 0;
         Option_Sub28.anInt6137 = 0;
         Class318_Sub1_Sub3_Sub1.anInt10029 = 0;
@@ -1946,7 +1946,7 @@ final class Class130_Sub1 extends Class130 {
         Class238_Sub1.anInt5833 = 0;
         Class348_Sub16_Sub3.anInt8907 = 0;
         Class373_Sub2.anInt7447 = 0;
-        Class6.anInt153 = 0;
+        JavaBillboardFace.anInt153 = 0;
         Class64_Sub3.anInt5651 = 0;
         EnumTypeList.anInt459 = 0;
         Class318_Sub1_Sub2_Sub1.anInt10197 = 0;
@@ -2033,7 +2033,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub26.anInt6886 = 0;
         Class367_Sub2.anInt7286 = 0;
         Class231.anInt2994 = 0;
-        Class189.anInt2532 = 0;
+        BillboardType.anInt2532 = 0;
         Npc.anInt10514 = 0;
         Class296.anInt3765 = 0;
         Class348_Sub40.anInt7029 = 0;
@@ -2066,7 +2066,7 @@ final class Class130_Sub1 extends Class130 {
         Class101_Sub3.anInt5749 = 0;
         Class348_Sub40_Sub19.anInt9256 = 0;
         ha_Sub3.anInt7944 = 0;
-        Class101.anInt1596 = 0;
+        Matrix.anInt1596 = 0;
         Class40.anInt551 = 0;
         FloorOverlayTypeList.anInt3445 = 0;
         Class66.anInt1171 = 0;
@@ -2175,7 +2175,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt8000 = 0;
         Class175.anInt2313 = 0;
         FloorOverlayTypeList.anInt3434 = 0;
-        Class101_Sub1.anInt5661 = 0;
+        JavaMatrix.anInt5661 = 0;
         ha_Sub2.anInt7618 = 0;
         SafeModeOption.anInt5956 = 0;
         Class179.anInt2362 = 0;
@@ -2233,7 +2233,7 @@ final class Class130_Sub1 extends Class130 {
         Option_Sub24.anInt6084 = 0;
         Class22.anInt328 = 0;
         InvTypeList.anInt3469 = 0;
-        Class167.anInt2206 = 0;
+        JavaThreadResource.anInt2206 = 0;
         ha_Sub3.anInt7995 = 0;
         Class18.anInt272 = 0;
         Class30.anInt411 = 0;
@@ -2322,7 +2322,7 @@ final class Class130_Sub1 extends Class130 {
         Class98.anInt1568 = 0;
         Class50_Sub4.anInt5261 = 0;
         Class348_Sub11.anInt4768 = 0;
-        Class101_Sub1.anInt5667 = 0;
+        JavaMatrix.anInt5667 = 0;
         Applet_Sub1.anInt26 = 0;
         Class348_Sub20.anInt6828 = 0;
         Option_Sub3.anInt5860 = 0;
@@ -2330,7 +2330,7 @@ final class Class130_Sub1 extends Class130 {
         Class274.anInt3479 = 0;
         Class348_Sub42_Sub2.anInt8570 = 0;
         Class18.anInt283 = 0;
-        Class6.anInt149 = 0;
+        JavaBillboardFace.anInt149 = 0;
         OutputStream_Sub2.anInt103 = 0;
         Class348_Sub23.anInt6866 = 0;
         Class64_Sub3.anInt5622 = 0;
@@ -2507,7 +2507,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub1_Sub1.anInt8809 = 0;
         Class49.anInt4723 = 0;
         Class377.anInt9844 = 0;
-        Class101_Sub1.anInt5682 = 0;
+        JavaMatrix.anInt5682 = 0;
         Class348_Sub42_Sub11.anInt9583 = 0;
         Class101_Sub3.anInt5759 = 0;
         Class101_Sub2.anInt5690 = 0;
@@ -2662,7 +2662,7 @@ final class Class130_Sub1 extends Class130 {
         Npc.anInt10494 = 0;
         ha_Sub2.anInt7590 = 0;
         Class377.anInt9823 = 0;
-        Class101_Sub1.anInt5674 = 0;
+        JavaMatrix.anInt5674 = 0;
         Class348_Sub40_Sub12.anInt9193 = 0;
         ha_Sub3.anInt7890 = 0;
         Class334.anInt4164 = 0;
@@ -2700,7 +2700,7 @@ final class Class130_Sub1 extends Class130 {
         Class267.anInt3393 = 0;
         Class303.anInt3846 = 0;
         Class97.anInt1549 = 0;
-        Class101_Sub1.anInt5688 = 0;
+        JavaMatrix.anInt5688 = 0;
         Class348_Sub42_Sub10.anInt9576 = 0;
         Class363.anInt4464 = 0;
         Class38.anInt505 = 0;
@@ -2724,7 +2724,7 @@ final class Class130_Sub1 extends Class130 {
         Npc.anInt10511 = 0;
         Class5_Sub3.anInt8369 = 0;
         Class318_Sub1_Sub5.anInt8778 = 0;
-        Class350.anInt4318 = 0;
+        JavaBillboardAttributes.anInt4318 = 0;
         Class90.anInt1513 = 0;
         Option_Sub7.anInt5906 = 0;
         Option_Sub24.anInt6090 = 0;
@@ -2742,7 +2742,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub49_Sub1.anInt9742 = 0;
         Option_Sub23.anInt6081 = 0;
         Player.anInt10546 = 0;
-        Class101_Sub1.anInt5668 = 0;
+        JavaMatrix.anInt5668 = 0;
         Class367.anInt4482 = 0;
         Class76.anInt1278 = 0;
         Class377.anInt9863 = 0;
@@ -2760,7 +2760,7 @@ final class Class130_Sub1 extends Class130 {
         Class55.anInt1002 = 0;
         Class286_Sub6.anInt6273 = 0;
         Class190.anInt2550 = 0;
-        Class101_Sub1.anInt5658 = 0;
+        JavaMatrix.anInt5658 = 0;
         Option_Sub1.anInt5848 = 0;
         Class119_Sub2.anInt4831 = 0;
         Class67.anInt4642 = 0;
@@ -2799,7 +2799,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7689 = 0;
         FontMetrics.anInt1982 = 0;
         Class101_Sub2.anInt5718 = 0;
-        Class101_Sub1.anInt5659 = 0;
+        JavaMatrix.anInt5659 = 0;
         Class51.anInt866 = 0;
         Class16.anInt232 = 0;
         TimedVarDomain.anInt5075 = 0;
@@ -2979,7 +2979,7 @@ final class Class130_Sub1 extends Class130 {
         Class251.anInt3231 = 0;
         ClientScript.anInt9698 = 0;
         Class318_Sub1_Sub2.anInt8733 = 0;
-        Class167.anInt2193 = 0;
+        JavaThreadResource.anInt2193 = 0;
         Class367.anInt4485 = 0;
         Class17.anInt266 = 0;
         Class348_Sub16_Sub3.anInt8936 = 0;
@@ -3092,7 +3092,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub3_Sub2.anInt10057 = 0;
         Class318_Sub1_Sub1_Sub1.anInt9961 = 0;
         Class182.anInt2453 = 0;
-        Class189.anInt2528 = 0;
+        BillboardType.anInt2528 = 0;
         Option_Sub15.anInt5998 = 0;
         Option_Sub3.anInt5867 = 0;
         Class258_Sub2.anInt8533 = 0;
@@ -3130,7 +3130,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub14.anInt6760 = 0;
         Class377.anInt9830 = 0;
         Class262.anInt3327 = 0;
-        Class101.anInt1599 = 0;
+        Matrix.anInt1599 = 0;
         Option_Sub10.anInt5946 = 0;
         SkyBoxTypeList.anInt1457 = 0;
         Class101_Sub2.anInt5703 = 0;
@@ -3222,7 +3222,7 @@ final class Class130_Sub1 extends Class130 {
         Packet.anInt7158 = 0;
         Option_Sub12.anInt5960 = 0;
         SkyBoxSphereTypeList.anInt365 = 0;
-        Class350.anInt4315 = 0;
+        JavaBillboardAttributes.anInt4315 = 0;
         Class164.anInt2172 = 0;
         Class59_Sub1.anInt5284 = 0;
         Option_Sub5.anInt5889 = 0;
@@ -3266,7 +3266,7 @@ final class Class130_Sub1 extends Class130 {
         Js5TextureSource.anInt4612 = 0;
         Class361.anInt4446 = 0;
         Class85.anInt1464 = 0;
-        Class101_Sub1.anInt5657 = 0;
+        JavaMatrix.anInt5657 = 0;
         Class136.anInt4794 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10299 = 0;
         Sprite_Sub1.anInt8390 = 0;
@@ -3708,7 +3708,7 @@ final class Class130_Sub1 extends Class130 {
         Class51.anInt910 = 0;
         Class188.anInt2515 = 0;
         Option_Sub16.anInt6016 = 0;
-        Class358.anInt4413 = 0;
+        TextureUniverse.anInt4413 = 0;
         Mesh.anInt1838 = 0;
         Class348_Sub23_Sub2.anInt9013 = 0;
         Class218.anInt2849 = 0;
@@ -3827,7 +3827,7 @@ final class Class130_Sub1 extends Class130 {
         Class346_Sub1.anInt6526 = 0;
         ha_Sub3.anInt7895 = 0;
         Class294.anInt5061 = 0;
-        Class101_Sub1.anInt5679 = 0;
+        JavaMatrix.anInt5679 = 0;
         Class348_Sub42_Sub11.anInt9585 = 0;
         Class286_Sub4.anInt6235 = 0;
         Class348_Sub31_Sub2.anInt9080 = 0;
@@ -3961,12 +3961,12 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt7966 = 0;
         Class318_Sub1_Sub4_Sub2.anInt10099 = 0;
         ha_Sub2.anInt7651 = 0;
-        Class101_Sub1.anInt5683 = 0;
+        JavaMatrix.anInt5683 = 0;
         Player.anInt10550 = 0;
         Class101_Sub3.anInt5748 = 0;
         Class61.anInt1107 = 0;
         Class318_Sub1_Sub4_Sub2.anInt10112 = 0;
-        Class6.anInt147 = 0;
+        JavaBillboardFace.anInt147 = 0;
         Class285_Sub1.anInt8490 = 0;
         Class64_Sub2.anInt5454 = 0;
         Option_Sub3.anInt5858 = 0;
@@ -4036,7 +4036,7 @@ final class Class130_Sub1 extends Class130 {
         Class101_Sub3.anInt5758 = 0;
         Class103.anInt1608 = 0;
         Packet.anInt7142 = 0;
-        Class189.anInt2521 = 0;
+        BillboardType.anInt2521 = 0;
         Class258_Sub1.anInt8526 = 0;
         ha_Sub2.anInt7532 = 0;
         Class250.anInt3224 = 0;

@@ -543,7 +543,7 @@ final class s_Sub3 extends s {
                     this.aHa_Sub3_8322.method3817(60, 128);
                     this.aHa_Sub3_8322.method3814(false, false, -2, (byte) 100);
                     this.aHa_Sub3_8322.method3850((byte) 63, (this.aHa_Sub3_8322.anInterface18_8147));
-                    this.aHa_Sub3_8322.method3874(Class328_Sub3.aClass229_6519, 116, Class167.aClass229_2207);
+                    this.aHa_Sub3_8322.method3874(Class328_Sub3.aClass229_6519, 116, JavaThreadResource.aClass229_2207);
                     this.aHa_Sub3_8322.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
                     this.aHa_Sub3_8322.method3885(0, true, Class285_Sub2.aClass70_8503);
                     for (Node node = aClass262_8286.method1995(i_151_ + 5); node != null; node = aClass262_8286.method1990((byte) 106)) {
@@ -591,7 +591,7 @@ final class s_Sub3 extends s {
             for (int i_178_ = 0; i_178_ < is_171_.length; i_178_++) {
                 int i_179_ = is_173_[i_178_];
                 int i_180_ = is_174_[i_178_];
-                if ((this.anInt8294 & 0x20) != 0 && i_179_ != -1 && var_d.method3(i_179_, -6662).aBoolean209) {
+                if ((this.anInt8294 & 0x20) != 0 && i_179_ != -1 && var_d.getMetrics(i_179_, -6662).disableable) {
                     i_180_ = 128;
                     i_179_ = -1;
                 }

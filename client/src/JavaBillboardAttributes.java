@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class350 {
+final class JavaBillboardAttributes {
     int anInt4307;
     int anInt4308;
     int anInt4309;
@@ -26,29 +26,30 @@ final class Class350 {
         return (i + (i >>> 31)) % i_1_ + i_2_;
     }
 
-    final Class350 method3453(boolean bool) {
+    final JavaBillboardAttributes method3453(boolean bool) {
         anInt4318++;
         if (bool != true) method3453(false);
-        return new Class350(this.anInt4313, this.anInt4314, this.anInt4311, this.anInt4316, this.anInt4317, this.anInt4308);
+        return new JavaBillboardAttributes(this.anInt4313, this.anInt4314, this.anInt4311, this.anInt4316, this.anInt4317, this.anInt4308);
     }
 
-    final void method3454(Class350 class350_3_, boolean bool) {
-        this.anInt4308 = class350_3_.anInt4308;
-        this.anInt4314 = class350_3_.anInt4314;
+    final void method3454(JavaBillboardAttributes javaBillboardAttributes_3_, boolean bool) {
+        this.anInt4308 = javaBillboardAttributes_3_.anInt4308;
+        this.anInt4314 = javaBillboardAttributes_3_.anInt4314;
         if (bool == true) {
-            this.anInt4316 = class350_3_.anInt4316;
-            this.anInt4317 = class350_3_.anInt4317;
+            this.anInt4316 = javaBillboardAttributes_3_.anInt4316;
+            this.anInt4317 = javaBillboardAttributes_3_.anInt4317;
             anInt4321++;
-            this.anInt4313 = class350_3_.anInt4313;
-            this.anInt4311 = class350_3_.anInt4311;
+            this.anInt4313 = javaBillboardAttributes_3_.anInt4313;
+            this.anInt4311 = javaBillboardAttributes_3_.anInt4311;
         }
     }
 
-    Class350(int i) {
+    // Class350
+    JavaBillboardAttributes(int i) {
         this.anInt4313 = i;
     }
 
-    private Class350(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
+    private JavaBillboardAttributes(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
         this.anInt4317 = i_7_;
         this.anInt4313 = i;
         this.anInt4316 = i_6_;

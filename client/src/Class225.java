@@ -27,7 +27,7 @@ final class Class225 {
     int anInt2922;
     int anInt2923;
     int anInt2924;
-    private Class101[] aClass101Array2925;
+    private Matrix[] aMatrixArray2925;
     int anInt2926;
     int anInt2927;
     int anInt2928;
@@ -62,11 +62,11 @@ final class Class225 {
     static Class243 aClass243_2957;
     int anInt2958;
 
-    final Class101[] method1618(ha var_ha, int i) {
+    final Matrix[] method1618(ha var_ha, int i) {
         anInt2952++;
-        if (aClass101Array2925 != null && var_ha.anInt4567 == anInt2942) return aClass101Array2925;
+        if (aMatrixArray2925 != null && var_ha.anInt4567 == anInt2942) return aMatrixArray2925;
         if (this.anIntArrayArray2939 == null) return null;
-        aClass101Array2925 = new Class101[this.anIntArrayArray2939.length];
+        aMatrixArray2925 = new Matrix[this.anIntArrayArray2939.length];
         for (int i_0_ = i; (this.anIntArrayArray2939.length > i_0_); i_0_++) {
             int i_1_ = 0;
             int i_2_ = 0;
@@ -83,14 +83,14 @@ final class Class225 {
                 i_6_ = (this.anIntArrayArray2939[i_0_][5] << 3);
             }
             if (i_1_ != 0 || i_2_ != 0 || i_3_ != 0 || i_4_ != 0 || i_5_ != 0 || i_6_ != 0) {
-                Class101 class101 = aClass101Array2925[i_0_] = var_ha.method3654();
-                if (i_6_ != 0) class101.method908(i_6_);
-                if (i_4_ != 0) class101.method900(i_4_);
-                if (i_5_ != 0) class101.method896(i_5_);
-                class101.method891(i_1_, i_2_, i_3_);
+                Matrix matrix = aMatrixArray2925[i_0_] = var_ha.method3654();
+                if (i_6_ != 0) matrix.method908(i_6_);
+                if (i_4_ != 0) matrix.method900(i_4_);
+                if (i_5_ != 0) matrix.method896(i_5_);
+                matrix.method891(i_1_, i_2_, i_3_);
             }
         }
-        return aClass101Array2925;
+        return aMatrixArray2925;
     }
 
     public static void method1619(byte i) {

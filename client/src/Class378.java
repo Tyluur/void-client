@@ -204,7 +204,7 @@ public final class Class378 extends ha_Sub3 {
 
     private static final int method3955(int i, Class229 class229) {
         if (Class328_Sub3.aClass229_6519 == class229) return 2;
-        if (Class167.aClass229_2207 == class229) return 4;
+        if (JavaThreadResource.aClass229_2207 == class229) return 4;
         if (Class248.aClass229_3196 != class229) {
             if (class229 != Class348_Sub23_Sub2.aClass229_9011) {
                 if (class229 == Class348_Sub7.aClass229_6644) return 10;

@@ -118,8 +118,8 @@ final class Class341 {
                             npc.aModelArray10323[i_15_] = null;
                     }
                 }
-                Class50_Sub1.aClass101_5209 = null;
-                Class157.aClass101_2123 = null;
+                Class50_Sub1.aMatrix_5209 = null;
+                Class157.aMatrix_2123 = null;
                 Class348_Sub8.aHa6654.method3635((byte) 64);
                 Class348_Sub8.aHa6654 = null;
             }

@@ -24,7 +24,7 @@ final class Class192 {
         if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1) {
             i_0_ = 0;
             i_1_ = 3;
-        } else i_0_ = i_1_ = Class167.anInt2204;
+        } else i_0_ = i_1_ = JavaThreadResource.anInt2204;
         client.method115();
         for (int i_2_ = i_0_; i_2_ <= i_1_; i_2_++) {
             client.method109();

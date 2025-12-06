@@ -334,12 +334,12 @@ final class Class64_Sub2 extends Model {
         aBoolean5477 = false;
     }
 
-    final boolean method628(int i, int i_22_, Class101 class101, boolean bool, int i_23_) {
+    final boolean method628(int i, int i_22_, Matrix matrix, boolean bool, int i_23_) {
         try {
             anInt5414++;
-            return method662(i, i_23_, -1, 127, i_22_, bool, class101);
+            return method662(i, i_23_, -1, 127, i_22_, bool, matrix);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.MA(" + i + ',' + i_22_ + ',' + (class101 != null ? "{...}" : "null") + ',' + bool + ',' + i_23_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.MA(" + i + ',' + i_22_ + ',' + (matrix != null ? "{...}" : "null") + ',' + bool + ',' + i_23_ + ')'));
         }
     }
 
@@ -400,10 +400,10 @@ final class Class64_Sub2 extends Model {
         return anInt5509;
     }
 
-    private final boolean method662(int i, int i_30_, int i_31_, int i_32_, int i_33_, boolean bool, Class101 class101) {
+    private final boolean method662(int i, int i_30_, int i_31_, int i_32_, int i_33_, boolean bool, Matrix matrix) {
         try {
             anInt5450++;
-            Class101_Sub2 class101_sub2 = (Class101_Sub2) class101;
+            Class101_Sub2 class101_sub2 = (Class101_Sub2) matrix;
             Class101_Sub2 class101_sub2_34_ = aHa_Sub3_5419.aClass101_Sub2_8080;
             float f = (class101_sub2_34_.aFloat5729 + ((class101_sub2_34_.aFloat5711 * class101_sub2.aFloat5729) + (class101_sub2_34_.aFloat5700 * class101_sub2.aFloat5710) + (class101_sub2_34_.aFloat5704 * class101_sub2.aFloat5724)));
             float f_35_ = ((class101_sub2_34_.aFloat5732 * class101_sub2.aFloat5724) + ((class101_sub2.aFloat5710 * class101_sub2_34_.aFloat5722) + (class101_sub2.aFloat5729 * class101_sub2_34_.aFloat5708)) + class101_sub2_34_.aFloat5710);
@@ -483,7 +483,7 @@ final class Class64_Sub2 extends Model {
             if (bool_37_ && f_38_ < (float) i && f_39_ > (float) i && f_40_ < (float) i_33_ && f_41_ > (float) i_33_) {
                 if (bool) return true;
                 if (anInt5475 > Class318_Sub1_Sub1_Sub1.anIntArray9949.length) {
-                    Class101.anIntArray1593 = new int[anInt5475];
+                    Matrix.anIntArray1593 = new int[anInt5475];
                     Class318_Sub1_Sub1_Sub1.anIntArray9949 = new int[anInt5475];
                 }
                 for (int i_65_ = 0; i_65_ < anInt5433; i_65_++) {
@@ -503,7 +503,7 @@ final class Class64_Sub2 extends Model {
                             int i_77_ = -1 + aShortArray5439[i_76_];
                             if (i_77_ == -1) break;
                             Class318_Sub1_Sub1_Sub1.anIntArray9949[i_77_] = i_72_;
-                            Class101.anIntArray1593[i_77_] = i_73_;
+                            Matrix.anIntArray1593[i_77_] = i_73_;
                         }
                     } else {
                         int i_78_ = anIntArray5455[i_65_];
@@ -516,13 +516,13 @@ final class Class64_Sub2 extends Model {
                     }
                 }
                 for (int i_82_ = 0; anInt5478 > i_82_; i_82_++) {
-                    if ((Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5508[i_82_]]) != -999999 && (Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5495[i_82_]]) != -999999 && (Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5512[i_82_]]) != -999999 && method671(i, (Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5512[i_82_]]), (Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5495[i_82_]]), (Class101.anIntArray1593[aShortArray5512[i_82_]]), (Class101.anIntArray1593[aShortArray5508[i_82_]]), i_33_, 0, (Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5508[i_82_]]), (Class101.anIntArray1593[aShortArray5495[i_82_]])))
+                    if ((Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5508[i_82_]]) != -999999 && (Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5495[i_82_]]) != -999999 && (Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5512[i_82_]]) != -999999 && method671(i, (Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5512[i_82_]]), (Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5495[i_82_]]), (Matrix.anIntArray1593[aShortArray5512[i_82_]]), (Matrix.anIntArray1593[aShortArray5508[i_82_]]), i_33_, 0, (Class318_Sub1_Sub1_Sub1.anIntArray9949[aShortArray5508[i_82_]]), (Matrix.anIntArray1593[aShortArray5495[i_82_]])))
                         return true;
                 }
             }
             return false;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.AB(" + i + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + i_33_ + ',' + bool + ',' + (class101 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.AB(" + i + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ',' + i_33_ + ',' + bool + ',' + (matrix != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -802,7 +802,7 @@ final class Class64_Sub2 extends Model {
     private final void method665(int i, r_Sub1 var_r_Sub1) {
         try {
             if (anInt5475 > Class318_Sub1_Sub1_Sub1.anIntArray9949.length) {
-                Class101.anIntArray1593 = new int[anInt5475];
+                Matrix.anIntArray1593 = new int[anInt5475];
                 Class318_Sub1_Sub1_Sub1.anIntArray9949 = new int[anInt5475];
             }
             anInt5453++;
@@ -816,7 +816,7 @@ final class Class64_Sub2 extends Model {
                         int i_129_ = aShortArray5439[i_128_] - 1;
                         if (i_129_ == -1) break;
                         Class318_Sub1_Sub1_Sub1.anIntArray9949[i_129_] = i_124_;
-                        Class101.anIntArray1593[i_129_] = i_125_;
+                        Matrix.anIntArray1593[i_129_] = i_125_;
                     }
                 }
                 for (int i_130_ = 0; anInt5516 > i_130_; i_130_++) {
@@ -827,9 +827,9 @@ final class Class64_Sub2 extends Model {
                         int i_134_ = Class318_Sub1_Sub1_Sub1.anIntArray9949[i_131_];
                         int i_135_ = Class318_Sub1_Sub1_Sub1.anIntArray9949[i_132_];
                         int i_136_ = Class318_Sub1_Sub1_Sub1.anIntArray9949[i_133_];
-                        int i_137_ = Class101.anIntArray1593[i_131_];
-                        int i_138_ = Class101.anIntArray1593[i_132_];
-                        int i_139_ = Class101.anIntArray1593[i_133_];
+                        int i_137_ = Matrix.anIntArray1593[i_131_];
+                        int i_138_ = Matrix.anIntArray1593[i_132_];
+                        int i_139_ = Matrix.anIntArray1593[i_133_];
                         if ((-((i_136_ - i_135_) * (-i_137_ + i_138_)) + (i_138_ - i_139_) * (-i_135_ + i_134_)) > 0) var_r_Sub1.method3287(i_137_, 50, i_134_, i_135_, i_138_, i_139_, i_136_);
                     }
                 }
@@ -892,15 +892,15 @@ final class Class64_Sub2 extends Model {
         return false;
     }
 
-    final void method610(Class101 class101, int i, boolean bool) {
+    final void method610(Matrix matrix, int i, boolean bool) {
         try {
             anInt5434++;
             if (aShortArray5494 != null) {
                 int[] is = new int[3];
                 for (int i_149_ = 0; i_149_ < anInt5433; i_149_++) {
                     if ((i & aShortArray5494[i_149_]) != 0) {
-                        if (!bool) class101.method897(anIntArray5511[i_149_], anIntArray5519[i_149_], anIntArray5429[i_149_], is);
-                        else class101.method892(anIntArray5511[i_149_], anIntArray5519[i_149_], anIntArray5429[i_149_], is);
+                        if (!bool) matrix.method897(anIntArray5511[i_149_], anIntArray5519[i_149_], anIntArray5429[i_149_], is);
+                        else matrix.method892(anIntArray5511[i_149_], anIntArray5519[i_149_], anIntArray5429[i_149_], is);
                         anIntArray5511[i_149_] = is[0];
                         anIntArray5519[i_149_] = is[1];
                         anIntArray5429[i_149_] = is[2];
@@ -908,7 +908,7 @@ final class Class64_Sub2 extends Model {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.za(" + (class101 != null ? "{...}" : "null") + ',' + i + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.za(" + (matrix != null ? "{...}" : "null") + ',' + i + ',' + bool + ')'));
         }
     }
 
@@ -1169,11 +1169,11 @@ final class Class64_Sub2 extends Model {
         return aShort5452;
     }
 
-    final void method620(Class101 class101) {
+    final void method620(Matrix matrix) {
         do {
             try {
                 anInt5444++;
-                Class101_Sub2 class101_sub2 = (Class101_Sub2) class101;
+                Class101_Sub2 class101_sub2 = (Class101_Sub2) matrix;
                 if (aModelParticleEmitterArray5457 != null) {
                     for (int i = 0; (aModelParticleEmitterArray5457.length > i); i++) {
                         ModelParticleEmitter modelParticleEmitter = aModelParticleEmitterArray5457[i];
@@ -1195,14 +1195,14 @@ final class Class64_Sub2 extends Model {
                     ModelParticleEffector modelParticleEffector = aModelParticleEffectorArray5474[i];
                     ModelParticleEffector modelParticleEffector_178_ = modelParticleEffector;
                     if (modelParticleEffector.aModelParticleEffector_4248 != null) modelParticleEffector_178_ = modelParticleEffector.aModelParticleEffector_4248;
-                    if (modelParticleEffector.aClass101_4252 != null) modelParticleEffector.aClass101_4252.method898(class101_sub2);
-                    else modelParticleEffector.aClass101_4252 = class101_sub2.method907();
+                    if (modelParticleEffector.aMatrix_4252 != null) modelParticleEffector.aMatrix_4252.method898(class101_sub2);
+                    else modelParticleEffector.aMatrix_4252 = class101_sub2.method907();
                     modelParticleEffector_178_.anInt4238 = (int) (((float) (anIntArray5519[modelParticleEffector.anInt4244]) * class101_sub2.aFloat5700) + ((float) (anIntArray5511[modelParticleEffector.anInt4244]) * (class101_sub2.aFloat5711)) + ((float) (anIntArray5429[modelParticleEffector.anInt4244]) * (class101_sub2.aFloat5704)) + class101_sub2.aFloat5729);
                     modelParticleEffector_178_.anInt4239 = (int) (((float) (anIntArray5429[modelParticleEffector.anInt4244]) * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (float) (anIntArray5519[(modelParticleEffector.anInt4244)])) + ((float) (anIntArray5511[(modelParticleEffector.anInt4244)]) * (class101_sub2.aFloat5708))) + class101_sub2.aFloat5710);
                     modelParticleEffector_178_.anInt4240 = (int) (((float) (anIntArray5519[modelParticleEffector.anInt4244]) * class101_sub2.aFloat5691) + ((float) (anIntArray5511[modelParticleEffector.anInt4244]) * (class101_sub2.aFloat5736)) + ((float) (anIntArray5429[modelParticleEffector.anInt4244]) * (class101_sub2.aFloat5716)) + class101_sub2.aFloat5724);
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, "nca.J(" + (class101 != null ? "{...}" : "null") + ')');
+                throw Class348_Sub17.method2929(runtimeexception, "nca.J(" + (matrix != null ? "{...}" : "null") + ')');
             }
             break;
         } while (false);
@@ -1214,12 +1214,12 @@ final class Class64_Sub2 extends Model {
         return anInt5418;
     }
 
-    final void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_179_) {
+    final void method608(Matrix matrix, Class318_Sub3 class318_sub3, int i, int i_179_) {
         try {
             anInt5487++;
             if (anInt5475 != 0) {
                 Class101_Sub2 class101_sub2 = aHa_Sub3_5419.aClass101_Sub2_8080;
-                Class101_Sub2 class101_sub2_180_ = (Class101_Sub2) class101;
+                Class101_Sub2 class101_sub2_180_ = (Class101_Sub2) matrix;
                 if (!aBoolean5477) method675(0);
                 Class240.aFloat4673 = (class101_sub2.aFloat5724 + ((class101_sub2_180_.aFloat5710 * class101_sub2.aFloat5691) + (class101_sub2_180_.aFloat5729 * class101_sub2.aFloat5736) + (class101_sub2_180_.aFloat5724 * class101_sub2.aFloat5716)));
                 Class353.aFloat4338 = ((class101_sub2.aFloat5691 * class101_sub2_180_.aFloat5722) + (class101_sub2.aFloat5736 * class101_sub2_180_.aFloat5700) + (class101_sub2.aFloat5716 * class101_sub2_180_.aFloat5691));
@@ -1299,7 +1299,7 @@ final class Class64_Sub2 extends Model {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.Q(" + (class101 != null ? "{...}" : "null") + ',' + (class318_sub3 != null ? "{...}" : "null") + ',' + i + ',' + i_179_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.Q(" + (matrix != null ? "{...}" : "null") + ',' + (class318_sub3 != null ? "{...}" : "null") + ',' + i + ',' + i_179_ + ')'));
         }
     }
 
@@ -1654,12 +1654,12 @@ final class Class64_Sub2 extends Model {
         }
     }
 
-    final void method615(Class101 class101, Class318_Sub3 class318_sub3, int i) {
+    final void method615(Matrix matrix, Class318_Sub3 class318_sub3, int i) {
         try {
             anInt5471++;
             if (anInt5475 != 0) {
                 Class101_Sub2 class101_sub2 = aHa_Sub3_5419.aClass101_Sub2_8080;
-                Class101_Sub2 class101_sub2_307_ = (Class101_Sub2) class101;
+                Class101_Sub2 class101_sub2_307_ = (Class101_Sub2) matrix;
                 if (!aBoolean5477) method675(0);
                 Class353.aFloat4338 = ((class101_sub2.aFloat5736 * class101_sub2_307_.aFloat5700) + (class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5722) + (class101_sub2_307_.aFloat5691 * class101_sub2.aFloat5716));
                 Class240.aFloat4673 = ((class101_sub2_307_.aFloat5724 * class101_sub2.aFloat5716) + ((class101_sub2.aFloat5691 * class101_sub2_307_.aFloat5710) + (class101_sub2_307_.aFloat5729 * class101_sub2.aFloat5736)) + class101_sub2.aFloat5724);
@@ -1765,7 +1765,7 @@ final class Class64_Sub2 extends Model {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.KA(" + (class101 != null ? "{...}" : "null") + ',' + (class318_sub3 != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.KA(" + (matrix != null ? "{...}" : "null") + ',' + (class318_sub3 != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 
@@ -1812,8 +1812,8 @@ final class Class64_Sub2 extends Model {
                 for (int i_337_ = 0; i_337_ < mesh.faceCount; i_337_++) {
                     if (mesh.shadingType == null || mesh.shadingType[i_337_] != 2) {
                         if (mesh.faceTexture != null && (mesh.faceTexture[i_337_] != -1)) {
-                            Class12 class12 = var_d.method3(((mesh.faceTexture[i_337_]) & 0xffff), -6662);
-                            if (((anInt5472 & 0x40) == 0 || !class12.aBoolean209) && class12.aBoolean204) continue;
+                            TextureMetrics textureMetrics = var_d.getMetrics(((mesh.faceTexture[i_337_]) & 0xffff), -6662);
+                            if (((anInt5472 & 0x40) == 0 || !textureMetrics.disableable) && textureMetrics.aBoolean204) continue;
                         }
                         is[anInt5478++] = i_337_;
                         anIntArray5455[(mesh.faceA[i_337_])]++;
@@ -1826,7 +1826,7 @@ final class Class64_Sub2 extends Model {
                 boolean bool = (0x100 & anInt5463) != 0;
                 for (int i_338_ = 0; i_338_ < anInt5478; i_338_++) {
                     int i_339_ = is[i_338_];
-                    Class12 class12 = null;
+                    TextureMetrics textureMetrics = null;
                     int i_340_ = 0;
                     int i_341_ = 0;
                     int i_342_ = 0;
@@ -1835,12 +1835,12 @@ final class Class64_Sub2 extends Model {
                         boolean bool_344_ = false;
                         for (int i_345_ = 0; i_345_ < (mesh.billboards).length; i_345_++) {
                             MeshBillboard meshBillboard = (mesh.billboards[i_345_]);
-                            if (meshBillboard.anInt2155 == i_339_) {
-                                Class189 class189 = Class73.method742(104, (meshBillboard.anInt2153));
-                                if (class189.aBoolean2531) bool_344_ = true;
-                                if (class189.anInt2525 != -1) {
-                                    Class12 class12_346_ = var_d.method3((class189.anInt2525), -6662);
-                                    if (class12_346_.anInt200 == 2) aBoolean5428 = true;
+                            if (meshBillboard.face == i_339_) {
+                                BillboardType billboardType = Class73.billboardTypeList(104, (meshBillboard.anInt2153));
+                                if (billboardType.hideFace) bool_344_ = true;
+                                if (billboardType.texture != -1) {
+                                    TextureMetrics textureMetrics_346_ = var_d.getMetrics((billboardType.texture), -6662);
+                                    if (textureMetrics_346_.alphaBlendMode == 2) aBoolean5428 = true;
                                 }
                             }
                         }
@@ -1854,17 +1854,17 @@ final class Class64_Sub2 extends Model {
                     if (mesh.faceTexture != null) {
                         i_347_ = mesh.faceTexture[i_339_];
                         if (i_347_ != -1) {
-                            class12 = var_d.method3(0xffff & i_347_, -6662);
-                            if ((0x40 & anInt5472) != 0 && class12.aBoolean209) {
+                            textureMetrics = var_d.getMetrics(0xffff & i_347_, -6662);
+                            if ((0x40 & anInt5472) != 0 && textureMetrics.disableable) {
                                 i_347_ = -1;
-                                class12 = null;
+                                textureMetrics = null;
                             } else {
-                                i_343_ = class12.aByte202;
-                                i_342_ = class12.aByte213;
+                                i_343_ = textureMetrics.effectParam1;
+                                i_342_ = textureMetrics.effectType;
                             }
                         }
                     }
-                    boolean bool_348_ = ((mesh.faceAlpha != null && mesh.faceAlpha[i_339_] != 0) || (class12 != null && class12.anInt200 != 0));
+                    boolean bool_348_ = ((mesh.faceAlpha != null && mesh.faceAlpha[i_339_] != 0) || (textureMetrics != null && textureMetrics.alphaBlendMode != 0));
                     if ((bool || bool_348_) && mesh.facePriority != null) i_340_ += (mesh.facePriority[i_339_] << 17);
                     if (bool_348_) i_340_ += 65536;
                     i_340_ += 0xff00 & i_342_ << 8;
@@ -1873,10 +1873,10 @@ final class Class64_Sub2 extends Model {
                     i_341_ += 0xffff & i_338_;
                     ls[i_338_] = ((long) i_340_ << 32) + (long) i_341_;
                     Class64_Sub2 class64_sub2_349_ = this;
-                    class64_sub2_349_.aBoolean5502 = (class64_sub2_349_.aBoolean5502 | (class12 != null && (class12.aByte198 != 0 || class12.aByte211 != 0)));
+                    class64_sub2_349_.aBoolean5502 = (class64_sub2_349_.aBoolean5502 | (textureMetrics != null && (textureMetrics.speedU != 0 || textureMetrics.speedV != 0)));
                     aBoolean5428 |= bool_348_;
                 }
-                Class348_Sub16_Sub2.method2832(is, ls, 0);
+                Class348_Sub16_Sub2.quickSort(is, ls, 0);
                 anInt5497 = mesh.vertexCount;
                 anIntArray5429 = mesh.vertexZ;
                 anIntArray5519 = mesh.vertexY;
@@ -1892,18 +1892,18 @@ final class Class64_Sub2 extends Model {
                     aClass334Array5442 = new Class334[anInt5406];
                     for (int i_350_ = 0; anInt5406 > i_350_; i_350_++) {
                         MeshBillboard meshBillboard = mesh.billboards[i_350_];
-                        Class189 class189 = Class73.method742(104, (meshBillboard.anInt2153));
+                        BillboardType billboardType = Class73.billboardTypeList(104, (meshBillboard.anInt2153));
                         int i_351_ = -1;
                         for (int i_352_ = 0; i_352_ < anInt5478; i_352_++) {
-                            if (meshBillboard.anInt2155 == is[i_352_]) {
+                            if (meshBillboard.face == is[i_352_]) {
                                 i_351_ = i_352_;
                                 break;
                             }
                         }
                         if (i_351_ == -1) throw new RuntimeException();
-                        int i_353_ = (0xffffff & (Class10.HSL_TO_RGB[((mesh.faceColour[meshBillboard.anInt2155]) & 0xffff)]));
-                        i_353_ = (i_353_ | -(mesh.faceAlpha == null ? 0 : (mesh.faceAlpha[(meshBillboard.anInt2155)])) + 255 << 24);
-                        aClass353Array5524[i_350_] = new Class353(i_351_, (mesh.faceA[meshBillboard.anInt2155]), (mesh.faceB[meshBillboard.anInt2155]), (mesh.faceC[meshBillboard.anInt2155]), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, meshBillboard.anInt2158);
+                        int i_353_ = (0xffffff & (Class10.HSL_TO_RGB[((mesh.faceColour[meshBillboard.face]) & 0xffff)]));
+                        i_353_ = (i_353_ | -(mesh.faceAlpha == null ? 0 : (mesh.faceAlpha[(meshBillboard.face)])) + 255 << 24);
+                        aClass353Array5524[i_350_] = new Class353(i_351_, (mesh.faceA[meshBillboard.face]), (mesh.faceB[meshBillboard.face]), (mesh.faceC[meshBillboard.face]), billboardType.anInt2526, billboardType.anInt2530, billboardType.texture, billboardType.anInt2533, billboardType.anInt2534, billboardType.hideFace, billboardType.aBoolean2522, meshBillboard.anInt2158);
                         aClass334Array5442[i_350_] = new Class334(i_353_);
                     }
                 }
@@ -1935,7 +1935,7 @@ final class Class64_Sub2 extends Model {
                     class371s[i_356_] = new Class371();
                 }
                 anIntArray5455[mesh.maxVertex] = i_355_;
-                Class358 class358 = Class59_Sub2_Sub1.method565(255, anInt5478, mesh, is);
+                TextureUniverse textureUniverse = Class59_Sub2_Sub1.method565(255, anInt5478, mesh, is);
                 Class63[] class63s = new Class63[mesh.faceCount];
                 for (int i_358_ = 0; (mesh.faceCount > i_358_); i_358_++) {
                     short i_359_ = mesh.faceA[i_358_];
@@ -1994,8 +1994,8 @@ final class Class64_Sub2 extends Model {
                     else i_377_ = 0xff & (mesh.faceAlpha[i_374_]);
                     short i_378_ = (mesh.faceTexture != null ? mesh.faceTexture[i_374_] : (short) -1);
                     if (i_378_ != -1 && (anInt5472 & 0x40) != 0) {
-                        Class12 class12 = var_d.method3(0xffff & i_378_, -6662);
-                        if (class12.aBoolean209) i_378_ = (short) -1;
+                        TextureMetrics textureMetrics = var_d.getMetrics(0xffff & i_378_, -6662);
+                        if (textureMetrics.disableable) i_378_ = (short) -1;
                     }
                     float f = 0.0F;
                     float f_379_ = 0.0F;
@@ -2065,21 +2065,21 @@ final class Class64_Sub2 extends Model {
                                 short i_388_ = (mesh.faceA[i_374_]);
                                 short i_389_ = (mesh.faceB[i_374_]);
                                 short i_390_ = (mesh.faceC[i_374_]);
-                                int i_391_ = (class358.anIntArray4416[i_376_]);
-                                int i_392_ = (class358.anIntArray4415[i_376_]);
-                                int i_393_ = (class358.anIntArray4414[i_376_]);
-                                float[] fs = (class358.aFloatArrayArray4412[i_376_]);
+                                int i_391_ = (textureUniverse.originX[i_376_]);
+                                int i_392_ = (textureUniverse.originY[i_376_]);
+                                int i_393_ = (textureUniverse.originZ[i_376_]);
+                                float[] fs = (textureUniverse.matrices[i_376_]);
                                 byte i_394_ = (mesh.rexDirection[i_376_]);
                                 float f_395_ = ((float) (mesh.texOffsetX[i_376_]) / 256.0F);
                                 if (i_387_ == 1) {
                                     float f_413_ = ((float) (mesh.texSpaceScaleZ[i_376_]) / 1024.0F);
-                                    Class246.method1885(i_393_, (mesh.vertexZ[i_388_]), i_394_, 8, (mesh.vertexX[i_388_]), Class283.aFloatArray3658, (mesh.vertexY[i_388_]), f_395_, i_392_, i_391_, f_413_, fs);
+                                    Class246.cylinderMap(i_393_, (mesh.vertexZ[i_388_]), i_394_, 8, (mesh.vertexX[i_388_]), Class283.aFloatArray3658, (mesh.vertexY[i_388_]), f_395_, i_392_, i_391_, f_413_, fs);
                                     f_379_ = Class283.aFloatArray3658[1];
                                     f = Class283.aFloatArray3658[0];
-                                    Class246.method1885(i_393_, (mesh.vertexZ[i_389_]), i_394_, 8, (mesh.vertexX[i_389_]), Class283.aFloatArray3658, (mesh.vertexY[i_389_]), f_395_, i_392_, i_391_, f_413_, fs);
+                                    Class246.cylinderMap(i_393_, (mesh.vertexZ[i_389_]), i_394_, 8, (mesh.vertexX[i_389_]), Class283.aFloatArray3658, (mesh.vertexY[i_389_]), f_395_, i_392_, i_391_, f_413_, fs);
                                     f_381_ = Class283.aFloatArray3658[1];
                                     f_380_ = Class283.aFloatArray3658[0];
-                                    Class246.method1885(i_393_, (mesh.vertexZ[i_390_]), i_394_, 8, (mesh.vertexX[i_390_]), Class283.aFloatArray3658, (mesh.vertexY[i_390_]), f_395_, i_392_, i_391_, f_413_, fs);
+                                    Class246.cylinderMap(i_393_, (mesh.vertexZ[i_390_]), i_394_, 8, (mesh.vertexX[i_390_]), Class283.aFloatArray3658, (mesh.vertexY[i_390_]), f_395_, i_392_, i_391_, f_413_, fs);
                                     f_382_ = Class283.aFloatArray3658[0];
                                     f_383_ = Class283.aFloatArray3658[1];
                                     float f_414_ = f_413_ / 2.0F;
@@ -2132,24 +2132,24 @@ final class Class64_Sub2 extends Model {
                                     float f_410_ = (((float) i_406_ * fs[2] + ((float) i_404_ * fs[0] + (float) i_405_ * fs[1])) / f_407_);
                                     float f_411_ = ((fs[5] * (float) i_406_ + (fs[3] * (float) i_404_ + (float) i_405_ * fs[4])) / f_408_);
                                     float f_412_ = (((float) i_405_ * fs[7] + fs[6] * (float) i_404_ + fs[8] * (float) i_406_) / f_409_);
-                                    i_386_ = Class331.method2635(f_411_, false, f_412_, f_410_);
-                                    Class262.method1991(f_397_, f_395_, fs, (mesh.vertexZ[i_388_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_388_]), (mesh.vertexY[i_388_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
+                                    i_386_ = Class331.cubeFace(f_411_, false, f_412_, f_410_);
+                                    Class262.cubeMap(f_397_, f_395_, fs, (mesh.vertexZ[i_388_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_388_]), (mesh.vertexY[i_388_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
                                     f_379_ = Class283.aFloatArray3658[1];
                                     f = Class283.aFloatArray3658[0];
-                                    Class262.method1991(f_397_, f_395_, fs, (mesh.vertexZ[i_389_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_389_]), (mesh.vertexY[i_389_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
+                                    Class262.cubeMap(f_397_, f_395_, fs, (mesh.vertexZ[i_389_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_389_]), (mesh.vertexY[i_389_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
                                     f_381_ = Class283.aFloatArray3658[1];
                                     f_380_ = Class283.aFloatArray3658[0];
-                                    Class262.method1991(f_397_, f_395_, fs, (mesh.vertexZ[i_390_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_390_]), (mesh.vertexY[i_390_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
+                                    Class262.cubeMap(f_397_, f_395_, fs, (mesh.vertexZ[i_390_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_390_]), (mesh.vertexY[i_390_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
                                     f_382_ = Class283.aFloatArray3658[0];
                                     f_383_ = Class283.aFloatArray3658[1];
                                 } else if (i_387_ == 3) {
-                                    Class181.method1367(i_393_, i_394_, f_395_, (mesh.vertexX[i_388_]), Class283.aFloatArray3658, (mesh.vertexZ[i_388_]), i_391_, (mesh.vertexY[i_388_]), i_392_, -4, fs);
+                                    Class181.sphereMap(i_393_, i_394_, f_395_, (mesh.vertexX[i_388_]), Class283.aFloatArray3658, (mesh.vertexZ[i_388_]), i_391_, (mesh.vertexY[i_388_]), i_392_, -4, fs);
                                     f = Class283.aFloatArray3658[0];
                                     f_379_ = Class283.aFloatArray3658[1];
-                                    Class181.method1367(i_393_, i_394_, f_395_, (mesh.vertexX[i_389_]), Class283.aFloatArray3658, (mesh.vertexZ[i_389_]), i_391_, (mesh.vertexY[i_389_]), i_392_, -4, fs);
+                                    Class181.sphereMap(i_393_, i_394_, f_395_, (mesh.vertexX[i_389_]), Class283.aFloatArray3658, (mesh.vertexZ[i_389_]), i_391_, (mesh.vertexY[i_389_]), i_392_, -4, fs);
                                     f_380_ = Class283.aFloatArray3658[0];
                                     f_381_ = Class283.aFloatArray3658[1];
-                                    Class181.method1367(i_393_, i_394_, f_395_, (mesh.vertexX[i_390_]), Class283.aFloatArray3658, (mesh.vertexZ[i_390_]), i_391_, (mesh.vertexY[i_390_]), i_392_, -4, fs);
+                                    Class181.sphereMap(i_393_, i_394_, f_395_, (mesh.vertexX[i_390_]), Class283.aFloatArray3658, (mesh.vertexZ[i_390_]), i_391_, (mesh.vertexY[i_390_]), i_392_, -4, fs);
                                     f_382_ = Class283.aFloatArray3658[0];
                                     f_383_ = Class283.aFloatArray3658[1];
                                     if ((i_394_ & 0x1) == 0) {
@@ -2342,12 +2342,12 @@ final class Class64_Sub2 extends Model {
         }
     }
 
-    final boolean method623(int i, int i_478_, Class101 class101, boolean bool, int i_479_, int i_480_) {
+    final boolean method623(int i, int i_478_, Matrix matrix, boolean bool, int i_479_, int i_480_) {
         try {
             anInt5517++;
-            return method662(i, i_479_, i_480_, 126, i_478_, bool, class101);
+            return method662(i, i_479_, i_480_, 126, i_478_, bool, matrix);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nca.OA(" + i + ',' + i_478_ + ',' + (class101 != null ? "{...}" : "null") + ',' + bool + ',' + i_479_ + ',' + i_480_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nca.OA(" + i + ',' + i_478_ + ',' + (matrix != null ? "{...}" : "null") + ',' + bool + ',' + i_479_ + ',' + i_480_ + ')'));
         }
     }
 
@@ -2656,17 +2656,17 @@ final class Class64_Sub2 extends Model {
         byte i_572_ = 0;
         byte i_573_ = 0;
         if (i != -1) {
-            Class12 class12 = var_d.method3(i & 0xffff, -6662);
-            i_573_ = class12.aByte216;
-            i_572_ = class12.aByte201;
+            TextureMetrics textureMetrics = var_d.getMetrics(i & 0xffff, -6662);
+            i_573_ = textureMetrics.aByte216;
+            i_572_ = textureMetrics.aByte201;
         }
         byte i_574_ = 0;
         byte i_575_ = 0;
         if (i_570_ != -1) {
-            Class12 class12 = var_d.method3(0xffff & i_570_, -6662);
-            i_575_ = class12.aByte216;
-            if (class12.aByte198 != 0 || class12.aByte211 != 0) aBoolean5502 = true;
-            i_574_ = class12.aByte201;
+            TextureMetrics textureMetrics = var_d.getMetrics(0xffff & i_570_, -6662);
+            i_575_ = textureMetrics.aByte216;
+            if (textureMetrics.speedU != 0 || textureMetrics.speedV != 0) aBoolean5502 = true;
+            i_574_ = textureMetrics.aByte201;
         }
         if (i_575_ != i_573_ | i_572_ != i_574_) {
             if (aClass353Array5524 != null) {

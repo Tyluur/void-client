@@ -31,7 +31,7 @@ final class Class172 {
         if (i != -26162) anIntArray2280 = null;
         Class351.aClass60_4327.method587(-118);
         anInt2281++;
-        Class358.aClass60_4417.method587(-89);
+        TextureUniverse.aClass60_4417.method587(-89);
         Option_Sub24.aClass60_6096.method587(-87);
         Class348_Sub40_Sub9.aClass60_9171.method587(-95);
     }

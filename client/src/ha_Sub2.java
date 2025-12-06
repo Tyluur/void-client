@@ -735,18 +735,18 @@ final class ha_Sub2 extends ha {
             byte i_51_ = !this.aBoolean7846 ? (byte) 0 : (byte) 3;
             if (i >= 0) {
                 class258_sub3 = aClass354_7723.method3467(i, 256);
-                Class12 class12 = this.aD4579.method3(i, -6662);
-                if (class12.aByte198 != 0 || class12.aByte211 != 0) {
-                    int i_52_ = class12.aBoolean199 ? 64 : 128;
+                TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+                if (textureMetrics.speedU != 0 || textureMetrics.speedV != 0) {
+                    int i_52_ = textureMetrics.aBoolean199 ? 64 : 128;
                     int i_53_ = i_52_ * 50;
-                    method3799(((float) (this.anInt7735 % i_53_ * class12.aByte211) / (float) i_53_), 0.0F, (float) (class12.aByte198 * (this.anInt7735 % i_53_)) / (float) i_53_, (byte) 126);
+                    method3799(((float) (this.anInt7735 % i_53_ * textureMetrics.speedV) / (float) i_53_), 0.0F, (float) (textureMetrics.speedU * (this.anInt7735 % i_53_)) / (float) i_53_, (byte) 126);
                 } else method3767(-21974);
                 if (!this.aBoolean7846) {
-                    i_51_ = class12.aByte213;
-                    i_50_ = class12.anInt206;
-                    i_49_ = class12.aByte202;
+                    i_51_ = textureMetrics.effectType;
+                    i_50_ = textureMetrics.anInt206;
+                    i_49_ = textureMetrics.effectParam1;
                 }
-                i_48_ = class12.anInt203;
+                i_48_ = textureMetrics.anInt203;
             } else method3767(-21974);
             aClass100_7707.method884(i_49_, bool, i_51_, i_50_, (byte) 12, bool_46_);
             if (!aClass100_7707.method885(i_48_, (byte) -124, class258_sub3)) {
@@ -867,18 +867,18 @@ final class ha_Sub2 extends ha {
         OpenGL.glTexEnvfv(8960, 8705, InputStream_Sub2.aFloatArray84, 0);
     }
 
-    final void method3638(Class101 class101) {
+    final void method3638(Matrix matrix) {
         do {
             try {
                 anInt7549++;
-                this.aClass101_Sub3_7760.method898(class101);
+                this.aClass101_Sub3_7760.method898(matrix);
                 this.aClass101_Sub3_7766.method898(this.aClass101_Sub3_7760);
                 this.aClass101_Sub3_7766.method942(3128);
                 this.aClass101_Sub3_7767.method946(this.aClass101_Sub3_7766, -7929);
                 if (anInt7865 == 1) break;
                 method3754((byte) 89);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, "qo.DE(" + (class101 != null ? "{...}" : "null") + ')');
+                throw Class348_Sub17.method2929(runtimeexception, "qo.DE(" + (matrix != null ? "{...}" : "null") + ')');
             }
             break;
         } while (false);
@@ -2313,7 +2313,7 @@ final class ha_Sub2 extends ha {
         }
     }
 
-    final Class101 method3654() {
+    final Matrix method3654() {
         anInt7716++;
         return new Class101_Sub3();
     }
@@ -2691,7 +2691,7 @@ final class ha_Sub2 extends ha {
         }
     }
 
-    final Class101 method3640() {
+    final Matrix method3640() {
         anInt7650++;
         return this.aClass101_Sub3_7760;
     }
@@ -2702,7 +2702,7 @@ final class ha_Sub2 extends ha {
         if (i != -30199) K(null);
     }
 
-    final Class101 method3705() {
+    final Matrix method3705() {
         anInt7587++;
         return aClass101_Sub3_7725;
     }

@@ -13,7 +13,7 @@ final class Class348_Sub35 extends Node {
 
     static final void method3027(byte i) {
         anInt6975++;
-        if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 0 && QuickChatPhraseTypeList.anInt4372 != Class167.anInt2204) Class348_Sub41.method3157(Class327.anInt4095, (byte) 123, ha.anInt4581, 11, false);
+        if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 0 && QuickChatPhraseTypeList.anInt4372 != JavaThreadResource.anInt2204) Class348_Sub41.method3157(Class327.anInt4095, (byte) 123, ha.anInt4581, 11, false);
         else {
             Class348_Sub46.method3319(Class348_Sub8.aHa6654, (byte) -121);
             if (i != 33) method3028(-79);

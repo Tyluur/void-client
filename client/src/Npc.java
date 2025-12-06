@@ -59,17 +59,17 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
     final boolean method2391(ha var_ha, int i, int i_9_, int i_10_) {
         anInt10514++;
         if (this.aNPCDefinition_10505 == null || !method2447(97, 131072, var_ha)) return false;
-        Class101 class101 = var_ha.method3705();
+        Matrix matrix = var_ha.method3705();
         int i_11_ = this.aClass264_10217.method2019((byte) -78);
-        class101.method895(i_11_);
-        class101.method891(this.x, this.anInt6382, this.y);
+        matrix.method895(i_11_);
+        matrix.method891(this.x, this.anInt6382, this.y);
         boolean bool = false;
         for (int i_12_ = i_10_; (this.aModelArray10323.length > i_12_); i_12_++) {
             if (this.aModelArray10323[i_12_] != null) {
                 boolean bool_13_ = (this.aNPCDefinition_10505.anInt1337 > 0 || (this.aNPCDefinition_10505.anInt1333 != -1 ? this.aNPCDefinition_10505.anInt1333 == 1 : this.aNPCDefinition_10505.size == 1));
                 boolean bool_14_;
-                if (Class305.aBoolean3870) bool_14_ = (this.aModelArray10323[i_12_].method623(i_9_, i, class101, bool_13_, this.aNPCDefinition_10505.anInt1337, Class132.anInt1906));
-                else bool_14_ = (this.aModelArray10323[i_12_].method628(i_9_, i, class101, bool_13_, this.aNPCDefinition_10505.anInt1337));
+                if (Class305.aBoolean3870) bool_14_ = (this.aModelArray10323[i_12_].method623(i_9_, i, matrix, bool_13_, this.aNPCDefinition_10505.anInt1337, Class132.anInt1906));
+                else bool_14_ = (this.aModelArray10323[i_12_].method628(i_9_, i, matrix, bool_13_, this.aNPCDefinition_10505.anInt1337));
                 if (bool_14_) {
                     bool = true;
                     break;
@@ -130,15 +130,15 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
     final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10501++;
         if (this.aNPCDefinition_10505 == null || !method2447(i + 114, 2048, var_ha)) return null;
-        Class101 class101 = var_ha.method3705();
+        Matrix matrix = var_ha.method3705();
         int i_20_ = this.aClass264_10217.method2019((byte) -69);
-        class101.method895(i_20_);
+        matrix.method895(i_20_);
         Class357 class357 = (Class147.aClass357ArrayArrayArray2029[this.plane][this.x >> Class362.anInt4459][this.y >> Class362.anInt4459]);
         if (class357 != null && class357.aClass318_Sub1_Sub1_4402 != null) {
             int i_21_ = (-class357.aClass318_Sub1_Sub1_4402.aShort8727 + this.anInt10274);
             this.anInt10274 -= (float) i_21_ / 10.0F;
         } else this.anInt10274 -= (float) this.anInt10274 / 10.0F;
-        class101.method891(this.x, (-this.anInt10274 + this.anInt6382 + -20), this.y);
+        matrix.method891(this.x, (-this.anInt10274 + this.anInt6382 + -20), this.y);
         Class225 class225 = this.method2422((byte) 72);
         NPCDefinition NPCDefinition = (this.aNPCDefinition_10505.anIntArray1377 != null ? this.aNPCDefinition_10505.method794(Class318_Sub1_Sub3_Sub3.timedVarDomain, -1) : this.aNPCDefinition_10505);
         this.aBoolean10324 = false;
@@ -151,22 +151,22 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
                 class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aModelArray10323).length, method2442(1810797122), false));
                 this.aBoolean10324 = true;
                 var_ha.C(false);
-                if (!Class305.aBoolean3870) model.method615(class101, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), 0);
-                else model.method608(class101, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), Class132.anInt1906, 0);
+                if (!Class305.aBoolean3870) model.method615(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), 0);
+                else model.method608(matrix, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), Class132.anInt1906, 0);
                 var_ha.C(true);
             }
         }
-        class101.method895(i_20_);
-        class101.method891(this.x, (-this.anInt10274 + (-5 + this.anInt6382)), this.y);
+        matrix.method895(i_20_);
+        matrix.method891(this.x, (-this.anInt10274 + (-5 + this.anInt6382)), this.y);
         if (class318_sub4 == null) class318_sub4 = OutputStream_Sub2.method136((this.aModelArray10323).length, method2442(1810797122), false);
-        this.method2432(var_ha, -15074, class101, false, this.aModelArray10323);
+        this.method2432(var_ha, -15074, matrix, false, this.aModelArray10323);
         if (Class305.aBoolean3870) {
             for (int i_24_ = 0; (this.aModelArray10323.length > i_24_); i_24_++) {
-                if (this.aModelArray10323[i_24_] != null) this.aModelArray10323[i_24_].method608(class101, (class318_sub4.aClass318_Sub3Array6414[i_24_]), Class132.anInt1906, 0);
+                if (this.aModelArray10323[i_24_] != null) this.aModelArray10323[i_24_].method608(matrix, (class318_sub4.aClass318_Sub3Array6414[i_24_]), Class132.anInt1906, 0);
             }
         } else {
             for (int i_23_ = 0; (this.aModelArray10323.length > i_23_); i_23_++) {
-                if (this.aModelArray10323[i_23_] != null) this.aModelArray10323[i_23_].method615(class101, (class318_sub4.aClass318_Sub3Array6414[i_23_]), 0);
+                if (this.aModelArray10323[i_23_] != null) this.aModelArray10323[i_23_].method615(matrix, (class318_sub4.aClass318_Sub3Array6414[i_23_]), 0);
             }
         }
         if (this.aClass318_Sub10_10327 != null) {
@@ -286,10 +286,10 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         anInt10509++;
         if (this.aNPCDefinition_10505 != null && (this.aBoolean10318 || method2447(123, 0, var_ha))) {
             if (i > -125) method2391(null, -2, -103, 34);
-            Class101 class101 = var_ha.method3705();
-            class101.method895(this.aClass264_10217.method2019((byte) -118));
-            class101.method891(this.x, -20 + this.anInt6382, this.y);
-            this.method2432(var_ha, -15074, class101, this.aBoolean10318, (this.aModelArray10323));
+            Matrix matrix = var_ha.method3705();
+            matrix.method895(this.aClass264_10217.method2019((byte) -118));
+            matrix.method891(this.x, -20 + this.anInt6382, this.y);
+            this.method2432(var_ha, -15074, matrix, this.aBoolean10318, (this.aModelArray10323));
             this.aModelArray10323[0] = this.aModelArray10323[1] = this.aModelArray10323[2] = null;
         }
     }

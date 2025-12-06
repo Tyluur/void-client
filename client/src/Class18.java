@@ -317,9 +317,9 @@ final class Class18 {
     static final void method282(int i, ha var_ha, int i_21_, byte i_22_, int i_23_, int i_24_, int i_25_, int i_26_) {
         anInt274++;
         Class21.aHa326 = var_ha;
-        Class51.aClass101_905 = Class21.aHa326.method3654();
-        Class44.aClass101_624 = Class21.aHa326.method3654();
-        r.aClass101_9720 = Class21.aHa326.method3654();
+        Class51.aMatrix_905 = Class21.aHa326.method3654();
+        Class44.aMatrix_624 = Class21.aHa326.method3654();
+        r.aMatrix_9720 = Class21.aHa326.method3654();
         Class73.anInt4784 = i_26_;
         Option_Sub24.anInt6095 = 0;
         if (i_22_ <= 64) anIntArray279 = null;

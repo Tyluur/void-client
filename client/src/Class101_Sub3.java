@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class101_Sub3 extends Class101 {
+final class Class101_Sub3 extends Matrix {
     static int anInt5746;
     float aFloat5747;
     static int anInt5748;
@@ -219,7 +219,7 @@ final class Class101_Sub3 extends Class101 {
         return Class288_Sub1.aFloatArray8575;
     }
 
-    final Class101 method907() {
+    final Matrix method907() {
         anInt5748++;
         Class101_Sub3 class101_sub3_47_ = new Class101_Sub3();
         class101_sub3_47_.aFloat5747 = this.aFloat5747;
@@ -273,9 +273,9 @@ final class Class101_Sub3 extends Class101 {
         return Class98.aClass348_Sub16_Sub3_1564;
     }
 
-    final void method898(Class101 class101) {
+    final void method898(Matrix matrix) {
         anInt5758++;
-        Class101_Sub3 class101_sub3_51_ = (Class101_Sub3) class101;
+        Class101_Sub3 class101_sub3_51_ = (Class101_Sub3) matrix;
         this.aFloat5751 = class101_sub3_51_.aFloat5751;
         this.aFloat5769 = class101_sub3_51_.aFloat5769;
         this.aFloat5770 = class101_sub3_51_.aFloat5770;
@@ -382,9 +382,9 @@ final class Class101_Sub3 extends Class101 {
         return Class288_Sub1.aFloatArray8575;
     }
 
-    final void method946(Class101 class101, int i) {
+    final void method946(Matrix matrix, int i) {
         anInt5771++;
-        Class101_Sub3 class101_sub3_67_ = (Class101_Sub3) class101;
+        Class101_Sub3 class101_sub3_67_ = (Class101_Sub3) matrix;
         this.aFloat5781 = class101_sub3_67_.aFloat5756;
         if (i != -7929) method899(52);
         this.aFloat5750 = class101_sub3_67_.aFloat5761;

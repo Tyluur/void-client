@@ -44,7 +44,7 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
             if (class357 != null) i_2_ = class357.aByte4399;
             int i_3_ = var_ses[i_2_].method3982((byte) -86, i_0_, i);
             int i_4_;
-            if (i_2_ < Class189.anInt2524 - 1) i_4_ = var_ses[i_2_ + 1].method3982((byte) -86, i_0_, i);
+            if (i_2_ < BillboardType.anInt2524 - 1) i_4_ = var_ses[i_2_ + 1].method3982((byte) -86, i_0_, i);
             else i_4_ = i_3_ - (8 << Class362.anInt4459);
             if (class181.aBoolean2397) {
                 if (class181.anInt2384 == -1 && i_1_ > i_3_) {
@@ -65,11 +65,11 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
                 }
             }
             int i_5_;
-            for (i_5_ = Class189.anInt2524 - 1; (i_5_ > 0 && i_1_ > var_ses[i_5_].method3982((byte) -86, i_0_, i)); i_5_--) {
+            for (i_5_ = BillboardType.anInt2524 - 1; (i_5_ > 0 && i_1_ > var_ses[i_5_].method3982((byte) -86, i_0_, i)); i_5_--) {
                 /* empty */
             }
             if (class181.aBoolean2376 && i_5_ == 0 && i_1_ > var_ses[0].method3982((byte) -86, i_0_, i)) method2520();
-            else if (i_5_ == Class189.anInt2524 - 1 && (var_ses[i_5_].method3982((byte) -86, i_0_, i) - i_1_ > 8 << Class362.anInt4459)) method2520();
+            else if (i_5_ == BillboardType.anInt2524 - 1 && (var_ses[i_5_].method3982((byte) -86, i_0_, i) - i_1_ > 8 << Class362.anInt4459)) method2520();
             else {
                 class357 = Class147.aClass357ArrayArrayArray2029[i_5_][i][i_0_];
                 if (class357 == null) {

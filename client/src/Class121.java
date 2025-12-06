@@ -40,9 +40,9 @@ final class Class121 {
     static final void method1083(ha var_ha, int i, byte i_2_, int i_3_, int i_4_, int i_5_) {
         anInt1798++;
         Class21.aHa326 = var_ha;
-        Class51.aClass101_905 = Class21.aHa326.method3654();
-        Class44.aClass101_624 = Class21.aHa326.method3654();
-        r.aClass101_9720 = Class21.aHa326.method3654();
+        Class51.aMatrix_905 = Class21.aHa326.method3654();
+        Class44.aMatrix_624 = Class21.aHa326.method3654();
+        r.aMatrix_9720 = Class21.aHa326.method3654();
         Class348_Sub42_Sub9_Sub1.anInt10444 = i_4_;
         Packet.anInt7207 = 0;
         Class211.anInt2747 = i;

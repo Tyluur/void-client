@@ -69,14 +69,14 @@ final class Class305 {
         i_10_ = 0x3fff & i + i_10_;
         anInt3860++;
         if (anInt3858 != -1 && anInt3863 != 0) {
-            Class12 class12 = Class101_Sub1.aD5684.method3(anInt3858, -6662);
-            if (aSprite_3867 == null && Class101_Sub1.aD5684.method4(-7953, anInt3858)) {
-                int[] is = (class12.anInt200 == 2 ? Class101_Sub1.aD5684.method6(-21540, anInt3863, 0.7F, anInt3858, false, anInt3863) : Class101_Sub1.aD5684.method5(false, anInt3858, 0.7F, anInt3863, anInt3863, -119));
+            TextureMetrics textureMetrics = JavaMatrix.aD5684.getMetrics(anInt3858, -6662);
+            if (aSprite_3867 == null && JavaMatrix.aD5684.method4(-7953, anInt3858)) {
+                int[] is = (textureMetrics.alphaBlendMode == 2 ? JavaMatrix.aD5684.method6(-21540, anInt3863, 0.7F, anInt3858, false, anInt3863) : JavaMatrix.aD5684.method5(false, anInt3858, 0.7F, anInt3863, anInt3863, -119));
                 aSprite_3867 = var_ha.method3662(anInt3863, is, (byte) 94, 0, anInt3863, anInt3863);
             }
-            if (class12.anInt200 == 2) var_ha.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);
+            if (textureMetrics.alphaBlendMode == 2) var_ha.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);
             if (aSprite_3867 != null) {
-                int i_14_ = class12.anInt200 == 2 ? 1 : 0;
+                int i_14_ = textureMetrics.alphaBlendMode == 2 ? 1 : 0;
                 int i_15_ = i_13_ * i_11_ / -4096;
                 int i_16_;
                 for (i_16_ = (-i_13_ + i_8_) / 2 + i_13_ * i_10_ / 4096; i_13_ < i_16_; i_16_ -= i_13_) {

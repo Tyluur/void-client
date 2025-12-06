@@ -66,7 +66,8 @@ final class Class262 {
         return node;
     }
 
-    static final void method1991(float f, float f_3_, float[] fs, int i, int i_4_, boolean bool, int i_5_, int i_6_, int i_7_, int i_8_, float f_9_, float[] fs_10_, int i_11_, int i_12_) {
+    // method1991
+    static final void cubeMap(float f, float f_3_, float[] fs, int i, int i_4_, boolean bool, int i_5_, int i_6_, int i_7_, int i_8_, float f_9_, float[] fs_10_, int i_11_, int i_12_) {
         do {
             try {
                 anInt3338++;
@@ -112,7 +113,7 @@ final class Class262 {
                 fs_10_[1] = f_17_;
                 fs_10_[0] = f_16_;
                 if (bool == false) break;
-                method1991(0.31271333F, 1.5829445F, null, -17, 88, true, -70, -107, 8, 5, -0.347415F, null, -24, -19);
+                cubeMap(0.31271333F, 1.5829445F, null, -17, 88, true, -70, -107, 8, 5, -0.347415F, null, -24, -19);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("uh.B(" + f + ',' + f_3_ + ',' + (fs != null ? "{...}" : "null") + ',' + i + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + f_9_ + ',' + (fs_10_ != null ? "{...}" : "null") + ',' + i_11_ + ',' + i_12_ + ')'));
             }

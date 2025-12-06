@@ -23,7 +23,7 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
         anInt9708++;
         this.anInt9710 = (this.aModelParticleEffector_9702.anInt4240);
         this.anInt9712 = (this.aModelParticleEffector_9702.anInt4238);
-        if ((this.aModelParticleEffector_9702.aClass101_4252) != null) this.aModelParticleEffector_9702.aClass101_4252.method905((this.aClass174_9704.anInt2291), (this.aClass174_9704.anInt2290), (this.aClass174_9704.anInt2294), Class348_Sub8.anIntArray6666);
+        if ((this.aModelParticleEffector_9702.aMatrix_4252) != null) this.aModelParticleEffector_9702.aMatrix_4252.method905((this.aClass174_9704.anInt2291), (this.aClass174_9704.anInt2290), (this.aClass174_9704.anInt2294), Class348_Sub8.anIntArray6666);
         this.anInt9705 = Class348_Sub8.anIntArray6666[0];
         this.anInt9707 = Class348_Sub8.anIntArray6666[i];
     }

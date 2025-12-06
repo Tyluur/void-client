@@ -71,11 +71,11 @@ final class Class348_Sub41 extends Node {
 
     static final void method3157(int i, byte i_15_, int i_16_, int i_17_, boolean bool) {
         anInt7049++;
-        if (bool || i_16_ != ha.anInt4581 || Class327.anInt4095 != i || (QuickChatPhraseTypeList.anInt4372 != Class167.anInt2204 && Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) != 1)) {
+        if (bool || i_16_ != ha.anInt4581 || Class327.anInt4095 != i || (QuickChatPhraseTypeList.anInt4372 != JavaThreadResource.anInt2204 && Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) != 1)) {
             ha.anInt4581 = i_16_;
             Class327.anInt4095 = i;
-            Class167.anInt2204 = QuickChatPhraseTypeList.anInt4372;
-            if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1) Class167.anInt2204 = 0;
+            JavaThreadResource.anInt2204 = QuickChatPhraseTypeList.anInt4372;
+            if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1) JavaThreadResource.anInt2204 = 0;
             Packet.setStep(2, i_17_);
             Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3495.method2063(Class348_Sub33.language, 544), 2, Class348_Sub8.aHa6654);
             int i_18_ = za_Sub2.regionTileX;

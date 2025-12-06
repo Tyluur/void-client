@@ -2,13 +2,14 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class109 {
-    int anInt1665;
+// Class109
+final class Rasterizer {
+    int minX;
     private final ha_Sub1 aHa_Sub1_1666;
     boolean aBoolean1667 = false;
-    int anInt1668;
+    int minY;
     boolean aBoolean1669;
-    private final Class167 aClass167_1670;
+    private final JavaThreadResource aJavaThreadResource_1670;
     boolean aBoolean1671;
     int anInt1672;
     private final int[] anIntArray1673;
@@ -17,7 +18,7 @@ final class Class109 {
     int[] anIntArray1676 = new int[4096];
     private final float[] aFloatArray1677;
     private final int anInt1678;
-    int anInt1679;
+    int width;
     private final boolean aBoolean1680;
     private float aFloat1681;
     private float aFloat1682;
@@ -50,7 +51,7 @@ final class Class109 {
         float f_26_ = (f_15_ - f_14_) * f_19_;
         float f_27_ = (f_17_ - f_16_) * f_19_;
         if (this.aBoolean1671) {
-            if (i_2_ > this.anInt1679) i_2_ = this.anInt1679;
+            if (i_2_ > this.width) i_2_ = this.width;
             if (i_1_ < 0) {
                 f -= f_20_ * (float) i_1_;
                 f_4_ -= f_21_ * (float) i_1_;
@@ -466,14 +467,14 @@ final class Class109 {
 
     private final void method1019(int[] is, float[] fs, int i, int i_61_, int i_62_, int i_63_, int i_64_, float f, float f_65_, float f_66_, float f_67_) {
         if (this.aBoolean1671) {
-            if (i_64_ > this.anInt1679) i_64_ = this.anInt1679;
+            if (i_64_ > this.width) i_64_ = this.width;
             if (i_63_ < 0) i_63_ = 0;
         }
         if (i_63_ < i_64_) {
             i += i_63_ - 1;
             f += f_65_ * (float) i_63_;
             f_66_ += f_67_ * (float) i_63_;
-            if (aClass167_1670.aBoolean2202) {
+            if (aJavaThreadResource_1670.aBoolean2202) {
                 do {
                     if (this.aBoolean1669) {
                         i_62_ = i_64_ - i_63_ >> 2;
@@ -693,7 +694,7 @@ final class Class109 {
         if (i_108_ != anInt1697) {
             anIntArray1698 = aHa_Sub1_1666.method3718(i_108_);
             if (anIntArray1698 == null) {
-                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, Class6.method206(i, i_104_ | i_105_ << 24, 255), Class6.method206(i_102_, i_104_ | i_106_ << 24, 255), Class6.method206(i_103_, i_104_ | i_107_ << 24, 255));
+                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, JavaBillboardFace.method206(i, i_104_ | i_105_ << 24, 255), JavaBillboardFace.method206(i_102_, i_104_ | i_106_ << 24, 255), JavaBillboardFace.method206(i_103_, i_104_ | i_107_ << 24, 255));
                 return;
             }
             anInt1693 = (aHa_Sub1_1666.method3727(i_108_) ? 64 : aHa_Sub1_1666.anInt7501);
@@ -704,7 +705,7 @@ final class Class109 {
         if (i_110_ != anInt1689) {
             anIntArray1685 = aHa_Sub1_1666.method3718(i_110_);
             if (anIntArray1685 == null) {
-                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, Class6.method206(i, i_104_ | i_105_ << 24, 255), Class6.method206(i_102_, i_104_ | i_106_ << 24, 255), Class6.method206(i_103_, i_104_ | i_107_ << 24, 255));
+                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, JavaBillboardFace.method206(i, i_104_ | i_105_ << 24, 255), JavaBillboardFace.method206(i_102_, i_104_ | i_106_ << 24, 255), JavaBillboardFace.method206(i_103_, i_104_ | i_107_ << 24, 255));
                 return;
             }
             anInt1691 = (aHa_Sub1_1666.method3727(i_110_) ? 64 : aHa_Sub1_1666.anInt7501);
@@ -714,7 +715,7 @@ final class Class109 {
         if (i_112_ != anInt1687) {
             anIntArray1692 = aHa_Sub1_1666.method3718(i_112_);
             if (anIntArray1692 == null) {
-                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, Class6.method206(i, i_104_ | i_105_ << 24, 255), Class6.method206(i_102_, i_104_ | i_106_ << 24, 255), Class6.method206(i_103_, i_104_ | i_107_ << 24, 255));
+                method1027((float) (int) f, (float) (int) f_88_, (float) (int) f_89_, (float) (int) f_90_, (float) (int) f_91_, (float) (int) f_92_, (float) (int) f_93_, (float) (int) f_94_, (float) (int) f_95_, JavaBillboardFace.method206(i, i_104_ | i_105_ << 24, 255), JavaBillboardFace.method206(i_102_, i_104_ | i_106_ << 24, 255), JavaBillboardFace.method206(i_103_, i_104_ | i_107_ << 24, 255));
                 return;
             }
             anInt1695 = (aHa_Sub1_1666.method3727(i_112_) ? 64 : aHa_Sub1_1666.anInt7501);
@@ -1826,7 +1827,7 @@ final class Class109 {
 
     private final void method1021(int[] is, float[] fs, int i, int i_168_, int i_169_, int i_170_, int i_171_, float f, float f_172_, float f_173_, float f_174_, float f_175_, float f_176_, float f_177_, float f_178_) {
         if (this.aBoolean1671) {
-            if (i_171_ > this.anInt1679) i_171_ = this.anInt1679;
+            if (i_171_ > this.width) i_171_ = this.width;
             if (i_170_ < 0) i_170_ = 0;
         }
         if (i_170_ < i_171_) {
@@ -1986,7 +1987,7 @@ final class Class109 {
                 f_173_ += f_174_ * (float) i_170_;
                 f_175_ += f_176_ * (float) i_170_;
                 f_177_ += f_178_ * (float) i_170_;
-                if (aClass167_1670.aBoolean2202) {
+                if (aJavaThreadResource_1670.aBoolean2202) {
                     if (this.aBoolean1669) {
                         i_169_ = i_171_ - i_170_ >> 2;
                         f_174_ *= 4.0F;
@@ -2787,7 +2788,7 @@ final class Class109 {
         if (i_361_ != anInt1697) {
             anIntArray1698 = aHa_Sub1_1666.method3719(i_361_);
             if (anIntArray1698 == null) {
-                method1027((float) (int) f, (float) (int) f_341_, (float) (int) f_342_, (float) (int) f_343_, (float) (int) f_344_, (float) (int) f_345_, (float) (int) f_346_, (float) (int) f_347_, (float) (int) f_348_, Class6.method206(i, i_357_ | i_358_ << 24, 255), Class6.method206(i_355_, i_357_ | i_359_ << 24, 255), Class6.method206(i_356_, i_357_ | i_360_ << 24, 255));
+                method1027((float) (int) f, (float) (int) f_341_, (float) (int) f_342_, (float) (int) f_343_, (float) (int) f_344_, (float) (int) f_345_, (float) (int) f_346_, (float) (int) f_347_, (float) (int) f_348_, JavaBillboardFace.method206(i, i_357_ | i_358_ << 24, 255), JavaBillboardFace.method206(i_355_, i_357_ | i_359_ << 24, 255), JavaBillboardFace.method206(i_356_, i_357_ | i_360_ << 24, 255));
                 return;
             }
             anInt1693 = (aHa_Sub1_1666.method3727(i_361_) ? 64 : aHa_Sub1_1666.anInt7501);
@@ -3749,7 +3750,7 @@ final class Class109 {
         float f_435_ = (f_423_ - f_422_) * f_427_;
         float f_436_ = (f_425_ - f_424_) * f_427_;
         if (this.aBoolean1671) {
-            if (i_406_ > this.anInt1679) i_406_ = this.anInt1679;
+            if (i_406_ > this.width) i_406_ = this.width;
             if (i_405_ < 0) {
                 f -= f_428_ * (float) i_405_;
                 f_408_ -= f_429_ * (float) i_405_;
@@ -3810,14 +3811,14 @@ final class Class109 {
 
     private final void method1026(int[] is, float[] fs, int i, int i_450_, int i_451_, int i_452_, int i_453_, float f, float f_454_) {
         if (this.aBoolean1671) {
-            if (i_453_ > this.anInt1679) i_453_ = this.anInt1679;
+            if (i_453_ > this.width) i_453_ = this.width;
             if (i_452_ < 0) i_452_ = 0;
         }
         if (i_452_ < i_453_) {
             i += i_452_ - 1;
             i_451_ = i_453_ - i_452_ >> 2;
             f += f_454_ * (float) i_452_;
-            if (aClass167_1670.aBoolean2202) {
+            if (aJavaThreadResource_1670.aBoolean2202) {
                 if (this.alpha == 0) {
                     while (--i_451_ >= 0) {
                         if (f < fs[++i]) {
@@ -3850,7 +3851,7 @@ final class Class109 {
                         f += f_454_;
                     }
                 } else if (this.alpha == 254) {
-                    if (i_452_ != 0 && i_453_ <= this.anInt1679 - 1) {
+                    if (i_452_ != 0 && i_453_ <= this.width - 1) {
                         while (--i_451_ >= 0) {
                             if (f < fs[++i]) is[i - 1] = is[i];
                             f += f_454_;
@@ -3924,7 +3925,7 @@ final class Class109 {
                     f += f_454_;
                 }
             } else if (this.alpha == 254) {
-                if (i_452_ != 0 && i_453_ <= this.anInt1679 - 1) {
+                if (i_452_ != 0 && i_453_ <= this.width - 1) {
                     while (--i_451_ >= 0) {
                         if (f < fs[++i]) is[i - 1] = is[i];
                         f += f_454_;
@@ -4437,7 +4438,7 @@ final class Class109 {
         return this.anIntArray1676[0] % anInt1678;
     }
 
-    Class109(ha_Sub1 var_ha_Sub1, Class167 class167) {
+    Rasterizer(ha_Sub1 var_ha_Sub1, JavaThreadResource javaThreadResource) {
         this.aBoolean1669 = true;
         this.aBoolean1671 = false;
         aBoolean1680 = false;
@@ -4459,7 +4460,7 @@ final class Class109 {
         anInt1697 = -1;
         anIntArray1698 = null;
         aHa_Sub1_1666 = var_ha_Sub1;
-        aClass167_1670 = class167;
+        aJavaThreadResource_1670 = javaThreadResource;
         anInt1678 = aHa_Sub1_1666.anInt7477;
         anIntArray1673 = aHa_Sub1_1666.anIntArray7483;
         aFloatArray1677 = aHa_Sub1_1666.aFloatArray7511;

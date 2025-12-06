@@ -246,7 +246,7 @@ final class Class107 {
     }
 
     static final void method1010(boolean bool, boolean bool_42_) {
-        r.aClass101_9720.method898(Class21.aHa326.method3640());
+        r.aMatrix_9720.method898(Class21.aHa326.method3640());
         anInt1642++;
         int[] is = Class21.aHa326.Y();
         Class14_Sub3.anInt8630 = is[2];

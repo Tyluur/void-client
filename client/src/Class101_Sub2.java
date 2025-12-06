@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class101_Sub2 extends Class101 {
+final class Class101_Sub2 extends Matrix {
     static int anInt5690;
     float aFloat5691;
     static int anInt5692;
@@ -185,9 +185,9 @@ final class Class101_Sub2 extends Class101 {
         this.aFloat5724 += (float) i_21_;
     }
 
-    final void method917(Class101 class101, byte i) {
+    final void method917(Matrix matrix, byte i) {
         anInt5698++;
-        Class101_Sub2 class101_sub2_22_ = (Class101_Sub2) class101;
+        Class101_Sub2 class101_sub2_22_ = (Class101_Sub2) matrix;
         float f = this.aFloat5711;
         float f_23_ = this.aFloat5708;
         float f_24_ = this.aFloat5700;
@@ -361,7 +361,7 @@ final class Class101_Sub2 extends Class101 {
         }
     }
 
-    final Class101 method907() {
+    final Matrix method907() {
         anInt5695++;
         Class101_Sub2 class101_sub2_50_ = new Class101_Sub2();
         class101_sub2_50_.aFloat5691 = this.aFloat5691;
@@ -379,10 +379,10 @@ final class Class101_Sub2 extends Class101 {
         return class101_sub2_50_;
     }
 
-    final void method926(int i, Class101 class101) {
+    final void method926(int i, Matrix matrix) {
         anInt5737++;
         if (i != -15699) this.aFloat5722 = 0.6372093F;
-        Class101_Sub2 class101_sub2_51_ = (Class101_Sub2) class101;
+        Class101_Sub2 class101_sub2_51_ = (Class101_Sub2) matrix;
         this.aFloat5711 = class101_sub2_51_.aFloat5711;
         this.aFloat5710 = 0.0F;
         this.aFloat5722 = class101_sub2_51_.aFloat5722;
@@ -397,11 +397,11 @@ final class Class101_Sub2 extends Class101 {
         this.aFloat5704 = class101_sub2_51_.aFloat5704;
     }
 
-    final void method927(Class101 class101, Class101 class101_52_) {
+    final void method927(Matrix matrix, Matrix matrix_52_) {
         try {
             anInt5743++;
-            Class101_Sub2 class101_sub2_53_ = (Class101_Sub2) class101;
-            Class101_Sub2 class101_sub2_54_ = (Class101_Sub2) class101_52_;
+            Class101_Sub2 class101_sub2_53_ = (Class101_Sub2) matrix;
+            Class101_Sub2 class101_sub2_54_ = (Class101_Sub2) matrix_52_;
             this.aFloat5711 = ((class101_sub2_53_.aFloat5704 * class101_sub2_54_.aFloat5736) + ((class101_sub2_53_.aFloat5711 * class101_sub2_54_.aFloat5711) + (class101_sub2_54_.aFloat5708 * class101_sub2_53_.aFloat5700)));
             this.aFloat5708 = ((class101_sub2_53_.aFloat5722 * class101_sub2_54_.aFloat5708) + (class101_sub2_54_.aFloat5711 * class101_sub2_53_.aFloat5708) + (class101_sub2_53_.aFloat5732 * class101_sub2_54_.aFloat5736));
             this.aFloat5736 = ((class101_sub2_54_.aFloat5736 * class101_sub2_53_.aFloat5716) + ((class101_sub2_53_.aFloat5736 * class101_sub2_54_.aFloat5711) + (class101_sub2_54_.aFloat5708 * class101_sub2_53_.aFloat5691)));
@@ -415,7 +415,7 @@ final class Class101_Sub2 extends Class101 {
             this.aFloat5710 = (class101_sub2_53_.aFloat5710 + ((class101_sub2_53_.aFloat5732 * class101_sub2_54_.aFloat5724) + ((class101_sub2_54_.aFloat5710 * class101_sub2_53_.aFloat5722) + (class101_sub2_53_.aFloat5708 * (class101_sub2_54_.aFloat5729)))));
             this.aFloat5724 = ((class101_sub2_53_.aFloat5691 * class101_sub2_54_.aFloat5710) + (class101_sub2_53_.aFloat5736 * class101_sub2_54_.aFloat5729) + (class101_sub2_54_.aFloat5724 * class101_sub2_53_.aFloat5716) + class101_sub2_53_.aFloat5724);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("haa.HA(" + (class101 != null ? "{...}" : "null") + ',' + (class101_52_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("haa.HA(" + (matrix != null ? "{...}" : "null") + ',' + (matrix_52_ != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -509,9 +509,9 @@ final class Class101_Sub2 extends Class101 {
         return fs;
     }
 
-    final void method931(int i, Class101 class101) {
+    final void method931(int i, Matrix matrix) {
         anInt5730++;
-        Class101_Sub2 class101_sub2_68_ = (Class101_Sub2) class101;
+        Class101_Sub2 class101_sub2_68_ = (Class101_Sub2) matrix;
         this.aFloat5700 = class101_sub2_68_.aFloat5708;
         this.aFloat5704 = class101_sub2_68_.aFloat5736;
         this.aFloat5711 = class101_sub2_68_.aFloat5711;
@@ -586,9 +586,9 @@ final class Class101_Sub2 extends Class101 {
         }
     }
 
-    final void method898(Class101 class101) {
+    final void method898(Matrix matrix) {
         anInt5693++;
-        Class101_Sub2 class101_sub2_78_ = (Class101_Sub2) class101;
+        Class101_Sub2 class101_sub2_78_ = (Class101_Sub2) matrix;
         this.aFloat5724 = class101_sub2_78_.aFloat5724;
         this.aFloat5736 = class101_sub2_78_.aFloat5736;
         this.aFloat5729 = class101_sub2_78_.aFloat5729;

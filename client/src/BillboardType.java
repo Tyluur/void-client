@@ -2,18 +2,19 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class189 {
+// Class189
+final class BillboardType {
     static int anInt2521;
     boolean aBoolean2522 = false;
     static int anInt2523 = 0;
     static int anInt2524;
-    int anInt2525;
+    int texture;
     int anInt2526;
     static Class114 aClass114_2527 = new Class114(98, -2);
     static int anInt2528;
     static NPCTypeList npcTypeList; // aClass278_2529
     int anInt2530;
-    boolean aBoolean2531 = false;
+    boolean hideFace = false;
     static int anInt2532;
     int anInt2533 = 1;
     int anInt2534;
@@ -22,8 +23,8 @@ final class Class189 {
         if (i_1_ != 94) this.anInt2526 = -81;
         anInt2532++;
         if (i == 1) {
-            this.anInt2525 = packet.readUnsignedShort(842397944);
-            if (this.anInt2525 == 65535) this.anInt2525 = -1;
+            this.texture = packet.readUnsignedShort(842397944);
+            if (this.texture == 65535) this.texture = -1;
         } else if (i == 2) {
             this.anInt2526 = 1 + packet.readUnsignedShort(842397944);
             this.anInt2530 = packet.readUnsignedShort(842397944) - -1;
@@ -31,7 +32,7 @@ final class Class189 {
             if (i == 4) this.anInt2534 = packet.readUnsignedByte(255);
             else if (i != 5) {
                 if (i == 6) this.aBoolean2522 = true;
-                else if (i == 7) this.aBoolean2531 = true;
+                else if (i == 7) this.hideFace = true;
             } else this.anInt2533 = packet.readUnsignedByte(255);
         } else packet.readByte(-106);
     }
@@ -245,10 +246,10 @@ final class Class189 {
         aClass114_2527 = null;
     }
 
-    public Class189() {
+    public BillboardType() {
         this.anInt2526 = 64;
         this.anInt2530 = 64;
-        this.anInt2525 = -1;
+        this.texture = -1;
         this.anInt2534 = 2;
     }
 }

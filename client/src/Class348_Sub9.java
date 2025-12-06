@@ -50,7 +50,7 @@ final class Class348_Sub9 extends Node {
         }
         for (int i_5_ = i_1_; i_5_ <= i_2_; i_5_++) {
             for (int i_6_ = i_3_; i_6_ <= i_4_; i_6_++) {
-                if ((class318_sub1.aByte6376 < Class189.anInt2524) && i_5_ >= Class37.anInt492 && i_5_ < Class27.anInt387 && i_6_ >= Class348_Sub34.anInt6974 && i_6_ < Class59_Sub1.anInt5293) {
+                if ((class318_sub1.aByte6376 < BillboardType.anInt2524) && i_5_ >= Class37.anInt492 && i_5_ < Class27.anInt387 && i_6_ >= Class348_Sub34.anInt6974 && i_6_ < Class59_Sub1.anInt5293) {
                     if ((is != null && class318_sub1.plane >= i && (is[class318_sub1.plane][i_5_][i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((byte) -79)) {
                         if (!bool && i_5_ >= Option_Sub25.anInt6111 - 16 && i_5_ <= Option_Sub25.anInt6111 + 16 && i_6_ >= Class285_Sub2.anInt8502 - 16 && i_6_ <= Class285_Sub2.anInt8502 + 16) {
                             if (Class348_Sub40_Sub5.aBoolean9121) {
@@ -131,7 +131,7 @@ final class Class348_Sub9 extends Node {
                         }
                         if (i_8_ == 7) {
                             Class331.anInt4134++;
-                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class358.aClass351_4418), (Class348_Sub23_Sub2.aClass77_9029), -84);
+                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((TextureUniverse.aClass351_4418), (Class348_Sub23_Sub2.aClass77_9029), -84);
                             Class375.method3614(i_9_, i, class46.anInt812, class348_sub47, -19692);
                             Class348_Sub42_Sub14.method3243(118, class348_sub47);
                         }

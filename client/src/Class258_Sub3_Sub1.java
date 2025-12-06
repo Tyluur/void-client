@@ -59,7 +59,7 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3 {
         Class369.method3568(Class348_Sub8.aHa6654, 4);
         ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.aHa6654, true);
         Class274.method2061(-128);
-        Class101.method901(Class113.aSpriteArray1744, 515880227);
+        Matrix.method901(Class113.aSpriteArray1744, 515880227);
         Class354.method3466(i ^ ~0x4f);
         Class348_Sub40.updateFeatureMask(-1);
         if (Class240.mainLogicStep == 3) Packet.setStep(2, 4);

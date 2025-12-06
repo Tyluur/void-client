@@ -4,41 +4,41 @@
 
 // Class64_Sub1
 final class JavaModel extends Model {
-    private short[] aShortArray5311;
+    private short[] faceColour;
     private int[] vertexZ;
     private VertexNormal[] aVertexNormalArray5313;
-    private float[][] aFloatArrayArray5314;
+    private float[][] texCoordU;
     private int[] anIntArray5315;
-    private int anInt5316;
+    private int functionMask;
     private short[] faceIndexX;
     private int[] anIntArray5318;
     private JavaModel aJavaModel_5319;
-    private Class101_Sub1 aClass101_Sub1_5320;
+    private JavaMatrix aJavaMatrix_5320;
     private int[] renderVertexX;
-    private ModelParticleEmitter[] aModelParticleEmitterArray5322;
+    private ModelParticleEmitter[] emitters;
     private boolean aBoolean5323 = false;
     private short aShort5324;
     private byte[] faceAlphas;
     private int[] anIntArray5326;
-    private short[] aShortArray5327;
+    private short[] faceIndices;
     private JavaModel aJavaModel_5328;
     private short aShort5329;
     private int[][] anIntArrayArray5330;
     private short aShort5331;
     private int[] vertexY;
-    private short[] aShortArray5333;
+    private short[] originalModels;
     private int[][] anIntArrayArray5334;
-    private ModelParticleEffector[] aModelParticleEffectorArray5335;
-    private Class167 aClass167_5336;
+    private ModelParticleEffector[] effectors;
+    private JavaThreadResource aJavaThreadResource_5336;
     private int[] anIntArray5337;
     private int anInt5338;
     private JavaModel aJavaModel_5339;
-    private int anInt5340 = 0;
+    private int vertexCount = 0;
     private static int anInt5341;
     private int anInt5342;
     private int[] renderVertexY;
     private int anInt5344;
-    private float[][] aFloatArrayArray5345;
+    private float[][] texCoordV;
     static int anInt5346 = 4096;
     private JavaModel aJavaModel_5347;
     private short aShort5348;
@@ -46,21 +46,21 @@ final class JavaModel extends Model {
     static int anInt5350;
     private int faceCount;
     private short aShort5352;
-    private final ha_Sub1 aHa_Sub1_5353;
+    private final ha_Sub1 toolkit;
     private int anInt5354;
     private int[] renderVertexZ;
     private int[] vertexX;
     private boolean aBoolean5357 = false;
-    private byte[] aByteArray5358;
+    private byte[] facePriority;
     private int[] anIntArray5359;
     private VertexNormal[] normals;
-    private Class6[] aClass6Array5361;
+    private JavaBillboardFace[] billboardFaces;
     private int[] anIntArray5362;
-    private Class350[] aClass350Array5363;
+    private JavaBillboardAttributes[] billboardAttributes;
     private short[] faceIndexZ;
     private short aShort5365;
     private int[] anIntArray5366;
-    private Class167 aClass167_5367;
+    private JavaThreadResource aJavaThreadResource_5367;
     private int[] anIntArray5368;
     private boolean aBoolean5369;
     private short[] aShortArray5370;
@@ -75,16 +75,16 @@ final class JavaModel extends Model {
     private int[][] anIntArrayArray5379;
     private boolean aBoolean5380;
     private int[] anIntArray5381;
-    private boolean aBoolean5382;
-    private Class109 aClass109_5383;
+    private boolean transparent;
+    private Rasterizer aRasterizer_5383;
     private int[] anIntArray5384;
     private Class41[] aClass41Array5385;
-    private byte[] renderPoints;
-    private int vertexCount;
-    private short[] aShortArray5388;
-    private int anInt5389;
+    private byte[] shadingType;
+    private int maxVertex;
+    private short[] faceTextures;
+    private int billboardCount;
     private JavaModel aJavaModel_5390;
-    private boolean aBoolean5391;
+    private boolean movingTextures;
     private int[] anIntArray5392;
     private short aShort5393;
     private short[] faceIndexY;
@@ -120,27 +120,27 @@ final class JavaModel extends Model {
     }
 
     private final void method632(Thread thread) {
-        Class167 class167 = aHa_Sub1_5353.method3724(thread);
-        aClass109_5383 = class167.aClass109_2220;
-        if (class167 != aClass167_5367) {
-            aClass167_5367 = class167;
-            anIntArray5362 = aClass167_5367.anIntArray2222;
-            anIntArray5399 = aClass167_5367.anIntArray2244;
-            anIntArray5384 = aClass167_5367.anIntArray2214;
-            anIntArray5392 = aClass167_5367.anIntArray2237;
-            renderVertexX = aClass167_5367.anIntArray2234;
-            renderVertexY = aClass167_5367.anIntArray2230;
-            renderVertexZ = aClass167_5367.anIntArray2213;
-            anIntArray5359 = aClass167_5367.anIntArray2218;
-            anIntArray5373 = aClass167_5367.anIntArray2241;
-            anIntArray5398 = aClass167_5367.anIntArray2245;
-            anIntArray5315 = aClass167_5367.anIntArray2238;
-            anIntArray5371 = aClass167_5367.anIntArray2247;
-            anIntArray5381 = aClass167_5367.anIntArray2235;
-            anIntArray5377 = aClass167_5367.anIntArray2240;
-            anIntArray5326 = aClass167_5367.anIntArray2236;
-            anIntArray5318 = aClass167_5367.anIntArray2216;
-            anIntArray5400 = aClass167_5367.anIntArray2242;
+        JavaThreadResource javaThreadResource = toolkit.method3724(thread);
+        aRasterizer_5383 = javaThreadResource.aRasterizer_2220;
+        if (javaThreadResource != aJavaThreadResource_5367) {
+            aJavaThreadResource_5367 = javaThreadResource;
+            anIntArray5362 = aJavaThreadResource_5367.anIntArray2222;
+            anIntArray5399 = aJavaThreadResource_5367.anIntArray2244;
+            anIntArray5384 = aJavaThreadResource_5367.anIntArray2214;
+            anIntArray5392 = aJavaThreadResource_5367.anIntArray2237;
+            renderVertexX = aJavaThreadResource_5367.anIntArray2234;
+            renderVertexY = aJavaThreadResource_5367.anIntArray2230;
+            renderVertexZ = aJavaThreadResource_5367.anIntArray2213;
+            anIntArray5359 = aJavaThreadResource_5367.anIntArray2218;
+            anIntArray5373 = aJavaThreadResource_5367.anIntArray2241;
+            anIntArray5398 = aJavaThreadResource_5367.anIntArray2245;
+            anIntArray5315 = aJavaThreadResource_5367.anIntArray2238;
+            anIntArray5371 = aJavaThreadResource_5367.anIntArray2247;
+            anIntArray5381 = aJavaThreadResource_5367.anIntArray2235;
+            anIntArray5377 = aJavaThreadResource_5367.anIntArray2240;
+            anIntArray5326 = aJavaThreadResource_5367.anIntArray2236;
+            anIntArray5318 = aJavaThreadResource_5367.anIntArray2216;
+            anIntArray5400 = aJavaThreadResource_5367.anIntArray2242;
         }
     }
 
@@ -158,34 +158,34 @@ final class JavaModel extends Model {
         }
         javaModel_7_.anInt5344 = anInt5344;
         javaModel_7_.anInt5349 = anInt5349;
-        javaModel_7_.anInt5340 = anInt5340;
         javaModel_7_.vertexCount = vertexCount;
+        javaModel_7_.maxVertex = maxVertex;
         javaModel_7_.faceCount = faceCount;
-        javaModel_7_.anInt5389 = anInt5389;
-        if ((i & 0x100) != 0) javaModel_7_.aBoolean5382 = true;
-        else javaModel_7_.aBoolean5382 = aBoolean5382;
-        javaModel_7_.aBoolean5391 = aBoolean5391;
+        javaModel_7_.billboardCount = billboardCount;
+        if ((i & 0x100) != 0) javaModel_7_.transparent = true;
+        else javaModel_7_.transparent = transparent;
+        javaModel_7_.movingTextures = movingTextures;
         boolean bool_10_ = (i & 0x7) == 7 | (i & 0x20) != 0;
         boolean bool_11_ = bool_10_ || (i & 0x1) != 0;
         boolean bool_12_ = bool_10_ || (i & 0x2) != 0;
         boolean bool_13_ = bool_10_ || (i & 0x4) != 0 || (i & 0x10) != 0;
         if (bool_11_ || bool_12_ || bool_13_) {
             if (bool_11_) {
-                if (javaModel_8_.vertexX == null || javaModel_8_.vertexX.length < anInt5340) javaModel_7_.vertexX = javaModel_8_.vertexX = new int[anInt5340];
+                if (javaModel_8_.vertexX == null || javaModel_8_.vertexX.length < vertexCount) javaModel_7_.vertexX = javaModel_8_.vertexX = new int[vertexCount];
                 else javaModel_7_.vertexX = javaModel_8_.vertexX;
-                for (int i_14_ = 0; i_14_ < anInt5340; i_14_++)
+                for (int i_14_ = 0; i_14_ < vertexCount; i_14_++)
                     javaModel_7_.vertexX[i_14_] = vertexX[i_14_];
             } else javaModel_7_.vertexX = vertexX;
             if (bool_12_) {
-                if (javaModel_8_.vertexY == null || javaModel_8_.vertexY.length < anInt5340) javaModel_7_.vertexY = javaModel_8_.vertexY = new int[anInt5340];
+                if (javaModel_8_.vertexY == null || javaModel_8_.vertexY.length < vertexCount) javaModel_7_.vertexY = javaModel_8_.vertexY = new int[vertexCount];
                 else javaModel_7_.vertexY = javaModel_8_.vertexY;
-                for (int i_15_ = 0; i_15_ < anInt5340; i_15_++)
+                for (int i_15_ = 0; i_15_ < vertexCount; i_15_++)
                     javaModel_7_.vertexY[i_15_] = vertexY[i_15_];
             } else javaModel_7_.vertexY = vertexY;
             if (bool_13_) {
-                if (javaModel_8_.vertexZ == null || javaModel_8_.vertexZ.length < anInt5340) javaModel_7_.vertexZ = javaModel_8_.vertexZ = new int[anInt5340];
+                if (javaModel_8_.vertexZ == null || javaModel_8_.vertexZ.length < vertexCount) javaModel_7_.vertexZ = javaModel_8_.vertexZ = new int[vertexCount];
                 else javaModel_7_.vertexZ = javaModel_8_.vertexZ;
-                for (int i_16_ = 0; i_16_ < anInt5340; i_16_++)
+                for (int i_16_ = 0; i_16_ < vertexCount; i_16_++)
                     javaModel_7_.vertexZ[i_16_] = vertexZ[i_16_];
             } else javaModel_7_.vertexZ = vertexZ;
         } else {
@@ -194,13 +194,13 @@ final class JavaModel extends Model {
             javaModel_7_.vertexZ = vertexZ;
         }
         if ((i & 0x84080) != 0) {
-            if (javaModel_8_.aShortArray5311 == null || javaModel_8_.aShortArray5311.length < faceCount) {
+            if (javaModel_8_.faceColour == null || javaModel_8_.faceColour.length < faceCount) {
                 int i_17_ = faceCount;
-                javaModel_7_.aShortArray5311 = javaModel_8_.aShortArray5311 = new short[i_17_];
-            } else javaModel_7_.aShortArray5311 = javaModel_8_.aShortArray5311;
+                javaModel_7_.faceColour = javaModel_8_.faceColour = new short[i_17_];
+            } else javaModel_7_.faceColour = javaModel_8_.faceColour;
             for (int i_18_ = 0; i_18_ < faceCount; i_18_++)
-                javaModel_7_.aShortArray5311[i_18_] = aShortArray5311[i_18_];
-        } else javaModel_7_.aShortArray5311 = aShortArray5311;
+                javaModel_7_.faceColour[i_18_] = faceColour[i_18_];
+        } else javaModel_7_.faceColour = faceColour;
         if ((i & 0x97018) != 0) {
             javaModel_7_.anInt5354 = 0;
             javaModel_7_.anIntArray5368 = javaModel_7_.anIntArray5337 = javaModel_7_.anIntArray5366 = null;
@@ -245,12 +245,12 @@ final class JavaModel extends Model {
             }
         } else javaModel_7_.faceAlphas = faceAlphas;
         if ((i & 0x8) != 0 || (i & 0x10) != 0) {
-            if (javaModel_8_.normals == null || javaModel_8_.normals.length < vertexCount) {
-                int i_24_ = vertexCount;
+            if (javaModel_8_.normals == null || javaModel_8_.normals.length < maxVertex) {
+                int i_24_ = maxVertex;
                 javaModel_7_.normals = javaModel_8_.normals = new VertexNormal[i_24_];
             } else javaModel_7_.normals = javaModel_8_.normals;
             if (normals != null) {
-                for (int i_25_ = 0; i_25_ < vertexCount; i_25_++)
+                for (int i_25_ = 0; i_25_ < maxVertex; i_25_++)
                     javaModel_7_.normals[i_25_] = new VertexNormal(normals[i_25_]);
             } else javaModel_7_.normals = null;
             if (aClass41Array5385 != null) {
@@ -267,85 +267,85 @@ final class JavaModel extends Model {
             javaModel_7_.aClass41Array5385 = aClass41Array5385;
         }
         if ((i & 0x8000) != 0) {
-            if (aShortArray5388 == null) javaModel_7_.aShortArray5388 = null;
+            if (faceTextures == null) javaModel_7_.faceTextures = null;
             else {
-                if (javaModel_8_.aShortArray5388 == null || javaModel_8_.aShortArray5388.length < faceCount) {
+                if (javaModel_8_.faceTextures == null || javaModel_8_.faceTextures.length < faceCount) {
                     int i_28_ = faceCount;
-                    javaModel_7_.aShortArray5388 = javaModel_8_.aShortArray5388 = new short[i_28_];
-                } else javaModel_7_.aShortArray5388 = javaModel_8_.aShortArray5388;
+                    javaModel_7_.faceTextures = javaModel_8_.faceTextures = new short[i_28_];
+                } else javaModel_7_.faceTextures = javaModel_8_.faceTextures;
                 for (int i_29_ = 0; i_29_ < faceCount; i_29_++)
-                    javaModel_7_.aShortArray5388[i_29_] = aShortArray5388[i_29_];
+                    javaModel_7_.faceTextures[i_29_] = faceTextures[i_29_];
             }
-        } else javaModel_7_.aShortArray5388 = aShortArray5388;
+        } else javaModel_7_.faceTextures = faceTextures;
         if ((i & 0x10000) != 0) {
-            if (renderPoints == null) javaModel_7_.renderPoints = null;
+            if (shadingType == null) javaModel_7_.shadingType = null;
             else {
-                if (javaModel_8_.renderPoints == null || javaModel_8_.renderPoints.length < faceCount) {
+                if (javaModel_8_.shadingType == null || javaModel_8_.shadingType.length < faceCount) {
                     int i_30_ = bool ? faceCount + 100 : faceCount;
-                    javaModel_7_.renderPoints = javaModel_8_.renderPoints = new byte[i_30_];
-                } else javaModel_7_.renderPoints = javaModel_8_.renderPoints;
+                    javaModel_7_.shadingType = javaModel_8_.shadingType = new byte[i_30_];
+                } else javaModel_7_.shadingType = javaModel_8_.shadingType;
                 for (int i_31_ = 0; i_31_ < faceCount; i_31_++)
-                    javaModel_7_.renderPoints[i_31_] = renderPoints[i_31_];
+                    javaModel_7_.shadingType[i_31_] = shadingType[i_31_];
             }
-        } else javaModel_7_.renderPoints = renderPoints;
+        } else javaModel_7_.shadingType = shadingType;
         if ((i & 0xc580) != 0) {
-            if (javaModel_8_.aClass350Array5363 == null || javaModel_8_.aClass350Array5363.length < anInt5389) {
-                int i_32_ = anInt5389;
-                javaModel_7_.aClass350Array5363 = javaModel_8_.aClass350Array5363 = new Class350[i_32_];
-                for (int i_33_ = 0; i_33_ < anInt5389; i_33_++)
-                    javaModel_7_.aClass350Array5363[i_33_] = aClass350Array5363[i_33_].method3453(true);
+            if (javaModel_8_.billboardAttributes == null || javaModel_8_.billboardAttributes.length < billboardCount) {
+                int i_32_ = billboardCount;
+                javaModel_7_.billboardAttributes = javaModel_8_.billboardAttributes = new JavaBillboardAttributes[i_32_];
+                for (int i_33_ = 0; i_33_ < billboardCount; i_33_++)
+                    javaModel_7_.billboardAttributes[i_33_] = billboardAttributes[i_33_].method3453(true);
             } else {
-                javaModel_7_.aClass350Array5363 = javaModel_8_.aClass350Array5363;
-                for (int i_34_ = 0; i_34_ < anInt5389; i_34_++)
-                    javaModel_7_.aClass350Array5363[i_34_].method3454(aClass350Array5363[i_34_], true);
+                javaModel_7_.billboardAttributes = javaModel_8_.billboardAttributes;
+                for (int i_34_ = 0; i_34_ < billboardCount; i_34_++)
+                    javaModel_7_.billboardAttributes[i_34_].method3454(billboardAttributes[i_34_], true);
             }
-        } else javaModel_7_.aClass350Array5363 = aClass350Array5363;
-        if (aFloatArrayArray5314 == null || (i & 0x10) == 0) {
-            javaModel_7_.aFloatArrayArray5314 = aFloatArrayArray5314;
-            javaModel_7_.aFloatArrayArray5345 = aFloatArrayArray5345;
+        } else javaModel_7_.billboardAttributes = billboardAttributes;
+        if (texCoordU == null || (i & 0x10) == 0) {
+            javaModel_7_.texCoordU = texCoordU;
+            javaModel_7_.texCoordV = texCoordV;
         } else {
-            if (javaModel_8_.aFloatArrayArray5314 == null || javaModel_8_.aFloatArrayArray5314.length < faceCount) {
+            if (javaModel_8_.texCoordU == null || javaModel_8_.texCoordU.length < faceCount) {
                 int i_35_ = bool ? faceCount + 100 : faceCount;
-                javaModel_7_.aFloatArrayArray5314 = javaModel_8_.aFloatArrayArray5314 = new float[i_35_][3];
-            } else javaModel_7_.aFloatArrayArray5314 = javaModel_8_.aFloatArrayArray5314;
+                javaModel_7_.texCoordU = javaModel_8_.texCoordU = new float[i_35_][3];
+            } else javaModel_7_.texCoordU = javaModel_8_.texCoordU;
             for (int i_36_ = 0; i_36_ < faceCount; i_36_++) {
-                if (aFloatArrayArray5314[i_36_] != null) {
-                    javaModel_7_.aFloatArrayArray5314[i_36_][0] = aFloatArrayArray5314[i_36_][0];
-                    javaModel_7_.aFloatArrayArray5314[i_36_][1] = aFloatArrayArray5314[i_36_][1];
-                    javaModel_7_.aFloatArrayArray5314[i_36_][2] = aFloatArrayArray5314[i_36_][2];
+                if (texCoordU[i_36_] != null) {
+                    javaModel_7_.texCoordU[i_36_][0] = texCoordU[i_36_][0];
+                    javaModel_7_.texCoordU[i_36_][1] = texCoordU[i_36_][1];
+                    javaModel_7_.texCoordU[i_36_][2] = texCoordU[i_36_][2];
                 }
             }
-            if (javaModel_8_.aFloatArrayArray5345 == null || javaModel_8_.aFloatArrayArray5345.length < faceCount) {
+            if (javaModel_8_.texCoordV == null || javaModel_8_.texCoordV.length < faceCount) {
                 int i_37_ = bool ? faceCount + 100 : faceCount;
-                javaModel_7_.aFloatArrayArray5345 = javaModel_8_.aFloatArrayArray5345 = new float[i_37_][3];
-            } else javaModel_7_.aFloatArrayArray5345 = javaModel_8_.aFloatArrayArray5345;
+                javaModel_7_.texCoordV = javaModel_8_.texCoordV = new float[i_37_][3];
+            } else javaModel_7_.texCoordV = javaModel_8_.texCoordV;
             for (int i_38_ = 0; i_38_ < faceCount; i_38_++) {
-                if (aFloatArrayArray5345[i_38_] != null) {
-                    javaModel_7_.aFloatArrayArray5345[i_38_][0] = aFloatArrayArray5345[i_38_][0];
-                    javaModel_7_.aFloatArrayArray5345[i_38_][1] = aFloatArrayArray5345[i_38_][1];
-                    javaModel_7_.aFloatArrayArray5345[i_38_][2] = aFloatArrayArray5345[i_38_][2];
+                if (texCoordV[i_38_] != null) {
+                    javaModel_7_.texCoordV[i_38_][0] = texCoordV[i_38_][0];
+                    javaModel_7_.texCoordV[i_38_][1] = texCoordV[i_38_][1];
+                    javaModel_7_.texCoordV[i_38_][2] = texCoordV[i_38_][2];
                 }
             }
         }
         javaModel_7_.anIntArrayArray5334 = anIntArrayArray5334;
         javaModel_7_.anIntArrayArray5330 = anIntArrayArray5330;
         javaModel_7_.anIntArrayArray5379 = anIntArrayArray5379;
-        javaModel_7_.aShortArray5333 = aShortArray5333;
+        javaModel_7_.originalModels = originalModels;
         javaModel_7_.aShortArray5370 = aShortArray5370;
-        javaModel_7_.aByteArray5358 = aByteArray5358;
+        javaModel_7_.facePriority = facePriority;
         javaModel_7_.faceIndexX = faceIndexX;
         javaModel_7_.faceIndexY = faceIndexY;
         javaModel_7_.faceIndexZ = faceIndexZ;
-        javaModel_7_.aModelParticleEmitterArray5322 = aModelParticleEmitterArray5322;
-        javaModel_7_.aModelParticleEffectorArray5335 = aModelParticleEffectorArray5335;
-        javaModel_7_.aClass6Array5361 = aClass6Array5361;
-        javaModel_7_.aShortArray5327 = aShortArray5327;
-        javaModel_7_.anInt5316 = i;
+        javaModel_7_.emitters = emitters;
+        javaModel_7_.effectors = effectors;
+        javaModel_7_.billboardFaces = billboardFaces;
+        javaModel_7_.faceIndices = faceIndices;
+        javaModel_7_.functionMask = i;
         return javaModel_7_;
     }
 
     private final void method634(boolean bool) {
-        if (aHa_Sub1_5353.anInt7485 > 1) {
+        if (toolkit.threadCount > 1) {
             synchronized (this) {
                 method657(bool);
             }
@@ -353,7 +353,7 @@ final class JavaModel extends Model {
     }
 
     final ModelParticleEmitter[] method619() {
-        return aModelParticleEmitterArray5322;
+        return emitters;
     }
 
     final int V() {
@@ -365,26 +365,26 @@ final class JavaModel extends Model {
         short i_39_ = faceIndexX[i];
         short i_40_ = faceIndexY[i];
         short i_41_ = faceIndexZ[i];
-        if (aShortArray5388 == null || aShortArray5388[i] == -1) {
-            if (faceAlphas == null) aClass109_5383.alpha = 0;
-            else aClass109_5383.alpha = faceAlphas[i] & 0xff;
+        if (faceTextures == null || faceTextures[i] == -1) {
+            if (faceAlphas == null) aRasterizer_5383.alpha = 0;
+            else aRasterizer_5383.alpha = faceAlphas[i] & 0xff;
             if (anIntArray5366[i] == -1)
-                aClass109_5383.method1018((float) renderVertexY[i_39_], (float) renderVertexY[i_40_], (float) renderVertexY[i_41_], (float) renderVertexX[i_39_], (float) renderVertexX[i_40_], (float) renderVertexX[i_41_], (float) renderVertexZ[i_39_], (float) renderVertexZ[i_40_], (float) renderVertexZ[i_41_], (Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]));
+                aRasterizer_5383.method1018((float) renderVertexY[i_39_], (float) renderVertexY[i_40_], (float) renderVertexY[i_41_], (float) renderVertexX[i_39_], (float) renderVertexX[i_40_], (float) renderVertexX[i_41_], (float) renderVertexZ[i_39_], (float) renderVertexZ[i_40_], (float) renderVertexZ[i_41_], (Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]));
             else
-                aClass109_5383.method1022((float) renderVertexY[i_39_], (float) renderVertexY[i_40_], (float) renderVertexY[i_41_], (float) renderVertexX[i_39_], (float) renderVertexX[i_40_], (float) renderVertexX[i_41_], (float) renderVertexZ[i_39_], (float) renderVertexZ[i_40_], (float) renderVertexZ[i_41_], (float) (anIntArray5368[i] & 0xffff), (float) (anIntArray5337[i] & 0xffff), (float) (anIntArray5366[i] & 0xffff));
+                aRasterizer_5383.method1022((float) renderVertexY[i_39_], (float) renderVertexY[i_40_], (float) renderVertexY[i_41_], (float) renderVertexX[i_39_], (float) renderVertexX[i_40_], (float) renderVertexX[i_41_], (float) renderVertexZ[i_39_], (float) renderVertexZ[i_40_], (float) renderVertexZ[i_41_], (float) (anIntArray5368[i] & 0xffff), (float) (anIntArray5337[i] & 0xffff), (float) (anIntArray5366[i] & 0xffff));
         } else {
             int i_42_ = -16777216;
             if (faceAlphas != null) i_42_ = 255 - (faceAlphas[i] & 0xff) << 24;
             if (anIntArray5366[i] == -1) {
                 int i_43_ = i_42_ | anIntArray5368[i] & 0xffffff;
-                aClass109_5383.method1024((float) renderVertexY[i_39_], (float) renderVertexY[i_40_], (float) renderVertexY[i_41_], (float) renderVertexX[i_39_], (float) renderVertexX[i_40_], (float) renderVertexX[i_41_], (float) renderVertexZ[i_39_], (float) renderVertexZ[i_40_], (float) renderVertexZ[i_41_], aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_43_, i_43_, i_43_, aClass167_5367.anInt2192, 0, 0, 0, aShortArray5388[i]);
+                aRasterizer_5383.method1024((float) renderVertexY[i_39_], (float) renderVertexY[i_40_], (float) renderVertexY[i_41_], (float) renderVertexX[i_39_], (float) renderVertexX[i_40_], (float) renderVertexX[i_41_], (float) renderVertexZ[i_39_], (float) renderVertexZ[i_40_], (float) renderVertexZ[i_41_], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_43_, i_43_, i_43_, aJavaThreadResource_5367.anInt2192, 0, 0, 0, faceTextures[i]);
             } else
-                aClass109_5383.method1024((float) renderVertexY[i_39_], (float) renderVertexY[i_40_], (float) renderVertexY[i_41_], (float) renderVertexX[i_39_], (float) renderVertexX[i_40_], (float) renderVertexX[i_41_], (float) renderVertexZ[i_39_], (float) renderVertexZ[i_40_], (float) renderVertexZ[i_41_], aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_42_ | anIntArray5368[i] & 0xffffff, i_42_ | anIntArray5337[i] & 0xffffff, i_42_ | anIntArray5366[i] & 0xffffff, (aClass167_5367.anInt2192), 0, 0, 0, aShortArray5388[i]);
+                aRasterizer_5383.method1024((float) renderVertexY[i_39_], (float) renderVertexY[i_40_], (float) renderVertexY[i_41_], (float) renderVertexX[i_39_], (float) renderVertexX[i_40_], (float) renderVertexX[i_41_], (float) renderVertexZ[i_39_], (float) renderVertexZ[i_40_], (float) renderVertexZ[i_41_], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_42_ | anIntArray5368[i] & 0xffffff, i_42_ | anIntArray5337[i] & 0xffffff, i_42_ | anIntArray5366[i] & 0xffffff, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[i]);
         }
     }
 
-    final void method615(Class101 class101, Class318_Sub3 class318_sub3, int i) {
-        method654(class101, class318_sub3, -1, i);
+    final void method615(Matrix matrix, Class318_Sub3 class318_sub3, int i) {
+        method654(matrix, class318_sub3, -1, i);
     }
 
     final int HA() {
@@ -399,7 +399,7 @@ final class JavaModel extends Model {
             i_45_ <<= 4;
             i_46_ <<= 4;
             if (!aBoolean5372) {
-                for (int i_49_ = 0; i_49_ < anInt5340; i_49_++) {
+                for (int i_49_ = 0; i_49_ < vertexCount; i_49_++) {
                     vertexX[i_49_] <<= 4;
                     vertexY[i_49_] <<= 4;
                     vertexZ[i_49_] <<= 4;
@@ -437,7 +437,7 @@ final class JavaModel extends Model {
             i_45_ <<= 4;
             i_46_ <<= 4;
             if (!aBoolean5372) {
-                for (int i_56_ = 0; i_56_ < anInt5340; i_56_++) {
+                for (int i_56_ = 0; i_56_ < vertexCount; i_56_++) {
                     vertexX[i_56_] <<= 4;
                     vertexY[i_56_] <<= 4;
                     vertexZ[i_56_] <<= 4;
@@ -560,11 +560,11 @@ final class JavaModel extends Model {
                         }
                     }
                 }
-                if (aClass6Array5361 != null) {
-                    for (int i_98_ = 0; i_98_ < anInt5389; i_98_++) {
-                        Class6 class6 = aClass6Array5361[i_98_];
-                        Class350 class350 = aClass350Array5363[i_98_];
-                        class350.anInt4313 = (class350.anInt4313 & 0xffffff | (255 - (faceAlphas[class6.anInt144] & 0xff)) << 24);
+                if (billboardFaces != null) {
+                    for (int i_98_ = 0; i_98_ < billboardCount; i_98_++) {
+                        JavaBillboardFace javaBillboardFace = billboardFaces[i_98_];
+                        JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_98_];
+                        javaBillboardAttributes.anInt4313 = (javaBillboardAttributes.anInt4313 & 0xffffff | (255 - (faceAlphas[javaBillboardFace.anInt144] & 0xff)) << 24);
                     }
                 }
             }
@@ -576,7 +576,7 @@ final class JavaModel extends Model {
                         int[] is_101_ = anIntArrayArray5330[i_100_];
                         for (int i_102_ = 0; i_102_ < is_101_.length; i_102_++) {
                             int i_103_ = is_101_[i_102_];
-                            int i_104_ = aShortArray5311[i_103_] & 0xffff;
+                            int i_104_ = faceColour[i_103_] & 0xffff;
                             int i_105_ = i_104_ >> 10 & 0x3f;
                             int i_106_ = i_104_ >> 7 & 0x7;
                             int i_107_ = i_104_ & 0x7f;
@@ -587,16 +587,16 @@ final class JavaModel extends Model {
                             i_107_ += i_46_;
                             if (i_107_ < 0) i_107_ = 0;
                             else if (i_107_ > 127) i_107_ = 127;
-                            aShortArray5311[i_103_] = (short) (i_105_ << 10 | i_106_ << 7 | i_107_);
+                            faceColour[i_103_] = (short) (i_105_ << 10 | i_106_ << 7 | i_107_);
                         }
                         aBoolean5380 = true;
                     }
                 }
-                if (aClass6Array5361 != null) {
-                    for (int i_108_ = 0; i_108_ < anInt5389; i_108_++) {
-                        Class6 class6 = aClass6Array5361[i_108_];
-                        Class350 class350 = aClass350Array5363[i_108_];
-                        class350.anInt4313 = (class350.anInt4313 & ~0xffffff | ((Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303((aShortArray5311[(class6.anInt144)]) & 0xffff, 30) & 0xffff]) & 0xffffff));
+                if (billboardFaces != null) {
+                    for (int i_108_ = 0; i_108_ < billboardCount; i_108_++) {
+                        JavaBillboardFace javaBillboardFace = billboardFaces[i_108_];
+                        JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_108_];
+                        javaBillboardAttributes.anInt4313 = (javaBillboardAttributes.anInt4313 & ~0xffffff | ((Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303((faceColour[(javaBillboardFace.anInt144)]) & 0xffff, 30) & 0xffff]) & 0xffffff));
                     }
                 }
             }
@@ -607,9 +607,9 @@ final class JavaModel extends Model {
                     if (i_110_ < anIntArrayArray5379.length) {
                         int[] is_111_ = anIntArrayArray5379[i_110_];
                         for (int i_112_ = 0; i_112_ < is_111_.length; i_112_++) {
-                            Class350 class350 = aClass350Array5363[is_111_[i_112_]];
-                            class350.anInt4316 += i_44_;
-                            class350.anInt4317 += i_45_;
+                            JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[is_111_[i_112_]];
+                            javaBillboardAttributes.anInt4316 += i_44_;
+                            javaBillboardAttributes.anInt4317 += i_45_;
                         }
                     }
                 }
@@ -621,9 +621,9 @@ final class JavaModel extends Model {
                     if (i_114_ < anIntArrayArray5379.length) {
                         int[] is_115_ = anIntArrayArray5379[i_114_];
                         for (int i_116_ = 0; i_116_ < is_115_.length; i_116_++) {
-                            Class350 class350 = aClass350Array5363[is_115_[i_116_]];
-                            class350.anInt4314 = class350.anInt4314 * i_44_ >> 7;
-                            class350.anInt4311 = class350.anInt4311 * i_45_ >> 7;
+                            JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[is_115_[i_116_]];
+                            javaBillboardAttributes.anInt4314 = javaBillboardAttributes.anInt4314 * i_44_ >> 7;
+                            javaBillboardAttributes.anInt4311 = javaBillboardAttributes.anInt4311 * i_45_ >> 7;
                         }
                     }
                 }
@@ -634,8 +634,8 @@ final class JavaModel extends Model {
                 if (i_118_ < anIntArrayArray5379.length) {
                     int[] is_119_ = anIntArrayArray5379[i_118_];
                     for (int i_120_ = 0; i_120_ < is_119_.length; i_120_++) {
-                        Class350 class350 = aClass350Array5363[is_119_[i_120_]];
-                        class350.anInt4308 = class350.anInt4308 + i_44_ & 0x3fff;
+                        JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[is_119_[i_120_]];
+                        javaBillboardAttributes.anInt4308 = javaBillboardAttributes.anInt4308 + i_44_ & 0x3fff;
                     }
                 }
             }
@@ -643,11 +643,11 @@ final class JavaModel extends Model {
     }
 
     final void FA(int i) {
-        if ((anInt5316 & 0x6) != 6) throw new IllegalStateException();
+        if ((functionMask & 0x6) != 6) throw new IllegalStateException();
         int i_121_ = Class70.SIN[i];
         int i_122_ = Class70.COS[i];
         synchronized (this) {
-            for (int i_123_ = 0; i_123_ < anInt5340; i_123_++) {
+            for (int i_123_ = 0; i_123_ < vertexCount; i_123_++) {
                 int i_124_ = ((vertexY[i_123_] * i_122_ - vertexZ[i_123_] * i_121_) >> 14);
                 vertexZ[i_123_] = (vertexY[i_123_] * i_121_ + vertexZ[i_123_] * i_122_) >> 14;
                 vertexY[i_123_] = i_124_;
@@ -657,7 +657,7 @@ final class JavaModel extends Model {
     }
 
     final void method622() {
-        if (aHa_Sub1_5353.anInt7485 > 1) {
+        if (toolkit.threadCount > 1) {
             synchronized (this) {
                 while (this.aBoolean1124) {
                     try {
@@ -683,7 +683,7 @@ final class JavaModel extends Model {
             i_126_ <<= 4;
             i_127_ <<= 4;
             if (!aBoolean5372) {
-                for (int i_131_ = 0; i_131_ < anInt5340; i_131_++) {
+                for (int i_131_ = 0; i_131_ < vertexCount; i_131_++) {
                     vertexX[i_131_] <<= 4;
                     vertexY[i_131_] <<= 4;
                     vertexZ[i_131_] <<= 4;
@@ -700,7 +700,7 @@ final class JavaModel extends Model {
                     int[] is_135_ = anIntArrayArray5334[i_134_];
                     for (int i_136_ = 0; i_136_ < is_135_.length; i_136_++) {
                         int i_137_ = is_135_[i_136_];
-                        if (aShortArray5333 == null || (i_128_ & aShortArray5333[i_137_]) != 0) {
+                        if (originalModels == null || (i_128_ & originalModels[i_137_]) != 0) {
                             anInt5338 += vertexX[i_137_];
                             anInt5375 += vertexY[i_137_];
                             anInt5342 += vertexZ[i_137_];
@@ -732,7 +732,7 @@ final class JavaModel extends Model {
             i_126_ <<= 4;
             i_127_ <<= 4;
             if (!aBoolean5372) {
-                for (int i_141_ = 0; i_141_ < anInt5340; i_141_++) {
+                for (int i_141_ = 0; i_141_ < vertexCount; i_141_++) {
                     vertexX[i_141_] <<= 4;
                     vertexY[i_141_] <<= 4;
                     vertexZ[i_141_] <<= 4;
@@ -745,7 +745,7 @@ final class JavaModel extends Model {
                     int[] is_144_ = anIntArrayArray5334[i_143_];
                     for (int i_145_ = 0; i_145_ < is_144_.length; i_145_++) {
                         int i_146_ = is_144_[i_145_];
-                        if (aShortArray5333 == null || (i_128_ & aShortArray5333[i_146_]) != 0) {
+                        if (originalModels == null || (i_128_ & originalModels[i_146_]) != 0) {
                             vertexX[i_146_] += i_125_;
                             vertexY[i_146_] += i_126_;
                             vertexZ[i_146_] += i_127_;
@@ -761,7 +761,7 @@ final class JavaModel extends Model {
                         int[] is_198_ = anIntArrayArray5334[i_197_];
                         for (int i_199_ = 0; i_199_ < is_198_.length; i_199_++) {
                             int i_200_ = is_198_[i_199_];
-                            if (aShortArray5333 == null || (i_128_ & aShortArray5333[i_200_]) != 0) {
+                            if (originalModels == null || (i_128_ & originalModels[i_200_]) != 0) {
                                 vertexX[i_200_] -= anInt5338;
                                 vertexY[i_200_] -= anInt5375;
                                 vertexZ[i_200_] -= anInt5342;
@@ -795,7 +795,7 @@ final class JavaModel extends Model {
                 }
             } else {
                 if (!aBoolean5372) {
-                    for (int i_147_ = 0; i_147_ < anInt5340; i_147_++) {
+                    for (int i_147_ = 0; i_147_ < vertexCount; i_147_++) {
                         vertexX[i_147_] <<= 4;
                         vertexY[i_147_] <<= 4;
                         vertexZ[i_147_] <<= 4;
@@ -880,7 +880,7 @@ final class JavaModel extends Model {
                         int[] is_190_ = anIntArrayArray5334[i_189_];
                         for (int i_191_ = 0; i_191_ < is_190_.length; i_191_++) {
                             int i_192_ = is_190_[i_191_];
-                            if (aShortArray5333 == null || (i_128_ & aShortArray5333[i_192_]) != 0) {
+                            if (originalModels == null || (i_128_ & originalModels[i_192_]) != 0) {
                                 int i_193_ = ((is_180_[0] * vertexX[i_192_] + is_180_[1] * vertexY[i_192_] + is_180_[2] * vertexZ[i_192_] + 8192) >> 14);
                                 int i_194_ = ((is_180_[3] * vertexX[i_192_] + is_180_[4] * vertexY[i_192_] + is_180_[5] * vertexZ[i_192_] + 8192) >> 14);
                                 int i_195_ = ((is_180_[6] * vertexX[i_192_] + is_180_[7] * vertexY[i_192_] + is_180_[8] * vertexZ[i_192_] + 8192) >> 14);
@@ -903,7 +903,7 @@ final class JavaModel extends Model {
                         int[] is_251_ = anIntArrayArray5334[i_250_];
                         for (int i_252_ = 0; i_252_ < is_251_.length; i_252_++) {
                             int i_253_ = is_251_[i_252_];
-                            if (aShortArray5333 == null || (i_128_ & aShortArray5333[i_253_]) != 0) {
+                            if (originalModels == null || (i_128_ & originalModels[i_253_]) != 0) {
                                 vertexX[i_253_] -= anInt5338;
                                 vertexY[i_253_] -= anInt5375;
                                 vertexZ[i_253_] -= anInt5342;
@@ -919,7 +919,7 @@ final class JavaModel extends Model {
                 }
             } else {
                 if (!aBoolean5372) {
-                    for (int i_210_ = 0; i_210_ < anInt5340; i_210_++) {
+                    for (int i_210_ = 0; i_210_ < vertexCount; i_210_++) {
                         vertexX[i_210_] <<= 4;
                         vertexY[i_210_] <<= 4;
                         vertexZ[i_210_] <<= 4;
@@ -990,7 +990,7 @@ final class JavaModel extends Model {
                         int[] is_243_ = anIntArrayArray5334[i_242_];
                         for (int i_244_ = 0; i_244_ < is_243_.length; i_244_++) {
                             int i_245_ = is_243_[i_244_];
-                            if (aShortArray5333 == null || (i_128_ & aShortArray5333[i_245_]) != 0) {
+                            if (originalModels == null || (i_128_ & originalModels[i_245_]) != 0) {
                                 int i_246_ = ((is_233_[0] * vertexX[i_245_] + is_233_[1] * vertexY[i_245_] + is_233_[2] * vertexZ[i_245_] + 8192) >> 14);
                                 int i_247_ = ((is_233_[3] * vertexX[i_245_] + is_233_[4] * vertexY[i_245_] + is_233_[5] * vertexZ[i_245_] + 8192) >> 14);
                                 int i_248_ = ((is_233_[6] * vertexX[i_245_] + is_233_[7] * vertexY[i_245_] + is_233_[8] * vertexZ[i_245_] + 8192) >> 14);
@@ -1022,11 +1022,11 @@ final class JavaModel extends Model {
                         }
                     }
                 }
-                if (aClass6Array5361 != null) {
-                    for (int i_260_ = 0; i_260_ < anInt5389; i_260_++) {
-                        Class6 class6 = aClass6Array5361[i_260_];
-                        Class350 class350 = aClass350Array5363[i_260_];
-                        class350.anInt4313 = (class350.anInt4313 & 0xffffff | (255 - (faceAlphas[class6.anInt144] & 0xff)) << 24);
+                if (billboardFaces != null) {
+                    for (int i_260_ = 0; i_260_ < billboardCount; i_260_++) {
+                        JavaBillboardFace javaBillboardFace = billboardFaces[i_260_];
+                        JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_260_];
+                        javaBillboardAttributes.anInt4313 = (javaBillboardAttributes.anInt4313 & 0xffffff | (255 - (faceAlphas[javaBillboardFace.anInt144] & 0xff)) << 24);
                     }
                 }
             }
@@ -1039,7 +1039,7 @@ final class JavaModel extends Model {
                         for (int i_264_ = 0; i_264_ < is_263_.length; i_264_++) {
                             int i_265_ = is_263_[i_264_];
                             if (aShortArray5370 == null || (i_128_ & aShortArray5370[i_265_]) != 0) {
-                                int i_266_ = aShortArray5311[i_265_] & 0xffff;
+                                int i_266_ = faceColour[i_265_] & 0xffff;
                                 int i_267_ = i_266_ >> 10 & 0x3f;
                                 int i_268_ = i_266_ >> 7 & 0x7;
                                 int i_269_ = i_266_ & 0x7f;
@@ -1050,17 +1050,17 @@ final class JavaModel extends Model {
                                 i_269_ += i_127_;
                                 if (i_269_ < 0) i_269_ = 0;
                                 else if (i_269_ > 127) i_269_ = 127;
-                                aShortArray5311[i_265_] = (short) (i_267_ << 10 | i_268_ << 7 | i_269_);
+                                faceColour[i_265_] = (short) (i_267_ << 10 | i_268_ << 7 | i_269_);
                             }
                         }
                         aBoolean5380 = true;
                     }
                 }
-                if (aClass6Array5361 != null) {
-                    for (int i_270_ = 0; i_270_ < anInt5389; i_270_++) {
-                        Class6 class6 = aClass6Array5361[i_270_];
-                        Class350 class350 = aClass350Array5363[i_270_];
-                        class350.anInt4313 = (class350.anInt4313 & ~0xffffff | ((Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303((aShortArray5311[(class6.anInt144)]) & 0xffff, 30) & 0xffff]) & 0xffffff));
+                if (billboardFaces != null) {
+                    for (int i_270_ = 0; i_270_ < billboardCount; i_270_++) {
+                        JavaBillboardFace javaBillboardFace = billboardFaces[i_270_];
+                        JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_270_];
+                        javaBillboardAttributes.anInt4313 = (javaBillboardAttributes.anInt4313 & ~0xffffff | ((Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303((faceColour[(javaBillboardFace.anInt144)]) & 0xffff, 30) & 0xffff]) & 0xffffff));
                     }
                 }
             }
@@ -1071,9 +1071,9 @@ final class JavaModel extends Model {
                     if (i_272_ < anIntArrayArray5379.length) {
                         int[] is_273_ = anIntArrayArray5379[i_272_];
                         for (int i_274_ = 0; i_274_ < is_273_.length; i_274_++) {
-                            Class350 class350 = aClass350Array5363[is_273_[i_274_]];
-                            class350.anInt4316 += i_125_;
-                            class350.anInt4317 += i_126_;
+                            JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[is_273_[i_274_]];
+                            javaBillboardAttributes.anInt4316 += i_125_;
+                            javaBillboardAttributes.anInt4317 += i_126_;
                         }
                     }
                 }
@@ -1085,9 +1085,9 @@ final class JavaModel extends Model {
                     if (i_276_ < anIntArrayArray5379.length) {
                         int[] is_277_ = anIntArrayArray5379[i_276_];
                         for (int i_278_ = 0; i_278_ < is_277_.length; i_278_++) {
-                            Class350 class350 = aClass350Array5363[is_277_[i_278_]];
-                            class350.anInt4314 = (class350.anInt4314 * i_125_ >> 7);
-                            class350.anInt4311 = (class350.anInt4311 * i_126_ >> 7);
+                            JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[is_277_[i_278_]];
+                            javaBillboardAttributes.anInt4314 = (javaBillboardAttributes.anInt4314 * i_125_ >> 7);
+                            javaBillboardAttributes.anInt4311 = (javaBillboardAttributes.anInt4311 * i_126_ >> 7);
                         }
                     }
                 }
@@ -1098,8 +1098,8 @@ final class JavaModel extends Model {
                 if (i_280_ < anIntArrayArray5379.length) {
                     int[] is_281_ = anIntArrayArray5379[i_280_];
                     for (int i_282_ = 0; i_282_ < is_281_.length; i_282_++) {
-                        Class350 class350 = aClass350Array5363[is_281_[i_282_]];
-                        class350.anInt4308 = (class350.anInt4308 + i_125_ & 0x3fff);
+                        JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[is_281_[i_282_]];
+                        javaBillboardAttributes.anInt4308 = (javaBillboardAttributes.anInt4308 + i_125_ & 0x3fff);
                     }
                 }
             }
@@ -1108,7 +1108,7 @@ final class JavaModel extends Model {
 
     private final void method636() {
         if (anInt5354 == 0 && normals == null) {
-            if (aHa_Sub1_5353.anInt7485 > 1) {
+            if (toolkit.threadCount > 1) {
                 synchronized (this) {
                     method649();
                 }
@@ -1118,7 +1118,7 @@ final class JavaModel extends Model {
 
     final void wa() {
         if (aBoolean5372) {
-            for (int i = 0; i < anInt5340; i++) {
+            for (int i = 0; i < vertexCount; i++) {
                 vertexX[i] = vertexX[i] + 7 >> 4;
                 vertexY[i] = vertexY[i] + 7 >> 4;
                 vertexZ[i] = vertexZ[i] + 7 >> 4;
@@ -1155,7 +1155,7 @@ final class JavaModel extends Model {
 
     private final void method639() {
         synchronized (this) {
-            for (int i = 0; i < anInt5340; i++) {
+            for (int i = 0; i < vertexCount; i++) {
                 int i_284_ = vertexZ[i];
                 vertexZ[i] = vertexX[i];
                 vertexX[i] = -i_284_;
@@ -1165,50 +1165,50 @@ final class JavaModel extends Model {
     }
 
     final boolean method618() {
-        if (aShortArray5388 == null) return true;
-        for (int i = 0; i < aShortArray5388.length; i++) {
-            if (aShortArray5388[i] != -1 && !aHa_Sub1_5353.method3725(aShortArray5388[i])) return false;
+        if (faceTextures == null) return true;
+        for (int i = 0; i < faceTextures.length; i++) {
+            if (faceTextures[i] != -1 && !toolkit.method3725(faceTextures[i])) return false;
         }
         return true;
     }
 
-    final void method620(Class101 class101) {
-        Class101_Sub1 class101_sub1 = (Class101_Sub1) class101;
-        if (aModelParticleEmitterArray5322 != null) {
-            for (int i = 0; i < aModelParticleEmitterArray5322.length; i++) {
-                ModelParticleEmitter modelParticleEmitter = aModelParticleEmitterArray5322[i];
+    final void method620(Matrix matrix) {
+        JavaMatrix javaMatrix = (JavaMatrix) matrix;
+        if (emitters != null) {
+            for (int i = 0; i < emitters.length; i++) {
+                ModelParticleEmitter modelParticleEmitter = emitters[i];
                 ModelParticleEmitter modelParticleEmitter_285_ = modelParticleEmitter;
                 if (modelParticleEmitter.aModelParticleEmitter_1888 != null) modelParticleEmitter_285_ = modelParticleEmitter.aModelParticleEmitter_1888;
-                modelParticleEmitter_285_.anInt1882 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (vertexX[modelParticleEmitter.anInt1881])) + (class101_sub1.aFloat5673 * (float) (vertexY[(modelParticleEmitter.anInt1881)])) + (class101_sub1.aFloat5669 * (float) (vertexZ[(modelParticleEmitter.anInt1881)]))));
-                modelParticleEmitter_285_.anInt1891 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (vertexX[modelParticleEmitter.anInt1881])) + (class101_sub1.aFloat5678 * (float) (vertexY[(modelParticleEmitter.anInt1881)])) + (class101_sub1.aFloat5666 * (float) (vertexZ[(modelParticleEmitter.anInt1881)]))));
-                modelParticleEmitter_285_.anInt1889 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (vertexX[modelParticleEmitter.anInt1881])) + (class101_sub1.aFloat5680 * (float) (vertexY[(modelParticleEmitter.anInt1881)])) + (class101_sub1.aFloat5664 * (float) (vertexZ[(modelParticleEmitter.anInt1881)]))));
-                modelParticleEmitter_285_.anInt1883 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (vertexX[modelParticleEmitter.anInt1877])) + (class101_sub1.aFloat5673 * (float) (vertexY[(modelParticleEmitter.anInt1877)])) + (class101_sub1.aFloat5669 * (float) (vertexZ[(modelParticleEmitter.anInt1877)]))));
-                modelParticleEmitter_285_.anInt1890 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (vertexX[modelParticleEmitter.anInt1877])) + (class101_sub1.aFloat5678 * (float) (vertexY[(modelParticleEmitter.anInt1877)])) + (class101_sub1.aFloat5666 * (float) (vertexZ[(modelParticleEmitter.anInt1877)]))));
-                modelParticleEmitter_285_.anInt1880 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (vertexX[modelParticleEmitter.anInt1877])) + (class101_sub1.aFloat5680 * (float) (vertexY[(modelParticleEmitter.anInt1877)])) + (class101_sub1.aFloat5664 * (float) (vertexZ[(modelParticleEmitter.anInt1877)]))));
-                modelParticleEmitter_285_.anInt1876 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (vertexX[modelParticleEmitter.anInt1892])) + (class101_sub1.aFloat5673 * (float) (vertexY[(modelParticleEmitter.anInt1892)])) + (class101_sub1.aFloat5669 * (float) (vertexZ[(modelParticleEmitter.anInt1892)]))));
-                modelParticleEmitter_285_.anInt1874 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (vertexX[modelParticleEmitter.anInt1892])) + (class101_sub1.aFloat5678 * (float) (vertexY[(modelParticleEmitter.anInt1892)])) + (class101_sub1.aFloat5666 * (float) (vertexZ[(modelParticleEmitter.anInt1892)]))));
-                modelParticleEmitter_285_.anInt1884 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (vertexX[modelParticleEmitter.anInt1892])) + (class101_sub1.aFloat5680 * (float) (vertexY[(modelParticleEmitter.anInt1892)])) + (class101_sub1.aFloat5664 * (float) (vertexZ[(modelParticleEmitter.anInt1892)]))));
+                modelParticleEmitter_285_.anInt1882 = (int) (javaMatrix.aFloat5686 + ((javaMatrix.aFloat5672 * (float) (vertexX[modelParticleEmitter.anInt1881])) + (javaMatrix.aFloat5673 * (float) (vertexY[(modelParticleEmitter.anInt1881)])) + (javaMatrix.aFloat5669 * (float) (vertexZ[(modelParticleEmitter.anInt1881)]))));
+                modelParticleEmitter_285_.anInt1891 = (int) (javaMatrix.aFloat5685 + ((javaMatrix.aFloat5655 * (float) (vertexX[modelParticleEmitter.anInt1881])) + (javaMatrix.aFloat5678 * (float) (vertexY[(modelParticleEmitter.anInt1881)])) + (javaMatrix.aFloat5666 * (float) (vertexZ[(modelParticleEmitter.anInt1881)]))));
+                modelParticleEmitter_285_.anInt1889 = (int) (javaMatrix.aFloat5681 + ((javaMatrix.aFloat5662 * (float) (vertexX[modelParticleEmitter.anInt1881])) + (javaMatrix.aFloat5680 * (float) (vertexY[(modelParticleEmitter.anInt1881)])) + (javaMatrix.aFloat5664 * (float) (vertexZ[(modelParticleEmitter.anInt1881)]))));
+                modelParticleEmitter_285_.anInt1883 = (int) (javaMatrix.aFloat5686 + ((javaMatrix.aFloat5672 * (float) (vertexX[modelParticleEmitter.anInt1877])) + (javaMatrix.aFloat5673 * (float) (vertexY[(modelParticleEmitter.anInt1877)])) + (javaMatrix.aFloat5669 * (float) (vertexZ[(modelParticleEmitter.anInt1877)]))));
+                modelParticleEmitter_285_.anInt1890 = (int) (javaMatrix.aFloat5685 + ((javaMatrix.aFloat5655 * (float) (vertexX[modelParticleEmitter.anInt1877])) + (javaMatrix.aFloat5678 * (float) (vertexY[(modelParticleEmitter.anInt1877)])) + (javaMatrix.aFloat5666 * (float) (vertexZ[(modelParticleEmitter.anInt1877)]))));
+                modelParticleEmitter_285_.anInt1880 = (int) (javaMatrix.aFloat5681 + ((javaMatrix.aFloat5662 * (float) (vertexX[modelParticleEmitter.anInt1877])) + (javaMatrix.aFloat5680 * (float) (vertexY[(modelParticleEmitter.anInt1877)])) + (javaMatrix.aFloat5664 * (float) (vertexZ[(modelParticleEmitter.anInt1877)]))));
+                modelParticleEmitter_285_.anInt1876 = (int) (javaMatrix.aFloat5686 + ((javaMatrix.aFloat5672 * (float) (vertexX[modelParticleEmitter.anInt1892])) + (javaMatrix.aFloat5673 * (float) (vertexY[(modelParticleEmitter.anInt1892)])) + (javaMatrix.aFloat5669 * (float) (vertexZ[(modelParticleEmitter.anInt1892)]))));
+                modelParticleEmitter_285_.anInt1874 = (int) (javaMatrix.aFloat5685 + ((javaMatrix.aFloat5655 * (float) (vertexX[modelParticleEmitter.anInt1892])) + (javaMatrix.aFloat5678 * (float) (vertexY[(modelParticleEmitter.anInt1892)])) + (javaMatrix.aFloat5666 * (float) (vertexZ[(modelParticleEmitter.anInt1892)]))));
+                modelParticleEmitter_285_.anInt1884 = (int) (javaMatrix.aFloat5681 + ((javaMatrix.aFloat5662 * (float) (vertexX[modelParticleEmitter.anInt1892])) + (javaMatrix.aFloat5680 * (float) (vertexY[(modelParticleEmitter.anInt1892)])) + (javaMatrix.aFloat5664 * (float) (vertexZ[(modelParticleEmitter.anInt1892)]))));
             }
         }
-        if (aModelParticleEffectorArray5335 != null) {
-            for (int i = 0; i < aModelParticleEffectorArray5335.length; i++) {
-                ModelParticleEffector modelParticleEffector = aModelParticleEffectorArray5335[i];
+        if (effectors != null) {
+            for (int i = 0; i < effectors.length; i++) {
+                ModelParticleEffector modelParticleEffector = effectors[i];
                 ModelParticleEffector modelParticleEffector_286_ = modelParticleEffector;
                 if (modelParticleEffector.aModelParticleEffector_4248 != null) modelParticleEffector_286_ = modelParticleEffector.aModelParticleEffector_4248;
-                if (modelParticleEffector.aClass101_4252 != null) modelParticleEffector.aClass101_4252.method898(class101_sub1);
-                else modelParticleEffector.aClass101_4252 = class101_sub1.method907();
-                modelParticleEffector_286_.anInt4238 = (int) (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (float) (vertexX[modelParticleEffector.anInt4244])) + (class101_sub1.aFloat5673 * (float) (vertexY[(modelParticleEffector.anInt4244)])) + (class101_sub1.aFloat5669 * (float) (vertexZ[(modelParticleEffector.anInt4244)]))));
-                modelParticleEffector_286_.anInt4239 = (int) (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (float) (vertexX[modelParticleEffector.anInt4244])) + (class101_sub1.aFloat5678 * (float) (vertexY[(modelParticleEffector.anInt4244)])) + (class101_sub1.aFloat5666 * (float) (vertexZ[(modelParticleEffector.anInt4244)]))));
-                modelParticleEffector_286_.anInt4240 = (int) (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * (float) (vertexX[modelParticleEffector.anInt4244])) + (class101_sub1.aFloat5680 * (float) (vertexY[(modelParticleEffector.anInt4244)])) + (class101_sub1.aFloat5664 * (float) (vertexZ[(modelParticleEffector.anInt4244)]))));
+                if (modelParticleEffector.aMatrix_4252 != null) modelParticleEffector.aMatrix_4252.method898(javaMatrix);
+                else modelParticleEffector.aMatrix_4252 = javaMatrix.method907();
+                modelParticleEffector_286_.anInt4238 = (int) (javaMatrix.aFloat5686 + ((javaMatrix.aFloat5672 * (float) (vertexX[modelParticleEffector.anInt4244])) + (javaMatrix.aFloat5673 * (float) (vertexY[(modelParticleEffector.anInt4244)])) + (javaMatrix.aFloat5669 * (float) (vertexZ[(modelParticleEffector.anInt4244)]))));
+                modelParticleEffector_286_.anInt4239 = (int) (javaMatrix.aFloat5685 + ((javaMatrix.aFloat5655 * (float) (vertexX[modelParticleEffector.anInt4244])) + (javaMatrix.aFloat5678 * (float) (vertexY[(modelParticleEffector.anInt4244)])) + (javaMatrix.aFloat5666 * (float) (vertexZ[(modelParticleEffector.anInt4244)]))));
+                modelParticleEffector_286_.anInt4240 = (int) (javaMatrix.aFloat5681 + ((javaMatrix.aFloat5662 * (float) (vertexX[modelParticleEffector.anInt4244])) + (javaMatrix.aFloat5680 * (float) (vertexY[(modelParticleEffector.anInt4244)])) + (javaMatrix.aFloat5664 * (float) (vertexZ[(modelParticleEffector.anInt4244)]))));
             }
         }
     }
 
     private final void method640() {
         for (int i = 0; i < faceCount; i++) {
-            short i_287_ = aShortArray5388 != null ? aShortArray5388[i] : (short) -1;
+            short i_287_ = faceTextures != null ? faceTextures[i] : (short) -1;
             if (i_287_ == -1) {
-                int i_288_ = aShortArray5311[i] & 0xffff;
+                int i_288_ = faceColour[i] & 0xffff;
                 int i_289_ = (i_288_ & 0x7f) * anInt5344 >> 7;
                 short i_290_ = SkyBoxSphereTypeList.method303(i_288_ & ~0x7f | i_289_, 30);
                 if (anIntArray5366[i] == -1) {
@@ -1228,7 +1228,7 @@ final class JavaModel extends Model {
     }
 
     final void k(int i) {
-        if ((anInt5316 & 0xd) != 13) throw new IllegalStateException();
+        if ((functionMask & 0xd) != 13) throw new IllegalStateException();
         if (normals != null) {
             if (i == 4096) method653();
             else if (i == 8192) method652();
@@ -1237,7 +1237,7 @@ final class JavaModel extends Model {
                 int i_293_ = Class70.SIN[i];
                 int i_294_ = Class70.COS[i];
                 synchronized (this) {
-                    for (int i_295_ = 0; i_295_ < vertexCount; i_295_++) {
+                    for (int i_295_ = 0; i_295_ < maxVertex; i_295_++) {
                         int i_296_ = ((vertexZ[i_295_] * i_293_ + vertexX[i_295_] * i_294_) >> 14);
                         vertexZ[i_295_] = (vertexZ[i_295_] * i_294_ - vertexX[i_295_] * i_293_) >> 14;
                         vertexX[i_295_] = i_296_;
@@ -1256,7 +1256,7 @@ final class JavaModel extends Model {
                             }
                         }
                     }
-                    for (int i_299_ = vertexCount; i_299_ < anInt5340; i_299_++) {
+                    for (int i_299_ = maxVertex; i_299_ < vertexCount; i_299_++) {
                         int i_300_ = ((vertexZ[i_299_] * i_293_ + vertexX[i_299_] * i_294_) >> 14);
                         vertexZ[i_299_] = (vertexZ[i_299_] * i_294_ - vertexX[i_299_] * i_293_) >> 14;
                         vertexX[i_299_] = i_300_;
@@ -1268,13 +1268,13 @@ final class JavaModel extends Model {
         } else a(i);
     }
 
-    final void method610(Class101 class101, int i, boolean bool) {
-        if (aShortArray5333 != null) {
+    final void method610(Matrix matrix, int i, boolean bool) {
+        if (originalModels != null) {
             int[] is = new int[3];
-            for (int i_301_ = 0; i_301_ < vertexCount; i_301_++) {
-                if ((i & aShortArray5333[i_301_]) != 0) {
-                    if (bool) class101.method892(vertexX[i_301_], vertexY[i_301_], vertexZ[i_301_], is);
-                    else class101.method897(vertexX[i_301_], vertexY[i_301_], vertexZ[i_301_], is);
+            for (int i_301_ = 0; i_301_ < maxVertex; i_301_++) {
+                if ((i & originalModels[i_301_]) != 0) {
+                    if (bool) matrix.method892(vertexX[i_301_], vertexY[i_301_], vertexZ[i_301_], is);
+                    else matrix.method897(vertexX[i_301_], vertexY[i_301_], vertexZ[i_301_], is);
                     vertexX[i_301_] = is[0];
                     vertexY[i_301_] = is[1];
                     vertexZ[i_301_] = is[2];
@@ -1289,7 +1289,7 @@ final class JavaModel extends Model {
 
     private final void method641() {
         synchronized (this) {
-            for (int i = 0; i < vertexCount; i++) {
+            for (int i = 0; i < maxVertex; i++) {
                 int i_302_ = vertexZ[i];
                 vertexZ[i] = vertexX[i];
                 vertexX[i] = -i_302_;
@@ -1308,7 +1308,7 @@ final class JavaModel extends Model {
                     }
                 }
             }
-            for (int i = vertexCount; i < anInt5340; i++) {
+            for (int i = maxVertex; i < vertexCount; i++) {
                 int i_304_ = vertexZ[i];
                 vertexZ[i] = vertexX[i];
                 vertexX[i] = -i_304_;
@@ -1320,8 +1320,8 @@ final class JavaModel extends Model {
 
     private final int method642(int i, short i_305_, int i_306_) {
         int i_307_ = Class10.HSL_TO_RGB[method637(i, i_306_)];
-        Class12 class12 = aHa_Sub1_5353.aD4579.method3(i_305_ & 0xffff, -6662);
-        int i_308_ = class12.aByte201 & 0xff;
+        TextureMetrics textureMetrics = toolkit.aD4579.getMetrics(i_305_ & 0xffff, -6662);
+        int i_308_ = textureMetrics.aByte201 & 0xff;
         if (i_308_ != 0) {
             int i_309_ = 131586 * i_306_;
             if (i_308_ == 256) i_307_ = i_309_;
@@ -1331,7 +1331,7 @@ final class JavaModel extends Model {
                 i_307_ = ((((i_309_ & 0xff00ff) * i_310_ + (i_307_ & 0xff00ff) * i_311_) & ~0xff00ff) + (((i_309_ & 0xff00) * i_310_ + (i_307_ & 0xff00) * i_311_) & 0xff0000)) >> 8;
             }
         }
-        int i_312_ = class12.aByte216 & 0xff;
+        int i_312_ = textureMetrics.aByte216 & 0xff;
         if (i_312_ != 0) {
             i_312_ += 256;
             int i_313_ = ((i_307_ & 0xff0000) >> 16) * i_312_;
@@ -1345,8 +1345,8 @@ final class JavaModel extends Model {
         return i_307_;
     }
 
-    final void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_316_) {
-        method654(class101, class318_sub3, i, i_316_);
+    final void method608(Matrix matrix, Class318_Sub3 class318_sub3, int i, int i_316_) {
+        method654(matrix, class318_sub3, i, i_316_);
     }
 
     final boolean NA() {
@@ -1386,17 +1386,17 @@ final class JavaModel extends Model {
                 int i_335_ = i_324_ * i_329_ - i_327_ * i_326_;
                 if (i_325_ * i_333_ + i_328_ * i_334_ + i_331_ * i_335_ > 0) method646(i);
             } else if (anIntArray5400[i] != -1 || ((i_321_ - i_322_) * (renderVertexY[i_320_] - renderVertexY[i_319_]) - ((renderVertexY[i_318_] - renderVertexY[i_319_]) * (i_323_ - i_322_))) > 0) {
-                aClass109_5383.aBoolean1671 = i_321_ < 0 || i_322_ < 0 || i_323_ < 0 || i_321_ > aClass167_5367.anInt2221 || i_322_ > aClass167_5367.anInt2221 || i_323_ > aClass167_5367.anInt2221;
+                aRasterizer_5383.aBoolean1671 = i_321_ < 0 || i_322_ < 0 || i_323_ < 0 || i_321_ > aJavaThreadResource_5367.anInt2221 || i_322_ > aJavaThreadResource_5367.anInt2221 || i_323_ > aJavaThreadResource_5367.anInt2221;
                 if (bool_317_) {
                     int i_336_ = anIntArray5400[i];
-                    if (i_336_ == -1 || !aClass6Array5361[i_336_].aBoolean145) method658(i);
+                    if (i_336_ == -1 || !billboardFaces[i_336_].aBoolean145) method658(i);
                 } else {
                     int i_337_ = anIntArray5400[i];
                     if (i_337_ != -1) {
-                        Class6 class6 = aClass6Array5361[i_337_];
-                        Class350 class350 = aClass350Array5363[i_337_];
-                        if (!class6.aBoolean145) method635(i);
-                        aHa_Sub1_5353.method3720(class350.anInt4312, class350.anInt4310, class350.anInt4320, class350.anInt4309, class350.anInt4307, class350.anInt4308, class6.aShort146 & 0xffff, class350.anInt4313, class6.aByte148, class6.aByte156);
+                        JavaBillboardFace javaBillboardFace = billboardFaces[i_337_];
+                        JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_337_];
+                        if (!javaBillboardFace.aBoolean145) method635(i);
+                        toolkit.method3720(javaBillboardAttributes.anInt4312, javaBillboardAttributes.anInt4310, javaBillboardAttributes.anInt4320, javaBillboardAttributes.anInt4309, javaBillboardAttributes.anInt4307, javaBillboardAttributes.anInt4308, javaBillboardFace.aShort146 & 0xffff, javaBillboardAttributes.anInt4313, javaBillboardFace.aByte148, javaBillboardFace.aByte156);
                     } else method635(i);
                 }
             }
@@ -1404,7 +1404,7 @@ final class JavaModel extends Model {
     }
 
     final boolean F() {
-        return aBoolean5382;
+        return transparent;
     }
 
     final void P(int i, int i_338_, int i_339_, int i_340_) {
@@ -1413,7 +1413,7 @@ final class JavaModel extends Model {
             anInt5338 = 0;
             anInt5375 = 0;
             anInt5342 = 0;
-            for (int i_342_ = 0; i_342_ < anInt5340; i_342_++) {
+            for (int i_342_ = 0; i_342_ < vertexCount; i_342_++) {
                 anInt5338 += vertexX[i_342_];
                 anInt5375 += vertexY[i_342_];
                 anInt5342 += vertexZ[i_342_];
@@ -1429,13 +1429,13 @@ final class JavaModel extends Model {
                 anInt5342 = i_340_;
             }
         } else if (i == 1) {
-            for (int i_343_ = 0; i_343_ < anInt5340; i_343_++) {
+            for (int i_343_ = 0; i_343_ < vertexCount; i_343_++) {
                 vertexX[i_343_] += i_338_;
                 vertexY[i_343_] += i_339_;
                 vertexZ[i_343_] += i_340_;
             }
         } else if (i == 2) {
-            for (int i_344_ = 0; i_344_ < anInt5340; i_344_++) {
+            for (int i_344_ = 0; i_344_ < vertexCount; i_344_++) {
                 vertexX[i_344_] -= anInt5338;
                 vertexY[i_344_] -= anInt5375;
                 vertexZ[i_344_] -= anInt5342;
@@ -1465,7 +1465,7 @@ final class JavaModel extends Model {
                 vertexZ[i_344_] += anInt5342;
             }
         } else if (i == 3) {
-            for (int i_354_ = 0; i_354_ < anInt5340; i_354_++) {
+            for (int i_354_ = 0; i_354_ < vertexCount; i_354_++) {
                 vertexX[i_354_] -= anInt5338;
                 vertexY[i_354_] -= anInt5375;
                 vertexZ[i_354_] -= anInt5342;
@@ -1483,16 +1483,16 @@ final class JavaModel extends Model {
                 else if (i_356_ > 255) i_356_ = 255;
                 faceAlphas[i_355_] = (byte) i_356_;
             }
-            if (aClass6Array5361 != null) {
-                for (int i_357_ = 0; i_357_ < anInt5389; i_357_++) {
-                    Class6 class6 = aClass6Array5361[i_357_];
-                    Class350 class350 = aClass350Array5363[i_357_];
-                    class350.anInt4313 = (class350.anInt4313 & 0xffffff | 255 - (faceAlphas[class6.anInt144] & 0xff) << 24);
+            if (billboardFaces != null) {
+                for (int i_357_ = 0; i_357_ < billboardCount; i_357_++) {
+                    JavaBillboardFace javaBillboardFace = billboardFaces[i_357_];
+                    JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_357_];
+                    javaBillboardAttributes.anInt4313 = (javaBillboardAttributes.anInt4313 & 0xffffff | 255 - (faceAlphas[javaBillboardFace.anInt144] & 0xff) << 24);
                 }
             }
         } else if (i == 7) {
             for (int i_358_ = 0; i_358_ < faceCount; i_358_++) {
-                int i_359_ = aShortArray5311[i_358_] & 0xffff;
+                int i_359_ = faceColour[i_358_] & 0xffff;
                 int i_360_ = i_359_ >> 10 & 0x3f;
                 int i_361_ = i_359_ >> 7 & 0x7;
                 int i_362_ = i_359_ & 0x7f;
@@ -1503,32 +1503,32 @@ final class JavaModel extends Model {
                 i_362_ += i_340_;
                 if (i_362_ < 0) i_362_ = 0;
                 else if (i_362_ > 127) i_362_ = 127;
-                aShortArray5311[i_358_] = (short) (i_360_ << 10 | i_361_ << 7 | i_362_);
+                faceColour[i_358_] = (short) (i_360_ << 10 | i_361_ << 7 | i_362_);
             }
             aBoolean5380 = true;
-            if (aClass6Array5361 != null) {
-                for (int i_363_ = 0; i_363_ < anInt5389; i_363_++) {
-                    Class6 class6 = aClass6Array5361[i_363_];
-                    Class350 class350 = aClass350Array5363[i_363_];
-                    class350.anInt4313 = (class350.anInt4313 & ~0xffffff | (Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303((aShortArray5311[(class6.anInt144)]) & 0xffff, 30) & 0xffff]) & 0xffffff);
+            if (billboardFaces != null) {
+                for (int i_363_ = 0; i_363_ < billboardCount; i_363_++) {
+                    JavaBillboardFace javaBillboardFace = billboardFaces[i_363_];
+                    JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_363_];
+                    javaBillboardAttributes.anInt4313 = (javaBillboardAttributes.anInt4313 & ~0xffffff | (Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303((faceColour[(javaBillboardFace.anInt144)]) & 0xffff, 30) & 0xffff]) & 0xffffff);
                 }
             }
         } else if (i == 8) {
-            for (int i_364_ = 0; i_364_ < anInt5389; i_364_++) {
-                Class350 class350 = aClass350Array5363[i_364_];
-                class350.anInt4316 += i_338_;
-                class350.anInt4317 += i_339_;
+            for (int i_364_ = 0; i_364_ < billboardCount; i_364_++) {
+                JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_364_];
+                javaBillboardAttributes.anInt4316 += i_338_;
+                javaBillboardAttributes.anInt4317 += i_339_;
             }
         } else if (i == 10) {
-            for (int i_365_ = 0; i_365_ < anInt5389; i_365_++) {
-                Class350 class350 = aClass350Array5363[i_365_];
-                class350.anInt4314 = class350.anInt4314 * i_338_ >> 7;
-                class350.anInt4311 = class350.anInt4311 * i_339_ >> 7;
+            for (int i_365_ = 0; i_365_ < billboardCount; i_365_++) {
+                JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_365_];
+                javaBillboardAttributes.anInt4314 = javaBillboardAttributes.anInt4314 * i_338_ >> 7;
+                javaBillboardAttributes.anInt4311 = javaBillboardAttributes.anInt4311 * i_339_ >> 7;
             }
         } else if (i == 9) {
-            for (int i_366_ = 0; i_366_ < anInt5389; i_366_++) {
-                Class350 class350 = aClass350Array5363[i_366_];
-                class350.anInt4308 = class350.anInt4308 + i_338_ & 0x3fff;
+            for (int i_366_ = 0; i_366_ < billboardCount; i_366_++) {
+                JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_366_];
+                javaBillboardAttributes.anInt4308 = javaBillboardAttributes.anInt4308 + i_338_ & 0x3fff;
             }
         }
     }
@@ -1544,8 +1544,8 @@ final class JavaModel extends Model {
 
     final void p(int i, int i_367_, s var_s, s var_s_368_, int i_369_, int i_370_, int i_371_) {
         if (i == 3) {
-            if ((anInt5316 & 0x7) != 7) throw new IllegalStateException();
-        } else if ((anInt5316 & 0x2) != 2) throw new IllegalStateException();
+            if ((functionMask & 0x7) != 7) throw new IllegalStateException();
+        } else if ((functionMask & 0x2) != 2) throw new IllegalStateException();
         if (!aBoolean5323) method655();
         int i_372_ = i_369_ + aShort5395;
         int i_373_ = i_369_ + aShort5393;
@@ -1567,7 +1567,7 @@ final class JavaModel extends Model {
             synchronized (this) {
                 if (i == 1) {
                     int i_377_ = var_s.anInt4592 - 1;
-                    for (int i_378_ = 0; i_378_ < vertexCount; i_378_++) {
+                    for (int i_378_ = 0; i_378_ < maxVertex; i_378_++) {
                         int i_379_ = vertexX[i_378_] + i_369_;
                         int i_380_ = vertexZ[i_378_] + i_371_;
                         int i_381_ = i_379_ & i_377_;
@@ -1579,7 +1579,7 @@ final class JavaModel extends Model {
                         int i_387_ = (i_385_ * (var_s.anInt4592 - i_382_) + i_386_ * i_382_ >> var_s.anInt4588);
                         vertexY[i_378_] = vertexY[i_378_] + i_387_ - i_370_;
                     }
-                    for (int i_388_ = vertexCount; i_388_ < anInt5340; i_388_++) {
+                    for (int i_388_ = maxVertex; i_388_ < vertexCount; i_388_++) {
                         int i_389_ = vertexX[i_388_] + i_369_;
                         int i_390_ = vertexZ[i_388_] + i_371_;
                         int i_391_ = i_389_ & i_377_;
@@ -1595,7 +1595,7 @@ final class JavaModel extends Model {
                     }
                 } else if (i == 2) {
                     int i_398_ = var_s.anInt4592 - 1;
-                    for (int i_399_ = 0; i_399_ < vertexCount; i_399_++) {
+                    for (int i_399_ = 0; i_399_ < maxVertex; i_399_++) {
                         int i_400_ = (vertexY[i_399_] << 16) / aShort5329;
                         if (i_400_ < i_367_) {
                             int i_401_ = vertexX[i_399_] + i_369_;
@@ -1610,7 +1610,7 @@ final class JavaModel extends Model {
                             vertexY[i_399_] = vertexY[i_399_] + ((i_409_ - i_370_) * (i_367_ - i_400_) / i_367_);
                         } else vertexY[i_399_] = vertexY[i_399_];
                     }
-                    for (int i_410_ = vertexCount; i_410_ < anInt5340; i_410_++) {
+                    for (int i_410_ = maxVertex; i_410_ < vertexCount; i_410_++) {
                         int i_411_ = (vertexY[i_410_] << 16) / aShort5329;
                         if (i_411_ < i_367_) {
                             int i_412_ = vertexX[i_410_] + i_369_;
@@ -1637,7 +1637,7 @@ final class JavaModel extends Model {
                 } else if (i == 4) {
                     int i_425_ = var_s_368_.anInt4592 - 1;
                     int i_426_ = aShort5365 - aShort5329;
-                    for (int i_427_ = 0; i_427_ < vertexCount; i_427_++) {
+                    for (int i_427_ = 0; i_427_ < maxVertex; i_427_++) {
                         int i_428_ = vertexX[i_427_] + i_369_;
                         int i_429_ = vertexZ[i_427_] + i_371_;
                         int i_430_ = i_428_ & i_425_;
@@ -1649,7 +1649,7 @@ final class JavaModel extends Model {
                         int i_436_ = (i_434_ * (var_s_368_.anInt4592 - i_431_) + i_435_ * i_431_ >> var_s_368_.anInt4588);
                         vertexY[i_427_] = (vertexY[i_427_] + (i_436_ - i_370_) + i_426_);
                     }
-                    for (int i_437_ = vertexCount; i_437_ < anInt5340; i_437_++) {
+                    for (int i_437_ = maxVertex; i_437_ < vertexCount; i_437_++) {
                         int i_438_ = vertexX[i_437_] + i_369_;
                         int i_439_ = vertexZ[i_437_] + i_371_;
                         int i_440_ = i_438_ & i_425_;
@@ -1666,7 +1666,7 @@ final class JavaModel extends Model {
                 } else if (i == 5) {
                     int i_447_ = var_s_368_.anInt4592 - 1;
                     int i_448_ = aShort5365 - aShort5329;
-                    for (int i_449_ = 0; i_449_ < vertexCount; i_449_++) {
+                    for (int i_449_ = 0; i_449_ < maxVertex; i_449_++) {
                         int i_450_ = vertexX[i_449_] + i_369_;
                         int i_451_ = vertexZ[i_449_] + i_371_;
                         int i_452_ = i_450_ & i_447_;
@@ -1682,7 +1682,7 @@ final class JavaModel extends Model {
                         int i_460_ = i_458_ - i_459_ - i_367_;
                         vertexY[i_449_] = ((vertexY[i_449_] << 8) / i_448_ * i_460_ >> 8) - (i_370_ - i_458_);
                     }
-                    for (int i_461_ = vertexCount; i_461_ < anInt5340; i_461_++) {
+                    for (int i_461_ = maxVertex; i_461_ < vertexCount; i_461_++) {
                         int i_462_ = vertexX[i_461_] + i_369_;
                         int i_463_ = vertexZ[i_461_] + i_371_;
                         int i_464_ = i_462_ & i_447_;
@@ -1707,14 +1707,14 @@ final class JavaModel extends Model {
     }
 
     final void C(int i) {
-        if ((anInt5316 & 0x1000) != 4096) throw new IllegalStateException();
+        if ((functionMask & 0x1000) != 4096) throw new IllegalStateException();
         anInt5344 = i;
         anInt5354 = 0;
     }
 
     private final void method644() {
         synchronized (this) {
-            for (int i = 0; i < anInt5340; i++) {
+            for (int i = 0; i < vertexCount; i++) {
                 int i_473_ = vertexX[i];
                 vertexX[i] = vertexZ[i];
                 vertexZ[i] = -i_473_;
@@ -1728,12 +1728,12 @@ final class JavaModel extends Model {
         return aShort5393;
     }
 
-    final boolean method623(int i, int i_474_, Class101 class101, boolean bool, int i_475_, int i_476_) {
-        return method645(i, i_474_, class101, bool, i_475_, i_476_);
+    final boolean method623(int i, int i_474_, Matrix matrix, boolean bool, int i_475_, int i_476_) {
+        return method645(i, i_474_, matrix, bool, i_475_, i_476_);
     }
 
     final ModelParticleEffector[] method604() {
-        return aModelParticleEffectorArray5335;
+        return effectors;
     }
 
     final int WA() {
@@ -1741,19 +1741,19 @@ final class JavaModel extends Model {
     }
 
     final void s(int i) {
-        if (aHa_Sub1_5353.anInt7485 > 1) {
+        if (toolkit.threadCount > 1) {
             synchronized (this) {
-                if ((anInt5316 & 0x10000) == 65536 && (i & 0x10000) == 0) method634(true);
-                anInt5316 = i;
+                if ((functionMask & 0x10000) == 65536 && (i & 0x10000) == 0) method634(true);
+                functionMask = i;
             }
         } else {
-            if ((anInt5316 & 0x10000) == 65536 && (i & 0x10000) == 0) method634(true);
-            anInt5316 = i;
+            if ((functionMask & 0x10000) == 65536 && (i & 0x10000) == 0) method634(true);
+            functionMask = i;
         }
     }
 
     final void method621() {
-        if (aHa_Sub1_5353.anInt7485 > 1) {
+        if (toolkit.threadCount > 1) {
             synchronized (this) {
                 this.aBoolean1124 = false;
                 this.notifyAll();
@@ -1762,29 +1762,29 @@ final class JavaModel extends Model {
     }
 
     final void method624(int i, int i_477_, int i_478_, int i_479_) {
-        if ((anInt5316 & 0x80000) != 524288) throw new IllegalStateException("FMT");
+        if ((functionMask & 0x80000) != 524288) throw new IllegalStateException("FMT");
         for (int i_480_ = 0; i_480_ < faceCount; i_480_++) {
-            int i_481_ = aShortArray5311[i_480_] & 0xffff;
+            int i_481_ = faceColour[i_480_] & 0xffff;
             int i_482_ = i_481_ >> 10 & 0x3f;
             int i_483_ = i_481_ >> 7 & 0x7;
             int i_484_ = i_481_ & 0x7f;
             if (i != -1) i_482_ += (i - i_482_) * i_479_ >> 7;
             if (i_477_ != -1) i_483_ += (i_477_ - i_483_) * i_479_ >> 7;
             if (i_478_ != -1) i_484_ += (i_478_ - i_484_) * i_479_ >> 7;
-            aShortArray5311[i_480_] = (short) (i_482_ << 10 | i_483_ << 7 | i_484_);
+            faceColour[i_480_] = (short) (i_482_ << 10 | i_483_ << 7 | i_484_);
         }
-        if (aClass6Array5361 != null) {
-            for (int i_485_ = 0; i_485_ < anInt5389; i_485_++) {
-                Class6 class6 = aClass6Array5361[i_485_];
-                Class350 class350 = aClass350Array5363[i_485_];
-                class350.anInt4313 = (class350.anInt4313 & ~0xffffff | (Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303(((aShortArray5311[class6.anInt144]) & 0xffff), 30)]) & 0xffffff);
+        if (billboardFaces != null) {
+            for (int i_485_ = 0; i_485_ < billboardCount; i_485_++) {
+                JavaBillboardFace javaBillboardFace = billboardFaces[i_485_];
+                JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_485_];
+                javaBillboardAttributes.anInt4313 = (javaBillboardAttributes.anInt4313 & ~0xffffff | (Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303(((faceColour[javaBillboardFace.anInt144]) & 0xffff), 30)]) & 0xffffff);
             }
         }
         if (anInt5354 == 2) anInt5354 = 1;
     }
 
-    final boolean method628(int i, int i_486_, Class101 class101, boolean bool, int i_487_) {
-        return method645(i, i_486_, class101, bool, i_487_, -1);
+    final boolean method628(int i, int i_486_, Matrix matrix, boolean bool, int i_487_) {
+        return method645(i, i_486_, matrix, bool, i_487_, -1);
     }
 
     final int ma() {
@@ -1792,26 +1792,26 @@ final class JavaModel extends Model {
         return aShort5348;
     }
 
-    private final boolean method645(int i, int i_488_, Class101 class101, boolean bool, int i_489_, int i_490_) {
-        aClass101_Sub1_5320 = (Class101_Sub1) class101;
-        Class101_Sub1 class101_sub1 = aHa_Sub1_5353.camera;
-        float f = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * aClass101_Sub1_5320.aFloat5686) + (class101_sub1.aFloat5673 * aClass101_Sub1_5320.aFloat5685) + (class101_sub1.aFloat5669 * aClass101_Sub1_5320.aFloat5681)));
-        float f_491_ = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * aClass101_Sub1_5320.aFloat5686) + (class101_sub1.aFloat5678 * aClass101_Sub1_5320.aFloat5685) + (class101_sub1.aFloat5666 * aClass101_Sub1_5320.aFloat5681)));
-        float f_492_ = (class101_sub1.aFloat5681 + ((class101_sub1.aFloat5662 * aClass101_Sub1_5320.aFloat5686) + (class101_sub1.aFloat5680 * aClass101_Sub1_5320.aFloat5685) + (class101_sub1.aFloat5664 * aClass101_Sub1_5320.aFloat5681)));
-        float f_493_ = ((class101_sub1.aFloat5672 * aClass101_Sub1_5320.aFloat5672) + (class101_sub1.aFloat5673 * aClass101_Sub1_5320.aFloat5655) + (class101_sub1.aFloat5669 * aClass101_Sub1_5320.aFloat5662));
-        float f_494_ = ((class101_sub1.aFloat5672 * aClass101_Sub1_5320.aFloat5673) + (class101_sub1.aFloat5673 * aClass101_Sub1_5320.aFloat5678) + (class101_sub1.aFloat5669 * aClass101_Sub1_5320.aFloat5680));
-        float f_495_ = ((class101_sub1.aFloat5672 * aClass101_Sub1_5320.aFloat5669) + (class101_sub1.aFloat5673 * aClass101_Sub1_5320.aFloat5666) + (class101_sub1.aFloat5669 * aClass101_Sub1_5320.aFloat5664));
-        float f_496_ = ((class101_sub1.aFloat5655 * aClass101_Sub1_5320.aFloat5672) + (class101_sub1.aFloat5678 * aClass101_Sub1_5320.aFloat5655) + (class101_sub1.aFloat5666 * aClass101_Sub1_5320.aFloat5662));
-        float f_497_ = ((class101_sub1.aFloat5655 * aClass101_Sub1_5320.aFloat5673) + (class101_sub1.aFloat5678 * aClass101_Sub1_5320.aFloat5678) + (class101_sub1.aFloat5666 * aClass101_Sub1_5320.aFloat5680));
-        float f_498_ = ((class101_sub1.aFloat5655 * aClass101_Sub1_5320.aFloat5669) + (class101_sub1.aFloat5678 * aClass101_Sub1_5320.aFloat5666) + (class101_sub1.aFloat5666 * aClass101_Sub1_5320.aFloat5664));
-        float f_499_ = ((class101_sub1.aFloat5662 * aClass101_Sub1_5320.aFloat5672) + (class101_sub1.aFloat5680 * aClass101_Sub1_5320.aFloat5655) + (class101_sub1.aFloat5664 * aClass101_Sub1_5320.aFloat5662));
-        float f_500_ = ((class101_sub1.aFloat5662 * aClass101_Sub1_5320.aFloat5673) + (class101_sub1.aFloat5680 * aClass101_Sub1_5320.aFloat5678) + (class101_sub1.aFloat5664 * aClass101_Sub1_5320.aFloat5680));
-        float f_501_ = ((class101_sub1.aFloat5662 * aClass101_Sub1_5320.aFloat5669) + (class101_sub1.aFloat5680 * aClass101_Sub1_5320.aFloat5666) + (class101_sub1.aFloat5664 * aClass101_Sub1_5320.aFloat5664));
+    private final boolean method645(int i, int i_488_, Matrix matrix, boolean bool, int i_489_, int i_490_) {
+        aJavaMatrix_5320 = (JavaMatrix) matrix;
+        JavaMatrix javaMatrix = toolkit.camera;
+        float f = (javaMatrix.aFloat5686 + ((javaMatrix.aFloat5672 * aJavaMatrix_5320.aFloat5686) + (javaMatrix.aFloat5673 * aJavaMatrix_5320.aFloat5685) + (javaMatrix.aFloat5669 * aJavaMatrix_5320.aFloat5681)));
+        float f_491_ = (javaMatrix.aFloat5685 + ((javaMatrix.aFloat5655 * aJavaMatrix_5320.aFloat5686) + (javaMatrix.aFloat5678 * aJavaMatrix_5320.aFloat5685) + (javaMatrix.aFloat5666 * aJavaMatrix_5320.aFloat5681)));
+        float f_492_ = (javaMatrix.aFloat5681 + ((javaMatrix.aFloat5662 * aJavaMatrix_5320.aFloat5686) + (javaMatrix.aFloat5680 * aJavaMatrix_5320.aFloat5685) + (javaMatrix.aFloat5664 * aJavaMatrix_5320.aFloat5681)));
+        float f_493_ = ((javaMatrix.aFloat5672 * aJavaMatrix_5320.aFloat5672) + (javaMatrix.aFloat5673 * aJavaMatrix_5320.aFloat5655) + (javaMatrix.aFloat5669 * aJavaMatrix_5320.aFloat5662));
+        float f_494_ = ((javaMatrix.aFloat5672 * aJavaMatrix_5320.aFloat5673) + (javaMatrix.aFloat5673 * aJavaMatrix_5320.aFloat5678) + (javaMatrix.aFloat5669 * aJavaMatrix_5320.aFloat5680));
+        float f_495_ = ((javaMatrix.aFloat5672 * aJavaMatrix_5320.aFloat5669) + (javaMatrix.aFloat5673 * aJavaMatrix_5320.aFloat5666) + (javaMatrix.aFloat5669 * aJavaMatrix_5320.aFloat5664));
+        float f_496_ = ((javaMatrix.aFloat5655 * aJavaMatrix_5320.aFloat5672) + (javaMatrix.aFloat5678 * aJavaMatrix_5320.aFloat5655) + (javaMatrix.aFloat5666 * aJavaMatrix_5320.aFloat5662));
+        float f_497_ = ((javaMatrix.aFloat5655 * aJavaMatrix_5320.aFloat5673) + (javaMatrix.aFloat5678 * aJavaMatrix_5320.aFloat5678) + (javaMatrix.aFloat5666 * aJavaMatrix_5320.aFloat5680));
+        float f_498_ = ((javaMatrix.aFloat5655 * aJavaMatrix_5320.aFloat5669) + (javaMatrix.aFloat5678 * aJavaMatrix_5320.aFloat5666) + (javaMatrix.aFloat5666 * aJavaMatrix_5320.aFloat5664));
+        float f_499_ = ((javaMatrix.aFloat5662 * aJavaMatrix_5320.aFloat5672) + (javaMatrix.aFloat5680 * aJavaMatrix_5320.aFloat5655) + (javaMatrix.aFloat5664 * aJavaMatrix_5320.aFloat5662));
+        float f_500_ = ((javaMatrix.aFloat5662 * aJavaMatrix_5320.aFloat5673) + (javaMatrix.aFloat5680 * aJavaMatrix_5320.aFloat5678) + (javaMatrix.aFloat5664 * aJavaMatrix_5320.aFloat5680));
+        float f_501_ = ((javaMatrix.aFloat5662 * aJavaMatrix_5320.aFloat5669) + (javaMatrix.aFloat5680 * aJavaMatrix_5320.aFloat5666) + (javaMatrix.aFloat5664 * aJavaMatrix_5320.aFloat5664));
         boolean bool_502_ = false;
-        int i_503_ = aHa_Sub1_5353.anInt7510;
-        int i_504_ = aHa_Sub1_5353.anInt7504;
-        int i_505_ = aHa_Sub1_5353.anInt7491;
-        int i_506_ = aHa_Sub1_5353.anInt7497;
+        int i_503_ = toolkit.anInt7510;
+        int i_504_ = toolkit.anInt7504;
+        int i_505_ = toolkit.anInt7491;
+        int i_506_ = toolkit.anInt7497;
         int i_507_ = 2147483647;
         int i_508_ = -2147483648;
         int i_509_ = 2147483647;
@@ -1861,7 +1861,7 @@ final class JavaModel extends Model {
             float f_527_ = f + (f_493_ * (float) i_524_ + f_494_ * (float) i_525_ + f_495_ * (float) i_526_);
             float f_528_ = f_491_ + (f_496_ * (float) i_524_ + f_497_ * (float) i_525_ + f_498_ * (float) i_526_);
             float f_529_ = f_492_ + (f_499_ * (float) i_524_ + f_500_ * (float) i_525_ + f_501_ * (float) i_526_);
-            if (f_529_ >= (float) aHa_Sub1_5353.anInt7482) {
+            if (f_529_ >= (float) toolkit.zNear) {
                 if (i_490_ > 0) f_529_ = (float) i_490_;
                 int i_530_ = i_503_ + (int) (f_527_ * (float) i_505_ / f_529_);
                 int i_531_ = i_504_ + (int) (f_528_ * (float) i_506_ / f_529_);
@@ -1874,14 +1874,14 @@ final class JavaModel extends Model {
         }
         if (bool_502_ && i > i_507_ && i < i_508_ && i_488_ > i_509_ && i_488_ < i_510_) {
             if (bool) return true;
-            for (int i_532_ = 0; i_532_ < anInt5340; i_532_++) {
+            for (int i_532_ = 0; i_532_ < vertexCount; i_532_++) {
                 int i_533_ = vertexX[i_532_];
                 int i_534_ = vertexY[i_532_];
                 int i_535_ = vertexZ[i_532_];
                 float f_536_ = f + (f_493_ * (float) i_533_ + f_494_ * (float) i_534_ + f_495_ * (float) i_535_);
                 float f_537_ = f_491_ + (f_496_ * (float) i_533_ + f_497_ * (float) i_534_ + f_498_ * (float) i_535_);
                 float f_538_ = f_492_ + (f_499_ * (float) i_533_ + f_500_ * (float) i_534_ + f_501_ * (float) i_535_);
-                if (f_538_ >= (float) aHa_Sub1_5353.anInt7482) {
+                if (f_538_ >= (float) toolkit.zNear) {
                     if (i_490_ > 0) f_538_ = (float) i_490_;
                     renderVertexX[i_532_] = i_503_ + (int) (f_536_ * (float) i_505_ / f_538_);
                     renderVertexY[i_532_] = i_504_ + (int) (f_537_ * (float) i_506_ / f_538_);
@@ -1897,15 +1897,15 @@ final class JavaModel extends Model {
 
     private final void method646(int i) {
         int i_540_ = 0;
-        int i_541_ = aHa_Sub1_5353.anInt7482;
+        int i_541_ = toolkit.zNear;
         short x = faceIndexX[i];
         short y = faceIndexY[i];
         short z = faceIndexZ[i];
         int i_545_ = anIntArray5392[x];
         int i_546_ = anIntArray5392[y];
         int i_547_ = anIntArray5392[z];
-        if (faceAlphas == null) aClass109_5383.alpha = 0;
-        else aClass109_5383.alpha = faceAlphas[i] & 0xff;
+        if (faceAlphas == null) aRasterizer_5383.alpha = 0;
+        else aRasterizer_5383.alpha = faceAlphas[i] & 0xff;
         if (i_545_ >= i_541_) {
             anIntArray5315[i_540_] = renderVertexX[x];
             anIntArray5371[i_540_] = renderVertexY[x];
@@ -1917,15 +1917,15 @@ final class JavaModel extends Model {
             int i_550_ = anIntArray5368[i] & 0xffff;
             if (i_547_ >= i_541_) {
                 int i_551_ = (i_541_ - i_545_) * (65536 / (i_547_ - i_545_));
-                anIntArray5315[i_540_] = (aClass167_5367.anInt2229 + ((i_548_ + ((anIntArray5399[z] - i_548_) * i_551_ >> 16)) * aHa_Sub1_5353.anInt7491 / i_541_));
-                anIntArray5371[i_540_] = (aClass167_5367.anInt2215 + ((i_549_ + ((anIntArray5384[z] - i_549_) * i_551_ >> 16)) * aHa_Sub1_5353.anInt7497 / i_541_));
+                anIntArray5315[i_540_] = (aJavaThreadResource_5367.anInt2229 + ((i_548_ + ((anIntArray5399[z] - i_548_) * i_551_ >> 16)) * toolkit.anInt7491 / i_541_));
+                anIntArray5371[i_540_] = (aJavaThreadResource_5367.anInt2215 + ((i_549_ + ((anIntArray5384[z] - i_549_) * i_551_ >> 16)) * toolkit.anInt7497 / i_541_));
                 anIntArray5381[i_540_] = i_541_;
                 anIntArray5377[i_540_++] = (i_550_ + (((anIntArray5366[i] & 0xffff) - i_550_) * i_551_ >> 16));
             }
             if (i_546_ >= i_541_) {
                 int i_552_ = (i_541_ - i_545_) * (65536 / (i_546_ - i_545_));
-                anIntArray5315[i_540_] = (aClass167_5367.anInt2229 + ((i_548_ + ((anIntArray5399[y] - i_548_) * i_552_ >> 16)) * aHa_Sub1_5353.anInt7491 / i_541_));
-                anIntArray5371[i_540_] = (aClass167_5367.anInt2215 + ((i_549_ + ((anIntArray5384[y] - i_549_) * i_552_ >> 16)) * aHa_Sub1_5353.anInt7497 / i_541_));
+                anIntArray5315[i_540_] = (aJavaThreadResource_5367.anInt2229 + ((i_548_ + ((anIntArray5399[y] - i_548_) * i_552_ >> 16)) * toolkit.anInt7491 / i_541_));
+                anIntArray5371[i_540_] = (aJavaThreadResource_5367.anInt2215 + ((i_549_ + ((anIntArray5384[y] - i_549_) * i_552_ >> 16)) * toolkit.anInt7497 / i_541_));
                 anIntArray5381[i_540_] = i_541_;
                 anIntArray5377[i_540_++] = (i_550_ + (((anIntArray5337[i] & 0xffff) - i_550_) * i_552_ >> 16));
             }
@@ -1941,15 +1941,15 @@ final class JavaModel extends Model {
             int i_555_ = anIntArray5337[i] & 0xffff;
             if (i_545_ >= i_541_) {
                 int i_556_ = (i_541_ - i_546_) * (65536 / (i_545_ - i_546_));
-                anIntArray5315[i_540_] = (aClass167_5367.anInt2229 + ((i_553_ + ((anIntArray5399[x] - i_553_) * i_556_ >> 16)) * aHa_Sub1_5353.anInt7491 / i_541_));
-                anIntArray5371[i_540_] = (aClass167_5367.anInt2215 + ((i_554_ + ((anIntArray5384[x] - i_554_) * i_556_ >> 16)) * aHa_Sub1_5353.anInt7497 / i_541_));
+                anIntArray5315[i_540_] = (aJavaThreadResource_5367.anInt2229 + ((i_553_ + ((anIntArray5399[x] - i_553_) * i_556_ >> 16)) * toolkit.anInt7491 / i_541_));
+                anIntArray5371[i_540_] = (aJavaThreadResource_5367.anInt2215 + ((i_554_ + ((anIntArray5384[x] - i_554_) * i_556_ >> 16)) * toolkit.anInt7497 / i_541_));
                 anIntArray5381[i_540_] = i_541_;
                 anIntArray5377[i_540_++] = (i_555_ + (((anIntArray5368[i] & 0xffff) - i_555_) * i_556_ >> 16));
             }
             if (i_547_ >= i_541_) {
                 int i_557_ = (i_541_ - i_546_) * (65536 / (i_547_ - i_546_));
-                anIntArray5315[i_540_] = (aClass167_5367.anInt2229 + ((i_553_ + ((anIntArray5399[z] - i_553_) * i_557_ >> 16)) * aHa_Sub1_5353.anInt7491 / i_541_));
-                anIntArray5371[i_540_] = (aClass167_5367.anInt2215 + ((i_554_ + ((anIntArray5384[z] - i_554_) * i_557_ >> 16)) * aHa_Sub1_5353.anInt7497 / i_541_));
+                anIntArray5315[i_540_] = (aJavaThreadResource_5367.anInt2229 + ((i_553_ + ((anIntArray5399[z] - i_553_) * i_557_ >> 16)) * toolkit.anInt7491 / i_541_));
+                anIntArray5371[i_540_] = (aJavaThreadResource_5367.anInt2215 + ((i_554_ + ((anIntArray5384[z] - i_554_) * i_557_ >> 16)) * toolkit.anInt7497 / i_541_));
                 anIntArray5381[i_540_] = i_541_;
                 anIntArray5377[i_540_++] = (i_555_ + (((anIntArray5366[i] & 0xffff) - i_555_) * i_557_ >> 16));
             }
@@ -1965,15 +1965,15 @@ final class JavaModel extends Model {
             int i_560_ = anIntArray5366[i] & 0xffff;
             if (i_546_ >= i_541_) {
                 int i_561_ = (i_541_ - i_547_) * (65536 / (i_546_ - i_547_));
-                anIntArray5315[i_540_] = (aClass167_5367.anInt2229 + ((i_558_ + ((anIntArray5399[y] - i_558_) * i_561_ >> 16)) * aHa_Sub1_5353.anInt7491 / i_541_));
-                anIntArray5371[i_540_] = (aClass167_5367.anInt2215 + ((i_559_ + ((anIntArray5384[y] - i_559_) * i_561_ >> 16)) * aHa_Sub1_5353.anInt7497 / i_541_));
+                anIntArray5315[i_540_] = (aJavaThreadResource_5367.anInt2229 + ((i_558_ + ((anIntArray5399[y] - i_558_) * i_561_ >> 16)) * toolkit.anInt7491 / i_541_));
+                anIntArray5371[i_540_] = (aJavaThreadResource_5367.anInt2215 + ((i_559_ + ((anIntArray5384[y] - i_559_) * i_561_ >> 16)) * toolkit.anInt7497 / i_541_));
                 anIntArray5381[i_540_] = i_541_;
                 anIntArray5377[i_540_++] = (i_560_ + (((anIntArray5337[i] & 0xffff) - i_560_) * i_561_ >> 16));
             }
             if (i_545_ >= i_541_) {
                 int i_562_ = (i_541_ - i_547_) * (65536 / (i_545_ - i_547_));
-                anIntArray5315[i_540_] = (aClass167_5367.anInt2229 + ((i_558_ + ((anIntArray5399[x] - i_558_) * i_562_ >> 16)) * aHa_Sub1_5353.anInt7491 / i_541_));
-                anIntArray5371[i_540_] = (aClass167_5367.anInt2215 + ((i_559_ + ((anIntArray5384[x] - i_559_) * i_562_ >> 16)) * aHa_Sub1_5353.anInt7497 / i_541_));
+                anIntArray5315[i_540_] = (aJavaThreadResource_5367.anInt2229 + ((i_558_ + ((anIntArray5399[x] - i_558_) * i_562_ >> 16)) * toolkit.anInt7491 / i_541_));
+                anIntArray5371[i_540_] = (aJavaThreadResource_5367.anInt2215 + ((i_559_ + ((anIntArray5384[x] - i_559_) * i_562_ >> 16)) * toolkit.anInt7497 / i_541_));
                 anIntArray5381[i_540_] = i_541_;
                 anIntArray5377[i_540_++] = (i_560_ + (((anIntArray5368[i] & 0xffff) - i_560_) * i_562_ >> 16));
             }
@@ -1987,43 +1987,43 @@ final class JavaModel extends Model {
         i_545_ = anIntArray5381[0];
         i_546_ = anIntArray5381[1];
         i_547_ = anIntArray5381[2];
-        aClass109_5383.aBoolean1671 = false;
+        aRasterizer_5383.aBoolean1671 = false;
         if (i_540_ == 3) {
-            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aClass167_5367.anInt2221 || i_564_ > aClass167_5367.anInt2221 || i_565_ > aClass167_5367.anInt2221) aClass109_5383.aBoolean1671 = true;
-            if (aShortArray5388 == null || aShortArray5388[i] == -1) {
-                if (anIntArray5366[i] == -1) aClass109_5383.method1018((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, (Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]));
-                else aClass109_5383.method1022((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, (float) anIntArray5377[0], (float) anIntArray5377[1], (float) anIntArray5377[2]);
+            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aJavaThreadResource_5367.anInt2221 || i_564_ > aJavaThreadResource_5367.anInt2221 || i_565_ > aJavaThreadResource_5367.anInt2221) aRasterizer_5383.aBoolean1671 = true;
+            if (faceTextures == null || faceTextures[i] == -1) {
+                if (anIntArray5366[i] == -1) aRasterizer_5383.method1018((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, (Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]));
+                else aRasterizer_5383.method1022((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, (float) anIntArray5377[0], (float) anIntArray5377[1], (float) anIntArray5377[2]);
             } else {
                 int i_569_ = -16777216;
                 if (faceAlphas != null) i_569_ = 255 - (faceAlphas[i] & 0xff) << 24;
                 int i_570_ = i_569_ | anIntArray5368[i] & 0xffffff;
                 if (anIntArray5366[i] == -1)
-                    aClass109_5383.method1024((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_570_, i_570_, i_570_, (aClass167_5367.anInt2192), 0, 0, 0, aShortArray5388[i]);
+                    aRasterizer_5383.method1024((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_570_, i_570_, i_570_, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[i]);
                 else
-                    aClass109_5383.method1024((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_570_, i_570_, i_570_, (aClass167_5367.anInt2192), 0, 0, 0, aShortArray5388[i]);
+                    aRasterizer_5383.method1024((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_570_, i_570_, i_570_, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[i]);
             }
         }
         if (i_540_ == 4) {
-            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aClass167_5367.anInt2221 || i_564_ > aClass167_5367.anInt2221 || i_565_ > aClass167_5367.anInt2221 || anIntArray5315[3] < 0 || anIntArray5315[3] > aClass167_5367.anInt2221) aClass109_5383.aBoolean1671 = true;
-            if (aShortArray5388 == null || aShortArray5388[i] == -1) {
+            if (i_563_ < 0 || i_564_ < 0 || i_565_ < 0 || i_563_ > aJavaThreadResource_5367.anInt2221 || i_564_ > aJavaThreadResource_5367.anInt2221 || i_565_ > aJavaThreadResource_5367.anInt2221 || anIntArray5315[3] < 0 || anIntArray5315[3] > aJavaThreadResource_5367.anInt2221) aRasterizer_5383.aBoolean1671 = true;
+            if (faceTextures == null || faceTextures[i] == -1) {
                 if (anIntArray5366[i] == -1) {
                     int i_571_ = Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff];
-                    aClass109_5383.method1018((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, i_571_);
-                    aClass109_5383.method1018((float) i_566_, (float) i_568_, (float) anIntArray5371[3], (float) i_563_, (float) i_565_, (float) anIntArray5315[3], (float) i_545_, (float) i_546_, (float) anIntArray5381[3], i_571_);
+                    aRasterizer_5383.method1018((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, i_571_);
+                    aRasterizer_5383.method1018((float) i_566_, (float) i_568_, (float) anIntArray5371[3], (float) i_563_, (float) i_565_, (float) anIntArray5315[3], (float) i_545_, (float) i_546_, (float) anIntArray5381[3], i_571_);
                 } else {
-                    aClass109_5383.method1022((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, (float) anIntArray5377[0], (float) anIntArray5377[1], (float) anIntArray5377[2]);
-                    aClass109_5383.method1022((float) i_566_, (float) i_568_, (float) anIntArray5371[3], (float) i_563_, (float) i_565_, (float) anIntArray5315[3], (float) i_545_, (float) i_546_, (float) anIntArray5381[3], (float) anIntArray5377[0], (float) anIntArray5377[2], (float) anIntArray5377[3]);
+                    aRasterizer_5383.method1022((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, (float) anIntArray5377[0], (float) anIntArray5377[1], (float) anIntArray5377[2]);
+                    aRasterizer_5383.method1022((float) i_566_, (float) i_568_, (float) anIntArray5371[3], (float) i_563_, (float) i_565_, (float) anIntArray5315[3], (float) i_545_, (float) i_546_, (float) anIntArray5381[3], (float) anIntArray5377[0], (float) anIntArray5377[2], (float) anIntArray5377[3]);
                 }
             } else {
                 int i_572_ = -16777216;
                 if (faceAlphas != null) i_572_ = 255 - (faceAlphas[i] & 0xff) << 24;
                 int i_573_ = i_572_ | anIntArray5368[i] & 0xffffff;
                 if (anIntArray5366[i] == -1) {
-                    aClass109_5383.method1024((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_573_, i_573_, i_573_, (aClass167_5367.anInt2192), 0, 0, 0, aShortArray5388[i]);
-                    aClass109_5383.method1024((float) i_566_, (float) i_568_, (float) anIntArray5371[3], (float) i_563_, (float) i_565_, (float) anIntArray5315[3], (float) i_545_, (float) i_547_, (float) anIntArray5381[3], aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_573_, i_573_, i_573_, (aClass167_5367.anInt2192), 0, 0, 0, aShortArray5388[i]);
+                    aRasterizer_5383.method1024((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_573_, i_573_, i_573_, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[i]);
+                    aRasterizer_5383.method1024((float) i_566_, (float) i_568_, (float) anIntArray5371[3], (float) i_563_, (float) i_565_, (float) anIntArray5315[3], (float) i_545_, (float) i_547_, (float) anIntArray5381[3], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_573_, i_573_, i_573_, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[i]);
                 } else {
-                    aClass109_5383.method1024((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_573_, i_573_, i_573_, (aClass167_5367.anInt2192), 0, 0, 0, aShortArray5388[i]);
-                    aClass109_5383.method1024((float) i_566_, (float) i_568_, (float) anIntArray5371[3], (float) i_563_, (float) i_565_, (float) anIntArray5315[3], (float) i_545_, (float) i_547_, (float) anIntArray5381[3], aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_573_, i_573_, i_573_, (aClass167_5367.anInt2192), 0, 0, 0, aShortArray5388[i]);
+                    aRasterizer_5383.method1024((float) i_566_, (float) i_567_, (float) i_568_, (float) i_563_, (float) i_564_, (float) i_565_, (float) i_545_, (float) i_546_, (float) i_547_, texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_573_, i_573_, i_573_, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[i]);
+                    aRasterizer_5383.method1024((float) i_566_, (float) i_568_, (float) anIntArray5371[3], (float) i_563_, (float) i_565_, (float) anIntArray5315[3], (float) i_545_, (float) i_547_, (float) anIntArray5381[3], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_573_, i_573_, i_573_, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[i]);
                 }
             }
         }
@@ -2031,7 +2031,7 @@ final class JavaModel extends Model {
 
     private final void method647() {
         if (anInt5354 == 0) method634(false);
-        else if (aHa_Sub1_5353.anInt7485 > 1) {
+        else if (toolkit.threadCount > 1) {
             synchronized (this) {
                 method640();
             }
@@ -2039,34 +2039,34 @@ final class JavaModel extends Model {
     }
 
     private final void method648(Thread thread) {
-        Class167 class167 = aHa_Sub1_5353.method3724(thread);
-        if (class167 != aClass167_5336) {
-            aClass167_5336 = class167;
-            aJavaModel_5378 = aClass167_5336.aJavaModel_2243;
-            aJavaModel_5339 = aClass167_5336.aJavaModel_2224;
-            aJavaModel_5396 = aClass167_5336.aJavaModel_2219;
-            aJavaModel_5347 = aClass167_5336.aJavaModel_2239;
-            aJavaModel_5390 = aClass167_5336.aJavaModel_2233;
-            aJavaModel_5374 = aClass167_5336.aJavaModel_2231;
-            aJavaModel_5328 = aClass167_5336.aJavaModel_2223;
-            aJavaModel_5376 = aClass167_5336.aJavaModel_2227;
-            aJavaModel_5397 = aClass167_5336.aJavaModel_2246;
-            aJavaModel_5319 = aClass167_5336.aJavaModel_2225;
+        JavaThreadResource javaThreadResource = toolkit.method3724(thread);
+        if (javaThreadResource != aJavaThreadResource_5336) {
+            aJavaThreadResource_5336 = javaThreadResource;
+            aJavaModel_5378 = aJavaThreadResource_5336.aJavaModel_2243;
+            aJavaModel_5339 = aJavaThreadResource_5336.aJavaModel_2224;
+            aJavaModel_5396 = aJavaThreadResource_5336.aJavaModel_2219;
+            aJavaModel_5347 = aJavaThreadResource_5336.aJavaModel_2239;
+            aJavaModel_5390 = aJavaThreadResource_5336.aJavaModel_2233;
+            aJavaModel_5374 = aJavaThreadResource_5336.aJavaModel_2231;
+            aJavaModel_5328 = aJavaThreadResource_5336.aJavaModel_2223;
+            aJavaModel_5376 = aJavaThreadResource_5336.aJavaModel_2227;
+            aJavaModel_5397 = aJavaThreadResource_5336.aJavaModel_2246;
+            aJavaModel_5319 = aJavaThreadResource_5336.aJavaModel_2225;
         }
     }
 
     final void LA(int i) {
-        if ((anInt5316 & 0x2000) != 8192) throw new IllegalStateException();
+        if ((functionMask & 0x2000) != 8192) throw new IllegalStateException();
         anInt5349 = i;
         anInt5354 = 0;
     }
 
     final void VA(int i) {
-        if ((anInt5316 & 0x3) != 3) throw new IllegalStateException();
+        if ((functionMask & 0x3) != 3) throw new IllegalStateException();
         int i_574_ = Class70.SIN[i];
         int i_575_ = Class70.COS[i];
         synchronized (this) {
-            for (int i_576_ = 0; i_576_ < anInt5340; i_576_++) {
+            for (int i_576_ = 0; i_576_ < vertexCount; i_576_++) {
                 int i_577_ = ((vertexY[i_576_] * i_574_ + vertexX[i_576_] * i_575_) >> 14);
                 vertexY[i_576_] = (vertexY[i_576_] * i_575_ - vertexX[i_576_] * i_574_) >> 14;
                 vertexX[i_576_] = i_577_;
@@ -2076,7 +2076,7 @@ final class JavaModel extends Model {
     }
 
     final void a(int i) {
-        if ((anInt5316 & 0x5) != 5) throw new IllegalStateException();
+        if ((functionMask & 0x5) != 5) throw new IllegalStateException();
         if (i == 4096) method644();
         else if (i == 8192) method651();
         else if (i == 12288) method639();
@@ -2084,7 +2084,7 @@ final class JavaModel extends Model {
             int i_578_ = Class70.SIN[i];
             int i_579_ = Class70.COS[i];
             synchronized (this) {
-                for (int i_580_ = 0; i_580_ < anInt5340; i_580_++) {
+                for (int i_580_ = 0; i_580_ < vertexCount; i_580_++) {
                     int i_581_ = ((vertexZ[i_580_] * i_578_ + vertexX[i_580_] * i_579_) >> 14);
                     vertexZ[i_580_] = (vertexZ[i_580_] * i_579_ - vertexX[i_580_] * i_578_) >> 14;
                     vertexX[i_580_] = i_581_;
@@ -2095,21 +2095,21 @@ final class JavaModel extends Model {
     }
 
     final void aa(short i, short i_582_) {
-        if (aShortArray5388 != null) {
-            if (!aBoolean5391 && i_582_ >= 0) {
-                Class12 class12 = aHa_Sub1_5353.aD4579.method3(i_582_ & 0xffff, -6662);
-                if (class12.aByte198 != 0 || class12.aByte211 != 0) aBoolean5391 = true;
+        if (faceTextures != null) {
+            if (!movingTextures && i_582_ >= 0) {
+                TextureMetrics textureMetrics = toolkit.aD4579.getMetrics(i_582_ & 0xffff, -6662);
+                if (textureMetrics.speedU != 0 || textureMetrics.speedV != 0) movingTextures = true;
             }
             for (int i_583_ = 0; i_583_ < faceCount; i_583_++) {
-                if (aShortArray5388[i_583_] == i) aShortArray5388[i_583_] = i_582_;
+                if (faceTextures[i_583_] == i) faceTextures[i_583_] = i_582_;
             }
         }
     }
 
     final void method613(Model model, int i, int i_584_, int i_585_, boolean bool) {
         JavaModel javaModel_586_ = (JavaModel) model;
-        if ((anInt5316 & 0x10000) != 65536) throw new IllegalStateException("");
-        if ((javaModel_586_.anInt5316 & 0x10000) != 65536) throw new IllegalStateException("");
+        if ((functionMask & 0x10000) != 65536) throw new IllegalStateException("");
+        if ((javaModel_586_.functionMask & 0x10000) != 65536) throw new IllegalStateException("");
         method632(Thread.currentThread());
         method655();
         method636();
@@ -2118,8 +2118,8 @@ final class JavaModel extends Model {
         anInt5341++;
         int i_587_ = 0;
         int[] is = javaModel_586_.vertexX;
-        int i_588_ = javaModel_586_.vertexCount;
-        for (int i_589_ = 0; i_589_ < vertexCount; i_589_++) {
+        int i_588_ = javaModel_586_.maxVertex;
+        for (int i_589_ = 0; i_589_ < maxVertex; i_589_++) {
             VertexNormal vertexNormal = normals[i_589_];
             if (vertexNormal.faceCount != 0) {
                 int i_590_ = vertexY[i_589_] - i_584_;
@@ -2131,7 +2131,7 @@ final class JavaModel extends Model {
                             for (int i_593_ = 0; i_593_ < i_588_; i_593_++) {
                                 VertexNormal vertexNormal_594_ = (javaModel_586_.normals[i_593_]);
                                 if (i_591_ == is[i_593_] && i_592_ == (javaModel_586_.vertexZ[i_593_]) && i_590_ == (javaModel_586_.vertexY[i_593_]) && (vertexNormal_594_.faceCount != 0)) {
-                                    if (aVertexNormalArray5313 == null) aVertexNormalArray5313 = new VertexNormal[vertexCount];
+                                    if (aVertexNormalArray5313 == null) aVertexNormalArray5313 = new VertexNormal[maxVertex];
                                     if (javaModel_586_.aVertexNormalArray5313 == null) javaModel_586_.aVertexNormalArray5313 = new VertexNormal[i_588_];
                                     VertexNormal vertexNormal_595_ = aVertexNormalArray5313[i_589_];
                                     if (vertexNormal_595_ == null) vertexNormal_595_ = aVertexNormalArray5313[i_589_] = new VertexNormal(vertexNormal);
@@ -2158,22 +2158,22 @@ final class JavaModel extends Model {
         if (i_587_ >= 3 && bool) {
             for (int i_597_ = 0; i_597_ < faceCount; i_597_++) {
                 if (anIntArray5326[faceIndexX[i_597_]] == anInt5341 && anIntArray5326[faceIndexY[i_597_]] == anInt5341 && anIntArray5326[faceIndexZ[i_597_]] == anInt5341) {
-                    if (renderPoints == null) renderPoints = new byte[faceCount];
-                    renderPoints[i_597_] = (byte) 2;
+                    if (shadingType == null) shadingType = new byte[faceCount];
+                    shadingType[i_597_] = (byte) 2;
                 }
             }
             for (int i_598_ = 0; i_598_ < javaModel_586_.faceCount; i_598_++) {
                 if ((anIntArray5318[javaModel_586_.faceIndexX[i_598_]] == anInt5341) && anIntArray5318[(javaModel_586_.faceIndexY[i_598_])] == anInt5341 && anIntArray5318[(javaModel_586_.faceIndexZ[i_598_])] == anInt5341) {
-                    if (javaModel_586_.renderPoints == null) javaModel_586_.renderPoints = new byte[javaModel_586_.faceCount];
-                    javaModel_586_.renderPoints[i_598_] = (byte) 2;
+                    if (javaModel_586_.shadingType == null) javaModel_586_.shadingType = new byte[javaModel_586_.faceCount];
+                    javaModel_586_.shadingType[i_598_] = (byte) 2;
                 }
             }
         }
     }
 
     private final void method649() {
-        normals = new VertexNormal[vertexCount];
-        for (int i = 0; i < vertexCount; i++)
+        normals = new VertexNormal[maxVertex];
+        for (int i = 0; i < maxVertex; i++)
             normals[i] = new VertexNormal();
         for (int i = 0; i < faceCount; i++) {
             short faceX = faceIndexX[i];
@@ -2198,8 +2198,8 @@ final class JavaModel extends Model {
             dy = dy * 256 / deltaLength;
             dz = dz * 256 / deltaLength;
             byte type;
-            if (renderPoints == null) type = (byte) 0;
-            else type = renderPoints[i];
+            if (shadingType == null) type = (byte) 0;
+            else type = shadingType[i];
             if (type == 0) {
                 VertexNormal vertexNormal = normals[faceX];
                 vertexNormal.x += dx;
@@ -2227,11 +2227,11 @@ final class JavaModel extends Model {
     }
 
     final void H(int i, int i_613_, int i_614_) {
-        if (i != 0 && (anInt5316 & 0x1) != 1) throw new IllegalStateException();
-        if (i_613_ != 0 && (anInt5316 & 0x2) != 2) throw new IllegalStateException();
-        if (i_614_ != 0 && (anInt5316 & 0x4) != 4) throw new IllegalStateException();
+        if (i != 0 && (functionMask & 0x1) != 1) throw new IllegalStateException();
+        if (i_613_ != 0 && (functionMask & 0x2) != 2) throw new IllegalStateException();
+        if (i_614_ != 0 && (functionMask & 0x4) != 4) throw new IllegalStateException();
         synchronized (this) {
-            for (int i_615_ = 0; i_615_ < anInt5340; i_615_++) {
+            for (int i_615_ = 0; i_615_ < vertexCount; i_615_++) {
                 vertexX[i_615_] += i;
                 vertexY[i_615_] += i_613_;
                 vertexZ[i_615_] += i_614_;
@@ -2240,17 +2240,17 @@ final class JavaModel extends Model {
     }
 
     final void v() {
-        if ((anInt5316 & 0x10) != 16) throw new IllegalStateException();
+        if ((functionMask & 0x10) != 16) throw new IllegalStateException();
         synchronized (this) {
-            for (int i = 0; i < anInt5340; i++)
+            for (int i = 0; i < vertexCount; i++)
                 vertexZ[i] = -vertexZ[i];
             if (normals != null) {
-                for (int i = 0; i < vertexCount; i++) {
+                for (int i = 0; i < maxVertex; i++) {
                     if (normals[i] != null) normals[i].z = -normals[i].z;
                 }
             }
             if (aVertexNormalArray5313 != null) {
-                for (int i = 0; i < vertexCount; i++) {
+                for (int i = 0; i < maxVertex; i++) {
                     if (aVertexNormalArray5313[i] != null) aVertexNormalArray5313[i].z = -aVertexNormalArray5313[i].z;
                 }
             }
@@ -2262,17 +2262,17 @@ final class JavaModel extends Model {
             short[] is = faceIndexX;
             faceIndexX = faceIndexZ;
             faceIndexZ = is;
-            if (aFloatArrayArray5314 != null) {
+            if (texCoordU != null) {
                 for (int i = 0; i < faceCount; i++) {
-                    if (aFloatArrayArray5314[i] != null) {
-                        float f = aFloatArrayArray5314[i][0];
-                        aFloatArrayArray5314[i][0] = aFloatArrayArray5314[i][2];
-                        aFloatArrayArray5314[i][2] = f;
+                    if (texCoordU[i] != null) {
+                        float f = texCoordU[i][0];
+                        texCoordU[i][0] = texCoordU[i][2];
+                        texCoordU[i][2] = f;
                     }
-                    if (aFloatArrayArray5345[i] != null) {
-                        float f = aFloatArrayArray5345[i][0];
-                        aFloatArrayArray5345[i][0] = aFloatArrayArray5345[i][2];
-                        aFloatArrayArray5345[i][2] = f;
+                    if (texCoordV[i] != null) {
+                        float f = texCoordV[i][0];
+                        texCoordV[i][0] = texCoordV[i][2];
+                        texCoordV[i][2] = f;
                     }
                 }
             }
@@ -2282,30 +2282,30 @@ final class JavaModel extends Model {
     }
 
     private final void method650(boolean bool, boolean bool_616_, int i, int i_617_) {
-        if (aClass6Array5361 != null) {
-            for (int i_618_ = 0; i_618_ < anInt5389; i_618_++) {
-                Class6 class6 = aClass6Array5361[i_618_];
-                anIntArray5400[class6.anInt144] = i_618_;
+        if (billboardFaces != null) {
+            for (int i_618_ = 0; i_618_ < billboardCount; i_618_++) {
+                JavaBillboardFace javaBillboardFace = billboardFaces[i_618_];
+                anIntArray5400[javaBillboardFace.anInt144] = i_618_;
             }
         }
-        if (aBoolean5382 || aClass6Array5361 != null) {
-            if ((anInt5316 & 0x100) == 0 && aShortArray5327 != null) {
+        if (transparent || billboardFaces != null) {
+            if ((functionMask & 0x100) == 0 && faceIndices != null) {
                 for (int i_619_ = 0; i_619_ < faceCount; i_619_++) {
-                    short i_620_ = aShortArray5327[i_619_];
+                    short i_620_ = faceIndices[i_619_];
                     method643(i_620_, bool, bool_616_);
                 }
             } else {
                 for (int i_621_ = 0; i_621_ < faceCount; i_621_++) {
                     if (!method629(i_621_) && !method638(i_621_)) method643(i_621_, bool, bool_616_);
                 }
-                if (aByteArray5358 == null) {
+                if (facePriority == null) {
                     for (int i_622_ = 0; i_622_ < faceCount; i_622_++) {
                         if (method629(i_622_) || method638(i_622_)) method643(i_622_, bool, bool_616_);
                     }
                 } else {
                     for (int i_623_ = 0; i_623_ < 12; i_623_++) {
                         for (int i_624_ = 0; i_624_ < faceCount; i_624_++) {
-                            if (aByteArray5358[i_624_] == i_623_ && (method629(i_624_) || method638(i_624_))) method643(i_624_, bool, bool_616_);
+                            if (facePriority[i_624_] == i_623_ && (method629(i_624_) || method638(i_624_))) method643(i_624_, bool, bool_616_);
                         }
                     }
                 }
@@ -2318,7 +2318,7 @@ final class JavaModel extends Model {
 
     private final void method651() {
         synchronized (this) {
-            for (int i = 0; i < anInt5340; i++) {
+            for (int i = 0; i < vertexCount; i++) {
                 vertexX[i] = -vertexX[i];
                 vertexZ[i] = -vertexZ[i];
             }
@@ -2328,13 +2328,13 @@ final class JavaModel extends Model {
 
     final void ia(short i, short i_626_) {
         for (int i_627_ = 0; i_627_ < faceCount; i_627_++) {
-            if (aShortArray5311[i_627_] == i) aShortArray5311[i_627_] = i_626_;
+            if (faceColour[i_627_] == i) faceColour[i_627_] = i_626_;
         }
-        if (aClass6Array5361 != null) {
-            for (int i_628_ = 0; i_628_ < anInt5389; i_628_++) {
-                Class6 class6 = aClass6Array5361[i_628_];
-                Class350 class350 = aClass350Array5363[i_628_];
-                class350.anInt4313 = (class350.anInt4313 & ~0xffffff | (Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303((aShortArray5311[class6.anInt144]), 30) & 0xffff]) & 0xffffff);
+        if (billboardFaces != null) {
+            for (int i_628_ = 0; i_628_ < billboardCount; i_628_++) {
+                JavaBillboardFace javaBillboardFace = billboardFaces[i_628_];
+                JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_628_];
+                javaBillboardAttributes.anInt4313 = (javaBillboardAttributes.anInt4313 & ~0xffffff | (Class126.HSV_TO_RGB[SkyBoxSphereTypeList.method303((faceColour[javaBillboardFace.anInt144]), 30) & 0xffff]) & 0xffffff);
             }
         }
         if (anInt5354 == 2) anInt5354 = 1;
@@ -2342,7 +2342,7 @@ final class JavaModel extends Model {
 
     private final void method652() {
         synchronized (this) {
-            for (int i = 0; i < vertexCount; i++) {
+            for (int i = 0; i < maxVertex; i++) {
                 vertexX[i] = -vertexX[i];
                 vertexZ[i] = -vertexZ[i];
                 if (normals[i] != null) {
@@ -2358,7 +2358,7 @@ final class JavaModel extends Model {
                     }
                 }
             }
-            for (int i = vertexCount; i < anInt5340; i++) {
+            for (int i = maxVertex; i < vertexCount; i++) {
                 vertexX[i] = -vertexX[i];
                 vertexZ[i] = -vertexZ[i];
             }
@@ -2369,7 +2369,7 @@ final class JavaModel extends Model {
 
     private final void method653() {
         synchronized (this) {
-            for (int i = 0; i < vertexCount; i++) {
+            for (int i = 0; i < maxVertex; i++) {
                 int i_629_ = vertexX[i];
                 vertexX[i] = vertexZ[i];
                 vertexZ[i] = -i_629_;
@@ -2388,7 +2388,7 @@ final class JavaModel extends Model {
                     }
                 }
             }
-            for (int i = vertexCount; i < anInt5340; i++) {
+            for (int i = maxVertex; i < vertexCount; i++) {
                 int i_631_ = vertexX[i];
                 vertexX[i] = vertexZ[i];
                 vertexZ[i] = -i_631_;
@@ -2398,16 +2398,16 @@ final class JavaModel extends Model {
         }
     }
 
-    private final void method654(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_632_) {
-        if (vertexCount >= 1) {
-            aClass101_Sub1_5320 = (Class101_Sub1) class101;
-            Class101_Sub1 class101_sub1 = aHa_Sub1_5353.camera;
+    private final void method654(Matrix matrix, Class318_Sub3 class318_sub3, int i, int i_632_) {
+        if (maxVertex >= 1) {
+            aJavaMatrix_5320 = (JavaMatrix) matrix;
+            JavaMatrix javaMatrix = toolkit.camera;
             if (!aBoolean5323) method655();
             boolean bool = false;
-            if (aClass101_Sub1_5320.aFloat5672 == 16384.0F && aClass101_Sub1_5320.aFloat5673 == 0.0F && aClass101_Sub1_5320.aFloat5669 == 0.0F && aClass101_Sub1_5320.aFloat5655 == 0.0F && aClass101_Sub1_5320.aFloat5678 == 16384.0F && aClass101_Sub1_5320.aFloat5666 == 0.0F && aClass101_Sub1_5320.aFloat5662 == 0.0F && aClass101_Sub1_5320.aFloat5680 == 0.0F && (aClass101_Sub1_5320.aFloat5664 == 16384.0F))
+            if (aJavaMatrix_5320.aFloat5672 == 16384.0F && aJavaMatrix_5320.aFloat5673 == 0.0F && aJavaMatrix_5320.aFloat5669 == 0.0F && aJavaMatrix_5320.aFloat5655 == 0.0F && aJavaMatrix_5320.aFloat5678 == 16384.0F && aJavaMatrix_5320.aFloat5666 == 0.0F && aJavaMatrix_5320.aFloat5662 == 0.0F && aJavaMatrix_5320.aFloat5680 == 0.0F && (aJavaMatrix_5320.aFloat5664 == 16384.0F))
                 bool = true;
-            float f = (class101_sub1.aFloat5681 + (class101_sub1.aFloat5662 * aClass101_Sub1_5320.aFloat5686) + (class101_sub1.aFloat5680 * aClass101_Sub1_5320.aFloat5685) + (class101_sub1.aFloat5664 * aClass101_Sub1_5320.aFloat5681));
-            float f_633_ = (bool ? class101_sub1.aFloat5680 : ((class101_sub1.aFloat5662 * aClass101_Sub1_5320.aFloat5673) + (class101_sub1.aFloat5680 * aClass101_Sub1_5320.aFloat5678) + (class101_sub1.aFloat5664 * aClass101_Sub1_5320.aFloat5680)));
+            float f = (javaMatrix.aFloat5681 + (javaMatrix.aFloat5662 * aJavaMatrix_5320.aFloat5686) + (javaMatrix.aFloat5680 * aJavaMatrix_5320.aFloat5685) + (javaMatrix.aFloat5664 * aJavaMatrix_5320.aFloat5681));
+            float f_633_ = (bool ? javaMatrix.aFloat5680 : ((javaMatrix.aFloat5662 * aJavaMatrix_5320.aFloat5673) + (javaMatrix.aFloat5680 * aJavaMatrix_5320.aFloat5678) + (javaMatrix.aFloat5664 * aJavaMatrix_5320.aFloat5680)));
             int i_634_ = (int) (f + (float) aShort5329 * f_633_);
             int i_635_ = (int) (f + (float) aShort5365 * f_633_);
             int i_636_;
@@ -2419,39 +2419,39 @@ final class JavaModel extends Model {
                 i_636_ = i_634_ - aShort5324;
                 i_637_ = i_635_ + aShort5324;
             }
-            if (i_636_ < aHa_Sub1_5353.anInt7494 && i_637_ > aHa_Sub1_5353.anInt7482) {
-                float f_638_ = (class101_sub1.aFloat5686 + (class101_sub1.aFloat5672 * aClass101_Sub1_5320.aFloat5686) + (class101_sub1.aFloat5673 * aClass101_Sub1_5320.aFloat5685) + (class101_sub1.aFloat5669 * aClass101_Sub1_5320.aFloat5681));
-                float f_639_ = (bool ? class101_sub1.aFloat5673 : ((class101_sub1.aFloat5672 * aClass101_Sub1_5320.aFloat5673) + (class101_sub1.aFloat5673 * (aClass101_Sub1_5320.aFloat5678)) + (class101_sub1.aFloat5669 * (aClass101_Sub1_5320.aFloat5680))));
+            if (i_636_ < toolkit.anInt7494 && i_637_ > toolkit.zNear) {
+                float f_638_ = (javaMatrix.aFloat5686 + (javaMatrix.aFloat5672 * aJavaMatrix_5320.aFloat5686) + (javaMatrix.aFloat5673 * aJavaMatrix_5320.aFloat5685) + (javaMatrix.aFloat5669 * aJavaMatrix_5320.aFloat5681));
+                float f_639_ = (bool ? javaMatrix.aFloat5673 : ((javaMatrix.aFloat5672 * aJavaMatrix_5320.aFloat5673) + (javaMatrix.aFloat5673 * (aJavaMatrix_5320.aFloat5678)) + (javaMatrix.aFloat5669 * (aJavaMatrix_5320.aFloat5680))));
                 int i_640_ = (int) (f_638_ + (float) aShort5329 * f_639_);
                 int i_641_ = (int) (f_638_ + (float) aShort5365 * f_639_);
                 int i_642_;
                 int i_643_;
                 if (i_640_ > i_641_) {
-                    i_642_ = ((i_641_ - aShort5324) * aHa_Sub1_5353.anInt7491);
-                    i_643_ = ((i_640_ + aShort5324) * aHa_Sub1_5353.anInt7491);
+                    i_642_ = ((i_641_ - aShort5324) * toolkit.anInt7491);
+                    i_643_ = ((i_640_ + aShort5324) * toolkit.anInt7491);
                 } else {
-                    i_642_ = ((i_640_ - aShort5324) * aHa_Sub1_5353.anInt7491);
-                    i_643_ = ((i_641_ + aShort5324) * aHa_Sub1_5353.anInt7491);
+                    i_642_ = ((i_640_ - aShort5324) * toolkit.anInt7491);
+                    i_643_ = ((i_641_ + aShort5324) * toolkit.anInt7491);
                 }
                 if (i == -1) {
-                    if (i_642_ / i_637_ >= aHa_Sub1_5353.anInt7508 || (i_643_ / i_637_ <= aHa_Sub1_5353.anInt7509)) return;
-                } else if (i_642_ / i >= aHa_Sub1_5353.anInt7508 || (i_643_ / i <= aHa_Sub1_5353.anInt7509)) return;
-                float f_644_ = (class101_sub1.aFloat5685 + (class101_sub1.aFloat5655 * aClass101_Sub1_5320.aFloat5686) + (class101_sub1.aFloat5678 * aClass101_Sub1_5320.aFloat5685) + (class101_sub1.aFloat5666 * aClass101_Sub1_5320.aFloat5681));
-                float f_645_ = (bool ? class101_sub1.aFloat5678 : ((class101_sub1.aFloat5655 * aClass101_Sub1_5320.aFloat5673) + (class101_sub1.aFloat5678 * (aClass101_Sub1_5320.aFloat5678)) + (class101_sub1.aFloat5666 * (aClass101_Sub1_5320.aFloat5680))));
+                    if (i_642_ / i_637_ >= toolkit.anInt7508 || (i_643_ / i_637_ <= toolkit.anInt7509)) return;
+                } else if (i_642_ / i >= toolkit.anInt7508 || (i_643_ / i <= toolkit.anInt7509)) return;
+                float f_644_ = (javaMatrix.aFloat5685 + (javaMatrix.aFloat5655 * aJavaMatrix_5320.aFloat5686) + (javaMatrix.aFloat5678 * aJavaMatrix_5320.aFloat5685) + (javaMatrix.aFloat5666 * aJavaMatrix_5320.aFloat5681));
+                float f_645_ = (bool ? javaMatrix.aFloat5678 : ((javaMatrix.aFloat5655 * aJavaMatrix_5320.aFloat5673) + (javaMatrix.aFloat5678 * (aJavaMatrix_5320.aFloat5678)) + (javaMatrix.aFloat5666 * (aJavaMatrix_5320.aFloat5680))));
                 int i_646_ = (int) (f_644_ + (float) aShort5329 * f_645_);
                 int i_647_ = (int) (f_644_ + (float) aShort5365 * f_645_);
                 int i_648_;
                 int i_649_;
                 if (i_646_ > i_647_) {
-                    i_648_ = ((i_647_ - aShort5324) * aHa_Sub1_5353.anInt7497);
-                    i_649_ = ((i_646_ + aShort5324) * aHa_Sub1_5353.anInt7497);
+                    i_648_ = ((i_647_ - aShort5324) * toolkit.anInt7497);
+                    i_649_ = ((i_646_ + aShort5324) * toolkit.anInt7497);
                 } else {
-                    i_648_ = ((i_646_ - aShort5324) * aHa_Sub1_5353.anInt7497);
-                    i_649_ = ((i_647_ + aShort5324) * aHa_Sub1_5353.anInt7497);
+                    i_648_ = ((i_646_ - aShort5324) * toolkit.anInt7497);
+                    i_649_ = ((i_647_ + aShort5324) * toolkit.anInt7497);
                 }
                 if (i == -1) {
-                    if (i_648_ / i_637_ >= aHa_Sub1_5353.anInt7506 || (i_649_ / i_637_ <= aHa_Sub1_5353.anInt7490)) return;
-                } else if (i_648_ / i >= aHa_Sub1_5353.anInt7506 || (i_649_ / i <= aHa_Sub1_5353.anInt7490)) return;
+                    if (i_648_ / i_637_ >= toolkit.anInt7506 || (i_649_ / i_637_ <= toolkit.anInt7490)) return;
+                } else if (i_648_ / i >= toolkit.anInt7506 || (i_649_ / i <= toolkit.anInt7490)) return;
                 float f_650_;
                 float f_651_;
                 float f_652_;
@@ -2459,21 +2459,21 @@ final class JavaModel extends Model {
                 float f_654_;
                 float f_655_;
                 if (bool) {
-                    f_650_ = class101_sub1.aFloat5672;
-                    f_651_ = class101_sub1.aFloat5655;
-                    f_652_ = class101_sub1.aFloat5662;
-                    f_653_ = class101_sub1.aFloat5669;
-                    f_654_ = class101_sub1.aFloat5666;
-                    f_655_ = class101_sub1.aFloat5664;
+                    f_650_ = javaMatrix.aFloat5672;
+                    f_651_ = javaMatrix.aFloat5655;
+                    f_652_ = javaMatrix.aFloat5662;
+                    f_653_ = javaMatrix.aFloat5669;
+                    f_654_ = javaMatrix.aFloat5666;
+                    f_655_ = javaMatrix.aFloat5664;
                 } else {
-                    f_650_ = ((class101_sub1.aFloat5672 * aClass101_Sub1_5320.aFloat5672) + (class101_sub1.aFloat5673 * (aClass101_Sub1_5320.aFloat5655)) + (class101_sub1.aFloat5669 * (aClass101_Sub1_5320.aFloat5662)));
-                    f_651_ = ((class101_sub1.aFloat5655 * aClass101_Sub1_5320.aFloat5672) + (class101_sub1.aFloat5678 * (aClass101_Sub1_5320.aFloat5655)) + (class101_sub1.aFloat5666 * (aClass101_Sub1_5320.aFloat5662)));
-                    f_652_ = ((class101_sub1.aFloat5662 * aClass101_Sub1_5320.aFloat5672) + (class101_sub1.aFloat5680 * (aClass101_Sub1_5320.aFloat5655)) + (class101_sub1.aFloat5664 * (aClass101_Sub1_5320.aFloat5662)));
-                    f_653_ = ((class101_sub1.aFloat5672 * aClass101_Sub1_5320.aFloat5669) + (class101_sub1.aFloat5673 * (aClass101_Sub1_5320.aFloat5666)) + (class101_sub1.aFloat5669 * (aClass101_Sub1_5320.aFloat5664)));
-                    f_654_ = ((class101_sub1.aFloat5655 * aClass101_Sub1_5320.aFloat5669) + (class101_sub1.aFloat5678 * (aClass101_Sub1_5320.aFloat5666)) + (class101_sub1.aFloat5666 * (aClass101_Sub1_5320.aFloat5664)));
-                    f_655_ = ((class101_sub1.aFloat5662 * aClass101_Sub1_5320.aFloat5669) + (class101_sub1.aFloat5680 * (aClass101_Sub1_5320.aFloat5666)) + (class101_sub1.aFloat5664 * (aClass101_Sub1_5320.aFloat5664)));
+                    f_650_ = ((javaMatrix.aFloat5672 * aJavaMatrix_5320.aFloat5672) + (javaMatrix.aFloat5673 * (aJavaMatrix_5320.aFloat5655)) + (javaMatrix.aFloat5669 * (aJavaMatrix_5320.aFloat5662)));
+                    f_651_ = ((javaMatrix.aFloat5655 * aJavaMatrix_5320.aFloat5672) + (javaMatrix.aFloat5678 * (aJavaMatrix_5320.aFloat5655)) + (javaMatrix.aFloat5666 * (aJavaMatrix_5320.aFloat5662)));
+                    f_652_ = ((javaMatrix.aFloat5662 * aJavaMatrix_5320.aFloat5672) + (javaMatrix.aFloat5680 * (aJavaMatrix_5320.aFloat5655)) + (javaMatrix.aFloat5664 * (aJavaMatrix_5320.aFloat5662)));
+                    f_653_ = ((javaMatrix.aFloat5672 * aJavaMatrix_5320.aFloat5669) + (javaMatrix.aFloat5673 * (aJavaMatrix_5320.aFloat5666)) + (javaMatrix.aFloat5669 * (aJavaMatrix_5320.aFloat5664)));
+                    f_654_ = ((javaMatrix.aFloat5655 * aJavaMatrix_5320.aFloat5669) + (javaMatrix.aFloat5678 * (aJavaMatrix_5320.aFloat5666)) + (javaMatrix.aFloat5666 * (aJavaMatrix_5320.aFloat5664)));
+                    f_655_ = ((javaMatrix.aFloat5662 * aJavaMatrix_5320.aFloat5669) + (javaMatrix.aFloat5680 * (aJavaMatrix_5320.aFloat5666)) + (javaMatrix.aFloat5664 * (aJavaMatrix_5320.aFloat5664)));
                 }
-                if (aHa_Sub1_5353.anInt7485 > 1) {
+                if (toolkit.threadCount > 1) {
                     synchronized (this) {
                         while (aBoolean5357) {
                             try {
@@ -2486,18 +2486,18 @@ final class JavaModel extends Model {
                     }
                 }
                 method632(Thread.currentThread());
-                aClass109_5383.method1023((i_632_ & 0x2) != 0);
+                aRasterizer_5383.method1023((i_632_ & 0x2) != 0);
                 boolean bool_656_ = false;
-                boolean bool_657_ = i_636_ <= aHa_Sub1_5353.anInt7482;
-                boolean bool_658_ = (bool_657_ || aModelParticleEmitterArray5322 != null || aModelParticleEffectorArray5335 != null);
-                aClass167_5367.anInt2221 = aClass109_5383.anInt1679;
-                aClass167_5367.anInt2229 = aClass109_5383.anInt1665;
-                aClass167_5367.anInt2215 = aClass109_5383.anInt1668;
-                int i_659_ = aHa_Sub1_5353.anInt7491;
-                int i_660_ = aHa_Sub1_5353.anInt7497;
-                int i_661_ = aHa_Sub1_5353.anInt7482;
+                boolean bool_657_ = i_636_ <= toolkit.zNear;
+                boolean bool_658_ = (bool_657_ || emitters != null || effectors != null);
+                aJavaThreadResource_5367.anInt2221 = aRasterizer_5383.width;
+                aJavaThreadResource_5367.anInt2229 = aRasterizer_5383.minX;
+                aJavaThreadResource_5367.anInt2215 = aRasterizer_5383.minY;
+                int i_659_ = toolkit.anInt7491;
+                int i_660_ = toolkit.anInt7497;
+                int i_661_ = toolkit.zNear;
                 if (i == -1) {
-                    for (int vertex = 0; vertex < anInt5340; vertex++) {
+                    for (int vertex = 0; vertex < vertexCount; vertex++) {
                         int i_663_ = vertexX[vertex];
                         int i_664_ = vertexY[vertex];
                         int i_665_ = vertexZ[vertex];
@@ -2506,8 +2506,8 @@ final class JavaModel extends Model {
                         float f_668_ = (f + f_652_ * (float) i_663_ + f_633_ * (float) i_664_ + f_655_ * (float) i_665_);
                         renderVertexZ[vertex] = (int) f_668_;
                         if (f_668_ >= (float) i_661_) {
-                            renderVertexX[vertex] = (aClass167_5367.anInt2229 + (int) (f_666_ * (float) i_659_ / f_668_));
-                            renderVertexY[vertex] = (aClass167_5367.anInt2215 + (int) (f_667_ * (float) i_660_ / f_668_));
+                            renderVertexX[vertex] = (aJavaThreadResource_5367.anInt2229 + (int) (f_666_ * (float) i_659_ / f_668_));
+                            renderVertexY[vertex] = (aJavaThreadResource_5367.anInt2215 + (int) (f_667_ * (float) i_660_ / f_668_));
                         } else {
                             renderVertexX[vertex] = -5000;
                             bool_656_ = true;
@@ -2517,32 +2517,32 @@ final class JavaModel extends Model {
                             anIntArray5384[vertex] = (int) f_667_;
                             anIntArray5392[vertex] = (int) f_668_;
                         }
-                        if (aClass167_5367.aBoolean2195) anIntArray5362[vertex] = (int) ((aClass101_Sub1_5320.aFloat5685) + ((aClass101_Sub1_5320.aFloat5655 * (float) i_663_) + (aClass101_Sub1_5320.aFloat5678 * (float) i_664_) + (aClass101_Sub1_5320.aFloat5666 * (float) i_665_)));
+                        if (aJavaThreadResource_5367.aBoolean2195) anIntArray5362[vertex] = (int) ((aJavaMatrix_5320.aFloat5685) + ((aJavaMatrix_5320.aFloat5655 * (float) i_663_) + (aJavaMatrix_5320.aFloat5678 * (float) i_664_) + (aJavaMatrix_5320.aFloat5666 * (float) i_665_)));
                     }
-                    if (aClass6Array5361 != null) {
-                        for (int i_669_ = 0; i_669_ < anInt5389; i_669_++) {
-                            Class6 class6 = aClass6Array5361[i_669_];
-                            Class350 class350 = aClass350Array5363[i_669_];
-                            short i_670_ = faceIndexX[class6.anInt144];
-                            short i_671_ = faceIndexY[class6.anInt144];
-                            short i_672_ = faceIndexZ[class6.anInt144];
+                    if (billboardFaces != null) {
+                        for (int i_669_ = 0; i_669_ < billboardCount; i_669_++) {
+                            JavaBillboardFace javaBillboardFace = billboardFaces[i_669_];
+                            JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_669_];
+                            short i_670_ = faceIndexX[javaBillboardFace.anInt144];
+                            short i_671_ = faceIndexY[javaBillboardFace.anInt144];
+                            short i_672_ = faceIndexZ[javaBillboardFace.anInt144];
                             int i_673_ = ((vertexX[i_670_] + vertexX[i_671_] + vertexX[i_672_]) / 3);
                             int i_674_ = ((vertexY[i_670_] + vertexY[i_671_] + vertexY[i_672_]) / 3);
                             int i_675_ = ((vertexZ[i_670_] + vertexZ[i_671_] + vertexZ[i_672_]) / 3);
-                            float f_676_ = ((float) class350.anInt4316 + (f_638_ + f_650_ * (float) i_673_ + f_639_ * (float) i_674_ + f_653_ * (float) i_675_));
-                            float f_677_ = ((float) class350.anInt4317 + (f_644_ + f_651_ * (float) i_673_ + f_645_ * (float) i_674_ + f_654_ * (float) i_675_));
+                            float f_676_ = ((float) javaBillboardAttributes.anInt4316 + (f_638_ + f_650_ * (float) i_673_ + f_639_ * (float) i_674_ + f_653_ * (float) i_675_));
+                            float f_677_ = ((float) javaBillboardAttributes.anInt4317 + (f_644_ + f_651_ * (float) i_673_ + f_645_ * (float) i_674_ + f_654_ * (float) i_675_));
                             float f_678_ = (f + f_652_ * (float) i_673_ + f_633_ * (float) i_674_ + f_655_ * (float) i_675_);
-                            if (f_678_ > (float) (aHa_Sub1_5353.anInt7482)) {
-                                class350.anInt4312 = (aHa_Sub1_5353.anInt7510 + (int) (f_676_ * (float) i_659_ / f_678_));
-                                class350.anInt4310 = (aHa_Sub1_5353.anInt7504 + (int) (f_677_ * (float) i_660_ / f_678_));
-                                class350.anInt4320 = ((int) f_678_ - class6.anInt154);
-                                class350.anInt4309 = (int) ((float) ((class350.anInt4314) * (class6.aShort150) * i_659_) / (f_678_ * 128.0F));
-                                class350.anInt4307 = (int) ((float) ((class350.anInt4311) * (class6.aShort143) * i_660_) / (f_678_ * 128.0F));
-                            } else class350.anInt4309 = class350.anInt4307 = 0;
+                            if (f_678_ > (float) (toolkit.zNear)) {
+                                javaBillboardAttributes.anInt4312 = (toolkit.anInt7510 + (int) (f_676_ * (float) i_659_ / f_678_));
+                                javaBillboardAttributes.anInt4310 = (toolkit.anInt7504 + (int) (f_677_ * (float) i_660_ / f_678_));
+                                javaBillboardAttributes.anInt4320 = ((int) f_678_ - javaBillboardFace.anInt154);
+                                javaBillboardAttributes.anInt4309 = (int) ((float) ((javaBillboardAttributes.anInt4314) * (javaBillboardFace.aShort150) * i_659_) / (f_678_ * 128.0F));
+                                javaBillboardAttributes.anInt4307 = (int) ((float) ((javaBillboardAttributes.anInt4311) * (javaBillboardFace.aShort143) * i_660_) / (f_678_ * 128.0F));
+                            } else javaBillboardAttributes.anInt4309 = javaBillboardAttributes.anInt4307 = 0;
                         }
                     }
                 } else {
-                    for (int i_679_ = 0; i_679_ < anInt5340; i_679_++) {
+                    for (int i_679_ = 0; i_679_ < vertexCount; i_679_++) {
                         int i_680_ = vertexX[i_679_];
                         int i_681_ = vertexY[i_679_];
                         int i_682_ = vertexZ[i_679_];
@@ -2550,33 +2550,33 @@ final class JavaModel extends Model {
                         float f_684_ = (f_644_ + f_651_ * (float) i_680_ + f_645_ * (float) i_681_ + f_654_ * (float) i_682_);
                         float f_685_ = (f + f_652_ * (float) i_680_ + f_633_ * (float) i_681_ + f_655_ * (float) i_682_);
                         renderVertexZ[i_679_] = (int) f_685_;
-                        renderVertexX[i_679_] = (aClass167_5367.anInt2229 + (int) (f_683_ * (float) i_659_ / (float) i));
-                        renderVertexY[i_679_] = (aClass167_5367.anInt2215 + (int) (f_684_ * (float) i_660_ / (float) i));
+                        renderVertexX[i_679_] = (aJavaThreadResource_5367.anInt2229 + (int) (f_683_ * (float) i_659_ / (float) i));
+                        renderVertexY[i_679_] = (aJavaThreadResource_5367.anInt2215 + (int) (f_684_ * (float) i_660_ / (float) i));
                         if (bool_658_) {
                             anIntArray5399[i_679_] = (int) f_683_;
                             anIntArray5384[i_679_] = (int) f_684_;
                             anIntArray5392[i_679_] = i;
                         }
-                        if (aClass167_5367.aBoolean2195) anIntArray5362[i_679_] = (int) ((aClass101_Sub1_5320.aFloat5685) + ((aClass101_Sub1_5320.aFloat5655 * (float) i_680_) + (aClass101_Sub1_5320.aFloat5678 * (float) i_681_) + (aClass101_Sub1_5320.aFloat5666 * (float) i_682_)));
+                        if (aJavaThreadResource_5367.aBoolean2195) anIntArray5362[i_679_] = (int) ((aJavaMatrix_5320.aFloat5685) + ((aJavaMatrix_5320.aFloat5655 * (float) i_680_) + (aJavaMatrix_5320.aFloat5678 * (float) i_681_) + (aJavaMatrix_5320.aFloat5666 * (float) i_682_)));
                     }
-                    if (aClass6Array5361 != null) {
-                        for (int i_686_ = 0; i_686_ < anInt5389; i_686_++) {
-                            Class6 class6 = aClass6Array5361[i_686_];
-                            Class350 class350 = aClass350Array5363[i_686_];
-                            short i_687_ = faceIndexX[class6.anInt144];
-                            short i_688_ = faceIndexY[class6.anInt144];
-                            short i_689_ = faceIndexZ[class6.anInt144];
+                    if (billboardFaces != null) {
+                        for (int i_686_ = 0; i_686_ < billboardCount; i_686_++) {
+                            JavaBillboardFace javaBillboardFace = billboardFaces[i_686_];
+                            JavaBillboardAttributes javaBillboardAttributes = billboardAttributes[i_686_];
+                            short i_687_ = faceIndexX[javaBillboardFace.anInt144];
+                            short i_688_ = faceIndexY[javaBillboardFace.anInt144];
+                            short i_689_ = faceIndexZ[javaBillboardFace.anInt144];
                             int i_690_ = ((vertexX[i_687_] + vertexX[i_688_] + vertexX[i_689_]) / 3);
                             int i_691_ = ((vertexY[i_687_] + vertexY[i_688_] + vertexY[i_689_]) / 3);
                             int i_692_ = ((vertexZ[i_687_] + vertexZ[i_688_] + vertexZ[i_689_]) / 3);
                             float f_693_ = (f_638_ + f_650_ * (float) i_690_ + f_639_ * (float) i_691_ + f_653_ * (float) i_692_);
                             float f_694_ = (f_644_ + f_651_ * (float) i_690_ + f_645_ * (float) i_691_ + f_654_ * (float) i_692_);
                             float f_695_ = (f + f_652_ * (float) i_690_ + f_633_ * (float) i_691_ + f_655_ * (float) i_692_);
-                            class350.anInt4312 = (aHa_Sub1_5353.anInt7510 + (int) (f_693_ * (float) i_659_ / (float) i));
-                            class350.anInt4310 = (aHa_Sub1_5353.anInt7504 + (int) (f_694_ * (float) i_660_ / (float) i));
-                            class350.anInt4320 = i - class6.anInt154;
-                            class350.anInt4309 = (class350.anInt4314 * class6.aShort150 * i_659_ / (i << 7));
-                            class350.anInt4307 = (class350.anInt4311 * class6.aShort143 * i_660_ / (i << 7));
+                            javaBillboardAttributes.anInt4312 = (toolkit.anInt7510 + (int) (f_693_ * (float) i_659_ / (float) i));
+                            javaBillboardAttributes.anInt4310 = (toolkit.anInt7504 + (int) (f_694_ * (float) i_660_ / (float) i));
+                            javaBillboardAttributes.anInt4320 = i - javaBillboardFace.anInt154;
+                            javaBillboardAttributes.anInt4309 = (javaBillboardAttributes.anInt4314 * javaBillboardFace.aShort150 * i_659_ / (i << 7));
+                            javaBillboardAttributes.anInt4307 = (javaBillboardAttributes.anInt4311 * javaBillboardFace.aShort143 * i_660_ / (i << 7));
                         }
                     }
                 }
@@ -2594,8 +2594,8 @@ final class JavaModel extends Model {
                     if (f_705_ >= (float) i_661_) {
                         int i_706_ = (int) f_705_;
                         if (i != -1) i_706_ = i;
-                        class318_sub3.anInt6405 = (aHa_Sub1_5353.anInt7510 + (int) (f_703_ * (float) i_659_ / (float) i_706_));
-                        class318_sub3.anInt6402 = (aHa_Sub1_5353.anInt7504 + (int) (f_704_ * (float) i_660_ / (float) i_706_));
+                        class318_sub3.anInt6405 = (toolkit.anInt7510 + (int) (f_703_ * (float) i_659_ / (float) i_706_));
+                        class318_sub3.anInt6402 = (toolkit.anInt7504 + (int) (f_704_ * (float) i_660_ / (float) i_706_));
                     } else bool_696_ = true;
                     i_700_ = i_698_;
                     i_701_ = aShort5365;
@@ -2606,56 +2606,56 @@ final class JavaModel extends Model {
                     if (f_709_ >= (float) i_661_) {
                         int i_710_ = (int) f_709_;
                         if (i != -1) i_710_ = i;
-                        class318_sub3.anInt6406 = (aHa_Sub1_5353.anInt7510 + (int) (f_707_ * (float) i_659_ / (float) i_710_));
-                        class318_sub3.anInt6404 = (aHa_Sub1_5353.anInt7504 + (int) (f_708_ * (float) i_660_ / (float) i_710_));
+                        class318_sub3.anInt6406 = (toolkit.anInt7510 + (int) (f_707_ * (float) i_659_ / (float) i_710_));
+                        class318_sub3.anInt6404 = (toolkit.anInt7504 + (int) (f_708_ * (float) i_660_ / (float) i_710_));
                     } else bool_696_ = true;
                     if (bool_696_) {
                         if (f_705_ < (float) i_661_ && f_709_ < (float) i_661_) bool_697_ = false;
                         else if (f_705_ < (float) i_661_) {
-                            float f_711_ = ((f_709_ - (float) (aHa_Sub1_5353.anInt7482)) / (f_709_ - f_705_));
+                            float f_711_ = ((f_709_ - (float) (toolkit.zNear)) / (f_709_ - f_705_));
                             int i_712_ = (int) (f_707_ + (f_707_ - f_703_) * f_711_);
                             int i_713_ = (int) (f_708_ + (f_708_ - f_704_) * f_711_);
                             int i_714_ = i_661_;
                             if (i != -1) i_714_ = i;
-                            class318_sub3.anInt6405 = (aHa_Sub1_5353.anInt7510 + i_712_ * i_659_ / i_714_);
-                            class318_sub3.anInt6402 = (aHa_Sub1_5353.anInt7504 + i_713_ * i_660_ / i_714_);
+                            class318_sub3.anInt6405 = (toolkit.anInt7510 + i_712_ * i_659_ / i_714_);
+                            class318_sub3.anInt6402 = (toolkit.anInt7504 + i_713_ * i_660_ / i_714_);
                         } else if (f_709_ < (float) i_661_) {
                             float f_715_ = ((f_705_ - (float) i_661_) / (f_705_ - f_709_));
                             int i_716_ = (int) (f_703_ + (f_703_ - f_707_) * f_715_);
                             int i_717_ = (int) (f_704_ + (f_704_ - f_708_) * f_715_);
                             int i_718_ = i_661_;
                             if (i != -1) i_718_ = i;
-                            class318_sub3.anInt6405 = (aHa_Sub1_5353.anInt7510 + i_716_ * i_659_ / i_718_);
-                            class318_sub3.anInt6402 = (aHa_Sub1_5353.anInt7504 + i_717_ * i_660_ / i_718_);
+                            class318_sub3.anInt6405 = (toolkit.anInt7510 + i_716_ * i_659_ / i_718_);
+                            class318_sub3.anInt6402 = (toolkit.anInt7504 + i_717_ * i_660_ / i_718_);
                         }
                     }
                     if (bool_697_) {
                         if (f_705_ > f_709_) {
                             int i_719_ = (int) f_705_;
                             if (i != -1) i_719_ = i;
-                            class318_sub3.anInt6403 = (aHa_Sub1_5353.anInt7510 + (int) ((f_703_ + (float) aShort5324) * (float) i_659_ / (float) i_719_) - (class318_sub3.anInt6405));
+                            class318_sub3.anInt6403 = (toolkit.anInt7510 + (int) ((f_703_ + (float) aShort5324) * (float) i_659_ / (float) i_719_) - (class318_sub3.anInt6405));
                         } else {
                             int i_720_ = (int) f_709_;
                             if (i != -1) i_720_ = i;
-                            class318_sub3.anInt6403 = (aHa_Sub1_5353.anInt7510 + (int) ((f_707_ + (float) aShort5324) * (float) i_659_ / (float) i_720_) - (class318_sub3.anInt6406));
+                            class318_sub3.anInt6403 = (toolkit.anInt7510 + (int) ((f_707_ + (float) aShort5324) * (float) i_659_ / (float) i_720_) - (class318_sub3.anInt6406));
                         }
                         class318_sub3.aBoolean6401 = true;
                     }
                 }
                 method634(true);
-                aClass109_5383.aBoolean1669 = (i_632_ & 0x1) == 0;
-                aClass109_5383.aBoolean1667 = false;
+                aRasterizer_5383.aBoolean1669 = (i_632_ & 0x1) == 0;
+                aRasterizer_5383.aBoolean1667 = false;
                 try {
-                    method650(bool_656_, ((aClass167_5367.aBoolean2201 && (i_637_ > aClass167_5367.anInt2210)) || aClass167_5367.aBoolean2195), i_636_, i_637_ - i_636_);
+                    method650(bool_656_, ((aJavaThreadResource_5367.aBoolean2201 && (i_637_ > aJavaThreadResource_5367.anInt2210)) || aJavaThreadResource_5367.aBoolean2195), i_636_, i_637_ - i_636_);
                 } catch (Exception exception) {
                     /* empty */
                 }
-                if (aClass6Array5361 != null) {
+                if (billboardFaces != null) {
                     for (int i_721_ = 0; i_721_ < faceCount; i_721_++)
                         anIntArray5400[i_721_] = -1;
                 }
-                aClass109_5383 = null;
-                if (aHa_Sub1_5353.anInt7485 > 1) {
+                aRasterizer_5383 = null;
+                if (toolkit.threadCount > 1) {
                     synchronized (this) {
                         aBoolean5357 = false;
                         this.notifyAll();
@@ -2666,7 +2666,7 @@ final class JavaModel extends Model {
     }
 
     final boolean r() {
-        return aBoolean5391;
+        return movingTextures;
     }
 
     private final void method655() {
@@ -2679,7 +2679,7 @@ final class JavaModel extends Model {
             int i_726_ = -32768;
             int i_727_ = -32768;
             int i_728_ = -32768;
-            for (int i_729_ = 0; i_729_ < vertexCount; i_729_++) {
+            for (int i_729_ = 0; i_729_ < maxVertex; i_729_++) {
                 int i_730_ = vertexX[i_729_];
                 int i_731_ = vertexY[i_729_];
                 int i_732_ = vertexZ[i_729_];
@@ -2715,16 +2715,16 @@ final class JavaModel extends Model {
     private final void method657(boolean bool) {
         if (anInt5354 == 1) method647();
         else if (anInt5354 == 2) {
-            if ((anInt5316 & 0x97098) == 0 && aFloatArrayArray5314 == null) aShortArray5311 = null;
-            if (bool) renderPoints = null;
+            if ((functionMask & 0x97098) == 0 && texCoordU == null) faceColour = null;
+            if (bool) shadingType = null;
         } else {
             method636();
-            int i = aHa_Sub1_5353.anInt7484;
-            int i_734_ = aHa_Sub1_5353.anInt7473;
-            int i_735_ = aHa_Sub1_5353.anInt7479;
-            int i_736_ = aHa_Sub1_5353.anInt7500 >> 8;
-            int i_737_ = aHa_Sub1_5353.anInt7474 * 768 / anInt5349;
-            int i_738_ = aHa_Sub1_5353.anInt7478 * 768 / anInt5349;
+            int i = toolkit.anInt7484;
+            int i_734_ = toolkit.anInt7473;
+            int i_735_ = toolkit.anInt7479;
+            int i_736_ = toolkit.anInt7500 >> 8;
+            int i_737_ = toolkit.anInt7474 * 768 / anInt5349;
+            int i_738_ = toolkit.anInt7478 * 768 / anInt5349;
             if (anIntArray5368 == null) {
                 anIntArray5368 = new int[faceCount];
                 anIntArray5337 = new int[faceCount];
@@ -2732,19 +2732,19 @@ final class JavaModel extends Model {
             }
             for (int i_739_ = 0; i_739_ < faceCount; i_739_++) {
                 byte i_740_;
-                if (renderPoints == null) i_740_ = (byte) 0;
-                else i_740_ = renderPoints[i_739_];
+                if (shadingType == null) i_740_ = (byte) 0;
+                else i_740_ = shadingType[i_739_];
                 byte i_741_;
                 if (faceAlphas == null) i_741_ = (byte) 0;
                 else i_741_ = faceAlphas[i_739_];
                 short i_742_;
-                if (aShortArray5388 == null) i_742_ = (short) -1;
-                else i_742_ = aShortArray5388[i_739_];
+                if (faceTextures == null) i_742_ = (short) -1;
+                else i_742_ = faceTextures[i_739_];
                 if (i_741_ == -2) i_740_ = (byte) 3;
                 if (i_741_ == -1) i_740_ = (byte) 2;
                 if (i_742_ == -1) {
                     if (i_740_ == 0) {
-                        int i_743_ = aShortArray5311[i_739_] & 0xffff;
+                        int i_743_ = faceColour[i_739_] & 0xffff;
                         int i_744_ = (i_743_ & 0x7f) * anInt5344 >> 7;
                         short i_745_ = SkyBoxSphereTypeList.method303(i_743_ & ~0x7f | i_744_, 30);
                         VertexNormal vertexNormal;
@@ -2767,7 +2767,7 @@ final class JavaModel extends Model {
                         i_748_ = (i_736_ >> 1) + (i_747_ * i_746_ >> 17);
                         anIntArray5366[i_739_] = i_748_ << 17 | Class291.method2198(0, i_748_, i_745_);
                     } else if (i_740_ == 1) {
-                        int i_749_ = aShortArray5311[i_739_] & 0xffff;
+                        int i_749_ = faceColour[i_739_] & 0xffff;
                         int i_750_ = (i_749_ & 0x7f) * anInt5344 >> 7;
                         short i_751_ = SkyBoxSphereTypeList.method303(i_749_ & ~0x7f | i_750_, 30);
                         Class41 class41 = aClass41Array5385[i_739_];
@@ -2781,7 +2781,7 @@ final class JavaModel extends Model {
                         anIntArray5366[i_739_] = -1;
                     } else anIntArray5366[i_739_] = -2;
                 } else {
-                    int i_755_ = aShortArray5311[i_739_] & 0xffff;
+                    int i_755_ = faceColour[i_739_] & 0xffff;
                     if (i_740_ == 0) {
                         VertexNormal vertexNormal;
                         if (aVertexNormalArray5313 != null && (aVertexNormalArray5313[faceIndexX[i_739_]] != null)) vertexNormal = aVertexNormalArray5313[faceIndexX[i_739_]];
@@ -2815,8 +2815,8 @@ final class JavaModel extends Model {
             normals = null;
             aVertexNormalArray5313 = null;
             aClass41Array5385 = null;
-            if ((anInt5316 & 0x97098) == 0 && aFloatArrayArray5314 == null) aShortArray5311 = null;
-            if (bool) renderPoints = null;
+            if ((functionMask & 0x97098) == 0 && texCoordU == null) faceColour = null;
+            if (bool) shadingType = null;
             anInt5354 = 2;
         }
     }
@@ -2840,16 +2840,16 @@ final class JavaModel extends Model {
         } else if (i == 5) {
             javaModel_763_ = aJavaModel_5319;
             javaModel_764_ = aJavaModel_5390;
-        } else javaModel_764_ = javaModel_763_ = new JavaModel(aHa_Sub1_5353);
+        } else javaModel_764_ = javaModel_763_ = new JavaModel(toolkit);
         return method633(javaModel_764_, javaModel_763_, i_762_, i != 0, bool);
     }
 
     final void O(int i, int i_765_, int i_766_) {
-        if (i != 128 && (anInt5316 & 0x1) != 1) throw new IllegalStateException();
-        if (i_765_ != 128 && (anInt5316 & 0x2) != 2) throw new IllegalStateException();
-        if (i_766_ != 128 && (anInt5316 & 0x4) != 4) throw new IllegalStateException();
+        if (i != 128 && (functionMask & 0x1) != 1) throw new IllegalStateException();
+        if (i_765_ != 128 && (functionMask & 0x2) != 2) throw new IllegalStateException();
+        if (i_766_ != 128 && (functionMask & 0x4) != 4) throw new IllegalStateException();
         synchronized (this) {
-            for (int i_767_ = 0; i_767_ < anInt5340; i_767_++) {
+            for (int i_767_ = 0; i_767_ < vertexCount; i_767_++) {
                 vertexX[i_767_] = vertexX[i_767_] * i >> 7;
                 vertexY[i_767_] = vertexY[i_767_] * i_765_ >> 7;
                 vertexZ[i_767_] = vertexZ[i_767_] * i_766_ >> 7;
@@ -2859,71 +2859,71 @@ final class JavaModel extends Model {
     }
 
     final int ua() {
-        return anInt5316;
+        return functionMask;
     }
 
     private final void method658(int i) {
-        if (aClass167_5367.aBoolean2195) {
+        if (aJavaThreadResource_5367.aBoolean2195) {
             short i_777_ = faceIndexX[i];
             short i_778_ = faceIndexY[i];
             short i_779_ = faceIndexZ[i];
             int i_780_ = 0;
             int i_781_ = 0;
             int i_782_ = 0;
-            if (anIntArray5362[i_777_] > aClass167_5367.anInt2197) i_780_ = 255;
-            else if (anIntArray5362[i_777_] > aClass167_5367.anInt2211) i_780_ = ((aClass167_5367.anInt2211 - anIntArray5362[i_777_]) * 255 / (aClass167_5367.anInt2211 - aClass167_5367.anInt2197));
-            if (anIntArray5362[i_778_] > aClass167_5367.anInt2197) i_781_ = 255;
-            else if (anIntArray5362[i_778_] > aClass167_5367.anInt2211) i_781_ = ((aClass167_5367.anInt2211 - anIntArray5362[i_778_]) * 255 / (aClass167_5367.anInt2211 - aClass167_5367.anInt2197));
-            if (anIntArray5362[i_779_] > aClass167_5367.anInt2197) i_782_ = 255;
-            else if (anIntArray5362[i_779_] > aClass167_5367.anInt2211) i_782_ = ((aClass167_5367.anInt2211 - anIntArray5362[i_779_]) * 255 / (aClass167_5367.anInt2211 - aClass167_5367.anInt2197));
-            if (faceAlphas == null) aClass109_5383.alpha = 0;
-            else aClass109_5383.alpha = faceAlphas[i] & 0xff;
-            if (aShortArray5388 == null || aShortArray5388[i] == -1) {
+            if (anIntArray5362[i_777_] > aJavaThreadResource_5367.anInt2197) i_780_ = 255;
+            else if (anIntArray5362[i_777_] > aJavaThreadResource_5367.anInt2211) i_780_ = ((aJavaThreadResource_5367.anInt2211 - anIntArray5362[i_777_]) * 255 / (aJavaThreadResource_5367.anInt2211 - aJavaThreadResource_5367.anInt2197));
+            if (anIntArray5362[i_778_] > aJavaThreadResource_5367.anInt2197) i_781_ = 255;
+            else if (anIntArray5362[i_778_] > aJavaThreadResource_5367.anInt2211) i_781_ = ((aJavaThreadResource_5367.anInt2211 - anIntArray5362[i_778_]) * 255 / (aJavaThreadResource_5367.anInt2211 - aJavaThreadResource_5367.anInt2197));
+            if (anIntArray5362[i_779_] > aJavaThreadResource_5367.anInt2197) i_782_ = 255;
+            else if (anIntArray5362[i_779_] > aJavaThreadResource_5367.anInt2211) i_782_ = ((aJavaThreadResource_5367.anInt2211 - anIntArray5362[i_779_]) * 255 / (aJavaThreadResource_5367.anInt2211 - aJavaThreadResource_5367.anInt2197));
+            if (faceAlphas == null) aRasterizer_5383.alpha = 0;
+            else aRasterizer_5383.alpha = faceAlphas[i] & 0xff;
+            if (faceTextures == null || faceTextures[i] == -1) {
                 if (anIntArray5366[i] == -1)
-                    aClass109_5383.method1027((float) renderVertexY[i_777_], (float) renderVertexY[i_778_], (float) renderVertexY[i_779_], (float) renderVertexX[i_777_], (float) renderVertexX[i_778_], (float) renderVertexX[i_779_], (float) renderVertexZ[i_777_], (float) renderVertexZ[i_778_], (float) renderVertexZ[i_779_], Class6.method206((Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]), (i_780_ << 24 | (aClass167_5367.anInt2192)), 255), Class6.method206((Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]), (i_781_ << 24 | (aClass167_5367.anInt2192)), 255), Class6.method206((Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]), (i_782_ << 24 | (aClass167_5367.anInt2192)), 255));
+                    aRasterizer_5383.method1027((float) renderVertexY[i_777_], (float) renderVertexY[i_778_], (float) renderVertexY[i_779_], (float) renderVertexX[i_777_], (float) renderVertexX[i_778_], (float) renderVertexX[i_779_], (float) renderVertexZ[i_777_], (float) renderVertexZ[i_778_], (float) renderVertexZ[i_779_], JavaBillboardFace.method206((Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]), (i_780_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]), (i_781_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]), (i_782_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255));
                 else
-                    aClass109_5383.method1027((float) renderVertexY[i_777_], (float) renderVertexY[i_778_], (float) renderVertexY[i_779_], (float) renderVertexX[i_777_], (float) renderVertexX[i_778_], (float) renderVertexX[i_779_], (float) renderVertexZ[i_777_], (float) renderVertexZ[i_778_], (float) renderVertexZ[i_779_], Class6.method206((Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]), (i_780_ << 24 | (aClass167_5367.anInt2192)), 255), Class6.method206((Class126.HSV_TO_RGB[anIntArray5337[i] & 0xffff]), (i_781_ << 24 | (aClass167_5367.anInt2192)), 255), Class6.method206((Class126.HSV_TO_RGB[anIntArray5366[i] & 0xffff]), (i_782_ << 24 | (aClass167_5367.anInt2192)), 255));
+                    aRasterizer_5383.method1027((float) renderVertexY[i_777_], (float) renderVertexY[i_778_], (float) renderVertexY[i_779_], (float) renderVertexX[i_777_], (float) renderVertexX[i_778_], (float) renderVertexX[i_779_], (float) renderVertexZ[i_777_], (float) renderVertexZ[i_778_], (float) renderVertexZ[i_779_], JavaBillboardFace.method206((Class126.HSV_TO_RGB[anIntArray5368[i] & 0xffff]), (i_780_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[anIntArray5337[i] & 0xffff]), (i_781_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[anIntArray5366[i] & 0xffff]), (i_782_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255));
             } else {
                 int i_783_ = -16777216;
                 if (faceAlphas != null) i_783_ = 255 - (faceAlphas[i] & 0xff) << 24;
                 if (anIntArray5366[i] == -1) {
                     int i_784_ = i_783_ | anIntArray5368[i] & 0xffffff;
-                    aClass109_5383.method1024((float) renderVertexY[i_777_], (float) renderVertexY[i_778_], (float) renderVertexY[i_779_], (float) renderVertexX[i_777_], (float) renderVertexX[i_778_], (float) renderVertexX[i_779_], (float) renderVertexZ[i_777_], (float) renderVertexZ[i_778_], (float) renderVertexZ[i_779_], aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_784_, i_784_, i_784_, (aClass167_5367.anInt2192), i_780_, i_781_, i_782_, aShortArray5388[i]);
+                    aRasterizer_5383.method1024((float) renderVertexY[i_777_], (float) renderVertexY[i_778_], (float) renderVertexY[i_779_], (float) renderVertexX[i_777_], (float) renderVertexX[i_778_], (float) renderVertexX[i_779_], (float) renderVertexZ[i_777_], (float) renderVertexZ[i_778_], (float) renderVertexZ[i_779_], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_784_, i_784_, i_784_, (aJavaThreadResource_5367.anInt2192), i_780_, i_781_, i_782_, faceTextures[i]);
                 } else
-                    aClass109_5383.method1024((float) renderVertexY[i_777_], (float) renderVertexY[i_778_], (float) renderVertexY[i_779_], (float) renderVertexX[i_777_], (float) renderVertexX[i_778_], (float) renderVertexX[i_779_], (float) renderVertexZ[i_777_], (float) renderVertexZ[i_778_], (float) renderVertexZ[i_779_], aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_783_ | anIntArray5368[i] & 0xffffff, i_783_ | anIntArray5337[i] & 0xffffff, i_783_ | anIntArray5366[i] & 0xffffff, aClass167_5367.anInt2192, i_780_, i_781_, i_782_, aShortArray5388[i]);
+                    aRasterizer_5383.method1024((float) renderVertexY[i_777_], (float) renderVertexY[i_778_], (float) renderVertexY[i_779_], (float) renderVertexX[i_777_], (float) renderVertexX[i_778_], (float) renderVertexX[i_779_], (float) renderVertexZ[i_777_], (float) renderVertexZ[i_778_], (float) renderVertexZ[i_779_], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_783_ | anIntArray5368[i] & 0xffffff, i_783_ | anIntArray5337[i] & 0xffffff, i_783_ | anIntArray5366[i] & 0xffffff, aJavaThreadResource_5367.anInt2192, i_780_, i_781_, i_782_, faceTextures[i]);
             }
         } else {
             short i_768_ = faceIndexX[i];
             short i_769_ = faceIndexY[i];
             short i_770_ = faceIndexZ[i];
-            int i_771_ = (renderVertexZ[i_768_] - aClass167_5367.anInt2210);
+            int i_771_ = (renderVertexZ[i_768_] - aJavaThreadResource_5367.anInt2210);
             if (i_771_ > 255) i_771_ = 255;
             else if (i_771_ < 0) i_771_ = 0;
-            int i_772_ = (renderVertexZ[i_769_] - aClass167_5367.anInt2210);
+            int i_772_ = (renderVertexZ[i_769_] - aJavaThreadResource_5367.anInt2210);
             if (i_772_ > 255) i_772_ = 255;
             else if (i_772_ < 0) i_772_ = 0;
-            int i_773_ = (renderVertexZ[i_770_] - aClass167_5367.anInt2210);
+            int i_773_ = (renderVertexZ[i_770_] - aJavaThreadResource_5367.anInt2210);
             if (i_773_ > 255) i_773_ = 255;
             else if (i_773_ < 0) i_773_ = 0;
             int i_774_ = i_771_ + i_772_ + i_773_;
             if (i_774_ != 765) {
                 if (i_774_ == 0) method635(i);
                 else {
-                    if (faceAlphas == null) aClass109_5383.alpha = 0;
-                    else aClass109_5383.alpha = faceAlphas[i] & 0xff;
-                    if (aShortArray5388 == null || aShortArray5388[i] == -1) {
+                    if (faceAlphas == null) aRasterizer_5383.alpha = 0;
+                    else aRasterizer_5383.alpha = faceAlphas[i] & 0xff;
+                    if (faceTextures == null || faceTextures[i] == -1) {
                         if (anIntArray5366[i] == -1)
-                            aClass109_5383.method1027((float) renderVertexY[i_768_], (float) renderVertexY[i_769_], (float) renderVertexY[i_770_], (float) renderVertexX[i_768_], (float) renderVertexX[i_769_], (float) renderVertexX[i_770_], (float) renderVertexZ[i_768_], (float) renderVertexZ[i_769_], (float) renderVertexZ[i_770_], Class6.method206((Class126.HSV_TO_RGB[(anIntArray5368[i] & 0xffff)]), (i_771_ << 24 | (aClass167_5367.anInt2192)), 255), Class6.method206((Class126.HSV_TO_RGB[(anIntArray5368[i] & 0xffff)]), (i_772_ << 24 | (aClass167_5367.anInt2192)), 255), Class6.method206((Class126.HSV_TO_RGB[(anIntArray5368[i] & 0xffff)]), (i_773_ << 24 | (aClass167_5367.anInt2192)), 255));
+                            aRasterizer_5383.method1027((float) renderVertexY[i_768_], (float) renderVertexY[i_769_], (float) renderVertexY[i_770_], (float) renderVertexX[i_768_], (float) renderVertexX[i_769_], (float) renderVertexX[i_770_], (float) renderVertexZ[i_768_], (float) renderVertexZ[i_769_], (float) renderVertexZ[i_770_], JavaBillboardFace.method206((Class126.HSV_TO_RGB[(anIntArray5368[i] & 0xffff)]), (i_771_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(anIntArray5368[i] & 0xffff)]), (i_772_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(anIntArray5368[i] & 0xffff)]), (i_773_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255));
                         else
-                            aClass109_5383.method1027((float) renderVertexY[i_768_], (float) renderVertexY[i_769_], (float) renderVertexY[i_770_], (float) renderVertexX[i_768_], (float) renderVertexX[i_769_], (float) renderVertexX[i_770_], (float) renderVertexZ[i_768_], (float) renderVertexZ[i_769_], (float) renderVertexZ[i_770_], Class6.method206((Class126.HSV_TO_RGB[(anIntArray5368[i] & 0xffff)]), (i_771_ << 24 | (aClass167_5367.anInt2192)), 255), Class6.method206((Class126.HSV_TO_RGB[(anIntArray5337[i] & 0xffff)]), (i_772_ << 24 | (aClass167_5367.anInt2192)), 255), Class6.method206((Class126.HSV_TO_RGB[(anIntArray5366[i] & 0xffff)]), (i_773_ << 24 | (aClass167_5367.anInt2192)), 255));
+                            aRasterizer_5383.method1027((float) renderVertexY[i_768_], (float) renderVertexY[i_769_], (float) renderVertexY[i_770_], (float) renderVertexX[i_768_], (float) renderVertexX[i_769_], (float) renderVertexX[i_770_], (float) renderVertexZ[i_768_], (float) renderVertexZ[i_769_], (float) renderVertexZ[i_770_], JavaBillboardFace.method206((Class126.HSV_TO_RGB[(anIntArray5368[i] & 0xffff)]), (i_771_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(anIntArray5337[i] & 0xffff)]), (i_772_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(anIntArray5366[i] & 0xffff)]), (i_773_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255));
                     } else {
                         int i_775_ = -16777216;
                         if (faceAlphas != null) i_775_ = 255 - (faceAlphas[i] & 0xff) << 24;
                         if (anIntArray5366[i] == -1) {
                             int i_776_ = i_775_ | anIntArray5368[i] & 0xffffff;
-                            aClass109_5383.method1024((float) renderVertexY[i_768_], (float) renderVertexY[i_769_], (float) renderVertexY[i_770_], (float) renderVertexX[i_768_], (float) renderVertexX[i_769_], (float) renderVertexX[i_770_], (float) renderVertexZ[i_768_], (float) renderVertexZ[i_769_], (float) renderVertexZ[i_770_], aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_776_, i_776_, i_776_, aClass167_5367.anInt2192, i_771_, i_772_, i_773_, aShortArray5388[i]);
+                            aRasterizer_5383.method1024((float) renderVertexY[i_768_], (float) renderVertexY[i_769_], (float) renderVertexY[i_770_], (float) renderVertexX[i_768_], (float) renderVertexX[i_769_], (float) renderVertexX[i_770_], (float) renderVertexZ[i_768_], (float) renderVertexZ[i_769_], (float) renderVertexZ[i_770_], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_776_, i_776_, i_776_, aJavaThreadResource_5367.anInt2192, i_771_, i_772_, i_773_, faceTextures[i]);
                         } else
-                            aClass109_5383.method1024((float) renderVertexY[i_768_], (float) renderVertexY[i_769_], (float) renderVertexY[i_770_], (float) renderVertexX[i_768_], (float) renderVertexX[i_769_], (float) renderVertexX[i_770_], (float) renderVertexZ[i_768_], (float) renderVertexZ[i_769_], (float) renderVertexZ[i_770_], aFloatArrayArray5314[i][0], aFloatArrayArray5314[i][1], aFloatArrayArray5314[i][2], aFloatArrayArray5345[i][0], aFloatArrayArray5345[i][1], aFloatArrayArray5345[i][2], i_775_ | anIntArray5368[i] & 0xffffff, i_775_ | anIntArray5337[i] & 0xffffff, i_775_ | anIntArray5366[i] & 0xffffff, aClass167_5367.anInt2192, i_771_, i_772_, i_773_, aShortArray5388[i]);
+                            aRasterizer_5383.method1024((float) renderVertexY[i_768_], (float) renderVertexY[i_769_], (float) renderVertexY[i_770_], (float) renderVertexX[i_768_], (float) renderVertexX[i_769_], (float) renderVertexX[i_770_], (float) renderVertexZ[i_768_], (float) renderVertexZ[i_769_], (float) renderVertexZ[i_770_], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_775_ | anIntArray5368[i] & 0xffffff, i_775_ | anIntArray5337[i] & 0xffffff, i_775_ | anIntArray5366[i] & 0xffffff, aJavaThreadResource_5367.anInt2192, i_771_, i_772_, i_773_, faceTextures[i]);
                     }
                 }
             }
@@ -2935,27 +2935,27 @@ final class JavaModel extends Model {
         aBoolean5369 = false;
         faceCount = 0;
         aBoolean5372 = false;
-        aBoolean5391 = false;
-        vertexCount = 0;
-        aBoolean5382 = false;
-        aHa_Sub1_5353 = var_ha_Sub1;
+        movingTextures = false;
+        maxVertex = 0;
+        transparent = false;
+        toolkit = var_ha_Sub1;
     }
 
-    JavaModel(ha_Sub1 var_ha_Sub1, Mesh mesh, int i, int i_785_, int i_786_, int i_787_) {
+    JavaModel(ha_Sub1 var_ha_Sub1, Mesh mesh, int arg3, int i_785_, int i_786_, int featureMask) {
         anInt5354 = 0;
         aBoolean5369 = false;
         faceCount = 0;
         aBoolean5372 = false;
-        aBoolean5391 = false;
-        vertexCount = 0;
-        aBoolean5382 = false;
-        aHa_Sub1_5353 = var_ha_Sub1;
-        anInt5316 = i;
+        movingTextures = false;
+        maxVertex = 0;
+        transparent = false;
+        toolkit = var_ha_Sub1;
+        functionMask = arg3;
         anInt5344 = i_785_;
         anInt5349 = i_786_;
-        TextureSource var_d = aHa_Sub1_5353.aD4579;
-        anInt5340 = mesh.vertexCount;
-        vertexCount = mesh.maxVertex;
+        TextureSource var_d = toolkit.aD4579;
+        vertexCount = mesh.vertexCount;
+        maxVertex = mesh.maxVertex;
         vertexX = mesh.vertexX;
         vertexY = mesh.vertexY;
         vertexZ = mesh.vertexZ;
@@ -2963,261 +2963,261 @@ final class JavaModel extends Model {
         faceIndexX = mesh.faceA;
         faceIndexY = mesh.faceB;
         faceIndexZ = mesh.faceC;
-        aByteArray5358 = mesh.facePriority;
-        aShortArray5311 = mesh.faceColour;
+        facePriority = mesh.facePriority;
+        faceColour = mesh.faceColour;
         faceAlphas = mesh.faceAlpha;
         aShortArray5370 = mesh.aShortArray1856;
-        renderPoints = mesh.shadingType;
-        aModelParticleEmitterArray5322 = mesh.emitters;
-        aModelParticleEffectorArray5335 = mesh.effectors;
-        aShortArray5333 = mesh.originalModels;
-        int[] is = new int[faceCount];
-        for (int i_788_ = 0; i_788_ < faceCount; i_788_++)
-            is[i_788_] = i_788_;
-        long[] ls = new long[faceCount];
-        boolean bool = (anInt5316 & 0x100) != 0;
-        for (int i_789_ = 0; i_789_ < faceCount; i_789_++) {
-            int i_790_ = is[i_789_];
-            Class12 class12 = null;
-            int i_791_ = 0;
-            int i_792_ = 0;
-            int i_793_ = 0;
-            int i_794_ = 0;
+        shadingType = mesh.shadingType;
+        emitters = mesh.emitters;
+        effectors = mesh.effectors;
+        originalModels = mesh.originalModels;
+        int[] faceIndex = new int[faceCount];
+        for (int i = 0; i < faceCount; i++)
+            faceIndex[i] = i;
+        long[] faceIds = new long[faceCount];
+        boolean transparentMesh = (functionMask & 0x100) != 0;
+        for (int i = 0; i < faceCount; i++) {
+            int index = faceIndex[i];
+            TextureMetrics textureMetrics = null;
+            int idHi = 0;
+            int idLo = 0;
+            int effectType = 0;
+            int effectParam1 = 0;
             if (mesh.billboards != null) {
-                boolean bool_795_ = false;
-                for (int i_796_ = 0; i_796_ < mesh.billboards.length; i_796_++) {
-                    MeshBillboard meshBillboard = mesh.billboards[i_796_];
-                    if (i_790_ == meshBillboard.anInt2155) {
-                        Class189 class189 = Class73.method742(104, (meshBillboard.anInt2153));
-                        if (class189.aBoolean2531) bool_795_ = true;
-                        if (class189.anInt2525 != -1) {
-                            Class12 class12_797_ = var_d.method3((class189.anInt2525), -6662);
-                            if (class12_797_.anInt200 == 2) aBoolean5382 = true;
+                boolean hideFace = false;
+                for (int j = 0; j < mesh.billboards.length; j++) {
+                    MeshBillboard billboard = mesh.billboards[j];
+                    if (index == billboard.face) {
+                        BillboardType type = Class73.billboardTypeList(104, (billboard.anInt2153));
+                        if (type.hideFace) hideFace = true;
+                        if (type.texture != -1) {
+                            TextureMetrics textureMetrics_797_ = var_d.getMetrics((type.texture), -6662);
+                            if (textureMetrics_797_.alphaBlendMode == 2) transparent = true;
                         }
                     }
                 }
-                if (bool_795_) ls[i_789_] = 9223372036854775807L;
+                if (hideFace) faceIds[i] = 9223372036854775807L;
             }
-            int i_798_ = -1;
+            int texture = -1;
             if (mesh.faceTexture != null) {
-                i_798_ = mesh.faceTexture[i_790_];
-                if (i_798_ != -1) {
-                    class12 = var_d.method3(i_798_ & 0xffff, -6662);
-                    if ((i_787_ & 0x40) == 0 || !class12.aBoolean209) {
-                        i_793_ = class12.aByte213;
-                        i_794_ = class12.aByte202;
-                    } else i_798_ = -1;
+                texture = mesh.faceTexture[index];
+                if (texture != -1) {
+                    textureMetrics = var_d.getMetrics(texture & 0xffff, -6662);
+                    if ((featureMask & 0x40) == 0 || !textureMetrics.disableable) {
+                        effectType = textureMetrics.effectType;
+                        effectParam1 = textureMetrics.effectParam1;
+                    } else texture = -1;
                 }
             }
-            boolean bool_799_ = (faceAlphas != null && faceAlphas[i_790_] != 0 || class12 != null && class12.anInt200 == 2);
-            if ((bool || bool_799_) && aByteArray5358 != null) i_791_ += aByteArray5358[i_790_] << 17;
-            if (bool_799_) i_791_ += 65536;
-            i_791_ += (i_793_ & 0xff) << 8;
-            i_791_ += i_794_ & 0xff;
-            i_792_ += (i_798_ & 0xffff) << 16;
-            i_792_ += i_789_ & 0xffff;
-            ls[i_789_] = ((long) i_791_ << 32) + (long) i_792_;
-            aBoolean5382 |= bool_799_;
+            boolean transparentFace = (faceAlphas != null && faceAlphas[index] != 0 || textureMetrics != null && textureMetrics.alphaBlendMode == 2);
+            if ((transparentMesh || transparentFace) && facePriority != null) idHi += facePriority[index] << 17;
+            if (transparentFace) idHi += 65536;
+            idHi += (effectType & 0xff) << 8;
+            idHi += effectParam1 & 0xff;
+            idLo += (texture & 0xffff) << 16;
+            idLo += i & 0xffff;
+            faceIds[i] = ((long) idHi << 32) + (long) idLo;
+            transparent |= transparentFace;
         }
-        Class348_Sub16_Sub2.method2832(is, ls, 0);
+        Class348_Sub16_Sub2.quickSort(faceIndex, faceIds, 0);
         if (mesh.billboards != null) {
-            anInt5389 = mesh.billboards.length;
-            aClass6Array5361 = new Class6[anInt5389];
-            aClass350Array5363 = new Class350[anInt5389];
-            for (int i_800_ = 0; i_800_ < mesh.billboards.length; i_800_++) {
-                MeshBillboard meshBillboard = mesh.billboards[i_800_];
-                Class189 class189 = Class73.method742(104, meshBillboard.anInt2153);
-                int i_801_ = ((Class126.HSV_TO_RGB[(mesh.faceColour[meshBillboard.anInt2155]) & 0xffff]) & 0xffffff);
-                i_801_ = (i_801_ | 255 - (mesh.faceAlpha != null ? (mesh.faceAlpha[meshBillboard.anInt2155]) & 0xff : 0) << 24);
-                aClass6Array5361[i_800_] = new Class6(meshBillboard.anInt2155, (mesh.faceA[meshBillboard.anInt2155]), (mesh.faceB[meshBillboard.anInt2155]), (mesh.faceC[meshBillboard.anInt2155]), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, meshBillboard.anInt2158);
-                aClass350Array5363[i_800_] = new Class350(i_801_);
+            billboardCount = mesh.billboards.length;
+            billboardFaces = new JavaBillboardFace[billboardCount];
+            billboardAttributes = new JavaBillboardAttributes[billboardCount];
+            for (int index = 0; index < mesh.billboards.length; index++) {
+                MeshBillboard billboard = mesh.billboards[index];
+                BillboardType type = Class73.billboardTypeList(104, billboard.anInt2153);
+                int colour = ((Class126.HSV_TO_RGB[(mesh.faceColour[billboard.face]) & 0xffff]) & 0xffffff);
+                colour = (colour | 255 - (mesh.faceAlpha != null ? (mesh.faceAlpha[billboard.face]) & 0xff : 0) << 24);
+                billboardFaces[index] = new JavaBillboardFace(billboard.face, (mesh.faceA[billboard.face]), (mesh.faceB[billboard.face]), (mesh.faceC[billboard.face]), type.anInt2526, type.anInt2530, type.texture, type.anInt2533, type.anInt2534, type.hideFace, billboard.anInt2158);
+                billboardAttributes[index] = new JavaBillboardAttributes(colour);
             }
         }
-        aFloatArrayArray5314 = new float[faceCount][];
-        aFloatArrayArray5345 = new float[faceCount][];
-        Class358 class358 = Class59_Sub2_Sub1.method565(255, faceCount, mesh, is);
-        Class167 class167 = aHa_Sub1_5353.method3724(Thread.currentThread());
-        float[] fs = class167.aFloatArray2226;
-        boolean bool_802_ = false;
-        for (int i_803_ = 0; i_803_ < faceCount; i_803_++) {
-            int i_804_ = is[i_803_];
-            int i_805_;
-            if (mesh.faceTexSpace == null) i_805_ = -1;
-            else i_805_ = mesh.faceTexSpace[i_804_];
-            int i_806_ = (mesh.faceTexture == null ? -1 : mesh.faceTexture[i_804_]);
-            if (i_806_ != -1 && (i_787_ & 0x40) != 0) {
-                Class12 class12 = var_d.method3(i_806_ & 0xffff, -6662);
-                if (class12.aBoolean209) i_806_ = -1;
+        texCoordU = new float[faceCount][];
+        texCoordV = new float[faceCount][];
+        TextureUniverse textureUniverse = Class59_Sub2_Sub1.method565(255, faceCount, mesh, faceIndex);
+        JavaThreadResource javaThreadResource = toolkit.method3724(Thread.currentThread());
+        float[] fs = javaThreadResource.aFloatArray2226;
+        boolean hasTextureCoords = false;
+        for (int i = 0; i < faceCount; i++) {
+            int index = faceIndex[i];
+            int texSpace;
+            if (mesh.faceTexSpace == null) texSpace = -1;
+            else texSpace = mesh.faceTexSpace[index];
+            int tex = (mesh.faceTexture == null ? -1 : mesh.faceTexture[index]);
+            if (tex != -1 && (featureMask & 0x40) != 0) {
+                TextureMetrics textureMetrics = var_d.getMetrics(tex & 0xffff, -6662);
+                if (textureMetrics.disableable) tex = -1;
             }
-            if (i_806_ != -1) {
-                bool_802_ = true;
-                float[] fs_807_ = aFloatArrayArray5314[i_804_] = new float[3];
-                float[] fs_808_ = aFloatArrayArray5345[i_804_] = new float[3];
+            if (tex != -1) {
+                hasTextureCoords = true;
+                float[] us = texCoordU[index] = new float[3];
+                float[] uv = texCoordV[index] = new float[3];
                 boolean bool_809_ = false;
-                if (i_805_ == -1) {
-                    fs_807_[0] = 0.0F;
-                    fs_808_[0] = 1.0F;
-                    fs_807_[1] = 1.0F;
-                    fs_808_[1] = 1.0F;
-                    fs_807_[2] = 0.0F;
-                    fs_808_[2] = 0.0F;
+                if (texSpace == -1) {
+                    us[0] = 0.0F;
+                    uv[0] = 1.0F;
+                    us[1] = 1.0F;
+                    uv[1] = 1.0F;
+                    us[2] = 0.0F;
+                    uv[2] = 0.0F;
                 } else {
-                    i_805_ &= 0xff;
-                    byte i_810_ = mesh.texMappingType[i_805_];
-                    if (i_810_ == 0) {
-                        short i_811_ = faceIndexX[i_804_];
-                        short i_812_ = faceIndexY[i_804_];
-                        short i_813_ = faceIndexZ[i_804_];
-                        short i_814_ = mesh.texSpaceDefA[i_805_];
-                        short i_815_ = mesh.texSpaceDefB[i_805_];
-                        short i_816_ = mesh.texSpaceDefC[i_805_];
-                        float f = (float) vertexX[i_814_];
-                        float f_817_ = (float) vertexY[i_814_];
-                        float f_818_ = (float) vertexZ[i_814_];
-                        float f_819_ = (float) vertexX[i_815_] - f;
-                        float f_820_ = (float) vertexY[i_815_] - f_817_;
-                        float f_821_ = (float) vertexZ[i_815_] - f_818_;
-                        float f_822_ = (float) vertexX[i_816_] - f;
-                        float f_823_ = (float) vertexY[i_816_] - f_817_;
-                        float f_824_ = (float) vertexZ[i_816_] - f_818_;
-                        float f_825_ = (float) vertexX[i_811_] - f;
-                        float f_826_ = (float) vertexY[i_811_] - f_817_;
-                        float f_827_ = (float) vertexZ[i_811_] - f_818_;
-                        float f_828_ = (float) vertexX[i_812_] - f;
-                        float f_829_ = (float) vertexY[i_812_] - f_817_;
-                        float f_830_ = (float) vertexZ[i_812_] - f_818_;
-                        float f_831_ = (float) vertexX[i_813_] - f;
-                        float f_832_ = (float) vertexY[i_813_] - f_817_;
-                        float f_833_ = (float) vertexZ[i_813_] - f_818_;
-                        float f_834_ = f_820_ * f_824_ - f_821_ * f_823_;
-                        float f_835_ = f_821_ * f_822_ - f_819_ * f_824_;
-                        float f_836_ = f_819_ * f_823_ - f_820_ * f_822_;
-                        float f_837_ = f_823_ * f_836_ - f_824_ * f_835_;
-                        float f_838_ = f_824_ * f_834_ - f_822_ * f_836_;
-                        float f_839_ = f_822_ * f_835_ - f_823_ * f_834_;
-                        float f_840_ = 1.0F / (f_837_ * f_819_ + f_838_ * f_820_ + f_839_ * f_821_);
-                        fs_807_[0] = (f_837_ * f_825_ + f_838_ * f_826_ + f_839_ * f_827_) * f_840_;
-                        fs_807_[1] = (f_837_ * f_828_ + f_838_ * f_829_ + f_839_ * f_830_) * f_840_;
-                        fs_807_[2] = (f_837_ * f_831_ + f_838_ * f_832_ + f_839_ * f_833_) * f_840_;
-                        f_837_ = f_820_ * f_836_ - f_821_ * f_835_;
-                        f_838_ = f_821_ * f_834_ - f_819_ * f_836_;
-                        f_839_ = f_819_ * f_835_ - f_820_ * f_834_;
-                        f_840_ = 1.0F / (f_837_ * f_822_ + f_838_ * f_823_ + f_839_ * f_824_);
-                        fs_808_[0] = (f_837_ * f_825_ + f_838_ * f_826_ + f_839_ * f_827_) * f_840_;
-                        fs_808_[1] = (f_837_ * f_828_ + f_838_ * f_829_ + f_839_ * f_830_) * f_840_;
-                        fs_808_[2] = (f_837_ * f_831_ + f_838_ * f_832_ + f_839_ * f_833_) * f_840_;
+                    texSpace &= 0xff;
+                    byte mappingType = mesh.texMappingType[texSpace];
+                    if (mappingType == 0) {
+                        short faceA = faceIndexX[index];
+                        short faceB = faceIndexY[index];
+                        short faceC = faceIndexZ[index];
+                        short texSpaceDefA = mesh.texSpaceDefA[texSpace];
+                        short texSpaceDefB = mesh.texSpaceDefB[texSpace];
+                        short texSpaceDefC = mesh.texSpaceDefC[texSpace];
+                        float vertexX = (float) this.vertexX[texSpaceDefA];
+                        float vertexY = (float) this.vertexY[texSpaceDefA];
+                        float vertexZ = (float) this.vertexZ[texSpaceDefA];
+                        float relativeXSB = (float) this.vertexX[texSpaceDefB] - vertexX;
+                        float relativeYSB = (float) this.vertexY[texSpaceDefB] - vertexY;
+                        float relativeZSB = (float) this.vertexZ[texSpaceDefB] - vertexZ;
+                        float relativeXSC = (float) this.vertexX[texSpaceDefC] - vertexX;
+                        float relativeYSC = (float) this.vertexY[texSpaceDefC] - vertexY;
+                        float relativeZSC = (float) this.vertexZ[texSpaceDefC] - vertexZ;
+                        float relativeXFA = (float) this.vertexX[faceA] - vertexX;
+                        float relativeYFA = (float) this.vertexY[faceA] - vertexY;
+                        float relativeZFA = (float) this.vertexZ[faceA] - vertexZ;
+                        float relativeXFB = (float) this.vertexX[faceB] - vertexX;
+                        float relativeYFB = (float) this.vertexY[faceB] - vertexY;
+                        float relativeZFB = (float) this.vertexZ[faceB] - vertexZ;
+                        float relativeXFC = (float) this.vertexX[faceC] - vertexX;
+                        float relativeYFC = (float) this.vertexY[faceC] - vertexY;
+                        float relativeZFC = (float) this.vertexZ[faceC] - vertexZ;
+                        float f_834_ = relativeYSB * relativeZSC - relativeZSB * relativeYSC;
+                        float f_835_ = relativeZSB * relativeXSC - relativeXSB * relativeZSC;
+                        float f_836_ = relativeXSB * relativeYSC - relativeYSB * relativeXSC;
+                        float f_837_ = relativeYSC * f_836_ - relativeZSC * f_835_;
+                        float f_838_ = relativeZSC * f_834_ - relativeXSC * f_836_;
+                        float f_839_ = relativeXSC * f_835_ - relativeYSC * f_834_;
+                        float scale = 1.0F / (f_837_ * relativeXSB + f_838_ * relativeYSB + f_839_ * relativeZSB);
+                        us[0] = (f_837_ * relativeXFA + f_838_ * relativeYFA + f_839_ * relativeZFA) * scale;
+                        us[1] = (f_837_ * relativeXFB + f_838_ * relativeYFB + f_839_ * relativeZFB) * scale;
+                        us[2] = (f_837_ * relativeXFC + f_838_ * relativeYFC + f_839_ * relativeZFC) * scale;
+                        f_837_ = relativeYSB * f_836_ - relativeZSB * f_835_;
+                        f_838_ = relativeZSB * f_834_ - relativeXSB * f_836_;
+                        f_839_ = relativeXSB * f_835_ - relativeYSB * f_834_;
+                        scale = 1.0F / (f_837_ * relativeXSC + f_838_ * relativeYSC + f_839_ * relativeZSC);
+                        uv[0] = (f_837_ * relativeXFA + f_838_ * relativeYFA + f_839_ * relativeZFA) * scale;
+                        uv[1] = (f_837_ * relativeXFB + f_838_ * relativeYFB + f_839_ * relativeZFB) * scale;
+                        uv[2] = (f_837_ * relativeXFC + f_838_ * relativeYFC + f_839_ * relativeZFC) * scale;
                     } else {
-                        short i_841_ = faceIndexX[i_804_];
-                        short i_842_ = faceIndexY[i_804_];
-                        short i_843_ = faceIndexZ[i_804_];
-                        int i_844_ = class358.anIntArray4416[i_805_];
-                        int i_845_ = class358.anIntArray4415[i_805_];
-                        int i_846_ = class358.anIntArray4414[i_805_];
-                        float[] fs_847_ = (class358.aFloatArrayArray4412[i_805_]);
-                        byte i_848_ = mesh.rexDirection[i_805_];
-                        float f = ((float) (mesh.texOffsetX[i_805_]) / 256.0F);
-                        if (i_810_ == 1) {
-                            float f_849_ = ((float) (mesh.texSpaceScaleZ[i_805_]) / 1024.0F);
-                            Class246.method1885(i_846_, vertexZ[i_841_], i_848_, 8, vertexX[i_841_], fs, vertexY[i_841_], f, i_845_, i_844_, f_849_, fs_847_);
-                            fs_807_[0] = fs[0];
-                            fs_808_[0] = fs[1];
-                            Class246.method1885(i_846_, vertexZ[i_842_], i_848_, 8, vertexX[i_842_], fs, vertexY[i_842_], f, i_845_, i_844_, f_849_, fs_847_);
-                            fs_807_[1] = fs[0];
-                            fs_808_[1] = fs[1];
-                            Class246.method1885(i_846_, vertexZ[i_843_], i_848_, 8, vertexX[i_843_], fs, vertexY[i_843_], f, i_845_, i_844_, f_849_, fs_847_);
-                            fs_807_[2] = fs[0];
-                            fs_808_[2] = fs[1];
-                            float f_850_ = f_849_ / 2.0F;
-                            if ((i_848_ & 0x1) == 0) {
-                                if (fs_807_[1] - fs_807_[0] > f_850_) fs_807_[1] -= f_849_;
-                                else if (fs_807_[0] - fs_807_[1] > f_850_) fs_807_[1] += f_849_;
-                                if (fs_807_[2] - fs_807_[0] > f_850_) fs_807_[2] -= f_849_;
-                                else if (fs_807_[0] - fs_807_[2] > f_850_) fs_807_[2] += f_849_;
+                        short faceA = faceIndexX[index];
+                        short faceB = faceIndexY[index];
+                        short faceC = faceIndexZ[index];
+                        int originX = textureUniverse.originX[texSpace];
+                        int originY = textureUniverse.originY[texSpace];
+                        int originZ = textureUniverse.originZ[texSpace];
+                        float[] matrix = (textureUniverse.matrices[texSpace]);
+                        byte direction = mesh.rexDirection[texSpace];
+                        float offsetX = ((float) (mesh.texOffsetX[texSpace]) / 256.0F);
+                        if (mappingType == 1) {
+                            float scaleZ = ((float) (mesh.texSpaceScaleZ[texSpace]) / 1024.0F);
+                            Class246.cylinderMap(originZ, vertexZ[faceA], direction, 8, vertexX[faceA], fs, vertexY[faceA], offsetX, originY, originX, scaleZ, matrix);
+                            us[0] = fs[0];
+                            uv[0] = fs[1];
+                            Class246.cylinderMap(originZ, vertexZ[faceB], direction, 8, vertexX[faceB], fs, vertexY[faceB], offsetX, originY, originX, scaleZ, matrix);
+                            us[1] = fs[0];
+                            uv[1] = fs[1];
+                            Class246.cylinderMap(originZ, vertexZ[faceC], direction, 8, vertexX[faceC], fs, vertexY[faceC], offsetX, originY, originX, scaleZ, matrix);
+                            us[2] = fs[0];
+                            uv[2] = fs[1];
+                            float scale = scaleZ / 2.0F;
+                            if ((direction & 0x1) == 0) {
+                                if (us[1] - us[0] > scale) us[1] -= scaleZ;
+                                else if (us[0] - us[1] > scale) us[1] += scaleZ;
+                                if (us[2] - us[0] > scale) us[2] -= scaleZ;
+                                else if (us[0] - us[2] > scale) us[2] += scaleZ;
                             } else {
-                                if (fs_808_[1] - fs_808_[0] > f_850_) fs_808_[1] -= f_849_;
-                                else if (fs_808_[0] - fs_808_[1] > f_850_) fs_808_[1] += f_849_;
-                                if (fs_808_[2] - fs_808_[0] > f_850_) fs_808_[2] -= f_849_;
-                                else if (fs_808_[0] - fs_808_[2] > f_850_) fs_808_[2] += f_849_;
+                                if (uv[1] - uv[0] > scale) uv[1] -= scaleZ;
+                                else if (uv[0] - uv[1] > scale) uv[1] += scaleZ;
+                                if (uv[2] - uv[0] > scale) uv[2] -= scaleZ;
+                                else if (uv[0] - uv[2] > scale) uv[2] += scaleZ;
                             }
-                        } else if (i_810_ == 2) {
-                            float f_851_ = ((float) (mesh.texOffsetY[i_805_]) / 256.0F);
-                            float f_852_ = ((float) (mesh.texOffsetZ[i_805_]) / 256.0F);
-                            int i_853_ = (vertexX[i_842_] - vertexX[i_841_]);
-                            int i_854_ = (vertexY[i_842_] - vertexY[i_841_]);
-                            int i_855_ = (vertexZ[i_842_] - vertexZ[i_841_]);
-                            int i_856_ = (vertexX[i_843_] - vertexX[i_841_]);
-                            int i_857_ = (vertexY[i_843_] - vertexY[i_841_]);
-                            int i_858_ = (vertexZ[i_843_] - vertexZ[i_841_]);
-                            int i_859_ = i_854_ * i_858_ - i_857_ * i_855_;
-                            int i_860_ = i_855_ * i_856_ - i_858_ * i_853_;
-                            int i_861_ = i_853_ * i_857_ - i_856_ * i_854_;
-                            float f_862_ = 64.0F / (float) (mesh.texSpaceScaleX[i_805_]);
-                            float f_863_ = 64.0F / (float) (mesh.texSpaceScaleY[i_805_]);
-                            float f_864_ = 64.0F / (float) (mesh.texSpaceScaleZ[i_805_]);
-                            float f_865_ = (((float) i_859_ * fs_847_[0] + (float) i_860_ * fs_847_[1] + (float) i_861_ * fs_847_[2]) / f_862_);
-                            float f_866_ = (((float) i_859_ * fs_847_[3] + (float) i_860_ * fs_847_[4] + (float) i_861_ * fs_847_[5]) / f_863_);
-                            float f_867_ = (((float) i_859_ * fs_847_[6] + (float) i_860_ * fs_847_[7] + (float) i_861_ * fs_847_[8]) / f_864_);
-                            int i_868_ = Class331.method2635(f_866_, false, f_867_, f_865_);
-                            Class262.method1991(f_852_, f, fs_847_, vertexZ[i_841_], i_846_, false, i_848_, i_844_, vertexX[i_841_], vertexY[i_841_], f_851_, fs, i_845_, i_868_);
-                            fs_807_[0] = fs[0];
-                            fs_808_[0] = fs[1];
-                            Class262.method1991(f_852_, f, fs_847_, vertexZ[i_842_], i_846_, false, i_848_, i_844_, vertexX[i_842_], vertexY[i_842_], f_851_, fs, i_845_, i_868_);
-                            fs_807_[1] = fs[0];
-                            fs_808_[1] = fs[1];
-                            Class262.method1991(f_852_, f, fs_847_, vertexZ[i_843_], i_846_, false, i_848_, i_844_, vertexX[i_843_], vertexY[i_843_], f_851_, fs, i_845_, i_868_);
-                            fs_807_[2] = fs[0];
-                            fs_808_[2] = fs[1];
-                        } else if (i_810_ == 3) {
-                            Class181.method1367(i_846_, i_848_, f, vertexX[i_841_], fs, vertexZ[i_841_], i_844_, vertexY[i_841_], i_845_, -4, fs_847_);
-                            fs_807_[0] = fs[0];
-                            fs_808_[0] = fs[1];
-                            Class181.method1367(i_846_, i_848_, f, vertexX[i_842_], fs, vertexZ[i_842_], i_844_, vertexY[i_842_], i_845_, -4, fs_847_);
-                            fs_807_[1] = fs[0];
-                            fs_808_[1] = fs[1];
-                            Class181.method1367(i_846_, i_848_, f, vertexX[i_843_], fs, vertexZ[i_843_], i_844_, vertexY[i_843_], i_845_, -4, fs_847_);
-                            fs_807_[2] = fs[0];
-                            fs_808_[2] = fs[1];
-                            if ((i_848_ & 0x1) == 0) {
-                                if (fs_807_[1] - fs_807_[0] > 0.5F) fs_807_[1]--;
-                                else if (fs_807_[0] - fs_807_[1] > 0.5F) fs_807_[1]++;
-                                if (fs_807_[2] - fs_807_[0] > 0.5F) fs_807_[2]--;
-                                else if (fs_807_[0] - fs_807_[2] > 0.5F) fs_807_[2]++;
+                        } else if (mappingType == 2) {
+                            float offsetY = ((float) (mesh.texOffsetY[texSpace]) / 256.0F);
+                            float offsetZ = ((float) (mesh.texOffsetZ[texSpace]) / 256.0F);
+                            int deltaX1 = (vertexX[faceB] - vertexX[faceA]);
+                            int deltaY1 = (vertexY[faceB] - vertexY[faceA]);
+                            int deltaZ1 = (vertexZ[faceB] - vertexZ[faceA]);
+                            int deltaX2 = (vertexX[faceC] - vertexX[faceA]);
+                            int deltaY2 = (vertexY[faceC] - vertexY[faceA]);
+                            int deltaZ2 = (vertexZ[faceC] - vertexZ[faceA]);
+                            int relativeX = deltaY1 * deltaZ2 - deltaY2 * deltaZ1;
+                            int relativeY = deltaZ1 * deltaX2 - deltaZ2 * deltaX1;
+                            int relativeZ = deltaX1 * deltaY2 - deltaX2 * deltaY1;
+                            float scaleX = 64.0F / (float) (mesh.texSpaceScaleX[texSpace]);
+                            float scaleY = 64.0F / (float) (mesh.texSpaceScaleY[texSpace]);
+                            float scaleZ = 64.0F / (float) (mesh.texSpaceScaleZ[texSpace]);
+                            float x = (((float) relativeX * matrix[0] + (float) relativeY * matrix[1] + (float) relativeZ * matrix[2]) / scaleX);
+                            float y = (((float) relativeX * matrix[3] + (float) relativeY * matrix[4] + (float) relativeZ * matrix[5]) / scaleY);
+                            float z = (((float) relativeX * matrix[6] + (float) relativeY * matrix[7] + (float) relativeZ * matrix[8]) / scaleZ);
+                            int cubeFace = Class331.cubeFace(y, false, z, x);
+                            Class262.cubeMap(offsetZ, offsetX, matrix, vertexZ[faceA], originZ, false, direction, originX, vertexX[faceA], vertexY[faceA], offsetY, fs, originY, cubeFace);
+                            us[0] = fs[0];
+                            uv[0] = fs[1];
+                            Class262.cubeMap(offsetZ, offsetX, matrix, vertexZ[faceB], originZ, false, direction, originX, vertexX[faceB], vertexY[faceB], offsetY, fs, originY, cubeFace);
+                            us[1] = fs[0];
+                            uv[1] = fs[1];
+                            Class262.cubeMap(offsetZ, offsetX, matrix, vertexZ[faceC], originZ, false, direction, originX, vertexX[faceC], vertexY[faceC], offsetY, fs, originY, cubeFace);
+                            us[2] = fs[0];
+                            uv[2] = fs[1];
+                        } else if (mappingType == 3) {
+                            Class181.sphereMap(originZ, direction, offsetX, vertexX[faceA], fs, vertexZ[faceA], originX, vertexY[faceA], originY, -4, matrix);
+                            us[0] = fs[0];
+                            uv[0] = fs[1];
+                            Class181.sphereMap(originZ, direction, offsetX, vertexX[faceB], fs, vertexZ[faceB], originX, vertexY[faceB], originY, -4, matrix);
+                            us[1] = fs[0];
+                            uv[1] = fs[1];
+                            Class181.sphereMap(originZ, direction, offsetX, vertexX[faceC], fs, vertexZ[faceC], originX, vertexY[faceC], originY, -4, matrix);
+                            us[2] = fs[0];
+                            uv[2] = fs[1];
+                            if ((direction & 0x1) == 0) {
+                                if (us[1] - us[0] > 0.5F) us[1]--;
+                                else if (us[0] - us[1] > 0.5F) us[1]++;
+                                if (us[2] - us[0] > 0.5F) us[2]--;
+                                else if (us[0] - us[2] > 0.5F) us[2]++;
                             } else {
-                                if (fs_808_[1] - fs_808_[0] > 0.5F) fs_808_[1]--;
-                                else if (fs_808_[0] - fs_808_[1] > 0.5F) fs_808_[1]++;
-                                if (fs_808_[2] - fs_808_[0] > 0.5F) fs_808_[2]--;
-                                else if (fs_808_[0] - fs_808_[2] > 0.5F) fs_808_[2]++;
+                                if (uv[1] - uv[0] > 0.5F) uv[1]--;
+                                else if (uv[0] - uv[1] > 0.5F) uv[1]++;
+                                if (uv[2] - uv[0] > 0.5F) uv[2]--;
+                                else if (uv[0] - uv[2] > 0.5F) uv[2]++;
                             }
                         }
                     }
                 }
             }
         }
-        if (!bool_802_) aFloatArrayArray5314 = aFloatArrayArray5345 = null;
-        if (mesh.vertexLabel != null && (anInt5316 & 0x20) != 0) anIntArrayArray5334 = mesh.method1100(true, -122);
-        if (mesh.faceLabel != null && (anInt5316 & 0x180) != 0) anIntArrayArray5330 = mesh.method1094((byte) 30);
-        if (mesh.billboards != null && (anInt5316 & 0x400) != 0) anIntArrayArray5379 = mesh.method1093((byte) -75);
+        if (!hasTextureCoords) texCoordU = texCoordV = null;
+        if (mesh.vertexLabel != null && (functionMask & 0x20) != 0) anIntArrayArray5334 = mesh.method1100(true, -122);
+        if (mesh.faceLabel != null && (functionMask & 0x180) != 0) anIntArrayArray5330 = mesh.method1094((byte) 30);
+        if (mesh.billboards != null && (functionMask & 0x400) != 0) anIntArrayArray5379 = mesh.method1093((byte) -75);
         if (mesh.faceTexture != null) {
-            aShortArray5388 = new short[faceCount];
-            boolean bool_869_ = false;
-            for (int i_870_ = 0; i_870_ < faceCount; i_870_++) {
-                short i_871_ = mesh.faceTexture[i_870_];
-                if (i_871_ != -1) {
-                    Class12 class12 = aHa_Sub1_5353.aD4579.method3(i_871_, -6662);
-                    if ((i_787_ & 0x40) == 0 || !class12.aBoolean209) {
-                        aShortArray5388[i_870_] = i_871_;
-                        bool_869_ = true;
-                        if (class12.anInt200 == 2) aBoolean5382 = true;
-                        if (class12.aByte198 != 0 || class12.aByte211 != 0) aBoolean5391 = true;
-                    } else aShortArray5388[i_870_] = (short) -1;
-                } else aShortArray5388[i_870_] = (short) -1;
+            faceTextures = new short[faceCount];
+            boolean hasTextures = false;
+            for (int i = 0; i < faceCount; i++) {
+                short tex = mesh.faceTexture[i];
+                if (tex != -1) {
+                    TextureMetrics metrics = toolkit.aD4579.getMetrics(tex, -6662);
+                    if ((featureMask & 0x40) == 0 || !metrics.disableable) {
+                        faceTextures[i] = tex;
+                        hasTextures = true;
+                        if (metrics.alphaBlendMode == 2) transparent = true;
+                        if (metrics.speedU != 0 || metrics.speedV != 0) movingTextures = true;
+                    } else faceTextures[i] = (short) -1;
+                } else faceTextures[i] = (short) -1;
             }
-            if (!bool_869_) aShortArray5388 = null;
-        } else aShortArray5388 = null;
-        if (aBoolean5382 || aClass6Array5361 != null) {
-            aShortArray5327 = new short[faceCount];
-            for (int i_872_ = 0; i_872_ < faceCount; i_872_++)
-                aShortArray5327[i_872_] = (short) is[i_872_];
+            if (!hasTextures) faceTextures = null;
+        } else faceTextures = null;
+        if (transparent || billboardFaces != null) {
+            faceIndices = new short[faceCount];
+            for (int i = 0; i < faceCount; i++)
+                faceIndices[i] = (short) faceIndex[i];
         }
     }
 

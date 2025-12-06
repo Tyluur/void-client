@@ -70,7 +70,7 @@ final class Class5_Sub2 extends Class5 {
         if (Class132.anInt1910 <= i_15_ && Class38.anInt513 >= i_15_) {
             i_14_ = Class85.method831(Class113.anInt1745, i_14_, Class369.anInt4960, 71);
             i = Class85.method831(Class113.anInt1745, i, Class369.anInt4960, -87);
-            Class12.method223(i, i_13_, i_15_, i_14_, (byte) 39);
+            TextureMetrics.method223(i, i_13_, i_15_, i_14_, (byte) 39);
         }
         anInt8357++;
     }

@@ -24,7 +24,7 @@ final class Class177 implements Interface1 {
         if (i_2_ != -98) method1354((byte) 69);
         i_0_ = (i_0_ * Class316.clientOptions.aClass239_Sub26_7260.method1838(-32350) >> 8);
         if (i_0_ != 0 && i != -1) {
-            if (!Class74.aBoolean1236 && Class267.anInt3428 != -1 && Class167.method1296(true) && !Class327.method2605((byte) -99)) {
+            if (!Class74.aBoolean1236 && Class267.anInt3428 != -1 && JavaThreadResource.method1296(true) && !Class327.method2605((byte) -99)) {
                 Class209.aClass348_Sub16_Sub3_2718 = Class101_Sub3.method943(false);
                 Class348_Sub16_Sub3 class348_sub16_sub3 = Class172.method1326(Class209.aClass348_Sub16_Sub3_2718, i_2_ ^ ~0x68);
                 Class348_Sub42_Sub18.method3273(true, -95, class348_sub16_sub3);

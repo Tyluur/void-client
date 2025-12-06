@@ -247,7 +247,7 @@ final class Class46 {
         Class362.floorUnderlayTypeList.method1377(2);
         Class348_Sub40_Sub25.idkTypeList.method1204(0);
         Class348_Sub40_Sub12.objectTypeList.method2006(88);
-        Class189.npcTypeList.method2080(127);
+        BillboardType.npcTypeList.method2080(127);
         Exception_Sub1.itemTypeList.method1938(126);
         Class10.seqTypeList.method838(7);
         Class348_Sub40_Sub18.gfxTypeList.method2542(-101);
@@ -305,7 +305,7 @@ final class Class46 {
                 int i_25_ = i;
                 if (class17 != null) i |= class17.method263(i_24_, 106, i_21_, true);
                 long l = this.anInt753 + ((this.anInt770 << 16) + (var_ha.anInt4567 << 29));
-                Model model = (Model) Class358.aClass60_4417.method583(l, -90);
+                Model model = (Model) TextureUniverse.aClass60_4417.method583(l, -90);
                 if (model == null || var_ha.method3667(model.ua(), i) != 0) {
                     if (model != null) i = var_ha.method3679(i, model.ua());
                     Mesh mesh = Class300.method2277(0, (Class348_Sub40_Sub28.aIndex_9365), this.anInt753, -1);
@@ -315,7 +315,7 @@ final class Class46 {
                     }
                     if (mesh.version < 13) mesh.method1092(2, 114);
                     model = var_ha.method3625(mesh, i, Class14_Sub3.anInt8628, 64, 768);
-                    Class358.aClass60_4417.method582(model, l, (byte) -125);
+                    TextureUniverse.aClass60_4417.method582(model, l, (byte) -125);
                 }
                 if (class17 != null) model = class17.method269(-101, model, i_24_, i_22_, i, i_21_);
                 model.s(i_25_);
@@ -663,19 +663,19 @@ final class Class46 {
         }
     }
 
-    final void method437(int i, Model model, ha var_ha, int i_63_, Class101 class101) {
+    final void method437(int i, Model model, ha var_ha, int i_63_, Matrix matrix) {
         do {
             try {
                 if (i != -20154) method438(15, -50, null);
                 anInt718++;
-                model.method620(class101);
+                model.method620(matrix);
                 ModelParticleEmitter[] modelParticleEmitters = model.method619();
                 ModelParticleEffector[] modelParticleEffectors = model.method604();
                 if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740.aBoolean6470) && (modelParticleEmitters != null || modelParticleEffectors != null)) this.aClass318_Sub10_740 = Class318_Sub10.method2526(i_63_, false);
                 if (this.aClass318_Sub10_740 == null) break;
                 this.aClass318_Sub10_740.method2536(var_ha, i_63_, modelParticleEmitters, modelParticleEffectors, false);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (model != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_63_ + ',' + (class101 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (model != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_63_ + ',' + (matrix != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

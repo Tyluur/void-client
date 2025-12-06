@@ -105,7 +105,7 @@ final class Class287 {
             anInt3692++;
             if (HitmarkTypeList.aClass223_2868 == class223) return TimedVarDomain.method1312((byte) 64, packet);
             if (Packet.aClass223_7175 == class223) return Sprite_Sub1.method987(743571200, packet);
-            if (Class101_Sub1.aClass223_5689 == class223) return Class303.method2287(packet, (byte) -112);
+            if (JavaMatrix.aClass223_5689 == class223) return Class303.method2287(packet, (byte) -112);
             if (class223 == Class28.aClass223_4997) return Class337.method2660((byte) 26, packet);
             if (bool != true) method2180((byte) -104);
             if (class223 == Class348_Sub40_Sub21.aClass223_9274) return Class288_Sub1.method2189(packet, 86);

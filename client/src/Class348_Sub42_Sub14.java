@@ -102,7 +102,7 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
                 Class14.anIntArray5091 = new int[Class86.anInt1480 * Class306.anInt3872];
                 Class69.anInt1202 = Class306.anInt3872 >> 1;
             }
-            Class348_Sub40_Sub4.aClass101_9114 = var_ha.method3640();
+            Class348_Sub40_Sub4.aMatrix_9114 = var_ha.method3640();
             Class348_Sub42_Sub10.anInt9577 = 0;
             int i_8_ = 0;
             if (i_7_ < 37) method3241(-25, (byte) 65, null);
@@ -128,13 +128,13 @@ final class Class348_Sub42_Sub14 extends Class348_Sub42 {
                     Class14.anIntArray5091[i_13_++] = 2147483647;
                 }
                 while (i_11_ > i_13_) Class14.anIntArray5091[i_13_++] = 2147483647;
-                Class350.anInt4319 = 1;
+                JavaBillboardAttributes.anInt4319 = 1;
                 for (int i_14_ = 0; (i_14_ < Class348_Sub42_Sub10.anInt9577); i_14_++) {
                     Class338 class338 = ClientScript.aClass338Array9700[i_14_];
                     Class348_Sub40_Sub29.method3125(class338.aShortArray4194[3], class338.aShortArray4183[0], class338.aShortArray4194[1], class338.aShortArray4188[3], class338.aShortArray4188[1], (byte) -105, class338.aShortArray4183[1], class338.aShortArray4188[0], class338.aShortArray4194[0], class338.aShortArray4183[3]);
                     Class348_Sub40_Sub29.method3125(class338.aShortArray4194[3], class338.aShortArray4183[1], class338.aShortArray4194[2], class338.aShortArray4188[3], class338.aShortArray4188[2], (byte) -118, class338.aShortArray4183[2], class338.aShortArray4188[1], class338.aShortArray4194[1], class338.aShortArray4183[3]);
                 }
-                Class350.anInt4319 = 2;
+                JavaBillboardAttributes.anInt4319 = 2;
             }
             if (Class348_Sub40_Sub26.aBoolean9352) Class286_Sub6.aLong6276 = (Class50_Sub4.aClass47_5262.method446(1) + -ItemDefinition.aLong2789);
         }

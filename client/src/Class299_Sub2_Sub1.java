@@ -32,10 +32,10 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
             int i = 0;
             for (int i_1_ = 0; i_1_ < 6; i_1_++) {
                 if (!var_d.method4(-7953, Class270.anIntArray3464[i_1_])) return null;
-                Class12 class12 = var_d.method3(Class270.anIntArray3464[i_1_], -6662);
-                int i_2_ = class12.aBoolean199 ? 64 : 128;
+                TextureMetrics textureMetrics = var_d.getMetrics(Class270.anIntArray3464[i_1_], -6662);
+                int i_2_ = textureMetrics.aBoolean199 ? 64 : 128;
                 if (i < i_2_) i = i_2_;
-                if (class12.aByte205 > 0) bool_0_ = true;
+                if (textureMetrics.aByte205 > 0) bool_0_ = true;
             }
             for (int i_3_ = 0; i_3_ < 6; i_3_++)
                 Option_Sub14.anIntArrayArray5991[i_3_] = var_d.method5(false, Class270.anIntArray3464[i_3_], 1.0F, i, i, 81);

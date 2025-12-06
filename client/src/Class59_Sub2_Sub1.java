@@ -12,7 +12,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
     static int anInt8673;
     private byte[] aByteArray8674;
 
-    static final Class358 method565(int i, int i_0_, Mesh mesh, int[] is) {
+    static final TextureUniverse method565(int i, int i_0_, Mesh mesh, int[] is) {
         try {
             anInt8673++;
             int[] is_1_ = null;
@@ -97,7 +97,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2 {
                     }
                 }
             }
-            return new Class358(is_1_, is_2_, is_3_, fs);
+            return new TextureUniverse(is_1_, is_2_, is_3_, fs);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("dha.B(" + i + ',' + i_0_ + ',' + (mesh != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
         }

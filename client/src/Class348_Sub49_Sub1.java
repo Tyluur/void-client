@@ -61,13 +61,13 @@ final class Class348_Sub49_Sub1 extends Packet {
             }
         }
         if (Class5_Sub1_Sub1.anInt9930 > 0) {
-            Class167.method1295(Option_Sub21.aClass318_Sub1Array6066, 0, Class5_Sub1_Sub1.anInt9930 - 1);
+            JavaThreadResource.method1295(Option_Sub21.aClass318_Sub1Array6066, 0, Class5_Sub1_Sub1.anInt9930 - 1);
             for (int i_6_ = 0; i_6_ < Class5_Sub1_Sub1.anInt9930; i_6_++)
                 Class13.method227(Option_Sub21.aClass318_Sub1Array6066[i_6_], true, bool_3_);
         }
         if (Class318_Sub1_Sub3_Sub3.aBoolean10221) Class9.aHa171.method3642(0, null);
         if ((i_2_ & 0x2) == 0) {
-            for (int i_7_ = Canvas_Sub1.anInt67; i_7_ < Class189.anInt2524; i_7_++) {
+            for (int i_7_ = Canvas_Sub1.anInt67; i_7_ < BillboardType.anInt2524; i_7_++) {
                 if (i_7_ >= i && is != null) {
                     int i_8_ = Class99.aBooleanArrayArray1572.length;
                     if ((Class37.anInt492 + Class99.aBooleanArrayArray1572.length) > Class318_Sub7.anInt6451) i_8_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572.length - Class318_Sub7.anInt6451);

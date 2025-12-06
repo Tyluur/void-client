@@ -57,7 +57,7 @@ final class Class348_Sub18 extends Node {
         Class362.floorUnderlayTypeList.method1381(true);
         Class348_Sub40_Sub25.idkTypeList.method1206((byte) -37);
         Class348_Sub40_Sub12.objectTypeList.method2012(-23828);
-        Class189.npcTypeList.method2078(-6080);
+        BillboardType.npcTypeList.method2078(-6080);
         Exception_Sub1.itemTypeList.method1939(-110);
         Class10.seqTypeList.method834((byte) -116);
         Class348_Sub40_Sub18.gfxTypeList.method2546(60);

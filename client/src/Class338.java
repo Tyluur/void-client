@@ -61,9 +61,9 @@ final class Class338 {
                 if (i_10_ >= Class250.anInt3225) i_10_ = Class250.anInt3225 + -1;
                 if (i_7_ < 0) i_7_ = 0;
                 for (int i_11_ = i_9_; i_11_ <= i_10_; i_11_++) {
-                    int i_12_ = (Class350.method3452(i_11_ + Class286.anInt3682, (byte) -15, Class250.anInt3225) * Class31.anInt425);
+                    int i_12_ = (JavaBillboardAttributes.method3452(i_11_ + Class286.anInt3682, (byte) -15, Class250.anInt3225) * Class31.anInt425);
                     for (int i_13_ = i_7_; i_8_ >= i_13_; i_13_++) {
-                        int i_14_ = (i_12_ + Class350.method3452((Option_Sub24.anInt6095 + i_13_), (byte) -15, Class31.anInt425));
+                        int i_14_ = (i_12_ + JavaBillboardAttributes.method3452((Option_Sub24.anInt6095 + i_13_), (byte) -15, Class31.anInt425));
                         Class132.anIntArray1909[i_14_] = Class318_Sub1_Sub1_Sub2.anInt9997;
                     }
                 }

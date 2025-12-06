@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class6 {
+final class JavaBillboardFace {
     short aShort143;
     int anInt144;
     boolean aBoolean145;
@@ -81,8 +81,8 @@ final class Class6 {
             if (i_22_ > 15) i_22_ -= 32;
             int i_23_ = 0x3d01 & 4 + Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 3) << 11;
             int i_24_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
-            if (i_24_ == 1) Class13.anIntArray224[Class101.anInt1597++] = i_18_;
-            npc.method2448((Class189.npcTypeList.method2079(Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 14), -1)), i ^ 0x2b297815);
+            if (i_24_ == 1) Class13.anIntArray224[Matrix.anInt1597++] = i_18_;
+            npc.method2448((BillboardType.npcTypeList.method2079(Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 14), -1)), i ^ 0x2b297815);
             npc.method2434((byte) 111, npc.aNPCDefinition_10505.size);
             npc.anInt10310 = (npc.aNPCDefinition_10505.anInt1329) << 3;
             if (bool) npc.method2435((byte) -108, i_23_, true);
@@ -169,7 +169,8 @@ final class Class6 {
         aClass227_151 = null;
     }
 
-    Class6(int i, int i_46_, int i_47_, int i_48_, int i_49_, int i_50_, int i_51_, int i_52_, int i_53_, boolean bool, int i_54_) {
+    // Class6
+    JavaBillboardFace(int i, int i_46_, int i_47_, int i_48_, int i_49_, int i_50_, int i_51_, int i_52_, int i_53_, boolean bool, int i_54_) {
         this.aBoolean145 = bool;
         this.aByte156 = (byte) i_53_;
         this.anInt154 = i_54_;

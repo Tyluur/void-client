@@ -201,9 +201,9 @@ final class Class230 {
                                     Option_Sub24.anInt6095 += i_35_;
                                     Class286.anInt3682 += i_36_;
                                     for (int i_65_ = 0; i_65_ < Class250.anInt3225; i_65_++) {
-                                        int i_66_ = ((Class350.method3452(i_65_ - -Class286.anInt3682, (byte) -15, Class250.anInt3225)) * Class31.anInt425);
+                                        int i_66_ = ((JavaBillboardAttributes.method3452(i_65_ - -Class286.anInt3682, (byte) -15, Class250.anInt3225)) * Class31.anInt425);
                                         for (int i_67_ = 0; (Class31.anInt425 > i_67_); i_67_++) {
-                                            int i_68_ = ((Class350.method3452(i_67_ + (Option_Sub24.anInt6095), (byte) -15, Class31.anInt425)) + i_66_);
+                                            int i_68_ = ((JavaBillboardAttributes.method3452(i_67_ + (Option_Sub24.anInt6095), (byte) -15, Class31.anInt425)) + i_66_);
                                             boolean bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)));
                                             Class92.anInterface4Array1525[i_68_].method15(Class58.anInt1067 * i_67_, i_65_ * Class344.anInt4267, Class58.anInt1067, Class344.anInt4267, 0, 0, bool_69_, true);
                                         }
@@ -229,8 +229,8 @@ final class Class230 {
                         Class21.aHa326.la();
                         Class21.aHa326.ya();
                         Class21.aHa326.GA(Class77.anInt1290);
-                        Class51.aClass101_905.method903(Sprite_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396);
-                        Class21.aHa326.method3638(Class51.aClass101_905);
+                        Class51.aMatrix_905.method903(Sprite_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396);
+                        Class21.aHa326.method3638(Class51.aMatrix_905);
                         if (Packet.anInt7207 == 1) {
                             Class328_Sub1_Sub1.anInt8799 = i_17_;
                             Class120.anInt4910 = i_16_;

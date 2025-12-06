@@ -136,7 +136,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         if (i_0_ != -1) aBoolean10238 = false;
         Class14_Sub3.anInt8628 = i;
         anInt10272++;
-        Class358.aClass60_4417.method590(0);
+        TextureUniverse.aClass60_4417.method590(0);
     }
 
     abstract int method2421(byte i);
@@ -415,7 +415,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         }
     }
 
-    final void method2432(ha var_ha, int i, Class101 class101, boolean bool, Model[] models) {
+    final void method2432(ha var_ha, int i, Matrix matrix, boolean bool, Model[] models) {
         do {
             try {
                 if (i == -15074) {
@@ -425,7 +425,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                         Model model_65_ = models[1];
                         Model model_66_ = models[2];
                         if (model != null) {
-                            model.method620(class101);
+                            model.method620(matrix);
                             int i_67_ = 0;
                             int i_68_ = 0;
                             int i_69_ = 0;
@@ -443,7 +443,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                             ModelParticleEmitter[] modelParticleEmitterS_71_ = null;
                             ModelParticleEffector[] modelParticleEffectorS_72_ = null;
                             if (model_65_ != null) {
-                                model_65_.method620(class101);
+                                model_65_.method620(matrix);
                                 modelParticleEmitterS_71_ = model_65_.method619();
                                 modelParticleEffectorS_72_ = model_65_.method604();
                             }
@@ -458,7 +458,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                             ModelParticleEmitter[] modelParticleEmitterS_73_ = null;
                             ModelParticleEffector[] modelParticleEffectorS_74_ = null;
                             if (model_66_ != null) {
-                                model_66_.method620(class101);
+                                model_66_.method620(matrix);
                                 modelParticleEmitterS_73_ = model_66_.method619();
                                 modelParticleEffectorS_74_ = model_66_.method604();
                             }
@@ -517,7 +517,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                     this.aClass318_Sub10_10327.method2533(this.plane, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class101 != null ? "{...}" : "null") + ',' + bool + ',' + (models != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (matrix != null ? "{...}" : "null") + ',' + bool + ',' + (models != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -582,7 +582,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         if (Option_Sub14.aClass211Array5993 != null) {
             for (int i = 0; i < Class331.anInt4135; i++)
                 Option_Sub14.aClass211Array5993[i] = null;
-            for (int i = 0; i < Class189.anInt2524; i++) {
+            for (int i = 0; i < BillboardType.anInt2524; i++) {
                 for (int i_84_ = 0; i_84_ < Class318_Sub7.anInt6451; i_84_++) {
                     for (int i_85_ = 0; i_85_ < Class348_Sub41.anInt7054; i_85_++)
                         Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[i][i_84_][i_85_] = 0L;

@@ -286,7 +286,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
         aHa_Sub3_8407.method3897(1, -4382);
         aHa_Sub3_8407.method3850((byte) -31, interface18_impl3);
-        aHa_Sub3_8407.method3874(Class167.aClass229_2207, 127, Class328_Sub3.aClass229_6519);
+        aHa_Sub3_8407.method3874(JavaThreadResource.aClass229_2207, 127, Class328_Sub3.aClass229_6519);
         aHa_Sub3_8407.method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
         Class101_Sub2 class101_sub2_76_ = aHa_Sub3_8407.method3820(false);
         class101_sub2_76_.method898(class101_sub2);
@@ -297,7 +297,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3933(-109);
         aHa_Sub3_8407.method3879(-8629);
         aHa_Sub3_8407.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-        aHa_Sub3_8407.method3874(Class167.aClass229_2207, 118, Class167.aClass229_2207);
+        aHa_Sub3_8407.method3874(JavaThreadResource.aClass229_2207, 118, JavaThreadResource.aClass229_2207);
         aHa_Sub3_8407.method3850((byte) 98, null);
         aHa_Sub3_8407.method3897(0, -4382);
         aHa_Sub3_8407.method3879(-8629);
@@ -440,7 +440,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
         aHa_Sub3_8407.method3897(1, -4382);
         aHa_Sub3_8407.method3850((byte) 101, interface18_impl3);
-        aHa_Sub3_8407.method3874(Class167.aClass229_2207, 110, Class328_Sub3.aClass229_6519);
+        aHa_Sub3_8407.method3874(JavaThreadResource.aClass229_2207, 110, Class328_Sub3.aClass229_6519);
         aHa_Sub3_8407.method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
         Class101_Sub2 class101_sub2_117_ = aHa_Sub3_8407.method3820(false);
         class101_sub2_117_.method932(1.0F, interface18_impl3.method71((byte) -108, (float) anInt8417), interface18_impl3.method67((float) anInt8411, 95), (byte) -81);
@@ -449,7 +449,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3933(-81);
         aHa_Sub3_8407.method3879(-8629);
         aHa_Sub3_8407.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-        aHa_Sub3_8407.method3874(Class167.aClass229_2207, 127, Class167.aClass229_2207);
+        aHa_Sub3_8407.method3874(JavaThreadResource.aClass229_2207, 127, JavaThreadResource.aClass229_2207);
         aHa_Sub3_8407.method3850((byte) -84, null);
         aHa_Sub3_8407.method3897(0, -4382);
         aHa_Sub3_8407.method3879(-8629);

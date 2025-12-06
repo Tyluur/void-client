@@ -6,7 +6,7 @@ final class Class44 {
     static int anInt621;
     static int anInt622;
     static int anInt623;
-    static Class101 aClass101_624;
+    static Matrix aMatrix_624;
     static char[] aCharArray625 = {'\u20ac', '\0', '\u201a', '\u0192', '\u201e', '\u2026', '\u2020', '\u2021', '\u02c6', '\u2030', '\u0160', '\u2039', '\u0152', '\0', '\u017d', '\0', '\0', '\u2018', '\u2019', '\u201c', '\u201d', '\u2022', '\u2013', '\u2014', '\u02dc', '\u2122', '\u0161', '\u203a', '\u0153', '\0', '\u017e', '\u0178'};
 
     static final int method384(int i, int i_0_, int i_1_) {
@@ -76,7 +76,7 @@ final class Class44 {
     }
 
     public static void method387(int i) {
-        aClass101_624 = null;
+        aMatrix_624 = null;
         aCharArray625 = null;
         if (i < 33) aCharArray625 = null;
     }

@@ -95,7 +95,7 @@ final class Class367_Sub8 extends Class367 {
         this.aHa_Sub3_4479.method3897(1, -4382);
         if (i != 87) method3549(-29, (byte) -5);
         anInt7364++;
-        this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 120, Class167.aClass229_2207);
+        this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, 120, JavaThreadResource.aClass229_2207);
         this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
         this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
         this.aHa_Sub3_4479.method3910((byte) -26, 1);
@@ -169,7 +169,7 @@ final class Class367_Sub8 extends Class367 {
 
     final void method3521(boolean bool, byte i) {
         if (i != -103) anInt7365 = 86;
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), i ^ ~0x17, Class167.aClass229_2207);
+        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), i ^ ~0x17, JavaThreadResource.aClass229_2207);
         anInt7357++;
     }
 

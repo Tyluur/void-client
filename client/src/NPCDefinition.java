@@ -553,11 +553,11 @@ final class NPCDefinition {
                 }
             }
             if (!bool_44_ && !bool_83_) return model_82_;
-            Class101[] class101s = null;
-            if (class225 != null) class101s = class225.method1618(var_ha, 0);
-            if (bool_83_ && class101s != null) {
+            Matrix[] matrices = null;
+            if (class225 != null) matrices = class225.method1618(var_ha, 0);
+            if (bool_83_ && matrices != null) {
                 for (int i_85_ = 0; i_85_ < 12; i_85_++) {
-                    if (class101s[i_85_] != null) model_82_.method610(class101s[i_85_], 1 << i_85_, true);
+                    if (matrices[i_85_] != null) model_82_.method610(matrices[i_85_], 1 << i_85_, true);
                 }
             }
             int i_86_ = 0;
@@ -573,15 +573,15 @@ final class NPCDefinition {
                     if (is[i_88_] != -1) {
                         int i_89_ = -i + is[i_88_];
                         i_89_ &= 0x3fff;
-                        Class101 class101 = var_ha.method3654();
-                        class101.method895(i_89_);
-                        model_82_.method610(class101, 1 << i_88_, false);
+                        Matrix matrix = var_ha.method3654();
+                        matrix.method895(i_89_);
+                        model_82_.method610(matrix, 1 << i_88_, false);
                     }
                 }
             }
-            if (bool_83_ && class101s != null) {
+            if (bool_83_ && matrices != null) {
                 for (int i_90_ = 0; i_90_ < 12; i_90_++) {
-                    if (class101s[i_90_] != null) model_82_.method610(class101s[i_90_], 1 << i_90_, false);
+                    if (matrices[i_90_] != null) model_82_.method610(matrices[i_90_], 1 << i_90_, false);
                 }
             }
             if (class348_sub42_sub17 != null && class348_sub42_sub17_63_ != null)

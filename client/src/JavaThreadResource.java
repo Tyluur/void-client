@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class167 {
+// Class167
+final class JavaThreadResource {
     private final ha_Sub1 aHa_Sub1_2191;
     int anInt2192;
     static int anInt2193;
@@ -21,7 +22,7 @@ final class Class167 {
     static int anInt2206;
     static Class229 aClass229_2207 = new Class229();
     static Index aIndex_2208;
-    Class101_Sub1 aClass101_Sub1_2209;
+    JavaMatrix aJavaMatrix_2209;
     int anInt2210;
     int anInt2211;
     int[] anIntArray2212;
@@ -32,7 +33,7 @@ final class Class167 {
     int[] anIntArray2217;
     int[] anIntArray2218;
     JavaModel aJavaModel_2219;
-    Class109 aClass109_2220;
+    Rasterizer aRasterizer_2220;
     int anInt2221;
     int[] anIntArray2222;
     JavaModel aJavaModel_2223;
@@ -71,7 +72,7 @@ final class Class167 {
     final void method1292(int i) {
         if (i == 64) {
             anInt2194++;
-            this.aClass109_2220 = new Class109(aHa_Sub1_2191, this);
+            this.aRasterizer_2220 = new Rasterizer(aHa_Sub1_2191, this);
         }
     }
 
@@ -170,13 +171,13 @@ final class Class167 {
         }
     }
 
-    Class167(ha_Sub1 var_ha_Sub1) {
+    JavaThreadResource(ha_Sub1 var_ha_Sub1) {
         this.anInt2192 = 0;
         this.anInt2197 = 0;
         this.anInt2205 = 0;
         this.aBoolean2202 = true;
         this.anInt2211 = 0;
-        this.aClass101_Sub1_2209 = new Class101_Sub1();
+        this.aJavaMatrix_2209 = new JavaMatrix();
         this.anIntArray2213 = new int[JavaModel.anInt5350];
         this.anIntArray2214 = new int[JavaModel.anInt5350];
         this.anIntArray2212 = new int[64];
@@ -200,7 +201,7 @@ final class Class167 {
         this.anIntArray2234 = new int[JavaModel.anInt5350];
         aHa_Sub1_2191 = var_ha_Sub1;
         this.anInt2210 = aHa_Sub1_2191.anInt7494 + -255;
-        this.aClass109_2220 = new Class109(var_ha_Sub1, this);
+        this.aRasterizer_2220 = new Rasterizer(var_ha_Sub1, this);
         this.aJavaModel_2243 = new JavaModel(aHa_Sub1_2191);
         this.aJavaModel_2224 = new JavaModel(aHa_Sub1_2191);
         this.aJavaModel_2219 = new JavaModel(aHa_Sub1_2191);

@@ -235,7 +235,7 @@ final class Canvas_Sub1 extends Canvas {
                 Class296.aBoolean3767 = QuickChatCatTypeList.anInt2964 >= 96;
                 Class369.aBoolean4972 = Class316.clientOptions.aClass239_Sub18_7259.method1800(-32350) == 2;
                 Class186.aBoolean2492 = Class316.clientOptions.aClass239_Sub28_7230.method1845(i + -32350) == 1;
-                OutputStream_Sub2.anInt101 = Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1 ? -1 : Class167.anInt2204;
+                OutputStream_Sub2.anInt101 = Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1 ? -1 : JavaThreadResource.anInt2204;
                 IOException_Sub1.aBoolean86 = Class316.clientOptions.aClass239_Sub9_7256.method1759(-32350) == 1;
                 Class47.aBoolean845 = Class316.clientOptions.aClass239_Sub24_7235.method1820(i ^ ~0x7e5d) == 1;
                 Class338.aClass237_Sub1_4197 = new Class237_Sub1(4, Class367_Sub4.mapLength, Class348_Sub40_Sub3.mapWidth, false);

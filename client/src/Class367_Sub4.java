@@ -96,7 +96,7 @@ final class Class367_Sub4 extends Class367 {
                 this.aHa_Sub3_4479.method3924(true, false, 0, ModelParticleEffector.aClass70_4247, false);
                 this.aHa_Sub3_4479.method3885(0, true, Class285_Sub2.aClass70_8503);
             } else {
-                this.aHa_Sub3_4479.method3874((Class167.aClass229_2207), 117, (Class328_Sub3.aClass229_6519));
+                this.aHa_Sub3_4479.method3874((JavaThreadResource.aClass229_2207), 117, (Class328_Sub3.aClass229_6519));
                 this.aHa_Sub3_4479.method3849((byte) 47, 0, (Class318_Sub1_Sub2.aClass70_8737));
                 this.aHa_Sub3_4479.method3897(2, -4382);
                 this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 122, (Class348_Sub23_Sub2.aClass229_9011));
@@ -125,14 +125,14 @@ final class Class367_Sub4 extends Class367 {
             this.aHa_Sub3_4479.method3871(IDKTypeList.aClass113_2047, 0);
             this.aHa_Sub3_4479.method3879(-8629);
             if (aBoolean7311) {
-                this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 120, Class167.aClass229_2207);
+                this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, 120, JavaThreadResource.aClass229_2207);
                 this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
                 this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
             } else {
-                this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, 115, Class167.aClass229_2207);
+                this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, 115, JavaThreadResource.aClass229_2207);
                 this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
                 this.aHa_Sub3_4479.method3897(2, i + -4469);
-                this.aHa_Sub3_4479.method3874((Class167.aClass229_2207), i ^ 0x21, (Class167.aClass229_2207));
+                this.aHa_Sub3_4479.method3874((JavaThreadResource.aClass229_2207), i ^ 0x21, (JavaThreadResource.aClass229_2207));
                 this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
                 this.aHa_Sub3_4479.method3849((byte) 47, 1, (Class318_Sub1_Sub2.aClass70_8737));
                 this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
@@ -143,7 +143,7 @@ final class Class367_Sub4 extends Class367 {
         } else this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
         anInt7312++;
         if (i != 87) aBoolean7311 = true;
-        this.aHa_Sub3_4479.method3874(Class167.aClass229_2207, i + 13, Class167.aClass229_2207);
+        this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, i + 13, JavaThreadResource.aClass229_2207);
     }
 
     static final boolean method3542(int i, Class357[][][] class357s, int i_13_, int i_14_, int i_15_, boolean bool) {
@@ -316,7 +316,7 @@ final class Class367_Sub4 extends Class367 {
     }
 
     final void method3521(boolean bool, byte i) {
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 126, Class167.aClass229_2207);
+        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 126, JavaThreadResource.aClass229_2207);
         if (i != -103) method3542(74, null, 65, 65, -77, true);
         anInt7308++;
     }

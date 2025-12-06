@@ -161,7 +161,7 @@ final class Class258_Sub1 extends Class258 {
         }
         Class348_Sub49_Sub1.method3398(false, is, i_20_, i_21_, i_25_, i_26_, bool_27_);
         if (Class348_Sub40_Sub5.aBoolean9121) {
-            for (int i_46_ = 0; i_46_ < Class189.anInt2524; i_46_++)
+            for (int i_46_ = 0; i_46_ < BillboardType.anInt2524; i_46_++)
                 Class5_Sub2.aBooleanArrayArrayArray8361[i_46_] = Class115.aBooleanArrayArrayArray1751[i_46_];
             Class285_Sub1.method2131(0);
             for (int i_47_ = 0; i_47_ < Class348_Sub40_Sub34.aClass293Array9432.length; i_47_++)
@@ -169,7 +169,7 @@ final class Class258_Sub1 extends Class258 {
         }
         if (Class348_Sub40_Sub5.aBoolean9121) {
             Class304.method2290();
-            for (int i_48_ = 0; i_48_ < Class189.anInt2524; i_48_++)
+            for (int i_48_ = 0; i_48_ < BillboardType.anInt2524; i_48_++)
                 Class115.aBooleanArrayArrayArray1751[i_48_] = Class5_Sub2.aBooleanArrayArrayArray8361[i_48_];
             if (Npc.anInt10503 == 2) {
                 if (Class146.aLongArray2013[0] < Class146.aLongArray2013[1]) {

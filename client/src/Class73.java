@@ -27,16 +27,16 @@ final class Class73 implements Interface7 {
         hitmarkTypeList = null;
     }
 
-    static final Class189 method742(int i, int i_0_) {
+    static final BillboardType billboardTypeList(int i, int i_0_) {
         anInt4777++;
-        Class189 class189 = (Class189) VarPlayerTypeListClient.aClass60_2844.method583(i_0_, -104);
-        if (class189 != null) return class189;
+        BillboardType billboardType = (BillboardType) VarPlayerTypeListClient.aClass60_2844.method583(i_0_, -104);
+        if (billboardType != null) return billboardType;
         byte[] is = Class369_Sub3.aIndex_8601.method410(-1860, 0, i_0_);
         if (i != 104) method741((byte) 98);
-        class189 = new Class189();
-        if (is != null) class189.method1419(i_0_, new Packet(is), (byte) 64);
-        VarPlayerTypeListClient.aClass60_2844.method582(class189, i_0_, (byte) -114);
-        return class189;
+        billboardType = new BillboardType();
+        if (is != null) billboardType.method1419(i_0_, new Packet(is), (byte) 64);
+        VarPlayerTypeListClient.aClass60_2844.method582(billboardType, i_0_, (byte) -114);
+        return billboardType;
     }
 
     public final int method31(int i) {

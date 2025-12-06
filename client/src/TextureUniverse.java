@@ -2,13 +2,14 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class358 {
+// Class358
+final class TextureUniverse {
     static int anInt4411 = 0;
-    float[][] aFloatArrayArray4412;
+    float[][] matrices;
     static int anInt4413;
-    int[] anIntArray4414;
-    int[] anIntArray4415;
-    int[] anIntArray4416;
+    int[] originZ;
+    int[] originY;
+    int[] originX;
     static Class60 aClass60_4417 = new Class60(50);
     static Class351 aClass351_4418 = new Class351(33, 8);
 
@@ -27,12 +28,12 @@ final class Class358 {
         Class60.aHa1098.method3653(Class348_Sub42_Sub10.aClass299_9571);
     }
 
-    Class358(int[] is, int[] is_1_, int[] is_2_, float[][] fs) {
+    TextureUniverse(int[] is, int[] is_1_, int[] is_2_, float[][] fs) {
         try {
-            this.anIntArray4414 = is_2_;
-            this.aFloatArrayArray4412 = fs;
-            this.anIntArray4415 = is_1_;
-            this.anIntArray4416 = is;
+            this.originZ = is_2_;
+            this.matrices = fs;
+            this.originY = is_1_;
+            this.originX = is;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ew.<init>(" + (is != null ? "{...}" : "null") + ',' + (is_1_ != null ? "{...}" : "null") + ',' + (is_2_ != null ? "{...}" : "null") + ',' + (fs != null ? "{...}" : "null") + ')'));
         }

@@ -10,13 +10,13 @@ final class oa extends ha implements Interface19 {
     long nativeid = 0L;
     private final Class262 aClass262_5123;
     private boolean aBoolean5124 = false;
-    private Class101 aClass101_5125;
+    private Matrix aMatrix_5125;
     private final Class356 aClass356_5126;
     private int anInt5127;
     private int anInt5128;
     private static final float[] aFloatArray5129 = new float[20];
     private static final int[] anIntArray5130;
-    private Class101 aClass101_5131;
+    private Matrix aMatrix_5131;
     static int[] anIntArray5132 = new int[6];
     private static final short[] aShortArray5133;
     private static final byte[] aByteArray5134;
@@ -146,19 +146,19 @@ final class oa extends ha implements Interface19 {
 
     private final native void t(p var_p);
 
-    final Class101 method3705() {
-        return aClass101_5131;
+    final Matrix method3705() {
+        return aMatrix_5131;
     }
 
     private final boolean WA(short i) {//
         synchronized (this.aD4579) {
             if (!this.aD4579.method4(-7953, i)) return false;
-            Class12 class12 = this.aD4579.method3(i, -6662);
-            if (class12 == null) return false;
+            TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+            if (textureMetrics == null) return false;
             int[] is;
-            if (class12.anInt200 != 2) is = this.aD4579.method5(true, i, 0.7F, 128, 128, -128);
+            if (textureMetrics.alphaBlendMode != 2) is = this.aD4579.method5(true, i, 0.7F, 128, 128, -128);
             else is = this.aD4579.method6(-21540, 128, 0.7F, i, true, 128);
-            CA(i, is, class12.aShort208, class12.anInt200, class12.aByte213, class12.aByte202, class12.anInt206, class12.aBoolean199, class12.aByte201, class12.aByte216, class12.aByte198, class12.aByte211, class12.aBoolean209, class12.aBoolean204, class12.aBoolean212, class12.aBoolean217, class12.aBoolean215, class12.aByte205, class12.aBoolean218, class12.aBoolean207, class12.anInt203);
+            CA(i, is, textureMetrics.aShort208, textureMetrics.alphaBlendMode, textureMetrics.effectType, textureMetrics.effectParam1, textureMetrics.anInt206, textureMetrics.aBoolean199, textureMetrics.aByte201, textureMetrics.aByte216, textureMetrics.speedU, textureMetrics.speedV, textureMetrics.disableable, textureMetrics.aBoolean204, textureMetrics.aBoolean212, textureMetrics.aBoolean217, textureMetrics.aBoolean215, textureMetrics.aByte205, textureMetrics.aBoolean218, textureMetrics.aBoolean207, textureMetrics.anInt203);
         }
         return true;
     }
@@ -257,7 +257,7 @@ final class oa extends ha implements Interface19 {
             anAArray5143 = null;
             aP5137 = null;
             aYa5121 = null;
-            aClass101_5131 = null;
+            aMatrix_5131 = null;
             aClass356_5126.method3481(0);
             for (ya var_ya = (ya) aClass262_5123.method1995(4); var_ya != null; var_ya = (ya) aClass262_5123.method1990((byte) 36))
                 var_ya.ga();
@@ -281,9 +281,9 @@ final class oa extends ha implements Interface19 {
 
     private final boolean c(short i) {//
         synchronized (this) {
-            Class12 class12 = this.aD4579.method3(i, -6662);
-            if (class12 == null) return false;
-            AA(i, class12.aShort208, class12.anInt200, class12.aByte213, class12.aByte202, class12.anInt206, class12.aBoolean199, class12.aByte201, class12.aByte216, class12.aByte198, class12.aByte211, class12.aBoolean209, class12.aBoolean204, class12.aBoolean212, class12.aBoolean217, class12.aBoolean215, class12.aByte205, class12.aBoolean218, class12.aBoolean207, class12.anInt203);
+            TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+            if (textureMetrics == null) return false;
+            AA(i, textureMetrics.aShort208, textureMetrics.alphaBlendMode, textureMetrics.effectType, textureMetrics.effectParam1, textureMetrics.anInt206, textureMetrics.aBoolean199, textureMetrics.aByte201, textureMetrics.aByte216, textureMetrics.speedU, textureMetrics.speedV, textureMetrics.disableable, textureMetrics.aBoolean204, textureMetrics.aBoolean212, textureMetrics.aBoolean217, textureMetrics.aBoolean215, textureMetrics.aByte205, textureMetrics.aBoolean218, textureMetrics.aBoolean207, textureMetrics.anInt203);
         }
         return true;
     }
@@ -436,7 +436,7 @@ final class oa extends ha implements Interface19 {
         /* empty */
     }
 
-    final Class101 method3654() {
+    final Matrix method3654() {
         return new ja();
     }
 
@@ -469,7 +469,7 @@ final class oa extends ha implements Interface19 {
                 MA(aD4579, 0, 0);
                 Class59_Sub2_Sub1.method566(false, true, (byte) 23);
                 aBoolean5142 = true;
-                aClass101_5131 = new ja();
+                aMatrix_5131 = new ja();
                 method3638(new ja());
                 method3631(1);
                 method3659(0);
@@ -514,8 +514,8 @@ final class oa extends ha implements Interface19 {
         return new na(this, aYa5121, i, i_192_, is, is_193_);
     }
 
-    final Class101 method3640() {
-        return aClass101_5125;
+    final Matrix method3640() {
+        return aMatrix_5125;
     }
 
     final void method3709(int i, int i_194_, int i_195_, int i_196_, int i_197_, int i_198_) {
@@ -564,9 +564,9 @@ final class oa extends ha implements Interface19 {
         /* empty */
     }
 
-    final void method3638(Class101 class101) {
-        aClass101_5125 = class101;
-        ma(((ja) class101).nativeid);
+    final void method3638(Matrix matrix) {
+        aMatrix_5125 = matrix;
+        ma(((ja) matrix).nativeid);
     }
 
     final void method3672() {

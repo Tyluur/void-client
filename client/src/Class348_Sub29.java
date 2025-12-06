@@ -25,7 +25,7 @@ final class Class348_Sub29 extends Node {
             try {
                 Class260.aIndex_3309 = index;
                 anInt6910++;
-                Class101_Sub1.aD5684 = var_d;
+                JavaMatrix.aD5684 = var_d;
                 if (bool == false) break;
                 method3004(null, false, null);
             } catch (RuntimeException runtimeexception) {

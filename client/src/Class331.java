@@ -14,7 +14,8 @@ final class Class331 {
     static int anInt4136;
     static int anInt4137;
 
-    static final int method2635(float f, boolean bool, float f_0_, float f_1_) {
+    // method2635
+    static final int cubeFace(float f, boolean bool, float f_0_, float f_1_) {
         anInt4131++;
         float f_2_ = !(f_1_ < 0.0F) ? f_1_ : -f_1_;
         float f_3_ = f < 0.0F ? -f : f;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class ja extends Class101 implements Interface19 {
+final class ja extends Matrix implements Interface19 {
     long nativeid;
 
     private final native void la();
@@ -73,8 +73,8 @@ final class ja extends Class101 implements Interface19 {
 
     private final native void J(long l, int i);
 
-    final void method898(Class101 class101) {
-        l(this.nativeid, ((ja) class101).nativeid);
+    final void method898(Matrix matrix) {
+        l(this.nativeid, ((ja) matrix).nativeid);
     }
 
     private final native void b(long l, int i, int i_18_, int i_19_, int[] is);
@@ -95,7 +95,7 @@ final class ja extends Class101 implements Interface19 {
         m(this.nativeid, i);
     }
 
-    final Class101 method907() {
+    final Matrix method907() {
         ja var_ja_29_ = new ja();
         var_ja_29_.method898(this);
         return var_ja_29_;

@@ -244,7 +244,7 @@ abstract class Model {
 
     abstract void LA(int i);
 
-    abstract void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_71_);
+    abstract void method608(Matrix matrix, Class318_Sub3 class318_sub3, int i, int i_71_);
 
     abstract int ua();
 
@@ -263,7 +263,7 @@ abstract class Model {
 
     abstract void O(int i, int i_72_, int i_73_);
 
-    abstract void method610(Class101 class101, int i, boolean bool);
+    abstract void method610(Matrix matrix, int i, boolean bool);
 
     abstract int EA();
 
@@ -302,7 +302,7 @@ abstract class Model {
 
     abstract Model method614(byte i, int i_80_, boolean bool);
 
-    abstract void method615(Class101 class101, Class318_Sub3 class318_sub3, int i);
+    abstract void method615(Matrix matrix, Class318_Sub3 class318_sub3, int i);
 
     static final boolean method616(int i, int i_81_, int i_82_) {
         anInt1129++;
@@ -347,7 +347,7 @@ abstract class Model {
 
     abstract void H(int i, int i_90_, int i_91_);
 
-    abstract void method620(Class101 class101);
+    abstract void method620(Matrix matrix);
 
     abstract void method621();
 
@@ -355,7 +355,7 @@ abstract class Model {
 
     abstract void k(int i);
 
-    abstract boolean method623(int i, int i_92_, Class101 class101, boolean bool, int i_93_, int i_94_);
+    abstract boolean method623(int i, int i_92_, Matrix matrix, boolean bool, int i_93_, int i_94_);
 
     abstract void P(int i, int i_95_, int i_96_, int i_97_);
 
@@ -509,7 +509,7 @@ abstract class Model {
         /* empty */
     }
 
-    abstract boolean method628(int i, int i_159_, Class101 class101, boolean bool, int i_160_);
+    abstract boolean method628(int i, int i_159_, Matrix matrix, boolean bool, int i_160_);
 
     abstract void aa(short i, short i_161_);
 

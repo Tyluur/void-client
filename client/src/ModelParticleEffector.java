@@ -20,7 +20,7 @@ final class ModelParticleEffector {
     static Image anImage4249;
     static int[] anIntArray4250 = new int[64];
     static int anInt4251;
-    Class101 aClass101_4252;
+    Matrix aMatrix_4252;
     static int[][] anIntArrayArray4253;
     static Class60 aClass60_4254;
 
@@ -70,7 +70,7 @@ final class ModelParticleEffector {
     }
 
     static final void method2686() {
-        for (int i = Canvas_Sub1.anInt67; i < Class189.anInt2524; i++) {
+        for (int i = Canvas_Sub1.anInt67; i < BillboardType.anInt2524; i++) {
             for (int i_8_ = 0; i_8_ < Class318_Sub7.anInt6451; i_8_++) {
                 for (int i_9_ = 0; i_9_ < Class348_Sub41.anInt7054; i_9_++) {
                     Class357 class357 = Class147.aClass357ArrayArrayArray2029[i][i_8_][i_9_];
