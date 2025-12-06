@@ -6,7 +6,7 @@ final class Class2 {
     static int anInt116;
     static MSITypeList msiTypeList; // aClass141_117
     r aR118;
-    Class64 aClass64_119;
+    Model aModel_119;
     static int anInt120;
     static int anInt121;
     static int anInt122;

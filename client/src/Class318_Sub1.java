@@ -67,8 +67,8 @@ abstract class Class318_Sub1 extends Class318 {
                             int i_10_;
                             if (Class348_Sub40_Sub21.anInt9282 != 4) i_10_ = 0x3fff & (r_Sub2.anInt10483 + (int) ResourceProvider.aFloat3938);
                             else i_10_ = (int) ResourceProvider.aFloat3938 & 0x3fff;
-                            int i_11_ = Class70.anIntArray1207[i_10_];
-                            int i_12_ = Class70.anIntArray1204[i_10_];
+                            int i_11_ = Class70.SIN[i_10_];
+                            int i_12_ = Class70.COS[i_10_];
                             if (Class348_Sub40_Sub21.anInt9282 != 4) {
                                 i_11_ = (i_11_ * 256 / (Class348_Sub49_Sub1.anInt9750 + 256));
                                 i_12_ = i_12_ * 256 / (256 + (Class348_Sub49_Sub1.anInt9750));

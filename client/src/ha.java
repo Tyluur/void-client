@@ -34,7 +34,7 @@ abstract class ha {
 
     abstract void b(int i, int i_1_, int i_2_, int i_3_, double d);
 
-    abstract Class64 method3625(Mesh mesh, int i, int i_4_, int i_5_, int i_6_);
+    abstract Model method3625(Mesh mesh, int i, int i_4_, int i_5_, int i_6_);
 
     abstract void F(int i, int i_7_);
 

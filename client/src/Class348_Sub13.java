@@ -41,10 +41,10 @@ final class Class348_Sub13 extends Node {
         }
     }
 
-    final Class64 method2803(Class17 class17, Class154 class154, int i, int i_10_, int i_11_, int i_12_, int i_13_, ha var_ha, boolean bool, int i_14_) {
+    final Model method2803(Class17 class17, Class154 class154, int i, int i_10_, int i_11_, int i_12_, int i_13_, ha var_ha, boolean bool, int i_14_) {
         try {
             anInt6756++;
-            Class64 class64 = null;
+            Model model = null;
             int i_15_ = i_13_;
             Class225 class225 = null;
             if (i != -1) class225 = Class64_Sub3.basTypeList.method1983(i, 32);
@@ -97,9 +97,9 @@ final class Class348_Sub13 extends Node {
                 if (bool_21_) i_15_ |= 0x400;
             }
             long l = method2802((class154 != null ? class154.anIntArray2095 : null), i, bool, is, (byte) -74);
-            if (Class202.aClass60_2671 != null) class64 = (Class64) Class202.aClass60_2671.method583(l, i_14_ ^ 0x56);
-            if (class64 == null || var_ha.method3667(class64.ua(), i_15_) != 0) {
-                if (class64 != null) i_15_ = var_ha.method3679(i_15_, class64.ua());
+            if (Class202.aClass60_2671 != null) model = (Model) Class202.aClass60_2671.method583(l, i_14_ ^ 0x56);
+            if (model == null || var_ha.method3667(model.ua(), i_15_) != 0) {
+                if (model != null) i_15_ = var_ha.method3679(i_15_, model.ua());
                 int i_28_ = i_15_;
                 boolean bool_29_ = false;
                 for (int i_30_ = 0; is.length > i_30_; i_30_++) {
@@ -119,30 +119,30 @@ final class Class348_Sub13 extends Node {
                             int i_36_ = (class225.anIntArrayArray2939[i_32_][3]);
                             int i_37_ = (class225.anIntArrayArray2939[i_32_][4]);
                             int i_38_ = (class225.anIntArrayArray2939[i_32_][5]);
-                            if (i_36_ != 0 || i_37_ != 0 || i_38_ != 0) meshes[i_32_].method1107(6875, i_37_, i_38_, i_36_);
-                            if (i_33_ != 0 || i_34_ != 0 || i_35_ != 0) meshes[i_32_].method1099((byte) -91, i_35_, i_33_, i_34_);
+                            if (i_36_ != 0 || i_37_ != 0 || i_38_ != 0) meshes[i_32_].rotate(6875, i_37_, i_38_, i_36_);
+                            if (i_33_ != 0 || i_34_ != 0 || i_35_ != 0) meshes[i_32_].translate((byte) -91, i_35_, i_33_, i_34_);
                         }
                     }
                 }
                 if (class154 != null) i_28_ |= 0x4000;
                 Mesh mesh = new Mesh(meshes, meshes.length);
-                class64 = var_ha.method3625(mesh, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850);
+                model = var_ha.method3625(mesh, i_28_, Class348_Sub42_Sub1.anInt9488, 64, 850);
                 if (class154 != null) {
                     for (int i_39_ = 0; i_39_ < 5; i_39_++) {
                         for (int i_40_ = 0; i_40_ < (Class367_Sub2.aShortArrayArrayArray7290).length; i_40_++) {
-                            if (class154.anIntArray2095[i_39_] < (Class367_Sub2.aShortArrayArrayArray7290[i_40_][i_39_]).length) class64.ia((Class136.aShortArrayArray4791[i_40_][i_39_]), (Class367_Sub2.aShortArrayArrayArray7290[i_40_][i_39_][(class154.anIntArray2095[i_39_])]));
+                            if (class154.anIntArray2095[i_39_] < (Class367_Sub2.aShortArrayArrayArray7290[i_40_][i_39_]).length) model.ia((Class136.aShortArrayArray4791[i_40_][i_39_]), (Class367_Sub2.aShortArrayArrayArray7290[i_40_][i_39_][(class154.anIntArray2095[i_39_])]));
                         }
                     }
                 }
                 if (Class202.aClass60_2671 != null) {
-                    class64.s(i_15_);
-                    Class202.aClass60_2671.method582(class64, l, (byte) -128);
+                    model.s(i_15_);
+                    Class202.aClass60_2671.method582(model, l, (byte) -128);
                 }
             }
-            if (class17 == null || class348_sub42_sub17 == null) return class64;
-            Class64 class64_41_ = class64.method614((byte) 1, i_15_, true);
-            class64_41_.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, class17.aBoolean242, i_23_, i_11_ + i_14_);
-            return class64_41_;
+            if (class17 == null || class348_sub42_sub17 == null) return model;
+            Model model_41_ = model.method614((byte) 1, i_15_, true);
+            model_41_.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, class17.aBoolean242, i_23_, i_11_ + i_14_);
+            return model_41_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ie.B(" + (class17 != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + bool + ',' + i_14_ + ')'));
         }

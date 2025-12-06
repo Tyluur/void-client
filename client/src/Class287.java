@@ -77,8 +77,8 @@ final class Class287 {
                     int i_20_;
                     if (Class348_Sub40_Sub21.anInt9282 == 4) i_20_ = (int) ResourceProvider.aFloat3938 & 0x3fff;
                     else i_20_ = 0x3fff & ((int) ResourceProvider.aFloat3938 + r_Sub2.anInt10483);
-                    int i_21_ = Class70.anIntArray1207[i_20_];
-                    int i_22_ = Class70.anIntArray1204[i_20_];
+                    int i_21_ = Class70.SIN[i_20_];
+                    int i_22_ = Class70.COS[i_20_];
                     if (Class348_Sub40_Sub21.anInt9282 != 4) {
                         i_22_ = i_22_ * 256 / (Class348_Sub49_Sub1.anInt9750 - -256);
                         i_21_ = 256 * i_21_ / (Class348_Sub49_Sub1.anInt9750 - -256);

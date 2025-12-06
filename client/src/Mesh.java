@@ -69,7 +69,7 @@ final class Mesh {
             this.vertexY[i_1_] <<= i;
             this.vertexZ[i_1_] <<= i;
         }
-        if (i_0_ <= 39) method1107(40, -7, -80, -24);
+        if (i_0_ <= 39) rotate(40, -7, -80, -24);
         if (this.texSpaceCount > 0 && this.texSpaceScaleX != null) {
             for (int i_2_ = 0; i_2_ < this.texSpaceScaleX.length; i_2_++) {
                 this.texSpaceScaleX[i_2_] <<= i;
@@ -160,7 +160,8 @@ final class Mesh {
         }
     }
 
-    final void method1099(byte i, int i_26_, int i_27_, int i_28_) {
+    // method1099
+    final void translate(byte i, int i_26_, int i_27_, int i_28_) {
         int i_29_ = 0;
         int i_30_ = 19 % ((-40 - i) / 33);
         for (/**/; this.vertexCount > i_29_; i_29_++) {
@@ -196,7 +197,8 @@ final class Mesh {
         return is_35_;
     }
 
-    final int method1101(int i, int i_39_, int i_40_, int i_41_) {
+    // method1101
+    final int addVertex(int i, int i_39_, int i_40_, int i_41_) {
         anInt1827++;
         int i_42_ = 0;
         int i_43_ = 120 / ((38 - i_41_) / 61);
@@ -791,34 +793,34 @@ final class Mesh {
         }
     }
 
-    final void method1107(int i, int i_199_, int i_200_, int i_201_) {
-        if (i_200_ != 0) {
-            int i_202_ = Class70.anIntArray1207[i_200_];
-            int i_203_ = Class70.anIntArray1204[i_200_];
-            for (int i_204_ = 0; i_204_ < this.vertexCount; i_204_++) {
-                int i_205_ = ((i_203_ * this.vertexX[i_204_] + this.vertexY[i_204_] * i_202_) >> 14);
-                this.vertexY[i_204_] = ((-(this.vertexX[i_204_] * i_202_) + this.vertexY[i_204_] * i_203_) >> 14);
-                this.vertexX[i_204_] = i_205_;
+    // method1107
+    final void rotate(int i_199_, int z, int i_201_) {
+        if (z != 0) {
+            int sinZ = Class70.SIN[z];
+            int cosZ = Class70.COS[z];
+            for (int i = 0; i < this.vertexCount; i++) {
+                int t = ((cosZ * this.vertexX[i] + this.vertexY[i] * sinZ) >> 14);
+                this.vertexY[i] = ((-(this.vertexX[i] * sinZ) + this.vertexY[i] * cosZ) >> 14);
+                this.vertexX[i] = t;
             }
         }
-        if (i != 6875) this.faceB = null;
         anInt1837++;
         if (i_201_ != 0) {
-            int i_206_ = Class70.anIntArray1207[i_201_];
-            int i_207_ = Class70.anIntArray1204[i_201_];
-            for (int i_208_ = 0; i_208_ < this.vertexCount; i_208_++) {
-                int i_209_ = ((this.vertexY[i_208_] * i_207_ + -(i_206_ * this.vertexZ[i_208_])) >> 14);
-                this.vertexZ[i_208_] = ((this.vertexY[i_208_] * i_206_ - -(i_207_ * this.vertexZ[i_208_])) >> 14);
-                this.vertexY[i_208_] = i_209_;
+            int sinX = Class70.SIN[i_201_];
+            int cosX = Class70.COS[i_201_];
+            for (int i = 0; i < this.vertexCount; i++) {
+                int t = ((this.vertexY[i] * cosX + -(sinX * this.vertexZ[i])) >> 14);
+                this.vertexZ[i] = ((this.vertexY[i] * sinX - -(cosX * this.vertexZ[i])) >> 14);
+                this.vertexY[i] = t;
             }
         }
         if (i_199_ != 0) {
-            int i_210_ = Class70.anIntArray1207[i_199_];
-            int i_211_ = Class70.anIntArray1204[i_199_];
-            for (int i_212_ = 0; this.vertexCount > i_212_; i_212_++) {
-                int i_213_ = ((i_211_ * this.vertexX[i_212_] + this.vertexZ[i_212_] * i_210_) >> 14);
-                this.vertexZ[i_212_] = ((i_211_ * this.vertexZ[i_212_] + -(this.vertexX[i_212_] * i_210_)) >> 14);
-                this.vertexX[i_212_] = i_213_;
+            int sinY = Class70.SIN[i_199_];
+            int cosY = Class70.COS[i_199_];
+            for (int i = 0; this.vertexCount > i; i++) {
+                int t = ((cosY * this.vertexX[i] + this.vertexZ[i] * sinY) >> 14);
+                this.vertexZ[i] = ((cosY * this.vertexZ[i] + -(this.vertexX[i] * sinY)) >> 14);
+                this.vertexX[i] = t;
             }
         }
     }

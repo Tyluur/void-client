@@ -347,7 +347,7 @@ final class NPCDefinition {
         }
     }
 
-    final Class64 method800(int i, Class182[] class182s, SeqTypeList seqTypeList, boolean bool, Class17 class17, int i_34_, BASTypeList BASTypeList, int i_35_, Class17 class17_36_, Interface17 interface17, ha var_ha, int i_37_, int[] is, int i_38_, int i_39_, int i_40_, int i_41_) {
+    final Model method800(int i, Class182[] class182s, SeqTypeList seqTypeList, boolean bool, Class17 class17, int i_34_, BASTypeList BASTypeList, int i_35_, Class17 class17_36_, Interface17 interface17, ha var_ha, int i_37_, int[] is, int i_38_, int i_39_, int i_40_, int i_41_) {
         try {
             anInt1341++;
             if (this.anIntArray1377 != null) {
@@ -472,14 +472,14 @@ final class NPCDefinition {
                 if (bool_48_) i_43_ |= 0x400;
             }
             long l = var_ha.anInt4567 << 16 | this.anInt1344;
-            Class64 class64;
+            Model model;
             synchronized (this.aNPCTypeList_1348.aClass60_3590) {
-                class64 = (Class64) this.aNPCTypeList_1348.aClass60_3590.method583(l, 80);
+                model = (Model) this.aNPCTypeList_1348.aClass60_3590.method583(l, 80);
             }
             Class225 class225 = null;
             if (this.anInt1366 != -1) class225 = BASTypeList.method1983(this.anInt1366, 32);
-            if (class64 == null || i_43_ != (i_43_ & class64.ua())) {
-                if (class64 != null) i_43_ |= class64.ua();
+            if (model == null || i_43_ != (i_43_ & model.ua())) {
+                if (model != null) i_43_ |= model.ua();
                 int i_69_ = i_43_;
                 boolean bool_70_ = false;
                 synchronized (this.aNPCTypeList_1348.aIndex_3576) {
@@ -496,7 +496,7 @@ final class NPCDefinition {
                         }
                         if (meshes[i_72_] != null) {
                             if (meshes[i_72_].version < 13) meshes[i_72_].method1092(2, 115);
-                            if (anIntArrayArray1388 != null && anIntArrayArray1388[i_72_] != null) meshes[i_72_].method1099((byte) 44, anIntArrayArray1388[i_72_][2], anIntArrayArray1388[i_72_][0], anIntArrayArray1388[i_72_][1]);
+                            if (anIntArrayArray1388 != null && anIntArrayArray1388[i_72_] != null) meshes[i_72_].translate((byte) 44, anIntArrayArray1388[i_72_][2], anIntArrayArray1388[i_72_][0], anIntArrayArray1388[i_72_][1]);
                         }
                     }
                 }
@@ -517,8 +517,8 @@ final class NPCDefinition {
                                 i_77_ = ((class225.anIntArrayArray2939[i_73_][3]) << 3);
                                 i_74_ = (class225.anIntArrayArray2939[i_73_][0]);
                             }
-                            if (i_77_ != 0 || i_78_ != 0 || i_79_ != 0) meshes[i_73_].method1107(6875, i_78_, i_79_, i_77_);
-                            if (i_74_ != 0 || i_75_ != 0 || i_76_ != 0) meshes[i_73_].method1099((byte) 93, i_76_, i_74_, i_75_);
+                            if (i_77_ != 0 || i_78_ != 0 || i_79_ != 0) meshes[i_73_].rotate(6875, i_78_, i_79_, i_77_);
+                            if (i_74_ != 0 || i_75_ != 0 || i_76_ != 0) meshes[i_73_].translate((byte) 93, i_76_, i_74_, i_75_);
                         }
                     }
                 }
@@ -528,43 +528,43 @@ final class NPCDefinition {
                 if (aShortArray1328 != null) i_69_ |= 0x4000;
                 if (aShortArray1393 != null) i_69_ |= 0x8000;
                 if (aByte1405 != 0) i_69_ |= 0x80000;
-                class64 = var_ha.method3625(mesh, i_69_, (this.aNPCTypeList_1348.anInt3593), 64 + anInt1398, 850 + anInt1406);
+                model = var_ha.method3625(mesh, i_69_, (this.aNPCTypeList_1348.anInt3593), 64 + anInt1398, 850 + anInt1406);
                 if (aShortArray1328 != null) {
                     for (int i_80_ = 0; (i_80_ < aShortArray1328.length); i_80_++) {
-                        if (aByteArray1374 == null || aByteArray1374.length <= i_80_) class64.ia(aShortArray1328[i_80_], aShortArray1352[i_80_]);
-                        else class64.ia(aShortArray1328[i_80_], (Class348_Sub42_Sub3.aShortArray9502[aByteArray1374[i_80_] & 0xff]));
+                        if (aByteArray1374 == null || aByteArray1374.length <= i_80_) model.ia(aShortArray1328[i_80_], aShortArray1352[i_80_]);
+                        else model.ia(aShortArray1328[i_80_], (Class348_Sub42_Sub3.aShortArray9502[aByteArray1374[i_80_] & 0xff]));
                     }
                 }
                 if (aShortArray1393 != null) {
                     for (int i_81_ = 0; aShortArray1393.length > i_81_; i_81_++)
-                        class64.aa(aShortArray1393[i_81_], aShortArray1391[i_81_]);
+                        model.aa(aShortArray1393[i_81_], aShortArray1391[i_81_]);
                 }
-                if (aByte1405 != 0) class64.method624(aByte1376, aByte1360, aByte1330, aByte1405 & 0xff);
-                class64.s(i_43_);
+                if (aByte1405 != 0) model.method624(aByte1376, aByte1360, aByte1330, aByte1405 & 0xff);
+                model.s(i_43_);
                 synchronized (this.aNPCTypeList_1348.aClass60_3590) {
-                    this.aNPCTypeList_1348.aClass60_3590.method582(class64, this.anInt1344 | var_ha.anInt4567 << 16, (byte) -125);
+                    this.aNPCTypeList_1348.aClass60_3590.method582(model, this.anInt1344 | var_ha.anInt4567 << 16, (byte) -125);
                 }
             }
-            Class64 class64_82_ = class64.method614((byte) 4, i_43_, true);
+            Model model_82_ = model.method614((byte) 4, i_43_, true);
             boolean bool_83_ = false;
             if (is != null) {
                 for (int i_84_ = 0; i_84_ < 12; i_84_++) {
                     if (is[i_84_] != -1) bool_83_ = true;
                 }
             }
-            if (!bool_44_ && !bool_83_) return class64_82_;
+            if (!bool_44_ && !bool_83_) return model_82_;
             Class101[] class101s = null;
             if (class225 != null) class101s = class225.method1618(var_ha, 0);
             if (bool_83_ && class101s != null) {
                 for (int i_85_ = 0; i_85_ < 12; i_85_++) {
-                    if (class101s[i_85_] != null) class64_82_.method610(class101s[i_85_], 1 << i_85_, true);
+                    if (class101s[i_85_] != null) model_82_.method610(class101s[i_85_], 1 << i_85_, true);
                 }
             }
             int i_86_ = 0;
             int i_87_ = 1;
             while (i_86_ < i_49_) {
                 if ((Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_86_]) != null)
-                    class64_82_.method603((byte) -55, -1 + Class67.anIntArray4648[i_86_], null, i_87_, Class90.anIntArray1518[i_86_], FloorUnderlayTypeList.anIntArray2466[i_86_], (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_86_]), 0, (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_86_]), (Class163.aClass17Array2169[i_86_].aBoolean242), Class348_Sub23_Sub4.anIntArray9050[i_86_]);
+                    model_82_.method603((byte) -55, -1 + Class67.anIntArray4648[i_86_], null, i_87_, Class90.anIntArray1518[i_86_], FloorUnderlayTypeList.anIntArray2466[i_86_], (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_86_]), 0, (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_86_]), (Class163.aClass17Array2169[i_86_].aBoolean242), Class348_Sub23_Sub4.anIntArray9050[i_86_]);
                 i_86_++;
                 i_87_ <<= 1;
             }
@@ -575,27 +575,27 @@ final class NPCDefinition {
                         i_89_ &= 0x3fff;
                         Class101 class101 = var_ha.method3654();
                         class101.method895(i_89_);
-                        class64_82_.method610(class101, 1 << i_88_, false);
+                        model_82_.method610(class101, 1 << i_88_, false);
                     }
                 }
             }
             if (bool_83_ && class101s != null) {
                 for (int i_90_ = 0; i_90_ < 12; i_90_++) {
-                    if (class101s[i_90_] != null) class64_82_.method610(class101s[i_90_], 1 << i_90_, false);
+                    if (class101s[i_90_] != null) model_82_.method610(class101s[i_90_], 1 << i_90_, false);
                 }
             }
             if (class348_sub42_sub17 != null && class348_sub42_sub17_63_ != null)
-                class64_82_.method625(class348_sub42_sub17_59_, i_58_, (byte) 122, i_62_, class348_sub42_sub17_63_, i_56_, i_60_, -1 + i_41_, class348_sub42_sub17, (class17_36_.aBoolean242 | class17.aBoolean242), i_57_, class348_sub42_sub17_64_, -1 + i_34_, class17_36_.aBooleanArray263, i_61_);
-            else if (class348_sub42_sub17 != null) class64_82_.method617(i_56_, i_58_, class348_sub42_sub17_59_, 0, class348_sub42_sub17, bool, class17_36_.aBoolean242, i_57_, i_41_ + -1);
-            else if (class348_sub42_sub17_63_ != null) class64_82_.method617(i_60_, i_62_, class348_sub42_sub17_64_, 0, class348_sub42_sub17_63_, false, class17.aBoolean242, i_61_, i_34_ - 1);
+                model_82_.method625(class348_sub42_sub17_59_, i_58_, (byte) 122, i_62_, class348_sub42_sub17_63_, i_56_, i_60_, -1 + i_41_, class348_sub42_sub17, (class17_36_.aBoolean242 | class17.aBoolean242), i_57_, class348_sub42_sub17_64_, -1 + i_34_, class17_36_.aBooleanArray263, i_61_);
+            else if (class348_sub42_sub17 != null) model_82_.method617(i_56_, i_58_, class348_sub42_sub17_59_, 0, class348_sub42_sub17, bool, class17_36_.aBoolean242, i_57_, i_41_ + -1);
+            else if (class348_sub42_sub17_63_ != null) model_82_.method617(i_60_, i_62_, class348_sub42_sub17_64_, 0, class348_sub42_sub17_63_, false, class17.aBoolean242, i_61_, i_34_ - 1);
             for (int i_91_ = 0; i_49_ > i_91_; i_91_++) {
                 Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_91_] = null;
                 Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_91_] = null;
                 Class163.aClass17Array2169[i_91_] = null;
             }
-            if (anInt1346 != 128 || anInt1358 != 128) class64_82_.O(anInt1346, anInt1358, anInt1346);
-            class64_82_.s(i_40_);
-            return class64_82_;
+            if (anInt1346 != 128 || anInt1358 != 128) model_82_.O(anInt1346, anInt1358, anInt1346);
+            model_82_.s(i_40_);
+            return model_82_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("bb.F(" + i + ',' + (class182s != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + bool + ',' + (class17 != null ? "{...}" : "null") + ',' + i_34_ + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + i_35_ + ',' + (class17_36_ != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_37_ + ',' + (is != null ? "{...}" : "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
         }
@@ -617,7 +617,7 @@ final class NPCDefinition {
         return (Class348_Sub33.aByteArrayArrayArray6962[1][x][y] & 0x2) != 0;
     }
 
-    final Class64 method803(Interface17 interface17, ha var_ha, int i, int i_94_, Class17 class17, SeqTypeList seqTypeList, int i_95_, int i_96_, int i_97_) {
+    final Model method803(Interface17 interface17, ha var_ha, int i, int i_94_, Class17 class17, SeqTypeList seqTypeList, int i_95_, int i_96_, int i_97_) {
         try {
             anInt1389++;
             if (this.anIntArray1377 != null) {
@@ -629,12 +629,12 @@ final class NPCDefinition {
             if (anIntArray1380 == null) return null;
             int i_99_ = i_97_;
             if (class17 != null && i_95_ != -1) i_99_ |= class17.method263(i_94_, 97, i_95_, true);
-            Class64 class64;
+            Model model;
             synchronized (this.aNPCTypeList_1348.aClass60_3592) {
-                class64 = ((Class64) (this.aNPCTypeList_1348.aClass60_3592.method583(var_ha.anInt4567 << 16 | this.anInt1344, 64)));
+                model = ((Model) (this.aNPCTypeList_1348.aClass60_3592.method583(var_ha.anInt4567 << 16 | this.anInt1344, 64)));
             }
-            if (class64 == null || i_99_ != (class64.ua() & i_99_)) {
-                if (class64 != null) i_99_ |= class64.ua();
+            if (model == null || i_99_ != (model.ua() & i_99_)) {
+                if (model != null) i_99_ |= model.ua();
                 int i_100_ = i_99_;
                 boolean bool = false;
                 synchronized (this.aNPCTypeList_1348.aIndex_3576) {
@@ -657,26 +657,26 @@ final class NPCDefinition {
                 if (aShortArray1328 != null) i_100_ |= 0x4000;
                 if (aShortArray1393 != null) i_100_ |= 0x8000;
                 if (aByte1405 != 0) i_100_ |= 0x80000;
-                class64 = var_ha.method3625(mesh, i_100_, (this.aNPCTypeList_1348.anInt3593), 64, 768);
+                model = var_ha.method3625(mesh, i_100_, (this.aNPCTypeList_1348.anInt3593), 64, 768);
                 if (aShortArray1328 != null) {
                     for (int i_104_ = 0; (aShortArray1328.length > i_104_); i_104_++) {
-                        if (aByteArray1374 != null && aByteArray1374.length > i_104_) class64.ia(aShortArray1328[i_104_], (Class348_Sub42_Sub3.aShortArray9502[0xff & aByteArray1374[i_104_]]));
-                        else class64.ia(aShortArray1328[i_104_], aShortArray1352[i_104_]);
+                        if (aByteArray1374 != null && aByteArray1374.length > i_104_) model.ia(aShortArray1328[i_104_], (Class348_Sub42_Sub3.aShortArray9502[0xff & aByteArray1374[i_104_]]));
+                        else model.ia(aShortArray1328[i_104_], aShortArray1352[i_104_]);
                     }
                 }
                 if (aShortArray1393 != null) {
                     for (int i_105_ = 0; aShortArray1393.length > i_105_; i_105_++)
-                        class64.aa(aShortArray1393[i_105_], aShortArray1391[i_105_]);
+                        model.aa(aShortArray1393[i_105_], aShortArray1391[i_105_]);
                 }
-                if (aByte1405 != 0) class64.method624(aByte1376, aByte1360, aByte1330, aByte1405 & 0xff);
-                class64.s(i_99_);
+                if (aByte1405 != 0) model.method624(aByte1376, aByte1360, aByte1330, aByte1405 & 0xff);
+                model.s(i_99_);
                 synchronized (this.aNPCTypeList_1348.aClass60_3592) {
-                    this.aNPCTypeList_1348.aClass60_3592.method582(class64, var_ha.anInt4567 << 16 | this.anInt1344, (byte) -96);
+                    this.aNPCTypeList_1348.aClass60_3592.method582(model, var_ha.anInt4567 << 16 | this.anInt1344, (byte) -96);
                 }
             }
-            if (class17 != null && i_95_ != -1) class64 = class17.method269(-9, class64, i_94_, i, i_99_, i_95_);
-            class64.s(i_97_);
-            return class64;
+            if (class17 != null && i_95_ != -1) model = class17.method269(-9, model, i_94_, i, i_99_, i_95_);
+            model.s(i_97_);
+            return model;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("bb.H(" + (interface17 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_94_ + ',' + (class17 != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'));
         }

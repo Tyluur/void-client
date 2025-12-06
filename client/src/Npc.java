@@ -64,19 +64,19 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         class101.method895(i_11_);
         class101.method891(this.x, this.anInt6382, this.y);
         boolean bool = false;
-        for (int i_12_ = i_10_; (this.aClass64Array10323.length > i_12_); i_12_++) {
-            if (this.aClass64Array10323[i_12_] != null) {
+        for (int i_12_ = i_10_; (this.aModelArray10323.length > i_12_); i_12_++) {
+            if (this.aModelArray10323[i_12_] != null) {
                 boolean bool_13_ = (this.aNPCDefinition_10505.anInt1337 > 0 || (this.aNPCDefinition_10505.anInt1333 != -1 ? this.aNPCDefinition_10505.anInt1333 == 1 : this.aNPCDefinition_10505.size == 1));
                 boolean bool_14_;
-                if (Class305.aBoolean3870) bool_14_ = (this.aClass64Array10323[i_12_].method623(i_9_, i, class101, bool_13_, this.aNPCDefinition_10505.anInt1337, Class132.anInt1906));
-                else bool_14_ = (this.aClass64Array10323[i_12_].method628(i_9_, i, class101, bool_13_, this.aNPCDefinition_10505.anInt1337));
+                if (Class305.aBoolean3870) bool_14_ = (this.aModelArray10323[i_12_].method623(i_9_, i, class101, bool_13_, this.aNPCDefinition_10505.anInt1337, Class132.anInt1906));
+                else bool_14_ = (this.aModelArray10323[i_12_].method628(i_9_, i, class101, bool_13_, this.aNPCDefinition_10505.anInt1337));
                 if (bool_14_) {
                     bool = true;
                     break;
                 }
             }
         }
-        this.aClass64Array10323[0] = this.aClass64Array10323[1] = this.aClass64Array10323[2] = null;
+        this.aModelArray10323[0] = this.aModelArray10323[1] = this.aModelArray10323[2] = null;
         return bool;
     }
 
@@ -146,27 +146,27 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         if (Class316.clientOptions.aClass239_Sub21_7270.method1812(-32350) == i && NPCDefinition.aBoolean1369 && class225.aBoolean2913) {
             Class17 class17 = ((this.anInt10286 == -1 || this.anInt10218 != 0) ? null : Class10.seqTypeList.method835(this.anInt10286, 7));
             Class17 class17_22_ = ((this.anInt10268 == -1 || (this.aBoolean10213 && class17 != null)) ? null : Class10.seqTypeList.method835(this.anInt10268, 7));
-            Class64 class64 = (Node.method2711(this.anInt10302, i_20_, this.aClass64Array10323[0], this.anInt10208, false, (class17_22_ == null ? this.anInt10267 : this.anInt10245), 0xffff & this.aNPCDefinition_10505.aShort1339, this.aNPCDefinition_10505.size, this.anInt10252, var_ha, 0xff & this.aNPCDefinition_10505.aByte1353, this.aNPCDefinition_10505.aShort1350 & 0xffff, this.aNPCDefinition_10505.aByte1347 & 0xff, class17_22_ == null ? class17 : class17_22_));
-            if (class64 != null) {
-                class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).length, method2442(1810797122), false));
+            Model model = (Node.method2711(this.anInt10302, i_20_, this.aModelArray10323[0], this.anInt10208, false, (class17_22_ == null ? this.anInt10267 : this.anInt10245), 0xffff & this.aNPCDefinition_10505.aShort1339, this.aNPCDefinition_10505.size, this.anInt10252, var_ha, 0xff & this.aNPCDefinition_10505.aByte1353, this.aNPCDefinition_10505.aShort1350 & 0xffff, this.aNPCDefinition_10505.aByte1347 & 0xff, class17_22_ == null ? class17 : class17_22_));
+            if (model != null) {
+                class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aModelArray10323).length, method2442(1810797122), false));
                 this.aBoolean10324 = true;
                 var_ha.C(false);
-                if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414[(this.aClass64Array10323).length]), 0);
-                else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414[(this.aClass64Array10323).length]), Class132.anInt1906, 0);
+                if (!Class305.aBoolean3870) model.method615(class101, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), 0);
+                else model.method608(class101, (class318_sub4.aClass318_Sub3Array6414[(this.aModelArray10323).length]), Class132.anInt1906, 0);
                 var_ha.C(true);
             }
         }
         class101.method895(i_20_);
         class101.method891(this.x, (-this.anInt10274 + (-5 + this.anInt6382)), this.y);
-        if (class318_sub4 == null) class318_sub4 = OutputStream_Sub2.method136((this.aClass64Array10323).length, method2442(1810797122), false);
-        this.method2432(var_ha, -15074, class101, false, this.aClass64Array10323);
+        if (class318_sub4 == null) class318_sub4 = OutputStream_Sub2.method136((this.aModelArray10323).length, method2442(1810797122), false);
+        this.method2432(var_ha, -15074, class101, false, this.aModelArray10323);
         if (Class305.aBoolean3870) {
-            for (int i_24_ = 0; (this.aClass64Array10323.length > i_24_); i_24_++) {
-                if (this.aClass64Array10323[i_24_] != null) this.aClass64Array10323[i_24_].method608(class101, (class318_sub4.aClass318_Sub3Array6414[i_24_]), Class132.anInt1906, 0);
+            for (int i_24_ = 0; (this.aModelArray10323.length > i_24_); i_24_++) {
+                if (this.aModelArray10323[i_24_] != null) this.aModelArray10323[i_24_].method608(class101, (class318_sub4.aClass318_Sub3Array6414[i_24_]), Class132.anInt1906, 0);
             }
         } else {
-            for (int i_23_ = 0; (this.aClass64Array10323.length > i_23_); i_23_++) {
-                if (this.aClass64Array10323[i_23_] != null) this.aClass64Array10323[i_23_].method615(class101, (class318_sub4.aClass318_Sub3Array6414[i_23_]), 0);
+            for (int i_23_ = 0; (this.aModelArray10323.length > i_23_); i_23_++) {
+                if (this.aModelArray10323[i_23_] != null) this.aModelArray10323[i_23_].method615(class101, (class318_sub4.aClass318_Sub3Array6414[i_23_]), 0);
             }
         }
         if (this.aClass318_Sub10_10327 != null) {
@@ -174,11 +174,11 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
             if (Class305.aBoolean3870) var_ha.method3685(class98, Class132.anInt1906);
             else var_ha.method3684(class98);
         }
-        for (int i_25_ = 0; (this.aClass64Array10323.length > i_25_); i_25_++) {
-            if (this.aClass64Array10323[i_25_] != null) this.aBoolean10324 |= this.aClass64Array10323[i_25_].F();
+        for (int i_25_ = 0; (this.aModelArray10323.length > i_25_); i_25_++) {
+            if (this.aModelArray10323[i_25_] != null) this.aBoolean10324 |= this.aModelArray10323[i_25_].F();
         }
         this.anInt10301 = Option_Sub15.anInt6006;
-        this.aClass64Array10323[0] = this.aClass64Array10323[1] = this.aClass64Array10323[2] = null;
+        this.aModelArray10323[0] = this.aModelArray10323[1] = this.aModelArray10323[2] = null;
         return class318_sub4;
     }
 
@@ -289,8 +289,8 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
             Class101 class101 = var_ha.method3705();
             class101.method895(this.aClass264_10217.method2019((byte) -118));
             class101.method891(this.x, -20 + this.anInt6382, this.y);
-            this.method2432(var_ha, -15074, class101, this.aBoolean10318, (this.aClass64Array10323));
-            this.aClass64Array10323[0] = this.aClass64Array10323[1] = this.aClass64Array10323[2] = null;
+            this.method2432(var_ha, -15074, class101, this.aBoolean10318, (this.aModelArray10323));
+            this.aModelArray10323[0] = this.aModelArray10323[1] = this.aModelArray10323[2] = null;
         }
     }
 
@@ -317,19 +317,19 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         boolean bool = (this.aByte10279 != 0 && (Class367_Sub11.anInt7396 >= this.anInt10248) && (Class367_Sub11.anInt7396 < this.anInt10250));
         if (bool) i_34_ |= 0x80000;
         int i_39_ = this.aClass264_10217.method2019((byte) -25);
-        Class64 class64 = (this.aClass64Array10323[0] = (this.aNPCDefinition_10505.method800(i_39_, this.aClass182Array10308, Class10.seqTypeList, false, class17_36_, this.anInt10203, Class64_Sub3.basTypeList, this.anInt10267, class17, Class318_Sub1_Sub3_Sub3.timedVarDomain, var_ha, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232)));
-        if (class64 == null) return false;
-        this.anInt10207 = class64.fa();
-        this.anInt10230 = class64.ma();
-        this.method2439(-125, class64);
+        Model model = (this.aModelArray10323[0] = (this.aNPCDefinition_10505.method800(i_39_, this.aClass182Array10308, Class10.seqTypeList, false, class17_36_, this.anInt10203, Class64_Sub3.basTypeList, this.anInt10267, class17, Class318_Sub1_Sub3_Sub3.timedVarDomain, var_ha, this.anInt10312, this.anIntArray10296, this.anInt10244, this.anInt10245, i_34_, this.anInt10232)));
+        if (model == null) return false;
+        this.anInt10207 = model.fa();
+        this.anInt10230 = model.ma();
+        this.method2439(-125, model);
         if (i_37_ != 0 || i_38_ != 0) {
             this.method2424(i_39_, i_37_, class225.anInt2943, i_38_, (byte) 78, class225.anInt2912);
-            if (this.anInt10302 != 0) this.aClass64Array10323[0].FA(this.anInt10302);
-            if (this.anInt10208 != 0) this.aClass64Array10323[0].VA(this.anInt10208);
-            if (this.anInt10252 != 0) this.aClass64Array10323[0].H(0, this.anInt10252, 0);
+            if (this.anInt10302 != 0) this.aModelArray10323[0].FA(this.anInt10302);
+            if (this.anInt10208 != 0) this.aModelArray10323[0].VA(this.anInt10208);
+            if (this.anInt10252 != 0) this.aModelArray10323[0].H(0, this.anInt10252, 0);
         } else this.method2424(i_39_, this.method2436((byte) 78) << 9, 0, this.method2436((byte) 108) << 9, (byte) 92, 0);
-        if (bool) class64.method624(this.aByte10255, this.aByte10206, this.aByte10270, (0xff & this.aByte10279));
-        if (this.anInt10269 == -1 || this.anInt10240 == -1) this.aClass64Array10323[1] = null;
+        if (bool) model.method624(this.aByte10255, this.aByte10206, this.aByte10270, (0xff & this.aByte10279));
+        if (this.anInt10269 == -1 || this.anInt10240 == -1) this.aModelArray10323[1] = null;
         else {
             Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 56, this.anInt10269));
             boolean bool_40_ = (class368.aByte4488 == 3 && (i_37_ != 0 || i_38_ != 0));
@@ -339,10 +339,10 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
                 if (this.anInt10220 != 0) i_41_ |= 0x2;
                 if (this.anInt10278 >= 0) i_41_ |= 0x7;
             } else i_41_ |= 0x7;
-            Class64 class64_42_ = (this.aClass64Array10323[1] = (class368.method3562(this.anInt10240, var_ha, this.anInt10243, i_41_, this.anInt10283, Class10.seqTypeList, (byte) 78)));
-            if (class64_42_ != null) {
+            Model model_42_ = (this.aModelArray10323[1] = (class368.method3562(this.anInt10240, var_ha, this.anInt10243, i_41_, this.anInt10283, Class10.seqTypeList, (byte) 78)));
+            if (model_42_ != null) {
                 if (this.anInt10278 < 0) {
-                    if (this.anInt10237 != 0) class64_42_.a(2048 * (this.anInt10237));
+                    if (this.anInt10237 != 0) model_42_.a(2048 * (this.anInt10237));
                 } else {
                     int i_43_ = 0;
                     int i_44_ = 0;
@@ -361,24 +361,24 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
                         int i_46_ = i_39_;
                         if ((this.anIntArray10296 != null) && ((this.anIntArray10296[this.anInt10278]) != -1)) i_46_ = (this.anIntArray10296[(this.anInt10278)]);
                         int i_47_ = (-i_39_ + (i_46_ + 2048 * this.anInt10237) & 0x3fff);
-                        if (i_47_ != 0) class64_42_.a(i_47_);
-                        int i_48_ = Class70.anIntArray1207[i_47_];
-                        int i_49_ = Class70.anIntArray1204[i_47_];
+                        if (i_47_ != 0) model_42_.a(i_47_);
+                        int i_48_ = Class70.SIN[i_47_];
+                        int i_49_ = Class70.COS[i_47_];
                         int i_50_ = i_45_ * i_48_ - -(i_43_ * i_49_) >> 14;
                         i_45_ = i_45_ * i_49_ + -(i_43_ * i_48_) >> 14;
                         i_43_ = i_50_;
                     }
-                    class64_42_.H(i_43_, i_44_, i_45_);
+                    model_42_.H(i_43_, i_44_, i_45_);
                 }
-                if (this.anInt10220 != 0) class64_42_.H(0, (-this.anInt10220 << 2), 0);
+                if (this.anInt10220 != 0) model_42_.H(0, (-this.anInt10220 << 2), 0);
                 if (bool_40_) {
-                    if (this.anInt10302 != 0) class64_42_.FA(this.anInt10302);
-                    if (this.anInt10208 != 0) class64_42_.VA(this.anInt10208);
-                    if (this.anInt10252 != 0) class64_42_.H(0, (this.anInt10252), 0);
+                    if (this.anInt10302 != 0) model_42_.FA(this.anInt10302);
+                    if (this.anInt10208 != 0) model_42_.VA(this.anInt10208);
+                    if (this.anInt10252 != 0) model_42_.H(0, (this.anInt10252), 0);
                 }
             }
         }
-        if (this.anInt10291 == -1 || this.anInt10224 == -1) this.aClass64Array10323[2] = null;
+        if (this.anInt10291 == -1 || this.anInt10224 == -1) this.aModelArray10323[2] = null;
         else {
             Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 98, this.anInt10291));
             boolean bool_51_ = (class368.aByte4488 == 3 && (i_37_ != 0 || i_38_ != 0));
@@ -388,8 +388,8 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
                 if (this.anInt10260 != 0) i_52_ |= 0x2;
                 if (this.anInt10289 >= 0) i_52_ |= 0x7;
             } else i_52_ |= 0x7;
-            Class64 class64_53_ = (this.aClass64Array10323[2] = (class368.method3558(this.anInt10273, this.anInt10276, var_ha, i_52_, 3172, Class10.seqTypeList, this.anInt10224)));
-            if (class64_53_ != null) {
+            Model model_53_ = (this.aModelArray10323[2] = (class368.method3558(this.anInt10273, this.anInt10276, var_ha, i_52_, 3172, Class10.seqTypeList, this.anInt10224)));
+            if (model_53_ != null) {
                 if (this.anInt10289 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939[this.anInt10289]) != null)) {
                     int i_54_ = 0;
                     int i_55_ = 0;
@@ -408,20 +408,20 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
                         int i_57_ = i_39_;
                         if ((this.anIntArray10296 != null) && ((this.anIntArray10296[this.anInt10289]) != -1)) i_57_ = (this.anIntArray10296[(this.anInt10289)]);
                         int i_58_ = (0x3fff & -i_39_ + (i_57_ + 2048 * this.anInt10202));
-                        if (i_58_ != 0) class64_53_.a(i_58_);
-                        int i_59_ = Class70.anIntArray1207[i_58_];
-                        int i_60_ = Class70.anIntArray1204[i_58_];
+                        if (i_58_ != 0) model_53_.a(i_58_);
+                        int i_59_ = Class70.SIN[i_58_];
+                        int i_60_ = Class70.COS[i_58_];
                         int i_61_ = i_56_ * i_59_ - -(i_60_ * i_54_) >> 14;
                         i_56_ = i_60_ * i_56_ - i_59_ * i_54_ >> 14;
                         i_54_ = i_61_;
                     }
-                    class64_53_.H(i_54_, i_55_, i_56_);
-                } else if (this.anInt10202 != 0) class64_53_.a(2048 * this.anInt10202);
-                if (this.anInt10260 != 0) class64_53_.H(0, (-this.anInt10260 << 2), 0);
+                    model_53_.H(i_54_, i_55_, i_56_);
+                } else if (this.anInt10202 != 0) model_53_.a(2048 * this.anInt10202);
+                if (this.anInt10260 != 0) model_53_.H(0, (-this.anInt10260 << 2), 0);
                 if (bool_51_) {
-                    if (this.anInt10302 != 0) class64_53_.FA(this.anInt10302);
-                    if (this.anInt10208 != 0) class64_53_.VA(this.anInt10208);
-                    if (this.anInt10252 != 0) class64_53_.H(0, (this.anInt10252), 0);
+                    if (this.anInt10302 != 0) model_53_.FA(this.anInt10302);
+                    if (this.anInt10208 != 0) model_53_.VA(this.anInt10208);
+                    if (this.anInt10252 != 0) model_53_.H(0, (this.anInt10252), 0);
                 }
             }
         }

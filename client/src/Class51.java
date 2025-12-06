@@ -143,38 +143,38 @@ final class Class51 {
             synchronized (this.aObjectTypeList_933.aClass60_3361) {
                 class2 = (Class2) this.aObjectTypeList_933.aClass60_3361.method583(l, i_10_ + -25);
             }
-            Class64 class64 = class2 == null ? null : class2.aClass64_119;
+            Model model = class2 == null ? null : class2.aModel_119;
             r var_r = null;
-            if (class64 == null || var_ha.method3667(class64.ua(), i_11_) != 0) {
-                if (class64 != null) i_11_ = var_ha.method3679(i_11_, class64.ua());
+            if (model == null || var_ha.method3667(model.ua(), i_11_) != 0) {
+                if (model != null) i_11_ = var_ha.method3679(i_11_, model.ua());
                 int i_12_ = i_11_;
                 if (i == 10 && i_9_ > 3) i_12_ |= 0x5;
-                class64 = method477(i_9_, var_ha, i, i_10_ ^ ~0xec, i_12_);
-                if (class64 == null) return null;
-                if (i == 10 && i_9_ > 3) class64.a(2048);
-                if (bool) var_r = class64.ba(null);
-                class64.s(i_11_);
+                model = method477(i_9_, var_ha, i, i_10_ ^ ~0xec, i_12_);
+                if (model == null) return null;
+                if (i == 10 && i_9_ > 3) model.a(2048);
+                if (bool) var_r = model.ba(null);
+                model.s(i_11_);
                 class2 = new Class2();
-                class2.aClass64_119 = class64;
+                class2.aModel_119 = model;
                 class2.aR118 = var_r;
                 synchronized (this.aObjectTypeList_933.aClass60_3361) {
                     this.aObjectTypeList_933.aClass60_3361.method582(class2, l, (byte) -120);
                 }
             } else {
-                class64 = class2.aClass64_119;
+                model = class2.aModel_119;
                 var_r = class2.aR118;
-                if (bool && var_r == null) var_r = class2.aR118 = class64.ba(null);
+                if (bool && var_r == null) var_r = class2.aR118 = model.ba(null);
             }
             if (i_10_ != 128) method477(-4, null, 72, 42, -33);
             boolean bool_13_ = (aByte886 != 0 && (var_s_6_ != null || var_s != null));
             boolean bool_14_ = (anInt893 != 0 || anInt954 != 0 || anInt890 != 0);
             if (bool_13_ || bool_14_) {
-                class64 = class64.method614((byte) 0, i_11_, true);
-                if (bool_13_) class64.p(aByte886, anInt915, var_s_6_, var_s, i_5_, i_7_, i_8_);
-                if (bool_14_) class64.H(anInt893, anInt954, anInt890);
-                class64.s(i_4_);
-            } else class64 = class64.method614((byte) 0, i_4_, true);
-            Class348_Sub42.aClass2_7058.aClass64_119 = class64;
+                model = model.method614((byte) 0, i_11_, true);
+                if (bool_13_) model.p(aByte886, anInt915, var_s_6_, var_s, i_5_, i_7_, i_8_);
+                if (bool_14_) model.H(anInt893, anInt954, anInt890);
+                model.s(i_4_);
+            } else model = model.method614((byte) 0, i_4_, true);
+            Class348_Sub42.aClass2_7058.aModel_119 = model;
             Class348_Sub42.aClass2_7058.aR118 = var_r;
             return Class348_Sub42.aClass2_7058;
         } catch (RuntimeException runtimeexception) {
@@ -182,7 +182,7 @@ final class Class51 {
         }
     }
 
-    private final Class64 method477(int i, ha var_ha, int i_15_, int i_16_, int i_17_) {
+    private final Model method477(int i, ha var_ha, int i_15_, int i_16_, int i_17_) {
         anInt958++;
         int i_18_ = anInt949 - -64;
         int i_19_ = 850 + anInt880;
@@ -198,7 +198,7 @@ final class Class51 {
         if (aShortArray940 != null) i_17_ |= 0x4000;
         if (aShortArray919 != null) i_17_ |= 0x8000;
         if (aByte922 != 0) i_17_ |= 0x80000;
-        Class64 class64 = null;
+        Model model = null;
         if (aByteArray885 == null) return null;
         int i_21_ = -1;
         for (int i_22_ = 0; aByteArray885.length > i_22_; i_22_++) {
@@ -214,15 +214,15 @@ final class Class51 {
             for (int i_24_ = 0; i_23_ > i_24_; i_24_++)
                 l = l * 67783L + (long) anIntArrayArray907[i_21_][i_24_];
             synchronized (this.aObjectTypeList_933.aClass60_3360) {
-                class64 = (Class64) this.aObjectTypeList_933.aClass60_3360.method583(l, 78);
+                model = (Model) this.aObjectTypeList_933.aClass60_3360.method583(l, 78);
             }
-            if (class64 != null) {
-                if (i_18_ != class64.WA()) i_17_ |= 0x1000;
-                if (i_19_ != class64.da()) i_17_ |= 0x2000;
+            if (model != null) {
+                if (i_18_ != model.WA()) i_17_ |= 0x1000;
+                if (i_19_ != model.da()) i_17_ |= 0x2000;
             }
-            if (class64 == null || var_ha.method3667(class64.ua(), i_17_) != 0) {
+            if (model == null || var_ha.method3667(model.ua(), i_17_) != 0) {
                 int i_25_ = i_17_ | 0x1f01f;
-                if (class64 != null) i_25_ = var_ha.method3679(i_25_, class64.ua());
+                if (model != null) i_25_ = var_ha.method3679(i_25_, model.ua());
                 Mesh mesh = null;
                 synchronized (Class341.aMeshArray4236) {
                     for (int i_26_ = 0; i_26_ < i_23_; i_26_++) {
@@ -235,40 +235,40 @@ final class Class51 {
                     }
                     if (i_23_ > 1) mesh = new Mesh(Class341.aMeshArray4236, i_23_);
                 }
-                class64 = var_ha.method3625(mesh, i_25_, (this.aObjectTypeList_933.anInt3363), i_18_, i_19_);
+                model = var_ha.method3625(mesh, i_25_, (this.aObjectTypeList_933.anInt3363), i_18_, i_19_);
                 synchronized (this.aObjectTypeList_933.aClass60_3360) {
-                    this.aObjectTypeList_933.aClass60_3360.method582(class64, l, (byte) -95);
+                    this.aObjectTypeList_933.aClass60_3360.method582(model, l, (byte) -95);
                 }
             }
         }
-        Class64 class64_27_ = class64.method614((byte) 0, i_17_, true);
-        if (i_18_ != class64.WA()) class64_27_.C(i_18_);
-        if (class64.da() != i_19_) class64_27_.LA(i_19_);
-        if (bool) class64_27_.v();
+        Model model_27_ = model.method614((byte) 0, i_17_, true);
+        if (i_18_ != model.WA()) model_27_.C(i_18_);
+        if (model.da() != i_19_) model_27_.LA(i_19_);
+        if (bool) model_27_.v();
         if (i_15_ == 4 && i > 3) {
-            class64_27_.k(2048);
-            class64_27_.H(180, 0, -180);
+            model_27_.k(2048);
+            model_27_.H(180, 0, -180);
         }
         i &= 0x3;
-        if (i == 1) class64_27_.k(4096);
+        if (i == 1) model_27_.k(4096);
         else if (i != 2) {
-            if (i == 3) class64_27_.k(12288);
-        } else class64_27_.k(8192);
+            if (i == 3) model_27_.k(12288);
+        } else model_27_.k(8192);
         if (aShortArray940 != null) {
             for (int i_28_ = 0; aShortArray940.length > i_28_; i_28_++) {
-                if (aByteArray872 != null && aByteArray872.length > i_28_) class64_27_.ia(aShortArray940[i_28_], (Class348_Sub26.aShortArray6889[0xff & aByteArray872[i_28_]]));
-                else class64_27_.ia(aShortArray940[i_28_], aShortArray908[i_28_]);
+                if (aByteArray872 != null && aByteArray872.length > i_28_) model_27_.ia(aShortArray940[i_28_], (Class348_Sub26.aShortArray6889[0xff & aByteArray872[i_28_]]));
+                else model_27_.ia(aShortArray940[i_28_], aShortArray908[i_28_]);
             }
         }
         if (aShortArray919 != null) {
             for (int i_29_ = 0; i_29_ < aShortArray919.length; i_29_++)
-                class64_27_.aa(aShortArray919[i_29_], aShortArray892[i_29_]);
+                model_27_.aa(aShortArray919[i_29_], aShortArray892[i_29_]);
         }
-        if (aByte922 != 0) class64_27_.method624(aByte944, aByte952, aByte879, 0xff & aByte922);
-        if (anInt928 != 128 || anInt935 != 128 || anInt882 != 128) class64_27_.O(anInt928, anInt935, anInt882);
-        if (anInt900 != 0 || anInt873 != 0 || anInt946 != 0) class64_27_.H(anInt900, anInt873, anInt946);
-        class64_27_.s(i_20_);
-        return class64_27_;
+        if (aByte922 != 0) model_27_.method624(aByte944, aByte952, aByte879, 0xff & aByte922);
+        if (anInt928 != 128 || anInt935 != 128 || anInt882 != 128) model_27_.O(anInt928, anInt935, anInt882);
+        if (anInt900 != 0 || anInt873 != 0 || anInt946 != 0) model_27_.H(anInt900, anInt873, anInt946);
+        model_27_.s(i_20_);
+        return model_27_;
     }
 
     final boolean method478(int i, int i_30_) {
@@ -531,7 +531,7 @@ final class Class51 {
         if (i_38_ >= -93) aByteArray885 = null;
     }
 
-    final Class64 method483(int i, int i_63_, int i_64_, int i_65_, ha var_ha, int i_66_, int i_67_, byte i_68_, s var_s, int i_69_, int i_70_, int i_71_, Class17 class17, s var_s_72_) {
+    final Model method483(int i, int i_63_, int i_64_, int i_65_, ha var_ha, int i_66_, int i_67_, byte i_68_, s var_s, int i_69_, int i_70_, int i_71_, Class17 class17, s var_s_72_) {
         try {
             if (Class104.method955(22311, i_64_)) i_64_ = 4;
             anInt910++;
@@ -545,47 +545,47 @@ final class Class51 {
                 if (anInt890 != 0) i_67_ |= 0x4;
             } else i_67_ |= 0x7;
             if (i_64_ == 10 && i_66_ > 3) i_67_ |= 0x5;
-            Class64 class64;
+            Model model;
             synchronized (this.aObjectTypeList_933.aClass60_3362) {
-                class64 = (Class64) this.aObjectTypeList_933.aClass60_3362.method583(l, 100);
+                model = (Model) this.aObjectTypeList_933.aClass60_3362.method583(l, 100);
             }
-            if (class64 == null || var_ha.method3667(class64.ua(), i_67_) != 0) {
-                if (class64 != null) i_67_ = var_ha.method3679(i_67_, class64.ua());
-                class64 = method477(i_66_, var_ha, i_64_, -125, i_67_);
-                if (class64 == null) return null;
+            if (model == null || var_ha.method3667(model.ua(), i_67_) != 0) {
+                if (model != null) i_67_ = var_ha.method3679(i_67_, model.ua());
+                model = method477(i_66_, var_ha, i_64_, -125, i_67_);
+                if (model == null) return null;
                 synchronized (this.aObjectTypeList_933.aClass60_3362) {
-                    this.aObjectTypeList_933.aClass60_3362.method582(class64, l, (byte) -127);
+                    this.aObjectTypeList_933.aClass60_3362.method582(model, l, (byte) -127);
                 }
             }
             boolean bool = false;
             if (i_68_ <= 38) return null;
             if (class17 != null) {
-                class64 = class17.method266(class64, 0x3 & i_66_, i, (byte) 1, i_70_, i_63_, 663780816, i_67_);
+                model = class17.method266(model, 0x3 & i_66_, i, (byte) 1, i_70_, i_63_, 663780816, i_67_);
                 bool = true;
             }
             if (i_64_ == 10 && i_66_ > 3) {
                 if (!bool) {
-                    class64 = class64.method614((byte) 3, i_67_, true);
+                    model = model.method614((byte) 3, i_67_, true);
                     bool = true;
                 }
-                class64.a(2048);
+                model.a(2048);
             }
             if (aByte886 != 0) {
                 if (!bool) {
                     bool = true;
-                    class64 = class64.method614((byte) 3, i_67_, true);
+                    model = model.method614((byte) 3, i_67_, true);
                 }
-                class64.p(aByte886, anInt915, var_s_72_, var_s, i_71_, i_65_, i_69_);
+                model.p(aByte886, anInt915, var_s_72_, var_s, i_71_, i_65_, i_69_);
             }
             if (anInt893 != 0 || anInt954 != 0 || anInt890 != 0) {
                 if (!bool) {
                     bool = true;
-                    class64 = class64.method614((byte) 3, i_67_, true);
+                    model = model.method614((byte) 3, i_67_, true);
                 }
-                class64.H(anInt893, anInt954, anInt890);
+                model.H(anInt893, anInt954, anInt890);
             }
-            if (bool) class64.s(i_73_);
-            return class64;
+            if (bool) model.s(i_73_);
+            return model;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (var_s != null ? "{...}" : "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (class17 != null ? "{...}" : "null") + ',' + (var_s_72_ != null ? "{...}" : "null") + ')'));
         }

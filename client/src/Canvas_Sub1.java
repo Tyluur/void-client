@@ -100,25 +100,25 @@ final class Canvas_Sub1 extends Canvas {
         anInt65++;
     }
 
-    static final Class64 method122(int i, int i_13_, int i_14_, int i_15_, int i_16_, byte i_17_, ha var_ha) {
+    static final Model method122(int i, int i_13_, int i_14_, int i_15_, int i_16_, byte i_17_, ha var_ha) {
         anInt62++;
         if (i_17_ != -35) anInt70 = 10;
         long l = i_16_;
-        Class64 class64 = (Class64) Class15.aClass60_225.method583(l, 81);
+        Model model = (Model) Class15.aClass60_225.method583(l, 81);
         int i_18_ = 2055;
-        if (class64 == null) {
+        if (model == null) {
             Mesh mesh = Class300.method2277(0, aa_Sub3.MODELS, i_16_, -1);
             if (mesh == null) return null;
             if (mesh.version < 13) mesh.method1092(2, 105);
-            class64 = var_ha.method3625(mesh, i_18_, Class171.anInt2275, 64, 768);
-            Class15.aClass60_225.method582(class64, l, (byte) -122);
+            model = var_ha.method3625(mesh, i_18_, Class171.anInt2275, 64, 768);
+            Class15.aClass60_225.method582(model, l, (byte) -122);
         }
-        class64 = class64.method614((byte) 2, i_18_, true);
-        if (i_15_ != 0) class64.a(i_15_);
-        if (i_13_ != 0) class64.FA(i_13_);
-        if (i_14_ != 0) class64.VA(i_14_);
-        if (i != 0) class64.H(0, i, 0);
-        return class64;
+        model = model.method614((byte) 2, i_18_, true);
+        if (i_15_ != 0) model.a(i_15_);
+        if (i_13_ != 0) model.FA(i_13_);
+        if (i_14_ != 0) model.VA(i_14_);
+        if (i != 0) model.H(0, i, 0);
+        return model;
     }
 
     static final void method123(int i) {

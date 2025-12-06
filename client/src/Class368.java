@@ -32,7 +32,7 @@ final class Class368 {
     private int anInt4512;
     GfxTypeList aGfxTypeList_4513;
 
-    final Class64 method3558(int i, int i_0_, ha var_ha, int i_1_, int i_2_, SeqTypeList seqTypeList, int i_3_) {
+    final Model method3558(int i, int i_0_, ha var_ha, int i_1_, int i_2_, SeqTypeList seqTypeList, int i_3_) {
         try {
             if (i_2_ != 3172) aShortArray4504 = null;
             anInt4505++;
@@ -69,7 +69,7 @@ final class Class368 {
         return class46.aStringArray833[i];
     }
 
-    final Class64 method3562(int i, ha var_ha, int i_5_, int i_6_, int i_7_, SeqTypeList seqTypeList, byte i_8_) {
+    final Model method3562(int i, ha var_ha, int i_5_, int i_6_, int i_7_, SeqTypeList seqTypeList, byte i_8_) {
         try {
             if (i_8_ <= 24) return null;
             anInt4511++;
@@ -138,7 +138,7 @@ final class Class368 {
         }
     }
 
-    final Class64 method3565(int i, int i_16_, int i_17_, int i_18_, boolean bool, ha var_ha, int i_19_, int i_20_, int i_21_, SeqTypeList seqTypeList, s var_s, int i_22_, s var_s_23_) {
+    final Model method3565(int i, int i_16_, int i_17_, int i_18_, boolean bool, ha var_ha, int i_19_, int i_20_, int i_21_, SeqTypeList seqTypeList, s var_s, int i_22_, s var_s_23_) {
         try {
             anInt4496++;
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, (byte) 54, null, -17, true, -42, (byte) 95, -81);
@@ -158,7 +158,7 @@ final class Class368 {
         anInt4512 = 0;
     }
 
-    private final Class64 method3566(ha var_ha, int i, int i_24_, s var_s, int i_25_, SeqTypeList seqTypeList, int i_26_, byte i_27_, s var_s_28_, int i_29_, boolean bool, int i_30_, byte i_31_, int i_32_) {
+    private final Model method3566(ha var_ha, int i, int i_24_, s var_s, int i_25_, SeqTypeList seqTypeList, int i_26_, byte i_27_, s var_s_28_, int i_29_, boolean bool, int i_30_, byte i_31_, int i_32_) {
         try {
             anInt4491++;
             int i_33_ = i_24_;
@@ -168,43 +168,43 @@ final class Class368 {
             if (bool) i_33_ = i_33_ | (this.aByte4488 != 3 ? 2 : 7);
             if (anInt4492 != 128) i_33_ |= 0x2;
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ |= 0x5;
-            Class64 class64;
+            Model model;
             synchronized (this.aGfxTypeList_4513.aClass60_3990) {
-                class64 = ((Class64) (this.aGfxTypeList_4513.aClass60_3990.method583(this.anInt4501 |= var_ha.anInt4567 << 29, -122)));
+                model = ((Model) (this.aGfxTypeList_4513.aClass60_3990.method583(this.anInt4501 |= var_ha.anInt4567 << 29, -122)));
             }
-            if (class64 == null || var_ha.method3667(class64.ua(), i_33_) != 0) {
-                if (class64 != null) i_33_ = var_ha.method3679(i_33_, class64.ua());
+            if (model == null || var_ha.method3667(model.ua(), i_33_) != 0) {
+                if (model != null) i_33_ = var_ha.method3679(i_33_, model.ua());
                 int i_34_ = i_33_;
                 if (aShortArray4490 != null) i_34_ |= 0x4000;
                 if (aShortArray4499 != null) i_34_ |= 0x8000;
                 Mesh mesh = Class300.method2277(0, (this.aGfxTypeList_4513.aIndex_3981), anInt4506, -1);
                 if (mesh == null) return null;
                 if (mesh.version < 13) mesh.method1092(2, 114);
-                class64 = var_ha.method3625(mesh, i_34_, (this.aGfxTypeList_4513.anInt3991), 64 + anInt4489, anInt4512 - -850);
+                model = var_ha.method3625(mesh, i_34_, (this.aGfxTypeList_4513.anInt3991), 64 + anInt4489, anInt4512 - -850);
                 if (aShortArray4490 != null) {
                     for (int i_35_ = 0; (i_35_ < aShortArray4490.length); i_35_++)
-                        class64.ia(aShortArray4490[i_35_], aShortArray4502[i_35_]);
+                        model.ia(aShortArray4490[i_35_], aShortArray4502[i_35_]);
                 }
                 if (aShortArray4499 != null) {
                     for (int i_36_ = 0; (aShortArray4499.length > i_36_); i_36_++)
-                        class64.aa(aShortArray4499[i_36_], aShortArray4504[i_36_]);
+                        model.aa(aShortArray4499[i_36_], aShortArray4504[i_36_]);
                 }
-                class64.s(i_33_);
+                model.s(i_33_);
                 synchronized (this.aGfxTypeList_4513.aClass60_3990) {
-                    this.aGfxTypeList_4513.aClass60_3990.method582(class64, this.anInt4501 |= var_ha.anInt4567 << 29, (byte) -113);
+                    this.aGfxTypeList_4513.aClass60_3990.method582(model, this.anInt4501 |= var_ha.anInt4567 << 29, (byte) -113);
                 }
             }
             if (i_31_ != -68) return null;
-            Class64 class64_37_ = (class17 != null ? class17.method266(class64, 0, i_32_, i_27_, i, i_26_, 663780816, i_33_) : class64.method614(i_27_, i_33_, true));
-            if (anInt4498 != 128 || anInt4492 != 128) class64_37_.O(anInt4498, anInt4492, anInt4498);
+            Model model_37_ = (class17 != null ? class17.method266(model, 0, i_32_, i_27_, i, i_26_, 663780816, i_33_) : model.method614(i_27_, i_33_, true));
+            if (anInt4498 != 128 || anInt4492 != 128) model_37_.O(anInt4498, anInt4492, anInt4498);
             if (anInt4508 != 0) {
-                if (anInt4508 == 90) class64_37_.a(4096);
-                if (anInt4508 == 180) class64_37_.a(8192);
-                if (anInt4508 == 270) class64_37_.a(12288);
+                if (anInt4508 == 90) model_37_.a(4096);
+                if (anInt4508 == 180) model_37_.a(8192);
+                if (anInt4508 == 270) model_37_.a(12288);
             }
-            if (bool) class64_37_.p(this.aByte4488, anInt4507, var_s_28_, var_s, i_30_, i_29_, i_25_);
-            class64_37_.s(i_24_);
-            return class64_37_;
+            if (bool) model_37_.p(this.aByte4488, anInt4507, var_s_28_, var_s, i_30_, i_29_, i_25_);
+            model_37_.s(i_24_);
+            return model_37_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("fk.I(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_24_ + ',' + (var_s != null ? "{...}" : "null") + ',' + i_25_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_26_ + ',' + i_27_ + ',' + (var_s_28_ != null ? "{...}" : "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'));
         }

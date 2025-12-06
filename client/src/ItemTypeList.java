@@ -161,15 +161,15 @@ final class ItemTypeList {
         }
     }
 
-    static final void method1935(int i, int i_10_, Class30 class30, Class64 class64, boolean bool, int i_11_) {
+    static final void method1935(int i, int i_10_, Class30 class30, Model model, boolean bool, int i_11_) {
         try {
             anInt3270++;
-            if (class64 != null) {
+            if (model != null) {
                 if (bool != false) method1929((byte) 106);
-                class30.method320(class64.EA(), class64.fa(), (byte) -4, i_11_, class64.na(), i, class64.V(), class64.G(), class64.HA(), i_10_, class64.RA());
+                class30.method320(model.EA(), model.fa(), (byte) -4, i_11_, model.na(), i, model.V(), model.G(), model.HA(), i_10_, model.RA());
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (class30 != null ? "{...}" : "null") + ',' + (class64 != null ? "{...}" : "null") + ',' + bool + ',' + i_11_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ub.H(" + i + ',' + i_10_ + ',' + (class30 != null ? "{...}" : "null") + ',' + (model != null ? "{...}" : "null") + ',' + bool + ',' + i_11_ + ')'));
         }
     }
 

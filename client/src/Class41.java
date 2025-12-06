@@ -3,17 +3,17 @@
  */
 
 final class Class41 {
-    int anInt559;
-    int anInt560;
-    int anInt561;
+    int z;
+    int y;
+    int x;
 
     public Class41() {
         /* empty */
     }
 
     Class41(Class41 class41_0_) {
-        this.anInt561 = class41_0_.anInt561;
-        this.anInt560 = class41_0_.anInt560;
-        this.anInt559 = class41_0_.anInt559;
+        this.x = class41_0_.x;
+        this.y = class41_0_.y;
+        this.z = class41_0_.z;
     }
 }

@@ -217,8 +217,8 @@ final class ItemDefinition {
             }
         }
         if (mesh == null) return null;
-        if (!bool && (anInt2807 != 0 || anInt2797 != 0 || anInt2808 != 0)) mesh.method1099((byte) 110, anInt2808, anInt2807, anInt2797);
-        if (bool && (anInt2803 != 0 || anInt2753 != 0 || anInt2823 != 0)) mesh.method1099((byte) 24, anInt2823, anInt2803, anInt2753);
+        if (!bool && (anInt2807 != 0 || anInt2797 != 0 || anInt2808 != 0)) mesh.translate((byte) 110, anInt2808, anInt2807, anInt2797);
+        if (bool && (anInt2803 != 0 || anInt2753 != 0 || anInt2823 != 0)) mesh.translate((byte) 24, anInt2823, anInt2803, anInt2753);
         if (aShortArray2777 != null) {
             for (int i_18_ = 0; aShortArray2777.length > i_18_; i_18_++)
                 mesh.method1098(aShortArray2777[i_18_], (byte) 126, aShortArray2771[i_18_]);
@@ -230,7 +230,7 @@ final class ItemDefinition {
         return mesh;
     }
 
-    final Class64 method1559(Class154 class154, Class17 class17, ha var_ha, int i, int i_20_, int i_21_, int i_22_, byte i_23_, int i_24_) {
+    final Model method1559(Class154 class154, Class17 class17, ha var_ha, int i, int i_20_, int i_21_, int i_22_, byte i_23_, int i_24_) {
         try {
             anInt2813++;
             if (this.anIntArray2762 != null && i_21_ > 1) {
@@ -243,12 +243,12 @@ final class ItemDefinition {
             if (i_23_ != 88) this.aString2795 = null;
             int i_27_ = i;
             if (class17 != null) i_27_ |= class17.method263(i_24_, 105, i_22_, true);
-            Class64 class64;
+            Model model;
             synchronized (this.aItemTypeList_2761.aClass60_3287) {
-                class64 = (Class64) (this.aItemTypeList_2761.aClass60_3287.method583(var_ha.anInt4567 << 29 | this.anInt2769, 69));
+                model = (Model) (this.aItemTypeList_2761.aClass60_3287.method583(var_ha.anInt4567 << 29 | this.anInt2769, 69));
             }
-            if (class64 == null || var_ha.method3667(class64.ua(), i_27_) != 0) {
-                if (class64 != null) i_27_ = var_ha.method3679(i_27_, class64.ua());
+            if (model == null || var_ha.method3667(model.ua(), i_27_) != 0) {
+                if (model != null) i_27_ = var_ha.method3679(i_27_, model.ua());
                 int i_28_ = i_27_;
                 if (aShortArray2785 != null) i_28_ |= 0x8000;
                 if (aShortArray2777 != null || class154 != null) i_28_ |= 0x4000;
@@ -258,33 +258,33 @@ final class ItemDefinition {
                 Mesh mesh = Class300.method2277(0, (this.aItemTypeList_2761.aIndex_3268), anInt2756, -1);
                 if (mesh == null) return null;
                 if (mesh.version < 13) mesh.method1092(2, 97);
-                class64 = var_ha.method3625(mesh, i_28_, (this.aItemTypeList_2761.anInt3291), anInt2791 + 64, 850 - -anInt2824);
-                if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) class64.O(anInt2786, anInt2794, anInt2765);
+                model = var_ha.method3625(mesh, i_28_, (this.aItemTypeList_2761.anInt3291), anInt2791 + 64, 850 - -anInt2824);
+                if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) model.O(anInt2786, anInt2794, anInt2765);
                 if (aShortArray2777 != null) {
                     for (int i_29_ = 0; (i_29_ < aShortArray2777.length); i_29_++) {
-                        if (aByteArray2821 == null || aByteArray2821.length <= i_29_) class64.ia(aShortArray2777[i_29_], aShortArray2771[i_29_]);
-                        else class64.ia(aShortArray2777[i_29_], (Class336.aShortArray4172[aByteArray2821[i_29_] & 0xff]));
+                        if (aByteArray2821 == null || aByteArray2821.length <= i_29_) model.ia(aShortArray2777[i_29_], aShortArray2771[i_29_]);
+                        else model.ia(aShortArray2777[i_29_], (Class336.aShortArray4172[aByteArray2821[i_29_] & 0xff]));
                     }
                 }
                 if (aShortArray2785 != null) {
                     for (int i_30_ = 0; aShortArray2785.length > i_30_; i_30_++)
-                        class64.aa(aShortArray2785[i_30_], aShortArray2801[i_30_]);
+                        model.aa(aShortArray2785[i_30_], aShortArray2801[i_30_]);
                 }
                 if (class154 != null) {
                     for (int i_31_ = 0; i_31_ < 5; i_31_++) {
                         for (int i_32_ = 0; (Class367_Sub2.aShortArrayArrayArray7290.length > i_32_); i_32_++) {
-                            if (class154.anIntArray2095[i_31_] < (Class367_Sub2.aShortArrayArrayArray7290[i_32_][i_31_]).length) class64.ia((Class136.aShortArrayArray4791[i_32_][i_31_]), (Class367_Sub2.aShortArrayArrayArray7290[i_32_][i_31_][(class154.anIntArray2095[i_31_])]));
+                            if (class154.anIntArray2095[i_31_] < (Class367_Sub2.aShortArrayArrayArray7290[i_32_][i_31_]).length) model.ia((Class136.aShortArrayArray4791[i_32_][i_31_]), (Class367_Sub2.aShortArrayArrayArray7290[i_32_][i_31_][(class154.anIntArray2095[i_31_])]));
                         }
                     }
                 }
-                class64.s(i_27_);
+                model.s(i_27_);
                 synchronized (this.aItemTypeList_2761.aClass60_3287) {
-                    this.aItemTypeList_2761.aClass60_3287.method582(class64, var_ha.anInt4567 << 29 | this.anInt2769, (byte) -111);
+                    this.aItemTypeList_2761.aClass60_3287.method582(model, var_ha.anInt4567 << 29 | this.anInt2769, (byte) -111);
                 }
             }
-            if (class17 != null) class64 = class17.method269(116, class64, i_24_, i_20_, i_27_, i_22_);
-            class64.s(i);
-            return class64;
+            if (class17 != null) model = class17.method269(116, model, i_24_, i_20_, i_27_, i_22_);
+            model.s(i);
+            return model;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("rq.S(" + (class154 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'));
         }
@@ -345,9 +345,9 @@ final class ItemDefinition {
                 i_46_ |= 0x7;
                 bool_47_ = true;
             }
-            Class64 class64 = var_ha_38_.method3625(mesh, i_46_, 64, anInt2791 + 64, 768 + anInt2824);
-            if (!class64.method618()) return null;
-            if (bool_47_) class64.O(anInt2786, anInt2794, anInt2765);
+            Model model = var_ha_38_.method3625(mesh, i_46_, 64, anInt2791 + 64, 768 + anInt2824);
+            if (!model.method618()) return null;
+            if (bool_47_) model.O(anInt2786, anInt2794, anInt2765);
             Sprite sprite = null;
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
@@ -372,7 +372,7 @@ final class ItemDefinition {
             Class101 class101_49_ = var_ha_38_.method3705();
             class101_49_.method902(-this.anInt2810 << 3);
             class101_49_.method896(this.anInt2781 << 3);
-            class101_49_.method891(this.anInt2779 << 2, ((i_48_ * (Class70.anIntArray1207[this.anInt2787 << 3]) >> 14) - class64.fa() / 2 + (this.anInt2826 << 2)), ((i_48_ * (Class70.anIntArray1204[this.anInt2787 << 3]) >> 14) - -(this.anInt2826 << 2)));
+            class101_49_.method891(this.anInt2779 << 2, ((i_48_ * (Class70.SIN[this.anInt2787 << 3]) >> 14) - model.fa() / 2 + (this.anInt2826 << 2)), ((i_48_ * (Class70.COS[this.anInt2787 << 3]) >> 14) - -(this.anInt2826 << 2)));
             class101_49_.method900(this.anInt2787 << 3);
             int i_50_ = var_ha_38_.i();
             int i_51_ = var_ha_38_.XA();
@@ -380,7 +380,7 @@ final class ItemDefinition {
             var_ha_38_.ya();
             var_ha_38_.la();
             var_ha_38_.aa(0, 0, 36, 32, 0, 0);
-            class64.method615(class101_49_, null, 1);
+            model.method615(class101_49_, null, 1);
             var_ha_38_.f(i_50_, i_51_);
             int[] is = var_ha_38_.na(0, 0, 36, 32);
             if (i_40_ != -102) method1554(false, 37);

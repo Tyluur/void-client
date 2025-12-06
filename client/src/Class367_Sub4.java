@@ -223,9 +223,9 @@ final class Class367_Sub4 extends Class367 {
                 if (i_36_ < Class156.anIntArray2117[i_15_]) Class156.anIntArray2117[i_15_] = i_36_;
                 else if (i_36_ > Class348_Sub40_Sub19.anIntArray9259[i_15_]) Class348_Sub40_Sub19.anIntArray9259[i_15_] = i_36_;
                 int i_37_ = i_22_ << 9;
-                if (i_37_ >= Class64.anIntArray1127[i_15_]) {
+                if (i_37_ >= Model.anIntArray1127[i_15_]) {
                     if (LoadState.anIntArray1045[i_15_] < i_37_) LoadState.anIntArray1045[i_15_] = i_37_;
-                } else Class64.anIntArray1127[i_15_] = i_37_;
+                } else Model.anIntArray1127[i_15_] = i_37_;
             }
             if (!bool_24_) {
                 if (i_19_ >= 1 && (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - 1][i_22_]) != i_16_) {
@@ -288,7 +288,7 @@ final class Class367_Sub4 extends Class367 {
             Class156.anIntArray2117[i_15_] -= 512;
             Class348_Sub40_Sub19.anIntArray9259[i_15_] += 512;
             LoadState.anIntArray1045[i_15_] += 512;
-            Class64.anIntArray1127[i_15_] -= 512;
+            Model.anIntArray1127[i_15_] -= 512;
         }
         return true;
     }
@@ -308,7 +308,7 @@ final class Class367_Sub4 extends Class367 {
             byte[] is = Class348_Sub24.method2992(string, (byte) -20);
             int i_39_ = 1 % ((-6 - i) / 63);
             packet.method3381(5537, is.length);
-            packet.pos += (Class64.aClass296_1131.method2227(is.length, 0, packet.pos, is, 103, packet.aByteArray7154));
+            packet.pos += (Model.aClass296_1131.method2227(is.length, 0, packet.pos, is, 103, packet.aByteArray7154));
             return packet.pos + -i_38_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("bk.O(" + (packet != null ? "{...}" : "null") + ',' + i + ',' + (string != null ? "{...}" : "null") + ')'));

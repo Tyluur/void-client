@@ -167,7 +167,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
             int i_12_ = packet.readSmart(-122);
             if (i < i_12_) i_12_ = i;
             byte[] is = new byte[i_12_];
-            packet.pos += (Class64.aClass296_1131.method2226(is, packet.pos, packet.aByteArray7154, i_12_, -1, 0));
+            packet.pos += (Model.aClass296_1131.method2226(is, packet.pos, packet.aByteArray7154, i_12_, -1, 0));
             String string = Class367_Sub8.method3546(is, 0, i_12_, 0);
             return string;
         } catch (Exception exception) {

@@ -1086,7 +1086,7 @@ abstract class ha_Sub3 extends ha {
         }
     }
 
-    final Class64 method3625(Mesh mesh, int i, int i_87_, int i_88_, int i_89_) {
+    final Model method3625(Mesh mesh, int i, int i_87_, int i_88_, int i_89_) {
         try {
             anInt8016++;
             return new Class64_Sub2(this, mesh, i, i_88_, i_89_, i_87_);
@@ -1726,7 +1726,7 @@ abstract class ha_Sub3 extends ha {
         do {
             try {
                 anInt8028++;
-                Class64.aClass296_1131 = class296;
+                Model.aClass296_1131 = class296;
                 if (i == 13) break;
                 method3873(null, -3);
             } catch (RuntimeException runtimeexception) {

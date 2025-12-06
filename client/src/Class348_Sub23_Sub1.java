@@ -31,11 +31,11 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
     private double aDouble9005;
     private final VorbisInfo aVorbisInfo9006 = new VorbisInfo();
 
-    static final Class30 method2967(int i, Class64 class64, int i_0_, int i_1_, int i_2_) {
+    static final Class30 method2967(int i, Model model, int i_0_, int i_1_, int i_2_) {
         anInt8991++;
         if (i_2_ != 2) aByteArrayArray8996 = null;
-        if (class64 == null) return null;
-        Class30 class30 = new Class30(i, i_1_, i_0_, class64.na(), class64.V(), class64.RA(), class64.fa(), class64.EA(), class64.HA(), class64.G());
+        if (model == null) return null;
+        Class30 class30 = new Class30(i, i_1_, i_0_, model.na(), model.V(), model.RA(), model.fa(), model.EA(), model.HA(), model.G());
         return class30;
     }
 

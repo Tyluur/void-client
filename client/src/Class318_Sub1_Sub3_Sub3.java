@@ -126,7 +126,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
     int[] anIntArray10320;
     byte[] aByteArray10321;
     int anInt10322;
-    Class64[] aClass64Array10323;
+    Model[] aModelArray10323;
     boolean aBoolean10324;
     int anInt10325;
     int anInt10326;
@@ -204,8 +204,8 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         anInt10263++;
         int i_19_ = ((this.aShort8743 + this.aShort8751) >> 1);
         int i_20_ = ((this.aShort8750 + this.aShort8747) >> 1);
-        int i_21_ = Class70.anIntArray1207[i];
-        int i_22_ = Class70.anIntArray1204[i];
+        int i_21_ = Class70.SIN[i];
+        int i_22_ = Class70.COS[i];
         int i_23_ = -i_14_ / 2;
         int i_24_ = -i_16_ / 2;
         int i_25_ = i_23_ * i_22_ + i_24_ * i_21_ >> 14;
@@ -331,7 +331,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         this.aBoolean10324 = false;
         this.aByteArray10321 = new byte[10];
         this.anInt10325 = 0;
-        this.aClass64Array10323 = new Class64[3];
+        this.aModelArray10323 = new Model[3];
         this.anInt10319 = 0;
         this.anIntArray10320 = new int[10];
         this.anInt10326 = 0;
@@ -415,23 +415,23 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         }
     }
 
-    final void method2432(ha var_ha, int i, Class101 class101, boolean bool, Class64[] class64s) {
+    final void method2432(ha var_ha, int i, Class101 class101, boolean bool, Model[] models) {
         do {
             try {
                 if (i == -15074) {
                     anInt10256++;
                     if (!bool) {
-                        Class64 class64 = class64s[0];
-                        Class64 class64_65_ = class64s[1];
-                        Class64 class64_66_ = class64s[2];
-                        if (class64 != null) {
-                            class64.method620(class101);
+                        Model model = models[0];
+                        Model model_65_ = models[1];
+                        Model model_66_ = models[2];
+                        if (model != null) {
+                            model.method620(class101);
                             int i_67_ = 0;
                             int i_68_ = 0;
                             int i_69_ = 0;
                             int i_70_ = 0;
-                            ModelParticleEmitter[] modelParticleEmitters = class64.method619();
-                            ModelParticleEffector[] modelParticleEffectors = class64.method604();
+                            ModelParticleEmitter[] modelParticleEmitters = model.method619();
+                            ModelParticleEffector[] modelParticleEffectors = model.method604();
                             if (modelParticleEffectors != null) {
                                 i_70_++;
                                 i_69_ += modelParticleEffectors.length;
@@ -442,10 +442,10 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                             }
                             ModelParticleEmitter[] modelParticleEmitterS_71_ = null;
                             ModelParticleEffector[] modelParticleEffectorS_72_ = null;
-                            if (class64_65_ != null) {
-                                class64_65_.method620(class101);
-                                modelParticleEmitterS_71_ = class64_65_.method619();
-                                modelParticleEffectorS_72_ = class64_65_.method604();
+                            if (model_65_ != null) {
+                                model_65_.method620(class101);
+                                modelParticleEmitterS_71_ = model_65_.method619();
+                                modelParticleEffectorS_72_ = model_65_.method604();
                             }
                             if (modelParticleEffectorS_72_ != null) {
                                 i_70_++;
@@ -457,10 +457,10 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                             }
                             ModelParticleEmitter[] modelParticleEmitterS_73_ = null;
                             ModelParticleEffector[] modelParticleEffectorS_74_ = null;
-                            if (class64_66_ != null) {
-                                class64_66_.method620(class101);
-                                modelParticleEmitterS_73_ = class64_66_.method619();
-                                modelParticleEffectorS_74_ = class64_66_.method604();
+                            if (model_66_ != null) {
+                                model_66_.method620(class101);
+                                modelParticleEmitterS_73_ = model_66_.method619();
+                                modelParticleEffectorS_74_ = model_66_.method604();
                             }
                             if (modelParticleEffectorS_74_ != null) {
                                 i_70_++;
@@ -517,7 +517,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                     this.aClass318_Sub10_10327.method2533(this.plane, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class101 != null ? "{...}" : "null") + ',' + bool + ',' + (class64s != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("kda.L(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class101 != null ? "{...}" : "null") + ',' + bool + ',' + (models != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -776,21 +776,21 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         }
     }
 
-    final void method2439(int i, Class64 class64) {
+    final void method2439(int i, Model model) {
         try {
             anInt10205++;
             int i_115_ = aClass264_10315.anInt3370;
             if (i >= -110) this.anInt10325 = 90;
             int i_116_ = aClass264_10316.anInt3370;
             if (i_115_ != 0 || i_116_ != 0) {
-                int i_117_ = class64.fa() / 2;
-                class64.H(0, -i_117_, 0);
-                class64.VA(0x3fff & i_115_);
-                class64.FA(0x3fff & i_116_);
-                class64.H(0, i_117_, 0);
+                int i_117_ = model.fa() / 2;
+                model.H(0, -i_117_, 0);
+                model.VA(0x3fff & i_115_);
+                model.FA(0x3fff & i_116_);
+                model.H(0, i_117_, 0);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kda.GB(" + i + ',' + (class64 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kda.GB(" + i + ',' + (model != null ? "{...}" : "null") + ')'));
         }
     }
 

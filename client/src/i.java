@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class i extends Class64 implements Interface19 {
+final class i extends Model implements Interface19 {
     private final oa anOa5117;
     ModelParticleEffector[] aModelParticleEffectorArray5118;
     long nativeid;
@@ -29,8 +29,8 @@ final class i extends Class64 implements Interface19 {
 
     final native void ZA(i var_i_2_, i var_i_3_, int i, boolean bool, boolean bool_4_);
 
-    final void method613(Class64 class64, int i, int i_5_, int i_6_, boolean bool) {
-        anOa5117.method3973().method144(this, class64, i, i_5_, i_6_, bool);
+    final void method613(Model model, int i, int i_5_, int i_6_, boolean bool) {
+        anOa5117.method3973().method144(this, model, i, i_5_, i_6_, bool);
     }
 
     final native void aa(short i, short i_7_);
@@ -86,7 +86,7 @@ final class i extends Class64 implements Interface19 {
         return anOa5117.method3973().method146(this, i, i_19_, class101, bool);
     }
 
-    final Class64 method614(byte i, int i_21_, boolean bool) {
+    final Model method614(byte i, int i_21_, boolean bool) {
         return anOa5117.method3973().method152(this, i, i_21_, bool);
     }
 

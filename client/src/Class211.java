@@ -313,7 +313,7 @@ final class Class211 {
                         do {
                             do {
                                 if (i_42_ == 1) {
-                                    i_40_ = ((Class70.anIntArray1207[i_41_ << 3]) >> 4) + 1024;
+                                    i_40_ = ((Class70.SIN[i_41_ << 3]) >> 4) + 1024;
                                     break while_74_;
                                 } else if (i_42_ != 3) {
                                     if (i_42_ != 4) {

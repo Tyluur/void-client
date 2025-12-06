@@ -55,8 +55,12 @@ final class Class300 {
     static final Mesh method2277(int i, Index index, int i_5_, int i_6_) {
         if (i_6_ != -1) aBoolean3819 = true;
         anInt3815++;
+        System.out.println("Load mesh for model:" + i_5_);
         byte[] is = index.method410(-1860, i_5_, i);
         if (is == null) return null;
+        if (i_5_ == 5409) {
+            System.out.println("Debug");
+        }
         return new Mesh(is);
     }
 

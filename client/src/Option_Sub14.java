@@ -80,7 +80,7 @@ final class Option_Sub14 extends Option {
             Class348_Sub8.aHa6654.xa(1.0F);
             if (i_1_ >= -66) aClass190_5990 = null;
             Class348_Sub8.aHa6654.ZA(16777215, 0.5F, 0.5F, 20.0F, -50.0F, 30.0F);
-            Class64 class64 = Class348_Sub8.aHa6654.method3625(mesh, 2048, 64, 64, 768);
+            Model model = Class348_Sub8.aHa6654.method3625(mesh, 2048, 64, 64, 768);
             int i_3_ = 0;
             while_80_:
             for (int i_4_ = 0; i_4_ < 500; i_4_++) {
@@ -90,7 +90,7 @@ final class Option_Sub14 extends Option {
                     for (int i_6_ = 0; i_6_ <= i_5_; i_6_++) {
                         Class50_Sub1.aClass101_5209.method894((int) ((-((float) i_5_ / 2.0F) + (float) i_6_) * (float) Class270.anInt3465), 0, (i_5_ + 1) * Class270.anInt3465);
                         i_3_++;
-                        class64.method615(Class50_Sub1.aClass101_5209, null, 0);
+                        model.method615(Class50_Sub1.aClass101_5209, null, 0);
                         if (Class62.safeTime(-105) + -l >= (long) i_2_) break while_80_;
                     }
                 }

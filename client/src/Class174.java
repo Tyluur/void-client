@@ -64,7 +64,7 @@ final class Class174 {
         try {
             if (i != 26073) aSprite_2309 = null;
             anInt2295++;
-            Class64.method607(strings.length + -1, strings, is, 0, false);
+            Model.method607(strings.length + -1, strings, is, 0, false);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("po.B(" + (is != null ? "{...}" : "null") + ',' + i + ',' + (strings != null ? "{...}" : "null") + ')'));
         }
@@ -109,7 +109,7 @@ final class Class174 {
 
     final void method1337(int i) {
         anInt2300++;
-        this.anInt2298 = Class70.anIntArray1204[anInt2302 << 3];
+        this.anInt2298 = Class70.COS[anInt2302 << 3];
         long l = this.anInt2291;
         long l_10_ = this.anInt2290;
         long l_11_ = this.anInt2294;

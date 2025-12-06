@@ -154,7 +154,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub45.anInt7104 = 0;
         Class283.anInt3656 = 0;
         Class348_Sub40_Sub22.anInt9295 = 0;
-        Class64.anInt1132 = 0;
+        Model.anInt1132 = 0;
         Class231.anInt2990 = 0;
         Class348_Sub46.anInt7114 = 0;
         Class5_Sub1.anInt8337 = 0;
@@ -790,7 +790,7 @@ final class Class130_Sub1 extends Class130 {
         Class279.anInt3605 = 0;
         Option_Sub19.anInt6041 = 0;
         Applet_Sub1.anInt1 = 0;
-        Class64.anInt1135 = 0;
+        Model.anInt1135 = 0;
         Class348_Sub49_Sub2.anInt9767 = 0;
         TimedVarDomain.anInt5074 = 0;
         Applet_Sub1.anInt24 = 0;
@@ -1436,7 +1436,7 @@ final class Class130_Sub1 extends Class130 {
         Class178.anInt2336 = 0;
         Option_Sub12.anInt5972 = 0;
         Class181.anInt2400 = 0;
-        Class64.anInt1137 = 0;
+        Model.anInt1137 = 0;
         VarBitTypeListClient.anInt2595 = 0;
         Class348_Sub40_Sub30.anInt9387 = 0;
         Class367_Sub2.anInt7288 = 0;
@@ -1743,7 +1743,7 @@ final class Class130_Sub1 extends Class130 {
         Class372.anInt4529 = 0;
         Index.anInt637 = 0;
         Class36.anInt488 = 0;
-        Class64.anInt1129 = 0;
+        Model.anInt1129 = 0;
         Class348_Sub40_Sub14.anInt9213 = 0;
         Class220.anInt2876 = 0;
         ha_Sub2.anInt7519 = 0;
@@ -1914,7 +1914,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub3.anInt8015 = 0;
         r_Sub2.anInt10481 = 0;
         Class348_Sub8.anInt6659 = 0;
-        Class64.anInt1133 = 0;
+        Model.anInt1133 = 0;
         Class348_Sub42_Sub7.anInt9543 = 0;
         Class50_Sub3.anInt5239 = 0;
         Class44.anInt621 = 0;
@@ -1998,7 +1998,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7673 = 0;
         ha_Sub2.anInt7581 = 0;
         ha_Sub3.anInt8016 = 0;
-        Class64.anInt1126 = 0;
+        Model.anInt1126 = 0;
         Class286.anInt3681 = 0;
         Class64_Sub3.anInt5628 = 0;
         Packet.anInt7167 = 0;
@@ -2279,11 +2279,11 @@ final class Class130_Sub1 extends Class130 {
         Class346_Sub1.anInt6530 = 0;
         Sprite_Sub2.anInt8441 = 0;
         ha_Sub2.anInt7699 = 0;
-        Class64.anInt1125 = 0;
+        Model.anInt1125 = 0;
         Class73.anInt4775 = 0;
         FontRenderer.anInt4065 = 0;
         Option_Sub15.anInt6004 = 0;
-        Class64.anInt1134 = 0;
+        Model.anInt1134 = 0;
         Js5ResourceProvider.anInt6349 = 0;
         Sprite_Sub1.anInt8415 = 0;
         Class286_Sub9.anInt6315 = 0;
@@ -3546,7 +3546,7 @@ final class Class130_Sub1 extends Class130 {
         Class237_Sub1.anInt5817 = 0;
         Applet_Sub1.anInt3 = 0;
         Class375.anInt4541 = 0;
-        Class64.anInt1128 = 0;
+        Model.anInt1128 = 0;
         ItemDefinition.anInt2751 = 0;
         Option_Sub16.anInt6011 = 0;
         Option_Sub25.anInt6100 = 0;
@@ -3576,7 +3576,7 @@ final class Class130_Sub1 extends Class130 {
         Index.anInt638 = 0;
         Class19.anInt305 = 0;
         Option_Sub28.anInt6134 = 0;
-        Class64.anInt1130 = 0;
+        Model.anInt1130 = 0;
         client.anInt5187 = 0;
         Class290.anInt3718 = 0;
         Class286_Sub2.anInt6213 = 0;

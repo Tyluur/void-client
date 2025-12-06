@@ -457,7 +457,7 @@ final class Class66 {
             if (i == 5071) {
                 String string = aStringArray1152[--anInt1170];
                 boolean bool_63_ = anIntArray1149[--anInt1173] == 1;
-                Class64.method606(0, bool_63_, string);
+                Model.method606(0, bool_63_, string);
                 anIntArray1149[anInt1173++] = Class76.anInt1285;
                 return;
             }

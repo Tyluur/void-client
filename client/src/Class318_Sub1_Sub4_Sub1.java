@@ -12,7 +12,7 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
     static int anInt10068;
     static int anInt10069;
     static int anInt10070;
-    Class64 aClass64_10071;
+    Model aModel_10071;
     static int anInt10072;
     static int anInt10073;
     static int anInt10074;
@@ -55,9 +55,9 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
                 Class2 class2 = method2481(aBoolean10064, i_7_, -4, var_ha);
                 if (class2 == null) break;
                 aR10094 = class2.aR118;
-                this.aClass64_10071 = class2.aClass64_119;
+                this.aModel_10071 = class2.aModel_119;
                 if (!aBoolean10090) break;
-                this.aClass64_10071 = this.aClass64_10071.method614((byte) 0, i_7_, false);
+                this.aModel_10071 = this.aModel_10071.method614((byte) 0, i_7_, false);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ge.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (class51 != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + bool_6_ + ')'));
             }
@@ -73,19 +73,19 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
 
     public final void method40(int i) {
         anInt10077++;
-        if (this.aClass64_10071 != null) this.aClass64_10071.method612();
+        if (this.aModel_10071 != null) this.aModel_10071.method612();
         if (i != -12031) method38(-122);
     }
 
     final boolean method2391(ha var_ha, int i, int i_9_, int i_10_) {
         anInt10070++;
-        Class64 class64 = method2482(var_ha, (byte) 126, 131072);
+        Model model = method2482(var_ha, (byte) 126, 131072);
         if (i_10_ != 0) method41(-96);
-        if (class64 != null) {
+        if (model != null) {
             Class101 class101 = var_ha.method3705();
             class101.method894(this.x, this.anInt6382, this.y);
-            if (Class305.aBoolean3870) return class64.method623(i_9_, i, class101, false, 0, Class132.anInt1906);
-            return class64.method628(i_9_, i, class101, false, 0);
+            if (Class305.aBoolean3870) return model.method623(i_9_, i, class101, false, 0, Class132.anInt1906);
+            return model.method628(i_9_, i, class101, false, 0);
         }
         return false;
     }
@@ -105,7 +105,7 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
         anInt10091++;
         if (bool != true) method2394(true);
         aBoolean10090 = false;
-        if (this.aClass64_10071 != null) this.aClass64_10071.s(this.aClass64_10071.ua() & ~0x10000);
+        if (this.aModel_10071 != null) this.aModel_10071.s(this.aModel_10071.ua() & ~0x10000);
     }
 
     final Class30 method2381(ha var_ha, int i) {
@@ -124,7 +124,7 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
     final int method2379(int i) {
         anInt10063++;
         if (i != -25675) aByte10079 = (byte) 53;
-        if (this.aClass64_10071 != null) return this.aClass64_10071.ma();
+        if (this.aModel_10071 != null) return this.aModel_10071.ma();
         return 0;
     }
 
@@ -139,10 +139,10 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
             if (i_12_ > -106) method2388(-102);
             if (class318_sub1 instanceof Class318_Sub1_Sub4_Sub1) {
                 Class318_Sub1_Sub4_Sub1 class318_sub1_sub4_sub1_14_ = (Class318_Sub1_Sub4_Sub1) class318_sub1;
-                if (this.aClass64_10071 != null && (class318_sub1_sub4_sub1_14_.aClass64_10071) != null) this.aClass64_10071.method613(class318_sub1_sub4_sub1_14_.aClass64_10071, i_13_, i, i_11_, bool);
+                if (this.aModel_10071 != null && (class318_sub1_sub4_sub1_14_.aModel_10071) != null) this.aModel_10071.method613(class318_sub1_sub4_sub1_14_.aModel_10071, i_13_, i, i_11_, bool);
             } else if (class318_sub1 instanceof Class318_Sub1_Sub3_Sub1) {
                 Class318_Sub1_Sub3_Sub1 class318_sub1_sub3_sub1 = (Class318_Sub1_Sub3_Sub1) class318_sub1;
-                if (this.aClass64_10071 != null && (class318_sub1_sub3_sub1.aClass64_10028) != null) this.aClass64_10071.method613((class318_sub1_sub3_sub1.aClass64_10028), i_13_, i, i_11_, bool);
+                if (this.aModel_10071 != null && (class318_sub1_sub3_sub1.aModel_10028) != null) this.aModel_10071.method613((class318_sub1_sub3_sub1.aModel_10028), i_13_, i, i_11_, bool);
             }
             anInt10083++;
         } catch (RuntimeException runtimeexception) {
@@ -184,29 +184,29 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
 
     final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10069++;
-        if (this.aClass64_10071 == null) return null;
+        if (this.aModel_10071 == null) return null;
         Class101 class101 = var_ha.method3705();
         class101.method894(this.x, this.anInt6382, this.y);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean10076, false);
-        if (!Class305.aBoolean3870) this.aClass64_10071.method615(class101, class318_sub4.aClass318_Sub3Array6414[0], 0);
-        else this.aClass64_10071.method608(class101, class318_sub4.aClass318_Sub3Array6414[0], Class132.anInt1906, 0);
+        if (!Class305.aBoolean3870) this.aModel_10071.method615(class101, class318_sub4.aClass318_Sub3Array6414[0], 0);
+        else this.aModel_10071.method608(class101, class318_sub4.aClass318_Sub3Array6414[0], Class132.anInt1906, 0);
         return class318_sub4;
     }
 
-    private final Class64 method2482(ha var_ha, byte i, int i_17_) {
+    private final Model method2482(ha var_ha, byte i, int i_17_) {
         if (i <= 113) method2387(null, -99);
         anInt10072++;
-        if (this.aClass64_10071 != null && var_ha.method3667(this.aClass64_10071.ua(), i_17_) == 0) return this.aClass64_10071;
+        if (this.aModel_10071 != null && var_ha.method3667(this.aModel_10071.ua(), i_17_) == 0) return this.aModel_10071;
         Class2 class2 = method2481(false, i_17_, -4, var_ha);
-        if (class2 != null) return class2.aClass64_119;
+        if (class2 != null) return class2.aModel_119;
         return null;
     }
 
     final int method2394(boolean bool) {
         anInt10093++;
         if (bool != true) aByte10062 = (byte) -75;
-        if (this.aClass64_10071 == null) return 0;
-        return this.aClass64_10071.fa();
+        if (this.aModel_10071 == null) return 0;
+        return this.aModel_10071.fa();
     }
 
     final boolean method2388(int i) {
@@ -218,15 +218,15 @@ final class Class318_Sub1_Sub4_Sub1 extends Class318_Sub1_Sub4 implements Interf
     final boolean method2377(byte i) {
         anInt10065++;
         if (i != 122) return true;
-        if (this.aClass64_10071 == null) return false;
-        return this.aClass64_10071.F();
+        if (this.aModel_10071 == null) return false;
+        return this.aModel_10071.F();
     }
 
     final boolean method2376(int i) {
         if (i >= -12) method2388(-68);
         anInt10085++;
-        if (this.aClass64_10071 != null) {
-            return !this.aClass64_10071.r();
+        if (this.aModel_10071 != null) {
+            return !this.aModel_10071.r();
         }
         return true;
     }

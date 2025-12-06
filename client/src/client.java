@@ -292,7 +292,7 @@ public final class client extends Applet_Sub1 {
         Class348_Sub42_Sub17.method3269(true);
         Class17.method265(false);
         Class182.method1375(5616);
-        Class64.method609((byte) -52);
+        Model.method609((byte) -52);
         Class36.method355(i + 4189);
         Class190.method1426(25165);
         Class299.method2254(i ^ ~0x39bf);
@@ -1177,8 +1177,8 @@ public final class client extends Applet_Sub1 {
                                             int i_61_;
                                             if (Class348_Sub40_Sub21.anInt9282 == 4) i_61_ = ((int) (ResourceProvider.aFloat3938) & 0x3fff);
                                             else i_61_ = (((int) (ResourceProvider.aFloat3938) + r_Sub2.anInt10483) & 0x3fff);
-                                            int i_62_ = (Class70.anIntArray1207[i_61_]);
-                                            int i_63_ = (Class70.anIntArray1204[i_61_]);
+                                            int i_62_ = (Class70.SIN[i_61_]);
+                                            int i_63_ = (Class70.COS[i_61_]);
                                             if (Class348_Sub40_Sub21.anInt9282 != 4) {
                                                 i_62_ = (i_62_ * ((Class348_Sub49_Sub1.anInt9750) + 256)) >> 8;
                                                 i_63_ = (i_63_ * ((Class348_Sub49_Sub1.anInt9750) + 256)) >> 8;

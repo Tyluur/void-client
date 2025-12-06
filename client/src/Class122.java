@@ -38,7 +38,7 @@ final class Class122 {
 
     static final int method1088(int i, byte i_6_, int i_7_, int i_8_, int i_9_) {
         anInt1804++;
-        int i_10_ = -Class70.anIntArray1204[8192 * i_8_ / i_7_] + 65536 >> 1;
+        int i_10_ = -Class70.COS[8192 * i_8_ / i_7_] + 65536 >> 1;
         if (i_6_ != 22) return -73;
         return ((i_10_ * i >> 16) + (i_9_ * (65536 + -i_10_) >> 16));
     }

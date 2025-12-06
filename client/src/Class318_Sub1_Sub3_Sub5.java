@@ -57,16 +57,16 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
 
     final void method2387(ha var_ha, int i) {
         anInt10379++;
-        Class64 class64 = method2476(0, var_ha, (byte) 127);
-        if (class64 != null) {
+        Model model = method2476(0, var_ha, (byte) 127);
+        if (model != null) {
             if (i >= -125) this.anInt10366 = 56;
             Class101 class101 = var_ha.method3705();
             class101.method899(anInt10396);
             class101.method896(anInt10386);
             class101.method891((int) aDouble10408, (int) aDouble10384, (int) aDouble10371);
-            anInt10410 = class64.fa();
-            anInt10368 = class64.ma();
-            method2473(class101, class64, var_ha, -2393);
+            anInt10410 = model.fa();
+            anInt10368 = model.ma();
+            method2473(class101, model, var_ha, -2393);
         }
     }
 
@@ -119,13 +119,13 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
         return false;
     }
 
-    private final void method2473(Class101 class101, Class64 class64, ha var_ha, int i) {
+    private final void method2473(Class101 class101, Model model, ha var_ha, int i) {
         do {
             try {
                 anInt10406++;
-                class64.method620(class101);
-                ModelParticleEmitter[] modelParticleEmitters = class64.method619();
-                ModelParticleEffector[] modelParticleEffectors = class64.method604();
+                model.method620(class101);
+                ModelParticleEmitter[] modelParticleEmitters = model.method619();
+                ModelParticleEffector[] modelParticleEffectors = model.method604();
                 if ((aClass318_Sub10_10378 == null || aClass318_Sub10_10378.aBoolean6470) && (modelParticleEmitters != null || modelParticleEffectors != null)) aClass318_Sub10_10378 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true);
                 if (aClass318_Sub10_10378 != null) {
                     aClass318_Sub10_10378.method2536(var_ha, Class367_Sub11.anInt7396, modelParticleEmitters, modelParticleEffectors, false);
@@ -134,7 +134,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
                 if (i == -2393) break;
                 finalize();
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("to.L(" + (class101 != null ? "{...}" : "null") + ',' + (class64 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("to.L(" + (class101 != null ? "{...}" : "null") + ',' + (model != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ')'));
             }
             break;
         } while (false);
@@ -187,8 +187,8 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
                             int i_14_ = i_13_;
                             if ((class318_sub1_sub3_sub3.anIntArray10296 != null) && (class318_sub1_sub3_sub3.anIntArray10296[anInt10367]) != -1) i_14_ = (class318_sub1_sub3_sub3.anIntArray10296[anInt10367]);
                             int i_15_ = 0x3fff & -i_13_ + i_14_;
-                            int i_16_ = Class70.anIntArray1207[i_15_];
-                            int i_17_ = Class70.anIntArray1204[i_15_];
+                            int i_16_ = Class70.SIN[i_15_];
+                            int i_17_ = Class70.COS[i_15_];
                             int i_18_ = i_12_ * i_16_ + i_11_ * i_17_ >> 14;
                             i_12_ = (-(i_11_ * i_16_) + i_12_ * i_17_ >> 14);
                             i_11_ = i_18_;
@@ -209,24 +209,24 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
 
     final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10397++;
-        Class64 class64 = method2476(2048, var_ha, (byte) 127);
-        if (class64 == null) return null;
+        Model model = method2476(2048, var_ha, (byte) 127);
+        if (model == null) return null;
         Class101 class101 = var_ha.method3705();
         class101.method899(anInt10396);
         class101.method896(anInt10386);
         class101.method891((int) aDouble10408, (int) aDouble10384, (int) aDouble10371);
-        method2473(class101, class64, var_ha, -2393);
+        method2473(class101, model, var_ha, -2393);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, false, false);
-        if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
-        else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+        if (!Class305.aBoolean3870) model.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+        else model.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
         if (aClass318_Sub10_10378 != null) {
             Class98 class98 = aClass318_Sub10_10378.method2525();
             if (Class305.aBoolean3870) var_ha.method3685(class98, Class132.anInt1906);
             else var_ha.method3684(class98);
         }
-        aBoolean10399 = class64.F();
-        anInt10410 = class64.fa();
-        anInt10368 = class64.ma();
+        aBoolean10399 = model.F();
+        anInt10410 = model.fa();
+        anInt10368 = model.ma();
         return class318_sub4;
     }
 
@@ -312,7 +312,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
         anInt10370++;
     }
 
-    private final Class64 method2476(int i, ha var_ha, byte i_36_) {
+    private final Model method2476(int i, ha var_ha, byte i_36_) {
         anInt10377++;
         Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 75, anInt10391);
         if (i_36_ < 126) aClass318_Sub10_10378 = null;

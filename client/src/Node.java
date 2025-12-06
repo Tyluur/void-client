@@ -33,10 +33,10 @@ class Node {
         return 3;
     }
 
-    static final Class64 method2711(int i, int i_3_, Class64 class64, int i_4_, boolean bool, int i_5_, int i_6_, int i_7_, int i_8_, ha var_ha, int i_9_, int i_10_, int i_11_, Class17 class17) {
+    static final Model method2711(int i, int i_3_, Model model, int i_4_, boolean bool, int i_5_, int i_6_, int i_7_, int i_8_, ha var_ha, int i_9_, int i_10_, int i_11_, Class17 class17) {
         try {
             anInt4298++;
-            if (class64 == null) return null;
+            if (model == null) return null;
             int i_12_ = 2055;
             if (bool != false) return null;
             if (class17 != null) {
@@ -44,12 +44,12 @@ class Node {
                 i_12_ &= ~0x200;
             }
             long l = (((long) i_10_ << 48) + (long) (i_7_ + ((i_9_ << 16) + (i_11_ << 24))) - -((long) i_6_ << 32));
-            Class64 class64_13_;
+            Model model_13_;
             synchronized (ModelParticleEffector.aClass60_4254) {
-                class64_13_ = (Class64) ModelParticleEffector.aClass60_4254.method583(l, -64);
+                model_13_ = (Model) ModelParticleEffector.aClass60_4254.method583(l, -64);
             }
-            if (class64_13_ == null || (var_ha.method3667(class64_13_.ua(), i_12_) != 0)) {
-                if (class64_13_ != null) i_12_ = var_ha.method3679(i_12_, class64_13_.ua());
+            if (model_13_ == null || (var_ha.method3667(model_13_.ua(), i_12_) != 0)) {
+                if (model_13_ != null) i_12_ = var_ha.method3679(i_12_, model_13_.ua());
                 int i_14_;
                 if (i_7_ != 1) {
                     if (i_7_ == 2) i_14_ = 12;
@@ -61,16 +61,16 @@ class Node {
                 int i_15_ = 3;
                 int[] is = {64, 96, 128};
                 Mesh mesh = new Mesh(1 + i_14_ * i_15_, 2 * i_14_ * i_15_ + -i_14_, 0);
-                int i_16_ = mesh.method1101(0, 0, 0, -44);
+                int i_16_ = mesh.addVertex(0, 0, 0, -44);
                 int[][] is_17_ = new int[i_15_][i_14_];
                 for (int i_18_ = 0; i_18_ < i_15_; i_18_++) {
                     int i_19_ = is[i_18_];
                     int i_20_ = is[i_18_];
                     for (int i_21_ = 0; i_14_ > i_21_; i_21_++) {
                         int i_22_ = (i_21_ << 14) / i_14_;
-                        int i_23_ = (Class70.anIntArray1207[i_22_] * i_19_ >> 14);
-                        int i_24_ = (Class70.anIntArray1204[i_22_] * i_20_ >> 14);
-                        is_17_[i_18_][i_21_] = mesh.method1101(0, i_24_, i_23_, 123);
+                        int i_23_ = (Class70.SIN[i_22_] * i_19_ >> 14);
+                        int i_24_ = (Class70.COS[i_22_] * i_20_ >> 14);
+                        is_17_[i_18_][i_21_] = mesh.addVertex(0, i_24_, i_23_, 123);
                     }
                 }
                 for (int i_25_ = 0; i_15_ > i_25_; i_25_++) {
@@ -86,15 +86,15 @@ class Node {
                         }
                     }
                 }
-                class64_13_ = var_ha.method3625(mesh, i_12_, LightTypeList.anInt2482, 64, 768);
+                model_13_ = var_ha.method3625(mesh, i_12_, LightTypeList.anInt2482, 64, 768);
                 synchronized (ModelParticleEffector.aClass60_4254) {
-                    ModelParticleEffector.aClass60_4254.method582(class64_13_, l, (byte) -103);
+                    ModelParticleEffector.aClass60_4254.method582(model_13_, l, (byte) -103);
                 }
             }
-            int i_31_ = class64.V();
-            int i_32_ = class64.RA();
-            int i_33_ = class64.HA();
-            int i_34_ = class64.G();
+            int i_31_ = model.V();
+            int i_32_ = model.RA();
+            int i_33_ = model.HA();
+            int i_34_ = model.G();
             Class348_Sub42_Sub17 class348_sub42_sub17 = null;
             if (class17 != null) {
                 i_5_ = class17.anIntArray237[i_5_];
@@ -102,21 +102,21 @@ class Node {
                 i_5_ &= 0xffff;
             }
             if (class348_sub42_sub17 == null) {
-                class64_13_ = class64_13_.method614((byte) 3, i_12_, true);
-                class64_13_.O(-i_31_ + i_32_ >> 1, 128, -i_33_ + i_34_ >> 1);
-                class64_13_.H(i_32_ + i_31_ >> 1, 0, i_34_ + i_33_ >> 1);
+                model_13_ = model_13_.method614((byte) 3, i_12_, true);
+                model_13_.O(-i_31_ + i_32_ >> 1, 128, -i_33_ + i_34_ >> 1);
+                model_13_.H(i_32_ + i_31_ >> 1, 0, i_34_ + i_33_ >> 1);
             } else {
-                class64_13_ = class64_13_.method614((byte) 3, i_12_, true);
-                class64_13_.O(-i_31_ + i_32_ >> 1, 128, i_34_ - i_33_ >> 1);
-                class64_13_.H(i_32_ + i_31_ >> 1, 0, i_34_ + i_33_ >> 1);
-                class64_13_.method611(i_5_, -8700, class348_sub42_sub17);
+                model_13_ = model_13_.method614((byte) 3, i_12_, true);
+                model_13_.O(-i_31_ + i_32_ >> 1, 128, i_34_ - i_33_ >> 1);
+                model_13_.H(i_32_ + i_31_ >> 1, 0, i_34_ + i_33_ >> 1);
+                model_13_.method611(i_5_, -8700, class348_sub42_sub17);
             }
-            if (i != 0) class64_13_.FA(i);
-            if (i_4_ != 0) class64_13_.VA(i_4_);
-            if (i_8_ != 0) class64_13_.H(0, i_8_, 0);
-            return class64_13_;
+            if (i != 0) model_13_.FA(i);
+            if (i_4_ != 0) model_13_.VA(i_4_);
+            if (i_8_ != 0) model_13_.H(0, i_8_, 0);
+            return model_13_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (class64 != null ? "{...}" : "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (class17 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (model != null ? "{...}" : "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (class17 != null ? "{...}" : "null") + ')'));
         }
     }
 

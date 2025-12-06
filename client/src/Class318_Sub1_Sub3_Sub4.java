@@ -45,23 +45,23 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
 
     final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10352++;
-        Class64 class64 = method2465(var_ha, anInt10355, (anInt10334 == 0 ? 0 : 5) | 0x800, (byte) -82);
-        if (class64 == null) return null;
-        if (anInt10334 != 0) class64.a(anInt10334 * 2048);
+        Model model = method2465(var_ha, anInt10355, (anInt10334 == 0 ? 0 : 5) | 0x800, (byte) -82);
+        if (model == null) return null;
+        if (anInt10334 != 0) model.a(anInt10334 * 2048);
         Class101 class101 = var_ha.method3705();
         class101.method894(this.x, this.anInt6382, this.y);
-        method2467(class64, var_ha, -1, class101);
+        method2467(model, var_ha, -1, class101);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, false, false);
-        if (Class305.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
-        else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+        if (Class305.aBoolean3870) model.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+        else model.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
         if (aClass318_Sub10_10341 != null) {
             Class98 class98 = aClass318_Sub10_10341.method2525();
             if (!Class305.aBoolean3870) var_ha.method3684(class98);
             else var_ha.method3685(class98, Class132.anInt1906);
         }
-        aBoolean10338 = class64.F();
-        anInt10331 = class64.fa();
-        anInt10356 = class64.ma();
+        aBoolean10338 = model.F();
+        anInt10331 = model.fa();
+        anInt10356 = model.ma();
         return class318_sub4;
     }
 
@@ -200,7 +200,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         } while (false);
     }
 
-    private final Class64 method2465(ha var_ha, int i, int i_26_, byte i_27_) {
+    private final Model method2465(ha var_ha, int i, int i_26_, byte i_27_) {
         anInt10353++;
         if (i_27_ != -82) return null;
         Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 122, i);
@@ -223,13 +223,13 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         return aBoolean10338;
     }
 
-    private final void method2467(Class64 class64, ha var_ha, int i, Class101 class101) {
+    private final void method2467(Model model, ha var_ha, int i, Class101 class101) {
         do {
             try {
-                class64.method620(class101);
+                model.method620(class101);
                 anInt10360++;
-                ModelParticleEmitter[] modelParticleEmitters = class64.method619();
-                ModelParticleEffector[] modelParticleEffectors = class64.method604();
+                ModelParticleEmitter[] modelParticleEmitters = model.method619();
+                ModelParticleEffector[] modelParticleEffectors = model.method604();
                 if (i == -1) {
                     if ((aClass318_Sub10_10341 == null || (aClass318_Sub10_10341.aBoolean6470)) && (modelParticleEmitters != null || modelParticleEffectors != null)) aClass318_Sub10_10341 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true);
                     if (aClass318_Sub10_10341 == null) break;
@@ -237,7 +237,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     aClass318_Sub10_10341.method2533(this.plane, this.aShort8743, this.aShort8751, this.aShort8750, this.aShort8747);
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (class64 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class101 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("lf.BA(" + (model != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class101 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -264,11 +264,11 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
     final void method2387(ha var_ha, int i) {
         if (i >= -125) anInt10331 = 38;
         anInt10354++;
-        Class64 class64 = method2465(var_ha, anInt10355, 0, (byte) -82);
-        if (class64 != null) {
+        Model model = method2465(var_ha, anInt10355, 0, (byte) -82);
+        if (model != null) {
             Class101 class101 = var_ha.method3705();
             class101.method894(this.x, this.anInt6382, this.y);
-            method2467(class64, var_ha, -1, class101);
+            method2467(model, var_ha, -1, class101);
         }
     }
 

@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class64 {
+// Class64
+abstract class Model {
     boolean aBoolean1124 = false;
     static int anInt1125;
     static int anInt1126;
@@ -295,11 +296,11 @@ abstract class Class64 {
 
     abstract int RA();
 
-    abstract void method613(Class64 class64_77_, int i, int i_78_, int i_79_, boolean bool);
+    abstract void method613(Model model_77_, int i, int i_78_, int i_79_, boolean bool);
 
     abstract void v();
 
-    abstract Class64 method614(byte i, int i_80_, boolean bool);
+    abstract Model method614(byte i, int i_80_, boolean bool);
 
     abstract void method615(Class101 class101, Class318_Sub3 class318_sub3, int i);
 
@@ -504,7 +505,7 @@ abstract class Class64 {
         }
     }
 
-    public Class64() {
+    public Model() {
         /* empty */
     }
 

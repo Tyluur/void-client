@@ -32,7 +32,7 @@ final class ha_Sub1 extends ha {
     private boolean aBoolean7489;
     int anInt7490;
     int anInt7491;
-    Class101_Sub1 aClass101_Sub1_7492;
+    Class101_Sub1 camera;
     private int anInt7493;
     int anInt7494;
     private int anInt7495;
@@ -247,10 +247,10 @@ final class ha_Sub1 extends ha {
             int i_66_ = class318_sub9_sub2.anInt8791 >> 12;
             int i_67_ = class318_sub9_sub2.anInt8796 >> 12;
             int i_68_ = class318_sub9_sub2.anInt8789 >> 12;
-            float f = ((this.aClass101_Sub1_7492.aFloat5681) + ((this.aClass101_Sub1_7492.aFloat5662) * (float) i_66_ + (this.aClass101_Sub1_7492.aFloat5680) * (float) i_67_ + (this.aClass101_Sub1_7492.aFloat5664) * (float) i_68_));
+            float f = ((this.camera.aFloat5681) + ((this.camera.aFloat5662) * (float) i_66_ + (this.camera.aFloat5680) * (float) i_67_ + (this.camera.aFloat5664) * (float) i_68_));
             if (!(f < (float) this.anInt7482) && !(f > (float) class167.anInt2210)) {
-                int i_69_ = (this.anInt7510 + (int) ((float) this.anInt7491 * ((this.aClass101_Sub1_7492.aFloat5686) + ((this.aClass101_Sub1_7492.aFloat5672) * (float) i_66_ + (this.aClass101_Sub1_7492.aFloat5673) * (float) i_67_ + (this.aClass101_Sub1_7492.aFloat5669) * (float) i_68_)) / (float) i));
-                int i_70_ = (this.anInt7504 + (int) ((float) this.anInt7497 * ((this.aClass101_Sub1_7492.aFloat5685) + ((this.aClass101_Sub1_7492.aFloat5655) * (float) i_66_ + (this.aClass101_Sub1_7492.aFloat5678) * (float) i_67_ + (this.aClass101_Sub1_7492.aFloat5666) * (float) i_68_)) / (float) i));
+                int i_69_ = (this.anInt7510 + (int) ((float) this.anInt7491 * ((this.camera.aFloat5686) + ((this.camera.aFloat5672) * (float) i_66_ + (this.camera.aFloat5673) * (float) i_67_ + (this.camera.aFloat5669) * (float) i_68_)) / (float) i));
+                int i_70_ = (this.anInt7504 + (int) ((float) this.anInt7497 * ((this.camera.aFloat5685) + ((this.camera.aFloat5655) * (float) i_66_ + (this.camera.aFloat5678) * (float) i_67_ + (this.camera.aFloat5666) * (float) i_68_)) / (float) i));
                 if (i_69_ >= this.anInt7496 && i_69_ <= this.anInt7507 && i_70_ >= this.anInt7476 && i_70_ <= this.anInt7503) {
                     if (f == 0.0F) f = 1.0F;
                     method3712(class318_sub9_sub2, i_69_, i_70_, (int) f, ((class318_sub9_sub2.anInt8793) * this.anInt7491 >> 12) / i);
@@ -492,7 +492,7 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3638(Class101 class101) {
-        this.aClass101_Sub1_7492 = (Class101_Sub1) class101;
+        this.camera = (Class101_Sub1) class101;
     }
 
     final void A(int i, aa var_aa, int i_145_, int i_146_) {
@@ -668,10 +668,10 @@ final class ha_Sub1 extends ha {
     }
 
     final void HA(int i, int i_200_, int i_201_, int i_202_, int[] is) {
-        float f = ((this.aClass101_Sub1_7492.aFloat5681) + ((this.aClass101_Sub1_7492.aFloat5662) * (float) i + (this.aClass101_Sub1_7492.aFloat5680) * (float) i_200_ + (this.aClass101_Sub1_7492.aFloat5664) * (float) i_201_));
+        float f = ((this.camera.aFloat5681) + ((this.camera.aFloat5662) * (float) i + (this.camera.aFloat5680) * (float) i_200_ + (this.camera.aFloat5664) * (float) i_201_));
         if (f >= (float) this.anInt7482 && f <= (float) this.anInt7494) {
-            int i_203_ = (int) ((float) this.anInt7491 * (this.aClass101_Sub1_7492.aFloat5686 + ((this.aClass101_Sub1_7492.aFloat5672) * (float) i + (this.aClass101_Sub1_7492.aFloat5673) * (float) i_200_ + (this.aClass101_Sub1_7492.aFloat5669) * (float) i_201_)) / (float) i_202_);
-            int i_204_ = (int) ((float) this.anInt7497 * (this.aClass101_Sub1_7492.aFloat5685 + ((this.aClass101_Sub1_7492.aFloat5655) * (float) i + (this.aClass101_Sub1_7492.aFloat5678) * (float) i_200_ + (this.aClass101_Sub1_7492.aFloat5666) * (float) i_201_)) / (float) i_202_);
+            int i_203_ = (int) ((float) this.anInt7491 * (this.camera.aFloat5686 + ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673) * (float) i_200_ + (this.camera.aFloat5669) * (float) i_201_)) / (float) i_202_);
+            int i_204_ = (int) ((float) this.anInt7497 * (this.camera.aFloat5685 + ((this.camera.aFloat5655) * (float) i + (this.camera.aFloat5678) * (float) i_200_ + (this.camera.aFloat5666) * (float) i_201_)) / (float) i_202_);
             if (i_203_ >= this.anInt7509 && i_203_ <= this.anInt7508 && i_204_ >= this.anInt7490 && i_204_ <= this.anInt7506) {
                 is[0] = i_203_ - this.anInt7509;
                 is[1] = i_204_ - this.anInt7490;
@@ -696,10 +696,10 @@ final class ha_Sub1 extends ha {
             int i = class318_sub9_sub2.anInt8791 >> 12;
             int i_209_ = class318_sub9_sub2.anInt8796 >> 12;
             int i_210_ = class318_sub9_sub2.anInt8789 >> 12;
-            float f = ((this.aClass101_Sub1_7492.aFloat5681) + ((this.aClass101_Sub1_7492.aFloat5662) * (float) i + (this.aClass101_Sub1_7492.aFloat5680) * (float) i_209_ + (this.aClass101_Sub1_7492.aFloat5664) * (float) i_210_));
+            float f = ((this.camera.aFloat5681) + ((this.camera.aFloat5662) * (float) i + (this.camera.aFloat5680) * (float) i_209_ + (this.camera.aFloat5664) * (float) i_210_));
             if (!(f < (float) this.anInt7482) && !(f > (float) class167.anInt2210)) {
-                int i_211_ = (this.anInt7510 + (int) ((float) this.anInt7491 * ((this.aClass101_Sub1_7492.aFloat5686) + ((this.aClass101_Sub1_7492.aFloat5672) * (float) i + (this.aClass101_Sub1_7492.aFloat5673) * (float) i_209_ + (this.aClass101_Sub1_7492.aFloat5669) * (float) i_210_)) / f));
-                int i_212_ = (this.anInt7504 + (int) ((float) this.anInt7497 * ((this.aClass101_Sub1_7492.aFloat5685) + ((this.aClass101_Sub1_7492.aFloat5655) * (float) i + (this.aClass101_Sub1_7492.aFloat5678) * (float) i_209_ + (this.aClass101_Sub1_7492.aFloat5666) * (float) i_210_)) / f));
+                int i_211_ = (this.anInt7510 + (int) ((float) this.anInt7491 * ((this.camera.aFloat5686) + ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673) * (float) i_209_ + (this.camera.aFloat5669) * (float) i_210_)) / f));
+                int i_212_ = (this.anInt7504 + (int) ((float) this.anInt7497 * ((this.camera.aFloat5685) + ((this.camera.aFloat5655) * (float) i + (this.camera.aFloat5678) * (float) i_209_ + (this.camera.aFloat5666) * (float) i_210_)) / f));
                 if (i_211_ >= this.anInt7496 && i_211_ <= this.anInt7507 && i_212_ >= this.anInt7476 && i_212_ <= this.anInt7503) {
                     if (f == 0.0F) f = 1.0F;
                     method3712(class318_sub9_sub2, i_211_, i_212_, (int) f, (int) ((float) ((class318_sub9_sub2.anInt8793 * this.anInt7491) >> 12) / f));
@@ -938,15 +938,15 @@ final class ha_Sub1 extends ha {
         class109.aBoolean1671 = (i < 0 || i > class109.anInt1679 || i_272_ < 0 || i_272_ > class109.anInt1679 || i_275_ < 0 || i_275_ > class109.anInt1679);
         int i_282_ = i_278_ >>> 24;
         if (i_281_ == 0 || i_281_ == 1 && i_282_ == 255) {
-            class109.anInt1674 = 0;
+            class109.alpha = 0;
             class109.aBoolean1667 = false;
             class109.method1027((float) i_270_, (float) i_273_, (float) i_276_, (float) i, (float) i_272_, (float) i_275_, (float) i_271_, (float) i_274_, (float) i_277_, i_278_, i_279_, i_280_);
         } else if (i_281_ == 1) {
-            class109.anInt1674 = 255 - i_282_;
+            class109.alpha = 255 - i_282_;
             class109.aBoolean1667 = false;
             class109.method1027((float) i_270_, (float) i_273_, (float) i_276_, (float) i, (float) i_272_, (float) i_275_, (float) i_271_, (float) i_274_, (float) i_277_, i_278_, i_279_, i_280_);
         } else if (i_281_ == 2) {
-            class109.anInt1674 = 128;
+            class109.alpha = 128;
             class109.aBoolean1667 = true;
             class109.method1027((float) i_270_, (float) i_273_, (float) i_276_, (float) i, (float) i_272_, (float) i_275_, (float) i_271_, (float) i_274_, (float) i_277_, i_278_, i_279_, i_280_);
         } else throw new IllegalArgumentException();
@@ -1216,7 +1216,7 @@ final class ha_Sub1 extends ha {
     }
 
     final Class101 method3640() {
-        return this.aClass101_Sub1_7492;
+        return this.camera;
     }
 
     ha_Sub1(Canvas canvas, TextureSource var_d, int i, int i_355_) {
@@ -1252,11 +1252,11 @@ final class ha_Sub1 extends ha {
     }
 
     final void H(int i, int i_362_, int i_363_, int[] is) {
-        float f = ((this.aClass101_Sub1_7492.aFloat5681) + ((this.aClass101_Sub1_7492.aFloat5662) * (float) i + (this.aClass101_Sub1_7492.aFloat5680) * (float) i_362_ + (this.aClass101_Sub1_7492.aFloat5664) * (float) i_363_));
+        float f = ((this.camera.aFloat5681) + ((this.camera.aFloat5662) * (float) i + (this.camera.aFloat5680) * (float) i_362_ + (this.camera.aFloat5664) * (float) i_363_));
         if (f == 0.0F) is[0] = is[1] = is[2] = -1;
         else {
-            int i_364_ = (int) ((float) this.anInt7491 * (this.aClass101_Sub1_7492.aFloat5686 + ((this.aClass101_Sub1_7492.aFloat5672) * (float) i + (this.aClass101_Sub1_7492.aFloat5673) * (float) i_362_ + (this.aClass101_Sub1_7492.aFloat5669) * (float) i_363_)) / f);
-            int i_365_ = (int) ((float) this.anInt7497 * (this.aClass101_Sub1_7492.aFloat5685 + ((this.aClass101_Sub1_7492.aFloat5655) * (float) i + (this.aClass101_Sub1_7492.aFloat5678) * (float) i_362_ + (this.aClass101_Sub1_7492.aFloat5666) * (float) i_363_)) / f);
+            int i_364_ = (int) ((float) this.anInt7491 * (this.camera.aFloat5686 + ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673) * (float) i_362_ + (this.camera.aFloat5669) * (float) i_363_)) / f);
+            int i_365_ = (int) ((float) this.anInt7497 * (this.camera.aFloat5685 + ((this.camera.aFloat5655) * (float) i + (this.camera.aFloat5678) * (float) i_362_ + (this.camera.aFloat5666) * (float) i_363_)) / f);
             is[0] = i_364_ - this.anInt7509;
             is[1] = i_365_ - this.anInt7490;
             is[2] = (int) f;
@@ -1275,8 +1275,8 @@ final class ha_Sub1 extends ha {
         method3713();
     }
 
-    final Class64 method3625(Mesh mesh, int i, int i_366_, int i_367_, int i_368_) {
-        return new Class64_Sub1(this, mesh, i, i_367_, i_368_, i_366_);
+    final Model method3625(Mesh mesh, int i, int i_366_, int i_367_, int i_368_) {
+        return new JavaModel(this, mesh, i, i_367_, i_368_, i_366_);
     }
 
     final Interface13 method3624(int i, int i_369_) {
@@ -1434,18 +1434,18 @@ final class ha_Sub1 extends ha {
 
     final int JA(int i, int i_411_, int i_412_, int i_413_, int i_414_, int i_415_) {
         int i_416_ = 0;
-        float f = ((this.aClass101_Sub1_7492.aFloat5662) * (float) i + (this.aClass101_Sub1_7492.aFloat5680) * (float) i_411_ + (this.aClass101_Sub1_7492.aFloat5664) * (float) i_412_ + (this.aClass101_Sub1_7492.aFloat5681));
+        float f = ((this.camera.aFloat5662) * (float) i + (this.camera.aFloat5680) * (float) i_411_ + (this.camera.aFloat5664) * (float) i_412_ + (this.camera.aFloat5681));
         if (f < 1.0F) f = 1.0F;
-        float f_417_ = ((this.aClass101_Sub1_7492.aFloat5662) * (float) i_413_ + (this.aClass101_Sub1_7492.aFloat5680) * (float) i_414_ + (this.aClass101_Sub1_7492.aFloat5664) * (float) i_415_ + (this.aClass101_Sub1_7492.aFloat5681));
+        float f_417_ = ((this.camera.aFloat5662) * (float) i_413_ + (this.camera.aFloat5680) * (float) i_414_ + (this.camera.aFloat5664) * (float) i_415_ + (this.camera.aFloat5681));
         if (f_417_ < 1.0F) f_417_ = 1.0F;
         if (f < (float) this.anInt7482 && f_417_ < (float) this.anInt7482) i_416_ |= 0x10;
         else if (f > (float) this.anInt7494 && f_417_ > (float) this.anInt7494) i_416_ |= 0x20;
-        int i_418_ = (int) ((float) this.anInt7491 * ((this.aClass101_Sub1_7492.aFloat5672) * (float) i + (this.aClass101_Sub1_7492.aFloat5673 * (float) i_411_) + (this.aClass101_Sub1_7492.aFloat5669 * (float) i_412_) + this.aClass101_Sub1_7492.aFloat5686) / f);
-        int i_419_ = (int) ((float) this.anInt7491 * ((this.aClass101_Sub1_7492.aFloat5672) * (float) i_413_ + (this.aClass101_Sub1_7492.aFloat5673 * (float) i_414_) + (this.aClass101_Sub1_7492.aFloat5669 * (float) i_415_) + this.aClass101_Sub1_7492.aFloat5686) / f_417_);
+        int i_418_ = (int) ((float) this.anInt7491 * ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673 * (float) i_411_) + (this.camera.aFloat5669 * (float) i_412_) + this.camera.aFloat5686) / f);
+        int i_419_ = (int) ((float) this.anInt7491 * ((this.camera.aFloat5672) * (float) i_413_ + (this.camera.aFloat5673 * (float) i_414_) + (this.camera.aFloat5669 * (float) i_415_) + this.camera.aFloat5686) / f_417_);
         if (i_418_ < this.anInt7509 && i_419_ < this.anInt7509) i_416_ |= 0x1;
         else if (i_418_ > this.anInt7508 && i_419_ > this.anInt7508) i_416_ |= 0x2;
-        int i_420_ = (int) ((float) this.anInt7497 * ((this.aClass101_Sub1_7492.aFloat5655) * (float) i + (this.aClass101_Sub1_7492.aFloat5678 * (float) i_411_) + (this.aClass101_Sub1_7492.aFloat5666 * (float) i_412_) + this.aClass101_Sub1_7492.aFloat5685) / f);
-        int i_421_ = (int) ((float) this.anInt7497 * ((this.aClass101_Sub1_7492.aFloat5655) * (float) i_413_ + (this.aClass101_Sub1_7492.aFloat5678 * (float) i_414_) + (this.aClass101_Sub1_7492.aFloat5666 * (float) i_415_) + this.aClass101_Sub1_7492.aFloat5685) / f_417_);
+        int i_420_ = (int) ((float) this.anInt7497 * ((this.camera.aFloat5655) * (float) i + (this.camera.aFloat5678 * (float) i_411_) + (this.camera.aFloat5666 * (float) i_412_) + this.camera.aFloat5685) / f);
+        int i_421_ = (int) ((float) this.anInt7497 * ((this.camera.aFloat5655) * (float) i_413_ + (this.camera.aFloat5678 * (float) i_414_) + (this.camera.aFloat5666 * (float) i_415_) + this.camera.aFloat5685) / f_417_);
         if (i_420_ < this.anInt7490 && i_421_ < this.anInt7490) i_416_ |= 0x4;
         else if (i_420_ > this.anInt7506 && i_421_ > this.anInt7506) i_416_ |= 0x8;
         return i_416_;
@@ -1729,8 +1729,8 @@ final class ha_Sub1 extends ha {
             int i_516_ = i_494_ - i_510_;
             int i_517_ = i_494_ + i_501_ - i_510_;
             int i_518_ = i_494_ + i_501_ + i_509_;
-            if (i_499_ == 0) class109.anInt1674 = 0;
-            else if (i_499_ == 1) class109.anInt1674 = 255 - (i_497_ >>> 24);
+            if (i_499_ == 0) class109.alpha = 0;
+            else if (i_499_ == 1) class109.alpha = 255 - (i_497_ >>> 24);
             else throw new IllegalArgumentException();
             C(false);
             class109.aBoolean1671 = (i_511_ < 0 || i_511_ > class109.anInt1679 || i_512_ < 0 || i_512_ > class109.anInt1679 || i_513_ < 0 || i_513_ > class109.anInt1679);
@@ -1752,7 +1752,7 @@ final class ha_Sub1 extends ha {
     }
 
     final void method3650(int i) {
-        Class64_Sub1.anInt5346 = Class64_Sub1.anInt5350 = i;
+        JavaModel.anInt5346 = JavaModel.anInt5350 = i;
         if (this.anInt7485 > 1) throw new IllegalStateException("No MT");
         method3631(this.anInt7485);
         method3659(0);
@@ -1967,17 +1967,17 @@ final class ha_Sub1 extends ha {
     }
 
     final int r(int i, int i_579_, int i_580_, int i_581_, int i_582_, int i_583_, int i_584_) {
-        float f = ((this.aClass101_Sub1_7492.aFloat5662) * (float) i + (this.aClass101_Sub1_7492.aFloat5680) * (float) i_579_ + (this.aClass101_Sub1_7492.aFloat5664) * (float) i_580_ + (this.aClass101_Sub1_7492.aFloat5681));
-        float f_585_ = ((this.aClass101_Sub1_7492.aFloat5662) * (float) i_581_ + (this.aClass101_Sub1_7492.aFloat5680) * (float) i_582_ + (this.aClass101_Sub1_7492.aFloat5664) * (float) i_583_ + (this.aClass101_Sub1_7492.aFloat5681));
+        float f = ((this.camera.aFloat5662) * (float) i + (this.camera.aFloat5680) * (float) i_579_ + (this.camera.aFloat5664) * (float) i_580_ + (this.camera.aFloat5681));
+        float f_585_ = ((this.camera.aFloat5662) * (float) i_581_ + (this.camera.aFloat5680) * (float) i_582_ + (this.camera.aFloat5664) * (float) i_583_ + (this.camera.aFloat5681));
         int i_586_ = 0;
         if (f < (float) this.anInt7482 && f_585_ < (float) this.anInt7482) i_586_ |= 0x10;
         else if (f > (float) this.anInt7494 && f_585_ > (float) this.anInt7494) i_586_ |= 0x20;
-        int i_587_ = (int) ((float) this.anInt7491 * ((this.aClass101_Sub1_7492.aFloat5672) * (float) i + (this.aClass101_Sub1_7492.aFloat5673 * (float) i_579_) + (this.aClass101_Sub1_7492.aFloat5669 * (float) i_580_) + this.aClass101_Sub1_7492.aFloat5686) / (float) i_584_);
-        int i_588_ = (int) ((float) this.anInt7491 * ((this.aClass101_Sub1_7492.aFloat5672) * (float) i_581_ + (this.aClass101_Sub1_7492.aFloat5673 * (float) i_582_) + (this.aClass101_Sub1_7492.aFloat5669 * (float) i_583_) + this.aClass101_Sub1_7492.aFloat5686) / (float) i_584_);
+        int i_587_ = (int) ((float) this.anInt7491 * ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673 * (float) i_579_) + (this.camera.aFloat5669 * (float) i_580_) + this.camera.aFloat5686) / (float) i_584_);
+        int i_588_ = (int) ((float) this.anInt7491 * ((this.camera.aFloat5672) * (float) i_581_ + (this.camera.aFloat5673 * (float) i_582_) + (this.camera.aFloat5669 * (float) i_583_) + this.camera.aFloat5686) / (float) i_584_);
         if (i_587_ < this.anInt7509 && i_588_ < this.anInt7509) i_586_ |= 0x1;
         else if (i_587_ > this.anInt7508 && i_588_ > this.anInt7508) i_586_ |= 0x2;
-        int i_589_ = (int) ((float) this.anInt7497 * ((this.aClass101_Sub1_7492.aFloat5655) * (float) i + (this.aClass101_Sub1_7492.aFloat5678 * (float) i_579_) + (this.aClass101_Sub1_7492.aFloat5666 * (float) i_580_) + this.aClass101_Sub1_7492.aFloat5685) / (float) i_584_);
-        int i_590_ = (int) ((float) this.anInt7497 * ((this.aClass101_Sub1_7492.aFloat5655) * (float) i_581_ + (this.aClass101_Sub1_7492.aFloat5678 * (float) i_582_) + (this.aClass101_Sub1_7492.aFloat5666 * (float) i_583_) + this.aClass101_Sub1_7492.aFloat5685) / (float) i_584_);
+        int i_589_ = (int) ((float) this.anInt7497 * ((this.camera.aFloat5655) * (float) i + (this.camera.aFloat5678 * (float) i_579_) + (this.camera.aFloat5666 * (float) i_580_) + this.camera.aFloat5685) / (float) i_584_);
+        int i_590_ = (int) ((float) this.anInt7497 * ((this.camera.aFloat5655) * (float) i_581_ + (this.camera.aFloat5678 * (float) i_582_) + (this.camera.aFloat5666 * (float) i_583_) + this.camera.aFloat5685) / (float) i_584_);
         if (i_589_ < this.anInt7490 && i_590_ < this.anInt7490) i_586_ |= 0x4;
         else if (i_589_ > this.anInt7506 && i_590_ > this.anInt7506) i_586_ |= 0x8;
         return i_586_;
@@ -2009,7 +2009,7 @@ final class ha_Sub1 extends ha {
         anInt7512 = -1;
         try {
             aClass60_7498 = new Class60(256);
-            this.aClass101_Sub1_7492 = new Class101_Sub1();
+            this.camera = new Class101_Sub1();
             method3631(1);
             method3659(0);
             Class59_Sub2_Sub1.method566(true, true, (byte) -126);
@@ -2261,10 +2261,10 @@ final class ha_Sub1 extends ha {
     }
 
     final void da(int i, int i_636_, int i_637_, int[] is) {
-        float f = ((this.aClass101_Sub1_7492.aFloat5681) + ((this.aClass101_Sub1_7492.aFloat5662) * (float) i + (this.aClass101_Sub1_7492.aFloat5680) * (float) i_636_ + (this.aClass101_Sub1_7492.aFloat5664) * (float) i_637_));
+        float f = ((this.camera.aFloat5681) + ((this.camera.aFloat5662) * (float) i + (this.camera.aFloat5680) * (float) i_636_ + (this.camera.aFloat5664) * (float) i_637_));
         if (f >= (float) this.anInt7482 && f <= (float) this.anInt7494) {
-            int i_638_ = (int) ((float) this.anInt7491 * (this.aClass101_Sub1_7492.aFloat5686 + ((this.aClass101_Sub1_7492.aFloat5672) * (float) i + (this.aClass101_Sub1_7492.aFloat5673) * (float) i_636_ + (this.aClass101_Sub1_7492.aFloat5669) * (float) i_637_)) / f);
-            int i_639_ = (int) ((float) this.anInt7497 * (this.aClass101_Sub1_7492.aFloat5685 + ((this.aClass101_Sub1_7492.aFloat5655) * (float) i + (this.aClass101_Sub1_7492.aFloat5678) * (float) i_636_ + (this.aClass101_Sub1_7492.aFloat5666) * (float) i_637_)) / f);
+            int i_638_ = (int) ((float) this.anInt7491 * (this.camera.aFloat5686 + ((this.camera.aFloat5672) * (float) i + (this.camera.aFloat5673) * (float) i_636_ + (this.camera.aFloat5669) * (float) i_637_)) / f);
+            int i_639_ = (int) ((float) this.anInt7497 * (this.camera.aFloat5685 + ((this.camera.aFloat5655) * (float) i + (this.camera.aFloat5678) * (float) i_636_ + (this.camera.aFloat5666) * (float) i_637_)) / f);
             if (i_638_ >= this.anInt7509 && i_638_ <= this.anInt7508 && i_639_ >= this.anInt7490 && i_639_ <= this.anInt7506) {
                 is[0] = i_638_ - this.anInt7509;
                 is[1] = i_639_ - this.anInt7490;

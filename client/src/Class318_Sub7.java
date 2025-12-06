@@ -305,12 +305,12 @@ final class Class318_Sub7 extends Class318 {
                             } else {
                                 int i_28_ = ((int) (Math.random() * (double) anInt6456) + anInt6459);
                                 i_28_ &= 0x3fff;
-                                int i_29_ = Class70.anIntArray1207[i_28_];
-                                int i_30_ = Class70.anIntArray1204[i_28_];
+                                int i_29_ = Class70.SIN[i_28_];
+                                int i_30_ = Class70.COS[i_28_];
                                 int i_31_ = anInt6452 + (int) ((double) anInt6454 * Math.random());
                                 i_31_ &= 0x1fff;
-                                int i_32_ = Class70.anIntArray1207[i_31_];
-                                int i_33_ = Class70.anIntArray1204[i_31_];
+                                int i_32_ = Class70.SIN[i_31_];
+                                int i_33_ = Class70.COS[i_31_];
                                 int i_34_ = 13;
                                 i_25_ = i_32_ * i_30_ >> i_34_;
                                 i_26_ = -1 * (i_33_ << 1);

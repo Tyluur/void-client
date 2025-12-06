@@ -9,7 +9,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
     static int anInt10121;
     static int anInt10122;
     static int anInt10123;
-    private Class64 aClass64_10124;
+    private Model aModel_10124;
     static Class262 aClass262_10125 = new Class262();
     static int anInt10126;
     private Class30 aClass30_10127;
@@ -34,13 +34,13 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
     static int anInt10146;
     static int anInt10147;
 
-    private final Class64 method2488(int i, int i_0_, ha var_ha) {
+    private final Model method2488(int i, int i_0_, ha var_ha) {
         if (i_0_ != 0) return null;
         anInt10126++;
-        if (aClass64_10124 != null && var_ha.method3667(aClass64_10124.ua(), i) == 0) return aClass64_10124;
+        if (aModel_10124 != null && var_ha.method3667(aModel_10124.ua(), i) == 0) return aModel_10124;
         Class2 class2 = method2491((byte) -51, false, i, var_ha);
         if (class2 == null) return null;
-        return class2.aClass64_119;
+        return class2.aModel_119;
     }
 
     static final int method2489(byte i) {
@@ -58,25 +58,25 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
 
     final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10122++;
-        if (aClass64_10124 == null) return null;
+        if (aModel_10124 == null) return null;
         Class101 class101 = var_ha.method3705();
         class101.method894((this.x - -this.aShort8781), this.anInt6382, (this.y - -this.aShort8769));
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean10130, false);
-        if (Class305.aBoolean3870) aClass64_10124.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
-        else aClass64_10124.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+        if (Class305.aBoolean3870) aModel_10124.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+        else aModel_10124.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
         return class318_sub4;
     }
 
     public final void method40(int i) {
         if (i != -12031) aByte10145 = (byte) -104;
         anInt10147++;
-        if (aClass64_10124 != null) aClass64_10124.method612();
+        if (aModel_10124 != null) aModel_10124.method612();
     }
 
     final boolean method2377(byte i) {
         if (i != 122) aBoolean10137 = false;
         anInt10131++;
-        if (aClass64_10124 != null) return aClass64_10124.F();
+        if (aModel_10124 != null) return aModel_10124.F();
         return false;
     }
 
@@ -94,19 +94,19 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
 
     final int method2379(int i) {
         anInt10123++;
-        if (i != -25675) aClass64_10124 = null;
-        if (aClass64_10124 != null) return aClass64_10124.ma();
+        if (i != -25675) aModel_10124 = null;
+        if (aModel_10124 != null) return aModel_10124.ma();
         return 0;
     }
 
     final boolean method2391(ha var_ha, int i, int i_2_, int i_3_) {
         anInt10119++;
-        Class64 class64 = method2488(131072, i_3_, var_ha);
-        if (class64 != null) {
+        Model model = method2488(131072, i_3_, var_ha);
+        if (model != null) {
             Class101 class101 = var_ha.method3705();
             class101.method894(this.x, this.anInt6382, this.y);
-            if (Class305.aBoolean3870) return class64.method623(i_2_, i, class101, false, 0, Class132.anInt1906);
-            return class64.method628(i_2_, i, class101, false, 0);
+            if (Class305.aBoolean3870) return model.method623(i_2_, i, class101, false, 0, Class132.anInt1906);
+            return model.method628(i_2_, i, class101, false, 0);
         }
         return false;
     }
@@ -114,8 +114,8 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
     final boolean method2376(int i) {
         anInt10136++;
         if (i > -12) return false;
-        if (aClass64_10124 != null) {
-            return !aClass64_10124.r();
+        if (aModel_10124 != null) {
+            return !aModel_10124.r();
         }
         return true;
     }
@@ -187,7 +187,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
     final int method2394(boolean bool) {
         if (bool != true) aBoolean10138 = false;
         anInt10139++;
-        if (aClass64_10124 != null) return aClass64_10124.fa();
+        if (aModel_10124 != null) return aModel_10124.fa();
         return 0;
     }
 
@@ -205,7 +205,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
                 aBoolean10137 = (var_ha.method3682() && class51.aBoolean894 && !aBoolean10138 && Class316.clientOptions.aClass239_Sub7_7238.method1748(-32350) != 0);
                 Class2 class2 = method2491((byte) -51, aBoolean10137, 2048, var_ha);
                 if (class2 == null) break;
-                aClass64_10124 = class2.aClass64_119;
+                aModel_10124 = class2.aModel_119;
                 aR10128 = class2.aR118;
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("co.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (class51 != null ? "{...}" : "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'));

@@ -295,7 +295,7 @@ final class Class46 {
         return class348_sub50.aString7211;
     }
 
-    final Class64 method430(IDKTypeList IDKTypeList, SeqTypeList seqTypeList, int i, ha var_ha, int i_21_, int i_22_, ItemTypeList itemTypeList, Interface17 interface17, int i_23_, Class154 class154, Class17 class17, BASTypeList BASTypeList, NPCTypeList NPCTypeList, int i_24_) {
+    final Model method430(IDKTypeList IDKTypeList, SeqTypeList seqTypeList, int i, ha var_ha, int i_21_, int i_22_, ItemTypeList itemTypeList, Interface17 interface17, int i_23_, Class154 class154, Class17 class17, BASTypeList BASTypeList, NPCTypeList NPCTypeList, int i_24_) {
         try {
             anInt684++;
             Class348_Sub42_Sub13.aBoolean9616 = false;
@@ -305,68 +305,68 @@ final class Class46 {
                 int i_25_ = i;
                 if (class17 != null) i |= class17.method263(i_24_, 106, i_21_, true);
                 long l = this.anInt753 + ((this.anInt770 << 16) + (var_ha.anInt4567 << 29));
-                Class64 class64 = (Class64) Class358.aClass60_4417.method583(l, -90);
-                if (class64 == null || var_ha.method3667(class64.ua(), i) != 0) {
-                    if (class64 != null) i = var_ha.method3679(i, class64.ua());
+                Model model = (Model) Class358.aClass60_4417.method583(l, -90);
+                if (model == null || var_ha.method3667(model.ua(), i) != 0) {
+                    if (model != null) i = var_ha.method3679(i, model.ua());
                     Mesh mesh = Class300.method2277(0, (Class348_Sub40_Sub28.aIndex_9365), this.anInt753, -1);
                     if (mesh == null) {
                         Class348_Sub42_Sub13.aBoolean9616 = true;
                         return null;
                     }
                     if (mesh.version < 13) mesh.method1092(2, 114);
-                    class64 = var_ha.method3625(mesh, i, Class14_Sub3.anInt8628, 64, 768);
-                    Class358.aClass60_4417.method582(class64, l, (byte) -125);
+                    model = var_ha.method3625(mesh, i, Class14_Sub3.anInt8628, 64, 768);
+                    Class358.aClass60_4417.method582(model, l, (byte) -125);
                 }
-                if (class17 != null) class64 = class17.method269(-101, class64, i_24_, i_22_, i, i_21_);
-                class64.s(i_25_);
-                return class64;
+                if (class17 != null) model = class17.method269(-101, model, i_24_, i_22_, i, i_21_);
+                model.s(i_25_);
+                return model;
             }
             if (this.anInt770 == 2) {
-                Class64 class64 = (NPCTypeList.method2079(this.anInt753, -1).method803(interface17, var_ha, i_22_, i_24_, class17, seqTypeList, i_21_, 104, i));
-                if (class64 == null) {
+                Model model = (NPCTypeList.method2079(this.anInt753, -1).method803(interface17, var_ha, i_22_, i_24_, class17, seqTypeList, i_21_, 104, i));
+                if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
                 }
-                return class64;
+                return model;
             }
             if (i_23_ != 255) method432(null, -50);
             if (this.anInt770 == 3) {
                 if (class154 == null) return null;
-                Class64 class64 = class154.method1230(itemTypeList, -402058072, seqTypeList, IDKTypeList, interface17, NPCTypeList, i_21_, i_24_, i, class17, i_22_, var_ha);
-                if (class64 == null) {
+                Model model = class154.method1230(itemTypeList, -402058072, seqTypeList, IDKTypeList, interface17, NPCTypeList, i_21_, i_24_, i, class17, i_22_, var_ha);
+                if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
                 }
-                return class64;
+                return model;
             }
             if (this.anInt770 == 4) {
                 ItemDefinition itemDefinition = itemTypeList.method1940(i_23_ + -365, this.anInt753);
-                Class64 class64 = itemDefinition.method1559(class154, class17, var_ha, i, i_22_, 10, i_21_, (byte) 88, i_24_);
-                if (class64 == null) {
+                Model model = itemDefinition.method1559(class154, class17, var_ha, i, i_22_, 10, i_21_, (byte) 88, i_24_);
+                if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
                 }
-                return class64;
+                return model;
             }
             if (this.anInt770 == 6) {
-                Class64 class64 = (NPCTypeList.method2079(this.anInt753, -1).method800(0, null, seqTypeList, false, null, 0, BASTypeList, i_21_, class17, interface17, var_ha, 0, null, i_24_, 0, i, i_22_));
-                if (class64 == null) {
+                Model model = (NPCTypeList.method2079(this.anInt753, -1).method800(0, null, seqTypeList, false, null, 0, BASTypeList, i_21_, class17, interface17, var_ha, 0, null, i_24_, 0, i, i_22_));
+                if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
                 }
-                return class64;
+                return model;
             }
             if (this.anInt770 == 7) {
                 if (class154 == null) return null;
                 int i_26_ = this.anInt753 >>> 16;
                 int i_27_ = 0xffff & this.anInt753;
                 int i_28_ = this.anInt779;
-                Class64 class64 = class154.method1232(i_24_, i, i_28_, i_27_, seqTypeList, IDKTypeList, -15331, i_26_, i_22_, var_ha, i_21_, class17);
-                if (class64 == null) {
+                Model model = class154.method1232(i_24_, i, i_28_, i_27_, seqTypeList, IDKTypeList, -15331, i_26_, i_22_, var_ha, i_21_, class17);
+                if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
                 }
-                return class64;
+                return model;
             }
             return null;
         } catch (RuntimeException runtimeexception) {
@@ -663,19 +663,19 @@ final class Class46 {
         }
     }
 
-    final void method437(int i, Class64 class64, ha var_ha, int i_63_, Class101 class101) {
+    final void method437(int i, Model model, ha var_ha, int i_63_, Class101 class101) {
         do {
             try {
                 if (i != -20154) method438(15, -50, null);
                 anInt718++;
-                class64.method620(class101);
-                ModelParticleEmitter[] modelParticleEmitters = class64.method619();
-                ModelParticleEffector[] modelParticleEffectors = class64.method604();
+                model.method620(class101);
+                ModelParticleEmitter[] modelParticleEmitters = model.method619();
+                ModelParticleEffector[] modelParticleEffectors = model.method604();
                 if ((this.aClass318_Sub10_740 == null || this.aClass318_Sub10_740.aBoolean6470) && (modelParticleEmitters != null || modelParticleEffectors != null)) this.aClass318_Sub10_740 = Class318_Sub10.method2526(i_63_, false);
                 if (this.aClass318_Sub10_740 == null) break;
                 this.aClass318_Sub10_740.method2536(var_ha, i_63_, modelParticleEmitters, modelParticleEffectors, false);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (class64 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_63_ + ',' + (class101 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("at.J(" + i + ',' + (model != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_63_ + ',' + (class101 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -715,7 +715,7 @@ final class Class46 {
             LoadState.anIntArray1045 = new int[i];
             Class156.anIntArray2117 = new int[i];
             anInt825++;
-            Class64.anIntArray1127 = new int[i];
+            Model.anIntArray1127 = new int[i];
             Class327.anIntArray4097 = new int[i];
         }
     }

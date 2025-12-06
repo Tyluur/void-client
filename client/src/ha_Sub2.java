@@ -404,7 +404,7 @@ final class ha_Sub2 extends ha {
         anInt7683++;
     }
 
-    final Class64 method3625(Mesh mesh, int i, int i_2_, int i_3_, int i_4_) {
+    final Model method3625(Mesh mesh, int i, int i_2_, int i_3_, int i_4_) {
         try {
             anInt7579++;
             return new Class64_Sub3(this, mesh, i, i_3_, i_4_, i_2_);

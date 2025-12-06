@@ -12,7 +12,7 @@ final class Class109 {
     boolean aBoolean1671;
     int anInt1672;
     private final int[] anIntArray1673;
-    int anInt1674 = 0;
+    int alpha = 0;
     private boolean aBoolean1675 = false;
     int[] anIntArray1676 = new int[4096];
     private final float[] aFloatArray1677;
@@ -478,7 +478,7 @@ final class Class109 {
                     if (this.aBoolean1669) {
                         i_62_ = i_64_ - i_63_ >> 2;
                         f_65_ *= 4.0F;
-                        if (this.anInt1674 == 0) {
+                        if (this.alpha == 0) {
                             if (i_62_ > 0) {
                                 do {
                                     i_61_ = Class126.HSV_TO_RGB[(int) f];
@@ -517,8 +517,8 @@ final class Class109 {
                                 } while (--i_62_ > 0);
                             }
                         } else {
-                            int i_68_ = this.anInt1674;
-                            int i_69_ = 256 - this.anInt1674;
+                            int i_68_ = this.alpha;
+                            int i_69_ = 256 - this.alpha;
                             if (i_62_ > 0) {
                                 do {
                                     i_61_ = Class126.HSV_TO_RGB[(int) f];
@@ -566,7 +566,7 @@ final class Class109 {
                         break;
                     }
                     i_62_ = i_64_ - i_63_;
-                    if (this.anInt1674 == 0) {
+                    if (this.alpha == 0) {
                         do {
                             if (f_66_ < fs[++i]) {
                                 is[i] = Class126.HSV_TO_RGB[(int) f];
@@ -577,8 +577,8 @@ final class Class109 {
                         } while (--i_62_ > 0);
                         break;
                     }
-                    int i_75_ = this.anInt1674;
-                    int i_76_ = 256 - this.anInt1674;
+                    int i_75_ = this.alpha;
+                    int i_76_ = 256 - this.alpha;
                     do {
                         if (f_66_ < fs[++i]) {
                             i_61_ = Class126.HSV_TO_RGB[(int) f];
@@ -596,7 +596,7 @@ final class Class109 {
                     if (this.aBoolean1669) {
                         i_62_ = i_64_ - i_63_ >> 2;
                         f_65_ *= 4.0F;
-                        if (this.anInt1674 == 0) {
+                        if (this.alpha == 0) {
                             if (i_62_ > 0) {
                                 do {
                                     i_61_ = Class126.HSV_TO_RGB[(int) f];
@@ -620,8 +620,8 @@ final class Class109 {
                                 } while (--i_62_ > 0);
                             }
                         } else {
-                            int i_78_ = this.anInt1674;
-                            int i_79_ = 256 - this.anInt1674;
+                            int i_78_ = this.alpha;
+                            int i_79_ = 256 - this.alpha;
                             if (i_62_ > 0) {
                                 do {
                                     i_61_ = Class126.HSV_TO_RGB[(int) f];
@@ -664,7 +664,7 @@ final class Class109 {
                         break;
                     }
                     i_62_ = i_64_ - i_63_;
-                    if (this.anInt1674 == 0) {
+                    if (this.alpha == 0) {
                         do {
                             if (f_66_ < fs[++i]) is[i] = Class126.HSV_TO_RGB[(int) f];
                             f_66_ += f_67_;
@@ -672,8 +672,8 @@ final class Class109 {
                         } while (--i_62_ > 0);
                         break;
                     }
-                    int i_85_ = this.anInt1674;
-                    int i_86_ = 256 - this.anInt1674;
+                    int i_85_ = this.alpha;
+                    int i_86_ = 256 - this.alpha;
                     do {
                         if (f_66_ < fs[++i]) {
                             i_61_ = Class126.HSV_TO_RGB[(int) f];
@@ -1840,7 +1840,7 @@ final class Class109 {
                     f_174_ *= 4.0F;
                     f_176_ *= 4.0F;
                     f_178_ *= 4.0F;
-                    if (this.anInt1674 == 0) {
+                    if (this.alpha == 0) {
                         if (i_169_ > 0) {
                             do {
                                 i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
@@ -1914,8 +1914,8 @@ final class Class109 {
                             } while (--i_169_ > 0);
                         }
                     } else {
-                        int i_179_ = this.anInt1674;
-                        int i_180_ = 256 - this.anInt1674;
+                        int i_179_ = this.alpha;
+                        int i_180_ = 256 - this.alpha;
                         if (i_169_ > 0) {
                             do {
                                 i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
@@ -1945,7 +1945,7 @@ final class Class109 {
                     }
                 } else {
                     i_169_ = i_171_ - i_170_;
-                    if (this.anInt1674 == 0) {
+                    if (this.alpha == 0) {
                         do {
                             is[i++] = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                             f_173_ += f_174_;
@@ -1967,8 +1967,8 @@ final class Class109 {
                             f_177_ += f_178_;
                         } while (--i_169_ > 0);
                     } else {
-                        int i_213_ = this.anInt1674;
-                        int i_214_ = 256 - this.anInt1674;
+                        int i_213_ = this.alpha;
+                        int i_214_ = 256 - this.alpha;
                         do {
                             i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                             f_173_ += f_174_;
@@ -1992,7 +1992,7 @@ final class Class109 {
                         f_174_ *= 4.0F;
                         f_176_ *= 4.0F;
                         f_178_ *= 4.0F;
-                        if (this.anInt1674 == 0) {
+                        if (this.alpha == 0) {
                             if (i_169_ > 0) {
                                 do {
                                     i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
@@ -2108,8 +2108,8 @@ final class Class109 {
                                 } while (--i_169_ > 0);
                             }
                         } else {
-                            int i_222_ = this.anInt1674;
-                            int i_223_ = 256 - this.anInt1674;
+                            int i_222_ = this.alpha;
+                            int i_223_ = 256 - this.alpha;
                             if (i_169_ > 0) {
                                 do {
                                     i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
@@ -2159,7 +2159,7 @@ final class Class109 {
                         }
                     } else {
                         i_169_ = i_171_ - i_170_;
-                        if (this.anInt1674 == 0) {
+                        if (this.alpha == 0) {
                             do {
                                 if (f < fs[++i]) {
                                     is[i] = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
@@ -2189,8 +2189,8 @@ final class Class109 {
                                 f_177_ += f_178_;
                             } while (--i_169_ > 0);
                         } else {
-                            int i_259_ = this.anInt1674;
-                            int i_260_ = 256 - this.anInt1674;
+                            int i_259_ = this.alpha;
+                            int i_260_ = 256 - this.alpha;
                             do {
                                 if (f < fs[++i]) {
                                     i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
@@ -2211,7 +2211,7 @@ final class Class109 {
                     f_174_ *= 4.0F;
                     f_176_ *= 4.0F;
                     f_178_ *= 4.0F;
-                    if (this.anInt1674 == 0) {
+                    if (this.alpha == 0) {
                         if (i_169_ > 0) {
                             do {
                                 i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
@@ -2307,8 +2307,8 @@ final class Class109 {
                             } while (--i_169_ > 0);
                         }
                     } else {
-                        int i_268_ = this.anInt1674;
-                        int i_269_ = 256 - this.anInt1674;
+                        int i_268_ = this.alpha;
+                        int i_269_ = 256 - this.alpha;
                         if (i_169_ > 0) {
                             do {
                                 i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
@@ -2353,7 +2353,7 @@ final class Class109 {
                     }
                 } else {
                     i_169_ = i_171_ - i_170_;
-                    if (this.anInt1674 == 0) {
+                    if (this.alpha == 0) {
                         do {
                             if (f < fs[++i]) is[i] = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
                             f += f_172_;
@@ -2379,8 +2379,8 @@ final class Class109 {
                             f_177_ += f_178_;
                         } while (--i_169_ > 0);
                     } else {
-                        int i_305_ = this.anInt1674;
-                        int i_306_ = 256 - this.anInt1674;
+                        int i_305_ = this.alpha;
+                        int i_306_ = 256 - this.alpha;
                         do {
                             if (f < fs[++i]) {
                                 i_168_ = ~0xffffff | ((int) f_173_ & 0xff0000 | (int) f_175_ & 0xff00 | (int) f_177_ & 0xff);
@@ -3818,7 +3818,7 @@ final class Class109 {
             i_451_ = i_453_ - i_452_ >> 2;
             f += f_454_ * (float) i_452_;
             if (aClass167_1670.aBoolean2202) {
-                if (this.anInt1674 == 0) {
+                if (this.alpha == 0) {
                     while (--i_451_ >= 0) {
                         if (f < fs[++i]) {
                             is[i] = i_450_;
@@ -3849,7 +3849,7 @@ final class Class109 {
                         }
                         f += f_454_;
                     }
-                } else if (this.anInt1674 == 254) {
+                } else if (this.alpha == 254) {
                     if (i_452_ != 0 && i_453_ <= this.anInt1679 - 1) {
                         while (--i_451_ >= 0) {
                             if (f < fs[++i]) is[i - 1] = is[i];
@@ -3868,8 +3868,8 @@ final class Class109 {
                         }
                     }
                 } else {
-                    int i_455_ = this.anInt1674;
-                    int i_456_ = 256 - this.anInt1674;
+                    int i_455_ = this.alpha;
+                    int i_456_ = 256 - this.alpha;
                     i_450_ = (((i_450_ & 0xff00ff) * i_456_ >> 8 & 0xff00ff) + ((i_450_ & 0xff00) * i_456_ >> 8 & 0xff00));
                     while (--i_451_ >= 0) {
                         if (f < fs[++i]) {
@@ -3907,7 +3907,7 @@ final class Class109 {
                         f += f_454_;
                     }
                 }
-            } else if (this.anInt1674 == 0) {
+            } else if (this.alpha == 0) {
                 while (--i_451_ >= 0) {
                     if (f < fs[++i]) is[i] = i_450_;
                     f += f_454_;
@@ -3923,7 +3923,7 @@ final class Class109 {
                     if (f < fs[++i]) is[i] = i_450_;
                     f += f_454_;
                 }
-            } else if (this.anInt1674 == 254) {
+            } else if (this.alpha == 254) {
                 if (i_452_ != 0 && i_453_ <= this.anInt1679 - 1) {
                     while (--i_451_ >= 0) {
                         if (f < fs[++i]) is[i - 1] = is[i];
@@ -3942,8 +3942,8 @@ final class Class109 {
                     }
                 }
             } else {
-                int i_462_ = this.anInt1674;
-                int i_463_ = 256 - this.anInt1674;
+                int i_462_ = this.alpha;
+                int i_463_ = 256 - this.alpha;
                 i_450_ = (((i_450_ & 0xff00ff) * i_463_ >> 8 & 0xff00ff) + ((i_450_ & 0xff00) * i_463_ >> 8 & 0xff00));
                 while (--i_451_ >= 0) {
                     if (f < fs[++i]) {

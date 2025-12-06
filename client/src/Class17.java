@@ -179,13 +179,13 @@ final class Class17 {
         anInterface4_252 = null;
     }
 
-    final Class64 method266(Class64 class64, int i, int i_27_, byte i_28_, int i_29_, int i_30_, int i_31_, int i_32_) {
+    final Model method266(Model model, int i, int i_27_, byte i_28_, int i_29_, int i_30_, int i_31_, int i_32_) {
         anInt266++;
         int i_33_ = this.anIntArray267[i_29_];
         i_29_ = this.anIntArray237[i_29_];
         Class348_Sub42_Sub17 class348_sub42_sub17 = this.aSeqTypeList_251.method839(i_29_ >> 16, 3);
         i_29_ &= 0xffff;
-        if (class348_sub42_sub17 == null) return class64.method614(i_28_, i_32_, true);
+        if (class348_sub42_sub17 == null) return model.method614(i_28_, i_32_, true);
         Class348_Sub42_Sub17 class348_sub42_sub17_34_ = null;
         if ((this.aBoolean241 || Class28.aBoolean5002) && i_27_ != -1 && this.anIntArray237.length > i_27_) {
             i_27_ = this.anIntArray237[i_27_];
@@ -203,9 +203,9 @@ final class Class17 {
         }
         i_32_ |= 0x20;
         if (i_31_ != 663780816) this.anInt261 = -72;
-        Class64 class64_35_ = class64.method614(i_28_, i_32_, true);
-        class64_35_.method617(i_29_, i_33_, class348_sub42_sub17_34_, i, class348_sub42_sub17, false, this.aBoolean242, i_27_, i_30_ + -1);
-        return class64_35_;
+        Model model_35_ = model.method614(i_28_, i_32_, true);
+        model_35_.method617(i_29_, i_33_, class348_sub42_sub17_34_, i, class348_sub42_sub17, false, this.aBoolean242, i_27_, i_30_ + -1);
+        return model_35_;
     }
 
     final void method267(Packet packet, boolean bool) {
@@ -233,12 +233,12 @@ final class Class17 {
         int i_48_ = 0;
         int i_49_ = i_42_;
         if (i_45_ != 0) {
-            i_48_ = -i_49_ * Class70.anIntArray1207[i_45_] >> 14;
-            i_49_ = Class70.anIntArray1204[i_45_] * i_49_ >> 14;
+            i_48_ = -i_49_ * Class70.SIN[i_45_] >> 14;
+            i_49_ = Class70.COS[i_45_] * i_49_ >> 14;
         }
         if (i_46_ != 0) {
-            i_47_ = Class70.anIntArray1207[i_46_] * i_49_ >> 14;
-            i_49_ = i_49_ * Class70.anIntArray1204[i_46_] >> 14;
+            i_47_ = Class70.SIN[i_46_] * i_49_ >> 14;
+            i_49_ = i_49_ * Class70.COS[i_46_] >> 14;
         }
         Class5.anInt4638 = i_37_;
         Class338.anInt4186 = 0;
@@ -248,13 +248,13 @@ final class Class17 {
         ClientScript.anInt9701 = i;
     }
 
-    final Class64 method269(int i, Class64 class64, int i_50_, int i_51_, int i_52_, int i_53_) {
+    final Model method269(int i, Model model, int i_50_, int i_51_, int i_52_, int i_53_) {
         anInt246++;
         int i_54_ = this.anIntArray267[i_53_];
         int i_55_ = this.anIntArray237[i_53_];
         Class348_Sub42_Sub17 class348_sub42_sub17 = this.aSeqTypeList_251.method839(i_55_ >> 16, 3);
         i_55_ &= 0xffff;
-        if (class348_sub42_sub17 == null) return class64.method614((byte) 1, i_52_, true);
+        if (class348_sub42_sub17 == null) return model.method614((byte) 1, i_52_, true);
         Class348_Sub42_Sub17 class348_sub42_sub17_56_ = null;
         if ((this.aBoolean241 || Class28.aBoolean5002) && i_50_ != -1 && this.anIntArray237.length > i_50_) {
             i_50_ = this.anIntArray237[i_50_];
@@ -301,11 +301,11 @@ final class Class17 {
             if (class348_sub42_sub17_58_.method3267((byte) -109, i_60_)) i_52_ |= 0x400;
         }
         i_52_ |= 0x20;
-        Class64 class64_61_ = class64.method614((byte) 1, i_52_, true);
+        Model model_61_ = model.method614((byte) 1, i_52_, true);
         int i_62_ = -33 / ((49 - i) / 45);
-        class64_61_.method617(i_55_, i_54_, class348_sub42_sub17_56_, 0, class348_sub42_sub17, false, this.aBoolean242, i_50_, -1 + i_51_);
-        if (class348_sub42_sub17_57_ != null) class64_61_.method617(i_59_, i_54_, class348_sub42_sub17_58_, 0, class348_sub42_sub17_57_, false, this.aBoolean242, i_60_, -1 + i_51_);
-        return class64_61_;
+        model_61_.method617(i_55_, i_54_, class348_sub42_sub17_56_, 0, class348_sub42_sub17, false, this.aBoolean242, i_50_, -1 + i_51_);
+        if (class348_sub42_sub17_57_ != null) model_61_.method617(i_59_, i_54_, class348_sub42_sub17_58_, 0, class348_sub42_sub17_57_, false, this.aBoolean242, i_60_, -1 + i_51_);
+        return model_61_;
     }
 
     final void method270(byte i) {

@@ -42,13 +42,13 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
     final void method2387(ha var_ha, int i) {
         anInt10113++;
         if (i >= -125) method2386(111, null);
-        Class64 class64 = this.aClass235_10115.method1668(true, true, -128, 262144, var_ha);
-        if (class64 != null) {
+        Model model = this.aClass235_10115.method1668(true, true, -128, 262144, var_ha);
+        if (model != null) {
             int i_1_ = this.x >> 9;
             int i_2_ = this.y >> 9;
             Class101 class101 = var_ha.method3705();
             class101.method894(this.x, this.anInt6382, this.y);
-            this.aClass235_10115.method1670(i_1_, class101, i_2_, var_ha, i_1_, class64, false, (byte) -73, i_2_);
+            this.aClass235_10115.method1670(i_1_, class101, i_2_, var_ha, i_1_, model, false, (byte) -73, i_2_);
         }
     }
 
@@ -60,13 +60,13 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
 
     final boolean method2391(ha var_ha, int i, int i_3_, int i_4_) {
         anInt10101++;
-        Class64 class64 = this.aClass235_10115.method1668(false, false, -127, 131072, var_ha);
-        if (class64 == null) return false;
+        Model model = this.aClass235_10115.method1668(false, false, -127, 131072, var_ha);
+        if (model == null) return false;
         Class101 class101 = var_ha.method3705();
         class101.method894(this.x, this.anInt6382, this.y);
         if (i_4_ != 0) return true;
-        if (Class305.aBoolean3870) return class64.method623(i_3_, i, class101, false, 0, Class132.anInt1906);
-        return class64.method628(i_3_, i, class101, false, 0);
+        if (Class305.aBoolean3870) return model.method623(i_3_, i, class101, false, 0, Class132.anInt1906);
+        return model.method628(i_3_, i, class101, false, 0);
     }
 
     final boolean method2376(int i) {
@@ -111,24 +111,24 @@ final class Class318_Sub1_Sub4_Sub2 extends Class318_Sub1_Sub4 implements Interf
 
     final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10111++;
-        Class64 class64 = this.aClass235_10115.method1668(false, true, i ^ ~0x7f, 2048, var_ha);
-        if (class64 == null) return null;
+        Model model = this.aClass235_10115.method1668(false, true, i ^ ~0x7f, 2048, var_ha);
+        if (model == null) return null;
         Class101 class101 = var_ha.method3705();
         class101.method894(this.x, this.anInt6382, this.y);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean10114, false);
         int i_12_ = this.x >> 9;
         int i_13_ = this.y >> 9;
-        this.aClass235_10115.method1670(i_12_, class101, i_13_, var_ha, i_12_, class64, true, (byte) -73, i_13_);
-        if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
-        else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+        this.aClass235_10115.method1670(i_12_, class101, i_13_, var_ha, i_12_, model, true, (byte) -73, i_13_);
+        if (!Class305.aBoolean3870) model.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+        else model.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
         if ((this.aClass235_10115.aClass318_Sub10_3081) != null) {
             Class98 class98 = this.aClass235_10115.aClass318_Sub10_3081.method2525();
             if (Class305.aBoolean3870) var_ha.method3685(class98, Class132.anInt1906);
             else var_ha.method3684(class98);
         }
-        aBoolean10095 = class64.F() || (this.aClass235_10115.aClass318_Sub10_3081) != null;
-        if (aClass30_10116 != null) ItemTypeList.method1935(this.y, this.anInt6382, aClass30_10116, class64, false, this.x);
-        else aClass30_10116 = (Class348_Sub23_Sub1.method2967(this.x, class64, this.y, this.anInt6382, 2));
+        aBoolean10095 = model.F() || (this.aClass235_10115.aClass318_Sub10_3081) != null;
+        if (aClass30_10116 != null) ItemTypeList.method1935(this.y, this.anInt6382, aClass30_10116, model, false, this.x);
+        else aClass30_10116 = (Class348_Sub23_Sub1.method2967(this.x, model, this.y, this.anInt6382, 2));
         return class318_sub4;
     }
 

@@ -4,20 +4,20 @@
 
 final class Class70 {
     static int anInt1203;
-    static int[] anIntArray1204;
+    static int[] COS; // anIntArray1204
     static int anInt1205;
     static int anInt1206;
-    static int[] anIntArray1207 = new int[16384];
+    static int[] SIN = new int[16384]; // anIntArray1207
 
     public static void method725(int i) {
-        anIntArray1207 = null;
-        anIntArray1204 = null;
-        if (i != 16384) anIntArray1207 = null;
+        SIN = null;
+        COS = null;
+        if (i != 16384) SIN = null;
     }
 
     // method726
     static final void startRenderer(int i) {
-        if (i <= 88) anIntArray1204 = null;
+        if (i <= 88) COS = null;
         anInt1206++;
         if (Class348_Sub42_Sub15.state != null) {
             Class51.renderer = new LoadingScreenRenderer();
@@ -33,7 +33,7 @@ final class Class70 {
         class348_sub42_sub15.method3246(i + -25427);
         class348_sub42_sub15.anInt9652 = i_1_;
         class348_sub42_sub15.anInt9651 = i_0_;
-        if (i != -63) anIntArray1207 = null;
+        if (i != -63) SIN = null;
     }
 
     public final String toString() {
@@ -46,11 +46,11 @@ final class Class70 {
     }
 
     static {
-        anIntArray1204 = new int[16384];
+        COS = new int[16384];
         double d = 3.834951969714103E-4;
         for (int i = 0; i < 16384; i++) {
-            anIntArray1207[i] = (int) (16384.0 * Math.sin(d * (double) i));
-            anIntArray1204[i] = (int) (Math.cos(d * (double) i) * 16384.0);
+            SIN[i] = (int) (16384.0 * Math.sin(d * (double) i));
+            COS[i] = (int) (Math.cos(d * (double) i) * 16384.0);
         }
     }
 }

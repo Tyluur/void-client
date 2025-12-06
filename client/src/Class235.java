@@ -12,7 +12,7 @@ final class Class235 {
     private int anInt3056;
     private Class17 aClass17_3057;
     static int anInt3058;
-    private Class64 aClass64_3059;
+    private Model aModel_3059;
     private int anInt3060 = 0;
     static int anInt3061;
     static int anInt3062;
@@ -62,7 +62,7 @@ final class Class235 {
 
     private final void method1666(byte i, int i_0_) {
         anInt3077++;
-        if (i != 69) aClass64_3059 = null;
+        if (i != 69) aModel_3059 = null;
         int i_1_ = i_0_;
         boolean bool = false;
         if (i_1_ == -1) {
@@ -93,7 +93,7 @@ final class Class235 {
         }
         if (i_1_ == -1) aClass17_3057 = null;
         else {
-            aClass64_3059 = null;
+            aModel_3059 = null;
             if (aClass17_3057 != null && i_1_ == aClass17_3057.anInt269) {
                 if (aClass17_3057.anInt248 == 0) return;
             } else aClass17_3057 = Class10.seqTypeList.method835(i_1_, i + -62);
@@ -119,7 +119,7 @@ final class Class235 {
         if (i != 116) this.anInt3063 = 99;
     }
 
-    final Class64 method1668(boolean bool, boolean bool_3_, int i, int i_4_, ha var_ha) {
+    final Model method1668(boolean bool, boolean bool_3_, int i, int i_4_, ha var_ha) {
         anInt3082++;
         Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, this.anInt3063);
         if (class51.anIntArray945 != null) class51 = class51.method480(Class318_Sub1_Sub3_Sub3.timedVarDomain, (byte) 47);
@@ -131,7 +131,7 @@ final class Class235 {
             return null;
         }
         if (!aBoolean3064 && class51.anInt941 != anInt3053) {
-            aClass64_3059 = null;
+            aModel_3059 = null;
             method1666((byte) 69, -1);
         }
         method1672(aClass318_Sub1_3051, true);
@@ -153,19 +153,19 @@ final class Class235 {
         s var_s_5_;
         if (!aBoolean3069) var_s_5_ = aByte3067 >= 3 ? null : aa_Sub1.aSArray5191[1 + aByte3067];
         else var_s_5_ = Class348_Sub1_Sub1.aSArray8801[0];
-        Class64 class64 = null;
+        Model model = null;
         if (aClass17_3057 == null) {
-            if (aClass64_3059 == null || i_4_ != (i_4_ & aClass64_3059.ua()) || (anInt3053 != class51.anInt941)) {
-                if (aClass64_3059 != null) i_4_ |= aClass64_3059.ua();
+            if (aModel_3059 == null || i_4_ != (i_4_ & aModel_3059.ua()) || (anInt3053 != class51.anInt941)) {
+                if (aModel_3059 != null) i_4_ |= aModel_3059.ua();
                 Class2 class2 = (class51.method476(var_ha, var_s_5_, (this.anInt3079 != 11 ? this.anInt3079 : 10), i_4_, aClass318_Sub1_3051.x, bool_3_, var_s, var_s.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (byte) -114), aClass318_Sub1_3051.y, (this.anInt3079 == 11 ? 4 + this.anInt3052 : this.anInt3052), 128));
                 if (class2 == null) {
                     anInt3055 = 0;
                     aBooleanArray3072 = null;
                     aR3071 = null;
                     anInt3060 = 0;
-                    aClass64_3059 = null;
+                    aModel_3059 = null;
                 } else {
-                    aClass64_3059 = class64 = class2.aClass64_119;
+                    aModel_3059 = model = class2.aModel_119;
                     if (bool_3_) {
                         aBooleanArray3072 = null;
                         aR3071 = class2.aR118;
@@ -173,14 +173,14 @@ final class Class235 {
                         anInt3073 = -1;
                         anInt3056 = class51.anInt941;
                     }
-                    anInt3060 = class64.fa();
-                    anInt3055 = class64.ma();
+                    anInt3060 = model.fa();
+                    anInt3055 = model.ma();
                 }
-            } else class64 = aClass64_3059;
+            } else model = aModel_3059;
         } else {
             if (bool_3_) i_4_ |= 0x40000;
-            class64 = (class51.method483(anInt3083, anInt3054, (this.anInt3079 == 11 ? 10 : this.anInt3079), var_s.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (byte) -2), var_ha, (this.anInt3079 == 11 ? this.anInt3052 + 4 : this.anInt3052), i_4_, (byte) 76, var_s_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aClass17_3057, var_s));
-            if (class64 == null) {
+            model = (class51.method483(anInt3083, anInt3054, (this.anInt3079 == 11 ? 10 : this.anInt3079), var_s.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (byte) -2), var_ha, (this.anInt3079 == 11 ? this.anInt3052 + 4 : this.anInt3052), i_4_, (byte) 76, var_s_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aClass17_3057, var_s));
+            if (model == null) {
                 anInt3055 = 0;
                 aBooleanArray3072 = null;
                 anInt3060 = 0;
@@ -188,18 +188,18 @@ final class Class235 {
             } else {
                 if (bool_3_) {
                     if (aBooleanArray3072 == null) aBooleanArray3072 = new boolean[4];
-                    aR3071 = class64.ba(aR3071);
+                    aR3071 = model.ba(aR3071);
                     Class130.method1130(aR3071, aByte3067, (aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), aBooleanArray3072);
                     anInt3073 = anInt3084;
                     anInt3056 = class51.anInt941;
                 }
-                anInt3060 = class64.fa();
-                anInt3055 = class64.ma();
+                anInt3060 = model.fa();
+                anInt3055 = model.ma();
             }
-            aClass64_3059 = null;
+            aModel_3059 = null;
         }
         anInt3053 = class51.anInt941;
-        return class64;
+        return model;
     }
 
     static final String method1669(int i, int i_6_) {
@@ -208,25 +208,25 @@ final class Class235 {
         return ((0xff & i_6_ >> 24) + "." + ((i_6_ & 0xffb428) >> 16) + "." + (i_6_ >> 8 & 0xff) + "." + (i_6_ & 0xff));
     }
 
-    final void method1670(int i, Class101 class101, int i_7_, ha var_ha, int i_8_, Class64 class64, boolean bool, byte i_9_, int i_10_) {
+    final void method1670(int i, Class101 class101, int i_7_, ha var_ha, int i_8_, Model model, boolean bool, byte i_9_, int i_10_) {
         do {
             try {
                 anInt3058++;
                 if (i_9_ != -73) this.anInt3052 = 62;
-                ModelParticleEmitter[] modelParticleEmitters = class64.method619();
-                ModelParticleEffector[] modelParticleEffectors = class64.method604();
+                ModelParticleEmitter[] modelParticleEmitters = model.method619();
+                ModelParticleEffector[] modelParticleEffectors = model.method604();
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081.aBoolean6470) && (modelParticleEmitters != null || modelParticleEffectors != null)) {
                     Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, this.anInt3063);
                     if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47);
                     if (class51 != null) this.aClass318_Sub10_3081 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true);
                 }
                 if (this.aClass318_Sub10_3081 == null) break;
-                class64.method620(class101);
+                model.method620(class101);
                 if (bool) this.aClass318_Sub10_3081.method2536(var_ha, Class367_Sub11.anInt7396, modelParticleEmitters, modelParticleEffectors, false);
                 else this.aClass318_Sub10_3081.method2540(Class367_Sub11.anInt7396);
                 this.aClass318_Sub10_3081.method2533(aByte3085, i_8_, i, i_10_, i_7_);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("bv.E(" + i + ',' + (class101 != null ? "{...}" : "null") + ',' + i_7_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_8_ + ',' + (class64 != null ? "{...}" : "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("bv.E(" + i + ',' + (class101 != null ? "{...}" : "null") + ',' + i_7_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_8_ + ',' + (model != null ? "{...}" : "null") + ',' + bool + ',' + i_9_ + ',' + i_10_ + ')'));
             }
             break;
         } while (false);

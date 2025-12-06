@@ -107,15 +107,15 @@ final class Class341 {
                 for (int i_12_ = 0; i_12_ < 2048; i_12_++) {
                     Player player = (Class294.aPlayerArray5058[i_12_]);
                     if (player != null) {
-                        for (int i_13_ = 0; ((player.aClass64Array10323).length > i_13_); i_13_++)
-                            player.aClass64Array10323[i_13_] = null;
+                        for (int i_13_ = 0; ((player.aModelArray10323).length > i_13_); i_13_++)
+                            player.aModelArray10323[i_13_] = null;
                     }
                 }
                 for (int i_14_ = 0; i_14_ < Class348_Sub32.anInt6930; i_14_++) {
                     Npc npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_14_].aNpc_6859);
                     if (npc != null) {
-                        for (int i_15_ = 0; i_15_ < (npc.aClass64Array10323).length; i_15_++)
-                            npc.aClass64Array10323[i_15_] = null;
+                        for (int i_15_ = 0; i_15_ < (npc.aModelArray10323).length; i_15_++)
+                            npc.aModelArray10323[i_15_] = null;
                     }
                 }
                 Class50_Sub1.aClass101_5209 = null;

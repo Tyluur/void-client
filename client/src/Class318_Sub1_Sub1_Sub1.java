@@ -39,13 +39,13 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements Interf
     final void method2387(ha var_ha, int i) {
         if (i > -125) method2399(null, -65);
         anInt9962++;
-        Class64 class64 = this.aClass235_9955.method1668(true, true, -128, 262144, var_ha);
-        if (class64 != null) {
+        Model model = this.aClass235_9955.method1668(true, true, -128, 262144, var_ha);
+        if (model != null) {
             int i_0_ = this.x >> 9;
             int i_1_ = this.y >> 9;
             Class101 class101 = var_ha.method3705();
             class101.method894(this.x, this.anInt6382, this.y);
-            this.aClass235_9955.method1670(i_0_, class101, i_1_, var_ha, i_0_, class64, false, (byte) -73, i_1_);
+            this.aClass235_9955.method1670(i_0_, class101, i_1_, var_ha, i_0_, model, false, (byte) -73, i_1_);
         }
     }
 
@@ -82,24 +82,24 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements Interf
 
     final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt9968++;
-        Class64 class64 = this.aClass235_9955.method1668(false, true, -128, 2048, var_ha);
-        if (class64 == null) return null;
+        Model model = this.aClass235_9955.method1668(false, true, -128, 2048, var_ha);
+        if (model == null) return null;
         Class101 class101 = var_ha.method3705();
         class101.method894(this.x, this.anInt6382, this.y);
         Class318_Sub4 class318_sub4 = OutputStream_Sub2.method136(i, aBoolean9966, false);
         int i_2_ = this.x >> 9;
         int i_3_ = this.y >> 9;
-        this.aClass235_9955.method1670(i_2_, class101, i_3_, var_ha, i_2_, class64, true, (byte) -73, i_3_);
-        if (!Class305.aBoolean3870) class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
-        else class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
+        this.aClass235_9955.method1670(i_2_, class101, i_3_, var_ha, i_2_, model, true, (byte) -73, i_3_);
+        if (!Class305.aBoolean3870) model.method615(class101, (class318_sub4.aClass318_Sub3Array6414[0]), 0);
+        else model.method608(class101, (class318_sub4.aClass318_Sub3Array6414[0]), Class132.anInt1906, 0);
         if ((this.aClass235_9955.aClass318_Sub10_3081) != null) {
             Class98 class98 = this.aClass235_9955.aClass318_Sub10_3081.method2525();
             if (Class305.aBoolean3870) var_ha.method3685(class98, Class132.anInt1906);
             else var_ha.method3684(class98);
         }
-        aBoolean9945 = (class64.F() || (this.aClass235_9955.aClass318_Sub10_3081) != null);
-        if (aClass30_9950 != null) ItemTypeList.method1935(this.y, this.anInt6382, aClass30_9950, class64, false, this.x);
-        else aClass30_9950 = (Class348_Sub23_Sub1.method2967(this.x, class64, this.y, this.anInt6382, 2));
+        aBoolean9945 = (model.F() || (this.aClass235_9955.aClass318_Sub10_3081) != null);
+        if (aClass30_9950 != null) ItemTypeList.method1935(this.y, this.anInt6382, aClass30_9950, model, false, this.x);
+        else aClass30_9950 = (Class348_Sub23_Sub1.method2967(this.x, model, this.y, this.anInt6382, 2));
         return class318_sub4;
     }
 
@@ -143,13 +143,13 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements Interf
 
     final boolean method2391(ha var_ha, int i, int i_13_, int i_14_) {
         anInt9952++;
-        Class64 class64 = this.aClass235_9955.method1668(false, false, -128, 131072, var_ha);
-        if (class64 == null) return false;
+        Model model = this.aClass235_9955.method1668(false, false, -128, 131072, var_ha);
+        if (model == null) return false;
         Class101 class101 = var_ha.method3705();
         if (i_14_ != 0) return true;
         class101.method894(this.x, this.anInt6382, this.y);
-        if (Class305.aBoolean3870) return class64.method623(i_13_, i, class101, false, 0, Class132.anInt1906);
-        return class64.method628(i_13_, i, class101, false, 0);
+        if (Class305.aBoolean3870) return model.method623(i_13_, i, class101, false, 0, Class132.anInt1906);
+        return model.method628(i_13_, i, class101, false, 0);
     }
 
     static final void method2399(String string, int i) {
