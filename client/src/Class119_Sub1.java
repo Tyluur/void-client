@@ -44,7 +44,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
         if ((Class73.anInt4776 >= 2 || r.aBoolean9722) && Class289.aClass46_3701 == null) {
             if (i >= -71) method1077(null, (byte) -41);
             String string;
-            if (r.aBoolean9722 && Class73.anInt4776 < 2) string = (Class28.aString5001 + Class274.aClass274_3515.method2063(Class348_Sub33.language, 544) + Class28.aString5000 + " ->");
+            if (r.aBoolean9722 && Class73.anInt4776 < 2) string = (Class28.aString5001 + Class274.aClass274_3515.method2063(AnimBase.language, 544) + Class28.aString5000 + " ->");
             else if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -121) || Class73.anInt4776 <= 2) {
                 Class348_Sub42_Sub12 class348_sub42_sub12 = Class316.aClass348_Sub42_Sub12_3963;
                 if (class348_sub42_sub12 == null) return;
@@ -71,7 +71,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
                 } else is = (Exception_Sub1.itemTypeList.method1940(-73, (int) (class348_sub42_sub12.aLong9605)).anIntArray2772);
                 if (is != null) string += Class163.method1273(is, true);
             } else string = Class316.method2367((byte) 125, Class316.aClass348_Sub42_Sub12_3963);
-            if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508.method2063(Class348_Sub33.language, 544));
+            if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508.method2063(AnimBase.language, 544));
             if (Class348_Sub36.aClass46_6990 != null) {
                 FontRenderer fontRenderer = Class348_Sub36.aClass46_6990.method426(var_toolkit, (byte) 68);
                 if (fontRenderer == null) fontRenderer = Class262.aFontRenderer_3326;

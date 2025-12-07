@@ -2020,7 +2020,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub5.anInt8779 = 0;
         Toolkit.anInt4580 = 0;
         Class190.anInt2537 = 0;
-        Class348_Sub33.anInt6961 = 0;
+        AnimBase.anInt6961 = 0;
         Class348_Sub40_Sub11.anInt9188 = 0;
         Class64_Sub3.anInt5630 = 0;
         Option_Sub4.anInt5873 = 0;
@@ -3459,7 +3459,7 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub2.anInt5465 = 0;
         QuickChatPhraseTypeList.anInt4363 = 0;
         Npc.anInt10497 = 0;
-        Class348_Sub33.anInt6956 = 0;
+        AnimBase.anInt6956 = 0;
         GfxTypeList.anInt3987 = 0;
         ha_Sub3.anInt7981 = 0;
         Packet.anInt7173 = 0;
@@ -4171,7 +4171,7 @@ final class Class130_Sub1 extends Class130 {
         Class76.method773(true);
         Class369_Sub3_Sub1.aBoolean10174 = true;
         Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172 = new short[256];
-        Option_Sub4.aString5882 = Class274.aClass274_3509.method2063(Class348_Sub33.language, 544);
+        Option_Sub4.aString5882 = Class274.aClass274_3509.method2063(AnimBase.language, 544);
         Class316.clientOptions.update((byte) 74, Class316.clientOptions.aClass239_Sub14_7264, Class316.clientOptions.aClass239_Sub14_7250.method1778(i + -32350));
         Class316.clientOptions.update((byte) 74, Class316.clientOptions.aClass239_Sub27_7261, Class316.clientOptions.aClass239_Sub27_7255.method1840(-32350));
         Class135_Sub1.anInt4718 = 0;

@@ -62,7 +62,7 @@ final class VarcstrTypeList {
                         break;
                     }
                 } catch (Exception exception) {
-                    Applet_Sub1.method94((Class274.aClass274_3485.method2063(Class348_Sub33.language, 544)), -99);
+                    Applet_Sub1.method94((Class274.aClass274_3485.method2063(AnimBase.language, 544)), -99);
                     break;
                 }
                 if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271 || Class192.rights >= 2) {
@@ -640,12 +640,12 @@ final class VarcstrTypeList {
                             break;
                         }
                     } catch (Exception exception) {
-                        Applet_Sub1.method94(Class274.aClass274_3485.method2063(Class348_Sub33.language, 544), -92);
+                        Applet_Sub1.method94(Class274.aClass274_3485.method2063(AnimBase.language, 544), -92);
                         break;
                     }
                 }
                 if (Class240.mainLogicStep == 10) break;
-                Applet_Sub1.method94(Class274.aClass274_3486.method2063(Class348_Sub33.language, 544) + string, 57);
+                Applet_Sub1.method94(Class274.aClass274_3486.method2063(AnimBase.language, 544) + string, 57);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("lba.B(" + (string != null ? "{...}" : "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'));
             }

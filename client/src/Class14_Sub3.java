@@ -74,6 +74,6 @@ final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
         Class68.anInt1188 = (Class246.aFontMetrics_3179.topPadding - (-Class246.aFontMetrics_3179.bottomPadding - i));
         for (int i_4_ = 0; (i_4_ < Class286_Sub1.aStringArray6200.length); i_4_++)
             Class286_Sub1.aStringArray6200[i_4_] = "";
-        Applet_Sub1.method94(Class274.aClass274_3483.method2063(Class348_Sub33.language, 544), 67);
+        Applet_Sub1.method94(Class274.aClass274_3483.method2063(AnimBase.language, 544), 67);
     }
 }

@@ -30,7 +30,7 @@ final class Option_Sub8 extends Option {
                 }
                 return -i_3_ + i_2_;
             }
-            if (i == 2) return (Option_Sub21.method1811(9152, (class110_sub1_0_.method1038(false).aString3663), Class348_Sub33.language, (class110_sub1.method1038(false).aString3663)));
+            if (i == 2) return (Option_Sub21.method1811(9152, (class110_sub1_0_.method1038(false).aString3663), AnimBase.language, (class110_sub1.method1038(false).aString3663)));
             if (i == 3) {
                 if (class110_sub1.aString5787.equals("-")) {
                     if (class110_sub1_0_.aString5787.equals("-")) return 0;
@@ -40,7 +40,7 @@ final class Option_Sub8 extends Option {
                     if (!bool) return -1;
                     return 1;
                 }
-                return (Option_Sub21.method1811(9152, class110_sub1_0_.aString5787, Class348_Sub33.language, class110_sub1.aString5787));
+                return (Option_Sub21.method1811(9152, class110_sub1_0_.aString5787, AnimBase.language, class110_sub1.aString5787));
             }
             if (i == 4) {
                 if (!class110_sub1.method1033(-85)) {

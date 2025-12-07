@@ -930,7 +930,7 @@ class Class237 {
                 if (i_220_ <= 49) packet.readUnsignedByte(255);
             }
         } else {
-            if (!this.underwater && !bool) Class348_Sub33.tileFlags[i_219_][i_216_][i_212_] = (byte) 0;
+            if (!this.underwater && !bool) AnimBase.tileFlags[i_219_][i_216_][i_212_] = (byte) 0;
             for (; ; ) {
                 int i_221_ = packet.readUnsignedByte(i_215_ ^ 0x4278cb1d);
                 if (i_221_ == 0) {
@@ -957,7 +957,7 @@ class Class237 {
                         aByteArrayArrayArray3129[i_219_][i_216_][i_212_] = (byte) Class139.method1166(3, -2 + i_221_ + i_213_);
                     }
                 } else if (i_221_ <= 81) {
-                    if (!this.underwater && !bool) Class348_Sub33.tileFlags[i_219_][i_216_][i_212_] = (byte) (i_221_ - 49);
+                    if (!this.underwater && !bool) AnimBase.tileFlags[i_219_][i_216_][i_212_] = (byte) (i_221_ - 49);
                 } else if (!bool) aByteArrayArrayArray3113[i_219_][i_216_][i_212_] = (byte) (-81 + i_221_);
             }
         }
@@ -1208,9 +1208,9 @@ class Class237 {
                 for (int i_300_ = 0; i_300_ < 4; i_300_++) {
                     for (int i_301_ = 0; (i_301_ < this.width); i_301_++) {
                         for (int i_302_ = 0; this.height > i_302_; i_302_++) {
-                            if ((0x1 & (Class348_Sub33.tileFlags[i_300_][i_301_][i_302_])) != 0) {
+                            if ((0x1 & (AnimBase.tileFlags[i_300_][i_301_][i_302_])) != 0) {
                                 int i_303_ = i_300_;
-                                if ((0x2 & (Class348_Sub33.tileFlags[1][i_301_][i_302_])) != 0) i_303_--;
+                                if ((0x2 & (AnimBase.tileFlags[1][i_301_][i_302_])) != 0) i_303_--;
                                 if (i_303_ >= 0) class361s[i_303_].method3507(i_302_, i_301_, (byte) -116);
                             }
                         }

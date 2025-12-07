@@ -21,7 +21,7 @@ final class Class281 {
         int[] is = Class50_Sub1.method463(class348_sub47, false);
         int i_1_ = (class348_sub47.aClass348_Sub49_Sub2_7116.pos);
         class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
-        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class348_Sub33.language);
+        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, AnimBase.language);
         class348_sub47.aClass348_Sub49_Sub2_7116.pos += 7;
         class348_sub47.aClass348_Sub49_Sub2_7116.method3350(i_1_, true, is, class348_sub47.aClass348_Sub49_Sub2_7116.pos);
         class348_sub47.aClass348_Sub49_Sub2_7116.method3383(1809639944, -i_0_ + (class348_sub47.aClass348_Sub49_Sub2_7116.pos));

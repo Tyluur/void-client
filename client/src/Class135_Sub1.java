@@ -69,7 +69,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
         int i_8_ = Class63.anInt1117;
         int i_9_ = -3 + Class237_Sub1.anInt5819;
         int i_10_ = 20;
-        Class299_Sub2_Sub1.method2270(Class63.anInt1117, i_4_ + anInt4717, var_toolkit, Class274.aClass274_3507.method2063(Class348_Sub33.language, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, Class237_Sub1.anInt5819, i_10_);
+        Class299_Sub2_Sub1.method2270(Class63.anInt1117, i_4_ + anInt4717, var_toolkit, Class274.aClass274_3507.method2063(AnimBase.language, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, Class237_Sub1.anInt5819, i_10_);
         int i_11_ = i_4_ + Class258_Sub4.aClass373_8552.method3597(true);
         if (i != 16) method1154((byte) 9);
         int i_12_ = i_5_ + Class258_Sub4.aClass373_8552.method3594((byte) 95);

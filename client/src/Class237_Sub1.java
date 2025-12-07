@@ -475,7 +475,7 @@ final class Class237_Sub1 extends Class237 {
                             Class361 class361 = null;
                             if (!this.underwater) {
                                 int i_92_ = i_79_;
-                                if ((0x2 & (Class348_Sub33.tileFlags[1][i_90_][i_91_])) == 2) i_92_--;
+                                if ((0x2 & (AnimBase.tileFlags[1][i_90_][i_91_])) == 2) i_92_--;
                                 if (i_92_ >= 0) class361 = class361s[i_92_];
                             }
                             method1689(i_90_, i_79_, i_80_, var_toolkit, i_79_, 50, i_88_, i_91_, -1, i_89_ - -i_73_ & 0x3, class361);
@@ -576,7 +576,7 @@ final class Class237_Sub1 extends Class237 {
                             Class361 class361 = null;
                             if (!this.underwater) {
                                 int i_113_ = i_107_;
-                                if ((0x2 & (Class348_Sub33.tileFlags[1][i_111_][i_112_])) == 2) i_113_--;
+                                if ((0x2 & (AnimBase.tileFlags[1][i_111_][i_112_])) == 2) i_113_--;
                                 if (i_113_ >= 0) class361 = class361s[i_113_];
                             }
                             method1689(i_111_, i_107_, i_101_, var_toolkit, i_107_, i_100_ ^ 0x57d, i_109_, i_112_, -1, i_110_, class361);
@@ -717,7 +717,7 @@ final class Class237_Sub1 extends Class237 {
                 if (this.levels > 1) {
                     for (int i_149_ = 0; this.width > i_149_; i_149_++) {
                         for (int i_150_ = 0; this.height > i_150_; i_150_++) {
-                            if ((0x2 & (Class348_Sub33.tileFlags[1][i_149_][i_150_])) == 2) Class16.method258(i_149_, i_150_);
+                            if ((0x2 & (AnimBase.tileFlags[1][i_149_][i_150_])) == 2) Class16.method258(i_149_, i_150_);
                         }
                     }
                 }

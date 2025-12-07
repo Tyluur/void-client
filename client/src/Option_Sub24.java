@@ -137,11 +137,11 @@ final class Option_Sub24 extends Option {
                     i_13_ = (Class132.aPlayer_1907.method2436((byte) 71) + -1 << 8) + i_24_ >> 9;
                     i_14_ = i_25_ - -(Class132.aPlayer_1907.method2436((byte) 73) + -1 << 8) >> 9;
                     int i_26_ = (Class132.aPlayer_1907.plane);
-                    if (i_26_ < 3 && ((0x2 & (Class348_Sub33.tileFlags[1][i_24_ >> 9][i_25_ >> 9])) != 0)) i_26_++;
+                    if (i_26_ < 3 && ((0x2 & (AnimBase.tileFlags[1][i_24_ >> 9][i_25_ >> 9])) != 0)) i_26_++;
                 }
                 if (i_13_ != -1 && i_14_ != -1) {
                     if (!r.aBoolean9722 || (0x40 & Class38.anInt500) == 0) {
-                        if (Class122.aBoolean1801) Class50_Sub3.method466(false, "", i_14_, (byte) -109, true, i_13_, -1, true, 12, i_14_ | i_13_ << 0, (Class274.aClass274_3510.method2063(Class348_Sub33.language, 544)), 0L, -1);
+                        if (Class122.aBoolean1801) Class50_Sub3.method466(false, "", i_14_, (byte) -109, true, i_13_, -1, true, 12, i_14_ | i_13_ << 0, (Class274.aClass274_3510.method2063(AnimBase.language, 544)), 0L, -1);
                         Class352.anInt4334++;
                         Class50_Sub3.method466(false, "", i_14_, (byte) -82, true, i_13_, -1, true, 19, i_14_ | i_13_ << 0, Option_Sub4.aString5882, 0L, Class333.anInt4144);
                     } else {
@@ -287,8 +287,8 @@ final class Option_Sub24 extends Option {
                                             }
                                         }
                                     }
-                                    Class348_Sub33.anInt6956++;
-                                    Class50_Sub3.method466(((Class132.aPlayer_1907.plane) != class318_sub4.aClass318_Sub1_6410.plane), ("<col=ff9040>" + itemDefinition.aString2795) + Loader.getDebug(itemDefinition.anInt2769), i_32_, (byte) -122, false, i_33_, -1, true, 1010, i_57_, (Class274.aClass274_3505.method2063(Class348_Sub33.language, 544)), class348_sub34.anInt6973, Class286_Sub8.anInt6299);
+                                    AnimBase.anInt6956++;
+                                    Class50_Sub3.method466(((Class132.aPlayer_1907.plane) != class318_sub4.aClass318_Sub1_6410.plane), ("<col=ff9040>" + itemDefinition.aString2795) + Loader.getDebug(itemDefinition.anInt2769), i_32_, (byte) -122, false, i_33_, -1, true, 1010, i_57_, (Class274.aClass274_3505.method2063(AnimBase.language, 544)), class348_sub34.anInt6973, Class286_Sub8.anInt6299);
                                     class348_sub34 = ((Class348_Sub34) class348_sub37.aClass262_6998.method2003(-127));
                                     i_57_++;
                                 }
@@ -327,7 +327,7 @@ final class Option_Sub24 extends Option {
                                     }
                                     int x = i_33_ + za_Sub2.regionTileX;
                                     int y = i_32_ + Class90.regionTileY;
-                                    Class50_Sub3.method466(((Class132.aPlayer_1907.plane) != class318_sub4.aClass318_Sub1_6410.plane), ("<col=00ffff>" + class51.aString884 + Loader.getDebug(class51.anInt941, x, y, class318_sub4.aClass318_Sub1_6410.plane)), i_32_, (byte) -120, false, i_33_, -1, true, 1001, interface10.hashCode(), (Class274.aClass274_3505.method2063(Class348_Sub33.language, 544)), class51.anInt941, Class286_Sub8.anInt6299);
+                                    Class50_Sub3.method466(((Class132.aPlayer_1907.plane) != class318_sub4.aClass318_Sub1_6410.plane), ("<col=00ffff>" + class51.aString884 + Loader.getDebug(class51.anInt941, x, y, class318_sub4.aClass318_Sub1_6410.plane)), i_32_, (byte) -120, false, i_33_, -1, true, 1001, interface10.hashCode(), (Class274.aClass274_3505.method2063(AnimBase.language, 544)), class51.anInt941, Class286_Sub8.anInt6299);
                                     anInt6094++;
                                 }
                             }

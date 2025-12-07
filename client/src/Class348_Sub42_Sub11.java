@@ -91,7 +91,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                             i_11_ = Class318_Sub1_Sub5_Sub2.anInt10163;
                             i_10_ = Class9.anInt167;
                         }
-                        if ((0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_10_ >> 9][i_11_ >> 9])) != 0) Class367_Sub4.method3542(i_11_ >> 9, Class147.aClass357ArrayArrayArray2029, i_10_ >> 9, 0, 0, false);
+                        if ((0x4 & (AnimBase.tileFlags[QuickChatPhraseTypeList.anInt4372][i_10_ >> 9][i_11_ >> 9])) != 0) Class367_Sub4.method3542(i_11_ >> 9, Class147.aClass357ArrayArrayArray2029, i_10_ >> 9, 0, 0, false);
                         if (ClientScript.anInt9701 < 2560) {
                             int i_12_ = Class286_Sub4.anInt6246 >> 9;
                             int i_13_ = Class59_Sub2_Sub2.anInt8685 >> 9;
@@ -111,7 +111,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                                 while (i_15_ != i_13_) {
                                     if (i_15_ > i_13_) i_13_++;
                                     else if (i_15_ < i_13_) i_13_--;
-                                    if ((0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_12_][i_13_])) != 0) {
+                                    if ((0x4 & (AnimBase.tileFlags[QuickChatPhraseTypeList.anInt4372][i_12_][i_13_])) != 0) {
                                         Class367_Sub4.method3542(i_13_, (Class147.aClass357ArrayArrayArray2029), i_12_, 0, 1, false);
                                         break;
                                     }
@@ -120,7 +120,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                                         if (i_12_ < i_14_) i_12_++;
                                         else if (i_14_ < i_12_) i_12_--;
                                         i_19_ -= 65536;
-                                        if ((0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_12_][i_13_])) != 0) {
+                                        if ((0x4 & (AnimBase.tileFlags[QuickChatPhraseTypeList.anInt4372][i_12_][i_13_])) != 0) {
                                             Class367_Sub4.method3542(i_13_, (Class147.aClass357ArrayArrayArray2029), i_12_, 0, 1, false);
                                             break;
                                         }
@@ -133,7 +133,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                                     if (i_12_ >= i_14_) {
                                         if (i_12_ > i_14_) i_12_--;
                                     } else i_12_++;
-                                    if ((0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_12_][i_13_])) != 0) {
+                                    if ((0x4 & (AnimBase.tileFlags[QuickChatPhraseTypeList.anInt4372][i_12_][i_13_])) != 0) {
                                         Class367_Sub4.method3542(i_13_, (Class147.aClass357ArrayArrayArray2029), i_12_, 0, 1, false);
                                         break;
                                     }
@@ -142,7 +142,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                                         if (i_15_ > i_13_) i_13_++;
                                         else if (i_13_ > i_15_) i_13_--;
                                         i_21_ -= 65536;
-                                        if ((0x4 & (Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][i_12_][i_13_])) != 0) {
+                                        if ((0x4 & (AnimBase.tileFlags[QuickChatPhraseTypeList.anInt4372][i_12_][i_13_])) != 0) {
                                             Class367_Sub4.method3542(i_13_, (Class147.aClass357ArrayArrayArray2029), i_12_, 0, 1, false);
                                             break;
                                         }
@@ -152,7 +152,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                         }
                     } else {
                         int i_22_ = Class275.method2064(Class286_Sub4.anInt6246, QuickChatPhraseTypeList.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685);
-                        if (i_22_ - Class305.anInt3855 < 3200 && ((Class348_Sub33.tileFlags[QuickChatPhraseTypeList.anInt4372][Class286_Sub4.anInt6246 >> 9][Class59_Sub2_Sub2.anInt8685 >> 9]) & 0x4) != 0)
+                        if (i_22_ - Class305.anInt3855 < 3200 && ((AnimBase.tileFlags[QuickChatPhraseTypeList.anInt4372][Class286_Sub4.anInt6246 >> 9][Class59_Sub2_Sub2.anInt8685 >> 9]) & 0x4) != 0)
                             Class367_Sub4.method3542(Class59_Sub2_Sub2.anInt8685 >> 9, Class147.aClass357ArrayArrayArray2029, Class286_Sub4.anInt6246 >> 9, 0, 1, false);
                     }
                 }

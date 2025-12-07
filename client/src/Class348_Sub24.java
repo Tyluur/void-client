@@ -33,7 +33,7 @@ final class Class348_Sub24 extends Node {
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class140.aClass351_1961, (Class348_Sub23_Sub2.aClass77_9029), -92);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0);
                     int i_1_ = (class348_sub47.aClass348_Sub49_Sub2_7116.pos);
-                    Class348_Sub33.method3025((byte) 121, (class348_sub47.aClass348_Sub49_Sub2_7116));
+                    AnimBase.method3025((byte) 121, (class348_sub47.aClass348_Sub49_Sub2_7116));
                     class348_sub47.aClass348_Sub49_Sub2_7116.method3339(113, (class348_sub47.aClass348_Sub49_Sub2_7116.pos) + -i_1_);
                     Class348_Sub42_Sub14.method3243(119, class348_sub47);
                 }
@@ -378,8 +378,8 @@ final class Class348_Sub24 extends Node {
                             if (Class184.aBoolean2469 && (-60000L + Class62.safeTime(-84) > Class34.aLong482)) Class318_Sub1_Sub2.method2405(i + -11313);
                             for (Class318_Sub9_Sub1 class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1872(i + -11424)); class318_sub9_sub1 != null; class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1878((byte) -105))) {
                                 if ((Class62.safeTime(i ^ ~0x2ce9) / 1000L + -5L) > (long) class318_sub9_sub1.anInt8787) {
-                                    if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (byte) -128, 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3502.method2063(Class348_Sub33.language, 544))), "", "");
-                                    if (class318_sub9_sub1.aShort8786 == 0) Class286_Sub2.method2144("", 5, (byte) -105, 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3503.method2063(Class348_Sub33.language, 544))), "", "");
+                                    if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (byte) -128, 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3502.method2063(AnimBase.language, 544))), "", "");
+                                    if (class318_sub9_sub1.aShort8786 == 0) Class286_Sub2.method2144("", 5, (byte) -105, 0, (class318_sub9_sub1.aString8783 + (Class274.aClass274_3503.method2063(AnimBase.language, 544))), "", "");
                                     class318_sub9_sub1.method2373(false);
                                 }
                             }

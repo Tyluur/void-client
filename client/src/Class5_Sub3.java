@@ -99,7 +99,7 @@ final class Class5_Sub3 extends Class5 {
                         }
                     }
                     if (bool) break;
-                    Class59.method544(((Class274.aClass274_3504.method2063(Class348_Sub33.language, 544)) + string), false, 4);
+                    Class59.method544(((Class274.aClass274_3504.method2063(AnimBase.language, 544)) + string), false, 4);
                 }
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("tq.A(" + i + ',' + i_5_ + ',' + (string != null ? "{...}" : "null") + ')'));

@@ -37,10 +37,10 @@ final class Class52 implements Interface12 {
     }
 
     static final void method491(byte i) {
-        for (int i_1_ = 0; (Class348_Sub33.tileFlags.length > i_1_); i_1_++) {
-            for (int i_2_ = 0; i_2_ < Class348_Sub33.tileFlags[0].length; i_2_++) {
-                for (int i_3_ = 0; (Class348_Sub33.tileFlags[0][0].length > i_3_); i_3_++)
-                    Class348_Sub33.tileFlags[i_1_][i_2_][i_3_] = (byte) 0;
+        for (int i_1_ = 0; (AnimBase.tileFlags.length > i_1_); i_1_++) {
+            for (int i_2_ = 0; i_2_ < AnimBase.tileFlags[0].length; i_2_++) {
+                for (int i_3_ = 0; (AnimBase.tileFlags[0][0].length > i_3_); i_3_++)
+                    AnimBase.tileFlags[i_1_][i_2_][i_3_] = (byte) 0;
             }
         }
         int i_4_ = 119 / ((i - 47) / 34);
@@ -74,14 +74,14 @@ final class Class52 implements Interface12 {
         LoadState oldState = Class348_Sub42_Sub15.state;
         int essentials = Class164.essentials(-28660);
         if (oldState == Class348_Sub42_Sub15.state) {
-            Class64_Sub2.loadingText = Class348_Sub42_Sub15.state.aClass274_1012.method2063(Class348_Sub33.language, 544);
+            Class64_Sub2.loadingText = Class348_Sub42_Sub15.state.aClass274_1012.method2063(AnimBase.language, 544);
             if (Class348_Sub42_Sub15.state.updatePercentage) Class251.loadPercentage = (essentials * ((Class348_Sub42_Sub15.state.anInt1021) + -(Class348_Sub42_Sub15.state.anInt1025)) / 100 + (Class348_Sub42_Sub15.state.anInt1025));
             if (Class348_Sub42_Sub15.state.displayPercentage) Class64_Sub2.loadingText += Class251.loadPercentage + "%";
         } else if (Class348_Sub42_Sub15.state == LoadState.COMPLETE) {
             Class51.renderer = null;
             Packet.setStep(2, 3);
         } else {
-            Class64_Sub2.loadingText = oldState.aClass274_1015.method2063(Class348_Sub33.language, 544);
+            Class64_Sub2.loadingText = oldState.aClass274_1015.method2063(AnimBase.language, 544);
             if (Class348_Sub42_Sub15.state.displayPercentage) Class64_Sub2.loadingText += oldState.anInt1021 + "%";
             Class251.loadPercentage = oldState.anInt1021;
             if (Class348_Sub42_Sub15.state.updatePercentage || oldState.updatePercentage) Class283.lastRendererUpdate = Class62.safeTime(-128);

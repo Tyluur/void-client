@@ -189,7 +189,7 @@ public final class client extends Applet_Sub1 {
             Class277.aClass137_3568 = null;
         }
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class298.aBoolean3811 = true;
-        Class348_Sub42_Sub16.aString9665 = Class274.aClass274_3495.method2063(Class348_Sub33.language, 544);
+        Class348_Sub42_Sub16.aString9665 = Class274.aClass274_3495.method2063(AnimBase.language, 544);
     }
 
     final void method91(byte i) {
@@ -406,8 +406,8 @@ public final class client extends Applet_Sub1 {
         ModelParticleEmitter.method1126(32);
         ModelParticleEffector.method2682(i ^ 0x29);
         MeshBillboard.method1267((byte) 85);
-        Class348_Sub33.method3024(-100);
-        Class4.method177();
+        AnimBase.method3024(-100);
+        AnimFrame.clearFrameDecoder();
         Class222.method1609((byte) -121);
         Class175.method1349((byte) -121);
         Class368.method3560(-13);
@@ -882,12 +882,12 @@ public final class client extends Applet_Sub1 {
                     if (strings[3].equals("wip")) Class11.aClass231_196 = Class288.aClass231_4953;
                     else Class55.method518("modewhat", (byte) 41);
                 } else Class11.aClass231_196 = Class348_Sub40_Sub20.aClass231_9263;
-                Class348_Sub33.language = Class27.method315((byte) 103, strings[4]);
-                if (Class348_Sub33.language == -1) {
+                AnimBase.language = Class27.method315((byte) 103, strings[4]);
+                if (AnimBase.language == -1) {
                     if (!strings[4].equals("english")) {
-                        if (strings[4].equals("german")) Class348_Sub33.language = 1;
+                        if (strings[4].equals("german")) AnimBase.language = 1;
                         else Class55.method518("language", (byte) -128);
-                    } else Class348_Sub33.language = 0;
+                    } else AnimBase.language = 0;
                 }
                 Class348_Sub37.aBoolean6997 = false;
                 Class289.aBoolean3697 = false;
@@ -958,9 +958,9 @@ public final class client extends Applet_Sub1 {
             Class11.aClass231_196 = (Class237.method1677(-121, Integer.parseInt(this.getParameter("modewhat"))));
             if (Class11.aClass231_196 != Class288.aClass231_4953 && Class11.aClass231_196 != Class348_Sub40_Sub20.aClass231_9263 && Class68.aClass231_1189 != Class11.aClass231_196) Class11.aClass231_196 = Class68.aClass231_1189;
             try {
-                Class348_Sub33.language = Integer.parseInt(this.getParameter("lang"));
+                AnimBase.language = Integer.parseInt(this.getParameter("lang"));
             } catch (Exception exception) {
-                Class348_Sub33.language = 0;
+                AnimBase.language = 0;
             }
             String string = this.getParameter("objecttag");
             Class348_Sub37.aBoolean6997 = string != null && string.equals("1");
@@ -1200,7 +1200,7 @@ public final class client extends Applet_Sub1 {
                                                 if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (byte) -109, true, i_66_, (class46.anInt812), true, 15, ((class46.anInt704) << 0) | (class46.anInt830), Class28.aString5001, 1L, (Class348_Sub49_Sub1.anInt9747));
                                                 else Class341.method2678(-2049);
                                             } else {
-                                                if ((Class348_Sub42_Sub8_Sub2.modeGame) == (Class14_Sub4.aClass230_8638)) Class50_Sub3.method466(false, "", i_67_, (byte) -116, true, i_66_, -1, true, 12, 0L, (Class274.aClass274_3510.method2063((Class348_Sub33.language), 544)), 1L, -1);
+                                                if ((Class348_Sub42_Sub8_Sub2.modeGame) == (Class14_Sub4.aClass230_8638)) Class50_Sub3.method466(false, "", i_67_, (byte) -116, true, i_66_, -1, true, 12, 0L, (Class274.aClass274_3510.method2063((AnimBase.language), 544)), 1L, -1);
                                                 Class50_Sub3.method466(false, "", i_67_, (byte) -93, true, i_66_, -1, true, 19, 0L, Option_Sub4.aString5882, 1L, Class333.anInt4144);
                                             }
                                         }
@@ -1686,8 +1686,8 @@ public final class client extends Applet_Sub1 {
         if (Class184.aBoolean2469 && (Class34.aLong482 < Class62.safeTime(-107) + -60000L)) Class318_Sub1_Sub2.method2405(41);
         for (Class318_Sub9_Sub1 class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1872(8)); class318_sub9_sub1 != null; class318_sub9_sub1 = (Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1878((byte) -43)) {
             if ((long) class318_sub9_sub1.anInt8787 < -5L + Class62.safeTime(-80) / 1000L) {
-                if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (byte) -91, 0, (class318_sub9_sub1.aString8783 + Class274.aClass274_3502.method2063(Class348_Sub33.language, 544)), "", "");
-                if (class318_sub9_sub1.aShort8786 == 0) Class286_Sub2.method2144("", 5, (byte) -105, 0, (class318_sub9_sub1.aString8783 + Class274.aClass274_3503.method2063((Class348_Sub33.language), i ^ 0x250)), "", "");
+                if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (byte) -91, 0, (class318_sub9_sub1.aString8783 + Class274.aClass274_3502.method2063(AnimBase.language, 544)), "", "");
+                if (class318_sub9_sub1.aShort8786 == 0) Class286_Sub2.method2144("", 5, (byte) -105, 0, (class318_sub9_sub1.aString8783 + Class274.aClass274_3503.method2063((AnimBase.language), i ^ 0x250)), "", "");
                 class318_sub9_sub1.method2373(false);
             }
         }
@@ -1935,15 +1935,15 @@ public final class client extends Applet_Sub1 {
                         if (Class36.anInt489 == 1) {
                             if (FloorOverlayTypeList.anInt3441 > Class348_Sub46.anInt7115) Class348_Sub46.anInt7115 = FloorOverlayTypeList.anInt3441;
                             int i = ((-FloorOverlayTypeList.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115);
-                            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.language, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aToolkit6654);
+                            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(AnimBase.language, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aToolkit6654);
                         } else if (Class36.anInt489 == 2) {
                             if (Class31.anInt443 < Class154.anInt2101) Class31.anInt443 = Class154.anInt2101;
                             int i = (((Class31.anInt443 - Class154.anInt2101) * 50 / Class31.anInt443) + 50);
-                            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.language, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aToolkit6654);
-                        } else Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.language, 544)), 2, Class348_Sub8.aToolkit6654);
+                            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(AnimBase.language, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aToolkit6654);
+                        } else Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(AnimBase.language, 544)), 2, Class348_Sub8.aToolkit6654);
                     } else if (Class240.mainLogicStep != 10) {
                         if (Class240.mainLogicStep == 13)
-                            Class362.method3511(false, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3497.method2063(Class348_Sub33.language, 544)) + "<br>" + (Class274.aClass274_3498.method2063(Class348_Sub33.language, 544))), 2, Class348_Sub8.aToolkit6654);
+                            Class362.method3511(false, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3497.method2063(AnimBase.language, 544)) + "<br>" + (Class274.aClass274_3498.method2063(AnimBase.language, 544))), 2, Class348_Sub8.aToolkit6654);
                     } else Class302.method2284((byte) -43, l);
                 } else Option_Sub10.method1761(85);
             } else Option_Sub10.method1761(85);

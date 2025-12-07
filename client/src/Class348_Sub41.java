@@ -77,7 +77,7 @@ final class Class348_Sub41 extends Node {
             JavaThreadResource.anInt2204 = QuickChatPhraseTypeList.anInt4372;
             if (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1) JavaThreadResource.anInt2204 = 0;
             Packet.setStep(2, i_17_);
-            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3495.method2063(Class348_Sub33.language, 544), 2, Class348_Sub8.aToolkit6654);
+            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3495.method2063(AnimBase.language, 544), 2, Class348_Sub8.aToolkit6654);
             int i_18_ = za_Sub2.regionTileX;
             int i_19_ = Class90.regionTileY;
             za_Sub2.regionTileX = (-(Class367_Sub4.mapLength >> 4) + Toolkit.anInt4581) * 8;
@@ -218,8 +218,8 @@ final class Class348_Sub41 extends Node {
             byte[] is_40_ = new byte[i_39_];
             if (i_37_ == 1) Class212.method1547(is_40_, i_39_, is, i_38_, 9);
             else {
-                synchronized (Class348_Sub33.aClass152_6955) {
-                    Class348_Sub33.aClass152_6955.method1218(is_40_, 29123, packet);
+                synchronized (AnimBase.aClass152_6955) {
+                    AnimBase.aClass152_6955.method1218(is_40_, 29123, packet);
                 }
             }
             return is_40_;

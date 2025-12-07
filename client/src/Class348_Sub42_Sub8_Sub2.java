@@ -161,7 +161,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         }
         if (bool != true) modeGame = null;
         if (Class348_Sub3.aClass114_6584 == Class116.aClass114_1762) {
-            Option_Sub4.aString5882 = (Class348_Sub40_Sub25.anInt9341 > 2 ? Class299.aClass348_Sub49_Sub2_3813.readString((byte) -119) : Class274.aClass274_3509.method2063(Class348_Sub33.language, 544));
+            Option_Sub4.aString5882 = (Class348_Sub40_Sub25.anInt9341 > 2 ? Class299.aClass348_Sub49_Sub2_3813.readString((byte) -119) : Class274.aClass274_3509.method2063(AnimBase.language, 544));
             Class333.anInt4144 = (Class348_Sub40_Sub25.anInt9341 <= 0 ? -1 : Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944));
             if (Class333.anInt4144 == 65535) Class333.anInt4144 = -1;
             Class348_Sub3.aClass114_6584 = null;

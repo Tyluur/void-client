@@ -42,7 +42,7 @@ final class Class161 {
         anInt2140++;
         if (Option_Sub14.aClass190_5990 == null || !Option_Sub14.aClass190_5990.method1424(class190, (byte) 84)) {
             Option_Sub14.aClass190_5990 = class190;
-            Class348_Sub33.aLong6963 = Class62.safeTime(-78);
+            AnimBase.aLong6963 = Class62.safeTime(-78);
             Class206.anInt4889 = Class286_Sub5.anInt6248 = i;
             if (Class206.anInt4889 == 0) Class348_Sub40_Sub32.method3134(-1);
             else {

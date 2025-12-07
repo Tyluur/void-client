@@ -52,7 +52,7 @@ final class Class286_Sub6 extends Class286 {
         } else string = "www-wtrc";
         String string_2_ = "";
         if (Option_Sub12.aString5966 != null) string_2_ = "/p=" + Option_Sub12.aString5966;
-        return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.modeGame.aString2985) + ".com/l=" + Class348_Sub33.language + "/a=" + Class202.anInt2670 + string_2_ + "/");
+        return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.modeGame.aString2985) + ".com/l=" + AnimBase.language + "/a=" + Class202.anInt2670 + string_2_ + "/");
     }
 
     static final boolean method2163(boolean bool) {

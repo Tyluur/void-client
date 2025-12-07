@@ -27,7 +27,7 @@ final class Class182 {
         } else {
             Packet packet = new Packet(Class98.method878((Class110_Sub1.method1039((Class348_Sub23_Sub3.aString9043), true)), -125));
             l = packet.readLong(-456577760);
-            Class348_Sub33.aLong6966 = packet.readLong(-456577760);
+            AnimBase.aLong6966 = packet.readLong(-456577760);
         }
         Class132.method1138(Class27.method313(l, -100), true, "", (byte) -115);
     }

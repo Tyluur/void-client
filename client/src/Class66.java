@@ -2494,43 +2494,43 @@ final class Class66 {
             } else if (string_240_.startsWith(Class274.aClass274_3541.method2063(0, 544))) {
                 i_241_ = 11;
                 string = string.substring(Class274.aClass274_3541.method2063(0, 544).length());
-            } else if (Class348_Sub33.language != 0) {
-                if (string_240_.startsWith(Class274.aClass274_3530.method2063(Class348_Sub33.language, 544))) {
+            } else if (AnimBase.language != 0) {
+                if (string_240_.startsWith(Class274.aClass274_3530.method2063(AnimBase.language, 544))) {
                     i_241_ = 0;
-                    string = string.substring(Class274.aClass274_3530.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3531.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3530.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3531.method2063(AnimBase.language, 544))) {
                     i_241_ = 1;
-                    string = string.substring(Class274.aClass274_3531.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3532.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3531.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3532.method2063(AnimBase.language, 544))) {
                     i_241_ = 2;
-                    string = string.substring(Class274.aClass274_3532.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3533.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3532.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3533.method2063(AnimBase.language, 544))) {
                     i_241_ = 3;
-                    string = string.substring(Class274.aClass274_3533.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3534.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3533.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3534.method2063(AnimBase.language, 544))) {
                     i_241_ = 4;
-                    string = string.substring(Class274.aClass274_3534.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3535.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3534.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3535.method2063(AnimBase.language, 544))) {
                     i_241_ = 5;
-                    string = string.substring(Class274.aClass274_3535.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3536.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3535.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3536.method2063(AnimBase.language, 544))) {
                     i_241_ = 6;
-                    string = string.substring(Class274.aClass274_3536.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3537.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3536.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3537.method2063(AnimBase.language, 544))) {
                     i_241_ = 7;
-                    string = string.substring(Class274.aClass274_3537.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3538.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3537.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3538.method2063(AnimBase.language, 544))) {
                     i_241_ = 8;
-                    string = string.substring(Class274.aClass274_3538.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3539.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3538.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3539.method2063(AnimBase.language, 544))) {
                     i_241_ = 9;
-                    string = string.substring(Class274.aClass274_3539.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3540.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3539.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3540.method2063(AnimBase.language, 544))) {
                     i_241_ = 10;
-                    string = string.substring(Class274.aClass274_3540.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3541.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3540.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3541.method2063(AnimBase.language, 544))) {
                     i_241_ = 11;
-                    string = string.substring(Class274.aClass274_3541.method2063(Class348_Sub33.language, 544).length());
+                    string = string.substring(Class274.aClass274_3541.method2063(AnimBase.language, 544).length());
                 }
             }
             string_240_ = string.toLowerCase();
@@ -2550,22 +2550,22 @@ final class Class66 {
             } else if (string_240_.startsWith(Class274.aClass274_3546.method2063(0, 544))) {
                 i_242_ = 5;
                 string = string.substring(Class274.aClass274_3546.method2063(0, 544).length());
-            } else if (Class348_Sub33.language != 0) {
-                if (string_240_.startsWith(Class274.aClass274_3542.method2063(Class348_Sub33.language, 544))) {
+            } else if (AnimBase.language != 0) {
+                if (string_240_.startsWith(Class274.aClass274_3542.method2063(AnimBase.language, 544))) {
                     i_242_ = 1;
-                    string = string.substring(Class274.aClass274_3542.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3543.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3542.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3543.method2063(AnimBase.language, 544))) {
                     i_242_ = 2;
-                    string = string.substring(Class274.aClass274_3543.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3544.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3543.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3544.method2063(AnimBase.language, 544))) {
                     i_242_ = 3;
-                    string = string.substring(Class274.aClass274_3544.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3545.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3544.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3545.method2063(AnimBase.language, 544))) {
                     i_242_ = 4;
-                    string = string.substring(Class274.aClass274_3545.method2063(Class348_Sub33.language, 544).length());
-                } else if (string_240_.startsWith(Class274.aClass274_3546.method2063(Class348_Sub33.language, 544))) {
+                    string = string.substring(Class274.aClass274_3545.method2063(AnimBase.language, 544).length());
+                } else if (string_240_.startsWith(Class274.aClass274_3546.method2063(AnimBase.language, 544))) {
                     i_242_ = 5;
-                    string = string.substring(Class274.aClass274_3546.method2063(Class348_Sub33.language, 544).length());
+                    string = string.substring(Class274.aClass274_3546.method2063(AnimBase.language, 544).length());
                 }
             }
             anInt1158++;
@@ -3955,7 +3955,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 3335) {
-                    anIntArray1149[anInt1173++] = Class348_Sub33.language;
+                    anIntArray1149[anInt1173++] = AnimBase.language;
                     return;
                 }
                 if (i == 3336) {
@@ -4581,7 +4581,7 @@ final class Class66 {
                 }
                 if (i == 4107) {
                     anInt1170 -= 2;
-                    anIntArray1149[anInt1173++] = Option_Sub21.method1811(9152, (aStringArray1152[anInt1170 + 1]), Class348_Sub33.language, (aStringArray1152[anInt1170]));
+                    anIntArray1149[anInt1173++] = Option_Sub21.method1811(9152, (aStringArray1152[anInt1170 + 1]), AnimBase.language, (aStringArray1152[anInt1170]));
                     return;
                 }
                 if (i == 4108) {
@@ -4703,7 +4703,7 @@ final class Class66 {
                 if (i == 4124) {
                     boolean bool_453_ = anIntArray1149[--anInt1173] != 0;
                     int i_454_ = anIntArray1149[--anInt1173];
-                    aStringArray1152[anInt1170++] = Class357.method3486(0, bool_453_, Class348_Sub33.language, i_454_, 16980);
+                    aStringArray1152[anInt1170++] = Class357.method3486(0, bool_453_, AnimBase.language, i_454_, 16980);
                     return;
                 }
                 if (i == 4125) {

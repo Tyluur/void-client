@@ -65,12 +65,12 @@ final class Option_Sub14 extends Option {
         anInt5983++;
         if (Class348_Sub31.anInt6923 == -1) return 1;
         if (i != Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350)) {
-            Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3496.method2063(Class348_Sub33.language, 544), true, i);
+            Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3496.method2063(AnimBase.language, 544), true, i);
             if (i != Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350)) return -1;
         }
         try {
             Dimension dimension = Class305.aCanvas3869.getSize();
-            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3496.method2063(Class348_Sub33.language, 544), 2, Class348_Sub8.aToolkit6654);
+            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3496.method2063(AnimBase.language, 544), 2, Class348_Sub8.aToolkit6654);
             Mesh mesh = Class300.method2277(0, aa_Sub3.MODELS, Class348_Sub31.anInt6923, -1);
             long l = Class62.safeTime(-88);
             Class348_Sub8.aToolkit6654.la();

@@ -613,8 +613,8 @@ final class NPCDefinition {
     static final boolean method802(int y, int x, boolean bool) {
         if (bool != true) return false;
         anInt1332++;
-        if (x < 0 || y < 0 || x >= Class348_Sub33.tileFlags[1].length || y >= Class348_Sub33.tileFlags[1][x].length) return false;
-        return (Class348_Sub33.tileFlags[1][x][y] & 0x2) != 0;
+        if (x < 0 || y < 0 || x >= AnimBase.tileFlags[1].length || y >= AnimBase.tileFlags[1][x].length) return false;
+        return (AnimBase.tileFlags[1][x][y] & 0x2) != 0;
     }
 
     final Model method803(Interface17 interface17, Toolkit var_toolkit, int i, int i_94_, AnimationType animationType, AnimTypeList animTypeList, int i_95_, int i_96_, int i_97_) {

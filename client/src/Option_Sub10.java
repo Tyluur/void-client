@@ -68,8 +68,8 @@ final class Option_Sub10 extends Option {
     static final int method1762(int i, int i_10_, int i_11_, int i_12_) {
         int i_13_ = 56 / ((i - 74) / 43);
         anInt5947++;
-        if ((0x8 & Class348_Sub33.tileFlags[i_10_][i_12_][i_11_]) != 0) return 0;
-        if (i_10_ > 0 && ((0x2 & Class348_Sub33.tileFlags[1][i_12_][i_11_]) != 0)) return i_10_ + -1;
+        if ((0x8 & AnimBase.tileFlags[i_10_][i_12_][i_11_]) != 0) return 0;
+        if (i_10_ > 0 && ((0x2 & AnimBase.tileFlags[1][i_12_][i_11_]) != 0)) return i_10_ + -1;
         return i_10_;
     }
 

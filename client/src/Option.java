@@ -65,7 +65,7 @@ abstract class Option {
     }
 
     static final void method1717(int i, int i_4_, int i_5_, int i_6_) {
-        Class348_Sub33.tileFlags = new byte[i_6_][i_5_][i_4_];
+        AnimBase.tileFlags = new byte[i_6_][i_5_][i_4_];
         if (i != 19278) method1717(35, 126, -83, 85);
         anInt3134++;
     }

@@ -102,8 +102,8 @@ final class AnimationType {
                 this.durations[i] = packet.readUnsignedShort(842397944);
             for (int i = 0; i < length; i++)
                 this.frames[i] = packet.readUnsignedShort(842397944);
-            for (int i_14_ = 0; i_14_ < length; i_14_++)
-                this.frames[i_14_] = ((packet.readUnsignedShort(842397944) << 16) + this.frames[i_14_]);
+            for (int i = 0; i < length; i++)
+                this.frames[i] = ((packet.readUnsignedShort(842397944) << 16) + this.frames[i]);
         } else if (opcode == 2) {
             this.loopOffset = packet.readUnsignedShort(-14861 ^ ~0x3235c2f4);
         } else if (opcode == 3) {

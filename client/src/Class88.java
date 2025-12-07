@@ -123,7 +123,7 @@ final class Class88 {
                     packet.writeInt((byte) 127, is[3]);
                     packet.writeLong(0L, (byte) 70);
                     packet.writeString((byte) -5, Class186.aString2496);
-                    packet.writeLong(Class348_Sub33.aLong6966, (byte) -124);
+                    packet.writeLong(AnimBase.aLong6966, (byte) -124);
                     packet.writeLong(OutputStream_Sub2.aLong108, (byte) -112);
                     packet.method3390(Class348_Sub31.aBigInteger6921, (byte) -76, (Class318_Sub1_Sub4.aBigInteger8762));
                     Class348_Sub3.method2739(0);
@@ -170,7 +170,7 @@ final class Class88 {
                         int i_5_ = class348_sub49_sub2.pos;
                         class348_sub49_sub2.writeString((byte) -5, Class64_Sub3.aString5600);
                         class348_sub49_sub2.writeByte(false, Class348_Sub42_Sub8_Sub2.modeGame.anInt2987);
-                        class348_sub49_sub2.writeByte(false, Class348_Sub33.language);
+                        class348_sub49_sub2.writeByte(false, AnimBase.language);
                         s_Sub2.method4002(class348_sub49_sub2, (byte) 55);
                         class348_sub49_sub2.writeString((byte) -5, Option_Sub12.aString5966);
                         class348_sub49_sub2.writeInt((byte) 106, Class202.anInt2670);

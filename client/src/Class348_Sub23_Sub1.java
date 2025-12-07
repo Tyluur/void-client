@@ -86,7 +86,7 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23 {
         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) string_4_ = ":" + (7000 + i);
         String string_5_ = "";
         if (Option_Sub12.aString5966 != null) string_5_ = "/p=" + Option_Sub12.aString5966;
-        String string_6_ = ("http://" + string + string_4_ + "/l=" + Class348_Sub33.language + "/a=" + Class202.anInt2670 + string_5_ + "/j" + (!Class289.aBoolean3697 ? "0" : "1") + ",o" + (Class348_Sub37.aBoolean6997 ? "1" : "0") + ",a2");
+        String string_6_ = ("http://" + string + string_4_ + "/l=" + AnimBase.language + "/a=" + Class202.anInt2670 + string_5_ + "/j" + (!Class289.aBoolean3697 ? "0" : "1") + ",o" + (Class348_Sub37.aBoolean6997 ? "1" : "0") + ",a2");
         try {
             NPCDefinition.aClient1367.getAppletContext().showDocument(new URL(string_6_), "_self");
             if (i_3_ >= -17) aClass297_8992 = null;

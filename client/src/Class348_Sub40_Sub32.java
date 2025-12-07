@@ -42,7 +42,7 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
         anInt9419++;
         if ((~Class286_Sub5.anInt6248) <= i) {
             long l = Class62.safeTime(i ^ 0x3c);
-            Class286_Sub5.anInt6248 -= -Class348_Sub33.aLong6963 + l;
+            Class286_Sub5.anInt6248 -= -AnimBase.aLong6963 + l;
             if (Class286_Sub5.anInt6248 > 0) {
                 int i_4_ = ((Class286_Sub5.anInt6248 << 8) / Class206.anInt4889);
                 int i_5_ = -i_4_ + 255;
@@ -71,7 +71,7 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
                 Class119_Sub1.anInt4703 = Option_Sub14.aClass190_5990.anInt2540;
                 Class160.aFloat2137 = Option_Sub14.aClass190_5990.aFloat2547;
             }
-            Class348_Sub33.aLong6963 = l;
+            AnimBase.aLong6963 = l;
         }
     }
 

@@ -7,7 +7,7 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
     static int anInt9670;
     private byte[][] aByteArrayArray9671;
     static Class348_Sub42_Sub17[] aClass348_Sub42_Sub17Array9672 = new Class348_Sub42_Sub17[14];
-    Class4[] aClass4Array9673;
+    AnimFrame[] aAnimFrameArray9673;
     static int anInt9674;
     static int anInt9675;
     static int anInt9676;
@@ -35,12 +35,12 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
     final boolean method3267(byte i, int i_0_) {
         anInt9676++;
         if (i >= -91) return false;
-        return (this.aClass4Array9673[i_0_].aBoolean129);
+        return (this.aAnimFrameArray9673[i_0_].frameTypeHigh);
     }
 
     final boolean method3268(int i) {
         anInt9675++;
-        if (this.aClass4Array9673 != null) return true;
+        if (this.aAnimFrameArray9673 != null) return true;
         if (aByteArrayArray9671 == null) {
             synchronized (Class138.aIndex_1940) {
                 if (!Class138.aIndex_1940.method408((byte) -116, anInt9669)) return false;
@@ -65,7 +65,7 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
         int[] is;
         synchronized (Class138.aIndex_1940) {
             int i_4_ = Class138.aIndex_1940.method407(0, anInt9669);
-            this.aClass4Array9673 = new Class4[i_4_];
+            this.aAnimFrameArray9673 = new AnimFrame[i_4_];
             is = Class138.aIndex_1940.method396(anInt9669, 0);
             if (i > -115) method3266(null, 123, null);
         }
@@ -74,20 +74,20 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
             Packet packet = new Packet(is_6_);
             packet.pos = 1;
             int i_7_ = packet.readUnsignedShort(842397944);//
-            Class348_Sub33 class348_sub33 = null;
-            for (Class348_Sub33 class348_sub33_8_ = (Class348_Sub33) class262.method1995(4); class348_sub33_8_ != null; class348_sub33_8_ = (Class348_Sub33) class262.method1990((byte) 78)) {
-                if (class348_sub33_8_.anInt6958 == i_7_) {
-                    class348_sub33 = class348_sub33_8_;
+            AnimBase animBase = null;
+            for (AnimBase animBase_8_ = (AnimBase) class262.method1995(4); animBase_8_ != null; animBase_8_ = (AnimBase) class262.method1990((byte) 78)) {
+                if (animBase_8_.anInt6958 == i_7_) {
+                    animBase = animBase_8_;
                     break;
                 }
             }
-            if (class348_sub33 == null) {
+            if (animBase == null) {
                 synchronized (Class135_Sub2.aIndex_4843) {
-                    class348_sub33 = new Class348_Sub33(i_7_, Class135_Sub2.aIndex_4843.method415((byte) 73, i_7_));
+                    animBase = new AnimBase(i_7_, Class135_Sub2.aIndex_4843.method415((byte) 73, i_7_));
                 }
-                class262.method1999(class348_sub33, -20180);
+                class262.method1999(animBase, -20180);
             }
-            this.aClass4Array9673[is[i_5_]] = new Class4(is_6_, class348_sub33);
+            this.aAnimFrameArray9673[is[i_5_]] = new AnimFrame(is_6_, animBase);
         }
         aByteArrayArray9671 = null;
         return true;
@@ -115,12 +115,12 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
     final boolean method3271(int i, int i_9_) {
         anInt9670++;
         if (i_9_ != 14) method3269(false);
-        return (this.aClass4Array9673[i].aBoolean139);
+        return (this.aAnimFrameArray9673[i].frameTypeFive);
     }
 
     final boolean method3272(int i, int i_10_) {
         anInt9677++;
         if (i_10_ != 0) return true;
-        return (this.aClass4Array9673[i].aBoolean131);
+        return (this.aAnimFrameArray9673[i].frameTypeSeven);
     }
 }

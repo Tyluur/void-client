@@ -199,7 +199,7 @@ final class Canvas_Sub1 extends Canvas {
                 }
             }
             if (bool) {
-                if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3495.method2063(Class348_Sub33.language, 544)) + "<br>(100%)"), 2, Class348_Sub8.aToolkit6654);
+                if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3495.method2063(AnimBase.language, 544)) + "<br>(100%)"), 2, Class348_Sub8.aToolkit6654);
                 Class369_Sub1.method3570(false);
                 Class348_Sub18.method2938((byte) 102);
                 Option_Sub12.method1772(i ^ 0x41);

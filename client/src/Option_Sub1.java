@@ -52,7 +52,7 @@ final class Option_Sub1 extends Option {
                     break;
                 }
             }
-            if (!bool) Class59.method544((Class274.aClass274_3504.method2063(Class348_Sub33.language, 544)) + string, false, 4);
+            if (!bool) Class59.method544((Class274.aClass274_3504.method2063(AnimBase.language, 544)) + string, false, 4);
             if (r.aBoolean9722) Class341.method2678(-2049);
         }
     }

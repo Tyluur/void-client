@@ -7,11 +7,12 @@ import java.io.ObjectInputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-final class Class348_Sub33 extends Node {
+// Class348_Sub33
+final class AnimBase extends Node {
     boolean[] aBooleanArray6954;
     static Class152 aClass152_6955 = new Class152();
     static int anInt6956;
-    int[] anIntArray6957;
+    int[] transformTypes;
     int anInt6958;
     int[][] anIntArrayArray6959;
     int[] anIntArray6960;
@@ -124,17 +125,17 @@ final class Class348_Sub33 extends Node {
         }
     }
 
-    Class348_Sub33(int i, byte[] is) {
+    AnimBase(int i, byte[] is) {
         this.anInt6958 = i;
         Packet packet = new Packet(is);
         this.anInt6965 = packet.readUnsignedByte(255);
         this.anIntArrayArray6959 = new int[this.anInt6965][];
-        this.anIntArray6957 = new int[this.anInt6965];
+        this.transformTypes = new int[this.anInt6965];
         this.anIntArray6960 = new int[this.anInt6965];
         this.aBooleanArray6954 = new boolean[this.anInt6965];
         for (int i_8_ = 0; (i_8_ < this.anInt6965); i_8_++) {
-            this.anIntArray6957[i_8_] = packet.readUnsignedByte(255);
-            if (this.anIntArray6957[i_8_] == 6) this.anIntArray6957[i_8_] = 2;
+            this.transformTypes[i_8_] = packet.readUnsignedByte(255);
+            if (this.transformTypes[i_8_] == 6) this.transformTypes[i_8_] = 2;
         }
         for (int i_9_ = 0; (i_9_ < this.anInt6965); i_9_++)
             this.aBooleanArray6954[i_9_] = packet.readUnsignedByte(255) == 1;

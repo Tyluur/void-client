@@ -159,7 +159,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     var_toolkit.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0);
                     var_toolkit.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884].getRGB(), 0);
                     var_toolkit.aa(i_16_ - 150, 2 + i_17_, Node.anInt4290 * 3, 30, Class135.aColorArray1928[Class222.anInt2884].getRGB(), 0);
-                    Class262.aFontRenderer_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(Class348_Sub33.language, i + 551), -1, i_15_ + i_17_);
+                    Class262.aFontRenderer_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(AnimBase.language, i + 551), -1, i_15_ + i_17_);
                 } else {
                     int i_18_ = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
                     int i_19_ = ((int) ((float) i_13_ / Class75.aFloat1247) + Class245.anInt3170);

@@ -23,16 +23,16 @@ abstract class Model {
 
     abstract void p(int i, int i_0_, Ground var_ground, Ground var_ground_1_, int i_2_, int i_3_, int i_4_);
 
-    private final void method602(int i, Class348_Sub33 class348_sub33, int i_5_, boolean bool, int i_6_, Class4 class4, int i_7_, int[] is, boolean[] bools, Class4 class4_8_, int i_9_, boolean bool_10_) {
+    private final void method602(int i, AnimBase animBase, int i_5_, boolean bool, int i_6_, AnimFrame animFrame, int i_7_, int[] is, boolean[] bools, AnimFrame animFrame_8_, int i_9_, boolean bool_10_) {
         try {
             anInt1130++;
-            if (class4 == null || i_7_ == 0) {
-                for (int i_11_ = 0; class4_8_.anInt126 > i_11_; i_11_++) {
-                    short i_12_ = class4_8_.aShortArray130[i_11_];
-                    if (bools == null || bools[i_12_] != !bool || (class348_sub33.anIntArray6957[i_12_]) == 0) {
-                        short i_13_ = class4_8_.aShortArray128[i_11_];
-                        if (i_13_ != -1) method627((class348_sub33.anIntArrayArray6959[i_13_]), bool_10_, i, 0, 0, i_9_ & (class348_sub33.anIntArray6960[i_13_]), (byte) -93, 0, is, 0);
-                        method627((class348_sub33.anIntArrayArray6959[i_12_]), bool_10_, i, class4_8_.aShortArray137[i_11_], (class348_sub33.anIntArray6957[i_12_]), (class348_sub33.anIntArray6960[i_12_]) & i_9_, (byte) -93, class4_8_.aShortArray140[i_11_], is, class4_8_.aShortArray135[i_11_]);
+            if (animFrame == null || i_7_ == 0) {
+                for (int i_11_ = 0; animFrame_8_.transformCount > i_11_; i_11_++) {
+                    short i_12_ = animFrame_8_.translateIndices[i_11_];
+                    if (bools == null || bools[i_12_] != !bool || (animBase.transformTypes[i_12_]) == 0) {
+                        short i_13_ = animFrame_8_.frameIndices[i_11_];
+                        if (i_13_ != -1) method627((animBase.anIntArrayArray6959[i_13_]), bool_10_, i, 0, 0, i_9_ & (animBase.anIntArray6960[i_13_]), (byte) -93, 0, is, 0);
+                        method627((animBase.anIntArrayArray6959[i_12_]), bool_10_, i, animFrame_8_.transformY[i_11_], (animBase.transformTypes[i_12_]), (animBase.anIntArray6960[i_12_]) & i_9_, (byte) -93, animFrame_8_.transformX[i_11_], is, animFrame_8_.transformZ[i_11_]);
                     }
                 }
             } else {
@@ -40,18 +40,18 @@ abstract class Model {
                 int i_15_ = 0;
                 int i_16_ = 0;
                 int i_17_ = -53 % ((i_5_ - 76) / 41);
-                for (/**/; class348_sub33.anInt6965 > i_16_; i_16_++) {
+                for (/**/; animBase.anInt6965 > i_16_; i_16_++) {
                     boolean bool_18_ = false;
-                    if (class4_8_.anInt126 > i_14_ && class4_8_.aShortArray130[i_14_] == i_16_) bool_18_ = true;
+                    if (animFrame_8_.transformCount > i_14_ && animFrame_8_.translateIndices[i_14_] == i_16_) bool_18_ = true;
                     boolean bool_19_ = false;
-                    if (class4.anInt126 > i_15_ && i_16_ == class4.aShortArray130[i_15_]) bool_19_ = true;
+                    if (animFrame.transformCount > i_15_ && i_16_ == animFrame.translateIndices[i_15_]) bool_19_ = true;
                     if (bool_18_ || bool_19_) {
-                        if (bools != null && bool == !bools[i_16_] && (class348_sub33.anIntArray6957[i_16_]) != 0) {
+                        if (bools != null && bool == !bools[i_16_] && (animBase.transformTypes[i_16_]) != 0) {
                             if (bool_19_) i_15_++;
                             if (bool_18_) i_14_++;
                         } else {
                             int i_20_ = 0;
-                            int i_21_ = (class348_sub33.anIntArray6957[i_16_]);
+                            int i_21_ = (animBase.transformTypes[i_16_]);
                             if (i_21_ == 3 || i_21_ == 10) i_20_ = 128;
                             int i_22_;
                             short i_23_;
@@ -59,11 +59,11 @@ abstract class Model {
                             byte i_25_;
                             int i_26_;
                             if (bool_18_) {
-                                i_22_ = (class4_8_.aShortArray135[i_14_]);
-                                i_23_ = (class4_8_.aShortArray128[i_14_]);
-                                i_24_ = (class4_8_.aShortArray137[i_14_]);
-                                i_25_ = (class4_8_.aByteArray132[i_14_]);
-                                i_26_ = (class4_8_.aShortArray140[i_14_]);
+                                i_22_ = (animFrame_8_.transformZ[i_14_]);
+                                i_23_ = (animFrame_8_.frameIndices[i_14_]);
+                                i_24_ = (animFrame_8_.transformY[i_14_]);
+                                i_25_ = (animFrame_8_.frameAttribs[i_14_]);
+                                i_26_ = (animFrame_8_.transformX[i_14_]);
                                 i_14_++;
                             } else {
                                 i_24_ = i_20_;
@@ -78,11 +78,11 @@ abstract class Model {
                             int i_30_;
                             short i_31_;
                             if (bool_19_) {
-                                i_27_ = class4.aShortArray137[i_15_];
-                                i_28_ = class4.aShortArray135[i_15_];
-                                i_29_ = class4.aByteArray132[i_15_];
-                                i_30_ = class4.aShortArray140[i_15_];
-                                i_31_ = class4.aShortArray128[i_15_];
+                                i_27_ = animFrame.transformY[i_15_];
+                                i_28_ = animFrame.transformZ[i_15_];
+                                i_29_ = animFrame.frameAttribs[i_15_];
+                                i_30_ = animFrame.transformX[i_15_];
+                                i_31_ = animFrame.frameIndices[i_15_];
                                 i_15_++;
                             } else {
                                 i_28_ = i_20_;
@@ -91,8 +91,8 @@ abstract class Model {
                                 i_27_ = i_20_;
                                 i_29_ = (byte) 0;
                             }
-                            if (i_23_ != -1) method627((class348_sub33.anIntArrayArray6959[i_23_]), bool_10_, i, 0, 0, (i_9_ & (class348_sub33.anIntArray6960[i_23_])), (byte) -93, 0, is, 0);
-                            else if (i_31_ != -1) method627((class348_sub33.anIntArrayArray6959[i_31_]), bool_10_, i, 0, 0, (i_9_ & (class348_sub33.anIntArray6960[i_31_])), (byte) -93, 0, is, 0);
+                            if (i_23_ != -1) method627((animBase.anIntArrayArray6959[i_23_]), bool_10_, i, 0, 0, (i_9_ & (animBase.anIntArray6960[i_23_])), (byte) -93, 0, is, 0);
+                            else if (i_31_ != -1) method627((animBase.anIntArrayArray6959[i_31_]), bool_10_, i, 0, 0, (i_9_ & (animBase.anIntArray6960[i_31_])), (byte) -93, 0, is, 0);
                             int i_32_;
                             int i_33_;
                             int i_34_;
@@ -126,13 +126,13 @@ abstract class Model {
                                 i_34_ = i_22_ - -((i_28_ + -i_22_) * i_7_ / i_6_);
                                 i_33_ = (i_7_ * (-i_24_ + i_27_) / i_6_ + i_24_);
                             }
-                            method627((class348_sub33.anIntArrayArray6959[i_16_]), bool_10_, i, i_33_, i_21_, i_9_ & (class348_sub33.anIntArray6960[i_16_]), (byte) -93, i_32_, is, i_34_);
+                            method627((animBase.anIntArrayArray6959[i_16_]), bool_10_, i, i_33_, i_21_, i_9_ & (animBase.anIntArray6960[i_16_]), (byte) -93, i_32_, is, i_34_);
                         }
                     }
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ka.AC(" + i + ',' + (class348_sub33 != null ? "{...}" : "null") + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + (class4 != null ? "{...}" : "null") + ',' + i_7_ + ',' + (is != null ? "{...}" : "null") + ',' + (bools != null ? "{...}" : "null") + ',' + (class4_8_ != null ? "{...}" : "null") + ',' + i_9_ + ',' + bool_10_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ka.AC(" + i + ',' + (animBase != null ? "{...}" : "null") + ',' + i_5_ + ',' + bool + ',' + i_6_ + ',' + (animFrame != null ? "{...}" : "null") + ',' + i_7_ + ',' + (is != null ? "{...}" : "null") + ',' + (bools != null ? "{...}" : "null") + ',' + (animFrame_8_ != null ? "{...}" : "null") + ',' + i_9_ + ',' + bool_10_ + ')'));
         }
     }
 
@@ -142,15 +142,15 @@ abstract class Model {
             if (i_42_ != -1) {
                 method622();
                 if (NA()) {
-                    Class4 class4 = (class348_sub42_sub17_45_.aClass4Array9673[i_42_]);
+                    AnimFrame animFrame = (class348_sub42_sub17_45_.aAnimFrameArray9673[i_42_]);
                     if (i != -55) this.aBoolean1124 = false;
-                    Class348_Sub33 class348_sub33 = class4.aClass348_Sub33_134;
-                    Class4 class4_47_ = null;
+                    AnimBase animBase = animFrame.base;
+                    AnimFrame animFrame_47_ = null;
                     if (class348_sub42_sub17 != null) {
-                        class4_47_ = (class348_sub42_sub17.aClass4Array9673[i_43_]);
-                        if (class4_47_.aClass348_Sub33_134 != class348_sub33) class4_47_ = null;
+                        animFrame_47_ = (class348_sub42_sub17.aAnimFrameArray9673[i_43_]);
+                        if (animFrame_47_.base != animBase) animFrame_47_ = null;
                     }
-                    method602(i_44_, class348_sub33, -18, false, i_46_, class4_47_, i_40_, is, null, class4, i_41_, bool);
+                    method602(i_44_, animBase, -18, false, i_46_, animFrame_47_, i_40_, is, null, animFrame, i_41_, bool);
                     wa();
                     method621();
                 } else method621();
@@ -272,13 +272,13 @@ abstract class Model {
         if (i != -1) {
             method622();
             if (NA()) {
-                Class4 class4 = (class348_sub42_sub17.aClass4Array9673[i]);
-                Class348_Sub33 class348_sub33 = class4.aClass348_Sub33_134;
-                for (int i_75_ = 0; (i_75_ < class4.anInt126); i_75_++) {
-                    short i_76_ = class4.aShortArray130[i_75_];
-                    if (class348_sub33.aBooleanArray6954[i_76_]) {
-                        if (class4.aShortArray128[i_75_] != -1) P(0, 0, 0, 0);
-                        P((class348_sub33.anIntArray6957[i_76_]), class4.aShortArray140[i_75_], class4.aShortArray137[i_75_], class4.aShortArray135[i_75_]);
+                AnimFrame animFrame = (class348_sub42_sub17.aAnimFrameArray9673[i]);
+                AnimBase animBase = animFrame.base;
+                for (int i_75_ = 0; (i_75_ < animFrame.transformCount); i_75_++) {
+                    short i_76_ = animFrame.translateIndices[i_75_];
+                    if (animBase.aBooleanArray6954[i_76_]) {
+                        if (animFrame.frameIndices[i_75_] != -1) P(0, 0, 0, 0);
+                        P((animBase.transformTypes[i_76_]), animFrame.transformX[i_75_], animFrame.transformY[i_75_], animFrame.transformZ[i_75_]);
                     }
                 }
                 if (i_74_ != -8700) anIntArray1127 = null;
@@ -316,14 +316,14 @@ abstract class Model {
             if (i != -1) {
                 method622();
                 if (NA()) {
-                    Class4 class4 = (class348_sub42_sub17_85_.aClass4Array9673[i]);
-                    Class348_Sub33 class348_sub33 = class4.aClass348_Sub33_134;
-                    Class4 class4_89_ = null;
+                    AnimFrame animFrame = (class348_sub42_sub17_85_.aAnimFrameArray9673[i]);
+                    AnimBase animBase = animFrame.base;
+                    AnimFrame animFrame_89_ = null;
                     if (class348_sub42_sub17 != null) {
-                        class4_89_ = (class348_sub42_sub17.aClass4Array9673[i_87_]);
-                        if (class348_sub33 != class4_89_.aClass348_Sub33_134) class4_89_ = null;
+                        animFrame_89_ = (class348_sub42_sub17.aAnimFrameArray9673[i_87_]);
+                        if (animBase != animFrame_89_.base) animFrame_89_ = null;
                     }
-                    method602(i_84_, class348_sub33, 121, bool, i_83_, class4_89_, i_88_, null, null, class4, 65535, bool_86_);
+                    method602(i_84_, animBase, 121, bool, i_83_, animFrame_89_, i_88_, null, null, animFrame, 65535, bool_86_);
                     wa();
                     method621();
                 } else method621();
@@ -376,22 +376,22 @@ abstract class Model {
                 else {
                     method622();
                     if (NA()) {
-                        Class4 class4 = (class348_sub42_sub17_107_.aClass4Array9673[i_104_]);
-                        Class348_Sub33 class348_sub33 = class4.aClass348_Sub33_134;
-                        Class4 class4_112_ = null;
+                        AnimFrame animFrame = (class348_sub42_sub17_107_.aAnimFrameArray9673[i_104_]);
+                        AnimBase animBase = animFrame.base;
+                        AnimFrame animFrame_112_ = null;
                         if (class348_sub42_sub17 != null) {
-                            class4_112_ = (class348_sub42_sub17.aClass4Array9673[i_108_]);
-                            if (class348_sub33 != class4_112_.aClass348_Sub33_134) class4_112_ = null;
+                            animFrame_112_ = (class348_sub42_sub17.aAnimFrameArray9673[i_108_]);
+                            if (animBase != animFrame_112_.base) animFrame_112_ = null;
                         }
-                        method602(0, class348_sub33, -70, false, i, class4_112_, i_106_, null, bools, class4, 65535, bool);
-                        Class4 class4_113_ = (class348_sub42_sub17_103_.aClass4Array9673[i_105_]);
-                        Class4 class4_114_ = null;
+                        method602(0, animBase, -70, false, i, animFrame_112_, i_106_, null, bools, animFrame, 65535, bool);
+                        AnimFrame animFrame_113_ = (class348_sub42_sub17_103_.aAnimFrameArray9673[i_105_]);
+                        AnimFrame animFrame_114_ = null;
                         if (class348_sub42_sub17_109_ != null) {
-                            class4_114_ = (class348_sub42_sub17_109_.aClass4Array9673[i_111_]);
-                            if (class4_114_.aClass348_Sub33_134 != class348_sub33) class4_114_ = null;
+                            animFrame_114_ = (class348_sub42_sub17_109_.aAnimFrameArray9673[i_111_]);
+                            if (animFrame_114_.base != animBase) animFrame_114_ = null;
                         }
                         method605(0, new int[0], 0, 0, 0, 0, bool);
-                        method602(0, class4_113_.aClass348_Sub33_134, 122, true, i_102_, class4_114_, i_110_, null, bools, class4_113_, 65535, bool);
+                        method602(0, animFrame_113_.base, 122, true, i_102_, animFrame_114_, i_110_, null, bools, animFrame_113_, 65535, bool);
                         wa();
                         method621();
                     } else method621();

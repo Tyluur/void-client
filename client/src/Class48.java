@@ -39,7 +39,7 @@ final class Class48 {
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class202.anInt2670);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeLong(Js5TextureSource.aLong4615, (byte) 104);
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(bool, Class348_Sub33.language);
+                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(bool, AnimBase.language);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(bool, (Class348_Sub42_Sub8_Sub2.modeGame.anInt2987));
                 s_Sub2.method4002((class348_sub47.aClass348_Sub49_Sub2_7116), (byte) 55);
                 String string_5_ = Class14_Sub1.aString8605;
