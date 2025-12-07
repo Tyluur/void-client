@@ -33,14 +33,14 @@ class Node {
         return 3;
     }
 
-    static final Model method2711(int i, int i_3_, Model model, int i_4_, boolean bool, int i_5_, int i_6_, int i_7_, int i_8_, Toolkit var_toolkit, int i_9_, int i_10_, int i_11_, Class17 class17) {
+    static final Model method2711(int i, int i_3_, Model model, int i_4_, boolean bool, int i_5_, int i_6_, int i_7_, int i_8_, Toolkit var_toolkit, int i_9_, int i_10_, int i_11_, AnimationType animationType) {
         try {
             anInt4298++;
             if (model == null) return null;
             int i_12_ = 2055;
             if (bool != false) return null;
-            if (class17 != null) {
-                i_12_ |= class17.method263(-1, 103, i_5_, false);
+            if (animationType != null) {
+                i_12_ |= animationType.method263(-1, 103, i_5_, false);
                 i_12_ &= ~0x200;
             }
             long l = (((long) i_10_ << 48) + (long) (i_7_ + ((i_9_ << 16) + (i_11_ << 24))) - -((long) i_6_ << 32));
@@ -96,9 +96,9 @@ class Node {
             int i_33_ = model.HA();
             int i_34_ = model.G();
             Class348_Sub42_Sub17 class348_sub42_sub17 = null;
-            if (class17 != null) {
-                i_5_ = class17.anIntArray237[i_5_];
-                class348_sub42_sub17 = Class10.seqTypeList.method839(i_5_ >> 16, 3);
+            if (animationType != null) {
+                i_5_ = animationType.frames[i_5_];
+                class348_sub42_sub17 = Class10.animTypeList.method839(i_5_ >> 16, 3);
                 i_5_ &= 0xffff;
             }
             if (class348_sub42_sub17 == null) {
@@ -116,7 +116,7 @@ class Node {
             if (i_8_ != 0) model_13_.H(0, i_8_, 0);
             return model_13_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (model != null ? "{...}" : "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (class17 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (model != null ? "{...}" : "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (animationType != null ? "{...}" : "null") + ')'));
         }
     }
 

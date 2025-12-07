@@ -43,13 +43,13 @@ final class OutputStream_Sub1 extends OutputStream {
                 if (Class348_Sub35.anInt6979 >> 8 > i_4_) i_4_ = Class348_Sub35.anInt6979 >> 8;
                 if (Class181.aBooleanArray2374[4] && ItemTypeList.anIntArray3273[4] + 128 > i_4_) i_4_ = ItemTypeList.anIntArray3273[4] + 128;
                 int i_5_ = (int) ResourceProvider.aFloat3938 + Class195.anInt5016 & 0x3fff;
-                Class17.method268(i_4_, -200 + (Class275.method2064((Class132.aPlayer_1907.x), QuickChatPhraseTypeList.anInt4372, 11219, (Class132.aPlayer_1907.y))), i_5_, Class192.anInt2578, i_2_, -19360, Class130_Sub1.anInt5799, (i_4_ >> 3) * 3 + 600 << 2);
+                AnimationType.method268(i_4_, -200 + (Class275.method2064((Class132.aPlayer_1907.x), QuickChatPhraseTypeList.anInt4372, 11219, (Class132.aPlayer_1907.y))), i_5_, Class192.anInt2578, i_2_, -19360, Class130_Sub1.anInt5799, (i_4_ >> 3) * 3 + 600 << 2);
             } else if (Class348_Sub40_Sub21.anInt9282 == 4) {
                 int i_6_ = (int) Class76.aFloat1287;
                 if (i_6_ < Class348_Sub35.anInt6979 >> 8) i_6_ = Class348_Sub35.anInt6979 >> 8;
                 if (Class181.aBooleanArray2374[4] && (i_6_ < ItemTypeList.anIntArray3273[4] + 128)) i_6_ = 128 + ItemTypeList.anIntArray3273[4];
                 int i_7_ = (int) ResourceProvider.aFloat3938 & 0x3fff;
-                Class17.method268(i_6_, -200 + Class275.method2064(Class348_Sub6.anInt6633, QuickChatPhraseTypeList.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, Class192.anInt2578, i_2_, -19360, Class130_Sub1.anInt5799, 600 - -((i_6_ >> 3) * 3) << 2);
+                AnimationType.method268(i_6_, -200 + Class275.method2064(Class348_Sub6.anInt6633, QuickChatPhraseTypeList.anInt4372, 11219, Class348_Sub7.anInt6652), i_7_, Class192.anInt2578, i_2_, -19360, Class130_Sub1.anInt5799, 600 - -((i_6_ >> 3) * 3) << 2);
             } else if (Class348_Sub40_Sub21.anInt9282 == 5) FloorOverlayTypeList.method2035(i_2_, 0);
             int i_8_ = Class286_Sub4.anInt6246;
             int i_9_ = Class305.anInt3855;

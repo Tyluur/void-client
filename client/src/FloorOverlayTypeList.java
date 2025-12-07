@@ -96,7 +96,7 @@ final class FloorOverlayTypeList {
             if (Class181.aBooleanArray2374[4] && ItemTypeList.anIntArray3273[4] - -128 > i_6_) i_6_ = ItemTypeList.anIntArray3273[4] + 128;
             int i_7_ = 0x3fff & (int) ResourceProvider.aFloat3938 + Class195.anInt5016;
             if (i_4_ != 0) method2031(-117, null);
-            Class17.method268(i_6_, -200 + (Class275.method2064((Class132.aPlayer_1907.x), QuickChatPhraseTypeList.anInt4372, 11219, (Class132.aPlayer_1907.y))), i_7_, Class192.anInt2578, i, -19360, Class130_Sub1.anInt5799, 3 * (i_6_ >> 3) + 600 << 2);
+            AnimationType.method268(i_6_, -200 + (Class275.method2064((Class132.aPlayer_1907.x), QuickChatPhraseTypeList.anInt4372, 11219, (Class132.aPlayer_1907.y))), i_7_, Class192.anInt2578, i, -19360, Class130_Sub1.anInt5799, 3 * (i_6_ >> 3) + 600 << 2);
             float f = (-((float) ((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)) / 1000000.0F) + 1.0F);
             Class286_Sub4.anInt6246 = (int) ((float) Class318_Sub1_Sub3_Sub2.anInt10047 + f * (float) (-Class318_Sub1_Sub3_Sub2.anInt10047 + Class286_Sub4.anInt6246));
             Class305.anInt3855 = (int) ((float) (-Class5_Sub3.anInt8368 + Class305.anInt3855) * f + (float) Class5_Sub3.anInt8368);

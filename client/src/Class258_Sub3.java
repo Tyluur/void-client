@@ -5,6 +5,7 @@
 import jaggl.OpenGL;
 
 import java.awt.*;
+import java.awt.Toolkit;
 import java.awt.image.PixelGrabber;
 
 class Class258_Sub3 extends Class258 {

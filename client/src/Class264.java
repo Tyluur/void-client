@@ -32,20 +32,20 @@ final class Class264 {
         anInt3377++;
     }
 
-    static final void method2017(int i, Class17 class17, int i_3_) {
+    static final void method2017(int i, AnimationType animationType, int i_3_) {
         anInt3367++;
-        if (Class147.anInt2021 < 50 && (class17 != null && class17.anIntArrayArray264 != null && (class17.anIntArrayArray264.length > i) && class17.anIntArrayArray264[i] != null)) {
-            int i_4_ = class17.anIntArrayArray264[i][0];
+        if (Class147.anInt2021 < 50 && (animationType != null && animationType.sounds != null && (animationType.sounds.length > i) && animationType.sounds[i] != null)) {
+            int i_4_ = animationType.sounds[i][0];
             int i_5_ = i_4_ >> 8;
-            if (class17.anIntArrayArray264[i].length > 1) {
-                int i_6_ = (int) (Math.random() * (double) (class17.anIntArrayArray264[i]).length);
-                if (i_6_ > 0) i_5_ = class17.anIntArrayArray264[i][i_6_];
+            if (animationType.sounds[i].length > 1) {
+                int i_6_ = (int) (Math.random() * (double) (animationType.sounds[i]).length);
+                if (i_6_ > 0) i_5_ = animationType.sounds[i][i_6_];
             }
             int i_7_ = 0x7 & i_4_ >> 5;
             if (i_3_ > 8) {
                 int i_8_ = 256;
-                if (class17.anIntArray236 != null && class17.anIntArray265 != null) i_8_ = Class299_Sub1.method2257((class17.anIntArray265[i]), (class17.anIntArray236[i]), (byte) -125);
-                if (class17.aBoolean268) Class279.method2090(i_7_, i_8_, false, (byte) -35, 255, 0, i_5_);
+                if (animationType.primarySpeeds != null && animationType.secondarySpeeds != null) i_8_ = Class299_Sub1.method2257((animationType.secondarySpeeds[i]), (animationType.primarySpeeds[i]), (byte) -125);
+                if (animationType.useSounds) Class279.method2090(i_7_, i_8_, false, (byte) -35, 255, 0, i_5_);
                 else Class348_Sub20.method2947(true, 255, i_5_, i_7_, 0, i_8_);
             }
         }

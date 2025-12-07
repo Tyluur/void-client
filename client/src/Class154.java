@@ -22,32 +22,32 @@ final class Class154 {
     static int anInt2106;
     static int anInt2107;
 
-    final Model method1226(Interface17 interface17, Class17 class17, Class182[] class182s, boolean bool, ItemTypeList itemTypeList, int i, Class17 class17_0_, int i_1_, boolean bool_2_, int i_3_, int[] is, int i_4_, IDKTypeList IDKTypeList, int i_5_, Toolkit var_toolkit, NPCTypeList NPCTypeList, SeqTypeList seqTypeList, int i_6_, int i_7_, int i_8_, BASTypeList BASTypeList) {
+    final Model method1226(Interface17 interface17, AnimationType animationType, Class182[] class182s, boolean bool, ItemTypeList itemTypeList, int i, AnimationType animationType_0_, int i_1_, boolean bool_2_, int i_3_, int[] is, int i_4_, IDKTypeList IDKTypeList, int i_5_, Toolkit var_toolkit, NPCTypeList NPCTypeList, AnimTypeList animTypeList, int i_6_, int i_7_, int i_8_, BASTypeList BASTypeList) {
         try {
             anInt2097++;
-            if (this.anInt2093 != -1) return (NPCTypeList.method2079(this.anInt2093, -1).method800(i, class182s, seqTypeList, !bool_2_, class17, i_8_, BASTypeList, i_7_, class17_0_, interface17, var_toolkit, i_3_, is, i_1_, i_6_, i_4_, i_5_));
+            if (this.anInt2093 != -1) return (NPCTypeList.method2079(this.anInt2093, -1).method800(i, class182s, animTypeList, !bool_2_, animationType, i_8_, BASTypeList, i_7_, animationType_0_, interface17, var_toolkit, i_3_, is, i_1_, i_6_, i_4_, i_5_));
             int i_9_ = i_4_;
             long l = aLong2102;
             int[] is_10_ = anIntArray2092;
-            if (class17_0_ != null && (class17_0_.anInt249 >= 0 || class17_0_.anInt261 >= 0)) {
+            if (animationType_0_ != null && (animationType_0_.leftHandItem >= 0 || animationType_0_.rightHandItem >= 0)) {
                 is_10_ = new int[12];
                 for (int i_11_ = 0; i_11_ < 12; i_11_++)
                     is_10_[i_11_] = anIntArray2092[i_11_];
-                if (class17_0_.anInt249 >= 0) {
-                    if (class17_0_.anInt249 == 65535) {
+                if (animationType_0_.leftHandItem >= 0) {
+                    if (animationType_0_.leftHandItem == 65535) {
                         is_10_[5] = 0;
                         l ^= ~0xffffffffL;
                     } else {
-                        is_10_[5] = Class273.method2057((class17_0_.anInt249), 1073741824);
+                        is_10_[5] = Class273.method2057((animationType_0_.leftHandItem), 1073741824);
                         l ^= (long) is_10_[5] << 32;
                     }
                 }
-                if (class17_0_.anInt261 >= 0) {
-                    if (class17_0_.anInt261 == 65535) {
+                if (animationType_0_.rightHandItem >= 0) {
+                    if (animationType_0_.rightHandItem == 65535) {
                         is_10_[3] = 0;
                         l ^= 0xffffffffL;
                     } else {
-                        is_10_[3] = Class273.method2057((class17_0_.anInt261), 1073741824);
+                        is_10_[3] = Class273.method2057((animationType_0_.rightHandItem), 1073741824);
                         l ^= is_10_[3];
                     }
                 }
@@ -55,19 +55,19 @@ final class Class154 {
             boolean bool_12_ = false;
             boolean bool_13_ = false;
             boolean bool_14_ = false;
-            boolean bool_15_ = class17_0_ != null || class17 != null;
+            boolean bool_15_ = animationType_0_ != null || animationType != null;
             int i_16_ = class182s != null ? class182s.length : 0;
             for (int i_17_ = 0; i_16_ > i_17_; i_17_++) {
                 Class95.aClass348_Sub42_Sub17Array1543[i_17_] = null;
                 if (class182s[i_17_] != null) {
-                    Class17 class17_18_ = seqTypeList.method835((class182s[i_17_].anInt2454), 7);
-                    if (class17_18_.anIntArray237 != null) {
+                    AnimationType animationType_18_ = animTypeList.method835((class182s[i_17_].anInt2454), 7);
+                    if (animationType_18_.frames != null) {
                         bool_15_ = true;
-                        Class57.aClass17Array1048[i_17_] = class17_18_;
+                        Class57.aAnimationTypeArray1048[i_17_] = animationType_18_;
                         int i_19_ = class182s[i_17_].anInt2451;
                         int i_20_ = class182s[i_17_].anInt2455;
-                        int i_21_ = class17_18_.anIntArray237[i_19_];
-                        Class95.aClass348_Sub42_Sub17Array1543[i_17_] = seqTypeList.method839(i_21_ >>> 16, 3);
+                        int i_21_ = animationType_18_.frames[i_19_];
+                        Class95.aClass348_Sub42_Sub17Array1543[i_17_] = animTypeList.method839(i_21_ >>> 16, 3);
                         i_21_ &= 0xffff;
                         Class184.anIntArray2471[i_17_] = i_21_;
                         if (Class95.aClass348_Sub42_Sub17Array1543[i_17_] != null) {
@@ -75,11 +75,11 @@ final class Class154 {
                             bool_12_ |= Class95.aClass348_Sub42_Sub17Array1543[i_17_].method3271(i_21_, 14);
                             bool_14_ |= Class95.aClass348_Sub42_Sub17Array1543[i_17_].method3267((byte) -109, i_21_);
                         }
-                        if ((class17_18_.aBoolean241 || Class28.aBoolean5002) && i_20_ != -1 && (class17_18_.anIntArray237.length > i_20_)) {
-                            Class100.anIntArray1583[i_17_] = class17_18_.anIntArray267[i_19_];
+                        if ((animationType_18_.tweened || Class28.aBoolean5002) && i_20_ != -1 && (animationType_18_.frames.length > i_20_)) {
+                            Class100.anIntArray1583[i_17_] = animationType_18_.durations[i_19_];
                             Class50_Sub3.anIntArray5241[i_17_] = class182s[i_17_].anInt2456;
-                            int i_22_ = class17_18_.anIntArray237[i_20_];
-                            Class295.aClass348_Sub42_Sub17Array3753[i_17_] = seqTypeList.method839(i_22_ >>> 16, 3);
+                            int i_22_ = animationType_18_.frames[i_20_];
+                            Class295.aClass348_Sub42_Sub17Array3753[i_17_] = animTypeList.method839(i_22_ >>> 16, 3);
                             i_22_ &= 0xffff;
                             Class227.anIntArray2967[i_17_] = i_22_;
                             if (Class295.aClass348_Sub42_Sub17Array3753[i_17_] != null) {
@@ -107,21 +107,21 @@ final class Class154 {
             Class348_Sub42_Sub17 class348_sub42_sub17_30_ = null;
             Class348_Sub42_Sub17 class348_sub42_sub17_31_ = null;
             if (bool_15_) {
-                if (class17_0_ != null) {
-                    i_23_ = class17_0_.anIntArray237[i_7_];
+                if (animationType_0_ != null) {
+                    i_23_ = animationType_0_.frames[i_7_];
                     int i_32_ = i_23_ >>> 16;
-                    class348_sub42_sub17 = seqTypeList.method839(i_32_, 3);
+                    class348_sub42_sub17 = animTypeList.method839(i_32_, 3);
                     i_23_ &= 0xffff;
                     if (class348_sub42_sub17 != null) {
                         bool_13_ |= class348_sub42_sub17.method3272(i_23_, 0);
                         bool_12_ |= class348_sub42_sub17.method3271(i_23_, 14);
                         bool_14_ |= class348_sub42_sub17.method3267((byte) -110, i_23_);
                     }
-                    if ((class17_0_.aBoolean241 || Class28.aBoolean5002) && i_1_ != -1 && i_1_ < class17_0_.anIntArray237.length) {
-                        i_24_ = class17_0_.anIntArray237[i_1_];
-                        i_25_ = class17_0_.anIntArray267[i_7_];
+                    if ((animationType_0_.tweened || Class28.aBoolean5002) && i_1_ != -1 && i_1_ < animationType_0_.frames.length) {
+                        i_24_ = animationType_0_.frames[i_1_];
+                        i_25_ = animationType_0_.durations[i_7_];
                         int i_33_ = i_24_ >>> 16;
-                        class348_sub42_sub17_26_ = (i_32_ == i_33_ ? class348_sub42_sub17 : seqTypeList.method839(i_33_, 3));
+                        class348_sub42_sub17_26_ = (i_32_ == i_33_ ? class348_sub42_sub17 : animTypeList.method839(i_33_, 3));
                         i_24_ &= 0xffff;
                         if (class348_sub42_sub17_26_ != null) {
                             bool_13_ |= class348_sub42_sub17_26_.method3272(i_24_, 0);
@@ -131,22 +131,22 @@ final class Class154 {
                     }
                 }
                 i_9_ |= 0x20;
-                if (class17 != null) {
-                    i_27_ = class17.anIntArray237[i_6_];
+                if (animationType != null) {
+                    i_27_ = animationType.frames[i_6_];
                     int i_34_ = i_27_ >>> 16;
                     i_27_ &= 0xffff;
-                    class348_sub42_sub17_30_ = seqTypeList.method839(i_34_, 3);
+                    class348_sub42_sub17_30_ = animTypeList.method839(i_34_, 3);
                     if (class348_sub42_sub17_30_ != null) {
                         bool_13_ |= class348_sub42_sub17_30_.method3272(i_27_, 0);
                         bool_12_ |= class348_sub42_sub17_30_.method3271(i_27_, 14);
                         bool_14_ |= class348_sub42_sub17_30_.method3267((byte) -123, i_27_);
                     }
-                    if ((class17.aBoolean241 || Class28.aBoolean5002) && i_3_ != -1 && i_3_ < class17.anIntArray237.length) {
-                        i_28_ = class17.anIntArray237[i_3_];
-                        i_29_ = class17.anIntArray267[i_6_];
+                    if ((animationType.tweened || Class28.aBoolean5002) && i_3_ != -1 && i_3_ < animationType.frames.length) {
+                        i_28_ = animationType.frames[i_3_];
+                        i_29_ = animationType.durations[i_6_];
                         int i_35_ = i_28_ >>> 16;
                         i_28_ &= 0xffff;
-                        class348_sub42_sub17_31_ = (i_35_ == i_34_ ? class348_sub42_sub17_30_ : seqTypeList.method839(i_35_, 3));
+                        class348_sub42_sub17_31_ = (i_35_ == i_34_ ? class348_sub42_sub17_30_ : animTypeList.method839(i_35_, 3));
                         if (class348_sub42_sub17_31_ != null) {
                             bool_13_ |= class348_sub42_sub17_31_.method3272(i_28_, 0);
                             bool_12_ |= class348_sub42_sub17_31_.method3271(i_28_, 14);
@@ -212,7 +212,7 @@ final class Class154 {
                                     i_46_ = ((class225.anIntArrayArray2939[i_42_][3]) << 3);
                                     i_45_ = (class225.anIntArrayArray2939[i_42_][2]);
                                 }
-                                if (i_46_ != 0 || i_47_ != 0 || i_48_ != 0) meshes[i_42_].rotate(6875, i_47_, i_48_, i_46_);
+                                if (i_46_ != 0 || i_47_ != 0 || i_48_ != 0) meshes[i_42_].rotate( i_47_, i_48_, i_46_);
                                 if (i_43_ != 0 || i_44_ != 0 || i_45_ != 0) meshes[i_42_].translate((byte) -82, i_45_, i_43_, i_44_);
                             }
                         }
@@ -273,17 +273,17 @@ final class Class154 {
                 }
             }
             if (class348_sub42_sub17 != null && class348_sub42_sub17_30_ != null)
-                model_51_.method625(class348_sub42_sub17_26_, i_25_, (byte) 121, i_29_, class348_sub42_sub17_30_, i_23_, i_27_, i_5_ - 1, class348_sub42_sub17, false, i_24_, class348_sub42_sub17_31_, i_8_ + -1, class17_0_.aBooleanArray263, i_28_);
+                model_51_.method625(class348_sub42_sub17_26_, i_25_, (byte) 121, i_29_, class348_sub42_sub17_30_, i_23_, i_27_, i_5_ - 1, class348_sub42_sub17, false, i_24_, class348_sub42_sub17_31_, i_8_ + -1, animationType_0_.interleaveOrder, i_28_);
             else if (class348_sub42_sub17 != null) model_51_.method617(i_23_, i_25_, class348_sub42_sub17_26_, 0, class348_sub42_sub17, false, false, i_24_, i_5_ + -1);
             else if (class348_sub42_sub17_30_ != null) model_51_.method617(i_27_, i_29_, class348_sub42_sub17_31_, 0, class348_sub42_sub17_30_, false, false, i_28_, i_8_ + -1);
             for (int i_60_ = 0; i_16_ > i_60_; i_60_++) {
                 Class95.aClass348_Sub42_Sub17Array1543[i_60_] = null;
                 Class295.aClass348_Sub42_Sub17Array3753[i_60_] = null;
-                Class57.aClass17Array1048[i_60_] = null;
+                Class57.aAnimationTypeArray1048[i_60_] = null;
             }
             return model_51_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.C(" + (interface17 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (class182s != null ? "{...}" : "null") + ',' + bool + ',' + (itemTypeList != null ? "{...}" : "null") + ',' + i + ',' + (class17_0_ != null ? "{...}" : "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (is != null ? "{...}" : "null") + ',' + i_4_ + ',' + (IDKTypeList != null ? "{...}" : "null") + ',' + i_5_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (BASTypeList != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.C(" + (interface17 != null ? "{...}" : "null") + ',' + (animationType != null ? "{...}" : "null") + ',' + (class182s != null ? "{...}" : "null") + ',' + bool + ',' + (itemTypeList != null ? "{...}" : "null") + ',' + i + ',' + (animationType_0_ != null ? "{...}" : "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (is != null ? "{...}" : "null") + ',' + i_4_ + ',' + (IDKTypeList != null ? "{...}" : "null") + ',' + i_5_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + (animTypeList != null ? "{...}" : "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (BASTypeList != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -324,12 +324,12 @@ final class Class154 {
         method1234(-78);
     }
 
-    final Model method1230(ItemTypeList itemTypeList, int i, SeqTypeList seqTypeList, IDKTypeList IDKTypeList, Interface17 interface17, NPCTypeList NPCTypeList, int i_66_, int i_67_, int i_68_, Class17 class17, int i_69_, Toolkit var_toolkit) {
+    final Model method1230(ItemTypeList itemTypeList, int i, AnimTypeList animTypeList, IDKTypeList IDKTypeList, Interface17 interface17, NPCTypeList NPCTypeList, int i_66_, int i_67_, int i_68_, AnimationType animationType, int i_69_, Toolkit var_toolkit) {
         try {
             anInt2107++;
-            if (this.anInt2093 != -1) return (NPCTypeList.method2079(this.anInt2093, -1).method803(interface17, var_toolkit, i_69_, i_67_, class17, seqTypeList, i_66_, 121, i_68_));
+            if (this.anInt2093 != -1) return (NPCTypeList.method2079(this.anInt2093, -1).method803(interface17, var_toolkit, i_69_, i_67_, animationType, animTypeList, i_66_, 121, i_68_));
             int i_70_ = i_68_;
-            if (class17 != null) {
+            if (animationType != null) {
                 boolean bool = false;
                 boolean bool_71_ = false;
                 boolean bool_72_ = false;
@@ -339,20 +339,20 @@ final class Class154 {
                 Object object = null;
                 i_70_ |= 0x20;
                 Object object_76_ = null;
-                i_74_ = class17.anIntArray237[i_66_];
+                i_74_ = animationType.frames[i_66_];
                 int i_77_ = i_74_ >>> 16;
                 i_74_ &= 0xffff;
-                Class348_Sub42_Sub17 class348_sub42_sub17 = seqTypeList.method839(i_77_, 3);
+                Class348_Sub42_Sub17 class348_sub42_sub17 = animTypeList.method839(i_77_, 3);
                 if (class348_sub42_sub17 != null) {
                     bool_71_ |= class348_sub42_sub17.method3272(i_74_, 0);
                     bool |= class348_sub42_sub17.method3271(i_74_, 14);
                     bool_73_ |= class348_sub42_sub17.method3267((byte) -125, i_74_);
-                    bool_72_ |= class17.aBoolean242;
+                    bool_72_ |= animationType.aBoolean242;
                 }
-                if ((class17.aBoolean241 || Class28.aBoolean5002) && i_67_ != -1 && i_67_ < class17.anIntArray237.length) {
-                    i_75_ = class17.anIntArray237[i_67_];
+                if ((animationType.tweened || Class28.aBoolean5002) && i_67_ != -1 && i_67_ < animationType.frames.length) {
+                    i_75_ = animationType.frames[i_67_];
                     int i_78_ = i_75_ >>> 16;
-                    Class348_Sub42_Sub17 class348_sub42_sub17_79_ = (i_78_ != i_77_ ? seqTypeList.method839(i_78_, i ^ ~0x17f6eb54) : class348_sub42_sub17);
+                    Class348_Sub42_Sub17 class348_sub42_sub17_79_ = (i_78_ != i_77_ ? animTypeList.method839(i_78_, i ^ ~0x17f6eb54) : class348_sub42_sub17);
                     i_75_ &= 0xffff;
                     if (class348_sub42_sub17_79_ != null) {
                         bool_71_ |= class348_sub42_sub17_79_.method3272(i_75_, 0);
@@ -408,12 +408,12 @@ final class Class154 {
                     Class130.aClass60_1894.method582(model, aLong2102, (byte) -97);
                 }
             }
-            if (class17 == null) return model;
+            if (animationType == null) return model;
             Model model_88_ = model.method614((byte) 4, i_70_, true);
-            model_88_ = class17.method269(123, model, i_67_, i_69_, i_68_, i_66_);
+            model_88_ = animationType.method269(123, model, i_67_, i_69_, i_68_, i_66_);
             return model_88_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.J(" + (itemTypeList != null ? "{...}" : "null") + ',' + i + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + (IDKTypeList != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (class17 != null ? "{...}" : "null") + ',' + i_69_ + ',' + (var_toolkit != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.J(" + (itemTypeList != null ? "{...}" : "null") + ',' + i + ',' + (animTypeList != null ? "{...}" : "null") + ',' + (IDKTypeList != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (animationType != null ? "{...}" : "null") + ',' + i_69_ + ',' + (var_toolkit != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -425,11 +425,11 @@ final class Class154 {
         }
     }
 
-    final Model method1232(int i, int i_91_, int i_92_, int i_93_, SeqTypeList seqTypeList, IDKTypeList IDKTypeList, int i_94_, int i_95_, int i_96_, Toolkit var_toolkit, int i_97_, Class17 class17) {
+    final Model method1232(int i, int i_91_, int i_92_, int i_93_, AnimTypeList animTypeList, IDKTypeList IDKTypeList, int i_94_, int i_95_, int i_96_, Toolkit var_toolkit, int i_97_, AnimationType animationType) {
         try {
             anInt2106++;
             int i_98_ = i_91_;
-            if (class17 != null) {
+            if (animationType != null) {
                 boolean bool = false;
                 boolean bool_99_ = false;
                 boolean bool_100_ = false;
@@ -439,22 +439,22 @@ final class Class154 {
                 Object object = null;
                 Object object_104_ = null;
                 i_98_ |= 0x20;
-                i_102_ = class17.anIntArray237[i_97_];
+                i_102_ = animationType.frames[i_97_];
                 int i_105_ = i_102_ >>> 16;
-                Class348_Sub42_Sub17 class348_sub42_sub17 = seqTypeList.method839(i_105_, 3);
+                Class348_Sub42_Sub17 class348_sub42_sub17 = animTypeList.method839(i_105_, 3);
                 i_102_ &= 0xffff;
                 if (class348_sub42_sub17 != null) {
                     bool_99_ |= class348_sub42_sub17.method3272(i_102_, i_94_ ^ ~0x3be2);
                     bool |= class348_sub42_sub17.method3271(i_102_, 14);
                     bool_101_ |= class348_sub42_sub17.method3267((byte) -125, i_102_);
-                    bool_100_ |= class17.aBoolean242;
+                    bool_100_ |= animationType.aBoolean242;
                 }
-                if ((class17.aBoolean241 || Class28.aBoolean5002) && i != -1 && i < class17.anIntArray237.length) {
-                    i_103_ = class17.anIntArray237[i];
+                if ((animationType.tweened || Class28.aBoolean5002) && i != -1 && i < animationType.frames.length) {
+                    i_103_ = animationType.frames[i];
                     int i_106_ = i_103_ >>> 16;
                     i_103_ &= 0xffff;
                     Class348_Sub42_Sub17 class348_sub42_sub17_107_;
-                    if (i_105_ != i_106_) class348_sub42_sub17_107_ = seqTypeList.method839(i_103_ >>> 16, 3);
+                    if (i_105_ != i_106_) class348_sub42_sub17_107_ = animTypeList.method839(i_103_ >>> 16, 3);
                     else class348_sub42_sub17_107_ = class348_sub42_sub17;
                     if (class348_sub42_sub17_107_ != null) {
                         bool_99_ |= class348_sub42_sub17_107_.method3272(i_103_, 0);
@@ -497,13 +497,13 @@ final class Class154 {
                     Class130.aClass60_1894.method582(model, l, (byte) -109);
                 }
             }
-            if (class17 == null) return model;
+            if (animationType == null) return model;
             if (i_94_ != -15331) return null;
             model = model.method614((byte) 4, i_98_, true);
-            model = class17.method269(-32, model, i, i_96_, i_91_, i_97_);
+            model = animationType.method269(-32, model, i, i_96_, i_91_, i_97_);
             return model;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + (IDKTypeList != null ? "{...}" : "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_97_ + ',' + (class17 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (animTypeList != null ? "{...}" : "null") + ',' + (IDKTypeList != null ? "{...}" : "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_97_ + ',' + (animationType != null ? "{...}" : "null") + ')'));
         }
     }
 

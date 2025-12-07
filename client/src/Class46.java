@@ -249,7 +249,7 @@ final class Class46 {
         Class348_Sub40_Sub12.objectTypeList.method2006(88);
         BillboardType.npcTypeList.method2080(127);
         Exception_Sub1.itemTypeList.method1938(126);
-        Class10.seqTypeList.method838(7);
+        Class10.animTypeList.method838(7);
         Class348_Sub40_Sub18.gfxTypeList.method2542(-101);
         Class229.varBitTypeList.method1443(83);
         Class269.varPlayerTypeList.method1590(0);
@@ -295,7 +295,7 @@ final class Class46 {
         return class348_sub50.aString7211;
     }
 
-    final Model method430(IDKTypeList IDKTypeList, SeqTypeList seqTypeList, int i, Toolkit var_toolkit, int i_21_, int i_22_, ItemTypeList itemTypeList, Interface17 interface17, int i_23_, Class154 class154, Class17 class17, BASTypeList BASTypeList, NPCTypeList NPCTypeList, int i_24_) {
+    final Model method430(IDKTypeList IDKTypeList, AnimTypeList animTypeList, int i, Toolkit var_toolkit, int i_21_, int i_22_, ItemTypeList itemTypeList, Interface17 interface17, int i_23_, Class154 class154, AnimationType animationType, BASTypeList BASTypeList, NPCTypeList NPCTypeList, int i_24_) {
         try {
             anInt684++;
             Class348_Sub42_Sub13.aBoolean9616 = false;
@@ -303,7 +303,7 @@ final class Class46 {
             if (this.anInt770 == 1 && this.anInt753 == -1) return null;
             if (this.anInt770 == 1) {
                 int i_25_ = i;
-                if (class17 != null) i |= class17.method263(i_24_, 106, i_21_, true);
+                if (animationType != null) i |= animationType.method263(i_24_, 106, i_21_, true);
                 long l = this.anInt753 + ((this.anInt770 << 16) + (var_toolkit.anInt4567 << 29));
                 Model model = (Model) TextureUniverse.aClass60_4417.method583(l, -90);
                 if (model == null || var_toolkit.method3667(model.ua(), i) != 0) {
@@ -317,12 +317,12 @@ final class Class46 {
                     model = var_toolkit.method3625(mesh, i, Class14_Sub3.anInt8628, 64, 768);
                     TextureUniverse.aClass60_4417.method582(model, l, (byte) -125);
                 }
-                if (class17 != null) model = class17.method269(-101, model, i_24_, i_22_, i, i_21_);
+                if (animationType != null) model = animationType.method269(-101, model, i_24_, i_22_, i, i_21_);
                 model.s(i_25_);
                 return model;
             }
             if (this.anInt770 == 2) {
-                Model model = (NPCTypeList.method2079(this.anInt753, -1).method803(interface17, var_toolkit, i_22_, i_24_, class17, seqTypeList, i_21_, 104, i));
+                Model model = (NPCTypeList.method2079(this.anInt753, -1).method803(interface17, var_toolkit, i_22_, i_24_, animationType, animTypeList, i_21_, 104, i));
                 if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -332,7 +332,7 @@ final class Class46 {
             if (i_23_ != 255) method432(null, -50);
             if (this.anInt770 == 3) {
                 if (class154 == null) return null;
-                Model model = class154.method1230(itemTypeList, -402058072, seqTypeList, IDKTypeList, interface17, NPCTypeList, i_21_, i_24_, i, class17, i_22_, var_toolkit);
+                Model model = class154.method1230(itemTypeList, -402058072, animTypeList, IDKTypeList, interface17, NPCTypeList, i_21_, i_24_, i, animationType, i_22_, var_toolkit);
                 if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -341,7 +341,7 @@ final class Class46 {
             }
             if (this.anInt770 == 4) {
                 ItemDefinition itemDefinition = itemTypeList.method1940(i_23_ + -365, this.anInt753);
-                Model model = itemDefinition.method1559(class154, class17, var_toolkit, i, i_22_, 10, i_21_, (byte) 88, i_24_);
+                Model model = itemDefinition.method1559(class154, animationType, var_toolkit, i, i_22_, 10, i_21_, (byte) 88, i_24_);
                 if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -349,7 +349,7 @@ final class Class46 {
                 return model;
             }
             if (this.anInt770 == 6) {
-                Model model = (NPCTypeList.method2079(this.anInt753, -1).method800(0, null, seqTypeList, false, null, 0, BASTypeList, i_21_, class17, interface17, var_toolkit, 0, null, i_24_, 0, i, i_22_));
+                Model model = (NPCTypeList.method2079(this.anInt753, -1).method800(0, null, animTypeList, false, null, 0, BASTypeList, i_21_, animationType, interface17, var_toolkit, 0, null, i_24_, 0, i, i_22_));
                 if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -361,7 +361,7 @@ final class Class46 {
                 int i_26_ = this.anInt753 >>> 16;
                 int i_27_ = 0xffff & this.anInt753;
                 int i_28_ = this.anInt779;
-                Model model = class154.method1232(i_24_, i, i_28_, i_27_, seqTypeList, IDKTypeList, -15331, i_26_, i_22_, var_toolkit, i_21_, class17);
+                Model model = class154.method1232(i_24_, i, i_28_, i_27_, animTypeList, IDKTypeList, -15331, i_26_, i_22_, var_toolkit, i_21_, animationType);
                 if (model == null) {
                     Class348_Sub42_Sub13.aBoolean9616 = true;
                     return null;
@@ -370,7 +370,7 @@ final class Class46 {
             }
             return null;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("at.G(" + (IDKTypeList != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_21_ + ',' + i_22_ + ',' + (itemTypeList != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + i_23_ + ',' + (class154 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + i_24_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("at.G(" + (IDKTypeList != null ? "{...}" : "null") + ',' + (animTypeList != null ? "{...}" : "null") + ',' + i + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_21_ + ',' + i_22_ + ',' + (itemTypeList != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + i_23_ + ',' + (class154 != null ? "{...}" : "null") + ',' + (animationType != null ? "{...}" : "null") + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + (NPCTypeList != null ? "{...}" : "null") + ',' + i_24_ + ')'));
         }
     }
 

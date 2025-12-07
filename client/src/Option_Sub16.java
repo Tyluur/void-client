@@ -98,15 +98,15 @@ final class Option_Sub16 extends Option {
                         }
                     }
                     if (bool && player.anInt10286 != -1) {
-                        Class17 class17 = (Class10.seqTypeList.method835(player.anInt10286, 7));
-                        int i_10_ = class17.anInt248;
+                        AnimationType animationType = (Class10.animTypeList.method835(player.anInt10286, 7));
+                        int i_10_ = animationType.replayMode;
                         if (i_10_ == 1) {
                             player.anInt10232 = 0;
                             player.anInt10267 = 0;
                             player.anInt10294 = 0;
                             player.anInt10218 = i_8_;
                             player.anInt10244 = 1;
-                            if (!player.aBoolean10309) Class287.method2178(player, player.anInt10267, class17, i ^ ~0x5df4);
+                            if (!player.aBoolean10309) Class287.method2178(player, player.anInt10267, animationType, i ^ ~0x5df4);
                         }
                         if (i_10_ == 2) player.anInt10294 = 0;
                     }
@@ -115,7 +115,7 @@ final class Option_Sub16 extends Option {
                 if (i != 23946) method1791(126, null, -73, null);
                 for (int i_11_ = 0; is.length > i_11_; i_11_++) {
                     if (is[i_11_] != -1) bool = false;
-                    if (player.anIntArray10236 == null || (player.anIntArray10236[i_11_]) == -1 || (Class10.seqTypeList.method835((player.anIntArray10236[i_11_]), 7).anInt239 <= (Class10.seqTypeList.method835(is[i_11_], i ^ 0x5d8d).anInt239))) {
+                    if (player.anIntArray10236 == null || (player.anIntArray10236[i_11_]) == -1 || (Class10.animTypeList.method835((player.anIntArray10236[i_11_]), 7).priority <= (Class10.animTypeList.method835(is[i_11_], i ^ 0x5d8d).priority))) {
                         player.anInt10218 = i_8_;
                         player.anIntArray10236 = is;
                         break;
@@ -145,6 +145,6 @@ final class Option_Sub16 extends Option {
         int i_20_ = Class85.method831(Class113.anInt1745, i_14_, Class369.anInt4960, 59);
         int i_21_ = -27 / ((i_15_ - -6) / 55);
         for (int i_22_ = i_17_; i_22_ <= i_18_; i_22_++)
-            Class135_Sub2.method1156(-27, i_20_, Class17.anIntArrayArray255[i_22_], i_19_, i_16_);
+            Class135_Sub2.method1156(-27, i_20_, AnimationType.anIntArrayArray255[i_22_], i_19_, i_16_);
     }
 }

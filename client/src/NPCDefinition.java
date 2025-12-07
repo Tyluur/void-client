@@ -347,18 +347,18 @@ final class NPCDefinition {
         }
     }
 
-    final Model method800(int i, Class182[] class182s, SeqTypeList seqTypeList, boolean bool, Class17 class17, int i_34_, BASTypeList BASTypeList, int i_35_, Class17 class17_36_, Interface17 interface17, Toolkit var_toolkit, int i_37_, int[] is, int i_38_, int i_39_, int i_40_, int i_41_) {
+    final Model method800(int i, Class182[] class182s, AnimTypeList animTypeList, boolean bool, AnimationType animationType, int i_34_, BASTypeList BASTypeList, int i_35_, AnimationType animationType_36_, Interface17 interface17, Toolkit var_toolkit, int i_37_, int[] is, int i_38_, int i_39_, int i_40_, int i_41_) {
         try {
             anInt1341++;
             if (this.anIntArray1377 != null) {
                 NPCDefinition NPCDefinition_42_ = method794(interface17, -1);
                 if (NPCDefinition_42_ == null) return null;
-                return NPCDefinition_42_.method800(i, class182s, seqTypeList, false, class17, i_34_, BASTypeList, i_35_, class17_36_, interface17, var_toolkit, i_37_, is, i_38_, i_39_, i_40_, i_41_);
+                return NPCDefinition_42_.method800(i, class182s, animTypeList, false, animationType, i_34_, BASTypeList, i_35_, animationType_36_, interface17, var_toolkit, i_37_, is, i_38_, i_39_, i_40_, i_41_);
             }
             int i_43_ = i_40_;
             if (anInt1358 != 128) i_43_ |= 0x2;
             if (anInt1346 != 128) i_43_ |= 0x5;
-            boolean bool_44_ = class17_36_ != null || class17 != null;
+            boolean bool_44_ = animationType_36_ != null || animationType != null;
             boolean bool_45_ = false;
             boolean bool_46_ = false;
             boolean bool_47_ = false;
@@ -367,27 +367,27 @@ final class NPCDefinition {
             for (int i_50_ = 0; i_50_ < i_49_; i_50_++) {
                 Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_] = null;
                 if (class182s[i_50_] != null) {
-                    Class17 class17_51_ = seqTypeList.method835((class182s[i_50_].anInt2454), 7);
-                    if (class17_51_.anIntArray237 != null) {
+                    AnimationType animationType_51_ = animTypeList.method835((class182s[i_50_].anInt2454), 7);
+                    if (animationType_51_.frames != null) {
                         bool_44_ = true;
-                        Class163.aClass17Array2169[i_50_] = class17_51_;
+                        Class163.aAnimationTypeArray2169[i_50_] = animationType_51_;
                         int i_52_ = class182s[i_50_].anInt2451;
                         int i_53_ = class182s[i_50_].anInt2455;
-                        int i_54_ = class17_51_.anIntArray237[i_52_];
-                        Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_] = seqTypeList.method839(i_54_ >>> 16, 3);
+                        int i_54_ = animationType_51_.frames[i_52_];
+                        Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_] = animTypeList.method839(i_54_ >>> 16, 3);
                         i_54_ &= 0xffff;
                         Class90.anIntArray1518[i_50_] = i_54_;
                         if ((Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_]) != null) {
                             bool_46_ |= Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_].method3272(i_54_, 0);
                             bool_45_ |= Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_].method3271(i_54_, 14);
                             bool_48_ |= Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_50_].method3267((byte) -92, i_54_);
-                            bool_47_ |= class17_51_.aBoolean242;
+                            bool_47_ |= animationType_51_.aBoolean242;
                         }
-                        if ((class17_51_.aBoolean241 || Class28.aBoolean5002) && i_53_ != -1 && i_53_ < (class17_51_.anIntArray237).length) {
-                            Class348_Sub23_Sub4.anIntArray9050[i_50_] = class17_51_.anIntArray267[i_52_];
+                        if ((animationType_51_.tweened || Class28.aBoolean5002) && i_53_ != -1 && i_53_ < (animationType_51_.frames).length) {
+                            Class348_Sub23_Sub4.anIntArray9050[i_50_] = animationType_51_.durations[i_52_];
                             Class67.anIntArray4648[i_50_] = class182s[i_50_].anInt2456;
-                            int i_55_ = class17_51_.anIntArray237[i_53_];
-                            Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_] = seqTypeList.method839(i_55_ >>> 16, 3);
+                            int i_55_ = animationType_51_.frames[i_53_];
+                            Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_] = animTypeList.method839(i_55_ >>> 16, 3);
                             i_55_ &= 0xffff;
                             FloorUnderlayTypeList.anIntArray2466[i_50_] = i_55_;
                             if ((Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_]) != null) {
@@ -416,23 +416,23 @@ final class NPCDefinition {
             Class348_Sub42_Sub17 class348_sub42_sub17_64_ = null;
             if (bool_44_) {
                 i_43_ |= 0x20;
-                if (class17_36_ != null) {
-                    i_56_ = class17_36_.anIntArray237[i_35_];
+                if (animationType_36_ != null) {
+                    i_56_ = animationType_36_.frames[i_35_];
                     int i_65_ = i_56_ >>> 16;
                     i_56_ &= 0xffff;
-                    class348_sub42_sub17 = seqTypeList.method839(i_65_, 3);
+                    class348_sub42_sub17 = animTypeList.method839(i_65_, 3);
                     if (class348_sub42_sub17 != null) {
                         bool_46_ |= class348_sub42_sub17.method3272(i_56_, 0);
                         bool_45_ |= class348_sub42_sub17.method3271(i_56_, 14);
                         bool_48_ |= class348_sub42_sub17.method3267((byte) -125, i_56_);
-                        bool_47_ |= class17_36_.aBoolean242;
+                        bool_47_ |= animationType_36_.aBoolean242;
                     }
-                    if ((class17_36_.aBoolean241 || Class28.aBoolean5002) && i_38_ != -1 && (class17_36_.anIntArray237.length > i_38_)) {
-                        i_57_ = class17_36_.anIntArray237[i_38_];
-                        i_58_ = class17_36_.anIntArray267[i_35_];
+                    if ((animationType_36_.tweened || Class28.aBoolean5002) && i_38_ != -1 && (animationType_36_.frames.length > i_38_)) {
+                        i_57_ = animationType_36_.frames[i_38_];
+                        i_58_ = animationType_36_.durations[i_35_];
                         int i_66_ = i_57_ >>> 16;
                         if (i_65_ == i_66_) class348_sub42_sub17_59_ = class348_sub42_sub17;
-                        else class348_sub42_sub17_59_ = seqTypeList.method839(i_66_, 3);
+                        else class348_sub42_sub17_59_ = animTypeList.method839(i_66_, 3);
                         i_57_ &= 0xffff;
                         if (class348_sub42_sub17_59_ != null) {
                             bool_46_ |= class348_sub42_sub17_59_.method3272(i_57_, 0);
@@ -441,23 +441,23 @@ final class NPCDefinition {
                         }
                     }
                 }
-                if (class17 != null) {
-                    i_60_ = class17.anIntArray237[i_39_];
+                if (animationType != null) {
+                    i_60_ = animationType.frames[i_39_];
                     int i_67_ = i_60_ >>> 16;
-                    class348_sub42_sub17_63_ = seqTypeList.method839(i_67_, 3);
+                    class348_sub42_sub17_63_ = animTypeList.method839(i_67_, 3);
                     i_60_ &= 0xffff;
                     if (class348_sub42_sub17_63_ != null) {
                         bool_46_ |= class348_sub42_sub17_63_.method3272(i_60_, 0);
                         bool_45_ |= class348_sub42_sub17_63_.method3271(i_60_, 14);
                         bool_48_ |= class348_sub42_sub17_63_.method3267((byte) -102, i_60_);
-                        bool_47_ |= class17.aBoolean242;
+                        bool_47_ |= animationType.aBoolean242;
                     }
-                    if ((class17.aBoolean241 || Class28.aBoolean5002) && i_37_ != -1 && class17.anIntArray237.length > i_37_) {
-                        i_62_ = class17.anIntArray267[i_39_];
-                        i_61_ = class17.anIntArray237[i_37_];
+                    if ((animationType.tweened || Class28.aBoolean5002) && i_37_ != -1 && animationType.frames.length > i_37_) {
+                        i_62_ = animationType.durations[i_39_];
+                        i_61_ = animationType.frames[i_37_];
                         int i_68_ = i_61_ >>> 16;
                         if (i_68_ == i_67_) class348_sub42_sub17_64_ = class348_sub42_sub17_63_;
-                        else class348_sub42_sub17_64_ = seqTypeList.method839(i_68_, 3);
+                        else class348_sub42_sub17_64_ = animTypeList.method839(i_68_, 3);
                         i_61_ &= 0xffff;
                         if (class348_sub42_sub17_64_ != null) {
                             bool_46_ |= class348_sub42_sub17_64_.method3272(i_61_, 0);
@@ -517,7 +517,7 @@ final class NPCDefinition {
                                 i_77_ = ((class225.anIntArrayArray2939[i_73_][3]) << 3);
                                 i_74_ = (class225.anIntArrayArray2939[i_73_][0]);
                             }
-                            if (i_77_ != 0 || i_78_ != 0 || i_79_ != 0) meshes[i_73_].rotate(6875, i_78_, i_79_, i_77_);
+                            if (i_77_ != 0 || i_78_ != 0 || i_79_ != 0) meshes[i_73_].rotate( i_78_, i_79_, i_77_);
                             if (i_74_ != 0 || i_75_ != 0 || i_76_ != 0) meshes[i_73_].translate((byte) 93, i_76_, i_74_, i_75_);
                         }
                     }
@@ -564,7 +564,7 @@ final class NPCDefinition {
             int i_87_ = 1;
             while (i_86_ < i_49_) {
                 if ((Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_86_]) != null)
-                    model_82_.method603((byte) -55, -1 + Class67.anIntArray4648[i_86_], null, i_87_, Class90.anIntArray1518[i_86_], FloorUnderlayTypeList.anIntArray2466[i_86_], (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_86_]), 0, (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_86_]), (Class163.aClass17Array2169[i_86_].aBoolean242), Class348_Sub23_Sub4.anIntArray9050[i_86_]);
+                    model_82_.method603((byte) -55, -1 + Class67.anIntArray4648[i_86_], null, i_87_, Class90.anIntArray1518[i_86_], FloorUnderlayTypeList.anIntArray2466[i_86_], (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_86_]), 0, (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_86_]), (Class163.aAnimationTypeArray2169[i_86_].aBoolean242), Class348_Sub23_Sub4.anIntArray9050[i_86_]);
                 i_86_++;
                 i_87_ <<= 1;
             }
@@ -585,19 +585,19 @@ final class NPCDefinition {
                 }
             }
             if (class348_sub42_sub17 != null && class348_sub42_sub17_63_ != null)
-                model_82_.method625(class348_sub42_sub17_59_, i_58_, (byte) 122, i_62_, class348_sub42_sub17_63_, i_56_, i_60_, -1 + i_41_, class348_sub42_sub17, (class17_36_.aBoolean242 | class17.aBoolean242), i_57_, class348_sub42_sub17_64_, -1 + i_34_, class17_36_.aBooleanArray263, i_61_);
-            else if (class348_sub42_sub17 != null) model_82_.method617(i_56_, i_58_, class348_sub42_sub17_59_, 0, class348_sub42_sub17, bool, class17_36_.aBoolean242, i_57_, i_41_ + -1);
-            else if (class348_sub42_sub17_63_ != null) model_82_.method617(i_60_, i_62_, class348_sub42_sub17_64_, 0, class348_sub42_sub17_63_, false, class17.aBoolean242, i_61_, i_34_ - 1);
+                model_82_.method625(class348_sub42_sub17_59_, i_58_, (byte) 122, i_62_, class348_sub42_sub17_63_, i_56_, i_60_, -1 + i_41_, class348_sub42_sub17, (animationType_36_.aBoolean242 | animationType.aBoolean242), i_57_, class348_sub42_sub17_64_, -1 + i_34_, animationType_36_.interleaveOrder, i_61_);
+            else if (class348_sub42_sub17 != null) model_82_.method617(i_56_, i_58_, class348_sub42_sub17_59_, 0, class348_sub42_sub17, bool, animationType_36_.aBoolean242, i_57_, i_41_ + -1);
+            else if (class348_sub42_sub17_63_ != null) model_82_.method617(i_60_, i_62_, class348_sub42_sub17_64_, 0, class348_sub42_sub17_63_, false, animationType.aBoolean242, i_61_, i_34_ - 1);
             for (int i_91_ = 0; i_49_ > i_91_; i_91_++) {
                 Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010[i_91_] = null;
                 Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_91_] = null;
-                Class163.aClass17Array2169[i_91_] = null;
+                Class163.aAnimationTypeArray2169[i_91_] = null;
             }
             if (anInt1346 != 128 || anInt1358 != 128) model_82_.O(anInt1346, anInt1358, anInt1346);
             model_82_.s(i_40_);
             return model_82_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bb.F(" + i + ',' + (class182s != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + bool + ',' + (class17 != null ? "{...}" : "null") + ',' + i_34_ + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + i_35_ + ',' + (class17_36_ != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_37_ + ',' + (is != null ? "{...}" : "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bb.F(" + i + ',' + (class182s != null ? "{...}" : "null") + ',' + (animTypeList != null ? "{...}" : "null") + ',' + bool + ',' + (animationType != null ? "{...}" : "null") + ',' + i_34_ + ',' + (BASTypeList != null ? "{...}" : "null") + ',' + i_35_ + ',' + (animationType_36_ != null ? "{...}" : "null") + ',' + (interface17 != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_37_ + ',' + (is != null ? "{...}" : "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')'));
         }
     }
 
@@ -617,18 +617,18 @@ final class NPCDefinition {
         return (Class348_Sub33.tileFlags[1][x][y] & 0x2) != 0;
     }
 
-    final Model method803(Interface17 interface17, Toolkit var_toolkit, int i, int i_94_, Class17 class17, SeqTypeList seqTypeList, int i_95_, int i_96_, int i_97_) {
+    final Model method803(Interface17 interface17, Toolkit var_toolkit, int i, int i_94_, AnimationType animationType, AnimTypeList animTypeList, int i_95_, int i_96_, int i_97_) {
         try {
             anInt1389++;
             if (this.anIntArray1377 != null) {
                 NPCDefinition NPCDefinition_98_ = method794(interface17, -1);
                 if (NPCDefinition_98_ == null) return null;
-                return NPCDefinition_98_.method803(interface17, var_toolkit, i, i_94_, class17, seqTypeList, i_95_, 104, i_97_);
+                return NPCDefinition_98_.method803(interface17, var_toolkit, i, i_94_, animationType, animTypeList, i_95_, 104, i_97_);
             }
             if (i_96_ <= 98) method796(null, -10);
             if (anIntArray1380 == null) return null;
             int i_99_ = i_97_;
-            if (class17 != null && i_95_ != -1) i_99_ |= class17.method263(i_94_, 97, i_95_, true);
+            if (animationType != null && i_95_ != -1) i_99_ |= animationType.method263(i_94_, 97, i_95_, true);
             Model model;
             synchronized (this.aNPCTypeList_1348.aClass60_3592) {
                 model = ((Model) (this.aNPCTypeList_1348.aClass60_3592.method583(var_toolkit.anInt4567 << 16 | this.anInt1344, 64)));
@@ -674,11 +674,11 @@ final class NPCDefinition {
                     this.aNPCTypeList_1348.aClass60_3592.method582(model, var_toolkit.anInt4567 << 16 | this.anInt1344, (byte) -96);
                 }
             }
-            if (class17 != null && i_95_ != -1) model = class17.method269(-9, model, i_94_, i, i_99_, i_95_);
+            if (animationType != null && i_95_ != -1) model = animationType.method269(-9, model, i_94_, i, i_99_, i_95_);
             model.s(i_97_);
             return model;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bb.H(" + (interface17 != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_94_ + ',' + (class17 != null ? "{...}" : "null") + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bb.H(" + (interface17 != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_94_ + ',' + (animationType != null ? "{...}" : "null") + ',' + (animTypeList != null ? "{...}" : "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'));
         }
     }
 

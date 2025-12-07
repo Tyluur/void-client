@@ -41,7 +41,7 @@ final class Class348_Sub13 extends Node {
         }
     }
 
-    final Model method2803(Class17 class17, Class154 class154, int i, int i_10_, int i_11_, int i_12_, int i_13_, Toolkit var_toolkit, boolean bool, int i_14_) {
+    final Model method2803(AnimationType animationType, Class154 class154, int i, int i_10_, int i_11_, int i_12_, int i_13_, Toolkit var_toolkit, boolean bool, int i_14_) {
         try {
             anInt6756++;
             Model model = null;
@@ -66,25 +66,25 @@ final class Class348_Sub13 extends Node {
             int i_24_ = 0;
             Class348_Sub42_Sub17 class348_sub42_sub17 = null;
             Class348_Sub42_Sub17 class348_sub42_sub17_25_ = null;
-            if (class17 != null) {
-                i_22_ = class17.anIntArray237[i_10_];
+            if (animationType != null) {
+                i_22_ = animationType.frames[i_10_];
                 i_15_ |= 0x20;
                 int i_26_ = i_22_ >>> 16;
-                class348_sub42_sub17 = Class10.seqTypeList.method839(i_26_, i_14_ + 4);
+                class348_sub42_sub17 = Class10.animTypeList.method839(i_26_, i_14_ + 4);
                 i_22_ &= 0xffff;
                 if (class348_sub42_sub17 != null) {
                     bool_19_ |= class348_sub42_sub17.method3272(i_22_, 0);
                     bool_18_ |= class348_sub42_sub17.method3271(i_22_, 14);
                     bool_21_ |= class348_sub42_sub17.method3267((byte) -112, i_22_);
-                    bool_20_ |= class17.aBoolean242;
+                    bool_20_ |= animationType.aBoolean242;
                 }
-                if ((class17.aBoolean241 || Class28.aBoolean5002) && i_12_ != -1 && class17.anIntArray237.length > i_12_) {
-                    i_23_ = class17.anIntArray237[i_12_];
-                    i_24_ = class17.anIntArray267[i_10_];
+                if ((animationType.tweened || Class28.aBoolean5002) && i_12_ != -1 && animationType.frames.length > i_12_) {
+                    i_23_ = animationType.frames[i_12_];
+                    i_24_ = animationType.durations[i_10_];
                     int i_27_ = i_23_ >>> 16;
                     i_23_ &= 0xffff;
                     if (i_27_ == i_26_) class348_sub42_sub17_25_ = class348_sub42_sub17;
-                    else class348_sub42_sub17_25_ = Class10.seqTypeList.method839(i_23_ >>> 16, 3);
+                    else class348_sub42_sub17_25_ = Class10.animTypeList.method839(i_23_ >>> 16, 3);
                     if (class348_sub42_sub17_25_ != null) {
                         bool_19_ |= class348_sub42_sub17_25_.method3272(i_23_, 0);
                         bool_18_ |= class348_sub42_sub17_25_.method3271(i_23_, 14);
@@ -119,7 +119,7 @@ final class Class348_Sub13 extends Node {
                             int i_36_ = (class225.anIntArrayArray2939[i_32_][3]);
                             int i_37_ = (class225.anIntArrayArray2939[i_32_][4]);
                             int i_38_ = (class225.anIntArrayArray2939[i_32_][5]);
-                            if (i_36_ != 0 || i_37_ != 0 || i_38_ != 0) meshes[i_32_].rotate(6875, i_37_, i_38_, i_36_);
+                            if (i_36_ != 0 || i_37_ != 0 || i_38_ != 0) meshes[i_32_].rotate(i_37_, i_38_, i_36_);
                             if (i_33_ != 0 || i_34_ != 0 || i_35_ != 0) meshes[i_32_].translate((byte) -91, i_35_, i_33_, i_34_);
                         }
                     }
@@ -139,12 +139,12 @@ final class Class348_Sub13 extends Node {
                     Class202.aClass60_2671.method582(model, l, (byte) -128);
                 }
             }
-            if (class17 == null || class348_sub42_sub17 == null) return model;
+            if (animationType == null || class348_sub42_sub17 == null) return model;
             Model model_41_ = model.method614((byte) 1, i_15_, true);
-            model_41_.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, class17.aBoolean242, i_23_, i_11_ + i_14_);
+            model_41_.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, animationType.aBoolean242, i_23_, i_11_ + i_14_);
             return model_41_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ie.B(" + (class17 != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + bool + ',' + i_14_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ie.B(" + (animationType != null ? "{...}" : "null") + ',' + (class154 != null ? "{...}" : "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + bool + ',' + i_14_ + ')'));
         }
     }
 

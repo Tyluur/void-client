@@ -30,7 +30,7 @@ final class Option_Sub27 extends Option {
         if (Class132.anInt1910 <= i_1_ && Class38.anInt513 >= i_1_) {
             int i_19_ = Class85.method831(Class113.anInt1745, i + i_4_, Class369.anInt4960, -89);
             int i_20_ = Class85.method831(Class113.anInt1745, -i_4_ + i, Class369.anInt4960, -116);
-            Class135_Sub2.method1156(-27, i_19_, Class17.anIntArrayArray255[i_1_], i_20_, i_3_);
+            Class135_Sub2.method1156(-27, i_19_, AnimationType.anIntArrayArray255[i_1_], i_20_, i_3_);
         }
         int i_21_ = i_14_ * (i_6_ - 1);
         while (i_6_ > 0) {
@@ -60,8 +60,8 @@ final class Option_Sub27 extends Option {
             if (i_23_ >= Class132.anInt1910 && i_22_ <= Class38.anInt513) {
                 int i_24_ = Class85.method831(Class113.anInt1745, i + i_5_, Class369.anInt4960, 86);
                 int i_25_ = Class85.method831(Class113.anInt1745, -i_5_ + i, Class369.anInt4960, 32);
-                if (Class132.anInt1910 <= i_22_) Class135_Sub2.method1156(i_2_ + -26, i_24_, Class17.anIntArrayArray255[i_22_], i_25_, i_3_);
-                if (Class38.anInt513 >= i_23_) Class135_Sub2.method1156(-27, i_24_, Class17.anIntArrayArray255[i_23_], i_25_, i_3_);
+                if (Class132.anInt1910 <= i_22_) Class135_Sub2.method1156(i_2_ + -26, i_24_, AnimationType.anIntArrayArray255[i_22_], i_25_, i_3_);
+                if (Class38.anInt513 >= i_23_) Class135_Sub2.method1156(-27, i_24_, AnimationType.anIntArrayArray255[i_23_], i_25_, i_3_);
             }
         }
     }

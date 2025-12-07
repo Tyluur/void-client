@@ -16,13 +16,13 @@ final class Class89 {
         int i_6_ = i_0_ + i;
         int i_7_ = -i + i_3_;
         for (int i_8_ = i_0_; i_8_ < i_6_; i_8_++)
-            Class135_Sub2.method1156(-27, i_2_, Class17.anIntArrayArray255[i_8_], i_1_, i_5_);
+            Class135_Sub2.method1156(-27, i_2_, AnimationType.anIntArrayArray255[i_8_], i_1_, i_5_);
         int i_9_ = -i + i_2_;
         for (int i_10_ = i_3_; i_10_ > i_7_; i_10_--)
-            Class135_Sub2.method1156(-27, i_2_, Class17.anIntArrayArray255[i_10_], i_1_, i_5_);
+            Class135_Sub2.method1156(-27, i_2_, AnimationType.anIntArrayArray255[i_10_], i_1_, i_5_);
         int i_11_ = i + i_1_;
         for (int i_12_ = i_6_; i_7_ >= i_12_; i_12_++) {
-            int[] is = Class17.anIntArrayArray255[i_12_];
+            int[] is = AnimationType.anIntArrayArray255[i_12_];
             Class135_Sub2.method1156(-27, i_11_, is, i_1_, i_5_);
             Class135_Sub2.method1156(-27, i_2_, is, i_9_, i_5_);
         }

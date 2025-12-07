@@ -45,7 +45,7 @@ final class Class286_Sub4 extends Class286 {
     static final int method2154(int i) {
         int i_1_ = -1;
         for (int i_2_ = 0; i_2_ < Class75_Sub1.anInt5652 - 1; i_2_++) {
-            if (i < (Class17.anIntArray256[i_2_] + Class345.anIntArray4271[i_2_])) {
+            if (i < (AnimationType.anIntArray256[i_2_] + Class345.anIntArray4271[i_2_])) {
                 i_1_ = i_2_;
                 break;
             }

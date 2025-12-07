@@ -51,7 +51,7 @@ final class Class125 implements Interface12 {
 
     static final void method1111(int i, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_) {
         for (int i_11_ = i_9_; i >= i_11_; i_11_++)
-            Class135_Sub2.method1156(-27, i_7_, Class17.anIntArrayArray255[i_11_], i_8_, i_10_);
+            Class135_Sub2.method1156(-27, i_7_, AnimationType.anIntArrayArray255[i_11_], i_8_, i_10_);
         if (i_6_ != 0) anInt4930 = 29;
         anInt4926++;
     }

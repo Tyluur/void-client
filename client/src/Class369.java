@@ -29,8 +29,8 @@ class Class369 implements Interface12 {
         Class240.aFontRenderer_4684 = Class14.method232(var_toolkit, (byte) -53, true, LoadState.anInt1044);
         Class258_Sub1.aFontMetrics_8527 = Class135.method1151(-25411, var_toolkit, LoadState.anInt1044);
         if (i != 4) aFontMetrics_4962 = null;
-        Applet_Sub1.aFontRenderer_20 = Class14.method232(var_toolkit, (byte) -53, true, Class17.anInt235);
-        Class246.aFontMetrics_3179 = Class135.method1151(-25411, var_toolkit, Class17.anInt235);
+        Applet_Sub1.aFontRenderer_20 = Class14.method232(var_toolkit, (byte) -53, true, AnimationType.anInt235);
+        Class246.aFontMetrics_3179 = Class135.method1151(-25411, var_toolkit, AnimationType.anInt235);
         Class262.aFontRenderer_3326 = Class14.method232(var_toolkit, (byte) -53, true, Class291.anInt3736);
         aFontMetrics_4962 = Class135.method1151(-25411, var_toolkit, Class291.anInt3736);
     }

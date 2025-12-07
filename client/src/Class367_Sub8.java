@@ -54,12 +54,12 @@ final class Class367_Sub8 extends Class367 {
                 for (int i_13_ = 0; i_11_ != 0 && ((npc.aClass182Array10308).length > i_13_); i_13_++) {
                     if ((0x1 & i_11_) != 0) {
                         if (i_10_ != -1) {
-                            Class17 class17 = Class10.seqTypeList.method835(i_10_, i + 7394);
-                            int i_14_ = class17.anInt248;
+                            AnimationType animationType = Class10.animTypeList.method835(i_10_, i + 7394);
+                            int i_14_ = animationType.replayMode;
                             Class182 class182 = (npc.aClass182Array10308[i_13_]);
                             if (class182 != null) {
                                 if (i_10_ != class182.anInt2454) {
-                                    if (Class10.seqTypeList.method835(class182.anInt2454, 7).anInt239 <= class17.anInt239) class182 = npc.aClass182Array10308[i_13_] = null;
+                                    if (Class10.animTypeList.method835(class182.anInt2454, 7).priority <= animationType.priority) class182 = npc.aClass182Array10308[i_13_] = null;
                                 } else if (i_14_ == 0) class182 = npc.aClass182Array10308[i_13_] = null;
                                 else if (i_14_ == 1) {
                                     class182.anInt2448 = i_12_;
@@ -67,7 +67,7 @@ final class Class367_Sub8 extends Class367 {
                                     class182.anInt2455 = 1;
                                     class182.anInt2451 = 0;
                                     class182.anInt2445 = 0;
-                                    if (!npc.aBoolean10309) Class287.method2178(npc, 0, class17, -75);
+                                    if (!npc.aBoolean10309) Class287.method2178(npc, 0, animationType, -75);
                                 } else if (i_14_ == 2) class182.anInt2445 = 0;
                             }
                             if (class182 == null) {
@@ -78,7 +78,7 @@ final class Class367_Sub8 extends Class367 {
                                 class182.anInt2445 = 0;
                                 class182.anInt2451 = 0;
                                 class182.anInt2448 = i_12_;
-                                if (!npc.aBoolean10309) Class287.method2178(npc, 0, class17, -19);
+                                if (!npc.aBoolean10309) Class287.method2178(npc, 0, animationType, -19);
                             }
                         } else npc.aClass182Array10308[i_13_] = null;
                     }

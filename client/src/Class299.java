@@ -56,7 +56,7 @@ abstract class Class299 {
         int i_14_ = -i_10_;
         int i_15_ = -1;
         int i_16_ = -1;
-        int[] is = Class17.anIntArrayArray255[i_6_];
+        int[] is = AnimationType.anIntArrayArray255[i_6_];
         int i_17_ = i_3_ + -i_10_;
         int i_18_ = i_10_ + i_3_;
         Class135_Sub2.method1156(-27, i_17_, is, -i + i_3_, i_8_);
@@ -77,15 +77,15 @@ abstract class Class299 {
                 i_11_--;
                 i_12_ -= i_11_ << 1;
                 if (i_10_ <= i_11_) {
-                    int[] is_19_ = Class17.anIntArrayArray255[i_11_ + i_6_];
-                    int[] is_20_ = Class17.anIntArrayArray255[i_6_ + -i_11_];
+                    int[] is_19_ = AnimationType.anIntArrayArray255[i_11_ + i_6_];
+                    int[] is_20_ = AnimationType.anIntArrayArray255[i_6_ + -i_11_];
                     int i_21_ = i_3_ - -i_9_;
                     int i_22_ = -i_9_ + i_3_;
                     Class135_Sub2.method1156(-27, i_21_, is_19_, i_22_, i_8_);
                     Class135_Sub2.method1156(-27, i_21_, is_20_, i_22_, i_8_);
                 } else {
-                    int[] is_23_ = Class17.anIntArrayArray255[i_6_ - -i_11_];
-                    int[] is_24_ = Class17.anIntArrayArray255[-i_11_ + i_6_];
+                    int[] is_23_ = AnimationType.anIntArrayArray255[i_6_ - -i_11_];
+                    int[] is_24_ = AnimationType.anIntArrayArray255[-i_11_ + i_6_];
                     int i_25_ = Class348_Sub49_Sub2.anIntArray9757[i_11_];
                     int i_26_ = i_9_ + i_3_;
                     int i_27_ = i_3_ - i_9_;
@@ -99,8 +99,8 @@ abstract class Class299 {
                     Class135_Sub2.method1156(-27, i_26_, is_24_, i_28_, i_8_);
                 }
             }
-            int[] is_30_ = Class17.anIntArrayArray255[i_6_ + i_9_];
-            int[] is_31_ = Class17.anIntArrayArray255[-i_9_ + i_6_];
+            int[] is_30_ = AnimationType.anIntArrayArray255[i_6_ + i_9_];
+            int[] is_31_ = AnimationType.anIntArrayArray255[-i_9_ + i_6_];
             int i_32_ = i_3_ - -i_11_;
             int i_33_ = i_3_ - i_11_;
             if (i_10_ > i_9_) {

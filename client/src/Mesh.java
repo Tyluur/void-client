@@ -3,6 +3,7 @@
  */
 
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Random;
 
 // Class124
@@ -69,7 +70,6 @@ final class Mesh {
             this.vertexY[i_1_] <<= i;
             this.vertexZ[i_1_] <<= i;
         }
-        if (i_0_ <= 39) rotate(40, -7, -80, -24);
         if (this.texSpaceCount > 0 && this.texSpaceScaleX != null) {
             for (int i_2_ = 0; i_2_ < this.texSpaceScaleX.length; i_2_++) {
                 this.texSpaceScaleX[i_2_] <<= i;
@@ -839,6 +839,13 @@ final class Mesh {
         this.texSpaceCount = 0;
         if (is[is.length + -1] == -1 && is[-2 + is.length] == -1) decodeNew(is);
         else decodeOld(is);
+        System.out.println(Arrays.toString(faceA));
+        System.out.println(Arrays.toString(faceB));
+        System.out.println(Arrays.toString(faceC));
+        System.out.println(Arrays.toString(vertexX));
+        System.out.println(Arrays.toString(vertexY));
+        System.out.println(Arrays.toString(vertexZ));
+        System.out.println("model decoded max=" + maxVertex + " - faces=" + faceCount + " " + this.faceA.length + ", vertices=" + vertexCount + " " + vertexX.length);
     }
 
     static final void method1108(byte i, Canvas canvas) {

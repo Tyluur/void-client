@@ -365,8 +365,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                             if (i_46_ == i_38_) {
                                 Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 55, i_38_);
                                 if (class368.aBoolean4487 && class368.anInt4503 != -1) {
-                                    Class17 class17 = (Class10.seqTypeList.method835(class368.anInt4503, 7));
-                                    int i_47_ = class17.anInt248;
+                                    AnimationType animationType = (Class10.animTypeList.method835(class368.anInt4503, 7));
+                                    int i_47_ = animationType.replayMode;
                                     if (i_47_ != 0 && i_47_ != 2) {
                                         if (i_47_ == 1) bool_45_ = true;
                                     } else bool_45_ = false;
@@ -375,9 +375,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                 Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 105, i_38_);
                                 Class368 class368_48_ = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 56, i_46_);
                                 if (class368.anInt4503 != -1 && (class368_48_.anInt4503 != -1)) {
-                                    Class17 class17 = (Class10.seqTypeList.method835(class368.anInt4503, 7));
-                                    Class17 class17_49_ = (Class10.seqTypeList.method835((class368_48_.anInt4503), 7));
-                                    if (class17.anInt239 < class17_49_.anInt239) bool_45_ = false;
+                                    AnimationType animationType = (Class10.animTypeList.method835(class368.anInt4503, 7));
+                                    AnimationType animationType_49_ = (Class10.animTypeList.method835((class368_48_.anInt4503), 7));
+                                    if (animationType.priority < animationType_49_.priority) bool_45_ = false;
                                 }
                             }
                         }
@@ -395,8 +395,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                 if (npc.anInt10291 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10211))) {
                                     int i_51_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 103, (npc.anInt10291)).anInt4503);
                                     if (i_51_ != -1) {
-                                        Class17 class17 = Class10.seqTypeList.method835(i_51_, 7);
-                                        if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) Class287.method2178(npc, 0, class17, -17);
+                                        AnimationType animationType = Class10.animTypeList.method835(i_51_, 7);
+                                        if (animationType != null && (animationType.frames) != null && !(npc.aBoolean10309)) Class287.method2178(npc, 0, animationType, -17);
                                     }
                                 }
                             } else {
@@ -412,8 +412,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                 if (npc.anInt10269 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10225))) {
                                     int i_50_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 87, (npc.anInt10269)).anInt4503);
                                     if (i_50_ != -1) {
-                                        Class17 class17 = Class10.seqTypeList.method835(i_50_, 7);
-                                        if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) Class287.method2178(npc, 0, class17, -44);
+                                        AnimationType animationType = Class10.animTypeList.method835(i_50_, 7);
+                                        if (animationType != null && (animationType.frames) != null && !(npc.aBoolean10309)) Class287.method2178(npc, 0, animationType, -44);
                                     }
                                 }
                             }
@@ -432,8 +432,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                             if (i_38_ == i_54_) {
                                 Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 111, i_38_);
                                 if (class368.aBoolean4487 && class368.anInt4503 != -1) {
-                                    Class17 class17 = (Class10.seqTypeList.method835(class368.anInt4503, 7));
-                                    int i_57_ = class17.anInt248;
+                                    AnimationType animationType = (Class10.animTypeList.method835(class368.anInt4503, 7));
+                                    int i_57_ = animationType.replayMode;
                                     if (i_57_ != 0 && i_57_ != 2) {
                                         if (i_57_ == 1) bool_53_ = true;
                                     } else bool_53_ = false;
@@ -442,9 +442,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                 Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 105, i_38_);
                                 Class368 class368_55_ = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 118, i_54_);
                                 if (class368.anInt4503 != -1 && class368_55_.anInt4503 != -1) {
-                                    Class17 class17 = (Class10.seqTypeList.method835(class368.anInt4503, 7));
-                                    Class17 class17_56_ = (Class10.seqTypeList.method835((class368_55_.anInt4503), 7));
-                                    if (class17.anInt239 < class17_56_.anInt239) bool_53_ = false;
+                                    AnimationType animationType = (Class10.animTypeList.method835(class368.anInt4503, 7));
+                                    AnimationType animationType_56_ = (Class10.animTypeList.method835((class368_55_.anInt4503), 7));
+                                    if (animationType.priority < animationType_56_.priority) bool_53_ = false;
                                 }
                             }
                         }
@@ -463,8 +463,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                 if ((player.anInt10291 != -1) && ((player.anInt10211) == Class367_Sub11.anInt7396)) {
                                     int i_58_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 45, (player.anInt10291)).anInt4503);
                                     if (i_58_ != -1) {
-                                        Class17 class17 = Class10.seqTypeList.method835(i_58_, 7);
-                                        if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) Class287.method2178(player, 0, class17, -120);
+                                        AnimationType animationType = Class10.animTypeList.method835(i_58_, 7);
+                                        if (animationType != null && (animationType.frames) != null && !(player.aBoolean10309)) Class287.method2178(player, 0, animationType, -120);
                                     }
                                 }
                             } else {
@@ -481,8 +481,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                 if ((player.anInt10269 != -1) && (Class367_Sub11.anInt7396 == (player.anInt10225))) {
                                     int i_59_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 81, (player.anInt10269)).anInt4503);
                                     if (i_59_ != -1) {
-                                        Class17 class17 = Class10.seqTypeList.method835(i_59_, 7);
-                                        if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) Class287.method2178(player, 0, class17, -101);
+                                        AnimationType animationType = Class10.animTypeList.method835(i_59_, 7);
+                                        if (animationType != null && (animationType.frames) != null && !(player.aBoolean10309)) Class287.method2178(player, 0, animationType, -101);
                                     }
                                 }
                             }
@@ -1578,7 +1578,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub3.aClass114_6584 == Class17.aClass114_250) {
+        if (Class348_Sub3.aClass114_6584 == AnimationType.aClass114_250) {
             Class309.anInt4816 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             Class348_Sub40_Sub23.anInt9313 = LoadingScreenRenderer.anInt3918;
             Class348_Sub3.aClass114_6584 = null;

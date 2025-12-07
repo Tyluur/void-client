@@ -1119,7 +1119,7 @@ class Class237 {
                     for (int i_281_ = 0; i_281_ < 8; i_281_++) {
                         for (int i_282_ = 0; i_282_ < 8; i_282_++) {
                             int i_283_ = i + Class295.method2220(0x7 & i_282_, i_277_, 0x7 & i_281_, (byte) 71);
-                            int i_284_ = (SeqTypeList.method837(i_281_ & 0x7, true, 0x7 & i_282_, i_277_) + i_275_);
+                            int i_284_ = (AnimTypeList.method837(i_281_ & 0x7, true, 0x7 & i_282_, i_277_) + i_275_);
                             if (i_283_ > 0 && i_283_ < -1 + this.width && i_284_ > 0 && this.height + -1 > i_284_) class361.method3501((byte) 124, i_284_, i_283_);
                         }
                     }
@@ -1158,7 +1158,7 @@ class Class237 {
                                     method1682(true, 0, i_292_, 0, packet, 0, 1115212770, i_293_, i_290_ + i_285_, i_291_ + i_286_, i_272_);
                                 } else {
                                     i_293_ = Class295.method2220(0x7 & i_291_, i_277_, i_290_ & 0x7, (byte) 71) + i;
-                                    i_292_ = (i_275_ + SeqTypeList.method837(0x7 & i_290_, true, 0x7 & i_291_, i_277_));
+                                    i_292_ = (i_275_ + AnimTypeList.method837(0x7 & i_290_, true, 0x7 & i_291_, i_277_));
                                     method1682(false, i_288_, i_292_, i_277_, packet, i_287_, 1115212770, i_293_, i_285_ - -i_290_, i_291_ + i_286_, i_272_);
                                 }
                                 if (i_290_ == 63 || i_291_ == 63) {

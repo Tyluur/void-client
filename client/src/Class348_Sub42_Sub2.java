@@ -113,7 +113,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
             for (int i_8_ = 0; i_8_ < i_7_; i_8_++)
                 GfxTypeList.aClass315Array3982[i_8_] = new Class315(Option_Sub24.aStringArrayArray6093[(Npc.anInt10503 - 2)][i_8_]);
         } else Class75_Sub1.anInt5652 = 1;
-        Class17.anIntArray256 = new int[Class75_Sub1.anInt5652 - 1];
+        AnimationType.anIntArray256 = new int[Class75_Sub1.anInt5652 - 1];
         Class345.anIntArray4271 = new int[Class75_Sub1.anInt5652 - 1];
     }
 

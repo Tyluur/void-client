@@ -105,7 +105,7 @@ final class Class188 {
         Class348_Sub40_Sub12.objectTypeList.method2010(5, i + -6);
         BillboardType.npcTypeList.method2076(5, true);
         Exception_Sub1.itemTypeList.method1937(5, false);
-        Class10.seqTypeList.method836(5, 93);
+        Class10.animTypeList.method836(5, 93);
         Class348_Sub40_Sub18.gfxTypeList.method2544(5, (byte) -41);
         Class229.varBitTypeList.method1442(5, (byte) 1);
         Class269.varPlayerTypeList.method1587(5, i ^ 0xeab);

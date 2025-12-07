@@ -220,8 +220,8 @@ final class Class348_Sub24 extends Node {
                                     class46.anInt795 = 0;
                                     class46.anInt841 = 0;
                                     class46.anInt730 = 1;
-                                    Class17 class17 = ((class46.anInt699 == -1) ? null : (Class10.seqTypeList.method835((class46.anInt699), 7)));
-                                    if (class17 != null) Class264.method2017((class46.anInt795), class17, 30);
+                                    AnimationType animationType = ((class46.anInt699 == -1) ? null : (Class10.animTypeList.method835((class46.anInt699), 7)));
+                                    if (animationType != null) Class264.method2017((class46.anInt795), animationType, 30);
                                     Class251.method1916(-9343, class46);
                                 }
                             } else if (i_16_ == 6) {

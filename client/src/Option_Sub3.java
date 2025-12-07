@@ -61,13 +61,13 @@ final class Option_Sub3 extends Option {
         int i_12_ = -i_9_ + i_5_;
         int i_13_ = i_9_ + i_6_;
         for (int i_14_ = i_6_; i_14_ < i_13_; i_14_++)
-            Class135_Sub2.method1156(-27, i_7_, Class17.anIntArrayArray255[i_14_], i_11_, i);
+            Class135_Sub2.method1156(-27, i_7_, AnimationType.anIntArrayArray255[i_14_], i_11_, i);
         int i_15_ = i_7_ + -i_9_;
         int i_16_ = i_9_ + i_11_;
         for (int i_17_ = i_5_; i_12_ < i_17_; i_17_--)
-            Class135_Sub2.method1156(i_10_ + 101, i_7_, Class17.anIntArrayArray255[i_17_], i_11_, i);
+            Class135_Sub2.method1156(i_10_ + 101, i_7_, AnimationType.anIntArrayArray255[i_17_], i_11_, i);
         for (int i_18_ = i_13_; i_18_ <= i_12_; i_18_++) {
-            int[] is = Class17.anIntArrayArray255[i_18_];
+            int[] is = AnimationType.anIntArrayArray255[i_18_];
             Class135_Sub2.method1156(-27, i_16_, is, i_11_, i);
             Class135_Sub2.method1156(-27, i_15_, is, i_16_, i_8_);
             Class135_Sub2.method1156(-27, i_7_, is, i_15_, i);

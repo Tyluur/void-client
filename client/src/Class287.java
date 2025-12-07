@@ -17,36 +17,36 @@ final class Class287 {
     static int anInt3694;
     static int anInt3695 = 0;
 
-    static final void method2178(Class318_Sub1 class318_sub1, int i, Class17 class17, int i_0_) {
+    static final void method2178(Class318_Sub1 class318_sub1, int i, AnimationType animationType, int i_0_) {
         try {
             anInt3694++;
-            if (Class147.anInt2021 < 50 && (class17 != null && class17.anIntArrayArray264 != null && (class17.anIntArrayArray264.length > i) && class17.anIntArrayArray264[i] != null)) {
-                int i_1_ = class17.anIntArrayArray264[i][0];
+            if (Class147.anInt2021 < 50 && (animationType != null && animationType.sounds != null && (animationType.sounds.length > i) && animationType.sounds[i] != null)) {
+                int i_1_ = animationType.sounds[i][0];
                 int i_2_ = i_1_ >> 8;
                 int i_3_ = (i_1_ & 0xf1) >> 5;
                 if (i_0_ > -13) anInt3695 = 0;
-                if (class17.anIntArrayArray264[i].length > 1) {
-                    int i_4_ = (int) ((double) (class17.anIntArrayArray264[i]).length * Math.random());
-                    if (i_4_ > 0) i_2_ = class17.anIntArrayArray264[i][i_4_];
+                if (animationType.sounds[i].length > 1) {
+                    int i_4_ = (int) ((double) (animationType.sounds[i]).length * Math.random());
+                    if (i_4_ > 0) i_2_ = animationType.sounds[i][i_4_];
                 }
                 int i_5_ = i_1_ & 0x1f;
                 int i_6_ = 256;
-                if (class17.anIntArray236 != null && class17.anIntArray265 != null) i_6_ = ((int) (Math.random() * (double) (-(class17.anIntArray236[i]) + (class17.anIntArray265[i]))) + class17.anIntArray236[i]);
-                int i_7_ = (class17.anIntArray253 == null ? 255 : class17.anIntArray253[i]);
+                if (animationType.primarySpeeds != null && animationType.secondarySpeeds != null) i_6_ = ((int) (Math.random() * (double) (-(animationType.primarySpeeds[i]) + (animationType.secondarySpeeds[i]))) + animationType.primarySpeeds[i]);
+                int i_7_ = (animationType.volumes == null ? 255 : animationType.volumes[i]);
                 if (i_5_ == 0) {
                     if (Class132.aPlayer_1907 == class318_sub1) {
-                        if (!class17.aBoolean268) Class348_Sub20.method2947(true, i_7_, i_2_, i_3_, 0, i_6_);
+                        if (!animationType.useSounds) Class348_Sub20.method2947(true, i_7_, i_2_, i_3_, 0, i_6_);
                         else Class279.method2090(i_3_, i_6_, false, (byte) -35, i_7_, 0, i_2_);
                     }
                 } else if (Class316.clientOptions.aClass239_Sub26_7234.method1838(-32350) != 0) {
                     int i_8_ = (class318_sub1.x + -256 >> 9);
                     int i_9_ = (class318_sub1.y - 256 >> 9);
                     int i_10_ = ((Class132.aPlayer_1907 != class318_sub1) ? ((class318_sub1.plane << 24) + ((i_8_ << 16) + (i_9_ << 8)) + i_5_) : 0);
-                    Class258_Sub2.aClass10Array8531[Class147.anInt2021++] = new Class10((class17.aBoolean268 ? (byte) 2 : (byte) 1), i_2_, i_3_, 0, i_7_, i_10_, i_6_, class318_sub1);
+                    Class258_Sub2.aClass10Array8531[Class147.anInt2021++] = new Class10((animationType.useSounds ? (byte) 2 : (byte) 1), i_2_, i_3_, 0, i_7_, i_10_, i_6_, class318_sub1);
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("vp.A(" + (class318_sub1 != null ? "{...}" : "null") + ',' + i + ',' + (class17 != null ? "{...}" : "null") + ',' + i_0_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("vp.A(" + (class318_sub1 != null ? "{...}" : "null") + ',' + i + ',' + (animationType != null ? "{...}" : "null") + ',' + i_0_ + ')'));
         }
     }
 

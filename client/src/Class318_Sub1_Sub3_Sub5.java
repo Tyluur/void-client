@@ -13,7 +13,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
     static int anInt10372;
     static int anInt10373;
     static int anInt10374;
-    private final Class17 aClass17_10375;
+    private final AnimationType aAnimationType_10375;
     static int anInt10376;
     static int anInt10377;
     private Class318_Sub10 aClass318_Sub10_10378;
@@ -250,19 +250,19 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
         anInt10386 = 0x3fff & 8192 + (int) (Math.atan2(aDouble10401, aDouble10414) * 2607.5945876176133);
         anInt10396 = (int) (Math.atan2(aDouble10409, aDouble10400) * 2607.5945876176133) & 0x3fff;
         if (i <= 33) method2379(-27);
-        if (aClass17_10375 != null) {
+        if (aAnimationType_10375 != null) {
             anInt10403 += i_21_;
-            while (aClass17_10375.anIntArray267[anInt10365] < anInt10403) {
-                anInt10403 -= aClass17_10375.anIntArray267[anInt10365];
+            while (aAnimationType_10375.durations[anInt10365] < anInt10403) {
+                anInt10403 -= aAnimationType_10375.durations[anInt10365];
                 anInt10365++;
-                if (anInt10365 >= aClass17_10375.anIntArray237.length) {
-                    anInt10365 -= aClass17_10375.anInt238;
-                    if (anInt10365 < 0 || anInt10365 >= (aClass17_10375.anIntArray237).length) anInt10365 = 0;
+                if (anInt10365 >= aAnimationType_10375.frames.length) {
+                    anInt10365 -= aAnimationType_10375.loopOffset;
+                    if (anInt10365 < 0 || anInt10365 >= (aAnimationType_10375.frames).length) anInt10365 = 0;
                 }
                 anInt10369 = anInt10365 - -1;
-                if (aClass17_10375.anIntArray237.length <= anInt10369) {
-                    anInt10369 -= aClass17_10375.anInt238;
-                    if (anInt10369 < 0 || anInt10369 >= aClass17_10375.anIntArray237.length) anInt10369 = -1;
+                if (aAnimationType_10375.frames.length <= anInt10369) {
+                    anInt10369 -= aAnimationType_10375.loopOffset;
+                    if (anInt10369 < 0 || anInt10369 >= aAnimationType_10375.frames.length) anInt10369 = -1;
                 }
             }
         }
@@ -295,8 +295,8 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
         this.anInt10411 = i_27_;
         anInt10387 = i_31_;
         int i_35_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 72, anInt10391).anInt4503);
-        if (i_35_ != -1) aClass17_10375 = Class10.seqTypeList.method835(i_35_, 7);
-        else aClass17_10375 = null;
+        if (i_35_ != -1) aAnimationType_10375 = Class10.animTypeList.method835(i_35_, 7);
+        else aAnimationType_10375 = null;
     }
 
     final boolean method2376(int i) {
@@ -316,7 +316,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
         anInt10377++;
         Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 75, anInt10391);
         if (i_36_ < 126) aClass318_Sub10_10378 = null;
-        return class368.method3562(anInt10365, var_toolkit, anInt10403, i, anInt10369, Class10.seqTypeList, (byte) 121);
+        return class368.method3562(anInt10365, var_toolkit, anInt10403, i, anInt10369, Class10.animTypeList, (byte) 121);
     }
 
     static final void method2477(String string, String string_37_, byte i, int i_38_, String string_39_, String string_40_, int i_41_, int i_42_, String string_43_) {

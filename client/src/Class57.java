@@ -5,7 +5,7 @@
 final class Class57 {
     int anInt1046;
     int anInt1047;
-    static Class17[] aClass17Array1048 = new Class17[14];
+    static AnimationType[] aAnimationTypeArray1048 = new AnimationType[14];
     static int anInt1049;
     static Class163 aClass163_1050;
     static Class251 aClass251_1051 = new Class251();
@@ -22,7 +22,7 @@ final class Class57 {
     }
 
     public static void method530(int i) {
-        aClass17Array1048 = null;
+        aAnimationTypeArray1048 = null;
         aClass227_1055 = null;
         aClass163_1050 = null;
         aClass251_1051 = null;

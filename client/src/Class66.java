@@ -2878,8 +2878,8 @@ final class Class66 {
                     class46.anInt795 = 0;
                     class46.anInt730 = 1;
                     class46.anInt841 = 0;
-                    Class17 class17 = (class46.anInt699 == -1 ? null : Class10.seqTypeList.method835(class46.anInt699, 7));
-                    if (class17 != null) Class264.method2017(class46.anInt795, class17, 46);
+                    AnimationType animationType = (class46.anInt699 == -1 ? null : Class10.animTypeList.method835(class46.anInt699, 7));
+                    if (animationType != null) Class264.method2017(class46.anInt795, animationType, 46);
                     Class251.method1916(-9343, class46);
                 }
                 if (class46.anInt704 == -1) Class64_Sub3.method687((byte) -117, class46.anInt830);

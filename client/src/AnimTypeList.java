@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class SeqTypeList {
+// SeqTypeList
+final class AnimTypeList {
     static int anInt1483;
     static int anInt1484;
     static int anInt1485;
@@ -24,27 +25,27 @@ final class SeqTypeList {
         }
     }
 
-    final Class17 method835(int i, int i_0_) {
+    final AnimationType method835(int i, int i_0_) {
         anInt1483++;
-        Class17 class17;
+        AnimationType animationType;
         synchronized (aClass60_1487) {
-            class17 = (Class17) aClass60_1487.method583(i, i_0_ + -68);
+            animationType = (AnimationType) aClass60_1487.method583(i, i_0_ + -68);
         }
         if (i_0_ != 7) aClass60_1491 = null;
-        if (class17 != null) return class17;
+        if (animationType != null) return animationType;
         byte[] is;
         synchronized (aIndex_1488) {
             is = aIndex_1488.method410(-1860, Class15.method256(i, (byte) 125), Class52.method494(i_0_ ^ 0x55, i));
         }
-        class17 = new Class17();
-        class17.anInt269 = i;
-        class17.aSeqTypeList_251 = this;
-        if (is != null) class17.method267(new Packet(is), false);
-        class17.method270((byte) 124);
+        animationType = new AnimationType();
+        animationType.anInt269 = i;
+        animationType.aAnimTypeList_251 = this;
+        if (is != null) animationType.method267(new Packet(is), false);
+        animationType.method270((byte) 124);
         synchronized (aClass60_1487) {
-            aClass60_1487.method582(class17, i, (byte) -126);
+            aClass60_1487.method582(animationType, i, (byte) -126);
         }
-        return class17;
+        return animationType;
     }
 
     final void method836(int i, int i_1_) {
@@ -95,7 +96,7 @@ final class SeqTypeList {
     }
 
     // Class87
-    SeqTypeList(Class230 class230, int i, Index index, Index index_6_, Index index_7_) {
+    AnimTypeList(Class230 class230, int i, Index index, Index index_6_, Index index_7_) {
         try {
             aIndex_1488 = index;
             if (aIndex_1488 != null) {

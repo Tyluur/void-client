@@ -146,7 +146,7 @@ final class Class258_Sub1 extends Class258 {
             Class9.aToolkit171.K(Class348_Sub40_Sub10.anIntArray9183);
             int i_43_ = ((Class348_Sub40_Sub10.anIntArray9183[2] - Class348_Sub40_Sub10.anIntArray9183[0]) / Class75_Sub1.anInt5652);
             for (int i_44_ = 0; i_44_ < Class75_Sub1.anInt5652 - 1; i_44_++)
-                Class17.anIntArray256[i_44_] = i_43_ * (i_44_ + 1) + Class345.anIntArray4271[i_44_];
+                AnimationType.anIntArray256[i_44_] = i_43_ * (i_44_ + 1) + Class345.anIntArray4271[i_44_];
             for (int i_45_ = 0; i_45_ < Class348_Sub40_Sub34.aClass293Array9432.length; i_45_++)
                 Class348_Sub40_Sub34.aClass293Array9432[i_45_].method2209();
         }
@@ -173,8 +173,8 @@ final class Class258_Sub1 extends Class258 {
                 Class115.aBooleanArrayArrayArray1751[i_48_] = Class5_Sub2.aBooleanArrayArrayArray8361[i_48_];
             if (Npc.anInt10503 == 2) {
                 if (Class146.aLongArray2013[0] < Class146.aLongArray2013[1]) {
-                    if (Class17.anIntArray256[0] + Class345.anIntArray4271[0] > Class348_Sub40_Sub10.anIntArray9183[0]) Class345.anIntArray4271[0]++;
-                } else if ((Class146.aLongArray2013[0] > Class146.aLongArray2013[1]) && ((Class17.anIntArray256[0] + Class345.anIntArray4271[0]) < Class348_Sub40_Sub10.anIntArray9183[2])) Class345.anIntArray4271[0]--;
+                    if (AnimationType.anIntArray256[0] + Class345.anIntArray4271[0] > Class348_Sub40_Sub10.anIntArray9183[0]) Class345.anIntArray4271[0]++;
+                } else if ((Class146.aLongArray2013[0] > Class146.aLongArray2013[1]) && ((AnimationType.anIntArray256[0] + Class345.anIntArray4271[0]) < Class348_Sub40_Sub10.anIntArray9183[2])) Class345.anIntArray4271[0]--;
             }
         }
         if (!Class348_Sub40_Sub17.aBoolean9242) {

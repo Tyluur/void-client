@@ -51,7 +51,7 @@ final class LoadingScreenOpFactory {
     static final void loadFonts(Index index, int i) {
         anInt1634++;
         LoadState.anInt1044 = index.method417("p11_full", i);
-        Class17.anInt235 = index.method417("p12_full", i);
+        AnimationType.anInt235 = index.method417("p12_full", i);
         Class291.anInt3736 = index.method417("b12_full", 0);
     }
 

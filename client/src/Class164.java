@@ -171,7 +171,7 @@ final class Class164 {
             BillboardType.npcTypeList = new NPCTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, true, Class216.NPCS, aa_Sub3.MODELS);
             Exception_Sub1.itemTypeList = new ItemTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, true, Class101_Sub3.paramTypeList, Class174.ITEMS, aa_Sub3.MODELS);
             Class348_Sub23_Sub2.questTypeList = new QuestTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
-            Class10.seqTypeList = new SeqTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, r_Sub2.ANIMATIONS, Class348_Sub29.ANIMATION_SKELETONS, Class186.ANIMATION_SKINS);
+            Class10.animTypeList = new AnimTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, r_Sub2.ANIMATIONS, Class348_Sub29.ANIMATION_SKELETONS, Class186.ANIMATION_SKINS);
             Class30.skyBoxTypeList = new SkyBoxTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
             Class123.skyBoxSphereTypeList = new SkyBoxSphereTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class95.CONFIGS);
             Class348_Sub40_Sub18.gfxTypeList = new GfxTypeList(Class348_Sub42_Sub8_Sub2.modeGame, Class348_Sub33.language, Class78.GRAPHICS, aa_Sub3.MODELS);

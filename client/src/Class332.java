@@ -23,10 +23,10 @@ final class Class332 {
         if (i_1_ >= -6) aClass60_4139 = null;
         if (i < i_0_) {
             for (int i_4_ = i; i_0_ > i_4_; i_4_++)
-                Class17.anIntArrayArray255[i_4_][i_2_] = i_3_;
+                AnimationType.anIntArrayArray255[i_4_][i_2_] = i_3_;
         } else {
             for (int i_5_ = i_0_; i > i_5_; i_5_++)
-                Class17.anIntArrayArray255[i_5_][i_2_] = i_3_;
+                AnimationType.anIntArrayArray255[i_5_][i_2_] = i_3_;
         }
     }
 

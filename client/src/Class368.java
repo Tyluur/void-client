@@ -32,13 +32,13 @@ final class Class368 {
     private int anInt4512;
     GfxTypeList aGfxTypeList_4513;
 
-    final Model method3558(int i, int i_0_, Toolkit var_toolkit, int i_1_, int i_2_, SeqTypeList seqTypeList, int i_3_) {
+    final Model method3558(int i, int i_0_, Toolkit var_toolkit, int i_1_, int i_2_, AnimTypeList animTypeList, int i_3_) {
         try {
             if (i_2_ != 3172) aShortArray4504 = null;
             anInt4505++;
-            return method3566(var_toolkit, i_3_, i_1_, null, 0, seqTypeList, i, (byte) 5, null, 0, false, 0, (byte) -68, i_0_);
+            return method3566(var_toolkit, i_3_, i_1_, null, 0, animTypeList, i, (byte) 5, null, 0, false, 0, (byte) -68, i_0_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_3_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + (animTypeList != null ? "{...}" : "null") + ',' + i_3_ + ')'));
         }
     }
 
@@ -69,13 +69,13 @@ final class Class368 {
         return class46.aStringArray833[i];
     }
 
-    final Model method3562(int i, Toolkit var_toolkit, int i_5_, int i_6_, int i_7_, SeqTypeList seqTypeList, byte i_8_) {
+    final Model method3562(int i, Toolkit var_toolkit, int i_5_, int i_6_, int i_7_, AnimTypeList animTypeList, byte i_8_) {
         try {
             if (i_8_ <= 24) return null;
             anInt4511++;
-            return method3566(var_toolkit, i, i_6_, null, 0, seqTypeList, i_5_, (byte) 2, null, 0, false, 0, (byte) -68, i_7_);
+            return method3566(var_toolkit, i, i_6_, null, 0, animTypeList, i_5_, (byte) 2, null, 0, false, 0, (byte) -68, i_7_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.A(" + i + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_8_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.A(" + i + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (animTypeList != null ? "{...}" : "null") + ',' + i_8_ + ')'));
         }
     }
 
@@ -138,13 +138,13 @@ final class Class368 {
         }
     }
 
-    final Model method3565(int i, int i_16_, int i_17_, int i_18_, boolean bool, Toolkit var_toolkit, int i_19_, int i_20_, int i_21_, SeqTypeList seqTypeList, Ground var_ground, int i_22_, Ground var_ground_23_) {
+    final Model method3565(int i, int i_16_, int i_17_, int i_18_, boolean bool, Toolkit var_toolkit, int i_19_, int i_20_, int i_21_, AnimTypeList animTypeList, Ground var_ground, int i_22_, Ground var_ground_23_) {
         try {
             anInt4496++;
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, (byte) 54, null, -17, true, -42, (byte) 95, -81);
-            return method3566(var_toolkit, i_16_, i_18_, var_ground, i_22_, seqTypeList, i, (byte) 2, var_ground_23_, i_17_, bool, i_20_, (byte) -68, i_19_);
+            return method3566(var_toolkit, i_16_, i_18_, var_ground, i_22_, animTypeList, i, (byte) 2, var_ground_23_, i_17_, bool, i_20_, (byte) -68, i_19_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + (var_ground != null ? "{...}" : "null") + ',' + i_22_ + ',' + (var_ground_23_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (animTypeList != null ? "{...}" : "null") + ',' + (var_ground != null ? "{...}" : "null") + ',' + i_22_ + ',' + (var_ground_23_ != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -158,13 +158,13 @@ final class Class368 {
         anInt4512 = 0;
     }
 
-    private final Model method3566(Toolkit var_toolkit, int i, int i_24_, Ground var_ground, int i_25_, SeqTypeList seqTypeList, int i_26_, byte i_27_, Ground var_ground_28_, int i_29_, boolean bool, int i_30_, byte i_31_, int i_32_) {
+    private final Model method3566(Toolkit var_toolkit, int i, int i_24_, Ground var_ground, int i_25_, AnimTypeList animTypeList, int i_26_, byte i_27_, Ground var_ground_28_, int i_29_, boolean bool, int i_30_, byte i_31_, int i_32_) {
         try {
             anInt4491++;
             int i_33_ = i_24_;
-            Class17 class17 = (this.anInt4503 != -1 && i != -1 ? seqTypeList.method835(this.anInt4503, 7) : null);
+            AnimationType animationType = (this.anInt4503 != -1 && i != -1 ? animTypeList.method835(this.anInt4503, 7) : null);
             bool = bool & this.aByte4488 != 0;
-            if (class17 != null) i_33_ |= class17.method263(i_32_, 110, i, false);
+            if (animationType != null) i_33_ |= animationType.method263(i_32_, 110, i, false);
             if (bool) i_33_ = i_33_ | (this.aByte4488 != 3 ? 2 : 7);
             if (anInt4492 != 128) i_33_ |= 0x2;
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ |= 0x5;
@@ -195,7 +195,7 @@ final class Class368 {
                 }
             }
             if (i_31_ != -68) return null;
-            Model model_37_ = (class17 != null ? class17.method266(model, 0, i_32_, i_27_, i, i_26_, 663780816, i_33_) : model.method614(i_27_, i_33_, true));
+            Model model_37_ = (animationType != null ? animationType.method266(model, 0, i_32_, i_27_, i, i_26_, 663780816, i_33_) : model.method614(i_27_, i_33_, true));
             if (anInt4498 != 128 || anInt4492 != 128) model_37_.O(anInt4498, anInt4492, anInt4498);
             if (anInt4508 != 0) {
                 if (anInt4508 == 90) model_37_.a(4096);
@@ -206,7 +206,7 @@ final class Class368 {
             model_37_.s(i_24_);
             return model_37_;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fk.I(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_24_ + ',' + (var_ground != null ? "{...}" : "null") + ',' + i_25_ + ',' + (seqTypeList != null ? "{...}" : "null") + ',' + i_26_ + ',' + i_27_ + ',' + (var_ground_28_ != null ? "{...}" : "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fk.I(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_24_ + ',' + (var_ground != null ? "{...}" : "null") + ',' + i_25_ + ',' + (animTypeList != null ? "{...}" : "null") + ',' + i_26_ + ',' + i_27_ + ',' + (var_ground_28_ != null ? "{...}" : "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'));
         }
     }
 }

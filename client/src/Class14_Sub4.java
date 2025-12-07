@@ -113,7 +113,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         int i_17_ = i_15_;
         int i_18_ = -i_15_;
         int i_19_ = -1;
-        Class135_Sub2.method1156(i_13_ + 621, i_12_ + i_15_, Class17.anIntArrayArray255[i], i_12_ + -i_15_, i_14_);
+        Class135_Sub2.method1156(i_13_ + 621, i_12_ + i_15_, AnimationType.anIntArrayArray255[i], i_12_ + -i_15_, i_14_);
         while (i_16_ < i_17_) {
             i_19_ += 2;
             i_18_ += i_19_;
@@ -121,8 +121,8 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
             if (i_18_ >= 0) {
                 i_17_--;
                 i_18_ -= i_17_ << 1;
-                int[] is = Class17.anIntArrayArray255[i - -i_17_];
-                int[] is_20_ = Class17.anIntArrayArray255[i + -i_17_];
+                int[] is = AnimationType.anIntArrayArray255[i - -i_17_];
+                int[] is_20_ = AnimationType.anIntArrayArray255[i + -i_17_];
                 int i_21_ = i_16_ + i_12_;
                 int i_22_ = i_12_ + -i_16_;
                 Class135_Sub2.method1156(-27, i_21_, is, i_22_, i_14_);
@@ -130,8 +130,8 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
             }
             int i_23_ = i_17_ + i_12_;
             int i_24_ = i_12_ - i_17_;
-            int[] is = Class17.anIntArrayArray255[i_16_ + i];
-            int[] is_25_ = Class17.anIntArrayArray255[-i_16_ + i];
+            int[] is = AnimationType.anIntArrayArray255[i_16_ + i];
+            int[] is_25_ = AnimationType.anIntArrayArray255[-i_16_ + i];
             Class135_Sub2.method1156(i_13_ + 621, i_23_, is, i_24_, i_14_);
             Class135_Sub2.method1156(-27, i_23_, is_25_, i_24_, i_14_);
         }

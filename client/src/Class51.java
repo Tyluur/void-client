@@ -531,14 +531,14 @@ final class Class51 {
         if (i_38_ >= -93) aByteArray885 = null;
     }
 
-    final Model method483(int i, int i_63_, int i_64_, int i_65_, Toolkit var_toolkit, int i_66_, int i_67_, byte i_68_, Ground var_ground, int i_69_, int i_70_, int i_71_, Class17 class17, Ground var_ground_72_) {
+    final Model method483(int i, int i_63_, int i_64_, int i_65_, Toolkit var_toolkit, int i_66_, int i_67_, byte i_68_, Ground var_ground, int i_69_, int i_70_, int i_71_, AnimationType animationType, Ground var_ground_72_) {
         try {
             if (Class104.method955(22311, i_64_)) i_64_ = 4;
             anInt910++;
             long l = (this.anInt941 << 10) + ((i_64_ << 3) - -i_66_);
             int i_73_ = i_67_;
             l |= var_toolkit.anInt4567 << 29;
-            if (class17 != null) i_67_ |= class17.method263(i, 123, i_70_, false);
+            if (animationType != null) i_67_ |= animationType.method263(i, 123, i_70_, false);
             if (aByte886 != 3) {
                 if (aByte886 != 0 || anInt954 != 0) i_67_ |= 0x2;
                 if (anInt893 != 0) i_67_ |= 0x1;
@@ -559,8 +559,8 @@ final class Class51 {
             }
             boolean bool = false;
             if (i_68_ <= 38) return null;
-            if (class17 != null) {
-                model = class17.method266(model, 0x3 & i_66_, i, (byte) 1, i_70_, i_63_, 663780816, i_67_);
+            if (animationType != null) {
+                model = animationType.method266(model, 0x3 & i_66_, i, (byte) 1, i_70_, i_63_, 663780816, i_67_);
                 bool = true;
             }
             if (i_64_ == 10 && i_66_ > 3) {
@@ -587,7 +587,7 @@ final class Class51 {
             if (bool) model.s(i_73_);
             return model;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (var_ground != null ? "{...}" : "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (class17 != null ? "{...}" : "null") + ',' + (var_ground_72_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (var_ground != null ? "{...}" : "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (animationType != null ? "{...}" : "null") + ',' + (var_ground_72_ != null ? "{...}" : "null") + ')'));
         }
     }
 

@@ -9,7 +9,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
     static int anInt10329;
     static Class338[] aClass338Array10330;
     private int anInt10331;
-    private Class17 aClass17_10332;
+    private AnimationType aAnimationType_10332;
     static int anInt10333;
     private int anInt10334;
     private int anInt10335 = 0;
@@ -98,7 +98,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
 
     final void method2392(boolean bool) {
         anInt10343++;
-        if (bool != true) aClass17_10332 = null;
+        if (bool != true) aAnimationType_10332 = null;
         throw new IllegalStateException();
     }
 
@@ -206,8 +206,8 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 122, i);
         Ground var_ground = Class348_Sub1_Sub1.aGroundArray8801[this.plane];
         Ground var_ground_28_ = (this.aByte6376 < 3 ? (Class348_Sub1_Sub1.aGroundArray8801[1 + this.aByte6376]) : null);
-        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_toolkit, anInt10350, this.x, -129, Class10.seqTypeList, var_ground_28_, this.y, var_ground);
-        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_toolkit, -1, this.x, -129, Class10.seqTypeList, var_ground_28_, this.y, var_ground);
+        if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_toolkit, anInt10350, this.x, -129, Class10.animTypeList, var_ground_28_, this.y, var_ground);
+        return class368.method3565(0, -1, this.anInt6382, i_26_, true, var_toolkit, -1, this.x, -129, Class10.animTypeList, var_ground_28_, this.y, var_ground);
     }
 
     final void method2466(boolean bool) {
@@ -311,10 +311,10 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         int i_46_ = class368.anInt4503;
         if (i_46_ == -1) this.aBoolean10345 = true;
         else {
-            aClass17_10332 = Class10.seqTypeList.method835(i_46_, 7);
+            aAnimationType_10332 = Class10.animTypeList.method835(i_46_, 7);
             this.aBoolean10345 = false;
         }
-        if (this.anInt10349 == i_35_) Class287.method2178(this, anInt10335, aClass17_10332, -99);
+        if (this.anInt10349 == i_35_) Class287.method2178(this, anInt10335, aAnimationType_10332, -99);
     }
 
     final void method2470(int i, byte i_47_) {
@@ -322,15 +322,15 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
             anInt10333++;
             if (!this.aBoolean10345) {
                 anInt10339 += i;
-                while (aClass17_10332.anIntArray267[anInt10335] < anInt10339) {
-                    anInt10339 -= (aClass17_10332.anIntArray267[anInt10335]);
+                while (aAnimationType_10332.durations[anInt10335] < anInt10339) {
+                    anInt10339 -= (aAnimationType_10332.durations[anInt10335]);
                     anInt10335++;
-                    if (aClass17_10332.anIntArray237.length <= anInt10335) {
+                    if (aAnimationType_10332.frames.length <= anInt10335) {
                         this.aBoolean10345 = true;
                         break;
                     }
                 }
-                if (!this.aBoolean10345) Class287.method2178(this, anInt10335, aClass17_10332, -59);
+                if (!this.aBoolean10345) Class287.method2178(this, anInt10335, aAnimationType_10332, -59);
             }
         }
     }

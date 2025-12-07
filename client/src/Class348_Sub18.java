@@ -59,7 +59,7 @@ final class Class348_Sub18 extends Node {
         Class348_Sub40_Sub12.objectTypeList.method2012(-23828);
         BillboardType.npcTypeList.method2078(-6080);
         Exception_Sub1.itemTypeList.method1939(-110);
-        Class10.seqTypeList.method834((byte) -116);
+        Class10.animTypeList.method834((byte) -116);
         Class348_Sub40_Sub18.gfxTypeList.method2546(60);
         Class229.varBitTypeList.method1445(64);
         Class269.varPlayerTypeList.method1589((byte) 127);
@@ -174,8 +174,8 @@ final class Class348_Sub18 extends Node {
                 class46.anInt841 = 0;
                 class46.anInt730 = Class132.aPlayer_1907.anInt10312;
                 class46.anInt795 = Class132.aPlayer_1907.anInt10245;
-                Class17 class17 = (class46.anInt699 != -1 ? Class10.seqTypeList.method835(class46.anInt699, 7) : null);
-                if (class17 != null) Class264.method2017(class46.anInt795, class17, 50);
+                AnimationType animationType = (class46.anInt699 != -1 ? Class10.animTypeList.method835(class46.anInt699, 7) : null);
+                if (animationType != null) Class264.method2017(class46.anInt795, animationType, 50);
             }
         } else {
             int i_10_ = -14 % ((27 - i) / 59);

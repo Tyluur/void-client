@@ -22,7 +22,7 @@ final class Class10 {
     int anInt188;
     Class348_Sub19_Sub1 aClass348_Sub19_Sub1_189;
     static int anInt190;
-    static SeqTypeList seqTypeList; // aClass87_191
+    static AnimTypeList animTypeList; // aClass87_191
     Class348_Sub10 aClass348_Sub10_192;
 
     static final String method217(byte i) {
@@ -37,7 +37,7 @@ final class Class10 {
         anIntArray187 = null;
         HSL_TO_RGB = null;
         aClass230_186 = null;
-        seqTypeList = null;
+        animTypeList = null;
         anIntArrayArray174 = null;
     }
 

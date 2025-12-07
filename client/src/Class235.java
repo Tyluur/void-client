@@ -10,7 +10,7 @@ final class Class235 {
     private int anInt3054;
     private int anInt3055;
     private int anInt3056;
-    private Class17 aClass17_3057;
+    private AnimationType aAnimationType_3057;
     static int anInt3058;
     private Model aModel_3059;
     private int anInt3060 = 0;
@@ -78,7 +78,7 @@ final class Class235 {
                         bool = class51.aBoolean924;
                     }
                 } else if (class51_2_ != null && class51_2_.anIntArray943 != null) {
-                    if (aClass17_3057 != null && class51_2_.method481((byte) 105, (aClass17_3057.anInt269))) return;
+                    if (aAnimationType_3057 != null && class51_2_.method481((byte) 105, (aAnimationType_3057.anInt269))) return;
                     i_1_ = class51_2_.method489(i ^ ~0x45);
                     if (anInt3053 != class51_2_.anInt941) bool = class51_2_.aBoolean924;
                 } else if (class51_2_ != null && (class51_2_.anInt868 != -1) && (anInt3053 != class51_2_.anInt941)) {
@@ -86,28 +86,28 @@ final class Class235 {
                     i_1_ = class51_2_.anInt868;
                 }
             } else {
-                if (aClass17_3057 != null && class51.method481((byte) 73, aClass17_3057.anInt269)) return;
+                if (aAnimationType_3057 != null && class51.method481((byte) 73, aAnimationType_3057.anInt269)) return;
                 i_1_ = class51.method489(i + -70);
                 if (anInt3053 != class51.anInt941) bool = class51.aBoolean924;
             }
         }
-        if (i_1_ == -1) aClass17_3057 = null;
+        if (i_1_ == -1) aAnimationType_3057 = null;
         else {
             aModel_3059 = null;
-            if (aClass17_3057 != null && i_1_ == aClass17_3057.anInt269) {
-                if (aClass17_3057.anInt248 == 0) return;
-            } else aClass17_3057 = Class10.seqTypeList.method835(i_1_, i + -62);
-            if (aClass17_3057.anIntArray237 == null) aClass17_3057 = null;
+            if (aAnimationType_3057 != null && i_1_ == aAnimationType_3057.anInt269) {
+                if (aAnimationType_3057.replayMode == 0) return;
+            } else aAnimationType_3057 = Class10.animTypeList.method835(i_1_, i + -62);
+            if (aAnimationType_3057.frames == null) aAnimationType_3057 = null;
             else {
                 if (bool) {
-                    anInt3084 = (int) ((double) (aClass17_3057.anIntArray237).length * Math.random());
-                    anInt3054 = 1 + (int) ((double) (aClass17_3057.anIntArray267[anInt3084]) * Math.random());
+                    anInt3084 = (int) ((double) (aAnimationType_3057.frames).length * Math.random());
+                    anInt3054 = 1 + (int) ((double) (aAnimationType_3057.durations[anInt3084]) * Math.random());
                 } else {
                     anInt3084 = 0;
                     anInt3054 = 1;
                 }
                 anInt3083 = anInt3084 - -1;
-                if (anInt3083 < 0 || anInt3083 >= aClass17_3057.anIntArray237.length) anInt3083 = -1;
+                if (anInt3083 < 0 || anInt3083 >= aAnimationType_3057.frames.length) anInt3083 = -1;
                 anInt3074 = -anInt3054 + Class367_Sub11.anInt7396;
             }
         }
@@ -137,7 +137,7 @@ final class Class235 {
         method1672(aClass318_Sub1_3051, true);
         if (bool_3_) {
             bool_3_ = bool_3_ & (aBoolean3065 & Class316.clientOptions.aClass239_Sub7_7238.method1748(-32350) != 0);
-            bool_3_ = (bool_3_ & (class51.anInt941 != anInt3056 || (aClass17_3057 != null && Class316.clientOptions.aClass239_Sub7_7238.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aClass17_3057.aBoolean254 || Class28.aBoolean5002) && (anInt3083 != anInt3084))))));
+            bool_3_ = (bool_3_ & (class51.anInt941 != anInt3056 || (aAnimationType_3057 != null && Class316.clientOptions.aClass239_Sub7_7238.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aAnimationType_3057.aBoolean254 || Class28.aBoolean5002) && (anInt3083 != anInt3084))))));
         }
         if (bool && !bool_3_) {
             anInt3053 = class51.anInt941;
@@ -154,7 +154,7 @@ final class Class235 {
         if (!aBoolean3069) var_ground_5_ = aByte3067 >= 3 ? null : aa_Sub1.aGroundArray5191[1 + aByte3067];
         else var_ground_5_ = Class348_Sub1_Sub1.aGroundArray8801[0];
         Model model = null;
-        if (aClass17_3057 == null) {
+        if (aAnimationType_3057 == null) {
             if (aModel_3059 == null || i_4_ != (i_4_ & aModel_3059.ua()) || (anInt3053 != class51.anInt941)) {
                 if (aModel_3059 != null) i_4_ |= aModel_3059.ua();
                 Class2 class2 = (class51.method476(var_toolkit, var_ground_5_, (this.anInt3079 != 11 ? this.anInt3079 : 10), i_4_, aClass318_Sub1_3051.x, bool_3_, var_ground, var_ground.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (byte) -114), aClass318_Sub1_3051.y, (this.anInt3079 == 11 ? 4 + this.anInt3052 : this.anInt3052), 128));
@@ -179,7 +179,7 @@ final class Class235 {
             } else model = aModel_3059;
         } else {
             if (bool_3_) i_4_ |= 0x40000;
-            model = (class51.method483(anInt3083, anInt3054, (this.anInt3079 == 11 ? 10 : this.anInt3079), var_ground.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (byte) -2), var_toolkit, (this.anInt3079 == 11 ? this.anInt3052 + 4 : this.anInt3052), i_4_, (byte) 76, var_ground_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aClass17_3057, var_ground));
+            model = (class51.method483(anInt3083, anInt3054, (this.anInt3079 == 11 ? 10 : this.anInt3079), var_ground.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (byte) -2), var_toolkit, (this.anInt3079 == 11 ? this.anInt3052 + 4 : this.anInt3052), i_4_, (byte) 76, var_ground_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aAnimationType_3057, var_ground));
             if (model == null) {
                 anInt3055 = 0;
                 aBooleanArray3072 = null;
@@ -250,44 +250,44 @@ final class Class235 {
         int i;
         while_76_:
         for (; ; ) {
-            if (aClass17_3057 == null) {
+            if (aAnimationType_3057 == null) {
                 if (aBoolean3064) return;
                 method1666((byte) 69, -1);
-                if (aClass17_3057 == null) return;
+                if (aAnimationType_3057 == null) return;
             }
             i = -anInt3074 + Class367_Sub11.anInt7396;
-            if (i > 100 && aClass17_3057.anInt238 > 0) {
+            if (i > 100 && aAnimationType_3057.loopOffset > 0) {
                 int i_12_;
-                for (i_12_ = (-aClass17_3057.anInt238 + aClass17_3057.anIntArray237.length); (anInt3084 < i_12_ && (aClass17_3057.anIntArray267[anInt3084] < i)); anInt3084++)
-                    i -= aClass17_3057.anIntArray267[anInt3084];
+                for (i_12_ = (-aAnimationType_3057.loopOffset + aAnimationType_3057.frames.length); (anInt3084 < i_12_ && (aAnimationType_3057.durations[anInt3084] < i)); anInt3084++)
+                    i -= aAnimationType_3057.durations[anInt3084];
                 if (i_12_ <= anInt3084) {
                     int i_13_ = 0;
-                    for (int i_14_ = i_12_; (aClass17_3057.anIntArray237.length > i_14_); i_14_++)
-                        i_13_ += aClass17_3057.anIntArray267[i_14_];
+                    for (int i_14_ = i_12_; (aAnimationType_3057.frames.length > i_14_); i_14_++)
+                        i_13_ += aAnimationType_3057.durations[i_14_];
                     i %= i_13_;
                 }
                 anInt3083 = 1 + anInt3084;
-                if (anInt3083 >= aClass17_3057.anIntArray237.length) {
-                    anInt3083 -= aClass17_3057.anInt238;
-                    if (anInt3083 < 0 || anInt3083 >= aClass17_3057.anIntArray237.length) anInt3083 = -1;
+                if (anInt3083 >= aAnimationType_3057.frames.length) {
+                    anInt3083 -= aAnimationType_3057.loopOffset;
+                    if (anInt3083 < 0 || anInt3083 >= aAnimationType_3057.frames.length) anInt3083 = -1;
                 }
             }
             for (; ; ) {
-                if (aClass17_3057.anIntArray267[anInt3084] >= i) break while_76_;
-                Class287.method2178(class318_sub1, anInt3084, aClass17_3057, -99);
-                i -= aClass17_3057.anIntArray267[anInt3084];
+                if (aAnimationType_3057.durations[anInt3084] >= i) break while_76_;
+                Class287.method2178(class318_sub1, anInt3084, aAnimationType_3057, -99);
+                i -= aAnimationType_3057.durations[anInt3084];
                 anInt3084++;
-                if (aClass17_3057.anIntArray237.length <= anInt3084) {
-                    anInt3084 -= aClass17_3057.anInt238;
-                    if (anInt3084 < 0 || anInt3084 >= aClass17_3057.anIntArray237.length) {
-                        aClass17_3057 = null;
+                if (aAnimationType_3057.frames.length <= anInt3084) {
+                    anInt3084 -= aAnimationType_3057.loopOffset;
+                    if (anInt3084 < 0 || anInt3084 >= aAnimationType_3057.frames.length) {
+                        aAnimationType_3057 = null;
                         break;
                     }
                 }
                 anInt3083 = anInt3084 + 1;
-                if (aClass17_3057.anIntArray237.length <= anInt3083) {
-                    anInt3083 -= aClass17_3057.anInt238;
-                    if (anInt3083 < 0 || (anInt3083 >= aClass17_3057.anIntArray237.length)) anInt3083 = -1;
+                if (aAnimationType_3057.frames.length <= anInt3083) {
+                    anInt3083 -= aAnimationType_3057.loopOffset;
+                    if (anInt3083 < 0 || (anInt3083 >= aAnimationType_3057.frames.length)) anInt3083 = -1;
                 }
             }
         }

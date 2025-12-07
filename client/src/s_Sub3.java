@@ -80,13 +80,13 @@ final class s_Sub3 extends Ground {
         int i_15_ = Class85.method831(Class38.anInt513, i + -i_6_, Class132.anInt1910, 28);
         if (i_7_ < -33) {
             for (int i_16_ = i_10_; i_16_ < i_14_; i_16_++)
-                Class135_Sub2.method1156(-27, i_13_, Class17.anIntArrayArray255[i_16_], i_12_, i_9_);
+                Class135_Sub2.method1156(-27, i_13_, AnimationType.anIntArrayArray255[i_16_], i_12_, i_9_);
             for (int i_17_ = i_11_; i_17_ > i_15_; i_17_--)
-                Class135_Sub2.method1156(-27, i_13_, Class17.anIntArrayArray255[i_17_], i_12_, i_9_);
+                Class135_Sub2.method1156(-27, i_13_, AnimationType.anIntArrayArray255[i_17_], i_12_, i_9_);
             int i_18_ = Class85.method831(Class113.anInt1745, i_8_ + i_6_, Class369.anInt4960, 114);
             int i_19_ = Class85.method831(Class113.anInt1745, -i_6_ + i_3_, Class369.anInt4960, 34);
             for (int i_20_ = i_14_; i_20_ <= i_15_; i_20_++) {
-                int[] is = Class17.anIntArrayArray255[i_20_];
+                int[] is = AnimationType.anIntArrayArray255[i_20_];
                 Class135_Sub2.method1156(-27, i_18_, is, i_12_, i_9_);
                 Class135_Sub2.method1156(-27, i_19_, is, i_18_, i_5_);
                 Class135_Sub2.method1156(-27, i_13_, is, i_19_, i_9_);

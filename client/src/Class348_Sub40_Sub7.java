@@ -348,9 +348,9 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                             ItemDefinition itemDefinition = (Exception_Sub1.itemTypeList.method1940(103, (class46.anInt812)));
                                             if (itemDefinition != null) {
                                                 itemDefinition = (itemDefinition.method1560((class46.anInt781), (byte) 97));
-                                                Class17 class17 = ((class46.anInt699) == -1 ? null : (Class10.seqTypeList.method835((class46.anInt699), 7)));
+                                                AnimationType animationType = ((class46.anInt699) == -1 ? null : (Class10.animTypeList.method835((class46.anInt699), 7)));
                                                 Class154 class154 = (!(class46.aBoolean720) ? null : (Class132.aPlayer_1907.aClass154_10536));
-                                                model = (itemDefinition.method1559(class154, class17, Class348_Sub8.aToolkit6654, 2048, (class46.anInt841), 1, (class46.anInt795), (byte) 88, (class46.anInt730)));
+                                                model = (itemDefinition.method1559(class154, animationType, Class348_Sub8.aToolkit6654, 2048, (class46.anInt841), 1, (class46.anInt795), (byte) 88, (class46.anInt730)));
                                                 if (model != null) i_60_ = (-model.fa() >> 1);
                                                 else Class251.method1916(-9343, class46);
                                             }
@@ -358,23 +358,23 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                             int i_61_ = class46.anInt753;
                                             if (i_61_ >= 0 && (i_61_ < 2048)) {
                                                 Player player = (Class294.aPlayerArray5058[i_61_]);
-                                                Class17 class17 = ((class46.anInt699) == -1 ? null : (Class10.seqTypeList.method835((class46.anInt699), 7)));
+                                                AnimationType animationType = ((class46.anInt699) == -1 ? null : (Class10.animTypeList.method835((class46.anInt699), 7)));
                                                 if ((player != null) && ((i_61_ == (Class348_Sub42_Sub11.index)) || ((class46.anInt779) == (Class318_Sub1_Sub3_Sub1.method2418((player.aString10544), (byte) -50)))))
-                                                    model = (player.aClass154_10536.method1226((Class318_Sub1_Sub3_Sub3.timedVarDomain), null, null, true, (Exception_Sub1.itemTypeList), 0, class17, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.idkTypeList), class46.anInt841, (Class348_Sub8.aToolkit6654), (BillboardType.npcTypeList), (Class10.seqTypeList), 0, class46.anInt795, 0, (Class64_Sub3.basTypeList)));
+                                                    model = (player.aClass154_10536.method1226((Class318_Sub1_Sub3_Sub3.timedVarDomain), null, null, true, (Exception_Sub1.itemTypeList), 0, animationType, class46.anInt730, true, -1, null, 2048, (Class348_Sub40_Sub25.idkTypeList), class46.anInt841, (Class348_Sub8.aToolkit6654), (BillboardType.npcTypeList), (Class10.animTypeList), 0, class46.anInt795, 0, (Class64_Sub3.basTypeList)));
                                             }
                                         } else if ((class46.anInt770) == 8 || (class46.anInt770) == 9) {
                                             Class348_Sub13 class348_sub13 = (Class258_Sub4.method1974((byte) -123, (class46.anInt753), false));
-                                            Class17 class17 = ((class46.anInt699) == -1 ? null : (Class10.seqTypeList.method835((class46.anInt699), 7)));
+                                            AnimationType animationType = ((class46.anInt699) == -1 ? null : (Class10.animTypeList.method835((class46.anInt699), 7)));
                                             if (class348_sub13 != null) {
                                                 Class154 class154 = ((class46.aBoolean720) ? (Class132.aPlayer_1907.aClass154_10536) : null);
-                                                model = (class348_sub13.method2803(class17, class154, (class46.anInt779), (class46.anInt795), (class46.anInt841), (class46.anInt730), 2048, Class348_Sub8.aToolkit6654, (class46.anInt770) == 9, -1));
+                                                model = (class348_sub13.method2803(animationType, class154, (class46.anInt779), (class46.anInt795), (class46.anInt841), (class46.anInt730), 2048, Class348_Sub8.aToolkit6654, (class46.anInt770) == 9, -1));
                                             }
                                         } else if (class46.anInt699 == -1) {
-                                            model = (class46.method430((Class348_Sub40_Sub25.idkTypeList), Class10.seqTypeList, 2048, Class348_Sub8.aToolkit6654, -1, 0, (Exception_Sub1.itemTypeList), (Class318_Sub1_Sub3_Sub3.timedVarDomain), 255, (Class132.aPlayer_1907.aClass154_10536), null, (Class64_Sub3.basTypeList), (BillboardType.npcTypeList), -1));
+                                            model = (class46.method430((Class348_Sub40_Sub25.idkTypeList), Class10.animTypeList, 2048, Class348_Sub8.aToolkit6654, -1, 0, (Exception_Sub1.itemTypeList), (Class318_Sub1_Sub3_Sub3.timedVarDomain), 255, (Class132.aPlayer_1907.aClass154_10536), null, (Class64_Sub3.basTypeList), (BillboardType.npcTypeList), -1));
                                             if (model == null && (Class348_Sub42_Sub13.aBoolean9616)) Class251.method1916(-9343, class46);
                                         } else {
-                                            Class17 class17 = (Class10.seqTypeList.method835((class46.anInt699), 7));
-                                            model = (class46.method430((Class348_Sub40_Sub25.idkTypeList), Class10.seqTypeList, 2048, Class348_Sub8.aToolkit6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1.itemTypeList), (Class318_Sub1_Sub3_Sub3.timedVarDomain), 255, (Class132.aPlayer_1907.aClass154_10536), class17, (Class64_Sub3.basTypeList), (BillboardType.npcTypeList), (class46.anInt730)));
+                                            AnimationType animationType = (Class10.animTypeList.method835((class46.anInt699), 7));
+                                            model = (class46.method430((Class348_Sub40_Sub25.idkTypeList), Class10.animTypeList, 2048, Class348_Sub8.aToolkit6654, (class46.anInt795), (class46.anInt841), (Exception_Sub1.itemTypeList), (Class318_Sub1_Sub3_Sub3.timedVarDomain), 255, (Class132.aPlayer_1907.aClass154_10536), animationType, (Class64_Sub3.basTypeList), (BillboardType.npcTypeList), (class46.anInt730)));
                                             if (model == null && (Class348_Sub42_Sub13.aBoolean9616)) Class251.method1916(-9343, class46);
                                         }
                                         if (model != null) {

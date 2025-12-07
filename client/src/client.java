@@ -290,7 +290,7 @@ public final class client extends Applet_Sub1 {
         Class172.method1325(-128);
         Class154.method1235((byte) 7);
         Class348_Sub42_Sub17.method3269(true);
-        Class17.method265(false);
+        AnimationType.method265(false);
         Class182.method1375(5616);
         Model.method609((byte) -52);
         Class36.method355(i + 4189);

@@ -65,8 +65,8 @@ final class Class110_Sub1 extends Class110 {
         anInt5790++;
         boolean bool = false;
         if ((Class367_Sub11.anInt7396 != class318_sub1_sub3_sub3.anInt10300) && class318_sub1_sub3_sub3.anInt10286 != -1 && class318_sub1_sub3_sub3.anInt10218 == 0) {
-            Class17 class17 = Class10.seqTypeList.method835((class318_sub1_sub3_sub3.anInt10286), i + 8);
-            if (class17.aBoolean241 || ((class17.anIntArray267[(class318_sub1_sub3_sub3.anInt10267)]) < 1 + (class318_sub1_sub3_sub3.anInt10232))) bool = true;
+            AnimationType animationType = Class10.animTypeList.method835((class318_sub1_sub3_sub3.anInt10286), i + 8);
+            if (animationType.tweened || ((animationType.durations[(class318_sub1_sub3_sub3.anInt10267)]) < 1 + (class318_sub1_sub3_sub3.anInt10232))) bool = true;
         } else bool = true;
         if (bool) {
             int i_4_ = ((class318_sub1_sub3_sub3.anInt10300) + -(class318_sub1_sub3_sub3.anInt10239));

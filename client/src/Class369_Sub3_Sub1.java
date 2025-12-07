@@ -34,20 +34,20 @@ final class Class369_Sub3_Sub1 extends Class369_Sub3 {
                 bool_5_ = false;
             } else bool_5_ = true;
             if (i_3_ < Class132.anInt1910) i_3_ = Class132.anInt1910;
-            else Class135_Sub2.method1156(-27, i_0_, Class17.anIntArrayArray255[i_3_++], i_4_, i_1_);
-            if (Class38.anInt513 >= i_2_) Class135_Sub2.method1156(-27, i_0_, Class17.anIntArrayArray255[i_2_--], i_4_, i_1_);
+            else Class135_Sub2.method1156(-27, i_0_, AnimationType.anIntArrayArray255[i_3_++], i_4_, i_1_);
+            if (Class38.anInt513 >= i_2_) Class135_Sub2.method1156(-27, i_0_, AnimationType.anIntArrayArray255[i_2_--], i_4_, i_1_);
             else i_2_ = Class38.anInt513;
             if (!bool || !bool_5_) {
                 if (bool) {
                     for (int i_7_ = i_3_; i_7_ <= i_2_; i_7_++)
-                        Class17.anIntArrayArray255[i_7_][i_4_] = i_1_;
+                        AnimationType.anIntArrayArray255[i_7_][i_4_] = i_1_;
                 } else if (bool_5_) {
                     for (int i_6_ = i_3_; i_6_ <= i_2_; i_6_++)
-                        Class17.anIntArrayArray255[i_6_][i_0_] = i_1_;
+                        AnimationType.anIntArrayArray255[i_6_][i_0_] = i_1_;
                 }
             } else {
                 for (int i_8_ = i_3_; i_2_ >= i_8_; i_8_++) {
-                    int[] is = Class17.anIntArrayArray255[i_8_];
+                    int[] is = AnimationType.anIntArrayArray255[i_8_];
                     is[i_4_] = is[i_0_] = i_1_;
                 }
             }

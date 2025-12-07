@@ -26,25 +26,25 @@ final class Class348_Sub42_Sub4 extends Class348_Sub42 {
                         if (class348_sub41 != null) Class75_Sub1.method769(class348_sub41.anInt7050, (byte) 116);
                     }
                     if (class46.anInt774 == 6 && class46.anInt699 != -1) {
-                        Class17 class17 = Class10.seqTypeList.method835(class46.anInt699, 7);
-                        if (class17 != null) {
+                        AnimationType animationType = Class10.animTypeList.method835(class46.anInt699, 7);
+                        if (animationType != null) {
                             class46.anInt841 += ClientOptions.anInt7267;
                             int i_2_ = class46.anInt795;
-                            while (class46.anInt841 > (class17.anIntArray267[class46.anInt795])) {
-                                class46.anInt841 -= (class17.anIntArray267[class46.anInt795]);
+                            while (class46.anInt841 > (animationType.durations[class46.anInt795])) {
+                                class46.anInt841 -= (animationType.durations[class46.anInt795]);
                                 class46.anInt795++;
-                                if (class46.anInt795 >= (class17.anIntArray237).length) {
-                                    class46.anInt795 -= class17.anInt238;
-                                    if (class46.anInt795 < 0 || (class46.anInt795 >= (class17.anIntArray237).length)) class46.anInt795 = 0;
+                                if (class46.anInt795 >= (animationType.frames).length) {
+                                    class46.anInt795 -= animationType.loopOffset;
+                                    if (class46.anInt795 < 0 || (class46.anInt795 >= (animationType.frames).length)) class46.anInt795 = 0;
                                 }
                                 class46.anInt730 = 1 + class46.anInt795;
-                                if (class46.anInt730 >= class17.anIntArray237.length) {
-                                    class46.anInt730 -= class17.anInt238;
-                                    if (class46.anInt730 < 0 || ((class17.anIntArray237).length <= class46.anInt730)) class46.anInt730 = -1;
+                                if (class46.anInt730 >= animationType.frames.length) {
+                                    class46.anInt730 -= animationType.loopOffset;
+                                    if (class46.anInt730 < 0 || ((animationType.frames).length <= class46.anInt730)) class46.anInt730 = -1;
                                 }
                                 Class251.method1916(-9343, class46);
                             }
-                            if (i_2_ != class46.anInt795) Class264.method2017((class46.anInt795), class17, 98);
+                            if (i_2_ != class46.anInt795) Class264.method2017((class46.anInt795), animationType, 98);
                         }
                     }
                 }

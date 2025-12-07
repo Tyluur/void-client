@@ -115,7 +115,7 @@ abstract class Class348_Sub31 extends Node {
         int i_80_ = 51 / ((i_48_ - -63) / 44);
         int i_81_ = i_73_;
         int i_82_ = (-1 + i_55_) * i_72_;
-        int[] is = Class17.anIntArrayArray255[i_49_];
+        int[] is = AnimationType.anIntArrayArray255[i_49_];
         Class135_Sub2.method1156(-27, i_47_ - i_54_, is, -i_45_ + i_47_, i_46_);
         Class135_Sub2.method1156(-27, i_47_ + i_54_, is, -i_54_ + i_47_, i_44_);
         Class135_Sub2.method1156(-27, i_45_ + i_47_, is, i_47_ + i_54_, i_46_);
@@ -171,15 +171,15 @@ abstract class Class348_Sub31 extends Node {
             if (bool) {
                 int i_87_ = i_47_ + i_53_;
                 int i_88_ = -i_53_ + i_47_;
-                Class135_Sub2.method1156(-27, i_88_, Class17.anIntArrayArray255[i_83_], i_86_, i_46_);
-                Class135_Sub2.method1156(-27, i_87_, Class17.anIntArrayArray255[i_83_], i_88_, i_44_);
-                Class135_Sub2.method1156(-27, i_85_, Class17.anIntArrayArray255[i_83_], i_87_, i_46_);
-                Class135_Sub2.method1156(-27, i_88_, Class17.anIntArrayArray255[i_84_], i_86_, i_46_);
-                Class135_Sub2.method1156(-27, i_87_, Class17.anIntArrayArray255[i_84_], i_88_, i_44_);
-                Class135_Sub2.method1156(-27, i_85_, Class17.anIntArrayArray255[i_84_], i_87_, i_46_);
+                Class135_Sub2.method1156(-27, i_88_, AnimationType.anIntArrayArray255[i_83_], i_86_, i_46_);
+                Class135_Sub2.method1156(-27, i_87_, AnimationType.anIntArrayArray255[i_83_], i_88_, i_44_);
+                Class135_Sub2.method1156(-27, i_85_, AnimationType.anIntArrayArray255[i_83_], i_87_, i_46_);
+                Class135_Sub2.method1156(-27, i_88_, AnimationType.anIntArrayArray255[i_84_], i_86_, i_46_);
+                Class135_Sub2.method1156(-27, i_87_, AnimationType.anIntArrayArray255[i_84_], i_88_, i_44_);
+                Class135_Sub2.method1156(-27, i_85_, AnimationType.anIntArrayArray255[i_84_], i_87_, i_46_);
             } else {
-                Class135_Sub2.method1156(-27, i_85_, Class17.anIntArrayArray255[i_83_], i_86_, i_46_);
-                Class135_Sub2.method1156(-27, i_85_, Class17.anIntArrayArray255[i_84_], i_86_, i_46_);
+                Class135_Sub2.method1156(-27, i_85_, AnimationType.anIntArrayArray255[i_83_], i_86_, i_46_);
+                Class135_Sub2.method1156(-27, i_85_, AnimationType.anIntArrayArray255[i_84_], i_86_, i_46_);
             }
         }
     }

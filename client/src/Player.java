@@ -305,17 +305,17 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
     final void method2455(int i, int i_50_, byte i_51_, int i_52_) {
         anInt10529++;
         if (i_50_ != -26443) method2451((byte) -35, 9, 26, 87);
-        if (this.anInt10286 != -1 && Class10.seqTypeList.method835(this.anInt10286, 7).anInt245 == 1) {
+        if (this.anInt10286 != -1 && Class10.animTypeList.method835(this.anInt10286, 7).walkingPrecedence == 1) {
             this.anInt10286 = -1;
             this.anIntArray10236 = null;
         }
         if (this.anInt10269 != -1) {
             Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 59, this.anInt10269));
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && Class10.seqTypeList.method835((class368.anInt4503), i_50_ ^ ~0x674d).anInt245 == 1) this.anInt10269 = -1;
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && Class10.animTypeList.method835((class368.anInt4503), i_50_ ^ ~0x674d).walkingPrecedence == 1) this.anInt10269 = -1;
         }
         if (this.anInt10291 != -1) {
             Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 124, this.anInt10291));
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.seqTypeList.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1;
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.animTypeList.method835(class368.anInt4503, 7).walkingPrecedence) == 1) this.anInt10291 = -1;
         }
         this.anInt10524 = -1;
         if (i_52_ >= 0 && Class367_Sub4.mapLength > i_52_ && i >= 0 && Class348_Sub40_Sub3.mapWidth > i) {
@@ -344,9 +344,9 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         if (Class316.clientOptions.aClass239_Sub21_7270.method1812(-32350) == 1) {
             Class225 class225 = this.method2422((byte) 72);
             if (class225.aBoolean2913 && (this.aClass154_10536.anInt2093 == -1 || BillboardType.npcTypeList.method2079(this.aClass154_10536.anInt2093, i + -2).aBoolean1369)) {
-                Class17 class17 = ((this.anInt10286 != -1 && this.anInt10218 == 0) ? (Class10.seqTypeList.method835(this.anInt10286, 7)) : null);
-                Class17 class17_55_ = ((this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) ? null : (Class10.seqTypeList.method835(this.anInt10268, 7)));
-                Model model = (Node.method2711(this.anInt10302, i_53_, this.aModelArray10323[0], this.anInt10208, false, (class17_55_ == null ? this.anInt10267 : this.anInt10245), 0, 1, this.anInt10252, var_toolkit, 160, 0, 240, class17_55_ == null ? class17 : class17_55_));
+                AnimationType animationType = ((this.anInt10286 != -1 && this.anInt10218 == 0) ? (Class10.animTypeList.method835(this.anInt10286, 7)) : null);
+                AnimationType animationType_55_ = ((this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && animationType != null)) ? null : (Class10.animTypeList.method835(this.anInt10268, 7)));
+                Model model = (Node.method2711(this.anInt10302, i_53_, this.aModelArray10323[0], this.anInt10208, false, (animationType_55_ == null ? this.anInt10267 : this.anInt10245), 0, 1, this.anInt10252, var_toolkit, 160, 0, 240, animationType_55_ == null ? animationType : animationType_55_));
                 if (model != null) {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aModelArray10323).length, true, false));
                     this.aBoolean10324 = true;
@@ -476,15 +476,15 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         anInt10525++;
         int i_70_ = i;
         Class225 class225 = this.method2422((byte) 72);
-        Class17 class17 = ((this.anInt10286 == -1 || this.anInt10218 != 0) ? null : Class10.seqTypeList.method835(this.anInt10286, 7));
-        Class17 class17_71_ = ((this.anInt10268 != -1 && !this.aBoolean10521 && (!this.aBoolean10213 || class17 == null)) ? Class10.seqTypeList.method835(this.anInt10268, 7) : null);
+        AnimationType animationType = ((this.anInt10286 == -1 || this.anInt10218 != 0) ? null : Class10.animTypeList.method835(this.anInt10286, 7));
+        AnimationType animationType_71_ = ((this.anInt10268 != -1 && !this.aBoolean10521 && (!this.aBoolean10213 || animationType == null)) ? Class10.animTypeList.method835(this.anInt10268, 7) : null);
         int i_72_ = class225.anInt2932;
         int i_73_ = class225.anInt2941;
         if (i_72_ != 0 || i_73_ != 0 || class225.anInt2950 != 0 || class225.anInt2926 != 0) i |= 0x7;
         int i_74_ = this.aClass264_10217.method2019((byte) -106);
         boolean bool = (this.aByte10279 != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250));
         if (bool) i |= 0x80000;
-        Model model = (this.aModelArray10323[0] = (this.aClass154_10536.method1226(Class318_Sub1_Sub3_Sub3.timedVarDomain, class17_71_, this.aClass182Array10308, true, Exception_Sub1.itemTypeList, i_74_, class17, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.idkTypeList, this.anInt10232, var_toolkit, BillboardType.npcTypeList, Class10.seqTypeList, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.basTypeList)));
+        Model model = (this.aModelArray10323[0] = (this.aClass154_10536.method1226(Class318_Sub1_Sub3_Sub3.timedVarDomain, animationType_71_, this.aClass182Array10308, true, Exception_Sub1.itemTypeList, i_74_, animationType, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.idkTypeList, this.anInt10232, var_toolkit, BillboardType.npcTypeList, Class10.animTypeList, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.basTypeList)));
         int i_75_ = Class292.method2201(2121);
         if (QuickChatCatTypeList.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268);
         int i_76_ = 3 % ((63 - i_69_) / 47);
@@ -520,7 +520,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                 if (this.anInt10220 != 0) i_79_ |= 0x2;
                 if (this.anInt10278 >= 0) i_79_ |= 0x7;
             } else i_79_ |= 0x7;
-            Model model_80_ = (this.aModelArray10323[1] = (class368.method3562(this.anInt10240, var_toolkit, this.anInt10243, i_79_, this.anInt10283, Class10.seqTypeList, (byte) 46)));
+            Model model_80_ = (this.aModelArray10323[1] = (class368.method3562(this.anInt10240, var_toolkit, this.anInt10243, i_79_, this.anInt10283, Class10.animTypeList, (byte) 46)));
             if (model_80_ != null) {
                 if (this.anInt10278 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939[this.anInt10278]) != null)) {
                     int i_81_ = 0;
@@ -568,7 +568,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                 if (this.anInt10260 != 0) i_90_ |= 0x2;
                 if (this.anInt10289 >= 0) i_90_ |= 0x7;
             }
-            Model model_91_ = (this.aModelArray10323[2] = (class368.method3558(this.anInt10273, this.anInt10276, var_toolkit, i_90_, 3172, Class10.seqTypeList, this.anInt10224)));
+            Model model_91_ = (this.aModelArray10323[2] = (class368.method3558(this.anInt10273, this.anInt10276, var_toolkit, i_90_, 3172, Class10.animTypeList, this.anInt10224)));
             if (model_91_ != null) {
                 if (this.anInt10289 < 0 || class225.anIntArrayArray2939 == null || ((class225.anIntArrayArray2939[this.anInt10289]) == null)) {
                     if (this.anInt10202 != 0) model_91_.a(2048 * (this.anInt10202));

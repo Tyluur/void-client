@@ -59,15 +59,15 @@ final class Class348_Sub17 extends Node {
                         }
                     }
                     if (bool && npc.anInt10286 != -1) {
-                        Class17 class17 = (Class10.seqTypeList.method835(npc.anInt10286, 7));
-                        int i_3_ = class17.anInt248;
+                        AnimationType animationType = (Class10.animTypeList.method835(npc.anInt10286, 7));
+                        int i_3_ = animationType.replayMode;
                         if (i_3_ == 1) {
                             npc.anInt10232 = 0;
                             npc.anInt10218 = i;
                             npc.anInt10294 = 0;
                             npc.anInt10267 = 0;
                             npc.anInt10244 = 1;
-                            if (!npc.aBoolean10309) Class287.method2178(npc, npc.anInt10267, class17, -72);
+                            if (!npc.aBoolean10309) Class287.method2178(npc, npc.anInt10267, animationType, -72);
                         }
                         if (i_3_ == 2) npc.anInt10294 = 0;
                     }
@@ -75,7 +75,7 @@ final class Class348_Sub17 extends Node {
                 boolean bool = true;
                 for (int i_4_ = 0; is.length > i_4_; i_4_++) {
                     if (is[i_4_] != -1) bool = false;
-                    if (npc.anIntArray10236 == null || (npc.anIntArray10236[i_4_]) == -1 || (Class10.seqTypeList.method835(is[i_4_], 7).anInt239 >= Class10.seqTypeList.method835((npc.anIntArray10236[i_4_]), 7).anInt239)) {
+                    if (npc.anIntArray10236 == null || (npc.anIntArray10236[i_4_]) == -1 || (Class10.animTypeList.method835(is[i_4_], 7).priority >= Class10.animTypeList.method835((npc.anIntArray10236[i_4_]), 7).priority)) {
                         npc.anInt10218 = i;
                         npc.anInt10322 = npc.anInt10319;
                         npc.anIntArray10236 = is;

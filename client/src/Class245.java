@@ -32,8 +32,8 @@ final class Class245 {
         int i_1_ = 30;
         if (Class348_Sub18.anInt6818 != 0 && Class362.aFontRenderer_4456 != null) {
             Class9.aToolkit171.K(Class348_Sub40_Sub10.anIntArray9183);
-            for (int i_2_ = 0; i_2_ < Class17.anIntArray256.length; i_2_++)
-                Class9.aToolkit171.method3660((Class17.anIntArray256[i_2_] + Class345.anIntArray4271[i_2_]), -256, (Class348_Sub40_Sub10.anIntArray9183[3] - Class348_Sub40_Sub10.anIntArray9183[1]), Class348_Sub40_Sub10.anIntArray9183[1], true);
+            for (int i_2_ = 0; i_2_ < AnimationType.anIntArray256.length; i_2_++)
+                Class9.aToolkit171.method3660((AnimationType.anIntArray256[i_2_] + Class345.anIntArray4271[i_2_]), -256, (Class348_Sub40_Sub10.anIntArray9183[3] - Class348_Sub40_Sub10.anIntArray9183[1]), Class348_Sub40_Sub10.anIntArray9183[1], true);
             for (int i_3_ = 0; i_3_ < Class348_Sub42_Sub10.anInt9577; i_3_++) {
                 Class338 class338 = ClientScript.aClass338Array9700[i_3_];
                 Class9.aToolkit171.H(class338.anIntArray4187[0], class338.anIntArray4191[0], class338.anIntArray4184[0], Class177.anIntArray4670);

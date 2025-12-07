@@ -230,7 +230,7 @@ final class ItemDefinition {
         return mesh;
     }
 
-    final Model method1559(Class154 class154, Class17 class17, Toolkit var_toolkit, int i, int i_20_, int i_21_, int i_22_, byte i_23_, int i_24_) {
+    final Model method1559(Class154 class154, AnimationType animationType, Toolkit var_toolkit, int i, int i_20_, int i_21_, int i_22_, byte i_23_, int i_24_) {
         try {
             anInt2813++;
             if (this.anIntArray2762 != null && i_21_ > 1) {
@@ -238,11 +238,11 @@ final class ItemDefinition {
                 for (int i_26_ = 0; i_26_ < 10; i_26_++) {
                     if (i_21_ >= this.anIntArray2831[i_26_] && this.anIntArray2831[i_26_] != 0) i_25_ = this.anIntArray2762[i_26_];
                 }
-                if (i_25_ != -1) return (this.aItemTypeList_2761.method1940(103, i_25_).method1559(class154, class17, var_toolkit, i, i_20_, 1, i_22_, (byte) 88, i_24_));
+                if (i_25_ != -1) return (this.aItemTypeList_2761.method1940(103, i_25_).method1559(class154, animationType, var_toolkit, i, i_20_, 1, i_22_, (byte) 88, i_24_));
             }
             if (i_23_ != 88) this.aString2795 = null;
             int i_27_ = i;
-            if (class17 != null) i_27_ |= class17.method263(i_24_, 105, i_22_, true);
+            if (animationType != null) i_27_ |= animationType.method263(i_24_, 105, i_22_, true);
             Model model;
             synchronized (this.aItemTypeList_2761.aClass60_3287) {
                 model = (Model) (this.aItemTypeList_2761.aClass60_3287.method583(var_toolkit.anInt4567 << 29 | this.anInt2769, 69));
@@ -282,11 +282,11 @@ final class ItemDefinition {
                     this.aItemTypeList_2761.aClass60_3287.method582(model, var_toolkit.anInt4567 << 29 | this.anInt2769, (byte) -111);
                 }
             }
-            if (class17 != null) model = class17.method269(116, model, i_24_, i_20_, i_27_, i_22_);
+            if (animationType != null) model = animationType.method269(116, model, i_24_, i_20_, i_27_, i_22_);
             model.s(i);
             return model;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rq.S(" + (class154 != null ? "{...}" : "null") + ',' + (class17 != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("rq.S(" + (class154 != null ? "{...}" : "null") + ',' + (animationType != null ? "{...}" : "null") + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'));
         }
     }
 

@@ -23,13 +23,13 @@ final class Class179 {
         if (i < 73) anInt2361 = -51;
         anInt2363++;
         if (is == null) return null;
-        if (is.length > 136 && !Class17.aBoolean247) {
+        if (is.length > 136 && !AnimationType.aBoolean247) {
             try {
                 Class344 class344 = new Class344_Sub1();
                 class344.method2691((byte) 62, is);
                 return class344;
             } catch (Throwable throwable) {
-                Class17.aBoolean247 = true;
+                AnimationType.aBoolean247 = true;
             }
         }
         if (bool) return ha_Sub3.method3873(is, 0);

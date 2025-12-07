@@ -94,7 +94,7 @@ final class Option_Sub15 extends Option {
         int i_17_ = i_4_ <= i_3_ ? -1 : 1;
         if (bool) {
             for (int i_19_ = i; i_5_ >= i_19_; i_19_++) {
-                Class17.anIntArrayArray255[i_19_][i_13_] = i_6_;
+                AnimationType.anIntArrayArray255[i_19_][i_13_] = i_6_;
                 i_16_ += i_15_;
                 if (i_16_ > 0) {
                     i_13_ += i_17_;
@@ -104,7 +104,7 @@ final class Option_Sub15 extends Option {
         } else {
             for (int i_18_ = i; i_18_ <= i_5_; i_18_++) {
                 i_16_ += i_15_;
-                Class17.anIntArrayArray255[i_13_][i_18_] = i_6_;
+                AnimationType.anIntArrayArray255[i_13_][i_18_] = i_6_;
                 if (i_16_ > 0) {
                     i_13_ += i_17_;
                     i_16_ -= i_14_;

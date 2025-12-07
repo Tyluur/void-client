@@ -680,7 +680,7 @@ final class Class237_Sub1 extends Class237 {
                                                         for (int i_142_ = i_139_; (i_142_ < i_139_ - -4); i_142_++) {
                                                             if ((i_141_ >= i_123_) && (i_141_ < 8 + i_123_) && (i_124_ <= i_142_) && (8 + i_124_ > i_124_)) {
                                                                 int i_143_ = (i_117_ - -(Class295.method2220((0x7 & i_142_), i_119_, (i_141_ & 0x7), (byte) 71)));
-                                                                int i_144_ = (i_120_ + (SeqTypeList.method837((i_141_ & 0x7), true, (0x7 & i_142_), i_119_)));
+                                                                int i_144_ = (i_120_ + (AnimTypeList.method837((i_141_ & 0x7), true, (0x7 & i_142_), i_119_)));
                                                                 if (i_143_ >= 0 && (this.width > i_143_) && (i_144_ >= 0) && ((this.height) > i_144_)) this.aByteArrayArrayArray3104[i_118_][i_143_][i_144_] = i_140_;
                                                             }
                                                         }

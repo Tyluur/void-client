@@ -13,7 +13,7 @@ final class Class163 {
     static int anInt2166;
     static int anInt2167;
     static int anInt2168;
-    static Class17[] aClass17Array2169 = new Class17[14];
+    static AnimationType[] aAnimationTypeArray2169 = new AnimationType[14];
     static int anInt2170;
     static int anInt2171;
 
@@ -164,7 +164,7 @@ final class Class163 {
 
     public static void method1276(int i) {
         int i_35_ = 101 % ((i - -20) / 49);
-        aClass17Array2169 = null;
+        aAnimationTypeArray2169 = null;
         anIntArrayArray2165 = null;
         aBooleanArray2162 = null;
     }
