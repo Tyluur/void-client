@@ -1,101 +1,116 @@
+import Class59.Companion.method544
+
 /* Class239_Sub1 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class239_Sub1 extends Class239 {
-    static int anInt5841;
-    static int anInt5842;
-    static int anInt5843;
-    static int anInt5844;
-    static int anInt5845;
-    static int anInt5846;
-    static short[][] aShortArrayArray5847;
-    static int anInt5848;
-    static int anInt5849;
-    static int anInt5850;
-
-    static final void method1719(boolean bool, String string, String string_0_, int i, int i_1_) {
-        try {
-            Class178.method1356(true, string_0_, i_1_, i, bool, string, true);
-            anInt5845++;
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("aj.G(" + bool + ',' + (string != null ? "{...}" : "null") + ',' + (string_0_ != null ? "{...}" : "null") + ',' + i + ',' + i_1_ + ')'));
-        }
+* Visit http://jode.sourceforge.net/
+*/
+class Class239_Sub1 : Class239 {
+    fun method1720(i: Int): Int {
+        anInt5843++
+        if (i != -32350) method1714(82, -89)
+        return this.anInt3138
     }
 
-    final int method1720(int i) {
-        anInt5843++;
-        if (i != -32350) method1714(82, -89);
-        return this.anInt3138;
+    override fun method1716(bool: Boolean) {
+        if (this.anInt3138 != 1 && this.anInt3138 != 0) this.anInt3138 = method1710(20014)
+        if (bool == false) anInt5846++
     }
 
-    static final void method1721(String string, byte i) {
-        anInt5849++;
-        if (r.aBoolean9722 && (0x18 & Class38.anInt500) != 0) {
-            int i_2_ = -88 / ((i - -33) / 37);
-            boolean bool = false;
-            int i_3_ = Class328_Sub1.anInt6513;
-            int[] is = Class286_Sub7.anIntArray6290;
-            for (int i_4_ = 0; i_3_ > i_4_; i_4_++) {
-                Player player = (Class294.aPlayerArray5058[is[i_4_]]);
-                if (player.aString10544 != null && player.aString10544.equalsIgnoreCase(string) && (((player == Class132.aPlayer_1907) && (0x10 & Class38.anInt500) != 0) || (player != null && (Class38.anInt500 & 0x8) != 0))) {
-                    Class228.anInt2975++;
-                    Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class9.anInt169);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(is[i_4_], (byte) 3);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class301.anInt3829, (byte) 3);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeIntInverseMiddle(Class149.anInt2046, -4086);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -64, 0);
-                    Class348_Sub42_Sub14.method3243(116, class348_sub47);
-                    bool = true;
-                    Class298.method2252(true, player.anIntArray10320[0], player.anIntArray10317[0], (byte) -99, player.method2436((byte) 54), 0, player.method2436((byte) 91), -2, 0);
-                    break;
-                }
+    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+
+    override fun method1714(i: Int, i_8_: Int): Int {
+        if (i != 3) anInt5850 = 94
+        anInt5841++
+        return 1
+    }
+
+    override fun method1712(i: Int, i_9_: Int) {
+        val i_10_ = -57 / ((82 - i) / 35)
+        anInt5844++
+        this.anInt3138 = i_9_
+    }
+
+    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+
+    override fun method1710(i: Int): Int {
+        if (i != 20014) anInt5850 = -72
+        anInt5842++
+        return 1
+    }
+
+    companion object {
+        @JvmField
+        var anInt5841: Int = 0
+        @JvmField
+        var anInt5842: Int = 0
+        @JvmField
+        var anInt5843: Int = 0
+        @JvmField
+        var anInt5844: Int = 0
+        @JvmField
+        var anInt5845: Int = 0
+        @JvmField
+        var anInt5846: Int = 0
+        @JvmField
+        var aShortArrayArray5847: Array<ShortArray?>? = null
+        @JvmField
+        var anInt5848: Int = 0
+        @JvmField
+        var anInt5849: Int = 0
+        @JvmField
+        var anInt5850: Int = 0
+
+        @JvmStatic
+        fun method1719(bool: Boolean, string: String?, string_0_: String?, i: Int, i_1_: Int) {
+            try {
+                Class178.method1356(true, string_0_, i_1_, i, bool, string, true)
+                anInt5845++
+            } catch (runtimeexception: RuntimeException) {
+                throw Class348_Sub17.method2929(runtimeexception, ("aj.G(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + (if (string_0_ != null) "{...}" else "null") + ',' + i + ',' + i_1_ + ')'))
             }
-            if (!bool) Class59.method544((Class274.aClass274_3504.method2063(Class348_Sub33.anInt6967, 544)) + string, false, 4);
-            if (r.aBoolean9722) Class341.method2678(-2049);
         }
-    }
 
-    final void method1716(boolean bool) {
-        if (this.anInt3138 != 1 && this.anInt3138 != 0) this.anInt3138 = method1710(20014);
-        if (bool == false) anInt5846++;
-    }
+        @JvmStatic
+        fun method1721(string: String?, i: Byte) {
+            anInt5849++
+            if (r.aBoolean9722 && (0x18 and Class38.anInt500) != 0) {
+                val i_2_ = -88 / ((i - -33) / 37)
+                var bool = false
+                val i_3_ = Class328_Sub1.anInt6513
+                val `is` = Class286_Sub7.anIntArray6290
+                var i_4_ = 0
+                while (i_3_ > i_4_) {
+                    val player = (Class294.aPlayerArray5058[`is`[i_4_]])
+                    if (player.aString10544 != null && player.aString10544.equals(string, ignoreCase = true) && (((player == Class132.aPlayer_1907) && (0x10 and Class38.anInt500) != 0) || (player != null && (Class38.anInt500 and 0x8) != 0))) {
+                        Class228.anInt2975++
+                        val class348_sub47 = Class286_Sub3.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102)
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class9.anInt169)
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(`is`[i_4_], 3.toByte())
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class301.anInt3829, 3.toByte())
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeIntInverseMiddle(Class149.anInt2046, -4086)
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((-64).toByte(), 0)
+                        Class348_Sub42_Sub14.method3243(116, class348_sub47)
+                        bool = true
+                        Class298.method2252(true, player.anIntArray10320[0], player.anIntArray10317[0], (-99).toByte(), player.method2436(54.toByte()), 0, player.method2436(91.toByte()), -2, 0)
+                        break
+                    }
+                    i_4_++
+                }
+                if (!bool) method544((Class274.aClass274_3504.method2063(Class348_Sub33.anInt6967, 544)) + string, false, 4)
+                if (r.aBoolean9722) Class341.method2678(-2049)
+            }
+        }
 
-    Class239_Sub1(Class348_Sub51 class348_sub51) {
-        super(class348_sub51);
-    }
+        @JvmStatic
+        fun method1722(i: Int, i_5_: Int, i_6_: Byte): Boolean {
+            val i_7_ = 92 % ((i_6_ - 48) / 32)
+            anInt5848++
+            return (0x10000 and i) != 0
+        }
 
-    static final boolean method1722(int i, int i_5_, byte i_6_) {
-        int i_7_ = 92 % ((i_6_ - 48) / 32);
-        anInt5848++;
-        return (0x10000 & i) != 0;
-    }
-
-    public static void method1723(byte i) {
-        aShortArrayArray5847 = null;
-        if (i != 119) anInt5850 = -51;
-    }
-
-    final int method1714(int i, int i_8_) {
-        if (i != 3) anInt5850 = 94;
-        anInt5841++;
-        return 1;
-    }
-
-    final void method1712(int i, int i_9_) {
-        int i_10_ = -57 / ((82 - i) / 35);
-        anInt5844++;
-        this.anInt3138 = i_9_;
-    }
-
-    Class239_Sub1(int i, Class348_Sub51 class348_sub51) {
-        super(i, class348_sub51);
-    }
-
-    final int method1710(int i) {
-        if (i != 20014) anInt5850 = -72;
-        anInt5842++;
-        return 1;
+        @JvmStatic
+        fun method1723(i: Byte) {
+            aShortArrayArray5847 = null
+            if (i.toInt() != 119) anInt5850 = -51
+        }
     }
 }

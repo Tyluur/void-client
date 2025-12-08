@@ -3628,15 +3628,15 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                         i_323_ -= 2
                         if (!class318_sub1_sub3_sub3.aBoolean10309) {
                             if (class318_sub1_sub3_sub3.anInt10287 > Class367_Sub11.anInt7396) {
-                                var class105 = (Class239_Sub2.aClass105Array5857[(if (class318_sub1_sub3_sub3.aBoolean10226) 2 else 0)])
-                                var class105_332_ = (Class239_Sub2.aClass105Array5857[(if (!class318_sub1_sub3_sub3.aBoolean10226) 1 else 3)])
+                                var class105 = (Class239_Sub2.aClass105Array5857!![(if (class318_sub1_sub3_sub3.aBoolean10226) 2 else 0)]!!)
+                                var class105_332_ = (Class239_Sub2.aClass105Array5857!![(if (!class318_sub1_sub3_sub3.aBoolean10226) 1 else 3)]!!)
                                 var i_333_ = -1
                                 if (class318_sub1_sub3_sub3 is Npc) {
                                     i_333_ = class79!!.anInt1382
                                     if (i_333_ == -1) i_333_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2923)
                                 } else i_333_ = (class318_sub1_sub3_sub3.method2422(72.toByte()).anInt2923)
                                 if (i_333_ != -1) {
-                                    var class105s = (Class328_Sub2.aClass60_6517.method583(i_333_.toLong(), -45) as Array<Class105?>?)
+                                    var class105s = (Class328_Sub2.aClass60_6517.method583(i_333_.toLong(), -45) as Array<Class105?>)
                                     if (class105s == null) {
                                         val class207s = Class207.method1519((Class21.aClass45_322), i_333_, 0)
                                         if (class207s != null) {
@@ -3650,8 +3650,8 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                         }
                                     }
                                     if (class105s != null && class105s.size == 4) {
-                                        class105_332_ = (class105s[if (!(class318_sub1_sub3_sub3.aBoolean10226)) 1 else 3])
-                                        class105 = (class105s[if (!(class318_sub1_sub3_sub3.aBoolean10226)) 0 else 2])
+                                        class105_332_ = (class105s[if (!(class318_sub1_sub3_sub3.aBoolean10226)) 1 else 3]!!)
+                                        class105 = (class105s[if (!(class318_sub1_sub3_sub3.aBoolean10226)) 0 else 2]!!)
                                     }
                                 }
                                 var i_335_ = (-Class367_Sub11.anInt7396 + class318_sub1_sub3_sub3.anInt10287)

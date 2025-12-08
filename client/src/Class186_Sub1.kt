@@ -109,7 +109,7 @@ class Class186_Sub1 internal constructor(i: Int) : Class186() {
         fun method1399(i: Int, c: Char): Int {
             anInt5805++
             if (i != 7) method1400(-22)
-            if (c.code >= 0 && Class239_Sub6.anIntArray5902.size > c.code) return Class239_Sub6.anIntArray5902[c.code]
+            if (c.code >= 0 && Class239_Sub6.anIntArray5902!!.size > c.code) return Class239_Sub6.anIntArray5902!![c.code]
             return -1
         }
 
