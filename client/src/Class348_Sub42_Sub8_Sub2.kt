@@ -673,7 +673,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
 
             if (Class367_Sub4.aClass114_7323 == Class348_Sub3.aClass114_6584) {
-                Class348_Sub16_Sub1.method2822(-101, Class299.aClass348_Sub49_Sub2_3813, Class348_Sub40_Sub25.anInt9341)
+                Class348_Sub16_Sub1.method2822(-101, Class299.aClass348_Sub49_Sub2_3813!!, Class348_Sub40_Sub25.anInt9341)
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }

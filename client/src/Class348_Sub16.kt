@@ -1,33 +1,35 @@
+import kotlin.concurrent.Volatile
+
 /* Class348_Sub16 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+abstract class Class348_Sub16 : Class348() {
+    @JvmField
+    @Volatile
+    var aBoolean6784: Boolean = true
+    @JvmField
+    var aClass348_Sub16_6785: Class348_Sub16? = null
+    @JvmField
+    var anInt6786: Int = 0
+    @JvmField
+    var aClass348_Sub19_6787: Class348_Sub19? = null
 
-public abstract class Class348_Sub16 extends Class348 {
-    volatile boolean aBoolean6784 = true;
-    Class348_Sub16 aClass348_Sub16_6785;
-    int anInt6786;
-    Class348_Sub19 aClass348_Sub19_6787;
-
-    final void method2815(int[] is, int i, int i_0_) {
-        if (this.aBoolean6784) method2817(is, i, i_0_);
-        else method2819(i_0_);
+    fun method2815(`is`: IntArray, i: Int, i_0_: Int) {
+        if (this.aBoolean6784) method2817(`is`, i, i_0_)
+        else method2819(i_0_)
     }
 
-    abstract Class348_Sub16 method2816();
+    abstract fun method2816(): Class348_Sub16?
 
-    abstract void method2817(int[] is, int i, int i_1_);
+    abstract fun method2817(`is`: IntArray, i: Int, i_1_: Int)
 
-    abstract Class348_Sub16 method2818();
+    abstract fun method2818(): Class348_Sub16?
 
-    abstract void method2819(int i);
+    abstract fun method2819(i: Int)
 
-    int method2820() {
-        return 255;
+    open fun method2820(): Int {
+        return 255
     }
 
-    public Class348_Sub16() {
-        /* empty */
-    }
-
-    abstract int method2821();
+    abstract fun method2821(): Int
 }

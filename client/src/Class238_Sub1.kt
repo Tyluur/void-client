@@ -98,13 +98,13 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
                 } else i_7_ += -class348_sub9.anInt6687 + i_5_
                 if (class348_sub9.anInt6694 == 0 || (-256 + i_7_ > class348_sub9.anInt6694) || Class316.aClass348_Sub51_3959.aClass239_Sub26_7234.method1838(-32350) == 0 || class348_sub9.anInt6693 != i_4_) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
-                        Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676)
+                        Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                         class348_sub9.aClass348_Sub19_Sub1_6686 = null
                         class348_sub9.aClass348_Sub16_Sub5_6676 = null
                         class348_sub9.aClass348_Sub10_6688 = null
                     }
                     if (class348_sub9.aClass348_Sub16_Sub5_6673 != null) {
-                        Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6673)
+                        Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6673!!)
                         class348_sub9.aClass348_Sub16_Sub5_6673 = null
                         class348_sub9.aClass348_Sub10_6683 = null
                         class348_sub9.aClass348_Sub19_Sub1_6692 = null
@@ -137,7 +137,7 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
                                 if ((class348_sub9.aClass348_Sub10_6688) != null) {
                                     if ((class348_sub9.aClass348_Sub19_Sub1_6686) == null) class348_sub9.aClass348_Sub19_Sub1_6686 = class348_sub9.aClass348_Sub10_6688!!.method2791(intArrayOf(22050))
                                     if ((class348_sub9.aClass348_Sub19_Sub1_6686) != null) {
-                                        val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911((class348_sub9.aClass348_Sub19_Sub1_6686), i_15_, i_9_ shl 6, i_10_))
+                                        val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911((class348_sub9.aClass348_Sub19_Sub1_6686!!), i_15_, i_9_ shl 6, i_10_))
                                         class348_sub16_sub5!!.method2917(-1)
                                         Class348_Sub43.aClass348_Sub16_Sub4_7065.method2883(class348_sub16_sub5)
                                         class348_sub9.aClass348_Sub16_Sub5_6676 = class348_sub16_sub5
@@ -166,7 +166,7 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
                                         if ((class348_sub9.aClass348_Sub10_6683) != null) {
                                             if ((class348_sub9.aClass348_Sub19_Sub1_6692) == null) class348_sub9.aClass348_Sub19_Sub1_6692 = (class348_sub9.aClass348_Sub10_6683!!.method2791(intArrayOf(22050)))
                                             if ((class348_sub9.aClass348_Sub19_Sub1_6692) != null) {
-                                                val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911((class348_sub9.aClass348_Sub19_Sub1_6692), i_16_, i_9_ shl 6, i_10_))
+                                                val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911((class348_sub9.aClass348_Sub19_Sub1_6692!!), i_16_, i_9_ shl 6, i_10_))
                                                 class348_sub16_sub5!!.method2917(0)
                                                 Class348_Sub43.aClass348_Sub16_Sub4_7065.method2883(class348_sub16_sub5)
                                                 class348_sub9.aClass348_Sub16_Sub5_6673 = class348_sub16_sub5
