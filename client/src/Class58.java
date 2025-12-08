@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class58 {
+public final class Class58 {
     static int anInt1056;
     private long aLong1057;
     private int anInt1058;

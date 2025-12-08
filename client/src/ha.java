@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.util.Random;
 
-abstract class ha {
+public abstract class ha {
     static int anInt4561;
     static int anInt4562;
     static int anInt4563;

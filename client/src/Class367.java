@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class367 {
+public abstract class Class367 {
     static int anInt4478;
     ha_Sub3 aHa_Sub3_4479;
     static int anInt4480;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class299 {
+public abstract class Class299 {
     static int anInt3812;
     static Class348_Sub49_Sub2 aClass348_Sub49_Sub2_3813 = new Class348_Sub49_Sub2(7500);
     static int anInt3814;

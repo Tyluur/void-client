@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class130 {
+public abstract class Class130 {
     static Class60 aClass60_1894 = new Class60(5);
     static Class356 aClass356_1895 = new Class356(64);
     static int anInt1896;

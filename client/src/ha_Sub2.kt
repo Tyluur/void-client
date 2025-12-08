@@ -3184,7 +3184,7 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         @JvmField
         var anInt7552: Int = 0
         @JvmField
-        var aClass351_7554: Class351?
+        var aClass351_7554: Class351? = Class351(52, 4)
         @JvmField
         var anInt7555: Int = 0
         @JvmField
@@ -3482,7 +3482,7 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         @JvmField
         var anInt7714: Int = 0
         @JvmField
-        var aClass351_7715: Class351?
+        var aClass351_7715: Class351? = Class351(58, 4)
         @JvmField
         var anInt7716: Int = 0
         @JvmField
@@ -3492,7 +3492,7 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         @JvmField
         var anInt7719: Int = 0
         @JvmField
-        var anInt7722: Int
+        var anInt7722: Int = 0
         @JvmField
         var anInt7724: Int = 0
         @JvmField
@@ -3573,7 +3573,7 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                     Class348_Sub13.method2801(class318_sub1_sub3_sub3.method2426(200), i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, 100.toByte())
                     if (Class239_Sub21.anIntArray6062[0] >= 0) {
                         if ((class318_sub1_sub3_sub3.aString10292) != null && (i_321_ <= i_322_ || za.anInt7276 == 0 || za.anInt7276 == 3 || (za.anInt7276 == 1 && (Class348_Sub11.method2797((class318_sub1_sub3_sub3 as Player).aString10544, (-63).toByte())))) && Class88.anInt1497 < Class309.anInt4814) {
-                            Class309.anIntArray4819[Class88.anInt1497] = ((Class369.aClass143_4962.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
+                            Class309.anIntArray4819[Class88.anInt1497] = ((Class369.aClass143_4962!!.method1183(true, class318_sub1_sub3_sub3.aString10292)) / 2)
                             Class309.anIntArray4822[Class88.anInt1497] = Class239_Sub21.anIntArray6062[0]
                             Class309.anIntArray4813[Class88.anInt1497] = Class239_Sub21.anIntArray6062[1]
                             Class309.anIntArray4817[Class88.anInt1497] = class318_sub1_sub3_sub3.anInt10201
@@ -3614,7 +3614,7 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                             if (class105s!!.size <= i_325_) i_325_ = 1
                             val class105 = class105s[0]
                             val class105_328_ = class105s[i_325_]
-                            i_323_ -= max((Class369.aClass143_4962.anInt1988), class105.method969())
+                            i_323_ -= max((Class369.aClass143_4962!!.anInt1988), class105.method969())
                             val i_329_ = (Class239_Sub21.anIntArray6062[0] + (i_317_ + -(class105.method971() shr 1)))
                             var i_330_ = (class105.method971() * class318_sub1_sub3_sub3.anInt10295 / 255)
                             val i_331_ = class105.method969()
@@ -3624,7 +3624,7 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                             class105_328_.method974(i_329_, i_323_)
                             Class348_Sub8.aHa6654.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i)
                             Class338.method2663(-5590, i_329_, i_329_ + class105.method966(), i_323_, i_323_ + i_331_)
-                        } else i_323_ -= max((Class369.aClass143_4962.anInt1988), Class348_Sub45.aClass105Array7107[0].method969())
+                        } else i_323_ -= max((Class369.aClass143_4962!!.anInt1988), Class348_Sub45.aClass105Array7107[0].method969())
                         i_323_ -= 2
                         if (!class318_sub1_sub3_sub3.aBoolean10309) {
                             if (class318_sub1_sub3_sub3.anInt10287 > Class367_Sub11.anInt7396) {
@@ -4019,7 +4019,7 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 else class318_sub1_sub3_sub3_436_ = Class294.aPlayerArray5058[i_435_]
                 Class191.method1430(--class318_sub1_sub3_sub3.anInt10261, 119.toByte(), i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3)
             }
-            val i_437_ = i_316_ + (Class369.aClass143_4962.anInt1993 + Class369.aClass143_4962.anInt1988)
+            val i_437_ = i_316_ + (Class369.aClass143_4962!!.anInt1993 + Class369.aClass143_4962!!.anInt1988)
             for (i_438_ in 0..<Class88.anInt1497) {
                 val i_439_ = Class309.anIntArray4822[i_438_]
                 var i_440_ = Class309.anIntArray4813[i_438_]
@@ -4038,11 +4038,11 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 }
                 Class309.anIntArray4813[i_438_] = i_440_
                 val string = Class309.aStringArray4818[i_438_]
-                val i_443_ = Class369.aClass143_4962.method1183(true, string)
+                val i_443_ = Class369.aClass143_4962!!.method1183(true, string)
                 var i_444_ = i_439_ + i_317_
-                var i_445_ = -Class369.aClass143_4962.anInt1988 + i_440_ + i
+                var i_445_ = -Class369.aClass143_4962!!.anInt1988 + i_440_ + i
                 var i_446_ = i_444_ - -i_443_
-                var i_447_ = i_440_ + i - -Class369.aClass143_4962.anInt1993
+                var i_447_ = i_440_ + i - -Class369.aClass143_4962!!.anInt1993
                 if (Class348_Sub40_Sub31.anInt9408 == 0) {
                     var i_448_ = 16776960
                     if (Class309.anIntArray4817[i_438_] < 6) i_448_ = (Class115.anIntArray1757[Class309.anIntArray4817[i_438_]])
@@ -4098,7 +4098,7 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                         i_445_ -= 7
                     }
                     if (Class309.anIntArray4806[i_438_] == 4) {
-                        val i_453_ = ((150 + -Class309.anIntArray4812[i_438_]) * (Class369.aClass143_4962.method1183(true, string) + 100) / 150)
+                        val i_453_ = ((150 + -Class309.anIntArray4812[i_438_]) * (Class369.aClass143_4962!!.method1183(true, string) + 100) / 150)
                         Class348_Sub8.aHa6654.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
                         i_444_ += 50 - i_453_
                         i_446_ += -i_453_ + 50
@@ -4111,7 +4111,7 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                         if (i_454_ >= 25) {
                             if (i_454_ > 125) i_455_ = i_454_ + -125
                         } else i_455_ = i_454_ - 25
-                        val i_456_ = (Class369.aClass143_4962.anInt1993 + Class369.aClass143_4962.anInt1988)
+                        val i_456_ = (Class369.aClass143_4962!!.anInt1993 + Class369.aClass143_4962!!.anInt1988)
                         Class348_Sub8.aHa6654.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_447_ += i_455_
@@ -4127,12 +4127,6 @@ internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 }
                 Class338.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_)
             }
-        }
-
-        init {
-            aClass351_7554 = Class351(52, 4)
-            aClass351_7715 = Class351(58, 4)
-            anInt7722 = 0
         }
     }
 }

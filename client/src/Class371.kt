@@ -1,34 +1,39 @@
 /* Class371 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+internal class Class371 {
+    @JvmField
+    var anInt4520: Int = 0
+    @JvmField
+    var anInt4522: Int = 0
+    @JvmField
+    var anInt4524: Int = 0
+    @JvmField
+    var anInt4525: Int = 0
 
-final class Class371 {
-    int anInt4520;
-    static int anInt4521;
-    int anInt4522;
-    static int anInt4523;
-    int anInt4524;
-    int anInt4525;
-
-    static final Class258_Sub3_Sub1 method3583(boolean bool, byte[] is, int i, int i_0_, ha_Sub2 var_ha_Sub2, int i_1_, int i_2_, int i_3_) {
-        try {
-            anInt4521++;
-            if (i_1_ > -17) return null;
-            if (var_ha_Sub2.aBoolean7793 || Class192.method1436(-58, i_3_) && Class192.method1436(-68, i_0_)) return new Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_2_, i_3_, i_0_, bool, is, i);
-            if (var_ha_Sub2.aBoolean7837) return new Class258_Sub3_Sub1(var_ha_Sub2, 34037, i_2_, i_3_, i_0_, bool, is, i);
-            return new Class258_Sub3_Sub1(var_ha_Sub2, i_2_, i_3_, i_0_, Class33.method340(i_3_, (byte) 108), Class33.method340(i_0_, (byte) 108), is, i);
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fr.B(" + bool + ',' + (is != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ')'));
+    companion object {
+        @JvmField
+        var anInt4521: Int = 0
+        @JvmField
+        var anInt4523: Int = 0
+        @JvmStatic
+        fun method3583(bool: Boolean, `is`: ByteArray?, i: Int, i_0_: Int, var_ha_Sub2: ha_Sub2?, i_1_: Int, i_2_: Int, i_3_: Int): Class258_Sub3_Sub1? {
+            try {
+                anInt4521++
+                if (i_1_ > -17) return null
+                if (var_ha_Sub2!!.aBoolean7793 || Class192.method1436(-58, i_3_) && Class192.method1436(-68, i_0_)) return Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_2_, i_3_, i_0_, bool, `is`, i)
+                if (var_ha_Sub2.aBoolean7837) return Class258_Sub3_Sub1(var_ha_Sub2, 34037, i_2_, i_3_, i_0_, bool, `is`, i)
+                return Class258_Sub3_Sub1(var_ha_Sub2, i_2_, i_3_, i_0_, Class33.method340(i_3_, 108.toByte()), Class33.method340(i_0_, 108.toByte()), `is`, i)
+            } catch (runtimeexception: RuntimeException) {
+                throw Class348_Sub17.method2929(runtimeexception, ("fr.B(" + bool + ',' + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ')'))
+            }
         }
-    }
 
-    static final boolean method3584(int i, int i_4_) {
-        if (i_4_ != 1) return false;
-        anInt4523++;
-        return i == 0 || i == 1 || i == 2;
-    }
-
-    public Class371() {
-        /* empty */
+        @JvmStatic
+        fun method3584(i: Int, i_4_: Int): Boolean {
+            if (i_4_ != 1) return false
+            anInt4523++
+            return i == 0 || i == 1 || i == 2
+        }
     }
 }

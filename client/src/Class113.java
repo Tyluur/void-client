@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class113 {
+public final class Class113 {
     static long aLong1739 = 0L;
     static int anInt1740;
     static int anInt1741;

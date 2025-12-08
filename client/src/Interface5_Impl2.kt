@@ -1,6 +1,6 @@
 import jaclib.memory.Buffer
 
-internal interface Interface5_Impl2 : Interface5 {
+interface Interface5_Impl2 : Interface5 {
     fun method22(i: Int): Boolean
 
     fun method21(i: Int)

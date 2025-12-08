@@ -4,7 +4,7 @@
 
 import jagdx.IDirect3DBaseTexture;
 
-abstract class Class310 {
+public abstract class Class310 {
     boolean aBoolean3892;
     Class378 aClass378_3893;
     Class209 aClass209_3894 = Class71.aClass209_1212;

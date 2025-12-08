@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-abstract class ha_Sub3 extends ha {
+public abstract class ha_Sub3 extends ha {
     static int anInt7884;
     static int anInt7885;
     static int anInt7886;
@@ -2607,7 +2607,7 @@ abstract class ha_Sub3 extends ha {
         return true;
     }
 
-    ha_Sub3(Canvas canvas, Object object, d var_d, Class45 class45, int i, int i_289_) {
+    public ha_Sub3(Canvas canvas, Object object, d var_d, Class45 class45, int i, int i_289_) {
         super(var_d);
         this.aFloat8089 = 3584.0F;
         this.anInt8095 = 50;

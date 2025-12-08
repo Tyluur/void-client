@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class209 {
+public final class Class209 {
     static int anInt2716;
     static Class114 aClass114_2717 = new Class114(118, -2);
     static Class348_Sub16_Sub3 aClass348_Sub16_Sub3_2718;

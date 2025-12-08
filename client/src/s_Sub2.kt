@@ -835,8 +835,8 @@ internal class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i
             if (i.toInt() == 55) {
                 if (Class374.aClass78_4538 != null) {
                     try {
-                        Class374.aClass78_4538.method789(0L, (-120).toByte())
-                        Class374.aClass78_4538.method784(-89, `is`)
+                        Class374.aClass78_4538!!.method789(0L, (-120).toByte())
+                        Class374.aClass78_4538!!.method784(-89, `is`)
                         var i_170_: Int
                         i_170_ = 0
                         while (i_170_ < 24) {

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class365 {
+public final class Class365 {
     String aString4470;
     long aLong4471;
     String aString4472;

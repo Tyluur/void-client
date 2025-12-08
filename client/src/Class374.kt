@@ -1,33 +1,35 @@
-/* Class374 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import java.io.*
 
-import java.io.*;
+internal object Class374 {
+    @JvmField
+    var anInt4536: Int = 0
+    @JvmField
+    var aClass74_4537: Class74? = Class74(3, 2)
+    @JvmField
+    var aClass78_4538: Class78? = null
 
-final class Class374 {
-    static int anInt4536;
-    static Class74 aClass74_4537 = new Class74(3, 2);
-    static Class78 aClass78_4538;
-
-    static final void method3610(byte[] is, byte i, int i_0_, File file) throws IOException {
+    @JvmStatic
+    @Throws(IOException::class)
+    fun method3610(`is`: ByteArray?, i: Byte, i_0_: Int, file: File?) {
         try {
-            anInt4536++;
-            DataInputStream datainputstream = (new DataInputStream(new BufferedInputStream(new FileInputStream(file))));
+            anInt4536++
+            val datainputstream = (DataInputStream(BufferedInputStream(FileInputStream(file))))
             try {
-                int i_1_ = -11 % ((-43 - i) / 33);
-                datainputstream.readFully(is, 0, i_0_);
-            } catch (java.io.EOFException eofexception) {
+                val i_1_ = -11 % ((-43 - i) / 33)
+                datainputstream.readFully(`is`, 0, i_0_)
+            } catch (eofexception: EOFException) {
                 /* empty */
             }
-            datainputstream.close();
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("gca.A(" + (is != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + (file != null ? "{...}" : "null") + ')'));
+            datainputstream.close()
+        } catch (runtimeexception: RuntimeException) {
+            throw Class348_Sub17.method2929(runtimeexception, ("gca.A(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + (if (file != null) "{...}" else "null") + ')'))
         }
     }
 
-    public static void method3611(boolean bool) {
-        if (bool != true) aClass74_4537 = null;
-        aClass74_4537 = null;
-        aClass78_4538 = null;
+    @JvmStatic
+    fun method3611(bool: Boolean) {
+        if (bool != true) aClass74_4537 = null
+        aClass74_4537 = null
+        aClass78_4538 = null
     }
 }

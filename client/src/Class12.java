@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class12 {
+public final class Class12 {
     byte aByte198;
     boolean aBoolean199;
     int anInt200;
