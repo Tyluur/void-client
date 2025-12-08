@@ -1,9 +1,9 @@
 /* Class5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-abstract class Class5(class45: Class45?, class45_15_: Class45?, class369: Class369?) : Interface1 {
+abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class369?) : Interface1 {
     private var anInt4630 = 0
-    private val aClass45_4631: Class45?
+    private val aClass45_4631: Class45 = class45_15_
     @JvmField
     var aClass45_4632: Class45? = null
     @JvmField
@@ -69,7 +69,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45?, class369: Class3
 
     init {
         try {
-            aClass45_4631 = class45_15_
+
             this.aClass45_4632 = class45
             this.aClass369_4635 = class369
         } catch (runtimeexception: RuntimeException) {
