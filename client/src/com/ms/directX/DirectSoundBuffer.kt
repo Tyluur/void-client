@@ -1,25 +1,26 @@
-package com.ms.directX;
+package com.ms.directX
 
-import com.ms.com.ComFailException;
+import com.ms.com.ComFailException
 
-public class DirectSoundBuffer {
-	public void stop() throws ComFailException {
-		/* empty */
-	}
+class DirectSoundBuffer {
+    @Throws(ComFailException::class)
+    fun stop() {
+        /* empty */
+    }
 
-	public void setCurrentPosition(int i) {
-		/* empty */
-	}
+    fun setCurrentPosition(i: Int) {
+        /* empty */
+    }
 
-	public void getCurrentPosition(DSCursors dscursors) {
-		/* empty */
-	}
+    fun getCurrentPosition(dscursors: DSCursors?) {
+        /* empty */
+    }
 
-	public void writeBuffer(int i, int i_0_, byte[] is, int i_1_) {
-		/* empty */
-	}
+    fun writeBuffer(i: Int, i_0_: Int, `is`: ByteArray?, i_1_: Int) {
+        /* empty */
+    }
 
-	public void play(int i) {
-		/* empty */
-	}
+    fun play(i: Int) {
+        /* empty */
+    }
 }

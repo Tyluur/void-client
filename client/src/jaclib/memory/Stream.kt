@@ -1,160 +1,157 @@
-package jaclib.memory;
+package jaclib.memory
 
 
-public final class Stream {
+class Stream private constructor(arg0: Int) {
+    private var a = 0
 
-	private int a;
+    private var b: Buffer? = null
 
-	private Buffer b;
+    private var c = 0
 
-	private int c;
+    private var d = 0
 
-	private int d;
+    private val e: ByteArray
 
-	private final byte[] e;
+    constructor() : this(4096)
 
-	public static native int floatToRawIntBits(float arg0);
+    @JvmOverloads
+    constructor(arg0: Buffer, arg1: Int = 0, arg2: Int = arg0.getSize()) : this(if (arg0.getSize() >= 4096) 4096 else arg0.getSize()) {
+        this.a(arg0, arg1, arg2)
+    }
 
-	private static native byte getLSB(int arg0);
+    init {
+        this.e = ByteArray(arg0)
+    }
 
-	public static boolean c() {
-		return getLSB(-65536) == -1;
-	}
+    fun a(arg0: Int) {
+        if (this.c + 1 >= this.e.size) {
+            this.a()
+        }
+        this.e[this.c++] = arg0.toByte()
+        this.e[this.c++] = (arg0 shr 8).toByte()
+    }
 
-	public Stream() {
-		this(4096);
-	}
+    fun a(arg0: Float) {
+        if (this.e.size <= this.c + 3) {
+            this.a()
+        }
+        val local12: Int = floatToRawIntBits(arg0)
+        this.e[this.c++] = (local12 shr 24).toByte()
+        this.e[this.c++] = (local12 shr 16).toByte()
+        this.e[this.c++] = (local12 shr 8).toByte()
+        this.e[this.c++] = local12.toByte()
+    }
 
-	public Stream(Buffer arg0) {
-		this(arg0, 0, arg0.getSize());
-	}
+    fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
+        if (this.c + 3 >= this.e.size) {
+            this.a()
+        }
+        this.e[this.c++] = arg0.toByte()
+        this.e[this.c++] = arg1.toByte()
+        this.e[this.c++] = arg2.toByte()
+        this.e[this.c++] = arg3.toByte()
+    }
 
-	public Stream(Buffer arg0, int arg1, int arg2) {
-		this(arg0.getSize() >= 4096 ? 4096 : arg0.getSize());
-		this.a(arg0, arg1, arg2);
-	}
+    fun a(arg0: Buffer) {
+        this.a(arg0, 0, arg0.getSize())
+    }
 
-	private Stream(int arg0) {
-		this.e = new byte[arg0];
-	}
+    fun b(arg0: Int) {
+        if (this.c + 3 >= this.e.size) {
+            this.a()
+        }
+        this.e[this.c++] = arg0.toByte()
+        this.e[this.c++] = (arg0 shr 8).toByte()
+        this.e[this.c++] = (arg0 shr 16).toByte()
+        this.e[this.c++] = (arg0 shr 24).toByte()
+    }
 
-	public void a(int arg0) {
-		if (this.c + 1 >= this.e.length) {
-			this.a();
-		}
-		this.e[this.c++] = (byte) arg0;
-		this.e[this.c++] = (byte) (arg0 >> 8);
-	}
+    fun a() {
+        if (this.c <= 0) {
+            return
+        }
+        if (this.a < this.c + this.d) {
+            throw RuntimeException()
+        }
+        this.b!!.a(this.e, 0, this.d, this.c)
+        this.d += this.c
+        this.c = 0
+    }
 
-	public void a(float arg0) {
-		if (this.e.length <= this.c + 3) {
-			this.a();
-		}
-		int local12 = floatToRawIntBits(arg0);
-		this.e[this.c++] = (byte) (local12 >> 24);
-		this.e[this.c++] = (byte) (local12 >> 16);
-		this.e[this.c++] = (byte) (local12 >> 8);
-		this.e[this.c++] = (byte) local12;
-	}
+    private fun a(arg0: Buffer, arg1: Int, arg2: Int) {
+        this.a()
+        this.a = arg1 + arg2
+        this.d = arg1
+        this.b = arg0
+        if (this.a > arg0.getSize()) {
+            throw RuntimeException()
+        }
+    }
 
-	public void a(int arg0, int arg1, int arg2, int arg3) {
-		if (this.c + 3 >= this.e.length) {
-			this.a();
-		}
-		this.e[this.c++] = (byte) arg0;
-		this.e[this.c++] = (byte) arg1;
-		this.e[this.c++] = (byte) arg2;
-		this.e[this.c++] = (byte) arg3;
-	}
+    fun b(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
+        if (this.e.size <= this.c + 3) {
+            this.a()
+        }
+        this.e[this.c++] = arg2.toByte()
+        this.e[this.c++] = arg1.toByte()
+        this.e[this.c++] = arg0.toByte()
+        this.e[this.c++] = arg3.toByte()
+    }
 
-	public void a(Buffer arg0) {
-		this.a(arg0, 0, arg0.getSize());
-	}
+    fun c(arg0: Int) {
+        if (this.e.size <= this.c + 3) {
+            this.a()
+        }
+        this.e[this.c++] = (arg0 shr 16).toByte()
+        this.e[this.c++] = (arg0 shr 8).toByte()
+        this.e[this.c++] = arg0.toByte()
+        this.e[this.c++] = (arg0 shr 24).toByte()
+    }
 
-	public void b(int arg0) {
-		if (this.c + 3 >= this.e.length) {
-			this.a();
-		}
-		this.e[this.c++] = (byte) arg0;
-		this.e[this.c++] = (byte) (arg0 >> 8);
-		this.e[this.c++] = (byte) (arg0 >> 16);
-		this.e[this.c++] = (byte) (arg0 >> 24);
-	}
+    fun b(): Int {
+        return this.d + this.c
+    }
 
-	public void a() {
-		if (this.c <= 0) {
-			return;
-		}
-		if (this.a < this.c + this.d) {
-			throw new RuntimeException();
-		}
-		this.b.a(this.e, 0, this.d, this.c);
-		this.d += this.c;
-		this.c = 0;
-	}
+    fun d(arg0: Int) {
+        if (this.e.size <= this.c + 1) {
+            this.a()
+        }
+        this.e[this.c++] = (arg0 shr 8).toByte()
+        this.e[this.c++] = arg0.toByte()
+    }
 
-	private void a(Buffer arg0, int arg1, int arg2) {
-		this.a();
-		this.a = arg1 + arg2;
-		this.d = arg1;
-		this.b = arg0;
-		if (this.a > arg0.getSize()) {
-			throw new RuntimeException();
-		}
-	}
+    fun e(arg0: Int) {
+        this.a()
+        this.d = arg0
+    }
 
-	public void b(int arg0, int arg1, int arg2, int arg3) {
-		if (this.e.length <= this.c + 3) {
-			this.a();
-		}
-		this.e[this.c++] = (byte) arg2;
-		this.e[this.c++] = (byte) arg1;
-		this.e[this.c++] = (byte) arg0;
-		this.e[this.c++] = (byte) arg3;
-	}
+    fun b(arg0: Float) {
+        if (this.e.size <= this.c + 3) {
+            this.a()
+        }
+        val local12: Int = floatToRawIntBits(arg0)
+        this.e[this.c++] = local12.toByte()
+        this.e[this.c++] = (local12 shr 8).toByte()
+        this.e[this.c++] = (local12 shr 16).toByte()
+        this.e[this.c++] = (local12 shr 24).toByte()
+    }
 
-	public void c(int arg0) {
-		if (this.e.length <= this.c + 3) {
-			this.a();
-		}
-		this.e[this.c++] = (byte) (arg0 >> 16);
-		this.e[this.c++] = (byte) (arg0 >> 8);
-		this.e[this.c++] = (byte) arg0;
-		this.e[this.c++] = (byte) (arg0 >> 24);
-	}
+    fun f(arg0: Int) {
+        if (this.c >= this.e.size) {
+            this.a()
+        }
+        this.e[this.c++] = arg0.toByte()
+    }
 
-	public int b() {
-		return this.d + this.c;
-	}
+    companion object {
+        @JvmStatic
+        external fun floatToRawIntBits(arg0: Float): Int
 
-	public void d(int arg0) {
-		if (this.e.length <= this.c + 1) {
-			this.a();
-		}
-		this.e[this.c++] = (byte) (arg0 >> 8);
-		this.e[this.c++] = (byte) arg0;
-	}
+        private external fun getLSB(arg0: Int): Byte
 
-	public void e(int arg0) {
-		this.a();
-		this.d = arg0;
-	}
-
-	public void b(float arg0) {
-		if (this.e.length <= this.c + 3) {
-			this.a();
-		}
-		int local12 = floatToRawIntBits(arg0);
-		this.e[this.c++] = (byte) local12;
-		this.e[this.c++] = (byte) (local12 >> 8);
-		this.e[this.c++] = (byte) (local12 >> 16);
-		this.e[this.c++] = (byte) (local12 >> 24);
-	}
-
-	public void f(int arg0) {
-		if (this.c >= this.e.length) {
-			this.a();
-		}
-		this.e[this.c++] = (byte) arg0;
-	}
+        @JvmStatic
+        fun c(): Boolean {
+            return getLSB(-65536).toInt() == -1
+        }
+    }
 }

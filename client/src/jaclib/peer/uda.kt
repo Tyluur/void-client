@@ -1,9 +1,8 @@
-package jaclib.peer;
+package jaclib.peer
 
 
-public class uda extends Peer {
-
-	public uda(hb arg0) {
-		this.reference = new NativeHeapPeerReference(this, arg0);
-	}
+open class uda(arg0: hb?) : Peer() {
+    init {
+        this.reference = NativeHeapPeerReference(this, arg0)
+    }
 }

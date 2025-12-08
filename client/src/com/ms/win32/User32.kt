@@ -1,34 +1,48 @@
-package com.ms.win32;
+package com.ms.win32
 
-import com.ms.dll.Callback;
+import com.ms.dll.Callback
 
-public class User32 {
-	public static native int SetWindowLong(int i, int i_0_, int i_1_);
+object User32 {
+    @JvmStatic
+    external fun SetWindowLong(i: Int, i_0_: Int, i_1_: Int): Int
 
-	public static native int GetWindowLong(int i, int i_2_);
+    @JvmStatic
+    external fun GetWindowLong(i: Int, i_2_: Int): Int
 
-	public static native int CallWindowProc(Callback callback, int i, int i_3_,
-                                            int i_4_, int i_5_);
+    external fun CallWindowProc(
+        callback: Callback?, i: Int, i_3_: Int,
+        i_4_: Int, i_5_: Int
+    ): Int
 
-	public static native int SetCursor(int i);
+    @JvmStatic
+    external fun SetCursor(i: Int): Int
 
-	public static int SetWindowLong(int i, int i_6_, Callback callback) {
-		return 0;
-	}
+    fun SetWindowLong(i: Int, i_6_: Int, callback: Callback?): Int {
+        return 0
+    }
 
-	public static native boolean SetCursorPos(int i, int i_7_);
+    @JvmStatic
+    external fun SetCursorPos(i: Int, i_7_: Int): Boolean
 
-	public static native int LoadCursor(int i, int i_8_);
+    @JvmStatic
+    external fun LoadCursor(i: Int, i_8_: Int): Int
 
-	public static native int SendMessage(int i, int i_9_, int i_10_,
-			Object object);
+    @JvmStatic
+    external fun SendMessage(
+        i: Int, i_9_: Int, i_10_: Int,
+        `object`: Any?
+    ): Int
 
-	public static int CallWindowProc(int i, int i_11_, int i_12_, int i_13_,
-			int i_14_) {
-		return 0;
-	}
+    @JvmStatic
+    fun CallWindowProc(
+        i: Int, i_11_: Int, i_12_: Int, i_13_: Int,
+        i_14_: Int
+    ): Int {
+        return 0
+    }
 
-	public static int SetWindowLong(int i, int i_15_, Object object) {
-		return 0;
-	}
+    @JvmStatic
+    fun SetWindowLong(i: Int, i_15_: Int, `object`: Any?): Int {
+        return 0
+    }
 }

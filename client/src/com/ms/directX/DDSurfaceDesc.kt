@@ -1,8 +1,12 @@
-package com.ms.directX;
+package com.ms.directX
 
-public class DDSurfaceDesc {
-	public int height;
-	public int width;
-	public int rgbBitCount;
-	public int refreshRate;
+class DDSurfaceDesc {
+    @JvmField
+    var height: Int = 0
+    @JvmField
+    var width: Int = 0
+    @JvmField
+    var rgbBitCount: Int = 0
+    @JvmField
+    var refreshRate: Int = 0
 }

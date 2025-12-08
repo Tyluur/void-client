@@ -1,7 +1,8 @@
-package com.ms.dll;
+package com.ms.dll
 
-public class Root {
-	public static void alloc(Object object) {
-		/* empty */
-	}
+object Root {
+    @JvmStatic
+    fun alloc(`object`: Any?) {
+        /* empty */
+    }
 }

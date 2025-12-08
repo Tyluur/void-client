@@ -1,11 +1,6 @@
-package jaclib.peer;
+package jaclib.peer
 
 
-public final class IUnknownReference extends PeerReference {
-
-	public IUnknownReference(IUnknown arg0, hb arg1) {
-		super(arg0, arg1);
-	}
-
-	protected native long releasePeer(long arg0);
+class IUnknownReference(arg0: IUnknown?, arg1: hb?) : PeerReference(arg0, arg1) {
+    external override fun releasePeer(arg0: Long): Long
 }

@@ -1,56 +1,44 @@
-package jaclib.memory.heap;
+package jaclib.memory.heap
 
-import jaclib.memory.Buffer;
-import jaclib.memory.Source;
+import jaclib.memory.Buffer
+import jaclib.memory.Source
 
-public final class NativeHeapBuffer implements Buffer, Source {
+class NativeHeapBuffer(private val a: NativeHeap, private val d: Int, @JvmField val b: Int) : Buffer, Source {
+    private var c = true
 
-	private boolean c = true;
+    override fun getAddress(): Long {
+        return this.a.getBufferAddress(this.d)
+    }
 
-	public final int b;
+    @Synchronized
+    private fun a(): Boolean {
+        return this.a.a() && this.c
+    }
 
-	private final NativeHeap a;
+    @Synchronized
+    private fun b() {
+        if (this.a()) {
+            this.a.deallocateBuffer(this.d)
+        }
+        this.c = false
+    }
 
-	private final int d;
+    @Synchronized
+    override fun a(arg0: ByteArray?, arg1: Int, arg2: Int, arg3: Int) {
+        if ((arg1 < 0) or (arg0 == null) or !this.a() or (arg3 + arg1 > arg0!!.size) or (arg2 < 0) or (this.b < arg2 + arg3)) {
+            throw RuntimeException()
+        }
+        this.a.put(this.d, arg0, arg1, arg2, arg3)
+    }
 
-	public NativeHeapBuffer(NativeHeap arg0, int arg1, int arg2) {
-		this.b = arg2;
-		this.a = arg0;
-		this.d = arg1;
-	}
+    @Synchronized
+    @Throws(Throwable::class)
+    fun finalize() {
+//        super.finalize()
+        this.b()
+    }
 
-	@Override
-	public long getAddress() {
-		return this.a.getBufferAddress(this.d);
-	}
-
-	private synchronized boolean a() {
-		return this.a.a() && this.c;
-	}
-
-	private synchronized void b() {
-		if (this.a()) {
-			this.a.deallocateBuffer(this.d);
-		}
-		this.c = false;
-	}
-
-	@Override
-	public synchronized void a(byte[] arg0, int arg1, int arg2, int arg3) {
-		if (arg1 < 0 | arg0 == null | !this.a() | arg3 + arg1 > arg0.length | arg2 < 0 | this.b < arg2 + arg3) {
-			throw new RuntimeException();
-		}
-		this.a.put(this.d, arg0, arg1, arg2, arg3);
-	}
-
-	@Override
-	public synchronized void finalize() throws Throwable {
-		super.finalize();
-		this.b();
-	}
-
-	@Override
-	public int getSize() {
-		return this.b;
-	}
+    override fun getSize(): Int {
+        return this.b
+    }
 }

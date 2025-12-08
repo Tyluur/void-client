@@ -1,30 +1,33 @@
-package com.ms.directX;
+package com.ms.directX
 
-import java.awt.*;
+import java.awt.Component
+import java.awt.Frame
 
-public class DirectDraw {
-	public void setDisplayMode(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
-		/* empty */
-	}
+class DirectDraw {
+    fun setDisplayMode(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
+        /* empty */
+    }
 
-	public void setCooperativeLevel(Frame frame, int i) {
-		/* empty */
-	}
+    fun setCooperativeLevel(frame: Frame?, i: Int) {
+        /* empty */
+    }
 
-	public void setCooperativeLevel(Component component, int i) {
-		/* empty */
-	}
+    fun setCooperativeLevel(component: Component?, i: Int) {
+        /* empty */
+    }
 
-	public void initialize(Object object) {
-		/* empty */
-	}
+    fun initialize(`object`: Any?) {
+        /* empty */
+    }
 
-	public void restoreDisplayMode() {
-		/* empty */
-	}
+    fun restoreDisplayMode() {
+        /* empty */
+    }
 
-	public void enumDisplayModes(int i, Object object, Object object_4_,
-			IEnumModesCallback ienummodescallback) {
-		/* empty */
-	}
+    fun enumDisplayModes(
+        i: Int, `object`: Any?, object_4_: Any?,
+        ienummodescallback: IEnumModesCallback?
+    ) {
+        /* empty */
+    }
 }

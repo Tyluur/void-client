@@ -1,55 +1,57 @@
-package jaclib.memory.heap;
+package jaclib.memory.heap
 
 
-public final class NativeHeap {
+class NativeHeap(private val b: Int) {
+    private val peer: Long = 0
 
-	private long peer;
+    private var a: Boolean
 
-	private final int b;
+    init {
+        this.allocateHeap(this.b)
+        this.a = true
+    }
 
-	private boolean a;
+    private external fun allocateHeap(arg0: Int)
 
-	public NativeHeap(int arg0) {
-		this.b = arg0;
-		this.allocateHeap(this.b);
-		this.a = true;
-	}
+    @Synchronized
+    fun a(): Boolean {
+        return this.a
+    }
 
-	private native void allocateHeap(int arg0);
+    fun a(arg0: Int, arg1: Boolean): NativeHeapBuffer {
+        check(this.a)
+        return NativeHeapBuffer(this, this.allocateBuffer(arg0, arg1), arg0)
+    }
 
-	public synchronized boolean a() {
-		return this.a;
-	}
+    @Synchronized
+    @Throws(Throwable::class)
+    fun finalize() {
+//        super.finalize()
+        this.b()
+    }
 
-	public NativeHeapBuffer a(int arg0, boolean arg1) {
-		if (!this.a) {
-			throw new IllegalStateException();
-		}
-		return new NativeHeapBuffer(this, this.allocateBuffer(arg0, arg1), arg0);
-	}
+    @Synchronized
+    fun b() {
+        if (this.a) {
+            this.deallocateHeap()
+        }
+        this.a = false
+    }
 
-	@Override
-	public synchronized void finalize() throws Throwable {
-		super.finalize();
-		this.b();
-	}
+    @Synchronized
+    private external fun allocateBuffer(arg0: Int, arg1: Boolean): Int
 
-	public synchronized void b() {
-		if (this.a) {
-			this.deallocateHeap();
-		}
-		this.a = false;
-	}
+    @Synchronized
+    private external fun get(arg0: Int, arg1: ByteArray?, arg2: Int, arg3: Int, arg4: Int)
 
-	private synchronized native int allocateBuffer(int arg0, boolean arg1);
+    @Synchronized
+    external fun put(arg0: Int, arg1: ByteArray?, arg2: Int, arg3: Int, arg4: Int)
 
-	private synchronized native void get(int arg0, byte[] arg1, int arg2, int arg3, int arg4);
+    private external fun deallocateHeap()
 
-	public synchronized native void put(int arg0, byte[] arg1, int arg2, int arg3, int arg4);
+    @Synchronized
+    external fun getBufferAddress(arg0: Int): Long
 
-	private native void deallocateHeap();
-
-	public synchronized native long getBufferAddress(int arg0);
-
-	public synchronized native void deallocateBuffer(int arg0);
+    @Synchronized
+    external fun deallocateBuffer(arg0: Int)
 }

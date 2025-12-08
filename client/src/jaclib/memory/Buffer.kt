@@ -1,11 +1,10 @@
-package jaclib.memory;
+package jaclib.memory
 
 
-public interface Buffer {
+interface Buffer {
+    fun getSize(): Int
 
-	int getSize();
+	fun getAddress(): Long
 
-	long getAddress();
-
-	void a(byte[] arg0, int arg1, int arg2, int arg3);
+    fun a(arg0: ByteArray?, arg1: Int, arg2: Int, arg3: Int)
 }

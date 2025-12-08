@@ -1,4 +1,3 @@
-package com.ms.dll;
+package com.ms.dll
 
-public class Callback {
-}
+open class Callback 

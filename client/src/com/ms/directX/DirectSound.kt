@@ -1,18 +1,20 @@
-package com.ms.directX;
+package com.ms.directX
 
-import java.awt.*;
+import java.awt.Component
 
-public class DirectSound {
-	public DirectSoundBuffer createSoundBuffer(DSBufferDesc dsbufferdesc,
-                                               WaveFormatEx waveformatex) {
-		return null;
-	}
+class DirectSound {
+    fun createSoundBuffer(
+        dsbufferdesc: DSBufferDesc?,
+        waveformatex: WaveFormatEx?
+    ): DirectSoundBuffer? {
+        return null
+    }
 
-	public void initialize(Object object) {
-		/* empty */
-	}
+    fun initialize(`object`: Any?) {
+        /* empty */
+    }
 
-	public void setCooperativeLevel(Component component, int i) {
-		/* empty */
-	}
+    fun setCooperativeLevel(component: Component?, i: Int) {
+        /* empty */
+    }
 }

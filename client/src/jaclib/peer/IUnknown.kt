@@ -1,15 +1,14 @@
-package jaclib.peer;
+package jaclib.peer
 
 
-public class IUnknown extends Peer {
+open class IUnknown(arg0: hb?) : Peer() {
+    init {
+        this.reference = IUnknownReference(this, arg0)
+    }
 
-	public IUnknown(hb arg0) {
-		this.reference = new IUnknownReference(this, arg0);
-	}
+    private external fun AddRef(): Long
 
-	private native long AddRef();
-
-	public final long a(int arg0) {
-		return super.a();
-	}
+    fun a(arg0: Int): Long {
+        return super.a()
+    }
 }

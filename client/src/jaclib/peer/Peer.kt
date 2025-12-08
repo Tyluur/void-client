@@ -1,24 +1,22 @@
-package jaclib.peer;
+package jaclib.peer
 
 
-public abstract class Peer {
+abstract class Peer protected constructor() {
+    protected var reference: PeerReference? = null
 
-	protected PeerReference reference;
+    protected fun a(arg0: Boolean): Boolean {
+        return this.reference!!.a((-67).toByte())
+    }
 
-	static {
-		init(PeerReference.class);
-	}
+    protected open fun a(): Long {
+        return this.reference!!.a(false)
+    }
 
-	private static native void init(Class arg0);
+    companion object {
+        init {
+            init(PeerReference::class.java)
+        }
 
-	protected Peer() {
-	}
-
-	protected final boolean a(boolean arg0) {
-		return this.reference.a((byte) -67);
-	}
-
-	protected long a() {
-		return this.reference.a(false);
-	}
+        private external fun init(arg0: Class<*>?)
+    }
 }

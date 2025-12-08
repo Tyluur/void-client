@@ -1,36 +1,32 @@
-package jaclib.memory;
+package jaclib.memory
 
 
-public class NativeBuffer implements Buffer, Source {
+open class NativeBuffer : Buffer, Source {
+    private var a: Long = 0
 
-	private long a;
+    private var b = -1
 
-	private int b = -1;
+    override fun getAddress(): Long {
+        return this.a
+    }
 
-	@Override
-	public final long getAddress() {
-		return this.a;
-	}
+    override fun a(arg0: ByteArray?, arg1: Int, arg2: Int, arg3: Int) {
+        if ((arg2 + arg3 > this.b) or (arg2 < 0) or ((arg0?.size ?: 0) < arg3 + arg1) or (arg1 < 0) or (arg0 == null) or (this.a == 0L)) {
+            throw RuntimeException()
+        }
+        this.put(this.a, arg0, arg1, arg2, arg3)
+    }
 
-	@Override
-	public void a(byte[] arg0, int arg1, int arg2, int arg3) {
-		if (arg2 + arg3 > this.b | arg2 < 0 | arg0.length < arg3 + arg1 | arg1 < 0 | arg0 == null | this.a == 0L) {
-			throw new RuntimeException();
-		}
-		this.put(this.a, arg0, arg1, arg2, arg3);
-	}
+    override fun getSize(): Int {
+        return this.b
+    }
 
-	@Override
-	public final int getSize() {
-		return this.b;
-	}
+    protected fun a(arg0: Long, arg1: Int) {
+        this.b = arg1
+        this.a = arg0
+    }
 
-	protected final void a(long arg0, int arg1) {
-		this.b = arg1;
-		this.a = arg0;
-	}
+    private external fun get(arg0: Long, arg1: ByteArray?, arg2: Int, arg3: Int, arg4: Int)
 
-	private native void get(long arg0, byte[] arg1, int arg2, int arg3, int arg4);
-
-	private native void put(long arg0, byte[] arg1, int arg2, int arg3, int arg4);
+    private external fun put(arg0: Long, arg1: ByteArray?, arg2: Int, arg3: Int, arg4: Int)
 }

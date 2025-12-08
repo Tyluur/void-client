@@ -1,5 +1,6 @@
-package com.ms.directX;
+package com.ms.directX
 
-public class DSCursors {
-	public int write;
+class DSCursors {
+    @JvmField
+    var write: Int = 0
 }

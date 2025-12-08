@@ -1,6 +1,8 @@
-package com.ms.directX;
+package com.ms.directX
 
-public class DSBufferDesc {
-	public int bufferBytes;
-	public int flags;
+class DSBufferDesc {
+    @JvmField
+    var bufferBytes: Int = 0
+    @JvmField
+    var flags: Int = 0
 }

@@ -1,40 +1,38 @@
-package jaclib.peer;
+package jaclib.peer
+
+import java.lang.ref.WeakReference
 
 
-import java.lang.ref.WeakReference;
+abstract class PeerReference protected constructor(arg0: Peer?, arg1: hb?) : WeakReference<Any?>(arg0, arg1?.a) {
+    var a: PeerReference? = null
 
-public abstract class PeerReference extends WeakReference {
+    private var peer: Long = 0
 
-	public PeerReference a;
+    var b: PeerReference? = null
 
-	private long peer;
+    init {
+        arg1?.a(this, -22143)
+    }
 
-	public PeerReference b;
+    protected abstract fun releasePeer(arg0: Long): Long
 
-	protected PeerReference(Peer arg0, hb arg1) {
-		super(arg0, arg1.a);
-		arg1.a(this, -22143);
-	}
+    fun a(arg0: Byte): Boolean {
+        return this.peer != 0L
+    }
 
-	protected abstract long releasePeer(long arg0);
+    private fun setPeer(arg0: Long) {
+        this.a(false)
+        this.peer = arg0
+    }
 
-	public final boolean a(byte arg0) {
-		return this.peer != 0L;
-	}
-
-	private void setPeer(long arg0) {
-		this.a(false);
-		this.peer = arg0;
-	}
-
-	public final long a(boolean arg0) {
-		long local11;
-		if (this.peer == 0L) {
-			local11 = 0L;
-		} else {
-			local11 = this.releasePeer(this.peer);
-			this.peer = 0L;
-		}
-		return local11;
-	}
+    fun a(arg0: Boolean): Long {
+        val local11: Long
+        if (this.peer == 0L) {
+            local11 = 0L
+        } else {
+            local11 = this.releasePeer(this.peer)
+            this.peer = 0L
+        }
+        return local11
+    }
 }

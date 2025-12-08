@@ -1,10 +1,16 @@
-package com.ms.directX;
+package com.ms.directX
 
-public class WaveFormatEx {
-	public int avgBytesPerSec;
-	public int blockAlign;
-	public int samplesPerSec;
-	public int formatTag;
-	public int channels;
-	public int bitsPerSample;
+class WaveFormatEx {
+    @JvmField
+    var avgBytesPerSec: Int = 0
+    @JvmField
+    var blockAlign: Int = 0
+    @JvmField
+    var samplesPerSec: Int = 0
+    @JvmField
+    var formatTag: Int = 0
+    @JvmField
+    var channels: Int = 0
+    @JvmField
+    var bitsPerSample: Int = 0
 }

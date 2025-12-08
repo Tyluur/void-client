@@ -1,9 +1,8 @@
-package jaclib.memory;
+package jaclib.memory
 
 
-public interface Source {
+interface Source {
+    fun getSize(): Int
 
-	int getSize();
-
-	long getAddress();
+    fun getAddress(): Long
 }

@@ -1,16 +1,17 @@
-package jaclib.hardware_info;
+package jaclib.hardware_info
 
 
-public final class HardwareInfo {
+object HardwareInfo {
+    private val dXDiagDisplayDevicesProps: Array<Array<String?>?>?
+        external get
 
-	private static native String[][] getDXDiagDisplayDevicesProps();
+    @JvmStatic
+    val cPUInfo: IntArray?
+        external get
 
-	public static native int[] getCPUInfo();
+    private val openGLProps: Array<String?>?
+        external get
 
-	private static native String[] getOpenGLProps();
-
-	private static native String[] getDXDiagSystemProps();
-
-	private HardwareInfo() {
-	}
+    private val dXDiagSystemProps: Array<String?>?
+        external get
 }

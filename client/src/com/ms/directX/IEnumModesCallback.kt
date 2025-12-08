@@ -1,4 +1,3 @@
-package com.ms.directX;
+package com.ms.directX
 
-public interface IEnumModesCallback {
-}
+interface IEnumModesCallback 

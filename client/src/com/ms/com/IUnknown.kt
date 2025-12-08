@@ -1,4 +1,3 @@
-package com.ms.com;
+package com.ms.com
 
-public class IUnknown {
-}
+class IUnknown 
