@@ -147,6 +147,7 @@ class Stream private constructor(arg0: Int) {
         @JvmStatic
         external fun floatToRawIntBits(arg0: Float): Int
 
+        @JvmStatic
         private external fun getLSB(arg0: Int): Byte
 
         @JvmStatic
