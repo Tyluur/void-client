@@ -6,7 +6,7 @@ import jaclib.memory.Buffer;
 import jagdx.IDirect3DIndexBuffer;
 import jagdx.ue;
 
-final class Class142 implements Interface5_Impl2 {
+public final class Class142 implements Interface5_Impl2 {
     private final Class378 aClass378_8515;
     private int anInt8516;
     IDirect3DIndexBuffer anIDirect3DIndexBuffer8517;

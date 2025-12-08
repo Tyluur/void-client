@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interface10 {
+public final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interface10 {
     private boolean aBoolean10148 = false;
     static Class114 aClass114_10149 = new Class114(23, 6);
     private Class30 aClass30_10150;

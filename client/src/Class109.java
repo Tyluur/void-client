@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class109 {
+public final class Class109 {
     int anInt1665;
     private final ha_Sub1 aHa_Sub1_1666;
     boolean aBoolean1667 = false;

@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class180 {
+public final class Class180 {
     static int[] anIntArray2370 = new int[13];
     static Rectangle[] aRectangleArray2371 = new Rectangle[100];
     static Class196 aClass196_2372;

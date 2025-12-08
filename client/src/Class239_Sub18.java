@@ -4,7 +4,7 @@
 
 import java.io.IOException;
 
-final class Class239_Sub18 extends Class239 {
+public final class Class239_Sub18 extends Class239 {
     static int anInt6029;
     static Class251 aClass251_6030 = new Class251();
     static int anInt6031;

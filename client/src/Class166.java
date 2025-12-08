@@ -4,7 +4,7 @@
 
 import java.io.File;
 
-final class Class166 {
+public final class Class166 {
     static int anInt2178;
     static int anInt2179;
     Class45 aClass45_2180;

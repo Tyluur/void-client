@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class197 {
+public final class Class197 {
     private int[] anIntArray2602;
     int anInt2603;
     private int anInt2604 = 2;

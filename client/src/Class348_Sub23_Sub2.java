@@ -6,7 +6,7 @@ import jagtheora.ogg.OggPacket;
 import jagtheora.ogg.OggStreamState;
 import jagtheora.theora.*;
 
-final class Class348_Sub23_Sub2 extends Class348_Sub23 {
+public final class Class348_Sub23_Sub2 extends Class348_Sub23 {
     private TheoraInfo aTheoraInfo9007;
     private boolean aBoolean9008;
     private int anInt9009;

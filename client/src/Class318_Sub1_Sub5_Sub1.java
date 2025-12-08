@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interface10 {
+public final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interface10 {
     private final byte aByte10118;
     static int anInt10119;
     static double aDouble10120;

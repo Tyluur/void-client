@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class74 {
+public final class Class74 {
     static int[] anIntArray1233 = new int[1024];
     static Class114 aClass114_1234 = new Class114(54, 4);
     static int anInt1235;

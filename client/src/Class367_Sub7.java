@@ -6,7 +6,7 @@ import jagdx.IDirect3DDevice;
 import jagdx.IDirect3DPixelShader;
 import jagdx.IDirect3DVertexShader;
 
-final class Class367_Sub7 extends Class367 {
+public final class Class367_Sub7 extends Class367 {
     private static float[] aFloatArray7342 = new float[16];
     private IDirect3DPixelShader anIDirect3DPixelShader7343;
     private boolean aBoolean7344;

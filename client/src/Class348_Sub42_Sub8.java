@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
+public abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
     int anInt9545;
     static int anInt9546;
     static int anInt9547;

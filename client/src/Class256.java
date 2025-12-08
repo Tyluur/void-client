@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class256 {
+public final class Class256 {
     static int anInt3294;
     static int[] anIntArray3295 = new int[25];
 

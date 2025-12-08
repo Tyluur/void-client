@@ -4,7 +4,7 @@
 
 import java.util.Random;
 
-final class Class80 {
+public final class Class80 {
     int anInt1407 = 0;
     private Class197 aClass197_1408;
     private static int[] anIntArray1409;

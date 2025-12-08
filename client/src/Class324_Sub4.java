@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class324_Sub4 extends Class324 {
+public final class Class324_Sub4 extends Class324 {
     private final int[] anIntArray6503;
     private final byte[][] aByteArrayArray6504;
     private final int[] anIntArray6505;

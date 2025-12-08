@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class240 implements Interface1 {
+public final class Class240 implements Interface1 {
     static Class323 aClass323_4672;
     static float aFloat4673;
     static int anInt4674 = 0;

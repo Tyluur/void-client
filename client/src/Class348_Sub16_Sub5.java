@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub16_Sub5 extends Class348_Sub16 {
+public final class Class348_Sub16_Sub5 extends Class348_Sub16 {
     private int anInt8969;
     private int anInt8970;
     private int anInt8971;

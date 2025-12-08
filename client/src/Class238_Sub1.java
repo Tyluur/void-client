@@ -5,7 +5,7 @@
 import java.io.IOException;
 import java.net.Socket;
 
-final class Class238_Sub1 extends Class238 {
+public final class Class238_Sub1 extends Class238 {
     static int anInt5828;
     static int anInt5829;
     static int anInt5830;

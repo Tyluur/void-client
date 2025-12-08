@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class278 {
+public final class Class278 {
     Class45 aClass45_3576;
     private Class60 aClass60_3577 = new Class60(64);
     Class230 aClass230_3578;

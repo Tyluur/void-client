@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class241_Sub3 extends Class241 {
+public final class Class241_Sub3 extends Class241 {
     private long aLong6166 = 0L;
     private long aLong6167 = 0L;
     private int anInt6168;

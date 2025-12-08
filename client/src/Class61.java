@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class61 {
+public final class Class61 {
     static int anInt1104;
     static int anInt1105;
     static int anInt1106;

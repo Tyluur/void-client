@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class120 implements Interface12 {
+public final class Class120 implements Interface12 {
     static int anInt4908;
     static int anInt4909;
     static int anInt4910;

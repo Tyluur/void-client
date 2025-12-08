@@ -7,7 +7,7 @@ import com.sun.management.HotSpotDiagnosticMXBean;
 import java.io.File;
 import java.lang.reflect.Method;
 
-final class Class158 implements Interface12 {
+public final class Class158 implements Interface12 {
     int anInt4931;
     int anInt4932;
     static int anInt4933;

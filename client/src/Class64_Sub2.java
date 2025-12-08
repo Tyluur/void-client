@@ -5,7 +5,7 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
-final class Class64_Sub2 extends Class64 {
+public final class Class64_Sub2 extends Class64 {
     private int anInt5401;
     private boolean aBoolean5402 = true;
     static int anInt5403;

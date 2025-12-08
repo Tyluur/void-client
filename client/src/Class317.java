@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class317 {
+public final class Class317 {
     private int anInt3967;
     private int anInt3968;
     private final Class80[] aClass80Array3969;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class99 {
+public final class Class99 {
     static boolean[][] aBooleanArrayArray1572;
     static int anInt1573;
     static int[] anIntArray1574 = new int[3];

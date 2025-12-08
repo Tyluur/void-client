@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class239_Sub17 extends Class239 {
+public final class Class239_Sub17 extends Class239 {
     static Class273 aClass273_6018 = new Class273("", 14);
     static int anInt6019;
     static int anInt6020;

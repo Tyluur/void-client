@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class279_Sub2 extends Class279 {
+public final class Class279_Sub2 extends Class279 {
     private final int anInt6181;
     private static Interface20 anInterface20_6182;
 

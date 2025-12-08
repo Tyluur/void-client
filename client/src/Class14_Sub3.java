@@ -6,7 +6,7 @@ import jaggl.OpenGL;
 
 import java.io.IOException;
 
-final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
+public final class Class14_Sub3 extends Class14 implements Interface18_Impl1 {
     static int anInt8624;
     static int anInt8625;
     private final int anInt8626;

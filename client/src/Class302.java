@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class302 {
+public final class Class302 {
     int anInt3831;
     int anInt3832;
     int anInt3833;

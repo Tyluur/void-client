@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class227 {
+public final class Class227 {
     static int anInt2966;
     static int[] anIntArray2967;
     static int anInt2968 = 0;

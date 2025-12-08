@@ -4,7 +4,7 @@
 
 import java.net.URL;
 
-final class Class348_Sub16_Sub3 extends Class348_Sub16 {
+public final class Class348_Sub16_Sub3 extends Class348_Sub16 {
     static int anInt8889;
     static int anInt8890;
     private final Class356 aClass356_8891;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class273 implements Interface21 {
+public final class Class273 implements Interface21 {
     static int[] anIntArray5165 = {-1, -1, 1, 1};
     static int anInt5166;
     int anInt5167;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class216 implements Interface13 {
+public final class Class216 implements Interface13 {
     int anInt4974;
     static Class45 aClass45_4975;
     static int anInt4976;

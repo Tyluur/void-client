@@ -6,7 +6,7 @@ import java.io.EOFException;
 import java.io.File;
 import java.io.IOException;
 
-final class Class78 {
+public final class Class78 {
     static int anInt1304;
     private final byte[] aByteArray1305;
     static int anInt1306;

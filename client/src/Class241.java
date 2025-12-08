@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class241 {
+public abstract class Class241 {
     static int anInt3148;
     static int anInt3149;
     static Class351 aClass351_3150 = new Class351(71, 2);

@@ -4,7 +4,7 @@
 
 import java.util.zip.Inflater;
 
-final class Class152 {
+public final class Class152 {
     static int anInt2070;
     static int anInt2071;
     private Inflater anInflater2072;

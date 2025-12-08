@@ -6,7 +6,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.net.Socket;
 
-abstract class Class348_Sub5 extends Class348 {
+public abstract class Class348_Sub5 extends Class348 {
     ha_Sub2 aHa_Sub2_6618;
     static int anInt6619;
     static int anInt6620;

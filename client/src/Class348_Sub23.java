@@ -5,7 +5,7 @@
 import jagtheora.ogg.OggPacket;
 import jagtheora.ogg.OggStreamState;
 
-abstract class Class348_Sub23 extends Class348 {
+public abstract class Class348_Sub23 extends Class348 {
     static int anInt6863;
     static int anInt6864;
     static float[] aFloatArray6865 = new float[16384];

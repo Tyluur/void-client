@@ -4,7 +4,7 @@
 
 import java.io.IOException;
 
-abstract class Class238 {
+public abstract class Class238 {
     static int anInt3132;
     static Class114 aClass114_3133;
 

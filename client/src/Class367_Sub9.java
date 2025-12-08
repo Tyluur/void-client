@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class367_Sub9 extends Class367 {
+public final class Class367_Sub9 extends Class367 {
     static int anInt7366;
     static Class114 aClass114_7367 = new Class114(37, 7);
     static int anInt7368;

@@ -4,7 +4,7 @@
 
 import java.io.File;
 
-final class Class348_Sub24 extends Class348 {
+public final class Class348_Sub24 extends Class348 {
     static int anInt6871;
     int anInt6872;
     static int anInt6873;

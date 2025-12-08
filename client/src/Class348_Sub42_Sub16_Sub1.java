@@ -4,7 +4,7 @@
 
 import java.util.Date;
 
-final class Class348_Sub42_Sub16_Sub1 extends Class348_Sub42_Sub16 {
+public final class Class348_Sub42_Sub16_Sub1 extends Class348_Sub42_Sub16 {
     static int anInt10447 = -1;
     static int anInt10448;
     byte aByte10449;

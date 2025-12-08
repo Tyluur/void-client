@@ -6,7 +6,7 @@ import jaclib.memory.Stream;
 import jaclib.memory.heap.NativeHeapBuffer;
 import jaggl.OpenGL;
 
-final class Class348_Sub20 extends Class348 {
+public final class Class348_Sub20 extends Class348 {
     int anInt6825;
     int anInt6826;
     static int anInt6827;

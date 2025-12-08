@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class346 {
+public abstract class Class346 {
     static int anInt4274;
     static boolean aBoolean4275;
     static int anInt4276;

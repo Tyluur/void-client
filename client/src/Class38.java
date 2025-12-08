@@ -6,7 +6,7 @@ import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.Transferable;
 
-final class Class38 {
+public final class Class38 {
     static int anInt497;
     int anInt498;
     int anInt499;

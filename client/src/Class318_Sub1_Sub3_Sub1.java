@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements Interface10 {
+public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements Interface10 {
     private final boolean aBoolean10003;
     static int anInt10004;
     static int anInt10005;

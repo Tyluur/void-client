@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class350 {
+public final class Class350 {
     int anInt4307;
     int anInt4308;
     int anInt4309;

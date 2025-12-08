@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class9 {
+public final class Class9 {
     static int anInt167;
     static int[] anIntArray168 = {28, 35, 40, 44};
     static int anInt169 = -1;

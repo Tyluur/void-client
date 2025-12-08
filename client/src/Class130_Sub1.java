@@ -4,7 +4,7 @@
 // Source File Name:   Class130_Sub1.java
 
 
-final class Class130_Sub1 extends Class130 {
+public final class Class130_Sub1 extends Class130 {
 
     static final void method1131(int i) {
         int j = 64 / ((11 - i) / 54);

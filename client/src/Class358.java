@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class358 {
+public final class Class358 {
     static int anInt4411 = 0;
     float[][] aFloatArrayArray4412;
     static int anInt4413;

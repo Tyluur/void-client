@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class84 {
+public final class Class84 {
     private final Class60 aClass60_1449 = new Class60(16);
     static int[] anIntArray1450 = {1, 2, 4, 8};
     static int anInt1451;

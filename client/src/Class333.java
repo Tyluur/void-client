@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class333 {
+public final class Class333 {
     static int anInt4144 = -1;
     static int anInt4145;
     private Class356 aClass356_4146;

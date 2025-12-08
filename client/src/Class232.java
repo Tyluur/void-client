@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class232 {
+public final class Class232 {
     private Class258_Sub3 aClass258_Sub3_2998;
     private final Class104 aClass104_2999;
     private final ha_Sub2 aHa_Sub2_3000;

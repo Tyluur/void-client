@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-final class Class165 {
+public final class Class165 {
     private final Robot aRobot2176;
     private Component aComponent2177;
 

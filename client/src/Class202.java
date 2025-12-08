@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-final class Class202 implements Runnable {
+public final class Class202 implements Runnable {
     static int anInt2646;
     static int anInt2647;
     private int anInt2648 = 0;

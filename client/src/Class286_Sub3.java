@@ -7,7 +7,7 @@ import jaggl.OpenGL;
 import java.util.Calendar;
 import java.util.TimeZone;
 
-final class Class286_Sub3 extends Class286 {
+public final class Class286_Sub3 extends Class286 {
     static int anInt6214;
     static int anInt6215;
     static int anInt6216;

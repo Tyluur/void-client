@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub9_Sub1 extends Class318_Sub9 {
+public final class Class318_Sub9_Sub1 extends Class318_Sub9 {
     static int anInt8782;
     String aString8783;
     static float aFloat8784;

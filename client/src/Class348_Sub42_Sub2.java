@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
+public final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
     static int anInt8561;
     private int anInt8562 = -1;
     private int anInt8563 = -1;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class154 {
+public final class Class154 {
     static int anInt2090;
     static int anInt2091;
     private int[] anIntArray2092;

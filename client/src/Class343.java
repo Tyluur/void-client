@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class343 {
+public final class Class343 {
     private final int anInt4255;
     private final int anInt4256;
     private final int anInt4257 = Class348_Sub10.method2789(16);

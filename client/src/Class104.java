@@ -6,7 +6,7 @@ import jaggl.OpenGL;
 
 import java.awt.*;
 
-final class Class104 {
+public final class Class104 {
     static int anInt1610;
     static int anInt1611;
     private final int anInt1612;

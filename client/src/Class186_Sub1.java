@@ -6,7 +6,7 @@ import jaggl.OpenGL;
 
 import java.util.Random;
 
-final class Class186_Sub1 extends Class186 {
+public final class Class186_Sub1 extends Class186 {
     private final int[] anIntArray5804 = new int[512];
     static int anInt5805;
     static int anInt5806;

@@ -4,7 +4,7 @@
 
 import java.util.Random;
 
-final class Class111 {
+public final class Class111 {
     private final int anInt1715;
     static int anInt1716;
     static int anInt1717;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class86 {
+public final class Class86 {
     static int anInt1477 = 0;
     static float aFloat1478;
     static int anInt1479;

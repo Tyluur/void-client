@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class131 {
+public final class Class131 {
     static Class114 aClass114_1901 = new Class114(38, -1);
     static int anInt1902;
     static char[] aCharArray1903 = {'[', ']', '#'};

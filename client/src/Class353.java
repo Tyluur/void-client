@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class353 {
+public final class Class353 {
     static float aFloat4338;
     int anInt4339;
     short aShort4340;

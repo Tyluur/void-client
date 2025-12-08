@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class258_Sub3_Sub1 extends Class258_Sub3 {
+public final class Class258_Sub3_Sub1 extends Class258_Sub3 {
     float aFloat9937;
     float aFloat9938;
     int anInt9939;

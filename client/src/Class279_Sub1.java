@@ -5,7 +5,7 @@
 import javax.sound.sampled.*;
 import java.awt.*;
 
-final class Class279_Sub1 extends Class279 {
+public final class Class279_Sub1 extends Class279 {
     private int anInt6175;
     private byte[] aByteArray6176;
     private SourceDataLine aSourceDataLine6177;

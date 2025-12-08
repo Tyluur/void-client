@@ -7,7 +7,7 @@ import java.io.DataInputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 
-final class Class339 implements Runnable {
+public final class Class339 implements Runnable {
     static int anInt4198;
     static int anInt4199;
     static int anInt4200;

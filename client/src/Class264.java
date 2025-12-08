@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class264 {
+public final class Class264 {
     static int anInt3364;
     private int anInt3365;
     static int anInt3366;

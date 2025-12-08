@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class79 {
+public final class Class79 {
     byte aByte1325;
     static int anInt1326;
     int anInt1327;

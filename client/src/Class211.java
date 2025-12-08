@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class211 {
+public final class Class211 {
     int anInt2731;
     static int anInt2732;
     static int anInt2733;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class148 {
+public final class Class148 {
     static int anInt2037;
     Class148 aClass148_2038;
     static int[] anIntArray2039 = {1, 0, -1, 0};

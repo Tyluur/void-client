@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class250 implements Runnable {
+public final class Class250 implements Runnable {
     volatile Class279[] aClass279Array3218 = new Class279[2];
     static int anInt3219;
     static int[] anIntArray3220;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class89 {
+public final class Class89 {
     private final Class377 aClass377_1506;
     static long aLong1507;
     static int[] anIntArray1508 = new int[256];

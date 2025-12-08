@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class56 {
+public final class Class56 {
     Class274 aClass274_1012;
     boolean aBoolean1013;
     static int anInt1014;

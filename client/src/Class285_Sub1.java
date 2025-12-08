@@ -5,7 +5,7 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Source;
 
-final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
+public final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
     static int anInt8483;
     static int anInt8484;
     static int anInt8485;

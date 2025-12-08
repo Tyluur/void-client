@@ -5,7 +5,7 @@
 import java.io.IOException;
 import java.io.OutputStream;
 
-final class Class208 implements Runnable {
+public final class Class208 implements Runnable {
     private IOException anIOException2704;
     private int anInt2705 = 0;
     private final byte[] aByteArray2706;

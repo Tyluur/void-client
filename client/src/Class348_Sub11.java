@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub11 extends Class348 implements Interface6 {
+public final class Class348_Sub11 extends Class348 implements Interface6 {
     static int anInt4760;
     char aChar4761;
     static int anInt4762;

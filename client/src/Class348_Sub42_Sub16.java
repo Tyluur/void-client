@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
+public abstract class Class348_Sub42_Sub16 extends Class348_Sub42 {
     static Class21 aClass21_9661;
     static int anInt9662;
     boolean aBoolean9663;

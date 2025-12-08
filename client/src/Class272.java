@@ -5,7 +5,7 @@
 import java.io.IOException;
 import java.net.Socket;
 
-abstract class Class272 {
+public abstract class Class272 {
     int anInt3470;
     static int anInt3471;
     static int anInt3472;

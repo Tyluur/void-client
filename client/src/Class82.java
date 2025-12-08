@@ -7,7 +7,7 @@ import jagex3.jagmisc.jagmisc;
 import java.io.File;
 import java.io.FileOutputStream;
 
-final class Class82 {
+public final class Class82 {
     static Class45 aClass45_1434;
     static int anInt1435;
     private final Class45 aClass45_1436;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class259 {
+public final class Class259 {
     private final Class45 aClass45_3299;
     static byte[] aByteArray3300 = new byte[2048];
     static Class60 aClass60_3301 = new Class60(30);

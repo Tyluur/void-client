@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class235 {
+public final class Class235 {
     static int anInt3050;
     private final Class318_Sub1 aClass318_Sub1_3051;
     int anInt3052;

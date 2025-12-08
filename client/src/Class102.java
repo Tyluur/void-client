@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class102 {
+public final class Class102 {
     int anInt1600 = -1;
     short aShort1601;
     short aShort1602;

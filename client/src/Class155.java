@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class155 {
+public final class Class155 {
     static int anInt2108;
     static Class351 aClass351_2109 = new Class351(19, -1);
     static boolean aBoolean2110 = false;

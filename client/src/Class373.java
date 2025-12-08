@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class373 {
+public abstract class Class373 {
     static int anInt4533;
     static int anInt4534;
     static int anInt4535;

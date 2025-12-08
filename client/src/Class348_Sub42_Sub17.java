@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub17 extends Class348_Sub42 {
+public final class Class348_Sub42_Sub17 extends Class348_Sub42 {
     private final int anInt9669;
     static int anInt9670;
     private byte[][] aByteArrayArray9671;

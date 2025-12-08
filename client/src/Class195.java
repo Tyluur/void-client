@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class195 implements Interface16 {
+public final class Class195 implements Interface16 {
     static int anInt5003;
     static int anInt5004;
     static int anInt5005;

@@ -11,7 +11,7 @@ import jagtheora.vorbis.VorbisInfo;
 
 import java.net.URL;
 
-final class Class348_Sub23_Sub1 extends Class348_Sub23 {
+public final class Class348_Sub23_Sub1 extends Class348_Sub23 {
     static int anInt8989;
     static int anInt8990;
     static int anInt8991;

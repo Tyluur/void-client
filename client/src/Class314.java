@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class314 {
+public abstract class Class314 {
     static float aFloat3938 = 0.0F;
     static int anInt3939;
     static int anInt3940;

@@ -5,7 +5,7 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
-final class Class97 {
+public final class Class97 {
     private final int anInt1544;
     static int anInt1545;
     private int anInt1546;

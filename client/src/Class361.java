@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class361 {
+public final class Class361 {
     static int anInt4431;
     static int anInt4432;
     static Class114 aClass114_4433 = new Class114(22, 0);

@@ -6,7 +6,7 @@ import jagex3.jagmisc.jagmisc;
 
 import java.net.InetAddress;
 
-final class Class169 implements Runnable {
+public final class Class169 implements Runnable {
     static int anInt2257;
     private Class262 aClass262_2258 = new Class262();
     private Thread aThread2259 = new Thread(this);

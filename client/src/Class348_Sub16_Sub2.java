@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub16_Sub2 extends Class348_Sub16 {
+public final class Class348_Sub16_Sub2 extends Class348_Sub16 {
     static int anInt8860;
     private Class262 aClass262_8861 = new Class262();
     static int[] anIntArray8862;

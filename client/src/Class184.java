@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class184 {
+public final class Class184 {
     int[] anIntArray2468;
     static boolean aBoolean2469;
     static int anInt2470;

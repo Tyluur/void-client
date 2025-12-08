@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class110_Sub1 extends Class110 {
+public final class Class110_Sub1 extends Class110 {
     int anInt5786;
     String aString5787;
     int anInt5788 = -1;

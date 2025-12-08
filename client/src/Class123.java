@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class123 {
+public final class Class123 {
     short aShort1810;
     Interface2 anInterface2_1811;
     byte aByte1812;

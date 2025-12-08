@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub5 extends Class318 {
+public final class Class318_Sub5 extends Class318 {
     int anInt6415;
     String aString6416;
     static int anInt6417;

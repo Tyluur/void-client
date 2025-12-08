@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class367_Sub8 extends Class367 {
+public final class Class367_Sub8 extends Class367 {
     static int anInt7349;
     private float aFloat7350 = 0.0F;
     static int anInt7351;

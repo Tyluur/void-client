@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-abstract class Class258 implements Interface9 {
+public abstract class Class258 implements Interface9 {
     private int anInt4847;
     static int anInt4848 = 0;
     int anInt4849;

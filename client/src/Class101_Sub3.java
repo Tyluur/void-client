@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class101_Sub3 extends Class101 {
+public final class Class101_Sub3 extends Class101 {
     static int anInt5746;
     float aFloat5747;
     static int anInt5748;

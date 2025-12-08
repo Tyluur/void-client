@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class271 {
+public final class Class271 {
     private final Class60 aClass60_3466 = new Class60(64);
     static Class114 aClass114_3467 = new Class114(45, 8);
     private final Class45 aClass45_3468;

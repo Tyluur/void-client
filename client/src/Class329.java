@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class329 {
+public final class Class329 {
     private static int anInt4102;
     private static int anInt4103;
     private static int anInt4104;

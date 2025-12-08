@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class103 {
+public final class Class103 {
     static Class345 aClass345_1607 = Class59_Sub1_Sub1.method558(96);
     static int anInt1608;
     static int anInt1609;

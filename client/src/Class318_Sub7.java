@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub7 extends Class318 {
+public final class Class318_Sub7 extends Class318 {
     Class243 aClass243_6433;
     private int anInt6434 = 0;
     private final long aLong6435;

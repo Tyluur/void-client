@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class105_Sub3_Sub2 extends Class105_Sub3 {
+public final class Class105_Sub3_Sub2 extends Class105_Sub3 {
     private final byte[] aByteArray9934;
     private final int[] anIntArray9935;
 

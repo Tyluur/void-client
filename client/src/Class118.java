@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class118 {
+public final class Class118 {
     int anInt1781;
     int anInt1782;
     int anInt1783;

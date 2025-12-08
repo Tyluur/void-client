@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class138 {
+public final class Class138 {
     static Class45 aClass45_1940;
     int anInt1941;
     static Class46[] aClass46Array1942;

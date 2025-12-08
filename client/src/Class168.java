@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class168 {
+public final class Class168 {
     static Class114 aClass114_2248;
     static Class46 aClass46_2249;
     static short aShort2250 = 205;

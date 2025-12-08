@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class265 implements Interface1 {
+public final class Class265 implements Interface1 {
     private final Class120 aClass120_4687;
     private Class105 aClass105_4688;
     static Class74 aClass74_4689 = new Class74(2, 4);

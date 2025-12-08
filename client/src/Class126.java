@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class126 implements Interface14 {
+public final class Class126 implements Interface14 {
     int anInt4981;
     int anInt4982;
     static int[] anIntArray4983;

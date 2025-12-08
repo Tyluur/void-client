@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class288_Sub1 extends Class288 {
+public final class Class288_Sub1 extends Class288 {
     static int anInt8574;
     static float[] aFloatArray8575 = {1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 1.0F};
     static int anInt8576;

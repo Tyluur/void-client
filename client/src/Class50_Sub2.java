@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class50_Sub2 extends Class50 {
+public final class Class50_Sub2 extends Class50 {
     private final int anInt5227;
     static int anInt5228;
     static int anInt5229;

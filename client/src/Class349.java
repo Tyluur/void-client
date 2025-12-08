@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class349 {
+public final class Class349 {
     int[] anIntArray4299 = new int[2];
     private final int[][][] anIntArrayArrayArray4300;
     static int[][] anIntArrayArray4301 = new int[2][8];

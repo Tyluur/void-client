@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class295 {
+public final class Class295 {
     static Class114 aClass114_3751;
     static int anInt3752;
     static Class348_Sub42_Sub17[] aClass348_Sub42_Sub17Array3753 = new Class348_Sub42_Sub17[14];

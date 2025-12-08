@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class239_Sub4 extends Class239 {
+public final class Class239_Sub4 extends Class239 {
     static int anInt5872;
     static int anInt5873;
     static float[] aFloatArray5874 = new float[16384];

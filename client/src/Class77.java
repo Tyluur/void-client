@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class77 {
+public final class Class77 {
     private int[] anIntArray1289;
     static int anInt1290 = 0;
     private int anInt1291;

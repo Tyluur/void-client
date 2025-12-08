@@ -4,7 +4,7 @@
 
 import java.math.BigInteger;
 
-abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
+public abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
     static int anInt8757;
     static int anInt8758;
     short aShort8759;

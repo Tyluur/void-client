@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class29 {
+public final class Class29 {
     int anInt400;
     static int anInt401 = 0;
     static int anInt402;

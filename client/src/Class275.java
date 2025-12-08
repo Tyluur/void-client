@@ -4,7 +4,7 @@
 
 import java.util.Hashtable;
 
-final class Class275 {
+public final class Class275 {
     static Hashtable aHashtable3548 = new Hashtable();
     static int anInt3549;
     static int anInt3550;

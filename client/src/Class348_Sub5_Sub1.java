@@ -6,7 +6,7 @@ import jaggl.OpenGL;
 
 import java.io.*;
 
-final class Class348_Sub5_Sub1 extends Class348_Sub5 {
+public final class Class348_Sub5_Sub1 extends Class348_Sub5 {
     private Class337 aClass337_8822;
     static int anInt8823;
     private Class337 aClass337_8824;

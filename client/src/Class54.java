@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class54 {
+public final class Class54 {
     private byte aByte966;
     int anInt967;
     static int anInt968;

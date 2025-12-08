@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.math.BigInteger;
 
-final class Class52 implements Interface12 {
+public final class Class52 implements Interface12 {
     static int anInt4894;
     static int anInt4895;
     static BigInteger aBigInteger4896 = new BigInteger("10001", 16);

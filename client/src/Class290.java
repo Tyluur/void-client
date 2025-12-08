@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class290 {
+public final class Class290 {
     static boolean aBoolean3706;
     static int anInt3707;
     Interface5_Impl1 anInterface5_Impl1_3708;

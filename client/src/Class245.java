@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class245 {
+public final class Class245 {
     private static int[] anIntArray3169 = new int[3];
     static int anInt3170;
     static int anInt3171;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class59_Sub1_Sub2 extends Class59_Sub1 {
+public final class Class59_Sub1_Sub2 extends Class59_Sub1 {
     static int anInt8659;
     private byte[] aByteArray8660;
     static int anInt8661;

@@ -9,7 +9,7 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
 
-final class Class228 {
+public final class Class228 {
     static int anInt2971;
     static Class114 aClass114_2972 = new Class114(49, 4);
     static int anInt2973;

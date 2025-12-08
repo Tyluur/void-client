@@ -4,7 +4,7 @@
 
 import java.util.Random;
 
-final class Class348_Sub40_Sub28 extends Class348_Sub40 {
+public final class Class348_Sub40_Sub28 extends Class348_Sub40 {
     static int anInt9361;
     private int anInt9362;
     static int anInt9363;

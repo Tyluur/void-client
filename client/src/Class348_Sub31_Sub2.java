@@ -8,7 +8,7 @@ import java.awt.image.DirectColorModel;
 import java.awt.image.ImageConsumer;
 import java.awt.image.ImageProducer;
 
-final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer {
+public final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer {
     static int anInt9068;
     static int[] anIntArray9069 = new int[1];
     static int anInt9070;

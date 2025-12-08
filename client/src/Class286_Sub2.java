@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class286_Sub2 extends Class286 {
+public final class Class286_Sub2 extends Class286 {
     static int anInt6203;
     static int anInt6204;
     static String[] aStringArray6205 = new String[200];

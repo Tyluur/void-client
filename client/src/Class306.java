@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class306 {
+public final class Class306 {
     static int anInt3872 = -1;
     static int[] anIntArray3873 = new int[13];
     static int anInt3874;

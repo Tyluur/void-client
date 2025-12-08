@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class320 {
+public final class Class320 {
     static short aShort3992 = 320;
     static int anInt3993;
     static float aFloat3994;

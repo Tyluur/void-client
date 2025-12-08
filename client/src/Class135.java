@@ -7,7 +7,7 @@ import jaggl.OpenGL;
 
 import java.awt.*;
 
-abstract class Class135 {
+public abstract class Class135 {
     private int anInt1921;
     static int anInt1922;
     private final boolean aBoolean1923;

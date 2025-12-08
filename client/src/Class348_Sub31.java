@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.math.BigInteger;
 
-abstract class Class348_Sub31 extends Class348 {
+public abstract class Class348_Sub31 extends Class348 {
     static int anInt6913 = 0;
     static int anInt6914;
     static int anInt6915;

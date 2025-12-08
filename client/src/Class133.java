@@ -6,7 +6,7 @@ import com.sun.management.HotSpotDiagnosticMXBean;
 
 import java.lang.management.ManagementFactory;
 
-final class Class133 {
+public final class Class133 {
     static int anInt1912;
     static int anInt1913;
     static Class114 aClass114_1914 = new Class114(84, 7);

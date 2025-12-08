@@ -7,7 +7,7 @@ import jagdx.IDirect3DCubeTexture;
 import jagdx.PixelBuffer;
 import jagdx.ue;
 
-final class Class310_Sub1 extends Class310 implements Interface18_Impl2 {
+public final class Class310_Sub1 extends Class310 implements Interface18_Impl2 {
     private final int anInt6329;
     private final IDirect3DCubeTexture anIDirect3DCubeTexture6330;
 

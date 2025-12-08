@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class266 {
+public final class Class266 {
     short aShort3379;
     int anInt3380;
     int anInt3381;

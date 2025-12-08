@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class100 {
+public final class Class100 {
     static int anInt1577;
     private int anInt1578;
     static Class78[] aClass78Array1579 = new Class78[37];

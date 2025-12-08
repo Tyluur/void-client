@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class233 {
+public final class Class233 {
     static float[] aFloatArray3015 = new float[16];
     static int anInt3016;
     static int anInt3017;

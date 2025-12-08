@@ -6,7 +6,7 @@ import netscape.javascript.JSObject;
 
 import java.applet.Applet;
 
-final class Class224 {
+public final class Class224 {
     static final void method1615(Applet applet, int i, String string) throws Throwable {
         JSObject.getWindow(applet).eval(string);
         if (i == -15092) {

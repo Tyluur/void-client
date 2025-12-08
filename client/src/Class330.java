@@ -5,7 +5,7 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
-final class Class330 {
+public final class Class330 {
     static int anInt4110;
     private final ha_Sub3 aHa_Sub3_4111;
     byte[] aByteArray4112;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class105_Sub1 extends Class105 {
+public final class Class105_Sub1 extends Class105 {
     static int anInt8390;
     private final boolean aBoolean8391;
     static int anInt8392;

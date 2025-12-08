@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class4 {
+public final class Class4 {
     int anInt126;
     private static short[] aShortArray127 = new short[500];
     short[] aShortArray128;

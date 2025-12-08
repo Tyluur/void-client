@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class64_Sub1 extends Class64 {
+public final class Class64_Sub1 extends Class64 {
     private short[] aShortArray5311;
     private int[] anIntArray5312;
     private Class360[] aClass360Array5313;

@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class188 {
+public final class Class188 {
     private final ha_Sub2 aHa_Sub2_2511;
     static Class351 aClass351_2512;
     private Class337 aClass337_2513;

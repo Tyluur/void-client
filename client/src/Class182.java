@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class182 {
+public final class Class182 {
     int anInt2445;
     static int anInt2446;
     static Interface16[] anInterface16Array2447;

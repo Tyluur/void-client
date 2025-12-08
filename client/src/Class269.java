@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class269 {
+public final class Class269 {
     static int anInt3450;
     static int anInt3451;
     Interface18_Impl1 anInterface18_Impl1_3452 = null;

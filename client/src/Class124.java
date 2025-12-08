@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.util.Random;
 
-final class Class124 {
+public final class Class124 {
     int[] anIntArray1816;
     int anInt1817;
     int anInt1818;

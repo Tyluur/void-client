@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class222 {
+public final class Class222 {
     int anInt2883;
     static int anInt2884 = 0;
     static Class138 aClass138_2885 = new Class138(4, 1, 1, 1);

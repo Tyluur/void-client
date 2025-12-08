@@ -5,7 +5,7 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
-final class Class324_Sub2 extends Class324 {
+public final class Class324_Sub2 extends Class324 {
     private final Interface18_Impl3 anInterface18_Impl3_6492;
     private final boolean aBoolean6493;
     private final ha_Sub3 aHa_Sub3_6494;

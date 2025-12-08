@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class283 {
+public final class Class283 {
     static int anInt3656;
     int anInt3657;
     static float[] aFloatArray3658 = new float[2];

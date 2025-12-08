@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class186 {
+public abstract class Class186 {
     static Class45 aClass45_2490;
     static Class74 aClass74_2491;
     static boolean aBoolean2492 = false;

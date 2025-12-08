@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class334 {
+public final class Class334 {
     int anInt4151;
     static int[] anIntArray4152 = {4, 2, 1, 1, 2, 2, 3, 1, 3, 3, 3, 2, 0};
     static int anInt4153;

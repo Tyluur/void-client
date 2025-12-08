@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class335 {
+public final class Class335 {
     static int anInt4166;
     static int anInt4167 = 0;
     static int anInt4168 = 0;

@@ -4,7 +4,7 @@
 
 import java.nio.ByteBuffer;
 
-final class Class344_Sub1 extends Class344 {
+public final class Class344_Sub1 extends Class344 {
     private ByteBuffer aByteBuffer6524;
 
     final byte[] method2689(int i, int i_0_, int i_1_) {

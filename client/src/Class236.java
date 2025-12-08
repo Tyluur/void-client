@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class236 {
+public final class Class236 {
     short[] aShortArray3088;
     short aShort3089;
     short[] aShortArray3090;

@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class13 {
+public final class Class13 {
     static int anInt219;
     static Class114 aClass114_220 = new Class114(40, -1);
     static int anInt221;

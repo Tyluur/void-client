@@ -4,7 +4,7 @@
 
 import java.io.IOException;
 
-final class Class116 {
+public final class Class116 {
     static int anInt1758;
     static boolean shiftClick = true;
     static int anInt1760;

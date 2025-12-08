@@ -4,7 +4,7 @@
 
 import java.io.IOException;
 
-final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
+public final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
     private final Object anObject10429;
     static int anInt10430;
     static long[][][] aLongArrayArrayArray10431;

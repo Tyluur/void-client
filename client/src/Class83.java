@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class83 {
+public final class Class83 {
     Class258_Sub1 aClass258_Sub1_1440;
     static String[] aStringArray1441 = new String[200];
     boolean aBoolean1442;

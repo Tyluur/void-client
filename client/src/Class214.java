@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class214 {
+public final class Class214 {
     static final void method1573(int[] is, int i, int i_0_) {
         i_0_ = i + i_0_ - 7;
         while (i < i_0_) {

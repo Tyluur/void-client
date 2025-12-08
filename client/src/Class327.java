@@ -4,7 +4,7 @@
 
 import java.io.File;
 
-final class Class327 {
+public final class Class327 {
     static int anInt4090;
     static Class273 aClass273_4091 = new Class273("", 10);
     static int anInt4092;

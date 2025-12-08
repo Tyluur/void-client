@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.image.*;
 import java.util.Hashtable;
 
-final class Class348_Sub31_Sub1 extends Class348_Sub31 {
+public final class Class348_Sub31_Sub1 extends Class348_Sub31 {
     private Shape aShape9064;
     private Canvas aCanvas9065;
     private Image anImage9066;

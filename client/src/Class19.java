@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class19 {
+public final class Class19 {
     static Class114 aClass114_304;
     static int anInt305;
     String aString306;

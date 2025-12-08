@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class23 {
+public final class Class23 {
     byte[] aByteArray344;
     int anInt345;
     int anInt346;

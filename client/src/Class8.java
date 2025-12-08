@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class8 {
+public final class Class8 {
     int anInt159;
     int anInt160;
     int anInt161;

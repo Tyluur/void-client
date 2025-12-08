@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class252 {
+public final class Class252 {
     static Class351 aClass351_3237 = new Class351(80, 7);
     int[] anIntArray3238;
     int[] anIntArray3239;

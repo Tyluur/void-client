@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class143 {
+public final class Class143 {
     static int anInt1978;
     private byte[][] aByteArrayArray1979;
     static int anInt1980;

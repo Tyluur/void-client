@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub10 extends Class348 {
+public final class Class348_Sub10 extends Class348 {
     private static float[] aFloatArray6700;
     private float[] aFloatArray6701;
     private int anInt6702;

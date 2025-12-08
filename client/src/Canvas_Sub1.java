@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Canvas_Sub1 extends Canvas {
+public final class Canvas_Sub1 extends Canvas {
     static int[] anIntArray60;
     static int anInt61;
     static int anInt62;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class239_Sub6 extends Class239 {
+public final class Class239_Sub6 extends Class239 {
     static int[][] anIntArrayArray5894;
     static int anInt5895;
     static int anInt5896;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class108 {
+public final class Class108 {
     static int anInt1656 = 0;
     static Class364 aClass364_1657 = new Class364("WTWIP", 3);
     static int anInt1658;

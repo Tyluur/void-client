@@ -8,7 +8,7 @@ import jagtheora.ogg.OggStreamState;
 import java.io.IOException;
 import java.net.Socket;
 
-final class Class348_Sub23_Sub3 extends Class348_Sub23 {
+public final class Class348_Sub23_Sub3 extends Class348_Sub23 {
     static int anInt9040;
     static int anInt9041 = 0;
     static int[] anIntArray9042;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub8 extends Class318 {
+public final class Class318_Sub8 extends Class318 {
     byte aByte6460;
     short[] aShortArray6461;
     byte[] aByteArray6462;

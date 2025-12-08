@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class105_Sub3_Sub3 extends Class105_Sub3 {
+public final class Class105_Sub3_Sub3 extends Class105_Sub3 {
     int[] anIntArray9936;
 
     Class105_Sub3_Sub3(ha_Sub1 var_ha_Sub1, int[] is, int i, int i_0_) {

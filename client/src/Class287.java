@@ -4,7 +4,7 @@
 
 import java.util.zip.CRC32;
 
-final class Class287 {
+public final class Class287 {
     static int anInt3685;
     static int anInt3686;
     int anInt3687;

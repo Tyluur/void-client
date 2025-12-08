@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub32 extends Class348 {
+public final class Class348_Sub32 extends Class348 {
     private final Class123 aClass123_6927;
     private float[][] aFloatArrayArray6928;
     private final s_Sub2 aS_Sub2_6929;

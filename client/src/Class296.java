@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class296 {
+public final class Class296 {
     static int anInt3765;
     private final int[] anIntArray3766;
     static boolean aBoolean3767 = false;

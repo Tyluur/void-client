@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class219 {
+public final class Class219 {
     Class60 aClass60_2862 = new Class60(20);
     static int anInt2863;
     static Class196 aClass196_2864 = new Class196();

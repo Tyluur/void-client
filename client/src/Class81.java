@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class81 {
+public final class Class81 {
     static int[] anIntArray1432;
     static int anInt1433;
 

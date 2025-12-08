@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub50 extends Class348 {
+public final class Class348_Sub50 extends Class348 {
     static int anInt7210;
     String aString7211;
     static byte[][] aByteArrayArray7212;

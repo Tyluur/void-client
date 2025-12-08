@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
+public final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
     private short aShort10416;
     private int anInt10417;
     private short aShort10418;

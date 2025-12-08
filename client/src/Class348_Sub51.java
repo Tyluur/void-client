@@ -4,7 +4,7 @@
 
 import java.lang.reflect.Field;
 
-final class Class348_Sub51 extends Class348 {
+public final class Class348_Sub51 extends Class348 {
     Class239_Sub26 aClass239_Sub26_7215;
     Class239_Sub20 aClass239_Sub20_7216;
     static int anInt7217;

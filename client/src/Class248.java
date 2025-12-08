@@ -4,7 +4,7 @@
 
 import java.io.IOException;
 
-final class Class248 {
+public final class Class248 {
     static int anInt3185;
     static int anInt3186;
     static int anInt3187;

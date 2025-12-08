@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class67 implements Interface1 {
+public final class Class67 implements Interface1 {
     static int anInt4642;
     static Class105 aClass105_4643;
     static int anInt4644;

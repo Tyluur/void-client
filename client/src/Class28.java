@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class28 implements Interface15 {
+public final class Class28 implements Interface15 {
     static int anInt4996;
     static Class223 aClass223_4997 = new Class223(6, 1);
     static Class114 aClass114_4998;

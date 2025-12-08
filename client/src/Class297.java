@@ -14,7 +14,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.net.URL;
 
-final class Class297 implements Runnable {
+public final class Class297 implements Runnable {
     private Callback_Sub1 aCallback_Sub1_3776;
     boolean aBoolean3777;
     static String aString3778;

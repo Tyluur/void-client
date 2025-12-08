@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class73 implements Interface7 {
+public final class Class73 implements Interface7 {
     static float[] aFloatArray4772;
     static int anInt4773;
     static int anInt4774;

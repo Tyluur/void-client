@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class336 {
+public final class Class336 {
     static int anInt4170;
     static int anInt4171;
     static short[] aShortArray4172 = new short[256];

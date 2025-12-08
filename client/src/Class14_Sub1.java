@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
+public final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
     private int anInt8604;
     static String aString8605 = null;
     static int anInt8606;

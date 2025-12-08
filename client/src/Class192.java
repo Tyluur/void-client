@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class192 {
+public final class Class192 {
     Interface5_Impl2 anInterface5_Impl2_2572;
     static int anInt2573;
     boolean aBoolean2574;

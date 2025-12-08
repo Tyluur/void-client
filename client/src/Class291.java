@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class291 {
+public final class Class291 {
     int anInt3719;
     static int anInt3720 = 0;
     int[][] anIntArrayArray3721;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub40_Sub34 extends Class348_Sub40 {
+public final class Class348_Sub40_Sub34 extends Class348_Sub40 {
     static int[] anIntArray9431 = new int[1];
     static Class293[] aClass293Array9432;
     static int anInt9433;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub2 extends Class348 {
+public final class Class348_Sub2 extends Class348 {
     byte[] aByteArray6564;
     Class356 aClass356_6565;
 

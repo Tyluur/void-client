@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.lang.reflect.Method;
 
-final class Class96 {
+public final class Class96 {
     static final ha method870(int i, int i_0_, d var_d, Class45 class45, Canvas canvas) {
         if (i_0_ != 18993) return null;
         ha var_ha;

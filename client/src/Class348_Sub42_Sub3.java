@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub3 extends Class348_Sub42 {
+public final class Class348_Sub42_Sub3 extends Class348_Sub42 {
     static boolean aBoolean9498;
     byte[] aByteArray9499;
     static int anInt9500;

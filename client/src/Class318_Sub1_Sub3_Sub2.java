@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub1_Sub3_Sub2 extends Class318_Sub1_Sub3 implements Interface10 {
+public final class Class318_Sub1_Sub3_Sub2 extends Class318_Sub1_Sub3 implements Interface10 {
     static int anInt10038;
     static int anInt10039;
     static int anInt10040;

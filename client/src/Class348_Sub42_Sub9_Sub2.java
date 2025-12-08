@@ -4,7 +4,7 @@
 
 import java.lang.ref.SoftReference;
 
-final class Class348_Sub42_Sub9_Sub2 extends Class348_Sub42_Sub9 {
+public final class Class348_Sub42_Sub9_Sub2 extends Class348_Sub42_Sub9 {
     private SoftReference aSoftReference10446;
 
     final Object method3205(int i) {

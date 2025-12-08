@@ -4,7 +4,7 @@
 
 import jagex3.jagmisc.jagmisc;
 
-final class Class164 {
+public final class Class164 {
     static int anInt2172;
     static int anInt2173;
     static int anInt2174;

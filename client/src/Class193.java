@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class193 {
+public final class Class193 {
     static int anInt2583;
     int anInt2584;
     private final Class377 aClass377_2585;

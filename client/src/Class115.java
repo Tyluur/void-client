@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class115 {
+public final class Class115 {
     static boolean[][][] aBooleanArrayArrayArray1751;
     static Class348_Sub1[] aClass348_Sub1Array1752 = new Class348_Sub1[8];
     static int anInt1753;

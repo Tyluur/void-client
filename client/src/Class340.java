@@ -4,7 +4,7 @@
 
 import java.math.BigInteger;
 
-final class Class340 {
+public final class Class340 {
     private final Class248 aClass248_4212;
     private final BigInteger aBigInteger4213;
     static int anInt4214;

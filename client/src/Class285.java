@@ -8,7 +8,7 @@ import jaclib.memory.heap.NativeHeapBuffer;
 import jaggl.MapBuffer;
 import jaggl.OpenGL;
 
-abstract class Class285 implements Interface5 {
+public abstract class Class285 implements Interface5 {
     static int anInt4735;
     private int anInt4736 = 0;
     static int anInt4737;

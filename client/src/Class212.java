@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class212 {
+public final class Class212 {
     private static Class40 aClass40_2750 = new Class40();
 
     private static final int method1545(int i, Class40 class40) {

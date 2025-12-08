@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class119_Sub2 extends Class119 implements Interface8 {
+public final class Class119_Sub2 extends Class119 implements Interface8 {
     static int anInt4826;
     private int anInt4827;
     static int anInt4828;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class363 {
+public final class Class363 {
     static String aString4461 = "";
     static int anInt4462;
     static int[] anIntArray4463 = new int[8];

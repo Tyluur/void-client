@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class292 implements Interface7 {
+public final class Class292 implements Interface7 {
     static int anInt4797 = 0;
     static Class114 aClass114_4798;
     static int anInt4799;

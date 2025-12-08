@@ -7,7 +7,7 @@ import jaggl.OpenGL;
 import java.applet.Applet;
 import java.awt.*;
 
-final class Class93 {
+public final class Class93 {
     static int anInt1529;
     static Applet anApplet1530;
     static String[] aStringArray1531 = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};

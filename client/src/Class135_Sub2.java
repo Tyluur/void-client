@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class135_Sub2 extends Class135 implements Interface8 {
+public final class Class135_Sub2 extends Class135 implements Interface8 {
     static int anInt4833;
     static int anInt4834;
     static Class251 aClass251_4835 = new Class251();

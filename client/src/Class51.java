@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class51 {
+public final class Class51 {
     static int anInt866;
     static int anInt867;
     int anInt868 = -1;

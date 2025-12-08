@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class367_Sub10 extends Class367 {
+public final class Class367_Sub10 extends Class367 {
     static int anInt7381;
     static Class45 aClass45_7382;
     static int anInt7383;

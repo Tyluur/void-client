@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class42 {
+public final class Class42 {
     static int anInt562;
     static int anInt563;
     byte[] aByteArray564;

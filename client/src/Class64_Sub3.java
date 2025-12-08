@@ -5,7 +5,7 @@
 import jaclib.memory.Stream;
 import jaggl.OpenGL;
 
-final class Class64_Sub3 extends Class64 {
+public final class Class64_Sub3 extends Class64 {
     private boolean aBoolean5527;
     private int[] anIntArray5528;
     private int anInt5529;

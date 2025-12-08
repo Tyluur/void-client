@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class171 {
+public final class Class171 {
     static int anInt2267;
     private final ha_Sub2 aHa_Sub2_2268;
     static short aShort2269 = 32767;

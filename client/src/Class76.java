@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class76 {
+public final class Class76 {
     static int anInt1278;
     static Class364 aClass364_1279 = new Class364("LOCAL", 4);
     static int anInt1280;

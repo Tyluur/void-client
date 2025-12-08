@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class207 {
+public final class Class207 {
     byte[] aByteArray2695;
     int anInt2696;
     int[] anIntArray2697;

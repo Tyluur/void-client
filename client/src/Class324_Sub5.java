@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class324_Sub5 extends Class324 {
+public final class Class324_Sub5 extends Class324 {
     private final ha_Sub2 aHa_Sub2_6509;
     private final Class61 aClass61_6510;
     private final Class258_Sub3_Sub1 aClass258_Sub3_Sub1_6511;

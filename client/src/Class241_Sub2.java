@@ -4,7 +4,7 @@
 
 import jagex3.jagmisc.jagmisc;
 
-final class Class241_Sub2 extends Class241 {
+public final class Class241_Sub2 extends Class241 {
     private long aLong6160;
     private long aLong6161 = 0L;
     private long aLong6162;

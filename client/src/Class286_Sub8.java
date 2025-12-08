@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class286_Sub8 extends Class286 {
+public final class Class286_Sub8 extends Class286 {
     static int anInt6292;
     static int anInt6293;
     static int anInt6294;

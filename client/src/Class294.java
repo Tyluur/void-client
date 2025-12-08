@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.lang.reflect.Field;
 
-final class Class294 implements Interface16 {
+public final class Class294 implements Interface16 {
     private boolean aBoolean5020;
     private int anInt5021;
     private boolean aBoolean5022;

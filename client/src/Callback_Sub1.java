@@ -9,7 +9,7 @@ import com.ms.win32.User32;
 
 import java.awt.*;
 
-final class Callback_Sub1 extends Callback {
+public final class Callback_Sub1 extends Callback {
     private volatile boolean aBoolean7460 = true;
     private volatile int anInt7461;
     private int anInt7462;

@@ -7,7 +7,7 @@ import jaclib.memory.Source;
 import jagdx.IDirect3DVertexBuffer;
 import jagdx.ue;
 
-final class Class366 implements Interface5_Impl1 {
+public final class Class366 implements Interface5_Impl1 {
     private int anInt8508;
     private final boolean aBoolean8509;
     private boolean aBoolean8510 = false;

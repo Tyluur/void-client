@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class17 {
+public final class Class17 {
     static int anInt235;
     int[] anIntArray236;
     int[] anIntArray237;

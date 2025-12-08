@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class345 {
+public abstract class Class345 {
     static float aFloat4268;
     static Class114 aClass114_4269 = new Class114(87, 1);
     static int anInt4270 = -1;

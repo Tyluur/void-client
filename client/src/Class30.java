@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class30 {
+public final class Class30 {
     private int anInt404;
     private int anInt405;
     private int anInt406;

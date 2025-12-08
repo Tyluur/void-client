@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class a implements Interface19 {
+public final class a implements Interface19 {
     private final i anI5105;
     long nativeid;
     private final i anI5106;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class338 {
+public final class Class338 {
     byte aByte4181;
     short aShort4182;
     short[] aShortArray4183;

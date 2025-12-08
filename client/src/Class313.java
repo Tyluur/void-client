@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class313 {
+public final class Class313 {
     static int anInt3933;
     static Class223 aClass223_3934 = new Class223(2, 2);
     static float aFloat3935;

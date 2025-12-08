@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class136 implements Interface7 {
+public final class Class136 implements Interface7 {
     static Class65 aClass65_4787;
     private final String aString4788;
     private final Class45 aClass45_4789;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class181 {
+public final class Class181 {
     int anInt2373;
     static boolean[] aBooleanArray2374 = new boolean[5];
     private int anInt2375;

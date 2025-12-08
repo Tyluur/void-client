@@ -6,7 +6,7 @@ import jaggl.OpenGL;
 
 import java.awt.*;
 
-final class Class367_Sub11 extends Class367 {
+public final class Class367_Sub11 extends Class367 {
     private Interface18_Impl3 anInterface18_Impl3_7390;
     private final boolean aBoolean7391;
     private Class193 aClass193_7392;

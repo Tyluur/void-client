@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class268 {
+public final class Class268 {
     int anInt3429;
     private static short[] aShortArray3430 = {-1, -1, -1, -1, -1};
     static int anInt3431;

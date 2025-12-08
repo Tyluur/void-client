@@ -4,7 +4,7 @@
 
 import jaclib.memory.Buffer;
 
-final class Class135_Sub1 extends Class135 implements Interface2 {
+public final class Class135_Sub1 extends Class135 implements Interface2 {
     static int anInt4706;
     static Class114 aClass114_4707;
     private int anInt4708;

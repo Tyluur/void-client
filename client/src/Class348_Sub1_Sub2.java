@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub1_Sub2 extends Class348_Sub1 {
+public final class Class348_Sub1_Sub2 extends Class348_Sub1 {
     static Class262 aClass262_8810 = new Class262();
     static int anInt8811;
     static int anInt8812;

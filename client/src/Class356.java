@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class356 {
+public final class Class356 {
     Class348[] aClass348Array4374;
     static int anInt4375;
     static int anInt4376;

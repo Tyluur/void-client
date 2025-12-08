@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class198 {
+public final class Class198 {
     short[] aShortArray2613;
     short[] aShortArray2614;
     int[] anIntArray2615;

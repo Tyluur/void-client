@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class50_Sub3 extends Class50 {
+public final class Class50_Sub3 extends Class50 {
     private final int anInt5236;
     private final int anInt5237;
     static int anInt5238;

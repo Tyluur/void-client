@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class203 {
+public final class Class203 {
     static int anInt2672;
     static int anInt2673;
     static volatile boolean aBoolean2674 = false;

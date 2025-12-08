@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub45_Sub1 extends Class348_Sub45 {
+public final class Class348_Sub45_Sub1 extends Class348_Sub45 {
     int anInt9725;
     long aLong9726;
     int anInt9727;

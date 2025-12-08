@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class6 {
+public final class Class6 {
     short aShort143;
     int anInt144;
     boolean aBoolean145;

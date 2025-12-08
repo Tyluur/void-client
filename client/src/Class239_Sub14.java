@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class239_Sub14 extends Class239 {
+public final class Class239_Sub14 extends Class239 {
     static int anInt5982;
     static int anInt5983;
     static int anInt5984;

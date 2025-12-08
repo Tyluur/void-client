@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class328_Sub2_Sub1 extends Class328_Sub2 {
+public final class Class328_Sub2_Sub1 extends Class328_Sub2 {
     static long[] aLongArray8800 = new long[32];
 
     public static void method2614(int i) {

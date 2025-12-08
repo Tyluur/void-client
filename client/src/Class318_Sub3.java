@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub3 extends Class318 {
+public final class Class318_Sub3 extends Class318 {
     boolean aBoolean6401 = false;
     int anInt6402;
     int anInt6403;

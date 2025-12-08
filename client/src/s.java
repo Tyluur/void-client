@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-abstract class s {
+public abstract class s {
     int[][] anIntArrayArray4584;
     static Class45 aClass45_4585;
     static int anInt4586;

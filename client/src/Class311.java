@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class311 implements Runnable {
+public final class Class311 implements Runnable {
     static int anInt3897;
     static Class351 aClass351_3898 = new Class351(11, 8);
     static int anInt3899;

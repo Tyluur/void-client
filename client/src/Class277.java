@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class277 {
+public final class Class277 {
     int anInt3558 = 64;
     int anInt3559;
     boolean aBoolean3560;

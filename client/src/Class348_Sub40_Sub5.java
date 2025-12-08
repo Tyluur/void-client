@@ -4,7 +4,7 @@
 
 import java.util.Random;
 
-final class Class348_Sub40_Sub5 extends Class348_Sub40 {
+public final class Class348_Sub40_Sub5 extends Class348_Sub40 {
     private short[] aShortArray9116 = new short[512];
     private int anInt9117;
     private int anInt9118 = 1;

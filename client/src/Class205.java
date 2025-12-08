@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class205 {
+public final class Class205 {
     static int anInt2685;
     static Class351 aClass351_2686;
     static float aFloat2687 = 0.0F;

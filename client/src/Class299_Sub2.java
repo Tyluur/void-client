@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class299_Sub2 extends Class299 {
+public abstract class Class299_Sub2 extends Class299 {
     static int anInt6324;
     static int anInt6325;
     static int anInt6326;

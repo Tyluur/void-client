@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class239_Sub12 extends Class239 {
+public final class Class239_Sub12 extends Class239 {
     static int anInt5960;
     static int anInt5961;
     static int anInt5962;

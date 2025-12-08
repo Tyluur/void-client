@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.URL;
 
-final class Class88 {
+public final class Class88 {
     static int anInt1492;
     static int anInt1493;
     static int anInt1494;

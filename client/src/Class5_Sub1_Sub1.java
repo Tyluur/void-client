@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class5_Sub1_Sub1 extends Class5_Sub1 {
+public final class Class5_Sub1_Sub1 extends Class5_Sub1 {
     static int anInt9928;
     static Class207[] aClass207Array9929;
     static int anInt9930;

@@ -11,7 +11,7 @@ import com.ms.win32.User32;
 
 import java.awt.*;
 
-final class Class134 implements IEnumModesCallback {
+public final class Class134 implements IEnumModesCallback {
     private static int[] anIntArray4606;
     private final DirectDraw aDirectDraw4607 = new DirectDraw();
     private static int anInt4608;

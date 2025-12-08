@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-final class Class234 {
+public final class Class234 {
     private RandomAccessFile aRandomAccessFile3036;
     private final long aLong3037;
     static int anInt3038;

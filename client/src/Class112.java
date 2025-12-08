@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class112 implements Runnable {
+public final class Class112 implements Runnable {
     static int anInt1726;
     static Class207 aClass207_1727;
     static int anInt1728;

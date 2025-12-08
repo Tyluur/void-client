@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class146 {
+public final class Class146 {
     static int anInt2012;
     static long[] aLongArray2013 = new long[10];
     static int anInt2014;

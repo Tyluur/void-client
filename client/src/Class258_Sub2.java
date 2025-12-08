@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class258_Sub2 extends Class258 {
+public final class Class258_Sub2 extends Class258 {
     static long[] aLongArray8530;
     static Class10[] aClass10Array8531 = new Class10[50];
     static String[] aStringArray8532;

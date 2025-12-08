@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class170 implements Interface17 {
+public final class Class170 implements Interface17 {
     static int anInt5062;
     int[] anIntArray5063;
     static int anInt5064;

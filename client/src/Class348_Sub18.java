@@ -5,7 +5,7 @@
 import java.awt.*;
 import java.lang.reflect.Constructor;
 
-final class Class348_Sub18 extends Class348 {
+public final class Class348_Sub18 extends Class348 {
     static int anInt6804;
     static int anInt6805;
     private final int anInt6806;

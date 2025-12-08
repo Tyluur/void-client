@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Npc extends Class318_Sub1_Sub3_Sub3 {
+public final class Npc extends Class318_Sub1_Sub3_Sub3 {
     static int anInt10493;
     static int anInt10494;
     static int anInt10495;

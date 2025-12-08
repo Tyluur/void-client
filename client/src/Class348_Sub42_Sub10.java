@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub10 extends Class348_Sub42 {
+public final class Class348_Sub42_Sub10 extends Class348_Sub42 {
     static int anInt9560;
     static int anInt9561;
     boolean aBoolean9562 = true;

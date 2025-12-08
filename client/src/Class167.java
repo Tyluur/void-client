@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class167 {
+public final class Class167 {
     private final ha_Sub1 aHa_Sub1_2191;
     int anInt2192;
     static int anInt2193;

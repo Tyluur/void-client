@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class221 {
+public final class Class221 {
     static int anInt2879;
     static int anInt2880;
     static boolean aBoolean2881 = false;

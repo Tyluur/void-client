@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class309 implements Interface7 {
+public final class Class309 implements Interface7 {
     static int[] anIntArray4806;
     private final String aString4807;
     static Class105 aClass105_4808;

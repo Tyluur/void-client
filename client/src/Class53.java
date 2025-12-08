@@ -5,7 +5,7 @@
 import jagdx.IDirect3DSurface;
 import jagdx.IDirect3DSwapChain;
 
-final class Class53 {
+public final class Class53 {
     private IDirect3DSwapChain anIDirect3DSwapChain963;
     private IDirect3DSurface anIDirect3DSurface964;
     private IDirect3DSurface anIDirect3DSurface965;

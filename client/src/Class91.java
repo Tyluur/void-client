@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class91 {
+public final class Class91 {
     static Class74 aClass74_1519;
     static int anInt1520;
     static int[] anIntArray1521 = {7, 8, 9, 10, 11, 12, 13, 15};

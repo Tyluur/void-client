@@ -5,7 +5,7 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
-final class Class348_Sub38 extends Class348 {
+public final class Class348_Sub38 extends Class348 {
     static int anInt7000;
     private float[][] aFloatArrayArray7001;
     private final Interface5_Impl2 anInterface5_Impl2_7002;

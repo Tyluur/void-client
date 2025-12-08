@@ -9,7 +9,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.lang.reflect.Method;
 
-final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener {
+public final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener {
     static int anInt6525;
     static int anInt6526;
     static int anInt6527;

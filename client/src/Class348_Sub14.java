@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub14 extends Class348 {
+public final class Class348_Sub14 extends Class348 {
     static int anInt6760;
     static int anInt6761;
     long aLong6762;

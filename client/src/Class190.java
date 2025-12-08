@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class190 {
+public final class Class190 {
     int anInt2535;
     float aFloat2536;
     static int anInt2537;

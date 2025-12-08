@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class125 implements Interface12 {
+public final class Class125 implements Interface12 {
     int anInt4913;
     boolean aBoolean4914;
     static Class356 aClass356_4915;

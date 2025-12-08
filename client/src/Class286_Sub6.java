@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class286_Sub6 extends Class286 {
+public final class Class286_Sub6 extends Class286 {
     static Class230 aClass230_6262 = new Class230("game3", 2);
     static int anInt6263;
     static int anInt6264;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class139 {
+public final class Class139 {
     byte[] aByteArray1948;
     static int anInt1949 = 0;
     static int anInt1950;

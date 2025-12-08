@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class246 {
+public abstract class Class246 {
     static int[] anIntArray3173 = {0, 2, 2, 2, 1, 1, 3, 3, 1, 3, 3, 4, 4};
     static boolean aBoolean3174 = false;
     static int anInt3175;

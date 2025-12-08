@@ -4,7 +4,7 @@
 
 import java.util.Random;
 
-final class Class348_Sub40_Sub22 extends Class348_Sub40 {
+public final class Class348_Sub40_Sub22 extends Class348_Sub40 {
     private int anInt9284 = 1024;
     static Class114 aClass114_9285 = new Class114(104, 1);
     private int[][] anIntArrayArray9286;

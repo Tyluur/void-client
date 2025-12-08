@@ -7,7 +7,7 @@ import java.awt.datatransfer.Transferable;
 import java.util.Calendar;
 import java.util.Date;
 
-final class Class66 {
+public final class Class66 {
     private static int[] anIntArray1149 = new int[1000];
     private static Class46 aClass46_1150;
     private static Class43 aClass43_1151;

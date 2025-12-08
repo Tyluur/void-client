@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class286 {
+public abstract class Class286 {
     static int anInt3681;
     static int anInt3682;
     static Class348_Sub2 aClass348_Sub2_3683;

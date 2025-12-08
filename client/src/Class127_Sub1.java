@@ -4,7 +4,7 @@
 
 import java.lang.reflect.Method;
 
-final class Class127_Sub1 extends Class127 {
+public final class Class127_Sub1 extends Class127 {
     static Class271 aClass271_8378;
     static int anInt8379;
     static int anInt8380;

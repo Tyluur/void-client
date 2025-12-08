@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class160 {
+public final class Class160 {
     static int anInt2129;
     static boolean aBoolean2130;
     static float[] aFloatArray2131;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class196 {
+public final class Class196 {
     static int anInt2599;
     static int anInt2600;
     static int anInt2601 = -50;

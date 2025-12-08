@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class293 implements Runnable {
+public final class Class293 implements Runnable {
     private long aLong3742;
     private Class315 aClass315_3743;
     private volatile boolean aBoolean3744;

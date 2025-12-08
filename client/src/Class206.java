@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class206 implements Interface11 {
+public final class Class206 implements Interface11 {
     static int anInt4864;
     static int anInt4865;
     static int anInt4866;

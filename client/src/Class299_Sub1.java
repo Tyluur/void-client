@@ -4,7 +4,7 @@
 
 import java.io.FileOutputStream;
 
-abstract class Class299_Sub1 extends Class299 {
+public abstract class Class299_Sub1 extends Class299 {
     static int anInt6320;
     static Class138 aClass138_6321 = new Class138(1, 2, 2, 0);
     static int anInt6322;

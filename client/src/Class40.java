@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class40 {
+public final class Class40 {
     int anInt522;
     boolean[] aBooleanArray523;
     int anInt524;

@@ -4,7 +4,7 @@
 
 import java.awt.datatransfer.Clipboard;
 
-final class Class348_Sub40_Sub27 extends Class348_Sub40 {
+public final class Class348_Sub40_Sub27 extends Class348_Sub40 {
     static int anInt9356;
     static Clipboard aClipboard9357;
     static int anInt9358;

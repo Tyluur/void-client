@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub12 extends Class348 {
+public final class Class348_Sub12 extends Class348 {
     static int anInt6734;
     int anInt6735;
     static short[][][] aShortArrayArrayArray6736;

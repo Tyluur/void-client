@@ -5,7 +5,7 @@
 import java.io.DataInputStream;
 import java.net.URL;
 
-final class Class156 {
+public final class Class156 {
     static float aFloat2111;
     static int anInt2112;
     static String[] aStringArray2113 = new String[100];

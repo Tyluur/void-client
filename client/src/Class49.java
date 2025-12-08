@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class49 implements Interface4 {
+public final class Class49 implements Interface4 {
     float[] aFloatArray4719;
     static float aFloat4720;
     static int anInt4721;

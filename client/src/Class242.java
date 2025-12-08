@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class242 {
+public final class Class242 {
     static int anInt3151;
     static Class348_Sub42_Sub13 aClass348_Sub42_Sub13_3152 = null;
     private final ha_Sub2 aHa_Sub2_3153;

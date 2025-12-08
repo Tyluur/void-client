@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class Class348_Sub22 extends Class348 {
+public final class Class348_Sub22 extends Class348 {
     static int anInt6857;
     static int anInt6858;
     Npc aNpc_6859;

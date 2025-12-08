@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class132 {
+public final class Class132 {
     static int anInt1905 = 4;
     static int anInt1906;
     static Player aPlayer_1907;

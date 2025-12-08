@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class318_Sub1_Sub2 extends Class318_Sub1 {
+public abstract class Class318_Sub1_Sub2 extends Class318_Sub1 {
     static int anInt8729;
     static int anInt8730;
     static int anInt8731;

@@ -4,7 +4,7 @@
 
 import jaclib.hardware_info.HardwareInfo;
 
-final class Class348_Sub4 extends Class348 {
+public final class Class348_Sub4 extends Class348 {
     private int anInt6591;
     private int anInt6592;
     static int anInt6593;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class276 {
+public final class Class276 {
     int[] anIntArray3554;
     int anInt3555;
     int[] anIntArray3556;

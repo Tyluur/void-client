@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class147 {
+public final class Class147 {
     static int anInt2021 = 0;
     String aString2022;
     static int anInt2023;

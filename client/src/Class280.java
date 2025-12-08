@@ -5,7 +5,7 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
-final class Class280 {
+public final class Class280 {
     static int anInt3625;
     private int anInt3626;
     private final int[] anIntArray3627 = new int[64];
