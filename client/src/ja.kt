@@ -1,119 +1,119 @@
 /* ja - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+internal class ja : Class101(), Interface19 {
+    @JvmField
+    var nativeid: Long = 0
 
-final class ja extends Class101 implements Interface19 {
-    long nativeid;
+    private external fun la()
 
-    private final native void la();
+    private external fun za(l: Long, i: Int)
 
-    private final native void za(long l, int i);
+    private external fun AA(l: Long, bool: Boolean)
 
-    private final native void AA(long l, boolean bool);
+    private external fun VA(l: Long, i: Int)
 
-    private final native void VA(long l, int i);
+    private external fun NA(l: Long, i: Int)
 
-    private final native void NA(long l, int i);
-
-    public final void method891(int i, int i_0_, int i_1_) {
-        a(this.nativeid, i, i_0_, i_1_);
+    public override fun method891(i: Int, i_0_: Int, i_1_: Int) {
+        a(this.nativeid, i, i_0_, i_1_)
     }
 
-    private final native void l(long l, long l_2_);
+    private external fun l(l: Long, l_2_: Long)
 
-    public final void method910() {
-        u(this.nativeid);
+    public override fun method910() {
+        u(this.nativeid)
     }
 
-    public final void w(boolean bool) {
-        AA(this.nativeid, bool);
+    override fun w(bool: Boolean) {
+        AA(this.nativeid, bool)
     }
 
-    public final void method905(int i, int i_3_, int i_4_, int[] is) {
-        XA(this.nativeid, i, i_3_, i_4_, is);
+    public override fun method905(i: Int, i_3_: Int, i_4_: Int, `is`: IntArray?) {
+        XA(this.nativeid, i, i_3_, i_4_, `is`)
     }
 
-    public final void method890(int[] is) {
-        w(this.nativeid, is);
+    public override fun method890(`is`: IntArray?) {
+        w(this.nativeid, `is`)
     }
 
-    private final native void w(long l, int[] is);
+    private external fun w(l: Long, `is`: IntArray?)
 
-    public final void method908(int i) {
-        za(this.nativeid, i);
+    public override fun method908(i: Int) {
+        za(this.nativeid, i)
     }
 
-    private final native void XA(long l, int i, int i_5_, int i_6_, int[] is);
+    private external fun XA(l: Long, i: Int, i_5_: Int, i_6_: Int, `is`: IntArray?)
 
-    public final void method903(int i, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_) {
-        P(this.nativeid, i, i_7_, i_8_, i_9_, i_10_, i_11_);
+    public override fun method903(i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int) {
+        P(this.nativeid, i, i_7_, i_8_, i_9_, i_10_, i_11_)
     }
 
-    private final native void t(long l, int i);
+    private external fun t(l: Long, i: Int)
 
-    public final void method900(int i) {
-        J(this.nativeid, i);
+    public override fun method900(i: Int) {
+        J(this.nativeid, i)
     }
 
-    private final native void u(long l);
+    private external fun u(l: Long)
 
-    public final void method897(int i, int i_12_, int i_13_, int[] is) {
-        b(this.nativeid, i, i_12_, i_13_, is);
+    public override fun method897(i: Int, i_12_: Int, i_13_: Int, `is`: IntArray?) {
+        b(this.nativeid, i, i_12_, i_13_, `is`)
     }
 
-    private final native void m(long l, int i);
+    private external fun m(l: Long, i: Int)
 
-    private final native void FA(long l, int i, int i_14_, int i_15_);
+    private external fun FA(l: Long, i: Int, i_14_: Int, i_15_: Int)
 
-    public final void method902(int i) {
-        NA(this.nativeid, i);
+    public override fun method902(i: Int) {
+        NA(this.nativeid, i)
     }
 
-    private final native void va(long l, int i, int i_16_, int i_17_, int[] is);
+    private external fun va(l: Long, i: Int, i_16_: Int, i_17_: Int, `is`: IntArray?)
 
-    private final native void J(long l, int i);
+    private external fun J(l: Long, i: Int)
 
-    public final void method898(Class101 class101) {
-        l(this.nativeid, ((ja) class101).nativeid);
+    public override fun method898(class101: Class101?) {
+        l(this.nativeid, (class101 as ja).nativeid)
     }
 
-    private final native void b(long l, int i, int i_18_, int i_19_, int[] is);
+    private external fun b(l: Long, i: Int, i_18_: Int, i_19_: Int, `is`: IntArray?)
 
-    public final void method892(int i, int i_20_, int i_21_, int[] is) {
-        va(this.nativeid, i, i_20_, i_21_, is);
+    public override fun method892(i: Int, i_20_: Int, i_21_: Int, `is`: IntArray?) {
+        va(this.nativeid, i, i_20_, i_21_, `is`)
     }
 
-    private final native void P(long l, int i, int i_22_, int i_23_, int i_24_, int i_25_, int i_26_);
+    private external fun P(l: Long, i: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int)
 
-    private final native void a(long l, int i, int i_27_, int i_28_);
+    private external fun a(l: Long, i: Int, i_27_: Int, i_28_: Int)
 
-    protected final void finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this);
+    protected fun finalize() {
+        if (this.nativeid != 0L) Class257.method1947(0, this)
     }
 
-    public final void method896(int i) {
-        m(this.nativeid, i);
+    public override fun method896(i: Int) {
+        m(this.nativeid, i)
     }
 
-    public final Class101 method907() {
-        ja var_ja_29_ = new ja();
-        var_ja_29_.method898(this);
-        return var_ja_29_;
+    public override fun method907(): Class101 {
+        val var_ja_29_ = ja()
+        var_ja_29_.method898(this)
+        return var_ja_29_
     }
 
-    public final void method895(int i) {
-        t(this.nativeid, i);
+    public override fun method895(i: Int) {
+        t(this.nativeid, i)
     }
 
-    ja() {
-        la();
+    init {
+        la()
     }
 
-    public final void method894(int i, int i_30_, int i_31_) {
-        FA(this.nativeid, i, i_30_, i_31_);
+    public override fun method894(i: Int, i_30_: Int, i_31_: Int) {
+        FA(this.nativeid, i, i_30_, i_31_)
     }
 
-    public final void method899(int i) {
-        VA(this.nativeid, i);
+    public override fun method899(i: Int) {
+        VA(this.nativeid, i)
     }
 }

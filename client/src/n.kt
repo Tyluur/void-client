@@ -1,40 +1,38 @@
 /* n - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+internal class n(var_oa: oa?, var_ya: ya?, class143: Class143?, class207s: Array<Class207?>, class105s: Array<Class105?>?) : Class324(var_oa, class143), Interface19 {
+    var nativeid: Long = 0
 
-final class n extends Class324 implements Interface19 {
-    long nativeid;
+    private external fun S(var_oa: oa?, var_ya: ya?, `is`: Array<ByteArray?>?, is_0_: IntArray?, is_1_: IntArray?, is_2_: IntArray?, is_3_: IntArray?, is_4_: IntArray?)
 
-    private final native void S(oa var_oa, ya var_ya, byte[][] is, int[] is_0_, int[] is_1_, int[] is_2_, int[] is_3_, int[] is_4_);
-
-    n(oa var_oa, ya var_ya, Class143 class143, Class207[] class207s, Class105[] class105s) {
-        super(var_oa, class143);
-        byte[][] is = new byte[class207s.length][];
-        int[] is_5_ = new int[class207s.length];
-        int[] is_6_ = new int[class207s.length];
-        int[] is_7_ = new int[class207s.length];
-        int[] is_8_ = new int[class207s.length];
-        for (int i = 0; i < class207s.length; i++) {
-            is[i] = class207s[i].aByteArray2699;
-            is_5_[i] = class207s[i].anInt2702;
-            is_6_[i] = class207s[i].anInt2696;
-            is_7_[i] = class207s[i].anInt2703;
-            is_8_[i] = class207s[i].anInt2700;
+    init {
+        val `is` = arrayOfNulls<ByteArray>(class207s.size)
+        val is_5_ = IntArray(class207s.size)
+        val is_6_ = IntArray(class207s.size)
+        val is_7_ = IntArray(class207s.size)
+        val is_8_ = IntArray(class207s.size)
+        for (i in class207s.indices) {
+            `is`[i] = class207s[i]!!.aByteArray2699
+            is_5_[i] = class207s[i]!!.anInt2702
+            is_6_[i] = class207s[i]!!.anInt2696
+            is_7_[i] = class207s[i]!!.anInt2703
+            is_8_[i] = class207s[i]!!.anInt2700
         }
-        S(var_oa, var_ya, is, class207s[0].anIntArray2697, is_5_, is_6_, is_7_, is_8_);
+        S(var_oa, var_ya, `is`, class207s[0]!!.anIntArray2697, is_5_, is_6_, is_7_, is_8_)
     }
 
-    public final native void w(boolean bool);
+    external override fun w(bool: Boolean)
 
-    protected final void finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this);
+    protected fun finalize() {
+        if (this.nativeid != 0L) Class257.method1947(0, this)
     }
 
-    final native void fa(char c, int i, int i_9_, int i_10_, boolean bool);
+    external override fun fa(c: Char, i: Int, i_9_: Int, i_10_: Int, bool: Boolean)
 
-    private final native void PA(char c, int i, int i_11_, int i_12_, boolean bool, aa var_aa, int i_13_, int i_14_);
+    private external fun PA(c: Char, i: Int, i_11_: Int, i_12_: Int, bool: Boolean, var_aa: aa?, i_13_: Int, i_14_: Int)
 
-    final void method2578(char c, int i, int i_15_, int i_16_, boolean bool, aa var_aa, int i_17_, int i_18_) {
-        PA(c, i, i_15_, i_16_, bool, var_aa, i_17_, i_18_);
+    override fun method2578(c: Char, i: Int, i_15_: Int, i_16_: Int, bool: Boolean, var_aa: aa?, i_17_: Int, i_18_: Int) {
+        PA(c, i, i_15_, i_16_, bool, var_aa, i_17_, i_18_)
     }
 }

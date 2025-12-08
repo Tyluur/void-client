@@ -1,263 +1,352 @@
 /* i - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+internal class i : Class64, Interface19 {
+    private val anOa5117: oa
+    @JvmField
+    var aClass342Array5118: Array<Class342?>? = null
+    @JvmField
+    var nativeid: Long = 0
+    @JvmField
+    var aClass129Array5119: Array<Class129?>? = null
+    private val aYa5120: ya?
 
-final class i extends Class64 implements Interface19 {
-    private final oa anOa5117;
-    Class342[] aClass342Array5118;
-    long nativeid;
-    Class129[] aClass129Array5119;
-    private final ya aYa5120;
+    public external override fun C(i: Int)
 
-    public final native void C(int i);
+    public external override fun k(i: Int)
 
-    public final native void k(int i);
+    external override fun w(bool: Boolean)
 
-    public final native void w(boolean bool);
+    public external override fun O(i: Int, i_0_: Int, i_1_: Int)
 
-    public final native void O(int i, int i_0_, int i_1_);
+    public external override fun s(i: Int)
 
-    public final native void s(int i);
+    public external override fun LA(i: Int)
 
-    public final native void LA(int i);
+    public external override fun fa(): Int
 
-    public final native int fa();
+    public external override fun NA(): Boolean
 
-    public final native boolean NA();
+    public external override fun F(): Boolean
 
-    public final native boolean F();
+    external fun ZA(var_i_2_: i?, var_i_3_: i?, i: Int, bool: Boolean, bool_4_: Boolean)
 
-    final native void ZA(i var_i_2_, i var_i_3_, int i, boolean bool, boolean bool_4_);
-
-    public final void method613(Class64 class64, int i, int i_5_, int i_6_, boolean bool) {
-        anOa5117.method3973().method144(this, class64, i, i_5_, i_6_, bool);
+    public override fun method613(class64: Class64?, i: Int, i_5_: Int, i_6_: Int, bool: Boolean) {
+        anOa5117.method3973()?.method144(this, class64, i, i_5_, i_6_, bool)
     }
 
-    public final native void aa(short i, short i_7_);
+    public external override fun aa(i: Short, i_7_: Short)
 
-    public final boolean method623(int i, int i_8_, Class101 class101, boolean bool, int i_9_, int i_10_) {
-        return anOa5117.method3973().method143(this, i, i_8_, class101, bool, i_10_);
+    public override fun method623(i: Int, i_8_: Int, class101: Class101?, bool: Boolean, i_9_: Int, i_10_: Int): Boolean {
+        return anOa5117.method3973()!!.method143(this, i, i_8_, class101, bool, i_10_)
     }
 
-    public final native int EA();
+    public external override fun EA(): Int
 
-    public final Class129[] method619() {
-        return this.aClass129Array5119;
+    public override fun method619(): Array<Class129?>? {
+        return this.aClass129Array5119
     }
 
-    public final native void wa();
+    public external override fun wa()
 
-    public final native void P(int i, int i_11_, int i_12_, int i_13_);
+    public external override fun P(i: Int, i_11_: Int, i_12_: Int, i_13_: Int)
 
-    public final void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_14_) {
-        if (class318_sub3 == null) anOa5117.method3973().method149(this, class101, null, i, i_14_);
+    public override fun method608(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int, i_14_: Int) {
+        if (class318_sub3 == null) anOa5117.method3973()!!.method149(this, class101, null, i, i_14_)
         else {
-            oa.anIntArray5132[5] = 0;
-            anOa5117.method3973().method149(this, class101, oa.anIntArray5132, i, i_14_);
-            class318_sub3.anInt6405 = oa.anIntArray5132[0];
-            class318_sub3.anInt6402 = oa.anIntArray5132[1];
-            class318_sub3.anInt6406 = oa.anIntArray5132[2];
-            class318_sub3.anInt6404 = oa.anIntArray5132[3];
-            class318_sub3.anInt6403 = oa.anIntArray5132[4];
-            class318_sub3.aBoolean6401 = oa.anIntArray5132[5] != 0;
+            oa.Companion.anIntArray5132[5] = 0
+            anOa5117.method3973()!!.method149(this, class101, oa.Companion.anIntArray5132, i, i_14_)
+            class318_sub3.anInt6405 = oa.Companion.anIntArray5132[0]
+            class318_sub3.anInt6402 = oa.Companion.anIntArray5132[1]
+            class318_sub3.anInt6406 = oa.Companion.anIntArray5132[2]
+            class318_sub3.anInt6404 = oa.Companion.anIntArray5132[3]
+            class318_sub3.anInt6403 = oa.Companion.anIntArray5132[4]
+            class318_sub3.aBoolean6401 = oa.Companion.anIntArray5132[5] != 0
         }
     }
 
-    public final native void v();
+    public external override fun v()
 
-    private final native void l(long l, int i, int[] is, int i_15_, int i_16_, int i_17_, int i_18_, boolean bool);
+    private external fun l(l: Long, i: Int, `is`: IntArray?, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean)
 
-    public final boolean method618() {
-        return true;
+    public override fun method618(): Boolean {
+        return true
     }
 
-    public final void method621() {
+    public override fun method621() {
         if (anOa5117.anInt5141 > 1) {
-            synchronized (this) {
-                this.aBoolean1124 = false;
-                this.notifyAll();
+            synchronized(this) {
+                this.aBoolean1124 = false
+                (this as Object).notifyAll()
             }
         }
     }
 
-    public final native void VA(int i);
+    public external override fun VA(i: Int)
 
-    public final boolean method628(int i, int i_19_, Class101 class101, boolean bool, int i_20_) {
-        return anOa5117.method3973().method146(this, i, i_19_, class101, bool);
+    public override fun method628(i: Int, i_19_: Int, class101: Class101?, bool: Boolean, i_20_: Int): Boolean {
+        return anOa5117.method3973()!!.method146(this, i, i_19_, class101, bool)
     }
 
-    public final Class64 method614(byte i, int i_21_, boolean bool) {
-        return anOa5117.method3973().method152(this, i, i_21_, bool);
+    public override fun method614(i: Byte, i_21_: Int, bool: Boolean): Class64 {
+        return anOa5117.method3973()!!.method152(this, i, i_21_, bool)
     }
 
-    public final native int na();
+    public external override fun na(): Int
 
-    public final native int HA();
+    public external override fun HA(): Int
 
-    public final void method612() {
+    public override fun method612() {
         /* empty */
     }
 
-    public final native void p(int i, int i_22_, s var_s, s var_s_23_, int i_24_, int i_25_, int i_26_);
+    public external override fun p(i: Int, i_22_: Int, var_s: s?, var_s_23_: s?, i_24_: Int, i_25_: Int, i_26_: Int)
 
-    public final native int V();
+    public external override fun V(): Int
 
-    public final native int da();
+    public external override fun da(): Int
 
-    public final void method605(int i, int[] is, int i_27_, int i_28_, int i_29_, int i_30_, boolean bool) {
-        l(this.nativeid, i, is, i_27_, i_28_, i_29_, i_30_, bool);
+    public override fun method605(i: Int, `is`: IntArray?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, bool: Boolean) {
+        l(this.nativeid, i, `is`, i_27_, i_28_, i_29_, i_30_, bool)
     }
 
-    public final native int G();
+    public external override fun G(): Int
 
-    public final native int ma();
+    public external override fun ma(): Int
 
-    private final native void R(oa var_oa, ya var_ya, int i, int i_31_, int[] is, int[] is_32_, int[] is_33_, int[] is_34_, short[] is_35_, int i_36_, short[] is_37_, short[] is_38_, short[] is_39_, byte[] is_40_, byte[] is_41_, byte[] is_42_, byte[] is_43_, short[] is_44_, short[] is_45_, int[] is_46_, byte i_47_, short[] is_48_, int i_49_, byte[] is_50_, short[] is_51_, short[] is_52_, short[] is_53_, int[] is_54_, int[] is_55_, int[] is_56_, byte[] is_57_, byte[] is_58_, int[] is_59_, int[] is_60_, int[] is_61_, int[] is_62_, int i_63_, int i_64_, int i_65_, int i_66_, int i_67_, int i_68_, int[] is_69_);
+    private external fun R(
+        var_oa: oa?,
+        var_ya: ya?,
+        i: Int,
+        i_31_: Int,
+        `is`: IntArray?,
+        is_32_: IntArray?,
+        is_33_: IntArray?,
+        is_34_: IntArray?,
+        is_35_: ShortArray?,
+        i_36_: Int,
+        is_37_: ShortArray?,
+        is_38_: ShortArray?,
+        is_39_: ShortArray?,
+        is_40_: ByteArray?,
+        is_41_: ByteArray?,
+        is_42_: ByteArray?,
+        is_43_: ByteArray?,
+        is_44_: ShortArray?,
+        is_45_: ShortArray?,
+        is_46_: IntArray?,
+        i_47_: Byte,
+        is_48_: ShortArray?,
+        i_49_: Int,
+        is_50_: ByteArray?,
+        is_51_: ShortArray?,
+        is_52_: ShortArray?,
+        is_53_: ShortArray?,
+        is_54_: IntArray?,
+        is_55_: IntArray?,
+        is_56_: IntArray?,
+        is_57_: ByteArray?,
+        is_58_: ByteArray?,
+        is_59_: IntArray?,
+        is_60_: IntArray?,
+        is_61_: IntArray?,
+        is_62_: IntArray?,
+        i_63_: Int,
+        i_64_: Int,
+        i_65_: Int,
+        i_66_: Int,
+        i_67_: Int,
+        i_68_: Int,
+        is_69_: IntArray?
+    )
 
-    public final native void FA(int i);
+    public external override fun FA(i: Int)
 
-    public final void method624(int i, int i_70_, int i_71_, int i_72_) {
+    public override fun method624(i: Int, i_70_: Int, i_71_: Int, i_72_: Int) {
         /* empty */
     }
 
-    public final native void ia(short i, short i_73_);
+    public external override fun ia(i: Short, i_73_: Short)
 
-    protected final void finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this);
+    protected fun finalize() {
+        if (this.nativeid != 0L) Class257.method1947(0, this)
     }
 
-    public final native int WA();
+    public external override fun WA(): Int
 
-    public final void method610(Class101 class101, int i, boolean bool) {
-        A(((ja) class101).nativeid, i, bool);
+    public override fun method610(class101: Class101?, i: Int, bool: Boolean) {
+        A((class101 as ja).nativeid, i, bool)
     }
 
-    public final void method622() {
+    public override fun method622() {
         if (anOa5117.anInt5141 > 1) {
-            synchronized (this) {
+            synchronized(this) {
                 while (this.aBoolean1124) {
                     try {
-                        this.wait();
-                    } catch (InterruptedException interruptedexception) {
+                        (this as Object).wait()
+                    } catch (interruptedexception: InterruptedException) {
                         /* empty */
                     }
                 }
-                this.aBoolean1124 = true;
+                this.aBoolean1124 = true
             }
         }
     }
 
-    public final void method615(Class101 class101, Class318_Sub3 class318_sub3, int i) {
-        if (class318_sub3 == null) anOa5117.method3973().method145(this, class101, null, i);
+    public override fun method615(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int) {
+        if (class318_sub3 == null) anOa5117.method3973()?.method145(this, class101, null, i)
         else {
-            oa.anIntArray5132[5] = 0;
-            anOa5117.method3973().method145(this, class101, oa.anIntArray5132, i);
-            class318_sub3.anInt6405 = oa.anIntArray5132[0];
-            class318_sub3.anInt6402 = oa.anIntArray5132[1];
-            class318_sub3.anInt6406 = oa.anIntArray5132[2];
-            class318_sub3.anInt6404 = oa.anIntArray5132[3];
-            class318_sub3.anInt6403 = oa.anIntArray5132[4];
-            class318_sub3.aBoolean6401 = oa.anIntArray5132[5] != 0;
+            oa.Companion.anIntArray5132[5] = 0
+            anOa5117.method3973()?.method145(this, class101, oa.Companion.anIntArray5132, i)
+            class318_sub3.anInt6405 = oa.Companion.anIntArray5132[0]
+            class318_sub3.anInt6402 = oa.Companion.anIntArray5132[1]
+            class318_sub3.anInt6406 = oa.Companion.anIntArray5132[2]
+            class318_sub3.anInt6404 = oa.Companion.anIntArray5132[3]
+            class318_sub3.anInt6403 = oa.Companion.anIntArray5132[4]
+            class318_sub3.aBoolean6401 = oa.Companion.anIntArray5132[5] != 0
         }
     }
 
-    public final native boolean r();
+    public external override fun r(): Boolean
 
-    public final void method620(Class101 class101) {
-        method693(oa.anIntArray5140, class101);
-        int i = 0;
+    public override fun method620(class101: Class101?) {
+        method693(oa.Companion.anIntArray5140, class101)
+        var i = 0
         if (this.aClass129Array5119 != null) {
-            for (int i_74_ = 0; i_74_ < this.aClass129Array5119.length; i_74_++) {
-                Class129 class129 = this.aClass129Array5119[i_74_];
-                class129.anInt1882 = oa.anIntArray5140[i++];
-                class129.anInt1891 = oa.anIntArray5140[i++];
-                class129.anInt1889 = oa.anIntArray5140[i++];
-                class129.anInt1883 = oa.anIntArray5140[i++];
-                class129.anInt1890 = oa.anIntArray5140[i++];
-                class129.anInt1880 = oa.anIntArray5140[i++];
-                class129.anInt1876 = oa.anIntArray5140[i++];
-                class129.anInt1874 = oa.anIntArray5140[i++];
-                class129.anInt1884 = oa.anIntArray5140[i++];
+            for (i_74_ in this.aClass129Array5119!!.indices) {
+                val class129 = this.aClass129Array5119!![i_74_]!!
+                class129.anInt1882 = oa.Companion.anIntArray5140[i++]
+                class129.anInt1891 = oa.Companion.anIntArray5140[i++]
+                class129.anInt1889 = oa.Companion.anIntArray5140[i++]
+                class129.anInt1883 = oa.Companion.anIntArray5140[i++]
+                class129.anInt1890 = oa.Companion.anIntArray5140[i++]
+                class129.anInt1880 = oa.Companion.anIntArray5140[i++]
+                class129.anInt1876 = oa.Companion.anIntArray5140[i++]
+                class129.anInt1874 = oa.Companion.anIntArray5140[i++]
+                class129.anInt1884 = oa.Companion.anIntArray5140[i++]
             }
         }
         if (this.aClass342Array5118 != null) {
-            for (int i_75_ = 0; i_75_ < this.aClass342Array5118.length; i_75_++) {
-                Class342 class342 = this.aClass342Array5118[i_75_];
-                Class342 class342_76_ = class342;
-                if (class342.aClass342_4248 != null) class342_76_ = class342.aClass342_4248;
-                if (class342.aClass101_4252 != null) class342.aClass101_4252.method898(class101);
-                else class342.aClass101_4252 = class101.method907();
-                class342_76_.anInt4238 = oa.anIntArray5140[i++];
-                class342_76_.anInt4239 = oa.anIntArray5140[i++];
-                class342_76_.anInt4240 = oa.anIntArray5140[i++];
+            for (i_75_ in this.aClass342Array5118!!.indices) {
+                val class342 = this.aClass342Array5118!![i_75_]!!
+                var class342_76_: Class342? = class342
+                if (class342.aClass342_4248 != null) class342_76_ = class342.aClass342_4248
+                if (class342.aClass101_4252 != null) class342.aClass101_4252.method898(class101)
+                else class342.aClass101_4252 = class101!!.method907()
+                class342_76_!!.anInt4238 = oa.Companion.anIntArray5140[i++]
+                class342_76_.anInt4239 = oa.Companion.anIntArray5140[i++]
+                class342_76_.anInt4240 = oa.Companion.anIntArray5140[i++]
             }
         }
     }
 
-    public final native void a(int i);
+    public external override fun a(i: Int)
 
-    public final Class342[] method604() {
-        return this.aClass342Array5118;
+    public override fun method604(): Array<Class342?>? {
+        return this.aClass342Array5118
     }
 
-    private final void method693(int[] is, Class101 class101) {
-        anOa5117.method3973().method151(this, is, class101);
+    private fun method693(`is`: IntArray?, class101: Class101?) {
+        anOa5117.method3973()!!.method151(this, `is`, class101)
     }
 
-    public final native int ua();
+    public external override fun ua(): Int
 
-    public final native void H(int i, int i_77_, int i_78_);
+    public external override fun H(i: Int, i_77_: Int, i_78_: Int)
 
-    i(oa var_oa, ya var_ya, Class124 class124, int i, int i_79_, int i_80_, int i_81_) {
-        anOa5117 = var_oa;
-        aYa5120 = var_ya;
-        this.aClass129Array5119 = class124.aClass129Array1846;
-        this.aClass342Array5118 = class124.aClass342Array1866;
-        int i_82_ = (class124.aClass129Array1846 == null ? 0 : class124.aClass129Array1846.length);
-        int i_83_ = (class124.aClass342Array1866 == null ? 0 : class124.aClass342Array1866.length);
-        int i_84_ = 0;
-        int[] is = new int[i_82_ * 3 + i_83_];
-        for (int i_85_ = 0; i_85_ < i_82_; i_85_++) {
-            is[i_84_++] = this.aClass129Array5119[i_85_].anInt1881;
-            is[i_84_++] = this.aClass129Array5119[i_85_].anInt1877;
-            is[i_84_++] = this.aClass129Array5119[i_85_].anInt1892;
+    constructor(var_oa: oa, var_ya: ya?, class124: Class124, i: Int, i_79_: Int, i_80_: Int, i_81_: Int) {
+        anOa5117 = var_oa
+        aYa5120 = var_ya
+        this.aClass129Array5119 = class124.aClass129Array1846
+        this.aClass342Array5118 = class124.aClass342Array1866
+        val i_82_ = (if (class124.aClass129Array1846 == null) 0 else class124.aClass129Array1846.size)
+        val i_83_ = (if (class124.aClass342Array1866 == null) 0 else class124.aClass342Array1866.size)
+        var i_84_ = 0
+        val `is` = IntArray(i_82_ * 3 + i_83_)
+        for (i_85_ in 0..<i_82_) {
+            `is`[i_84_++] = this.aClass129Array5119!![i_85_]!!.anInt1881
+            `is`[i_84_++] = this.aClass129Array5119!![i_85_]!!.anInt1877
+            `is`[i_84_++] = this.aClass129Array5119!![i_85_]!!.anInt1892
         }
-        for (int i_86_ = 0; i_86_ < i_83_; i_86_++)
-            is[i_84_++] = this.aClass342Array5118[i_86_].anInt4244;
-        int i_87_ = (class124.aClass162Array1832 == null ? 0 : class124.aClass162Array1832.length);
-        int[] is_88_ = new int[i_87_ * 8];
-        int i_89_ = 0;
-        for (int i_90_ = 0; i_90_ < i_87_; i_90_++) {
-            Class162 class162 = class124.aClass162Array1832[i_90_];
-            Class189 class189 = Class73.method742(104, class162.anInt2153);
-            is_88_[i_89_++] = class162.anInt2155;
-            is_88_[i_89_++] = class189.anInt2526;
-            is_88_[i_89_++] = class189.anInt2530;
-            is_88_[i_89_++] = class189.anInt2525;
-            is_88_[i_89_++] = class189.anInt2533;
-            is_88_[i_89_++] = class189.anInt2534;
-            is_88_[i_89_++] = class189.aBoolean2531 ? -1 : 0;
+        for (i_86_ in 0..<i_83_) `is`[i_84_++] = this.aClass342Array5118!![i_86_]!!.anInt4244
+        val i_87_ = (if (class124.aClass162Array1832 == null) 0 else class124.aClass162Array1832.size)
+        val is_88_ = IntArray(i_87_ * 8)
+        var i_89_ = 0
+        for (i_90_ in 0..<i_87_) {
+            val class162 = class124.aClass162Array1832[i_90_]
+            val class189 = Class73.method742(104, class162.anInt2153)
+            is_88_[i_89_++] = class162.anInt2155
+            is_88_[i_89_++] = class189.anInt2526
+            is_88_[i_89_++] = class189.anInt2530
+            is_88_[i_89_++] = class189.anInt2525
+            is_88_[i_89_++] = class189.anInt2533
+            is_88_[i_89_++] = class189.anInt2534
+            is_88_[i_89_++] = if (class189.aBoolean2531) -1 else 0
         }
-        for (int i_91_ = 0; i_91_ < i_87_; i_91_++) {
-            Class162 class162 = class124.aClass162Array1832[i_91_];
-            is_88_[i_89_++] = class162.anInt2156;
+        for (i_91_ in 0..<i_87_) {
+            val class162 = class124.aClass162Array1832[i_91_]
+            is_88_[i_89_++] = class162.anInt2156
         }
-        R(anOa5117, aYa5120, class124.anInt1836, class124.anInt1821, class124.anIntArray1841, class124.anIntArray1847, class124.anIntArray1852, class124.anIntArray1868, class124.aShortArray1842, class124.anInt1817, class124.aShortArray1863, class124.aShortArray1835, class124.aShortArray1855, class124.aByteArray1843, class124.aByteArray1839, class124.aByteArray1834, class124.aByteArray1820, class124.aShortArray1862, class124.aShortArray1822, class124.anIntArray1824, class124.aByte1851, class124.aShortArray1856, class124.anInt1818, class124.aByteArray1823, class124.aShortArray1829, class124.aShortArray1849, class124.aShortArray1825, class124.anIntArray1859, class124.anIntArray1816, class124.anIntArray1844, class124.aByteArray1833, class124.aByteArray1853, class124.anIntArray1867, class124.anIntArray1857, class124.anIntArray1865, is, i_82_, i_83_, i, i_79_, i_80_, i_81_, is_88_);
+        R(
+            anOa5117,
+            aYa5120,
+            class124.anInt1836,
+            class124.anInt1821,
+            class124.anIntArray1841,
+            class124.anIntArray1847,
+            class124.anIntArray1852,
+            class124.anIntArray1868,
+            class124.aShortArray1842,
+            class124.anInt1817,
+            class124.aShortArray1863,
+            class124.aShortArray1835,
+            class124.aShortArray1855,
+            class124.aByteArray1843,
+            class124.aByteArray1839,
+            class124.aByteArray1834,
+            class124.aByteArray1820,
+            class124.aShortArray1862,
+            class124.aShortArray1822,
+            class124.anIntArray1824,
+            class124.aByte1851,
+            class124.aShortArray1856,
+            class124.anInt1818,
+            class124.aByteArray1823,
+            class124.aShortArray1829,
+            class124.aShortArray1849,
+            class124.aShortArray1825,
+            class124.anIntArray1859,
+            class124.anIntArray1816,
+            class124.anIntArray1844,
+            class124.aByteArray1833,
+            class124.aByteArray1853,
+            class124.anIntArray1867,
+            class124.anIntArray1857,
+            class124.anIntArray1865,
+            `is`,
+            i_82_,
+            i_83_,
+            i,
+            i_79_,
+            i_80_,
+            i_81_,
+            is_88_
+        )
     }
 
-    private final native void A(long l, int i, boolean bool);
+    private external fun A(l: Long, i: Int, bool: Boolean)
 
-    public final native r ba(r var_r);
+    public external override fun ba(var_r: r?): r?
 
-    private final native void oa(oa var_oa);
+    private external fun oa(var_oa: oa?)
 
-    i(oa var_oa) {
-        anOa5117 = var_oa;
-        aYa5120 = null;
-        oa(var_oa);
+    constructor(var_oa: oa) {
+        anOa5117 = var_oa
+        aYa5120 = null
+        oa(var_oa)
     }
 
-    public final native int RA();
+    public external override fun RA(): Int
 
-    public final native void I(int i, int[] is, int i_92_, int i_93_, int i_94_, boolean bool, int i_95_, int[] is_96_);
+    public external override fun I(i: Int, `is`: IntArray?, i_92_: Int, i_93_: Int, i_94_: Int, bool: Boolean, i_95_: Int, is_96_: IntArray?)
 }
