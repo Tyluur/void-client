@@ -234,7 +234,7 @@ class Class239_Sub24 : Class239 {
                                         i_37_++
                                     }
                                     val i_40_ = Class328_Sub1.anInt6513
-                                    val `is` = Class286_Sub7.anIntArray6290
+                                    val `is` = Class286_Sub7.anIntArray6290!!
                                     var i_41_ = 0
                                     while ((i_40_ > i_41_)) {
                                         val player_42_ = (Class294.aPlayerArray5058[`is`[i_41_]])
@@ -277,7 +277,7 @@ class Class239_Sub24 : Class239 {
                                             }
                                         }
                                         val i_51_ = Class328_Sub1.anInt6513
-                                        val `is` = Class286_Sub7.anIntArray6290
+                                        val `is` = Class286_Sub7.anIntArray6290!!
                                         var i_52_ = 0
                                         while ((i_51_ > i_52_)) {
                                             val player = (Class294.aPlayerArray5058[`is`[i_52_]])

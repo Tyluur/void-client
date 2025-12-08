@@ -92,7 +92,7 @@ abstract class Class258 internal constructor(var aHa_Sub2_4851: ha_Sub2, var anI
 
     init {
         glGenTextures(1, Class286_Sub5.anIntArray6260, 0)
-        this.anInt4859 = Class286_Sub5.anIntArray6260[0]
+        this.anInt4859 = Class286_Sub5.anIntArray6260!![0]
         method1954(0, 94)
     }
 

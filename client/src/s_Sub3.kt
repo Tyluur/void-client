@@ -472,7 +472,7 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
             if (aClass348_Sub3Array8328 != null) {
                 var i_154_ = i_153_ - -i_153_ + 1
                 i_154_ *= i_154_
-                if (i_154_ > Class286_Sub1.anIntArray6189.size) Class286_Sub1.anIntArray6189 = IntArray(i_154_)
+                if (i_154_ > Class286_Sub1.anIntArray6189!!.size) Class286_Sub1.anIntArray6189 = IntArray(i_154_)
                 var i_155_ = -i_153_ + i
                 val i_156_ = i_155_
                 if (i_155_ < 0) i_155_ = 0
@@ -488,7 +488,7 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
                     val bools_162_ = bools[i_161_ - i_156_]
                     var i_163_ = i_157_
                     while (i_160_ >= i_163_) {
-                        if (bools_162_[i_163_ - i_158_]) Class286_Sub1.anIntArray6189[Class348_Sub48.anInt7133++] = i_161_ + this.anInt4587 * i_163_
+                        if (bools_162_[i_163_ - i_158_]) Class286_Sub1.anIntArray6189!![Class348_Sub48.anInt7133++] = i_161_ + this.anInt4587 * i_163_
                         i_163_++
                     }
                 }
