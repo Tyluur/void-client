@@ -1,132 +1,132 @@
-/* Class272_Sub2 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import sun.net.www.protocol.http.AuthenticationInfo
+import java.io.BufferedReader
+import java.io.IOException
+import java.io.InputStreamReader
+import java.net.*
+import java.nio.charset.StandardCharsets
+import java.util.*
 
-import sun.net.www.protocol.http.AuthenticationInfo;
+class Class272_Sub2 : Class272() {
+    private val aProxySelector6172: ProxySelector = ProxySelector.getDefault()
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.lang.reflect.Method;
-import java.net.*;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.util.List;
-
-public final class Class272_Sub2 extends Class272 {
-    private final ProxySelector aProxySelector6172 = ProxySelector.getDefault();
-    static Class aClass6173;
-    static Class aClass6174;
-
-    private final Socket method2052(String string, int i, String string_0_) throws IOException {
-        Socket socket = new Socket(string, i);
-        socket.setSoTimeout(10000);
-        OutputStream outputstream = socket.getOutputStream();
-        if (string_0_ != null) outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n" + string_0_ + "\n\n").getBytes(StandardCharsets.ISO_8859_1));
-        else outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n\n").getBytes(StandardCharsets.ISO_8859_1));
-        outputstream.flush();
-        BufferedReader bufferedreader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        String string_1_ = bufferedreader.readLine();
+    @Throws(IOException::class)
+    private fun method2052(string: String?, i: Int, string_0_: String?): Socket? {
+        val socket = Socket(string, i)
+        socket.setSoTimeout(10000)
+        val outputstream = socket.getOutputStream()
+        if (string_0_ != null) outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n" + string_0_ + "\n\n").toByteArray(StandardCharsets.ISO_8859_1))
+        else outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n\n").toByteArray(StandardCharsets.ISO_8859_1))
+        outputstream.flush()
+        val bufferedreader = BufferedReader(InputStreamReader(socket.getInputStream()))
+        var string_1_ = bufferedreader.readLine()
         if (string_1_ != null) {
-            if (string_1_.startsWith("HTTP/1.0 200") || string_1_.startsWith("HTTP/1.1 200")) return socket;
+            if (string_1_.startsWith("HTTP/1.0 200") || string_1_.startsWith("HTTP/1.1 200")) return socket
             if (string_1_.startsWith("HTTP/1.0 407") || string_1_.startsWith("HTTP/1.1 407")) {
-                int i_2_ = 0;
-                string_1_ = bufferedreader.readLine();
-                String string_3_ = "proxy-authenticate: ";
-                for (/**/; null != string_1_ && i_2_ < 50; string_1_ = bufferedreader.readLine()) {
-                    if (string_1_.toLowerCase().startsWith(string_3_)) {
-                        string_1_ = string_1_.substring(string_3_.length()).trim();
-                        int i_4_ = string_1_.indexOf(' ');
-                        if (i_4_ != -1) string_1_ = string_1_.substring(0, i_4_);
-                        throw new IOException_Sub1(string_1_);
+                var i_2_ = 0
+                string_1_ = bufferedreader.readLine()
+                val string_3_ = "proxy-authenticate: "
+                while ( /**/null != string_1_ && i_2_ < 50) {
+                    if (string_1_.lowercase(Locale.getDefault()).startsWith(string_3_)) {
+                        string_1_ = string_1_.substring(string_3_.length).trim { it <= ' ' }
+                        val i_4_ = string_1_.indexOf(' ')
+                        if (i_4_ != -1) string_1_ = string_1_.substring(0, i_4_)
+                        throw IOException_Sub1(string_1_)
                     }
-                    i_2_++;
+                    i_2_++
+                    string_1_ = bufferedreader.readLine()
                 }
-                throw new IOException_Sub1("");
+                throw IOException_Sub1("")
             }
         }
-        outputstream.close();
-        bufferedreader.close();
-        socket.close();
-        return null;
+        outputstream.close()
+        bufferedreader.close()
+        socket.close()
+        return null
     }
 
-    final Socket method2050(int i) throws IOException {
-        boolean flag1;
-        boolean flag = Boolean.parseBoolean(System.getProperty("java.net.useSystemProxies"));
-        if (!flag) System.setProperty("java.net.useSystemProxies", "true");
-        flag1 = anInt3470 == 443;
-        IOException_Sub1 ioexception_sub1;
-        Object[] aobj1;
-        int j;
-        if (i >= -100) return null;
-        List list;
-        List list1;
+    @Throws(IOException::class)
+    override fun method2050(i: Int): Socket? {
+        val flag1: Boolean
+        val flag = System.getProperty("java.net.useSystemProxies").toBoolean()
+        if (!flag) System.setProperty("java.net.useSystemProxies", "true")
+        flag1 = anInt3470 == 443
+        var ioexception_sub1: IOException_Sub1?
+        val aobj1: Array<Any?>?
+        var j: Int
+        if (i >= -100) return null
+        val list: MutableList<*>
+        val list1: MutableList<*>
         try {
-            list = aProxySelector6172.select(new URI((flag1 ? "https" : "http") + "://" + aString3476));
-            list1 = aProxySelector6172.select(new URI((flag1 ? "http" : "https") + "://" + aString3476));
-        } catch (URISyntaxException urisyntaxexception) {
-            return method2047((byte) 121);
+            list = aProxySelector6172.select(URI((if (flag1) "https" else "http") + "://" + aString3476))
+            list1 = aProxySelector6172.select(URI((if (flag1) "http" else "https") + "://" + aString3476))
+        } catch (urisyntaxexception: URISyntaxException) {
+            return method2047(121.toByte())
         }
-        list.addAll(list1);
-        Object[] aobj = list.toArray();
-        ioexception_sub1 = null;
-        aobj1 = aobj;
-        j = 0;
+        list.addAll(list1)
+        val aobj: Array<Any?> = list.toTypedArray()
+        ioexception_sub1 = null
+        aobj1 = aobj
+        j = 0
 
-        for (; j < aobj1.length; ++j) {
-            Object localObject2 = aobj1[j];
+        while (j < aobj1.size) {
+            val localObject2 = aobj1[j]
 
-            Proxy localProxy = (Proxy) localObject2;
+            val localProxy = localObject2 as Proxy
             try {
-                Socket localSocket = method2053(localProxy, (byte) 125);
+                val localSocket = method2053(localProxy, 125.toByte())
                 if (localSocket != null) {
-                    return localSocket;
+                    return localSocket
                 }
-            } catch (IOException_Sub1 localIOException_Sub1) {
-                ioexception_sub1 = localIOException_Sub1;
-            } catch (IOException localIOException) {
+            } catch (localIOException_Sub1: IOException_Sub1) {
+                ioexception_sub1 = localIOException_Sub1
+            } catch (localIOException: IOException) {
             }
+            ++j
         }
-        if (ioexception_sub1 != null) throw ioexception_sub1;
-        else return method2047((byte) 92);
+        if (ioexception_sub1 != null) throw ioexception_sub1
+        else return method2047(92.toByte())
     }
 
-    private final Socket method2053(Proxy proxy, byte i) throws IOException {
-        if (proxy.type() == Proxy.Type.DIRECT) return method2047((byte) 126);
-        java.net.SocketAddress socketaddress = proxy.address();
-        if (!(socketaddress instanceof InetSocketAddress)) return null;
-        InetSocketAddress inetsocketaddress = (InetSocketAddress) socketaddress;
-        if (i != 125) return null;
+    @Throws(IOException::class)
+    private fun method2053(proxy: Proxy, i: Byte): Socket? {
+        if (proxy.type() == Proxy.Type.DIRECT) return method2047(126.toByte())
+        val socketaddress = proxy.address()
+        if (socketaddress !is InetSocketAddress) return null
+        val inetsocketaddress = socketaddress
+        if (i.toInt() != 125) return null
         if (proxy.type() == Proxy.Type.HTTP) {
-            String string = null;
+            var string: String? = null
             try {
-                Method method = (AuthenticationInfo.class.getDeclaredMethod("getProxyAuth", (aClass6173 == null ? aClass6173 = String.class : aClass6173), Integer.TYPE));
-                method.setAccessible(true);
-                Object object = method.invoke(null, inetsocketaddress.getHostName(), new Integer(inetsocketaddress.getPort()));
-                if (null != object) {
-                    Method method_14_ = (AuthenticationInfo.class.getDeclaredMethod("supportsPreemptiveAuthorization"));
-                    method_14_.setAccessible(true);
-                    if (((Boolean) method_14_.invoke(object, new Object[0])).booleanValue()) {
-                        Method method_15_ = AuthenticationInfo.class.getDeclaredMethod("getHeaderName");
-                        method_15_.setAccessible(true);
-                        Method method_16_ = (AuthenticationInfo.class.getDeclaredMethod("getHeaderValue", (aClass6174 == null ? aClass6174 = URL.class : aClass6174), (aClass6173 == null ? (aClass6173 = String.class) : aClass6173)));
-                        method_16_.setAccessible(true);
-                        String string_17_ = ((String) method_15_.invoke(object, new Object[0]));
-                        String string_18_ = ((String) method_16_.invoke(object, (new Object[]{new URL("https://" + (this.aString3476) + "/"), "https"})));
-                        string = string_17_ + ": " + string_18_;
+                val method = (AuthenticationInfo::class.java.getDeclaredMethod("getProxyAuth", (if (aClass6173 == null) String::class.java.also { aClass6173 = it } else aClass6173), Integer.TYPE))
+                method.setAccessible(true)
+                val `object` = method.invoke(null, inetsocketaddress.getHostName(), inetsocketaddress.getPort())
+                if (null != `object`) {
+                    val method_14_ = (AuthenticationInfo::class.java.getDeclaredMethod("supportsPreemptiveAuthorization"))
+                    method_14_.setAccessible(true)
+                    if ((method_14_.invoke(`object`, *arrayOfNulls<Any>(0)) as Boolean)) {
+                        val method_15_ = AuthenticationInfo::class.java.getDeclaredMethod("getHeaderName")
+                        method_15_.setAccessible(true)
+                        val method_16_ = (AuthenticationInfo::class.java.getDeclaredMethod("getHeaderValue", (if (aClass6174 == null) URL::class.java.also { aClass6174 = it } else aClass6174), (if (aClass6173 == null) (String::class.java.also { aClass6173 = it }) else aClass6173)))
+                        method_16_.setAccessible(true)
+                        val string_17_ = (method_15_.invoke(`object`, *arrayOfNulls<Any>(0)) as String?)
+                        val string_18_ = (method_16_.invoke(`object`, *(arrayOf<Any>(URL("https://" + (this.aString3476) + "/"), "https"))) as String?)
+                        string = string_17_ + ": " + string_18_
                     }
                 }
-            } catch (Exception exception) {
+            } catch (exception: Exception) {
                 /* empty */
             }
-            return method2052(inetsocketaddress.getHostName(), inetsocketaddress.getPort(), string);
+            return method2052(inetsocketaddress.getHostName(), inetsocketaddress.getPort(), string)
         } else if (proxy.type() == Proxy.Type.SOCKS) {
-            Socket socket = new Socket(proxy);
-            socket.connect(new InetSocketAddress((this.aString3476), (this.anInt3470)));
-            return socket;
+            val socket = Socket(proxy)
+            socket.connect(InetSocketAddress((this.aString3476), (this.anInt3470)))
+            return socket
         }
-        return null;
+        return null
+    }
+
+    companion object {
+        var aClass6173: Class<*>? = null
+        var aClass6174: Class<*>? = null
     }
 }
