@@ -121,7 +121,7 @@ public class Loader extends Applet {
     void startClient() {
         try {
             Applet_Sub1.provideLoaderApplet(this);
-            client var_client = new client();
+            Client var_client = new Client();
             var_client.init();
             var_client.start();
         } catch (Exception e) {

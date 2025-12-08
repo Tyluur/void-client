@@ -45,7 +45,7 @@ final class Class79 {
     int anInt1364;
     static Class105 aClass105_1365;
     int anInt1366;
-    static client aClient1367;
+    static Client aClient1367;
     private int anInt1368;
     boolean aBoolean1369;
     boolean aBoolean1370;

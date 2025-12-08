@@ -8,7 +8,7 @@ import java.net.Socket;
 import java.util.GregorianCalendar;
 import java.util.Vector;
 
-public final class client extends Applet_Sub1 {
+public final class Client extends Applet_Sub1 {
     static int anInt5170;
     static int anInt5171 = 0;
     static int anInt5172;
@@ -910,7 +910,7 @@ public final class client extends Applet_Sub1 {
                 Class222.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987);
                 ha.anInt4583 = 0;
                 Class14_Sub1.aString8605 = null;
-                client var_client = new client();
+                Client var_client = new Client();
                 Class79.aClient1367 = var_client;
                 var_client.method96(Class11.aClass231_196.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aClass230_10434.aString2985), 23499, 768);
                 Class52.aFrame4904.setLocation(40, 40);
@@ -2057,7 +2057,7 @@ public final class client extends Applet_Sub1 {
                 if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
                     Field field = ClassLoader.class.getDeclaredField("nativeLibraries");
                     field.setAccessible(true);
-                    Vector vector = ((Vector) field.get((aClass5189 != null ? aClass5189 : (aClass5189 = client.class)).getClassLoader()));
+                    Vector vector = ((Vector) field.get((aClass5189 != null ? aClass5189 : (aClass5189 = Client.class)).getClassLoader()));
                     for (int i_135_ = 0; i_135_ < vector.size(); i_135_++) {
                         try {
                             Object object = vector.elementAt(i_135_);

@@ -61,7 +61,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                         } else i_23_ = i_13_;
                         class46.anInt794 = Class367_Sub11.anInt7396;
                         class46.anInt760 = i_23_;
-                        if (!client.method111(class46)) {
+                        if (!Client.method111(class46)) {
                             if (class46.anInt765 != 0) Class348_Sub18.method2942(class46, (byte) -36);
                             int i_24_ = class46.anInt800 - -i_11_;
                             int i_25_ = class46.anInt750 + i_10_;
@@ -72,7 +72,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                 i_27_ = Class16.method260(bool_15_);
                             }
                             int i_28_ = class46.anInt696;
-                            if (Class299_Sub2.aBoolean6327 && (client.method105(class46).anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127;
+                            if (Class299_Sub2.aBoolean6327 && (Client.method105(class46).anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127;
                             if (class46 == Class289.aClass46_3701) {
                                 if (i_16_ != -1412584499 && ((Class312.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
                                     Class136.anInt4792 = i_10_;
