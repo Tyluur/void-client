@@ -1,17 +1,16 @@
 /* d - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+internal interface d {
+    fun method1(i: Int, f: Float, bool: Boolean, i_0_: Int, i_1_: Int, i_2_: Int): FloatArray?
 
-interface d {
-    float[] method1(int i, float f, boolean bool, int i_0_, int i_1_, int i_2_);
+    fun method2(bool: Boolean): Int
 
-    int method2(boolean bool);
+    fun method3(i: Int, i_3_: Int): Class12?
 
-    Class12 method3(int i, int i_3_);
+    fun method4(i: Int, i_4_: Int): Boolean
 
-    boolean method4(int i, int i_4_);
+    fun method5(bool: Boolean, i: Int, f: Float, i_5_: Int, i_6_: Int, i_7_: Int): IntArray?
 
-    int[] method5(boolean bool, int i, float f, int i_5_, int i_6_, int i_7_);
-
-    int[] method6(int i, int i_8_, float f, int i_9_, boolean bool, int i_10_);
+    fun method6(i: Int, i_8_: Int, f: Float, i_9_: Int, bool: Boolean, i_10_: Int): IntArray?
 }

@@ -1,13 +1,12 @@
 /* Interface2 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+internal interface Interface2 {
+    fun method10(bool: Boolean): Int
 
-interface Interface2 {
-    int method10(boolean bool);
+    fun method11(i: Int, i_0_: Int, `is`: ByteArray?, i_1_: Int)
 
-    void method11(int i, int i_0_, byte[] is, int i_1_);
+    fun method12(i: Byte): Long
 
-    long method12(byte i);
-
-    int method13(byte i);
+    fun method13(i: Byte): Int
 }

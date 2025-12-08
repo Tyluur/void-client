@@ -1,17 +1,16 @@
 /* Interface16 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+internal interface Interface16 {
+    fun method55(i: Byte): Int
 
-interface Interface16 {
-    int method55(byte i);
+    fun method56(i: Byte, l: Long): Boolean
 
-    boolean method56(byte i, long l);
+    fun method57(i: Int)
 
-    void method57(int i);
+    fun method58(bool: Boolean, i: Int)
 
-    void method58(boolean bool, int i);
+    fun method59(i: Int)
 
-    void method59(int i);
-
-    int method60(int i);
+    fun method60(i: Int): Int
 }

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class46 {
+public final class Class46 {
     Object[] anObjectArray671;
     int anInt672;
     int anInt673 = 0;

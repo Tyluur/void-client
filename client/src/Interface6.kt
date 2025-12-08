@@ -1,15 +1,14 @@
 /* Interface6 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+internal interface Interface6 {
+    fun method26(i: Int): Int
 
-interface Interface6 {
-    int method26(int i);
+    fun method27(i: Int): Int
 
-    int method27(int i);
+    fun method28(i: Byte): Char
 
-    char method28(byte i);
+    fun method29(i: Byte): Long
 
-    long method29(byte i);
-
-    int method30(boolean bool);
+    fun method30(bool: Boolean): Int
 }

@@ -1,9 +1,8 @@
 /* Interface4 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+internal interface Interface4 {
+    fun method14(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, bool: Boolean, bool_5_: Boolean)
 
-interface Interface4 {
-    void method14(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, boolean bool, boolean bool_5_);
-
-    void method15(int i, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, boolean bool, boolean bool_11_);
+    fun method15(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, bool_11_: Boolean)
 }

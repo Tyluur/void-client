@@ -1,18 +1,14 @@
-/* Interface5_Impl1 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import jaclib.memory.Buffer
+import jaclib.memory.Source
 
-import jaclib.memory.Buffer;
-import jaclib.memory.Source;
+internal interface Interface5_Impl1 : Interface5 {
+    fun method17(source: Source?, i: Int, i_0_: Int, i_1_: Byte): Boolean
 
-interface Interface5_Impl1 extends Interface5 {
-    boolean method17(Source source, int i, int i_0_, byte i_1_);
+    fun method18(i: Int): Boolean
 
-    boolean method18(int i);
+    fun method19(bool: Boolean, i: Int): Buffer?
 
-    Buffer method19(boolean bool, int i);
+    fun method20(i: Int, i_2_: Byte, i_3_: Int): Boolean
 
-    boolean method20(int i, byte i_2_, int i_3_);
-
-    void method21(int i);
+    fun method21(i: Int)
 }

@@ -1,9 +1,8 @@
 /* Interface14 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+internal interface Interface14 {
+    fun method52(i: Byte): Long
 
-interface Interface14 {
-    long method52(byte i);
-
-    boolean method53(int i, Interface14 interface14_0_);
+    fun method53(i: Int, interface14_0_: Interface14?): Boolean
 }

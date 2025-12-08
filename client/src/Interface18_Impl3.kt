@@ -1,23 +1,22 @@
 /* Interface18_Impl3 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+internal interface Interface18_Impl3 : Interface18 {
+    fun method65(i: Int, `is`: IntArray?, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Byte, i_4_: Int)
 
-interface Interface18_Impl3 extends Interface18 {
-    void method65(int i, int[] is, int i_0_, int i_1_, int i_2_, byte i_3_, int i_4_);
+    fun method66(bool: Boolean, bool_5_: Boolean, i: Int)
 
-    void method66(boolean bool, boolean bool_5_, int i);
+    fun method67(f: Float, i: Int): Float
 
-    float method67(float f, int i);
+    fun method68(i: Int, i_6_: Int, `is`: IntArray?, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int)
 
-    void method68(int i, int i_6_, int[] is, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_);
+    fun method69(bool: Boolean): Int
 
-    int method69(boolean bool);
+    fun method70(i: Int, i_12_: Int, i_13_: Byte, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int, `is`: ByteArray?, class304: Class304?)
 
-    void method70(int i, int i_12_, byte i_13_, int i_14_, int i_15_, int i_16_, int i_17_, byte[] is, Class304 class304);
+    fun method71(i: Byte, f: Float): Float
 
-    float method71(byte i, float f);
+    fun method72(i: Int): Int
 
-    int method72(int i);
-
-    boolean method73(int i);
+    fun method73(i: Int): Boolean
 }

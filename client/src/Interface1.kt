@@ -1,11 +1,10 @@
 /* Interface1 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+internal interface Interface1 {
+    fun method7(i: Int)
 
-interface Interface1 {
-    void method7(int i);
+    fun method8(i: Byte): Boolean
 
-    boolean method8(byte i);
-
-    void method9(byte i, boolean bool);
+    fun method9(i: Byte, bool: Boolean)
 }

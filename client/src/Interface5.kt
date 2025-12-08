@@ -1,7 +1,6 @@
 /* Interface5 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-
-interface Interface5 {
-    int method16(boolean bool);
+internal interface Interface5 {
+    fun method16(bool: Boolean): Int
 }

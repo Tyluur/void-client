@@ -1,19 +1,18 @@
 /* Interface10 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+internal interface Interface10 {
+    fun method38(i: Int): Boolean
 
-interface Interface10 {
-    boolean method38(int i);
+    fun method39(i: Int): Int
 
-    int method39(int i);
+    fun method40(i: Int)
 
-    void method40(int i);
+    fun method41(i: Int): Int
 
-    int method41(int i);
+    fun method42(i: Int): Int
 
-    int method42(int i);
+    fun method43(var_ha: ha?, i: Int)
 
-    void method43(ha var_ha, int i);
-
-    void method44(int i, ha var_ha);
+    fun method44(i: Int, var_ha: ha?)
 }

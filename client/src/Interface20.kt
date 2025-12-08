@@ -1,19 +1,17 @@
-/* Interface20 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import java.awt.Component
 
-import java.awt.*;
+internal interface Interface20 {
+    fun method74(i: Int, i_0_: Byte)
 
-interface Interface20 {
-    void method74(int i, byte i_0_);
+    fun method75(i: Byte, i_1_: Int): Int
 
-    int method75(byte i, int i_1_);
+    fun method76(i: Int, `is`: IntArray?)
 
-    void method76(int i, int[] is);
+    fun method77(i: Byte, i_2_: Int)
 
-    void method77(byte i, int i_2_);
+    @Throws(Exception::class)
+    fun method78(i: Int, bool: Boolean, component: Component?, i_3_: Int)
 
-    void method78(int i, boolean bool, Component component, int i_3_) throws Exception;
-
-    void method79(int i, int i_4_, byte i_5_) throws Exception;
+    @Throws(Exception::class)
+    fun method79(i: Int, i_4_: Int, i_5_: Byte)
 }

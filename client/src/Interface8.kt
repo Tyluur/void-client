@@ -1,13 +1,12 @@
 /* Interface8 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+internal interface Interface8 {
+    fun method33(i: Int): Int
 
-interface Interface8 {
-    int method33(int i);
+    fun method34(i: Int): Int
 
-    int method34(int i);
+    fun method35(`is`: ByteArray?, i: Int, i_0_: Int, i_1_: Int)
 
-    void method35(byte[] is, int i, int i_0_, int i_1_);
-
-    long method36(byte i);
+    fun method36(i: Byte): Long
 }
