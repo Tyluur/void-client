@@ -703,7 +703,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         if (i != 0) method3773(-58, null)
     }
 
-    override fun K(`is`: IntArray?) {
+    public override fun K(`is`: IntArray?) {
         try {
             `is`!![1] = anInt7773
             `is`[3] = anInt7787
@@ -2259,7 +2259,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         }
     }
 
-    override fun KA(i: Int, i_259_: Int, i_260_: Int, i_261_: Int) {
+    public override fun KA(i: Int, i_259_: Int, i_260_: Int, i_261_: Int) {
         var i = i
         var i_259_ = i_259_
         var i_260_ = i_260_
@@ -2286,7 +2286,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         if (i <= -101) anInt7545++
     }
 
-    override fun la() {
+    public override fun la() {
         anInt7773 = 0
         anInt7642++
         anInt7787 = this.anInt7641

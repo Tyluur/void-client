@@ -578,7 +578,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
                 Class286_Sub1.aStringArray6200!![0] = string_11_ + ": " + strings[i_12_]
                 if (Class299_Sub1.aFileOutputStream6323 != null) {
                     try {
-                        Class299_Sub1.aFileOutputStream6323.write(Class348_Sub24.method2992(((Class286_Sub1.aStringArray6200!![0]) + "\n"), (-20).toByte()))
+                        Class299_Sub1.aFileOutputStream6323!!.write(Class348_Sub24.method2992(((Class286_Sub1.aStringArray6200!![0]) + "\n"), (-20).toByte()))
                     } catch (ioexception: IOException) {
                         /* empty */
                     }
