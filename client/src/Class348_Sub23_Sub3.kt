@@ -1,45 +1,48 @@
-/* Class348_Sub23_Sub3 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import jagtheora.ogg.OggPacket
+import jagtheora.ogg.OggStreamState
+import java.io.IOException
+import java.net.Socket
 
-import jagtheora.ogg.OggPacket;
-import jagtheora.ogg.OggStreamState;
-
-import java.io.IOException;
-import java.net.Socket;
-
-public final class Class348_Sub23_Sub3 extends Class348_Sub23 {
-    static int anInt9040;
-    static int anInt9041 = 0;
-    static int[] anIntArray9042;
-    static String aString9043 = null;
-    static short aShort9044 = 256;
-    static int anInt9045;
-    static int anInt9046;
-
-    final void method2964(byte i, OggPacket oggpacket) {
-        if (i >= -91) anInt9041 = -51;
-        anInt9046++;
+class Class348_Sub23_Sub3 internal constructor(oggstreamstate: OggStreamState?) : Class348_Sub23(oggstreamstate) {
+    override fun method2964(i: Byte, oggpacket: OggPacket?) {
+        if (i >= -91) anInt9041 = -51
+        anInt9046++
     }
 
-    public static void method2981(boolean bool) {
-        anIntArray9042 = null;
-        if (bool != false) anInt9041 = -95;
-        aString9043 = null;
+    override fun method2961(i: Byte) {
+        anInt9045++
+        if (i.toInt() != 13) method2961((-50).toByte())
     }
 
-    static final Class238 method2982(Socket socket, byte i, int i_0_) throws IOException {
-        int i_1_ = -41 / ((i - -40) / 42);
-        anInt9040++;
-        return new Class238_Sub1(socket, i_0_);
-    }
+    companion object {
+        @JvmField
+        var anInt9040: Int = 0
+        @JvmField
+        var anInt9041: Int = 0
+        @JvmField
+        var anIntArray9042: IntArray?
+        @JvmField
+        var aString9043: String? = null
+        @JvmField
+        var aShort9044: Short = 256
+        @JvmField
+        var anInt9045: Int = 0
+        @JvmField
+        var anInt9046: Int = 0
 
-    final void method2961(byte i) {
-        anInt9045++;
-        if (i != 13) method2961((byte) -50);
-    }
+        @JvmStatic
+        fun method2981(bool: Boolean) {
+            anIntArray9042 = null
+            if (bool != false) anInt9041 = -95
+            aString9043 = null
+        }
 
-    Class348_Sub23_Sub3(OggStreamState oggstreamstate) {
-        super(oggstreamstate);
+        @JvmStatic
+        @Throws(IOException::class)
+        fun method2982(socket: Socket, i: Byte, i_0_: Int): Class238 {
+            val i_1_ = -41 / ((i - -40) / 42)
+            anInt9040++
+            return Class238_Sub1(socket, i_0_)
+        }
     }
 }
