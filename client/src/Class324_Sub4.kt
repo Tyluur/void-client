@@ -1,177 +1,183 @@
+import kotlin.math.min
+
 /* Class324_Sub4 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class324_Sub4 internal constructor(private var aHa_Sub1_6506: ha_Sub1, class143: Class143?, class207s: Array<Class207?>, `is`: IntArray, is_0_: IntArray) : Class324(aHa_Sub1_6506, class143) {
+    private val anIntArray6503: IntArray
+    private val aByteArrayArray6504: Array<ByteArray?>
+    private val anIntArray6505: IntArray
+    private val anIntArray6507: IntArray
+    private val anIntArray6508: IntArray
 
-public final class Class324_Sub4 extends Class324 {
-    private final int[] anIntArray6503;
-    private final byte[][] aByteArrayArray6504;
-    private final int[] anIntArray6505;
-    private ha_Sub1 aHa_Sub1_6506;
-    private final int[] anIntArray6507;
-    private final int[] anIntArray6508;
-
-    Class324_Sub4(ha_Sub1 var_ha_Sub1, Class143 class143, Class207[] class207s, int[] is, int[] is_0_) {
-        super(var_ha_Sub1, class143);
-        aHa_Sub1_6506 = var_ha_Sub1;
-        aHa_Sub1_6506 = var_ha_Sub1;
-        anIntArray6503 = is;
-        anIntArray6505 = is_0_;
-        aByteArrayArray6504 = new byte[class207s.length][];
-        anIntArray6508 = new int[class207s.length];
-        anIntArray6507 = new int[class207s.length];
-        for (int i = 0; i < class207s.length; i++) {
-            Class207 class207 = class207s[i];
+    init {
+        aHa_Sub1_6506 = aHa_Sub1_6506
+        anIntArray6503 = `is`
+        anIntArray6505 = is_0_
+        aByteArrayArray6504 = arrayOfNulls<ByteArray?>(class207s.size)
+        anIntArray6508 = IntArray(class207s.size)
+        anIntArray6507 = IntArray(class207s.size)
+        for (i in class207s.indices) {
+            val class207 = class207s[i]!!
             if (class207.aByteArray2695 == null) {
-                byte[] is_1_ = class207.aByteArray2699;
-                byte[] is_2_ = aByteArrayArray6504[i] = new byte[is_1_.length];
-                for (int i_3_ = 0; i_3_ < is_1_.length; i_3_++)
-                    is_2_[i_3_] = (byte) (is_1_[i_3_] == 0 ? 0 : -1);
-            } else aByteArrayArray6504[i] = class207.aByteArray2695;
-            anIntArray6508[i] = class207.anInt2700;
-            anIntArray6507[i] = class207.anInt2703;
+                val is_1_ = class207.aByteArray2699
+                aByteArrayArray6504[i] = ByteArray(is_1_.size)
+                val is_2_ = aByteArrayArray6504[i]!!
+                for (i_3_ in is_1_.indices) is_2_[i_3_] = (if (is_1_[i_3_].toInt() == 0) 0 else -1).toByte()
+            } else aByteArrayArray6504[i] = class207.aByteArray2695
+            anIntArray6508[i] = class207.anInt2700
+            anIntArray6507[i] = class207.anInt2703
         }
     }
 
-    private final void method2594(byte[] is, int[] is_4_, int i, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, aa var_aa, int i_14_, int i_15_) {
-        aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
-        int[] is_16_ = var_aa_Sub3.anIntArray5201;
-        int[] is_17_ = var_aa_Sub3.anIntArray5202;
-        int i_18_ = i_11_ - aHa_Sub1_6506.anInt7496;
-        int i_19_ = i_12_;
+    private fun method2594(`is`: ByteArray, is_4_: IntArray, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_aa: aa?, i_14_: Int, i_15_: Int) {
+        var i_5_ = i_5_
+        var i_6_ = i_6_
+        val var_aa_Sub3 = var_aa as aa_Sub3
+        val is_16_ = var_aa_Sub3.anIntArray5201
+        val is_17_ = var_aa_Sub3.anIntArray5202
+        val i_18_ = i_11_ - aHa_Sub1_6506.anInt7496
+        var i_19_ = i_12_
         if (i_15_ > i_19_) {
-            i_19_ = i_15_;
-            i_6_ += (i_15_ - i_12_) * aHa_Sub1_6506.anInt7477;
-            i_5_ += (i_15_ - i_12_) * i_13_;
+            i_19_ = i_15_
+            i_6_ += (i_15_ - i_12_) * aHa_Sub1_6506.anInt7477
+            i_5_ += (i_15_ - i_12_) * i_13_
         }
-        int i_20_ = (Math.min(i_15_ + is_16_.length, i_12_ + i_8_));
-        for (int i_21_ = i_19_; i_21_ < i_20_; i_21_++) {
-            int i_22_ = is_16_[i_21_ - i_15_] + i_14_;
-            int i_23_ = is_17_[i_21_ - i_15_];
-            int i_24_ = i_7_;
+        val i_20_ = (min(i_15_ + is_16_!!.size, i_12_ + i_8_))
+        for (i_21_ in i_19_..<i_20_) {
+            val i_22_ = is_16_[i_21_ - i_15_] + i_14_
+            var i_23_ = is_17_!![i_21_ - i_15_]
+            var i_24_ = i_7_
             if (i_18_ > i_22_) {
-                int i_25_ = i_18_ - i_22_;
+                val i_25_ = i_18_ - i_22_
                 if (i_25_ >= i_23_) {
-                    i_5_ += i_7_ + i_10_;
-                    i_6_ += i_7_ + i_9_;
-                    continue;
+                    i_5_ += i_7_ + i_10_
+                    i_6_ += i_7_ + i_9_
+                    continue
                 }
-                i_23_ -= i_25_;
+                i_23_ -= i_25_
             } else {
-                int i_26_ = i_22_ - i_18_;
+                val i_26_ = i_22_ - i_18_
                 if (i_26_ >= i_7_) {
-                    i_5_ += i_7_ + i_10_;
-                    i_6_ += i_7_ + i_9_;
-                    continue;
+                    i_5_ += i_7_ + i_10_
+                    i_6_ += i_7_ + i_9_
+                    continue
                 }
-                i_5_ += i_26_;
-                i_24_ -= i_26_;
-                i_6_ += i_26_;
+                i_5_ += i_26_
+                i_24_ -= i_26_
+                i_6_ += i_26_
             }
-            int i_27_ = 0;
-            if (i_24_ < i_23_) i_23_ = i_24_;
-            else i_27_ = i_24_ - i_23_;
-            for (int i_28_ = -i_23_; i_28_ < 0; i_28_++) {
-                int i_29_ = is[i_5_++] & 0xff;
+            var i_27_ = 0
+            if (i_24_ < i_23_) i_23_ = i_24_
+            else i_27_ = i_24_ - i_23_
+            for (i_28_ in -i_23_..-1) {
+                var i_29_ = `is`[i_5_++].toInt() and 0xff
                 if (i_29_ != 0) {
-                    int i_30_ = ((((i & 0xff00ff) * i_29_ & ~0xff00ff) + ((i & 0xff00) * i_29_ & 0xff0000)) >> 8);
-                    i_29_ = 256 - i_29_;
-                    int i_31_ = is_4_[i_6_];
-                    is_4_[i_6_++] = ((((i_31_ & 0xff00ff) * i_29_ & ~0xff00ff) + ((i_31_ & 0xff00) * i_29_ & 0xff0000)) >> 8) + i_30_;
-                } else i_6_++;
+                    val i_30_ = ((((i and 0xff00ff) * i_29_ and 0xff00ff.inv()) + ((i and 0xff00) * i_29_ and 0xff0000)) shr 8)
+                    i_29_ = 256 - i_29_
+                    val i_31_ = is_4_[i_6_]
+                    is_4_[i_6_++] = ((((i_31_ and 0xff00ff) * i_29_ and 0xff00ff.inv()) + ((i_31_ and 0xff00) * i_29_ and 0xff0000)) shr 8) + i_30_
+                } else i_6_++
             }
-            i_5_ += i_27_ + i_10_;
-            i_6_ += i_27_ + i_9_;
+            i_5_ += i_27_ + i_10_
+            i_6_ += i_27_ + i_9_
         }
     }
 
-    private final void method2595(byte[] is, int[] is_32_, int i, int i_33_, int i_34_, int i_35_, int i_36_, int i_37_, int i_38_) {
-        for (int i_39_ = -i_36_; i_39_ < 0; i_39_++) {
-            for (int i_40_ = -i_35_; i_40_ < 0; i_40_++) {
-                int i_41_ = is[i_33_++] & 0xff;
+    private fun method2595(`is`: ByteArray, is_32_: IntArray, i: Int, i_33_: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int) {
+        var i_33_ = i_33_
+        var i_34_ = i_34_
+        for (i_39_ in -i_36_..-1) {
+            for (i_40_ in -i_35_..-1) {
+                var i_41_ = `is`[i_33_++].toInt() and 0xff
                 if (i_41_ != 0) {
-                    int i_42_ = ((((i & 0xff00ff) * i_41_ & ~0xff00ff) + ((i & 0xff00) * i_41_ & 0xff0000)) >> 8);
-                    i_41_ = 256 - i_41_;
-                    int i_43_ = is_32_[i_34_];
-                    is_32_[i_34_++] = ((((i_43_ & 0xff00ff) * i_41_ & ~0xff00ff) + ((i_43_ & 0xff00) * i_41_ & 0xff0000)) >> 8) + i_42_;
-                } else i_34_++;
+                    val i_42_ = ((((i and 0xff00ff) * i_41_ and 0xff00ff.inv()) + ((i and 0xff00) * i_41_ and 0xff0000)) shr 8)
+                    i_41_ = 256 - i_41_
+                    val i_43_ = is_32_[i_34_]
+                    is_32_[i_34_++] = ((((i_43_ and 0xff00ff) * i_41_ and 0xff00ff.inv()) + ((i_43_ and 0xff00) * i_41_ and 0xff0000)) shr 8) + i_42_
+                } else i_34_++
             }
-            i_34_ += i_37_;
-            i_33_ += i_38_;
+            i_34_ += i_37_
+            i_33_ += i_38_
         }
     }
 
-    final void method2578(char c, int i, int i_44_, int i_45_, boolean bool, aa var_aa, int i_46_, int i_47_) {
-        if (var_aa == null) fa(c, i, i_44_, i_45_, bool);
+    override fun method2578(c: Char, i: Int, i_44_: Int, i_45_: Int, bool: Boolean, var_aa: aa?, i_46_: Int, i_47_: Int) {
+        var i = i
+        var i_44_ = i_44_
+        if (var_aa == null) fa(c, i, i_44_, i_45_, bool)
         else {
-            i += anIntArray6507[c];
-            i_44_ += anIntArray6508[c];
-            int i_48_ = anIntArray6503[c];
-            int i_49_ = anIntArray6505[c];
-            int i_50_ = aHa_Sub1_6506.anInt7477;
-            int i_51_ = i + i_44_ * i_50_;
-            int i_52_ = i_50_ - i_48_;
-            int i_53_ = 0;
-            int i_54_ = 0;
+            i += anIntArray6507[c.code]
+            i_44_ += anIntArray6508[c.code]
+            var i_48_ = anIntArray6503[c.code]
+            var i_49_ = anIntArray6505[c.code]
+            val i_50_ = aHa_Sub1_6506.anInt7477
+            var i_51_ = i + i_44_ * i_50_
+            var i_52_ = i_50_ - i_48_
+            var i_53_ = 0
+            var i_54_ = 0
             if (i_44_ < aHa_Sub1_6506.anInt7476) {
-                int i_55_ = aHa_Sub1_6506.anInt7476 - i_44_;
-                i_49_ -= i_55_;
-                i_44_ = aHa_Sub1_6506.anInt7476;
-                i_54_ += i_55_ * i_48_;
-                i_51_ += i_55_ * i_50_;
+                val i_55_ = aHa_Sub1_6506.anInt7476 - i_44_
+                i_49_ -= i_55_
+                i_44_ = aHa_Sub1_6506.anInt7476
+                i_54_ += i_55_ * i_48_
+                i_51_ += i_55_ * i_50_
             }
-            if (i_44_ + i_49_ > aHa_Sub1_6506.anInt7503) i_49_ -= i_44_ + i_49_ - aHa_Sub1_6506.anInt7503;
+            if (i_44_ + i_49_ > aHa_Sub1_6506.anInt7503) i_49_ -= i_44_ + i_49_ - aHa_Sub1_6506.anInt7503
             if (i < aHa_Sub1_6506.anInt7496) {
-                int i_56_ = aHa_Sub1_6506.anInt7496 - i;
-                i_48_ -= i_56_;
-                i = aHa_Sub1_6506.anInt7496;
-                i_54_ += i_56_;
-                i_51_ += i_56_;
-                i_53_ += i_56_;
-                i_52_ += i_56_;
+                val i_56_ = aHa_Sub1_6506.anInt7496 - i
+                i_48_ -= i_56_
+                i = aHa_Sub1_6506.anInt7496
+                i_54_ += i_56_
+                i_51_ += i_56_
+                i_53_ += i_56_
+                i_52_ += i_56_
             }
             if (i + i_48_ > aHa_Sub1_6506.anInt7507) {
-                int i_57_ = i + i_48_ - aHa_Sub1_6506.anInt7507;
-                i_48_ -= i_57_;
-                i_53_ += i_57_;
-                i_52_ += i_57_;
+                val i_57_ = i + i_48_ - aHa_Sub1_6506.anInt7507
+                i_48_ -= i_57_
+                i_53_ += i_57_
+                i_52_ += i_57_
             }
-            if (i_48_ > 0 && i_49_ > 0) method2594(aByteArrayArray6504[c], aHa_Sub1_6506.anIntArray7483, i_45_, i_54_, i_51_, i_48_, i_49_, i_52_, i_53_, i, i_44_, anIntArray6503[c], var_aa, i_46_, i_47_);
+            if (i_48_ > 0 && i_49_ > 0) method2594(aByteArrayArray6504[c.code]!!, aHa_Sub1_6506.anIntArray7483!!, i_45_, i_54_, i_51_, i_48_, i_49_, i_52_, i_53_, i, i_44_, anIntArray6503[c.code], var_aa, i_46_, i_47_)
         }
     }
 
-    final void fa(char c, int i, int i_58_, int i_59_, boolean bool) {
-        i += anIntArray6507[c];
-        i_58_ += anIntArray6508[c];
-        int i_60_ = anIntArray6503[c];
-        int i_61_ = anIntArray6505[c];
-        int i_62_ = aHa_Sub1_6506.anInt7477;
-        int i_63_ = i + i_58_ * i_62_;
-        int i_64_ = i_62_ - i_60_;
-        int i_65_ = 0;
-        int i_66_ = 0;
+    override fun fa(c: Char, i: Int, i_58_: Int, i_59_: Int, bool: Boolean) {
+        var i = i
+        var i_58_ = i_58_
+        i += anIntArray6507[c.code]
+        i_58_ += anIntArray6508[c.code]
+        var i_60_ = anIntArray6503[c.code]
+        var i_61_ = anIntArray6505[c.code]
+        val i_62_ = aHa_Sub1_6506.anInt7477
+        var i_63_ = i + i_58_ * i_62_
+        var i_64_ = i_62_ - i_60_
+        var i_65_ = 0
+        var i_66_ = 0
         if (i_58_ < aHa_Sub1_6506.anInt7476) {
-            int i_67_ = aHa_Sub1_6506.anInt7476 - i_58_;
-            i_61_ -= i_67_;
-            i_58_ = aHa_Sub1_6506.anInt7476;
-            i_66_ += i_67_ * i_60_;
-            i_63_ += i_67_ * i_62_;
+            val i_67_ = aHa_Sub1_6506.anInt7476 - i_58_
+            i_61_ -= i_67_
+            i_58_ = aHa_Sub1_6506.anInt7476
+            i_66_ += i_67_ * i_60_
+            i_63_ += i_67_ * i_62_
         }
-        if (i_58_ + i_61_ > aHa_Sub1_6506.anInt7503) i_61_ -= i_58_ + i_61_ - aHa_Sub1_6506.anInt7503;
+        if (i_58_ + i_61_ > aHa_Sub1_6506.anInt7503) i_61_ -= i_58_ + i_61_ - aHa_Sub1_6506.anInt7503
         if (i < aHa_Sub1_6506.anInt7496) {
-            int i_68_ = aHa_Sub1_6506.anInt7496 - i;
-            i_60_ -= i_68_;
-            i = aHa_Sub1_6506.anInt7496;
-            i_66_ += i_68_;
-            i_63_ += i_68_;
-            i_65_ += i_68_;
-            i_64_ += i_68_;
+            val i_68_ = aHa_Sub1_6506.anInt7496 - i
+            i_60_ -= i_68_
+            i = aHa_Sub1_6506.anInt7496
+            i_66_ += i_68_
+            i_63_ += i_68_
+            i_65_ += i_68_
+            i_64_ += i_68_
         }
         if (i + i_60_ > aHa_Sub1_6506.anInt7507) {
-            int i_69_ = i + i_60_ - aHa_Sub1_6506.anInt7507;
-            i_60_ -= i_69_;
-            i_65_ += i_69_;
-            i_64_ += i_69_;
+            val i_69_ = i + i_60_ - aHa_Sub1_6506.anInt7507
+            i_60_ -= i_69_
+            i_65_ += i_69_
+            i_64_ += i_69_
         }
-        if (i_60_ > 0 && i_61_ > 0) method2595(aByteArrayArray6504[c], aHa_Sub1_6506.anIntArray7483, i_59_, i_66_, i_63_, i_60_, i_61_, i_64_, i_65_);
+        if (i_60_ > 0 && i_61_ > 0) method2595(aByteArrayArray6504[c.code]!!, aHa_Sub1_6506.anIntArray7483!!, i_59_, i_66_, i_63_, i_60_, i_61_, i_64_, i_65_)
     }
 }

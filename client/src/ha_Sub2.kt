@@ -874,7 +874,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
     override fun method3686(class143: Class143?, class207s: Array<Class207?>?, bool: Boolean): Class324 {
         try {
             anInt7574++
-            return Class324_Sub5(this, class143, class207s, bool)
+            return Class324_Sub5(this, class143, class207s!!, bool)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.JE(" + (if (class143 != null) "{...}" else "null") + ',' + (if (class207s != null) "{...}" else "null") + ',' + bool + ')'))
         }
