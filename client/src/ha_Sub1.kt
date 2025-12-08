@@ -2072,7 +2072,7 @@ internal class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
         if (class348_sub31 != null) {
             class348_sub31.method2715(95.toByte())
-            class348_sub31 = Class110.method1035(9029, i_578_, canvas, i)
+            class348_sub31 = Class110.method1035(9029, i_578_, canvas, i)!!
             aClass356_7467!!.method3483(112.toByte(), canvas.hashCode().toLong(), class348_sub31)
             if (aCanvas7468 === canvas && aClass49_7475 == null) {
                 val dimension = canvas.getSize()
