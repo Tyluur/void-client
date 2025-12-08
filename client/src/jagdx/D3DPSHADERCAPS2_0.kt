@@ -1,15 +1,14 @@
-package jagdx;
+package jagdx
 
 
-public final class D3DPSHADERCAPS2_0 {
+class D3DPSHADERCAPS2_0 {
+    private val Caps = 0
 
-	private int Caps;
+    private val DynamicFlowControlDepth = 0
 
-	private int DynamicFlowControlDepth;
+    private val NumTemps = 0
 
-	private int NumTemps;
+    private val NumInstructionSlots = 0
 
-	private int NumInstructionSlots;
-
-	private int StaticFlowControlDepth;
+    private val StaticFlowControlDepth = 0
 }

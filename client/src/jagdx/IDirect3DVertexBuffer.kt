@@ -1,36 +1,30 @@
-package jagdx;
+package jagdx
 
-import jaclib.memory.Source;
-import jaclib.peer.IUnknown;
-import jaclib.peer.hb;
+import jaclib.memory.Source
+import jaclib.peer.IUnknown
+import jaclib.peer.hb
 
-public final class IDirect3DVertexBuffer extends IUnknown {
+class IDirect3DVertexBuffer(arg0: hb?) : IUnknown(arg0) {
+    var b: Int = 0
 
-	public int b;
+    private external fun _Update(arg0: Long, arg1: Int, arg2: Int, arg3: Int): Boolean
 
-	public IDirect3DVertexBuffer(hb arg0) {
-		super(arg0);
-	}
+    fun a(arg0: Source, arg1: Int, arg2: Int, arg3: Int, arg4: Int): Boolean {
+        if (arg0 == null || arg3 > arg0.getSize() + arg1) {
+            throw fda("")
+        } else if (arg3 > arg2 + this.b) {
+            throw fda("")
+        } else {
+            return this._Update(arg1.toLong() + arg0.getAddress(), arg2, arg3, arg4)
+        }
+    }
 
-	private native boolean _Update(long arg0, int arg1, int arg2, int arg3);
+    external fun Unlock(): Int
 
-	public boolean a(Source arg0, int arg1, int arg2, int arg3, int arg4) {
-		if (arg0 == null || arg3 > arg0.getSize() + arg1) {
-			throw new fda("");
-		} else if (arg3 > arg2 + this.b) {
-			throw new fda("");
-		} else {
-			return this._Update((long) arg1 + arg0.getAddress(), arg2, arg3, arg4);
-		}
-	}
+    override fun a(): Long {
+        this.b = 0
+        return super.a()
+    }
 
-	public native int Unlock();
-
-	@Override
-	protected long a() {
-		this.b = 0;
-		return super.a();
-	}
-
-	public native int Lock(int arg0, int arg1, int arg2, GeometryBuffer arg3);
+    external fun Lock(arg0: Int, arg1: Int, arg2: Int, arg3: GeometryBuffer?): Int
 }

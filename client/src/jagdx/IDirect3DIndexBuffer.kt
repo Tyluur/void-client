@@ -1,22 +1,16 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.IUnknown;
-import jaclib.peer.hb;
+import jaclib.peer.IUnknown
+import jaclib.peer.hb
 
-public final class IDirect3DIndexBuffer extends IUnknown {
+class IDirect3DIndexBuffer(arg0: hb?) : IUnknown(arg0) {
+    override fun a(): Long {
+        return super.a()
+    }
 
-	public IDirect3DIndexBuffer(hb arg0) {
-		super(arg0);
-	}
+    external fun Unlock(): Int
 
-	@Override
-	protected long a() {
-		return super.a();
-	}
+    external fun Lock(arg0: Int, arg1: Int, arg2: Int, arg3: GeometryBuffer?): Int
 
-	public native int Unlock();
-
-	public native int Lock(int arg0, int arg1, int arg2, GeometryBuffer arg3);
-
-	private native boolean _Update(long arg0, int arg1, int arg2);
+    private external fun _Update(arg0: Long, arg1: Int, arg2: Int): Boolean
 }

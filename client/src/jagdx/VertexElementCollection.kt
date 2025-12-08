@@ -1,20 +1,18 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.hb;
-import jaclib.peer.uda;
+import jaclib.peer.hb
+import jaclib.peer.uda
 
-public final class VertexElementCollection extends uda {
+class VertexElementCollection(arg0: hb?) : uda(arg0) {
+    init {
+        this.init()
+    }
 
-	public VertexElementCollection(hb arg0) {
-		super(arg0);
-		this.init();
-	}
+    private external fun init()
 
-	private native void init();
+    external fun finish()
 
-	public native void finish();
+    external fun addElement(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int)
 
-	public native void addElement(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
-
-	private native void reset();
+    private external fun reset()
 }

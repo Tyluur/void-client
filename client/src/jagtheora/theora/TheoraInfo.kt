@@ -1,53 +1,56 @@
-package jagtheora.theora;
+package jagtheora.theora
 
-import jagtheora.misc.SimplePeer;
+import jagtheora.misc.SimplePeer
 
-public final class TheoraInfo extends SimplePeer {
+class TheoraInfo : SimplePeer() {
+    private val colourSpace = 0
 
-	private int colourSpace;
+    private val versionSubMinor: Byte = 0
 
-	private byte versionSubMinor;
+    @JvmField
+    var fpsNumerator: Int = 0
 
-	public int fpsNumerator;
+    private val pixelFormat = 0
 
-	private int pixelFormat;
+    private val picY = 0
 
-	private int picY;
+    private val aspectDenominator = 0
 
-	private int aspectDenominator;
+    private val picWidth = 0
 
-	private int picWidth;
+    private val versionMinor: Byte = 0
 
-	private byte versionMinor;
+    private val picX = 0
 
-	private int picX;
+    private val picHeight = 0
 
-	private int picHeight;
+    @JvmField
+    var fpsDenominator: Int = 0
 
-	public int fpsDenominator;
+    private val versionMajor: Byte = 0
 
-	private byte versionMajor;
+    @JvmField
+    var frameWidth: Int = 0
 
-	public int frameWidth;
+    private val aspectNumerator = 0
 
-	private int aspectNumerator;
+    @JvmField
+    var frameHeight: Int = 0
 
-	public int frameHeight;
+    init {
+        init()
+        check(!this.b())
+    }
 
-	static {
-		initFields();
-	}
+    external override fun clear()
 
-	private static native void initFields();
+    companion object {
+        init {
+            initFields()
+        }
 
-	public TheoraInfo() {
-		this.init();
-		if (this.b()) {
-			throw new IllegalStateException();
-		}
-	}
+        private external fun initFields()
 
-	protected native void clear();
-
-	protected static native void init();
+        protected external fun init()
+    }
 }

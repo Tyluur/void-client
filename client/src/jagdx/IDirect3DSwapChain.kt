@@ -1,27 +1,19 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.IUnknown;
-import jaclib.peer.hb;
+import jaclib.peer.IUnknown
+import jaclib.peer.hb
 
-public final class IDirect3DSwapChain extends IUnknown {
+class IDirect3DSwapChain(private val b: hb?) : IUnknown(b) {
+    fun a(arg0: Int, arg1: Int): IDirect3DSurface {
+        val local5 = IDirect3DSurface(this.b)
+        val local11 = this._GetBackBuffer(arg0, arg1, local5)
+        if (ue.a(97.toByte(), local11)) {
+            throw fda(local11.toString())
+        }
+        return local5
+    }
 
-	private final hb b;
+    private external fun _GetBackBuffer(arg0: Int, arg1: Int, arg2: IDirect3DSurface?): Int
 
-	public IDirect3DSwapChain(hb arg0) {
-		super(arg0);
-		this.b = arg0;
-	}
-
-	public IDirect3DSurface a(int arg0, int arg1) {
-		IDirect3DSurface local5 = new IDirect3DSurface(this.b);
-		int local11 = this._GetBackBuffer(arg0, arg1, local5);
-		if (ue.a((byte) 97, local11)) {
-			throw new fda(String.valueOf(local11));
-		}
-		return local5;
-	}
-
-	private native int _GetBackBuffer(int arg0, int arg1, IDirect3DSurface arg2);
-
-	public native int Present(int arg0);
+    external fun Present(arg0: Int): Int
 }

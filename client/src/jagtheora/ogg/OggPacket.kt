@@ -1,18 +1,22 @@
-package jagtheora.ogg;
+package jagtheora.ogg
 
-import jagtheora.misc.SimplePeer;
+import jagtheora.misc.SimplePeer
 
-public final class OggPacket extends SimplePeer {
+class OggPacket : SimplePeer() {
+    val isTheora: Boolean
+        external get
 
-	public native boolean isTheora();
+    external override fun clear()
 
-	protected native void clear();
+    val data: ByteArray?
+        external get
 
-	public native byte[] getData();
+    private val isHeader: Int
+        external get
 
-	private native int isHeader();
+    val isKeyFrame: Int
+        external get
 
-	public native int isKeyFrame();
-
-	public native boolean isVorbis();
+    val isVorbis: Boolean
+        external get
 }

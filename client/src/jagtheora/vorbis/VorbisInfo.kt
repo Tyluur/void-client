@@ -1,30 +1,31 @@
-package jagtheora.vorbis;
+package jagtheora.vorbis
 
-import jagtheora.misc.SimplePeer;
-import jagtheora.ogg.OggPacket;
+import jagtheora.misc.SimplePeer
+import jagtheora.ogg.OggPacket
 
-public final class VorbisInfo extends SimplePeer {
+class VorbisInfo : SimplePeer() {
+    @JvmField
+    var rate: Int = 0
 
-	public int rate;
+    @JvmField
+    var channels: Int = 0
 
-	public int channels;
+    init {
+        init()
+        check(!this.b())
+    }
 
-	static {
-		initFields();
-	}
+    external fun headerIn(arg0: VorbisComment?, arg1: OggPacket?): Int
 
-	private static native void initFields();
+    external override fun clear()
 
-	public VorbisInfo() {
-		this.init();
-		if (this.b()) {
-			throw new IllegalStateException();
-		}
-	}
+    companion object {
+        init {
+            initFields()
+        }
 
-	protected static native void init();
+        private external fun initFields()
 
-	public native int headerIn(VorbisComment arg0, OggPacket arg1);
-
-	protected native void clear();
+        protected external fun init()
+    }
 }

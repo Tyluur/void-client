@@ -1,20 +1,17 @@
-package jagtheora.vorbis;
+package jagtheora.vorbis
 
-import jagtheora.misc.SimplePeer;
-import jagtheora.ogg.OggPacket;
+import jagtheora.misc.SimplePeer
+import jagtheora.ogg.OggPacket
 
-public final class VorbisBlock extends SimplePeer {
+class VorbisBlock(arg0: DSPState?) : SimplePeer() {
+    init {
+        this.init(arg0)
+        check(!this.b())
+    }
 
-	public VorbisBlock(DSPState arg0) {
-		this.init(arg0);
-		if (this.b()) {
-			throw new IllegalStateException();
-		}
-	}
+    external override fun clear()
 
-	protected native void clear();
+    private external fun init(arg0: DSPState?)
 
-	private native void init(DSPState arg0);
-
-	public native int synthesis(OggPacket arg0);
+    external fun synthesis(arg0: OggPacket?): Int
 }

@@ -1,25 +1,22 @@
-package jagtheora.vorbis;
+package jagtheora.vorbis
 
-import jagtheora.misc.SimplePeer;
+import jagtheora.misc.SimplePeer
 
-public final class DSPState extends SimplePeer {
+class DSPState(arg0: VorbisInfo?) : SimplePeer() {
+    init {
+        this.init(arg0)
+        check(!this.b())
+    }
 
-	public DSPState(VorbisInfo arg0) {
-		this.init(arg0);
-		if (this.b()) {
-			throw new IllegalStateException();
-		}
-	}
+    external fun pcmOut(arg0: Int): Array<FloatArray?>?
 
-	public native float[][] pcmOut(int arg0);
+    private external fun init(arg0: VorbisInfo?)
 
-	private native void init(VorbisInfo arg0);
+    external fun read(arg0: Int)
 
-	public native void read(int arg0);
+    external fun blockIn(arg0: VorbisBlock?)
 
-	public native void blockIn(VorbisBlock arg0);
+    external override fun clear()
 
-	protected native void clear();
-
-	public native double granuleTime();
+    external fun granuleTime(): Double
 }

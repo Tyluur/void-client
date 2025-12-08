@@ -1,32 +1,36 @@
-package jagex3.jagmisc;
+package jagex3.jagmisc
 
 
-public final class jagmisc {
+object jagmisc {
+    private val totalPhysicalMemory: Long
+        external get
 
-	private static native long getTotalPhysicalMemory();
+    @JvmStatic
+    val availablePhysicalMemory: Long
+        external get
 
-	public static native long getAvailablePhysicalMemory();
+    private external fun ping0(arg0: Byte, arg1: Byte, arg2: Byte, arg3: Byte, arg4: Long): Int
 
-	private static native int ping0(byte arg0, byte arg1, byte arg2, byte arg3, long arg4);
+    @JvmStatic
+    external fun init(): Boolean
 
-	public static native boolean init();
+    @JvmStatic
+    external fun nanoTime(): Long
 
-	public static native long nanoTime();
+    @JvmStatic
+    fun quit() {
+        Quit0()
+    }
 
-	public static void quit() {
-		Quit0();
-	}
+    @JvmStatic
+    @Throws(Throwable::class)
+    fun ping(arg0: Byte, arg1: Byte, arg2: Byte, arg3: Byte, arg4: Long): Int {
+        val local6 = ping0(arg0, arg1, arg2, arg3, arg4)
+        if (local6 < 0) {
+            throw Exception(local6.toString())
+        }
+        return local6
+    }
 
-	public static int ping(byte arg0, byte arg1, byte arg2, byte arg3, long arg4) throws Throwable {
-		int local6 = ping0(arg0, arg1, arg2, arg3, arg4);
-		if (local6 < 0) {
-			throw new Exception(String.valueOf(local6));
-		}
-		return local6;
-	}
-
-	private static native void Quit0();
-
-	private jagmisc() {
-	}
+    private external fun Quit0()
 }

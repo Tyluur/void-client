@@ -1,139 +1,148 @@
-package jagdx;
+package jagdx
 
 
-public final class D3DCAPS {
+class D3DCAPS {
+    private val PixelShader1xMaxValue = 0f
 
-	private float PixelShader1xMaxValue;
+    private val MaxVertexW = 0f
 
-	private float MaxVertexW;
+    private val MaxTextureHeight = 0
 
-	private int MaxTextureHeight;
+    private val VertexProcessingCaps = 0
 
-	private int VertexProcessingCaps;
+    private val CursorCaps = 0
 
-	private int CursorCaps;
+    private val PrimitiveMiscCaps = 0
 
-	private int PrimitiveMiscCaps;
+    private val ZCmpCaps = 0
 
-	private int ZCmpCaps;
+    private val Caps3 = 0
 
-	private int Caps3;
+    private val GuardBandTop = 0f
 
-	private float GuardBandTop;
+    private val LineCaps = 0
 
-	private int LineCaps;
+    private val MaxTextureAspectRatio = 0
 
-	private int MaxTextureAspectRatio;
+    private val TextureAddressCaps = 0
 
-	private int TextureAddressCaps;
+    private val ExtentsAdjust = 0f
 
-	private float ExtentsAdjust;
+    private val PixelShaderVersion = 0
 
-	private int PixelShaderVersion;
+    private val MaxPointSize = 0f
 
-	private float MaxPointSize;
+    private val VolumeTextureFilterCaps = 0
 
-	private int VolumeTextureFilterCaps;
+    private val AlphaCmpCaps = 0
 
-	private int AlphaCmpCaps;
+    private val CubeTextureFilterCaps = 0
 
-	private int CubeTextureFilterCaps;
+    private val ShadeCaps = 0
 
-	private int ShadeCaps;
+    private val MaxVertexBlendMatrixIndex = 0
 
-	private int MaxVertexBlendMatrixIndex;
+    @JvmField
+    var MaxSimultaneousTextures: Int = 0
 
-	public int MaxSimultaneousTextures;
+    private val GuardBandLeft = 0f
 
-	private float GuardBandLeft;
+    private val PresentationIntervals = 0
 
-	private int PresentationIntervals;
+    private val StencilCaps = 0
 
-	private int StencilCaps;
+    private val MaxVertexBlendMatrices = 0
 
-	private int MaxVertexBlendMatrices;
+    private val MaxTextureWidth = 0
 
-	private int MaxTextureWidth;
+    @JvmField
+    var DevCaps: Int = 0
 
-	public int DevCaps;
+    private val MaxPrimitiveCount = 0
 
-	private int MaxPrimitiveCount;
+    private val Caps2 = 0
 
-	private int Caps2;
+    @JvmField
+    var SrcBlendCaps: Int = 0
 
-	public int SrcBlendCaps;
+    private val Caps = 0
 
-	private int Caps;
+    @JvmField
+    var RasterCaps: Int = 0
 
-	public int RasterCaps;
+    private val MaxVertexIndex = 0
 
-	private int MaxVertexIndex;
+    private val MaxVertexShaderConst = 0
 
-	private int MaxVertexShaderConst;
+    @JvmField
+    var MaxStreams: Int = 0
 
-	public int MaxStreams;
+    @JvmField
+    var VertexShaderVersion: Int = 0
 
-	public int VertexShaderVersion;
+    private val DeviceType = 0
 
-	private int DeviceType;
+    @JvmField
+    var TextureCaps: Int = 0
 
-	public int TextureCaps;
+    private val MaxVolumeExtent = 0
 
-	private int MaxVolumeExtent;
+    private val MaxStreamStride = 0
 
-	private int MaxStreamStride;
+    private val AdapterOrdinal = 0
 
-	private int AdapterOrdinal;
+    @JvmField
+    var TextureOpCaps: Int = 0
 
-	public int TextureOpCaps;
+    private val TextureFilterCaps = 0
 
-	private int TextureFilterCaps;
+    private val MaxAnisotropy = 0
 
-	private int MaxAnisotropy;
+    private val GuardBandRight = 0f
 
-	private float GuardBandRight;
+    @JvmField
+    var DestBlendCaps: Int = 0
 
-	public int DestBlendCaps;
+    private val FVFCaps = 0
 
-	private int FVFCaps;
+    @JvmField
+    var MaxActiveLights: Int = 0
 
-	public int MaxActiveLights;
+    private val MaxTextureBlendStages = 0
 
-	private int MaxTextureBlendStages;
+    private val MaxUserClipPlanes = 0
 
-	private int MaxUserClipPlanes;
+    private val VolumeTextureAddressCaps = 0
 
-	private int VolumeTextureAddressCaps;
+    private val GuardBandBottom = 0f
 
-	private float GuardBandBottom;
+    private val MaxTextureRepeat = 0
 
-	private int MaxTextureRepeat;
+    private val DeclTypes = 0
 
-	private int DeclTypes;
+    private val AdapterOrdinalInGroup = 0
 
-	private int AdapterOrdinalInGroup;
+    private val MaxPixelShader30InstructionSlots = 0
 
-	private int MaxPixelShader30InstructionSlots;
+    private val NumSimultaneousRTs = 0
 
-	private int NumSimultaneousRTs;
+    private val DevCaps2 = 0
 
-	private int DevCaps2;
+    private val NumberOfAdaptersInGroup = 0
 
-	private int NumberOfAdaptersInGroup;
+    private val StretchRectFilterCaps = 0
 
-	private int StretchRectFilterCaps;
+    private val MaxVertexShader30InstructionSlots = 0
 
-	private int MaxVertexShader30InstructionSlots;
+    private val VertexTextureFilterCaps = 0
 
-	private int VertexTextureFilterCaps;
+    private val MasterAdapterOrdinal = 0
 
-	private int MasterAdapterOrdinal;
+    private val MaxPShaderInstructionsExecuted = 0
 
-	private int MaxPShaderInstructionsExecuted;
+    private val MaxVShaderInstructionsExecuted = 0
 
-	private int MaxVShaderInstructionsExecuted;
+    private val VS20Caps = D3DVSHADERCAPS2_0()
 
-	private final D3DVSHADERCAPS2_0 VS20Caps = new D3DVSHADERCAPS2_0();
-
-	private final D3DPSHADERCAPS2_0 PS20Caps = new D3DPSHADERCAPS2_0();
+    private val PS20Caps = D3DPSHADERCAPS2_0()
 }

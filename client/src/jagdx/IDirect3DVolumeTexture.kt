@@ -1,14 +1,9 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.hb;
+import jaclib.peer.hb
 
-public final class IDirect3DVolumeTexture extends IDirect3DBaseTexture {
+class IDirect3DVolumeTexture(arg0: hb?) : IDirect3DBaseTexture(arg0) {
+    external fun UnlockBox(arg0: Int): Boolean
 
-	public IDirect3DVolumeTexture(hb arg0) {
-		super(arg0);
-	}
-
-	public native boolean UnlockBox(int arg0);
-
-	public native int LockBox(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, PixelBuffer arg8);
+    external fun LockBox(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: PixelBuffer?): Int
 }

@@ -1,39 +1,41 @@
-package jagdx;
+package jagdx
+
+import java.awt.Canvas
 
 
-import java.awt.*;
+class D3DPRESENT_PARAMETERS(private val DeviceWindow: Canvas?) {
+    @JvmField
+	var Windowed: Boolean = false
 
-public final class D3DPRESENT_PARAMETERS {
+    private val Flags = 0
 
-	public boolean Windowed;
+    private val FullScreen_RefreshRateInHz = 0
 
-	private int Flags;
+    @JvmField
+	var EnableAutoDepthStencil: Boolean = false
 
-	private int FullScreen_RefreshRateInHz;
+    private val SwapEffect = 1
 
-	public boolean EnableAutoDepthStencil;
+    @JvmField
+	var BackBufferFormat: Int = 0
 
-	private final int SwapEffect = 1;
+    @JvmField
+	var MultiSampleQuality: Int = 0
 
-	public int BackBufferFormat = 0;
+    @JvmField
+	var MultiSampleType: Int = 0
 
-	public int MultiSampleQuality = 0;
+    @JvmField
+	var AutoDepthStencilFormat: Int = 0
 
-	public int MultiSampleType = 0;
+    @JvmField
+	var BackBufferHeight: Int = 0
 
-	public int AutoDepthStencilFormat = 0;
+    @JvmField
+	var PresentationInterval: Int = 0
 
-	public int BackBufferHeight = 0;
+    private val BackBufferCount = 0
 
-	public int PresentationInterval = 0;
-
-	private final int BackBufferCount = 0;
-
-	public int BackBufferWidth = 0;
-
-	private final Canvas DeviceWindow;
-
-	public D3DPRESENT_PARAMETERS(Canvas arg0) {
-		this.DeviceWindow = arg0;
-	}
+    @JvmField
+	var BackBufferWidth: Int = 0
 }

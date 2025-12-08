@@ -1,37 +1,38 @@
-package jagtheora.misc;
+package jagtheora.misc
 
 
-public abstract class SimplePeer {
+abstract class SimplePeer {
+    private var peer: Long = 0
 
-	private long peer;
+    protected abstract fun clear()
 
-	static {
-		init();
-	}
+    fun a() {
+        if (!this.b()) {
+            this.clear()
+        }
+    }
 
-	protected static native void init();
+    @Throws(Throwable::class)
+    fun finalize() {
+        if (!this.b()) {
+            this.a()
+        }
+//        super.finalize()
+    }
 
-	protected abstract void clear();
+    fun b(): Boolean {
+        return this.peer == 0L
+    }
 
-	public final void a() {
-		if (!this.b()) {
-			this.clear();
-		}
-	}
+    private fun setPeer(arg0: Long) {
+        this.peer = arg0
+    }
 
-	@Override
-	public final void finalize() throws Throwable {
-		if (!this.b()) {
-			this.a();
-		}
-		super.finalize();
-	}
+    companion object {
+        init {
+            init()
+        }
 
-	public final boolean b() {
-		return this.peer == 0L;
-	}
-
-	private void setPeer(long arg0) {
-		this.peer = arg0;
-	}
+        protected external fun init()
+    }
 }

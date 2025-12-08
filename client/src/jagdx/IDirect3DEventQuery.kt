@@ -1,15 +1,10 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.IUnknown;
-import jaclib.peer.hb;
+import jaclib.peer.IUnknown
+import jaclib.peer.hb
 
-public final class IDirect3DEventQuery extends IUnknown {
+class IDirect3DEventQuery(arg0: hb?) : IUnknown(arg0) {
+    external fun Issue(): Int
 
-	public IDirect3DEventQuery(hb arg0) {
-		super(arg0);
-	}
-
-	public native int Issue();
-
-	public native int IsSignaled();
+    external fun IsSignaled(): Int
 }

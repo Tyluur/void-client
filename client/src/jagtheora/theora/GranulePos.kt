@@ -1,16 +1,17 @@
-package jagtheora.theora;
+package jagtheora.theora
 
-import jagtheora.misc.SimplePeer;
+import jagtheora.misc.SimplePeer
 
-public final class GranulePos extends SimplePeer {
+class GranulePos : SimplePeer() {
+    private val position: Long = 0
 
-	private long position;
+    external override fun clear()
 
-	static {
-		init();
-	}
+    companion object {
+        init {
+            init()
+        }
 
-	protected static native void init();
-
-	protected native void clear();
+        protected external fun init()
+    }
 }

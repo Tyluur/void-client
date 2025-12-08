@@ -1,32 +1,30 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.hb;
-import jaclib.peer.uda;
+import jaclib.peer.hb
+import jaclib.peer.uda
 
-public final class D3DLIGHT extends uda {
+class D3DLIGHT(arg0: hb?) : uda(arg0) {
+    init {
+        this.Init()
+    }
 
-	public D3DLIGHT(hb arg0) {
-		super(arg0);
-		this.Init();
-	}
+    external fun SetAttenuation(arg0: Float, arg1: Float, arg2: Float)
 
-	public native void SetAttenuation(float arg0, float arg1, float arg2);
+    external fun SetDiffuse(arg0: Float, arg1: Float, arg2: Float, arg3: Float)
 
-	public native void SetDiffuse(float arg0, float arg1, float arg2, float arg3);
+    private external fun Init()
 
-	private native void Init();
+    private external fun SetSpecular(arg0: Float, arg1: Float, arg2: Float, arg3: Float)
 
-	private native void SetSpecular(float arg0, float arg1, float arg2, float arg3);
+    external fun SetAmbient(arg0: Float, arg1: Float, arg2: Float, arg3: Float)
 
-	public native void SetAmbient(float arg0, float arg1, float arg2, float arg3);
+    private external fun SetSpotParams(arg0: Float, arg1: Float, arg2: Float)
 
-	private native void SetSpotParams(float arg0, float arg1, float arg2);
+    external fun SetPosition(arg0: Float, arg1: Float, arg2: Float)
 
-	public native void SetPosition(float arg0, float arg1, float arg2);
+    external fun SetDirection(arg0: Float, arg1: Float, arg2: Float)
 
-	public native void SetDirection(float arg0, float arg1, float arg2);
+    external fun SetRange(arg0: Float)
 
-	public native void SetRange(float arg0);
-
-	public native void SetType(int arg0);
+    external fun SetType(arg0: Int)
 }

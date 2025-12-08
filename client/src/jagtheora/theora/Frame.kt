@@ -1,26 +1,22 @@
-package jagtheora.theora;
+package jagtheora.theora
 
-import jagtheora.misc.SimplePeer;
+import jagtheora.misc.SimplePeer
 
-public final class Frame extends SimplePeer {
+class Frame(@JvmField val a: Int, @JvmField val b: Int) : SimplePeer() {
+    @JvmField
+    val pixels: IntArray
 
-	public final int b;
+    init {
+        this.pixels = IntArray(this.a * this.b)
+    }
 
-	public final int a;
+    external override fun clear()
 
-	public final int[] pixels;
+    companion object {
+        init {
+            init()
+        }
 
-	static {
-		init();
-	}
-
-	protected static native void init();
-
-	public Frame(int arg0, int arg1) {
-		this.b = arg1;
-		this.a = arg0;
-		this.pixels = new int[this.a * this.b];
-	}
-
-	protected native void clear();
+        protected external fun init()
+    }
 }

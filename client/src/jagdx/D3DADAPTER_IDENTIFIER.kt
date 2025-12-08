@@ -1,23 +1,25 @@
-package jagdx;
+package jagdx
 
 
-public final class D3DADAPTER_IDENTIFIER {
+class D3DADAPTER_IDENTIFIER {
+    private val DeviceName: String? = null
 
-	private String DeviceName;
+    private val SubSysID = 0
 
-	private int SubSysID;
+    private val DeviceID = 0
 
-	private int DeviceID;
+    @JvmField
+    var VendorID: Int = 0
 
-	public int VendorID;
+    @JvmField
+    var Description: String? = null
 
-	public String Description;
+    @JvmField
+    var DriverVersion: Long = 0
 
-	public long DriverVersion;
+    private val Driver: String? = null
 
-	private String Driver;
+    private val Revision = 0
 
-	private int Revision;
-
-	private int WHQLLevel;
+    private val WHQLLevel = 0
 }

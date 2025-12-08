@@ -1,32 +1,31 @@
-package jagex3.graphics2.hw;
+package jagex3.graphics2.hw
 
-public final class NativeInterface {
+class NativeInterface(arg0: Int, arg1: Int) {
+    private val peer: Long = 0
 
-	private long peer;
+    init {
+        this.init(arg0, arg1)
+    }
 
-	public NativeInterface(int arg0, int arg1) {
-		this.init(arg0, arg1);
-	}
+    external fun copyLighting(arg0: ShortArray?, arg1: ByteArray?, arg2: ShortArray?, arg3: ShortArray?, arg4: ShortArray?, arg5: ShortArray?, arg6: ByteArray?, arg7: Int, arg8: Int, arg9: ShortArray?, arg10: Int, arg11: Int, arg12: Int, arg13: Long)
 
-	public native void copyLighting(short[] arg0, byte[] arg1, short[] arg2, short[] arg3, short[] arg4, short[] arg5, byte[] arg6, int arg7, int arg8, short[] arg9, int arg10, int arg11, int arg12, long arg13);
+    private external fun init(arg0: Int, arg1: Int)
 
-	private native void init(int arg0, int arg1);
+    external fun copyNormals(arg0: ShortArray?, arg1: ShortArray?, arg2: ShortArray?, arg3: ByteArray?, arg4: Float, arg5: Float, arg6: Int, arg7: Int, arg8: Int, arg9: Long)
 
-	public native void copyNormals(short[] arg0, short[] arg1, short[] arg2, byte[] arg3, float arg4, float arg5, int arg6, int arg7, int arg8, long arg9);
+    external fun copyPositions(arg0: IntArray?, arg1: IntArray?, arg2: IntArray?, arg3: ShortArray?, arg4: Int, arg5: Int, arg6: Int, arg7: Long)
 
-	public native void copyPositions(int[] arg0, int[] arg1, int[] arg2, short[] arg3, int arg4, int arg5, int arg6, long arg7);
+    external fun setSunColour(arg0: Float, arg1: Float, arg2: Float, arg3: Float, arg4: Float)
 
-	public native void setSunColour(float arg0, float arg1, float arg2, float arg3, float arg4);
+    external fun initTextureMetrics(arg0: Int, arg1: Byte, arg2: Byte)
 
-	public native void initTextureMetrics(int arg0, byte arg1, byte arg2);
+    external fun release()
 
-	public native void release();
+    external fun setAmbient(arg0: Float)
 
-	public native void setAmbient(float arg0);
+    external fun copyTexCoords(arg0: FloatArray?, arg1: FloatArray?, arg2: Int, arg3: Int, arg4: Int, arg5: Long)
 
-	public native void copyTexCoords(float[] arg0, float[] arg1, int arg2, int arg3, int arg4, long arg5);
+    external fun copyColours(arg0: ShortArray?, arg1: ByteArray?, arg2: ShortArray?, arg3: Int, arg4: ShortArray?, arg5: Int, arg6: Int, arg7: Int, arg8: Long)
 
-	public native void copyColours(short[] arg0, byte[] arg1, short[] arg2, int arg3, short[] arg4, int arg5, int arg6, int arg7, long arg8);
-
-	public native void setSunDirection(float arg0, float arg1, float arg2);
+    external fun setSunDirection(arg0: Float, arg1: Float, arg2: Float)
 }

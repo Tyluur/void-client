@@ -1,24 +1,31 @@
-package jagtheora.ogg;
+package jagtheora.ogg
 
-import jagtheora.misc.SimplePeer;
+import jagtheora.misc.SimplePeer
 
-public final class OggPage extends SimplePeer {
+class OggPage : SimplePeer() {
+    private val version: Int
+        external get
 
-	private native int getVersion();
+    private val isContinued: Boolean
+        external get
 
-	private native boolean isContinued();
+    val serialNumber: Int
+        external get
 
-	public native int getSerialNumber();
+    private val isEOS: Boolean
+        external get
 
-	private native boolean isEOS();
+    private val granulePos: Long
+        external get
 
-	private native long getGranulePos();
+    val isBOS: Boolean
+        external get
 
-	public native boolean isBOS();
+    external override fun clear()
 
-	protected native void clear();
+    private val pageNumber: Long
+        external get
 
-	private native long getPageNumber();
-
-	private native int getCompletedPackets();
+    private val completedPackets: Int
+        external get
 }

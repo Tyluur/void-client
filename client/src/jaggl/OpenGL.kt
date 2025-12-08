@@ -1,424 +1,571 @@
-package jaggl;
+package jaggl
 
+import java.awt.Canvas
+import java.util.*
 
-import java.awt.*;
-import java.util.Hashtable;
 
-public final class OpenGL {
+class OpenGL {
+    private var a: Thread? = null
 
-	private static final Hashtable b = new Hashtable();
+    private var c: Hashtable<Any?, Any?>? = null
 
-	private Thread a;
+    private val peer: Long = 0
 
-	private Hashtable c;
+    private external fun detachPeer()
 
-	private long peer;
+    external fun setSwapInterval(arg0: Int)
 
-	public static native void glTranslatef(float arg0, float arg1, float arg2);
+    external fun surfaceResized(arg0: Long)
 
-	public static native void glBindRenderbufferEXT(int arg0, int arg1);
+    private external fun setPbuffer(arg0: Long)
 
-	public static native void glScalef(float arg0, float arg1, float arg2);
+    external fun arePbuffersAvailable(): Boolean
 
-	public static native void glActiveTexture(int arg0);
+    @Synchronized
+    fun a(): Boolean {
+        if (this.a === Thread.currentThread()) {
+            this.detachPeer()
+            b.remove(this.a)
+            this.a = null
+            return true
+        } else {
+            return false
+        }
+    }
 
-	public static native void glProgramLocalParameter4fvARB(int arg0, int arg1, float[] arg2, int arg3);
+    private external fun releasePbuffer(arg0: Long)
 
-	public static native void glGetObjectParameterivARB(long arg0, int arg1, int[] arg2, int arg3);
+    private external fun attachPeer(): Boolean
 
-	public static native void glFramebufferTexture3DEXT(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
+    external fun releaseSurface(arg0: Canvas?, arg1: Long)
 
-	public static native void glDeleteLists(int arg0, int arg1);
+    external fun init(arg0: Canvas?, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int): Long
 
-	public static native void glUniform1iARB(int arg0, int arg1);
+    @Synchronized
+    fun b(): Boolean {
+        val local1 = Thread.currentThread()
+        if (!this.attachPeer()) {
+            return false
+        }
+        val local10 = b.put(local1, this) as OpenGL?
+        if (local10 != null) {
+            local10.a = null
+        }
+        this.a = local1
+        return true
+    }
 
-	public static native void glFinish();
+    private external fun createPbuffer(arg0: Int, arg1: Int): Long
 
-	public static native void glDrawElements(int arg0, int arg1, int arg2, long arg3);
+    external fun swapBuffers()
 
-	public static native void glReadBuffer(int arg0);
+    fun a(arg0: String?): Boolean {
+        if (this.c == null) {
+            this.c = Hashtable<Any?, Any?>()
+            val local10: String = glGetString(7939)
+            var local12 = 0
+            while (true) {
+                val local17 = local10.indexOf(32.toChar(), local12)
+                if (local17 == -1) {
+                    val local48 = local10.substring(local12).trim { it <= ' ' }
+                    if (local48.length != 0) {
+                        this.c!!.put(local48, local48)
+                    }
+                    break
+                }
+                val local26 = local10.substring(local12, local17).trim { it <= ' ' }
+                if (local26.length != 0) {
+                    this.c!!.put(local26, local26)
+                }
+                local12 = local17 + 1
+            }
+        }
+        return this.c!!.containsKey(arg0)
+    }
 
-	private static native int glGetError();
+    external fun release()
 
-	public static native void glUseProgramObjectARB(long arg0);
+    external fun prepareSurface(arg0: Canvas?): Long
 
-	private static native void glColor4f(float arg0, float arg1, float arg2, float arg3);
+    external fun setSurface(arg0: Long): Boolean
 
-	public static native void glTexGeni(int arg0, int arg1, int arg2);
+    companion object {
+        private val b: Hashtable<Any?, Any?> = Hashtable<Any?, Any?>()
 
-	public static native void glDeleteFramebuffersEXT(int arg0, int[] arg1, int arg2);
+        @JvmStatic
+		external fun glTranslatef(arg0: Float, arg1: Float, arg2: Float)
 
-	public static native void glColorMask(boolean arg0, boolean arg1, boolean arg2, boolean arg3);
+        @JvmStatic
+		external fun glBindRenderbufferEXT(arg0: Int, arg1: Int)
 
-	public static native void glCullFace(int arg0);
+        @JvmStatic
+		external fun glScalef(arg0: Float, arg1: Float, arg2: Float)
 
-	public static native void glLoadMatrixf(float[] arg0, int arg1);
+        @JvmStatic
+		external fun glActiveTexture(arg0: Int)
 
-	public static native void glRasterPos2i(int arg0, int arg1);
+        @JvmStatic
+		external fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int)
 
-	public static native void glBufferDataARBa(int arg0, int arg1, long arg2, int arg3);
+        @JvmStatic
+		external fun glGetObjectParameterivARB(arg0: Long, arg1: Int, arg2: IntArray?, arg3: Int)
 
-	private static native void glStencilFunc(int arg0, int arg1, int arg2);
+        @JvmStatic
+		external fun glFramebufferTexture3DEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int)
 
-	public static native void glClearColor(float arg0, float arg1, float arg2, float arg3);
+        @JvmStatic
+		external fun glDeleteLists(arg0: Int, arg1: Int)
 
-	public static native void glRenderbufferStorageEXT(int arg0, int arg1, int arg2, int arg3);
+        @JvmStatic
+		external fun glUniform1iARB(arg0: Int, arg1: Int)
 
-	public static native void glDeleteBuffersARB(int arg0, int[] arg1, int arg2);
+        @JvmStatic
+		external fun glFinish()
 
-	public static native void glCopyTexSubImage3D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8);
+        @JvmStatic
+		external fun glDrawElements(arg0: Int, arg1: Int, arg2: Int, arg3: Long)
 
-	public static native void glTexImage2Df(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, float[] arg8, int arg9);
+        @JvmStatic
+		external fun glReadBuffer(arg0: Int)
 
-	public static native void glReadPixelsi(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int[] arg6, int arg7);
+        private external fun glGetError(): Int
 
-	public static native void glTexCoordPointer(int arg0, int arg1, int arg2, long arg3);
+        @JvmStatic
+		external fun glUseProgramObjectARB(arg0: Long)
 
-	public static native void glBindTexture(int arg0, int arg1);
+        private external fun glColor4f(arg0: Float, arg1: Float, arg2: Float, arg3: Float)
 
-	public static native void glLinkProgramARB(long arg0);
+        @JvmStatic
+		external fun glTexGeni(arg0: Int, arg1: Int, arg2: Int)
 
-	public static native void glOrtho(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5);
+        @JvmStatic
+		external fun glDeleteFramebuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int)
 
-	private static native void glUniformMatrix3fvARB(int arg0, int arg1, boolean arg2, float[] arg3, int arg4);
+        @JvmStatic
+		external fun glColorMask(arg0: Boolean, arg1: Boolean, arg2: Boolean, arg3: Boolean)
 
-	private static native void glUniformMatrix2fvARB(int arg0, int arg1, boolean arg2, float[] arg3, int arg4);
+        @JvmStatic
+		external fun glCullFace(arg0: Int)
 
-	public static native void glBufferSubDataARBa(int arg0, int arg1, int arg2, long arg3);
+        @JvmStatic
+		external fun glLoadMatrixf(arg0: FloatArray?, arg1: Int)
 
-	public static native void glDeleteRenderbuffersEXT(int arg0, int[] arg1, int arg2);
+        @JvmStatic
+		external fun glRasterPos2i(arg0: Int, arg1: Int)
 
-	public static native void glPixelStorei(int arg0, int arg1);
+        @JvmStatic
+		external fun glBufferDataARBa(arg0: Int, arg1: Int, arg2: Long, arg3: Int)
 
-	public static native void glScissor(int arg0, int arg1, int arg2, int arg3);
+        private external fun glStencilFunc(arg0: Int, arg1: Int, arg2: Int)
 
-	private static native void glTexCoord2i(int arg0, int arg1);
+        @JvmStatic
+		external fun glClearColor(arg0: Float, arg1: Float, arg2: Float, arg3: Float)
 
-	public static native void glLineWidth(float arg0);
+        @JvmStatic
+		external fun glRenderbufferStorageEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int)
 
-	public static native void glGenerateMipmapEXT(int arg0);
+        @JvmStatic
+		external fun glDeleteBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int)
 
-	public static native void glDeleteObjectARB(long arg0);
+        @JvmStatic
+		external fun glCopyTexSubImage3D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int)
 
-	private static native void glMultiTexCoord2i(int arg0, int arg1, int arg2);
+        @JvmStatic
+		external fun glTexImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int)
 
-	public static native void glRotatef(float arg0, float arg1, float arg2, float arg3);
+        @JvmStatic
+		external fun glReadPixelsi(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: IntArray?, arg7: Int)
 
-	public static native void glMultiTexCoord2f(int arg0, float arg1, float arg2);
+        @JvmStatic
+		external fun glTexCoordPointer(arg0: Int, arg1: Int, arg2: Int, arg3: Long)
 
-	public static native void glFramebufferRenderbufferEXT(int arg0, int arg1, int arg2, int arg3);
+        @JvmStatic
+		external fun glBindTexture(arg0: Int, arg1: Int)
 
-	public static native void glTexSubImage2Di(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int[] arg8, int arg9);
+        @JvmStatic
+		external fun glLinkProgramARB(arg0: Long)
 
-	public static native void glLightf(int arg0, int arg1, float arg2);
+        @JvmStatic
+		external fun glOrtho(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double)
 
-	public static native void glTexGenfv(int arg0, int arg1, float[] arg2, int arg3);
+        private external fun glUniformMatrix3fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int)
 
-	public static native void glTexCoord3i(int arg0, int arg1, int arg2);
+        private external fun glUniformMatrix2fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int)
 
-	public static native void glDrawArrays(int arg0, int arg1, int arg2);
+        @JvmStatic
+		external fun glBufferSubDataARBa(arg0: Int, arg1: Int, arg2: Int, arg3: Long)
 
-	public static native void glCallList(int arg0);
+        @JvmStatic
+		external fun glDeleteRenderbuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int)
 
-	public static native void glDeleteProgramARB(int arg0);
+        @JvmStatic
+		external fun glPixelStorei(arg0: Int, arg1: Int)
 
-	public static native void glBindFramebufferEXT(int arg0, int arg1);
+        @JvmStatic
+		external fun glScissor(arg0: Int, arg1: Int, arg2: Int, arg3: Int)
 
-	public static native void glTexCoord3f(float arg0, float arg1, float arg2);
+        private external fun glTexCoord2i(arg0: Int, arg1: Int)
 
-	public static native void glGenBuffersARB(int arg0, int[] arg1, int arg2);
+        @JvmStatic
+		external fun glLineWidth(arg0: Float)
 
-	public static native void glVertexPointer(int arg0, int arg1, int arg2, long arg3);
+        @JvmStatic
+		external fun glGenerateMipmapEXT(arg0: Int)
 
-	public static native void glGetInfoLogARB(long arg0, int arg1, int[] arg2, int arg3, byte[] arg4, int arg5);
+        @JvmStatic
+		external fun glDeleteObjectARB(arg0: Long)
 
-	private static native void glReadPixelsub(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, byte[] arg6, int arg7);
+        private external fun glMultiTexCoord2i(arg0: Int, arg1: Int, arg2: Int)
 
-	public static native void glDepthMask(boolean arg0);
+        @JvmStatic
+		external fun glRotatef(arg0: Float, arg1: Float, arg2: Float, arg3: Float)
 
-	public static native void glEnd();
+        @JvmStatic
+		external fun glMultiTexCoord2f(arg0: Int, arg1: Float, arg2: Float)
 
-	public static native void glEndList();
+        @JvmStatic
+		external fun glFramebufferRenderbufferEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int)
 
-	public static native void glTexImage3Dub(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, byte[] arg9, int arg10);
+        @JvmStatic
+		external fun glTexSubImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int)
 
-	public static native void glTexImage1Dub(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, byte[] arg7, int arg8);
+        @JvmStatic
+		external fun glLightf(arg0: Int, arg1: Int, arg2: Float)
 
-	public static native void glBlendFunc(int arg0, int arg1);
+        @JvmStatic
+		external fun glTexGenfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int)
 
-	private static native void glStencilOp(int arg0, int arg1, int arg2);
+        @JvmStatic
+		external fun glTexCoord3i(arg0: Int, arg1: Int, arg2: Int)
 
-	public static native void glClearDepth(float arg0);
+        @JvmStatic
+		external fun glDrawArrays(arg0: Int, arg1: Int, arg2: Int)
 
-	public static native int glGetUniformLocationARB(long arg0, String arg1);
+        @JvmStatic
+		external fun glCallList(arg0: Int)
 
-	public static native void glNewList(int arg0, int arg1);
+        @JvmStatic
+		external fun glDeleteProgramARB(arg0: Int)
 
-	public static native void glViewport(int arg0, int arg1, int arg2, int arg3);
+        @JvmStatic
+		external fun glBindFramebufferEXT(arg0: Int, arg1: Int)
 
-	public static native void glTexEnvfv(int arg0, int arg1, float[] arg2, int arg3);
+        @JvmStatic
+		external fun glTexCoord3f(arg0: Float, arg1: Float, arg2: Float)
 
-	public static native void glPolygonMode(int arg0, int arg1);
+        @JvmStatic
+		external fun glGenBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int)
 
-	public static native void glTexParameteri(int arg0, int arg1, int arg2);
+        @JvmStatic
+		external fun glVertexPointer(arg0: Int, arg1: Int, arg2: Int, arg3: Long)
 
-	public static native void glPushMatrix();
+        @JvmStatic
+		external fun glGetInfoLogARB(arg0: Long, arg1: Int, arg2: IntArray?, arg3: Int, arg4: ByteArray?, arg5: Int)
 
-	public static native void glPixelTransferf(int arg0, float arg1);
+        private external fun glReadPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: ByteArray?, arg7: Int)
 
-	public static native void glUniform1fARB(int arg0, float arg1);
+        @JvmStatic
+		external fun glDepthMask(arg0: Boolean)
 
-	public static native void glBlitFramebufferEXT(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9);
+        @JvmStatic
+		external fun glEnd()
 
-	public static native void glCopyTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7);
+        @JvmStatic
+		external fun glEndList()
 
-	public static native void glCompileShaderARB(long arg0);
+        @JvmStatic
+		external fun glTexImage3Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: ByteArray?, arg10: Int)
 
-	private static native void glMaterialfv(int arg0, int arg1, float[] arg2, int arg3);
+        @JvmStatic
+		external fun glTexImage1Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: ByteArray?, arg8: Int)
 
-	public static native void glDetachObjectARB(long arg0, long arg1);
+        @JvmStatic
+		external fun glBlendFunc(arg0: Int, arg1: Int)
 
-	public static native void glNormalPointer(int arg0, int arg1, long arg2);
+        private external fun glStencilOp(arg0: Int, arg1: Int, arg2: Int)
 
-	public static native void glUniform2fARB(int arg0, float arg1, float arg2);
+        @JvmStatic
+		external fun glClearDepth(arg0: Float)
 
-	public static native void glLightfv(int arg0, int arg1, float[] arg2, int arg3);
+        @JvmStatic
+		external fun glGetUniformLocationARB(arg0: Long, arg1: String?): Int
 
-	public static native void glFogfv(int arg0, float[] arg1, int arg2);
+        @JvmStatic
+		external fun glNewList(arg0: Int, arg1: Int)
 
-	public static native void glGetFloatv(int arg0, float[] arg1, int arg2);
+        @JvmStatic
+		external fun glViewport(arg0: Int, arg1: Int, arg2: Int, arg3: Int)
 
-	public static native void glHint(int arg0, int arg1);
+        @JvmStatic
+		external fun glTexEnvfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int)
 
-	public static native void glBufferDataARBub(int arg0, int arg1, byte[] arg2, int arg3, int arg4);
+        @JvmStatic
+		external fun glPolygonMode(arg0: Int, arg1: Int)
 
-	public static native void glTexSubImage2Df(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, float[] arg8, int arg9);
+        @JvmStatic
+		external fun glTexParameteri(arg0: Int, arg1: Int, arg2: Int)
 
-	public static native void glClientActiveTexture(int arg0);
+        @JvmStatic
+		external fun glPushMatrix()
 
-	public static native void glLightModelfv(int arg0, float[] arg1, int arg2);
+        @JvmStatic
+		external fun glPixelTransferf(arg0: Int, arg1: Float)
 
-	private static native void glTexParameterf(int arg0, int arg1, float arg2);
+        @JvmStatic
+		external fun glUniform1fARB(arg0: Int, arg1: Float)
 
-	public static native void glMatrixMode(int arg0);
+        @JvmStatic
+		external fun glBlitFramebufferEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: Int)
 
-	public static native void glCopyTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7);
+        @JvmStatic
+		external fun glCopyTexSubImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int)
 
-	public static native void glTexImage2Di(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int[] arg8, int arg9);
+        @JvmStatic
+		external fun glCompileShaderARB(arg0: Long)
 
-	public static native boolean glUnmapBufferARB(int arg0);
+        private external fun glMaterialfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int)
 
-	public static native void glColor4ub(byte arg0, byte arg1, byte arg2, byte arg3);
+        @JvmStatic
+		external fun glDetachObjectARB(arg0: Long, arg1: Long)
 
-	public static native void glBufferSubDataARBub(int arg0, int arg1, int arg2, byte[] arg3, int arg4);
+        @JvmStatic
+		external fun glNormalPointer(arg0: Int, arg1: Int, arg2: Long)
 
-	public static native void glMultMatrixf(float[] arg0, int arg1);
+        @JvmStatic
+		external fun glUniform2fARB(arg0: Int, arg1: Float, arg2: Float)
 
-	public static native void glFogi(int arg0, int arg1);
+        @JvmStatic
+		external fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int)
 
-	public static native void glVertex2i(int arg0, int arg1);
+        @JvmStatic
+		external fun glFogfv(arg0: Int, arg1: FloatArray?, arg2: Int)
 
-	public static native void glDepthFunc(int arg0);
+        @JvmStatic
+		external fun glGetFloatv(arg0: Int, arg1: FloatArray?, arg2: Int)
 
-	private static native void glDrawPixelsi(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5);
+        @JvmStatic
+		external fun glHint(arg0: Int, arg1: Int)
 
-	private static native void glDrawPixelsub(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5);
+        @JvmStatic
+		external fun glBufferDataARBub(arg0: Int, arg1: Int, arg2: ByteArray?, arg3: Int, arg4: Int)
 
-	public static native void glVertex3f(float arg0, float arg1, float arg2);
+        @JvmStatic
+		external fun glTexSubImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int)
 
-	public static native void glUniform4fARB(int arg0, float arg1, float arg2, float arg3, float arg4);
+        @JvmStatic
+		external fun glClientActiveTexture(arg0: Int)
 
-	private static native void glFrustum(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5);
+        @JvmStatic
+		external fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int)
 
-	public static native void glTexEnvi(int arg0, int arg1, int arg2);
+        private external fun glTexParameterf(arg0: Int, arg1: Int, arg2: Float)
 
-	public static native long glCreateProgramObjectARB();
+        @JvmStatic
+		external fun glMatrixMode(arg0: Int)
 
-	public static native void glNormal3f(float arg0, float arg1, float arg2);
+        @JvmStatic
+		external fun glCopyTexImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int)
 
-	private static native void glGetTexImageub(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5);
+        @JvmStatic
+		external fun glTexImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int)
 
-	public static native void glGenFramebuffersEXT(int arg0, int[] arg1, int arg2);
+        external fun glUnmapBufferARB(arg0: Int): Boolean
 
-	private static native void glGetProgramivARB(int arg0, int arg1, int[] arg2, int arg3);
+        @JvmStatic
+		external fun glColor4ub(arg0: Byte, arg1: Byte, arg2: Byte, arg3: Byte)
 
-	public static native void glUniform3fARB(int arg0, float arg1, float arg2, float arg3);
+        @JvmStatic
+		external fun glBufferSubDataARBub(arg0: Int, arg1: Int, arg2: Int, arg3: ByteArray?, arg4: Int)
 
-	private static native void glDrawBuffersARB(int arg0, int[] arg1, int arg2);
+        @JvmStatic
+		external fun glMultMatrixf(arg0: FloatArray?, arg1: Int)
 
-	public static native long glCreateShaderObjectARB(int arg0);
+        @JvmStatic
+		external fun glFogi(arg0: Int, arg1: Int)
 
-	public static native long glMapBufferARB(int arg0, int arg1);
+        @JvmStatic
+		external fun glVertex2i(arg0: Int, arg1: Int)
 
-	private static native void glColor3ub(byte arg0, byte arg1, byte arg2);
+        @JvmStatic
+		external fun glDepthFunc(arg0: Int)
 
-	public static native void glGetIntegerv(int arg0, int[] arg1, int arg2);
+        private external fun glDrawPixelsi(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IntArray?, arg5: Int)
 
-	public static native void glShadeModel(int arg0);
+        private external fun glDrawPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int)
 
-	public static native void glProgramStringARB(int arg0, int arg1, String arg2);
+        @JvmStatic
+		external fun glVertex3f(arg0: Float, arg1: Float, arg2: Float)
 
-	public static native int glGenProgramARB();
+        @JvmStatic
+		external fun glUniform4fARB(arg0: Int, arg1: Float, arg2: Float, arg3: Float, arg4: Float)
 
-	public static native void glPushAttrib(int arg0);
+        private external fun glFrustum(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double)
 
-	public static native void glFlush();
+        @JvmStatic
+		external fun glTexEnvi(arg0: Int, arg1: Int, arg2: Int)
 
-	public static native void glRenderbufferStorageMultisampleEXT(int arg0, int arg1, int arg2, int arg3, int arg4);
+        @JvmStatic
+		external fun glCreateProgramObjectARB(): Long
 
-	public static native void glEnable(int arg0);
+        @JvmStatic
+		external fun glNormal3f(arg0: Float, arg1: Float, arg2: Float)
 
-	public static native void glDisable(int arg0);
+        private external fun glGetTexImageub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int)
 
-	public static native void glGenTextures(int arg0, int[] arg1, int arg2);
+        @JvmStatic
+		external fun glGenFramebuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int)
 
-	public static native void glFramebufferTexture2DEXT(int arg0, int arg1, int arg2, int arg3, int arg4);
+        private external fun glGetProgramivARB(arg0: Int, arg1: Int, arg2: IntArray?, arg3: Int)
 
-	public static native void glBindBufferARB(int arg0, int arg1);
+        @JvmStatic
+		external fun glUniform3fARB(arg0: Int, arg1: Float, arg2: Float, arg3: Float)
 
-	public static native void glMultiTexCoord3i(int arg0, int arg1, int arg2, int arg3);
+        private external fun glDrawBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int)
 
-	public static native void glColorMaterial(int arg0, int arg1);
+        @JvmStatic
+		external fun glCreateShaderObjectARB(arg0: Int): Long
 
-	public static native void glTexSubImage2Dub(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, byte[] arg8, int arg9);
+        external fun glMapBufferARB(arg0: Int, arg1: Int): Long
 
-	public static native void glShaderSourceARB(long arg0, String arg1);
+        private external fun glColor3ub(arg0: Byte, arg1: Byte, arg2: Byte)
 
-	public static native void glGetTexImagei(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5);
+        @JvmStatic
+		external fun glGetIntegerv(arg0: Int, arg1: IntArray?, arg2: Int)
 
-	public static native String glGetString(int arg0);
+        @JvmStatic
+		external fun glShadeModel(arg0: Int)
 
-	private static native void glPixelZoom(float arg0, float arg1);
+        @JvmStatic
+		external fun glProgramStringARB(arg0: Int, arg1: Int, arg2: String?)
 
-	public static native void glDisableClientState(int arg0);
+        @JvmStatic
+		external fun glGenProgramARB(): Int
 
-	public static native void glClear(int arg0);
+        @JvmStatic
+		external fun glPushAttrib(arg0: Int)
 
-	public static native void glPointSize(float arg0);
+        @JvmStatic
+		external fun glFlush()
 
-	public static native void glCopyPixels(int arg0, int arg1, int arg2, int arg3, int arg4);
+        @JvmStatic
+		external fun glRenderbufferStorageMultisampleEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int)
 
-	public static native void glTexCoord2f(float arg0, float arg1);
+        @JvmStatic
+		external fun glEnable(arg0: Int)
 
-	public static native void glBindProgramARB(int arg0, int arg1);
+        @JvmStatic
+		external fun glDisable(arg0: Int)
 
-	public static native void glGenRenderbuffersEXT(int arg0, int[] arg1, int arg2);
+        @JvmStatic
+		external fun glGenTextures(arg0: Int, arg1: IntArray?, arg2: Int)
 
-	public static native void glPopAttrib();
+        @JvmStatic
+		external fun glFramebufferTexture2DEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int)
 
-	public static native void glVertex2f(float arg0, float arg1);
+        @JvmStatic
+		external fun glBindBufferARB(arg0: Int, arg1: Int)
 
-	public static native void glLoadIdentity();
+        @JvmStatic
+		external fun glMultiTexCoord3i(arg0: Int, arg1: Int, arg2: Int, arg3: Int)
 
-	public static native int glGenLists(int arg0);
+        @JvmStatic
+		external fun glColorMaterial(arg0: Int, arg1: Int)
 
-	public static native void glColorPointer(int arg0, int arg1, int arg2, long arg3);
+        @JvmStatic
+		external fun glTexSubImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int)
 
-	public static native void glPopMatrix();
+        @JvmStatic
+		external fun glShaderSourceARB(arg0: Long, arg1: String?)
 
-	public static native void glEnableClientState(int arg0);
+        @JvmStatic
+		external fun glGetTexImagei(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IntArray?, arg5: Int)
 
-	public static native void glShaderSourceRawARB(long arg0, byte[] arg1);
+        @JvmStatic
+		external fun glGetString(arg0: Int): String
 
-	public static native void glColor3f(float arg0, float arg1, float arg2);
+        private external fun glPixelZoom(arg0: Float, arg1: Float)
 
-	public static native void glTexEnvf(int arg0, int arg1, float arg2);
+        @JvmStatic
+		external fun glDisableClientState(arg0: Int)
 
-	public static native void glProgramLocalParameter4fARB(int arg0, int arg1, float arg2, float arg3, float arg4, float arg5);
+        @JvmStatic
+		external fun glClear(arg0: Int)
 
-	public static native void glAlphaFunc(int arg0, float arg1);
+        @JvmStatic
+		external fun glPointSize(arg0: Float)
 
-	public static native void glDeleteTextures(int arg0, int[] arg1, int arg2);
+        @JvmStatic
+		external fun glCopyPixels(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int)
 
-	public static native void glDrawBuffer(int arg0);
+        @JvmStatic
+		external fun glTexCoord2f(arg0: Float, arg1: Float)
 
-	public static native void glBegin(int arg0);
+        @JvmStatic
+		external fun glBindProgramARB(arg0: Int, arg1: Int)
 
-	public static native void glFogf(int arg0, float arg1);
+        @JvmStatic
+		external fun glGenRenderbuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int)
 
-	public static native void glAttachObjectARB(long arg0, long arg1);
+        @JvmStatic
+		external fun glPopAttrib()
 
-	public static native int glCheckFramebufferStatusEXT(int arg0);
+        @JvmStatic
+		external fun glVertex2f(arg0: Float, arg1: Float)
 
-	public static native void glTexImage2Dub(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, byte[] arg8, int arg9);
+        @JvmStatic
+		external fun glLoadIdentity()
 
-	private static native void glUniformMatrix4fvARB(int arg0, int arg1, boolean arg2, float[] arg3, int arg4);
+        @JvmStatic
+		external fun glGenLists(arg0: Int): Int
 
-	public static native void glProgramRawARB(int arg0, int arg1, byte[] arg2);
+        @JvmStatic
+		external fun glColorPointer(arg0: Int, arg1: Int, arg2: Int, arg3: Long)
 
-	private native void detachPeer();
+        @JvmStatic
+		external fun glPopMatrix()
 
-	public native void setSwapInterval(int arg0);
+        @JvmStatic
+		external fun glEnableClientState(arg0: Int)
 
-	public native void surfaceResized(long arg0);
+        @JvmStatic
+		external fun glShaderSourceRawARB(arg0: Long, arg1: ByteArray?)
 
-	private native void setPbuffer(long arg0);
+        @JvmStatic
+		external fun glColor3f(arg0: Float, arg1: Float, arg2: Float)
 
-	public native boolean arePbuffersAvailable();
+        @JvmStatic
+		external fun glTexEnvf(arg0: Int, arg1: Int, arg2: Float)
 
-	public synchronized boolean a() {
-		if (this.a == Thread.currentThread()) {
-			this.detachPeer();
-			b.remove(this.a);
-			this.a = null;
-			return true;
-		} else {
-			return false;
-		}
-	}
+        @JvmStatic
+		external fun glProgramLocalParameter4fARB(arg0: Int, arg1: Int, arg2: Float, arg3: Float, arg4: Float, arg5: Float)
 
-	private native void releasePbuffer(long arg0);
+        @JvmStatic
+		external fun glAlphaFunc(arg0: Int, arg1: Float)
 
-	private native boolean attachPeer();
+        @JvmStatic
+		external fun glDeleteTextures(arg0: Int, arg1: IntArray?, arg2: Int)
 
-	public native void releaseSurface(Canvas arg0, long arg1);
+        @JvmStatic
+		external fun glDrawBuffer(arg0: Int)
 
-	public native long init(Canvas arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6);
+        @JvmStatic
+		external fun glBegin(arg0: Int)
 
-	public synchronized boolean b() {
-		Thread local1 = Thread.currentThread();
-		if (!this.attachPeer()) {
-			return false;
-		}
-		OpenGL local10 = (OpenGL) b.put(local1, this);
-		if (local10 != null) {
-			local10.a = null;
-		}
-		this.a = local1;
-		return true;
-	}
+        @JvmStatic
+		external fun glFogf(arg0: Int, arg1: Float)
 
-	private native long createPbuffer(int arg0, int arg1);
+        @JvmStatic
+		external fun glAttachObjectARB(arg0: Long, arg1: Long)
 
-	public native void swapBuffers();
+        @JvmStatic
+		external fun glCheckFramebufferStatusEXT(arg0: Int): Int
 
-	public boolean a(String arg0) {
-		if (this.c == null) {
-			this.c = new Hashtable();
-			String local10 = glGetString(7939);
-			int local12 = 0;
-			while (true) {
-				int local17 = local10.indexOf(32, local12);
-				if (local17 == -1) {
-					String local48 = local10.substring(local12).trim();
-					if (local48.length() != 0) {
-						this.c.put(local48, local48);
-					}
-					break;
-				}
-				String local26 = local10.substring(local12, local17).trim();
-				if (local26.length() != 0) {
-					this.c.put(local26, local26);
-				}
-				local12 = local17 + 1;
-			}
-		}
-		return this.c.containsKey(arg0);
-	}
+        @JvmStatic
+		external fun glTexImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int)
 
-	public native void release();
+        private external fun glUniformMatrix4fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int)
 
-	public native long prepareSurface(Canvas arg0);
-
-	public native boolean setSurface(long arg0);
+        @JvmStatic
+		external fun glProgramRawARB(arg0: Int, arg1: Int, arg2: ByteArray?)
+    }
 }

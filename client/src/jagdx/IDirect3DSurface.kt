@@ -1,15 +1,10 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.IUnknown;
-import jaclib.peer.hb;
+import jaclib.peer.IUnknown
+import jaclib.peer.hb
 
-public final class IDirect3DSurface extends IUnknown {
+class IDirect3DSurface(arg0: hb?) : IUnknown(arg0) {
+    external fun LockRect(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: PixelBuffer?): Int
 
-	public IDirect3DSurface(hb arg0) {
-		super(arg0);
-	}
-
-	public native int LockRect(int arg0, int arg1, int arg2, int arg3, int arg4, PixelBuffer arg5);
-
-	public native boolean UnlockRect();
+    external fun UnlockRect(): Boolean
 }

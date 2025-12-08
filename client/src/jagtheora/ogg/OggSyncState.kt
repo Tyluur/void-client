@@ -1,25 +1,24 @@
-package jagtheora.ogg;
+package jagtheora.ogg
 
-import jagtheora.misc.SimplePeer;
+import jagtheora.misc.SimplePeer
 
-public final class OggSyncState extends SimplePeer {
+class OggSyncState : SimplePeer() {
+    init {
+        init()
+        check(!this.b())
+    }
 
-	public OggSyncState() {
-		this.init();
-		if (this.b()) {
-			throw new IllegalStateException();
-		}
-	}
+    private external fun reset(): Boolean
 
-	private native boolean reset();
+    external override fun clear()
 
-	protected static native void init();
+    external fun write(arg0: ByteArray?, arg1: Int): Boolean
 
-	protected native void clear();
+    external fun pageOut(arg0: OggPage?): Int
 
-	public native boolean write(byte[] arg0, int arg1);
+    private external fun pageSeek(arg0: OggPage?): Long
 
-	public native int pageOut(OggPage arg0);
-
-	private native long pageSeek(OggPage arg0);
+    companion object {
+        protected external fun init()
+    }
 }

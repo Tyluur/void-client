@@ -1,13 +1,13 @@
-package jagdx;
+package jagdx
 
 
-public final class D3DDISPLAYMODE {
+class D3DDISPLAYMODE {
+    private val Width = 0
 
-	private int Width;
+    private val RefreshRate = 0
 
-	private int RefreshRate;
+    private val Height = 0
 
-	private int Height;
-
-	public int Format;
+    @JvmField
+    var Format: Int = 0
 }

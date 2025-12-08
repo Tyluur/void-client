@@ -1,11 +1,6 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.IUnknown;
-import jaclib.peer.hb;
+import jaclib.peer.IUnknown
+import jaclib.peer.hb
 
-public class IDirect3DBaseTexture extends IUnknown {
-
-	public IDirect3DBaseTexture(hb arg0) {
-		super(arg0);
-	}
-}
+open class IDirect3DBaseTexture(arg0: hb?) : IUnknown(arg0)

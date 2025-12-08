@@ -1,11 +1,6 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.IUnknown;
-import jaclib.peer.hb;
+import jaclib.peer.IUnknown
+import jaclib.peer.hb
 
-public final class IDirect3DVertexDeclaration extends IUnknown {
-
-	public IDirect3DVertexDeclaration(hb arg0) {
-		super(arg0);
-	}
-}
+class IDirect3DVertexDeclaration(arg0: hb?) : IUnknown(arg0)

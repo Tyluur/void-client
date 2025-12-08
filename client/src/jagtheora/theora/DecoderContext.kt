@@ -1,32 +1,30 @@
-package jagtheora.theora;
+package jagtheora.theora
 
-import jagtheora.misc.SimplePeer;
-import jagtheora.ogg.OggPacket;
+import jagtheora.misc.SimplePeer
+import jagtheora.ogg.OggPacket
 
-public final class DecoderContext extends SimplePeer {
+class DecoderContext(arg0: TheoraInfo?, arg1: SetupInfo?) : SimplePeer() {
+    init {
+        this.init(arg0, arg1)
+        require(!this.b()) { "" }
+    }
 
-	public DecoderContext(TheoraInfo arg0, SetupInfo arg1) {
-		this.init(arg0, arg1);
-		if (this.b()) {
-			throw new IllegalArgumentException("");
-		}
-	}
+    external fun granuleFrame(arg0: GranulePos?): Long
 
-	public native long granuleFrame(GranulePos arg0);
+    external override fun clear()
 
-	protected native void clear();
+    external fun setPostProcessingLevel(arg0: Int): Int
 
-	public native int setPostProcessingLevel(int arg0);
+    external fun decodePacketIn(arg0: OggPacket?, arg1: GranulePos?): Int
 
-	public native int decodePacketIn(OggPacket arg0, GranulePos arg1);
+    val maxPostProcessingLevel: Int
+        external get
 
-	public native int getMaxPostProcessingLevel();
+    external fun granuleTime(arg0: GranulePos?): Double
 
-	public native double granuleTime(GranulePos arg0);
+    private external fun setGranulePosition(arg0: Long): Int
 
-	private native int setGranulePosition(long arg0);
+    private external fun init(arg0: TheoraInfo?, arg1: SetupInfo?)
 
-	private native void init(TheoraInfo arg0, SetupInfo arg1);
-
-	public native int decodeFrame(Frame arg0);
+    external fun decodeFrame(arg0: Frame?): Int
 }

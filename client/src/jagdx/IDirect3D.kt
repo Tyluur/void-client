@@ -1,74 +1,68 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.IUnknown;
-import jaclib.peer.hb;
+import jaclib.peer.IUnknown
+import jaclib.peer.hb
+import java.awt.Canvas
 
-import java.awt.*;
+class IDirect3D private constructor(private val b: hb?) : IUnknown(b) {
+    fun a(arg0: Int, arg1: D3DDISPLAYMODE?): Int {
+        return this._GetAdapterDisplayMode(arg0, arg1)
+    }
 
-public final class IDirect3D extends IUnknown {
+    fun a(arg0: Int, arg1: Int, arg2: Canvas?, arg3: Int, arg4: D3DPRESENT_PARAMETERS?): IDirect3DDevice {
+        val local5 = IDirect3DDevice(this.b)
+        val local14 = this._CreateDevice(arg0, arg1, arg2, arg3, arg4, local5)
+        if (ue.a(97.toByte(), local14)) {
+            throw fda(local14.toString())
+        }
+        return local5
+    }
 
-	private final hb b;
+    fun a(arg0: Int, arg1: Int): D3DADAPTER_IDENTIFIER {
+        val local3 = D3DADAPTER_IDENTIFIER()
+        val local9 = this._GetAdapterIdentifier(arg0, arg1, local3)
+        if (ue.a(97.toByte(), local9)) {
+            throw fda(local9.toString())
+        }
+        return local3
+    }
 
-	public static IDirect3D a(int arg0, hb arg1) {
-		IDirect3D local4 = new IDirect3D(arg1);
-		int local8 = _Direct3DCreate(arg0, local4);
-		if (ue.a((byte) 97, local8)) {
-			throw new fda(String.valueOf(local8));
-		}
-		return local4;
-	}
+    external fun CheckDeviceType(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Boolean): Int
 
-	private static native int _Direct3DCreate(int arg0, IDirect3D arg1);
+    fun b(arg0: Int, arg1: Int): D3DCAPS {
+        val local3 = D3DCAPS()
+        val local9 = this._GetDeviceCaps(arg0, arg1, local3)
+        if (ue.a(97.toByte(), local9)) {
+            throw fda(local9.toString())
+        }
+        return local3
+    }
 
-	private IDirect3D(hb arg0) {
-		super(arg0);
-		this.b = arg0;
-	}
+    external fun CheckDeviceMultiSampleType(arg0: Int, arg1: Int, arg2: Int, arg3: Boolean, arg4: Int): Int
 
-	public int a(int arg0, D3DDISPLAYMODE arg1) {
-		return this._GetAdapterDisplayMode(arg0, arg1);
-	}
+    private external fun _GetAdapterDisplayMode(arg0: Int, arg1: D3DDISPLAYMODE?): Int
 
-	public IDirect3DDevice a(int arg0, int arg1, Canvas arg2, int arg3, D3DPRESENT_PARAMETERS arg4) {
-		IDirect3DDevice local5 = new IDirect3DDevice(this.b);
-		int local14 = this._CreateDevice(arg0, arg1, arg2, arg3, arg4, local5);
-		if (ue.a((byte) 97, local14)) {
-			throw new fda(String.valueOf(local14));
-		}
-		return local5;
-	}
+    private external fun _CreateDevice(arg0: Int, arg1: Int, arg2: Canvas?, arg3: Int, arg4: D3DPRESENT_PARAMETERS?, arg5: IDirect3DDevice?): Int
 
-	public D3DADAPTER_IDENTIFIER a(int arg0, int arg1) {
-		D3DADAPTER_IDENTIFIER local3 = new D3DADAPTER_IDENTIFIER();
-		int local9 = this._GetAdapterIdentifier(arg0, arg1, local3);
-		if (ue.a((byte) 97, local9)) {
-			throw new fda(String.valueOf(local9));
-		}
-		return local3;
-	}
+    external fun CheckDepthStencilMatch(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int): Int
 
-	public native int CheckDeviceType(int arg0, int arg1, int arg2, int arg3, boolean arg4);
+    external fun CheckDeviceFormat(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int): Int
 
-	public D3DCAPS b(int arg0, int arg1) {
-		D3DCAPS local3 = new D3DCAPS();
-		int local9 = this._GetDeviceCaps(arg0, arg1, local3);
-		if (ue.a((byte) 97, local9)) {
-			throw new fda(String.valueOf(local9));
-		}
-		return local3;
-	}
+    private external fun _GetAdapterIdentifier(arg0: Int, arg1: Int, arg2: D3DADAPTER_IDENTIFIER?): Int
 
-	public native int CheckDeviceMultiSampleType(int arg0, int arg1, int arg2, boolean arg3, int arg4);
+    private external fun _GetDeviceCaps(arg0: Int, arg1: Int, arg2: D3DCAPS?): Int
 
-	private native int _GetAdapterDisplayMode(int arg0, D3DDISPLAYMODE arg1);
+    companion object {
+        @JvmStatic
+        fun a(arg0: Int, arg1: hb?): IDirect3D {
+            val local4 = IDirect3D(arg1)
+            val local8: Int = _Direct3DCreate(arg0, local4)
+            if (ue.a(97.toByte(), local8)) {
+                throw fda(local8.toString())
+            }
+            return local4
+        }
 
-	private native int _CreateDevice(int arg0, int arg1, Canvas arg2, int arg3, D3DPRESENT_PARAMETERS arg4, IDirect3DDevice arg5);
-
-	public native int CheckDepthStencilMatch(int arg0, int arg1, int arg2, int arg3, int arg4);
-
-	public native int CheckDeviceFormat(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
-
-	private native int _GetAdapterIdentifier(int arg0, int arg1, D3DADAPTER_IDENTIFIER arg2);
-
-	private native int _GetDeviceCaps(int arg0, int arg1, D3DCAPS arg2);
+        private external fun _Direct3DCreate(arg0: Int, arg1: IDirect3D?): Int
+    }
 }

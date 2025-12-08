@@ -1,56 +1,54 @@
-package jagdx;
+package jagdx
 
-import jaclib.memory.Buffer;
-import jaclib.peer.hb;
-import jaclib.peer.uda;
+import jaclib.memory.Buffer
+import jaclib.peer.hb
+import jaclib.peer.uda
 
-public final class PixelBuffer extends uda implements Buffer {
+class PixelBuffer(arg0: hb?) : uda(arg0), Buffer {
+    init {
+        this.init()
+    }
 
-	public PixelBuffer(hb arg0) {
-		super(arg0);
-		this.init();
-	}
+    val rowPitch: Int
+        external get
 
-	public native int getRowPitch();
+    private external fun getub(arg0: ByteArray?, arg1: Int, arg2: Int, arg3: Int)
 
-	private native void getub(byte[] arg0, int arg1, int arg2, int arg3);
+    override fun a(arg0: ByteArray?, arg1: Int, arg2: Int, arg3: Int) {
+        if ((arg2 < 0) or (arg0 == null) or (arg1 < 0) or (arg3 + arg1 > arg0!!.size) || this.getSize() < arg3 + arg2) {
+            throw fda()
+        }
+        this.putub(arg0, arg1, arg2, arg3)
+    }
 
-	@Override
-	public void a(byte[] arg0, int arg1, int arg2, int arg3) {
-		if (arg2 < 0 | arg0 == null | arg1 < 0 | arg3 + arg1 > arg0.length || this.getSize() < arg3 + arg2) {
-			throw new fda();
-		}
-		this.putub(arg0, arg1, arg2, arg3);
-	}
+    private external fun putub(arg0: ByteArray?, arg1: Int, arg2: Int, arg3: Int)
 
-	private native void putub(byte[] arg0, int arg1, int arg2, int arg3);
+    fun a(arg0: IntArray, arg1: Int, arg2: Int, arg3: Int) {
+        if ((arg2 < 0) or (arg1 + arg3 > arg0.size) or (arg1 < 0) or (arg0 == null) || arg3 * 4 + arg2 > this.getSize()) {
+            throw fda()
+        }
+        this.puti(arg0, arg1, arg2, arg3)
+    }
 
-	public void a(int[] arg0, int arg1, int arg2, int arg3) {
-		if (arg2 < 0 | arg1 + arg3 > arg0.length | arg1 < 0 | arg0 == null || arg3 * 4 + arg2 > this.getSize()) {
-			throw new fda();
-		}
-		this.puti(arg0, arg1, arg2, arg3);
-	}
+    private external fun init()
 
-	private native void init();
+    override fun getAddress(): Long {
+        return 0L
+    }
 
-	@Override
-	public long getAddress() {
-		return 0L;
-	}
+    external override fun getSize(): Int
 
-	public native int getSize();
+    fun b(arg0: IntArray?, arg1: Int, arg2: Int, arg3: Int) {
+        if ((arg1 < 0) or (arg0 == null) or (arg3 + arg1 > arg0!!.size) or (arg2 < 0) || this.getSize() < arg3 * 4 + arg2) {
+            throw fda()
+        }
+        this.geti(arg0, arg1, arg2, arg3)
+    }
 
-	public void b(int[] arg0, int arg1, int arg2, int arg3) {
-		if (arg1 < 0 | arg0 == null | arg3 + arg1 > arg0.length | arg2 < 0 || this.getSize() < arg3 * 4 + arg2) {
-			throw new fda();
-		}
-		this.geti(arg0, arg1, arg2, arg3);
-	}
+    private external fun puti(arg0: IntArray?, arg1: Int, arg2: Int, arg3: Int)
 
-	private native void puti(int[] arg0, int arg1, int arg2, int arg3);
+    private external fun geti(arg0: IntArray?, arg1: Int, arg2: Int, arg3: Int)
 
-	private native void geti(int[] arg0, int arg1, int arg2, int arg3);
-
-	public native int getSlicePitch();
+    val slicePitch: Int
+        external get
 }

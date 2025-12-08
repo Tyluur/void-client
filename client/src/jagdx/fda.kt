@@ -1,12 +1,8 @@
-package jagdx;
+package jagdx
 
 
-public final class fda extends RuntimeException {
+class fda : RuntimeException {
+    constructor()
 
-	public fda() {
-	}
-
-	public fda(String arg0) {
-		super(arg0);
-	}
+    constructor(arg0: String?) : super(arg0)
 }

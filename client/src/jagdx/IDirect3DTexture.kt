@@ -1,14 +1,9 @@
-package jagdx;
+package jagdx
 
-import jaclib.peer.hb;
+import jaclib.peer.hb
 
-public final class IDirect3DTexture extends IDirect3DBaseTexture {
+class IDirect3DTexture(arg0: hb?) : IDirect3DBaseTexture(arg0) {
+    external fun LockRect(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: PixelBuffer?): Int
 
-	public IDirect3DTexture(hb arg0) {
-		super(arg0);
-	}
-
-	public native int LockRect(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, PixelBuffer arg6);
-
-	public native boolean UnlockRect(int arg0);
+    external fun UnlockRect(arg0: Int): Boolean
 }

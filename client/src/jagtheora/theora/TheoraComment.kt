@@ -1,17 +1,16 @@
-package jagtheora.theora;
+package jagtheora.theora
 
-import jagtheora.misc.SimplePeer;
+import jagtheora.misc.SimplePeer
 
-public final class TheoraComment extends SimplePeer {
+class TheoraComment : SimplePeer() {
+    init {
+        init()
+        check(!this.b())
+    }
 
-	public TheoraComment() {
-		this.init();
-		if (this.b()) {
-			throw new IllegalStateException();
-		}
-	}
+    external override fun clear()
 
-	protected native void clear();
-
-	protected static native void init();
+    companion object {
+        protected external fun init()
+    }
 }

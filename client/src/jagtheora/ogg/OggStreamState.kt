@@ -1,32 +1,30 @@
-package jagtheora.ogg;
+package jagtheora.ogg
 
-import jagtheora.misc.SimplePeer;
+import jagtheora.misc.SimplePeer
 
-public final class OggStreamState extends SimplePeer {
+class OggStreamState(arg0: Int) : SimplePeer() {
+    init {
+        check(this.init(arg0))
+    }
 
-	public OggStreamState(int arg0) {
-		if (!this.init(arg0)) {
-			throw new IllegalStateException();
-		}
-	}
+    external fun packetPeek(arg0: OggPacket?): Int
 
-	public native int packetPeek(OggPacket arg0);
+    private external fun packetPeek(): Int
 
-	private native int packetPeek();
+    private external fun init(arg0: Int): Boolean
 
-	private native boolean init(int arg0);
+    private val isEOS: Boolean
+        external get
 
-	private native boolean isEOS();
+    external override fun clear()
 
-	protected native void clear();
+    external fun pageIn(arg0: OggPage?): Boolean
 
-	public native boolean pageIn(OggPage arg0);
+    private external fun reset(): Boolean
 
-	private native boolean reset();
+    external fun packetOut(): Int
 
-	public native int packetOut();
+    external fun packetOut(arg0: OggPacket?): Int
 
-	public native int packetOut(OggPacket arg0);
-
-	private native boolean resetSerialNo(int arg0);
+    private external fun resetSerialNo(arg0: Int): Boolean
 }
