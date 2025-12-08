@@ -26,7 +26,6 @@ public final class Class366 implements Interface5_Impl1 {
             this.anIDirect3DVertexBuffer8511.a(9275);
             this.anIDirect3DVertexBuffer8511 = null;
         }
-        if (i != 23315) method17(null, -80, -30, (byte) 72);
         anInt8514 = 0;
         anInt8508 = 0;
     }

@@ -82,7 +82,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
     private var aBoolean9911 = false
     private var aBoolean9912 = false
     @JvmField
-    var aMapBuffer9913: MapBuffer? = MapBuffer()
+    var aMapBuffer9913: MapBuffer = MapBuffer()
     private var aBoolean9914 = false
     @JvmField
     var aMapBuffer9915: MapBuffer = MapBuffer()
@@ -194,7 +194,6 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
     override fun method3812(i: Int, class58s: Array<Class58?>?): Class130 {
         try {
             anInt9875++
-            if (i != 0) this.aMapBuffer9913 = null
             return Class130_Sub1(class58s)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("bga.KD(" + i + ',' + (if (class58s != null) "{...}" else "null") + ')'))
@@ -834,7 +833,6 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
     override fun method3855(class304: Class304?, i: Int, i_54_: Int, fs: FloatArray?, bool: Boolean, i_55_: Int, i_56_: Int, i_57_: Int): Interface18_Impl3 {
         try {
             anInt9890++
-            if (i_56_ != 2) this.aMapBuffer9913 = null
             if (!aBoolean9926 && (!Class192.method1436(60, i) || !Class192.method1436(-73, i_57_))) {
                 if (aBoolean9919) return Class14_Sub4(this, class304, i, i_57_, fs, i_54_, i_55_)
                 val class14_sub1 = Class14_Sub1(this, class304, Class68.aClass68_1187, Class33.method340(i, 108.toByte()), Class33.method340(i_57_, 108.toByte()))
