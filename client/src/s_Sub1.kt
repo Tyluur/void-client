@@ -455,7 +455,7 @@ internal class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val an
     }
 
     override fun method3984(i: Int, i_95_: Int, i_96_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_97_: Int, i_98_: Int) {
-        val class101_sub1 = aHa_Sub1_8217.aClass101_Sub1_7492
+        val class101_sub1 = aHa_Sub1_8217.aClass101_Sub1_7492!!
         anInt8228 = i_97_
         aFloat8212 = class101_sub1.aFloat5672
         aFloat8216 = class101_sub1.aFloat5673
@@ -1161,7 +1161,7 @@ internal class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val an
     }
 
     override fun method3983(i: Int, i_248_: Int, i_249_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_250_: Int) {
-        val class101_sub1 = aHa_Sub1_8217.aClass101_Sub1_7492
+        val class101_sub1 = aHa_Sub1_8217.aClass101_Sub1_7492!!
         anInt8228 = -1
         aFloat8212 = class101_sub1.aFloat5672
         aFloat8216 = class101_sub1.aFloat5673

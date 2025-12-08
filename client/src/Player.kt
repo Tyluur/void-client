@@ -457,7 +457,7 @@ internal class Player : Class318_Sub1_Sub3_Sub3() {
         return false
     }
 
-    override fun method2436(i: Byte): Int {
+    public override fun method2436(i: Byte): Int {
         if (i <= 39) method2455(-97, -62, 0.toByte(), 103)
         anInt10546++
         if (this.aClass154_10536 != null && this.aClass154_10536!!.anInt2093 != -1) return (Class189.aClass278_2529.method2079(this.aClass154_10536!!.anInt2093, -1).anInt1399)

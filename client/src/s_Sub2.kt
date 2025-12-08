@@ -130,7 +130,7 @@ internal class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i
             var i = 24
             if (anIntArrayArrayArray8252 != null) i += 4
             if ((0x7 and this.anInt8235) != 0) i += 12
-            val nativeheapbuffer = this.aHa_Sub2_8272!!.aNativeHeap7730.a(anInt8284 * i, false)
+            val nativeheapbuffer = this.aHa_Sub2_8272!!.aNativeHeap7730!!.a(anInt8284 * i, false)
             val stream = Stream(nativeheapbuffer)
             val class348_sub20s = arrayOfNulls<Class348_Sub20>(anInt8284)
             var i_34_ = Class348_Sub40_Sub1.method3051(anInt8284 / 4, 4096)
@@ -416,12 +416,12 @@ internal class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i
         if (i.toInt() != -82) method3981(null, null)
         val is_115_ = this.anIntArrayArrayArray8234!![i_113_]!![i_114_]!!
         val i_116_ = `is`.size
-        if (this.aHa_Sub2_8272!!.anIntArray7880.size < i_116_) {
+        if (this.aHa_Sub2_8272!!.anIntArray7880!!.size < i_116_) {
             this.aHa_Sub2_8272!!.anIntArray7883 = IntArray(i_116_)
             this.aHa_Sub2_8272!!.anIntArray7880 = IntArray(i_116_)
         }
-        val is_117_ = this.aHa_Sub2_8272!!.anIntArray7880
-        val is_118_ = this.aHa_Sub2_8272!!.anIntArray7883
+        val is_117_ = this.aHa_Sub2_8272!!.anIntArray7880!!
+        val is_118_ = this.aHa_Sub2_8272!!.anIntArray7883!!
         for (i_119_ in 0..<i_116_) {
             is_117_[i_119_] = (`is`[i_119_] shr this.aHa_Sub2_8272!!.anInt7731)
             is_118_[i_119_] = (is_115_[i_119_] shr this.aHa_Sub2_8272!!.anInt7731)
@@ -517,10 +517,10 @@ internal class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i
                 this.aHa_Sub2_8272!!.method3796(16384)
             }
             this.aHa_Sub2_8272!!.method3794(this.aClass123_8276, aClass123_8274, -26411, this.aClass123_8277, this.aClass123_8275)
-            if (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798.aByteArray7154.size < anInt8257 * 2) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(anInt8257 * 2)
-            else this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798.anInt7197 = 0
+            if (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154.size < anInt8257 * 2) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(anInt8257 * 2)
+            else this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.anInt7197 = 0
             var i_158_ = 0
-            val class348_sub49_sub1 = (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798)
+            val class348_sub49_sub1 = (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798)!!
             if (this.aHa_Sub2_8272!!.aBoolean7775) {
                 for (i_159_ in i_155_..<i_157_) {
                     var i_160_ = i_159_ * this.anInt4587 + i_154_
@@ -650,8 +650,8 @@ internal class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i
         if (aClass348_Sub20Array8282 != null) {
             var i_197_ = i_192_ + i_192_ - -1
             i_197_ *= i_197_
-            if (this.aHa_Sub2_8272!!.anIntArray7882.size < i_197_) this.aHa_Sub2_8272!!.anIntArray7882 = IntArray(i_197_)
-            if (anInt8257 * 2 > (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798.aByteArray7154).size) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(2 * anInt8257)
+            if (this.aHa_Sub2_8272!!.anIntArray7882!!.size < i_197_) this.aHa_Sub2_8272!!.anIntArray7882 = IntArray(i_197_)
+            if (anInt8257 * 2 > (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154).size) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(2 * anInt8257)
             var i_198_ = -i_192_ + i_194_
             val i_199_ = i_198_
             if (i_198_ < 0) i_198_ = 0
@@ -663,7 +663,7 @@ internal class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i
             var i_203_ = i_196_ + i_192_
             if (-1 + this.anInt4590 < i_203_) i_203_ = this.anInt4590 + -1
             var i_204_ = 0
-            val `is` = this.aHa_Sub2_8272!!.anIntArray7882
+            val `is` = this.aHa_Sub2_8272!!.anIntArray7882!!
             var i_205_ = i_198_
             while (i_202_ >= i_205_) {
                 val bools_206_ = bools[-i_199_ + i_205_]

@@ -457,6 +457,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
+            runtimeexception.printStackTrace();
             throw Class348_Sub17.method2929(runtimeexception, ("jia.B(" + i + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + bool_15_ + ',' + (class46s != null ? "{...}" : "null") + ',' + i_16_ + ',' + i_17_ + ')'));
         }
     }
