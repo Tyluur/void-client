@@ -1,113 +1,116 @@
-/* Class348_Sub6 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import java.io.File
+import kotlin.math.pow
 
-import java.io.File;
-import java.lang.reflect.Method;
+class Class348_Sub6 internal constructor(@JvmField var anInt6630: Int, @JvmField var anInt6636: Int) : Class348() {
+    companion object {
+        @JvmField
+        var anIntArray6631: IntArray? = IntArray(13)
+        @JvmField
+        var anInt6632: Int = 0
+        @JvmField
+        var anInt6633: Int
+        @JvmField
+        var anInt6634: Int = -2
+        var anIntArray6635: IntArray? = IntArray(4)
+        @JvmField
+        var anInt6637: Int = 2
+        @JvmField
+        var anInt6638: Int = 0
+        @JvmField
+        var anInt6639: Int = 0
 
-public final class Class348_Sub6 extends Class348 {
-    int anInt6630;
-    static int[] anIntArray6631 = new int[13];
-    static int anInt6632;
-    static int anInt6633;
-    static int anInt6634 = -2;
-    static int[] anIntArray6635 = new int[4];
-    int anInt6636;
-    static int anInt6637 = 2;
-    static int anInt6638;
-    static int anInt6639;
-    /*synthetic*/ static Class aClass6640;
+        /*synthetic*/
+        var aClass6640: Class<*>? = null
 
-    public static void method2768(int i) {
-        anIntArray6631 = null;
-        anIntArray6635 = null;
-        if (i != 3) anInt6634 = 101;
-    }
+        @JvmStatic
+        fun method2768(i: Int) {
+            anIntArray6631 = null
+            anIntArray6635 = null
+            if (i != 3) anInt6634 = 101
+        }
 
-    static final boolean method2769(Class var_class, byte i, String string) {
-        try {
-            anInt6639++;
-            Class var_class_0_ = ((Class) Player.aHashtable10565.get(string));
-            if (var_class_0_ != null) {
-                return var_class_0_.getClassLoader() == var_class.getClassLoader();
-            }
-            File file = null;
-            if (file == null) file = (File) Class275.aHashtable3548.get(string);
-            if (i != 20) anInt6633 = -118;
-            if (file != null) {
-                try {
-                    System.load(file.getPath());
-                    Player.aHashtable10565.put(string, (aClass6640 != null ? aClass6640 : (aClass6640 = Class90.class)));
-                    return true;
-                } catch (Throwable throwable) {
-                    if (Loader.trace) {
-                        throwable.printStackTrace();
+        @JvmStatic
+        fun method2769(var_class: Class<*>?, i: Byte, string: String?): Boolean {
+            try {
+                anInt6639++
+                val var_class_0_ = (Player.aHashtable10565!!.get(string) as Class<*>?)
+                if (var_class_0_ != null) {
+                    return var_class_0_.getClassLoader() === var_class!!.getClassLoader()
+                }
+                var file: File? = null
+                if (file == null) file = Class275.aHashtable3548.get(string) as File?
+                if (i.toInt() != 20) anInt6633 = -118
+                if (file != null) {
+                    try {
+                        System.load(file.getPath())
+                        Player.aHashtable10565!!.put(string, (if (aClass6640 != null) aClass6640 else (Class90::class.java.also { aClass6640 = it })))
+                        return true
+                    } catch (throwable: Throwable) {
+                        if (Loader.trace) {
+                            throwable.printStackTrace()
+                        }
                     }
                 }
+                return false
+            } catch (runtimeexception: RuntimeException) {
+                throw Class348_Sub17.method2929(runtimeexception, ("gba.C(" + (if (var_class != null) "{...}" else "null") + ',' + i + ',' + (if (string != null) "{...}" else "null") + ')'))
             }
-            return false;
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("gba.C(" + (var_class != null ? "{...}" : "null") + ',' + i + ',' + (string != null ? "{...}" : "null") + ')'));
         }
-    }
 
-    Class348_Sub6(int i, int i_4_) {
-        this.anInt6636 = i_4_;
-        this.anInt6630 = i;
-    }
-
-    static final void method2770(int i) {
-        anInt6638++;
-        if (Class10.anIntArray179 == null) Class10.anIntArray179 = new int[65536];
-        else return;
-        double d = 0.7 + (0.03 * Math.random() - 0.015);
-        for (int i_5_ = 0; i_5_ < 65536; i_5_++) {
-            double d_6_ = 0.0078125 + (double) ((0xfebd & i_5_) >> 10) / 64.0;
-            double d_7_ = (double) ((0x384 & i_5_) >> 7) / 8.0 + 0.0625;
-            double d_8_ = (double) (i_5_ & 0x7f) / 128.0;
-            double d_9_ = d_8_;
-            double d_10_ = d_8_;
-            double d_11_ = d_8_;
-            if (d_7_ != 0.0) {
-                double d_12_;
-                if (d_8_ < 0.5) d_12_ = d_8_ * (d_7_ + 1.0);
-                else d_12_ = -(d_8_ * d_7_) + (d_8_ + d_7_);
-                double d_13_ = 2.0 * d_8_ - d_12_;
-                double d_14_ = 0.3333333333333333 + d_6_;
-                if (d_14_ > 1.0) d_14_--;
-                double d_15_ = d_6_;
-                double d_16_ = -0.3333333333333333 + d_6_;
-                if (d_16_ < 0.0) d_16_++;
-                if (6.0 * d_14_ < 1.0) d_9_ = d_13_ + 6.0 * (-d_13_ + d_12_) * d_14_;
-                else if (!(2.0 * d_14_ < 1.0)) {
-                    if (!(3.0 * d_14_ < 2.0)) d_9_ = d_13_;
-                    else d_9_ = 6.0 * ((d_12_ - d_13_) * (-d_14_ + 0.6666666666666666)) + d_13_;
-                } else d_9_ = d_12_;
-                if (!(6.0 * d_15_ < 1.0)) {
-                    if (!(2.0 * d_15_ < 1.0)) {
-                        if (!(d_15_ * 3.0 < 2.0)) d_10_ = d_13_;
-                        else d_10_ = ((-d_15_ + 0.6666666666666666) * (d_12_ - d_13_) * 6.0) + d_13_;
-                    } else d_10_ = d_12_;
-                } else d_10_ = d_13_ + d_15_ * (6.0 * (d_12_ - d_13_));
-                if (d_16_ * 6.0 < 1.0) d_11_ = d_13_ + (d_12_ - d_13_) * 6.0 * d_16_;
-                else if (!(2.0 * d_16_ < 1.0)) {
-                    if (3.0 * d_16_ < 2.0) d_11_ = d_13_ + ((-d_13_ + d_12_) * (0.6666666666666666 - d_16_) * 6.0);
-                    else d_11_ = d_13_;
-                } else d_11_ = d_12_;
+        @JvmStatic
+        fun method2770(i: Int) {
+            anInt6638++
+            if (Class10.anIntArray179 == null) Class10.anIntArray179 = IntArray(65536)
+            else return
+            val d = 0.7 + (0.03 * Math.random() - 0.015)
+            for (i_5_ in 0..65535) {
+                val d_6_ = 0.0078125 + ((0xfebd and i_5_) shr 10).toDouble() / 64.0
+                val d_7_ = ((0x384 and i_5_) shr 7).toDouble() / 8.0 + 0.0625
+                val d_8_ = (i_5_ and 0x7f).toDouble() / 128.0
+                var d_9_ = d_8_
+                var d_10_ = d_8_
+                var d_11_ = d_8_
+                if (d_7_ != 0.0) {
+                    val d_12_: Double
+                    if (d_8_ < 0.5) d_12_ = d_8_ * (d_7_ + 1.0)
+                    else d_12_ = -(d_8_ * d_7_) + (d_8_ + d_7_)
+                    val d_13_ = 2.0 * d_8_ - d_12_
+                    var d_14_ = 0.3333333333333333 + d_6_
+                    if (d_14_ > 1.0) d_14_--
+                    val d_15_ = d_6_
+                    var d_16_ = -0.3333333333333333 + d_6_
+                    if (d_16_ < 0.0) d_16_++
+                    if (6.0 * d_14_ < 1.0) d_9_ = d_13_ + 6.0 * (-d_13_ + d_12_) * d_14_
+                    else if (!(2.0 * d_14_ < 1.0)) {
+                        if (!(3.0 * d_14_ < 2.0)) d_9_ = d_13_
+                        else d_9_ = 6.0 * ((d_12_ - d_13_) * (-d_14_ + 0.6666666666666666)) + d_13_
+                    } else d_9_ = d_12_
+                    if (!(6.0 * d_15_ < 1.0)) {
+                        if (!(2.0 * d_15_ < 1.0)) {
+                            if (!(d_15_ * 3.0 < 2.0)) d_10_ = d_13_
+                            else d_10_ = ((-d_15_ + 0.6666666666666666) * (d_12_ - d_13_) * 6.0) + d_13_
+                        } else d_10_ = d_12_
+                    } else d_10_ = d_13_ + d_15_ * (6.0 * (d_12_ - d_13_))
+                    if (d_16_ * 6.0 < 1.0) d_11_ = d_13_ + (d_12_ - d_13_) * 6.0 * d_16_
+                    else if (!(2.0 * d_16_ < 1.0)) {
+                        if (3.0 * d_16_ < 2.0) d_11_ = d_13_ + ((-d_13_ + d_12_) * (0.6666666666666666 - d_16_) * 6.0)
+                        else d_11_ = d_13_
+                    } else d_11_ = d_12_
+                }
+                d_9_ = d_9_.pow(d)
+                d_10_ = d_10_.pow(d)
+                d_11_ = d_11_.pow(d)
+                val i_17_ = (d_9_ * 256.0).toInt()
+                val i_18_ = (d_10_ * 256.0).toInt()
+                val i_19_ = (d_11_ * 256.0).toInt()
+                val i_20_ = (i_18_ shl 8) + (i_17_ shl 16) - -i_19_
+                Class10.anIntArray179[i_5_] = i_20_
             }
-            d_9_ = Math.pow(d_9_, d);
-            d_10_ = Math.pow(d_10_, d);
-            d_11_ = Math.pow(d_11_, d);
-            int i_17_ = (int) (d_9_ * 256.0);
-            int i_18_ = (int) (d_10_ * 256.0);
-            int i_19_ = (int) (d_11_ * 256.0);
-            int i_20_ = (i_18_ << 8) + (i_17_ << 16) - -i_19_;
-            Class10.anIntArray179[i_5_] = i_20_;
+            if (i != 2) anInt6634 = 92
         }
-        if (i != 2) anInt6634 = 92;
-    }
 
-    static {
-        anInt6633 = 0;
+        init {
+            anInt6633 = 0
+        }
     }
 }

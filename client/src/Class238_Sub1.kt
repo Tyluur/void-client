@@ -128,14 +128,14 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
                             i_10_ = ((16384 - i_14_ shr 1) + i_14_ * i_13_ / 8192)
                         }
                         if ((class348_sub9.aClass348_Sub16_Sub5_6676) != null) {
-                            class348_sub9.aClass348_Sub16_Sub5_6676.method2915(i_9_)
-                            class348_sub9.aClass348_Sub16_Sub5_6676.method2909(i_10_)
+                            class348_sub9.aClass348_Sub16_Sub5_6676!!.method2915(i_9_)
+                            class348_sub9.aClass348_Sub16_Sub5_6676!!.method2909(i_10_)
                         } else if (class348_sub9.anInt6685 >= 0) {
                             val i_15_ = (if (class348_sub9.anInt6681 == 256 && (class348_sub9.anInt6696 == 256)) 256 else (Class299_Sub1.method2257(class348_sub9.anInt6681, class348_sub9.anInt6696, (-120).toByte())))
                             if (class348_sub9.aBoolean6674) {
-                                if ((class348_sub9.aClass348_Sub10_6688) == null) class348_sub9.aClass348_Sub10_6688 = (Class348_Sub10.method2793(Class239_Sub4.aClass45_5878, (class348_sub9.anInt6685)))
+                                if ((class348_sub9.aClass348_Sub10_6688) == null) class348_sub9.aClass348_Sub10_6688 = (Class348_Sub10.method2793(Class239_Sub4.aClass45_5878!!, (class348_sub9.anInt6685)))
                                 if ((class348_sub9.aClass348_Sub10_6688) != null) {
-                                    if ((class348_sub9.aClass348_Sub19_Sub1_6686) == null) class348_sub9.aClass348_Sub19_Sub1_6686 = class348_sub9.aClass348_Sub10_6688.method2791(intArrayOf(22050))
+                                    if ((class348_sub9.aClass348_Sub19_Sub1_6686) == null) class348_sub9.aClass348_Sub19_Sub1_6686 = class348_sub9.aClass348_Sub10_6688!!.method2791(intArrayOf(22050))
                                     if ((class348_sub9.aClass348_Sub19_Sub1_6686) != null) {
                                         val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911((class348_sub9.aClass348_Sub19_Sub1_6686), i_15_, i_9_ shl 6, i_10_))
                                         class348_sub16_sub5!!.method2917(-1)
@@ -160,11 +160,11 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
                                     val i_16_ = (if ((class348_sub9.anInt6681) == 256 && (class348_sub9.anInt6696) == 256) 256 else ((class348_sub9.anInt6696) + (Math.random() * (-(class348_sub9.anInt6696) + (class348_sub9.anInt6681)).toDouble()).toInt()))
                                     if (class348_sub9.aBoolean6699) {
                                         if ((class348_sub9.aClass348_Sub10_6683) == null) {
-                                            val i_17_ = ((class348_sub9.anIntArray6697).size.toDouble() * Math.random()).toInt()
-                                            class348_sub9.aClass348_Sub10_6683 = (Class348_Sub10.method2793(Class239_Sub4.aClass45_5878, (class348_sub9.anIntArray6697[i_17_])))
+                                            val i_17_ = ((class348_sub9.anIntArray6697!!).size.toDouble() * Math.random()).toInt()
+                                            class348_sub9.aClass348_Sub10_6683 = (Class348_Sub10.method2793(Class239_Sub4.aClass45_5878!!, (class348_sub9.anIntArray6697!![i_17_])))
                                         }
                                         if ((class348_sub9.aClass348_Sub10_6683) != null) {
-                                            if ((class348_sub9.aClass348_Sub19_Sub1_6692) == null) class348_sub9.aClass348_Sub19_Sub1_6692 = (class348_sub9.aClass348_Sub10_6683.method2791(intArrayOf(22050)))
+                                            if ((class348_sub9.aClass348_Sub19_Sub1_6692) == null) class348_sub9.aClass348_Sub19_Sub1_6692 = (class348_sub9.aClass348_Sub10_6683!!.method2791(intArrayOf(22050)))
                                             if ((class348_sub9.aClass348_Sub19_Sub1_6692) != null) {
                                                 val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911((class348_sub9.aClass348_Sub19_Sub1_6692), i_16_, i_9_ shl 6, i_10_))
                                                 class348_sub16_sub5!!.method2917(0)
@@ -174,8 +174,8 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
                                             }
                                         }
                                     } else {
-                                        val i_18_ = (Math.random() * (class348_sub9.anIntArray6697).size.toDouble()).toInt()
-                                        val class317 = Class317.method2372((Class129.aClass45_1878), (class348_sub9.anIntArray6697[i_18_]), 0)
+                                        val i_18_ = (Math.random() * (class348_sub9.anIntArray6697!!).size.toDouble()).toInt()
+                                        val class317 = Class317.method2372((Class129.aClass45_1878), (class348_sub9.anIntArray6697!![i_18_]), 0)
                                         if (class317 == null) break
                                         val class348_sub19_sub1 = (class317.method2369().method2944(Class57.aClass163_1050))
                                         val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911(class348_sub19_sub1, i_16_, i_9_ shl 6, i_10_))
@@ -187,9 +187,9 @@ class Class238_Sub1 internal constructor(private val aSocket5836: Socket, i: Int
                                     break
                                 }
                             } else {
-                                class348_sub9.aClass348_Sub16_Sub5_6673.method2915(i_9_)
-                                class348_sub9.aClass348_Sub16_Sub5_6673.method2909(i_10_)
-                                if (!class348_sub9.aClass348_Sub16_Sub5_6673.method2712(4.toByte())) {
+                                class348_sub9.aClass348_Sub16_Sub5_6673!!.method2915(i_9_)
+                                class348_sub9.aClass348_Sub16_Sub5_6673!!.method2909(i_10_)
+                                if (!class348_sub9.aClass348_Sub16_Sub5_6673!!.method2712(4.toByte())) {
                                     class348_sub9.aClass348_Sub10_6683 = null
                                     class348_sub9.aClass348_Sub19_Sub1_6692 = null
                                     class348_sub9.aClass348_Sub16_Sub5_6673 = null

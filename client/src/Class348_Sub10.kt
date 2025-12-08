@@ -1,460 +1,461 @@
+import Class299.Companion.method2253
+import kotlin.math.cos
+import kotlin.math.pow
+import kotlin.math.sin
+
 /* Class348_Sub10 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
+    private var aFloatArray6701: FloatArray? = null
+    private var anInt6702 = 0
+    private var aByteArrayArray6703: Array<ByteArray?>? = null
+    private var aBoolean6706 = false
+    private var anInt6716 = 0
+    private var anInt6717 = 0
+    private var anInt6723 = 0
+    private var anInt6727 = 0
+    private var aBoolean6728 = false
+    private var anInt6730 = 0
+    private var aByteArray6731: ByteArray? = null
+    private var anInt6732 = 0
+    private var anInt6733 = 0
 
-public final class Class348_Sub10 extends Class348 {
-    private static float[] aFloatArray6700;
-    private float[] aFloatArray6701;
-    private int anInt6702;
-    private byte[][] aByteArrayArray6703;
-    private static Class276[] aClass276Array6704;
-    private static int[] anIntArray6705;
-    private boolean aBoolean6706;
-    private static float[] aFloatArray6707;
-    private static float[] aFloatArray6708;
-    private static int[] anIntArray6709;
-    private static Class343[] aClass343Array6710;
-    private static int anInt6711;
-    private static float[] aFloatArray6712;
-    private static boolean[] aBooleanArray6713;
-    private static byte[] aByteArray6714;
-    private static Class210[] aClass210Array6715;
-    private int anInt6716;
-    private int anInt6717;
-    static Class370[] aClass370Array6718;
-    private static int[] anIntArray6719;
-    private static float[] aFloatArray6720;
-    private static int anInt6721;
-    private static float[] aFloatArray6722;
-    private int anInt6723;
-    private static boolean aBoolean6724 = false;
-    private static int anInt6725;
-    private static float[] aFloatArray6726;
-    private int anInt6727;
-    private boolean aBoolean6728;
-    private static int anInt6729;
-    private int anInt6730;
-    private byte[] aByteArray6731;
-    private int anInt6732;
-    private int anInt6733;
-
-    private static final void method2784(byte[] is, int i) {
-        aByteArray6714 = is;
-        anInt6729 = i;
-        anInt6711 = 0;
-    }
-
-    public static void method2785() {
-        aByteArray6714 = null;
-        aClass370Array6718 = null;
-        aClass210Array6715 = null;
-        aClass343Array6710 = null;
-        aClass276Array6704 = null;
-        aBooleanArray6713 = null;
-        anIntArray6709 = null;
-        aFloatArray6707 = null;
-        aFloatArray6722 = null;
-        aFloatArray6720 = null;
-        aFloatArray6708 = null;
-        aFloatArray6712 = null;
-        aFloatArray6726 = null;
-        aFloatArray6700 = null;
-        anIntArray6719 = null;
-        anIntArray6705 = null;
-    }
-
-    static final float method2786(int i) {
-        int i_0_ = i & 0x1fffff;
-        int i_1_ = i & ~0x7fffffff;
-        int i_2_ = (i & 0x7fe00000) >> 21;
-        if (i_1_ != 0) i_0_ = -i_0_;
-        return (float) ((double) i_0_ * Math.pow(2.0, i_2_ - 788));
-    }
-
-    private final void method2787(byte[] is) {
-        Class348_Sub49 class348_sub49 = new Class348_Sub49(is);
-        anInt6702 = class348_sub49.readInt((byte) -126);
-        anInt6716 = class348_sub49.readInt((byte) -126);
-        anInt6723 = class348_sub49.readInt((byte) -126);
-        anInt6717 = class348_sub49.readInt((byte) -126);
+    private fun method2787(`is`: ByteArray?) {
+        val class348_sub49 = Class348_Sub49(`is`)
+        anInt6702 = class348_sub49.readInt((-126).toByte())
+        anInt6716 = class348_sub49.readInt((-126).toByte())
+        anInt6723 = class348_sub49.readInt((-126).toByte())
+        anInt6717 = class348_sub49.readInt((-126).toByte())
         if (anInt6717 < 0) {
-            anInt6717 = ~anInt6717;
-            aBoolean6728 = true;
+            anInt6717 = anInt6717.inv()
+            aBoolean6728 = true
         }
-        int i = class348_sub49.readInt((byte) -126);
-        aByteArrayArray6703 = new byte[i][];
-        for (int i_3_ = 0; i_3_ < i; i_3_++) {
-            int i_4_ = 0;
-            int i_5_;
+        val i = class348_sub49.readInt((-126).toByte())
+        aByteArrayArray6703 = arrayOfNulls<ByteArray>(i)
+        for (i_3_ in 0..<i) {
+            var i_4_ = 0
+            var i_5_: Int
             do {
-                i_5_ = class348_sub49.readUnsignedByte(255);
-                i_4_ += i_5_;
-            } while (i_5_ >= 255);
-            byte[] is_6_ = new byte[i_4_];
-            class348_sub49.method3389(2147483647, 0, i_4_, is_6_);
-            aByteArrayArray6703[i_3_] = is_6_;
+                i_5_ = class348_sub49.readUnsignedByte(255)
+                i_4_ += i_5_
+            } while (i_5_ >= 255)
+            val is_6_ = ByteArray(i_4_)
+            class348_sub49.method3389(2147483647, 0, i_4_, is_6_)
+            aByteArrayArray6703!![i_3_] = is_6_
         }
     }
 
-    static final int method2788() {
-        int i = aByteArray6714[anInt6729] >> anInt6711 & 0x1;
-        anInt6711++;
-        anInt6729 += anInt6711 >> 3;
-        anInt6711 &= 0x7;
-        return i;
-    }
-
-    static final int method2789(int i) {
-        int i_7_ = 0;
-        int i_8_ = 0;
-        int i_9_;
-        for (/**/; i >= 8 - anInt6711; i -= i_9_) {
-            i_9_ = 8 - anInt6711;
-            int i_10_ = (1 << i_9_) - 1;
-            i_7_ += (aByteArray6714[anInt6729] >> anInt6711 & i_10_) << i_8_;
-            anInt6711 = 0;
-            anInt6729++;
-            i_8_ += i_9_;
-        }
-        if (i > 0) {
-            i_9_ = (1 << i) - 1;
-            i_7_ += (aByteArray6714[anInt6729] >> anInt6711 & i_9_) << i_8_;
-            anInt6711 += i;
-        }
-        return i_7_;
-    }
-
-    private static final void method2790(byte[] is) {
-        method2784(is, 0);
-        anInt6725 = 1 << method2789(4);
-        anInt6721 = 1 << method2789(4);
-        aFloatArray6707 = new float[anInt6721];
-        for (int i = 0; i < 2; i++) {
-            int i_11_ = i != 0 ? anInt6721 : anInt6725;
-            int i_12_ = i_11_ >> 1;
-            int i_13_ = i_11_ >> 2;
-            int i_14_ = i_11_ >> 3;
-            float[] fs = new float[i_12_];
-            for (int i_15_ = 0; i_15_ < i_13_; i_15_++) {
-                fs[2 * i_15_] = (float) Math.cos((double) (4 * i_15_) * 3.141592653589793 / (double) i_11_);
-                fs[2 * i_15_ + 1] = -(float) Math.sin((double) (4 * i_15_) * 3.141592653589793 / (double) i_11_);
-            }
-            float[] fs_16_ = new float[i_12_];
-            for (int i_17_ = 0; i_17_ < i_13_; i_17_++) {
-                fs_16_[2 * i_17_] = (float) Math.cos((double) (2 * i_17_ + 1) * 3.141592653589793 / (double) (2 * i_11_));
-                fs_16_[2 * i_17_ + 1] = (float) Math.sin((double) (2 * i_17_ + 1) * 3.141592653589793 / (double) (2 * i_11_));
-            }
-            float[] fs_18_ = new float[i_13_];
-            for (int i_19_ = 0; i_19_ < i_14_; i_19_++) {
-                fs_18_[2 * i_19_] = (float) Math.cos((double) (4 * i_19_ + 2) * 3.141592653589793 / (double) i_11_);
-                fs_18_[2 * i_19_ + 1] = -(float) Math.sin((double) (4 * i_19_ + 2) * 3.141592653589793 / (double) i_11_);
-            }
-            int[] is_20_ = new int[i_14_];
-            int i_21_ = Class299.method2253(i_14_ - 1, -53);
-            for (int i_22_ = 0; i_22_ < i_14_; i_22_++)
-                is_20_[i_22_] = Class84.method818(i_21_, 0, i_22_);
-            if (i == 0) {
-                aFloatArray6722 = fs;
-                aFloatArray6720 = fs_16_;
-                aFloatArray6708 = fs_18_;
-                anIntArray6719 = is_20_;
-            } else {
-                aFloatArray6712 = fs;
-                aFloatArray6726 = fs_16_;
-                aFloatArray6700 = fs_18_;
-                anIntArray6705 = is_20_;
-            }
-        }
-        int i = method2789(8) + 1;
-        aClass370Array6718 = new Class370[i];
-        for (int i_23_ = 0; i_23_ < i; i_23_++)
-            aClass370Array6718[i_23_] = new Class370();
-        int i_24_ = method2789(6) + 1;
-        for (int i_25_ = 0; i_25_ < i_24_; i_25_++)
-            method2789(16);
-        int i_26_ = method2789(6) + 1;
-        aClass210Array6715 = new Class210[i_26_];
-        for (int i_27_ = 0; i_27_ < i_26_; i_27_++)
-            aClass210Array6715[i_27_] = new Class210();
-        int i_28_ = method2789(6) + 1;
-        aClass343Array6710 = new Class343[i_28_];
-        for (int i_29_ = 0; i_29_ < i_28_; i_29_++)
-            aClass343Array6710[i_29_] = new Class343();
-        int i_30_ = method2789(6) + 1;
-        aClass276Array6704 = new Class276[i_30_];
-        for (int i_31_ = 0; i_31_ < i_30_; i_31_++)
-            aClass276Array6704[i_31_] = new Class276();
-        int i_32_ = method2789(6) + 1;
-        aBooleanArray6713 = new boolean[i_32_];
-        anIntArray6709 = new int[i_32_];
-        for (int i_33_ = 0; i_33_ < i_32_; i_33_++) {
-            aBooleanArray6713[i_33_] = method2788() != 0;
-            method2789(16);
-            method2789(16);
-            anIntArray6709[i_33_] = method2789(8);
-        }
-        aBoolean6724 = true;
-    }
-
-    final Class348_Sub19_Sub1 method2791(int[] is) {
-        if (is != null && is[0] <= 0) return null;
+    fun method2791(`is`: IntArray?): Class348_Sub19_Sub1? {
+        if (`is` != null && `is`[0] <= 0) return null
         if (aByteArray6731 == null) {
-            anInt6730 = 0;
-            aFloatArray6701 = new float[anInt6721];
-            aByteArray6731 = new byte[anInt6716];
-            anInt6733 = 0;
-            anInt6732 = 0;
+            anInt6730 = 0
+            aFloatArray6701 = FloatArray(anInt6721)
+            aByteArray6731 = ByteArray(anInt6716)
+            anInt6733 = 0
+            anInt6732 = 0
         }
-        for (/**/; anInt6732 < aByteArrayArray6703.length; anInt6732++) {
-            if (is != null && is[0] <= 0) return null;
-            float[] fs = method2794(anInt6732);
+        while ( /**/anInt6732 < aByteArrayArray6703!!.size) {
+            if (`is` != null && `is`[0] <= 0) return null
+            val fs = method2794(anInt6732)
             if (fs != null) {
-                int i = anInt6733;
-                int i_34_ = fs.length;
-                if (i_34_ > anInt6716 - i) i_34_ = anInt6716 - i;
-                for (int i_35_ = 0; i_35_ < i_34_; i_35_++) {
-                    int i_36_ = (int) (128.0F + fs[i_35_] * 128.0F);
-                    if ((i_36_ & ~0xff) != 0) i_36_ = (~i_36_) >> 31;
-                    aByteArray6731[i++] = (byte) (i_36_ - 128);
+                var i = anInt6733
+                var i_34_ = fs.size
+                if (i_34_ > anInt6716 - i) i_34_ = anInt6716 - i
+                for (i_35_ in 0..<i_34_) {
+                    var i_36_ = (128.0f + fs[i_35_] * 128.0f).toInt()
+                    if ((i_36_ and 0xff.inv()) != 0) i_36_ = (i_36_.inv()) shr 31
+                    aByteArray6731!![i++] = (i_36_ - 128).toByte()
                 }
-                if (is != null) is[0] -= i - anInt6733;
-                anInt6733 = i;
+                if (`is` != null) `is`[0] -= i - anInt6733
+                anInt6733 = i
             }
+            anInt6732++
         }
-        aFloatArray6701 = null;
-        byte[] is_37_ = aByteArray6731;
-        aByteArray6731 = null;
-        return new Class348_Sub19_Sub1(anInt6702, is_37_, anInt6723, anInt6717, aBoolean6728);
+        aFloatArray6701 = null
+        val is_37_ = aByteArray6731
+        aByteArray6731 = null
+        return Class348_Sub19_Sub1(anInt6702, is_37_, anInt6723, anInt6717, aBoolean6728)
     }
 
-    private static final boolean method2792(Class45 class45) {
-        if (!aBoolean6724) {
-            byte[] is = class45.method410(-1860, 0, 0);
-            if (is == null) return false;
-            method2790(is);
-        }
-        return true;
-    }
-
-    static final Class348_Sub10 method2793(Class45 class45, int i) {
-        if (!method2792(class45)) {
-            class45.method421(false, i);
-            return null;
-        }
-        byte[] is = class45.method415((byte) 73, i);
-        if (is == null) return null;
-        return new Class348_Sub10(is);
-    }
-
-    private final float[] method2794(int i) {
-        method2784(aByteArrayArray6703[i], 0);
-        method2788();
-        int i_38_ = method2789(Class299.method2253(anIntArray6709.length - 1, 123));
-        boolean bool = aBooleanArray6713[i_38_];
-        int i_39_ = bool ? anInt6721 : anInt6725;
-        boolean bool_40_ = false;
-        boolean bool_41_ = false;
+    private fun method2794(i: Int): FloatArray? {
+        method2784(aByteArrayArray6703!![i], 0)
+        method2788()
+        val i_38_: Int = method2789(method2253(anIntArray6709!!.size - 1, 123))
+        val bool: Boolean = aBooleanArray6713!![i_38_]
+        val i_39_: Int = if (bool) anInt6721 else anInt6725
+        var bool_40_ = false
+        var bool_41_ = false
         if (bool) {
-            bool_40_ = method2788() != 0;
-            bool_41_ = method2788() != 0;
+            bool_40_ = method2788() != 0
+            bool_41_ = method2788() != 0
         }
-        int i_42_ = i_39_ >> 1;
-        int i_43_;
-        int i_44_;
-        int i_45_;
+        val i_42_ = i_39_ shr 1
+        val i_43_: Int
+        val i_44_: Int
+        val i_45_: Int
         if (bool && !bool_40_) {
-            i_43_ = (i_39_ >> 2) - (anInt6725 >> 2);
-            i_44_ = (i_39_ >> 2) + (anInt6725 >> 2);
-            i_45_ = anInt6725 >> 1;
+            i_43_ = (i_39_ shr 2) - (anInt6725 shr 2)
+            i_44_ = (i_39_ shr 2) + (anInt6725 shr 2)
+            i_45_ = anInt6725 shr 1
         } else {
-            i_43_ = 0;
-            i_44_ = i_42_;
-            i_45_ = i_39_ >> 1;
+            i_43_ = 0
+            i_44_ = i_42_
+            i_45_ = i_39_ shr 1
         }
-        int i_46_;
-        int i_47_;
-        int i_48_;
+        val i_46_: Int
+        val i_47_: Int
+        val i_48_: Int
         if (bool && !bool_41_) {
-            i_46_ = i_39_ - (i_39_ >> 2) - (anInt6725 >> 2);
-            i_47_ = i_39_ - (i_39_ >> 2) + (anInt6725 >> 2);
-            i_48_ = anInt6725 >> 1;
+            i_46_ = i_39_ - (i_39_ shr 2) - (anInt6725 shr 2)
+            i_47_ = i_39_ - (i_39_ shr 2) + (anInt6725 shr 2)
+            i_48_ = anInt6725 shr 1
         } else {
-            i_46_ = i_42_;
-            i_47_ = i_39_;
-            i_48_ = i_39_ >> 1;
+            i_46_ = i_42_
+            i_47_ = i_39_
+            i_48_ = i_39_ shr 1
         }
-        Class276 class276 = aClass276Array6704[anIntArray6709[i_38_]];
-        int i_49_ = class276.anInt3557;
-        int i_50_ = class276.anIntArray3556[i_49_];
-        boolean bool_51_ = !aClass210Array6715[i_50_].method1534();
-        boolean bool_52_ = bool_51_;
-        for (int i_53_ = 0; i_53_ < class276.anInt3555; i_53_++) {
-            Class343 class343 = (aClass343Array6710[class276.anIntArray3554[i_53_]]);
-            float[] fs = aFloatArray6707;
-            class343.method2688(fs, i_39_ >> 1, bool_52_);
+        val class276: Class276 = aClass276Array6704!![anIntArray6709!![i_38_]]!!
+        val i_49_ = class276.anInt3557
+        val i_50_ = class276.anIntArray3556[i_49_]
+        val bool_51_: Boolean = !aClass210Array6715!![i_50_]!!.method1534()
+        val bool_52_ = bool_51_
+        for (i_53_ in 0..<class276.anInt3555) {
+            val class343: Class343 = (aClass343Array6710!![class276.anIntArray3554!![i_53_]])!!
+            val fs: FloatArray? = aFloatArray6707
+            class343.method2688(fs, i_39_ shr 1, bool_52_)
         }
         if (!bool_51_) {
-            int i_54_ = class276.anInt3557;
-            int i_55_ = class276.anIntArray3556[i_54_];
-            aClass210Array6715[i_55_].method1530(aFloatArray6707, i_39_ >> 1);
+            val i_54_ = class276.anInt3557
+            val i_55_ = class276.anIntArray3556[i_54_]
+            aClass210Array6715!![i_55_]!!.method1530(aFloatArray6707, i_39_ shr 1)
         }
         if (bool_51_) {
-            for (int i_56_ = i_39_ >> 1; i_56_ < i_39_; i_56_++)
-                aFloatArray6707[i_56_] = 0.0F;
+            for (i_56_ in (i_39_ shr 1)..<i_39_) aFloatArray6707!![i_56_] = 0.0f
         } else {
-            int i_57_ = i_39_ >> 1;
-            int i_58_ = i_39_ >> 2;
-            int i_59_ = i_39_ >> 3;
-            float[] fs = aFloatArray6707;
-            for (int i_60_ = 0; i_60_ < i_57_; i_60_++)
-                fs[i_60_] *= 0.5F;
-            for (int i_61_ = i_57_; i_61_ < i_39_; i_61_++)
-                fs[i_61_] = -fs[i_39_ - i_61_ - 1];
-            float[] fs_62_ = bool ? aFloatArray6712 : aFloatArray6722;
-            float[] fs_63_ = bool ? aFloatArray6726 : aFloatArray6720;
-            float[] fs_64_ = bool ? aFloatArray6700 : aFloatArray6708;
-            int[] is = bool ? anIntArray6705 : anIntArray6719;
-            for (int i_65_ = 0; i_65_ < i_58_; i_65_++) {
-                float f = fs[4 * i_65_] - fs[i_39_ - 4 * i_65_ - 1];
-                float f_66_ = fs[4 * i_65_ + 2] - fs[i_39_ - 4 * i_65_ - 3];
-                float f_67_ = fs_62_[2 * i_65_];
-                float f_68_ = fs_62_[2 * i_65_ + 1];
-                fs[i_39_ - 4 * i_65_ - 1] = f * f_67_ - f_66_ * f_68_;
-                fs[i_39_ - 4 * i_65_ - 3] = f * f_68_ + f_66_ * f_67_;
+            val i_57_ = i_39_ shr 1
+            val i_58_ = i_39_ shr 2
+            val i_59_ = i_39_ shr 3
+            val fs: FloatArray? = aFloatArray6707
+            for (i_60_ in 0..<i_57_) fs!![i_60_] *= 0.5f
+            for (i_61_ in i_57_..<i_39_) fs!![i_61_] = -fs[i_39_ - i_61_ - 1]
+            val fs_62_: FloatArray = (if (bool) Class348_Sub10.Companion.aFloatArray6712 else Class348_Sub10.Companion.aFloatArray6722)!!
+            val fs_63_: FloatArray = (if (bool) Class348_Sub10.Companion.aFloatArray6726 else Class348_Sub10.Companion.aFloatArray6720)!!
+            val fs_64_: FloatArray = (if (bool) Class348_Sub10.Companion.aFloatArray6700 else Class348_Sub10.Companion.aFloatArray6708)!!
+            val `is`: IntArray = (if (bool) Class348_Sub10.Companion.anIntArray6705 else Class348_Sub10.Companion.anIntArray6719)!!
+            for (i_65_ in 0..<i_58_) {
+                val f = fs!![4 * i_65_] - fs[i_39_ - 4 * i_65_ - 1]
+                val f_66_ = fs[4 * i_65_ + 2] - fs[i_39_ - 4 * i_65_ - 3]
+                val f_67_ = fs_62_[2 * i_65_]
+                val f_68_ = fs_62_[2 * i_65_ + 1]
+                fs[i_39_ - 4 * i_65_ - 1] = f * f_67_ - f_66_ * f_68_
+                fs[i_39_ - 4 * i_65_ - 3] = f * f_68_ + f_66_ * f_67_
             }
-            for (int i_69_ = 0; i_69_ < i_59_; i_69_++) {
-                float f = fs[i_57_ + 3 + 4 * i_69_];
-                float f_70_ = fs[i_57_ + 1 + 4 * i_69_];
-                float f_71_ = fs[4 * i_69_ + 3];
-                float f_72_ = fs[4 * i_69_ + 1];
-                fs[i_57_ + 3 + 4 * i_69_] = f + f_71_;
-                fs[i_57_ + 1 + 4 * i_69_] = f_70_ + f_72_;
-                float f_73_ = fs_62_[i_57_ - 4 - 4 * i_69_];
-                float f_74_ = fs_62_[i_57_ - 3 - 4 * i_69_];
-                fs[4 * i_69_ + 3] = (f - f_71_) * f_73_ - (f_70_ - f_72_) * f_74_;
-                fs[4 * i_69_ + 1] = (f_70_ - f_72_) * f_73_ + (f - f_71_) * f_74_;
+            for (i_69_ in 0..<i_59_) {
+                val f = fs!![i_57_ + 3 + 4 * i_69_]
+                val f_70_ = fs[i_57_ + 1 + 4 * i_69_]
+                val f_71_ = fs[4 * i_69_ + 3]
+                val f_72_ = fs[4 * i_69_ + 1]
+                fs[i_57_ + 3 + 4 * i_69_] = f + f_71_
+                fs[i_57_ + 1 + 4 * i_69_] = f_70_ + f_72_
+                val f_73_ = fs_62_[i_57_ - 4 - 4 * i_69_]
+                val f_74_ = fs_62_[i_57_ - 3 - 4 * i_69_]
+                fs[4 * i_69_ + 3] = (f - f_71_) * f_73_ - (f_70_ - f_72_) * f_74_
+                fs[4 * i_69_ + 1] = (f_70_ - f_72_) * f_73_ + (f - f_71_) * f_74_
             }
-            int i_75_ = Class299.method2253(i_39_ - 1, -52);
-            for (int i_76_ = 0; i_76_ < i_75_ - 3; i_76_++) {
-                int i_77_ = i_39_ >> i_76_ + 2;
-                int i_78_ = 8 << i_76_;
-                for (int i_79_ = 0; i_79_ < 2 << i_76_; i_79_++) {
-                    int i_80_ = i_39_ - i_77_ * 2 * i_79_;
-                    int i_81_ = i_39_ - i_77_ * (2 * i_79_ + 1);
-                    for (int i_82_ = 0; i_82_ < i_39_ >> i_76_ + 4; i_82_++) {
-                        int i_83_ = 4 * i_82_;
-                        float f = fs[i_80_ - 1 - i_83_];
-                        float f_84_ = fs[i_80_ - 3 - i_83_];
-                        float f_85_ = fs[i_81_ - 1 - i_83_];
-                        float f_86_ = fs[i_81_ - 3 - i_83_];
-                        fs[i_80_ - 1 - i_83_] = f + f_85_;
-                        fs[i_80_ - 3 - i_83_] = f_84_ + f_86_;
-                        float f_87_ = fs_62_[i_82_ * i_78_];
-                        float f_88_ = fs_62_[i_82_ * i_78_ + 1];
-                        fs[i_81_ - 1 - i_83_] = (f - f_85_) * f_87_ - (f_84_ - f_86_) * f_88_;
-                        fs[i_81_ - 3 - i_83_] = (f_84_ - f_86_) * f_87_ + (f - f_85_) * f_88_;
+            val i_75_ = method2253(i_39_ - 1, -52)
+            for (i_76_ in 0..<i_75_ - 3) {
+                val i_77_ = i_39_ shr i_76_ + 2
+                val i_78_ = 8 shl i_76_
+                for (i_79_ in 0..<(2 shl i_76_)) {
+                    val i_80_ = i_39_ - i_77_ * 2 * i_79_
+                    val i_81_ = i_39_ - i_77_ * (2 * i_79_ + 1)
+                    for (i_82_ in 0..<(i_39_ shr i_76_ + 4)) {
+                        val i_83_ = 4 * i_82_
+                        val f = fs!![i_80_ - 1 - i_83_]
+                        val f_84_ = fs[i_80_ - 3 - i_83_]
+                        val f_85_ = fs[i_81_ - 1 - i_83_]
+                        val f_86_ = fs[i_81_ - 3 - i_83_]
+                        fs[i_80_ - 1 - i_83_] = f + f_85_
+                        fs[i_80_ - 3 - i_83_] = f_84_ + f_86_
+                        val f_87_ = fs_62_[i_82_ * i_78_]
+                        val f_88_ = fs_62_[i_82_ * i_78_ + 1]
+                        fs[i_81_ - 1 - i_83_] = (f - f_85_) * f_87_ - (f_84_ - f_86_) * f_88_
+                        fs[i_81_ - 3 - i_83_] = (f_84_ - f_86_) * f_87_ + (f - f_85_) * f_88_
                     }
                 }
             }
-            for (int i_89_ = 1; i_89_ < i_59_ - 1; i_89_++) {
-                int i_90_ = is[i_89_];
+            for (i_89_ in 1..<i_59_ - 1) {
+                val i_90_ = `is`[i_89_]
                 if (i_89_ < i_90_) {
-                    int i_91_ = 8 * i_89_;
-                    int i_92_ = 8 * i_90_;
-                    float f = fs[i_91_ + 1];
-                    fs[i_91_ + 1] = fs[i_92_ + 1];
-                    fs[i_92_ + 1] = f;
-                    f = fs[i_91_ + 3];
-                    fs[i_91_ + 3] = fs[i_92_ + 3];
-                    fs[i_92_ + 3] = f;
-                    f = fs[i_91_ + 5];
-                    fs[i_91_ + 5] = fs[i_92_ + 5];
-                    fs[i_92_ + 5] = f;
-                    f = fs[i_91_ + 7];
-                    fs[i_91_ + 7] = fs[i_92_ + 7];
-                    fs[i_92_ + 7] = f;
+                    val i_91_ = 8 * i_89_
+                    val i_92_ = 8 * i_90_
+                    var f = fs!![i_91_ + 1]
+                    fs[i_91_ + 1] = fs[i_92_ + 1]
+                    fs[i_92_ + 1] = f
+                    f = fs[i_91_ + 3]
+                    fs[i_91_ + 3] = fs[i_92_ + 3]
+                    fs[i_92_ + 3] = f
+                    f = fs[i_91_ + 5]
+                    fs[i_91_ + 5] = fs[i_92_ + 5]
+                    fs[i_92_ + 5] = f
+                    f = fs[i_91_ + 7]
+                    fs[i_91_ + 7] = fs[i_92_ + 7]
+                    fs[i_92_ + 7] = f
                 }
             }
-            for (int i_93_ = 0; i_93_ < i_57_; i_93_++)
-                fs[i_93_] = fs[2 * i_93_ + 1];
-            for (int i_94_ = 0; i_94_ < i_59_; i_94_++) {
-                fs[i_39_ - 1 - 2 * i_94_] = fs[4 * i_94_];
-                fs[i_39_ - 2 - 2 * i_94_] = fs[4 * i_94_ + 1];
-                fs[i_39_ - i_58_ - 1 - 2 * i_94_] = fs[4 * i_94_ + 2];
-                fs[i_39_ - i_58_ - 2 - 2 * i_94_] = fs[4 * i_94_ + 3];
+            for (i_93_ in 0..<i_57_) fs!![i_93_] = fs[2 * i_93_ + 1]
+            for (i_94_ in 0..<i_59_) {
+                fs!![i_39_ - 1 - 2 * i_94_] = fs[4 * i_94_]
+                fs[i_39_ - 2 - 2 * i_94_] = fs[4 * i_94_ + 1]
+                fs[i_39_ - i_58_ - 1 - 2 * i_94_] = fs[4 * i_94_ + 2]
+                fs[i_39_ - i_58_ - 2 - 2 * i_94_] = fs[4 * i_94_ + 3]
             }
-            for (int i_95_ = 0; i_95_ < i_59_; i_95_++) {
-                float f = fs_64_[2 * i_95_];
-                float f_96_ = fs_64_[2 * i_95_ + 1];
-                float f_97_ = fs[i_57_ + 2 * i_95_];
-                float f_98_ = fs[i_57_ + 2 * i_95_ + 1];
-                float f_99_ = fs[i_39_ - 2 - 2 * i_95_];
-                float f_100_ = fs[i_39_ - 1 - 2 * i_95_];
-                float f_101_ = f_96_ * (f_97_ - f_99_) + f * (f_98_ + f_100_);
-                fs[i_57_ + 2 * i_95_] = (f_97_ + f_99_ + f_101_) * 0.5F;
-                fs[i_39_ - 2 - 2 * i_95_] = (f_97_ + f_99_ - f_101_) * 0.5F;
-                f_101_ = f_96_ * (f_98_ + f_100_) - f * (f_97_ - f_99_);
-                fs[i_57_ + 2 * i_95_ + 1] = (f_98_ - f_100_ + f_101_) * 0.5F;
-                fs[i_39_ - 1 - 2 * i_95_] = (-f_98_ + f_100_ + f_101_) * 0.5F;
+            for (i_95_ in 0..<i_59_) {
+                val f = fs_64_[2 * i_95_]
+                val f_96_ = fs_64_[2 * i_95_ + 1]
+                val f_97_ = fs!![i_57_ + 2 * i_95_]
+                val f_98_ = fs[i_57_ + 2 * i_95_ + 1]
+                val f_99_ = fs[i_39_ - 2 - 2 * i_95_]
+                val f_100_ = fs[i_39_ - 1 - 2 * i_95_]
+                var f_101_ = f_96_ * (f_97_ - f_99_) + f * (f_98_ + f_100_)
+                fs[i_57_ + 2 * i_95_] = (f_97_ + f_99_ + f_101_) * 0.5f
+                fs[i_39_ - 2 - 2 * i_95_] = (f_97_ + f_99_ - f_101_) * 0.5f
+                f_101_ = f_96_ * (f_98_ + f_100_) - f * (f_97_ - f_99_)
+                fs[i_57_ + 2 * i_95_ + 1] = (f_98_ - f_100_ + f_101_) * 0.5f
+                fs[i_39_ - 1 - 2 * i_95_] = (-f_98_ + f_100_ + f_101_) * 0.5f
             }
-            for (int i_102_ = 0; i_102_ < i_58_; i_102_++) {
-                fs[i_102_] = (fs[2 * i_102_ + i_57_] * fs_63_[2 * i_102_] + fs[2 * i_102_ + 1 + i_57_] * fs_63_[2 * i_102_ + 1]);
-                fs[i_57_ - 1 - i_102_] = (fs[2 * i_102_ + i_57_] * fs_63_[2 * i_102_ + 1] - fs[2 * i_102_ + 1 + i_57_] * fs_63_[2 * i_102_]);
+            for (i_102_ in 0..<i_58_) {
+                fs!![i_102_] = (fs[2 * i_102_ + i_57_] * fs_63_[2 * i_102_] + fs[2 * i_102_ + 1 + i_57_] * fs_63_[2 * i_102_ + 1])
+                fs[i_57_ - 1 - i_102_] = (fs[2 * i_102_ + i_57_] * fs_63_[2 * i_102_ + 1] - fs[2 * i_102_ + 1 + i_57_] * fs_63_[2 * i_102_])
             }
-            for (int i_103_ = 0; i_103_ < i_58_; i_103_++)
-                fs[i_39_ - i_58_ + i_103_] = -fs[i_103_];
-            for (int i_104_ = 0; i_104_ < i_58_; i_104_++)
-                fs[i_104_] = fs[i_58_ + i_104_];
-            for (int i_105_ = 0; i_105_ < i_58_; i_105_++)
-                fs[i_58_ + i_105_] = -fs[i_58_ - i_105_ - 1];
-            for (int i_106_ = 0; i_106_ < i_58_; i_106_++)
-                fs[i_57_ + i_106_] = fs[i_39_ - i_106_ - 1];
-            for (int i_107_ = i_43_; i_107_ < i_44_; i_107_++) {
-                float f = (float) Math.sin(((double) (i_107_ - i_43_) + 0.5) / (double) i_45_ * 0.5 * 3.141592653589793);
-                aFloatArray6707[i_107_] *= (float) Math.sin(1.5707963267948966 * (double) f * (double) f);
+            for (i_103_ in 0..<i_58_) fs!![i_39_ - i_58_ + i_103_] = -fs[i_103_]
+            for (i_104_ in 0..<i_58_) fs!![i_104_] = fs[i_58_ + i_104_]
+            for (i_105_ in 0..<i_58_) fs!![i_58_ + i_105_] = -fs[i_58_ - i_105_ - 1]
+            for (i_106_ in 0..<i_58_) fs!![i_57_ + i_106_] = fs[i_39_ - i_106_ - 1]
+            for (i_107_ in i_43_..<i_44_) {
+                val f = sin(((i_107_ - i_43_).toDouble() + 0.5) / i_45_.toDouble() * 0.5 * 3.141592653589793).toFloat()
+                aFloatArray6707!![i_107_] *= sin(1.5707963267948966 * f.toDouble() * f.toDouble()).toFloat()
             }
-            for (int i_108_ = i_46_; i_108_ < i_47_; i_108_++) {
-                float f = (float) Math.sin((((double) (i_108_ - i_46_) + 0.5) / (double) i_48_ * 0.5 * 3.141592653589793) + 1.5707963267948966);
-                aFloatArray6707[i_108_] *= (float) Math.sin(1.5707963267948966 * (double) f * (double) f);
+            for (i_108_ in i_46_..<i_47_) {
+                val f = sin((((i_108_ - i_46_).toDouble() + 0.5) / i_48_.toDouble() * 0.5 * 3.141592653589793) + 1.5707963267948966).toFloat()
+                aFloatArray6707!![i_108_] *= sin(1.5707963267948966 * f.toDouble() * f.toDouble()).toFloat()
             }
         }
-        float[] fs = null;
+        var fs: FloatArray? = null
         if (anInt6730 > 0) {
-            int i_109_ = anInt6730 + i_39_ >> 2;
-            fs = new float[i_109_];
+            val i_109_ = anInt6730 + i_39_ shr 2
+            fs = FloatArray(i_109_)
             if (!aBoolean6706) {
-                for (int i_110_ = 0; i_110_ < anInt6727; i_110_++) {
-                    int i_111_ = (anInt6730 >> 1) + i_110_;
-                    fs[i_110_] += aFloatArray6701[i_111_];
+                for (i_110_ in 0..<anInt6727) {
+                    val i_111_ = (anInt6730 shr 1) + i_110_
+                    fs[i_110_] += aFloatArray6701!![i_111_]
                 }
             }
             if (!bool_51_) {
-                for (int i_112_ = i_43_; i_112_ < i_39_ >> 1; i_112_++) {
-                    int i_113_ = fs.length - (i_39_ >> 1) + i_112_;
-                    fs[i_113_] += aFloatArray6707[i_112_];
+                for (i_112_ in i_43_..<(i_39_ shr 1)) {
+                    val i_113_ = fs.size - (i_39_ shr 1) + i_112_
+                    fs[i_113_] += aFloatArray6707!![i_112_]
                 }
             }
         }
-        float[] fs_114_ = aFloatArray6701;
-        aFloatArray6701 = aFloatArray6707;
-        aFloatArray6707 = fs_114_;
-        anInt6730 = i_39_;
-        anInt6727 = i_47_ - (i_39_ >> 1);
-        aBoolean6706 = bool_51_;
-        return fs;
+        val fs_114_ = aFloatArray6701
+        aFloatArray6701 = aFloatArray6707
+        aFloatArray6707 = fs_114_
+        anInt6730 = i_39_
+        anInt6727 = i_47_ - (i_39_ shr 1)
+        aBoolean6706 = bool_51_
+        return fs
     }
 
-    private Class348_Sub10(byte[] is) {
-        method2787(is);
+    init {
+        method2787(`is`)
     }
 
-    static final Class348_Sub10 method2795(Class45 class45, int i, int i_115_) {
-        if (!method2792(class45)) {
-            class45.method420(-10499, i, i_115_);
-            return null;
+    companion object {
+        private var aFloatArray6700: FloatArray? = null
+        private var aClass276Array6704: Array<Class276?>? = null
+        private var anIntArray6705: IntArray? = null
+        private var aFloatArray6707: FloatArray? = null
+        private var aFloatArray6708: FloatArray? = null
+        private var anIntArray6709: IntArray? = null
+        private var aClass343Array6710: Array<Class343?>? = null
+        private var anInt6711 = 0
+        private var aFloatArray6712: FloatArray? = null
+        private var aBooleanArray6713: BooleanArray? = null
+        private var aByteArray6714: ByteArray? = null
+        private var aClass210Array6715: Array<Class210?>? = null
+        @JvmField
+        var aClass370Array6718: Array<Class370?>? = null
+        private var anIntArray6719: IntArray? = null
+        private var aFloatArray6720: FloatArray? = null
+        private var anInt6721 = 0
+        private var aFloatArray6722: FloatArray? = null
+        private var aBoolean6724 = false
+        private var anInt6725 = 0
+        private var aFloatArray6726: FloatArray? = null
+        private var anInt6729 = 0
+        private fun method2784(`is`: ByteArray?, i: Int) {
+            aByteArray6714 = `is`
+            anInt6729 = i
+            anInt6711 = 0
         }
-        byte[] is = class45.method410(-1860, i, i_115_);
-        if (is == null) return null;
-        return new Class348_Sub10(is);
+
+        @JvmStatic
+        fun method2785() {
+            aByteArray6714 = null
+            aClass370Array6718 = null
+            aClass210Array6715 = null
+            aClass343Array6710 = null
+            aClass276Array6704 = null
+            aBooleanArray6713 = null
+            anIntArray6709 = null
+            aFloatArray6707 = null
+            aFloatArray6722 = null
+            aFloatArray6720 = null
+            aFloatArray6708 = null
+            aFloatArray6712 = null
+            aFloatArray6726 = null
+            aFloatArray6700 = null
+            anIntArray6719 = null
+            anIntArray6705 = null
+        }
+
+        fun method2786(i: Int): Float {
+            var i_0_ = i and 0x1fffff
+            val i_1_ = i and 0x7fffffff.inv()
+            val i_2_ = (i and 0x7fe00000) shr 21
+            if (i_1_ != 0) i_0_ = -i_0_
+            return (i_0_.toDouble() * 2.0.pow((i_2_ - 788).toDouble())).toFloat()
+        }
+
+        @JvmStatic
+        fun method2788(): Int {
+            val i: Int = aByteArray6714!![anInt6729].toInt() shr anInt6711 and 0x1
+            anInt6711++
+            anInt6729 += anInt6711 shr 3
+            anInt6711 = anInt6711 and 0x7
+            return i
+        }
+
+        @JvmStatic
+        fun method2789(i: Int): Int {
+            var i = i
+            var i_7_ = 0
+            var i_8_ = 0
+            var i_9_: Int
+            while ( /**/i >= 8 - anInt6711) {
+                i_9_ = 8 - anInt6711
+                val i_10_ = (1 shl i_9_) - 1
+                i_7_ += (aByteArray6714!![anInt6729].toInt() shr anInt6711 and i_10_) shl i_8_
+                anInt6711 = 0
+                anInt6729++
+                i_8_ += i_9_
+                i -= i_9_
+            }
+            if (i > 0) {
+                i_9_ = (1 shl i) - 1
+                i_7_ += (aByteArray6714!![anInt6729].toInt() shr anInt6711 and i_9_) shl i_8_
+                anInt6711 += i
+            }
+            return i_7_
+        }
+
+        private fun method2790(`is`: ByteArray?) {
+            method2784(`is`, 0)
+            anInt6725 = 1 shl method2789(4)
+            anInt6721 = 1 shl method2789(4)
+            aFloatArray6707 = FloatArray(anInt6721)
+            for (i in 0..1) {
+                val i_11_: Int = if (i != 0) anInt6721 else anInt6725
+                val i_12_ = i_11_ shr 1
+                val i_13_ = i_11_ shr 2
+                val i_14_ = i_11_ shr 3
+                val fs = FloatArray(i_12_)
+                for (i_15_ in 0..<i_13_) {
+                    fs[2 * i_15_] = cos((4 * i_15_).toDouble() * 3.141592653589793 / i_11_.toDouble()).toFloat()
+                    fs[2 * i_15_ + 1] = -sin((4 * i_15_).toDouble() * 3.141592653589793 / i_11_.toDouble()).toFloat()
+                }
+                val fs_16_ = FloatArray(i_12_)
+                for (i_17_ in 0..<i_13_) {
+                    fs_16_[2 * i_17_] = cos((2 * i_17_ + 1).toDouble() * 3.141592653589793 / (2 * i_11_).toDouble()).toFloat()
+                    fs_16_[2 * i_17_ + 1] = sin((2 * i_17_ + 1).toDouble() * 3.141592653589793 / (2 * i_11_).toDouble()).toFloat()
+                }
+                val fs_18_ = FloatArray(i_13_)
+                for (i_19_ in 0..<i_14_) {
+                    fs_18_[2 * i_19_] = cos((4 * i_19_ + 2).toDouble() * 3.141592653589793 / i_11_.toDouble()).toFloat()
+                    fs_18_[2 * i_19_ + 1] = -sin((4 * i_19_ + 2).toDouble() * 3.141592653589793 / i_11_.toDouble()).toFloat()
+                }
+                val is_20_ = IntArray(i_14_)
+                val i_21_ = method2253(i_14_ - 1, -53)
+                for (i_22_ in 0..<i_14_) is_20_[i_22_] = Class84.method818(i_21_, 0, i_22_)
+                if (i == 0) {
+                    aFloatArray6722 = fs
+                    aFloatArray6720 = fs_16_
+                    aFloatArray6708 = fs_18_
+                    anIntArray6719 = is_20_
+                } else {
+                    aFloatArray6712 = fs
+                    aFloatArray6726 = fs_16_
+                    aFloatArray6700 = fs_18_
+                    anIntArray6705 = is_20_
+                }
+            }
+            val i: Int = method2789(8) + 1
+            aClass370Array6718 = arrayOfNulls<Class370>(i)
+            for (i_23_ in 0..<i) aClass370Array6718!![i_23_] = Class370()
+            val i_24_: Int = method2789(6) + 1
+            for (i_25_ in 0..<i_24_) method2789(16)
+            val i_26_: Int = method2789(6) + 1
+            aClass210Array6715 = arrayOfNulls<Class210>(i_26_)
+            for (i_27_ in 0..<i_26_) aClass210Array6715!![i_27_] = Class210()
+            val i_28_: Int = method2789(6) + 1
+            aClass343Array6710 = arrayOfNulls<Class343?>(i_28_)
+            for (i_29_ in 0..<i_28_) aClass343Array6710!![i_29_] = Class343()
+            val i_30_: Int = method2789(6) + 1
+            aClass276Array6704 = arrayOfNulls<Class276?>(i_30_)
+            for (i_31_ in 0..<i_30_) aClass276Array6704!![i_31_] = Class276()
+            val i_32_: Int = method2789(6) + 1
+            aBooleanArray6713 = BooleanArray(i_32_)
+            anIntArray6709 = IntArray(i_32_)
+            for (i_33_ in 0..<i_32_) {
+                aBooleanArray6713!![i_33_] = method2788() != 0
+                method2789(16)
+                method2789(16)
+                anIntArray6709!![i_33_] = method2789(8)
+            }
+            aBoolean6724 = true
+        }
+
+        private fun method2792(class45: Class45): Boolean {
+            if (!aBoolean6724) {
+                val `is` = class45.method410(-1860, 0, 0)
+                if (`is` == null) return false
+                method2790(`is`)
+            }
+            return true
+        }
+
+        @JvmStatic
+        fun method2793(class45: Class45, i: Int): Class348_Sub10? {
+            if (!method2792(class45)) {
+                class45.method421(false, i)
+                return null
+            }
+            val `is` = class45.method415(73.toByte(), i)
+            if (`is` == null) return null
+            return Class348_Sub10(`is`)
+        }
+
+        @JvmStatic
+        fun method2795(class45: Class45, i: Int, i_115_: Int): Class348_Sub10? {
+            if (!method2792(class45)) {
+                class45.method420(-10499, i, i_115_)
+                return null
+            }
+            val `is` = class45.method410(-1860, i, i_115_)
+            if (`is` == null) return null
+            return Class348_Sub10(`is`)
+        }
     }
 }

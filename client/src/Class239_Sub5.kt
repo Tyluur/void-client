@@ -88,7 +88,7 @@ class Class239_Sub5 : Class239 {
             if (Class154.aClass348_Sub49Array2105[i_3_] != null) player.method2452(84.toByte(), (Class154.aClass348_Sub49Array2105[i_3_]))
             Class328_Sub1.anInt6513 = 0
             Class286_Sub7.anIntArray6290!![Class328_Sub1.anInt6513++] = i_3_
-            Class348_Sub5.aByteArray6624[i_3_] = 0.toByte()
+            Class348_Sub5.aByteArray6624!![i_3_] = 0.toByte()
             Class348_Sub42_Sub4.anInt9513 = 0
             for (i_8_ in 1..2047) {
                 if (i_8_ != i_3_) {
@@ -103,7 +103,7 @@ class Class239_Sub5 : Class239 {
                     class359.anInt4423 = 0
                     class359.anInt4425 = -1
                     Class135_Sub1.anIntArray4709[Class348_Sub42_Sub4.anInt9513++] = i_8_
-                    Class348_Sub5.aByteArray6624[i_8_] = 0.toByte()
+                    Class348_Sub5.aByteArray6624!![i_8_] = 0.toByte()
                 }
             }
             class348_sub49_sub2.stopBitAccess(false)

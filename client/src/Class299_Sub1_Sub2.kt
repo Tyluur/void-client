@@ -163,7 +163,7 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: ha_Sub2, i: Int) : Cl
             aHa_Sub2_8707.method3738(-15039, 0)
             aHa_Sub2_8707.method3771((-88).toByte(), null)
             glPopAttrib()
-            aHa_Sub2_8707.KA(Class348_Sub6.anIntArray6635[0], Class348_Sub6.anIntArray6635[1], Class348_Sub6.anIntArray6635[2], Class348_Sub6.anIntArray6635[3])
+            aHa_Sub2_8707.KA(Class348_Sub6.anIntArray6635!![0], Class348_Sub6.anIntArray6635!![1], Class348_Sub6.anIntArray6635!![2], Class348_Sub6.anIntArray6635!![3])
             if (bool && !aHa_Sub2_8707.aBoolean7847) aClass258_Sub2_8701.method1950(69)
             return bool
         } catch (runtimeexception: RuntimeException) {

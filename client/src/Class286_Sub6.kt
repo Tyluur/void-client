@@ -145,7 +145,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             } else string = "www-wtrc"
             var string_2_ = ""
             if (Class239_Sub12.aString5966 != null) string_2_ = "/p=" + Class239_Sub12.aString5966
-            return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.aClass230_10434.aString2985) + ".com/l=" + Class348_Sub33.anInt6967 + "/a=" + Class202.anInt2670 + string_2_ + "/")
+            return ("http://" + string + "." + (Class348_Sub42_Sub8_Sub2.aClass230_10434?.aString2985) + ".com/l=" + Class348_Sub33.anInt6967 + "/a=" + Class202.anInt2670 + string_2_ + "/")
         }
 
         @JvmStatic

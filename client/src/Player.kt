@@ -427,7 +427,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         else `is` = Class239_Sub17.anIntArray6021
         if (i != 255) anInt10567 = 81
         if (`is` != null && `is`[aByte10552.toInt()] != -1) {
-            val class117 = Class348_Sub7.aClass33_6653.method337(true, `is`[aByte10552.toInt()])
+            val class117 = Class348_Sub7.aClass33_6653!!.method337(true, `is`[aByte10552.toInt()])
             if (class117.aChar1779.code != 115) {
                 Class156.method1242("gdn1", Throwable(), 15004)
                 `is`[aByte10552.toInt()] = -1

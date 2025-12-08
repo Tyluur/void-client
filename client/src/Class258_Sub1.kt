@@ -106,13 +106,13 @@ class Class258_Sub1 : Class258 {
                         if (i_33_ >= 0 && i_34_ >= 0 && i_33_ < Class318_Sub7.anInt6451 && i_34_ < Class348_Sub41.anInt7054) {
                             val i_35_ = i_33_ shl Class362.anInt4459
                             val i_36_ = i_34_ shl Class362.anInt4459
-                            val i_37_ = (Class348_Sub1_Sub1.aSArray8801[Class348_Sub1_Sub1.aSArray8801.size - 1].method3982((-86).toByte(), i_34_, i_33_) - (1000 shl Class362.anInt4459 - 7))
-                            val i_38_ = (if (Class332.aSArray4142 != null) (Class332.aSArray4142[0].method3982((-86).toByte(), i_34_, i_33_) + Class270.anInt3465) else (Class348_Sub1_Sub1.aSArray8801[0].method3982((-86).toByte(), i_34_, i_33_) + Class270.anInt3465))
+                            val i_37_ = (Class348_Sub1_Sub1.aSArray8801!![Class348_Sub1_Sub1.aSArray8801!!.size - 1]!!.method3982((-86).toByte(), i_34_, i_33_) - (1000 shl Class362.anInt4459 - 7))
+                            val i_38_ = (if (Class332.aSArray4142 != null) (Class332.aSArray4142[0].method3982((-86).toByte(), i_34_, i_33_) + Class270.anInt3465) else (Class348_Sub1_Sub1.aSArray8801!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + Class270.anInt3465))
                             i_31_ = (if (i_25_ >= 0) Class9.aHa171.r(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_, i_25_) else Class9.aHa171.JA(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_))
-                            Class348_Sub8.aBooleanArrayArray6656[i_29_][i_32_] = i_31_ == 0
+                            Class348_Sub8.aBooleanArrayArray6656!![i_29_]!![i_32_] = i_31_ == 0
                         } else {
                             i_31_ = -1
-                            Class348_Sub8.aBooleanArrayArray6656[i_29_][i_32_] = false
+                            Class348_Sub8.aBooleanArrayArray6656!![i_29_]!![i_32_] = false
                         }
                         if (i_29_ > 0 && i_32_ > 0) {
                             val i_39_ = (Class171.anIntArray2272[i_32_ - 1] and Class171.anIntArray2272[i_32_] and i_30_ and i_31_)

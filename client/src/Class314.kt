@@ -30,7 +30,7 @@ abstract class Class314 {
             if (i_3_ > -126) anInt3941 = 15
             var class348_sub9 = Class218.aClass262_2859.method1995(4) as Class348_Sub9?
             while (class348_sub9 != null) {
-                if (i_2_ == class348_sub9.anInt6693 && (class348_sub9.anInt6678 == i shl 9) && (i_1_ shl 9 == class348_sub9.anInt6689) && (class348_sub9.aClass51_6695.anInt941 == class51.anInt941)) {
+                if (i_2_ == class348_sub9.anInt6693 && (class348_sub9.anInt6678 == i shl 9) && (i_1_ shl 9 == class348_sub9.anInt6689) && (class348_sub9.aClass51_6695!!.anInt941 == class51.anInt941)) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
                         Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676)
                         class348_sub9.aClass348_Sub16_Sub5_6676 = null

@@ -1,24 +1,19 @@
-/* Class348_Sub42_Sub9_Sub2 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import java.lang.ref.SoftReference
 
-import java.lang.ref.SoftReference;
+class Class348_Sub42_Sub9_Sub2 internal constructor(interface14: Interface14?, `object`: Any?, i: Int) : Class348_Sub42_Sub9(interface14, i) {
+    private var aSoftReference10446: SoftReference<*>?
 
-public final class Class348_Sub42_Sub9_Sub2 extends Class348_Sub42_Sub9 {
-    private SoftReference aSoftReference10446;
-
-    final Object method3205(int i) {
-        if (i != 65536) aSoftReference10446 = null;
-        return aSoftReference10446.get();
+    override fun method3205(i: Int): Any? {
+        if (i != 65536) aSoftReference10446 = null
+        return aSoftReference10446!!.get()
     }
 
-    final boolean method3206(byte i) {
-        int i_0_ = -88 % ((-63 - i) / 61);
-        return true;
+    override fun method3206(i: Byte): Boolean {
+        val i_0_ = -88 % ((-63 - i) / 61)
+        return true
     }
 
-    Class348_Sub42_Sub9_Sub2(Interface14 interface14, Object object, int i) {
-        super(interface14, i);
-        aSoftReference10446 = new SoftReference(object);
+    init {
+        aSoftReference10446 = SoftReference<Any?>(`object`)
     }
 }

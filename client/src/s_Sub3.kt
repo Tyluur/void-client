@@ -501,7 +501,7 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
                 this.aHa_Sub3_8322!!.method3866(((this.anInt8294) and 0x7) != 0, true)
                 this.aHa_Sub3_8322!!.method3814(false, false, -1, 101.toByte())
                 this.aHa_Sub3_8322!!.method3925(112, anInterface5_Impl1_8327, 0)
-                for (i_164_ in aClass348_Sub3Array8328!!.indices) aClass348_Sub3Array8328!![i_164_]!!.method2737((-30).toByte(), Class286_Sub1.anIntArray6189, Class348_Sub48.anInt7133)
+                for (i_164_ in aClass348_Sub3Array8328!!.indices) aClass348_Sub3Array8328!![i_164_]!!.method2737((-30).toByte(), Class286_Sub1.anIntArray6189!!, Class348_Sub48.anInt7133)
                 val class101_sub2 = this.aHa_Sub3_8322!!.method3934(-97)
                 class101_sub2!!.method894(0, -1, 0)
                 this.aHa_Sub3_8322!!.method3915(0)

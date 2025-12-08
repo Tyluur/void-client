@@ -49,7 +49,7 @@ abstract class Class318_Sub1 : Class318() {
     fun method2390(class348_sub1s: Array<Class348_Sub1?>, i: Int, i_30_: Int, i_31_: Int): Int {
         anInt6384++
         if (i_30_ != -2) this.aByte6376 = 33.toByte()
-        val l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431[this.plane.toInt()][i][i_31_])
+        val l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431!![this.plane.toInt()]!![i]!![i_31_])
         var l_32_ = 0L
         var i_33_ = 0
         while ( /**/l_32_ <= 48) {

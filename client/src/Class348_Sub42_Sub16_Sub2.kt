@@ -1,58 +1,68 @@
 /* Class348_Sub42_Sub16_Sub2 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class348_Sub42_Sub16_Sub2 : Class348_Sub42_Sub16() {
+    @JvmField
+    var anInt10457: Int = 0
+    @JvmField
+    var aClass137_10458: Class137? = null
+    @JvmField
+    var aByteArray10461: ByteArray? = null
 
-public final class Class348_Sub42_Sub16_Sub2 extends Class348_Sub42_Sub16 {
-    int anInt10457;
-    Class137 aClass137_10458;
-    static int anInt10459;
-    static int anInt10460;
-    byte[] aByteArray10461;
-    static int anInt10462;
-    static int anInt10463 = 0;
-    static int anInt10464;
-    static Class356 aClass356_10465 = new Class356(16);
-
-    static final boolean method3263(boolean bool) {
-        if (bool != true) return false;
-        anInt10459++;
-        return Class351.aBoolean4328;
+    override fun method3257(i: Int): Int {
+        anInt10460++
+        if (i != 16) this.aClass137_10458 = null
+        if (this.aBoolean9664) return 0
+        return 100
     }
 
-    public static void method3264(byte i) {
-        aClass356_10465 = null;
-        if (i != -24) method3265(-70, null, null);
+    override fun method3259(i: Int): ByteArray? {
+        anInt10464++
+        if (i != 16) method3259(8)
+        if (this.aBoolean9664) throw RuntimeException()
+        return this.aByteArray10461
     }
 
-    final int method3257(int i) {
-        anInt10460++;
-        if (i != 16) this.aClass137_10458 = null;
-        if (this.aBoolean9664) return 0;
-        return 100;
-    }
+    companion object {
+        @JvmField
+        var anInt10459: Int = 0
+        @JvmField
+        var anInt10460: Int = 0
+        @JvmField
+        var anInt10462: Int = 0
+        @JvmField
+        var anInt10463: Int = 0
+        @JvmField
+        var anInt10464: Int = 0
+        @JvmField
+        var aClass356_10465: Class356? = Class356(16)
 
-    static final void method3265(int i, Class348 class348, Class348 class348_0_) {
-        try {
-            if (class348.aClass348_4295 != null) class348.method2715((byte) 27);
-            int i_1_ = -109 % ((6 - i) / 43);
-            anInt10462++;
-            class348.aClass348_4295 = class348_0_.aClass348_4295;
-            class348.aClass348_4294 = class348_0_;
-            class348.aClass348_4295.aClass348_4294 = class348;
-            class348.aClass348_4294.aClass348_4295 = class348;
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qh.K(" + i + ',' + (class348 != null ? "{...}" : "null") + ',' + (class348_0_ != null ? "{...}" : "null") + ')'));
+        @JvmStatic
+        fun method3263(bool: Boolean): Boolean {
+            if (bool != true) return false
+            anInt10459++
+            return Class351.aBoolean4328
         }
-    }
 
-    final byte[] method3259(int i) {
-        anInt10464++;
-        if (i != 16) method3259(8);
-        if (this.aBoolean9664) throw new RuntimeException();
-        return this.aByteArray10461;
-    }
+        @JvmStatic
+        fun method3264(i: Byte) {
+            aClass356_10465 = null
+            if (i.toInt() != -24) method3265(-70, null, null)
+        }
 
-    public Class348_Sub42_Sub16_Sub2() {
-        /* empty */
+        @JvmStatic
+        fun method3265(i: Int, class348: Class348?, class348_0_: Class348?) {
+            try {
+                if (class348!!.aClass348_4295 != null) class348.method2715(27.toByte())
+                val i_1_ = -109 % ((6 - i) / 43)
+                anInt10462++
+                class348.aClass348_4295 = class348_0_!!.aClass348_4295
+                class348.aClass348_4294 = class348_0_
+                class348.aClass348_4295.aClass348_4294 = class348
+                class348.aClass348_4294.aClass348_4295 = class348
+            } catch (runtimeexception: RuntimeException) {
+                throw Class348_Sub17.method2929(runtimeexception, ("qh.K(" + i + ',' + (if (class348 != null) "{...}" else "null") + ',' + (if (class348_0_ != null) "{...}" else "null") + ')'))
+            }
+        }
     }
 }

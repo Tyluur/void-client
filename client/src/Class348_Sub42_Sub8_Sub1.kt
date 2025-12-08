@@ -1,24 +1,19 @@
-/* Class348_Sub42_Sub8_Sub1 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import java.lang.ref.SoftReference
 
-import java.lang.ref.SoftReference;
+class Class348_Sub42_Sub8_Sub1 internal constructor(`object`: Any?, i: Int) : Class348_Sub42_Sub8(i) {
+    private val aSoftReference10428: SoftReference<*>
 
-public final class Class348_Sub42_Sub8_Sub1 extends Class348_Sub42_Sub8 {
-    private final SoftReference aSoftReference10428;
-
-    final boolean method3195(int i) {
-        if (i != -4) method3193(-41);
-        return true;
+    override fun method3195(i: Int): Boolean {
+        if (i != -4) method3193(-41)
+        return true
     }
 
-    final Object method3193(int i) {
-        if (i <= 75) return null;
-        return aSoftReference10428.get();
+    override fun method3193(i: Int): Any? {
+        if (i <= 75) return null
+        return aSoftReference10428.get()
     }
 
-    Class348_Sub42_Sub8_Sub1(Object object, int i) {
-        super(i);
-        aSoftReference10428 = new SoftReference(object);
+    init {
+        aSoftReference10428 = SoftReference<Any?>(`object`)
     }
 }
