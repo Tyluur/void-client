@@ -26,7 +26,7 @@ class Class239_Sub4 : Class239 {
         return this.aClass348_Sub51_3136.method3422(674) == Class10.aClass230_186
     }
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     override fun method1710(i: Int): Int {
         if (i != 20014) aClass114_5883 = null
@@ -48,7 +48,7 @@ class Class239_Sub4 : Class239 {
         return 3
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     companion object {
         @JvmField

@@ -11,9 +11,9 @@ class Class239_Sub14 : Class239 {
         if (this.anInt3138 < 0 || this.anInt3138 > 2) this.anInt3138 = method1710(20014)
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     override fun method1712(i: Int, i_8_: Int) {
         this.anInt3138 = i_8_

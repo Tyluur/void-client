@@ -12,7 +12,7 @@ class Class239_Sub23 : Class239 {
         return 2
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     override fun method1716(bool: Boolean) {
         if (bool == false) {
@@ -47,7 +47,7 @@ class Class239_Sub23 : Class239 {
         val i_4_ = 7 % ((82 - i) / 35)
     }
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     companion object {
         @JvmField

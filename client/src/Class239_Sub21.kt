@@ -30,7 +30,7 @@ class Class239_Sub21 : Class239 {
         return 1
     }
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     override fun method1716(bool: Boolean) {
         if (this.aClass348_Sub51_3136.method3425(-112)) this.anInt3138 = 0
@@ -39,7 +39,7 @@ class Class239_Sub21 : Class239 {
         if (this.anInt3138 != 1 && this.anInt3138 != 0) this.anInt3138 = method1710(20014)
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     fun method1812(i: Int): Int {
         if (i != -32350) anIntArray6062 = null

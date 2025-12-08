@@ -15,9 +15,9 @@ class Class239_Sub8 : Class239 {
         return this.anInt3138
     }
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     override fun method1712(i: Int, i_7_: Int) {
         val i_8_ = -87 / ((i - 82) / 35)

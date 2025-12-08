@@ -20,9 +20,9 @@ class Class239_Sub5 : Class239 {
         return this.anInt3138
     }
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     override fun method1714(i: Int, i_13_: Int): Int {
         if (i != 3) anInt5891 = -34

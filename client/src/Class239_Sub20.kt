@@ -15,7 +15,7 @@ class Class239_Sub20 : Class239 {
         return 1
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     fun method1806(i: Int): Boolean {
         if (i < 85) method1714(-53, -119)
@@ -23,7 +23,7 @@ class Class239_Sub20 : Class239 {
         return Class348.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271.method1829(-32350))
     }
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     fun method1808(i: Int): Int {
         anInt6053++

@@ -22,7 +22,7 @@ class Class239_Sub13 : Class239 {
         return 1
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     override fun method1712(i: Int, i_1_: Int) {
         anInt5977++
@@ -36,7 +36,7 @@ class Class239_Sub13 : Class239 {
         return 1
     }
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     companion object {
         @JvmField

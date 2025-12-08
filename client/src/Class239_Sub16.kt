@@ -22,7 +22,7 @@ class Class239_Sub16 : Class239 {
         return this.anInt3138
     }
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     override fun method1712(i: Int, i_6_: Int) {
         anInt6011++
@@ -36,7 +36,7 @@ class Class239_Sub16 : Class239 {
         return true
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     override fun method1710(i: Int): Int {
         if (i != 20014) method1789(40)

@@ -7,7 +7,7 @@ class Class239_Sub24 : Class239 {
         anInt6085++
     }
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     fun method1820(i: Int): Int {
         if (i != -32350) return -43
@@ -48,7 +48,7 @@ class Class239_Sub24 : Class239 {
         return false
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     companion object {
         @JvmField

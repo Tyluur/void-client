@@ -15,7 +15,7 @@ class Class239_Sub1 : Class239 {
         if (bool == false) anInt5846++
     }
 
-    internal constructor(class348_sub51: Class348_Sub51?) : super(class348_sub51)
+    internal constructor(class348_sub51: Class348_Sub51) : super(class348_sub51)
 
     override fun method1714(i: Int, i_8_: Int): Int {
         if (i != 3) anInt5850 = 94
@@ -29,7 +29,7 @@ class Class239_Sub1 : Class239 {
         this.anInt3138 = i_9_
     }
 
-    internal constructor(i: Int, class348_sub51: Class348_Sub51?) : super(i, class348_sub51)
+    internal constructor(i: Int, class348_sub51: Class348_Sub51) : super(i, class348_sub51)
 
     override fun method1710(i: Int): Int {
         if (i != 20014) anInt5850 = -72
