@@ -52,7 +52,7 @@ final class Class55_Sub1 extends Class55 {
         anInt5268++;
     }
 
-    final int method516(byte i, byte[] is) throws IOException {
+    public final int method516(byte i, byte[] is) throws IOException {
         anInt5273++;
         if (anIntArray5269 == null) {
             if (!aClass45_5267.method420(-10499, anInt5272, 0)) return 0;

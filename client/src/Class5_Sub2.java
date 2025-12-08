@@ -81,14 +81,14 @@ final class Class5_Sub2 extends Class5 {
         return Class348_Sub6.anInt6637;
     }
 
-    final void method178(int i, boolean bool, byte i_16_, int i_17_) {
+    public final void method178(int i, boolean bool, byte i_16_, int i_17_) {
         Class348_Sub8.aHa6654.method3628(-2 + i, i_17_, 4 + this.aClass369_4635.anInt4971, 2 + this.aClass369_4635.anInt4963, (((Class369_Sub2) this.aClass369_4635).anInt8585), 0);
         anInt8360++;
         Class348_Sub8.aHa6654.method3628(i - 1, 1 + i_17_, this.aClass369_4635.anInt4971 - -2, this.aClass369_4635.anInt4963, 0, 0);
         if (i_16_ > -6) aClass114_8365 = null;
     }
 
-    final void method182(int i, int i_18_, int i_19_, boolean bool) {
+    public final void method182(int i, int i_18_, int i_19_, boolean bool) {
         anInt8355++;
         int i_20_ = -110 / ((-20 - i) / 57);
         int i_21_ = (this.method183(116) * this.aClass369_4635.anInt4971 / 10000);

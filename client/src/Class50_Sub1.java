@@ -22,7 +22,7 @@ final class Class50_Sub1 extends Class50 {
     static boolean[][] aBooleanArrayArray5225;
     static boolean aBoolean5226;
 
-    final void method455(int i, int i_0_, int i_1_) {
+    public final void method455(int i, int i_0_, int i_1_) {
         anInt5220++;
         if (i_1_ >= -98) aBoolean5221 = false;
         int i_2_ = anInt5214 * i >> 12;
@@ -48,12 +48,12 @@ final class Class50_Sub1 extends Class50 {
         anInt5212 = i_6_;
     }
 
-    final void method457(int i, int i_12_, int i_13_) {
+    public final void method457(int i, int i_12_, int i_13_) {
         anInt5211++;
         if (i_13_ >= -29) method460(-42);
     }
 
-    final void method456(int i, int i_14_, int i_15_) {
+    public final void method456(int i, int i_14_, int i_15_) {
         if (i <= 87) anInt5214 = -17;
         anInt5218++;
         int i_16_ = i_14_ * anInt5214 >> 12;

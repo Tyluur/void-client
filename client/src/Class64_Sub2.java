@@ -267,13 +267,13 @@ final class Class64_Sub2 extends Class64 {
         return bool_11_;
     }
 
-    final int na() {
+    public final int na() {
         anInt5523++;
         if (!aBoolean5477) method675(0);
         return anInt5510;
     }
 
-    final boolean NA() {
+    public final boolean NA() {
         anInt5430++;
         if (anIntArrayArray5413 == null) return false;
         for (int i = 0; anInt5497 > i; i++) {
@@ -287,16 +287,16 @@ final class Class64_Sub2 extends Class64 {
         return true;
     }
 
-    final void method622() {
+    public final void method622() {
         anInt5456++;
     }
 
-    final Class342[] method604() {
+    public final Class342[] method604() {
         anInt5449++;
         return aClass342Array5474;
     }
 
-    final void LA(int i) {
+    public final void LA(int i) {
         aShort5427 = (short) i;
         anInt5431++;
         method667(0);
@@ -321,7 +321,7 @@ final class Class64_Sub2 extends Class64 {
         ha_Sub2.method3743((byte) 6, Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144);
     }
 
-    final void VA(int i) {
+    public final void VA(int i) {
         anInt5479++;
         int i_18_ = Class70.anIntArray1207[i];
         int i_19_ = Class70.anIntArray1204[i];
@@ -334,7 +334,7 @@ final class Class64_Sub2 extends Class64 {
         aBoolean5477 = false;
     }
 
-    final boolean method628(int i, int i_22_, Class101 class101, boolean bool, int i_23_) {
+    public final boolean method628(int i, int i_22_, Class101 class101, boolean bool, int i_23_) {
         try {
             anInt5414++;
             return method662(i, i_23_, -1, 127, i_22_, bool, class101);
@@ -343,7 +343,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final r ba(r var_r) {
+    public final r ba(r var_r) {
         try {
             anInt5513++;
             if (anInt5475 == 0) return null;
@@ -383,7 +383,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final void wa() {
+    public final void wa() {
         anInt5484++;
         for (int i = 0; anInt5497 > i; i++) {
             anIntArray5511[i] = anIntArray5511[i] + 7 >> 4;
@@ -394,7 +394,7 @@ final class Class64_Sub2 extends Class64 {
         aBoolean5477 = false;
     }
 
-    final int EA() {
+    public final int EA() {
         anInt5408++;
         if (!aBoolean5477) method675(0);
         return anInt5509;
@@ -606,7 +606,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final void a(int i) {
+    public final void a(int i) {
         anInt5435++;
         int i_83_ = Class70.anIntArray1207[i];
         int i_84_ = Class70.anIntArray1204[i];
@@ -619,7 +619,7 @@ final class Class64_Sub2 extends Class64 {
         aBoolean5477 = false;
     }
 
-    final void FA(int i) {
+    public final void FA(int i) {
         anInt5488++;
         int i_87_ = Class70.anIntArray1207[i];
         int i_88_ = Class70.anIntArray1204[i];
@@ -632,12 +632,12 @@ final class Class64_Sub2 extends Class64 {
         aBoolean5477 = false;
     }
 
-    final int ua() {
+    public final int ua() {
         anInt5504++;
         return anInt5463;
     }
 
-    final int G() {
+    public final int G() {
         anInt5437++;
         if (!aBoolean5477) method675(0);
         return anInt5443;
@@ -653,12 +653,12 @@ final class Class64_Sub2 extends Class64 {
         if (aClass192_5485 != null) aClass192_5485.method1435((byte) -95);
     }
 
-    final Class129[] method619() {
+    public final Class129[] method619() {
         anInt5469++;
         return aClass129Array5457;
     }
 
-    final void P(int i, int i_91_, int i_92_, int i_93_) {
+    public final void P(int i, int i_91_, int i_92_, int i_93_) {
         anInt5480++;
         if (i == 0) {
             int i_94_ = 0;
@@ -788,7 +788,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final void O(int i, int i_120_, int i_121_) {
+    public final void O(int i, int i_120_, int i_121_) {
         for (int i_122_ = 0; anInt5433 > i_122_; i_122_++) {
             if (i != 128) anIntArray5511[i_122_] = i * anIntArray5511[i_122_] >> 7;
             if (i_120_ != 128) anIntArray5519[i_122_] = i_120_ * anIntArray5519[i_122_] >> 7;
@@ -839,7 +839,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final void k(int i) {
+    public final void k(int i) {
         anInt5490++;
         int i_140_ = Class70.anIntArray1207[i];
         int i_141_ = Class70.anIntArray1204[i];
@@ -892,7 +892,7 @@ final class Class64_Sub2 extends Class64 {
         return false;
     }
 
-    final void method610(Class101 class101, int i, boolean bool) {
+    public final void method610(Class101 class101, int i, boolean bool) {
         try {
             anInt5434++;
             if (aShortArray5494 != null) {
@@ -919,7 +919,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final void H(int i, int i_150_, int i_151_) {
+    public final void H(int i, int i_150_, int i_151_) {
         anInt5481++;
         for (int i_152_ = 0; anInt5433 > i_152_; i_152_++) {
             if (i != 0) anIntArray5511[i_152_] += i;
@@ -1158,18 +1158,18 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final int ma() {
+    public final int ma() {
         if (!aBoolean5477) method675(0);
         anInt5468++;
         return anInt5401;
     }
 
-    final int WA() {
+    public final int WA() {
         anInt5496++;
         return aShort5452;
     }
 
-    final void method620(Class101 class101) {
+    public final void method620(Class101 class101) {
         do {
             try {
                 anInt5444++;
@@ -1208,13 +1208,13 @@ final class Class64_Sub2 extends Class64 {
         } while (false);
     }
 
-    final int HA() {
+    public final int HA() {
         if (!aBoolean5477) method675(0);
         anInt5465++;
         return anInt5418;
     }
 
-    final void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_179_) {
+    public final void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_179_) {
         try {
             anInt5487++;
             if (anInt5475 != 0) {
@@ -1334,23 +1334,23 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final boolean r() {
+    public final boolean r() {
         anInt5422++;
         return aBoolean5502;
     }
 
-    final int da() {
+    public final int da() {
         anInt5409++;
         return aShort5427;
     }
 
-    final int RA() {
+    public final int RA() {
         if (!aBoolean5477) method675(0);
         anInt5489++;
         return anInt5467;
     }
 
-    final int fa() {
+    public final int fa() {
         anInt5526++;
         if (!aBoolean5477) method675(0);
         return anInt5461;
@@ -1362,7 +1362,7 @@ final class Class64_Sub2 extends Class64 {
         anInt5458++;
     }
 
-    final void method605(int i, int[] is, int i_212_, int i_213_, int i_214_, int i_215_, boolean bool) {
+    public final void method605(int i, int[] is, int i_212_, int i_213_, int i_214_, int i_215_, boolean bool) {
         try {
             anInt5498++;
             int i_216_ = is.length;
@@ -1654,7 +1654,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final void method615(Class101 class101, Class318_Sub3 class318_sub3, int i) {
+    public final void method615(Class101 class101, Class318_Sub3 class318_sub3, int i) {
         try {
             anInt5471++;
             if (anInt5475 != 0) {
@@ -1769,7 +1769,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final void s(int i) {
+    public final void s(int i) {
         anInt5445++;
         if (aClass290_5520 != null) aClass290_5520.aBoolean3709 = Class264.method2015(i, anInt5472, 7);
         if (aClass290_5460 != null) aClass290_5460.aBoolean3709 = Class183.method1379(4, anInt5472, i);
@@ -1787,13 +1787,13 @@ final class Class64_Sub2 extends Class64 {
         method663(262144);
     }
 
-    final int V() {
+    public final int V() {
         anInt5464++;
         if (!aBoolean5477) method675(0);
         return anInt5507;
     }
 
-    final boolean method618() {
+    public final boolean method618() {
         anInt5410++;
         if (aShortArray5423 == null) return true;
         for (int i = 0; i < aShortArray5423.length; i++) {
@@ -2301,7 +2301,7 @@ final class Class64_Sub2 extends Class64 {
         return i <= i_472_ || i <= i_467_ || i_466_ >= i;
     }
 
-    final void method612() {
+    public final void method612() {
         anInt5447++;
         if (anInt5475 > 0 && anInt5516 > 0) {
             method660(-98);
@@ -2342,7 +2342,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final boolean method623(int i, int i_478_, Class101 class101, boolean bool, int i_479_, int i_480_) {
+    public final boolean method623(int i, int i_478_, Class101 class101, boolean bool, int i_479_, int i_480_) {
         try {
             anInt5517++;
             return method662(i, i_479_, i_480_, 126, i_478_, bool, class101);
@@ -2365,7 +2365,7 @@ final class Class64_Sub2 extends Class64 {
         anInt5505++;
     }
 
-    final void method613(Class64 class64, int i, int i_483_, int i_484_, boolean bool) {
+    public final void method613(Class64 class64, int i, int i_483_, int i_484_, boolean bool) {
         try {
             anInt5417++;
             Class64_Sub2 class64_sub2_485_ = (Class64_Sub2) class64;
@@ -2504,7 +2504,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final void ia(short i, short i_528_) {
+    public final void ia(short i, short i_528_) {
         anInt5459++;
         for (int i_529_ = 0; anInt5478 > i_529_; i_529_++) {
             if (i == aShortArray5486[i_529_]) aShortArray5486[i_529_] = i_528_;
@@ -2519,7 +2519,7 @@ final class Class64_Sub2 extends Class64 {
         method670(-119);
     }
 
-    final Class64 method614(byte i, int i_531_, boolean bool) {
+    public final Class64 method614(byte i, int i_531_, boolean bool) {
         anInt5426++;
         Class64_Sub2 class64_sub2_532_;
         Class64_Sub2 class64_sub2_533_;
@@ -2542,7 +2542,7 @@ final class Class64_Sub2 extends Class64 {
         return method668(i != 0, class64_sub2_532_, class64_sub2_533_, i_531_, bool, 26794);
     }
 
-    final void p(int i, int i_534_, s var_s, s var_s_535_, int i_536_, int i_537_, int i_538_) {
+    public final void p(int i, int i_534_, s var_s, s var_s_535_, int i_536_, int i_537_, int i_538_) {
         try {
             anInt5501++;
             if (!aBoolean5477) method675(0);
@@ -2599,16 +2599,16 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final boolean F() {
+    public final boolean F() {
         anInt5446++;
         return aBoolean5428;
     }
 
-    final void method621() {
+    public final void method621() {
         anInt5451++;
     }
 
-    final void method624(int i, int i_560_, int i_561_, int i_562_) {
+    public final void method624(int i, int i_560_, int i_561_, int i_562_) {
         anInt5522++;
         for (int i_563_ = 0; anInt5478 > i_563_; i_563_++) {
             int i_564_ = 0xffff & aShortArray5486[i_563_];
@@ -2630,7 +2630,7 @@ final class Class64_Sub2 extends Class64 {
         method670(-107);
     }
 
-    final void v() {
+    public final void v() {
         anInt5425++;
         for (int i = 0; i < anInt5433; i++)
             anIntArray5429[i] = -anIntArray5429[i];
@@ -2647,7 +2647,7 @@ final class Class64_Sub2 extends Class64 {
         aBoolean5477 = false;
     }
 
-    final void aa(short i, short i_570_) {
+    public final void aa(short i, short i_570_) {
         anInt5403++;
         d var_d = aHa_Sub3_5419.aD4579;
         for (int i_571_ = 0; anInt5478 > i_571_; i_571_++) {
@@ -2680,7 +2680,7 @@ final class Class64_Sub2 extends Class64 {
         }
     }
 
-    final void C(int i) {
+    public final void C(int i) {
         anInt5448++;
         aShort5452 = (short) i;
         method670(-89);
@@ -2727,7 +2727,7 @@ final class Class64_Sub2 extends Class64 {
         if (i <= 11) method661((byte) -43);
     }
 
-    final void I(int i, int[] is, int i_590_, int i_591_, int i_592_, boolean bool, int i_593_, int[] is_594_) {
+    public final void I(int i, int[] is, int i_590_, int i_591_, int i_592_, boolean bool, int i_593_, int[] is_594_) {
         try {
             anInt5521++;
             int i_595_ = is.length;

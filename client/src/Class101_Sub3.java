@@ -44,7 +44,7 @@ final class Class101_Sub3 extends Class101 {
     float aFloat5784;
     static int anInt5785;
 
-    final void method902(int i) {
+    public final void method902(int i) {
         anInt5779++;
         this.aFloat5784 = 1.0F;
         this.aFloat5770 = this.aFloat5769 = Class348_Sub23.aFloatArray6867[0x3fff & i];
@@ -81,7 +81,7 @@ final class Class101_Sub3 extends Class101 {
         fs[3] = -(fs[0] * f_4_ + f_3_ * fs[1] + f_5_ * fs[2]);
     }
 
-    final void method891(int i, int i_9_, int i_10_) {
+    public final void method891(int i, int i_9_, int i_10_) {
         this.aFloat5751 += (float) i_10_;
         this.aFloat5772 += (float) i_9_;
         this.aFloat5747 += (float) i;
@@ -93,7 +93,7 @@ final class Class101_Sub3 extends Class101 {
         if (i <= 8) aClass326_5764 = null;
     }
 
-    final void method900(int i) {
+    public final void method900(int i) {
         anInt5763++;
         float f = Class348_Sub23.aFloatArray6867[0x3fff & i];
         float f_11_ = Class348_Sub23.aFloatArray6865[0x3fff & i];
@@ -134,14 +134,14 @@ final class Class101_Sub3 extends Class101 {
         int i_23_ = -88 / ((i_19_ - 6) / 39);
     }
 
-    final void method897(int i, int i_24_, int i_25_, int[] is) {
+    public final void method897(int i, int i_24_, int i_25_, int[] is) {
         anInt5767++;
         is[0] = (int) ((float) i_25_ * this.aFloat5781 + ((float) i * this.aFloat5770 + (float) i_24_ * this.aFloat5750) + this.aFloat5747);
         is[2] = (int) ((float) i_24_ * this.aFloat5754 + this.aFloat5756 * (float) i + this.aFloat5784 * (float) i_25_ + this.aFloat5751);
         is[1] = (int) (this.aFloat5772 + ((float) i_25_ * this.aFloat5762 + ((float) i * this.aFloat5761 + ((float) i_24_ * this.aFloat5769))));
     }
 
-    final void method894(int i, int i_26_, int i_27_) {
+    public final void method894(int i, int i_26_, int i_27_) {
         this.aFloat5751 = (float) i_27_;
         this.aFloat5747 = (float) i;
         this.aFloat5761 = this.aFloat5756 = this.aFloat5750 = this.aFloat5754 = this.aFloat5781 = this.aFloat5762 = 0.0F;
@@ -150,7 +150,7 @@ final class Class101_Sub3 extends Class101 {
         anInt5749++;
     }
 
-    final void method890(int[] is) {
+    public final void method890(int[] is) {
         anInt5775++;
         float f = (float) is[0] - this.aFloat5747;
         float f_28_ = -this.aFloat5772 + (float) is[1];
@@ -160,7 +160,7 @@ final class Class101_Sub3 extends Class101 {
         is[0] = (int) (this.aFloat5770 * f + this.aFloat5761 * f_28_ + f_29_ * this.aFloat5756);
     }
 
-    final void method903(int i, int i_30_, int i_31_, int i_32_, int i_33_, int i_34_) {
+    public final void method903(int i, int i_30_, int i_31_, int i_32_, int i_33_, int i_34_) {
         anInt5782++;
         float f = Class348_Sub23.aFloatArray6867[i_32_ & 0x3fff];
         float f_35_ = Class348_Sub23.aFloatArray6865[i_32_ & 0x3fff];
@@ -184,7 +184,7 @@ final class Class101_Sub3 extends Class101 {
         this.aFloat5772 = (-((float) i_31_ * this.aFloat5762) + (this.aFloat5761 * (float) -i - this.aFloat5769 * (float) i_30_));
     }
 
-    final void method908(int i) {
+    public final void method908(int i) {
         anInt5774++;
         float f = Class348_Sub23.aFloatArray6867[i & 0x3fff];
         float f_42_ = Class348_Sub23.aFloatArray6865[i & 0x3fff];
@@ -219,7 +219,7 @@ final class Class101_Sub3 extends Class101 {
         return Class288_Sub1.aFloatArray8575;
     }
 
-    final Class101 method907() {
+    public final Class101 method907() {
         anInt5748++;
         Class101_Sub3 class101_sub3_47_ = new Class101_Sub3();
         class101_sub3_47_.aFloat5747 = this.aFloat5747;
@@ -257,7 +257,7 @@ final class Class101_Sub3 extends Class101 {
         }
     }
 
-    final void method892(int i, int i_49_, int i_50_, int[] is) {
+    public final void method892(int i, int i_49_, int i_50_, int[] is) {
         i_49_ -= this.aFloat5772;
         anInt5773++;
         i_50_ -= this.aFloat5751;
@@ -273,7 +273,7 @@ final class Class101_Sub3 extends Class101 {
         return Class98.aClass348_Sub16_Sub3_1564;
     }
 
-    final void method898(Class101 class101) {
+    public final void method898(Class101 class101) {
         anInt5758++;
         Class101_Sub3 class101_sub3_51_ = (Class101_Sub3) class101;
         this.aFloat5751 = class101_sub3_51_.aFloat5751;
@@ -290,7 +290,7 @@ final class Class101_Sub3 extends Class101 {
         this.aFloat5750 = class101_sub3_51_.aFloat5750;
     }
 
-    final void method895(int i) {
+    public final void method895(int i) {
         anInt5780++;
         this.aFloat5769 = 1.0F;
         this.aFloat5770 = this.aFloat5784 = Class348_Sub23.aFloatArray6867[0x3fff & i];
@@ -299,7 +299,7 @@ final class Class101_Sub3 extends Class101 {
         this.aFloat5750 = this.aFloat5747 = this.aFloat5761 = this.aFloat5762 = this.aFloat5772 = this.aFloat5754 = this.aFloat5751 = 0.0F;
     }
 
-    final void method899(int i) {
+    public final void method899(int i) {
         anInt5757++;
         this.aFloat5770 = 1.0F;
         this.aFloat5769 = this.aFloat5784 = Class348_Sub23.aFloatArray6867[0x3fff & i];
@@ -340,13 +340,13 @@ final class Class101_Sub3 extends Class101 {
         }
     }
 
-    final void method910() {
+    public final void method910() {
         anInt5759++;
         this.aFloat5770 = this.aFloat5769 = this.aFloat5784 = 1.0F;
         this.aFloat5761 = this.aFloat5756 = this.aFloat5750 = this.aFloat5754 = this.aFloat5781 = this.aFloat5762 = this.aFloat5747 = this.aFloat5772 = this.aFloat5751 = 0.0F;
     }
 
-    final void method896(int i) {
+    public final void method896(int i) {
         anInt5766++;
         float f = Class348_Sub23.aFloatArray6867[i & 0x3fff];
         float f_62_ = Class348_Sub23.aFloatArray6865[i & 0x3fff];
@@ -415,7 +415,7 @@ final class Class101_Sub3 extends Class101 {
         method910();
     }
 
-    final void method905(int i, int i_68_, int i_69_, int[] is) {
+    public final void method905(int i, int i_68_, int i_69_, int[] is) {
         anInt5753++;
         is[1] = (int) ((float) i_69_ * this.aFloat5762 + ((float) i_68_ * this.aFloat5769 + this.aFloat5761 * (float) i));
         is[2] = (int) (this.aFloat5754 * (float) i_68_ + this.aFloat5756 * (float) i + (float) i_69_ * this.aFloat5784);

@@ -205,7 +205,7 @@ class Class5_Sub1 extends Class5 {
         return false;
     }
 
-    final void method178(int i, boolean bool, byte i_27_, int i_28_) {
+    public final void method178(int i, boolean bool, byte i_27_, int i_28_) {
         if (bool) {
             int[] is = new int[4];
             Class348_Sub8.aHa6654.K(is);
@@ -238,7 +238,7 @@ class Class5_Sub1 extends Class5 {
         aClass221_8344 = null;
     }
 
-    final void method182(int i, int i_35_, int i_36_, boolean bool) {
+    public final void method182(int i, int i_35_, int i_36_, boolean bool) {
         int i_37_ = -45 / ((-20 - i) / 57);
         anInt8336++;
         int i_38_ = aClass105_8342.method966() + i_36_;

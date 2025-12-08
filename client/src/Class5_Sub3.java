@@ -16,7 +16,7 @@ final class Class5_Sub3 extends Class5 {
     static int anInt8376;
     static int anInt8377;
 
-    final void method178(int i, boolean bool, byte i_0_, int i_1_) {
+    public final void method178(int i, boolean bool, byte i_0_, int i_1_) {
         if (i_0_ >= -6) method202(-4, null);
         anInt8376++;
         Class348_Sub8.aHa6654.method3628(-2 + i, i_1_, 4 + this.aClass369_4635.anInt4971, this.aClass369_4635.anInt4963 + 2, (((Class369_Sub1) this.aClass369_4635).anInt8580), 0);
@@ -116,7 +116,7 @@ final class Class5_Sub3 extends Class5 {
         }
     }
 
-    final void method182(int i, int i_8_, int i_9_, boolean bool) {
+    public final void method182(int i, int i_8_, int i_9_, boolean bool) {
         anInt8367++;
         int i_10_ = (this.method183(48) * this.aClass369_4635.anInt4971 / 10000);
         int[] is = new int[4];

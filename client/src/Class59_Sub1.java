@@ -36,7 +36,7 @@ class Class59_Sub1 extends Class59 {
         aByteArray5296[i] = i_0_;
     }
 
-    final void method543(boolean bool) {
+    public final void method543(boolean bool) {
         anInt5287 = 0;
         if (bool != true) method555(false, -53);
         anInt5290 = 0;
@@ -119,7 +119,7 @@ class Class59_Sub1 extends Class59 {
         return false;
     }
 
-    final void method546(int i, int i_40_, int i_41_) {
+    public final void method546(int i, int i_40_, int i_41_) {
         if (i_41_ == -2) {
             if (i_40_ == 0) {
                 anInt5280 = -(i >= 0 ? i : -i) + anInt5278;
@@ -166,7 +166,7 @@ class Class59_Sub1 extends Class59 {
         }
     }
 
-    final void method541(int i) {
+    public final void method541(int i) {
         anInt5285 = anInt5279;
         anInt5290 >>= 4;
         anInt5295++;

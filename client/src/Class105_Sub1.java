@@ -38,12 +38,12 @@ final class Class105_Sub1 extends Class105 {
     static int anInt8422;
     static int anInt8423;
 
-    final int method980() {
+    public final int method980() {
         anInt8402++;
         return anInt8417 + (anInt8419 + anInt8397);
     }
 
-    final void method985(int i, int i_0_, int i_1_, int i_2_) {
+    public final void method985(int i, int i_0_, int i_1_, int i_2_) {
         anInt8413++;
         anInt8419 = i_0_;
         anInt8397 = i_2_;
@@ -66,12 +66,12 @@ final class Class105_Sub1 extends Class105 {
         return new Class369_Sub2(class369.aClass221_4968, class369.aClass341_4973, class369.anInt4970, class369.anInt4959, class369.anInt4971, class369.anInt4963, class369.anInt4966, class369.anInt4965, class369.anInt4961, i_8_, i_9_);
     }
 
-    final int method966() {
+    public final int method966() {
         anInt8399++;
         return anInt8416 + anInt8400 + anInt8411;
     }
 
-    final int method969() {
+    public final int method969() {
         anInt8404++;
         return anInt8417;
     }
@@ -90,7 +90,7 @@ final class Class105_Sub1 extends Class105 {
         return class361;
     }
 
-    final void method962(float f, float f_12_, float f_13_, float f_14_, float f_15_, float f_16_, int i, int i_17_, int i_18_, int i_19_) {
+    public final void method962(float f, float f_12_, float f_13_, float f_14_, float f_15_, float f_16_, int i, int i_17_, int i_18_, int i_19_) {
         anInt8393++;
         Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-114);
         Class101_Sub2 class101_sub2_20_ = aHa_Sub3_8407.method3820(false);
@@ -135,7 +135,7 @@ final class Class105_Sub1 extends Class105 {
         aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
     }
 
-    final void method965(int i, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_, int i_40_) {
+    public final void method965(int i, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_, int i_40_) {
         anInt8423++;
         Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-80);
         Class101_Sub2 class101_sub2_41_ = aHa_Sub3_8407.method3820(false);
@@ -262,7 +262,7 @@ final class Class105_Sub1 extends Class105 {
         aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
     }
 
-    final void method983(float f, float f_66_, float f_67_, float f_68_, float f_69_, float f_70_, int i, aa var_aa, int i_71_, int i_72_) {
+    public final void method983(float f, float f_66_, float f_67_, float f_68_, float f_69_, float f_70_, int i, aa var_aa, int i_71_, int i_72_) {
         anInt8390++;
         Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-121);
         Class101_Sub2 class101_sub2_73_ = aHa_Sub3_8407.method3820(false);
@@ -303,7 +303,7 @@ final class Class105_Sub1 extends Class105 {
         aHa_Sub3_8407.method3879(-8629);
     }
 
-    final void method968(int i, int i_77_, int i_78_) {
+    public final void method968(int i, int i_77_, int i_78_) {
         anInt8406++;
         int[] is = aHa_Sub3_8407.na(i, i_77_, anInt8411, anInt8417);
         int[] is_79_ = new int[anInt8417 * anInt8411];
@@ -343,7 +343,7 @@ final class Class105_Sub1 extends Class105 {
         return (i_93_ & 0x37) == 0 && Class273.method2056(i, 120, i_93_);
     }
 
-    final void method982(int i, int i_94_, int i_95_, int i_96_, int i_97_, int i_98_, int i_99_, int i_100_) {
+    public final void method982(int i, int i_94_, int i_95_, int i_96_, int i_97_, int i_98_, int i_99_, int i_100_) {
         anInt8395++;
         Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-95);
         Class101_Sub2 class101_sub2_101_ = aHa_Sub3_8407.method3820(false);
@@ -372,7 +372,7 @@ final class Class105_Sub1 extends Class105 {
         aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
     }
 
-    final void method984(int[] is) {
+    public final void method984(int[] is) {
         is[0] = anInt8400;
         is[1] = anInt8419;
         anInt8421++;
@@ -380,7 +380,7 @@ final class Class105_Sub1 extends Class105 {
         is[2] = anInt8416;
     }
 
-    final void method964(int i, int i_102_, int i_103_, int i_104_, int i_105_) {
+    public final void method964(int i, int i_102_, int i_103_, int i_104_, int i_105_) {
         anInt8409++;
         Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-92);
         Class101_Sub2 class101_sub2_106_ = aHa_Sub3_8407.method3820(false);
@@ -405,12 +405,12 @@ final class Class105_Sub1 extends Class105 {
         aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
     }
 
-    final int method971() {
+    public final int method971() {
         anInt8420++;
         return anInt8411;
     }
 
-    final void method979(int i, int i_107_, int i_108_, int i_109_, int i_110_, int i_111_) {
+    public final void method979(int i, int i_107_, int i_108_, int i_109_, int i_110_, int i_111_) {
         anInt8392++;
         int[] is = aHa_Sub3_8407.na(i_110_, i_111_, i_108_, i_109_);
         if (is != null) {
@@ -420,7 +420,7 @@ final class Class105_Sub1 extends Class105 {
         }
     }
 
-    final void method963(int i, int i_113_, aa var_aa, int i_114_, int i_115_) {
+    public final void method963(int i, int i_113_, aa var_aa, int i_114_, int i_115_) {
         anInt8414++;
         aa_Sub2 var_aa_Sub2 = (aa_Sub2) var_aa;
         i_113_ += anInt8419;

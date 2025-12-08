@@ -14,12 +14,12 @@ final class Class50_Sub4 extends Class50 {
     static int anInt5263;
     private int anInt5264;
 
-    final void method455(int i, int i_0_, int i_1_) {
+    public final void method455(int i, int i_0_, int i_1_) {
         anInt5256++;
         if (i_1_ >= -98) method472(-91, null);
     }
 
-    final void method457(int i, int i_2_, int i_3_) {
+    public final void method457(int i, int i_2_, int i_3_) {
         anInt5261++;
         int i_4_ = i_2_ * anInt5255 >> 12;
         if (i_3_ >= -29) anInt5264 = 119;
@@ -33,7 +33,7 @@ final class Class50_Sub4 extends Class50 {
         if (i == -30065) aClass47_5262 = null;
     }
 
-    final void method456(int i, int i_8_, int i_9_) {
+    public final void method456(int i, int i_8_, int i_9_) {
         if (i < 87) anInt5264 = 33;
         anInt5260++;
     }

@@ -43,7 +43,7 @@ final class Class105_Sub2 extends Class105 {
         return '\0';
     }
 
-    final void method962(float f, float f_0_, float f_1_, float f_2_, float f_3_, float f_4_, int i, int i_5_, int i_6_, int i_7_) {
+    public final void method962(float f, float f_0_, float f_1_, float f_2_, float f_3_, float f_4_, int i, int i_5_, int i_6_, int i_7_) {
         anInt8435++;
         if (aBoolean8427) {
             float f_8_ = (float) method966();
@@ -87,12 +87,12 @@ final class Class105_Sub2 extends Class105 {
         OpenGL.glEnd();
     }
 
-    final int method969() {
+    public final int method969() {
         anInt8439++;
         return aClass258_Sub3_Sub1_8434.anInt9939;
     }
 
-    final void method968(int i, int i_24_, int i_25_) {
+    public final void method968(int i, int i_24_, int i_25_) {
         anInt8438++;
         OpenGL.glPixelTransferf(3348, 0.5F);
         OpenGL.glPixelTransferf(3349, 0.499F);
@@ -110,7 +110,7 @@ final class Class105_Sub2 extends Class105 {
         OpenGL.glPixelTransferf(3355, 0.0F);
     }
 
-    final void method984(int[] is) {
+    public final void method984(int[] is) {
         is[1] = anInt8446;
         anInt8445++;
         is[3] = anInt8432;
@@ -118,17 +118,17 @@ final class Class105_Sub2 extends Class105 {
         is[2] = anInt8449;
     }
 
-    final int method980() {
+    public final int method980() {
         anInt8433++;
         return (anInt8446 + aClass258_Sub3_Sub1_8434.anInt9939 + anInt8432);
     }
 
-    final void method979(int i, int i_26_, int i_27_, int i_28_, int i_29_, int i_30_) {
+    public final void method979(int i, int i_26_, int i_27_, int i_28_, int i_29_, int i_30_) {
         anInt8436++;
         aClass258_Sub3_Sub1_8434.method1967(i, i_28_, i_30_, i_26_, i_29_, (byte) -120, i_27_);
     }
 
-    final void method963(int i, int i_31_, aa var_aa, int i_32_, int i_33_) {
+    public final void method963(int i, int i_31_, aa var_aa, int i_32_, int i_33_) {
         anInt8424++;
         aa_Sub1 var_aa_Sub1 = (aa_Sub1) var_aa;
         Class258_Sub3_Sub1 class258_sub3_sub1 = var_aa_Sub1.aClass258_Sub3_Sub1_5193;
@@ -172,7 +172,7 @@ final class Class105_Sub2 extends Class105 {
         aHa_Sub2_8430.method3738(-15039, 0);
     }
 
-    final void method985(int i, int i_41_, int i_42_, int i_43_) {
+    public final void method985(int i, int i_41_, int i_42_, int i_43_) {
         anInt8447 = i;
         anInt8449 = i_42_;
         anInt8446 = i_41_;
@@ -194,7 +194,7 @@ final class Class105_Sub2 extends Class105 {
         }
     }
 
-    final void method983(float f, float f_44_, float f_45_, float f_46_, float f_47_, float f_48_, int i, aa var_aa, int i_49_, int i_50_) {
+    public final void method983(float f, float f_44_, float f_45_, float f_46_, float f_47_, float f_48_, int i, aa var_aa, int i_49_, int i_50_) {
         anInt8448++;
         Class258_Sub3_Sub1 class258_sub3_sub1 = ((aa_Sub1) var_aa).aClass258_Sub3_Sub1_5193;
         if (aBoolean8427) {
@@ -253,12 +253,12 @@ final class Class105_Sub2 extends Class105 {
         aHa_Sub2_8430.method3738(-15039, 0);
     }
 
-    final int method966() {
+    public final int method966() {
         anInt8440++;
         return (anInt8447 + aClass258_Sub3_Sub1_8434.anInt9940 - -anInt8449);
     }
 
-    final void method964(int i, int i_69_, int i_70_, int i_71_, int i_72_) {
+    public final void method964(int i, int i_69_, int i_70_, int i_71_, int i_72_) {
         aClass258_Sub3_Sub1_8434.method1957(9728, false);
         anInt8425++;
         aHa_Sub2_8430.method3792(121);
@@ -320,7 +320,7 @@ final class Class105_Sub2 extends Class105 {
         } else aHa_Sub2_8430.method3749(0.0F, 1.0F, 0.5F, (byte) 50, 0.5F);
     }
 
-    final void method965(int i, int i_74_, int i_75_, int i_76_, int i_77_, int i_78_, int i_79_) {
+    public final void method965(int i, int i_74_, int i_75_, int i_76_, int i_77_, int i_78_, int i_79_) {
         anInt8442++;
         int i_80_ = i_75_ + i;
         int i_81_ = i_76_ + i_74_;
@@ -411,12 +411,12 @@ final class Class105_Sub2 extends Class105 {
         }
     }
 
-    final int method971() {
+    public final int method971() {
         anInt8437++;
         return aClass258_Sub3_Sub1_8434.anInt9940;
     }
 
-    final void method982(int i, int i_92_, int i_93_, int i_94_, int i_95_, int i_96_, int i_97_, int i_98_) {
+    public final void method982(int i, int i_92_, int i_93_, int i_94_, int i_95_, int i_96_, int i_97_, int i_98_) {
         anInt8443++;
         aClass258_Sub3_Sub1_8434.method1957(9728, (0x1 & i_98_) != 0);
         aHa_Sub2_8430.method3792(103);

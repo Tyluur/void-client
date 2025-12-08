@@ -113,7 +113,7 @@ final class Class64_Sub1 extends Class64 {
         aBoolean5323 = false;
     }
 
-    final int EA() {
+    public final int EA() {
         if (!aBoolean5323) method655();
         return aShort5365;
     }
@@ -351,11 +351,11 @@ final class Class64_Sub1 extends Class64 {
         } else method657(bool);
     }
 
-    final Class129[] method619() {
+    public final Class129[] method619() {
         return aClass129Array5322;
     }
 
-    final int V() {
+    public final int V() {
         if (!aBoolean5323) method655();
         return aShort5395;
     }
@@ -382,16 +382,16 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void method615(Class101 class101, Class318_Sub3 class318_sub3, int i) {
+    public final void method615(Class101 class101, Class318_Sub3 class318_sub3, int i) {
         method654(class101, class318_sub3, -1, i);
     }
 
-    final int HA() {
+    public final int HA() {
         if (!aBoolean5323) method655();
         return aShort5352;
     }
 
-    final void method605(int i, int[] is, int i_44_, int i_45_, int i_46_, int i_47_, boolean bool) {
+    public final void method605(int i, int[] is, int i_44_, int i_45_, int i_46_, int i_47_, boolean bool) {
         int i_48_ = is.length;
         if (i == 0) {
             i_44_ <<= 4;
@@ -641,7 +641,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void FA(int i) {
+    public final void FA(int i) {
         if ((anInt5316 & 0x6) != 6) throw new IllegalStateException();
         int i_121_ = Class70.anIntArray1207[i];
         int i_122_ = Class70.anIntArray1204[i];
@@ -655,7 +655,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void method622() {
+    public final void method622() {
         if (aHa_Sub1_5353.anInt7485 > 1) {
             synchronized (this) {
                 while (this.aBoolean1124) {
@@ -670,12 +670,12 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final int G() {
+    public final int G() {
         if (!aBoolean5323) method655();
         return aShort5331;
     }
 
-    final void I(int i, int[] is, int i_125_, int i_126_, int i_127_, boolean bool, int i_128_, int[] is_129_) {
+    public final void I(int i, int[] is, int i_125_, int i_126_, int i_127_, boolean bool, int i_128_, int[] is_129_) {
         int i_130_ = is.length;
         if (i == 0) {
             i_125_ <<= 4;
@@ -1115,7 +1115,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void wa() {
+    public final void wa() {
         if (aBoolean5372) {
             for (int i = 0; i < anInt5340; i++) {
                 anIntArray5356[i] = anIntArray5356[i] + 7 >> 4;
@@ -1131,7 +1131,7 @@ final class Class64_Sub1 extends Class64 {
         aBoolean5323 = false;
     }
 
-    final int fa() {
+    public final int fa() {
         if (!aBoolean5323) method655();
         return aShort5329;
     }
@@ -1148,7 +1148,7 @@ final class Class64_Sub1 extends Class64 {
         return anIntArray5400[i] != -1;
     }
 
-    final int da() {
+    public final int da() {
         return anInt5349;
     }
 
@@ -1163,7 +1163,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final boolean method618() {
+    public final boolean method618() {
         if (aShortArray5388 == null) return true;
         for (int i = 0; i < aShortArray5388.length; i++) {
             if (aShortArray5388[i] != -1 && !aHa_Sub1_5353.method3725(aShortArray5388[i])) return false;
@@ -1171,7 +1171,7 @@ final class Class64_Sub1 extends Class64 {
         return true;
     }
 
-    final void method620(Class101 class101) {
+    public final void method620(Class101 class101) {
         Class101_Sub1 class101_sub1 = (Class101_Sub1) class101;
         if (aClass129Array5322 != null) {
             for (int i = 0; i < aClass129Array5322.length; i++) {
@@ -1226,7 +1226,7 @@ final class Class64_Sub1 extends Class64 {
         anInt5354 = 2;
     }
 
-    final void k(int i) {
+    public final void k(int i) {
         if ((anInt5316 & 0xd) != 13) throw new IllegalStateException();
         if (aClass360Array5360 != null) {
             if (i == 4096) method653();
@@ -1267,7 +1267,7 @@ final class Class64_Sub1 extends Class64 {
         } else a(i);
     }
 
-    final void method610(Class101 class101, int i, boolean bool) {
+    public final void method610(Class101 class101, int i, boolean bool) {
         if (aShortArray5333 != null) {
             int[] is = new int[3];
             for (int i_301_ = 0; i_301_ < anInt5387; i_301_++) {
@@ -1282,7 +1282,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void method612() {
+    public final void method612() {
         /* empty */
     }
 
@@ -1344,11 +1344,11 @@ final class Class64_Sub1 extends Class64 {
         return i_307_;
     }
 
-    final void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_316_) {
+    public final void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_316_) {
         method654(class101, class318_sub3, i, i_316_);
     }
 
-    final boolean NA() {
+    public final boolean NA() {
         if (anIntArrayArray5334 == null) return false;
         anInt5338 = 0;
         anInt5375 = 0;
@@ -1402,11 +1402,11 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final boolean F() {
+    public final boolean F() {
         return aBoolean5382;
     }
 
-    final void P(int i, int i_338_, int i_339_, int i_340_) {
+    public final void P(int i, int i_338_, int i_339_, int i_340_) {
         if (i == 0) {
             int i_341_ = 0;
             anInt5338 = 0;
@@ -1532,16 +1532,16 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final int na() {
+    public final int na() {
         if (!aBoolean5323) method655();
         return aShort5324;
     }
 
-    final r ba(r var_r) {
+    public final r ba(r var_r) {
         return null;
     }
 
-    final void p(int i, int i_367_, s var_s, s var_s_368_, int i_369_, int i_370_, int i_371_) {
+    public final void p(int i, int i_367_, s var_s, s var_s_368_, int i_369_, int i_370_, int i_371_) {
         if (i == 3) {
             if ((anInt5316 & 0x7) != 7) throw new IllegalStateException();
         } else if ((anInt5316 & 0x2) != 2) throw new IllegalStateException();
@@ -1705,7 +1705,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void C(int i) {
+    public final void C(int i) {
         if ((anInt5316 & 0x1000) != 4096) throw new IllegalStateException();
         anInt5344 = i;
         anInt5354 = 0;
@@ -1722,24 +1722,24 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final int RA() {
+    public final int RA() {
         if (!aBoolean5323) method655();
         return aShort5393;
     }
 
-    final boolean method623(int i, int i_474_, Class101 class101, boolean bool, int i_475_, int i_476_) {
+    public final boolean method623(int i, int i_474_, Class101 class101, boolean bool, int i_475_, int i_476_) {
         return method645(i, i_474_, class101, bool, i_475_, i_476_);
     }
 
-    final Class342[] method604() {
+    public final Class342[] method604() {
         return aClass342Array5335;
     }
 
-    final int WA() {
+    public final int WA() {
         return anInt5344;
     }
 
-    final void s(int i) {
+    public final void s(int i) {
         if (aHa_Sub1_5353.anInt7485 > 1) {
             synchronized (this) {
                 if ((anInt5316 & 0x10000) == 65536 && (i & 0x10000) == 0) method634(true);
@@ -1751,7 +1751,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void method621() {
+    public final void method621() {
         if (aHa_Sub1_5353.anInt7485 > 1) {
             synchronized (this) {
                 this.aBoolean1124 = false;
@@ -1760,7 +1760,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void method624(int i, int i_477_, int i_478_, int i_479_) {
+    public final void method624(int i, int i_477_, int i_478_, int i_479_) {
         if ((anInt5316 & 0x80000) != 524288) throw new IllegalStateException("FMT");
         for (int i_480_ = 0; i_480_ < anInt5351; i_480_++) {
             int i_481_ = aShortArray5311[i_480_] & 0xffff;
@@ -1782,11 +1782,11 @@ final class Class64_Sub1 extends Class64 {
         if (anInt5354 == 2) anInt5354 = 1;
     }
 
-    final boolean method628(int i, int i_486_, Class101 class101, boolean bool, int i_487_) {
+    public final boolean method628(int i, int i_486_, Class101 class101, boolean bool, int i_487_) {
         return method645(i, i_486_, class101, bool, i_487_, -1);
     }
 
-    final int ma() {
+    public final int ma() {
         if (!aBoolean5323) method655();
         return aShort5348;
     }
@@ -2054,13 +2054,13 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void LA(int i) {
+    public final void LA(int i) {
         if ((anInt5316 & 0x2000) != 8192) throw new IllegalStateException();
         anInt5349 = i;
         anInt5354 = 0;
     }
 
-    final void VA(int i) {
+    public final void VA(int i) {
         if ((anInt5316 & 0x3) != 3) throw new IllegalStateException();
         int i_574_ = Class70.anIntArray1207[i];
         int i_575_ = Class70.anIntArray1204[i];
@@ -2074,7 +2074,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void a(int i) {
+    public final void a(int i) {
         if ((anInt5316 & 0x5) != 5) throw new IllegalStateException();
         if (i == 4096) method644();
         else if (i == 8192) method651();
@@ -2093,7 +2093,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void aa(short i, short i_582_) {
+    public final void aa(short i, short i_582_) {
         if (aShortArray5388 != null) {
             if (!aBoolean5391 && i_582_ >= 0) {
                 Class12 class12 = aHa_Sub1_5353.aD4579.method3(i_582_ & 0xffff, -6662);
@@ -2105,7 +2105,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void method613(Class64 class64, int i, int i_584_, int i_585_, boolean bool) {
+    public final void method613(Class64 class64, int i, int i_584_, int i_585_, boolean bool) {
         Class64_Sub1 class64_sub1_586_ = (Class64_Sub1) class64;
         if ((anInt5316 & 0x10000) != 65536) throw new IllegalStateException("");
         if ((class64_sub1_586_.anInt5316 & 0x10000) != 65536) throw new IllegalStateException("");
@@ -2225,7 +2225,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void H(int i, int i_613_, int i_614_) {
+    public final void H(int i, int i_613_, int i_614_) {
         if (i != 0 && (anInt5316 & 0x1) != 1) throw new IllegalStateException();
         if (i_613_ != 0 && (anInt5316 & 0x2) != 2) throw new IllegalStateException();
         if (i_614_ != 0 && (anInt5316 & 0x4) != 4) throw new IllegalStateException();
@@ -2238,7 +2238,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void v() {
+    public final void v() {
         if ((anInt5316 & 0x10) != 16) throw new IllegalStateException();
         synchronized (this) {
             for (int i = 0; i < anInt5340; i++)
@@ -2325,7 +2325,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final void ia(short i, short i_626_) {
+    public final void ia(short i, short i_626_) {
         for (int i_627_ = 0; i_627_ < anInt5351; i_627_++) {
             if (aShortArray5311[i_627_] == i) aShortArray5311[i_627_] = i_626_;
         }
@@ -2664,7 +2664,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final boolean r() {
+    public final boolean r() {
         return aBoolean5391;
     }
 
@@ -2820,7 +2820,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final Class64 method614(byte i, int i_762_, boolean bool) {
+    public final Class64 method614(byte i, int i_762_, boolean bool) {
         method648(Thread.currentThread());
         Class64_Sub1 class64_sub1_763_;
         Class64_Sub1 class64_sub1_764_;
@@ -2843,7 +2843,7 @@ final class Class64_Sub1 extends Class64 {
         return method633(class64_sub1_764_, class64_sub1_763_, i_762_, i != 0, bool);
     }
 
-    final void O(int i, int i_765_, int i_766_) {
+    public final void O(int i, int i_765_, int i_766_) {
         if (i != 128 && (anInt5316 & 0x1) != 1) throw new IllegalStateException();
         if (i_765_ != 128 && (anInt5316 & 0x2) != 2) throw new IllegalStateException();
         if (i_766_ != 128 && (anInt5316 & 0x4) != 4) throw new IllegalStateException();
@@ -2857,7 +2857,7 @@ final class Class64_Sub1 extends Class64 {
         }
     }
 
-    final int ua() {
+    public final int ua() {
         return anInt5316;
     }
 

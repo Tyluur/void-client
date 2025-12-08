@@ -14,20 +14,20 @@ class Class59_Sub2 extends Class59 {
     private byte[] aByteArray5309;
     static int anInt5310;
 
-    final void method546(int i, int i_0_, int i_1_) {
+    public final void method546(int i, int i_0_, int i_1_) {
         if (i_1_ != -2) method543(false);
         anInt5302 += anIntArray5303[i_0_] * i >> 12;
         anInt5304++;
     }
 
-    final void method543(boolean bool) {
+    public final void method543(boolean bool) {
         anInt5307++;
         anInt5302 = 0;
         anInt5308 = 0;
         if (bool != true) anInt5302 = -121;
     }
 
-    final void method541(int i) {
+    public final void method541(int i) {
         anInt5302 = Math.abs(anInt5302);
         anInt5301++;
         if (anInt5302 >= 4096) anInt5302 = 4095;

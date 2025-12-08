@@ -9,7 +9,7 @@ final class j extends Class105 implements Interface19 {
 
     private final native void P(long l, int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_);
 
-    final void method964(int i, int i_6_, int i_7_, int i_8_, int i_9_) {
+    public final void method964(int i, int i_6_, int i_7_, int i_8_, int i_9_) {
         W(this.nativeid, i, i_6_, i_7_, i_8_, i_9_);
     }
 
@@ -21,11 +21,11 @@ final class j extends Class105 implements Interface19 {
 
     private final native int M(long l);
 
-    final void method963(int i, int i_25_, aa var_aa, int i_26_, int i_27_) {
+    public final void method963(int i, int i_25_, aa var_aa, int i_26_, int i_27_) {
         V(this.nativeid, i, i_25_, ((na) var_aa).nativeid, i_26_, i_27_);
     }
 
-    final void method984(int[] is) {
+    public final void method984(int[] is) {
         CA(this.nativeid, is);
     }
 
@@ -33,27 +33,27 @@ final class j extends Class105 implements Interface19 {
         R(this.nativeid, bool);
     }
 
-    final int method980() {
+    public final int method980() {
         return JA(this.nativeid);
     }
 
     private final native void EA(oa var_oa, int i, int i_28_);
 
-    final void method985(int i, int i_29_, int i_30_, int i_31_) {
+    public final void method985(int i, int i_29_, int i_30_, int i_31_) {
         A(this.nativeid, i, i_29_, i_30_, i_31_);
     }
 
     private final native void ma(oa var_oa, int[] is, byte[] is_32_, byte[] is_33_, int i, int i_34_, int i_35_, int i_36_);
 
-    final void method968(int i, int i_37_, int i_38_) {
+    public final void method968(int i, int i_37_, int i_38_) {
         N(this.nativeid, i, i_37_, i_38_);
     }
 
-    final void method983(float f, float f_39_, float f_40_, float f_41_, float f_42_, float f_43_, int i, aa var_aa, int i_44_, int i_45_) {
+    public final void method983(float f, float f_39_, float f_40_, float f_41_, float f_42_, float f_43_, int i, aa var_aa, int i_44_, int i_45_) {
         UA(this.nativeid, f, f_39_, f_40_, f_41_, f_42_, f_43_, i, ((na) var_aa).nativeid, i_44_, i_45_);
     }
 
-    final int method969() {
+    public final int method969() {
         return I(this.nativeid);
     }
 
@@ -61,11 +61,11 @@ final class j extends Class105 implements Interface19 {
 
     private final native void W(long l, int i, int i_46_, int i_47_, int i_48_, int i_49_);
 
-    final void method982(int i, int i_50_, int i_51_, int i_52_, int i_53_, int i_54_, int i_55_, int i_56_) {
+    public final void method982(int i, int i_50_, int i_51_, int i_52_, int i_53_, int i_54_, int i_55_, int i_56_) {
         RA(this.nativeid, i, i_50_, i_51_, i_52_, i_53_, i_54_, i_55_, i_56_);
     }
 
-    final int method971() {
+    public final int method971() {
         return M(this.nativeid);
     }
 
@@ -103,21 +103,21 @@ final class j extends Class105 implements Interface19 {
 
     private final native void ua(oa var_oa, int[] is, int i, int i_91_, int i_92_, int i_93_, boolean bool);
 
-    final void method979(int i, int i_94_, int i_95_, int i_96_, int i_97_, int i_98_) {
+    public final void method979(int i, int i_94_, int i_95_, int i_96_, int i_97_, int i_98_) {
         YA(this.nativeid, i, i_94_, i_95_, i_96_, i_97_, i_98_);
     }
 
     private final native void h(oa var_oa, int i, int i_99_, int i_100_, int i_101_, boolean bool);
 
-    final void method965(int i, int i_102_, int i_103_, int i_104_, int i_105_, int i_106_, int i_107_) {
+    public final void method965(int i, int i_102_, int i_103_, int i_104_, int i_105_, int i_106_, int i_107_) {
         P(this.nativeid, i, i_102_, i_103_, i_104_, i_105_, i_106_, i_107_);
     }
 
-    final int method966() {
+    public final int method966() {
         return wa(this.nativeid);
     }
 
-    final void method962(float f, float f_108_, float f_109_, float f_110_, float f_111_, float f_112_, int i, int i_113_, int i_114_, int i_115_) {
+    public final void method962(float f, float f_108_, float f_109_, float f_110_, float f_111_, float f_112_, int i, int i_113_, int i_114_, int i_115_) {
         b(this.nativeid, f, f_108_, f_109_, f_110_, f_111_, f_112_, i, i_113_, i_114_, i_115_);
     }
 

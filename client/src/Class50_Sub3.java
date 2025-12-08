@@ -61,7 +61,7 @@ final class Class50_Sub3 extends Class50 {
         return Class174.method1332(true, true, 10, string);
     }
 
-    final void method457(int i, int i_12_, int i_13_) {
+    public final void method457(int i, int i_12_, int i_13_) {
         anInt5254++;
         int i_14_ = anInt5246 * i_12_ >> 12;
         int i_15_ = anInt5250 * i >> 12;
@@ -87,7 +87,7 @@ final class Class50_Sub3 extends Class50 {
         anInt5237 = i_26_;
     }
 
-    final void method456(int i, int i_31_, int i_32_) {
+    public final void method456(int i, int i_31_, int i_32_) {
         anInt5244++;
         if (i < 87) anInt5247 = 18;
     }
@@ -107,7 +107,7 @@ final class Class50_Sub3 extends Class50 {
         return is_34_;
     }
 
-    final void method455(int i, int i_35_, int i_36_) {
+    public final void method455(int i, int i_35_, int i_36_) {
         anInt5240++;
         if (i_36_ >= -98) method470(null, (byte) -17);
     }

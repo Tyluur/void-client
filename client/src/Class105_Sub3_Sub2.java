@@ -6,15 +6,15 @@ final class Class105_Sub3_Sub2 extends Class105_Sub3 {
     private final byte[] aByteArray9934;
     private final int[] anIntArray9935;
 
-    final void method979(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_) {
+    public final void method979(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_) {
         throw new IllegalStateException();
     }
 
-    final void method968(int i, int i_5_, int i_6_) {
+    public final void method968(int i, int i_5_, int i_6_) {
         throw new IllegalStateException();
     }
 
-    final void method996(int i, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_) {
+    public final void method996(int i, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_) {
         if (i_9_ > 0 && i_10_ > 0) {
             int i_15_ = 0;
             int i_16_ = 0;
@@ -429,7 +429,7 @@ final class Class105_Sub3_Sub2 extends Class105_Sub3 {
         }
     }
 
-    final void method982(int i, int i_159_, int i_160_, int i_161_, int i_162_, int i_163_, int i_164_, int i_165_) {
+    public final void method982(int i, int i_159_, int i_160_, int i_161_, int i_162_, int i_163_, int i_164_, int i_165_) {
         if (this.aHa_Sub1_8460.method3716()) throw new IllegalStateException();
         if (i_160_ > 0 && i_161_ > 0) {
             int i_166_ = 0;
@@ -791,7 +791,7 @@ final class Class105_Sub3_Sub2 extends Class105_Sub3 {
         }
     }
 
-    final void method995(int[] is, int[] is_311_, int i, int i_312_) {
+    public final void method995(int[] is, int[] is_311_, int i, int i_312_) {
         int[] is_313_ = this.aHa_Sub1_8460.anIntArray7483;
         if (Class105_Sub3.anInt8481 == 0) {
             if (Class105_Sub3.anInt8450 == 0) {
@@ -1202,7 +1202,7 @@ final class Class105_Sub3_Sub2 extends Class105_Sub3 {
         anIntArray9935 = is_416_;
     }
 
-    final void method994(int i, int i_418_) {
+    public final void method994(int i, int i_418_) {
         int[] is = this.aHa_Sub1_8460.anIntArray7483;
         if (Class105_Sub3.anInt8481 == 0) {
             if (Class105_Sub3.anInt8450 == 0) {
@@ -2620,7 +2620,7 @@ final class Class105_Sub3_Sub2 extends Class105_Sub3 {
         }
     }
 
-    final void method963(int i, int i_1070_, aa var_aa, int i_1071_, int i_1072_) {
+    public final void method963(int i, int i_1070_, aa var_aa, int i_1071_, int i_1072_) {
         if (this.aHa_Sub1_8460.method3716()) throw new IllegalStateException();
         i += this.anInt8461;
         i_1070_ += this.anInt8464;
@@ -2703,7 +2703,7 @@ final class Class105_Sub3_Sub2 extends Class105_Sub3 {
         }
     }
 
-    final void method964(int i, int i_1096_, int i_1097_, int i_1098_, int i_1099_) {
+    public final void method964(int i, int i_1096_, int i_1097_, int i_1098_, int i_1099_) {
         if (this.aHa_Sub1_8460.method3716()) throw new IllegalStateException();
         int i_1100_ = this.aHa_Sub1_8460.anInt7477;
         i += this.anInt8461;

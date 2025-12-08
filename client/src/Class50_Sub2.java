@@ -13,7 +13,7 @@ final class Class50_Sub2 extends Class50 {
     static int anInt5234;
     static int anInt5235;
 
-    final void method455(int i, int i_0_, int i_1_) {
+    public final void method455(int i, int i_0_, int i_1_) {
         anInt5228++;
         int i_2_ = i * anInt5231 >> 12;
         int i_3_ = anInt5232 * i >> 12;
@@ -37,7 +37,7 @@ final class Class50_Sub2 extends Class50 {
         anInt5232 = i_7_;
     }
 
-    final void method457(int i, int i_12_, int i_13_) {
+    public final void method457(int i, int i_12_, int i_13_) {
         anInt5235++;
         int i_14_ = i_12_ * anInt5231 >> 12;
         if (i_13_ <= -29) {
@@ -48,7 +48,7 @@ final class Class50_Sub2 extends Class50 {
         }
     }
 
-    final void method456(int i, int i_18_, int i_19_) {
+    public final void method456(int i, int i_18_, int i_19_) {
         anInt5234++;
         int i_20_ = i_18_ * anInt5231 >> 12;
         int i_21_ = anInt5232 * i_18_ >> 12;

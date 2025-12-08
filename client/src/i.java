@@ -9,47 +9,47 @@ final class i extends Class64 implements Interface19 {
     Class129[] aClass129Array5119;
     private final ya aYa5120;
 
-    final native void C(int i);
+    public final native void C(int i);
 
-    final native void k(int i);
+    public final native void k(int i);
 
     public final native void w(boolean bool);
 
-    final native void O(int i, int i_0_, int i_1_);
+    public final native void O(int i, int i_0_, int i_1_);
 
-    final native void s(int i);
+    public final native void s(int i);
 
-    final native void LA(int i);
+    public final native void LA(int i);
 
-    final native int fa();
+    public final native int fa();
 
-    final native boolean NA();
+    public final native boolean NA();
 
-    final native boolean F();
+    public final native boolean F();
 
     final native void ZA(i var_i_2_, i var_i_3_, int i, boolean bool, boolean bool_4_);
 
-    final void method613(Class64 class64, int i, int i_5_, int i_6_, boolean bool) {
+    public final void method613(Class64 class64, int i, int i_5_, int i_6_, boolean bool) {
         anOa5117.method3973().method144(this, class64, i, i_5_, i_6_, bool);
     }
 
-    final native void aa(short i, short i_7_);
+    public final native void aa(short i, short i_7_);
 
-    final boolean method623(int i, int i_8_, Class101 class101, boolean bool, int i_9_, int i_10_) {
+    public final boolean method623(int i, int i_8_, Class101 class101, boolean bool, int i_9_, int i_10_) {
         return anOa5117.method3973().method143(this, i, i_8_, class101, bool, i_10_);
     }
 
-    final native int EA();
+    public final native int EA();
 
-    final Class129[] method619() {
+    public final Class129[] method619() {
         return this.aClass129Array5119;
     }
 
-    final native void wa();
+    public final native void wa();
 
-    final native void P(int i, int i_11_, int i_12_, int i_13_);
+    public final native void P(int i, int i_11_, int i_12_, int i_13_);
 
-    final void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_14_) {
+    public final void method608(Class101 class101, Class318_Sub3 class318_sub3, int i, int i_14_) {
         if (class318_sub3 == null) anOa5117.method3973().method149(this, class101, null, i, i_14_);
         else {
             oa.anIntArray5132[5] = 0;
@@ -63,15 +63,15 @@ final class i extends Class64 implements Interface19 {
         }
     }
 
-    final native void v();
+    public final native void v();
 
     private final native void l(long l, int i, int[] is, int i_15_, int i_16_, int i_17_, int i_18_, boolean bool);
 
-    final boolean method618() {
+    public final boolean method618() {
         return true;
     }
 
-    final void method621() {
+    public final void method621() {
         if (anOa5117.anInt5141 > 1) {
             synchronized (this) {
                 this.aBoolean1124 = false;
@@ -80,59 +80,59 @@ final class i extends Class64 implements Interface19 {
         }
     }
 
-    final native void VA(int i);
+    public final native void VA(int i);
 
-    final boolean method628(int i, int i_19_, Class101 class101, boolean bool, int i_20_) {
+    public final boolean method628(int i, int i_19_, Class101 class101, boolean bool, int i_20_) {
         return anOa5117.method3973().method146(this, i, i_19_, class101, bool);
     }
 
-    final Class64 method614(byte i, int i_21_, boolean bool) {
+    public final Class64 method614(byte i, int i_21_, boolean bool) {
         return anOa5117.method3973().method152(this, i, i_21_, bool);
     }
 
-    final native int na();
+    public final native int na();
 
-    final native int HA();
+    public final native int HA();
 
-    final void method612() {
+    public final void method612() {
         /* empty */
     }
 
-    final native void p(int i, int i_22_, s var_s, s var_s_23_, int i_24_, int i_25_, int i_26_);
+    public final native void p(int i, int i_22_, s var_s, s var_s_23_, int i_24_, int i_25_, int i_26_);
 
-    final native int V();
+    public final native int V();
 
-    final native int da();
+    public final native int da();
 
-    final void method605(int i, int[] is, int i_27_, int i_28_, int i_29_, int i_30_, boolean bool) {
+    public final void method605(int i, int[] is, int i_27_, int i_28_, int i_29_, int i_30_, boolean bool) {
         l(this.nativeid, i, is, i_27_, i_28_, i_29_, i_30_, bool);
     }
 
-    final native int G();
+    public final native int G();
 
-    final native int ma();
+    public final native int ma();
 
     private final native void R(oa var_oa, ya var_ya, int i, int i_31_, int[] is, int[] is_32_, int[] is_33_, int[] is_34_, short[] is_35_, int i_36_, short[] is_37_, short[] is_38_, short[] is_39_, byte[] is_40_, byte[] is_41_, byte[] is_42_, byte[] is_43_, short[] is_44_, short[] is_45_, int[] is_46_, byte i_47_, short[] is_48_, int i_49_, byte[] is_50_, short[] is_51_, short[] is_52_, short[] is_53_, int[] is_54_, int[] is_55_, int[] is_56_, byte[] is_57_, byte[] is_58_, int[] is_59_, int[] is_60_, int[] is_61_, int[] is_62_, int i_63_, int i_64_, int i_65_, int i_66_, int i_67_, int i_68_, int[] is_69_);
 
-    final native void FA(int i);
+    public final native void FA(int i);
 
-    final void method624(int i, int i_70_, int i_71_, int i_72_) {
+    public final void method624(int i, int i_70_, int i_71_, int i_72_) {
         /* empty */
     }
 
-    final native void ia(short i, short i_73_);
+    public final native void ia(short i, short i_73_);
 
     protected final void finalize() {
         if (this.nativeid != 0L) Class257.method1947(0, this);
     }
 
-    final native int WA();
+    public final native int WA();
 
-    final void method610(Class101 class101, int i, boolean bool) {
+    public final void method610(Class101 class101, int i, boolean bool) {
         A(((ja) class101).nativeid, i, bool);
     }
 
-    final void method622() {
+    public final void method622() {
         if (anOa5117.anInt5141 > 1) {
             synchronized (this) {
                 while (this.aBoolean1124) {
@@ -147,7 +147,7 @@ final class i extends Class64 implements Interface19 {
         }
     }
 
-    final void method615(Class101 class101, Class318_Sub3 class318_sub3, int i) {
+    public final void method615(Class101 class101, Class318_Sub3 class318_sub3, int i) {
         if (class318_sub3 == null) anOa5117.method3973().method145(this, class101, null, i);
         else {
             oa.anIntArray5132[5] = 0;
@@ -161,9 +161,9 @@ final class i extends Class64 implements Interface19 {
         }
     }
 
-    final native boolean r();
+    public final native boolean r();
 
-    final void method620(Class101 class101) {
+    public final void method620(Class101 class101) {
         method693(oa.anIntArray5140, class101);
         int i = 0;
         if (this.aClass129Array5119 != null) {
@@ -194,9 +194,9 @@ final class i extends Class64 implements Interface19 {
         }
     }
 
-    final native void a(int i);
+    public final native void a(int i);
 
-    final Class342[] method604() {
+    public final Class342[] method604() {
         return this.aClass342Array5118;
     }
 
@@ -204,9 +204,9 @@ final class i extends Class64 implements Interface19 {
         anOa5117.method3973().method151(this, is, class101);
     }
 
-    final native int ua();
+    public final native int ua();
 
-    final native void H(int i, int i_77_, int i_78_);
+    public final native void H(int i, int i_77_, int i_78_);
 
     i(oa var_oa, ya var_ya, Class124 class124, int i, int i_79_, int i_80_, int i_81_) {
         anOa5117 = var_oa;
@@ -247,7 +247,7 @@ final class i extends Class64 implements Interface19 {
 
     private final native void A(long l, int i, boolean bool);
 
-    final native r ba(r var_r);
+    public final native r ba(r var_r);
 
     private final native void oa(oa var_oa);
 
@@ -257,7 +257,7 @@ final class i extends Class64 implements Interface19 {
         oa(var_oa);
     }
 
-    final native int RA();
+    public final native int RA();
 
-    final native void I(int i, int[] is, int i_92_, int i_93_, int i_94_, boolean bool, int i_95_, int[] is_96_);
+    public final native void I(int i, int[] is, int i_92_, int i_93_, int i_94_, boolean bool, int i_95_, int[] is_96_);
 }

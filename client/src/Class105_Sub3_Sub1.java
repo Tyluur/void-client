@@ -5,7 +5,7 @@
 final class Class105_Sub3_Sub1 extends Class105_Sub3 {
     int[] anIntArray9933;
 
-    final void method994(int i, int i_0_) {
+    public final void method994(int i, int i_0_) {
         int[] is = this.aHa_Sub1_8460.anIntArray7483;
         if (Class105_Sub3.anInt8481 == 0) {
             if (Class105_Sub3.anInt8450 == 0) {
@@ -1351,7 +1351,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
         }
     }
 
-    final void method979(int i, int i_589_, int i_590_, int i_591_, int i_592_, int i_593_) {
+    public final void method979(int i, int i_589_, int i_590_, int i_591_, int i_592_, int i_593_) {
         int[] is = this.aHa_Sub1_8460.anIntArray7483;
         for (int i_594_ = 0; i_594_ < i_591_; i_594_++) {
             int i_595_ = (i_589_ + i_594_) * this.anInt8471 + i;
@@ -1361,7 +1361,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
         }
     }
 
-    final void method982(int i, int i_598_, int i_599_, int i_600_, int i_601_, int i_602_, int i_603_, int i_604_) {
+    public final void method982(int i, int i_598_, int i_599_, int i_600_, int i_601_, int i_602_, int i_603_, int i_604_) {
         if (this.aHa_Sub1_8460.method3716()) throw new IllegalStateException();
         if (i_599_ > 0 && i_600_ > 0) {
             int i_605_ = 0;
@@ -1714,7 +1714,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
         }
     }
 
-    final void method968(int i, int i_741_, int i_742_) {
+    public final void method968(int i, int i_741_, int i_742_) {
         throw new IllegalStateException("Can't capture alpha into a java_sprite_24");
     }
 
@@ -1744,7 +1744,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
         this.anIntArray9933 = is;
     }
 
-    final void method995(int[] is, int[] is_752_, int i, int i_753_) {
+    public final void method995(int[] is, int[] is_752_, int i, int i_753_) {
         int[] is_754_ = this.aHa_Sub1_8460.anIntArray7483;
         if (Class105_Sub3.anInt8481 == 0) {
             if (Class105_Sub3.anInt8450 == 0) {
@@ -2149,7 +2149,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
         }
     }
 
-    final void method963(int i, int i_857_, aa var_aa, int i_858_, int i_859_) {
+    public final void method963(int i, int i_857_, aa var_aa, int i_858_, int i_859_) {
         if (this.aHa_Sub1_8460.method3716()) throw new IllegalStateException();
         i += this.anInt8461;
         i_857_ += this.anInt8464;
@@ -2232,7 +2232,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
         }
     }
 
-    final void method964(int i, int i_883_, int i_884_, int i_885_, int i_886_) {
+    public final void method964(int i, int i_883_, int i_884_, int i_885_, int i_886_) {
         if (this.aHa_Sub1_8460.method3716()) throw new IllegalStateException();
         int i_887_ = this.aHa_Sub1_8460.anInt7477;
         i += this.anInt8461;
@@ -2548,7 +2548,7 @@ final class Class105_Sub3_Sub1 extends Class105_Sub3 {
         }
     }
 
-    final void method996(int i, int i_995_, int i_996_, int i_997_, int i_998_, int i_999_, int i_1000_, int i_1001_, int i_1002_) {
+    public final void method996(int i, int i_995_, int i_996_, int i_997_, int i_998_, int i_999_, int i_1000_, int i_1001_, int i_1002_) {
         if (i_997_ > 0 && i_998_ > 0) {
             int i_1003_ = 0;
             int i_1004_ = 0;
