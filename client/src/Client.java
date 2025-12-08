@@ -114,7 +114,7 @@ public final class Client extends Applet_Sub1 {
         }
     }
 
-    final void method92(int i) {
+    public final void method92(int i) {
         if (Class161.aBoolean2151) Class226.anInt2964 = 64;
         anInt5177++;
         Frame frame = new Frame("Jagex");
@@ -192,7 +192,7 @@ public final class Client extends Applet_Sub1 {
         Class348_Sub42_Sub16.aString9665 = Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544);
     }
 
-    final void method91(byte i) {
+    public final void method91(byte i) {
         int i_4_ = anInt5190;
         anInt5181++;
         method110(31);
@@ -742,7 +742,7 @@ public final class Client extends Applet_Sub1 {
         }
     }
 
-    final void method80(int i) {
+    public final void method80(int i) {
         if (Class184.aBoolean2469) Class318_Sub1_Sub2.method2405(i + -110);
         anInt5170++;
         Class59_Sub1_Sub1.method556(false);
@@ -923,7 +923,7 @@ public final class Client extends Applet_Sub1 {
         }
     }
 
-    final void method99(byte i) {
+    public final void method99(byte i) {
         if (i != 93) anIntArray5176 = null;
         anInt5183++;
         if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
@@ -1555,7 +1555,7 @@ public final class Client extends Applet_Sub1 {
         return class46.aBoolean813;
     }
 
-    final void method93(int i) {
+    public final void method93(int i) {
         if (i != -11018) method80(9);
         anInt5186++;
         if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
@@ -1867,7 +1867,7 @@ public final class Client extends Applet_Sub1 {
         }
     }
 
-    final synchronized void method87(byte i) {
+    public final synchronized void method87(byte i) {
         if (i > -11) aClass262_5185 = null;
         anInt5173++;
         if (Class93.anApplet1530 != null && Class305.aCanvas3869 == null && !Class348_Sub23_Sub1.aClass297_8992.aBoolean3794) {
@@ -2035,7 +2035,7 @@ public final class Client extends Applet_Sub1 {
         }
     }
 
-    final String method81(byte i) {
+    public final String method81(byte i) {
         anInt5175++;
         String string = null;
         try {

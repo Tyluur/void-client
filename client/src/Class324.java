@@ -6,7 +6,7 @@ import jaggl.OpenGL;
 
 import java.util.Random;
 
-abstract class Class324 {
+public abstract class Class324 {
     static int anInt4045;
     static int anInt4046;
     static int anInt4047;

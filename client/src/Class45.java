@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class45 {
+public final class Class45 {
     static int anInt626;
     static int anInt627;
     static int anInt628;
