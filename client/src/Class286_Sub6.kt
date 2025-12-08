@@ -184,7 +184,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                             if (Class239_Sub12.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564.method2869(Class286.Companion.aClass348_Sub2_3683, Class346.aBoolean4275, false)
                             else Class98.aClass348_Sub16_Sub3_1564.method2870(Class286.Companion.aClass348_Sub2_3683, Class239_Sub12.aLong5971, Class346.aBoolean4275, true, 24.toByte())
                         }
-                        if (Class318_Sub1_Sub4.aClass279_8764 != null) Class318_Sub1_Sub4.aClass279_8764.method2088(bool, Class98.aClass348_Sub16_Sub3_1564)
+                        if (Class318_Sub1_Sub4.aClass279_8764 != null) Class318_Sub1_Sub4.aClass279_8764!!.method2088(bool, Class98.aClass348_Sub16_Sub3_1564)
                         Class124.aClass45_1848 = null
                         Class286.Companion.aClass348_Sub2_3683 = null
                         Class239_Sub12.aLong5971 = 0L

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-class Class318 {
+public class Class318 {
     Class318 aClass318_3970;
     static int anInt3971;
     static int anInt3972;

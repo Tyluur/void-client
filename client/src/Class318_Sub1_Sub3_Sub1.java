@@ -46,7 +46,7 @@ public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements
         }
     }
 
-    final int method2394(boolean bool) {
+    public final int method2394(boolean bool) {
         if (bool != true) return 109;
         anInt10006++;
         if (this.aClass64_10028 == null) return 0;
@@ -95,7 +95,7 @@ public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements
         } while (false);
     }
 
-    final int method2379(int i) {
+    public final int method2379(int i) {
         if (i != -25675) method2418(null, (byte) -68);
         anInt10027++;
         if (this.aClass64_10028 != null) return this.aClass64_10028.ma();
@@ -108,7 +108,7 @@ public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements
         return aBoolean10003;
     }
 
-    final boolean method2391(ha var_ha, int i, int i_12_, int i_13_) {
+    public final boolean method2391(ha var_ha, int i, int i_12_, int i_13_) {
         anInt10005++;
         if (i_13_ != 0) return false;
         Class64 class64 = method2414(-1, var_ha, 131072);
@@ -130,7 +130,7 @@ public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements
         return class2.aClass64_119;
     }
 
-    final void method2387(ha var_ha, int i) {
+    public final void method2387(ha var_ha, int i) {
         anInt10033++;
         if (i > -125) aShort10032 = (short) -95;
     }
@@ -147,7 +147,7 @@ public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements
         return 15;
     }
 
-    final boolean method2388(int i) {
+    public final boolean method2388(int i) {
         anInt10035++;
         if (i > -65) return true;
         return aBoolean10019;
@@ -159,7 +159,7 @@ public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements
         return aByte10015;
     }
 
-    final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_16_, byte i_17_, int i_18_) {
+    public final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_16_, byte i_17_, int i_18_) {
         do {
             try {
                 anInt10034++;
@@ -185,14 +185,14 @@ public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements
         return aShort10032 & 0xffff;
     }
 
-    final void method2392(boolean bool) {
+    public final void method2392(boolean bool) {
         anInt10020++;
         if (bool != true) method38(120);
         aBoolean10019 = false;
         if (this.aClass64_10028 != null) this.aClass64_10028.s(~0x10000 & this.aClass64_10028.ua());
     }
 
-    final Class30 method2381(ha var_ha, int i) {
+    public final Class30 method2381(ha var_ha, int i) {
         if (aClass30_10025 == null) aClass30_10025 = (Class348_Sub23_Sub1.method2967(this.x, method2414(i + -8, var_ha, 0), this.y, this.anInt6382, 2));
         if (i != 7) return null;
         anInt10013++;
@@ -215,7 +215,7 @@ public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements
         return class51.method476(var_ha, var_s_21_, (aByte10024 != 11 ? aByte10024 : 10), i_20_, this.x, bool, var_s, this.anInt6382, this.y, (aByte10024 != 11 ? (int) aByte10015 : aByte10015 + 4), 128);
     }
 
-    final boolean method2376(int i) {
+    public final boolean method2376(int i) {
         if (i > -12) return false;
         anInt10029++;
         if (this.aClass64_10028 != null) {
@@ -224,7 +224,7 @@ public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements
         return true;
     }
 
-    final boolean method2377(byte i) {
+    public final boolean method2377(byte i) {
         if (i != 122) method2381(null, -44);
         anInt10021++;
         if (this.aClass64_10028 != null) return this.aClass64_10028.F();
@@ -268,7 +268,7 @@ public final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements
         return aByte10024;
     }
 
-    final Class318_Sub4 method2386(int i, ha var_ha) {
+    public final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10031++;
         if (this.aClass64_10028 == null) return null;
         Class101 class101 = var_ha.method3705();

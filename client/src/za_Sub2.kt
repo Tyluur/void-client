@@ -58,9 +58,9 @@ class za_Sub2(i: Int) : za() {
             anInt9778++
             if ((class318_sub1_sub3_sub3.anIntArray10242) != null || (class318_sub1_sub3_sub3.anIntArray10296) != null) {
                 var bool_2_ = bool
-                for (i in (class318_sub1_sub3_sub3.anIntArray10242).indices) {
+                for (i in (class318_sub1_sub3_sub3.anIntArray10242)!!.indices) {
                     var i_3_ = -1
-                    if ((class318_sub1_sub3_sub3.anIntArray10242) != null) i_3_ = (class318_sub1_sub3_sub3.anIntArray10242[i])
+                    if ((class318_sub1_sub3_sub3.anIntArray10242) != null) i_3_ = (class318_sub1_sub3_sub3.anIntArray10242!![i])
                     if (i_3_ == -1) {
                         if (!class318_sub1_sub3_sub3.method2423(-80, i, -1)) bool_2_ = false
                     } else {

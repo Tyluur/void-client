@@ -37,7 +37,7 @@ public final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements
         if (i != -14218) method40(127);
     }
 
-    final int method2394(boolean bool) {
+    public final int method2394(boolean bool) {
         anInt10157++;
         if (bool != true) aBoolean10153 = false;
         return this.aClass235_10155.method1663(101);
@@ -68,7 +68,7 @@ public final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements
         return (this.aClass235_10155.anInt3063);
     }
 
-    final void method2387(ha var_ha, int i) {
+    public final void method2387(ha var_ha, int i) {
         if (i >= -125) aBoolean10148 = false;
         anInt10154++;
         Class64 class64 = this.aClass235_10155.method1668(false, true, -127, 262144, var_ha);
@@ -87,13 +87,13 @@ public final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements
         return (this.aClass235_10155.anInt3079);
     }
 
-    final boolean method2376(int i) {
+    public final boolean method2376(int i) {
         if (i >= -12) return false;
         anInt10166++;
         return false;
     }
 
-    final Class318_Sub4 method2386(int i, ha var_ha) {
+    public final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10159++;
         Class64 class64 = this.aClass235_10155.method1668(false, true, -127, 2048, var_ha);
         if (class64 == null) return null;
@@ -116,13 +116,13 @@ public final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements
         return class318_sub4;
     }
 
-    final Class30 method2381(ha var_ha, int i) {
+    public final Class30 method2381(ha var_ha, int i) {
         anInt10169++;
         if (i != 7) return null;
         return aClass30_10150;
     }
 
-    final boolean method2377(byte i) {
+    public final boolean method2377(byte i) {
         anInt10158++;
         if (i != 122) return false;
         return aBoolean10148;
@@ -145,7 +145,7 @@ public final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements
         }
     }
 
-    final boolean method2391(ha var_ha, int i, int i_14_, int i_15_) {
+    public final boolean method2391(ha var_ha, int i, int i_14_, int i_15_) {
         anInt10152++;
         Class64 class64 = this.aClass235_10155.method1668(false, false, -128, 131072, var_ha);
         if (class64 == null) return false;
@@ -188,7 +188,7 @@ public final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements
         }
     }
 
-    final int method2379(int i) {
+    public final int method2379(int i) {
         anInt10160++;
         if (i != -25675) aBoolean10153 = false;
         return this.aClass235_10155.method1664(-119);

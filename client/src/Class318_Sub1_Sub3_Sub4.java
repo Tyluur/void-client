@@ -43,7 +43,7 @@ public final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
     static int anInt10363;
     static int anInt10364;
 
-    final Class318_Sub4 method2386(int i, ha var_ha) {
+    public final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10352++;
         Class64 class64 = method2465(var_ha, anInt10355, (anInt10334 == 0 ? 0 : 5) | 0x800, (byte) -82);
         if (class64 == null) return null;
@@ -65,7 +65,7 @@ public final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         return class318_sub4;
     }
 
-    final int method2394(boolean bool) {
+    public final int method2394(boolean bool) {
         if (bool != true) return 18;
         anInt10337++;
         return anInt10331;
@@ -81,7 +81,7 @@ public final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         }
     }
 
-    final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_0_, byte i_1_, int i_2_) {
+    public final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_0_, byte i_1_, int i_2_) {
         try {
             anInt10347++;
             if (i_1_ > -106) this.aBoolean10345 = false;
@@ -96,7 +96,7 @@ public final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         if (aClass318_Sub10_10341 != null) aClass318_Sub10_10341.method2534();
     }
 
-    final void method2392(boolean bool) {
+    public final void method2392(boolean bool) {
         anInt10343++;
         if (bool != true) aClass17_10332 = null;
         throw new IllegalStateException();
@@ -113,7 +113,7 @@ public final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         return i_5_;
     }
 
-    final boolean method2376(int i) {
+    public final boolean method2376(int i) {
         if (i > -12) return false;
         anInt10362++;
         return false;
@@ -217,7 +217,7 @@ public final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         }
     }
 
-    final boolean method2377(byte i) {
+    public final boolean method2377(byte i) {
         anInt10358++;
         if (i != 122) method2388(-40);
         return aBoolean10338;
@@ -243,25 +243,25 @@ public final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         } while (false);
     }
 
-    final int method2379(int i) {
+    public final int method2379(int i) {
         anInt10342++;
         if (i != -25675) anInt10334 = 73;
         return anInt10356;
     }
 
-    final Class30 method2381(ha var_ha, int i) {
+    public final Class30 method2381(ha var_ha, int i) {
         if (i != 7) method2387(null, -106);
         anInt10363++;
         return null;
     }
 
-    final boolean method2388(int i) {
+    public final boolean method2388(int i) {
         if (i >= -65) return false;
         anInt10328++;
         return false;
     }
 
-    final void method2387(ha var_ha, int i) {
+    public final void method2387(ha var_ha, int i) {
         if (i >= -125) anInt10331 = 38;
         anInt10354++;
         Class64 class64 = method2465(var_ha, anInt10355, 0, (byte) -82);
@@ -272,7 +272,7 @@ public final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         }
     }
 
-    final boolean method2391(ha var_ha, int i, int i_29_, int i_30_) {
+    public final boolean method2391(ha var_ha, int i, int i_29_, int i_30_) {
         anInt10346++;
         if (i_30_ != 0) return false;
         return false;

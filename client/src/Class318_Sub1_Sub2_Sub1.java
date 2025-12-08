@@ -25,7 +25,7 @@ public final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
     static int anInt10198;
     static float aFloat10199;
 
-    final int method2393(int i) {
+    public final int method2393(int i) {
         anInt10197++;
         if (i > -109) aStringArray10195 = null;
         Class213 class213 = (Exception_Sub1.aClass255_112.method1940(-115, this.anInt10181));
@@ -41,7 +41,7 @@ public final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
         return i_0_;
     }
 
-    final Class30 method2381(ha var_ha, int i) {
+    public final Class30 method2381(ha var_ha, int i) {
         if (i != 7) method2386(-74, null);
         anInt10182++;
         return null;
@@ -53,18 +53,18 @@ public final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
         this.anInt10196 = 0;
     }
 
-    final int method2394(boolean bool) {
+    public final int method2394(boolean bool) {
         if (bool != true) this.anInt10196 = 68;
         anInt10183++;
         return -10;
     }
 
-    final void method2387(ha var_ha, int i) {
+    public final void method2387(ha var_ha, int i) {
         anInt10198++;
         if (i > -125) this.anInt10196 = 71;
     }
 
-    final boolean method2391(ha var_ha, int i, int i_7_, int i_8_) {
+    public final boolean method2391(ha var_ha, int i, int i_7_, int i_8_) {
         anInt10188++;
         Class101 class101 = var_ha.method3705();
         class101.method894(this.x, -10 + this.anInt6382, this.y);
@@ -90,7 +90,7 @@ public final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
         if (bool != false) method2407(true);
     }
 
-    final Class318_Sub4 method2386(int i, ha var_ha) {
+    public final Class318_Sub4 method2386(int i, ha var_ha) {
         if (i != 1) method2386(60, null);
         anInt10179++;
         Class148 class148 = Class195.method1449(this.plane, (this.x >> Class362.anInt4459), (this.y >> Class362.anInt4459));
@@ -172,19 +172,19 @@ public final class Class318_Sub1_Sub2_Sub1 extends Class318_Sub1_Sub2 {
         return class318_sub4;
     }
 
-    final int method2379(int i) {
+    public final int method2379(int i) {
         anInt10193++;
         if (i != -25675) aClass138_10194 = null;
         return anInt10184;
     }
 
-    final boolean method2377(byte i) {
+    public final boolean method2377(byte i) {
         anInt10192++;
         if (i != 122) method2394(true);
         return aBoolean10191;
     }
 
-    final boolean method2376(int i) {
+    public final boolean method2376(int i) {
         if (i >= -12) this.anInt10180 = -23;
         anInt10187++;
         return false;

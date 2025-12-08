@@ -40,7 +40,7 @@ public final class Npc extends Class318_Sub1_Sub3_Sub3 {
         return (this.aClass79_10505.aBoolean1396);
     }
 
-    final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_6_, byte i_7_, int i_8_) {
+    public final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_6_, byte i_7_, int i_8_) {
         try {
             if (i_7_ > -106) this.aClass79_10505 = null;
             anInt10513++;
@@ -50,13 +50,13 @@ public final class Npc extends Class318_Sub1_Sub3_Sub3 {
         }
     }
 
-    final void method2392(boolean bool) {
+    public final void method2392(boolean bool) {
         anInt10507++;
         if (bool != true) this.anInt10499 = -13;
         throw new IllegalStateException();
     }
 
-    final boolean method2391(ha var_ha, int i, int i_9_, int i_10_) {
+    public final boolean method2391(ha var_ha, int i, int i_9_, int i_10_) {
         anInt10514++;
         if (this.aClass79_10505 == null || !method2447(97, 131072, var_ha)) return false;
         Class101 class101 = var_ha.method3705();
@@ -127,7 +127,7 @@ public final class Npc extends Class318_Sub1_Sub3_Sub3 {
         this.aByteArray10321[0] = (byte) i_15_;
     }
 
-    final Class318_Sub4 method2386(int i, ha var_ha) {
+    public final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt10501++;
         if (this.aClass79_10505 == null || !method2447(i + 114, 2048, var_ha)) return null;
         Class101 class101 = var_ha.method3705();
@@ -182,7 +182,7 @@ public final class Npc extends Class318_Sub1_Sub3_Sub3 {
         return class318_sub4;
     }
 
-    final int method2421(byte i) {
+    public final int method2421(byte i) {
         anInt10495++;
         if ((this.aClass79_10505.anIntArray1377) != null) {
             Class79 class79 = this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1);
@@ -192,7 +192,7 @@ public final class Npc extends Class318_Sub1_Sub3_Sub3 {
         return (this.aClass79_10505.anInt1366);
     }
 
-    final int method2393(int i) {
+    public final int method2393(int i) {
         anInt10506++;
         if (i >= -109) this.anInt10499 = -47;
         if (this.aClass79_10505 == null) return 0;
@@ -243,7 +243,7 @@ public final class Npc extends Class318_Sub1_Sub3_Sub3 {
         }
     }
 
-    final Class30 method2381(ha var_ha, int i) {
+    public final Class30 method2381(ha var_ha, int i) {
         if (i != 7) this.anInt10512 = 102;
         anInt10493++;
         return null;
@@ -256,7 +256,7 @@ public final class Npc extends Class318_Sub1_Sub3_Sub3 {
         return true;
     }
 
-    final int method2425(int i) {
+    public final int method2425(int i) {
         anInt10496++;
         if ((this.aClass79_10505.anIntArray1377) != null) {
             Class79 class79 = this.aClass79_10505.method794(Class318_Sub1_Sub3_Sub3.aClass170_10209, -1);
@@ -266,12 +266,12 @@ public final class Npc extends Class318_Sub1_Sub3_Sub3 {
         return (this.aClass79_10505.anInt1336);
     }
 
-    final boolean method2388(int i) {
+    public final boolean method2388(int i) {
         anInt10502++;
         return i > -65;
     }
 
-    final int method2426(int i) {
+    public final int method2426(int i) {
         anInt10504++;
         if (i != 200) return 115;
         if ((this.aClass79_10505.anIntArray1377) != null) {
@@ -282,7 +282,7 @@ public final class Npc extends Class318_Sub1_Sub3_Sub3 {
         return (this.aClass79_10505.anInt1390);
     }
 
-    final void method2387(ha var_ha, int i) {
+    public final void method2387(ha var_ha, int i) {
         anInt10509++;
         if (this.aClass79_10505 != null && (this.aBoolean10318 || method2447(123, 0, var_ha))) {
             if (i > -125) method2391(null, -2, -103, 34);

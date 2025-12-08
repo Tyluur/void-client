@@ -36,7 +36,7 @@ public final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements
         return (this.aClass235_9955.anInt3063);
     }
 
-    final void method2387(ha var_ha, int i) {
+    public final void method2387(ha var_ha, int i) {
         if (i > -125) method2399(null, -65);
         anInt9962++;
         Class64 class64 = this.aClass235_9955.method1668(true, true, -128, 262144, var_ha);
@@ -49,7 +49,7 @@ public final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements
         }
     }
 
-    final int method2394(boolean bool) {
+    public final int method2394(boolean bool) {
         if (bool != true) return -82;
         anInt9963++;
         return this.aClass235_9955.method1663(109);
@@ -80,7 +80,7 @@ public final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements
         anIntArray9949 = null;
     }
 
-    final Class318_Sub4 method2386(int i, ha var_ha) {
+    public final Class318_Sub4 method2386(int i, ha var_ha) {
         anInt9968++;
         Class64 class64 = this.aClass235_9955.method1668(false, true, -128, 2048, var_ha);
         if (class64 == null) return null;
@@ -103,7 +103,7 @@ public final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements
         return class318_sub4;
     }
 
-    final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_4_, byte i_5_, int i_6_) {
+    public final void method2380(ha var_ha, int i, boolean bool, Class318_Sub1 class318_sub1, int i_4_, byte i_5_, int i_6_) {
         try {
             anInt9946++;
             if (i_5_ > -106) this.aClass235_9955 = null;
@@ -123,25 +123,25 @@ public final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements
         }
     }
 
-    final boolean method2377(byte i) {
+    public final boolean method2377(byte i) {
         anInt9964++;
         if (i != 122) this.aClass235_9955 = null;
         return aBoolean9945;
     }
 
-    final int method2379(int i) {
+    public final int method2379(int i) {
         if (i != -25675) aClass105Array9959 = null;
         anInt9965++;
         return this.aClass235_9955.method1664(i ^ 0x647d);
     }
 
-    final void method2392(boolean bool) {
+    public final void method2392(boolean bool) {
         if (bool != true) this.aClass235_9955 = null;
         anInt9953++;
         throw new IllegalStateException();
     }
 
-    final boolean method2391(ha var_ha, int i, int i_13_, int i_14_) {
+    public final boolean method2391(ha var_ha, int i, int i_13_, int i_14_) {
         anInt9952++;
         Class64 class64 = this.aClass235_9955.method1668(false, false, -128, 131072, var_ha);
         if (class64 == null) return false;
@@ -164,13 +164,13 @@ public final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements
         }
     }
 
-    final Class30 method2381(ha var_ha, int i) {
+    public final Class30 method2381(ha var_ha, int i) {
         if (i != 7) return null;
         anInt9960++;
         return aClass30_9950;
     }
 
-    final boolean method2388(int i) {
+    public final boolean method2388(int i) {
         anInt9944++;
         return i >= -65;
     }
@@ -188,7 +188,7 @@ public final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1 implements
         }
     }
 
-    final boolean method2376(int i) {
+    public final boolean method2376(int i) {
         anInt9956++;
         if (i >= -12) aClass30_9950 = null;
         return false;

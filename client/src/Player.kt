@@ -54,33 +54,33 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     var anInt10561: Int
     @JvmField
     var anInt10564: Int = 0
-    override fun method2387(var_ha: ha, i: Int) {
+    override fun method2387(var_ha: ha?, i: Int) {
         anInt10533++
         if (this.aClass154_10536 != null && (this.aBoolean10318 || method2459(0, var_ha, -123))) {
-            val class101 = var_ha.method3705()
+            val class101 = var_ha!!.method3705()
             if (i >= -125) method2457((-106).toByte())
             class101.method895(this.aClass264_10217.method2019((-116).toByte()))
             class101.method891(this.x, -5 + this.anInt6382, this.y)
             this.method2432(var_ha, -15074, class101, this.aBoolean10318, (this.aClass64Array10323))
-            this.aClass64Array10323[2] = null
-            this.aClass64Array10323[1] = this.aClass64Array10323[2]
-            this.aClass64Array10323[0] = this.aClass64Array10323[1]
+            this.aClass64Array10323!![2] = null
+            this.aClass64Array10323!![1] = this.aClass64Array10323!![2]
+            this.aClass64Array10323!![0] = this.aClass64Array10323!![1]
         }
     }
 
     fun method2449(i: Int, i_0_: Int, i_1_: Byte) {
         anInt10541++
         this.anInt10322 = 0
-        this.anIntArray10320[0] = i_0_
+        this.anIntArray10320!![0] = i_0_
         this.anInt10319 = 0
         this.anInt10326 = 0
-        this.anIntArray10317[0] = i
+        this.anIntArray10317!![0] = i
         if (i_1_ <= 55) anInt10567 = -3
         val i_2_ = method2436(103.toByte())
-        this.y = (256 * i_2_ + 512 * this.anIntArray10317[0])
-        this.x = (this.anIntArray10320[0] * 512 + i_2_ * 256)
+        this.y = (256 * i_2_ + 512 * this.anIntArray10317!![0])
+        this.x = (this.anIntArray10320!![0] * 512 + i_2_ * 256)
         if (Class132.aPlayer_1907 == this) Class76.method773(true)
-        if (this.aClass318_Sub10_10327 != null) this.aClass318_Sub10_10327.method2529()
+        if (this.aClass318_Sub10_10327 != null) this.aClass318_Sub10_10327!!.method2529()
     }
 
     fun method2450(bool: Boolean, i: Int): String? {
@@ -95,34 +95,34 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         anInt10528++
         if (this.anInt10319 < 9) this.anInt10319++
         for (i_6_ in this.anInt10319 downTo 1) {
-            this.anIntArray10320[i_6_] = this.anIntArray10320[-1 + i_6_]
-            this.anIntArray10317[i_6_] = this.anIntArray10317[i_6_ + -1]
-            this.aByteArray10321[i_6_] = this.aByteArray10321[-1 + i_6_]
+            this.anIntArray10320!![i_6_] = this.anIntArray10320!![-1 + i_6_]
+            this.anIntArray10317!![i_6_] = this.anIntArray10317!![i_6_ + -1]
+            this.aByteArray10321!![i_6_] = this.aByteArray10321!![-1 + i_6_]
         }
-        this.anIntArray10320[0] = i_3_
-        this.aByteArray10321[0] = i
-        this.anIntArray10317[0] = i_5_
+        this.anIntArray10320!![0] = i_3_
+        this.aByteArray10321!![0] = i
+        this.anIntArray10317!![0] = i_5_
     }
 
-    override fun method2391(var_ha: ha, i: Int, i_7_: Int, i_8_: Int): Boolean {
+    override fun method2391(var_ha: ha?, i: Int, i_7_: Int, i_8_: Int): Boolean {
         anInt10562++
         if (this.aClass154_10536 == null || !method2459(131072, var_ha, 113)) return false
-        val class101 = var_ha.method3705()
+        val class101 = var_ha!!.method3705()
         val i_9_ = this.aClass264_10217.method2019((-31).toByte())
         class101.method895(i_9_)
         class101.method891(this.x, this.anInt6382, this.y)
         var bool = false
         var i_10_ = 0
-        while ((this.aClass64Array10323.size > i_10_)) {
-            if ((this.aClass64Array10323[i_10_] != null) && (if (Class305.aBoolean3870) (this.aClass64Array10323[i_10_].method623(i_7_, i, class101, true, 0, Class132.anInt1906)) else this.aClass64Array10323[i_10_].method628(i_7_, i, class101, true, 0))) {
+        while ((this.aClass64Array10323!!.size > i_10_)) {
+            if ((this.aClass64Array10323!![i_10_] != null) && (if (Class305.aBoolean3870) (this.aClass64Array10323!![i_10_]!!.method623(i_7_, i, class101, true, 0, Class132.anInt1906)) else this.aClass64Array10323!![i_10_]!!.method628(i_7_, i, class101, true, 0))) {
                 bool = true
                 break
             }
             i_10_++
         }
-        this.aClass64Array10323[2] = null
-        this.aClass64Array10323[1] = this.aClass64Array10323[2]
-        this.aClass64Array10323[i_8_] = this.aClass64Array10323[1]
+        this.aClass64Array10323!![2] = null
+        this.aClass64Array10323!![1] = this.aClass64Array10323!![2]
+        this.aClass64Array10323!![i_8_] = this.aClass64Array10323!![1]
         return bool
     }
 
@@ -210,8 +210,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         val is_30_ = (this.aClass154_10536!!.anIntArray2095)
         this.aClass154_10536!!.method1228(i_14_, 105, method2421(121.toByte()), `is`, aByte10538.toInt() == 1, is_20_)
         if (i_14_ != i_29_) {
-            this.x = (this.anIntArray10320[0] shl 9) - -(method2436(89.toByte()) shl 8)
-            this.y = (this.anIntArray10317[0] shl 9) - -(method2436(98.toByte()) shl 8)
+            this.x = (this.anIntArray10320!![0] shl 9) - -(method2436(89.toByte()) shl 8)
+            this.y = (this.anIntArray10317!![0] shl 9) - -(method2436(98.toByte()) shl 8)
         }
         if ((Class348_Sub42_Sub11.anInt9591 == this.anInt10290) && is_30_ != null) {
             for (i_31_ in is_20_.indices) {
@@ -221,7 +221,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                 }
             }
         }
-        if (this.aClass318_Sub10_10327 != null) this.aClass318_Sub10_10327.method2529()
+        if (this.aClass318_Sub10_10327 != null) this.aClass318_Sub10_10327!!.method2529()
         if (this.anInt10268 != -1 && this.aBoolean10213) {
             val class225 = this.method2422(72.toByte())
             if (!class225.method1623((this.anInt10268), -40)) {
@@ -313,17 +313,17 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         }
         this.anInt10524 = -1
         if (i_52_ >= 0 && Class367_Sub4.anInt7319 > i_52_ && i >= 0 && Class348_Sub40_Sub3.anInt9109 > i) {
-            if (this.anIntArray10320[0] >= 0 && (this.anIntArray10320[0] < Class367_Sub4.anInt7319) && this.anIntArray10317[0] >= 0 && (Class348_Sub40_Sub3.anInt9109 > this.anIntArray10317[0])) {
+            if (this.anIntArray10320!![0] >= 0 && (this.anIntArray10320!![0] < Class367_Sub4.anInt7319) && this.anIntArray10317!![0] >= 0 && (Class348_Sub40_Sub3.anInt9109 > this.anIntArray10317!![0])) {
                 if (i_51_.toInt() == 2) Class218.method1592(2.toByte(), i, 4, i_52_, this)
                 method2451(i_51_, i_52_, -29034, i)
             } else method2449(i, i_52_, 111.toByte())
         } else method2449(i, i_52_, 112.toByte())
     }
 
-    override fun method2386(i: Int, var_ha: ha): Class318_Sub4? {
+    override fun method2386(i: Int, var_ha: ha?): Class318_Sub4? {
         anInt10527++
         if (this.aClass154_10536 == null || !method2459(2048, var_ha, -95)) return null
-        val class101 = var_ha.method3705()
+        val class101 = var_ha!!.method3705()
         val i_53_ = this.aClass264_10217.method2019((-126).toByte())
         class101.method895(i_53_)
         val class357 = (Class147.aClass357ArrayArrayArray2029[this.plane.toInt()][this.x shr Class362.anInt4459][this.y shr Class362.anInt4459])
@@ -394,21 +394,21 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         this.method2432(var_ha, -15074, class101, false, this.aClass64Array10323)
         if (Class305.aBoolean3870) {
             for (i_65_ in (this.aClass64Array10323).indices) {
-                if (this.aClass64Array10323[i_65_] != null) this.aClass64Array10323[i_65_].method608(class101, (class318_sub4.aClass318_Sub3Array6414[i_65_]), Class132.anInt1906, (if (this != Class132.aPlayer_1907) 0 else 1))
+                if (this.aClass64Array10323[i_65_] != null) this.aClass64Array10323[i_65_]!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414[i_65_]), Class132.anInt1906, (if (this != Class132.aPlayer_1907) 0 else 1))
             }
         } else {
             for (i_66_ in (this.aClass64Array10323).indices) {
-                if (this.aClass64Array10323[i_66_] != null) this.aClass64Array10323[i_66_].method615(class101, (class318_sub4.aClass318_Sub3Array6414[i_66_]), (if (this == Class132.aPlayer_1907) 1 else 0))
+                if (this.aClass64Array10323[i_66_] != null) this.aClass64Array10323[i_66_]!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414[i_66_]), (if (this == Class132.aPlayer_1907) 1 else 0))
             }
         }
         if (this.aClass318_Sub10_10327 != null) {
-            val class98 = this.aClass318_Sub10_10327.method2525()
+            val class98 = this.aClass318_Sub10_10327!!.method2525()
             if (Class305.aBoolean3870) var_ha.method3685(class98, Class132.anInt1906)
             else var_ha.method3684(class98)
         }
         var i_67_ = 0
         while ((i_67_ < this.aClass64Array10323.size)) {
-            if (this.aClass64Array10323[i_67_] != null) this.aBoolean10324 = this.aBoolean10324 or this.aClass64Array10323[i_67_].F()
+            if (this.aClass64Array10323[i_67_] != null) this.aBoolean10324 = this.aBoolean10324 or this.aClass64Array10323[i_67_]!!.F()
             i_67_++
         }
         this.aClass64Array10323[2] = null
@@ -535,7 +535,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     }
                     if (i_83_ != 0 || i_81_ != 0) {
                         var i_84_ = i_74_
-                        if ((this.anIntArray10296 != null) && ((this.anIntArray10296[this.anInt10278]) != -1)) i_84_ = (this.anIntArray10296[(this.anInt10278)])
+                        if ((this.anIntArray10296 != null) && ((this.anIntArray10296!![this.anInt10278]) != -1)) i_84_ = (this.anIntArray10296!![(this.anInt10278)])
                         val i_85_ = (i_84_ + (this.anInt10237) * 2048 + -i_74_ and 0x3fff)
                         if (i_85_ != 0) class64_80_.a(i_85_)
                         val i_86_ = Class70.anIntArray1207[i_85_]
@@ -585,7 +585,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     }
                     if (i_94_ != 0 || i_92_ != 0) {
                         var i_95_ = i_74_
-                        if ((this.anIntArray10296 != null) && ((this.anIntArray10296[this.anInt10289]) != -1)) i_95_ = (this.anIntArray10296[(this.anInt10289)])
+                        if ((this.anIntArray10296 != null) && ((this.anIntArray10296!![this.anInt10289]) != -1)) i_95_ = (this.anIntArray10296!![(this.anInt10289)])
                         val i_96_ = (0x3fff and -i_74_ + ((this.anInt10202) * 2048 + i_95_))
                         if (i_96_ != 0) class64_91_.a(i_96_)
                         val i_97_ = Class70.anIntArray1207[i_96_]

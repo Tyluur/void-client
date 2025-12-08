@@ -110,8 +110,8 @@ class Class239_Sub16 : Class239 {
                     if ((player!!.anIntArray10236) != null) {
                         var bool = true
                         var i_9_ = 0
-                        while ((player.anIntArray10236.size > i_9_)) {
-                            if ((player.anIntArray10236[i_9_]) != `is`!![i_9_]) {
+                        while ((player.anIntArray10236!!.size > i_9_)) {
+                            if ((player.anIntArray10236!![i_9_]) != `is`!![i_9_]) {
                                 bool = false
                                 break
                             }
@@ -136,7 +136,7 @@ class Class239_Sub16 : Class239 {
                     var i_11_ = 0
                     while (`is`!!.size > i_11_) {
                         if (`is`[i_11_] != -1) bool = false
-                        if (player.anIntArray10236 == null || (player.anIntArray10236[i_11_]) == -1 || (Class10.aClass87_191.method835((player.anIntArray10236[i_11_]), 7).anInt239 <= (Class10.aClass87_191.method835(`is`[i_11_], i xor 0x5d8d).anInt239))) {
+                        if (player.anIntArray10236 == null || (player.anIntArray10236!![i_11_]) == -1 || (Class10.aClass87_191.method835((player.anIntArray10236!![i_11_]), 7).anInt239 <= (Class10.aClass87_191.method835(`is`[i_11_], i xor 0x5d8d).anInt239))) {
                             player.anInt10218 = i_8_
                             player.anIntArray10236 = `is`
                             break
