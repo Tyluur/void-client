@@ -751,7 +751,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
     fun method2874(i: Int, bool: Boolean, class348_sub43: Class348_Sub43?) {
         try {
             anInt8909++
-            var i_94_ = (class348_sub43!!.aClass348_Sub19_Sub1_7077.aByteArray8984).size
+            var i_94_ = (class348_sub43!!.aClass348_Sub19_Sub1_7077.aByteArray8984)!!.size
             var i_95_: Int
             if (bool && (class348_sub43.aClass348_Sub19_Sub1_7077.aBoolean8987)) {
                 val i_96_ = (i_94_ + i_94_ + -class348_sub43.aClass348_Sub19_Sub1_7077.anInt8986)

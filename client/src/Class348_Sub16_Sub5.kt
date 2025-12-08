@@ -48,7 +48,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
     }
 
     fun method2890(): Boolean {
-        return anInt8983 < 0 || anInt8983 >= ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984).size shl 8
+        return anInt8983 < 0 || anInt8983 >= ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984)!!.size shl 8
     }
 
     @Synchronized
@@ -66,8 +66,8 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
     override fun method2820(): Int {
         var i = anInt8976 * 3 shr 6
         i = (i xor (i shr 31)) + (i ushr 31)
-        if (anInt8980 == 0) i -= (i * anInt8983 / (((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984).size shl 8))
-        else if (anInt8980 >= 0) i -= (i * anInt8975 / ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984).size)
+        if (anInt8980 == 0) i -= (i * anInt8983 / (((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984)!!.size shl 8))
+        else if (anInt8980 >= 0) i -= (i * anInt8975 / ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984)!!.size)
         return min(i, 255)
     }
 
@@ -218,20 +218,20 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
             if (i_128_ > i_126_) i_128_ = i_126_
             anInt8972 += i
             if (anInt8979 == 256 && (anInt8983 and 0xff) == 0) {
-                if (Class282.aBoolean3652) i = method2893(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984, `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_128_, i_125_, this)
-                else i = method2913((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984, `is`, anInt8983, i, anInt8976, anInt8973, 0, i_128_, i_125_, this)
-            } else if (Class282.aBoolean3652) i = method2899(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984), `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_128_, i_125_, this, anInt8979, i_127_)
-            else i = method2903(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984), `is`, anInt8983, i, anInt8976, anInt8973, 0, i_128_, i_125_, this, anInt8979, i_127_)
+                if (Class282.aBoolean3652) i = method2893(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_128_, i_125_, this)
+                else i = method2913((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8976, anInt8973, 0, i_128_, i_125_, this)
+            } else if (Class282.aBoolean3652) i = method2899(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_128_, i_125_, this, anInt8979, i_127_)
+            else i = method2903(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, anInt8973, 0, i_128_, i_125_, this, anInt8979, i_127_)
             anInt8972 -= i
             if (anInt8972 != 0) return i
             if (method2898()) return i_126_
         }
         if (anInt8979 == 256 && (anInt8983 and 0xff) == 0) {
-            if (Class282.aBoolean3652) return method2910(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984, `is`, anInt8983, i, anInt8970, anInt8974, 0, i_126_, i_125_, this)
-            return method2905(((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984), `is`, anInt8983, i, anInt8976, 0, i_126_, i_125_, this)
+            if (Class282.aBoolean3652) return method2910(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, 0, i_126_, i_125_, this)
+            return method2905(((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, 0, i_126_, i_125_, this)
         }
-        if (Class282.aBoolean3652) return method2922(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984), `is`, anInt8983, i, anInt8970, anInt8974, 0, i_126_, i_125_, this, anInt8979, i_127_)
-        return method2925(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984), `is`, anInt8983, i, anInt8976, 0, i_126_, i_125_, this, anInt8979, i_127_)
+        if (Class282.aBoolean3652) return method2922(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, 0, i_126_, i_125_, this, anInt8979, i_127_)
+        return method2925(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, 0, i_126_, i_125_, this, anInt8979, i_127_)
     }
 
     @Synchronized
@@ -247,7 +247,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
             val class348_sub19_sub1 = (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1)
             val i_160_ = anInt8975 shl 8
             val i_161_ = anInt8982 shl 8
-            val i_162_ = ((class348_sub19_sub1.aByteArray8984).size shl 8)
+            val i_162_ = ((class348_sub19_sub1.aByteArray8984)!!.size shl 8)
             val i_163_ = i_161_ - i_160_
             if (i_163_ <= 0) anInt8980 = 0
             var i_164_ = i
@@ -271,30 +271,30 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
             if (anInt8980 < 0) {
                 if (aBoolean8981) {
                     if (anInt8979 < 0) {
-                        i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984[anInt8975]).toInt())
+                        i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8975]).toInt())
                         if (anInt8983 >= i_160_) return
                         anInt8983 = i_160_ + i_160_ - 1 - anInt8983
                         anInt8979 = -anInt8979
                     }
                     while (true) {
-                        i_164_ = method2919(`is`, i_164_, i_161_, i_159_, (class348_sub19_sub1.aByteArray8984[anInt8982 - 1]).toInt())
+                        i_164_ = method2919(`is`, i_164_, i_161_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8982 - 1]).toInt())
                         if (anInt8983 < i_161_) break
                         anInt8983 = i_161_ + i_161_ - 1 - anInt8983
                         anInt8979 = -anInt8979
-                        i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984[anInt8975]).toInt())
+                        i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8975]).toInt())
                         if (anInt8983 >= i_160_) break
                         anInt8983 = i_160_ + i_160_ - 1 - anInt8983
                         anInt8979 = -anInt8979
                     }
                 } else if (anInt8979 < 0) {
                     while (true) {
-                        i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984[anInt8982 - 1]).toInt())
+                        i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8982 - 1]).toInt())
                         if (anInt8983 >= i_160_) break
                         anInt8983 = i_161_ - 1 - (i_161_ - 1 - anInt8983) % i_163_
                     }
                 } else {
                     while (true) {
-                        i_164_ = method2919(`is`, i_164_, i_161_, i_159_, (class348_sub19_sub1.aByteArray8984[anInt8975]).toInt())
+                        i_164_ = method2919(`is`, i_164_, i_161_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8975]).toInt())
                         if (anInt8983 < i_161_) break
                         anInt8983 = i_160_ + (anInt8983 - i_160_) % i_163_
                     }
@@ -304,26 +304,26 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                     if (anInt8980 > 0) {
                         if (aBoolean8981) {
                             if (anInt8979 < 0) {
-                                i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984[anInt8975]).toInt())
+                                i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8975]).toInt())
                                 if (anInt8983 >= i_160_) return
                                 anInt8983 = i_160_ + i_160_ - 1 - anInt8983
                                 anInt8979 = -anInt8979
                                 if (--anInt8980 == 0) break
                             }
                             do {
-                                i_164_ = method2919(`is`, i_164_, i_161_, i_159_, (class348_sub19_sub1.aByteArray8984[anInt8982 - 1]).toInt())
+                                i_164_ = method2919(`is`, i_164_, i_161_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8982 - 1]).toInt())
                                 if (anInt8983 < i_161_) return
                                 anInt8983 = i_161_ + i_161_ - 1 - anInt8983
                                 anInt8979 = -anInt8979
                                 if (--anInt8980 == 0) break
-                                i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984[anInt8975]).toInt())
+                                i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8975]).toInt())
                                 if (anInt8983 >= i_160_) return
                                 anInt8983 = i_160_ + i_160_ - 1 - anInt8983
                                 anInt8979 = -anInt8979
                             } while (--anInt8980 != 0)
                         } else if (anInt8979 < 0) {
                             while (true) {
-                                i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984[anInt8982 - 1]).toInt())
+                                i_164_ = method2927(`is`, i_164_, i_160_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8982 - 1]).toInt())
                                 if (anInt8983 >= i_160_) return
                                 val i_165_ = (i_161_ - 1 - anInt8983) / i_163_
                                 if (i_165_ >= anInt8980) {
@@ -336,7 +336,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
                             }
                         } else {
                             while (true) {
-                                i_164_ = method2919(`is`, i_164_, i_161_, i_159_, (class348_sub19_sub1.aByteArray8984[anInt8975]).toInt())
+                                i_164_ = method2919(`is`, i_164_, i_161_, i_159_, (class348_sub19_sub1.aByteArray8984!![anInt8975]).toInt())
                                 if (anInt8983 < i_161_) return
                                 val i_166_ = (anInt8983 - i_160_) / i_163_
                                 if (i_166_ >= anInt8980) {
@@ -372,7 +372,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
     @Synchronized
     fun method2924(i: Int) {
         var i = i
-        val i_167_ = (((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984).size shl 8)
+        val i_167_ = (((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!).size shl 8)
         if (i < -1) i = -1
         if (i > i_167_) i = i_167_
         anInt8983 = i
@@ -415,7 +415,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
         val class348_sub19_sub1 = (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1)
         val i_179_ = anInt8975 shl 8
         val i_180_ = anInt8982 shl 8
-        val i_181_ = ((class348_sub19_sub1.aByteArray8984).size shl 8)
+        val i_181_ = ((class348_sub19_sub1.aByteArray8984!!).size shl 8)
         val i_182_ = i_180_ - i_179_
         if (i_182_ <= 0) anInt8980 = 0
         if (anInt8983 < 0) {
@@ -529,20 +529,20 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
             if (i_190_ > i_188_) i_190_ = i_188_
             anInt8972 += i
             if (anInt8979 == -256 && (anInt8983 and 0xff) == 0) {
-                if (Class282.aBoolean3652) i = method2900(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984, `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_190_, i_187_, this)
-                else i = method2908((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984, `is`, anInt8983, i, anInt8976, anInt8973, 0, i_190_, i_187_, this)
-            } else if (Class282.aBoolean3652) i = method2920(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984), `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_190_, i_187_, this, anInt8979, i_189_)
-            else i = method2912(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984), `is`, anInt8983, i, anInt8976, anInt8973, 0, i_190_, i_187_, this, anInt8979, i_189_)
+                if (Class282.aBoolean3652) i = method2900(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_190_, i_187_, this)
+                else i = method2908((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8976, anInt8973, 0, i_190_, i_187_, this)
+            } else if (Class282.aBoolean3652) i = method2920(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, anInt8971, anInt8978, 0, i_190_, i_187_, this, anInt8979, i_189_)
+            else i = method2912(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, anInt8973, 0, i_190_, i_187_, this, anInt8979, i_189_)
             anInt8972 -= i
             if (anInt8972 != 0) return i
             if (method2898()) return i_188_
         }
         if (anInt8979 == -256 && (anInt8983 and 0xff) == 0) {
-            if (Class282.aBoolean3652) return method2897(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984, `is`, anInt8983, i, anInt8970, anInt8974, 0, i_188_, i_187_, this)
-            return method2921(((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984), `is`, anInt8983, i, anInt8976, 0, i_188_, i_187_, this)
+            if (Class282.aBoolean3652) return method2897(0, (this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!, `is`, anInt8983, i, anInt8970, anInt8974, 0, i_188_, i_187_, this)
+            return method2921(((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, 0, i_188_, i_187_, this)
         }
-        if (Class282.aBoolean3652) return method2894(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984), `is`, anInt8983, i, anInt8970, anInt8974, 0, i_188_, i_187_, this, anInt8979, i_189_)
-        return method2907(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984), `is`, anInt8983, i, anInt8976, 0, i_188_, i_187_, this, anInt8979, i_189_)
+        if (Class282.aBoolean3652) return method2894(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8970, anInt8974, 0, i_188_, i_187_, this, anInt8979, i_189_)
+        return method2907(0, 0, ((this.aClass348_Sub19_6787 as Class348_Sub19_Sub1).aByteArray8984!!), `is`, anInt8983, i, anInt8976, 0, i_188_, i_187_, this, anInt8979, i_189_)
     }
 
     companion object {
@@ -938,7 +938,7 @@ class Class348_Sub16_Sub5 private constructor(class348_sub19_sub1: Class348_Sub1
 
         @JvmStatic
         fun method2911(class348_sub19_sub1: Class348_Sub19_Sub1, i: Int, i_104_: Int, i_105_: Int): Class348_Sub16_Sub5? {
-            if (class348_sub19_sub1.aByteArray8984 == null || (class348_sub19_sub1.aByteArray8984).size == 0) return null
+            if (class348_sub19_sub1.aByteArray8984 == null || (class348_sub19_sub1.aByteArray8984!!).size == 0) return null
             return Class348_Sub16_Sub5(class348_sub19_sub1, i, i_104_, i_105_)
         }
 
