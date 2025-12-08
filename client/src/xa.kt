@@ -1,23 +1,23 @@
 /* xa - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+internal class xa(i: Int, i_1_: Int) : Interface13, Interface19 {
+    @JvmField
+    var nativeid: Long = 0L
 
-final class xa implements Interface13, Interface19 {
-    long nativeid = 0L;
+    private external fun r(i: Int, i_0_: Int)
 
-    private final native void r(int i, int i_0_);
+    private external fun va(l: Long, bool: Boolean)
 
-    private final native void va(long l, boolean bool);
-
-    public final void w(boolean bool) {
-        va(this.nativeid, bool);
+    override fun w(bool: Boolean) {
+        va(this.nativeid, bool)
     }
 
-    protected final void finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this);
+    protected fun finalize() {
+        if (this.nativeid != 0L) Class257.method1947(0, this)
     }
 
-    xa(int i, int i_1_) {
-        r(i, i_1_);
+    init {
+        r(i, i_1_)
     }
 }

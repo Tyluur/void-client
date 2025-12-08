@@ -1,23 +1,22 @@
 /* ya - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+internal class ya(var_oa: oa?, i: Int) : za(), Interface19 {
+    var nativeid: Long = 0
 
-final class ya extends za implements Interface19 {
-    long nativeid;
+    external override fun w(bool: Boolean)
 
-    public final native void w(boolean bool);
+    external fun ga()
 
-    final native void ga();
-
-    protected final void finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this);
+    protected fun finalize() {
+        if (this.nativeid != 0L) Class257.method1947(0, this)
     }
 
-    private final native void aa(oa var_oa, int i);
+    private external fun aa(var_oa: oa?, i: Int)
 
-    final native void r();
+    external fun r()
 
-    ya(oa var_oa, int i) {
-        aa(var_oa, i);
+    init {
+        aa(var_oa, i)
     }
 }
