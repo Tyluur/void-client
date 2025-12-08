@@ -451,7 +451,6 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
     }
 
     fun method3735(i: Int) {
-        if (i != 9473) method3661(-10, -73, null, null)
         if (anInt7765 != 4) {
             method3763(i xor 0x3201)
             method3807(false, 2)
@@ -1780,7 +1779,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         this.anInt7733 = 1 shl this.anInt7731
     }
 
-    override fun method3661(i: Int, i_210_: Int, `is`: IntArray?, is_211_: IntArray?): aa {
+    override fun method3661(i: Int, i_210_: Int, `is`: IntArray, is_211_: IntArray?): aa {
         try {
             anInt7589++
             return method4009(i, `is`, is_211_, 0, this, i_210_)
@@ -4009,7 +4008,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 i_322_++
             }
             for (i_433_ in 0..<Class45.anInt669) {
-                val i_434_ = Class258_Sub4.anIntArray8557[i_433_]
+                val i_434_ = Class258_Sub4.anIntArray8557!![i_433_]
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3
                 if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((Class282.aClass356_3654.method3480((-2048 + i_434_).toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 else class318_sub1_sub3_sub3 = Class294.aPlayerArray5058[i_434_]
