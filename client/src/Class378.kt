@@ -119,7 +119,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         /* empty */
     }
 
-    override fun method3872(i: Int, i_10_: Int, class304: Class304?, bool: Boolean, i_11_: Int, `is`: ByteArray?): Interface18_Impl1? {
+    override fun method3872(i: Int, i_10_: Int, class304: Class304, bool: Boolean, i_11_: Int, `is`: ByteArray?): Interface18_Impl1? {
         if (bool != true) return null
         return Class310_Sub3(this, class304, i_10_, i_11_, i, `is`)
     }
@@ -508,7 +508,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i != 3) method3882(51.toByte())
     }
 
-    override fun method3843(i: Int, i_49_: Int, i_50_: Int, i_51_: Int, `is`: ByteArray?, class304: Class304?, i_52_: Int, bool: Boolean): Interface18_Impl3 {
+    override fun method3843(i: Int, i_49_: Int, i_50_: Int, i_51_: Int, `is`: ByteArray?, class304: Class304, i_52_: Int, bool: Boolean): Interface18_Impl3 {
         if (i_52_ != 32) anInt9785 = 94
         return Class310_Sub2(this, class304, i_50_, i, bool, `is`, i_49_, i_51_)
     }
@@ -657,7 +657,6 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         this.anIDirect3DDevice9810!!.SetRenderState(9, 2)
         this.anIDirect3DDevice9810!!.SetRenderState(23, 4)
         this.anIDirect3DDevice9810!!.SetRenderState(25, 5)
-        if (i <= 45) method3861(109, (-95).toByte(), -59, null, null)
         this.anIDirect3DDevice9810!!.SetRenderState(24, 0)
         this.anIDirect3DDevice9810!!.SetRenderState(22, 2)
         this.anIDirect3DDevice9810!!.SetRenderState(147, 1)
@@ -699,7 +698,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i != 1) aBoolean9801 = true
     }
 
-    override fun method3861(i: Int, i_73_: Byte, i_74_: Int, class68: Class68?, class304: Class304?): Interface18_Impl3? {
+    override fun method3861(i: Int, i_73_: Byte, i_74_: Int, class68: Class68, class304: Class304): Interface18_Impl3? {
         if (i_73_.toInt() != -84) return null
         return Class310_Sub2(this, class304, class68, i_74_, i)
     }

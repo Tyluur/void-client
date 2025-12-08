@@ -23,8 +23,8 @@ class PixelBuffer(arg0: hb?) : uda(arg0), Buffer {
 
     private external fun putub(arg0: ByteArray?, arg1: Int, arg2: Int, arg3: Int)
 
-    fun a(arg0: IntArray, arg1: Int, arg2: Int, arg3: Int) {
-        if ((arg2 < 0) or (arg1 + arg3 > arg0.size) or (arg1 < 0) or (arg0 == null) || arg3 * 4 + arg2 > this.getSize()) {
+    fun a(arg0: IntArray?, arg1: Int, arg2: Int, arg3: Int) {
+        if ((arg2 < 0) or (arg1 + arg3 > (arg0?.size ?: 0)) or (arg1 < 0) or (arg0 == null) || arg3 * 4 + arg2 > this.getSize()) {
             throw fda()
         }
         this.puti(arg0, arg1, arg2, arg3)
