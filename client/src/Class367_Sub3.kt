@@ -1,70 +1,89 @@
 /* Class367_Sub3 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class367_Sub3 extends Class367 {
-    static int anInt7298;
-    static int[] anIntArray7299;
-    static int anInt7300;
-    static Class114 aClass114_7301 = new Class114(21, -1);
-    static int anInt7302;
-    static int anInt7303;
-    static boolean[] aBooleanArray7304 = new boolean[100];
-    static int anInt7305;
-    static int anInt7306;
-    static int anInt7307;
-
-    final void method3525(int i, boolean bool) {
-        this.aHa_Sub3_4479.method3943(true, i + -47145);
-        anInt7306++;
-        if (i != 15192) method3540(26, 92, -76, -90, 76, -7, -18, -119, 33, false);
+* Visit http://jode.sourceforge.net/
+*/
+class Class367_Sub3 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha_Sub3) {
+    override fun method3525(i: Int, bool: Boolean) {
+        this.aHa_Sub3_4479.method3943(true, i + -47145)
+        anInt7306++
+        if (i != 15192) method3540(26, 92, -76, -90, 76, -7, -18, -119, 33, false)
     }
 
-    public static void method3539(byte i) {
-        int i_0_ = 74 % ((72 - i) / 37);
-        aBooleanArray7304 = null;
-        aClass114_7301 = null;
-        anIntArray7299 = null;
+    override fun method3527(i: Int, interface18: Interface18?, i_1_: Int) {
+        if (i_1_ != -16776) aClass114_7301 = null
+        this.aHa_Sub3_4479.method3850((-105).toByte(), interface18)
+        anInt7300++
+        this.aHa_Sub3_4479.method3923(true, i)
     }
 
-    final void method3527(int i, Interface18 interface18, int i_1_) {
-        if (i_1_ != -16776) aClass114_7301 = null;
-        this.aHa_Sub3_4479.method3850((byte) -105, interface18);
-        anInt7300++;
-        this.aHa_Sub3_4479.method3923(true, i);
+    override fun method3520(i: Byte) {
+        anInt7305++
+        if (i.toInt() != 87) method3530(71)
+        this.aHa_Sub3_4479.method3943(false, i + -32040)
     }
 
-    final void method3520(byte i) {
-        anInt7305++;
-        if (i != 87) method3530(71);
-        this.aHa_Sub3_4479.method3943(false, i + -32040);
+    override fun method3521(bool: Boolean, i: Byte) {
+        anInt7303++
+        if (i.toInt() != -103) method3527(-78, null, -100)
     }
 
-    final void method3521(boolean bool, byte i) {
-        anInt7303++;
-        if (i != -103) method3527(-78, null, -100);
+    override fun method3530(i: Int): Boolean {
+        if (i >= -57) return true
+        anInt7307++
+        return true
     }
 
-    Class367_Sub3(ha_Sub3 var_ha_Sub3) {
-        super(var_ha_Sub3);
+    override fun method3526(i: Int, i_10_: Int, i_11_: Int) {
+        if (i != 10756) aClass114_7301 = null
+        anInt7298++
     }
 
-    final boolean method3530(int i) {
-        if (i >= -57) return true;
-        anInt7307++;
-        return true;
-    }
+    companion object {
+        @JvmField
+        var anInt7298: Int = 0
+        @JvmField
+        var anIntArray7299: IntArray? = null
+        @JvmField
+        var anInt7300: Int = 0
+        @JvmField
+        var aClass114_7301: Class114? = Class114(21, -1)
+        @JvmField
+        var anInt7302: Int = 0
+        @JvmField
+        var anInt7303: Int = 0
+        @JvmField
+        var aBooleanArray7304: BooleanArray? = BooleanArray(100)
+        @JvmField
+        var anInt7305: Int = 0
+        @JvmField
+        var anInt7306: Int = 0
+        @JvmField
+        var anInt7307: Int = 0
 
-    static final void method3540(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, boolean bool) {
-        if (i_6_ >= Class369.anInt4960 && Class113.anInt1745 >= i_6_ && Class369.anInt4960 <= i_5_ && Class113.anInt1745 >= i_5_ && i_7_ >= Class369.anInt4960 && i_7_ <= Class113.anInt1745 && Class369.anInt4960 <= i_9_ && Class113.anInt1745 >= i_9_ && i >= Class132.anInt1910 && Class38.anInt513 >= i && i_2_ >= Class132.anInt1910 && Class38.anInt513 >= i_2_ && Class132.anInt1910 <= i_8_ && i_8_ <= Class38.anInt513 && Class132.anInt1910 <= i_4_ && i_4_ <= Class38.anInt513)
-            Class348_Sub31.method3009(i_2_, i_8_, i_5_, i_9_, i_4_, (byte) -1, i_7_, i, i_3_, i_6_);
-        else Class316.method2364(i_3_, i_7_, i_6_, i_2_, i_5_, i_8_, i_9_, i, 3, i_4_);
-        if (bool != true) method3540(37, -122, 69, -89, -8, -19, 89, 112, 12, false);
-        anInt7302++;
-    }
+        @JvmStatic
+        fun method3539(i: Byte) {
+            val i_0_ = 74 % ((72 - i) / 37)
+            aBooleanArray7304 = null
+            aClass114_7301 = null
+            anIntArray7299 = null
+        }
 
-    final void method3526(int i, int i_10_, int i_11_) {
-        if (i != 10756) aClass114_7301 = null;
-        anInt7298++;
+        @JvmStatic
+        fun method3540(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, bool: Boolean) {
+            if (i_6_ >= Class369.anInt4960 && Class113.anInt1745 >= i_6_ && Class369.anInt4960 <= i_5_ && Class113.anInt1745 >= i_5_ && i_7_ >= Class369.anInt4960 && i_7_ <= Class113.anInt1745 && Class369.anInt4960 <= i_9_ && Class113.anInt1745 >= i_9_ && i >= Class132.anInt1910 && Class38.anInt513 >= i && i_2_ >= Class132.anInt1910 && Class38.anInt513 >= i_2_ && Class132.anInt1910 <= i_8_ && i_8_ <= Class38.anInt513 && Class132.anInt1910 <= i_4_ && i_4_ <= Class38.anInt513) Class348_Sub31.method3009(
+                i_2_,
+                i_8_,
+                i_5_,
+                i_9_,
+                i_4_,
+                (-1).toByte(),
+                i_7_,
+                i,
+                i_3_,
+                i_6_
+            )
+            else Class316.method2364(i_3_, i_7_, i_6_, i_2_, i_5_, i_8_, i_9_, i, 3, i_4_)
+            if (bool != true) method3540(37, -122, 69, -89, -8, -19, 89, 112, 12, false)
+            anInt7302++
+        }
     }
 }

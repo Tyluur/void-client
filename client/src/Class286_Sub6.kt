@@ -166,17 +166,17 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                         if (Class348_Sub40_Sub35.anInt9444 <= 0) {
                             Class348_Sub43.anInt7068 = 0
                             Class98.aClass348_Sub16_Sub3_1564.method2861(0, Class58.anInt1059)
-                            for (i in Class367_Sub3.anIntArray7299.indices) {
-                                Class98.aClass348_Sub16_Sub3_1564.method2843(Class367_Sub3.anIntArray7299[i], i, -7836)
-                                Class367_Sub3.anIntArray7299[i] = 255
+                            for (i in Class367_Sub3.anIntArray7299!!.indices) {
+                                Class98.aClass348_Sub16_Sub3_1564.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
+                                Class367_Sub3.anIntArray7299!![i] = 255
                             }
                         } else {
                             Class348_Sub43.anInt7068 = 3
                             Class98.aClass348_Sub16_Sub3_1564.method2861(0, (min(Class58.anInt1059, Class348_Sub40_Sub35.anInt9444)))
                             var i = 0
-                            while ((Class367_Sub3.anIntArray7299.size > i)) {
-                                Class98.aClass348_Sub16_Sub3_1564.method2843(Class367_Sub3.anIntArray7299[i], i, -7836)
-                                Class367_Sub3.anIntArray7299[i] = 255
+                            while ((Class367_Sub3.anIntArray7299!!.size > i)) {
+                                Class98.aClass348_Sub16_Sub3_1564.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
+                                Class367_Sub3.anIntArray7299!![i] = 255
                                 i++
                             }
                         }

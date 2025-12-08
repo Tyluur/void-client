@@ -169,7 +169,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         val is_20_ = IntArray(5)
         for (i_21_ in 0..4) {
             var i_22_ = class348_sub49.readUnsignedByte(255)
-            if (Class367_Sub2.aShortArrayArrayArray7290.size < 1 || i_22_ < 0 || i_22_ >= Class367_Sub2.aShortArrayArrayArray7290[0][i_21_].size) i_22_ = 0
+            if (Class367_Sub2.aShortArrayArrayArray7290!!.size < 1 || i_22_ < 0 || i_22_ >= Class367_Sub2.aShortArrayArrayArray7290!![0]!![i_21_]!!.size) i_22_ = 0
             is_20_[i_21_] = i_22_
         }
         anInt10520 = class348_sub49.readUnsignedShort(842397944)
@@ -421,7 +421,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     fun method2456(bool: Boolean, i: Int): String {
         anInt10550++
         var string: String? = ""
-        if (Class367_Sub9.aStringArray7378 != null) string += Class367_Sub9.aStringArray7378[aByte10552.toInt()]
+        if (Class367_Sub9.aStringArray7378 != null) string += Class367_Sub9.aStringArray7378!![aByte10552.toInt()]
         val `is`: IntArray?
         if (aByte10538.toInt() != 1 || Class239_Sub17.anIntArray6021 == null) `is` = RuntimeException_Sub1.anIntArray4603
         else `is` = Class239_Sub17.anIntArray6021
