@@ -5,7 +5,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 
-internal class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
+class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     private var anInt7465 = 0
     private var anInt7466 = 0
     private var aClass356_7467: Class356?

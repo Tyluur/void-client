@@ -5,7 +5,7 @@ import kotlin.math.min
 /* Class64 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal abstract class Class64 {
+public abstract class Class64 {
     @JvmField
     var aBoolean1124: Boolean = false
     abstract fun FA(i: Int)

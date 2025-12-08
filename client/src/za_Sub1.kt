@@ -1,6 +1,6 @@
 import jaclib.memory.heap.NativeHeap
 
-internal class za_Sub1(i: Int) : za() {
+class za_Sub1(i: Int) : za() {
     @JvmField
     var aNativeHeap9770: NativeHeap
 

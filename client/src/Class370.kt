@@ -3,7 +3,7 @@ import kotlin.math.pow
 /* Class370 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal class Class370 {
+class Class370 {
     @JvmField
     var anInt4514: Int
     private lateinit var aFloatArrayArray4515: Array<FloatArray?>

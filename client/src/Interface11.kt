@@ -1,7 +1,7 @@
 /* Interface11 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-internal interface Interface11 {
+interface Interface11 {
     fun method45(i: Byte)
 
     fun method46(i: Int)

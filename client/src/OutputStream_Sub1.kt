@@ -4,7 +4,7 @@ import java.io.OutputStream
 import java.util.*
 import kotlin.math.sin
 
-internal class OutputStream_Sub1 : OutputStream() {
+class OutputStream_Sub1 : OutputStream() {
     @Throws(IOException::class)
     override fun write(i: Int) {
         anInt96++

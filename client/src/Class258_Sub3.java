@@ -7,7 +7,7 @@ import jaggl.OpenGL;
 import java.awt.*;
 import java.awt.image.PixelGrabber;
 
-class Class258_Sub3 extends Class258 {
+public class Class258_Sub3 extends Class258 {
     static int anInt8539;
     static int anInt8540;
     static int anInt8541;

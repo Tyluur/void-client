@@ -3,7 +3,7 @@ import java.awt.event.MouseEvent
 import java.awt.event.MouseListener
 import java.awt.event.MouseMotionListener
 
-internal class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseListener, MouseMotionListener {
+class Class373_Sub2(component: Component?, bool: Boolean) : Class373(), MouseListener, MouseMotionListener {
     private var anInt7432 = 0
     private var aClass262_7441: Class262? = Class262()
     private var anInt7442 = 0

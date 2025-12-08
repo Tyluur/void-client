@@ -4,7 +4,7 @@
 
 import java.math.BigInteger;
 
-class Class348_Sub49 extends Class348 {
+public class Class348_Sub49 extends Class348 {
     static int anInt7137;
     static int anInt7138;
     static int anInt7139;

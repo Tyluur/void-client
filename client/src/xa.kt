@@ -1,7 +1,7 @@
 /* xa - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal class xa(i: Int, i_1_: Int) : Interface13, Interface19 {
+class xa(i: Int, i_1_: Int) : Interface13, Interface19 {
     @JvmField
     var nativeid: Long = 0L
 

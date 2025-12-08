@@ -1,7 +1,7 @@
 /* aa - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-internal abstract class aa {
+abstract class aa {
     companion object {
         @JvmField
         var anInt113: Int = 0

@@ -1,7 +1,7 @@
 import java.awt.Component
 import java.awt.event.*
 
-internal class Class373_Sub1(component: Component?, bool: Boolean) : Class373(), MouseListener, MouseMotionListener, MouseWheelListener {
+class Class373_Sub1(component: Component?, bool: Boolean) : Class373(), MouseListener, MouseMotionListener, MouseWheelListener {
     private var anInt7416 = 0
     private var anInt7417 = 0
     private var aClass262_7418: Class262? = Class262()

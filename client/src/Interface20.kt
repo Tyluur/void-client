@@ -1,6 +1,6 @@
 import java.awt.Component
 
-internal interface Interface20 {
+interface Interface20 {
     fun method74(i: Int, i_0_: Byte)
 
     fun method75(i: Byte, i_1_: Int): Int

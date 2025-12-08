@@ -80,7 +80,7 @@ import java.util.*
 import kotlin.math.max
 import kotlin.math.sqrt
 
-internal class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
+public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
     private var anInt7523 = 0
     private val aLong7553: Long
     private var aCanvas7575: Canvas? = null

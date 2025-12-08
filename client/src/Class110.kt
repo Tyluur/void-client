@@ -1,6 +1,6 @@
 import java.awt.Canvas
 
-internal abstract class Class110 {
+abstract class Class110 {
     @JvmField
     var anInt1704: Int = 0
     @JvmField

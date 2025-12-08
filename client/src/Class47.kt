@@ -1,7 +1,7 @@
 /* Class47 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal abstract class Class47 {
+abstract class Class47 {
     abstract fun method446(i: Int): Long
 
     companion object {

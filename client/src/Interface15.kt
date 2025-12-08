@@ -1,6 +1,6 @@
 /* Interface15 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-internal interface Interface15 {
+interface Interface15 {
     fun method54(i: Int, l: Long, class138: Class138?, `is`: IntArray?): String?
 }

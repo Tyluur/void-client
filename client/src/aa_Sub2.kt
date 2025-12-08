@@ -1,7 +1,7 @@
 /* aa_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal class aa_Sub2 : aa {
+class aa_Sub2 : aa {
     @JvmField
     var anInterface18_Impl3_5196: Interface18_Impl3? = null
 

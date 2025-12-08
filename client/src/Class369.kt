@@ -1,7 +1,7 @@
 /* Class369 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) : Interface12 {
+public open class Class369(class221: Class221?, class341: Class341?, i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) : Interface12 {
     @JvmField
     var anInt4959: Int = 0
     @JvmField

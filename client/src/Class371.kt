@@ -1,7 +1,7 @@
 /* Class371 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal class Class371 {
+class Class371 {
     @JvmField
     var anInt4520: Int = 0
     @JvmField

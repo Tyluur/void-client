@@ -1,7 +1,7 @@
 /* i - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal class i : Class64, Interface19 {
+class i : Class64, Interface19 {
     private val anOa5117: oa
     @JvmField
     var aClass342Array5118: Array<Class342?>? = null

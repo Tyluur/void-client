@@ -5,7 +5,7 @@ import jaggl.OpenGL.Companion.glGetIntegerv
 import jaggl.OpenGL.Companion.glProgramRawARB
 import kotlin.math.atan2
 
-internal class za_Sub2(i: Int) : za() {
+class za_Sub2(i: Int) : za() {
     @JvmField
     var aNativeHeap9782: NativeHeap
     fun method3445(i: Int) {

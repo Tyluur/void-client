@@ -65,7 +65,7 @@ import java.awt.Canvas
 import java.awt.Rectangle
 import java.util.*
 
-internal class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Class45?, i: Int) : ha_Sub3(canvas, l, var_d, class45, i, 1) {
+class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Class45?, i: Int) : ha_Sub3(canvas, l, var_d, class45, i, 1) {
     private var anOpenGL9856: OpenGL? = null
     private val aClass262_9869 = Class262()
     private var aClass262_9899: Class262? = Class262()

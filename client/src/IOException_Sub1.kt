@@ -1,6 +1,6 @@
 import java.io.IOException
 
-internal class IOException_Sub1(string: String?) : IOException(string) {
+class IOException_Sub1(string: String?) : IOException(string) {
     companion object {
         @JvmField
         var aBoolean86: Boolean = false

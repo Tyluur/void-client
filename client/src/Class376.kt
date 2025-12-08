@@ -2,7 +2,7 @@ import java.io.EOFException
 import java.io.IOException
 import java.io.InputStream
 
-internal class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
+class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
     private var anInt4546: Int
     private val aByteArray4554: ByteArray
     private var anInt4556 = 0

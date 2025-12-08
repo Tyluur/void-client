@@ -2,7 +2,7 @@ import java.awt.Canvas
 import java.awt.Rectangle
 import kotlin.math.max
 
-internal class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface19 {
+class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface19 {
     private var aYa5121: ya? = null
     var nativeid: Long = 0L
     private val aClass262_5123: Class262

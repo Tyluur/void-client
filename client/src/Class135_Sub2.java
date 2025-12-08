@@ -18,7 +18,7 @@ public final class Class135_Sub2 extends Class135 implements Interface8 {
     private static char[] aCharArray4845 = new char[64];
     static Class348_Sub42_Sub12 aClass348_Sub42_Sub12_4846;
 
-    final void method1152(int i) {
+    public final void method1152(int i) {
         anInt4840++;
         this.aHa_Sub2_1927.method3793(1, this);
         if (i >= -78) aClass161_4839 = null;

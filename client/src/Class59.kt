@@ -3,7 +3,7 @@ import java.util.*
 import kotlin.math.atan2
 import kotlin.math.pow
 
-internal abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
+abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
     private var aShortArray1069: ShortArray? = null
     @JvmField
     var anInt1071: Int = 4

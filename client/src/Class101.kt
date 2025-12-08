@@ -1,7 +1,7 @@
 /* Class101 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal abstract class Class101 {
+abstract class Class101 {
     abstract fun method890(`is`: IntArray?)
 
     abstract fun method891(i: Int, i_0_: Int, i_1_: Int)

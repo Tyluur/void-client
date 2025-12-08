@@ -1,7 +1,7 @@
 import java.util.*
 import kotlin.math.atan2
 
-internal class Player : Class318_Sub1_Sub3_Sub3() {
+class Player : Class318_Sub1_Sub3_Sub3() {
     @JvmField
     var anInt10516: Int = 0
     @JvmField

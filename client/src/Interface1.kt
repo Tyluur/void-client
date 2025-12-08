@@ -1,7 +1,7 @@
 /* Interface1 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-internal interface Interface1 {
+interface Interface1 {
     fun method7(i: Int)
 
     fun method8(i: Byte): Boolean

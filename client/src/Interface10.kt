@@ -1,7 +1,7 @@
 /* Interface10 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-internal interface Interface10 {
+interface Interface10 {
     fun method38(i: Int): Boolean
 
     fun method39(i: Int): Int

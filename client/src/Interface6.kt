@@ -1,7 +1,7 @@
 /* Interface6 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
-internal interface Interface6 {
+interface Interface6 {
     fun method26(i: Int): Int
 
     fun method27(i: Int): Int

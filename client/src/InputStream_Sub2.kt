@@ -1,6 +1,6 @@
 import java.io.InputStream
 
-internal class InputStream_Sub2 : InputStream() {
+class InputStream_Sub2 : InputStream() {
     override fun read(): Int {
         Class286_Sub5.method2161((-118).toByte(), 30000L)
         anInt80++

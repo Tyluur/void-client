@@ -1,7 +1,7 @@
 import java.io.IOException
 import java.io.OutputStream
 
-internal class OutputStream_Sub2 : OutputStream() {
+class OutputStream_Sub2 : OutputStream() {
     @Throws(IOException::class)
     override fun write(i: Int) {
         anInt104++

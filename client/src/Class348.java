@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-class Class348 {
+public class Class348 {
     static int anInt4285;
     static Class45 aClass45_4286;
     static int anInt4287;

@@ -1,7 +1,7 @@
 /* ja - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal class ja : Class101(), Interface19 {
+class ja : Class101(), Interface19 {
     @JvmField
     var nativeid: Long = 0
 

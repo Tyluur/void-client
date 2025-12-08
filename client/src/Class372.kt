@@ -1,7 +1,7 @@
 /* Class372 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-internal class Class372(var_ha_Sub3: ha_Sub3?, var_d: d?) {
+class Class372(var_ha_Sub3: ha_Sub3?, var_d: d?) {
     private val aHa_Sub3_4526: ha_Sub3?
     private val aD4528: d?
     private val aClass60_4531 = Class60(256)
