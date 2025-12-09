@@ -1,23 +1,27 @@
 /* Class63 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class63 {
+    @JvmField
+    var anInt1118: Int = 0
+    @JvmField
+    var anInt1119: Int = 0
+    @JvmField
+    var anInt1122: Int = 0
 
-public final class Class63 {
-    static int anInt1117;
-    int anInt1118;
-    int anInt1119;
-    static Class114 aClass114_1120 = new Class114(53, -2);
-    static int anInt1121 = 0;
-    int anInt1122;
-    static Class114 aClass114_1123 = new Class114(78, -1);
+    companion object {
+        @JvmField
+        var anInt1117: Int = 0
+        var aClass114_1120: Class114? = Class114(53, -2)
+        @JvmField
+        var anInt1121: Int = 0
+        var aClass114_1123: Class114? = Class114(78, -1)
 
-    public static void method601(byte i) {
-        aClass114_1120 = null;
-        aClass114_1123 = null;
-        if (i != -85) method601((byte) -70);
-    }
-
-    public Class63() {
-        /* empty */
+        @JvmStatic
+        fun method601(i: Byte) {
+            aClass114_1120 = null
+            aClass114_1123 = null
+            if (i.toInt() != -85) Companion.method601((-70).toByte())
+        }
     }
 }
