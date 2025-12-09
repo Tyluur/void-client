@@ -58,8 +58,8 @@ class Class348_Sub42_Sub16_Sub2 : Class348_Sub42_Sub16() {
                 anInt10462++
                 class348.aClass348_4295 = class348_0_!!.aClass348_4295
                 class348.aClass348_4294 = class348_0_
-                class348.aClass348_4295.aClass348_4294 = class348
-                class348.aClass348_4294.aClass348_4295 = class348
+                class348.aClass348_4295!!.aClass348_4294 = class348
+                class348.aClass348_4294!!.aClass348_4295 = class348
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("qh.K(" + i + ',' + (if (class348 != null) "{...}" else "null") + ',' + (if (class348_0_ != null) "{...}" else "null") + ')'))
             }

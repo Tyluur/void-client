@@ -40,7 +40,7 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
                     method2882(class348_sub30)
                 } else {
                     class348_sub30.anInt6912 = i_1_
-                    method2881(class348_sub30.aClass348_4294, class348_sub30)
+                    method2881(class348_sub30.aClass348_4294!!, class348_sub30)
                 }
             }
         } while (i != 0)
@@ -53,7 +53,7 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
     private fun method2881(class348: Class348, class348_sub30: Class348_Sub30) {
         var class348 = class348
         while ( /**/(class348 !== aClass262_8966.aClass348_3334 && ((class348 as Class348_Sub30).anInt6912 <= class348_sub30.anInt6912))) {
-            class348 = class348.aClass348_4294
+            class348 = class348.aClass348_4294!!
         }
         method3265(-106, class348_sub30, class348)
         anInt8967 = (aClass262_8966.aClass348_3334.aClass348_4294 as Class348_Sub30).anInt6912
@@ -141,7 +141,7 @@ class Class348_Sub16_Sub4 : Class348_Sub16() {
                     method2882(class348_sub30)
                 } else {
                     class348_sub30.anInt6912 = i_5_
-                    method2881(class348_sub30.aClass348_4294, class348_sub30)
+                    method2881(class348_sub30.aClass348_4294!!, class348_sub30)
                 }
             }
         } while (i_3_ != 0)
