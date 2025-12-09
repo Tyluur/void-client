@@ -90,8 +90,8 @@ object Class27 {
         anInt393++
         var i_5_ = 0
         if (i <= 70) return -84
-        while ( /**/i_5_ < Class59_Sub2.aStringArray5305.size) {
-            if (Class59_Sub2.aStringArray5305[i_5_].equals(string, ignoreCase = true)) return i_5_
+        while ( /**/i_5_ < Class59_Sub2.aStringArray5305!!.size) {
+            if (Class59_Sub2.aStringArray5305!![i_5_].equals(string, ignoreCase = true)) return i_5_
             i_5_++
         }
         return -1

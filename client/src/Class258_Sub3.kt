@@ -38,7 +38,7 @@ open class Class258_Sub3 : Class258 {
         anInt8545 = i_5_
     }
 
-    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, fs: FloatArray?, i_9_: Int) : super(var_ha_Sub2, i, i_6_, i_8_ * i_7_, bool) {
+    internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, fs: FloatArray, i_9_: Int) : super(var_ha_Sub2, i, i_6_, i_8_ * i_7_, bool) {
         anInt8545 = -1
         try {
             this.anInt8547 = i_7_
