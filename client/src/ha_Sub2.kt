@@ -3787,7 +3787,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                         var i_372_ = 0
                                         var i_373_ = 0
                                         var i_374_ = 0
-                                        val class105_375_ = class31.method327((Class348_Sub8.aHa6654), (-96).toByte())
+                                        val class105_375_ = class31.method327((Class348_Sub8.aHa6654!!), (-96).toByte())
                                         if (class105_375_ != null) {
                                             i_355_ = class105_375_.method971()
                                             val i_376_ = class105_375_.method969()
@@ -3795,7 +3795,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                             if (i_374_ < i_376_) i_374_ = i_376_
                                             i_359_ = Class151.anIntArray2062[0]
                                         }
-                                        val class105_377_ = class31.method331((Class348_Sub8.aHa6654), (-75).toByte())
+                                        val class105_377_ = class31.method331((Class348_Sub8.aHa6654!!), (-75).toByte())
                                         if (class105_377_ != null) {
                                             i_356_ = class105_377_.method971()
                                             val i_378_ = class105_377_.method969()
@@ -3803,7 +3803,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                             if (i_378_ > i_374_) i_374_ = i_378_
                                             i_360_ = Class151.anIntArray2062[0]
                                         }
-                                        val class105_379_ = class31.method324((Class348_Sub8.aHa6654), true)
+                                        val class105_379_ = class31.method324((Class348_Sub8.aHa6654!!), true)
                                         if (class105_379_ != null) {
                                             i_357_ = class105_379_.method971()
                                             val i_380_ = class105_379_.method969()
@@ -3811,7 +3811,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                             class105_379_.method984(Class151.anIntArray2062)
                                             i_361_ = Class151.anIntArray2062[0]
                                         }
-                                        val class105_381_ = class31.method325((Class348_Sub8.aHa6654), 105)
+                                        val class105_381_ = class31.method325((Class348_Sub8.aHa6654!!), 105)
                                         if (class105_381_ != null) {
                                             i_358_ = class105_381_.method971()
                                             val i_382_ = class105_381_.method969()
@@ -3820,7 +3820,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                             i_362_ = Class151.anIntArray2062[0]
                                         }
                                         if (class31_349_ != null) {
-                                            class105 = (class31_349_.method327(Class348_Sub8.aHa6654, 110.toByte()))
+                                            class105 = (class31_349_.method327(Class348_Sub8.aHa6654!!, 110.toByte()))
                                             if (class105 != null) {
                                                 i_366_ = class105.method971()
                                                 val i_383_ = class105.method969()
@@ -3828,7 +3828,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                                 class105.method984(Class151.anIntArray2062)
                                                 i_370_ = Class151.anIntArray2062[0]
                                             }
-                                            class105_363_ = (class31_349_.method331(Class348_Sub8.aHa6654, (-80).toByte()))
+                                            class105_363_ = (class31_349_.method331(Class348_Sub8.aHa6654!!, (-80).toByte()))
                                             if (class105_363_ != null) {
                                                 i_367_ = class105_363_.method971()
                                                 val i_384_ = class105_363_.method969()
@@ -3836,7 +3836,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                                 class105_363_.method984(Class151.anIntArray2062)
                                                 i_371_ = Class151.anIntArray2062[0]
                                             }
-                                            class105_364_ = (class31_349_.method324(Class348_Sub8.aHa6654, true))
+                                            class105_364_ = (class31_349_.method324(Class348_Sub8.aHa6654!!, true))
                                             if (class105_364_ != null) {
                                                 i_368_ = class105_364_.method971()
                                                 val i_385_ = class105_364_.method969()
@@ -3844,7 +3844,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                                 if (i_385_ > i_374_) i_374_ = i_385_
                                                 i_372_ = Class151.anIntArray2062[0]
                                             }
-                                            class105_365_ = (class31_349_.method325(Class348_Sub8.aHa6654, i_316_ xor 0x35))
+                                            class105_365_ = (class31_349_.method325(Class348_Sub8.aHa6654!!, i_316_ xor 0x35))
                                             if (class105_365_ != null) {
                                                 i_369_ = class105_365_.method971()
                                                 val i_386_ = class105_365_.method969()

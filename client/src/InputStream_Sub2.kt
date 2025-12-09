@@ -36,7 +36,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_0_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByteSubtract((-124).toByte())
                     val i_1_ = i_0_ shr 2
                     val i_2_ = 0x3 and i_0_
-                    val i_3_ = Class36.anIntArray487[i_1_]
+                    val i_3_ = Class36.anIntArray487!![i_1_]
                     val i_4_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     val i_5_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(65.toByte())
                     val i_6_ = Class278.anInt3581 + (0x7 and (i_5_ shr 4))
@@ -112,7 +112,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_46_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteInverse(21.toByte())
                     val i_47_ = i_46_ shr 2
                     val i_48_ = i_46_ and 0x3
-                    val i_49_ = Class36.anIntArray487[i_47_]
+                    val i_49_ = Class36.anIntArray487!![i_47_]
                     ha_Sub3.method3824(i_45_, i_42_, i_47_, i_44_, i_48_, 115, Class348_Sub40_Sub12.anInt9200, i_49_)
                 } else if (class74 == Class286_Sub1.aClass74_6201) {
                     val i_50_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
@@ -202,7 +202,7 @@ class InputStream_Sub2 : InputStream() {
                     val i_82_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(83.toByte())
                     val i_83_ = i_82_ shr 2
                     val i_84_ = 0x3 and i_82_
-                    val i_85_ = Class36.anIntArray487[i_83_]
+                    val i_85_ = Class36.anIntArray487!![i_83_]
                     val i_86_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i.toInt() xor 0xf7)
                     val i_87_ = Class278.anInt3581 + (i_86_ shr 4 and 0x7)
                     val i_88_ = Class73.anInt4786 - -(0x7 and i_86_)

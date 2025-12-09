@@ -122,7 +122,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
                 if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169!!
                 else container = Class93.anApplet1530
             } else container = Class52.aFrame4904
-        } else container = Class34.aFrame476
+        } else container = Class34.aFrame476 as Container
         container.setLayout(null)
         Class305.aCanvas3869 = Canvas_Sub1(this)
         container.add(Class305.aCanvas3869)
