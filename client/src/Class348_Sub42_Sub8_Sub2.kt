@@ -1130,7 +1130,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     if (string.equals("null", ignoreCase = true)) string = null
                     Class318_Sub1_Sub2_Sub1.aStringArray10195[i_137_ + -1] = string
                     Canvas_Sub1.anIntArray60!![i_137_ + -1] = i
-                    Class71.aBooleanArray1214[i_137_ - 1] = i_138_ == 0
+                    Class71.aBooleanArray1214!![i_137_ - 1] = i_138_ == 0
                 }
                 Class348_Sub3.aClass114_6584 = null
                 return true

@@ -249,8 +249,8 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         anInt10263++
         val i_19_ = ((this.aShort8743 + this.aShort8751) shr 1)
         val i_20_ = ((this.aShort8750 + this.aShort8747) shr 1)
-        val i_21_ = Class70.anIntArray1207[i]
-        val i_22_ = Class70.anIntArray1204[i]
+        val i_21_ = Class70.anIntArray1207!![i]
+        val i_22_ = Class70.anIntArray1204!![i]
         val i_23_ = -i_14_ / 2
         val i_24_ = -i_16_ / 2
         val i_25_ = i_23_ * i_22_ + i_24_ * i_21_ shr 14
@@ -609,7 +609,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             var i_109_ = -1
             var i_110_ = 0
             if (i_100_ >= 0) {
-                val class31 = Class73.aClass219_4782.method1601(46, i_100_)
+                val class31 = Class73.aClass219_4782!!.method1601(46, i_100_)
                 i_109_ = class31.anInt431
                 i_110_ = class31.anInt434
             }
@@ -824,11 +824,11 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         @JvmStatic
         fun method2433() {
             if (Class65.aClass357ArrayArrayArray1148 != null) {
-                for (i in Class65.aClass357ArrayArrayArray1148.indices) {
+                for (i in Class65.aClass357ArrayArrayArray1148!!.indices) {
                     for (i_80_ in 0..<Class318_Sub7.anInt6451) {
                         for (i_81_ in 0..<Class348_Sub41.anInt7054) {
-                            if ((Class65.aClass357ArrayArrayArray1148[i][i_80_][i_81_]) != null) Class65.aClass357ArrayArrayArray1148[i][i_80_][i_81_].method3485(true)
-                            Class65.aClass357ArrayArrayArray1148[i][i_80_][i_81_] = null
+                            if ((Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
+                            Class65.aClass357ArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
                         }
                     }
                 }
@@ -881,7 +881,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             }
             Class363.method3513(-120)
             Class71.aClass76_1208 = Class71.aClass76_1210
-            Class71.aClass76_1208.method775(69.toByte())
+            Class71.aClass76_1208!!.method775(69.toByte())
             Class348_Sub1_Sub2.aByteArrayArray8816 = null
             Class342.anIntArrayArray4253 = null
             Class239_Sub1.aShortArrayArray5847 = null

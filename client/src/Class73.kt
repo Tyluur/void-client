@@ -1,76 +1,86 @@
 /* Class73 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class73 implements Interface7 {
-    static float[] aFloatArray4772;
-    static int anInt4773;
-    static int anInt4774;
-    static int anInt4775;
-    static int anInt4776;
-    static int anInt4777;
-    private final String aString4778;
-    static Class114 aClass114_4779;
-    static int[] anIntArray4780;
-    static int anInt4781;
-    static Class219 aClass219_4782;
-    static long aLong4783 = 20000000L;
-    static int anInt4784;
-    private final Class45 aClass45_4785;
-    static int anInt4786;
-
-    public static void method741(byte i) {
-        aFloatArray4772 = null;
-        anIntArray4780 = null;
-        if (i != -128) method743(113, -98);
-        aClass114_4779 = null;
-        aClass219_4782 = null;
+* Visit http://jode.sourceforge.net/
+*/
+class Class73 internal constructor(class45: Class45?, string: String?) : Interface7 {
+    private val aString4778: String?
+    private val aClass45_4785: Class45?
+    override fun method31(i: Int): Int {
+        val i_1_ = -62 / ((i - -43) / 62)
+        anInt4774++
+        if (aClass45_4785!!.method416((-74).toByte(), aString4778)) return 100
+        return 0
     }
 
-    static final Class189 method742(int i, int i_0_) {
-        anInt4777++;
-        Class189 class189 = (Class189) Class217.aClass60_2844.method583(i_0_, -104);
-        if (class189 != null) return class189;
-        byte[] is = Class369_Sub3.aClass45_8601.method410(-1860, 0, i_0_);
-        if (i != 104) method741((byte) 98);
-        class189 = new Class189();
-        if (is != null) class189.method1419(i_0_, new Class348_Sub49(is), (byte) 64);
-        Class217.aClass60_2844.method582(class189, i_0_, (byte) -114);
-        return class189;
+    override fun method32(i: Int): Class69? {
+        anInt4781++
+        if (i != -15004) aFloatArray4772 = null
+        return Class69.Companion.aClass69_1197
     }
 
-    public final int method31(int i) {
-        int i_1_ = -62 / ((i - -43) / 62);
-        anInt4774++;
-        if (aClass45_4785.method416((byte) -74, aString4778)) return 100;
-        return 0;
-    }
-
-    static final void method743(int i, int i_2_) {
-        anInt4775++;
-        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_2_, (byte) 105, i);//9
-        class348_sub42_sub15.method3251(i ^ ~0x3eb0);
-    }
-
-    public final Class69 method32(int i) {
-        anInt4781++;
-        if (i != -15004) aFloatArray4772 = null;
-        return Class69.aClass69_1197;
-    }
-
-    Class73(Class45 class45, String string) {
+    init {
         try {
-            aClass45_4785 = class45;
-            aString4778 = string;
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kk.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ')'));
+            aClass45_4785 = class45
+            aString4778 = string
+        } catch (runtimeexception: RuntimeException) {
+            throw Class348_Sub17.method2929(runtimeexception, ("kk.<init>(" + (if (class45 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
         }
     }
 
-    static {
-        anInt4776 = 0;
-        aFloatArray4772 = new float[16];
-        anIntArray4780 = new int[]{104, 120, 136, 168};
-        aClass114_4779 = new Class114(76, 6);
+    companion object {
+        var aFloatArray4772: FloatArray?
+        @JvmField
+        var anInt4773: Int = 0
+        @JvmField
+        var anInt4774: Int = 0
+        @JvmField
+        var anInt4775: Int = 0
+        @JvmField
+        var anInt4776: Int
+        @JvmField
+        var anInt4777: Int = 0
+        var aClass114_4779: Class114?
+        var anIntArray4780: IntArray?
+        @JvmField
+        var anInt4781: Int = 0
+        @JvmField
+        var aClass219_4782: Class219? = null
+        @JvmField
+        var aLong4783: Long = 20000000L
+        var anInt4784: Int = 0
+        var anInt4786: Int = 0
+
+        @JvmStatic
+        fun method741(i: Byte) {
+            aFloatArray4772 = null
+            anIntArray4780 = null
+            if (i.toInt() != -128) method743(113, -98)
+            aClass114_4779 = null
+            aClass219_4782 = null
+        }
+
+        fun method742(i: Int, i_0_: Int): Class189 {
+            anInt4777++
+            var class189 = Class217.aClass60_2844.method583(i_0_.toLong(), -104) as Class189?
+            if (class189 != null) return class189
+            val `is` = Class369_Sub3.aClass45_8601!!.method410(-1860, 0, i_0_)
+            if (i != 104) method741(98.toByte())
+            class189 = Class189()
+            if (`is` != null) class189.method1419(i_0_, Class348_Sub49(`is`), 64.toByte())
+            Class217.aClass60_2844.method582(class189, i_0_.toLong(), (-114).toByte())
+            return class189
+        }
+
+        fun method743(i: Int, i_2_: Int) {
+            anInt4775++
+            val class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_2_, 105.toByte(), i) //9
+            class348_sub42_sub15.method3251(i xor 0x3eb0.inv())
+        }
+
+        init {
+            anInt4776 = 0
+            aFloatArray4772 = FloatArray(16)
+            anIntArray4780 = intArrayOf(104, 120, 136, 168)
+            aClass114_4779 = Class114(76, 6)
+        }
     }
 }

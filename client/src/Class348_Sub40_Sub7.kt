@@ -472,8 +472,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     Class50_Sub1.aClass101_5209!!.method908(class46.anInt717)
                                                     Class50_Sub1.aClass101_5209!!.method891((class46.anInt688), (class46.anInt799), (class46.anInt787))
                                                 } else {
-                                                    val i_66_ = ((((class46.anInt716) shl 2) * (Class70.anIntArray1207[(class46.anInt757 shl 3)])) shr 14)
-                                                    val i_67_ = (((Class70.anIntArray1204[((class46.anInt757) shl 3)]) * ((class46.anInt716) shl 2)) shr 14)
+                                                    val i_66_ = ((((class46.anInt716) shl 2) * (Class70.anIntArray1207!![(class46.anInt757 shl 3)])) shr 14)
+                                                    val i_67_ = (((Class70.anIntArray1204!![((class46.anInt757) shl 3)]) * ((class46.anInt716) shl 2)) shr 14)
                                                     Class50_Sub1.aClass101_5209!!.method902(-(class46.anInt717) shl 3)
                                                     Class50_Sub1.aClass101_5209!!.method896((class46.anInt675) shl 3)
                                                     Class50_Sub1.aClass101_5209!!.method891(((class46.anInt808) shl 2), (((class46.anInt786) shl 2) + (i_66_ + i_60_)), ((class46.anInt786) shl 2) + i_67_)

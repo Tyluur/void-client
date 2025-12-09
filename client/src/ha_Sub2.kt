@@ -3557,7 +3557,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[`is`[i_322_]])
                 else {
-                    class318_sub1_sub3_sub3 = ((Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as Class348_Sub22).aNpc_6859)
+                    class318_sub1_sub3_sub3 = ((Class282.aClass356_3654.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as Class348_Sub22).aNpc_6859)
                     class79 = class318_sub1_sub3_sub3.aClass79_10505
                     if (class79.anIntArray1377 != null) {
                         class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), i_316_ + -3)
@@ -3716,7 +3716,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                             var i_343_ = 0
                             while (class302s.size > i_343_) {
                                 val class302 = class302s[i_343_]
-                                if (class302 != null && class302.anInt3840 == 1 && (class302.anInt3833 == Class74.anIntArray1233[i_322_ - i_321_])) {
+                                if (class302 != null && class302.anInt3840 == 1 && (class302.anInt3833 == Class74.anIntArray1233!![i_322_ - i_321_])) {
                                     val class105 = (Class239_Sub9.aClass105Array5933!![class302.anInt3831])!!
                                     if (class105.method969() > i_342_) i_342_ = class105.method969()
                                     if (Class367_Sub11.anInt7396 % 20 < 10) {
@@ -3739,7 +3739,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                     i_344_++
                                     continue
                                 }
-                                class31 = (Class73.aClass219_4782.method1601(46, (class318_sub1_sub3_sub3.anIntArray10259[i_344_])))
+                                class31 = (Class73.aClass219_4782!!.method1601(46, (class318_sub1_sub3_sub3.anIntArray10259[i_344_])))
                                 i_347_ = class31.anInt434
                             } else if (i_345_ < 0) {
                                 i_344_++
@@ -3747,7 +3747,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                             }
                             val i_348_ = (class318_sub1_sub3_sub3.anIntArray10304[i_344_])
                             var class31_349_: Class31? = null
-                            if (i_348_ >= 0) class31_349_ = Class73.aClass219_4782.method1601(46, i_348_)
+                            if (i_348_ >= 0) class31_349_ = Class73.aClass219_4782!!.method1601(46, i_348_)
                             if (-i_347_ + i_345_ <= Class367_Sub11.anInt7396) {
                                 val i_350_ = (class318_sub1_sub3_sub3.anIntArray10303[i_344_])
                                 if (i_350_ >= 0) {

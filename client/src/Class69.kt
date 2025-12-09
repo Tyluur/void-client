@@ -1,78 +1,90 @@
+import Class314_Sub1.Companion.method2352
+
 /* Class69 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class69 {
-    static int anInt1191;
-    static int anInt1192;
-    static int anInt1193;
-    static int anInt1194;
-    static Class69 aClass69_1195 = new Class69();
-    static int anInt1196;
-    static Class69 aClass69_1197 = new Class69();
-    static Class69 aClass69_1198 = new Class69();
-    static Class69 aClass69_1199 = new Class69();
-    static int anInt1200;
-    static Class173 aClass173_1201 = new Class173();
-    static int anInt1202;
-
-    static final void method720(int i, int i_0_) {
-        anInt1193++;
-        Class168.anInt2251 = i;
-        synchronized (Class130.aClass60_1894) {
-            if (i_0_ != 1226) aClass173_1201 = null;
-            Class130.aClass60_1894.method590(0);
-        }
-        synchronized (Class24.aClass60_355) {
-            Class24.aClass60_355.method590(0);
-        }
+* Visit http://jode.sourceforge.net/
+*/
+class Class69 {
+    override fun toString(): String {
+        anInt1192++
+        throw IllegalStateException()
     }
 
-    static final void method721(Class348_Sub42 class348_sub42, Class348_Sub42 class348_sub42_1_, int i) {
-        do {
-            try {
-                if (class348_sub42_1_.aClass348_Sub42_7060 != null) class348_sub42_1_.method3162(true);
-                anInt1194++;
-                class348_sub42_1_.aClass348_Sub42_7063 = class348_sub42;
-                class348_sub42_1_.aClass348_Sub42_7060 = class348_sub42.aClass348_Sub42_7060;
-                class348_sub42_1_.aClass348_Sub42_7060.aClass348_Sub42_7063 = class348_sub42_1_;
-                class348_sub42_1_.aClass348_Sub42_7063.aClass348_Sub42_7060 = class348_sub42_1_;
-                if (i == -1) break;
-                aClass69_1199 = null;
-            } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kea.B(" + (class348_sub42 != null ? "{...}" : "null") + ',' + (class348_sub42_1_ != null ? "{...}" : "null") + ',' + i + ')'));
+    companion object {
+        @JvmField
+        var anInt1191: Int = 0
+        @JvmField
+        var anInt1192: Int = 0
+        @JvmField
+        var anInt1193: Int = 0
+        @JvmField
+        var anInt1194: Int = 0
+        @JvmField
+        var aClass69_1195: Class69? = Class69()
+        @JvmField
+        var anInt1196: Int = 0
+        @JvmField
+        var aClass69_1197: Class69? = Class69()
+        @JvmField
+        var aClass69_1198: Class69? = Class69()
+        @JvmField
+        var aClass69_1199: Class69? = Class69()
+        @JvmField
+        var anInt1200: Int = 0
+        var aClass173_1201: Class173? = Class173()
+        @JvmField
+        var anInt1202: Int = 0
+
+        fun method720(i: Int, i_0_: Int) {
+            anInt1193++
+            Class168.anInt2251 = i
+            synchronized(Class130.aClass60_1894!!) {
+                if (i_0_ != 1226) aClass173_1201 = null
+                Class130.aClass60_1894!!.method590(0)
             }
-            break;
-        } while (false);
-    }
+            synchronized(Class24.aClass60_355!!) {
+                Class24.aClass60_355!!.method590(0)
+            }
+        }
 
-    public Class69() {
-        /* empty */
-    }
+        @JvmStatic
+        fun method721(class348_sub42: Class348_Sub42?, class348_sub42_1_: Class348_Sub42?, i: Int) {
+            do {
+                try {
+                    if (class348_sub42_1_!!.aClass348_Sub42_7060 != null) class348_sub42_1_.method3162(true)
+                    anInt1194++
+                    class348_sub42_1_.aClass348_Sub42_7063 = class348_sub42
+                    class348_sub42_1_.aClass348_Sub42_7060 = class348_sub42!!.aClass348_Sub42_7060
+                    class348_sub42_1_.aClass348_Sub42_7060.aClass348_Sub42_7063 = class348_sub42_1_
+                    class348_sub42_1_.aClass348_Sub42_7063.aClass348_Sub42_7060 = class348_sub42_1_
+                    if (i == -1) break
+                    aClass69_1199 = null
+                } catch (runtimeexception: RuntimeException) {
+                    throw Class348_Sub17.method2929(runtimeexception, ("kea.B(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_1_ != null) "{...}" else "null") + ',' + i + ')'))
+                }
+                break
+            } while (false)
+        }
 
-    public static void method722(int i) {
-        aClass69_1198 = null;
-        if (i != 13569) aClass69_1199 = null;
-        aClass69_1197 = null;
-        aClass69_1195 = null;
-        aClass69_1199 = null;
-        aClass173_1201 = null;
-    }
+        @JvmStatic
+        fun method722(i: Int) {
+            aClass69_1198 = null
+            if (i != 13569) aClass69_1199 = null
+            aClass69_1197 = null
+            aClass69_1195 = null
+            aClass69_1199 = null
+            aClass173_1201 = null
+        }
 
-    static final boolean method723(int i, int i_2_, byte i_3_) {
-        anInt1196++;
-        if (i_3_ >= -66) return true;
-        return (Class314_Sub1.method2352(113, i_2_, i) & Class156.method1238(i, i_2_, -29));
-    }
+        fun method723(i: Int, i_2_: Int, i_3_: Byte): Boolean {
+            anInt1196++
+            if (i_3_ >= -66) return true
+            return (method2352(113, i_2_, i) and Class156.method1238(i, i_2_, -29))
+        }
 
-    static final boolean method724(int i, int i_4_, int i_5_) {
-        anInt1191++;
-        if (i_5_ != 393216) method723(25, 30, (byte) -113);
-        return Class314_Sub1.method2352(124, i_4_, i) | (0x60000 & i) != 0 || Class273.method2056(i, 90, i_4_) || method723(i, i_4_, (byte) -120);
-    }
-
-    public final String toString() {
-        anInt1192++;
-        throw new IllegalStateException();
+        fun method724(i: Int, i_4_: Int, i_5_: Int): Boolean {
+            anInt1191++
+            if (i_5_ != 393216) Companion.method723(25, 30, (-113).toByte())
+            return method2352(124, i_4_, i) or ((0x60000 and i) != 0) || Class273.method2056(i, 90, i_4_) || Companion.method723(i, i_4_, (-120).toByte())
+        }
     }
 }

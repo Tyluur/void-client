@@ -120,8 +120,8 @@ abstract class Class318_Sub1 : Class318() {
                                 val i_10_: Int
                                 if (Class348_Sub40_Sub21.anInt9282 != 4) i_10_ = 0x3fff and (r_Sub2.anInt10483 + Class314.aFloat3938.toInt())
                                 else i_10_ = Class314.aFloat3938.toInt() and 0x3fff
-                                var i_11_ = Class70.anIntArray1207[i_10_]
-                                var i_12_ = Class70.anIntArray1204[i_10_]
+                                var i_11_ = Class70.anIntArray1207!![i_10_]
+                                var i_12_ = Class70.anIntArray1204!![i_10_]
                                 if (Class348_Sub40_Sub21.anInt9282 != 4) {
                                     i_11_ = (i_11_ * 256 / (Class348_Sub49_Sub1.anInt9750 + 256))
                                     i_12_ = i_12_ * 256 / (256 + (Class348_Sub49_Sub1.anInt9750))

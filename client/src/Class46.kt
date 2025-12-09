@@ -963,7 +963,7 @@ class Class46 {
             Class348_Sub1.aClass185_6559!!.method1390(23)
             Class239.aClass166_3147!!.method1283(1)
             Class136.aClass65_4787.method694(-1007)
-            Class73.aClass219_4782.method1598(111)
+            Class73.aClass219_4782!!.method1598(111)
             Class331.method2638(-4631)
             Class172.method1328(-26162)
             method3102(22385)
@@ -973,7 +973,7 @@ class Class46 {
             Class328_Sub2.aClass60_6517.method587(-109)
             Class348_Sub1_Sub1.aClass60_8807!!.method587(-113)
             Class34.aClass60_463!!.method587(-83)
-            Class66.aClass60_1174.method587(-91)
+            Class66.aClass60_1174!!.method587(-91)
             val i_17_ = 54 / ((26 - i) / 53)
         }
 

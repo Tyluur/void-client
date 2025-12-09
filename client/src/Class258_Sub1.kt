@@ -145,8 +145,8 @@ class Class258_Sub1 : Class258 {
                 Class23.aBoolean351 = false
             }
             Class243.method1877(Class9.aHa171, -69)
-            if (!Class71.aClass76_1208.aBoolean1283) {
-                val class243 = Class71.aClass76_1208.aClass243_1282
+            if (!Class71.aClass76_1208!!.aBoolean1283) {
+                val class243 = Class71.aClass76_1208!!.aClass243_1282
                 var class318_sub4 = class243.method1872(8) as Class318_Sub4?
                 while (class318_sub4 != null) {
                     class318_sub4.method2373(false)

@@ -1,25 +1,26 @@
 /* Class74 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class74 {
-    static int[] anIntArray1233 = new int[1024];
-    static Class114 aClass114_1234 = new Class114(54, 4);
-    static int anInt1235;
-    static boolean aBoolean1236 = false;
-
-    public final String toString() {
-        anInt1235++;
-        throw new IllegalStateException();
+* Visit http://jode.sourceforge.net/
+*/
+class Class74 internal constructor(i: Int, i_0_: Int) {
+    override fun toString(): String {
+        anInt1235++
+        throw IllegalStateException()
     }
 
-    public static void method744(byte i) {
-        aClass114_1234 = null;
-        anIntArray1233 = null;
-        if (i < 87) method744((byte) -102);
-    }
+    companion object {
+        @JvmField
+        var anIntArray1233: IntArray? = IntArray(1024)
+        var aClass114_1234: Class114? = Class114(54, 4)
+        @JvmField
+        var anInt1235: Int = 0
+        @JvmField
+        var aBoolean1236: Boolean = false
 
-    Class74(int i, int i_0_) {
-        /* empty */
+        @JvmStatic
+        fun method744(i: Byte) {
+            aClass114_1234 = null
+            anIntArray1233 = null
+            if (i < 87) Companion.method744((-102).toByte())
+        }
     }
 }

@@ -25,7 +25,7 @@ class Class2 {
         fun method170(bool: Boolean): Class110_Sub1? {
             if (bool != true) method174(-106, -36)
             anInt122++
-            if (Class348_Sub36.anInt6985 < Class65.aClass110_Sub1Array1146.size) return Class65.aClass110_Sub1Array1146[Class348_Sub36.anInt6985++]
+            if (Class348_Sub36.anInt6985 < Class65.aClass110_Sub1Array1146!!.size) return Class65.aClass110_Sub1Array1146!![Class348_Sub36.anInt6985++]
             return null
         }
 

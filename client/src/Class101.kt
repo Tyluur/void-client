@@ -158,8 +158,8 @@ public abstract class Class101 {
         fun method909(i: Int) {
             anInt1598++
             if (Class348_Sub40_Sub30.aBoolean9403 && i == 3553) {
-                while (Class215.anInt2834 < Class65.aClass110_Sub1Array1146.size) {
-                    val class110_sub1 = Class65.aClass110_Sub1Array1146[Class215.anInt2834]
+                while (Class215.anInt2834 < Class65.aClass110_Sub1Array1146!!.size) {
+                    val class110_sub1 = Class65.aClass110_Sub1Array1146!![Class215.anInt2834]
                     if (class110_sub1 == null || class110_sub1.anInt5788 != -1) Class215.anInt2834++
                     else {
                         if (Class176.aClass348_Sub26_2332 == null) Class176.aClass348_Sub26_2332 = (Class76.aClass169_1286.method1302(i xor 0x1967.inv(), class110_sub1.aString5794))

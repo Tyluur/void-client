@@ -308,10 +308,10 @@ class Class38 {
                 if (class318_sub4.aBoolean6409) {
                     class318_sub4.aClass318_Sub1_6410 = class318_sub1
                     if (Class348_Sub40_Sub5.aBoolean9121) {
-                        synchronized(Class71.aClass76_1208) {
-                            Class71.aClass76_1208.method774(class318_sub4, 18802)
+                        synchronized(Class71.aClass76_1208!!) {
+                            Class71.aClass76_1208!!.method774(class318_sub4, 18802)
                         }
-                    } else Class71.aClass76_1208.method774(class318_sub4, 18802)
+                    } else Class71.aClass76_1208!!.method774(class318_sub4, 18802)
                 } else Class59_Sub1_Sub1.method560(class318_sub4, 18)
             }
         }
