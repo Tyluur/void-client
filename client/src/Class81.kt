@@ -1,12 +1,14 @@
 /* Class81 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+object Class81 {
+    @JvmField
+    var anIntArray1432: IntArray?
+    @JvmField
+    var anInt1433: Int = 0
 
-public final class Class81 {
-    static int[] anIntArray1432;
-    static int anInt1433;
-
-    public static void method810(boolean bool) {
-        if (bool == true) anIntArray1432 = null;
+    @JvmStatic
+    fun method810(bool: Boolean) {
+        if (bool == true) anIntArray1432 = null
     }
 }

@@ -1,249 +1,269 @@
-/* Class78 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import java.io.EOFException
+import java.io.File
+import java.io.IOException
 
-import java.io.EOFException;
-import java.io.File;
-import java.io.IOException;
+class Class78 internal constructor(private val aClass234_1312: Class234, i: Int, i_22_: Int) {
+    private val aByteArray1305: ByteArray
+    private val aByteArray1311: ByteArray
+    private var anInt1314 = 0
+    private var aLong1315: Long = 0
+    private var aLong1317: Long
+    private var aLong1319 = -1L
+    private var anInt1320 = 0
+    private var aLong1321 = -1L
+    private var aLong1323: Long
+    private var aLong1324: Long
 
-public final class Class78 {
-    static int anInt1304;
-    private final byte[] aByteArray1305;
-    static int anInt1306;
-    static int anInt1307;
-    static int anInt1308;
-    static int anInt1309;
-    static int anInt1310;
-    private final byte[] aByteArray1311;
-    private final Class234 aClass234_1312;
-    static int anInt1313;
-    private int anInt1314 = 0;
-    private long aLong1315;
-    static int anInt1316;
-    private long aLong1317;
-    static int anInt1318;
-    private long aLong1319 = -1L;
-    private int anInt1320;
-    private long aLong1321 = -1L;
-    static Class45 aClass45_1322;
-    private long aLong1323;
-    private long aLong1324;
-
-    final void method783(int i, int i_0_, boolean bool, byte[] is) throws IOException {
-        anInt1310++;
+    @Throws(IOException::class)
+    fun method783(i: Int, i_0_: Int, bool: Boolean, `is`: ByteArray?) {
+        var i = i
+        var i_0_ = i_0_
+        anInt1310++
         try {
-            if (aLong1324 - -(long) i_0_ > aLong1323) aLong1323 = (long) i_0_ + aLong1324;
-            if (aLong1321 != -1 && (aLong1321 > aLong1324 || (aLong1324 > (long) anInt1314 + aLong1321))) method791(-1);
-            if (aLong1321 != -1L && (aLong1324 + (long) i_0_ > (long) aByteArray1305.length + aLong1321)) {
-                int i_1_ = (int) ((long) aByteArray1305.length + (aLong1321 + -aLong1324));
-                Class214.method1577(is, i, aByteArray1305, (int) (-aLong1321 + aLong1324), i_1_);
-                i += i_1_;
-                i_0_ -= i_1_;
-                aLong1324 += i_1_;
-                anInt1314 = aByteArray1305.length;
-                method791(-1);
+            if (aLong1324 - -i_0_.toLong() > aLong1323) aLong1323 = i_0_.toLong() + aLong1324
+            if (aLong1321 != -1L && (aLong1321 > aLong1324 || (aLong1324 > anInt1314.toLong() + aLong1321))) method791(-1)
+            if (aLong1321 != -1L && (aLong1324 + i_0_.toLong() > aByteArray1305.size.toLong() + aLong1321)) {
+                val i_1_ = (aByteArray1305.size.toLong() + (aLong1321 + -aLong1324)).toInt()
+                Class214.method1577(`is`, i, aByteArray1305, (-aLong1321 + aLong1324).toInt(), i_1_)
+                i += i_1_
+                i_0_ -= i_1_
+                aLong1324 += i_1_.toLong()
+                anInt1314 = aByteArray1305.size
+                method791(-1)
             }
-            if (aByteArray1305.length < i_0_) {
+            if (aByteArray1305.size < i_0_) {
                 if (aLong1315 != aLong1324) {
-                    aClass234_1312.method1661(-18968, aLong1324);
-                    aLong1315 = aLong1324;
+                    aClass234_1312.method1661(-18968, aLong1324)
+                    aLong1315 = aLong1324
                 }
-                aClass234_1312.method1658((byte) 115, i, i_0_, is);
-                aLong1315 += i_0_;
-                if (aLong1317 < aLong1315) aLong1317 = aLong1315;
-                long l = -1L;
-                if ((aLong1319 <= aLong1324) && (aLong1319 + (long) anInt1320 > aLong1324)) l = aLong1324;
-                else if ((aLong1324 <= aLong1319) && aLong1319 < aLong1324 - -(long) i_0_) l = aLong1319;
-                long l_2_ = -1L;
-                if ((long) i_0_ + aLong1324 > aLong1319 && (long) anInt1320 + aLong1319 >= aLong1324 + (long) i_0_) l_2_ = (long) i_0_ + aLong1324;
-                else if ((aLong1324 < (long) anInt1320 + aLong1319) && ((long) i_0_ + aLong1324 >= aLong1319 + (long) anInt1320)) l_2_ = (long) anInt1320 + aLong1319;
+                aClass234_1312.method1658(115.toByte(), i, i_0_, `is`)
+                aLong1315 += i_0_.toLong()
+                if (aLong1317 < aLong1315) aLong1317 = aLong1315
+                var l = -1L
+                if ((aLong1319 <= aLong1324) && (aLong1319 + anInt1320.toLong() > aLong1324)) l = aLong1324
+                else if ((aLong1324 <= aLong1319) && aLong1319 < aLong1324 - -i_0_.toLong()) l = aLong1319
+                var l_2_ = -1L
+                if (i_0_.toLong() + aLong1324 > aLong1319 && anInt1320.toLong() + aLong1319 >= aLong1324 + i_0_.toLong()) l_2_ = i_0_.toLong() + aLong1324
+                else if ((aLong1324 < anInt1320.toLong() + aLong1319) && (i_0_.toLong() + aLong1324 >= aLong1319 + anInt1320.toLong())) l_2_ = anInt1320.toLong() + aLong1319
                 if (l > -1L && l_2_ > l) {
-                    int i_3_ = (int) (l_2_ + -l);
-                    Class214.method1577(is, (int) (-aLong1324 + l + (long) i), aByteArray1311, (int) (-aLong1319 + l), i_3_);
+                    val i_3_ = (l_2_ + -l).toInt()
+                    Class214.method1577(`is`, (-aLong1324 + l + i.toLong()).toInt(), aByteArray1311, (-aLong1319 + l).toInt(), i_3_)
                 }
-                aLong1324 += i_0_;
-                return;
+                aLong1324 += i_0_.toLong()
+                return
             }
             if (i_0_ > 0) {
-                if (aLong1321 == -1L) aLong1321 = aLong1324;
-                Class214.method1577(is, i, aByteArray1305, (int) (-aLong1321 + aLong1324), i_0_);
-                aLong1324 += i_0_;
-                if (aLong1324 + -aLong1321 > (long) anInt1314) anInt1314 = (int) (-aLong1321 + aLong1324);
-                return;
+                if (aLong1321 == -1L) aLong1321 = aLong1324
+                Class214.method1577(`is`, i, aByteArray1305, (-aLong1321 + aLong1324).toInt(), i_0_)
+                aLong1324 += i_0_.toLong()
+                if (aLong1324 + -aLong1321 > anInt1314.toLong()) anInt1314 = (-aLong1321 + aLong1324).toInt()
+                return
             }
-        } catch (IOException ioexception) {
-            aLong1315 = -1L;
-            throw ioexception;
+        } catch (ioexception: IOException) {
+            aLong1315 = -1L
+            throw ioexception
         }
-        if (bool != true) anInt1314 = -69;
+        if (bool != true) anInt1314 = -69
     }
 
-    final void method784(int i, byte[] is) throws IOException {
-        int i_4_ = -98 % ((1 - i) / 40);
-        method788(0, is, is.length, -16717);
-        anInt1313++;
+    @Throws(IOException::class)
+    fun method784(i: Int, `is`: ByteArray) {
+        val i_4_ = -98 % ((1 - i) / 40)
+        method788(0, `is`, `is`.size, -16717)
+        anInt1313++
     }
 
-    private final File method785(int i) {
-        anInt1316++;
-        if (i != -8659) method785(-88);
-        return aClass234_1312.method1660(i ^ ~0x2198);
+    private fun method785(i: Int): File? {
+        anInt1316++
+        if (i != -8659) method785(-88)
+        return aClass234_1312.method1660(i xor 0x2198.inv())
     }
 
-    public static void method786(byte i) {
-        if (i != 0) aClass45_1322 = null;
-        aClass45_1322 = null;
+    fun method787(i: Int): Long {
+        if (i != 0) return 26L
+        anInt1318++
+        return aLong1323
     }
 
-    final long method787(int i) {
-        if (i != 0) return 26L;
-        anInt1318++;
-        return aLong1323;
-    }
-
-    final void method788(int i, byte[] is, int i_5_, int i_6_) throws IOException {
-        anInt1307++;
+    @Throws(IOException::class)
+    fun method788(i: Int, `is`: ByteArray, i_5_: Int, i_6_: Int) {
+        var i = i
+        var i_5_ = i_5_
+        anInt1307++
         try {
-            if (i_5_ + i > is.length) throw new ArrayIndexOutOfBoundsException(i + (i_5_ - is.length));
-            if (i_6_ != -16717) return;
-            if (aLong1321 != -1 && aLong1324 >= aLong1321 && (aLong1324 - -(long) i_5_ <= (long) anInt1314 + aLong1321)) {
-                Class214.method1577(aByteArray1305, (int) (-aLong1321 + aLong1324), is, i, i_5_);
-                aLong1324 += i_5_;
-                return;
+            if (i_5_ + i > `is`.size) throw ArrayIndexOutOfBoundsException(i + (i_5_ - `is`.size))
+            if (i_6_ != -16717) return
+            if (aLong1321 != -1L && aLong1324 >= aLong1321 && (aLong1324 - -i_5_.toLong() <= anInt1314.toLong() + aLong1321)) {
+                Class214.method1577(aByteArray1305, (-aLong1321 + aLong1324).toInt(), `is`, i, i_5_)
+                aLong1324 += i_5_.toLong()
+                return
             }
-            long l = aLong1324;
-            int i_7_ = i;
-            int i_8_ = i_5_;
-            if (aLong1324 >= aLong1319 && (aLong1319 - -(long) anInt1320 > aLong1324)) {
-                int i_9_ = (int) ((long) anInt1320 - (-aLong1319 + aLong1324));
-                if (i_5_ < i_9_) i_9_ = i_5_;
-                Class214.method1577(aByteArray1311, (int) (aLong1324 + -aLong1319), is, i, i_9_);
-                aLong1324 += i_9_;
-                i_5_ -= i_9_;
-                i += i_9_;
+            val l = aLong1324
+            val i_7_ = i
+            val i_8_ = i_5_
+            if (aLong1324 >= aLong1319 && (aLong1319 - -anInt1320.toLong() > aLong1324)) {
+                var i_9_ = (anInt1320.toLong() - (-aLong1319 + aLong1324)).toInt()
+                if (i_5_ < i_9_) i_9_ = i_5_
+                Class214.method1577(aByteArray1311, (aLong1324 + -aLong1319).toInt(), `is`, i, i_9_)
+                aLong1324 += i_9_.toLong()
+                i_5_ -= i_9_
+                i += i_9_
             }
-            if (i_5_ > aByteArray1311.length) {
-                aClass234_1312.method1661(i_6_ + -2251, aLong1324);
-                aLong1315 = aLong1324;
-                int i_10_;
-                for (/**/; i_5_ > 0; i_5_ -= i_10_) {
-                    i_10_ = aClass234_1312.method1656(is, i, (byte) 8, i_5_);
-                    if (i_10_ == -1) break;
-                    i += i_10_;
-                    aLong1315 += i_10_;
-                    aLong1324 += i_10_;
+            if (i_5_ > aByteArray1311.size) {
+                aClass234_1312.method1661(i_6_ + -2251, aLong1324)
+                aLong1315 = aLong1324
+                var i_10_: Int
+                while ( /**/i_5_ > 0) {
+                    i_10_ = aClass234_1312.method1656(`is`, i, 8.toByte(), i_5_)
+                    if (i_10_ == -1) break
+                    i += i_10_
+                    aLong1315 += i_10_.toLong()
+                    aLong1324 += i_10_.toLong()
+                    i_5_ -= i_10_
                 }
             } else if (i_5_ > 0) {
-                method792((byte) -46);
-                int i_11_ = i_5_;
-                if (anInt1320 < i_11_) i_11_ = anInt1320;
-                Class214.method1577(aByteArray1311, 0, is, i, i_11_);
-                i += i_11_;
-                aLong1324 += i_11_;
-                i_5_ -= i_11_;
+                method792((-46).toByte())
+                var i_11_ = i_5_
+                if (anInt1320 < i_11_) i_11_ = anInt1320
+                Class214.method1577(aByteArray1311, 0, `is`, i, i_11_)
+                i += i_11_
+                aLong1324 += i_11_.toLong()
+                i_5_ -= i_11_
             }
             if (aLong1321 != -1L) {
                 if (aLong1324 < aLong1321 && i_5_ > 0) {
-                    int i_12_ = (int) (aLong1321 - aLong1324) + i;
-                    if (i + i_5_ < i_12_) i_12_ = i + i_5_;
+                    var i_12_ = (aLong1321 - aLong1324).toInt() + i
+                    if (i + i_5_ < i_12_) i_12_ = i + i_5_
                     while (i_12_ > i) {
-                        is[i++] = (byte) 0;
-                        i_5_--;
-                        aLong1324++;
+                        `is`[i++] = 0.toByte()
+                        i_5_--
+                        aLong1324++
                     }
                 }
-                long l_13_ = -1L;
-                if (aLong1321 < l || (l - -(long) i_8_ <= aLong1321)) {
-                    if (aLong1321 <= l && l < aLong1321 - -(long) anInt1314) l_13_ = l;
-                } else l_13_ = aLong1321;
-                long l_14_ = -1L;
-                if ((long) anInt1314 + aLong1321 <= l || ((long) i_8_ + l < (long) anInt1314 + aLong1321)) {
-                    if ((aLong1321 < l - -(long) i_8_) && ((long) anInt1314 + aLong1321 >= l - -(long) i_8_)) l_14_ = l + (long) i_8_;
-                } else l_14_ = aLong1321 - -(long) anInt1314;
+                var l_13_ = -1L
+                if (aLong1321 < l || (l - -i_8_.toLong() <= aLong1321)) {
+                    if (aLong1321 <= l && l < aLong1321 - -anInt1314.toLong()) l_13_ = l
+                } else l_13_ = aLong1321
+                var l_14_ = -1L
+                if (anInt1314.toLong() + aLong1321 <= l || (i_8_.toLong() + l < anInt1314.toLong() + aLong1321)) {
+                    if ((aLong1321 < l - -i_8_.toLong()) && (anInt1314.toLong() + aLong1321 >= l - -i_8_.toLong())) l_14_ = l + i_8_.toLong()
+                } else l_14_ = aLong1321 - -anInt1314.toLong()
                 if (l_13_ > -1L && (l_13_ < l_14_)) {
-                    int i_15_ = (int) (l_14_ + -l_13_);
-                    Class214.method1577(aByteArray1305, (int) (l_13_ + -aLong1321), is, i_7_ - -(int) (l_13_ - l), i_15_);
+                    val i_15_ = (l_14_ + -l_13_).toInt()
+                    Class214.method1577(aByteArray1305, (l_13_ + -aLong1321).toInt(), `is`, i_7_ - -(l_13_ - l).toInt(), i_15_)
                     if (l_14_ > aLong1324) {
-                        i_5_ -= -aLong1324 + l_14_;
-                        aLong1324 = l_14_;
+                        i_5_ -= (-aLong1324 + l_14_).toInt()
+                        aLong1324 = l_14_
                     }
                 }
             }
-        } catch (IOException ioexception) {
-            aLong1315 = -1L;
-            throw ioexception;
+        } catch (ioexception: IOException) {
+            aLong1315 = -1L
+            throw ioexception
         }
-        if (i_5_ > 0) throw new EOFException();
+        if (i_5_ > 0) throw EOFException()
     }
 
-    final void method789(long l, byte i) throws IOException {
+    @Throws(IOException::class)
+    fun method789(l: Long, i: Byte) {
         try {
-            anInt1309++;
-            if (l < 0) throw new IOException("Invalid seek to " + l + " in file " + method785(-8659));
-            int i_16_ = -67 / ((i - -49) / 34);
-            aLong1324 = l;
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, "l.A(" + l + ',' + i + ')');
+            anInt1309++
+            if (l < 0) throw IOException("Invalid seek to " + l + " in file " + method785(-8659))
+            val i_16_ = -67 / ((i - -49) / 34)
+            aLong1324 = l
+        } catch (runtimeexception: RuntimeException) {
+            throw Class348_Sub17.method2929(runtimeexception, "l.A(" + l + ',' + i + ')')
         }
     }
 
-    final void method790(byte i) throws IOException {
-        anInt1304++;
-        method791(-1);
-        aClass234_1312.method1657(false);
-        int i_17_ = -26 % ((i - -7) / 51);
+    @Throws(IOException::class)
+    fun method790(i: Byte) {
+        anInt1304++
+        method791(-1)
+        aClass234_1312.method1657(false)
+        val i_17_ = -26 % ((i - -7) / 51)
     }
 
-    private final void method791(int i) throws IOException {
-        if (i != -1) aLong1321 = 47L;
-        if (aLong1321 != -1) {
+    @Throws(IOException::class)
+    private fun method791(i: Int) {
+        if (i != -1) aLong1321 = 47L
+        if (aLong1321 != -1L) {
             if (aLong1315 != aLong1321) {
-                aClass234_1312.method1661(-18968, aLong1321);
-                aLong1315 = aLong1321;
+                aClass234_1312.method1661(-18968, aLong1321)
+                aLong1315 = aLong1321
             }
-            aClass234_1312.method1658((byte) 120, 0, anInt1314, aByteArray1305);
-            aLong1315 += anInt1314;
-            if (aLong1317 < aLong1315) aLong1317 = aLong1315;
-            long l = -1L;
-            long l_18_ = -1L;
-            if (aLong1319 <= aLong1321 && (aLong1321 < (long) anInt1320 + aLong1319)) l = aLong1321;
-            else if ((aLong1319 >= aLong1321) && (aLong1319 < aLong1321 - -(long) anInt1314)) l = aLong1319;
-            if (((long) anInt1314 + aLong1321 > aLong1319) && ((long) anInt1314 + aLong1321 <= (long) anInt1320 + aLong1319)) l_18_ = aLong1321 - -(long) anInt1314;
-            else if ((aLong1321 < aLong1319 + (long) anInt1320) && (aLong1319 + (long) anInt1320 <= (long) anInt1314 + aLong1321)) l_18_ = (long) anInt1320 + aLong1319;
+            aClass234_1312.method1658(120.toByte(), 0, anInt1314, aByteArray1305)
+            aLong1315 += anInt1314.toLong()
+            if (aLong1317 < aLong1315) aLong1317 = aLong1315
+            var l = -1L
+            var l_18_ = -1L
+            if (aLong1319 <= aLong1321 && (aLong1321 < anInt1320.toLong() + aLong1319)) l = aLong1321
+            else if ((aLong1319 >= aLong1321) && (aLong1319 < aLong1321 - -anInt1314.toLong())) l = aLong1319
+            if ((anInt1314.toLong() + aLong1321 > aLong1319) && (anInt1314.toLong() + aLong1321 <= anInt1320.toLong() + aLong1319)) l_18_ = aLong1321 - -anInt1314.toLong()
+            else if ((aLong1321 < aLong1319 + anInt1320.toLong()) && (aLong1319 + anInt1320.toLong() <= anInt1314.toLong() + aLong1321)) l_18_ = anInt1320.toLong() + aLong1319
             if (l > -1 && l < l_18_) {
-                int i_19_ = (int) (-l + l_18_);
-                Class214.method1577(aByteArray1305, (int) (l - aLong1321), aByteArray1311, (int) (-aLong1319 + l), i_19_);
+                val i_19_ = (-l + l_18_).toInt()
+                Class214.method1577(aByteArray1305, (l - aLong1321).toInt(), aByteArray1311, (-aLong1319 + l).toInt(), i_19_)
             }
-            aLong1321 = -1L;
-            anInt1314 = 0;
+            aLong1321 = -1L
+            anInt1314 = 0
         }
-        anInt1308++;
+        anInt1308++
     }
 
-    private final void method792(byte i) throws IOException {
-        anInt1320 = 0;
-        anInt1306++;
-        if (i != -46) method785(111);
+    @Throws(IOException::class)
+    private fun method792(i: Byte) {
+        anInt1320 = 0
+        anInt1306++
+        if (i.toInt() != -46) method785(111)
         if (aLong1315 != aLong1324) {
-            aClass234_1312.method1661(-18968, aLong1324);
-            aLong1315 = aLong1324;
+            aClass234_1312.method1661(-18968, aLong1324)
+            aLong1315 = aLong1324
         }
-        aLong1319 = aLong1324;
-        while (anInt1320 < aByteArray1311.length) {
-            int i_20_ = -anInt1320 + aByteArray1311.length;
-            if (i_20_ > 200000000) i_20_ = 200000000;
-            int i_21_ = aClass234_1312.method1656(aByteArray1311, anInt1320, (byte) 125, i_20_);
-            if (i_21_ == -1) break;
-            anInt1320 += i_21_;
-            aLong1315 += i_21_;
+        aLong1319 = aLong1324
+        while (anInt1320 < aByteArray1311.size) {
+            var i_20_ = -anInt1320 + aByteArray1311.size
+            if (i_20_ > 200000000) i_20_ = 200000000
+            val i_21_ = aClass234_1312.method1656(aByteArray1311, anInt1320, 125.toByte(), i_20_)
+            if (i_21_ == -1) break
+            anInt1320 += i_21_
+            aLong1315 += i_21_.toLong()
         }
     }
 
-    Class78(Class234 class234, int i, int i_22_) throws IOException {
-        aClass234_1312 = class234;
-        aLong1323 = aLong1317 = class234.method1662((byte) -46);
-        aByteArray1305 = new byte[i_22_];
-        aByteArray1311 = new byte[i];
-        aLong1324 = 0L;
+    init {
+        aLong1317 = aClass234_1312.method1662((-46).toByte())
+        aLong1323 = aLong1317
+        aByteArray1305 = ByteArray(i_22_)
+        aByteArray1311 = ByteArray(i)
+        aLong1324 = 0L
+    }
+
+    companion object {
+        @JvmField
+        var anInt1304: Int = 0
+        @JvmField
+        var anInt1306: Int = 0
+        @JvmField
+        var anInt1307: Int = 0
+        @JvmField
+        var anInt1308: Int = 0
+        @JvmField
+        var anInt1309: Int = 0
+        @JvmField
+        var anInt1310: Int = 0
+        @JvmField
+        var anInt1313: Int = 0
+        @JvmField
+        var anInt1316: Int = 0
+        @JvmField
+        var anInt1318: Int = 0
+        @JvmField
+        var aClass45_1322: Class45? = null
+        @JvmStatic
+        fun method786(i: Byte) {
+            if (i.toInt() != 0) aClass45_1322 = null
+            aClass45_1322 = null
+        }
     }
 }
