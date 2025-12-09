@@ -540,7 +540,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         method3677(aP5137!!.aCanvas5147)
     }
 
-    override fun method3648(i: Int, i_222_: Int, `is`: Array<IntArray?>?, is_223_: Array<IntArray?>?, i_224_: Int, i_225_: Int, i_226_: Int): s {
+    override fun method3648(i: Int, i_222_: Int, `is`: Array<IntArray?>, is_223_: Array<IntArray?>?, i_224_: Int, i_225_: Int, i_226_: Int): s {
         return t(this, aYa5121, i, i_222_, `is`, is_223_, i_224_, i_225_, i_226_)
     }
 

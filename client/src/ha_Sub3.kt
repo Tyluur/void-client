@@ -1127,7 +1127,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         }
     }
 
-    override fun method3648(i: Int, i_122_: Int, `is`: Array<IntArray?>?, is_123_: Array<IntArray?>?, i_124_: Int, i_125_: Int, i_126_: Int): s {
+    override fun method3648(i: Int, i_122_: Int, `is`: Array<IntArray?>, is_123_: Array<IntArray?>?, i_124_: Int, i_125_: Int, i_126_: Int): s {
         try {
             anInt8011++
             return s_Sub3(this, i_125_, i_126_, i, i_122_, `is`, is_123_, i_124_)

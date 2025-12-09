@@ -1,7 +1,7 @@
 /* t - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<IntArray?>?, is_51_: Array<IntArray?>?, i_52_: Int, i_53_: Int, i_54_: Int) : s(i, i_50_, i_52_, `is`), Interface19 {
+class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<IntArray?>, is_51_: Array<IntArray?>?, i_52_: Int, i_53_: Int, i_54_: Int) : s(i, i_50_, i_52_, `is`), Interface19 {
     @JvmField
     var nativeid: Long = 0
     private val aClass262_5149 = Class262()
@@ -37,7 +37,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
 
     external override fun w(bool: Boolean)
 
-    override fun method3978(i: Int, i_13_: Int, `is`: IntArray, is_14_: IntArray?, is_15_: IntArray, is_16_: IntArray?, is_17_: IntArray, is_18_: IntArray, is_19_: IntArray, is_20_: IntArray?, is_21_: IntArray?, is_22_: IntArray, is_23_: IntArray, i_24_: Int, i_25_: Int, i_26_: Int, bool: Boolean) {
+    override fun method3978(i: Int, i_13_: Int, `is`: IntArray, is_14_: IntArray, is_15_: IntArray, is_16_: IntArray, is_17_: IntArray, is_18_: IntArray, is_19_: IntArray, is_20_: IntArray, is_21_: IntArray, is_22_: IntArray, is_23_: IntArray, i_24_: Int, i_25_: Int, i_26_: Int, bool: Boolean) {
         var bool_27_ = false
         if (is_20_ != null) {
             val is_28_: IntArray? = is_20_
@@ -91,10 +91,10 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
             if (is_16_ != null) is_39_!![i_40_] = is_16_[i_44_]
             i_40_++
         }
-        if (bool_27_ || is_37_ != null) U(i, i_13_, is_32_, is_38_, is_33_, is_39_, is_34_, is_37_, is_35_, is_36_, i_24_, i_25_, i_26_, bool)
+        if (bool_27_ || is_37_ != null) U(i, i_13_, is_32_, is_38_!!, is_33_, is_39_!!, is_34_, is_37_!!, is_35_, is_36_, i_24_, i_25_, i_26_, bool)
     }
 
-    override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray?) {
+    override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
         aClass262_5149.method1999(class348_sub1, -20180)
         V(class348_sub1.hashCode(), class348_sub1.method2724(-1), class348_sub1.method2722(124), class348_sub1.method2717(83.toByte()), class348_sub1.method2723(-1), class348_sub1.method2720(-1), `is`)
     }
@@ -146,9 +146,9 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
 
     private external fun ga(var_oa: oa?, var_ya: ya?, i: Int, i_72_: Int, `is`: Array<IntArray?>?, is_73_: Array<IntArray?>?, i_74_: Int, i_75_: Int, i_76_: Int)
 
-    external override fun U(i: Int, i_77_: Int, `is`: IntArray?, is_78_: IntArray?, is_79_: IntArray?, is_80_: IntArray?, is_81_: IntArray?, is_82_: IntArray?, is_83_: IntArray?, is_84_: IntArray?, i_85_: Int, i_86_: Int, i_87_: Int, bool: Boolean)
+    external override fun U(i: Int, i_77_: Int, `is`: IntArray, is_78_: IntArray, is_79_: IntArray, is_80_: IntArray, is_81_: IntArray, is_82_: IntArray, is_83_: IntArray, is_84_: IntArray, i_85_: Int, i_86_: Int, i_87_: Int, bool: Boolean)
 
-    override fun method3987(i: Int, i_88_: Int, i_89_: Int, i_90_: Int, i_91_: Int, i_92_: Int, i_93_: Int, bools: Array<BooleanArray?>?) {
+    override fun method3987(i: Int, i_88_: Int, i_89_: Int, i_90_: Int, i_91_: Int, i_92_: Int, i_93_: Int, bools: Array<BooleanArray?>) {
         anOa5150.method3973()?.method148(this, i, i_88_, i_89_, i_90_, i_91_, i_92_, i_93_, bools)
     }
 }

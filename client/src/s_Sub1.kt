@@ -3,7 +3,7 @@ import kotlin.math.sqrt
 /* s_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: Int, i_486_: Int, i_487_: Int, `is`: Array<IntArray?>?, is_488_: Array<IntArray?>, i_489_: Int) : s(i_486_, i_487_, i_489_, `is`) {
+class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: Int, i_486_: Int, i_487_: Int, `is`: Array<IntArray?>, is_488_: Array<IntArray?>, i_489_: Int) : s(i_486_, i_487_, i_489_, `is`) {
     private var aFloat8212 = 0f
     private var aFloat8213 = 0f
     private var aFloat8214 = 0f
@@ -25,11 +25,11 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
     private var aByteArrayArray8232: Array<ByteArray?>?
     private var aFloat8233 = 0f
 
-    override fun method3981(class348_sub1: Class348_Sub1?, `is`: IntArray?) {
+    override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
         /* empty */
     }
 
-    override fun U(i: Int, i_0_: Int, `is`: IntArray?, is_1_: IntArray?, is_2_: IntArray, is_3_: IntArray?, is_4_: IntArray, is_5_: IntArray?, is_6_: IntArray, is_7_: IntArray, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean) {
+    override fun U(i: Int, i_0_: Int, `is`: IntArray, is_1_: IntArray, is_2_: IntArray, is_3_: IntArray, is_4_: IntArray, is_5_: IntArray, is_6_: IntArray, is_7_: IntArray, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean) {
         val bool_11_ = (anInt8223 and 0x20) == 0
         if (aClass266ArrayArray8230 == null && !bool_11_) {
             aClass266ArrayArray8230 = Array<Array<Class266?>?>(this.anInt4587) { arrayOfNulls<Class266?>(this.anInt4590) }
@@ -172,7 +172,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                         class266.anInt3388 = is_5_[0] shr 8
                         if (i_36_ == 0) class266.aByte3386 = (class266.aByte3386.toInt() or 0x2).toByte()
                     } else if (i_36_ == 0) return
-                    if ((this.anIntArrayArray4584[i][i_0_] == this.anIntArrayArray4584[i + 1][i_0_]) && (this.anIntArrayArray4584[i][i_0_] == this.anIntArrayArray4584[i + 1][i_0_ + 1]) && (this.anIntArrayArray4584[i][i_0_] == this.anIntArrayArray4584[i][i_0_ + 1])) class266.aByte3386 = (class266.aByte3386.toInt() or 0x1).toByte()
+                    if ((this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i + 1]!![i_0_]) && (this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i + 1]!![i_0_ + 1]) && (this.anIntArrayArray4584[i]!![i_0_] == this.anIntArrayArray4584[i]!![i_0_ + 1])) class266.aByte3386 = (class266.aByte3386.toInt() or 0x1).toByte()
                     if (i_37_ != -1 && (class266.aByte3386.toInt() and 0x2) == 0 && !(aHa_Sub1_8217.aD4579!!.method3(i_37_, -6662)!!.aBoolean209)) {
                         var i_38_: Int
                         if (is_3_ != null && i_9_ != 0) {
@@ -336,7 +336,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         }
     }
 
-    override fun method3978(i: Int, i_60_: Int, `is`: IntArray, is_61_: IntArray?, is_62_: IntArray, is_63_: IntArray?, is_64_: IntArray, is_65_: IntArray, is_66_: IntArray, is_67_: IntArray, is_68_: IntArray?, is_69_: IntArray, is_70_: IntArray, i_71_: Int, i_72_: Int, i_73_: Int, bool: Boolean) {
+    override fun method3978(i: Int, i_60_: Int, `is`: IntArray, is_61_: IntArray, is_62_: IntArray, is_63_: IntArray, is_64_: IntArray, is_65_: IntArray, is_66_: IntArray, is_67_: IntArray, is_68_: IntArray, is_69_: IntArray, is_70_: IntArray, i_71_: Int, i_72_: Int, i_73_: Int, bool: Boolean) {
         if (aClass102ArrayArray8215 == null) {
             aClass102ArrayArray8215 = Array<Array<Class102?>?>(this.anInt4587) { arrayOfNulls<Class102?>(this.anInt4590) }
             aClass236ArrayArray8222 = Array<Array<Class236?>?>(this.anInt4587) { arrayOfNulls<Class236?>(this.anInt4590) }
@@ -432,7 +432,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                 class102.anInt1600 = Class291.method2198(0, (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]), Class25.method303(is_68_[0], 30).toInt())
                 if (i_92_ == -1) class102.aByte1606 = (class102.aByte1606.toInt() or 0x2).toByte()
             }
-            if ((this.anIntArrayArray4584[i][i_60_] == this.anIntArrayArray4584[i + 1][i_60_]) && (this.anIntArrayArray4584[i][i_60_] == this.anIntArrayArray4584[i + 1][i_60_ + 1]) && (this.anIntArrayArray4584[i][i_60_] == this.anIntArrayArray4584[i][i_60_ + 1])) class102.aByte1606 = (class102.aByte1606.toInt() or 0x1).toByte()
+            if ((this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i + 1]!![i_60_ + 1]) && (this.anIntArrayArray4584!![i]!![i_60_] == this.anIntArrayArray4584!![i]!![i_60_ + 1])) class102.aByte1606 = (class102.aByte1606.toInt() or 0x1).toByte()
             var class12: Class12? = null
             if (i_93_ != -1) class12 = aHa_Sub1_8217.aD4579!!.method3(i_93_, -6662)
             if (class12 != null && (class102.aByte1606.toInt() and 0x2) == 0 && !class12.aBoolean209) {
@@ -815,10 +815,10 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
             val i_127_: Int
             val i_128_: Int
             if ((class266.aByte3386.toInt() and 0x1) == 0 || bool) {
-                var i_150_ = this.anIntArrayArray4584[i][i_105_]
-                var i_151_ = this.anIntArrayArray4584[i + 1][i_105_]
-                var i_152_ = this.anIntArrayArray4584[i + 1][i_105_ + 1]
-                var i_153_ = this.anIntArrayArray4584[i][i_105_ + 1]
+                var i_150_ = this.anIntArrayArray4584[i]!![i_105_]
+                var i_151_ = this.anIntArrayArray4584[i + 1]!![i_105_]
+                var i_152_ = this.anIntArrayArray4584[i + 1]!![i_105_ + 1]
+                var i_153_ = this.anIntArrayArray4584[i]!![i_105_ + 1]
                 if (anInt8228 == -1) {
                     f = aFloat8218 + (aFloat8233 * i_110_.toFloat() + aFloat8227 * i_150_.toFloat() + aFloat8231 * i_112_.toFloat())
                     if (f <= aHa_Sub1_8217.anInt7482.toFloat()) return
@@ -921,7 +921,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                     i_128_ = (class109.anInt1668 + (f_175_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                 }
             } else {
-                val i_129_ = this.anIntArrayArray4584[i][i_105_]
+                val i_129_ = this.anIntArrayArray4584[i]!![i_105_]
                 val f_130_ = aFloat8227 * i_129_.toFloat()
                 if (anInt8228 == -1) {
                     f = aFloat8218 + (aFloat8233 * i_110_.toFloat() + f_130_ + aFloat8231 * i_112_.toFloat())
@@ -1502,10 +1502,10 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
             val i_318_: Int
             val i_319_: Int
             if ((class102.aByte1606.toInt() and 0x1) == 0) {
-                val i_340_ = this.anIntArrayArray4584[i][i_300_]
-                val i_341_ = this.anIntArrayArray4584[i + 1][i_300_]
-                val i_342_ = this.anIntArrayArray4584[i + 1][i_300_ + 1]
-                val i_343_ = this.anIntArrayArray4584[i][i_300_ + 1]
+                val i_340_ = this.anIntArrayArray4584[i]!![i_300_]
+                val i_341_ = this.anIntArrayArray4584[i + 1]!![i_300_]
+                val i_342_ = this.anIntArrayArray4584[i + 1]!![i_300_ + 1]
+                val i_343_ = this.anIntArrayArray4584[i]!![i_300_ + 1]
                 if (anInt8228 == -1) {
                     f = aFloat8218 + (aFloat8233 * i_305_.toFloat() + aFloat8227 * i_340_.toFloat() + aFloat8231 * i_307_.toFloat())
                     if (f <= aHa_Sub1_8217.anInt7482.toFloat()) return
@@ -1554,7 +1554,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                     i_319_ = (class109.anInt1668 + (f_359_ * (aHa_Sub1_8217.anInt7497).toFloat() / anInt8228.toFloat()).toInt())
                 }
             } else {
-                val i_320_ = this.anIntArrayArray4584[i][i_300_]
+                val i_320_ = this.anIntArrayArray4584[i]!![i_300_]
                 val f_321_ = aFloat8227 * i_320_.toFloat()
                 if (anInt8228 == -1) {
                     f = aFloat8218 + (aFloat8233 * i_305_.toFloat() + f_321_ + aFloat8231 * i_307_.toFloat())

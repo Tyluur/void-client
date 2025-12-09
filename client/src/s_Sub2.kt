@@ -7,7 +7,7 @@ import jaggl.OpenGL.Companion.glTranslatef
 import java.io.IOException
 import kotlin.math.sqrt
 
-class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: Int, `is`: Array<IntArray?>?, is_136_: Array<IntArray?>?, i_137_: Int) : s(i_134_, i_135_, i_137_, `is`) {
+class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: Int, `is`: Array<IntArray?>, is_136_: Array<IntArray?>?, i_137_: Int) : s(i_134_, i_135_, i_137_, `is`) {
     @JvmField
     var anIntArrayArrayArray8234: Array<Array<IntArray?>?>?
     @JvmField
@@ -57,7 +57,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         }
     }
 
-    override fun method3978(i: Int, i_5_: Int, `is`: IntArray?, is_6_: IntArray?, is_7_: IntArray?, is_8_: IntArray?, is_9_: IntArray?, is_10_: IntArray?, is_11_: IntArray?, is_12_: IntArray?, is_13_: IntArray?, is_14_: IntArray?, is_15_: IntArray?, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) {
+    override fun method3978(i: Int, i_5_: Int, `is`: IntArray, is_6_: IntArray, is_7_: IntArray, is_8_: IntArray, is_9_: IntArray, is_10_: IntArray, is_11_: IntArray, is_12_: IntArray, is_13_: IntArray, is_14_: IntArray, is_15_: IntArray, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) {
         try {
             anInt8249++
             val i_19_ = is_12_!!.size
@@ -102,7 +102,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
                 if (is_8_ != null) is_27_!![i_28_] = is_8_[i_32_]
                 i_28_++
             }
-            U(i, i_5_, is_20_, is_26_, is_21_, is_27_, is_22_, is_23_, is_24_, is_25_, i_16_, i_17_, i_18_, bool)
+            U(i, i_5_, is_20_, is_26_!!, is_21_, is_27_!!, is_22_, is_23_, is_24_, is_25_, i_16_, i_17_, i_18_, bool)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
@@ -413,7 +413,6 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
     private fun method3998(i: Byte, i_113_: Int, i_114_: Int, var_r_Sub2: r_Sub2) {
         anInt8254++
         val `is` = this.anIntArrayArrayArray8268!![i_113_]!![i_114_]!!
-        if (i.toInt() != -82) method3981(null, null)
         val is_115_ = this.anIntArrayArrayArray8234!![i_113_]!![i_114_]!!
         val i_116_ = `is`.size
         if (this.aHa_Sub2_8272!!.anIntArray7880!!.size < i_116_) {
@@ -459,7 +458,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         return aClass104_8266!!.method954(i_145_, 88.toByte(), i_146_, var_r)
     }
 
-    override fun method3983(i: Int, i_149_: Int, i_150_: Int, bools: Array<BooleanArray>, bool: Boolean, i_151_: Int) {
+    override fun method3983(i: Int, i_149_: Int, i_150_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_151_: Int) {
         method4003(-1, i_150_, bool, -49, i, i_151_, bools, i_149_)
         anInt8255++
     }
@@ -581,12 +580,12 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         return var_r_Sub2_169_
     }
 
-    override fun method3984(i: Int, i_172_: Int, i_173_: Int, bools: Array<BooleanArray>, bool: Boolean, i_174_: Int, i_175_: Int) {
+    override fun method3984(i: Int, i_172_: Int, i_173_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_174_: Int, i_175_: Int) {
         anInt8263++
         method4003(i_174_, i_173_, bool, -62, i, i_175_, bools, i_172_)
     }
 
-    override fun method3981(class348_sub1: Class348_Sub1?, `is`: IntArray?) {
+    override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
         try {
             anInt8271++
             aClass262_8256.method1999(Class348_Sub32((this.aHa_Sub2_8272), this, class348_sub1, `is`), -20180)
@@ -595,7 +594,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         }
     }
 
-    override fun U(i: Int, i_176_: Int, `is`: IntArray?, is_177_: IntArray?, is_178_: IntArray?, is_179_: IntArray?, is_180_: IntArray?, is_181_: IntArray?, is_182_: IntArray?, is_183_: IntArray?, i_184_: Int, i_185_: Int, i_186_: Int, bool: Boolean) {
+    override fun U(i: Int, i_176_: Int, `is`: IntArray, is_177_: IntArray, is_178_: IntArray, is_179_: IntArray, is_180_: IntArray, is_181_: IntArray, is_182_: IntArray, is_183_: IntArray, i_184_: Int, i_185_: Int, i_186_: Int, bool: Boolean) {
         try {
             anInt8261++
             if (is_177_ != null && anIntArrayArrayArray8258 == null) anIntArrayArrayArray8258 = Array<Array<IntArray?>?>(this.anInt4587) { arrayOfNulls<IntArray>(this.anInt4590) }
@@ -644,7 +643,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         anInt8242++
     }
 
-    private fun method4003(i: Int, i_192_: Int, bool: Boolean, i_193_: Int, i_194_: Int, i_195_: Int, bools: Array<BooleanArray>, i_196_: Int) {
+    private fun method4003(i: Int, i_192_: Int, bool: Boolean, i_193_: Int, i_194_: Int, i_195_: Int, bools: Array<BooleanArray?>, i_196_: Int) {
         anInt8250++
         if (i_193_ >= -39) anInt8280 = -20
         if (aClass348_Sub20Array8282 != null) {
@@ -666,7 +665,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
             val `is` = this.aHa_Sub2_8272!!.anIntArray7882!!
             var i_205_ = i_198_
             while (i_202_ >= i_205_) {
-                val bools_206_ = bools[-i_199_ + i_205_]
+                val bools_206_ = bools[-i_199_ + i_205_]!!
                 var i_207_ = i_200_
                 while (i_203_ >= i_207_) {
                     if (bools_206_[-i_201_ + i_207_]) `is`[i_204_++] = i_205_ + i_207_ * this.anInt4587
