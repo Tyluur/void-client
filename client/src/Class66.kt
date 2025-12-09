@@ -860,7 +860,7 @@ object Class66 {
                 return
             }
             if (i == 5235) {
-                anIntArray1149!![anInt1173++] = (if (Class75.aClass348_Sub42_Sub14_1243 != null) Class75.aClass348_Sub42_Sub14_1243.anInt9628 else -1)
+                anIntArray1149!![anInt1173++] = (if (Class75.aClass348_Sub42_Sub14_1243 != null) Class75.aClass348_Sub42_Sub14_1243!!.anInt9628 else -1)
                 return
             }
             if (i == 5236) {
