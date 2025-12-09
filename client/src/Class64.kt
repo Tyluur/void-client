@@ -157,11 +157,11 @@ public abstract class Class64 {
 
     abstract fun C(i: Int)
 
-    abstract fun method605(i: Int, `is`: IntArray?, i_48_: Int, i_49_: Int, i_50_: Int, i_51_: Int, bool: Boolean)
+    abstract fun method605(i: Int, `is`: IntArray, i_48_: Int, i_49_: Int, i_50_: Int, i_51_: Int, bool: Boolean)
 
     abstract fun wa()
 
-    abstract fun I(i: Int, `is`: IntArray?, i_59_: Int, i_60_: Int, i_61_: Int, bool: Boolean, i_62_: Int, is_63_: IntArray?)
+    abstract fun I(i: Int, `is`: IntArray, i_59_: Int, i_60_: Int, i_61_: Int, bool: Boolean, i_62_: Int, is_63_: IntArray?)
 
     abstract fun G(): Int
 
@@ -181,7 +181,7 @@ public abstract class Class64 {
 
     abstract fun O(i: Int, i_72_: Int, i_73_: Int)
 
-    abstract fun method610(class101: Class101?, i: Int, bool: Boolean)
+    abstract fun method610(class101: Class101, i: Int, bool: Boolean)
 
     abstract fun EA(): Int
 
@@ -373,7 +373,7 @@ public abstract class Class64 {
         if (i_145_ != 0) H(0, i_145_, 0)
     }
 
-    private fun method627(`is`: IntArray?, bool: Boolean, i: Int, i_146_: Int, i_147_: Int, i_148_: Int, i_149_: Byte, i_150_: Int, is_151_: IntArray?, i_152_: Int) {
+    private fun method627(`is`: IntArray, bool: Boolean, i: Int, i_146_: Int, i_147_: Int, i_148_: Int, i_149_: Byte, i_150_: Int, is_151_: IntArray?, i_152_: Int) {
         var i_150_ = i_150_
         var i_152_ = i_152_
         try {

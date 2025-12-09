@@ -106,7 +106,7 @@ class i : Class64, Interface19 {
 
     public external override fun da(): Int
 
-    public override fun method605(i: Int, `is`: IntArray?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, bool: Boolean) {
+    public override fun method605(i: Int, `is`: IntArray, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, bool: Boolean) {
         l(this.nativeid, i, `is`, i_27_, i_28_, i_29_, i_30_, bool)
     }
 
@@ -174,7 +174,7 @@ class i : Class64, Interface19 {
 
     public external override fun WA(): Int
 
-    public override fun method610(class101: Class101?, i: Int, bool: Boolean) {
+    public override fun method610(class101: Class101, i: Int, bool: Boolean) {
         A((class101 as ja).nativeid, i, bool)
     }
 
@@ -348,5 +348,5 @@ class i : Class64, Interface19 {
 
     public external override fun RA(): Int
 
-    public external override fun I(i: Int, `is`: IntArray?, i_92_: Int, i_93_: Int, i_94_: Int, bool: Boolean, i_95_: Int, is_96_: IntArray?)
+    public external override fun I(i: Int, `is`: IntArray, i_92_: Int, i_93_: Int, i_94_: Int, bool: Boolean, i_95_: Int, is_96_: IntArray?)
 }

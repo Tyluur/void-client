@@ -1368,7 +1368,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     override fun method3625(class124: Class124?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64 {
-        return Class64_Sub1(this, class124, i, i_367_, i_368_, i_366_)
+        return Class64_Sub1(this, class124!!, i, i_367_, i_368_, i_366_)
     }
 
     override fun method3624(i: Int, i_369_: Int): Interface13 {
