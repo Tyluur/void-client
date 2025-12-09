@@ -26,7 +26,7 @@ abstract class Class285 internal constructor(var aClass377_4759: Class377, priva
             glBindBufferARB(anInt4755, anInt4746)
             if (bool) {
                 glBufferDataARBub(anInt4755, anInt4739, null, 0, if (aBoolean4750) 35040 else 35044)
-                if (anInt4747 <= (this.aClass377_4759.aNativeHeapBuffer7974.b)) {
+                if (anInt4747 <= (this.aClass377_4759.aNativeHeapBuffer7974!!.b)) {
                     anInt4736 = 1
                     return (this.aClass377_4759.aNativeHeapBuffer7974)
                 }
@@ -81,7 +81,7 @@ abstract class Class285 internal constructor(var aClass377_4759: Class377, priva
             if (anInt4746 > 0) {
                 glBindBufferARB(anInt4755, anInt4746)
                 if (anInt4736 != 1) bool = mapbuffer.b()
-                else glBufferSubDataARBa(anInt4755, 0, anInt4739, this.aClass377_4759.aNativeHeapBuffer7974.getAddress())
+                else glBufferSubDataARBa(anInt4755, 0, anInt4739, this.aClass377_4759.aNativeHeapBuffer7974!!.getAddress())
             }
             anInt4736 = 0
         }

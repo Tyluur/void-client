@@ -191,7 +191,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
         }
     }
 
-    override fun method3812(i: Int, class58s: Array<Class58?>?): Class130 {
+    override fun method3812(i: Int, class58s: Array<Class58>): Class130 {
         try {
             anInt9875++
             return Class130_Sub1(class58s)
@@ -375,7 +375,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
     override fun method3940(i: Int) {
         glMatrixMode(5890)
         anInt9888++
-        if (Class348_Sub42_Sub18.aClass251_9685 != this.aClass251Array8113[this.anInt8175]) glLoadMatrixf(this.aClass101_Sub2Array8131[this.anInt8175].method918(Class233.aFloatArray3015, 0), 0)
+        if (Class348_Sub42_Sub18.aClass251_9685 != this.aClass251Array8113[this.anInt8175]) glLoadMatrixf(this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(Class233.aFloatArray3015, 0), 0)
         else glLoadIdentity()
         if (i != 1) method3862(37, null)
         glMatrixMode(5888)
@@ -738,7 +738,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
         var i_47_: Int
         i_47_ = 0
         while (this.anInt8151 > i_47_) {
-            val class348_sub1 = this.aClass348_Sub1Array8132[i_47_]
+            val class348_sub1 = this.aClass348_Sub1Array8132[i_47_]!!
             val i_48_ = class348_sub1.method2720(-1)
             val i_49_ = i_47_ + 16386
             val f = class348_sub1.method2721(-37) / 255.0f
@@ -1167,9 +1167,8 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
         if (i != 0) this.anInt9918 = 74
     }
 
-    override fun method3889(bool: Boolean, i: Int): Interface5_Impl1? {
+    override fun method3889(bool: Boolean, i: Int): Interface5_Impl1 {
         anInt9815++
-        if (i != 16711680) return null
         return Class285_Sub1(this, bool)
     }
 

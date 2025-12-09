@@ -1,388 +1,416 @@
-/* ha - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import Class239_Sub27.Companion.method1839
+import Class348_Sub5.Companion.method2753
+import Class55.Companion.method515
+import java.awt.Canvas
+import java.awt.Rectangle
+import java.util.*
 
-import java.awt.*;
-import java.util.Random;
+abstract class ha internal constructor(@JvmField var aD4579: d?) {
+    @JvmField
+    var anInt4567: Int
+    abstract fun method3624(i: Int, i_0_: Int): Interface13?
 
-public abstract class ha {
-    static int anInt4561;
-    static int anInt4562;
-    static int anInt4563;
-    static int anInt4564;
-    static int anInt4565;
-    static int anInt4566;
-    int anInt4567;
-    static int anInt4568;
-    static int anInt4569;
-    static int anInt4570;
-    static Class351 aClass351_4571;
-    static int anInt4572;
-    static int anInt4573;
-    static int anInt4574;
-    static int anInt4575;
-    static int anInt4576;
-    static int anInt4577;
-    static int[] anIntArray4578 = new int[200];
-    d aD4579;
-    static int anInt4580;
-    static int anInt4581;
-    static float aFloat4582;
-    static int anInt4583;
+    abstract fun b(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, d: Double)
 
-    abstract Interface13 method3624(int i, int i_0_);
+    abstract fun method3625(class124: Class124?, i: Int, i_4_: Int, i_5_: Int, i_6_: Int): Class64
 
-    abstract void b(int i, int i_1_, int i_2_, int i_3_, double d);
+    abstract fun F(i: Int, i_7_: Int)
 
-    abstract Class64 method3625(Class124 class124, int i, int i_4_, int i_5_, int i_6_);
+    @Throws(Exception_Sub1::class)
+    abstract fun method3626(i: Int, i_8_: Int)
 
-    abstract void F(int i, int i_7_);
+    abstract fun method3627(): Boolean
 
-    abstract void method3626(int i, int i_8_) throws Exception_Sub1;
+    abstract fun method3628(i: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int)
 
-    abstract boolean method3627();
+    abstract fun method3629(i: Int, i_14_: Int, bool: Boolean): Class105?
 
-    abstract void method3628(int i, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_);
+    abstract fun Y(): IntArray
 
-    abstract Class105 method3629(int i, int i_14_, boolean bool);
+    abstract fun method3630(bool: Boolean)
 
-    abstract int[] Y();
+    abstract fun E(): Int
 
-    abstract void method3630(boolean bool);
+    abstract fun I(): Int
 
-    abstract int E();
+    abstract fun method3631(i: Int)
 
-    abstract int I();
+    abstract fun method3632(`is`: IntArray?)
 
-    abstract void method3631(int i);
+    abstract fun X(i: Int)
 
-    abstract void method3632(int[] is);
+    abstract fun xa(f: Float)
 
-    abstract void X(int i);
+    abstract fun method3633()
 
-    abstract void xa(float f);
+    abstract fun ya()
 
-    abstract void method3633();
+    abstract fun method3634(interface3: Interface3?, interface13: Interface13?): Interface4?
 
-    abstract void ya();
-
-    abstract Interface4 method3634(Interface3 interface3, Interface13 interface13);
-
-    final void method3635(byte i) {
-        int i_15_ = -90 % ((i - 8) / 33);
-        anInt4573++;
-        Class348_Sub40_Sub26.aBooleanArray9351[this.anInt4567] = false;
-        method3652();
+    fun method3635(i: Byte) {
+        val i_15_ = -90 % ((i - 8) / 33)
+        anInt4573++
+        Class348_Sub40_Sub26.aBooleanArray9351!![this.anInt4567] = false
+        method3652()
     }
 
-    abstract void method3636(int i, int i_16_, int i_17_, int i_18_, int i_19_, int i_20_, aa var_aa, int i_21_, int i_22_);
+    abstract fun method3636(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, i_20_: Int, var_aa: aa?, i_21_: Int, i_22_: Int)
 
-    abstract Class365 c();//c
+    abstract fun c(): Class365 //c
 
-    abstract void method3638(Class101 class101);
+    abstract fun method3638(class101: Class101?)
 
-    abstract int[] na(int i, int i_23_, int i_24_, int i_25_);
+    abstract fun na(i: Int, i_23_: Int, i_24_: Int, i_25_: Int): IntArray?
 
-    abstract int r(int i, int i_26_, int i_27_, int i_28_, int i_29_, int i_30_, int i_31_);
+    abstract fun r(i: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int): Int
 
-    abstract void DA(int i, int i_32_, int i_33_, int i_34_);
+    abstract fun DA(i: Int, i_32_: Int, i_33_: Int, i_34_: Int)
 
-    abstract boolean method3639();
+    abstract fun method3639(): Boolean
 
-    abstract Class101 method3640();
+    abstract fun method3640(): Class101?
 
-    static final void method3641(int i, int i_35_, byte i_36_, int i_37_, int i_38_, int i_39_) {
-        anInt4575++;
-        if (i_36_ != -75) anInt4581 = 73;
-        if (i_35_ == i_38_) Class127.method1116(i, i_37_, i_39_, i_38_, (byte) -99);
-        else if (Class369.anInt4960 <= i_39_ + -i_38_ && Class113.anInt1745 >= i_39_ - -i_38_ && -i_35_ + i >= Class132.anInt1910 && Class38.anInt513 >= i + i_35_) Class55.method515(i_37_, i_39_, i, i_35_, i_38_, -122);
-        else Class239_Sub27.method1839(i_39_, i_35_, i, i_36_ ^ 0x4a, i_37_, i_38_);
+    abstract fun method3642(i: Int, class348_sub1s: Array<Class348_Sub1?>?)
+
+    abstract fun method3643(canvas: Canvas?, i: Int, i_40_: Int)
+
+    abstract fun method3644(): Boolean
+
+    fun method3645(i: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int) {
+        anInt4563++
+        method3709(i_41_, i, i_42_, i_45_, i_44_, 1)
+        if (i_43_ != -8003) method3665(75, 67)
     }
 
-    abstract void method3642(int i, Class348_Sub1[] class348_sub1s);
+    abstract fun method3646(i: Int)
 
-    abstract void method3643(Canvas canvas, int i, int i_40_);
+    abstract fun method3647(bool: Boolean)
 
-    abstract boolean method3644();
+    abstract fun method3648(i: Int, i_46_: Int, `is`: Array<IntArray?>?, is_47_: Array<IntArray?>?, i_48_: Int, i_49_: Int, i_50_: Int): s?
 
-    final void method3645(int i, int i_41_, int i_42_, int i_43_, int i_44_, int i_45_) {
-        anInt4563++;
-        method3709(i_41_, i, i_42_, i_45_, i_44_, 1);
-        if (i_43_ != -8003) method3665(75, 67);
+    fun method3649(i: Byte, i_51_: Int, i_52_: Int, i_53_: Int, i_54_: Int) {
+        anInt4569++
+        if (i < -67) U(i_54_, i_52_, i_51_, i_53_, 1)
     }
 
-    abstract void method3646(int i);
+    abstract fun method3650(i: Int)
 
-    abstract void method3647(boolean bool);
+    abstract fun method3651(var_za: za?)
 
-    abstract s method3648(int i, int i_46_, int[][] is, int[][] is_47_, int i_48_, int i_49_, int i_50_);
+    abstract fun P(i: Int, i_55_: Int, i_56_: Int, i_57_: Int, i_58_: Int)
 
-    final void method3649(byte i, int i_51_, int i_52_, int i_53_, int i_54_) {
-        anInt4569++;
-        if (i < -67) U(i_54_, i_52_, i_51_, i_53_, 1);
+    abstract fun method3652()
+
+    abstract fun za(i: Int, i_59_: Int, i_60_: Int, i_61_: Int, i_62_: Int)
+
+    abstract fun method3653(class299: Class299?)
+
+    abstract fun method3654(): Class101
+
+    abstract fun JA(i: Int, i_63_: Int, i_64_: Int, i_65_: Int, i_66_: Int, i_67_: Int): Int
+
+    abstract fun i(): Int
+
+    abstract fun method3655(): Boolean
+
+    fun method3656(i: Byte, i_68_: Int, i_69_: Int, i_70_: Int, i_71_: Int) {
+        anInt4580++
+        za(i_70_, i_71_, i_69_, i_68_, 1)
+        if (i >= -97) aFloat4582 = 0.37843478f
     }
 
-    abstract void method3650(int i);
+    abstract fun L(i: Int, i_72_: Int, i_73_: Int)
 
-    abstract void method3651(za var_za);
-
-    abstract void P(int i, int i_55_, int i_56_, int i_57_, int i_58_);
-
-    abstract void method3652();
-
-    abstract void za(int i, int i_59_, int i_60_, int i_61_, int i_62_);
-
-    abstract void method3653(Class299 class299);
-
-    abstract Class101 method3654();
-
-    abstract int JA(int i, int i_63_, int i_64_, int i_65_, int i_66_, int i_67_);
-
-    abstract int i();
-
-    abstract boolean method3655();
-
-    final void method3656(byte i, int i_68_, int i_69_, int i_70_, int i_71_) {
-        anInt4580++;
-        za(i_70_, i_71_, i_69_, i_68_, 1);
-        if (i >= -97) aFloat4582 = 0.37843478F;
+    @Throws(Exception_Sub1::class)
+    fun method3657(rectangles: Array<Rectangle?>?, i: Int, i_74_: Int) {
+        method3707(rectangles, i, 0, 0)
+        anInt4568++
+        if (i_74_ <= 41) this.anInt4567 = 54
     }
 
-    abstract void L(int i, int i_72_, int i_73_);
+    abstract fun f(i: Int, i_75_: Int)
 
-    final void method3657(Rectangle[] rectangles, int i, int i_74_) throws Exception_Sub1 {
-        method3707(rectangles, i, 0, 0);
-        anInt4568++;
-        if (i_74_ <= 41) this.anInt4567 = 54;
+    abstract fun la()
+
+    abstract fun method3658(i: Int, i_76_: Int, i_77_: Int, i_78_: Int)
+
+    abstract fun method3659(i: Int)
+
+    fun method3660(i: Int, i_79_: Int, i_80_: Int, i_81_: Int, bool: Boolean) {
+        if (bool != true) H(-122, 91, -22, null)
+        anInt4570++
+        P(i, i_81_, i_80_, i_79_, 1)
     }
 
-    abstract void f(int i, int i_75_);
+    abstract fun method3661(i: Int, i_82_: Int, `is`: IntArray?, is_83_: IntArray?): aa?
 
-    abstract void la();
-
-    abstract void method3658(int i, int i_76_, int i_77_, int i_78_);
-
-    abstract void method3659(int i);
-
-    final void method3660(int i, int i_79_, int i_80_, int i_81_, boolean bool) {
-        if (bool != true) H(-122, 91, -22, null);
-        anInt4570++;
-        P(i, i_81_, i_80_, i_79_, 1);
+    fun method3662(i: Int, `is`: IntArray?, i_84_: Byte, i_85_: Int, i_86_: Int, i_87_: Int): Class105 {
+        anInt4565++
+        return method3711(`is`, i_85_, i_86_, i, i_87_, true)
     }
 
-    abstract aa method3661(int i, int i_82_, int[] is, int[] is_83_);
+    abstract fun method3663()
 
-    final Class105 method3662(int i, int[] is, byte i_84_, int i_85_, int i_86_, int i_87_) {
-        anInt4565++;
-        if (i_84_ != 94) return null;
-        return method3711(is, i_85_, i_86_, i, i_87_, true);
+    abstract fun method3665(i: Int, i_94_: Int): Interface3?
+
+    abstract fun pa()
+
+    abstract fun method3666(): Boolean
+
+    abstract fun da(i: Int, i_95_: Int, i_96_: Int, `is`: IntArray?)
+
+    abstract fun method3667(i: Int, i_97_: Int): Int
+
+    abstract fun Q(i: Int, i_98_: Int, i_99_: Int, i_100_: Int, i_101_: Int, i_102_: Int, `is`: ByteArray?, i_103_: Int, i_104_: Int)
+
+    fun method3668(i: Int, i_105_: Int, i_106_: Int, i_107_: Int, i_108_: Int, i_109_: Int) {
+        anInt4574++
+        if (i_109_ >= 21) method3628(i_107_, i_105_, i, i_108_, i_106_, 1)
     }
 
-    abstract void method3663();
+    abstract fun HA(i: Int, i_110_: Int, i_111_: Int, i_112_: Int, `is`: IntArray?)
 
-    static final byte[] method3664(int i, int i_88_) {
-        anInt4564++;
-        if (i_88_ <= 21) anInt4583 = 60;
-        Class348_Sub42_Sub3 class348_sub42_sub3 = ((Class348_Sub42_Sub3) Class348_Sub1_Sub2.aClass308_8815.method2302(i, (byte) -120));
-        if (class348_sub42_sub3 == null) {
-            byte[] is = new byte[512];
-            Random random = new Random(i);
-            for (int i_89_ = 0; i_89_ < 255; i_89_++)
-                is[i_89_] = (byte) i_89_;
-            for (int i_90_ = 0; i_90_ < 255; i_90_++) {
-                int i_91_ = -i_90_ + 255;
-                int i_92_ = Class124.method1097((byte) 95, i_91_, random);
-                byte i_93_ = is[i_92_];
-                is[i_92_] = is[i_91_];
-                is[i_91_] = is[511 + -i_90_] = i_93_;
-            }
-            class348_sub42_sub3 = new Class348_Sub42_Sub3(is);
-            Class348_Sub1_Sub2.aClass308_8815.method2305(i, class348_sub42_sub3, -1);
-        }
-        return class348_sub42_sub3.aByteArray9499;
-    }
+    abstract fun method3669(canvas: Canvas?, i: Int, i_113_: Int)
 
-    abstract Interface3 method3665(int i, int i_94_);
+    abstract fun method3670(): Boolean
 
-    abstract void pa();
+    abstract fun method3671(): Boolean
 
-    abstract boolean method3666();
+    abstract fun method3672()
 
-    abstract void da(int i, int i_95_, int i_96_, int[] is);
+    abstract fun method3673()
 
-    abstract int method3667(int i, int i_97_);
+    abstract fun method3674(i: Int, i_114_: Int, i_115_: Int, i_116_: Int, i_117_: Int, i_118_: Int, i_119_: Int, i_120_: Int, i_121_: Int)
 
-    abstract void Q(int i, int i_98_, int i_99_, int i_100_, int i_101_, int i_102_, byte[] is, int i_103_, int i_104_);
+    abstract fun EA(i: Int, i_122_: Int, i_123_: Int, i_124_: Int)
 
-    final void method3668(int i, int i_105_, int i_106_, int i_107_, int i_108_, int i_109_) {
-        anInt4574++;
-        if (i_109_ >= 21) method3628(i_107_, i_105_, i, i_108_, i_106_, 1);
-    }
-
-    abstract void HA(int i, int i_110_, int i_111_, int i_112_, int[] is);
-
-    abstract void method3669(Canvas canvas, int i, int i_113_);
-
-    abstract boolean method3670();
-
-    abstract boolean method3671();
-
-    abstract void method3672();
-
-    abstract void method3673();
-
-    abstract void method3674(int i, int i_114_, int i_115_, int i_116_, int i_117_, int i_118_, int i_119_, int i_120_, int i_121_);
-
-    abstract void EA(int i, int i_122_, int i_123_, int i_124_);
-
-    final void method3675(int i, byte i_125_, int i_126_, int i_127_, int i_128_, int i_129_) {
-        if (i_125_ == -125) {
-            aa(i_126_, i_127_, i, i_128_, i_129_, 1);
-            anInt4566++;
+    fun method3675(i: Int, i_125_: Byte, i_126_: Int, i_127_: Int, i_128_: Int, i_129_: Int) {
+        if (i_125_.toInt() == -125) {
+            aa(i_126_, i_127_, i, i_128_, i_129_, 1)
+            anInt4566++
         }
     }
 
-    abstract void method3676(int i, int i_130_, int i_131_, int i_132_, int i_133_, int i_134_, int i_135_, int i_136_, int i_137_, int i_138_, int i_139_, int i_140_, int i_141_);
+    abstract fun method3676(i: Int, i_130_: Int, i_131_: Int, i_132_: Int, i_133_: Int, i_134_: Int, i_135_: Int, i_136_: Int, i_137_: Int, i_138_: Int, i_139_: Int, i_140_: Int, i_141_: Int)
 
-    abstract void method3677(Canvas canvas);
+    abstract fun method3677(canvas: Canvas?)
 
-    abstract void method3678(int i);
+    abstract fun method3678(i: Int)
 
-    abstract int method3679(int i, int i_142_);
+    abstract fun method3679(i: Int, i_142_: Int): Int
 
-    public static void method3680(int i) {
-        if (i != -24016) anIntArray4578 = null;
-        anIntArray4578 = null;
-        aClass351_4571 = null;
+    fun method3681(class105: Class105, i: Int) {
+        method3687(method3634(class105, method3624(class105.method971(), class105.method969())))
+        anInt4561++
+        if (i != 0) DA(-75, -67, 18, -116)
     }
 
-    final void method3681(Class105 class105, int i) {
-        method3687(method3634(class105, method3624(class105.method971(), class105.method969())));
-        anInt4561++;
-        if (i != 0) DA(-75, -67, 18, -116);
+    abstract fun method3682(): Boolean
+
+    abstract fun method3683(i: Int, i_143_: Int, i_144_: Int, i_145_: Int, bool: Boolean): Class105?
+
+    abstract fun method3684(class98: Class98)
+
+    abstract fun method3685(class98: Class98, i: Int)
+
+    abstract fun K(`is`: IntArray?)
+
+    abstract fun method3686(class143: Class143?, class207s: Array<Class207?>?, bool: Boolean): Class324?
+
+    abstract fun H(i: Int, i_146_: Int, i_147_: Int, `is`: IntArray?)
+
+    abstract fun T(i: Int, i_148_: Int, i_149_: Int, i_150_: Int)
+
+    abstract fun ZA(i: Int, f: Float, f_151_: Float, f_152_: Float, f_153_: Float, f_154_: Float)
+
+    abstract fun ra(i: Int, i_155_: Int, i_156_: Int, i_157_: Int)
+
+    abstract fun M(): Int
+
+    abstract fun C(bool: Boolean)
+
+    abstract fun method3687(interface4: Interface4?)
+
+    abstract fun method3688(i: Int, i_158_: Int, i_159_: Int, i_160_: Int, i_161_: Int, i_162_: Int, i_163_: Int)
+
+    @Throws(Exception_Sub1::class)
+    fun method3689(i: Byte) {
+        method3626(0, 0)
+        if (i >= 53) anInt4572++
     }
 
-    abstract boolean method3682();
+    abstract fun method3690(i: Int, i_164_: Int, i_165_: Int, i_166_: Int, i_167_: Int, f: Float): Class348_Sub1?
 
-    abstract Class105 method3683(int i, int i_143_, int i_144_, int i_145_, boolean bool);
+    abstract fun method3691(class207: Class207?, bool: Boolean): Class105?
 
-    abstract void method3684(Class98 class98);
+    abstract fun method3693(): Boolean
 
-    abstract void method3685(Class98 class98, int i);
+    abstract fun method3694(): Boolean
 
-    abstract void K(int[] is);
+    abstract fun method3695(): Boolean
 
-    abstract Class324 method3686(Class143 class143, Class207[] class207s, boolean bool);
+    abstract fun method3696(i: Int)
 
-    abstract void H(int i, int i_146_, int i_147_, int[] is);
+    abstract fun method3697(i: Int, i_172_: Int, i_173_: Int, i_174_: Int, i_175_: Int, i_176_: Int): Class299?
 
-    abstract void T(int i, int i_148_, int i_149_, int i_150_);
-
-    abstract void ZA(int i, float f, float f_151_, float f_152_, float f_153_, float f_154_);
-
-    abstract void ra(int i, int i_155_, int i_156_, int i_157_);
-
-    abstract int M();
-
-    abstract void C(boolean bool);
-
-    abstract void method3687(Interface4 interface4);
-
-    abstract void method3688(int i, int i_158_, int i_159_, int i_160_, int i_161_, int i_162_, int i_163_);
-
-    final void method3689(byte i) throws Exception_Sub1 {
-        method3626(0, 0);
-        if (i >= 53) anInt4572++;
+    protected open fun finalize() {
+        method3635(46.toByte())
+        anInt4577++
     }
 
-    abstract Class348_Sub1 method3690(int i, int i_164_, int i_165_, int i_166_, int i_167_, float f);
+    abstract fun KA(i: Int, i_177_: Int, i_178_: Int, i_179_: Int)
 
-    abstract Class105 method3691(Class207 class207, boolean bool);
+    abstract fun method3698()
 
-    static final synchronized ha method3692(int i, int i_168_, int i_169_, Class45 class45, int i_170_, d var_d, Canvas canvas, int i_171_) {
-        try {
-            anInt4576++;
-            if (i_170_ == i_171_) return Class348_Sub5.method2753(true, i_168_, i_169_, canvas, var_d);
-            if (i_171_ == 2) return Class306.method2297(-6, i_168_, var_d, canvas, i_169_);
-            if (i_171_ == 1) return Class262.method2000(3, i, canvas, var_d);
-            if (i_171_ == 5) return Class93.method862(canvas, var_d, class45, 25542, i);
-            if (i_171_ == 3) return Class96.method870(i, i_170_ ^ 0x4a31, var_d, class45, canvas);
-            throw new IllegalArgumentException("UM");
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (class45 != null ? "{...}" : "null") + ',' + i_170_ + ',' + (var_d != null ? "{...}" : "null") + ',' + (canvas != null ? "{...}" : "null") + ',' + i_171_ + ')'));
-        }
-    }
+    abstract fun method3699(): Boolean
 
-    abstract boolean method3693();
+    abstract fun method3700(f: Float, f_180_: Float, f_181_: Float)
 
-    abstract boolean method3694();
+    abstract fun A(i: Int, var_aa: aa?, i_182_: Int, i_183_: Int)
 
-    abstract boolean method3695();
+    abstract fun method3701(canvas: Canvas?)
 
-    abstract void method3696(int i);
+    abstract fun method3702(i: Int): za?
 
-    abstract Class299 method3697(int i, int i_172_, int i_173_, int i_174_, int i_175_, int i_176_);
+    abstract fun method3703(i: Int, i_184_: Int, i_185_: Int, i_186_: Int, i_187_: Int, i_188_: Int, var_aa: aa?, i_189_: Int, i_190_: Int, i_191_: Int, i_192_: Int, i_193_: Int)
 
-    protected void finalize() {
-        method3635((byte) 46);
-        anInt4577++;
-    }
+    abstract fun method3704(): Int
 
-    abstract void KA(int i, int i_177_, int i_178_, int i_179_);
+    abstract fun method3705(): Class101
 
-    abstract void method3698();
+    abstract fun XA(): Int
 
-    abstract boolean method3699();
+    abstract fun U(i: Int, i_194_: Int, i_195_: Int, i_196_: Int, i_197_: Int)
 
-    abstract void method3700(float f, float f_180_, float f_181_);
+    abstract fun aa(i: Int, i_198_: Int, i_199_: Int, i_200_: Int, i_201_: Int, i_202_: Int)
 
-    abstract void A(int i, aa var_aa, int i_182_, int i_183_);
+    abstract fun GA(i: Int)
 
-    abstract void method3701(Canvas canvas);
+    abstract fun method3706(class299: Class299?, class299_203_: Class299?, f: Float, class299_204_: Class299?): Class299?
 
-    abstract za method3702(int i);
+    @Throws(Exception_Sub1::class)
+    abstract fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_205_: Int, i_206_: Int)
 
-    abstract void method3703(int i, int i_184_, int i_185_, int i_186_, int i_187_, int i_188_, aa var_aa, int i_189_, int i_190_, int i_191_, int i_192_, int i_193_);
+    abstract fun method3708(): Boolean
 
-    abstract int method3704();
+    abstract fun method3709(i: Int, i_207_: Int, i_208_: Int, i_209_: Int, i_210_: Int, i_211_: Int)
 
-    abstract Class101 method3705();
+    abstract fun method3710()
 
-    abstract int XA();
+    abstract fun method3711(`is`: IntArray?, i: Int, i_212_: Int, i_213_: Int, i_214_: Int, bool: Boolean): Class105
 
-    abstract void U(int i, int i_194_, int i_195_, int i_196_, int i_197_);
-
-    abstract void aa(int i, int i_198_, int i_199_, int i_200_, int i_201_, int i_202_);
-
-    abstract void GA(int i);
-
-    abstract Class299 method3706(Class299 class299, Class299 class299_203_, float f, Class299 class299_204_);
-
-    abstract void method3707(Rectangle[] rectangles, int i, int i_205_, int i_206_) throws Exception_Sub1;
-
-    abstract boolean method3708();
-
-    abstract void method3709(int i, int i_207_, int i_208_, int i_209_, int i_210_, int i_211_);
-
-    abstract void method3710();
-
-    abstract Class105 method3711(int[] is, int i, int i_212_, int i_213_, int i_214_, boolean bool);
-
-    ha(d var_d) {
-        this.aD4579 = var_d;
-        int i = -1;
-        for (int i_215_ = 0; i_215_ < 8; i_215_++) {
-            if (!Class348_Sub40_Sub26.aBooleanArray9351[i_215_]) {
-                Class348_Sub40_Sub26.aBooleanArray9351[i_215_] = true;
-                i = i_215_;
-                break;
+    init {
+        var i = -1
+        for (i_215_ in 0..7) {
+            if (!Class348_Sub40_Sub26.aBooleanArray9351!![i_215_]) {
+                Class348_Sub40_Sub26.aBooleanArray9351!![i_215_] = true
+                i = i_215_
+                break
             }
         }
-        if (i == -1) throw new IllegalStateException("NFTI");
-        this.anInt4567 = i;
+        check(i != -1) { "NFTI" }
+        this.anInt4567 = i
     }
 
-    static {
-        aClass351_4571 = new Class351(73, -1);
+    companion object {
+        @JvmField
+        var anInt4561: Int = 0
+        @JvmField
+        var anInt4562: Int = 0
+        @JvmField
+        var anInt4563: Int = 0
+        @JvmField
+        var anInt4564: Int = 0
+        @JvmField
+        var anInt4565: Int = 0
+        @JvmField
+        var anInt4566: Int = 0
+        @JvmField
+        var anInt4568: Int = 0
+        @JvmField
+        var anInt4569: Int = 0
+        @JvmField
+        var anInt4570: Int = 0
+        var aClass351_4571: Class351?
+        @JvmField
+        var anInt4572: Int = 0
+        @JvmField
+        var anInt4573: Int = 0
+        @JvmField
+        var anInt4574: Int = 0
+        @JvmField
+        var anInt4575: Int = 0
+        @JvmField
+        var anInt4576: Int = 0
+        @JvmField
+        var anInt4577: Int = 0
+        @JvmField
+        var anIntArray4578: IntArray? = IntArray(200)
+        @JvmField
+        var anInt4580: Int = 0
+        @JvmField
+        var anInt4581: Int = 0
+        @JvmField
+        var aFloat4582: Float = 0f
+        @JvmField
+        var anInt4583: Int = 0
+
+        @JvmStatic
+        fun method3641(i: Int, i_35_: Int, i_36_: Byte, i_37_: Int, i_38_: Int, i_39_: Int) {
+            anInt4575++
+            if (i_36_.toInt() != -75) anInt4581 = 73
+            if (i_35_ == i_38_) Class127.method1116(i, i_37_, i_39_, i_38_, (-99).toByte())
+            else if (Class369.anInt4960 <= i_39_ + -i_38_ && Class113.anInt1745 >= i_39_ - -i_38_ && -i_35_ + i >= Class132.anInt1910 && Class38.anInt513 >= i + i_35_) method515(i_37_, i_39_, i, i_35_, i_38_, -122)
+            else method1839(i_39_, i_35_, i, i_36_.toInt() xor 0x4a, i_37_, i_38_)
+        }
+
+        fun method3664(i: Int, i_88_: Int): ByteArray {
+            anInt4564++
+            if (i_88_ <= 21) anInt4583 = 60
+            var class348_sub42_sub3 = (Class348_Sub1_Sub2.aClass308_8815!!.method2302(i.toLong(), (-120).toByte()) as Class348_Sub42_Sub3?)
+            if (class348_sub42_sub3 == null) {
+                val `is` = ByteArray(512)
+                val random = Random(i.toLong())
+                for (i_89_ in 0..254) `is`[i_89_] = i_89_.toByte()
+                for (i_90_ in 0..254) {
+                    val i_91_ = -i_90_ + 255
+                    val i_92_ = Class124.method1097(95.toByte(), i_91_, random)
+                    val i_93_ = `is`[i_92_]
+                    `is`[i_92_] = `is`[i_91_]
+                    `is`[511 + -i_90_] = i_93_
+                    `is`[i_91_] = `is`[511 + -i_90_]
+                }
+                class348_sub42_sub3 = Class348_Sub42_Sub3(`is`)
+                Class348_Sub1_Sub2.aClass308_8815!!.method2305(i.toLong(), class348_sub42_sub3, -1)
+            }
+            return class348_sub42_sub3.aByteArray9499
+        }
+
+        @JvmStatic
+        fun method3680(i: Int) {
+            if (i != -24016) anIntArray4578 = null
+            anIntArray4578 = null
+            aClass351_4571 = null
+        }
+
+        @JvmStatic
+        @Synchronized
+        fun method3692(i: Int, i_168_: Int, i_169_: Int, class45: Class45?, i_170_: Int, var_d: d?, canvas: Canvas?, i_171_: Int): ha? {
+            try {
+                anInt4576++
+                if (i_170_ == i_171_) return method2753(true, i_168_, i_169_, canvas, var_d)
+                if (i_171_ == 2) return Class306.method2297(-6, i_168_, var_d, canvas, i_169_)
+                if (i_171_ == 1) return Class262.method2000(3, i, canvas, var_d)
+                if (i_171_ == 5) return Class93.method862(canvas, var_d, class45, 25542, i)
+                if (i_171_ == 3) return Class96.method870(i, i_170_ xor 0x4a31, var_d, class45, canvas)
+                throw IllegalArgumentException("UM")
+            } catch (runtimeexception: RuntimeException) {
+                throw Class348_Sub17.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_170_ + ',' + (if (var_d != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_171_ + ')'))
+            }
+        }
+
+        init {
+            aClass351_4571 = Class351(73, -1)
+        }
     }
 }

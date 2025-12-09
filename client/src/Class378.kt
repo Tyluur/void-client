@@ -119,9 +119,9 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         /* empty */
     }
 
-    override fun method3872(i: Int, i_10_: Int, class304: Class304, bool: Boolean, i_11_: Int, `is`: ByteArray?): Interface18_Impl1? {
+    override fun method3872(i: Int, i_10_: Int, class304: Class304?, bool: Boolean, i_11_: Int, `is`: ByteArray?): Interface18_Impl1? {
         if (bool != true) return null
-        return Class310_Sub3(this, class304, i_10_, i_11_, i, `is`)
+        return Class310_Sub3(this, class304!!, i_10_, i_11_, i, `is`)
     }
 
     override fun method3827(i: Byte) {
@@ -239,7 +239,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         }
     }
 
-    override fun method3938(class21: Class21?, i: Int, interface5_impl2: Interface5_Impl2, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
+    override fun method3938(class21: Class21?, i: Int, interface5_impl2: Interface5_Impl2?, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int) {
         this.anIDirect3DDevice9810!!.SetIndices((interface5_impl2 as Class142).anIDirect3DIndexBuffer8517)
         this.anIDirect3DDevice9810!!.DrawIndexedPrimitive(Companion.method3953(class21, (-111).toByte()), 0, i_24_, i_26_, i_25_, i)
         if (i_27_ < 46) method3931(true, null, null)
@@ -321,7 +321,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         var i_35_: Int
         i_35_ = 0
         while (this.anInt8151 > i_35_) {
-            val class348_sub1 = this.aClass348_Sub1Array8132[i_35_]
+            val class348_sub1 = this.aClass348_Sub1Array8132[i_35_]!!
             val i_36_ = i_35_ - -2
             val i_37_ = class348_sub1.method2720(-1)
             val f = class348_sub1.method2721(-115) / 255.0f
@@ -508,9 +508,9 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i != 3) method3882(51.toByte())
     }
 
-    override fun method3843(i: Int, i_49_: Int, i_50_: Int, i_51_: Int, `is`: ByteArray?, class304: Class304, i_52_: Int, bool: Boolean): Interface18_Impl3 {
+    override fun method3843(i: Int, i_49_: Int, i_50_: Int, i_51_: Int, `is`: ByteArray?, class304: Class304?, i_52_: Int, bool: Boolean): Interface18_Impl3 {
         if (i_52_ != 32) anInt9785 = 94
-        return Class310_Sub2(this, class304, i_50_, i, bool, `is`, i_49_, i_51_)
+        return Class310_Sub2(this, class304!!, i_50_, i, bool, `is`, i_49_, i_51_)
     }
 
     @Synchronized
@@ -576,7 +576,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i.toInt() != 100) anIntArray9805 = null
     }
 
-    override fun method3812(i: Int, class58s: Array<Class58?>): Class130 {
+    override fun method3812(i: Int, class58s: Array<Class58>): Class130 {
         if (i != 0) anInt9807 = 29
         return dxVertexLayout(this, class58s)
     }
@@ -590,8 +590,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         /* empty */
     }
 
-    override fun method3889(bool: Boolean, i: Int): Interface5_Impl1? {
-        if (i != 16711680) return null
+    override fun method3889(bool: Boolean, i: Int): Interface5_Impl1 {
         return Class366(this, bool)
     }
 
@@ -617,7 +616,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
                 } else return Class367_Sub5(this, this.aClass45_8039)
                 return Class367_Sub6(this, this.aClass45_8039, this.aClass269_7937)
             } while (false)
-            return Class367_Sub7(this, this.aClass45_8039, this.aClass269_7937)
+            return Class367_Sub7(this, this.aClass45_8039, this.aClass269_7937!!)
         } while (false)
         return super.method3832(i, (-74).toByte())
     }
@@ -684,8 +683,8 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3940(i: Int) {
         if (anIDirect3DVertexShader9794 == null && ((this.aClass251Array8113[this.anInt8175]) != Class348_Sub42_Sub18.aClass251_9685)) {
-            if (Class239_Sub18.aClass251_6030 == (this.aClass251Array8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175].method928(aFloatArray9797, i))
-            else this.anIDirect3DDevice9810!!.SetTransform(16 - -this.anInt8175, this.aClass101_Sub2Array8131[this.anInt8175].method918(aFloatArray9797, i xor 0x1))
+            if (Class239_Sub18.aClass251_6030 == (this.aClass251Array8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175]!!.method928(aFloatArray9797, i))
+            else this.anIDirect3DDevice9810!!.SetTransform(16 - -this.anInt8175, this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(aFloatArray9797, i xor 0x1))
             val i_72_: Int = method3963(594, (this.aClass251Array8113[this.anInt8175]))
             if (anIntArray9805!![this.anInt8175] != i_72_) {
                 this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 24, i_72_)
@@ -698,14 +697,13 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
         if (i != 1) aBoolean9801 = true
     }
 
-    override fun method3861(i: Int, i_73_: Byte, i_74_: Int, class68: Class68, class304: Class304): Interface18_Impl3? {
-        if (i_73_.toInt() != -84) return null
-        return Class310_Sub2(this, class304, class68, i_74_, i)
+    override fun method3861(i: Int, i_73_: Byte, i_74_: Int, class68: Class68?, class304: Class304?): Interface18_Impl3 {
+        return Class310_Sub2(this, class304!!, class68!!, i_74_, i)
     }
 
-    override fun method3844(i: Int, canvas: Canvas, `object`: Any?) {
+    override fun method3844(i: Int, canvas: Canvas?, `object`: Any?) {
         if (canvas === this.aCanvas7925) {
-            val dimension = canvas.getSize()
+            val dimension = canvas!!.getSize()
             if (dimension.width > 0 && 0 < dimension.height) {
                 this.anIDirect3DDevice9810!!.EndScene()
                 method3960(false)

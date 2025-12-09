@@ -48,9 +48,9 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
     }
 
     @Throws(Exception_Sub1::class)
-    override fun method3707(rectangles: Array<Rectangle?>, i: Int, i_18_: Int, i_19_: Int) {
+    override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_18_: Int, i_19_: Int) {
         checkNotNull(aP5137) { "off" }
-        aP5137!!.method3434(rectangles, i, i_18_, i_19_)
+        aP5137!!.method3434(rectangles!!, i, i_18_, i_19_)
     }
 
     override fun method3708(): Boolean {
@@ -58,7 +58,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
     }
 
     override fun method3685(class98: Class98, i: Int) {
-        method3975(class98, false)
+        method3975(class98!!, false)
         method3973()!!.method155(this, anIntArray5136, anIntArray5135, anIntArray5139, aShortArray5133, class98.aClass88_1569.method840(0))
     }
 
@@ -70,8 +70,8 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         /* empty */
     }
 
-    override fun method3691(class207: Class207, bool: Boolean): Class105 {
-        val var_j = j(this, class207.anIntArray2697, class207.aByteArray2699, class207.aByteArray2695, 0, class207.anInt2702, class207.anInt2702, class207.anInt2696)
+    override fun method3691(class207: Class207?, bool: Boolean): Class105 {
+        val var_j = j(this, class207!!.anIntArray2697, class207.aByteArray2699, class207.aByteArray2695, 0, class207.anInt2702, class207.anInt2702, class207.anInt2696)
         var_j.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701)
         return var_j
     }
@@ -102,8 +102,8 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         /* empty */
     }
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207?>, bool: Boolean): Class324 {
-        val `is` = IntArray(class207s.size)
+    override fun method3686(class143: Class143?, class207s: Array<Class207?>?, bool: Boolean): Class324 {
+        val `is` = IntArray(class207s!!.size)
         val is_60_ = IntArray(class207s.size)
         var bool_61_ = false
         for (i in class207s.indices) {
@@ -134,18 +134,18 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     private external fun t(var_p: p?)
 
-    override fun method3705(): Class101? {
-        return aClass101_5131
+    override fun method3705(): Class101 {
+        return aClass101_5131!!
     }
 
     private fun WA(i: Short): Boolean { //
-        synchronized(this.aD4579) {
-            if (!this.aD4579.method4(-7953, i.toInt())) return false
-            val class12 = this.aD4579.method3(i.toInt(), -6662)
+        synchronized(this.aD4579!!) {
+            if (!this.aD4579!!.method4(-7953, i.toInt())) return false
+            val class12 = this.aD4579!!.method3(i.toInt(), -6662)
             if (class12 == null) return false
             val `is`: IntArray?
-            if (class12.anInt200 != 2) `is` = this.aD4579.method5(true, i.toInt(), 0.7f, 128, 128, -128)
-            else `is` = this.aD4579.method6(-21540, 128, 0.7f, i.toInt(), true, 128)
+            if (class12.anInt200 != 2) `is` = this.aD4579!!.method5(true, i.toInt(), 0.7f, 128, 128, -128)
+            else `is` = this.aD4579!!.method6(-21540, 128, 0.7f, i.toInt(), true, 128)
             CA(i, `is`, class12.aShort208, class12.anInt200, class12.aByte213, class12.aByte202, class12.anInt206, class12.aBoolean199, class12.aByte201, class12.aByte216, class12.aByte198, class12.aByte211, class12.aBoolean209, class12.aBoolean204, class12.aBoolean212, class12.aBoolean217, class12.aBoolean215, class12.aByte205, class12.aBoolean218, class12.aBoolean207, class12.anInt203)
         }
         return true
@@ -174,9 +174,9 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         anAArray5143!![i]!!.method154()
     }
 
-    override fun method3632(`is`: IntArray) {
+    override fun method3632(`is`: IntArray?) {
         val dimension = aP5137!!.aCanvas5147!!.getSize()
-        `is`[0] = dimension.width
+        `is`!![0] = dimension.width
         `is`[1] = dimension.height
     }
 
@@ -206,7 +206,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     external override fun xa(f: Float)
 
-    override fun method3701(canvas: Canvas) {
+    override fun method3701(canvas: Canvas?) {
         if (aP5137!!.aCanvas5147 === canvas) method3677(null)
         val var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
         if (var_p != null) {
@@ -232,7 +232,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
     private external fun n(l: Long, l_102_: Long)
 
     override fun method3684(class98: Class98) {
-        if (class98.aClass88_1569.method840(0) != 0) {
+        if (class98!!.aClass88_1569.method840(0) != 0) {
             method3975(class98, false)
             method3973()!!.method155(this, anIntArray5136, anIntArray5135, anIntArray5139, aShortArray5133, class98.aClass88_1569.method840(0))
         }
@@ -268,7 +268,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         }
     }
 
-    override fun method3669(canvas: Canvas, i: Int, i_108_: Int) {
+    override fun method3669(canvas: Canvas?, i: Int, i_108_: Int) {
         val var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
         var_p!!.method3435(canvas, i, i_108_)
         if (canvas != null && canvas === aP5137!!.aCanvas5147) method3677(canvas)
@@ -276,7 +276,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     private fun c(i: Short): Boolean { //
         synchronized(this) {
-            val class12 = this.aD4579.method3(i.toInt(), -6662)
+            val class12 = this.aD4579!!.method3(i.toInt(), -6662)
             if (class12 == null) return false
             AA(i, class12.aShort208, class12.anInt200, class12.aByte213, class12.aByte202, class12.anInt206, class12.aBoolean199, class12.aByte201, class12.aByte216, class12.aByte198, class12.aByte211, class12.aBoolean209, class12.aBoolean204, class12.aBoolean212, class12.aBoolean217, class12.aBoolean215, class12.aByte205, class12.aBoolean218, class12.aBoolean207, class12.anInt203)
         }
@@ -333,8 +333,8 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     external override fun X(i: Int)
 
-    override fun method3625(class124: Class124, i: Int, i_131_: Int, i_132_: Int, i_133_: Int): Class64 {
-        return i(this, aYa5121, class124, i, i_131_, i_132_, i_133_)
+    override fun method3625(class124: Class124?, i: Int, i_131_: Int, i_132_: Int, i_133_: Int): Class64 {
+        return i(this, aYa5121, class124!!, i, i_131_, i_132_, i_133_)
     }
 
     override fun c(): Class365 { //
@@ -361,10 +361,10 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     private external fun va(var_za: za?)
 
-    override fun method3643(canvas: Canvas, i: Int, i_153_: Int) {
+    override fun method3643(canvas: Canvas?, i: Int, i_153_: Int) {
         var var_p = aClass356_5126.method3480(canvas.hashCode().toLong(), -6008) as p?
         if (var_p == null) {
-            canvas.setIgnoreRepaint(true)
+            canvas!!.setIgnoreRepaint(true)
             var_p = p(this, canvas, i, i_153_)
             aClass356_5126.method3483(36.toByte(), canvas.hashCode().toLong(), var_p)
         } else if (var_p.anInt5145 != i || var_p.anInt5148 != i_153_) var_p.method3435(canvas, i, i_153_)
@@ -390,15 +390,15 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         return method3629(i, i_157_, false)
     }
 
-    override fun method3642(i: Int, class348_sub1s: Array<Class348_Sub1?>) {
+    override fun method3642(i: Int, class348_sub1s: Array<Class348_Sub1?>?) {
         var i_158_ = 0
         for (i_159_ in 0..<i) {
-            anIntArray5130[i_158_++] = class348_sub1s[i_159_]!!.method2724(-1)
-            anIntArray5130[i_158_++] = class348_sub1s[i_159_]!!.method2722(123)
-            anIntArray5130[i_158_++] = class348_sub1s[i_159_]!!.method2717(103.toByte())
-            anIntArray5130[i_158_++] = class348_sub1s[i_159_]!!.method2723(-1)
-            aFloatArray5138[i_159_] = class348_sub1s[i_159_]!!.method2721(-65)
-            anIntArray5130[i_158_++] = class348_sub1s[i_159_]!!.method2720(-1)
+            anIntArray5130[i_158_++] = class348_sub1s!![i_159_]!!.method2724(-1)
+            anIntArray5130[i_158_++] = class348_sub1s!![i_159_]!!.method2722(123)
+            anIntArray5130[i_158_++] = class348_sub1s!![i_159_]!!.method2717(103.toByte())
+            anIntArray5130[i_158_++] = class348_sub1s!![i_159_]!!.method2723(-1)
+            aFloatArray5138[i_159_] = class348_sub1s!![i_159_]!!.method2721(-65)
+            anIntArray5130[i_158_++] = class348_sub1s!![i_159_]!!.method2720(-1)
         }
         N(i, anIntArray5130, aFloatArray5138)
     }
@@ -462,7 +462,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
 
     external override fun U(i: Int, i_182_: Int, i_183_: Int, i_184_: Int, i_185_: Int)
 
-    external override fun Y(): IntArray?
+    external override fun Y(): IntArray
 
     external override fun ZA(i: Int, f: Float, f_186_: Float, f_187_: Float, f_188_: Float, f_189_: Float)
 
@@ -531,7 +531,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         /* empty */
     }
 
-    override fun method3638(class101: Class101) {
+    override fun method3638(class101: Class101?) {
         aClass101_5125 = class101
         ma((class101 as ja).nativeid)
     }

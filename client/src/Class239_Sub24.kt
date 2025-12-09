@@ -113,7 +113,7 @@ class Class239_Sub24 : Class239 {
                 val i_12_: Int
                 if (Class59_Sub1.aBoolean5300) {
                     Class107.method1010(false, false)
-                    class101 = var_ha.method3640()
+                    class101 = var_ha.method3640()!!
                     val `is` = var_ha.Y()
                     i_7_ = `is`[0]
                     i_8_ = `is`[1]

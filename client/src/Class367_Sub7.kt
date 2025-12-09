@@ -30,7 +30,7 @@ class Class367_Sub7 internal constructor(private var aClass378_7346: Class378, c
     override fun method3532(i: Int) {
         if (aBoolean7344) {
             val idirect3ddevice = aClass378_7346!!.anIDirect3DDevice9810
-            val class101_sub2 = this.aHa_Sub3_4479.method3848(i + -10420)
+            val class101_sub2 = this.aHa_Sub3_4479.method3848(i + -10420)!!
             idirect3ddevice!!.SetVertexShaderConstantF(12, class101_sub2.method915(aFloatArray7342, 1), 2)
         }
         if (i != 10425) anIDirect3DVertexShader7345 = null

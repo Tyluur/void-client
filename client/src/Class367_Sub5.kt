@@ -80,7 +80,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
         if (i.toInt() != 12) method3521(false, (-54).toByte())
         if (null != anIDirect3DVertexShader7333) {
             val idirect3ddevice = aClass378_7328!!.anIDirect3DDevice9810
-            val class101_sub2 = aClass378_7328!!.method3948(i + -22048)
+            val class101_sub2 = aClass378_7328!!.method3948(i + -22048)!!
             idirect3ddevice!!.a(0, class101_sub2.method924(11, aFloatArray7337))
         }
     }

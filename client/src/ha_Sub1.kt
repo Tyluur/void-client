@@ -415,23 +415,23 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         return this.anInt7482
     }
 
-    override fun method3705(): Class101? {
+    override fun method3705(): Class101 {
         val class167 = method3724(Thread.currentThread())
         return class167!!.aClass101_Sub1_2209
     }
 
     fun method3714(i: Int): Boolean {
-        return this.aD4579.method3(i, -6662)!!.aBoolean217 || this.aD4579.method3(i, -6662)!!.aBoolean215
+        return this.aD4579!!.method3(i, -6662)!!.aBoolean217 || this.aD4579!!.method3(i, -6662)!!.aBoolean215
     }
 
-    override fun Q(i: Int, i_99_: Int, i_100_: Int, i_101_: Int, i_102_: Int, i_103_: Int, `is`: ByteArray, i_104_: Int, i_105_: Int) {
+    override fun Q(i: Int, i_99_: Int, i_100_: Int, i_101_: Int, i_102_: Int, i_103_: Int, `is`: ByteArray?, i_104_: Int, i_105_: Int) {
         var i_100_ = i_100_
         var i_101_ = i_101_
         if (i_100_ > 0 && i_101_ > 0) {
             var i_106_ = 0
             var i_107_ = 0
             val i_108_ = (i_104_ shl 16) / i_100_
-            val i_109_ = (`is`.size / i_104_ shl 16) / i_101_
+            val i_109_ = (`is`!!.size / i_104_ shl 16) / i_101_
             var i_110_ = i + i_99_ * this.anInt7477
             var i_111_ = this.anInt7477 - i_100_
             if (i_99_ + i_101_ > this.anInt7503) i_101_ -= i_99_ + i_101_ - this.anInt7503
@@ -717,22 +717,22 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         }
     }
 
-    override fun HA(i: Int, i_200_: Int, i_201_: Int, i_202_: Int, `is`: IntArray) {
+    override fun HA(i: Int, i_200_: Int, i_201_: Int, i_202_: Int, `is`: IntArray?) {
         val f = ((this.aClass101_Sub1_7492!!.aFloat5681) + ((this.aClass101_Sub1_7492!!.aFloat5662) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_200_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_201_.toFloat()))
         if (f >= this.anInt7482.toFloat() && f <= this.anInt7494.toFloat()) {
             val i_203_ = (this.anInt7491.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5686 + ((this.aClass101_Sub1_7492!!.aFloat5672) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673) * i_200_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5669) * i_201_.toFloat())) / i_202_.toFloat()).toInt()
             val i_204_ = (this.anInt7497.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5685 + ((this.aClass101_Sub1_7492!!.aFloat5655) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678) * i_200_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5666) * i_201_.toFloat())) / i_202_.toFloat()).toInt()
             if (i_203_ >= this.anInt7509 && i_203_ <= this.anInt7508 && i_204_ >= this.anInt7490 && i_204_ <= this.anInt7506) {
-                `is`[0] = i_203_ - this.anInt7509
+                `is`!![0] = i_203_ - this.anInt7509
                 `is`[1] = i_204_ - this.anInt7490
                 `is`[2] = f.toInt()
             } else {
-                `is`[2] = -1
+                `is`!![2] = -1
                 `is`[1] = `is`[2]
                 `is`[0] = `is`[1]
             }
         } else {
-            `is`[2] = -1
+            `is`!![2] = -1
             `is`[1] = `is`[2]
             `is`[0] = `is`[1]
         }
@@ -806,7 +806,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         method3713()
     }
 
-    override fun method3701(canvas: Canvas) {
+    override fun method3701(canvas: Canvas?) {
         if (aCanvas7468 === canvas) method3677(null)
         val class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
         if (class348_sub31 != null) class348_sub31.method2715(100.toByte())
@@ -831,7 +831,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         return false
     }
 
-    override fun method3643(canvas: Canvas, i: Int, i_232_: Int) {
+    override fun method3643(canvas: Canvas?, i: Int, i_232_: Int) {
         var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
         if (class348_sub31 == null) {
             class348_sub31 = Class110.method1035(9029, i_232_, canvas, i)
@@ -1027,8 +1027,8 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         class109.aBoolean1669 = true
     }
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207?>, bool: Boolean): Class324 {
-        val `is` = IntArray(class207s.size)
+    override fun method3686(class143: Class143?, class207s: Array<Class207?>?, bool: Boolean): Class324 {
+        val `is` = IntArray(class207s!!.size)
         val is_283_ = IntArray(class207s.size)
         var bool_284_ = false
         for (i in class207s.indices) {
@@ -1281,10 +1281,10 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         synchronized(aClass60_7498) {
             class348_sub25 = aClass60_7498.method583(i.toLong(), 77) as Class348_Sub25?
             if (class348_sub25 == null) {
-                if (!this.aD4579.method4(-7953, i)) return null
-                val class12 = this.aD4579.method3(i, -6662)
+                if (!this.aD4579!!.method4(-7953, i)) return null
+                val class12 = this.aD4579!!.method3(i, -6662)
                 val i_354_ = (if (class12!!.aBoolean199 || aBoolean7489) 64 else this.anInt7501)
-                class348_sub25 = Class348_Sub25(i, i_354_, this.aD4579.method5(true, i, 0.7f, i_354_, i_354_, 71), class12.anInt200 != 1)
+                class348_sub25 = Class348_Sub25(i, i_354_, this.aD4579!!.method5(true, i, 0.7f, i_354_, i_354_, 71), class12.anInt200 != 1)
                 aClass60_7498.method582(class348_sub25, i.toLong(), (-122).toByte())
             }
         }
@@ -1325,10 +1325,10 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         synchronized(aClass60_7498) {
             class348_sub25 = (aClass60_7498.method583(i.toLong() or 0x7fffffffffffffffL.inv(), 107) as Class348_Sub25?)
             if (class348_sub25 == null) {
-                if (!this.aD4579.method4(-7953, i)) return null
-                val class12 = this.aD4579.method3(i, -6662)
+                if (!this.aD4579!!.method4(-7953, i)) return null
+                val class12 = this.aD4579!!.method3(i, -6662)
                 val i_356_ = (if (class12!!.aBoolean199 || aBoolean7489) 64 else this.anInt7501)
-                class348_sub25 = Class348_Sub25(i, i_356_, this.aD4579.method6(-21540, i_356_, 0.7f, i, true, i_356_), class12.anInt200 != 1)
+                class348_sub25 = Class348_Sub25(i, i_356_, this.aD4579!!.method6(-21540, i_356_, 0.7f, i, true, i_356_), class12.anInt200 != 1)
                 aClass60_7498.method582(class348_sub25, i.toLong() or 0x7fffffffffffffffL.inv(), (-126).toByte())
             }
         }
@@ -1336,20 +1336,20 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         return class348_sub25.method2997()
     }
 
-    override fun method3648(i: Int, i_357_: Int, `is`: Array<IntArray?>?, is_358_: Array<IntArray?>, i_359_: Int, i_360_: Int, i_361_: Int): s {
-        return s_Sub1(this, i_360_, i_361_, i, i_357_, `is`, is_358_, i_359_)
+    override fun method3648(i: Int, i_357_: Int, `is`: Array<IntArray?>?, is_358_: Array<IntArray?>?, i_359_: Int, i_360_: Int, i_361_: Int): s {
+        return s_Sub1(this, i_360_, i_361_, i, i_357_, `is`, is_358_!!, i_359_)
     }
 
-    override fun H(i: Int, i_362_: Int, i_363_: Int, `is`: IntArray) {
+    override fun H(i: Int, i_362_: Int, i_363_: Int, `is`: IntArray?) {
         val f = ((this.aClass101_Sub1_7492!!.aFloat5681) + ((this.aClass101_Sub1_7492!!.aFloat5662) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_362_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_363_.toFloat()))
         if (f == 0.0f) {
-            `is`[2] = -1
+            `is`!![2] = -1
             `is`[1] = `is`[2]
             `is`[0] = `is`[1]
         } else {
             val i_364_ = (this.anInt7491.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5686 + ((this.aClass101_Sub1_7492!!.aFloat5672) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673) * i_362_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5669) * i_363_.toFloat())) / f).toInt()
             val i_365_ = (this.anInt7497.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5685 + ((this.aClass101_Sub1_7492!!.aFloat5655) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678) * i_362_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5666) * i_363_.toFloat())) / f).toInt()
-            `is`[0] = i_364_ - this.anInt7509
+            `is`!![0] = i_364_ - this.anInt7509
             `is`[1] = i_365_ - this.anInt7490
             `is`[2] = f.toInt()
         }
@@ -1367,7 +1367,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         method3713()
     }
 
-    override fun method3625(class124: Class124, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64 {
+    override fun method3625(class124: Class124?, i: Int, i_366_: Int, i_367_: Int, i_368_: Int): Class64 {
         return Class64_Sub1(this, class124, i, i_367_, i_368_, i_366_)
     }
 
@@ -1375,8 +1375,8 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         return Class216(i, i_369_)
     }
 
-    override fun method3632(`is`: IntArray) {
-        `is`[0] = this.anInt7477
+    override fun method3632(`is`: IntArray?) {
+        `is`!![0] = this.anInt7477
         `is`[1] = anInt7486
     }
 
@@ -1417,7 +1417,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
 
     fun method3720(i: Int, i_377_: Int, i_378_: Int, i_379_: Int, i_380_: Int, i_381_: Int, i_382_: Int, i_383_: Int, i_384_: Int, i_385_: Int) {
         if (i_379_ != 0 && i_380_ != 0) {
-            if (i_382_ != 65535 && !(this.aD4579.method3(i_382_, -6662)!!.aBoolean209)) {
+            if (i_382_ != 65535 && !(this.aD4579!!.method3(i_382_, -6662)!!.aBoolean209)) {
                 if (anInt7512 != i_382_) {
                     var class105 = (aClass60_7499.method583(i_382_.toLong(), 97) as Class105?)
                     if (class105 == null) {
@@ -1574,7 +1574,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     fun method3722(i: Int): Int {
-        return (this.aD4579.method3(i, -6662)!!.aShort208.toInt() and 0xffff)
+        return (this.aD4579!!.method3(i, -6662)!!.aShort208.toInt() and 0xffff)
     }
 
     override fun method3699(): Boolean {
@@ -1585,12 +1585,12 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         return false
     }
 
-    override fun method3711(`is`: IntArray, i: Int, i_422_: Int, i_423_: Int, i_424_: Int, bool: Boolean): Class105 {
+    override fun method3711(`is`: IntArray?, i: Int, i_422_: Int, i_423_: Int, i_424_: Int, bool: Boolean): Class105 {
         var bool_425_ = false
         var i_426_ = i
         while_229_@ for (i_427_ in 0..<i_424_) {
             for (i_428_ in 0..<i_423_) {
-                val i_429_ = `is`[i_426_++] ushr 24
+                val i_429_ = `is`!![i_426_++] ushr 24
                 if (i_429_ != 0 && i_429_ != 255) {
                     bool_425_ = true
                     break@while_229_
@@ -1601,8 +1601,8 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         return Class105_Sub3_Sub1(this, `is`, i, i_422_, i_423_, i_424_, bool)
     }
 
-    override fun method3691(class207: Class207, bool: Boolean): Class105 {
-        val `is` = class207.anIntArray2697
+    override fun method3691(class207: Class207?, bool: Boolean): Class105 {
+        val `is` = class207!!.anIntArray2697
         val is_430_ = class207.aByteArray2699
         val i = class207.anInt2702
         val i_431_ = class207.anInt2696
@@ -2068,14 +2068,14 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         aClass60_7498.method590(0)
     }
 
-    override fun method3669(canvas: Canvas, i: Int, i_578_: Int) {
+    override fun method3669(canvas: Canvas?, i: Int, i_578_: Int) {
         var class348_sub31 = (aClass356_7467!!.method3480(canvas.hashCode().toLong(), -6008) as Class348_Sub31?)
         if (class348_sub31 != null) {
             class348_sub31.method2715(95.toByte())
             class348_sub31 = Class110.method1035(9029, i_578_, canvas, i)!!
             aClass356_7467!!.method3483(112.toByte(), canvas.hashCode().toLong(), class348_sub31)
             if (aCanvas7468 === canvas && aClass49_7475 == null) {
-                val dimension = canvas.getSize()
+                val dimension = canvas!!.getSize()
                 anInt7465 = dimension.width
                 anInt7472 = dimension.height
                 this.aClass348_Sub31_7469 = class348_sub31
@@ -2113,7 +2113,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     fun method3725(i: Int): Boolean {
-        return this.aD4579.method4(-7953, i)
+        return this.aD4579!!.method4(-7953, i)
     }
 
     init {
@@ -2339,12 +2339,12 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     @Throws(Exception_Sub1::class)
-    override fun method3707(rectangles: Array<Rectangle>, i: Int, i_631_: Int, i_632_: Int) {
+    override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_631_: Int, i_632_: Int) {
         check(!(aCanvas7468 == null || this.aClass348_Sub31_7469 == null)) { "off" }
         try {
             val graphics = aCanvas7468!!.getGraphics()
             for (i_633_ in 0..<i) {
-                val rectangle = rectangles[i_633_]
+                val rectangle = rectangles!![i_633_]!!
                 if (rectangle.x + i_631_ <= this.anInt7477 && rectangle.y + i_632_ <= anInt7486 && rectangle.x + i_631_ + rectangle.width > 0 && rectangle.y + i_632_ + rectangle.height > 0) this.aClass348_Sub31_7469!!.method3011(rectangle.y, rectangle.x + i_631_, rectangle.height, graphics, -1, rectangle.x, rectangle.width, rectangle.y + i_632_)
             }
         } catch (exception: Exception) {
@@ -2359,7 +2359,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     fun method3726(i: Int): Int {
-        return this.aD4579.method3(i, -6662)!!.anInt200
+        return this.aD4579!!.method3(i, -6662)!!.anInt200
     }
 
     override fun I(): Int {
@@ -2381,7 +2381,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
                 class348_sub25.anInt6879 += i_634_
                 val i_635_ = class348_sub25.anInt6879 / 20
                 if (i_635_ > 0) {
-                    val class12 = this.aD4579.method3((class348_sub25.anInt6883), -6662)
+                    val class12 = this.aD4579!!.method3((class348_sub25.anInt6883), -6662)
                     class348_sub25.method2995((class12!!.aByte198 * i_634_ * 50 / 1000), (class12.aByte211 * i_634_ * 50 / 1000))
                     class348_sub25.anInt6879 -= i_635_ * 20
                 }
@@ -2398,22 +2398,22 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         return true
     }
 
-    override fun da(i: Int, i_636_: Int, i_637_: Int, `is`: IntArray) {
+    override fun da(i: Int, i_636_: Int, i_637_: Int, `is`: IntArray?) {
         val f = ((this.aClass101_Sub1_7492!!.aFloat5681) + ((this.aClass101_Sub1_7492!!.aFloat5662) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_636_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_637_.toFloat()))
         if (f >= this.anInt7482.toFloat() && f <= this.anInt7494.toFloat()) {
             val i_638_ = (this.anInt7491.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5686 + ((this.aClass101_Sub1_7492!!.aFloat5672) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673) * i_636_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5669) * i_637_.toFloat())) / f).toInt()
             val i_639_ = (this.anInt7497.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5685 + ((this.aClass101_Sub1_7492!!.aFloat5655) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678) * i_636_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5666) * i_637_.toFloat())) / f).toInt()
             if (i_638_ >= this.anInt7509 && i_638_ <= this.anInt7508 && i_639_ >= this.anInt7490 && i_639_ <= this.anInt7506) {
-                `is`[0] = i_638_ - this.anInt7509
+                `is`!![0] = i_638_ - this.anInt7509
                 `is`[1] = i_639_ - this.anInt7490
                 `is`[2] = f.toInt()
             } else {
-                `is`[2] = -1
+                `is`!![2] = -1
                 `is`[1] = `is`[2]
                 `is`[0] = `is`[1]
             }
         } else {
-            `is`[2] = -1
+            `is`!![2] = -1
             `is`[1] = `is`[2]
             `is`[0] = `is`[1]
         }
@@ -2437,6 +2437,6 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
     }
 
     fun method3727(i: Int): Boolean {
-        return aBoolean7489 || this.aD4579.method3(i, -6662)!!.aBoolean199
+        return aBoolean7489 || this.aD4579!!.method3(i, -6662)!!.aBoolean199
     }
 }

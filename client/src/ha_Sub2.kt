@@ -650,7 +650,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             var i_51_ = if (!this.aBoolean7846) 0.toByte() else 3.toByte()
             if (i >= 0) {
                 class258_sub3 = aClass354_7723.method3467(i, 256)
-                val class12 = this.aD4579.method3(i, -6662)
+                val class12 = this.aD4579!!.method3(i, -6662)
                 if (class12!!.aByte198.toInt() != 0 || class12.aByte211.toInt() != 0) {
                     val i_52_ = if (class12.aBoolean199) 64 else 128
                     val i_53_ = i_52_ * 50
@@ -763,7 +763,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         }
     }
 
-    override fun method3684(class98: Class98?) {
+    override fun method3684(class98: Class98) {
         try {
             aClass233_7711.method1651(this, (-119).toByte(), -1, class98)
             anInt7569++
@@ -1267,7 +1267,6 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         anInt7566++
         val class348 = Class348()
         class348.aLong4291 = i_137_.toLong()
-        if (i <= 64) method3685(null, -38)
         aClass262_7755.method1999(class348, -20180)
     }
 
@@ -1779,7 +1778,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         this.anInt7733 = 1 shl this.anInt7731
     }
 
-    override fun method3661(i: Int, i_210_: Int, `is`: IntArray, is_211_: IntArray?): aa {
+    override fun method3661(i: Int, i_210_: Int, `is`: IntArray?, is_211_: IntArray?): aa {
         try {
             anInt7589++
             return method4009(i, `is`, is_211_, 0, this, i_210_)
@@ -2163,7 +2162,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         throw IllegalArgumentException("")
     }
 
-    override fun method3685(class98: Class98?, i: Int) {
+    override fun method3685(class98: Class98, i: Int) {
         try {
             aClass233_7711.method1651(this, (-116).toByte(), i, class98)
             anInt7687++

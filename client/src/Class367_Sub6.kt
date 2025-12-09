@@ -33,8 +33,8 @@ class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, c
 
     override fun method3523(i: Byte) {
         if (anIDirect3DVertexShader7341 != null) {
-            val idirect3ddevice = aClass378_7340!!.anIDirect3DDevice9810
-            val class101_sub2 = aClass378_7340!!.method3948(-22036)
+            val idirect3ddevice = aClass378_7340.anIDirect3DDevice9810
+            val class101_sub2 = aClass378_7340.method3948(-22036)
             idirect3ddevice!!.a(0, class101_sub2.method924(i.toInt() xor 0x7, aFloatArray7338))
         }
     }
@@ -59,7 +59,7 @@ class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, c
     override fun method3532(i: Int) {
         if (anIDirect3DVertexShader7341 != null) {
             val idirect3ddevice = aClass378_7340!!.anIDirect3DDevice9810
-            val class101_sub2 = this.aHa_Sub3_4479.method3848(5)
+            val class101_sub2 = this.aHa_Sub3_4479.method3848(5)!!
             class101_sub2.method915(aFloatArray7338, i xor 0x28b8)
             aFloatArray7338[0] *= 0.25f
             aFloatArray7338[2] *= 0.25f

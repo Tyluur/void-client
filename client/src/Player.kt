@@ -57,7 +57,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     override fun method2387(var_ha: ha?, i: Int) {
         anInt10533++
         if (this.aClass154_10536 != null && (this.aBoolean10318 || method2459(0, var_ha, -123))) {
-            val class101 = var_ha!!.method3705()
+            val class101 = var_ha!!.method3705()!!
             if (i >= -125) method2457((-106).toByte())
             class101.method895(this.aClass264_10217.method2019((-116).toByte()))
             class101.method891(this.x, -5 + this.anInt6382, this.y)

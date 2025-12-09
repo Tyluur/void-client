@@ -250,7 +250,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                         i_60_ = (Class258_Sub1.aClass143_8527!!.method1188(class42.aString597, null, ha_Sub3.aStringArray8019, 87.toByte(), null))
                         var i_63_ = 0
                         while (i_60_ > i_63_) {
-                            var string = ha_Sub3.aStringArray8019[i_63_]
+                            var string = ha_Sub3.aStringArray8019!![i_63_]!!
                             if (i_60_ + -1 > i_63_) string = string.substring(0, string.length - 4)
                             val i_64_ = Class39.aClass323_521.method2564(string)
                             if (i_61_ < i_64_) i_61_ = i_64_
@@ -292,7 +292,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
                         if (class42.anInt604 != 0) var_ha!!.method3668(-i_68_ + i_70_, i_69_, class42.anInt604, i_68_, -i_69_ + i_71_, 67)
                         var i_72_ = 0
                         while (i_60_ > i_72_) {
-                            var string = ha_Sub3.aStringArray8019[i_72_]
+                            var string = ha_Sub3.aStringArray8019!![i_72_]!!
                             if (i_72_ < i_60_ + -1) string = string.substring(0, -4 + string.length)
                             Class39.aClass323_521.method2563(var_ha, string, i_65_, i_66_, (class42.anInt580), true)
                             i_66_ += Class39.aClass323_521.method2565()
