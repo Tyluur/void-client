@@ -156,9 +156,9 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                         Class268.anInt3441++
                     }
                 }
-                if (Applet_Sub1.anIntArray38!![i_19_] != -1 && Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
-                    Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.aClass45_7382!!.method393(Applet_Sub1.anIntArray38!![i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894!![i_19_]))
-                    if (Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
+                if (Applet_Sub1.anIntArray38!![i_19_] != -1 && Class14_Sub4.aByteArrayArray8642!![i_19_] == null) {
+                    Class14_Sub4.aByteArrayArray8642!![i_19_] = (Class367_Sub10.aClass45_7382!!.method393(Applet_Sub1.anIntArray38!![i_19_], 0, i + 2, Class239_Sub6.anIntArrayArray5894!![i_19_]))
+                    if (Class14_Sub4.aByteArrayArray8642!![i_19_] == null) {
                         Class268.anInt3441++
                         bool = false
                     }
@@ -199,7 +199,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                 bool = true
                 Class154.anInt2101 = 0
                 for (i_20_ in Class347.aByteArrayArray4281.indices) {
-                    var `is` = Class14_Sub4.aByteArrayArray8642[i_20_]
+                    var `is` = Class14_Sub4.aByteArrayArray8642!![i_20_]
                     if (`is` != null) {
                         var i_21_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - za_Sub2.regionTileX
                         var i_22_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] and 0xff) - Class90.regionTileY
