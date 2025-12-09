@@ -841,7 +841,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             i_91_ = i_91_ and 0x7fff
                             val class43 = Class52.method490((-104).toByte(), (Class299.aClass348_Sub49_Sub2_3813))
                             i_95_ = class43.anInt615
-                            string = (class43.aClass348_Sub42_Sub10_614.method3216(Class299.aClass348_Sub49_Sub2_3813, 119.toByte()))
+                            string = (class43.aClass348_Sub42_Sub10_614!!.method3216(Class299.aClass348_Sub49_Sub2_3813, 119.toByte()))
                         } else string = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), Class299.aClass348_Sub49_Sub2_3813)), 23034))
                         player.aString10292 = string.trim { it <= ' ' }
                         player.anInt10201 = i_91_ shr 8

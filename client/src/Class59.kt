@@ -186,7 +186,6 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
             val string_52_ = Class334.method2651(string, 3)
             if (string_52_ == null) return -1
             val string_53_ = Class348_Sub41.aString7048 + string_52_
-            if (i != 7468) method549(28.toByte(), null, null, null)
             if (!Class167.aClass45_2208.method422("", string_53_, -88)) return -1
             if (!Class167.aClass45_2208.method413(i xor 0x1d48, string_53_)) return Class167.aClass45_2208.method397(string_53_, 0)
             val `is` = Class167.aClass45_2208.method391(string_53_, "", -29832)
@@ -233,7 +232,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
         }
 
         @JvmStatic
-        fun method549(i: Byte, class348_sub21: Class348_Sub21?, var_ha: ha?, class42: Class42?) {
+        fun method549(i: Byte, class348_sub21: Class348_Sub21?, var_ha: ha, class42: Class42?) {
             try {
                 anInt1080++
                 val class105 = class42!!.method375(var_ha, false)

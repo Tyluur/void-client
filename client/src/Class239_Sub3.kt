@@ -134,7 +134,7 @@ class Class239_Sub3 : Class239 {
             anInt5865++
             val i_22_ = i.toInt() and 0xff
             if (i_22_ == 0) return false
-            return i_21_ < (i_22_.inv()) || i_22_ >= 160 || Class44.aCharArray625[i_22_ + -128].code != 0
+            return i_21_ < (i_22_.inv()) || i_22_ >= 160 || Class44.aCharArray625!![i_22_ + -128].code != 0
         }
 
         @JvmStatic

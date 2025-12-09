@@ -112,9 +112,9 @@ abstract class Class318_Sub1 : Class318() {
                     anInt6390++
                     val class42 = Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_4_, 98.toByte())
                     if (i_7_ < -52) {
-                        if (class42 == null || !class42.aBoolean569 || !class42.method373((Class318_Sub1_Sub3_Sub3.Companion.aClass170_10209), 69)) break
+                        if (class42 == null || !class42.aBoolean569 || !class42.method373((Class318_Sub1_Sub3_Sub3.Companion.aClass170_10209!!), 69)) break
                         if (class42.anIntArray591 != null) {
-                            val `is` = (IntArray(class42.anIntArray591.size))
+                            val `is` = (IntArray(class42.anIntArray591!!.size))
                             var i_9_ = 0
                             while (`is`.size / 2 > i_9_) {
                                 val i_10_: Int
@@ -126,8 +126,8 @@ abstract class Class318_Sub1 : Class318() {
                                     i_11_ = (i_11_ * 256 / (Class348_Sub49_Sub1.anInt9750 + 256))
                                     i_12_ = i_12_ * 256 / (256 + (Class348_Sub49_Sub1.anInt9750))
                                 }
-                                `is`[i_9_ * 2] = (((i_11_ * (((class42.anIntArray591[i_9_ * 2 - -1]) * 4) + i_8_) + (i_5_ - -(4 * (class42.anIntArray591[2 * i_9_]))) * i_12_) shr 14) + (i_6_ - -(class46!!.anInt709 / 2)))
-                                `is`[i_9_ * 2 - -1] = (-((((class42.anIntArray591[1 + i_9_ * 2]) * 4 + i_8_) * i_12_ - (i_5_ - -((class42.anIntArray591[i_9_ * 2]) * 4)) * i_11_) shr 14) + i + class46.anInt789 / 2)
+                                `is`[i_9_ * 2] = (((i_11_ * (((class42.anIntArray591!![i_9_ * 2 - -1]) * 4) + i_8_) + (i_5_ - -(4 * (class42.anIntArray591!![2 * i_9_]))) * i_12_) shr 14) + (i_6_ - -(class46!!.anInt709 / 2)))
+                                `is`[i_9_ * 2 - -1] = (-((((class42.anIntArray591!![1 + i_9_ * 2]) * 4 + i_8_) * i_12_ - (i_5_ - -((class42.anIntArray591!![i_9_ * 2]) * 4)) * i_11_) shr 14) + i + class46.anInt789 / 2)
                                 i_9_++
                             }
                             Class329.method2619(var_ha, `is`, class42.anInt582, class46!!.anIntArray677, class46.anIntArray772)
@@ -183,7 +183,7 @@ abstract class Class318_Sub1 : Class318() {
                         }
                         var class105: Class105? = null
                         if (class42.anInt578 != -1) {
-                            class105 = class42.method374(false, var_ha, 127.toByte())
+                            class105 = class42.method374(false, var_ha!!, 127.toByte())
                             if (class105 != null) Class151.method1211(i, class105, i_6_, class46, var_aa, i_8_, 2, i_5_)
                         }
                         if (class42.aString597 == null) break

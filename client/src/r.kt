@@ -15,10 +15,9 @@ abstract class r : Class348_Sub42() {
         var aBoolean9719: Boolean = true
         @JvmField
         var aClass101_9720: Class101? = null
-
         @JvmField
         @Volatile
-        var anInt9721: Int
+        var anInt9721: Int = -1
         @JvmField
         var aBoolean9722: Boolean = false
         @JvmField
@@ -28,10 +27,10 @@ abstract class r : Class348_Sub42() {
 
         @JvmStatic
         fun method3284(bool: Boolean, d: Double) {
-            Class44.aClass101_624.method898(Class51.aClass101_905)
+            Class44.aClass101_624!!.method898(Class51.aClass101_905)
             anInt9717++
             if (bool != true) method3285(10)
-            Class44.aClass101_624.method891(0, 0, d.toInt())
+            Class44.aClass101_624!!.method891(0, 0, d.toInt())
             Class21.aHa326!!.method3638(Class44.aClass101_624)
         }
 
@@ -46,7 +45,6 @@ abstract class r : Class348_Sub42() {
         }
 
         init {
-            anInt9721 = -1
             anIntArrayArray9723 = Array<IntArray?>(128) { IntArray(128) }
         }
     }
