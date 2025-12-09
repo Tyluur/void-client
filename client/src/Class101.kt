@@ -84,12 +84,12 @@ public abstract class Class101 {
                     Applet_Sub1.anIntArray38!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
                     Class322.anIntArray4031[i_6_] = Class367_Sub10.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
                     Class295.anIntArray3759[i_6_] = Class367_Sub10.aClass45_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
-                    r.anIntArray9724[i_6_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i.toInt(), -49)))
+                    r.anIntArray9724!![i_6_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_7_ + "_" + i_8_, Class348_Sub21.method2955(i.toInt(), -49)))
                     if (Class322.anIntArray4031[i_6_] == -1) {
                         aa_Sub1.anIntArray5192!![i_6_] = -1
                         Applet_Sub1.anIntArray38!![i_6_] = -1
                         Class295.anIntArray3759[i_6_] = -1
-                        r.anIntArray9724[i_6_] = -1
+                        r.anIntArray9724!![i_6_] = -1
                     }
                     i_6_++
                     i_8_++
@@ -102,7 +102,7 @@ public abstract class Class101 {
                 aa_Sub1.anIntArray5192!![i_10_] = -1
                 Applet_Sub1.anIntArray38!![i_10_] = -1
                 Class295.anIntArray3759[i_10_] = -1
-                r.anIntArray9724[i_10_] = -1
+                r.anIntArray9724!![i_10_] = -1
                 i_10_++
             }
             val i_11_: Int

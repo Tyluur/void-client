@@ -134,7 +134,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
                     aa_Sub1.anIntArray5192!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("m" + i_21_ + "_" + i_22_, 0)
                     Applet_Sub1.anIntArray38!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_21_ + "_" + i_22_, 0)
                     Class295.anIntArray3759[i_18_] = Class367_Sub10.aClass45_7382!!.method417("um" + i_21_ + "_" + i_22_, 0)
-                    r.anIntArray9724[i_18_] = Class367_Sub10.aClass45_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
+                    r.anIntArray9724!![i_18_] = Class367_Sub10.aClass45_7382!!.method417("ul" + i_21_ + "_" + i_22_, 0)
                     i_18_++
                     i_22_++
                 }
