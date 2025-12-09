@@ -37,7 +37,7 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
                     val class46 = class46s[i_1_]
                     if (class46 != null) {
                         if (class46.anInt774 == 0) {
-                            if (class46.aClass46Array798 != null) method3097(class46.aClass46Array798, i, 125)
+                            if (class46.aClass46Array798 != null) method3097(class46.aClass46Array798!!, i, 125)
                             val class348_sub41 = ((Class125.aClass356_4915.method3480(class46.anInt830.toLong(), -6008)) as Class348_Sub41?)
                             if (class348_sub41 != null) Class239_Sub12.method1775((-8).toByte(), (class348_sub41.anInt7050), i)
                         }
@@ -50,7 +50,7 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
                         if (i == 1 && class46.anObjectArray701 != null) {
                             if (class46.anInt704 >= 0) {
                                 val class46_2_ = method2570(1512932720, (class46.anInt830))
-                                if (class46_2_ == null || (class46_2_.aClass46Array798 == null) || (class46.anInt704 >= (class46_2_.aClass46Array798).size) || class46 != (class46_2_.aClass46Array798[class46.anInt704])) {
+                                if (class46_2_ == null || (class46_2_.aClass46Array798 == null) || (class46.anInt704 >= (class46_2_.aClass46Array798!!).size) || class46 != (class46_2_.aClass46Array798!![class46.anInt704])) {
                                     i_1_++
                                     continue
                                 }

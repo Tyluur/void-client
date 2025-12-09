@@ -1,14 +1,13 @@
 /* Class47_Sub2 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class47_Sub2 extends Class47 {
-    public Class47_Sub2() {
-        System.nanoTime();
+* Visit http://jode.sourceforge.net/
+*/
+class Class47_Sub2 : Class47() {
+    init {
+        System.nanoTime()
     }
 
-    public final long method446(int i) {
-        if (i != 1) return -111L;
-        return System.nanoTime();
+    public override fun method446(i: Int): Long {
+        if (i != 1) return -111L
+        return System.nanoTime()
     }
 }

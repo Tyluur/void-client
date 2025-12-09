@@ -348,7 +348,7 @@ class Class18 internal constructor(var_ha_Sub2: ha_Sub2) {
         var anInt291: Int = 0
         fun method271(i: Int, class46: Class46, i_0_: Byte, i_1_: Int) {
             anInt278++
-            val var_aa = class46.method425(Class348_Sub8.aHa6654, 19.toByte())
+            val var_aa = class46.method425(Class348_Sub8.aHa6654!!, 19.toByte())
             if (var_aa != null) {
                 Class348_Sub8.aHa6654!!.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789)
                 if (Class259.anInt3306 >= 3) Class348_Sub8.aHa6654!!.A(-16777216, var_aa, i_1_, i)
