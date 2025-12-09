@@ -3611,8 +3611,8 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                 if (class105s_326_ != null && class105s_326_.size >= 2) class105s = class105s_326_
                             }
                             if (class105s!!.size <= i_325_) i_325_ = 1
-                            val class105 = class105s[0]
-                            val class105_328_ = class105s[i_325_]
+                            val class105 = class105s[0]!!
+                            val class105_328_ = class105s[i_325_]!!
                             i_323_ -= max((Class369.aClass143_4962!!.anInt1988), class105.method969())
                             val i_329_ = (Class239_Sub21.anIntArray6062!![0] + (i_317_ + -(class105.method971() shr 1)))
                             var i_330_ = (class105.method971() * class318_sub1_sub3_sub3.anInt10295 / 255)
@@ -3623,7 +3623,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                             class105_328_.method974(i_329_, i_323_)
                             Class348_Sub8.aHa6654!!.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i)
                             Class338.method2663(-5590, i_329_, i_329_ + class105.method966(), i_323_, i_323_ + i_331_)
-                        } else i_323_ -= max((Class369.aClass143_4962!!.anInt1988), Class348_Sub45.aClass105Array7107[0].method969())
+                        } else i_323_ -= max((Class369.aClass143_4962!!.anInt1988), Class348_Sub45.aClass105Array7107!![0]!!.method969())
                         i_323_ -= 2
                         if (!class318_sub1_sub3_sub3.aBoolean10309) {
                             if (class318_sub1_sub3_sub3.anInt10287 > Class367_Sub11.anInt7396) {
