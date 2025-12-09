@@ -76,7 +76,7 @@ class Class348_Sub9 : Class348() {
                         this.aBoolean6674 = (this.aPlayer_6679!!.aBoolean10517)
                     }
                 } else {
-                    val i_12_ = (Class8.method214((this.aNpc_6691), -1))
+                    val i_12_ = (Class8.method214((this.aNpc_6691!!), -1))
                     if (i_12_ != i_11_) {
                         this.anInt6685 = i_12_
                         var class79 = (this.aNpc_6691!!.aClass79_10505)

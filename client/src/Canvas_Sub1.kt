@@ -237,7 +237,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                         }
                     }
                     var i_27_: Int
-                    if (Class316.aClass348_Sub51_3959.aClass239_Sub16_7247.method1789(-32350) != 1) i_27_ = Class9.anIntArray168[Class348_Sub15.anInt6769]
+                    if (Class316.aClass348_Sub51_3959.aClass239_Sub16_7247.method1789(-32350) != 1) i_27_ = Class9.anIntArray168!![Class348_Sub15.anInt6769]
                     else i_27_ = (Class286_Sub8.anIntArray6296!![Class348_Sub15.anInt6769])
                     if (Class348_Sub8.aHa6654!!.method3670()) i_27_++
                     Class348_Sub42_Sub2.method3171(Class348_Sub8.aHa6654, Class239_Sub16.anInt6012, 9, 4, Class367_Sub4.anInt7319, Class348_Sub40_Sub3.anInt9109, i_27_, bool_25_, Class348_Sub8.aHa6654!!.method3704() > 0)

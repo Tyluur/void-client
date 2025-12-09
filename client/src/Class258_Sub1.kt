@@ -71,7 +71,7 @@ class Class258_Sub1 : Class258 {
         @JvmStatic
         fun method1960(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, `is`: Array<Array<ByteArray?>?>?, is_15_: IntArray?, is_16_: IntArray?, is_17_: IntArray?, is_18_: IntArray?, is_19_: IntArray?, i_20_: Int, i_21_: Byte, i_22_: Int, i_23_: Int, bool: Boolean, bool_24_: Boolean, i_25_: Int, i_26_: Int, bool_27_: Boolean) {
             Class23.aBoolean351 = true
-            Class318_Sub1_Sub3_Sub3.aBoolean10221 = Class9.aHa171.method3704() > 0
+            Class318_Sub1_Sub3_Sub3.aBoolean10221 = Class9.aHa171!!.method3704() > 0
             Class348_Sub40_Sub17.aBoolean9242 = bool_24_
             Class239_Sub25.anInt6111 = i_12_ shr Class362.anInt4459
             Class285_Sub2.anInt8502 = i_14_ shr Class362.anInt4459
@@ -108,7 +108,7 @@ class Class258_Sub1 : Class258 {
                             val i_36_ = i_34_ shl Class362.anInt4459
                             val i_37_ = (Class348_Sub1_Sub1.aSArray8801!![Class348_Sub1_Sub1.aSArray8801!!.size - 1]!!.method3982((-86).toByte(), i_34_, i_33_) - (1000 shl Class362.anInt4459 - 7))
                             val i_38_ = (if (Class332.aSArray4142 != null) (Class332.aSArray4142[0].method3982((-86).toByte(), i_34_, i_33_) + Class270.anInt3465) else (Class348_Sub1_Sub1.aSArray8801!![0]!!.method3982((-86).toByte(), i_34_, i_33_) + Class270.anInt3465))
-                            i_31_ = (if (i_25_ >= 0) Class9.aHa171.r(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_, i_25_) else Class9.aHa171.JA(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_))
+                            i_31_ = (if (i_25_ >= 0) Class9.aHa171!!.r(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_, i_25_) else Class9.aHa171!!.JA(i_35_, i_37_, i_36_, i_35_, i_38_, i_36_))
                             Class348_Sub8.aBooleanArrayArray6656!![i_29_]!![i_32_] = i_31_ == 0
                         } else {
                             i_31_ = -1
@@ -158,8 +158,8 @@ class Class258_Sub1 : Class258 {
                 for (i_42_ in 0..<Class331.anInt4135) Class239_Sub14.aClass211Array5993!![i_42_]!!.method1544(8688, bool, i)
             }
             if (Class348_Sub40_Sub5.aBoolean9121) {
-                Class52.anIntArray4906 = Class9.aHa171.Y()
-                Class9.aHa171.K(Class348_Sub40_Sub10.anIntArray9183)
+                Class52.anIntArray4906 = Class9.aHa171!!.Y()
+                Class9.aHa171!!.K(Class348_Sub40_Sub10.anIntArray9183)
                 val i_43_ = ((Class348_Sub40_Sub10.anIntArray9183!![2] - Class348_Sub40_Sub10.anIntArray9183!![0]) / Class75_Sub1.anInt5652)
                 for (i_44_ in 0..<Class75_Sub1.anInt5652 - 1) Class17.anIntArray256[i_44_] = i_43_ * (i_44_ + 1) + Class345.anIntArray4271!![i_44_]
                 for (i_45_ in Class348_Sub40_Sub34.aClass293Array9432!!.indices) Class348_Sub40_Sub34.aClass293Array9432!![i_45_]!!.method2209()
@@ -167,10 +167,10 @@ class Class258_Sub1 : Class258 {
             if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) {
                 if (Class348_Sub40_Sub5.aBoolean9121) method2131(0)
                 Class243.method1879(true)
-                Class9.aHa171.ra(-1, 1583160, 40, 127)
+                Class9.aHa171!!.ra(-1, 1583160, 40, 127)
                 Class348_Sub49_Sub1.method3398(true, `is`, i_20_, i_21_, i_25_, i_26_, bool_27_)
                 if (Class348_Sub40_Sub5.aBoolean9121) Class304.method2290()
-                Class9.aHa171.pa()
+                Class9.aHa171!!.pa()
                 Class243.method1879(false)
             }
             Class348_Sub49_Sub1.method3398(false, `is`, i_20_, i_21_, i_25_, i_26_, bool_27_)

@@ -1,24 +1,32 @@
+import Class239_Sub16.Companion.method1791
+
 /* Class11 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+object Class11 {
+    @JvmField
+    var anInt193: Int = 0
+    @JvmField
+    var anInt194: Int = 0
+    @JvmField
+    var anInt195: Int = 0
+    @JvmField
+    var aClass231_196: Class231? = null
+    @JvmField
+    var anInt197: Int = 0
 
-public final class Class11 {
-    static int anInt193 = 0;
-    static int anInt194;
-    static int anInt195;
-    static Class231 aClass231_196;
-    static int anInt197 = 0;
-
-    public static void method221(int i) {
-        if (i != 0) anInt197 = -100;
-        aClass231_196 = null;
+    @JvmStatic
+    fun method221(i: Int) {
+        if (i != 0) anInt197 = -100
+        aClass231_196 = null
     }
 
-    static final void method222(Player player, int i, byte i_0_, int i_1_) {
-        anInt195++;
-        if (i_0_ != 4) anInt194 = -100;
-        int[] is = new int[4];
-        Class214.method1579(is, 0, is.length, i);
-        Class239_Sub16.method1791(23946, is, i_1_, player);
+    @JvmStatic
+    fun method222(player: Player?, i: Int, i_0_: Byte, i_1_: Int) {
+        anInt195++
+        if (i_0_.toInt() != 4) anInt194 = -100
+        val `is` = IntArray(4)
+        Class214.method1579(`is`, 0, `is`.size, i)
+        method1791(23946, `is`, i_1_, player)
     }
 }

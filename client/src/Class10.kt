@@ -1,70 +1,70 @@
+import Class348_Sub42_Sub8_Sub2.Companion.method3200
+
 /* Class10 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class10 internal constructor(@JvmField var aByte180: Byte, @JvmField var anInt185: Int, @JvmField var anInt177: Int, @JvmField var anInt188: Int, @JvmField var anInt184: Int, @JvmField var anInt178: Int, @JvmField var anInt173: Int, @JvmField var aClass318_Sub1_172: Class318_Sub1?) {
+    @JvmField
+    var aClass348_Sub16_Sub5_176: Class348_Sub16_Sub5? = null
+    @JvmField
+    var aClass317_183: Class317? = null
+    @JvmField
+    var aClass348_Sub19_Sub1_189: Class348_Sub19_Sub1? = null
+    @JvmField
+    var aClass348_Sub10_192: Class348_Sub10? = null
 
-public final class Class10 {
-    Class318_Sub1 aClass318_Sub1_172;
-    int anInt173;
-    static int[][] anIntArrayArray174 = {{0, 2}, {0, 2}, {0, 0, 2}, {2, 0, 0}, {0, 2, 0}, {0, 0, 2}, {0, 5, 1, 4}, {0, 4, 4, 4}, {4, 4, 4, 0}, {6, 6, 6, 2, 2, 2}, {2, 2, 2, 6, 6, 6}, {0, 11, 6, 6, 6, 4}, {0, 2}, {0, 4, 4, 4}, {0, 4, 4, 4}};
-    static int anInt175;
-    Class348_Sub16_Sub5 aClass348_Sub16_Sub5_176;
-    int anInt177;
-    int anInt178;
-    static int[] anIntArray179;
-    byte aByte180;
-    static int anInt181;
-    static int anInt182;
-    Class317 aClass317_183;
-    int anInt184;
-    int anInt185;
-    static Class230 aClass230_186;
-    static int[] anIntArray187 = {-1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048};
-    int anInt188;
-    Class348_Sub19_Sub1 aClass348_Sub19_Sub1_189;
-    static int anInt190;
-    static Class87 aClass87_191;
-    Class348_Sub10 aClass348_Sub10_192;
-
-    static final String method217(byte i) {
-        anInt175++;
-        if (Class5_Sub1.aBoolean8335 || Class316.aClass348_Sub42_Sub12_3963 == null) return "";
-        if (i < 51) return null;
-        return (Class316.aClass348_Sub42_Sub12_3963.aString9593);
+    fun method220(i: Byte): Boolean {
+        anInt181++
+        if (i >= -12) method218(101.toByte())
+        return this.aByte180.toInt() == 2 || this.aByte180.toInt() == 3
     }
 
-    public static void method218(byte i) {
-        if (i < 101) method218((byte) -85);
-        anIntArray187 = null;
-        anIntArray179 = null;
-        aClass230_186 = null;
-        aClass87_191 = null;
-        anIntArrayArray174 = null;
-    }
+    companion object {
+        @JvmField
+        var anIntArrayArray174: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(0, 2), intArrayOf(0, 2), intArrayOf(0, 0, 2), intArrayOf(2, 0, 0), intArrayOf(0, 2, 0), intArrayOf(0, 0, 2), intArrayOf(0, 5, 1, 4), intArrayOf(0, 4, 4, 4), intArrayOf(4, 4, 4, 0), intArrayOf(6, 6, 6, 2, 2, 2), intArrayOf(2, 2, 2, 6, 6, 6), intArrayOf(0, 11, 6, 6, 6, 4), intArrayOf(0, 2), intArrayOf(0, 4, 4, 4), intArrayOf(0, 4, 4, 4))
+        @JvmField
+        var anInt175: Int = 0
+        @JvmField
+        var anIntArray179: IntArray? = null
+        @JvmField
+        var anInt181: Int = 0
+        @JvmField
+        var anInt182: Int = 0
+        @JvmField
+        var aClass230_186: Class230?
+        @JvmField
+        var anIntArray187: IntArray? = intArrayOf(-1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048)
+        @JvmField
+        var anInt190: Int = 0
+        @JvmField
+        var aClass87_191: Class87? = null
+        @JvmStatic
+        fun method217(i: Byte): String? {
+            anInt175++
+            if (Class5_Sub1.aBoolean8335 || Class316.aClass348_Sub42_Sub12_3963 == null) return ""
+            if (i < 51) return null
+            return (Class316.aClass348_Sub42_Sub12_3963.aString9593)
+        }
 
-    static final boolean method219(int i, boolean bool, int i_0_) {
-        if (bool != false) return false;
-        anInt190++;
-        return (i & 0x800) != 0 | Class278.method2077(-106, i_0_, i) || Class348_Sub42_Sub8_Sub2.method3200(i, i_0_, (byte) 88);
-    }
+        @JvmStatic
+        fun method218(i: Byte) {
+            if (i < 101) Companion.method218((-85).toByte())
+            anIntArray187 = null
+            anIntArray179 = null
+            aClass230_186 = null
+            aClass87_191 = null
+            anIntArrayArray174 = null
+        }
 
-    final boolean method220(byte i) {
-        anInt181++;
-        if (i >= -12) method218((byte) 101);
-        return this.aByte180 == 2 || this.aByte180 == 3;
-    }
+        @JvmStatic
+        fun method219(i: Int, bool: Boolean, i_0_: Int): Boolean {
+            if (bool != false) return false
+            anInt190++
+            return ((i and 0x800) != 0) or Class278.method2077(-106, i_0_, i) || method3200(i, i_0_, 88.toByte())
+        }
 
-    Class10(byte i, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, Class318_Sub1 class318_sub1) {
-        this.anInt177 = i_2_;
-        this.anInt184 = i_4_;
-        this.anInt188 = i_3_;
-        this.anInt178 = i_5_;
-        this.anInt185 = i_1_;
-        this.aByte180 = i;
-        this.anInt173 = i_6_;
-        this.aClass318_Sub1_172 = class318_sub1;
-    }
-
-    static {
-        aClass230_186 = new Class230("runescape", 0);
+        init {
+            aClass230_186 = Class230("runescape", 0)
+        }
     }
 }

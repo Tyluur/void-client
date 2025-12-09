@@ -1,46 +1,63 @@
 /* Class12 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class12 {
+    @JvmField
+    var aByte198: Byte = 0
+    @JvmField
+    var aBoolean199: Boolean = false
+    @JvmField
+    var anInt200: Int = 0
+    @JvmField
+    var aByte201: Byte = 0
+    @JvmField
+    var aByte202: Byte = 0
+    @JvmField
+    var anInt203: Int = 0
+    @JvmField
+    var aBoolean204: Boolean = false
+    @JvmField
+    var aByte205: Byte = 0
+    @JvmField
+    var anInt206: Int = 0
+    @JvmField
+    var aBoolean207: Boolean = false
+    @JvmField
+    var aShort208: Short = 0
+    @JvmField
+    var aBoolean209: Boolean = false
+    @JvmField
+    var aByte211: Byte = 0
+    @JvmField
+    var aBoolean212: Boolean = false
+    @JvmField
+    var aByte213: Byte = 0
+    @JvmField
+    var aBoolean215: Boolean = false
+    @JvmField
+    var aByte216: Byte = 0
+    @JvmField
+    var aBoolean217: Boolean = false
+    @JvmField
+    var aBoolean218: Boolean = false
 
-public final class Class12 {
-    byte aByte198;
-    boolean aBoolean199;
-    int anInt200;
-    byte aByte201;
-    byte aByte202;
-    int anInt203;
-    boolean aBoolean204;
-    byte aByte205;
-    int anInt206;
-    boolean aBoolean207;
-    short aShort208;
-    boolean aBoolean209;
-    static int anInt210;
-    byte aByte211;
-    boolean aBoolean212;
-    byte aByte213;
-    static int anInt214;
-    boolean aBoolean215;
-    byte aByte216;
-    boolean aBoolean217;
-    boolean aBoolean218;
-
-    static final void method223(int i, int i_0_, int i_1_, int i_2_, byte i_3_) {
-        if (i_2_ > i) Class135_Sub2.method1156(-27, i_2_, Class17.anIntArrayArray255[i_1_], i, i_0_);
-        else Class135_Sub2.method1156(-27, i, Class17.anIntArrayArray255[i_1_], i_2_, i_0_);
-        anInt214++;
-        if (i_3_ >= 20) {
-            /* empty */
+    companion object {
+        @JvmField
+        var anInt210: Int = 0
+        @JvmField
+        var anInt214: Int = 0
+        fun method223(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Byte) {
+            if (i_2_ > i) Class135_Sub2.method1156(-27, i_2_, Class17.anIntArrayArray255[i_1_], i, i_0_)
+            else Class135_Sub2.method1156(-27, i, Class17.anIntArrayArray255[i_1_], i_2_, i_0_)
+            anInt214++
+            if (i_3_ >= 20) {
+                /* empty */
+            }
         }
-    }
 
-    static final void method224(byte i, int[][] is) {
-        Class17.anIntArrayArray255 = is;
-        anInt210++;
-        if (i != -40) method224((byte) 100, null);
-    }
-
-    public Class12() {
-        /* empty */
+        fun method224(i: Byte, `is`: Array<IntArray>) {
+            Class17.anIntArrayArray255 = `is`
+            anInt210++
+        }
     }
 }

@@ -299,17 +299,17 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     fun method2455(i: Int, i_50_: Int, i_51_: Byte, i_52_: Int) {
         anInt10529++
         if (i_50_ != -26443) method2451((-35).toByte(), 9, 26, 87)
-        if (this.anInt10286 != -1 && Class10.aClass87_191.method835(this.anInt10286, 7).anInt245 == 1) {
+        if (this.anInt10286 != -1 && Class10.aClass87_191!!.method835(this.anInt10286, 7).anInt245 == 1) {
             this.anInt10286 = -1
             this.anIntArray10236 = null
         }
         if (this.anInt10269 != -1) {
             val class368 = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(59.toByte(), this.anInt10269))
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && Class10.aClass87_191.method835((class368.anInt4503), i_50_ xor 0x674d.inv()).anInt245 == 1) this.anInt10269 = -1
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && Class10.aClass87_191!!.method835((class368.anInt4503), i_50_ xor 0x674d.inv()).anInt245 == 1) this.anInt10269 = -1
         }
         if (this.anInt10291 != -1) {
             val class368 = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(124.toByte(), this.anInt10291))
-            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.aClass87_191.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
+            if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.aClass87_191!!.method835(class368.anInt4503, 7).anInt245) == 1) this.anInt10291 = -1
         }
         this.anInt10524 = -1
         if (i_52_ >= 0 && Class367_Sub4.anInt7319 > i_52_ && i >= 0 && Class348_Sub40_Sub3.anInt9109 > i) {
@@ -338,8 +338,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         if (Class316.aClass348_Sub51_3959.aClass239_Sub21_7270.method1812(-32350) == 1) {
             val class225 = this.method2422(72.toByte())
             if (class225.aBoolean2913 && (this.aClass154_10536!!.anInt2093 == -1 || Class189.aClass278_2529.method2079(this.aClass154_10536!!.anInt2093, i + -2).aBoolean1369)) {
-                val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (Class10.aClass87_191.method835(this.anInt10286, 7)) else null)
-                val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (Class10.aClass87_191.method835(this.anInt10268, 7)))
+                val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (Class10.aClass87_191!!.method835(this.anInt10286, 7)) else null)
+                val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (Class10.aClass87_191!!.method835(this.anInt10268, 7)))
                 val class64 = (Class348.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_ha, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
                 if (class64 != null) {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).size, true, false))
@@ -469,8 +469,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         anInt10525++
         val i_70_ = i
         val class225 = this.method2422(72.toByte())
-        val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else Class10.aClass87_191.method835(this.anInt10286, 7))
-        val class17_71_ = (if (this.anInt10268 != -1 && !this.aBoolean10521 && (!this.aBoolean10213 || class17 == null)) Class10.aClass87_191.method835(this.anInt10268, 7) else null)
+        val class17 = (if (this.anInt10286 == -1 || this.anInt10218 != 0) null else Class10.aClass87_191!!.method835(this.anInt10286, 7))
+        val class17_71_ = (if (this.anInt10268 != -1 && !this.aBoolean10521 && (!this.aBoolean10213 || class17 == null)) Class10.aClass87_191!!.method835(this.anInt10268, 7) else null)
         val i_72_ = class225.anInt2932
         val i_73_ = class225.anInt2941
         if (i_72_ != 0 || i_73_ != 0 || class225.anInt2950 != 0 || class225.anInt2926 != 0) i = i or 0x7

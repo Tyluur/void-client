@@ -5,7 +5,7 @@ import Class348_Sub23_Sub1.Companion.method2970
 */
 class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
     private var aClass50Array9481: Array<Class50?>? = null
-    private fun method3151(`is`: Array<IntArray>?, i: Byte) {
+    private fun method3151(`is`: Array<IntArray>, i: Byte) {
         anInt9487++
         if (i.toInt() != -27) method3152(86)
         val i_0_: Int = Class348_Sub40_Sub6.Companion.anInt9139

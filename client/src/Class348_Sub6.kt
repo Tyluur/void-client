@@ -104,7 +104,7 @@ class Class348_Sub6 internal constructor(@JvmField var anInt6630: Int, @JvmField
                 val i_18_ = (d_10_ * 256.0).toInt()
                 val i_19_ = (d_11_ * 256.0).toInt()
                 val i_20_ = (i_18_ shl 8) + (i_17_ shl 16) - -i_19_
-                Class10.anIntArray179[i_5_] = i_20_
+                Class10.anIntArray179!![i_5_] = i_20_
             }
             if (i != 2) anInt6634 = 92
         }

@@ -246,7 +246,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
                                     f_89_ = ((this.aHa_Sub2_8272!!.aFloatArray7825[2]) * f_78_ + (f_77_ * (this.aHa_Sub2_8272!!.aFloatArray7825[0]) + f_76_ * (this.aHa_Sub2_8272!!.aFloatArray7825[1])))
                                     f_89_ = ((this.aHa_Sub2_8272!!.aFloat7768) + (if (f_89_ > 0.0f) (this.aHa_Sub2_8272!!.aFloat7832) else (this.aHa_Sub2_8272!!.aFloat7871)) * f_89_)
                                 }
-                                i_75_ = (Class10.anIntArray179[0xff80 and i_69_ or i_90_])
+                                i_75_ = (Class10.anIntArray179!![0xff80 and i_69_ or i_90_])
                             }
                             var class348: Class348? = null
                             if ((i_65_ and -1 + anInt8260) == 0 && (anInt8260 + -1 and i_66_) == 0) class348 = class356.method3480(l, -6008)
@@ -257,7 +257,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
                                     var i_93_ = (i_70_ and 0x7f) * i_74_ shr 7
                                     if (i_93_ < 2) i_93_ = 2
                                     else if (i_93_ > 126) i_93_ = 126
-                                    i_92_ = (Class10.anIntArray179[0xff80 and i_70_ or i_93_])
+                                    i_92_ = (Class10.anIntArray179!![0xff80 and i_70_ or i_93_])
                                     if ((0x7 and this.anInt8235) == 0) {
                                         var f_94_ = ((this.aHa_Sub2_8272!!.aFloatArray7825[0]) * f_77_ + f_76_ * (this.aHa_Sub2_8272!!.aFloatArray7825[1]) + f_78_ * (this.aHa_Sub2_8272!!.aFloatArray7825[2]))
                                         f_94_ = ((if (f_89_ > 0.0f) (this.aHa_Sub2_8272!!.aFloat7832) else (this.aHa_Sub2_8272!!.aFloat7871)) * f_89_ + (this.aHa_Sub2_8272!!.aFloat7768))
@@ -821,7 +821,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
 
         @JvmStatic
         fun method4001(class318_sub1: Class318_Sub1) {
-            Class9.aHa171.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) shr 1)), class318_sub1.y, Class348_Sub42_Sub3.anIntArray9505)
+            Class9.aHa171!!.H(class318_sub1.x, (class318_sub1.anInt6382 + (class318_sub1.method2394(true) shr 1)), class318_sub1.y, Class348_Sub42_Sub3.anIntArray9505)
             class318_sub1.anInt6386 = Class348_Sub42_Sub3.anIntArray9505[0]
             class318_sub1.anInt6380 = Class348_Sub42_Sub3.anIntArray9505[1]
             class318_sub1.anInt6389 = Class348_Sub42_Sub3.anIntArray9505[2]

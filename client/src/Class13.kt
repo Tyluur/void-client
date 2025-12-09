@@ -1,53 +1,60 @@
-/* Class13 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import Class286_Sub4.Companion.method2154
 
-import java.awt.*;
+object Class13 {
+    @JvmField
+    var anInt219: Int = 0
+    @JvmField
+    var aClass114_220: Class114? = Class114(40, -1)
+    @JvmField
+    var anInt221: Int = 0
+    @JvmField
+    var anIntArray222: IntArray?
+    @JvmField
+    var aClass314_Sub1Array223: Array<Class314_Sub1?>? = arrayOfNulls<Class314_Sub1>(37)
+    @JvmField
+    var anIntArray224: IntArray?
 
-public final class Class13 {
-    static int anInt219;
-    static Class114 aClass114_220 = new Class114(40, -1);
-    static int anInt221;
-    static int[] anIntArray222;
-    static Class314_Sub1[] aClass314_Sub1Array223 = new Class314_Sub1[37];
-    static int[] anIntArray224;
-
-    public static void method225(byte i) {
+    @JvmStatic
+    fun method225(i: Byte) {
         if (i > 54) {
-            aClass114_220 = null;
-            anIntArray224 = null;
-            anIntArray222 = null;
-            aClass314_Sub1Array223 = null;
+            aClass114_220 = null
+            anIntArray224 = null
+            anIntArray222 = null
+            aClass314_Sub1Array223 = null
         }
     }
 
-    static final void method226(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
-        for (int i_4_ = i_2_; Class348_Sub38.anInt7008 > i_4_; i_4_++) {
-            Rectangle rectangle = Class180.aRectangleArray2371[i_4_];
-            if (i < rectangle.width + rectangle.x && i_0_ + i > rectangle.x && (i_1_ < rectangle.y - -rectangle.height) && rectangle.y < i_1_ + i_3_) Class152.aBooleanArray2076[i_4_] = true;
+    @JvmStatic
+    fun method226(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
+        var i_4_ = i_2_
+        while (Class348_Sub38.anInt7008 > i_4_) {
+            val rectangle = Class180.aRectangleArray2371[i_4_]
+            if (i < rectangle.width + rectangle.x && i_0_ + i > rectangle.x && (i_1_ < rectangle.y - -rectangle.height) && rectangle.y < i_1_ + i_3_) Class152.aBooleanArray2076[i_4_] = true
+            i_4_++
         }
-        anInt219++;
-        Class338.method2663(i_2_ + -5590, i, i - -i_0_, i_1_, i_3_ + i_1_);
+        anInt219++
+        Class338.method2663(i_2_ + -5590, i, i - -i_0_, i_1_, i_3_ + i_1_)
     }
 
-    static final void method227(Class318_Sub1 class318_sub1, boolean bool, boolean bool_5_) {
-        class318_sub1.aBoolean6391 = bool_5_;
+    @JvmStatic
+    fun method227(class318_sub1: Class318_Sub1, bool: Boolean, bool_5_: Boolean) {
+        class318_sub1.aBoolean6391 = bool_5_
         if (Class348_Sub40_Sub5.aBoolean9121) {
-            if (bool) Class319.aClass315Array3982[Class319.aClass315Array3982.length - 1].method2353(class318_sub1, false);
+            if (bool) Class319.aClass315Array3982[Class319.aClass315Array3982.size - 1].method2353(class318_sub1, false)
             else {
-                int i = Class286_Sub4.method2154(class318_sub1.anInt6386);
-                int i_6_ = (Class52.anIntArray4906[2] * class318_sub1.method2379(-25675) / class318_sub1.anInt6389);
-                int i_7_ = Class286_Sub4.method2154((class318_sub1.anInt6386) - i_6_);
-                int i_8_ = Class286_Sub4.method2154((class318_sub1.anInt6386) + i_6_);
-                if (i_7_ == i_8_) Class319.aClass315Array3982[i].method2353(class318_sub1, false);
-                else if (i_8_ - i_7_ == 1) Class319.aClass315Array3982[Class75_Sub1.anInt5652 + i_7_].method2353(class318_sub1, false);
-                else Class319.aClass315Array3982[Class319.aClass315Array3982.length - 1].method2353(class318_sub1, false);
+                val i = method2154(class318_sub1.anInt6386)
+                val i_6_ = (Class52.anIntArray4906[2] * class318_sub1.method2379(-25675) / class318_sub1.anInt6389)
+                val i_7_ = method2154((class318_sub1.anInt6386) - i_6_)
+                val i_8_ = method2154((class318_sub1.anInt6386) + i_6_)
+                if (i_7_ == i_8_) Class319.aClass315Array3982[i].method2353(class318_sub1, false)
+                else if (i_8_ - i_7_ == 1) Class319.aClass315Array3982[Class75_Sub1.anInt5652 + i_7_].method2353(class318_sub1, false)
+                else Class319.aClass315Array3982[Class319.aClass315Array3982.size - 1].method2353(class318_sub1, false)
             }
-        } else Class38.method365(class318_sub1, Class115.aClass348_Sub1Array1752);
+        } else Class38.method365(class318_sub1, Class115.aClass348_Sub1Array1752)
     }
 
-    static {
-        anIntArray222 = new int[3];
-        anIntArray224 = new int[250];
+    init {
+        anIntArray222 = IntArray(3)
+        anIntArray224 = IntArray(250)
     }
 }
