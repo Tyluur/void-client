@@ -87,10 +87,10 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
             i_12_++
         }
         if (bool) return true
-        val is_14_: ByteArray?
-        if (`is` == null || (`is`[0] == 0 && `is`[1] == 0 && `is`[2] == 0 && `is`[3] == 0)) is_14_ = Class50_Sub1.method461(false, anObjectArray656!![i_9_], 53146732)
+        val is_14_: ByteArray
+        if (`is` == null || (`is`[0] == 0 && `is`[1] == 0 && `is`[2] == 0 && `is`[3] == 0)) is_14_ = Class50_Sub1.method461(false, anObjectArray656!![i_9_], 53146732)!!
         else {
-            is_14_ = Class50_Sub1.method461(true, anObjectArray656!![i_9_], 53146732)
+            is_14_ = Class50_Sub1.method461(true, anObjectArray656!![i_9_], 53146732)!!
             val class348_sub49 = Class348_Sub49(is_14_)
             class348_sub49.method3367(607818341, `is`, 5, (class348_sub49.aByteArray7154).size)
         }

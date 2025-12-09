@@ -116,11 +116,11 @@ class Class38 {
             if (Class168.anInt2254 < 102) Class168.anInt2254 += 6
             anInt512++
             if (Class121.anInt1794 != -1 && (Class299_Sub1_Sub1.aLong8694 < Class62.method599(-127))) {
-                for (i_4_ in Class121.anInt1794..<Class50_Sub1.aStringArray5223.size) {
-                    if (Class50_Sub1.aStringArray5223[i_4_].startsWith("pause")) {
+                for (i_4_ in Class121.anInt1794..<Class50_Sub1.aStringArray5223!!.size) {
+                    if (Class50_Sub1.aStringArray5223!![i_4_]!!.startsWith("pause")) {
                         var i_5_ = 5
                         try {
-                            i_5_ = Class50_Sub1.aStringArray5223[i_4_].substring(6).toInt()
+                            i_5_ = Class50_Sub1.aStringArray5223!![i_4_]!!.substring(6).toInt()
                         } catch (exception: Exception) {
                             /* empty */
                         }
@@ -129,7 +129,7 @@ class Class38 {
                         Class299_Sub1_Sub1.aLong8694 = (1000 * i_5_).toLong() + Class62.method599(-97)
                         return
                     } else {
-                        Class363.aString4461 = Class50_Sub1.aStringArray5223[i_4_]
+                        Class363.aString4461 = Class50_Sub1.aStringArray5223!![i_4_]
                         Class59_Sub1.method555(false, 0)
                     }
                 }

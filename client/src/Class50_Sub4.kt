@@ -1,85 +1,81 @@
 /* Class50_Sub4 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class50_Sub4 extends Class50 {
-    private final int anInt5255;
-    static int anInt5256;
-    static int anInt5257;
-    private final int anInt5258;
-    private final int anInt5259;
-    static int anInt5260;
-    static int anInt5261;
-    static Class47 aClass47_5262;
-    static int anInt5263;
-    private int anInt5264;
-
-    public final void method455(int i, int i_0_, int i_1_) {
-        anInt5256++;
-        if (i_1_ >= -98) method472(-91, null);
+* Visit http://jode.sourceforge.net/
+*/
+class Class50_Sub4 internal constructor(private val anInt5255: Int, private val anInt5259: Int, private var anInt5264: Int, private val anInt5258: Int, i_13_: Int, i_14_: Int) : Class50(-1, i_13_, i_14_) {
+    public override fun method455(i: Int, i_0_: Int, i_1_: Int) {
+        anInt5256++
     }
 
-    public final void method457(int i, int i_2_, int i_3_) {
-        anInt5261++;
-        int i_4_ = i_2_ * anInt5255 >> 12;
-        if (i_3_ >= -29) anInt5264 = 119;
-        int i_5_ = i_2_ * anInt5264 >> 12;
-        int i_6_ = anInt5259 * i >> 12;
-        int i_7_ = anInt5258 * i >> 12;
-        Class339.method2665(i_4_, (byte) 118, this.anInt865, i_6_, i_7_, i_5_);
+    public override fun method457(i: Int, i_2_: Int, i_3_: Int) {
+        anInt5261++
+        val i_4_ = i_2_ * anInt5255 shr 12
+        if (i_3_ >= -29) anInt5264 = 119
+        val i_5_ = i_2_ * anInt5264 shr 12
+        val i_6_ = anInt5259 * i shr 12
+        val i_7_ = anInt5258 * i shr 12
+        Class339.method2665(i_4_, 118.toByte(), this.anInt865, i_6_, i_7_, i_5_)
     }
 
-    public static void method471(int i) {
-        if (i == -30065) aClass47_5262 = null;
+    public override fun method456(i: Int, i_8_: Int, i_9_: Int) {
+        if (i < 87) anInt5264 = 33
+        anInt5260++
     }
 
-    public final void method456(int i, int i_8_, int i_9_) {
-        if (i < 87) anInt5264 = 33;
-        anInt5260++;
-    }
+    companion object {
+        @JvmField
+        var anInt5256: Int = 0
+        @JvmField
+        var anInt5257: Int = 0
+        @JvmField
+        var anInt5260: Int = 0
+        @JvmField
+        var anInt5261: Int = 0
+        @JvmField
+        var aClass47_5262: Class47? = null
+        @JvmField
+        var anInt5263: Int = 0
+        @JvmStatic
+        fun method471(i: Int) {
+            if (i == -30065) aClass47_5262 = null
+        }
 
-    Class50_Sub4(int i, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_) {
-        super(-1, i_13_, i_14_);
-        anInt5258 = i_12_;
-        anInt5264 = i_11_;
-        anInt5255 = i;
-        anInt5259 = i_10_;
-    }
+        @JvmStatic
+        fun method472(i: Int, class348_sub49: Class348_Sub49): Class158? {
+            anInt5263++
+            val string = class348_sub49.readString(90.toByte())
+            val class221 = Class158.method1248(127)[class348_sub49.readUnsignedByte(i xor 0x6c6e.inv())]
+            if (i != -27794) return null
+            val class341 = Class62.method596(i + 47794)[class348_sub49.readUnsignedByte(255)]
+            val i_15_ = class348_sub49.readShort(13638)
+            val i_16_ = class348_sub49.readShort(13638)
+            val i_17_ = class348_sub49.readUnsignedByte(255)
+            val i_18_ = class348_sub49.readUnsignedByte(255)
+            val i_19_ = class348_sub49.readUnsignedByte(255)
+            val i_20_ = class348_sub49.readUnsignedShort(i xor 0x32359469.inv())
+            val i_21_ = class348_sub49.readUnsignedShort(842397944)
+            val i_22_ = class348_sub49.readInt((-126).toByte())
+            val i_23_ = class348_sub49.readInt((-126).toByte())
+            val i_24_ = class348_sub49.readInt((-126).toByte())
+            return Class158(string, class221, class341, i_15_, i_16_, i_17_, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, i_24_)
+        }
 
-    static final Class158 method472(int i, Class348_Sub49 class348_sub49) {
-        anInt5263++;
-        String string = class348_sub49.readString((byte) 90);
-        Class221 class221 = Class158.method1248(127)[class348_sub49.readUnsignedByte(i ^ ~0x6c6e)];
-        if (i != -27794) return null;
-        Class341 class341 = Class62.method596(i + 47794)[class348_sub49.readUnsignedByte(255)];
-        int i_15_ = class348_sub49.readShort(13638);
-        int i_16_ = class348_sub49.readShort(13638);
-        int i_17_ = class348_sub49.readUnsignedByte(255);
-        int i_18_ = class348_sub49.readUnsignedByte(255);
-        int i_19_ = class348_sub49.readUnsignedByte(255);
-        int i_20_ = class348_sub49.readUnsignedShort(i ^ ~0x32359469);
-        int i_21_ = class348_sub49.readUnsignedShort(842397944);
-        int i_22_ = class348_sub49.readInt((byte) -126);
-        int i_23_ = class348_sub49.readInt((byte) -126);
-        int i_24_ = class348_sub49.readInt((byte) -126);
-        return new Class158(string, class221, class341, i_15_, i_16_, i_17_, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, i_24_);
-    }
-
-    static final int method473(byte i, int i_25_, Class110_Sub1 class110_sub1, int i_26_, boolean bool, boolean bool_27_, Class110_Sub1 class110_sub1_28_) {
-        try {
-            anInt5257++;
-            int i_29_ = Class239_Sub8.method1749(class110_sub1_28_, class110_sub1, bool, i_25_, (byte) -30);
-            if (i_29_ != 0) {
-                if (!bool) return i_29_;
-                return -i_29_;
+        @JvmStatic
+        fun method473(i: Byte, i_25_: Int, class110_sub1: Class110_Sub1?, i_26_: Int, bool: Boolean, bool_27_: Boolean, class110_sub1_28_: Class110_Sub1?): Int {
+            try {
+                anInt5257++
+                val i_29_ = Class239_Sub8.method1749(class110_sub1_28_, class110_sub1, bool, i_25_, (-30).toByte())
+                if (i_29_ != 0) {
+                    if (!bool) return i_29_
+                    return -i_29_
+                }
+                if (i_26_ == -1) return 0
+                if (i >= -42) return -65
+                val i_30_ = Class239_Sub8.method1749(class110_sub1_28_, class110_sub1, bool_27_, i_26_, (-30).toByte())
+                if (bool_27_) return -i_30_
+                return i_30_
+            } catch (runtimeexception: RuntimeException) {
+                throw Class348_Sub17.method2929(runtimeexception, ("o.B(" + i + ',' + i_25_ + ',' + (if (class110_sub1 != null) "{...}" else "null") + ',' + i_26_ + ',' + bool + ',' + bool_27_ + ',' + (if (class110_sub1_28_ != null) "{...}" else "null") + ')'))
             }
-            if (i_26_ == -1) return 0;
-            if (i >= -42) return -65;
-            int i_30_ = Class239_Sub8.method1749(class110_sub1_28_, class110_sub1, bool_27_, i_26_, (byte) -30);
-            if (bool_27_) return -i_30_;
-            return i_30_;
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("o.B(" + i + ',' + i_25_ + ',' + (class110_sub1 != null ? "{...}" : "null") + ',' + i_26_ + ',' + bool + ',' + bool_27_ + ',' + (class110_sub1_28_ != null ? "{...}" : "null") + ')'));
         }
     }
 }

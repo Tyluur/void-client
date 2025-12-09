@@ -67,7 +67,7 @@ object Class27 {
             while (l != 0L) {
                 val l_3_ = l
                 l /= 37L
-                stringbuffer.append(Class48.aCharArray852[(-(37L * l) + l_3_).toInt()])
+                stringbuffer.append(Class48.aCharArray852!![(-(37L * l) + l_3_).toInt()])
             }
             return stringbuffer.reverse().toString()
         } catch (runtimeexception: RuntimeException) {
