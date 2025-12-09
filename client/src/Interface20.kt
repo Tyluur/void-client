@@ -5,7 +5,7 @@ interface Interface20 {
 
     fun method75(i: Byte, i_1_: Int): Int
 
-    fun method76(i: Int, `is`: IntArray?)
+    fun method76(i: Int, `is`: IntArray)
 
     fun method77(i: Byte, i_2_: Int)
 

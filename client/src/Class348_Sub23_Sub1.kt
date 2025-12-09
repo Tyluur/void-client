@@ -131,11 +131,11 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) :
             anInt9004++
             if (aClass297_8992!!.aBoolean3777) {
                 Class3.aClass161_125 = Class161()
-                Class3.aClass161_125.anInt2143 = i
-                Class3.aClass161_125.aString2147 = string
+                Class3.aClass161_125!!.anInt2143 = i
+                Class3.aClass161_125!!.aString2147 = string
                 if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) {
-                    Class3.aClass161_125.anInt2138 = 50000 - -Class3.aClass161_125.anInt2143
-                    Class3.aClass161_125.anInt2148 = 40000 - -Class3.aClass161_125.anInt2143
+                    Class3.aClass161_125!!.anInt2138 = 50000 - -Class3.aClass161_125!!.anInt2143
+                    Class3.aClass161_125!!.anInt2148 = 40000 - -Class3.aClass161_125!!.anInt2143
                 }
                 if (i < Class65.aClass110_Sub1Array1146.size && Class65.aClass110_Sub1Array1146[i] != null) Class251.anInt3234 = (Class65.aClass110_Sub1Array1146[i].anInt1708)
                 return true

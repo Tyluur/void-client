@@ -1275,7 +1275,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     bool_156_ = true
                     var i_157_ = 0
                     while (i > i_157_) {
-                        if (((Class3.aClass161_125.anInt2143 != ha.anIntArray4578!![i_157_]) && (ha.anIntArray4578!![i_157_ - -1] == Class3.aClass161_125.anInt2143)) || (ha.anIntArray4578!![i_157_] == 0 && (ha.anIntArray4578!![1 + i_157_] != 0))) {
+                        if (((Class3.aClass161_125!!.anInt2143 != ha.anIntArray4578!![i_157_]) && (ha.anIntArray4578!![i_157_ - -1] == Class3.aClass161_125!!.anInt2143)) || (ha.anIntArray4578!![i_157_] == 0 && (ha.anIntArray4578!![1 + i_157_] != 0))) {
                             val i_158_ = ha.anIntArray4578!![i_157_]
                             ha.anIntArray4578!![i_157_] = ha.anIntArray4578!![1 + i_157_]
                             ha.anIntArray4578!![i_157_ - -1] = i_158_
