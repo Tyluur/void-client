@@ -45,8 +45,8 @@ public open class Class369_Sub3(class221: Class221?, class341: Class341?, i: Int
         var aClass45_8601: Class45? = null
         @JvmStatic
         fun method3573(i: Int) {
-            synchronized(Class24.aClass60_355) {
-                Class24.aClass60_355.method590(0)
+            synchronized(Class24.aClass60_355!!) {
+                Class24.aClass60_355!!.method590(0)
             }
             anInt8598++
             synchronized(Class130.aClass60_1894!!) {

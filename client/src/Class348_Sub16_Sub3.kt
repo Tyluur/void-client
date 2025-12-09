@@ -316,18 +316,18 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             if (class23.aByteArray348 != null) {
                 if (class23.anInt345 > 0) class348_sub43.anInt7070 += (0.5 + (128.0 * 2.0.pow(d * (class23.anInt345).toDouble()))).toInt()
                 else class348_sub43.anInt7070 += 128
-                while ( /**/((class348_sub43.anInt7069 < -2 + class23.aByteArray348.size) && (class348_sub43.anInt7070 > (0xff00 and ((class23.aByteArray348[2 + (class348_sub43.anInt7069)]).toInt() shl 8))))) {
+                while ( /**/((class348_sub43.anInt7069 < -2 + class23.aByteArray348!!.size) && (class348_sub43.anInt7070 > (0xff00 and ((class23.aByteArray348!![2 + (class348_sub43.anInt7069)]).toInt() shl 8))))) {
                     class348_sub43.anInt7069 += 2
                 }
-                if ((class348_sub43.anInt7069 == -2 + class23.aByteArray348.size) && ((class23.aByteArray348[1 + class348_sub43.anInt7069]).toInt() == 0)) bool = true
+                if ((class348_sub43.anInt7069 == -2 + class23.aByteArray348!!.size) && ((class23.aByteArray348!![1 + class348_sub43.anInt7069]).toInt() == 0)) bool = true
             }
             if (class348_sub43.anInt7087 >= 0 && class23.aByteArray344 != null && (0x1 and (this.anIntArray8895[class348_sub43.anInt7067])) == 0 && (class348_sub43.anInt7088 < 0 || ((aClass348_Sub43ArrayArray8915[class348_sub43.anInt7067]!![class348_sub43.anInt7088]) != class348_sub43))) {
                 if (class23.anInt349 > 0) class348_sub43.anInt7087 += ((2.0.pow((class23.anInt349).toDouble() * d) * 128.0) + 0.5).toInt()
                 else class348_sub43.anInt7087 += 128
-                while ( /**/((class348_sub43.anInt7084 < -2 + class23.aByteArray344.size) && (((class23.aByteArray344[(class348_sub43.anInt7084 - -2)]).toInt() shl 8 and 0xff00) < class348_sub43.anInt7087))) {
+                while ( /**/((class348_sub43.anInt7084 < -2 + class23.aByteArray344!!.size) && (((class23.aByteArray344!![(class348_sub43.anInt7084 - -2)]).toInt() shl 8 and 0xff00) < class348_sub43.anInt7087))) {
                     class348_sub43.anInt7084 += 2
                 }
-                if (class348_sub43.anInt7084 == -2 + class23.aByteArray344.size) bool = true
+                if (class348_sub43.anInt7084 == -2 + class23.aByteArray344!!.size) bool = true
             }
             if (bool) {
                 class348_sub43.aClass348_Sub16_Sub5_7081.method2902(class348_sub43.anInt7086)
@@ -667,21 +667,21 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             if (class23.anInt347 > 0) i_79_ = (0.5 + (i_79_.toDouble() * 0.5.pow((class348_sub43.anInt7090.toDouble() * 1.953125E-5 * (class23.anInt347).toDouble())))).toInt()
             if (class23.aByteArray348 != null) {
                 val i_80_ = class348_sub43.anInt7070
-                var i_81_ = (class23.aByteArray348[class348_sub43.anInt7069 + 1]).toInt()
-                if (class348_sub43.anInt7069 < class23.aByteArray348.size + -2) {
-                    val i_82_ = 0xff00 and ((class23.aByteArray348[(class348_sub43.anInt7069)]).toInt() shl 8)
-                    val i_83_ = ((0xff and (class23.aByteArray348[(class348_sub43.anInt7069) + 2]).toInt()) shl 8)
-                    i_81_ += (-i_81_ + (class23.aByteArray348[(class348_sub43.anInt7069 - -3)])) * (i_80_ + -i_82_) / (i_83_ - i_82_)
+                var i_81_ = (class23.aByteArray348!![class348_sub43.anInt7069 + 1]).toInt()
+                if (class348_sub43.anInt7069 < class23.aByteArray348!!.size + -2) {
+                    val i_82_ = 0xff00 and ((class23.aByteArray348!![(class348_sub43.anInt7069)]).toInt() shl 8)
+                    val i_83_ = ((0xff and (class23.aByteArray348!![(class348_sub43.anInt7069) + 2]).toInt()) shl 8)
+                    i_81_ += (-i_81_ + (class23.aByteArray348!![(class348_sub43.anInt7069 - -3)])) * (i_80_ + -i_82_) / (i_83_ - i_82_)
                 }
                 i_79_ = i_79_ * i_81_ + 32 shr 6
             }
             if (class348_sub43.anInt7087 > 0 && class23.aByteArray344 != null) {
                 val i_84_ = class348_sub43.anInt7087
-                var i_85_ = (class23.aByteArray344[1 + class348_sub43.anInt7084]).toInt()
-                if (class23.aByteArray344.size + -2 > class348_sub43.anInt7084) {
-                    val i_86_ = 0xff00 and ((class23.aByteArray344[(class348_sub43.anInt7084)]).toInt() shl 8)
-                    val i_87_ = ((class23.aByteArray344[class348_sub43.anInt7084 - -2]).toInt() shl 8) and 0xff00
-                    i_85_ += ((class23.aByteArray344[3 + class348_sub43.anInt7084]) + -i_85_) * (i_84_ + -i_86_) / (-i_86_ + i_87_)
+                var i_85_ = (class23.aByteArray344!![1 + class348_sub43.anInt7084]).toInt()
+                if (class23.aByteArray344!!.size + -2 > class348_sub43.anInt7084) {
+                    val i_86_ = 0xff00 and ((class23.aByteArray344!![(class348_sub43.anInt7084)]).toInt() shl 8)
+                    val i_87_ = ((class23.aByteArray344!![class348_sub43.anInt7084 - -2]).toInt() shl 8) and 0xff00
+                    i_85_ += ((class23.aByteArray344!![3 + class348_sub43.anInt7084]) + -i_85_) * (i_84_ + -i_86_) / (-i_86_ + i_87_)
                 }
                 i_79_ = i_85_ * i_79_ + 32 shr 6
             }

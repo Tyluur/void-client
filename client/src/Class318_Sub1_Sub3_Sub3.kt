@@ -856,7 +856,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             Class5_Sub2.aBooleanArrayArrayArray8361 = null
             Class274.method2062(89.toByte())
             if (Class24.aClass318_Sub1_Sub3Array357 != null) {
-                for (i in 0..<Class86.anInt1477) Class24.aClass318_Sub1_Sub3Array357[i] = null
+                for (i in 0..<Class86.anInt1477) Class24.aClass318_Sub1_Sub3Array357!![i] = null
                 Class86.anInt1477 = 0
             }
             Class348.aClass318_Sub1Array4293 = null

@@ -1,20 +1,28 @@
 /* Class23 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class23 {
+    @JvmField
+    var aByteArray344: ByteArray? = null
+    @JvmField
+    var anInt345: Int = 0
+    @JvmField
+    var anInt346: Int = 0
+    @JvmField
+    var anInt347: Int = 0
+    @JvmField
+    var aByteArray348: ByteArray? = null
+    @JvmField
+    var anInt349: Int = 0
+    @JvmField
+    var anInt350: Int = 0
+    @JvmField
+    var anInt352: Int = 0
+    @JvmField
+    var anInt353: Int = 0
 
-public final class Class23 {
-    byte[] aByteArray344;
-    int anInt345;
-    int anInt346;
-    int anInt347;
-    byte[] aByteArray348;
-    int anInt349;
-    int anInt350;
-    static boolean aBoolean351 = true;
-    int anInt352;
-    int anInt353;
-
-    public Class23() {
-        /* empty */
+    companion object {
+        @JvmField
+        var aBoolean351: Boolean = true
     }
 }

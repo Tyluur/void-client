@@ -45,7 +45,7 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: ha_Sub3
         fun method2270(i: Int, i_4_: Int, var_ha: ha?, string: String?, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int) {
             try {
                 if (OutputStream_Sub2.aClass105_106 == null || Class121.aClass105_1800 == null) {
-                    if (Class21.aClass45_322.method421(false, Class231.anInt2996) && Class21.aClass45_322.method421(false, Class348_Sub40_Sub16.anInt9231)) {
+                    if (Class21.aClass45_322!!.method421(false, Class231.anInt2996) && Class21.aClass45_322!!.method421(false, Class348_Sub40_Sub16.anInt9231)) {
                         OutputStream_Sub2.aClass105_106 = (var_ha!!.method3691(Class207.method1521(Class21.aClass45_322, Class231.anInt2996, 0), true))
                         val class207 = Class207.method1521(Class21.aClass45_322, Class348_Sub40_Sub16.anInt9231, 0)
                         Class121.aClass105_1800 = var_ha.method3691(class207, true)

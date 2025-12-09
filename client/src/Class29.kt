@@ -1,19 +1,18 @@
 /* Class29 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class29 {
-    int anInt400;
-    static int anInt401 = 0;
-    static int anInt402;
-    static int anInt403;
-
-    public final String toString() {
-        anInt402++;
-        throw new IllegalStateException();
+* Visit http://jode.sourceforge.net/
+*/
+class Class29 internal constructor(@JvmField var anInt400: Int, i_0_: Int) {
+    override fun toString(): String {
+        anInt402++
+        throw IllegalStateException()
     }
 
-    Class29(int i, int i_0_) {
-        this.anInt400 = i;
+    companion object {
+        @JvmField
+        var anInt401: Int = 0
+        @JvmField
+        var anInt402: Int = 0
+        @JvmField
+        var anInt403: Int = 0
     }
 }
