@@ -26,9 +26,9 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
 
     override fun method3042(i: Int, i_13_: Int): IntArray {
         anInt9457++
-        val `is` = this.aClass191_7032.method1433(0, i)
+        val `is` = this.aClass191_7032!!.method1433(0, i)
         if (i_13_ != 255) method3148(true)
-        if (this.aClass191_7032.aBoolean2570) {
+        if (this.aClass191_7032!!.aBoolean2570) {
             val i_14_ = 1 + (anInt9463 + anInt9463)
             val i_15_ = 65536 / i_14_
             val i_16_ = 1 + anInt9466 + anInt9466
@@ -36,7 +36,7 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
             val is_18_ = arrayOfNulls<IntArray>(i_14_)
             var i_19_ = -anInt9463 + i
             while (i - -anInt9463 >= i_19_) {
-                val is_20_ = this.method3048(Class299_Sub2.anInt6325 and i_19_, 633706337, 0)
+                val is_20_ = this.method3048(Class299_Sub2.anInt6325 and i_19_, 633706337, 0)!!
                 val is_21_ = IntArray(Class348_Sub40_Sub6.Companion.anInt9139)
                 var i_22_ = 0
                 var i_23_ = -anInt9466
@@ -69,25 +69,25 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
         return `is`
     }
 
-    override fun method3047(i: Int, i_28_: Int): Array<IntArray>? {
+    override fun method3047(i: Int, i_28_: Int): Array<IntArray?>? {
         if (i_28_ != -1564599039) return null
         anInt9462++
-        val `is` = this.aClass322_7033.method2557(i_28_ xor 0x5d41e2a6, i)
-        if (this.aClass322_7033.aBoolean4035) {
+        val `is` = this.aClass322_7033!!.method2557(i_28_ xor 0x5d41e2a6, i)
+        if (this.aClass322_7033!!.aBoolean4035) {
             val i_29_ = 1 + (anInt9463 + anInt9463)
             val i_30_ = 65536 / i_29_
             val i_31_ = anInt9466 + (anInt9466 + 1)
             val i_32_ = 65536 / i_31_
             val is_33_: Array<Array<IntArray?>?> = arrayOfNulls<Array<IntArray?>>(i_29_)
             for (i_34_ in i + -anInt9463..anInt9463 + i) {
-                val is_35_ = this.method3039(55.toByte(), Class299_Sub2.anInt6325 and i_34_, 0)
+                val is_35_ = this.method3039(55.toByte(), Class299_Sub2.anInt6325 and i_34_, 0)!!
                 val is_36_: Array<IntArray> = Array<IntArray>(3) { IntArray(Class348_Sub40_Sub6.Companion.anInt9139) }
                 var i_37_ = 0
                 var i_38_ = 0
                 var i_39_ = 0
-                val is_40_ = is_35_[0]
-                val is_41_ = is_35_[1]
-                val is_42_ = is_35_[2]
+                val is_40_ = is_35_[0]!!
+                val is_41_ = is_35_[1]!!
+                val is_42_ = is_35_[2]!!
                 for (i_43_ in -anInt9466..anInt9466) {
                     val i_44_ = Class239_Sub22.anInt6076 and i_43_
                     i_39_ += is_42_[i_44_]

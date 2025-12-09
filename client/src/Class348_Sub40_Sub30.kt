@@ -18,14 +18,14 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
     private var anInt9400 = 0
     private var anInt9401 = 0
     private var anInt9402 = 0
-    override fun method3047(i: Int, i_8_: Int): Array<IntArray> {
+    override fun method3047(i: Int, i_8_: Int): Array<IntArray?>? {
         anInt9393++
-        val `is` = this.aClass322_7033.method2557(-105, i)
-        if (this.aClass322_7033.aBoolean4035) {
-            val is_9_ = this.method3039(50.toByte(), i, 0)
-            val is_10_ = is_9_[0]
-            val is_11_ = is_9_[1]
-            val is_12_ = is_9_[2]
+        val `is` = this.aClass322_7033!!.method2557(-105, i)
+        if (this.aClass322_7033!!.aBoolean4035) {
+            val is_9_ = this.method3039(50.toByte(), i, 0)!!
+            val is_10_ = is_9_[0]!!
+            val is_11_ = is_9_[1]!!
+            val is_12_ = is_9_[2]!!
             val is_13_ = `is`[0]
             val is_14_ = `is`[1]
             val is_15_ = `is`[2]
@@ -148,7 +148,7 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
         }
     }
 
-    override fun method3049(class348_sub49: Class348_Sub49?, i: Int, i_39_: Int) {
+    override fun method3049(class348_sub49: Class348_Sub49, i: Int, i_39_: Int) {
         while_209_@ do {
             try {
                 anInt9384++

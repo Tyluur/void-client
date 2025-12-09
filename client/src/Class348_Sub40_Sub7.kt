@@ -15,14 +15,14 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
     private var aBoolean9140 = true
     private var aBoolean9147 = true
 
-    override fun method3047(i: Int, i_0_: Int): Array<IntArray> {
+    override fun method3047(i: Int, i_0_: Int): Array<IntArray?>? {
         anInt9141++
-        val `is` = this.aClass322_7033.method2557(-119, i)
-        if (this.aClass322_7033.aBoolean4035) {
-            val is_1_ = this.method3039(120.toByte(), (if (aBoolean9147) -i + Class299_Sub2.anInt6325 else i), 0)
-            val is_2_ = is_1_[0]
-            val is_3_ = is_1_[1]
-            val is_4_ = is_1_[2]
+        val `is` = this.aClass322_7033!!.method2557(-119, i)
+        if (this.aClass322_7033!!.aBoolean4035) {
+            val is_1_ = this.method3039(120.toByte(), (if (aBoolean9147) -i + Class299_Sub2.anInt6325 else i), 0)!!
+            val is_2_ = is_1_[0]!!
+            val is_3_ = is_1_[1]!!
+            val is_4_ = is_1_[2]!!
             val is_5_ = `is`[0]
             val is_6_ = `is`[1]
             val is_7_ = `is`[2]
@@ -46,7 +46,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Class348_Sub49?, i: Int, i_72_: Int) {
+    override fun method3049(class348_sub49: Class348_Sub49, i: Int, i_72_: Int) {
         while_146_@ do {
             try {
                 anInt9146++
@@ -76,9 +76,9 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
     override fun method3042(i: Int, i_75_: Int): IntArray {
         anInt9143++
         if (i_75_ != 255) aClass348_Sub42_Sub12_9144 = null
-        val `is` = this.aClass191_7032.method1433(0, i)
-        if (this.aClass191_7032.aBoolean2570) {
-            val is_76_ = this.method3048((if (aBoolean9147) Class299_Sub2.anInt6325 - i else i), i_75_ + 633706082, 0)
+        val `is` = this.aClass191_7032!!.method1433(0, i)
+        if (this.aClass191_7032!!.aBoolean2570) {
+            val is_76_ = this.method3048((if (aBoolean9147) Class299_Sub2.anInt6325 - i else i), i_75_ + 633706082, 0)!!
             if (aBoolean9140) {
                 var i_77_ = 0
                 while ((i_77_ < Class348_Sub40_Sub6.Companion.anInt9139)) {

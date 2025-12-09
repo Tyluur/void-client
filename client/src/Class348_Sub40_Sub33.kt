@@ -4,18 +4,18 @@ import kotlin.math.atan2
 * Visit http://jode.sourceforge.net/
 */
 class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
-    override fun method3047(i: Int, i_2_: Int): Array<IntArray> {
+    override fun method3047(i: Int, i_2_: Int): Array<IntArray?>? {
         anInt9429++
-        val `is` = this.aClass322_7033.method2557(-97, i)
+        val `is` = this.aClass322_7033!!.method2557(-97, i)
         if (i_2_ != -1564599039) aClass46ArrayArray9427 = null
-        if (this.aClass322_7033.aBoolean4035) {
+        if (this.aClass322_7033!!.aBoolean4035) {
             val is_3_ = `is`[0]
             val is_4_ = `is`[1]
             val is_5_ = `is`[2]
             var i_6_ = 0
             while ((Class348_Sub40_Sub6.Companion.anInt9139 > i_6_)) {
                 method3139(i_6_, i, (-31).toByte())
-                val is_7_ = this.method3039(43.toByte(), Class344.anInt4265, 0)
+                val is_7_ = this.method3039(43.toByte(), Class344.anInt4265, 0)!!
                 is_3_[i_6_] = is_7_[0]!![Class121.anInt1796]
                 is_4_[i_6_] = is_7_[1]!![Class121.anInt1796]
                 is_5_[i_6_] = is_7_[2]!![Class121.anInt1796]
@@ -28,12 +28,12 @@ class Class348_Sub40_Sub33 : Class348_Sub40(1, false) {
     override fun method3042(i: Int, i_8_: Int): IntArray {
         anInt9428++
         if (i_8_ != 255) aClass46ArrayArray9427 = null
-        val `is` = this.aClass191_7032.method1433(0, i)
-        if (this.aClass191_7032.aBoolean2570) {
+        val `is` = this.aClass191_7032!!.method1433(0, i)
+        if (this.aClass191_7032!!.aBoolean2570) {
             var i_9_ = 0
             while ((i_9_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
                 method3139(i_9_, i, (-31).toByte())
-                val is_10_ = this.method3048(Class344.anInt4265, i_8_ xor 0x25c5979e, 0)
+                val is_10_ = this.method3048(Class344.anInt4265, i_8_ xor 0x25c5979e, 0)!!
                 `is`[i_9_] = is_10_[Class121.anInt1796]
                 i_9_++
             }

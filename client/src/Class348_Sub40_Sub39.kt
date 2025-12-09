@@ -29,8 +29,8 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
 
     override fun method3042(i: Int, i_5_: Int): IntArray? {
         anInt9486++
-        val `is` = this.aClass191_7032.method1433(i_5_ + -255, i)
-        if (this.aClass191_7032.aBoolean2570) method3151(this.aClass191_7032.method1427(16.toByte()), (-27).toByte())
+        val `is` = this.aClass191_7032!!.method1433(i_5_ + -255, i)
+        if (this.aClass191_7032!!.aBoolean2570) method3151(this.aClass191_7032!!.method1427(16.toByte()), (-27).toByte())
         return `is`
     }
 
@@ -74,13 +74,13 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
 
     override fun method3047(i: Int, i_10_: Int): Array<IntArray?>? {
         anInt9483++
-        val `is` = this.aClass322_7033.method2557(i_10_ + 1564598923, i)
+        val `is` = this.aClass322_7033!!.method2557(i_10_ + 1564598923, i)
         if (i_10_ != -1564599039) aClass70_9485 = null
-        if (this.aClass322_7033.aBoolean4035) {
+        if (this.aClass322_7033!!.aBoolean4035) {
             val i_11_: Int = Class348_Sub40_Sub6.Companion.anInt9139
             val i_12_ = Class286_Sub2.anInt6212
             val is_13_: Array<IntArray> = Array<IntArray>(i_12_) { IntArray(i_11_) }
-            val is_14_ = this.aClass322_7033.method2553(0)
+            val is_14_ = this.aClass322_7033!!.method2553(0)
             method3151(is_13_, (-27).toByte())
             var i_15_ = 0
             while (Class286_Sub2.anInt6212 > i_15_) {

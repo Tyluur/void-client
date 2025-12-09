@@ -56,18 +56,18 @@ class Class348_Sub40_Sub1 : Class348_Sub40(1, false) {
         } while (false)
     }
 
-    override fun method3047(i: Int, i_5_: Int): Array<IntArray> {
+    override fun method3047(i: Int, i_5_: Int): Array<IntArray?>? {
         if (i_5_ != -1564599039) anInt9091 = 64
         anInt9093++
-        val `is` = this.aClass322_7033.method2557(-127, i)
-        if (this.aClass322_7033.aBoolean4035) {
-            val is_6_ = this.method3039(62.toByte(), i, 0)
-            val is_7_ = is_6_[0]
-            val is_8_ = is_6_[1]
-            val is_9_ = is_6_[2]
-            val is_10_ = `is`[0]
-            val is_11_ = `is`[1]
-            val is_12_ = `is`[2]
+        val `is` = this.aClass322_7033!!.method2557(-127, i)
+        if (this.aClass322_7033!!.aBoolean4035) {
+            val is_6_ = this.method3039(62.toByte(), i, 0)!!
+            val is_7_ = is_6_[0]!!
+            val is_8_ = is_6_[1]!!
+            val is_9_ = is_6_[2]!!
+            val is_10_ = `is`[0]!!
+            val is_11_ = `is`[1]!!
+            val is_12_ = `is`[2]!!
             var i_13_ = 0
             while (Class348_Sub40_Sub6.Companion.anInt9139 > i_13_) {
                 val i_14_ = is_7_[i_13_]

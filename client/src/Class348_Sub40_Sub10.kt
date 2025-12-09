@@ -32,9 +32,9 @@ class Class348_Sub40_Sub10 : Class348_Sub40(1, false) {
 
     override fun method3042(i: Int, i_2_: Int): IntArray? {
         anInt9177++
-        val `is` = this.aClass191_7032.method1433(0, i)
-        if (this.aClass191_7032.aBoolean2570) {
-            val is_3_ = this.method3048(i, 633706337, 0)
+        val `is` = this.aClass191_7032!!.method1433(0, i)
+        if (this.aClass191_7032!!.aBoolean2570) {
+            val is_3_ = this.method3048(i, 633706337, 0)!!
             var i_4_ = 0
             while (Class348_Sub40_Sub6.Companion.anInt9139 > i_4_) {
                 `is`[i_4_] = anInt9176 - -(anInt9182 * is_3_[i_4_] shr 12)
@@ -45,17 +45,17 @@ class Class348_Sub40_Sub10 : Class348_Sub40(1, false) {
         return `is`
     }
 
-    override fun method3047(i: Int, i_5_: Int): Array<IntArray> {
+    override fun method3047(i: Int, i_5_: Int): Array<IntArray?>? {
         anInt9178++
-        val `is` = this.aClass322_7033.method2557(-113, i)
-        if (this.aClass322_7033.aBoolean4035) {
-            val is_6_ = this.method3039((-55).toByte(), i, 0)
-            val is_7_ = is_6_[0]
-            val is_8_ = is_6_[1]
-            val is_9_ = is_6_[2]
-            val is_10_ = `is`[0]
-            val is_11_ = `is`[1]
-            val is_12_ = `is`[2]
+        val `is` = this.aClass322_7033!!.method2557(-113, i)
+        if (this.aClass322_7033!!.aBoolean4035) {
+            val is_6_ = this.method3039((-55).toByte(), i, 0)!!
+            val is_7_ = is_6_[0]!!
+            val is_8_ = is_6_[1]!!
+            val is_9_ = is_6_[2]!!
+            val is_10_ = `is`[0]!!
+            val is_11_ = `is`[1]!!
+            val is_12_ = `is`[2]!!
             var i_13_ = 0
             while ((Class348_Sub40_Sub6.Companion.anInt9139 > i_13_)) {
                 is_10_[i_13_] = (anInt9182 * is_7_[i_13_] shr 12) + anInt9176

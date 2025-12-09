@@ -20,9 +20,9 @@ class Class348_Sub40_Sub3 : Class348_Sub40(1, true) {
     override fun method3042(i: Int, i_3_: Int): IntArray {
         anInt9110++
         if (i_3_ != 255) anInt9107 = -121
-        val `is` = this.aClass191_7032.method1433(i_3_ + -255, i)
-        if (this.aClass191_7032.aBoolean2570) {
-            val is_4_ = this.method3048(i, 633706337, 0)
+        val `is` = this.aClass191_7032!!.method1433(i_3_ + -255, i)
+        if (this.aClass191_7032!!.aBoolean2570) {
+            val is_4_ = this.method3048(i, 633706337, 0)!!
             var i_5_ = 0
             while ((Class348_Sub40_Sub6.Companion.anInt9139 > i_5_)) {
                 val i_6_ = is_4_[i_5_]

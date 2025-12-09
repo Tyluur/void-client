@@ -20,23 +20,23 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
         anInt9227++
     }
 
-    override fun method3047(i: Int, i_2_: Int): Array<IntArray> {
+    override fun method3047(i: Int, i_2_: Int): Array<IntArray?>? {
         if (i_2_ != -1564599039) method3089(-88)
         anInt9223++
-        val `is` = this.aClass322_7033.method2557(i_2_ xor 0x5d41e2a7, i)
+        val `is` = this.aClass322_7033!!.method2557(i_2_ xor 0x5d41e2a7, i)
         while_168_@ do {
-            if (this.aClass322_7033.aBoolean4035) {
-                val is_3_ = this.method3039((-51).toByte(), i, 0)
-                val is_4_ = this.method3039((-66).toByte(), i, 1)
-                val is_5_ = `is`[0]
-                val is_6_ = `is`[1]
-                val is_7_ = `is`[2]
-                val is_8_ = is_3_[0]
-                val is_9_ = is_3_[1]
-                val is_10_ = is_3_[2]
-                val is_11_ = is_4_[0]
-                val is_12_ = is_4_[1]
-                val is_13_ = is_4_[2]
+            if (this.aClass322_7033!!.aBoolean4035) {
+                val is_3_ = this.method3039((-51).toByte(), i, 0)!!
+                val is_4_ = this.method3039((-66).toByte(), i, 1)!!
+                val is_5_ = `is`[0]!!
+                val is_6_ = `is`[1]!!
+                val is_7_ = `is`[2]!!
+                val is_8_ = is_3_[0]!!
+                val is_9_ = is_3_[1]!!
+                val is_10_ = is_3_[2]!!
+                val is_11_ = is_4_[0]!!
+                val is_12_ = is_4_[1]!!
+                val is_13_ = is_4_[2]!!
                 var i_14_ = anInt9226
                 while_167_@ do {
                     while_166_@ do {
@@ -224,11 +224,11 @@ class Class348_Sub40_Sub16 : Class348_Sub40(2, false) {
     override fun method3042(i: Int, i_51_: Int): IntArray {
         if (i_51_ != 255) method3047(50, -18)
         anInt9224++
-        val `is` = this.aClass191_7032.method1433(0, i)
+        val `is` = this.aClass191_7032!!.method1433(0, i)
         while_178_@ do {
-            if (this.aClass191_7032.aBoolean2570) {
-                val is_52_ = this.method3048(i, 633706337, 0)
-                val is_53_ = this.method3048(i, 633706337, 1)
+            if (this.aClass191_7032!!.aBoolean2570) {
+                val is_52_ = this.method3048(i, 633706337, 0)!!
+                val is_53_ = this.method3048(i, 633706337, 1)!!
                 var i_54_ = anInt9226
                 while_177_@ do {
                     while_176_@ do {

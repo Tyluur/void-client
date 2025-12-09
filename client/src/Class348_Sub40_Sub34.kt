@@ -10,7 +10,7 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
     private var anInt9438 = 4096
     private var aBoolean9439 = true
 
-    override fun method3049(class348_sub49: Class348_Sub49?, i: Int, i_5_: Int) {
+    override fun method3049(class348_sub49: Class348_Sub49, i: Int, i_5_: Int) {
         do {
             try {
                 if (i_5_ != 31015) method3140(-77, 55)
@@ -28,14 +28,14 @@ class Class348_Sub40_Sub34 : Class348_Sub40(1, false) {
         } while (false)
     }
 
-    override fun method3047(i: Int, i_7_: Int): Array<IntArray> {
+    override fun method3047(i: Int, i_7_: Int): Array<IntArray?>? {
         anInt9434++
-        val `is` = this.aClass322_7033.method2557(-111, i)
+        val `is` = this.aClass322_7033!!.method2557(-111, i)
         if (i_7_ != -1564599039) method3140(72, -13)
-        if (this.aClass322_7033.aBoolean4035) {
-            val is_8_ = this.method3048(-1 + i and Class299_Sub2.anInt6325, 633706337, 0)
-            val is_9_ = this.method3048(i, i_7_ + -2096661920, 0)
-            val is_10_ = this.method3048(Class299_Sub2.anInt6325 and 1 + i, 633706337, 0)
+        if (this.aClass322_7033!!.aBoolean4035) {
+            val is_8_ = this.method3048(-1 + i and Class299_Sub2.anInt6325, 633706337, 0)!!
+            val is_9_ = this.method3048(i, i_7_ + -2096661920, 0)!!
+            val is_10_ = this.method3048(Class299_Sub2.anInt6325 and 1 + i, 633706337, 0)!!
             val is_11_ = `is`[0]
             val is_12_ = `is`[1]
             val is_13_ = `is`[2]

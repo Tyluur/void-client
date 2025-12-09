@@ -5,15 +5,15 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
     private var anInt9344 = 4096
     private var anInt9347 = 4096
     private var anInt9354 = 4096
-    override fun method3047(i: Int, i_3_: Int): Array<IntArray>? {
+    override fun method3047(i: Int, i_3_: Int): Array<IntArray?>? {
         if (i_3_ != -1564599039) return null
         anInt9353++
-        val `is` = this.aClass322_7033.method2557(i_3_ + 1564598957, i)
-        if (this.aClass322_7033.aBoolean4035) {
-            val is_4_ = this.method3039((-60).toByte(), i, 0)
-            val is_5_ = is_4_[0]
-            val is_6_ = is_4_[1]
-            val is_7_ = is_4_[2]
+        val `is` = this.aClass322_7033!!.method2557(i_3_ + 1564598957, i)
+        if (this.aClass322_7033!!.aBoolean4035) {
+            val is_4_ = this.method3039((-60).toByte(), i, 0)!!
+            val is_5_ = is_4_[0]!!
+            val is_6_ = is_4_[1]!!
+            val is_7_ = is_4_[2]!!
             val is_8_ = `is`[0]
             val is_9_ = `is`[1]
             val is_10_ = `is`[2]
@@ -37,7 +37,7 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
         return `is`
     }
 
-    override fun method3049(class348_sub49: Class348_Sub49?, i: Int, i_23_: Int) {
+    override fun method3049(class348_sub49: Class348_Sub49, i: Int, i_23_: Int) {
         do {
             try {
                 val i_24_ = i

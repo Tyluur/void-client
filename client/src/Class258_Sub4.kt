@@ -58,7 +58,7 @@ class Class258_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, i: Int, i_0_: Int
             anInt8559++
             val i_4_ = -43 / ((-65 - i) / 55)
             val l = (i_3_ or (if (bool) -2147483648 else 0)).toLong()
-            return (Class348_Sub40.aClass356_7041.method3480(l, -6008) as Class348_Sub13?)
+            return (Class348_Sub40.aClass356_7041!!.method3480(l, -6008) as Class348_Sub13?)
         }
 
         init {

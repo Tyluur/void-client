@@ -1,23 +1,23 @@
 import java.awt.datatransfer.Clipboard
 
 class Class348_Sub40_Sub27 : Class348_Sub40(3, false) {
-    override fun method3047(i: Int, i_0_: Int): Array<IntArray>? {
+    override fun method3047(i: Int, i_0_: Int): Array<IntArray?>? {
         if (i_0_ != -1564599039) return null
         anInt9356++
-        val `is` = this.aClass322_7033.method2557(-90, i)
-        if (this.aClass322_7033.aBoolean4035) {
-            val is_1_ = this.method3048(i, i_0_ + -2096661920, 2)
-            val is_2_ = this.method3039((-74).toByte(), i, 0)
-            val is_3_ = this.method3039((-58).toByte(), i, 1)
-            val is_4_ = `is`[0]
-            val is_5_ = `is`[1]
-            val is_6_ = `is`[2]
-            val is_7_ = is_2_[0]
-            val is_8_ = is_2_[1]
-            val is_9_ = is_2_[2]
-            val is_10_ = is_3_[0]
-            val is_11_ = is_3_[1]
-            val is_12_ = is_3_[2]
+        val `is` = this.aClass322_7033!!.method2557(-90, i)
+        if (this.aClass322_7033!!.aBoolean4035) {
+            val is_1_ = this.method3048(i, i_0_ + -2096661920, 2)!!
+            val is_2_ = this.method3039((-74).toByte(), i, 0)!!
+            val is_3_ = this.method3039((-58).toByte(), i, 1)!!
+            val is_4_ = `is`[0]!!
+            val is_5_ = `is`[1]!!
+            val is_6_ = `is`[2]!!
+            val is_7_ = is_2_[0]!!
+            val is_8_ = is_2_[1]!!
+            val is_9_ = is_2_[2]!!
+            val is_10_ = is_3_[0]!!
+            val is_11_ = is_3_[1]!!
+            val is_12_ = is_3_[2]!!
             var i_13_ = 0
             while ((i_13_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
                 val i_14_ = is_1_[i_13_]
@@ -44,11 +44,11 @@ class Class348_Sub40_Sub27 : Class348_Sub40(3, false) {
     override fun method3042(i: Int, i_16_: Int): IntArray? {
         if (i_16_ != 255) return null
         anInt9359++
-        val `is` = this.aClass191_7032.method1433(0, i)
-        if (this.aClass191_7032.aBoolean2570) {
-            val is_17_ = this.method3048(i, i_16_ xor 0x25c5979e, 0)
-            val is_18_ = this.method3048(i, 633706337, 1)
-            val is_19_ = this.method3048(i, i_16_ + 633706082, 2)
+        val `is` = this.aClass191_7032!!.method1433(0, i)
+        if (this.aClass191_7032!!.aBoolean2570) {
+            val is_17_ = this.method3048(i, i_16_ xor 0x25c5979e, 0)!!
+            val is_18_ = this.method3048(i, 633706337, 1)!!
+            val is_19_ = this.method3048(i, i_16_ + 633706082, 2)!!
             var i_20_ = 0
             while (Class348_Sub40_Sub6.Companion.anInt9139 > i_20_) {
                 val i_21_ = is_19_[i_20_]
