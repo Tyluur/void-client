@@ -192,13 +192,13 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                 synchronized(Class79.aClient1367) {
                     if (Class34.aFrame476 == null) {
                         val container: Container
-                        if (Class52.aFrame4904 != null) container = Class52.aFrame4904
+                        if (Class52.aFrame4904 != null) container = Class52.aFrame4904!!
                         else if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169!!
                         else container = Class93.anApplet1530
                         Class272.anInt3473 = container.getSize().width
                         Class348_Sub22.anInt6857 = container.getSize().height
                         if (Class52.aFrame4904 === container) {
-                            val insets = Class52.aFrame4904.getInsets()
+                            val insets = Class52.aFrame4904!!.getInsets()
                             Class272.anInt3473 -= insets.left - -insets.right
                             Class348_Sub22.anInt6857 -= insets.bottom + insets.top
                         }
@@ -219,7 +219,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                             else Class348_Sub8.aHa6654!!.method3669(Class305.aCanvas3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
                         }
                         if (Class52.aFrame4904 === container) {
-                            val insets = Class52.aFrame4904.getInsets()
+                            val insets = Class52.aFrame4904!!.getInsets()
                             Class305.aCanvas3869.setLocation(insets.left - -Class348_Sub48.anInt7129, Class335.anInt4167 + insets.top)
                         } else Class305.aCanvas3869.setLocation((Class348_Sub48.anInt7129), Class335.anInt4167)
                         if (r.anInt9721 != -1) method1713(true, 520)

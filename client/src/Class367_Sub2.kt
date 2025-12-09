@@ -134,14 +134,14 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                 if (string_8_ != null) {
                     var i = 0
                     while ((Class348_Sub42_Sub12.anInt9604 > i)) {
-                        var string_9_ = Class51.aStringArray932[i]
+                        var string_9_ = Class51.aStringArray932!![i]
                         if (string_9_!!.startsWith("*")) string_9_ = string_9_.substring(1)
                         string_9_ = method2127(2, string_9_)
                         if (string_9_ != null && string_9_ == string_8_) {
                             Class348_Sub42_Sub12.anInt9604--
                             var i_10_ = i
                             while (Class348_Sub42_Sub12.anInt9604 > i_10_) {
-                                Class51.aStringArray932[i_10_] = Class51.aStringArray932[i_10_ + 1]
+                                Class51.aStringArray932!![i_10_] = Class51.aStringArray932!![i_10_ + 1]
                                 Class122.aStringArray1808[i_10_] = Class122.aStringArray1808[1 + i_10_]
                                 Class348_Sub40_Sub21.aStringArray9275!![i_10_] = (Class348_Sub40_Sub21.aStringArray9275!![1 + i_10_])
                                 aa_Sub2.aStringArray5197!![i_10_] = aa_Sub2.aStringArray5197!![1 + i_10_]

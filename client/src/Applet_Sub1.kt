@@ -121,7 +121,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
             if (Class52.aFrame4904 == null) {
                 if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169!!
                 else container = Class93.anApplet1530
-            } else container = Class52.aFrame4904
+            } else container = Class52.aFrame4904 as Container
         } else container = Class34.aFrame476 as Container
         container.setLayout(null)
         Class305.aCanvas3869 = Canvas_Sub1(this)
@@ -129,7 +129,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
         Class305.aCanvas3869.setVisible(true)
         if (container === Class52.aFrame4904) {
-            val insets = Class52.aFrame4904.getInsets()
+            val insets = (Class52.aFrame4904 as Container).getInsets()
             Class305.aCanvas3869.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -Class335.anInt4167)
         } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
         Class305.aCanvas3869.addFocusListener(this)
@@ -173,7 +173,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
             Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
             Class305.aCanvas3869.setVisible(true)
             if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
-                val insets = Class52.aFrame4904.getInsets()
+                val insets = Class52.aFrame4904!!.getInsets()
                 Class305.aCanvas3869.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + Class335.anInt4167))
             } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
         }
@@ -256,8 +256,8 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         }
         method91(108.toByte())
         if (Class52.aFrame4904 != null) {
-            Class52.aFrame4904.setVisible(false)
-            Class52.aFrame4904.dispose()
+            Class52.aFrame4904!!.setVisible(false)
+            Class52.aFrame4904!!.dispose()
             Class52.aFrame4904 = null
         }
         println("Shutdown complete - clean:" + bool)
@@ -399,13 +399,13 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
             Class348_Sub1_Sub3.anInt8818 = i_21_
             Class348_Sub8.anApplet6662 = null
             Class52.aFrame4904 = Frame()
-            Class52.aFrame4904.setTitle("Jagex")
-            Class52.aFrame4904.setResizable(true)
-            Class52.aFrame4904.addWindowListener(this)
-            Class52.aFrame4904.setVisible(true)
-            Class52.aFrame4904.toFront()
-            val insets = Class52.aFrame4904.getInsets()
-            Class52.aFrame4904.setSize(insets.right + (insets.left + Class272.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)))
+            Class52.aFrame4904!!.setTitle("Jagex")
+            Class52.aFrame4904!!.setResizable(true)
+            Class52.aFrame4904!!.addWindowListener(this)
+            Class52.aFrame4904!!.setVisible(true)
+            Class52.aFrame4904!!.toFront()
+            val insets = Class52.aFrame4904!!.getInsets()
+            Class52.aFrame4904!!.setSize(insets.right + (insets.left + Class272.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)))
             Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
             Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
             val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, i_23_ + -33739, 1)

@@ -13,7 +13,7 @@ class dxVertexLayout internal constructor(class378: Class378, class58s: Array<Cl
             val class58 = class58s[i_0_]!!
             var i_2_ = 0
             while ((i_2_ < class58.method538((-126).toByte()))) {
-                val class325 = class58.method537(i_2_, 126)
+                val class325 = class58.method537(i_2_, 126)!!
                 if (Class325.aClass325_4073 == class325) vertexelementcollection.addElement(i_0_, 2, 0, 0, 0, i_1_)
                 else if (class325 == Class325.aClass325_4075) vertexelementcollection.addElement(i_0_, 2, 0, 3, 0, i_1_)
                 else if (Class325.aClass325_4076 != class325) {

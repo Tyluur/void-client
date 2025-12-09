@@ -990,7 +990,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
                 class285_sub1.method2125(0)
                 var i_80_ = 0
                 while ((i_80_ < class58.method538((-119).toByte()))) {
-                    val class325 = class58.method537(i_80_, -119)
+                    val class325 = class58.method537(i_80_, -119)!!
                     if (class325 == Class325.aClass325_4073) {
                         glVertexPointer(3, 5126, i_79_, i_78_.toLong() + l)
                         bool_76_ = true

@@ -116,7 +116,7 @@ object Class27 {
                 if (string_6_ != null) {
                     var i_7_ = 0
                     while ((i_7_ < Class348_Sub42_Sub12.anInt9604)) {
-                        val string_8_ = method2127(2, (Class51.aStringArray932[i_7_]))
+                        val string_8_ = method2127(2, (Class51.aStringArray932!![i_7_]))
                         if (string_8_ != null && string_8_ == string_6_) {
                             method544((string + (Class274.aClass274_3523.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                             return

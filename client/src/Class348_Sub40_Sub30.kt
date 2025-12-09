@@ -258,7 +258,7 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
                                     i_2_++
                                 }
                                 for (i_5_ in 0..<Class348_Sub42_Sub12.anInt9604) {
-                                    val string_6_ = (method2127(2, Class51.aStringArray932[i_5_]))
+                                    val string_6_ = (method2127(2, Class51.aStringArray932!![i_5_]))
                                     if (string_6_ != null && string_6_ == string_1_) {
                                         method544(((Class274.aClass274_3526.method2063(Class348_Sub33.anInt6967, 544)) + string + (Class274.aClass274_3527.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                                         return

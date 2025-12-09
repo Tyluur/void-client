@@ -97,7 +97,7 @@ class Class348_Sub9 : Class348() {
                     }
                 }
             } else {
-                val class51 = (this.aClass51_6695!!.method480(Class318_Sub1_Sub3_Sub3.aClass170_10209, 47.toByte()))
+                val class51 = (this.aClass51_6695!!.method480(Class318_Sub1_Sub3_Sub3.aClass170_10209!!, 47.toByte()))
                 if (class51 == null) {
                     this.anInt6681 = 256
                     this.aBoolean6674 = false

@@ -132,7 +132,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     var i_7_ = 0
                     while ((i_7_ < Class348_Sub42_Sub12.anInt9604)) {
                         if (Class122.aStringArray1808[i_7_] == string_6_) {
-                            Class51.aStringArray932[i_7_] = string
+                            Class51.aStringArray932!![i_7_] = string
                             Class122.aStringArray1808[i_7_] = string_4_
                             Class348_Sub40_Sub21.aStringArray9275!![i_7_] = string_5_
                             aa_Sub2.aStringArray5197!![i_7_] = string_6_
@@ -141,7 +141,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         i_7_++
                     }
                 } else {
-                    Class51.aStringArray932[Class348_Sub42_Sub12.anInt9604] = string
+                    Class51.aStringArray932!![Class348_Sub42_Sub12.anInt9604] = string
                     Class122.aStringArray1808[Class348_Sub42_Sub12.anInt9604] = string_4_
                     Class348_Sub40_Sub21.aStringArray9275!![(Class348_Sub42_Sub12.anInt9604)] = string_5_
                     aa_Sub2.aStringArray5197!![Class348_Sub42_Sub12.anInt9604] = string_6_
@@ -839,7 +839,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         val string: String?
                         if (bool_93_) {
                             i_91_ = i_91_ and 0x7fff
-                            val class43 = Class52.method490((-104).toByte(), (Class299.aClass348_Sub49_Sub2_3813))
+                            val class43 = Class52.method490((-104).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!))
                             i_95_ = class43.anInt615
                             string = (class43.aClass348_Sub42_Sub10_614!!.method3216(Class299.aClass348_Sub49_Sub2_3813, 119.toByte()))
                         } else string = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136(64.toByte(), Class299.aClass348_Sub49_Sub2_3813)), 23034))
@@ -1107,9 +1107,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub42_Sub12.anInt9604 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
                 var i = 0
                 while (Class348_Sub42_Sub12.anInt9604 > i) {
-                    Class51.aStringArray932[i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-36).toByte())
+                    Class51.aStringArray932!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-36).toByte())
                     Class122.aStringArray1808[i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(112.toByte())
-                    if (Class122.aStringArray1808[i] == "") Class122.aStringArray1808[i] = Class51.aStringArray932[i]
+                    if (Class122.aStringArray1808[i] == "") Class122.aStringArray1808[i] = Class51.aStringArray932!![i]
                     Class348_Sub40_Sub21.aStringArray9275!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(84.toByte())
                     aa_Sub2.aStringArray5197!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-111).toByte())
                     if (aa_Sub2.aStringArray5197!![i] == "") aa_Sub2.aStringArray5197!![i] = Class348_Sub40_Sub21.aStringArray9275!![i]
@@ -1164,7 +1164,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) Class239_Sub26.aClass54Array6114!![i] = Class54()
                 else {
                     Class299.aClass348_Sub49_Sub2_3813!!.anInt7197--
-                    Class239_Sub26.aClass54Array6114!![i] = Class54(Class299.aClass348_Sub49_Sub2_3813)
+                    Class239_Sub26.aClass54Array6114!![i] = Class54(Class299.aClass348_Sub49_Sub2_3813!!)
                 }
                 Class348_Sub3.aClass114_6584 = null
                 Class189.anInt2523 = Class311.anInt3918
