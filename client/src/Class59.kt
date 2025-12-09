@@ -175,7 +175,7 @@ abstract class Class59(i: Int, i_73_: Int, i_74_: Int, i_75_: Int, i_76_: Int) {
             Class358.aClass60_4417.method578(2, i)
             if (i_49_ != -1) aClass114_1068 = null
             Class239_Sub24.aClass60_6096!!.method578(2, i)
-            Class348_Sub40_Sub9.aClass60_9171.method578(i_49_ xor 0x2.inv(), i)
+            Class348_Sub40_Sub9.aClass60_9171!!.method578(i_49_ xor 0x2.inv(), i)
         }
 
         @JvmStatic

@@ -119,7 +119,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         val container: Container
         if (Class34.aFrame476 == null) {
             if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169
+                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169!!
                 else container = Class93.anApplet1530
             } else container = Class52.aFrame4904
         } else container = Class34.aFrame476
@@ -564,7 +564,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         }
 
         @JvmStatic
-        fun method94(string: String?, i: Int) {
+        fun method94(string: String, i: Int) {
             anInt6++
             if (Class286_Sub1.aStringArray6200 == null) Class14_Sub3.method249(2)
             Class286_Sub3.aCalendar6221!!.setTime(Date(Class62.method599(-102)))

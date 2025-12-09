@@ -66,16 +66,16 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             if (Class348_Sub40_Sub8.aClass238_9165 == null) return false
             if (Class348_Sub3.aClass114_6584 == null) {
                 if (Class108.aBoolean1661) {
-                    if (!Class348_Sub40_Sub8.aClass238_9165.method1705(1, 119)) return false
-                    Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, 6.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
+                    if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 119)) return false
+                    Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, 6.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
                     Class348_Sub50.anInt7213 = 0
                     Class108.aBoolean1661 = false
                     Class13.anInt221++
                 }
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                 if (Class299.aClass348_Sub49_Sub2_3813!!.method3404(-1510)) {
-                    if (!Class348_Sub40_Sub8.aClass238_9165.method1705(1, 119)) return false
-                    Class348_Sub40_Sub8.aClass238_9165.method1701(1, 1, 26.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
+                    if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 119)) return false
+                    Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 1, 26.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
                     Class13.anInt221++
                     Class348_Sub50.anInt7213 = 0
                 }
@@ -90,24 +90,24 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub40_Sub25.anInt9341 = Class348_Sub3.aClass114_6584!!.anInt1749
             }
             if (Class348_Sub40_Sub25.anInt9341 == -1) {
-                if (!Class348_Sub40_Sub8.aClass238_9165.method1705(1, 116)) return false
-                Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (-118).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
+                if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 116)) return false
+                Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-118).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
                 Class348_Sub40_Sub25.anInt9341 = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154[0]).toInt()
                 Class13.anInt221++
                 Class348_Sub50.anInt7213 = 0
             }
             if (Class348_Sub40_Sub25.anInt9341 == -2) {
-                if (!Class348_Sub40_Sub8.aClass238_9165.method1705(2, 120)) return false
-                Class348_Sub40_Sub8.aClass238_9165.method1701(2, 0, 127.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
+                if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(2, 120)) return false
+                Class348_Sub40_Sub8.aClass238_9165!!.method1701(2, 0, 127.toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                 Class348_Sub40_Sub25.anInt9341 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 Class13.anInt221 += 2
                 Class348_Sub50.anInt7213 = 0
             }
             if (Class348_Sub40_Sub25.anInt9341 > 0) {
-                if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class348_Sub40_Sub25.anInt9341, 104)) return false
+                if (!Class348_Sub40_Sub8.aClass238_9165!!.method1705(Class348_Sub40_Sub25.anInt9341, 104)) return false
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-                Class348_Sub40_Sub8.aClass238_9165.method1701(Class348_Sub40_Sub25.anInt9341, 0, (-123).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
+                Class348_Sub40_Sub8.aClass238_9165!!.method1701(Class348_Sub40_Sub25.anInt9341, 0, (-123).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
                 Class13.anInt221 += Class348_Sub40_Sub25.anInt9341
                 Class348_Sub50.anInt7213 = 0
             }
@@ -134,7 +134,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         if (Class122.aStringArray1808[i_7_] == string_6_) {
                             Class51.aStringArray932[i_7_] = string
                             Class122.aStringArray1808[i_7_] = string_4_
-                            Class348_Sub40_Sub21.aStringArray9275[i_7_] = string_5_
+                            Class348_Sub40_Sub21.aStringArray9275!![i_7_] = string_5_
                             aa_Sub2.aStringArray5197!![i_7_] = string_6_
                             break
                         }
@@ -143,7 +143,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 } else {
                     Class51.aStringArray932[Class348_Sub42_Sub12.anInt9604] = string
                     Class122.aStringArray1808[Class348_Sub42_Sub12.anInt9604] = string_4_
-                    Class348_Sub40_Sub21.aStringArray9275[(Class348_Sub42_Sub12.anInt9604)] = string_5_
+                    Class348_Sub40_Sub21.aStringArray9275!![(Class348_Sub42_Sub12.anInt9604)] = string_5_
                     aa_Sub2.aStringArray5197!![Class348_Sub42_Sub12.anInt9604] = string_6_
                     Class367_Sub3.aBooleanArray7304!![Class348_Sub42_Sub12.anInt9604] = Class139.method1166(i, 2) == 2
                     Class348_Sub42_Sub12.anInt9604++
@@ -390,7 +390,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             val i_46_ = (if (!bool_41_) npc.anInt10269 else npc.anInt10291)
                             if (i_38_ != -1 && i_46_ != -1) {
                                 if (i_46_ == i_38_) {
-                                    val class368 = Class348_Sub40_Sub18.aClass319_9245.method2543(55.toByte(), i_38_)
+                                    val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(55.toByte(), i_38_)
                                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                                         val class17 = (Class10.aClass87_191.method835(class368.anInt4503, 7))
                                         val i_47_ = class17.anInt248
@@ -399,8 +399,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                         } else bool_45_ = false
                                     }
                                 } else {
-                                    val class368 = Class348_Sub40_Sub18.aClass319_9245.method2543(105.toByte(), i_38_)
-                                    val class368_48_ = Class348_Sub40_Sub18.aClass319_9245.method2543(56.toByte(), i_46_)
+                                    val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(105.toByte(), i_38_)
+                                    val class368_48_ = Class348_Sub40_Sub18.aClass319_9245!!.method2543(56.toByte(), i_46_)
                                     if (class368.anInt4503 != -1 && (class368_48_.anInt4503 != -1)) {
                                         val class17 = (Class10.aClass87_191.method835(class368.anInt4503, 7))
                                         val class17_49_ = (Class10.aClass87_191.method835((class368_48_.anInt4503), 7))
@@ -420,7 +420,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                     npc.anInt10224 = 0
                                     if (npc.anInt10211 > Class367_Sub11.anInt7396) npc.anInt10224 = -1
                                     if (npc.anInt10291 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10211))) {
-                                        val i_51_ = (Class348_Sub40_Sub18.aClass319_9245.method2543(103.toByte(), (npc.anInt10291)).anInt4503)
+                                        val i_51_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(103.toByte(), (npc.anInt10291)).anInt4503)
                                         if (i_51_ != -1) {
                                             val class17 = Class10.aClass87_191.method835(i_51_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) Class287.method2178(npc, 0, class17, -17)
@@ -437,7 +437,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                     npc.anInt10283 = 1
                                     if (npc.anInt10225 > Class367_Sub11.anInt7396) npc.anInt10240 = -1
                                     if (npc.anInt10269 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10225))) {
-                                        val i_50_ = (Class348_Sub40_Sub18.aClass319_9245.method2543(87.toByte(), (npc.anInt10269)).anInt4503)
+                                        val i_50_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(87.toByte(), (npc.anInt10269)).anInt4503)
                                         if (i_50_ != -1) {
                                             val class17 = Class10.aClass87_191.method835(i_50_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(npc.aBoolean10309)) Class287.method2178(npc, 0, class17, -44)
@@ -457,7 +457,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             val i_54_ = (if (!bool_41_) player.anInt10269 else player.anInt10291)
                             if (i_38_ != -1 && i_54_ != -1) {
                                 if (i_38_ == i_54_) {
-                                    val class368 = Class348_Sub40_Sub18.aClass319_9245.method2543(111.toByte(), i_38_)
+                                    val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(111.toByte(), i_38_)
                                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                                         val class17 = (Class10.aClass87_191.method835(class368.anInt4503, 7))
                                         val i_57_ = class17.anInt248
@@ -466,8 +466,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                         } else bool_53_ = false
                                     }
                                 } else {
-                                    val class368 = Class348_Sub40_Sub18.aClass319_9245.method2543(105.toByte(), i_38_)
-                                    val class368_55_ = Class348_Sub40_Sub18.aClass319_9245.method2543(118.toByte(), i_54_)
+                                    val class368 = Class348_Sub40_Sub18.aClass319_9245!!.method2543(105.toByte(), i_38_)
+                                    val class368_55_ = Class348_Sub40_Sub18.aClass319_9245!!.method2543(118.toByte(), i_54_)
                                     if (class368.anInt4503 != -1 && class368_55_.anInt4503 != -1) {
                                         val class17 = (Class10.aClass87_191.method835(class368.anInt4503, 7))
                                         val class17_56_ = (Class10.aClass87_191.method835((class368_55_.anInt4503), 7))
@@ -488,7 +488,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                     if (player.anInt10211 > Class367_Sub11.anInt7396) player.anInt10224 = -1
                                     if (player.anInt10291 == 65535) player.anInt10291 = -1
                                     if ((player.anInt10291 != -1) && ((player.anInt10211) == Class367_Sub11.anInt7396)) {
-                                        val i_58_ = (Class348_Sub40_Sub18.aClass319_9245.method2543(45.toByte(), (player.anInt10291)).anInt4503)
+                                        val i_58_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(45.toByte(), (player.anInt10291)).anInt4503)
                                         if (i_58_ != -1) {
                                             val class17 = Class10.aClass87_191.method835(i_58_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) Class287.method2178(player, 0, class17, -120)
@@ -506,7 +506,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                     if (player.anInt10269 == 65535) player.anInt10269 = -1
                                     if (Class367_Sub11.anInt7396 < (player.anInt10225)) player.anInt10240 = -1
                                     if ((player.anInt10269 != -1) && (Class367_Sub11.anInt7396 == (player.anInt10225))) {
-                                        val i_59_ = (Class348_Sub40_Sub18.aClass319_9245.method2543(81.toByte(), (player.anInt10269)).anInt4503)
+                                        val i_59_ = (Class348_Sub40_Sub18.aClass319_9245!!.method2543(81.toByte(), (player.anInt10269)).anInt4503)
                                         if (i_59_ != -1) {
                                             val class17 = Class10.aClass87_191.method835(i_59_, 7)
                                             if (class17 != null && (class17.anIntArray237) != null && !(player.aBoolean10309)) Class287.method2178(player, 0, class17, -101)
@@ -1076,8 +1076,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 }
                 var i = 0
                 while (Class348_Sub32.anInt6930 > i) {
-                    Class348_Sub40_Sub23.aClass348_Sub22Array9319[i].aNpc_6859.anIntArray10236 = null
-                    Class348_Sub40_Sub23.aClass348_Sub22Array9319[i].aNpc_6859.anInt10286 = -1
+                    Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i]!!.aNpc_6859.anIntArray10236 = null
+                    Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i]!!.aNpc_6859.anInt10286 = -1
                     i++
                 }
                 Class348_Sub3.aClass114_6584 = null
@@ -1110,9 +1110,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     Class51.aStringArray932[i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-36).toByte())
                     Class122.aStringArray1808[i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(112.toByte())
                     if (Class122.aStringArray1808[i] == "") Class122.aStringArray1808[i] = Class51.aStringArray932[i]
-                    Class348_Sub40_Sub21.aStringArray9275[i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(84.toByte())
+                    Class348_Sub40_Sub21.aStringArray9275!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(84.toByte())
                     aa_Sub2.aStringArray5197!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-111).toByte())
-                    if (aa_Sub2.aStringArray5197!![i] == "") aa_Sub2.aStringArray5197!![i] = Class348_Sub40_Sub21.aStringArray9275[i]
+                    if (aa_Sub2.aStringArray5197!![i] == "") aa_Sub2.aStringArray5197!![i] = Class348_Sub40_Sub21.aStringArray9275!![i]
                     Class367_Sub3.aBooleanArray7304!![i] = false
                     i++
                 }
@@ -1428,11 +1428,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_184_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val i_185_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 Class318_Sub1_Sub1_Sub1.method2397((-125).toByte())
-                if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i] != null) {
+                if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i] != null) {
                     var i_186_ = i_184_
                     while (i_185_ > i_186_) {
                         val i_187_ = Class299.aClass348_Sub49_Sub2_3813!!.readMedium(-1)
-                        if ((Class348_Sub40_Sub33.aClass46ArrayArray9427[i]).size > i_186_ && (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_186_]) != null) Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_186_].anInt732 = i_187_
+                        if ((Class348_Sub40_Sub33.aClass46ArrayArray9427!![i])!!.size > i_186_ && (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!![i_186_]) != null) Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!![i_186_]!!.anInt732 = i_187_
                         i_186_++
                     }
                 }
@@ -1786,7 +1786,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
-            Class156.method1242(("T1 - " + (if (Class348_Sub3.aClass114_6584 == null) -1 else Class348_Sub3.aClass114_6584!!.method1058(110.toByte())) + "," + (if (Class239.aClass114_3145 == null) -1 else Class239.aClass114_3145!!.method1058(127.toByte())) + "," + (if (Class348_Sub40_Sub36.aClass114_9456 == null) -1 else Class348_Sub40_Sub36.aClass114_9456.method1058(125.toByte())) + " - " + Class348_Sub40_Sub25.anInt9341), null, 15004)
+            Class156.method1242(("T1 - " + (if (Class348_Sub3.aClass114_6584 == null) -1 else Class348_Sub3.aClass114_6584!!.method1058(110.toByte())) + "," + (if (Class239.aClass114_3145 == null) -1 else Class239.aClass114_3145!!.method1058(127.toByte())) + "," + (if (Class348_Sub40_Sub36.aClass114_9456 == null) -1 else Class348_Sub40_Sub36.aClass114_9456!!.method1058(125.toByte())) + " - " + Class348_Sub40_Sub25.anInt9341), null, 15004)
             Class348_Sub40_Sub34.method3141(false, 11.toByte())
             return true
         }

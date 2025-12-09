@@ -93,7 +93,7 @@ abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: Ogg
                     if (Class348_Sub8.aHa6654!!.method3693()) {
                         var bool_2_ = true
                         try {
-                            bool_2_ = (Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609) > 256
+                            bool_2_ = (Class348_Sub40_Sub20.aClass348_Sub4_9264!!.anInt6609) > 256
                         } catch (throwable: Throwable) {
                             /* empty */
                         }

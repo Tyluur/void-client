@@ -3036,7 +3036,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                     var bool_101_ = false
                     val strings = (Class348_Sub40_Sub23.method3113(' ', true, aString7790!!.replace('/', ' ')))
                     for (i_102_ in strings.indices) {
-                        var string = strings[i_102_]
+                        var string = strings[i_102_]!!
                         try {
                             if (string.length > 0) {
                                 if (string.get(0) == 'x' && string.length >= 3 && (Class50_Sub3.method468(string.substring(1, 3), 111))) {
@@ -3514,7 +3514,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                     anInt7686++
                     if (i.toInt() != 6) aClass351_7715 = null
                     if (class348_sub42_sub12 != null) {
-                        Class348_Sub40_Sub4.aClass262_9111.method1999(class348_sub42_sub12, -20180)
+                        Class348_Sub40_Sub4.aClass262_9111!!.method1999(class348_sub42_sub12, -20180)
                         Class73.anInt4776++
                         val `object`: Any? = null
                         var class348_sub42_sub13: Class348_Sub42_Sub13?

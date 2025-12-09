@@ -1,39 +1,43 @@
 /* Class348_Sub40_Sub13 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class348_Sub40_Sub13 extends Class348_Sub40 {
-    static Class262 aClass262_9201;
-    static int anInt9202;
-    static int anInt9203 = -1;
-    static float aFloat9204;
-
-    public static void method3080(byte i) {
-        aClass262_9201 = null;
-        if (i < 39) method3080((byte) 100);
-    }
-
-    public Class348_Sub40_Sub13() {
-        super(1, true);
-    }
-
-    final int[] method3042(int i, int i_0_) {
-        anInt9202++;
-        int[] is = this.aClass191_7032.method1433(i_0_ + -255, i);
-        if (i_0_ != 255) method3042(19, -84);
+* Visit http://jode.sourceforge.net/
+*/
+class Class348_Sub40_Sub13 : Class348_Sub40(1, true) {
+    override fun method3042(i: Int, i_0_: Int): IntArray {
+        anInt9202++
+        val `is` = this.aClass191_7032.method1433(i_0_ + -255, i)
+        if (i_0_ != 255) method3042(19, -84)
         if (this.aClass191_7032.aBoolean2570) {
-            int[][] is_1_ = this.method3039((byte) -119, i, 0);
-            int[] is_2_ = is_1_[0];
-            int[] is_3_ = is_1_[1];
-            int[] is_4_ = is_1_[2];
-            for (int i_5_ = 0; Class348_Sub40_Sub6.anInt9139 > i_5_; i_5_++)
-                is[i_5_] = (is_2_[i_5_] - (-is_3_[i_5_] - is_4_[i_5_])) / 3;
+            val is_1_ = this.method3039((-119).toByte(), i, 0)
+            val is_2_ = is_1_[0]
+            val is_3_ = is_1_[1]
+            val is_4_ = is_1_[2]
+            var i_5_ = 0
+            while (Class348_Sub40_Sub6.Companion.anInt9139 > i_5_) {
+                `is`[i_5_] = (is_2_[i_5_] - (-is_3_[i_5_] - is_4_[i_5_])) / 3
+                i_5_++
+            }
         }
-        return is;
+        return `is`
     }
 
-    static {
-        aClass262_9201 = new Class262();
-        aFloat9204 = 0.25F;
+    companion object {
+        @JvmField
+        var aClass262_9201: Class262?
+        @JvmField
+        var anInt9202: Int = 0
+        @JvmField
+        var anInt9203: Int = -1
+        var aFloat9204: Float
+
+        @JvmStatic
+        fun method3080(i: Byte) {
+            aClass262_9201 = null
+            if (i < 39) method3080(100.toByte())
+        }
+
+        init {
+            aClass262_9201 = Class262()
+            aFloat9204 = 0.25f
+        }
     }
 }

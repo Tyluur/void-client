@@ -107,7 +107,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : 
                     if (i >= 82) {
                         if (++Class169.anInt2264 > 2000) {
                             if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                                Class348_Sub40_Sub8.aClass238_9165.method1700(36.toByte())
+                                Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                                 Class348_Sub40_Sub8.aClass238_9165 = null
                             }
                             if (Class105_Sub1.anInt8398 >= 2) {
@@ -133,19 +133,19 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : 
                             Class367_Sub2.anInt7297 = 4
                         }
                         if (Class367_Sub2.anInt7297 == 4) {
-                            if (Class348_Sub40_Sub8.aClass238_9165.method1705(1, 104)) {
-                                Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (-116).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
+                            if (Class348_Sub40_Sub8.aClass238_9165!!.method1705(1, 104)) {
+                                Class348_Sub40_Sub8.aClass238_9165!!.method1701(1, 0, (-116).toByte(), (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154))
                                 val i_11_ = 0xff and (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154[0]).toInt()
                                 Class352.anInt4337 = i_11_
                                 Class367_Sub2.anInt7297 = 0
-                                Class348_Sub40_Sub8.aClass238_9165.method1700(36.toByte())
+                                Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                                 Class348_Sub40_Sub8.aClass238_9165 = null
                             }
                         }
                     }
                 } catch (ioexception: IOException) {
                     if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                        Class348_Sub40_Sub8.aClass238_9165.method1700(36.toByte())
+                        Class348_Sub40_Sub8.aClass238_9165!!.method1700(36.toByte())
                         Class348_Sub40_Sub8.aClass238_9165 = null
                     }
                     if (Class105_Sub1.anInt8398 < 2) {

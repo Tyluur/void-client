@@ -648,7 +648,7 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
                     val strings_36_ = (Class348_Sub40_Sub23.method3113(' ', true, aString9916!!.replace('/', ' ')))
                     var i_37_ = 0
                     while ((i_37_ < strings_36_.size)) {
-                        var string_38_ = strings_36_[i_37_]
+                        var string_38_ = strings_36_[i_37_]!!
                         try {
                             if (string_38_.length > 0) {
                                 if (string_38_.get(0) == 'x' && string_38_.length >= 3 && (Class50_Sub3.method468(string_38_.substring(1, 3), -115))) {

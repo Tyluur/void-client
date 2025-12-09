@@ -281,7 +281,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
                     if (i_35_ > Class327.anIntArray4097[i_15_]) Class327.anIntArray4097[i_15_] = i_35_
                     val i_36_ = i_19_ shl 9
                     if (i_36_ < Class156.anIntArray2117[i_15_]) Class156.anIntArray2117[i_15_] = i_36_
-                    else if (i_36_ > Class348_Sub40_Sub19.anIntArray9259[i_15_]) Class348_Sub40_Sub19.anIntArray9259[i_15_] = i_36_
+                    else if (i_36_ > Class348_Sub40_Sub19.anIntArray9259!![i_15_]) Class348_Sub40_Sub19.anIntArray9259!![i_15_] = i_36_
                     val i_37_ = i_22_ shl 9
                     if (i_37_ >= Class64.anIntArray1127!![i_15_]) {
                         if (Class56.anIntArray1045[i_15_] < i_37_) Class56.anIntArray1045[i_15_] = i_37_
@@ -346,7 +346,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
             if (Class327.anIntArray4097[i_15_] != -1000000) {
                 Class327.anIntArray4097[i_15_] += 40
                 Class156.anIntArray2117[i_15_] -= 512
-                Class348_Sub40_Sub19.anIntArray9259[i_15_] += 512
+                Class348_Sub40_Sub19.anIntArray9259!![i_15_] += 512
                 Class56.anIntArray1045[i_15_] += 512
                 Class64.anIntArray1127!![i_15_] -= 512
             }

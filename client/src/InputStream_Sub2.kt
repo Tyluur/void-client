@@ -86,7 +86,7 @@ class InputStream_Sub2 : InputStream() {
                 } else if (class74 == Class348_Sub35.aClass74_6977) {
                     val i_29_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     val i_30_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                    Class348_Sub40_Sub12.aClass263_9195.method2005(0, i_29_).method478(i_30_, -31076)
+                    Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, i_29_).method478(i_30_, -31076)
                 } else if (Class348_Sub16_Sub1.aClass74_8853 == class74) {
                     val i_31_ = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(i + 247)
                     val i_32_ = Class278.anInt3581 + ((i_31_ and 0x7b) shr 4)
@@ -163,7 +163,7 @@ class InputStream_Sub2 : InputStream() {
                         }
                         val class318_sub1_sub3_sub5 = (Class318_Sub1_Sub3_Sub5(i_60_, Class348_Sub40_Sub12.anInt9200, Class348_Sub40_Sub12.anInt9200, i_51_, i_52_, i_61_, i_63_ - -Class367_Sub11.anInt7396, i_64_ + Class367_Sub11.anInt7396, i_65_, i_66_, i_58_, i_59_, i_62_, bool, i_55_))
                         class318_sub1_sub3_sub5.method2471((-103).toByte(), (-i_62_ + Class275.method2064(i_56_, Class348_Sub40_Sub12.anInt9200, 11219, i_57_)), i_57_, i_63_ + Class367_Sub11.anInt7396, i_56_)
-                        Class348_Sub40_Sub17.aClass262_9240.method1999(Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180)
+                        Class348_Sub40_Sub17.aClass262_9240!!.method1999(Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180)
                     }
                 } else if (class74 == Class348_Sub42_Sub8_Sub2.aClass74_10437) {
                     val i_69_ = Class299.aClass348_Sub49_Sub2_3813!!.readShortAddLittle(-128)
@@ -276,7 +276,7 @@ class InputStream_Sub2 : InputStream() {
                             i_112_ = i_112_ shl 2
                             val class318_sub1_sub3_sub5 = (Class318_Sub1_Sub3_Sub5(i_111_, Class348_Sub40_Sub12.anInt9200, Class348_Sub40_Sub12.anInt9200, i_106_, i_107_, i_112_, i_114_ + Class367_Sub11.anInt7396, Class367_Sub11.anInt7396 + i_115_, i_116_, i_117_, 0, i_110_, i_113_, bool, -1))
                             class318_sub1_sub3_sub5.method2471((-103).toByte(), Class275.method2064(i_108_, (Class348_Sub40_Sub12.anInt9200), 11219, i_109_) + -i_113_, i_109_, i_114_ + Class367_Sub11.anInt7396, i_108_)
-                            Class348_Sub40_Sub17.aClass262_9240.method1999(Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180)
+                            Class348_Sub40_Sub17.aClass262_9240!!.method1999(Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180)
                         }
                     } else if (Class186.aClass74_2491 == class74) {
                         Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)

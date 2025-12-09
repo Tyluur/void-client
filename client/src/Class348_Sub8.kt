@@ -86,7 +86,7 @@ class Class348_Sub8 internal constructor(@JvmField var aByteArray6657: ByteArray
             val class364s = Class348_Sub40_Sub28.method3122(91.toByte())
             var i_6_ = 0
             while (class364s.size > i_6_) {
-                val class364 = class364s[i_6_]
+                val class364 = class364s[i_6_]!!
                 if (class364.anInt4466 == i_5_) return class364
                 i_6_++
             }

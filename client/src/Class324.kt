@@ -516,11 +516,11 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
             if (i != 1512932720) return null
             val i_46_ = i_45_ shr 16
             val i_47_ = i_45_ and 0xffff
-            if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_46_] == null || (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_46_][i_47_] == null)) {
+            if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_46_] == null || (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_46_]!![i_47_] == null)) {
                 val bool = Class320.method2547(i_46_, 84.toByte())
                 if (!bool) return null
             }
-            return Class348_Sub40_Sub33.aClass46ArrayArray9427[i_46_][i_47_]
+            return Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_46_]!![i_47_]
         }
 
         @JvmStatic
