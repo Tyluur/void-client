@@ -1,73 +1,81 @@
-/* Callback_Sub1 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import com.ms.awt.WComponentPeer
+import com.ms.dll.Callback
+import com.ms.dll.Root.alloc
+import com.ms.win32.User32
+import com.ms.win32.User32.CallWindowProc
+import com.ms.win32.User32.GetWindowLong
+import com.ms.win32.User32.LoadCursor
+import com.ms.win32.User32.SendMessage
+import com.ms.win32.User32.SetCursor
+import com.ms.win32.User32.SetCursorPos
+import com.ms.win32.User32.SetWindowLong
+import java.awt.Component
+import kotlin.concurrent.Volatile
 
-import com.ms.awt.WComponentPeer;
-import com.ms.dll.Callback;
-import com.ms.dll.Root;
-import com.ms.win32.User32;
+class Callback_Sub1 : Callback() {
+    @Volatile
+    private var aBoolean7460 = true
 
-import java.awt.*;
+    @Volatile
+    private var anInt7461 = 0
+    private var anInt7462 = 0
 
-public final class Callback_Sub1 extends Callback {
-    private volatile boolean aBoolean7460 = true;
-    private volatile int anInt7461;
-    private int anInt7462;
-    private volatile int anInt7463;
-    private boolean aBoolean7464;
+    @Volatile
+    private var anInt7463 = 0
+    private var aBoolean7464 = false
 
-    final void method3621(int i, byte i_0_, int i_1_) {
-        if (i_0_ >= 65) User32.SetCursorPos(i, i_1_);
+    fun method3621(i: Int, i_0_: Byte, i_1_: Int) {
+        if (i_0_ >= 65) SetCursorPos(i, i_1_)
     }
 
-    final void method3622(boolean bool, int i, Component component) {
-        WComponentPeer wcomponentpeer = (WComponentPeer) component.getPeer();
-        int i_2_ = wcomponentpeer.getTopHwnd();
+    fun method3622(bool: Boolean, i: Int, component: Component) {
+        val wcomponentpeer = component.getPeer() as WComponentPeer
+        val i_2_ = wcomponentpeer.getTopHwnd()
         if (i_2_ != anInt7461 || !bool == aBoolean7460) {
-            if (i != 13259) method3622(true, -90, null);
             if (!aBoolean7464) {
-                anInt7462 = User32.LoadCursor(0, 32512);
-                Root.alloc(this);
-                aBoolean7464 = true;
+                anInt7462 = LoadCursor(0, 32512)
+                alloc(this)
+                aBoolean7464 = true
             }
             if (anInt7461 != i_2_) {
                 if (anInt7461 != 0) {
-                    aBoolean7460 = true;
-                    User32.SendMessage(i_2_, 101024, 0, 0);
-                    synchronized (this) {
-                        User32.SetWindowLong(anInt7461, -4, anInt7463);
+                    aBoolean7460 = true
+                    SendMessage(i_2_, 101024, 0, 0)
+                    synchronized(this) {
+                        User32.SetWindowLong(anInt7461, -4, anInt7463)
                     }
                 }
-                synchronized (this) {
-                    anInt7461 = i_2_;
-                    anInt7463 = User32.SetWindowLong(anInt7461, -4, (Object) this);
+                synchronized(this) {
+                    anInt7461 = i_2_
+                    anInt7463 = SetWindowLong(anInt7461, -4, this as Any)
                 }
             }
-            aBoolean7460 = bool;
-            User32.SendMessage(i_2_, 101024, 0, 0);
+            aBoolean7460 = bool
+            SendMessage(i_2_, 101024, 0, 0)
         }
     }
 
-    final synchronized int method3623(int i, int i_3_, int i_4_, int i_5_) {
+    @Synchronized
+    fun method3623(i: Int, i_3_: Int, i_4_: Int, i_5_: Int): Int {
         if (i != anInt7461) {
-            int i_6_ = User32.GetWindowLong(i, -4);
-            return User32.CallWindowProc(i_6_, i, i_3_, i_4_, i_5_);
+            val i_6_ = GetWindowLong(i, -4)
+            return CallWindowProc(i_6_, i, i_3_, i_4_, i_5_)
         }
         if (i_3_ == 32) {
-            int i_7_ = 0xffff & i_5_;
+            val i_7_ = 0xffff and i_5_
             if (i_7_ == 1) {
-                User32.SetCursor(aBoolean7460 ? anInt7462 : 0);
-                return 0;
+                SetCursor(if (aBoolean7460) anInt7462 else 0)
+                return 0
             }
         }
         if (i_3_ == 101024) {
-            User32.SetCursor(!aBoolean7460 ? 0 : anInt7462);
-            return 0;
+            SetCursor(if (!aBoolean7460) 0 else anInt7462)
+            return 0
         }
         if (i_3_ == 1) {
-            anInt7461 = 0;
-            aBoolean7460 = true;
+            anInt7461 = 0
+            aBoolean7460 = true
         }
-        return User32.CallWindowProc(anInt7463, i, i_3_, i_4_, i_5_);
+        return CallWindowProc(anInt7463, i, i_3_, i_4_, i_5_)
     }
 }
