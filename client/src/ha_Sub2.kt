@@ -1512,7 +1512,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
 
     override fun method3710() {
         if (aClass348_Sub5_Sub1_7721 != null && aClass348_Sub5_Sub1_7721!!.method2760(1.toByte())) {
-            aClass18_7720!!.method278(aClass348_Sub5_Sub1_7721, true)
+            aClass18_7720!!.method278(aClass348_Sub5_Sub1_7721!!, true)
             aClass354_7723.method3463((-110).toByte())
         }
         anInt7612++
@@ -2103,7 +2103,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         anInt7670++
         if (aClass348_Sub5_Sub1_7721 != null) {
             if (!aClass348_Sub5_Sub1_7721!!.method2760(1.toByte())) {
-                if (!aClass18_7720!!.method274(aClass348_Sub5_Sub1_7721, true)) return false
+                if (!aClass18_7720!!.method274(aClass348_Sub5_Sub1_7721!!, true)) return false
                 aClass354_7723.method3463((-110).toByte())
             }
             return true

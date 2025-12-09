@@ -588,7 +588,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     var i_73_: Int
                     i_73_ = -1 + Class37.anInt496
                     while (i_73_ >= 0) {
-                        val i_74_ = Class169.aClass19Array2261[i_73_].aString312.compareTo(class19.aString312)
+                        val i_74_ = Class169.aClass19Array2261[i_73_].aString312!!.compareTo(class19.aString312!!)
                         if (i_74_ == 0) {
                             Class169.aClass19Array2261[i_73_].anInt308 = i
                             Class169.aClass19Array2261[i_73_].aByte310 = i_68_
@@ -1772,7 +1772,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     bool_235_ = true
                     var i_237_ = 0
                     while (i_236_ > i_237_) {
-                        if ((class19s[i_237_]!!.aString312.compareTo(class19s[1 + i_237_]!!.aString312)) > 0) {
+                        if ((class19s[i_237_]!!.aString312!!.compareTo(class19s[1 + i_237_]!!.aString312!!)) > 0) {
                             val class19 = class19s[i_237_]
                             class19s[i_237_] = class19s[i_237_ - -1]
                             class19s[1 + i_237_] = class19

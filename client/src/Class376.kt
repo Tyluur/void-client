@@ -147,8 +147,8 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
             anInt4547++
             val class148: Class148
             if (Class16.aClass148_231 != null) {
-                class148 = Class16.aClass148_231
-                Class16.aClass148_231 = Class16.aClass148_231.aClass148_2038
+                class148 = Class16.aClass148_231!!
+                Class16.aClass148_231 = Class16.aClass148_231!!.aClass148_2038
                 class148.aClass148_2038 = null
                 ha_Sub2.anInt7722--
             } else class148 = Class148()

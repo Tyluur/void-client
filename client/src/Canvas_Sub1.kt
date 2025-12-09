@@ -124,14 +124,14 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
             anInt62++
             if (i_17_.toInt() != -35) anInt70 = 10
             val l = i_16_.toLong()
-            var class64 = Class15.aClass60_225.method583(l, 81) as Class64?
+            var class64 = Class15.aClass60_225!!.method583(l, 81) as Class64?
             val i_18_ = 2055
             if (class64 == null) {
                 val class124 = Class300.method2277(0, aa_Sub3.aClass45_5207, i_16_, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 105)
                 class64 = var_ha.method3625(class124, i_18_, Class171.anInt2275, 64, 768)
-                Class15.aClass60_225.method582(class64, l, (-122).toByte())
+                Class15.aClass60_225!!.method582(class64, l, (-122).toByte())
             }
             class64 = class64.method614(2.toByte(), i_18_, true)
             if (i_15_ != 0) class64!!.a(i_15_)

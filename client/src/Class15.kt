@@ -1,34 +1,40 @@
 /* Class15 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+object Class15 {
+    @JvmField
+    var aClass60_225: Class60? = Class60(4)
+    @JvmField
+    var anInt226: Int = 0
+    @JvmField
+    var anInt227: Int = 0
+    @JvmField
+    var anInt228: Int = 0
+    var aClass114_229: Class114? = Class114(51, 17)
 
-public final class Class15 {
-    static Class60 aClass60_225 = new Class60(4);
-    static int anInt226;
-    static int anInt227;
-    static int anInt228;
-    static Class114 aClass114_229 = new Class114(51, 17);
-
-    public static void method255(int i) {
-        aClass60_225 = null;
-        if (i != 6725) aClass60_225 = null;
-        aClass114_229 = null;
+    @JvmStatic
+    fun method255(i: Int) {
+        aClass60_225 = null
+        if (i != 6725) aClass60_225 = null
+        aClass114_229 = null
     }
 
-    static final int method256(int i, byte i_0_) {
-        anInt228++;
-        if (i_0_ < 61) method257(-27, null, 'G');
-        return i >>> 7;
+    @JvmStatic
+    fun method256(i: Int, i_0_: Byte): Int {
+        anInt228++
+        return i ushr 7
     }
 
-    static final int method257(int i, String string, char c) {
-        anInt227++;
-        int i_1_ = 0;
-        if (i != 4) aClass114_229 = null;
-        int i_2_ = string.length();
-        for (int i_3_ = 0; i_2_ > i_3_; i_3_++) {
-            if (c == string.charAt(i_3_)) i_1_++;
+    fun method257(i: Int, string: String, c: Char): Int {
+        anInt227++
+        var i_1_ = 0
+        if (i != 4) aClass114_229 = null
+        val i_2_ = string.length
+        var i_3_ = 0
+        while (i_2_ > i_3_) {
+            if (c == string.get(i_3_)) i_1_++
+            i_3_++
         }
-        return i_1_;
+        return i_1_
     }
 }

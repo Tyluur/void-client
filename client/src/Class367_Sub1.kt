@@ -104,7 +104,7 @@ class Class367_Sub1 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
         fun method3535(i: Int, i_11_: Int) {
             Class171.anInt2275 = i
             anInt7282++
-            Class15.aClass60_225.method590(i_11_)
+            Class15.aClass60_225!!.method590(i_11_)
         }
     }
 }
