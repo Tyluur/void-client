@@ -1,17 +1,12 @@
 /* ba - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class ba internal constructor(var_oa: oa?) : r(), Interface19 {
+    var nativeid: Long = 0
 
-public final class ba extends r implements Interface19 {
-    long nativeid;
-
-    ba(oa var_oa) {
-        /* empty */
+    protected fun finalize() {
+        if (this.nativeid != 0L) Class257.method1947(0, this)
     }
 
-    protected final void finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this);
-    }
-
-    public final native void w(boolean bool);
+    external override fun w(bool: Boolean)
 }

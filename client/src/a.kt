@@ -1,159 +1,159 @@
 /* a - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Interface19 {
+    private val anI5105: i
+    var nativeid: Long = 0
+    private val anI5106: i
+    private val anI5107: i
+    private val anI5108: i
+    private val anI5109: i
+    private val anI5110: i
+    private val anI5111: i
+    var aRunnable5112: Runnable? = null
+    private val anI5113: i
+    private val anI5114: i
+    private val anI5116: i
 
-public final class a implements Interface19 {
-    private final i anI5105;
-    long nativeid;
-    private final i anI5106;
-    private final i anI5107;
-    private final i anI5108;
-    private final i anI5109;
-    private final i anI5110;
-    private final i anI5111;
-    Runnable aRunnable5112;
-    private final i anI5113;
-    private final i anI5114;
-    private final oa anOa5115;
-    private final i anI5116;
-
-    final void method142(s var_s, int i, int i_0_) {
-        H(this.nativeid, ((t) var_s).nativeid, i, i_0_);
+    fun method142(var_s: s, i: Int, i_0_: Int) {
+        H(this.nativeid, (var_s as t).nativeid, i, i_0_)
     }
 
-    private final native boolean R(long l, long l_1_, int i, int i_2_, long l_3_, boolean bool);
+    private external fun R(l: Long, l_1_: Long, i: Int, i_2_: Int, l_3_: Long, bool: Boolean): Boolean
 
-    final boolean method143(Class64 class64, int i, int i_4_, Class101 class101, boolean bool, int i_5_) {
-        return n(this.nativeid, ((i) class64).nativeid, i, i_4_, ((ja) class101).nativeid, bool, i_5_);
+    fun method143(class64: Class64, i: Int, i_4_: Int, class101: Class101?, bool: Boolean, i_5_: Int): Boolean {
+        return n(this.nativeid, (class64 as i).nativeid, i, i_4_, (class101 as ja).nativeid, bool, i_5_)
     }
 
-    final void method144(Class64 class64, Class64 class64_6_, int i, int i_7_, int i_8_, boolean bool) {
-        r(this.nativeid, ((i) class64).nativeid, ((i) class64_6_).nativeid, i, i_7_, i_8_, bool);
+    fun method144(class64: Class64, class64_6_: Class64?, i: Int, i_7_: Int, i_8_: Int, bool: Boolean) {
+        r(this.nativeid, (class64 as i).nativeid, (class64_6_ as i).nativeid, i, i_7_, i_8_, bool)
     }
 
-    private final native void E(long l, boolean bool);
+    private external fun E(l: Long, bool: Boolean)
 
-    private final native void e(long l, long l_9_, int[] is, long l_10_);
+    private external fun e(l: Long, l_9_: Long, `is`: IntArray?, l_10_: Long)
 
-    private final native void W(long l);
+    private external fun W(l: Long)
 
-    protected final void finalize() {
-        if (this.nativeid != 0L) Class257.method1947(0, this);
+    protected fun finalize() {
+        if (this.nativeid != 0L) Class257.method1947(0, this)
     }
 
-    final void method145(Class64 class64, Class101 class101, int[] is, int i) {
-        UA(this.nativeid, ((i) class64).nativeid, ((ja) class101).nativeid, is, i);
+    fun method145(class64: Class64?, class101: Class101, `is`: IntArray?, i: Int) {
+        UA(this.nativeid, (class64 as i).nativeid, (class101 as ja).nativeid, `is`, i)
     }
 
-    private final native boolean n(long l, long l_11_, int i, int i_12_, long l_13_, boolean bool, int i_14_);
+    private external fun n(l: Long, l_11_: Long, i: Int, i_12_: Int, l_13_: Long, bool: Boolean, i_14_: Int): Boolean
 
-    final boolean method146(Class64 class64, int i, int i_15_, Class101 class101, boolean bool) {
-        return R(this.nativeid, ((i) class64).nativeid, i, i_15_, ((ja) class101).nativeid, bool);
+    fun method146(class64: Class64, i: Int, i_15_: Int, class101: Class101?, bool: Boolean): Boolean {
+        return R(this.nativeid, (class64 as i).nativeid, i, i_15_, (class101 as ja).nativeid, bool)
     }
 
-    final void method147(s var_s, int i, int i_16_, int i_17_) {
-        Z(this.nativeid, ((t) var_s).nativeid, i, i_16_, i_17_);
+    fun method147(var_s: s, i: Int, i_16_: Int, i_17_: Int) {
+        Z(this.nativeid, (var_s as t).nativeid, i, i_16_, i_17_)
     }
 
-    public final void w(boolean bool) {
-        E(this.nativeid, bool);
+    override fun w(bool: Boolean) {
+        E(this.nativeid, bool)
     }
 
-    final void method148(s var_s, int i, int i_18_, int i_19_, int i_20_, int i_21_, int i_22_, int i_23_, boolean[][] bools) {
-        ta(this.nativeid, ((t) var_s).nativeid, i, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, bools);
+    fun method148(var_s: s, i: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bools: Array<BooleanArray?>?) {
+        ta(this.nativeid, (var_s as t).nativeid, i, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, bools)
     }
 
-    final void method149(Class64 class64, Class101 class101, int[] is, int i, int i_24_) {
-        f(this.nativeid, ((i) class64).nativeid, ((ja) class101).nativeid, is, i, i_24_);
+    fun method149(class64: Class64, class101: Class101?, `is`: IntArray?, i: Int, i_24_: Int) {
+        f(this.nativeid, (class64 as i).nativeid, (class101 as ja).nativeid, `is`, i, i_24_)
     }
 
-    private final native void na(long l, ha var_ha, int i, int i_25_, int i_26_, int i_27_, int i_28_, int i_29_, int i_30_);
+    private external fun na(l: Long, var_ha: ha?, i: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int)
 
-    private final native void O(long l, ha var_ha, int[] is, int[] is_31_, int[] is_32_, short[] is_33_, int i);
+    private external fun O(l: Long, var_ha: ha?, `is`: IntArray?, is_31_: IntArray?, is_32_: IntArray?, is_33_: ShortArray?, i: Int)
 
-    final void method150(ha var_ha, int i, int i_34_, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_) {
-        na(this.nativeid, var_ha, i, i_34_, i_35_, i_36_, i_37_, i_38_, i_39_);
+    fun method150(var_ha: ha?, i: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int) {
+        na(this.nativeid, var_ha, i, i_34_, i_35_, i_36_, i_37_, i_38_, i_39_)
     }
 
-    private final native void f(long l, long l_40_, long l_41_, int[] is, int i, int i_42_);
+    private external fun f(l: Long, l_40_: Long, l_41_: Long, `is`: IntArray?, i: Int, i_42_: Int)
 
-    private final native void r(long l, long l_43_, long l_44_, int i, int i_45_, int i_46_, boolean bool);
+    private external fun r(l: Long, l_43_: Long, l_44_: Long, i: Int, i_45_: Int, i_46_: Int, bool: Boolean)
 
-    final void method151(Class64 class64, int[] is, Class101 class101) {
-        e(this.nativeid, ((i) class64).nativeid, is, ((ja) class101).nativeid);
+    fun method151(class64: Class64, `is`: IntArray?, class101: Class101?) {
+        e(this.nativeid, (class64 as i).nativeid, `is`, (class101 as ja).nativeid)
     }
 
-    final Class64 method152(i var_i, byte i, int i_47_, boolean bool) {
-        i var_i_48_;
-        i var_i_49_;
-        if (i == 1) {
-            var_i_48_ = anI5110;
-            var_i_49_ = anI5106;
-        } else if (i == 2) {
-            var_i_48_ = anI5107;
-            var_i_49_ = anI5111;
-        } else if (i == 3) {
-            var_i_48_ = anI5109;
-            var_i_49_ = anI5108;
-        } else if (i == 4) {
-            var_i_48_ = anI5113;
-            var_i_49_ = anI5116;
-        } else if (i == 5) {
-            var_i_48_ = anI5114;
-            var_i_49_ = anI5105;
-        } else var_i_49_ = var_i_48_ = new i(anOa5115);
-        var_i.ZA(var_i_49_, var_i_48_, i_47_, i != 0, bool);
-        var_i_49_.aClass129Array5119 = var_i.aClass129Array5119;
-        var_i_49_.aClass342Array5118 = var_i.aClass342Array5118;
-        return var_i_49_;
+    fun method152(var_i: i, i: Byte, i_47_: Int, bool: Boolean): Class64 {
+        val var_i_48_: i
+        val var_i_49_: i
+        if (i.toInt() == 1) {
+            var_i_48_ = anI5110
+            var_i_49_ = anI5106
+        } else if (i.toInt() == 2) {
+            var_i_48_ = anI5107
+            var_i_49_ = anI5111
+        } else if (i.toInt() == 3) {
+            var_i_48_ = anI5109
+            var_i_49_ = anI5108
+        } else if (i.toInt() == 4) {
+            var_i_48_ = anI5113
+            var_i_49_ = anI5116
+        } else if (i.toInt() == 5) {
+            var_i_48_ = anI5114
+            var_i_49_ = anI5105
+        } else {
+            var_i_48_ = i(anOa5115)
+            var_i_49_ = var_i_48_
+        }
+        var_i.ZA(var_i_49_, var_i_48_, i_47_, i.toInt() != 0, bool)
+        var_i_49_.aClass129Array5119 = var_i.aClass129Array5119
+        var_i_49_.aClass342Array5118 = var_i.aClass342Array5118
+        return var_i_49_
     }
 
-    private final native void ta(long l, long l_50_, int i, int i_51_, int i_52_, int i_53_, int i_54_, int i_55_, int i_56_, boolean[][] bools);
+    private external fun ta(l: Long, l_50_: Long, i: Int, i_51_: Int, i_52_: Int, i_53_: Int, i_54_: Int, i_55_: Int, i_56_: Int, bools: Array<BooleanArray?>?)
 
-    private final native void Z(long l, long l_57_, int i, int i_58_, int i_59_);
+    private external fun Z(l: Long, l_57_: Long, i: Int, i_58_: Int, i_59_: Int)
 
-    private final void method153() {
-        W(this.nativeid);
+    private fun method153() {
+        W(this.nativeid)
     }
 
-    final void method154() {
-        this.aRunnable5112 = Thread.currentThread();
-        method157();
+    fun method154() {
+        this.aRunnable5112 = Thread.currentThread()
+        method157()
     }
 
-    private final native void M(long l);
+    private external fun M(l: Long)
 
-    private final native void H(long l, long l_60_, int i, int i_61_);
+    private external fun H(l: Long, l_60_: Long, i: Int, i_61_: Int)
 
-    private final native void UA(long l, long l_62_, long l_63_, int[] is, int i);
+    private external fun UA(l: Long, l_62_: Long, l_63_: Long, `is`: IntArray?, i: Int)
 
-    final void method155(ha var_ha, int[] is, int[] is_64_, int[] is_65_, short[] is_66_, int i) {
-        O(this.nativeid, var_ha, is, is_64_, is_65_, is_66_, i);
+    fun method155(var_ha: ha?, `is`: IntArray?, is_64_: IntArray?, is_65_: IntArray?, is_66_: ShortArray?, i: Int) {
+        O(this.nativeid, var_ha, `is`, is_64_, is_65_, is_66_, i)
     }
 
-    private final native void HA(long l, ha var_ha, int i, int i_67_);
+    private external fun HA(l: Long, var_ha: ha?, i: Int, i_67_: Int)
 
-    final void method156() {
-        this.aRunnable5112 = null;
-        method153();
+    fun method156() {
+        this.aRunnable5112 = null
+        method153()
     }
 
-    private final void method157() {
-        M(this.nativeid);
+    private fun method157() {
+        M(this.nativeid)
     }
 
-    a(oa var_oa, int i, int i_68_) {
-        anOa5115 = var_oa;
-        anI5106 = new i(anOa5115);
-        anI5111 = new i(anOa5115);
-        anI5108 = new i(anOa5115);
-        anI5116 = new i(anOa5115);
-        anI5105 = new i(anOa5115);
-        anI5110 = new i(anOa5115);
-        anI5107 = new i(anOa5115);
-        anI5109 = new i(anOa5115);
-        anI5113 = new i(anOa5115);
-        anI5114 = new i(anOa5115);
-        HA(this.nativeid, var_oa, i, i_68_);
+    init {
+        anI5106 = i(anOa5115)
+        anI5111 = i(anOa5115)
+        anI5108 = i(anOa5115)
+        anI5116 = i(anOa5115)
+        anI5105 = i(anOa5115)
+        anI5110 = i(anOa5115)
+        anI5107 = i(anOa5115)
+        anI5109 = i(anOa5115)
+        anI5113 = i(anOa5115)
+        anI5114 = i(anOa5115)
+        HA(this.nativeid, anOa5115, i, i_68_)
     }
 }

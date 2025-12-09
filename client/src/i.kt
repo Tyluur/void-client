@@ -194,10 +194,10 @@ class i : Class64, Interface19 {
     }
 
     public override fun method615(class101: Class101?, class318_sub3: Class318_Sub3?, i: Int) {
-        if (class318_sub3 == null) anOa5117.method3973()?.method145(this, class101, null, i)
+        if (class318_sub3 == null) anOa5117.method3973()?.method145(this, class101!!, null, i)
         else {
             oa.Companion.anIntArray5132[5] = 0
-            anOa5117.method3973()?.method145(this, class101, oa.Companion.anIntArray5132, i)
+            anOa5117.method3973()?.method145(this, class101!!, oa.Companion.anIntArray5132, i)
             class318_sub3.anInt6405 = oa.Companion.anIntArray5132[0]
             class318_sub3.anInt6402 = oa.Companion.anIntArray5132[1]
             class318_sub3.anInt6406 = oa.Companion.anIntArray5132[2]
