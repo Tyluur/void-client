@@ -3,7 +3,7 @@ import Class286_Sub3.Companion.method2152
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState
 
-class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState?) : Class348_Sub23(oggstreamstate) {
+class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) : Class348_Sub23(oggstreamstate) {
     private var aFloat9048 = 0f
     private var aString9051: String? = null
     private var anInt9054 = 0

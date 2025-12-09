@@ -79,7 +79,7 @@ abstract class Class101 {
                 var i_8_ = (-(Class348_Sub40_Sub3.anInt9109 shr 4) + i_5_) / 8
                 while (((i_5_ + (Class348_Sub40_Sub3.anInt9109 shr 4)) / 8 >= i_8_)) {
                     val i_9_ = i_8_ + (i_7_ shl 8)
-                    Class348_Sub23_Sub3.anIntArray9042[i_6_] = i_9_
+                    Class348_Sub23_Sub3.anIntArray9042!![i_6_] = i_9_
                     aa_Sub1.anIntArray5192!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
                     Applet_Sub1.anIntArray38!![i_6_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
                     Class322.anIntArray4031[i_6_] = Class367_Sub10.aClass45_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)

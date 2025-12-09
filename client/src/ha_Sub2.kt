@@ -1360,7 +1360,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 glVertex2f(i_141_.toFloat() + f, f_144_)
                 var i_147_ = 16384 + -i_146_
                 while (i_147_ > 0) {
-                    glVertex2f(i_141_.toFloat() * (Class348_Sub23.aFloatArray6867[i_147_]) + f, i_141_.toFloat() * (Class348_Sub23.aFloatArray6865[i_147_]) + f_144_)
+                    glVertex2f(i_141_.toFloat() * (Class348_Sub23.aFloatArray6867!![i_147_]) + f, i_141_.toFloat() * (Class348_Sub23.aFloatArray6865!![i_147_]) + f_144_)
                     i_147_ -= i_146_
                 }
                 glVertex2f(f + i_141_.toFloat(), f_144_)

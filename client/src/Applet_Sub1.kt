@@ -249,7 +249,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         }
         if (Class348_Sub23_Sub1.aClass297_8992 != null) {
             try {
-                Class348_Sub23_Sub1.aClass297_8992.method2234(103.toByte())
+                Class348_Sub23_Sub1.aClass297_8992!!.method2234(103.toByte())
             } catch (exception: Exception) {
                 /* empty */
             }
@@ -372,7 +372,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530
                 Class348_Sub23_Sub1.aClass297_8992 = Class297(i_17_, string, i_18_, Class93.anApplet1530 != null)
                 Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-                val class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, -10240, 1)
+                val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, -10240, 1)
                 if (i_19_ != 50) anInt37 = -13
                 while (class144.anInt1997 == 0) Class286_Sub5.method2161((-126).toByte(), 10L)
             } else {
@@ -408,7 +408,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
             Class52.aFrame4904.setSize(insets.right + (insets.left + Class272.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)))
             Class348_Sub23_Sub1.aClass297_8992 = Class297(i, string, i_22_, true)
             Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992
-            val class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, i_23_ + -33739, 1)
+            val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2236(this, i_23_ + -33739, 1)
             while (class144.anInt1997 == 0) Class286_Sub5.method2161(21.toByte(), 10L)
         } catch (exception: Exception) {
             Class156.method1242(null, exception, i_23_ + -8495)

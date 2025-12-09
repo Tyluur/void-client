@@ -4,18 +4,18 @@ import jagtheora.ogg.OggStreamState
 import kotlin.math.cos
 import kotlin.math.sin
 
-abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: OggStreamState?) : Class348() {
+abstract class Class348_Sub23 internal constructor(var anOggStreamState6869: OggStreamState) : Class348() {
     var anInt6868: Int = 0
     abstract fun method2961(i: Byte)
 
-    fun method2963(oggpacket: OggPacket?, i: Int) {
+    fun method2963(oggpacket: OggPacket, i: Int) {
         method2964((-120).toByte(), oggpacket)
         if (i != 16384) aFloatArray6867 = null
         anInt6863++
         this.anInt6868++
     }
 
-    abstract fun method2964(i: Byte, oggpacket: OggPacket?)
+    abstract fun method2964(i: Byte, oggpacket: OggPacket)
 
     companion object {
         @JvmField

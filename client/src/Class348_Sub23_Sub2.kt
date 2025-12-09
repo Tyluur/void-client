@@ -2,7 +2,7 @@ import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState
 import jagtheora.theora.*
 
-class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState?) : Class348_Sub23(oggstreamstate) {
+class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState) : Class348_Sub23(oggstreamstate) {
     private var aTheoraInfo9007: TheoraInfo?
     private var aBoolean9008 = false
     private var anInt9009 = 0
@@ -95,11 +95,11 @@ class Class348_Sub23_Sub2 internal constructor(oggstreamstate: OggStreamState?) 
                 aDecoderContext9032!!.granuleFrame(aGranulePos9019)
                 aDouble9015 = aDecoderContext9032!!.granuleTime(aGranulePos9019)
                 if (aBoolean9008) {
-                    val bool = oggpacket.isKeyFrame == 1
+                    val bool = oggpacket!!.isKeyFrame == 1
                     if (bool) aBoolean9008 = false
                     else return
                 }
-                if (!aBoolean9028 || oggpacket.isKeyFrame == 1) {
+                if (!aBoolean9028 || oggpacket!!.isKeyFrame == 1) {
                     check(aDecoderContext9032!!.decodeFrame(aFrame9024) == 0) { i_1_.toString() }
                     aBoolean9014 = true
                 }

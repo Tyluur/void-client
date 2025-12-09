@@ -836,11 +836,11 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             Class65.aClass357ArrayArrayArray1148 = null
             Class348_Sub1_Sub1.aSArray8801 = null
             if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) {
-                for (i in Class348_Sub31_Sub2.aClass357ArrayArrayArray9082.indices) {
+                for (i in Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!!.indices) {
                     for (i_82_ in 0..<Class318_Sub7.anInt6451) {
                         for (i_83_ in 0..<Class348_Sub41.anInt7054) {
-                            if ((Class348_Sub31_Sub2.aClass357ArrayArrayArray9082[i][i_82_][i_83_]) != null) Class348_Sub31_Sub2.aClass357ArrayArrayArray9082[i][i_82_][i_83_].method3485(true)
-                            Class348_Sub31_Sub2.aClass357ArrayArrayArray9082[i][i_82_][i_83_] = null
+                            if ((Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_]) != null) Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_]!!.method3485(true)
+                            Class348_Sub31_Sub2.aClass357ArrayArrayArray9082!![i]!![i_82_]!![i_83_] = null
                         }
                     }
                 }

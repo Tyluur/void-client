@@ -27,7 +27,7 @@ abstract class Class55(i: Int) {
             if (class348_sub23 is Class348_Sub23_Sub4) {
                 val class348_sub23_sub4 = class348_sub23
                 while (class348_sub23_sub4.anInt6868 <= 8 || (method519(i xor 0x7b2) > class348_sub23_sub4.method2984(97.toByte()).toDouble())) {
-                    if (class348_sub23_sub4.anOggStreamState6869.packetOut(anOggPacket993) != 1) break
+                    if (class348_sub23_sub4.anOggStreamState6869!!.packetOut(anOggPacket993) != 1) break
                     class348_sub23_sub4.method2963(anOggPacket993, i + 14385)
                 }
             }
@@ -39,7 +39,7 @@ abstract class Class55(i: Int) {
     @Throws(IOException::class)
     private fun method505(i: Byte) {
         anInt996++
-        while (aClass348_Sub23_Sub2_1001!!.anOggStreamState6869.packetOut(anOggPacket993) != 1) {
+        while (aClass348_Sub23_Sub2_1001!!.anOggStreamState6869!!.packetOut(anOggPacket993) != 1) {
             val class348_sub23 = method521(1)
             if (class348_sub23 == null) {
                 if (aBoolean991) method511(-2)
@@ -73,7 +73,7 @@ abstract class Class55(i: Int) {
             if (i != 1) aBoolean991 = true
             while ( /**/class348_sub23 != null) {
                 class348_sub23.method2961(13.toByte())
-                class348_sub23.anOggStreamState6869.a()
+                class348_sub23.anOggStreamState6869!!.a()
                 class348_sub23 = aClass356_1011.method3482(i xor 0x1) as Class348_Sub23?
             }
             anOggPacket993.a()
@@ -118,7 +118,7 @@ abstract class Class55(i: Int) {
         var class348_sub23 = aClass356_1011.method3484(0) as Class348_Sub23?
         while (class348_sub23 != null) {
             if (class348_sub23 !== aClass348_Sub23_Sub2_1001) {
-                while (class348_sub23.anOggStreamState6869.packetOut() == 1) class348_sub23.method2963(anOggPacket993, i xor 0x4001.inv())
+                while (class348_sub23.anOggStreamState6869!!.packetOut() == 1) class348_sub23.method2963(anOggPacket993, i xor 0x4001.inv())
             }
             class348_sub23 = aClass356_1011.method3482(i + 2) as Class348_Sub23?
         }
@@ -179,7 +179,7 @@ abstract class Class55(i: Int) {
                     } else class348_sub23 = ((aClass356_1011.method3480(anOggPage981!!.serialNumber.toLong(), -6008)) as Class348_Sub23?)
                     if (aClass348_Sub23_Sub1_1008 == class348_sub23) {
                         if (aClass348_Sub23_Sub1_1008!!.method2969(-11020) >= 50) break
-                        while (aClass348_Sub23_Sub1_1008!!.anOggStreamState6869.packetOut(anOggPacket993) == 1) {
+                        while (aClass348_Sub23_Sub1_1008!!.anOggStreamState6869!!.packetOut(anOggPacket993) == 1) {
                             aClass348_Sub23_Sub1_1008!!.method2963(anOggPacket993, i + 16386)
                             method504(1999)
                             if (aClass348_Sub23_Sub2_1001 != null) {

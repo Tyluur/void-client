@@ -7,7 +7,7 @@ import jagtheora.vorbis.VorbisComment
 import jagtheora.vorbis.VorbisInfo
 import java.net.URL
 
-class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState?) : Class348_Sub23(oggstreamstate) {
+class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState) : Class348_Sub23(oggstreamstate) {
     private var aDSPState8993: DSPState? = null
     private var aClass163_8994: Class163? = null
     private var aClass348_Sub16_Sub2_8995: Class348_Sub16_Sub2? = null
@@ -55,7 +55,7 @@ class Class348_Sub23_Sub1 internal constructor(oggstreamstate: OggStreamState?) 
         if (aClass348_Sub16_Sub2_8995 != null) aClass348_Sub16_Sub2_8995!!.method2836(-1)
     }
 
-    override fun method2964(i: Byte, oggpacket: OggPacket?) {
+    override fun method2964(i: Byte, oggpacket: OggPacket) {
         anInt8990++
         if (this.anInt6868 < 3) {
             val i_7_ = aVorbisInfo9006.headerIn(aVorbisComment9002, oggpacket)

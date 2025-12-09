@@ -3,8 +3,8 @@ import jagtheora.ogg.OggStreamState
 import java.io.IOException
 import java.net.Socket
 
-class Class348_Sub23_Sub3 internal constructor(oggstreamstate: OggStreamState?) : Class348_Sub23(oggstreamstate) {
-    override fun method2964(i: Byte, oggpacket: OggPacket?) {
+class Class348_Sub23_Sub3 internal constructor(oggstreamstate: OggStreamState) : Class348_Sub23(oggstreamstate) {
+    override fun method2964(i: Byte, oggpacket: OggPacket) {
         if (i >= -91) anInt9041 = -51
         anInt9046++
     }
@@ -20,7 +20,7 @@ class Class348_Sub23_Sub3 internal constructor(oggstreamstate: OggStreamState?) 
         @JvmField
         var anInt9041: Int = 0
         @JvmField
-        var anIntArray9042: IntArray?
+        var anIntArray9042: IntArray? = null
         @JvmField
         var aString9043: String? = null
         @JvmField

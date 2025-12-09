@@ -30,7 +30,7 @@ abstract class Class50(@JvmField var anInt864: Int, @JvmField var anInt865: Int,
                 if (bool != false) return null
                 glProgramStringARB(i, 34933, string)
                 glGetIntegerv(34379, Class348_Sub31_Sub2.anIntArray9069, 0)
-                if (Class348_Sub31_Sub2.anIntArray9069[0] != -1) {
+                if (Class348_Sub31_Sub2.anIntArray9069!![0] != -1) {
                     glBindProgramARB(i, 0)
                     return null
                 }

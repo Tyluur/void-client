@@ -211,7 +211,7 @@ class Class299_Sub1_Sub2 internal constructor(var_ha_Sub2: ha_Sub2, i: Int) : Cl
             if (class348_sub15 != null) {
                 val class348_sub23_sub2 = class348_sub15.aClass55_Sub1_6768.method506(false)
                 class348_sub15.aBoolean6772 = true
-                if (class348_sub23_sub2 != null) return class348_sub23_sub2.method2975(var_ha, 0)
+                if (class348_sub23_sub2 != null) return class348_sub23_sub2.method2975(var_ha!!, 0)
             }
             if (i != 0) aClass351_8706 = null
             return null
