@@ -160,9 +160,9 @@ class Class88 {
                         Class225.anInt2955 = 2
                     }
                     if (Class225.anInt2955 == 2) {
-                        if (Class130_Sub1.aClass144_5800.anInt1997 == 2) throw IOException()
-                        if (Class130_Sub1.aClass144_5800.anInt1997 != 1) return
-                        Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982((((Class130_Sub1.aClass144_5800.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
+                        if (Class130_Sub1.aClass144_5800!!.anInt1997 == 2) throw IOException()
+                        if (Class130_Sub1.aClass144_5800!!.anInt1997 != 1) return
+                        Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982((((Class130_Sub1.aClass144_5800!!.anObject1998) as Socket?)!!), (-118).toByte(), 7500)
                         Class130_Sub1.aClass144_5800 = null
                         method2739(0)
                         val class348_sub47 = Class203.method1478(true)
