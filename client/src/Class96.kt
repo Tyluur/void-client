@@ -1,22 +1,19 @@
-/* Class96 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import Class348_Sub40_Sub19.Companion.method3098
+import Class9.method215
+import java.awt.Canvas
 
-import java.awt.*;
-import java.lang.reflect.Method;
-
-public final class Class96 {
-    static final ha method870(int i, int i_0_, d var_d, Class45 class45, Canvas canvas) {
-        if (i_0_ != 18993) return null;
-        ha var_ha;
+object Class96 {
+    fun method870(i: Int, i_0_: Int, var_d: d, class45: Class45, canvas: Canvas): ha? {
+        if (i_0_ != 18993) return null
+        val var_ha: ha
         try {
-            if (!Class9.method215(27165)) throw new RuntimeException("");
-            if (!Class348_Sub40_Sub19.method3098(-30282, "jagdx")) throw new RuntimeException("");
-            Method method = (Class378.class.getDeclaredMethod("createToolkit", Canvas.class, d.class, Class45.class, Integer.class));
-            var_ha = (ha) method.invoke(null, new Object[]{canvas, var_d, class45, new Integer(i)});
-        } catch (Throwable throwable) {
-            throw new RuntimeException("");
+            if (!method215(27165)) throw RuntimeException("")
+            if (!method3098(-30282, "jagdx")) throw RuntimeException("")
+            val method = (Class378::class.java.getDeclaredMethod("createToolkit", Canvas::class.java, d::class.java, Class45::class.java, Int::class.java))
+            var_ha = method.invoke(null, *arrayOf(canvas, var_d, class45, i)) as ha
+        } catch (throwable: Throwable) {
+            throw RuntimeException("")
         }
-        return var_ha;
+        return var_ha
     }
 }

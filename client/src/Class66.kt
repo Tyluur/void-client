@@ -2783,8 +2783,8 @@ object Class66 {
                             return
                         }
                     }
-                    for (i_261_ in Class91.anIntArray1521.indices) {
-                        if (Class91.anIntArray1521[i_261_] == i_258_) {
+                    for (i_261_ in Class91.anIntArray1521!!.indices) {
+                        if (Class91.anIntArray1521!![i_261_] == i_258_) {
                             Class132.aPlayer_1907.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_261_)
                             break
                         }

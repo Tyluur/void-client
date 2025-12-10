@@ -108,7 +108,7 @@ class Class40 internal constructor() {
                 Class285.aClass348_Sub16_Sub3_4743 = null
                 Class318.anInt3971 = i_2_
                 Class58.anInt1059 = i
-                Class239_Sub14.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564.method2844(103.toByte()) / i_3_)
+                Class239_Sub14.anInt5994 = (Class98.aClass348_Sub16_Sub3_1564!!.method2844(103.toByte()) / i_3_)
                 if (Class239_Sub14.anInt5994 < 1) Class239_Sub14.anInt5994 = 1
             } else method2732(i_2_, i_1_, bool, 123, class45, i)
         }

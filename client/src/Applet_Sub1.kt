@@ -26,7 +26,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
     override fun getParameter(string: String?): String? {
         anInt3++
         if (Class52.aFrame4904 != null) return null
-        if (Class93.anApplet1530 != null && Class93.anApplet1530 !== this) return Class93.anApplet1530.getParameter(string)
+        if (Class93.anApplet1530 != null && Class93.anApplet1530 !== this) return Class93.anApplet1530!!.getParameter(string)
         return super.getParameter(string)
     }
 
@@ -99,7 +99,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
     override fun getDocumentBase(): URL? {
         anInt30++
         if (Class52.aFrame4904 != null) return null
-        if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530.getDocumentBase()
+        if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getDocumentBase()
         return super.getDocumentBase()
     }
 
@@ -120,7 +120,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         if (Class34.aFrame476 == null) {
             if (Class52.aFrame4904 == null) {
                 if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169!!
-                else container = Class93.anApplet1530
+                else container = Class93.anApplet1530!!
             } else container = Class52.aFrame4904 as Container
         } else container = Class34.aFrame476 as Container
         container.setLayout(null)
@@ -222,7 +222,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
             Class26.aBoolean384 = true
         }
         println("Shutdown start - clean:" + bool)
-        if (Class93.anApplet1530 != null) Class93.anApplet1530.destroy()
+        if (Class93.anApplet1530 != null) Class93.anApplet1530!!.destroy()
         if (bool_4_ != false) aBoolean17 = false
         try {
             method80(0)
@@ -268,14 +268,14 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
     override fun getAppletContext(): AppletContext? {
         anInt19++
         if (Class52.aFrame4904 != null) return null
-        if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530.getAppletContext()
+        if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getAppletContext()
         return super.getAppletContext()
     }
 
     override fun getCodeBase(): URL? {
         anInt29++
         if (Class52.aFrame4904 != null) return null
-        if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530.getCodeBase()
+        if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getCodeBase()
         return super.getCodeBase()
     }
 

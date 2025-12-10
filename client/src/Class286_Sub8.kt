@@ -142,7 +142,7 @@ class Class286_Sub8 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
             anInt6295++
             if (Class93.anApplet1530 != null) {
                 try {
-                    val string = Class93.anApplet1530.getParameter("cookiehost")
+                    val string = Class93.anApplet1530!!.getParameter("cookiehost")
                     val i_3_ = (Class62.method599(-74) / 86400000L).toInt() - 11745
                     val string_4_ = ("usrdob=" + i_3_ + "; version=1; path=/; domain=" + string)
                     Class224.method1615(Class93.anApplet1530, -15092, "document.cookie=\"" + string_4_ + "\"")

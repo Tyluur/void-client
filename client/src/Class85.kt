@@ -195,8 +195,8 @@ class Class85 {
                 } else if (Class348_Sub49.anInt7207 == 1 && (Class92.anInterface4Array1525 == null || i_15_ != Class31.anInt425 || i_16_ != Class250.anInt3225)) {
                     Class92.anInterface4Array1525 = arrayOfNulls<Interface4>(Class250.anInt3225 * Class31.anInt425)
                     var i_17_ = 0
-                    while (Class92.anInterface4Array1525.size > i_17_) {
-                        Class92.anInterface4Array1525[i_17_] = (Class21.aHa326!!.method3634(Class21.aHa326!!.method3665(Class58.anInt1067, Class344.anInt4267), Class21.aHa326!!.method3624(Class58.anInt1067, Class344.anInt4267)))
+                    while (Class92.anInterface4Array1525!!.size > i_17_) {
+                        Class92.anInterface4Array1525!![i_17_] = (Class21.aHa326!!.method3634(Class21.aHa326!!.method3665(Class58.anInt1067, Class344.anInt4267), Class21.aHa326!!.method3624(Class58.anInt1067, Class344.anInt4267)))
                         i_17_++
                     }
                     Class132.anIntArray1909 = IntArray(Class31.anInt425 * Class250.anInt3225)

@@ -46,7 +46,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
     override fun method2378(i: Int): Boolean {
         anInt8757++
         if (i != 0) method2378(-104)
-        return (Class99.aBooleanArrayArray1572[(-Class239_Sub25.anInt6111 + (this.x shr Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)][(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class285_Sub2.anInt8502 + (this.y shr Class362.anInt4459))])
+        return (Class99.aBooleanArrayArray1572!![(-Class239_Sub25.anInt6111 + (this.x shr Class362.anInt4459) + Class318_Sub1_Sub4_Sub1.anInt10084)]!![(Class318_Sub1_Sub4_Sub1.anInt10084 + -Class285_Sub2.anInt8502 + (this.y shr Class362.anInt4459))])
     }
 
     companion object {

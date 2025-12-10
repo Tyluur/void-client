@@ -116,7 +116,7 @@ class Class258_Sub1 : Class258 {
                         }
                         if (i_29_ > 0 && i_32_ > 0) {
                             val i_39_ = (Class171.anIntArray2272[i_32_ - 1] and Class171.anIntArray2272[i_32_] and i_30_ and i_31_)
-                            Class99.aBooleanArrayArray1572[i_29_ - 1][i_32_ - 1] = i_39_ == 0
+                            Class99.aBooleanArrayArray1572!![i_29_ - 1]!![i_32_ - 1] = i_39_ == 0
                         }
                     }
                     Class171.anIntArray2272[(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084)] = i_30_
@@ -137,7 +137,7 @@ class Class258_Sub1 : Class258 {
                     for (i_41_ in Class369_Sub3.aBooleanArrayArray8596!![0]!!.indices) Class369_Sub3.aBooleanArrayArray8596!![i_40_]!![i_41_] = true
                 }
                 Class348_Sub8.aBooleanArrayArray6656 = Class369_Sub3.aBooleanArrayArray8596
-                Class99.aBooleanArrayArray1572 = Class369_Sub3.aBooleanArrayArray8596
+                Class99.aBooleanArrayArray1572 = Class369_Sub3.aBooleanArrayArray8596!!
                 Class37.anInt492 = 0
                 Class348_Sub34.anInt6974 = 0
                 Class27.anInt387 = Class318_Sub7.anInt6451

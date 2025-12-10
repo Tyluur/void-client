@@ -194,7 +194,7 @@ class Class367_Sub11 internal constructor(class377: Class377, class45: Class45?)
                         val container: Container
                         if (Class52.aFrame4904 != null) container = Class52.aFrame4904!!
                         else if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169!!
-                        else container = Class93.anApplet1530
+                        else container = Class93.anApplet1530!!
                         Class272.anInt3473 = container.getSize().width
                         Class348_Sub22.anInt6857 = container.getSize().height
                         if (Class52.aFrame4904 === container) {

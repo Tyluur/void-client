@@ -169,7 +169,7 @@ class Class34 {
         @JvmStatic
         fun method345(i: Int, i_17_: Byte) {
             anInt469++
-            if (Class348_Sub43.anInt7068 == 0) Class98.aClass348_Sub16_Sub3_1564.method2861(0, i)
+            if (Class348_Sub43.anInt7068 == 0) Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, i)
             else Class58.anInt1059 = i
             if (i_17_ > -26) method349(-111)
         }

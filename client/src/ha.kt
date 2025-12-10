@@ -402,7 +402,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
                 if (i_171_ == 2) return Class306.method2297(-6, i_168_, var_d, canvas, i_169_)
                 if (i_171_ == 1) return Class262.method2000(3, i, canvas, var_d)
                 if (i_171_ == 5) return Class93.method862(canvas, var_d, class45, 25542, i)
-                if (i_171_ == 3) return Class96.method870(i, i_170_ xor 0x4a31, var_d, class45, canvas)
+                if (i_171_ == 3) return Class96.method870(i, i_170_ xor 0x4a31, var_d!!, class45!!, canvas!!)
                 throw IllegalArgumentException("UM")
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ha.TJ(" + i + ',' + i_168_ + ',' + i_169_ + ',' + (if (class45 != null) "{...}" else "null") + ',' + i_170_ + ',' + (if (var_d != null) "{...}" else "null") + ',' + (if (canvas != null) "{...}" else "null") + ',' + i_171_ + ')'))

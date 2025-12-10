@@ -158,31 +158,31 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                         if (Class286.Companion.aClass348_Sub2_3683 == null) return false
                     }
                     if (Class141.aClass26_1977 == null) Class141.aClass26_1977 = Class26(Class43.aClass45_611, Class333.aClass45_4147)
-                    var class348_sub16_sub3 = Class98.aClass348_Sub16_Sub3_1564
+                    var class348_sub16_sub3 = Class98.aClass348_Sub16_Sub3_1564!!
                     if (Class285.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = Class285.aClass348_Sub16_Sub3_4743!!
                     if (class348_sub16_sub3.method2866((Class286.Companion.aClass348_Sub2_3683), 22050, Class141.aClass26_1977, Class367_Sub9.aClass45_7371, -35)) {
                         Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
-                        Class98.aClass348_Sub16_Sub3_1564.method2864(52.toByte())
+                        Class98.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
                         if (Class348_Sub40_Sub35.anInt9444 <= 0) {
                             Class348_Sub43.anInt7068 = 0
-                            Class98.aClass348_Sub16_Sub3_1564.method2861(0, Class58.anInt1059)
+                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, Class58.anInt1059)
                             for (i in Class367_Sub3.anIntArray7299!!.indices) {
-                                Class98.aClass348_Sub16_Sub3_1564.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
+                                Class98.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
                                 Class367_Sub3.anIntArray7299!![i] = 255
                             }
                         } else {
                             Class348_Sub43.anInt7068 = 3
-                            Class98.aClass348_Sub16_Sub3_1564.method2861(0, (min(Class58.anInt1059, Class348_Sub40_Sub35.anInt9444)))
+                            Class98.aClass348_Sub16_Sub3_1564!!.method2861(0, (min(Class58.anInt1059, Class348_Sub40_Sub35.anInt9444)))
                             var i = 0
                             while ((Class367_Sub3.anIntArray7299!!.size > i)) {
-                                Class98.aClass348_Sub16_Sub3_1564.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
+                                Class98.aClass348_Sub16_Sub3_1564!!.method2843(Class367_Sub3.anIntArray7299!![i], i, -7836)
                                 Class367_Sub3.anIntArray7299!![i] = 255
                                 i++
                             }
                         }
                         if (Class285.aClass348_Sub16_Sub3_4743 == null) {
-                            if (Class239_Sub12.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564.method2869(Class286.Companion.aClass348_Sub2_3683, Class346.aBoolean4275, false)
-                            else Class98.aClass348_Sub16_Sub3_1564.method2870(Class286.Companion.aClass348_Sub2_3683, Class239_Sub12.aLong5971, Class346.aBoolean4275, true, 24.toByte())
+                            if (Class239_Sub12.aLong5971 <= 0) Class98.aClass348_Sub16_Sub3_1564!!.method2869(Class286.Companion.aClass348_Sub2_3683, Class346.aBoolean4275, false)
+                            else Class98.aClass348_Sub16_Sub3_1564!!.method2870(Class286.Companion.aClass348_Sub2_3683, Class239_Sub12.aLong5971, Class346.aBoolean4275, true, 24.toByte())
                         }
                         if (Class318_Sub1_Sub4.aClass279_8764 != null) Class318_Sub1_Sub4.aClass279_8764!!.method2088(bool, Class98.aClass348_Sub16_Sub3_1564)
                         Class124.aClass45_1848 = null
@@ -196,7 +196,7 @@ class Class286_Sub6 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                 if (bool != false) aBooleanArray6270 = null
             } catch (exception: Exception) {
                 exception.printStackTrace()
-                Class98.aClass348_Sub16_Sub3_1564.method2877(-128)
+                Class98.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                 Class285.aClass348_Sub16_Sub3_4743 = null
                 Class141.aClass26_1977 = null
                 Class286.Companion.aClass348_Sub2_3683 = null
