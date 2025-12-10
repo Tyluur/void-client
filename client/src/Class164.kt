@@ -91,8 +91,8 @@ object Class164 {
             if (`is`!!.size > 0) {
                 Class182.anInterface16Array2447 = arrayOfNulls<Interface16>(`is`.size)
                 var i_4_ = 0
-                while ((Class182.anInterface16Array2447.size > i_4_)) {
-                    Class182.anInterface16Array2447[i_4_] = Class195(Class186_Sub1.aClass111_5813!!.method1043(`is`[i_4_], 102.toByte()), class106)
+                while ((Class182.anInterface16Array2447!!.size > i_4_)) {
+                    Class182.anInterface16Array2447!![i_4_] = Class195(Class186_Sub1.aClass111_5813!!.method1043(`is`[i_4_], 102.toByte()), class106)
                     i_4_++
                 }
             }
@@ -104,9 +104,9 @@ object Class164 {
             if (i_6_ > i_5_) return 100 * i_5_ / i_6_
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1028) {
-            if (Class182.anInterface16Array2447 != null && (Class182.anInterface16Array2447.size > 0)) {
-                if (Class182.anInterface16Array2447[0].method60(-19079) < 100) return 0
-                if (Class182.anInterface16Array2447.size > 1 && Class186_Sub1.aClass111_5813!!.method1044(86) && (Class182.anInterface16Array2447[1].method60(i + 9581) < 100)) return 0
+            if (Class182.anInterface16Array2447 != null && (Class182.anInterface16Array2447!!.size > 0)) {
+                if (Class182.anInterface16Array2447!![0]!!.method60(-19079) < 100) return 0
+                if (Class182.anInterface16Array2447!!.size > 1 && Class186_Sub1.aClass111_5813!!.method1044(86) && (Class182.anInterface16Array2447!![1]!!.method60(i + 9581) < 100)) return 0
             }
             Class170.method1311(5139, Class348_Sub8.aHa6654!!)
             method3568(Class348_Sub8.aHa6654, 4)

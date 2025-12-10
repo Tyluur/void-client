@@ -337,7 +337,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         this.aBoolean10324 = false
         if (Class316.aClass348_Sub51_3959.aClass239_Sub21_7270.method1812(-32350) == 1) {
             val class225 = this.method2422(72.toByte())
-            if (class225.aBoolean2913 && (this.aClass154_10536!!.anInt2093 == -1 || Class189.aClass278_2529.method2079(this.aClass154_10536!!.anInt2093, i + -2).aBoolean1369)) {
+            if (class225.aBoolean2913 && (this.aClass154_10536!!.anInt2093 == -1 || Class189.aClass278_2529!!.method2079(this.aClass154_10536!!.anInt2093, i + -2).aBoolean1369)) {
                 val class17 = (if (this.anInt10286 != -1 && this.anInt10218 == 0) (Class10.aClass87_191!!.method835(this.anInt10286, 7)) else null)
                 val class17_55_ = (if (this.anInt10268 == -1 || this.aBoolean10521 || (this.aBoolean10213 && class17 != null)) null else (Class10.aClass87_191!!.method835(this.anInt10268, 7)))
                 val class64 = (Class348.method2711(this.anInt10302, i_53_, this.aClass64Array10323[0], this.anInt10208, false, (if (class17_55_ == null) this.anInt10267 else this.anInt10245), 0, 1, this.anInt10252, var_ha, 160, 0, 240, if (class17_55_ == null) class17 else class17_55_))
@@ -460,7 +460,7 @@ class Player : Class318_Sub1_Sub3_Sub3() {
     public override fun method2436(i: Byte): Int {
         if (i <= 39) method2455(-97, -62, 0.toByte(), 103)
         anInt10546++
-        if (this.aClass154_10536 != null && this.aClass154_10536!!.anInt2093 != -1) return (Class189.aClass278_2529.method2079(this.aClass154_10536!!.anInt2093, -1).anInt1399)
+        if (this.aClass154_10536 != null && this.aClass154_10536!!.anInt2093 != -1) return (Class189.aClass278_2529!!.method2079(this.aClass154_10536!!.anInt2093, -1).anInt1399)
         return super.method2436(72.toByte())
     }
 

@@ -556,7 +556,7 @@ object Class66 {
             }
         } else if (i < 5200) {
             if (i == 5100) {
-                if (Class182.aClass346_2449.method2696(86, -121)) anIntArray1149!![anInt1173++] = 1
+                if (Class182.aClass346_2449!!.method2696(86, -121)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -564,7 +564,7 @@ object Class66 {
                 return
             }
             if (i == 5101) {
-                if (Class182.aClass346_2449.method2696(82, -126)) anIntArray1149!![anInt1173++] = 1
+                if (Class182.aClass346_2449!!.method2696(82, -126)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -572,7 +572,7 @@ object Class66 {
                 return
             }
             if (i == 5102) {
-                if (Class182.aClass346_2449.method2696(81, -128)) anIntArray1149!![anInt1173++] = 1
+                if (Class182.aClass346_2449!!.method2696(81, -128)) anIntArray1149!![anInt1173++] = 1
                 else {
                     anIntArray1149!![anInt1173++] = 0
                     return
@@ -967,7 +967,7 @@ object Class66 {
                 Class318_Sub6.aShortArray6428[anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
                 Exception_Sub1.aClass255_112!!.method1930(-21804)
                 Exception_Sub1.aClass255_112!!.method1936(-71)
-                Class189.aClass278_2529.method2074(-118)
+                Class189.aClass278_2529!!.method2074(-118)
                 Class354.method3466(125)
                 return
             }
@@ -4949,9 +4949,9 @@ object Class66 {
                     val i_478_ = anIntArray1149!![anInt1173]
                     val i_479_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_479_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class189.aClass278_2529.method2079(i_478_, -1).method801(17.toByte(), i_479_, class254.aString3258))
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class189.aClass278_2529!!.method2079(i_478_, -1).method801(17.toByte(), i_479_, class254.aString3258))
                     else {
-                        anIntArray1149!![anInt1173++] = (Class189.aClass278_2529.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48))
+                        anIntArray1149!![anInt1173++] = (Class189.aClass278_2529!!.method2079(i_478_, -1).method805(class254.anInt3256, i_479_, 48))
                         return
                     }
                     return
@@ -5044,7 +5044,7 @@ object Class66 {
                     } else if (i_490_ == 21) {
                         if (anInt1154 == 0) return
                         val class184 = aClass184Array1168!![--anInt1154]!!
-                        class348_sub42_sub19 = class184.aClass348_Sub42_Sub19_2474
+                        class348_sub42_sub19 = class184.aClass348_Sub42_Sub19_2474!!
                         `is` = (class348_sub42_sub19.anIntArray9696)
                         is_489_ = (class348_sub42_sub19.anIntArray9694)
                         i_488_ = class184.anInt2477
@@ -5156,7 +5156,7 @@ object Class66 {
                 stringbuffer.append("CS2: ").append(class348_sub42_sub19.aLong4291).append(" ")
                 var i_514_ = anInt1154 - 1
                 while (i_514_ >= 0) {
-                    stringbuffer.append("v: ").append(aClass184Array1168!![i_514_]!!.aClass348_Sub42_Sub19_2474.aLong4291).append(" ")
+                    stringbuffer.append("v: ").append(aClass184Array1168!![i_514_]!!.aClass348_Sub42_Sub19_2474!!.aLong4291).append(" ")
                     i_514_--
                 }
                 stringbuffer.append("op: ").append(i_490_)
@@ -5167,7 +5167,7 @@ object Class66 {
                 stringbuffer.append("Clientscript error in: ").append(class348_sub42_sub19.aString9690).append("\n")
                 var i_513_ = anInt1154 - 1
                 while (i_513_ >= 0) {
-                    stringbuffer.append("via: ").append(aClass184Array1168!![i_513_]!!.aClass348_Sub42_Sub19_2474.aString9690).append("\n")
+                    stringbuffer.append("via: ").append(aClass184Array1168!![i_513_]!!.aClass348_Sub42_Sub19_2474!!.aString9690).append("\n")
                     i_513_--
                 }
                 stringbuffer.append("Op: ").append(i_490_).append("\n")

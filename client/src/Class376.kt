@@ -132,10 +132,10 @@ class Class376(private var anInputStream4548: InputStream, i: Int) : Runnable {
         fun method3616(i: Int) {
             anInt4549++
             if (Class182.anInterface16Array2447 != null) {
-                val interface16s = Class182.anInterface16Array2447
+                val interface16s = Class182.anInterface16Array2447!!
                 for (i_0_ in interface16s.indices) {
                     val interface16 = interface16s[i_0_]
-                    interface16.method57(108)
+                    interface16!!.method57(108)
                 }
             }
             if (i != 12639) anInt4559 = 72
