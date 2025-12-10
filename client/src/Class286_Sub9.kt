@@ -214,7 +214,7 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
             anInt6319++
             if (i_3_ >= -14) return 64
             if (i_4_ == 1 || i_4_ == 3) return Class348_Sub20.anIntArray6830[i and 0x3]
-            return Class84.anIntArray1450[0x3 and i]
+            return Class84.anIntArray1450!![0x3 and i]
         }
 
         @JvmStatic

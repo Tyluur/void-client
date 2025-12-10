@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-class Class318_Sub9 extends Class318 {
+public class Class318_Sub9 extends Class318 {
     static int anInt6467;
     Class318_Sub9 aClass318_Sub9_6468;
     Class318_Sub9 aClass318_Sub9_6469;

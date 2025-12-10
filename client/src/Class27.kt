@@ -132,7 +132,7 @@ object Class27 {
                     }
                     if (i >= 90) {
                         for (i_10_ in 0..<Class348_Sub40_Sub30.anInt9383) {
-                            val string_11_ = method2127(2, (Class83.aStringArray1441[i_10_]))
+                            val string_11_ = method2127(2, (Class83.aStringArray1441!![i_10_]))
                             if (string_11_ != null && string_11_ == string_6_) {
                                 method544(((Class274.aClass274_3528.method2063(Class348_Sub33.anInt6967, 544)) + string + (Class274.aClass274_3529.method2063(Class348_Sub33.anInt6967, 544))), false, 4)
                                 return

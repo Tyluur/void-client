@@ -78,7 +78,7 @@ class Class76 internal constructor(bool: Boolean) {
         var aFloat1287: Float = 1024.0f
         var anInt1288: Int = 0
 
-        fun method771(i: Int, i_0_: Byte, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, `is`: IntArray, i_5_: Int): Boolean {
+        fun method771(i: Int, i_0_: Byte, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, `is`: IntArray?, i_5_: Int): Boolean {
             var i_1_ = i_1_
             var i_2_ = i_2_
             var i_3_ = i_3_
@@ -95,7 +95,7 @@ class Class76 internal constructor(bool: Boolean) {
             if (Class350.anInt4319 == 1) {
                 Class225.anInt2946 += i_2_
                 while (--i_2_ >= 0) {
-                    if (`is`[++i_5_] > i_1_) `is`[i_5_] = i_1_
+                    if (`is`!![++i_5_] > i_1_) `is`[i_5_] = i_1_
                     i_1_ += i
                     if (`is`[++i_5_] > i_1_) `is`[i_5_] = i_1_
                     i_1_ += i
@@ -106,13 +106,13 @@ class Class76 internal constructor(bool: Boolean) {
                 }
                 i_2_ = 0x3 and i_3_ - i_4_
                 while (--i_2_ >= 0) {
-                    if (`is`[++i_5_] > i_1_) `is`[i_5_] = i_1_
+                    if (`is`!![++i_5_] > i_1_) `is`[i_5_] = i_1_
                     i_1_ += i
                 }
             } else {
                 i_1_ -= 38400
                 while (--i_2_ >= 0) {
-                    if (`is`[++i_5_] > i_1_) return false
+                    if (`is`!![++i_5_] > i_1_) return false
                     i_1_ += i
                     if (`is`[++i_5_] > i_1_) return false
                     i_1_ += i
@@ -123,7 +123,7 @@ class Class76 internal constructor(bool: Boolean) {
                 }
                 i_2_ = 0x3 and i_3_ - i_4_
                 while (--i_2_ >= 0) {
-                    if (i_1_ < `is`[++i_5_]) return false
+                    if (i_1_ < `is`!![++i_5_]) return false
                     i_1_ += i
                 }
             }

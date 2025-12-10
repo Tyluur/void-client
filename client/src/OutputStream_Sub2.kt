@@ -78,7 +78,7 @@ class OutputStream_Sub2 : OutputStream() {
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)
                             var class79 = (npc.aClass79_10505)
-                            if (class79!!.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1)
+                            if (class79!!.anIntArray1377 != null) class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1)
                             if (class79 != null) `is` = class79.anIntArray1342
                         }
                     } else if (Class239_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {

@@ -4185,7 +4185,7 @@ object Class66 {
                 if (i == 3601) {
                     val i_359_ = anIntArray1149!![--anInt1173]
                     if (Class125.anInt4930 == 2 && i_359_ < Class348_Sub40_Sub30.anInt9383) {
-                        aStringArray1152!![anInt1170++] = Class83.aStringArray1441[i_359_]
+                        aStringArray1152!![anInt1170++] = Class83.aStringArray1441!![i_359_]
                         if (Class286_Sub2.aStringArray6205!![i_359_] != null) aStringArray1152!![anInt1170++] = Class286_Sub2.aStringArray6205!![i_359_]!!
                         else aStringArray1152!![anInt1170++] = ""
                     } else {
@@ -5096,10 +5096,10 @@ object Class66 {
                         i_488_ = -1
                         anIntArray1164 = is_499_
                         aStringArray1155 = strings
-                    } else if (i_490_ == 42) anIntArray1149!![anInt1173++] = Class77.anIntArray1303[is_489_[i_488_]]
+                    } else if (i_490_ == 42) anIntArray1149!![anInt1173++] = Class77.anIntArray1303!![is_489_[i_488_]]
                     else if (i_490_ == 43) {
                         val i_502_ = is_489_[i_488_]
-                        Class77.anIntArray1303[i_502_] = anIntArray1149!![--anInt1173]
+                        Class77.anIntArray1303!![i_502_] = anIntArray1149!![--anInt1173]
                         Class232.method1647(-128, i_502_)
                         Class184.aBoolean2469 = Class184.aBoolean2469 or Class286_Sub6.aBooleanArray6270!![i_502_]
                     } else if (i_490_ == 44) {

@@ -490,10 +490,10 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string == "scramblevarcs") {
                             var i_14_ = 0
-                            while ((i_14_ < Class77.Companion.anIntArray1303.size)) {
+                            while ((i_14_ < Class77.Companion.anIntArray1303!!.size)) {
                                 if (Class286_Sub6.aBooleanArray6270!![i_14_]) {
-                                    Class77.Companion.anIntArray1303[i_14_] = (Math.random() * 99999.0).toInt()
-                                    if (Math.random() > 0.5) Class77.Companion.anIntArray1303[i_14_] *= -1
+                                    Class77.Companion.anIntArray1303!![i_14_] = (Math.random() * 99999.0).toInt()
+                                    if (Math.random() > 0.5) Class77.Companion.anIntArray1303!![i_14_] *= -1
                                 }
                                 i_14_++
                             }
@@ -567,7 +567,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string == "errormessage") {
-                            method94(Class79.Companion.aClient1367.method81(102.toByte()), 102)
+                            method94(Class79.Companion.aClient1367!!.method81(102.toByte())!!, 102)
                             return
                         }
                         if (string == "heapdump") {

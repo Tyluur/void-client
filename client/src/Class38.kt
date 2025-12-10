@@ -78,7 +78,7 @@ class Class38 {
             val class227s = Class88.method841(i + -70)
             var i_1_ = 0
             while (class227s.size > i_1_) {
-                val class227 = class227s[i_1_]
+                val class227 = class227s[i_1_]!!
                 if (class227.anInt2970 == i_0_) return class227
                 i_1_++
             }

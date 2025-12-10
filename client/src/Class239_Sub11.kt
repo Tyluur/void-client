@@ -86,7 +86,7 @@ class Class239_Sub11 : Class239 {
             if (Class367_Sub8.anInt7365 == 0) {
                 Class267.aClass267_3401.method2025(Class309("jaclib"), false)
                 if (Class267.aClass267_3401.method2027(119).method31(28) != 100) return 1
-                if (!(Class267.aClass267_3401.method2027(71) as Class309).method2313(124)) Class79.aClient1367.method97(i + 24)
+                if (!(Class267.aClass267_3401.method2027(71) as Class309).method2313(124)) Class79.aClient1367!!.method97(i + 24)
                 Class367_Sub8.anInt7365 = 1
             }
             if (Class367_Sub8.anInt7365 == 1) {
@@ -148,8 +148,8 @@ class Class239_Sub11 : Class239 {
                 i_11_++
             }
             if (bool) {
-                if (!(Class267.aClass267_3404.method2027(92) as Class309).method2313(102)) Class79.aClient1367.method83(true)
-                if (!(Class267.aClass267_3407.method2027(i.toInt() xor 0x64.inv()) as Class309).method2313(103)) Class38.aBoolean510 = Class79.aClient1367.method100(i.toInt() xor 0x12.inv())
+                if (!(Class267.aClass267_3404.method2027(92) as Class309).method2313(102)) Class79.aClient1367!!.method83(true)
+                if (!(Class267.aClass267_3407.method2027(i.toInt() xor 0x64.inv()) as Class309).method2313(103)) Class38.aBoolean510 = Class79.aClient1367!!.method100(i.toInt() xor 0x12.inv())
                 Class126.aClass267Array4987 = null
             }
             i_9_ -= Class348_Sub40_Sub24.anInt9327

@@ -835,7 +835,7 @@ class Class46 {
             val l = ((this.anInt693.toLong() shl 16 and (65535L shl 16)) or ((this.anInt733.toLong() shl 32 and (65535L shl 32)) or (this.anInt674.toLong() shl 48 and (65535L shl 48))) or (this.anInt705.toLong() and 0xffffL))
             var class305 = (Class348_Sub40_Sub9.aClass60_9171!!.method583(l, 78) as Class305?)
             if (class305 == null) {
-                class305 = class84!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, class25, this.anInt705)
+                class305 = class84!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, class25!!, this.anInt705)
                 Class348_Sub40_Sub9.aClass60_9171!!.method582(class305, l, (-120).toByte())
             }
             return class305

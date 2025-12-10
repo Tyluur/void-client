@@ -108,7 +108,6 @@ class Class88 {
         @JvmField
         var anInt1504: Int = 0
         fun method841(i: Int): Array<Class227?> {
-            if (i > -126) Companion.method847(null, -66)
             anInt1504++
             return (arrayOf<Class227?>(Class191.aClass227_2568, Class100.aClass227_1591, Class6.aClass227_151))
         }
@@ -119,7 +118,6 @@ class Class88 {
             Class138.aClass46Array1942 = null
             if (Class59_Sub1.aBoolean5300 && Class348_Sub42_Sub12.method3229(-82) != 1) method132(106, (Class240.anInt4674 == 3) || Class240.anInt4674 == 7, method3439(107), 0, Class348_Sub44.method3306((-111).toByte()), 0)
             var i = 0
-            if (bool != false) Companion.method847(null, -110)
             var i_1_ = 0
             if (Class59_Sub1.aBoolean5300) {
                 i = s_Sub3.method4008((-124).toByte())
@@ -400,7 +398,7 @@ class Class88 {
                                 } catch (throwable: Throwable) {
                                     if (Class318_Sub1_Sub5.aBoolean8773) {
                                         try {
-                                            Class93.anApplet1530.getAppletContext().showDocument(URL(Class93.anApplet1530.getCodeBase(), "blank.ws"), "tbi")
+                                            Class93.anApplet1530!!.getAppletContext().showDocument(URL(Class93.anApplet1530!!.getCodeBase(), "blank.ws"), "tbi")
                                         } catch (exception: Exception) {
                                             /* empty */
                                         }

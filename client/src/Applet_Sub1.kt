@@ -518,24 +518,6 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         var anInt40: Int = 0
         @JvmField
         var aBoolean41: Boolean = false
-        var anInt42: Int = 0
-        var anInt43: Int = 0
-        var anInt44: Int = 0
-        var anInt45: Int = 0
-        var aBoolean46: Boolean = false
-        var aBoolean47: Boolean = false
-        var aBoolean48: Boolean = false
-        var aBoolean49: Boolean = false
-        var aBoolean50: Boolean = false
-        var aBoolean51: Boolean = false
-        var aBoolean52: Boolean = false
-        var anInt53: Int = 0
-        var aBoolean54: Boolean = false
-        var anInt55: Int = 0
-        var aBoolean56: Boolean = false
-        var anInt57: Int = 0
-        var aBoolean58: Boolean = false
-        var anInt59: Int = 0
 
         @JvmStatic
         fun method85(i: Int, class45: Class45?) {
@@ -588,7 +570,6 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
                     if (Class284.anInt3676 > 0) Class284.anInt3676++
                 }
             }
-            val i_14_ = 85 / ((i - -1) / 52)
         }
 
         @JvmStatic

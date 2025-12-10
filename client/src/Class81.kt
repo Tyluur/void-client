@@ -3,7 +3,7 @@
 */
 object Class81 {
     @JvmField
-    var anIntArray1432: IntArray?
+    var anIntArray1432: IntArray? = null
     @JvmField
     var anInt1433: Int = 0
 

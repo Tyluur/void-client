@@ -169,7 +169,7 @@ public final class Client extends Applet_Sub1 {
         }
         Class182.aClass346_2449 = Class348_Sub3.method2743(Class305.aCanvas3869, (byte) -124);
         Class258_Sub4.aClass373_8552 = Class348_Sub18.method2941(Class305.aCanvas3869, 0, true);
-        try {
+//        try {
             if (Class348_Sub23_Sub1.aClass297_8992.aClass234_3785 != null) {
                 Class299_Sub2.aClass78_6328 = new Class78((Class348_Sub23_Sub1.aClass297_8992.aClass234_3785), 5200, 0);
                 for (int i_3_ = 0; i_3_ < 37; i_3_++)
@@ -182,12 +182,12 @@ public final class Client extends Applet_Sub1 {
                 Class348_Sub23_Sub1.aClass297_8992.aClass234Array3795 = null;
                 Class348_Sub23_Sub1.aClass297_8992.aClass234_3788 = null;
             }
-        } catch (java.io.IOException ioexception) {
-            Class299_Sub2.aClass78_6328 = null;
-            Class235.aClass78_3075 = null;
-            Class374.aClass78_4538 = null;
-            Class277.aClass137_3568 = null;
-        }
+//        } catch (java.io.IOException ioexception) {
+//            Class299_Sub2.aClass78_6328 = null;
+//            Class235.aClass78_3075 = null;
+//            Class374.aClass78_4538 = null;
+//            Class277.aClass137_3568 = null;
+//        }
         if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class298.aBoolean3811 = true;
         Class348_Sub42_Sub16.aString9665 = Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544);
     }

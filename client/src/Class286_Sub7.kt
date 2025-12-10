@@ -27,7 +27,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                 glTexGenfv(8194, 9473, Class160.aFloatArray2131, 0)
             } else {
                 val i_5_ = (16 * (this.aHa_Sub2_3684.anInt7735 % 4000) / 4000)
-                this.aHa_Sub2_3684.method3771((-95).toByte(), aClass83_6278.aClass258_Sub3Array1444[i_5_])
+                this.aHa_Sub2_3684.method3771((-95).toByte(), aClass83_6278.aClass258_Sub3Array1444!![i_5_])
             }
         } else if (aClass83_6278!!.aBoolean1442) {
             this.aHa_Sub2_3684.method3771((-126).toByte(), (aClass83_6278.aClass258_Sub1_1440))
@@ -36,7 +36,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             Class160.aFloatArray2131[1] = 0.0f
             Class160.aFloatArray2131[3] = 0.0f
             glTexGenfv(8194, 9473, Class160.aFloatArray2131, 0)
-        } else this.aHa_Sub2_3684.method3771((-110).toByte(), aClass83_6278.aClass258_Sub3Array1444[0])
+        } else this.aHa_Sub2_3684.method3771((-110).toByte(), aClass83_6278.aClass258_Sub3Array1444!![0])
         anInt6291++
     }
 
@@ -179,13 +179,13 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                 if (string_0_ != null) {
                     var i = 0
                     while ((Class348_Sub40_Sub30.anInt9383 > i)) {
-                        var string_1_ = Class83.aStringArray1441[i]
+                        var string_1_ = Class83.aStringArray1441!![i]
                         if (string_1_!!.startsWith("*")) string_1_ = string_1_.substring(1)
                         string_1_ = method2127(2, string_1_)
                         if (string_1_ != null && string_1_ == string_0_) {
                             Class348_Sub40_Sub30.anInt9383--
                             for (i_2_ in i..<Class348_Sub40_Sub30.anInt9383) {
-                                Class83.aStringArray1441[i_2_] = Class83.aStringArray1441[i_2_ - -1]
+                                Class83.aStringArray1441!![i_2_] = Class83.aStringArray1441!![i_2_ - -1]
                                 Class286_Sub2.Companion.aStringArray6205!![i_2_] = Class286_Sub2.Companion.aStringArray6205!![1 + i_2_]
                                 ha.anIntArray4578!![i_2_] = ha.anIntArray4578!![i_2_ - -1]
                                 Class285.aStringArray4744!![i_2_] = Class285.aStringArray4744!![1 + i_2_]

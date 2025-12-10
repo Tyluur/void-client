@@ -277,7 +277,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
 
     override fun method3685(class98: Class98, i: Int) {
         val class167 = method3724(Thread.currentThread())
-        val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)
+        val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)!!
         var class318_sub9_65_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_65_ !== class318_sub9) {
             val class318_sub9_sub2 = class318_sub9_65_ as Class318_Sub9_Sub2
@@ -748,7 +748,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
 
     override fun method3684(class98: Class98) {
         val class167 = method3724(Thread.currentThread())
-        val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)
+        val class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503)!!
         var class318_sub9_208_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_208_ !== class318_sub9) {
             val class318_sub9_sub2 = class318_sub9_208_ as Class318_Sub9_Sub2
@@ -1289,7 +1289,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
             }
         }
         class348_sub25!!.aBoolean6882 = true
-        return class348_sub25.method2997()
+        return class348_sub25!!.method2997()
     }
 
     override fun method3652() {
@@ -1333,7 +1333,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
             }
         }
         class348_sub25!!.aBoolean6882 = true
-        return class348_sub25.method2997()
+        return class348_sub25!!.method2997()
     }
 
     override fun method3648(i: Int, i_357_: Int, `is`: Array<IntArray?>, is_358_: Array<IntArray?>?, i_359_: Int, i_360_: Int, i_361_: Int): s {

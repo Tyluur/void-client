@@ -11,7 +11,7 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
     protected fun finalize() {
         anInt1509++
         aClass377_1506!!.method3966(this.aLong1510, 34192)
-        super.finalize()
+//        super.finalize()
     }
 
     init {

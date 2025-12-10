@@ -24,7 +24,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             this.aHa_Sub2_3684.method3738(-15039, 1)
             if ((i and 0x80) != 0) this.aHa_Sub2_3684.method3771((-122).toByte(), null)
             else if ((0x1 and i_0_) != 1) {
-                if (!aClass83_6227!!.aBoolean1442) this.aHa_Sub2_3684.method3771((-84).toByte(), aClass83_6227.aClass258_Sub3Array1444[0])
+                if (!aClass83_6227!!.aBoolean1442) this.aHa_Sub2_3684.method3771((-84).toByte(), aClass83_6227.aClass258_Sub3Array1444!![0])
                 else this.aHa_Sub2_3684.method3771((-97).toByte(), aClass83_6227.aClass258_Sub1_1440)
                 glProgramLocalParameter4fARB(34336, 65, 0.0f, 0.0f, 0.0f, 1.0f)
             } else if (aClass83_6227!!.aBoolean1442) {
@@ -32,7 +32,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                 glProgramLocalParameter4fARB(34336, 65, aFloat6225, 0.0f, 0.0f, 1.0f)
             } else {
                 val i_2_ = (this.aHa_Sub2_3684.anInt7735 % 4000 * 16 / 4000)
-                this.aHa_Sub2_3684.method3771((-88).toByte(), aClass83_6227.aClass258_Sub3Array1444[i_2_])
+                this.aHa_Sub2_3684.method3771((-88).toByte(), aClass83_6227.aClass258_Sub3Array1444!![i_2_])
                 glProgramLocalParameter4fARB(34336, 65, 0.0f, 0.0f, 0.0f, 1.0f)
             }
             this.aHa_Sub2_3684.method3738(-15039, 0)
@@ -223,7 +223,7 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             if (Class73.anInt4776 < 400) {
                 var class79 = (npc.aClass79_10505)
                 if (class79!!.anIntArray1377 != null) {
-                    class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209), -1)
+                    class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1)
                     if (class79 == null) return
                 }
                 if (class79.aBoolean1396) {

@@ -40,7 +40,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             glTexGenfv(8194, 9473, Class110_Sub1.aFloatArray5791, 0)
         } else {
             val i_9_ = (16.0f * (this.aHa_Sub2_3684.anInt7735.toFloat() * f_7_)).toInt()
-            this.aHa_Sub2_3684.method3771((-81).toByte(), aClass83_6259.aClass258_Sub3Array1448[i_9_ % 16])
+            this.aHa_Sub2_3684.method3771((-81).toByte(), aClass83_6259.aClass258_Sub3Array1448!![i_9_ % 16])
         }
         this.aHa_Sub2_3684.method3738(-15039, 0)
     }
