@@ -29,11 +29,11 @@ class ja : Class101(), Interface19 {
         AA(this.nativeid, bool)
     }
 
-    public override fun method905(i: Int, i_3_: Int, i_4_: Int, `is`: IntArray?) {
+    public override fun method905(i: Int, i_3_: Int, i_4_: Int, `is`: IntArray) {
         XA(this.nativeid, i, i_3_, i_4_, `is`)
     }
 
-    public override fun method890(`is`: IntArray?) {
+    public override fun method890(`is`: IntArray) {
         w(this.nativeid, `is`)
     }
 
@@ -57,7 +57,7 @@ class ja : Class101(), Interface19 {
 
     private external fun u(l: Long)
 
-    public override fun method897(i: Int, i_12_: Int, i_13_: Int, `is`: IntArray?) {
+    public override fun method897(i: Int, i_12_: Int, i_13_: Int, `is`: IntArray) {
         b(this.nativeid, i, i_12_, i_13_, `is`)
     }
 
@@ -79,7 +79,7 @@ class ja : Class101(), Interface19 {
 
     private external fun b(l: Long, i: Int, i_18_: Int, i_19_: Int, `is`: IntArray?)
 
-    public override fun method892(i: Int, i_20_: Int, i_21_: Int, `is`: IntArray?) {
+    public override fun method892(i: Int, i_20_: Int, i_21_: Int, `is`: IntArray) {
         va(this.nativeid, i, i_20_, i_21_, `is`)
     }
 

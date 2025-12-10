@@ -147,7 +147,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
             aFloatArray9797!![5] = 1.0f
             aFloatArray9797!![14] = 0.0f
             aFloatArray9797!![4] = 0.0f
-        } else this.aClass101_Sub2_8074.method918(aFloatArray9797, 0)
+        } else this.aClass101_Sub2_8074.method918(aFloatArray9797!!, 0)
         if (i < -18) this.anIDirect3DDevice9810!!.SetTransform(256, aFloatArray9797)
     }
 
@@ -390,7 +390,7 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3898(i: Int) {
         if (i != 12) method3634(null, null)
-        if (this.aClass196_8184.method1450(-32)) this.aClass101_Sub2_8083.method918(aFloatArray9797, 0)
+        if (this.aClass196_8184.method1450(-32)) this.aClass101_Sub2_8083.method918(aFloatArray9797!!, 0)
         else {
             aFloatArray9797!![1] = 0.0f
             aFloatArray9797!![7] = 0.0f
@@ -683,8 +683,8 @@ class Class378 private constructor(i: Int, i_38_: Int, canvas: Canvas?, var_hb: 
 
     override fun method3940(i: Int) {
         if (anIDirect3DVertexShader9794 == null && ((this.aClass251Array8113[this.anInt8175]) != Class348_Sub42_Sub18.aClass251_9685)) {
-            if (Class239_Sub18.aClass251_6030 == (this.aClass251Array8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175]!!.method928(aFloatArray9797, i))
-            else this.anIDirect3DDevice9810!!.SetTransform(16 - -this.anInt8175, this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(aFloatArray9797, i xor 0x1))
+            if (Class239_Sub18.aClass251_6030 == (this.aClass251Array8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175]!!.method928(aFloatArray9797!!, i))
+            else this.anIDirect3DDevice9810!!.SetTransform(16 - -this.anInt8175, this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(aFloatArray9797!!, i xor 0x1))
             val i_72_: Int = method3963(594, (this.aClass251Array8113[this.anInt8175]))
             if (anIntArray9805!![this.anInt8175] != i_72_) {
                 this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 24, i_72_)

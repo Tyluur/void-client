@@ -957,7 +957,7 @@ class Class46 {
             Class2.aClass141_117!!.method1174((-99).toByte())
             Class348_Sub23_Sub2.aClass153_9031!!.method1222(true)
             Class348_Sub23_Sub2.aClass187_9036!!.method1410(-27995)
-            Class101_Sub3.aClass326_5764.method2602(0)
+            Class101_Sub3.aClass326_5764!!.method2602(0)
             Class30.aClass84_413!!.method816(false)
             Class123.aClass25_1813.method302(-797644856)
             Class348_Sub1.aClass185_6559!!.method1390(23)

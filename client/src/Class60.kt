@@ -32,7 +32,7 @@ class Class60 @JvmOverloads internal constructor(private var anInt1086: Int, i_1
                 while (class348_sub42_sub8 != null) {
                     if (!class348_sub42_sub8.method3195(-4)) {
                         if (i_2_.toLong() < ++class348_sub42_sub8.aLong7057) {
-                            val class348_sub42_sub8_3_ = Class101_Sub1.aClass246_5675.method1888(3, class348_sub42_sub8)
+                            val class348_sub42_sub8_3_ = Class101_Sub1.aClass246_5675!!.method1888(3, class348_sub42_sub8)
                             aClass356_1100.method3483(86.toByte(), (class348_sub42_sub8.aLong4291), class348_sub42_sub8_3_)
                             method573(class348_sub42_sub8_3_, class348_sub42_sub8, 63.toByte())
                             class348_sub42_sub8.method2715(116.toByte())

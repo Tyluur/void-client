@@ -44,7 +44,7 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
             method3531(false)
             method3522(-16252)
         }
-        class101_sub2.method919(0.0f, aFloatArray7327, -1.0f, 0.0f, i_0_.toFloat(), (-120).toByte())
+        class101_sub2.method919(0.0f, aFloatArray7327!!, -1.0f, 0.0f, i_0_.toFloat(), (-120).toByte())
         idirect3ddevice!!.a(12, aFloatArray7327!!)
     }
 
@@ -154,9 +154,9 @@ class Class367_Sub5 internal constructor(private var aClass378_7328: Class378, c
                 idirect3ddevice!!.a(13, ((this.aHa_Sub3_4479.aFloat8093) * (this.aHa_Sub3_4479.aFloat8180)), ((this.aHa_Sub3_4479.aFloat8087) * (this.aHa_Sub3_4479.aFloat8093)), ((this.aHa_Sub3_4479.aFloat8168) * (this.aHa_Sub3_4479.aFloat8093)), 1.0f)
                 idirect3ddevice.a(14, ((this.aHa_Sub3_4479.aFloat8174) * (this.aHa_Sub3_4479.aFloat8180)), ((this.aHa_Sub3_4479.aFloat8087) * (this.aHa_Sub3_4479.aFloat8174)), ((this.aHa_Sub3_4479.aFloat8174) * (this.aHa_Sub3_4479.aFloat8168)), 1.0f)
                 idirect3ddevice.a(16, ((this.aHa_Sub3_4479.aFloat8180) * (this.aHa_Sub3_4479.aFloat8186)), ((this.aHa_Sub3_4479.aFloat8087) * (this.aHa_Sub3_4479.aFloat8186)), ((this.aHa_Sub3_4479.aFloat8168) * (this.aHa_Sub3_4479.aFloat8186)), 1.0f)
-                class101_sub2.method923((this.aHa_Sub3_4479.aFloatArray8170[0]), (this.aHa_Sub3_4479.aFloatArray8170[1]), (-97).toByte(), (this.aHa_Sub3_4479.aFloatArray8170[2]), aFloatArray7327)
+                class101_sub2.method923((this.aHa_Sub3_4479.aFloatArray8170[0]), (this.aHa_Sub3_4479.aFloatArray8170[1]), (-97).toByte(), (this.aHa_Sub3_4479.aFloatArray8170[2]), aFloatArray7327!!)
                 idirect3ddevice.SetVertexShaderConstantF(15, aFloatArray7327, 1)
-                class101_sub2.method923((this.aHa_Sub3_4479.aFloatArray8102[0]), (this.aHa_Sub3_4479.aFloatArray8102[1]), (-99).toByte(), (this.aHa_Sub3_4479.aFloatArray8102[2]), aFloatArray7327)
+                class101_sub2.method923((this.aHa_Sub3_4479.aFloatArray8102[0]), (this.aHa_Sub3_4479.aFloatArray8102[1]), (-99).toByte(), (this.aHa_Sub3_4479.aFloatArray8102[2]), aFloatArray7327!!)
                 idirect3ddevice.SetVertexShaderConstantF(17, aFloatArray7327, 1)
             }
         }

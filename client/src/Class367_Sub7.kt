@@ -31,7 +31,7 @@ class Class367_Sub7 internal constructor(private var aClass378_7346: Class378, c
         if (aBoolean7344) {
             val idirect3ddevice = aClass378_7346!!.anIDirect3DDevice9810
             val class101_sub2 = this.aHa_Sub3_4479.method3848(i + -10420)!!
-            idirect3ddevice!!.SetVertexShaderConstantF(12, class101_sub2.method915(aFloatArray7342, 1), 2)
+            idirect3ddevice!!.SetVertexShaderConstantF(12, class101_sub2.method915(aFloatArray7342!!, 1), 2)
         }
         if (i != 10425) anIDirect3DVertexShader7345 = null
     }
@@ -97,7 +97,7 @@ class Class367_Sub7 internal constructor(private var aClass378_7346: Class378, c
         if (aBoolean7344) {
             val idirect3ddevice = aClass378_7346!!.anIDirect3DDevice9810
             val class101_sub2 = aClass378_7346!!.method3948(-22036)
-            idirect3ddevice!!.a(0, class101_sub2.method924(11, aFloatArray7342))
+            idirect3ddevice!!.a(0, class101_sub2.method924(11, aFloatArray7342!!))
         }
         if (i.toInt() != 12) aFloatArray7342 = null
     }
@@ -130,8 +130,8 @@ class Class367_Sub7 internal constructor(private var aClass378_7346: Class378, c
                 val idirect3ddevice = aClass378_7346!!.anIDirect3DDevice9810
                 val class101_sub2 = aClass378_7346!!.method3887((-123).toByte())
                 val class101_sub2_7_ = aClass378_7346!!.method3948(-22036)
-                idirect3ddevice!!.a(0, class101_sub2_7_.method924(11, aFloatArray7342))
-                idirect3ddevice.a(4, class101_sub2.method930(0, aFloatArray7342))
+                idirect3ddevice!!.a(0, class101_sub2_7_.method924(11, aFloatArray7342!!))
+                idirect3ddevice.a(4, class101_sub2.method930(0, aFloatArray7342!!))
             }
         }
     }
