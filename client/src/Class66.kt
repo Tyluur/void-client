@@ -4681,7 +4681,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_433_ = anIntArray1149!![anInt1173]
                     val i_434_ = anIntArray1149!![anInt1173 + 1]
-                    val class143 = method1819(i_434_, 0, -123, Class104.aClass45_1627)
+                    val class143 = method1819(i_434_, 0, -123, Class104.aClass45_1627!!)
                     anIntArray1149!![anInt1173++] = class143!!.method1190(Class113.aClass105Array1744, 1, string, i_433_)
                     return
                 }
@@ -4690,7 +4690,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_435_ = anIntArray1149!![anInt1173]
                     val i_436_ = anIntArray1149!![anInt1173 + 1]
-                    val class143 = method1819(i_436_, 0, -79, Class104.aClass45_1627)
+                    val class143 = method1819(i_436_, 0, -79, Class104.aClass45_1627!!)
                     anIntArray1149!![anInt1173++] = class143!!.method1187(string, false, i_435_, Class113.aClass105Array1744)
                     return
                 }
@@ -4801,7 +4801,7 @@ object Class66 {
                 if (i == 4125) {
                     val string = aStringArray1152!![--anInt1170]
                     val i_455_ = anIntArray1149!![--anInt1173]
-                    val class143 = method1819(i_455_, 0, -114, Class104.aClass45_1627)
+                    val class143 = method1819(i_455_, 0, -114, Class104.aClass45_1627!!)
                     anIntArray1149!![anInt1173++] = class143!!.method1186(string, Class113.aClass105Array1744, false)
                     return
                 }
