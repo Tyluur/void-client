@@ -10,7 +10,7 @@ class Class348_Sub19_Sub1 : Class348_Sub19 {
     var anInt8988: Int
 
     fun method2944(class163: Class163): Class348_Sub19_Sub1 {
-        this.aByteArray8984 = class163.method1272(this.aByteArray8984, 1)
+        this.aByteArray8984 = class163.method1272(this.aByteArray8984!!, 1)
         this.anInt8988 = class163.method1270(this.anInt8988, (-85).toByte())
         if (this.anInt8986 == this.anInt8985) {
             this.anInt8985 = class163.method1275(-114, this.anInt8986)

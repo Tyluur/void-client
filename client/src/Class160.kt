@@ -1,54 +1,71 @@
+import Class50_Sub1.Companion.method462
+
 /* Class160 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class160 {
-    static int anInt2129;
-    static boolean aBoolean2130;
-    static float[] aFloatArray2131;
-    char aChar2132;
-    static boolean[][] aBooleanArrayArray2133 = {{true, true, true, true, true, true, true, true, true, true, true, true, true}, {true, true, true, false, false, false, true, true, false, false, false, false, true}, {true, false, false, false, false, true, true, true, false, false, false, false, false}, {false, false, true, true, true, true, false, false, false, false, false, false, false}, {true, true, true, true, true, true, false, false, false, false, false, false, false}, {true, true, true, false, false, true, true, true, false, false, false, false, false}, {true, true, false, false, false, true, true, true, false, false, false, false, true}, {true, true, false, false, false, false, false, true, false, false, false, false, false}, {false, true, true, true, true, true, true, true, false, false, false, false, false}, {true, false, false, false, true, true, true, true, true, true, false, false, false}, {true, true, true, true, true, false, false, false, true, true, false, false, false}, {true, true, true, false, false, false, false, false, false, false, true, true, false}, new boolean[13], {true, true, true, true, true, true, true, true, true, true, true, true, true}, new boolean[13]};
-    static int anInt2134;
-    int anInt2135 = 1;
-    static int anInt2136;
-    static float aFloat2137;
-
-    public static void method1254(byte i) {
-        aBooleanArrayArray2133 = null;
-        aFloatArray2131 = null;
-        if (i <= 11) aBooleanArrayArray2133 = null;
-    }
-
-    final void method1255(Class348_Sub49 class348_sub49, int i) {
-        for (; ; ) {
-            int i_0_ = class348_sub49.readUnsignedByte(255);
-            if (i_0_ == 0) break;
-            method1256(-90, i_0_, class348_sub49);
+* Visit http://jode.sourceforge.net/
+*/
+class Class160 {
+    var aChar2132: Char = 0.toChar()
+    var anInt2135: Int = 1
+    fun method1255(class348_sub49: Class348_Sub49, i: Int) {
+        while (true) {
+            val i_0_ = class348_sub49.readUnsignedByte(255)
+            if (i_0_ == 0) break
+            method1256(-90, i_0_, class348_sub49)
         }
-        if (i != -1) aBoolean2130 = false;
-        anInt2129++;
+        if (i != -1) aBoolean2130 = false
+        anInt2129++
     }
 
-    private final void method1256(int i, int i_1_, Class348_Sub49 class348_sub49) {
-        anInt2136++;
+    private fun method1256(i: Int, i_1_: Int, class348_sub49: Class348_Sub49) {
+        anInt2136++
         if (i_1_ != 1) {
-            if (i_1_ == 2) this.anInt2135 = 0;
-        } else this.aChar2132 = Class50_Sub1.method462(class348_sub49.readByte(-119), -128);
-        if (i >= -73) method1255(null, -43);
+            if (i_1_ == 2) this.anInt2135 = 0
+        } else this.aChar2132 = method462(class348_sub49.readByte(-119), -128)
     }
 
-    static final boolean method1257(int i, int i_2_, int i_3_) {
-        if (i > -23) aBooleanArrayArray2133 = null;
-        anInt2134++;
-        return (0x20 & i_3_) != 0;
-    }
+    companion object {
+        var anInt2129: Int = 0
+        @JvmField
+        var aBoolean2130: Boolean
+        var aFloatArray2131: FloatArray?
+        @JvmField
+        var aBooleanArrayArray2133: Array<BooleanArray?>? = arrayOf<BooleanArray?>(
+            booleanArrayOf(true, true, true, true, true, true, true, true, true, true, true, true, true),
+            booleanArrayOf(true, true, true, false, false, false, true, true, false, false, false, false, true),
+            booleanArrayOf(true, false, false, false, false, true, true, true, false, false, false, false, false),
+            booleanArrayOf(false, false, true, true, true, true, false, false, false, false, false, false, false),
+            booleanArrayOf(true, true, true, true, true, true, false, false, false, false, false, false, false),
+            booleanArrayOf(true, true, true, false, false, true, true, true, false, false, false, false, false),
+            booleanArrayOf(true, true, false, false, false, true, true, true, false, false, false, false, true),
+            booleanArrayOf(true, true, false, false, false, false, false, true, false, false, false, false, false),
+            booleanArrayOf(false, true, true, true, true, true, true, true, false, false, false, false, false),
+            booleanArrayOf(true, false, false, false, true, true, true, true, true, true, false, false, false),
+            booleanArrayOf(true, true, true, true, true, false, false, false, true, true, false, false, false),
+            booleanArrayOf(true, true, true, false, false, false, false, false, false, false, true, true, false),
+            BooleanArray(13),
+            booleanArrayOf(true, true, true, true, true, true, true, true, true, true, true, true, true),
+            BooleanArray(13)
+        )
+        var anInt2134: Int = 0
+        var anInt2136: Int = 0
+        var aFloat2137: Float = 0f
 
-    public Class160() {
-        /* empty */
-    }
+        @JvmStatic
+        fun method1254(i: Byte) {
+            aBooleanArrayArray2133 = null
+            aFloatArray2131 = null
+            if (i <= 11) aBooleanArrayArray2133 = null
+        }
 
-    static {
-        aFloatArray2131 = new float[4];
-        aBoolean2130 = false;
+        fun method1257(i: Int, i_2_: Int, i_3_: Int): Boolean {
+            if (i > -23) aBooleanArrayArray2133 = null
+            anInt2134++
+            return (0x20 and i_3_) != 0
+        }
+
+        init {
+            aFloatArray2131 = FloatArray(4)
+            aBoolean2130 = false
+        }
     }
 }

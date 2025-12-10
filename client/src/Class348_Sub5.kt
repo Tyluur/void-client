@@ -121,7 +121,7 @@ abstract class Class348_Sub5 internal constructor(var aHa_Sub2_6618: ha_Sub2) : 
                             Class105_Sub1.anInt8398++
                         }
                         if (Class367_Sub2.anInt7297 == 1) {
-                            Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992, 36.toByte()))
+                            Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
                             Class367_Sub2.anInt7297 = 2
                         }
                         if (Class367_Sub2.anInt7297 == 2) {

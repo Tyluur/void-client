@@ -4169,7 +4169,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             for (k1 in 0..5) Class239_Sub26.aClass54Array6114!![k1] = Class54()
 
             for (l1 in 0..24) {
-                Class161.anIntArray2145[l1] = 0
+                Class161.anIntArray2145!![l1] = 0
                 Class256.anIntArray3295[l1] = 0
                 Class186.anIntArray2497!![l1] = 0
             }

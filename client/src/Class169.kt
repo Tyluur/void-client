@@ -1,104 +1,115 @@
-/* Class169 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import Class299.Companion.method2253
+import jagex3.jagmisc.jagmisc.ping
+import java.net.InetAddress
 
-import jagex3.jagmisc.jagmisc;
-
-import java.net.InetAddress;
-
-public final class Class169 implements Runnable {
-    static int anInt2257;
-    private Class262 aClass262_2258 = new Class262();
-    private Thread aThread2259 = new Thread(this);
-    static Class105[] aClass105Array2260;
-    static Class19[] aClass19Array2261;
-    static int anInt2262;
-    static int anInt2263;
-    static int anInt2264 = 0;
-    static int anInt2265 = Class299.method2253(1600, 124);
-    static int anInt2266;
-
-    public final void run() {
-        anInt2263++;
-        for (; ; ) {
-            Class348_Sub26 class348_sub26;
-            synchronized (aClass262_2258) {
-                Class348 class348;
-                for (class348 = aClass262_2258.method1997(8); class348 == null; class348 = aClass262_2258.method1997(8)) {
-                    try {
-                        aClass262_2258.wait();
-                    } catch (InterruptedException interruptedexception) {
-                        /* empty */
-                    }
-                }
-                if (!(class348 instanceof Class348_Sub26)) break;
-                class348_sub26 = (Class348_Sub26) class348;
-            }
-            int i;
+class Class169 : Runnable {
+    private var aClass262_2258: Class262? = Class262()
+    private var aThread2259: Thread? = Thread(this)
+    override fun run() {
+        anInt2263++
+        while (true) {
+            val class348_sub26: Class348_Sub26 = runClass348() ?: break
+            var i: Int
             try {
-                byte[] is = InetAddress.getByName(class348_sub26.aString6888).getAddress();
-                i = jagmisc.ping(is[0], is[1], is[2], is[3], 1000L);
-            } catch (Throwable throwable) {
-                i = 1000;
+                val `is` = InetAddress.getByName(class348_sub26!!.aString6888).getAddress()
+                i = ping(`is`[0], `is`[1], `is`[2], `is`[3], 1000L)
+            } catch (throwable: Throwable) {
+                i = 1000
             }
-            class348_sub26.anInt6887 = i;
+            class348_sub26!!.anInt6887 = i
         }
     }
 
-    public static void method1300(byte i) {
-        if (i < -127) {
-            aClass105Array2260 = null;
-            aClass19Array2261 = null;
-        }
-    }
-
-    static final void method1301(r var_r, int i, int i_0_, int i_1_, boolean[] bools) {
-        if (aa_Sub1.aSArray5191 != Class332.aSArray4142) {
-            int i_2_ = Class348_Sub1_Sub1.aSArray8801[i].method3986(i_0_, i_1_, (byte) -93);
-            for (int i_3_ = 0; i_3_ <= i; i_3_++) {
-                if (bools == null || bools[i_3_]) {
-                    s var_s = Class348_Sub1_Sub1.aSArray8801[i_3_];
-                    if (var_s != null) var_s.wa(var_r, i_0_, i_2_ - var_s.method3986(i_0_, i_1_, (byte) -103), i_1_, 0, false);
+    fun runClass348(): Class348_Sub26? {
+        val class348_sub26: Class348_Sub26?
+        synchronized(aClass262_2258!!) {
+            var class348: Class348?
+            class348 = aClass262_2258!!.method1997(8)
+            while (class348 == null) {
+                try {
+                    (aClass262_2258 as Object).wait()
+                } catch (interruptedexception: InterruptedException) {
+                    /* empty */
                 }
+                class348 = aClass262_2258!!.method1997(8)
             }
+            if (class348 !is Class348_Sub26) return null
+            class348_sub26 = class348
         }
+        return class348_sub26
     }
 
-    public Class169() {
-        aThread2259.setDaemon(true);
-        aThread2259.start();
+    init {
+        aThread2259!!.setDaemon(true)
+        aThread2259!!.start()
     }
 
-    final Class348_Sub26 method1302(int i, String string) {
-        anInt2266++;
-        if (aThread2259 == null) throw new IllegalStateException("");
-        if (string == null) throw new IllegalArgumentException("");
-        if (i != -5255) aClass262_2258 = null;
-        Class348_Sub26 class348_sub26 = new Class348_Sub26(string);
-        method1304(1000, class348_sub26);
-        return class348_sub26;
+    fun method1302(i: Int, string: String): Class348_Sub26 {
+        anInt2266++
+        checkNotNull(aThread2259) { "" }
+        requireNotNull(string) { "" }
+        if (i != -5255) aClass262_2258 = null
+        val class348_sub26 = Class348_Sub26(string)
+        method1304(1000, class348_sub26)
+        return class348_sub26
     }
 
-    final void method1303(byte i) {
-        anInt2257++;
+    fun method1303(i: Byte) {
+        anInt2257++
         if (aThread2259 != null) {
-            method1304(1000, new Class348());
+            method1304(1000, Class348())
             try {
-                aThread2259.join();
-            } catch (InterruptedException interruptedexception) {
+                aThread2259!!.join()
+            } catch (interruptedexception: InterruptedException) {
                 /* empty */
             }
-            aThread2259 = null;
-            if (i != 16) anInt2264 = 87;
+            aThread2259 = null
+            if (i.toInt() != 16) anInt2264 = 87
         }
     }
 
-    private final void method1304(int i, Class348 class348) {
-        if (i != 1000) method1303((byte) 95);
-        synchronized (aClass262_2258) {
-            aClass262_2258.method1999(class348, -20180);
-            aClass262_2258.notify();
+    private fun method1304(i: Int, class348: Class348) {
+        if (i != 1000) method1303(95.toByte())
+        synchronized(aClass262_2258!!) {
+            aClass262_2258!!.method1999(class348, -20180)
+            (aClass262_2258 as Object).notify()
         }
-        anInt2262++;
+        anInt2262++
+    }
+
+    companion object {
+        var anInt2257: Int = 0
+        @JvmField
+        var aClass105Array2260: Array<Class105?>? = null
+        @JvmField
+        var aClass19Array2261: Array<Class19?>? = null
+        var anInt2262: Int = 0
+        var anInt2263: Int = 0
+        @JvmField
+        var anInt2264: Int = 0
+        @JvmField
+        var anInt2265: Int = method2253(1600, 124)
+        var anInt2266: Int = 0
+
+        @JvmStatic
+        fun method1300(i: Byte) {
+            if (i < -127) {
+                aClass105Array2260 = null
+                aClass19Array2261 = null
+            }
+        }
+
+        @JvmStatic
+        fun method1301(var_r: r?, i: Int, i_0_: Int, i_1_: Int, bools: BooleanArray?) {
+            if (aa_Sub1.aSArray5191 != Class332.aSArray4142) {
+                val i_2_ = Class348_Sub1_Sub1.aSArray8801!![i]!!.method3986(i_0_, i_1_, (-93).toByte())
+                for (i_3_ in 0..i) {
+                    if (bools == null || bools[i_3_]) {
+                        val var_s = Class348_Sub1_Sub1.aSArray8801!![i_3_]
+                        if (var_s != null) var_s.wa(var_r, i_0_, i_2_ - var_s.method3986(i_0_, i_1_, (-103).toByte()), i_1_, 0, false)
+                    }
+                }
+            }
+        }
     }
 }

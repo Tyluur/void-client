@@ -126,23 +126,23 @@ class Class64_Sub1 : Class64 {
         aClass109_5383 = class167.aClass109_2220
         if (class167 != aClass167_5367) {
             aClass167_5367 = class167
-            anIntArray5362 = aClass167_5367!!.anIntArray2222
-            anIntArray5399 = aClass167_5367!!.anIntArray2244
-            anIntArray5384 = aClass167_5367!!.anIntArray2214
-            anIntArray5392 = aClass167_5367!!.anIntArray2237
-            anIntArray5321 = aClass167_5367!!.anIntArray2234
-            anIntArray5343 = aClass167_5367!!.anIntArray2230
-            anIntArray5355 = aClass167_5367!!.anIntArray2213
-            anIntArray5359 = aClass167_5367!!.anIntArray2218
-            anIntArray5373 = aClass167_5367!!.anIntArray2241
-            anIntArray5398 = aClass167_5367!!.anIntArray2245
-            anIntArray5315 = aClass167_5367!!.anIntArray2238
-            anIntArray5371 = aClass167_5367!!.anIntArray2247
-            anIntArray5381 = aClass167_5367!!.anIntArray2235
-            anIntArray5377 = aClass167_5367!!.anIntArray2240
-            anIntArray5326 = aClass167_5367!!.anIntArray2236
-            anIntArray5318 = aClass167_5367!!.anIntArray2216
-            anIntArray5400 = aClass167_5367!!.anIntArray2242
+            anIntArray5362 = aClass167_5367!!.anIntArray2222!!
+            anIntArray5399 = aClass167_5367!!.anIntArray2244!!
+            anIntArray5384 = aClass167_5367!!.anIntArray2214!!
+            anIntArray5392 = aClass167_5367!!.anIntArray2237!!
+            anIntArray5321 = aClass167_5367!!.anIntArray2234!!
+            anIntArray5343 = aClass167_5367!!.anIntArray2230!!
+            anIntArray5355 = aClass167_5367!!.anIntArray2213!!
+            anIntArray5359 = aClass167_5367!!.anIntArray2218!!
+            anIntArray5373 = aClass167_5367!!.anIntArray2241!!
+            anIntArray5398 = aClass167_5367!!.anIntArray2245!!
+            anIntArray5315 = aClass167_5367!!.anIntArray2238!!
+            anIntArray5371 = aClass167_5367!!.anIntArray2247!!
+            anIntArray5381 = aClass167_5367!!.anIntArray2235!!
+            anIntArray5377 = aClass167_5367!!.anIntArray2240!!
+            anIntArray5326 = aClass167_5367!!.anIntArray2236!!
+            anIntArray5318 = aClass167_5367!!.anIntArray2216!!
+            anIntArray5400 = aClass167_5367!!.anIntArray2242!!
         }
     }
 
@@ -3423,7 +3423,7 @@ class Class64_Sub1 : Class64 {
         aFloatArrayArray5345 = arrayOfNulls<FloatArray>(anInt5351)
         val class358 = method565(255, anInt5351, class124, `is`)
         val class167: Class167 = aHa_Sub1_5353.method3724(Thread.currentThread())!!
-        val fs = class167.aFloatArray2226
+        val fs = class167.aFloatArray2226!!
         var bool_802_ = false
         for (i_803_ in 0..<anInt5351) {
             val i_804_ = `is`[i_803_]

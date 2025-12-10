@@ -20,10 +20,10 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         if ((0x1 and i) == 1) {
             if (aClass83_6278!!.aBoolean1442) {
                 this.aHa_Sub2_3684.method3771((-83).toByte(), aClass83_6278.aClass258_Sub1_1440)
-                Class160.aFloatArray2131[2] = 0.0f
-                Class160.aFloatArray2131[3] = ((this.aHa_Sub2_3684.anInt7735) % 4000).toFloat() / 4000.0f
-                Class160.aFloatArray2131[0] = 0.0f
-                Class160.aFloatArray2131[1] = 0.0f
+                Class160.aFloatArray2131!![2] = 0.0f
+                Class160.aFloatArray2131!![3] = ((this.aHa_Sub2_3684.anInt7735) % 4000).toFloat() / 4000.0f
+                Class160.aFloatArray2131!![0] = 0.0f
+                Class160.aFloatArray2131!![1] = 0.0f
                 glTexGenfv(8194, 9473, Class160.aFloatArray2131, 0)
             } else {
                 val i_5_ = (16 * (this.aHa_Sub2_3684.anInt7735 % 4000) / 4000)
@@ -31,10 +31,10 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             }
         } else if (aClass83_6278!!.aBoolean1442) {
             this.aHa_Sub2_3684.method3771((-126).toByte(), (aClass83_6278.aClass258_Sub1_1440))
-            Class160.aFloatArray2131[0] = 0.0f
-            Class160.aFloatArray2131[2] = 0.0f
-            Class160.aFloatArray2131[1] = 0.0f
-            Class160.aFloatArray2131[3] = 0.0f
+            Class160.aFloatArray2131!![0] = 0.0f
+            Class160.aFloatArray2131!![2] = 0.0f
+            Class160.aFloatArray2131!![1] = 0.0f
+            Class160.aFloatArray2131!![3] = 0.0f
             glTexGenfv(8194, 9473, Class160.aFloatArray2131, 0)
         } else this.aHa_Sub2_3684.method3771((-110).toByte(), aClass83_6278.aClass258_Sub3Array1444!![0])
         anInt6291++
@@ -44,10 +44,10 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         if (this.aHa_Sub2_3684.anInt7782 > 0) {
             val f = -0.5f / (this.aHa_Sub2_3684.anInt7782).toFloat()
             this.aHa_Sub2_3684.method3738(-15039, 1)
-            Class160.aFloatArray2131[3] = 0.25f + (this.aHa_Sub2_3684.aFloat7792) * f
-            Class160.aFloatArray2131[0] = 0.0f
-            Class160.aFloatArray2131[2] = f
-            Class160.aFloatArray2131[1] = 0.0f
+            Class160.aFloatArray2131!![3] = 0.25f + (this.aHa_Sub2_3684.aFloat7792) * f
+            Class160.aFloatArray2131!![0] = 0.0f
+            Class160.aFloatArray2131!![2] = f
+            Class160.aFloatArray2131!![1] = 0.0f
             glPushMatrix()
             glLoadIdentity()
             glTexGenfv(8192, 9474, Class160.aFloatArray2131, 0)
