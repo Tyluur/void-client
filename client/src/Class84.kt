@@ -174,8 +174,8 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
             }
             anInt1454++
             if (Class174.aClass105_2309 != null && Class348_Sub42_Sub15.aClass105_9658 != null && Class348_Sub42_Sub15.aClass105_9659 != null) {
-                val i_30_ = (-(Class348_Sub42_Sub15.aClass105_9659.method971() * 2) + i_25_) / Class174.aClass105_2309.method971()
-                for (i_31_ in 0..<i_30_) Class174.aClass105_2309.method974(i_24_ + (Class348_Sub42_Sub15.aClass105_9659.method971() - -(i_31_ * Class174.aClass105_2309.method971())), -Class174.aClass105_2309.method969() + (i_28_ + i_26_))
+                val i_30_ = (-(Class348_Sub42_Sub15.aClass105_9659.method971() * 2) + i_25_) / Class174.aClass105_2309!!.method971()
+                for (i_31_ in 0..<i_30_) Class174.aClass105_2309!!.method974(i_24_ + (Class348_Sub42_Sub15.aClass105_9659.method971() - -(i_31_ * Class174.aClass105_2309!!.method971())), -Class174.aClass105_2309!!.method969() + (i_28_ + i_26_))
                 val i_32_ = ((i_26_ - (i + Class348_Sub42_Sub15.aClass105_9659.method969())) / Class348_Sub42_Sub15.aClass105_9658.method969())
                 for (i_33_ in 0..<i_32_) {
                     Class348_Sub42_Sub15.aClass105_9658.method974(i_24_, (Class348_Sub42_Sub15.aClass105_9658.method969() * i_33_ + (i_28_ + i)))

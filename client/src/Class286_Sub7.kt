@@ -189,7 +189,7 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                                 Class286_Sub2.Companion.aStringArray6205!![i_2_] = Class286_Sub2.Companion.aStringArray6205!![1 + i_2_]
                                 ha.anIntArray4578!![i_2_] = ha.anIntArray4578!![i_2_ - -1]
                                 Class285.aStringArray4744!![i_2_] = Class285.aStringArray4744!![1 + i_2_]
-                                Class172.anIntArray2280[i_2_] = Class172.anIntArray2280[i_2_ - -1]
+                                Class172.anIntArray2280!![i_2_] = Class172.anIntArray2280!![i_2_ - -1]
                                 Class122.aBooleanArray1806!![i_2_] = Class122.aBooleanArray1806!![1 + i_2_]
                             }
                             Class126.anInt4985 = Class311.anInt3918

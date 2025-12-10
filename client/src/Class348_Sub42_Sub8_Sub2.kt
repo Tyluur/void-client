@@ -1243,7 +1243,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                 }
                                 Class286_Sub2.aStringArray6205!![i_154_] = string_150_
                                 Class285.aStringArray4744!![i_154_] = string_152_
-                                Class172.anIntArray2280[i_154_] = i_151_
+                                Class172.anIntArray2280!![i_154_] = i_151_
                                 string = null
                                 Class122.aBooleanArray1806!![i_154_] = bool_153_
                                 break
@@ -1261,7 +1261,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         Class286_Sub2.aStringArray6205!![(Class348_Sub40_Sub30.anInt9383)] = string_150_
                         ha.anIntArray4578!![Class348_Sub40_Sub30.anInt9383] = i
                         Class285.aStringArray4744!![Class348_Sub40_Sub30.anInt9383] = string_152_
-                        Class172.anIntArray2280[Class348_Sub40_Sub30.anInt9383] = i_151_
+                        Class172.anIntArray2280!![Class348_Sub40_Sub30.anInt9383] = i_151_
                         Class122.aBooleanArray1806!![Class348_Sub40_Sub30.anInt9383] = bool_153_
                         Class348_Sub40_Sub30.anInt9383++
                     }
@@ -1288,9 +1288,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             val string_160_ = Class286_Sub2.aStringArray6205!![i_157_]
                             Class286_Sub2.aStringArray6205!![i_157_] = Class286_Sub2.aStringArray6205!![i_157_ + 1]
                             Class286_Sub2.aStringArray6205!![i_157_ - -1] = string_160_
-                            val i_161_ = Class172.anIntArray2280[i_157_]
-                            Class172.anIntArray2280[i_157_] = Class172.anIntArray2280[1 + i_157_]
-                            Class172.anIntArray2280[i_157_ + 1] = i_161_
+                            val i_161_ = Class172.anIntArray2280!![i_157_]
+                            Class172.anIntArray2280!![i_157_] = Class172.anIntArray2280!![1 + i_157_]
+                            Class172.anIntArray2280!![i_157_ + 1] = i_161_
                             val bool_162_ = Class122.aBooleanArray1806!![i_157_]
                             Class122.aBooleanArray1806!![i_157_] = Class122.aBooleanArray1806!![1 + i_157_]
                             bool_156_ = false
@@ -1619,7 +1619,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
             }
             if (Class348_Sub3.aClass114_6584 == Class314_Sub1.aClass114_6340) {
                 Class299.aClass348_Sub49_Sub2_3813!!.anInt7197 += 28
-                if (Class299.aClass348_Sub49_Sub2_3813!!.method3352(-25541)) Class179.method1365((Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + -28, (-126).toByte(), Class299.aClass348_Sub49_Sub2_3813)
+                if (Class299.aClass348_Sub49_Sub2_3813!!.method3352(-25541)) Class179.method1365((Class299.aClass348_Sub49_Sub2_3813!!.anInt7197) + -28, (-126).toByte(), Class299.aClass348_Sub49_Sub2_3813!!)
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }

@@ -66,7 +66,7 @@ object Class164 {
         }
         if (Class56.aClass56_1023 == Class348_Sub42_Sub15.aClass56_9660) {
             if (Class175.aClass340_2327 == null) Class175.aClass340_2327 = Class340(Class348_Sub4.aClass248_6601, Class39.aClass112_520, Class52.aBigInteger4896, Class348_Sub42_Sub15.aBigInteger9657)
-            if (!Class175.aClass340_2327.method2674(7)) return 0
+            if (!Class175.aClass340_2327!!.method2674(7)) return 0
             method2965(null, 0, true, 0)
             Class286_Sub7.aBoolean6289 = !Class348_Sub14.method2804((-63).toByte())
             Class286_Sub7.aClass45_6277 = Class369_Sub2.method3571(false, (if (Class286_Sub7.aBoolean6289) 34 else 32), (-23).toByte(), 1)
@@ -108,7 +108,7 @@ object Class164 {
                 if (Class182.anInterface16Array2447[0].method60(-19079) < 100) return 0
                 if (Class182.anInterface16Array2447.size > 1 && Class186_Sub1.aClass111_5813!!.method1044(86) && (Class182.anInterface16Array2447[1].method60(i + 9581) < 100)) return 0
             }
-            Class170.method1311(5139, Class348_Sub8.aHa6654)
+            Class170.method1311(5139, Class348_Sub8.aHa6654!!)
             method3568(Class348_Sub8.aHa6654, 4)
             Class348_Sub49.method3379(2, 1)
         }
@@ -256,7 +256,7 @@ object Class164 {
             Class247.aClass45_3183.anInt634 = 2
             Class94.aClass45_1538!!.anInt634 = 2
             Class216.aClass45_4975.anInt634 = 2
-            Class174.aClass45_2306.anInt634 = 2
+            Class174.aClass45_2306!!.anInt634 = 2
             r_Sub2.aClass45_10480!!.anInt634 = 2
             Class78.aClass45_1322!!.anInt634 = 2
         }
@@ -292,7 +292,7 @@ object Class164 {
             if (Class348_Sub23_Sub2.aBoolean9038) method3553(false, 108.toByte(), 0)
             else method3553(false, 102.toByte(), Class316.aClass348_Sub51_3959.aClass239_Sub25_7251.method1829(-32350))
             method830(Class316.aClass348_Sub51_3959.aClass239_Sub8_7227.method1751(-32350), -1, 102.toByte(), false, -1)
-            Class170.method1311(5139, Class348_Sub8.aHa6654)
+            Class170.method1311(5139, Class348_Sub8.aHa6654!!)
             method3568(Class348_Sub8.aHa6654, i xor 0x6ff7.inv())
             Class255.method1933(Class21.aClass45_322, Class348_Sub8.aHa6654, true)
             method901(Class113.aClass105Array1744, 515880227)

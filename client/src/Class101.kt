@@ -121,13 +121,13 @@ public abstract class Class101 {
                 Class214.method1575(class105s, 0, Class341.aClass105Array4234, 0, Class239_Sub1.anInt5850)
                 var i_17_ = 0
                 while (Class239_Sub1.anInt5850 > i_17_) {
-                    Class175.anIntArray2330[i_17_] = Class341.aClass105Array4234[i_17_].method980()
+                    Class175.anIntArray2330!![i_17_] = Class341.aClass105Array4234[i_17_].method980()
                     i_17_++
                 }
                 if (i != 515880227) anInt1597 = 49
                 var i_18_ = Class239_Sub1.anInt5850
                 while ((i_18_ < Class341.aClass105Array4234.size)) {
-                    Class175.anIntArray2330[i_18_] = 12
+                    Class175.anIntArray2330!![i_18_] = 12
                     i_18_++
                 }
             } catch (runtimeexception: RuntimeException) {
@@ -163,7 +163,7 @@ public abstract class Class101 {
                     if (class110_sub1 == null || class110_sub1.anInt5788 != -1) Class215.anInt2834++
                     else {
                         if (Class176.aClass348_Sub26_2332 == null) Class176.aClass348_Sub26_2332 = (Class76.aClass169_1286!!.method1302(i xor 0x1967.inv(), class110_sub1.aString5794!!))
-                        val i_29_ = (Class176.aClass348_Sub26_2332.anInt6887)
+                        val i_29_ = (Class176.aClass348_Sub26_2332!!.anInt6887)
                         if (i_29_ == -1) break
                         class110_sub1.anInt5788 = i_29_
                         Class215.anInt2834++
