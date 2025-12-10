@@ -38,7 +38,7 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
             for (i in 0..<Class331.anInt4135) {
                 if (!r.aBooleanArray9718!![i]) {
                     val class211 = Class239_Sub14.aClass211Array5993!![i]
-                    val class348_sub1 = class211!!.aClass348_Sub1_2745
+                    val class348_sub1 = class211!!.aClass348_Sub1_2745!!
                     val i_3_ = class211.anInt2731
                     val i_4_ = (class348_sub1.method2723(-1) - Class348_Sub23_Sub2.anInt9037)
                     val i_5_ = 1 + (2 * i_4_ shr Class362.anInt4459)
@@ -53,7 +53,7 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
                     }
                     if (i_9_ >= Class348_Sub41.anInt7054) i_9_ = Class348_Sub41.anInt7054 - 1
                     for (i_10_ in i_8_..i_9_) {
-                        val i_11_ = class211.aShortArray2742[i_6_].toInt()
+                        val i_11_ = class211.aShortArray2742!![i_6_].toInt()
                         val i_12_ = i_11_ ushr 8
                         var i_13_ = i_6_ * i_5_ + i_12_
                         var i_14_ = i_7_ + (i_11_ ushr 8)
@@ -71,13 +71,13 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
                                     var bool = i_16_ - 1 >= i_14_
                                     var bool_18_ = i_16_ + 1 <= i_15_
                                     if (!bool && i_10_ + 1 <= i_9_) {
-                                        val i_19_ = (class211.aShortArray2742[i_6_ + 1]).toInt()
+                                        val i_19_ = (class211.aShortArray2742!![i_6_ + 1]).toInt()
                                         val i_20_ = i_7_ + (i_19_ ushr 8)
                                         val i_21_ = i_20_ + (i_19_ and 0xff)
                                         bool = i_16_ > i_20_ && i_16_ < i_21_
                                     }
                                     if (!bool_18_ && i_10_ - 1 >= i_8_) {
-                                        val i_22_ = (class211.aShortArray2742[i_6_ - 1]).toInt()
+                                        val i_22_ = (class211.aShortArray2742!![i_6_ - 1]).toInt()
                                         val i_23_ = i_7_ + (i_22_ ushr 8)
                                         val i_24_ = i_23_ + (i_22_ and 0xff)
                                         bool_18_ = i_16_ > i_23_ && i_16_ < i_24_
@@ -88,13 +88,13 @@ class Class171 internal constructor(private val aHa_Sub2_2268: ha_Sub2, i: Int, 
                                     var bool = i_16_ - 1 >= i_14_
                                     var bool_25_ = i_16_ + 1 <= i_15_
                                     if (!bool && i_10_ - 1 >= i_8_) {
-                                        val i_26_ = (class211.aShortArray2742[i_6_ - 1]).toInt()
+                                        val i_26_ = (class211.aShortArray2742!![i_6_ - 1]).toInt()
                                         val i_27_ = i_7_ + (i_26_ ushr 8)
                                         val i_28_ = i_27_ + (i_26_ and 0xff)
                                         bool = i_16_ > i_27_ && i_16_ < i_28_
                                     }
                                     if (!bool_25_ && i_10_ + 1 <= i_9_) {
-                                        val i_29_ = (class211.aShortArray2742[i_6_ + 1]).toInt()
+                                        val i_29_ = (class211.aShortArray2742!![i_6_ + 1]).toInt()
                                         val i_30_ = i_7_ + (i_29_ ushr 8)
                                         val i_31_ = i_30_ + (i_29_ and 0xff)
                                         bool_25_ = i_16_ > i_30_ && i_16_ < i_31_

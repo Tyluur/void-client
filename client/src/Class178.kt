@@ -69,7 +69,7 @@ object Class178 {
             if (bool_3_ != true) aClass29_2352 = null
             while ( /**/i_7_ < Exception_Sub1.aClass255_112!!.anInt3271) {
                 val class213 = Exception_Sub1.aClass255_112!!.method1940(-74, i_7_)
-                if ((!bool_1_ || class213.aBoolean2755) && class213.anInt2833 == -1 && class213.anInt2812 == -1 && class213.anInt2799 == 0 && class213.aString2795.lowercase(Locale.getDefault()).indexOf(string_2_) != -1) {
+                if ((!bool_1_ || class213.aBoolean2755) && class213.anInt2833 == -1 && class213.anInt2812 == -1 && class213.anInt2799 == 0 && class213.aString2795!!.lowercase(Locale.getDefault()).indexOf(string_2_) != -1) {
                     if (i_0_ != -1) {
                         if (bool) {
                             if (string != class213.method1561(string_5_, i_0_, -1511086397)) {

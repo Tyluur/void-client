@@ -60,13 +60,13 @@ class Class73 internal constructor(class45: Class45?, string: String?) : Interfa
 
         fun method742(i: Int, i_0_: Int): Class189 {
             anInt4777++
-            var class189 = Class217.aClass60_2844.method583(i_0_.toLong(), -104) as Class189?
+            var class189 = Class217.aClass60_2844!!.method583(i_0_.toLong(), -104) as Class189?
             if (class189 != null) return class189
             val `is` = Class369_Sub3.aClass45_8601!!.method410(-1860, 0, i_0_)
             if (i != 104) method741(98.toByte())
             class189 = Class189()
             if (`is` != null) class189.method1419(i_0_, Class348_Sub49(`is`), 64.toByte())
-            Class217.aClass60_2844.method582(class189, i_0_.toLong(), (-114).toByte())
+            Class217.aClass60_2844!!.method582(class189, i_0_.toLong(), (-114).toByte())
             return class189
         }
 

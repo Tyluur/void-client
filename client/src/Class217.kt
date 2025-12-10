@@ -1,80 +1,84 @@
+import Class16.method259
+
 /* Class217 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class217 internal constructor(class230: Class230?, i: Int, class45: Class45?) {
+    private val aClass45_2842: Class45?
+    var anInt2845: Int = 0
+    private var aClass60_2848: Class60? = Class60(64)
 
-public final class Class217 {
-    static int anInt2840;
-    static int anInt2841;
-    private final Class45 aClass45_2842;
-    static int anInt2843;
-    static Class60 aClass60_2844 = new Class60(64);
-    int anInt2845;
-    static int anInt2846;
-    static int anInt2847;
-    private Class60 aClass60_2848 = new Class60(64);
-
-    public static void method1585(int i) {
-        if (i != -1) method1585(-34);
-        aClass60_2844 = null;
+    fun method1587(i: Int, i_0_: Int) {
+        if (i_0_ != 3758) aClass60_2848 = null
+        synchronized(aClass60_2848!!) {
+            aClass60_2848!!.method578(2, i)
+        }
+        anInt2841++
     }
 
-    static final void method1586(boolean bool, byte i, String string) {
-        if (i >= -51) aClass60_2844 = null;
-        anInt2840++;
-        Class16.method259(-1, 113, bool, string, -1);
+    fun method1588(i: Int, i_1_: Int): Class159 {
+        anInt2847++
+        var class159: Class159?
+        synchronized(aClass60_2848!!) {
+            class159 = aClass60_2848!!.method583(i_1_.toLong(), -126) as Class159?
+        }
+        if (class159 != null) return class159
+        val `is`: ByteArray?
+        synchronized(aClass45_2842!!) {
+            `is` = aClass45_2842.method410(-1860, 16, i_1_)
+            if (i >= -17) aClass60_2848 = null
+        }
+        class159 = Class159()
+        if (`is` != null) class159.method1253(Class348_Sub49(`is`), true)
+        synchronized(aClass60_2848!!) {
+            aClass60_2848!!.method582(class159, i_1_.toLong(), (-124).toByte())
+        }
+        return class159
     }
 
-    final void method1587(int i, int i_0_) {
-        if (i_0_ != 3758) aClass60_2848 = null;
-        synchronized (aClass60_2848) {
-            aClass60_2848.method578(2, i);
+    fun method1589(i: Byte) {
+        anInt2843++
+        synchronized(aClass60_2848!!) {
+            aClass60_2848!!.method590(0)
         }
-        anInt2841++;
+        if (i < 126) method1588(-98, -35)
     }
 
-    final Class159 method1588(int i, int i_1_) {
-        anInt2847++;
-        Class159 class159;
-        synchronized (aClass60_2848) {
-            class159 = (Class159) aClass60_2848.method583(i_1_, -126);
-        }
-        if (class159 != null) return class159;
-        byte[] is;
-        synchronized (aClass45_2842) {
-            is = aClass45_2842.method410(-1860, 16, i_1_);
-            if (i >= -17) aClass60_2848 = null;
-        }
-        class159 = new Class159();
-        if (is != null) class159.method1253(new Class348_Sub49(is), true);
-        synchronized (aClass60_2848) {
-            aClass60_2848.method582(class159, i_1_, (byte) -124);
-        }
-        return class159;
-    }
-
-    final void method1589(byte i) {
-        anInt2843++;
-        synchronized (aClass60_2848) {
-            aClass60_2848.method590(0);
-        }
-        if (i < 126) method1588(-98, -35);
-    }
-
-    final void method1590(int i) {
-        anInt2846++;
-        if (i != 0) this.anInt2845 = -97;
-        synchronized (aClass60_2848) {
-            aClass60_2848.method587(i ^ ~0x6b);
+    fun method1590(i: Int) {
+        anInt2846++
+        if (i != 0) this.anInt2845 = -97
+        synchronized(aClass60_2848!!) {
+            aClass60_2848!!.method587(i xor 0x6b.inv())
         }
     }
 
-    Class217(Class230 class230, int i, Class45 class45) {
+    init {
         try {
-            aClass45_2842 = class45;
-            if (aClass45_2842 != null) this.anInt2845 = aClass45_2842.method407(0, 16);
-            else this.anInt2845 = 0;
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("rv.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (class45 != null ? "{...}" : "null") + ')'));
+            aClass45_2842 = class45
+            if (aClass45_2842 != null) this.anInt2845 = aClass45_2842.method407(0, 16)
+            else this.anInt2845 = 0
+        } catch (runtimeexception: RuntimeException) {
+            throw Class348_Sub17.method2929(runtimeexception, ("rv.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + (if (class45 != null) "{...}" else "null") + ')'))
+        }
+    }
+
+    companion object {
+        var anInt2840: Int = 0
+        var anInt2841: Int = 0
+        var anInt2843: Int = 0
+        var aClass60_2844: Class60? = Class60(64)
+        var anInt2846: Int = 0
+        var anInt2847: Int = 0
+        @JvmStatic
+        fun method1585(i: Int) {
+            if (i != -1) method1585(-34)
+            aClass60_2844 = null
+        }
+
+        fun method1586(bool: Boolean, i: Byte, string: String?) {
+            if (i >= -51) aClass60_2844 = null
+            anInt2840++
+            method259(-1, 113, bool, string, -1)
         }
     }
 }

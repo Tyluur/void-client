@@ -582,7 +582,7 @@ open class Class75 {
                     val i_123_ = class51.anInt875
                     if (i_123_ != -1) {
                         val class218: Class218? = aClass141_1242!!.method1173(31.toByte(), i_123_)
-                        val class105 = class218!!.method1596((if (class51.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_ha)
+                        val class105 = class218!!.method1596((if (class51.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_ha!!)
                         if (class105 != null) {
                             var i_124_ = i_119_ * class105.method966() shr 2
                             var i_125_ = i_120_ * class105.method980() shr 2

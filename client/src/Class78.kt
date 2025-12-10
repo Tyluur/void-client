@@ -24,7 +24,7 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
             if (aLong1321 != -1L && (aLong1321 > aLong1324 || (aLong1324 > anInt1314.toLong() + aLong1321))) method791(-1)
             if (aLong1321 != -1L && (aLong1324 + i_0_.toLong() > aByteArray1305.size.toLong() + aLong1321)) {
                 val i_1_ = (aByteArray1305.size.toLong() + (aLong1321 + -aLong1324)).toInt()
-                Class214.method1577(`is`, i, aByteArray1305, (-aLong1321 + aLong1324).toInt(), i_1_)
+                Class214.method1577(`is`!!, i, aByteArray1305, (-aLong1321 + aLong1324).toInt(), i_1_)
                 i += i_1_
                 i_0_ -= i_1_
                 aLong1324 += i_1_.toLong()
@@ -47,14 +47,14 @@ class Class78 internal constructor(private val aClass234_1312: Class234, i: Int,
                 else if ((aLong1324 < anInt1320.toLong() + aLong1319) && (i_0_.toLong() + aLong1324 >= aLong1319 + anInt1320.toLong())) l_2_ = anInt1320.toLong() + aLong1319
                 if (l > -1L && l_2_ > l) {
                     val i_3_ = (l_2_ + -l).toInt()
-                    Class214.method1577(`is`, (-aLong1324 + l + i.toLong()).toInt(), aByteArray1311, (-aLong1319 + l).toInt(), i_3_)
+                    Class214.method1577(`is`!!, (-aLong1324 + l + i.toLong()).toInt(), aByteArray1311, (-aLong1319 + l).toInt(), i_3_)
                 }
                 aLong1324 += i_0_.toLong()
                 return
             }
             if (i_0_ > 0) {
                 if (aLong1321 == -1L) aLong1321 = aLong1324
-                Class214.method1577(`is`, i, aByteArray1305, (-aLong1321 + aLong1324).toInt(), i_0_)
+                Class214.method1577(`is`!!, i, aByteArray1305, (-aLong1321 + aLong1324).toInt(), i_0_)
                 aLong1324 += i_0_.toLong()
                 if (aLong1324 + -aLong1321 > anInt1314.toLong()) anInt1314 = (-aLong1321 + aLong1324).toInt()
                 return

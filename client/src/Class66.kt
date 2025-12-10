@@ -145,7 +145,7 @@ object Class66 {
                 val class46s_4_: Array<Class46?> = Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_3_]!!
                 val i_5_ = class46s_4_.size
                 Class369_Sub2.aClass46ArrayArray8584!![i_3_] = arrayOfNulls<Class46>(i_5_)
-                class46s = Class369_Sub2.aClass46ArrayArray8584!![i_3_]
+                class46s = Class369_Sub2.aClass46ArrayArray8584!![i_3_]!!
                 Class214.method1575(class46s_4_, 0, class46s, 0, class46s_4_.size)
             }
             var i_6_: Int
@@ -4828,7 +4828,7 @@ object Class66 {
                     val i_459_ = anIntArray1149!![anInt1173]
                     val i_460_ = anIntArray1149!![anInt1173 + 1]
                     val class213 = Exception_Sub1.aClass255_112!!.method1940(112, i_459_)
-                    if (i_460_ >= 1 && i_460_ <= 5 && (class213.aStringArray2763[i_460_ - 1] != null)) aStringArray1152!![anInt1170++] = (class213.aStringArray2763[i_460_ - 1])
+                    if (i_460_ >= 1 && i_460_ <= 5 && (class213.aStringArray2763!![i_460_ - 1] != null)) aStringArray1152!![anInt1170++] = (class213.aStringArray2763!![i_460_ - 1])
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -5239,7 +5239,7 @@ object Class66 {
                 val class46s_521_: Array<Class46?> = Class348_Sub40_Sub33.aClass46ArrayArray9427!![i_520_]!!
                 val i_522_ = class46s_521_.size
                 Class369_Sub2.aClass46ArrayArray8584!![i_520_] = arrayOfNulls<Class46>(i_522_)
-                class46s = Class369_Sub2.aClass46ArrayArray8584!![i_520_]
+                class46s = Class369_Sub2.aClass46ArrayArray8584!![i_520_]!!
                 Class214.method1575(class46s_521_, 0, class46s, 0, class46s_521_.size)
             }
             var i_523_: Int

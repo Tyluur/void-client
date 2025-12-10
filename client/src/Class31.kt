@@ -81,7 +81,7 @@ class Class31 {
 
     private fun method330(var_ha: ha, i: Int) {
         anInt446++
-        val class45 = this.aClass219_438!!.aClass45_2873
+        val class45 = this.aClass219_438!!.aClass45_2873!!
         if (anInt421 >= 0 && this.aClass219_438!!.aClass60_2862.method583(anInt421.toLong(), 121) == null && class45.method421(false, anInt421)) {
             val class207 = Class207.method1512(class45, anInt421)
             this.aClass219_438!!.aClass60_2862.method582(var_ha.method3691(class207, true), anInt421.toLong(), (-112).toByte())

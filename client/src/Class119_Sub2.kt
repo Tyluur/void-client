@@ -54,7 +54,7 @@ class Class119_Sub2 internal constructor(var_ha_Sub2: ha_Sub2?, i: Int, `is`: By
             anInt4829++
             if (i_0_ < 87) method1078(null, 22, -24)
             val is_1_ = ShortArray(i)
-            Class214.method1576(`is`, 0, is_1_, 0, i)
+            Class214.method1576(`is`!!, 0, is_1_, 0, i)
             return is_1_
         }
 

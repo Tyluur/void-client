@@ -90,14 +90,14 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
                 if (Class348_Sub40_Sub6.Companion.anInt9139 < i_3_ + i_5_) {
                     val i_10_: Int = Class348_Sub40_Sub6.Companion.anInt9139 + -i_3_
                     for (i_11_ in 0..<i_2_) {
-                        val is_12_: IntArray? = `is`!![i_11_ + i_4_]
+                        val is_12_: IntArray = `is`!![i_11_ + i_4_]!!
                         Class214.method1579(is_12_, i_3_, i_10_, i_6_)
                         Class214.method1579(is_12_, 0, i_5_ - i_10_, i_6_)
                     }
                 } else {
                     var i_13_ = 0
                     while (i_2_ > i_13_) {
-                        Class214.method1579(`is`!![i_13_ + i_4_], i_3_, i_5_, i_6_)
+                        Class214.method1579(`is`!![i_13_ + i_4_]!!, i_3_, i_5_, i_6_)
                         i_13_++
                     }
                 }
