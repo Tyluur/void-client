@@ -135,15 +135,15 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
         class213 = Class213()
         class213.aClass255_2761 = this
         class213.anInt2769 = i_13_
-        class213.aStringArray2811 = arrayOf<String?>(null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null)
-        class213.aStringArray2763 = (arrayOf<String?>(null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)))
+        class213.aStringArray2811 = arrayOf<String?>(null, null, Class274.aClass274_3490!!.method2063(this.anInt3286, 544), null, null)
+        class213.aStringArray2763 = (arrayOf<String?>(null, null, null, null, Class274.aClass274_3491!!.method2063(this.anInt3286, 544)))
         if (`is` != null) class213.method1569(768, Class348_Sub49(`is`))
         class213.method1563(92.toByte())
         val i_14_ = 4 / ((i - 13) / 59)
         if (class213.anInt2833 != -1) class213.method1570(1, method1940(90, class213.anInt2758), method1940(101, class213.anInt2833))
         if (class213.anInt2812 != -1) class213.method1556(method1940(-58, class213.anInt2778), (-29).toByte(), method1940(-82, class213.anInt2812))
         if (!aBoolean3269 && class213.aBoolean2783) {
-            class213.aString2795 = Class274.aClass274_3488.method2063(this.anInt3286, 544)
+            class213.aString2795 = Class274.aClass274_3488!!.method2063(this.anInt3286, 544)
             class213.anInt2827 = 0
             class213.aStringArray2811 = aStringArray3290
             class213.aStringArray2763 = aStringArray3293
@@ -204,8 +204,8 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 val i_23_ = -1 + aClass45_3267.method414(-1)
                 this.anInt3271 = aClass45_3267.method407(0, i_23_) + i_23_ * 256
             } else this.anInt3271 = 0
-            aStringArray3290 = (arrayOf<String?>(null, null, Class274.aClass274_3490.method2063(this.anInt3286, 544), null, null))
-            aStringArray3293 = (arrayOf<String?>(null, null, null, null, Class274.aClass274_3491.method2063(this.anInt3286, 544)))
+            aStringArray3290 = (arrayOf<String?>(null, null, Class274.aClass274_3490!!.method2063(this.anInt3286, 544), null, null))
+            aStringArray3293 = (arrayOf<String?>(null, null, null, null, Class274.aClass274_3491!!.method2063(this.anInt3286, 544)))
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ub.<init>(" + (if (class230 != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class326 != null) "{...}" else "null") + ',' + (if (class45 != null) "{...}" else "null") + ',' + (if (class45_22_ != null) "{...}" else "null") + ')'))
         }

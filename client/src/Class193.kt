@@ -47,7 +47,7 @@ class Class193 internal constructor(private val aClass377_2585: Class377, i: Int
                     return class279
                 } catch (throwable: Throwable) {
                     try {
-                        val class279_sub2 = Class279_Sub2(class297, i_0_)
+                        val class279_sub2 = Class279_Sub2(class297!!, i_0_)
                         class279_sub2.anInt3620 = i
                         class279_sub2.anIntArray3603 = IntArray((if (!Class282.aBoolean3652) 1 else 2) * 256)
                         class279_sub2.method2095(component)

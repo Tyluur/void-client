@@ -1,44 +1,43 @@
-/* Class279_Sub2 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import java.awt.Component
 
-import java.awt.*;
-
-public final class Class279_Sub2 extends Class279 {
-    private final int anInt6181;
-    private static Interface20 anInterface20_6182;
-
-    final void method2083() {
-        anInterface20_6182.method77((byte) 98, anInt6181);
+class Class279_Sub2 internal constructor(class297: Class297, private val anInt6181: Int) : Class279() {
+    override fun method2083() {
+        anInterface20_6182!!.method77(98.toByte(), anInt6181)
     }
 
-    final int method2081() {
-        return anInterface20_6182.method75((byte) -93, anInt6181);
+    override fun method2081(): Int {
+        return anInterface20_6182!!.method75((-93).toByte(), anInt6181)
     }
 
-    public static void method2097() {
-        anInterface20_6182 = null;
+    override fun method2091() {
+        anInterface20_6182!!.method74(anInt6181, 122.toByte())
     }
 
-    final void method2091() {
-        anInterface20_6182.method74(anInt6181, (byte) 122);
+    @Throws(Exception::class)
+    override fun method2095(component: Component?) {
+        anInterface20_6182!!.method78(Class22.anInt339, Class282.aBoolean3652, component, 27929)
     }
 
-    final void method2095(Component component) throws Exception {
-        anInterface20_6182.method78(Class22.anInt339, Class282.aBoolean3652, component, 27929);
+    override fun method2094() {
+        anInterface20_6182!!.method76(anInt6181, this.anIntArray3603!!)
     }
 
-    final void method2094() {
-        anInterface20_6182.method76(anInt6181, this.anIntArray3603);
+    init {
+        anInterface20_6182 = class297.method2244(21) as Interface20?
     }
 
-    Class279_Sub2(Class297 class297, int i) {
-        anInterface20_6182 = (Interface20) class297.method2244(21);
-        anInt6181 = i;
+    @Throws(Exception::class)
+    override fun method2082(i: Int) {
+        require(i <= 32768)
+        anInterface20_6182!!.method79(i, anInt6181, 112.toByte())
     }
 
-    final void method2082(int i) throws Exception {
-        if (i > 32768) throw new IllegalArgumentException();
-        anInterface20_6182.method79(i, anInt6181, (byte) 112);
+    companion object {
+        private var anInterface20_6182: Interface20? = null
+
+        @JvmStatic
+        fun method2097() {
+            anInterface20_6182 = null
+        }
     }
 }

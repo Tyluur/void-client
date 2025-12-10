@@ -221,7 +221,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                     }
                 }
                 if (bool) {
-                    if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aHa6654)
+                    if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(100%)"), 2, Class348_Sub8.aHa6654)
                     method3570(false)
                     Class348_Sub18.method2938(102.toByte())
                     method1772(i xor 0x41)

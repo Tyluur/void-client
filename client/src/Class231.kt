@@ -58,7 +58,7 @@ class Class231 internal constructor(string: String?, @JvmField var anInt2995: In
             val i_5_ = -10660793
             Class318_Sub7.method2509(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_4_, var_ha, Class135_Sub1.anInt4717 - -i_3_, i_5_, true, Class237_Sub1.anInt5819, -16777216)
             if (i > 98) {
-                Class262.aClass324_3326!!.method2576(Class274.aClass274_3507.method2063(Class348_Sub33.anInt6967, 544), i_5_, i_4_ + (Class348_Sub42_Sub5.anInt9532 - -14), i_3_ + (Class135_Sub1.anInt4717 + 3), -1, -125)
+                Class262.aClass324_3326!!.method2576(Class274.aClass274_3507!!.method2063(Class348_Sub33.anInt6967, 544), i_5_, i_4_ + (Class348_Sub42_Sub5.anInt9532 - -14), i_3_ + (Class135_Sub1.anInt4717 + 3), -1, -125)
                 val i_6_ = Class258_Sub4.aClass373_8552!!.method3597(true) - -i_3_
                 val i_7_ = i_4_ + Class258_Sub4.aClass373_8552!!.method3594(127.toByte())
                 if (Class348_Sub42_Sub6.aBoolean9535) {

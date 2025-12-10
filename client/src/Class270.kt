@@ -1,14 +1,18 @@
 /* Class270 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class270 {
+    var anInterface8_3463: Interface8? = null
 
-public final class Class270 {
-    Interface8 anInterface8_3463;
-    static int[] anIntArray3464 = new int[6];
-    static int anInt3465;
+    companion object {
+        var anIntArray3464: IntArray? = IntArray(6)
+        @JvmField
+        var anInt3465: Int = 0
 
-    public static void method2043(boolean bool) {
-        if (bool != true) method2043(false);
-        anIntArray3464 = null;
+        @JvmStatic
+        fun method2043(bool: Boolean) {
+            if (bool != true) method2043(false)
+            anIntArray3464 = null
+        }
     }
 }

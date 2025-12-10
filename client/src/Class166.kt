@@ -94,7 +94,7 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
             do {
                 try {
                     anInt2181++
-                    Class275.aHashtable3548.put(string, file)
+                    Class275.aHashtable3548!!.put(string, file)
                     if (i == 64) break
                     aClass114_2183 = null
                 } catch (runtimeexception: RuntimeException) {

@@ -90,12 +90,12 @@ class Class239_Sub14 : Class239 {
             anInt5983++
             if (Class348_Sub31.anInt6923 == -1) return 1
             if (i != Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350)) {
-                Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3496.method2063(Class348_Sub33.anInt6967, 544), true, i)
+                Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3496!!.method2063(Class348_Sub33.anInt6967, 544), true, i)
                 if (i != Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350)) return -1
             }
             try {
                 val dimension = Class305.aCanvas3869.getSize()
-                Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3496.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654)
+                Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, Class274.aClass274_3496!!.method2063(Class348_Sub33.anInt6967, 544), 2, Class348_Sub8.aHa6654)
                 val class124 = Class300.method2277(0, aa_Sub3.aClass45_5207, Class348_Sub31.anInt6923, -1)
                 val l = Class62.method599(-88)
                 Class348_Sub8.aHa6654!!.la()
@@ -105,7 +105,7 @@ class Class239_Sub14 : Class239 {
                 Class348_Sub8.aHa6654!!.xa(1.0f)
                 if (i_1_ >= -66) aClass190_5990 = null
                 Class348_Sub8.aHa6654!!.ZA(16777215, 0.5f, 0.5f, 20.0f, -50.0f, 30.0f)
-                val class64 = Class348_Sub8.aHa6654!!.method3625(class124, 2048, 64, 64, 768)!!
+                val class64 = Class348_Sub8.aHa6654!!.method3625(class124, 2048, 64, 64, 768)
                 var i_3_ = 0
                 while_80_@ for (i_4_ in 0..499) {
                     Class348_Sub8.aHa6654!!.GA(0)

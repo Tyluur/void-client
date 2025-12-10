@@ -4180,7 +4180,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172
             Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502
             Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889
-            Class239_Sub4.aString5882 = Class274.aClass274_3509.method2063(Class348_Sub33.anInt6967, 544)
+            Class239_Sub4.aString5882 = Class274.aClass274_3509!!.method2063(Class348_Sub33.anInt6967, 544)
             Class316.aClass348_Sub51_3959.method3429(74.toByte(), Class316.aClass348_Sub51_3959.aClass239_Sub14_7264, Class316.aClass348_Sub51_3959.aClass239_Sub14_7250.method1778(i + -32350))
             Class316.aClass348_Sub51_3959.method3429(74.toByte(), Class316.aClass348_Sub51_3959.aClass239_Sub27_7261, Class316.aClass348_Sub51_3959.aClass239_Sub27_7255.method1840(-32350))
             Class135_Sub1.anInt4718 = 0

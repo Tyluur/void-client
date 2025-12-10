@@ -83,7 +83,7 @@ class Class135_Sub1 : Class135, Interface2 {
             val i_8_ = Class63.anInt1117
             val i_9_ = -3 + Class237_Sub1.anInt5819
             val i_10_ = 20
-            method2270(Class63.anInt1117, i_4_ + anInt4717, var_ha, Class274.aClass274_3507.method2063(Class348_Sub33.anInt6967, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, Class237_Sub1.anInt5819, i_10_)
+            method2270(Class63.anInt1117, i_4_ + anInt4717, var_ha, Class274.aClass274_3507!!.method2063(Class348_Sub33.anInt6967, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, Class237_Sub1.anInt5819, i_10_)
             val i_11_ = i_4_ + Class258_Sub4.aClass373_8552!!.method3597(true)
             if (i != 16) method1154(9.toByte())
             val i_12_ = i_5_ + Class258_Sub4.aClass373_8552!!.method3594(95.toByte())

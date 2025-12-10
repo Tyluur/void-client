@@ -34,7 +34,7 @@ object Class228 {
                 while (enumeration.hasMoreElements()) {
                     val string = enumeration.nextElement() as String?
                     try {
-                        val file = Class275.aHashtable3548.get(string) as File
+                        val file = Class275.aHashtable3548!!.get(string) as File
                         val var_class_1_ = Player.aHashtable10565!!.get(string) as Class<*>?
                         val vector = (field.get(var_class_1_!!.getClassLoader()) as Vector<*>)
                         for (i in vector.indices) {

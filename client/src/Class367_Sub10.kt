@@ -88,7 +88,7 @@ class Class367_Sub10 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_h
         @JvmStatic
         fun method3553(bool: Boolean, i: Byte, i_1_: Int) {
             if (i <= 98) method3553(true, 34.toByte(), 120)
-            method1971(-2, Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544), bool, i_1_)
+            method1971(-2, Class274.aClass274_3495!!.method2063(Class348_Sub33.anInt6967, 544), bool, i_1_)
             anInt7388++
         }
 

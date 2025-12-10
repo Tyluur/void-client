@@ -117,7 +117,7 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
         }
         val class276: Class276 = aClass276Array6704!![anIntArray6709!![i_38_]]!!
         val i_49_ = class276.anInt3557
-        val i_50_ = class276.anIntArray3556[i_49_]
+        val i_50_ = class276.anIntArray3556!![i_49_]
         val bool_51_: Boolean = !aClass210Array6715!![i_50_]!!.method1534()
         val bool_52_ = bool_51_
         for (i_53_ in 0..<class276.anInt3555) {
@@ -127,7 +127,7 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
         }
         if (!bool_51_) {
             val i_54_ = class276.anInt3557
-            val i_55_ = class276.anIntArray3556[i_54_]
+            val i_55_ = class276.anIntArray3556!![i_54_]
             aClass210Array6715!![i_55_]!!.method1530(aFloatArray6707!!, i_39_ shr 1)
         }
         if (bool_51_) {
