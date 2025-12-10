@@ -1,26 +1,25 @@
-/* Class224 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import netscape.javascript.JSObject
+import java.applet.Applet
 
-import netscape.javascript.JSObject;
-
-import java.applet.Applet;
-
-public final class Class224 {
-    static final void method1615(Applet applet, int i, String string) throws Throwable {
-        JSObject.getWindow(applet).eval(string);
+object Class224 {
+    @Throws(Throwable::class)
+    fun method1615(applet: Applet?, i: Int, string: String?) {
+        JSObject.getWindow(applet).eval(string)
         if (i == -15092) {
             /* empty */
         }
     }
 
-    static final Object method1616(String string, Object[] objects, Applet applet, byte i) throws Throwable {
-        if (i <= 0) return null;
-        return JSObject.getWindow(applet).call(string, objects);
+    @Throws(Throwable::class)
+    fun method1616(string: String?, objects: Array<Any?>, applet: Applet?, i: Byte): Any? {
+        if (i <= 0) return null
+        return JSObject.getWindow(applet).call(string, *objects)
     }
 
-    static final Object method1617(byte i, Applet applet, String string) throws Throwable {
-        if (i != 125) return null;
-        return JSObject.getWindow(applet).call(string, null);
+    @JvmStatic
+    @Throws(Throwable::class)
+    fun method1617(i: Byte, applet: Applet?, string: String?): Any? {
+        if (i.toInt() != 125) return null
+        return JSObject.getWindow(applet).call(string, null)
     }
 }

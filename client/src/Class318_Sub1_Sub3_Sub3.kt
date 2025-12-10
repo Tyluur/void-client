@@ -192,7 +192,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         anInt10249++
         val i_1_ = method2421(127.toByte())
         if (i_1_ != -1) return Class64_Sub3.aClass261_5558!!.method1983(i_1_, 32)
-        return Class225.aClass225_2931
+        return Class225.aClass225_2931!!
     }
 
     override fun method2409(i: Byte) {
@@ -215,7 +215,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
         val i_6_ = 3 / ((-22 - i) / 58)
         val class225 = method2422(72.toByte())
         var i_7_ = 256
-        if (class225.anIntArray2907 != null && class225.anIntArray2907[i_3_] > 0) i_7_ = class225.anIntArray2907[i_3_]
+        if (class225.anIntArray2907 != null && class225.anIntArray2907!![i_3_] > 0) i_7_ = class225.anIntArray2907!![i_3_]
         if (i_4_ == -1) {
             if (this.anIntArray10296!![i_3_] == -1) return true
             val i_8_ = this.aClass264_10217.method2019((-41).toByte())

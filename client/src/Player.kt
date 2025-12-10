@@ -519,19 +519,19 @@ class Player : Class318_Sub1_Sub3_Sub3() {
             } else i_79_ = i_79_ or 0x7
             val class64_80_ = (class368.method3562(this.anInt10240, var_ha, this.anInt10243, i_79_, this.anInt10283, Class10.aClass87_191, 46.toByte()).also { this.aClass64Array10323[1] = it })
             if (class64_80_ != null) {
-                if (this.anInt10278 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939[this.anInt10278]) != null)) {
+                if (this.anInt10278 >= 0 && class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939!![this.anInt10278]) != null)) {
                     var i_81_ = 0
                     var i_82_ = 0
                     var i_83_ = 0
-                    if (class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939[this.anInt10278]) != null)) {
-                        i_82_ += (class225.anIntArrayArray2939[this.anInt10278][1])
-                        i_83_ += (class225.anIntArrayArray2939[this.anInt10278][2])
-                        i_81_ += (class225.anIntArrayArray2939[this.anInt10278][0])
+                    if (class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939!![this.anInt10278]) != null)) {
+                        i_82_ += (class225.anIntArrayArray2939!![this.anInt10278]!![1])
+                        i_83_ += (class225.anIntArrayArray2939!![this.anInt10278]!![2])
+                        i_81_ += (class225.anIntArrayArray2939!![this.anInt10278]!![0])
                     }
-                    if (class225.anIntArrayArray2910 != null && ((class225.anIntArrayArray2910[this.anInt10278]) != null)) {
-                        i_82_ += (class225.anIntArrayArray2910[this.anInt10278][1])
-                        i_83_ += (class225.anIntArrayArray2910[this.anInt10278][2])
-                        i_81_ += (class225.anIntArrayArray2910[this.anInt10278][0])
+                    if (class225.anIntArrayArray2910 != null && ((class225.anIntArrayArray2910!![this.anInt10278]) != null)) {
+                        i_82_ += (class225.anIntArrayArray2910!![this.anInt10278]!![1])
+                        i_83_ += (class225.anIntArrayArray2910!![this.anInt10278]!![2])
+                        i_81_ += (class225.anIntArrayArray2910!![this.anInt10278]!![0])
                     }
                     if (i_83_ != 0 || i_81_ != 0) {
                         var i_84_ = i_74_
@@ -567,21 +567,21 @@ class Player : Class318_Sub1_Sub3_Sub3() {
             }
             val class64_91_ = (class368.method3558(this.anInt10273, this.anInt10276, var_ha, i_90_, 3172, Class10.aClass87_191, this.anInt10224).also { this.aClass64Array10323[2] = it })
             if (class64_91_ != null) {
-                if (this.anInt10289 < 0 || class225.anIntArrayArray2939 == null || ((class225.anIntArrayArray2939[this.anInt10289]) == null)) {
+                if (this.anInt10289 < 0 || class225.anIntArrayArray2939 == null || ((class225.anIntArrayArray2939!![this.anInt10289]) == null)) {
                     if (this.anInt10202 != 0) class64_91_.a(2048 * (this.anInt10202))
                 } else {
                     var i_92_ = 0
                     var i_93_ = 0
                     var i_94_ = 0
-                    if (class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939[this.anInt10289]) != null)) {
-                        i_92_ += (class225.anIntArrayArray2939[this.anInt10289][0])
-                        i_93_ += (class225.anIntArrayArray2939[this.anInt10289][1])
-                        i_94_ += (class225.anIntArrayArray2939[this.anInt10289][2])
+                    if (class225.anIntArrayArray2939 != null && ((class225.anIntArrayArray2939!![this.anInt10289]) != null)) {
+                        i_92_ += (class225.anIntArrayArray2939!![this.anInt10289]!![0])
+                        i_93_ += (class225.anIntArrayArray2939!![this.anInt10289]!![1])
+                        i_94_ += (class225.anIntArrayArray2939!![this.anInt10289]!![2])
                     }
-                    if (class225.anIntArrayArray2910 != null && ((class225.anIntArrayArray2910[this.anInt10289]) != null)) {
-                        i_92_ += (class225.anIntArrayArray2910[this.anInt10289][0])
-                        i_93_ += (class225.anIntArrayArray2910[this.anInt10289][1])
-                        i_94_ += (class225.anIntArrayArray2910[this.anInt10289][2])
+                    if (class225.anIntArrayArray2910 != null && ((class225.anIntArrayArray2910!![this.anInt10289]) != null)) {
+                        i_92_ += (class225.anIntArrayArray2910!![this.anInt10289]!![0])
+                        i_93_ += (class225.anIntArrayArray2910!![this.anInt10289]!![1])
+                        i_94_ += (class225.anIntArrayArray2910!![this.anInt10289]!![2])
                     }
                     if (i_94_ != 0 || i_92_ != 0) {
                         var i_95_ = i_74_

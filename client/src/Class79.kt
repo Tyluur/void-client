@@ -497,7 +497,7 @@ class Class79 {
                 }
                 if (class225 != null && class225.anIntArrayArray2939 != null) {
                     var i_73_ = 0
-                    while ((i_73_ < class225.anIntArrayArray2939.size)) {
+                    while ((i_73_ < class225.anIntArrayArray2939!!.size)) {
                         if (class124s.size > i_73_ && class124s[i_73_] != null) {
                             var i_74_ = 0
                             var i_75_ = 0
@@ -505,13 +505,13 @@ class Class79 {
                             var i_77_ = 0
                             var i_78_ = 0
                             var i_79_ = 0
-                            if ((class225.anIntArrayArray2939[i_73_]) != null) {
-                                i_78_ = ((class225.anIntArrayArray2939[i_73_][4]) shl 3)
-                                i_79_ = ((class225.anIntArrayArray2939[i_73_][5]) shl 3)
-                                i_75_ = (class225.anIntArrayArray2939[i_73_][1])
-                                i_76_ = (class225.anIntArrayArray2939[i_73_][2])
-                                i_77_ = ((class225.anIntArrayArray2939[i_73_][3]) shl 3)
-                                i_74_ = (class225.anIntArrayArray2939[i_73_][0])
+                            if ((class225.anIntArrayArray2939!![i_73_]) != null) {
+                                i_78_ = ((class225.anIntArrayArray2939!![i_73_]!![4]) shl 3)
+                                i_79_ = ((class225.anIntArrayArray2939!![i_73_]!![5]) shl 3)
+                                i_75_ = (class225.anIntArrayArray2939!![i_73_]!![1])
+                                i_76_ = (class225.anIntArrayArray2939!![i_73_]!![2])
+                                i_77_ = ((class225.anIntArrayArray2939!![i_73_]!![3]) shl 3)
+                                i_74_ = (class225.anIntArrayArray2939!![i_73_]!![0])
                             }
                             if (i_77_ != 0 || i_78_ != 0 || i_79_ != 0) class124s[i_73_]!!.method1107(6875, i_78_, i_79_, i_77_)
                             if (i_74_ != 0 || i_75_ != 0 || i_76_ != 0) class124s[i_73_]!!.method1099(93.toByte(), i_76_, i_74_, i_75_)

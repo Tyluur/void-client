@@ -16,7 +16,7 @@ public final class Class248 {
     static int anInt3193;
     static int anInt3194;
     static int anInt3195;
-    static Class229 aClass229_3196 = new Class229();
+    static Class229 aClass229_3196 = Class229.INSTANCE;
     private final Class107 aClass107_3197 = new Class107();
     static int anInt3198;
     static int anInt3199;

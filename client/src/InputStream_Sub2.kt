@@ -157,8 +157,8 @@ class InputStream_Sub2 : InputStream() {
                             }
                             if (class318_sub1_sub3_sub3 != null) {
                                 val class225 = class318_sub1_sub3_sub3.method2422(72.toByte())
-                                if ((class225.anIntArrayArray2939 != null) && (class225.anIntArrayArray2939[i_55_]) != null) i_61_ -= (class225.anIntArrayArray2939[i_55_][1])
-                                if ((class225.anIntArrayArray2910 != null) && (class225.anIntArrayArray2910[i_55_]) != null) i_61_ -= (class225.anIntArrayArray2910[i_55_][1])
+                                if ((class225.anIntArrayArray2939 != null) && (class225.anIntArrayArray2939!![i_55_]) != null) i_61_ -= (class225.anIntArrayArray2939!![i_55_]!![1])
+                                if ((class225.anIntArrayArray2910 != null) && (class225.anIntArrayArray2910!![i_55_]) != null) i_61_ -= (class225.anIntArrayArray2910!![i_55_]!![1])
                             }
                         }
                         val class318_sub1_sub3_sub5 = (Class318_Sub1_Sub3_Sub5(i_60_, Class348_Sub40_Sub12.anInt9200, Class348_Sub40_Sub12.anInt9200, i_51_, i_52_, i_61_, i_63_ - -Class367_Sub11.anInt7396, i_64_ + Class367_Sub11.anInt7396, i_65_, i_66_, i_58_, i_59_, i_62_, bool, i_55_))

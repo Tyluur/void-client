@@ -106,10 +106,10 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
 
         fun method1288(i: Int, i_2_: Int) {
             anInt2186++
-            var class348 = Class226.aClass356_2959.method3484(0)
+            var class348 = Class226.aClass356_2959!!.method3484(0)
             while (class348 != null) {
                 if ((class348.aLong4291 shr 48 and 0xffffL) == i_2_.toLong()) class348.method2715(119.toByte())
-                class348 = Class226.aClass356_2959.method3482(0)
+                class348 = Class226.aClass356_2959!!.method3482(0)
             }
         }
 

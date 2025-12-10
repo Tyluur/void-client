@@ -46,7 +46,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
             var i_7_ = -1
             val i_8_ = Class85.method831(Class113.anInt1745, i_3_ + i_0_, Class369.anInt4960, -108)
             val i_9_ = Class85.method831(Class113.anInt1745, -i_3_ + i_0_, Class369.anInt4960, 81)
-            Class135_Sub2.method1156(-27, i_8_, Class17.anIntArrayArray255!![i_2_], i_9_, i_1_)
+            Class135_Sub2.method1156(-27, i_8_, Class17.anIntArrayArray255!![i_2_]!!, i_9_, i_1_)
             while (i_5_ > i_4_) {
                 i_7_ += 2
                 i_6_ += i_7_
@@ -58,8 +58,8 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     if (i_11_ >= Class132.anInt1910 && Class38.anInt513 >= i_10_) {
                         val i_12_ = Class85.method831(Class113.anInt1745, i_4_ + i_0_, Class369.anInt4960, 74)
                         val i_13_ = Class85.method831(Class113.anInt1745, i_0_ + -i_4_, Class369.anInt4960, 98)
-                        if (i_11_ <= Class38.anInt513) Class135_Sub2.method1156(-27, i_12_, (Class17.anIntArrayArray255!![i_11_]), i_13_, i_1_)
-                        if (Class132.anInt1910 <= i_10_) Class135_Sub2.method1156(-27, i_12_, (Class17.anIntArrayArray255!![i_10_]), i_13_, i_1_)
+                        if (i_11_ <= Class38.anInt513) Class135_Sub2.method1156(-27, i_12_, (Class17.anIntArrayArray255!![i_11_]!!), i_13_, i_1_)
+                        if (Class132.anInt1910 <= i_10_) Class135_Sub2.method1156(-27, i_12_, (Class17.anIntArrayArray255!![i_10_]!!), i_13_, i_1_)
                     }
                 }
                 val i_14_ = -++i_4_ + i_2_
@@ -67,8 +67,8 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                 if (Class132.anInt1910 <= i_15_ && Class38.anInt513 >= i_14_) {
                     val i_16_ = Class85.method831(Class113.anInt1745, i_0_ + i_5_, Class369.anInt4960, 52)
                     val i_17_ = Class85.method831(Class113.anInt1745, i_0_ + -i_5_, Class369.anInt4960, -106)
-                    if (i_15_ <= Class38.anInt513) Class135_Sub2.method1156(-27, i_16_, Class17.anIntArrayArray255!![i_15_], i_17_, i_1_)
-                    if (i_14_ >= Class132.anInt1910) Class135_Sub2.method1156(-27, i_16_, Class17.anIntArrayArray255!![i_14_], i_17_, i_1_)
+                    if (i_15_ <= Class38.anInt513) Class135_Sub2.method1156(-27, i_16_, Class17.anIntArrayArray255!![i_15_]!!, i_17_, i_1_)
+                    if (i_14_ >= Class132.anInt1910) Class135_Sub2.method1156(-27, i_16_, Class17.anIntArrayArray255!![i_14_]!!, i_17_, i_1_)
                 }
             }
         }
@@ -124,7 +124,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                 class318_sub5.aString6416 = string
                 class318_sub5.anInt6415 = i_26_
                 class318_sub5.anInt6420 = i_27_
-                Class225.aClass243_2957.method1869(-103, class318_sub5)
+                Class225.aClass243_2957!!.method1869(-103, class318_sub5)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("go.F(" + i + ',' + i_25_ + ',' + i_26_ + ',' + (if (string != null) "{...}" else "null") + ',' + i_27_ + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ')'))
             }

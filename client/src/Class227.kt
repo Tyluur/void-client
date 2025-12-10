@@ -1,30 +1,27 @@
 /* Class227 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class227 {
-    static int anInt2966;
-    static int[] anIntArray2967;
-    static int anInt2968 = 0;
-    static Object anObject2969;
-    int anInt2970;
-
-    public final String toString() {
-        anInt2966++;
-        throw new IllegalStateException();
+* Visit http://jode.sourceforge.net/
+*/
+class Class227 internal constructor(var anInt2970: Int) {
+    override fun toString(): String {
+        anInt2966++
+        throw IllegalStateException()
     }
 
-    public static void method1627(byte i) {
-        anIntArray2967 = null;
-        if (i <= 105) method1627((byte) -48);
-        anObject2969 = null;
-    }
+    companion object {
+        var anInt2966: Int = 0
+        var anIntArray2967: IntArray?
+        var anInt2968: Int = 0
+        @JvmField
+        var anObject2969: Any? = null
+        @JvmStatic
+        fun method1627(i: Byte) {
+            anIntArray2967 = null
+            if (i <= 105) Companion.method1627((-48).toByte())
+            anObject2969 = null
+        }
 
-    Class227(int i) {
-        this.anInt2970 = i;
-    }
-
-    static {
-        anIntArray2967 = new int[14];
+        init {
+            anIntArray2967 = IntArray(14)
+        }
     }
 }

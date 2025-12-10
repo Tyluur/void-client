@@ -3,7 +3,7 @@
  */
 
 public final class Class328_Sub3 extends Class328 {
-    static Class229 aClass229_6519 = new Class229();
+    static Class229 aClass229_6519 = Class229.INSTANCE;
     static int anInt6520;
     static int anInt6521;
     static int[] anIntArray6522 = new int[1000];

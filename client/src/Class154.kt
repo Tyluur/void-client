@@ -69,7 +69,7 @@ class Class154 {
                             var i_22_ = class17_18_.anIntArray237[i_20_]
                             Class295.aClass348_Sub42_Sub17Array3753[i_17_] = class87.method839(i_22_ ushr 16, 3)
                             i_22_ = i_22_ and 0xffff
-                            Class227.anIntArray2967[i_17_] = i_22_
+                            Class227.anIntArray2967!![i_17_] = i_22_
                             if (Class295.aClass348_Sub42_Sub17Array3753[i_17_] != null) {
                                 bool_13_ = bool_13_ or Class295.aClass348_Sub42_Sub17Array3753[i_17_].method3272(i_22_, 0)
                                 bool_12_ = bool_12_ or Class295.aClass348_Sub42_Sub17Array3753[i_17_].method3271(i_22_, 14)
@@ -79,7 +79,7 @@ class Class154 {
                             Class100.anIntArray1583!![i_17_] = 0
                             Class50_Sub3.anIntArray5241!![i_17_] = 0
                             Class295.aClass348_Sub42_Sub17Array3753[i_17_] = null
-                            Class227.anIntArray2967[i_17_] = -1
+                            Class227.anIntArray2967!![i_17_] = -1
                         }
                     }
                 }
@@ -186,7 +186,7 @@ class Class154 {
                     }
                     if (class225 != null && class225.anIntArrayArray2939 != null) {
                         var i_42_ = 0
-                        while (((class225.anIntArrayArray2939).size > i_42_)) {
+                        while (((class225.anIntArrayArray2939!!).size > i_42_)) {
                             if (class124s[i_42_] != null) {
                                 var i_43_ = 0
                                 var i_44_ = 0
@@ -194,13 +194,13 @@ class Class154 {
                                 var i_46_ = 0
                                 var i_47_ = 0
                                 var i_48_ = 0
-                                if ((class225.anIntArrayArray2939[i_42_]) != null) {
-                                    i_47_ = ((class225.anIntArrayArray2939[i_42_][4]) shl 3)
-                                    i_44_ = (class225.anIntArrayArray2939[i_42_][1])
-                                    i_48_ = ((class225.anIntArrayArray2939[i_42_][5]) shl 3)
-                                    i_43_ = (class225.anIntArrayArray2939[i_42_][0])
-                                    i_46_ = ((class225.anIntArrayArray2939[i_42_][3]) shl 3)
-                                    i_45_ = (class225.anIntArrayArray2939[i_42_][2])
+                                if ((class225.anIntArrayArray2939!![i_42_]) != null) {
+                                    i_47_ = ((class225.anIntArrayArray2939!![i_42_]!![4]) shl 3)
+                                    i_44_ = (class225.anIntArrayArray2939!![i_42_]!![1])
+                                    i_48_ = ((class225.anIntArrayArray2939!![i_42_]!![5]) shl 3)
+                                    i_43_ = (class225.anIntArrayArray2939!![i_42_]!![0])
+                                    i_46_ = ((class225.anIntArrayArray2939!![i_42_]!![3]) shl 3)
+                                    i_45_ = (class225.anIntArrayArray2939!![i_42_]!![2])
                                 }
                                 if (i_46_ != 0 || i_47_ != 0 || i_48_ != 0) class124s[i_42_]!!.method1107(6875, i_47_, i_48_, i_46_)
                                 if (i_43_ != 0 || i_44_ != 0 || i_45_ != 0) class124s[i_42_]!!.method1099((-82).toByte(), i_45_, i_43_, i_44_)
@@ -236,7 +236,7 @@ class Class154 {
             }
             if (!bool_15_ && !bool_52_) return class64_51_
             var class101s: Array<Class101?>? = null
-            if (class225 != null) class101s = class225.method1618(var_ha, 0)
+            if (class225 != null) class101s = class225.method1618(var_ha, 0) as Array<Class101?>?
             if (bool_52_ && class101s != null) {
                 for (i_54_ in 0..11) {
                     if (class101s[i_54_] != null) class64_51_!!.method610(class101s[i_54_]!!, 1 shl i_54_, true)
@@ -245,7 +245,7 @@ class Class154 {
             var i_55_ = 0
             var i_56_ = 1
             while ( /**/i_16_ > i_55_) {
-                if (Class95.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + Class50_Sub3.anIntArray5241!![i_55_], null, i_56_, Class184.anIntArray2471!![i_55_], Class227.anIntArray2967[i_55_], Class295.aClass348_Sub42_Sub17Array3753[i_55_], 0, Class95.aClass348_Sub42_Sub17Array1543!![i_55_], false, Class100.anIntArray1583!![i_55_])
+                if (Class95.aClass348_Sub42_Sub17Array1543!![i_55_] != null) class64_51_!!.method603((-55).toByte(), -1 + Class50_Sub3.anIntArray5241!![i_55_], null, i_56_, Class184.anIntArray2471!![i_55_], Class227.anIntArray2967!![i_55_], Class295.aClass348_Sub42_Sub17Array3753[i_55_], 0, Class95.aClass348_Sub42_Sub17Array1543!![i_55_], false, Class100.anIntArray1583!![i_55_])
                 i_56_ = i_56_ shl 1
                 i_55_++
             }
