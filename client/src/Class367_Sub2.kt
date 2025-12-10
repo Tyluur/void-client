@@ -61,7 +61,7 @@ class Class367_Sub2 internal constructor(class377: Class377, class45: Class45?, 
                 glProgramLocalParameter4fARB(34336, 0, f, 0.0f, 0.0f, 1.0f)
             } else {
                 val i_7_ = (16 * (this.aHa_Sub3_4479.anInt8146 % 4000) / 4000)
-                this.aHa_Sub3_4479.method3850((-118).toByte(), (aClass269_7294.anInterface18_Impl3Array3459[i_7_]))
+                this.aHa_Sub3_4479.method3850((-118).toByte(), (aClass269_7294.anInterface18_Impl3Array3459!![i_7_]))
                 glProgramLocalParameter4fARB(34336, 0, 0.0f, 0.0f, 0.0f, 1.0f)
             }
         }

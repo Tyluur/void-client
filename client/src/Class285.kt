@@ -130,7 +130,7 @@ abstract class Class285 internal constructor(var aClass377_4759: Class377, priva
         if (anInt4746 < 0) {
             if (this.aClass377_4759.aBoolean9920) {
                 glGenBuffersARB(1, Class260.anIntArray3311, 0)
-                anInt4746 = Class260.anIntArray3311[0]
+                anInt4746 = Class260.anIntArray3311!![0]
                 glBindBufferARB(anInt4755, anInt4746)
             } else anInt4746 = 0
         }

@@ -3680,13 +3680,13 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                 }
                                 if (player.anInt10522 != -1) {
                                     i_323_ -= 25
-                                    val class105 = (Class264.aClass105Array3378[(player.anInt10522)])
+                                    val class105 = (Class264.aClass105Array3378!![(player.anInt10522)])!!
                                     class105.method974((-12 + i_317_ + (Class239_Sub21.anIntArray6062!![0])), i_323_)
                                     Class338.method2663(-5590, (-12 + Class239_Sub21.anIntArray6062!![0] + i_317_), (Class239_Sub21.anIntArray6062!![0] + i_317_ - (12 + -class105.method966())), i_323_, i_323_ - -class105.method980())
                                     i_323_ -= 2
                                 }
-                            } else if (class79!!.anInt1375 >= 0 && (class79.anInt1375 < Class264.aClass105Array3378.size)) {
-                                val class105 = (Class264.aClass105Array3378[class79.anInt1375])
+                            } else if (class79!!.anInt1375 >= 0 && (class79.anInt1375 < Class264.aClass105Array3378!!.size)) {
+                                val class105 = (Class264.aClass105Array3378!![class79.anInt1375])!!
                                 i_323_ -= 25
                                 class105.method974((i_317_ + (Class239_Sub21.anIntArray6062!![0]) + -(class105.method971() shr 1)), i_323_)
                                 Class338.method2663(-5590, (Class239_Sub21.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1))), (Class239_Sub21.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1)) + class105.method966()), i_323_, class105.method980() + i_323_)
@@ -4011,7 +4011,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3
                 if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((Class282.aClass356_3654.method3480((-2048 + i_434_).toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 else class318_sub1_sub3_sub3 = Class294.aPlayerArray5058[i_434_]
-                val i_435_ = Class268.anIntArray3432[i_433_]
+                val i_435_ = Class268.anIntArray3432!![i_433_]
                 val class318_sub1_sub3_sub3_436_: Class318_Sub1_Sub3_Sub3?
                 if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((Class282.aClass356_3654.method3480((-2048 + i_435_).toLong(), -6008) as Class348_Sub22).aNpc_6859)
                 else class318_sub1_sub3_sub3_436_ = Class294.aPlayerArray5058[i_435_]
@@ -4070,21 +4070,21 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                     }
                     val i_452_ = 0xffffff.inv() or i_448_
                     if (Class309.anIntArray4806[i_438_] == 0) {
-                        Class262.aClass324_3326.method2575(115.toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i)
+                        Class262.aClass324_3326!!.method2575(115.toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_446_ -= i_443_ shr 1
                     }
                     if (Class309.anIntArray4806[i_438_] == 1) {
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
-                        Class262.aClass324_3326.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, Class239_Sub15.anInt6006, false)
+                        Class262.aClass324_3326!!.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, Class239_Sub15.anInt6006, false)
                         i_447_ += 5
                         i_445_ -= 5
                     }
                     if (Class309.anIntArray4806[i_438_] == 2) {
                         i_447_ += 5
                         i_446_ -= -5 + (i_443_ shr 1)
-                        Class262.aClass324_3326.method2581(string, i_452_, (Class239_Sub15.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
+                        Class262.aClass324_3326!!.method2581(string, i_452_, (Class239_Sub15.anInt6006), i_440_ + i, (-112).toByte(), -16777216, i_317_ - -i_439_)
                         i_445_ -= 5
                         i_444_ -= (i_443_ shr 1) - -5
                     }
@@ -4092,7 +4092,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                         i_446_ -= i_443_ shr 1
                         i_444_ -= i_443_ shr 1
                         i_447_ += 7
-                        Class262.aClass324_3326.method2577(Class239_Sub15.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812[i_438_], i_439_ + i_317_, -20509)
+                        Class262.aClass324_3326!!.method2577(Class239_Sub15.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812[i_438_], i_439_ + i_317_, -20509)
                         i_445_ -= 7
                     }
                     if (Class309.anIntArray4806[i_438_] == 4) {
@@ -4100,7 +4100,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                         Class348_Sub8.aHa6654!!.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_)
                         i_444_ += 50 - i_453_
                         i_446_ += -i_453_ + 50
-                        Class262.aClass324_3326.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
+                        Class262.aClass324_3326!!.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125)
                         Class348_Sub8.aHa6654!!.KA(i_317_, i, i_318_ + i_317_, i + i_315_)
                     }
                     if (Class309.anIntArray4806[i_438_] == 5) {
@@ -4113,7 +4113,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                         Class348_Sub8.aHa6654!!.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i)
                         i_444_ -= i_443_ shr 1
                         i_447_ += i_455_
-                        Class262.aClass324_3326.method2575((-105).toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_))
+                        Class262.aClass324_3326!!.method2575((-105).toByte(), i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_))
                         i_445_ += i_455_
                         i_446_ -= i_443_ shr 1
                         Class348_Sub8.aHa6654!!.KA(i_317_, i, i_318_ + i_317_, i_315_ + i)
@@ -4121,7 +4121,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 } else {
                     i_444_ -= i_443_ shr 1
                     i_446_ -= i_443_ shr 1
-                    Class262.aClass324_3326.method2575(118.toByte(), i_439_ + i_317_, -256, string, -16777216, i_440_ + i)
+                    Class262.aClass324_3326!!.method2575(118.toByte(), i_439_ + i_317_, -256, string, -16777216, i_440_ + i)
                 }
                 Class338.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_)
             }

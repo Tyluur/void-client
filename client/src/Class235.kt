@@ -56,7 +56,7 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
         var i_1_ = i_0_
         var bool = false
         if (i_1_ == -1) {
-            var class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(i.toInt() xor 0x45, this.anInt3063)
+            var class51: Class51? = Class348_Sub40_Sub12.aClass263_9195!!.method2005(i.toInt() xor 0x45, this.anInt3063)
             var class51_2_ = class51
             if (class51!!.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), 47.toByte())
             if (class51 == null) return
@@ -113,7 +113,7 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
         var bool_3_ = bool_3_
         var i_4_ = i_4_
         anInt3082++
-        var class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, this.anInt3063)
+        var class51: Class51? = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, this.anInt3063)
         if (class51!!.anIntArray945 != null) class51 = class51.method480(Class318_Sub1_Sub3_Sub3.aClass170_10209!!, 47.toByte())
         if (class51 == null) {
             method1674(-1, var_ha)
@@ -203,7 +203,7 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
                 val class129s = class64!!.method619()
                 val class342s = class64.method604()
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081!!.aBoolean6470) && (class129s != null || class342s != null)) {
-                    var class51 = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, this.anInt3063)
+                    var class51: Class51? = Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, this.anInt3063)
                     if (class51!!.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), 47.toByte())
                     if (class51 != null) this.aClass318_Sub10_3081 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true)
                 }

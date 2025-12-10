@@ -1,21 +1,16 @@
 /* Class266 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class266 {
-    short aShort3379;
-    int anInt3380;
-    int anInt3381;
-    short aShort3382;
-    short aShort3383;
-    short aShort3384;
-    short aShort3385;
-    byte aByte3386;
-    int anInt3387;
-    int anInt3388 = 0;
-    int anInt3389;
-
-    public Class266() {
-        /* empty */
-    }
+* Visit http://jode.sourceforge.net/
+*/
+class Class266 {
+    var aShort3379: Short = 0
+    var anInt3380: Int = 0
+    var anInt3381: Int = 0
+    var aShort3382: Short = 0
+    var aShort3383: Short = 0
+    var aShort3384: Short = 0
+    var aShort3385: Short = 0
+    var aByte3386: Byte = 0
+    var anInt3387: Int = 0
+    var anInt3388: Int = 0
+    var anInt3389: Int = 0
 }

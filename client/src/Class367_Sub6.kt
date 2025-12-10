@@ -20,7 +20,7 @@ class Class367_Sub6 internal constructor(private var aClass378_7340: Class378, c
             idirect3ddevice!!.a(11, f, 0.0f, 0.0f, 0.0f)
         } else {
             val i_3_ = 16 * ((this.aHa_Sub3_4479.anInt8146) % 4000) / 4000
-            this.aHa_Sub3_4479.method3850(122.toByte(), (aClass269_7339!!.anInterface18_Impl3Array3459[i_3_]))
+            this.aHa_Sub3_4479.method3850(122.toByte(), (aClass269_7339!!.anInterface18_Impl3Array3459!![i_3_]))
             idirect3ddevice!!.a(11, 0.0f, 0.0f, 0.0f, 0.0f)
         }
         if (i != 10756) aClass269_7339 = null

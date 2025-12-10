@@ -4214,7 +4214,7 @@ object Class66 {
                     return
                 }
                 if (i == 3604) {
-                    val string = aStringArray1152!![--anInt1170]
+                    val string = aStringArray1152!![--anInt1170]!!
                     val i_362_ = anIntArray1149!![--anInt1173]
                     Class261.method1982(16, i_362_, string)
                     return

@@ -59,7 +59,7 @@ class Class51 {
     @JvmField
     var aBoolean912: Boolean = false
     @JvmField
-    var aStringArray913: Array<String?>
+    var aStringArray913: Array<String?>? = null
     @JvmField
     var anInt914: Int = 0
     private var anInt915: Int
@@ -167,8 +167,8 @@ class Class51 {
             }
             if (bool) i_11_ = i_11_ or 0x40000
             var class2: Class2?
-            synchronized(this.aClass263_933!!.aClass60_3361) {
-                class2 = this.aClass263_933!!.aClass60_3361.method583(l, i_10_ + -25) as Class2?
+            synchronized(this.aClass263_933!!.aClass60_3361!!) {
+                class2 = this.aClass263_933!!.aClass60_3361!!.method583(l, i_10_ + -25) as Class2?
             }
             var class64 = if (class2 == null) null else class2.aClass64_119
             var var_r: r? = null
@@ -184,8 +184,8 @@ class Class51 {
                 class2 = Class2()
                 class2.aClass64_119 = class64
                 class2.aR118 = var_r
-                synchronized(this.aClass263_933!!.aClass60_3361) {
-                    this.aClass263_933!!.aClass60_3361.method582(class2, l, (-120).toByte())
+                synchronized(this.aClass263_933!!.aClass60_3361!!) {
+                    this.aClass263_933!!.aClass60_3361!!.method582(class2, l, (-120).toByte())
                 }
             } else {
                 class64 = class2!!.aClass64_119
@@ -263,7 +263,7 @@ class Class51 {
                 var class124: Class124? = null
                 synchronized(Class341.aClass124Array4236) {
                     for (i_26_ in 0..<i_23_) {
-                        synchronized(this.aClass263_933!!.aClass45_3345) {
+                        synchronized(this.aClass263_933!!.aClass45_3345!!) {
                             class124 = Class300.method2277(0, (this.aClass263_933!!.aClass45_3345), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
                         if (class124 == null) return null
@@ -313,13 +313,13 @@ class Class51 {
         if (i_30_ != -31076) return false
         anInt901++
         if (anIntArrayArray907 == null) return true
-        synchronized(this.aClass263_933!!.aClass45_3345) {
+        synchronized(this.aClass263_933!!.aClass45_3345!!) {
             var i_31_ = 0
             while (aByteArray885!!.size > i_31_) {
                 if (aByteArray885!![i_31_].toInt() == i) {
                     var i_32_ = 0
                     while ((anIntArrayArray907!![i_31_]!!.size > i_32_)) {
-                        if (!this.aClass263_933!!.aClass45_3345.method420(i_30_ xor 0x5061, anIntArrayArray907!![i_31_]!![i_32_], 0)) return false
+                        if (!this.aClass263_933!!.aClass45_3345!!.method420(i_30_ xor 0x5061, anIntArrayArray907!![i_31_]!![i_32_], 0)) return false
                         i_32_++
                     }
                     return true
@@ -400,7 +400,7 @@ class Class51 {
                     else if (i != 28) {
                         if (i != 29) {
                             if (i == 39) anInt880 = class348_sub49.readByte(-86) * 5
-                            else if (i >= 30 && i < 35) this.aStringArray913[-30 + i] = class348_sub49.readString(88.toByte())
+                            else if (i >= 30 && i < 35) this.aStringArray913!![-30 + i] = class348_sub49.readString(88.toByte())
                             else if (i == 40) {
                                 val i_57_ = class348_sub49.readUnsignedByte(255)
                                 aShortArray940 = ShortArray(i_57_)
@@ -493,8 +493,8 @@ class Class51 {
                                                                                         }
                                                                                     } else if (i != 107) {
                                                                                         if (i >= 150 && i < 155) {
-                                                                                            this.aStringArray913[i + -150] = class348_sub49.readString((-41).toByte())
-                                                                                            if (!this.aClass263_933!!.aBoolean3359) this.aStringArray913[-150 + i] = null
+                                                                                            this.aStringArray913!![i + -150] = class348_sub49.readString((-41).toByte())
+                                                                                            if (!this.aClass263_933!!.aBoolean3359) this.aStringArray913!![-150 + i] = null
                                                                                         } else if (i == 160) {
                                                                                             val i_46_ = class348_sub49.readUnsignedByte(255)
                                                                                             this.anIntArray917 = IntArray(i_46_)
@@ -602,15 +602,15 @@ class Class51 {
             } else i_67_ = i_67_ or 0x7
             if (i_64_ == 10 && i_66_ > 3) i_67_ = i_67_ or 0x5
             var class64: Class64?
-            synchronized(this.aClass263_933!!.aClass60_3362) {
-                class64 = this.aClass263_933!!.aClass60_3362.method583(l, 100) as Class64?
+            synchronized(this.aClass263_933!!.aClass60_3362!!) {
+                class64 = this.aClass263_933!!.aClass60_3362!!.method583(l, 100) as Class64?
             }
             if (class64 == null || var_ha.method3667(class64.ua(), i_67_) != 0) {
                 if (class64 != null) i_67_ = var_ha.method3679(i_67_, class64.ua())
                 class64 = method477(i_66_, var_ha, i_64_, -125, i_67_)
                 if (class64 == null) return null
-                synchronized(this.aClass263_933!!.aClass60_3362) {
-                    this.aClass263_933!!.aClass60_3362.method582(class64, l, (-127).toByte())
+                synchronized(this.aClass263_933!!.aClass60_3362!!) {
+                    this.aClass263_933!!.aClass60_3362!!.method582(class64, l, (-127).toByte())
                 }
             }
             var bool = false
@@ -663,11 +663,11 @@ class Class51 {
         if (i != 9773) method485(-109)
         if (anIntArrayArray907 == null) return true
         var bool = true
-        synchronized(this.aClass263_933!!.aClass45_3345) {
+        synchronized(this.aClass263_933!!.aClass45_3345!!) {
             for (i_77_ in anIntArrayArray907!!.indices) {
                 var i_78_ = 0
                 while ((anIntArrayArray907!![i_77_]!!.size > i_78_)) {
-                    bool = bool and (this.aClass263_933!!.aClass45_3345.method420(-10499, anIntArrayArray907!![i_77_]!![i_78_], 0))
+                    bool = bool and (this.aClass263_933!!.aClass45_3345!!.method420(-10499, anIntArrayArray907!![i_77_]!![i_78_], 0))
                     i_78_++
                 }
             }
@@ -689,7 +689,7 @@ class Class51 {
             this.anInt874 = 0
             if (aByteArray885 != null && aByteArray885!!.size == 1 && aByteArray885!![0].toInt() == 10) this.anInt874 = 1
             for (i_82_ in 0..4) {
-                if (this.aStringArray913[i_82_] != null) {
+                if (this.aStringArray913!![i_82_] != null) {
                     this.anInt874 = 1
                     break
                 }

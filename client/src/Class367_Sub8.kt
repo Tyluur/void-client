@@ -24,13 +24,13 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: ha_Sub3, class269: Class26
         if ((0x80 and i_17_) == 0) {
             if ((0x1 and i_18_) != 1) {
                 if (aClass269_7353!!.aBoolean3458) this.aHa_Sub3_4479.method3850(108.toByte(), aClass269_7353.anInterface18_Impl1_3452)
-                else this.aHa_Sub3_4479.method3850(126.toByte(), (aClass269_7353.anInterface18_Impl3Array3459[0]))
+                else this.aHa_Sub3_4479.method3850(126.toByte(), (aClass269_7353.anInterface18_Impl3Array3459!![0]))
             } else if (aClass269_7353!!.aBoolean3458) {
                 aFloat7350 = ((this.aHa_Sub3_4479.anInt8146) % 4000).toFloat() / 4000.0f
                 this.aHa_Sub3_4479.method3850((-112).toByte(), aClass269_7353.anInterface18_Impl1_3452)
             } else {
                 val i_19_ = (16 * (this.aHa_Sub3_4479.anInt8146 % 4000) / 4000)
-                this.aHa_Sub3_4479.method3850((-114).toByte(), (aClass269_7353.anInterface18_Impl3Array3459[i_19_]))
+                this.aHa_Sub3_4479.method3850((-114).toByte(), (aClass269_7353.anInterface18_Impl3Array3459!![i_19_]))
             }
         } else this.aHa_Sub3_4479.method3850(85.toByte(), null)
         this.aHa_Sub3_4479.method3897(0, -4382)
