@@ -1,27 +1,33 @@
 /* Class115 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+object Class115 {
+    @JvmField
+    var aBooleanArrayArrayArray1751: Array<Array<BooleanArray?>>? = null
+    var aClass348_Sub1Array1752: Array<Class348_Sub1?>? = arrayOfNulls(8)
+    @JvmField
+    var anInt1753: Int = 0
+    @JvmField
+    var aClass318_Sub1Array1754: Array<Class318_Sub1>? = null
+    @JvmField
+    var anInt1755: Int = 0
+    @JvmField
+    var anInt1756: Int = 0
+    var anIntArray1757: IntArray? = intArrayOf(16776960, 16711680, 65280, 65535, 16711935, 16777215)
 
-public final class Class115 {
-    static boolean[][][] aBooleanArrayArrayArray1751;
-    static Class348_Sub1[] aClass348_Sub1Array1752 = new Class348_Sub1[8];
-    static int anInt1753;
-    static Class318_Sub1[] aClass318_Sub1Array1754;
-    static int anInt1755;
-    static int anInt1756;
-    static int[] anIntArray1757 = {16776960, 16711680, 65280, 65535, 16711935, 16777215};
-
-    static final int method1060(int i, byte i_0_) {
-        if (i_0_ != 69) aClass348_Sub1Array1752 = null;
-        anInt1755++;
-        return i >>> 7;
+    @JvmStatic
+    fun method1060(i: Int, i_0_: Byte): Int {
+        if (i_0_.toInt() != 69) aClass348_Sub1Array1752 = null
+        anInt1755++
+        return i ushr 7
     }
 
-    public static void method1061(int i) {
-        aBooleanArrayArrayArray1751 = null;
-        if (i != 16711680) aClass348_Sub1Array1752 = null;
-        aClass318_Sub1Array1754 = null;
-        aClass348_Sub1Array1752 = null;
-        anIntArray1757 = null;
+    @JvmStatic
+    fun method1061(i: Int) {
+        aBooleanArrayArrayArray1751 = null
+        if (i != 16711680) aClass348_Sub1Array1752 = null
+        aClass318_Sub1Array1754 = null
+        aClass348_Sub1Array1752 = null
+        anIntArray1757 = null
     }
 }

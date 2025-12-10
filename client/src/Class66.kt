@@ -4156,7 +4156,7 @@ object Class66 {
                 }
                 if (i == 3410) {
                     val i_357_ = anIntArray1149!![--anInt1173]
-                    val string = aStringArray1152!![--anInt1170]
+                    val string = aStringArray1152!![--anInt1170]!!
                     if (i_357_ == -1) throw RuntimeException("C3410-2")
                     val class117 = Class348_Sub7.aClass33_6653!!.method337(true, i_357_)
                     if (class117.aChar1779 != 's') throw RuntimeException("C3410-1")
@@ -4166,7 +4166,7 @@ object Class66 {
                 if (i == 3411) {
                     val i_358_ = anIntArray1149!![--anInt1173]
                     val class117 = Class348_Sub7.aClass33_6653!!.method337(true, i_358_)
-                    anIntArray1149!![anInt1173++] = class117.aClass356_1767.method3474(1)
+                    anIntArray1149!![anInt1173++] = class117.aClass356_1767!!.method3474(1)
                     return
                 }
             } else if (i < 3700) {

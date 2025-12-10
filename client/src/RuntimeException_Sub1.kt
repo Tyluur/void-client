@@ -78,8 +78,8 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
                         Class132.anInt1905 = 4
                         Class106.anIntArray1636 = IntArray(4)
                     }
-                    for (i_9_ in Class118.anIntArray1786.indices) {
-                        Class118.anIntArray1786[i_9_] = class348_sub49.readShort(13638)
+                    for (i_9_ in Class118.anIntArray1786!!.indices) {
+                        Class118.anIntArray1786!![i_9_] = class348_sub49.readShort(13638)
                         Class106.anIntArray1636!![i_9_] = class348_sub49.readShort(13638)
                     }
                     bool = true
@@ -97,8 +97,8 @@ class RuntimeException_Sub1(@JvmField var aThrowable4595: Throwable?, @JvmField 
                     Class106.anIntArray1636 = IntArray(4)
                     Class132.anInt1905 = 4
                 }
-                for (i_10_ in Class118.anIntArray1786.indices) {
-                    Class118.anIntArray1786[i_10_] = 0
+                for (i_10_ in Class118.anIntArray1786!!.indices) {
+                    Class118.anIntArray1786!![i_10_] = 0
                     Class106.anIntArray1636!![i_10_] = i_10_ * 20
                 }
             }

@@ -1,35 +1,19 @@
 /* Class118 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class118 internal constructor(var anInt1783: Int, var anInt1781: Int, var anInt1788: Int, var anInt1782: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, bool: Boolean, var aBoolean1791: Boolean, var anInt1784: Int) {
+    var aShort1785: Short = i_3_.toShort()
+    var aShort1787: Short = i_5_.toShort()
 
-public final class Class118 {
-    int anInt1781;
-    int anInt1782;
-    int anInt1783;
-    int anInt1784;
-    short aShort1785;
-    static int[] anIntArray1786 = null;
-    short aShort1787;
-    int anInt1788;
-    byte aByte1789;
-    short aShort1790;
-    boolean aBoolean1791;
+    var aByte1789: Byte = i_7_.toByte()
+    var aShort1790: Short = i_4_.toShort()
 
-    public static void method1075(byte i) {
-        anIntArray1786 = null;
-        if (i != 17) anIntArray1786 = null;
-    }
-
-    Class118(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, boolean bool, boolean bool_8_, int i_9_) {
-        this.anInt1781 = i_0_;
-        this.anInt1782 = i_2_;
-        this.anInt1788 = i_1_;
-        this.anInt1784 = i_9_;
-        this.aByte1789 = (byte) i_7_;
-        this.aBoolean1791 = bool_8_;
-        this.aShort1785 = (short) i_3_;
-        this.anInt1783 = i;
-        this.aShort1787 = (short) i_5_;
-        this.aShort1790 = (short) i_4_;
+    companion object {
+        var anIntArray1786: IntArray? = null
+        @JvmStatic
+        fun method1075(i: Byte) {
+            anIntArray1786 = null
+            if (i.toInt() != 17) anIntArray1786 = null
+        }
     }
 }

@@ -3760,7 +3760,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                     val i_351_ = (class318_sub1_sub3_sub3.method2426(200) / 2)
                                     Class348_Sub13.method2801(i_351_, i_318_ shr 1, i_320_, i_319_, i_315_ shr 1, class318_sub1_sub3_sub3, (-107).toByte())
                                     if (Class239_Sub21.anIntArray6062!![0] > -1) {
-                                        Class239_Sub21.anIntArray6062!![0] += Class118.anIntArray1786[i_344_]
+                                        Class239_Sub21.anIntArray6062!![0] += Class118.anIntArray1786!![i_344_]
                                         Class239_Sub21.anIntArray6062!![1] += Class106.anIntArray1636!![i_344_]
                                         val `object`: Any? = null
                                         val object_352_: Any? = null
@@ -4043,7 +4043,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 var i_447_ = i_440_ + i - -Class369.aClass143_4962!!.anInt1993
                 if (Class348_Sub40_Sub31.anInt9408 == 0) {
                     var i_448_ = 16776960
-                    if (Class309.anIntArray4817[i_438_] < 6) i_448_ = (Class115.anIntArray1757[Class309.anIntArray4817[i_438_]])
+                    if (Class309.anIntArray4817[i_438_] < 6) i_448_ = (Class115.anIntArray1757!![Class309.anIntArray4817[i_438_]])
                     if (Class309.anIntArray4817[i_438_] == 6) i_448_ = (if (Class239_Sub15.anInt6006 % 20 >= 10) 16776960 else 16711680)
                     if (Class309.anIntArray4817[i_438_] == 7) i_448_ = if (Class239_Sub15.anInt6006 % 20 < 10) 255 else 65535
                     if (Class309.anIntArray4817[i_438_] == 8) i_448_ = (if (Class239_Sub15.anInt6006 % 20 >= 10) 8454016 else 45056)

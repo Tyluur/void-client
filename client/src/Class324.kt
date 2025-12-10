@@ -97,7 +97,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    fun method2567(i: Int, string: String?, i_17_: Byte, i_18_: Int, i_19_: Int, i_20_: Int, class105s: Array<Class105>?, `is`: IntArray?) {
+    fun method2567(i: Int, string: String?, i_17_: Byte, i_18_: Int, i_19_: Int, i_20_: Int, class105s: Array<Class105?>?, `is`: IntArray?) {
         try {
             anInt4056++
             if (i_17_ > 114 && string != null) {
@@ -109,7 +109,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    fun method2568(`is`: IntArray?, i: Int, i_21_: Byte, var_aa: aa?, i_22_: Int, class105s: Array<Class105>?, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, string: String?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int): Int {
+    fun method2568(`is`: IntArray?, i: Int, i_21_: Byte, var_aa: aa?, i_22_: Int, class105s: Array<Class105?>?, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, string: String?, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int, i_32_: Int): Int {
         var i_26_ = i_26_
         var i_31_ = i_31_
         var i_32_ = i_32_
@@ -328,7 +328,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    private fun method2583(i: Int, i_103_: Int, i_104_: Int, class105s: Array<Class105>?, var_aa: aa?, string: String?, `is`: IntArray?, i_105_: Int, i_106_: Int) {
+    private fun method2583(i: Int, i_103_: Int, i_104_: Int, class105s: Array<Class105?>?, var_aa: aa?, string: String?, `is`: IntArray?, i_105_: Int, i_106_: Int) {
         var i_103_ = i_103_
         var i_106_ = i_106_
         try {
@@ -358,12 +358,12 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
                                             if (string_111_.startsWith("img=")) {
                                                 try {
                                                     val i_112_ = (Class348_Sub41.method3156(true, (string_111_.substring(4))))
-                                                    val class105 = class105s!![i_112_]
+                                                    val class105 = class105s!![i_112_]!!
                                                     val i_113_ = (if (`is` == null) class105.method980() else `is`[i_112_])
                                                     if (((Class348_Sub42_Sub1.anInt9492) and 0xffffff.inv()) != -16777216) class105.method964(i_106_, (-i_113_ + (aClass143_4063!!.anInt1992) + i_103_), 0, (0xffffff or (0xffffff.inv() and (Class348_Sub42_Sub1.anInt9492))), 1)
                                                     else class105.method964(i_106_, ((aClass143_4063!!.anInt1992) + (i_103_ - i_113_)), 1, 0, 1)
                                                     i_108_ = -1
-                                                    i_106_ += class105s[i_112_].method966()
+                                                    i_106_ += class105s[i_112_]!!.method966()
                                                 } catch (exception: Exception) {
                                                     /* empty */
                                                 }
@@ -414,7 +414,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    fun method2584(`is`: IntArray?, i: Int, i_115_: Int, class105s: Array<Class105>?, i_116_: Int, i_117_: Int, i_118_: Int, var_aa: aa?, i_119_: Int, i_120_: Int, i_121_: Int, i_122_: Int, i_123_: Int, bool: Boolean, i_124_: Int, string: String?): Int {
+    fun method2584(`is`: IntArray?, i: Int, i_115_: Int, class105s: Array<Class105?>?, i_116_: Int, i_117_: Int, i_118_: Int, var_aa: aa?, i_119_: Int, i_120_: Int, i_121_: Int, i_122_: Int, i_123_: Int, bool: Boolean, i_124_: Int, string: String?): Int {
         try {
             if (bool != false) method2570(-23, 41)
             anInt4057++

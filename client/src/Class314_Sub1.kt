@@ -224,7 +224,7 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
             }
             aClass356_6360.method3483(73.toByte(), i.toLong(), class348_sub42_sub16)
         }
-        if (class348_sub42_sub16.aBoolean9664) return null
+        if (class348_sub42_sub16!!.aBoolean9664) return null
         val `is` = class348_sub42_sub16.method3259(16)
         if (class348_sub42_sub16 !is Class348_Sub42_Sub16_Sub2) {
             try {

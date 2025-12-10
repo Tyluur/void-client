@@ -15,28 +15,28 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         val bool = (i and 0x80) != 0
         this.aHa_Sub2_3684.method3738(-15039, 1)
         if (bool) {
-            Class110_Sub1.aFloatArray5791[1] = 0.0f
-            Class110_Sub1.aFloatArray5791[0] = f_8_
-            Class110_Sub1.aFloatArray5791[3] = 0.0f
-            Class110_Sub1.aFloatArray5791[2] = 0.0f
+            Class110_Sub1.aFloatArray5791!![1] = 0.0f
+            Class110_Sub1.aFloatArray5791!![0] = f_8_
+            Class110_Sub1.aFloatArray5791!![3] = 0.0f
+            Class110_Sub1.aFloatArray5791!![2] = 0.0f
         } else {
-            Class110_Sub1.aFloatArray5791[1] = 0.0f
-            Class110_Sub1.aFloatArray5791[0] = 0.0f
-            Class110_Sub1.aFloatArray5791[2] = f_8_
-            Class110_Sub1.aFloatArray5791[3] = 0.0f
+            Class110_Sub1.aFloatArray5791!![1] = 0.0f
+            Class110_Sub1.aFloatArray5791!![0] = 0.0f
+            Class110_Sub1.aFloatArray5791!![2] = f_8_
+            Class110_Sub1.aFloatArray5791!![3] = 0.0f
         }
         glTexGenfv(8192, 9474, Class110_Sub1.aFloatArray5791, 0)
-        Class110_Sub1.aFloatArray5791[0] = 0.0f
-        Class110_Sub1.aFloatArray5791[1] = f_8_
-        Class110_Sub1.aFloatArray5791[3] = (f * this.aHa_Sub2_3684.anInt7735.toFloat() % 1.0f)
+        Class110_Sub1.aFloatArray5791!![0] = 0.0f
+        Class110_Sub1.aFloatArray5791!![1] = f_8_
+        Class110_Sub1.aFloatArray5791!![3] = (f * this.aHa_Sub2_3684.anInt7735.toFloat() % 1.0f)
         if (i_6_ >= -42) method2136(-27, -15, (-43).toByte())
-        Class110_Sub1.aFloatArray5791[2] = 0.0f
+        Class110_Sub1.aFloatArray5791!![2] = 0.0f
         glTexGenfv(8193, 9474, Class110_Sub1.aFloatArray5791, 0)
         if (aClass83_6259!!.aBoolean1442) {
-            Class110_Sub1.aFloatArray5791[0] = 0.0f
-            Class110_Sub1.aFloatArray5791[3] = (this.aHa_Sub2_3684.anInt7735).toFloat() * f_7_ % 1.0f
-            Class110_Sub1.aFloatArray5791[2] = 0.0f
-            Class110_Sub1.aFloatArray5791[1] = 0.0f
+            Class110_Sub1.aFloatArray5791!![0] = 0.0f
+            Class110_Sub1.aFloatArray5791!![3] = (this.aHa_Sub2_3684.anInt7735).toFloat() * f_7_ % 1.0f
+            Class110_Sub1.aFloatArray5791!![2] = 0.0f
+            Class110_Sub1.aFloatArray5791!![1] = 0.0f
             glTexGenfv(8194, 9473, Class110_Sub1.aFloatArray5791, 0)
         } else {
             val i_9_ = (16.0f * (this.aHa_Sub2_3684.anInt7735.toFloat() * f_7_)).toInt()

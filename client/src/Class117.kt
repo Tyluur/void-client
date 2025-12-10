@@ -1,132 +1,148 @@
+import Class33.Companion.method340
+import Class50_Sub1.Companion.method462
+
 /* Class117 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class117 {
-    static int anInt1763;
-    private int anInt1764;
-    static int anInt1765;
-    static Class351 aClass351_1766 = new Class351(74, -1);
-    Class356 aClass356_1767;
-    static int anInt1768;
-    static int anInt1769;
-    private Class356 aClass356_1770;
-    static int anInt1771;
-    static int anInt1772;
-    static int anInt1773;
-    private String aString1774 = "null";
-    static int anInt1775;
-    static int anInt1776;
-    static int anInt1777;
-    char aChar1778;
-    char aChar1779;
-    static int anInt1780 = 0;
-
-    public static void method1064(int i) {
-        if (i != -3) aClass351_1766 = null;
-        aClass351_1766 = null;
-    }
-
-    private final void method1065(Class348_Sub49 class348_sub49, int i, int i_0_) {
-        if (i_0_ == 1) this.aChar1778 = Class50_Sub1.method462(class348_sub49.readByte(-91), -128);
-        else if (i_0_ == 2) this.aChar1779 = Class50_Sub1.method462(class348_sub49.readByte(-119), -128);
-        else if (i_0_ == 3) aString1774 = class348_sub49.readString((byte) 86);
-        else if (i_0_ == 4) anInt1764 = class348_sub49.readInt((byte) -126);
+* Visit http://jode.sourceforge.net/
+*/
+class Class117 {
+    private var anInt1764 = 0
+    var aClass356_1767: Class356? = null
+    private var aClass356_1770: Class356? = null
+    private var aString1774: String? = "null"
+    var aChar1778: Char = 0.toChar()
+    var aChar1779: Char = 0.toChar()
+    private fun method1065(class348_sub49: Class348_Sub49, i: Int, i_0_: Int) {
+        if (i_0_ == 1) this.aChar1778 = method462(class348_sub49.readByte(-91), -128)
+        else if (i_0_ == 2) this.aChar1779 = method462(class348_sub49.readByte(-119), -128)
+        else if (i_0_ == 3) aString1774 = class348_sub49.readString(86.toByte())
+        else if (i_0_ == 4) anInt1764 = class348_sub49.readInt((-126.toByte()).toByte())
         else if (i_0_ == 5 || i_0_ == 6) {
-            int i_1_ = class348_sub49.readUnsignedShort(i ^ ~0x3235ab57);
-            this.aClass356_1767 = new Class356(Class33.method340(i_1_, (byte) 108));
-            for (int i_2_ = 0; i_2_ < i_1_; i_2_++) {
-                int i_3_ = class348_sub49.readInt((byte) -126);
-                Class348 class348;
-                if (i_0_ != 5) class348 = new Class348_Sub35(class348_sub49.readInt((byte) -126));
-                else class348 = new Class348_Sub50(class348_sub49.readString((byte) -35));
-                this.aClass356_1767.method3483((byte) 21, i_3_, class348);
+            val i_1_ = class348_sub49.readUnsignedShort(i xor 0x3235ab57.inv())
+            this.aClass356_1767 = Class356(method340(i_1_, 108.toByte()))
+            for (i_2_ in 0..<i_1_) {
+                val i_3_ = class348_sub49.readInt((-126.toByte()).toByte())
+                val class348 = if (i_0_ != 5) Class348_Sub35(class348_sub49.readInt((-126.toByte()).toByte()))
+                else Class348_Sub50(class348_sub49.readString((-35.toByte()).toByte()))
+                aClass356_1767!!.method3483(21.toByte(), i_3_.toLong(), class348)
             }
         }
-        anInt1765++;
-        if (i != -21424) method1068((byte) -15);
+        anInt1765++
+        if (i != -21424) method1068((-15.toByte()).toByte())
     }
 
-    final boolean method1066(boolean bool, String string) {
-        anInt1776++;
-        if (this.aClass356_1767 == null) return false;
-        if (bool != false) aClass356_1770 = null;
-        if (aClass356_1770 == null) method1071(true);
-        for (Class348_Sub46 class348_sub46 = ((Class348_Sub46) aClass356_1770.method3480(Class287.method2179(string, (byte) 109), -6008)); class348_sub46 != null; class348_sub46 = (Class348_Sub46) aClass356_1770.method3476(true)) {
-            if (class348_sub46.aString7111.equals(string)) return true;
+    fun method1066(bool: Boolean, string: String): Boolean {
+        anInt1776++
+        if (this.aClass356_1767 == null) return false
+        if (bool != false) aClass356_1770 = null
+        if (aClass356_1770 == null) method1071(true)
+        var class348_sub46 = (aClass356_1770!!.method3480(Class287.method2179(string, 109.toByte()), -6008) as? Class348_Sub46)
+        while (class348_sub46 != null) {
+            if (class348_sub46.aString7111 == string) return true
+            class348_sub46 = aClass356_1770!!.method3476(true) as? Class348_Sub46
         }
-        return false;
+        return false
     }
 
-    final boolean method1067(boolean bool, int i) {
-        anInt1773++;
-        if (this.aClass356_1767 == null) return false;
-        if (bool != true) return true;
-        if (aClass356_1770 == null) method1068((byte) 120);
-        Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass356_1770.method3480(i, -6008);
-        return class348_sub35 != null;
+    fun method1067(bool: Boolean, i: Int): Boolean {
+        anInt1773++
+        if (this.aClass356_1767 == null) return false
+        if (bool != true) return true
+        if (aClass356_1770 == null) method1068(120.toByte())
+        val class348_sub35 = aClass356_1770!!.method3480(i.toLong(), -6008) as? Class348_Sub35
+        return class348_sub35 != null
     }
 
-    private final void method1068(byte i) {
-        anInt1772++;
-        aClass356_1770 = new Class356(this.aClass356_1767.method3475(true));
-        for (Class348_Sub35 class348_sub35 = ((Class348_Sub35) this.aClass356_1767.method3484(0)); class348_sub35 != null; class348_sub35 = (Class348_Sub35) this.aClass356_1767.method3482(0)) {
-            Class348_Sub35 class348_sub35_4_ = new Class348_Sub35((int) class348_sub35.aLong4291);
-            aClass356_1770.method3483((byte) 26, class348_sub35.anInt6976, class348_sub35_4_);
-        }
-        if (i < 85) method1069(111, null);
-    }
-
-    final void method1069(int i, Class348_Sub49 class348_sub49) {
-        anInt1763++;
-        for (; ; ) {
-            int i_5_ = class348_sub49.readUnsignedByte(i + 255);
-            if (i_5_ == 0) break;
-            method1065(class348_sub49, i + -21424, i_5_);
-        }
-        if (i != 0) aString1774 = null;
-    }
-
-    static final void method1070(byte i, int i_6_) {
-        if (i < 109) anInt1780 = 10;
-        anInt1769++;
-        if (Class348_Sub49_Sub2.anIntArray9757 == null || Class348_Sub49_Sub2.anIntArray9757.length < i_6_) Class348_Sub49_Sub2.anIntArray9757 = new int[i_6_];
-    }
-
-    private final void method1071(boolean bool) {
-        aClass356_1770 = new Class356(this.aClass356_1767.method3475(bool));
-        anInt1768++;
-        for (Class348_Sub50 class348_sub50 = ((Class348_Sub50) this.aClass356_1767.method3484(0)); class348_sub50 != null; class348_sub50 = (Class348_Sub50) this.aClass356_1767.method3482(0)) {
-            Class348_Sub46 class348_sub46 = new Class348_Sub46((class348_sub50.aString7211), (int) (class348_sub50.aLong4291));
-            aClass356_1770.method3483((byte) 102, Class287.method2179((class348_sub50.aString7211), (byte) 120), class348_sub46);
+    private fun method1068(i: Byte) {
+        anInt1772++
+        aClass356_1770 = Class356(aClass356_1767!!.method3475(true))
+        var class348_sub35 = (aClass356_1767!!.method3484(0) as? Class348_Sub35)
+        while (class348_sub35 != null) {
+            val class348_sub35_4_ = Class348_Sub35(class348_sub35.aLong4291.toInt())
+            aClass356_1770!!.method3483(26.toByte(), class348_sub35.anInt6976.toLong(), class348_sub35_4_)
+            class348_sub35 = aClass356_1767!!.method3482(0) as? Class348_Sub35
         }
     }
 
-    static final void method1072(Class45 class45, byte i) {
-        if (i >= -91) method1070((byte) -93, 92);
-        Class239_Sub12.aClass45_5964 = class45;
-        anInt1771++;
+    fun method1069(i: Int, class348_sub49: Class348_Sub49) {
+        anInt1763++
+        while (true) {
+            val i_5_ = class348_sub49.readUnsignedByte(i + 255)
+            if (i_5_ == 0) break
+            method1065(class348_sub49, i + -21424, i_5_)
+        }
+        if (i != 0) aString1774 = null
     }
 
-    final int method1073(boolean bool, int i) {
-        if (bool != false) method1067(false, -31);
-        anInt1775++;
-        if (this.aClass356_1767 == null) return anInt1764;
-        Class348_Sub35 class348_sub35 = ((Class348_Sub35) this.aClass356_1767.method3480(i, -6008));
-        if (class348_sub35 == null) return anInt1764;
-        return class348_sub35.anInt6976;
+    private fun method1071(bool: Boolean) {
+        aClass356_1770 = Class356(aClass356_1767!!.method3475(bool))
+        anInt1768++
+        var class348_sub50 = (aClass356_1767!!.method3484(0) as? Class348_Sub50)
+        while (class348_sub50 != null) {
+            val class348_sub46 = Class348_Sub46((class348_sub50.aString7211), (class348_sub50.aLong4291).toInt())
+            aClass356_1770!!.method3483(102.toByte(), Class287.method2179((class348_sub50.aString7211), 120.toByte()), class348_sub46)
+            class348_sub50 = aClass356_1767!!.method3482(0) as? Class348_Sub50
+        }
     }
 
-    public Class117() {
-        /* empty */
+    fun method1073(bool: Boolean, i: Int): Int {
+        if (bool != false) method1067(false, -31)
+        anInt1775++
+        if (this.aClass356_1767 == null) return anInt1764
+        val class348_sub35 = (aClass356_1767!!.method3480(i.toLong(), -6008) as? Class348_Sub35) ?: return anInt1764
+        return class348_sub35.anInt6976
     }
 
-    final String method1074(int i, int i_7_) {
-        anInt1777++;
-        if (i_7_ <= 60) return null;
-        if (this.aClass356_1767 == null) return aString1774;
-        Class348_Sub50 class348_sub50 = ((Class348_Sub50) this.aClass356_1767.method3480(i, -6008));
-        if (class348_sub50 == null) return aString1774;
-        return class348_sub50.aString7211;
+    fun method1074(i: Int, i_7_: Int): String? {
+        anInt1777++
+        if (i_7_ <= 60) return null
+        if (this.aClass356_1767 == null) return aString1774
+        val class348_sub50 = (aClass356_1767!!.method3480(i.toLong(), -6008) as? Class348_Sub50) ?: return aString1774
+        return class348_sub50.aString7211
+    }
+
+    companion object {
+        @JvmField
+        var anInt1763: Int = 0
+        @JvmField
+        var anInt1765: Int = 0
+        @JvmField
+        var aClass351_1766: Class351? = Class351(74, -1)
+        @JvmField
+        var anInt1768: Int = 0
+        @JvmField
+        var anInt1769: Int = 0
+        @JvmField
+        var anInt1771: Int = 0
+        @JvmField
+        var anInt1772: Int = 0
+        @JvmField
+        var anInt1773: Int = 0
+        @JvmField
+        var anInt1775: Int = 0
+        @JvmField
+        var anInt1776: Int = 0
+        @JvmField
+        var anInt1777: Int = 0
+        @JvmField
+        var anInt1780: Int = 0
+
+        @JvmStatic
+        fun method1064(i: Int) {
+            if (i != -3) aClass351_1766 = null
+            aClass351_1766 = null
+        }
+
+        @JvmStatic
+        fun method1070(i: Byte, i_6_: Int) {
+            if (i < 109) anInt1780 = 10
+            anInt1769++
+            if (Class348_Sub49_Sub2.anIntArray9757 == null || Class348_Sub49_Sub2.anIntArray9757.size < i_6_) Class348_Sub49_Sub2.anIntArray9757 = IntArray(i_6_)
+        }
+
+        fun method1072(class45: Class45?, i: Byte) {
+            if (i >= -91) method1070((-93.toByte()).toByte(), 92)
+            Class239_Sub12.aClass45_5964 = class45
+            anInt1771++
+        }
     }
 }
