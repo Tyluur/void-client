@@ -163,9 +163,9 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                         bool = false
                     }
                 }
-                if (Class295.anIntArray3759[i_19_] != -1 && Class129.aByteArrayArray1887[i_19_] == null) {
-                    Class129.aByteArrayArray1887[i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, Class295.anIntArray3759[i_19_], 0)
-                    if (Class129.aByteArrayArray1887[i_19_] == null) {
+                if (Class295.anIntArray3759[i_19_] != -1 && Class129.aByteArrayArray1887!![i_19_] == null) {
+                    Class129.aByteArrayArray1887!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, Class295.anIntArray3759[i_19_], 0)
+                    if (Class129.aByteArrayArray1887!![i_19_] == null) {
                         Class268.anInt3441++
                         bool = false
                     }
@@ -229,7 +229,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                     if (Class348_Sub8.aHa6654!!.method3639() && Class316.aClass348_Sub51_3959.aClass239_Sub18_7259.method1800(-32350) == 2) {
                         var i_26_ = 0
                         while ((i_26_ < Class347.aByteArrayArray4281.size)) {
-                            if ((Class348_Sub23_Sub1.aByteArrayArray8996!![i_26_] != null) || Class129.aByteArrayArray1887[i_26_] != null) {
+                            if ((Class348_Sub23_Sub1.aByteArrayArray8996!![i_26_] != null) || Class129.aByteArrayArray1887!![i_26_] != null) {
                                 bool_25_ = true
                                 break
                             }

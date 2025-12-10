@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-class Class288 implements Interface12 {
+public class Class288 implements Interface12 {
     int anInt4950;
     int anInt4951;
     Class341 aClass341_4952;

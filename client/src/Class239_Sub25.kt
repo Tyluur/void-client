@@ -159,7 +159,7 @@ class Class239_Sub25 : Class239 {
                         val i_21_ = (256.0f * f_11_).toInt()
                         val i_22_ = (256.0f * f_12_).toInt()
                         val i_23_ = ((i_21_ shl 8) + ((i_20_ shl 16) + (-16777216 + i_22_)))
-                        Class126.anIntArray4983[i_5_++] = i_23_
+                        Class126.anIntArray4983!![i_5_++] = i_23_
                     }
                 }
             }

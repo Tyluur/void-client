@@ -2051,7 +2051,7 @@ object Class66 {
         } else if (i >= 6700) {
             if (i < 6800 && Class11.aClass231_196 == Class288.aClass231_4953) {
                 if (i == 6700) {
-                    var i_174_ = Class125.aClass356_4915.method3474(1)
+                    var i_174_ = Class125.aClass356_4915!!.method3474(1)
                     if (r.anInt9721 != -1) i_174_++
                     anIntArray1149!![anInt1173++] = i_174_
                     return
@@ -2065,8 +2065,8 @@ object Class66 {
                         }
                         i_175_--
                     }
-                    var class348_sub41 = (Class125.aClass356_4915.method3484(0) as Class348_Sub41?)
-                    while (i_175_-- > 0) class348_sub41 = (Class125.aClass356_4915.method3482(0) as Class348_Sub41?)
+                    var class348_sub41 = (Class125.aClass356_4915!!.method3484(0) as Class348_Sub41?)
+                    while (i_175_-- > 0) class348_sub41 = (Class125.aClass356_4915!!.method3482(0) as Class348_Sub41?)
                     anIntArray1149!![anInt1173++] = class348_sub41!!.anInt7050
                     return
                 }
@@ -3657,7 +3657,7 @@ object Class66 {
                 }
                 if (i == 2702) {
                     val i_298_ = anIntArray1149!![--anInt1173]
-                    val class348_sub41 = (Class125.aClass356_4915.method3480(i_298_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (Class125.aClass356_4915!!.method3480(i_298_.toLong(), -6008) as Class348_Sub41?)
                     if (class348_sub41 == null) {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -3686,7 +3686,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_301_ = anIntArray1149!![anInt1173]
                     val i_302_ = anIntArray1149!![anInt1173 + 1]
-                    val class348_sub41 = (Class125.aClass356_4915.method3480(i_301_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (Class125.aClass356_4915!!.method3480(i_301_.toLong(), -6008) as Class348_Sub41?)
                     if (class348_sub41 != null && (class348_sub41.anInt7050 == i_302_)) anIntArray1149!![anInt1173++] = 1
                     else {
                         anIntArray1149!![anInt1173++] = 0
@@ -3796,7 +3796,7 @@ object Class66 {
                     anInt1173 -= 2
                     val i_312_ = anIntArray1149!![anInt1173]
                     val i_313_ = anIntArray1149!![anInt1173 + 1]
-                    val class348_sub41 = (Class125.aClass356_4915.method3480(i_312_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (Class125.aClass356_4915!!.method3480(i_312_.toLong(), -6008) as Class348_Sub41?)
                     if (class348_sub41 != null) Class127_Sub1.method1118((class348_sub41.anInt7050 != i_313_), true, class348_sub41, 2533)
                     Class338.method2661(i_313_, i_312_, 3, true, 2)
                     return
@@ -3804,7 +3804,7 @@ object Class66 {
                 if (i == 3112) {
                     anInt1173--
                     val i_314_ = anIntArray1149!![anInt1173]
-                    val class348_sub41 = (Class125.aClass356_4915.method3480(i_314_.toLong(), -6008) as Class348_Sub41?)
+                    val class348_sub41 = (Class125.aClass356_4915!!.method3480(i_314_.toLong(), -6008) as Class348_Sub41?)
                     if (class348_sub41 != null && class348_sub41.anInt7053 == 3) Class127_Sub1.method1118(true, true, class348_sub41, 2533)
                     return
                 }
@@ -3905,7 +3905,7 @@ object Class66 {
                 }
                 if (i == 3304) {
                     val i_323_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (Class127_Sub1.aClass271_8378.method2044(106, i_323_).anInt9542)
+                    anIntArray1149!![anInt1173++] = (Class127_Sub1.aClass271_8378!!.method2044(106, i_323_).anInt9542)
                     return
                 }
                 if (i == 3305) {

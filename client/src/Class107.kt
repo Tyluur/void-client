@@ -119,14 +119,14 @@ class Class107 {
             anInt1655++
             if (bool) {
                 if (r.anInt9721 != -1) method235(r.anInt9721, (-108.toByte()).toByte())
-                var class348_sub41 = Class125.aClass356_4915.method3484(0) as Class348_Sub41
+                var class348_sub41 = Class125.aClass356_4915!!.method3484(0) as? Class348_Sub41
                 while (class348_sub41 != null) {
                     if (!class348_sub41.method2712(4.toByte())) {
-                        class348_sub41 = (Class125.aClass356_4915.method3484(0) as Class348_Sub41)
+                        class348_sub41 = (Class125.aClass356_4915!!.method3484(0) as? Class348_Sub41)
                         if (class348_sub41 == null) break
                     }
                     Class127_Sub1.method1118(true, false, class348_sub41, 2533)
-                    class348_sub41 = (Class125.aClass356_4915.method3482(0) as Class348_Sub41)
+                    class348_sub41 = (Class125.aClass356_4915!!.method3482(0) as? Class348_Sub41)
                 }
                 r.anInt9721 = -1
                 Class125.aClass356_4915 = Class356(8)

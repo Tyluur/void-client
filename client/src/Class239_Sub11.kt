@@ -117,13 +117,13 @@ class Class239_Sub11 : Class239 {
                 Class267.aClass267_3424.method2025(Class292(Class113.aClass45_1743), false)
                 Class267.aClass267_3425.method2025(Class292(Class104.aClass45_1627), false)
                 Class267.aClass267_3426.method2025(Class136((Class348_Sub32.aClass45_6950), "details"), false)
-                for (i_4_ in Class126.aClass267Array4987.indices) {
-                    if (Class126.aClass267Array4987[i_4_].method2027(78) == null) throw RuntimeException()
+                for (i_4_ in Class126.aClass267Array4987!!.indices) {
+                    if (Class126.aClass267Array4987!![i_4_]!!.method2027(78) == null) throw RuntimeException()
                 }
                 var i_5_ = 0
-                val class267s = Class126.aClass267Array4987
+                val class267s = Class126.aClass267Array4987!!
                 for (i_6_ in class267s.indices) {
-                    val class267 = class267s[i_6_]
+                    val class267 = class267s[i_6_]!!
                     val i_7_ = class267.method2024(-1)
                     val i_8_ = class267.method2027(80).method31(87)
                     i_5_ += i_8_ * i_7_ / 100
@@ -136,10 +136,10 @@ class Class239_Sub11 : Class239 {
             var i_10_ = 0
             var bool = true
             if (i.toInt() != -25) anInt5951 = -33
-            val class267s = Class126.aClass267Array4987
+            val class267s = Class126.aClass267Array4987!!
             var i_11_ = 0
             while (class267s.size > i_11_) {
-                val class267 = class267s[i_11_]
+                val class267 = class267s[i_11_]!!
                 val i_12_ = class267.method2024(-1)
                 val i_13_ = class267.method2027(70).method31(i.toInt() xor 0x75)
                 i_9_ += i_12_
