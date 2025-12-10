@@ -171,7 +171,7 @@ class Class112 internal constructor(class297: Class297) : Runnable {
                         }
                         if (i_9_ != -1) {
                             var i_13_ = 0
-                            val class156 = Class156(Class233.aClass107_3022)
+                            val class156 = Class156(Class233.aClass107_3022!!)
                             var class348_sub42_sub13 = (class156.method1240(110) as Class348_Sub42_Sub13)
                             while (class348_sub42_sub13 != null) {
                                 if (i_9_ == i_13_++) return (class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).anInt9609

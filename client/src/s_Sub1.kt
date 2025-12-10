@@ -365,21 +365,21 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
             for (i_80_ in 0..<i_78_) {
                 val i_81_ = `is`[i_80_]
                 val i_82_ = is_62_[i_80_]
-                if (i_81_ == 0 && i_82_ == 0) class236.aShortArray3088[i_80_] = (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]).toShort()
-                else if (i_81_ == 0 && i_82_ == this.anInt4592) class236.aShortArray3088[i_80_] = (aByteArrayArray8220!![i]!![i_60_ + 1] - aByteArrayArray8232!![i]!![i_60_ + 1]).toShort()
-                else if (i_81_ == this.anInt4592 && i_82_ == this.anInt4592) class236.aShortArray3088[i_80_] = (aByteArrayArray8220!![i + 1]!![i_60_ + 1] - aByteArrayArray8232!![i + 1]!![i_60_ + 1]).toShort()
-                else if (i_81_ == this.anInt4592 && i_82_ == 0) class236.aShortArray3088[i_80_] = (aByteArrayArray8220!![i + 1]!![i_60_] - aByteArrayArray8232!![i + 1]!![i_60_]).toShort()
+                if (i_81_ == 0 && i_82_ == 0) class236.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]).toShort()
+                else if (i_81_ == 0 && i_82_ == this.anInt4592) class236.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i]!![i_60_ + 1] - aByteArrayArray8232!![i]!![i_60_ + 1]).toShort()
+                else if (i_81_ == this.anInt4592 && i_82_ == this.anInt4592) class236.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i + 1]!![i_60_ + 1] - aByteArrayArray8232!![i + 1]!![i_60_ + 1]).toShort()
+                else if (i_81_ == this.anInt4592 && i_82_ == 0) class236.aShortArray3088!![i_80_] = (aByteArrayArray8220!![i + 1]!![i_60_] - aByteArrayArray8232!![i + 1]!![i_60_]).toShort()
                 else {
                     val i_83_ = (((aByteArrayArray8220!![i]!![i_60_] - aByteArrayArray8232!![i]!![i_60_]) * (this.anInt4592 - i_81_)) + (aByteArrayArray8220!![i + 1]!![i_60_] - aByteArrayArray8232!![i + 1]!![i_60_]) * i_81_)
                     val i_84_ = (((aByteArrayArray8220!![i]!![i_60_ + 1] - aByteArrayArray8232!![i]!![i_60_ + 1]) * (this.anInt4592 - i_81_)) + ((aByteArrayArray8220!![i + 1]!![i_60_ + 1] - aByteArrayArray8232!![i + 1]!![i_60_ + 1]) * i_81_))
-                    class236.aShortArray3088[i_80_] = ((i_83_ * (this.anInt4592 - i_82_) + i_84_ * i_82_) shr 2 * this.anInt4588).toShort()
+                    class236.aShortArray3088!![i_80_] = ((i_83_ * (this.anInt4592 - i_82_) + i_84_ * i_82_) shr 2 * this.anInt4588).toShort()
                 }
                 val i_85_ = (i shl this.anInt4588) + i_81_
                 val i_86_ = (i_60_ shl this.anInt4588) + i_82_
-                class236.aShortArray3096[i_80_] = i_81_.toShort()
-                class236.aShortArray3094[i_80_] = i_82_.toShort()
-                class236.aShortArray3097[i_80_] = (this.method3986(i_85_, i_86_, 67.toByte()) + (if (is_61_ != null) is_61_[i_80_] else 0)).toShort()
-                if (class236.aShortArray3088[i_80_] < 2) class236.aShortArray3088[i_80_] = 2.toShort()
+                class236.aShortArray3096!![i_80_] = i_81_.toShort()
+                class236.aShortArray3094!![i_80_] = i_82_.toShort()
+                class236.aShortArray3097!![i_80_] = (this.method3986(i_85_, i_86_, 67.toByte()) + (if (is_61_ != null) is_61_[i_80_] else 0)).toShort()
+                if (class236.aShortArray3088!![i_80_] < 2) class236.aShortArray3088!![i_80_] = 2.toShort()
             }
             var bool_87_ = false
             var i_88_ = 0
@@ -405,20 +405,20 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
             }
             for (i_91_ in 0..<i_79_) {
                 if (is_67_[i_91_] >= 0 || is_68_ != null && is_68_[i_91_] >= 0) {
-                    if (is_67_[i_91_] >= 0) class236.anIntArray3093[class236.aShort3099.toInt()] = Class25.method303(is_67_[i_91_], 30).toInt()
-                    else class236.anIntArray3093[class236.aShort3099.toInt()] = -1
+                    if (is_67_[i_91_] >= 0) class236.anIntArray3093!![class236.aShort3099.toInt()] = Class25.method303(is_67_[i_91_], 30).toInt()
+                    else class236.anIntArray3093!![class236.aShort3099.toInt()] = -1
                     if (is_68_ != null) {
-                        if (is_68_[i_91_] != -1) class236.anIntArray3092[class236.aShort3099.toInt()] = Class25.method303(is_68_[i_91_], 30).toInt()
-                        else class236.anIntArray3092[class236.aShort3099.toInt()] = -1
+                        if (is_68_[i_91_] != -1) class236.anIntArray3092!![class236.aShort3099.toInt()] = Class25.method303(is_68_[i_91_], 30).toInt()
+                        else class236.anIntArray3092!![class236.aShort3099.toInt()] = -1
                     }
-                    class236.aShortArray3091[class236.aShort3099.toInt()] = is_64_[i_91_].toShort()
-                    class236.aShortArray3090[class236.aShort3099.toInt()] = is_65_[i_91_].toShort()
-                    class236.aShortArray3101[class236.aShort3099.toInt()] = is_66_[i_91_].toShort()
+                    class236.aShortArray3091!![class236.aShort3099.toInt()] = is_64_[i_91_].toShort()
+                    class236.aShortArray3090!![class236.aShort3099.toInt()] = is_65_[i_91_].toShort()
+                    class236.aShortArray3101!![class236.aShort3099.toInt()] = is_66_[i_91_].toShort()
                     if (bool_87_) {
                         if (is_69_[i_91_] != -1 && !(aHa_Sub1_8217.aD4579!!.method3(is_69_[i_91_], -6662)!!.aBoolean209)) {
-                            class236.aShortArray3095[class236.aShort3099.toInt()] = is_69_[i_91_].toShort()
-                            class236.aShortArray3098[class236.aShort3099.toInt()] = is_70_[i_91_].toShort()
-                        } else class236.aShortArray3095[class236.aShort3099.toInt()] = (-1).toShort()
+                            class236.aShortArray3095!![class236.aShort3099.toInt()] = is_69_[i_91_].toShort()
+                            class236.aShortArray3098!![class236.aShort3099.toInt()] = is_70_[i_91_].toShort()
+                        } else class236.aShortArray3095!![class236.aShort3099.toInt()] = (-1).toShort()
                     }
                     class236.aShort3099++
                 }
@@ -1307,9 +1307,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                 }
                 if (anInt8228 == -1) {
                     for (i_360_ in 0..<class236.aShort3089) {
-                        val i_361_ = (class236.aShortArray3096[i_360_] + (i shl this.anInt4588))
-                        val i_362_ = class236.aShortArray3097[i_360_]
-                        val i_363_ = (class236.aShortArray3094[i_360_] + (i_300_ shl this.anInt4588))
+                        val i_361_ = (class236.aShortArray3096!![i_360_] + (i shl this.anInt4588))
+                        val i_362_ = class236.aShortArray3097!![i_360_]
+                        val i_363_ = (class236.aShortArray3094!![i_360_] + (i_300_ shl this.anInt4588))
                         val f = aFloat8218 + (aFloat8233 * i_361_.toFloat() + aFloat8227 * i_362_.toFloat() + aFloat8231 * i_363_.toFloat())
                         if (f <= aHa_Sub1_8217.anInt7482.toFloat()) return
                         val f_364_ = aFloat8213 + (aFloat8212 * i_361_.toFloat() + aFloat8216 * i_362_.toFloat() + aFloat8224 * i_363_.toFloat())
@@ -1320,9 +1320,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                     }
                 } else {
                     for (i_366_ in 0..<class236.aShort3089) {
-                        val i_367_ = (class236.aShortArray3096[i_366_] + (i shl this.anInt4588))
-                        val i_368_ = class236.aShortArray3097[i_366_]
-                        val i_369_ = (class236.aShortArray3094[i_366_] + (i_300_ shl this.anInt4588))
+                        val i_367_ = (class236.aShortArray3096!![i_366_] + (i shl this.anInt4588))
+                        val i_368_ = class236.aShortArray3097!![i_366_]
+                        val i_369_ = (class236.aShortArray3094!![i_366_] + (i_300_ shl this.anInt4588))
                         val f = aFloat8218 + (aFloat8233 * i_367_.toFloat() + aFloat8227 * i_368_.toFloat() + aFloat8231 * i_369_.toFloat())
                         val f_370_ = aFloat8213 + (aFloat8212 * i_367_.toFloat() + aFloat8216 * i_368_.toFloat() + aFloat8224 * i_369_.toFloat())
                         val f_371_ = aFloat8226 + (aFloat8214 * i_367_.toFloat() + aFloat8221 * i_368_.toFloat() + aFloat8229 * i_369_.toFloat())
@@ -1333,9 +1333,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                 }
                 if (class236.aShortArray3095 == null) {
                     for (i_396_ in 0..<class236.aShort3099) {
-                        val i_397_ = class236.aShortArray3091[i_396_]
-                        val i_398_ = class236.aShortArray3090[i_396_]
-                        val i_399_ = class236.aShortArray3101[i_396_]
+                        val i_397_ = class236.aShortArray3091!![i_396_]
+                        val i_398_ = class236.aShortArray3090!![i_396_]
+                        val i_399_ = class236.aShortArray3101!![i_396_]
                         val i_400_ = `is`[i_397_.toInt()]
                         val i_401_ = `is`[i_398_.toInt()]
                         val i_402_ = `is`[i_399_.toInt()]
@@ -1343,7 +1343,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                         val i_404_ = is_301_[i_398_.toInt()]
                         val i_405_ = is_301_[i_399_.toInt()]
                         if (((i_400_ - i_401_) * (i_405_ - i_404_) - (i_403_ - i_404_) * (i_402_ - i_401_)) > 0) {
-                            val i_406_ = class236.anIntArray3093[i_396_]
+                            val i_406_ = class236.anIntArray3093!![i_396_]
                             if (i_406_ != -1) {
                                 class109.aBoolean1671 = (i_400_ < 0 || i_401_ < 0 || i_402_ < 0 || (i_400_ > class109.anInt1679) || (i_401_ > class109.anInt1679) || (i_402_ > class109.anInt1679))
                                 class109.method1022(
@@ -1356,18 +1356,18 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     is_302_[i_397_.toInt()].toFloat(),
                                     is_302_[i_398_.toInt()].toFloat(),
                                     is_302_[i_399_.toInt()].toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_397_.toInt()]).toInt(), i_406_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_398_.toInt()]).toInt(), i_406_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_399_.toInt()]).toInt(), i_406_)).toFloat()
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_397_.toInt()]).toInt(), i_406_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_398_.toInt()]).toInt(), i_406_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_399_.toInt()]).toInt(), i_406_)).toFloat()
                                 )
                             }
                         }
                     }
                 } else if (anInt8228 == -1) {
                     for (i_372_ in 0..<class236.aShort3099) {
-                        val i_373_ = (class236.aShortArray3091[i_372_])
-                        val i_374_ = (class236.aShortArray3090[i_372_])
-                        val i_375_ = (class236.aShortArray3101[i_372_])
+                        val i_373_ = (class236.aShortArray3091!![i_372_])
+                        val i_374_ = (class236.aShortArray3090!![i_372_])
+                        val i_375_ = (class236.aShortArray3101!![i_372_])
                         val i_376_ = `is`[i_373_.toInt()]
                         val i_377_ = `is`[i_374_.toInt()]
                         val i_378_ = `is`[i_375_.toInt()]
@@ -1376,9 +1376,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                         val i_381_ = is_301_[i_375_.toInt()]
                         if (((i_376_ - i_377_) * (i_381_ - i_380_) - (i_379_ - i_380_) * (i_378_ - i_377_)) > 0) {
                             class109.aBoolean1671 = (i_376_ < 0 || i_377_ < 0 || i_378_ < 0 || (i_376_ > class109.anInt1679) || (i_377_ > class109.anInt1679) || (i_378_ > class109.anInt1679))
-                            val i_382_ = (class236.aShortArray3095[i_372_])
+                            val i_382_ = (class236.aShortArray3095!![i_372_])
                             if (i_382_.toInt() == -1) {
-                                val i_383_ = (class236.anIntArray3093[i_372_])
+                                val i_383_ = (class236.anIntArray3093!![i_372_])
                                 if (i_383_ != -1) class109.method1022(
                                     i_379_.toFloat(),
                                     i_380_.toFloat(),
@@ -1389,9 +1389,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     is_302_[i_373_.toInt()].toFloat(),
                                     is_302_[i_374_.toInt()].toFloat(),
                                     is_302_[i_375_.toInt()].toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_373_.toInt()]).toInt(), i_383_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_374_.toInt()]).toInt(), i_383_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_375_.toInt()]).toInt(), i_383_)).toFloat()
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_373_.toInt()]).toInt(), i_383_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_374_.toInt()]).toInt(), i_383_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_375_.toInt()]).toInt(), i_383_)).toFloat()
                                 )
                             } else class109.method1024(
                                 i_379_.toFloat(),
@@ -1403,15 +1403,15 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                 is_302_[i_373_.toInt()].toFloat(),
                                 is_302_[i_374_.toInt()].toFloat(),
                                 is_302_[i_375_.toInt()].toFloat(),
-                                ((class236.aShortArray3096[i_373_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                ((class236.aShortArray3096[i_374_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                ((class236.aShortArray3096[i_375_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                ((class236.aShortArray3094[i_373_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                ((class236.aShortArray3094[i_374_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                ((class236.aShortArray3094[i_375_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088[i_373_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088[i_374_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088[i_375_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                ((class236.aShortArray3096!![i_373_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                ((class236.aShortArray3096!![i_374_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                ((class236.aShortArray3096!![i_375_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                ((class236.aShortArray3094!![i_373_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                ((class236.aShortArray3094!![i_374_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                ((class236.aShortArray3094!![i_375_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_373_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_374_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_375_.toInt()]).toInt() and 0xffff]) and 0xffffff),
                                 0,
                                 0,
                                 0,
@@ -1422,9 +1422,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                     }
                 } else {
                     for (i_384_ in 0..<class236.aShort3099) {
-                        val i_385_ = (class236.aShortArray3091[i_384_])
-                        val i_386_ = (class236.aShortArray3090[i_384_])
-                        val i_387_ = (class236.aShortArray3101[i_384_])
+                        val i_385_ = (class236.aShortArray3091!![i_384_])
+                        val i_386_ = (class236.aShortArray3090!![i_384_])
+                        val i_387_ = (class236.aShortArray3101!![i_384_])
                         val i_388_ = `is`[i_385_.toInt()]
                         val i_389_ = `is`[i_386_.toInt()]
                         val i_390_ = `is`[i_387_.toInt()]
@@ -1433,9 +1433,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                         val i_393_ = is_301_[i_387_.toInt()]
                         if (((i_388_ - i_389_) * (i_393_ - i_392_) - (i_391_ - i_392_) * (i_390_ - i_389_)) > 0) {
                             class109.aBoolean1671 = (i_388_ < 0 || i_389_ < 0 || i_390_ < 0 || (i_388_ > class109.anInt1679) || (i_389_ > class109.anInt1679) || (i_390_ > class109.anInt1679))
-                            val i_394_ = (class236.aShortArray3095[i_384_])
+                            val i_394_ = (class236.aShortArray3095!![i_384_])
                             if (i_394_.toInt() == -1) {
-                                val i_395_ = (class236.anIntArray3093[i_384_])
+                                val i_395_ = (class236.anIntArray3093!![i_384_])
                                 if (i_395_ != -1) class109.method1022(
                                     i_391_.toFloat(),
                                     i_392_.toFloat(),
@@ -1446,9 +1446,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     is_302_[i_385_.toInt()].toFloat(),
                                     is_302_[i_386_.toInt()].toFloat(),
                                     is_302_[i_387_.toInt()].toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_385_.toInt()]).toInt(), i_395_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_386_.toInt()]).toInt(), i_395_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_387_.toInt()]).toInt(), i_395_)).toFloat()
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_385_.toInt()]).toInt(), i_395_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_386_.toInt()]).toInt(), i_395_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_387_.toInt()]).toInt(), i_395_)).toFloat()
                                 )
                             } else class109.method1024(
                                 i_391_.toFloat(),
@@ -1460,15 +1460,15 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                 is_302_[i_385_.toInt()].toFloat(),
                                 is_302_[i_386_.toInt()].toFloat(),
                                 is_302_[i_387_.toInt()].toFloat(),
-                                ((class236.aShortArray3096[i_385_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                ((class236.aShortArray3096[i_386_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                ((class236.aShortArray3096[i_387_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                ((class236.aShortArray3094[i_385_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                ((class236.aShortArray3094[i_386_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                ((class236.aShortArray3094[i_387_.toInt()]).toFloat() / this.anInt4592.toFloat()),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088[i_385_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088[i_386_.toInt()]).toInt() and 0xffff]) and 0xffffff),
-                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088[i_387_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                ((class236.aShortArray3096!![i_385_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                ((class236.aShortArray3096!![i_386_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                ((class236.aShortArray3096!![i_387_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                ((class236.aShortArray3094!![i_385_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                ((class236.aShortArray3094!![i_386_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                ((class236.aShortArray3094!![i_387_.toInt()]).toFloat() / this.anInt4592.toFloat()),
+                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_385_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_386_.toInt()]).toInt() and 0xffff]) and 0xffffff),
+                                0xffffff.inv() or ((Class126.anIntArray4983!![(class236.aShortArray3088!![i_387_.toInt()]).toInt() and 0xffff]) and 0xffffff),
                                 0,
                                 0,
                                 0,
@@ -1950,21 +1950,21 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                     } else if (aClass236ArrayArray8222!![i_464_]!![i_465_] != null) {
                         val class236 = aClass236ArrayArray8222!![i_464_]!![i_465_]!!
                         for (i_468_ in 0..<class236.aShort3089) {
-                            `is`[i_468_] = i_462_ + ((class236.aShortArray3096[i_468_]) * i_461_ / this.anInt4592)
-                            is_459_[i_468_] = i_463_ - ((class236.aShortArray3094[i_468_]) * i_461_ / this.anInt4592)
+                            `is`[i_468_] = i_462_ + ((class236.aShortArray3096!![i_468_]) * i_461_ / this.anInt4592)
+                            is_459_[i_468_] = i_463_ - ((class236.aShortArray3094!![i_468_]) * i_461_ / this.anInt4592)
                         }
                         for (i_469_ in 0..<class236.aShort3099) {
-                            val i_470_ = (class236.aShortArray3091[i_469_])
-                            val i_471_ = (class236.aShortArray3090[i_469_])
-                            val i_472_ = (class236.aShortArray3101[i_469_])
+                            val i_470_ = (class236.aShortArray3091!![i_469_])
+                            val i_471_ = (class236.aShortArray3090!![i_469_])
+                            val i_472_ = (class236.aShortArray3101!![i_469_])
                             val i_473_ = `is`[i_470_.toInt()]
                             val i_474_ = `is`[i_471_.toInt()]
                             val i_475_ = `is`[i_472_.toInt()]
                             val i_476_ = is_459_[i_470_.toInt()]
                             val i_477_ = is_459_[i_471_.toInt()]
                             val i_478_ = is_459_[i_472_.toInt()]
-                            if (class236.anIntArray3092 != null && (class236.anIntArray3092[i_469_]) != -1) {
-                                val i_479_ = (class236.anIntArray3092[i_469_])
+                            if (class236.anIntArray3092 != null && (class236.anIntArray3092!![i_469_]) != -1) {
+                                val i_479_ = (class236.anIntArray3092!![i_469_])
                                 class109.method1022(
                                     i_476_.toFloat(),
                                     i_477_.toFloat(),
@@ -1975,12 +1975,12 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     100.0f,
                                     100.0f,
                                     100.0f,
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_470_.toInt()]).toInt(), i_479_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_471_.toInt()]).toInt(), i_479_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_472_.toInt()]).toInt(), i_479_)).toFloat()
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_470_.toInt()]).toInt(), i_479_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_471_.toInt()]).toInt(), i_479_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_472_.toInt()]).toInt(), i_479_)).toFloat()
                                 )
-                            } else if ((class236.aShortArray3095 != null) && (class236.aShortArray3095[i_469_]).toInt() != -1) {
-                                val i_480_ = aHa_Sub1_8217.method3722(class236.aShortArray3095[i_469_].toInt())
+                            } else if ((class236.aShortArray3095 != null) && (class236.aShortArray3095!![i_469_]).toInt() != -1) {
+                                val i_480_ = aHa_Sub1_8217.method3722(class236.aShortArray3095!![i_469_].toInt())
                                 class109.method1022(
                                     i_476_.toFloat(),
                                     i_477_.toFloat(),
@@ -1991,12 +1991,12 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     100.0f,
                                     100.0f,
                                     100.0f,
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_470_.toInt()]).toInt(), i_480_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_471_.toInt()]).toInt(), i_480_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_472_.toInt()]).toInt(), i_480_)).toFloat()
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_470_.toInt()]).toInt(), i_480_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_471_.toInt()]).toInt(), i_480_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_472_.toInt()]).toInt(), i_480_)).toFloat()
                                 )
                             } else {
-                                val i_481_ = (class236.anIntArray3093[i_469_])
+                                val i_481_ = (class236.anIntArray3093!![i_469_])
                                 class109.method1022(
                                     i_476_.toFloat(),
                                     i_477_.toFloat(),
@@ -2007,9 +2007,9 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
                                     100.0f,
                                     100.0f,
                                     100.0f,
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_470_.toInt()]).toInt(), i_481_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_471_.toInt()]).toInt(), i_481_)).toFloat(),
-                                    (Class291.method2198(0, (class236.aShortArray3088[i_472_.toInt()]).toInt(), i_481_)).toFloat()
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_470_.toInt()]).toInt(), i_481_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_471_.toInt()]).toInt(), i_481_)).toFloat(),
+                                    (Class291.method2198(0, (class236.aShortArray3088!![i_472_.toInt()]).toInt(), i_481_)).toFloat()
                                 )
                             }
                         }

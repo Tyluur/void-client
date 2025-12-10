@@ -68,16 +68,16 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
         }
         for (i_25_ in 0..<i_24_) {
             Class30.anIntArray407!![i_25_] = (`is`[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
-            Class232.anIntArray3014[i_25_] = (is_23_[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
+            Class232.anIntArray3014!![i_25_] = (is_23_[i_25_] shr this.aHa_Sub3_8322!!.anInt8107)
         }
         var i_26_ = 0
         while (i_24_ > i_26_) {
             val i_27_ = Class30.anIntArray407!![i_26_]
-            val i_28_ = Class232.anIntArray3014[i_26_++]
+            val i_28_ = Class232.anIntArray3014!![i_26_++]
             val i_29_ = Class30.anIntArray407!![i_26_]
-            val i_30_ = Class232.anIntArray3014[i_26_++]
+            val i_30_ = Class232.anIntArray3014!![i_26_++]
             val i_31_ = Class30.anIntArray407!![i_26_]
-            val i_32_ = Class232.anIntArray3014[i_26_++]
+            val i_32_ = Class232.anIntArray3014!![i_26_++]
             if ((-((-i_29_ + i_31_) * (i_30_ - i_28_)) + (i_27_ - i_29_) * (i_30_ - i_32_)) > 0) var_r_Sub1.method3287(i_28_, i_22_ + -21622, i_27_, i_29_, i_30_, i_32_, i_31_)
         }
     }
