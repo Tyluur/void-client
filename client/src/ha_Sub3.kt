@@ -782,7 +782,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
     private fun method3845(i: Byte) {
         if (Class148.aClass196_2042 != this.aClass196_8184) {
             val class196 = this.aClass196_8184
-            this.aClass196_8184 = Class148.aClass196_2042
+            this.aClass196_8184 = Class148.aClass196_2042!!
             if (class196.method1450(-48)) method3913((-121).toByte())
             method3919(20794)
             this.aFloatArray8135 = aFloatArray8120

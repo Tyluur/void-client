@@ -1,13 +1,25 @@
-/* Class144 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import kotlin.concurrent.Volatile
 
-public class Class144 {
-    int anInt1994;
-    Class144 aClass144_1995;
-    Object anObject1996;
-    public volatile int anInt1997 = 0;
-    public volatile Object anObject1998;
-    int anInt1999;
-    public int anInt2000;
+/* Class144 - Decompiled by JODE
+* Visit http://jode.sourceforge.net/
+*/
+class Class144 {
+    @JvmField
+    var anInt1994: Int = 0
+    @JvmField
+    var aClass144_1995: Class144? = null
+    @JvmField
+    var anObject1996: Any? = null
+
+    @JvmField
+    @Volatile
+    var anInt1997: Int = 0
+
+    @JvmField
+    @Volatile
+    var anObject1998: Any? = null
+    @JvmField
+    var anInt1999: Int = 0
+    @JvmField
+    var anInt2000: Int = 0
 }

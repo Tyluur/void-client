@@ -1,52 +1,56 @@
 /* Class146 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class146 {
+    @JvmField
+    var anInt2016: Int = 0
+    @JvmField
+    var anInt2019: Int = 0
+    @JvmField
+    var anInt2020: Int = 0
 
-public final class Class146 {
-    static int anInt2012;
-    static long[] aLongArray2013 = new long[10];
-    static int anInt2014;
-    static Class45 aClass45_2015;
-    int anInt2016;
-    static int anInt2017;
-    static int anInt2018;
-    int anInt2019;
-    int anInt2020;
-
-    final void method1191(int i, Class348_Sub49 class348_sub49) {
+    fun method1191(i: Int, class348_sub49: Class348_Sub49) {
         if (i == 2048) {
-            anInt2018++;
-            for (; ; ) {
-                int i_0_ = class348_sub49.readUnsignedByte(255);
-                if (i_0_ == 0) break;
-                method1192(i_0_, class348_sub49, (byte) 17);
+            anInt2018++
+            while (true) {
+                val i_0_ = class348_sub49.readUnsignedByte(255)
+                if (i_0_ == 0) break
+                method1192(i_0_, class348_sub49, 17.toByte())
             }
         }
     }
 
-    private final void method1192(int i, Class348_Sub49 class348_sub49, byte i_1_) {
-        anInt2014++;
-        if (i_1_ != 17) method1194(-80);
+    private fun method1192(i: Int, class348_sub49: Class348_Sub49, i_1_: Byte) {
+        anInt2014++
+        if (i_1_.toInt() != 17) method1194(-80)
         if (i == 1) {
-            this.anInt2019 = class348_sub49.readUnsignedShort(842397944);
-            this.anInt2016 = class348_sub49.readUnsignedByte(255);
-            this.anInt2020 = class348_sub49.readUnsignedByte(i_1_ ^ 0xee);
+            this.anInt2019 = class348_sub49.readUnsignedShort(842397944)
+            this.anInt2016 = class348_sub49.readUnsignedByte(255)
+            this.anInt2020 = class348_sub49.readUnsignedByte(i_1_.toInt() xor 0xee)
         }
     }
 
-    static final boolean method1193(int i, int i_2_, boolean bool) {
-        if (bool != true) return true;
-        anInt2017++;
-        return (i_2_ & 0x800) != 0;
-    }
+    companion object {
+        var anInt2012: Int = 0
+        @JvmField
+        var aLongArray2013: LongArray? = LongArray(10)
+        var anInt2014: Int = 0
+        @JvmField
+        var aClass45_2015: Class45? = null
+        var anInt2017: Int = 0
+        var anInt2018: Int = 0
+        @JvmStatic
+        fun method1193(i: Int, i_2_: Int, bool: Boolean): Boolean {
+            if (!bool) return true
+            anInt2017++
+            return (i_2_ and 0x800) != 0
+        }
 
-    public static void method1194(int i) {
-        if (i != 10) method1193(91, -68, true);
-        aLongArray2013 = null;
-        aClass45_2015 = null;
-    }
-
-    public Class146() {
-        /* empty */
+        @JvmStatic
+        fun method1194(i: Int) {
+            if (i != 10) method1193(91, -68, true)
+            aLongArray2013 = null
+            aClass45_2015 = null
+        }
     }
 }

@@ -220,7 +220,7 @@ object Class66 {
                 val i_11_ = anIntArray1149!![--anInt1173]
                 val class147 = method3985(-101, i_11_)
                 var string = ""
-                if (class147 != null && class147.aString2028 != null) string = class147.aString2028
+                if (class147 != null && class147.aString2028 != null) string = class147.aString2028!!
                 aStringArray1152!![anInt1170++] = string
                 return
             }
@@ -273,7 +273,7 @@ object Class66 {
                 val i_17_ = anIntArray1149!![--anInt1173]
                 val class147 = method3985(-101, i_17_)
                 var string = ""
-                if (class147 != null && class147.aString2024 != null) string = class147.aString2024
+                if (class147 != null && class147.aString2024 != null) string = class147.aString2024!!
                 aStringArray1152!![anInt1170++] = string
                 return
             }
@@ -281,7 +281,7 @@ object Class66 {
                 val i_18_ = anIntArray1149!![--anInt1173]
                 val class147 = method3985(-101, i_18_)
                 var string = ""
-                if (class147 != null && class147.aString2022 != null) string = class147.aString2022
+                if (class147 != null && class147.aString2022 != null) string = class147.aString2022!!
                 aStringArray1152!![anInt1170++] = string
                 return
             }
@@ -320,7 +320,7 @@ object Class66 {
                 val i_23_ = anIntArray1149!![--anInt1173]
                 val class147 = method3985(-101, i_23_)
                 var string = ""
-                if (class147 != null && class147.aString2033 != null) string = class147.aString2033
+                if (class147 != null && class147.aString2033 != null) string = class147.aString2033!!
                 aStringArray1152!![anInt1170++] = string
                 return
             }
@@ -351,7 +351,7 @@ object Class66 {
                 val i_28_ = anIntArray1149!![--anInt1173]
                 val class147 = method3985(-101, i_28_)
                 var string = ""
-                if (class147 != null && class147.aString2025 != null) string = class147.aString2025
+                if (class147 != null && class147.aString2025 != null) string = class147.aString2025!!
                 aStringArray1152!![anInt1170++] = string
                 return
             }
@@ -2777,8 +2777,8 @@ object Class66 {
                 val i_258_ = anIntArray1149!![anInt1173]
                 val i_259_ = anIntArray1149!![anInt1173 + 1]
                 if ((Class132.aPlayer_1907!!.aClass154_10536) != null) {
-                    for (i_260_ in Class141.anIntArray1973.indices) {
-                        if (Class141.anIntArray1973[i_260_] == i_258_) {
+                    for (i_260_ in Class141.anIntArray1973!!.indices) {
+                        if (Class141.anIntArray1973!![i_260_] == i_258_) {
                             Class132.aPlayer_1907!!.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_260_)
                             return
                         }

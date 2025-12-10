@@ -310,7 +310,7 @@ abstract class Class14(class377: Class377?, i: Int, class304: Class304?, class68
             aBoolean5099 = bool
             this.anInt5093 = i
             glGenTextures(1, Class141.anIntArray1975, 0)
-            anInt5096 = Class141.anIntArray1975[0]
+            anInt5096 = Class141.anIntArray1975!![0]
             method229(true)
             method236(0, (-126).toByte())
         } catch (runtimeexception: RuntimeException) {

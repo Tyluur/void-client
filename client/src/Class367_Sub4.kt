@@ -255,7 +255,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
                             if (class357 != null && class357.aClass148_4396 != null) {
                                 var class148 = class357.aClass148_4396
                                 while (class148 != null) {
-                                    val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)
+                                    val class318_sub1_sub3 = (class148.aClass318_Sub1_Sub3_2040)!!
                                     if (((class318_sub1_sub3.aShort8743) != class318_sub1_sub3.aShort8751) || (class318_sub1_sub3.aShort8750 != class318_sub1_sub3.aShort8747)) {
                                         var i_33_ = (class318_sub1_sub3.aShort8743).toInt()
                                         while ((i_33_ <= class318_sub1_sub3.aShort8751)) {

@@ -218,7 +218,7 @@ class Class239_Sub8 : Class239 {
         }
 
         @JvmStatic
-        fun method1756(`is`: ByteArray?, i: Int, i_22_: Int, i_23_: Int, is_24_: Array<ByteArray>?, is_25_: Array<ByteArray>?, is_26_: IntArray?, is_27_: IntArray?): Int {
+        fun method1756(`is`: ByteArray?, i: Int, i_22_: Int, i_23_: Int, is_24_: Array<ByteArray>, is_25_: Array<ByteArray>, is_26_: IntArray?, is_27_: IntArray?): Int {
             try {
                 anInt5918++
                 val i_28_ = -19 % ((i - 64) / 39)
