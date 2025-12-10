@@ -102,7 +102,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
                 if (is_8_ != null) is_27_!![i_28_] = is_8_[i_32_]
                 i_28_++
             }
-            U(i, i_5_, is_20_, is_26_!!, is_21_, is_27_!!, is_22_, is_23_, is_24_, is_25_, i_16_, i_17_, i_18_, bool)
+            U(i, i_5_, is_20_, is_26_, is_21_, is_27_, is_22_, is_23_, is_24_, is_25_, i_16_, i_17_, i_18_, bool)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(
                 runtimeexception,
@@ -594,7 +594,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         }
     }
 
-    override fun U(i: Int, i_176_: Int, `is`: IntArray, is_177_: IntArray, is_178_: IntArray, is_179_: IntArray, is_180_: IntArray, is_181_: IntArray, is_182_: IntArray, is_183_: IntArray, i_184_: Int, i_185_: Int, i_186_: Int, bool: Boolean) {
+    override fun U(i: Int, i_176_: Int, `is`: IntArray?, is_177_: IntArray?, is_178_: IntArray, is_179_: IntArray?, is_180_: IntArray, is_181_: IntArray?, is_182_: IntArray, is_183_: IntArray, i_184_: Int, i_185_: Int, i_186_: Int, bool: Boolean) {
         try {
             anInt8261++
             if (is_177_ != null && anIntArrayArrayArray8258 == null) anIntArrayArrayArray8258 = Array<Array<IntArray?>?>(this.anInt4587) { arrayOfNulls<IntArray>(this.anInt4590) }

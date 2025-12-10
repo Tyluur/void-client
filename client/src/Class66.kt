@@ -3575,7 +3575,7 @@ object Class66 {
                     return
                 }
                 if (i == 1506) {
-                    val class46_297_ = Class237.method1687(class46, 3)
+                    val class46_297_ = Class237.method1687(class46!!, 3)
                     anIntArray1149!![anInt1173++] = (if (class46_297_ == null) -1 else class46_297_.anInt830)
                     return
                 }

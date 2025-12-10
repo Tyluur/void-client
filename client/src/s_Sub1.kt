@@ -29,7 +29,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         /* empty */
     }
 
-    override fun U(i: Int, i_0_: Int, `is`: IntArray, is_1_: IntArray, is_2_: IntArray, is_3_: IntArray, is_4_: IntArray, is_5_: IntArray, is_6_: IntArray, is_7_: IntArray, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean) {
+    override fun U(i: Int, i_0_: Int, `is`: IntArray?, is_1_: IntArray?, is_2_: IntArray, is_3_: IntArray?, is_4_: IntArray, is_5_: IntArray?, is_6_: IntArray, is_7_: IntArray, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean) {
         val bool_11_ = (anInt8223 and 0x20) == 0
         if (aClass266ArrayArray8230 == null && !bool_11_) {
             aClass266ArrayArray8230 = Array<Array<Class266?>?>(this.anInt4587) { arrayOfNulls<Class266?>(this.anInt4590) }

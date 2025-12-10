@@ -46,7 +46,7 @@ abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Arra
 
     abstract fun method3987(i: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, bools: Array<BooleanArray?>)
 
-    abstract fun U(i: Int, i_45_: Int, `is`: IntArray, is_46_: IntArray, is_47_: IntArray, is_48_: IntArray, is_49_: IntArray, is_50_: IntArray, is_51_: IntArray, is_52_: IntArray, i_53_: Int, i_54_: Int, i_55_: Int, bool: Boolean)
+    abstract fun U(i: Int, i_45_: Int, `is`: IntArray?, is_46_: IntArray?, is_47_: IntArray, is_48_: IntArray?, is_49_: IntArray, is_50_: IntArray?, is_51_: IntArray, is_52_: IntArray, i_53_: Int, i_54_: Int, i_55_: Int, bool: Boolean)
 
     abstract fun CA(var_r: r?, i: Int, i_57_: Int, i_58_: Int, i_59_: Int, bool: Boolean)
 

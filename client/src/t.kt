@@ -146,7 +146,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
 
     private external fun ga(var_oa: oa?, var_ya: ya?, i: Int, i_72_: Int, `is`: Array<IntArray?>?, is_73_: Array<IntArray?>?, i_74_: Int, i_75_: Int, i_76_: Int)
 
-    external override fun U(i: Int, i_77_: Int, `is`: IntArray, is_78_: IntArray, is_79_: IntArray, is_80_: IntArray, is_81_: IntArray, is_82_: IntArray, is_83_: IntArray, is_84_: IntArray, i_85_: Int, i_86_: Int, i_87_: Int, bool: Boolean)
+    external override fun U(i: Int, i_77_: Int, `is`: IntArray?, is_78_: IntArray?, is_79_: IntArray, is_80_: IntArray?, is_81_: IntArray, is_82_: IntArray?, is_83_: IntArray, is_84_: IntArray, i_85_: Int, i_86_: Int, i_87_: Int, bool: Boolean)
 
     override fun method3987(i: Int, i_88_: Int, i_89_: Int, i_90_: Int, i_91_: Int, i_92_: Int, i_93_: Int, bools: Array<BooleanArray?>) {
         anOa5150.method3973()?.method148(this, i, i_88_, i_89_, i_90_, i_91_, i_92_, i_93_, bools)
