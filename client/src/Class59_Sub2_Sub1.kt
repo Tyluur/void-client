@@ -71,12 +71,12 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                     is_2_ = IntArray(i_4_)
                     for (i_12_ in 0..<i_0_) {
                         val i_13_ = `is`!![i_12_]
-                        if (class124.aByteArray1820[i_13_].toInt() != -1) {
-                            val i_14_ = (class124.aByteArray1820[i_13_].toInt() and 0xff)
+                        if (class124.aByteArray1820!![i_13_].toInt() != -1) {
+                            val i_14_ = (class124.aByteArray1820!![i_13_].toInt() and 0xff)
                             for (i_15_ in 0..2) {
                                 val i_16_: Short
                                 if (i_15_ != 0) {
-                                    if (i_15_ == 1) i_16_ = (class124.aShortArray1835[i_13_])
+                                    if (i_15_ == 1) i_16_ = (class124.aShortArray1835!![i_13_])
                                     else i_16_ = (class124.aShortArray1855[i_13_])
                                 } else i_16_ = (class124.aShortArray1863[i_13_])
                                 val i_17_ = class124.anIntArray1841[i_16_.toInt()]
@@ -103,7 +103,7 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                             val f_22_: Float
                             val f_23_: Float
                             if (i_21_.toInt() == 1) {
-                                val i_24_ = class124.anIntArray1859[i_20_]
+                                val i_24_ = class124.anIntArray1859!![i_20_]
                                 if (i_24_ == 0) {
                                     f_22_ = 1.0f
                                     f_23_ = 1.0f
@@ -118,11 +118,11 @@ class Class59_Sub2_Sub1 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                             } else if (i_21_.toInt() == 2) {
                                 f = 64.0f / (class124.anIntArray1816[i_20_]).toFloat()
                                 f_22_ = 64.0f / (class124.anIntArray1844[i_20_]).toFloat()
-                                f_23_ = 64.0f / (class124.anIntArray1859[i_20_]).toFloat()
+                                f_23_ = 64.0f / (class124.anIntArray1859!![i_20_]).toFloat()
                             } else {
                                 f = (class124.anIntArray1816[i_20_]).toFloat() / 1024.0f
                                 f_22_ = (class124.anIntArray1844[i_20_]).toFloat() / 1024.0f
-                                f_23_ = (class124.anIntArray1859[i_20_]).toFloat() / 1024.0f
+                                f_23_ = (class124.anIntArray1859!![i_20_]).toFloat() / 1024.0f
                             }
                             fs[i_20_] = (Class175.method1347(class124.aShortArray1825[i_20_].toInt(), class124.aShortArray1849[i_20_].toInt(), f_22_, f_23_, 126, f, class124.aShortArray1829[i_20_].toInt(), Class139.method1166(255, (class124.aByteArray1833[i_20_]).toInt())))
                         }

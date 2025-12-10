@@ -207,6 +207,7 @@ class Class51 {
             Class348_Sub42.aClass2_7058.aR118 = var_r
             return Class348_Sub42.aClass2_7058
         } catch (runtimeexception: RuntimeException) {
+            runtimeexception.printStackTrace()
             throw Class348_Sub17.method2929(runtimeexception, ("iv.B(" + (if (var_ha != null) "{...}" else "null") + ',' + (if (var_s != null) "{...}" else "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (if (var_s_6_ != null) "{...}" else "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
         }
     }

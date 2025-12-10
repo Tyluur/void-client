@@ -77,7 +77,7 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
         if (i >= 108) anInt9316++
     }
 
-    private fun method3112(i: Int, i_2_: Int, `is`: Array<IntArray>?, random: Random?, i_3_: Int, i_4_: Int, i_5_: Int) {
+    private fun method3112(i: Int, i_2_: Int, `is`: Array<IntArray>?, random: Random, i_3_: Int, i_4_: Int, i_5_: Int) {
         var i_3_ = i_3_
         try {
             anInt9309++

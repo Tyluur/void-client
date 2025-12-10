@@ -26,8 +26,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
     private var aBoolean5402 = true
     private var anIntArray5404: IntArray? = null
     private var anInt5406 = 0
-    private var anIntArrayArray5412: Array<IntArray>? = null
-    private var anIntArrayArray5413: Array<IntArray>? = null
+    private var anIntArrayArray5412: Array<IntArray?>? = null
+    private var anIntArrayArray5413: Array<IntArray?>? = null
     private var anIntArray5415: IntArray? = null
     private var aShortArray5416: ShortArray? = null
     private var anInt5418 = 0
@@ -1405,7 +1405,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 for (i_218_ in 0..<i_216_) {
                     val i_219_ = `is`[i_218_]
                     if (i_219_ < anIntArrayArray5413!!.size) {
-                        val is_220_ = anIntArrayArray5413!![i_219_]
+                        val is_220_ = anIntArrayArray5413!![i_219_]!!
                         for (i_221_ in is_220_.indices) {
                             val i_222_ = is_220_[i_221_]
                             Class136.anInt4795 += anIntArray5511!![i_222_]
@@ -1432,7 +1432,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 while (i_216_ > i_223_) {
                     val i_224_ = `is`[i_223_]
                     if (anIntArrayArray5413!!.size > i_224_) {
-                        val is_225_ = anIntArrayArray5413!![i_224_]
+                        val is_225_ = anIntArrayArray5413!![i_224_]!!
                         var i_226_ = 0
                         while ((i_226_ < is_225_.size)) {
                             val i_227_ = is_225_[i_226_]
@@ -1448,7 +1448,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 for (i_228_ in 0..<i_216_) {
                     val i_229_ = `is`[i_228_]
                     if (anIntArrayArray5413!!.size > i_229_) {
-                        val is_230_ = anIntArrayArray5413!![i_229_]
+                        val is_230_ = anIntArrayArray5413!![i_229_]!!
                         if ((0x1 and i_215_) == 0) {
                             var i_231_ = 0
                             while ((is_230_.size > i_231_)) {
@@ -1521,7 +1521,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     while (i_216_ > i_253_) {
                         val i_254_ = `is`[i_253_]
                         if (i_254_ < anIntArrayArray5413!!.size) {
-                            val is_255_ = anIntArrayArray5413!![i_254_]
+                            val is_255_ = anIntArrayArray5413!![i_254_]!!
                             for (i_256_ in is_255_.indices) {
                                 val i_257_ = is_255_[i_256_]
                                 val i_258_ = anIntArray5455!![i_257_]
@@ -1564,7 +1564,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 while (i_216_ > i_271_) {
                     val i_272_ = `is`[i_271_]
                     if (i_272_ < anIntArrayArray5413!!.size) {
-                        val is_273_ = anIntArrayArray5413!![i_272_]
+                        val is_273_ = anIntArrayArray5413!![i_272_]!!
                         var i_274_ = 0
                         while (is_273_.size > i_274_) {
                             val i_275_ = is_273_[i_274_]
@@ -1663,7 +1663,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     while (i_216_ > i_295_) {
                         val i_296_ = `is`[i_295_]
                         if (anIntArrayArray5412!!.size > i_296_) {
-                            val is_297_ = anIntArrayArray5412!![i_296_]
+                            val is_297_ = anIntArrayArray5412!![i_296_]!!
                             var i_298_ = 0
                             while ((is_297_.size > i_298_)) {
                                 val class334 = aClass334Array5442!![is_297_[i_298_]]!!
@@ -1681,7 +1681,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     while (i_216_ > i_299_) {
                         val i_300_ = `is`[i_299_]
                         if (i_300_ < anIntArrayArray5412!!.size) {
-                            val is_301_ = anIntArrayArray5412!![i_300_]
+                            val is_301_ = anIntArrayArray5412!![i_300_]!!
                             var i_302_ = 0
                             while (is_301_.size > i_302_) {
                                 val class334 = aClass334Array5442!![is_301_[i_302_]]!!
@@ -1698,7 +1698,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     for (i_303_ in 0..<i_216_) {
                         val i_304_ = `is`[i_303_]
                         if (anIntArrayArray5412!!.size > i_304_) {
-                            val is_305_ = anIntArrayArray5412!![i_304_]
+                            val is_305_ = anIntArrayArray5412!![i_304_]!!
                             var i_306_ = 0
                             while ((i_306_ < is_305_.size)) {
                                 val class334 = aClass334Array5442!![is_305_[i_306_]]!!
@@ -1869,14 +1869,14 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 val `is` = IntArray(class124!!.anInt1817)
                 anIntArray5455 = IntArray(1 + class124.anInt1821)
                 for (i_337_ in 0..<class124.anInt1817) {
-                    if (class124.aByteArray1843 == null || class124.aByteArray1843[i_337_].toInt() != 2) {
-                        if (class124.aShortArray1822 != null && (class124.aShortArray1822[i_337_].toInt() != -1)) {
-                            val class12 = var_d.method3(((class124.aShortArray1822[i_337_]).toInt() and 0xffff), -6662)
+                    if (class124.aByteArray1843 == null || class124.aByteArray1843!![i_337_].toInt() != 2) {
+                        if (class124.aShortArray1822 != null && (class124.aShortArray1822!![i_337_].toInt() != -1)) {
+                            val class12 = var_d.method3(((class124.aShortArray1822!![i_337_]).toInt() and 0xffff), -6662)
                             if (((anInt5472 and 0x40) == 0 || !class12!!.aBoolean209) && class12!!.aBoolean204) continue
                         }
                         `is`[anInt5478++] = i_337_
                         anIntArray5455!![(class124.aShortArray1863[i_337_]).toInt()] = anIntArray5455!![(class124.aShortArray1863[i_337_]).toInt()] + 1
-                        anIntArray5455!![(class124.aShortArray1835[i_337_]).toInt()] = anIntArray5455!![(class124.aShortArray1835[i_337_]).toInt()] + 1
+                        anIntArray5455!![(class124.aShortArray1835!![i_337_]).toInt()] = anIntArray5455!![(class124.aShortArray1835!![i_337_]).toInt()] + 1
                         anIntArray5455!![(class124.aShortArray1855[i_337_]).toInt()] = anIntArray5455!![(class124.aShortArray1855[i_337_]).toInt()] + 1
                     }
                 }
@@ -1892,8 +1892,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     var i_343_ = 0
                     if (class124.aClass162Array1832 != null) {
                         var bool_344_ = false
-                        for (i_345_ in (class124.aClass162Array1832).indices) {
-                            val class162 = (class124.aClass162Array1832[i_345_])
+                        for (i_345_ in (class124.aClass162Array1832)!!.indices) {
+                            val class162 = (class124.aClass162Array1832!![i_345_])!!
                             if (class162.anInt2155 == i_339_) {
                                 val class189 = Class73.method742(104, (class162.anInt2153))
                                 if (class189.aBoolean2531) bool_344_ = true
@@ -1911,7 +1911,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     }
                     var i_347_ = -1
                     if (class124.aShortArray1822 != null) {
-                        i_347_ = class124.aShortArray1822[i_339_].toInt()
+                        i_347_ = class124.aShortArray1822!![i_339_].toInt()
                         if (i_347_ != -1) {
                             class12 = var_d.method3(0xffff and i_347_, -6662)
                             if ((0x40 and anInt5472) != 0 && class12!!.aBoolean209) {
@@ -1923,8 +1923,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                             }
                         }
                     }
-                    val bool_348_ = ((class124.aByteArray1834 != null && class124.aByteArray1834[i_339_].toInt() != 0) || (class12 != null && class12.anInt200 != 0))
-                    if ((bool || bool_348_) && class124.aByteArray1839 != null) i_340_ += (class124.aByteArray1839[i_339_].toInt() shl 17)
+                    val bool_348_ = ((class124.aByteArray1834 != null && class124.aByteArray1834!![i_339_].toInt() != 0) || (class12 != null && class12.anInt200 != 0))
+                    if ((bool || bool_348_) && class124.aByteArray1839 != null) i_340_ += (class124.aByteArray1839!![i_339_].toInt() shl 17)
                     if (bool_348_) i_340_ += 65536
                     i_340_ += 0xff00 and (i_342_ shl 8)
                     i_341_ += (i_347_ and 0xffff) shl 16
@@ -1946,12 +1946,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 val class371s: Array<Class371?> = arrayOfNulls<Class371>(anInt5433)
                 aClass129Array5457 = class124.aClass129Array1846
                 if (class124.aClass162Array1832 != null) {
-                    anInt5406 = class124.aClass162Array1832.size
+                    anInt5406 = class124.aClass162Array1832!!.size
                     aClass353Array5524 = arrayOfNulls<Class353>(anInt5406)
                     aClass334Array5442 = arrayOfNulls<Class334>(anInt5406)
                     var i_350_ = 0
                     while (anInt5406 > i_350_) {
-                        val class162 = class124.aClass162Array1832[i_350_]
+                        val class162 = class124.aClass162Array1832!![i_350_]!!
                         val class189 = Class73.method742(104, (class162.anInt2153))
                         var i_351_ = -1
                         for (i_352_ in 0..<anInt5478) {
@@ -1962,8 +1962,8 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                         }
                         if (i_351_ == -1) throw RuntimeException()
                         var i_353_ = (0xffffff and (Class10.anIntArray179!![((class124.aShortArray1862[class162.anInt2155]).toInt() and 0xffff)]))
-                        i_353_ = (i_353_ or (-(if (class124.aByteArray1834 == null) 0 else (class124.aByteArray1834[(class162.anInt2155)])) + 255 shl 24))
-                        aClass353Array5524!![i_350_] = Class353(i_351_, (class124.aShortArray1863[class162.anInt2155]).toInt(), (class124.aShortArray1835[class162.anInt2155]).toInt(), (class124.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
+                        i_353_ = (i_353_ or (-(if (class124.aByteArray1834 == null) 0 else (class124.aByteArray1834!![(class162.anInt2155)])) + 255 shl 24))
+                        aClass353Array5524!![i_350_] = Class353(i_351_, (class124.aShortArray1863[class162.anInt2155]).toInt(), (class124.aShortArray1835!![class162.anInt2155]).toInt(), (class124.aShortArray1855[class162.anInt2155]).toInt(), class189.anInt2526, class189.anInt2530, class189.anInt2525, class189.anInt2533, class189.anInt2534, class189.aBoolean2531, class189.aBoolean2522, class162.anInt2158)
                         aClass334Array5442!![i_350_] = Class334(i_353_)
                         i_350_++
                     }
@@ -2003,7 +2003,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 var i_358_ = 0
                 while ((class124.anInt1817 > i_358_)) {
                     val i_359_ = class124.aShortArray1863[i_358_]
-                    val i_360_ = class124.aShortArray1835[i_358_]
+                    val i_360_ = class124.aShortArray1835!![i_358_]
                     val i_361_ = class124.aShortArray1855[i_358_]
                     val i_362_ = anIntArray5511!![i_360_.toInt()] - anIntArray5511!![i_359_.toInt()]
                     val i_363_ = -anIntArray5519!![i_359_.toInt()] + anIntArray5519!![i_360_.toInt()]
@@ -2025,7 +2025,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     i_370_ = 256 * i_370_ / i_371_
                     i_369_ = 256 * i_369_ / i_371_
                     i_368_ = i_368_ * 256 / i_371_
-                    val i_372_ = (if (class124.aByteArray1843 != null) class124.aByteArray1843[i_358_] else 0.toByte())
+                    val i_372_ = (if (class124.aByteArray1843 != null) class124.aByteArray1843!![i_358_] else 0.toByte())
                     if (i_372_.toInt() == 0) {
                         var class371 = class371s[i_359_.toInt()]!!
                         class371.anInt4522++
@@ -2055,11 +2055,11 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     val i_374_ = `is`[i_373_]
                     val i_375_ = (0xffff and class124.aShortArray1862[i_374_].toInt())
                     var i_376_: Int
-                    if (class124.aByteArray1820 != null) i_376_ = class124.aByteArray1820[i_374_].toInt()
+                    if (class124.aByteArray1820 != null) i_376_ = class124.aByteArray1820!![i_374_].toInt()
                     else i_376_ = -1
                     val i_377_: Int
                     if (class124.aByteArray1834 == null) i_377_ = 0
-                    else i_377_ = 0xff and (class124.aByteArray1834[i_374_]).toInt()
+                    else i_377_ = 0xff and (class124.aByteArray1834!![i_374_]).toInt()
                     var i_378_: Short = (if (class124.aShortArray1822 != null) class124.aShortArray1822!![i_374_] else (-1).toShort())
                     if (i_378_.toInt() != -1 && (anInt5472 and 0x40) != 0) {
                         val class12 = var_d.method3(0xffff and i_378_.toInt(), -6662)
@@ -2089,7 +2089,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                             val i_387_ = class124.aByteArray1823[i_376_]
                             if (i_387_.toInt() == 0) {
                                 val i_415_ = (class124.aShortArray1863[i_374_])
-                                val i_416_ = (class124.aShortArray1835[i_374_])
+                                val i_416_ = (class124.aShortArray1835!![i_374_])
                                 val i_417_ = (class124.aShortArray1855[i_374_])
                                 val i_418_ = (class124.aShortArray1829[i_376_])
                                 val i_419_ = (class124.aShortArray1849[i_376_])
@@ -2131,7 +2131,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                                 f_379_ = f_445_ * (f_432_ * f_444_ + (f_431_ * f_443_ + f_430_ * f_442_))
                             } else {
                                 val i_388_ = (class124.aShortArray1863[i_374_])
-                                val i_389_ = (class124.aShortArray1835[i_374_])
+                                val i_389_ = (class124.aShortArray1835!![i_374_])
                                 val i_390_ = (class124.aShortArray1855[i_374_])
                                 val i_391_ = (class358.anIntArray4416[i_376_])
                                 val i_392_ = (class358.anIntArray4415[i_376_])
@@ -2194,7 +2194,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                                     val i_404_ = (i_399_ * i_403_ + -(i_400_ * i_402_))
                                     val i_405_ = (i_401_ * i_400_ + -(i_398_ * i_403_))
                                     val i_406_ = (i_402_ * i_398_ + -(i_399_ * i_401_))
-                                    val f_407_ = (64.0f / (class124.anIntArray1859[i_376_]).toFloat())
+                                    val f_407_ = (64.0f / (class124.anIntArray1859!![i_376_]).toFloat())
                                     val f_408_ = (64.0f / (class124.anIntArray1816[i_376_]).toFloat())
                                     val f_409_ = (64.0f / (class124.anIntArray1844[i_376_]).toFloat())
                                     val f_410_ = ((i_406_.toFloat() * fs[2] + (i_404_.toFloat() * fs[0] + i_405_.toFloat() * fs[1])) / f_407_)
@@ -2256,12 +2256,12 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                         }
                     }
                     val i_446_: Byte
-                    if (class124.aByteArray1843 != null) i_446_ = class124.aByteArray1843[i_374_]
+                    if (class124.aByteArray1843 != null) i_446_ = class124.aByteArray1843!![i_374_]
                     else i_446_ = 0.toByte()
                     if (i_446_.toInt() == 0) {
                         val l = ((i_376_ shl 2).toLong() + (((i_375_ shl 8).toLong() + ((i_386_ shl 24).toLong() - -i_377_.toLong())) shl 32))
                         val i_447_ = class124.aShortArray1863[i_374_]
-                        val i_448_ = class124.aShortArray1835[i_374_]
+                        val i_448_ = class124.aShortArray1835!![i_374_]
                         val i_449_ = class124.aShortArray1855[i_374_]
                         var class371 = class371s[i_447_.toInt()]!!
                         aShortArray5508!![i_373_] = method669(class371.anInt4524, l, i_373_, class371.anInt4522, class371.anInt4520, -114, f, i_447_.toInt(), f_379_, class124, class371.anInt4525)
@@ -2273,11 +2273,11 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                         val class63 = class63s[i_374_]!!
                         val l = (((i_377_.toLong() + ((i_386_ shl 24).toLong() - -(i_375_ shl 8).toLong())) shl 32) + (((256 + class63.anInt1119) shl 12) + (if (class63.anInt1118 > 0) 1024 else 2048) + (i_376_ shl 2) + ((class63.anInt1122 - -256) shl 22)).toLong())
                         aShortArray5508!![i_373_] = method669(class63.anInt1122, l, i_373_, 0, class63.anInt1118, -106, f, (class124.aShortArray1863[i_374_]).toInt(), f_379_, class124, class63.anInt1119)
-                        aShortArray5495!![i_373_] = method669(class63.anInt1122, l + i_384_.toLong(), i_373_, 0, class63.anInt1118, -57, f_380_, (class124.aShortArray1835[i_374_]).toInt(), f_381_, class124, class63.anInt1119)
+                        aShortArray5495!![i_373_] = method669(class63.anInt1122, l + i_384_.toLong(), i_373_, 0, class63.anInt1118, -57, f_380_, (class124.aShortArray1835!![i_374_]).toInt(), f_381_, class124, class63.anInt1119)
                         aShortArray5512!![i_373_] = method669(class63.anInt1122, l + i_385_.toLong(), i_373_, 0, class63.anInt1118, -109, f_382_, (class124.aShortArray1855[i_374_]).toInt(), f_383_, class124, class63.anInt1119)
                     }
-                    if (class124.aByteArray1834 != null) aByteArray5515!![i_373_] = class124.aByteArray1834[i_374_]
-                    if (class124.aShortArray1856 != null) aShortArray5432!![i_373_] = class124.aShortArray1856[i_374_]
+                    if (class124.aByteArray1834 != null) aByteArray5515!![i_373_] = class124.aByteArray1834!![i_374_]
+                    if (class124.aShortArray1856 != null) aShortArray5432!![i_373_] = class124.aShortArray1856!![i_374_]
                     aShortArray5486!![i_373_] = class124.aShortArray1862[i_374_]
                     aShortArray5423!![i_373_] = i_378_
                 }
@@ -2340,7 +2340,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 var i_459_ = 0
                 val is_460_ = IntArray(256)
                 for (i_461_ in 0..<anInt5478) {
-                    val i_462_ = class124.anIntArray1824[`is`[i_461_]]
+                    val i_462_ = class124.anIntArray1824!![`is`[i_461_]]
                     if (i_462_ >= 0) {
                         is_460_[i_462_]++
                         if (i_462_ > i_459_) i_459_ = i_462_
@@ -2355,7 +2355,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 }
                 var i_464_ = 0
                 while (anInt5478 > i_464_) {
-                    val i_465_ = class124.anIntArray1824[`is`[i_464_]]
+                    val i_465_ = class124.anIntArray1824!![`is`[i_464_]]
                     if (i_465_ >= 0) anIntArrayArray5492!![i_465_]!![is_460_[i_465_]++] = i_464_
                     i_464_++
                 }
@@ -2861,7 +2861,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 while (i_595_ > i_597_) {
                     val i_598_ = `is`[i_597_]
                     if (i_598_ < anIntArrayArray5413!!.size) {
-                        val is_599_ = anIntArrayArray5413!![i_598_]
+                        val is_599_ = anIntArrayArray5413!![i_598_]!!
                         var i_600_ = 0
                         while (is_599_.size > i_600_) {
                             val i_601_ = is_599_[i_600_]
@@ -2901,7 +2901,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 for (i_605_ in 0..<i_595_) {
                     val i_606_ = `is`[i_605_]
                     if (anIntArrayArray5413!!.size > i_606_) {
-                        val is_607_ = anIntArrayArray5413!![i_606_]
+                        val is_607_ = anIntArrayArray5413!![i_606_]!!
                         var i_608_ = 0
                         while (is_607_.size > i_608_) {
                             val i_609_ = is_607_[i_608_]
@@ -2920,7 +2920,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     while (i_595_ > i_658_) {
                         val i_659_ = `is`[i_658_]
                         if (i_659_ < anIntArrayArray5413!!.size) {
-                            val is_660_ = anIntArrayArray5413!![i_659_]
+                            val is_660_ = anIntArrayArray5413!![i_659_]!!
                             var i_661_ = 0
                             while (is_660_.size > i_661_) {
                                 val i_662_ = is_660_[i_661_]
@@ -2962,7 +2962,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                         for (i_672_ in 0..<i_595_) {
                             val i_673_ = `is`[i_672_]
                             if (i_673_ < anIntArrayArray5413!!.size) {
-                                val is_674_ = anIntArrayArray5413!![i_673_]
+                                val is_674_ = anIntArrayArray5413!![i_673_]!!
                                 for (i_675_ in is_674_.indices) {
                                     val i_676_ = is_674_[i_675_]
                                     if (aShortArray5494 == null || ((aShortArray5494!![i_676_].toInt() and i_593_) != 0)) {
@@ -3076,7 +3076,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     while (i_595_ > i_650_) {
                         val i_651_ = `is`[i_650_]
                         if (i_651_ < anIntArrayArray5413!!.size) {
-                            val is_652_ = anIntArrayArray5413!![i_651_]
+                            val is_652_ = anIntArrayArray5413!![i_651_]!!
                             for (i_653_ in is_652_.indices) {
                                 val i_654_ = is_652_[i_653_]
                                 if (aShortArray5494 == null || (i_593_ and aShortArray5494!![i_654_].toInt()) != 0) {
@@ -3101,7 +3101,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     while (i_595_ > i_690_) {
                         val i_691_ = `is`[i_690_]
                         if (anIntArrayArray5413!!.size > i_691_) {
-                            val is_692_ = anIntArrayArray5413!![i_691_]
+                            val is_692_ = anIntArrayArray5413!![i_691_]!!
                             var i_693_ = 0
                             while (is_692_.size > i_693_) {
                                 val i_694_ = is_692_[i_693_]
@@ -3183,7 +3183,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     while (i_595_ > i_725_) {
                         val i_726_ = `is`[i_725_]
                         if (anIntArrayArray5413!!.size > i_726_) {
-                            val is_727_ = anIntArrayArray5413!![i_726_]
+                            val is_727_ = anIntArrayArray5413!![i_726_]!!
                             for (i_728_ in is_727_.indices) {
                                 val i_729_ = is_727_[i_728_]
                                 if (aShortArray5494 == null || ((i_593_ and aShortArray5494!![i_729_].toInt()) != 0)) {
@@ -3288,7 +3288,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     while (i_595_ > i_752_) {
                         val i_753_ = `is`[i_752_]
                         if (i_753_ < anIntArrayArray5412!!.size) {
-                            val is_754_ = anIntArrayArray5412!![i_753_]
+                            val is_754_ = anIntArrayArray5412!![i_753_]!!
                             var i_755_ = 0
                             while ((i_755_ < is_754_.size)) {
                                 val class334 = aClass334Array5442!![is_754_[i_755_]]!!
@@ -3306,7 +3306,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     while (i_595_ > i_756_) {
                         val i_757_ = `is`[i_756_]
                         if (anIntArrayArray5412!!.size > i_757_) {
-                            val is_758_ = anIntArrayArray5412!![i_757_]
+                            val is_758_ = anIntArrayArray5412!![i_757_]!!
                             var i_759_ = 0
                             while ((i_759_ < is_758_.size)) {
                                 val class334 = aClass334Array5442!![is_758_[i_759_]]!!
@@ -3323,7 +3323,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     for (i_760_ in 0..<i_595_) {
                         val i_761_ = `is`[i_760_]
                         if (anIntArrayArray5412!!.size > i_761_) {
-                            val is_762_ = anIntArrayArray5412!![i_761_]
+                            val is_762_ = anIntArrayArray5412!![i_761_]!!
                             var i_763_ = 0
                             while ((is_762_.size > i_763_)) {
                                 val class334 = aClass334Array5442!![is_762_[i_763_]]!!

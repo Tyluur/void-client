@@ -259,8 +259,8 @@ class i : Class64, Interface19 {
         aYa5120 = var_ya
         this.aClass129Array5119 = class124.aClass129Array1846
         this.aClass342Array5118 = class124.aClass342Array1866
-        val i_82_ = (if (class124.aClass129Array1846 == null) 0 else class124.aClass129Array1846.size)
-        val i_83_ = (if (class124.aClass342Array1866 == null) 0 else class124.aClass342Array1866.size)
+        val i_82_ = (if (class124.aClass129Array1846 == null) 0 else class124.aClass129Array1846!!.size)
+        val i_83_ = (if (class124.aClass342Array1866 == null) 0 else class124.aClass342Array1866!!.size)
         var i_84_ = 0
         val `is` = IntArray(i_82_ * 3 + i_83_)
         for (i_85_ in 0..<i_82_) {
@@ -269,11 +269,11 @@ class i : Class64, Interface19 {
             `is`[i_84_++] = this.aClass129Array5119!![i_85_]!!.anInt1892
         }
         for (i_86_ in 0..<i_83_) `is`[i_84_++] = this.aClass342Array5118!![i_86_]!!.anInt4244
-        val i_87_ = (if (class124.aClass162Array1832 == null) 0 else class124.aClass162Array1832.size)
+        val i_87_ = (if (class124.aClass162Array1832 == null) 0 else class124.aClass162Array1832!!.size)
         val is_88_ = IntArray(i_87_ * 8)
         var i_89_ = 0
         for (i_90_ in 0..<i_87_) {
-            val class162 = class124.aClass162Array1832[i_90_]
+            val class162 = class124.aClass162Array1832!![i_90_]!!
             val class189 = Class73.method742(104, class162.anInt2153)
             is_88_[i_89_++] = class162.anInt2155
             is_88_[i_89_++] = class189.anInt2526
@@ -284,7 +284,7 @@ class i : Class64, Interface19 {
             is_88_[i_89_++] = if (class189.aBoolean2531) -1 else 0
         }
         for (i_91_ in 0..<i_87_) {
-            val class162 = class124.aClass162Array1832[i_91_]
+            val class162 = class124.aClass162Array1832!![i_91_]!!
             is_88_[i_89_++] = class162.anInt2156
         }
         R(
