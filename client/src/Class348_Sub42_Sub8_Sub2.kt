@@ -286,7 +286,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class318_Sub1_Sub1_Sub1.method2397((-127).toByte())
                 Class181.aBooleanArray2374!![i_23_] = true
                 Class275.anIntArray3552[i_23_] = i
-                Class255.anIntArray3273[i_23_] = i_25_
+                Class255.anIntArray3273!![i_23_] = i_25_
                 Class338.anIntArray4196[i_23_] = i_26_
                 Class318_Sub1_Sub1_Sub2.anIntArray9981[i_23_] = i_24_
                 Class348_Sub3.aClass114_6584 = null
@@ -791,7 +791,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val class348_sub41 = (Class125.aClass356_4915!!.method3480(i.toLong(), -6008) as Class348_Sub41?)
                 if (class348_sub41 != null) Class127_Sub1.method1118(true, false, class348_sub41, 2533)
                 if (Class49.aClass46_4730 != null) {
-                    Class251.method1916(-9343, Class49.aClass46_4730)
+                    Class251.method1916(-9343, Class49.aClass46_4730!!)
                     Class49.aClass46_4730 = null
                 }
                 Class348_Sub3.aClass114_6584 = null
@@ -1635,11 +1635,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_215_ = Class299.aClass348_Sub49_Sub2_3813!!.readIntMiddleEndian(82.toByte())
                 Class186.anIntArray2497!![i_214_] = i_215_
                 Class161.anIntArray2145!![i_214_] = i
-                Class256.anIntArray3295[i_214_] = 1
+                Class256.anIntArray3295!![i_214_] = 1
                 val i_216_ = OutputStream_Sub1.anIntArray100!![i_214_] + -1
                 var i_217_ = 0
                 while (i_216_ > i_217_) {
-                    if (Class59_Sub1_Sub2.anIntArray8663!![i_217_] <= i_215_) Class256.anIntArray3295[i_214_] = i_217_ - -2
+                    if (Class59_Sub1_Sub2.anIntArray8663!![i_217_] <= i_215_) Class256.anIntArray3295!![i_214_] = i_217_ - -2
                     i_217_++
                 }
                 Class199.anIntArray2632!![Class139.method1166(31, Class326.anInt4086++)] = i_214_

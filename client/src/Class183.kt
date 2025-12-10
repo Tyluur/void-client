@@ -90,11 +90,11 @@ class Class183 internal constructor(class230: Class230?, i: Int, class45: Class4
                         class318_sub1_1_ = (class318_sub1_1_.aClass318_Sub1_6379)
                     }
                     class318_sub1_0_ = null
-                    var class318_sub1_2_ = Class250.aClass318_Sub1Array3226[i]
+                    var class318_sub1_2_ = Class250.aClass318_Sub1Array3226!![i]
                     while (class318_sub1_2_ != null) {
                         if (class318_sub1_2_ === class318_sub1) {
                             if (class318_sub1_0_ != null) class318_sub1_0_.aClass318_Sub1_6379 = (class318_sub1_2_.aClass318_Sub1_6379)
-                            else Class250.aClass318_Sub1Array3226[i] = (class318_sub1_2_.aClass318_Sub1_6379)
+                            else Class250.aClass318_Sub1Array3226!![i] = (class318_sub1_2_.aClass318_Sub1_6379)
                             Class348_Sub16_Sub2.aBoolean8870 = true
                             return
                         }

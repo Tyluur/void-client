@@ -30,7 +30,7 @@ class Class213 {
     private var anInt2770 = -1
     private var aShortArray2771: ShortArray = shortArrayOf()
     @JvmField
-    var anIntArray2772: IntArray = intArrayOf()
+    var anIntArray2772: IntArray? = intArrayOf()
     var anInt2774: Int
     private var anInt2775: Int
     private var aShortArray2777: ShortArray? = null
@@ -123,8 +123,8 @@ class Class213 {
         }
         if (i_5_ == -1) return true
         var bool_8_ = true
-        if (!this.aClass255_2761!!.aClass45_3268.method420(-10499, i_5_, 0)) bool_8_ = false
-        if (i_7_ != -1 && !this.aClass255_2761!!.aClass45_3268.method420(-10499, i_7_, 0)) bool_8_ = false
+        if (!this.aClass255_2761!!.aClass45_3268!!.method420(-10499, i_5_, 0)) bool_8_ = false
+        if (i_7_ != -1 && !this.aClass255_2761!!.aClass45_3268!!.method420(-10499, i_7_, 0)) bool_8_ = false
         return bool_8_
     }
 
@@ -437,9 +437,9 @@ class Class213 {
         }
         if (i_53_ == -1) return true
         var bool_56_ = true
-        if (!this.aClass255_2761!!.aClass45_3268.method420(-10499, i_53_, 0)) bool_56_ = false
-        if (i_54_ != -1 && !this.aClass255_2761!!.aClass45_3268.method420(i xor 0x2902, i_54_, 0)) bool_56_ = false
-        if (i != i_55_ && !this.aClass255_2761!!.aClass45_3268.method420(-10499, i_55_, 0)) bool_56_ = false
+        if (!this.aClass255_2761!!.aClass45_3268!!.method420(-10499, i_53_, 0)) bool_56_ = false
+        if (i_54_ != -1 && !this.aClass255_2761!!.aClass45_3268!!.method420(i xor 0x2902, i_54_, 0)) bool_56_ = false
+        if (i != i_55_ && !this.aClass255_2761!!.aClass45_3268!!.method420(-10499, i_55_, 0)) bool_56_ = false
         return bool_56_
     }
 
@@ -540,7 +540,7 @@ class Class213 {
                                                                     this.anIntArray2772 = IntArray(i_62_)
                                                                     var i_63_ = 0
                                                                     while (i_62_ > i_63_) {
-                                                                        this.anIntArray2772[i_63_] = class348_sub49.readUnsignedShort(842397944)
+                                                                        this.anIntArray2772!![i_63_] = class348_sub49.readUnsignedShort(842397944)
                                                                         i_63_++
                                                                     }
                                                                 } else if (i_57_ == 134) this.anInt2784 = class348_sub49!!.readUnsignedByte(255)

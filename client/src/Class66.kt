@@ -3108,7 +3108,7 @@ object Class66 {
                 i -= 1000
                 class46 = method2570(1512932720, anIntArray1149!![--anInt1173])
             } else class46 = if (bool) aClass46_1169 else aClass46_1150
-            Class251.method1916(-9343, class46)
+            Class251.method1916(-9343, class46!!)
             if (i == 1200 || i == 1205 || i == 1208 || i == 1209 || i == 1212 || i == 1213) {
                 anInt1173 -= 2
                 val i_279_ = anIntArray1149!![anInt1173]
@@ -3915,7 +3915,7 @@ object Class66 {
                 }
                 if (i == 3306) {
                     val i_325_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class256.anIntArray3295[i_325_]
+                    anIntArray1149!![anInt1173++] = Class256.anIntArray3295!![i_325_]
                     return
                 }
                 if (i == 3307) {

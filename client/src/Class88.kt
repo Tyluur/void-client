@@ -148,7 +148,7 @@ class Class88 {
                             Class14_Sub4.method254(-5, (-111).toByte())
                             return
                         }
-                        if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285.method1259(0)
+                        if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285!!.method1259(0)
                         else Class3.aClass161_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         Class225.anInt2955 = 1
@@ -156,7 +156,7 @@ class Class88 {
                     }
                     if (Class225.anInt2955 == 1) {
                         if (Class239_Sub12.anInt5969 == 2 && !Loader.splitPorts) Class130_Sub1.aClass144_5800 = (Class3.aClass161_125!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
-                        else Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
+                        else Class130_Sub1.aClass144_5800 = (Class255.aClass161_3285!!.method1262(Class348_Sub23_Sub1.aClass297_8992!!, 36.toByte()))
                         Class225.anInt2955 = 2
                     }
                     if (Class225.anInt2955 == 2) {
@@ -486,7 +486,7 @@ class Class88 {
                         Class14_Sub4.method254(-4, (-87).toByte())
                         Class152.method1215(3.toByte())
                     } else {
-                        if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285.method1259(0)
+                        if (Class239_Sub12.anInt5969 != 2) Class255.aClass161_3285!!.method1259(0)
                         else Class3.aClass161_125!!.method1259(0)
                         Class318_Sub1_Sub1_Sub2.anInt9971++
                         Class11.anInt197 = 0

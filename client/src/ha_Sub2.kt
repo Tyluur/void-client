@@ -3522,13 +3522,13 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                             Class8.anInt166++
                         } else {
                             val l = (class348_sub42_sub12.aLong9600)
-                            class348_sub42_sub13 = (Class348_Sub42_Sub12.aClass356_9603.method3480(l, -6008) as Class348_Sub42_Sub13?)
+                            class348_sub42_sub13 = (Class348_Sub42_Sub12.aClass356_9603.method3480(l, -6008) as? Class348_Sub42_Sub13?)
                             while (class348_sub42_sub13 != null) {
                                 if (class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601) break
-                                class348_sub42_sub13 = (Class348_Sub42_Sub12.aClass356_9603.method3476(true) as Class348_Sub42_Sub13?)
+                                class348_sub42_sub13 = (Class348_Sub42_Sub12.aClass356_9603.method3476(true) as? Class348_Sub42_Sub13?)
                             }
                             if (class348_sub42_sub13 == null) {
-                                class348_sub42_sub13 = (Class259.aClass60_3301.method583(l, i.toInt() xor 0x3a) as Class348_Sub42_Sub13?)
+                                class348_sub42_sub13 = (Class259.aClass60_3301!!.method583(l, i.toInt() xor 0x3a) as? Class348_Sub42_Sub13?)
                                 if (class348_sub42_sub13 != null && !(class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601)) class348_sub42_sub13 = null
                                 if (class348_sub42_sub13 == null) class348_sub42_sub13 = (Class348_Sub42_Sub13(class348_sub42_sub12.aString9601))
                                 Class348_Sub42_Sub12.aClass356_9603.method3483(71.toByte(), l, class348_sub42_sub13)

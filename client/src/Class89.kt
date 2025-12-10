@@ -39,13 +39,13 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
             if (i_4_ <= 80) method851(-7)
             val i_6_ = i_0_ + i
             val i_7_ = -i + i_3_
-            for (i_8_ in i_0_..<i_6_) Class135_Sub2.method1156(-27, i_2_, Class17.anIntArrayArray255!![i_8_], i_1_, i_5_)
+            for (i_8_ in i_0_..<i_6_) Class135_Sub2.method1156(-27, i_2_, Class17.anIntArrayArray255!![i_8_]!!, i_1_, i_5_)
             val i_9_ = -i + i_2_
-            for (i_10_ in i_3_ downTo i_7_ + 1) Class135_Sub2.method1156(-27, i_2_, Class17.anIntArrayArray255!![i_10_], i_1_, i_5_)
+            for (i_10_ in i_3_ downTo i_7_ + 1) Class135_Sub2.method1156(-27, i_2_, Class17.anIntArrayArray255!![i_10_]!!, i_1_, i_5_)
             val i_11_ = i + i_1_
             var i_12_ = i_6_
             while (i_7_ >= i_12_) {
-                val `is`: IntArray = Class17.anIntArrayArray255!![i_12_]
+                val `is`: IntArray = Class17.anIntArrayArray255!![i_12_]!!
                 Class135_Sub2.method1156(-27, i_11_, `is`, i_1_, i_5_)
                 Class135_Sub2.method1156(-27, i_2_, `is`, i_9_, i_5_)
                 i_12_++
@@ -101,8 +101,8 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
                 val i_22_ = if (aa_Sub1.aSArray5191 == Class332.aSArray4142) 1 else 0
                 if (class318_sub1_sub3.method2376(-118)) {
                     if (class318_sub1_sub3.method2377(122.toByte())) {
-                        class318_sub1_sub3.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226[i_22_]
-                        Class250.aClass318_Sub1Array3226[i_22_] = class318_sub1_sub3
+                        class318_sub1_sub3.aClass318_Sub1_6379 = Class250.aClass318_Sub1Array3226!![i_22_]
+                        Class250.aClass318_Sub1Array3226!![i_22_] = class318_sub1_sub3
                     } else {
                         class318_sub1_sub3.aClass318_Sub1_6379 = Class348.aClass318_Sub1Array4293!![i_22_]
                         Class348.aClass318_Sub1Array4293!![i_22_] = class318_sub1_sub3

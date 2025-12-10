@@ -1,34 +1,34 @@
 /* Class252 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class252 internal constructor(@JvmField var anInt3241: Int) {
+    @JvmField
+    var anIntArray3238: IntArray? = IntArray(this.anInt3241)
 
-public final class Class252 {
-    static Class351 aClass351_3237 = new Class351(80, 7);
-    int[] anIntArray3238;
-    int[] anIntArray3239;
-    static Class114 aClass114_3240 = new Class114(43, 4);
-    int anInt3241;
-    static float aFloat3242;
-    static int anInt3243;
+    @JvmField
+    var anIntArray3239: IntArray? = IntArray(this.anInt3241)
 
-    public static void method1917(int i) {
-        if (i != 40960) aClass114_3240 = null;
-        aClass351_3237 = null;
-        aClass114_3240 = null;
-    }
+    companion object {
+        @JvmField
+        var aClass351_3237: Class351? = Class351(80, 7)
+        var aClass114_3240: Class114? = Class114(43, 4)
+        var aFloat3242: Float = 0f
+        var anInt3243: Int = 0
 
-    static final int method1918(int i, int i_0_) {
-        if (i != -3358) return 126;
-        anInt3243++;
-        int i_1_ = i_0_ * (i_0_ * i_0_ >> 12) >> 12;
-        int i_2_ = i_0_ * 6 + -61440;
-        int i_3_ = 40960 - -(i_2_ * i_0_ >> 12);
-        return i_3_ * i_1_ >> 12;
-    }
+        @JvmStatic
+        fun method1917(i: Int) {
+            if (i != 40960) aClass114_3240 = null
+            aClass351_3237 = null
+            aClass114_3240 = null
+        }
 
-    Class252(int i) {
-        this.anInt3241 = i;
-        this.anIntArray3239 = new int[this.anInt3241];
-        this.anIntArray3238 = new int[this.anInt3241];
+        fun method1918(i: Int, i_0_: Int): Int {
+            if (i != -3358) return 126
+            anInt3243++
+            val i_1_ = i_0_ * (i_0_ * i_0_ shr 12) shr 12
+            val i_2_ = i_0_ * 6 + -61440
+            val i_3_ = 40960 - -(i_2_ * i_0_ shr 12)
+            return i_3_ * i_1_ shr 12
+        }
     }
 }

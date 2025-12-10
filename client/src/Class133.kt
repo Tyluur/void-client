@@ -191,7 +191,7 @@ object Class133 {
                         player.anInt10250 = (Class367_Sub11.anInt7396 + class348_sub49_sub2.readShortAdd(125))
                     }
                     if ((i_0_ and 0x80) != 0) {
-                        Class259.aByteArray3300[i] = class348_sub49_sub2!!.readByteSubtract(-27697)
+                        Class259.aByteArray3300!![i] = class348_sub49_sub2!!.readByteSubtract(-27697)
                     }
                     if ((i_0_ and 0x20) != 0) {
                         var i_28_ = class348_sub49_sub2!!.readShortAddLittle(-126)
@@ -225,7 +225,7 @@ object Class133 {
                     if (i_2_.toInt() != 127) {
                         val i_36_: Byte
                         if (i_2_.toInt() != -1) i_36_ = i_2_
-                        else i_36_ = Class259.aByteArray3300[i]
+                        else i_36_ = Class259.aByteArray3300!![i]
                         Class348_Sub42_Sub9_Sub1.method3208(player, i_36_.toInt(), -21)
                         player.method2455(player.anInt10531, -26443, i_36_, player.anInt10549)
                     } else player.method2449(player.anInt10531, player.anInt10549, 84.toByte())
