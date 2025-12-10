@@ -3557,7 +3557,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[`is`[i_322_]])
                 else {
-                    class318_sub1_sub3_sub3 = ((Class282.aClass356_3654.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as Class348_Sub22).aNpc_6859)
+                    class318_sub1_sub3_sub3 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as Class348_Sub22).aNpc_6859)
                     class79 = class318_sub1_sub3_sub3.aClass79_10505
                     if (class79.anIntArray1377 != null) {
                         class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), i_316_ + -3)
@@ -4008,14 +4008,14 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             }
             for (i_433_ in 0..<Class45.anInt669) {
                 val i_434_ = Class258_Sub4.anIntArray8557!![i_433_]
-                val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3
-                if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((Class282.aClass356_3654.method3480((-2048 + i_434_).toLong(), -6008) as Class348_Sub22).aNpc_6859)
+                val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3?
+                if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((Class282.aClass356_3654!!.method3480((-2048 + i_434_).toLong(), -6008) as? Class348_Sub22)?.aNpc_6859)
                 else class318_sub1_sub3_sub3 = Class294.aPlayerArray5058[i_434_]
                 val i_435_ = Class268.anIntArray3432!![i_433_]
                 val class318_sub1_sub3_sub3_436_: Class318_Sub1_Sub3_Sub3?
-                if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((Class282.aClass356_3654.method3480((-2048 + i_435_).toLong(), -6008) as Class348_Sub22).aNpc_6859)
+                if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((Class282.aClass356_3654!!.method3480((-2048 + i_435_).toLong(), -6008) as? Class348_Sub22)?.aNpc_6859)
                 else class318_sub1_sub3_sub3_436_ = Class294.aPlayerArray5058[i_435_]
-                Class191.method1430(--class318_sub1_sub3_sub3.anInt10261, 119.toByte(), i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3)
+                Class191.method1430(--class318_sub1_sub3_sub3!!.anInt10261, 119.toByte(), i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3)
             }
             val i_437_ = i_316_ + (Class369.aClass143_4962!!.anInt1993 + Class369.aClass143_4962!!.anInt1988)
             for (i_438_ in 0..<Class88.anInt1497) {

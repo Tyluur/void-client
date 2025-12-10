@@ -152,7 +152,7 @@ class InputStream_Sub2 : InputStream() {
                                 else class318_sub1_sub3_sub3 = (Class132.aPlayer_1907)
                             } else {
                                 val i_68_ = i_58_ + -1
-                                val class348_sub22 = (Class282.aClass356_3654.method3480(i_68_.toLong(), -6008) as Class348_Sub22?)
+                                val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_68_.toLong(), -6008) as? Class348_Sub22?)
                                 if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aNpc_6859)
                             }
                             if (class318_sub1_sub3_sub3 != null) {

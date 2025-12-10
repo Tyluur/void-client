@@ -417,11 +417,11 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                 is_95_ = Class106.anIntArrayArray1638!![i_76_.toInt()]
                                 is_97_ = Class163.anIntArrayArray2165!![i_76_.toInt()]!!
                                 is_99_ = (Class348_Sub15.anIntArrayArray6780[i_76_.toInt()])
-                                i_98_ = (if (class22 != null) Class283.anIntArray3659[i_76_.toInt()] else 0)
+                                i_98_ = (if (class22 != null) Class283.anIntArray3659!![i_76_.toInt()] else 0)
                             } else {
                                 i_98_ = (if (class22 == null) 0 else Class246.anIntArray3173!![i_76_.toInt()])
                                 i_100_ = (if (class277 == null) 0 else Class334.anIntArray4152[i_76_.toInt()])
-                                is_97_ = Class284.anIntArrayArray3677[i_76_.toInt()]
+                                is_97_ = Class284.anIntArrayArray3677!![i_76_.toInt()]!!
                                 is_99_ = (Class239_Sub20.anIntArrayArray6054!![i_76_.toInt()]!!)
                                 is_96_ = (Exception_Sub1.anIntArrayArray111!![i_76_.toInt()]!!)
                                 is_95_ = (Class348_Sub16_Sub3.anIntArrayArray8910!![i_76_.toInt()])

@@ -36,7 +36,7 @@ class Class17 {
     @JvmField
     var aBooleanArray263: BooleanArray? = null
     @JvmField
-    var anIntArrayArray264: Array<IntArray?> = emptyArray()
+    var anIntArrayArray264: Array<IntArray?>? = null
     @JvmField
     var anIntArray265: IntArray? = null
     @JvmField
@@ -140,11 +140,11 @@ class Class17 {
                                         while ((i_21_ < i_20_)) {
                                             val i_22_ = class348_sub49.readUnsignedByte(255)
                                             if (i_22_ > 0) {
-                                                this.anIntArrayArray264[i_21_] = IntArray(i_22_)
-                                                this.anIntArrayArray264[i_21_]!![0] = class348_sub49.readMedium(-1)
+                                                this.anIntArrayArray264!![i_21_] = IntArray(i_22_)
+                                                this.anIntArrayArray264!![i_21_]!![0] = class348_sub49.readMedium(-1)
                                                 var i_23_ = 1
                                                 while ((i_22_ > i_23_)) {
-                                                    this.anIntArrayArray264[i_21_]!![i_23_] = (class348_sub49.readUnsignedShort(842397944))
+                                                    this.anIntArrayArray264!![i_21_]!![i_23_] = (class348_sub49.readUnsignedShort(842397944))
                                                     i_23_++
                                                 }
                                             }
@@ -156,9 +156,9 @@ class Class17 {
                                         else if (i == 18) this.aBoolean268 = true
                                         else if (i == 19) {
                                             if (this.anIntArray253 == null) {
-                                                this.anIntArray253 = (IntArray((this.anIntArrayArray264).size))
+                                                this.anIntArray253 = (IntArray((this.anIntArrayArray264)!!.size))
                                                 var i_24_ = 0
-                                                while (((this.anIntArrayArray264).size > i_24_)) {
+                                                while (((this.anIntArrayArray264)!!.size > i_24_)) {
                                                     this.anIntArray253!![i_24_] = 255
                                                     i_24_++
                                                 }
@@ -166,10 +166,10 @@ class Class17 {
                                             this.anIntArray253!![class348_sub49.readUnsignedByte(255)] = (class348_sub49.readUnsignedByte(Class348_Sub21.method2955(i_10_, -15092)))
                                         } else if (i == 20) {
                                             if ((this.anIntArray236 == null) || (this.anIntArray265) == null) {
-                                                this.anIntArray236 = (IntArray((this.anIntArrayArray264).size))
-                                                this.anIntArray265 = (IntArray((this.anIntArrayArray264).size))
+                                                this.anIntArray236 = (IntArray((this.anIntArrayArray264)!!.size))
+                                                this.anIntArray265 = (IntArray((this.anIntArrayArray264)!!.size))
                                                 var i_25_ = 0
-                                                while (((this.anIntArrayArray264).size > i_25_)) {
+                                                while (((this.anIntArrayArray264)!!.size > i_25_)) {
                                                     this.anIntArray236!![i_25_] = 256
                                                     this.anIntArray265!![i_25_] = 256
                                                     i_25_++

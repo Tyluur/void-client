@@ -4121,7 +4121,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
 
             Class150.anInt2057 = 0
             Class348_Sub32.anInt6930 = 0
-            Class282.aClass356_3654.method3481(0)
+            Class282.aClass356_3654!!.method3481(0)
             Class348_Sub40_Sub17.aClass262_9240!!.method1996(112)
             r_Sub2.aClass262_10492!!.method1996(109)
             Class225.aClass243_2957!!.method1876((-45).toByte())

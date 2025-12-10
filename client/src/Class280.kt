@@ -1,448 +1,455 @@
-/* Class280 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import Class299.Companion.method2253
+import jaclib.memory.Stream.Companion.c
+import kotlin.math.min
 
-import jaclib.memory.Buffer;
-import jaclib.memory.Stream;
-
-public final class Class280 {
-    static int anInt3625;
-    private int anInt3626;
-    private final int[] anIntArray3627 = new int[64];
-    static int anInt3628;
-    static int anInt3629;
-    private final Interface5_Impl1 anInterface5_Impl1_3630;
-    private int[] anIntArray3631;
-    private final Class318_Sub9_Sub2[][] aClass318_Sub9_Sub2ArrayArray3632;
-    static int anInt3633;
-    static int anInt3634;
-    private final Interface5_Impl2 anInterface5_Impl2_3635;
-    private final int[] anIntArray3636;
-    private final Class130 aClass130_3637;
-    private final Interface5_Impl1 anInterface5_Impl1_3638;
-    static int anInt3639;
-    static int anInt3640;
-    static Class114 aClass114_3641 = new Class114(79, 3);
-    private Class318_Sub9_Sub2[][] aClass318_Sub9_Sub2ArrayArray3642;
-    static int anInt3643 = 0;
-
-    private final void method2098(ha_Sub3 var_ha_Sub3, int i, int i_0_) {
-        anInt3629++;
-        Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093;
-        int i_1_ = 75 % ((2 - i) / 34);
-        var_ha_Sub3.method3867((float) i_0_, -86);
-        var_ha_Sub3.method3857((byte) 92);
-        var_ha_Sub3.method3865(false, 36);
-        var_ha_Sub3.method3946(-32, false);
-        var_ha_Sub3.method3942(5);
+class Class280 internal constructor(var_ha_Sub3: ha_Sub3) {
+    private var anInt3626 = 0
+    private val anIntArray3627 = IntArray(64)
+    private val anInterface5_Impl1_3630: Interface5_Impl1
+    private var anIntArray3631: IntArray?
+    private val aClass318_Sub9_Sub2ArrayArray3632: Array<Array<Class318_Sub9_Sub2?>?>
+    private val anInterface5_Impl2_3635: Interface5_Impl2?
+    private val anIntArray3636: IntArray
+    private val aClass130_3637: Class130
+    private val anInterface5_Impl1_3638: Interface5_Impl1
+    private var aClass318_Sub9_Sub2ArrayArray3642: Array<Array<Class318_Sub9_Sub2?>?>?
+    private fun method2098(var_ha_Sub3: ha_Sub3, i: Int, i_0_: Int) {
+        anInt3629++
+        Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093
+        val i_1_ = 75 % ((2 - i) / 34)
+        var_ha_Sub3.method3867(i_0_.toFloat(), -86)
+        var_ha_Sub3.method3857(92.toByte())
+        var_ha_Sub3.method3865(false, 36)
+        var_ha_Sub3.method3946(-32, false)
+        var_ha_Sub3.method3942(5)
     }
 
-    private final void method2099(int i, ha_Sub3 var_ha_Sub3) {
-        anInt3628++;
-        var_ha_Sub3.method3946(i + -26358, true);
-        var_ha_Sub3.method3865(true, 54);
-        if (i != 26326) anIntArray3631 = null;
-        if (Class59_Sub1.aFloat5299 != var_ha_Sub3.aFloat8093) var_ha_Sub3.xa(Class59_Sub1.aFloat5299);
+    private fun method2099(i: Int, var_ha_Sub3: ha_Sub3) {
+        anInt3628++
+        var_ha_Sub3.method3946(i + -26358, true)
+        var_ha_Sub3.method3865(true, 54)
+        if (i != 26326) anIntArray3631 = null
+        if (Class59_Sub1.aFloat5299 != var_ha_Sub3.aFloat8093) var_ha_Sub3.xa(Class59_Sub1.aFloat5299)
     }
 
-    final void method2100(byte i, ha_Sub3 var_ha_Sub3) {
-        anInterface5_Impl1_3638.method20(786336, (byte) 123, 24);
-        int i_2_ = -125 / ((i - 65) / 49);
-        anInt3625++;
+    fun method2100(i: Byte, var_ha_Sub3: ha_Sub3?) {
+        anInterface5_Impl1_3638.method20(786336, 123.toByte(), 24)
+        val i_2_ = -125 / ((i - 65) / 49)
+        anInt3625++
     }
 
-    final void method2101(ha_Sub3 var_ha_Sub3, Class98 class98, int i, int i_3_) {
+    fun method2101(var_ha_Sub3: ha_Sub3?, class98: Class98?, i: Int, i_3_: Int) {
         try {
-            anInt3633++;
-            if (var_ha_Sub3.aClass101_Sub2_8080 != null) {
-                if (i >= 0) method2098(var_ha_Sub3, -121, i);
-                else method2103((byte) -33, var_ha_Sub3);
-                float f = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5736);
-                float f_4_ = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5691);
-                float f_5_ = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5716);
-                float f_6_ = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5724);
+            anInt3633++
+            if (var_ha_Sub3!!.aClass101_Sub2_8080 != null) {
+                if (i >= 0) method2098(var_ha_Sub3, -121, i)
+                else method2103((-33).toByte(), var_ha_Sub3)
+                val f = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5736)
+                val f_4_ = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5691)
+                val f_5_ = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5716)
+                val f_6_ = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5724)
                 try {
-                    int i_7_ = 0;
-                    int i_8_ = 2147483647;
-                    int i_9_ = i_3_;
-                    Class318_Sub9 class318_sub9 = (class98.aClass88_1569.aClass318_Sub9_1503);
-                    for (Class318_Sub9 class318_sub9_10_ = (class318_sub9.aClass318_Sub9_6469); class318_sub9 != class318_sub9_10_; class318_sub9_10_ = (class318_sub9_10_.aClass318_Sub9_6469)) {
-                        Class318_Sub9_Sub2 class318_sub9_sub2 = (Class318_Sub9_Sub2) class318_sub9_10_;
-                        int i_11_ = (int) ((float) (class318_sub9_sub2.anInt8791 >> 12) * f + f_4_ * (float) ((class318_sub9_sub2.anInt8796) >> 12) + (float) (class318_sub9_sub2.anInt8789 >> 12) * f_5_ + f_6_);
-                        if (i_9_ < i_11_) i_9_ = i_11_;
-                        anIntArray3631[i_7_++] = i_11_;
-                        if (i_8_ > i_11_) i_8_ = i_11_;
+                    var i_7_ = 0
+                    var i_8_ = 2147483647
+                    var i_9_ = i_3_
+                    val class318_sub9 = (class98!!.aClass88_1569.aClass318_Sub9_1503)
+                    var class318_sub9_10_ = (class318_sub9!!.aClass318_Sub9_6469)
+                    while (class318_sub9 !== class318_sub9_10_) {
+                        val class318_sub9_sub2 = class318_sub9_10_ as Class318_Sub9_Sub2
+                        val i_11_ = ((class318_sub9_sub2.anInt8791 shr 12).toFloat() * f + f_4_ * ((class318_sub9_sub2.anInt8796) shr 12).toFloat() + (class318_sub9_sub2.anInt8789 shr 12).toFloat() * f_5_ + f_6_).toInt()
+                        if (i_9_ < i_11_) i_9_ = i_11_
+                        anIntArray3631!![i_7_++] = i_11_
+                        if (i_8_ > i_11_) i_8_ = i_11_
+                        class318_sub9_10_ = (class318_sub9_10_.aClass318_Sub9_6469)
                     }
-                    int i_12_ = -i_8_ + i_9_;
-                    int i_13_;
+                    var i_12_ = -i_8_ + i_9_
+                    val i_13_: Int
                     if (2 + i_12_ > 1600) {
-                        i_13_ = (Class299.method2253(i_12_, i_3_ + 119) + 1 + -Class169.anInt2265);
-                        i_12_ = 2 + (i_12_ >> i_13_);
+                        i_13_ = (method2253(i_12_, i_3_ + 119) + 1 + -Class169.anInt2265)
+                        i_12_ = 2 + (i_12_ shr i_13_)
                     } else {
-                        i_13_ = 0;
-                        i_12_ += 2;
+                        i_13_ = 0
+                        i_12_ += 2
                     }
-                    Class318_Sub9 class318_sub9_14_ = class318_sub9.aClass318_Sub9_6469;
-                    i_7_ = 0;
-                    int i_15_ = -2;
-                    boolean bool = true;
-                    boolean bool_16_ = true;
-                    while (class318_sub9_14_ != class318_sub9) {
-                        anInt3626 = 0;
-                        for (int i_17_ = 0; i_12_ > i_17_; i_17_++)
-                            anIntArray3636[i_17_] = 0;
-                        for (int i_18_ = 0; i_18_ < 64; i_18_++)
-                            anIntArray3627[i_18_] = 0;
-                        for (/**/; class318_sub9_14_ != class318_sub9; class318_sub9_14_ = (class318_sub9_14_.aClass318_Sub9_6469)) {
-                            Class318_Sub9_Sub2 class318_sub9_sub2 = (Class318_Sub9_Sub2) class318_sub9_14_;
+                    var class318_sub9_14_ = class318_sub9.aClass318_Sub9_6469
+                    i_7_ = 0
+                    var i_15_ = -2
+                    var bool = true
+                    var bool_16_ = true
+                    while (class318_sub9_14_ !== class318_sub9) {
+                        anInt3626 = 0
+                        var i_17_ = 0
+                        while (i_12_ > i_17_) {
+                            anIntArray3636[i_17_] = 0
+                            i_17_++
+                        }
+                        for (i_18_ in 0..63) anIntArray3627[i_18_] = 0
+                        while ( /**/class318_sub9_14_ !== class318_sub9) {
+                            val class318_sub9_sub2 = class318_sub9_14_ as Class318_Sub9_Sub2
                             if (bool_16_) {
-                                bool = class318_sub9_sub2.aBoolean8794;
-                                i_15_ = class318_sub9_sub2.anInt8792;
-                                bool_16_ = false;
+                                bool = class318_sub9_sub2.aBoolean8794
+                                i_15_ = class318_sub9_sub2.anInt8792
+                                bool_16_ = false
                             }
                             if (i_7_ > 0 && (i_15_ != class318_sub9_sub2.anInt8792 || !bool != !(class318_sub9_sub2.aBoolean8794))) {
-                                bool_16_ = true;
-                                break;
+                                bool_16_ = true
+                                break
                             }
-                            int i_19_ = -i_8_ + anIntArray3631[i_7_++] >> i_13_;
+                            val i_19_ = -i_8_ + anIntArray3631!![i_7_++] shr i_13_
                             if (i_19_ < 1600) {
-                                if (anIntArray3636[i_19_] < 64) aClass318_Sub9_Sub2ArrayArray3632[i_19_][anIntArray3636[i_19_]++] = class318_sub9_sub2;
+                                if (anIntArray3636[i_19_] < 64) aClass318_Sub9_Sub2ArrayArray3632[i_19_]!![anIntArray3636[i_19_]++] = class318_sub9_sub2
                                 else {
                                     if (anIntArray3636[i_19_] == 64) {
-                                        if (anInt3626 == 64) continue;
-                                        anIntArray3636[i_19_] += anInt3626++ + 1;
+                                        if (anInt3626 == 64) {
+                                            class318_sub9_14_ = (class318_sub9_14_.aClass318_Sub9_6469)
+                                            continue
+                                        }
+                                        anIntArray3636[i_19_] += anInt3626++ + 1
                                     }
-                                    aClass318_Sub9_Sub2ArrayArray3642[-65 + anIntArray3636[i_19_]][anIntArray3627[(anIntArray3636[i_19_] + -65)]++] = class318_sub9_sub2;
+                                    aClass318_Sub9_Sub2ArrayArray3642!![-65 + anIntArray3636[i_19_]]!![anIntArray3627[(anIntArray3636[i_19_] + -65)]++] = class318_sub9_sub2
                                 }
                             }
+                            class318_sub9_14_ = (class318_sub9_14_.aClass318_Sub9_6469)
                         }
-                        var_ha_Sub3.method3814(false, false, i_15_ >= 0 ? i_15_ : -1, (byte) 117);
-                        if (bool && (Class59_Sub1.aFloat5299 != var_ha_Sub3.aFloat8093)) var_ha_Sub3.xa(Class59_Sub1.aFloat5299);
-                        else if (var_ha_Sub3.aFloat8093 != 1.0F) var_ha_Sub3.xa(1.0F);
-                        method2102(false, var_ha_Sub3, i_12_);
+                        var_ha_Sub3.method3814(false, false, if (i_15_ >= 0) i_15_ else -1, 117.toByte())
+                        if (bool && (Class59_Sub1.aFloat5299 != var_ha_Sub3.aFloat8093)) var_ha_Sub3.xa(Class59_Sub1.aFloat5299)
+                        else if (var_ha_Sub3.aFloat8093 != 1.0f) var_ha_Sub3.xa(1.0f)
+                        method2102(false, var_ha_Sub3, i_12_)
                     }
-                } catch (Exception exception) {
+                } catch (exception: Exception) {
                     /* empty */
                 }
-                method2099(i_3_ ^ 0x66d6, var_ha_Sub3);
+                method2099(i_3_ xor 0x66d6, var_ha_Sub3)
             }
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ve.G(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + (class98 != null ? "{...}" : "null") + ',' + i + ',' + i_3_ + ')'));
+        } catch (runtimeexception: RuntimeException) {
+            throw Class348_Sub17.method2929(runtimeexception, ("ve.G(" + (if (var_ha_Sub3 != null) "{...}" else "null") + ',' + (if (class98 != null) "{...}" else "null") + ',' + i + ',' + i_3_ + ')'))
         }
     }
 
-    private final void method2102(boolean bool, ha_Sub3 var_ha_Sub3, int i) {
-        anInt3640++;
-        if (bool != false) method2098(null, 21, -85);
-        int i_20_ = 0;
-        Class101_Sub2 class101_sub2 = var_ha_Sub3.method3948(-22036);
-        float f = class101_sub2.aFloat5711;
-        float f_21_ = class101_sub2.aFloat5700;
-        float f_22_ = class101_sub2.aFloat5704;
-        float f_23_ = class101_sub2.aFloat5708;
-        float f_24_ = class101_sub2.aFloat5722;
-        float f_25_ = class101_sub2.aFloat5732;
-        float f_26_ = f_23_ + f;
-        float f_27_ = f_21_ + f_24_;
-        float f_28_ = f_22_ + f_25_;
-        float f_29_ = f - f_23_;
-        float f_30_ = f_21_ - f_24_;
-        float f_31_ = -f_25_ + f_22_;
-        float f_32_ = f_23_ - f;
-        float f_33_ = -f_21_ + f_24_;
-        float f_34_ = -f_22_ + f_25_;
-        Buffer buffer = anInterface5_Impl1_3638.method19(true, 26775);
+    private fun method2102(bool: Boolean, var_ha_Sub3: ha_Sub3, i: Int) {
+        anInt3640++
+        var i_20_ = 0
+        val class101_sub2 = var_ha_Sub3.method3948(-22036)
+        val f = class101_sub2.aFloat5711
+        val f_21_ = class101_sub2.aFloat5700
+        val f_22_ = class101_sub2.aFloat5704
+        val f_23_ = class101_sub2.aFloat5708
+        val f_24_ = class101_sub2.aFloat5722
+        val f_25_ = class101_sub2.aFloat5732
+        val f_26_ = f_23_ + f
+        val f_27_ = f_21_ + f_24_
+        val f_28_ = f_22_ + f_25_
+        val f_29_ = f - f_23_
+        val f_30_ = f_21_ - f_24_
+        val f_31_ = -f_25_ + f_22_
+        val f_32_ = f_23_ - f
+        val f_33_ = -f_21_ + f_24_
+        val f_34_ = -f_22_ + f_25_
+        val buffer = anInterface5_Impl1_3638.method19(true, 26775)
         if (buffer != null) {
-            Stream stream = var_ha_Sub3.method3893(buffer, 9179);
-            if (Stream.c()) {
-                for (int i_58_ = i + -1; i_58_ >= 0; i_58_--) {
-                    int i_59_ = (Math.min(anIntArray3636[i_58_], 64));
+            val stream = var_ha_Sub3.method3893(buffer, 9179)
+            if (c()) {
+                for (i_58_ in i + -1 downTo 0) {
+                    val i_59_ = (min(anIntArray3636[i_58_], 64))
                     if (i_59_ > 0) {
-                        for (int i_60_ = i_59_ + -1; i_60_ >= 0; i_60_--) {
-                            Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3632[i_58_][i_60_]);
-                            int i_61_ = (class318_sub9_sub2.anInt8790);
-                            byte i_62_ = (byte) (i_61_ >> 16);
-                            byte i_63_ = (byte) (i_61_ >> 8);
-                            byte i_64_ = (byte) i_61_;
-                            byte i_65_ = (byte) (i_61_ >>> 24);
-                            float f_66_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
-                            float f_67_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
-                            float f_68_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
-                            int i_69_ = ((class318_sub9_sub2.anInt8793) >> 12);
-                            stream.a(f_26_ * (float) -i_69_ + f_66_);
-                            stream.a(f_67_ + f_27_ * (float) -i_69_);
-                            stream.a(f_68_ + (float) -i_69_ * f_28_);
-                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
-                            else stream.b(i_62_, i_63_, i_64_, i_65_);
-                            stream.a(0.0F);
-                            stream.a(0.0F);
-                            stream.a(f_29_ * (float) i_69_ + f_66_);
-                            stream.a((float) i_69_ * f_30_ + f_67_);
-                            stream.a(f_68_ + f_31_ * (float) i_69_);
-                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
-                            else stream.b(i_62_, i_63_, i_64_, i_65_);
-                            stream.a(1.0F);
-                            stream.a(0.0F);
-                            stream.a(f_66_ + f_26_ * (float) i_69_);
-                            stream.a(f_67_ + f_27_ * (float) i_69_);
-                            stream.a(f_28_ * (float) i_69_ + f_68_);
-                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
-                            else stream.b(i_62_, i_63_, i_64_, i_65_);
-                            stream.a(1.0F);
-                            stream.a(1.0F);
-                            stream.a(f_66_ + f_32_ * (float) i_69_);
-                            stream.a(f_67_ + f_33_ * (float) i_69_);
-                            stream.a(f_68_ + f_34_ * (float) i_69_);
-                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
-                            else stream.b(i_62_, i_63_, i_64_, i_65_);
-                            stream.a(0.0F);
-                            i_20_++;
-                            stream.a(1.0F);
+                        for (i_60_ in i_59_ + -1 downTo 0) {
+                            val class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3632[i_58_]!![i_60_])!!
+                            val i_61_ = (class318_sub9_sub2.anInt8790)
+                            val i_62_ = (i_61_ shr 16).toByte()
+                            val i_63_ = (i_61_ shr 8).toByte()
+                            val i_64_ = i_61_.toByte()
+                            val i_65_ = (i_61_ ushr 24).toByte()
+                            val f_66_ = (class318_sub9_sub2.anInt8791 shr 12).toFloat()
+                            val f_67_ = (class318_sub9_sub2.anInt8796 shr 12).toFloat()
+                            val f_68_ = (class318_sub9_sub2.anInt8789 shr 12).toFloat()
+                            val i_69_ = ((class318_sub9_sub2.anInt8793) shr 12)
+                            stream.a(f_26_ * -i_69_.toFloat() + f_66_)
+                            stream.a(f_67_ + f_27_ * -i_69_.toFloat())
+                            stream.a(f_68_ + -i_69_.toFloat() * f_28_)
+                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_.toInt(), i_63_.toInt(), i_64_.toInt(), i_65_.toInt())
+                            else stream.b(i_62_.toInt(), i_63_.toInt(), i_64_.toInt(), i_65_.toInt())
+                            stream.a(0.0f)
+                            stream.a(0.0f)
+                            stream.a(f_29_ * i_69_.toFloat() + f_66_)
+                            stream.a(i_69_.toFloat() * f_30_ + f_67_)
+                            stream.a(f_68_ + f_31_ * i_69_.toFloat())
+                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_.toInt(), i_63_.toInt(), i_64_.toInt(), i_65_.toInt())
+                            else stream.b(i_62_.toInt(), i_63_.toInt(), i_64_.toInt(), i_65_.toInt())
+                            stream.a(1.0f)
+                            stream.a(0.0f)
+                            stream.a(f_66_ + f_26_ * i_69_.toFloat())
+                            stream.a(f_67_ + f_27_ * i_69_.toFloat())
+                            stream.a(f_28_ * i_69_.toFloat() + f_68_)
+                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_.toInt(), i_63_.toInt(), i_64_.toInt(), i_65_.toInt())
+                            else stream.b(i_62_.toInt(), i_63_.toInt(), i_64_.toInt(), i_65_.toInt())
+                            stream.a(1.0f)
+                            stream.a(1.0f)
+                            stream.a(f_66_ + f_32_ * i_69_.toFloat())
+                            stream.a(f_67_ + f_33_ * i_69_.toFloat())
+                            stream.a(f_68_ + f_34_ * i_69_.toFloat())
+                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_.toInt(), i_63_.toInt(), i_64_.toInt(), i_65_.toInt())
+                            else stream.b(i_62_.toInt(), i_63_.toInt(), i_64_.toInt(), i_65_.toInt())
+                            stream.a(0.0f)
+                            i_20_++
+                            stream.a(1.0f)
                         }
                         if (anIntArray3636[i_58_] > 64) {
-                            int i_70_ = anIntArray3636[i_58_] - 65;
-                            for (int i_71_ = -1 + anIntArray3627[i_70_]; i_71_ >= 0; i_71_--) {
-                                Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3642[i_70_][i_71_]);
-                                int i_72_ = (class318_sub9_sub2.anInt8790);
-                                byte i_73_ = (byte) (i_72_ >> 16);
-                                byte i_74_ = (byte) (i_72_ >> 8);
-                                byte i_75_ = (byte) i_72_;
-                                byte i_76_ = (byte) (i_72_ >>> 24);
-                                float f_77_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
-                                float f_78_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
-                                float f_79_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
-                                int i_80_ = (class318_sub9_sub2.anInt8793 >> 12);
-                                stream.a(f_26_ * (float) -i_80_ + f_77_);
-                                stream.a((float) -i_80_ * f_27_ + f_78_);
-                                stream.a(f_79_ + f_28_ * (float) -i_80_);
-                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_73_, i_74_, i_75_, i_76_);
-                                else stream.a(i_73_, i_74_, i_75_, i_76_);
-                                stream.a(0.0F);
-                                stream.a(0.0F);
-                                stream.a(f_29_ * (float) i_80_ + f_77_);
-                                stream.a((float) i_80_ * f_30_ + f_78_);
-                                stream.a((float) i_80_ * f_31_ + f_79_);
-                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_73_, i_74_, i_75_, i_76_);
-                                else stream.a(i_73_, i_74_, i_75_, i_76_);
-                                stream.a(1.0F);
-                                stream.a(0.0F);
-                                stream.a(f_77_ + (float) i_80_ * f_26_);
-                                stream.a((float) i_80_ * f_27_ + f_78_);
-                                stream.a((float) i_80_ * f_28_ + f_79_);
-                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_73_, i_74_, i_75_, i_76_);
-                                else stream.b(i_73_, i_74_, i_75_, i_76_);
-                                stream.a(1.0F);
-                                stream.a(1.0F);
-                                stream.a((float) i_80_ * f_32_ + f_77_);
-                                stream.a((float) i_80_ * f_33_ + f_78_);
-                                stream.a(f_79_ + (float) i_80_ * f_34_);
-                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_73_, i_74_, i_75_, i_76_);
-                                else stream.b(i_73_, i_74_, i_75_, i_76_);
-                                stream.a(0.0F);
-                                i_20_++;
-                                stream.a(1.0F);
+                            val i_70_ = anIntArray3636[i_58_] - 65
+                            for (i_71_ in -1 + anIntArray3627[i_70_] downTo 0) {
+                                val class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3642!![i_70_]!![i_71_])!!
+                                val i_72_ = (class318_sub9_sub2.anInt8790)
+                                val i_73_ = (i_72_ shr 16).toByte()
+                                val i_74_ = (i_72_ shr 8).toByte()
+                                val i_75_ = i_72_.toByte()
+                                val i_76_ = (i_72_ ushr 24).toByte()
+                                val f_77_ = (class318_sub9_sub2.anInt8791 shr 12).toFloat()
+                                val f_78_ = (class318_sub9_sub2.anInt8796 shr 12).toFloat()
+                                val f_79_ = (class318_sub9_sub2.anInt8789 shr 12).toFloat()
+                                val i_80_ = (class318_sub9_sub2.anInt8793 shr 12)
+                                stream.a(f_26_ * -i_80_.toFloat() + f_77_)
+                                stream.a(-i_80_.toFloat() * f_27_ + f_78_)
+                                stream.a(f_79_ + f_28_ * -i_80_.toFloat())
+                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_73_.toInt(), i_74_.toInt(), i_75_.toInt(), i_76_.toInt())
+                                else stream.a(i_73_.toInt(), i_74_.toInt(), i_75_.toInt(), i_76_.toInt())
+                                stream.a(0.0f)
+                                stream.a(0.0f)
+                                stream.a(f_29_ * i_80_.toFloat() + f_77_)
+                                stream.a(i_80_.toFloat() * f_30_ + f_78_)
+                                stream.a(i_80_.toFloat() * f_31_ + f_79_)
+                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_73_.toInt(), i_74_.toInt(), i_75_.toInt(), i_76_.toInt())
+                                else stream.a(i_73_.toInt(), i_74_.toInt(), i_75_.toInt(), i_76_.toInt())
+                                stream.a(1.0f)
+                                stream.a(0.0f)
+                                stream.a(f_77_ + i_80_.toFloat() * f_26_)
+                                stream.a(i_80_.toFloat() * f_27_ + f_78_)
+                                stream.a(i_80_.toFloat() * f_28_ + f_79_)
+                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_73_.toInt(), i_74_.toInt(), i_75_.toInt(), i_76_.toInt())
+                                else stream.b(i_73_.toInt(), i_74_.toInt(), i_75_.toInt(), i_76_.toInt())
+                                stream.a(1.0f)
+                                stream.a(1.0f)
+                                stream.a(i_80_.toFloat() * f_32_ + f_77_)
+                                stream.a(i_80_.toFloat() * f_33_ + f_78_)
+                                stream.a(f_79_ + i_80_.toFloat() * f_34_)
+                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_73_.toInt(), i_74_.toInt(), i_75_.toInt(), i_76_.toInt())
+                                else stream.b(i_73_.toInt(), i_74_.toInt(), i_75_.toInt(), i_76_.toInt())
+                                stream.a(0.0f)
+                                i_20_++
+                                stream.a(1.0f)
                             }
                         }
                     }
                 }
             } else {
-                for (int i_35_ = -1 + i; i_35_ >= 0; i_35_--) {
-                    int i_36_ = (Math.min(anIntArray3636[i_35_], 64));
+                for (i_35_ in -1 + i downTo 0) {
+                    val i_36_ = (min(anIntArray3636[i_35_], 64))
                     if (i_36_ > 0) {
-                        for (int i_37_ = i_36_ + -1; i_37_ >= 0; i_37_--) {
-                            Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3632[i_35_][i_37_]);
-                            int i_38_ = (class318_sub9_sub2.anInt8790);
-                            byte i_39_ = (byte) (i_38_ >> 16);
-                            byte i_40_ = (byte) (i_38_ >> 8);
-                            byte i_41_ = (byte) i_38_;
-                            byte i_42_ = (byte) (i_38_ >>> 24);
-                            float f_43_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
-                            float f_44_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
-                            float f_45_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
-                            int i_46_ = ((class318_sub9_sub2.anInt8793) >> 12);
-                            stream.b((float) -i_46_ * f_26_ + f_43_);
-                            stream.b(f_44_ + (float) -i_46_ * f_27_);
-                            stream.b((float) -i_46_ * f_28_ + f_45_);
-                            if (var_ha_Sub3.anInt8178 == 0) stream.b(i_39_, i_40_, i_41_, i_42_);
-                            else stream.a(i_39_, i_40_, i_41_, i_42_);
-                            stream.b(0.0F);
-                            stream.b(0.0F);
-                            stream.b(f_43_ + (float) i_46_ * f_29_);
-                            stream.b(f_44_ + (float) i_46_ * f_30_);
-                            stream.b(f_45_ + (float) i_46_ * f_31_);
-                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_39_, i_40_, i_41_, i_42_);
-                            else stream.b(i_39_, i_40_, i_41_, i_42_);
-                            stream.b(1.0F);
-                            stream.b(0.0F);
-                            stream.b(f_43_ + f_26_ * (float) i_46_);
-                            stream.b(f_27_ * (float) i_46_ + f_44_);
-                            stream.b(f_28_ * (float) i_46_ + f_45_);
-                            if (var_ha_Sub3.anInt8178 == 0) stream.b(i_39_, i_40_, i_41_, i_42_);
-                            else stream.a(i_39_, i_40_, i_41_, i_42_);
-                            stream.b(1.0F);
-                            stream.b(1.0F);
-                            stream.b(f_32_ * (float) i_46_ + f_43_);
-                            stream.b((float) i_46_ * f_33_ + f_44_);
-                            stream.b(f_45_ + f_34_ * (float) i_46_);
-                            if (var_ha_Sub3.anInt8178 == 0) stream.b(i_39_, i_40_, i_41_, i_42_);
-                            else stream.a(i_39_, i_40_, i_41_, i_42_);
-                            stream.b(0.0F);
-                            i_20_++;
-                            stream.b(1.0F);
+                        for (i_37_ in i_36_ + -1 downTo 0) {
+                            val class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3632[i_35_]!![i_37_])!!
+                            val i_38_ = (class318_sub9_sub2.anInt8790)
+                            val i_39_ = (i_38_ shr 16).toByte()
+                            val i_40_ = (i_38_ shr 8).toByte()
+                            val i_41_ = i_38_.toByte()
+                            val i_42_ = (i_38_ ushr 24).toByte()
+                            val f_43_ = (class318_sub9_sub2.anInt8791 shr 12).toFloat()
+                            val f_44_ = (class318_sub9_sub2.anInt8796 shr 12).toFloat()
+                            val f_45_ = (class318_sub9_sub2.anInt8789 shr 12).toFloat()
+                            val i_46_ = ((class318_sub9_sub2.anInt8793) shr 12)
+                            stream.b(-i_46_.toFloat() * f_26_ + f_43_)
+                            stream.b(f_44_ + -i_46_.toFloat() * f_27_)
+                            stream.b(-i_46_.toFloat() * f_28_ + f_45_)
+                            if (var_ha_Sub3.anInt8178 == 0) stream.b(i_39_.toInt(), i_40_.toInt(), i_41_.toInt(), i_42_.toInt())
+                            else stream.a(i_39_.toInt(), i_40_.toInt(), i_41_.toInt(), i_42_.toInt())
+                            stream.b(0.0f)
+                            stream.b(0.0f)
+                            stream.b(f_43_ + i_46_.toFloat() * f_29_)
+                            stream.b(f_44_ + i_46_.toFloat() * f_30_)
+                            stream.b(f_45_ + i_46_.toFloat() * f_31_)
+                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_39_.toInt(), i_40_.toInt(), i_41_.toInt(), i_42_.toInt())
+                            else stream.b(i_39_.toInt(), i_40_.toInt(), i_41_.toInt(), i_42_.toInt())
+                            stream.b(1.0f)
+                            stream.b(0.0f)
+                            stream.b(f_43_ + f_26_ * i_46_.toFloat())
+                            stream.b(f_27_ * i_46_.toFloat() + f_44_)
+                            stream.b(f_28_ * i_46_.toFloat() + f_45_)
+                            if (var_ha_Sub3.anInt8178 == 0) stream.b(i_39_.toInt(), i_40_.toInt(), i_41_.toInt(), i_42_.toInt())
+                            else stream.a(i_39_.toInt(), i_40_.toInt(), i_41_.toInt(), i_42_.toInt())
+                            stream.b(1.0f)
+                            stream.b(1.0f)
+                            stream.b(f_32_ * i_46_.toFloat() + f_43_)
+                            stream.b(i_46_.toFloat() * f_33_ + f_44_)
+                            stream.b(f_45_ + f_34_ * i_46_.toFloat())
+                            if (var_ha_Sub3.anInt8178 == 0) stream.b(i_39_.toInt(), i_40_.toInt(), i_41_.toInt(), i_42_.toInt())
+                            else stream.a(i_39_.toInt(), i_40_.toInt(), i_41_.toInt(), i_42_.toInt())
+                            stream.b(0.0f)
+                            i_20_++
+                            stream.b(1.0f)
                         }
                         if (anIntArray3636[i_35_] > 64) {
-                            int i_47_ = -64 + anIntArray3636[i_35_] + -1;
-                            for (int i_48_ = anIntArray3627[i_47_] + -1; i_48_ >= 0; i_48_--) {
-                                Class318_Sub9_Sub2 class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3642[i_47_][i_48_]);
-                                int i_49_ = (class318_sub9_sub2.anInt8790);
-                                byte i_50_ = (byte) (i_49_ >> 16);
-                                byte i_51_ = (byte) (i_49_ >> 8);
-                                byte i_52_ = (byte) i_49_;
-                                byte i_53_ = (byte) (i_49_ >>> 24);
-                                float f_54_ = (float) (class318_sub9_sub2.anInt8791 >> 12);
-                                float f_55_ = (float) (class318_sub9_sub2.anInt8796 >> 12);
-                                float f_56_ = (float) (class318_sub9_sub2.anInt8789 >> 12);
-                                int i_57_ = (class318_sub9_sub2.anInt8793 >> 12);
-                                stream.b(f_54_ + (float) -i_57_ * f_26_);
-                                stream.b((float) -i_57_ * f_27_ + f_55_);
-                                stream.b(f_56_ + f_28_ * (float) -i_57_);
-                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_50_, i_51_, i_52_, i_53_);
-                                else stream.a(i_50_, i_51_, i_52_, i_53_);
-                                stream.b(0.0F);
-                                stream.b(0.0F);
-                                stream.b(f_54_ + (float) i_57_ * f_29_);
-                                stream.b(f_30_ * (float) i_57_ + f_55_);
-                                stream.b(f_31_ * (float) i_57_ + f_56_);
-                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_50_, i_51_, i_52_, i_53_);
-                                else stream.b(i_50_, i_51_, i_52_, i_53_);
-                                stream.b(1.0F);
-                                stream.b(0.0F);
-                                stream.b(f_54_ + (float) i_57_ * f_26_);
-                                stream.b((float) i_57_ * f_27_ + f_55_);
-                                stream.b(f_28_ * (float) i_57_ + f_56_);
-                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_50_, i_51_, i_52_, i_53_);
-                                else stream.a(i_50_, i_51_, i_52_, i_53_);
-                                stream.b(1.0F);
-                                stream.b(1.0F);
-                                stream.b(f_54_ + f_32_ * (float) i_57_);
-                                stream.b(f_55_ + (float) i_57_ * f_33_);
-                                stream.b((float) i_57_ * f_34_ + f_56_);
-                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_50_, i_51_, i_52_, i_53_);
-                                else stream.b(i_50_, i_51_, i_52_, i_53_);
-                                stream.b(0.0F);
-                                stream.b(1.0F);
-                                i_20_++;
+                            val i_47_ = -64 + anIntArray3636[i_35_] + -1
+                            for (i_48_ in anIntArray3627[i_47_] + -1 downTo 0) {
+                                val class318_sub9_sub2 = (aClass318_Sub9_Sub2ArrayArray3642!![i_47_]!![i_48_])!!
+                                val i_49_ = (class318_sub9_sub2.anInt8790)
+                                val i_50_ = (i_49_ shr 16).toByte()
+                                val i_51_ = (i_49_ shr 8).toByte()
+                                val i_52_ = i_49_.toByte()
+                                val i_53_ = (i_49_ ushr 24).toByte()
+                                val f_54_ = (class318_sub9_sub2.anInt8791 shr 12).toFloat()
+                                val f_55_ = (class318_sub9_sub2.anInt8796 shr 12).toFloat()
+                                val f_56_ = (class318_sub9_sub2.anInt8789 shr 12).toFloat()
+                                val i_57_ = (class318_sub9_sub2.anInt8793 shr 12)
+                                stream.b(f_54_ + -i_57_.toFloat() * f_26_)
+                                stream.b(-i_57_.toFloat() * f_27_ + f_55_)
+                                stream.b(f_56_ + f_28_ * -i_57_.toFloat())
+                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_50_.toInt(), i_51_.toInt(), i_52_.toInt(), i_53_.toInt())
+                                else stream.a(i_50_.toInt(), i_51_.toInt(), i_52_.toInt(), i_53_.toInt())
+                                stream.b(0.0f)
+                                stream.b(0.0f)
+                                stream.b(f_54_ + i_57_.toFloat() * f_29_)
+                                stream.b(f_30_ * i_57_.toFloat() + f_55_)
+                                stream.b(f_31_ * i_57_.toFloat() + f_56_)
+                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_50_.toInt(), i_51_.toInt(), i_52_.toInt(), i_53_.toInt())
+                                else stream.b(i_50_.toInt(), i_51_.toInt(), i_52_.toInt(), i_53_.toInt())
+                                stream.b(1.0f)
+                                stream.b(0.0f)
+                                stream.b(f_54_ + i_57_.toFloat() * f_26_)
+                                stream.b(i_57_.toFloat() * f_27_ + f_55_)
+                                stream.b(f_28_ * i_57_.toFloat() + f_56_)
+                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_50_.toInt(), i_51_.toInt(), i_52_.toInt(), i_53_.toInt())
+                                else stream.a(i_50_.toInt(), i_51_.toInt(), i_52_.toInt(), i_53_.toInt())
+                                stream.b(1.0f)
+                                stream.b(1.0f)
+                                stream.b(f_54_ + f_32_ * i_57_.toFloat())
+                                stream.b(f_55_ + i_57_.toFloat() * f_33_)
+                                stream.b(i_57_.toFloat() * f_34_ + f_56_)
+                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_50_.toInt(), i_51_.toInt(), i_52_.toInt(), i_53_.toInt())
+                                else stream.b(i_50_.toInt(), i_51_.toInt(), i_52_.toInt(), i_53_.toInt())
+                                stream.b(0.0f)
+                                stream.b(1.0f)
+                                i_20_++
                             }
                         }
                     }
                 }
             }
-            stream.a();
+            stream.a()
             if (anInterface5_Impl1_3638.method18(6331)) {
-                var_ha_Sub3.method3925(66, anInterface5_Impl1_3638, 0);
-                var_ha_Sub3.method3925(68, anInterface5_Impl1_3630, 1);
-                var_ha_Sub3.method3862(0, aClass130_3637);
-                var_ha_Sub3.method3938(Class247.aClass21_3181, 2 * i_20_, anInterface5_Impl2_3635, 0, 0, i_20_ * 4, 118);
+                var_ha_Sub3.method3925(66, anInterface5_Impl1_3638, 0)
+                var_ha_Sub3.method3925(68, anInterface5_Impl1_3630, 1)
+                var_ha_Sub3.method3862(0, aClass130_3637)
+                var_ha_Sub3.method3938(Class247.aClass21_3181, 2 * i_20_, anInterface5_Impl2_3635, 0, 0, i_20_ * 4, 118)
             }
         }
     }
 
-    private final void method2103(byte i, ha_Sub3 var_ha_Sub3) {
-        if (i != -33) aClass318_Sub9_Sub2ArrayArray3642 = null;
-        anInt3639++;
-        Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093;
-        var_ha_Sub3.method3825(8);
-        var_ha_Sub3.method3865(false, i + 89);
-        var_ha_Sub3.method3946(-32, false);
-        var_ha_Sub3.method3942(5);
+    private fun method2103(i: Byte, var_ha_Sub3: ha_Sub3) {
+        if (i.toInt() != -33) aClass318_Sub9_Sub2ArrayArray3642 = null
+        anInt3639++
+        Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093
+        var_ha_Sub3.method3825(8)
+        var_ha_Sub3.method3865(false, i + 89)
+        var_ha_Sub3.method3946(-32, false)
+        var_ha_Sub3.method3942(5)
     }
 
-    public static void method2104(int i) {
-        aClass114_3641 = null;
-        if (i < 66) method2104(127);
+    fun method2105(i: Int) {
+        if (i > -118) aClass114_3641 = null
+        anInt3634++
+        anInterface5_Impl1_3638.method21(23315)
     }
 
-    final void method2105(int i) {
-        if (i > -118) aClass114_3641 = null;
-        anInt3634++;
-        anInterface5_Impl1_3638.method21(23315);
-    }
-
-    Class280(ha_Sub3 var_ha_Sub3) {
-        anInt3626 = 0;
-        aClass318_Sub9_Sub2ArrayArray3632 = new Class318_Sub9_Sub2[1600][64];
-        anIntArray3631 = new int[8191];
-        aClass318_Sub9_Sub2ArrayArray3642 = new Class318_Sub9_Sub2[64][768];
-        anIntArray3636 = new int[1600];
-        aClass130_3637 = (var_ha_Sub3.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4076, Class325.aClass325_4078}), new Class58(Class325.aClass325_4075)})));
-        anInterface5_Impl1_3638 = var_ha_Sub3.method3889(true, 16711680);
-        anInterface5_Impl1_3630 = var_ha_Sub3.method3889(false, 16711680);
-        anInterface5_Impl1_3630.method20(393168, (byte) 124, 12);
-        anInterface5_Impl2_3635 = var_ha_Sub3.method3840(-28633, false);
-        anInterface5_Impl2_3635.method23(15959, 49146);
-        Buffer buffer = anInterface5_Impl2_3635.method24(true, false);
+    init {
+        aClass318_Sub9_Sub2ArrayArray3632 = Array<Array<Class318_Sub9_Sub2?>?>(1600) { arrayOfNulls<Class318_Sub9_Sub2>(64) }
+        anIntArray3631 = IntArray(8191)
+        aClass318_Sub9_Sub2ArrayArray3642 = Array<Array<Class318_Sub9_Sub2?>?>(64) { arrayOfNulls<Class318_Sub9_Sub2>(768) }
+        anIntArray3636 = IntArray(1600)
+        aClass130_3637 = (var_ha_Sub3.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076, Class325.aClass325_4078)), Class58(Class325.aClass325_4075)))))
+        anInterface5_Impl1_3638 = var_ha_Sub3.method3889(true, 16711680)
+        anInterface5_Impl1_3630 = var_ha_Sub3.method3889(false, 16711680)
+        anInterface5_Impl1_3630.method20(393168, 124.toByte(), 12)
+        anInterface5_Impl2_3635 = var_ha_Sub3.method3840(-28633, false)
+        anInterface5_Impl2_3635!!.method23(15959, 49146)
+        val buffer = anInterface5_Impl2_3635.method24(true, false)
         if (buffer != null) {
-            Stream stream = var_ha_Sub3.method3893(buffer, 9179);
-            if (Stream.c()) {
-                for (int i = 0; i < 8191; i++) {
-                    int i_82_ = i * 4;
-                    stream.d(i_82_);
-                    stream.d(i_82_ + 1);
-                    stream.d(i_82_ + 2);
-                    stream.d(2 + i_82_);
-                    stream.d(3 + i_82_);
-                    stream.d(i_82_);
+            val stream = var_ha_Sub3.method3893(buffer, 9179)
+            if (c()) {
+                for (i in 0..8190) {
+                    val i_82_ = i * 4
+                    stream.d(i_82_)
+                    stream.d(i_82_ + 1)
+                    stream.d(i_82_ + 2)
+                    stream.d(2 + i_82_)
+                    stream.d(3 + i_82_)
+                    stream.d(i_82_)
                 }
             } else {
-                for (int i = 0; i < 8191; i++) {
-                    int i_81_ = 4 * i;
-                    stream.a(i_81_);
-                    stream.a(1 + i_81_);
-                    stream.a(2 + i_81_);
-                    stream.a(2 + i_81_);
-                    stream.a(3 + i_81_);
-                    stream.a(i_81_);
+                for (i in 0..8190) {
+                    val i_81_ = 4 * i
+                    stream.a(i_81_)
+                    stream.a(1 + i_81_)
+                    stream.a(2 + i_81_)
+                    stream.a(2 + i_81_)
+                    stream.a(3 + i_81_)
+                    stream.a(i_81_)
                 }
             }
-            stream.a();
-            anInterface5_Impl2_3635.method22(-23);
+            stream.a()
+            anInterface5_Impl2_3635.method22(-23)
         }
-        Buffer buffer_83_ = anInterface5_Impl1_3630.method19(true, 26775);
+        val buffer_83_ = anInterface5_Impl1_3630.method19(true, 26775)
         if (buffer_83_ != null) {
-            Stream stream = var_ha_Sub3.method3893(buffer_83_, 9179);
-            if (Stream.c()) {
-                for (int i = 0; i < 8191; i++) {
-                    stream.a(0.0F);
-                    stream.a(-1.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(-1.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(-1.0F);
-                    stream.a(0.0F);
-                    stream.a(0.0F);
-                    stream.a(-1.0F);
-                    stream.a(0.0F);
+            val stream = var_ha_Sub3.method3893(buffer_83_, 9179)
+            if (c()) {
+                for (i in 0..8190) {
+                    stream.a(0.0f)
+                    stream.a(-1.0f)
+                    stream.a(0.0f)
+                    stream.a(0.0f)
+                    stream.a(-1.0f)
+                    stream.a(0.0f)
+                    stream.a(0.0f)
+                    stream.a(-1.0f)
+                    stream.a(0.0f)
+                    stream.a(0.0f)
+                    stream.a(-1.0f)
+                    stream.a(0.0f)
                 }
             } else {
-                for (int i = 0; i < 8191; i++) {
-                    stream.b(0.0F);
-                    stream.b(-1.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(-1.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(-1.0F);
-                    stream.b(0.0F);
-                    stream.b(0.0F);
-                    stream.b(-1.0F);
-                    stream.b(0.0F);
+                for (i in 0..8190) {
+                    stream.b(0.0f)
+                    stream.b(-1.0f)
+                    stream.b(0.0f)
+                    stream.b(0.0f)
+                    stream.b(-1.0f)
+                    stream.b(0.0f)
+                    stream.b(0.0f)
+                    stream.b(-1.0f)
+                    stream.b(0.0f)
+                    stream.b(0.0f)
+                    stream.b(-1.0f)
+                    stream.b(0.0f)
                 }
             }
-            stream.a();
-            anInterface5_Impl1_3630.method18(6331);
+            stream.a()
+            anInterface5_Impl1_3630.method18(6331)
+        }
+    }
+
+    companion object {
+        var anInt3625: Int = 0
+        var anInt3628: Int = 0
+        var anInt3629: Int = 0
+        var anInt3633: Int = 0
+        var anInt3634: Int = 0
+        var anInt3639: Int = 0
+        var anInt3640: Int = 0
+        var aClass114_3641: Class114? = Class114(79, 3)
+        @JvmField
+        var anInt3643: Int = 0
+
+        @JvmStatic
+        fun method2104(i: Int) {
+            aClass114_3641 = null
+            if (i < 66) method2104(127)
         }
     }
 }
