@@ -5,7 +5,7 @@ class Class348_Sub40_Sub11 : Class348_Sub40(0, true) {
     private var anInt9187 = 585
     override fun method3042(i: Int, i_0_: Int): IntArray {
         anInt9186++
-        val `is` = this.aClass191_7032!!.method1433(0, i)
+        val `is` = this.aClass191_7032!!.method1433(0, i)!!
         if (i_0_ != 255) anIntArray9185 = null
         if (this.aClass191_7032!!.aBoolean2570) {
             val i_1_ = Class239_Sub18.anIntArray6035!![i]

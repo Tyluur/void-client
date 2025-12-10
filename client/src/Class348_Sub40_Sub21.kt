@@ -11,7 +11,7 @@ class Class348_Sub40_Sub21 : Class348_Sub40(0, true) {
     private var anInt9281 = 2048
     override fun method3042(i: Int, i_0_: Int): IntArray {
         anInt9267++
-        val `is` = this.aClass191_7032!!.method1433(0, i)
+        val `is` = this.aClass191_7032!!.method1433(0, i)!!
         if (i_0_ != 255) method3108(-114, -119, -89)
         if (this.aClass191_7032!!.aBoolean2570) {
             val i_1_ = -2048 + Class239_Sub18.anIntArray6035!![i]

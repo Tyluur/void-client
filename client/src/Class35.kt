@@ -19,7 +19,7 @@ object Class35 {
         Class348_Sub40.aClass279_7042 = Class193.method1439(22050, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, 0, 7)
         Class348_Sub42_Sub18.method3273(true, i + -82, Class172.method1326(null, 9))
         Class194.aClass279_2596 = Class193.method1439(2048, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, i, 7)
-        Class194.aClass279_2596.method2088(false, Class348_Sub43.aClass348_Sub16_Sub4_7065)
+        Class194.aClass279_2596!!.method2088(false, Class348_Sub43.aClass348_Sub16_Sub4_7065)
     }
 
     @JvmStatic

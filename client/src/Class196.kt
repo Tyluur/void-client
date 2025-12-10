@@ -1,24 +1,21 @@
 /* Class196 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class196 {
-    static int anInt2599;
-    static int anInt2600;
-    static int anInt2601 = -50;
-
-    final boolean method1450(int i) {
-        anInt2600++;
-        if (i >= -1) return true;
-        return this == Class180.aClass196_2372 | Class46.aClass196_838 == this;
+* Visit http://jode.sourceforge.net/
+*/
+class Class196 {
+    fun method1450(i: Int): Boolean {
+        anInt2600++
+        if (i >= -1) return true
+        return (this == Class180.aClass196_2372) or (Class46.aClass196_838 == this)
     }
 
-    public final String toString() {
-        anInt2599++;
-        throw new IllegalStateException();
+    override fun toString(): String {
+        anInt2599++
+        throw IllegalStateException()
     }
 
-    public Class196() {
-        /* empty */
+    companion object {
+        var anInt2599: Int = 0
+        var anInt2600: Int = 0
+        var anInt2601: Int = -50
     }
 }

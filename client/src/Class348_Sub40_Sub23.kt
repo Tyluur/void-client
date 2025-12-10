@@ -77,7 +77,7 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
         if (i >= 108) anInt9316++
     }
 
-    private fun method3112(i: Int, i_2_: Int, `is`: Array<IntArray>?, random: Random, i_3_: Int, i_4_: Int, i_5_: Int) {
+    private fun method3112(i: Int, i_2_: Int, `is`: Array<IntArray?>?, random: Random, i_3_: Int, i_4_: Int, i_5_: Int) {
         var i_3_ = i_3_
         try {
             anInt9309++
@@ -109,7 +109,7 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
                 val i_18_ = i_3_ - -i_16_
                 val i_19_ = i_5_ - i_16_ * 2
                 for (i_20_ in 0..<i_2_) {
-                    val is_21_ = `is`!![i_20_ - -i_4_]
+                    val is_21_ = `is`!![i_20_ - -i_4_]!!
                     if (i_20_ < i_17_) {
                         val i_22_ = i_6_ * i_20_ / i_17_
                         if (anInt9312 == 0) {
@@ -185,7 +185,7 @@ class Class348_Sub40_Sub23 : Class348_Sub40(0, true) {
         if (i_41_ != 255) anInt9312 = 113
         val `is` = this.aClass191_7032!!.method1433(0, i)
         if (this.aClass191_7032!!.aBoolean2570) {
-            val is_42_ = this.aClass191_7032!!.method1427(16.toByte())
+            val is_42_ = this.aClass191_7032!!.method1427(16.toByte())!!
             var i_43_ = 0
             var i_44_ = 0
             var i_45_ = 0

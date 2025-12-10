@@ -5,7 +5,7 @@ import Class348_Sub23_Sub1.Companion.method2970
 */
 class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
     private var aClass50Array9481: Array<Class50?>? = null
-    private fun method3151(`is`: Array<IntArray>, i: Byte) {
+    private fun method3151(`is`: Array<IntArray?>?, i: Byte) {
         anInt9487++
         if (i.toInt() != -27) method3152(86)
         val i_0_: Int = Class348_Sub40_Sub6.Companion.anInt9139
@@ -81,7 +81,7 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
             val i_12_ = Class286_Sub2.anInt6212
             val is_13_: Array<IntArray> = Array<IntArray>(i_12_) { IntArray(i_11_) }
             val is_14_ = this.aClass322_7033!!.method2553(0)
-            method3151(is_13_, (-27).toByte())
+            method3151(is_13_ as Array<IntArray?>?, (-27).toByte())
             var i_15_ = 0
             while (Class286_Sub2.anInt6212 > i_15_) {
                 val is_16_ = is_13_[i_15_]

@@ -71,7 +71,7 @@ class Class161 {
                 i = 0
             }
             anInt2140++
-            if (Class239_Sub14.aClass190_5990 == null || !Class239_Sub14.aClass190_5990!!.method1424(class190, 84.toByte())) {
+            if (Class239_Sub14.aClass190_5990 == null || !Class239_Sub14.aClass190_5990!!.method1424(class190!!, 84.toByte())) {
                 Class239_Sub14.aClass190_5990 = class190
                 Class348_Sub33.aLong6963 = method599(-78)
                 Class286_Sub5.anInt6248 = i

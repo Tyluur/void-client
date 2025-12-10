@@ -843,7 +843,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
         anInt5421++
         if (aClass192_5485!!.aBoolean2577) return true
         if (aClass192_5485!!.anInterface5_Impl2_2576 == null) aClass192_5485!!.anInterface5_Impl2_2576 = aHa_Sub3_5419!!.method3840(-28633, aBoolean5462)
-        val interface5_impl2 = aClass192_5485!!.anInterface5_Impl2_2576
+        val interface5_impl2 = aClass192_5485!!.anInterface5_Impl2_2576!!
         interface5_impl2.method23(15959, 6 * anInt5516)
         val buffer = interface5_impl2.method24(true, false)
         val i_146_ = 84 / ((-70 - i) / 49)

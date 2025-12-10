@@ -330,7 +330,7 @@ class Class17 {
         @JvmField
         var anInterface4_252: Interface4? = null
         @JvmField
-        var anIntArrayArray255: Array<IntArray>? = null
+        var anIntArrayArray255: Array<IntArray?>? = null
         @JvmField
         var anIntArray256: IntArray? = null
         @JvmField

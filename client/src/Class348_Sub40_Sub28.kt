@@ -51,7 +51,7 @@ class Class348_Sub40_Sub28 : Class348_Sub40(0, true) {
         val `is` = this.aClass191_7032!!.method1433(0, i)
         if (this.aClass191_7032!!.aBoolean2570) {
             val i_3_ = anInt9364 shr 1
-            val is_4_ = this.aClass191_7032!!.method1427(16.toByte())
+            val is_4_ = this.aClass191_7032!!.method1427(16.toByte())!!
             val random = Random(anInt9367.toLong())
             var i_5_ = 0
             while (anInt9362 > i_5_) {

@@ -1,21 +1,16 @@
 /* Class198 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class198 {
-    short[] aShortArray2613;
-    short[] aShortArray2614;
-    int[] anIntArray2615;
-    short[] aShortArray2616;
-    byte[] aByteArray2617;
-    short[] aShortArray2618;
-    short aShort2619;
-    short aShort2620;
-    short[] aShortArray2621;
-    short[] aShortArray2622;
-    int[] anIntArray2623;
-
-    public Class198() {
-        /* empty */
-    }
+* Visit http://jode.sourceforge.net/
+*/
+class Class198 {
+    var aShortArray2613: ShortArray? = null
+    var aShortArray2614: ShortArray? = null
+    var anIntArray2615: IntArray? = null
+    var aShortArray2616: ShortArray? = null
+    var aByteArray2617: ByteArray? = null
+    var aShortArray2618: ShortArray? = null
+    var aShort2619: Short = 0
+    var aShort2620: Short = 0
+    var aShortArray2621: ShortArray? = null
+    var aShortArray2622: ShortArray? = null
+    var anIntArray2623: IntArray? = null
 }

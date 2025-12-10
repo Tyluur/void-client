@@ -47,7 +47,7 @@ class za_Sub2(i: Int) : za() {
                 }
                 glBindProgramARB(i, 0)
                 if (i_0_ != 4) return null
-                return Class193(class377, i, i_1_)
+                return Class193(class377!!, i, i_1_)
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("cu.A(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + (if (class377 != null) "{...}" else "null") + ',' + i_0_ + ')'))
             }

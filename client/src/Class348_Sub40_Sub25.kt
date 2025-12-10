@@ -34,7 +34,7 @@ class Class348_Sub40_Sub25 : Class348_Sub40(0, true) {
 
     override fun method3042(i: Int, i_2_: Int): IntArray? {
         anInt9336++
-        val `is` = this.aClass191_7032!!.method1433(0, i)
+        val `is` = this.aClass191_7032!!.method1433(0, i)!!
         if (i_2_ != 255) return null
         if (this.aClass191_7032!!.aBoolean2570) {
             for (i_3_ in 0..<Class348_Sub40_Sub6.Companion.anInt9139) {

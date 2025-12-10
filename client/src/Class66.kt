@@ -545,7 +545,7 @@ object Class66 {
             if (i == 5072) {
                 if (Class192.aShortArray2579 == null || Class148.anInt2037 >= Class76.anInt1285) anIntArray1149!![anInt1173++] = -1
                 else {
-                    anIntArray1149!![anInt1173++] = (Class192.aShortArray2579[Class148.anInt2037++].toInt() and 0xffff)
+                    anIntArray1149!![anInt1173++] = (Class192.aShortArray2579!![Class148.anInt2037++].toInt() and 0xffff)
                     return
                 }
                 return
@@ -4908,7 +4908,7 @@ object Class66 {
                 if (i == 4211) {
                     if (Class192.aShortArray2579 == null || Class148.anInt2037 >= Class76.anInt1285) anIntArray1149!![anInt1173++] = -1
                     else {
-                        anIntArray1149!![anInt1173++] = (Class192.aShortArray2579[Class148.anInt2037++].toInt() and 0xffff)
+                        anIntArray1149!![anInt1173++] = (Class192.aShortArray2579!![Class148.anInt2037++].toInt() and 0xffff)
                         return
                     }
                     return

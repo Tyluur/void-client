@@ -169,7 +169,7 @@ class Class170 : Interface17 {
                 val i_22_ = Class348_Sub1.anIntArray6547!![i_21_]
                 val class143 = Class239_Sub10.method1766((-86).toByte(), i_22_, s.aClass45_4585!!)
                 val class324 = var_ha.method3686(class143, Class207.method1523(Class39.aClass45_518, i_22_), true)
-                Class199.aClass352Array2636[i_21_] = Class352(class324, class143)
+                Class199.aClass352Array2636!![i_21_] = Class352(class324, class143)
                 i_21_++
             }
         }
