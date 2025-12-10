@@ -131,9 +131,9 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 if (bool_3_) {
                     var i_7_ = 0
                     while ((i_7_ < Class348_Sub42_Sub12.anInt9604)) {
-                        if (Class122.aStringArray1808[i_7_] == string_6_) {
+                        if (Class122.aStringArray1808!![i_7_] == string_6_) {
                             Class51.aStringArray932!![i_7_] = string
-                            Class122.aStringArray1808[i_7_] = string_4_
+                            Class122.aStringArray1808!![i_7_] = string_4_
                             Class348_Sub40_Sub21.aStringArray9275!![i_7_] = string_5_
                             aa_Sub2.aStringArray5197!![i_7_] = string_6_
                             break
@@ -142,7 +142,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     }
                 } else {
                     Class51.aStringArray932!![Class348_Sub42_Sub12.anInt9604] = string
-                    Class122.aStringArray1808[Class348_Sub42_Sub12.anInt9604] = string_4_
+                    Class122.aStringArray1808!![Class348_Sub42_Sub12.anInt9604] = string_4_
                     Class348_Sub40_Sub21.aStringArray9275!![(Class348_Sub42_Sub12.anInt9604)] = string_5_
                     aa_Sub2.aStringArray5197!![Class348_Sub42_Sub12.anInt9604] = string_6_
                     Class367_Sub3.aBooleanArray7304!![Class348_Sub42_Sub12.anInt9604] = Class139.method1166(i, 2) == 2
@@ -1108,8 +1108,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 var i = 0
                 while (Class348_Sub42_Sub12.anInt9604 > i) {
                     Class51.aStringArray932!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-36).toByte())
-                    Class122.aStringArray1808[i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(112.toByte())
-                    if (Class122.aStringArray1808[i] == "") Class122.aStringArray1808[i] = Class51.aStringArray932!![i]
+                    Class122.aStringArray1808!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(112.toByte())
+                    if (Class122.aStringArray1808!![i] == "") Class122.aStringArray1808!![i] = Class51.aStringArray932!![i]
                     Class348_Sub40_Sub21.aStringArray9275!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString(84.toByte())
                     aa_Sub2.aStringArray5197!![i] = Class299.aClass348_Sub49_Sub2_3813!!.readString((-111).toByte())
                     if (aa_Sub2.aStringArray5197!![i] == "") aa_Sub2.aStringArray5197!![i] = Class348_Sub40_Sub21.aStringArray9275!![i]
@@ -1245,7 +1245,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                                 Class285.aStringArray4744!![i_154_] = string_152_
                                 Class172.anIntArray2280[i_154_] = i_151_
                                 string = null
-                                Class122.aBooleanArray1806[i_154_] = bool_153_
+                                Class122.aBooleanArray1806!![i_154_] = bool_153_
                                 break
                             }
                         } else if (string_150_ == Class83.aStringArray1441!![i_154_]) {
@@ -1262,7 +1262,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         ha.anIntArray4578!![Class348_Sub40_Sub30.anInt9383] = i
                         Class285.aStringArray4744!![Class348_Sub40_Sub30.anInt9383] = string_152_
                         Class172.anIntArray2280[Class348_Sub40_Sub30.anInt9383] = i_151_
-                        Class122.aBooleanArray1806[Class348_Sub40_Sub30.anInt9383] = bool_153_
+                        Class122.aBooleanArray1806!![Class348_Sub40_Sub30.anInt9383] = bool_153_
                         Class348_Sub40_Sub30.anInt9383++
                     }
                 }
@@ -1291,10 +1291,10 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                             val i_161_ = Class172.anIntArray2280[i_157_]
                             Class172.anIntArray2280[i_157_] = Class172.anIntArray2280[1 + i_157_]
                             Class172.anIntArray2280[i_157_ + 1] = i_161_
-                            val bool_162_ = Class122.aBooleanArray1806[i_157_]
-                            Class122.aBooleanArray1806[i_157_] = Class122.aBooleanArray1806[1 + i_157_]
+                            val bool_162_ = Class122.aBooleanArray1806!![i_157_]
+                            Class122.aBooleanArray1806!![i_157_] = Class122.aBooleanArray1806!![1 + i_157_]
                             bool_156_ = false
-                            Class122.aBooleanArray1806[i_157_ + 1] = bool_162_
+                            Class122.aBooleanArray1806!![i_157_ + 1] = bool_162_
                         }
                         i_157_++
                     }

@@ -55,9 +55,9 @@ class Class299_Sub2_Sub1 internal constructor(private val aHa_Sub3_8718: ha_Sub3
                 }
                 anInt8709++
                 if (OutputStream_Sub2.aClass105_106 != null && Class121.aClass105_1800 != null) {
-                    val i_8_ = ((i - 2 * Class121.aClass105_1800.method971()) / OutputStream_Sub2.aClass105_106!!.method971())
-                    for (i_9_ in 0..<i_8_) OutputStream_Sub2.aClass105_106!!.method974((Class121.aClass105_1800.method971() + i_4_ + (OutputStream_Sub2.aClass105_106!!.method971() * i_9_)), i_5_)
-                    Class121.aClass105_1800.method974(i_4_, i_5_)
+                    val i_8_ = ((i - 2 * Class121.aClass105_1800!!.method971()) / OutputStream_Sub2.aClass105_106!!.method971())
+                    for (i_9_ in 0..<i_8_) OutputStream_Sub2.aClass105_106!!.method974((Class121.aClass105_1800!!.method971() + i_4_ + (OutputStream_Sub2.aClass105_106!!.method971() * i_9_)), i_5_)
+                    Class121.aClass105_1800!!.method974(i_4_, i_5_)
                     Class348_Sub5.aClass105_6627!!.method974((-Class348_Sub5.aClass105_6627!!.method971() + i_4_ - -i), i_5_)
                 }
                 if (bool == false) {
