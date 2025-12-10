@@ -280,25 +280,25 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     val i_48_ = i_46_ * 100 / i_44_
                                                     val i_49_ = 10000 * i_45_ / i_44_
                                                     val string = ("Cache:" + (Class357.method3486(2, true, 0, i_49_.toLong(), 16980)) + "% (" + i_48_ + "%)")
-                                                    Class240.aClass324_4684.method2569(string, i_38_, -256, i_37_, -127, -1)
+                                                    Class240.aClass324_4684!!.method2569(string, i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
                                                     if (Loader.showCoordinates) {
                                                         val playerX = (Class132.aPlayer_1907!!.x shr 9) + za_Sub2.regionTileX
                                                         val playerY = (Class132.aPlayer_1907!!.y shr 9) + Class90.regionTileY
-                                                        Class240.aClass324_4684.method2569("Coordinates: " + playerX + ", " + playerY + ", " + Class132.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
+                                                        Class240.aClass324_4684!!.method2569("Coordinates: " + playerX + ", " + playerY + ", " + Class132.aPlayer_1907!!.plane, i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
-                                                        Class240.aClass324_4684.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)
+                                                        Class240.aClass324_4684!!.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
-                                                        Class240.aClass324_4684.method2569("Chunk: " + (playerX shr 3) + ", " + (playerY shr 3), i_38_, -256, i_37_, -127, -1)
+                                                        Class240.aClass324_4684!!.method2569("Chunk: " + (playerX shr 3) + ", " + (playerY shr 3), i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
                                                     }
                                                 }
-                                                if (Class313.anInt3936 > 0) Class240.aClass324_4684.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + Class313.anInt3936), i_38_, -256, i_37_, -121, -1)
+                                                if (Class313.anInt3936 > 0) Class240.aClass324_4684!!.method2569(("Particles: " + (Class318_Sub1_Sub5.anInt8780) + " / " + Class313.anInt3936), i_38_, -256, i_37_, -121, -1)
                                                 i_38_ += 12
                                                 if (Class188.aBoolean2514) {
-                                                    Class240.aClass324_4684.method2569(("Polys: " + Class348_Sub8.aHa6654!!.I() + " Models: " + Class348_Sub8.aHa6654!!.M()), i_38_, -256, i_37_, -127, -1)
+                                                    Class240.aClass324_4684!!.method2569(("Polys: " + Class348_Sub8.aHa6654!!.I() + " Models: " + Class348_Sub8.aHa6654!!.M()), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 12
-                                                    Class240.aClass324_4684.method2569(("Ls: " + Class177.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + Class227.anInt2968 + " Pl: " + za_Sub1.anInt9776), i_38_, -256, i_37_, -122, -1)
+                                                    Class240.aClass324_4684!!.method2569(("Ls: " + Class177.anInt4666 + " La: " + Class86.anInt1482 + " NPC: " + Class227.anInt2968 + " Pl: " + za_Sub1.anInt9776), i_38_, -256, i_37_, -122, -1)
                                                     Class110_Sub1.method1042((-123).toByte())
                                                     i_38_ += 12
                                                 }

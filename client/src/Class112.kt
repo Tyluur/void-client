@@ -172,16 +172,16 @@ class Class112 internal constructor(class297: Class297) : Runnable {
                         if (i_9_ != -1) {
                             var i_13_ = 0
                             val class156 = Class156(Class233.aClass107_3022!!)
-                            var class348_sub42_sub13 = (class156.method1240(110) as Class348_Sub42_Sub13)
+                            var class348_sub42_sub13 = (class156.method1240(110) as? Class348_Sub42_Sub13)
                             while (class348_sub42_sub13 != null) {
                                 if (i_9_ == i_13_++) return (class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as Class348_Sub42_Sub12).anInt9609
-                                class348_sub42_sub13 = (class156.method1243(77.toByte()) as Class348_Sub42_Sub13)
+                                class348_sub42_sub13 = (class156.method1243(77.toByte()) as? Class348_Sub42_Sub13)
                             }
                         }
                     } else if (Class242.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 < i_2_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252) > i_2_) {
                         var i_4_ = -1
                         var i_5_ = 0
-                        while (((Class242.aClass348_Sub42_Sub13_3152.anInt9615) > i_5_)) {
+                        while (((Class242.aClass348_Sub42_Sub13_3152!!.anInt9615) > i_5_)) {
                             if (Class71.aBoolean1211) {
                                 val i_7_ = Class373.anInt4534 + (33 + 16 * i_5_)
                                 if (-13 + i_7_ < i_3_ && 3 + i_7_ >= i_3_) i_4_ = i_5_
@@ -193,11 +193,11 @@ class Class112 internal constructor(class297: Class297) : Runnable {
                         }
                         if (i_4_ != -1) {
                             var i_8_ = 0
-                            val class156 = Class156(Class242.aClass348_Sub42_Sub13_3152.aClass107_9621)
-                            var class348_sub42_sub12 = (class156.method1240(9) as Class348_Sub42_Sub12)
+                            val class156 = Class156(Class242.aClass348_Sub42_Sub13_3152!!.aClass107_9621)
+                            var class348_sub42_sub12 = (class156.method1240(9) as? Class348_Sub42_Sub12)
                             while (class348_sub42_sub12 != null) {
                                 if (i_8_++ == i_4_) return (class348_sub42_sub12.anInt9609)
-                                class348_sub42_sub12 = (class156.method1243(90.toByte()) as Class348_Sub42_Sub12)
+                                class348_sub42_sub12 = (class156.method1243(90.toByte()) as? Class348_Sub42_Sub12)
                             }
                         }
                     }
@@ -217,10 +217,10 @@ class Class112 internal constructor(class297: Class297) : Runnable {
                     if (i_14_ != -1) {
                         var i_18_ = 0
                         val class312 = Class312(Class348_Sub40_Sub4.aClass262_9111)
-                        var class348_sub42_sub12 = (class312.method2327(((-53).toByte()).toByte()) as Class348_Sub42_Sub12)
+                        var class348_sub42_sub12 = (class312.method2327(((-53).toByte()).toByte()) as? Class348_Sub42_Sub12)
                         while (class348_sub42_sub12 != null) {
                             if (i_14_ == i_18_++) return (class348_sub42_sub12.anInt9609)
-                            class348_sub42_sub12 = (class312.method2329(i + -3102) as Class348_Sub42_Sub12)
+                            class348_sub42_sub12 = (class312.method2329(i + -3102) as? Class348_Sub42_Sub12)
                         }
                     }
                 }

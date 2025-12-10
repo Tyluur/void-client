@@ -1,374 +1,396 @@
-/* Class248 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import Class62.method599
+import java.io.IOException
+import kotlin.concurrent.Volatile
 
-import java.io.IOException;
+class Class248 {
+    private val aClass107_3197 = Class107()
+    private val aClass107_3204 = Class107()
+    private val aClass107_3205 = Class107()
+    private val aClass107_3206 = Class107()
+    private var aLong3207: Long = 0
+    private val aClass348_Sub49_3208 = Class348_Sub49(4)
+    private var aClass202_3209: Class202? = null
+    private var anInt3210 = 0
+    private val aClass348_Sub49_3211: Class348_Sub49
+    private var aByte3212: Byte = 0
 
-public final class Class248 {
-    static int anInt3185;
-    static int anInt3186;
-    static int anInt3187;
-    static int anInt3188;
-    static int anInt3189;
-    static int anInt3190;
-    static int anInt3191;
-    static int anInt3192;
-    static int anInt3193;
-    static int anInt3194;
-    static int anInt3195;
-    static Class229 aClass229_3196 = Class229.INSTANCE;
-    private final Class107 aClass107_3197 = new Class107();
-    static int anInt3198;
-    static int anInt3199;
-    static int anInt3200;
-    static int anInt3201;
-    static int anInt3202;
-    static int anInt3203 = -1;
-    private final Class107 aClass107_3204 = new Class107();
-    private final Class107 aClass107_3205 = new Class107();
-    private final Class107 aClass107_3206 = new Class107();
-    private long aLong3207;
-    private final Class348_Sub49 aClass348_Sub49_3208 = new Class348_Sub49(4);
-    private Class202 aClass202_3209;
-    private int anInt3210;
-    private final Class348_Sub49 aClass348_Sub49_3211;
-    private byte aByte3212 = 0;
-    volatile int anInt3213 = 0;
-    volatile int anInt3214 = 0;
-    private Class348_Sub42_Sub16_Sub1 aClass348_Sub42_Sub16_Sub1_3215;
+    @JvmField
+    @Volatile
+    var anInt3213: Int = 0
 
-    final void method1892(int i, boolean bool) {
-        anInt3194++;
+    @JvmField
+    @Volatile
+    var anInt3214: Int = 0
+    private var aClass348_Sub42_Sub16_Sub1_3215: Class348_Sub42_Sub16_Sub1? = null
+
+    fun method1892(i: Int, bool: Boolean) {
+        anInt3194++
         if (aClass202_3209 != null) {
             try {
-                aClass348_Sub49_3208.anInt7197 = 0;
-                aClass348_Sub49_3208.writeByte(false, bool ? 2 : 3);
-                aClass348_Sub49_3208.method3340(-9912, 0);
-                if (i < -66) aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1);
-            } catch (IOException ioexception) {
+                aClass348_Sub49_3208.anInt7197 = 0
+                aClass348_Sub49_3208.writeByte(false, if (bool) 2 else 3)
+                aClass348_Sub49_3208.method3340(-9912, 0)
+                if (i < -66) aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1)
+            } catch (ioexception: IOException) {
                 try {
-                    aClass202_3209.method1476((byte) -121);
-                } catch (Exception exception) {
+                    aClass202_3209!!.method1476((-121).toByte())
+                } catch (exception: Exception) {
                     /* empty */
                 }
-                this.anInt3213++;
-                aClass202_3209 = null;
-                this.anInt3214 = -2;
+                this.anInt3213++
+                aClass202_3209 = null
+                this.anInt3214 = -2
             }
         }
     }
 
-    final boolean method1893(byte i) {
+    fun method1893(i: Byte): Boolean {
         if (aClass202_3209 != null) {
-            long l = Class62.method599(-106);
-            int i_0_ = (int) (-aLong3207 + l);
-            if (i_0_ > 200) i_0_ = 200;
-            aLong3207 = l;
-            anInt3210 += i_0_;
+            val l = method599(-106)
+            var i_0_ = (-aLong3207 + l).toInt()
+            if (i_0_ > 200) i_0_ = 200
+            aLong3207 = l
+            anInt3210 += i_0_
             if (anInt3210 > 30000) {
                 try {
-                    aClass202_3209.method1476((byte) -121);
-                } catch (Exception exception) {
+                    aClass202_3209!!.method1476((-121).toByte())
+                } catch (exception: Exception) {
                     /* empty */
                 }
-                aClass202_3209 = null;
+                aClass202_3209 = null
             }
         }
-        anInt3190++;
+        anInt3190++
         if (aClass202_3209 == null) {
-            return method1902(4) == 0 && method1894(4350) == 0;
+            return method1902(4) == 0 && method1894(4350) == 0
         }
         try {
-            aClass202_3209.method1472(true);
-            for (Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aClass107_3197.method1011(-30)); class348_sub42_sub16_sub1 != null; class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aClass107_3197.method1003((byte) 65))) {
-                aClass348_Sub49_3208.anInt7197 = 0;
-                aClass348_Sub49_3208.writeByte(false, 1);
-                aClass348_Sub49_3208.method3340(-9912, (int) (class348_sub42_sub16_sub1.aLong7057));
-                aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1);
-                aClass107_3204.method1005(true, class348_sub42_sub16_sub1);
+            aClass202_3209!!.method1472(true)
+            run {
+                var class348_sub42_sub16_sub1 = (aClass107_3197.method1011(-30) as Class348_Sub42_Sub16_Sub1?)
+                while (class348_sub42_sub16_sub1 != null) {
+                    aClass348_Sub49_3208.anInt7197 = 0
+                    aClass348_Sub49_3208.writeByte(false, 1)
+                    aClass348_Sub49_3208.method3340(-9912, (class348_sub42_sub16_sub1.aLong7057).toInt())
+                    aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1)
+                    aClass107_3204.method1005(true, class348_sub42_sub16_sub1)
+                    class348_sub42_sub16_sub1 = (aClass107_3197.method1003(65.toByte()) as Class348_Sub42_Sub16_Sub1?)
+                }
             }
-            Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = (Class348_Sub42_Sub16_Sub1) aClass107_3205.method1011(-75);
-            if (i <= 72) return false;
-            for (/**/; class348_sub42_sub16_sub1 != null; class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aClass107_3205.method1003((byte) 102))) {
-                aClass348_Sub49_3208.anInt7197 = 0;
-                aClass348_Sub49_3208.writeByte(false, 0);
-                aClass348_Sub49_3208.method3340(-9912, (int) (class348_sub42_sub16_sub1.aLong7057));
-                aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1);
-                aClass107_3206.method1005(true, class348_sub42_sub16_sub1);
+            var class348_sub42_sub16_sub1 = aClass107_3205.method1011(-75) as Class348_Sub42_Sub16_Sub1?
+            if (i <= 72) return false
+            while ( /**/class348_sub42_sub16_sub1 != null) {
+                aClass348_Sub49_3208.anInt7197 = 0
+                aClass348_Sub49_3208.writeByte(false, 0)
+                aClass348_Sub49_3208.method3340(-9912, (class348_sub42_sub16_sub1.aLong7057).toInt())
+                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1)
+                aClass107_3206.method1005(true, class348_sub42_sub16_sub1)
+                class348_sub42_sub16_sub1 = (aClass107_3205.method1003(102.toByte()) as Class348_Sub42_Sub16_Sub1?)
             }
-            for (int i_1_ = 0; i_1_ < 100; i_1_++) {
-                int i_2_ = aClass202_3209.method1467((byte) 83);
-                if (i_2_ < 0) throw new IOException();
-                if (i_2_ == 0) break;
-                anInt3210 = 0;
-                int i_3_ = 0;
-                if (aClass348_Sub42_Sub16_Sub1_3215 == null) i_3_ = 8;
-                else if (aClass348_Sub42_Sub16_Sub1_3215.anInt10456 == 0) i_3_ = 1;
+            for (i_1_ in 0..99) {
+                val i_2_ = aClass202_3209!!.method1467(83.toByte())
+                if (i_2_ < 0) throw IOException()
+                if (i_2_ == 0) break
+                anInt3210 = 0
+                var i_3_ = 0
+                if (aClass348_Sub42_Sub16_Sub1_3215 == null) i_3_ = 8
+                else if (aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 == 0) i_3_ = 1
                 if (i_3_ <= 0) {
-                    int i_4_ = (aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.aByteArray7154.length + -aClass348_Sub42_Sub16_Sub1_3215.aByte10449);
-                    int i_5_ = (-aClass348_Sub42_Sub16_Sub1_3215.anInt10456 + 512);
-                    if (i_5_ > -(aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.anInt7197) + i_4_) i_5_ = i_4_ - aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.anInt7197;
-                    if (i_2_ < i_5_) i_5_ = i_2_;
-                    aClass202_3209.method1474((aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.aByteArray7154), aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.anInt7197, (byte) -72, i_5_);
-                    if (aByte3212 != 0) {
-                        for (int i_6_ = 0; i_5_ > i_6_; i_6_++)
-                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.aByteArray7154[i_6_ + aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.anInt7197] = (byte) (Class348_Sub21.method2955((aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.aByteArray7154[(i_6_ + (aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.anInt7197))]), aByte3212));
+                    val i_4_ = (aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154.size + -aClass348_Sub42_Sub16_Sub1_3215!!.aByte10449)
+                    var i_5_ = (-aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 + 512)
+                    if (i_5_ > -(aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197) + i_4_) i_5_ = i_4_ - aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197
+                    if (i_2_ < i_5_) i_5_ = i_2_
+                    aClass202_3209!!.method1474((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154), aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197, (-72).toByte(), i_5_)
+                    if (aByte3212.toInt() != 0) {
+                        var i_6_ = 0
+                        while (i_5_ > i_6_) {
+                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154[i_6_ + aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197] = (Class348_Sub21.method2955((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154[(i_6_ + (aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197))]).toInt(), aByte3212.toInt())).toByte()
+                            i_6_++
+                        }
                     }
-                    aClass348_Sub42_Sub16_Sub1_3215.anInt10456 += i_5_;
-                    aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.anInt7197 += i_5_;
-                    if (i_4_ == aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.anInt7197) {
-                        aClass348_Sub42_Sub16_Sub1_3215.method3162(true);
-                        aClass348_Sub42_Sub16_Sub1_3215.aBoolean9664 = false;
-                        aClass348_Sub42_Sub16_Sub1_3215 = null;
-                    } else if (aClass348_Sub42_Sub16_Sub1_3215.anInt10456 == 512) aClass348_Sub42_Sub16_Sub1_3215.anInt10456 = 0;
+                    aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 += i_5_
+                    aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197 += i_5_
+                    if (i_4_ == aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197) {
+                        aClass348_Sub42_Sub16_Sub1_3215!!.method3162(true)
+                        aClass348_Sub42_Sub16_Sub1_3215!!.aBoolean9664 = false
+                        aClass348_Sub42_Sub16_Sub1_3215 = null
+                    } else if (aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 == 512) aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 = 0
                 } else {
-                    int i_7_ = i_3_ + -(aClass348_Sub49_3211.anInt7197);
-                    if (i_2_ < i_7_) i_7_ = i_2_;
-                    aClass202_3209.method1474((aClass348_Sub49_3211.aByteArray7154), aClass348_Sub49_3211.anInt7197, (byte) -72, i_7_);
-                    if (aByte3212 != 0) {
-                        for (int i_8_ = 0; i_8_ < i_7_; i_8_++)
-                            aClass348_Sub49_3211.aByteArray7154[i_8_ + aClass348_Sub49_3211.anInt7197] = (byte) (Class348_Sub21.method2955((aClass348_Sub49_3211.aByteArray7154[i_8_ + (aClass348_Sub49_3211.anInt7197)]), aByte3212));
+                    var i_7_ = i_3_ + -(aClass348_Sub49_3211.anInt7197)
+                    if (i_2_ < i_7_) i_7_ = i_2_
+                    aClass202_3209!!.method1474((aClass348_Sub49_3211.aByteArray7154), aClass348_Sub49_3211.anInt7197, (-72).toByte(), i_7_)
+                    if (aByte3212.toInt() != 0) {
+                        for (i_8_ in 0..<i_7_) aClass348_Sub49_3211.aByteArray7154[i_8_ + aClass348_Sub49_3211.anInt7197] = (Class348_Sub21.method2955((aClass348_Sub49_3211.aByteArray7154[i_8_ + (aClass348_Sub49_3211.anInt7197)]).toInt(), aByte3212.toInt())).toByte()
                     }
-                    aClass348_Sub49_3211.anInt7197 += i_7_;
+                    aClass348_Sub49_3211.anInt7197 += i_7_
                     if (aClass348_Sub49_3211.anInt7197 >= i_3_) {
                         if (aClass348_Sub42_Sub16_Sub1_3215 == null) {
-                            aClass348_Sub49_3211.anInt7197 = 0;
-                            int i_9_ = aClass348_Sub49_3211.readUnsignedByte(255);
-                            int i_10_ = aClass348_Sub49_3211.readUnsignedShort(842397944);
-                            int i_11_ = aClass348_Sub49_3211.readUnsignedByte(255);
-                            int i_12_ = aClass348_Sub49_3211.readInt((byte) -126);
-                            int i_13_ = 0x7f & i_11_;
-                            boolean bool = (0x80 & i_11_) != 0;
-                            long l = (i_9_ << 16) + i_10_;
-                            Object object = null;
-                            Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1_14_;
+                            aClass348_Sub49_3211.anInt7197 = 0
+                            val i_9_ = aClass348_Sub49_3211.readUnsignedByte(255)
+                            val i_10_ = aClass348_Sub49_3211.readUnsignedShort(842397944)
+                            val i_11_ = aClass348_Sub49_3211.readUnsignedByte(255)
+                            val i_12_ = aClass348_Sub49_3211.readInt((-126).toByte())
+                            val i_13_ = 0x7f and i_11_
+                            val bool = (0x80 and i_11_) != 0
+                            val l = ((i_9_ shl 16) + i_10_).toLong()
+                            val `object`: Any? = null
+                            var class348_sub42_sub16_sub1_14_: Class348_Sub42_Sub16_Sub1?
                             if (bool) {
-                                for (class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aClass107_3206.method1011(-89)); class348_sub42_sub16_sub1_14_ != null; class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aClass107_3206.method1003((byte) 98))) {
-                                    if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break;
+                                class348_sub42_sub16_sub1_14_ = (aClass107_3206.method1011(-89) as Class348_Sub42_Sub16_Sub1?)
+                                while (class348_sub42_sub16_sub1_14_ != null) {
+                                    if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break
+                                    class348_sub42_sub16_sub1_14_ = (aClass107_3206.method1003(98.toByte()) as Class348_Sub42_Sub16_Sub1?)
                                 }
                             } else {
-                                for (class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aClass107_3204.method1011(-108)); class348_sub42_sub16_sub1_14_ != null; class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aClass107_3204.method1003((byte) 90))) {
-                                    if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break;
+                                class348_sub42_sub16_sub1_14_ = (aClass107_3204.method1011(-108) as Class348_Sub42_Sub16_Sub1?)
+                                while (class348_sub42_sub16_sub1_14_ != null) {
+                                    if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break
+                                    class348_sub42_sub16_sub1_14_ = (aClass107_3204.method1003(90.toByte()) as Class348_Sub42_Sub16_Sub1?)
                                 }
                             }
-                            if (class348_sub42_sub16_sub1_14_ == null) throw new IOException();
-                            int i_15_ = i_13_ == 0 ? 5 : 9;
-                            aClass348_Sub42_Sub16_Sub1_3215 = class348_sub42_sub16_sub1_14_;
-                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453 = (new Class348_Sub49((aClass348_Sub42_Sub16_Sub1_3215.aByte10449) + i_15_ + i_12_));
-                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.writeByte(false, i_13_);
-                            aClass348_Sub42_Sub16_Sub1_3215.aClass348_Sub49_10453.writeInt((byte) 97, i_12_);
-                            aClass348_Sub49_3211.anInt7197 = 0;
-                            aClass348_Sub42_Sub16_Sub1_3215.anInt10456 = 8;
-                        } else if ((aClass348_Sub42_Sub16_Sub1_3215.anInt10456) == 0) {
-                            if ((aClass348_Sub49_3211.aByteArray7154[0]) == -1) {
-                                aClass348_Sub42_Sub16_Sub1_3215.anInt10456 = 1;
-                                aClass348_Sub49_3211.anInt7197 = 0;
-                            } else aClass348_Sub42_Sub16_Sub1_3215 = null;
-                        } else throw new IOException();
+                            if (class348_sub42_sub16_sub1_14_ == null) throw IOException()
+                            val i_15_ = if (i_13_ == 0) 5 else 9
+                            aClass348_Sub42_Sub16_Sub1_3215 = class348_sub42_sub16_sub1_14_
+                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453 = (Class348_Sub49((aClass348_Sub42_Sub16_Sub1_3215!!.aByte10449) + i_15_ + i_12_))
+                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.writeByte(false, i_13_)
+                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.writeInt(97.toByte(), i_12_)
+                            aClass348_Sub49_3211.anInt7197 = 0
+                            aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 = 8
+                        } else if ((aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456) == 0) {
+                            if ((aClass348_Sub49_3211.aByteArray7154[0]).toInt() == -1) {
+                                aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 = 1
+                                aClass348_Sub49_3211.anInt7197 = 0
+                            } else aClass348_Sub42_Sub16_Sub1_3215 = null
+                        } else throw IOException()
                     }
                 }
             }
-            return true;
-        } catch (IOException ioexception) {
+            return true
+        } catch (ioexception: IOException) {
             try {
-                aClass202_3209.method1476((byte) -122);
-            } catch (Exception exception) {
+                aClass202_3209!!.method1476((-122).toByte())
+            } catch (exception: Exception) {
                 /* empty */
             }
-            this.anInt3214 = -2;
-            this.anInt3213++;
-            aClass202_3209 = null;
-            return method1902(4) == 0 && method1894(4350) == 0;
+            this.anInt3214 = -2
+            this.anInt3213++
+            aClass202_3209 = null
+            return method1902(4) == 0 && method1894(4350) == 0
         }
     }
 
-    private final int method1894(int i) {
-        anInt3199++;
-        if (i != 4350) return 29;
-        return aClass107_3205.method1002(0) - -aClass107_3206.method1002(0);
+    private fun method1894(i: Int): Int {
+        anInt3199++
+        if (i != 4350) return 29
+        return aClass107_3205.method1002(0) - -aClass107_3206.method1002(0)
     }
 
-    static final void method1895(int i, byte[] is, int i_16_, int i_17_, int i_18_, int i_19_, byte[] is_20_, int i_21_, byte i_22_) {
-        try {
-            anInt3198++;
-            int i_23_ = -(i_21_ >> 2);
-            i_21_ = -(0x3 & i_21_);
-            if (i_22_ != 121) aClass229_3196 = null;
-            for (int i_24_ = -i_16_; i_24_ < 0; i_24_++) {
-                for (int i_25_ = i_23_; i_25_ < 0; i_25_++) {
-                    is[i_17_++] += -is_20_[i++];
-                    is[i_17_++] += -is_20_[i++];
-                    is[i_17_++] += -is_20_[i++];
-                    is[i_17_++] += -is_20_[i++];
-                }
-                for (int i_26_ = i_21_; i_26_ < 0; i_26_++)
-                    is[i_17_++] += -is_20_[i++];
-                i_17_ += i_18_;
-                i += i_19_;
-            }
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tha.M(" + i + ',' + (is != null ? "{...}" : "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (is_20_ != null ? "{...}" : "null") + ',' + i_21_ + ',' + i_22_ + ')'));
-        }
-    }
-
-    private final void method1896(int i) {
+    private fun method1896(i: Int) {
         if (i <= -58) {
-            anInt3191++;
+            anInt3191++
             if (aClass202_3209 != null) {
                 try {
-                    aClass348_Sub49_3208.anInt7197 = 0;
-                    aClass348_Sub49_3208.writeByte(false, 6);
-                    aClass348_Sub49_3208.method3340(-9912, 3);
-                    aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1);
-                } catch (IOException ioexception) {
+                    aClass348_Sub49_3208.anInt7197 = 0
+                    aClass348_Sub49_3208.writeByte(false, 6)
+                    aClass348_Sub49_3208.method3340(-9912, 3)
+                    aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1)
+                } catch (ioexception: IOException) {
                     try {
-                        aClass202_3209.method1476((byte) -123);
-                    } catch (Exception exception) {
+                        aClass202_3209!!.method1476((-123).toByte())
+                    } catch (exception: Exception) {
                         /* empty */
                     }
-                    this.anInt3214 = -2;
-                    aClass202_3209 = null;
-                    this.anInt3213++;
+                    this.anInt3214 = -2
+                    aClass202_3209 = null
+                    this.anInt3213++
                 }
             }
         }
     }
 
-    public static void method1897(byte i) {
-        if (i == 119) aClass229_3196 = null;
+    fun method1898(bool: Boolean) {
+        if (aClass202_3209 != null) aClass202_3209!!.method1468(72)
+        if (bool != true) method1904(99)
+        anInt3185++
     }
 
-    final void method1898(boolean bool) {
-        if (aClass202_3209 != null) aClass202_3209.method1468(72);
-        if (bool != true) method1904(99);
-        anInt3185++;
+    fun method1899(i: Int): Boolean {
+        if (i > -91) this.anInt3214 = -39
+        anInt3186++
+        return method1894(4350) >= 20
     }
 
-    final boolean method1899(int i) {
-        if (i > -91) this.anInt3214 = -39;
-        anInt3186++;
-        return method1894(4350) >= 20;
+    fun method1900(i: Int): Boolean {
+        val i_27_ = -51 % ((41 - i) / 47)
+        anInt3195++
+        return method1902(4) >= 20
     }
 
-    final boolean method1900(int i) {
-        int i_27_ = -51 % ((41 - i) / 47);
-        anInt3195++;
-        return method1902(4) >= 20;
+    fun method1901(i: Int) {
+        if (i > -27) method1901(21)
+        if (aClass202_3209 != null) aClass202_3209!!.method1476((-122).toByte())
+        anInt3200++
     }
 
-    final void method1901(int i) {
-        if (i > -27) method1901(21);
-        if (aClass202_3209 != null) aClass202_3209.method1476((byte) -122);
-        anInt3200++;
+    fun method1902(i: Int): Int {
+        anInt3192++
+        if (i != 4) this.anInt3213 = 18
+        return aClass107_3197.method1002(0) + aClass107_3204.method1002(0)
     }
 
-    final int method1902(int i) {
-        anInt3192++;
-        if (i != 4) this.anInt3213 = 18;
-        return aClass107_3197.method1002(0) + aClass107_3204.method1002(0);
-    }
-
-    final void method1903(boolean bool, boolean bool_28_, Class202 class202) {
+    fun method1903(bool: Boolean, bool_28_: Boolean, class202: Class202?) {
         if (aClass202_3209 != null) {
             try {
-                aClass202_3209.method1476((byte) -124);
-            } catch (Exception exception) {
+                aClass202_3209!!.method1476((-124).toByte())
+            } catch (exception: Exception) {
                 /* empty */
             }
-            aClass202_3209 = null;
+            aClass202_3209 = null
         }
-        anInt3193++;
-        aClass202_3209 = class202;
-        method1896(-92);
-        method1892(-92, bool_28_);
-        aClass348_Sub49_3211.anInt7197 = 0;
-        aClass348_Sub42_Sub16_Sub1_3215 = null;
-        if (bool != false) aLong3207 = -35L;
-        for (; ; ) {
-            Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = (Class348_Sub42_Sub16_Sub1) aClass107_3204.method1008(20);
-            if (class348_sub42_sub16_sub1 == null) break;
-            aClass107_3197.method1005(true, class348_sub42_sub16_sub1);
+        anInt3193++
+        aClass202_3209 = class202
+        method1896(-92)
+        method1892(-92, bool_28_)
+        aClass348_Sub49_3211.anInt7197 = 0
+        aClass348_Sub42_Sub16_Sub1_3215 = null
+        if (bool != false) aLong3207 = -35L
+        while (true) {
+            val class348_sub42_sub16_sub1 = aClass107_3204.method1008(20) as Class348_Sub42_Sub16_Sub1?
+            if (class348_sub42_sub16_sub1 == null) break
+            aClass107_3197.method1005(true, class348_sub42_sub16_sub1)
         }
-        for (; ; ) {
-            Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = (Class348_Sub42_Sub16_Sub1) aClass107_3206.method1008(20);
-            if (class348_sub42_sub16_sub1 == null) break;
-            aClass107_3205.method1005(!bool, class348_sub42_sub16_sub1);
+        while (true) {
+            val class348_sub42_sub16_sub1 = aClass107_3206.method1008(20) as Class348_Sub42_Sub16_Sub1?
+            if (class348_sub42_sub16_sub1 == null) break
+            aClass107_3205.method1005(!bool, class348_sub42_sub16_sub1)
         }
-        if (aByte3212 != 0) {
+        if (aByte3212.toInt() != 0) {
             try {
-                aClass348_Sub49_3208.anInt7197 = 0;
-                aClass348_Sub49_3208.writeByte(bool, 4);
-                aClass348_Sub49_3208.writeByte(bool, aByte3212);
-                aClass348_Sub49_3208.writeShort((byte) 107, 0);
-                aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1);
-            } catch (IOException ioexception) {
+                aClass348_Sub49_3208.anInt7197 = 0
+                aClass348_Sub49_3208.writeByte(bool, 4)
+                aClass348_Sub49_3208.writeByte(bool, aByte3212.toInt())
+                aClass348_Sub49_3208.writeShort(107.toByte(), 0)
+                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1)
+            } catch (ioexception: IOException) {
                 try {
-                    aClass202_3209.method1476((byte) -126);
-                } catch (Exception exception) {
+                    aClass202_3209!!.method1476((-126).toByte())
+                } catch (exception: Exception) {
                     /* empty */
                 }
-                this.anInt3214 = -2;
-                this.anInt3213++;
-                aClass202_3209 = null;
+                this.anInt3214 = -2
+                this.anInt3213++
+                aClass202_3209 = null
             }
         }
-        anInt3210 = 0;
-        aLong3207 = Class62.method599(-105);
+        anInt3210 = 0
+        aLong3207 = method599(-105)
     }
 
-    final void method1904(int i) {
+    fun method1904(i: Int) {
         try {
-            aClass202_3209.method1476((byte) -123);
-        } catch (Exception exception) {
+            aClass202_3209!!.method1476((-123).toByte())
+        } catch (exception: Exception) {
             /* empty */
         }
-        anInt3189++;
-        aClass202_3209 = null;
-        this.anInt3213++;
-        aByte3212 = (byte) (int) (Math.random() * 255.0 + 1.0);
-        this.anInt3214 = i;
+        anInt3189++
+        aClass202_3209 = null
+        this.anInt3213++
+        aByte3212 = (Math.random() * 255.0 + 1.0).toInt().toByte()
+        this.anInt3214 = i
     }
 
-    final void method1905(int i) {
-        anInt3188++;
+    fun method1905(i: Int) {
+        anInt3188++
         if (aClass202_3209 != null) {
             try {
-                aClass348_Sub49_3208.anInt7197 = i;
-                aClass348_Sub49_3208.writeByte(false, 7);
-                aClass348_Sub49_3208.method3340(-9912, 0);
-                aClass202_3209.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, ~i);
-            } catch (IOException ioexception) {
+                aClass348_Sub49_3208.anInt7197 = i
+                aClass348_Sub49_3208.writeByte(false, 7)
+                aClass348_Sub49_3208.method3340(-9912, 0)
+                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, i.inv())
+            } catch (ioexception: IOException) {
                 try {
-                    aClass202_3209.method1476((byte) -125);
-                } catch (Exception exception) {
+                    aClass202_3209!!.method1476((-125).toByte())
+                } catch (exception: Exception) {
                     /* empty */
                 }
-                this.anInt3214 = -2;
-                this.anInt3213++;
-                aClass202_3209 = null;
+                this.anInt3214 = -2
+                this.anInt3213++
+                aClass202_3209 = null
             }
         }
     }
 
-    final Class348_Sub42_Sub16_Sub1 method1906(byte i, byte i_29_, boolean bool, int i_30_, int i_31_) {
-        anInt3187++;
-        int i_32_ = -118 % ((i - -15) / 61);
-        long l = (i_31_ << 16) - -i_30_;
-        Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = new Class348_Sub42_Sub16_Sub1();
-        class348_sub42_sub16_sub1.aBoolean9663 = bool;
-        class348_sub42_sub16_sub1.aLong7057 = l;
-        class348_sub42_sub16_sub1.aByte10449 = i_29_;
+    fun method1906(i: Byte, i_29_: Byte, bool: Boolean, i_30_: Int, i_31_: Int): Class348_Sub42_Sub16_Sub1 {
+        anInt3187++
+        val i_32_ = -118 % ((i - -15) / 61)
+        val l = ((i_31_ shl 16) - -i_30_).toLong()
+        val class348_sub42_sub16_sub1 = Class348_Sub42_Sub16_Sub1()
+        class348_sub42_sub16_sub1.aBoolean9663 = bool
+        class348_sub42_sub16_sub1.aLong7057 = l
+        class348_sub42_sub16_sub1.aByte10449 = i_29_
         if (bool) {
-            if (method1902(4) >= 20) throw new RuntimeException();
-            aClass107_3197.method1005(true, class348_sub42_sub16_sub1);
+            if (method1902(4) >= 20) throw RuntimeException()
+            aClass107_3197.method1005(true, class348_sub42_sub16_sub1)
         } else {
-            if (method1894(4350) >= 20) throw new RuntimeException();
-            aClass107_3205.method1005(true, class348_sub42_sub16_sub1);
+            if (method1894(4350) >= 20) throw RuntimeException()
+            aClass107_3205.method1005(true, class348_sub42_sub16_sub1)
         }
-        return class348_sub42_sub16_sub1;
+        return class348_sub42_sub16_sub1
     }
 
-    public Class248() {
-        aClass348_Sub49_3211 = new Class348_Sub49(8);
+    init {
+        aClass348_Sub49_3211 = Class348_Sub49(8)
+    }
+
+    companion object {
+        var anInt3185: Int = 0
+        var anInt3186: Int = 0
+        var anInt3187: Int = 0
+        var anInt3188: Int = 0
+        var anInt3189: Int = 0
+        var anInt3190: Int = 0
+        var anInt3191: Int = 0
+        var anInt3192: Int = 0
+        var anInt3193: Int = 0
+        var anInt3194: Int = 0
+        var anInt3195: Int = 0
+        @JvmField
+        var aClass229_3196: Class229? = Class229
+        var anInt3198: Int = 0
+        var anInt3199: Int = 0
+        var anInt3200: Int = 0
+        var anInt3201: Int = 0
+        var anInt3202: Int = 0
+        @JvmField
+        var anInt3203: Int = -1
+        fun method1895(i: Int, `is`: ByteArray?, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, is_20_: ByteArray?, i_21_: Int, i_22_: Byte) {
+            var i = i
+            var i_17_ = i_17_
+            var i_21_ = i_21_
+            try {
+                anInt3198++
+                val i_23_ = -(i_21_ shr 2)
+                i_21_ = -(0x3 and i_21_)
+                if (i_22_.toInt() != 121) aClass229_3196 = null
+                for (i_24_ in -i_16_..-1) {
+                    for (i_25_ in i_23_..-1) {
+                        `is`!![i_17_++] = (`is`[i_17_++] + -is_20_!![i++]).toByte()
+                        `is`[i_17_++] = (`is`[i_17_++] + -is_20_[i++]).toByte()
+                        `is`[i_17_++] = (`is`[i_17_++] + -is_20_[i++]).toByte()
+                        `is`[i_17_++] = (`is`[i_17_++] + -is_20_[i++]).toByte()
+                    }
+                    for (i_26_ in i_21_..-1) `is`!![i_17_++] = (`is`[i_17_++] + -is_20_!![i++]).toByte()
+                    i_17_ += i_18_
+                    i += i_19_
+                }
+            } catch (runtimeexception: RuntimeException) {
+                throw Class348_Sub17.method2929(runtimeexception, ("tha.M(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + (if (is_20_ != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ')'))
+            }
+        }
+
+        @JvmStatic
+        fun method1897(i: Byte) {
+            if (i.toInt() == 119) aClass229_3196 = null
+        }
     }
 }

@@ -253,7 +253,7 @@ object Class164 {
             Class348_Sub35.aClass45_6980.method404(0, true, true)
             Class95.aClass45_1541!!.anInt634 = 2
             Class319.aBoolean3988 = true
-            Class247.aClass45_3183.anInt634 = 2
+            Class247.aClass45_3183!!.anInt634 = 2
             Class94.aClass45_1538!!.anInt634 = 2
             Class216.aClass45_4975!!.anInt634 = 2
             Class174.aClass45_2306!!.anInt634 = 2
