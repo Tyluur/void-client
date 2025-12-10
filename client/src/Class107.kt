@@ -166,7 +166,7 @@ class Class107 {
                         val i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.anInt7319 * 2)) - -208
                         val i_8_ = (208 - (Class348_Sub40_Sub3.anInt9109 * 2 - 48) + 4 * Class348_Sub40_Sub3.anInt9109 - i_3_ / 128)
                         Class108.aClass105_1664!!.method967((class46.anInt709.toFloat() / 2.0f + i.toFloat()), (class46.anInt789.toFloat() / 2.0f + i_1_.toFloat()), i_7_.toFloat(), i_8_.toFloat(), i_5_, i_6_ shl 2, var_aa, i, i_1_)
-                        var class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125.method1995(i_2_ xor 0x59b4) as Class348_Sub35
+                        var class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125.method1995(i_2_ xor 0x59b4) as? Class348_Sub35
                         while (class348_sub35 != null) {
                             val i_9_ = class348_sub35.anInt6976
                             val i_10_ = (-za_Sub2.regionTileX + ((0xfffe5b0 and (r_Sub2.aClass252_10488!!.anIntArray3238[i_9_])) shr 14))
@@ -174,7 +174,7 @@ class Class107 {
                             val i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_
                             val i_13_ = 2 + (4 * i_11_ - i_3_ / 128)
                             method2385(class46, i_1_, var_aa, (r_Sub2.aClass252_10488!!.anIntArray3239[i_9_]), i_12_, i, (-94.toByte()).toByte(), i_13_, var_ha)
-                            class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125.method1990(92.toByte()) as Class348_Sub35
+                            class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125.method1990(92.toByte()) as? Class348_Sub35
                         }
                         var i_14_ = 0
                         while ((Class348_Sub40_Sub38.anInt9479 > i_14_)) {
@@ -191,7 +191,7 @@ class Class107 {
                             method2385(class46, i_1_, var_aa, class51.anInt921, i_15_, i, (-113.toByte()).toByte(), i_16_, var_ha)
                             i_14_++
                         }
-                        var class348_sub37 = Class130.aClass356_1895!!.method3484(i_2_ xor 0x59b0) as Class348_Sub37
+                        var class348_sub37 = Class130.aClass356_1895!!.method3484(i_2_ xor 0x59b0) as? Class348_Sub37
                         while (class348_sub37 != null) {
                             val i_17_ = (0x3L and ((class348_sub37.aLong4291) shr 28)).toInt()
                             if (Class334.anInt4155 == i_17_) {
@@ -201,11 +201,11 @@ class Class107 {
                                 val i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4)
                                 Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742[0]), i, class46, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)
                             }
-                            class348_sub37 = (Class130.aClass356_1895!!.method3482(0) as Class348_Sub37)
+                            class348_sub37 = (Class130.aClass356_1895!!.method3482(0) as? Class348_Sub37)
                         }
                         var i_22_ = 0
                         while ((i_22_ < Class150.anInt2057)) {
-                            val class348_sub22 = ((Class282.aClass356_3654.method3480(Class74.anIntArray1233!![i_22_].toLong(), -6008)) as Class348_Sub22)
+                            val class348_sub22 = ((Class282.aClass356_3654.method3480(Class74.anIntArray1233!![i_22_].toLong(), -6008)) as? Class348_Sub22)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)
                                 if (npc.method2445((-126.toByte()).toByte()) && ((npc.plane) == (Class132.aPlayer_1907.plane))) {
@@ -263,7 +263,7 @@ class Class107 {
                             val class302 = class302s[i_33_]
                             if (class302 != null && (class302.anInt3840 != 0) && Class367_Sub11.anInt7396 % 20 < 10) {
                                 if (class302.anInt3840 == 1) {
-                                    val class348_sub22 = ((Class282.aClass356_3654.method3480(class302.anInt3833.toLong(), -6008)) as Class348_Sub22)
+                                    val class348_sub22 = ((Class282.aClass356_3654.method3480(class302.anInt3833.toLong(), -6008)) as? Class348_Sub22)
                                     if (class348_sub22 != null) {
                                         val npc = (class348_sub22.aNpc_6859)
                                         val i_34_ = (-(i_4_ / 128) + (npc.x) / 128)

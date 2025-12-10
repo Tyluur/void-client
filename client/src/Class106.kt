@@ -9,7 +9,6 @@ class Class106 internal constructor(class45: Class45?, class45_0_: Class45?) {
     private fun method998(i: Int): Class339 {
         anInt1632++
         if (aClass339_1633 == null) aClass339_1633 = Class339()
-        if (i > -71) method1001(null, -15)
         return aClass339_1633!!
     }
 
@@ -61,7 +60,6 @@ class Class106 internal constructor(class45: Class45?, class45_0_: Class45?) {
             anIntArray1636 = null
             anIntArray1635 = null
             anIntArrayArray1638 = null
-            if (i != 21745) method1001(null, -51)
         }
 
         @JvmStatic

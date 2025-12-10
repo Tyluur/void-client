@@ -10,7 +10,7 @@ class Class310_Sub2 : Class310, Interface18_Impl3 {
     var aBoolean6334: Boolean = false
     var aBoolean6335: Boolean = false
 
-    internal constructor(class378: Class378, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class378, Class108.aClass304_1662, Class68.aClass68_1183!!, bool && class378.aBoolean9798, i_0_ * i) {
+    internal constructor(class378: Class378, i: Int, i_0_: Int, bool: Boolean, `is`: IntArray?, i_1_: Int, i_2_: Int) : super(class378, Class108.aClass304_1662!!, Class68.aClass68_1183!!, bool && class378.aBoolean9798, i_0_ * i) {
         var i_2_ = i_2_
         if (this.aClass378_3893.aBoolean9792) {
             anInt6331 = i_0_
