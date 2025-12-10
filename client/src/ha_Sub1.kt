@@ -1027,7 +1027,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
         class109.aBoolean1669 = true
     }
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207?>?, bool: Boolean): Class324 {
+    override fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324 {
         val `is` = IntArray(class207s!!.size)
         val is_283_ = IntArray(class207s.size)
         var bool_284_ = false

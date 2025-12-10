@@ -1,24 +1,22 @@
 /* Class209 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class209 {
-    static int anInt2716;
-    static Class114 aClass114_2717 = new Class114(118, -2);
-    static Class348_Sub16_Sub3 aClass348_Sub16_Sub3_2718;
-
-    public static void method1529(boolean bool) {
-        aClass114_2717 = null;
-        if (bool != true) aClass114_2717 = null;
-        aClass348_Sub16_Sub3_2718 = null;
+* Visit http://jode.sourceforge.net/
+*/
+class Class209 {
+    override fun toString(): String {
+        anInt2716++
+        throw IllegalStateException()
     }
 
-    public final String toString() {
-        anInt2716++;
-        throw new IllegalStateException();
-    }
+    companion object {
+        var anInt2716: Int = 0
+        var aClass114_2717: Class114? = Class114(118, -2)
+        var aClass348_Sub16_Sub3_2718: Class348_Sub16_Sub3? = null
 
-    public Class209() {
-        /* empty */
+        @JvmStatic
+        fun method1529(bool: Boolean) {
+            aClass114_2717 = null
+            if (bool != true) aClass114_2717 = null
+            aClass348_Sub16_Sub3_2718 = null
+        }
     }
 }

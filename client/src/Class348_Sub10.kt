@@ -128,7 +128,7 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
         if (!bool_51_) {
             val i_54_ = class276.anInt3557
             val i_55_ = class276.anIntArray3556[i_54_]
-            aClass210Array6715!![i_55_]!!.method1530(aFloatArray6707, i_39_ shr 1)
+            aClass210Array6715!![i_55_]!!.method1530(aFloatArray6707!!, i_39_ shr 1)
         }
         if (bool_51_) {
             for (i_56_ in (i_39_ shr 1)..<i_39_) aFloatArray6707!![i_56_] = 0.0f

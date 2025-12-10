@@ -34,7 +34,7 @@ class Class324_Sub2 internal constructor(private val aHa_Sub3_6494: ha_Sub3, cla
                         i_11_ += i_5_ - i_8_
                     }
                 } else {
-                    val is_16_ = class207.aByteArray2695
+                    val is_16_ = class207.aByteArray2695!!
                     for (i_17_ in 0..<i_7_) {
                         for (i_18_ in 0..<i_8_) `is`[i_11_++] = is_16_[i_12_++]
                         i_11_ += i_5_ - i_8_

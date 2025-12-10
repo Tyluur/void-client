@@ -102,7 +102,7 @@ class oa(canvas: Canvas?, var_d: d?, i: Int, i_177_: Int) : ha(var_d), Interface
         /* empty */
     }
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207?>?, bool: Boolean): Class324 {
+    override fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324 {
         val `is` = IntArray(class207s!!.size)
         val is_60_ = IntArray(class207s.size)
         var bool_61_ = false

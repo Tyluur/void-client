@@ -23,8 +23,8 @@ class Class348_Sub2 private constructor(class348_sub49: Class348_Sub49) : Class3
             }
             while_123_@ while (true) {
                 val i_2_ = class204.method1490()
-                val i_3_ = class204.anIntArray2681[i_2_]
-                while (class204.anIntArray2681[i_2_] == i_3_) {
+                val i_3_ = class204.anIntArray2681!![i_2_]
+                while (class204.anIntArray2681!![i_2_] == i_3_) {
                     class204.method1492(i_2_)
                     val i_4_ = class204.method1494(i_2_)
                     if (i_4_ == 1) {

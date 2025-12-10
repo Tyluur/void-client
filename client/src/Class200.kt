@@ -1,16 +1,17 @@
 /* Class200 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+object Class200 {
+    var aClass351_2638: Class351? = Class351(59, 8)
+    var aClass226_2639: Class226? = null
+    @JvmField
+    var aClass105Array2640: Array<Class105?>? = null
 
-public final class Class200 {
-    static Class351 aClass351_2638 = new Class351(59, 8);
-    static Class226 aClass226_2639;
-    static Class105[] aClass105Array2640;
-
-    public static void method1463(byte i) {
-        aClass351_2638 = null;
-        aClass105Array2640 = null;
-        if (i != 25) aClass105Array2640 = null;
-        aClass226_2639 = null;
+    @JvmStatic
+    fun method1463(i: Byte) {
+        aClass351_2638 = null
+        aClass105Array2640 = null
+        if (i.toInt() != 25) aClass105Array2640 = null
+        aClass226_2639 = null
     }
 }

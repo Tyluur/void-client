@@ -74,7 +74,7 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: ha_Sub2) : Class348_S
                 var i_6_ = 0
                 while (i_4_ > 256 || i_5_ > 256) {
                     glViewport(0, 0, i_4_, i_5_)
-                    aClass206_8844!!.method1509(aClass258_Sub3Array8837!![i_6_], 0, 0)
+                    aClass206_8844!!.method1509(aClass258_Sub3Array8837!![i_6_]!!, 0, 0)
                     if (i_6_ == 0) {
                         this.aHa_Sub2_6618.method3771((-115).toByte(), class258_sub3_2_)
                         glBegin(7)
@@ -256,8 +256,8 @@ class Class348_Sub5_Sub1 internal constructor(var_ha_Sub2: ha_Sub2) : Class348_S
             aClass258_Sub3_8830 = Class258_Sub3(this.aHa_Sub2_6618, 3553, 34842, 256, 256)
             aClass258_Sub3_8830!!.method1965(false, false, 10243)
             this.aHa_Sub2_6618.method3773(-1, aClass206_8825)
-            aClass206_8825!!.method1509(aClass258_Sub3_8835, 0, 0)
-            aClass206_8825!!.method1509(aClass258_Sub3_8830, 0, 1)
+            aClass206_8825!!.method1509(aClass258_Sub3_8835!!, 0, 0)
+            aClass206_8825!!.method1509(aClass258_Sub3_8830!!, 0, 1)
             aClass206_8825!!.method1503(0, 3.toByte())
             if (!aClass206_8825!!.method1507(124)) {
                 this.aHa_Sub2_6618.method3770(-422613672, aClass206_8825)

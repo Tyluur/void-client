@@ -164,7 +164,7 @@ class Class239_Sub3 : Class239 {
                     return class352
                 }
                 val i_27_ = -118 / ((-33 - i_25_) / 44)
-                val class207s = Class207.method1523(Class39.aClass45_518, i)
+                val class207s = Class207.method1523(Class39.aClass45_518!!, i)
                 if (class207s == null) return null
                 val class143 = Class239_Sub10.method1766((-39).toByte(), i, s.aClass45_4585!!)
                 if (class143 == null) return null

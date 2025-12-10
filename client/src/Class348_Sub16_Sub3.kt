@@ -205,7 +205,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     aClass204_8944!!.method1486(i_36_)
                 }
                 anInt8960 = aClass204_8944!!.method1490()
-                anInt8956 = aClass204_8944!!.anIntArray2681[anInt8960]
+                anInt8956 = aClass204_8944!!.anIntArray2681!![anInt8960]
                 aLong8957 = aClass204_8944!!.method1488(anInt8956)
                 if (bool == false) break
                 aClass348_Sub16_Sub1_8958 = null
@@ -438,7 +438,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             method2856(124.toByte())
         } else {
             while (i_58_ == anInt8956) {
-                while (aClass204_8944!!.anIntArray2681[i_57_] == i_58_) {
+                while (aClass204_8944!!.anIntArray2681!![i_57_] == i_58_) {
                     aClass204_8944!!.method1492(i_57_)
                     val i_59_ = aClass204_8944!!.method1494(i_57_)
                     if (i_59_ == 1) {
@@ -464,7 +464,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     aClass204_8944!!.method1486(i_57_)
                 }
                 i_57_ = aClass204_8944!!.method1490()
-                i_58_ = aClass204_8944!!.anIntArray2681[i_57_]
+                i_58_ = aClass204_8944!!.anIntArray2681!![i_57_]
                 l = aClass204_8944!!.method1488(i_58_)
             }
             if (i.toInt() != 124) method2879(-127, -46, -96)
@@ -783,7 +783,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     var i_100_ = anInt8956
                     var l_101_ = aLong8957
                     while (anInt8956 == i_100_) {
-                        while ((aClass204_8944!!.anIntArray2681[i_99_]) == i_100_) {
+                        while ((aClass204_8944!!.anIntArray2681!![i_99_]) == i_100_) {
                             aClass204_8944!!.method1492(i_99_)
                             val i_102_ = aClass204_8944!!.method1494(i_99_)
                             if (i_102_ == 1) {
@@ -805,7 +805,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                         }
                         aLong8959 = l_101_
                         i_99_ = aClass204_8944!!.method1490()
-                        i_100_ = (aClass204_8944!!.anIntArray2681[i_99_])
+                        i_100_ = (aClass204_8944!!.anIntArray2681!![i_99_])
                         l_101_ = aClass204_8944!!.method1488(i_100_)
                     }
                     anInt8960 = i_99_

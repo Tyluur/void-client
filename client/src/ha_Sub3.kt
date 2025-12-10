@@ -1760,7 +1760,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
                     for (i_215_ in 0..<class207.anInt2696) {
                         var i_216_ = 0
                         while (class207.anInt2702 > i_216_) {
-                            `is`[i_211_++] = (Class273.method2057((class207.anIntArray2697[Class139.method1166((class207.aByteArray2699[i]).toInt(), 255)]), (class207.aByteArray2695[i].toInt() shl 24)))
+                            `is`[i_211_++] = (Class273.method2057((class207.anIntArray2697[Class139.method1166((class207.aByteArray2699[i]).toInt(), 255)]), (class207.aByteArray2695!![i].toInt() shl 24)))
                             i++
                             i_216_++
                         }
@@ -2294,7 +2294,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
 
     abstract fun method3939(i: Byte)
 
-    override fun method3686(class143: Class143?, class207s: Array<Class207?>?, bool: Boolean): Class324 {
+    override fun method3686(class143: Class143?, class207s: Array<Class207>?, bool: Boolean): Class324 {
         try {
             anInt7952++
             return Class324_Sub2(this, class143, class207s as Array<Class207>, bool)
