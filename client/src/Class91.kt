@@ -66,7 +66,7 @@ object Class91 {
         anIntArray1521 = null
         aClass82_1523 = null
         aClass74_1519 = null
-        if (i < 121) method856((-72.toByte()).toByte())
+        if (i < 121) method856(((-72).toByte()).toByte())
     }
 
     init {

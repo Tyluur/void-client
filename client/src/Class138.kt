@@ -1,34 +1,27 @@
 /* Class138 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class138 internal constructor(var anInt1941: Int, @JvmField var anInt1945: Int, @JvmField var anInt1943: Int, @JvmField var anInt1944: Int) {
+    override fun toString(): String {
+        anInt1947++
+        throw IllegalStateException()
+    }
 
-public final class Class138 {
-    static Class45 aClass45_1940;
-    int anInt1941;
-    static Class46[] aClass46Array1942;
-    int anInt1943;
-    int anInt1944;
-    int anInt1945;
-    static Class348_Sub42_Sub12 aClass348_Sub42_Sub12_1946;
-    static int anInt1947;
+    companion object {
+        @JvmField
+        var aClass45_1940: Class45? = null
+        var aClass46Array1942: Array<Class46?>? = null
+        @JvmField
+        var aClass348_Sub42_Sub12_1946: Class348_Sub42_Sub12? = null
+        var anInt1947: Int = 0
 
-    public static void method1164(byte i) {
-        if (i <= -42) {
-            aClass45_1940 = null;
-            aClass348_Sub42_Sub12_1946 = null;
-            aClass46Array1942 = null;
+        @JvmStatic
+        fun method1164(i: Byte) {
+            if (i <= -42) {
+                aClass45_1940 = null
+                aClass348_Sub42_Sub12_1946 = null
+                aClass46Array1942 = null
+            }
         }
-    }
-
-    Class138(int i, int i_0_, int i_1_, int i_2_) {
-        this.anInt1943 = i_1_;
-        this.anInt1945 = i_0_;
-        this.anInt1941 = i;
-        this.anInt1944 = i_2_;
-    }
-
-    public final String toString() {
-        anInt1947++;
-        throw new IllegalStateException();
     }
 }

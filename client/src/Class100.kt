@@ -26,16 +26,16 @@ class Class100 internal constructor(private val aHa_Sub2_1581: ha_Sub2) {
             if (anInt1578 != 0) aClass286Array1588[0x7fffffff and anInt1578]!!.method2133(-93)
             if (i_0_ != 0) {
                 aClass286Array1588[i_0_ and 0x7fffffff]!!.method2134(bool, false)
-                aClass286Array1588[0x7fffffff and i_0_]!!.method2139(bool, (-115.toByte()).toByte())
-                aClass286Array1588[i_0_ and 0x7fffffff]!!.method2136(i, i_1_, (-106.toByte()).toByte())
+                aClass286Array1588[0x7fffffff and i_0_]!!.method2139(bool, ((-115).toByte()).toByte())
+                aClass286Array1588[i_0_ and 0x7fffffff]!!.method2136(i, i_1_, ((-106).toByte()).toByte())
             }
             anInt1578 = i_0_
             anInt1584 = i_1_
             anInt1592 = i
         } else if (anInt1578 != 0) {
-            aClass286Array1588[0x7fffffff and anInt1578]!!.method2139(bool, (-101.toByte()).toByte())
+            aClass286Array1588[0x7fffffff and anInt1578]!!.method2139(bool, ((-101).toByte()).toByte())
             if (i != anInt1592 || anInt1584 != i_1_) {
-                aClass286Array1588[0x7fffffff and anInt1578]!!.method2136(i, i_1_, (-98.toByte()).toByte())
+                aClass286Array1588[0x7fffffff and anInt1578]!!.method2136(i, i_1_, ((-98).toByte()).toByte())
                 anInt1592 = i
                 anInt1584 = i_1_
             }
@@ -47,12 +47,12 @@ class Class100 internal constructor(private val aHa_Sub2_1581: ha_Sub2) {
         anInt1590++
         if (anInt1578 == 0) return false
         if (i_4_.toInt() != -124) method889(99.toByte(), 7)
-        aClass286Array1588[0x7fffffff and anInt1578]!!.method2140(class258, (-98.toByte()).toByte(), i)
+        aClass286Array1588[0x7fffffff and anInt1578]!!.method2140(class258, ((-98).toByte()).toByte(), i)
         return true
     }
 
     fun method889(i: Byte, i_8_: Int): Boolean {
-        if (i >= -45) method885(7, (-70.toByte()).toByte(), null)
+        if (i >= -45) method885(7, ((-70).toByte()).toByte(), null)
         anInt1577++
         return aClass286Array1588[i_8_]!!.method2137(-112)
     }
@@ -107,7 +107,7 @@ class Class100 internal constructor(private val aHa_Sub2_1581: ha_Sub2) {
                 anInt1589++
                 if (Class289.aClass46_3701 == null && !Class5_Sub1.aBoolean8335 && (class46 != null && (method141(class46, ((-79).toByte()).toByte()) != null))) {
                     Class289.aClass46_3701 = class46
-                    Class331.aClass46_4130 = method141(class46, (-117.toByte()).toByte())
+                    Class331.aClass46_4130 = method141(class46, ((-117).toByte()).toByte())
                     Class318_Sub1.anInt6392 = 0
                     Class219.anInt2872 = i_5_
                     Class318_Sub4.anInt6411 = i

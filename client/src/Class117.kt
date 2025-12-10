@@ -15,19 +15,19 @@ class Class117 {
         if (i_0_ == 1) this.aChar1778 = method462(class348_sub49.readByte(-91), -128)
         else if (i_0_ == 2) this.aChar1779 = method462(class348_sub49.readByte(-119), -128)
         else if (i_0_ == 3) aString1774 = class348_sub49.readString(86.toByte())
-        else if (i_0_ == 4) anInt1764 = class348_sub49.readInt((-126.toByte()).toByte())
+        else if (i_0_ == 4) anInt1764 = class348_sub49.readInt(((-126).toByte()).toByte())
         else if (i_0_ == 5 || i_0_ == 6) {
             val i_1_ = class348_sub49.readUnsignedShort(i xor 0x3235ab57.inv())
             this.aClass356_1767 = Class356(method340(i_1_, 108.toByte()))
             for (i_2_ in 0..<i_1_) {
-                val i_3_ = class348_sub49.readInt((-126.toByte()).toByte())
-                val class348 = if (i_0_ != 5) Class348_Sub35(class348_sub49.readInt((-126.toByte()).toByte()))
-                else Class348_Sub50(class348_sub49.readString((-35.toByte()).toByte()))
+                val i_3_ = class348_sub49.readInt(((-126).toByte()).toByte())
+                val class348 = if (i_0_ != 5) Class348_Sub35(class348_sub49.readInt(((-126).toByte()).toByte()))
+                else Class348_Sub50(class348_sub49.readString(((-35).toByte()).toByte()))
                 aClass356_1767!!.method3483(21.toByte(), i_3_.toLong(), class348)
             }
         }
         anInt1765++
-        if (i != -21424) method1068((-15.toByte()).toByte())
+        if (i != -21424) method1068(((-15).toByte()).toByte())
     }
 
     fun method1066(bool: Boolean, string: String): Boolean {
@@ -140,7 +140,7 @@ class Class117 {
         }
 
         fun method1072(class45: Class45?, i: Byte) {
-            if (i >= -91) method1070((-93.toByte()).toByte(), 92)
+            if (i >= -91) method1070(((-93).toByte()).toByte(), 92)
             Class239_Sub12.aClass45_5964 = class45
             anInt1771++
         }

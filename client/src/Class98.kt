@@ -27,7 +27,7 @@ class Class98 {
         fun method877(i: Int, i_0_: Int, i_1_: Byte): Boolean {
             if (i_1_.toInt() != -127) anIntArrayArray1566 = null
             anInt1567++
-            return method2174(126.toByte(), i, i_0_) || Class202.method1475((-107.toByte()).toByte(), i_0_, i)
+            return method2174(126.toByte(), i, i_0_) || Class202.method1475(((-107).toByte()).toByte(), i_0_, i)
         }
 
         @JvmStatic
@@ -39,7 +39,7 @@ class Class98 {
             var i_4_ = i_3_ / 4 * 3
             if (i_3_ + -2 >= i_2_ || method1399(7, string[i_3_ + -2]) == -1) i_4_ -= 2
             else if (i_2_ <= i_3_ + -1 || method1399(7, string[i_3_ - 1]) == -1) i_4_--
-            if (i > -92) method877(-51, -45, (-74.toByte()).toByte())
+            if (i > -92) method877(-51, -45, ((-74).toByte()).toByte())
             val `is` = ByteArray(i_4_)
             Class318_Sub2.method2497(`is`, 0.toByte(), string, 0)
             return `is`

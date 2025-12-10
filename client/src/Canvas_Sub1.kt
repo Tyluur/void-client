@@ -47,8 +47,8 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
         fun method119(i: Int, l: Long) {
             try {
                 anInt66++
-                val i_0_ = (Class20.anInt319 + Class132.aPlayer_1907.x)
-                val i_1_ = (Class260.anInt3310 + Class132.aPlayer_1907.y)
+                val i_0_ = (Class20.anInt319 + Class132.aPlayer_1907!!.x)
+                val i_1_ = (Class260.anInt3310 + Class132.aPlayer_1907!!.y)
                 if (-i_0_ + Class130_Sub1.anInt5799 < -2000 || -i_0_ + Class130_Sub1.anInt5799 > 2000 || Class192.anInt2578 - i_1_ < -2000 || -i_1_ + Class192.anInt2578 > 2000) {
                     Class192.anInt2578 = i_1_
                     Class130_Sub1.anInt5799 = i_0_

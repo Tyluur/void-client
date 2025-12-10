@@ -26,19 +26,19 @@ object Class116 {
         anInt1760++
         var class234: Class234? = null
         try {
-            val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233((-46.toByte()).toByte(), "2", true)
+            val class144 = Class348_Sub23_Sub1.aClass297_8992!!.method2233(((-46).toByte()).toByte(), "2", true)
             while (class144!!.anInt1997 == 0) method2161(63.toByte(), 1L)
             if (class144.anInt1997 == 1) {
                 class234 = class144.anObject1998 as Class234
-                val `is` = ByteArray(class234!!.method1662((-46.toByte()).toByte()).toInt())
+                val `is` = ByteArray(class234!!.method1662(((-46).toByte()).toByte()).toInt())
                 var i_0_: Int
                 var i_1_ = 0
                 while (`is`.size > i_1_) {
-                    i_0_ = class234.method1656(`is`, i_1_, (-12.toByte()).toByte(), `is`.size + -i_1_)
+                    i_0_ = class234.method1656(`is`, i_1_, ((-12).toByte()).toByte(), `is`.size + -i_1_)
                     if (i_0_ == -1) throw IOException("EOF")
                     i_1_ += i_0_
                 }
-                method3014(Class348_Sub49(`is`), (-40.toByte()).toByte())
+                method3014(Class348_Sub49(`is`), ((-40).toByte()).toByte())
             }
         } catch (exception: Exception) {
             /* empty */

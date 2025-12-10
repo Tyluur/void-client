@@ -360,7 +360,7 @@ class Class64_Sub3 : Class64 {
                                                     val i_84_ = -1 + is_61_!![i_83_]
                                                     if (i_84_ == -1) break
                                                     if (is_56_!![i_84_].toInt() != 0) {
-                                                        is_58_[i_84_] = (is_58_[i_84_] + i_79_).toShort()
+                                                        is_58_!![i_84_] = (is_58_!![i_84_] + i_79_).toShort()
                                                         is_57_!![i_84_] = (is_57_[i_84_] + i_80_).toShort()
                                                         is_59_!![i_84_] = (is_59_[i_84_] + i_81_).toShort()
                                                         is_56_[i_84_] = (is_56_[i_84_] + i_82_).toByte()
@@ -378,7 +378,7 @@ class Class64_Sub3 : Class64 {
                                                     val i_86_ = ((aShortArray5649!![i_85_]) + -1)
                                                     if (i_86_ == -1) break
                                                     if (is_54_!![i_86_].toInt() != 0) {
-                                                        is_55_[i_86_] = (is_55_[i_86_] + i_79_).toShort()
+                                                        is_55_!![i_86_] = (is_55_!![i_86_] + i_79_).toShort()
                                                         is_53_!![i_86_] = (is_53_[i_86_] + i_80_).toShort()
                                                         is_52_!![i_86_] = (is_52_[i_86_] + i_81_).toShort()
                                                         is_54_[i_86_] = (is_54_[i_86_] + i_82_).toByte()
@@ -926,7 +926,7 @@ class Class64_Sub3 : Class64 {
                 } else {
                     if (class64_sub3_213_.aClass139_5572 == null) class64_sub3_213_.aClass139_5572 = Class139()
                     val class139 = (class64_sub3_213_.aClass139_5572.also { class64_sub3_211_.aClass139_5572 = it })!!
-                    if (class139.aShortArray1954 == null || (anInt5529 > class139.aShortArray1954.size)) {
+                    if (class139.aShortArray1954 == null || (anInt5529 > class139.aShortArray1954!!.size)) {
                         val i_224_ = anInt5529
                         class139.aShortArray1951 = ShortArray(i_224_)
                         class139.aShortArray1953 = ShortArray(i_224_)
@@ -938,10 +938,10 @@ class Class64_Sub3 : Class64 {
                         class64_sub3_211_.aShortArray5564!![i_225_] = aShortArray5564!![i_225_]
                         class64_sub3_211_.aShortArray5583!![i_225_] = aShortArray5583!![i_225_]
                         class64_sub3_211_.aShortArray5576!![i_225_] = aShortArray5576!![i_225_]
-                        class139.aShortArray1954[i_225_] = (aClass139_5572!!.aShortArray1954[i_225_])
-                        class139.aShortArray1951[i_225_] = (aClass139_5572!!.aShortArray1951[i_225_])
-                        class139.aShortArray1953[i_225_] = (aClass139_5572!!.aShortArray1953[i_225_])
-                        class139.aByteArray1948[i_225_] = (aClass139_5572!!.aByteArray1948[i_225_])
+                        class139.aShortArray1954!![i_225_] = (aClass139_5572!!.aShortArray1954!![i_225_])
+                        class139.aShortArray1951!![i_225_] = (aClass139_5572!!.aShortArray1951!![i_225_])
+                        class139.aShortArray1953!![i_225_] = (aClass139_5572!!.aShortArray1953!![i_225_])
+                        class139.aByteArray1948!![i_225_] = (aClass139_5572!!.aByteArray1948!![i_225_])
                         i_225_++
                     }
                 }

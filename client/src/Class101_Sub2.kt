@@ -246,7 +246,7 @@ class Class101_Sub2 : Class101() {
 
     fun method919(f: Float, fs: FloatArray, f_30_: Float, f_31_: Float, f_32_: Float, i: Byte) {
         anInt5727++
-        if (i.toInt() != -120) method921((-93.toByte()).toByte(), false)
+        if (i.toInt() != -120) method921(((-93).toByte()).toByte(), false)
         fs[0] = (f_30_ * this.aFloat5700 + f_31_ * this.aFloat5711 + this.aFloat5704 * f)
         fs[1] = (this.aFloat5708 * f_31_ + f_30_ * this.aFloat5722 + this.aFloat5732 * f)
         val f_33_: Float

@@ -59,7 +59,7 @@ class Class105_Sub2 : Class105 {
         val f_23_ = -f_0_ + f_4_ + f_2_
         aClass258_Sub3_Sub1_8434.method1957(9728, (i_7_ and 0x1) != 0)
         aHa_Sub2_8430!!.method3792(59)
-        aHa_Sub2_8430.method3771((-93.toByte()).toByte(), aClass258_Sub3_Sub1_8434)
+        aHa_Sub2_8430.method3771(((-93).toByte()).toByte(), aClass258_Sub3_Sub1_8434)
         aHa_Sub2_8430.method3753(i_6_, 1)
         aHa_Sub2_8430.method3761(0, i)
         glColor4ub((i_5_ shr 16).toByte(), (i_5_ shr 8).toByte(), i_5_.toByte(), (i_5_ shr 24).toByte())
@@ -113,7 +113,7 @@ class Class105_Sub2 : Class105 {
 
     override fun method979(i: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int) {
         anInt8436++
-        aClass258_Sub3_Sub1_8434.method1967(i, i_28_, i_30_, i_26_, i_29_, (-120.toByte()).toByte(), i_27_)
+        aClass258_Sub3_Sub1_8434.method1967(i, i_28_, i_30_, i_26_, i_29_, ((-120).toByte()).toByte(), i_27_)
     }
 
     override fun method963(i: Int, i_31_: Int, var_aa: aa?, i_32_: Int, i_33_: Int) {
@@ -124,12 +124,12 @@ class Class105_Sub2 : Class105 {
         val class258_sub3_sub1 = var_aa_Sub1!!.aClass258_Sub3_Sub1_5193
         aClass258_Sub3_Sub1_8434.method1957(9728, false)
         aHa_Sub2_8430!!.method3792(75)
-        aHa_Sub2_8430.method3771((-99.toByte()).toByte(), aClass258_Sub3_Sub1_8434)
+        aHa_Sub2_8430.method3771(((-99).toByte()).toByte(), aClass258_Sub3_Sub1_8434)
         aHa_Sub2_8430.method3761(0, 1)
         aHa_Sub2_8430.method3738(-15039, 1)
-        aHa_Sub2_8430.method3771((-123.toByte()).toByte(), class258_sub3_sub1)
-        aHa_Sub2_8430.method3729(7681, (-101.toByte()).toByte(), 8448)
-        aHa_Sub2_8430.method3762(34168, 768, (-87.toByte()).toByte(), 0)
+        aHa_Sub2_8430.method3771(((-123).toByte()).toByte(), class258_sub3_sub1)
+        aHa_Sub2_8430.method3729(7681, ((-101).toByte()).toByte(), 8448)
+        aHa_Sub2_8430.method3762(34168, 768, ((-87).toByte()).toByte(), 0)
         aHa_Sub2_8430.method3753(1, 1)
         i += anInt8447
         i_31_ += anInt8446
@@ -156,9 +156,9 @@ class Class105_Sub2 : Class105 {
         glMultiTexCoord2f(33985, f_38_, f_39_)
         glVertex2i((aClass258_Sub3_Sub1_8434.anInt9940) + i, i_31_)
         glEnd()
-        aHa_Sub2_8430.method3762(5890, 768, (-87.toByte()).toByte(), 0)
+        aHa_Sub2_8430.method3762(5890, 768, ((-87).toByte()).toByte(), 0)
         aHa_Sub2_8430.method3761(0, 0)
-        aHa_Sub2_8430.method3771((-105.toByte()).toByte(), null)
+        aHa_Sub2_8430.method3771(((-105).toByte()).toByte(), null)
         aHa_Sub2_8430.method3738(-15039, 0)
     }
 
@@ -175,12 +175,12 @@ class Class105_Sub2 : Class105 {
         anInt8428++
         if (i.toInt() == 9) {
             aHa_Sub2_8430!!.method3738(-15039, 1)
-            aHa_Sub2_8430.method3771((-78.toByte()).toByte(), null)
-            aHa_Sub2_8430.method3729(8448, (-79.toByte()).toByte(), 8448)
-            aHa_Sub2_8430.method3762(34168, 768, (-87.toByte()).toByte(), 1)
+            aHa_Sub2_8430.method3771(((-78).toByte()).toByte(), null)
+            aHa_Sub2_8430.method3729(8448, ((-79).toByte()).toByte(), 8448)
+            aHa_Sub2_8430.method3762(34168, 768, ((-87).toByte()).toByte(), 1)
             aHa_Sub2_8430.method3775(false, 0, 770, 5890)
             aHa_Sub2_8430.method3738(-15039, 0)
-            aHa_Sub2_8430.method3762(34168, 768, (-87.toByte()).toByte(), 1)
+            aHa_Sub2_8430.method3762(34168, 768, ((-87).toByte()).toByte(), 1)
         }
     }
 
@@ -219,12 +219,12 @@ class Class105_Sub2 : Class105 {
         aClass258_Sub3_Sub1_8434.method1957(9728, (0x1 and i) != 0)
         val f_66_ = f_48_ - f_44_ + f_46_
         aHa_Sub2_8430!!.method3792(106)
-        aHa_Sub2_8430.method3771((-123.toByte()).toByte(), aClass258_Sub3_Sub1_8434)
+        aHa_Sub2_8430.method3771(((-123).toByte()).toByte(), aClass258_Sub3_Sub1_8434)
         aHa_Sub2_8430.method3761(0, 1)
         aHa_Sub2_8430.method3738(-15039, 1)
-        aHa_Sub2_8430.method3771((-98.toByte()).toByte(), class258_sub3_sub1)
-        aHa_Sub2_8430.method3729(7681, (-17.toByte()).toByte(), 8448)
-        aHa_Sub2_8430.method3762(34168, 768, (-87.toByte()).toByte(), 0)
+        aHa_Sub2_8430.method3771(((-98).toByte()).toByte(), class258_sub3_sub1)
+        aHa_Sub2_8430.method3729(7681, ((-17).toByte()).toByte(), 8448)
+        aHa_Sub2_8430.method3762(34168, 768, ((-87).toByte()).toByte(), 0)
         aHa_Sub2_8430.method3753(1, 1)
         val f_67_ = (class258_sub3_sub1!!.aFloat9937 / class258_sub3_sub1.anInt9940.toFloat())
         val f_68_ = (class258_sub3_sub1.aFloat9938 / class258_sub3_sub1.anInt9939.toFloat())
@@ -243,9 +243,9 @@ class Class105_Sub2 : Class105 {
         glMultiTexCoord2f(33985, f_67_ * (-i_49_.toFloat() + f_45_), ((class258_sub3_sub1.aFloat9938) - f_68_ * (f_46_ - i_50_.toFloat())))
         glVertex2f(f_45_, f_46_)
         glEnd()
-        aHa_Sub2_8430.method3762(5890, 768, (-87.toByte()).toByte(), 0)
+        aHa_Sub2_8430.method3762(5890, 768, ((-87).toByte()).toByte(), 0)
         aHa_Sub2_8430.method3761(0, 0)
-        aHa_Sub2_8430.method3771((-84.toByte()).toByte(), null)
+        aHa_Sub2_8430.method3771(((-84).toByte()).toByte(), null)
         aHa_Sub2_8430.method3738(-15039, 0)
     }
 
@@ -265,7 +265,7 @@ class Class105_Sub2 : Class105 {
         i += anInt8447
         i_69_ += anInt8446
         if (aClass258_Sub3_Sub1_8431 == null) {
-            aHa_Sub2_8430.method3771((-127.toByte()).toByte(), aClass258_Sub3_Sub1_8434)
+            aHa_Sub2_8430.method3771(((-127).toByte()).toByte(), aClass258_Sub3_Sub1_8434)
             aHa_Sub2_8430.method3761(0, i_70_)
             glBegin(7)
             glTexCoord2f(0.0f, aClass258_Sub3_Sub1_8434.aFloat9938)
@@ -301,15 +301,15 @@ class Class105_Sub2 : Class105 {
     private fun method992(i: Int, i_73_: Int) {
         aHa_Sub2_8430!!.method3738(-15039, 1)
         anInt8441++
-        aHa_Sub2_8430.method3771((-82.toByte()).toByte(), aClass258_Sub3_Sub1_8434)
-        aHa_Sub2_8430.method3729(aHa_Sub2_8430.method3781(17.toByte(), i), (-61.toByte()).toByte(), 7681)
-        aHa_Sub2_8430.method3762(34167, 768, (-87.toByte()).toByte(), 1)
+        aHa_Sub2_8430.method3771(((-82).toByte()).toByte(), aClass258_Sub3_Sub1_8434)
+        aHa_Sub2_8430.method3729(aHa_Sub2_8430.method3781(17.toByte(), i), ((-61).toByte()).toByte(), 7681)
+        aHa_Sub2_8430.method3762(34167, 768, ((-87).toByte()).toByte(), 1)
         if (i_73_ != 3) method964(46, -15, -58, 122, 11)
         aHa_Sub2_8430.method3775(false, 0, 770, 34168)
         aHa_Sub2_8430.method3738(-15039, 0)
-        aHa_Sub2_8430.method3771((-108.toByte()).toByte(), aClass258_Sub3_Sub1_8431)
-        aHa_Sub2_8430.method3729(34479, (-47.toByte()).toByte(), 7681)
-        aHa_Sub2_8430.method3762(34166, 768, (-87.toByte()).toByte(), 1)
+        aHa_Sub2_8430.method3771(((-108).toByte()).toByte(), aClass258_Sub3_Sub1_8431)
+        aHa_Sub2_8430.method3729(34479, ((-47).toByte()).toByte(), 7681)
+        aHa_Sub2_8430.method3762(34166, 768, ((-87).toByte()).toByte(), 1)
         if (anInt8429 != 0) {
             if (anInt8429 == 1) aHa_Sub2_8430.method3749(0.0f, 0.5f, 0.5f, 64.toByte(), 1.0f)
             else if (anInt8429 != 2) {
@@ -324,7 +324,7 @@ class Class105_Sub2 : Class105 {
         val i_81_ = i_76_ + i_74_
         aClass258_Sub3_Sub1_8434.method1957(9728, false)
         aHa_Sub2_8430!!.method3792(54)
-        aHa_Sub2_8430.method3771((-88.toByte()).toByte(), aClass258_Sub3_Sub1_8434)
+        aHa_Sub2_8430.method3771(((-88).toByte()).toByte(), aClass258_Sub3_Sub1_8434)
         aHa_Sub2_8430.method3753(i_79_, 1)
         aHa_Sub2_8430.method3761(0, i_77_)
         glColor4ub((i_78_ shr 16).toByte(), (i_78_ shr 8).toByte(), i_78_.toByte(), (i_78_ shr 24).toByte())
@@ -430,7 +430,7 @@ class Class105_Sub2 : Class105 {
             val f_102_ = f_100_ + f * aClass258_Sub3_Sub1_8434.anInt9940.toFloat()
             val f_103_ = (f_101_ + (aClass258_Sub3_Sub1_8434.anInt9939).toFloat() * f_99_)
             if (aClass258_Sub3_Sub1_8431 == null) {
-                aHa_Sub2_8430.method3771((-85.toByte()).toByte(), aClass258_Sub3_Sub1_8434)
+                aHa_Sub2_8430.method3771(((-85).toByte()).toByte(), aClass258_Sub3_Sub1_8434)
                 aHa_Sub2_8430.method3761(0, i_95_)
                 glBegin(7)
                 glTexCoord2f(0.0f, aClass258_Sub3_Sub1_8434.aFloat9938)
@@ -462,7 +462,7 @@ class Class105_Sub2 : Class105 {
                 method991(9.toByte())
             }
         } else if (aClass258_Sub3_Sub1_8431 == null) {
-            aHa_Sub2_8430.method3771((-101.toByte()).toByte(), aClass258_Sub3_Sub1_8434)
+            aHa_Sub2_8430.method3771(((-101).toByte()).toByte(), aClass258_Sub3_Sub1_8434)
             aHa_Sub2_8430.method3761(0, i_95_)
             glBegin(7)
             glTexCoord2f(0.0f, aClass258_Sub3_Sub1_8434.aFloat9938)

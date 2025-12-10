@@ -92,10 +92,10 @@ class Class110_Sub1 : Class110() {
                 class318_sub1_sub3_sub3.y = (i_7_ * (-i_5_ + i_4_) - -(i_5_ * i_9_)) / i_4_
             }
             class318_sub1_sub3_sub3.anInt10326 = 0
-            if ((class318_sub1_sub3_sub3.anInt10231.inv()) == i) class318_sub1_sub3_sub3.method2435((-108.toByte()).toByte(), 8192, false)
-            if (class318_sub1_sub3_sub3.anInt10231 == 1) class318_sub1_sub3_sub3.method2435((-108.toByte()).toByte(), 12288, false)
-            if (class318_sub1_sub3_sub3.anInt10231 == 2) class318_sub1_sub3_sub3.method2435((-108.toByte()).toByte(), 0, false)
-            if (class318_sub1_sub3_sub3.anInt10231 == 3) class318_sub1_sub3_sub3.method2435((-108.toByte()).toByte(), 4096, false)
+            if ((class318_sub1_sub3_sub3.anInt10231.inv()) == i) class318_sub1_sub3_sub3.method2435(((-108).toByte()).toByte(), 8192, false)
+            if (class318_sub1_sub3_sub3.anInt10231 == 1) class318_sub1_sub3_sub3.method2435(((-108).toByte()).toByte(), 12288, false)
+            if (class318_sub1_sub3_sub3.anInt10231 == 2) class318_sub1_sub3_sub3.method2435(((-108).toByte()).toByte(), 0, false)
+            if (class318_sub1_sub3_sub3.anInt10231 == 3) class318_sub1_sub3_sub3.method2435(((-108).toByte()).toByte(), 4096, false)
         }
 
         fun method1042(i: Byte) {

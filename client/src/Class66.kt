@@ -295,7 +295,7 @@ object Class66 {
             }
             if (i == 5015) {
                 val string: String?
-                if (Class132.aPlayer_1907 != null && (Class132.aPlayer_1907.aString10537) != null) string = Class132.aPlayer_1907.method2456(true, 255)
+                if (Class132.aPlayer_1907 != null && (Class132.aPlayer_1907!!.aString10537) != null) string = Class132.aPlayer_1907!!.method2456(true, 255)
                 else string = ""
                 aStringArray1152!![anInt1170++] = string
                 return
@@ -326,7 +326,7 @@ object Class66 {
             }
             if (i == 5020) {
                 val string: String?
-                if (Class132.aPlayer_1907 != null && (Class132.aPlayer_1907.aString10537) != null) string = Class132.aPlayer_1907.method2450(false, -78)
+                if (Class132.aPlayer_1907 != null && (Class132.aPlayer_1907!!.aString10537) != null) string = Class132.aPlayer_1907!!.method2450(false, -78)
                 else string = ""
                 aStringArray1152!![anInt1170++] = string!!
                 return
@@ -2776,16 +2776,16 @@ object Class66 {
                 anInt1173 -= 2
                 val i_258_ = anIntArray1149!![anInt1173]
                 val i_259_ = anIntArray1149!![anInt1173 + 1]
-                if ((Class132.aPlayer_1907.aClass154_10536) != null) {
+                if ((Class132.aPlayer_1907!!.aClass154_10536) != null) {
                     for (i_260_ in Class141.anIntArray1973.indices) {
                         if (Class141.anIntArray1973[i_260_] == i_258_) {
-                            Class132.aPlayer_1907.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_260_)
+                            Class132.aPlayer_1907!!.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_260_)
                             return
                         }
                     }
                     for (i_261_ in Class91.anIntArray1521!!.indices) {
                         if (Class91.anIntArray1521!![i_261_] == i_258_) {
-                            Class132.aPlayer_1907.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_261_)
+                            Class132.aPlayer_1907!!.aClass154_10536!!.method1233(Class348_Sub40_Sub25.aClass150_9342, i_259_, -1, i_261_)
                             break
                         }
                     }
@@ -2797,16 +2797,16 @@ object Class66 {
                 anInt1173 -= 2
                 val i_262_ = anIntArray1149!![anInt1173]
                 val i_263_ = anIntArray1149!![anInt1173 + 1]
-                if ((Class132.aPlayer_1907.aClass154_10536) != null) {
-                    Class132.aPlayer_1907.aClass154_10536!!.method1231(i_262_, 0, i_263_)
+                if ((Class132.aPlayer_1907!!.aClass154_10536) != null) {
+                    Class132.aPlayer_1907!!.aClass154_10536!!.method1231(i_262_, 0, i_263_)
                     return
                 }
                 return
             }
             if (i == 410) {
                 val bool_264_ = anIntArray1149!![--anInt1173] != 0
-                if ((Class132.aPlayer_1907.aClass154_10536) != null) {
-                    Class132.aPlayer_1907.aClass154_10536!!.method1229((-17).toByte(), bool_264_)
+                if ((Class132.aPlayer_1907!!.aClass154_10536) != null) {
+                    Class132.aPlayer_1907!!.aClass154_10536!!.method1229((-17).toByte(), bool_264_)
                     return
                 }
                 return
@@ -2815,8 +2815,8 @@ object Class66 {
                 anInt1173 -= 2
                 val i_265_ = anIntArray1149!![anInt1173]
                 val i_266_ = anIntArray1149!![anInt1173 + 1]
-                if ((Class132.aPlayer_1907.aClass154_10536) != null) {
-                    Class132.aPlayer_1907.aClass154_10536!!.method1227(42.toByte(), i_265_, i_266_, Exception_Sub1.aClass255_112)
+                if ((Class132.aPlayer_1907!!.aClass154_10536) != null) {
+                    Class132.aPlayer_1907!!.aClass154_10536!!.method1227(42.toByte(), i_265_, i_266_, Exception_Sub1.aClass255_112)
                     return
                 }
                 return
@@ -3924,9 +3924,9 @@ object Class66 {
                     return
                 }
                 if (i == 3308) {
-                    val i_327_ = (Class132.aPlayer_1907.plane).toInt()
-                    val i_328_ = (((Class132.aPlayer_1907.x) shr 9) + za_Sub2.regionTileX)
-                    val i_329_ = (((Class132.aPlayer_1907.y) shr 9) + Class90.regionTileY)
+                    val i_327_ = (Class132.aPlayer_1907!!.plane).toInt()
+                    val i_328_ = (((Class132.aPlayer_1907!!.x) shr 9) + za_Sub2.regionTileX)
+                    val i_329_ = (((Class132.aPlayer_1907!!.y) shr 9) + Class90.regionTileY)
                     anIntArray1149!![anInt1173++] = (i_327_ shl 28) + (i_328_ shl 14) + i_329_
                     return
                 }
@@ -4015,11 +4015,11 @@ object Class66 {
                     return
                 }
                 if (i == 3326) {
-                    anIntArray1149!![anInt1173++] = (Class132.aPlayer_1907.anInt10516)
+                    anIntArray1149!![anInt1173++] = (Class132.aPlayer_1907!!.anInt10516)
                     return
                 }
                 if (i == 3327) {
-                    anIntArray1149!![anInt1173++] = if ((Class132.aPlayer_1907.aClass154_10536) != null && Class132.aPlayer_1907.aClass154_10536!!.aBoolean2100) 1 else 0
+                    anIntArray1149!![anInt1173++] = if ((Class132.aPlayer_1907!!.aClass154_10536) != null && Class132.aPlayer_1907!!.aClass154_10536!!.aBoolean2100) 1 else 0
                     return
                 }
                 if (i == 3329) {
@@ -4110,7 +4110,7 @@ object Class66 {
                     return
                 }
                 if (i == 3349) {
-                    anIntArray1149!![anInt1173++] = Class132.aPlayer_1907.aClass264_10217.method2019((-31).toByte()) shr 3
+                    anIntArray1149!![anInt1173++] = Class132.aPlayer_1907!!.aClass264_10217.method2019((-31).toByte()) shr 3
                     return
                 }
                 if (i == 3351) {
@@ -4346,7 +4346,7 @@ object Class66 {
                 }
                 if (i == 3624) {
                     val i_368_ = anIntArray1149!![--anInt1173]
-                    if (Class169.aClass19Array2261 != null && i_368_ < Class37.anInt496 && (Class169.aClass19Array2261[i_368_].aString306.equals(Class132.aPlayer_1907.aString10544, ignoreCase = true))) anIntArray1149!![anInt1173++] = 1
+                    if (Class169.aClass19Array2261 != null && i_368_ < Class37.anInt496 && (Class169.aClass19Array2261[i_368_].aString306.equals(Class132.aPlayer_1907!!.aString10544, ignoreCase = true))) anIntArray1149!![anInt1173++] = 1
                     else {
                         anIntArray1149!![anInt1173++] = 0
                         return
@@ -4659,7 +4659,7 @@ object Class66 {
                     anInt1170 -= 2
                     val string = aStringArray1152!![anInt1170]
                     val string_431_ = aStringArray1152!![anInt1170 + 1]
-                    if ((Class132.aPlayer_1907.aClass154_10536) != null && Class132.aPlayer_1907.aClass154_10536!!.aBoolean2100) aStringArray1152!![anInt1170++] = string_431_
+                    if ((Class132.aPlayer_1907!!.aClass154_10536) != null && Class132.aPlayer_1907!!.aClass154_10536!!.aBoolean2100) aStringArray1152!![anInt1170++] = string_431_
                     else {
                         aStringArray1152!![anInt1170++] = string
                         return
@@ -4975,9 +4975,9 @@ object Class66 {
                     val i_482_ = anIntArray1149!![anInt1173]
                     val i_483_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_483_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class136.aClass65_4787.method700(i_482_, -121).method3170(-250, class254.aString3258, i_483_))
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class136.aClass65_4787!!.method700(i_482_, -121).method3170(-250, class254.aString3258, i_483_))
                     else {
-                        anIntArray1149!![anInt1173++] = (Class136.aClass65_4787.method700(i_482_, 81).method3166(i_483_, class254.anInt3256, 124.toByte()))
+                        anIntArray1149!![anInt1173++] = (Class136.aClass65_4787!!.method700(i_482_, 81).method3166(i_483_, class254.anInt3256, 124.toByte()))
                         return
                     }
                     return

@@ -100,7 +100,7 @@ class Class58 {
             val i_21_ = Class85.method831(Class113.anInt1745, i_8_ + i, Class369.anInt4960, 121)
             val i_22_ = Class85.method831(Class113.anInt1745, -i_8_ + i_9_, Class369.anInt4960, -101)
             for (i_23_ in i_17_..i_18_) {
-                val `is`: IntArray? = Class17.anIntArrayArray255!![i_23_]
+                val `is`: IntArray = Class17.anIntArrayArray255!![i_23_]
                 Class135_Sub2.method1156(-27, i_21_, `is`, i_15_, i_10_)
                 Class135_Sub2.method1156(-27, i_16_, `is`, i_22_, i_10_)
             }

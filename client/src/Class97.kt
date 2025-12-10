@@ -65,7 +65,7 @@ class Class97 internal constructor(var_ha_Sub3: ha_Sub3?, class330: Class330?, v
                     if (anInterface18_Impl3_1556 == null) {
                         anInterface18_Impl3_1556 = aHa_Sub3_1561.method3944((Class367_Sub11.aByteArray7394), 128, (Class348_Sub40_Sub38.aClass304_9471), i xor 0x31d8.inv(), false, 128)
                         anInterface18_Impl3_1556!!.method66(false, false, i xor 0x5582.inv())
-                    } else anInterface18_Impl3_1556!!.method70(0, 0, (-45.toByte()).toByte(), 128, 128, 128, 0, (Class367_Sub11.aByteArray7394), (Class348_Sub40_Sub38.aClass304_9471))
+                    } else anInterface18_Impl3_1556!!.method70(0, 0, ((-45).toByte()).toByte(), 128, 128, 128, 0, (Class367_Sub11.aByteArray7394), (Class348_Sub40_Sub38.aClass304_9471))
                 } else {
                     if (Class40.anIntArray543 == null) Class40.anIntArray543 = IntArray(16384)
                     val is_18_ = Class40.anIntArray543!!
@@ -209,7 +209,7 @@ class Class97 internal constructor(var_ha_Sub3: ha_Sub3?, class330: Class330?, v
             if (i_5_ >= Class369.anInt4960 && Class113.anInt1745 >= i_4_ && Class132.anInt1910 <= i_2_ && Class38.anInt513 >= i_3_) {
                 if (i_1_ == 1) Class184.method1388(i_2_, i, i_0_ + 107, i_4_, i_5_, i_3_)
                 else method849(i_1_, i_2_, i_5_, i_4_, i_3_, 100, i)
-            } else if (i_1_ != 1) method535(i_5_, i_3_, i_1_, i_4_, i, i_2_, (-106.toByte()).toByte())
+            } else if (i_1_ != 1) method535(i_5_, i_3_, i_1_, i_4_, i, i_2_, ((-106).toByte()).toByte())
             else method3575(103.toByte(), i_4_, i, i_3_, i_2_, i_5_)
             if (i_0_ != 1) method873(47, 5, null, 1)
         }

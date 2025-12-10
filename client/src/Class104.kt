@@ -148,7 +148,7 @@ class Class104 internal constructor(var_ha_Sub2: ha_Sub2?, var_s_Sub2: s_Sub2?) 
                                     glScalef(f, f, 1.0f)
                                     glTranslatef(-i_54_.toFloat() / f, -i_51_.toFloat() / f, 1.0f)
                                     glMatrixMode(5888)
-                                    aClass232ArrayArray1623!![i_54_][i_51_]!!.method1644((-121.toByte()).toByte())
+                                    aClass232ArrayArray1623!![i_54_][i_51_]!!.method1644(((-121).toByte()).toByte())
                                     break@while_43_
                                 }
                                 i_58_++

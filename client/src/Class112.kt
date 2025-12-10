@@ -83,7 +83,7 @@ class Class112 internal constructor(class297: Class297) : Runnable {
             val class348_sub42_sub16_sub2 = runClass348() ?: continue
             try {
                 if ((class348_sub42_sub16_sub2!!.anInt10457) != 2) {
-                    if (class348_sub42_sub16_sub2.anInt10457 == 3) class348_sub42_sub16_sub2.aByteArray10461 = (class348_sub42_sub16_sub2.aClass137_10458!!.method1161((-4.toByte()).toByte(), class348_sub42_sub16_sub2.aLong7057.toInt()))
+                    if (class348_sub42_sub16_sub2.anInt10457 == 3) class348_sub42_sub16_sub2.aByteArray10461 = (class348_sub42_sub16_sub2.aClass137_10458!!.method1161(((-4).toByte()).toByte(), class348_sub42_sub16_sub2.aLong7057.toInt()))
                 } else class348_sub42_sub16_sub2.aClass137_10458!!.method1160(class348_sub42_sub16_sub2.aByteArray10461!!.size, (class348_sub42_sub16_sub2.aLong7057).toInt(), class348_sub42_sub16_sub2.aByteArray10461, -7305)
             } catch (exception: Exception) {
                 Class156.method1242(null, exception, 15004)
@@ -109,7 +109,7 @@ class Class112 internal constructor(class297: Class297) : Runnable {
                 class348_sub42_sub16_sub2_21_ = (aClass107_1730.method1003(73.toByte()) as Class348_Sub42_Sub16_Sub2?)
             }
         }
-        class348_sub42_sub16_sub2.aByteArray10461 = class137.method1161((-4.toByte()).toByte(), i)
+        class348_sub42_sub16_sub2.aByteArray10461 = class137.method1161(((-4).toByte()).toByte(), i)
         class348_sub42_sub16_sub2.aBoolean9663 = true
         class348_sub42_sub16_sub2.aBoolean9664 = false
         return class348_sub42_sub16_sub2
@@ -217,7 +217,7 @@ class Class112 internal constructor(class297: Class297) : Runnable {
                     if (i_14_ != -1) {
                         var i_18_ = 0
                         val class312 = Class312(Class348_Sub40_Sub4.aClass262_9111)
-                        var class348_sub42_sub12 = (class312.method2327((-53.toByte()).toByte()) as Class348_Sub42_Sub12)
+                        var class348_sub42_sub12 = (class312.method2327(((-53).toByte()).toByte()) as Class348_Sub42_Sub12)
                         while (class348_sub42_sub12 != null) {
                             if (i_14_ == i_18_++) return (class348_sub42_sub12.anInt9609)
                             class348_sub42_sub12 = (class312.method2329(i + -3102) as Class348_Sub42_Sub12)

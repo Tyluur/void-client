@@ -44,7 +44,7 @@ object Class103 {
             Class65.aClass110_Sub1Array1146!![i_13_] = Class65.aClass110_Sub1Array1146!![i_8_]
             Class65.aClass110_Sub1Array1146!![i_8_] = class110_sub1
             for (i_15_ in i_7_..<i_8_) {
-                if (method473((-122.toByte()).toByte(), i_10_, class110_sub1, i, bool_11_, bool, (Class65.aClass110_Sub1Array1146!![i_15_])) <= 0) {
+                if (method473(((-122).toByte()).toByte(), i_10_, class110_sub1, i, bool_11_, bool, (Class65.aClass110_Sub1Array1146!![i_15_])) <= 0) {
                     val class110_sub1_16_ = Class65.aClass110_Sub1Array1146!![i_15_]!!
                     Class65.aClass110_Sub1Array1146!![i_15_] = Class65.aClass110_Sub1Array1146!![i_14_]
                     Class65.aClass110_Sub1Array1146!![i_14_++] = class110_sub1_16_

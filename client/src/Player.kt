@@ -360,15 +360,15 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                         val class348_sub22 = ((Class282.aClass356_3654.method3480(class302.anInt3833.toLong(), -6008)) as Class348_Sub22?)
                         if (class348_sub22 != null) {
                             val npc = (class348_sub22.aNpc_6859)
-                            val i_57_ = (-(Class132.aPlayer_1907.x) + npc.x)
-                            val i_58_ = (-(Class132.aPlayer_1907.y) + npc.y)
+                            val i_57_ = (-(Class132.aPlayer_1907!!.x) + npc.x)
+                            val i_58_ = (-(Class132.aPlayer_1907!!.y) + npc.y)
                             if (Class305.aBoolean3870) method2454(6253, i_57_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_ha, i_58_)
                             else method2453(i_57_, var_ha, 92160000, (this.aClass64Array10323[0]), 0, i_58_, class101, class302.anInt3834)
                         }
                     }
                     if (class302.anInt3840 == 2) {
-                        val i_59_ = (-(Class132.aPlayer_1907.x) + 256 + class302.anInt3835)
-                        val i_60_ = (-(Class132.aPlayer_1907.y) + 256 + class302.anInt3832)
+                        val i_59_ = (-(Class132.aPlayer_1907!!.x) + 256 + class302.anInt3835)
+                        val i_60_ = (-(Class132.aPlayer_1907!!.y) + 256 + class302.anInt3832)
                         var i_61_ = class302.anInt3837 shl 9
                         i_61_ *= i_61_
                         if (Class305.aBoolean3870) method2454(6253, i_59_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), i_61_, class101, var_ha, i_60_)
@@ -377,8 +377,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     if (class302.anInt3840 == 10 && class302.anInt3833 >= 0 && (class302.anInt3833 < (Class294.aPlayerArray5058).size)) {
                         val player_62_ = (Class294.aPlayerArray5058[class302.anInt3833])
                         if (player_62_ != null) {
-                            val i_63_ = (-(Class132.aPlayer_1907.x) + (player_62_.x))
-                            val i_64_ = (-(Class132.aPlayer_1907.y) + (player_62_.y))
+                            val i_63_ = (-(Class132.aPlayer_1907!!.x) + (player_62_.x))
+                            val i_64_ = (-(Class132.aPlayer_1907!!.y) + (player_62_.y))
                             if (Class305.aBoolean3870) method2454(6253, i_63_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_ha, i_64_)
                             else method2453(i_63_, var_ha, 92160000, (this.aClass64Array10323[0]), i xor 0x1, i_64_, class101, class302.anInt3834)
                         }

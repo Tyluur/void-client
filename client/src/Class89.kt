@@ -45,7 +45,7 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
             val i_11_ = i + i_1_
             var i_12_ = i_6_
             while (i_7_ >= i_12_) {
-                val `is`: IntArray? = Class17.anIntArrayArray255!![i_12_]
+                val `is`: IntArray = Class17.anIntArrayArray255!![i_12_]
                 Class135_Sub2.method1156(-27, i_11_, `is`, i_1_, i_5_)
                 Class135_Sub2.method1156(-27, i_2_, `is`, i_9_, i_5_)
                 i_12_++

@@ -73,7 +73,7 @@ object Class99 {
 
     @JvmStatic
     fun method882(i: Byte) {
-        if (i.toInt() != 11) method882((-62.toByte()).toByte())
+        if (i.toInt() != 11) method882(((-62).toByte()).toByte())
         Class348_Sub40_Sub33.aClass46ArrayArray9427 = arrayOfNulls(Class229.aClass45_2978.method414(-1))
         anInt1573++
         Class369_Sub2.aClass46ArrayArray8584 = arrayOfNulls(Class229.aClass45_2978.method414(-1))

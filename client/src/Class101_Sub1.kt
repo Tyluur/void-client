@@ -281,7 +281,7 @@ class Class101_Sub1 : Class101() {
         var anInt5671: Int = 0
         @JvmField
         var anInt5674: Int = 0
-        var aClass246_5675: Class246? = Class284.method2118((-42.toByte()).toByte())
+        var aClass246_5675: Class246? = Class284.method2118(((-42).toByte()).toByte())
         @JvmField
         var anInt5676: Int = 0
         @JvmField

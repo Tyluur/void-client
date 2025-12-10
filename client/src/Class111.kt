@@ -173,7 +173,7 @@ class Class111 internal constructor(class230: Class230?, i: Int, class45: Class4
                 i_16_ = class46_14_.anInt709
             }
             method1843(i_16_, -326, class46, false, i_15_)
-            method239((-114.toByte()).toByte(), i_16_, i_15_, class46)
+            method239(((-114).toByte()).toByte(), i_16_, i_15_, class46)
         }
     }
 }
