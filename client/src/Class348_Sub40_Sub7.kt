@@ -188,7 +188,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                 method132(124, (Class312.anInt3932 == (class46.anInt765)), class46.anInt709, i_24_, class46.anInt789, i_25_)
                                                 Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
                                             }
-                                            Class152.aBooleanArray2076[i_23_] = true
+                                            Class152.aBooleanArray2076!![i_23_] = true
                                             i_18_++
                                             continue
                                         }
@@ -221,14 +221,14 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                         }
                                         if (class46.anInt765 == Class348_Sub45.anInt7102) {
                                             Class318_Sub1_Sub3_Sub4.method2464((-7).toByte(), i_24_, class46.anInt709, class46.anInt789, Class348_Sub8.aHa6654, i_25_, Class348_Sub40_Sub4.Companion.aD9113)
-                                            Class152.aBooleanArray2076[i_23_] = true
+                                            Class152.aBooleanArray2076!![i_23_] = true
                                             Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
                                             i_18_++
                                             continue
                                         }
                                         if (Class218.anInt2861 == class46.anInt765) {
                                             Class361.method3498(class46.anInt789, Class348_Sub8.aHa6654, i_24_, class46.anInt709, true, i_25_)
-                                            Class152.aBooleanArray2076[i_23_] = true
+                                            Class152.aBooleanArray2076!![i_23_] = true
                                             Class348_Sub8.aHa6654!!.KA(i, i_12_, i_14_, i_17_)
                                             i_18_++
                                             continue
@@ -302,7 +302,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     Class110_Sub1.method1042((-123).toByte())
                                                     i_38_ += 12
                                                 }
-                                                Class152.aBooleanArray2076[i_23_] = true
+                                                Class152.aBooleanArray2076!![i_23_] = true
                                             }
                                             i_18_++
                                             continue
@@ -461,7 +461,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                                     i_64_ += (i_62_ * (class46.anInt688) shr 9)
                                                     i_65_ += (i_63_ * (class46.anInt799) shr 9)
                                                 }
-                                                Class157.aClass101_2123.method910()
+                                                Class157.aClass101_2123!!.method910()
                                                 Class348_Sub8.aHa6654!!.method3638(Class157.aClass101_2123)
                                                 Class348_Sub8.aHa6654!!.DA(i_64_, i_65_, i_62_, i_63_)
                                                 Class348_Sub8.aHa6654!!.ya()

@@ -1029,7 +1029,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                 } else {
                     if (class64_sub2_153_.aClass151_5503 == null) class64_sub2_153_.aClass151_5503 = Class151()
                     val class151 = (class64_sub2_153_.aClass151_5503.also { class64_sub2_154_.aClass151_5503 = it })!!
-                    if (class151.aShortArray2067 == null || (class151.aShortArray2067.size < anInt5475)) {
+                    if (class151.aShortArray2067 == null || (class151.aShortArray2067!!.size < anInt5475)) {
                         val i_166_ = anInt5475
                         class151.aByteArray2069 = ByteArray(i_166_)
                         class151.aShortArray2067 = ShortArray(i_166_)
@@ -1040,10 +1040,10 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                         class64_sub2_154_.aShortArray5493!![i_167_] = aShortArray5493!![i_167_]
                         class64_sub2_154_.aShortArray5438!![i_167_] = aShortArray5438!![i_167_]
                         class64_sub2_154_.aShortArray5436!![i_167_] = aShortArray5436!![i_167_]
-                        class151.aShortArray2067[i_167_] = (aClass151_5503!!.aShortArray2067[i_167_])
-                        class151.aShortArray2060[i_167_] = (aClass151_5503!!.aShortArray2060[i_167_])
-                        class151.aShortArray2058[i_167_] = (aClass151_5503!!.aShortArray2058[i_167_])
-                        class151.aByteArray2069[i_167_] = (aClass151_5503!!.aByteArray2069[i_167_])
+                        class151.aShortArray2067!![i_167_] = (aClass151_5503!!.aShortArray2067!![i_167_])
+                        class151.aShortArray2060!![i_167_] = (aClass151_5503!!.aShortArray2060!![i_167_])
+                        class151.aShortArray2058!![i_167_] = (aClass151_5503!!.aShortArray2058!![i_167_])
+                        class151.aByteArray2069!![i_167_] = (aClass151_5503!!.aByteArray2069!![i_167_])
                     }
                 }
                 class64_sub2_154_.aByteArray5499 = aByteArray5499
@@ -2555,7 +2555,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                                                     val i_525_ = -1 + is_502_!![i_524_]
                                                     if (i_525_ == -1) break
                                                     if (is_498_!![i_525_].toInt() != 0) {
-                                                        is_500_[i_525_] = (is_500_[i_525_] + i_520_).toShort()
+                                                        is_500_!![i_525_] = (is_500_[i_525_] + i_520_).toShort()
                                                         is_497_!![i_525_] = (is_497_[i_525_] + i_521_).toShort()
                                                         is_499_!![i_525_] = (is_499_[i_525_] + i_522_).toShort()
                                                         is_498_[i_525_] = (is_498_[i_525_] + i_523_).toByte()
@@ -2573,7 +2573,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                                                     val i_527_ = ((aShortArray5439!![i_526_]) - 1)
                                                     if (i_527_ == -1) break
                                                     if (is_495_!![i_527_].toInt() != 0) {
-                                                        is_494_[i_527_] = (is_494_[i_527_] + i_520_).toShort()
+                                                        is_494_!![i_527_] = (is_494_[i_527_] + i_520_).toShort()
                                                         is_493_!![i_527_] = (is_493_[i_527_] + i_521_).toShort()
                                                         is_496_!![i_527_] = (is_496_[i_527_] + i_522_).toShort()
                                                         is_495_[i_527_] = (is_495_[i_527_] + i_523_).toByte()

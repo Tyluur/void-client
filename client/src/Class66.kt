@@ -839,11 +839,11 @@ object Class66 {
                 val i_89_ = anIntArray1149!![anInt1173]
                 val bool_90_ = anIntArray1149!![anInt1173 + 1] == 1
                 if (Class158.aClass356_4934 != null) {
-                    var class348 = Class158.aClass356_4934.method3480(i_89_.toLong(), -6008)
+                    var class348 = Class158.aClass356_4934!!.method3480(i_89_.toLong(), -6008)
                     if (class348 != null && !bool_90_) class348.method2715(83.toByte())
                     else if (class348 == null && bool_90_) {
                         class348 = Class348()
-                        Class158.aClass356_4934.method3483(112.toByte(), i_89_.toLong(), class348)
+                        Class158.aClass356_4934!!.method3483(112.toByte(), i_89_.toLong(), class348)
                     }
                 }
                 return
@@ -854,7 +854,7 @@ object Class66 {
                     anIntArray1149!![anInt1173++] = 0
                     return
                 } else {
-                    val class348 = Class158.aClass356_4934.method3480(i_91_.toLong(), -6008)
+                    val class348 = Class158.aClass356_4934!!.method3480(i_91_.toLong(), -6008)
                     anIntArray1149!![anInt1173++] = if (class348 != null) 1 else 0
                 }
                 return
@@ -2246,9 +2246,9 @@ object Class66 {
                     val i_219_ = anIntArray1149!![anInt1173]
                     val i_220_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = Class101_Sub3.aClass326_5764!!.method2600(i_220_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_219_, 79.toByte()).method376(class254.aString3258, i_220_, 126.toByte())!!)
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_219_, 79.toByte())!!.method376(class254.aString3258, i_220_, 126.toByte())!!)
                     else {
-                        anIntArray1149!![anInt1173++] = (Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_219_, 50.toByte()).method378(class254.anInt3256, i_220_, false))
+                        anIntArray1149!![anInt1173++] = (Class348_Sub23_Sub2.aClass153_9031!!.method1225(i_219_, 50.toByte())!!.method378(class254.anInt3256, i_220_, false))
                         return
                     }
                     return
@@ -4258,7 +4258,7 @@ object Class66 {
                     if (Class50.aString863 == null) {
                         aStringArray1152!![anInt1170++] = ""
                         return
-                    } else aStringArray1152!![anInt1170++] = Class157.method1245(Class50.aString863, false)
+                    } else aStringArray1152!![anInt1170++] = Class157.method1245(Class50.aString863!!, false)
                     return
                 }
                 if (i == 3612) {

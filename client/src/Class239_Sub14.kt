@@ -99,7 +99,7 @@ class Class239_Sub14 : Class239 {
                 val class124 = Class300.method2277(0, aa_Sub3.aClass45_5207, Class348_Sub31.anInt6923, -1)
                 val l = Class62.method599(-88)
                 Class348_Sub8.aHa6654!!.la()
-                Class157.aClass101_2123.method894(0, Class348_Sub23_Sub2.anInt9037, 0)
+                Class157.aClass101_2123!!.method894(0, Class348_Sub23_Sub2.anInt9037, 0)
                 Class348_Sub8.aHa6654!!.method3638(Class157.aClass101_2123)
                 Class348_Sub8.aHa6654!!.DA(dimension.width / 2, dimension.height / 2, 512, 512)
                 Class348_Sub8.aHa6654!!.xa(1.0f)

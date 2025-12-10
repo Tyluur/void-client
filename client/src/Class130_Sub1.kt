@@ -4164,7 +4164,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
 
             Class363.method3515(-45)
             Class238_Sub1.aBoolean5840 = true
-            for (j1 in 0..99) Class152.aBooleanArray2076[j1] = true
+            for (j1 in 0..99) Class152.aBooleanArray2076!![j1] = true
 
             for (k1 in 0..5) Class239_Sub26.aClass54Array6114!![k1] = Class54()
 

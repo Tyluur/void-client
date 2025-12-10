@@ -3257,14 +3257,14 @@ class Class64_Sub3 : Class64 {
                                 if (i_748_.toInt() == 1) {
                                     val f_805_ = ((class124.anIntArray1844[i_737_]).toFloat() / 1024.0f)
                                     method1885(i_785_, (class124.anIntArray1852[i_780_.toInt()]), i_786_.toInt(), 8, (class124.anIntArray1841[i_780_.toInt()]), Class152.aFloatArray2075, (class124.anIntArray1847[i_780_.toInt()]), f_787_, i_784_, i_783_, f_805_, fs)
-                                    f = Class152.aFloatArray2075[0]
-                                    f_740_ = Class152.aFloatArray2075[1]
+                                    f = Class152.aFloatArray2075!![0]
+                                    f_740_ = Class152.aFloatArray2075!![1]
                                     method1885(i_785_, (class124.anIntArray1852[i_781_.toInt()]), i_786_.toInt(), 8, (class124.anIntArray1841[i_781_.toInt()]), Class152.aFloatArray2075, (class124.anIntArray1847[i_781_.toInt()]), f_787_, i_784_, i_783_, f_805_, fs)
-                                    f_741_ = Class152.aFloatArray2075[0]
-                                    f_742_ = Class152.aFloatArray2075[1]
+                                    f_741_ = Class152.aFloatArray2075!![0]
+                                    f_742_ = Class152.aFloatArray2075!![1]
                                     method1885(i_785_, (class124.anIntArray1852[i_782_.toInt()]), i_786_.toInt(), 8, (class124.anIntArray1841[i_782_.toInt()]), Class152.aFloatArray2075, (class124.anIntArray1847[i_782_.toInt()]), f_787_, i_784_, i_783_, f_805_, fs)
-                                    f_743_ = Class152.aFloatArray2075[0]
-                                    f_744_ = Class152.aFloatArray2075[1]
+                                    f_743_ = Class152.aFloatArray2075!![0]
+                                    f_744_ = Class152.aFloatArray2075!![1]
                                     val f_806_ = f_805_ / 2.0f
                                     if ((0x1 and i_786_.toInt()) == 0) {
                                         if (f_806_ < -f + f_743_) {
@@ -3317,24 +3317,24 @@ class Class64_Sub3 : Class64 {
                                     val f_804_ = ((i_798_.toFloat() * fs[8] + (fs[7] * i_797_.toFloat() + i_796_.toFloat() * fs[6])) / f_801_)
                                     i_747_ = Class331.method2635(f_803_, false, f_804_, f_802_)
                                     Class262.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_780_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (class124.anIntArray1841[i_780_.toInt()]), (class124.anIntArray1847[i_780_.toInt()]), f_788_, Class152.aFloatArray2075, i_784_, i_747_)
-                                    f_740_ = Class152.aFloatArray2075[1]
-                                    f = Class152.aFloatArray2075[0]
-                                    Class262.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_781_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (class124.anIntArray1841[i_781_.toInt()]), (class124.anIntArray1847[i_781_.toInt()]), f_788_, Class152.aFloatArray2075, i_784_, i_747_)
-                                    f_742_ = Class152.aFloatArray2075[1]
-                                    f_741_ = Class152.aFloatArray2075[0]
+                                    f_740_ = Class152.aFloatArray2075!![1]
+                                    f = Class152.aFloatArray2075!![0]
+                                    Class262.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_781_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (class124.anIntArray1841[i_781_.toInt()]), (class124.anIntArray1847[i_781_.toInt()]), f_788_, Class152.aFloatArray2075!!, i_784_, i_747_)
+                                    f_742_ = Class152.aFloatArray2075!![1]
+                                    f_741_ = Class152.aFloatArray2075!![0]
                                     Class262.method1991(f_789_, f_787_, fs, (class124.anIntArray1852[i_782_.toInt()]), i_785_, false, i_786_.toInt(), i_783_, (class124.anIntArray1841[i_782_.toInt()]), (class124.anIntArray1847[i_782_.toInt()]), f_788_, Class152.aFloatArray2075, i_784_, i_747_)
-                                    f_743_ = Class152.aFloatArray2075[0]
-                                    f_744_ = Class152.aFloatArray2075[1]
+                                    f_743_ = Class152.aFloatArray2075!![0]
+                                    f_744_ = Class152.aFloatArray2075!![1]
                                 } else if (i_748_.toInt() == 3) {
                                     Class181.method1367(i_785_, i_786_.toInt(), f_787_, (class124.anIntArray1841[i_780_.toInt()]), Class152.aFloatArray2075, (class124.anIntArray1852[i_780_.toInt()]), i_783_, (class124.anIntArray1847[i_780_.toInt()]), i_784_, -4, fs)
-                                    f_740_ = Class152.aFloatArray2075[1]
-                                    f = Class152.aFloatArray2075[0]
+                                    f_740_ = Class152.aFloatArray2075!![1]
+                                    f = Class152.aFloatArray2075!![0]
                                     Class181.method1367(i_785_, i_786_.toInt(), f_787_, (class124.anIntArray1841[i_781_.toInt()]), Class152.aFloatArray2075, (class124.anIntArray1852[i_781_.toInt()]), i_783_, (class124.anIntArray1847[i_781_.toInt()]), i_784_, -4, fs)
-                                    f_741_ = Class152.aFloatArray2075[0]
-                                    f_742_ = Class152.aFloatArray2075[1]
+                                    f_741_ = Class152.aFloatArray2075!![0]
+                                    f_742_ = Class152.aFloatArray2075!![1]
                                     Class181.method1367(i_785_, i_786_.toInt(), f_787_, (class124.anIntArray1841[i_782_.toInt()]), Class152.aFloatArray2075, (class124.anIntArray1852[i_782_.toInt()]), i_783_, (class124.anIntArray1847[i_782_.toInt()]), i_784_, -4, fs)
-                                    f_744_ = Class152.aFloatArray2075[1]
-                                    f_743_ = Class152.aFloatArray2075[0]
+                                    f_744_ = Class152.aFloatArray2075!![1]
+                                    f_743_ = Class152.aFloatArray2075!![0]
                                     if ((0x1 and i_786_.toInt()) == 0) {
                                         if (-f + f_743_ > 0.5f) {
                                             i_746_ = 1
