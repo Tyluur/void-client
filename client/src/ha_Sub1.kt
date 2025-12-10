@@ -1598,7 +1598,7 @@ class ha_Sub1 private constructor(var_d: d?) : ha(var_d) {
             }
         }
         if (bool_425_) return Class105_Sub3_Sub3(this, `is`, i, i_422_, i_423_, i_424_, bool)
-        return Class105_Sub3_Sub1(this, `is`, i, i_422_, i_423_, i_424_, bool)
+        return Class105_Sub3_Sub1(this, `is`!!, i, i_422_, i_423_, i_424_, bool)
     }
 
     override fun method3691(class207: Class207?, bool: Boolean): Class105 {
