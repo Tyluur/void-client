@@ -296,9 +296,9 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         do {
             try {
                 if (Class297.aString3782 != null) {
-                    val string = Class297.aString3782.lowercase(Locale.getDefault())
+                    val string = Class297.aString3782!!.lowercase(Locale.getDefault())
                     if (string.indexOf("sun") != -1 || string.indexOf("apple") != -1) {
-                        val string_5_ = Class297.aString3796
+                        val string_5_ = Class297.aString3796!!
                         if (string_5_ == "1.1" || string_5_.startsWith("1.1.") || string_5_ == "1.2" || string_5_.startsWith("1.2.")) {
                             method82(-119, "wrongjava")
                             break
@@ -308,11 +308,11 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
                         break
                     }
                 }
-                if (Class297.aString3796 != null && Class297.aString3796.startsWith("1.")) {
+                if (Class297.aString3796 != null && Class297.aString3796!!.startsWith("1.")) {
                     var i = 2
                     var i_6_ = 0
-                    while (Class297.aString3796.length > i) {
-                        val i_7_ = Class297.aString3796.get(i).code
+                    while (Class297.aString3796!!.length > i) {
+                        val i_7_ = Class297.aString3796!!.get(i).code
                         if (i_7_ < 48 || i_7_ > 57) break
                         i++
                         i_6_ = 10 * i_6_ - (-i_7_ + 48)

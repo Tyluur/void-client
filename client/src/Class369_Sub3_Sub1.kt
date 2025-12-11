@@ -105,13 +105,13 @@ class Class369_Sub3_Sub1(class221: Class221?, class341: Class341?, i: Int, i_13_
                     if (class297!!.anEventQueue3799 != null) {
                         var i_12_ = 0
                         if (i.toInt() != -42) method3578(95.toByte(), null, null)
-                        while ( /**/i_12_ < 50 && class297.anEventQueue3799.peekEvent() != null) {
+                        while ( /**/i_12_ < 50 && class297.anEventQueue3799!!.peekEvent() != null) {
                             Class286_Sub5.method2161(30.toByte(), 1L)
                             i_12_++
                         }
                         try {
                             if (`object` == null) break
-                            class297.anEventQueue3799.postEvent(ActionEvent(`object`, 1001, "dummy"))
+                            class297.anEventQueue3799!!.postEvent(ActionEvent(`object`, 1001, "dummy"))
                         } catch (exception: Exception) {
                             /* empty */
                         }
