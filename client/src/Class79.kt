@@ -487,7 +487,7 @@ class Class79 {
                 for (i_72_ in anIntArray1402!!.indices) {
                     if (anIntArray1402!![i_72_] != -1) {
                         synchronized(this.aClass278_1348!!.aClass45_3576!!) {
-                            class124s[i_72_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576), anIntArray1402!![i_72_], -1)
+                            class124s[i_72_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576!!), anIntArray1402!![i_72_], -1)
                         }
                         if (class124s[i_72_] != null) {
                             if (class124s[i_72_]!!.anInt1830 < 13) class124s[i_72_]!!.method1092(2, 115)
@@ -658,7 +658,7 @@ class Class79 {
                 synchronized(this.aClass278_1348!!.aClass45_3576!!) {
                     var i_102_ = 0
                     while ((anIntArray1380!!.size > i_102_)) {
-                        class124s[i_102_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576), anIntArray1380!![i_102_], -1)
+                        class124s[i_102_] = Class300.method2277(0, (this.aClass278_1348!!.aClass45_3576!!), anIntArray1380!![i_102_], -1)
                         i_102_++
                     }
                 }

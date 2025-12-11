@@ -53,10 +53,10 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
         val class300 = method820(i_20_, 29)
         if (i_19_ > -36) return null
         if (class300.anIntArray3821 != null) {
-            class72s = arrayOfNulls<Class72>(class300.anIntArray3821.size)
+            class72s = arrayOfNulls<Class72>(class300.anIntArray3821!!.size)
             var i_21_ = 0
             while (class72s.size > i_21_) {
-                val class38 = class25.method301((class300.anIntArray3821[i_21_]), 29)
+                val class38 = class25.method301((class300.anIntArray3821!![i_21_]), 29)
                 class72s[i_21_] = Class72(class38.anInt498, class38.anInt504, class38.anInt499, class38.anInt502, class38.anInt508, class38.anInt501, class38.anInt503, class38.aBoolean507)
                 i_21_++
             }
@@ -179,7 +179,7 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
                 val i_32_ = ((i_26_ - (i + Class348_Sub42_Sub15.aClass105_9659.method969())) / Class348_Sub42_Sub15.aClass105_9658.method969())
                 for (i_33_ in 0..<i_32_) {
                     Class348_Sub42_Sub15.aClass105_9658.method974(i_24_, (Class348_Sub42_Sub15.aClass105_9658.method969() * i_33_ + (i_28_ + i)))
-                    Class309.aClass105_4808.method974(-Class309.aClass105_4808.method971() + i_25_ + i_24_, (Class348_Sub42_Sub15.aClass105_9658.method969() * i_33_ + i + i_28_))
+                    Class309.aClass105_4808!!.method974(-Class309.aClass105_4808!!.method971() + i_25_ + i_24_, (Class348_Sub42_Sub15.aClass105_9658.method969() * i_33_ + i + i_28_))
                 }
                 Class348_Sub42_Sub15.aClass105_9659.method974(i_24_, (-Class348_Sub42_Sub15.aClass105_9659.method969() + i_28_ + i_26_))
                 Class110.aClass105_1706!!.method974(i_24_ + (i_25_ + -Class348_Sub42_Sub15.aClass105_9659.method971()), i_28_ - (-i_26_ + Class348_Sub42_Sub15.aClass105_9659.method969()))

@@ -1,54 +1,62 @@
+import Class135_Sub1.Companion.method1153
+import Class158.Companion.method1248
+import Class231.Companion.method1642
+import Class286_Sub3.Companion.method2148
+import Class62.method596
+
 /* Class303 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+object Class303 {
+    var aClass114_3842: Class114?
+    var anInt3843: Int = 0
+    @JvmField
+    var anInt3844: Int = 1
+    var anInt3845: Int = 0
+    var anInt3846: Int = 0
 
-public final class Class303 {
-    static Class114 aClass114_3842;
-    static int anInt3843;
-    static int anInt3844 = 1;
-    static int anInt3845;
-    static int anInt3846;
-
-    static final void method2285(boolean bool, byte i, int i_0_) {
-        if (i > -61) aClass114_3842 = null;
-        anInt3843++;
+    fun method2285(bool: Boolean, i: Byte, i_0_: Int) {
+        if (i > -61) aClass114_3842 = null
+        anInt3843++
         if (bool) {
-            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class241.aClass351_3150, Class348_Sub23_Sub2.aClass77_9029, -126);
-            class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_0_);
-            Class348_Sub42_Sub14.method3243(42, class348_sub47);
-        } else Class66.method701(Class141.aClass273_1966, i_0_, -1);
+            val class348_sub47 = method2148(Class241.aClass351_3150, Class348_Sub23_Sub2.aClass77_9029, -126)
+            class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), i_0_)
+            Class348_Sub42_Sub14.method3243(42, class348_sub47)
+        } else Class66.method701(Class141.aClass273_1966!!, i_0_, -1)
     }
 
-    public static void method2286(int i) {
-        aClass114_3842 = null;
-        if (i != 114) anInt3844 = 87;
+    @JvmStatic
+    fun method2286(i: Int) {
+        aClass114_3842 = null
+        if (i != 114) anInt3844 = 87
     }
 
-    static final Class125 method2287(Class348_Sub49 class348_sub49, byte i) {
-        anInt3846++;
-        int i_1_ = class348_sub49.readUnsignedByte(255);
-        Class221 class221 = Class158.method1248(87)[class348_sub49.readUnsignedByte(255)];
-        Class341 class341 = Class62.method596(20000)[class348_sub49.readUnsignedByte(255)];
-        int i_2_ = class348_sub49.readShort(13638);
-        int i_3_ = class348_sub49.readShort(13638);
-        int i_4_ = class348_sub49.readUnsignedShort(842397944);
-        int i_5_ = class348_sub49.readUnsignedShort(842397944);
-        int i_6_ = class348_sub49.readInt((byte) -126);
-        int i_7_ = class348_sub49.readInt((byte) -126);
-        int i_8_ = class348_sub49.readInt((byte) -126);
-        int i_9_ = -54 / ((i - -45) / 61);
-        boolean bool = class348_sub49.readUnsignedByte(255) == 1;
-        return new Class125(i_1_, class221, class341, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, bool);
+    fun method2287(class348_sub49: Class348_Sub49, i: Byte): Class125 {
+        anInt3846++
+        val i_1_ = class348_sub49.readUnsignedByte(255)
+        val class221 = method1248(87)[class348_sub49.readUnsignedByte(255)]
+        val class341 = method596(20000)[class348_sub49.readUnsignedByte(255)]
+        val i_2_ = class348_sub49.readShort(13638)
+        val i_3_ = class348_sub49.readShort(13638)
+        val i_4_ = class348_sub49.readUnsignedShort(842397944)
+        val i_5_ = class348_sub49.readUnsignedShort(842397944)
+        val i_6_ = class348_sub49.readInt((-126).toByte())
+        val i_7_ = class348_sub49.readInt((-126).toByte())
+        val i_8_ = class348_sub49.readInt((-126).toByte())
+        val i_9_ = -54 / ((i - -45) / 61)
+        val bool = class348_sub49.readUnsignedByte(255) == 1
+        return Class125(i_1_, class221, class341, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, i_8_, bool)
     }
 
-    static final void method2288(boolean bool, ha var_ha) {
-        anInt3845++;
-        if (!Class71.aBoolean1211) Class231.method1642((byte) 108, var_ha);
-        else Class135_Sub1.method1153(var_ha, 16);
-        if (bool != false) anInt3844 = -97;
+    @JvmStatic
+    fun method2288(bool: Boolean, var_ha: ha) {
+        anInt3845++
+        if (!Class71.aBoolean1211) method1642(108.toByte(), var_ha)
+        else method1153(var_ha, 16)
+        if (bool != false) anInt3844 = -97
     }
 
-    static {
-        aClass114_3842 = new Class114(114, 4);
+    init {
+        aClass114_3842 = Class114(114, 4)
     }
 }

@@ -148,7 +148,7 @@ class Class72 internal constructor(private val anInt1230: Int, private val anInt
     }
 
     private fun method740(var_ha: ha, class72_60_: Class72?) {
-        val class124 = Class300.method2277(0, Class260.aClass45_3309, anInt1224, -1)
+        val class124 = Class300.method2277(0, Class260.aClass45_3309!!, anInt1224, -1)
         if (class124 != null) {
             var_ha.K(anIntArray1226)
             var_ha.KA(0, 0, anInt1220, anInt1220)

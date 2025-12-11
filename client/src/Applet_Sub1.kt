@@ -111,9 +111,9 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
     open fun method87(i: Byte) {
         if (i > -11) paint(null)
         if (Class305.aCanvas3869 != null) {
-            Class305.aCanvas3869.removeFocusListener(this)
-            Class305.aCanvas3869.getParent().setBackground(Color.black)
-            Class305.aCanvas3869.getParent().remove(Class305.aCanvas3869)
+            Class305.aCanvas3869!!.removeFocusListener(this)
+            Class305.aCanvas3869!!.getParent().setBackground(Color.black)
+            Class305.aCanvas3869!!.getParent().remove(Class305.aCanvas3869)
         }
         anInt7++
         val container: Container
@@ -126,14 +126,14 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         container.setLayout(null)
         Class305.aCanvas3869 = Canvas_Sub1(this)
         container.add(Class305.aCanvas3869)
-        Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
-        Class305.aCanvas3869.setVisible(true)
+        Class305.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+        Class305.aCanvas3869!!.setVisible(true)
         if (container === Class52.aFrame4904) {
             val insets = (Class52.aFrame4904 as Container).getInsets()
-            Class305.aCanvas3869.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -Class335.anInt4167)
-        } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
-        Class305.aCanvas3869.addFocusListener(this)
-        Class305.aCanvas3869.requestFocus()
+            Class305.aCanvas3869!!.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -Class335.anInt4167)
+        } else Class305.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
+        Class305.aCanvas3869!!.addFocusListener(this)
+        Class305.aCanvas3869!!.requestFocus()
         Class348_Sub40_Sub16.aBoolean9229 = true
         Class175.aBoolean2329 = true
         Class49.aBoolean4726 = true
@@ -170,12 +170,12 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         if (Class159.anInt2127++ > 50) {
             Class159.anInt2127 -= 50
             Class49.aBoolean4726 = true
-            Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
-            Class305.aCanvas3869.setVisible(true)
+            Class305.aCanvas3869!!.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
+            Class305.aCanvas3869!!.setVisible(true)
             if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
                 val insets = Class52.aFrame4904!!.getInsets()
-                Class305.aCanvas3869.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + Class335.anInt4167))
-            } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
+                Class305.aCanvas3869!!.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + Class335.anInt4167))
+            } else Class305.aCanvas3869!!.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167)
         }
         method93(-11018)
         if (i > -107) method90(true, true)
@@ -241,8 +241,8 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         Class228.method1629(!bool_4_)
         if (Class305.aCanvas3869 != null) {
             try {
-                Class305.aCanvas3869.removeFocusListener(this)
-                Class305.aCanvas3869.getParent().remove(Class305.aCanvas3869)
+                Class305.aCanvas3869!!.removeFocusListener(this)
+                Class305.aCanvas3869!!.getParent().remove(Class305.aCanvas3869!!)
             } catch (exception: Exception) {
                 /* empty */
             }

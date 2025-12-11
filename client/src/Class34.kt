@@ -15,7 +15,7 @@ class Class34 {
         if (anIntArray472 == null) return null
         val class124s = arrayOfNulls<Class124>(anIntArray472!!.size)
         synchronized(this.aClass150_475!!.aClass45_2054!!) {
-            for (i_0_ in anIntArray472!!.indices) class124s[i_0_] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054), anIntArray472!![i_0_], -1)
+            for (i_0_ in anIntArray472!!.indices) class124s[i_0_] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054!!), anIntArray472!![i_0_], -1)
         }
         var i_1_ = 0
         while (anIntArray472!!.size > i_1_) {
@@ -54,7 +54,7 @@ class Class34 {
         var i_5_ = 0
         synchronized(this.aClass150_475!!.aClass45_2054!!) {
             for (i_6_ in 0..4) {
-                if (anIntArray464[i_6_] != -1) class124s[i_5_++] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054), anIntArray464[i_6_], -1)
+                if (anIntArray464[i_6_] != -1) class124s[i_5_++] = Class300.method2277(0, (this.aClass150_475!!.aClass45_2054!!), anIntArray464[i_6_], -1)
             }
         }
         for (i_7_ in 0..4) {

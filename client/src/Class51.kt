@@ -264,7 +264,7 @@ class Class51 {
                 synchronized(Class341.aClass124Array4236) {
                     for (i_26_ in 0..<i_23_) {
                         synchronized(this.aClass263_933!!.aClass45_3345!!) {
-                            class124 = Class300.method2277(0, (this.aClass263_933!!.aClass45_3345), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
+                            class124 = Class300.method2277(0, (this.aClass263_933!!.aClass45_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
                         if (class124 == null) return null
                         if (class124.anInt1830 < 13) class124.method1092(2, 96)

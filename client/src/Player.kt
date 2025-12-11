@@ -486,12 +486,12 @@ class Player : Class318_Sub1_Sub3_Sub3() {
             val i_77_: Int
             i_77_ = -i_75_ + 50
             while (Class127_Sub1.anInt8388 < i_77_) {
-                Class308.aByteArrayArray3882[Class127_Sub1.anInt8388] = ByteArray(102400)
+                Class308.aByteArrayArray3882!![Class127_Sub1.anInt8388] = ByteArray(102400)
                 Class127_Sub1.anInt8388++
             }
             while (Class127_Sub1.anInt8388 > i_77_) {
                 Class127_Sub1.anInt8388--
-                Class308.aByteArrayArray3882[Class127_Sub1.anInt8388] = null
+                Class308.aByteArrayArray3882!![Class127_Sub1.anInt8388] = null
             }
         } else if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) {
             Class127_Sub1.anInt8388 = 0

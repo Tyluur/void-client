@@ -4300,7 +4300,7 @@ object Class66 {
                     return
                 }
                 if (i == 3617) {
-                    val string = aStringArray1152!![--anInt1170]
+                    val string = aStringArray1152!![--anInt1170]!!
                     Class306.method2298((-117).toByte(), string)
                     return
                 }
