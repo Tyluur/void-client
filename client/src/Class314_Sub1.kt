@@ -233,8 +233,8 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
                 Class287.aCRC32_3691!!.update(`is`, 0, -2 + `is`.size)
                 val i_11_ = Class287.aCRC32_3691!!.getValue().toInt()
                 if (aClass291_6342!!.anIntArray3729[i] != i_11_) throw RuntimeException()
-                if (aClass291_6342!!.aByteArrayArray3730 != null && (aClass291_6342!!.aByteArrayArray3730[i] != null)) {
-                    val is_12_ = aClass291_6342!!.aByteArrayArray3730[i]
+                if (aClass291_6342!!.aByteArrayArray3730 != null && (aClass291_6342!!.aByteArrayArray3730!![i] != null)) {
+                    val is_12_ = aClass291_6342!!.aByteArrayArray3730!![i]!!
                     val is_13_ = Class348_Sub1_Sub2.method2730(i_9_.toInt() xor 0x1196, 0, `is`, `is`.size + -2)
                     for (i_14_ in 0..63) {
                         if (is_12_[i_14_] != is_13_[i_14_]) throw RuntimeException()
@@ -269,8 +269,8 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
             Class287.aCRC32_3691!!.update(`is`, 0, `is`.size + -2)
             val i_15_ = Class287.aCRC32_3691!!.getValue().toInt()
             if (i_15_ != aClass291_6342!!.anIntArray3729[i]) throw RuntimeException()
-            if (aClass291_6342!!.aByteArrayArray3730 != null && (aClass291_6342!!.aByteArrayArray3730[i] != null)) {
-                val is_16_ = aClass291_6342!!.aByteArrayArray3730[i]
+            if (aClass291_6342!!.aByteArrayArray3730 != null && (aClass291_6342!!.aByteArrayArray3730!![i] != null)) {
+                val is_16_ = aClass291_6342!!.aByteArrayArray3730!![i]!!
                 val is_17_ = Class348_Sub1_Sub2.method2730(i_9_ + 4502, 0, `is`, `is`.size - 2)
                 for (i_18_ in 0..63) {
                     if (is_17_[i_18_] != is_16_[i_18_]) throw RuntimeException()

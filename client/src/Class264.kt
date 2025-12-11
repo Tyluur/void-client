@@ -99,12 +99,12 @@ class Class264 {
         @JvmStatic
         fun method2017(i: Int, class17: Class17?, i_3_: Int) {
             anInt3367++
-            if (Class147.anInt2021 < 50 && (class17 != null && class17.anIntArrayArray264 != null && (class17.anIntArrayArray264.size > i) && class17.anIntArrayArray264[i] != null)) {
-                val i_4_ = class17.anIntArrayArray264[i]!![0]
+            if (Class147.anInt2021 < 50 && (class17 != null && class17.anIntArrayArray264 != null && (class17.anIntArrayArray264!!.size > i) && class17.anIntArrayArray264!![i] != null)) {
+                val i_4_ = class17.anIntArrayArray264!![i]!![0]
                 var i_5_ = i_4_ shr 8
-                if (class17.anIntArrayArray264[i]!!.size > 1) {
-                    val i_6_ = (Math.random() * (class17.anIntArrayArray264[i])!!.size.toDouble()).toInt()
-                    if (i_6_ > 0) i_5_ = class17.anIntArrayArray264[i]!![i_6_]
+                if (class17.anIntArrayArray264!![i]!!.size > 1) {
+                    val i_6_ = (Math.random() * (class17.anIntArrayArray264!![i])!!.size.toDouble()).toInt()
+                    if (i_6_ > 0) i_5_ = class17.anIntArrayArray264!![i]!![i_6_]
                 }
                 val i_7_ = 0x7 and (i_4_ shr 5)
                 if (i_3_ > 8) {

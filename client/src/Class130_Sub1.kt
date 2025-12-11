@@ -4117,7 +4117,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class195.anInt5016 = (80.0 * Math.random()).toInt() - 40
             Class20.anInt319 = (Math.random() * 100.0).toInt() - 50
             method3089(-126)
-            for (k in 0..2047) Class294.aPlayerArray5058[k] = null
+            for (k in 0..2047) Class294.aPlayerArray5058!![k] = null
 
             Class150.anInt2057 = 0
             Class348_Sub32.anInt6930 = 0

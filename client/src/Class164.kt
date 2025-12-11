@@ -212,7 +212,7 @@ object Class164 {
             method3038(-1)
             method4011(i + 29684, Class239.aClass45_3146)
             Class348_Sub29.method3004(aa_Sub3.aClass45_5207, false, Class348_Sub40_Sub4.aD9113)
-            val class296 = Class296(Class16.aClass45_233!!.method391("huffman", "", -29832))
+            val class296 = Class296(Class16.aClass45_233!!.method391("huffman", "", -29832)!!)
             method3896(class296, 13.toByte())
             try {
                 init()

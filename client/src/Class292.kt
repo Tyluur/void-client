@@ -1,67 +1,77 @@
+import Class156.Companion.method1242
+import Class272.Companion.method2049
+import Class348_Sub40_Sub34.Companion.method3141
+import Class348_Sub42_Sub8_Sub2.Companion.method3201
+import java.io.IOException
+
 /* Class292 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class292 internal constructor(private val aClass45_4804: Class45) : Interface7 {
+    override fun method31(i: Int): Int {
+        anInt4801++
+        val i_0_ = 16 / ((i - -43) / 62)
+        if (aClass45_4804.method401(125)) return 100
+        return aClass45_4804.method398((-31).toByte())
+    }
 
-public final class Class292 implements Interface7 {
-    static int anInt4797 = 0;
-    static Class114 aClass114_4798;
-    static int anInt4799;
-    static int anInt4800;
-    static int anInt4801;
-    static int anInt4802;
-    static int anInt4803 = -1;
-    private final Class45 aClass45_4804;
-    static int anInt4805;
+    override fun method32(i: Int): Class69? {
+        if (i != -15004) return null
+        anInt4800++
+        return Class69.aClass69_1195
+    }
 
-    static final int method2201(int i) {
-        anInt4805++;
-        synchronized (Class24.aClass60_355) {
-            if (i != 2121) method2202(-113);
-            return Class24.aClass60_355.method575(0);
+    companion object {
+        @JvmField
+        var anInt4797: Int = 0
+        var aClass114_4798: Class114?
+        var anInt4799: Int = 0
+        var anInt4800: Int = 0
+        var anInt4801: Int = 0
+        var anInt4802: Int = 0
+        @JvmField
+        var anInt4803: Int = -1
+        var anInt4805: Int = 0
+
+        fun method2201(i: Int): Int {
+            anInt4805++
+            synchronized(Class24.aClass60_355!!) {
+                if (i != 2121) method2202(-113)
+                return Class24.aClass60_355!!.method575(0)
+            }
         }
-    }
 
-    public final int method31(int i) {
-        anInt4801++;
-        int i_0_ = 16 / ((i - -43) / 62);
-        if (aClass45_4804.method401(125)) return 100;
-        return aClass45_4804.method398((byte) -31);
-    }
-
-    public static void method2202(int i) {
-        aClass114_4798 = null;
-        if (i != -17902) anInt4803 = 78;
-    }
-
-    public final Class69 method32(int i) {
-        if (i != -15004) return null;
-        anInt4800++;
-        return Class69.aClass69_1195;
-    }
-
-    static final boolean method2203(byte i) {
-        int i_1_ = 11 % ((12 - i) / 53);
-        anInt4802++;
-        try {
-            return Class348_Sub42_Sub8_Sub2.method3201(true);
-        } catch (java.io.IOException ioexception) {
-            Class272.method2049(106);
-            return true;
-        } catch (Exception exception) {
-            String string = ("T2 - " + (Class348_Sub3.aClass114_6584 != null ? Class348_Sub3.aClass114_6584.method1058((byte) 119) : -1) + "," + (Class239.aClass114_3145 != null ? Class239.aClass114_3145.method1058((byte) 119) : -1) + "," + (Class348_Sub40_Sub36.aClass114_9456 == null ? -1 : Class348_Sub40_Sub36.aClass114_9456.method1058((byte) 113)) + " - " + Class348_Sub40_Sub25.anInt9341 + "," + ((Class132.aPlayer_1907.anIntArray10320[0]) + za_Sub2.regionTileX) + "," + (Class90.regionTileY - -(Class132.aPlayer_1907.anIntArray10317[0])) + " - ");
-            for (int i_2_ = 0; Class348_Sub40_Sub25.anInt9341 > i_2_ && i_2_ < 50; i_2_++)
-                string += (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[i_2_]) + ",";
-            Class156.method1242(string, exception, 15004);
-            Class348_Sub40_Sub34.method3141(false, (byte) 11);
-            return true;
+        @JvmStatic
+        fun method2202(i: Int) {
+            aClass114_4798 = null
+            if (i != -17902) anInt4803 = 78
         }
-    }
 
-    Class292(Class45 class45) {
-        aClass45_4804 = class45;
-    }
+        @JvmStatic
+        fun method2203(i: Byte): Boolean {
+            val i_1_ = 11 % ((12 - i) / 53)
+            anInt4802++
+            try {
+                return method3201(true)
+            } catch (ioexception: IOException) {
+                method2049(106)
+                return true
+            } catch (exception: Exception) {
+                var string =
+                    ("T2 - " + (if (Class348_Sub3.aClass114_6584 != null) Class348_Sub3.aClass114_6584!!.method1058(119.toByte()) else -1) + "," + (if (Class239.aClass114_3145 != null) Class239.aClass114_3145!!.method1058(119.toByte()) else -1) + "," + (if (Class348_Sub40_Sub36.aClass114_9456 == null) -1 else Class348_Sub40_Sub36.aClass114_9456!!.method1058(113.toByte())) + " - " + Class348_Sub40_Sub25.anInt9341 + "," + ((Class132.aPlayer_1907!!.anIntArray10320!![0]) + za_Sub2.regionTileX) + "," + (Class90.regionTileY - -(Class132.aPlayer_1907!!.anIntArray10317!![0])) + " - ")
+                var i_2_ = 0
+                while (Class348_Sub40_Sub25.anInt9341 > i_2_ && i_2_ < 50) {
+                    string += (Class299.aClass348_Sub49_Sub2_3813!!.aByteArray7154[i_2_]).toString() + ","
+                    i_2_++
+                }
+                method1242(string, exception, 15004)
+                method3141(false, 11.toByte())
+                return true
+            }
+        }
 
-    static {
-        aClass114_4798 = new Class114(29, 7);
+        init {
+            aClass114_4798 = Class114(29, 7)
+        }
     }
 }

@@ -146,7 +146,7 @@ class Class348_Sub40_Sub18 private constructor(i: Int) : Class348_Sub40(0, false
                 Class348_Sub42_Sub4.anInt9513 = 0
                 for (i_13_ in 1..2047) {
                     Class348_Sub5.aByteArray6624!![i_13_] = (Class348_Sub5.aByteArray6624!![i_13_].toInt() shr 1).toByte()
-                    val player = Class294.aPlayerArray5058[i_13_]
+                    val player = Class294.aPlayerArray5058!![i_13_]
                     if (player == null) Class135_Sub1.anIntArray4709!![Class348_Sub42_Sub4.anInt9513++] = i_13_
                     else Class286_Sub7.anIntArray6290!![Class328_Sub1.anInt6513++] = i_13_
                 }

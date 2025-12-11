@@ -131,7 +131,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
         var bool_11_ = true
         if (bool_9_) {
             if (aClass290_5520!!.anInterface5_Impl1_3708 == null) aClass290_5520!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
-            val interface5_impl1 = aClass290_5520!!.anInterface5_Impl1_3708
+            val interface5_impl1 = aClass290_5520!!.anInterface5_Impl1_3708!!
             interface5_impl1.method20(12 * anInt5475, 125.toByte(), 12)
             val buffer = interface5_impl1.method19(true, 26775)
             if (buffer != null) {
@@ -144,7 +144,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
         }
         if (bool) {
             if (aClass290_5482!!.anInterface5_Impl1_3708 == null) aClass290_5482!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
-            val interface5_impl1 = aClass290_5482!!.anInterface5_Impl1_3708
+            val interface5_impl1 = aClass290_5482!!.anInterface5_Impl1_3708!!
             interface5_impl1.method20(4 * anInt5475, 125.toByte(), 4)
             val buffer = interface5_impl1.method19(true, 26775)
             if (buffer == null) bool_11_ = false
@@ -175,7 +175,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
         }
         if (bool_8_) {
             if (aClass290_5424!!.anInterface5_Impl1_3708 == null) aClass290_5424!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
-            val interface5_impl1 = aClass290_5424!!.anInterface5_Impl1_3708
+            val interface5_impl1 = aClass290_5424!!.anInterface5_Impl1_3708!!
             interface5_impl1.method20(anInt5475 * 12, 125.toByte(), 12)
             val buffer = interface5_impl1.method19(true, 26775)
             if (buffer == null) bool_11_ = false
@@ -204,7 +204,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
         }
         if (bool_10_) {
             if (aClass290_5460!!.anInterface5_Impl1_3708 == null) aClass290_5460!!.anInterface5_Impl1_3708 = aHa_Sub3_5419!!.method3889(aBoolean5462, 16711680)
-            val interface5_impl1 = aClass290_5460!!.anInterface5_Impl1_3708
+            val interface5_impl1 = aClass290_5460!!.anInterface5_Impl1_3708!!
             interface5_impl1.method20(anInt5475 * 8, 126.toByte(), 8)
             val buffer = interface5_impl1.method19(true, 26775)
             if (buffer != null) {

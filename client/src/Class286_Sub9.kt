@@ -223,7 +223,7 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
             val bool = (class348_sub49_sub2.readBits((-24).toByte(), i) == 1)
             if (bool) Class18.anIntArray279!![Class101_Sub3.anInt5768++] = i_22_
             val i_23_ = class348_sub49_sub2.readBits((-24).toByte(), 2)
-            val player = Class294.aPlayerArray5058[i_22_]
+            val player = Class294.aPlayerArray5058!![i_22_]!!
             if (i_23_ == 0) {
                 if (bool) player.aBoolean10539 = false
                 else {
@@ -235,7 +235,7 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
                     class359.aBoolean4426 = player.aBoolean10554
                     class359.anInt4425 = (player.anInt10275)
                     if (player.anInt10553 > 0) Class295.method2221(player, -28482)
-                    Class294.aPlayerArray5058[i_22_] = null
+                    Class294.aPlayerArray5058!![i_22_] = null
                     if (class348_sub49_sub2.readBits((-24).toByte(), 1) != 0) Class211.method1538(i_22_, 105.toByte(), class348_sub49_sub2)
                 }
             } else if (i_23_ == 1) {

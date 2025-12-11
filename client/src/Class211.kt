@@ -211,7 +211,7 @@ class Class211 {
                                     } else break
                                     break@while_71_
                                 }
-                                i_40_ = (Class291.anIntArray3726[i_41_] shr 1)
+                                i_40_ = (Class291.anIntArray3726!![i_41_] shr 1)
                                 break@while_74_
                             } while (false)
                             i_40_ = i_41_ shr 10 shl 11
@@ -288,9 +288,9 @@ class Class211 {
                 val i_3_ = class348_sub49_sub2.readBits((-24).toByte(), 6)
                 val bool = (class348_sub49_sub2.readBits((-24).toByte(), 1) == 1)
                 if (bool) Class18.anIntArray279!![Class101_Sub3.anInt5768++] = i
-                if (Class294.aPlayerArray5058[i] != null) throw RuntimeException("hr:lr")
+                if (Class294.aPlayerArray5058!![i] != null) throw RuntimeException("hr:lr")
                 val class359 = Class348_Sub17.aClass359Array6802[i]
-                val player = (Player().also { Class294.aPlayerArray5058[i] = it })
+                val player = (Player().also { Class294.aPlayerArray5058!![i] = it })
                 player.anInt10290 = i
                 if (Class154.aClass348_Sub49Array2105!![i] != null) player.method2452(84.toByte(), Class154.aClass348_Sub49Array2105!![i]!!)
                 player.method2435((-108).toByte(), (class359.anInt4423), true)

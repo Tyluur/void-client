@@ -91,7 +91,7 @@ object Class90 {
                             val i_19_ = 0xff and i_16_
                             aa_Sub1.anIntArray5192!![i_7_] = (Class367_Sub10.aClass45_7382!!.method417("m" + i_18_ + "_" + i_19_, Class348_Sub21.method2955(i.toInt(), 99)))
                             Applet_Sub1.anIntArray38!![i_7_] = Class367_Sub10.aClass45_7382!!.method417("l" + i_18_ + "_" + i_19_, 0)
-                            Class295.anIntArray3759[i_7_] = (Class367_Sub10.aClass45_7382!!.method417("um" + i_18_ + "_" + i_19_, 0))
+                            Class295.anIntArray3759!![i_7_] = (Class367_Sub10.aClass45_7382!!.method417("um" + i_18_ + "_" + i_19_, 0))
                             r.anIntArray9724!![i_7_] = (Class367_Sub10.aClass45_7382!!.method417("ul" + i_18_ + "_" + i_19_, 0))
                             i_7_++
                         }

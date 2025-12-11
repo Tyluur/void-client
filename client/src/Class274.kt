@@ -234,7 +234,7 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
                 Class318_Sub1_Sub3_Sub4.aClass338Array10330 = null
             }
             if (Class294.aClass338Array5060 != null) {
-                for (i_5_ in 0..<Class348_Sub44.anInt7101) Class294.aClass338Array5060[i_5_] = null
+                for (i_5_ in 0..<Class348_Sub44.anInt7101) Class294.aClass338Array5060!![i_5_] = null
                 Class294.aClass338Array5060 = null
             }
             Class354.anIntArrayArrayArray4356 = null

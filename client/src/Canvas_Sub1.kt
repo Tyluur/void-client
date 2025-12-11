@@ -163,8 +163,8 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                         bool = false
                     }
                 }
-                if (Class295.anIntArray3759[i_19_] != -1 && Class129.aByteArrayArray1887!![i_19_] == null) {
-                    Class129.aByteArrayArray1887!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, Class295.anIntArray3759[i_19_], 0)
+                if (Class295.anIntArray3759!![i_19_] != -1 && Class129.aByteArrayArray1887!![i_19_] == null) {
+                    Class129.aByteArrayArray1887!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, Class295.anIntArray3759!![i_19_], 0)
                     if (Class129.aByteArrayArray1887!![i_19_] == null) {
                         Class268.anInt3441++
                         bool = false

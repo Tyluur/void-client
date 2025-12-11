@@ -79,7 +79,7 @@ class Class239_Sub1 : Class239 {
                 val `is` = Class286_Sub7.anIntArray6290!!
                 var i_4_ = 0
                 while (i_3_ > i_4_) {
-                    val player = (Class294.aPlayerArray5058[`is`[i_4_]])
+                    val player = (Class294.aPlayerArray5058!![`is`[i_4_]])!!
                     if (player.aString10544 != null && player.aString10544.equals(string, ignoreCase = true) && (((player == Class132.aPlayer_1907) && (0x10 and Class38.anInt500) != 0) || (player != null && (Class38.anInt500 and 0x8) != 0))) {
                         Class228.anInt2975++
                         val class348_sub47 = Class286_Sub3.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102)
