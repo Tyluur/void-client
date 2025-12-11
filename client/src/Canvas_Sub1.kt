@@ -148,10 +148,10 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
             Class268.anInt3441 = 0
             var bool = true
             var i_19_ = 0
-            while (Class347.aByteArrayArray4281.size > i_19_) {
-                if (aa_Sub1.anIntArray5192!![i_19_] != -1 && Class347.aByteArrayArray4281[i_19_] == null) {
-                    Class347.aByteArrayArray4281[i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, aa_Sub1.anIntArray5192!![i_19_], 0)
-                    if (Class347.aByteArrayArray4281[i_19_] == null) {
+            while (Class347.aByteArrayArray4281!!.size > i_19_) {
+                if (aa_Sub1.anIntArray5192!![i_19_] != -1 && Class347.aByteArrayArray4281!![i_19_] == null) {
+                    Class347.aByteArrayArray4281!![i_19_] = Class367_Sub10.aClass45_7382!!.method410(-1860, aa_Sub1.anIntArray5192!![i_19_], 0)
+                    if (Class347.aByteArrayArray4281!![i_19_] == null) {
                         bool = false
                         Class268.anInt3441++
                     }
@@ -198,7 +198,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
             if (bool) {
                 bool = true
                 Class154.anInt2101 = 0
-                for (i_20_ in Class347.aByteArrayArray4281.indices) {
+                for (i_20_ in Class347.aByteArrayArray4281!!.indices) {
                     var `is` = Class14_Sub4.aByteArrayArray8642!![i_20_]
                     if (`is` != null) {
                         var i_21_ = 64 * (Class348_Sub23_Sub3.anIntArray9042!![i_20_] shr 8) - za_Sub2.regionTileX
@@ -228,7 +228,7 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                     var bool_25_ = false
                     if (Class348_Sub8.aHa6654!!.method3639() && Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259.method1800(-32350) == 2) {
                         var i_26_ = 0
-                        while ((i_26_ < Class347.aByteArrayArray4281.size)) {
+                        while ((i_26_ < Class347.aByteArrayArray4281!!.size)) {
                             if ((Class348_Sub23_Sub1.aByteArrayArray8996!![i_26_] != null) || Class129.aByteArrayArray1887!![i_26_] != null) {
                                 bool_25_ = true
                                 break

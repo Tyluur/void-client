@@ -104,7 +104,7 @@ class Class119_Sub1 : Class119, Interface2 {
                     class324.method2585(
                         Class175.anIntArray2330,
                         Class348_Sub36.aClass46_6990.anInt709,
-                        Class341.aClass105Array4234,
+                        Class341.aClass105Array4234!!,
                         Class348_Sub36.aClass46_6990.anInt700,
                         Class348_Sub36.aClass46_6990.anInt749,
                         Class348_Sub36.aClass46_6990.anInt789,

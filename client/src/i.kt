@@ -231,7 +231,7 @@ class i : Class64, Interface19 {
                 val class342 = this.aClass342Array5118!![i_75_]!!
                 var class342_76_: Class342? = class342
                 if (class342.aClass342_4248 != null) class342_76_ = class342.aClass342_4248
-                if (class342.aClass101_4252 != null) class342.aClass101_4252.method898(class101)
+                if (class342.aClass101_4252 != null) class342.aClass101_4252!!.method898(class101)
                 else class342.aClass101_4252 = class101!!.method907()
                 class342_76_!!.anInt4238 = oa.Companion.anIntArray5140[i++]
                 class342_76_.anInt4239 = oa.Companion.anIntArray5140[i++]

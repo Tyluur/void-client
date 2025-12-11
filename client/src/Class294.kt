@@ -162,7 +162,7 @@ class Class294 : Interface16 {
                     val i_5_ = Class51.aClass311_897!!.method2320(103.toByte())
                     val string = Class51.aClass311_897!!.method2318(-9324)
                     if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
-                    val graphics_6_ = Class342.anImage4249.getGraphics()
+                    val graphics_6_ = Class342.anImage4249!!.getGraphics()
                     graphics_6_.clearRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
                     val i_7_ = anImage5030!!.getWidth(null)
                     val i_8_ = anImage5026!!.getWidth(null)

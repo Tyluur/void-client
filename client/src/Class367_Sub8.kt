@@ -143,7 +143,7 @@ class Class367_Sub8 internal constructor(var_ha_Sub3: ha_Sub3, class269: Class26
 
         @JvmStatic
         fun method3547(i: Int, i_6_: Int): Int {
-            if (Class342.anIntArrayArray4253 != null) return Class342.anIntArrayArray4253[i][i_6_] and 0xffffff
+            if (Class342.anIntArrayArray4253 != null) return Class342.anIntArrayArray4253!![i]!![i_6_] and 0xffffff
             return 0
         }
 

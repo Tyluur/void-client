@@ -11,7 +11,7 @@ import kotlin.math.sin
 abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
     private var aHa4048: ha? = null
     private var aClass143_4063: Class143? = null
-    private fun method2566(class105s: Array<Class105>?, `is`: IntArray?, i: Int, is_0_: IntArray?, is_1_: IntArray?, i_2_: Int, string: String?, i_3_: Int) {
+    private fun method2566(class105s: Array<Class105?>?, `is`: IntArray?, i: Int, is_0_: IntArray?, is_1_: IntArray?, i_2_: Int, string: String?, i_3_: Int) {
         var i = i
         var i_2_ = i_2_
         try {
@@ -49,10 +49,10 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
                                                     else i_11_ = 0
                                                     i_6_++
                                                     val i_12_ = (Class348_Sub41.method3156(true, (string_9_.substring(4))))
-                                                    val class105 = class105s!![i_12_]
+                                                    val class105 = class105s!![i_12_]!!
                                                     val i_13_ = (if (is_0_ == null) class105.method980() else is_0_[i_12_])
                                                     class105.method964(i + i_10_, (-i_13_ + (aClass143_4063!!.anInt1992) + (i_2_ - -i_11_)), 1, 0, 1)
-                                                    i += class105s[i_12_].method966()
+                                                    i += class105s[i_12_]!!.method966()
                                                     i_5_ = -1
                                                 } catch (exception: Exception) {
                                                     /* empty */
@@ -173,7 +173,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    fun method2571(i: Int, i_48_: Int, `is`: IntArray?, string: String?, i_49_: Int, i_50_: Int, class105s: Array<Class105>?, i_51_: Int, i_52_: Int, random: Random?): Int {
+    fun method2571(i: Int, i_48_: Int, `is`: IntArray?, string: String?, i_49_: Int, i_50_: Int, class105s: Array<Class105?>?, i_51_: Int, i_52_: Int, random: Random?): Int {
         try {
             anInt4047++
             if (string == null) return 0
@@ -424,7 +424,7 @@ abstract class Class324 internal constructor(var_ha: ha?, class143: Class143?) {
         }
     }
 
-    fun method2585(`is`: IntArray?, i: Int, class105s: Array<Class105>?, i_125_: Int, i_126_: Int, i_127_: Int, i_128_: Int, random: Random?, i_129_: Int, i_130_: Int, i_131_: Int, i_132_: Int, i_133_: Int, string: String?, is_134_: IntArray?): Int {
+    fun method2585(`is`: IntArray?, i: Int, class105s: Array<Class105?>?, i_125_: Int, i_126_: Int, i_127_: Int, i_128_: Int, random: Random?, i_129_: Int, i_130_: Int, i_131_: Int, i_132_: Int, i_133_: Int, string: String?, is_134_: IntArray?): Int {
         try {
             anInt4050++
             if (string == null) return 0

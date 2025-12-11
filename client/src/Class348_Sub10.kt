@@ -122,7 +122,7 @@ class Class348_Sub10 private constructor(`is`: ByteArray?) : Class348() {
         val bool_52_ = bool_51_
         for (i_53_ in 0..<class276.anInt3555) {
             val class343: Class343 = (aClass343Array6710!![class276.anIntArray3554!![i_53_]])!!
-            val fs: FloatArray? = aFloatArray6707
+            val fs: FloatArray = aFloatArray6707!!
             class343.method2688(fs, i_39_ shr 1, bool_52_)
         }
         if (!bool_51_) {

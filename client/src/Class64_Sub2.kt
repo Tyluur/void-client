@@ -1219,7 +1219,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     val class342 = aClass342Array5474!![i]!!
                     var class342_178_: Class342? = class342
                     if (class342.aClass342_4248 != null) class342_178_ = class342.aClass342_4248
-                    if (class342.aClass101_4252 != null) class342.aClass101_4252.method898(class101_sub2)
+                    if (class342.aClass101_4252 != null) class342.aClass101_4252!!.method898(class101_sub2)
                     else class342.aClass101_4252 = class101_sub2.method907()
                     class342_178_!!.anInt4238 = (((anIntArray5519!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5700) + ((anIntArray5511!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5711)) + ((anIntArray5429!![class342.anInt4244]).toFloat() * (class101_sub2.aFloat5704)) + class101_sub2.aFloat5729).toInt()
                     class342_178_.anInt4239 = (((anIntArray5429!![class342.anInt4244]).toFloat() * class101_sub2.aFloat5732) + ((class101_sub2.aFloat5722 * (anIntArray5519!![(class342.anInt4244)]).toFloat()) + ((anIntArray5511!![(class342.anInt4244)]).toFloat() * (class101_sub2.aFloat5708))) + class101_sub2.aFloat5710).toInt()

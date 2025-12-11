@@ -24,7 +24,7 @@ class Class299_Sub1_Sub1 internal constructor(private val aHa_Sub2_8693: ha_Sub2
                 if (i_0_ < i_2_) i_0_ = i_2_
                 if (class12.aByte205 > 0) bool = true
             }
-            for (i_3_ in 0..5) Class341.anIntArrayArray4233[i_3_] = var_d.method5(false, Class308.anIntArray3883!![i_3_], 1.0f, i_0_, i_0_, i + 192)
+            for (i_3_ in 0..5) Class341.anIntArrayArray4233!![i_3_] = var_d.method5(false, Class308.anIntArray3883!![i_3_], 1.0f, i_0_, i_0_, i + 192)
             aClass258_Sub2_8688 = Class258_Sub2(aHa_Sub2_8693, 6407, i_0_, bool, Class341.anIntArrayArray4233)
         }
         return aClass258_Sub2_8688

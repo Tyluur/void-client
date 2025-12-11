@@ -1278,7 +1278,7 @@ class Class64_Sub1 : Class64 {
                 val class342 = aClass342Array5335!![i]!!
                 var class342_286_: Class342? = class342
                 if (class342.aClass342_4248 != null) class342_286_ = class342.aClass342_4248
-                if (class342.aClass101_4252 != null) class342.aClass101_4252.method898(class101_sub1)
+                if (class342.aClass101_4252 != null) class342.aClass101_4252!!.method898(class101_sub1)
                 else class342.aClass101_4252 = class101_sub1.method907()
                 class342_286_!!.anInt4238 = (class101_sub1.aFloat5686 + ((class101_sub1.aFloat5672 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5673 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5669 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()
                 class342_286_.anInt4239 = (class101_sub1.aFloat5685 + ((class101_sub1.aFloat5655 * (anIntArray5356!![class342.anInt4244]).toFloat()) + (class101_sub1.aFloat5678 * (anIntArray5332!![(class342.anInt4244)]).toFloat()) + (class101_sub1.aFloat5666 * (anIntArray5312!![(class342.anInt4244)]).toFloat()))).toInt()

@@ -1868,7 +1868,7 @@ class Class64_Sub3 : Class64 {
                     var class342_385_: Class342? = class342
                     if (class342.aClass342_4248 != null) class342_385_ = class342.aClass342_4248
                     if (class342.aClass101_4252 == null) class342.aClass101_4252 = class101_sub3.method907()
-                    else class342.aClass101_4252.method898(class101_sub3)
+                    else class342.aClass101_4252!!.method898(class101_sub3)
                     class342_385_!!.anInt4238 = (class101_sub3.aFloat5747 + (((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5781)) + (((anIntArray5543!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5770)) + ((class101_sub3.aFloat5750) * (anIntArray5593!![(class342.anInt4244)]).toFloat())))).toInt()
                     class342_385_.anInt4239 = (class101_sub3.aFloat5772 + (((anIntArray5593!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5769)) + ((class101_sub3.aFloat5761) * (anIntArray5543!![(class342.anInt4244)]).toFloat()) + ((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5762)))).toInt()
                     class342_385_.anInt4240 = (class101_sub3.aFloat5751 + (((anIntArray5644!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5784)) + (((anIntArray5543!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5756)) + ((anIntArray5593!![(class342.anInt4244)]).toFloat() * (class101_sub3.aFloat5754))))).toInt()

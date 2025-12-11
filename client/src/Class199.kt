@@ -56,7 +56,7 @@ class Class199 internal constructor(private val aBoolean2629: Boolean, private v
                     if (color_2_ == null) color_2_ = Color(255, 255, 255)
                     try {
                         if (Class342.anImage4249 == null) Class342.anImage4249 = (Class305.aCanvas3869!!.createImage(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432))
-                        val graphics_3_ = Class342.anImage4249.getGraphics()
+                        val graphics_3_ = Class342.anImage4249!!.getGraphics()
                         graphics_3_.setColor(Color.black)
                         graphics_3_.fillRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432)
                         val i_4_ = -152 + Class321.anInt4017 / 2
