@@ -362,7 +362,7 @@ class Class280 internal constructor(var_ha_Sub3: ha_Sub3) {
         anIntArray3631 = IntArray(8191)
         aClass318_Sub9_Sub2ArrayArray3642 = Array<Array<Class318_Sub9_Sub2?>?>(64) { arrayOfNulls<Class318_Sub9_Sub2>(768) }
         anIntArray3636 = IntArray(1600)
-        aClass130_3637 = (var_ha_Sub3.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076, Class325.aClass325_4078)), Class58(Class325.aClass325_4075)))))
+        aClass130_3637 = (var_ha_Sub3.method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076, Class325.aClass325_4078)), Class58(Class325.aClass325_4075!!)))))
         anInterface5_Impl1_3638 = var_ha_Sub3.method3889(true, 16711680)
         anInterface5_Impl1_3630 = var_ha_Sub3.method3889(false, 16711680)
         anInterface5_Impl1_3630.method20(393168, 124.toByte(), 12)

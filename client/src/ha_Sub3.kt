@@ -351,7 +351,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         val i_28_ = -85 / ((41 - i) / 54)
         anInt7948++
         anInterface5_Impl1_8203!!.method20(24, 125.toByte(), 12)
-        aClass130_8205 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073))))
+        aClass130_8205 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!))))
     }
 
     fun method3817(i: Int, i_29_: Int) {
@@ -1842,7 +1842,7 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
                     if (anInterface5_Impl1_8201!!.method18(6331)) break
                 }
             }
-            aClass130_8190 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073))))
+            aClass130_8190 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!))))
         }
     }
 
@@ -2172,8 +2172,8 @@ abstract class ha_Sub3(canvas: Canvas?, `object`: Any?, var_d: d?, class45: Clas
         method3651(za_Sub2(262144))
         this.aClass130_8204 = method3812(0, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4078)))))
         this.aClass130_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<Class58>(Class58(arrayOf<Class325?>(Class325.aClass325_4073, Class325.aClass325_4076)))))
-        this.aClass130_8208 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073), Class58(Class325.aClass325_4076), Class58(Class325.aClass325_4078), Class58(Class325.aClass325_4075))))
-        this.aClass130_8191 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073), Class58(Class325.aClass325_4076), Class58(Class325.aClass325_4078))))
+        this.aClass130_8208 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!), Class58(Class325.aClass325_4076!!), Class58(Class325.aClass325_4078!!), Class58(Class325.aClass325_4075!!))))
+        this.aClass130_8191 = method3812(0, (arrayOf<Class58>(Class58(Class325.aClass325_4073!!), Class58(Class325.aClass325_4076!!), Class58(Class325.aClass325_4078!!))))
         this.aClass64_Sub2_8206 = Class64_Sub2(this, 0, 0, false, false)
         this.aClass64_Sub2_8198 = Class64_Sub2(this, 0, 0, true, true)
         this.aClass64_Sub2_8192 = Class64_Sub2(this, 0, 0, false, false)
