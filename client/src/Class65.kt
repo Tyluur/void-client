@@ -81,7 +81,7 @@ class Class65 internal constructor(class230: Class230?, i: Int, class45: Class45
         @JvmStatic
         fun method696(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
             if (i_2_ == -1007) {
-                if (i == 1009) Class66.method701(Class327.aClass273_4091, i_1_, i_0_)
+                if (i == 1009) Class66.method701(Class327.aClass273_4091!!, i_1_, i_0_)
                 else if (i != 1012) {
                     if (i == 1002) Class66.method701(Class348_Sub40_Sub32.aClass273_9415!!, i_1_, i_0_)
                     else if (i == 1003) Class66.method701(Class348_Sub12.aClass273_6743, i_1_, i_0_)

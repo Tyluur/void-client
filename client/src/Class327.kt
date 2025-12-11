@@ -1,58 +1,60 @@
-/* Class327 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import Class374.method3610
+import java.io.File
+import java.io.IOException
 
-import java.io.File;
+object Class327 {
+    var anInt4090: Int = 0
+    var aClass273_4091: Class273? = Class273("", 10)
+    var anInt4092: Int = 0
+    var anInt4093: Int = 0
+    var aClass351_4094: Class351? = Class351(47, 4)
+    @JvmField
+    var anInt4095: Int = 0
+    @JvmField
+    var anIntArray4096: IntArray? = IntArray(32)
+    @JvmField
+    var anIntArray4097: IntArray? = IntArray(2)
+    var aClass74_4098: Class74? = Class74(4, 7)
 
-public final class Class327 {
-    static int anInt4090;
-    static Class273 aClass273_4091 = new Class273("", 10);
-    static int anInt4092;
-    static int anInt4093;
-    static Class351 aClass351_4094 = new Class351(47, 4);
-    static int anInt4095;
-    static int[] anIntArray4096 = new int[32];
-    static int[] anIntArray4097 = new int[2];
-    static Class74 aClass74_4098 = new Class74(4, 7);
-
-    public static void method2604(byte i) {
-        aClass273_4091 = null;
-        if (i >= -49) method2606(31, -15L);
-        aClass74_4098 = null;
-        aClass351_4094 = null;
-        anIntArray4096 = null;
-        anIntArray4097 = null;
+    @JvmStatic
+    fun method2604(i: Byte) {
+        aClass273_4091 = null
+        if (i >= -49) method2606(31, -15L)
+        aClass74_4098 = null
+        aClass351_4094 = null
+        anIntArray4096 = null
+        anIntArray4097 = null
     }
 
-    static final boolean method2605(byte i) {
-        anInt4092++;
-        if (i != -99) anIntArray4097 = null;
-        return Class348_Sub43.anInt7068 != 0;
+    fun method2605(i: Byte): Boolean {
+        anInt4092++
+        if (i.toInt() != -99) anIntArray4097 = null
+        return Class348_Sub43.anInt7068 != 0
     }
 
-    static final void method2606(int i, long l) {
+    fun method2606(i: Int, l: Long) {
         try {
-            anInt4090++;
+            anInt4090++
             try {
-                Thread.sleep(l);
-                int i_0_ = 107 % ((-80 - i) / 35);
-            } catch (InterruptedException interruptedexception) {
+                Thread.sleep(l)
+                val i_0_ = 107 % ((-80 - i) / 35)
+            } catch (interruptedexception: InterruptedException) {
                 /* empty */
             }
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, "de.A(" + i + ',' + l + ')');
+        } catch (runtimeexception: RuntimeException) {
+            throw Class348_Sub17.method2929(runtimeexception, "de.A(" + i + ',' + l + ')')
         }
     }
 
-    static final byte[] method2607(int i, File file, int i_1_) {
-        anInt4093++;
+    fun method2607(i: Int, file: File?, i_1_: Int): ByteArray? {
+        anInt4093++
         try {
-            int i_2_ = -87 / ((28 - i_1_) / 54);
-            byte[] is = new byte[i];
-            Class374.method3610(is, (byte) 7, i, file);
-            return is;
-        } catch (java.io.IOException ioexception) {
-            return null;
+            val i_2_ = -87 / ((28 - i_1_) / 54)
+            val `is` = ByteArray(i)
+            method3610(`is`, 7.toByte(), i, file)
+            return `is`
+        } catch (ioexception: IOException) {
+            return null
         }
     }
 }

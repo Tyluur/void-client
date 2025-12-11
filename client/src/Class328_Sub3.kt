@@ -1,29 +1,33 @@
+import Class286_Sub3.Companion.method2152
+import Class318_Sub9_Sub1.Companion.method2516
+
 /* Class328_Sub3 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+object Class328_Sub3 : Class328() {
+    @JvmField
+    var aClass229_6519: Class229? = Class229
+    var anInt6520: Int = 0
+    var anInt6521: Int = 0
+    var anIntArray6522: IntArray? = IntArray(1000)
+    var aFloat6523: Float = 0f
 
-public final class Class328_Sub3 extends Class328 {
-    static Class229 aClass229_6519 = Class229.INSTANCE;
-    static int anInt6520;
-    static int anInt6521;
-    static int[] anIntArray6522 = new int[1000];
-    static float aFloat6523;
-
-    static final void method2615(int i, int i_0_) {
-        anInt6521++;
-        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_0_, (byte) 105, 12);
-        class348_sub42_sub15.method3251(-16058);
-        if (i >= -59) method2617((byte) -108);
+    fun method2615(i: Int, i_0_: Int) {
+        anInt6521++
+        val class348_sub42_sub15 = method2516(i_0_, 105.toByte(), 12)
+        class348_sub42_sub15.method3251(-16058)
+        if (i >= -59) Class328_Sub3.method2617((-108).toByte())
     }
 
-    static final void method2616(int i) {
-        anInt6520++;
-        if (i == 12) Class286_Sub3.method2152(false);
+    fun method2616(i: Int) {
+        anInt6520++
+        if (i == 12) method2152(false)
     }
 
-    public static void method2617(byte i) {
-        anIntArray6522 = null;
-        int i_1_ = -3 / ((i - 3) / 54);
-        aClass229_6519 = null;
+    @JvmStatic
+    fun method2617(i: Byte) {
+        anIntArray6522 = null
+        val i_1_ = -3 / ((i - 3) / 54)
+        aClass229_6519 = null
     }
 }
