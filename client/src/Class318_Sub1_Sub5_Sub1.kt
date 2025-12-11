@@ -141,7 +141,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_ha: ha?, class51: Class51
         val var_s: s?
         val var_s_6_: s?
         if (aBoolean10138) {
-            var_s = Class332.aSArray4142[this.aByte6376.toInt()]
+            var_s = Class332.aSArray4142!![this.aByte6376.toInt()]
             var_s_6_ = Class348_Sub1_Sub1.aSArray8801!![0]
         } else {
             var_s = (Class348_Sub1_Sub1.aSArray8801!![this.aByte6376.toInt()])

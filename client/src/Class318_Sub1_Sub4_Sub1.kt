@@ -153,7 +153,7 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_ha: ha?, class51: Class51
         val var_s_16_: s?
         if (aBoolean10066) {
             var_s = Class348_Sub1_Sub1.aSArray8801!![0]
-            var_s_16_ = Class332.aSArray4142[this.aByte6376.toInt()]
+            var_s_16_ = Class332.aSArray4142!![this.aByte6376.toInt()]
         } else {
             var_s_16_ = (Class348_Sub1_Sub1.aSArray8801!![this.aByte6376.toInt()])
             if (this.aByte6376 < 3) var_s = (Class348_Sub1_Sub1.aSArray8801!![1 + this.aByte6376])

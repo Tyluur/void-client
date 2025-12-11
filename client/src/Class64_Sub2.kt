@@ -1136,7 +1136,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     class64_sub2_154_.aClass334Array5442 = class64_sub2_153_!!.aClass334Array5442
                     var i_174_ = 0
                     while (anInt5406 > i_174_) {
-                        class64_sub2_154_!!.aClass334Array5442!![i_174_]!!.method2648(aClass334Array5442!![i_174_], 118.toByte())
+                        class64_sub2_154_!!.aClass334Array5442!![i_174_]!!.method2648(aClass334Array5442!![i_174_]!!, 118.toByte())
                         i_174_++
                     }
                 } else {
@@ -2326,11 +2326,11 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
                     anIntArray5404!![++i_450_] = anInt5516
                 }
                 Class348_Sub40_Sub37.aLongArray9465 = null
-                aShortArray5470 = Class331.method2639((-111).toByte(), aShortArray5470, anInt5475)
-                aShortArray5416 = Class331.method2639(26.toByte(), aShortArray5416, anInt5475)
-                aShortArray5493 = Class331.method2639(68.toByte(), aShortArray5493, anInt5475)
-                aShortArray5438 = Class331.method2639((-125).toByte(), aShortArray5438, anInt5475)
-                aShortArray5436 = Class331.method2639(70.toByte(), aShortArray5436, anInt5475)
+                aShortArray5470 = Class331.method2639((-111).toByte(), aShortArray5470!!, anInt5475)
+                aShortArray5416 = Class331.method2639(26.toByte(), aShortArray5416!!, anInt5475)
+                aShortArray5493 = Class331.method2639(68.toByte(), aShortArray5493!!, anInt5475)
+                aShortArray5438 = Class331.method2639((-125).toByte(), aShortArray5438!!, anInt5475)
+                aShortArray5436 = Class331.method2639(70.toByte(), aShortArray5436!!, anInt5475)
                 aByteArray5499 = method135(111.toByte(), aByteArray5499, anInt5475)
                 aFloatArray5476 = method3258(0, anInt5475, aFloatArray5476)
                 aFloatArray5506 = method3258(0, anInt5475, aFloatArray5506)

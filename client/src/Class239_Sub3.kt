@@ -154,7 +154,7 @@ class Class239_Sub3 : Class239 {
                         if (Class348_Sub1.anIntArray6547!![i_26_] == i) return Class199.aClass352Array2636!![i_26_]
                     }
                 }
-                var class352 = Class332.aClass60_4139.method583(i.toLong(), -92) as Class352?
+                var class352 = Class332.aClass60_4139!!.method583(i.toLong(), -92) as Class352?
                 if (class352 != null) {
                     if (bool && class352.aClass143_4333 == null) {
                         val class143 = Class239_Sub10.method1766((-76).toByte(), i, s.aClass45_4585!!)
@@ -170,7 +170,7 @@ class Class239_Sub3 : Class239 {
                 if (class143 == null) return null
                 if (!bool) class352 = Class352(var_ha!!.method3686(class143, class207s, true))
                 else class352 = Class352(var_ha!!.method3686(class143, class207s, true), class143)
-                Class332.aClass60_4139.method582(class352, i.toLong(), (-109).toByte())
+                Class332.aClass60_4139!!.method582(class352, i.toLong(), (-109).toByte())
                 return class352
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("jaa.K(" + i + ',' + (if (var_ha != null) "{...}" else "null") + ',' + i_25_ + ',' + bool + ')'))

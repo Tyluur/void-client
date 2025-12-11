@@ -380,7 +380,7 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
                 class348_sub3.method2740(-84, anInt8303)
                 i_127_++
             }
-            Class339.method2669(aClass348_Sub3Array8328, ls, -101)
+            Class339.method2669(aClass348_Sub3Array8328 as? Array<Any?>, ls, -101)
             if (aClass330_8307 != null) aClass330_8307!!.method2632(128)
         }
         anInt8298++

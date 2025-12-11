@@ -76,7 +76,7 @@ class OutputStream_Sub1 : OutputStream() {
                 val i_12_ = Class5.anInt4638
                 for (i_13_ in 0..4) {
                     if (Class181.aBooleanArray2374!![i_13_]) {
-                        val i_14_ = ((Math.random() * ((Class275.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - Class275.anIntArray3552!![i_13_].toDouble() + (sin((Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_13_]).toDouble() * ((Class338.anIntArray4196[i_13_]).toDouble() / 100.0)) * (Class255.anIntArray3273!![i_13_]).toDouble())).toInt()
+                        val i_14_ = ((Math.random() * ((Class275.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - Class275.anIntArray3552!![i_13_].toDouble() + (sin((Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_13_]).toDouble() * ((Class338.anIntArray4196!![i_13_]).toDouble() / 100.0)) * (Class255.anIntArray3273!![i_13_]).toDouble())).toInt()
                         if (i_13_ == 4) {
                             Class348_Sub42_Sub19.anInt9701 += i_14_
                             if (Class348_Sub42_Sub19.anInt9701 >= 1024) {

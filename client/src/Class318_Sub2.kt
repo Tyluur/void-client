@@ -113,7 +113,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                 if (Player.anIntArray10566 != null && class338!!.aByte4181 >= i_18_) {
                     var i_19_ = 0
                     while ((i_19_ < Player.anIntArray10566!!.size)) {
-                        if ((Player.anIntArray10566!![i_19_] != -1000000) && (((Player.anIntArray10566!![i_19_]) >= class338.anIntArray4191[0]) || (class338.anIntArray4191[1] <= (Player.anIntArray10566!![i_19_])) || (class338.anIntArray4191[2] <= (Player.anIntArray10566!![i_19_])) || ((Player.anIntArray10566!![i_19_]) >= class338.anIntArray4191[3])) && ((class338.anIntArray4187[0] <= Class59_Sub1_Sub2.anIntArray8666!![i_19_]) || (class338.anIntArray4187[1] <= Class59_Sub1_Sub2.anIntArray8666!![i_19_]) || (class338.anIntArray4187[2] <= Class59_Sub1_Sub2.anIntArray8666!![i_19_]) || (Class59_Sub1_Sub2.anIntArray8666!![i_19_] >= class338.anIntArray4187[3])) && ((class338.anIntArray4187[0] >= Class250.anIntArray3220!![i_19_]) || (Class250.anIntArray3220!![i_19_] <= class338.anIntArray4187[1]) || (class338.anIntArray4187[2] >= Class250.anIntArray3220!![i_19_]) || (Class250.anIntArray3220!![i_19_] <= class338.anIntArray4187[3])) && ((Class299_Sub2_Sub1.anIntArray8712!![i_19_] >= class338.anIntArray4184[0]) || (Class299_Sub2_Sub1.anIntArray8712!![i_19_] >= class338.anIntArray4184[1]) || (class338.anIntArray4184[2] <= Class299_Sub2_Sub1.anIntArray8712!![i_19_]) || (Class299_Sub2_Sub1.anIntArray8712!![i_19_] >= class338.anIntArray4184[3])) && ((class338.anIntArray4184[0] >= Client.anIntArray5176[i_19_]) || (class338.anIntArray4184[1] >= Client.anIntArray5176[i_19_]) || (class338.anIntArray4184[2] >= Client.anIntArray5176[i_19_]) || (class338.anIntArray4184[3] >= Client.anIntArray5176[i_19_]))
+                        if ((Player.anIntArray10566!![i_19_] != -1000000) && (((Player.anIntArray10566!![i_19_]) >= class338.anIntArray4191[0]) || (class338.anIntArray4191[1] <= (Player.anIntArray10566!![i_19_])) || (class338.anIntArray4191[2] <= (Player.anIntArray10566!![i_19_])) || ((Player.anIntArray10566!![i_19_]) >= class338.anIntArray4191[3])) && ((class338.anIntArray4187!![0] <= Class59_Sub1_Sub2.anIntArray8666!![i_19_]) || (class338.anIntArray4187!![1] <= Class59_Sub1_Sub2.anIntArray8666!![i_19_]) || (class338.anIntArray4187!![2] <= Class59_Sub1_Sub2.anIntArray8666!![i_19_]) || (Class59_Sub1_Sub2.anIntArray8666!![i_19_] >= class338.anIntArray4187!![3])) && ((class338.anIntArray4187!![0] >= Class250.anIntArray3220!![i_19_]) || (Class250.anIntArray3220!![i_19_] <= class338.anIntArray4187!![1]) || (class338.anIntArray4187!![2] >= Class250.anIntArray3220!![i_19_]) || (Class250.anIntArray3220!![i_19_] <= class338.anIntArray4187!![3])) && ((Class299_Sub2_Sub1.anIntArray8712!![i_19_] >= class338.anIntArray4184[0]) || (Class299_Sub2_Sub1.anIntArray8712!![i_19_] >= class338.anIntArray4184[1]) || (class338.anIntArray4184[2] <= Class299_Sub2_Sub1.anIntArray8712!![i_19_]) || (Class299_Sub2_Sub1.anIntArray8712!![i_19_] >= class338.anIntArray4184[3])) && ((class338.anIntArray4184[0] >= Client.anIntArray5176[i_19_]) || (class338.anIntArray4184[1] >= Client.anIntArray5176[i_19_]) || (class338.anIntArray4184[2] >= Client.anIntArray5176[i_19_]) || (class338.anIntArray4184[3] >= Client.anIntArray5176[i_19_]))
                         ) return
                         i_19_++
                     }
@@ -135,7 +135,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                             }
                         }
                         if (bool) {
-                            var f = (Class141.anInt1974 - (class338.anIntArray4187[0])).toFloat()
+                            var f = (Class141.anInt1974 - (class338.anIntArray4187!![0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
                             if (!(f < Class11.anInt194.toFloat()) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338)) Class348_Sub42_Sub19.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338
                         }
@@ -169,7 +169,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                     if (i_26_ >= 0 && i_26_ <= (Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084)) {
                         val i_27_: Int = (class338.aShort4193 + (-Class285_Sub2.anInt8502 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084))
                         if (i_27_ >= 0 && ((Class318_Sub1_Sub4_Sub1.Companion.anInt10084 - -Class318_Sub1_Sub4_Sub1.Companion.anInt10084) >= i_27_) && Class99.aBooleanArrayArray1572!![i_26_]!![i_27_]) {
-                            var f = (Class141.anInt1974 - (class338.anIntArray4187[0])).toFloat()
+                            var f = (Class141.anInt1974 - (class338.anIntArray4187!![0])).toFloat()
                             if (f < 0.0f) f *= -1.0f
                             var f_28_ = (Class348_Sub40_Sub27.anInt9360 + -(class338.anIntArray4184[0])).toFloat()
                             if (f_28_ < 0.0f) f_28_ *= -1.0f

@@ -420,7 +420,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                 i_98_ = (if (class22 != null) Class283.anIntArray3659!![i_76_.toInt()] else 0)
                             } else {
                                 i_98_ = (if (class22 == null) 0 else Class246.anIntArray3173!![i_76_.toInt()])
-                                i_100_ = (if (class277 == null) 0 else Class334.anIntArray4152[i_76_.toInt()])
+                                i_100_ = (if (class277 == null) 0 else Class334.anIntArray4152!![i_76_.toInt()])
                                 is_97_ = Class284.anIntArrayArray3677!![i_76_.toInt()]!!
                                 is_99_ = (Class239_Sub20.anIntArrayArray6054!![i_76_.toInt()]!!)
                                 is_96_ = (Exception_Sub1.anIntArrayArray111!![i_76_.toInt()]!!)
@@ -559,7 +559,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     if (!this.aBoolean3109 && i_66_ == 0) Class333.method2643(i_71_, i_73_, class277.anInt3559, 8 * (class277.anInt3558), class277.anInt3574)
                                     if (i_76_.toInt() != 12 && (class277.anInt3563 != -1) && class277.aBoolean3566) bool = true
                                 } else if (bool_94_) i_102_ += (Class348_Sub40_Sub18.anIntArray9249!![i_76_.toInt()])
-                                else if (!bool_75_) i_102_ += Class334.anIntArray4152[i_76_.toInt()]
+                                else if (!bool_75_) i_102_ += Class334.anIntArray4152!![i_76_.toInt()]
                                 else i_102_ += Class48.anIntArray860!![i_76_.toInt()]
                                 if (class22 != null) {
                                     if (i_82_ == 0) i_82_ = i_79_
@@ -1356,7 +1356,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
             anInt3110++
             if (class46.anInt834 != -1) return method2570(1512932720, class46.anInt834)
             val i_309_ = class46.anInt830 ushr 16
-            val class333 = Class333(Class125.aClass356_4915)
+            val class333 = Class333(Class125.aClass356_4915!!)
             var class348_sub41 = class333.method2644(123.toByte()) as Class348_Sub41?
             while (class348_sub41 != null) {
                 if (i_309_ == class348_sub41.anInt7050) return method2570(1512932720, (class348_sub41.aLong4291).toInt())

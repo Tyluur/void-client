@@ -64,7 +64,7 @@ class Class2 {
         fun method174(i: Int, i_1_: Int) {
             if (i_1_ != -30742) aClass141_117 = null
             anInt121++
-            Class332.aClass60_4139.method578(2, i)
+            Class332.aClass60_4139!!.method578(2, i)
         }
     }
 }

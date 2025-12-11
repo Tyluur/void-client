@@ -392,7 +392,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
                 ls[i_112_] = class348_sub20.aLong4291
                 class348_sub20.method2952(17795, anInt8246)
             }
-            Class339.method2669(aClass348_Sub20Array8282, ls, -21)
+            Class339.method2669(aClass348_Sub20Array8282 as? Array<Any?>, ls, -21)
             if (aClass104_8266 != null) aClass104_8266!!.method957(0)
         }
         anInt8247++

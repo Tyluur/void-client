@@ -139,7 +139,7 @@ class Class84 internal constructor(class230: Class230?, i: Int, class45: Class45
 
         @JvmStatic
         fun method821(i: Int) {
-            Class332.aClass60_4139.method590(0)
+            Class332.aClass60_4139!!.method590(0)
             val i_16_ = -67 / ((i - 39) / 33)
             anInt1459++
         }

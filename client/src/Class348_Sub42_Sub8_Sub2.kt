@@ -287,7 +287,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class181.aBooleanArray2374!![i_23_] = true
                 Class275.anIntArray3552!![i_23_] = i
                 Class255.anIntArray3273!![i_23_] = i_25_
-                Class338.anIntArray4196[i_23_] = i_26_
+                Class338.anIntArray4196!![i_23_] = i_26_
                 Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_23_] = i_24_
                 Class348_Sub3.aClass114_6584 = null
                 return true
