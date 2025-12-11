@@ -336,8 +336,8 @@ open class Class75 {
                             var class318_sub8 = class243.method1872(8) as Class318_Sub8?
                             while (class318_sub8 != null) {
                                 if (class318_sub8.aShortArray6461 != null) {
-                                    for (i_55_ in (class318_sub8.aShortArray6461).indices) {
-                                        var class51: Class51? = (aClass263_1245!!.method2005(0, (class318_sub8.aShortArray6461[i_55_]).toInt() and 0xffff))
+                                    for (i_55_ in (class318_sub8.aShortArray6461!!).indices) {
+                                        var class51: Class51? = (aClass263_1245!!.method2005(0, (class318_sub8.aShortArray6461!![i_55_]).toInt() and 0xffff))
                                         var i_56_ = class51!!.anInt921
                                         if (class51.anIntArray945 != null) {
                                             class51 = (class51.method480(anInterface17_1244!!, 47.toByte()))

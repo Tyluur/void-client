@@ -230,7 +230,7 @@ class Class274 private constructor(string: String?, string_7_: String?, string_8
             }
             anInt3480++
             if (Class318_Sub1_Sub3_Sub4.aClass338Array10330 != null) {
-                for (i_4_ in 0..<Class69.anInt1200) Class318_Sub1_Sub3_Sub4.aClass338Array10330[i_4_] = null
+                for (i_4_ in 0..<Class69.anInt1200) Class318_Sub1_Sub3_Sub4.aClass338Array10330!![i_4_] = null
                 Class318_Sub1_Sub3_Sub4.aClass338Array10330 = null
             }
             if (Class294.aClass338Array5060 != null) {

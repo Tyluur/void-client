@@ -15,7 +15,7 @@ abstract class Class318_Sub1_Sub4 internal constructor(i: Int, i_11_: Int, i_12_
         else if (Class239_Sub25.anInt6111 < i_0_) i_3_ += 2
         if (i_1_ == Class285_Sub2.anInt8502) i_3_ += 3
         else if (i_1_ < Class285_Sub2.anInt8502) i_3_ += 6
-        val i_4_ = Class318_Sub9_Sub2.anIntArray8797[i_3_]
+        val i_4_ = Class318_Sub9_Sub2.anIntArray8797!![i_3_]
         if ((this.aShort8759.toInt() and i_4_) != 0) return this.method2390(class348_sub1s!!, i_0_, -2, i_1_)
         if (this.aShort8759.toInt() == 1 && i_0_ > 0) return this.method2390(class348_sub1s!!, -1 + i_0_, -2, i_1_)
         if (this.aShort8759.toInt() == 4 && i_0_ <= Class318_Sub7.anInt6451) return this.method2390(class348_sub1s!!, 1 + i_0_, -2, i_1_)

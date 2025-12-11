@@ -97,7 +97,7 @@ abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Arra
         fun method3985(i: Int, i_29_: Int): Class147? {
             anInt4591++
             if (i_29_ < 0 || i_29_ >= 100) return null
-            return Class318_Sub2.aClass147Array6400[i_29_]
+            return Class318_Sub2.aClass147Array6400!![i_29_]
         }
 
         @JvmStatic

@@ -110,7 +110,7 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
                 } catch (exception: Exception) {
                     throw RuntimeException(exception.message + " S: " + i_7_)
                 }
-                class348_sub42_sub19.aClass273_9691 = class273
+                class348_sub42_sub19!!.aClass273_9691 = class273
                 Class322.aClass308_4036.method2305(i_7_.toLong() shl 16, class348_sub42_sub19, -1)
                 return class348_sub42_sub19
             }
@@ -125,7 +125,7 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
                 } catch (exception: Exception) {
                     throw RuntimeException(exception.message + " S: " + i_7_)
                 }
-                class348_sub42_sub19.aClass273_9691 = class273
+                class348_sub42_sub19!!.aClass273_9691 = class273
                 Class322.aClass308_4036.method2305(i_7_.toLong() shl 16, class348_sub42_sub19, -1)
                 return class348_sub42_sub19
             }
@@ -140,7 +140,7 @@ class Class153 internal constructor(class230: Class230?, i: Int, class45: Class4
                 } catch (exception: Exception) {
                     throw RuntimeException(exception.message + " S: " + i_7_)
                 }
-                class348_sub42_sub19.aClass273_9691 = class273
+                class348_sub42_sub19!!.aClass273_9691 = class273
                 Class322.aClass308_4036.method2305(i_7_.toLong() shl 16, class348_sub42_sub19, -1)
                 return class348_sub42_sub19
             }

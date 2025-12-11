@@ -819,7 +819,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                         Class348_Sub40_Sub6.anIntArray9135!![i_181_] = 0
                         Class348_Sub8.anIntArray6655!![i_181_] = 0
                         Class265.anIntArray4692!![i_181_] = 0
-                        Class318_Sub9_Sub1.anIntArray8785[i_181_] = 0
+                        Class318_Sub9_Sub1.anIntArray8785!![i_181_] = 0
                         i_181_++
                     }
                     for (i_182_ in -5..<this.anInt3117) {
@@ -834,7 +834,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     Class348_Sub40_Sub6.anIntArray9135!![i_183_] += class22.anInt332
                                     Class348_Sub8.anIntArray6655!![i_183_] += class22.anInt335
                                     Class265.anIntArray4692!![i_183_] += class22.anInt343
-                                    Class318_Sub9_Sub1.anIntArray8785[i_183_]++
+                                    Class318_Sub9_Sub1.anIntArray8785!![i_183_]++
                                 }
                             }
                             val i_186_ = i_182_ - 5
@@ -846,7 +846,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     Class348_Sub40_Sub6.anIntArray9135!![i_183_] -= class22.anInt332
                                     Class348_Sub8.anIntArray6655!![i_183_] -= class22.anInt335
                                     Class265.anIntArray4692!![i_183_] -= class22.anInt343
-                                    Class318_Sub9_Sub1.anIntArray8785[i_183_]--
+                                    Class318_Sub9_Sub1.anIntArray8785!![i_183_]--
                                 }
                             }
                             i_183_++
@@ -864,7 +864,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     i_190_ += (Class348_Sub8.anIntArray6655!![i_194_])
                                     i_189_ += (Class348_Sub40_Sub6.anIntArray9135!![i_194_])
                                     i_188_ += (Class348_Sub24.anIntArray6878[i_194_])
-                                    i_192_ += (Class318_Sub9_Sub1.anIntArray8785[i_194_])
+                                    i_192_ += (Class318_Sub9_Sub1.anIntArray8785!![i_194_])
                                     i_191_ += Class265.anIntArray4692!![i_194_]
                                 }
                                 val i_195_ = i_193_ + -5
@@ -872,7 +872,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                     i_191_ -= Class265.anIntArray4692!![i_195_]
                                     i_188_ -= (Class348_Sub24.anIntArray6878[i_195_])
                                     i_190_ -= (Class348_Sub8.anIntArray6655!![i_195_])
-                                    i_192_ -= (Class318_Sub9_Sub1.anIntArray8785[i_195_])
+                                    i_192_ -= (Class318_Sub9_Sub1.anIntArray8785!![i_195_])
                                     i_189_ -= (Class348_Sub40_Sub6.anIntArray9135!![i_195_])
                                 }
                                 if (i_193_ >= 0 && i_191_ > 0 && i_192_ > 0) `is`[i_182_]!![i_193_] = Class247.method1890(i_190_ / i_192_, 66.toByte(), i_189_ / i_192_, (256 * i_188_ / i_191_))

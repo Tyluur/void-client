@@ -895,24 +895,24 @@ object Class66 {
                 return
             }
             if (i == 5302) {
-                val class57s = Class318_Sub9_Sub1.method2515(1494)
+                val class57s = Class318_Sub9_Sub1.method2515(1494)!!
                 anIntArray1149!![anInt1173++] = class57s.size
                 return
             }
             if (i == 5303) {
                 val i_99_ = anIntArray1149!![--anInt1173]
-                val class57s = Class318_Sub9_Sub1.method2515(1494)
-                anIntArray1149!![anInt1173++] = class57s[i_99_].anInt1047
-                anIntArray1149!![anInt1173++] = class57s[i_99_].anInt1054
+                val class57s = Class318_Sub9_Sub1.method2515(1494)!!
+                anIntArray1149!![anInt1173++] = class57s[i_99_]!!.anInt1047
+                anIntArray1149!![anInt1173++] = class57s[i_99_]!!.anInt1054
                 return
             }
             if (i == 5305) {
                 val i_100_ = Class346.anInt4276
                 val i_101_ = Class239_Sub8.anInt5911
                 var i_102_ = -1
-                val class57s = Class318_Sub9_Sub1.method2515(1494)
+                val class57s = Class318_Sub9_Sub1.method2515(1494)!!
                 for (i_103_ in class57s.indices) {
-                    val class57 = class57s[i_103_]
+                    val class57 = class57s[i_103_]!!
                     if (class57.anInt1047 == i_100_ && class57.anInt1054 == i_101_) {
                         i_102_ = i_103_
                         break
@@ -964,7 +964,7 @@ object Class66 {
             }
             if (i == 5401) {
                 anInt1173 -= 2
-                Class318_Sub6.aShortArray6428[anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
+                Class318_Sub6.aShortArray6428!![anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
                 Exception_Sub1.aClass255_112!!.method1930(-21804)
                 Exception_Sub1.aClass255_112!!.method1936(-71)
                 Class189.aClass278_2529!!.method2074(-118)
@@ -4309,7 +4309,7 @@ object Class66 {
                     return
                 }
                 if (i == 3619) {
-                    val string = aStringArray1152!![--anInt1170]
+                    val string = aStringArray1152!![--anInt1170]!!
                     Class318_Sub1_Sub1_Sub1.method2399(string, -117)
                     return
                 }

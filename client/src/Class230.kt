@@ -153,11 +153,11 @@ class Class230 internal constructor(string: String?, i: Int) {
                                     val class243 = (Class348_Sub42_Sub8_Sub2.aClass76_10436!!.aClass243_1282)
                                     var class318_sub4 = (class243.method1872(8) as Class318_Sub4?)
                                     while (class318_sub4 != null) {
-                                        val class318_sub3s = (class318_sub4.aClass318_Sub3Array6414)
+                                        val class318_sub3s = (class318_sub4.aClass318_Sub3Array6414)!!
                                         var bool_54_ = true
                                         var i_55_ = 0
                                         while (class318_sub3s.size > i_55_) {
-                                            val class318_sub3 = class318_sub3s[i_55_]
+                                            val class318_sub3 = class318_sub3s[i_55_]!!
                                             var i_56_ = (class318_sub3.anInt6405)
                                             var i_57_ = (class318_sub3.anInt6402)
                                             var i_58_ = (class318_sub3.anInt6406)

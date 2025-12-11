@@ -21,8 +21,8 @@ object Class245 {
             class318_0_.aClass318_3970 = class318
             if (bool != true) anIntArray3169 = null
             class318_0_.aClass318_3976 = class318!!.aClass318_3976
-            class318_0_.aClass318_3976.aClass318_3970 = class318_0_
-            class318_0_.aClass318_3970.aClass318_3976 = class318_0_
+            class318_0_.aClass318_3976!!.aClass318_3970 = class318_0_
+            class318_0_.aClass318_3970!!.aClass318_3976 = class318_0_
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("te.B(" + (if (class318 != null) "{...}" else "null") + ',' + (if (class318_0_ != null) "{...}" else "null") + ',' + bool + ')'))
         }

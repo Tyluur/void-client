@@ -345,8 +345,8 @@ class Player : Class318_Sub1_Sub3_Sub3() {
                     class318_sub4 = (OutputStream_Sub2.method136(1 + (this.aClass64Array10323).size, true, false))
                     this.aBoolean10324 = true
                     var_ha.C(false)
-                    if (Class305.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414[(this.aClass64Array10323).size]), Class132.anInt1906, 0)
-                    else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414[(this.aClass64Array10323).size]), 0)
+                    if (Class305.aBoolean3870) class64.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), Class132.anInt1906, 0)
+                    else class64.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![(this.aClass64Array10323).size]), 0)
                     var_ha.C(true)
                 }
             }
@@ -394,11 +394,11 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         this.method2432(var_ha, -15074, class101, false, this.aClass64Array10323)
         if (Class305.aBoolean3870) {
             for (i_65_ in (this.aClass64Array10323).indices) {
-                if (this.aClass64Array10323[i_65_] != null) this.aClass64Array10323[i_65_]!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414[i_65_]), Class132.anInt1906, (if (this != Class132.aPlayer_1907) 0 else 1))
+                if (this.aClass64Array10323[i_65_] != null) this.aClass64Array10323[i_65_]!!.method608(class101, (class318_sub4.aClass318_Sub3Array6414!![i_65_]), Class132.anInt1906, (if (this != Class132.aPlayer_1907) 0 else 1))
             }
         } else {
             for (i_66_ in (this.aClass64Array10323).indices) {
-                if (this.aClass64Array10323[i_66_] != null) this.aClass64Array10323[i_66_]!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414[i_66_]), (if (this == Class132.aPlayer_1907) 1 else 0))
+                if (this.aClass64Array10323[i_66_] != null) this.aClass64Array10323[i_66_]!!.method615(class101, (class318_sub4.aClass318_Sub3Array6414!![i_66_]), (if (this == Class132.aPlayer_1907) 1 else 0))
             }
         }
         if (this.aClass318_Sub10_10327 != null) {

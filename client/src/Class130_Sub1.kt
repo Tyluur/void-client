@@ -4157,7 +4157,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             method882(11.toByte())
             Class49.aClass46_4730 = null
             for (i1 in 0..7) {
-                Class318_Sub1_Sub2_Sub1.aStringArray10195[i1] = null
+                Class318_Sub1_Sub2_Sub1.aStringArray10195!![i1] = null
                 Class71.aBooleanArray1214!![i1] = false
                 Canvas_Sub1.anIntArray60!![i1] = -1
             }

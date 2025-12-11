@@ -279,7 +279,7 @@ class Class255 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
                 run {
                     var i = 0
                     while (class207s.size > i) {
-                        Class318_Sub1_Sub1_Sub1.aClass105Array9959[i] = var_ha!!.method3691(class207s[i], true)
+                        Class318_Sub1_Sub1_Sub1.aClass105Array9959!![i] = var_ha!!.method3691(class207s[i], true)
                         i++
                     }
                 }

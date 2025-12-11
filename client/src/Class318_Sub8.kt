@@ -1,23 +1,16 @@
 /* Class318_Sub8 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class318_Sub8 internal constructor(i: Int, i_0_: Int, var anInt6465: Int, i_2_: Int, i_3_: Int, var aShortArray6461: ShortArray?, var aByteArray6462: ByteArray?) : Class318() {
+    var aByte6460: Byte
+    var aByte6463: Byte
+    var aByte6464: Byte
+    var aByte6466: Byte
 
-public final class Class318_Sub8 extends Class318 {
-    byte aByte6460;
-    short[] aShortArray6461;
-    byte[] aByteArray6462;
-    byte aByte6463;
-    byte aByte6464;
-    int anInt6465;
-    byte aByte6466;
-
-    Class318_Sub8(int i, int i_0_, int i_1_, int i_2_, int i_3_, short[] is, byte[] is_4_) {
-        this.aByte6466 = (byte) i;
-        this.aByte6464 = (byte) i_0_;
-        this.anInt6465 = i_1_;
-        this.aByte6460 = (byte) i_2_;
-        this.aByte6463 = (byte) i_3_;
-        this.aShortArray6461 = is;
-        this.aByteArray6462 = is_4_;
+    init {
+        this.aByte6466 = i.toByte()
+        this.aByte6464 = i_0_.toByte()
+        this.aByte6460 = i_2_.toByte()
+        this.aByte6463 = i_3_.toByte()
     }
 }

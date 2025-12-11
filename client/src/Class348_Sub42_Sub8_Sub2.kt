@@ -288,7 +288,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 Class275.anIntArray3552!![i_23_] = i
                 Class255.anIntArray3273!![i_23_] = i_25_
                 Class338.anIntArray4196[i_23_] = i_26_
-                Class318_Sub1_Sub1_Sub2.anIntArray9981[i_23_] = i_24_
+                Class318_Sub1_Sub1_Sub2.anIntArray9981!![i_23_] = i_24_
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }
@@ -1128,7 +1128,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_138_ = Class299.aClass348_Sub49_Sub2_3813!!.readByteAdd(13.toByte())
                 if (i_137_ >= 1 && i_137_ <= 8) {
                     if (string.equals("null", ignoreCase = true)) string = null
-                    Class318_Sub1_Sub2_Sub1.aStringArray10195[i_137_ + -1] = string
+                    Class318_Sub1_Sub2_Sub1.aStringArray10195!![i_137_ + -1] = string
                     Canvas_Sub1.anIntArray60!![i_137_ + -1] = i
                     Class71.aBooleanArray1214!![i_137_ - 1] = i_138_ == 0
                 }

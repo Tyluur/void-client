@@ -10,8 +10,8 @@ class Class243 {
         class318.aClass318_3976 = aClass318_3166.aClass318_3976
         if (i > -81) aClass318_3167 = null
         class318.aClass318_3970 = aClass318_3166
-        class318.aClass318_3976.aClass318_3970 = class318
-        class318.aClass318_3970.aClass318_3976 = class318
+        class318.aClass318_3976!!.aClass318_3970 = class318
+        class318.aClass318_3970!!.aClass318_3976 = class318
     }
 
     fun method1870(i: Int): Class318? {
@@ -22,7 +22,7 @@ class Class243 {
             aClass318_3167 = null
             return null
         }
-        aClass318_3167 = class318.aClass318_3976
+        aClass318_3167 = class318!!.aClass318_3976
         return class318
     }
 
@@ -40,7 +40,7 @@ class Class243 {
             aClass318_3167 = null
             return null
         }
-        aClass318_3167 = class318.aClass318_3970
+        aClass318_3167 = class318!!.aClass318_3970
         return class318
     }
 
@@ -50,7 +50,7 @@ class Class243 {
         var class318 = aClass318_3166.aClass318_3970
         while (aClass318_3166 !== class318) {
             i_0_++
-            class318 = class318.aClass318_3970
+            class318 = class318!!.aClass318_3970
         }
         return i_0_
     }
@@ -59,7 +59,7 @@ class Class243 {
         anInt3160++
         val class318 = aClass318_3166.aClass318_3970
         if (class318 === aClass318_3166) return null
-        class318.method2373(false)
+        class318!!.method2373(false)
         if (i != 60) method1878(16.toByte())
         return class318
     }
@@ -70,7 +70,7 @@ class Class243 {
             while (true) {
                 val class318 = aClass318_3166.aClass318_3970
                 if (class318 === aClass318_3166) break
-                class318.method2373(false)
+                class318!!.method2373(false)
             }
             aClass318_3167 = null
         }

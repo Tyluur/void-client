@@ -23,7 +23,7 @@ class Class88 {
         var i_0_ = i
         var class318_sub9 = (this.aClass318_Sub9_1503!!.aClass318_Sub9_6469)
         while (this.aClass318_Sub9_1503 !== class318_sub9) {
-            class318_sub9 = class318_sub9.aClass318_Sub9_6469
+            class318_sub9 = class318_sub9!!.aClass318_Sub9_6469
             i_0_++
         }
         return i_0_
@@ -36,8 +36,8 @@ class Class88 {
             class318_sub9.aClass318_Sub9_6469 = this.aClass318_Sub9_1503
             class318_sub9.aClass318_Sub9_6468 = (this.aClass318_Sub9_1503!!.aClass318_Sub9_6468)
             if (bool != true) this.aClass318_Sub9_1503 = null
-            class318_sub9.aClass318_Sub9_6468.aClass318_Sub9_6469 = class318_sub9
-            class318_sub9.aClass318_Sub9_6469.aClass318_Sub9_6468 = class318_sub9
+            class318_sub9.aClass318_Sub9_6468!!.aClass318_Sub9_6469 = class318_sub9
+            class318_sub9.aClass318_Sub9_6469!!.aClass318_Sub9_6468 = class318_sub9
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("lh.A(" + (if (class318_sub9 != null) "{...}" else "null") + ',' + bool + ')'))
         }
@@ -47,7 +47,7 @@ class Class88 {
         while (true) {
             val class318_sub9 = (this.aClass318_Sub9_1503!!.aClass318_Sub9_6469)
             if (class318_sub9 === this.aClass318_Sub9_1503) break
-            class318_sub9.method2514(54)
+            class318_sub9!!.method2514(54)
         }
         if (i < 23) aClass318_Sub9_1505 = null
         anInt1493++
@@ -74,7 +74,7 @@ class Class88 {
             aClass318_Sub9_1505 = null
             return null
         }
-        aClass318_Sub9_1505 = class318_sub9.aClass318_Sub9_6469
+        aClass318_Sub9_1505 = class318_sub9!!.aClass318_Sub9_6469
         return class318_sub9
     }
 

@@ -185,7 +185,7 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
         }
 
         @JvmStatic
-        fun method3542(i: Int, class357s: Array<Array<Array<Class357>?>?>?, i_13_: Int, i_14_: Int, i_15_: Int, bool: Boolean): Boolean {
+        fun method3542(i: Int, class357s: Array<Array<Array<Class357?>?>?>?, i_13_: Int, i_14_: Int, i_15_: Int, bool: Boolean): Boolean {
             anInt7310++
             val i_16_ = if (bool) 1.toByte() else (Class239_Sub15.anInt6006 and 0xff).toByte()
             if (i_16_ == Class289.aByteArrayArrayArray3700!![Class355.anInt4372]!![i_13_]!![i]) return false
@@ -210,28 +210,28 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
                     while_223_@ while ( /**/i_26_ <= 3) {
                         if (class357s[i_26_] != null && (0x8 and (Class348_Sub33.aByteArrayArrayArray6962[i_26_][i_19_][i_22_]).toInt()) == 0) {
                             if (bool_24_ && class357s[i_26_]!![i_19_]!![i_22_] != null) {
-                                if ((class357s[i_26_]!![i_19_]!![i_22_].aClass318_Sub1_Sub4_4406) != null) {
+                                if ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406) != null) {
                                     val i_27_ = Class359.method3492(i_20_, 226)
-                                    if (((class357s[i_26_]!![i_19_]!![i_22_].aClass318_Sub1_Sub4_4406.aShort8759).toInt() == i_27_) || ((class357s[i_26_]!![i_19_]!![i_22_].aClass318_Sub1_Sub4_4403) != null && (i_27_ == (class357s[i_26_]!![i_19_]!![i_22_].aClass318_Sub1_Sub4_4403.aShort8759).toInt()))) {
+                                    if (((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406.aShort8759).toInt() == i_27_) || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_27_ == (class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403.aShort8759).toInt()))) {
                                         i_26_++
                                         continue
                                     }
                                     if (i_21_ != 0) {
                                         val i_28_ = Class359.method3492(i_21_, 226)
-                                        if (((class357s[i_26_]!![i_19_]!![i_22_].aClass318_Sub1_Sub4_4406.aShort8759).toInt() == i_28_) || ((class357s[i_26_]!![i_19_]!![i_22_].aClass318_Sub1_Sub4_4403) != null && ((class357s[i_26_]!![i_19_]!![i_22_].aClass318_Sub1_Sub4_4403.aShort8759).toInt() == i_28_))) {
+                                        if (((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406.aShort8759).toInt() == i_28_) || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403.aShort8759).toInt() == i_28_))) {
                                             i_26_++
                                             continue
                                         }
                                     }
                                     if (i_23_ != 0) {
                                         val i_29_ = Class359.method3492(i_23_, 226)
-                                        if ((class357s[i_26_]!![i_19_]!![i_22_].aClass318_Sub1_Sub4_4406.aShort8759).toInt() == i_29_ || ((class357s[i_26_]!![i_19_]!![i_22_].aClass318_Sub1_Sub4_4403) != null && (i_29_ == (class357s[i_26_]!![i_19_]!![i_22_].aClass318_Sub1_Sub4_4403.aShort8759).toInt()))) {
+                                        if ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406.aShort8759).toInt() == i_29_ || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_29_ == (class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403.aShort8759).toInt()))) {
                                             i_26_++
                                             continue
                                         }
                                     }
                                 }
-                                val class357 = class357s[i_26_]!![i_19_]!![i_22_]
+                                val class357 = class357s[i_26_]!![i_19_]!![i_22_]!!
                                 if (class357.aClass148_4396 != null) {
                                     var class148 = (class357.aClass148_4396)
                                     while (class148 != null) {

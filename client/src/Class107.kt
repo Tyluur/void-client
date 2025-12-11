@@ -166,7 +166,7 @@ class Class107 {
                         val i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.anInt7319 * 2)) - -208
                         val i_8_ = (208 - (Class348_Sub40_Sub3.anInt9109 * 2 - 48) + 4 * Class348_Sub40_Sub3.anInt9109 - i_3_ / 128)
                         Class108.aClass105_1664!!.method967((class46.anInt709.toFloat() / 2.0f + i.toFloat()), (class46.anInt789.toFloat() / 2.0f + i_1_.toFloat()), i_7_.toFloat(), i_8_.toFloat(), i_5_, i_6_ shl 2, var_aa, i, i_1_)
-                        var class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125.method1995(i_2_ xor 0x59b4) as? Class348_Sub35
+                        var class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1995(i_2_ xor 0x59b4) as? Class348_Sub35
                         while (class348_sub35 != null) {
                             val i_9_ = class348_sub35.anInt6976
                             val i_10_ = (-za_Sub2.regionTileX + ((0xfffe5b0 and (r_Sub2.aClass252_10488!!.anIntArray3238!![i_9_])) shr 14))
@@ -174,7 +174,7 @@ class Class107 {
                             val i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_
                             val i_13_ = 2 + (4 * i_11_ - i_3_ / 128)
                             method2385(class46, i_1_, var_aa, (r_Sub2.aClass252_10488!!.anIntArray3239!![i_9_]), i_12_, i, ((-94).toByte()).toByte(), i_13_, var_ha)
-                            class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125.method1990(92.toByte()) as? Class348_Sub35
+                            class348_sub35 = Class318_Sub1_Sub5_Sub1.aClass262_10125!!.method1990(92.toByte()) as? Class348_Sub35
                         }
                         var i_14_ = 0
                         while ((Class348_Sub40_Sub38.anInt9479 > i_14_)) {

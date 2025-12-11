@@ -3673,7 +3673,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                 val player = (class318_sub1_sub3_sub3 as Player)
                                 if (player.anInt10540 != -1) {
                                     i_323_ -= 25
-                                    val class105 = (Class318_Sub1_Sub1_Sub1.aClass105Array9959[(player.anInt10540)])
+                                    val class105 = (Class318_Sub1_Sub1_Sub1.aClass105Array9959!![(player.anInt10540)])!!
                                     class105.method974((-12 + i_317_ + (Class239_Sub21.anIntArray6062!![0])), i_323_)
                                     Class338.method2663(-5590, i_317_ + (Class239_Sub21.anIntArray6062!![0] + -12), (i_317_ - -Class239_Sub21.anIntArray6062!![0] + (-12 + class105.method966())), i_323_, i_323_ + class105.method980())
                                     i_323_ -= 2
