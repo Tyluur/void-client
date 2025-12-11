@@ -96,7 +96,7 @@ class Class119_Sub1 : Class119, Interface2 {
                         }
                     } else `is` = (Exception_Sub1.aClass255_112!!.method1940(-73, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
                     if (`is` != null) string += Class163.method1273(`is`, true)
-                } else string = Class316.method2367(125.toByte(), Class316.aClass348_Sub42_Sub12_3963)
+                } else string = Class316.method2367(125.toByte(), Class316.aClass348_Sub42_Sub12_3963!!)
                 if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508!!.method2063(Class348_Sub33.anInt6967, 544))
                 if (Class348_Sub36.aClass46_6990 != null) {
                     var class324 = Class348_Sub36.aClass46_6990.method426(var_ha, 68.toByte())

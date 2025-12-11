@@ -77,7 +77,7 @@ class Class287 {
                             if (!class17.aBoolean268) Class348_Sub20.method2947(true, i_7_, i_2_, i_3_, 0, i_6_)
                             else Class279.method2090(i_3_, i_6_, false, (-35).toByte(), i_7_, 0, i_2_)
                         }
-                    } else if (Class316.aClass348_Sub51_3959.aClass239_Sub26_7234.method1838(-32350) != 0) {
+                    } else if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7234.method1838(-32350) != 0) {
                         val i_8_ = (class318_sub1!!.x + -256 shr 9)
                         val i_9_ = (class318_sub1.y - 256 shr 9)
                         val i_10_ = (if (Class132.aPlayer_1907 != class318_sub1) ((class318_sub1.plane.toInt() shl 24) + ((i_8_ shl 16) + (i_9_ shl 8)) + i_5_) else 0)

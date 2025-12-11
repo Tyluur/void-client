@@ -43,7 +43,7 @@ class Class10 internal constructor(@JvmField var aByte180: Byte, @JvmField var a
             anInt175++
             if (Class5_Sub1.aBoolean8335 || Class316.aClass348_Sub42_Sub12_3963 == null) return ""
             if (i < 51) return null
-            return (Class316.aClass348_Sub42_Sub12_3963.aString9593)
+            return (Class316.aClass348_Sub42_Sub12_3963!!.aString9593)
         }
 
         @JvmStatic

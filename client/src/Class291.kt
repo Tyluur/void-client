@@ -55,7 +55,7 @@ class Class291 internal constructor(`is`: ByteArray?, i: Int, is_27_: ByteArray?
                 this.anIntArray3733!![(this.anIntArray3738[i_9_])] = class348_sub49.readInt((-126).toByte())
                 i_9_++
             }
-            this.aClass316_3723 = Class316(this.anIntArray3733)
+            this.aClass316_3723 = Class316(this.anIntArray3733!!)
         }
         if (i >= -83) method2200(42.toByte(), null)
         for (i_10_ in 0..<this.anInt3727) this.anIntArray3729[(this.anIntArray3738[i_10_])] = class348_sub49.readInt((-126).toByte())
@@ -109,7 +109,7 @@ class Class291 internal constructor(`is`: ByteArray?, i: Int, is_27_: ByteArray?
                     this.anIntArrayArray3735!![i_22_]!![i_26_] = class348_sub49.readInt((-126).toByte())
                     i_25_++
                 }
-                this.aClass316Array3728!![i_22_] = Class316(this.anIntArrayArray3735!![i_22_])
+                this.aClass316Array3728!![i_22_] = Class316(this.anIntArrayArray3735!![i_22_]!!)
             }
         }
     }

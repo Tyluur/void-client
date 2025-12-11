@@ -384,7 +384,7 @@ class r_Sub1(var_ha_Sub3: ha_Sub3?, i: Int, i_19_: Int) : r() {
         @JvmStatic
         fun method3290(i: Int) {
             if (i < 30) aClass262_10479 = null
-            method131(Class316.aClass348_Sub51_3959.aClass239_Sub5_7240.method1739(-32350) == 1, 2, true, 22050)
+            method131(Class316.aClass348_Sub51_3959!!.aClass239_Sub5_7240.method1739(-32350) == 1, 2, true, 22050)
             anInt10470++
             Class348_Sub40.aClass279_7042 = Class193.method1439(22050, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, 0, 7)
             Class348_Sub42_Sub18.method3273(true, -114, Class172.method1326(null, 9))

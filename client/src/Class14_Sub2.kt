@@ -40,7 +40,7 @@ class Class14_Sub2 internal constructor(class377: Class377?, i: Int, bool: Boole
                 while (class144!!.anInt1997 == 0) Class286_Sub5.method2161((-122).toByte(), 1L)
                 if (class144.anInt1997 == 1) {
                     class234 = class144.anObject1998 as Class234?
-                    val class348_sub49 = Class316.aClass348_Sub51_3959.method3427(24)
+                    val class348_sub49 = Class316.aClass348_Sub51_3959!!.method3427(24)
                     class234!!.method1658(114.toByte(), 0, (class348_sub49.anInt7197), (class348_sub49.aByteArray7154))
                 }
             } catch (exception: Exception) {

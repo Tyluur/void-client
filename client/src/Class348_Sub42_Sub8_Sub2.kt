@@ -1304,11 +1304,11 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 return true
             }
             if (Class59_Sub2_Sub2.aClass114_8683 == Class348_Sub3.aClass114_6584) {
-                if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959.aClass239_Sub8_7227.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227.method1751(-32350), -1, 102.toByte(), false, -1)
                 val `is` = ByteArray(Class348_Sub40_Sub25.anInt9341)
                 Class299.aClass348_Sub49_Sub2_3813!!.method3409(Class348_Sub40_Sub25.anInt9341, `is`, 0, -32769)
                 val string = method3546(`is`, 0, Class348_Sub40_Sub25.anInt9341, 0)
-                Class179.method1360(string, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 1, true, 99)
+                Class179.method1360(string, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350) == 1, true, 99)
                 Class348_Sub3.aClass114_6584 = null
                 return true
             }

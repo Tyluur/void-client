@@ -68,7 +68,7 @@ class Class348_Sub9 : Class348() {
             if (this.aClass51_6695 == null) {
                 if (this.aNpc_6691 == null) {
                     if ((this.aPlayer_6679) != null) {
-                        this.anInt6685 = (Class315.method2357(-1, (this.aPlayer_6679)))
+                        this.anInt6685 = (Class315.method2357(-1, (this.aPlayer_6679!!)))
                         this.anInt6694 = (this.aPlayer_6679!!.anInt10553) shl 9
                         this.anInt6677 = (this.aPlayer_6679!!.anInt10558)
                         this.anInt6681 = 256

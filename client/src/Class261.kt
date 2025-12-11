@@ -277,7 +277,7 @@ class Class261 internal constructor(class230: Class230?, i: Int, class45: Class4
                             }
                             if (i_35_ != -1) {
                                 var i_39_ = 0
-                                val class312 = Class312(Class348_Sub40_Sub4.aClass262_9111)
+                                val class312 = Class312(Class348_Sub40_Sub4.aClass262_9111!!)
                                 var class348_sub42_sub12 = (class312.method2327((-53).toByte()) as Class348_Sub42_Sub12?)
                                 while (class348_sub42_sub12 != null) {
                                     if (i_35_ == i_39_) {

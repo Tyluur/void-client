@@ -14,7 +14,7 @@ class Class26 internal constructor(class45: Class45?, class45_9_: Class45?) {
         var class348_sub19_sub1 = aClass356_381.method3480(l, -6008) as Class348_Sub19_Sub1?
         if (class348_sub19_sub1 != null) return class348_sub19_sub1
         if (`is` != null && `is`[0] <= 0) return null
-        val class317 = Class317.method2372(aClass45_379, i_1_, i)
+        val class317 = Class317.method2372(aClass45_379!!, i_1_, i)
         if (i_0_ < 50) Companion.method311((-60).toByte(), 'n')
         if (class317 == null) return null
         class348_sub19_sub1 = class317.method2369()

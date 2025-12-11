@@ -62,7 +62,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
             method178(i_13_, bool, (-84).toByte(), i_14_)
             method182(63, i_14_, i_13_, bool)
             var string = Class51.aClass311_897!!.method2318(i.toInt() xor 0x245b)
-            if (-aLong4640 + Class62.method599(-100) > 10000L) string += " (" + Class51.aClass311_897!!.method2324(i + 149).method525(-117) + ")"
+            if (-aLong4640 + Class62.method599(-100) > 10000L) string += " (" + Class51.aClass311_897!!.method2324(i + 149)!!.method525(-117) + ")"
             aClass324_4637!!.method2575(115.toByte(), (i_13_ + this.aClass369_4635!!.anInt4971 / 2), this.aClass369_4635!!.anInt4961, string, -1, (this.aClass369_4635!!.anInt4966 + 4 + (i_14_ - -(this.aClass369_4635!!.anInt4963 / 2))))
         }
     }
