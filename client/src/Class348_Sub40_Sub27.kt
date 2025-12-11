@@ -4,7 +4,7 @@ class Class348_Sub40_Sub27 : Class348_Sub40(3, false) {
     override fun method3047(i: Int, i_0_: Int): Array<IntArray?>? {
         if (i_0_ != -1564599039) return null
         anInt9356++
-        val `is` = this.aClass322_7033!!.method2557(-90, i)
+        val `is` = this.aClass322_7033!!.method2557(-90, i)!!
         if (this.aClass322_7033!!.aBoolean4035) {
             val is_1_ = this.method3048(i, i_0_ + -2096661920, 2)!!
             val is_2_ = this.method3039((-74).toByte(), i, 0)!!

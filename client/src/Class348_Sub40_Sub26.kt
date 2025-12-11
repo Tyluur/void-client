@@ -8,15 +8,15 @@ class Class348_Sub40_Sub26 : Class348_Sub40(1, false) {
     override fun method3047(i: Int, i_3_: Int): Array<IntArray?>? {
         if (i_3_ != -1564599039) return null
         anInt9353++
-        val `is` = this.aClass322_7033!!.method2557(i_3_ + 1564598957, i)
+        val `is` = this.aClass322_7033!!.method2557(i_3_ + 1564598957, i)!!
         if (this.aClass322_7033!!.aBoolean4035) {
             val is_4_ = this.method3039((-60).toByte(), i, 0)!!
             val is_5_ = is_4_[0]!!
             val is_6_ = is_4_[1]!!
             val is_7_ = is_4_[2]!!
-            val is_8_ = `is`[0]
-            val is_9_ = `is`[1]
-            val is_10_ = `is`[2]
+            val is_8_ = `is`[0]!!
+            val is_9_ = `is`[1]!!
+            val is_10_ = `is`[2]!!
             var i_11_ = 0
             while ((i_11_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
                 val i_12_ = is_5_[i_11_]

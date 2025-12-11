@@ -20,15 +20,15 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
     private var anInt9402 = 0
     override fun method3047(i: Int, i_8_: Int): Array<IntArray?>? {
         anInt9393++
-        val `is` = this.aClass322_7033!!.method2557(-105, i)
+        val `is` = this.aClass322_7033!!.method2557(-105, i)!!
         if (this.aClass322_7033!!.aBoolean4035) {
             val is_9_ = this.method3039(50.toByte(), i, 0)!!
             val is_10_ = is_9_[0]!!
             val is_11_ = is_9_[1]!!
             val is_12_ = is_9_[2]!!
-            val is_13_ = `is`[0]
-            val is_14_ = `is`[1]
-            val is_15_ = `is`[2]
+            val is_13_ = `is`[0]!!
+            val is_14_ = `is`[1]!!
+            val is_15_ = `is`[2]!!
             var i_16_ = 0
             while ((i_16_ < Class348_Sub40_Sub6.Companion.anInt9139)) {
                 method3129(is_10_[i_16_], is_11_[i_16_], 82.toByte(), is_12_[i_16_])

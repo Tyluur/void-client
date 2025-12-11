@@ -29,7 +29,7 @@ class Class348_Sub40_Sub38 : Class348_Sub40(1, false) {
     override fun method3047(i: Int, i_2_: Int): Array<IntArray?>? {
         if (i_2_ != -1564599039) method3150(true)
         anInt9468++
-        val `is` = this.aClass322_7033!!.method2557(-117, i)
+        val `is` = this.aClass322_7033!!.method2557(-117, i)!!
         if (this.aClass322_7033!!.aBoolean4035) {
             val is_3_ = this.method3039((-88).toByte(), i, 0)!!
             val is_4_ = is_3_[0]!!

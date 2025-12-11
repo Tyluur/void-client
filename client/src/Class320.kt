@@ -1,35 +1,36 @@
 /* Class320 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+object Class320 {
+    var aShort3992: Short = 320
+    var anInt3993: Int = 0
+    var aFloat3994: Float = 0f
 
-public final class Class320 {
-    static short aShort3992 = 320;
-    static int anInt3993;
-    static float aFloat3994;
-
-    static final boolean method2547(int i, byte i_0_) {
-        anInt3993++;
-        if (Class163.aBooleanArray2162[i]) return true;
-        if (!Class229.aClass45_2978.method408((byte) -124, i)) return false;
-        int i_1_ = Class229.aClass45_2978.method407(0, i);
+    fun method2547(i: Int, i_0_: Byte): Boolean {
+        anInt3993++
+        if (Class163.aBooleanArray2162!![i]) return true
+        if (!Class229.aClass45_2978!!.method408((-124).toByte(), i)) return false
+        val i_1_ = Class229.aClass45_2978!!.method407(0, i)
         if (i_1_ == 0) {
-            Class163.aBooleanArray2162[i] = true;
-            return true;
+            Class163.aBooleanArray2162!![i] = true
+            return true
         }
-        if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i] == null) Class348_Sub40_Sub33.aClass46ArrayArray9427[i] = new Class46[i_1_];
-        for (int i_2_ = 0; i_1_ > i_2_; i_2_++) {
-            if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_2_] == null) {
-                byte[] is = Class229.aClass45_2978.method410(i_0_ ^ ~0x717, i, i_2_);
-                if (is != null) {
-                    Class46 class46 = (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_2_] = new Class46());
-                    class46.anInt830 = i_2_ + (i << 16);
-                    if (is[0] != -1) throw new IllegalStateException("if1");
-                    class46.method433(new Class348_Sub49(is), true);
+        if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i] == null) Class348_Sub40_Sub33.aClass46ArrayArray9427!![i] = arrayOfNulls<Class46>(i_1_)
+        var i_2_ = 0
+        while (i_1_ > i_2_) {
+            if (Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!![i_2_] == null) {
+                val `is` = Class229.aClass45_2978!!.method410(i_0_.toInt() xor 0x717.inv(), i, i_2_)
+                if (`is` != null) {
+                    val class46 = (Class46().also { Class348_Sub40_Sub33.aClass46ArrayArray9427!![i]!![i_2_] = it })
+                    class46.anInt830 = i_2_ + (i shl 16)
+                    check(`is`[0].toInt() == -1) { "if1" }
+                    class46.method433(Class348_Sub49(`is`), true)
                 }
             }
+            i_2_++
         }
-        if (i_0_ != 84) aFloat3994 = -0.8522395F;
-        Class163.aBooleanArray2162[i] = true;
-        return true;
+        if (i_0_.toInt() != 84) aFloat3994 = -0.8522395f
+        Class163.aBooleanArray2162!![i] = true
+        return true
     }
 }

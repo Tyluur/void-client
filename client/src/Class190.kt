@@ -164,8 +164,8 @@ class Class190 {
                         else i_17_ -= ((class105.method980() shr 1) - -(i_15_ * class323.method2565()))
                         var i_23_ = 0
                         while (i_15_ > i_23_) {
-                            var string = ha_Sub3.aStringArray8019!![i_23_]
-                            if (i_23_ < -1 + i_15_) string = string!!.substring(0, -4 + string.length)
+                            var string = ha_Sub3.aStringArray8019!![i_23_]!!
+                            if (i_23_ < -1 + i_15_) string = string.substring(0, -4 + string.length)
                             val i_24_ = class323.method2564(string)
                             if (i_18_ < i_24_) i_18_ = i_24_
                             i_23_++

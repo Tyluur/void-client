@@ -80,15 +80,15 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
             val i_11_: Int = Class348_Sub40_Sub6.Companion.anInt9139
             val i_12_ = Class286_Sub2.anInt6212
             val is_13_: Array<IntArray> = Array<IntArray>(i_12_) { IntArray(i_11_) }
-            val is_14_ = this.aClass322_7033!!.method2553(0)
+            val is_14_ = this.aClass322_7033!!.method2553(0)!!
             method3151(is_13_ as Array<IntArray?>?, (-27).toByte())
             var i_15_ = 0
             while (Class286_Sub2.anInt6212 > i_15_) {
                 val is_16_ = is_13_[i_15_]
-                val is_17_ = is_14_[i_15_]
-                val is_18_ = is_17_[0]
-                val is_19_ = is_17_[1]
-                val is_20_ = is_17_[2]
+                val is_17_ = is_14_[i_15_]!!
+                val is_18_ = is_17_[0]!!
+                val is_19_ = is_17_[1]!!
+                val is_20_ = is_17_[2]!!
                 for (i_21_ in 0..<Class348_Sub40_Sub6.Companion.anInt9139) {
                     val i_22_ = is_16_[i_21_]
                     is_20_[i_21_] = Class139.method1166(i_22_, 255) shl 4

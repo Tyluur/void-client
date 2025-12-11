@@ -72,7 +72,7 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
     override fun method3047(i: Int, i_28_: Int): Array<IntArray?>? {
         if (i_28_ != -1564599039) return null
         anInt9462++
-        val `is` = this.aClass322_7033!!.method2557(i_28_ xor 0x5d41e2a6, i)
+        val `is` = this.aClass322_7033!!.method2557(i_28_ xor 0x5d41e2a6, i)!!
         if (this.aClass322_7033!!.aBoolean4035) {
             val i_29_ = 1 + (anInt9463 + anInt9463)
             val i_30_ = 65536 / i_29_
@@ -114,9 +114,9 @@ class Class348_Sub40_Sub37 : Class348_Sub40(1, false) {
                 }
                 is_33_[i_34_ + anInt9463 + -i] = is_36_ as Array<IntArray?>?
             }
-            val is_50_ = `is`[0]
-            val is_51_ = `is`[1]
-            val is_52_ = `is`[2]
+            val is_50_ = `is`[0]!!
+            val is_51_ = `is`[1]!!
+            val is_52_ = `is`[2]!!
             var i_53_ = 0
             while (Class348_Sub40_Sub6.Companion.anInt9139 > i_53_) {
                 var i_54_ = 0

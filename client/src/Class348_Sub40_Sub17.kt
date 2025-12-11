@@ -46,11 +46,11 @@ open class Class348_Sub40_Sub17 : Class348_Sub40(0, false) {
     override fun method3047(i: Int, i_1_: Int): Array<IntArray?>? {
         anInt9239++
         if (i_1_ != -1564599039) method3047(8, -86)
-        val `is` = this.aClass322_7033!!.method2557(-108, i)
+        val `is` = this.aClass322_7033!!.method2557(-108, i)!!
         if (this.aClass322_7033!!.aBoolean4035 && method3090(true)) {
-            val is_2_ = `is`[0]
-            val is_3_ = `is`[1]
-            val is_4_ = `is`[2]
+            val is_2_ = `is`[0]!!
+            val is_3_ = `is`[1]!!
+            val is_4_ = `is`[2]!!
             var i_5_ = (this.anInt9237 * (if (this.anInt9241 != Class286_Sub2.anInt6212) (this.anInt9241 * i / Class286_Sub2.anInt6212) else i))
             if (Class348_Sub40_Sub6.Companion.anInt9139 == this.anInt9237) {
                 var i_6_ = 0
