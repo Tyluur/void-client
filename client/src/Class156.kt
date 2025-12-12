@@ -14,7 +14,7 @@ class Class156 {
             aClass348_Sub42_2115 = null
             return null
         }
-        aClass348_Sub42_2115 = class348_sub42.aClass348_Sub42_7063
+        aClass348_Sub42_2115 = class348_sub42!!.aClass348_Sub42_7063
         return class348_sub42
     }
 

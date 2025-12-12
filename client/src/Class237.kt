@@ -529,7 +529,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                             }
                                             if (is_112_ != null) {
                                                 if (var_s == null || (Class160.aBooleanArrayArray2133!![i_76_.toInt()]!![i_121_])) {
-                                                    if (var_s_65_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495[i_76_.toInt()][i_121_])) {
+                                                    if (var_s_65_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495!![i_76_.toInt()]!![i_121_])) {
                                                         val i_129_ = ((i_71_ shl 9) - -i_126_)
                                                         val i_130_ = ((i_73_ shl 9) + i_125_)
                                                         is_112_[i_103_] = ((var_s_65_.method3986(i_129_, i_130_, (-105).toByte())) + -(var_s_64_!!.method3986(i_129_, i_130_, (-109).toByte())))
@@ -646,7 +646,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                             }
                                             if (is_112_ != null) {
                                                 if (var_s == null || (Class160.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {
-                                                    if (var_s_65_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495[i_76_.toInt()][i_141_])) {
+                                                    if (var_s_65_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495!![i_76_.toInt()]!![i_141_])) {
                                                         val i_149_ = ((i_71_ shl 9) - -i_146_)
                                                         val i_150_ = (i_145_ + (i_73_ shl 9))
                                                         is_112_[i_103_] = ((var_s_65_.method3986(i_149_, i_150_, 92.toByte())) + -(var_s_64_!!.method3986(i_149_, i_150_, 127.toByte())))
@@ -1099,7 +1099,7 @@ open class Class237(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, class268: C
                                             val i_259_ = (is_248_[i_252_] + (i_226_ shl 9))
                                             val i_260_ = ((i_227_ shl 9) + is_249_[i_252_])
                                             is_251_[i_252_] = ((var_s_224_!!.method3986(i_259_, i_260_, 87.toByte())) - (var_s.method3986(i_259_, i_260_, (-90).toByte())))
-                                        } else if (var_s_225_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495[i_228_.toInt()][i_252_])) {
+                                        } else if (var_s_225_ != null && !(Class348_Sub42_Sub1.aBooleanArrayArray9495!![i_228_.toInt()]!![i_252_])) {
                                             val i_261_ = (is_248_[i_252_] + (i_226_ shl 9))
                                             val i_262_ = (is_249_[i_252_] + (i_227_ shl 9))
                                             is_251_[i_252_] = ((var_s_225_.method3986(i_261_, i_262_, (-128).toByte())) + -(var_s_224_!!.method3986(i_261_, i_262_, (-1).toByte())))

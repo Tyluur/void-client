@@ -35,7 +35,7 @@ object Class245 {
             Class9.aHa171!!.K(Class348_Sub40_Sub10.anIntArray9183)
             for (i_2_ in Class17.anIntArray256!!.indices) Class9.aHa171!!.method3660((Class17.anIntArray256!![i_2_] + Class345.anIntArray4271!![i_2_]), -256, (Class348_Sub40_Sub10.anIntArray9183!![3] - Class348_Sub40_Sub10.anIntArray9183!![1]), Class348_Sub40_Sub10.anIntArray9183!![1], true)
             for (i_3_ in 0..<Class348_Sub42_Sub10.anInt9577) {
-                val class338 = Class348_Sub42_Sub19.aClass338Array9700[i_3_]
+                val class338 = Class348_Sub42_Sub19.aClass338Array9700!![i_3_]!!
                 Class9.aHa171!!.H(class338.anIntArray4187!![0], class338.anIntArray4191[0], class338.anIntArray4184[0], Class177.anIntArray4670)
                 Class9.aHa171!!.H(class338.anIntArray4187!![1], class338.anIntArray4191[1], class338.anIntArray4184[1], Class13.anIntArray222)
                 Class9.aHa171!!.H(class338.anIntArray4187!![2], class338.anIntArray4191[2], class338.anIntArray4184[2], anIntArray3169)

@@ -380,18 +380,18 @@ class Class79 {
                             Class348_Sub23_Sub4.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
                             Class67.anIntArray4648!![i_50_] = class182s[i_50_]!!.anInt2456
                             var i_55_ = class17_51_.anIntArray237[i_53_]
-                            Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_] = class87.method839(i_55_ ushr 16, 3)
+                            Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_] = class87.method839(i_55_ ushr 16, 3)
                             i_55_ = i_55_ and 0xffff
                             Class183.anIntArray2466!![i_50_] = i_55_
-                            if ((Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_]) != null) {
-                                bool_46_ = bool_46_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_].method3272(i_55_, 0)
-                                bool_45_ = bool_45_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_].method3271(i_55_, 14)
-                                bool_48_ = bool_48_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_].method3267((-99).toByte(), i_55_)
+                            if ((Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
+                                bool_46_ = bool_46_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3272(i_55_, 0)
+                                bool_45_ = bool_45_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3271(i_55_, 14)
+                                bool_48_ = bool_48_ or Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3267((-99).toByte(), i_55_)
                             }
                         } else {
                             Class348_Sub23_Sub4.anIntArray9050!![i_50_] = 0
                             Class67.anIntArray4648!![i_50_] = 0
-                            Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_50_] = null
+                            Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_50_] = null
                             Class183.anIntArray2466!![i_50_] = -1
                         }
                     }
@@ -530,7 +530,7 @@ class Class79 {
                     var i_80_ = 0
                     while ((i_80_ < aShortArray1328!!.size)) {
                         if (aByteArray1374 == null || aByteArray1374!!.size <= i_80_) class64.ia(aShortArray1328!![i_80_], aShortArray1352[i_80_])
-                        else class64.ia(aShortArray1328!![i_80_], (Class348_Sub42_Sub3.aShortArray9502[aByteArray1374!![i_80_].toInt() and 0xff]))
+                        else class64.ia(aShortArray1328!![i_80_], (Class348_Sub42_Sub3.aShortArray9502!![aByteArray1374!![i_80_].toInt() and 0xff]))
                         i_80_++
                     }
                 }
@@ -572,7 +572,7 @@ class Class79 {
                     i_87_,
                     Class90.anIntArray1518!![i_86_],
                     Class183.anIntArray2466!![i_86_],
-                    (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_86_]),
+                    (Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,
                     (Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_86_]),
                     (Class163.aClass17Array2169!![i_86_]!!.aBoolean242),
@@ -603,7 +603,7 @@ class Class79 {
             var i_91_ = 0
             while (i_49_ > i_91_) {
                 Class318_Sub1_Sub3_Sub1.aClass348_Sub42_Sub17Array10010!![i_91_] = null
-                Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672[i_91_] = null
+                Class348_Sub42_Sub17.aClass348_Sub42_Sub17Array9672!![i_91_] = null
                 Class163.aClass17Array2169!![i_91_] = null
                 i_91_++
             }
@@ -677,7 +677,7 @@ class Class79 {
                 if (aShortArray1328 != null) {
                     var i_104_ = 0
                     while ((aShortArray1328!!.size > i_104_)) {
-                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) class64.ia(aShortArray1328!![i_104_], (Class348_Sub42_Sub3.aShortArray9502[0xff and aByteArray1374!![i_104_].toInt()]))
+                        if (aByteArray1374 != null && aByteArray1374!!.size > i_104_) class64.ia(aShortArray1328!![i_104_], (Class348_Sub42_Sub3.aShortArray9502!![0xff and aByteArray1374!![i_104_].toInt()]))
                         else class64.ia(aShortArray1328!![i_104_], aShortArray1352[i_104_])
                         i_104_++
                     }

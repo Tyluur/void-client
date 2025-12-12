@@ -87,7 +87,7 @@ class Class318_Sub4 : Class318() {
                 for (i_15_ in 0..<i_14_) {
                     var i_16_ = class348_sub49.readUnsignedShort(842397944)
                     val class356 = Class356(method340(i_16_, 108.toByte()))
-                    class348_sub42_sub19.aClass356Array9693[i_15_] = class356
+                    class348_sub42_sub19.aClass356Array9693!![i_15_] = class356
                     while (i_16_-- > 0) {
                         val i_17_ = class348_sub49.readInt((-126).toByte())
                         val i_18_ = class348_sub49.readInt((-126).toByte())
@@ -104,10 +104,10 @@ class Class318_Sub4 : Class318() {
             while (class348_sub49.anInt7197 < i_12_) {
                 val i_20_ = class348_sub49.readUnsignedShort(842397944)
                 if (i_20_ != 3) {
-                    if (i_20_ >= 100 || i_20_ == 21 || i_20_ == 38 || i_20_ == 39) class348_sub42_sub19.anIntArray9694[i_19_] = class348_sub49.readUnsignedByte(255)
-                    else class348_sub42_sub19.anIntArray9694[i_19_] = class348_sub49.readInt((-126).toByte())
-                } else class348_sub42_sub19.aStringArray9692[i_19_] = class348_sub49.readString((-98).toByte()).intern()
-                class348_sub42_sub19.anIntArray9696[i_19_++] = i_20_
+                    if (i_20_ >= 100 || i_20_ == 21 || i_20_ == 38 || i_20_ == 39) class348_sub42_sub19.anIntArray9694!![i_19_] = class348_sub49.readUnsignedByte(255)
+                    else class348_sub42_sub19.anIntArray9694!![i_19_] = class348_sub49.readInt((-126).toByte())
+                } else class348_sub42_sub19.aStringArray9692!![i_19_] = class348_sub49.readString((-98).toByte()).intern()
+                class348_sub42_sub19.anIntArray9696!![i_19_++] = i_20_
             }
             return class348_sub42_sub19
         }

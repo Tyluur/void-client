@@ -51,7 +51,7 @@ class Class50_Sub1 internal constructor(private var anInt5214: Int, private val 
         @JvmField
         var aBoolean5221: Boolean = false
         @JvmField
-        var aStringArray5223: Array<String>? = null
+        var aStringArray5223: Array<String?>? = null
         @JvmField
         var aBoolean5224: Boolean
         @JvmField

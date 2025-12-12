@@ -18,7 +18,7 @@ class Class107 {
         var class348_sub42 = (aClass348_Sub42_1647.aClass348_Sub42_7063)
         while (this.aClass348_Sub42_1647 !== class348_sub42) {
             i_0_++
-            class348_sub42 = class348_sub42.aClass348_Sub42_7063
+            class348_sub42 = class348_sub42!!.aClass348_Sub42_7063
         }
         return i_0_
     }
@@ -41,8 +41,8 @@ class Class107 {
         class348_sub42.aClass348_Sub42_7063 = this.aClass348_Sub42_1647
         class348_sub42.aClass348_Sub42_7060 = (aClass348_Sub42_1647.aClass348_Sub42_7060)
         if (bool == true) {
-            class348_sub42.aClass348_Sub42_7060.aClass348_Sub42_7063 = class348_sub42
-            class348_sub42.aClass348_Sub42_7063.aClass348_Sub42_7060 = class348_sub42
+            class348_sub42.aClass348_Sub42_7060!!.aClass348_Sub42_7063 = class348_sub42
+            class348_sub42.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42
         }
     }
 
@@ -51,7 +51,7 @@ class Class107 {
         anInt1653++
         val class348_sub42 = (aClass348_Sub42_1647.aClass348_Sub42_7063)
         if (class348_sub42 === this.aClass348_Sub42_1647) return null
-        class348_sub42.method3162(true)
+        class348_sub42!!.method3162(true)
         return class348_sub42
     }
 
@@ -61,7 +61,7 @@ class Class107 {
             while (true) {
                 val class348_sub42 = (aClass348_Sub42_1647.aClass348_Sub42_7063)
                 if (this.aClass348_Sub42_1647 === class348_sub42) break
-                class348_sub42.method3162(true)
+                class348_sub42!!.method3162(true)
             }
             aClass348_Sub42_1652 = null
         }
@@ -75,7 +75,7 @@ class Class107 {
             aClass348_Sub42_1652 = null
             return null
         }
-        aClass348_Sub42_1652 = class348_sub42.aClass348_Sub42_7063
+        aClass348_Sub42_1652 = class348_sub42!!.aClass348_Sub42_7063
         return class348_sub42
     }
 

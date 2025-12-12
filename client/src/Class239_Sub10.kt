@@ -91,7 +91,7 @@ class Class239_Sub10 : Class239 {
                 Class88.method842(false)
             }
             Class348_Sub8.aHa6654!!.la()
-            Class348_Sub42_Sub20.method3281(77.toByte(), Class348_Sub8.aHa6654)
+            Class348_Sub42_Sub20.method3281(77.toByte(), Class348_Sub8.aHa6654!!)
             var i_7_ = Class112.method1053(3112)
             if (i_7_ == -1) i_7_ = Class362.anInt4458
             if (i_7_ == -1) i_7_ = Class348_Sub42_Sub16_Sub1.anInt10447

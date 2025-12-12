@@ -68,7 +68,7 @@ object Class108 {
         anInt1660++
         var class348_sub42_sub6 = r_Sub2.aClass262_10492!!.method1995(4) as? Class348_Sub42_Sub6
         while (class348_sub42_sub6 != null) {
-            val class318_sub1_sub3_sub4 = (class348_sub42_sub6.aClass318_Sub1_Sub3_Sub4_9538)
+            val class318_sub1_sub3_sub4 = (class348_sub42_sub6.aClass318_Sub1_Sub3_Sub4_9538)!!
             if (class318_sub1_sub3_sub4.aBoolean10345) {
                 class348_sub42_sub6.method2715(76.toByte())
                 class318_sub1_sub3_sub4.method2466(false)

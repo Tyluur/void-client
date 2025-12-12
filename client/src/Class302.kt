@@ -64,7 +64,7 @@ class Class302 {
                     method842(false)
                 }
                 Class348_Sub8.aHa6654!!.la()
-                Class348_Sub42_Sub20.method3281(46.toByte(), Class348_Sub8.aHa6654)
+                Class348_Sub42_Sub20.method3281(46.toByte(), Class348_Sub8.aHa6654!!)
                 var i_4_ = method1053(3112)
                 if (i_4_ == -1) i_4_ = Class362.anInt4458
                 if (i_4_ == -1) i_4_ = Class348_Sub42_Sub16_Sub1.anInt10447

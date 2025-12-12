@@ -136,7 +136,7 @@ class Class348_Sub40_Sub39 : Class348_Sub40(0, true) {
             Class8.anInt166 = 0
             Class73.anInt4776 = i
             Class348_Sub40_Sub4.Companion.aClass262_9111!!.method1996(125)
-            Class348_Sub42_Sub12.aClass356_9603.method3481(0)
+            Class348_Sub42_Sub12.aClass356_9603!!.method3481(0)
             Class233.aClass107_3022!!.method1009(2110355138)
             Class5_Sub1.aBoolean8335 = false
         }

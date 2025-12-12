@@ -135,13 +135,13 @@ public abstract class Class64 {
             if (i_42_ != -1) {
                 method622()
                 if (NA()) {
-                    val class4 = (class348_sub42_sub17_45_!!.aClass4Array9673[i_42_])
+                    val class4 = (class348_sub42_sub17_45_!!.aClass4Array9673!![i_42_])!!
                     if (i.toInt() != -55) this.aBoolean1124 = false
                     val class348_sub33 = class4.aClass348_Sub33_134
                     var class4_47_: Class4? = null
                     if (class348_sub42_sub17 != null) {
-                        class4_47_ = (class348_sub42_sub17.aClass4Array9673[i_43_])
-                        if (class4_47_.aClass348_Sub33_134 != class348_sub33) class4_47_ = null
+                        class4_47_ = (class348_sub42_sub17.aClass4Array9673!![i_43_])
+                        if (class4_47_!!.aClass348_Sub33_134 != class348_sub33) class4_47_ = null
                     }
                     method602(i_44_, class348_sub33, -18, false, i_46_, class4_47_, i_40_, `is`, null, class4, i_41_, bool)
                     wa()
@@ -190,7 +190,7 @@ public abstract class Class64 {
         if (i != -1) {
             method622()
             if (NA()) {
-                val class4 = (class348_sub42_sub17.aClass4Array9673[i])
+                val class4 = (class348_sub42_sub17.aClass4Array9673!![i]!!)
                 val class348_sub33 = class4.aClass348_Sub33_134!!
                 var i_75_ = 0
                 while ((i_75_ < class4.anInt126)) {
@@ -230,11 +230,11 @@ public abstract class Class64 {
             if (i != -1) {
                 method622()
                 if (NA()) {
-                    val class4 = (class348_sub42_sub17_85_!!.aClass4Array9673[i])
+                    val class4 = (class348_sub42_sub17_85_!!.aClass4Array9673!![i]!!)
                     val class348_sub33 = class4.aClass348_Sub33_134
                     var class4_89_: Class4? = null
                     if (class348_sub42_sub17 != null) {
-                        class4_89_ = (class348_sub42_sub17.aClass4Array9673[i_87_])
+                        class4_89_ = (class348_sub42_sub17.aClass4Array9673!![i_87_]!!)
                         if (class348_sub33 != class4_89_.aClass348_Sub33_134) class4_89_ = null
                     }
                     method602(i_84_, class348_sub33, 121, bool, i_83_, class4_89_, i_88_, null, null, class4, 65535, bool_86_)
@@ -290,19 +290,19 @@ public abstract class Class64 {
                 else {
                     method622()
                     if (NA()) {
-                        val class4 = (class348_sub42_sub17_107_!!.aClass4Array9673[i_104_])
-                        val class348_sub33 = class4.aClass348_Sub33_134
+                        val class4 = (class348_sub42_sub17_107_!!.aClass4Array9673!![i_104_])
+                        val class348_sub33 = class4!!.aClass348_Sub33_134
                         var class4_112_: Class4? = null
                         if (class348_sub42_sub17 != null) {
-                            class4_112_ = (class348_sub42_sub17.aClass4Array9673[i_108_])
-                            if (class348_sub33 != class4_112_.aClass348_Sub33_134) class4_112_ = null
+                            class4_112_ = (class348_sub42_sub17.aClass4Array9673!![i_108_])
+                            if (class348_sub33 != class4_112_!!.aClass348_Sub33_134) class4_112_ = null
                         }
                         method602(0, class348_sub33, -70, false, i, class4_112_, i_106_, null, bools, class4, 65535, bool)
-                        val class4_113_ = (class348_sub42_sub17_103_!!.aClass4Array9673[i_105_])
+                        val class4_113_ = (class348_sub42_sub17_103_!!.aClass4Array9673!![i_105_]!!)
                         var class4_114_: Class4? = null
                         if (class348_sub42_sub17_109_ != null) {
-                            class4_114_ = (class348_sub42_sub17_109_.aClass4Array9673[i_111_])
-                            if (class4_114_.aClass348_Sub33_134 != class348_sub33) class4_114_ = null
+                            class4_114_ = (class348_sub42_sub17_109_.aClass4Array9673!![i_111_])
+                            if (class4_114_!!.aClass348_Sub33_134 != class348_sub33) class4_114_ = null
                         }
                         method605(0, IntArray(0), 0, 0, 0, 0, bool)
                         method602(0, class4_113_.aClass348_Sub33_134, 122, true, i_102_, class4_114_, i_110_, null, bools, class4_113_, 65535, bool)

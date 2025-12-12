@@ -203,8 +203,8 @@ class Class51 {
                 if (bool_14_) class64!!.H(anInt893, anInt954, anInt890)
                 class64!!.s(i_4_)
             } else class64 = class64!!.method614(0.toByte(), i_4_, true)
-            Class348_Sub42.aClass2_7058.aClass64_119 = class64
-            Class348_Sub42.aClass2_7058.aR118 = var_r
+            Class348_Sub42.aClass2_7058!!.aClass64_119 = class64
+            Class348_Sub42.aClass2_7058!!.aR118 = var_r
             return Class348_Sub42.aClass2_7058
         } catch (runtimeexception: RuntimeException) {
             runtimeexception.printStackTrace()

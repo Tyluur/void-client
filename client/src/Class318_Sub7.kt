@@ -306,8 +306,8 @@ class Class318_Sub7 internal constructor(var_ha: ha?, class129: Class129?, class
                 anInt6440++
                 if (Class75.aClass348_Sub42_Sub14_1243 != null) {
                     if (Class348.anInt4290 < 10) {
-                        if (!Class75.aClass45_1237!!.method413(100, Class75.aClass348_Sub42_Sub14_1243!!.aString9625)) {
-                            Class348.anInt4290 = (Class348_Sub32.aClass45_6950!!.method397((Class75.aClass348_Sub42_Sub14_1243!!.aString9625), 0)) / 10
+                        if (!Class75.aClass45_1237!!.method413(100, Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!)) {
+                            Class348.anInt4290 = (Class348_Sub32.aClass45_6950!!.method397((Class75.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
                             return
                         }
                         method126(-16203)

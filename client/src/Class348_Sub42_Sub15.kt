@@ -1,96 +1,102 @@
-/* Class348_Sub42_Sub15 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+import Class348_Sub17.Companion.method2929
+import Class62.method599
+import jaggl.OpenGL.Companion.glCompileShaderARB
+import jaggl.OpenGL.Companion.glCreateShaderObjectARB
+import jaggl.OpenGL.Companion.glDeleteObjectARB
+import jaggl.OpenGL.Companion.glGetInfoLogARB
+import jaggl.OpenGL.Companion.glGetObjectParameterivARB
+import jaggl.OpenGL.Companion.glShaderSourceARB
+import java.math.BigInteger
 
-import jaggl.OpenGL;
-
-import java.math.BigInteger;
-
-public final class Class348_Sub42_Sub15 extends Class348_Sub42 {
-    static int anInt9646;
-    static int anInt9647;
-    static int anInt9648;
-    static int anInt9649;
-    int anInt9650;
-    int anInt9651;
-    int anInt9652;
-    static int anInt9653;
-    String aString9654;
-    static int anInt9655;
-    static int anInt9656;
-    static BigInteger aBigInteger9657 = Loader.FILE_SERVER_RSA_MODULUS;
-    static Class105 aClass105_9658;
-    static Class105 aClass105_9659;
-    static Class56 aClass56_9660;
-
-    final int method3245(boolean bool) {
-        anInt9646++;
-        if (bool != true) method3248(-60);
-        return (int) (this.aLong4291 >>> 32 & 0xffL);
+class Class348_Sub42_Sub15 internal constructor(i: Int, i_2_: Int) : Class348_Sub42() {
+    var anInt9650: Int = 0
+    var anInt9651: Int = 0
+    @JvmField
+    var anInt9652: Int = 0
+    var aString9654: String? = null
+    fun method3245(bool: Boolean): Int {
+        anInt9646++
+        if (bool != true) method3248(-60)
+        return (this.aLong4291 ushr 32 and 0xffL).toInt()
     }
 
-    final void method3246(int i) {
-        this.aLong7057 |= ~0x7fffffffffffffffL;
-        anInt9653++;
-        if (method3250((byte) -89) == 0L) Class367_Sub4.aClass107_7325.method1005(true, this);
-        if (i != -25490) aClass105_9659 = null;
+    fun method3246(i: Int) {
+        this.aLong7057 = this.aLong7057 or 0x7fffffffffffffffL.inv()
+        anInt9653++
+        if (method3250((-89).toByte()) == 0L) Class367_Sub4.aClass107_7325!!.method1005(true, this)
+        if (i != -25490) aClass105_9659 = null
     }
 
-    public static void method3247(int i) {
-        if (i > -49) method3247(49);
-        aClass56_9660 = null;
-        aClass105_9658 = null;
-        aClass105_9659 = null;
-        aBigInteger9657 = null;
+    fun method3248(i: Int): Int {
+        if (i != 1) return -110
+        anInt9647++
+        return this.aLong4291.toInt()
     }
 
-    final int method3248(int i) {
-        if (i != 1) return -110;
-        anInt9647++;
-        return (int) this.aLong4291;
+    fun method3250(i: Byte): Long {
+        anInt9649++
+        if (i >= -37) method3250(79.toByte())
+        return this.aLong7057 and 0x7fffffffffffffffL
     }
 
-    static final Class242 method3249(int i, int i_0_, ha_Sub2 var_ha_Sub2, String string) {
-        try {
-            anInt9656++;
-            int i_1_ = -89 / ((29 - i_0_) / 47);
-            long l = OpenGL.glCreateShaderObjectARB(i);
-            OpenGL.glShaderSourceARB(l, string);
-            OpenGL.glCompileShaderARB(l);
-            OpenGL.glGetObjectParameterivARB(l, 35713, (Class348_Sub42_Sub4.anIntArray9519), 0);
-            if (Class348_Sub42_Sub4.anIntArray9519[0] == 0) {
-                if (Class348_Sub42_Sub4.anIntArray9519[0] == 0) System.out.println("Shader compile failed:");
-                OpenGL.glGetObjectParameterivARB(l, 35716, (Class348_Sub42_Sub4.anIntArray9519), 1);
-                if (Class348_Sub42_Sub4.anIntArray9519[1] > 1) {
-                    byte[] is = new byte[Class348_Sub42_Sub4.anIntArray9519[1]];
-                    OpenGL.glGetInfoLogARB(l, (Class348_Sub42_Sub4.anIntArray9519[1]), Class348_Sub42_Sub4.anIntArray9519, 0, is, 0);
-                    System.out.println(new String(is));
-                }
-                if (Class348_Sub42_Sub4.anIntArray9519[0] == 0) {
-                    OpenGL.glDeleteObjectARB(l);
-                    return null;
-                }
-            }
-            return new Class242(var_ha_Sub2, l, i);
-        } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("et.G(" + i + ',' + i_0_ + ',' + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ')'));
+    init {
+        this.aLong4291 = i.toLong() shl 32 or i_2_.toLong()
+    }
+
+    fun method3251(i: Int) {
+        anInt9648++
+        this.aLong7057 = (0x7fffffffffffffffL.inv() and this.aLong7057 or method599(-120) + 500L)
+        s_Sub2.aClass107_8241!!.method1005(true, this)
+        if (i != -16058) aClass105_9658 = null
+    }
+
+    companion object {
+        var anInt9646: Int = 0
+        var anInt9647: Int = 0
+        var anInt9648: Int = 0
+        var anInt9649: Int = 0
+        var anInt9653: Int = 0
+        var anInt9655: Int = 0
+        var anInt9656: Int = 0
+        var aBigInteger9657: BigInteger? = Loader.FILE_SERVER_RSA_MODULUS
+        var aClass105_9658: Class105? = null
+        var aClass105_9659: Class105? = null
+        var aClass56_9660: Class56? = null
+
+        @JvmStatic
+        fun method3247(i: Int) {
+            if (i > -49) method3247(49)
+            aClass56_9660 = null
+            aClass105_9658 = null
+            aClass105_9659 = null
+            aBigInteger9657 = null
         }
-    }
 
-    final long method3250(byte i) {
-        anInt9649++;
-        if (i >= -37) method3250((byte) 79);
-        return this.aLong7057 & 0x7fffffffffffffffL;
-    }
-
-    Class348_Sub42_Sub15(int i, int i_2_) {
-        this.aLong4291 = (long) i << 32 | (long) i_2_;
-    }
-
-    final void method3251(int i) {
-        anInt9648++;
-        this.aLong7057 = (~0x7fffffffffffffffL & this.aLong7057 | Class62.method599(-120) + 500L);
-        s_Sub2.aClass107_8241.method1005(true, this);
-        if (i != -16058) aClass105_9658 = null;
+        fun method3249(i: Int, i_0_: Int, var_ha_Sub2: ha_Sub2?, string: String?): Class242? {
+            try {
+                anInt9656++
+                val i_1_ = -89 / ((29 - i_0_) / 47)
+                val l = glCreateShaderObjectARB(i)
+                glShaderSourceARB(l, string)
+                glCompileShaderARB(l)
+                glGetObjectParameterivARB(l, 35713, (Class348_Sub42_Sub4.Companion.anIntArray9519), 0)
+                if (Class348_Sub42_Sub4.Companion.anIntArray9519!![0] == 0) {
+                    if (Class348_Sub42_Sub4.Companion.anIntArray9519!![0] == 0) println("Shader compile failed:")
+                    glGetObjectParameterivARB(l, 35716, (Class348_Sub42_Sub4.Companion.anIntArray9519), 1)
+                    if (Class348_Sub42_Sub4.Companion.anIntArray9519!![1] > 1) {
+                        val `is` = ByteArray(Class348_Sub42_Sub4.Companion.anIntArray9519!![1])
+                        glGetInfoLogARB(l, (Class348_Sub42_Sub4.Companion.anIntArray9519!![1]), Class348_Sub42_Sub4.Companion.anIntArray9519, 0, `is`, 0)
+                        println(String(`is`))
+                    }
+                    if (Class348_Sub42_Sub4.Companion.anIntArray9519!![0] == 0) {
+                        glDeleteObjectARB(l)
+                        return null
+                    }
+                }
+                return Class242(var_ha_Sub2, l, i)
+            } catch (runtimeexception: RuntimeException) {
+                throw method2929(runtimeexception, ("et.G(" + i + ',' + i_0_ + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ')'))
+            }
+        }
     }
 }

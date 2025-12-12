@@ -42,7 +42,7 @@ object Class164 {
         if (Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265.method1768(i + -3690) == 0) {
             var i_0_ = 0
             while ((i_0_ < Class348_Sub42_Sub19.anInt9699)) {
-                if (Class348_Sub42_Sub5.anInterface6Array9534[i_0_].method28(31.toByte()).code == 115 || Class348_Sub42_Sub5.anInterface6Array9534[i_0_].method28(71.toByte()).code == 83) {
+                if (Class348_Sub42_Sub5.anInterface6Array9534!![i_0_]!!.method28(31.toByte()).code == 115 || Class348_Sub42_Sub5.anInterface6Array9534!![i_0_]!!.method28(71.toByte()).code == 83) {
                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 1)
                     Class304.aBoolean3847 = true
                     break

@@ -18,7 +18,7 @@ object Class282 {
         var class348_sub42_sub18 = (Class348_Sub40_Sub17.aClass262_9240!!.method1995(4) as Class348_Sub42_Sub18?)
         if (i != 512) method2110(-125, 79, 70)
         while ( /**/class348_sub42_sub18 != null) {
-            val class318_sub1_sub3_sub5 = (class348_sub42_sub18.aClass318_Sub1_Sub3_Sub5_9682)
+            val class318_sub1_sub3_sub5 = (class348_sub42_sub18.aClass318_Sub1_Sub3_Sub5_9682)!!
             if (Class367_Sub11.anInt7396 > class318_sub1_sub3_sub5.anInt10392) {
                 class348_sub42_sub18.method2715(101.toByte())
                 class318_sub1_sub3_sub5.method2472(-2159)

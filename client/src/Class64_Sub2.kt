@@ -379,33 +379,33 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
             val i_54_ = i_48_ + (i_45_ shl i_30_)
             s_Sub2.anIntArray8269!![0] = i_50_
             val i_55_ = (i_46_ shl i_30_) + i_49_
-            Class348_Sub42_Sub12.anIntArray9612[0] = i_51_
+            Class348_Sub42_Sub12.anIntArray9612!![0] = i_51_
             s_Sub2.anIntArray8269!![1] = i_53_
             Class363.anIntArray4463[0] = i_52_
-            Class348_Sub42_Sub12.anIntArray9612[1] = i_51_
+            Class348_Sub42_Sub12.anIntArray9612!![1] = i_51_
             Class363.anIntArray4463[1] = i_52_
             s_Sub2.anIntArray8269!![2] = i_50_
-            Class348_Sub42_Sub12.anIntArray9612[2] = i_54_
+            Class348_Sub42_Sub12.anIntArray9612!![2] = i_54_
             Class363.anIntArray4463[2] = i_52_
             s_Sub2.anIntArray8269!![3] = i_53_
-            Class348_Sub42_Sub12.anIntArray9612[3] = i_54_
+            Class348_Sub42_Sub12.anIntArray9612!![3] = i_54_
             Class363.anIntArray4463[3] = i_52_
             s_Sub2.anIntArray8269!![4] = i_50_
-            Class348_Sub42_Sub12.anIntArray9612[4] = i_51_
+            Class348_Sub42_Sub12.anIntArray9612!![4] = i_51_
             Class363.anIntArray4463[4] = i_55_
             s_Sub2.anIntArray8269!![5] = i_53_
-            Class348_Sub42_Sub12.anIntArray9612[5] = i_51_
+            Class348_Sub42_Sub12.anIntArray9612!![5] = i_51_
             Class363.anIntArray4463[5] = i_55_
             s_Sub2.anIntArray8269!![6] = i_50_
-            Class348_Sub42_Sub12.anIntArray9612[6] = i_54_
+            Class348_Sub42_Sub12.anIntArray9612!![6] = i_54_
             s_Sub2.anIntArray8269!![7] = i_53_
             Class363.anIntArray4463[6] = i_55_
-            Class348_Sub42_Sub12.anIntArray9612[7] = i_54_
+            Class348_Sub42_Sub12.anIntArray9612!![7] = i_54_
             Class363.anIntArray4463[7] = i_55_
             for (i_56_ in 0..7) {
                 val f_57_ = s_Sub2.anIntArray8269!![i_56_].toFloat()
                 val f_58_ = Class363.anIntArray4463[i_56_].toFloat()
-                val f_59_ = Class348_Sub42_Sub12.anIntArray9612[i_56_].toFloat()
+                val f_59_ = Class348_Sub42_Sub12.anIntArray9612!![i_56_].toFloat()
                 val f_60_ = (f_57_ * Class348_Sub20.aFloat6835 + f_59_ * Class290.aFloat3710 + Class318_Sub6.aFloat6430 * f_58_ + f_35_)
                 val f_61_ = (Class55.aFloat1010 * f_57_ + f_59_ * Class318_Sub1_Sub2_Sub1.aFloat10199 + f_58_ * Class348_Sub42_Sub4.aFloat9516 + f)
                 var f_62_ = f_36_ + (f_58_ * ha.aFloat4582 + (Class353.aFloat4338 * f_59_ + Class328_Sub3.aFloat6523 * f_57_))
@@ -3502,7 +3502,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
             if (i < 92) method661(114.toByte())
             Class73.anInt4776 = 0
             Class348_Sub40_Sub4.aClass262_9111!!.method1996(115)
-            Class348_Sub42_Sub12.aClass356_9603.method3481(0)
+            Class348_Sub42_Sub12.aClass356_9603!!.method3481(0)
             Class233.aClass107_3022!!.method1009(2110355138)
             method3743(6.toByte(), Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144)
         }

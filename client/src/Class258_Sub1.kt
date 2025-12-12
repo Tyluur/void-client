@@ -129,7 +129,7 @@ class Class258_Sub1 : Class258 {
                     Class59_Sub1_Sub2.anIntArray8666 = is_17_
                     Class299_Sub2_Sub1.anIntArray8712 = is_18_
                     Client.anIntArray5176 = is_19_
-                    Class348_Sub42_Sub14.method3241(i_20_, 39.toByte(), Class9.aHa171)
+                    Class348_Sub42_Sub14.method3241(i_20_, 39.toByte(), Class9.aHa171!!)
                 }
             } else {
                 if (Class369_Sub3.aBooleanArrayArray8596 == null) Class369_Sub3.aBooleanArrayArray8596 = (Array<BooleanArray?>(Class318_Sub7.anInt6451 + Class318_Sub7.anInt6451 + 1) { BooleanArray((Class348_Sub41.anInt7054 + Class318_Sub7.anInt6451 + 1)) })

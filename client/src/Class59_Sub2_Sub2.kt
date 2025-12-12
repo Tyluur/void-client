@@ -112,8 +112,8 @@ class Class59_Sub2_Sub2 : Class59_Sub2(12, 5, 16, 2, 2, 0.45f) {
                 class348_sub42.aClass348_Sub42_7060 = class348_sub42_15_
                 class348_sub42.aClass348_Sub42_7063 = class348_sub42_15_!!.aClass348_Sub42_7063
                 if (i.toInt() != 63) anInt8685 = 110
-                class348_sub42.aClass348_Sub42_7060.aClass348_Sub42_7063 = class348_sub42
-                class348_sub42.aClass348_Sub42_7063.aClass348_Sub42_7060 = class348_sub42
+                class348_sub42.aClass348_Sub42_7060!!.aClass348_Sub42_7063 = class348_sub42
+                class348_sub42.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42
             } catch (runtimeexception: RuntimeException) {
                 throw Class348_Sub17.method2929(runtimeexception, ("wd.F(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + (if (class348_sub42_15_ != null) "{...}" else "null") + ',' + i + ')'))
             }

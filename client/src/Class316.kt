@@ -116,11 +116,11 @@ class Class316 internal constructor(`is`: IntArray) {
         fun method2367(i: Byte, class348_sub42_sub12: Class348_Sub42_Sub12): String? {
             anInt3962++
             val i_41_ = 9 / ((79 - i) / 46)
-            if (class348_sub42_sub12.aString9595 == null || class348_sub42_sub12.aString9595.length == 0) {
-                if ((class348_sub42_sub12.aString9601 == null) || class348_sub42_sub12.aString9601.length <= 0) return (class348_sub42_sub12.aString9593)
+            if (class348_sub42_sub12.aString9595 == null || class348_sub42_sub12.aString9595!!.length == 0) {
+                if ((class348_sub42_sub12.aString9601 == null) || class348_sub42_sub12.aString9601!!.length <= 0) return (class348_sub42_sub12.aString9593)
                 return (class348_sub42_sub12.aString9593 + Class274.aClass274_3515!!.method2063(Class348_Sub33.anInt6967, 544) + (class348_sub42_sub12.aString9601))
             }
-            if (class348_sub42_sub12.aString9601 == null || class348_sub42_sub12.aString9601.length <= 0) return (class348_sub42_sub12.aString9593 + Class274.aClass274_3515!!.method2063(Class348_Sub33.anInt6967, 544) + (class348_sub42_sub12.aString9595))
+            if (class348_sub42_sub12.aString9601 == null || class348_sub42_sub12.aString9601!!.length <= 0) return (class348_sub42_sub12.aString9593 + Class274.aClass274_3515!!.method2063(Class348_Sub33.anInt6967, 544) + (class348_sub42_sub12.aString9595))
             return (class348_sub42_sub12.aString9593 + Class274.aClass274_3515!!.method2063(Class348_Sub33.anInt6967, 544) + class348_sub42_sub12.aString9601 + Class274.aClass274_3515!!.method2063(Class348_Sub33.anInt6967, 544) + class348_sub42_sub12.aString9595)
         }
 

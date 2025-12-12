@@ -35,8 +35,8 @@ class Class32 internal constructor(private val anInt448: Int) {
             val class348_sub42_1_ = aClass348_Sub42Array452[(l and (anInt448 - 1).toLong()).toInt()]!!
             class348_sub42.aClass348_Sub42_7060 = class348_sub42_1_.aClass348_Sub42_7060
             class348_sub42.aClass348_Sub42_7063 = class348_sub42_1_
-            class348_sub42.aClass348_Sub42_7060.aClass348_Sub42_7063 = class348_sub42
-            class348_sub42.aClass348_Sub42_7063.aClass348_Sub42_7060 = class348_sub42
+            class348_sub42.aClass348_Sub42_7060!!.aClass348_Sub42_7063 = class348_sub42
+            class348_sub42.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42
             class348_sub42.aLong7057 = l
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ib.A(" + (if (class348_sub42 != null) "{...}" else "null") + ',' + i + ',' + l + ')'))

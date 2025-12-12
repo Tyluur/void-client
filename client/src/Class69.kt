@@ -54,8 +54,8 @@ class Class69 {
                     anInt1194++
                     class348_sub42_1_.aClass348_Sub42_7063 = class348_sub42
                     class348_sub42_1_.aClass348_Sub42_7060 = class348_sub42!!.aClass348_Sub42_7060
-                    class348_sub42_1_.aClass348_Sub42_7060.aClass348_Sub42_7063 = class348_sub42_1_
-                    class348_sub42_1_.aClass348_Sub42_7063.aClass348_Sub42_7060 = class348_sub42_1_
+                    class348_sub42_1_.aClass348_Sub42_7060!!.aClass348_Sub42_7063 = class348_sub42_1_
+                    class348_sub42_1_.aClass348_Sub42_7063!!.aClass348_Sub42_7060 = class348_sub42_1_
                     if (i == -1) break
                     aClass69_1199 = null
                 } catch (runtimeexception: RuntimeException) {

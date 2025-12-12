@@ -383,7 +383,7 @@ abstract class ha internal constructor(@JvmField var aD4579: d?) {
                 class348_sub42_sub3 = Class348_Sub42_Sub3(`is`)
                 Class348_Sub1_Sub2.aClass308_8815!!.method2305(i.toLong(), class348_sub42_sub3, -1)
             }
-            return class348_sub42_sub3.aByteArray9499
+            return class348_sub42_sub3.aByteArray9499!!
         }
 
         @JvmStatic

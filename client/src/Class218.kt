@@ -100,7 +100,7 @@ class Class218 {
                 if (i_15_ >= 1) {
                     if (i_11_ != 4) aClass262_2859 = null
                     if (i_15_ <= 3) {
-                        for (i_16_ in 0..<-1 + i_15_) player.method2451(i, Class348_Sub42_Sub14.anIntArray9626[i_16_], i_11_ + -29038, Class348_Sub40_Sub11.anIntArray9185!![i_16_])
+                        for (i_16_ in 0..<-1 + i_15_) player.method2451(i, Class348_Sub42_Sub14.anIntArray9626!![i_16_], i_11_ + -29038, Class348_Sub40_Sub11.anIntArray9185!![i_16_])
                     }
                 }
             }

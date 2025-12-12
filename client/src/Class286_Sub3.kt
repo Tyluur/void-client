@@ -37,9 +37,9 @@ class Class286_Sub3 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             }
             this.aHa_Sub2_3684.method3738(-15039, 0)
             if ((0x40 and i) == 0) {
-                Class348_Sub42_Sub1.aFloatArray9491[2] = (this.aHa_Sub2_3684.aFloat7823 * (this.aHa_Sub2_3684.aFloat7768))
-                Class348_Sub42_Sub1.aFloatArray9491[0] = (this.aHa_Sub2_3684.aFloat7781 * (this.aHa_Sub2_3684.aFloat7768))
-                Class348_Sub42_Sub1.aFloatArray9491[1] = (this.aHa_Sub2_3684.aFloat7768 * (this.aHa_Sub2_3684.aFloat7816))
+                Class348_Sub42_Sub1.aFloatArray9491!![2] = (this.aHa_Sub2_3684.aFloat7823 * (this.aHa_Sub2_3684.aFloat7768))
+                Class348_Sub42_Sub1.aFloatArray9491!![0] = (this.aHa_Sub2_3684.aFloat7781 * (this.aHa_Sub2_3684.aFloat7768))
+                Class348_Sub42_Sub1.aFloatArray9491!![1] = (this.aHa_Sub2_3684.aFloat7768 * (this.aHa_Sub2_3684.aFloat7816))
                 glProgramLocalParameter4fvARB(34336, 66, (Class348_Sub42_Sub1.aFloatArray9491), 0)
             } else glProgramLocalParameter4fARB(34336, 66, 1.0f, 1.0f, 1.0f, 1.0f)
             val i_3_ = i and 0x3

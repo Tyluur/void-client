@@ -88,7 +88,7 @@ class Class38 {
         @JvmStatic
         fun method362(i: Int) {
             anInt509++
-            var class348_sub27 = (Class348_Sub42_Sub20.aClass262_9711.method1995(4) as Class348_Sub27?)
+            var class348_sub27 = (Class348_Sub42_Sub20.aClass262_9711!!.method1995(4) as? Class348_Sub27?)
             val i_3_ = -45 % ((i - -34) / 47)
             while ( /**/class348_sub27 != null) {
                 if (class348_sub27.anInt6893 > 0) class348_sub27.anInt6893--
@@ -105,7 +105,7 @@ class Class38 {
                     Class218.method1591(class348_sub27.anInt6905, 112, class348_sub27.anInt6904, -1, class348_sub27.anInt6902, class348_sub27.anInt6903, class348_sub27.anInt6896, class348_sub27.anInt6892, class348_sub27.anInt6899)
                     class348_sub27.method2715(49.toByte())
                 }
-                class348_sub27 = Class348_Sub42_Sub20.aClass262_9711.method1990(81.toByte()) as Class348_Sub27?
+                class348_sub27 = Class348_Sub42_Sub20.aClass262_9711!!.method1990(81.toByte()) as? Class348_Sub27?
             }
         }
 
@@ -144,7 +144,7 @@ class Class38 {
             if (i >= 124) {
                 var i_6_ = 0
                 while ((Class348_Sub42_Sub19.anInt9699 > i_6_)) {
-                    val interface6 = Class348_Sub42_Sub5.anInterface6Array9534[i_6_]
+                    val interface6 = Class348_Sub42_Sub5.anInterface6Array9534!![i_6_]!!
                     val i_7_ = interface6.method30(false)
                     val c = interface6.method28(46.toByte())
                     val i_8_ = interface6.method26(-7616)
@@ -227,7 +227,7 @@ class Class38 {
                                             method159(-615751774)
                                             Class348_Sub38.anInt7006 = Class363.aString4461.length
                                         } else if (Npc.method2446(c, 105.toByte()) || c.code == 92 || c.code == 47 || c.code == 46 || c.code == 58 || c.code == 44 || c.code == 32 || c.code == 95 || c.code == 45 || c.code == 43 || c.code == 91 || c.code == 93) {
-                                            Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + Class348_Sub42_Sub5.anInterface6Array9534[i_6_].method28(23.toByte()) + (Class363.aString4461.substring(Class348_Sub38.anInt7006)))
+                                            Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + Class348_Sub42_Sub5.anInterface6Array9534!![i_6_]!!.method28(23.toByte()) + (Class363.aString4461.substring(Class348_Sub38.anInt7006)))
                                             Class348_Sub38.anInt7006++
                                         }
                                     } else {

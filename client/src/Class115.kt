@@ -3,12 +3,12 @@
 */
 object Class115 {
     @JvmField
-    var aBooleanArrayArrayArray1751: Array<Array<BooleanArray?>>? = null
+    var aBooleanArrayArrayArray1751: Array<Array<BooleanArray?>?>? = null
     var aClass348_Sub1Array1752: Array<Class348_Sub1?>? = arrayOfNulls(8)
     @JvmField
     var anInt1753: Int = 0
     @JvmField
-    var aClass318_Sub1Array1754: Array<Class318_Sub1>? = null
+    var aClass318_Sub1Array1754: Array<Class318_Sub1?>? = null
     @JvmField
     var anInt1755: Int = 0
     @JvmField
