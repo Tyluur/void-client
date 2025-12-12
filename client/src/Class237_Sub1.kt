@@ -504,7 +504,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             var class361: Class361? = null
                             if (!this.aBoolean3109) {
                                 var i_92_ = i_79_
-                                if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962[1][i_90_][i_91_]).toInt()) == 2) i_92_--
+                                if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_90_]!![i_91_]).toInt()) == 2) i_92_--
                                 if (i_92_ >= 0) class361 = class361s!![i_92_]
                             }
                             method1689(i_90_, i_79_, i_80_, var_ha, i_79_, 50, i_88_, i_91_, -1, i_89_ - -i_73_ and 0x3, class361)
@@ -595,7 +595,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                             var class361: Class361? = null
                             if (!this.aBoolean3109) {
                                 var i_113_ = i_107_
-                                if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962[1][i_111_][i_112_]).toInt()) == 2) i_113_--
+                                if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_111_]!![i_112_]).toInt()) == 2) i_113_--
                                 if (i_113_ >= 0) class361 = class361s!![i_113_]
                             }
                             method1689(i_111_, i_107_, i_101_, var_ha, i_107_, i_100_ xor 0x57d, i_109_, i_112_, -1, i_110_, class361)
@@ -746,7 +746,7 @@ class Class237_Sub1 internal constructor(i: Int, i_114_: Int, i_115_: Int, bool:
                     while (this.anInt3117 > i_149_) {
                         var i_150_ = 0
                         while (this.anInt3114 > i_150_) {
-                            if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962[1][i_149_][i_150_]).toInt()) == 2) method258(i_149_, i_150_)
+                            if ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_149_]!![i_150_]).toInt()) == 2) method258(i_149_, i_150_)
                             i_150_++
                         }
                         i_149_++

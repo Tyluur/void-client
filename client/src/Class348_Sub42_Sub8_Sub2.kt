@@ -384,7 +384,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                         val i_44_ = i_40_ and 0xffff
                         val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_44_.toLong(), -6008) as Class348_Sub22?)
                         if (class348_sub22 != null) {
-                            val npc = (class348_sub22.aNpc_6859)
+                            val npc = (class348_sub22.aNpc_6859)!!
                             if (i_38_ == 65535) i_38_ = -1
                             var bool_45_ = true
                             val i_46_ = (if (!bool_41_) npc.anInt10269 else npc.anInt10291)
@@ -620,7 +620,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 val i_76_ = i shr 5
                 val i_77_ = 0x1f and i
                 if (i_77_ == 0) {
-                    Class348_Sub27.aClass302Array6897[i_76_] = null
+                    Class348_Sub27.aClass302Array6897!![i_76_] = null
                     Class348_Sub3.aClass114_6584 = null
                     return true
                 }
@@ -661,7 +661,7 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                     }
                     class302.anInt3834 = Class299.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                     if (class302.anInt3834 == 65535) class302.anInt3834 = -1
-                    Class348_Sub27.aClass302Array6897[i_76_] = class302
+                    Class348_Sub27.aClass302Array6897!![i_76_] = class302
                 }
                 Class348_Sub3.aClass114_6584 = null
                 return true
@@ -1076,8 +1076,8 @@ class Class348_Sub42_Sub8_Sub2 internal constructor(private val anObject10429: A
                 }
                 var i = 0
                 while (Class348_Sub32.anInt6930 > i) {
-                    Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i]!!.aNpc_6859.anIntArray10236 = null
-                    Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i]!!.aNpc_6859.anInt10286 = -1
+                    Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i]!!.aNpc_6859!!.anIntArray10236 = null
+                    Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i]!!.aNpc_6859!!.anInt10286 = -1
                     i++
                 }
                 Class348_Sub3.aClass114_6584 = null

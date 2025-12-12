@@ -124,7 +124,7 @@ open class Class279 {
         anInt3615 -= i
         if (aClass348_Sub16_3604 != null && anInt3615 <= 0) {
             anInt3615 += Class22.anInt339 shr 4
-            Class348_Sub15.method2814(aClass348_Sub16_3604, 112)
+            Class348_Sub15.method2814(aClass348_Sub16_3604!!, 112)
             method2085(-1846918107, aClass348_Sub16_3604!!, aClass348_Sub16_3604!!.method2820())
             var i_6_ = 0
             var i_7_ = 255

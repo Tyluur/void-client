@@ -81,16 +81,16 @@ class Class30 internal constructor(private var anInt409: Int, private var anInt4
                 Class59_Sub1.aClass297_5297 = class297
                 anInt410++
                 Class167.aClass45_2208 = class45
-                if (!Class348_Sub24.aString6877.startsWith("win")) {
-                    if (!Class348_Sub24.aString6877.startsWith("linux")) {
-                        if (Class348_Sub24.aString6877.startsWith("mac")) Class348_Sub41.aString7048 += "macos/"
+                if (!Class348_Sub24.aString6877!!.startsWith("win")) {
+                    if (!Class348_Sub24.aString6877!!.startsWith("linux")) {
+                        if (Class348_Sub24.aString6877!!.startsWith("mac")) Class348_Sub41.aString7048 += "macos/"
                     } else Class348_Sub41.aString7048 += "linux/"
                 } else Class348_Sub41.aString7048 += "windows/"
                 if (i.toInt() != 95) anIntArray407 = null
                 if (!Class59_Sub1.aClass297_5297!!.aBoolean3794) {
-                    if (!Class348_Sub24.aString6876.startsWith("amd64") && !Class348_Sub24.aString6876.startsWith("x86_64")) {
-                        if (!Class348_Sub24.aString6876.startsWith("i386") && !Class348_Sub24.aString6876.startsWith("i486") && !Class348_Sub24.aString6876.startsWith("i586") && !Class348_Sub24.aString6876.startsWith("x86")) {
-                            if (!Class348_Sub24.aString6876.startsWith("ppc")) Class348_Sub41.aString7048 += "universal/"
+                    if (!Class348_Sub24.aString6876!!.startsWith("amd64") && !Class348_Sub24.aString6876!!.startsWith("x86_64")) {
+                        if (!Class348_Sub24.aString6876!!.startsWith("i386") && !Class348_Sub24.aString6876!!.startsWith("i486") && !Class348_Sub24.aString6876!!.startsWith("i586") && !Class348_Sub24.aString6876!!.startsWith("x86")) {
+                            if (!Class348_Sub24.aString6876!!.startsWith("ppc")) Class348_Sub41.aString7048 += "universal/"
                             else Class348_Sub41.aString7048 += "ppc/"
                         } else Class348_Sub41.aString7048 += "x86/"
                     } else Class348_Sub41.aString7048 += "x86_64/"

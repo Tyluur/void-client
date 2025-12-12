@@ -35,7 +35,7 @@ object Class91 {
         for (i_2_ in 0..<Class358.anInt4411) {
             val i_3_ = Class5_Sub1_Sub1.anIntArray9932!![i_2_]
             val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_3_.toLong(), -6008) as Class348_Sub22)
-            val npc = (class348_sub22.aNpc_6859)
+            val npc = (class348_sub22.aNpc_6859)!!
             if (Class5_Sub1.aBoolean8335 && Class348_Sub42_Sub1.method3169(i_3_, 0)) method2146(84.toByte())
             if (Class348_Sub23_Sub3.anInt9041 != (npc.anInt10306)) {
                 if (npc.aClass79_10505.method793(0)) method181(true, npc)
@@ -57,7 +57,7 @@ object Class91 {
         }
         if (Class348_Sub32.anInt6930 - Class150.anInt2057 != 0) throw RuntimeException("gnp3 mis:" + (Class348_Sub32.anInt6930 - Class150.anInt2057))
         for (i_5_ in 0..<Class348_Sub32.anInt6930) {
-            if (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859.anInt10306 != Class348_Sub23_Sub3.anInt9041) throw RuntimeException("gnp4 uk:" + (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859.anInt10290))
+            if (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859!!.anInt10306 != Class348_Sub23_Sub3.anInt9041) throw RuntimeException("gnp4 uk:" + (Class348_Sub40_Sub23.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859!!.anInt10290))
         }
     }
 

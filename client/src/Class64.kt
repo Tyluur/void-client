@@ -19,10 +19,10 @@ public abstract class Class64 {
                 var i_11_ = 0
                 while (class4_8_!!.anInt126 > i_11_) {
                     val i_12_ = class4_8_.aShortArray130!![i_11_]
-                    if (bools == null || bools[i_12_.toInt()] != !bool || (class348_sub33!!.anIntArray6957[i_12_.toInt()]) == 0) {
+                    if (bools == null || bools[i_12_.toInt()] != !bool || (class348_sub33!!.anIntArray6957!![i_12_.toInt()]) == 0) {
                         val i_13_ = class4_8_.aShortArray128!![i_11_]
-                        if (i_13_.toInt() != -1) method627((class348_sub33!!.anIntArrayArray6959[i_13_.toInt()]), bool_10_, i, 0, 0, i_9_ and (class348_sub33.anIntArray6960[i_13_.toInt()]), (-93).toByte(), 0, `is`, 0)
-                        method627((class348_sub33!!.anIntArrayArray6959[i_12_.toInt()]), bool_10_, i, class4_8_.aShortArray137!![i_11_].toInt(), (class348_sub33.anIntArray6957[i_12_.toInt()]), (class348_sub33.anIntArray6960[i_12_.toInt()]) and i_9_, (-93).toByte(), class4_8_.aShortArray140!![i_11_].toInt(), `is`, class4_8_.aShortArray135!![i_11_].toInt())
+                        if (i_13_.toInt() != -1) method627((class348_sub33!!.anIntArrayArray6959!![i_13_.toInt()]!!), bool_10_, i, 0, 0, i_9_ and (class348_sub33.anIntArray6960!![i_13_.toInt()]), (-93).toByte(), 0, `is`, 0)
+                        method627((class348_sub33!!.anIntArrayArray6959!![i_12_.toInt()]!!), bool_10_, i, class4_8_.aShortArray137!![i_11_].toInt(), (class348_sub33.anIntArray6957!![i_12_.toInt()]), (class348_sub33.anIntArray6960!![i_12_.toInt()]) and i_9_, (-93).toByte(), class4_8_.aShortArray140!![i_11_].toInt(), `is`, class4_8_.aShortArray135!![i_11_].toInt())
                     }
                     i_11_++
                 }
@@ -37,12 +37,12 @@ public abstract class Class64 {
                     var bool_19_ = false
                     if (class4.anInt126 > i_15_ && i_16_ == class4.aShortArray130!![i_15_].toInt()) bool_19_ = true
                     if (bool_18_ || bool_19_) {
-                        if (bools != null && bool == !bools[i_16_] && (class348_sub33.anIntArray6957[i_16_]) != 0) {
+                        if (bools != null && bool == !bools[i_16_] && (class348_sub33.anIntArray6957!![i_16_]) != 0) {
                             if (bool_19_) i_15_++
                             if (bool_18_) i_14_++
                         } else {
                             var i_20_ = 0
-                            val i_21_ = (class348_sub33.anIntArray6957[i_16_])
+                            val i_21_ = (class348_sub33.anIntArray6957!![i_16_])
                             if (i_21_ == 3 || i_21_ == 10) i_20_ = 128
                             val i_22_: Int
                             val i_23_: Short
@@ -82,8 +82,8 @@ public abstract class Class64 {
                                 i_27_ = i_20_
                                 i_29_ = 0.toByte()
                             }
-                            if (i_23_.toInt() != -1) method627((class348_sub33.anIntArrayArray6959[i_23_.toInt()]), bool_10_, i, 0, 0, (i_9_ and (class348_sub33.anIntArray6960[i_23_.toInt()])), (-93).toByte(), 0, `is`, 0)
-                            else if (i_31_.toInt() != -1) method627((class348_sub33.anIntArrayArray6959[i_31_.toInt()]), bool_10_, i, 0, 0, (i_9_ and (class348_sub33.anIntArray6960[i_31_.toInt()])), (-93).toByte(), 0, `is`, 0)
+                            if (i_23_.toInt() != -1) method627((class348_sub33.anIntArrayArray6959!![i_23_.toInt()]!!), bool_10_, i, 0, 0, (i_9_ and (class348_sub33.anIntArray6960!![i_23_.toInt()])), (-93).toByte(), 0, `is`, 0)
+                            else if (i_31_.toInt() != -1) method627((class348_sub33.anIntArrayArray6959!![i_31_.toInt()]!!), bool_10_, i, 0, 0, (i_9_ and (class348_sub33.anIntArray6960!![i_31_.toInt()])), (-93).toByte(), 0, `is`, 0)
                             val i_32_: Int
                             val i_33_: Int
                             val i_34_: Int
@@ -118,7 +118,7 @@ public abstract class Class64 {
                                 i_34_ = i_22_ - -((i_28_ + -i_22_) * i_7_ / i_6_)
                                 i_33_ = (i_7_ * (-i_24_ + i_27_) / i_6_ + i_24_)
                             }
-                            method627((class348_sub33.anIntArrayArray6959[i_16_]), bool_10_, i, i_33_, i_21_, i_9_ and (class348_sub33.anIntArray6960[i_16_]), (-93).toByte(), i_32_, `is`, i_34_)
+                            method627((class348_sub33.anIntArrayArray6959!![i_16_]!!), bool_10_, i, i_33_, i_21_, i_9_ and (class348_sub33.anIntArray6960!![i_16_]), (-93).toByte(), i_32_, `is`, i_34_)
                         }
                     }
                     i_16_++
@@ -195,9 +195,9 @@ public abstract class Class64 {
                 var i_75_ = 0
                 while ((i_75_ < class4.anInt126)) {
                     val i_76_ = class4.aShortArray130!![i_75_]
-                    if (class348_sub33.aBooleanArray6954[i_76_.toInt()]) {
+                    if (class348_sub33.aBooleanArray6954!![i_76_.toInt()]) {
                         if (class4.aShortArray128!![i_75_].toInt() != -1) P(0, 0, 0, 0)
-                        P((class348_sub33.anIntArray6957[i_76_.toInt()]), class4.aShortArray140!![i_75_].toInt(), class4.aShortArray137!![i_75_].toInt(), class4.aShortArray135!![i_75_].toInt())
+                        P((class348_sub33.anIntArray6957!![i_76_.toInt()]), class4.aShortArray140!![i_75_].toInt(), class4.aShortArray137!![i_75_].toInt(), class4.aShortArray135!![i_75_].toInt())
                     }
                     i_75_++
                 }

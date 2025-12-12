@@ -453,7 +453,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                         val l = (class348_sub42_sub12.aLong9605)
                         if (i_76_ == 19) {
                             if (Class192.anInt2581 <= 0 || !Class182.aClass346_2449!!.method2696(82, -125) || !Class182.aClass346_2449!!.method2696(81, -126)) {
-                                val class348_sub47 = Class348_Sub14.method2807(i_75_, i_74_, (-110).toByte(), i_77_)
+                                val class348_sub47 = Class348_Sub14.method2807(i_75_, i_74_, (-110).toByte(), i_77_)!!
                                 if (i_77_ == 1) {
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, -1)
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, -1)
@@ -496,7 +496,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                             Class348.anInt4292 = 0
                             val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                             if (class348_sub22 != null) {
-                                val npc = (class348_sub22.aNpc_6859)
+                                val npc = (class348_sub22.aNpc_6859)!!
                                 var class79 = (npc.aClass79_10505)
                                 if (class79!!.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1))
                                 if (class79 != null) {
@@ -565,7 +565,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class26.anInt385 = i_73_
                                 Class239_Sub20.anInt6048 = 2
                                 Class93.anInt1534 = i_72_
-                                val npc = (class348_sub22.aNpc_6859)
+                                val npc = (class348_sub22.aNpc_6859)!!
                                 val class348_sub47 = (method2148(Class318_Sub1_Sub5_Sub1.aClass351_10134, Class348_Sub23_Sub2.aClass77_9029, -96))
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_77_, 3.toByte())
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd(124.toByte(), (if (Class182.aClass346_2449!!.method2696(82, -121)) 1 else 0))
@@ -608,7 +608,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348.anInt4292 = 0
                                 Class93.anInt1534 = i_72_
                                 Class26.anInt385 = i_73_
-                                val npc = (class348_sub22.aNpc_6859)
+                                val npc = (class348_sub22.aNpc_6859)!!
                                 Class239_Sub20.anInt6048 = 2
                                 Class348_Sub7.anInt6646++
                                 val class348_sub47 = method2148((Class131.aClass351_1904), (Class348_Sub23_Sub2.aClass77_9029), -119)
@@ -763,7 +763,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class348.anInt4292 = 0
                                 Class26.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
-                                val npc = (class348_sub22.aNpc_6859)
+                                val npc = (class348_sub22.aNpc_6859)!!
                                 Class239_Sub20.anInt6048 = 2
                                 val class348_sub47 = (method2148(RuntimeException_Sub1.aClass351_4601, Class348_Sub23_Sub2.aClass77_9029, -123))
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), i_77_)
@@ -853,7 +853,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 Class239_Sub20.anInt6048 = 2
                                 Class26.anInt385 = i_73_
                                 Class93.anInt1534 = i_72_
-                                val npc = (class348_sub22.aNpc_6859)
+                                val npc = (class348_sub22.aNpc_6859)!!
                                 Class348.anInt4292 = 0
                                 Class328_Sub2.anInt6516++
                                 val class348_sub47 = method2148((Class339.aClass351_4207), (Class348_Sub23_Sub2.aClass77_9029), -81)
@@ -921,7 +921,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                         Class239_Sub20.anInt6048 = 2
                                         Class93.anInt1534 = i_72_
                                         Class299_Sub1_Sub2.anInt8702++
-                                        val npc = (class348_sub22.aNpc_6859)
+                                        val npc = (class348_sub22.aNpc_6859)!!
                                         Class26.anInt385 = i_73_
                                         Class348.anInt4292 = 0
                                         val class348_sub47 = (method2148(Class348_Sub18.aClass351_6814, Class348_Sub23_Sub2.aClass77_9029, -125))
@@ -963,7 +963,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 if (i_76_ == 44) {
                                     val class348_sub22 = (Class282.aClass356_3654!!.method3480(i_77_.toLong(), -6008) as Class348_Sub22?)
                                     if (class348_sub22 != null) {
-                                        val npc = (class348_sub22.aNpc_6859)
+                                        val npc = (class348_sub22.aNpc_6859)!!
                                         Class93.anInt1534 = i_72_
                                         Class348.anInt4292 = 0
                                         Class26.anInt385 = i_73_

@@ -96,8 +96,8 @@ class Class239_Sub5 : Class239 {
                     val i_10_ = i_9_ shr 16
                     val i_11_ = (i_9_ and 0xff78) shr 8
                     val i_12_ = i_9_ and 0xff
-                    Class348_Sub17.aClass359Array6802[i_8_] = Class359()
-                    val class359 = Class348_Sub17.aClass359Array6802[i_8_]
+                    Class348_Sub17.aClass359Array6802!![i_8_] = Class359()
+                    val class359 = Class348_Sub17.aClass359Array6802!![i_8_]!!
                     class359.aBoolean4426 = false
                     class359.anInt4420 = (i_11_ shl 14) + ((i_10_ shl 28) + i_12_)
                     class359.anInt4423 = 0

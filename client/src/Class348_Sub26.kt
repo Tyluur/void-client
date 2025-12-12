@@ -1,37 +1,41 @@
+import Class318_Sub9_Sub1.Companion.method2516
+import kotlin.concurrent.Volatile
+
 /* Class348_Sub26 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class348_Sub26 internal constructor(@field:Volatile var aString6888: String?) : Class348() {
+    @Volatile
+    var anInt6887: Int = -1
 
-public final class Class348_Sub26 extends Class348 {
-    static Class348_Sub42_Sub14 aClass348_Sub42_Sub14_6885;
-    static int anInt6886;
-    volatile int anInt6887 = -1;
-    volatile String aString6888;
-    static short[] aShortArray6889;
-    static int[] anIntArray6890 = new int[32];
-    static Class74 aClass74_6891;
+    companion object {
+        var aClass348_Sub42_Sub14_6885: Class348_Sub42_Sub14? = null
+        var anInt6886: Int = 0
+        @JvmField
+        var aShortArray6889: ShortArray?
+        @JvmField
+        var anIntArray6890: IntArray? = IntArray(32)
+        var aClass74_6891: Class74?
 
-    public static void method2998(byte i) {
-        anIntArray6890 = null;
-        aClass348_Sub42_Sub14_6885 = null;
-        aClass74_6891 = null;
-        aShortArray6889 = null;
-        if (i != -35) method2999((byte) -26, -20);
-    }
+        @JvmStatic
+        fun method2998(i: Byte) {
+            anIntArray6890 = null
+            aClass348_Sub42_Sub14_6885 = null
+            aClass74_6891 = null
+            aShortArray6889 = null
+            if (i.toInt() != -35) Companion.method2999((-26).toByte(), -20)
+        }
 
-    static final void method2999(byte i, int i_0_) {
-        anInt6886++;
-        Class348_Sub42_Sub15 class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_0_, (byte) 105, 7);
-        if (i < 42) method2999((byte) 62, -64);
-        class348_sub42_sub15.method3251(-16058);
-    }
+        fun method2999(i: Byte, i_0_: Int) {
+            anInt6886++
+            val class348_sub42_sub15 = method2516(i_0_, 105.toByte(), 7)
+            if (i < 42) method2999(62.toByte(), -64)
+            class348_sub42_sub15.method3251(-16058)
+        }
 
-    Class348_Sub26(String string) {
-        this.aString6888 = string;
-    }
-
-    static {
-        aShortArray6889 = new short[256];
-        aClass74_6891 = new Class74(1, 4);
+        init {
+            aShortArray6889 = ShortArray(256)
+            aClass74_6891 = Class74(1, 4)
+        }
     }
 }

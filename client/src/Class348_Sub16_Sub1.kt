@@ -49,9 +49,9 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
             if (i_6_ <= i) {
                 if ((aClass348_Sub16_Sub3_8852.anIntArray8914[class348_sub43.anInt7067]) != 0) {
                     class348_sub43.aClass348_Sub16_Sub5_7081 = (Class348_Sub16_Sub5.Companion.method2911((class348_sub43.aClass348_Sub19_Sub1_7077), class348_sub43.aClass348_Sub16_Sub5_7081.method2914(), 0, class348_sub43.aClass348_Sub16_Sub5_7081.method2892()))
-                    aClass348_Sub16_Sub3_8852.method2874(95, (class348_sub43.aClass348_Sub17_7085.aShortArray6795[class348_sub43.anInt7071]) < 0, class348_sub43)
+                    aClass348_Sub16_Sub3_8852.method2874(95, (class348_sub43.aClass348_Sub17_7085.aShortArray6795!![class348_sub43.anInt7071]) < 0, class348_sub43)
                 } else class348_sub43.aClass348_Sub16_Sub5_7081 = (Class348_Sub16_Sub5.Companion.method2911((class348_sub43.aClass348_Sub19_Sub1_7077), class348_sub43.aClass348_Sub16_Sub5_7081.method2914(), class348_sub43.aClass348_Sub16_Sub5_7081.method2906(), class348_sub43.aClass348_Sub16_Sub5_7081.method2892()))
-                if ((class348_sub43.aClass348_Sub17_7085.aShortArray6795[class348_sub43.anInt7071]) < 0) class348_sub43.aClass348_Sub16_Sub5_7081.method2917(-1)
+                if ((class348_sub43.aClass348_Sub17_7085.aShortArray6795!![class348_sub43.anInt7071]) < 0) class348_sub43.aClass348_Sub16_Sub5_7081.method2917(-1)
                 i = class348_sub43.anInt7082 / i_5_
             }
         }
@@ -108,10 +108,10 @@ class Class348_Sub16_Sub1 internal constructor(private val aClass348_Sub16_Sub3_
                     val class348_sub16_sub5 = (class348_sub43.aClass348_Sub16_Sub5_7081)
                     if ((aClass348_Sub16_Sub3_8852.anIntArray8914[class348_sub43.anInt7067]) != 0) {
                         class348_sub43.aClass348_Sub16_Sub5_7081 = (Class348_Sub16_Sub5.Companion.method2911((class348_sub43.aClass348_Sub19_Sub1_7077), class348_sub16_sub5.method2914(), 0, class348_sub16_sub5.method2892()))
-                        aClass348_Sub16_Sub3_8852.method2874(116, ((class348_sub43.aClass348_Sub17_7085.aShortArray6795[class348_sub43.anInt7071]) < 0), class348_sub43)
+                        aClass348_Sub16_Sub3_8852.method2874(116, ((class348_sub43.aClass348_Sub17_7085.aShortArray6795!![class348_sub43.anInt7071]) < 0), class348_sub43)
                         class348_sub43.aClass348_Sub16_Sub5_7081.method2916(i_14_, class348_sub16_sub5.method2906())
                     } else class348_sub43.aClass348_Sub16_Sub5_7081 = (Class348_Sub16_Sub5.Companion.method2911((class348_sub43.aClass348_Sub19_Sub1_7077), class348_sub16_sub5.method2914(), class348_sub16_sub5.method2906(), class348_sub16_sub5.method2892()))
-                    if ((class348_sub43.aClass348_Sub17_7085.aShortArray6795[class348_sub43.anInt7071]) < 0) class348_sub43.aClass348_Sub16_Sub5_7081.method2917(-1)
+                    if ((class348_sub43.aClass348_Sub17_7085.aShortArray6795!![class348_sub43.anInt7071]) < 0) class348_sub43.aClass348_Sub16_Sub5_7081.method2917(-1)
                     class348_sub16_sub5.method2902(i_14_)
                     class348_sub16_sub5.method2817(`is`, i_9_, -i_9_ + i)
                     if (class348_sub16_sub5.method2895()) this.aClass348_Sub16_Sub4_8855.method2883(class348_sub16_sub5)

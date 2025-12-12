@@ -1,13 +1,4 @@
 /* Class348_Sub39 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class348_Sub39 extends Class348 {
-    short[] aShortArray7024;
-    byte[] aByteArray7025;
-
-    Class348_Sub39(short[] is, byte[] is_0_) {
-        this.aShortArray7024 = is;
-        this.aByteArray7025 = is_0_;
-    }
-}
+* Visit http://jode.sourceforge.net/
+*/
+class Class348_Sub39 internal constructor(var aShortArray7024: ShortArray?, var aByteArray7025: ByteArray?) : Class348()

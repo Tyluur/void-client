@@ -34,7 +34,7 @@ object Class257 {
         while (true) {
             val class348_sub28 = aClass262_3297.method1997(8) as Class348_Sub28?
             if (class348_sub28 == null) break
-            class348_sub28.anInterface19_6908.w(true)
+            class348_sub28.anInterface19_6908!!.w(true)
             class348_sub28.method2715(69.toByte())
         }
         if (i > -22) aBoolean3296 = false

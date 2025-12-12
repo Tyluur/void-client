@@ -3620,7 +3620,7 @@ class Class64_Sub3 : Class64 {
             val class348_sub15 = (Class27.aClass356_389!!.method3480(i_378_.toLong(), -6008) as Class348_Sub15?)
             val i_379_ = -8 % ((i - -49) / 44)
             if (class348_sub15 != null) {
-                class348_sub15.aClass55_Sub1_6768.method508(1)
+                class348_sub15.aClass55_Sub1_6768!!.method508(1)
                 Class303.method2285(class348_sub15.aBoolean6776, (-114).toByte(), class348_sub15.anInt6773)
                 class348_sub15.method2715(52.toByte())
             }

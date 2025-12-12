@@ -1,33 +1,39 @@
 /* Class348_Sub36 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class348_Sub36 : Class348() {
+    @JvmField
+    var anInt6982: Int = 0
+    var aClass46_6983: Class46? = null
+    @JvmField
+    var anInt6984: Int = 0
+    var anInt6986: Int = 0
+    @JvmField
+    var anObjectArray6987: Array<Any?>? = null
+    var anInt6988: Int = 0
+    @JvmField
+    var aClass46_6989: Class46? = null
+    @JvmField
+    var anInt6991: Int = 0
+    @JvmField
+    var aBoolean6993: Boolean = false
+    var aString6994: String? = null
+    @JvmField
+    var anInt6995: Int = 0
 
-public final class Class348_Sub36 extends Class348 {
-    int anInt6982;
-    Class46 aClass46_6983;
-    int anInt6984;
-    static int anInt6985;
-    int anInt6986;
-    Object[] anObjectArray6987;
-    int anInt6988;
-    Class46 aClass46_6989;
-    static Class46 aClass46_6990 = null;
-    int anInt6991;
-    static int anInt6992;
-    boolean aBoolean6993;
-    String aString6994;
-    int anInt6995;
+    companion object {
+        var anInt6985: Int
+        var aClass46_6990: Class46? = null
+        @JvmField
+        var anInt6992: Int = 0
+        @JvmStatic
+        fun method3029(i: Int) {
+            aClass46_6990 = null
+            val i_0_ = 28 % ((i - -45) / 39)
+        }
 
-    public static void method3029(int i) {
-        aClass46_6990 = null;
-        int i_0_ = 28 % ((i - -45) / 39);
-    }
-
-    public Class348_Sub36() {
-        /* empty */
-    }
-
-    static {
-        anInt6985 = 999999;
+        init {
+            anInt6985 = 999999
+        }
     }
 }

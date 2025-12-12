@@ -41,17 +41,17 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
         fun method3260(i: Int) {
             var class348_sub15 = Class27.aClass356_389!!.method3484(0) as Class348_Sub15?
             while (class348_sub15 != null) {
-                if (class348_sub15.aClass55_Sub1_6768.method510((-125).toByte())) Class64_Sub3.method690(70.toByte(), (class348_sub15.anInt6773))
+                if (class348_sub15.aClass55_Sub1_6768!!.method510((-125).toByte())) Class64_Sub3.method690(70.toByte(), (class348_sub15.anInt6773))
                 else {
-                    class348_sub15.aClass55_Sub1_6768.method522((-91).toByte())
+                    class348_sub15.aClass55_Sub1_6768!!.method522((-91).toByte())
                     try {
-                        class348_sub15.aClass55_Sub1_6768.method517(-2)
+                        class348_sub15.aClass55_Sub1_6768!!.method517(-2)
                     } catch (exception: Exception) {
                         Class156.method1242("TV: " + class348_sub15.anInt6773, exception, 15004)
                         Class64_Sub3.method690(15.toByte(), (class348_sub15.anInt6773))
                     }
                     if (!class348_sub15.aBoolean6783 && !class348_sub15.aBoolean6781) {
-                        val class348_sub23_sub1 = class348_sub15.aClass55_Sub1_6768.method512(0)
+                        val class348_sub23_sub1 = class348_sub15.aClass55_Sub1_6768!!.method512(0)
                         if (class348_sub23_sub1 != null) {
                             val class348_sub16_sub2 = class348_sub23_sub1.method2971(-61)
                             if (class348_sub16_sub2 != null) {

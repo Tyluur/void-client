@@ -173,9 +173,9 @@ class Class286_Sub4 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
             if (i_15_ != -1431655765) method2157(-27, 75)
             val class348_sub15 = (Class27.aClass356_389!!.method3480(i.toLong(), -6008) as Class348_Sub15?)
             if (class348_sub15 != null) {
-                val class348_sub23_sub4 = class348_sub15.aClass55_Sub1_6768.method513(i_15_ + 1431655815)
+                val class348_sub23_sub4 = class348_sub15.aClass55_Sub1_6768!!.method513(i_15_ + 1431655815)
                 if (class348_sub23_sub4 != null) {
-                    val d = class348_sub15.aClass55_Sub1_6768.method519(i_15_ xor 0x55555524)
+                    val d = class348_sub15.aClass55_Sub1_6768!!.method519(i_15_ xor 0x55555524)
                     if (class348_sub23_sub4.method2983(85.toByte()).toDouble() <= d && d <= class348_sub23_sub4.method2984(97.toByte()).toDouble()) return class348_sub23_sub4.method2989(9)
                 }
             }

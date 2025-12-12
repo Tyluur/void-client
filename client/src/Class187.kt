@@ -86,8 +86,8 @@ class Class187 internal constructor(class230: Class230?, i: Int, class45: Class4
             val class348_sub13 = method1974(42.toByte(), i, bool)
             if (class348_sub13 != null && bool_0_ == true) {
                 var i_1_ = 0
-                while ((class348_sub13.anIntArray6757.size > i_1_)) {
-                    class348_sub13.anIntArray6757[i_1_] = -1
+                while ((class348_sub13.anIntArray6757!!.size > i_1_)) {
+                    class348_sub13.anIntArray6757!![i_1_] = -1
                     class348_sub13.anIntArray6758[i_1_] = 0
                     i_1_++
                 }

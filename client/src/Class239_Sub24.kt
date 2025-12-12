@@ -170,7 +170,7 @@ class Class239_Sub24 : Class239 {
                         i_13_ = (Class132.aPlayer_1907!!.method2436(71.toByte()) + -1 shl 8) + i_24_ shr 9
                         i_14_ = i_25_ - -(Class132.aPlayer_1907!!.method2436(73.toByte()) + -1 shl 8) shr 9
                         var i_26_ = (Class132.aPlayer_1907!!.plane).toInt()
-                        if (i_26_ < 3 && ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962[1][i_24_ shr 9][i_25_ shr 9]).toInt()) != 0)) i_26_++
+                        if (i_26_ < 3 && ((0x2 and (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_24_ shr 9]!![i_25_ shr 9]).toInt()) != 0)) i_26_++
                     }
                     if (i_13_ != -1 && i_14_ != -1) {
                         if (!r.aBoolean9722 || (0x40 and Class38.anInt500) == 0) {
@@ -221,7 +221,7 @@ class Class239_Sub24 : Class239 {
                                     while ((Class150.anInt2057 > i_37_)) {
                                         val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_37_].toLong(), -6008)) as Class348_Sub22?)
                                         if (class348_sub22 != null) {
-                                            val npc = (class348_sub22.aNpc_6859)
+                                            val npc = (class348_sub22.aNpc_6859)!!
                                             if ((Class367_Sub11.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {
                                                 val i_38_ = ((npc.x) - ((npc.aClass79_10505.anInt1399) + -1 shl 8))
                                                 val i_39_ = (-((-1 + (npc.aClass79_10505.anInt1399)) shl 8) + (npc.y))
@@ -265,7 +265,7 @@ class Class239_Sub24 : Class239 {
                                         for (i_47_ in 0..<Class150.anInt2057) {
                                             val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_47_].toLong(), -6008)) as Class348_Sub22?)
                                             if (class348_sub22 != null) {
-                                                val npc_48_ = (class348_sub22.aNpc_6859)
+                                                val npc_48_ = (class348_sub22.aNpc_6859)!!
                                                 if (((npc_48_.anInt10215) != Class367_Sub11.anInt7396) && (npc != npc_48_) && (npc_48_.aBoolean10309)) {
                                                     val i_49_ = (-((npc_48_.aClass79_10505.anInt1399) - 1 shl 8) + (npc_48_.x))
                                                     val i_50_ = ((npc_48_.y) + -((npc_48_.aClass79_10505.anInt1399) - 1 shl 8))

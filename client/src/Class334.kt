@@ -87,9 +87,9 @@ class Class334 {
         fun method2651(string: String?, i: Int): String? {
             if (i != 3) method2650(null, -94, null, 2, -110, null, -7, null, -71, null, -47, 104)
             anInt4160++
-            if (!Class348_Sub24.aString6877.startsWith("win")) {
-                if (Class348_Sub24.aString6877.startsWith("linux")) return "lib" + string + ".so"
-                if (Class348_Sub24.aString6877.startsWith("mac")) return "lib" + string + ".dylib"
+            if (!Class348_Sub24.aString6877!!.startsWith("win")) {
+                if (Class348_Sub24.aString6877!!.startsWith("linux")) return "lib" + string + ".so"
+                if (Class348_Sub24.aString6877!!.startsWith("mac")) return "lib" + string + ".dylib"
             } else return string + ".dll"
             return null
         }

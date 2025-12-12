@@ -33,7 +33,7 @@ class Class318_Sub2 internal constructor(var anInt6394: Int) : Class318() {
                             if (Class367_Sub8.method3549((class348_sub42_sub12.anInt9608), (-119).toByte())) {
                                 val class348_sub22 = ((Class282.aClass356_3654!!.method3480((class348_sub42_sub12.aLong9605).toInt().toLong(), -6008)) as Class348_Sub22?)
                                 if (class348_sub22 != null) {
-                                    val npc = (class348_sub22.aNpc_6859)
+                                    val npc = (class348_sub22.aNpc_6859)!!
                                     var class79 = (npc.aClass79_10505)
                                     if (class79!!.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1))
                                     if (class79 != null) `is` = class79.anIntArray1342

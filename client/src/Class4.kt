@@ -30,7 +30,7 @@ class Class4 internal constructor(`is`: ByteArray, class348_sub33: Class348_Sub3
             var i_3_ = -1
             class348_sub49_0_.anInt7197 = class348_sub49.anInt7197 + i
             for (i_4_ in 0..<i) {
-                val i_5_ = (this.aClass348_Sub33_134!!.anIntArray6957[i_4_])
+                val i_5_ = (this.aClass348_Sub33_134!!.anIntArray6957!![i_4_])
                 if (i_5_ == 0) i_2_ = i_4_
                 val i_6_ = class348_sub49.readUnsignedByte(255) //byte
                 if (i_6_ > 0) {

@@ -46,11 +46,11 @@ class Class52 internal constructor(@JvmField var anInt4899: Int) : Interface12 {
 
         fun method491(i: Byte) {
             var i_1_ = 0
-            while ((Class348_Sub33.aByteArrayArrayArray6962.size > i_1_)) {
-                for (i_2_ in Class348_Sub33.aByteArrayArrayArray6962[0].indices) {
+            while ((Class348_Sub33.aByteArrayArrayArray6962!!.size > i_1_)) {
+                for (i_2_ in Class348_Sub33.aByteArrayArrayArray6962!![0]!!.indices) {
                     var i_3_ = 0
-                    while ((Class348_Sub33.aByteArrayArrayArray6962[0][0].size > i_3_)) {
-                        Class348_Sub33.aByteArrayArrayArray6962[i_1_][i_2_][i_3_] = 0.toByte()
+                    while ((Class348_Sub33.aByteArrayArrayArray6962!![0]!![0]!!.size > i_3_)) {
+                        Class348_Sub33.aByteArrayArrayArray6962!![i_1_]!![i_2_]!![i_3_] = 0.toByte()
                         i_3_++
                     }
                 }

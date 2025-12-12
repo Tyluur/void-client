@@ -353,13 +353,13 @@ class Player : Class318_Sub1_Sub3_Sub3() {
         }
         if (this == Class132.aPlayer_1907) {
             class101.method894(this.x, this.anInt6382, this.y)
-            for (i_56_ in -1 + Class348_Sub27.aClass302Array6897.size downTo 0) {
-                val class302 = Class348_Sub27.aClass302Array6897[i_56_]
+            for (i_56_ in -1 + Class348_Sub27.aClass302Array6897!!.size downTo 0) {
+                val class302 = Class348_Sub27.aClass302Array6897!![i_56_]
                 if (class302 != null && class302.anInt3834 != -1) {
                     if (class302.anInt3840 == 1) {
                         val class348_sub22 = ((Class282.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? Class348_Sub22?)
                         if (class348_sub22 != null) {
-                            val npc = (class348_sub22.aNpc_6859)
+                            val npc = (class348_sub22.aNpc_6859)!!
                             val i_57_ = (-(Class132.aPlayer_1907!!.x) + npc.x)
                             val i_58_ = (-(Class132.aPlayer_1907!!.y) + npc.y)
                             if (Class305.aBoolean3870) method2454(6253, i_57_, Class132.anInt1906, class302.anInt3834, (this.aClass64Array10323[0]), 92160000, class101, var_ha, i_58_)

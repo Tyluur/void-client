@@ -3734,7 +3734,7 @@ object Class66 {
                     return
                 }
                 if (i == 3104) {
-                    val string = aStringArray1152!![--anInt1170]
+                    val string = aStringArray1152!![--anInt1170]!!
                     var i_304_ = 0
                     if (method468(string, 73)) i_304_ = Class348_Sub41.method3156(true, string)
                     anInt1163++
@@ -5180,7 +5180,7 @@ object Class66 {
     }
 
     private fun method712(class348_sub36: Class348_Sub36, i: Int) {
-        val objects = class348_sub36.anObjectArray6987
+        val objects = class348_sub36.anObjectArray6987!!
         val i_515_ = (objects[0] as Int)
         val class348_sub42_sub19 = Class328.method2609(-122, i_515_)
         if (class348_sub42_sub19 != null) {
@@ -5193,17 +5193,17 @@ object Class66 {
                     var i_519_ = (objects[i_518_] as Int)
                     if (i_519_ == -2147483647) i_519_ = class348_sub36.anInt6984
                     if (i_519_ == -2147483646) i_519_ = class348_sub36.anInt6995
-                    if (i_519_ == -2147483645) i_519_ = (if (class348_sub36.aClass46_6989 != null) class348_sub36.aClass46_6989.anInt830 else -1)
+                    if (i_519_ == -2147483645) i_519_ = (if (class348_sub36.aClass46_6989 != null) class348_sub36.aClass46_6989!!.anInt830 else -1)
                     if (i_519_ == -2147483644) i_519_ = class348_sub36.anInt6986
-                    if (i_519_ == -2147483643) i_519_ = (if (class348_sub36.aClass46_6989 != null) class348_sub36.aClass46_6989.anInt704 else -1)
-                    if (i_519_ == -2147483642) i_519_ = (if (class348_sub36.aClass46_6983 != null) class348_sub36.aClass46_6983.anInt830 else -1)
-                    if (i_519_ == -2147483641) i_519_ = (if (class348_sub36.aClass46_6983 != null) class348_sub36.aClass46_6983.anInt704 else -1)
+                    if (i_519_ == -2147483643) i_519_ = (if (class348_sub36.aClass46_6989 != null) class348_sub36.aClass46_6989!!.anInt704 else -1)
+                    if (i_519_ == -2147483642) i_519_ = (if (class348_sub36.aClass46_6983 != null) class348_sub36.aClass46_6983!!.anInt830 else -1)
+                    if (i_519_ == -2147483641) i_519_ = (if (class348_sub36.aClass46_6983 != null) class348_sub36.aClass46_6983!!.anInt704 else -1)
                     if (i_519_ == -2147483640) i_519_ = class348_sub36.anInt6991
                     if (i_519_ == -2147483639) i_519_ = class348_sub36.anInt6982
                     anIntArray1164!![i_516_++] = i_519_
                 } else if (objects[i_518_] is String) {
                     var string = objects[i_518_] as String
-                    if (string == "event_opbase") string = class348_sub36.aString6994
+                    if (string == "event_opbase") string = class348_sub36.aString6994!!
                     aStringArray1155!![i_517_++] = string
                 }
             }

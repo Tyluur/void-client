@@ -70,7 +70,7 @@ object Class289 {
     fun method2194(i: Int, class348_sub42_sub13: Class348_Sub42_Sub13?): Int {
         anInt3696++
         if (i != -1) return -42
-        val string = Class348_Sub15.method2812(i + -43, class348_sub42_sub13)
+        val string = Class348_Sub15.method2812(i + -43, class348_sub42_sub13!!)
         return Class369.aClass143_4962!!.method1186(string, Class341.aClass105Array4234, false)
     }
 

@@ -1654,8 +1654,8 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         val strings = Class348_Sub40_Sub23.method3113(' ', true, string.replace('.', ' '))
         if (strings.size >= 2) {
             try {
-                val i_184_ = Class348_Sub41.method3156(true, strings[0])
-                val i_185_ = Class348_Sub41.method3156(true, strings[1])
+                val i_184_ = Class348_Sub41.method3156(true, strings[0]!!)
+                val i_185_ = Class348_Sub41.method3156(true, strings[1]!!)
                 anInt7789 = i_184_ * 10 - -i_185_
             } catch (numberformatexception: NumberFormatException) {
                 i_183_ = i_183_ or 0x4
@@ -3557,7 +3557,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 val class318_sub1_sub3_sub3: Class318_Sub1_Sub3_Sub3
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`[i_322_]]!!)
                 else {
-                    class318_sub1_sub3_sub3 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as Class348_Sub22).aNpc_6859)
+                    class318_sub1_sub3_sub3 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as Class348_Sub22).aNpc_6859!!)
                     class79 = class318_sub1_sub3_sub3.aClass79_10505
                     if (class79.anIntArray1377 != null) {
                         class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), i_316_ + -3)
@@ -3696,7 +3696,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                         if (class318_sub1_sub3_sub3 is Player) {
                             if (i_322_ >= 0) {
                                 var i_340_ = 0
-                                val class302s = Class348_Sub27.aClass302Array6897
+                                val class302s = Class348_Sub27.aClass302Array6897!!
                                 var i_341_ = 0
                                 while ((i_341_ < class302s.size)) {
                                     val class302 = class302s[i_341_]
@@ -3712,7 +3712,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                             }
                         } else {
                             var i_342_ = 0
-                            val class302s = Class348_Sub27.aClass302Array6897
+                            val class302s = Class348_Sub27.aClass302Array6897!!
                             var i_343_ = 0
                             while (class302s.size > i_343_) {
                                 val class302 = class302s[i_343_]

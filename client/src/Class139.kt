@@ -30,7 +30,7 @@ class Class139 {
                 Class150.anInt2057 = 0
                 for (i_2_ in 0..<i_0_) {
                     val i_3_ = Class74.anIntArray1233!![i_2_]
-                    val npc = ((Class282.aClass356_3654!!.method3480(i_3_.toLong(), -6008) as Class348_Sub22).aNpc_6859)
+                    val npc = ((Class282.aClass356_3654!!.method3480(i_3_.toLong(), -6008) as Class348_Sub22).aNpc_6859)!!
                     val i_4_ = Class299.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                     if (i_4_ == 0) {
                         Class74.anIntArray1233!![Class150.anInt2057++] = i_3_

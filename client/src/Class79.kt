@@ -800,8 +800,8 @@ class Class79 {
         fun method802(i: Int, i_93_: Int, bool: Boolean): Boolean {
             if (bool != true) return false
             anInt1332++
-            if (i_93_ < 0 || i < 0 || i_93_ >= Class348_Sub33.aByteArrayArrayArray6962[1].size || i >= Class348_Sub33.aByteArrayArrayArray6962[1][i_93_].size) return false
-            return (Class348_Sub33.aByteArrayArrayArray6962[1][i_93_][i].toInt() and 0x2) != 0
+            if (i_93_ < 0 || i < 0 || i_93_ >= Class348_Sub33.aByteArrayArrayArray6962!![1]!!.size || i >= Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_93_]!!.size) return false
+            return (Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_93_]!![i].toInt() and 0x2) != 0
         }
 
         @JvmStatic

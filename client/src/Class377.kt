@@ -615,8 +615,8 @@ class Class377(opengl: OpenGL?, canvas: Canvas?, l: Long, var_d: d?, class45: Cl
                 val strings = Class348_Sub40_Sub23.method3113(' ', true, string.replace('.', ' '))
                 if (strings.size < 2) throw RuntimeException("")
                 try {
-                    val i_32_ = Class348_Sub41.method3156(true, strings[0])
-                    val i_33_ = Class348_Sub41.method3156(true, strings[1])
+                    val i_32_ = Class348_Sub41.method3156(true, strings!![0]!!)
+                    val i_33_ = Class348_Sub41.method3156(true, strings!![1]!!)
                     anInt9924 = i_32_ * 10 - -i_33_
                 } catch (numberformatexception: NumberFormatException) {
                     throw RuntimeException("")

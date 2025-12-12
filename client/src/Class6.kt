@@ -89,7 +89,7 @@ class Class6 internal constructor(@JvmField var anInt144: Int, i_46_: Int, i_47_
                     bool = true
                     Class348_Sub40_Sub23.aClass348_Sub22Array9319!![Class348_Sub32.anInt6930++] = class348_sub22
                 }
-                val npc = (class348_sub22.aNpc_6859)
+                val npc = (class348_sub22.aNpc_6859)!!
                 Class74.anIntArray1233!![Class150.anInt2057++] = i_18_
                 npc.anInt10306 = Class348_Sub23_Sub3.anInt9041
                 if ((npc.aClass79_10505) != null && npc.aClass79_10505.method793(0)) method181(true, npc)

@@ -178,7 +178,7 @@ class Class107 {
                         }
                         var i_14_ = 0
                         while ((Class348_Sub40_Sub38.anInt9479 > i_14_)) {
-                            val i_15_ = (Class348_Sub15.anIntArray6770[i_14_] * 4 - -2 - i_4_ / 128)
+                            val i_15_ = (Class348_Sub15.anIntArray6770!![i_14_] * 4 - -2 - i_4_ / 128)
                             val i_16_ = (-(i_3_ / 128) + Class348_Sub40_Sub37.anIntArray9458!![i_14_] * 4 - -2)
                             var class51: Class51? = (Class348_Sub40_Sub12.aClass263_9195!!.method2005(0, Class263.anIntArray3347!![i_14_]))
                             if (class51!!.anIntArray945 != null) {
@@ -199,7 +199,7 @@ class Class107 {
                                 val i_19_ = (-Class90.regionTileY + ((class348_sub37.aLong4291) shr 14 and 0x3fffL).toInt())
                                 val i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4)
                                 val i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4)
-                                Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742[0]), i, class46, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)
+                                Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742!![0]), i, class46, var_aa, i_21_, i_2_ xor 0x59b2, i_20_)
                             }
                             class348_sub37 = (Class130.aClass356_1895!!.method3482(0) as? Class348_Sub37)
                         }
@@ -207,7 +207,7 @@ class Class107 {
                         while ((i_22_ < Class150.anInt2057)) {
                             val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_22_].toLong(), -6008)) as? Class348_Sub22)
                             if (class348_sub22 != null) {
-                                val npc = (class348_sub22.aNpc_6859)
+                                val npc = (class348_sub22.aNpc_6859)!!
                                 if (npc.method2445(((-126).toByte()).toByte()) && ((npc.plane) == (Class132.aPlayer_1907!!.plane))) {
                                     var class79 = (npc.aClass79_10505)
                                     if (class79 != null && (class79.anIntArray1377 != null)) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1))
@@ -215,7 +215,7 @@ class Class107 {
                                         val i_23_ = (-(i_4_ / 128) + (npc.x) / 128)
                                         val i_24_ = ((npc.y) / 128 + -(i_3_ / 128))
                                         if (class79.anInt1383 != -1) method2385(class46, i_1_, var_aa, class79.anInt1383, i_23_, i, ((-73).toByte()).toByte(), i_24_, var_ha)
-                                        else Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742[1]), i, class46, var_aa, i_24_, 2, i_23_)
+                                        else Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742!![1]), i, class46, var_aa, i_24_, 2, i_23_)
                                     }
                                 }
                             }
@@ -250,22 +250,22 @@ class Class107 {
                                 if ((Class132.aPlayer_1907!!.anInt10542) != 0 && (player.anInt10542 != 0) && (player.anInt10542 == (Class132.aPlayer_1907!!.anInt10542))) bool_32_ = true
                                 if (!player.aBoolean10554) {
                                     if (!bool) {
-                                        if (bool_30_) Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742[5]), i, class46, var_aa, i_28_, i_2_ + -22958, i_27_)
-                                        else if (!bool_32_) Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742[2]), i, class46, var_aa, i_28_, 2, i_27_)
-                                        else Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742[4]), i, class46, var_aa, i_28_, 2, i_27_)
-                                    } else Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742[3]), i, class46, var_aa, i_28_, 2, i_27_)
-                                } else Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742[6]), i, class46, var_aa, i_28_, i_2_ + -22958, i_27_)
+                                        if (bool_30_) Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742!![5]), i, class46, var_aa, i_28_, i_2_ + -22958, i_27_)
+                                        else if (!bool_32_) Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742!![2]), i, class46, var_aa, i_28_, 2, i_27_)
+                                        else Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742!![4]), i, class46, var_aa, i_28_, 2, i_27_)
+                                    } else Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742!![3]), i, class46, var_aa, i_28_, 2, i_27_)
+                                } else Class151.method1211(i_1_, (Class348_Sub12.aClass105Array6742!![6]), i, class46, var_aa, i_28_, i_2_ + -22958, i_27_)
                             }
                         }
                         val class302s = Class348_Sub27.aClass302Array6897
                         var i_33_ = 0
-                        while ((i_33_ < class302s.size)) {
+                        while ((i_33_ < class302s!!.size)) {
                             val class302 = class302s[i_33_]
                             if (class302 != null && (class302.anInt3840 != 0) && Class367_Sub11.anInt7396 % 20 < 10) {
                                 if (class302.anInt3840 == 1) {
                                     val class348_sub22 = ((Class282.aClass356_3654!!.method3480(class302.anInt3833.toLong(), -6008)) as? Class348_Sub22)
                                     if (class348_sub22 != null) {
-                                        val npc = (class348_sub22.aNpc_6859)
+                                        val npc = (class348_sub22.aNpc_6859)!!
                                         val i_34_ = (-(i_4_ / 128) + (npc.x) / 128)
                                         val i_35_ = (-(i_3_ / 128) + (npc.y) / 128)
                                         Class287.method2181(360000L, i_1_, -125, i_35_, i, class46, i_34_, (class302.anInt3831), var_aa)

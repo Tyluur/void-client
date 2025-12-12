@@ -100,23 +100,23 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                 class348_sub13 = Class348_Sub13()
                 Class348_Sub40.aClass356_7041!!.method3483(109.toByte(), l, class348_sub13)
             }
-            if (class348_sub13.anIntArray6757.size <= i_7_) {
+            if (class348_sub13.anIntArray6757!!.size <= i_7_) {
                 val `is` = IntArray(1 + i_7_)
                 val is_10_ = IntArray(1 + i_7_)
                 var i_11_ = 0
-                while ((class348_sub13.anIntArray6757.size > i_11_)) {
-                    `is`[i_11_] = class348_sub13.anIntArray6757[i_11_]
+                while ((class348_sub13.anIntArray6757!!.size > i_11_)) {
+                    `is`[i_11_] = class348_sub13.anIntArray6757!![i_11_]
                     is_10_[i_11_] = class348_sub13.anIntArray6758[i_11_]
                     i_11_++
                 }
-                for (i_12_ in class348_sub13.anIntArray6757.size..<i_7_) {
+                for (i_12_ in class348_sub13.anIntArray6757!!.size..<i_7_) {
                     `is`[i_12_] = -1
                     is_10_[i_12_] = 0
                 }
                 class348_sub13.anIntArray6757 = `is`
                 class348_sub13.anIntArray6758 = is_10_
             }
-            class348_sub13.anIntArray6757[i_7_] = i_9_
+            class348_sub13.anIntArray6757!![i_7_] = i_9_
             class348_sub13.anIntArray6758[i_7_] = i_8_
         }
 
@@ -187,8 +187,8 @@ class Canvas_Sub1 internal constructor(private val aComponent64: Component) : Ca
                 i_19_++
             }
             if (r_Sub2.aClass252_10488 == null) {
-                if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.aClass45_6950.method400(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))) {
-                    if (Class348_Sub32.aClass45_6950.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements")) r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"), Class130.aBoolean1900, (-91).toByte())
+                if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.aClass45_6950!!.method400(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"))) {
+                    if (Class348_Sub32.aClass45_6950!!.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.aClass45_6950, ((Class348_Sub26.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), Class130.aBoolean1900, (-91).toByte())
                     else {
                         bool = false
                         Class268.anInt3441++

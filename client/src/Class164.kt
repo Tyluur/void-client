@@ -223,7 +223,7 @@ object Class164 {
             Class348_Sub40_Sub20.aClass348_Sub4_9264 = Class348_Sub4(true, Class348_Sub23_Sub1.aClass297_8992!!)
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1037) {
-            val i_11_ = (Class348_Sub22.method2958(22388, Class21.aClass45_322) + Class348_Sub49_Sub2.method3405(2012104999, true))
+            val i_11_ = (Class348_Sub22.method2958(22388, Class21.aClass45_322!!) + Class348_Sub49_Sub2.method3405(2012104999, true))
             val i_12_ = (Class288_Sub1.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
@@ -243,14 +243,14 @@ object Class164 {
                 i_13_++
             }
             method1063(1)
-            Class285.anInt4737 = Class348_Sub35.aClass45_6980.method417("loginscreen", i xor 0x6ff3.inv())
-            Class54.anInt970 = Class348_Sub35.aClass45_6980.method417("lobbyscreen", 0)
+            Class285.anInt4737 = Class348_Sub35.aClass45_6980!!.method417("loginscreen", i xor 0x6ff3.inv())
+            Class54.anInt970 = Class348_Sub35.aClass45_6980!!.method417("lobbyscreen", 0)
             Class367_Sub10.aClass45_7382!!.method404(0, true, false)
             Class59_Sub2_Sub1.aClass45_8667!!.method404(0, true, true)
             Class21.aClass45_322!!.method404(i + 28660, true, true)
             Class104.aClass45_1627!!.method404(0, true, true)
             Class16.aClass45_233!!.method404(0, true, true)
-            Class348_Sub35.aClass45_6980.method404(0, true, true)
+            Class348_Sub35.aClass45_6980!!.method404(0, true, true)
             Class95.aClass45_1541!!.anInt634 = 2
             Class319.aBoolean3988 = true
             Class247.aClass45_3183!!.anInt634 = 2
@@ -273,7 +273,7 @@ object Class164 {
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1042) {
             Class51.aClass311_897!!.method2319((-56).toByte())
             try {
-                Class348_Sub32.aThread6946.join()
+                Class348_Sub32.aThread6946!!.join()
             } catch (interruptedexception: InterruptedException) {
                 return 0
             }

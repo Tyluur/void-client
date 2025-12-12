@@ -296,8 +296,8 @@ open class Class75 {
                         if (i_49_ == 65535) {
                             val class348_sub39 = (aClass356_1271!!.method3480((i shl 16 or i_48_).toLong(), -6008) as Class348_Sub39?)
                             if (class348_sub39 != null) {
-                                for (i_50_ in (class348_sub39.aShortArray7024).indices) {
-                                    var class51: Class51? = (aClass263_1245!!.method2005(0, (class348_sub39.aShortArray7024[i_50_]).toInt() and 0xffff))
+                                for (i_50_ in (class348_sub39.aShortArray7024)!!.indices) {
+                                    var class51: Class51? = (aClass263_1245!!.method2005(0, (class348_sub39.aShortArray7024!![i_50_]).toInt() and 0xffff))
                                     var i_51_ = class51!!.anInt921
                                     if (class51.anIntArray945 != null) {
                                         class51 = class51.method480(anInterface17_1244!!, 47.toByte())

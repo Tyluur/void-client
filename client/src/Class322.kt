@@ -104,8 +104,8 @@ class Class322 internal constructor(i: Int, i_9_: Int, i_10_: Int) {
             anInt4023++
             val class348_sub13 = method1974(4.toByte(), i, bool)
             if (class348_sub13 == null) return -1
-            if (i_0_ < 0 || i_0_ >= class348_sub13.anIntArray6757.size) return -1
-            return class348_sub13.anIntArray6757[i_0_]
+            if (i_0_ < 0 || i_0_ >= class348_sub13.anIntArray6757!!.size) return -1
+            return class348_sub13.anIntArray6757!![i_0_]
         }
 
         fun method2554(i: Byte) {

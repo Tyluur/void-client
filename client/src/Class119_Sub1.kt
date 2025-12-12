@@ -81,7 +81,7 @@ class Class119_Sub1 : Class119, Interface2 {
                         else if (method3549((class348_sub42_sub12.anInt9608), 107.toByte())) {
                             val class348_sub22 = ((Class282.aClass356_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as Class348_Sub22?)
                             if (class348_sub22 != null) {
-                                val npc = (class348_sub22.aNpc_6859)
+                                val npc = (class348_sub22.aNpc_6859)!!
                                 var class79 = (npc.aClass79_10505)
                                 if (class79!!.anIntArray1377 != null) class79 = (class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), -1))
                                 if (class79 != null) `is` = class79.anIntArray1342
@@ -99,18 +99,18 @@ class Class119_Sub1 : Class119, Interface2 {
                 } else string = Class316.method2367(125.toByte(), Class316.aClass348_Sub42_Sub12_3963!!)
                 if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508!!.method2063(Class348_Sub33.anInt6967, 544))
                 if (Class348_Sub36.aClass46_6990 != null) {
-                    var class324 = Class348_Sub36.aClass46_6990.method426(var_ha, 68.toByte())
+                    var class324 = Class348_Sub36.aClass46_6990!!.method426(var_ha, 68.toByte())
                     if (class324 == null) class324 = Class262.aClass324_3326!!
                     class324.method2585(
                         Class175.anIntArray2330,
-                        Class348_Sub36.aClass46_6990.anInt709,
+                        Class348_Sub36.aClass46_6990!!.anInt709,
                         Class341.aClass105Array4234!!,
-                        Class348_Sub36.aClass46_6990.anInt700,
-                        Class348_Sub36.aClass46_6990.anInt749,
-                        Class348_Sub36.aClass46_6990.anInt789,
-                        Class348_Sub36.aClass46_6990.anInt809,
+                        Class348_Sub36.aClass46_6990!!.anInt700,
+                        Class348_Sub36.aClass46_6990!!.anInt749,
+                        Class348_Sub36.aClass46_6990!!.anInt789,
+                        Class348_Sub36.aClass46_6990!!.anInt809,
                         OutputStream_Sub1.aRandom93,
-                        Class348_Sub36.aClass46_6990.anInt762,
+                        Class348_Sub36.aClass46_6990!!.anInt762,
                         Class32.anInt451,
                         Class356.anInt4383,
                         -33,

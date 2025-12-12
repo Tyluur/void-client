@@ -103,8 +103,8 @@ class Class239_Sub10 : Class239 {
         fun method1762(i: Int, i_10_: Int, i_11_: Int, i_12_: Int): Int {
             val i_13_ = 56 / ((i - 74) / 43)
             anInt5947++
-            if ((0x8 and Class348_Sub33.aByteArrayArrayArray6962[i_10_][i_12_][i_11_].toInt()) != 0) return 0
-            if (i_10_ > 0 && ((0x2 and Class348_Sub33.aByteArrayArrayArray6962[1][i_12_][i_11_].toInt()) != 0)) return i_10_ + -1
+            if ((0x8 and Class348_Sub33.aByteArrayArrayArray6962!![i_10_]!![i_12_]!![i_11_].toInt()) != 0) return 0
+            if (i_10_ > 0 && ((0x2 and Class348_Sub33.aByteArrayArrayArray6962!![1]!![i_12_]!![i_11_].toInt()) != 0)) return i_10_ + -1
             return i_10_
         }
 

@@ -41,12 +41,12 @@ object Class307 {
         if (class348_sub13 == null) return (Class127_Sub1.aClass271_8378!!.method2044(109, i_6_).anInt9542)
         var i_7_ = 0
         var i_8_ = 0
-        while ((i_8_ < class348_sub13.anIntArray6757.size)) {
-            if (class348_sub13.anIntArray6757[i_8_] == -1) i_7_++
+        while ((i_8_ < class348_sub13.anIntArray6757!!.size)) {
+            if (class348_sub13.anIntArray6757!![i_8_] == -1) i_7_++
             i_8_++
         }
         if (i.toInt() != 35) Class307.method2301((-102).toByte(), 43, true)
-        i_7_ += (Class127_Sub1.aClass271_8378!!.method2044(82, i_6_).anInt9542 + -class348_sub13.anIntArray6757.size)
+        i_7_ += (Class127_Sub1.aClass271_8378!!.method2044(82, i_6_).anInt9542 + -class348_sub13.anIntArray6757!!.size)
         return i_7_
     }
 }

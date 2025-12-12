@@ -4103,8 +4103,8 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class175.aBoolean2329 = true
             method2480(i.inv())
             var j = 0
-            while (Class348_Sub27.aClass302Array6897.size > j) {
-                Class348_Sub27.aClass302Array6897[j] = null
+            while (Class348_Sub27.aClass302Array6897!!.size > j) {
+                Class348_Sub27.aClass302Array6897!![j] = null
                 j++
             }
 

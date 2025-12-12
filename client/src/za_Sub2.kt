@@ -81,7 +81,7 @@ class za_Sub2(i: Int) : za() {
                                 class318_sub1_sub3_sub3.method2423(-96, i, -1)
                                 continue
                             }
-                            val npc = (class348_sub22.aNpc_6859)
+                            val npc = (class348_sub22.aNpc_6859)!!
                             i_6_ = ((class318_sub1_sub3_sub3.y) - npc.y)
                             i_7_ = (-(npc.x) + (class318_sub1_sub3_sub3.x))
                         } else {

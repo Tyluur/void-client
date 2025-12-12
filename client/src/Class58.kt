@@ -70,7 +70,7 @@ class Class58 {
             var i_2_ = 0
             var i_3_ = 0
             while ((i_3_ < class348_sub13.anIntArray6758.size)) {
-                if (class348_sub13.anIntArray6757[i_3_] == i) i_2_ += class348_sub13.anIntArray6758[i_3_]
+                if (class348_sub13.anIntArray6757!![i_3_] == i) i_2_ += class348_sub13.anIntArray6758[i_3_]
                 i_3_++
             }
             val i_4_ = 73 % ((i_1_ - -52) / 63)
@@ -110,8 +110,8 @@ class Class58 {
         fun method536(i: Int, bool: Boolean, i_24_: Int, i_25_: Int, i_26_: Int): Boolean {
             if (bool != false) method536(-65, true, 105, -126, 39)
             anInt1066++
-            if ((Class348_Sub33.aByteArrayArrayArray6962[0][i_24_][i].toInt() and 0x2) != 0) return true
-            if ((0x10 and Class348_Sub33.aByteArrayArrayArray6962[i_26_][i_24_][i].toInt()) != 0) return false
+            if ((Class348_Sub33.aByteArrayArrayArray6962!![0]!![i_24_]!![i].toInt() and 0x2) != 0) return true
+            if ((0x10 and Class348_Sub33.aByteArrayArrayArray6962!![i_26_]!![i_24_]!![i].toInt()) != 0) return false
             return i_25_ == method1762(-55, i_26_, i, i_24_)
         }
     }

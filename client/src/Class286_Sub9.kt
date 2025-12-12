@@ -213,7 +213,7 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
         fun method2175(i: Int, i_3_: Byte, i_4_: Int): Int {
             anInt6319++
             if (i_3_ >= -14) return 64
-            if (i_4_ == 1 || i_4_ == 3) return Class348_Sub20.anIntArray6830[i and 0x3]
+            if (i_4_ == 1 || i_4_ == 3) return Class348_Sub20.anIntArray6830!![i and 0x3]
             return Class84.anIntArray1450!![0x3 and i]
         }
 
@@ -228,7 +228,7 @@ class Class286_Sub9 internal constructor(var_ha_Sub2: ha_Sub2) : Class286(var_ha
                 if (bool) player.aBoolean10539 = false
                 else {
                     if (Class348_Sub42_Sub11.anInt9591 == i_22_) throw RuntimeException("s:lr")
-                    val class359 = (Class359().also { Class348_Sub17.aClass359Array6802[i_22_] = it })
+                    val class359 = (Class359().also { Class348_Sub17.aClass359Array6802!![i_22_] = it })
                     class359.anInt4420 = ((Class90.regionTileY - -(player.anIntArray10317!![0]) shr 6) + ((player.anIntArray10320!![0] + za_Sub2.regionTileX) shr 6 shl 14) + ((player.plane).toInt() shl 28))
                     if (player.anInt10524 != -1) class359.anInt4423 = player.anInt10524
                     else class359.anInt4423 = player.aClass264_10217.method2019((-91).toByte())

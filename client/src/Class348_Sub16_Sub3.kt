@@ -375,12 +375,12 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 class348_sub43.anInt7067 = i_51_
                 class348_sub43.aClass348_Sub17_7085 = class348_sub17
                 class348_sub43.aClass348_Sub19_Sub1_7077 = class348_sub19_sub1
-                class348_sub43.aClass23_7075 = (class348_sub17.aClass23Array6796[i_50_])
-                class348_sub43.anInt7088 = class348_sub17.aByteArray6798[i_50_].toInt()
+                class348_sub43.aClass23_7075 = (class348_sub17.aClass23Array6796!![i_50_])
+                class348_sub43.anInt7088 = class348_sub17.aByteArray6798!![i_50_].toInt()
                 class348_sub43.anInt7071 = i_50_
                 class348_sub43.anInt7066 = 1024 + ((class348_sub17.aByteArray6799[i_50_]) * (class348_sub17.anInt6797 * (i_49_ * i_49_))) shr 11
                 class348_sub43.anInt7074 = (class348_sub17.aByteArray6792[i_50_].toInt() and 0xff)
-                class348_sub43.anInt7080 = ((i_50_ shl 8) + -((class348_sub17.aShortArray6795[i_50_]).toInt() and 0x7fff))
+                class348_sub43.anInt7080 = ((i_50_ shl 8) + -((class348_sub17.aShortArray6795!![i_50_]).toInt() and 0x7fff))
                 class348_sub43.anInt7087 = -1
                 class348_sub43.anInt7070 = 0
                 class348_sub43.anInt7069 = i
@@ -389,9 +389,9 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 if (this.anIntArray8914[i_51_] == 0) class348_sub43.aClass348_Sub16_Sub5_7081 = (Class348_Sub16_Sub5.Companion.method2911(class348_sub19_sub1, method2845(0, class348_sub43), method2868(class348_sub43, i + -82), method2848(class348_sub43, (-70).toByte())))
                 else {
                     class348_sub43.aClass348_Sub16_Sub5_7081 = (Class348_Sub16_Sub5.Companion.method2911(class348_sub19_sub1, method2845(0, class348_sub43), 0, method2848(class348_sub43, (-70).toByte())))
-                    method2874(i xor 0x7a, (class348_sub17.aShortArray6795[i_50_]) < 0, class348_sub43)
+                    method2874(i xor 0x7a, (class348_sub17.aShortArray6795!![i_50_]) < 0, class348_sub43)
                 }
-                if (class348_sub17.aShortArray6795[i_50_] < 0) class348_sub43.aClass348_Sub16_Sub5_7081.method2917(-1)
+                if (class348_sub17.aShortArray6795!![i_50_] < 0) class348_sub43.aClass348_Sub16_Sub5_7081.method2917(-1)
                 if (class348_sub43.anInt7088 >= 0) {
                     val class348_sub43_53_ = (aClass348_Sub43ArrayArray8915[i_51_]!![class348_sub43.anInt7088])
                     if (class348_sub43_53_ != null && class348_sub43_53_.anInt7087 < 0) {
