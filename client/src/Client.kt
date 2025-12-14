@@ -536,6 +536,7 @@ import za.Companion.method3438
 import za_Sub1.Companion.method3441
 import za_Sub2.Companion.method3443
 import za_Sub2.Companion.method3444
+import java.applet.Applet
 import java.awt.Canvas
 import java.awt.Container
 import java.awt.Frame
@@ -1642,7 +1643,7 @@ class Client : Applet_Sub1() {
             try {
                 val var_class: Class<*> = Class93.anApplet1530!!.javaClass
                 val field = var_class.getDeclaredField("canvas")
-                Class305.aCanvas3869 = field.get(Class93.anApplet1530) as Canvas?
+                Class305.aCanvas3869 = field.get(Class93.anApplet1530) as? Canvas
                 field.set(Class93.anApplet1530, null)
                 if (Class305.aCanvas3869 != null) return
             } catch (exception: Exception) {

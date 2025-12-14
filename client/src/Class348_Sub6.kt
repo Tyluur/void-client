@@ -5,17 +5,23 @@ class Class348_Sub6 internal constructor(@JvmField var anInt6630: Int, @JvmField
     companion object {
         @JvmField
         var anIntArray6631: IntArray? = IntArray(13)
+
         @JvmField
         var anInt6632: Int = 0
+
         @JvmField
         var anInt6633: Int
+
         @JvmField
         var anInt6634: Int = -2
         var anIntArray6635: IntArray? = IntArray(4)
+
         @JvmField
         var anInt6637: Int = 2
+
         @JvmField
         var anInt6638: Int = 0
+
         @JvmField
         var anInt6639: Int = 0
 
@@ -33,16 +39,19 @@ class Class348_Sub6 internal constructor(@JvmField var anInt6630: Int, @JvmField
         fun method2769(var_class: Class<*>?, i: Byte, string: String?): Boolean {
             try {
                 anInt6639++
-                val var_class_0_ = (Player.aHashtable10565!!.get(string) as Class<*>?)
+                val var_class_0_ = (Player.aHashtable10565!!.get(string) as? Class<*>?)
                 if (var_class_0_ != null) {
                     return var_class_0_.getClassLoader() === var_class!!.getClassLoader()
                 }
-                val file = Class275.aHashtable3548!!.get(string) as File?
+                val file = Class275.aHashtable3548!!.get(string) as? File?
                 if (i.toInt() != 20) anInt6633 = -118
                 if (file != null) {
                     try {
-                        System.load(file.getPath())
-                        Player.aHashtable10565!!.put(string, (if (aClass6640 != null) aClass6640 else (Class90::class.java.also { aClass6640 = it })))
+                        System.load(file.path)
+                        if (aClass6640 == null) {
+                            aClass6640 = Class90::class.java
+                        }
+                        Player.aHashtable10565!![string] = aClass6640
                         return true
                     } catch (throwable: Throwable) {
                         if (Loader.trace) {

@@ -71,7 +71,10 @@ class Class348_Sub40_Sub19 : Class348_Sub40(0, true) {
         fun method3098(i: Int, string: String?): Boolean {
             if (i != -30282) return true
             anInt9255++
-            return method2769((if (aClass9260 != null) aClass9260 else (Class90::class.java.also { aClass9260 = it })), 20.toByte(), string)
+            if (aClass9260 == null) {
+                aClass9260 = Class90::class.java
+            }
+            return method2769(aClass9260, 20.toByte(), string)
         }
 
         @JvmStatic
