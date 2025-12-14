@@ -17,7 +17,7 @@ object Class335 {
             }
         }
         run {
-            var class348_sub9 = Client.aClass262_5185.method1995(4) as Class348_Sub9?
+            var class348_sub9 = Client.aClass262_5185!!.method1995(4) as? Class348_Sub9?
             while (class348_sub9 != null) {
                 var i_4_ = 1
                 val class225 = class348_sub9.aNpc_6691!!.method2422(72.toByte())
@@ -61,10 +61,10 @@ object Class335 {
                 class348_sub9.anInt6689 = (class348_sub9.aNpc_6691!!.y)
                 class348_sub9.anInt6687 = ((class348_sub9.aNpc_6691!!.y) + (class348_sub9.aNpc_6691!!.method2436(92.toByte()) shl 8))
                 Class238_Sub1.method1708(i_1_, i_3_, i_0_, i_2_, (-78).toByte(), class348_sub9)
-                class348_sub9 = (Client.aClass262_5185.method1990(85.toByte()) as Class348_Sub9?)
+                class348_sub9 = (Client.aClass262_5185!!.method1990(85.toByte()) as? Class348_Sub9?)
             }
         }
-        var class348_sub9 = (Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3484(0) as Class348_Sub9?)
+        var class348_sub9 = (Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3484(0) as? Class348_Sub9?)
         val i_6_ = -122 / (-i / 47)
         while ( /**/class348_sub9 != null) {
             var i_7_ = 1
@@ -104,7 +104,7 @@ object Class335 {
             class348_sub9.anInt6689 = (class348_sub9.aPlayer_6679!!.y)
             class348_sub9.anInt6687 = ((class348_sub9.aPlayer_6679!!.y) - -(class348_sub9.aPlayer_6679!!.method2436(126.toByte()) shl 8))
             Class238_Sub1.method1708(i_1_, i_3_, i_0_, i_2_, (-78).toByte(), class348_sub9)
-            class348_sub9 = (Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3482(0) as Class348_Sub9?)
+            class348_sub9 = (Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3482(0) as? Class348_Sub9?)
         }
     }
 }

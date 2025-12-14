@@ -727,14 +727,14 @@ class Class101_Sub2 : Class101() {
                 anInt5739++
                 if (bool) {
                     run {
-                        var class348_sub9 = Client.aClass262_5185.method1995(4) as? Class348_Sub9
+                        var class348_sub9 = Client.aClass262_5185!!.method1995(4) as? Class348_Sub9
                         while (class348_sub9 != null) {
                             if ((class348_sub9!!.aClass348_Sub16_Sub5_6676) != null) {
                                 Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9!!.aClass348_Sub16_Sub5_6676!!)
                                 class348_sub9!!.aClass348_Sub16_Sub5_6676 = null
                             }
                             class348_sub9!!.method2715(66.toByte())
-                            class348_sub9 = (Client.aClass262_5185.method1990(69.toByte()) as? Class348_Sub9)
+                            class348_sub9 = (Client.aClass262_5185!!.method1990(69.toByte()) as? Class348_Sub9)
                         }
                     }
                     var class348_sub9 = Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3484(0) as? Class348_Sub9

@@ -126,7 +126,7 @@ class Class239_Sub17 : Class239 {
         fun method1797(i: Int, i_11_: Int, class46: Class46, i_12_: Byte) {
             if (r.aBoolean9722) {
                 val class254 = (if (Class246.anInt3176 != -1) Class101_Sub3.aClass326_5764!!.method2600(Class246.anInt3176, 28364) else null)
-                if (Client.method105(class46).method3303(1) && (Class38.anInt500 and 0x20) != 0 && (class254 == null || (class46.method428(class254.anInt3256, Class246.anInt3176, -128) != class254.anInt3256))) {
+                if (Client.method105(class46)!!.method3303(1) && (Class38.anInt500 and 0x20) != 0 && (class254 == null || (class46.method428(class254.anInt3256, Class246.anInt3176, -128) != class254.anInt3256))) {
                     Class31.anInt436++
                     Class50_Sub3.method466(false, (Class28.aString5000 + " -> " + class46.aString752) + Loader.getDebug(class46.anInt830 shr 16, class46.anInt830 and 0xffff), class46.anInt830, (-90).toByte(), false, class46.anInt704, class46.anInt812, true, 6, (class46.anInt830 or (class46.anInt704 shl 0)).toLong(), Class28.aString5001, 0L, Class348_Sub49_Sub1.anInt9747)
                 }
@@ -151,7 +151,7 @@ class Class239_Sub17 : Class239 {
                     Class335.anInt4169++
                 }
             }
-            if (Client.method105(class46).method3305(0)) {
+            if (Client.method105(class46)!!.method3305(0)) {
                 if (class46.aString816 != null) Class50_Sub3.method466(false, "", class46.anInt830, (-118).toByte(), false, class46.anInt704, class46.anInt812, true, 16, ((class46.anInt704 shl 0) or class46.anInt830).toLong(), class46.aString816, 0L, -1)
                 else Class50_Sub3.method466(false, "", class46.anInt830, (-79).toByte(), false, class46.anInt704, class46.anInt812, true, 16, (class46.anInt704 shl 0 or class46.anInt830).toLong(), Class274.aClass274_3492!!.method2063(Class348_Sub33.anInt6967, 544), 0L, -1)
                 Class348_Sub42_Sub15.anInt9655++

@@ -176,7 +176,7 @@ class Class239_Sub8 : Class239 {
         @JvmStatic
         fun method1753(i: Int, class46: Class46): String? {
             anInt5924++
-            if (Client.method105(class46).method3307(116) == 0) return null
+            if (Client.method105(class46)!!.method3307(116) == 0) return null
             if (class46.aString780 == null || class46.aString780!!.trim { it <= ' ' }.length == 0) {
                 if (Class299_Sub2.aBoolean6327) return "Hidden-use"
                 return null

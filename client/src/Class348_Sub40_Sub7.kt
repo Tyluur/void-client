@@ -136,7 +136,7 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
                                     i_27_ = Class16.method260(bool_15_)
                                 }
                                 var i_28_ = class46.anInt696
-                                if (Class299_Sub2.aBoolean6327 && (Client.method105(class46).anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127
+                                if (Class299_Sub2.aBoolean6327 && (Client.method105(class46)!!.anInt7098 != 0 || class46.anInt774 == 0) && i_28_ > 127) i_28_ = 127
                                 if (class46 == Class289.aClass46_3701) {
                                     if (i_16_ != -1412584499 && ((Class312.anInt3930 == class46.anInt797) || (InputStream_Sub1.anInt78 == (class46.anInt797)))) {
                                         Class136.anInt4792 = i_10_

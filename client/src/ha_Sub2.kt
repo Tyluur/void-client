@@ -3558,7 +3558,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058!![`is`[i_322_]]!!)
                 else {
                     class318_sub1_sub3_sub3 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_322_ + -i_321_].toLong(), i_316_ xor 0x1775.inv()) as Class348_Sub22).aNpc_6859!!)
-                    class79 = class318_sub1_sub3_sub3.aClass79_10505
+                    class79 = class318_sub1_sub3_sub3.aClass79_10505!!
                     if (class79.anIntArray1377 != null) {
                         class79 = class79.method794((Class318_Sub1_Sub3_Sub3.aClass170_10209!!), i_316_ + -3)
                         if (class79 == null) {

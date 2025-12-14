@@ -907,7 +907,7 @@ class Class325 private constructor(i: Int, i_78_: Int, class68: Class68?) {
                                 val class46 = Class348_Sub22.method2957(i_74_, (-54).toByte(), i_75_)
                                 if (class46 != null) {
                                     Class341.method2678(-2049)
-                                    val class348_sub44 = Client.method105(class46)
+                                    val class348_sub44 = Client.method105(class46)!!
                                     Class339.method2666(class348_sub44.anInt7093, class348_sub44.method3307(14), class46, 21.toByte())
                                     Class28.aString5001 = method1753(0, class46)
                                     Class28.aString5000 = (class46.aString752 + "<col=ffffff>")

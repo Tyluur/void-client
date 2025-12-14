@@ -510,10 +510,10 @@ class Class101_Sub3 : Class101() {
                     class348_sub9 = Class218.aClass262_2859!!.method1990(117.toByte()) as? Class348_Sub9
                 }
             }
-            var class348_sub9 = Client.aClass262_5185.method1995(4) as? Class348_Sub9
+            var class348_sub9 = Client.aClass262_5185!!.method1995(4) as? Class348_Sub9
             while (class348_sub9 != null) {
                 if (class348_sub9!!.aBoolean6684) class348_sub9!!.method2781(21.toByte())
-                class348_sub9 = (Client.aClass262_5185.method1990(39.toByte()) as? Class348_Sub9)
+                class348_sub9 = (Client.aClass262_5185!!.method1990(39.toByte()) as? Class348_Sub9)
             }
         }
     }

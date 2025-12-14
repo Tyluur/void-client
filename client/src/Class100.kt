@@ -119,7 +119,7 @@ class Class100 internal constructor(private val aHa_Sub2_1581: ha_Sub2) {
         fun method888(i: Byte, i_7_: Int, class46: Class46): Int {
             anInt1580++
             if (i.toInt() != 57) method886(7)
-            if (!Client.method105(class46).method3301(i_7_, false) && class46.anObjectArray741 == null) return -1
+            if (!Client.method105(class46)!!.method3301(i_7_, false) && class46.anObjectArray741 == null) return -1
             if (class46.anIntArray706 != null && i_7_ < class46.anIntArray706!!.size) return class46.anIntArray706!![i_7_]
             return -1
         }

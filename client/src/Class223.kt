@@ -62,7 +62,7 @@ class Class223 internal constructor(i: Int, var anInt2896: Int) {
                             class348_sub9.anInt6681 = class79.anInt1363
                             class348_sub9.aBoolean6674 = class79.aBoolean1370
                         }
-                        Client.aClass262_5185.method1999(class348_sub9, i + -979210269)
+                        Client.aClass262_5185!!.method1999(class348_sub9, i + -979210269)
                     } else if (player != null) {
                         class348_sub9.aPlayer_6679 = player
                         class348_sub9.anInt6698 = (player.method2436(74.toByte()) + i_4_) shl 9

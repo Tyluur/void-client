@@ -86,7 +86,7 @@ class Class348_Sub9 : Class348() {
                             this.anInt6677 = this.anInt6694
                             this.anInt6681 = 256
                             this.anInt6696 = 256
-                            this.aBoolean6674 = this.aNpc_6691!!.aClass79_10505.aBoolean1370
+                            this.aBoolean6674 = this.aNpc_6691!!.aClass79_10505!!.aBoolean1370
                         } else {
                             this.anInt6694 = class79.anInt1392 shl 9
                             this.anInt6681 = class79.anInt1363
@@ -200,7 +200,7 @@ class Class348_Sub9 : Class348() {
                             class348_sub36.anInt6986 = i_8_
                             Class66.method705(class348_sub36)
                         }
-                        if (Class240.anInt4674 == 10 && Client.method105(class46).method3301(-1 + i_8_, false)) {
+                        if (Class240.anInt4674 == 10 && Client.method105(class46)!!.method3301(-1 + i_8_, false)) {
                             if (i_8_ == 1) {
                                 Class127_Sub1.anInt8380++
                                 val class348_sub47 = method2148((Class27.aClass351_398), (Class348_Sub23_Sub2.aClass77_9029), -93)
