@@ -79,7 +79,7 @@ class Class117 {
         var class348_sub50 = (aClass356_1767!!.method3484(0) as? Class348_Sub50)
         while (class348_sub50 != null) {
             val class348_sub46 = Class348_Sub46((class348_sub50.aString7211), (class348_sub50.aLong4291).toInt())
-            aClass356_1770!!.method3483(102.toByte(), Class287.method2179((class348_sub50.aString7211), 120.toByte()), class348_sub46)
+            aClass356_1770!!.method3483(102.toByte(), Class287.method2179((class348_sub50.aString7211!!), 120.toByte()), class348_sub46)
             class348_sub50 = aClass356_1767!!.method3482(0) as? Class348_Sub50
         }
     }
@@ -136,7 +136,7 @@ class Class117 {
         fun method1070(i: Byte, i_6_: Int) {
             if (i < 109) anInt1780 = 10
             anInt1769++
-            if (Class348_Sub49_Sub2.anIntArray9757 == null || Class348_Sub49_Sub2.anIntArray9757.size < i_6_) Class348_Sub49_Sub2.anIntArray9757 = IntArray(i_6_)
+            if (Class348_Sub49_Sub2.anIntArray9757 == null || Class348_Sub49_Sub2.anIntArray9757!!.size < i_6_) Class348_Sub49_Sub2.anIntArray9757 = IntArray(i_6_)
         }
 
         fun method1072(class45: Class45?, i: Byte) {

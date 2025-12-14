@@ -447,7 +447,7 @@ class Class314_Sub1 internal constructor(i: Int, class137: Class137?, class137_2
                     Class133.method1140(58)
                 }
             }
-            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350) != 0) {
+            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) != 0) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
                 Class367_Sub10.method3553(false, 120.toByte(), 0)
             }

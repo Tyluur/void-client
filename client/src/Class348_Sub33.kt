@@ -72,13 +72,13 @@ class Class348_Sub33 internal constructor(@JvmField var anInt6958: Int, `is`: By
             if (class348_sub48 != null) {
                 var bool = false
                 for (i_0_ in 0..<class348_sub48.anInt7126) {
-                    if (class348_sub48.aClass144Array7135[i_0_] != null) {
-                        if ((class348_sub48.aClass144Array7135[i_0_].anInt1997) == 2) class348_sub48.anIntArray7131[i_0_] = -5
-                        if ((class348_sub48.aClass144Array7135[i_0_].anInt1997) == 0) bool = true
+                    if (class348_sub48.aClass144Array7135!![i_0_] != null) {
+                        if ((class348_sub48.aClass144Array7135!![i_0_]!!.anInt1997) == 2) class348_sub48.anIntArray7131!![i_0_] = -5
+                        if ((class348_sub48.aClass144Array7135!![i_0_]!!.anInt1997) == 0) bool = true
                     }
-                    if (class348_sub48.aClass144Array7127[i_0_] != null) {
-                        if ((class348_sub48.aClass144Array7127[i_0_].anInt1997) == 2) class348_sub48.anIntArray7131[i_0_] = -6
-                        if ((class348_sub48.aClass144Array7127[i_0_].anInt1997) == 0) bool = true
+                    if (class348_sub48.aClass144Array7127!![i_0_] != null) {
+                        if ((class348_sub48.aClass144Array7127!![i_0_]!!.anInt1997) == 2) class348_sub48.anIntArray7131!![i_0_] = -6
+                        if ((class348_sub48.aClass144Array7127!![i_0_]!!.anInt1997) == 0) bool = true
                     }
                 }
                 if (i < 37) aLong6966 = -3L
@@ -87,27 +87,27 @@ class Class348_Sub33 internal constructor(@JvmField var anInt6958: Int, `is`: By
                     class348_sub49_sub2.writeInt(94.toByte(), class348_sub48.anInt7130)
                     var i_2_ = 0
                     while ((i_2_ < class348_sub48.anInt7126)) {
-                        if (class348_sub48.anIntArray7131[i_2_] == 0) {
+                        if (class348_sub48.anIntArray7131!![i_2_] == 0) {
                             try {
-                                val i_3_ = (class348_sub48.anIntArray7132[i_2_])
+                                val i_3_ = (class348_sub48.anIntArray7132!![i_2_])
                                 if (i_3_ == 0) {
-                                    val field = ((class348_sub48.aClass144Array7135[i_2_].anObject1998) as Field?)
+                                    val field = ((class348_sub48.aClass144Array7135!![i_2_]!!.anObject1998) as Field?)
                                     val i_5_ = field!!.getInt(null)
                                     class348_sub49_sub2.writeByte(false, 0)
                                     class348_sub49_sub2.writeInt(108.toByte(), i_5_)
                                 } else if (i_3_ == 1) {
-                                    val field = ((class348_sub48.aClass144Array7135[i_2_].anObject1998) as Field?)
-                                    field!!.setInt(null, (class348_sub48.anIntArray7136[i_2_]))
+                                    val field = ((class348_sub48.aClass144Array7135!![i_2_]!!.anObject1998) as Field?)
+                                    field!!.setInt(null, (class348_sub48.anIntArray7136!![i_2_]))
                                     class348_sub49_sub2.writeByte(false, 0)
                                 } else if (i_3_ == 2) {
-                                    val field = ((class348_sub48.aClass144Array7135[i_2_].anObject1998) as Field?)
+                                    val field = ((class348_sub48.aClass144Array7135!![i_2_]!!.anObject1998) as Field?)
                                     val i_4_ = field!!.getModifiers()
                                     class348_sub49_sub2.writeByte(false, 0)
                                     class348_sub49_sub2.writeInt(122.toByte(), i_4_)
                                 }
                                 if (i_3_ == 3) {
-                                    val method = ((class348_sub48.aClass144Array7127[i_2_].anObject1998) as Method?)
-                                    val `is` = (class348_sub48.aByteArrayArrayArray7128[i_2_])
+                                    val method = ((class348_sub48.aClass144Array7127!![i_2_]!!.anObject1998) as Method?)
+                                    val `is` = (class348_sub48.aByteArrayArrayArray7128!![i_2_])!!
                                     val objects = arrayOfNulls<Any>(`is`.size)
                                     var i_6_ = 0
                                     while (`is`.size > i_6_) {
@@ -126,7 +126,7 @@ class Class348_Sub33 internal constructor(@JvmField var anInt6958: Int, `is`: By
                                         } else class348_sub49_sub2.writeByte(false, 4)
                                     } else class348_sub49_sub2.writeByte(false, 0)
                                 } else if (i_3_ == 4) {
-                                    val method = ((class348_sub48.aClass144Array7127[i_2_].anObject1998) as Method?)
+                                    val method = ((class348_sub48.aClass144Array7127!![i_2_]!!.anObject1998) as Method?)
                                     val i_7_ = method!!.getModifiers()
                                     class348_sub49_sub2.writeByte(false, 0)
                                     class348_sub49_sub2.writeInt(95.toByte(), i_7_)
@@ -156,7 +156,7 @@ class Class348_Sub33 internal constructor(@JvmField var anInt6958: Int, `is`: By
                             } catch (throwable: Throwable) {
                                 class348_sub49_sub2.writeByte(false, -21)
                             }
-                        } else class348_sub49_sub2.writeByte(false, (class348_sub48.anIntArray7131[i_2_]))
+                        } else class348_sub49_sub2.writeByte(false, (class348_sub48.anIntArray7131!![i_2_]))
                         i_2_++
                     }
                     class348_sub49_sub2.method3344(i_1_, false)

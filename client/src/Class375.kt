@@ -40,8 +40,8 @@ internal object Class375 {
     fun method3614(i: Int, i_3_: Int, i_4_: Int, class348_sub47: Class348_Sub47?, i_5_: Int) {
         anInt4539++
         if (i_5_ != -19692) method3613(10)
-        class348_sub47!!.aClass348_Sub49_Sub2_7116.writeInt(124.toByte(), i)
-        class348_sub47!!.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), i_4_)
-        class348_sub47!!.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), i_3_)
+        class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeInt(124.toByte(), i)
+        class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_4_)
+        class348_sub47!!.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_3_)
     }
 }

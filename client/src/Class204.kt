@@ -108,7 +108,7 @@ class Class204 {
     }
 
     private fun method1489(i: Int): Int {
-        var i_14_ = (aClass348_Sub49_2677.aByteArray7154[aClass348_Sub49_2677.anInt7197]).toInt()
+        var i_14_ = (aClass348_Sub49_2677.aByteArray7154!![aClass348_Sub49_2677.anInt7197]).toInt()
         if (i_14_ < 0) {
             i_14_ = i_14_ and 0xff
             anIntArray2678!![i] = i_14_
@@ -117,7 +117,7 @@ class Class204 {
         if (i_14_ == 240 || i_14_ == 247) {
             val i_15_ = aClass348_Sub49_2677.method3366(40.toByte())
             if (i_14_ == 247 && i_15_ > 0) {
-                val i_16_ = ((aClass348_Sub49_2677.aByteArray7154[aClass348_Sub49_2677.anInt7197]).toInt() and 0xff)
+                val i_16_ = ((aClass348_Sub49_2677.aByteArray7154!![aClass348_Sub49_2677.anInt7197]).toInt() and 0xff)
                 if (i_16_ >= 241 && i_16_ <= 243 || i_16_ == 246 || i_16_ == 248 || i_16_ >= 250 && i_16_ <= 252 || i_16_ == 254) {
                     aClass348_Sub49_2677.anInt7197++
                     anIntArray2678!![i] = i_16_

@@ -275,8 +275,8 @@ class Class348_Sub40_Sub30 : Class348_Sub40(1, false) {
                                 else {
                                     Class146.anInt2012++
                                     val class348_sub47 = (method2148(Class294.aClass351_5057, Class348_Sub23_Sub2.aClass77_9029, -85))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, method1745(string, -65))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                                     Class348_Sub42_Sub14.method3243(123, class348_sub47)
                                     if (i <= -31) break
                                     method3127(-4)

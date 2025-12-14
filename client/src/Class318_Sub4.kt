@@ -72,9 +72,9 @@ class Class318_Sub4 : Class318() {
             anInt6413++
             val class348_sub42_sub19 = Class348_Sub42_Sub19()
             val class348_sub49 = Class348_Sub49(`is`)
-            class348_sub49.anInt7197 = -2 + class348_sub49.aByteArray7154.size
+            class348_sub49.anInt7197 = -2 + class348_sub49.aByteArray7154!!.size
             val i_11_ = class348_sub49.readUnsignedShort(842397944)
-            val i_12_ = -12 + -i_11_ + (-2 + (class348_sub49.aByteArray7154).size)
+            val i_12_ = -12 + -i_11_ + (-2 + (class348_sub49.aByteArray7154)!!.size)
             class348_sub49.anInt7197 = i_12_
             val i_13_ = class348_sub49.readInt((-126).toByte())
             class348_sub42_sub19.anInt9688 = class348_sub49.readUnsignedShort(842397944)

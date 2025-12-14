@@ -23,11 +23,11 @@ object Class92 {
 
     fun method859(i: Int) {
         anInt1527++
-        val i_0_ = Class348_Sub50.aByteArrayArray7212.size
+        val i_0_ = Class348_Sub50.aByteArrayArray7212!!.size
         if (i < -125) {
             var i_1_ = 0
             while (i_0_ > i_1_) {
-                if (Class348_Sub50.aByteArrayArray7212[i_1_] != null) {
+                if (Class348_Sub50.aByteArrayArray7212!![i_1_] != null) {
                     var i_2_ = -1
                     for (i_3_ in 0..<Class27.anInt388) {
                         if (Class342.anIntArray4250!![i_3_] == Class348_Sub23_Sub3.anIntArray9042!![i_1_]) {
@@ -39,9 +39,9 @@ object Class92 {
                         Class342.anIntArray4250!![Class27.anInt388] = Class348_Sub23_Sub3.anIntArray9042!![i_1_]
                         i_2_ = Class27.anInt388++
                     }
-                    val class348_sub49 = Class348_Sub49(Class348_Sub50.aByteArrayArray7212[i_1_])
+                    val class348_sub49 = Class348_Sub49(Class348_Sub50.aByteArrayArray7212!![i_1_])
                     var i_4_ = 0
-                    while (class348_sub49.anInt7197 < Class348_Sub50.aByteArrayArray7212[i_1_].size) {
+                    while (class348_sub49.anInt7197 < Class348_Sub50.aByteArrayArray7212!![i_1_]!!.size) {
                         if (i_4_ >= 511 || Class150.anInt2057 >= 1023) break
                         val i_5_ = i_2_ or (i_4_++ shl 6)
                         val i_6_ = class348_sub49.readUnsignedShort(842397944)

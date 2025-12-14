@@ -25,7 +25,7 @@ class Class239_Sub24 : Class239 {
         anInt6092++
         if (this.aClass348_Sub51_3136.method3422(674) == Class10.aClass230_186) {
             if (this.aClass348_Sub51_3136.method3425(i + -70)) return 3
-            if (i_3_ == 0 || this.aClass348_Sub51_3136.aClass239_Sub9_7256.method1759(-32350) == 1) return 1
+            if (i_3_ == 0 || this.aClass348_Sub51_3136.aClass239_Sub9_7256!!.method1759(-32350) == 1) return 1
             return 2
         }
         if (i != 3) method1716(true)

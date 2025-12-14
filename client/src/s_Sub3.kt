@@ -411,8 +411,8 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
         anInt8309++
     }
 
-    override fun method3984(i: Int, i_135_: Int, i_136_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_137_: Int, i_138_: Int) {
-        method4007(i, i_135_, i_137_, bool, bools, -1, i_138_, i_136_)
+    override fun method3984(i: Int, i_135_: Int, i_136_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_137_: Int, i_138_: Int) {
+        method4007(i, i_135_, i_137_, bool, bools!!, -1, i_138_, i_136_)
         anInt8318++
     }
 
@@ -592,8 +592,8 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
         }
     }
 
-    override fun method3983(i: Int, i_181_: Int, i_182_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_183_: Int) {
-        method4007(i, i_181_, -1, bool, bools, -1, i_183_, i_182_)
+    override fun method3983(i: Int, i_181_: Int, i_182_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_183_: Int) {
+        method4007(i, i_181_, -1, bool, bools!!, -1, i_183_, i_182_)
         anInt8288++
     }
 

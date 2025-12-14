@@ -7,7 +7,7 @@ class Class239_Sub18 : Class239 {
         anInt6034++
         if (i != 3) return -46
         if (this.aClass348_Sub51_3136.method3425(-62)) return 3
-        if (i_1_ == 0 || this.aClass348_Sub51_3136.aClass239_Sub9_7256.method1759(-32350) == 1) return 1
+        if (i_1_ == 0 || this.aClass348_Sub51_3136.aClass239_Sub9_7256!!.method1759(-32350) == 1) return 1
         return 2
     }
 
@@ -82,11 +82,11 @@ class Class239_Sub18 : Class239 {
                 while (true) {
                     val class348_sub47 = Class348_Sub40_Sub13.aClass262_9201!!.method1995(i xor 0x4) as Class348_Sub47?
                     if (class348_sub47 == null) break
-                    Class348_Sub40_Sub8.aClass238_9165!!.method1706(0, i xor 0x77, class348_sub47.anInt7119, (class348_sub47.aClass348_Sub49_Sub2_7116.aByteArray7154))
+                    Class348_Sub40_Sub8.aClass238_9165!!.method1706(0, i xor 0x77, class348_sub47.anInt7119, (class348_sub47.aClass348_Sub49_Sub2_7116!!.aByteArray7154!!))
                     i_2_ += class348_sub47.anInt7119
                     Class348_Sub34.anInt6969 -= class348_sub47.anInt7119
                     class348_sub47.method2715(74.toByte())
-                    class348_sub47.aClass348_Sub49_Sub2_7116.method3360((-69).toByte())
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.method3360((-69).toByte())
                     class348_sub47.method3326((-45).toByte())
                 }
                 Class11.anInt193 = 0

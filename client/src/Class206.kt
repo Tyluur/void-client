@@ -232,7 +232,7 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
                         if (class10.anInt188 < 0) {
                             var i_5_ = 8192
                             val i_6_: Int
-                            if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (if (class10.aByte180.toInt() == 3) Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215.method1838(-32350) else Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272.method1838(-32350))) shr 2)
+                            if (class10.anInt178 == 0) i_6_ = ((class10.anInt184 * (if (class10.aByte180.toInt() == 3) Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350) else Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350))) shr 2)
                             else {
                                 val i_7_ = 0x3 and (class10.anInt178 shr 24)
                                 if ((Class132.aPlayer_1907!!.plane).toInt() == i_7_) {
@@ -249,7 +249,7 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
                                         continue
                                     }
                                     if (i_14_ < 0) i_14_ = 0
-                                    i_6_ = ((i_8_ + -i_14_) * (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7234.method1838(-32350) * class10.anInt184) / i_8_) shr 2
+                                    i_6_ = ((i_8_ + -i_14_) * (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350) * class10.anInt184) / i_8_) shr 2
                                     if ((class10.aClass318_Sub1_172 != null) && (class10.aClass318_Sub1_172 is Class318_Sub1_Sub3)) {
                                         val class318_sub1_sub3 = ((class10.aClass318_Sub1_172) as Class318_Sub1_Sub3)
                                         val i_15_ = (class318_sub1_sub3.aShort8743)
@@ -273,7 +273,7 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
                                 } else class348_sub19_sub1 = class10.aClass317_183!!.method2369().method2944(Class57.aClass163_1050!!)
                                 val class348_sub16_sub5 = (Class348_Sub16_Sub5.method2911(class348_sub19_sub1!!, class10.anInt173, i_6_, i_5_).also { class10.aClass348_Sub16_Sub5_176 = it })
                                 class348_sub16_sub5!!.method2917(-1 + class10.anInt177)
-                                Class348_Sub43.aClass348_Sub16_Sub4_7065.method2883(class348_sub16_sub5)
+                                Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
                             }
                         }
                     } else bool = true
@@ -291,16 +291,16 @@ class Class206 internal constructor(var_ha_Sub2: ha_Sub2) : Interface11 {
             }
             anInt4890++
             if (Class74.aBoolean1236 && !method1296(true)) {
-                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260.method1838(-32350) != 0 && Class267.anInt3428 != -1) {
-                    if (Class209.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, Class209.Companion.aClass348_Sub16_Sub3_2718, Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260.method1838(-32350), Class59_Sub2_Sub1.aClass45_8667, false, 0, Class267.anInt3428)
-                    else method2732(0, Class267.anInt3428, false, 124, Class59_Sub2_Sub1.aClass45_8667, Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260.method1838(-32350))
+                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && Class267.anInt3428 != -1) {
+                    if (Class209.Companion.aClass348_Sub16_Sub3_2718 != null) method3086(2, Class209.Companion.aClass348_Sub16_Sub3_2718, Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), Class59_Sub2_Sub1.aClass45_8667, false, 0, Class267.anInt3428)
+                    else method2732(0, Class267.anInt3428, false, 124, Class59_Sub2_Sub1.aClass45_8667, Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
                 }
                 Class74.aBoolean1236 = false
                 Class209.Companion.aClass348_Sub16_Sub3_2718 = null
-            } else if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260.method1838(-32350) != 0 && Class267.anInt3428 != -1 && !method1296(true)) {
+            } else if (Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && Class267.anInt3428 != -1 && !method1296(true)) {
                 Class318.anInt3973++
                 val class348_sub47 = method2148(ha_Sub2.aClass351_7554, Class348_Sub23_Sub2.aClass77_9029, -107)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeInt(118.toByte(), Class267.anInt3428)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(118.toByte(), Class267.anInt3428)
                 Class348_Sub42_Sub14.method3243(-54, class348_sub47)
                 Class267.anInt3428 = -1
             }

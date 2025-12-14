@@ -27,9 +27,9 @@ abstract class s internal constructor(i: Int, i_60_: Int, i_61_: Int, `is`: Arra
         return this.anIntArrayArray4584[i_21_]!![i_20_]
     }
 
-    abstract fun method3983(i: Int, i_22_: Int, i_23_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_24_: Int)
+    abstract fun method3983(i: Int, i_22_: Int, i_23_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_24_: Int)
 
-    abstract fun method3984(i: Int, i_25_: Int, i_26_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_27_: Int, i_28_: Int)
+    abstract fun method3984(i: Int, i_25_: Int, i_26_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_27_: Int, i_28_: Int)
 
     fun method3986(i: Int, i_30_: Int, i_31_: Byte): Int {
         anInt4589++

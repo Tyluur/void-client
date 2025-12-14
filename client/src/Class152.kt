@@ -19,10 +19,10 @@ class Class152 private constructor(i: Int, i_6_: Int, i_7_: Int) {
     fun method1218(`is`: ByteArray?, i: Int, class348_sub49: Class348_Sub49?) {
         try {
             anInt2073++
-            if ((class348_sub49!!.aByteArray7154[class348_sub49.anInt7197]).toInt() != 31 || (class348_sub49.aByteArray7154[1 + class348_sub49.anInt7197]).toInt() != -117) throw RuntimeException("Invalid GZIP header!")
+            if ((class348_sub49!!.aByteArray7154!![class348_sub49.anInt7197]).toInt() != 31 || (class348_sub49.aByteArray7154!![1 + class348_sub49.anInt7197]).toInt() != -117) throw RuntimeException("Invalid GZIP header!")
             if (anInflater2072 == null) anInflater2072 = Inflater(true)
             try {
-                anInflater2072!!.setInput(class348_sub49.aByteArray7154, class348_sub49.anInt7197 - -10, -8 - (10 + class348_sub49.anInt7197 - (class348_sub49.aByteArray7154).size))
+                anInflater2072!!.setInput(class348_sub49.aByteArray7154, class348_sub49.anInt7197 - -10, -8 - (10 + class348_sub49.anInt7197 - (class348_sub49.aByteArray7154)!!.size))
                 anInflater2072!!.inflate(`is`)
             } catch (exception: Exception) {
                 anInflater2072!!.reset()

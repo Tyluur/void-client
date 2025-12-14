@@ -237,7 +237,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.equals("tk0", ignoreCase = true)) {
                             method3553(false, 104.toByte(), 0)
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350) == 0) {
+                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 0) {
                                 method94("Entered tk0", 101)
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 0)
                                 method243(37)
@@ -248,7 +248,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.equals("tk1", ignoreCase = true)) {
                             method3553(false, 109.toByte(), 1)
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350) == 1) {
+                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1) {
                                 method94("Entered tk1", -65)
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 1)
                                 method243(i.toInt() xor 0x6b.inv())
@@ -259,7 +259,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.equals("tk2", ignoreCase = true)) {
                             method3553(false, 115.toByte(), 2)
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350) == 2) {
+                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
                                 method94("Entered tk2", i + 151)
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 2)
                                 method243(37)
@@ -272,7 +272,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.equals("tk3", ignoreCase = true)) {
                             method3553(false, 107.toByte(), 3)
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350) == 3) {
+                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 3) {
                                 method94("Entered tk3", 78)
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 3)
                                 method243(37)
@@ -283,7 +283,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.equals("tk5", ignoreCase = true)) {
                             method3553(false, 113.toByte(), 5)
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(i.toInt() xor 0x7e13) == 5) {
+                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i.toInt() xor 0x7e13) == 5) {
                                 method94("Entered tk5", -108)
                                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251), 5)
                                 method243(37)
@@ -303,7 +303,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
                                     method243(37)
                                     r.aBoolean9719 = false
-                                    method94(("maxbuildarea=" + Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226.method1743(-32350)), 98)
+                                    method94(("maxbuildarea=" + Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350)), 98)
                                     return
                                 }
                                 return
@@ -474,12 +474,12 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                         }
                         if (string.startsWith("pc")) {
                             val class348_sub47 = (method2148(Class348_Sub40_Sub22.aClass351_9304, Class348_Sub23_Sub2.aClass77_9029, -97))
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-                            val i_12_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                            val i_12_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                             val i_13_ = string.indexOf(" ", 4)
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string.substring(3, i_13_))
-                            method3544((class348_sub47.aClass348_Sub49_Sub2_7116), i + -12, string.substring(i_13_))
-                            class348_sub47.aClass348_Sub49_Sub2_7116.method3339(114, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197 + -i_12_))
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string.substring(3, i_13_))
+                            method3544((class348_sub47.aClass348_Sub49_Sub2_7116!!), i + -12, string.substring(i_13_))
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(114, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 + -i_12_))
                             Class348_Sub42_Sub14.method3243(i.toInt() xor 0x49.inv(), class348_sub47)
                             return
                         }
@@ -558,12 +558,12 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string == "soundstreamcount") {
-                            method94(("Active streams: " + Class348_Sub43.aClass348_Sub16_Sub4_7065.method2887()), 84)
+                            method94(("Active streams: " + Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2887()), 84)
                             return
                         }
                         if (string == "autosetup") {
                             method2478(1000)
-                            method94(("Complete. Toolkit now: " + Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(i + -32271)), -97)
+                            method94(("Complete. Toolkit now: " + Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(i + -32271)), -97)
                             return
                         }
                         if (string == "errormessage") {
@@ -598,7 +598,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                                 method243(37)
                                 r.aBoolean9719 = false
                                 Class348_Sub42_Sub3.method3179(i + 79)
-                                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222.method1727(-32350) == i_21_) {
+                                if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350) == i_21_) {
                                     method94("Successfully changed ortho mode", -82)
                                     return
                                 } else method94("Failed to change ortho mode", -112)
@@ -607,7 +607,7 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                             return
                         }
                         if (string.startsWith("orthozoom ")) {
-                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222.method1727(i + -32271) == 0) method94("enable ortho mode first (use 'ortho <n>')", i + 182)
+                            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(i + -32271) == 0) method94("enable ortho mode first (use 'ortho <n>')", i + 182)
                             else {
                                 val i_22_ = (Class348_Sub41.method3156(true, string.substring(string.indexOf(' ') - -1)))
                                 Class132.anInt1911 = i_22_
@@ -687,10 +687,10 @@ class Class82 internal constructor(class230: Class230?, i: Int, class45: Class45
                 if (Class240.anInt4674 == 10) {
                     Class292.anInt4799++
                     val class348_sub47 = method2148((Class101_Sub2.aClass351_5699), (Class348_Sub23_Sub2.aClass77_9029), i.toInt() xor 0x24)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, string!!.length + 3)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, if (bool) 1 else 0)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, if (bool_0_) 1 else 0)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string!!.length + 3)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (bool) 1 else 0)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (bool_0_) 1 else 0)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                     Class348_Sub42_Sub14.method3243(120, class348_sub47)
                 }
                 if (Class240.anInt4674 == 10) {

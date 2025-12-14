@@ -40,7 +40,7 @@ class Class177 internal constructor(private val aClass52_4671: Class52) : Interf
             var i_0_ = i_0_
             anInt4664++
             if (i_2_.toInt() != -98) method1354(69.toByte())
-            i_0_ = (i_0_ * Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260.method1838(-32350) shr 8)
+            i_0_ = (i_0_ * Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) shr 8)
             if (i_0_ != 0 && i != -1) {
                 if (!Class74.aBoolean1236 && Class267.anInt3428 != -1 && method1296(true) && !Class327.method2605((-99).toByte())) {
                     Class209.aClass348_Sub16_Sub3_2718 = method943(false)

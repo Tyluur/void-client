@@ -51,7 +51,7 @@ class Class340 internal constructor(class248: Class248?, class112: Class112?, bi
         class348_sub49.anInt7197 = 5
         val idxCount = class348_sub49.readUnsignedByte(i xor 0xf8)
         class348_sub49.anInt7197 += idxCount * 72
-        val `is` = ByteArray((class348_sub49.aByteArray7154.size - class348_sub49.anInt7197))
+        val `is` = ByteArray((class348_sub49.aByteArray7154!!.size - class348_sub49.anInt7197))
         class348_sub49.method3389(2147483647, 0, `is`.size, `is`)
         val is_6_: ByteArray?
         if (aBigInteger4213 != null && aBigInteger4218 != null) {
@@ -64,7 +64,7 @@ class Class340 internal constructor(class248: Class248?, class112: Class112?, bi
         if (is_6_.size != 65) {
             throw RuntimeException()
         }
-        val is_8_ = method2730(4567, 5, (class348_sub49.aByteArray7154), (class348_sub49.anInt7197) - (`is`.size + 5))
+        val is_8_ = method2730(4567, 5, (class348_sub49.aByteArray7154!!), (class348_sub49.anInt7197) - (`is`.size + 5))
         for (i_9_ in 0..63) {
             if (is_8_[i_9_] != is_6_[i_9_ + 1]) {
                 throw RuntimeException()

@@ -83,11 +83,11 @@ class Class239_Sub1 : Class239 {
                     if (player.aString10544 != null && player.aString10544.equals(string, ignoreCase = true) && (((player == Class132.aPlayer_1907) && (0x10 and Class38.anInt500) != 0) || (player != null && (Class38.anInt500 and 0x8) != 0))) {
                         Class228.anInt2975++
                         val class348_sub47 = Class286_Sub3.method2148(Class52.aClass351_4907, (Class348_Sub23_Sub2.aClass77_9029), -102)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class9.anInt169)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(`is`[i_4_], 3.toByte())
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class301.anInt3829, 3.toByte())
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeIntInverseMiddle(Class149.anInt2046, -4086)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((-64).toByte(), 0)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, Class9.anInt169)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(`is`[i_4_], 3.toByte())
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(Class301.anInt3829, 3.toByte())
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntInverseMiddle(Class149.anInt2046, -4086)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-64).toByte(), 0)
                         Class348_Sub42_Sub14.method3243(116, class348_sub47)
                         bool = true
                         Class298.method2252(true, player.anIntArray10320!![0], player.anIntArray10317!![0], (-99).toByte(), player.method2436(54.toByte()), 0, player.method2436(91.toByte()), -2, 0)

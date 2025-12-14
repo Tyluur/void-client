@@ -78,6 +78,7 @@ class Class156 {
                         if (throwable != null) string_4_ += " | "
                         string_4_ += string
                     }
+                    throwable?.printStackTrace()
                     method847(string_4_, -5192)
                     string_4_ = Class341.method2680("%3a", true, ":", string_4_)
                     string_4_ = Class341.method2680("%40", true, "@", string_4_)

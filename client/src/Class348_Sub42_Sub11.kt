@@ -111,7 +111,7 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
 
         fun method3223() {
             for (i in 0..<Class86.anInt1477) {
-                val class318_sub1_sub3 = Class24.aClass318_Sub1_Sub3Array357!![i]
+                val class318_sub1_sub3 = Class24.aClass318_Sub1_Sub3Array357!![i]!!
                 Class348_Sub46.method3320(class318_sub1_sub3, true)
                 Class24.aClass318_Sub1_Sub3Array357!![i] = null
             }
@@ -120,7 +120,7 @@ class Class348_Sub42_Sub11 : Class348_Sub42() {
 
         fun method3225(i: Int) {
             anInt9589++
-            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264.method1778(-32350) == 2) {
+            if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) == 2) {
                 val i_5_ = (0xff and -4 + Class239_Sub15.anInt6006).toByte()
                 val i_6_ = Class239_Sub15.anInt6006 % Class367_Sub4.anInt7319
                 for (i_7_ in 0..3) {

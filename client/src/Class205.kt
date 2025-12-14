@@ -51,7 +51,7 @@ object Class205 {
             i_9_ += i_12_
             if (i_11_ >= 0 && i_10_ >= 1) {
                 i_10_--
-                Class348_Sub49_Sub2.anIntArray9757[i_10_] = i_6_
+                Class348_Sub49_Sub2.anIntArray9757!![i_10_] = i_6_
                 i_11_ -= i_10_ shl 1
             }
             i_6_++
@@ -67,7 +67,7 @@ object Class205 {
                         if (i_19_ <= Class38.anInt513) Class135_Sub2.method1156(-27, i_20_, (Class17.anIntArrayArray255!![i_19_]!!), i_21_, i)
                         if (Class132.anInt1910 <= i_18_) Class135_Sub2.method1156(-27, i_20_, (Class17.anIntArrayArray255!![i_18_]!!), i_21_, i)
                     } else {
-                        val i_22_ = Class348_Sub49_Sub2.anIntArray9757[i_8_]
+                        val i_22_ = Class348_Sub49_Sub2.anIntArray9757!![i_8_]
                         val i_23_ = method831(Class113.anInt1745, i_6_ + i_5_, Class369.anInt4960, -123)
                         val i_24_ = method831(Class113.anInt1745, -i_6_ + i_5_, Class369.anInt4960, 110)
                         val i_25_ = method831(Class113.anInt1745, i_22_ + i_5_, Class369.anInt4960, 85)
@@ -99,7 +99,7 @@ object Class205 {
                         if (Class38.anInt513 >= i_28_) Class135_Sub2.method1156(-27, i_29_, (Class17.anIntArrayArray255!![i_28_]!!), i_30_, i)
                         if (i_27_ >= Class132.anInt1910) Class135_Sub2.method1156(-27, i_29_, (Class17.anIntArrayArray255!![i_27_]!!), i_30_, i)
                     } else {
-                        val i_31_ = (if (i_6_ > i_10_) Class348_Sub49_Sub2.anIntArray9757[i_6_] else i_10_)
+                        val i_31_ = (if (i_6_ > i_10_) Class348_Sub49_Sub2.anIntArray9757!![i_6_] else i_10_)
                         val i_32_ = method831(Class113.anInt1745, i_31_ + i_5_, Class369.anInt4960, 71)
                         val i_33_ = method831(Class113.anInt1745, -i_31_ + i_5_, Class369.anInt4960, 65)
                         if (i_28_ <= Class38.anInt513) {

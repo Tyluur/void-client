@@ -5,13 +5,13 @@ class Class239_Sub16 : Class239 {
     override fun method1714(i: Int, i_5_: Int): Int {
         if (i != 3) anInt6012 = -22
         anInt6014++
-        if (i_5_ == 0 || this.aClass348_Sub51_3136.aClass239_Sub9_7256.method1759(i xor 0x7e5e.inv()) == 1) return 1
+        if (i_5_ == 0 || this.aClass348_Sub51_3136.aClass239_Sub9_7256!!.method1759(i xor 0x7e5e.inv()) == 1) return 1
         return 2
     }
 
     override fun method1716(bool: Boolean) {
         if (bool != false) anInt6012 = 46
-        if (this.anInt3138 != 0 && this.aClass348_Sub51_3136.aClass239_Sub9_7256.method1759(-32350) != 1) this.anInt3138 = 0
+        if (this.anInt3138 != 0 && this.aClass348_Sub51_3136.aClass239_Sub9_7256!!.method1759(-32350) != 1) this.anInt3138 = 0
         anInt6007++
         if (this.anInt3138 < 0 || this.anInt3138 > 1) this.anInt3138 = method1710(20014)
     }

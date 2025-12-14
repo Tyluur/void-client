@@ -77,16 +77,16 @@ class Class67 internal constructor(class45: Class45?, class45_3_: Class45?, clas
         }
 
         @JvmStatic
-        fun method718(class318_sub1s: Array<Class318_Sub1>, i: Int, i_4_: Int) {
+        fun method718(class318_sub1s: Array<Class318_Sub1?>, i: Int, i_4_: Int) {
             if (i < i_4_) {
                 val i_5_ = (i + i_4_) / 2
                 var i_6_ = i
-                val class318_sub1 = class318_sub1s[i_5_]
+                val class318_sub1 = class318_sub1s[i_5_]!!
                 class318_sub1s[i_5_] = class318_sub1s[i_4_]
                 class318_sub1s[i_4_] = class318_sub1
                 val i_7_ = class318_sub1.anInt6389
                 for (i_8_ in i..<i_4_) {
-                    if (class318_sub1s[i_8_].anInt6389 > i_7_ + (i_8_ and 0x1)) {
+                    if (class318_sub1s[i_8_]!!.anInt6389 > i_7_ + (i_8_ and 0x1)) {
                         val class318_sub1_9_: Class318_Sub1? = class318_sub1s[i_8_]
                         class318_sub1s[i_8_] = class318_sub1s[i_6_]
                         class318_sub1s[i_6_++] = class318_sub1_9_!!

@@ -7,7 +7,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
     private val aClass262_5149 = Class262()
     private var anInt5151 = -1
 
-    override fun method3984(i: Int, i_0_: Int, i_1_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_2_: Int, i_3_: Int) {
+    override fun method3984(i: Int, i_0_: Int, i_1_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_2_: Int, i_3_: Int) {
         anInt5151 = i_2_
         var i_4_ = 0
         val fs = FloatArray(aClass262_5149.method1998(0))
@@ -19,7 +19,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         q(fs)
         for (i_5_ in 0..<i_1_ + i_1_) {
             for (i_6_ in 0..<i_1_ + i_1_) {
-                if (bools[i_5_]!![i_6_]) {
+                if (bools!![i_5_]!![i_6_]) {
                     val i_7_ = i - i_1_ + i_5_
                     val i_8_ = i_0_ - i_1_ + i_6_
                     if (i_7_ >= 0 && i_7_ < this.anInt4587 && i_8_ >= 0 && i_8_ < this.anInt4590) method3979(i_7_, i_8_)
@@ -117,7 +117,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
 
     external override fun YA()
 
-    override fun method3983(i: Int, i_63_: Int, i_64_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_65_: Int) {
+    override fun method3983(i: Int, i_63_: Int, i_64_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_65_: Int) {
         anInt5151 = -1
         var i_66_ = 0
         val fs = FloatArray(aClass262_5149.method1998(0))
@@ -129,7 +129,7 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         q(fs)
         for (i_67_ in 0..<i_64_ + i_64_) {
             for (i_68_ in 0..<i_64_ + i_64_) {
-                if (bools[i_67_]!![i_68_]) {
+                if (bools!![i_67_]!![i_68_]) {
                     val i_69_ = i - i_64_ + i_67_
                     val i_70_ = i_63_ - i_64_ + i_68_
                     if (i_69_ >= 0 && i_69_ < this.anInt4587 && i_70_ >= 0 && i_70_ < this.anInt4590) method3979(i_69_, i_70_)

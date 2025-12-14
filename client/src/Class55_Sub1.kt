@@ -45,7 +45,7 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
         if (i.toInt() != 21) aByteArrayArray5275 = null
         aClass348_Sub49_5276.aByteArray7154 = `is`
         aClass348_Sub49_5276.anInt7197 = 0
-        while (aClass348_Sub49_5276.anInt7197 < aClass348_Sub49_5276.aByteArray7154.size) {
+        while (aClass348_Sub49_5276.anInt7197 < aClass348_Sub49_5276.aByteArray7154!!.size) {
             if (aClass348_Sub49_5274.aByteArray7154 == null) {
                 if (aByteArrayArray5275!![0] == null) {
                     aClass348_Sub49_5276.aByteArray7154 = null
@@ -53,10 +53,10 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
                 }
                 aClass348_Sub49_5274.aByteArray7154 = aByteArrayArray5275!![0]
             }
-            val i_7_ = (-aClass348_Sub49_5276.anInt7197 + (aClass348_Sub49_5276.aByteArray7154).size)
-            val i_8_ = (-aClass348_Sub49_5274.anInt7197 + (aClass348_Sub49_5274.aByteArray7154).size)
+            val i_7_ = (-aClass348_Sub49_5276.anInt7197 + (aClass348_Sub49_5276.aByteArray7154)!!.size)
+            val i_8_ = (-aClass348_Sub49_5274.anInt7197 + (aClass348_Sub49_5274.aByteArray7154)!!.size)
             if (i_8_ <= i_7_) {
-                aClass348_Sub49_5276.writeBytes(i_8_, aClass348_Sub49_5274.anInt7197, aClass348_Sub49_5274.aByteArray7154, -58)
+                aClass348_Sub49_5276.writeBytes(i_8_, aClass348_Sub49_5274.anInt7197, aClass348_Sub49_5274.aByteArray7154!!, -58)
                 aClass348_Sub49_5274.anInt7197 = 0
                 aClass348_Sub49_5274.aByteArray7154 = null
                 anInt5270++
@@ -67,7 +67,7 @@ class Class55_Sub1 private constructor(i: Int, class45: Class45, i_1_: Int) : Cl
                     return aClass348_Sub49_5276.anInt7197
                 }
             } else {
-                aClass348_Sub49_5274.method3389(2147483647, aClass348_Sub49_5276.anInt7197, i_7_, aClass348_Sub49_5276.aByteArray7154)
+                aClass348_Sub49_5274.method3389(2147483647, aClass348_Sub49_5276.anInt7197, i_7_, aClass348_Sub49_5276.aByteArray7154!!)
                 aClass348_Sub49_5276.aByteArray7154 = null
                 return `is`!!.size
             }

@@ -128,8 +128,8 @@ class Class235 internal constructor(var_ha: ha?, class51: Class51?, i: Int, i_15
         }
         method1672(aClass318_Sub1_3051, true)
         if (bool_3_) {
-            bool_3_ = bool_3_ and (aBoolean3065 and (Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238.method1748(-32350) != 0))
-            bool_3_ = (bool_3_ and (class51.anInt941 != anInt3056 || (aClass17_3057 != null && Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aClass17_3057!!.aBoolean254 || Class28.aBoolean5002) && (anInt3083 != anInt3084))))))
+            bool_3_ = bool_3_ and (aBoolean3065 and (Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0))
+            bool_3_ = (bool_3_ and (class51.anInt941 != anInt3056 || (aClass17_3057 != null && Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aClass17_3057!!.aBoolean254 || Class28.aBoolean5002) && (anInt3083 != anInt3084))))))
         }
         if (bool && !bool_3_) {
             anInt3053 = class51.anInt941

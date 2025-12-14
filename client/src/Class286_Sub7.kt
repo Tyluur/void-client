@@ -195,8 +195,8 @@ class Class286_Sub7 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
                             Class126.anInt4985 = Class311.anInt3918
                             Class348_Sub42_Sub7.anInt9540++
                             val class348_sub47: Class348_Sub47 = Class286_Sub3.Companion.method2148(Class357.aClass351_4394, (Class348_Sub23_Sub2.aClass77_9029), -99)
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, method1745(string, -65))
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                             Class348_Sub42_Sub14.method3243(117, class348_sub47)
                             break
                         }

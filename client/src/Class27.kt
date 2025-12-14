@@ -149,9 +149,9 @@ object Class27 {
                         else {
                             Class5.anInt4628++
                             val class348_sub47 = (method2148(Class348_Sub42_Sub19.aClass351_9687, Class348_Sub23_Sub2.aClass77_9029, -94))
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, method1745(string, -65) - -1)
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, if (!bool) 0 else 1)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65) - -1)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!bool) 0 else 1)
                             Class348_Sub42_Sub14.method3243(-116, class348_sub47)
                         }
                     }

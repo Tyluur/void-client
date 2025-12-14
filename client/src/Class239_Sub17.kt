@@ -35,7 +35,7 @@ class Class239_Sub17 : Class239 {
     override fun method1710(i: Int): Int {
         if (i != 20014) aClass273_6018 = null
         anInt6027++
-        if (this.aClass348_Sub51_3136.method3428((-96).toByte()).method1462(-113) > 1) return 4
+        if (this.aClass348_Sub51_3136.method3428((-96).toByte())!!.method1462(-113) > 1) return 4
         return 2
     }
 

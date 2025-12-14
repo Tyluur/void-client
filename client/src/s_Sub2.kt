@@ -458,8 +458,8 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         return aClass104_8266!!.method954(i_145_, 88.toByte(), i_146_, var_r)
     }
 
-    override fun method3983(i: Int, i_149_: Int, i_150_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_151_: Int) {
-        method4003(-1, i_150_, bool, -49, i, i_151_, bools, i_149_)
+    override fun method3983(i: Int, i_149_: Int, i_150_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_151_: Int) {
+        method4003(-1, i_150_, bool, -49, i, i_151_, bools!!, i_149_)
         anInt8255++
     }
 
@@ -516,7 +516,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
                 this.aHa_Sub2_8272!!.method3796(16384)
             }
             this.aHa_Sub2_8272!!.method3794(this.aClass123_8276, aClass123_8274, -26411, this.aClass123_8277, this.aClass123_8275)
-            if (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154.size < anInt8257 * 2) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(anInt8257 * 2)
+            if (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154!!.size < anInt8257 * 2) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(anInt8257 * 2)
             else this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.anInt7197 = 0
             var i_158_ = 0
             val class348_sub49_sub1 = (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798)!!
@@ -580,9 +580,9 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
         return var_r_Sub2_169_
     }
 
-    override fun method3984(i: Int, i_172_: Int, i_173_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_174_: Int, i_175_: Int) {
+    override fun method3984(i: Int, i_172_: Int, i_173_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_174_: Int, i_175_: Int) {
         anInt8263++
-        method4003(i_174_, i_173_, bool, -62, i, i_175_, bools, i_172_)
+        method4003(i_174_, i_173_, bool, -62, i, i_175_, bools!!, i_172_)
     }
 
     override fun method3981(class348_sub1: Class348_Sub1, `is`: IntArray) {
@@ -650,7 +650,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
             var i_197_ = i_192_ + i_192_ - -1
             i_197_ *= i_197_
             if (this.aHa_Sub2_8272!!.anIntArray7882!!.size < i_197_) this.aHa_Sub2_8272!!.anIntArray7882 = IntArray(i_197_)
-            if (anInt8257 * 2 > (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154).size) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(2 * anInt8257)
+            if (anInt8257 * 2 > (this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154)!!.size) this.aHa_Sub2_8272!!.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(2 * anInt8257)
             var i_198_ = -i_192_ + i_194_
             val i_199_ = i_198_
             if (i_198_ < 0) i_198_ = 0

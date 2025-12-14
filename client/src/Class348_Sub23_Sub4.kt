@@ -41,10 +41,10 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
                     anInt9054 = class348_sub49.method3359(-41)
                     check(!(anInt9055 == 0 || anInt9054 == 0))
                     val class348_sub49_3_ = Class348_Sub49(16)
-                    class348_sub49.method3389(2147483647, 0, 16, (class348_sub49_3_.aByteArray7154))
+                    class348_sub49.method3389(2147483647, 0, 16, (class348_sub49_3_.aByteArray7154!!))
                     aString9051 = class348_sub49_3_.readString((-91).toByte())
                     class348_sub49_3_.anInt7197 = 0
-                    class348_sub49.method3389(2147483647, 0, 16, (class348_sub49_3_.aByteArray7154))
+                    class348_sub49.method3389(2147483647, 0, 16, (class348_sub49_3_.aByteArray7154!!))
                     aString9057 = class348_sub49_3_.readString((-40).toByte())
                 }
             } else {
@@ -56,8 +56,8 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
                     aFloat9062 = (anInt9054.toLong() * l).toFloat() / anInt9055.toFloat()
                     aFloat9048 = (((l - -l_4_) * anInt9054.toLong()).toFloat() / anInt9055.toFloat())
                     val i_6_ = class348_sub49.method3359(-93)
-                    check(!(i_6_ < 0 || i_6_ > (-class348_sub49.anInt7197 + (class348_sub49.aByteArray7154).size)))
-                    aString9058 = (method1793(class348_sub49.aByteArray7154, class348_sub49.anInt7197, -123, i_6_))
+                    check(!(i_6_ < 0 || i_6_ > (-class348_sub49.anInt7197 + (class348_sub49.aByteArray7154)!!.size)))
+                    aString9058 = (method1793(class348_sub49.aByteArray7154!!, class348_sub49.anInt7197, -123, i_6_))
                 }
                 if ((i_2_ or 0x80) != 0) return
             }
@@ -134,7 +134,7 @@ class Class348_Sub23_Sub4 internal constructor(oggstreamstate: OggStreamState) :
 
         @JvmStatic
         fun method2988(bool: Boolean) {
-            Class60.aHa1098!!.xa((Class316.aClass348_Sub51_3959!!.aClass239_Sub10_7232.method1764(-32350).toFloat() * 0.1f + 0.7f) * Class160.aFloat2137)
+            Class60.aHa1098!!.xa((Class316.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350).toFloat() * 0.1f + 0.7f) * Class160.aFloat2137)
             anInt9049++
             Class60.aHa1098!!.ZA(Class119_Sub1.anInt4703, Class244.aFloat4626, Class361.aFloat4455, (Class21.anInt325 shl 2).toFloat(), (Class318_Sub1_Sub3_Sub1.anInt10023 shl 2).toFloat(), (Class196.anInt2601 shl 2).toFloat())
             Class60.aHa1098!!.method3653(Class158.aClass299_4938)

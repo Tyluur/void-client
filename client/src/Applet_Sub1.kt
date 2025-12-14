@@ -160,8 +160,8 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
     private fun method88(i: Int) {
         anInt2++
         val l = Class62.method599(-119)
-        val l_2_ = Class348_Sub49.aLongArray7206[Class152.anInt2071]
-        Class348_Sub49.aLongArray7206[Class152.anInt2071] = l
+        val l_2_ = Class348_Sub49.aLongArray7206!![Class152.anInt2071]
+        Class348_Sub49.aLongArray7206!![Class152.anInt2071] = l
         if (l_2_ != 0L && l_2_ < l) {
             val i_3_ = (l - l_2_).toInt()
             Class239_Sub5.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_

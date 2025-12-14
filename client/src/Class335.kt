@@ -41,7 +41,7 @@ object Class335 {
                         else {
                             class348_sub9.anInt6677 -= 512
                             if (class348_sub9.anInt6677 <= 0) {
-                                Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                                Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                                 bool = true
                                 class348_sub9.aClass348_Sub16_Sub5_6676 = null
                             }
@@ -84,7 +84,7 @@ object Class335 {
                     if ((class348_sub9.aClass348_Sub16_Sub5_6676) != null) {
                         class348_sub9.anInt6677 -= 512
                         if (class348_sub9.anInt6677 <= 0) {
-                            Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                            Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                             class348_sub9.aClass348_Sub16_Sub5_6676 = null
                             bool = true
                         }

@@ -72,7 +72,7 @@ class Class348_Sub2 private constructor(class348_sub49: Class348_Sub49) : Class3
     }
 
     init {
-        class348_sub49.anInt7197 = class348_sub49.aByteArray7154.size - 3
+        class348_sub49.anInt7197 = class348_sub49.aByteArray7154!!.size - 3
         val i = class348_sub49.readUnsignedByte(255)
         val i_16_ = class348_sub49.readUnsignedShort(842397944)
         var i_17_ = 14 + i * 10
@@ -212,7 +212,7 @@ class Class348_Sub2 private constructor(class348_sub49: Class348_Sub49) : Class3
                 while (true) {
                     val i_80_ = class348_sub49.method3366(73.toByte())
                     class348_sub49_69_.method3396(i_80_, -21)
-                    val i_81_ = ((class348_sub49.aByteArray7154[i_47_++]).toInt() and 0xff)
+                    val i_81_ = ((class348_sub49.aByteArray7154!![i_47_++]).toInt() and 0xff)
                     val bool = i_81_ != i_79_
                     i_79_ = i_81_ and 0xf
                     if (i_81_ == 7) {
@@ -225,64 +225,64 @@ class Class348_Sub2 private constructor(class348_sub49: Class348_Sub49) : Class3
                         if (bool) class348_sub49_69_.writeByte(false, 255)
                         class348_sub49_69_.writeByte(false, 81)
                         class348_sub49_69_.writeByte(false, 3)
-                        class348_sub49_69_.writeByte(false, (class348_sub49.aByteArray7154[i_68_++]).toInt())
-                        class348_sub49_69_.writeByte(false, (class348_sub49.aByteArray7154[i_68_++]).toInt())
-                        class348_sub49_69_.writeByte(false, (class348_sub49.aByteArray7154[i_68_++]).toInt())
+                        class348_sub49_69_.writeByte(false, (class348_sub49.aByteArray7154!![i_68_++]).toInt())
+                        class348_sub49_69_.writeByte(false, (class348_sub49.aByteArray7154!![i_68_++]).toInt())
+                        class348_sub49_69_.writeByte(false, (class348_sub49.aByteArray7154!![i_68_++]).toInt())
                     } else {
                         i_70_ = i_70_ xor (i_81_ shr 4)
                         if (i_79_ == 0) {
                             if (bool) class348_sub49_69_.writeByte(false, 144 + i_70_)
-                            i_71_ += (class348_sub49.aByteArray7154[i_55_++]).toInt()
-                            i_72_ += (class348_sub49.aByteArray7154[i_56_++]).toInt()
+                            i_71_ += (class348_sub49.aByteArray7154!![i_55_++]).toInt()
+                            i_72_ += (class348_sub49.aByteArray7154!![i_56_++]).toInt()
                             class348_sub49_69_.writeByte(false, i_71_ and 0x7f)
                             class348_sub49_69_.writeByte(false, i_72_ and 0x7f)
                         } else if (i_79_ == 1) {
                             if (bool) class348_sub49_69_.writeByte(false, 128 + i_70_)
-                            i_71_ += (class348_sub49.aByteArray7154[i_55_++]).toInt()
-                            i_73_ += (class348_sub49.aByteArray7154[i_58_++]).toInt()
+                            i_71_ += (class348_sub49.aByteArray7154!![i_55_++]).toInt()
+                            i_73_ += (class348_sub49.aByteArray7154!![i_58_++]).toInt()
                             class348_sub49_69_.writeByte(false, i_71_ and 0x7f)
                             class348_sub49_69_.writeByte(false, i_73_ and 0x7f)
                         } else if (i_79_ == 2) {
                             if (bool) class348_sub49_69_.writeByte(false, 176 + i_70_)
-                            i_45_ = i_45_ + (class348_sub49.aByteArray7154[i_32_++]) and 0x7f
+                            i_45_ = i_45_ + (class348_sub49.aByteArray7154!![i_32_++]) and 0x7f
                             class348_sub49_69_.writeByte(false, i_45_)
                             var i_82_: Int
-                            if (i_45_ == 0 || i_45_ == 32) i_82_ = (class348_sub49.aByteArray7154[i_62_++]).toInt()
-                            else if (i_45_ == 1) i_82_ = (class348_sub49.aByteArray7154[i_52_++]).toInt()
-                            else if (i_45_ == 33) i_82_ = (class348_sub49.aByteArray7154[i_59_++]).toInt()
-                            else if (i_45_ == 7) i_82_ = (class348_sub49.aByteArray7154[i_53_++]).toInt()
-                            else if (i_45_ == 39) i_82_ = (class348_sub49.aByteArray7154[i_60_++]).toInt()
-                            else if (i_45_ == 10) i_82_ = (class348_sub49.aByteArray7154[i_54_++]).toInt()
-                            else if (i_45_ == 42) i_82_ = (class348_sub49.aByteArray7154[i_61_++]).toInt()
-                            else if (i_45_ == 99) i_82_ = (class348_sub49.aByteArray7154[i_64_++]).toInt()
-                            else if (i_45_ == 98) i_82_ = (class348_sub49.aByteArray7154[i_65_++]).toInt()
-                            else if (i_45_ == 101) i_82_ = (class348_sub49.aByteArray7154[i_66_++]).toInt()
-                            else if (i_45_ == 100) i_82_ = (class348_sub49.aByteArray7154[i_67_++]).toInt()
-                            else if (i_45_ == 64 || i_45_ == 65 || i_45_ == 120 || i_45_ == 121 || i_45_ == 123) i_82_ = (class348_sub49.aByteArray7154[i_48_++]).toInt()
-                            else i_82_ = (class348_sub49.aByteArray7154[i_57_++]).toInt()
+                            if (i_45_ == 0 || i_45_ == 32) i_82_ = (class348_sub49.aByteArray7154!![i_62_++]).toInt()
+                            else if (i_45_ == 1) i_82_ = (class348_sub49.aByteArray7154!![i_52_++]).toInt()
+                            else if (i_45_ == 33) i_82_ = (class348_sub49.aByteArray7154!![i_59_++]).toInt()
+                            else if (i_45_ == 7) i_82_ = (class348_sub49.aByteArray7154!![i_53_++]).toInt()
+                            else if (i_45_ == 39) i_82_ = (class348_sub49.aByteArray7154!![i_60_++]).toInt()
+                            else if (i_45_ == 10) i_82_ = (class348_sub49.aByteArray7154!![i_54_++]).toInt()
+                            else if (i_45_ == 42) i_82_ = (class348_sub49.aByteArray7154!![i_61_++]).toInt()
+                            else if (i_45_ == 99) i_82_ = (class348_sub49.aByteArray7154!![i_64_++]).toInt()
+                            else if (i_45_ == 98) i_82_ = (class348_sub49.aByteArray7154!![i_65_++]).toInt()
+                            else if (i_45_ == 101) i_82_ = (class348_sub49.aByteArray7154!![i_66_++]).toInt()
+                            else if (i_45_ == 100) i_82_ = (class348_sub49.aByteArray7154!![i_67_++]).toInt()
+                            else if (i_45_ == 64 || i_45_ == 65 || i_45_ == 120 || i_45_ == 121 || i_45_ == 123) i_82_ = (class348_sub49.aByteArray7154!![i_48_++]).toInt()
+                            else i_82_ = (class348_sub49.aByteArray7154!![i_57_++]).toInt()
                             i_82_ += `is`[i_45_]
                             `is`[i_45_] = i_82_
                             class348_sub49_69_.writeByte(false, i_82_ and 0x7f)
                         } else if (i_79_ == 3) {
                             if (bool) class348_sub49_69_.writeByte(false, 224 + i_70_)
-                            i_74_ += (class348_sub49.aByteArray7154[i_63_++]).toInt()
-                            i_74_ += (class348_sub49.aByteArray7154[i_51_++]).toInt() shl 7
+                            i_74_ += (class348_sub49.aByteArray7154!![i_63_++]).toInt()
+                            i_74_ += (class348_sub49.aByteArray7154!![i_51_++]).toInt() shl 7
                             class348_sub49_69_.writeByte(false, i_74_ and 0x7f)
                             class348_sub49_69_.writeByte(false, i_74_ shr 7 and 0x7f)
                         } else if (i_79_ == 4) {
                             if (bool) class348_sub49_69_.writeByte(false, 208 + i_70_)
-                            i_75_ += (class348_sub49.aByteArray7154[i_50_++]).toInt()
+                            i_75_ += (class348_sub49.aByteArray7154!![i_50_++]).toInt()
                             class348_sub49_69_.writeByte(false, i_75_ and 0x7f)
                         } else if (i_79_ == 5) {
                             if (bool) class348_sub49_69_.writeByte(false, 160 + i_70_)
-                            i_71_ += (class348_sub49.aByteArray7154[i_55_++]).toInt()
-                            i_76_ += (class348_sub49.aByteArray7154[i_49_++]).toInt()
+                            i_71_ += (class348_sub49.aByteArray7154!![i_55_++]).toInt()
+                            i_76_ += (class348_sub49.aByteArray7154!![i_49_++]).toInt()
                             class348_sub49_69_.writeByte(false, i_71_ and 0x7f)
                             class348_sub49_69_.writeByte(false, i_76_ and 0x7f)
                         } else {
                             if (i_79_ != 6) break
                             if (bool) class348_sub49_69_.writeByte(false, 192 + i_70_)
-                            class348_sub49_69_.writeByte(false, (class348_sub49.aByteArray7154[i_62_++]).toInt())
+                            class348_sub49_69_.writeByte(false, (class348_sub49.aByteArray7154!![i_62_++]).toInt())
                         }
                     }
                 }

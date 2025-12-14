@@ -123,7 +123,7 @@ class Class348_Sub9 : Class348() {
                 }
             }
             if (((i_11_ != this.anInt6685) || bool == !this.aBoolean6674) && this.aClass348_Sub16_Sub5_6676 != null) {
-                Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(this.aClass348_Sub16_Sub5_6676!!)
+                Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(this.aClass348_Sub16_Sub5_6676!!)
                 this.aClass348_Sub19_Sub1_6686 = null
                 this.aClass348_Sub16_Sub5_6676 = null
                 this.aClass348_Sub10_6688 = null

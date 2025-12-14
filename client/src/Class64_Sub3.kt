@@ -141,7 +141,7 @@ class Class64_Sub3 : Class64 {
     }
 
     private fun method678(bool: Boolean, i: Byte) {
-        if (6 * anInt5537 > (aHa_Sub2_5598!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154).size) aHa_Sub2_5598.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(6 * (anInt5537 - -100))
+        if (6 * anInt5537 > (aHa_Sub2_5598!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154)!!.size) aHa_Sub2_5598.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(6 * (anInt5537 - -100))
         else aHa_Sub2_5598.aClass348_Sub49_Sub1_7798!!.anInt7197 = 0
         anInt5630++
         if (i.toInt() != 27) WA()
@@ -1346,7 +1346,7 @@ class Class64_Sub3 : Class64 {
                 i_295_ = (i_295_ + 8).toByte()
             }
             if (i_295_.toInt() != 0) {
-                if (anInt5529 * i_295_ > (aHa_Sub2_5598!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154).size) aHa_Sub2_5598.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(i_295_ * (100 + anInt5529))
+                if (anInt5529 * i_295_ > (aHa_Sub2_5598!!.aClass348_Sub49_Sub1_7798!!.aByteArray7154)!!.size) aHa_Sub2_5598.aClass348_Sub49_Sub1_7798 = Class348_Sub49_Sub1(i_295_ * (100 + anInt5529))
                 else aHa_Sub2_5598.aClass348_Sub49_Sub1_7798!!.anInt7197 = 0
                 val class348_sub49_sub1: Class348_Sub49_Sub1 = aHa_Sub2_5598.aClass348_Sub49_Sub1_7798!!
                 if (bool_293_) {

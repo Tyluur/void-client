@@ -168,7 +168,7 @@ class Class318_Sub1_Sub5_Sub1 internal constructor(var_ha: ha?, class51: Class51
                 aBoolean10138 = bool
                 this.x = i_8_
                 aByte10118 = i_14_.toByte()
-                aBoolean10137 = (var_ha!!.method3682() && class51.aBoolean894 && !aBoolean10138 && Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238.method1748(-32350) != 0)
+                aBoolean10137 = (var_ha!!.method3682() && class51.aBoolean894 && !aBoolean10138 && Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 val class2 = method2491((-51).toByte(), aBoolean10137, 2048, var_ha)
                 if (class2 == null) break
                 aClass64_10124 = class2.aClass64_119

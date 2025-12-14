@@ -122,7 +122,7 @@ abstract class Class5(class45: Class45?, class45_15_: Class45, class369: Class36
             while (class348_sub9 != null) {
                 if ((class348_sub9.aNpc_6691) == npc) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
-                        Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                        Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                         class348_sub9.aClass348_Sub16_Sub5_6676 = null
                     }
                     class348_sub9.method2715(27.toByte())

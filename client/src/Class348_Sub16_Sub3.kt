@@ -173,7 +173,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             anInt8934++
             var i_30_ = (class348_sub43!!.anInt7080 - -((class348_sub43.anInt7072 * class348_sub43.anInt7089) shr 12))
             i_30_ += (((anIntArray8937!![class348_sub43.anInt7067]) - 8192) * anIntArray8902!![(class348_sub43.anInt7067)]) shr 12
-            val class23 = class348_sub43.aClass23_7075
+            val class23 = class348_sub43.aClass23_7075!!
             if (class23.anInt352 > 0 && (class23.anInt353 > 0 || (anIntArray8899[class348_sub43.anInt7067]) > 0)) {
                 var i_31_ = class23.anInt353 shl 2
                 val i_32_ = class23.anInt346 shl 1
@@ -182,7 +182,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 val d = sin(((class348_sub43.anInt7076) and 0x1ff).toDouble() * 0.01227184630308513)
                 i_30_ += (d * i_31_.toDouble()).toInt()
             }
-            val i_33_ = (((class348_sub43.aClass348_Sub19_Sub1_7077.anInt8988 * 256).toDouble() * 2.0.pow(3.255208333333333E-4 * i_30_.toDouble()) / Class22.anInt339.toDouble()) + 0.5).toInt()
+            val i_33_ = (((class348_sub43.aClass348_Sub19_Sub1_7077!!.anInt8988 * 256).toDouble() * 2.0.pow(3.255208333333333E-4 * i_30_.toDouble()) / Class22.anInt339.toDouble()) + 0.5).toInt()
             return max(i_33_, 1)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ma.JA(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
@@ -289,7 +289,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         try {
             class348_sub43!!.anInt7086 = Class22.anInt339 / 100
             anInt8952++
-            if (class348_sub43.anInt7087 >= 0 && ((class348_sub43.aClass348_Sub16_Sub5_7081) == null || class348_sub43.aClass348_Sub16_Sub5_7081.method2890())) {
+            if (class348_sub43.anInt7087 >= 0 && ((class348_sub43.aClass348_Sub16_Sub5_7081) == null || class348_sub43.aClass348_Sub16_Sub5_7081!!.method2890())) {
                 class348_sub43.method3299(36.toByte())
                 class348_sub43.method2715(66.toByte())
                 if (class348_sub43.anInt7088 > 0 && (class348_sub43 == (aClass348_Sub43ArrayArray8915[class348_sub43.anInt7067]!![class348_sub43.anInt7088]))) aClass348_Sub43ArrayArray8915[class348_sub43.anInt7067]!![class348_sub43.anInt7088] = null
@@ -302,8 +302,8 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 if (i_48_ < 0) i_48_ = 0
                 class348_sub43.anInt7089 = i_48_
             }
-            class348_sub43.aClass348_Sub16_Sub5_7081.method2901(method2845(0, class348_sub43))
-            val class23 = class348_sub43.aClass23_7075
+            class348_sub43.aClass348_Sub16_Sub5_7081!!.method2901(method2845(0, class348_sub43))
+            val class23 = class348_sub43.aClass23_7075!!
             var bool = false
             class348_sub43.anInt7076 += class23.anInt352
             class348_sub43.anInt7083++
@@ -330,10 +330,10 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 if (class348_sub43.anInt7084 == -2 + class23.aByteArray344!!.size) bool = true
             }
             if (bool) {
-                class348_sub43.aClass348_Sub16_Sub5_7081.method2902(class348_sub43.anInt7086)
-                if (`is` == null) class348_sub43.aClass348_Sub16_Sub5_7081.method2819(i)
-                else class348_sub43.aClass348_Sub16_Sub5_7081.method2817(`is`, i_46_, i)
-                if (class348_sub43.aClass348_Sub16_Sub5_7081.method2895()) aClass348_Sub16_Sub1_8958!!.aClass348_Sub16_Sub4_8855.method2883(class348_sub43.aClass348_Sub16_Sub5_7081)
+                class348_sub43.aClass348_Sub16_Sub5_7081!!.method2902(class348_sub43.anInt7086)
+                if (`is` == null) class348_sub43.aClass348_Sub16_Sub5_7081!!.method2819(i)
+                else class348_sub43.aClass348_Sub16_Sub5_7081!!.method2817(`is`, i_46_, i)
+                if (class348_sub43.aClass348_Sub16_Sub5_7081!!.method2895()) aClass348_Sub16_Sub1_8958!!.aClass348_Sub16_Sub4_8855.method2883(class348_sub43.aClass348_Sub16_Sub5_7081!!)
                 class348_sub43.method3299((-100).toByte())
                 if (class348_sub43.anInt7087 >= 0) {
                     class348_sub43.method2715(124.toByte())
@@ -341,7 +341,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 }
                 return true
             }
-            class348_sub43.aClass348_Sub16_Sub5_7081.method2888(class348_sub43.anInt7086, method2868(class348_sub43, -76), method2848(class348_sub43, (-70).toByte()))
+            class348_sub43.aClass348_Sub16_Sub5_7081!!.method2888(class348_sub43.anInt7086, method2868(class348_sub43, -76), method2848(class348_sub43, (-70).toByte()))
             return false
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ma.U(" + (if (`is` != null) "{...}" else "null") + ',' + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ',' + i_46_ + ',' + i_47_ + ')'))
@@ -352,7 +352,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         method2849(64, i_50_, 86.toByte(), i_51_)
         anInt8931++
         if ((0x2 and this.anIntArray8895[i_51_]) != 0) {
-            var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1993(i xor 0x51.inv()) as Class348_Sub43?)
+            var class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method1993(i xor 0x51.inv()) as? Class348_Sub43?)
             while (class348_sub43 != null) {
                 if ((class348_sub43.anInt7067 == i_51_) && class348_sub43.anInt7087 < 0) {
                     aClass348_Sub43ArrayArray8928[i_51_]!![class348_sub43.anInt7071] = null
@@ -364,10 +364,10 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     class348_sub43.anInt7089 = 4096
                     return
                 }
-                class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method2003(-50) as Class348_Sub43?)
+                class348_sub43 = (aClass348_Sub16_Sub1_8958!!.aClass262_8848.method2003(-50) as? Class348_Sub43?)
             }
         }
-        val class348_sub17 = (aClass356_8891.method3480(anIntArray8916!![i_51_].toLong(), -6008) as Class348_Sub17?)
+        val class348_sub17 = (aClass356_8891.method3480(anIntArray8916!![i_51_].toLong(), -6008) as? Class348_Sub17?)
         if (class348_sub17 != null) {
             val class348_sub19_sub1 = (class348_sub17.aClass348_Sub19_Sub1Array6800[i_50_])
             if (class348_sub19_sub1 != null) {
@@ -391,7 +391,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                     class348_sub43.aClass348_Sub16_Sub5_7081 = (Class348_Sub16_Sub5.Companion.method2911(class348_sub19_sub1, method2845(0, class348_sub43), 0, method2848(class348_sub43, (-70).toByte())))
                     method2874(i xor 0x7a, (class348_sub17.aShortArray6795!![i_50_]) < 0, class348_sub43)
                 }
-                if (class348_sub17.aShortArray6795!![i_50_] < 0) class348_sub43.aClass348_Sub16_Sub5_7081.method2917(-1)
+                if (class348_sub17.aShortArray6795!![i_50_] < 0) class348_sub43.aClass348_Sub16_Sub5_7081!!.method2917(-1)
                 if (class348_sub43.anInt7088 >= 0) {
                     val class348_sub43_53_ = (aClass348_Sub43ArrayArray8915[i_51_]!![class348_sub43.anInt7088])
                     if (class348_sub43_53_ != null && class348_sub43_53_.anInt7087 < 0) {
@@ -658,7 +658,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
             if (i >= -16) method2879(-95, 66, 110)
             anInt8920++
             if (anIntArray8925[class348_sub43!!.anInt7067] == 0) return 0
-            val class23 = class348_sub43.aClass23_7075
+            val class23 = class348_sub43.aClass23_7075!!
             var i_79_ = ((anIntArray8953[class348_sub43.anInt7067] * (anIntArray8896[class348_sub43.anInt7067])) + 4096 shr 13)
             i_79_ = 16384 + i_79_ * i_79_ shr 15
             i_79_ = (16384 + i_79_ * class348_sub43.anInt7066 shr 15)
@@ -726,8 +726,8 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
         while (class348_sub43 != null) {
             if (i_90_ < 0 || (class348_sub43.anInt7067 == i_90_)) {
                 if (class348_sub43.aClass348_Sub16_Sub5_7081 != null) {
-                    class348_sub43.aClass348_Sub16_Sub5_7081.method2902(Class22.anInt339 / 100)
-                    if (class348_sub43.aClass348_Sub16_Sub5_7081.method2895()) aClass348_Sub16_Sub1_8958!!.aClass348_Sub16_Sub4_8855.method2883(class348_sub43.aClass348_Sub16_Sub5_7081)
+                    class348_sub43.aClass348_Sub16_Sub5_7081!!.method2902(Class22.anInt339 / 100)
+                    if (class348_sub43.aClass348_Sub16_Sub5_7081!!.method2895()) aClass348_Sub16_Sub1_8958!!.aClass348_Sub16_Sub4_8855.method2883(class348_sub43.aClass348_Sub16_Sub5_7081!!)
                     class348_sub43.method3299(72.toByte())
                 }
                 if (class348_sub43.anInt7087 < 0) aClass348_Sub43ArrayArray8928[class348_sub43.anInt7067]!![class348_sub43.anInt7071] = null
@@ -751,18 +751,18 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
     fun method2874(i: Int, bool: Boolean, class348_sub43: Class348_Sub43?) {
         try {
             anInt8909++
-            var i_94_ = (class348_sub43!!.aClass348_Sub19_Sub1_7077.aByteArray8984)!!.size
+            var i_94_ = (class348_sub43!!.aClass348_Sub19_Sub1_7077!!.aByteArray8984)!!.size
             var i_95_: Int
-            if (bool && (class348_sub43.aClass348_Sub19_Sub1_7077.aBoolean8987)) {
-                val i_96_ = (i_94_ + i_94_ + -class348_sub43.aClass348_Sub19_Sub1_7077.anInt8986)
+            if (bool && (class348_sub43.aClass348_Sub19_Sub1_7077!!.aBoolean8987)) {
+                val i_96_ = (i_94_ + i_94_ + -class348_sub43.aClass348_Sub19_Sub1_7077!!.anInt8986)
                 i_95_ = ((this.anIntArray8914[(class348_sub43.anInt7067)]).toLong() * i_96_.toLong() shr 6).toInt()
                 i_94_ = i_94_ shl 8
                 if (i_94_ <= i_95_) {
                     i_95_ = i_94_ + i_94_ - 1 - i_95_
-                    class348_sub43.aClass348_Sub16_Sub5_7081.method2891(true)
+                    class348_sub43.aClass348_Sub16_Sub5_7081!!.method2891(true)
                 }
             } else i_95_ = ((i_94_.toLong() * (this.anIntArray8914[(class348_sub43.anInt7067)]).toLong()) shr 6).toInt()
-            if (i > 93) class348_sub43.aClass348_Sub16_Sub5_7081.method2924(i_95_)
+            if (i > 93) class348_sub43.aClass348_Sub16_Sub5_7081!!.method2924(i_95_)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("ma.WA(" + i + ',' + bool + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
         }

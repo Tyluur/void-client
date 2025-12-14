@@ -17,7 +17,7 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
         fun method1131(i: Int) {
             val j = 64 / ((11 - i) / 54)
             anInt5795++
-            Class60.aHa1098!!.L(Class187.anInt2500, if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247.method1789(-32350) != 1) -1 else Class36.anInt486 - -256 shl 2, 0)
+            Class60.aHa1098!!.L(Class187.anInt2500, if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) != 1) -1 else Class36.anInt486 - -256 shl 2, 0)
         }
 
         fun method1132(i: Int, j: Int, k: Int): Boolean {
@@ -4181,8 +4181,8 @@ class Class130_Sub1 internal constructor(var aClass58Array5801: Array<Class58>) 
             Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502
             Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889
             Class239_Sub4.aString5882 = Class274.aClass274_3509!!.method2063(Class348_Sub33.anInt6967, 544)
-            Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264, Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7250.method1778(i + -32350))
-            Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255.method1840(-32350))
+            Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264, Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(i + -32350))
+            Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261, Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350))
             Class135_Sub1.anInt4718 = 0
             method3153(0)
             method2145(-24498)

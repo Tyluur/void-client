@@ -12,7 +12,7 @@ class Class239_Sub25 : Class239 {
     override fun method1714(i: Int, i_0_: Int): Int {
         anInt6100++
         if (i != 3) aBoolean6110 = false
-        if (!this.aClass348_Sub51_3136.method3428((-89).toByte()).method1460(-38)) return 3
+        if (!this.aClass348_Sub51_3136.method3428((-89).toByte())!!.method1460(-38)) return 3
         if (i_0_ == 3 && !method86("jagdx", i xor 0x3)) return 3
         return 2
     }
@@ -34,7 +34,7 @@ class Class239_Sub25 : Class239 {
         this.aBoolean6113 = true
         anInt6101++
         if (i != 20014) aBoolean6110 = false
-        if (!this.aClass348_Sub51_3136.method3428((-113).toByte()).method1460(i + -20083)) return 0
+        if (!this.aClass348_Sub51_3136.method3428((-113).toByte())!!.method1460(i + -20083)) return 0
         return 2
     }
 
@@ -44,7 +44,7 @@ class Class239_Sub25 : Class239 {
 
     override fun method1716(bool: Boolean) {
         anInt6108++
-        if (!this.aClass348_Sub51_3136.method3428((-106).toByte()).method1460(-33)) this.anInt3138 = 0
+        if (!this.aClass348_Sub51_3136.method3428((-106).toByte())!!.method1460(-33)) this.anInt3138 = 0
         if (bool != false) method1829(31)
         if (this.anInt3138 < 0 || this.anInt3138 > 5) this.anInt3138 = method1710(20014)
     }
@@ -64,7 +64,7 @@ class Class239_Sub25 : Class239 {
     fun method1831(i: Int): Boolean {
         anInt6105++
         if (i < 85) return true
-        return this.aClass348_Sub51_3136.method3428((-124).toByte()).method1460(-59)
+        return this.aClass348_Sub51_3136.method3428((-124).toByte())!!.method1460(-59)
     }
 
     companion object {

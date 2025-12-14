@@ -117,38 +117,38 @@ abstract class Class110 {
                                         for (i_11_ in 0..<i_9_) {
                                             val i_12_ = class348_sub49.readInt((-126).toByte())
                                             `is`[i_11_] = ByteArray(i_12_)
-                                            class348_sub49.method3389(2147483647, 0, i_12_, `is`[i_11_])
+                                            class348_sub49.method3389(2147483647, 0, i_12_, `is`[i_11_]!!)
                                         }
                                     }
-                                    class348_sub48.anIntArray7132[i_6_] = i_7_
+                                    class348_sub48.anIntArray7132!![i_6_] = i_7_
                                     val var_classes = arrayOfNulls<Class<*>>(i_9_)
                                     var i_13_ = 0
                                     while ((i_13_ < i_9_)) {
                                         var_classes[i_13_] = (Class348_Sub40_Sub1.method3052(11012, strings[i_13_]))
                                         i_13_++
                                     }
-                                    class348_sub48.aClass144Array7127[i_6_] = (class297!!.method2230(var_classes, 76, Class348_Sub40_Sub1.method3052(11012, string), string_8_))
-                                    class348_sub48.aByteArrayArrayArray7128[i_6_] = `is`
+                                    class348_sub48.aClass144Array7127!![i_6_] = (class297!!.method2230(var_classes, 76, Class348_Sub40_Sub1.method3052(11012, string), string_8_))
+                                    class348_sub48.aByteArrayArrayArray7128!![i_6_] = `is`
                                 }
                             } else {
                                 val string = class348_sub49.readString(103.toByte())
                                 val string_14_ = class348_sub49.readString(109.toByte())
                                 var i_15_ = 0
                                 if (i_7_ == 1) i_15_ = class348_sub49.readInt((-126).toByte())
-                                class348_sub48.anIntArray7132[i_6_] = i_7_
-                                class348_sub48.anIntArray7136[i_6_] = i_15_
-                                class348_sub48.aClass144Array7135[i_6_] = (class297!!.method2243(0, string_14_, Class348_Sub40_Sub1.method3052(11012, string)))
+                                class348_sub48.anIntArray7132!![i_6_] = i_7_
+                                class348_sub48.anIntArray7136!![i_6_] = i_15_
+                                class348_sub48.aClass144Array7135!![i_6_] = (class297!!.method2243(0, string_14_, Class348_Sub40_Sub1.method3052(11012, string)))
                             }
                         } catch (classnotfoundexception: ClassNotFoundException) {
-                            class348_sub48.anIntArray7131[i_6_] = -1
+                            class348_sub48.anIntArray7131!![i_6_] = -1
                         } catch (securityexception: SecurityException) {
-                            class348_sub48.anIntArray7131[i_6_] = -2
+                            class348_sub48.anIntArray7131!![i_6_] = -2
                         } catch (nullpointerexception: NullPointerException) {
-                            class348_sub48.anIntArray7131[i_6_] = -3
+                            class348_sub48.anIntArray7131!![i_6_] = -3
                         } catch (exception: Exception) {
-                            class348_sub48.anIntArray7131[i_6_] = -4
+                            class348_sub48.anIntArray7131!![i_6_] = -4
                         } catch (throwable: Throwable) {
-                            class348_sub48.anIntArray7131[i_6_] = -5
+                            class348_sub48.anIntArray7131!![i_6_] = -5
                         }
                     }
                     Class348_Sub35.aClass262_6978!!.method1999(class348_sub48, -20180)

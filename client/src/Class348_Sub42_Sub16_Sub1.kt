@@ -11,7 +11,7 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
     override fun method3259(i: Int): ByteArray? {
         anInt10454++
         if (i != 16) return null
-        if (this.aBoolean9664 || (this.aClass348_Sub49_10453!!.anInt7197 < (-this.aByte10449 + (this.aClass348_Sub49_10453!!.aByteArray7154).size))) throw RuntimeException()
+        if (this.aBoolean9664 || (this.aClass348_Sub49_10453!!.anInt7197 < (-this.aByte10449 + (this.aClass348_Sub49_10453!!.aByteArray7154)!!.size))) throw RuntimeException()
         return (this.aClass348_Sub49_10453!!.aByteArray7154)
     }
 
@@ -19,7 +19,7 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
         if (i != 16) this.aByte10449 = (-4).toByte()
         anInt10452++
         if (this.aClass348_Sub49_10453 == null) return 0
-        return (100 * this.aClass348_Sub49_10453!!.anInt7197 / (-this.aByte10449 + (this.aClass348_Sub49_10453!!.aByteArray7154).size))
+        return (100 * this.aClass348_Sub49_10453!!.anInt7197 / (-this.aByte10449 + (this.aClass348_Sub49_10453!!.aByteArray7154)!!.size))
     }
 
     companion object {
@@ -56,7 +56,7 @@ class Class348_Sub42_Sub16_Sub1 : Class348_Sub42_Sub16() {
                             val class348_sub16_sub2 = class348_sub23_sub1.method2971(-61)
                             if (class348_sub16_sub2 != null) {
                                 class348_sub16_sub2.method2827(-17708, (class348_sub15.anInt6782))
-                                Class348_Sub43.aClass348_Sub16_Sub4_7065.method2883(class348_sub16_sub2)
+                                Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub2)
                                 class348_sub15.aBoolean6783 = true
                             }
                         }

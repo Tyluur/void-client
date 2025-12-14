@@ -62,7 +62,7 @@ class Class348_Sub17 : Class348 {
         val class348_sub49 = Class348_Sub49(`is`)
         var i: Int
         i = 0
-        while (((class348_sub49.aByteArray7154[i + class348_sub49.anInt7197]).toInt() != 0)) {
+        while (((class348_sub49.aByteArray7154!![i + class348_sub49.anInt7197]).toInt() != 0)) {
             i++
         }
         val is_9_ = ByteArray(i)
@@ -77,7 +77,7 @@ class Class348_Sub17 : Class348 {
         class348_sub49.anInt7197 += i
         var i_12_: Int
         i_12_ = 0
-        while (((class348_sub49.aByteArray7154[i_12_ + class348_sub49.anInt7197]).toInt() != 0)) {
+        while (((class348_sub49.aByteArray7154!![i_12_ + class348_sub49.anInt7197]).toInt() != 0)) {
             i_12_++
         }
         val is_13_ = ByteArray(i_12_)
@@ -92,7 +92,7 @@ class Class348_Sub17 : Class348 {
         class348_sub49.anInt7197 += i_12_
         var i_16_: Int
         i_16_ = 0
-        while (((class348_sub49.aByteArray7154[class348_sub49.anInt7197 + i_16_]).toInt() != 0)) {
+        while (((class348_sub49.aByteArray7154!![class348_sub49.anInt7197 + i_16_]).toInt() != 0)) {
             i_16_++
         }
         val is_17_ = ByteArray(i_16_)
@@ -138,7 +138,7 @@ class Class348_Sub17 : Class348 {
         val is_28_ = if (i_26_ > 0) ByteArray(2 * i_26_) else null
         var i_29_: Int
         i_29_ = 0
-        while (((class348_sub49.aByteArray7154[class348_sub49.anInt7197 - -i_29_]).toInt() != 0)) {
+        while (((class348_sub49.aByteArray7154!![class348_sub49.anInt7197 - -i_29_]).toInt() != 0)) {
             i_29_++
         }
         val is_30_ = ByteArray(i_29_)
@@ -178,7 +178,7 @@ class Class348_Sub17 : Class348 {
         for (i_40_ in 0..127) {
             if (anIntArray6793!![i_40_] != 0) {
                 if (i_35_ == 0) {
-                    i_39_ = -1 + (class348_sub49.aByteArray7154[i_11_++])
+                    i_39_ = -1 + (class348_sub49.aByteArray7154!![i_11_++])
                     if (i_36_ < is_9_.size) i_35_ = is_9_[i_36_++].toInt()
                     else i_35_ = -1
                 }
@@ -194,7 +194,7 @@ class Class348_Sub17 : Class348 {
                 if (i_35_ == 0) {
                     if (i_36_ >= is_13_.size) i_35_ = -1
                     else i_35_ = is_13_[i_36_++].toInt()
-                    i_41_ = 16 + (class348_sub49.aByteArray7154[i_15_++]) shl 2
+                    i_41_ = 16 + (class348_sub49.aByteArray7154!![i_15_++]) shl 2
                 }
                 i_35_--
                 this.aByteArray6792[i_42_] = i_41_.toByte()

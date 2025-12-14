@@ -1,25 +1,23 @@
 /* Class348_Sub48 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+* Visit http://jode.sourceforge.net/
+*/
+class Class348_Sub48 : Class348() {
+    var anInt7126: Int = 0
+    var aClass144Array7127: Array<Class144?>? = null
+    var aByteArrayArrayArray7128: Array<Array<ByteArray?>?>? = null
+    var anInt7130: Int = 0
+    var anIntArray7131: IntArray? = null
+    var anIntArray7132: IntArray? = null
+    var aClass144Array7135: Array<Class144?>? = null
+    var anIntArray7136: IntArray? = null
 
-public final class Class348_Sub48 extends Class348 {
-    int anInt7126;
-    Class144[] aClass144Array7127;
-    byte[][][] aByteArrayArrayArray7128;
-    static int anInt7129 = 0;
-    int anInt7130;
-    int[] anIntArray7131;
-    int[] anIntArray7132;
-    static int anInt7133;
-    static int anInt7134;
-    Class144[] aClass144Array7135;
-    int[] anIntArray7136;
-
-    static final void method3328(Class324 class324) {
-        Class362.aClass324_4456 = class324;
-    }
-
-    public Class348_Sub48() {
-        /* empty */
+    companion object {
+        var anInt7129: Int = 0
+        var anInt7133: Int = 0
+        @JvmField
+        var anInt7134: Int = 0
+        fun method3328(class324: Class324?) {
+            Class362.aClass324_4456 = class324
+        }
     }
 }

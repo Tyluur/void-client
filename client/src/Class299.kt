@@ -71,7 +71,7 @@ abstract class Class299 {
                 i_14_ += i_16_
                 i_12_ += i_15_
                 if (i_14_ >= 0 && i_13_ >= 1) {
-                    Class348_Sub49_Sub2.anIntArray9757[i_13_] = i_9_
+                    Class348_Sub49_Sub2.anIntArray9757!![i_13_] = i_9_
                     i_13_--
                     i_14_ -= i_13_ shl 1
                 }
@@ -89,7 +89,7 @@ abstract class Class299 {
                     } else {
                         val is_23_ = Class17.anIntArrayArray255!![i_6_ - -i_11_]!!
                         val is_24_ = Class17.anIntArrayArray255!![-i_11_ + i_6_]!!
-                        val i_25_ = Class348_Sub49_Sub2.anIntArray9757[i_11_]
+                        val i_25_ = Class348_Sub49_Sub2.anIntArray9757!![i_11_]
                         val i_26_ = i_9_ + i_3_
                         val i_27_ = i_3_ - i_9_
                         val i_28_ = i_3_ - -i_25_
@@ -107,7 +107,7 @@ abstract class Class299 {
                 val i_32_ = i_3_ - -i_11_
                 val i_33_ = i_3_ - i_11_
                 if (i_10_ > i_9_) {
-                    val i_34_ = (if (i_9_ <= i_13_) i_13_ else Class348_Sub49_Sub2.anIntArray9757[i_9_])
+                    val i_34_ = (if (i_9_ <= i_13_) i_13_ else Class348_Sub49_Sub2.anIntArray9757!![i_9_])
                     val i_35_ = i_34_ + i_3_
                     val i_36_ = i_3_ + -i_34_
                     Class135_Sub2.method1156(-27, i_36_, is_30_, i_33_, i_8_)

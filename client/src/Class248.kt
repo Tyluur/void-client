@@ -30,7 +30,7 @@ class Class248 {
                 aClass348_Sub49_3208.anInt7197 = 0
                 aClass348_Sub49_3208.writeByte(false, if (bool) 2 else 3)
                 aClass348_Sub49_3208.method3340(-9912, 0)
-                if (i < -66) aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1)
+                if (i < -66) aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
             } catch (ioexception: IOException) {
                 try {
                     aClass202_3209!!.method1476((-121).toByte())
@@ -72,7 +72,7 @@ class Class248 {
                     aClass348_Sub49_3208.anInt7197 = 0
                     aClass348_Sub49_3208.writeByte(false, 1)
                     aClass348_Sub49_3208.method3340(-9912, (class348_sub42_sub16_sub1.aLong7057).toInt())
-                    aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1)
+                    aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
                     aClass107_3204.method1005(true, class348_sub42_sub16_sub1)
                     class348_sub42_sub16_sub1 = (aClass107_3197.method1003(65.toByte()) as Class348_Sub42_Sub16_Sub1?)
                 }
@@ -83,7 +83,7 @@ class Class248 {
                 aClass348_Sub49_3208.anInt7197 = 0
                 aClass348_Sub49_3208.writeByte(false, 0)
                 aClass348_Sub49_3208.method3340(-9912, (class348_sub42_sub16_sub1.aLong7057).toInt())
-                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1)
+                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
                 aClass107_3206.method1005(true, class348_sub42_sub16_sub1)
                 class348_sub42_sub16_sub1 = (aClass107_3205.method1003(102.toByte()) as Class348_Sub42_Sub16_Sub1?)
             }
@@ -96,15 +96,15 @@ class Class248 {
                 if (aClass348_Sub42_Sub16_Sub1_3215 == null) i_3_ = 8
                 else if (aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 == 0) i_3_ = 1
                 if (i_3_ <= 0) {
-                    val i_4_ = (aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154.size + -aClass348_Sub42_Sub16_Sub1_3215!!.aByte10449)
+                    val i_4_ = (aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!!.size + -aClass348_Sub42_Sub16_Sub1_3215!!.aByte10449)
                     var i_5_ = (-aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 + 512)
                     if (i_5_ > -(aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197) + i_4_) i_5_ = i_4_ - aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197
                     if (i_2_ < i_5_) i_5_ = i_2_
-                    aClass202_3209!!.method1474((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154), aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197, (-72).toByte(), i_5_)
+                    aClass202_3209!!.method1474((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!!), aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197, (-72).toByte(), i_5_)
                     if (aByte3212.toInt() != 0) {
                         var i_6_ = 0
                         while (i_5_ > i_6_) {
-                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154[i_6_ + aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197] = (Class348_Sub21.method2955((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154[(i_6_ + (aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197))]).toInt(), aByte3212.toInt())).toByte()
+                            aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!![i_6_ + aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197] = (Class348_Sub21.method2955((aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.aByteArray7154!![(i_6_ + (aClass348_Sub42_Sub16_Sub1_3215!!.aClass348_Sub49_10453!!.anInt7197))]).toInt(), aByte3212.toInt())).toByte()
                             i_6_++
                         }
                     }
@@ -118,9 +118,9 @@ class Class248 {
                 } else {
                     var i_7_ = i_3_ + -(aClass348_Sub49_3211.anInt7197)
                     if (i_2_ < i_7_) i_7_ = i_2_
-                    aClass202_3209!!.method1474((aClass348_Sub49_3211.aByteArray7154), aClass348_Sub49_3211.anInt7197, (-72).toByte(), i_7_)
+                    aClass202_3209!!.method1474((aClass348_Sub49_3211.aByteArray7154!!), aClass348_Sub49_3211.anInt7197, (-72).toByte(), i_7_)
                     if (aByte3212.toInt() != 0) {
-                        for (i_8_ in 0..<i_7_) aClass348_Sub49_3211.aByteArray7154[i_8_ + aClass348_Sub49_3211.anInt7197] = (Class348_Sub21.method2955((aClass348_Sub49_3211.aByteArray7154[i_8_ + (aClass348_Sub49_3211.anInt7197)]).toInt(), aByte3212.toInt())).toByte()
+                        for (i_8_ in 0..<i_7_) aClass348_Sub49_3211.aByteArray7154!![i_8_ + aClass348_Sub49_3211.anInt7197] = (Class348_Sub21.method2955((aClass348_Sub49_3211.aByteArray7154!![i_8_ + (aClass348_Sub49_3211.anInt7197)]).toInt(), aByte3212.toInt())).toByte()
                     }
                     aClass348_Sub49_3211.anInt7197 += i_7_
                     if (aClass348_Sub49_3211.anInt7197 >= i_3_) {
@@ -157,7 +157,7 @@ class Class248 {
                             aClass348_Sub49_3211.anInt7197 = 0
                             aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 = 8
                         } else if ((aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456) == 0) {
-                            if ((aClass348_Sub49_3211.aByteArray7154[0]).toInt() == -1) {
+                            if ((aClass348_Sub49_3211.aByteArray7154!![0]).toInt() == -1) {
                                 aClass348_Sub42_Sub16_Sub1_3215!!.anInt10456 = 1
                                 aClass348_Sub49_3211.anInt7197 = 0
                             } else aClass348_Sub42_Sub16_Sub1_3215 = null
@@ -193,7 +193,7 @@ class Class248 {
                     aClass348_Sub49_3208.anInt7197 = 0
                     aClass348_Sub49_3208.writeByte(false, 6)
                     aClass348_Sub49_3208.method3340(-9912, 3)
-                    aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1)
+                    aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
                 } catch (ioexception: IOException) {
                     try {
                         aClass202_3209!!.method1476((-123).toByte())
@@ -255,12 +255,12 @@ class Class248 {
         aClass348_Sub42_Sub16_Sub1_3215 = null
         if (bool != false) aLong3207 = -35L
         while (true) {
-            val class348_sub42_sub16_sub1 = aClass107_3204.method1008(20) as Class348_Sub42_Sub16_Sub1?
+            val class348_sub42_sub16_sub1 = aClass107_3204.method1008(20) as? Class348_Sub42_Sub16_Sub1?
             if (class348_sub42_sub16_sub1 == null) break
             aClass107_3197.method1005(true, class348_sub42_sub16_sub1)
         }
         while (true) {
-            val class348_sub42_sub16_sub1 = aClass107_3206.method1008(20) as Class348_Sub42_Sub16_Sub1?
+            val class348_sub42_sub16_sub1 = aClass107_3206.method1008(20) as? Class348_Sub42_Sub16_Sub1?
             if (class348_sub42_sub16_sub1 == null) break
             aClass107_3205.method1005(!bool, class348_sub42_sub16_sub1)
         }
@@ -270,7 +270,7 @@ class Class248 {
                 aClass348_Sub49_3208.writeByte(bool, 4)
                 aClass348_Sub49_3208.writeByte(bool, aByte3212.toInt())
                 aClass348_Sub49_3208.writeShort(107.toByte(), 0)
-                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, -1)
+                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, -1)
             } catch (ioexception: IOException) {
                 try {
                     aClass202_3209!!.method1476((-126).toByte())
@@ -306,7 +306,7 @@ class Class248 {
                 aClass348_Sub49_3208.anInt7197 = i
                 aClass348_Sub49_3208.writeByte(false, 7)
                 aClass348_Sub49_3208.method3340(-9912, 0)
-                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154), 4, 0, i.inv())
+                aClass202_3209!!.method1470((aClass348_Sub49_3208.aByteArray7154!!), 4, 0, i.inv())
             } catch (ioexception: IOException) {
                 try {
                     aClass202_3209!!.method1476((-125).toByte())

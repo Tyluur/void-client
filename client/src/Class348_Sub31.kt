@@ -210,12 +210,12 @@ abstract class Class348_Sub31 : Class348() {
         @JvmStatic
         fun method3014(class348_sub49: Class348_Sub49, i: Byte) {
             anInt6914++
-            if ((class348_sub49.aByteArray7154.size - class348_sub49.anInt7197) >= 1) {
+            if ((class348_sub49.aByteArray7154!!.size - class348_sub49.anInt7197) >= 1) {
                 val i_89_ = class348_sub49.readUnsignedByte(255)
-                if (i_89_ >= 0 && i_89_ <= 1 && (class348_sub49.aByteArray7154.size - class348_sub49.anInt7197) >= 2) {
+                if (i_89_ >= 0 && i_89_ <= 1 && (class348_sub49.aByteArray7154!!.size - class348_sub49.anInt7197) >= 2) {
                     if (i.toInt() != -40) Companion.method3012(13, -47, -27, 107, -90, (-19).toByte(), -61, 36)
                     val i_90_ = class348_sub49.readUnsignedShort(842397944)
-                    if (i_90_ * 6 <= (-class348_sub49.anInt7197 + (class348_sub49.aByteArray7154).size)) {
+                    if (i_90_ * 6 <= (-class348_sub49.anInt7197 + (class348_sub49.aByteArray7154)!!.size)) {
                         for (i_91_ in 0..<i_90_) {
                             val i_92_ = class348_sub49.readUnsignedShort(842397944)
                             val i_93_ = class348_sub49.readInt((-126).toByte())

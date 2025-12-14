@@ -540,8 +540,8 @@ class Class348_Sub40_Sub7 : Class348_Sub40(1, false) {
             anInt9142++
             if (bool != false) method3065(-42, true, 43)
             val class348_sub47 = method2148(Class348_Sub40_Sub1.Companion.aClass351_9089, Class348_Sub23_Sub2.aClass77_9029, -97)
-            class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(52, i_74_)
-            class348_sub47.aClass348_Sub49_Sub2_7116.writeIntMiddle(i, 44.toByte())
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(52, i_74_)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntMiddle(i, 44.toByte())
             Class348_Sub42_Sub14.method3243(25, class348_sub47)
         }
 

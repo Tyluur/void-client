@@ -438,7 +438,7 @@ open class Class75 {
             val i_78_ = class348_sub49.readUnsignedByte(255)
             val is_79_ = IntArray(i_78_)
             for (i_80_ in 0..<i_78_) is_79_[i_80_] = class348_sub49.readUnsignedByte(255)
-            while (class348_sub49.anInt7197 < class348_sub49.aByteArray7154.size) {
+            while (class348_sub49.anInt7197 < class348_sub49.aByteArray7154!!.size) {
                 if (class348_sub49.readUnsignedByte(255) == 0) {
                     val i_81_ = class348_sub49.readUnsignedByte(255)
                     val i_82_ = class348_sub49.readUnsignedByte(255)

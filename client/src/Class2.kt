@@ -47,12 +47,12 @@ class Class2 {
                 anInt120++
                 Class348_Sub38.anInt7009++
                 val class348_sub47 = method2148(Class239_Sub9.aClass351_5934, Class348_Sub23_Sub2.aClass77_9029, -104)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeInt(112.toByte(), class46!!.anInt830)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(class46_0_!!.anInt704, 3.toByte())
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeIntMiddle(class46_0_.anInt830, 44.toByte())
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), class46_0_.anInt812)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, class46.anInt704)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, class46.anInt812)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(112.toByte(), class46!!.anInt830)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(class46_0_!!.anInt704, 3.toByte())
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeIntMiddle(class46_0_.anInt830, 44.toByte())
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), class46_0_.anInt812)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, class46.anInt704)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, class46.anInt812)
                 if (i > -50) aClass141_117 = null
                 Class348_Sub42_Sub14.method3243(-100, class348_sub47)
             } catch (runtimeexception: RuntimeException) {

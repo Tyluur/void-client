@@ -153,7 +153,7 @@ class Class268 internal constructor(class230: Class230?, i: Int, class45: Class4
                     val class10 = Class258_Sub2.aClass10Array8531!![i_9_]
                     if (class10!!.aByte180.toInt() == 3) {
                         if (class10.aClass348_Sub16_Sub5_176 == null) class10.anInt188 = -2147483648
-                        else Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class10.aClass348_Sub16_Sub5_176!!)
+                        else Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class10.aClass348_Sub16_Sub5_176!!)
                     }
                 }
                 anInt3446++

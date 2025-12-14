@@ -55,16 +55,16 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                 if (Class240.anInt4674 == 10) {
                     while (method2138(i xor 0x2ca2)) {
                         val class348_sub47 = method2148(Class140.aClass351_1961, (Class348_Sub23_Sub2.aClass77_9029), -92)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-                        val i_1_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197)
-                        Class348_Sub33.Companion.method3025(121.toByte(), (class348_sub47.aClass348_Sub49_Sub2_7116))
-                        class348_sub47.aClass348_Sub49_Sub2_7116.method3339(113, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197) + -i_1_)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                        val i_1_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
+                        Class348_Sub33.Companion.method3025(121.toByte(), (class348_sub47.aClass348_Sub49_Sub2_7116!!))
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(113, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) + -i_1_)
                         Class348_Sub42_Sub14.method3243(119, class348_sub47)
                     }
                     if (Class239_Sub4.aClass348_Sub26_5881 != null) {
                         if ((Class239_Sub4.aClass348_Sub26_5881!!.anInt6887) != -1) {
                             val class348_sub47 = method2148((Class367_Sub4.aClass351_7318), (Class348_Sub23_Sub2.aClass77_9029), -81)
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), Class239_Sub4.aClass348_Sub26_5881!!.anInt6887)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class239_Sub4.aClass348_Sub26_5881!!.anInt6887)
                             Class348_Sub42_Sub14.method3243(122, class348_sub47)
                             Class239_Sub4.aClass348_Sub26_5881 = null
                             Class101_Sub2.aLong5745 = method599(-106) + 30000L
@@ -76,7 +76,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         var i_2_ = 0
                         var class348_sub45_3_ = (r_Sub1.aClass262_10479!!.method1995(4) as Class348_Sub45?)
                         while (class348_sub45_3_ != null) {
-                            if (class348_sub47 != null && (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197 - i_2_ >= 240)) break
+                            if (class348_sub47 != null && (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 - i_2_ >= 240)) break
                             class348_sub45_3_.method2715(107.toByte())
                             var i_4_ = class348_sub45_3_.method3311(-15)
                             if (i_4_ >= -1) {
@@ -90,8 +90,8 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                 if (class348_sub47 == null) {
                                     Class361.anInt4450++
                                     class348_sub47 = (method2148(Class348_Sub42_Sub11.aClass351_9590, Class348_Sub23_Sub2.aClass77_9029, -94))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-                                    i_2_ = class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                                    i_2_ = class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197
                                 }
                                 var i_6_ = -s_Sub2.anInt8270 + i_5_
                                 s_Sub2.anInt8270 = i_5_
@@ -102,28 +102,28 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                                     if (i_8_ < 32 && i_6_ >= -128 && i_6_ <= 127 && i_7_ >= -128 && i_7_ <= 127) {
                                         i_6_ += 128
                                         i_7_ += 128
-                                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 128 + i_8_)
-                                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), i_7_ + (i_6_ shl 8))
+                                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 128 + i_8_)
+                                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_7_ + (i_6_ shl 8))
                                     } else if (i_8_ >= 32) {
-                                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), 57344 + i_8_)
-                                        if (i_5_ == 1 || i_4_ == -1) class348_sub47.aClass348_Sub49_Sub2_7116.writeInt(99.toByte(), -2147483648)
-                                        else class348_sub47.aClass348_Sub49_Sub2_7116.writeInt(101.toByte(), i_4_ shl 16 or i_5_)
+                                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), 57344 + i_8_)
+                                        if (i_5_ == 1 || i_4_ == -1) class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(99.toByte(), -2147483648)
+                                        else class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(101.toByte(), i_4_ shl 16 or i_5_)
                                     } else {
-                                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 192 + i_8_)
-                                        if (i_5_ != 1 && i_4_ != -1) class348_sub47.aClass348_Sub49_Sub2_7116.writeInt(100.toByte(), i_5_ or (i_4_ shl 16))
-                                        else class348_sub47.aClass348_Sub49_Sub2_7116.writeInt(114.toByte(), -2147483648)
+                                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 192 + i_8_)
+                                        if (i_5_ != 1 && i_4_ != -1) class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(100.toByte(), i_5_ or (i_4_ shl 16))
+                                        else class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(114.toByte(), -2147483648)
                                     }
                                 } else {
                                     i_6_ += 32
                                     i_7_ += 32
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), (i_7_ + (i_6_ shl 6) + (i_8_ shl 12)))
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), (i_7_ + (i_6_ shl 6) + (i_8_ shl 12)))
                                 }
                                 Class355.aLong4367 = class348_sub45_3_.method3312((-109).toByte())
                             }
                             class348_sub45_3_ = r_Sub1.aClass262_10479!!.method1990(79.toByte()) as Class348_Sub45?
                         }
                         if (class348_sub47 != null) {
-                            class348_sub47.aClass348_Sub49_Sub2_7116.method3339(105, class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197 + -i_2_)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(105, class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197 + -i_2_)
                             Class348_Sub42_Sub14.method3243(23, class348_sub47)
                         }
                     }
@@ -143,22 +143,22 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         val i_12_ = l.toInt()
                         Class10.anInt182++
                         val class348_sub47 = method2148(Class27.aClass351_395, (Class348_Sub23_Sub2.aClass77_9029), i + -11525)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), i_12_ or (i_11_ shl 15))
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeInt(121.toByte(), i_9_ shl 16 or i_10_)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_12_ or (i_11_ shl 15))
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(121.toByte(), i_9_ shl 16 or i_10_)
                         Class348_Sub42_Sub14.method3243(25, class348_sub47)
                     }
                     if (Class253.anInt3246 > 0) {
                         Class348_Sub40_Sub26.anInt9348++
                         val class348_sub47 = method2148((Class328_Sub1_Sub1.aClass351_8798), (Class348_Sub23_Sub2.aClass77_9029), -111)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 3 * Class253.anInt3246)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * Class253.anInt3246)
                         var i_13_ = 0
                         while ((i_13_ < Class253.anInt3246)) {
                             val interface6 = Class308.anInterface6Array3884!![i_13_]
                             var l = ((interface6!!.method29((-29).toByte()) + -Class348_Sub7.aLong6651) / 50L)
                             Class348_Sub7.aLong6651 = interface6.method29(106.toByte())
                             if (l > 65535L) l = 65535L
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, interface6.method30(false))
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), l.toInt())
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, interface6.method30(false))
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), l.toInt())
                             i_13_++
                         }
                         Class348_Sub42_Sub14.method3243(-49, class348_sub47)
@@ -169,25 +169,25 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                         Class369_Sub3_Sub1.aBoolean10174 = false
                         Class147.anInt2035 = 20
                         val class348_sub47 = method2148(Class281.aClass351_3648, (Class348_Sub23_Sub2.aClass77_9029), i + -11549)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(i xor 0x3c4d, Class314.aFloat3938.toInt() shr 3)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), Class76.aFloat1287.toInt() shr 3)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(i xor 0x3c4d, Class314.aFloat3938.toInt() shr 3)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), Class76.aFloat1287.toInt() shr 3)
                         Class348_Sub42_Sub14.method3243(-31, class348_sub47)
                     }
                     if (Class347.aBoolean4278 != Class175.aBoolean2329) {
                         Class269.anInt3460++
                         Class347.aBoolean4278 = Class175.aBoolean2329
                         val class348_sub47 = method2148((InputStream_Sub1.aClass351_77), (Class348_Sub23_Sub2.aClass77_9029), i xor 0x2cc8.inv())
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, if (!Class175.aBoolean2329) 0 else 1)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!Class175.aBoolean2329) 0 else 1)
                         Class348_Sub42_Sub14.method3243(i + -11501, class348_sub47)
                     }
                     if (!r.aBoolean9719) {
                         Class62.anInt1110++
                         val class348_sub47 = method2148((Class348_Sub49_Sub1.aClass351_9743), (Class348_Sub23_Sub2.aClass77_9029), -113)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-                        val i_14_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                        val i_14_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
                         val class348_sub49 = Class316.aClass348_Sub51_3959!!.method3427(i xor 0x2cb0)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154, 82)
-                        class348_sub47.aClass348_Sub49_Sub2_7116.method3339(96, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197) + -i_14_)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, 82)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(96, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) + -i_14_)
                         Class348_Sub42_Sub14.method3243(i + -11473, class348_sub47)
                         r.aBoolean9719 = true
                     }
@@ -361,7 +361,7 @@ class Class348_Sub24 internal constructor(var anInt6872: Int, var anInt6875: Int
                             if (Class237.aBoolean3103) {
                                 Class98.anInt1568++
                                 val class348_sub47 = method2148((ha_Sub2.aClass351_7715), (Class348_Sub23_Sub2.aClass77_9029), i + -11525)
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeInt(117.toByte(), (InputStream_Sub2.anInt85 shl 14 or (Class348_Sub40_Sub26.anInt9349 shl 28) or Class79.anInt1404))
+                                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(117.toByte(), (InputStream_Sub2.anInt85 shl 14 or (Class348_Sub40_Sub26.anInt9349 shl 28) or Class79.anInt1404))
                                 Class348_Sub42_Sub14.method3243(30, class348_sub47)
                                 Class237.aBoolean3103 = false
                             }

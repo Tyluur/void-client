@@ -204,8 +204,8 @@ class Class318_Sub1_Sub1_Sub1 internal constructor(var_ha: ha?, class51: Class51
             if (string != "") {
                 Class88.anInt1498++
                 val class348_sub47 = method2148(aClass351_8724, Class348_Sub23_Sub2.aClass77_9029, -124)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, method1745(string, -65))
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, method1745(string, -65))
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                 Class348_Sub42_Sub14.method3243(121, class348_sub47)
             }
         }

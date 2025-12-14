@@ -5,7 +5,7 @@ class Class239_Sub8 : Class239 {
     override fun method1710(i: Int): Int {
         if (i != 20014) Companion.method1749(null, null, false, 94, (-39).toByte())
         anInt5914++
-        if (this.aClass348_Sub51_3136.method3428((-80).toByte()).method1456(111.toByte())) return 3
+        if (this.aClass348_Sub51_3136.method3428((-80).toByte())!!.method1456(111.toByte())) return 3
         return 2
     }
 

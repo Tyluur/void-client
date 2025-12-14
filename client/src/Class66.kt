@@ -191,9 +191,9 @@ object Class66 {
                 Class290.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
                 val class348_sub47 = method2148(Class348_Sub14.aClass351_6766, (Class348_Sub23_Sub2.aClass77_9029), -111)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, za.anInt7276)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class57.aClass227_1055!!.anInt2970)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class290.anInt3713)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, za.anInt7276)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, Class57.aClass227_1055!!.anInt2970)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, Class290.anInt3713)
                 Class348_Sub42_Sub14.method3243(-77, class348_sub47)
                 return
             }
@@ -208,11 +208,11 @@ object Class66 {
                 if (string_8_.length > 80) string_8_ = string_8_.substring(0, 80)
                 anInt1157++
                 val class348_sub47 = method2148(Class143.aClass351_1987, (Class348_Sub23_Sub2.aClass77_9029), -117)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (method1745(string, -65) + 2 + method1745(string_8_, -65)))
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, i_9_ - 1)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, i_10_)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string_8_)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, (method1745(string, -65) + 2 + method1745(string_8_, -65)))
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeString((-5).toByte(), string)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, i_9_ - 1)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeByte(false, i_10_)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!!!.writeString((-5).toByte(), string_8_)
                 Class348_Sub42_Sub14.method3243(-85, class348_sub47)
                 return
             }
@@ -243,7 +243,7 @@ object Class66 {
             if (i == 5006) {
                 val i_14_ = anIntArray1149!![--anInt1173]
                 val class348_sub47 = method2148(Class348_Sub31.aClass351_6925, (Class348_Sub23_Sub2.aClass77_9029), -100)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, i_14_)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_14_)
                 Class348_Sub42_Sub14.method3243(-70, class348_sub47)
                 return
             }
@@ -259,11 +259,11 @@ object Class66 {
                 if (Class192.anInt2581 != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || Class133.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
                     anInt1159++
                     val class348_sub47 = method2148((Class348_Sub40_Sub22.aClass351_9304), (Class348_Sub23_Sub2.aClass77_9029), -116)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-                    val i_16_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
-                    method3544((class348_sub47.aClass348_Sub49_Sub2_7116), -70, string_15_)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.method3339(109, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197) - i_16_)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                    val i_16_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
+                    method3544((class348_sub47.aClass348_Sub49_Sub2_7116!!), -70, string_15_)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(109, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_16_)
                     Class348_Sub42_Sub14.method3243(2, class348_sub47)
                     return
                 }
@@ -428,12 +428,12 @@ object Class66 {
             if (i == 5059) {
                 anInt1165++
                 val class348_sub47 = method2148(Class45.aClass351_643, (Class348_Sub23_Sub2.aClass77_9029), -93)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-                val i_41_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), aClass43_1151!!.anInt615)
-                aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210(12.toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116))
-                class348_sub47.aClass348_Sub49_Sub2_7116.method3339(115, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197) - i_41_)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                val i_41_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aClass43_1151!!.anInt615)
+                aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210(12.toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(115, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_41_)
                 Class348_Sub42_Sub14.method3243(127, class348_sub47)
                 return
             }
@@ -441,24 +441,24 @@ object Class66 {
                 val string = aStringArray1152!![--anInt1170]
                 anInt1166++
                 val class348_sub47 = method2148(Class155.aClass351_2109, (Class348_Sub23_Sub2.aClass77_9029), -89)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-                val i_42_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), aClass43_1151!!.anInt615)
-                aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210((-125).toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116))
-                class348_sub47.aClass348_Sub49_Sub2_7116.method3339(102, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197) - i_42_)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                val i_42_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string!!)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aClass43_1151!!.anInt615)
+                aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210((-125).toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(102, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_42_)
                 Class348_Sub42_Sub14.method3243(127, class348_sub47)
                 return
             }
             if (i == 5061) {
                 anInt1165++
                 val class348_sub47 = method2148(Class45.aClass351_643, (Class348_Sub23_Sub2.aClass77_9029), -104)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-                val i_43_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 1)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), aClass43_1151!!.anInt615)
-                aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210((-126).toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116))
-                class348_sub47.aClass348_Sub49_Sub2_7116.method3339(92, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197) - i_43_)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                val i_43_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), aClass43_1151!!.anInt615)
+                aClass43_1151!!.aClass348_Sub42_Sub10_614!!.method3210((-126).toByte(), aClass43_1151!!.anIntArray617, (class348_sub47.aClass348_Sub49_Sub2_7116!!))
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(92, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_43_)
                 Class348_Sub42_Sub14.method3243(-111, class348_sub47)
                 return
             }
@@ -891,7 +891,7 @@ object Class66 {
                 return
             }
             if (i == 5301) {
-                if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 return
             }
             if (i == 5302) {
@@ -934,13 +934,13 @@ object Class66 {
                 return
             }
             if (i == 5308) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227.method1751(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350)
                 return
             }
             if (i == 5309) {
                 val i_105_ = anIntArray1149!![--anInt1173]
                 if (i_105_ >= 1 && i_105_ <= 2) {
-                    Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227), i_105_)
+                    Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!), i_105_)
                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7254), i_105_)
                     method243(37)
                     return
@@ -955,10 +955,10 @@ object Class66 {
                 val i_107_ = anIntArray1149!![--anInt1173]
                 anInt1171++
                 val class348_sub47 = method2148((Class348_Sub40_Sub17.aClass351_9234), (Class348_Sub23_Sub2.aClass77_9029), -101)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (method1745(string, -65) + method1745(string_106_, -65) + 1))
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string_106_)
-                class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, i_107_)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (method1745(string, -65) + method1745(string_106_, -65) + 1))
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string_106_)
+                class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_107_)
                 Class348_Sub42_Sub14.method3243(-66, class348_sub47)
                 return
             }
@@ -975,7 +975,7 @@ object Class66 {
                 anInt1173 -= 2
                 val i_108_ = anIntArray1149!![anInt1173]
                 val i_109_ = anIntArray1149!![anInt1173 + 1]
-                if (i_108_ >= 0 && i_108_ < 2) Class348_Sub43.anIntArrayArrayArray7079[i_108_] = Array<IntArray?>(i_109_ shl 1) { IntArray(4) }
+                if (i_108_ >= 0 && i_108_ < 2) Class348_Sub43.anIntArrayArrayArray7079!![i_108_] = Array<IntArray?>(i_109_ shl 1) { IntArray(4) }
                 return
             }
             if (i == 5406) {
@@ -987,22 +987,22 @@ object Class66 {
                 val i_114_ = anIntArray1149!![anInt1173 + 4]
                 val i_115_ = anIntArray1149!![anInt1173 + 5]
                 val i_116_ = anIntArray1149!![anInt1173 + 6]
-                if (i_110_ >= 0 && i_110_ < 2 && Class348_Sub43.anIntArrayArrayArray7079[i_110_] != null && i_111_ >= 0 && i_111_ < (Class348_Sub43.anIntArrayArrayArray7079[i_110_]).size) {
-                    Class348_Sub43.anIntArrayArrayArray7079[i_110_][i_111_] = intArrayOf((i_112_ shr 14 and 0x3fff) shl 9, i_113_ shl 2, (i_112_ and 0x3fff) shl 9, i_116_)
-                    Class348_Sub43.anIntArrayArrayArray7079[i_110_][i_111_ + 1] = intArrayOf((i_114_ shr 14 and 0x3fff) shl 9, i_115_ shl 2, (i_114_ and 0x3fff) shl 9)
+                if (i_110_ >= 0 && i_110_ < 2 && Class348_Sub43.anIntArrayArrayArray7079!![i_110_] != null && i_111_ >= 0 && i_111_ < (Class348_Sub43.anIntArrayArrayArray7079!![i_110_]!!).size) {
+                    Class348_Sub43.anIntArrayArrayArray7079!![i_110_]!![i_111_] = intArrayOf((i_112_ shr 14 and 0x3fff) shl 9, i_113_ shl 2, (i_112_ and 0x3fff) shl 9, i_116_)
+                    Class348_Sub43.anIntArrayArrayArray7079!![i_110_]!![i_111_ + 1] = intArrayOf((i_114_ shr 14 and 0x3fff) shl 9, i_115_ shl 2, (i_114_ and 0x3fff) shl 9)
                 }
                 return
             }
             if (i == 5407) {
-                val i_117_ = ((Class348_Sub43.anIntArrayArrayArray7079[anIntArray1149!![--anInt1173]]).size shr 1)
+                val i_117_ = ((Class348_Sub43.anIntArrayArrayArray7079!![anIntArray1149!![--anInt1173]]!!).size shr 1)
                 anIntArray1149!![anInt1173++] = i_117_
                 return
             }
             if (i == 5411) {
-                if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 if (Class52.aFrame4904 == null) {
                     val string = (if (Class116.aString1761 != null) Class116.aString1761 else method2162(false))
-                    Class179.method1360(string, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350) == 1, false, -47)
+                    Class179.method1360(string, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
                     return
                 } else {
                     method2405(97)
@@ -1024,11 +1024,11 @@ object Class66 {
                 return
             }
             if (i == 5421) {
-                if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (Class34.aFrame476 != null) Class85.method830(Class316.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val string = aStringArray1152!![--anInt1170]
                 val bool_118_ = anIntArray1149!![--anInt1173] == 1
                 val string_119_ = method2162(false) + string
-                Class179.method1360(string_119_, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350) == 1, bool_118_, 104)
+                Class179.method1360(string_119_, Class348_Sub23_Sub1.aClass297_8992, Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, bool_118_, 104)
                 return
             }
             if (i == 5422) {
@@ -1167,7 +1167,7 @@ object Class66 {
                 if (i_132_ >= 2) throw RuntimeException()
                 za_Sub1.anInt9775 = i_132_
                 val i_133_ = anIntArray1149!![anInt1173 + 1]
-                if (i_133_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079[za_Sub1.anInt9775]).size shr 1) throw RuntimeException()
+                if (i_133_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![za_Sub1.anInt9775])!!.size shr 1) throw RuntimeException()
                 Class213.anInt2798 = i_133_
                 Class117.anInt1780 = 0
                 Class195.anInt5019 = anIntArray1149!![anInt1173 + 2]
@@ -1176,7 +1176,7 @@ object Class66 {
                 if (i_134_ >= 2) throw RuntimeException()
                 Class292.anInt4803 = i_134_
                 val i_135_ = anIntArray1149!![anInt1173 + 5]
-                if (i_135_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079[Class292.anInt4803]).size shr 1) throw RuntimeException()
+                if (i_135_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079!![Class292.anInt4803]!!).size shr 1) throw RuntimeException()
                 Class264.anInt3373 = i_135_
                 Class348_Sub40_Sub21.anInt9282 = 3
                 Class318_Sub1_Sub5_Sub2.anInt10163 = -1
@@ -1415,7 +1415,7 @@ object Class66 {
         } else if (i < 6100) {
             if (i == 6001) {
                 val i_146_ = anIntArray1149!![--anInt1173]
-                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub10_7232), i_146_)
+                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!), i_146_)
                 Class348_Sub20.method2953((-126).toByte())
                 method243(37)
                 r.aBoolean9719 = false
@@ -1441,7 +1441,7 @@ object Class66 {
                 return
             }
             if (i == 6005) {
-                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
+                Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!), if (anIntArray1149!![--anInt1173] == 1) 1 else 0)
                 Class348_Sub20.method2953((-111).toByte())
                 method243(37)
                 r.aBoolean9719 = false
@@ -1496,7 +1496,7 @@ object Class66 {
             }
             if (i == 6016) {
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7248), anIntArray1149!![--anInt1173])
-                method3553(false, 112.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350))
+                method3553(false, 112.toByte(), Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
                 method243(37)
                 return
             }
@@ -1515,7 +1515,7 @@ object Class66 {
             }
             if (i == 6019) {
                 val i_149_ = anIntArray1149!![--anInt1173]
-                val i_150_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260.method1838(-32350)
+                val i_150_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!!!.method1838(-32350)
                 if (i_149_ != i_150_) {
                     if (Class334.method2653(true, Class240.anInt4674)) {
                         if (i_150_ == 0 && Class267.anInt3428 != -1) {
@@ -1540,7 +1540,7 @@ object Class66 {
                 return
             }
             if (i == 6021) {
-                val i_151_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7250.method1778(-32350)
+                val i_151_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(-32350)
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7264), if (anIntArray1149!![--anInt1173] == 1) 0 else i_151_)
                 Class348_Sub40_Sub9.method3072((-118).toByte())
                 return
@@ -1614,7 +1614,7 @@ object Class66 {
                 return
             }
             if (i == 6035) {
-                val i_157_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255.method1840(-32350)
+                val i_157_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350)
                 Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7261), if (anIntArray1149!![--anInt1173] == 1) 1 else i_157_)
                 Class348_Sub20.method2953((-110).toByte())
                 method3072(125.toByte())
@@ -1634,7 +1634,7 @@ object Class66 {
             }
             if (i == 6038) {
                 val i_158_ = anIntArray1149!![--anInt1173]
-                val i_159_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245.method1838(-32350)
+                val i_159_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350)
                 if (i_158_ != i_159_ && Class267.anInt3428 == Class345.anInt4270) {
                     if (!Class334.method2653(true, Class240.anInt4674)) {
                         if (i_159_ == 0) {
@@ -1655,7 +1655,7 @@ object Class66 {
             if (i == 6039) {
                 var i_160_ = anIntArray1149!![--anInt1173]
                 if (i_160_ > 255 || i_160_ < 0) i_160_ = 0
-                if (i_160_ != Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257.method1805(-32350)) {
+                if (i_160_ != Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(-32350)) {
                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257), i_160_)
                     method243(37)
                     r.aBoolean9719 = false
@@ -1664,7 +1664,7 @@ object Class66 {
             }
             if (i == 6040) {
                 val i_161_ = anIntArray1149!![--anInt1173]
-                if (i_161_ != Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222.method1727(-32350)) {
+                if (i_161_ != Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)) {
                     Class316.aClass348_Sub51_3959!!.method3429(74.toByte(), (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222), i_161_)
                     method243(37)
                     r.aBoolean9719 = false
@@ -1674,67 +1674,67 @@ object Class66 {
             }
         } else if (i < 6200) {
             if (i == 6101) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub10_7232.method1764(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350)
                 return
             }
             if (i == 6102) {
-                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255.method1840(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub27_7255!!.method1840(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6103) {
-                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7250.method1778(-32350) == 2) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub14_7250!!.method1778(-32350) == 2) 1 else 0)
                 return
             }
             if (i == 6105) {
-                anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220.method1737(-32350) == 1) 1 else 0
+                anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) == 1) 1 else 0
                 return
             }
             if (i == 6107) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub13_7236.method1776(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
                 return
             }
             if (i == 6108) {
-                anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub1_7246.method1720(-32350) == 1) 1 else 0
+                anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub1_7246!!.method1720(-32350) == 1) 1 else 0
                 return
             }
             if (i == 6110) {
-                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270.method1812(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1812(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6111) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238.method1748(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
                 return
             }
             if (i == 6112) {
-                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230.method1845(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6114) {
-                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259.method1800(-32350) == 2) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) 1 else 0)
                 return
             }
             if (i == 6115) {
-                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247.method1789(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1789(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6116) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7248.method1808(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350)
                 return
             }
             if (i == 6117) {
-                anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub5_7240.method1739(-32350) == 1) 1 else 0
+                anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub5_7240!!.method1739(-32350) == 1) 1 else 0
                 return
             }
             if (i == 6118) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272.method1838(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7272!!.method1838(-32350)
                 return
             }
             if (i == 6119) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260.method1838(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350)
                 return
             }
             if (i == 6120) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7234.method1838(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7234!!.method1838(-32350)
                 return
             }
             if (i == 6123) {
@@ -1742,35 +1742,35 @@ object Class66 {
                 return
             }
             if (i == 6124) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216.method1808(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350)
                 return
             }
             if (i == 6125) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226.method1743(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1743(-32350)
                 return
             }
             if (i == 6127) {
-                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243.method1771(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!!!.method1771(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6128) {
-                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub22_7253.method1815(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub22_7253!!.method1815(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6129) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub13_7236.method1776(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub13_7236!!.method1776(-32350)
                 return
             }
             if (i == 6130) {
-                anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub9_7256.method1759(-32350) == 1) 1 else 0
+                anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1759(-32350) == 1) 1 else 0
                 return
             }
             if (i == 6131) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
                 return
             }
             if (i == 6132) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251.method1829(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1829(-32350)
                 return
             }
             if (i == 6133) {
@@ -1778,27 +1778,27 @@ object Class66 {
                 return
             }
             if (i == 6135) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub17_7263.method1798(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub17_7263!!.method1798(-32350)
                 return
             }
             if (i == 6136) {
-                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235.method1820(-32350) == 1) 1 else 0)
+                anIntArray1149!![anInt1173++] = (if (Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(-32350) == 1) 1 else 0)
                 return
             }
             if (i == 6138) {
-                anIntArray1149!![anInt1173++] = method1781(Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350), -84, 200)
+                anIntArray1149!![anInt1173++] = method1781(Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350), -84, 200)
                 return
             }
             if (i == 6139) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231.method1818(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
                 return
             }
             if (i == 6142) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215.method1838(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7215!!.method1838(-32350)
                 return
             }
             if (i == 6143) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245.method1838(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350)
                 return
             }
             if (i == 6144) {
@@ -1806,11 +1806,11 @@ object Class66 {
                 return
             }
             if (i == 6145) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257.method1805(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub19_7257!!.method1805(-32350)
                 return
             }
             if (i == 6146) {
-                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222.method1727(-32350)
+                anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
                 return
             }
             if (i == 6147) {
@@ -1929,7 +1929,7 @@ object Class66 {
                         else {
                             Class130.aBoolean1899 = true
                             val class348_sub47 = method2148((Class348_Sub23_Sub2.aClass351_9034), (Class348_Sub23_Sub2.aClass77_9029), -115)
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeInt(101.toByte(), Class5_Sub1.anInt8349)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(101.toByte(), Class5_Sub1.anInt8349)
                             Class348_Sub42_Sub14.method3243(118, class348_sub47)
                             anIntArray1149!![anInt1173++] = 0
                             return
@@ -2314,7 +2314,7 @@ object Class66 {
             } else if (i < 7100) {
                 if (i == 7000) {
                     val i_221_ = method2478(1000)
-                    Class64_Sub3.anInt5584 = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271.method1829(-32350)
+                    Class64_Sub3.anInt5584 = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)
                     anIntArray1149!![anInt1173++] = Class64_Sub3.anInt5584
                     anIntArray1149!![anInt1173++] = i_221_
                     Class348_Sub20.method2953((-113).toByte())
@@ -2369,7 +2369,7 @@ object Class66 {
                     return
                 }
                 if (i == 7007) {
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub29_7229.method1848(-32350)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub29_7229!!.method1848(-32350)
                     return
                 }
             } else if (i < 7200) {
@@ -2400,136 +2400,136 @@ object Class66 {
                 }
             } else if (i < 7300) {
                 if (i == 7201) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220.method1736(123)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1736(123)) 1 else 0
                     return
                 }
                 if (i == 7202) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270.method1809(117)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1809(117)) 1 else 0
                     return
                 }
                 if (i == 7203) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238.method1747(111)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1747(111)) 1 else 0
                     return
                 }
                 if (i == 7204) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259.method1801(125)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1801(125)) 1 else 0
                     return
                 }
                 if (i == 7205) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216.method1806(108) && Class348_Sub8.aHa6654!!.method3699()) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1806(108) && Class348_Sub8.aHa6654!!.method3699()) 1 else 0
                     return
                 }
                 if (i == 7206) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub15_7224.method1786(93)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub15_7224!!.method1786(93)) 1 else 0
                     return
                 }
                 if (i == 7207) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226.method1744(103)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1744(103)) 1 else 0
                     return
                 }
                 if (i == 7208) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243.method1774(120) && Class348_Sub8.aHa6654!!.method3627()) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1774(120) && Class348_Sub8.aHa6654!!.method3627()) 1 else 0
                     return
                 }
                 if (i == 7209) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub9_7256.method1757(115)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1757(115)) 1 else 0
                     return
                 }
                 if (i == 7210) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235.method1824(124)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1824(124)) 1 else 0
                     return
                 }
                 if (i == 7211) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231.method1817(108)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1817(108)) 1 else 0
                     return
                 }
                 if (i == 7212) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247.method1790(94)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1790(94)) 1 else 0
                     return
                 }
                 if (i == 7213) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222.method1729(91)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1729(91)) 1 else 0
                     return
                 }
                 if (i == 7214) {
-                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251.method1831(95)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1831(95)) 1 else 0
                     return
                 }
             } else if (i < 7400) {
                 if (i == 7301) {
                     val i_226_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220.method1714(3, i_226_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1714(3, i_226_)
                     return
                 }
                 if (i == 7302) {
                     val i_227_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270.method1714(3, i_227_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub21_7270!!.method1714(3, i_227_)
                     return
                 }
                 if (i == 7303) {
                     val i_228_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238.method1714(3, i_228_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1714(3, i_228_)
                     return
                 }
                 if (i == 7304) {
                     val i_229_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259.method1714(3, i_229_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1714(3, i_229_)
                     return
                 }
                 if (i == 7305) {
                     val i_230_ = anIntArray1149!![--anInt1173]
                     if (Class348_Sub8.aHa6654!!.method3699()) {
-                        anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216.method1714(3, i_230_)
+                        anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1714(3, i_230_)
                         return
                     } else anIntArray1149!![anInt1173++] = 3
                     return
                 }
                 if (i == 7306) {
                     val i_231_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub15_7224.method1714(3, i_231_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub15_7224!!.method1714(3, i_231_)
                     return
                 }
                 if (i == 7307) {
                     val i_232_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226.method1714(3, i_232_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub6_7226!!.method1714(3, i_232_)
                     return
                 }
                 if (i == 7308) {
                     val i_233_ = anIntArray1149!![--anInt1173]
                     if (Class348_Sub8.aHa6654!!.method3627()) {
-                        anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243.method1714(3, i_233_)
+                        anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub12_7243!!.method1714(3, i_233_)
                         return
                     } else anIntArray1149!![anInt1173++] = 3
                     return
                 }
                 if (i == 7309) {
                     val i_234_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub9_7256.method1714(3, i_234_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub9_7256!!.method1714(3, i_234_)
                     return
                 }
                 if (i == 7310) {
                     val i_235_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235.method1714(3, i_235_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1714(3, i_235_)
                     return
                 }
                 if (i == 7311) {
                     val i_236_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231.method1714(3, i_236_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1714(3, i_236_)
                     return
                 }
                 if (i == 7312) {
                     val i_237_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247.method1714(3, i_237_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub16_7247!!.method1714(3, i_237_)
                     return
                 }
                 if (i == 7313) {
                     val i_238_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222.method1714(3, i_238_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!!!.method1714(3, i_238_)
                     return
                 }
                 if (i == 7314) {
                     val i_239_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251.method1714(3, i_239_)
+                    anIntArray1149!![anInt1173++] = Class316.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1714(3, i_239_)
                     return
                 }
             }
@@ -2664,12 +2664,12 @@ object Class66 {
             }
             anInt1158++
             val class348_sub47 = method2148(Class205.aClass351_2686, Class348_Sub23_Sub2.aClass77_9029, -88)
-            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-            val i_243_ = (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197)
-            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, i_241_)
-            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, i_242_)
-            method3544((class348_sub47.aClass348_Sub49_Sub2_7116), -101, string)
-            class348_sub47.aClass348_Sub49_Sub2_7116.method3339(119, (class348_sub47.aClass348_Sub49_Sub2_7116.anInt7197) - i_243_)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+            val i_243_ = (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_241_)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, i_242_)
+            method3544((class348_sub47.aClass348_Sub49_Sub2_7116!!), -101, string)
+            class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(119, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) - i_243_)
             Class348_Sub42_Sub14.method3243(124, class348_sub47)
         }
     }
@@ -3739,7 +3739,7 @@ object Class66 {
                     if (method468(string, 73)) i_304_ = Class348_Sub41.method3156(true, string)
                     anInt1163++
                     val class348_sub47 = method2148((Class348_Sub14.aClass351_6764), (Class348_Sub23_Sub2.aClass77_9029), -112)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeInt(102.toByte(), i_304_)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(102.toByte(), i_304_)
                     Class348_Sub42_Sub14.method3243(116, class348_sub47)
                     return
                 }
@@ -3747,8 +3747,8 @@ object Class66 {
                     val string = aStringArray1152!![--anInt1170]!!
                     anInt1162++
                     val class348_sub47 = method2148(Class340.aClass351_4225, (Class348_Sub23_Sub2.aClass77_9029), -96)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, string.length + 1)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string.length + 1)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                     Class348_Sub42_Sub14.method3243(-81, class348_sub47)
                     return
                 }
@@ -3756,8 +3756,8 @@ object Class66 {
                     val string = aStringArray1152!![--anInt1170]!!
                     anInt1153++
                     val class348_sub47 = method2148((Class348_Sub40_Sub5.aClass351_9130), (Class348_Sub23_Sub2.aClass77_9029), -93)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, string.length + 1)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeString((-5).toByte(), string)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, string.length + 1)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeString((-5).toByte(), string)
                     Class348_Sub42_Sub14.method3243(35, class348_sub47)
                     return
                 }
@@ -3788,7 +3788,7 @@ object Class66 {
                     val i_311_ = anIntArray1149!![--anInt1173]
                     anInt1167++
                     val class348_sub47 = method2148((Class348_Sub40_Sub12.aClass351_9189), (Class348_Sub23_Sub2.aClass77_9029), -121)
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), i_311_)
+                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_311_)
                     Class348_Sub42_Sub14.method3243(122, class348_sub47)
                     return
                 }

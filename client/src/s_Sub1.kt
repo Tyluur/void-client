@@ -454,7 +454,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         }
     }
 
-    override fun method3984(i: Int, i_95_: Int, i_96_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_97_: Int, i_98_: Int) {
+    override fun method3984(i: Int, i_95_: Int, i_96_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_97_: Int, i_98_: Int) {
         val class101_sub1 = aHa_Sub1_8217.aClass101_Sub1_7492!!
         anInt8228 = i_97_
         aFloat8212 = class101_sub1.aFloat5672
@@ -471,7 +471,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         aFloat8218 = class101_sub1.aFloat5681
         for (i_99_ in 0..<i_96_ + i_96_) {
             for (i_100_ in 0..<i_96_ + i_96_) {
-                if (bools[i_99_]!![i_100_]) {
+                if (bools!!!![i_99_]!![i_100_]) {
                     val i_101_ = i - i_96_ + i_99_
                     val i_102_ = i_95_ - i_96_ + i_100_
                     if (i_101_ >= 0 && i_101_ < this.anInt4587 && i_102_ >= 0 && i_102_ < this.anInt4590) method3992(i_101_, i_102_, i_98_)
@@ -1160,7 +1160,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         }
     }
 
-    override fun method3983(i: Int, i_248_: Int, i_249_: Int, bools: Array<BooleanArray?>, bool: Boolean, i_250_: Int) {
+    override fun method3983(i: Int, i_248_: Int, i_249_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_250_: Int) {
         val class101_sub1 = aHa_Sub1_8217.aClass101_Sub1_7492!!
         anInt8228 = -1
         aFloat8212 = class101_sub1.aFloat5672
@@ -1177,7 +1177,7 @@ class s_Sub1(private val aHa_Sub1_8217: ha_Sub1, i: Int, private val anInt8223: 
         aFloat8218 = class101_sub1.aFloat5681
         for (i_251_ in 0..<i_249_ + i_249_) {
             for (i_252_ in 0..<i_249_ + i_249_) {
-                if (bools[i_251_]!![i_252_]) {
+                if (bools!![i_251_]!![i_252_]) {
                     val i_253_ = i - i_249_ + i_251_
                     val i_254_ = i_248_ - i_249_ + i_252_
                     if (i_253_ >= 0 && i_253_ < this.anInt4587 && i_254_ >= 0 && i_254_ < this.anInt4590) method3992(i_253_, i_254_, i_250_)

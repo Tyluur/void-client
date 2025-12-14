@@ -49,7 +49,7 @@ class Class295 internal constructor(string: String?, string_4_: String?, string_
             val class348_sub9 = ((Class348_Sub42_Sub16_Sub2.aClass356_10465!!.method3480(player.anInt10290.toLong(), -6008)) as Class348_Sub9?)
             if (class348_sub9 != null) {
                 if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
-                    Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
+                    Class348_Sub43.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                     class348_sub9.aClass348_Sub16_Sub5_6676 = null
                 }
                 class348_sub9.method2715(82.toByte())

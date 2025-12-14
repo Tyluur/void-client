@@ -142,7 +142,7 @@ class Class286_Sub5 internal constructor(var_ha_Sub2: ha_Sub2, class83: Class83?
         fun method2158(i: Byte) {
             anInt6256++
             var i_0_ = 0
-            if (Class316.aClass348_Sub51_3959 != null) i_0_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231.method1818(-32350)
+            if (Class316.aClass348_Sub51_3959 != null) i_0_ = Class316.aClass348_Sub51_3959!!.aClass239_Sub23_7231!!.method1818(-32350)
             if (i.toInt() == 56) {
                 if (i_0_ == 2) {
                     val i_1_ = (min(Class272.anInt3473, 800))

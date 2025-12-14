@@ -92,7 +92,7 @@ class Class45 internal constructor(class314: Class314, bool: Boolean, i: Int) {
         else {
             is_14_ = Class50_Sub1.method461(true, anObjectArray656!![i_9_], 53146732)!!
             val class348_sub49 = Class348_Sub49(is_14_)
-            class348_sub49.method3367(607818341, `is`, 5, (class348_sub49.aByteArray7154).size)
+            class348_sub49.method3367(607818341, `is`, 5, (class348_sub49.aByteArray7154)!!.size)
         }
         val is_15_: ByteArray?
         try {

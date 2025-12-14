@@ -189,7 +189,7 @@ class Class318_Sub1_Sub1_Sub2 internal constructor(var_ha: ha?, class51: Class51
                 this.x = i_21_
                 aByte9980 = i_24_.toByte()
                 aShort9991 = class51.anInt941.toShort()
-                aBoolean9988 = (var_ha!!.method3682() && class51.aBoolean894 && !aBoolean9983 && Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238.method1748(-32350) != 0)
+                aBoolean9988 = (var_ha!!.method3682() && class51.aBoolean894 && !aBoolean9983 && Class316.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 var i_26_ = 2048
                 if (aBoolean9989) i_26_ = i_26_ or 0x10000
                 val class2 = method2401(var_ha, i_26_, aBoolean9988, 22)

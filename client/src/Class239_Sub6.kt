@@ -17,13 +17,13 @@ class Class239_Sub6 : Class239 {
     fun method1744(i: Int): Boolean {
         if (i <= 85) method1743(-113)
         anInt5903++
-        val i_0_ = this.aClass348_Sub51_3136.method3428((-93).toByte()).method1458(-23688)
+        val i_0_ = this.aClass348_Sub51_3136.method3428((-93).toByte())!!.method1458(-23688)
         return i_0_ >= 96
     }
 
     override fun method1716(bool: Boolean) {
         anInt5897++
-        val i = this.aClass348_Sub51_3136.method3428((-105).toByte()).method1458(-23688)
+        val i = this.aClass348_Sub51_3136.method3428((-105).toByte())!!.method1458(-23688)
         if (i < 96) this.anInt3138 = 0
         if (bool != false) aClass355_5900 = null
         if (this.anInt3138 > 1 && i < 128) this.anInt3138 = 1
@@ -33,7 +33,7 @@ class Class239_Sub6 : Class239 {
 
     override fun method1714(i: Int, i_1_: Int): Int {
         anInt5899++
-        val i_2_ = this.aClass348_Sub51_3136.method3428((-104).toByte()).method1458(i xor 0x5c84.inv())
+        val i_2_ = this.aClass348_Sub51_3136.method3428((-104).toByte())!!.method1458(i xor 0x5c84.inv())
         if (i_2_ < 96) return 3
         if (i_1_ > 1 && i_2_ < 128) return 3
         if (i_1_ > i && i_2_ < 192) return 3

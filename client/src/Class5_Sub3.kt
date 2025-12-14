@@ -100,32 +100,32 @@ class Class5_Sub3 internal constructor(class45: Class45?, class45_4_: Class45, c
                                 if (i == 1) {
                                     Class127.anInt4657++
                                     val class348_sub47 = (method2148(Class239_Sub9.aClass351_5929, Class348_Sub23_Sub2.aClass77_9029, i_5_ + 7158))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, `is`[i_7_])
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((-75).toByte(), 0)
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, `is`[i_7_])
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-75).toByte(), 0)
                                     Class348_Sub42_Sub14.method3243(i_5_ xor 0x1c2a, class348_sub47)
                                 } else if (i == 4) {
                                     Class318_Sub1_Sub4_Sub1.anInt10073++
                                     val class348_sub47 = (method2148(Class52.aClass351_4905, Class348_Sub23_Sub2.aClass77_9029, -88))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShort(107.toByte(), `is`[i_7_])
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((-128).toByte(), 0)
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), `is`[i_7_])
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-128).toByte(), 0)
                                     Class348_Sub42_Sub14.method3243(126, class348_sub47)
                                 } else if (i == 5) {
                                     Class216.anInt4979++
                                     val class348_sub47 = (method2148(Class348_Sub42_Sub18.aClass351_9684, Class348_Sub23_Sub2.aClass77_9029, -83))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(81, `is`[i_7_])
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(81, `is`[i_7_])
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     Class348_Sub42_Sub14.method3243(-112, class348_sub47)
                                 } else if (i == 6) {
                                     Class296.anInt3768++
                                     val class348_sub47 = (method2148(Class251.aClass351_3232, Class348_Sub23_Sub2.aClass77_9029, -83))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0)
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-119, `is`[i_7_])
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-119, `is`[i_7_])
                                     Class348_Sub42_Sub14.method3243(i_5_ + 7281, class348_sub47)
                                 } else if (i == 7) {
                                     Class369_Sub2.anInt8588++
                                     val class348_sub47 = (method2148(Class348_Sub42_Sub5.aClass351_9533, Class348_Sub23_Sub2.aClass77_9029, -116))
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(i_5_ xor 0x1c2c, `is`[i_7_])
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd(92.toByte(), 0)
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(i_5_ xor 0x1c2c, `is`[i_7_])
+                                    class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(92.toByte(), 0)
                                     Class348_Sub42_Sub14.method3243(127, class348_sub47)
                                 }
                                 break
