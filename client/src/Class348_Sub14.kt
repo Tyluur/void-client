@@ -169,7 +169,7 @@ class Class348_Sub14 : Class348 {
                                 while ((RuntimeException_Sub1.anInt4600 > i_33_)) {
                                     val i_34_ = i_16_ + i_32_
                                     val i_35_ = i_33_ + i_17_
-                                    val i_36_ = (class361!!.anIntArrayArray4438[(-class361.anInt4453 + i_34_)][(-class361.anInt4441 + i_35_)])
+                                    val i_36_ = (class361!!.anIntArrayArray4438!![(-class361.anInt4453 + i_34_)]!![(-class361.anInt4441 + i_35_)])
                                     if ((0x40240000 and i_36_) != 0) var_ha.method3675(4, (-125).toByte(), i_32_ * 4 + i_18_, -4 + (RuntimeException_Sub1.anInt4600 + -i_33_) * 4 + i_19_, 4, -1713569622)
                                     else if ((0x800000 and i_36_) == 0) {
                                         if ((i_36_ and 0x2000000) != 0) var_ha.method3660(3 + (i_18_ - -(i_32_ * 4)), -1713569622, 4, (-4 + (4 * (-i_33_ + (RuntimeException_Sub1.anInt4600)) + i_19_)), true)
@@ -226,7 +226,7 @@ class Class348_Sub14 : Class348 {
                                                 var i_44_ = i_37_
                                                 var i_45_ = i_38_
                                                 if (bool_43_) {
-                                                    val is_46_ = (Class348_Sub45.aClass361Array7108!![i_39_]!!.anIntArrayArray4438)
+                                                    val is_46_ = (Class348_Sub45.aClass361Array7108!![i_39_]!!.anIntArrayArray4438)!!
                                                     val i_47_ = (Class348_Sub45.aClass361Array7108!![i_39_]!!.anInt4453)
                                                     val i_48_ = (Class348_Sub45.aClass361Array7108!![i_39_]!!.anInt4441)
                                                     for (i_49_ in 0..9) {

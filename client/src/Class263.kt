@@ -185,7 +185,7 @@ class Class263 internal constructor(class230: Class230?, i: Int, bool: Boolean, 
             Class367_Sub11.anIntArray7397!![i_16_] = i_10_
             var i_17_ = 0
             Class205.anIntArray2694!![i_16_++] = i_11_
-            val `is` = class361.anIntArrayArray4438
+            val `is` = class361.anIntArrayArray4438!!
             while (i_16_ != i_17_) {
                 i_11_ = Class205.anIntArray2694!![i_17_]
                 i_10_ = Class367_Sub11.anIntArray7397!![i_17_]

@@ -1,25 +1,21 @@
 /* Class364 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
-
-public final class Class364 {
-    int anInt4466;
-    static int anInt4467;
-    static int anInt4468;
-    static int anInt4469;
-
-    public final String toString() {
-        anInt4467++;
-        throw new IllegalStateException();
+* Visit http://jode.sourceforge.net/
+*/
+class Class364 internal constructor(string: String?, var anInt4466: Int) {
+    override fun toString(): String {
+        anInt4467++
+        throw IllegalStateException()
     }
 
-    static final void method3517(int i) {
-        if (i <= 35) method3517(98);
-        anInt4468++;
-        Class375.aClass60_4543.method590(0);
-    }
+    companion object {
+        var anInt4467: Int = 0
+        var anInt4468: Int = 0
+        var anInt4469: Int = 0
 
-    Class364(String string, int i) {
-        this.anInt4466 = i;
+        fun method3517(i: Int) {
+            if (i <= 35) method3517(98)
+            anInt4468++
+            Class375.aClass60_4543!!.method590(0)
+        }
     }
 }

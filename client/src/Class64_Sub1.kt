@@ -260,7 +260,7 @@ class Class64_Sub1 : Class64 {
                 class64_sub1_7_.aClass360Array5360 = class64_sub1_8_.aClass360Array5360
             } else class64_sub1_7_.aClass360Array5360 = class64_sub1_8_.aClass360Array5360
             if (aClass360Array5360 != null) {
-                for (i_25_ in 0..<anInt5387) class64_sub1_7_.aClass360Array5360!![i_25_] = Class360(aClass360Array5360!![i_25_])
+                for (i_25_ in 0..<anInt5387) class64_sub1_7_.aClass360Array5360!![i_25_] = Class360(aClass360Array5360!![i_25_]!!)
             } else class64_sub1_7_.aClass360Array5360 = null
             if (aClass41Array5385 != null) {
                 if (class64_sub1_8_.aClass41Array5385 == null || class64_sub1_8_.aClass41Array5385!!.size < anInt5351) {

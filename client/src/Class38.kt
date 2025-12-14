@@ -162,7 +162,7 @@ class Class38 {
                                 if (index > HISTORY_INDEX) {
                                     HISTORY_INDEX = index
                                     Class363.aString4461 = parts[1]!!.substring(4)
-                                    Class348_Sub38.anInt7006 = Class363.aString4461.length
+                                    Class348_Sub38.anInt7006 = Class363.aString4461!!.length
                                     break
                                 }
                             }
@@ -178,7 +178,7 @@ class Class38 {
                             if (parts.size == 2 && parts[1]!!.startsWith("-->")) {
                                 HISTORY_INDEX = index
                                 Class363.aString4461 = parts[1]!!.substring(4)
-                                Class348_Sub38.anInt7006 = Class363.aString4461.length
+                                Class348_Sub38.anInt7006 = Class363.aString4461!!.length
                                 found = true
                                 break
                             }
@@ -201,55 +201,55 @@ class Class38 {
                             }
                         } else if (i_7_ != 67 || (0x4 and i_8_) == 0) {
                             if (i_7_ != 85 || Class348_Sub38.anInt7006 <= 0) {
-                                if (i_7_ == 101 && (Class348_Sub38.anInt7006 < Class363.aString4461.length)) {
+                                if (i_7_ == 101 && (Class348_Sub38.anInt7006 < Class363.aString4461!!.length)) {
                                     if ((0x4 and i_8_) == 0) {
-                                        Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + (Class363.aString4461.substring(Class348_Sub38.anInt7006 - -1)))
+                                        Class363.aString4461 = ((Class363.aString4461!!.substring(0, Class348_Sub38.anInt7006)) + (Class363.aString4461!!.substring(Class348_Sub38.anInt7006 - -1)))
                                     } else {
-                                        var index = Class363.aString4461.indexOf(' ', Class348_Sub38.anInt7006 + 1)
+                                        var index = Class363.aString4461!!.indexOf(' ', Class348_Sub38.anInt7006 + 1)
                                         if (index == -1) {
-                                            index = Class363.aString4461.length
+                                            index = Class363.aString4461!!.length
                                         }
-                                        Class363.aString4461 = Class363.aString4461.substring(0, Class348_Sub38.anInt7006) + Class363.aString4461.substring(index)
+                                        Class363.aString4461 = Class363.aString4461!!.substring(0, Class348_Sub38.anInt7006) + Class363.aString4461!!.substring(index)
                                     }
                                 } else if (i_7_ != 96 || Class348_Sub38.anInt7006 <= 0) {
-                                    if (i_7_ == 97 && (Class363.aString4461.length > Class348_Sub38.anInt7006)) {
+                                    if (i_7_ == 97 && (Class363.aString4461!!.length > Class348_Sub38.anInt7006)) {
                                         if ((0x4 and i_8_) == 0) {
                                             Class348_Sub38.anInt7006++
                                         } else {
-                                            val result = Class363.aString4461.indexOf(' ', min(Class348_Sub38.anInt7006 + 1, Class363.aString4461.length - 1))
-                                            Class348_Sub38.anInt7006 = if (result == -1) Class363.aString4461.length else result + 1
+                                            val result = Class363.aString4461!!.indexOf(' ', min(Class348_Sub38.anInt7006 + 1, Class363.aString4461!!.length - 1))
+                                            Class348_Sub38.anInt7006 = if (result == -1) Class363.aString4461!!.length else result + 1
                                         }
                                     } else if (i_7_ == 102) Class348_Sub38.anInt7006 = 0
-                                    else if (i_7_ == 103) Class348_Sub38.anInt7006 = Class363.aString4461.length
+                                    else if (i_7_ == 103) Class348_Sub38.anInt7006 = Class363.aString4461!!.length
                                     else if (i_7_ != 104 || (Class260.anInt3312 >= (Class286_Sub1.aStringArray6200)!!.size)) {
                                         if (i_7_ == 105 && Class260.anInt3312 > 0) {
                                             Class260.anInt3312--
                                             method159(-615751774)
-                                            Class348_Sub38.anInt7006 = Class363.aString4461.length
+                                            Class348_Sub38.anInt7006 = Class363.aString4461!!.length
                                         } else if (Npc.method2446(c, 105.toByte()) || c.code == 92 || c.code == 47 || c.code == 46 || c.code == 58 || c.code == 44 || c.code == 32 || c.code == 95 || c.code == 45 || c.code == 43 || c.code == 91 || c.code == 93) {
-                                            Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + Class348_Sub42_Sub5.anInterface6Array9534!![i_6_]!!.method28(23.toByte()) + (Class363.aString4461.substring(Class348_Sub38.anInt7006)))
+                                            Class363.aString4461 = ((Class363.aString4461!!.substring(0, Class348_Sub38.anInt7006)) + Class348_Sub42_Sub5.anInterface6Array9534!![i_6_]!!.method28(23.toByte()) + (Class363.aString4461!!.substring(Class348_Sub38.anInt7006)))
                                             Class348_Sub38.anInt7006++
                                         }
                                     } else {
                                         Class260.anInt3312++
                                         method159(-615751774)
-                                        Class348_Sub38.anInt7006 = Class363.aString4461.length
+                                        Class348_Sub38.anInt7006 = Class363.aString4461!!.length
                                     }
                                 } else {
                                     if ((0x4 and i_8_) == 0) {
                                         Class348_Sub38.anInt7006--
                                     } else {
-                                        Class348_Sub38.anInt7006 = max(Class363.aString4461.lastIndexOf(' ', Class348_Sub38.anInt7006 - 2) + 1, 0)
+                                        Class348_Sub38.anInt7006 = max(Class363.aString4461!!.lastIndexOf(' ', Class348_Sub38.anInt7006 - 2) + 1, 0)
                                     }
                                 }
                             } else {
                                 if ((0x4 and i_8_) == 0) {
-                                    Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006 - 1)) + Class363.aString4461.substring(Class348_Sub38.anInt7006))
+                                    Class363.aString4461 = ((Class363.aString4461!!.substring(0, Class348_Sub38.anInt7006 - 1)) + Class363.aString4461!!.substring(Class348_Sub38.anInt7006))
                                     Class348_Sub38.anInt7006--
                                 } else {
-                                    var index = Class363.aString4461.trim { it <= ' ' }.lastIndexOf(' ', Class348_Sub38.anInt7006)
+                                    var index = Class363.aString4461!!.trim { it <= ' ' }.lastIndexOf(' ', Class348_Sub38.anInt7006)
                                     index++
-                                    Class363.aString4461 = Class363.aString4461.substring(0, index)
+                                    Class363.aString4461 = Class363.aString4461!!.substring(0, index)
                                     Class348_Sub38.anInt7006 = index
                                 }
                             }

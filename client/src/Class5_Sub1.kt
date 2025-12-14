@@ -139,7 +139,7 @@ open class Class5_Sub1(class45: Class45, class45_0_: Class45, class369_sub3: Cla
             var i_23_ = 0
             Class367_Sub11.anIntArray7397!![i_22_] = i_16_
             Class205.anIntArray2694!![i_22_++] = i_17_
-            val `is` = class361.anIntArrayArray4438
+            val `is` = class361.anIntArrayArray4438!!
             while (i_22_ != i_23_) {
                 i_17_ = Class205.anIntArray2694!![i_23_]
                 i_16_ = Class367_Sub11.anIntArray7397!![i_23_]

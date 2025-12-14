@@ -69,7 +69,7 @@ class Class189 {
             Class367_Sub11.anIntArray7397!![i_21_] = i_15_
             var i_22_ = 0
             Class205.anIntArray2694!![i_21_++] = i_16_
-            val `is` = class361.anIntArrayArray4438
+            val `is` = class361.anIntArrayArray4438!!
             while_56_@ while (i_22_ != i_21_) {
                 i_16_ = Class205.anIntArray2694!![i_22_]
                 i_15_ = Class367_Sub11.anIntArray7397!![i_22_]
