@@ -3112,7 +3112,7 @@ class Class64_Sub3 : Class64 {
                     i_716_ += i_718_
                 }
                 anIntArray5528!![class124.anInt1821] = i_716_
-                val class358 = method565(255, anInt5632, class124, `is`)
+                val class358 = method565(255, anInt5632, class124, `is`)!!
                 val class347s: Array<Class347?> = arrayOfNulls<Class347>(class124.anInt1817)
                 var i_719_ = 0
                 while (class124.anInt1817 > i_719_) {
@@ -3248,10 +3248,10 @@ class Class64_Sub3 : Class64 {
                                 val i_780_ = (class124.aShortArray1863[i_735_])
                                 val i_781_ = (class124.aShortArray1835!![i_735_])
                                 val i_782_ = (class124.aShortArray1855[i_735_])
-                                val i_783_ = (class358.anIntArray4416[i_737_])
-                                val i_784_ = (class358.anIntArray4415[i_737_])
-                                val i_785_ = (class358.anIntArray4414[i_737_])
-                                val fs = (class358.aFloatArrayArray4412[i_737_])
+                                val i_783_ = (class358.anIntArray4416!![i_737_])
+                                val i_784_ = (class358.anIntArray4415!![i_737_])
+                                val i_785_ = (class358.anIntArray4414!![i_737_])
+                                val fs = (class358.aFloatArrayArray4412!![i_737_])!!
                                 val i_786_ = (class124.aByteArray1853[i_737_])
                                 val f_787_ = ((class124.anIntArray1867[i_737_]).toFloat() / 256.0f)
                                 if (i_748_.toInt() == 1) {

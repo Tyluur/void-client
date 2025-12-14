@@ -31,8 +31,8 @@ object Class164 {
     @JvmStatic
     fun method1277(i: Byte) {
         anInt2175++
-        Class351.aClass60_4327.method590(i + -62)
-        Class358.aClass60_4417.method590(0)
+        Class351.aClass60_4327!!.method590(i + -62)
+        Class358.aClass60_4417!!.method590(0)
         Class239_Sub24.aClass60_6096!!.method590(0)
         if (i.toInt() != 62) method1277(43.toByte())
         Class348_Sub40_Sub9.aClass60_9171!!.method590(0)

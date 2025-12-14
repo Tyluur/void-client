@@ -378,7 +378,7 @@ class Class46 {
                 val i_25_ = i
                 if (class17 != null) i = i or class17.method263(i_24_, 106, i_21_, true)
                 val l = (this.anInt753 + ((this.anInt770 shl 16) + (var_ha!!.anInt4567 shl 29))).toLong()
-                var class64 = Class358.aClass60_4417.method583(l, -90) as Class64?
+                var class64 = Class358.aClass60_4417!!.method583(l, -90) as Class64?
                 if (class64 == null || var_ha.method3667(class64.ua(), i) != 0) {
                     if (class64 != null) i = var_ha.method3679(i, class64.ua())
                     val class124 = Class300.method2277(0, (Class348_Sub40_Sub28.aClass45_9365!!), this.anInt753, -1)
@@ -388,7 +388,7 @@ class Class46 {
                     }
                     if (class124.anInt1830 < 13) class124.method1092(2, 114)
                     class64 = var_ha.method3625(class124, i, Class14_Sub3.anInt8628, 64, 768)
-                    Class358.aClass60_4417.method582(class64, l, (-125).toByte())
+                    Class358.aClass60_4417!!.method582(class64, l, (-125).toByte())
                 }
                 if (class17 != null) class64 = class17.method269(-101, class64, i_24_, i_22_, i, i_21_)
                 class64!!.s(i_25_)
@@ -807,7 +807,7 @@ class Class46 {
         anInt819++
         Class348_Sub42_Sub13.aBoolean9616 = false
         val l = ((this.anInt809.toLong() shl 40) + (((if (this.aBoolean790) 1L else 0L) shl 38) + ((this.anInt672.toLong() shl 36) + ((if (this.aBoolean745) 1L else 0L) shl 35))) + (this.anInt756.toLong() + ((if (!this.aBoolean735) 0L else 1L) shl 39)))
-        var class105 = Class351.aClass60_4327.method583(l, -71) as Class105?
+        var class105 = Class351.aClass60_4327!!.method583(l, -71) as Class105?
         if (i > -27) method434(true)
         if (class105 != null) return class105
         val class207 = Class207.method1521(Class318_Sub1_Sub3.aClass45_8755!!, this.anInt756, 0)
@@ -823,7 +823,7 @@ class Class46 {
         if (this.anInt672 >= 2) class207.method1515(16777215)
         if (this.anInt809 != 0) class207.method1511(0xffffff.inv() or this.anInt809)
         class105 = var_ha.method3691(class207, true)
-        Class351.aClass60_4327.method580(31902, class105, l, (class105!!.method971() * class105.method969() * 4))
+        Class351.aClass60_4327!!.method580(31902, class105, l, (class105!!.method971() * class105.method969() * 4))
         return class105
     }
 
@@ -969,7 +969,7 @@ class Class46 {
             method3102(22385)
             Class44.method386((-106).toByte())
             Class163.method1271(0)
-            Class353.aClass60_4346.method587(-108)
+            Class353.aClass60_4346!!.method587(-108)
             Class328_Sub2.aClass60_6517!!.method587(-109)
             Class348_Sub1_Sub1.aClass60_8807!!.method587(-113)
             Class34.aClass60_463!!.method587(-83)

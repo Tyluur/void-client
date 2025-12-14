@@ -793,7 +793,7 @@ abstract class Class318_Sub1_Sub3_Sub3 : Class318_Sub1_Sub3(0, 0, 0, 0, 0, 0, 0,
             if (i_0_ != -1) aBoolean10238 = false
             Class14_Sub3.anInt8628 = i
             anInt10272++
-            Class358.aClass60_4417.method590(0)
+            Class358.aClass60_4417!!.method590(0)
         }
 
         @JvmStatic

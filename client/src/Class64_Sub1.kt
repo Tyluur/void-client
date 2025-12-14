@@ -305,7 +305,7 @@ class Class64_Sub1 : Class64 {
                 for (i_33_ in 0..<anInt5389) class64_sub1_7_.aClass350Array5363!![i_33_] = aClass350Array5363!![i_33_]!!.method3453(true)
             } else {
                 class64_sub1_7_.aClass350Array5363 = class64_sub1_8_.aClass350Array5363
-                for (i_34_ in 0..<anInt5389) class64_sub1_7_.aClass350Array5363!![i_34_]!!.method3454(aClass350Array5363!![i_34_], true)
+                for (i_34_ in 0..<anInt5389) class64_sub1_7_.aClass350Array5363!![i_34_]!!.method3454(aClass350Array5363!![i_34_]!!, true)
             }
         } else class64_sub1_7_.aClass350Array5363 = aClass350Array5363
         if (aFloatArrayArray5314 == null || (i and 0x10) == 0) {
@@ -3421,7 +3421,7 @@ class Class64_Sub1 : Class64 {
         }
         aFloatArrayArray5314 = arrayOfNulls<FloatArray>(anInt5351)
         aFloatArrayArray5345 = arrayOfNulls<FloatArray>(anInt5351)
-        val class358 = method565(255, anInt5351, class124, `is`)
+        val class358 = method565(255, anInt5351, class124, `is`)!!
         val class167: Class167 = aHa_Sub1_5353.method3724(Thread.currentThread())!!
         val fs = class167.aFloatArray2226!!
         var bool_802_ = false
@@ -3498,10 +3498,10 @@ class Class64_Sub1 : Class64 {
                         val i_841_ = aShortArray5317[i_804_]
                         val i_842_ = aShortArray5394[i_804_]
                         val i_843_ = aShortArray5364[i_804_]
-                        val i_844_ = class358.anIntArray4416[i_805_]
-                        val i_845_ = class358.anIntArray4415[i_805_]
-                        val i_846_ = class358.anIntArray4414[i_805_]
-                        val fs_847_ = (class358.aFloatArrayArray4412[i_805_])
+                        val i_844_ = class358.anIntArray4416!![i_805_]
+                        val i_845_ = class358.anIntArray4415!![i_805_]
+                        val i_846_ = class358.anIntArray4414!![i_805_]
+                        val fs_847_ = (class358.aFloatArrayArray4412!![i_805_])!!
                         val i_848_ = class124.aByteArray1853[i_805_]
                         val f = ((class124.anIntArray1867[i_805_]).toFloat() / 256.0f)
                         if (i_810_.toInt() == 1) {

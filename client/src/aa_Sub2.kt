@@ -54,7 +54,7 @@ class aa_Sub2 : aa {
             anInt5195++
             if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false
             if (Class225.anInt2946 < 100) return false
-            val i_3_ = Class354.anIntArrayArrayArray4356[i][i_0_][i_2_]
+            val i_3_ = Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_]
             if (i_3_ == -Class234.anInt3049) return false
             if (Class234.anInt3049 == i_3_) return true
             if (Class332.aSArray4142 == aa_Sub1.Companion.aSArray5191) return false
@@ -75,10 +75,10 @@ class aa_Sub2 : aa {
                 ))
             ) {
                 Class348_Sub23_Sub2.anInt9039++
-                Class354.anIntArrayArrayArray4356[i][i_0_][i_2_] = Class234.anInt3049
+                Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = Class234.anInt3049
                 return true
             }
-            Class354.anIntArrayArrayArray4356[i][i_0_][i_2_] = -Class234.anInt3049
+            Class354.anIntArrayArrayArray4356!![i]!![i_0_]!![i_2_] = -Class234.anInt3049
             return false
         }
 

@@ -25,11 +25,11 @@ object Class16 {
                     if ((class318_sub1_sub3.aShort8743.toInt() == i) && (class318_sub1_sub3.aShort8750).toInt() == i_0_) class318_sub1_sub3.plane--
                     class148 = class148.aClass148_2038
                 }
-                if (class357_2_.aClass318_Sub1_Sub1_4402 != null) class357_2_.aClass318_Sub1_Sub1_4402.plane--
-                if (class357_2_.aClass318_Sub1_Sub4_4406 != null) class357_2_.aClass318_Sub1_Sub4_4406.plane--
-                if (class357_2_.aClass318_Sub1_Sub4_4403 != null) class357_2_.aClass318_Sub1_Sub4_4403.plane--
-                if (class357_2_.aClass318_Sub1_Sub5_4395 != null) class357_2_.aClass318_Sub1_Sub5_4395.plane--
-                if (class357_2_.aClass318_Sub1_Sub5_4407 != null) class357_2_.aClass318_Sub1_Sub5_4407.plane--
+                if (class357_2_.aClass318_Sub1_Sub1_4402 != null) class357_2_.aClass318_Sub1_Sub1_4402!!.plane--
+                if (class357_2_.aClass318_Sub1_Sub4_4406 != null) class357_2_.aClass318_Sub1_Sub4_4406!!.plane--
+                if (class357_2_.aClass318_Sub1_Sub4_4403 != null) class357_2_.aClass318_Sub1_Sub4_4403!!.plane--
+                if (class357_2_.aClass318_Sub1_Sub5_4395 != null) class357_2_.aClass318_Sub1_Sub5_4395!!.plane--
+                if (class357_2_.aClass318_Sub1_Sub5_4407 != null) class357_2_.aClass318_Sub1_Sub5_4407!!.plane--
             }
         }
         if (Class147.aClass357ArrayArrayArray2029!![0]!![i]!![i_0_] == null) {

@@ -212,20 +212,20 @@ class Class367_Sub4 internal constructor(var_ha_Sub3: ha_Sub3) : Class367(var_ha
                             if (bool_24_ && class357s[i_26_]!![i_19_]!![i_22_] != null) {
                                 if ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406) != null) {
                                     val i_27_ = Class359.method3492(i_20_, 226)
-                                    if (((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406.aShort8759).toInt() == i_27_) || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_27_ == (class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403.aShort8759).toInt()))) {
+                                    if (((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_27_) || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_27_ == (class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt()))) {
                                         i_26_++
                                         continue
                                     }
                                     if (i_21_ != 0) {
                                         val i_28_ = Class359.method3492(i_21_, 226)
-                                        if (((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406.aShort8759).toInt() == i_28_) || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403.aShort8759).toInt() == i_28_))) {
+                                        if (((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_28_) || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt() == i_28_))) {
                                             i_26_++
                                             continue
                                         }
                                     }
                                     if (i_23_ != 0) {
                                         val i_29_ = Class359.method3492(i_23_, 226)
-                                        if ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406.aShort8759).toInt() == i_29_ || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_29_ == (class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403.aShort8759).toInt()))) {
+                                        if ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4406!!.aShort8759).toInt() == i_29_ || ((class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403) != null && (i_29_ == (class357s[i_26_]!![i_19_]!![i_22_]!!.aClass318_Sub1_Sub4_4403!!.aShort8759).toInt()))) {
                                             i_26_++
                                             continue
                                         }

@@ -116,7 +116,7 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
                 }
             }
             val class348_sub3s: Array<Class348_Sub3?> = arrayOfNulls<Class348_Sub3>(aClass356_8325!!.method3474(1))
-            aClass356_8325!!.method3477(3, class348_sub3s)
+            aClass356_8325!!.method3477(3, class348_sub3s as Array<Class348?>)
             for (i in class348_sub3s.indices) class348_sub3s[i]!!.method2736((-57).toByte(), anInt8329)
             var i = 20
             if (anIntArrayArrayArray8314 != null) i += 4

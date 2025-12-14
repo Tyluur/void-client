@@ -119,7 +119,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
                 for (i_33_ in 1..<this.anInt4590) `is`[i]!![i_33_] = ((aByteArrayArray8273!![i]!![1 + i_33_].toInt() shr 3) + (aByteArrayArray8273!![i]!![-1 + i_33_].toInt() shr 2) + ((aByteArrayArray8273!![i + 1]!![i_33_].toInt() shr 3) + ((aByteArrayArray8273!![i - 1]!![i_33_].toInt() shr 2) + (aByteArrayArray8273!![i]!![i_33_].toInt() shr 1)))).toByte()
             }
             aClass348_Sub20Array8282 = arrayOfNulls<Class348_Sub20>(aClass356_8278!!.method3474(1))
-            aClass356_8278!!.method3477(3, aClass348_Sub20Array8282)
+            aClass356_8278!!.method3477(3, aClass348_Sub20Array8282 as Array<Class348?>)
             run {
                 var i = 0
                 while (aClass348_Sub20Array8282!!.size > i) {

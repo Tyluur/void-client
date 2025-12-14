@@ -79,7 +79,7 @@ class Class89 internal constructor(class377: Class377?, l: Long, class39s: Array
                             i_14_ = Class239_Sub1.aShortArrayArray5847!![i_17_]!![i_18_]
                             i_15_ = (Class348_Sub1_Sub2.aByteArrayArray8816!![i_17_]!![i_18_])
                         }
-                        if (!bool && (class357.aClass318_Sub1_Sub1_4402 != null) && (class357.aClass318_Sub1_Sub1_4402.aShort8727) > i_16_) i_16_ = (class357.aClass318_Sub1_Sub1_4402.aShort8727)
+                        if (!bool && (class357.aClass318_Sub1_Sub1_4402 != null) && (class357.aClass318_Sub1_Sub1_4402!!.aShort8727) > i_16_) i_16_ = (class357.aClass318_Sub1_Sub1_4402!!.aShort8727)
                     }
                 }
             }

@@ -155,7 +155,7 @@ class Class348_Sub41 : Class348() {
                     }
                     if (bool_24_) {
                         Class348_Sub32.Companion.anInt6930 = Class282.aClass356_3654!!.method3474(1)
-                        Class282.aClass356_3654!!.method3477(3, Class348_Sub40_Sub23.aClass348_Sub22Array9319)
+                        Class282.aClass356_3654!!.method3477(3, Class348_Sub40_Sub23.aClass348_Sub22Array9319!! as Array<Class348?>)
                     }
                 }
                 if (i_15_ > 122) {

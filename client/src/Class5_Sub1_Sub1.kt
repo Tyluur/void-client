@@ -16,7 +16,7 @@ class Class5_Sub1_Sub1 internal constructor(class45: Class45, class45_0_: Class4
         @JvmField
         var anInt9928: Int = 0
         @JvmField
-        var aClass207Array9929: Array<Class207?>? = null
+        var aClass207Array9929: Array<Class207>? = null
         @JvmField
         var anInt9930: Int = 0
         @JvmField

@@ -3594,7 +3594,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                             }
                             var class105s = Class348_Sub45.aClass105Array7107
                             if (i_324_ != -1) {
-                                var class105s_326_ = ((Class353.aClass60_4346.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<Class105?>?)
+                                var class105s_326_ = ((Class353.aClass60_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<Class105?>?)
                                 if (class105s_326_ == null) {
                                     val class207s = Class207.method1519(Class21.aClass45_322!!, i_324_, 0)
                                     if (class207s != null) {
@@ -3604,7 +3604,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
                                             class105s_326_[i_327_] = (Class348_Sub8.aHa6654!!.method3691(class207s[i_327_], true))
                                             i_327_++
                                         }
-                                        Class353.aClass60_4346.method582(class105s_326_, i_324_.toLong(), (-94).toByte())
+                                        Class353.aClass60_4346!!.method582(class105s_326_, i_324_.toLong(), (-94).toByte())
                                     }
                                 }
                                 if (class105s_326_ != null && class105s_326_.size >= 2) class105s = class105s_326_

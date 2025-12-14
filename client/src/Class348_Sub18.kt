@@ -145,7 +145,7 @@ class Class348_Sub18 internal constructor(private val anInt6815: Int, private va
                 Class126.aClass45_4984!!.method412(85.toByte())
                 Class136.aClass45_4796!!.method412(93.toByte())
                 Class146.aClass45_2015!!.method412((-122).toByte())
-                Class353.aClass60_4346.method590(0)
+                Class353.aClass60_4346!!.method590(0)
                 Class328_Sub2.aClass60_6517!!.method590(0)
                 Class348_Sub1_Sub1.aClass60_8807!!.method590(0)
                 Class34.aClass60_463!!.method590(0)
