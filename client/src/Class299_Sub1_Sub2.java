@@ -14,16 +14,16 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
     static int anInt8704;
     static int anInt8705;
     static Class351 aClass351_8706 = new Class351(79, 3);
-    private ha_Sub2 aHa_Sub2_8707;
+    private OpenGLToolkit aOpenGLToolkit_8707;
 
     final boolean method2261(Class258_Sub2 class258_sub2, float f, int i, Class258_Sub2 class258_sub2_0_) {
         try {
             anInt8703++;
             boolean bool = true;
-            Class206 class206 = aHa_Sub2_8707.aClass206_7778;
-            aHa_Sub2_8707.K(Class348_Sub6.anIntArray6635);
-            aHa_Sub2_8707.la();
-            aHa_Sub2_8707.method3755(-32);
+            Class206 class206 = aOpenGLToolkit_8707.aClass206_7778;
+            aOpenGLToolkit_8707.K(Class348_Sub6.anIntArray6635);
+            aOpenGLToolkit_8707.la();
+            aOpenGLToolkit_8707.method3755(-32);
             OpenGL.glMatrixMode(5889);
             OpenGL.glLoadIdentity();
             OpenGL.glOrtho(0.0, 1.0, 0.0, 1.0, -1.0, 1.0);
@@ -31,19 +31,19 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
             OpenGL.glLoadIdentity();
             OpenGL.glPushAttrib(2048);
             OpenGL.glViewport(0, 0, aClass258_Sub2_8701.anInt8538, aClass258_Sub2_8701.anInt8538);
-            aHa_Sub2_8707.method3807(false, i + -65532);
-            aHa_Sub2_8707.method3728(false, i + -65411);
-            aHa_Sub2_8707.method3752(114, false);
-            aHa_Sub2_8707.method3748(i + -65534, false);
-            aHa_Sub2_8707.method3757(-2, -91);
-            aHa_Sub2_8707.method3738(-15039, 1);
-            aHa_Sub2_8707.method3749(f, 0.0F, 0.0F, (byte) 110, 0.0F);
-            aHa_Sub2_8707.method3729(34165, (byte) -115, 34165);
-            aHa_Sub2_8707.method3771((byte) -95, class258_sub2_0_);
-            aHa_Sub2_8707.method3738(-15039, 0);
-            aHa_Sub2_8707.method3761(0, 1);
-            aHa_Sub2_8707.method3771((byte) -90, class258_sub2);
-            aHa_Sub2_8707.method3773(i ^ ~0xfffe, class206);
+            aOpenGLToolkit_8707.method3807(false, i + -65532);
+            aOpenGLToolkit_8707.method3728(false, i + -65411);
+            aOpenGLToolkit_8707.method3752(114, false);
+            aOpenGLToolkit_8707.method3748(i + -65534, false);
+            aOpenGLToolkit_8707.method3757(-2, -91);
+            aOpenGLToolkit_8707.method3738(-15039, 1);
+            aOpenGLToolkit_8707.method3749(f, 0.0F, 0.0F, (byte) 110, 0.0F);
+            aOpenGLToolkit_8707.method3729(34165, (byte) -115, 34165);
+            aOpenGLToolkit_8707.method3771((byte) -95, class258_sub2_0_);
+            aOpenGLToolkit_8707.method3738(-15039, 0);
+            aOpenGLToolkit_8707.method3761(0, 1);
+            aOpenGLToolkit_8707.method3771((byte) -90, class258_sub2);
+            aOpenGLToolkit_8707.method3773(i ^ ~0xfffe, class206);
             for (int i_1_ = 0; i_1_ < 6; i_1_++) {
                 int i_2_ = 34069 + i_1_;
                 class206.method1498(0, i + -65591, i_2_, aClass258_Sub2_8701);
@@ -161,16 +161,16 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
                 }
             }
             class206.method1500(2983, 0);
-            aHa_Sub2_8707.method3770(-422613672, class206);
-            aHa_Sub2_8707.method3738(i + -80573, 1);
+            aOpenGLToolkit_8707.method3770(-422613672, class206);
+            aOpenGLToolkit_8707.method3738(i + -80573, 1);
             if (i != 65534) return true;
-            aHa_Sub2_8707.method3771((byte) -95, null);
-            aHa_Sub2_8707.method3729(8448, (byte) 121, 8448);
-            aHa_Sub2_8707.method3738(-15039, 0);
-            aHa_Sub2_8707.method3771((byte) -88, null);
+            aOpenGLToolkit_8707.method3771((byte) -95, null);
+            aOpenGLToolkit_8707.method3729(8448, (byte) 121, 8448);
+            aOpenGLToolkit_8707.method3738(-15039, 0);
+            aOpenGLToolkit_8707.method3771((byte) -88, null);
             OpenGL.glPopAttrib();
-            aHa_Sub2_8707.KA(Class348_Sub6.anIntArray6635[0], Class348_Sub6.anIntArray6635[1], Class348_Sub6.anIntArray6635[2], Class348_Sub6.anIntArray6635[3]);
-            if (bool && !aHa_Sub2_8707.aBoolean7847) aClass258_Sub2_8701.method1950(69);
+            aOpenGLToolkit_8707.KA(Class348_Sub6.anIntArray6635[0], Class348_Sub6.anIntArray6635[1], Class348_Sub6.anIntArray6635[2], Class348_Sub6.anIntArray6635[3]);
+            if (bool && !aOpenGLToolkit_8707.aBoolean7847) aClass258_Sub2_8701.method1950(69);
             return bool;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qda.L(" + (class258_sub2 != null ? "{...}" : "null") + ',' + f + ',' + i + ',' + (class258_sub2_0_ != null ? "{...}" : "null") + ')'));
@@ -184,7 +184,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
     }
 
     final int method2262(int i) {
-        if (i != 65534) aHa_Sub2_8707 = null;
+        if (i != 65534) aOpenGLToolkit_8707 = null;
         anInt8699++;
         return aClass258_Sub2_8701.anInt8538;
     }
@@ -214,8 +214,8 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
         aClass351_8706 = null;
     }
 
-    Class299_Sub1_Sub2(ha_Sub2 var_ha_Sub2, int i) {
-        aHa_Sub2_8707 = var_ha_Sub2;
-        aClass258_Sub2_8701 = new Class258_Sub2(var_ha_Sub2, 6408, i);
+    Class299_Sub1_Sub2(OpenGLToolkit var_openGLToolkit, int i) {
+        aOpenGLToolkit_8707 = var_openGLToolkit;
+        aClass258_Sub2_8701 = new Class258_Sub2(var_openGLToolkit, 6408, i);
     }
 }

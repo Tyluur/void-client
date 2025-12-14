@@ -3,7 +3,7 @@
  */
 
 final class Class89 {
-    private final Class377 aClass377_1506;
+    private final OpenGLxToolkit aOpenGLxToolkit_1506;
     static long aLong1507;
     static int[] anIntArray1508 = new int[256];
     static int anInt1509;
@@ -30,7 +30,7 @@ final class Class89 {
 
     protected final void finalize() throws Throwable {
         anInt1509++;
-        aClass377_1506.method3966(this.aLong1510, 34192);
+        aOpenGLxToolkit_1506.method3966(this.aLong1510, 34192);
         super.finalize();
     }
 
@@ -100,12 +100,12 @@ final class Class89 {
         if (i == 1) anIntArray1508 = null;
     }
 
-    Class89(Class377 class377, long l, Class39[] class39s) {
+    Class89(OpenGLxToolkit openGLxToolkit, long l, Class39[] class39s) {
         try {
             this.aLong1510 = l;
-            aClass377_1506 = class377;
+            aOpenGLxToolkit_1506 = openGLxToolkit;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lha.<init>(" + (class377 != null ? "{...}" : "null") + ',' + l + ',' + (class39s != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lha.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + l + ',' + (class39s != null ? "{...}" : "null") + ')'));
         }
     }
 

@@ -43,7 +43,7 @@ final class Class297 implements Runnable {
     private static String aString3800;
     private boolean aBoolean3801;
     private Class134 aClass134_3802;
-    static String aString3803;
+    static String osNameLower;
     /*synthetic*/ static Class aClass3804;
     /*synthetic*/ static Class aClass3805;
     /*synthetic*/ static Class aClass3806;
@@ -174,7 +174,7 @@ final class Class297 implements Runnable {
                             ((Class165) anObject3791).method1282((Component) objects[0], (int[]) objects[1], (new Integer(class144.anInt2000)), (new Integer(class144.anInt1999)), (Point) objects[2]);
                         } else if (i == 16) {
                             try {
-                                if (!aString3803.startsWith("win")) throw new Exception();
+                                if (!osNameLower.startsWith("win")) throw new Exception();
                                 String string = ((String) (class144.anObject1996));
                                 if (!(string.startsWith("http://")) && !(string.startsWith("https://"))) throw new Exception();
                                 String string_7_ = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?&=,.%+-_#:/*";
@@ -386,7 +386,7 @@ final class Class297 implements Runnable {
         } catch (Exception exception) {
             aString3784 = "Unknown";
         }
-        aString3803 = aString3784.toLowerCase();
+        osNameLower = aString3784.toLowerCase();
         try {
             aString3780 = System.getProperty("os.arch").toLowerCase();
         } catch (Exception exception) {

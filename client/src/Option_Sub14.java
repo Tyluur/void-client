@@ -70,22 +70,22 @@ final class Option_Sub14 extends Option {
         }
         try {
             Dimension dimension = Class305.aCanvas3869.getSize();
-            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3496.method2063(AnimBase.language, 544), 2, Class348_Sub8.aToolkit6654);
+            Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3496.method2063(AnimBase.language, 544), 2, Class348_Sub8.active);
             Mesh mesh = Class300.method2277(0, aa_Sub3.MODELS, JavaSurface.anInt6923, -1);
             long l = Class62.safeTime(-88);
-            Class348_Sub8.aToolkit6654.la();
+            Class348_Sub8.active.la();
             Class157.aMatrix_2123.method894(0, Class348_Sub23_Sub2.anInt9037, 0);
-            Class348_Sub8.aToolkit6654.setCamera(Class157.aMatrix_2123);
-            Class348_Sub8.aToolkit6654.DA(dimension.width / 2, dimension.height / 2, 512, 512);
-            Class348_Sub8.aToolkit6654.xa(1.0F);
+            Class348_Sub8.active.setCamera(Class157.aMatrix_2123);
+            Class348_Sub8.active.DA(dimension.width / 2, dimension.height / 2, 512, 512);
+            Class348_Sub8.active.xa(1.0F);
             if (i_1_ >= -66) aClass190_5990 = null;
-            Class348_Sub8.aToolkit6654.ZA(16777215, 0.5F, 0.5F, 20.0F, -50.0F, 30.0F);
-            Model model = Class348_Sub8.aToolkit6654.method3625(mesh, 2048, 64, 64, 768);
+            Class348_Sub8.active.ZA(16777215, 0.5F, 0.5F, 20.0F, -50.0F, 30.0F);
+            Model model = Class348_Sub8.active.method3625(mesh, 2048, 64, 64, 768);
             int i_3_ = 0;
             while_80_:
             for (int i_4_ = 0; i_4_ < 500; i_4_++) {
-                Class348_Sub8.aToolkit6654.GA(0);
-                Class348_Sub8.aToolkit6654.ya();
+                Class348_Sub8.active.GA(0);
+                Class348_Sub8.active.ya();
                 for (int i_5_ = 15; i_5_ >= 0; i_5_--) {
                     for (int i_6_ = 0; i_6_ <= i_5_; i_6_++) {
                         Class50_Sub1.aMatrix_5209.method894((int) ((-((float) i_5_ / 2.0F) + (float) i_6_) * (float) Class270.anInt3465), 0, (i_5_ + 1) * Class270.anInt3465);
@@ -95,10 +95,10 @@ final class Option_Sub14 extends Option {
                     }
                 }
             }
-            Class348_Sub8.aToolkit6654.method3633();
+            Class348_Sub8.active.method3633();
             long l_7_ = (long) (1000 * i_3_) / (Class62.safeTime(-86) + -l);
-            Class348_Sub8.aToolkit6654.GA(0);
-            Class348_Sub8.aToolkit6654.ya();
+            Class348_Sub8.active.GA(0);
+            Class348_Sub8.active.ya();
             return (int) l_7_;
         } catch (Throwable throwable) {
             throwable.printStackTrace();

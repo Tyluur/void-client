@@ -11,7 +11,7 @@ final class Sprite_Sub2 extends Sprite {
     private boolean aBoolean8427;
     static int anInt8428;
     private int anInt8429 = 0;
-    private final ha_Sub2 aHa_Sub2_8430;
+    private final OpenGLToolkit aOpenGLToolkit_8430;
     private Class258_Sub3_Sub1 aClass258_Sub3_Sub1_8431;
     private int anInt8432 = 0;
     static int anInt8433;
@@ -70,10 +70,10 @@ final class Sprite_Sub2 extends Sprite {
         float f_22_ = f_1_ - f + f_3_;
         float f_23_ = -f_0_ + f_4_ + f_2_;
         aClass258_Sub3_Sub1_8434.method1957(9728, (i_7_ & 0x1) != 0);
-        aHa_Sub2_8430.method3792(59);
-        aHa_Sub2_8430.method3771((byte) -93, aClass258_Sub3_Sub1_8434);
-        aHa_Sub2_8430.method3753(i_6_, 1);
-        aHa_Sub2_8430.method3761(0, i);
+        aOpenGLToolkit_8430.method3792(59);
+        aOpenGLToolkit_8430.method3771((byte) -93, aClass258_Sub3_Sub1_8434);
+        aOpenGLToolkit_8430.method3753(i_6_, 1);
+        aOpenGLToolkit_8430.method3761(0, i);
         OpenGL.glColor4ub((byte) (i_5_ >> 16), (byte) (i_5_ >> 8), (byte) i_5_, (byte) (i_5_ >> 24));
         OpenGL.glBegin(7);
         OpenGL.glTexCoord2f(0.0F, (aClass258_Sub3_Sub1_8434.aFloat9938));
@@ -100,7 +100,7 @@ final class Sprite_Sub2 extends Sprite {
         OpenGL.glPixelTransferf(3353, 0.499F);
         OpenGL.glPixelTransferf(3354, 0.5F);
         OpenGL.glPixelTransferf(3355, 0.499F);
-        aClass258_Sub3_Sub1_8431 = Class186_Sub1.method1401(aHa_Sub2_8430, i, 34037, aClass258_Sub3_Sub1_8434.anInt9940, i_24_, aClass258_Sub3_Sub1_8434.anInt9939);
+        aClass258_Sub3_Sub1_8431 = Class186_Sub1.method1401(aOpenGLToolkit_8430, i, 34037, aClass258_Sub3_Sub1_8434.anInt9940, i_24_, aClass258_Sub3_Sub1_8434.anInt9939);
         anInt8429 = i_25_;
         OpenGL.glPixelTransferf(3348, 1.0F);
         OpenGL.glPixelTransferf(3349, 0.0F);
@@ -133,14 +133,14 @@ final class Sprite_Sub2 extends Sprite {
         aa_Sub1 var_aa_Sub1 = (aa_Sub1) var_aa;
         Class258_Sub3_Sub1 class258_sub3_sub1 = var_aa_Sub1.aClass258_Sub3_Sub1_5193;
         aClass258_Sub3_Sub1_8434.method1957(9728, false);
-        aHa_Sub2_8430.method3792(75);
-        aHa_Sub2_8430.method3771((byte) -99, aClass258_Sub3_Sub1_8434);
-        aHa_Sub2_8430.method3761(0, 1);
-        aHa_Sub2_8430.method3738(-15039, 1);
-        aHa_Sub2_8430.method3771((byte) -123, class258_sub3_sub1);
-        aHa_Sub2_8430.method3729(7681, (byte) -101, 8448);
-        aHa_Sub2_8430.method3762(34168, 768, (byte) -87, 0);
-        aHa_Sub2_8430.method3753(1, 1);
+        aOpenGLToolkit_8430.method3792(75);
+        aOpenGLToolkit_8430.method3771((byte) -99, aClass258_Sub3_Sub1_8434);
+        aOpenGLToolkit_8430.method3761(0, 1);
+        aOpenGLToolkit_8430.method3738(-15039, 1);
+        aOpenGLToolkit_8430.method3771((byte) -123, class258_sub3_sub1);
+        aOpenGLToolkit_8430.method3729(7681, (byte) -101, 8448);
+        aOpenGLToolkit_8430.method3762(34168, 768, (byte) -87, 0);
+        aOpenGLToolkit_8430.method3753(1, 1);
         i += anInt8447;
         i_31_ += anInt8446;
         int i_34_ = aClass258_Sub3_Sub1_8434.anInt9940 + i;
@@ -166,10 +166,10 @@ final class Sprite_Sub2 extends Sprite {
         OpenGL.glMultiTexCoord2f(33985, f_38_, f_39_);
         OpenGL.glVertex2i((aClass258_Sub3_Sub1_8434.anInt9940) + i, i_31_);
         OpenGL.glEnd();
-        aHa_Sub2_8430.method3762(5890, 768, (byte) -87, 0);
-        aHa_Sub2_8430.method3761(0, 0);
-        aHa_Sub2_8430.method3771((byte) -105, null);
-        aHa_Sub2_8430.method3738(-15039, 0);
+        aOpenGLToolkit_8430.method3762(5890, 768, (byte) -87, 0);
+        aOpenGLToolkit_8430.method3761(0, 0);
+        aOpenGLToolkit_8430.method3771((byte) -105, null);
+        aOpenGLToolkit_8430.method3738(-15039, 0);
     }
 
     final void setOffsets(int i, int i_41_, int i_42_, int i_43_) {
@@ -184,13 +184,13 @@ final class Sprite_Sub2 extends Sprite {
     private final void method991(byte i) {
         anInt8428++;
         if (i == 9) {
-            aHa_Sub2_8430.method3738(-15039, 1);
-            aHa_Sub2_8430.method3771((byte) -78, null);
-            aHa_Sub2_8430.method3729(8448, (byte) -79, 8448);
-            aHa_Sub2_8430.method3762(34168, 768, (byte) -87, 1);
-            aHa_Sub2_8430.method3775(false, 0, 770, 5890);
-            aHa_Sub2_8430.method3738(-15039, 0);
-            aHa_Sub2_8430.method3762(34168, 768, (byte) -87, 1);
+            aOpenGLToolkit_8430.method3738(-15039, 1);
+            aOpenGLToolkit_8430.method3771((byte) -78, null);
+            aOpenGLToolkit_8430.method3729(8448, (byte) -79, 8448);
+            aOpenGLToolkit_8430.method3762(34168, 768, (byte) -87, 1);
+            aOpenGLToolkit_8430.method3775(false, 0, 770, 5890);
+            aOpenGLToolkit_8430.method3738(-15039, 0);
+            aOpenGLToolkit_8430.method3762(34168, 768, (byte) -87, 1);
         }
     }
 
@@ -222,14 +222,14 @@ final class Sprite_Sub2 extends Sprite {
         float f_65_ = -f + f_45_ + f_47_;
         aClass258_Sub3_Sub1_8434.method1957(9728, (0x1 & i) != 0);
         float f_66_ = f_48_ - f_44_ + f_46_;
-        aHa_Sub2_8430.method3792(106);
-        aHa_Sub2_8430.method3771((byte) -123, aClass258_Sub3_Sub1_8434);
-        aHa_Sub2_8430.method3761(0, 1);
-        aHa_Sub2_8430.method3738(-15039, 1);
-        aHa_Sub2_8430.method3771((byte) -98, class258_sub3_sub1);
-        aHa_Sub2_8430.method3729(7681, (byte) -17, 8448);
-        aHa_Sub2_8430.method3762(34168, 768, (byte) -87, 0);
-        aHa_Sub2_8430.method3753(1, 1);
+        aOpenGLToolkit_8430.method3792(106);
+        aOpenGLToolkit_8430.method3771((byte) -123, aClass258_Sub3_Sub1_8434);
+        aOpenGLToolkit_8430.method3761(0, 1);
+        aOpenGLToolkit_8430.method3738(-15039, 1);
+        aOpenGLToolkit_8430.method3771((byte) -98, class258_sub3_sub1);
+        aOpenGLToolkit_8430.method3729(7681, (byte) -17, 8448);
+        aOpenGLToolkit_8430.method3762(34168, 768, (byte) -87, 0);
+        aOpenGLToolkit_8430.method3753(1, 1);
         float f_67_ = (class258_sub3_sub1.aFloat9937 / (float) class258_sub3_sub1.anInt9940);
         float f_68_ = (class258_sub3_sub1.aFloat9938 / (float) class258_sub3_sub1.anInt9939);
         OpenGL.glBegin(7);
@@ -247,10 +247,10 @@ final class Sprite_Sub2 extends Sprite {
         OpenGL.glMultiTexCoord2f(33985, f_67_ * ((float) -i_49_ + f_45_), ((class258_sub3_sub1.aFloat9938) - f_68_ * (f_46_ - (float) i_50_)));
         OpenGL.glVertex2f(f_45_, f_46_);
         OpenGL.glEnd();
-        aHa_Sub2_8430.method3762(5890, 768, (byte) -87, 0);
-        aHa_Sub2_8430.method3761(0, 0);
-        aHa_Sub2_8430.method3771((byte) -84, null);
-        aHa_Sub2_8430.method3738(-15039, 0);
+        aOpenGLToolkit_8430.method3762(5890, 768, (byte) -87, 0);
+        aOpenGLToolkit_8430.method3761(0, 0);
+        aOpenGLToolkit_8430.method3771((byte) -84, null);
+        aOpenGLToolkit_8430.method3738(-15039, 0);
     }
 
     final int scaleWidth() {
@@ -261,14 +261,14 @@ final class Sprite_Sub2 extends Sprite {
     final void method964(int i, int i_69_, int i_70_, int i_71_, int i_72_) {
         aClass258_Sub3_Sub1_8434.method1957(9728, false);
         anInt8425++;
-        aHa_Sub2_8430.method3792(121);
-        aHa_Sub2_8430.method3753(i_72_, 1);
+        aOpenGLToolkit_8430.method3792(121);
+        aOpenGLToolkit_8430.method3753(i_72_, 1);
         OpenGL.glColor4ub((byte) (i_71_ >> 16), (byte) (i_71_ >> 8), (byte) i_71_, (byte) (i_71_ >> 24));
         i += anInt8447;
         i_69_ += anInt8446;
         if (aClass258_Sub3_Sub1_8431 == null) {
-            aHa_Sub2_8430.method3771((byte) -127, aClass258_Sub3_Sub1_8434);
-            aHa_Sub2_8430.method3761(0, i_70_);
+            aOpenGLToolkit_8430.method3771((byte) -127, aClass258_Sub3_Sub1_8434);
+            aOpenGLToolkit_8430.method3761(0, i_70_);
             OpenGL.glBegin(7);
             OpenGL.glTexCoord2f(0.0F, aClass258_Sub3_Sub1_8434.aFloat9938);
             OpenGL.glVertex2i(i, i_69_);
@@ -301,23 +301,23 @@ final class Sprite_Sub2 extends Sprite {
     }
 
     private final void method992(int i, int i_73_) {
-        aHa_Sub2_8430.method3738(-15039, 1);
+        aOpenGLToolkit_8430.method3738(-15039, 1);
         anInt8441++;
-        aHa_Sub2_8430.method3771((byte) -82, aClass258_Sub3_Sub1_8434);
-        aHa_Sub2_8430.method3729(aHa_Sub2_8430.method3781((byte) 17, i), (byte) -61, 7681);
-        aHa_Sub2_8430.method3762(34167, 768, (byte) -87, 1);
+        aOpenGLToolkit_8430.method3771((byte) -82, aClass258_Sub3_Sub1_8434);
+        aOpenGLToolkit_8430.method3729(aOpenGLToolkit_8430.method3781((byte) 17, i), (byte) -61, 7681);
+        aOpenGLToolkit_8430.method3762(34167, 768, (byte) -87, 1);
         if (i_73_ != 3) method964(46, -15, -58, 122, 11);
-        aHa_Sub2_8430.method3775(false, 0, 770, 34168);
-        aHa_Sub2_8430.method3738(-15039, 0);
-        aHa_Sub2_8430.method3771((byte) -108, aClass258_Sub3_Sub1_8431);
-        aHa_Sub2_8430.method3729(34479, (byte) -47, 7681);
-        aHa_Sub2_8430.method3762(34166, 768, (byte) -87, 1);
+        aOpenGLToolkit_8430.method3775(false, 0, 770, 34168);
+        aOpenGLToolkit_8430.method3738(-15039, 0);
+        aOpenGLToolkit_8430.method3771((byte) -108, aClass258_Sub3_Sub1_8431);
+        aOpenGLToolkit_8430.method3729(34479, (byte) -47, 7681);
+        aOpenGLToolkit_8430.method3762(34166, 768, (byte) -87, 1);
         if (anInt8429 != 0) {
-            if (anInt8429 == 1) aHa_Sub2_8430.method3749(0.0F, 0.5F, 0.5F, (byte) 64, 1.0F);
+            if (anInt8429 == 1) aOpenGLToolkit_8430.method3749(0.0F, 0.5F, 0.5F, (byte) 64, 1.0F);
             else if (anInt8429 != 2) {
-                if (anInt8429 == 3) aHa_Sub2_8430.method3749(0.0F, 128.5F, 128.5F, (byte) 63, 128.5F);
-            } else aHa_Sub2_8430.method3749(0.0F, 0.5F, 1.0F, (byte) 95, 0.5F);
-        } else aHa_Sub2_8430.method3749(0.0F, 1.0F, 0.5F, (byte) 50, 0.5F);
+                if (anInt8429 == 3) aOpenGLToolkit_8430.method3749(0.0F, 128.5F, 128.5F, (byte) 63, 128.5F);
+            } else aOpenGLToolkit_8430.method3749(0.0F, 0.5F, 1.0F, (byte) 95, 0.5F);
+        } else aOpenGLToolkit_8430.method3749(0.0F, 1.0F, 0.5F, (byte) 50, 0.5F);
     }
 
     final void method965(int i, int i_74_, int i_75_, int i_76_, int i_77_, int i_78_, int i_79_) {
@@ -325,10 +325,10 @@ final class Sprite_Sub2 extends Sprite {
         int i_80_ = i_75_ + i;
         int i_81_ = i_76_ + i_74_;
         aClass258_Sub3_Sub1_8434.method1957(9728, false);
-        aHa_Sub2_8430.method3792(54);
-        aHa_Sub2_8430.method3771((byte) -88, aClass258_Sub3_Sub1_8434);
-        aHa_Sub2_8430.method3753(i_79_, 1);
-        aHa_Sub2_8430.method3761(0, i_77_);
+        aOpenGLToolkit_8430.method3792(54);
+        aOpenGLToolkit_8430.method3771((byte) -88, aClass258_Sub3_Sub1_8434);
+        aOpenGLToolkit_8430.method3753(i_79_, 1);
+        aOpenGLToolkit_8430.method3761(0, i_77_);
         OpenGL.glColor4ub((byte) (i_78_ >> 16), (byte) (i_78_ >> 8), (byte) i_78_, (byte) (i_78_ >> 24));
         if (aClass258_Sub3_Sub1_8434.aBoolean9941 && !aBoolean8427) {
             float f = (aClass258_Sub3_Sub1_8434.aFloat9938 * (float) i_76_ / (float) (aClass258_Sub3_Sub1_8434.anInt9939));
@@ -419,8 +419,8 @@ final class Sprite_Sub2 extends Sprite {
     final void method982(int i, int i_92_, int i_93_, int i_94_, int i_95_, int i_96_, int i_97_, int i_98_) {
         anInt8443++;
         aClass258_Sub3_Sub1_8434.method1957(9728, (0x1 & i_98_) != 0);
-        aHa_Sub2_8430.method3792(103);
-        aHa_Sub2_8430.method3753(i_97_, 1);
+        aOpenGLToolkit_8430.method3792(103);
+        aOpenGLToolkit_8430.method3753(i_97_, 1);
         OpenGL.glColor4ub((byte) (i_96_ >> 16), (byte) (i_96_ >> 8), (byte) i_96_, (byte) (i_96_ >> 24));
         if (aBoolean8427) {
             float f = (float) i_93_ / (float) scaleWidth();
@@ -430,8 +430,8 @@ final class Sprite_Sub2 extends Sprite {
             float f_102_ = f_100_ + f * (float) aClass258_Sub3_Sub1_8434.anInt9940;
             float f_103_ = (f_101_ + (float) (aClass258_Sub3_Sub1_8434.anInt9939) * f_99_);
             if (aClass258_Sub3_Sub1_8431 == null) {
-                aHa_Sub2_8430.method3771((byte) -85, aClass258_Sub3_Sub1_8434);
-                aHa_Sub2_8430.method3761(0, i_95_);
+                aOpenGLToolkit_8430.method3771((byte) -85, aClass258_Sub3_Sub1_8434);
+                aOpenGLToolkit_8430.method3761(0, i_95_);
                 OpenGL.glBegin(7);
                 OpenGL.glTexCoord2f(0.0F, aClass258_Sub3_Sub1_8434.aFloat9938);
                 OpenGL.glVertex2f(f_100_, f_101_);
@@ -462,8 +462,8 @@ final class Sprite_Sub2 extends Sprite {
                 method991((byte) 9);
             }
         } else if (aClass258_Sub3_Sub1_8431 == null) {
-            aHa_Sub2_8430.method3771((byte) -101, aClass258_Sub3_Sub1_8434);
-            aHa_Sub2_8430.method3761(0, i_95_);
+            aOpenGLToolkit_8430.method3771((byte) -101, aClass258_Sub3_Sub1_8434);
+            aOpenGLToolkit_8430.method3761(0, i_95_);
             OpenGL.glBegin(7);
             OpenGL.glTexCoord2f(0.0F, aClass258_Sub3_Sub1_8434.aFloat9938);
             OpenGL.glVertex2i(i, i_92_);
@@ -503,34 +503,34 @@ final class Sprite_Sub2 extends Sprite {
         }
     }
 
-    Sprite_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_105_, boolean bool) {
+    Sprite_Sub2(OpenGLToolkit var_openGLToolkit, int i, int i_105_, boolean bool) {
         aBoolean8427 = false;
         anInt8446 = 0;
         anInt8447 = 0;
         anInt8449 = 0;
-        aHa_Sub2_8430 = var_ha_Sub2;
-        aClass258_Sub3_Sub1_8434 = Matrix.method904(81, var_ha_Sub2, bool ? 6408 : 6407, i, i_105_);
+        aOpenGLToolkit_8430 = var_openGLToolkit;
+        aClass258_Sub3_Sub1_8434 = Matrix.method904(81, var_openGLToolkit, bool ? 6408 : 6407, i, i_105_);
     }
 
-    Sprite_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_106_, int i_107_, int i_108_) {
+    Sprite_Sub2(OpenGLToolkit var_openGLToolkit, int i, int i_106_, int i_107_, int i_108_) {
         aBoolean8427 = false;
         anInt8446 = 0;
         anInt8447 = 0;
         anInt8449 = 0;
-        aHa_Sub2_8430 = var_ha_Sub2;
-        aClass258_Sub3_Sub1_8434 = Class186_Sub1.method1401(var_ha_Sub2, i, 34037, i_107_, i_106_, i_108_);
+        aOpenGLToolkit_8430 = var_openGLToolkit;
+        aClass258_Sub3_Sub1_8434 = Class186_Sub1.method1401(var_openGLToolkit, i, 34037, i_107_, i_106_, i_108_);
     }
 
-    Sprite_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_109_, int[] is, int i_110_, int i_111_) {
+    Sprite_Sub2(OpenGLToolkit var_openGLToolkit, int i, int i_109_, int[] is, int i_110_, int i_111_) {
         aBoolean8427 = false;
         anInt8446 = 0;
         anInt8447 = 0;
         anInt8449 = 0;
         try {
-            aHa_Sub2_8430 = var_ha_Sub2;
-            aClass258_Sub3_Sub1_8434 = Class348_Sub40_Sub32.method3132(is, i_110_, i_111_, i_109_, i, var_ha_Sub2, false, (byte) 12);
+            aOpenGLToolkit_8430 = var_openGLToolkit;
+            aClass258_Sub3_Sub1_8434 = Class348_Sub40_Sub32.method3132(is, i_110_, i_111_, i_109_, i, var_openGLToolkit, false, (byte) 12);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("nda.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_109_ + ',' + (is != null ? "{...}" : "null") + ',' + i_110_ + ',' + i_111_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("nda.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_109_ + ',' + (is != null ? "{...}" : "null") + ',' + i_110_ + ',' + i_111_ + ')'));
         }
     }
 }

@@ -85,8 +85,8 @@ final class Class164 {
                 if (Class182.loadingScreens[0].percentage(-19079) < 100) return 0;
                 if (Class182.loadingScreens.length > 1 && Class186_Sub1.loadingScreenManager.hasDefault(86) && (Class182.loadingScreens[1].percentage(i + 9581) < 100)) return 0;
             }
-            TimedVarDomain.method1311(5139, Class348_Sub8.aToolkit6654);
-            Class369.method3568(Class348_Sub8.aToolkit6654, 4);
+            TimedVarDomain.method1311(5139, Class348_Sub8.active);
+            Class369.method3568(Class348_Sub8.active, 4);
             Packet.setStep(2, 1);
         }
         if (Class348_Sub42_Sub15.state == LoadState.CREATE_COLLISION_MAPS) {
@@ -191,7 +191,7 @@ final class Class164 {
             RuntimeException_Sub1.method4011(i + 29684, Option.PARTICLES);
             Class348_Sub29.method3004(aa_Sub3.MODELS, false, Class348_Sub40_Sub4.js5TextureSource);
             Class296 codec = new Class296(Class16.HUFFMAN.method391("huffman", "", -29832));
-            ha_Sub3.setHuffman(codec, (byte) 13);
+            NativeToolkit.setHuffman(codec, (byte) 13);
             try {
                 jagmisc.init();
             } catch (Throwable throwable) {
@@ -260,19 +260,19 @@ final class Class164 {
             Class182.loadingScreens = null;
             Class348_Sub32.rendererThread = null;
             Class286_Sub7.LOADING_SPRITES = null;
-            ha_Sub3.method3886(i + 28556);
+            NativeToolkit.method3886(i + 28556);
             Class348_Sub23_Sub2.aBoolean9038 = Class316.clientOptions.safeMode.getValue(-32350) == 1;
             Class316.clientOptions.update((byte) 74, (Class316.clientOptions.safeMode), 1);
             if (Class348_Sub23_Sub2.aBoolean9038) Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 0);
-            else if (Class316.clientOptions.aClass239_Sub25_7251.aBoolean6113 && Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 < 512 && Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 != 0)
+            else if (Class316.clientOptions.aClass239_Sub25_7251.aBoolean6113 && Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory < 512 && Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory != 0)
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 0);
-            Class14_Sub2.method243(i ^ ~0x6fd6);
+            Class14_Sub2.saveOptions(i ^ ~0x6fd6);
             if (Class348_Sub23_Sub2.aBoolean9038) Class367_Sub10.method3553(false, (byte) 108, 0);
             else Class367_Sub10.method3553(false, (byte) 102, Class316.clientOptions.aClass239_Sub25_7251.method1829(-32350));
             Class85.method830(Class316.clientOptions.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
-            TimedVarDomain.method1311(5139, Class348_Sub8.aToolkit6654);
-            Class369.method3568(Class348_Sub8.aToolkit6654, i ^ ~0x6ff7);
-            ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.aToolkit6654, true);
+            TimedVarDomain.method1311(5139, Class348_Sub8.active);
+            Class369.method3568(Class348_Sub8.active, i ^ ~0x6ff7);
+            ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.active, true);
             Matrix.method901(Class113.aSpriteArray1744, 515880227);
         }
         return Class348_Sub40_Sub6.method3063(false);

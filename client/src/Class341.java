@@ -90,7 +90,7 @@ final class Class341 {
     static final void method2681(int i) {
         if (i == 9864) {
             anInt4230++;
-            if (Class348_Sub8.aToolkit6654 != null) {
+            if (Class348_Sub8.active != null) {
                 if (Class59_Sub1.aBoolean5300) QuestTypeList.method1406(true);
                 Class71.aClass76_1208.method775((byte) 69);
                 Class318_Sub1_Sub3_Sub3.method2433();
@@ -120,8 +120,8 @@ final class Class341 {
                 }
                 Class50_Sub1.aMatrix_5209 = null;
                 Class157.aMatrix_2123 = null;
-                Class348_Sub8.aToolkit6654.method3635((byte) 64);
-                Class348_Sub8.aToolkit6654 = null;
+                Class348_Sub8.active.method3635((byte) 64);
+                Class348_Sub8.active = null;
             }
         }
     }

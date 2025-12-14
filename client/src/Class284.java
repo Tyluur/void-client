@@ -31,7 +31,7 @@ final class Class284 {
 
     static final int method2116(int i) {
         anInt3665++;
-        Toolkit var_toolkit = Class348_Sub8.aToolkit6654;
+        Toolkit var_toolkit = Class348_Sub8.active;
         boolean bool = false;
         if (Class316.clientOptions.aClass239_Sub25_7271.method1829(i + -5766) != 0) {
             Canvas canvas = new Canvas();

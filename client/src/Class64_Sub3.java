@@ -77,7 +77,7 @@ final class Class64_Sub3 extends Model {
     private boolean aBoolean5595 = false;
     private Class48[] aClass48Array5596;
     static int anInt5597;
-    private final ha_Sub2 aHa_Sub2_5598;
+    private final OpenGLToolkit aOpenGLToolkit_5598;
     static int anInt5599;
     static String aString5600 = "";
     private short[] aShortArray5601;
@@ -150,21 +150,21 @@ final class Class64_Sub3 extends Model {
         Class64_Sub3 class64_sub3_5_;
         Class64_Sub3 class64_sub3_6_;
         if (i == 1) {
-            class64_sub3_6_ = aHa_Sub2_5598.aClass64_Sub3_7864;
-            class64_sub3_5_ = aHa_Sub2_5598.aClass64_Sub3_7780;
+            class64_sub3_6_ = aOpenGLToolkit_5598.aClass64_Sub3_7864;
+            class64_sub3_5_ = aOpenGLToolkit_5598.aClass64_Sub3_7780;
         } else if (i == 2) {
-            class64_sub3_5_ = aHa_Sub2_5598.aClass64_Sub3_7802;
-            class64_sub3_6_ = aHa_Sub2_5598.aClass64_Sub3_7838;
+            class64_sub3_5_ = aOpenGLToolkit_5598.aClass64_Sub3_7802;
+            class64_sub3_6_ = aOpenGLToolkit_5598.aClass64_Sub3_7838;
         } else if (i == 3) {
-            class64_sub3_6_ = aHa_Sub2_5598.aClass64_Sub3_7803;
-            class64_sub3_5_ = aHa_Sub2_5598.aClass64_Sub3_7821;
+            class64_sub3_6_ = aOpenGLToolkit_5598.aClass64_Sub3_7803;
+            class64_sub3_5_ = aOpenGLToolkit_5598.aClass64_Sub3_7821;
         } else if (i == 4) {
-            class64_sub3_6_ = aHa_Sub2_5598.aClass64_Sub3_7834;
-            class64_sub3_5_ = aHa_Sub2_5598.aClass64_Sub3_7844;
+            class64_sub3_6_ = aOpenGLToolkit_5598.aClass64_Sub3_7834;
+            class64_sub3_5_ = aOpenGLToolkit_5598.aClass64_Sub3_7844;
         } else if (i == 5) {
-            class64_sub3_6_ = aHa_Sub2_5598.aClass64_Sub3_7840;
-            class64_sub3_5_ = aHa_Sub2_5598.aClass64_Sub3_7785;
-        } else class64_sub3_6_ = class64_sub3_5_ = new Class64_Sub3(aHa_Sub2_5598);
+            class64_sub3_6_ = aOpenGLToolkit_5598.aClass64_Sub3_7840;
+            class64_sub3_5_ = aOpenGLToolkit_5598.aClass64_Sub3_7785;
+        } else class64_sub3_6_ = class64_sub3_5_ = new Class64_Sub3(aOpenGLToolkit_5598);
         return method686(class64_sub3_6_, i_4_, 0, bool, class64_sub3_5_, i != 0);
     }
 
@@ -176,16 +176,16 @@ final class Class64_Sub3 extends Model {
             if (aClass270_5575 != null) {
                 if (aClass270_5575.anInterface8_3463 == null) method678((aByte5581 & 0x10) != 0, (byte) 27);
                 if (aClass270_5575.anInterface8_3463 != null) {
-                    aHa_Sub2_5598.method3728(aClass123_5563 != null, 118);
-                    aHa_Sub2_5598.method3794(aClass123_5605, aClass123_5610, -26411, aClass123_5620, aClass123_5563);
+                    aOpenGLToolkit_5598.method3728(aClass123_5563 != null, 118);
+                    aOpenGLToolkit_5598.method3794(aClass123_5605, aClass123_5610, -26411, aClass123_5620, aClass123_5563);
                     int i_7_ = -1 + anIntArray5626.length;
                     for (int i_8_ = 0; i_7_ > i_8_; i_8_++) {
                         int i_9_ = anIntArray5626[i_8_];
                         int i_10_ = anIntArray5626[i_8_ + 1];
                         int i_11_ = aShortArray5601[i_9_] & 0xffff;
                         if (i_11_ == 65535) i_11_ = -1;
-                        aHa_Sub2_5598.method3801(aClass123_5563 != null, i_11_, 125);
-                        aHa_Sub2_5598.method3759((-i_9_ + i_10_) * 3, -128, 4, (aClass270_5575.anInterface8_3463), i_9_ * 3);
+                        aOpenGLToolkit_5598.method3801(aClass123_5563 != null, i_11_, 125);
+                        aOpenGLToolkit_5598.method3759((-i_9_ + i_10_) * 3, -128, 4, (aClass270_5575.anInterface8_3463), i_9_ * 3);
                     }
                 }
             }
@@ -194,12 +194,12 @@ final class Class64_Sub3 extends Model {
     }
 
     private final void method678(boolean bool, byte i) {
-        if (6 * anInt5537 > (aHa_Sub2_5598.aClass348_Sub49_Sub1_7798.aByteArray7154).length) aHa_Sub2_5598.aClass348_Sub49_Sub1_7798 = new Class348_Sub49_Sub1(6 * (anInt5537 - -100));
-        else aHa_Sub2_5598.aClass348_Sub49_Sub1_7798.pos = 0;
+        if (6 * anInt5537 > (aOpenGLToolkit_5598.aClass348_Sub49_Sub1_7798.aByteArray7154).length) aOpenGLToolkit_5598.aClass348_Sub49_Sub1_7798 = new Class348_Sub49_Sub1(6 * (anInt5537 - -100));
+        else aOpenGLToolkit_5598.aClass348_Sub49_Sub1_7798.pos = 0;
         anInt5630++;
         if (i != 27) WA();
-        Class348_Sub49_Sub1 class348_sub49_sub1 = aHa_Sub2_5598.aClass348_Sub49_Sub1_7798;
-        if (aHa_Sub2_5598.aBoolean7775) {
+        Class348_Sub49_Sub1 class348_sub49_sub1 = aOpenGLToolkit_5598.aClass348_Sub49_Sub1_7798;
+        if (aOpenGLToolkit_5598.aBoolean7775) {
             for (int i_12_ = 0; i_12_ < anInt5537; i_12_++) {
                 class348_sub49_sub1.writeShort((byte) 107, aShortArray5592[i_12_]);
                 class348_sub49_sub1.writeShort((byte) 107, aShortArray5579[i_12_]);
@@ -214,10 +214,10 @@ final class Class64_Sub3 extends Model {
         }
         if (class348_sub49_sub1.pos != 0) {
             if (bool) {
-                if (anInterface8_5647 == null) anInterface8_5647 = aHa_Sub2_5598.method3733(5123, -39, (class348_sub49_sub1.pos), (class348_sub49_sub1.aByteArray7154), true);
+                if (anInterface8_5647 == null) anInterface8_5647 = aOpenGLToolkit_5598.method3733(5123, -39, (class348_sub49_sub1.pos), (class348_sub49_sub1.aByteArray7154), true);
                 else anInterface8_5647.method35(class348_sub49_sub1.aByteArray7154, 5123, i ^ 0x23, class348_sub49_sub1.pos);
                 aClass270_5575.anInterface8_3463 = anInterface8_5647;
-            } else aClass270_5575.anInterface8_3463 = (aHa_Sub2_5598.method3733(5123, i + -65, class348_sub49_sub1.pos, class348_sub49_sub1.aByteArray7154, false));
+            } else aClass270_5575.anInterface8_3463 = (aOpenGLToolkit_5598.method3733(5123, i + -65, class348_sub49_sub1.pos, class348_sub49_sub1.aByteArray7154, false));
             if (!bool) aBoolean5555 = true;
         }
     }
@@ -258,7 +258,7 @@ final class Class64_Sub3 extends Model {
         anInt5582++;
         int i_33_ = (Class10.HSL_TO_RGB[Class184.method1384(i_32_, i ^ 0x54b313bc, i_29_)]);
         if (i_31_ != -1) {
-            TextureMetrics textureMetrics = aHa_Sub2_5598.aD4579.getMetrics(i_31_ & 0xffff, -6662);
+            TextureMetrics textureMetrics = aOpenGLToolkit_5598.aD4579.getMetrics(i_31_ & 0xffff, -6662);
             int i_34_ = 0xff & textureMetrics.aByte201;
             if (i_34_ != 0) {
                 int i_35_;
@@ -291,7 +291,7 @@ final class Class64_Sub3 extends Model {
         anInt5551++;
         if (aShortArray5601 == null) return true;
         for (int i = 0; i < aShortArray5601.length; i++) {
-            if (aShortArray5601[i] != -1 && !aHa_Sub2_5598.aD4579.method4(-7953, aShortArray5601[i])) return false;
+            if (aShortArray5601[i] != -1 && !aOpenGLToolkit_5598.aD4579.method4(-7953, aShortArray5601[i])) return false;
         }
         return true;
     }
@@ -454,15 +454,15 @@ final class Class64_Sub3 extends Model {
 
     private final void method682(boolean bool) {
         if (aClass118Array5621 != null) {
-            Class101_Sub3 class101_sub3 = aHa_Sub2_5598.aClass101_Sub3_7729;
-            aHa_Sub2_5598.method3788(-18516);
-            aHa_Sub2_5598.C(!aBoolean5595);
-            aHa_Sub2_5598.method3728(false, 35);
-            aHa_Sub2_5598.method3794(aHa_Sub2_5598.aClass123_7849, null, -26411, aHa_Sub2_5598.aClass123_7833, null);
+            Class101_Sub3 class101_sub3 = aOpenGLToolkit_5598.aClass101_Sub3_7729;
+            aOpenGLToolkit_5598.method3788(-18516);
+            aOpenGLToolkit_5598.C(!aBoolean5595);
+            aOpenGLToolkit_5598.method3728(false, 35);
+            aOpenGLToolkit_5598.method3794(aOpenGLToolkit_5598.aClass123_7849, null, -26411, aOpenGLToolkit_5598.aClass123_7833, null);
             for (int i = 0; i < anInt5536; i++) {
                 Class118 class118 = aClass118Array5621[i];
                 Class48 class48 = aClass48Array5596[i];
-                if (!class118.aBoolean1791 || !aHa_Sub2_5598.method3666()) {
+                if (!class118.aBoolean1791 || !aOpenGLToolkit_5598.method3666()) {
                     float f = ((float) ((anIntArray5543[class118.anInt1782]) + ((anIntArray5543[class118.anInt1788]) + (anIntArray5543[class118.anInt1781]))) * 0.3333333F);
                     float f_90_ = ((float) ((anIntArray5593[class118.anInt1788]) + ((anIntArray5593[class118.anInt1781]) + (anIntArray5593[class118.anInt1782]))) * 0.3333333F);
                     float f_91_ = ((float) ((anIntArray5644[class118.anInt1788]) + (anIntArray5644[class118.anInt1781]) + (anIntArray5644[class118.anInt1782])) * 0.3333333F);
@@ -471,16 +471,16 @@ final class Class64_Sub3 extends Model {
                     float f_94_ = (f * Class318_Sub9_Sub1.aFloat8784 + f_90_ * Class320.aFloat3994 + f_91_ * Class286_Sub8.aFloat6304 + JavaOffscreenSurface.aFloat4720);
                     float f_95_ = ((float) (1.0 / Math.sqrt(f_94_ * f_94_ + (f_93_ * f_93_ + (f_92_ * f_92_)))) * (float) class118.anInt1784);
                     class101_sub3.method939(-f_94_ + f_94_ * f_95_, (class118.aShort1785 * class48.anInt856) >> 7, (-(f_92_ * f_95_) + (f_92_ + (float) class48.anInt854)), (class118.aShort1790 * class48.anInt857) >> 7, class48.anInt853, 90, (f_95_ * f_93_ + (-f_93_ + (float) class48.anInt847)));
-                    aHa_Sub2_5598.method3766((byte) 55, class101_sub3);
+                    aOpenGLToolkit_5598.method3766((byte) 55, class101_sub3);
                     int i_96_ = class48.anInt858;
                     OpenGL.glColor4ub((byte) (i_96_ >> 16), (byte) (i_96_ >> 8), (byte) i_96_, (byte) (i_96_ >> 24));
-                    aHa_Sub2_5598.method3757(class118.aShort1787, -77);
-                    aHa_Sub2_5598.method3753(class118.aByte1789, 1);
-                    aHa_Sub2_5598.method3756(4, 7, 0, 93);
+                    aOpenGLToolkit_5598.method3757(class118.aShort1787, -77);
+                    aOpenGLToolkit_5598.method3753(class118.aByte1789, 1);
+                    aOpenGLToolkit_5598.method3756(4, 7, 0, 93);
                 }
             }
-            aHa_Sub2_5598.C(true);
-            aHa_Sub2_5598.method3734(true);
+            aOpenGLToolkit_5598.C(true);
+            aOpenGLToolkit_5598.method3734(true);
         }
         if (bool != true) aShort5540 = (short) 69;
         anInt5549++;
@@ -524,7 +524,7 @@ final class Class64_Sub3 extends Model {
         try {
             anInt5641++;
             Class101_Sub3 class101_sub3 = (Class101_Sub3) matrix;
-            Class101_Sub3 class101_sub3_112_ = aHa_Sub2_5598.aClass101_Sub3_7760;
+            Class101_Sub3 class101_sub3_112_ = aOpenGLToolkit_5598.aClass101_Sub3_7760;
             float f = (class101_sub3_112_.aFloat5747 + ((class101_sub3.aFloat5751 * class101_sub3_112_.aFloat5781) + ((class101_sub3_112_.aFloat5770 * class101_sub3.aFloat5747) + (class101_sub3.aFloat5772 * (class101_sub3_112_.aFloat5750)))));
             float f_113_ = (class101_sub3_112_.aFloat5772 + ((class101_sub3.aFloat5751 * class101_sub3_112_.aFloat5762) + ((class101_sub3.aFloat5747 * class101_sub3_112_.aFloat5761) + (class101_sub3.aFloat5772 * (class101_sub3_112_.aFloat5769)))));
             Class299_Sub1_Sub1.aFloat8696 = ((class101_sub3_112_.aFloat5781 * class101_sub3.aFloat5754) + ((class101_sub3.aFloat5769 * class101_sub3_112_.aFloat5750) + (class101_sub3_112_.aFloat5770 * class101_sub3.aFloat5750)));
@@ -542,8 +542,8 @@ final class Class64_Sub3 extends Model {
             float f_117_ = -3.4028235E38F;
             float f_118_ = 3.4028235E38F;
             float f_119_ = -3.4028235E38F;
-            int i_120_ = aHa_Sub2_5598.anInt7771;
-            int i_121_ = aHa_Sub2_5598.anInt7794;
+            int i_120_ = aOpenGLToolkit_5598.anInt7771;
+            int i_121_ = aOpenGLToolkit_5598.anInt7794;
             if (!aBoolean5527) method692((byte) -123);
             int i_122_ = -aShort5540 + aShort5586 >> 1;
             int i_123_ = aShort5629 + -aShort5591 >> 1;
@@ -589,12 +589,12 @@ final class Class64_Sub3 extends Model {
                 float f_138_ = (Class286_Sub8.aFloat6304 * f_135_ + (f_137_ * Class318_Sub9_Sub1.aFloat8784 + Class320.aFloat3994 * f_136_) + f_114_);
                 float f_139_ = f_113_ + (ResourceProvider.aFloat3943 * f_137_ + Class252.aFloat3242 * f_136_ + Class215.aFloat2836 * f_135_);
                 float f_140_ = f + (Class299_Sub1_Sub1.aFloat8696 * f_136_ + f_137_ * JavaThreadResource.aFloat2203 + Class313.aFloat3935 * f_135_);
-                if ((float) aHa_Sub2_5598.anInt7826 <= f_138_) {
+                if ((float) aOpenGLToolkit_5598.anInt7826 <= f_138_) {
                     if (i_108_ > 0) f_138_ = (float) i_108_;
-                    float f_141_ = (f_140_ * (float) i_120_ / f_138_ + (float) aHa_Sub2_5598.anInt7853);
+                    float f_141_ = (f_140_ * (float) i_120_ / f_138_ + (float) aOpenGLToolkit_5598.anInt7853);
                     if (f_141_ < f_116_) f_116_ = f_141_;
                     if (f_141_ > f_117_) f_117_ = f_141_;
-                    float f_142_ = (f_139_ * (float) i_121_ / f_138_ + (float) aHa_Sub2_5598.anInt7810);
+                    float f_142_ = (f_139_ * (float) i_121_ / f_138_ + (float) aOpenGLToolkit_5598.anInt7810);
                     if (f_142_ > f_119_) f_119_ = f_142_;
                     bool_115_ = true;
                     if (f_142_ < f_118_) f_118_ = f_142_;
@@ -602,12 +602,12 @@ final class Class64_Sub3 extends Model {
             }
             if (bool_115_ && (float) i_111_ > f_116_ && (float) i_111_ < f_117_ && (float) i_109_ > f_118_ && (float) i_109_ < f_119_) {
                 if (bool) return true;
-                if (anInt5529 > aHa_Sub2_5598.anIntArray7880.length) {
-                    aHa_Sub2_5598.anIntArray7883 = new int[anInt5529];
-                    aHa_Sub2_5598.anIntArray7880 = new int[anInt5529];
+                if (anInt5529 > aOpenGLToolkit_5598.anIntArray7880.length) {
+                    aOpenGLToolkit_5598.anIntArray7883 = new int[anInt5529];
+                    aOpenGLToolkit_5598.anIntArray7880 = new int[anInt5529];
                 }
-                int[] is = aHa_Sub2_5598.anIntArray7880;
-                int[] is_143_ = aHa_Sub2_5598.anIntArray7883;
+                int[] is = aOpenGLToolkit_5598.anIntArray7880;
+                int[] is_143_ = aOpenGLToolkit_5598.anIntArray7883;
                 for (int i_144_ = 0; i_144_ < anInt5557; i_144_++) {
                     float f_145_ = (float) anIntArray5543[i_144_];
                     float f_146_ = (float) anIntArray5644[i_144_];
@@ -615,10 +615,10 @@ final class Class64_Sub3 extends Model {
                     float f_148_ = f_114_ + (f_146_ * Class286_Sub8.aFloat6304 + (Class318_Sub9_Sub1.aFloat8784 * f_145_ + f_147_ * Class320.aFloat3994));
                     float f_149_ = f + (f_147_ * Class299_Sub1_Sub1.aFloat8696 + f_145_ * JavaThreadResource.aFloat2203 + Class313.aFloat3935 * f_146_);
                     float f_150_ = f_113_ + (Class252.aFloat3242 * f_147_ + f_145_ * ResourceProvider.aFloat3943 + f_146_ * Class215.aFloat2836);
-                    if (f_148_ >= (float) aHa_Sub2_5598.anInt7826) {
+                    if (f_148_ >= (float) aOpenGLToolkit_5598.anInt7826) {
                         if (i_108_ > 0) f_148_ = (float) i_108_;
-                        int i_155_ = (int) ((float) (aHa_Sub2_5598.anInt7853) + f_149_ * (float) i_120_ / f_148_);
-                        int i_156_ = (int) ((float) (aHa_Sub2_5598.anInt7810) + (float) i_121_ * f_150_ / f_148_);
+                        int i_155_ = (int) ((float) (aOpenGLToolkit_5598.anInt7853) + f_149_ * (float) i_120_ / f_148_);
+                        int i_156_ = (int) ((float) (aOpenGLToolkit_5598.anInt7810) + (float) i_121_ * f_150_ / f_148_);
                         int i_157_ = anIntArray5528[i_144_];
                         int i_158_ = anIntArray5528[1 + i_144_];
                         for (int i_159_ = i_157_; i_159_ < i_158_; i_159_++) {
@@ -666,27 +666,27 @@ final class Class64_Sub3 extends Model {
             if (!aBoolean5527) method692((byte) -123);
             int i;
             int i_165_;
-            if (aHa_Sub2_5598.anInt7772 > 0) {
-                i = (-(aShort5629 * aHa_Sub2_5598.anInt7772 >> 8) + aShort5540 >> aHa_Sub2_5598.anInt7731);
-                i_165_ = ((aShort5586 + -(aShort5591 * aHa_Sub2_5598.anInt7772 >> 8)) >> aHa_Sub2_5598.anInt7731);
+            if (aOpenGLToolkit_5598.anInt7772 > 0) {
+                i = (-(aShort5629 * aOpenGLToolkit_5598.anInt7772 >> 8) + aShort5540 >> aOpenGLToolkit_5598.anInt7731);
+                i_165_ = ((aShort5586 + -(aShort5591 * aOpenGLToolkit_5598.anInt7772 >> 8)) >> aOpenGLToolkit_5598.anInt7731);
             } else {
-                i = (-(aShort5591 * aHa_Sub2_5598.anInt7772 >> 8) + aShort5540 >> aHa_Sub2_5598.anInt7731);
-                i_165_ = ((aShort5586 + -(aHa_Sub2_5598.anInt7772 * aShort5629 >> 8)) >> aHa_Sub2_5598.anInt7731);
+                i = (-(aShort5591 * aOpenGLToolkit_5598.anInt7772 >> 8) + aShort5540 >> aOpenGLToolkit_5598.anInt7731);
+                i_165_ = ((aShort5586 + -(aOpenGLToolkit_5598.anInt7772 * aShort5629 >> 8)) >> aOpenGLToolkit_5598.anInt7731);
             }
             int i_166_;
             int i_167_;
-            if (aHa_Sub2_5598.anInt7777 > 0) {
-                i_166_ = (-(aHa_Sub2_5598.anInt7777 * aShort5629 >> 8) + aShort5617 >> aHa_Sub2_5598.anInt7731);
-                i_167_ = ((aShort5646 - (aShort5591 * aHa_Sub2_5598.anInt7777 >> 8)) >> aHa_Sub2_5598.anInt7731);
+            if (aOpenGLToolkit_5598.anInt7777 > 0) {
+                i_166_ = (-(aOpenGLToolkit_5598.anInt7777 * aShort5629 >> 8) + aShort5617 >> aOpenGLToolkit_5598.anInt7731);
+                i_167_ = ((aShort5646 - (aShort5591 * aOpenGLToolkit_5598.anInt7777 >> 8)) >> aOpenGLToolkit_5598.anInt7731);
             } else {
-                i_166_ = (-(aHa_Sub2_5598.anInt7777 * aShort5591 >> 8) + aShort5617 >> aHa_Sub2_5598.anInt7731);
-                i_167_ = (-(aHa_Sub2_5598.anInt7777 * aShort5629 >> 8) + aShort5646 >> aHa_Sub2_5598.anInt7731);
+                i_166_ = (-(aOpenGLToolkit_5598.anInt7777 * aShort5591 >> 8) + aShort5617 >> aOpenGLToolkit_5598.anInt7731);
+                i_167_ = (-(aOpenGLToolkit_5598.anInt7777 * aShort5629 >> 8) + aShort5646 >> aOpenGLToolkit_5598.anInt7731);
             }
             int i_168_ = i_165_ - i - -1;
             int i_169_ = -i_166_ + i_167_ - -1;
             r_Sub2 var_r_Sub2 = (r_Sub2) var_r;
             r_Sub2 var_r_Sub2_170_;
-            if (var_r_Sub2 == null || !var_r_Sub2.method3296((byte) -47, i_169_, i_168_)) var_r_Sub2_170_ = new r_Sub2(aHa_Sub2_5598, i_168_, i_169_);
+            if (var_r_Sub2 == null || !var_r_Sub2.method3296((byte) -47, i_169_, i_168_)) var_r_Sub2_170_ = new r_Sub2(aOpenGLToolkit_5598, i_168_, i_169_);
             else {
                 var_r_Sub2_170_ = var_r_Sub2;
                 var_r_Sub2_170_.method3293((byte) 0);
@@ -736,17 +736,17 @@ final class Class64_Sub3 extends Model {
 
     private final void method685(byte i, r_Sub2 var_r_Sub2) {
         try {
-            if (aHa_Sub2_5598.anIntArray7880.length < anInt5529) {
-                aHa_Sub2_5598.anIntArray7883 = new int[anInt5529];
-                aHa_Sub2_5598.anIntArray7880 = new int[anInt5529];
+            if (aOpenGLToolkit_5598.anIntArray7880.length < anInt5529) {
+                aOpenGLToolkit_5598.anIntArray7883 = new int[anInt5529];
+                aOpenGLToolkit_5598.anIntArray7880 = new int[anInt5529];
             }
             anInt5530++;
-            int[] is = aHa_Sub2_5598.anIntArray7880;
+            int[] is = aOpenGLToolkit_5598.anIntArray7880;
             if (i < 91) method619();
-            int[] is_177_ = aHa_Sub2_5598.anIntArray7883;
+            int[] is_177_ = aOpenGLToolkit_5598.anIntArray7883;
             for (int i_178_ = 0; anInt5557 > i_178_; i_178_++) {
-                int i_179_ = ((-((aHa_Sub2_5598.anInt7772 * anIntArray5593[i_178_]) >> 8) + anIntArray5543[i_178_] >> aHa_Sub2_5598.anInt7731) - var_r_Sub2.anInt10489);
-                int i_180_ = (((anIntArray5644[i_178_] + -((aHa_Sub2_5598.anInt7777 * anIntArray5593[i_178_]) >> 8)) >> aHa_Sub2_5598.anInt7731) + -var_r_Sub2.anInt10484);
+                int i_179_ = ((-((aOpenGLToolkit_5598.anInt7772 * anIntArray5593[i_178_]) >> 8) + anIntArray5543[i_178_] >> aOpenGLToolkit_5598.anInt7731) - var_r_Sub2.anInt10489);
+                int i_180_ = (((anIntArray5644[i_178_] + -((aOpenGLToolkit_5598.anInt7777 * anIntArray5593[i_178_]) >> 8)) >> aOpenGLToolkit_5598.anInt7731) + -var_r_Sub2.anInt10484);
                 int i_181_ = anIntArray5528[i_178_];
                 int i_182_ = anIntArray5528[1 + i_178_];
                 for (int i_183_ = i_181_; i_182_ > i_183_; i_183_++) {
@@ -1072,7 +1072,7 @@ final class Class64_Sub3 extends Model {
         try {
             anInt5639++;
             if (anInt5529 != 0) {
-                Class101_Sub3 class101_sub3 = aHa_Sub2_5598.aClass101_Sub3_7760;
+                Class101_Sub3 class101_sub3 = aOpenGLToolkit_5598.aClass101_Sub3_7760;
                 Class101_Sub3 class101_sub3_236_ = (Class101_Sub3) matrix;
                 if (!aBoolean5527) method692((byte) -123);
                 Class320.aFloat3994 = ((class101_sub3_236_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3.aFloat5754 * class101_sub3_236_.aFloat5769) + (class101_sub3.aFloat5784 * class101_sub3_236_.aFloat5754));
@@ -1088,7 +1088,7 @@ final class Class64_Sub3 extends Model {
                     f_238_ = (float) aShort5634 + f_237_;
                     f_239_ = f - (float) aShort5634;
                 }
-                if (!(f_239_ >= aHa_Sub2_5598.aFloat7875) && !((float) aHa_Sub2_5598.anInt7826 >= f_238_)) {
+                if (!(f_239_ >= aOpenGLToolkit_5598.aFloat7875) && !((float) aOpenGLToolkit_5598.anInt7826 >= f_238_)) {
                     Class299_Sub1_Sub1.aFloat8696 = ((class101_sub3.aFloat5781 * class101_sub3_236_.aFloat5754) + ((class101_sub3_236_.aFloat5769 * class101_sub3.aFloat5750) + ((class101_sub3_236_.aFloat5750) * (class101_sub3.aFloat5770))));
                     Class190.aFloat2555 = ((class101_sub3.aFloat5781 * class101_sub3_236_.aFloat5751) + ((class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5750) + (class101_sub3.aFloat5770 * (class101_sub3_236_.aFloat5747))) + class101_sub3.aFloat5747);
                     float f_240_ = (Class190.aFloat2555 + ((float) aShort5591 * Class299_Sub1_Sub1.aFloat8696));
@@ -1096,13 +1096,13 @@ final class Class64_Sub3 extends Model {
                     float f_242_;
                     float f_243_;
                     if (f_240_ > f_241_) {
-                        f_242_ = ((float) aHa_Sub2_5598.anInt7771 * (f_240_ + (float) aShort5634));
-                        f_243_ = ((float) aHa_Sub2_5598.anInt7771 * (f_241_ - (float) aShort5634));
+                        f_242_ = ((float) aOpenGLToolkit_5598.anInt7771 * (f_240_ + (float) aShort5634));
+                        f_243_ = ((float) aOpenGLToolkit_5598.anInt7771 * (f_241_ - (float) aShort5634));
                     } else {
-                        f_243_ = ((float) aHa_Sub2_5598.anInt7771 * ((float) -aShort5634 + f_240_));
-                        f_242_ = ((float) aHa_Sub2_5598.anInt7771 * (f_241_ + (float) aShort5634));
+                        f_243_ = ((float) aOpenGLToolkit_5598.anInt7771 * ((float) -aShort5634 + f_240_));
+                        f_242_ = ((float) aOpenGLToolkit_5598.anInt7771 * (f_241_ + (float) aShort5634));
                     }
-                    if (!(aHa_Sub2_5598.aFloat7835 <= f_243_ / (float) i) && !(f_242_ / (float) i <= aHa_Sub2_5598.aFloat7872)) {
+                    if (!(aOpenGLToolkit_5598.aFloat7835 <= f_243_ / (float) i) && !(f_242_ / (float) i <= aOpenGLToolkit_5598.aFloat7872)) {
                         Class252.aFloat3242 = ((class101_sub3.aFloat5769 * (class101_sub3_236_.aFloat5769)) + ((class101_sub3_236_.aFloat5750) * class101_sub3.aFloat5761) + ((class101_sub3_236_.aFloat5754) * (class101_sub3.aFloat5762)));
                         Class156.aFloat2111 = (class101_sub3.aFloat5772 + ((class101_sub3.aFloat5762 * (class101_sub3_236_.aFloat5751)) + (((class101_sub3.aFloat5769) * (class101_sub3_236_.aFloat5772)) + ((class101_sub3.aFloat5761) * (class101_sub3_236_.aFloat5747)))));
                         float f_244_ = (Class252.aFloat3242 * (float) aShort5591 + Class156.aFloat2111);
@@ -1110,13 +1110,13 @@ final class Class64_Sub3 extends Model {
                         float f_246_;
                         float f_247_;
                         if (f_245_ < f_244_) {
-                            f_247_ = (((float) -aShort5634 + f_245_) * (float) (aHa_Sub2_5598.anInt7794));
-                            f_246_ = ((float) aHa_Sub2_5598.anInt7794 * ((float) aShort5634 + f_244_));
+                            f_247_ = (((float) -aShort5634 + f_245_) * (float) (aOpenGLToolkit_5598.anInt7794));
+                            f_246_ = ((float) aOpenGLToolkit_5598.anInt7794 * ((float) aShort5634 + f_244_));
                         } else {
-                            f_246_ = ((float) aHa_Sub2_5598.anInt7794 * (f_245_ + (float) aShort5634));
-                            f_247_ = ((float) aHa_Sub2_5598.anInt7794 * (f_244_ - (float) aShort5634));
+                            f_246_ = ((float) aOpenGLToolkit_5598.anInt7794 * (f_245_ + (float) aShort5634));
+                            f_247_ = ((float) aOpenGLToolkit_5598.anInt7794 * (f_244_ - (float) aShort5634));
                         }
-                        if (!(f_247_ / (float) i >= aHa_Sub2_5598.aFloat7830) && !(aHa_Sub2_5598.aFloat7836 >= f_246_ / (float) i)) {
+                        if (!(f_247_ / (float) i >= aOpenGLToolkit_5598.aFloat7830) && !(aOpenGLToolkit_5598.aFloat7836 >= f_246_ / (float) i)) {
                             if (class318_sub3 != null || aClass118Array5621 != null) {
                                 ResourceProvider.aFloat3943 = (((class101_sub3_236_.aFloat5770) * (class101_sub3.aFloat5761)) + ((class101_sub3.aFloat5769) * class101_sub3_236_.aFloat5761) + ((class101_sub3_236_.aFloat5756) * (class101_sub3.aFloat5762)));
                                 Class313.aFloat3935 = (((class101_sub3.aFloat5781) * (class101_sub3_236_.aFloat5784)) + ((class101_sub3_236_.aFloat5781 * (class101_sub3.aFloat5770)) + ((class101_sub3.aFloat5750) * (class101_sub3_236_.aFloat5762))));
@@ -1133,21 +1133,21 @@ final class Class64_Sub3 extends Model {
                                 int i_252_ = (int) (JavaOffscreenSurface.aFloat4720 + ((float) i_248_ * (Class318_Sub9_Sub1.aFloat8784)) + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_249_));
                                 int i_253_ = (int) ((Class313.aFloat3935 * (float) i_249_) + ((Class299_Sub1_Sub1.aFloat8696 * (float) aShort5629) + (Class190.aFloat2555 + (JavaThreadResource.aFloat2203 * (float) i_248_))));
                                 int i_254_ = (int) (Class156.aFloat2111 + (ResourceProvider.aFloat3943 * (float) i_248_) + (Class252.aFloat3242 * (float) aShort5629) + ((float) i_249_ * Class215.aFloat2836));
-                                class318_sub3.bottomX = (aHa_Sub2_5598.anInt7853 - -(i_250_ * (aHa_Sub2_5598.anInt7771) / i));
-                                class318_sub3.bottomY = ((i_251_ * aHa_Sub2_5598.anInt7794 / i) + aHa_Sub2_5598.anInt7810);
-                                class318_sub3.topY = (aHa_Sub2_5598.anInt7810 + (i_254_ * aHa_Sub2_5598.anInt7794 / i));
+                                class318_sub3.bottomX = (aOpenGLToolkit_5598.anInt7853 - -(i_250_ * (aOpenGLToolkit_5598.anInt7771) / i));
+                                class318_sub3.bottomY = ((i_251_ * aOpenGLToolkit_5598.anInt7794 / i) + aOpenGLToolkit_5598.anInt7810);
+                                class318_sub3.topY = (aOpenGLToolkit_5598.anInt7810 + (i_254_ * aOpenGLToolkit_5598.anInt7794 / i));
                                 int i_255_ = (int) (((float) i_249_ * Class286_Sub8.aFloat6304) + ((Class320.aFloat3994 * (float) aShort5629) + (((Class318_Sub9_Sub1.aFloat8784) * (float) i_248_) + JavaOffscreenSurface.aFloat4720)));
-                                class318_sub3.topX = (aHa_Sub2_5598.anInt7853 + (i_253_ * aHa_Sub2_5598.anInt7771 / i));
-                                if (i_252_ >= aHa_Sub2_5598.anInt7826 || i_255_ >= (aHa_Sub2_5598.anInt7826)) {
+                                class318_sub3.topX = (aOpenGLToolkit_5598.anInt7853 + (i_253_ * aOpenGLToolkit_5598.anInt7771 / i));
+                                if (i_252_ >= aOpenGLToolkit_5598.anInt7826 || i_255_ >= (aOpenGLToolkit_5598.anInt7826)) {
                                     class318_sub3.visible = true;
-                                    class318_sub3.width = (-(class318_sub3.bottomX) + ((aHa_Sub2_5598.anInt7853) + ((aHa_Sub2_5598.anInt7771) * (aShort5634 + i_250_) / i)));
+                                    class318_sub3.width = (-(class318_sub3.bottomX) + ((aOpenGLToolkit_5598.anInt7853) + ((aOpenGLToolkit_5598.anInt7771) * (aShort5634 + i_250_) / i)));
                                 }
                             }
-                            aHa_Sub2_5598.method3789((byte) -122, (float) i);
-                            aHa_Sub2_5598.method3760(1);
-                            aHa_Sub2_5598.method3758(false, class101_sub3_236_);
+                            aOpenGLToolkit_5598.method3789((byte) -122, (float) i);
+                            aOpenGLToolkit_5598.method3760(1);
+                            aOpenGLToolkit_5598.method3758(false, class101_sub3_236_);
                             method677((byte) 127);
-                            aHa_Sub2_5598.method3734(true);
+                            aOpenGLToolkit_5598.method3734(true);
                             method682(true);
                         }
                     }
@@ -1259,7 +1259,7 @@ final class Class64_Sub3 extends Model {
 
     final void aa(short i, short i_284_) {
         anInt5590++;
-        TextureSource var_d = aHa_Sub2_5598.aD4579;
+        TextureSource var_d = aOpenGLToolkit_5598.aD4579;
         for (int i_285_ = 0; i_285_ < anInt5632; i_285_++) {
             if (aShortArray5601[i_285_] == i) aShortArray5601[i_285_] = i_284_;
         }
@@ -1325,11 +1325,11 @@ final class Class64_Sub3 extends Model {
                 i_295_ += 8;
             }
             if (i_295_ != 0) {
-                if (anInt5529 * i_295_ > (aHa_Sub2_5598.aClass348_Sub49_Sub1_7798.aByteArray7154).length) aHa_Sub2_5598.aClass348_Sub49_Sub1_7798 = new Class348_Sub49_Sub1(i_295_ * (100 + anInt5529));
-                else aHa_Sub2_5598.aClass348_Sub49_Sub1_7798.pos = 0;
-                Class348_Sub49_Sub1 class348_sub49_sub1 = aHa_Sub2_5598.aClass348_Sub49_Sub1_7798;
+                if (anInt5529 * i_295_ > (aOpenGLToolkit_5598.aClass348_Sub49_Sub1_7798.aByteArray7154).length) aOpenGLToolkit_5598.aClass348_Sub49_Sub1_7798 = new Class348_Sub49_Sub1(i_295_ * (100 + anInt5529));
+                else aOpenGLToolkit_5598.aClass348_Sub49_Sub1_7798.pos = 0;
+                Class348_Sub49_Sub1 class348_sub49_sub1 = aOpenGLToolkit_5598.aClass348_Sub49_Sub1_7798;
                 if (bool_293_) {
-                    if (aHa_Sub2_5598.aBoolean7775) {
+                    if (aOpenGLToolkit_5598.aBoolean7775) {
                         for (int i_300_ = 0; anInt5557 > i_300_; i_300_++) {
                             int i_301_ = (Stream.floatToRawIntBits((float) anIntArray5543[i_300_]));
                             int i_302_ = (Stream.floatToRawIntBits((float) anIntArray5593[i_300_]));
@@ -1380,17 +1380,17 @@ final class Class64_Sub3 extends Model {
                             is_317_ = aClass139_5572.aShortArray1951;
                             is_316_ = aClass139_5572.aByteArray1948;
                         }
-                        float f = aHa_Sub2_5598.aFloatArray7825[0];
-                        float f_319_ = aHa_Sub2_5598.aFloatArray7825[1];
-                        float f_320_ = aHa_Sub2_5598.aFloatArray7825[2];
-                        float f_321_ = aHa_Sub2_5598.aFloat7768;
-                        float f_322_ = (aHa_Sub2_5598.aFloat7832 * 768.0F / (float) aShort5645);
-                        float f_323_ = (aHa_Sub2_5598.aFloat7871 * 768.0F / (float) aShort5645);
+                        float f = aOpenGLToolkit_5598.aFloatArray7825[0];
+                        float f_319_ = aOpenGLToolkit_5598.aFloatArray7825[1];
+                        float f_320_ = aOpenGLToolkit_5598.aFloatArray7825[2];
+                        float f_321_ = aOpenGLToolkit_5598.aFloat7768;
+                        float f_322_ = (aOpenGLToolkit_5598.aFloat7832 * 768.0F / (float) aShort5645);
+                        float f_323_ = (aOpenGLToolkit_5598.aFloat7871 * 768.0F / (float) aShort5645);
                         for (int i_324_ = 0; anInt5632 > i_324_; i_324_++) {
                             int i_325_ = method680(19995, aShort5544, aByteArray5542[i_324_], aShortArray5601[i_324_], aShortArray5580[i_324_]);
-                            float f_326_ = (aHa_Sub2_5598.aFloat7781 * (float) (i_325_ >>> 24));
-                            float f_327_ = ((float) (0xff & i_325_ >> 8) * aHa_Sub2_5598.aFloat7823);
-                            float f_328_ = ((float) ((0xff88e4 & i_325_) >> 16) * aHa_Sub2_5598.aFloat7816);
+                            float f_326_ = (aOpenGLToolkit_5598.aFloat7781 * (float) (i_325_ >>> 24));
+                            float f_327_ = ((float) (0xff & i_325_ >> 8) * aOpenGLToolkit_5598.aFloat7823);
+                            float f_328_ = ((float) ((0xff88e4 & i_325_) >> 16) * aOpenGLToolkit_5598.aFloat7816);
                             int i_329_ = aShortArray5592[i_324_];
                             short i_330_ = is_316_[i_329_];
                             float f_331_;
@@ -1486,7 +1486,7 @@ final class Class64_Sub3 extends Model {
                     float f = 3.0F / (float) aShort5645;
                     class348_sub49_sub1.pos = i_298_;
                     float f_341_ = 3.0F / (float) (aShort5645 / 2 + aShort5645);
-                    if (aHa_Sub2_5598.aBoolean7775) {
+                    if (aOpenGLToolkit_5598.aBoolean7775) {
                         for (int i_345_ = 0; anInt5529 > i_345_; i_345_++) {
                             int i_346_ = is[i_345_] & 0xff;
                             if (i_346_ == 0) {
@@ -1520,7 +1520,7 @@ final class Class64_Sub3 extends Model {
                 }
                 if (bool_294_) {
                     class348_sub49_sub1.pos = i_299_;
-                    if (aHa_Sub2_5598.aBoolean7775) {
+                    if (aOpenGLToolkit_5598.aBoolean7775) {
                         for (int i_348_ = 0; i_348_ < anInt5529; i_348_++) {
                             class348_sub49_sub1.method3400((aFloatArray5552[i_348_]), (byte) -127);
                             class348_sub49_sub1.method3400((aFloatArray5571[i_348_]), (byte) -126);
@@ -1538,11 +1538,11 @@ final class Class64_Sub3 extends Model {
                 Interface2 interface2;
                 if (bool) {
                     if (anInterface2_5554 != null) anInterface2_5554.method11(i_295_, class348_sub49_sub1.pos, (class348_sub49_sub1.aByteArray7154), -9894);
-                    else anInterface2_5554 = aHa_Sub2_5598.method3731(2, true, i_295_, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.pos));
+                    else anInterface2_5554 = aOpenGLToolkit_5598.method3731(2, true, i_295_, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.pos));
                     interface2 = anInterface2_5554;
                     aByte5581 = (byte) 0;
                 } else {
-                    interface2 = aHa_Sub2_5598.method3731(2, false, i_295_, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.pos));
+                    interface2 = aOpenGLToolkit_5598.method3731(2, false, i_295_, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.pos));
                     aBoolean5555 = true;
                 }
                 if (bool_293_) {
@@ -1569,7 +1569,7 @@ final class Class64_Sub3 extends Model {
         try {
             anInt5611++;
             if (anInt5529 != 0) {
-                Class101_Sub3 class101_sub3 = aHa_Sub2_5598.aClass101_Sub3_7760;
+                Class101_Sub3 class101_sub3 = aOpenGLToolkit_5598.aClass101_Sub3_7760;
                 if (!aBoolean5527) method692((byte) -123);
                 Class101_Sub3 class101_sub3_350_ = (Class101_Sub3) matrix;
                 Class320.aFloat3994 = ((class101_sub3_350_.aFloat5754 * class101_sub3.aFloat5784) + ((class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3_350_.aFloat5769 * class101_sub3.aFloat5754)));
@@ -1585,7 +1585,7 @@ final class Class64_Sub3 extends Model {
                     f_352_ = (float) -aShort5634 + f;
                     f_353_ = f_351_ + (float) aShort5634;
                 }
-                if (!(aHa_Sub2_5598.aFloat7874 <= f_352_) && !((float) aHa_Sub2_5598.anInt7826 >= f_353_)) {
+                if (!(aOpenGLToolkit_5598.aFloat7874 <= f_352_) && !((float) aOpenGLToolkit_5598.anInt7826 >= f_353_)) {
                     Class299_Sub1_Sub1.aFloat8696 = ((class101_sub3.aFloat5750 * class101_sub3_350_.aFloat5769) + (class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5770) + (class101_sub3.aFloat5781 * (class101_sub3_350_.aFloat5754)));
                     Class190.aFloat2555 = (class101_sub3.aFloat5747 + ((class101_sub3.aFloat5781 * (class101_sub3_350_.aFloat5751)) + ((class101_sub3.aFloat5770 * (class101_sub3_350_.aFloat5747)) + ((class101_sub3_350_.aFloat5772) * (class101_sub3.aFloat5750)))));
                     float f_354_ = ((float) aShort5591 * Class299_Sub1_Sub1.aFloat8696 + Class190.aFloat2555);
@@ -1593,13 +1593,13 @@ final class Class64_Sub3 extends Model {
                     float f_356_;
                     float f_357_;
                     if (f_354_ > f_355_) {
-                        f_356_ = ((float) aHa_Sub2_5598.anInt7771 * ((float) -aShort5634 + f_355_));
-                        f_357_ = ((float) aHa_Sub2_5598.anInt7771 * ((float) aShort5634 + f_354_));
+                        f_356_ = ((float) aOpenGLToolkit_5598.anInt7771 * ((float) -aShort5634 + f_355_));
+                        f_357_ = ((float) aOpenGLToolkit_5598.anInt7771 * ((float) aShort5634 + f_354_));
                     } else {
-                        f_357_ = ((float) aHa_Sub2_5598.anInt7771 * (f_355_ + (float) aShort5634));
-                        f_356_ = (((float) -aShort5634 + f_354_) * (float) aHa_Sub2_5598.anInt7771);
+                        f_357_ = ((float) aOpenGLToolkit_5598.anInt7771 * (f_355_ + (float) aShort5634));
+                        f_356_ = (((float) -aShort5634 + f_354_) * (float) aOpenGLToolkit_5598.anInt7771);
                     }
-                    if (!(aHa_Sub2_5598.aFloat7835 <= f_356_ / f_353_) && !(f_357_ / f_353_ <= aHa_Sub2_5598.aFloat7872)) {
+                    if (!(aOpenGLToolkit_5598.aFloat7835 <= f_356_ / f_353_) && !(f_357_ / f_353_ <= aOpenGLToolkit_5598.aFloat7872)) {
                         Class156.aFloat2111 = ((class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5769) + ((class101_sub3_350_.aFloat5747) * class101_sub3.aFloat5761) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5751)) + class101_sub3.aFloat5772);
                         Class252.aFloat3242 = ((class101_sub3.aFloat5761 * (class101_sub3_350_.aFloat5750)) + (class101_sub3.aFloat5769 * (class101_sub3_350_.aFloat5769)) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5754)));
                         float f_358_ = (Class156.aFloat2111 + Class252.aFloat3242 * (float) aShort5591);
@@ -1607,13 +1607,13 @@ final class Class64_Sub3 extends Model {
                         float f_360_;
                         float f_361_;
                         if (f_358_ > f_359_) {
-                            f_360_ = (((float) aShort5634 + f_358_) * (float) (aHa_Sub2_5598.anInt7794));
-                            f_361_ = ((float) aHa_Sub2_5598.anInt7794 * (f_359_ - (float) aShort5634));
+                            f_360_ = (((float) aShort5634 + f_358_) * (float) (aOpenGLToolkit_5598.anInt7794));
+                            f_361_ = ((float) aOpenGLToolkit_5598.anInt7794 * (f_359_ - (float) aShort5634));
                         } else {
-                            f_360_ = (((float) aShort5634 + f_359_) * (float) (aHa_Sub2_5598.anInt7794));
-                            f_361_ = ((float) aHa_Sub2_5598.anInt7794 * (f_358_ - (float) aShort5634));
+                            f_360_ = (((float) aShort5634 + f_359_) * (float) (aOpenGLToolkit_5598.anInt7794));
+                            f_361_ = ((float) aOpenGLToolkit_5598.anInt7794 * (f_358_ - (float) aShort5634));
                         }
-                        if (!(f_361_ / f_353_ >= aHa_Sub2_5598.aFloat7830) && !(aHa_Sub2_5598.aFloat7836 >= f_360_ / f_353_)) {
+                        if (!(f_361_ / f_353_ >= aOpenGLToolkit_5598.aFloat7830) && !(aOpenGLToolkit_5598.aFloat7836 >= f_360_ / f_353_)) {
                             if (class318_sub3 != null || aClass118Array5621 != null) {
                                 Class286_Sub8.aFloat6304 = (((class101_sub3_350_.aFloat5762) * (class101_sub3.aFloat5754)) + ((class101_sub3_350_.aFloat5781) * (class101_sub3.aFloat5756)) + ((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5784)));
                                 Class318_Sub9_Sub1.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_350_.aFloat5756)) + ((class101_sub3_350_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_350_.aFloat5761))));
@@ -1630,44 +1630,44 @@ final class Class64_Sub3 extends Model {
                                 int i_365_ = (int) (((float) i_364_ * Class313.aFloat3935) + ((JavaThreadResource.aFloat2203 * (float) i_363_) + Class190.aFloat2555 + ((float) aShort5591 * (Class299_Sub1_Sub1.aFloat8696))));
                                 int i_366_ = (int) (Class156.aFloat2111 + ((float) i_363_ * ResourceProvider.aFloat3943) + ((float) aShort5591 * Class252.aFloat3242) + ((float) i_364_ * Class215.aFloat2836));
                                 int i_367_ = (int) ((Class318_Sub9_Sub1.aFloat8784 * (float) i_363_) + JavaOffscreenSurface.aFloat4720 + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_364_));
-                                if (aHa_Sub2_5598.anInt7826 <= i_367_) {
-                                    class318_sub3.bottomX = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853));
-                                    class318_sub3.bottomY = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810));
+                                if (aOpenGLToolkit_5598.anInt7826 <= i_367_) {
+                                    class318_sub3.bottomX = (i_365_ * (aOpenGLToolkit_5598.anInt7771) / i_367_ + (aOpenGLToolkit_5598.anInt7853));
+                                    class318_sub3.bottomY = (i_366_ * (aOpenGLToolkit_5598.anInt7794) / i_367_ + (aOpenGLToolkit_5598.anInt7810));
                                 } else bool = true;
                                 int i_368_ = (int) (Class190.aFloat2555 + (JavaThreadResource.aFloat2203 * (float) i_363_) + (Class299_Sub1_Sub1.aFloat8696 * (float) aShort5629) + (Class313.aFloat3935 * (float) i_364_));
                                 int i_369_ = (int) (((float) i_364_ * Class215.aFloat2836) + ((Class252.aFloat3242 * (float) aShort5629) + (Class156.aFloat2111 + (ResourceProvider.aFloat3943 * (float) i_363_))));
                                 int i_370_ = (int) ((Class286_Sub8.aFloat6304 * (float) i_364_) + (((float) i_363_ * (Class318_Sub9_Sub1.aFloat8784)) + JavaOffscreenSurface.aFloat4720 + ((float) aShort5629 * Class320.aFloat3994)));
-                                if (i_370_ >= aHa_Sub2_5598.anInt7826) {
-                                    class318_sub3.topX = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853));
-                                    class318_sub3.topY = (i_369_ * (aHa_Sub2_5598.anInt7794) / i_370_ + (aHa_Sub2_5598.anInt7810));
+                                if (i_370_ >= aOpenGLToolkit_5598.anInt7826) {
+                                    class318_sub3.topX = (i_368_ * (aOpenGLToolkit_5598.anInt7771) / i_370_ + (aOpenGLToolkit_5598.anInt7853));
+                                    class318_sub3.topY = (i_369_ * (aOpenGLToolkit_5598.anInt7794) / i_370_ + (aOpenGLToolkit_5598.anInt7810));
                                 } else bool = true;
                                 if (bool) {
-                                    if ((aHa_Sub2_5598.anInt7826 <= i_367_) || ((aHa_Sub2_5598.anInt7826) <= i_370_)) {
-                                        if (i_367_ < (aHa_Sub2_5598.anInt7826)) {
-                                            int i_371_ = ((-(aHa_Sub2_5598.anInt7826) + i_370_ << 16) / (i_370_ + -i_367_));
+                                    if ((aOpenGLToolkit_5598.anInt7826 <= i_367_) || ((aOpenGLToolkit_5598.anInt7826) <= i_370_)) {
+                                        if (i_367_ < (aOpenGLToolkit_5598.anInt7826)) {
+                                            int i_371_ = ((-(aOpenGLToolkit_5598.anInt7826) + i_370_ << 16) / (i_370_ + -i_367_));
                                             int i_372_ = (((-i_365_ + i_368_) * i_371_ >> 16) + i_368_);
-                                            class318_sub3.bottomX = ((aHa_Sub2_5598.anInt7853) - -(i_372_ * (aHa_Sub2_5598.anInt7771) / (aHa_Sub2_5598.anInt7826)));
+                                            class318_sub3.bottomX = ((aOpenGLToolkit_5598.anInt7853) - -(i_372_ * (aOpenGLToolkit_5598.anInt7771) / (aOpenGLToolkit_5598.anInt7826)));
                                             int i_373_ = ((i_371_ * (i_369_ - i_366_) >> 16) + i_369_);
-                                            class318_sub3.bottomY = ((i_373_ * aHa_Sub2_5598.anInt7794 / (aHa_Sub2_5598.anInt7826)) + (aHa_Sub2_5598.anInt7810));
-                                        } else if (i_370_ < (aHa_Sub2_5598.anInt7826)) {
-                                            int i_374_ = ((-(aHa_Sub2_5598.anInt7826) + i_367_ << 16) / (i_367_ - i_370_));
+                                            class318_sub3.bottomY = ((i_373_ * aOpenGLToolkit_5598.anInt7794 / (aOpenGLToolkit_5598.anInt7826)) + (aOpenGLToolkit_5598.anInt7810));
+                                        } else if (i_370_ < (aOpenGLToolkit_5598.anInt7826)) {
+                                            int i_374_ = ((-(aOpenGLToolkit_5598.anInt7826) + i_367_ << 16) / (i_367_ - i_370_));
                                             int i_375_ = (i_365_ - -(i_374_ * (-i_368_ + i_365_) >> 16));
                                             int i_376_ = (((i_366_ - i_369_) * i_374_ >> 16) + i_366_);
-                                            class318_sub3.bottomX = ((i_375_ * aHa_Sub2_5598.anInt7771 / (aHa_Sub2_5598.anInt7826)) + (aHa_Sub2_5598.anInt7853));
-                                            class318_sub3.bottomY = ((aHa_Sub2_5598.anInt7810) + (aHa_Sub2_5598.anInt7794 * i_376_ / (aHa_Sub2_5598.anInt7826)));
+                                            class318_sub3.bottomX = ((i_375_ * aOpenGLToolkit_5598.anInt7771 / (aOpenGLToolkit_5598.anInt7826)) + (aOpenGLToolkit_5598.anInt7853));
+                                            class318_sub3.bottomY = ((aOpenGLToolkit_5598.anInt7810) + (aOpenGLToolkit_5598.anInt7794 * i_376_ / (aOpenGLToolkit_5598.anInt7826)));
                                         }
                                     } else bool_362_ = false;
                                 }
                                 if (bool_362_) {
-                                    if (i_370_ < i_367_) class318_sub3.width = ((aHa_Sub2_5598.anInt7853) + ((aHa_Sub2_5598.anInt7771) * (i_365_ - -aShort5634) / i_367_) - class318_sub3.bottomX);
-                                    else class318_sub3.width = ((aHa_Sub2_5598.anInt7853) - -((aHa_Sub2_5598.anInt7771) * (aShort5634 + i_368_) / i_370_) + -class318_sub3.topX);
+                                    if (i_370_ < i_367_) class318_sub3.width = ((aOpenGLToolkit_5598.anInt7853) + ((aOpenGLToolkit_5598.anInt7771) * (i_365_ - -aShort5634) / i_367_) - class318_sub3.bottomX);
+                                    else class318_sub3.width = ((aOpenGLToolkit_5598.anInt7853) - -((aOpenGLToolkit_5598.anInt7771) * (aShort5634 + i_368_) / i_370_) + -class318_sub3.topX);
                                     class318_sub3.visible = true;
                                 }
                             }
-                            aHa_Sub2_5598.method3784((byte) -62);
-                            aHa_Sub2_5598.method3758(false, class101_sub3_350_);
+                            aOpenGLToolkit_5598.method3784((byte) -62);
+                            aOpenGLToolkit_5598.method3758(false, class101_sub3_350_);
                             method677((byte) 127);
-                            aHa_Sub2_5598.method3734(true);
+                            aOpenGLToolkit_5598.method3734(true);
                             method682(true);
                         }
                     }
@@ -2837,7 +2837,7 @@ final class Class64_Sub3 extends Model {
         return aShort5591;
     }
 
-    Class64_Sub3(ha_Sub2 var_ha_Sub2) {
+    Class64_Sub3(OpenGLToolkit var_openGLToolkit) {
         aBoolean5527 = false;
         anInt5529 = 0;
         anInt5632 = 0;
@@ -2845,18 +2845,18 @@ final class Class64_Sub3 extends Model {
         anInt5642 = 0;
         aBoolean5638 = false;
         try {
-            aHa_Sub2_5598 = var_ha_Sub2;
+            aOpenGLToolkit_5598 = var_openGLToolkit;
             aClass123_5605 = new Class123(null, 5126, 3, 0);
             aClass123_5620 = new Class123(null, 5126, 2, 0);
             aClass123_5563 = new Class123(null, 5126, 3, 0);
             aClass123_5610 = new Class123(null, 5121, 4, 0);
             aClass270_5575 = new Class270();
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("paa.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("paa.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ')'));
         }
     }
 
-    Class64_Sub3(ha_Sub2 var_ha_Sub2, Mesh mesh, int i, int i_695_, int i_696_, int i_697_) {
+    Class64_Sub3(OpenGLToolkit var_openGLToolkit, Mesh mesh, int i, int i_695_, int i_696_, int i_697_) {
         aBoolean5527 = false;
         anInt5529 = 0;
         anInt5632 = 0;
@@ -2867,13 +2867,13 @@ final class Class64_Sub3 extends Model {
             try {
                 anInt5556 = i_697_;
                 anInt5648 = i;
-                aHa_Sub2_5598 = var_ha_Sub2;
+                aOpenGLToolkit_5598 = var_openGLToolkit;
                 if (Model.method616(2, i, i_697_)) aClass123_5605 = new Class123(null, 5126, 3, 0);
                 if (Class137.method1163(i_697_, (byte) 78, i)) aClass123_5620 = new Class123(null, 5126, 2, 0);
                 if (aa_Sub3.method166((byte) 69, i_697_, i)) aClass123_5563 = new Class123(null, 5126, 3, 0);
                 if (Class146.method1193(i_697_, i, true)) aClass123_5610 = new Class123(null, 5121, 4, 0);
                 if (Class156.method1238(i, i_697_, -31)) aClass270_5575 = new Class270();
-                TextureSource var_d = var_ha_Sub2.aD4579;
+                TextureSource var_d = var_openGLToolkit.aD4579;
                 anIntArray5528 = new int[mesh.maxVertex + 1];
                 int[] is = new int[mesh.faceCount];
                 for (int i_698_ = 0; (i_698_ < mesh.faceCount); i_698_++) {
@@ -3328,7 +3328,7 @@ final class Class64_Sub3 extends Model {
                     if (i_823_ >= 0) anIntArrayArray5553[i_823_][is_818_[i_823_]++] = i_822_;
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("paa.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (mesh != null ? "{...}" : "null") + ',' + i + ',' + i_695_ + ',' + i_696_ + ',' + i_697_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("paa.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (mesh != null ? "{...}" : "null") + ',' + i + ',' + i_695_ + ',' + i_696_ + ',' + i_697_ + ')'));
             }
             break;
         } while (false);

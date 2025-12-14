@@ -50,33 +50,33 @@ final class aa_Sub2 extends aa {
             if (Class59_Sub1.aBoolean5300) Class107.method1010(false, true);
             else {
                 Class157.aMatrix_2123.translate(i_10_, 0, 0);
-                Class348_Sub8.aToolkit6654.setCamera(Class157.aMatrix_2123);
+                Class348_Sub8.active.setCamera(Class157.aMatrix_2123);
             }
-            if (!Class305.aBoolean3870) Class348_Sub8.aToolkit6654.da(i_9_, i_15_, i_11_, Option_Sub21.anIntArray6062);
-            else Class348_Sub8.aToolkit6654.HA(i_9_, i_15_, i_11_, Class132.anInt1906, Option_Sub21.anIntArray6062);
+            if (!Class305.aBoolean3870) Class348_Sub8.active.da(i_9_, i_15_, i_11_, Option_Sub21.anIntArray6062);
+            else Class348_Sub8.active.HA(i_9_, i_15_, i_11_, Class132.anInt1906, Option_Sub21.anIntArray6062);
             if (Class59_Sub1.aBoolean5300) Class285_Sub1.method2129((byte) 60);
             else {
                 Class157.aMatrix_2123.translate(-i_10_, 0, 0);
-                Class348_Sub8.aToolkit6654.setCamera(Class157.aMatrix_2123);
+                Class348_Sub8.active.setCamera(Class157.aMatrix_2123);
             }
         }
     }
 
-    aa_Sub2(ha_Sub3 var_ha_Sub3, int i, int i_16_, byte[] is) {
+    aa_Sub2(NativeToolkit var_nativeToolkit, int i, int i_16_, byte[] is) {
         try {
-            this.anInterface18_Impl3_5196 = var_ha_Sub3.method3944(is, i, Class348_Sub40_Sub38.aClass304_9471, 2, false, i_16_);
+            this.anInterface18_Impl3_5196 = var_nativeToolkit.method3944(is, i, Class348_Sub40_Sub38.aClass304_9471, 2, false, i_16_);
             this.anInterface18_Impl3_5196.method66(false, false, 25688);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lp.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + i + ',' + i_16_ + ',' + (is != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lp.<init>(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_16_ + ',' + (is != null ? "{...}" : "null") + ')'));
         }
     }
 
-    aa_Sub2(ha_Sub3 var_ha_Sub3, int i, int i_17_, int[] is) {
+    aa_Sub2(NativeToolkit var_nativeToolkit, int i, int i_17_, int[] is) {
         try {
-            this.anInterface18_Impl3_5196 = var_ha_Sub3.method3839(i_17_, i, -15137, false, is);
+            this.anInterface18_Impl3_5196 = var_nativeToolkit.method3839(i_17_, i, -15137, false, is);
             this.anInterface18_Impl3_5196.method66(false, false, 25688);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("lp.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + i + ',' + i_17_ + ',' + (is != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("lp.<init>(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_17_ + ',' + (is != null ? "{...}" : "null") + ')'));
         }
     }
 }

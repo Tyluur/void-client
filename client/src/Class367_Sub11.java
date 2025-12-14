@@ -37,8 +37,8 @@ final class Class367_Sub11 extends Class367 {
     final void method3528(int i) {
         if (i <= 45) method3557(true);
         anInt7401++;
-        int i_0_ = this.aHa_Sub3_4479.method3941(102);
-        Class101_Sub2 class101_sub2 = this.aHa_Sub3_4479.method3887((byte) 98);
+        int i_0_ = this.aNativeToolkit_4479.method3941(102);
+        Class101_Sub2 class101_sub2 = this.aNativeToolkit_4479.method3887((byte) 98);
         if (!aBoolean7411) OpenGL.glBindProgramARB(34336, (i_0_ != 2147483647 ? aClass193_7404.anInt2584 : aClass193_7395.anInt2584));
         else OpenGL.glBindProgramARB(34336, (i_0_ == 2147483647 ? aClass193_7392.anInt2584 : aClass193_7407.anInt2584));
         OpenGL.glEnable(34336);
@@ -56,16 +56,16 @@ final class Class367_Sub11 extends Class367 {
 
     final void method3520(byte i) {
         anInt7408++;
-        this.aHa_Sub3_4479.method3897(1, -4382);
-        this.aHa_Sub3_4479.method3850((byte) -128, null);
-        this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, 116, JavaThreadResource.aClass229_2207);
-        this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-        this.aHa_Sub3_4479.method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
-        this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
-        this.aHa_Sub3_4479.method3897(0, -4382);
+        this.aNativeToolkit_4479.method3897(1, -4382);
+        this.aNativeToolkit_4479.method3850((byte) -128, null);
+        this.aNativeToolkit_4479.method3874(JavaThreadResource.aClass229_2207, 116, JavaThreadResource.aClass229_2207);
+        this.aNativeToolkit_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+        this.aNativeToolkit_4479.method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
+        this.aNativeToolkit_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
+        this.aNativeToolkit_4479.method3897(0, -4382);
         if (aBoolean7399) {
-            this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-            this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
+            this.aNativeToolkit_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+            this.aNativeToolkit_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
             aBoolean7399 = false;
         }
         if (i != 87) aClass32_7415 = null;
@@ -85,17 +85,17 @@ final class Class367_Sub11 extends Class367 {
     final void method3527(int i, Interface18 interface18, int i_3_) {
         if (interface18 != null) {
             if (aBoolean7399) {
-                this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-                this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
+                this.aNativeToolkit_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+                this.aNativeToolkit_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
                 aBoolean7399 = false;
             }
-            this.aHa_Sub3_4479.method3850((byte) -122, interface18);
-            this.aHa_Sub3_4479.method3923(true, i);
+            this.aNativeToolkit_4479.method3850((byte) -122, interface18);
+            this.aNativeToolkit_4479.method3923(true, i);
         } else if (!aBoolean7399) {
-            this.aHa_Sub3_4479.method3850((byte) 99, (this.aHa_Sub3_4479.anInterface18_8147));
-            this.aHa_Sub3_4479.method3923(true, 1);
-            this.aHa_Sub3_4479.method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
-            this.aHa_Sub3_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);
+            this.aNativeToolkit_4479.method3850((byte) 99, (this.aNativeToolkit_4479.anInterface18_8147));
+            this.aNativeToolkit_4479.method3923(true, 1);
+            this.aNativeToolkit_4479.method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
+            this.aNativeToolkit_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);
             aBoolean7399 = true;
         }
         if (i_3_ != -16776) method3525(16, true);
@@ -105,14 +105,14 @@ final class Class367_Sub11 extends Class367 {
     final void method3522(int i) {
         if (i != -16252) aBoolean7411 = true;
         if (aBoolean7406) {
-            int i_4_ = this.aHa_Sub3_4479.XA();
-            int i_5_ = this.aHa_Sub3_4479.i();
+            int i_4_ = this.aNativeToolkit_4479.XA();
+            int i_5_ = this.aNativeToolkit_4479.i();
             float f = (float) i_4_ - 0.125F * (float) (-i_5_ + i_4_);
             float f_6_ = -(0.25F * (float) (-i_5_ + i_4_)) + (float) i_4_;
-            OpenGL.glProgramLocalParameter4fARB(34336, 0, f_6_, f, 1.0F / (float) this.aHa_Sub3_4479.method3833((byte) -58), (float) this.aHa_Sub3_4479.method3826((byte) -70) / 255.0F);
-            this.aHa_Sub3_4479.method3897(1, -4382);
-            this.aHa_Sub3_4479.method3894(-28186, this.aHa_Sub3_4479.method3863(-104));
-            this.aHa_Sub3_4479.method3897(0, -4382);
+            OpenGL.glProgramLocalParameter4fARB(34336, 0, f_6_, f, 1.0F / (float) this.aNativeToolkit_4479.method3833((byte) -58), (float) this.aNativeToolkit_4479.method3826((byte) -70) / 255.0F);
+            this.aNativeToolkit_4479.method3897(1, -4382);
+            this.aNativeToolkit_4479.method3894(-28186, this.aNativeToolkit_4479.method3863(-104));
+            this.aNativeToolkit_4479.method3897(0, -4382);
         }
         anInt7412++;
     }
@@ -147,7 +147,7 @@ final class Class367_Sub11 extends Class367 {
                         Class321.anInt4017 = Class92.anInt1524;
                         Class335.anInt4167 = 0;
                         Class348_Sub48.anInt7129 = (Class272.anInt3473 - Class92.anInt1524) / 2;
-                        Class348_Sub42_Sub8_Sub2.anInt10432 = ha_Sub2.anInt7666;
+                        Class348_Sub42_Sub8_Sub2.anInt10432 = OpenGLToolkit.anInt7666;
                     } else Class286_Sub5.method2158((byte) 56);
                     if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
                         if (Class321.anInt4017 < 1024 && Class348_Sub42_Sub8_Sub2.anInt10432 < 768) {
@@ -155,9 +155,9 @@ final class Class367_Sub11 extends Class367 {
                         }
                     }
                     Class305.aCanvas3869.setSize(Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
-                    if (Class348_Sub8.aToolkit6654 != null) {
+                    if (Class348_Sub8.active != null) {
                         if (Class59_Sub1.aBoolean5300) Ground.method3980(120, Class305.aCanvas3869);
-                        else Class348_Sub8.aToolkit6654.method3669(Class305.aCanvas3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
+                        else Class348_Sub8.active.method3669(Class305.aCanvas3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
                     }
                     if (Class52.aFrame4904 == container) {
                         Insets insets = Class52.aFrame4904.getInsets();
@@ -172,22 +172,22 @@ final class Class367_Sub11 extends Class367 {
         }
     }
 
-    Class367_Sub11(Class377 class377, Index index) {
-        super(class377);
+    Class367_Sub11(OpenGLxToolkit openGLxToolkit, Index index) {
+        super(openGLxToolkit);
         try {
-            if (index != null && class377.aBoolean9923) {
-                aClass193_7395 = za_Sub2.method3442(34336, index.method391("gl", "uw_ground_unlit", -29832), class377, 4);
-                aClass193_7392 = za_Sub2.method3442(34336, index.method391("gl", "uw_ground_lit", -29832), class377, 4);
-                aClass193_7404 = za_Sub2.method3442(34336, index.method391("gl", "uw_model_unlit", -29832), class377, 4);
-                aClass193_7407 = za_Sub2.method3442(34336, index.method391("gl", "uw_model_lit", -29832), class377, 4);
+            if (index != null && openGLxToolkit.aBoolean9923) {
+                aClass193_7395 = za_Sub2.method3442(34336, index.method391("gl", "uw_ground_unlit", -29832), openGLxToolkit, 4);
+                aClass193_7392 = za_Sub2.method3442(34336, index.method391("gl", "uw_ground_lit", -29832), openGLxToolkit, 4);
+                aClass193_7404 = za_Sub2.method3442(34336, index.method391("gl", "uw_model_unlit", -29832), openGLxToolkit, 4);
+                aClass193_7407 = za_Sub2.method3442(34336, index.method391("gl", "uw_model_lit", -29832), openGLxToolkit, 4);
                 if (aClass193_7395 != null & aClass193_7392 != null & aClass193_7404 != null & aClass193_7407 != null) {
-                    anInterface18_Impl3_7390 = this.aHa_Sub3_4479.method3839(1, 2, -15137, false, (new int[]{0, -1}));
+                    anInterface18_Impl3_7390 = this.aNativeToolkit_4479.method3839(1, 2, -15137, false, (new int[]{0, -1}));
                     anInterface18_Impl3_7390.method66(false, false, 25688);
                     aBoolean7391 = true;
                 } else aBoolean7391 = false;
             } else aBoolean7391 = false;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("or.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("or.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -203,14 +203,14 @@ final class Class367_Sub11 extends Class367 {
     final void method3525(int i, boolean bool) {
         anInt7400++;
         aBoolean7411 = bool;
-        this.aHa_Sub3_4479.method3897(1, i ^ ~0x2a45);
-        this.aHa_Sub3_4479.method3850((byte) -32, anInterface18_Impl3_7390);
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 109, Class248.aClass229_3196);
-        this.aHa_Sub3_4479.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
+        this.aNativeToolkit_4479.method3897(1, i ^ ~0x2a45);
+        this.aNativeToolkit_4479.method3850((byte) -32, anInterface18_Impl3_7390);
+        this.aNativeToolkit_4479.method3874((Class328_Sub3.aClass229_6519), 109, Class248.aClass229_3196);
+        this.aNativeToolkit_4479.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
         if (i == 15192) {
-            this.aHa_Sub3_4479.method3924(true, false, 2, ModelParticleEffector.aClass70_4247, false);
-            this.aHa_Sub3_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);
-            this.aHa_Sub3_4479.method3897(0, i + -19574);
+            this.aNativeToolkit_4479.method3924(true, false, 2, ModelParticleEffector.aClass70_4247, false);
+            this.aNativeToolkit_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);
+            this.aNativeToolkit_4479.method3897(0, i + -19574);
             method3528(75);
         }
     }

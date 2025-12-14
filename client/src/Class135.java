@@ -14,7 +14,7 @@ abstract class Class135 {
     static int anInt1924;
     static int anInt1925;
     static int anInt1926;
-    ha_Sub2 aHa_Sub2_1927;
+    OpenGLToolkit aOpenGLToolkit_1927;
     static Color[] aColorArray1928 = {new Color(9179409), new Color(3289650), new Color(3289650), new Color(3289650)};
     int anInt1929;
     private final int anInt1930;
@@ -37,14 +37,14 @@ abstract class Class135 {
         if (anInt1921 >= i_2_) OpenGL.glBufferSubDataARBub(anInt1930, 0, i_2_, is, 0);
         else {
             OpenGL.glBufferDataARBub(anInt1930, i_2_, is, 0, !aBoolean1923 ? 35044 : 35040);
-            this.aHa_Sub2_1927.anInt7747 += -anInt1921 + i_2_;
+            this.aOpenGLToolkit_1927.anInt7747 += -anInt1921 + i_2_;
             anInt1921 = i_2_;
         }
     }
 
     protected final void finalize() throws Throwable {
         anInt1922++;
-        this.aHa_Sub2_1927.method3780(anInt1921, -1, this.anInt1929);
+        this.aOpenGLToolkit_1927.method3780(anInt1921, -1, this.anInt1929);
         super.finalize();
     }
 
@@ -58,35 +58,35 @@ abstract class Class135 {
 
     abstract void method1152(int i);
 
-    Class135(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_4_, boolean bool) {
+    Class135(OpenGLToolkit var_openGLToolkit, int i, byte[] is, int i_4_, boolean bool) {
         try {
             aBoolean1923 = bool;
-            this.aHa_Sub2_1927 = var_ha_Sub2;
+            this.aOpenGLToolkit_1927 = var_openGLToolkit;
             anInt1930 = i;
             anInt1921 = i_4_;
             OpenGL.glGenBuffersARB(1, r_Sub1.anIntArray10478, 0);
             this.anInt1929 = r_Sub1.anIntArray10478[0];
             method1152(-111);
             OpenGL.glBufferDataARBub(i, anInt1921, is, 0, aBoolean1923 ? 35040 : 35044);
-            this.aHa_Sub2_1927.anInt7747 += anInt1921;
+            this.aOpenGLToolkit_1927.anInt7747 += anInt1921;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bi.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_4_ + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bi.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_4_ + ',' + bool + ')'));
         }
     }
 
-    Class135(ha_Sub2 var_ha_Sub2, int i, Buffer buffer, int i_5_, boolean bool) {
+    Class135(OpenGLToolkit var_openGLToolkit, int i, Buffer buffer, int i_5_, boolean bool) {
         try {
             anInt1930 = i;
             anInt1921 = i_5_;
-            this.aHa_Sub2_1927 = var_ha_Sub2;
+            this.aOpenGLToolkit_1927 = var_openGLToolkit;
             aBoolean1923 = bool;
             OpenGL.glGenBuffersARB(1, r_Sub1.anIntArray10478, 0);
             this.anInt1929 = r_Sub1.anIntArray10478[0];
             method1152(-126);
             OpenGL.glBufferDataARBa(i, anInt1921, buffer.getAddress(), !aBoolean1923 ? 35044 : 35040);
-            this.aHa_Sub2_1927.anInt7747 += anInt1921;
+            this.aOpenGLToolkit_1927.anInt7747 += anInt1921;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bi.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + (buffer != null ? "{...}" : "null") + ',' + i_5_ + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bi.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + (buffer != null ? "{...}" : "null") + ',' + i_5_ + ',' + bool + ')'));
         }
     }
 }

@@ -15,7 +15,7 @@ final class Class258_Sub1 extends Class258 {
     int anInt8529;
 
     final void method1958(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_) {
-        this.aHa_Sub2_4851.method3771((byte) -110, this);
+        this.aOpenGLToolkit_4851.method3771((byte) -110, this);
         anInt8526++;
         OpenGL.glCopyTexSubImage3D(this.anInt4849, 0, i_2_, i_6_, i_4_, i_3_, i_0_, i_1_, i_5_);
         OpenGL.glFlush();
@@ -30,19 +30,19 @@ final class Class258_Sub1 extends Class258 {
         anInt8528 = -1;
     }
 
-    Class258_Sub1(ha_Sub2 var_ha_Sub2, int i, int i_7_, int i_8_, int i_9_, byte[] is, int i_10_) {
-        super(var_ha_Sub2, 32879, i, i_7_ * (i_8_ * i_9_), false);
+    Class258_Sub1(OpenGLToolkit var_openGLToolkit, int i, int i_7_, int i_8_, int i_9_, byte[] is, int i_10_) {
+        super(var_openGLToolkit, 32879, i, i_7_ * (i_8_ * i_9_), false);
         try {
             this.anInt8523 = i_7_;
             this.anInt8522 = i_9_;
             this.anInt8529 = i_8_;
-            this.aHa_Sub2_4851.method3771((byte) -84, this);
+            this.aOpenGLToolkit_4851.method3771((byte) -84, this);
             OpenGL.glPixelStorei(3317, 1);
             OpenGL.glTexImage3Dub(this.anInt4849, 0, this.anInt4858, this.anInt8523, this.anInt8529, this.anInt8522, 0, i_10_, 5121, is, 0);
             OpenGL.glPixelStorei(3317, 4);
             this.method1957(9728, true);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("gj.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + (is != null ? "{...}" : "null") + ',' + i_10_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("gj.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + (is != null ? "{...}" : "null") + ',' + i_10_ + ')'));
         }
     }
 
@@ -184,12 +184,12 @@ final class Class258_Sub1 extends Class258 {
         Class245.method1884();
     }
 
-    Class258_Sub1(ha_Sub2 var_ha_Sub2, int i, int i_49_, int i_50_, int i_51_) {
-        super(var_ha_Sub2, 32879, i, i_51_ * i_49_ * i_50_, false);
+    Class258_Sub1(OpenGLToolkit var_openGLToolkit, int i, int i_49_, int i_50_, int i_51_) {
+        super(var_openGLToolkit, 32879, i, i_51_ * i_49_ * i_50_, false);
         this.anInt8523 = i_49_;
         this.anInt8529 = i_50_;
         this.anInt8522 = i_51_;
-        this.aHa_Sub2_4851.method3771((byte) -123, this);
+        this.aOpenGLToolkit_4851.method3771((byte) -123, this);
         OpenGL.glTexImage3Dub(this.anInt4849, 0, this.anInt4858, this.anInt8523, this.anInt8529, this.anInt8522, 0, Class348_Sub9.method2779(true, (this.anInt4858)), 5121, null, 0);
         this.method1957(9728, true);
     }

@@ -3,7 +3,7 @@
  */
 
 final class Class337 {
-    private final ha_Sub2 aHa_Sub2_4173;
+    private final OpenGLToolkit aOpenGLToolkit_4173;
     static float[][] aFloatArrayArray4174 = {{-0.333333F, -0.333333F, -0.333333F}, {0.333333F, -0.333333F, -0.333333F}, {-0.333333F, 0.333333F, -0.333333F}, {0.333333F, 0.333333F, -0.333333F}, {-0.333333F, -0.333333F, 0.333333F}, {0.333333F, -0.333333F, 0.333333F}, {-0.333333F, 0.333333F, 0.333333F}, {0.333333F, 0.333333F, 0.333333F}};
     static int anInt4175;
     static int anInt4176;
@@ -19,17 +19,17 @@ final class Class337 {
     }
 
     protected final void finalize() throws Throwable {
-        aHa_Sub2_4173.method3769(this.aLong4178, false);
+        aOpenGLToolkit_4173.method3769(this.aLong4178, false);
         anInt4175++;
         super.finalize();
     }
 
-    Class337(ha_Sub2 var_ha_Sub2, long l, Class242[] class242s) {
+    Class337(OpenGLToolkit var_openGLToolkit, long l, Class242[] class242s) {
         try {
-            aHa_Sub2_4173 = var_ha_Sub2;
+            aOpenGLToolkit_4173 = var_openGLToolkit;
             this.aLong4178 = l;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("dw.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + l + ',' + (class242s != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("dw.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + l + ',' + (class242s != null ? "{...}" : "null") + ')'));
         }
     }
 

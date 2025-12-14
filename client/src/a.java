@@ -14,7 +14,7 @@ final class a implements Interface19 {
     Runnable aRunnable5112;
     private final i anI5113;
     private final i anI5114;
-    private final oa anOa5115;
+    private final SafeModeToolkit anSafeModeToolkit5115;
     private final i anI5116;
 
     final void method142(Ground var_ground, int i, int i_0_) {
@@ -101,7 +101,7 @@ final class a implements Interface19 {
         } else if (i == 5) {
             var_i_48_ = anI5114;
             var_i_49_ = anI5105;
-        } else var_i_49_ = var_i_48_ = new i(anOa5115);
+        } else var_i_49_ = var_i_48_ = new i(anSafeModeToolkit5115);
         var_i.ZA(var_i_49_, var_i_48_, i_47_, i != 0, bool);
         var_i_49_.aModelParticleEmitterArray5119 = var_i.aModelParticleEmitterArray5119;
         var_i_49_.aModelParticleEffectorArray5118 = var_i.aModelParticleEffectorArray5118;
@@ -142,18 +142,18 @@ final class a implements Interface19 {
         M(this.nativeid);
     }
 
-    a(oa var_oa, int i, int i_68_) {
-        anOa5115 = var_oa;
-        anI5106 = new i(anOa5115);
-        anI5111 = new i(anOa5115);
-        anI5108 = new i(anOa5115);
-        anI5116 = new i(anOa5115);
-        anI5105 = new i(anOa5115);
-        anI5110 = new i(anOa5115);
-        anI5107 = new i(anOa5115);
-        anI5109 = new i(anOa5115);
-        anI5113 = new i(anOa5115);
-        anI5114 = new i(anOa5115);
-        HA(this.nativeid, var_oa, i, i_68_);
+    a(SafeModeToolkit var_safeModeToolkit, int i, int i_68_) {
+        anSafeModeToolkit5115 = var_safeModeToolkit;
+        anI5106 = new i(anSafeModeToolkit5115);
+        anI5111 = new i(anSafeModeToolkit5115);
+        anI5108 = new i(anSafeModeToolkit5115);
+        anI5116 = new i(anSafeModeToolkit5115);
+        anI5105 = new i(anSafeModeToolkit5115);
+        anI5110 = new i(anSafeModeToolkit5115);
+        anI5107 = new i(anSafeModeToolkit5115);
+        anI5109 = new i(anSafeModeToolkit5115);
+        anI5113 = new i(anSafeModeToolkit5115);
+        anI5114 = new i(anSafeModeToolkit5115);
+        HA(this.nativeid, var_safeModeToolkit, i, i_68_);
     }
 }

@@ -26,41 +26,41 @@ final class Class280 {
     private Class318_Sub9_Sub2[][] aClass318_Sub9_Sub2ArrayArray3642;
     static int anInt3643 = 0;
 
-    private final void method2098(ha_Sub3 var_ha_Sub3, int i, int i_0_) {
+    private final void method2098(NativeToolkit var_nativeToolkit, int i, int i_0_) {
         anInt3629++;
-        Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093;
+        Class59_Sub1.aFloat5299 = var_nativeToolkit.aFloat8093;
         int i_1_ = 75 % ((2 - i) / 34);
-        var_ha_Sub3.method3867((float) i_0_, -86);
-        var_ha_Sub3.method3857((byte) 92);
-        var_ha_Sub3.method3865(false, 36);
-        var_ha_Sub3.method3946(-32, false);
-        var_ha_Sub3.method3942(5);
+        var_nativeToolkit.method3867((float) i_0_, -86);
+        var_nativeToolkit.method3857((byte) 92);
+        var_nativeToolkit.method3865(false, 36);
+        var_nativeToolkit.method3946(-32, false);
+        var_nativeToolkit.method3942(5);
     }
 
-    private final void method2099(int i, ha_Sub3 var_ha_Sub3) {
+    private final void method2099(int i, NativeToolkit var_nativeToolkit) {
         anInt3628++;
-        var_ha_Sub3.method3946(i + -26358, true);
-        var_ha_Sub3.method3865(true, 54);
+        var_nativeToolkit.method3946(i + -26358, true);
+        var_nativeToolkit.method3865(true, 54);
         if (i != 26326) anIntArray3631 = null;
-        if (Class59_Sub1.aFloat5299 != var_ha_Sub3.aFloat8093) var_ha_Sub3.xa(Class59_Sub1.aFloat5299);
+        if (Class59_Sub1.aFloat5299 != var_nativeToolkit.aFloat8093) var_nativeToolkit.xa(Class59_Sub1.aFloat5299);
     }
 
-    final void method2100(byte i, ha_Sub3 var_ha_Sub3) {
+    final void method2100(byte i, NativeToolkit var_nativeToolkit) {
         anInterface5_Impl1_3638.method20(786336, (byte) 123, 24);
         int i_2_ = -125 / ((i - 65) / 49);
         anInt3625++;
     }
 
-    final void method2101(ha_Sub3 var_ha_Sub3, Class98 class98, int i, int i_3_) {
+    final void method2101(NativeToolkit var_nativeToolkit, Class98 class98, int i, int i_3_) {
         try {
             anInt3633++;
-            if (var_ha_Sub3.aClass101_Sub2_8080 != null) {
-                if (i >= 0) method2098(var_ha_Sub3, -121, i);
-                else method2103((byte) -33, var_ha_Sub3);
-                float f = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5736);
-                float f_4_ = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5691);
-                float f_5_ = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5716);
-                float f_6_ = (var_ha_Sub3.aClass101_Sub2_8080.aFloat5724);
+            if (var_nativeToolkit.aClass101_Sub2_8080 != null) {
+                if (i >= 0) method2098(var_nativeToolkit, -121, i);
+                else method2103((byte) -33, var_nativeToolkit);
+                float f = (var_nativeToolkit.aClass101_Sub2_8080.aFloat5736);
+                float f_4_ = (var_nativeToolkit.aClass101_Sub2_8080.aFloat5691);
+                float f_5_ = (var_nativeToolkit.aClass101_Sub2_8080.aFloat5716);
+                float f_6_ = (var_nativeToolkit.aClass101_Sub2_8080.aFloat5724);
                 try {
                     int i_7_ = 0;
                     int i_8_ = 2147483647;
@@ -116,26 +116,26 @@ final class Class280 {
                                 }
                             }
                         }
-                        var_ha_Sub3.method3814(false, false, i_15_ >= 0 ? i_15_ : -1, (byte) 117);
-                        if (bool && (Class59_Sub1.aFloat5299 != var_ha_Sub3.aFloat8093)) var_ha_Sub3.xa(Class59_Sub1.aFloat5299);
-                        else if (var_ha_Sub3.aFloat8093 != 1.0F) var_ha_Sub3.xa(1.0F);
-                        method2102(false, var_ha_Sub3, i_12_);
+                        var_nativeToolkit.method3814(false, false, i_15_ >= 0 ? i_15_ : -1, (byte) 117);
+                        if (bool && (Class59_Sub1.aFloat5299 != var_nativeToolkit.aFloat8093)) var_nativeToolkit.xa(Class59_Sub1.aFloat5299);
+                        else if (var_nativeToolkit.aFloat8093 != 1.0F) var_nativeToolkit.xa(1.0F);
+                        method2102(false, var_nativeToolkit, i_12_);
                     }
                 } catch (Exception exception) {
                     /* empty */
                 }
-                method2099(i_3_ ^ 0x66d6, var_ha_Sub3);
+                method2099(i_3_ ^ 0x66d6, var_nativeToolkit);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ve.G(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + (class98 != null ? "{...}" : "null") + ',' + i + ',' + i_3_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ve.G(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + (class98 != null ? "{...}" : "null") + ',' + i + ',' + i_3_ + ')'));
         }
     }
 
-    private final void method2102(boolean bool, ha_Sub3 var_ha_Sub3, int i) {
+    private final void method2102(boolean bool, NativeToolkit var_nativeToolkit, int i) {
         anInt3640++;
         if (bool != false) method2098(null, 21, -85);
         int i_20_ = 0;
-        Class101_Sub2 class101_sub2 = var_ha_Sub3.method3948(-22036);
+        Class101_Sub2 class101_sub2 = var_nativeToolkit.method3948(-22036);
         float f = class101_sub2.aFloat5711;
         float f_21_ = class101_sub2.aFloat5700;
         float f_22_ = class101_sub2.aFloat5704;
@@ -153,7 +153,7 @@ final class Class280 {
         float f_34_ = -f_22_ + f_25_;
         Buffer buffer = anInterface5_Impl1_3638.method19(true, 26775);
         if (buffer != null) {
-            Stream stream = var_ha_Sub3.method3893(buffer, 9179);
+            Stream stream = var_nativeToolkit.method3893(buffer, 9179);
             if (Stream.c()) {
                 for (int i_58_ = i + -1; i_58_ >= 0; i_58_--) {
                     int i_59_ = (Math.min(anIntArray3636[i_58_], 64));
@@ -172,28 +172,28 @@ final class Class280 {
                             stream.a(f_26_ * (float) -i_69_ + f_66_);
                             stream.a(f_67_ + f_27_ * (float) -i_69_);
                             stream.a(f_68_ + (float) -i_69_ * f_28_);
-                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
+                            if (var_nativeToolkit.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
                             else stream.b(i_62_, i_63_, i_64_, i_65_);
                             stream.a(0.0F);
                             stream.a(0.0F);
                             stream.a(f_29_ * (float) i_69_ + f_66_);
                             stream.a((float) i_69_ * f_30_ + f_67_);
                             stream.a(f_68_ + f_31_ * (float) i_69_);
-                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
+                            if (var_nativeToolkit.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
                             else stream.b(i_62_, i_63_, i_64_, i_65_);
                             stream.a(1.0F);
                             stream.a(0.0F);
                             stream.a(f_66_ + f_26_ * (float) i_69_);
                             stream.a(f_67_ + f_27_ * (float) i_69_);
                             stream.a(f_28_ * (float) i_69_ + f_68_);
-                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
+                            if (var_nativeToolkit.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
                             else stream.b(i_62_, i_63_, i_64_, i_65_);
                             stream.a(1.0F);
                             stream.a(1.0F);
                             stream.a(f_66_ + f_32_ * (float) i_69_);
                             stream.a(f_67_ + f_33_ * (float) i_69_);
                             stream.a(f_68_ + f_34_ * (float) i_69_);
-                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
+                            if (var_nativeToolkit.anInt8178 != 0) stream.a(i_62_, i_63_, i_64_, i_65_);
                             else stream.b(i_62_, i_63_, i_64_, i_65_);
                             stream.a(0.0F);
                             i_20_++;
@@ -215,28 +215,28 @@ final class Class280 {
                                 stream.a(f_26_ * (float) -i_80_ + f_77_);
                                 stream.a((float) -i_80_ * f_27_ + f_78_);
                                 stream.a(f_79_ + f_28_ * (float) -i_80_);
-                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_73_, i_74_, i_75_, i_76_);
+                                if (var_nativeToolkit.anInt8178 == 0) stream.b(i_73_, i_74_, i_75_, i_76_);
                                 else stream.a(i_73_, i_74_, i_75_, i_76_);
                                 stream.a(0.0F);
                                 stream.a(0.0F);
                                 stream.a(f_29_ * (float) i_80_ + f_77_);
                                 stream.a((float) i_80_ * f_30_ + f_78_);
                                 stream.a((float) i_80_ * f_31_ + f_79_);
-                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_73_, i_74_, i_75_, i_76_);
+                                if (var_nativeToolkit.anInt8178 == 0) stream.b(i_73_, i_74_, i_75_, i_76_);
                                 else stream.a(i_73_, i_74_, i_75_, i_76_);
                                 stream.a(1.0F);
                                 stream.a(0.0F);
                                 stream.a(f_77_ + (float) i_80_ * f_26_);
                                 stream.a((float) i_80_ * f_27_ + f_78_);
                                 stream.a((float) i_80_ * f_28_ + f_79_);
-                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_73_, i_74_, i_75_, i_76_);
+                                if (var_nativeToolkit.anInt8178 != 0) stream.a(i_73_, i_74_, i_75_, i_76_);
                                 else stream.b(i_73_, i_74_, i_75_, i_76_);
                                 stream.a(1.0F);
                                 stream.a(1.0F);
                                 stream.a((float) i_80_ * f_32_ + f_77_);
                                 stream.a((float) i_80_ * f_33_ + f_78_);
                                 stream.a(f_79_ + (float) i_80_ * f_34_);
-                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_73_, i_74_, i_75_, i_76_);
+                                if (var_nativeToolkit.anInt8178 != 0) stream.a(i_73_, i_74_, i_75_, i_76_);
                                 else stream.b(i_73_, i_74_, i_75_, i_76_);
                                 stream.a(0.0F);
                                 i_20_++;
@@ -263,28 +263,28 @@ final class Class280 {
                             stream.b((float) -i_46_ * f_26_ + f_43_);
                             stream.b(f_44_ + (float) -i_46_ * f_27_);
                             stream.b((float) -i_46_ * f_28_ + f_45_);
-                            if (var_ha_Sub3.anInt8178 == 0) stream.b(i_39_, i_40_, i_41_, i_42_);
+                            if (var_nativeToolkit.anInt8178 == 0) stream.b(i_39_, i_40_, i_41_, i_42_);
                             else stream.a(i_39_, i_40_, i_41_, i_42_);
                             stream.b(0.0F);
                             stream.b(0.0F);
                             stream.b(f_43_ + (float) i_46_ * f_29_);
                             stream.b(f_44_ + (float) i_46_ * f_30_);
                             stream.b(f_45_ + (float) i_46_ * f_31_);
-                            if (var_ha_Sub3.anInt8178 != 0) stream.a(i_39_, i_40_, i_41_, i_42_);
+                            if (var_nativeToolkit.anInt8178 != 0) stream.a(i_39_, i_40_, i_41_, i_42_);
                             else stream.b(i_39_, i_40_, i_41_, i_42_);
                             stream.b(1.0F);
                             stream.b(0.0F);
                             stream.b(f_43_ + f_26_ * (float) i_46_);
                             stream.b(f_27_ * (float) i_46_ + f_44_);
                             stream.b(f_28_ * (float) i_46_ + f_45_);
-                            if (var_ha_Sub3.anInt8178 == 0) stream.b(i_39_, i_40_, i_41_, i_42_);
+                            if (var_nativeToolkit.anInt8178 == 0) stream.b(i_39_, i_40_, i_41_, i_42_);
                             else stream.a(i_39_, i_40_, i_41_, i_42_);
                             stream.b(1.0F);
                             stream.b(1.0F);
                             stream.b(f_32_ * (float) i_46_ + f_43_);
                             stream.b((float) i_46_ * f_33_ + f_44_);
                             stream.b(f_45_ + f_34_ * (float) i_46_);
-                            if (var_ha_Sub3.anInt8178 == 0) stream.b(i_39_, i_40_, i_41_, i_42_);
+                            if (var_nativeToolkit.anInt8178 == 0) stream.b(i_39_, i_40_, i_41_, i_42_);
                             else stream.a(i_39_, i_40_, i_41_, i_42_);
                             stream.b(0.0F);
                             i_20_++;
@@ -306,28 +306,28 @@ final class Class280 {
                                 stream.b(f_54_ + (float) -i_57_ * f_26_);
                                 stream.b((float) -i_57_ * f_27_ + f_55_);
                                 stream.b(f_56_ + f_28_ * (float) -i_57_);
-                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_50_, i_51_, i_52_, i_53_);
+                                if (var_nativeToolkit.anInt8178 == 0) stream.b(i_50_, i_51_, i_52_, i_53_);
                                 else stream.a(i_50_, i_51_, i_52_, i_53_);
                                 stream.b(0.0F);
                                 stream.b(0.0F);
                                 stream.b(f_54_ + (float) i_57_ * f_29_);
                                 stream.b(f_30_ * (float) i_57_ + f_55_);
                                 stream.b(f_31_ * (float) i_57_ + f_56_);
-                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_50_, i_51_, i_52_, i_53_);
+                                if (var_nativeToolkit.anInt8178 != 0) stream.a(i_50_, i_51_, i_52_, i_53_);
                                 else stream.b(i_50_, i_51_, i_52_, i_53_);
                                 stream.b(1.0F);
                                 stream.b(0.0F);
                                 stream.b(f_54_ + (float) i_57_ * f_26_);
                                 stream.b((float) i_57_ * f_27_ + f_55_);
                                 stream.b(f_28_ * (float) i_57_ + f_56_);
-                                if (var_ha_Sub3.anInt8178 == 0) stream.b(i_50_, i_51_, i_52_, i_53_);
+                                if (var_nativeToolkit.anInt8178 == 0) stream.b(i_50_, i_51_, i_52_, i_53_);
                                 else stream.a(i_50_, i_51_, i_52_, i_53_);
                                 stream.b(1.0F);
                                 stream.b(1.0F);
                                 stream.b(f_54_ + f_32_ * (float) i_57_);
                                 stream.b(f_55_ + (float) i_57_ * f_33_);
                                 stream.b((float) i_57_ * f_34_ + f_56_);
-                                if (var_ha_Sub3.anInt8178 != 0) stream.a(i_50_, i_51_, i_52_, i_53_);
+                                if (var_nativeToolkit.anInt8178 != 0) stream.a(i_50_, i_51_, i_52_, i_53_);
                                 else stream.b(i_50_, i_51_, i_52_, i_53_);
                                 stream.b(0.0F);
                                 stream.b(1.0F);
@@ -339,22 +339,22 @@ final class Class280 {
             }
             stream.a();
             if (anInterface5_Impl1_3638.method18(6331)) {
-                var_ha_Sub3.method3925(66, anInterface5_Impl1_3638, 0);
-                var_ha_Sub3.method3925(68, anInterface5_Impl1_3630, 1);
-                var_ha_Sub3.method3862(0, aClass130_3637);
-                var_ha_Sub3.method3938(Class247.aClass21_3181, 2 * i_20_, anInterface5_Impl2_3635, 0, 0, i_20_ * 4, 118);
+                var_nativeToolkit.method3925(66, anInterface5_Impl1_3638, 0);
+                var_nativeToolkit.method3925(68, anInterface5_Impl1_3630, 1);
+                var_nativeToolkit.method3862(0, aClass130_3637);
+                var_nativeToolkit.method3938(Class247.aClass21_3181, 2 * i_20_, anInterface5_Impl2_3635, 0, 0, i_20_ * 4, 118);
             }
         }
     }
 
-    private final void method2103(byte i, ha_Sub3 var_ha_Sub3) {
+    private final void method2103(byte i, NativeToolkit var_nativeToolkit) {
         if (i != -33) aClass318_Sub9_Sub2ArrayArray3642 = null;
         anInt3639++;
-        Class59_Sub1.aFloat5299 = var_ha_Sub3.aFloat8093;
-        var_ha_Sub3.method3825(8);
-        var_ha_Sub3.method3865(false, i + 89);
-        var_ha_Sub3.method3946(-32, false);
-        var_ha_Sub3.method3942(5);
+        Class59_Sub1.aFloat5299 = var_nativeToolkit.aFloat8093;
+        var_nativeToolkit.method3825(8);
+        var_nativeToolkit.method3865(false, i + 89);
+        var_nativeToolkit.method3946(-32, false);
+        var_nativeToolkit.method3942(5);
     }
 
     public static void method2104(int i) {
@@ -368,21 +368,21 @@ final class Class280 {
         anInterface5_Impl1_3638.method21(23315);
     }
 
-    Class280(ha_Sub3 var_ha_Sub3) {
+    Class280(NativeToolkit var_nativeToolkit) {
         anInt3626 = 0;
         aClass318_Sub9_Sub2ArrayArray3632 = new Class318_Sub9_Sub2[1600][64];
         anIntArray3631 = new int[8191];
         aClass318_Sub9_Sub2ArrayArray3642 = new Class318_Sub9_Sub2[64][768];
         anIntArray3636 = new int[1600];
-        aClass130_3637 = (var_ha_Sub3.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4076, Class325.aClass325_4078}), new Class58(Class325.aClass325_4075)})));
-        anInterface5_Impl1_3638 = var_ha_Sub3.method3889(true, 16711680);
-        anInterface5_Impl1_3630 = var_ha_Sub3.method3889(false, 16711680);
+        aClass130_3637 = (var_nativeToolkit.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4076, Class325.aClass325_4078}), new Class58(Class325.aClass325_4075)})));
+        anInterface5_Impl1_3638 = var_nativeToolkit.method3889(true, 16711680);
+        anInterface5_Impl1_3630 = var_nativeToolkit.method3889(false, 16711680);
         anInterface5_Impl1_3630.method20(393168, (byte) 124, 12);
-        anInterface5_Impl2_3635 = var_ha_Sub3.method3840(-28633, false);
+        anInterface5_Impl2_3635 = var_nativeToolkit.method3840(-28633, false);
         anInterface5_Impl2_3635.method23(15959, 49146);
         Buffer buffer = anInterface5_Impl2_3635.method24(true, false);
         if (buffer != null) {
-            Stream stream = var_ha_Sub3.method3893(buffer, 9179);
+            Stream stream = var_nativeToolkit.method3893(buffer, 9179);
             if (Stream.c()) {
                 for (int i = 0; i < 8191; i++) {
                     int i_82_ = i * 4;
@@ -409,7 +409,7 @@ final class Class280 {
         }
         Buffer buffer_83_ = anInterface5_Impl1_3630.method19(true, 26775);
         if (buffer_83_ != null) {
-            Stream stream = var_ha_Sub3.method3893(buffer_83_, 9179);
+            Stream stream = var_nativeToolkit.method3893(buffer_83_, 9179);
             if (Stream.c()) {
                 for (int i = 0; i < 8191; i++) {
                     stream.a(0.0F);

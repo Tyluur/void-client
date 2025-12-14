@@ -11,9 +11,9 @@ final class na extends aa implements Interface19 {
         if (this.nativeid != 0L) Class257.method1947(0, this);
     }
 
-    private final native void ma(oa var_oa, ya var_ya, int i, int i_0_, int[] is, int[] is_1_);
+    private final native void ma(SafeModeToolkit var_safeModeToolkit, ya var_ya, int i, int i_0_, int[] is, int[] is_1_);
 
-    na(oa var_oa, ya var_ya, int i, int i_2_, int[] is, int[] is_3_) {
-        ma(var_oa, var_ya, i, i_2_, is, is_3_);
+    na(SafeModeToolkit var_safeModeToolkit, ya var_ya, int i, int i_2_, int[] is, int[] is_3_) {
+        ma(var_safeModeToolkit, var_ya, i, i_2_, is, is_3_);
     }
 }

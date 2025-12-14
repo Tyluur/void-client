@@ -12,7 +12,7 @@ final class Class366 implements Interface5_Impl1 {
     private final boolean aBoolean8509;
     private boolean aBoolean8510 = false;
     IDirect3DVertexBuffer anIDirect3DVertexBuffer8511;
-    private final Class378 aClass378_8512;
+    private final DirectXToolkit aDirectXToolkit_8512;
     private byte aByte8513;
     private int anInt8514;
 
@@ -43,7 +43,7 @@ final class Class366 implements Interface5_Impl1 {
                 i_3_ = 0;
             } else i_3_ = 1;
             if (this.anIDirect3DVertexBuffer8511 != null) this.anIDirect3DVertexBuffer8511.a(9275);
-            this.anIDirect3DVertexBuffer8511 = (aClass378_8512.anIDirect3DDevice9810.a(anInt8508, i_2_, 0, i_3_, this.anIDirect3DVertexBuffer8511));
+            this.anIDirect3DVertexBuffer8511 = (aDirectXToolkit_8512.anIDirect3DDevice9810.a(anInt8508, i_2_, 0, i_3_, this.anIDirect3DVertexBuffer8511));
             anInt8514 = anInt8508;
         }
         return null != this.anIDirect3DVertexBuffer8511;
@@ -53,9 +53,9 @@ final class Class366 implements Interface5_Impl1 {
         if (this.anIDirect3DVertexBuffer8511 == null) return null;
         bool &= aBoolean8509;
         if (i != 26775) method21(93);
-        if (!aBoolean8510 && ue.a((this.anIDirect3DVertexBuffer8511.Lock(0, anInt8514, !bool ? 0 : 8192, aClass378_8512.aGeometryBuffer9811)), false)) {
+        if (!aBoolean8510 && ue.a((this.anIDirect3DVertexBuffer8511.Lock(0, anInt8514, !bool ? 0 : 8192, aDirectXToolkit_8512.aGeometryBuffer9811)), false)) {
             aBoolean8510 = true;
-            return aClass378_8512.aGeometryBuffer9811;
+            return aDirectXToolkit_8512.aGeometryBuffer9811;
         }
         return null;
     }
@@ -80,8 +80,8 @@ final class Class366 implements Interface5_Impl1 {
         return aByte8513;
     }
 
-    Class366(Class378 class378, boolean bool) {
-        aClass378_8512 = class378;
+    Class366(DirectXToolkit directXToolkit, boolean bool) {
+        aDirectXToolkit_8512 = directXToolkit;
         aBoolean8509 = bool;
     }
 }

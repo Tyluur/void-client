@@ -326,7 +326,7 @@ final class Class348_Sub24 extends Node {
                         LoadingScreenRenderer.anInt3918++;
                         if (Class237.aBoolean3103) {
                             Class98.anInt1568++;
-                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((ha_Sub2.aClass351_7715), (Class348_Sub23_Sub2.aClass77_9029), i + -11525);
+                            Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((OpenGLToolkit.aClass351_7715), (Class348_Sub23_Sub2.aClass77_9029), i + -11525);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 117, (InputStream_Sub2.anInt85 << 14 | (Class348_Sub40_Sub26.anInt9349 << 28) | NPCDefinition.anInt1404));
                             Class348_Sub42_Sub14.method3243(30, class348_sub47);
                             Class237.aBoolean3103 = false;
@@ -342,7 +342,7 @@ final class Class348_Sub24 extends Node {
                             Class66.method705(class348_sub36);
                         }
                         for (; ; ) {
-                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class365.aClass262_4473.method1997(8));
+                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Renderer.aClass262_4473.method1997(8));
                             if (class348_sub36 == null) break;
                             Class46 class46 = (class348_sub36.aClass46_6989);
                             if (class46.anInt704 >= 0) {

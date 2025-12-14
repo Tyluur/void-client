@@ -5,8 +5,8 @@
 final class h extends FontRenderer implements Interface19 {
     long nativeid;
 
-    h(oa var_oa, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Sprite[] sprites) {
-        super(var_oa, fontMetrics);
+    h(SafeModeToolkit var_safeModeToolkit, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Sprite[] sprites) {
+        super(var_safeModeToolkit, fontMetrics);
         byte[][] is = new byte[class207s.length][];
         int[] is_0_ = new int[class207s.length];
         int[] is_1_ = new int[class207s.length];
@@ -19,7 +19,7 @@ final class h extends FontRenderer implements Interface19 {
             is_2_[i] = class207s[i].anInt2703;
             is_3_[i] = class207s[i].anInt2700;
         }
-        JA(var_oa, var_ya, is, is_0_, is_1_, is_2_, is_3_);
+        JA(var_safeModeToolkit, var_ya, is, is_0_, is_1_, is_2_, is_3_);
     }
 
     protected final void finalize() {
@@ -36,5 +36,5 @@ final class h extends FontRenderer implements Interface19 {
 
     private final native void NA(char c, int i, int i_10_, int i_11_, boolean bool, aa var_aa, int i_12_, int i_13_);
 
-    private final native void JA(oa var_oa, ya var_ya, byte[][] is, int[] is_14_, int[] is_15_, int[] is_16_, int[] is_17_);
+    private final native void JA(SafeModeToolkit var_safeModeToolkit, ya var_ya, byte[][] is, int[] is_14_, int[] is_15_, int[] is_16_, int[] is_17_);
 }

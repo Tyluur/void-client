@@ -19,22 +19,22 @@ final class Class258_Sub4 extends Class258 {
         if (i == -3022) anInt8554++;
     }
 
-    Class258_Sub4(ha_Sub2 var_ha_Sub2, int i, int i_0_, byte[] is, int i_1_) {
-        super(var_ha_Sub2, 3552, i, i_0_, false);
+    Class258_Sub4(OpenGLToolkit var_openGLToolkit, int i, int i_0_, byte[] is, int i_1_) {
+        super(var_openGLToolkit, 3552, i, i_0_, false);
         try {
             anInt8556 = i_0_;
-            this.aHa_Sub2_4851.method3771((byte) -94, this);
+            this.aOpenGLToolkit_4851.method3771((byte) -94, this);
             OpenGL.glPixelStorei(3317, 1);
             OpenGL.glTexImage1Dub(this.anInt4849, 0, this.anInt4858, anInt8556, 0, i_1_, 5121, is, 0);
             OpenGL.glPixelStorei(3317, 4);
             this.method1957(9728, true);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wha.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + (is != null ? "{...}" : "null") + ',' + i_1_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wha.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + (is != null ? "{...}" : "null") + ',' + i_1_ + ')'));
         }
     }
 
     final void method1972(byte i, boolean bool) {
-        this.aHa_Sub2_4851.method3771((byte) -114, this);
+        this.aOpenGLToolkit_4851.method3771((byte) -114, this);
         int i_2_ = 59 / ((-49 - i) / 40);
         anInt8555++;
         OpenGL.glTexParameteri(this.anInt4849, 10242, !bool ? 33071 : 10497);

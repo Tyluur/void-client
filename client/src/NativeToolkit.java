@@ -12,7 +12,8 @@ import java.awt.*;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-abstract class ha_Sub3 extends Toolkit {
+// ha_Sub3
+abstract class NativeToolkit extends Toolkit {
     static int anInt7884;
     static int anInt7885;
     static int anInt7886;
@@ -2607,7 +2608,7 @@ abstract class ha_Sub3 extends Toolkit {
         return true;
     }
 
-    ha_Sub3(Canvas canvas, Object object, TextureSource var_d, Index index, int i, int i_289_) {
+    NativeToolkit(Canvas canvas, Object object, TextureSource var_d, Index index, int i, int i_289_) {
         super(var_d);
         this.aFloat8089 = 3584.0F;
         this.anInt8095 = 50;

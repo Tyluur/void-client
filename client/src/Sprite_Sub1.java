@@ -20,7 +20,7 @@ final class Sprite_Sub1 extends Sprite {
     static int anInt8404;
     static int anInt8405;
     static int anInt8406;
-    private final ha_Sub3 aHa_Sub3_8407;
+    private final NativeToolkit aNativeToolkit_8407;
     private final boolean aBoolean8408;
     static int anInt8409;
     private final boolean aBoolean8410;
@@ -92,16 +92,16 @@ final class Sprite_Sub1 extends Sprite {
 
     final void method962(float f, float f_12_, float f_13_, float f_14_, float f_15_, float f_16_, int i, int i_17_, int i_18_, int i_19_) {
         anInt8393++;
-        Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-114);
-        Class101_Sub2 class101_sub2_20_ = aHa_Sub3_8407.method3820(false);
+        Class101_Sub2 class101_sub2 = aNativeToolkit_8407.method3934(-114);
+        Class101_Sub2 class101_sub2_20_ = aNativeToolkit_8407.method3820(false);
         anInterface18_Impl3_8403.method64(((aBoolean8410 || aBoolean8408 || ((0x1 & i_19_) == 0)) ? Class206.aClass209_4874 : Class71.aClass209_1212), -22095);
-        aHa_Sub3_8407.method3864(-5);
-        aHa_Sub3_8407.method3850((byte) 78, anInterface18_Impl3_8403);
-        aHa_Sub3_8407.method3817(81, i_18_);
-        aHa_Sub3_8407.method3923(true, i);
-        aHa_Sub3_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
-        aHa_Sub3_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
-        aHa_Sub3_8407.method3894(-28186, i_17_);
+        aNativeToolkit_8407.method3864(-5);
+        aNativeToolkit_8407.method3850((byte) 78, anInterface18_Impl3_8403);
+        aNativeToolkit_8407.method3817(81, i_18_);
+        aNativeToolkit_8407.method3923(true, i);
+        aNativeToolkit_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3894(-28186, i_17_);
         if (aBoolean8418) {
             float f_21_ = (float) scaleWidth();
             float f_22_ = (float) scaleHeight();
@@ -127,80 +127,80 @@ final class Sprite_Sub1 extends Sprite {
         class101_sub2.method935(1.0F, f_14_ - f_12_, -f + f_15_, 0.0F, 0.0F, -f_12_ + f_16_, 0.0F, 0.0F, f_13_ - f, 0);
         class101_sub2.method920(f_12_, false, 0.0F, f);
         class101_sub2_20_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -47, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 123), (byte) -66);
-        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
-        aHa_Sub3_8407.method3915(0);
-        aHa_Sub3_8407.method3933(-44);
-        aHa_Sub3_8407.method3879(-8629);
-        aHa_Sub3_8407.method3849((byte) 47, 1, Class318_Sub1_Sub2.aClass70_8737);
-        aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
+        aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
+        aNativeToolkit_8407.method3915(0);
+        aNativeToolkit_8407.method3933(-44);
+        aNativeToolkit_8407.method3879(-8629);
+        aNativeToolkit_8407.method3849((byte) 47, 1, Class318_Sub1_Sub2.aClass70_8737);
+        aNativeToolkit_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
     }
 
     final void method965(int i, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_, int i_40_) {
         anInt8423++;
-        Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-80);
-        Class101_Sub2 class101_sub2_41_ = aHa_Sub3_8407.method3820(false);
+        Class101_Sub2 class101_sub2 = aNativeToolkit_8407.method3934(-80);
+        Class101_Sub2 class101_sub2_41_ = aNativeToolkit_8407.method3820(false);
         anInterface18_Impl3_8403.method64(Class206.aClass209_4874, -22095);
-        aHa_Sub3_8407.method3864(-20);
-        aHa_Sub3_8407.method3850((byte) -46, anInterface18_Impl3_8403);
-        aHa_Sub3_8407.method3817(98, i_40_);
-        aHa_Sub3_8407.method3923(true, i_38_);
-        aHa_Sub3_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
-        aHa_Sub3_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
-        aHa_Sub3_8407.method3894(-28186, i_39_);
+        aNativeToolkit_8407.method3864(-20);
+        aNativeToolkit_8407.method3850((byte) -46, anInterface18_Impl3_8403);
+        aNativeToolkit_8407.method3817(98, i_40_);
+        aNativeToolkit_8407.method3923(true, i_38_);
+        aNativeToolkit_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3894(-28186, i_39_);
         boolean bool = aBoolean8391 && anInt8419 == 0 && anInt8397 == 0;
         boolean bool_42_ = (aBoolean8396 && anInt8400 == 0 && anInt8416 == 0);
         if (bool_42_ & bool) {
             class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -26, (float) i_37_), anInterface18_Impl3_8403.method67((float) i_36_, 118), (byte) -75);
             class101_sub2.method932(0.0F, (float) i_37_, (float) i_36_, (byte) -83);
             class101_sub2.translate(i, i_35_, 0);
-            aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
-            aHa_Sub3_8407.method3915(0);
-            aHa_Sub3_8407.method3933(-63);
+            aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
+            aNativeToolkit_8407.method3915(0);
+            aNativeToolkit_8407.method3933(-63);
         } else if (bool_42_) {
             int i_43_ = i_37_ + i_35_;
             int i_44_ = scaleHeight();
             class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -99, (float) anInt8417), anInterface18_Impl3_8403.method67((float) i_36_, 110), (byte) -120);
-            aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
+            aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
             int i_45_ = anInt8419 + i_35_;
             int i_46_ = i_45_ - -anInt8417;
             while (i_46_ <= i_43_) {
                 class101_sub2.method932(0.0F, (float) anInt8417, (float) i_36_, (byte) -32);
                 class101_sub2.translate(i, i_45_, 0);
-                aHa_Sub3_8407.method3915(0);
+                aNativeToolkit_8407.method3915(0);
                 i_46_ += i_44_;
                 i_45_ += i_44_;
-                aHa_Sub3_8407.method3933(-57);
+                aNativeToolkit_8407.method3933(-57);
             }
             if (i_43_ > i_45_) {
                 int i_47_ = i_43_ - i_45_;
                 class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -81, (float) i_47_), anInterface18_Impl3_8403.method67((float) i_36_, 127), (byte) -16);
-                aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
+                aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
                 class101_sub2.method932(0.0F, (float) i_47_, (float) i_36_, (byte) -101);
                 class101_sub2.translate(i, i_45_, 0);
-                aHa_Sub3_8407.method3915(0);
-                aHa_Sub3_8407.method3933(-91);
+                aNativeToolkit_8407.method3915(0);
+                aNativeToolkit_8407.method3933(-91);
             }
         } else if (bool) {
             int i_61_ = i - -i_36_;
             int i_62_ = scaleWidth();
             class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -121, (float) i_37_), anInterface18_Impl3_8403.method67((float) anInt8411, 77), (byte) -27);
-            aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
+            aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
             int i_63_ = i - -anInt8400;
             for (int i_64_ = anInt8411 + i_63_; i_64_ <= i_61_; i_64_ += i_62_) {
                 class101_sub2.method932(0.0F, (float) i_37_, (float) anInt8411, (byte) -69);
                 class101_sub2.translate(i_63_, i_35_, 0);
-                aHa_Sub3_8407.method3915(0);
+                aNativeToolkit_8407.method3915(0);
                 i_63_ += i_62_;
-                aHa_Sub3_8407.method3933(-40);
+                aNativeToolkit_8407.method3933(-40);
             }
             if (i_63_ < i_61_) {
                 int i_65_ = -i_63_ + i_61_;
                 class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -62, (float) i_37_), anInterface18_Impl3_8403.method67((float) i_65_, 119), (byte) -10);
-                aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
+                aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
                 class101_sub2.method932(0.0F, (float) i_37_, (float) i_65_, (byte) -120);
                 class101_sub2.translate(i_63_, i_35_, 0);
-                aHa_Sub3_8407.method3915(0);
-                aHa_Sub3_8407.method3933(-57);
+                aNativeToolkit_8407.method3915(0);
+                aNativeToolkit_8407.method3933(-57);
             }
         } else {
             int i_48_ = i_37_ + i_35_;
@@ -211,23 +211,23 @@ final class Sprite_Sub1 extends Sprite {
             int i_53_ = i_52_ + anInt8417;
             while (i_48_ >= i_53_) {
                 class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -89, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 88), (byte) -16);
-                aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
+                aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
                 int i_54_ = anInt8400 + i;
                 for (int i_55_ = i_54_ - -anInt8411; i_55_ <= i_49_; i_55_ += i_50_) {
                     class101_sub2.method932(0.0F, (float) anInt8417, (float) anInt8411, (byte) -65);
                     class101_sub2.translate(i_54_, i_52_, 0);
-                    aHa_Sub3_8407.method3915(0);
+                    aNativeToolkit_8407.method3915(0);
                     i_54_ += i_50_;
-                    aHa_Sub3_8407.method3933(-113);
+                    aNativeToolkit_8407.method3933(-113);
                 }
                 if (i_49_ > i_54_) {
                     int i_56_ = -i_54_ + i_49_;
                     class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -82, (float) anInt8417), anInterface18_Impl3_8403.method67((float) i_56_, 86), (byte) -35);
-                    aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
+                    aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
                     class101_sub2.method932(0.0F, (float) anInt8417, (float) i_56_, (byte) -26);
                     class101_sub2.translate(i_54_, i_52_, 0);
-                    aHa_Sub3_8407.method3915(0);
-                    aHa_Sub3_8407.method3933(-79);
+                    aNativeToolkit_8407.method3915(0);
+                    aNativeToolkit_8407.method3933(-79);
                 }
                 i_53_ += i_51_;
                 i_52_ += i_51_;
@@ -235,44 +235,44 @@ final class Sprite_Sub1 extends Sprite {
             if (i_52_ < i_48_) {
                 int i_57_ = i_48_ + -i_52_;
                 class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -121, (float) i_57_), anInterface18_Impl3_8403.method67((float) anInt8411, 102), (byte) -59);
-                aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
+                aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
                 int i_58_ = anInt8400 + i;
                 int i_59_ = anInt8411 + i_58_;
                 while (i_49_ >= i_59_) {
                     class101_sub2.method932(0.0F, (float) i_57_, (float) anInt8411, (byte) -98);
                     class101_sub2.translate(i_58_, i_52_, 0);
-                    aHa_Sub3_8407.method3915(0);
+                    aNativeToolkit_8407.method3915(0);
                     i_58_ += i_50_;
                     i_59_ += i_50_;
-                    aHa_Sub3_8407.method3933(-69);
+                    aNativeToolkit_8407.method3933(-69);
                 }
                 if (i_49_ > i_58_) {
                     int i_60_ = i_49_ - i_58_;
                     class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -102, (float) i_57_), anInterface18_Impl3_8403.method67((float) i_60_, 115), (byte) -90);
-                    aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
+                    aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
                     class101_sub2.method932(0.0F, (float) i_57_, (float) i_60_, (byte) -95);
                     class101_sub2.translate(i_58_, i_52_, 0);
-                    aHa_Sub3_8407.method3915(0);
-                    aHa_Sub3_8407.method3933(-54);
+                    aNativeToolkit_8407.method3915(0);
+                    aNativeToolkit_8407.method3933(-54);
                 }
             }
         }
-        aHa_Sub3_8407.method3879(-8629);
-        aHa_Sub3_8407.method3849((byte) 47, 1, Class318_Sub1_Sub2.aClass70_8737);
-        aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
+        aNativeToolkit_8407.method3879(-8629);
+        aNativeToolkit_8407.method3849((byte) 47, 1, Class318_Sub1_Sub2.aClass70_8737);
+        aNativeToolkit_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
     }
 
     final void method983(float f, float f_66_, float f_67_, float f_68_, float f_69_, float f_70_, int i, aa var_aa, int i_71_, int i_72_) {
         anInt8390++;
-        Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-121);
-        Class101_Sub2 class101_sub2_73_ = aHa_Sub3_8407.method3820(false);
+        Class101_Sub2 class101_sub2 = aNativeToolkit_8407.method3934(-121);
+        Class101_Sub2 class101_sub2_73_ = aNativeToolkit_8407.method3820(false);
         aa_Sub2 var_aa_Sub2 = (aa_Sub2) var_aa;
         Interface18_Impl3 interface18_impl3 = var_aa_Sub2.anInterface18_Impl3_5196;
         anInterface18_Impl3_8403.method64(((aBoolean8410 || aBoolean8408 || (0x1 & i) == 0) ? Class206.aClass209_4874 : Class71.aClass209_1212), -22095);
-        aHa_Sub3_8407.method3864(101);
-        aHa_Sub3_8407.method3850((byte) -102, anInterface18_Impl3_8403);
-        aHa_Sub3_8407.method3817(86, 1);
-        aHa_Sub3_8407.method3923(true, 1);
+        aNativeToolkit_8407.method3864(101);
+        aNativeToolkit_8407.method3850((byte) -102, anInterface18_Impl3_8403);
+        aNativeToolkit_8407.method3817(86, 1);
+        aNativeToolkit_8407.method3923(true, 1);
         if (aBoolean8418) {
             float f_74_ = (float) anInt8411 / (float) scaleWidth();
             float f_75_ = (float) anInt8417 / (float) scaleHeight();
@@ -283,29 +283,29 @@ final class Sprite_Sub1 extends Sprite {
             class101_sub2.method920(f_66_, false, 0.0F, f);
         }
         class101_sub2_73_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -87, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 75), (byte) -60);
-        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
-        aHa_Sub3_8407.method3897(1, -4382);
-        aHa_Sub3_8407.method3850((byte) -31, interface18_impl3);
-        aHa_Sub3_8407.method3874(JavaThreadResource.aClass229_2207, 127, Class328_Sub3.aClass229_6519);
-        aHa_Sub3_8407.method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
-        Class101_Sub2 class101_sub2_76_ = aHa_Sub3_8407.method3820(false);
+        aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
+        aNativeToolkit_8407.method3897(1, -4382);
+        aNativeToolkit_8407.method3850((byte) -31, interface18_impl3);
+        aNativeToolkit_8407.method3874(JavaThreadResource.aClass229_2207, 127, Class328_Sub3.aClass229_6519);
+        aNativeToolkit_8407.method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
+        Class101_Sub2 class101_sub2_76_ = aNativeToolkit_8407.method3820(false);
         class101_sub2_76_.method898(class101_sub2);
         class101_sub2_76_.translate(-i_71_, -i_72_, 0);
         class101_sub2_76_.method914(interface18_impl3.method71((byte) -32, 1.0F), 1.0F, 0, interface18_impl3.method67(1.0F, 71));
-        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
-        aHa_Sub3_8407.method3915(0);
-        aHa_Sub3_8407.method3933(-109);
-        aHa_Sub3_8407.method3879(-8629);
-        aHa_Sub3_8407.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-        aHa_Sub3_8407.method3874(JavaThreadResource.aClass229_2207, 118, JavaThreadResource.aClass229_2207);
-        aHa_Sub3_8407.method3850((byte) 98, null);
-        aHa_Sub3_8407.method3897(0, -4382);
-        aHa_Sub3_8407.method3879(-8629);
+        aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
+        aNativeToolkit_8407.method3915(0);
+        aNativeToolkit_8407.method3933(-109);
+        aNativeToolkit_8407.method3879(-8629);
+        aNativeToolkit_8407.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+        aNativeToolkit_8407.method3874(JavaThreadResource.aClass229_2207, 118, JavaThreadResource.aClass229_2207);
+        aNativeToolkit_8407.method3850((byte) 98, null);
+        aNativeToolkit_8407.method3897(0, -4382);
+        aNativeToolkit_8407.method3879(-8629);
     }
 
     final void method968(int i, int i_77_, int i_78_) {
         anInt8406++;
-        int[] is = aHa_Sub3_8407.na(i, i_77_, anInt8411, anInt8417);
+        int[] is = aNativeToolkit_8407.na(i, i_77_, anInt8411, anInt8417);
         int[] is_79_ = new int[anInt8417 * anInt8411];
         anInterface18_Impl3_8403.method65(0, is_79_, anInt8411, 0, anInt8417, (byte) 112, 0);
         if (i_78_ == 0) {
@@ -345,16 +345,16 @@ final class Sprite_Sub1 extends Sprite {
 
     final void method982(int i, int i_94_, int i_95_, int i_96_, int i_97_, int i_98_, int i_99_, int i_100_) {
         anInt8395++;
-        Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-95);
-        Class101_Sub2 class101_sub2_101_ = aHa_Sub3_8407.method3820(false);
+        Class101_Sub2 class101_sub2 = aNativeToolkit_8407.method3934(-95);
+        Class101_Sub2 class101_sub2_101_ = aNativeToolkit_8407.method3820(false);
         anInterface18_Impl3_8403.method64(((aBoolean8410 || aBoolean8408 || ((i_100_ & 0x1) == 0)) ? Class206.aClass209_4874 : Class71.aClass209_1212), -22095);
-        aHa_Sub3_8407.method3864(81);
-        aHa_Sub3_8407.method3850((byte) 65, anInterface18_Impl3_8403);
-        aHa_Sub3_8407.method3817(58, i_99_);
-        aHa_Sub3_8407.method3923(true, i_97_);
-        aHa_Sub3_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
-        aHa_Sub3_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
-        aHa_Sub3_8407.method3894(-28186, i_98_);
+        aNativeToolkit_8407.method3864(81);
+        aNativeToolkit_8407.method3850((byte) 65, anInterface18_Impl3_8403);
+        aNativeToolkit_8407.method3817(58, i_99_);
+        aNativeToolkit_8407.method3923(true, i_97_);
+        aNativeToolkit_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3894(-28186, i_98_);
         class101_sub2_101_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -44, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 101), (byte) -30);
         if (aBoolean8418) {
             i_95_ = i_95_ * anInt8411 / scaleWidth();
@@ -364,12 +364,12 @@ final class Sprite_Sub1 extends Sprite {
         }
         class101_sub2.method932(0.0F, (float) i_96_, (float) i_95_, (byte) -100);
         class101_sub2.translate(i, i_94_, 0);
-        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
-        aHa_Sub3_8407.method3915(0);
-        aHa_Sub3_8407.method3933(-118);
-        aHa_Sub3_8407.method3879(-8629);
-        aHa_Sub3_8407.method3849((byte) 47, 1, Class318_Sub1_Sub2.aClass70_8737);
-        aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
+        aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
+        aNativeToolkit_8407.method3915(0);
+        aNativeToolkit_8407.method3933(-118);
+        aNativeToolkit_8407.method3879(-8629);
+        aNativeToolkit_8407.method3849((byte) 47, 1, Class318_Sub1_Sub2.aClass70_8737);
+        aNativeToolkit_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
     }
 
     final void projectOffsets(int[] is) {
@@ -382,27 +382,27 @@ final class Sprite_Sub1 extends Sprite {
 
     final void method964(int i, int i_102_, int i_103_, int i_104_, int i_105_) {
         anInt8409++;
-        Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-92);
-        Class101_Sub2 class101_sub2_106_ = aHa_Sub3_8407.method3820(false);
+        Class101_Sub2 class101_sub2 = aNativeToolkit_8407.method3934(-92);
+        Class101_Sub2 class101_sub2_106_ = aNativeToolkit_8407.method3820(false);
         i += anInt8400;
         i_102_ += anInt8419;
         anInterface18_Impl3_8403.method64(Class206.aClass209_4874, -22095);
-        aHa_Sub3_8407.method3864(-82);
-        aHa_Sub3_8407.method3850((byte) -67, anInterface18_Impl3_8403);
-        aHa_Sub3_8407.method3817(96, i_105_);
-        aHa_Sub3_8407.method3923(true, i_103_);
-        aHa_Sub3_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
-        aHa_Sub3_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
-        aHa_Sub3_8407.method3894(-28186, i_104_);
+        aNativeToolkit_8407.method3864(-82);
+        aNativeToolkit_8407.method3850((byte) -67, anInterface18_Impl3_8403);
+        aNativeToolkit_8407.method3817(96, i_105_);
+        aNativeToolkit_8407.method3923(true, i_103_);
+        aNativeToolkit_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3894(-28186, i_104_);
         class101_sub2.method932(0.0F, (float) anInt8417, (float) anInt8411, (byte) -44);
         class101_sub2.translate(i, i_102_, 0);
         class101_sub2_106_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -125, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 111), (byte) -19);
-        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
-        aHa_Sub3_8407.method3915(0);
-        aHa_Sub3_8407.method3933(-41);
-        aHa_Sub3_8407.method3879(-8629);
-        aHa_Sub3_8407.method3849((byte) 47, 1, Class318_Sub1_Sub2.aClass70_8737);
-        aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
+        aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
+        aNativeToolkit_8407.method3915(0);
+        aNativeToolkit_8407.method3933(-41);
+        aNativeToolkit_8407.method3879(-8629);
+        aNativeToolkit_8407.method3849((byte) 47, 1, Class318_Sub1_Sub2.aClass70_8737);
+        aNativeToolkit_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
     }
 
     final int getWidth() {
@@ -412,7 +412,7 @@ final class Sprite_Sub1 extends Sprite {
 
     final void method979(int i, int i_107_, int i_108_, int i_109_, int i_110_, int i_111_) {
         anInt8392++;
-        int[] is = aHa_Sub3_8407.na(i_110_, i_111_, i_108_, i_109_);
+        int[] is = aNativeToolkit_8407.na(i_110_, i_111_, i_108_, i_109_);
         if (is != null) {
             for (int i_112_ = 0; i_112_ < is.length; i_112_++)
                 is[i_112_] = Class273.method2057(is[i_112_], -16777216);
@@ -427,41 +427,41 @@ final class Sprite_Sub1 extends Sprite {
         i += anInt8400;
         Interface18_Impl3 interface18_impl3 = var_aa_Sub2.anInterface18_Impl3_5196;
         anInterface18_Impl3_8403.method64(Class206.aClass209_4874, -22095);
-        aHa_Sub3_8407.method3864(-81);
-        aHa_Sub3_8407.method3850((byte) -35, anInterface18_Impl3_8403);
-        aHa_Sub3_8407.method3817(110, 1);
-        aHa_Sub3_8407.method3923(true, 1);
-        Class101_Sub2 class101_sub2 = aHa_Sub3_8407.method3934(-120);
+        aNativeToolkit_8407.method3864(-81);
+        aNativeToolkit_8407.method3850((byte) -35, anInterface18_Impl3_8403);
+        aNativeToolkit_8407.method3817(110, 1);
+        aNativeToolkit_8407.method3923(true, 1);
+        Class101_Sub2 class101_sub2 = aNativeToolkit_8407.method3934(-120);
         class101_sub2.method932(0.0F, (float) anInt8417, (float) anInt8411, (byte) -55);
         class101_sub2.translate(i, i_113_, 0);
-        aHa_Sub3_8407.method3915(0);
-        Class101_Sub2 class101_sub2_116_ = aHa_Sub3_8407.method3820(false);
+        aNativeToolkit_8407.method3915(0);
+        Class101_Sub2 class101_sub2_116_ = aNativeToolkit_8407.method3820(false);
         class101_sub2_116_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -102, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 106), (byte) -33);
-        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
-        aHa_Sub3_8407.method3897(1, -4382);
-        aHa_Sub3_8407.method3850((byte) 101, interface18_impl3);
-        aHa_Sub3_8407.method3874(JavaThreadResource.aClass229_2207, 110, Class328_Sub3.aClass229_6519);
-        aHa_Sub3_8407.method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
-        Class101_Sub2 class101_sub2_117_ = aHa_Sub3_8407.method3820(false);
+        aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
+        aNativeToolkit_8407.method3897(1, -4382);
+        aNativeToolkit_8407.method3850((byte) 101, interface18_impl3);
+        aNativeToolkit_8407.method3874(JavaThreadResource.aClass229_2207, 110, Class328_Sub3.aClass229_6519);
+        aNativeToolkit_8407.method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
+        Class101_Sub2 class101_sub2_117_ = aNativeToolkit_8407.method3820(false);
         class101_sub2_117_.method932(1.0F, interface18_impl3.method71((byte) -108, (float) anInt8417), interface18_impl3.method67((float) anInt8411, 95), (byte) -81);
         class101_sub2_117_.method920(interface18_impl3.method71((byte) -27, (float) (i_113_ + -i_115_)), false, 0.0F, interface18_impl3.method67((float) (i - i_114_), 122));
-        aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
-        aHa_Sub3_8407.method3933(-81);
-        aHa_Sub3_8407.method3879(-8629);
-        aHa_Sub3_8407.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-        aHa_Sub3_8407.method3874(JavaThreadResource.aClass229_2207, 127, JavaThreadResource.aClass229_2207);
-        aHa_Sub3_8407.method3850((byte) -84, null);
-        aHa_Sub3_8407.method3897(0, -4382);
-        aHa_Sub3_8407.method3879(-8629);
+        aNativeToolkit_8407.method3853(-32, Option_Sub18.aClass251_6030);
+        aNativeToolkit_8407.method3933(-81);
+        aNativeToolkit_8407.method3879(-8629);
+        aNativeToolkit_8407.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+        aNativeToolkit_8407.method3874(JavaThreadResource.aClass229_2207, 127, JavaThreadResource.aClass229_2207);
+        aNativeToolkit_8407.method3850((byte) -84, null);
+        aNativeToolkit_8407.method3897(0, -4382);
+        aNativeToolkit_8407.method3879(-8629);
     }
 
-    Sprite_Sub1(ha_Sub3 var_ha_Sub3, int i, int i_118_, boolean bool) {
+    Sprite_Sub1(NativeToolkit var_nativeToolkit, int i, int i_118_, boolean bool) {
         aBoolean8418 = false;
         anInt8400 = 0;
         anInt8417 = i_118_;
         anInt8411 = i;
-        aHa_Sub3_8407 = var_ha_Sub3;
-        anInterface18_Impl3_8403 = var_ha_Sub3.method3861(i_118_, (byte) -84, i, Class68.aClass68_1183, (bool ? Class108.aClass304_1662 : Class348_Sub45.aClass304_7103));
+        aNativeToolkit_8407 = var_nativeToolkit;
+        anInterface18_Impl3_8403 = var_nativeToolkit.method3861(i_118_, (byte) -84, i, Class68.aClass68_1183, (bool ? Class108.aClass304_1662 : Class348_Sub45.aClass304_7103));
         anInterface18_Impl3_8403.method66(true, true, 25688);
         aBoolean8410 = (i != anInterface18_Impl3_8403.method69(false));
         aBoolean8408 = (i_118_ != anInterface18_Impl3_8403.method72(-39));
@@ -469,21 +469,21 @@ final class Sprite_Sub1 extends Sprite {
         aBoolean8391 = !aBoolean8408 && anInterface18_Impl3_8403.method73(119);
     }
 
-    Sprite_Sub1(ha_Sub3 var_ha_Sub3, int i, int i_119_, int[] is, int i_120_, int i_121_) {
+    Sprite_Sub1(NativeToolkit var_nativeToolkit, int i, int i_119_, int[] is, int i_120_, int i_121_) {
         aBoolean8418 = false;
         anInt8400 = 0;
         try {
-            aHa_Sub3_8407 = var_ha_Sub3;
+            aNativeToolkit_8407 = var_nativeToolkit;
             anInt8411 = i;
             anInt8417 = i_119_;
-            anInterface18_Impl3_8403 = var_ha_Sub3.method3830(i, is, false, (byte) -116, i_120_, i_121_, i_119_);
+            anInterface18_Impl3_8403 = var_nativeToolkit.method3830(i, is, false, (byte) -116, i_120_, i_121_, i_119_);
             anInterface18_Impl3_8403.method66(true, true, 25688);
             aBoolean8410 = i != anInterface18_Impl3_8403.method69(false);
             aBoolean8408 = anInterface18_Impl3_8403.method72(-74) != i_119_;
             aBoolean8396 = !aBoolean8410 && anInterface18_Impl3_8403.method73(91);
             aBoolean8391 = !aBoolean8408 && anInterface18_Impl3_8403.method73(101);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jd.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + i + ',' + i_119_ + ',' + (is != null ? "{...}" : "null") + ',' + i_120_ + ',' + i_121_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("jd.<init>(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_119_ + ',' + (is != null ? "{...}" : "null") + ',' + i_120_ + ',' + i_121_ + ')'));
         }
     }
 }

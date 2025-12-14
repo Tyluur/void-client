@@ -46,7 +46,7 @@ final class s_Sub2 extends Ground {
     static int[] anIntArray8269;
     static int anInt8270 = -1;
     static int anInt8271;
-    ha_Sub2 aHa_Sub2_8272;
+    OpenGLToolkit aOpenGLToolkit_8272;
     private byte[][] aByteArrayArray8273;
     private Class123 aClass123_8274;
     Class123 aClass123_8275;
@@ -64,8 +64,8 @@ final class s_Sub2 extends Ground {
     final void wa(r var_r, int i, int i_0_, int i_1_, int i_2_, boolean bool) {
         anInt8251++;
         if (aClass104_8266 != null && var_r != null) {
-            int i_3_ = (i - ((this.aHa_Sub2_8272.anInt7772 * i_0_) >> 8) >> this.aHa_Sub2_8272.anInt7731);
-            int i_4_ = (-(i_0_ * this.aHa_Sub2_8272.anInt7777 >> 8) + i_1_ >> this.aHa_Sub2_8272.anInt7731);
+            int i_3_ = (i - ((this.aOpenGLToolkit_8272.anInt7772 * i_0_) >> 8) >> this.aOpenGLToolkit_8272.anInt7731);
+            int i_4_ = (-(i_0_ * this.aOpenGLToolkit_8272.anInt7777 >> 8) + i_1_ >> this.aOpenGLToolkit_8272.anInt7731);
             aClass104_8266.method951(var_r, i_3_, i_4_, 70);
         }
     }
@@ -136,7 +136,7 @@ final class s_Sub2 extends Ground {
             int i = 24;
             if (anIntArrayArrayArray8252 != null) i += 4;
             if ((0x7 & this.anInt8235) != 0) i += 12;
-            jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer = this.aHa_Sub2_8272.aNativeHeap7730.a(anInt8284 * i, false);
+            jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer = this.aOpenGLToolkit_8272.aNativeHeap7730.a(anInt8284 * i, false);
             Stream stream = new Stream(nativeheapbuffer);
             Class348_Sub20[] class348_sub20s = new Class348_Sub20[anInt8284];
             int i_34_ = Class348_Sub40_Sub1.method3051(anInt8284 / 4, 4096);
@@ -245,8 +245,8 @@ final class s_Sub2 extends Ground {
                                     if (i_90_ > 126) i_90_ = 126;
                                 } else i_90_ = 2;
                                 if ((0x7 & this.anInt8235) == 0) {
-                                    f_89_ = ((this.aHa_Sub2_8272.aFloatArray7825[2]) * f_78_ + (f_77_ * (this.aHa_Sub2_8272.aFloatArray7825[0]) + f_76_ * (this.aHa_Sub2_8272.aFloatArray7825[1])));
-                                    f_89_ = ((this.aHa_Sub2_8272.aFloat7768) + (f_89_ > 0.0F ? (this.aHa_Sub2_8272.aFloat7832) : (this.aHa_Sub2_8272.aFloat7871)) * f_89_);
+                                    f_89_ = ((this.aOpenGLToolkit_8272.aFloatArray7825[2]) * f_78_ + (f_77_ * (this.aOpenGLToolkit_8272.aFloatArray7825[0]) + f_76_ * (this.aOpenGLToolkit_8272.aFloatArray7825[1])));
+                                    f_89_ = ((this.aOpenGLToolkit_8272.aFloat7768) + (f_89_ > 0.0F ? (this.aOpenGLToolkit_8272.aFloat7832) : (this.aOpenGLToolkit_8272.aFloat7871)) * f_89_);
                                 }
                                 i_75_ = (Class10.HSL_TO_RGB[0xff80 & i_69_ | i_90_]);
                             }
@@ -261,8 +261,8 @@ final class s_Sub2 extends Ground {
                                     else if (i_93_ > 126) i_93_ = 126;
                                     i_92_ = (Class10.HSL_TO_RGB[0xff80 & i_70_ | i_93_]);
                                     if ((0x7 & this.anInt8235) == 0) {
-                                        float f_94_ = ((this.aHa_Sub2_8272.aFloatArray7825[0]) * f_77_ + f_76_ * (this.aHa_Sub2_8272.aFloatArray7825[1]) + f_78_ * (this.aHa_Sub2_8272.aFloatArray7825[2]));
-                                        f_94_ = ((f_89_ > 0.0F ? (this.aHa_Sub2_8272.aFloat7832) : (this.aHa_Sub2_8272.aFloat7871)) * f_89_ + (this.aHa_Sub2_8272.aFloat7768));
+                                        float f_94_ = ((this.aOpenGLToolkit_8272.aFloatArray7825[0]) * f_77_ + f_76_ * (this.aOpenGLToolkit_8272.aFloatArray7825[1]) + f_78_ * (this.aOpenGLToolkit_8272.aFloatArray7825[2]));
+                                        f_94_ = ((f_89_ > 0.0F ? (this.aOpenGLToolkit_8272.aFloat7832) : (this.aOpenGLToolkit_8272.aFloat7871)) * f_89_ + (this.aOpenGLToolkit_8272.aFloat7768));
                                         int i_95_ = (i_92_ & 0xffcb9e) >> 16;
                                         int i_96_ = (0xff29 & i_92_) >> 8;
                                         int i_97_ = 0xff & i_92_;
@@ -279,7 +279,7 @@ final class s_Sub2 extends Ground {
                                         i_92_ = (i_95_ << 16 | i_96_ << 8 | i_97_);
                                     }
                                 } else i_92_ = i_75_;
-                                if (this.aHa_Sub2_8272.aBoolean7775) {
+                                if (this.aOpenGLToolkit_8272.aBoolean7775) {
                                     stream.a((float) i_65_);
                                     stream.a((float) (this.method3986(i_65_, i_66_, (byte) -121) + i_71_));
                                     stream.a((float) i_66_);
@@ -370,7 +370,7 @@ final class s_Sub2 extends Ground {
                 }
             }
             stream.a();
-            anInterface2_8279 = this.aHa_Sub2_8272.method3739(8448, nativeheapbuffer, false, i, stream.b());
+            anInterface2_8279 = this.aOpenGLToolkit_8272.method3739(8448, nativeheapbuffer, false, i, stream.b());
             this.aClass123_8276 = new Class123(anInterface2_8279, 5126, 3, 0);
             aClass123_8274 = new Class123(anInterface2_8279, 5121, 4, 12);
             int i_111_;
@@ -409,15 +409,15 @@ final class s_Sub2 extends Ground {
         if (i != -82) method3981(null, null);
         int[] is_115_ = this.anIntArrayArrayArray8234[i_113_][i_114_];
         int i_116_ = is.length;
-        if (this.aHa_Sub2_8272.anIntArray7880.length < i_116_) {
-            this.aHa_Sub2_8272.anIntArray7883 = new int[i_116_];
-            this.aHa_Sub2_8272.anIntArray7880 = new int[i_116_];
+        if (this.aOpenGLToolkit_8272.anIntArray7880.length < i_116_) {
+            this.aOpenGLToolkit_8272.anIntArray7883 = new int[i_116_];
+            this.aOpenGLToolkit_8272.anIntArray7880 = new int[i_116_];
         }
-        int[] is_117_ = this.aHa_Sub2_8272.anIntArray7880;
-        int[] is_118_ = this.aHa_Sub2_8272.anIntArray7883;
+        int[] is_117_ = this.aOpenGLToolkit_8272.anIntArray7880;
+        int[] is_118_ = this.aOpenGLToolkit_8272.anIntArray7883;
         for (int i_119_ = 0; i_119_ < i_116_; i_119_++) {
-            is_117_[i_119_] = (is[i_119_] >> this.aHa_Sub2_8272.anInt7731);
-            is_118_[i_119_] = (is_115_[i_119_] >> this.aHa_Sub2_8272.anInt7731);
+            is_117_[i_119_] = (is[i_119_] >> this.aOpenGLToolkit_8272.anInt7731);
+            is_118_[i_119_] = (is_115_[i_119_] >> this.aOpenGLToolkit_8272.anInt7731);
         }
         int i_120_ = 0;
         while (i_120_ < i_116_) {
@@ -438,17 +438,17 @@ final class s_Sub2 extends Ground {
     final void CA(r var_r, int i, int i_128_, int i_129_, int i_130_, boolean bool) {
         anInt8236++;
         if (aClass104_8266 != null && var_r != null) {
-            int i_131_ = (i - ((i_128_ * this.aHa_Sub2_8272.anInt7772) >> 8) >> this.aHa_Sub2_8272.anInt7731);
-            int i_132_ = (-((this.aHa_Sub2_8272.anInt7777 * i_128_) >> 8) + i_129_ >> this.aHa_Sub2_8272.anInt7731);
+            int i_131_ = (i - ((i_128_ * this.aOpenGLToolkit_8272.anInt7772) >> 8) >> this.aOpenGLToolkit_8272.anInt7731);
+            int i_132_ = (-((this.aOpenGLToolkit_8272.anInt7777 * i_128_) >> 8) + i_129_ >> this.aOpenGLToolkit_8272.anInt7731);
             aClass104_8266.method959(i_131_, i_132_, (byte) 107, var_r);
         }
     }
 
-    s_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_133_, int i_134_, int i_135_, int[][] is, int[][] is_136_, int i_137_) {
+    s_Sub2(OpenGLToolkit var_openGLToolkit, int i, int i_133_, int i_134_, int i_135_, int[][] is, int[][] is_136_, int i_137_) {
         super(i_134_, i_135_, i_137_, is);
         do {
             try {
-                this.aHa_Sub2_8272 = var_ha_Sub2;
+                this.aOpenGLToolkit_8272 = var_openGLToolkit;
                 anInt8264 = this.anInt4588 + -2;
                 anIntArrayArrayArray8245 = new int[i_134_][i_135_][];
                 aByteArrayArray8240 = new byte[i_134_][i_135_];
@@ -479,9 +479,9 @@ final class s_Sub2 extends Ground {
                 }
                 aClass356_8278 = new Class356(128);
                 if ((0x10 & this.anInt8235) == 0) break;
-                aClass104_8266 = new Class104(this.aHa_Sub2_8272, this);
+                aClass104_8266 = new Class104(this.aOpenGLToolkit_8272, this);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("ed.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_133_ + ',' + i_134_ + ',' + i_135_ + ',' + (is != null ? "{...}" : "null") + ',' + (is_136_ != null ? "{...}" : "null") + ',' + i_137_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("ed.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_133_ + ',' + i_134_ + ',' + i_135_ + ',' + (is != null ? "{...}" : "null") + ',' + (is_136_ != null ? "{...}" : "null") + ',' + i_137_ + ')'));
             }
             break;
         } while (false);
@@ -490,8 +490,8 @@ final class s_Sub2 extends Ground {
     final boolean method3989(r var_r, int i, int i_142_, int i_143_, int i_144_, boolean bool) {
         anInt8244++;
         if (aClass104_8266 == null || var_r == null) return false;
-        int i_145_ = (-(i_142_ * this.aHa_Sub2_8272.anInt7772 >> 8) + i >> this.aHa_Sub2_8272.anInt7731);
-        int i_146_ = (i_143_ + -((this.aHa_Sub2_8272.anInt7777 * i_142_) >> 8) >> this.aHa_Sub2_8272.anInt7731);
+        int i_145_ = (-(i_142_ * this.aOpenGLToolkit_8272.anInt7772 >> 8) + i >> this.aOpenGLToolkit_8272.anInt7731);
+        int i_146_ = (i_143_ + -((this.aOpenGLToolkit_8272.anInt7777 * i_142_) >> 8) >> this.aOpenGLToolkit_8272.anInt7731);
         return aClass104_8266.method954(i_145_, (byte) 88, i_146_, var_r);
     }
 
@@ -516,24 +516,24 @@ final class s_Sub2 extends Ground {
     final void method3987(int i, int i_152_, int i_153_, int i_154_, int i_155_, int i_156_, int i_157_, boolean[][] bools) {
         anInt8262++;
         if (anInt8284 > 0) {
-            this.aHa_Sub2_8272.method3755(-32);
-            this.aHa_Sub2_8272.method3807(false, 2);
-            this.aHa_Sub2_8272.method3728(false, 92);
-            this.aHa_Sub2_8272.method3752(117, false);
-            this.aHa_Sub2_8272.method3748(0, false);
-            this.aHa_Sub2_8272.method3753(0, 1);
-            this.aHa_Sub2_8272.method3757(-2, -100);
-            this.aHa_Sub2_8272.method3771((byte) -86, null);
-            Class73.aFloatArray4772[0] = ((float) i_153_ / ((float) (this.aHa_Sub2_8272.anInt7688) * ((float) this.anInt4592 * 128.0F)));
+            this.aOpenGLToolkit_8272.method3755(-32);
+            this.aOpenGLToolkit_8272.method3807(false, 2);
+            this.aOpenGLToolkit_8272.method3728(false, 92);
+            this.aOpenGLToolkit_8272.method3752(117, false);
+            this.aOpenGLToolkit_8272.method3748(0, false);
+            this.aOpenGLToolkit_8272.method3753(0, 1);
+            this.aOpenGLToolkit_8272.method3757(-2, -100);
+            this.aOpenGLToolkit_8272.method3771((byte) -86, null);
+            Class73.aFloatArray4772[0] = ((float) i_153_ / ((float) (this.aOpenGLToolkit_8272.anInt7688) * ((float) this.anInt4592 * 128.0F)));
             Class73.aFloatArray4772[8] = 0.0F;
-            Class73.aFloatArray4772[13] = 1.0F - (((float) (i_157_ * i_153_) / 128.0F + (float) (i_152_ * 2)) / (float) (this.aHa_Sub2_8272.anInt7641));
+            Class73.aFloatArray4772[13] = 1.0F - (((float) (i_157_ * i_153_) / 128.0F + (float) (i_152_ * 2)) / (float) (this.aOpenGLToolkit_8272.anInt7641));
             Class73.aFloatArray4772[7] = 0.0F;
             Class73.aFloatArray4772[6] = 0.0F;
-            Class73.aFloatArray4772[5] = ((float) i_153_ / ((float) (this.aHa_Sub2_8272.anInt7641) * ((float) this.anInt4592 * 128.0F)));
+            Class73.aFloatArray4772[5] = ((float) i_153_ / ((float) (this.aOpenGLToolkit_8272.anInt7641) * ((float) this.anInt4592 * 128.0F)));
             Class73.aFloatArray4772[1] = 0.0F;
             Class73.aFloatArray4772[4] = 0.0F;
             Class73.aFloatArray4772[14] = 0.0F;
-            Class73.aFloatArray4772[12] = -(((float) (i_153_ * i_154_) / 128.0F - (float) (2 * i)) / (float) (this.aHa_Sub2_8272.anInt7688)) + -1.0F;
+            Class73.aFloatArray4772[12] = -(((float) (i_153_ * i_154_) / 128.0F - (float) (2 * i)) / (float) (this.aOpenGLToolkit_8272.anInt7688)) + -1.0F;
             Class73.aFloatArray4772[10] = 0.0F;
             Class73.aFloatArray4772[15] = 1.0F;
             Class73.aFloatArray4772[3] = 0.0F;
@@ -560,17 +560,17 @@ final class s_Sub2 extends Ground {
             Class73.aFloatArray4772[1] = 0.0F;
             OpenGL.glMatrixMode(5888);
             OpenGL.glLoadMatrixf(Class73.aFloatArray4772, 0);
-            if ((0x7 & this.anInt8235) == 0) this.aHa_Sub2_8272.method3728(false, 56);
+            if ((0x7 & this.anInt8235) == 0) this.aOpenGLToolkit_8272.method3728(false, 56);
             else {
-                this.aHa_Sub2_8272.method3728(true, 91);
-                this.aHa_Sub2_8272.method3796(16384);
+                this.aOpenGLToolkit_8272.method3728(true, 91);
+                this.aOpenGLToolkit_8272.method3796(16384);
             }
-            this.aHa_Sub2_8272.method3794(this.aClass123_8276, aClass123_8274, -26411, this.aClass123_8277, this.aClass123_8275);
-            if (this.aHa_Sub2_8272.aClass348_Sub49_Sub1_7798.aByteArray7154.length < anInt8257 * 2) this.aHa_Sub2_8272.aClass348_Sub49_Sub1_7798 = new Class348_Sub49_Sub1(anInt8257 * 2);
-            else this.aHa_Sub2_8272.aClass348_Sub49_Sub1_7798.pos = 0;
+            this.aOpenGLToolkit_8272.method3794(this.aClass123_8276, aClass123_8274, -26411, this.aClass123_8277, this.aClass123_8275);
+            if (this.aOpenGLToolkit_8272.aClass348_Sub49_Sub1_7798.aByteArray7154.length < anInt8257 * 2) this.aOpenGLToolkit_8272.aClass348_Sub49_Sub1_7798 = new Class348_Sub49_Sub1(anInt8257 * 2);
+            else this.aOpenGLToolkit_8272.aClass348_Sub49_Sub1_7798.pos = 0;
             int i_158_ = 0;
-            Class348_Sub49_Sub1 class348_sub49_sub1 = (this.aHa_Sub2_8272.aClass348_Sub49_Sub1_7798);
-            if (this.aHa_Sub2_8272.aBoolean7775) {
+            Class348_Sub49_Sub1 class348_sub49_sub1 = (this.aOpenGLToolkit_8272.aClass348_Sub49_Sub1_7798);
+            if (this.aOpenGLToolkit_8272.aBoolean7775) {
                 for (int i_159_ = i_155_; i_159_ < i_157_; i_159_++) {
                     int i_160_ = i_159_ * this.anInt4587 + i_154_;
                     for (int i_161_ = i_154_; i_156_ > i_161_; i_161_++) {
@@ -604,8 +604,8 @@ final class s_Sub2 extends Ground {
                 }
             }
             if (i_158_ > 0) {
-                Class119_Sub2 class119_sub2 = new Class119_Sub2(this.aHa_Sub2_8272, 5123, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.pos));
-                this.aHa_Sub2_8272.method3759(i_158_, -128, 4, class119_sub2, 0);
+                Class119_Sub2 class119_sub2 = new Class119_Sub2(this.aOpenGLToolkit_8272, 5123, (class348_sub49_sub1.aByteArray7154), (class348_sub49_sub1.pos));
+                this.aOpenGLToolkit_8272.method3759(i_158_, -128, 4, class119_sub2, 0);
             }
         }
     }
@@ -620,10 +620,10 @@ final class s_Sub2 extends Ground {
     final r fa(int i, int i_167_, r var_r) {
         anInt8259++;
         if ((0x1 & aByteArrayArray8240[i][i_167_]) == 0) return null;
-        int i_168_ = (this.anInt4592 >> this.aHa_Sub2_8272.anInt7731);
+        int i_168_ = (this.anInt4592 >> this.aOpenGLToolkit_8272.anInt7731);
         r_Sub2 var_r_Sub2 = (r_Sub2) var_r;
         r_Sub2 var_r_Sub2_169_;
-        if (var_r_Sub2 == null || !var_r_Sub2.method3296((byte) 104, i_168_, i_168_)) var_r_Sub2_169_ = new r_Sub2(this.aHa_Sub2_8272, i_168_, i_168_);
+        if (var_r_Sub2 == null || !var_r_Sub2.method3296((byte) 104, i_168_, i_168_)) var_r_Sub2_169_ = new r_Sub2(this.aOpenGLToolkit_8272, i_168_, i_168_);
         else {
             var_r_Sub2_169_ = var_r_Sub2;
             var_r_Sub2_169_.method3293((byte) 0);
@@ -663,7 +663,7 @@ final class s_Sub2 extends Ground {
     final void method3981(Class348_Sub1 class348_sub1, int[] is) {
         try {
             anInt8271++;
-            aClass262_8256.method1999(new Class348_Sub32((this.aHa_Sub2_8272), this, class348_sub1, is), -20180);
+            aClass262_8256.method1999(new Class348_Sub32((this.aOpenGLToolkit_8272), this, class348_sub1, is), -20180);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ed.L(" + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
         }
@@ -673,7 +673,7 @@ final class s_Sub2 extends Ground {
         try {
             anInt8261++;
             if (is_177_ != null && anIntArrayArrayArray8258 == null) anIntArrayArrayArray8258 = new int[this.anInt4587][this.anInt4590][];
-            TextureSource var_d = this.aHa_Sub2_8272.aD4579;
+            TextureSource var_d = this.aOpenGLToolkit_8272.aD4579;
             if (is_179_ != null && anIntArrayArrayArray8252 == null) anIntArrayArrayArray8252 = new int[this.anInt4587][this.anInt4590][];
             this.anIntArrayArrayArray8268[i][i_176_] = is;
             this.anIntArrayArrayArray8234[i][i_176_] = is_178_;
@@ -719,8 +719,8 @@ final class s_Sub2 extends Ground {
         if (aClass348_Sub20Array8282 != null) {
             int i_197_ = i_192_ + i_192_ - -1;
             i_197_ *= i_197_;
-            if (this.aHa_Sub2_8272.anIntArray7882.length < i_197_) this.aHa_Sub2_8272.anIntArray7882 = new int[i_197_];
-            if (anInt8257 * 2 > (this.aHa_Sub2_8272.aClass348_Sub49_Sub1_7798.aByteArray7154).length) this.aHa_Sub2_8272.aClass348_Sub49_Sub1_7798 = new Class348_Sub49_Sub1(2 * anInt8257);
+            if (this.aOpenGLToolkit_8272.anIntArray7882.length < i_197_) this.aOpenGLToolkit_8272.anIntArray7882 = new int[i_197_];
+            if (anInt8257 * 2 > (this.aOpenGLToolkit_8272.aClass348_Sub49_Sub1_7798.aByteArray7154).length) this.aOpenGLToolkit_8272.aClass348_Sub49_Sub1_7798 = new Class348_Sub49_Sub1(2 * anInt8257);
             int i_198_ = -i_192_ + i_194_;
             int i_199_ = i_198_;
             if (i_198_ < 0) i_198_ = 0;
@@ -732,7 +732,7 @@ final class s_Sub2 extends Ground {
             int i_203_ = i_196_ + i_192_;
             if (-1 + this.anInt4590 < i_203_) i_203_ = this.anInt4590 + -1;
             int i_204_ = 0;
-            int[] is = this.aHa_Sub2_8272.anIntArray7882;
+            int[] is = this.aOpenGLToolkit_8272.anIntArray7882;
             for (int i_205_ = i_198_; i_202_ >= i_205_; i_205_++) {
                 boolean[] bools_206_ = bools[-i_199_ + i_205_];
                 for (int i_207_ = i_200_; i_203_ >= i_207_; i_207_++) {
@@ -740,37 +740,37 @@ final class s_Sub2 extends Ground {
                 }
             }
             if (i != -1) {
-                this.aHa_Sub2_8272.method3789((byte) -120, (float) i);
-                this.aHa_Sub2_8272.method3760(1);
-            } else this.aHa_Sub2_8272.method3784((byte) -62);
-            this.aHa_Sub2_8272.method3728((0x7 & (this.anInt8235)) != 0, 120);
+                this.aOpenGLToolkit_8272.method3789((byte) -120, (float) i);
+                this.aOpenGLToolkit_8272.method3760(1);
+            } else this.aOpenGLToolkit_8272.method3784((byte) -62);
+            this.aOpenGLToolkit_8272.method3728((0x7 & (this.anInt8235)) != 0, 120);
             for (int i_208_ = 0; aClass348_Sub20Array8282.length > i_208_; i_208_++)
                 aClass348_Sub20Array8282[i_208_].method2948(5123, i_204_, is);
             if (!aClass262_8256.method2002((byte) 18)) {
-                int i_209_ = this.aHa_Sub2_8272.anInt7856;
-                int i_210_ = this.aHa_Sub2_8272.anInt7782;
-                this.aHa_Sub2_8272.L(0, i_210_, (this.aHa_Sub2_8272.anInt7813));
-                this.aHa_Sub2_8272.method3728(false, 97);
-                this.aHa_Sub2_8272.method3748(0, false);
-                this.aHa_Sub2_8272.method3753(128, 1);
-                this.aHa_Sub2_8272.method3757(-2, -88);
-                this.aHa_Sub2_8272.method3771((byte) -124, (this.aHa_Sub2_8272.aClass258_Sub3_7827));
-                this.aHa_Sub2_8272.method3729(8448, (byte) 98, 7681);
-                this.aHa_Sub2_8272.method3762(34166, 770, (byte) -87, 0);
-                this.aHa_Sub2_8272.method3775(false, 0, 770, 34167);
+                int i_209_ = this.aOpenGLToolkit_8272.anInt7856;
+                int i_210_ = this.aOpenGLToolkit_8272.anInt7782;
+                this.aOpenGLToolkit_8272.L(0, i_210_, (this.aOpenGLToolkit_8272.anInt7813));
+                this.aOpenGLToolkit_8272.method3728(false, 97);
+                this.aOpenGLToolkit_8272.method3748(0, false);
+                this.aOpenGLToolkit_8272.method3753(128, 1);
+                this.aOpenGLToolkit_8272.method3757(-2, -88);
+                this.aOpenGLToolkit_8272.method3771((byte) -124, (this.aOpenGLToolkit_8272.aClass258_Sub3_7827));
+                this.aOpenGLToolkit_8272.method3729(8448, (byte) 98, 7681);
+                this.aOpenGLToolkit_8272.method3762(34166, 770, (byte) -87, 0);
+                this.aOpenGLToolkit_8272.method3775(false, 0, 770, 34167);
                 for (Node node = aClass262_8256.method1995(4); node != null; node = aClass262_8256.method1990((byte) 92)) {
                     Class348_Sub32 class348_sub32 = (Class348_Sub32) node;
                     class348_sub32.method3023(bools, 255, i_194_, i_196_, i_192_);
                 }
-                this.aHa_Sub2_8272.method3762(5890, 768, (byte) -87, 0);
-                this.aHa_Sub2_8272.method3775(false, 0, 770, 5890);
-                this.aHa_Sub2_8272.method3771((byte) -96, null);
-                this.aHa_Sub2_8272.L(i_209_, i_210_, (this.aHa_Sub2_8272.anInt7813));
+                this.aOpenGLToolkit_8272.method3762(5890, 768, (byte) -87, 0);
+                this.aOpenGLToolkit_8272.method3775(false, 0, 770, 5890);
+                this.aOpenGLToolkit_8272.method3771((byte) -96, null);
+                this.aOpenGLToolkit_8272.L(i_209_, i_210_, (this.aOpenGLToolkit_8272.anInt7813));
             }
             if (aClass104_8266 != null) {
                 OpenGL.glPushMatrix();
                 OpenGL.glTranslatef(0.0F, -1.0F, 0.0F);
-                this.aHa_Sub2_8272.method3794(this.aClass123_8276, null, -26411, this.aClass123_8277, null);
+                this.aOpenGLToolkit_8272.method3794(this.aClass123_8276, null, -26411, this.aClass123_8277, null);
                 aClass104_8266.method956(bool, 112, bools, i_192_, i_196_, i_194_);
                 OpenGL.glPopMatrix();
             }

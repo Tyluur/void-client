@@ -19,8 +19,8 @@ final class wa implements OffscreenSurface {
         X(aLong4734, this.aJ4732.nativeid, this.aXa4733.nativeid, i, i_22_, i_23_, i_24_, i_25_, i_26_, bool, bool_27_);
     }
 
-    wa(oa var_oa, j var_j, xa var_xa) {
-        aLong4734 = var_oa.nativeid;
+    wa(SafeModeToolkit var_safeModeToolkit, j var_j, xa var_xa) {
+        aLong4734 = var_safeModeToolkit.nativeid;
         this.aJ4732 = var_j;
         this.aXa4733 = var_xa;
     }

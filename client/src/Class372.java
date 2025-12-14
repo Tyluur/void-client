@@ -3,7 +3,7 @@
  */
 
 final class Class372 {
-    private final ha_Sub3 aHa_Sub3_4526;
+    private final NativeToolkit aNativeToolkit_4526;
     static int anInt4527;
     private final TextureSource aD4528;
     static int anInt4529;
@@ -29,28 +29,28 @@ final class Class372 {
         if (!aD4528.method4(-7953, i_0_)) return null;
         if (i > -30) anInt4532 = 37;
         TextureMetrics textureMetrics = aD4528.getMetrics(i_0_, -6662);
-        int i_1_ = (!textureMetrics.aBoolean199 ? aHa_Sub3_4526.anInt8150 : 64);
+        int i_1_ = (!textureMetrics.aBoolean199 ? aNativeToolkit_4526.anInt8150 : 64);
         Interface18_Impl3 interface18_impl3;
-        if (textureMetrics.aBoolean218 && aHa_Sub3_4526.method3666()) {
+        if (textureMetrics.aBoolean218 && aNativeToolkit_4526.method3666()) {
             float[] fs = aD4528.method1(i_1_, 0.7F, false, -30824, i_1_, i_0_);
-            interface18_impl3 = aHa_Sub3_4526.method3891(fs, i_1_, i_1_, Class108.aClass304_1662, -109, textureMetrics.aByte205 != 0);
+            interface18_impl3 = aNativeToolkit_4526.method3891(fs, i_1_, i_1_, Class108.aClass304_1662, -109, textureMetrics.aByte205 != 0);
         } else {
             int[] is;
             if (textureMetrics.alphaBlendMode == 2 || !Class251.method1915((byte) 4, textureMetrics.effectType)) is = aD4528.method6(-21540, i_1_, 0.7F, i_0_, false, i_1_);
             else is = aD4528.method5(true, i_0_, 0.7F, i_1_, i_1_, 83);
-            interface18_impl3 = aHa_Sub3_4526.method3839(i_1_, i_1_, -15137, textureMetrics.aByte205 != 0, is);
+            interface18_impl3 = aNativeToolkit_4526.method3839(i_1_, i_1_, -15137, textureMetrics.aByte205 != 0, is);
         }
         interface18_impl3.method66(textureMetrics.aBoolean217, textureMetrics.aBoolean215, 25688);
         aClass60_4531.method582(interface18_impl3, i_0_, (byte) -107);
         return interface18_impl3;
     }
 
-    Class372(ha_Sub3 var_ha_Sub3, TextureSource var_d) {
+    Class372(NativeToolkit var_nativeToolkit, TextureSource var_d) {
         try {
-            aHa_Sub3_4526 = var_ha_Sub3;
+            aNativeToolkit_4526 = var_nativeToolkit;
             aD4528 = var_d;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fw.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fw.<init>(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ')'));
         }
     }
 }

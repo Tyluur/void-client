@@ -169,7 +169,7 @@ final class Class318_Sub2 extends Class318 {
                 }
             } else if (class338.aByte4192 == 4) {
                 float f = (float) (-Class232.anInt3006 + class338.anIntArray4191[0]);
-                if (!(f <= (float) ha_Sub2.anInt7714)) {
+                if (!(f <= (float) OpenGLToolkit.anInt7714)) {
                     int i_29_ = (Class318_Sub1_Sub4_Sub1.anInt10084 + -Class285_Sub2.anInt8502 + class338.aShort4193);
                     if (i_29_ >= 0) {
                         if ((Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084) < i_29_) return;

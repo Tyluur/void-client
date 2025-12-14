@@ -344,7 +344,7 @@ abstract class FontRenderer {
         }
     }
 
-    static final Class89 method2582(Class377 class377, Class39[] class39s, int i) {
+    static final Class89 method2582(OpenGLxToolkit openGLxToolkit, Class39[] class39s, int i) {
         try {
             anInt4065++;
             if (i != -2113) aClass138_4062 = null;
@@ -371,9 +371,9 @@ abstract class FontRenderer {
                     return null;
                 }
             }
-            return new Class89(class377, l, class39s);
+            return new Class89(openGLxToolkit, l, class39s);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("da.M(" + (class377 != null ? "{...}" : "null") + ',' + (class39s != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("da.M(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (class39s != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 

@@ -5,7 +5,7 @@
 import jaggl.OpenGL;
 
 abstract class Class14 implements Interface18 {
-    Class377 aClass377_5082;
+    OpenGLxToolkit aOpenGLxToolkit_5082;
     static int anInt5083;
     Class304 aClass304_5084;
     static int anInt5085;
@@ -31,16 +31,16 @@ abstract class Class14 implements Interface18 {
 
     public final void method63(byte i) {
         anInt5104++;
-        int i_0_ = this.aClass377_5082.method3877((byte) -126);
-        if (i > -21) this.aClass377_5082 = null;
-        int i_1_ = (this.aClass377_5082.anIntArray9927[i_0_]);
+        int i_0_ = this.aOpenGLxToolkit_5082.method3877((byte) -126);
+        if (i > -21) this.aOpenGLxToolkit_5082 = null;
+        int i_1_ = (this.aOpenGLxToolkit_5082.anIntArray9927[i_0_]);
         if (this.anInt5093 != i_1_) {
             if (i_1_ != 0) {
                 OpenGL.glBindTexture(i_1_, 0);
                 OpenGL.glDisable(i_1_);
             }
             OpenGL.glEnable(this.anInt5093);
-            this.aClass377_5082.anIntArray9927[i_0_] = this.anInt5093;
+            this.aOpenGLxToolkit_5082.anIntArray9927[i_0_] = this.anInt5093;
         }
         OpenGL.glBindTexture(this.anInt5093, anInt5096);
     }
@@ -83,7 +83,7 @@ abstract class Class14 implements Interface18 {
     }
 
     private final void method229(boolean bool) {
-        this.aClass377_5082.method3850((byte) 107, this);
+        this.aOpenGLxToolkit_5082.method3850((byte) 107, this);
         anInt5083++;
         if (aClass209_5101 == Class71.aClass209_1212) {
             OpenGL.glTexParameteri(this.anInt5093, 10241, !aBoolean5099 ? 9729 : 9987);
@@ -173,7 +173,7 @@ abstract class Class14 implements Interface18 {
         int[] is_31_ = new int[i_29_ * i_28_];
         if (i_25_ != 255) aBoolean5099 = true;
         for (; ; ) {
-            OpenGL.glTexImage2Di(i_24_, i_26_, method228(112), i, i_23_, 0, 32993, (this.aClass377_5082.anInt9918), is_30_, 0);
+            OpenGL.glTexImage2Di(i_24_, i_26_, method228(112), i, i_23_, 0, 32993, (this.aOpenGLxToolkit_5082.anInt9918), is_30_, 0);
             if (i_27_ <= 1) break;
             int i_32_ = 0;
             int i_33_ = 0;
@@ -220,7 +220,7 @@ abstract class Class14 implements Interface18 {
     private final void method234(int i) {
         if (i == 1617553025) {
             if (anInt5096 > 0) {
-                this.aClass377_5082.method3967(method231(-109), (byte) 59, anInt5096);
+                this.aOpenGLxToolkit_5082.method3967(method231(-109), (byte) 59, anInt5096);
                 anInt5096 = 0;
             }
             anInt5097++;
@@ -239,8 +239,8 @@ abstract class Class14 implements Interface18 {
 
     private final void method236(int i, byte i_47_) {
         anInt5098++;
-        this.aClass377_5082.anInt8062 -= i;
-        this.aClass377_5082.anInt8062 += method231(-119);
+        this.aOpenGLxToolkit_5082.anInt8062 -= i;
+        this.aOpenGLxToolkit_5082.anInt8062 += method231(-119);
         if (i_47_ >= -124) aBoolean5099 = false;
     }
 
@@ -313,10 +313,10 @@ abstract class Class14 implements Interface18 {
         super.finalize();
     }
 
-    Class14(Class377 class377, int i, Class304 class304, Class68 class68, int i_66_, boolean bool) {
+    Class14(OpenGLxToolkit openGLxToolkit, int i, Class304 class304, Class68 class68, int i_66_, boolean bool) {
         try {
             anInt5090 = i_66_;
-            this.aClass377_5082 = class377;
+            this.aOpenGLxToolkit_5082 = openGLxToolkit;
             this.aClass304_5084 = class304;
             this.aClass68_5088 = class68;
             aBoolean5099 = bool;
@@ -326,7 +326,7 @@ abstract class Class14 implements Interface18 {
             method229(true);
             method236(0, (byte) -126);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("hda.<init>(" + (class377 != null ? "{...}" : "null") + ',' + i + ',' + (class304 != null ? "{...}" : "null") + ',' + (class68 != null ? "{...}" : "null") + ',' + i_66_ + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("hda.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + i + ',' + (class304 != null ? "{...}" : "null") + ',' + (class68 != null ? "{...}" : "null") + ',' + i_66_ + ',' + bool + ')'));
         }
     }
 }

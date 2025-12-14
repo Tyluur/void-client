@@ -25,7 +25,7 @@ final class Class18 {
     private int anInt287 = 0;
     static int anInt288;
     private boolean aBoolean289;
-    private final ha_Sub2 aHa_Sub2_290;
+    private final OpenGLToolkit aOpenGLToolkit_290;
     static int anInt291;
     private final Class262 aClass262_292;
     private boolean aBoolean293;
@@ -42,10 +42,10 @@ final class Class18 {
 
     static final void method271(int i, Class46 class46, byte i_0_, int i_1_) {
         anInt278++;
-        aa var_aa = class46.method425(Class348_Sub8.aToolkit6654, (byte) 19);
+        aa var_aa = class46.method425(Class348_Sub8.active, (byte) 19);
         if (var_aa != null) {
-            Class348_Sub8.aToolkit6654.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789);
-            if (VarcTypeList.anInt3306 >= 3) Class348_Sub8.aToolkit6654.A(-16777216, var_aa, i_1_, i);
+            Class348_Sub8.active.KA(i_1_, i, class46.anInt709 + i_1_, i - -class46.anInt789);
+            if (VarcTypeList.anInt3306 >= 3) Class348_Sub8.active.A(-16777216, var_aa, i_1_, i);
             else NPCDefinition.aSprite_1365.method976(((float) class46.anInt709 / 2.0F + (float) i_1_), (float) i + (float) class46.anInt789 / 2.0F, 4096, (0x3fff & (int) -ResourceProvider.aFloat3938) << 2, var_aa, i_1_, i);
             if (i_0_ != -98) method271(88, null, (byte) 15, 71);
         }
@@ -55,21 +55,21 @@ final class Class18 {
         anInt277++;
         if (aBoolean289) {
             if (aClass206_285 != null) {
-                aHa_Sub2_290.method3764(-17083, aClass206_285);
+                aOpenGLToolkit_290.method3764(-17083, aClass206_285);
                 int i_2_ = 16384;
-                aHa_Sub2_290.method3751(aClass206_281, -115);
+                aOpenGLToolkit_290.method3751(aClass206_281, -115);
                 aClass206_285.method1505(0, 0);
                 aClass206_281.method1503(0, (byte) 3);
                 if (aBoolean303) i_2_ |= 0x100;
                 OpenGL.glBlitFramebufferEXT(0, 0, anInt286, anInt275, 0, 0, anInt286, anInt275, i_2_, 9728);
-                aHa_Sub2_290.method3805(8387, aClass206_285);
-                aHa_Sub2_290.method3782(aClass206_281, 327685);
+                aOpenGLToolkit_290.method3805(8387, aClass206_285);
+                aOpenGLToolkit_290.method3782(aClass206_281, 327685);
             }
-            aHa_Sub2_290.method3792(92);
-            aHa_Sub2_290.method3753(0, 1);
-            aHa_Sub2_290.method3761(0, 1);
+            aOpenGLToolkit_290.method3792(92);
+            aOpenGLToolkit_290.method3753(0, 1);
+            aOpenGLToolkit_290.method3761(0, 1);
             int i_3_ = 19 % ((i - 12) / 49);
-            aHa_Sub2_290.la();
+            aOpenGLToolkit_290.la();
             int i_4_ = 0;
             int i_5_ = 1;
             Class348_Sub5 class348_sub5;
@@ -79,8 +79,8 @@ final class Class18 {
                 for (int i_8_ = 0; i_8_ < i_7_; i_8_++) {
                     class348_sub5_6_.method2750(aClass258_Sub3_300, aClass258_Sub3Array295[i_4_], i_8_, (byte) 103);
                     if (class348_sub5 == null && i_8_ == i_7_ - 1) {
-                        aHa_Sub2_290.method3770(-422613672, aClass206_281);
-                        aHa_Sub2_290.method3790(103, 0, 0);
+                        aOpenGLToolkit_290.method3770(-422613672, aClass206_281);
+                        aOpenGLToolkit_290.method3790(103, 0, 0);
                         OpenGL.glBegin(7);
                         OpenGL.glTexCoord2f(0.0F, (float) anInt275);
                         OpenGL.glMultiTexCoord2f(33985, 0.0F, 1.0F);
@@ -123,7 +123,7 @@ final class Class18 {
 
     static final void method273(Class46 class46, int i) {
         anInt288++;
-        if (class46.anInt774 == 5 && class46.anInt812 != -1) Class318_Sub1.method2383(Class348_Sub8.aToolkit6654, -2, class46);
+        if (class46.anInt774 == 5 && class46.anInt812 != -1) Class318_Sub1.method2383(Class348_Sub8.active, -2, class46);
         if (i != -2835) method273(null, 44);
     }
 
@@ -162,9 +162,9 @@ final class Class18 {
             aBoolean289 = true;
             anInt276 = i_11_;
             anInt287 = i_9_;
-            aHa_Sub2_290.method3773(i_12_, aClass206_284);
+            aOpenGLToolkit_290.method3773(i_12_, aClass206_284);
             aClass206_284.method1503(0, (byte) 3);
-            aHa_Sub2_290.method3790(98, (-aHa_Sub2_290.anInt7641 + (anInt275 - -anInt276)), -anInt287);
+            aOpenGLToolkit_290.method3790(98, (-aOpenGLToolkit_290.anInt7641 + (anInt275 - -anInt276)), -anInt287);
             return true;
         }
         return false;
@@ -180,9 +180,9 @@ final class Class18 {
                 aClass258_Sub3_300.method1952(-19948);
                 aClass258_Sub3_300 = null;
             }
-            if (aClass206_285 != null) aClass348_Sub42_Sub2_298 = new Class348_Sub42_Sub2(aHa_Sub2_290, 6402, anInt286, anInt275, (aHa_Sub2_290.anInt7713));
-            if (aBoolean303) aClass258_Sub3_300 = new Class258_Sub3(aHa_Sub2_290, 34037, 6402, anInt286, anInt275);
-            else if (aClass348_Sub42_Sub2_298 == null) aClass348_Sub42_Sub2_298 = new Class348_Sub42_Sub2(aHa_Sub2_290, 6402, anInt286, anInt275);
+            if (aClass206_285 != null) aClass348_Sub42_Sub2_298 = new Class348_Sub42_Sub2(aOpenGLToolkit_290, 6402, anInt286, anInt275, (aOpenGLToolkit_290.anInt7713));
+            if (aBoolean303) aClass258_Sub3_300 = new Class258_Sub3(aOpenGLToolkit_290, 34037, 6402, anInt286, anInt275);
+            else if (aClass348_Sub42_Sub2_298 == null) aClass348_Sub42_Sub2_298 = new Class348_Sub42_Sub2(aOpenGLToolkit_290, 6402, anInt286, anInt275);
             aBoolean293 = false;
             aBoolean294 = true;
             aBoolean299 = true;
@@ -201,9 +201,9 @@ final class Class18 {
                 aClass258_Sub3Array295[1].method1952(-19948);
                 aClass258_Sub3Array295[1] = null;
             }
-            if (aClass206_285 != null) aClass348_Sub42_Sub2_296 = new Class348_Sub42_Sub2(aHa_Sub2_290, anInt301, anInt286, anInt275, (aHa_Sub2_290.anInt7713));
-            aClass258_Sub3Array295[0] = new Class258_Sub3(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275);
-            aClass258_Sub3Array295[1] = anInt302 > 1 ? new Class258_Sub3(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275) : null;
+            if (aClass206_285 != null) aClass348_Sub42_Sub2_296 = new Class348_Sub42_Sub2(aOpenGLToolkit_290, anInt301, anInt286, anInt275, (aOpenGLToolkit_290.anInt7713));
+            aClass258_Sub3Array295[0] = new Class258_Sub3(aOpenGLToolkit_290, 34037, anInt301, anInt286, anInt275);
+            aClass258_Sub3Array295[1] = anInt302 > 1 ? new Class258_Sub3(aOpenGLToolkit_290, 34037, anInt301, anInt286, anInt275) : null;
             aBoolean294 = true;
             aBoolean299 = true;
             aBoolean297 = false;
@@ -211,7 +211,7 @@ final class Class18 {
         if (bool != false) anInt282 = -21;
         if (aBoolean294) {
             if (aClass206_285 == null) {
-                aHa_Sub2_290.method3773(-1, aClass206_281);
+                aOpenGLToolkit_290.method3773(-1, aClass206_281);
                 aClass206_281.method1500(2983, 0);
                 aClass206_281.method1500(2983, 1);
                 aClass206_281.method1500(2983, 8);
@@ -219,30 +219,30 @@ final class Class18 {
                 if (anInt302 > 1) aClass206_281.method1509(aClass258_Sub3Array295[1], 0, 1);
                 if (aBoolean303) aClass206_281.method1509(aClass258_Sub3_300, 0, 8);
                 else aClass206_281.method1508(8, aClass348_Sub42_Sub2_298, 114);
-                aHa_Sub2_290.method3770(-422613672, aClass206_281);
+                aOpenGLToolkit_290.method3770(-422613672, aClass206_281);
             } else {
-                aHa_Sub2_290.method3773(-1, aClass206_281);
+                aOpenGLToolkit_290.method3773(-1, aClass206_281);
                 aClass206_281.method1500(2983, 0);
                 aClass206_281.method1500(2983, 1);
                 aClass206_281.method1500(2983, 8);
                 aClass206_281.method1509(aClass258_Sub3Array295[0], 0, 0);
                 if (anInt302 > 1) aClass206_281.method1509(aClass258_Sub3Array295[1], 0, 1);
                 if (aBoolean303) aClass206_281.method1509(aClass258_Sub3_300, 0, 8);
-                aHa_Sub2_290.method3770(-422613672, aClass206_281);
-                aHa_Sub2_290.method3773(-1, aClass206_285);
+                aOpenGLToolkit_290.method3770(-422613672, aClass206_281);
+                aOpenGLToolkit_290.method3773(-1, aClass206_285);
                 aClass206_285.method1500(2983, 0);
                 aClass206_285.method1500(2983, 8);
                 aClass206_285.method1508(0, aClass348_Sub42_Sub2_296, -100);
                 aClass206_285.method1508(8, aClass348_Sub42_Sub2_298, -47);
-                aHa_Sub2_290.method3770(-422613672, aClass206_285);
+                aOpenGLToolkit_290.method3770(-422613672, aClass206_285);
             }
             aBoolean294 = false;
             aBoolean299 = true;
         }
         if (aBoolean299) {
-            aHa_Sub2_290.method3773(-1, aClass206_284);
+            aOpenGLToolkit_290.method3773(-1, aClass206_284);
             aBoolean299 = !aClass206_284.method1507(118);
-            aHa_Sub2_290.method3770(-422613672, aClass206_284);
+            aOpenGLToolkit_290.method3770(-422613672, aClass206_284);
         }
         return !aBoolean299;
     }
@@ -332,7 +332,7 @@ final class Class18 {
         Class85.method828((byte) 38, i_25_, i_21_);
     }
 
-    Class18(ha_Sub2 var_ha_Sub2) {
+    Class18(OpenGLToolkit var_openGLToolkit) {
         anInt286 = 1;
         aClass262_292 = new Class262();
         aBoolean293 = true;
@@ -343,10 +343,10 @@ final class Class18 {
         anInt302 = 0;
         anInt301 = -1;
         aBoolean303 = false;
-        aHa_Sub2_290 = var_ha_Sub2;
-        if (aHa_Sub2_290.aBoolean7820 && aHa_Sub2_290.aBoolean7837) {
-            aClass206_284 = aClass206_281 = new Class206(aHa_Sub2_290);
-            if (aHa_Sub2_290.anInt7713 > 1 && aHa_Sub2_290.aBoolean7815 && aHa_Sub2_290.aBoolean7807) aClass206_284 = aClass206_285 = new Class206(aHa_Sub2_290);
+        aOpenGLToolkit_290 = var_openGLToolkit;
+        if (aOpenGLToolkit_290.aBoolean7820 && aOpenGLToolkit_290.aBoolean7837) {
+            aClass206_284 = aClass206_281 = new Class206(aOpenGLToolkit_290);
+            if (aOpenGLToolkit_290.anInt7713 > 1 && aOpenGLToolkit_290.aBoolean7815 && aOpenGLToolkit_290.aBoolean7807) aClass206_284 = aClass206_285 = new Class206(aOpenGLToolkit_290);
         }
     }
 }

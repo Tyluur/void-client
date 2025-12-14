@@ -13,7 +13,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
     private final int anInt8715;
     private final int anInt8716;
     private final int anInt8717;
-    private final ha_Sub3 aHa_Sub3_8718;
+    private final NativeToolkit aNativeToolkit_8718;
     private Interface18_Impl2 anInterface18_Impl2_8719;
     static int anInt8720;
 
@@ -24,7 +24,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
             Class270.anIntArray3464[3] = anInt8711;
             Class270.anIntArray3464[1] = anInt8717;
             Class270.anIntArray3464[4] = anInt8708;
-            TextureSource var_d = aHa_Sub3_8718.aD4579;
+            TextureSource var_d = aNativeToolkit_8718.aD4579;
             Class270.anIntArray3464[5] = anInt8714;
             Class270.anIntArray3464[2] = anInt8715;
             Class270.anIntArray3464[0] = anInt8716;
@@ -39,7 +39,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
             }
             for (int i_3_ = 0; i_3_ < 6; i_3_++)
                 Option_Sub14.anIntArrayArray5991[i_3_] = var_d.method5(false, Class270.anIntArray3464[i_3_], 1.0F, i, i, 81);
-            anInterface18_Impl2_8719 = aHa_Sub3_8718.method3900(Option_Sub14.anIntArrayArray5991, bool_0_, 61, i);
+            anInterface18_Impl2_8719 = aNativeToolkit_8718.method3900(Option_Sub14.anIntArrayArray5991, bool_0_, 61, i);
         }
         return anInterface18_Impl2_8719;
     }
@@ -86,13 +86,13 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
         anIntArray8712 = null;
     }
 
-    Class299_Sub2_Sub1(ha_Sub3 var_ha_Sub3, int i, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_) {
+    Class299_Sub2_Sub1(NativeToolkit var_nativeToolkit, int i, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_) {
         anInt8715 = i_11_;
         anInt8708 = i_13_;
         anInt8716 = i;
         anInt8711 = i_12_;
         anInt8717 = i_10_;
         anInt8714 = i_14_;
-        aHa_Sub3_8718 = var_ha_Sub3;
+        aNativeToolkit_8718 = var_nativeToolkit;
     }
 }

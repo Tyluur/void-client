@@ -27,7 +27,7 @@ final class Class348_Sub32 extends Node {
     private final int anInt6948;
     private float[][] aFloatArrayArray6949;
     static Index WORLD_MAP;
-    private final ha_Sub2 aHa_Sub2_6951;
+    private final OpenGLToolkit aOpenGLToolkit_6951;
     private final Interface2 anInterface2_6952;
     private Class348_Sub49_Sub1 aClass348_Sub49_Sub1_6953;
 
@@ -115,7 +115,7 @@ final class Class348_Sub32 extends Node {
         int i_32_ = (int) ((float) (0xff & i_30_ >> 8) * f_28_);
         if (i_32_ > 255) i_32_ = 255;
         int i_33_ = (int) (f_28_ * (float) (0xff & i_30_));
-        if (aHa_Sub2_6951.aBoolean7775) {
+        if (aOpenGLToolkit_6951.aBoolean7775) {
             aClass348_Sub49_Sub1_6953.method3400((float) i_6_, (byte) -122);
             aClass348_Sub49_Sub1_6953.method3400((float) i_8_, (byte) -115);
             aClass348_Sub49_Sub1_6953.method3400((float) i_7_, (byte) -94);
@@ -154,7 +154,7 @@ final class Class348_Sub32 extends Node {
     private final void method3022(byte i, short i_34_) {
         anInt6939++;
         if (i == -46) {
-            if (!aHa_Sub2_6951.aBoolean7775) aPacket_6936.method3397(i + 135, i_34_);
+            if (!aOpenGLToolkit_6951.aBoolean7775) aPacket_6936.method3397(i + 135, i_34_);
             else aPacket_6936.writeShort((byte) 107, i_34_);
         }
     }
@@ -167,9 +167,9 @@ final class Class348_Sub32 extends Node {
                     int i_40_ = i_39_ - i_35_;
                     int i_41_ = -i_36_ + i_38_;
                     if (i_40_ > -i_37_ && i_37_ > i_40_ && i_41_ > -i_37_ && i_37_ > i_41_ && bools[i_40_ + i_37_][i_37_ + i_41_]) {
-                        aHa_Sub2_6951.method3808(((int) (255.0F * aClass348_Sub1_6937.method2721(-66)) << 24), i + -136);
-                        aHa_Sub2_6951.method3794(aClass123_6927, aClass123_6943, i + -26666, null, null);
-                        aHa_Sub2_6951.method3759(anInt6934, -128, 4, anInterface8_6945, 0);
+                        aOpenGLToolkit_6951.method3808(((int) (255.0F * aClass348_Sub1_6937.method2721(-66)) << 24), i + -136);
+                        aOpenGLToolkit_6951.method3794(aClass123_6927, aClass123_6943, i + -26666, null, null);
+                        aOpenGLToolkit_6951.method3759(anInt6934, -128, 4, anInterface8_6945, 0);
                         return;
                     }
                 }
@@ -178,10 +178,10 @@ final class Class348_Sub32 extends Node {
         }
     }
 
-    Class348_Sub32(ha_Sub2 var_ha_Sub2, s_Sub2 var_s_Sub2, Class348_Sub1 class348_sub1, int[] is) {
+    Class348_Sub32(OpenGLToolkit var_openGLToolkit, s_Sub2 var_s_Sub2, Class348_Sub1 class348_sub1, int[] is) {
         try {
             aS_Sub2_6929 = var_s_Sub2;
-            aHa_Sub2_6951 = var_ha_Sub2;
+            aOpenGLToolkit_6951 = var_openGLToolkit;
             aClass348_Sub1_6937 = class348_sub1;
             int i = (aClass348_Sub1_6937.method2723(-1) + -(var_s_Sub2.anInt4592 >> 1));
             anInt6935 = (aClass348_Sub1_6937.method2724(-1) + -i >> var_s_Sub2.anInt4588);
@@ -283,8 +283,8 @@ final class Class348_Sub32 extends Node {
                     } else i_50_ += anInt6942 - anInt6935;
                     i_56_++;
                 }
-                anInterface8_6945 = (aHa_Sub2_6951.method3733(5123, -49, aPacket_6936.pos, aPacket_6936.aByteArray7154, false));
-                anInterface2_6952 = aHa_Sub2_6951.method3731(2, false, 16, (aClass348_Sub49_Sub1_6953.aByteArray7154), (aClass348_Sub49_Sub1_6953.pos));
+                anInterface8_6945 = (aOpenGLToolkit_6951.method3733(5123, -49, aPacket_6936.pos, aPacket_6936.aByteArray7154, false));
+                anInterface2_6952 = aOpenGLToolkit_6951.method3731(2, false, 16, (aClass348_Sub49_Sub1_6953.aByteArray7154), (aClass348_Sub49_Sub1_6953.pos));
                 aClass123_6927 = new Class123(anInterface2_6952, 5126, 3, 0);
                 aClass123_6943 = new Class123(anInterface2_6952, 5121, 4, 12);
             } else {
@@ -298,7 +298,7 @@ final class Class348_Sub32 extends Node {
             aPacket_6936 = null;
             aClass356_6932 = null;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qw.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (var_s_Sub2 != null ? "{...}" : "null") + ',' + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qw.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (var_s_Sub2 != null ? "{...}" : "null") + ',' + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
         }
     }
 }

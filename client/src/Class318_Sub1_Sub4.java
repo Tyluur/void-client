@@ -38,15 +38,16 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         throw new RuntimeException("");
     }
 
-    static final int method2478(int i) {
+    // method2478
+    static final int autoSetup(int i) {
         if (i != 1000) return -103;
         anInt8763++;
         boolean bool = false;
         boolean bool_5_ = false;
         boolean bool_6_ = false;
         if (Class348_Sub23_Sub1.aClass297_8992.aBoolean3777 && !Class348_Sub23_Sub1.aClass297_8992.aBoolean3794) {
-            bool = (Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609) >= 512 || (Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609) == 0;
-            if (Class297.aString3803.startsWith("win")) {
+            bool = (Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory) >= 512 || (Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory) == 0;
+            if (Class297.osNameLower.startsWith("win")) {
                 bool_6_ = true;
                 bool_5_ = true;
             } else bool_5_ = true;
@@ -70,13 +71,13 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
                 try {
                     i_9_ = Option_Sub14.method1781(3, -70, 1000);
                     if (Class316.clientOptions.aClass239_Sub25_7271.method1829(i + -33350) == 3) {
-                        Class365 class365 = Class348_Sub8.aToolkit6654.c();
-                        long l = (0xffffffffffffL & class365.aLong4471);
-                        int i_10_ = class365.anInt4476;
-                        if (i_10_ == 4318) {
+                        Renderer renderer = Class348_Sub8.active.renderer();
+                        long l = (0xffffffffffffL & renderer.driverVersion);
+                        int vendor = renderer.vendor;
+                        if (vendor == 4318) {
                             bool_5_ = bool_5_ & (l >= 64425238954L);
                             break;
-                        } else if (i_10_ != 4098) break;
+                        } else if (vendor != 4098) break;
                         bool_5_ = bool_5_ & (l >= 60129613779L);
                     }
                 } catch (Exception exception) {

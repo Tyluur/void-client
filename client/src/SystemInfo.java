@@ -23,7 +23,7 @@ final class SystemInfo extends Node {
     private int anInt6606;
     private boolean aBoolean6607;
     private boolean aBoolean6608;
-    int anInt6609;
+    int totalMemory;
     private String aString6610;
     static int anInt6611;
     private int anInt6612;
@@ -65,7 +65,7 @@ final class SystemInfo extends Node {
         packet.writeByte(false, !aBoolean6607 ? 0 : 1);
         packet.writeShort((byte) 107, anInt6592);
         packet.writeByte(false, anInt6599);
-        packet.method3340(i ^ ~0x26b6, this.anInt6609);
+        packet.method3340(i ^ ~0x26b6, this.totalMemory);
         packet.writeShort((byte) 107, anInt6591);
         packet.writeByte(false, anInt6598);
         packet.writeByte(false, anInt6596);
@@ -99,9 +99,9 @@ final class SystemInfo extends Node {
     // Class348_Sub4
     SystemInfo(boolean bool, Class297 class297) {
         if (bool) {
-            if (Class297.aString3803.startsWith("win")) anInt6613 = 1;
-            else if (Class297.aString3803.startsWith("mac")) anInt6613 = 2;
-            else if (Class297.aString3803.startsWith("linux")) anInt6613 = 3;
+            if (Class297.osNameLower.startsWith("win")) anInt6613 = 1;
+            else if (Class297.osNameLower.startsWith("mac")) anInt6613 = 2;
+            else if (Class297.osNameLower.startsWith("linux")) anInt6613 = 3;
             else anInt6613 = 4;
             aBoolean6608 = Class297.aString3780.startsWith("amd64") || Class297.aString3780.startsWith("x86_64");
             if (anInt6613 != 1) {
@@ -176,10 +176,10 @@ final class SystemInfo extends Node {
                     anInt6596 = is[4];
                     anInt6591 = is[2];
                     anInt6603 = is[5];
-                    this.anInt6609 = is[6];
+                    this.totalMemory = is[6];
                 }
             } catch (Throwable throwable) {
-                this.anInt6609 = 0;
+                this.totalMemory = 0;
             }
         }
         if (aString6610 == null) aString6610 = "";

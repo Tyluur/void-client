@@ -15,17 +15,17 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40 {
     private static short[] aShortArray9423 = {6798, 8741, 25238, 4626, 4550};
     static short[][] aShortArrayArray9424 = {aShortArray9423, aShortArray9421, aShortArray9422};
 
-    static final Class258_Sub3_Sub1 method3132(int[] is, int i, int i_0_, int i_1_, int i_2_, ha_Sub2 var_ha_Sub2, boolean bool, byte i_3_) {
+    static final Class258_Sub3_Sub1 method3132(int[] is, int i, int i_0_, int i_1_, int i_2_, OpenGLToolkit var_openGLToolkit, boolean bool, byte i_3_) {
         try {
             if (i_3_ != 12) method3134(9);
             anInt9418++;
-            if (!var_ha_Sub2.aBoolean7793 && (!Class192.method1436(-74, i_2_) || !Class192.method1436(127, i_1_))) {
-                if (!var_ha_Sub2.aBoolean7837) return (new Class258_Sub3_Sub1(var_ha_Sub2, i_2_, i_1_, EnumTypeList.method340(i_2_, (byte) 108), EnumTypeList.method340(i_1_, (byte) 108), is));
-                return new Class258_Sub3_Sub1(var_ha_Sub2, 34037, i_2_, i_1_, bool, is, i_0_, i);
+            if (!var_openGLToolkit.aBoolean7793 && (!Class192.method1436(-74, i_2_) || !Class192.method1436(127, i_1_))) {
+                if (!var_openGLToolkit.aBoolean7837) return (new Class258_Sub3_Sub1(var_openGLToolkit, i_2_, i_1_, EnumTypeList.method340(i_2_, (byte) 108), EnumTypeList.method340(i_1_, (byte) 108), is));
+                return new Class258_Sub3_Sub1(var_openGLToolkit, 34037, i_2_, i_1_, bool, is, i_0_, i);
             }
-            return new Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_2_, i_1_, bool, is, i_0_, i);
+            return new Class258_Sub3_Sub1(var_openGLToolkit, 3553, i_2_, i_1_, bool, is, i_0_, i);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wi.C(" + (is != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + bool + ',' + i_3_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wi.C(" + (is != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + (var_openGLToolkit != null ? "{...}" : "null") + ',' + bool + ',' + i_3_ + ')'));
         }
     }
 

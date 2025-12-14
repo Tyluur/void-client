@@ -33,7 +33,7 @@ final class Class285_Sub2 extends Class285 implements Interface5_Impl2 {
     public final Buffer method24(boolean bool, boolean bool_1_) {
         if (bool_1_ != false) aClass70_8503 = null;
         anInt8500++;
-        return super.method2120(0, (this.aClass377_4759.aMapBuffer9913), bool);
+        return super.method2120(0, (this.aOpenGLxToolkit_4759.aMapBuffer9913), bool);
     }
 
     public final int method16(boolean bool) {
@@ -45,7 +45,7 @@ final class Class285_Sub2 extends Class285 implements Interface5_Impl2 {
     public final boolean method22(int i) {
         anInt8501++;
         if (i != -23) return false;
-        return super.method2123((this.aClass377_4759.aMapBuffer9913), 0);
+        return super.method2123((this.aOpenGLxToolkit_4759.aMapBuffer9913), 0);
     }
 
     public final Class68 method25(byte i) {
@@ -61,12 +61,12 @@ final class Class285_Sub2 extends Class285 implements Interface5_Impl2 {
         }
     }
 
-    Class285_Sub2(Class377 class377, Class68 class68, boolean bool) {
-        super(class377, 34963, bool);
+    Class285_Sub2(OpenGLxToolkit openGLxToolkit, Class68 class68, boolean bool) {
+        super(openGLxToolkit, 34963, bool);
         try {
             aClass68_8504 = class68;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mw.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (class68 != null ? "{...}" : "null") + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("mw.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (class68 != null ? "{...}" : "null") + ',' + bool + ')'));
         }
     }
 }

@@ -22,7 +22,7 @@ abstract class Class50 {
         aString863 = null;
     }
 
-    static final Class171 method459(int i, ha_Sub2 var_ha_Sub2, String string, boolean bool) {
+    static final Class171 method459(int i, OpenGLToolkit var_openGLToolkit, String string, boolean bool) {
         try {
             anInt861++;
             int i_6_ = OpenGL.glGenProgramARB();
@@ -35,9 +35,9 @@ abstract class Class50 {
                 return null;
             }
             OpenGL.glBindProgramARB(i, 0);
-            return new Class171(var_ha_Sub2, i, i_6_);
+            return new Class171(var_openGLToolkit, i, i_6_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("iu.I(" + i + ',' + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("iu.I(" + i + ',' + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + bool + ')'));
         }
     }
 

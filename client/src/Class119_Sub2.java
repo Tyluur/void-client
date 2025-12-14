@@ -54,12 +54,12 @@ final class Class119_Sub2 extends Class119 implements Interface8 {
         if (i_5_ < 18) anInt4827 = -41;
     }
 
-    Class119_Sub2(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_7_) {
-        super(var_ha_Sub2, is, i_7_);
+    Class119_Sub2(OpenGLToolkit var_openGLToolkit, int i, byte[] is, int i_7_) {
+        super(var_openGLToolkit, is, i_7_);
         try {
             anInt4827 = i;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wv.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_7_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wv.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_7_ + ')'));
         }
     }
 }

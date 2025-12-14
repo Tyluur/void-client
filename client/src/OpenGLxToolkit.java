@@ -8,7 +8,8 @@ import jaggl.OpenGL;
 
 import java.awt.*;
 
-final class Class377 extends ha_Sub3 {
+// Class377
+final class OpenGLxToolkit extends NativeToolkit {
     static int anInt9812;
     static int anInt9813;
     static int anInt9814;
@@ -514,13 +515,13 @@ final class Class377 extends ha_Sub3 {
         }
     }
 
-    final Class365 c() {
+    final Renderer renderer() {
         anInt9843++;
-        int i = -1;
-        if (aString9917.indexOf("nvidia") != -1) i = 4318;
-        else if (aString9917.indexOf("intel") != -1) i = 32902;
-        else if (aString9917.indexOf("ati") != -1) i = 4098;
-        return new Class365(i, "OpenGL", anInt9924, aString9916, 0L);
+        int vendor = -1;
+        if (aString9917.indexOf("nvidia") != -1) vendor = 4318;
+        else if (aString9917.indexOf("intel") != -1) vendor = 32902;
+        else if (aString9917.indexOf("ati") != -1) vendor = 4098;
+        return new Renderer(vendor, "OpenGL", anInt9924, aString9916, 0L);
     }
 
     final Class299 method3706(Class299 class299, Class299 class299_24_, float f, Class299 class299_25_) {
@@ -636,7 +637,7 @@ final class Class377 extends ha_Sub3 {
         anInt9833++;
     }
 
-    Class377(OpenGL opengl, Canvas canvas, long l, TextureSource var_d, Index index, int i) {
+    OpenGLxToolkit(OpenGL opengl, Canvas canvas, long l, TextureSource var_d, Index index, int i) {
         super(canvas, new Long(l), var_d, index, i, 1);
         try {
             try {

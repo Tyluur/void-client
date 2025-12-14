@@ -13,11 +13,11 @@ final class ya extends za implements Interface19 {
         if (this.nativeid != 0L) Class257.method1947(0, this);
     }
 
-    private final native void aa(oa var_oa, int i);
+    private final native void aa(SafeModeToolkit var_safeModeToolkit, int i);
 
     final native void r();
 
-    ya(oa var_oa, int i) {
-        aa(var_oa, i);
+    ya(SafeModeToolkit var_safeModeToolkit, int i) {
+        aa(var_safeModeToolkit, i);
     }
 }

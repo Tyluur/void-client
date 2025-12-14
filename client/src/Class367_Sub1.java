@@ -74,9 +74,9 @@ final class Class367_Sub1 extends Class367 {
     }
 
     final void method3527(int i, Interface18 interface18, int i_12_) {
-        this.aHa_Sub3_4479.method3850((byte) 81, interface18);
+        this.aNativeToolkit_4479.method3850((byte) 81, interface18);
         anInt7280++;
-        this.aHa_Sub3_4479.method3923(true, i);
+        this.aNativeToolkit_4479.method3923(true, i);
         if (i_12_ == -16776) {
             /* empty */
         }
@@ -93,7 +93,7 @@ final class Class367_Sub1 extends Class367 {
         if (i != -103) method3527(-12, null, 67);
     }
 
-    Class367_Sub1(ha_Sub3 var_ha_Sub3) {
-        super(var_ha_Sub3);
+    Class367_Sub1(NativeToolkit var_nativeToolkit) {
+        super(var_nativeToolkit);
     }
 }

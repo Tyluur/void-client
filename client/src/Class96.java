@@ -12,7 +12,7 @@ final class Class96 {
         try {
             if (!Class9.method215(27165)) throw new RuntimeException("");
             if (!Class348_Sub40_Sub19.method3098(-30282, "jagdx")) throw new RuntimeException("");
-            Method method = (Class378.class.getDeclaredMethod("createToolkit", Canvas.class, TextureSource.class, Index.class, Integer.class));
+            Method method = (DirectXToolkit.class.getDeclaredMethod("createToolkit", Canvas.class, TextureSource.class, Index.class, Integer.class));
             var_toolkit = (Toolkit) method.invoke(null, new Object[]{canvas, var_d, index, new Integer(i)});
         } catch (Throwable throwable) {
             throw new RuntimeException("");

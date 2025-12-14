@@ -49,12 +49,12 @@ final class VarcstrTypeList {
                         break;
                     }
                     if (string.equals("renderer")) {
-                        Class365 class365 = Class348_Sub8.aToolkit6654.c();
-                        Applet_Sub1.method94("Vendor: " + class365.anInt4476, 89);
-                        Applet_Sub1.method94("Name: " + (class365.aString4470), 71);
-                        Applet_Sub1.method94(("Version: " + (class365.anInt4475)), -110);
-                        Applet_Sub1.method94(("Device: " + (class365.aString4472)), i + 146);
-                        Applet_Sub1.method94(("Driver Version: " + (class365.aLong4471)), i + -32);
+                        Renderer renderer = Class348_Sub8.active.renderer();
+                        Applet_Sub1.method94("Vendor: " + renderer.vendor, 89);
+                        Applet_Sub1.method94("Name: " + (renderer.name), 71);
+                        Applet_Sub1.method94(("Version: " + (renderer.version)), -110);
+                        Applet_Sub1.method94(("Device: " + (renderer.device)), i + 146);
+                        Applet_Sub1.method94(("Driver Version: " + (renderer.driverVersion)), i + -32);
                         break;
                     }
                     if (string.equals("heap")) {
@@ -93,7 +93,7 @@ final class VarcstrTypeList {
                         }
                         if (string.equals("systemmem")) {
                             try {
-                                Applet_Sub1.method94(("System memory: " + (jagmisc.getAvailablePhysicalMemory() / 1048576L) + "/" + Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 + "Mb"), i + 26);
+                                Applet_Sub1.method94(("System memory: " + (jagmisc.getAvailablePhysicalMemory() / 1048576L) + "/" + Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory + "Mb"), i + 26);
                             } catch (Throwable throwable) {
                                 /* empty */
                             }
@@ -208,7 +208,7 @@ final class VarcstrTypeList {
                             if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 0) {
                                 Applet_Sub1.method94("Entered tk0", 101);
                                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 0);
-                                Class14_Sub2.method243(37);
+                                Class14_Sub2.saveOptions(37);
                                 r.aBoolean9719 = false;
                                 break;
                             } else Applet_Sub1.method94("Failed to enter tk0", 69);
@@ -219,7 +219,7 @@ final class VarcstrTypeList {
                             if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 1) {
                                 Applet_Sub1.method94("Entered tk1", -65);
                                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 1);
-                                Class14_Sub2.method243(i ^ ~0x6b);
+                                Class14_Sub2.saveOptions(i ^ ~0x6b);
                                 r.aBoolean9719 = false;
                                 break;
                             } else Applet_Sub1.method94("Failed to enter tk1", -56);
@@ -230,7 +230,7 @@ final class VarcstrTypeList {
                             if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 2) {
                                 Applet_Sub1.method94("Entered tk2", i + 151);
                                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 2);
-                                Class14_Sub2.method243(37);
+                                Class14_Sub2.saveOptions(37);
                                 r.aBoolean9719 = false;
                             } else {
                                 Applet_Sub1.method94("Failed to enter tk2", i ^ 0x22);
@@ -243,7 +243,7 @@ final class VarcstrTypeList {
                             if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 3) {
                                 Applet_Sub1.method94("Entered tk3", 78);
                                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 3);
-                                Class14_Sub2.method243(37);
+                                Class14_Sub2.saveOptions(37);
                                 r.aBoolean9719 = false;
                                 break;
                             } else Applet_Sub1.method94("Failed to enter tk3", 54);
@@ -254,7 +254,7 @@ final class VarcstrTypeList {
                             if (Class316.clientOptions.aClass239_Sub25_7271.method1829(i ^ 0x7e13) == 5) {
                                 Applet_Sub1.method94("Entered tk5", -108);
                                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 5);
-                                Class14_Sub2.method243(37);
+                                Class14_Sub2.saveOptions(37);
                                 r.aBoolean9719 = false;
                             } else {
                                 Applet_Sub1.method94("Failed to enter tk5", 63);
@@ -269,7 +269,7 @@ final class VarcstrTypeList {
                                 if (i_6_ < 0 || (Node.method2710(-126, QuickChatCatTypeList.anInt2964) < i_6_)) Applet_Sub1.method94("Invalid buildarea value", 53);
                                 else {
                                     Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub6_7226), i_6_);
-                                    Class14_Sub2.method243(37);
+                                    Class14_Sub2.saveOptions(37);
                                     r.aBoolean9719 = false;
                                     Applet_Sub1.method94(("maxbuildarea=" + Class316.clientOptions.aClass239_Sub6_7226.method1743(-32350)), 98);
                                     break;
@@ -281,8 +281,8 @@ final class VarcstrTypeList {
                         if (string.startsWith("rect_debug")) {
                             if (string.length() < 10) Applet_Sub1.method94("Invalid rect_debug value", -94);
                             else {
-                                ha_Sub3.anInt8045 = Class348_Sub41.parseInt(true, string.substring(10).trim());
-                                Applet_Sub1.method94(("rect_debug=" + ha_Sub3.anInt8045), -124);
+                                NativeToolkit.anInt8045 = Class348_Sub41.parseInt(true, string.substring(10).trim());
+                                Applet_Sub1.method94(("rect_debug=" + NativeToolkit.anInt8045), -124);
                                 break;
                             }
                             break;
@@ -298,7 +298,7 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.startsWith("bloom")) {
-                            boolean bool_7_ = Class348_Sub8.aToolkit6654.method3666();
+                            boolean bool_7_ = Class348_Sub8.active.method3666();
                             if (Class348_Sub40_Sub33.method3137(!bool_7_, (byte) -24)) {
                                 if (bool_7_) {
                                     Applet_Sub1.method94("Bloom disabled", i + -49);
@@ -348,7 +348,7 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.startsWith("mc")) {
-                            if (Class348_Sub8.aToolkit6654.method3708()) {
+                            if (Class348_Sub8.active.method3708()) {
                                 int i_8_ = Integer.parseInt(string.substring(3));
                                 if (i_8_ >= 1) {
                                     if (i_8_ > 4) i_8_ = 4;
@@ -375,7 +375,7 @@ final class VarcstrTypeList {
                         }
                         if (string.equals("renderprofile") || string.equals("rp")) {
                             Class188.aBoolean2514 = !Class188.aBoolean2514;
-                            Class348_Sub8.aToolkit6654.method3647(Class188.aBoolean2514);
+                            Class348_Sub8.active.method3647(Class188.aBoolean2514);
                             Class110_Sub1.method1042((byte) 23);
                             Applet_Sub1.method94(("showprofiling=" + Class188.aBoolean2514), 106);
                             break;
@@ -506,7 +506,7 @@ final class VarcstrTypeList {
                         }
                         if (string.startsWith("texsize")) {
                             int i_18_ = Integer.parseInt(string.substring(8));
-                            Class348_Sub8.aToolkit6654.method3696(i_18_);
+                            Class348_Sub8.active.method3696(i_18_);
                             break;
                         }
                         if (string.equals("soundstreamcount")) {
@@ -514,7 +514,7 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.equals("autosetup")) {
-                            Class318_Sub1_Sub4.method2478(1000);
+                            Class318_Sub1_Sub4.autoSetup(1000);
                             Applet_Sub1.method94(("Complete. Toolkit now: " + Class316.clientOptions.aClass239_Sub25_7271.method1829(i + -32271)), -97);
                             break;
                         }
@@ -523,13 +523,13 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.equals("heapdump")) {
-                            if (!Class297.aString3803.startsWith("win")) Class158.method1247(new File("/tmp/heap.dump"), false, false);
+                            if (!Class297.osNameLower.startsWith("win")) Class158.method1247(new File("/tmp/heap.dump"), false, false);
                             else Class158.method1247(new File("C:\\Temp\\heap.dump"), false, false);
                             Applet_Sub1.method94("Done", 74);
                             break;
                         }
                         if (string.equals("os")) {
-                            Applet_Sub1.method94("Name: " + Class297.aString3803, 59);
+                            Applet_Sub1.method94("Name: " + Class297.osNameLower, 59);
                             Applet_Sub1.method94(("Arch: " + Class297.aString3780), i ^ ~0x1);
                             Applet_Sub1.method94("Ver: " + Class297.aString3778, 79);
                             break;
@@ -547,7 +547,7 @@ final class VarcstrTypeList {
                             else {
                                 int i_21_ = (Class348_Sub41.parseInt(true, string.substring(1 + i_20_)));
                                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub3_7222), i_21_);
-                                Class14_Sub2.method243(37);
+                                Class14_Sub2.saveOptions(37);
                                 r.aBoolean9719 = false;
                                 Class348_Sub42_Sub3.method3179(i + 79);
                                 if (Class316.clientOptions.aClass239_Sub3_7222.method1727(-32350) == i_21_) {

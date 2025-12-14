@@ -13,7 +13,7 @@ final class Class348_Sub38 extends Node {
     private final Class348_Sub1 aClass348_Sub1_7004;
     private float[][] aFloatArrayArray7005;
     static int anInt7006 = 0;
-    private final ha_Sub3 aHa_Sub3_7007;
+    private final NativeToolkit aNativeToolkit_7007;
     static int anInt7008 = 0;
     static int anInt7009;
     private final int anInt7010;
@@ -41,10 +41,10 @@ final class Class348_Sub38 extends Node {
                         int i_4_ = -i_1_ + i_3_;
                         int i_5_ = -i + i_2_;
                         if (-i_0_ < i_4_ && i_4_ < i_0_ && i_5_ > -i_0_ && i_0_ > i_5_ && bools[i_4_ - -i_0_][i_0_ + i_5_]) {
-                            aHa_Sub3_7007.method3909((byte) (int) (255.0F * aClass348_Sub1_7004.method2721(-37)), -112);
-                            aHa_Sub3_7007.method3925(-123, anInterface5_Impl1_7020, 0);
-                            aHa_Sub3_7007.method3862(0, (aHa_Sub3_7007.aClass130_8202));
-                            aHa_Sub3_7007.method3938(Class247.aClass21_3181, anInt7018 / 3, anInterface5_Impl2_7002, 0, 0, anInt7013, 116);
+                            aNativeToolkit_7007.method3909((byte) (int) (255.0F * aClass348_Sub1_7004.method2721(-37)), -112);
+                            aNativeToolkit_7007.method3925(-123, anInterface5_Impl1_7020, 0);
+                            aNativeToolkit_7007.method3862(0, (aNativeToolkit_7007.aClass130_8202));
+                            aNativeToolkit_7007.method3938(Class247.aClass21_3181, anInt7018 / 3, anInterface5_Impl2_7002, 0, 0, anInt7013, 116);
                             return;
                         }
                     }
@@ -143,7 +143,7 @@ final class Class348_Sub38 extends Node {
                 aStream7022.b((float) i_14_);
                 aStream7022.b((float) i_13_);
             }
-            if (aHa_Sub3_7007.anInt8178 == 0) {
+            if (aNativeToolkit_7007.anInt8178 == 0) {
                 aStream7022.f(i_38_);
                 aStream7022.f(i_37_);
                 aStream7022.f(i_36_);
@@ -168,9 +168,9 @@ final class Class348_Sub38 extends Node {
         if (i != 1) method3035(-34);
     }
 
-    Class348_Sub38(ha_Sub3 var_ha_Sub3, s_Sub3 var_s_Sub3, Class348_Sub1 class348_sub1, int[] is) {
+    Class348_Sub38(NativeToolkit var_nativeToolkit, s_Sub3 var_s_Sub3, Class348_Sub1 class348_sub1, int[] is) {
         try {
-            aHa_Sub3_7007 = var_ha_Sub3;
+            aNativeToolkit_7007 = var_nativeToolkit;
             aS_Sub3_7019 = var_s_Sub3;
             aClass348_Sub1_7004 = class348_sub1;
             int i = (aClass348_Sub1_7004.method2723(-1) + -(var_s_Sub3.anInt4592 >> 1));
@@ -221,9 +221,9 @@ final class Class348_Sub38 extends Node {
             }
             if (anInt7018 > 0) {
                 aClass356_7011 = new Class356(EnumTypeList.method340(anInt7018, (byte) 108));
-                anInterface5_Impl2_7002 = aHa_Sub3_7007.method3840(-28633, false);
+                anInterface5_Impl2_7002 = aNativeToolkit_7007.method3840(-28633, false);
                 anInterface5_Impl2_7002.method23(15959, anInt7018);
-                jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer = aHa_Sub3_7007.method3869((byte) 86, false, 16 * anInt7018);
+                jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer = aNativeToolkit_7007.method3869((byte) 86, false, 16 * anInt7018);
                 aStream7022 = new Stream(nativeheapbuffer);
                 for (; ; ) {
                     Buffer buffer = anInterface5_Impl2_7002.method24(true, false);
@@ -286,7 +286,7 @@ final class Class348_Sub38 extends Node {
                     }
                 }
                 aStream7022.a();
-                anInterface5_Impl1_7020 = aHa_Sub3_7007.method3889(false, 16711680);
+                anInterface5_Impl1_7020 = aNativeToolkit_7007.method3889(false, 16711680);
                 anInterface5_Impl1_7020.method17(nativeheapbuffer, 16, 16 * anInt7013, (byte) -108);
             } else {
                 anInterface5_Impl1_7020 = null;
@@ -297,7 +297,7 @@ final class Class348_Sub38 extends Node {
             aStream7021 = null;
             aClass356_7011 = null;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sea.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + (var_s_Sub3 != null ? "{...}" : "null") + ',' + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("sea.<init>(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + (var_s_Sub3 != null ? "{...}" : "null") + ',' + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
         }
     }
 }

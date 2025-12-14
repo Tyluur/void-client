@@ -7,7 +7,8 @@ import jagdx.*;
 
 import java.awt.*;
 
-public final class Class378 extends ha_Sub3 {
+// Class378
+public final class DirectXToolkit extends NativeToolkit {
     private final boolean[] aBooleanArray9784;
     private int anInt9785 = 0;
     private boolean[] aBooleanArray9786;
@@ -220,8 +221,8 @@ public final class Class378 extends ha_Sub3 {
     }
 
     static final Toolkit createToolkit(Canvas canvas, TextureSource var_d, Index index, Integer integer) {
-        Class378 class378 = null;
-        Class378 class378_19_;
+        DirectXToolkit directXToolkit = null;
+        DirectXToolkit directXToolkit_19_;
         try {
             int i = 0;
             int i_20_ = 1;
@@ -255,14 +256,14 @@ public final class Class378 extends ha_Sub3 {
                 idirect3ddevice = idirect3d.a(i, i_20_, canvas, i_21_ | 0x20, d3dpresent_parameters);
             }
             Class53 class53 = new Class53(idirect3ddevice.b(0), idirect3ddevice.c());
-            class378 = new Class378(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, class53, d3dpresent_parameters, d3dcaps, var_d, index, integer.intValue());
-            class378.method3930((byte) 26);
-            class378_19_ = class378;
+            directXToolkit = new DirectXToolkit(i, i_20_, canvas, var_hb, idirect3d, idirect3ddevice, class53, d3dpresent_parameters, d3dcaps, var_d, index, integer.intValue());
+            directXToolkit.method3930((byte) 26);
+            directXToolkit_19_ = directXToolkit;
         } catch (RuntimeException runtimeexception) {
-            if (class378 != null) class378.method3652();
+            if (directXToolkit != null) directXToolkit.method3652();
             throw runtimeexception;
         }
-        return class378_19_;
+        return directXToolkit_19_;
     }
 
     final void method3911(Canvas canvas, int i, Object object) {
@@ -432,7 +433,7 @@ public final class Class378 extends ha_Sub3 {
         if (i >= -19) method3855(null, -78, 86, null, false, 82, 55, -34);
     }
 
-    private Class378(int i, int i_38_, Canvas canvas, hb var_hb, IDirect3D idirect3d, IDirect3DDevice idirect3ddevice, Class53 class53, D3DPRESENT_PARAMETERS d3dpresent_parameters, D3DCAPS d3dcaps, TextureSource var_d, Index index, int i_39_) {
+    private DirectXToolkit(int i, int i_38_, Canvas canvas, hb var_hb, IDirect3D idirect3d, IDirect3DDevice idirect3ddevice, Class53 class53, D3DPRESENT_PARAMETERS d3dpresent_parameters, D3DCAPS d3dcaps, TextureSource var_d, Index index, int i_39_) {
         super(canvas, class53, var_d, index, i_39_, 0);
         try {
             this.aHb9788 = var_hb;
@@ -775,9 +776,9 @@ public final class Class378 extends ha_Sub3 {
         super.method3882((byte) 63);
     }
 
-    final Class365 c() {
+    final Renderer renderer() {
         D3DADAPTER_IDENTIFIER d3dadapter_identifier = anIDirect3D9793.a(anInt9799, 0);
-        return new Class365(d3dadapter_identifier.VendorID, "Direct3D", 9, d3dadapter_identifier.Description, d3dadapter_identifier.DriverVersion);
+        return new Renderer(d3dadapter_identifier.VendorID, "Direct3D", 9, d3dadapter_identifier.Description, d3dadapter_identifier.DriverVersion);
     }
 
     final void method3935(int i) {

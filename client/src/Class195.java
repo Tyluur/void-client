@@ -36,8 +36,8 @@ final class Class195 implements LoadingScreen {
 
     public final void init(int i) {
         anInt5004++;
-        if (aToolkit5010 != Class348_Sub8.aToolkit6654) {
-            aToolkit5010 = Class348_Sub8.aToolkit6654;
+        if (aToolkit5010 != Class348_Sub8.active) {
+            aToolkit5010 = Class348_Sub8.active;
             aBoolean5011 = true;
         }
         aToolkit5010.GA(0);

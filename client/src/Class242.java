@@ -5,7 +5,7 @@
 final class Class242 {
     static int anInt3151;
     static Class348_Sub42_Sub13 aClass348_Sub42_Sub13_3152 = null;
-    private final ha_Sub2 aHa_Sub2_3153;
+    private final OpenGLToolkit aOpenGLToolkit_3153;
     static int anInt3154;
     static int anInt3155;
     long aLong3156;
@@ -26,7 +26,7 @@ final class Class242 {
 
     protected final void finalize() throws Throwable {
         anInt3151++;
-        aHa_Sub2_3153.method3769(this.aLong3156, false);
+        aOpenGLToolkit_3153.method3769(this.aLong3156, false);
         super.finalize();
     }
 
@@ -45,12 +45,12 @@ final class Class242 {
         if (!bool) Class233.aClass107_3022.method1005(true, class348_sub42_sub13);
     }
 
-    Class242(ha_Sub2 var_ha_Sub2, long l, int i) {
+    Class242(OpenGLToolkit var_openGLToolkit, long l, int i) {
         try {
-            aHa_Sub2_3153 = var_ha_Sub2;
+            aOpenGLToolkit_3153 = var_openGLToolkit;
             this.aLong3156 = l;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tba.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + l + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("tba.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + l + ',' + i + ')'));
         }
     }
 }

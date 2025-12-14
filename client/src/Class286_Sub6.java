@@ -23,8 +23,8 @@ final class Class286_Sub6 extends Class286 {
 
     final void method2140(Class258 class258, byte i, int i_0_) {
         if (!aBoolean6266) {
-            this.aHa_Sub2_3684.method3771((byte) -128, class258);
-            this.aHa_Sub2_3684.method3761(0, i_0_);
+            this.aOpenGLToolkit_3684.method3771((byte) -128, class258);
+            this.aOpenGLToolkit_3684.method3761(0, i_0_);
         }
         anInt6269++;
         if (i >= -89) method2140(null, (byte) -85, 27);
@@ -113,19 +113,19 @@ final class Class286_Sub6 extends Class286 {
     final void method2134(boolean bool, boolean bool_3_) {
         if (bool_3_ == false) {
             anInt6264++;
-            Class258_Sub2 class258_sub2 = this.aHa_Sub2_3684.method3741(444720536);
+            Class258_Sub2 class258_sub2 = this.aOpenGLToolkit_3684.method3741(444720536);
             if (aBoolean6272 && class258_sub2 != null) {
-                this.aHa_Sub2_3684.method3738(-15039, 1);
-                this.aHa_Sub2_3684.method3771((byte) -126, class258_sub2);
-                this.aHa_Sub2_3684.method3738(-15039, 0);
-                this.aHa_Sub2_3684.method3771((byte) -75, aClass83_6268.aClass258_Sub1_1443);
+                this.aOpenGLToolkit_3684.method3738(-15039, 1);
+                this.aOpenGLToolkit_3684.method3771((byte) -126, class258_sub2);
+                this.aOpenGLToolkit_3684.method3738(-15039, 0);
+                this.aOpenGLToolkit_3684.method3771((byte) -75, aClass83_6268.aClass258_Sub1_1443);
                 long l = aClass337_6274.aLong4178;
                 OpenGL.glUseProgramObjectARB(l);
                 OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l, "normalSampler"), 0);
                 OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l, "envMapSampler"), 1);
-                OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l, "sunDir"), -(this.aHa_Sub2_3684.aFloatArray7825[0]), -(this.aHa_Sub2_3684.aFloatArray7825[1]), -(this.aHa_Sub2_3684.aFloatArray7825[2]));
-                OpenGL.glUniform4fARB(OpenGL.glGetUniformLocationARB(l, "sunColour"), this.aHa_Sub2_3684.aFloat7781, this.aHa_Sub2_3684.aFloat7816, this.aHa_Sub2_3684.aFloat7823, 1.0F);
-                OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "sunExponent"), (96.0F + Math.abs(this.aHa_Sub2_3684.aFloatArray7825[1]) * 928.0F));
+                OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l, "sunDir"), -(this.aOpenGLToolkit_3684.aFloatArray7825[0]), -(this.aOpenGLToolkit_3684.aFloatArray7825[1]), -(this.aOpenGLToolkit_3684.aFloatArray7825[2]));
+                OpenGL.glUniform4fARB(OpenGL.glGetUniformLocationARB(l, "sunColour"), this.aOpenGLToolkit_3684.aFloat7781, this.aOpenGLToolkit_3684.aFloat7816, this.aOpenGLToolkit_3684.aFloat7823, 1.0F);
+                OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "sunExponent"), (96.0F + Math.abs(this.aOpenGLToolkit_3684.aFloatArray7825[1]) * 928.0F));
                 aBoolean6266 = true;
             }
         }
@@ -135,10 +135,10 @@ final class Class286_Sub6 extends Class286 {
         if (i <= -75) {
             anInt6265++;
             if (aBoolean6266) {
-                this.aHa_Sub2_3684.method3738(-15039, 1);
-                this.aHa_Sub2_3684.method3771((byte) -108, null);
-                this.aHa_Sub2_3684.method3738(-15039, 0);
-                this.aHa_Sub2_3684.method3771((byte) -121, null);
+                this.aOpenGLToolkit_3684.method3738(-15039, 1);
+                this.aOpenGLToolkit_3684.method3771((byte) -108, null);
+                this.aOpenGLToolkit_3684.method3738(-15039, 0);
+                this.aOpenGLToolkit_3684.method3771((byte) -121, null);
                 OpenGL.glUseProgramObjectARB(0L);
                 aBoolean6266 = false;
             }
@@ -152,19 +152,19 @@ final class Class286_Sub6 extends Class286 {
         }
     }
 
-    Class286_Sub6(ha_Sub2 var_ha_Sub2, Class83 class83) {
-        super(var_ha_Sub2);
+    Class286_Sub6(OpenGLToolkit var_openGLToolkit, Class83 class83) {
+        super(var_openGLToolkit);
         aBoolean6266 = false;
         do {
             try {
                 aClass83_6268 = class83;
-                if (aClass83_6268.aClass258_Sub1_1443 == null || !(this.aHa_Sub2_3684.aBoolean7791) || !(this.aHa_Sub2_3684.aBoolean7783)) break;
-                Class242 class242 = (Class348_Sub42_Sub15.method3249(35633, -110, this.aHa_Sub2_3684, "uniform float time;\nuniform float scale;\nvarying vec3 wvVertex;\nvarying float waterDepth;\nvoid main() {\nwaterDepth = gl_MultiTexCoord0.z;\nvec4 ecVertex = gl_ModelViewMatrix*gl_Vertex;\nwvVertex.x = dot(gl_NormalMatrix[0], ecVertex.xyz);\nwvVertex.y = dot(gl_NormalMatrix[1], ecVertex.xyz);\nwvVertex.z = dot(gl_NormalMatrix[2], ecVertex.xyz);\ngl_TexCoord[0].x = dot(gl_TextureMatrix[0][0], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].y = dot(gl_TextureMatrix[0][1], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].z = time;\ngl_TexCoord[0].w = 1.0;\ngl_FogFragCoord = 1.0-clamp((gl_Fog.end+ecVertex.z)*gl_Fog.scale, 0.0, 1.0);\ngl_Position = ftransform();\n}\n"));
-                Class242 class242_4_ = (Class348_Sub42_Sub15.method3249(35632, -38, this.aHa_Sub2_3684, "varying vec3 wvVertex;\nvarying float waterDepth;\nuniform vec3 sunDir;\nuniform vec4 sunColour;\nuniform float sunExponent;\nuniform float breakWaterDepth;\nuniform float breakWaterOffset;\nuniform sampler3D normalSampler;\nuniform samplerCube envMapSampler;\nvoid main() {\nvec4 wnNormal = texture3D(normalSampler, gl_TexCoord[0].xyz).rbga;\nwnNormal.xyz = 2.0*wnNormal.xyz-1.0;\nvec3 wnVector = normalize(wvVertex);\nvec3 wnReflection = reflect(wnVector, wnNormal.xyz);\nvec3 envColour = textureCube(envMapSampler, wnReflection).rgb;\nvec4 specularColour = sunColour*pow(clamp(-dot(sunDir, wnReflection), 0.0, 1.0), sunExponent);\nfloat shoreFactor = clamp(waterDepth/breakWaterDepth-breakWaterOffset*wnNormal.w, 0.0, 1.0);\nfloat ndote = dot(wnVector, wnNormal.xyz);\nfloat fresnel = pow(1.0-abs(ndote), 2.0);\nvec4 surfaceColour = vec4(envColour, fresnel*shoreFactor)+specularColour*shoreFactor;\ngl_FragColor = vec4(mix(surfaceColour.rgb, gl_Fog.color.rgb, gl_FogFragCoord), surfaceColour.a);\n}\n"));
-                aClass337_6274 = Class318_Sub1_Sub5_Sub2.method2493((this.aHa_Sub2_3684), -1, (new Class242[]{class242, class242_4_}));
+                if (aClass83_6268.aClass258_Sub1_1443 == null || !(this.aOpenGLToolkit_3684.aBoolean7791) || !(this.aOpenGLToolkit_3684.aBoolean7783)) break;
+                Class242 class242 = (Class348_Sub42_Sub15.method3249(35633, -110, this.aOpenGLToolkit_3684, "uniform float time;\nuniform float scale;\nvarying vec3 wvVertex;\nvarying float waterDepth;\nvoid main() {\nwaterDepth = gl_MultiTexCoord0.z;\nvec4 ecVertex = gl_ModelViewMatrix*gl_Vertex;\nwvVertex.x = dot(gl_NormalMatrix[0], ecVertex.xyz);\nwvVertex.y = dot(gl_NormalMatrix[1], ecVertex.xyz);\nwvVertex.z = dot(gl_NormalMatrix[2], ecVertex.xyz);\ngl_TexCoord[0].x = dot(gl_TextureMatrix[0][0], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].y = dot(gl_TextureMatrix[0][1], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].z = time;\ngl_TexCoord[0].w = 1.0;\ngl_FogFragCoord = 1.0-clamp((gl_Fog.end+ecVertex.z)*gl_Fog.scale, 0.0, 1.0);\ngl_Position = ftransform();\n}\n"));
+                Class242 class242_4_ = (Class348_Sub42_Sub15.method3249(35632, -38, this.aOpenGLToolkit_3684, "varying vec3 wvVertex;\nvarying float waterDepth;\nuniform vec3 sunDir;\nuniform vec4 sunColour;\nuniform float sunExponent;\nuniform float breakWaterDepth;\nuniform float breakWaterOffset;\nuniform sampler3D normalSampler;\nuniform samplerCube envMapSampler;\nvoid main() {\nvec4 wnNormal = texture3D(normalSampler, gl_TexCoord[0].xyz).rbga;\nwnNormal.xyz = 2.0*wnNormal.xyz-1.0;\nvec3 wnVector = normalize(wvVertex);\nvec3 wnReflection = reflect(wnVector, wnNormal.xyz);\nvec3 envColour = textureCube(envMapSampler, wnReflection).rgb;\nvec4 specularColour = sunColour*pow(clamp(-dot(sunDir, wnReflection), 0.0, 1.0), sunExponent);\nfloat shoreFactor = clamp(waterDepth/breakWaterDepth-breakWaterOffset*wnNormal.w, 0.0, 1.0);\nfloat ndote = dot(wnVector, wnNormal.xyz);\nfloat fresnel = pow(1.0-abs(ndote), 2.0);\nvec4 surfaceColour = vec4(envColour, fresnel*shoreFactor)+specularColour*shoreFactor;\ngl_FragColor = vec4(mix(surfaceColour.rgb, gl_Fog.color.rgb, gl_FogFragCoord), surfaceColour.a);\n}\n"));
+                aClass337_6274 = Class318_Sub1_Sub5_Sub2.method2493((this.aOpenGLToolkit_3684), -1, (new Class242[]{class242, class242_4_}));
                 aBoolean6272 = aClass337_6274 != null;
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("tia.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (class83 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("tia.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (class83 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -177,7 +177,7 @@ final class Class286_Sub6 extends Class286 {
             int i_8_ = i_5_ & 0xffff;
             float f_9_ = (float) (0x3 & i_5_ >> 16) / 8.0F;
             long l = aClass337_6274.aLong4178;
-            OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "time"), (float) (i_7_ * (this.aHa_Sub2_3684.anInt7735) % 40000) / 40000.0F);
+            OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "time"), (float) (i_7_ * (this.aOpenGLToolkit_3684.anInt7735) % 40000) / 40000.0F);
             OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "scale"), f);
             OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "breakWaterDepth"), (float) i_8_);
             OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "breakWaterOffset"), f_9_);

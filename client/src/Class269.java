@@ -10,7 +10,7 @@ final class Class269 {
     private Interface18_Impl3[] anInterface18_Impl3Array3454;
     Interface18_Impl1 anInterface18_Impl1_3455 = null;
     static int anInt3456;
-    private final ha_Sub3 aHa_Sub3_3457;
+    private final NativeToolkit aNativeToolkit_3457;
     boolean aBoolean3458;
     Interface18_Impl3[] anInterface18_Impl3Array3459;
     static int anInt3460;
@@ -63,7 +63,7 @@ final class Class269 {
                     }
                 }
             }
-            this.anInterface18_Impl1_3455 = aHa_Sub3_3457.method3872(16, 128, Class108.aClass304_1662, true, 128, is_0_);
+            this.anInterface18_Impl1_3455 = aNativeToolkit_3457.method3872(16, 128, Class108.aClass304_1662, true, 128, is_0_);
         }
         anInt3456++;
         return this.anInterface18_Impl1_3455 != null;
@@ -73,29 +73,29 @@ final class Class269 {
         if (i == -67) varPlayerTypeList = null;
     }
 
-    Class269(ha_Sub3 var_ha_Sub3) {
+    Class269(NativeToolkit var_nativeToolkit) {
         anInterface18_Impl3Array3454 = null;
         this.anInterface18_Impl3Array3459 = null;
-        aHa_Sub3_3457 = var_ha_Sub3;
-        this.aBoolean3458 = aHa_Sub3_3457.aBoolean8159;
-        if (this.aBoolean3458 && !aHa_Sub3_3457.method3931(true, Class191.aClass304_2571, Class68.aClass68_1183)) this.aBoolean3458 = false;
-        if (this.aBoolean3458 || aHa_Sub3_3457.method3880(Class68.aClass68_1183, Class191.aClass304_2571, (byte) 123)) {
+        aNativeToolkit_3457 = var_nativeToolkit;
+        this.aBoolean3458 = aNativeToolkit_3457.aBoolean8159;
+        if (this.aBoolean3458 && !aNativeToolkit_3457.method3931(true, Class191.aClass304_2571, Class68.aClass68_1183)) this.aBoolean3458 = false;
+        if (this.aBoolean3458 || aNativeToolkit_3457.method3880(Class68.aClass68_1183, Class191.aClass304_2571, (byte) 123)) {
             OutputStream_Sub1.method134((byte) -126);
             if (this.aBoolean3458) {
                 byte[] is = Class50_Sub1.method461(false, QuickChatPhraseTypeList.anObject4366, 53146732);
-                this.anInterface18_Impl1_3452 = aHa_Sub3_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, is);
+                this.anInterface18_Impl1_3452 = aNativeToolkit_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, is);
                 is = Class50_Sub1.method461(false, Class227.anObject2969, 53146732);
-                aHa_Sub3_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, is);
+                aNativeToolkit_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, is);
             } else {
                 this.anInterface18_Impl3Array3459 = new Interface18_Impl3[16];
                 for (int i = 0; i < 16; i++) {
                     byte[] is = Class173.method1331((byte) 100, QuickChatPhraseTypeList.anObject4366, 128 * (i * 128 * 2), 32768);
-                    this.anInterface18_Impl3Array3459[i] = aHa_Sub3_3457.method3944(is, 128, Class191.aClass304_2571, 2, true, 128);
+                    this.anInterface18_Impl3Array3459[i] = aNativeToolkit_3457.method3944(is, 128, Class191.aClass304_2571, 2, true, 128);
                 }
                 anInterface18_Impl3Array3454 = new Interface18_Impl3[16];
                 for (int i = 0; i < 16; i++) {
                     byte[] is = Class173.method1331((byte) 120, Class227.anObject2969, 128 * (128 * i) * 2, 32768);
-                    anInterface18_Impl3Array3454[i] = aHa_Sub3_3457.method3944(is, 128, Class191.aClass304_2571, 2, true, 128);
+                    anInterface18_Impl3Array3454[i] = aNativeToolkit_3457.method3944(is, 128, Class191.aClass304_2571, 2, true, 128);
                 }
             }
         }

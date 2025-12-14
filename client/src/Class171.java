@@ -4,7 +4,7 @@
 
 final class Class171 {
     static int anInt2267;
-    private final ha_Sub2 aHa_Sub2_2268;
+    private final OpenGLToolkit aOpenGLToolkit_2268;
     static short aShort2269 = 32767;
     int anInt2270;
     static int anInt2271;
@@ -104,7 +104,7 @@ final class Class171 {
     }
 
     protected final void finalize() throws Throwable {
-        aHa_Sub2_2268.method3765((byte) 65, this.anInt2270);
+        aOpenGLToolkit_2268.method3765((byte) 65, this.anInt2270);
         anInt2274++;
         super.finalize();
     }
@@ -145,8 +145,8 @@ final class Class171 {
         if (i_44_ == 26603) anInt2271++;
     }
 
-    Class171(ha_Sub2 var_ha_Sub2, int i, int i_45_) {
-        aHa_Sub2_2268 = var_ha_Sub2;
+    Class171(OpenGLToolkit var_openGLToolkit, int i, int i_45_) {
+        aOpenGLToolkit_2268 = var_openGLToolkit;
         this.anInt2270 = i_45_;
     }
 

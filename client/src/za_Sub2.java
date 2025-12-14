@@ -14,7 +14,7 @@ final class za_Sub2 extends za {
     NativeHeap aNativeHeap9782;
     static boolean aBoolean9783 = false;
 
-    static final Class193 method3442(int i, byte[] is, Class377 class377, int i_0_) {
+    static final Class193 method3442(int i, byte[] is, OpenGLxToolkit openGLxToolkit, int i_0_) {
         try {
             anInt9779++;
             if (is == null) return null;
@@ -28,9 +28,9 @@ final class za_Sub2 extends za {
             }
             OpenGL.glBindProgramARB(i, 0);
             if (i_0_ != 4) return null;
-            return new Class193(class377, i, i_1_);
+            return new Class193(openGLxToolkit, i, i_1_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cu.A(" + i + ',' + (is != null ? "{...}" : "null") + ',' + (class377 != null ? "{...}" : "null") + ',' + i_0_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("cu.A(" + i + ',' + (is != null ? "{...}" : "null") + ',' + (openGLxToolkit != null ? "{...}" : "null") + ',' + i_0_ + ')'));
         }
     }
 

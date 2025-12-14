@@ -42,7 +42,7 @@ final class s_Sub3 extends Ground {
     static int anInt8319;
     static Class21 aClass21_8320 = new Class21();
     int[][][] anIntArrayArrayArray8321;
-    ha_Sub3 aHa_Sub3_8322;
+    NativeToolkit aNativeToolkit_8322;
     private float[][] aFloatArrayArray8323;
     Class130 aClass130_8324;
     private Class356 aClass356_8325;
@@ -58,13 +58,13 @@ final class s_Sub3 extends Ground {
     final r fa(int i, int i_0_, r var_r) {
         anInt8290++;
         if ((aByteArrayArray8317[i][i_0_] & 0x1) == 0) return null;
-        int i_1_ = (this.anInt4592 >> this.aHa_Sub3_8322.anInt8107);
+        int i_1_ = (this.anInt4592 >> this.aNativeToolkit_8322.anInt8107);
         r_Sub1 var_r_Sub1 = (r_Sub1) var_r;
         r_Sub1 var_r_Sub1_2_;
         if (var_r_Sub1 != null && var_r_Sub1.method3291(i_1_, i_1_, (byte) -59)) {
             var_r_Sub1_2_ = var_r_Sub1;
             var_r_Sub1_2_.method3289(11);
-        } else var_r_Sub1_2_ = new r_Sub1(this.aHa_Sub3_8322, i_1_, i_1_);
+        } else var_r_Sub1_2_ = new r_Sub1(this.aNativeToolkit_8322, i_1_, i_1_);
         var_r_Sub1_2_.method3286(i_1_, -97, i_1_, 0, 0);
         method4005(var_r_Sub1_2_, i_0_, i, 21722);
         return var_r_Sub1_2_;
@@ -105,8 +105,8 @@ final class s_Sub3 extends Ground {
             Class232.anIntArray3014 = new int[i_24_];
         }
         for (int i_25_ = 0; i_25_ < i_24_; i_25_++) {
-            Class30.anIntArray407[i_25_] = (is[i_25_] >> this.aHa_Sub3_8322.anInt8107);
-            Class232.anIntArray3014[i_25_] = (is_23_[i_25_] >> this.aHa_Sub3_8322.anInt8107);
+            Class30.anIntArray407[i_25_] = (is[i_25_] >> this.aNativeToolkit_8322.anInt8107);
+            Class232.anIntArray3014[i_25_] = (is_23_[i_25_] >> this.aNativeToolkit_8322.anInt8107);
         }
         int i_26_ = 0;
         while (i_24_ > i_26_) {
@@ -123,8 +123,8 @@ final class s_Sub3 extends Ground {
     final void wa(r var_r, int i, int i_33_, int i_34_, int i_35_, boolean bool) {
         anInt8315++;
         if (aClass330_8307 != null && var_r != null) {
-            int i_36_ = (i + -(i_33_ * (this.aHa_Sub3_8322.anInt8133) >> 8) >> this.aHa_Sub3_8322.anInt8107);
-            int i_37_ = (i_34_ - ((this.aHa_Sub3_8322.anInt8114) * i_33_ >> 8) >> this.aHa_Sub3_8322.anInt8107);
+            int i_36_ = (i + -(i_33_ * (this.aNativeToolkit_8322.anInt8133) >> 8) >> this.aNativeToolkit_8322.anInt8107);
+            int i_37_ = (i_34_ - ((this.aNativeToolkit_8322.anInt8114) * i_33_ >> 8) >> this.aNativeToolkit_8322.anInt8107);
             aClass330_8307.method2629(i_37_, var_r, 1, i_36_);
         }
     }
@@ -136,8 +136,8 @@ final class s_Sub3 extends Ground {
     final void CA(r var_r, int i, int i_39_, int i_40_, int i_41_, boolean bool) {
         anInt8319++;
         if (aClass330_8307 != null && var_r != null) {
-            int i_42_ = (i + -((this.aHa_Sub3_8322.anInt8133 * i_39_) >> 8) >> this.aHa_Sub3_8322.anInt8107);
-            int i_43_ = (-((this.aHa_Sub3_8322.anInt8114 * i_39_) >> 8) + i_40_ >> this.aHa_Sub3_8322.anInt8107);
+            int i_42_ = (i + -((this.aNativeToolkit_8322.anInt8133 * i_39_) >> 8) >> this.aNativeToolkit_8322.anInt8107);
+            int i_43_ = (-((this.aNativeToolkit_8322.anInt8114 * i_39_) >> 8) + i_40_ >> this.aNativeToolkit_8322.anInt8107);
             aClass330_8307.method2633(287, i_42_, var_r, i_43_);
         }
     }
@@ -162,8 +162,8 @@ final class s_Sub3 extends Ground {
             int i = 20;
             if (anIntArrayArrayArray8314 != null) i += 4;
             if ((this.anInt8294 & 0x7) != 0) i += 12;
-            jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer = this.aHa_Sub3_8322.aNativeHeap7891.a(anInt8329 * 4, false);
-            jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer_45_ = this.aHa_Sub3_8322.aNativeHeap7891.a(anInt8329 * i, false);
+            jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer = this.aNativeToolkit_8322.aNativeHeap7891.a(anInt8329 * 4, false);
+            jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer_45_ = this.aNativeToolkit_8322.aNativeHeap7891.a(anInt8329 * i, false);
             Stream stream = new Stream(nativeheapbuffer_45_);
             Stream stream_46_ = new Stream(nativeheapbuffer);
             Class348_Sub3[] class348_sub3s_47_ = new Class348_Sub3[anInt8329];
@@ -271,8 +271,8 @@ final class s_Sub3 extends Ground {
                                 else if (i_104_ > 126) i_104_ = 126;
                                 i_89_ = (Class10.HSL_TO_RGB[i_104_ | i_83_ & 0xff80]);
                                 if ((this.anInt8294 & 0x7) == 0) {
-                                    f_103_ = ((f_91_ * (this.aHa_Sub3_8322.aFloatArray8170[0])) + f_90_ * (this.aHa_Sub3_8322.aFloatArray8170[1]) + (this.aHa_Sub3_8322.aFloatArray8170[2]) * f_92_);
-                                    f_103_ = ((f_103_ * (!(f_103_ > 0.0F) ? (this.aHa_Sub3_8322.aFloat8186) : (this.aHa_Sub3_8322.aFloat8174))) + (this.aHa_Sub3_8322.aFloat8093));
+                                    f_103_ = ((f_91_ * (this.aNativeToolkit_8322.aFloatArray8170[0])) + f_90_ * (this.aNativeToolkit_8322.aFloatArray8170[1]) + (this.aNativeToolkit_8322.aFloatArray8170[2]) * f_92_);
+                                    f_103_ = ((f_103_ * (!(f_103_ > 0.0F) ? (this.aNativeToolkit_8322.aFloat8186) : (this.aNativeToolkit_8322.aFloat8174))) + (this.aNativeToolkit_8322.aFloat8093));
                                 }
                             }
                             Node node = null;
@@ -287,8 +287,8 @@ final class s_Sub3 extends Ground {
                                     } else i_107_ = 2;
                                     i_106_ = (Class10.HSL_TO_RGB[i_107_ | i_84_ & 0xff80]);
                                     if ((0x7 & this.anInt8294) == 0) {
-                                        float f_108_ = ((this.aHa_Sub3_8322.aFloatArray8170[2]) * f_92_ + (f_90_ * (this.aHa_Sub3_8322.aFloatArray8170[1]) + ((this.aHa_Sub3_8322.aFloatArray8170[0]) * f_91_)));
-                                        f_108_ = ((this.aHa_Sub3_8322.aFloat8093) + (f_103_ > 0.0F ? (this.aHa_Sub3_8322.aFloat8174) : (this.aHa_Sub3_8322.aFloat8186)) * f_103_);
+                                        float f_108_ = ((this.aNativeToolkit_8322.aFloatArray8170[2]) * f_92_ + (f_90_ * (this.aNativeToolkit_8322.aFloatArray8170[1]) + ((this.aNativeToolkit_8322.aFloatArray8170[0]) * f_91_)));
+                                        f_108_ = ((this.aNativeToolkit_8322.aFloat8093) + (f_103_ > 0.0F ? (this.aNativeToolkit_8322.aFloat8174) : (this.aNativeToolkit_8322.aFloat8186)) * f_103_);
                                         int i_109_ = 0xff & i_106_ >> 16;
                                         int i_110_ = (i_106_ & 0xff04) >> 8;
                                         int i_111_ = 0xff & i_106_;
@@ -331,7 +331,7 @@ final class s_Sub3 extends Ground {
                                         stream.b(f_92_);
                                     }
                                 }
-                                if ((this.aHa_Sub3_8322.anInt8178) == 0) stream_46_.b(~0xffffff | i_106_);
+                                if ((this.aNativeToolkit_8322.anInt8178) == 0) stream_46_.b(~0xffffff | i_106_);
                                 else stream_46_.c(i_106_ | ~0xffffff);
                                 i_105_ = anInt8303++;
                                 is_77_[i_78_] = (short) i_105_;
@@ -392,15 +392,15 @@ final class s_Sub3 extends Ground {
             }
             stream.a();
             stream_46_.a();
-            anInterface5_Impl1_8326 = this.aHa_Sub3_8322.method3889(false, 16711680);
+            anInterface5_Impl1_8326 = this.aNativeToolkit_8322.method3889(false, 16711680);
             anInterface5_Impl1_8326.method17(nativeheapbuffer, 4, anInt8303 * 4, (byte) -126);
-            anInterface5_Impl1_8327 = this.aHa_Sub3_8322.method3889(false, 16711680);
+            anInterface5_Impl1_8327 = this.aNativeToolkit_8322.method3889(false, 16711680);
             anInterface5_Impl1_8327.method17(nativeheapbuffer_45_, i, i * anInt8303, (byte) -59);
             if ((0x7 & this.anInt8294) == 0) {
-                if (anIntArrayArrayArray8314 == null) this.aClass130_8324 = (this.aHa_Sub3_8322.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4078}), new Class58(Class325.aClass325_4076)})));
-                else this.aClass130_8324 = (this.aHa_Sub3_8322.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4077}), new Class58(Class325.aClass325_4076)})));
-            } else if (anIntArrayArrayArray8314 != null) this.aClass130_8324 = (this.aHa_Sub3_8322.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4077, Class325.aClass325_4075}), new Class58(Class325.aClass325_4076)})));
-            else this.aClass130_8324 = (this.aHa_Sub3_8322.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4075}), new Class58(Class325.aClass325_4076)})));
+                if (anIntArrayArrayArray8314 == null) this.aClass130_8324 = (this.aNativeToolkit_8322.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4078}), new Class58(Class325.aClass325_4076)})));
+                else this.aClass130_8324 = (this.aNativeToolkit_8322.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4077}), new Class58(Class325.aClass325_4076)})));
+            } else if (anIntArrayArrayArray8314 != null) this.aClass130_8324 = (this.aNativeToolkit_8322.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4077, Class325.aClass325_4075}), new Class58(Class325.aClass325_4076)})));
+            else this.aClass130_8324 = (this.aNativeToolkit_8322.method3812(0, (new Class58[]{new Class58(new Class325[]{Class325.aClass325_4073, Class325.aClass325_4078, Class325.aClass325_4075}), new Class58(Class325.aClass325_4076)})));
             int i_125_ = 0;
             for (int i_126_ = 0; i_126_ < class348_sub3s.length; i_126_++) {
                 if (class348_sub3s[i_126_].anInt6589 > 0) class348_sub3s[i_125_++] = class348_sub3s[i_126_];
@@ -431,8 +431,8 @@ final class s_Sub3 extends Ground {
     final boolean method3989(r var_r, int i, int i_128_, int i_129_, int i_130_, boolean bool) {
         anInt8316++;
         if (aClass330_8307 == null || var_r == null) return false;
-        int i_131_ = (-(this.aHa_Sub3_8322.anInt8133 * i_128_ >> 8) + i >> this.aHa_Sub3_8322.anInt8107);
-        int i_132_ = (i_129_ + -((this.aHa_Sub3_8322.anInt8114 * i_128_) >> 8) >> this.aHa_Sub3_8322.anInt8107);
+        int i_131_ = (-(this.aNativeToolkit_8322.anInt8133 * i_128_ >> 8) + i >> this.aNativeToolkit_8322.anInt8107);
+        int i_132_ = (i_129_ + -((this.aNativeToolkit_8322.anInt8114 * i_128_) >> 8) >> this.aNativeToolkit_8322.anInt8107);
         return aClass330_8307.method2628(i_131_, (byte) 69, var_r, i_132_);
     }
 
@@ -446,13 +446,13 @@ final class s_Sub3 extends Ground {
         anInt8318++;
     }
 
-    s_Sub3(ha_Sub3 var_ha_Sub3, int i, int i_139_, int i_140_, int i_141_, int[][] is, int[][] is_142_, int i_143_) {
+    s_Sub3(NativeToolkit var_nativeToolkit, int i, int i_139_, int i_140_, int i_141_, int[][] is, int[][] is_142_, int i_143_) {
         super(i_140_, i_141_, i_143_, is);
         aClass262_8286 = new Class262();
         do {
             try {
                 anInt8302 = this.anInt4588 - 2;
-                this.aHa_Sub3_8322 = var_ha_Sub3;
+                this.aNativeToolkit_8322 = var_nativeToolkit;
                 anIntArrayArrayArray8308 = new int[i_140_][i_141_][];
                 anIntArrayArrayArray8291 = new int[i_140_][i_141_][];
                 this.anIntArrayArrayArray8296 = new int[i_140_][i_141_][];
@@ -489,9 +489,9 @@ final class s_Sub3 extends Ground {
                 aFloat8305++;
                 aClass356_8325 = new Class356(128);
                 if ((this.anInt8294 & 0x10) == 0) break;
-                aClass330_8307 = new Class330(this.aHa_Sub3_8322, this);
+                aClass330_8307 = new Class330(this.aNativeToolkit_8322, this);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("qm.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + i + ',' + i_139_ + ',' + i_140_ + ',' + i_141_ + ',' + (is != null ? "{...}" : "null") + ',' + (is_142_ != null ? "{...}" : "null") + ',' + i_143_ + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("qm.<init>(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_139_ + ',' + i_140_ + ',' + i_141_ + ',' + (is != null ? "{...}" : "null") + ',' + (is_142_ != null ? "{...}" : "null") + ',' + i_143_ + ')'));
             }
             break;
         } while (false);
@@ -520,45 +520,45 @@ final class s_Sub3 extends Ground {
                         if (bools_162_[i_163_ - i_158_]) Class286_Sub1.anIntArray6189[Class348_Sub48.anInt7133++] = i_161_ + this.anInt4587 * i_163_;
                     }
                 }
-                if (i_150_ == -1) this.aHa_Sub3_8322.method3825(8);
+                if (i_150_ == -1) this.aNativeToolkit_8322.method3825(8);
                 else {
-                    this.aHa_Sub3_8322.method3867((float) i_150_, 101);
-                    this.aHa_Sub3_8322.method3857((byte) -71);
+                    this.aNativeToolkit_8322.method3867((float) i_150_, 101);
+                    this.aNativeToolkit_8322.method3857((byte) -71);
                 }
-                this.aHa_Sub3_8322.method3942(5);
-                this.aHa_Sub3_8322.method3866(((this.anInt8294) & 0x7) != 0, true);
-                this.aHa_Sub3_8322.method3814(false, false, -1, (byte) 101);
-                this.aHa_Sub3_8322.method3925(112, anInterface5_Impl1_8327, 0);
+                this.aNativeToolkit_8322.method3942(5);
+                this.aNativeToolkit_8322.method3866(((this.anInt8294) & 0x7) != 0, true);
+                this.aNativeToolkit_8322.method3814(false, false, -1, (byte) 101);
+                this.aNativeToolkit_8322.method3925(112, anInterface5_Impl1_8327, 0);
                 for (int i_164_ = 0; i_164_ < aClass348_Sub3Array8328.length; i_164_++)
                     aClass348_Sub3Array8328[i_164_].method2737((byte) -30, Class286_Sub1.anIntArray6189, Class348_Sub48.anInt7133);
-                Class101_Sub2 class101_sub2 = this.aHa_Sub3_8322.method3934(-97);
+                Class101_Sub2 class101_sub2 = this.aNativeToolkit_8322.method3934(-97);
                 class101_sub2.method894(0, -1, 0);
-                this.aHa_Sub3_8322.method3915(0);
+                this.aNativeToolkit_8322.method3915(0);
                 if (!aClass262_8286.method2002((byte) 18)) {
-                    int i_165_ = this.aHa_Sub3_8322.anInt8144;
-                    int i_166_ = this.aHa_Sub3_8322.anInt8091;
-                    this.aHa_Sub3_8322.L(0, i_166_, this.aHa_Sub3_8322.anInt8105);
-                    this.aHa_Sub3_8322.method3866(false, true);
-                    this.aHa_Sub3_8322.method3946(-32, false);
-                    this.aHa_Sub3_8322.method3817(60, 128);
-                    this.aHa_Sub3_8322.method3814(false, false, -2, (byte) 100);
-                    this.aHa_Sub3_8322.method3850((byte) 63, (this.aHa_Sub3_8322.anInterface18_8147));
-                    this.aHa_Sub3_8322.method3874(Class328_Sub3.aClass229_6519, 116, JavaThreadResource.aClass229_2207);
-                    this.aHa_Sub3_8322.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
-                    this.aHa_Sub3_8322.method3885(0, true, Class285_Sub2.aClass70_8503);
+                    int i_165_ = this.aNativeToolkit_8322.anInt8144;
+                    int i_166_ = this.aNativeToolkit_8322.anInt8091;
+                    this.aNativeToolkit_8322.L(0, i_166_, this.aNativeToolkit_8322.anInt8105);
+                    this.aNativeToolkit_8322.method3866(false, true);
+                    this.aNativeToolkit_8322.method3946(-32, false);
+                    this.aNativeToolkit_8322.method3817(60, 128);
+                    this.aNativeToolkit_8322.method3814(false, false, -2, (byte) 100);
+                    this.aNativeToolkit_8322.method3850((byte) 63, (this.aNativeToolkit_8322.anInterface18_8147));
+                    this.aNativeToolkit_8322.method3874(Class328_Sub3.aClass229_6519, 116, JavaThreadResource.aClass229_2207);
+                    this.aNativeToolkit_8322.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
+                    this.aNativeToolkit_8322.method3885(0, true, Class285_Sub2.aClass70_8503);
                     for (Node node = aClass262_8286.method1995(i_151_ + 5); node != null; node = aClass262_8286.method1990((byte) 106)) {
                         Class348_Sub38 class348_sub38 = (Class348_Sub38) node;
                         class348_sub38.method3032(i_149_, i_153_, bools, false, i);
                     }
-                    this.aHa_Sub3_8322.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-                    this.aHa_Sub3_8322.method3885(0, true, ModelParticleEffector.aClass70_4247);
-                    this.aHa_Sub3_8322.method3850((byte) 90, null);
-                    this.aHa_Sub3_8322.L(i_165_, i_166_, this.aHa_Sub3_8322.anInt8105);
+                    this.aNativeToolkit_8322.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+                    this.aNativeToolkit_8322.method3885(0, true, ModelParticleEffector.aClass70_4247);
+                    this.aNativeToolkit_8322.method3850((byte) 90, null);
+                    this.aNativeToolkit_8322.L(i_165_, i_166_, this.aNativeToolkit_8322.anInt8105);
                 }
                 if (aClass330_8307 != null) {
-                    this.aHa_Sub3_8322.method3925(-91, anInterface5_Impl1_8327, 0);
-                    this.aHa_Sub3_8322.method3925(-71, anInterface5_Impl1_8326, 1);
-                    this.aHa_Sub3_8322.method3862(0, this.aClass130_8324);
+                    this.aNativeToolkit_8322.method3925(-91, anInterface5_Impl1_8327, 0);
+                    this.aNativeToolkit_8322.method3925(-71, anInterface5_Impl1_8326, 1);
+                    this.aNativeToolkit_8322.method3862(0, this.aClass130_8324);
                     aClass330_8307.method2630(128, i_153_, i, bool, bools, i_149_);
                 }
             }
@@ -568,7 +568,7 @@ final class s_Sub3 extends Ground {
 
     final void method3981(Class348_Sub1 class348_sub1, int[] is) {
         try {
-            aClass262_8286.method1999(new Class348_Sub38((this.aHa_Sub3_8322), this, class348_sub1, is), -20180);
+            aClass262_8286.method1999(new Class348_Sub38((this.aNativeToolkit_8322), this, class348_sub1, is), -20180);
             anInt8287++;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qm.L(" + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
@@ -578,7 +578,7 @@ final class s_Sub3 extends Ground {
     final void U(int i, int i_167_, int[] is, int[] is_168_, int[] is_169_, int[] is_170_, int[] is_171_, int[] is_172_, int[] is_173_, int[] is_174_, int i_175_, int i_176_, int i_177_, boolean bool) {
         try {
             anInt8295++;
-            TextureSource var_d = this.aHa_Sub3_8322.aD4579;
+            TextureSource var_d = this.aNativeToolkit_8322.aD4579;
             if (is_170_ != null && anIntArrayArrayArray8314 == null) anIntArrayArrayArray8314 = new int[this.anInt4587][this.anInt4590][];
             if (is_168_ != null && anIntArrayArrayArray8308 == null) anIntArrayArrayArray8308 = new int[this.anInt4587][this.anInt4590][];
             this.anIntArrayArrayArray8321[i][i_167_] = is;
@@ -673,7 +673,7 @@ final class s_Sub3 extends Ground {
     final void method3987(int i, int i_212_, int i_213_, int i_214_, int i_215_, int i_216_, int i_217_, boolean[][] bools) {
         anInt8304++;
         if (anInt8329 > 0) {
-            Interface5_Impl2 interface5_impl2 = this.aHa_Sub3_8322.method3822(28, anInt8301);
+            Interface5_Impl2 interface5_impl2 = this.aNativeToolkit_8322.method3822(28, anInt8301);
             int i_218_ = 0;
             int i_219_ = 32767;
             int i_220_ = -32768;
@@ -681,7 +681,7 @@ final class s_Sub3 extends Ground {
                 i_218_ = 0;
                 Buffer buffer = interface5_impl2.method24(true, false);
                 if (buffer != null) {
-                    Stream stream = this.aHa_Sub3_8322.method3893(buffer, 9179);
+                    Stream stream = this.aNativeToolkit_8322.method3893(buffer, 9179);
                     if (Stream.c()) {
                         for (int i_227_ = i_215_; i_217_ > i_227_; i_227_++) {
                             int i_228_ = i_227_ * this.anInt4587 - -i_214_;
@@ -726,45 +726,45 @@ final class s_Sub3 extends Ground {
                 }
             }
             if (i_218_ > 0) {
-                this.aHa_Sub3_8322.method3932((byte) -127);
-                this.aHa_Sub3_8322.method3838(true, false);
-                this.aHa_Sub3_8322.method3866(false, true);
-                this.aHa_Sub3_8322.method3890(false, (byte) 113);
-                this.aHa_Sub3_8322.method3946(-32, false);
-                this.aHa_Sub3_8322.method3817(61, 0);
-                this.aHa_Sub3_8322.method3814(false, false, -2, (byte) 98);
-                this.aHa_Sub3_8322.method3850((byte) -22, null);
-                Class101_Sub2 class101_sub2 = this.aHa_Sub3_8322.method3934(-71);
-                float[] fs = this.aHa_Sub3_8322.method3837(true);
+                this.aNativeToolkit_8322.method3932((byte) -127);
+                this.aNativeToolkit_8322.method3838(true, false);
+                this.aNativeToolkit_8322.method3866(false, true);
+                this.aNativeToolkit_8322.method3890(false, (byte) 113);
+                this.aNativeToolkit_8322.method3946(-32, false);
+                this.aNativeToolkit_8322.method3817(61, 0);
+                this.aNativeToolkit_8322.method3814(false, false, -2, (byte) 98);
+                this.aNativeToolkit_8322.method3850((byte) -22, null);
+                Class101_Sub2 class101_sub2 = this.aNativeToolkit_8322.method3934(-71);
+                float[] fs = this.aNativeToolkit_8322.method3837(true);
                 fs[6] = 0.0F;
-                fs[13] = -(((float) (2 * i_212_) + (float) (i_213_ * i_217_) / 128.0F) / (float) (this.aHa_Sub3_8322.anInt7962)) + 1.0F;
+                fs[13] = -(((float) (2 * i_212_) + (float) (i_213_ * i_217_) / 128.0F) / (float) (this.aNativeToolkit_8322.anInt7962)) + 1.0F;
                 fs[11] = 0.0F;
-                fs[0] = ((float) i_213_ / ((float) (this.aHa_Sub3_8322.anInt7931) * ((float) this.anInt4592 * 128.0F)));
+                fs[0] = ((float) i_213_ / ((float) (this.aNativeToolkit_8322.anInt7931) * ((float) this.anInt4592 * 128.0F)));
                 fs[14] = -aFloat8306 / (aFloat8305 - aFloat8306);
                 fs[2] = 0.0F;
                 fs[15] = 1.0F;
-                fs[5] = ((float) i_213_ / ((float) this.anInt4592 * 128.0F * (float) (this.aHa_Sub3_8322.anInt7962)));
+                fs[5] = ((float) i_213_ / ((float) this.anInt4592 * 128.0F * (float) (this.aNativeToolkit_8322.anInt7962)));
                 fs[4] = 0.0F;
                 fs[3] = 0.0F;
                 fs[8] = 0.0F;
                 fs[7] = 0.0F;
                 fs[10] = 1.0F / (aFloat8305 - aFloat8306);
                 fs[9] = 0.0F;
-                fs[12] = -1.0F - (((float) (i_213_ * i_214_) / 128.0F - (float) (2 * i)) / (float) (this.aHa_Sub3_8322.anInt7931));
+                fs[12] = -1.0F - (((float) (i_213_ * i_214_) / 128.0F - (float) (2 * i)) / (float) (this.aNativeToolkit_8322.anInt7931));
                 fs[1] = 0.0F;
                 class101_sub2.method935(0.0F, 0.0F, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F, 1.0F, 1.0F, 0);
-                this.aHa_Sub3_8322.method3821(-4845);
-                this.aHa_Sub3_8322.method3915(0);
+                this.aNativeToolkit_8322.method3821(-4845);
+                this.aNativeToolkit_8322.method3915(0);
                 if ((0x7 & this.anInt8294) != 0) {
-                    this.aHa_Sub3_8322.method3866(true, true);
-                    this.aHa_Sub3_8322.method3892(0);
-                } else this.aHa_Sub3_8322.method3866(false, true);
-                this.aHa_Sub3_8322.method3926((byte) 59, false);
-                this.aHa_Sub3_8322.method3925(63, anInterface5_Impl1_8327, 0);
-                this.aHa_Sub3_8322.method3925(-90, anInterface5_Impl1_8326, 1);
-                this.aHa_Sub3_8322.method3862(0, this.aClass130_8324);
-                this.aHa_Sub3_8322.method3938(Class247.aClass21_3181, i_218_ / 3, interface5_impl2, i_219_, 0, -i_219_ + i_220_ - -1, 114);
-                this.aHa_Sub3_8322.method3926((byte) 82, true);
+                    this.aNativeToolkit_8322.method3866(true, true);
+                    this.aNativeToolkit_8322.method3892(0);
+                } else this.aNativeToolkit_8322.method3866(false, true);
+                this.aNativeToolkit_8322.method3926((byte) 59, false);
+                this.aNativeToolkit_8322.method3925(63, anInterface5_Impl1_8327, 0);
+                this.aNativeToolkit_8322.method3925(-90, anInterface5_Impl1_8326, 1);
+                this.aNativeToolkit_8322.method3862(0, this.aClass130_8324);
+                this.aNativeToolkit_8322.method3938(Class247.aClass21_3181, i_218_ / 3, interface5_impl2, i_219_, 0, -i_219_ + i_220_ - -1, 114);
+                this.aNativeToolkit_8322.method3926((byte) 82, true);
             }
         }
     }

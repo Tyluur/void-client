@@ -616,7 +616,7 @@ class Packet extends Node {
                 SystemInfo.aClass248_6601.method1892(i ^ ~0x4b, true);
             }
         }
-        if (Class318_Sub1_Sub1_Sub2.isBuildingMap(newStep, (byte) -64) || newStep == STEP_LOGGING_IN_FROM_GAMESCREEN_TO_LOBBY) Class348_Sub8.aToolkit6654.method3673();
+        if (Class318_Sub1_Sub1_Sub2.isBuildingMap(newStep, (byte) -64) || newStep == STEP_LOGGING_IN_FROM_GAMESCREEN_TO_LOBBY) Class348_Sub8.active.method3673();
         Class240.mainLogicStep = newStep;
     }
 

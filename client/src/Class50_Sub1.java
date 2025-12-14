@@ -68,7 +68,7 @@ final class Class50_Sub1 extends Class50 {
         if (object == null) return null;
         if (object instanceof byte[]) {
             byte[] is = (byte[]) object;
-            if (bool) return ha_Sub3.method3873(is, 0);
+            if (bool) return NativeToolkit.method3873(is, 0);
             return is;
         }
         if (i != 53146732) return null;

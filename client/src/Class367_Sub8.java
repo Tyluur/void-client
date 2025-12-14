@@ -92,24 +92,24 @@ final class Class367_Sub8 extends Class367 {
     }
 
     final void method3520(byte i) {
-        this.aHa_Sub3_4479.method3897(1, -4382);
+        this.aNativeToolkit_4479.method3897(1, -4382);
         if (i != 87) method3549(-29, (byte) -5);
         anInt7364++;
-        this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, 120, JavaThreadResource.aClass229_2207);
-        this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-        this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
-        this.aHa_Sub3_4479.method3910((byte) -26, 1);
-        this.aHa_Sub3_4479.method3850((byte) 86, null);
-        this.aHa_Sub3_4479.method3897(0, -4382);
-        this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
+        this.aNativeToolkit_4479.method3874(JavaThreadResource.aClass229_2207, 120, JavaThreadResource.aClass229_2207);
+        this.aNativeToolkit_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+        this.aNativeToolkit_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
+        this.aNativeToolkit_4479.method3910((byte) -26, 1);
+        this.aNativeToolkit_4479.method3850((byte) 86, null);
+        this.aNativeToolkit_4479.method3897(0, -4382);
+        this.aNativeToolkit_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
     }
 
-    Class367_Sub8(ha_Sub3 var_ha_Sub3, Class269 class269) {
-        super(var_ha_Sub3);
+    Class367_Sub8(NativeToolkit var_nativeToolkit, Class269 class269) {
+        super(var_nativeToolkit);
         try {
             aClass269_7353 = class269;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kl.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + (class269 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kl.<init>(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + (class269 != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -121,22 +121,22 @@ final class Class367_Sub8 extends Class367 {
     }
 
     final void method3526(int i, int i_17_, int i_18_) {
-        this.aHa_Sub3_4479.method3897(1, -4382);
+        this.aNativeToolkit_4479.method3897(1, -4382);
         anInt7354++;
         if (i != 10756) method3527(-26, null, 111);
         if ((0x80 & i_17_) == 0) {
             if ((0x1 & i_18_) != 1) {
-                if (aClass269_7353.aBoolean3458) this.aHa_Sub3_4479.method3850((byte) 108, aClass269_7353.anInterface18_Impl1_3452);
-                else this.aHa_Sub3_4479.method3850((byte) 126, (aClass269_7353.anInterface18_Impl3Array3459[0]));
+                if (aClass269_7353.aBoolean3458) this.aNativeToolkit_4479.method3850((byte) 108, aClass269_7353.anInterface18_Impl1_3452);
+                else this.aNativeToolkit_4479.method3850((byte) 126, (aClass269_7353.anInterface18_Impl3Array3459[0]));
             } else if (aClass269_7353.aBoolean3458) {
-                aFloat7350 = (float) ((this.aHa_Sub3_4479.anInt8146) % 4000) / 4000.0F;
-                this.aHa_Sub3_4479.method3850((byte) -112, aClass269_7353.anInterface18_Impl1_3452);
+                aFloat7350 = (float) ((this.aNativeToolkit_4479.anInt8146) % 4000) / 4000.0F;
+                this.aNativeToolkit_4479.method3850((byte) -112, aClass269_7353.anInterface18_Impl1_3452);
             } else {
-                int i_19_ = (16 * (this.aHa_Sub3_4479.anInt8146 % 4000) / 4000);
-                this.aHa_Sub3_4479.method3850((byte) -114, (aClass269_7353.anInterface18_Impl3Array3459[i_19_]));
+                int i_19_ = (16 * (this.aNativeToolkit_4479.anInt8146 % 4000) / 4000);
+                this.aNativeToolkit_4479.method3850((byte) -114, (aClass269_7353.anInterface18_Impl3Array3459[i_19_]));
             }
-        } else this.aHa_Sub3_4479.method3850((byte) 85, null);
-        this.aHa_Sub3_4479.method3897(0, -4382);
+        } else this.aNativeToolkit_4479.method3850((byte) 85, null);
+        this.aNativeToolkit_4479.method3897(0, -4382);
     }
 
     final boolean method3530(int i) {
@@ -153,15 +153,15 @@ final class Class367_Sub8 extends Class367 {
     }
 
     final void method3532(int i) {
-        if (this.aHa_Sub3_4479.method3877((byte) -126) == 0) {
-            Class101_Sub2 class101_sub2 = this.aHa_Sub3_4479.method3848(5);
-            this.aHa_Sub3_4479.method3897(1, i ^ ~0x39a4);
-            Class101_Sub2 class101_sub2_21_ = this.aHa_Sub3_4479.method3820(false);
+        if (this.aNativeToolkit_4479.method3877((byte) -126) == 0) {
+            Class101_Sub2 class101_sub2 = this.aNativeToolkit_4479.method3848(5);
+            this.aNativeToolkit_4479.method3897(1, i ^ ~0x39a4);
+            Class101_Sub2 class101_sub2_21_ = this.aNativeToolkit_4479.method3820(false);
             class101_sub2_21_.method898(class101_sub2);
             class101_sub2_21_.method914(0.125F, 1.0F, 0, 0.125F);
             class101_sub2_21_.method920(0.0F, false, aFloat7350, 0.0F);
-            this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aClass251_9477);
-            this.aHa_Sub3_4479.method3897(0, -4382);
+            this.aNativeToolkit_4479.method3853(-32, Class348_Sub40_Sub38.aClass251_9477);
+            this.aNativeToolkit_4479.method3897(0, -4382);
         }
         anInt7352++;
         if (i != 10425) method3530(16);
@@ -169,26 +169,26 @@ final class Class367_Sub8 extends Class367 {
 
     final void method3521(boolean bool, byte i) {
         if (i != -103) anInt7365 = 86;
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), i ^ ~0x17, JavaThreadResource.aClass229_2207);
+        this.aNativeToolkit_4479.method3874((Class328_Sub3.aClass229_6519), i ^ ~0x17, JavaThreadResource.aClass229_2207);
         anInt7357++;
     }
 
     final void method3525(int i, boolean bool) {
         anInt7356++;
-        this.aHa_Sub3_4479.method3897(1, i ^ ~0x2a45);
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 111, (Class348_Sub23_Sub2.aClass229_9011));
-        this.aHa_Sub3_4479.method3924(true, false, 0, ModelParticleEffector.aClass70_4247, false);
-        this.aHa_Sub3_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);
-        this.aHa_Sub3_4479.method3910((byte) -26, 0);
-        this.aHa_Sub3_4479.method3897(0, -4382);
-        this.aHa_Sub3_4479.method3894(-28186, -16777216);
-        this.aHa_Sub3_4479.method3885(0, true, Class348_Sub40_Sub39.aClass70_9485);
+        this.aNativeToolkit_4479.method3897(1, i ^ ~0x2a45);
+        this.aNativeToolkit_4479.method3874((Class328_Sub3.aClass229_6519), 111, (Class348_Sub23_Sub2.aClass229_9011));
+        this.aNativeToolkit_4479.method3924(true, false, 0, ModelParticleEffector.aClass70_4247, false);
+        this.aNativeToolkit_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);
+        this.aNativeToolkit_4479.method3910((byte) -26, 0);
+        this.aNativeToolkit_4479.method3897(0, -4382);
+        this.aNativeToolkit_4479.method3894(-28186, -16777216);
+        this.aNativeToolkit_4479.method3885(0, true, Class348_Sub40_Sub39.aClass70_9485);
         method3532(10425);
         if (i != 15192) aShort7355 = (short) 106;
     }
 
     final void method3527(int i, Interface18 interface18, int i_22_) {
-        this.aHa_Sub3_4479.method3850((byte) 103, interface18);
+        this.aNativeToolkit_4479.method3850((byte) 103, interface18);
         anInt7358++;
         if (i_22_ != -16776) method3520((byte) -127);
     }

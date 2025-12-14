@@ -97,13 +97,13 @@ final class Class190 {
             if (class42.aString597 != null) {
                 class323 = Option_Sub15.method1782(class42.anInt576, 10144);
                 if (class323 != null) {
-                    i_15_ = (Class258_Sub1.aFontMetrics_8527.splitLines(class42.aString597, null, ha_Sub3.aStringArray8019, (byte) 87, null));
+                    i_15_ = (Class258_Sub1.aFontMetrics_8527.splitLines(class42.aString597, null, NativeToolkit.aStringArray8019, (byte) 87, null));
                     i_17_ = (class348_sub21.anInt6855 - (class42.anInt568 * (Class75.anInt1268 + -Class75.anInt1262) / (Class75.anInt1277 - Class75.anInt1257)));
                     i_16_ = (class348_sub21.anInt6853 + ((-Class75.anInt1272 + Class75.anInt1276) * class42.anInt566 / (Class75.anInt1265 + -Class75.anInt1274)));
                     if (sprite == null) i_17_ -= i_15_ * class323.method2560() / 2;
                     else i_17_ -= ((sprite.scaleHeight() >> 1) - -(i_15_ * class323.method2565()));
                     for (int i_23_ = 0; i_15_ > i_23_; i_23_++) {
-                        String string = ha_Sub3.aStringArray8019[i_23_];
+                        String string = NativeToolkit.aStringArray8019[i_23_];
                         if (i_23_ < -1 + i_15_) string = string.substring(0, -4 + string.length());
                         int i_24_ = class323.method2564(string);
                         if (i_18_ < i_24_) i_18_ = i_24_;

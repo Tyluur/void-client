@@ -46,7 +46,7 @@ final class Class347 {
                 int i_5_ = (-Class40.anInt558 + (i_3_ + Class331.aClass46_4130.anInt755));
                 if (Class258_Sub4.aClass373_8552.method3593(94)) {
                     if (Class289.aClass46_3701.anInt703 < Class318_Sub1.anInt6392) {
-                        int i_6_ = i_2_ + -ha_Sub3.anInt8001;
+                        int i_6_ = i_2_ + -NativeToolkit.anInt8001;
                         int i_7_ = -Class348_Sub40_Sub13.anInt9203 + i_3_;
                         if (Class289.aClass46_3701.anInt729 < i_6_ || (-Class289.aClass46_3701.anInt729 > i_6_) || (i_7_ > Class289.aClass46_3701.anInt729) || i_7_ < -Class289.aClass46_3701.anInt729) Class300.aBoolean3819 = true;
                     }
@@ -71,8 +71,8 @@ final class Class347 {
                             Class66.method705(class348_sub36);
                         }
                         if (Class318_Sub1_Sub3_Sub4.aClass46_10336 != null && (client.method108(Class289.aClass46_3701) != null)) Class2.method173(-67, Class289.aClass46_3701, (Class318_Sub1_Sub3_Sub4.aClass46_10336));
-                    } else if ((Class318_Sub1_Sub5.anInt8770 == 1 || Class318_Sub1_Sub5.method2485(-113)) && Class73.anInt4776 > 2) Class5_Sub2.method191(true, (ha_Sub3.anInt8001 + Class318_Sub4.anInt6411), (HitmarkTypeList.anInt2872 - -(Class348_Sub40_Sub13.anInt9203)));
-                    else if (JavaMatrix.method913((byte) 127)) Class5_Sub2.method191(true, (ha_Sub3.anInt8001 + Class318_Sub4.anInt6411), (HitmarkTypeList.anInt2872 + (Class348_Sub40_Sub13.anInt9203)));
+                    } else if ((Class318_Sub1_Sub5.anInt8770 == 1 || Class318_Sub1_Sub5.method2485(-113)) && Class73.anInt4776 > 2) Class5_Sub2.method191(true, (NativeToolkit.anInt8001 + Class318_Sub4.anInt6411), (HitmarkTypeList.anInt2872 - -(Class348_Sub40_Sub13.anInt9203)));
+                    else if (JavaMatrix.method913((byte) 127)) Class5_Sub2.method191(true, (NativeToolkit.anInt8001 + Class318_Sub4.anInt6411), (HitmarkTypeList.anInt2872 + (Class348_Sub40_Sub13.anInt9203)));
                     Class289.aClass46_3701 = null;
                 }
             }

@@ -96,7 +96,7 @@ final class InputStream_Sub2 extends InputStream {
                 int i_47_ = i_46_ >> 2;
                 int i_48_ = i_46_ & 0x3;
                 int i_49_ = Class36.anIntArray487[i_47_];
-                ha_Sub3.method3824(i_45_, i_42_, i_47_, i_44_, i_48_, 115, Class348_Sub40_Sub12.anInt9200, i_49_);
+                NativeToolkit.method3824(i_45_, i_42_, i_47_, i_44_, i_48_, 115, Class348_Sub40_Sub12.anInt9200, i_49_);
             } else if (class74 == Class286_Sub1.aClass74_6201) {
                 int i_50_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
                 int i_51_ = (i_50_ >> 4 & 0xf) + NPCTypeList.anInt3581 * 2;

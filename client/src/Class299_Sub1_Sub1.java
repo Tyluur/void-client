@@ -10,7 +10,7 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
     private final int anInt8690;
     private final int anInt8691;
     static int anInt8692;
-    private final ha_Sub2 aHa_Sub2_8693;
+    private final OpenGLToolkit aOpenGLToolkit_8693;
     static long aLong8694;
     private final int anInt8695;
     static float aFloat8696;
@@ -20,7 +20,7 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
         anInt8692++;
         if (i != -121) method2256((byte) 33);
         if (aClass258_Sub2_8688 == null) {
-            TextureSource var_d = aHa_Sub2_8693.aD4579;
+            TextureSource var_d = aOpenGLToolkit_8693.aD4579;
             Class308.anIntArray3883[3] = anInt8690;
             Class308.anIntArray3883[4] = anInt8686;
             Class308.anIntArray3883[2] = anInt8691;
@@ -38,7 +38,7 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
             }
             for (int i_3_ = 0; i_3_ < 6; i_3_++)
                 Class341.anIntArrayArray4233[i_3_] = var_d.method5(false, Class308.anIntArray3883[i_3_], 1.0F, i_0_, i_0_, i + 192);
-            aClass258_Sub2_8688 = new Class258_Sub2(aHa_Sub2_8693, 6407, i_0_, bool, Class341.anIntArrayArray4233);
+            aClass258_Sub2_8688 = new Class258_Sub2(aOpenGLToolkit_8693, 6407, i_0_, bool, Class341.anIntArrayArray4233);
         }
         return aClass258_Sub2_8688;
     }
@@ -66,13 +66,13 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
         } while (false);
     }
 
-    Class299_Sub1_Sub1(ha_Sub2 var_ha_Sub2, int i, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_) {
+    Class299_Sub1_Sub1(OpenGLToolkit var_openGLToolkit, int i, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_) {
         anInt8691 = i_9_;
         anInt8690 = i_10_;
         anInt8697 = i_12_;
         anInt8689 = i;
         anInt8695 = i_8_;
         anInt8686 = i_11_;
-        aHa_Sub2_8693 = var_ha_Sub2;
+        aOpenGLToolkit_8693 = var_openGLToolkit;
     }
 }

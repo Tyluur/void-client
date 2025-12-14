@@ -23,11 +23,11 @@ final class Class218 {
             int i_8_ = i_7_;
             if (i_8_ < 3 && NPCDefinition.method802(i_5_, i, true)) i_8_++;
             if ((Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 0 && !Class58.method536(i_5_, false, i, JavaThreadResource.anInt2204, i_8_)) || Class147.aClass357ArrayArrayArray2029 == null) return;
-            Class338.aClass237_Sub1_4197.method1694((Class348_Sub45.collisionMaps[i_7_]), i_1_, i_7_, Class348_Sub8.aToolkit6654, i, i_5_, (byte) 106);
+            Class338.aClass237_Sub1_4197.method1694((Class348_Sub45.collisionMaps[i_7_]), i_1_, i_7_, Class348_Sub8.active, i, i_5_, (byte) 106);
             if (i_3_ >= 0) {
                 int i_9_ = Class316.clientOptions.aClass239_Sub4_7220.method1737(-32350);
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub4_7220), 1);
-                Class338.aClass237_Sub1_4197.method1689(i, i_7_, i_3_, Class348_Sub8.aToolkit6654, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (Class348_Sub45.collisionMaps[i_7_]));
+                Class338.aClass237_Sub1_4197.method1689(i, i_7_, i_3_, Class348_Sub8.active, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (Class348_Sub45.collisionMaps[i_7_]));
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub4_7220), i_9_);
             }
         }

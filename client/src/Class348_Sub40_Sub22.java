@@ -198,7 +198,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40 {
             Class289.aByteArrayArrayArray3700 = (new byte[4][Class367_Sub4.mapLength]
                     [Class348_Sub40_Sub3.mapWidth]);
             Option.method1717(19278, Class348_Sub40_Sub3.mapWidth, Class367_Sub4.mapLength, 4);
-            Class97.method873(Class367_Sub4.mapLength >> 3, 21719, Class348_Sub8.aToolkit6654, Class348_Sub40_Sub3.mapWidth >> 3);
+            Class97.method873(Class367_Sub4.mapLength >> 3, 21719, Class348_Sub8.active, Class348_Sub40_Sub3.mapWidth >> 3);
             Class348_Sub15.anInt6769 = i_23_;
         }
     }

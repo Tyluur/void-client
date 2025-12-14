@@ -67,7 +67,7 @@ final class Class62 {
             Class367_Sub10.method3553(false, (byte) 122, i_1_);
         }
         if (i >= -20) aClass243_1114 = null;
-        Class14_Sub2.method243(37);
+        Class14_Sub2.saveOptions(37);
         return i_3_;
     }
 }

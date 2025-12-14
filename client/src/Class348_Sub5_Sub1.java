@@ -34,10 +34,10 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
     final void method2756(byte i, int i_0_) {
         anInt8831++;
         OpenGL.glUseProgramObjectARB(0L);
-        this.aHa_Sub2_6618.method3738(-15039, 1);
+        this.aOpenGLToolkit_6618.method3738(-15039, 1);
         int i_1_ = -98 / ((i - 44) / 38);
-        this.aHa_Sub2_6618.method3771((byte) -86, null);
-        this.aHa_Sub2_6618.method3738(-15039, 0);
+        this.aOpenGLToolkit_6618.method3771((byte) -86, null);
+        this.aOpenGLToolkit_6618.method3738(-15039, 0);
     }
 
     final void method2750(Class258_Sub3 class258_sub3, Class258_Sub3 class258_sub3_2_, int i, byte i_3_) {
@@ -49,8 +49,8 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
             OpenGL.glLoadIdentity();
             OpenGL.glOrtho(0.0, 1.0, 0.0, 1.0, -1.0, 1.0);
             if (aClass258_Sub3Array8837 == null) {
-                this.aHa_Sub2_6618.method3771((byte) -90, class258_sub3_2_);
-                this.aHa_Sub2_6618.method3773(-1, aClass206_8825);
+                this.aOpenGLToolkit_6618.method3771((byte) -90, class258_sub3_2_);
+                this.aOpenGLToolkit_6618.method3773(-1, aClass206_8825);
                 aClass206_8825.method1503(0, (byte) 3);
                 OpenGL.glViewport(0, 0, 256, 256);
                 long l = aClass337_8842.aLong4178;
@@ -68,7 +68,7 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                 OpenGL.glVertex2i(0, 1);
                 OpenGL.glEnd();
             } else {
-                this.aHa_Sub2_6618.method3773(-1, aClass206_8844);
+                this.aOpenGLToolkit_6618.method3773(-1, aClass206_8844);
                 int i_4_ = Class348_Sub40_Sub1.method3051(anInt8841, 4096);
                 int i_5_ = Class348_Sub40_Sub1.method3051(anInt8833, 4096);
                 int i_6_ = 0;
@@ -76,7 +76,7 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                     OpenGL.glViewport(0, 0, i_4_, i_5_);
                     aClass206_8844.method1509(aClass258_Sub3Array8837[i_6_], 0, 0);
                     if (i_6_ == 0) {
-                        this.aHa_Sub2_6618.method3771((byte) -115, class258_sub3_2_);
+                        this.aOpenGLToolkit_6618.method3771((byte) -115, class258_sub3_2_);
                         OpenGL.glBegin(7);
                         OpenGL.glTexCoord2f(0.0F, 0.0F);
                         OpenGL.glVertex2i(0, 0);
@@ -88,7 +88,7 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                         OpenGL.glVertex2i(0, 1);
                         OpenGL.glEnd();
                     } else {
-                        this.aHa_Sub2_6618.method3771((byte) -82, aClass258_Sub3Array8837[i_6_ - 1]);
+                        this.aOpenGLToolkit_6618.method3771((byte) -82, aClass258_Sub3Array8837[i_6_ - 1]);
                         OpenGL.glBegin(7);
                         OpenGL.glTexCoord2f(0.0F, 0.0F);
                         OpenGL.glVertex2i(0, 0);
@@ -104,9 +104,9 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                     if (i_4_ > 256) i_4_ >>= 1;
                     i_6_++;
                 }
-                this.aHa_Sub2_6618.method3770(-422613672, aClass206_8844);
-                this.aHa_Sub2_6618.method3771((byte) -100, aClass258_Sub3Array8837[i_6_ + -1]);
-                this.aHa_Sub2_6618.method3773(-1, aClass206_8825);
+                this.aOpenGLToolkit_6618.method3770(-422613672, aClass206_8844);
+                this.aOpenGLToolkit_6618.method3771((byte) -100, aClass258_Sub3Array8837[i_6_ + -1]);
+                this.aOpenGLToolkit_6618.method3773(-1, aClass206_8825);
                 aClass206_8825.method1503(0, (byte) 3);
                 OpenGL.glViewport(0, 0, 256, 256);
                 long l = aClass337_8824.aLong4178;
@@ -125,7 +125,7 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                 OpenGL.glEnd();
             }
             aClass206_8825.method1503(1, (byte) 3);
-            this.aHa_Sub2_6618.method3771((byte) -100, aClass258_Sub3_8835);
+            this.aOpenGLToolkit_6618.method3771((byte) -100, aClass258_Sub3_8835);
             long l = aClass337_8822.aLong4178;
             OpenGL.glUseProgramObjectARB(l);
             OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l, "baseTex"), 0);
@@ -141,7 +141,7 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
             OpenGL.glVertex2i(0, 1);
             OpenGL.glEnd();
             aClass206_8825.method1503(0, (byte) 3);
-            this.aHa_Sub2_6618.method3771((byte) -114, aClass258_Sub3_8830);
+            this.aOpenGLToolkit_6618.method3771((byte) -114, aClass258_Sub3_8830);
             OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l, "step"), 0.0F, 0.00390625F, 0.0F);
             OpenGL.glBegin(7);
             OpenGL.glTexCoord2f(0.0F, 0.0F);
@@ -157,16 +157,16 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
             OpenGL.glPopAttrib();
             OpenGL.glPopMatrix();
             OpenGL.glMatrixMode(5888);
-            this.aHa_Sub2_6618.method3770(-422613672, aClass206_8825);
+            this.aOpenGLToolkit_6618.method3770(-422613672, aClass206_8825);
             long l_7_ = aClass337_8836.aLong4178;
             OpenGL.glUseProgramObjectARB(l_7_);
             OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l_7_, "sceneTex"), 0);
             OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l_7_, "bloomTex"), 1);
             OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l_7_, "params"), Class348_Sub40_Sub13.aFloat9204, Option_Sub26.aFloat6120, 0.0F);
-            this.aHa_Sub2_6618.method3738(-15039, 1);
-            this.aHa_Sub2_6618.method3771((byte) -99, aClass258_Sub3_8835);
-            this.aHa_Sub2_6618.method3738(-15039, 0);
-            this.aHa_Sub2_6618.method3771((byte) -82, class258_sub3_2_);
+            this.aOpenGLToolkit_6618.method3738(-15039, 1);
+            this.aOpenGLToolkit_6618.method3771((byte) -99, aClass258_Sub3_8835);
+            this.aOpenGLToolkit_6618.method3738(-15039, 0);
+            this.aOpenGLToolkit_6618.method3771((byte) -82, class258_sub3_2_);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("rda.H(" + (class258_sub3 != null ? "{...}" : "null") + ',' + (class258_sub3_2_ != null ? "{...}" : "null") + ',' + i + ',' + i_3_ + ')'));
         }
@@ -237,13 +237,13 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                         if (i_19_ > 256) i_19_ >>= 1;
                         i_21_++;
                     }
-                    if (aClass206_8844 == null) aClass206_8844 = new Class206(this.aHa_Sub2_6618);
+                    if (aClass206_8844 == null) aClass206_8844 = new Class206(this.aOpenGLToolkit_6618);
                     i_19_ = i_16_;
                     aClass258_Sub3Array8837 = new Class258_Sub3[i_21_];
                     i_20_ = i_17_;
                     i_21_ = 0;
                     while (i_19_ > 256 || i_20_ > 256) {
-                        aClass258_Sub3Array8837[i_21_++] = new Class258_Sub3((this.aHa_Sub2_6618), 3553, 34842, i_19_, i_20_);
+                        aClass258_Sub3Array8837[i_21_++] = new Class258_Sub3((this.aOpenGLToolkit_6618), 3553, 34842, i_19_, i_20_);
                         if (i_20_ > 256) i_20_ >>= 1;
                         if (i_19_ > 256) i_19_ >>= 1;
                     }
@@ -277,7 +277,7 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
     final boolean method2767(byte i) {
         if (i != 104) return false;
         anInt8840++;
-        return this.aHa_Sub2_6618.aBoolean7820 && this.aHa_Sub2_6618.aBoolean7783 && this.aHa_Sub2_6618.aBoolean7818;
+        return this.aOpenGLToolkit_6618.aBoolean7820 && this.aOpenGLToolkit_6618.aBoolean7783 && this.aOpenGLToolkit_6618.aBoolean7818;
     }
 
     final int method2761(boolean bool) {
@@ -289,31 +289,31 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
     final boolean method2758(int i) {
         if (i < 84) aClass206_8844 = null;
         anInt8834++;
-        if (this.aHa_Sub2_6618.aBoolean7820 && this.aHa_Sub2_6618.aBoolean7783 && this.aHa_Sub2_6618.aBoolean7818) {
-            aClass206_8825 = new Class206(this.aHa_Sub2_6618);
-            aClass258_Sub3_8835 = new Class258_Sub3(this.aHa_Sub2_6618, 3553, 34842, 256, 256);
+        if (this.aOpenGLToolkit_6618.aBoolean7820 && this.aOpenGLToolkit_6618.aBoolean7783 && this.aOpenGLToolkit_6618.aBoolean7818) {
+            aClass206_8825 = new Class206(this.aOpenGLToolkit_6618);
+            aClass258_Sub3_8835 = new Class258_Sub3(this.aOpenGLToolkit_6618, 3553, 34842, 256, 256);
             aClass258_Sub3_8835.method1965(false, false, 10243);
-            aClass258_Sub3_8830 = new Class258_Sub3(this.aHa_Sub2_6618, 3553, 34842, 256, 256);
+            aClass258_Sub3_8830 = new Class258_Sub3(this.aOpenGLToolkit_6618, 3553, 34842, 256, 256);
             aClass258_Sub3_8830.method1965(false, false, 10243);
-            this.aHa_Sub2_6618.method3773(-1, aClass206_8825);
+            this.aOpenGLToolkit_6618.method3773(-1, aClass206_8825);
             aClass206_8825.method1509(aClass258_Sub3_8835, 0, 0);
             aClass206_8825.method1509(aClass258_Sub3_8830, 0, 1);
             aClass206_8825.method1503(0, (byte) 3);
             if (!aClass206_8825.method1507(124)) {
-                this.aHa_Sub2_6618.method3770(-422613672, aClass206_8825);
+                this.aOpenGLToolkit_6618.method3770(-422613672, aClass206_8825);
                 return false;
             }
-            this.aHa_Sub2_6618.method3770(-422613672, aClass206_8825);
-            aClass337_8842 = (Class318_Sub1_Sub5_Sub2.method2493(this.aHa_Sub2_6618, -1, (new Class242[]{Class348_Sub42_Sub15.method3249(35632, 80, this.aHa_Sub2_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")})));
-            aClass337_8824 = (Class318_Sub1_Sub5_Sub2.method2493(this.aHa_Sub2_6618, -1, (new Class242[]{Class348_Sub42_Sub15.method3249(35632, -45, this.aHa_Sub2_6618, "uniform vec3 params;\nuniform sampler2D sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")})));
-            aClass337_8836 = (Class318_Sub1_Sub5_Sub2.method2493(this.aHa_Sub2_6618, -1, (new Class242[]{Class348_Sub42_Sub15.method3249(35632, -108, this.aHa_Sub2_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform vec3 dimScale;\nuniform sampler2D bloomTex;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n\t vec4 bloomCol = texture2D(bloomTex, gl_TexCoord[1].xy);\n\t vec4 sceneCol = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n\t float preLum = 0.99*dot(lumCoef, sceneCol.rgb)+0.01;\n    float postLum = preLum*(1.0+(preLum/params.y))/(preLum+1.0);\n\t gl_FragColor = sceneCol*(postLum/preLum)+bloomCol*params.x;\n}\n")})));
-            aClass337_8822 = (Class318_Sub1_Sub5_Sub2.method2493(this.aHa_Sub2_6618, -1, (new Class242[]{Class348_Sub42_Sub15.method3249(35632, -31, this.aHa_Sub2_6618, "uniform vec3 step;\nuniform sampler2D baseTex;\nvoid main() {\n\tvec4 fragCol = texture2D(baseTex, gl_TexCoord[0].xy)*0.091396265;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-1.0*step.xy))*0.088584304;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 1.0*step.xy))*0.088584304;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-2.0*step.xy))*0.08065692;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 2.0*step.xy))*0.08065692;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-3.0*step.xy))*0.068989515;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 3.0*step.xy))*0.068989515;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-4.0*step.xy))*0.055434637;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 4.0*step.xy))*0.055434637;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-5.0*step.xy))*0.04184426;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 5.0*step.xy))*0.04184426;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-6.0*step.xy))*0.029672023;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 6.0*step.xy))*0.029672023;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-7.0*step.xy))*0.019765828;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 7.0*step.xy))*0.019765828;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-8.0*step.xy))*0.012369139;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 8.0*step.xy))*0.012369139;\n\tgl_FragColor = fragCol;\n}\n")})));
+            this.aOpenGLToolkit_6618.method3770(-422613672, aClass206_8825);
+            aClass337_8842 = (Class318_Sub1_Sub5_Sub2.method2493(this.aOpenGLToolkit_6618, -1, (new Class242[]{Class348_Sub42_Sub15.method3249(35632, 80, this.aOpenGLToolkit_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")})));
+            aClass337_8824 = (Class318_Sub1_Sub5_Sub2.method2493(this.aOpenGLToolkit_6618, -1, (new Class242[]{Class348_Sub42_Sub15.method3249(35632, -45, this.aOpenGLToolkit_6618, "uniform vec3 params;\nuniform sampler2D sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")})));
+            aClass337_8836 = (Class318_Sub1_Sub5_Sub2.method2493(this.aOpenGLToolkit_6618, -1, (new Class242[]{Class348_Sub42_Sub15.method3249(35632, -108, this.aOpenGLToolkit_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform vec3 dimScale;\nuniform sampler2D bloomTex;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n\t vec4 bloomCol = texture2D(bloomTex, gl_TexCoord[1].xy);\n\t vec4 sceneCol = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n\t float preLum = 0.99*dot(lumCoef, sceneCol.rgb)+0.01;\n    float postLum = preLum*(1.0+(preLum/params.y))/(preLum+1.0);\n\t gl_FragColor = sceneCol*(postLum/preLum)+bloomCol*params.x;\n}\n")})));
+            aClass337_8822 = (Class318_Sub1_Sub5_Sub2.method2493(this.aOpenGLToolkit_6618, -1, (new Class242[]{Class348_Sub42_Sub15.method3249(35632, -31, this.aOpenGLToolkit_6618, "uniform vec3 step;\nuniform sampler2D baseTex;\nvoid main() {\n\tvec4 fragCol = texture2D(baseTex, gl_TexCoord[0].xy)*0.091396265;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-1.0*step.xy))*0.088584304;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 1.0*step.xy))*0.088584304;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-2.0*step.xy))*0.08065692;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 2.0*step.xy))*0.08065692;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-3.0*step.xy))*0.068989515;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 3.0*step.xy))*0.068989515;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-4.0*step.xy))*0.055434637;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 4.0*step.xy))*0.055434637;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-5.0*step.xy))*0.04184426;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 5.0*step.xy))*0.04184426;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-6.0*step.xy))*0.029672023;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 6.0*step.xy))*0.029672023;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-7.0*step.xy))*0.019765828;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 7.0*step.xy))*0.019765828;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+(-8.0*step.xy))*0.012369139;\n\tfragCol += texture2D(baseTex, gl_TexCoord[0].xy+( 8.0*step.xy))*0.012369139;\n\tgl_FragColor = fragCol;\n}\n")})));
             return aClass337_8824 != null && aClass337_8842 != null && aClass337_8836 != null && aClass337_8822 != null;
         }
         return false;
     }
 
-    Class348_Sub5_Sub1(ha_Sub2 var_ha_Sub2) {
-        super(var_ha_Sub2);
+    Class348_Sub5_Sub1(OpenGLToolkit var_openGLToolkit) {
+        super(var_openGLToolkit);
     }
 }

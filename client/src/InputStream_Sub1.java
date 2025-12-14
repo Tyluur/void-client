@@ -97,7 +97,7 @@ final class InputStream_Sub1 extends InputStream {
         Class348_Sub18.method2938((byte) 98);
         Option_Sub12.method1772(28);
         System.gc();
-        Class348_Sub8.aToolkit6654.ya();
+        Class348_Sub8.active.ya();
     }
 
     static {

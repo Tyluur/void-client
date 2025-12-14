@@ -30,7 +30,7 @@ final class Class302 {
                     if (Class348_Sub40_Sub21.anInt9282 == 4) VarcstrTypeList.method814((byte) 125, l);
                 } else Canvas_Sub1.method119(-1, l);
             }
-            Class348_Sub47.method3324(Class348_Sub8.aToolkit6654, (byte) 83, Class367_Sub11.anInt7396);
+            Class348_Sub47.method3324(Class348_Sub8.active, (byte) 83, Class367_Sub11.anInt7396);
             if (r.anInt9721 != -1) Class75_Sub1.method769(r.anInt9721, (byte) 118);
             for (int i_3_ = 0; i_3_ < Class348_Sub38.anInt7008; i_3_++) {
                 if (Class152.aBooleanArray2076[i_3_]) FloorOverlayTypeList.aBooleanArray3438[i_3_] = true;
@@ -44,8 +44,8 @@ final class Class302 {
                 Class348_Sub38.anInt7008 = 0;
                 Class88.method842(false);
             }
-            Class348_Sub8.aToolkit6654.la();
-            Class348_Sub42_Sub20.method3281((byte) 46, Class348_Sub8.aToolkit6654);
+            Class348_Sub8.active.la();
+            Class348_Sub42_Sub20.method3281((byte) 46, Class348_Sub8.active);
             int i_4_ = Class112.method1053(3112);
             if (i_4_ == -1) i_4_ = Class362.anInt4458;
             if (i_4_ == -1) i_4_ = Class348_Sub42_Sub16_Sub1.anInt10447;

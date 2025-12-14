@@ -509,7 +509,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-116);
             String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -85);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -125);
-            Class377.method3965(string, i, 2);
+            OpenGLxToolkit.method3965(string, i, 2);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -927,7 +927,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) 100);
             int i = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(124);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -127);
-            Class377.method3965(string, i, 2);
+            OpenGLxToolkit.method3965(string, i, 2);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1020,7 +1020,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i_132_ = 0x3fff & i_129_;
             i_131_ -= za_Sub2.regionTileX;
             i_132_ -= Class90.regionTileY;
-            ha_Sub3.method3824(i_132_, i, i_126_, i_131_, i_127_, 102, i_130_, i_128_);
+            NativeToolkit.method3824(i_132_, i, i_126_, i_131_, i_127_, 102, i_130_, i_128_);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1051,7 +1051,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class365.aClass114_4477 == Class348_Sub3.aClass114_6584) {
+        if (Renderer.aClass114_4477 == Class348_Sub3.aClass114_6584) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readIntInverseMiddle(255);
             int i_134_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             int i_135_ = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-109);

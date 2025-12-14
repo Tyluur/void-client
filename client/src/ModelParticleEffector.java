@@ -46,7 +46,7 @@ final class ModelParticleEffector {
                 int i_6_ = class42.anInt580;
                 if (class348_sub21.aBoolean6848 && class42.anInt567 != -1) i_6_ = class42.anInt567;
                 for (int i_7_ = 0; i_1_ > i_7_; i_7_++) {
-                    String string = ha_Sub3.aStringArray8019[i_7_];
+                    String string = NativeToolkit.aStringArray8019[i_7_];
                     if (-1 + i_1_ > i_7_) string = string.substring(0, -4 + string.length());
                     class323.method2563(var_toolkit, string, i, i_2_, i_6_, true);
                     i_2_ += class323.method2565();

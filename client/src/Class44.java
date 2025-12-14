@@ -38,7 +38,7 @@ final class Class44 {
                                         if ((i_13_ == (Class348_Sub23_Sub3.mapRegionIds[i_14_])) && is[i_14_] != null) {
                                             Packet packet = new Packet(is[i_14_]);
                                             class237_sub1.method1684(i_6_ * 8, i, -1, packet, i_12_, 8 * i_7_, i_11_, (Class348_Sub45.collisionMaps), i_10_, i_9_);
-                                            class237_sub1.method1696(packet, false, i_12_, i_11_, 8 * i_6_, i, i_10_, 8 * i_7_, Class348_Sub8.aToolkit6654, is_5_[0] != -1 ? null : is_5_, i_9_);
+                                            class237_sub1.method1696(packet, false, i_12_, i_11_, 8 * i_6_, i, i_10_, 8 * i_7_, Class348_Sub8.active, is_5_[0] != -1 ? null : is_5_, i_9_);
                                             break;
                                         }
                                     }

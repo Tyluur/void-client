@@ -26,7 +26,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
     }
 
     final void method1152(int i) {
-        this.aHa_Sub2_1927.method3750(91, this);
+        this.aOpenGLToolkit_1927.method3750(91, this);
         if (i >= -78) method10(false);
         anInt4710++;
     }
@@ -38,21 +38,21 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
         if (i_1_ != -9894) method12((byte) -37);
     }
 
-    Class135_Sub1(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_2_, boolean bool) {
-        super(var_ha_Sub2, 34962, is, i_2_, bool);
+    Class135_Sub1(OpenGLToolkit var_openGLToolkit, int i, byte[] is, int i_2_, boolean bool) {
+        super(var_openGLToolkit, 34962, is, i_2_, bool);
         try {
             anInt4708 = i;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jt.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_2_ + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("jt.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_2_ + ',' + bool + ')'));
         }
     }
 
-    Class135_Sub1(ha_Sub2 var_ha_Sub2, int i, Buffer buffer, int i_3_, boolean bool) {
-        super(var_ha_Sub2, 34962, buffer, i_3_, bool);
+    Class135_Sub1(OpenGLToolkit var_openGLToolkit, int i, Buffer buffer, int i_3_, boolean bool) {
+        super(var_openGLToolkit, 34962, buffer, i_3_, bool);
         try {
             anInt4708 = i;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jt.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + (buffer != null ? "{...}" : "null") + ',' + i_3_ + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("jt.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + (buffer != null ? "{...}" : "null") + ',' + i_3_ + ',' + bool + ')'));
         }
     }
 

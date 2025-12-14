@@ -15,21 +15,21 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
     static int anInt4704;
     static int anInt4705;
 
-    Class119_Sub1(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_0_) {
-        super(var_ha_Sub2, is, i_0_);
+    Class119_Sub1(OpenGLToolkit var_openGLToolkit, int i, byte[] is, int i_0_) {
+        super(var_openGLToolkit, is, i_0_);
         try {
             anInt4697 = i;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cw.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_0_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("cw.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_0_ + ')'));
         }
     }
 
-    Class119_Sub1(ha_Sub2 var_ha_Sub2, int i, Buffer buffer) {
-        super(var_ha_Sub2, buffer);
+    Class119_Sub1(OpenGLToolkit var_openGLToolkit, int i, Buffer buffer) {
+        super(var_openGLToolkit, buffer);
         try {
             anInt4697 = i;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("cw.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + (buffer != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("cw.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + (buffer != null ? "{...}" : "null") + ')'));
         }
     }
 

@@ -11,7 +11,8 @@ import java.awt.*;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-final class ha_Sub2 extends Toolkit {
+// ha_Sub2
+final class OpenGLToolkit extends Toolkit {
     static int anInt7514;
     static int anInt7515;
     static int anInt7516;
@@ -1034,7 +1035,7 @@ final class ha_Sub2 extends Toolkit {
         anInt7646++;
     }
 
-    ha_Sub2(Canvas canvas, TextureSource var_d, int i) {
+    OpenGLToolkit(Canvas canvas, TextureSource var_d, int i) {
         super(var_d);
         aClass233_7711 = new Class233();
         aClass101_Sub3_7725 = new Class101_Sub3();
@@ -2420,14 +2421,14 @@ final class ha_Sub2 extends Toolkit {
         if (i >= -13) anInt7742 = 102;
     }
 
-    final Class365 c() {
+    final Renderer renderer() {
         anInt7607++;
         int i = -1;
         if (aString7845.indexOf("nvidia") == -1) {
             if (aString7845.indexOf("intel") != -1) i = 32902;
             else if (aString7845.indexOf("ati") != -1) i = 4098;
         } else i = 4318;
-        return new Class365(i, "OpenGL", anInt7789, aString7790, 0L);
+        return new Renderer(i, "OpenGL", anInt7789, aString7790, 0L);
     }
 
     final void da(int i, int i_254_, int i_255_, int[] is) {
@@ -2962,7 +2963,7 @@ final class ha_Sub2 extends Toolkit {
                                 if (class207s != null) {
                                     spriteS_326_ = new Sprite[class207s.length];
                                     for (int i_327_ = 0; class207s.length > i_327_; i_327_++)
-                                        spriteS_326_[i_327_] = (Class348_Sub8.aToolkit6654.method3691(class207s[i_327_], true));
+                                        spriteS_326_[i_327_] = (Class348_Sub8.active.method3691(class207s[i_327_], true));
                                     Class353.aClass60_4346.method582(spriteS_326_, i_324_, (byte) -94);
                                 }
                             }
@@ -2977,9 +2978,9 @@ final class ha_Sub2 extends Toolkit {
                         int i_331_ = sprite.getHeight();
                         if (class318_sub1_sub3_sub3.anInt10295 > 0 && i_330_ < 2) i_330_ = 2;
                         sprite.method974(i_329_, i_323_);
-                        Class348_Sub8.aToolkit6654.T(i_329_, i_323_, i_330_ + i_329_, i_331_ + i_323_);
+                        Class348_Sub8.active.T(i_329_, i_323_, i_330_ + i_329_, i_331_ + i_323_);
                         sprite_328_.method974(i_329_, i_323_);
-                        Class348_Sub8.aToolkit6654.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i);
+                        Class348_Sub8.active.KA(i_317_, i, i_317_ - -i_318_, i_315_ + i);
                         Class338.method2663(-5590, i_329_, i_329_ + sprite.scaleWidth(), i_323_, i_323_ + i_331_);
                     } else i_323_ -= Math.max((Class369.aFontMetrics_4962.topPadding), Class348_Sub45.aSpriteArray7107[0].getHeight());
                     i_323_ -= 2;
@@ -2999,7 +3000,7 @@ final class ha_Sub2 extends Toolkit {
                                     if (class207s != null) {
                                         sprites = new Sprite[class207s.length];
                                         for (int i_334_ = 0; (class207s.length > i_334_); i_334_++)
-                                            sprites[i_334_] = (Class348_Sub8.aToolkit6654.method3691(class207s[i_334_], true));
+                                            sprites[i_334_] = (Class348_Sub8.active.method3691(class207s[i_334_], true));
                                         Class328_Sub2.aClass60_6517.method582(sprites, i_333_, (byte) -101);
                                     }
                                 }
@@ -3019,9 +3020,9 @@ final class ha_Sub2 extends Toolkit {
                             i_323_ -= i_338_;
                             int i_339_ = (Option_Sub21.anIntArray6062[0] + (i_317_ + -(sprite.getWidth() >> 1)));
                             sprite.method974(i_339_, i_323_);
-                            Class348_Sub8.aToolkit6654.T(i_339_, i_323_, i_339_ - -i_336_, i_323_ - -i_338_);
+                            Class348_Sub8.active.T(i_339_, i_323_, i_339_ - -i_336_, i_323_ - -i_338_);
                             sprite_332_.method974(i_339_, i_323_);
-                            Class348_Sub8.aToolkit6654.KA(i_317_, i, i_318_ + i_317_, i - -i_315_);
+                            Class348_Sub8.active.KA(i_317_, i, i_318_ + i_317_, i - -i_315_);
                             Class338.method2663(-5590, i_339_, sprite.scaleWidth() + i_339_, i_323_, i_338_ + i_323_);
                             i_323_ -= 2;
                         }
@@ -3133,7 +3134,7 @@ final class ha_Sub2 extends Toolkit {
                                     int i_372_ = 0;
                                     int i_373_ = 0;
                                     int i_374_ = 0;
-                                    Sprite sprite_375_ = class31.method327((Class348_Sub8.aToolkit6654), (byte) -96);
+                                    Sprite sprite_375_ = class31.method327((Class348_Sub8.active), (byte) -96);
                                     if (sprite_375_ != null) {
                                         i_355_ = sprite_375_.getWidth();
                                         int i_376_ = sprite_375_.getHeight();
@@ -3141,7 +3142,7 @@ final class ha_Sub2 extends Toolkit {
                                         if (i_374_ < i_376_) i_374_ = i_376_;
                                         i_359_ = Class151.anIntArray2062[0];
                                     }
-                                    Sprite sprite_377_ = class31.method331((Class348_Sub8.aToolkit6654), (byte) -75);
+                                    Sprite sprite_377_ = class31.method331((Class348_Sub8.active), (byte) -75);
                                     if (sprite_377_ != null) {
                                         i_356_ = sprite_377_.getWidth();
                                         int i_378_ = sprite_377_.getHeight();
@@ -3149,7 +3150,7 @@ final class ha_Sub2 extends Toolkit {
                                         if (i_378_ > i_374_) i_374_ = i_378_;
                                         i_360_ = Class151.anIntArray2062[0];
                                     }
-                                    Sprite sprite_379_ = class31.method324((Class348_Sub8.aToolkit6654), true);
+                                    Sprite sprite_379_ = class31.method324((Class348_Sub8.active), true);
                                     if (sprite_379_ != null) {
                                         i_357_ = sprite_379_.getWidth();
                                         int i_380_ = sprite_379_.getHeight();
@@ -3157,7 +3158,7 @@ final class ha_Sub2 extends Toolkit {
                                         sprite_379_.projectOffsets(Class151.anIntArray2062);
                                         i_361_ = Class151.anIntArray2062[0];
                                     }
-                                    Sprite sprite_381_ = class31.method325((Class348_Sub8.aToolkit6654), 105);
+                                    Sprite sprite_381_ = class31.method325((Class348_Sub8.active), 105);
                                     if (sprite_381_ != null) {
                                         i_358_ = sprite_381_.getWidth();
                                         int i_382_ = sprite_381_.getHeight();
@@ -3166,7 +3167,7 @@ final class ha_Sub2 extends Toolkit {
                                         i_362_ = Class151.anIntArray2062[0];
                                     }
                                     if (class31_349_ != null) {
-                                        sprite = (class31_349_.method327(Class348_Sub8.aToolkit6654, (byte) 110));
+                                        sprite = (class31_349_.method327(Class348_Sub8.active, (byte) 110));
                                         if (sprite != null) {
                                             i_366_ = sprite.getWidth();
                                             int i_383_ = sprite.getHeight();
@@ -3174,7 +3175,7 @@ final class ha_Sub2 extends Toolkit {
                                             sprite.projectOffsets(Class151.anIntArray2062);
                                             i_370_ = Class151.anIntArray2062[0];
                                         }
-                                        sprite_363_ = (class31_349_.method331(Class348_Sub8.aToolkit6654, (byte) -80));
+                                        sprite_363_ = (class31_349_.method331(Class348_Sub8.active, (byte) -80));
                                         if (sprite_363_ != null) {
                                             i_367_ = sprite_363_.getWidth();
                                             int i_384_ = sprite_363_.getHeight();
@@ -3182,7 +3183,7 @@ final class ha_Sub2 extends Toolkit {
                                             sprite_363_.projectOffsets(Class151.anIntArray2062);
                                             i_371_ = Class151.anIntArray2062[0];
                                         }
-                                        sprite_364_ = (class31_349_.method324(Class348_Sub8.aToolkit6654, true));
+                                        sprite_364_ = (class31_349_.method324(Class348_Sub8.active, true));
                                         if (sprite_364_ != null) {
                                             i_368_ = sprite_364_.getWidth();
                                             int i_385_ = sprite_364_.getHeight();
@@ -3190,7 +3191,7 @@ final class ha_Sub2 extends Toolkit {
                                             if (i_385_ > i_374_) i_374_ = i_385_;
                                             i_372_ = Class151.anIntArray2062[0];
                                         }
-                                        sprite_365_ = (class31_349_.method325(Class348_Sub8.aToolkit6654, i_316_ ^ 0x35));
+                                        sprite_365_ = (class31_349_.method325(Class348_Sub8.active, i_316_ ^ 0x35));
                                         if (sprite_365_ != null) {
                                             i_369_ = sprite_365_.getWidth();
                                             int i_386_ = sprite_365_.getHeight();
@@ -3205,8 +3206,8 @@ final class ha_Sub2 extends Toolkit {
                                     int i_388_ = class31.anInt435;
                                     FontMetrics fontMetrics_389_ = Class258_Sub1.aFontMetrics_8527;
                                     if (i_388_ >= 0) {
-                                        FontRenderer fontRenderer_390_ = Class14.method232((Class348_Sub8.aToolkit6654), (byte) -53, true, i_388_);
-                                        FontMetrics fontMetrics_391_ = (Class135.method1151(-25411, Class348_Sub8.aToolkit6654, i_388_));
+                                        FontRenderer fontRenderer_390_ = Class14.method232((Class348_Sub8.active), (byte) -53, true, i_388_);
+                                        FontMetrics fontMetrics_391_ = (Class135.method1151(-25411, Class348_Sub8.active, i_388_));
                                         if (fontRenderer_390_ != null && fontMetrics_391_ != null) {
                                             fontRenderer = fontRenderer_390_;
                                             fontMetrics = fontMetrics_391_;
@@ -3215,8 +3216,8 @@ final class ha_Sub2 extends Toolkit {
                                     if (class31_349_ != null) {
                                         i_388_ = (class31_349_.anInt435);
                                         if (i_388_ >= 0) {
-                                            FontRenderer fontRenderer_392_ = (Class14.method232(Class348_Sub8.aToolkit6654, (byte) -53, true, i_388_));
-                                            FontMetrics fontMetrics_393_ = (Class135.method1151(-25411, Class348_Sub8.aToolkit6654, i_388_));
+                                            FontRenderer fontRenderer_392_ = (Class14.method232(Class348_Sub8.active, (byte) -53, true, i_388_));
+                                            FontMetrics fontMetrics_393_ = (Class135.method1151(-25411, Class348_Sub8.active, i_388_));
                                             if (fontRenderer_392_ != null && fontMetrics_393_ != null) {
                                                 fontMetrics_389_ = fontMetrics_393_;
                                                 fontRenderer_387_ = fontRenderer_392_;
@@ -3435,11 +3436,11 @@ final class ha_Sub2 extends Toolkit {
                 }
                 if (Class309.anIntArray4806[i_438_] == 4) {
                     int i_453_ = ((150 + -Class309.anIntArray4812[i_438_]) * (Class369.aFontMetrics_4962.width(true, string) + 100) / 150);
-                    Class348_Sub8.aToolkit6654.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_);
+                    Class348_Sub8.active.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_);
                     i_444_ += 50 - i_453_;
                     i_446_ += -i_453_ + 50;
                     Class262.aFontRenderer_3326.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125);
-                    Class348_Sub8.aToolkit6654.KA(i_317_, i, i_318_ + i_317_, i + i_315_);
+                    Class348_Sub8.active.KA(i_317_, i, i_318_ + i_317_, i + i_315_);
                 }
                 if (Class309.anIntArray4806[i_438_] == 5) {
                     int i_454_ = 150 + -Class309.anIntArray4812[i_438_];
@@ -3448,13 +3449,13 @@ final class ha_Sub2 extends Toolkit {
                         if (i_454_ > 125) i_455_ = i_454_ + -125;
                     } else i_455_ = i_454_ - 25;
                     int i_456_ = (Class369.aFontMetrics_4962.bottomPadding + Class369.aFontMetrics_4962.topPadding);
-                    Class348_Sub8.aToolkit6654.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i);
+                    Class348_Sub8.active.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i);
                     i_444_ -= i_443_ >> 1;
                     i_447_ += i_455_;
                     Class262.aFontRenderer_3326.method2575((byte) -105, i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_));
                     i_445_ += i_455_;
                     i_446_ -= i_443_ >> 1;
-                    Class348_Sub8.aToolkit6654.KA(i_317_, i, i_318_ + i_317_, i_315_ + i);
+                    Class348_Sub8.active.KA(i_317_, i, i_318_ + i_317_, i_315_ + i);
                 }
             } else {
                 i_444_ -= i_443_ >> 1;

@@ -7,7 +7,7 @@ import jagdx.IDirect3DIndexBuffer;
 import jagdx.ue;
 
 final class Class142 implements Interface5_Impl2 {
-    private final Class378 aClass378_8515;
+    private final DirectXToolkit aDirectXToolkit_8515;
     private int anInt8516;
     IDirect3DIndexBuffer anIDirect3DIndexBuffer8517;
     private Class68 aClass68_8518;
@@ -40,7 +40,7 @@ final class Class142 implements Interface5_Impl2 {
                 i_2_ = 0;
             } else i_2_ = 1;
             if (null != this.anIDirect3DIndexBuffer8517) this.anIDirect3DIndexBuffer8517.a(9275);
-            this.anIDirect3DIndexBuffer8517 = (aClass378_8515.anIDirect3DDevice9810.a(anInt8516, i_1_, aClass68_8518 != Class68.aClass68_1184 ? 102 : 101, i_2_, this.anIDirect3DIndexBuffer8517));
+            this.anIDirect3DIndexBuffer8517 = (aDirectXToolkit_8515.anIDirect3DDevice9810.a(anInt8516, i_1_, aClass68_8518 != Class68.aClass68_1184 ? 102 : 101, i_2_, this.anIDirect3DIndexBuffer8517));
             anInt8521 = anInt8516;
         }
     }
@@ -49,9 +49,9 @@ final class Class142 implements Interface5_Impl2 {
         if (null == this.anIDirect3DIndexBuffer8517) return null;
         if (bool_3_) method23(-111, 54);
         bool &= aBoolean8519;
-        if (!aBoolean8520 && ue.a((this.anIDirect3DIndexBuffer8517.Lock(0, anInt8521, !bool ? 0 : 8192, aClass378_8515.aGeometryBuffer9811)), false)) {
+        if (!aBoolean8520 && ue.a((this.anIDirect3DIndexBuffer8517.Lock(0, anInt8521, !bool ? 0 : 8192, aDirectXToolkit_8515.aGeometryBuffer9811)), false)) {
             aBoolean8520 = true;
-            return aClass378_8515.aGeometryBuffer9811;
+            return aDirectXToolkit_8515.aGeometryBuffer9811;
         }
         return null;
     }
@@ -71,8 +71,8 @@ final class Class142 implements Interface5_Impl2 {
         anInt8516 = 0;
     }
 
-    Class142(Class378 class378, Class68 class68, boolean bool) {
-        aClass378_8515 = class378;
+    Class142(DirectXToolkit directXToolkit, Class68 class68, boolean bool) {
+        aDirectXToolkit_8515 = directXToolkit;
         aBoolean8519 = bool;
         aClass68_8518 = class68;
     }

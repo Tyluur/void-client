@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-final class oa extends Toolkit implements Interface19 {
+final class SafeModeToolkit extends Toolkit implements Interface19 {
     private ya aYa5121;
     private static final int[] anIntArray5122 = new int[Math.max(Math.max(104, 20), 24573)];
     long nativeid = 0L;
@@ -339,8 +339,8 @@ final class oa extends Toolkit implements Interface19 {
         return new i(this, aYa5121, mesh, i, i_131_, i_132_, i_133_);
     }
 
-    final Class365 c() {//
-        return new Class365(0, "SSE", 1, "CPU", 0L);
+    final Renderer renderer() {//
+        return new Renderer(0, "SSE", 1, "CPU", 0L);
     }
 
     final void method3674(int i, int i_134_, int i_135_, int i_136_, int i_137_, int i_138_, int i_139_, int i_140_, int i_141_) {
@@ -454,7 +454,7 @@ final class oa extends Toolkit implements Interface19 {
         /* empty */
     }
 
-    public oa(Canvas canvas, TextureSource var_d, int i, int i_177_) {
+    public SafeModeToolkit(Canvas canvas, TextureSource var_d, int i, int i_177_) {
         super(var_d);
         aClass262_5123 = new Class262();
         anInt5127 = 4096;

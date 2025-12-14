@@ -357,11 +357,11 @@ final class r_Sub1 extends r {
         return i_17_ * i <= this.aByteArray10471.length;
     }
 
-    r_Sub1(ha_Sub3 var_ha_Sub3, int i, int i_19_) {
+    r_Sub1(NativeToolkit var_nativeToolkit, int i, int i_19_) {
         try {
             this.aByteArray10471 = new byte[i_19_ * i];
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("fc.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + i + ',' + i_19_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("fc.<init>(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_19_ + ')'));
         }
     }
 

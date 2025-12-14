@@ -2199,8 +2199,8 @@ final class JavaToolkit extends Toolkit {
         /* empty */
     }
 
-    final Class365 c() {
-        return new Class365(0, "Pure Java", 1, "CPU", 0L);
+    final Renderer renderer() {
+        return new Renderer(0, "Pure Java", 1, "CPU", 0L);
     }
 
     final void method3659(int i) {

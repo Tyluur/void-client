@@ -33,22 +33,22 @@ final class Class348_Sub3 extends Node {
     static int anInt6587;
     static int anInt6588;
     int anInt6589 = 0;
-    private final ha_Sub3 aHa_Sub3_6590;
+    private final NativeToolkit aNativeToolkit_6590;
 
     final void method2736(byte i, int i_0_) {
         if (i != -57) method2736((byte) 25, -39);
         anInt6580++;
-        aNativeHeapBuffer6572 = aHa_Sub3_6590.method3869((byte) 77, true, i_0_ * 4);
+        aNativeHeapBuffer6572 = aNativeToolkit_6590.method3869((byte) 77, true, i_0_ * 4);
         aStream6574 = new Stream(aNativeHeapBuffer6572, 0, 4 * i_0_);
     }
 
     final void method2737(byte i, int[] is, int i_1_) {
         anInt6583++;
-        Interface5_Impl2 interface5_impl2 = aHa_Sub3_6590.method3822(47, this.anInt6589 * 3);
+        Interface5_Impl2 interface5_impl2 = aNativeToolkit_6590.method3822(47, this.anInt6589 * 3);
         Buffer buffer = interface5_impl2.method24(true, false);
         if (buffer != null) {
             if (i != -30) method2736((byte) 116, 72);
-            Stream stream = aHa_Sub3_6590.method3893(buffer, 9179);
+            Stream stream = aNativeToolkit_6590.method3893(buffer, 9179);
             int i_2_ = 0;
             int i_3_ = 32767;
             int i_4_ = -32768;
@@ -98,15 +98,15 @@ final class Class348_Sub3 extends Node {
             }
             stream.a();
             if (interface5_impl2.method22(i + 7) && i_2_ > 0) {
-                aHa_Sub3_6590.method3814((aS_Sub3_6566.anInt8294 & 0x8) != 0, (0x7 & aS_Sub3_6566.anInt8294) != 0, this.anInt6567, (byte) 48);
-                if (aHa_Sub3_6590.aBoolean8160) aHa_Sub3_6590.EA(2147483647, this.anInt6571, this.anInt6575, this.anInt6569);
-                Class101_Sub2 class101_sub2 = aHa_Sub3_6590.method3820(false);
+                aNativeToolkit_6590.method3814((aS_Sub3_6566.anInt8294 & 0x8) != 0, (0x7 & aS_Sub3_6566.anInt8294) != 0, this.anInt6567, (byte) 48);
+                if (aNativeToolkit_6590.aBoolean8160) aNativeToolkit_6590.EA(2147483647, this.anInt6571, this.anInt6575, this.anInt6569);
+                Class101_Sub2 class101_sub2 = aNativeToolkit_6590.method3820(false);
                 class101_sub2.method932(1.0F, 1.0F / this.aFloat6582, 1.0F / this.aFloat6582, (byte) -80);
-                aHa_Sub3_6590.method3853(i + -2, Option_Sub18.aClass251_6030);
-                aHa_Sub3_6590.method3925(55, anInterface5_Impl1_6577, 1);
-                aHa_Sub3_6590.method3862(i + 30, (aS_Sub3_6566.aClass130_8324));
-                aHa_Sub3_6590.method3938(Class247.aClass21_3181, i_2_, interface5_impl2, i_3_, 0, 1 + -i_3_ + i_4_, 104);
-                aHa_Sub3_6590.method3879(-8629);
+                aNativeToolkit_6590.method3853(i + -2, Option_Sub18.aClass251_6030);
+                aNativeToolkit_6590.method3925(55, anInterface5_Impl1_6577, 1);
+                aNativeToolkit_6590.method3862(i + 30, (aS_Sub3_6566.aClass130_8324));
+                aNativeToolkit_6590.method3938(Class247.aClass21_3181, i_2_, interface5_impl2, i_3_, 0, 1 + -i_3_ + i_4_, 104);
+                aNativeToolkit_6590.method3879(-8629);
             }
         }
     }
@@ -126,7 +126,7 @@ final class Class348_Sub3 extends Node {
     final void method2740(int i, int i_22_) {
         anInt6576++;
         aStream6574.a();
-        anInterface5_Impl1_6577 = aHa_Sub3_6590.method3889(false, 16711680);
+        anInterface5_Impl1_6577 = aNativeToolkit_6590.method3889(false, 16711680);
         anInterface5_Impl1_6577.method17(aNativeHeapBuffer6572, 4, 4 * i_22_, (byte) -110);
         int i_23_ = 44 % ((i - 19) / 33);
         aNativeHeapBuffer6572 = null;
@@ -135,7 +135,7 @@ final class Class348_Sub3 extends Node {
 
     final void method2741(int i, float f, int i_24_, int i_25_, int i_26_) {
         if (this.anInt6567 != -1) {
-            TextureMetrics textureMetrics = aHa_Sub3_6590.aD4579.getMetrics(this.anInt6567, -6662);
+            TextureMetrics textureMetrics = aNativeToolkit_6590.aD4579.getMetrics(this.anInt6567, -6662);
             int i_27_ = textureMetrics.aByte201 & 0xff;
             if (i_27_ != 0 && textureMetrics.effectType != 4) {
                 int i_28_;
@@ -178,7 +178,7 @@ final class Class348_Sub3 extends Node {
             i_26_ = i_37_ | (i_35_ << 16 | i_36_ << 8);
         }
         if (i_24_ != 1624) method2743(null, (byte) 67);
-        if (aHa_Sub3_6590.anInt8178 == 0) {
+        if (aNativeToolkit_6590.anInt8178 == 0) {
             aStream6574.f((byte) i_26_);
             aStream6574.f((byte) (i_26_ >> 8));
             aStream6574.f((byte) (i_26_ >> 16));
@@ -213,7 +213,7 @@ final class Class348_Sub3 extends Node {
         aS_Sub3_6566 = var_s_Sub3;
         this.anInt6569 = i_46_;
         this.aFloat6582 = (float) i_43_;
-        aHa_Sub3_6590 = aS_Sub3_6566.aHa_Sub3_8322;
+        aNativeToolkit_6590 = aS_Sub3_6566.aNativeToolkit_8322;
         this.anInt6575 = i_45_;
         this.anInt6567 = i;
         anIntArray6573 = new int[(aS_Sub3_6566.anInt4590 * aS_Sub3_6566.anInt4587)];

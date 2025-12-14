@@ -5,7 +5,7 @@
 final class ba extends r implements Interface19 {
     long nativeid;
 
-    ba(oa var_oa) {
+    ba(SafeModeToolkit var_safeModeToolkit) {
         /* empty */
     }
 

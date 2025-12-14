@@ -7,7 +7,7 @@ import jaclib.memory.Stream;
 
 final class Class330 {
     static int anInt4110;
-    private final ha_Sub3 aHa_Sub3_4111;
+    private final NativeToolkit aNativeToolkit_4111;
     byte[] aByteArray4112;
     int anInt4113;
     static int anInt4114;
@@ -108,12 +108,12 @@ final class Class330 {
 
     final void method2630(int i, int i_24_, int i_25_, boolean bool, boolean[][] bools, int i_26_) {
         anInt4115++;
-        aHa_Sub3_4111.method3866(false, true);
-        aHa_Sub3_4111.method3946(-32, false);
-        aHa_Sub3_4111.method3817(79, 1);
-        aHa_Sub3_4111.method3923(true, 1);
-        aHa_Sub3_4111.method3814(false, false, -2, (byte) 82);
-        float f = 1.0F / (float) (aHa_Sub3_4111.anInt8125 * i);
+        aNativeToolkit_4111.method3866(false, true);
+        aNativeToolkit_4111.method3946(-32, false);
+        aNativeToolkit_4111.method3817(79, 1);
+        aNativeToolkit_4111.method3923(true, 1);
+        aNativeToolkit_4111.method3814(false, false, -2, (byte) 82);
+        float f = 1.0F / (float) (aNativeToolkit_4111.anInt8125 * i);
         if (bool) {
             for (int i_27_ = 0; anInt4118 > i_27_; i_27_++) {
                 int i_28_ = i_27_ << anInt4124;
@@ -127,10 +127,10 @@ final class Class330 {
                             if (-i_25_ + i_33_ >= -i_24_ && i_24_ >= -i_25_ + i_33_) {
                                 for (int i_34_ = i_28_; (i_29_ > i_34_); i_34_++) {
                                     if (-i_24_ <= i_34_ + -i_26_ && i_24_ >= -i_26_ + i_34_ && (bools[i_24_ + (-i_25_ + i_33_)][-i_26_ + i_34_ + i_24_])) {
-                                        Class101_Sub2 class101_sub2 = aHa_Sub3_4111.method3820(false);
+                                        Class101_Sub2 class101_sub2 = aNativeToolkit_4111.method3820(false);
                                         class101_sub2.method932(1.0F, f, f, (byte) -65);
                                         class101_sub2.translate(-i_30_, -i_27_, 0);
-                                        aHa_Sub3_4111.method3853(i ^ ~0x9f, Option_Sub18.aClass251_6030);
+                                        aNativeToolkit_4111.method3853(i ^ ~0x9f, Option_Sub18.aClass251_6030);
                                         aClass97ArrayArray4122[i_30_][i_27_].method871((byte) 116);
                                         break while_119_;
                                     }
@@ -147,10 +147,10 @@ final class Class330 {
                 for (int i_38_ = 0; i_38_ < anInt4121; i_38_++) {
                     Class97 class97 = aClass97ArrayArray4122[i_38_][i_35_];
                     if (class97 != null) {
-                        Interface5_Impl2 interface5_impl2 = aHa_Sub3_4111.method3822(118, (class97.anInt1563) * 3);
+                        Interface5_Impl2 interface5_impl2 = aNativeToolkit_4111.method3822(118, (class97.anInt1563) * 3);
                         Buffer buffer = interface5_impl2.method24(true, false);
                         if (buffer != null) {
-                            Stream stream = aHa_Sub3_4111.method3893(buffer, 9179);
+                            Stream stream = aNativeToolkit_4111.method3893(buffer, 9179);
                             int i_39_ = 0;
                             int i_40_ = i_38_ << anInt4124;
                             int i_41_ = i_38_ + 1 << anInt4124;
@@ -180,10 +180,10 @@ final class Class330 {
                             }
                             stream.a();
                             if (interface5_impl2.method22(-23) && i_39_ > 0) {
-                                Class101_Sub2 class101_sub2 = aHa_Sub3_4111.method3820(false);
+                                Class101_Sub2 class101_sub2 = aNativeToolkit_4111.method3820(false);
                                 class101_sub2.method932(1.0F, f, f, (byte) -62);
                                 class101_sub2.translate(-i_38_, -i_35_, 0);
-                                aHa_Sub3_4111.method3853(i ^ ~0x9f, (Option_Sub18.aClass251_6030));
+                                aNativeToolkit_4111.method3853(i ^ ~0x9f, (Option_Sub18.aClass251_6030));
                                 class97.method875(-82, interface5_impl2, i_39_ / 3);
                             }
                         }
@@ -191,7 +191,7 @@ final class Class330 {
                 }
             }
         }
-        aHa_Sub3_4111.method3879(-8629);
+        aNativeToolkit_4111.method3879(-8629);
     }
 
     public static void method2631(int i) {
@@ -205,7 +205,7 @@ final class Class330 {
         if (i != 128) method2630(-93, -74, 10, false, null, 48);
         for (int i_48_ = 0; anInt4118 > i_48_; i_48_++) {
             for (int i_49_ = 0; i_49_ < anInt4121; i_49_++) {
-                aClass97ArrayArray4122[i_49_][i_48_] = new Class97(aHa_Sub3_4111, this, aS_Sub3_4116, i_49_, i_48_, anInt4124, 128 * i_49_ - -1, 128 * i_48_ + 1);
+                aClass97ArrayArray4122[i_49_][i_48_] = new Class97(aNativeToolkit_4111, this, aS_Sub3_4116, i_49_, i_48_, anInt4124, 128 * i_49_ - -1, 128 * i_48_ + 1);
                 if (aClass97ArrayArray4122[i_49_][i_48_].anInt1563 == 0) aClass97ArrayArray4122[i_49_][i_48_] = null;
             }
         }
@@ -271,18 +271,18 @@ final class Class330 {
         }
     }
 
-    Class330(ha_Sub3 var_ha_Sub3, s_Sub3 var_s_Sub3) {
+    Class330(NativeToolkit var_nativeToolkit, s_Sub3 var_s_Sub3) {
         try {
-            aHa_Sub3_4111 = var_ha_Sub3;
+            aNativeToolkit_4111 = var_nativeToolkit;
             aS_Sub3_4116 = var_s_Sub3;
-            this.anInt4113 = 2 + ((aS_Sub3_4116.anInt4587 * aS_Sub3_4116.anInt4592) >> aHa_Sub3_4111.anInt8107);
-            anInt4123 = (aS_Sub3_4116.anInt4592 * aS_Sub3_4116.anInt4590 >> aHa_Sub3_4111.anInt8107) + 2;
+            this.anInt4113 = 2 + ((aS_Sub3_4116.anInt4587 * aS_Sub3_4116.anInt4592) >> aNativeToolkit_4111.anInt8107);
+            anInt4123 = (aS_Sub3_4116.anInt4592 * aS_Sub3_4116.anInt4590 >> aNativeToolkit_4111.anInt8107) + 2;
             this.aByteArray4112 = new byte[this.anInt4113 * anInt4123];
-            anInt4124 = (-aS_Sub3_4116.anInt4588 + (7 + aHa_Sub3_4111.anInt8107));
+            anInt4124 = (-aS_Sub3_4116.anInt4588 + (7 + aNativeToolkit_4111.anInt8107));
             anInt4121 = aS_Sub3_4116.anInt4587 >> anInt4124;
             anInt4118 = aS_Sub3_4116.anInt4590 >> anInt4124;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("dg.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + (var_s_Sub3 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("dg.<init>(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + (var_s_Sub3 != null ? "{...}" : "null") + ')'));
         }
     }
 }

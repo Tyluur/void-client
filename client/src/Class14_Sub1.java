@@ -27,20 +27,20 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         return f / (float) anInt8604;
     }
 
-    Class14_Sub1(Class377 class377, int i, int i_0_, boolean bool, int[] is, int i_1_, int i_2_) {
-        super(class377, 3553, Class108.aClass304_1662, Class68.aClass68_1183, i * i_0_, bool);
+    Class14_Sub1(OpenGLxToolkit openGLxToolkit, int i, int i_0_, boolean bool, int[] is, int i_1_, int i_2_) {
+        super(openGLxToolkit, 3553, Class108.aClass304_1662, Class68.aClass68_1183, i * i_0_, bool);
         try {
             anInt8612 = i;
             anInt8604 = i_0_;
-            this.aClass377_5082.method3850((byte) 79, this);
+            this.aOpenGLxToolkit_5082.method3850((byte) 79, this);
             if (bool && i_2_ == 0 && i_1_ == 0) this.method233(i, i_0_, is, this.anInt5093, 255);
             else {
                 OpenGL.glPixelStorei(3314, i_2_);
-                OpenGL.glTexImage2Di(this.anInt5093, 0, 6408, anInt8612, anInt8604, 0, 32993, this.aClass377_5082.anInt9918, is, 4 * i_1_);
+                OpenGL.glTexImage2Di(this.anInt5093, 0, 6408, anInt8612, anInt8604, 0, 32993, this.aOpenGLxToolkit_5082.anInt9918, is, 4 * i_1_);
                 OpenGL.glPixelStorei(3314, 0);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (class377 != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + (is != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + bool + ',' + (is != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ')'));
         }
     }
 
@@ -73,12 +73,12 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         }
     }
 
-    Class14_Sub1(Class377 class377, Class304 class304, int i, int i_6_, boolean bool, byte[] is, int i_7_, int i_8_) {
-        super(class377, 3553, class304, Class68.aClass68_1183, i_6_ * i, bool);
+    Class14_Sub1(OpenGLxToolkit openGLxToolkit, Class304 class304, int i, int i_6_, boolean bool, byte[] is, int i_7_, int i_8_) {
+        super(openGLxToolkit, 3553, class304, Class68.aClass68_1183, i_6_ * i, bool);
         try {
             anInt8612 = i;
             anInt8604 = i_6_;
-            this.aClass377_5082.method3850((byte) -102, this);
+            this.aOpenGLxToolkit_5082.method3850((byte) -102, this);
             OpenGL.glPixelStorei(3317, 1);
             if (!bool || i_8_ != 0 || i_7_ != 0) {
                 OpenGL.glPixelStorei(3314, i_8_);
@@ -87,7 +87,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
             } else this.method230(7365, i, is, i_6_, this.anInt5093);
             OpenGL.glPixelStorei(3317, 4);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (class304 != null ? "{...}" : "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (is != null ? "{...}" : "null") + ',' + i_7_ + ',' + i_8_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (class304 != null ? "{...}" : "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (is != null ? "{...}" : "null") + ',' + i_7_ + ',' + i_8_ + ')'));
         }
     }
 
@@ -101,7 +101,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         try {
             int i_15_ = 108 / ((-45 - i_9_) / 49);
             anInt8614++;
-            this.aClass377_5082.method3850((byte) -106, this);
+            this.aOpenGLxToolkit_5082.method3850((byte) -106, this);
             OpenGL.glPixelStorei(3314, i);
             OpenGL.glTexSubImage2Df(this.anInt5093, 0, i_12_, i_10_, i_13_, i_14_, Class348_Sub40_Sub3.method3055(106, class304), 5121, fs, i_11_);
             OpenGL.glPixelStorei(3314, 0);
@@ -187,7 +187,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
     public final void method70(int i, int i_27_, byte i_28_, int i_29_, int i_30_, int i_31_, int i_32_, byte[] is, Class304 class304) {
         try {
             anInt8608++;
-            this.aClass377_5082.method3850((byte) -24, this);
+            this.aOpenGLxToolkit_5082.method3850((byte) -24, this);
             OpenGL.glPixelStorei(3317, 1);
             OpenGL.glPixelStorei(3314, i_29_);
             OpenGL.glTexSubImage2Dub(this.anInt5093, 0, i_32_, i, i_31_, i_30_, Class348_Sub40_Sub3.method3055(103, class304), 5121, is, i_27_);
@@ -202,7 +202,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
     public final void method65(int i, int[] is, int i_33_, int i_34_, int i_35_, byte i_36_, int i_37_) {
         anInt8613++;
         int[] is_38_ = new int[anInt8612 * anInt8604];
-        this.aClass377_5082.method3850((byte) -32, this);
+        this.aOpenGLxToolkit_5082.method3850((byte) -32, this);
         OpenGL.glGetTexImagei(this.anInt5093, 0, 32993, 5121, is_38_, 0);
         if (i_36_ == 112) {
             for (int i_39_ = 0; i_35_ > i_39_; i_39_++)
@@ -232,47 +232,47 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
     }
 
     public final void method68(int i, int i_41_, int[] is, int i_42_, int i_43_, int i_44_, int i_45_, int i_46_) {
-        this.aClass377_5082.method3850((byte) -116, this);
+        this.aOpenGLxToolkit_5082.method3850((byte) -116, this);
         if (i_41_ != 22809) aString8605 = null;
         anInt8616++;
         OpenGL.glPixelStorei(3314, i);
-        OpenGL.glTexSubImage2Di(this.anInt5093, 0, i_42_, i_45_, i_44_, i_46_, 32993, (this.aClass377_5082.anInt9918), is, i_43_);
+        OpenGL.glTexSubImage2Di(this.anInt5093, 0, i_42_, i_45_, i_44_, i_46_, 32993, (this.aOpenGLxToolkit_5082.anInt9918), is, i_43_);
         OpenGL.glPixelStorei(3314, 0);
     }
 
-    Class14_Sub1(Class377 class377, Class304 class304, Class68 class68, int i, int i_47_) {
-        super(class377, 3553, class304, class68, i_47_ * i, false);
+    Class14_Sub1(OpenGLxToolkit openGLxToolkit, Class304 class304, Class68 class68, int i, int i_47_) {
+        super(openGLxToolkit, 3553, class304, class68, i_47_ * i, false);
         try {
             anInt8612 = i;
             anInt8604 = i_47_;
-            this.aClass377_5082.method3850((byte) 110, this);
+            this.aOpenGLxToolkit_5082.method3850((byte) 110, this);
             OpenGL.glTexImage2Dub(this.anInt5093, 0, this.method228(113), i, i_47_, 0, Class348_Sub40_Sub3.method3055(113, this.aClass304_5084), Class130.method1128(-112, this.aClass68_5088), null, 0);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (class304 != null ? "{...}" : "null") + ',' + (class68 != null ? "{...}" : "null") + ',' + i + ',' + i_47_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (class304 != null ? "{...}" : "null") + ',' + (class68 != null ? "{...}" : "null") + ',' + i + ',' + i_47_ + ')'));
         }
     }
 
     public final void method66(boolean bool, boolean bool_48_, int i) {
-        this.aClass377_5082.method3850((byte) -29, this);
+        this.aOpenGLxToolkit_5082.method3850((byte) -29, this);
         anInt8615++;
         OpenGL.glTexParameteri(this.anInt5093, 10242, !bool ? 33071 : 10497);
         OpenGL.glTexParameteri(this.anInt5093, 10243, !bool_48_ ? 33071 : 10497);
         if (i != 25688) anInt8604 = -90;
     }
 
-    Class14_Sub1(Class377 class377, Class304 class304, int i, int i_49_, boolean bool, float[] fs, int i_50_, int i_51_) {
-        super(class377, 3553, class304, Class68.aClass68_1187, i * i_49_, bool);
+    Class14_Sub1(OpenGLxToolkit openGLxToolkit, Class304 class304, int i, int i_49_, boolean bool, float[] fs, int i_50_, int i_51_) {
+        super(openGLxToolkit, 3553, class304, Class68.aClass68_1187, i * i_49_, bool);
         try {
             anInt8612 = i;
             anInt8604 = i_49_;
-            this.aClass377_5082.method3850((byte) -67, this);
+            this.aOpenGLxToolkit_5082.method3850((byte) -67, this);
             if (bool || i_51_ != 0 || i_50_ != 0) {
                 OpenGL.glPixelStorei(3314, i_51_);
                 OpenGL.glTexImage2Df(this.anInt5093, 0, this.method228(111), i, i_49_, 0, (Class348_Sub40_Sub3.method3055(106, this.aClass304_5084)), 5126, fs, 4 * i_50_);
                 OpenGL.glPixelStorei(3314, 0);
             } else this.method238(this.anInt5093, 1, i, fs, i_49_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (class304 != null ? "{...}" : "null") + ',' + i + ',' + i_49_ + ',' + bool + ',' + (fs != null ? "{...}" : "null") + ',' + i_50_ + ',' + i_51_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bm.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (class304 != null ? "{...}" : "null") + ',' + i + ',' + i_49_ + ',' + bool + ',' + (fs != null ? "{...}" : "null") + ',' + i_50_ + ',' + i_51_ + ')'));
         }
     }
 }

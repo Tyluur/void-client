@@ -37,13 +37,13 @@ final class j extends Sprite implements Interface19 {
         return JA(this.nativeid);
     }
 
-    private final native void EA(oa var_oa, int i, int i_28_);
+    private final native void EA(SafeModeToolkit var_safeModeToolkit, int i, int i_28_);
 
     final void setOffsets(int i, int i_29_, int i_30_, int i_31_) {
         A(this.nativeid, i, i_29_, i_30_, i_31_);
     }
 
-    private final native void ma(oa var_oa, int[] is, byte[] is_32_, byte[] is_33_, int i, int i_34_, int i_35_, int i_36_);
+    private final native void ma(SafeModeToolkit var_safeModeToolkit, int[] is, byte[] is_32_, byte[] is_33_, int i, int i_34_, int i_35_, int i_36_);
 
     final void method968(int i, int i_37_, int i_38_) {
         N(this.nativeid, i, i_37_, i_38_);
@@ -69,30 +69,30 @@ final class j extends Sprite implements Interface19 {
         return M(this.nativeid);
     }
 
-    j(oa var_oa, int i, int i_57_) {
-        EA(var_oa, i, i_57_);
+    j(SafeModeToolkit var_safeModeToolkit, int i, int i_57_) {
+        EA(var_safeModeToolkit, i, i_57_);
     }
 
     private final native void b(long l, float f, float f_58_, float f_59_, float f_60_, float f_61_, float f_62_, int i, int i_63_, int i_64_, int i_65_);
 
-    j(oa var_oa, int[] is, int i, int i_66_, int i_67_, int i_68_, boolean bool) {
-        ua(var_oa, is, i, i_66_, i_67_, i_68_, bool);
+    j(SafeModeToolkit var_safeModeToolkit, int[] is, int i, int i_66_, int i_67_, int i_68_, boolean bool) {
+        ua(var_safeModeToolkit, is, i, i_66_, i_67_, i_68_, bool);
     }
 
     private final native void A(long l, int i, int i_69_, int i_70_, int i_71_);
 
     private final native void V(long l, int i, int i_72_, long l_73_, int i_74_, int i_75_);
 
-    j(oa var_oa, int[] is, byte[] is_76_, byte[] is_77_, int i, int i_78_, int i_79_, int i_80_) {
-        ma(var_oa, is, is_76_, is_77_, i, i_78_, i_79_, i_80_);
+    j(SafeModeToolkit var_safeModeToolkit, int[] is, byte[] is_76_, byte[] is_77_, int i, int i_78_, int i_79_, int i_80_) {
+        ma(var_safeModeToolkit, is, is_76_, is_77_, i, i_78_, i_79_, i_80_);
     }
 
     private final native void N(long l, int i, int i_81_, int i_82_);
 
     private final native void YA(long l, int i, int i_83_, int i_84_, int i_85_, int i_86_, int i_87_);
 
-    j(oa var_oa, int i, int i_88_, int i_89_, int i_90_, boolean bool) {
-        h(var_oa, i, i_88_, i_89_, i_90_, bool);
+    j(SafeModeToolkit var_safeModeToolkit, int i, int i_88_, int i_89_, int i_90_, boolean bool) {
+        h(var_safeModeToolkit, i, i_88_, i_89_, i_90_, bool);
     }
 
     private final native int I(long l);
@@ -101,13 +101,13 @@ final class j extends Sprite implements Interface19 {
         if (this.nativeid != 0L) Class257.method1947(0, this);
     }
 
-    private final native void ua(oa var_oa, int[] is, int i, int i_91_, int i_92_, int i_93_, boolean bool);
+    private final native void ua(SafeModeToolkit var_safeModeToolkit, int[] is, int i, int i_91_, int i_92_, int i_93_, boolean bool);
 
     final void method979(int i, int i_94_, int i_95_, int i_96_, int i_97_, int i_98_) {
         YA(this.nativeid, i, i_94_, i_95_, i_96_, i_97_, i_98_);
     }
 
-    private final native void h(oa var_oa, int i, int i_99_, int i_100_, int i_101_, boolean bool);
+    private final native void h(SafeModeToolkit var_safeModeToolkit, int i, int i_99_, int i_100_, int i_101_, boolean bool);
 
     final void method965(int i, int i_102_, int i_103_, int i_104_, int i_105_, int i_106_, int i_107_) {
         P(this.nativeid, i, i_102_, i_103_, i_104_, i_105_, i_106_, i_107_);

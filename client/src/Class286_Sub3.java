@@ -32,25 +32,25 @@ final class Class286_Sub3 extends Class286 {
         anInt6224++;
         if (aClass61_6222 != null) {
             if (i_1_ >= -42) method2149(-65);
-            this.aHa_Sub2_3684.method3738(-15039, 1);
-            if ((i & 0x80) != 0) this.aHa_Sub2_3684.method3771((byte) -122, null);
+            this.aOpenGLToolkit_3684.method3738(-15039, 1);
+            if ((i & 0x80) != 0) this.aOpenGLToolkit_3684.method3771((byte) -122, null);
             else if ((0x1 & i_0_) != 1) {
-                if (!aClass83_6227.aBoolean1442) this.aHa_Sub2_3684.method3771((byte) -84, aClass83_6227.aClass258_Sub3Array1444[0]);
-                else this.aHa_Sub2_3684.method3771((byte) -97, aClass83_6227.aClass258_Sub1_1440);
+                if (!aClass83_6227.aBoolean1442) this.aOpenGLToolkit_3684.method3771((byte) -84, aClass83_6227.aClass258_Sub3Array1444[0]);
+                else this.aOpenGLToolkit_3684.method3771((byte) -97, aClass83_6227.aClass258_Sub1_1440);
                 OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
             } else if (aClass83_6227.aBoolean1442) {
-                this.aHa_Sub2_3684.method3771((byte) -83, aClass83_6227.aClass258_Sub1_1440);
+                this.aOpenGLToolkit_3684.method3771((byte) -83, aClass83_6227.aClass258_Sub1_1440);
                 OpenGL.glProgramLocalParameter4fARB(34336, 65, aFloat6225, 0.0F, 0.0F, 1.0F);
             } else {
-                int i_2_ = (this.aHa_Sub2_3684.anInt7735 % 4000 * 16 / 4000);
-                this.aHa_Sub2_3684.method3771((byte) -88, aClass83_6227.aClass258_Sub3Array1444[i_2_]);
+                int i_2_ = (this.aOpenGLToolkit_3684.anInt7735 % 4000 * 16 / 4000);
+                this.aOpenGLToolkit_3684.method3771((byte) -88, aClass83_6227.aClass258_Sub3Array1444[i_2_]);
                 OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
             }
-            this.aHa_Sub2_3684.method3738(-15039, 0);
+            this.aOpenGLToolkit_3684.method3738(-15039, 0);
             if ((0x40 & i) == 0) {
-                Class348_Sub42_Sub1.aFloatArray9491[2] = (this.aHa_Sub2_3684.aFloat7823 * (this.aHa_Sub2_3684.aFloat7768));
-                Class348_Sub42_Sub1.aFloatArray9491[0] = (this.aHa_Sub2_3684.aFloat7781 * (this.aHa_Sub2_3684.aFloat7768));
-                Class348_Sub42_Sub1.aFloatArray9491[1] = (this.aHa_Sub2_3684.aFloat7768 * (this.aHa_Sub2_3684.aFloat7816));
+                Class348_Sub42_Sub1.aFloatArray9491[2] = (this.aOpenGLToolkit_3684.aFloat7823 * (this.aOpenGLToolkit_3684.aFloat7768));
+                Class348_Sub42_Sub1.aFloatArray9491[0] = (this.aOpenGLToolkit_3684.aFloat7781 * (this.aOpenGLToolkit_3684.aFloat7768));
+                Class348_Sub42_Sub1.aFloatArray9491[1] = (this.aOpenGLToolkit_3684.aFloat7768 * (this.aOpenGLToolkit_3684.aFloat7816));
                 OpenGL.glProgramLocalParameter4fvARB(34336, 66, (Class348_Sub42_Sub1.aFloatArray9491), 0);
             } else OpenGL.glProgramLocalParameter4fARB(34336, 66, 1.0F, 1.0F, 1.0F, 1.0F);
             int i_3_ = i & 0x3;
@@ -63,8 +63,8 @@ final class Class286_Sub3 extends Class286 {
     final void method2140(Class258 class258, byte i, int i_4_) {
         if (i <= -89) {
             anInt6216++;
-            this.aHa_Sub2_3684.method3771((byte) -115, class258);
-            this.aHa_Sub2_3684.method3761(0, i_4_);
+            this.aOpenGLToolkit_3684.method3771((byte) -115, class258);
+            this.aOpenGLToolkit_3684.method3761(0, i_4_);
         }
     }
 
@@ -94,13 +94,13 @@ final class Class286_Sub3 extends Class286 {
         }
     }
 
-    Class286_Sub3(ha_Sub2 var_ha_Sub2, Class83 class83) {
-        super(var_ha_Sub2);
+    Class286_Sub3(OpenGLToolkit var_openGLToolkit, Class83 class83) {
+        super(var_openGLToolkit);
         do {
             try {
                 aClass83_6227 = class83;
-                if (!this.aHa_Sub2_3684.aBoolean7841 || (this.aHa_Sub2_3684.anInt7795 < 2)) break;
-                aClass171_6220 = (Class50.method459(34336, this.aHa_Sub2_3684, "!!ARBvp1.0\nOPTION  ARB_position_invariant;\nATTRIB  iPos         = vertex.position;\nATTRIB  iColour      = vertex.color;\nATTRIB  iTexCoord    = vertex.texcoord[0];\nOUTPUT  oColour      = result.color;\nOUTPUT  oTexCoord0   = result.texcoord[0];\nOUTPUT  oTexCoord1   = result.texcoord[1];\nOUTPUT  oFogCoord    = result.fogcoord;\nPARAM   time         = program.local[65];\nPARAM   turbulence   = program.local[64];\nPARAM   lightAmbient = program.local[66]; \nPARAM   pMatrix[4]   = { state.matrix.projection };\nPARAM   mvMatrix[4]  = { state.matrix.modelview };\nPARAM   ivMatrix[4]  = { state.matrix.texture[1] };\nPARAM   texMatrix[4]  = { state.matrix.texture[0] };\nPARAM   fNoise[64]   = { program.local[0..63] };\nTEMP    noise, viewPos, worldPos, texCoord;\nADDRESS noiseAddr;\nDP4   viewPos.x, mvMatrix[0], iPos;\nDP4   viewPos.y, mvMatrix[1], iPos;\nDP4   viewPos.z, mvMatrix[2], iPos;\nDP4   viewPos.w, mvMatrix[3], iPos;\nMOV   oFogCoord.x, -viewPos.z;\nDP4   worldPos.x, ivMatrix[0], viewPos;\nDP4   worldPos.y, ivMatrix[1], viewPos;\nDP4   worldPos.z, ivMatrix[2], viewPos;\nDP4   worldPos.w, ivMatrix[3], viewPos;\nADD   noise.x, worldPos.x, worldPos.z;SUB   noise.y, worldPos.z, worldPos.x;MUL   noise, noise, 0.0001220703125;\nFRC   noise, noise;\nMUL   noise, noise, 64;\nARL   noiseAddr.x, noise.x;\nMOV   noise.x, fNoise[noiseAddr.x].x;\nARL   noiseAddr.x, noise.y;\nMOV   noise.y, fNoise[noiseAddr.x].y;\nMUL   noise, noise, turbulence.x;\nDP4   texCoord.x, texMatrix[0], iTexCoord;\nDP4   texCoord.y, texMatrix[1], iTexCoord;\nADD   oTexCoord0.xy, texCoord, noise;\nMOV   oTexCoord0.z, 0;\nMOV   oTexCoord0.w, 1;\nMUL   oTexCoord1.xy, texCoord, 0.125;\nMOV   oTexCoord1.zw, time.xxxw;\nMUL   oColour.xyz, iColour, lightAmbient;\nMOV   oColour.w, iColour.w;\nEND", false));
+                if (!this.aOpenGLToolkit_3684.aBoolean7841 || (this.aOpenGLToolkit_3684.anInt7795 < 2)) break;
+                aClass171_6220 = (Class50.method459(34336, this.aOpenGLToolkit_3684, "!!ARBvp1.0\nOPTION  ARB_position_invariant;\nATTRIB  iPos         = vertex.position;\nATTRIB  iColour      = vertex.color;\nATTRIB  iTexCoord    = vertex.texcoord[0];\nOUTPUT  oColour      = result.color;\nOUTPUT  oTexCoord0   = result.texcoord[0];\nOUTPUT  oTexCoord1   = result.texcoord[1];\nOUTPUT  oFogCoord    = result.fogcoord;\nPARAM   time         = program.local[65];\nPARAM   turbulence   = program.local[64];\nPARAM   lightAmbient = program.local[66]; \nPARAM   pMatrix[4]   = { state.matrix.projection };\nPARAM   mvMatrix[4]  = { state.matrix.modelview };\nPARAM   ivMatrix[4]  = { state.matrix.texture[1] };\nPARAM   texMatrix[4]  = { state.matrix.texture[0] };\nPARAM   fNoise[64]   = { program.local[0..63] };\nTEMP    noise, viewPos, worldPos, texCoord;\nADDRESS noiseAddr;\nDP4   viewPos.x, mvMatrix[0], iPos;\nDP4   viewPos.y, mvMatrix[1], iPos;\nDP4   viewPos.z, mvMatrix[2], iPos;\nDP4   viewPos.w, mvMatrix[3], iPos;\nMOV   oFogCoord.x, -viewPos.z;\nDP4   worldPos.x, ivMatrix[0], viewPos;\nDP4   worldPos.y, ivMatrix[1], viewPos;\nDP4   worldPos.z, ivMatrix[2], viewPos;\nDP4   worldPos.w, ivMatrix[3], viewPos;\nADD   noise.x, worldPos.x, worldPos.z;SUB   noise.y, worldPos.z, worldPos.x;MUL   noise, noise, 0.0001220703125;\nFRC   noise, noise;\nMUL   noise, noise, 64;\nARL   noiseAddr.x, noise.x;\nMOV   noise.x, fNoise[noiseAddr.x].x;\nARL   noiseAddr.x, noise.y;\nMOV   noise.y, fNoise[noiseAddr.x].y;\nMUL   noise, noise, turbulence.x;\nDP4   texCoord.x, texMatrix[0], iTexCoord;\nDP4   texCoord.y, texMatrix[1], iTexCoord;\nADD   oTexCoord0.xy, texCoord, noise;\nMOV   oTexCoord0.z, 0;\nMOV   oTexCoord0.w, 1;\nMUL   oTexCoord1.xy, texCoord, 0.125;\nMOV   oTexCoord1.zw, time.xxxw;\nMUL   oColour.xyz, iColour, lightAmbient;\nMOV   oColour.w, iColour.w;\nEND", false));
                 if (aClass171_6220 != null) {
                     int[][] is = Class348_Sub49_Sub2.method3413(4, 3, 64, 4, 256, true, 0, 0.4F, false);
                     int[][] is_5_ = Class348_Sub49_Sub2.method3413(4, 3, 64, 4, 256, true, 8, 0.4F, false);
@@ -117,7 +117,7 @@ final class Class286_Sub3 extends Class286 {
                     method2149(-25);
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("em.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (class83 != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("em.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (class83 != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
@@ -125,25 +125,25 @@ final class Class286_Sub3 extends Class286 {
 
     private final void method2149(int i) {
         anInt6217++;
-        aClass61_6222 = new Class61(this.aHa_Sub2_3684, 2);
+        aClass61_6222 = new Class61(this.aOpenGLToolkit_3684, 2);
         aClass61_6222.method595((byte) 103, 0);
-        this.aHa_Sub2_3684.method3738(-15039, 1);
-        this.aHa_Sub2_3684.method3808(-16777216, 118);
-        this.aHa_Sub2_3684.method3729(260, (byte) 114, 7681);
-        this.aHa_Sub2_3684.method3775(false, 0, 770, 34166);
-        this.aHa_Sub2_3684.method3738(-15039, 0);
+        this.aOpenGLToolkit_3684.method3738(-15039, 1);
+        this.aOpenGLToolkit_3684.method3808(-16777216, 118);
+        this.aOpenGLToolkit_3684.method3729(260, (byte) 114, 7681);
+        this.aOpenGLToolkit_3684.method3775(false, 0, 770, 34166);
+        this.aOpenGLToolkit_3684.method3738(-15039, 0);
         OpenGL.glBindProgramARB(34336, aClass171_6220.anInt2270);
         OpenGL.glEnable(34336);
         aClass61_6222.method591(-1);
         aClass61_6222.method595((byte) 127, 1);
         int i_10_ = 65 / ((i - 62) / 49);
-        this.aHa_Sub2_3684.method3738(-15039, 1);
+        this.aOpenGLToolkit_3684.method3738(-15039, 1);
         OpenGL.glMatrixMode(5890);
         OpenGL.glLoadIdentity();
         OpenGL.glMatrixMode(5888);
-        this.aHa_Sub2_3684.method3761(0, 0);
-        this.aHa_Sub2_3684.method3775(false, 0, 770, 5890);
-        this.aHa_Sub2_3684.method3738(-15039, 0);
+        this.aOpenGLToolkit_3684.method3761(0, 0);
+        this.aOpenGLToolkit_3684.method3775(false, 0, 770, 5890);
+        this.aOpenGLToolkit_3684.method3738(-15039, 0);
         OpenGL.glBindProgramARB(34336, 0);
         OpenGL.glDisable(34336);
         OpenGL.glDisable(34820);
@@ -161,9 +161,9 @@ final class Class286_Sub3 extends Class286 {
         if (aClass61_6222 != null) {
             if (i >= -75) method2134(true, false);
             aClass61_6222.method594('\001', 28666);
-            this.aHa_Sub2_3684.method3738(-15039, 1);
-            this.aHa_Sub2_3684.method3771((byte) -103, null);
-            this.aHa_Sub2_3684.method3738(-15039, 0);
+            this.aOpenGLToolkit_3684.method3738(-15039, 1);
+            this.aOpenGLToolkit_3684.method3771((byte) -103, null);
+            this.aOpenGLToolkit_3684.method3738(-15039, 0);
         }
     }
 
@@ -171,21 +171,21 @@ final class Class286_Sub3 extends Class286 {
         anInt6232++;
         if (aClass61_6222 != null) {
             aClass61_6222.method594('\0', 28666);
-            this.aHa_Sub2_3684.method3738(-15039, 1);
+            this.aOpenGLToolkit_3684.method3738(-15039, 1);
             OpenGL.glMatrixMode(5890);
             if (bool_11_ == false) {
-                OpenGL.glLoadMatrixf(this.aHa_Sub2_3684.aClass101_Sub3_7767.method940(1), 0);
+                OpenGL.glLoadMatrixf(this.aOpenGLToolkit_3684.aClass101_Sub3_7767.method940(1), 0);
                 OpenGL.glMatrixMode(5888);
-                this.aHa_Sub2_3684.method3738(-15039, 0);
-                if (this.aHa_Sub2_3684.anInt7735 != anInt6219) {
-                    int i = ((this.aHa_Sub2_3684.anInt7735) % 5000 * 128 / 5000);
+                this.aOpenGLToolkit_3684.method3738(-15039, 0);
+                if (this.aOpenGLToolkit_3684.anInt7735 != anInt6219) {
+                    int i = ((this.aOpenGLToolkit_3684.anInt7735) % 5000 * 128 / 5000);
                     for (int i_12_ = 0; i_12_ < 64; i_12_++) {
                         OpenGL.glProgramLocalParameter4fvARB(34336, i_12_, aFloatArray6218, i);
                         i += 2;
                     }
-                    if (aClass83_6227.aBoolean1442) aFloat6225 = (float) (this.aHa_Sub2_3684.anInt7735 % 4000) / 4000.0F;
+                    if (aClass83_6227.aBoolean1442) aFloat6225 = (float) (this.aOpenGLToolkit_3684.anInt7735 % 4000) / 4000.0F;
                     else OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
-                    anInt6219 = (this.aHa_Sub2_3684.anInt7735);
+                    anInt6219 = (this.aOpenGLToolkit_3684.anInt7735);
                 }
             }
         }

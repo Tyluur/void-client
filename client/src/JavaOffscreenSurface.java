@@ -43,7 +43,7 @@ final class JavaOffscreenSurface implements OffscreenSurface {
             Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 2);
             Class367_Sub10.method3553(false, (byte) 119, 2);
         }
-        Class14_Sub2.method243(37);
+        Class14_Sub2.saveOptions(37);
         return i_2_;
     }
 

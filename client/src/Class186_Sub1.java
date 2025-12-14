@@ -77,12 +77,12 @@ final class Class186_Sub1 extends Class186 {
         loadingScreenManager = null;
     }
 
-    static final Class258_Sub3_Sub1 method1401(ha_Sub2 var_ha_Sub2, int i, int i_37_, int i_38_, int i_39_, int i_40_) {
+    static final Class258_Sub3_Sub1 method1401(OpenGLToolkit var_openGLToolkit, int i, int i_37_, int i_38_, int i_39_, int i_40_) {
         anInt5809++;
         if (i_37_ != 34037) aClass341_5808 = null;
-        if (var_ha_Sub2.aBoolean7793 || Class192.method1436(-20, i_38_) && Class192.method1436(-119, i_40_)) return new Class258_Sub3_Sub1(var_ha_Sub2, 3553, i, i_39_, i_38_, i_40_, true);
-        if (!var_ha_Sub2.aBoolean7837) return new Class258_Sub3_Sub1(var_ha_Sub2, i, i_39_, i_38_, i_40_, EnumTypeList.method340(i_38_, (byte) 108), EnumTypeList.method340(i_40_, (byte) 108), true);
-        return new Class258_Sub3_Sub1(var_ha_Sub2, 34037, i, i_39_, i_38_, i_40_, true);
+        if (var_openGLToolkit.aBoolean7793 || Class192.method1436(-20, i_38_) && Class192.method1436(-119, i_40_)) return new Class258_Sub3_Sub1(var_openGLToolkit, 3553, i, i_39_, i_38_, i_40_, true);
+        if (!var_openGLToolkit.aBoolean7837) return new Class258_Sub3_Sub1(var_openGLToolkit, i, i_39_, i_38_, i_40_, EnumTypeList.method340(i_38_, (byte) 108), EnumTypeList.method340(i_40_, (byte) 108), true);
+        return new Class258_Sub3_Sub1(var_openGLToolkit, 34037, i, i_39_, i_38_, i_40_, true);
     }
 
     Class186_Sub1(int i) {

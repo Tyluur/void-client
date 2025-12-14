@@ -3,7 +3,7 @@
  */
 
 final class i extends Model implements Interface19 {
-    private final oa anOa5117;
+    private final SafeModeToolkit anSafeModeToolkit5117;
     ModelParticleEffector[] aModelParticleEffectorArray5118;
     long nativeid;
     ModelParticleEmitter[] aModelParticleEmitterArray5119;
@@ -30,13 +30,13 @@ final class i extends Model implements Interface19 {
     final native void ZA(i var_i_2_, i var_i_3_, int i, boolean bool, boolean bool_4_);
 
     final void method613(Model model, int i, int i_5_, int i_6_, boolean bool) {
-        anOa5117.method3973().method144(this, model, i, i_5_, i_6_, bool);
+        anSafeModeToolkit5117.method3973().method144(this, model, i, i_5_, i_6_, bool);
     }
 
     final native void aa(short i, short i_7_);
 
     final boolean method623(int i, int i_8_, Matrix matrix, boolean bool, int i_9_, int i_10_) {
-        return anOa5117.method3973().method143(this, i, i_8_, matrix, bool, i_10_);
+        return anSafeModeToolkit5117.method3973().method143(this, i, i_8_, matrix, bool, i_10_);
     }
 
     final native int EA();
@@ -50,16 +50,16 @@ final class i extends Model implements Interface19 {
     final native void P(int i, int i_11_, int i_12_, int i_13_);
 
     final void render(Matrix matrix, LabelBounds class318_sub3, int i, int i_14_) {
-        if (class318_sub3 == null) anOa5117.method3973().method149(this, matrix, null, i, i_14_);
+        if (class318_sub3 == null) anSafeModeToolkit5117.method3973().method149(this, matrix, null, i, i_14_);
         else {
-            oa.anIntArray5132[5] = 0;
-            anOa5117.method3973().method149(this, matrix, oa.anIntArray5132, i, i_14_);
-            class318_sub3.bottomX = oa.anIntArray5132[0];
-            class318_sub3.bottomY = oa.anIntArray5132[1];
-            class318_sub3.topX = oa.anIntArray5132[2];
-            class318_sub3.topY = oa.anIntArray5132[3];
-            class318_sub3.width = oa.anIntArray5132[4];
-            class318_sub3.visible = oa.anIntArray5132[5] != 0;
+            SafeModeToolkit.anIntArray5132[5] = 0;
+            anSafeModeToolkit5117.method3973().method149(this, matrix, SafeModeToolkit.anIntArray5132, i, i_14_);
+            class318_sub3.bottomX = SafeModeToolkit.anIntArray5132[0];
+            class318_sub3.bottomY = SafeModeToolkit.anIntArray5132[1];
+            class318_sub3.topX = SafeModeToolkit.anIntArray5132[2];
+            class318_sub3.topY = SafeModeToolkit.anIntArray5132[3];
+            class318_sub3.width = SafeModeToolkit.anIntArray5132[4];
+            class318_sub3.visible = SafeModeToolkit.anIntArray5132[5] != 0;
         }
     }
 
@@ -72,7 +72,7 @@ final class i extends Model implements Interface19 {
     }
 
     final void method621() {
-        if (anOa5117.anInt5141 > 1) {
+        if (anSafeModeToolkit5117.anInt5141 > 1) {
             synchronized (this) {
                 this.aBoolean1124 = false;
                 this.notifyAll();
@@ -83,11 +83,11 @@ final class i extends Model implements Interface19 {
     final native void VA(int i);
 
     final boolean method628(int i, int i_19_, Matrix matrix, boolean bool, int i_20_) {
-        return anOa5117.method3973().method146(this, i, i_19_, matrix, bool);
+        return anSafeModeToolkit5117.method3973().method146(this, i, i_19_, matrix, bool);
     }
 
     final Model method614(byte i, int i_21_, boolean bool) {
-        return anOa5117.method3973().method152(this, i, i_21_, bool);
+        return anSafeModeToolkit5117.method3973().method152(this, i, i_21_, bool);
     }
 
     final native int na();
@@ -112,7 +112,7 @@ final class i extends Model implements Interface19 {
 
     final native int ma();
 
-    private final native void R(oa var_oa, ya var_ya, int i, int i_31_, int[] is, int[] is_32_, int[] is_33_, int[] is_34_, short[] is_35_, int i_36_, short[] is_37_, short[] is_38_, short[] is_39_, byte[] is_40_, byte[] is_41_, byte[] is_42_, byte[] is_43_, short[] is_44_, short[] is_45_, int[] is_46_, byte i_47_, short[] is_48_, int i_49_, byte[] is_50_, short[] is_51_, short[] is_52_, short[] is_53_, int[] is_54_, int[] is_55_, int[] is_56_, byte[] is_57_, byte[] is_58_, int[] is_59_, int[] is_60_, int[] is_61_, int[] is_62_, int i_63_, int i_64_, int i_65_, int i_66_, int i_67_, int i_68_, int[] is_69_);
+    private final native void R(SafeModeToolkit var_safeModeToolkit, ya var_ya, int i, int i_31_, int[] is, int[] is_32_, int[] is_33_, int[] is_34_, short[] is_35_, int i_36_, short[] is_37_, short[] is_38_, short[] is_39_, byte[] is_40_, byte[] is_41_, byte[] is_42_, byte[] is_43_, short[] is_44_, short[] is_45_, int[] is_46_, byte i_47_, short[] is_48_, int i_49_, byte[] is_50_, short[] is_51_, short[] is_52_, short[] is_53_, int[] is_54_, int[] is_55_, int[] is_56_, byte[] is_57_, byte[] is_58_, int[] is_59_, int[] is_60_, int[] is_61_, int[] is_62_, int i_63_, int i_64_, int i_65_, int i_66_, int i_67_, int i_68_, int[] is_69_);
 
     final native void FA(int i);
 
@@ -133,7 +133,7 @@ final class i extends Model implements Interface19 {
     }
 
     final void method622() {
-        if (anOa5117.anInt5141 > 1) {
+        if (anSafeModeToolkit5117.anInt5141 > 1) {
             synchronized (this) {
                 while (this.aBoolean1124) {
                     try {
@@ -148,36 +148,36 @@ final class i extends Model implements Interface19 {
     }
 
     final void render(Matrix matrix, LabelBounds class318_sub3, int i) {
-        if (class318_sub3 == null) anOa5117.method3973().method145(this, matrix, null, i);
+        if (class318_sub3 == null) anSafeModeToolkit5117.method3973().method145(this, matrix, null, i);
         else {
-            oa.anIntArray5132[5] = 0;
-            anOa5117.method3973().method145(this, matrix, oa.anIntArray5132, i);
-            class318_sub3.bottomX = oa.anIntArray5132[0];
-            class318_sub3.bottomY = oa.anIntArray5132[1];
-            class318_sub3.topX = oa.anIntArray5132[2];
-            class318_sub3.topY = oa.anIntArray5132[3];
-            class318_sub3.width = oa.anIntArray5132[4];
-            class318_sub3.visible = oa.anIntArray5132[5] != 0;
+            SafeModeToolkit.anIntArray5132[5] = 0;
+            anSafeModeToolkit5117.method3973().method145(this, matrix, SafeModeToolkit.anIntArray5132, i);
+            class318_sub3.bottomX = SafeModeToolkit.anIntArray5132[0];
+            class318_sub3.bottomY = SafeModeToolkit.anIntArray5132[1];
+            class318_sub3.topX = SafeModeToolkit.anIntArray5132[2];
+            class318_sub3.topY = SafeModeToolkit.anIntArray5132[3];
+            class318_sub3.width = SafeModeToolkit.anIntArray5132[4];
+            class318_sub3.visible = SafeModeToolkit.anIntArray5132[5] != 0;
         }
     }
 
     final native boolean r();
 
     final void method620(Matrix matrix) {
-        method693(oa.anIntArray5140, matrix);
+        method693(SafeModeToolkit.anIntArray5140, matrix);
         int i = 0;
         if (this.aModelParticleEmitterArray5119 != null) {
             for (int i_74_ = 0; i_74_ < this.aModelParticleEmitterArray5119.length; i_74_++) {
                 ModelParticleEmitter modelParticleEmitter = this.aModelParticleEmitterArray5119[i_74_];
-                modelParticleEmitter.anInt1882 = oa.anIntArray5140[i++];
-                modelParticleEmitter.anInt1891 = oa.anIntArray5140[i++];
-                modelParticleEmitter.anInt1889 = oa.anIntArray5140[i++];
-                modelParticleEmitter.anInt1883 = oa.anIntArray5140[i++];
-                modelParticleEmitter.anInt1890 = oa.anIntArray5140[i++];
-                modelParticleEmitter.anInt1880 = oa.anIntArray5140[i++];
-                modelParticleEmitter.anInt1876 = oa.anIntArray5140[i++];
-                modelParticleEmitter.anInt1874 = oa.anIntArray5140[i++];
-                modelParticleEmitter.anInt1884 = oa.anIntArray5140[i++];
+                modelParticleEmitter.anInt1882 = SafeModeToolkit.anIntArray5140[i++];
+                modelParticleEmitter.anInt1891 = SafeModeToolkit.anIntArray5140[i++];
+                modelParticleEmitter.anInt1889 = SafeModeToolkit.anIntArray5140[i++];
+                modelParticleEmitter.anInt1883 = SafeModeToolkit.anIntArray5140[i++];
+                modelParticleEmitter.anInt1890 = SafeModeToolkit.anIntArray5140[i++];
+                modelParticleEmitter.anInt1880 = SafeModeToolkit.anIntArray5140[i++];
+                modelParticleEmitter.anInt1876 = SafeModeToolkit.anIntArray5140[i++];
+                modelParticleEmitter.anInt1874 = SafeModeToolkit.anIntArray5140[i++];
+                modelParticleEmitter.anInt1884 = SafeModeToolkit.anIntArray5140[i++];
             }
         }
         if (this.aModelParticleEffectorArray5118 != null) {
@@ -187,9 +187,9 @@ final class i extends Model implements Interface19 {
                 if (modelParticleEffector.aModelParticleEffector_4248 != null) modelParticleEffector_76_ = modelParticleEffector.aModelParticleEffector_4248;
                 if (modelParticleEffector.aMatrix_4252 != null) modelParticleEffector.aMatrix_4252.method898(matrix);
                 else modelParticleEffector.aMatrix_4252 = matrix.method907();
-                modelParticleEffector_76_.anInt4238 = oa.anIntArray5140[i++];
-                modelParticleEffector_76_.anInt4239 = oa.anIntArray5140[i++];
-                modelParticleEffector_76_.anInt4240 = oa.anIntArray5140[i++];
+                modelParticleEffector_76_.anInt4238 = SafeModeToolkit.anIntArray5140[i++];
+                modelParticleEffector_76_.anInt4239 = SafeModeToolkit.anIntArray5140[i++];
+                modelParticleEffector_76_.anInt4240 = SafeModeToolkit.anIntArray5140[i++];
             }
         }
     }
@@ -201,15 +201,15 @@ final class i extends Model implements Interface19 {
     }
 
     private final void method693(int[] is, Matrix matrix) {
-        anOa5117.method3973().method151(this, is, matrix);
+        anSafeModeToolkit5117.method3973().method151(this, is, matrix);
     }
 
     final native int ua();
 
     final native void H(int i, int i_77_, int i_78_);
 
-    i(oa var_oa, ya var_ya, Mesh mesh, int i, int i_79_, int i_80_, int i_81_) {
-        anOa5117 = var_oa;
+    i(SafeModeToolkit var_safeModeToolkit, ya var_ya, Mesh mesh, int i, int i_79_, int i_80_, int i_81_) {
+        anSafeModeToolkit5117 = var_safeModeToolkit;
         aYa5120 = var_ya;
         this.aModelParticleEmitterArray5119 = mesh.emitters;
         this.aModelParticleEffectorArray5118 = mesh.effectors;
@@ -242,19 +242,19 @@ final class i extends Model implements Interface19 {
             MeshBillboard meshBillboard = mesh.billboards[i_91_];
             is_88_[i_89_++] = meshBillboard.anInt2156;
         }
-        R(anOa5117, aYa5120, mesh.vertexCount, mesh.maxVertex, mesh.vertexX, mesh.vertexY, mesh.vertexZ, mesh.vertexLabel, mesh.originalModels, mesh.faceCount, mesh.faceA, mesh.faceB, mesh.faceC, mesh.shadingType, mesh.facePriority, mesh.faceAlpha, mesh.faceTexSpace, mesh.faceColour, mesh.faceTexture, mesh.faceLabel, mesh.globalPriority, mesh.aShortArray1856, mesh.texSpaceCount, mesh.texMappingType, mesh.texSpaceDefA, mesh.texSpaceDefB, mesh.texSpaceDefC, mesh.texSpaceScaleX, mesh.texSpaceScaleY, mesh.texSpaceScaleZ, mesh.texRotation, mesh.rexDirection, mesh.texOffsetX, mesh.texOffsetY, mesh.texOffsetZ, is, i_82_, i_83_, i, i_79_, i_80_, i_81_, is_88_);
+        R(anSafeModeToolkit5117, aYa5120, mesh.vertexCount, mesh.maxVertex, mesh.vertexX, mesh.vertexY, mesh.vertexZ, mesh.vertexLabel, mesh.originalModels, mesh.faceCount, mesh.faceA, mesh.faceB, mesh.faceC, mesh.shadingType, mesh.facePriority, mesh.faceAlpha, mesh.faceTexSpace, mesh.faceColour, mesh.faceTexture, mesh.faceLabel, mesh.globalPriority, mesh.aShortArray1856, mesh.texSpaceCount, mesh.texMappingType, mesh.texSpaceDefA, mesh.texSpaceDefB, mesh.texSpaceDefC, mesh.texSpaceScaleX, mesh.texSpaceScaleY, mesh.texSpaceScaleZ, mesh.texRotation, mesh.rexDirection, mesh.texOffsetX, mesh.texOffsetY, mesh.texOffsetZ, is, i_82_, i_83_, i, i_79_, i_80_, i_81_, is_88_);
     }
 
     private final native void A(long l, int i, boolean bool);
 
     final native r ba(r var_r);
 
-    private final native void oa(oa var_oa);
+    private final native void oa(SafeModeToolkit var_safeModeToolkit);
 
-    i(oa var_oa) {
-        anOa5117 = var_oa;
+    i(SafeModeToolkit var_safeModeToolkit) {
+        anSafeModeToolkit5117 = var_safeModeToolkit;
         aYa5120 = null;
-        oa(var_oa);
+        oa(var_safeModeToolkit);
     }
 
     final native int RA();

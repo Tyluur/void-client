@@ -7,7 +7,7 @@ final class Class100 {
     private int anInt1578;
     static Class78[] aClass78Array1579 = new Class78[37];
     static int anInt1580;
-    private final ha_Sub2 aHa_Sub2_1581;
+    private final OpenGLToolkit aOpenGLToolkit_1581;
     private Class83 aClass83_1582;
     static int[] anIntArray1583 = new int[14];
     private int anInt1584 = 0;
@@ -22,7 +22,7 @@ final class Class100 {
 
     final void method884(int i, boolean bool, int i_0_, int i_1_, byte i_2_, boolean bool_3_) {
         anInt1587++;
-        bool_3_ &= aHa_Sub2_1581.method3639();
+        bool_3_ &= aOpenGLToolkit_1581.method3639();
         if (!bool_3_ && (i_0_ == 4 || i_0_ == 8 || i_0_ == 9)) {
             if (i_0_ == 4) i_1_ = i;
             i_0_ = 2;
@@ -93,21 +93,21 @@ final class Class100 {
         return aClass286Array1588[i_8_].method2137(-112);
     }
 
-    Class100(ha_Sub2 var_ha_Sub2) {
+    Class100(OpenGLToolkit var_openGLToolkit) {
         anInt1578 = 0;
         anInt1592 = 0;
-        aHa_Sub2_1581 = var_ha_Sub2;
-        aClass83_1582 = new Class83(var_ha_Sub2);
+        aOpenGLToolkit_1581 = var_openGLToolkit;
+        aClass83_1582 = new Class83(var_openGLToolkit);
         aClass286Array1588 = new Class286[10];
-        aClass286Array1588[1] = new Class286_Sub9(var_ha_Sub2);
-        aClass286Array1588[2] = new Class286_Sub3(var_ha_Sub2, aClass83_1582);
-        aClass286Array1588[4] = new Class286_Sub7(var_ha_Sub2, aClass83_1582);
-        aClass286Array1588[5] = new Class286_Sub5(var_ha_Sub2, aClass83_1582);
-        aClass286Array1588[6] = new Class286_Sub2(var_ha_Sub2);
-        aClass286Array1588[7] = new Class286_Sub8(var_ha_Sub2);
-        aClass286Array1588[3] = this.aClass286_Sub1_1586 = new Class286_Sub1(var_ha_Sub2);
-        aClass286Array1588[8] = new Class286_Sub6(var_ha_Sub2, aClass83_1582);
-        aClass286Array1588[9] = new Class286_Sub4(var_ha_Sub2, aClass83_1582);
+        aClass286Array1588[1] = new Class286_Sub9(var_openGLToolkit);
+        aClass286Array1588[2] = new Class286_Sub3(var_openGLToolkit, aClass83_1582);
+        aClass286Array1588[4] = new Class286_Sub7(var_openGLToolkit, aClass83_1582);
+        aClass286Array1588[5] = new Class286_Sub5(var_openGLToolkit, aClass83_1582);
+        aClass286Array1588[6] = new Class286_Sub2(var_openGLToolkit);
+        aClass286Array1588[7] = new Class286_Sub8(var_openGLToolkit);
+        aClass286Array1588[3] = this.aClass286_Sub1_1586 = new Class286_Sub1(var_openGLToolkit);
+        aClass286Array1588[8] = new Class286_Sub6(var_openGLToolkit, aClass83_1582);
+        aClass286Array1588[9] = new Class286_Sub4(var_openGLToolkit, aClass83_1582);
         if (!aClass286Array1588[8].method2137(-33)) aClass286Array1588[8] = aClass286Array1588[4];
         if (!aClass286Array1588[9].method2137(-82)) aClass286Array1588[9] = aClass286Array1588[8];
     }

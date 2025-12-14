@@ -13,7 +13,7 @@ final class Class104 {
     private final int anInt1613;
     static int anInt1614;
     static int anInt1615;
-    private final ha_Sub2 aHa_Sub2_1616;
+    private final OpenGLToolkit aOpenGLToolkit_1616;
     byte[] aByteArray1617;
     private final int anInt1618;
     static int anInt1619;
@@ -140,14 +140,14 @@ final class Class104 {
     }
 
     final void method956(boolean bool, int i, boolean[][] bools, int i_35_, int i_36_, int i_37_) {
-        aHa_Sub2_1616.method3728(false, 114);
+        aOpenGLToolkit_1616.method3728(false, 114);
         int i_38_ = 80 / ((i - 15) / 60);
         anInt1614++;
-        aHa_Sub2_1616.method3748(0, false);
-        aHa_Sub2_1616.method3757(-2, -119);
-        aHa_Sub2_1616.method3761(0, 1);
-        aHa_Sub2_1616.method3753(1, 1);
-        float f = 1.0F / (float) (aHa_Sub2_1616.anInt7733 * 128);
+        aOpenGLToolkit_1616.method3748(0, false);
+        aOpenGLToolkit_1616.method3757(-2, -119);
+        aOpenGLToolkit_1616.method3761(0, 1);
+        aOpenGLToolkit_1616.method3753(1, 1);
+        float f = 1.0F / (float) (aOpenGLToolkit_1616.anInt7733 * 128);
         if (bool) {
             for (int i_51_ = 0; i_51_ < anInt1625; i_51_++) {
                 int i_52_ = i_51_ << anInt1613;
@@ -181,7 +181,7 @@ final class Class104 {
                     int i_43_ = 0;
                     int i_44_ = i_42_ << anInt1613;
                     int i_45_ = 1 + i_42_ << anInt1613;
-                    Class348_Sub49_Sub1 class348_sub49_sub1 = aHa_Sub2_1616.aClass348_Sub49_Sub1_7798;
+                    Class348_Sub49_Sub1 class348_sub49_sub1 = aOpenGLToolkit_1616.aClass348_Sub49_Sub1_7798;
                     class348_sub49_sub1.pos = 0;
                     for (int i_46_ = i_40_; i_41_ > i_46_; i_46_++) {
                         if (-i_35_ <= -i_36_ + i_46_ && -i_36_ + i_46_ <= i_35_) {
@@ -190,7 +190,7 @@ final class Class104 {
                                 if ((-i_35_ <= -i_37_ + i_48_) && -i_37_ + i_48_ <= i_35_ && (bools[i_35_ + i_48_ - i_37_][i_35_ + i_46_ + -i_36_])) {
                                     short[] is = (aS_Sub2_1622.aShortArrayArray8267[i_47_]);
                                     if (is != null) {
-                                        if (aHa_Sub2_1616.aBoolean7775) {
+                                        if (aOpenGLToolkit_1616.aBoolean7775) {
                                             for (int i_50_ = 0; (i_50_ < is.length); i_50_++) {
                                                 i_43_++;
                                                 class348_sub49_sub1.writeShort((byte) 107, 0xffff & is[i_50_]);
@@ -228,7 +228,7 @@ final class Class104 {
         aClass232ArrayArray1623 = new Class232[anInt1618][anInt1625];
         for (int i_59_ = i; i_59_ < anInt1625; i_59_++) {
             for (int i_60_ = 0; anInt1618 > i_60_; i_60_++)
-                aClass232ArrayArray1623[i_60_][i_59_] = new Class232(aHa_Sub2_1616, this, aS_Sub2_1622, i_60_, i_59_, anInt1613, 1 + 128 * i_60_, 128 * i_59_ + 1);
+                aClass232ArrayArray1623[i_60_][i_59_] = new Class232(aOpenGLToolkit_1616, this, aS_Sub2_1622, i_60_, i_59_, anInt1613, 1 + 128 * i_60_, 128 * i_59_ + 1);
         }
     }
 
@@ -301,18 +301,18 @@ final class Class104 {
         Mesh.aIndex_1848 = null;
     }
 
-    Class104(ha_Sub2 var_ha_Sub2, s_Sub2 var_s_Sub2) {
+    Class104(OpenGLToolkit var_openGLToolkit, s_Sub2 var_s_Sub2) {
         try {
-            aHa_Sub2_1616 = var_ha_Sub2;
+            aOpenGLToolkit_1616 = var_openGLToolkit;
             aS_Sub2_1622 = var_s_Sub2;
-            this.anInt1624 = (aS_Sub2_1622.anInt4592 * aS_Sub2_1622.anInt4587 >> aHa_Sub2_1616.anInt7731) + 2;
-            anInt1612 = (aS_Sub2_1622.anInt4592 * aS_Sub2_1622.anInt4590 >> aHa_Sub2_1616.anInt7731) + 2;
-            anInt1613 = (-aS_Sub2_1622.anInt4588 + (7 + aHa_Sub2_1616.anInt7731));
+            this.anInt1624 = (aS_Sub2_1622.anInt4592 * aS_Sub2_1622.anInt4587 >> aOpenGLToolkit_1616.anInt7731) + 2;
+            anInt1612 = (aS_Sub2_1622.anInt4592 * aS_Sub2_1622.anInt4590 >> aOpenGLToolkit_1616.anInt7731) + 2;
+            anInt1613 = (-aS_Sub2_1622.anInt4588 + (7 + aOpenGLToolkit_1616.anInt7731));
             this.aByteArray1617 = new byte[this.anInt1624 * anInt1612];
             anInt1618 = aS_Sub2_1622.anInt4587 >> anInt1613;
             anInt1625 = aS_Sub2_1622.anInt4590 >> anInt1613;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("mha.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (var_s_Sub2 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("mha.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (var_s_Sub2 != null ? "{...}" : "null") + ')'));
         }
     }
 }

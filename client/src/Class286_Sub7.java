@@ -59,32 +59,32 @@ final class Class286_Sub7 extends Class286 {
         if (i_4_ >= -42) aClass258_Sub4_6285 = null;
         if ((0x1 & i) == 1) {
             if (aClass83_6278.aBoolean1442) {
-                this.aHa_Sub2_3684.method3771((byte) -83, aClass83_6278.aClass258_Sub1_1440);
+                this.aOpenGLToolkit_3684.method3771((byte) -83, aClass83_6278.aClass258_Sub1_1440);
                 Class160.aFloatArray2131[2] = 0.0F;
-                Class160.aFloatArray2131[3] = (float) ((this.aHa_Sub2_3684.anInt7735) % 4000) / 4000.0F;
+                Class160.aFloatArray2131[3] = (float) ((this.aOpenGLToolkit_3684.anInt7735) % 4000) / 4000.0F;
                 Class160.aFloatArray2131[0] = 0.0F;
                 Class160.aFloatArray2131[1] = 0.0F;
                 OpenGL.glTexGenfv(8194, 9473, Class160.aFloatArray2131, 0);
             } else {
-                int i_5_ = (16 * (this.aHa_Sub2_3684.anInt7735 % 4000) / 4000);
-                this.aHa_Sub2_3684.method3771((byte) -95, aClass83_6278.aClass258_Sub3Array1444[i_5_]);
+                int i_5_ = (16 * (this.aOpenGLToolkit_3684.anInt7735 % 4000) / 4000);
+                this.aOpenGLToolkit_3684.method3771((byte) -95, aClass83_6278.aClass258_Sub3Array1444[i_5_]);
             }
         } else if (aClass83_6278.aBoolean1442) {
-            this.aHa_Sub2_3684.method3771((byte) -126, (aClass83_6278.aClass258_Sub1_1440));
+            this.aOpenGLToolkit_3684.method3771((byte) -126, (aClass83_6278.aClass258_Sub1_1440));
             Class160.aFloatArray2131[0] = 0.0F;
             Class160.aFloatArray2131[2] = 0.0F;
             Class160.aFloatArray2131[1] = 0.0F;
             Class160.aFloatArray2131[3] = 0.0F;
             OpenGL.glTexGenfv(8194, 9473, Class160.aFloatArray2131, 0);
-        } else this.aHa_Sub2_3684.method3771((byte) -110, aClass83_6278.aClass258_Sub3Array1444[0]);
+        } else this.aOpenGLToolkit_3684.method3771((byte) -110, aClass83_6278.aClass258_Sub3Array1444[0]);
         anInt6291++;
     }
 
     final void method2134(boolean bool, boolean bool_6_) {
-        if (this.aHa_Sub2_3684.anInt7782 > 0) {
-            float f = -0.5F / (float) (this.aHa_Sub2_3684.anInt7782);
-            this.aHa_Sub2_3684.method3738(-15039, 1);
-            Class160.aFloatArray2131[3] = 0.25F + (this.aHa_Sub2_3684.aFloat7792) * f;
+        if (this.aOpenGLToolkit_3684.anInt7782 > 0) {
+            float f = -0.5F / (float) (this.aOpenGLToolkit_3684.anInt7782);
+            this.aOpenGLToolkit_3684.method3738(-15039, 1);
+            Class160.aFloatArray2131[3] = 0.25F + (this.aOpenGLToolkit_3684.aFloat7792) * f;
             Class160.aFloatArray2131[0] = 0.0F;
             Class160.aFloatArray2131[2] = f;
             Class160.aFloatArray2131[1] = 0.0F;
@@ -92,9 +92,9 @@ final class Class286_Sub7 extends Class286 {
             OpenGL.glLoadIdentity();
             OpenGL.glTexGenfv(8192, 9474, Class160.aFloatArray2131, 0);
             OpenGL.glPopMatrix();
-            this.aHa_Sub2_3684.method3744((float) this.aHa_Sub2_3684.anInt7782, 770, 0.5F);
-            this.aHa_Sub2_3684.method3771((byte) -99, aClass258_Sub4_6285);
-            this.aHa_Sub2_3684.method3738(-15039, 0);
+            this.aOpenGLToolkit_3684.method3744((float) this.aOpenGLToolkit_3684.anInt7782, 770, 0.5F);
+            this.aOpenGLToolkit_3684.method3771((byte) -99, aClass258_Sub4_6285);
+            this.aOpenGLToolkit_3684.method3738(-15039, 0);
         }
         anInt6286++;
         aClass61_6284.method594('\0', 28666);
@@ -114,15 +114,15 @@ final class Class286_Sub7 extends Class286 {
     }
 
     private final void method2167(int i) {
-        aClass61_6284 = new Class61(this.aHa_Sub2_3684, 2);
+        aClass61_6284 = new Class61(this.aOpenGLToolkit_3684, 2);
         anInt6283++;
         aClass61_6284.method595((byte) 109, 0);
-        this.aHa_Sub2_3684.method3738(i + 6366, 1);
-        this.aHa_Sub2_3684.method3729(7681, (byte) 98, 260);
-        this.aHa_Sub2_3684.method3762(34168, 768, (byte) -87, 0);
+        this.aOpenGLToolkit_3684.method3738(i + 6366, 1);
+        this.aOpenGLToolkit_3684.method3729(7681, (byte) 98, 260);
+        this.aOpenGLToolkit_3684.method3762(34168, 768, (byte) -87, 0);
         OpenGL.glTexGeni(8192, 9472, 9216);
         OpenGL.glEnable(3168);
-        this.aHa_Sub2_3684.method3738(-15039, 0);
+        this.aOpenGLToolkit_3684.method3738(-15039, 0);
         OpenGL.glTexEnvf(8960, 34163, 2.0F);
         if (aClass83_6278.aBoolean1442) {
             OpenGL.glTexGeni(8194, 9472, 9217);
@@ -133,12 +133,12 @@ final class Class286_Sub7 extends Class286 {
         }
         aClass61_6284.method591(-1);
         aClass61_6284.method595((byte) 117, 1);
-        this.aHa_Sub2_3684.method3738(-15039, 1);
+        this.aOpenGLToolkit_3684.method3738(-15039, 1);
         if (i != -21405) method2137(-18);
-        this.aHa_Sub2_3684.method3729(8448, (byte) -115, 8448);
-        this.aHa_Sub2_3684.method3762(5890, 768, (byte) -87, 0);
+        this.aOpenGLToolkit_3684.method3729(8448, (byte) -115, 8448);
+        this.aOpenGLToolkit_3684.method3762(5890, 768, (byte) -87, 0);
         OpenGL.glDisable(3168);
-        this.aHa_Sub2_3684.method3738(-15039, 0);
+        this.aOpenGLToolkit_3684.method3738(-15039, 0);
         OpenGL.glTexEnvf(8960, 34163, 1.0F);
         if (aClass83_6278.aBoolean1442) {
             OpenGL.glDisable(3170);
@@ -147,15 +147,15 @@ final class Class286_Sub7 extends Class286 {
         aClass61_6284.method591(i + 21404);
     }
 
-    Class286_Sub7(ha_Sub2 var_ha_Sub2, Class83 class83) {
-        super(var_ha_Sub2);
+    Class286_Sub7(OpenGLToolkit var_openGLToolkit, Class83 class83) {
+        super(var_openGLToolkit);
         try {
             aClass83_6278 = class83;
             method2167(-21405);
-            aClass258_Sub4_6285 = new Class258_Sub4(this.aHa_Sub2_3684, 6406, 2, new byte[]{0, -1}, 6406);
+            aClass258_Sub4_6285 = new Class258_Sub4(this.aOpenGLToolkit_3684, 6406, 2, new byte[]{0, -1}, 6406);
             aClass258_Sub4_6285.method1972((byte) -91, false);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("tn.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (class83 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("tn.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (class83 != null ? "{...}" : "null") + ')'));
         }
     }
 
@@ -178,14 +178,14 @@ final class Class286_Sub7 extends Class286 {
     final void method2133(int i) {
         aClass61_6284.method594('\001', 28666);
         anInt6282++;
-        if (this.aHa_Sub2_3684.anInt7782 > 0) {
-            this.aHa_Sub2_3684.method3738(-15039, 1);
-            this.aHa_Sub2_3684.method3771((byte) -115, null);
-            this.aHa_Sub2_3684.method3744(0.0F, 770, 1.0F);
-            this.aHa_Sub2_3684.method3738(-15039, 0);
+        if (this.aOpenGLToolkit_3684.anInt7782 > 0) {
+            this.aOpenGLToolkit_3684.method3738(-15039, 1);
+            this.aOpenGLToolkit_3684.method3771((byte) -115, null);
+            this.aOpenGLToolkit_3684.method3744(0.0F, 770, 1.0F);
+            this.aOpenGLToolkit_3684.method3738(-15039, 0);
         }
         if (i > -75) aClass258_Sub4_6285 = null;
-        this.aHa_Sub2_3684.method3729(8448, (byte) 102, 8448);
+        this.aOpenGLToolkit_3684.method3729(8448, (byte) 102, 8448);
         OpenGL.glMatrixMode(5890);
         OpenGL.glPopMatrix();
         OpenGL.glMatrixMode(5888);
@@ -214,7 +214,7 @@ final class Class286_Sub7 extends Class286 {
     }
 
     final void method2139(boolean bool, byte i) {
-        this.aHa_Sub2_3684.method3729(260, (byte) -94, 8448);
+        this.aOpenGLToolkit_3684.method3729(260, (byte) -94, 8448);
         anInt6279++;
         int i_18_ = 107 % ((-60 - i) / 38);
     }

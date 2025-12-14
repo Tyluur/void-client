@@ -8,16 +8,16 @@ import jaclib.memory.Stream;
 final class FontRenderer_Sub2 extends FontRenderer {
     private final Interface18_Impl3 anInterface18_Impl3_6492;
     private final boolean aBoolean6493;
-    private final ha_Sub3 aHa_Sub3_6494;
+    private final NativeToolkit aNativeToolkit_6494;
     private final Interface5_Impl1 anInterface5_Impl1_6495;
 
     final void method2578(char c, int i, int i_0_, int i_1_, boolean bool, aa var_aa, int i_2_, int i_3_) {
         /* empty */
     }
 
-    FontRenderer_Sub2(ha_Sub3 var_ha_Sub3, FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
-        super(var_ha_Sub3, fontMetrics);
-        aHa_Sub3_6494 = var_ha_Sub3;
+    FontRenderer_Sub2(NativeToolkit var_nativeToolkit, FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
+        super(var_nativeToolkit, fontMetrics);
+        aNativeToolkit_6494 = var_nativeToolkit;
         int i = 0;
         for (int i_4_ = 0; i_4_ < 256; i_4_++) {
             Class207 class207 = class207s[i_4_];
@@ -51,12 +51,12 @@ final class FontRenderer_Sub2 extends FontRenderer {
                     }
                 }
             }
-            if (!var_ha_Sub3.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aClass304_9471, (byte) 126)) {
+            if (!var_nativeToolkit.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aClass304_9471, (byte) 126)) {
                 int[] is_19_ = new int[is.length];
                 for (int i_20_ = 0; i_20_ < is.length; i_20_++)
                     is_19_[i_20_] = is[i_20_] << 24;
-                anInterface18_Impl3_6492 = var_ha_Sub3.method3839(i_5_, i_5_, -15137, false, is_19_);
-            } else anInterface18_Impl3_6492 = var_ha_Sub3.method3944(is, i_5_, (Class348_Sub40_Sub38.aClass304_9471), 2, false, i_5_);
+                anInterface18_Impl3_6492 = var_nativeToolkit.method3839(i_5_, i_5_, -15137, false, is_19_);
+            } else anInterface18_Impl3_6492 = var_nativeToolkit.method3944(is, i_5_, (Class348_Sub40_Sub38.aClass304_9471), 2, false, i_5_);
             aBoolean6493 = true;
         } else {
             int[] is = new int[i_5_ * i_5_];
@@ -90,16 +90,16 @@ final class FontRenderer_Sub2 extends FontRenderer {
                     }
                 }
             }
-            anInterface18_Impl3_6492 = var_ha_Sub3.method3839(i_5_, i_5_, -15137, false, is);
+            anInterface18_Impl3_6492 = var_nativeToolkit.method3839(i_5_, i_5_, -15137, false, is);
             aBoolean6493 = false;
         }
         anInterface18_Impl3_6492.method64(Class206.aClass209_4874, -22095);
-        anInterface5_Impl1_6495 = var_ha_Sub3.method3889(false, 16711680);
+        anInterface5_Impl1_6495 = var_nativeToolkit.method3889(false, 16711680);
         anInterface5_Impl1_6495.method20(20480, (byte) 126, 20);
         for (int i_36_ = 0; i_36_ < 4; i_36_++) {
             Buffer buffer = anInterface5_Impl1_6495.method19(true, 26775);
             if (buffer != null) {
-                Stream stream = aHa_Sub3_6494.method3893(buffer, 9179);
+                Stream stream = aNativeToolkit_6494.method3893(buffer, 9179);
                 float f = (anInterface18_Impl3_6492.method67((float) i_5_, 96) / (float) i_5_);
                 float f_37_ = (anInterface18_Impl3_6492.method71((byte) -45, (float) i_5_) / (float) i_5_);
                 for (int i_38_ = 0; i_38_ < 256; i_38_++) {
@@ -165,19 +165,19 @@ final class FontRenderer_Sub2 extends FontRenderer {
     }
 
     final void fa(char c, int i, int i_49_, int i_50_, boolean bool) {
-        aHa_Sub3_6494.method3927(true);
-        aHa_Sub3_6494.method3850((byte) -41, anInterface18_Impl3_6492);
+        aNativeToolkit_6494.method3927(true);
+        aNativeToolkit_6494.method3850((byte) -41, anInterface18_Impl3_6492);
         if (aBoolean6493 || bool) {
-            aHa_Sub3_6494.method3874(JavaThreadResource.aClass229_2207, 112, Class328_Sub3.aClass229_6519);
-            aHa_Sub3_6494.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
-            aHa_Sub3_6494.method3894(-28186, i_50_);
-        } else aHa_Sub3_6494.method3874(Class328_Sub3.aClass229_6519, 126, Class328_Sub3.aClass229_6519);
-        Class101_Sub2 class101_sub2 = aHa_Sub3_6494.method3934(-99);
+            aNativeToolkit_6494.method3874(JavaThreadResource.aClass229_2207, 112, Class328_Sub3.aClass229_6519);
+            aNativeToolkit_6494.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
+            aNativeToolkit_6494.method3894(-28186, i_50_);
+        } else aNativeToolkit_6494.method3874(Class328_Sub3.aClass229_6519, 126, Class328_Sub3.aClass229_6519);
+        Class101_Sub2 class101_sub2 = aNativeToolkit_6494.method3934(-99);
         class101_sub2.method894(i, i_49_, 0);
-        aHa_Sub3_6494.method3915(0);
-        aHa_Sub3_6494.method3925(54, anInterface5_Impl1_6495, 0);
-        aHa_Sub3_6494.method3862(0, aHa_Sub3_6494.aClass130_8204);
-        aHa_Sub3_6494.method3899(2, c * '\004', Class348_Sub42_Sub16.aClass21_9661, true);
-        if (aBoolean6493 || bool) aHa_Sub3_6494.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+        aNativeToolkit_6494.method3915(0);
+        aNativeToolkit_6494.method3925(54, anInterface5_Impl1_6495, 0);
+        aNativeToolkit_6494.method3862(0, aNativeToolkit_6494.aClass130_8204);
+        aNativeToolkit_6494.method3899(2, c * '\004', Class348_Sub42_Sub16.aClass21_9661, true);
+        if (aBoolean6493 || bool) aNativeToolkit_6494.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
     }
 }

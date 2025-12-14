@@ -27,37 +27,37 @@ final class Class233 {
     private int anInt3034;
     private final int[] anIntArray3035;
 
-    private final void method1649(ha_Sub2 var_ha_Sub2, int i, int i_0_) {
+    private final void method1649(OpenGLToolkit var_openGLToolkit, int i, int i_0_) {
         anInt3019++;
-        Class86.aFloat1478 = var_ha_Sub2.aFloat7768;
+        Class86.aFloat1478 = var_openGLToolkit.aFloat7768;
         if (i_0_ != 24484) method1655(null, -66, 67);
-        var_ha_Sub2.method3789((byte) -119, (float) i);
-        var_ha_Sub2.method3760(i_0_ + -24483);
+        var_openGLToolkit.method3789((byte) -119, (float) i);
+        var_openGLToolkit.method3760(i_0_ + -24483);
         OpenGL.glDisable(16384);
         OpenGL.glDisable(16385);
-        var_ha_Sub2.method3748(0, false);
+        var_openGLToolkit.method3748(0, false);
         OpenGL.glNormal3f(0.0F, -1.0F, 0.0F);
     }
 
-    private final void method1650(ha_Sub2 var_ha_Sub2, byte i) {
-        var_ha_Sub2.method3748(0, true);
+    private final void method1650(OpenGLToolkit var_openGLToolkit, byte i) {
+        var_openGLToolkit.method3748(0, true);
         anInt3016++;
         OpenGL.glEnable(16384);
         OpenGL.glEnable(16385);
         if (i != -5) aFloatArray3015 = null;
-        if (Class86.aFloat1478 != var_ha_Sub2.aFloat7768) var_ha_Sub2.xa(Class86.aFloat1478);
+        if (Class86.aFloat1478 != var_openGLToolkit.aFloat7768) var_openGLToolkit.xa(Class86.aFloat1478);
     }
 
-    final void method1651(ha_Sub2 var_ha_Sub2, byte i, int i_1_, Class98 class98) {
+    final void method1651(OpenGLToolkit var_openGLToolkit, byte i, int i_1_, Class98 class98) {
         try {
             anInt3017++;
-            if (var_ha_Sub2.aClass101_Sub3_7760 != null) {
-                if (i_1_ >= 0) method1649(var_ha_Sub2, i_1_, 24484);
-                else method1652(false, var_ha_Sub2);
-                float f = (var_ha_Sub2.aClass101_Sub3_7760.aFloat5756);
-                float f_2_ = (var_ha_Sub2.aClass101_Sub3_7760.aFloat5754);
-                float f_3_ = (var_ha_Sub2.aClass101_Sub3_7760.aFloat5784);
-                float f_4_ = (var_ha_Sub2.aClass101_Sub3_7760.aFloat5751);
+            if (var_openGLToolkit.aClass101_Sub3_7760 != null) {
+                if (i_1_ >= 0) method1649(var_openGLToolkit, i_1_, 24484);
+                else method1652(false, var_openGLToolkit);
+                float f = (var_openGLToolkit.aClass101_Sub3_7760.aFloat5756);
+                float f_2_ = (var_openGLToolkit.aClass101_Sub3_7760.aFloat5754);
+                float f_3_ = (var_openGLToolkit.aClass101_Sub3_7760.aFloat5784);
+                float f_4_ = (var_openGLToolkit.aClass101_Sub3_7760.aFloat5751);
                 try {
                     int i_5_ = 0;
                     int i_6_ = 2147483647;
@@ -114,30 +114,30 @@ final class Class233 {
                                 }
                             }
                         }
-                        if (i_13_ < 0) var_ha_Sub2.method3757(-1, -124);
-                        else var_ha_Sub2.method3757(i_13_, -100);
-                        if (!bool || (Class86.aFloat1478 == var_ha_Sub2.aFloat7768)) {
-                            if (var_ha_Sub2.aFloat7768 != 1.0F) var_ha_Sub2.xa(1.0F);
-                        } else var_ha_Sub2.xa(Class86.aFloat1478);
-                        method1655(var_ha_Sub2, i_10_, 785980556);
+                        if (i_13_ < 0) var_openGLToolkit.method3757(-1, -124);
+                        else var_openGLToolkit.method3757(i_13_, -100);
+                        if (!bool || (Class86.aFloat1478 == var_openGLToolkit.aFloat7768)) {
+                            if (var_openGLToolkit.aFloat7768 != 1.0F) var_openGLToolkit.xa(1.0F);
+                        } else var_openGLToolkit.xa(Class86.aFloat1478);
+                        method1655(var_openGLToolkit, i_10_, 785980556);
                     }
                 } catch (Exception exception) {
                     /* empty */
                 }
-                method1650(var_ha_Sub2, (byte) -5);
+                method1650(var_openGLToolkit, (byte) -5);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sn.G(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_1_ + ',' + (class98 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("sn.G(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_1_ + ',' + (class98 != null ? "{...}" : "null") + ')'));
         }
     }
 
-    private final void method1652(boolean bool, ha_Sub2 var_ha_Sub2) {
-        Class86.aFloat1478 = var_ha_Sub2.aFloat7768;
+    private final void method1652(boolean bool, OpenGLToolkit var_openGLToolkit) {
+        Class86.aFloat1478 = var_openGLToolkit.aFloat7768;
         anInt3021++;
-        var_ha_Sub2.method3784((byte) -62);
+        var_openGLToolkit.method3784((byte) -62);
         OpenGL.glDisable(16384);
         OpenGL.glDisable(16385);
-        var_ha_Sub2.method3748(0, bool);
+        var_openGLToolkit.method3748(0, bool);
         OpenGL.glNormal3f(0.0F, -1.0F, 0.0F);
     }
 
@@ -147,17 +147,17 @@ final class Class233 {
         if (i != 1489574736) aClass107_3022 = null;
     }
 
-    final void method1654(int i, ha_Sub2 var_ha_Sub2) {
+    final void method1654(int i, OpenGLToolkit var_openGLToolkit) {
         if (i == 643267468) {
             anInt3023++;
-            anInterface2_3027 = var_ha_Sub2.method3731(2, true, 24, null, 196584);
+            anInterface2_3027 = var_openGLToolkit.method3731(2, true, 24, null, 196584);
             aClass123_3025 = new Class123(anInterface2_3027, 5126, 2, 0);
             aClass123_3029 = new Class123(anInterface2_3027, 5126, 3, 8);
             aClass123_3028 = new Class123(anInterface2_3027, 5121, 4, 20);
         }
     }
 
-    private final void method1655(ha_Sub2 var_ha_Sub2, int i, int i_18_) {
+    private final void method1655(OpenGLToolkit var_openGLToolkit, int i, int i_18_) {
         anInt3018++;
         if (i_18_ == 785980556) {
             OpenGL.glGetFloatv(2982, aFloatArray3024, 0);
@@ -177,7 +177,7 @@ final class Class233 {
             float f_31_ = -f_19_ + f_22_;
             aClass348_Sub49_Sub1_3020.pos = 0;
             float f_32_ = -f_20_ + f_23_;
-            if (var_ha_Sub2.aBoolean7775) {
+            if (var_openGLToolkit.aBoolean7775) {
                 for (int i_56_ = i - 1; i_56_ >= 0; i_56_--) {
                     int i_57_ = (Math.min(anIntArray3033[i_56_], 64));
                     if (i_57_ > 0) {
@@ -390,8 +390,8 @@ final class Class233 {
             }
             if (aClass348_Sub49_Sub1_3020.pos != 0) {
                 anInterface2_3027.method11(24, aClass348_Sub49_Sub1_3020.pos, (aClass348_Sub49_Sub1_3020.aByteArray7154), -9894);
-                var_ha_Sub2.method3794(aClass123_3029, aClass123_3028, i_18_ + -786006967, aClass123_3025, null);
-                var_ha_Sub2.method3756((aClass348_Sub49_Sub1_3020.pos / 24), 7, 0, 120);
+                var_openGLToolkit.method3794(aClass123_3029, aClass123_3028, i_18_ + -786006967, aClass123_3025, null);
+                var_openGLToolkit.method3756((aClass348_Sub49_Sub1_3020.pos / 24), 7, 0, 120);
             }
         }
     }

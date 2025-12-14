@@ -5,7 +5,7 @@
 final class Class232 {
     private Class258_Sub3 aClass258_Sub3_2998;
     private final Class104 aClass104_2999;
-    private final ha_Sub2 aHa_Sub2_3000;
+    private final OpenGLToolkit aOpenGLToolkit_3000;
     private Interface8 anInterface8_3001;
     private final int anInt3002;
     private final int anInt3003;
@@ -22,7 +22,7 @@ final class Class232 {
     static int[] anIntArray3014 = new int[1];
 
     final void method1643(byte[] is, int i, int i_0_, byte i_1_) {
-        aClass119_Sub2_3011.method35(is, i, 110, aHa_Sub2_3000.method3785(i, 4) * i_0_);
+        aClass119_Sub2_3011.method35(is, i, 110, aOpenGLToolkit_3000.method3785(i, 4) * i_0_);
         anInt3005++;
         method1646(aClass119_Sub2_3011, 113, i_0_);
         if (i_1_ < 8) method1648((byte) 82);
@@ -43,8 +43,8 @@ final class Class232 {
         if (i_2_ != 0) {
             method1648((byte) 121);
             if (i <= 107) method1647(-124, -86);
-            aHa_Sub2_3000.method3771((byte) -93, aClass258_Sub3_2998);
-            aHa_Sub2_3000.method3759(i_2_, -128, 4, interface8, 0);
+            aOpenGLToolkit_3000.method3771((byte) -93, aClass258_Sub3_2998);
+            aOpenGLToolkit_3000.method3759(i_2_, -128, 4, interface8, 0);
         }
     }
 
@@ -55,9 +55,9 @@ final class Class232 {
         class348_sub42_sub15.method3251(-16058);
     }
 
-    Class232(ha_Sub2 var_ha_Sub2, Class104 class104, s_Sub2 var_s_Sub2, int i, int i_4_, int i_5_, int i_6_, int i_7_) {
+    Class232(OpenGLToolkit var_openGLToolkit, Class104 class104, s_Sub2 var_s_Sub2, int i, int i_4_, int i_5_, int i_6_, int i_7_) {
         try {
-            aHa_Sub2_3000 = var_ha_Sub2;
+            aOpenGLToolkit_3000 = var_openGLToolkit;
             aClass104_2999 = class104;
             anInt3003 = i_6_;
             anInt3002 = i_7_;
@@ -76,7 +76,7 @@ final class Class232 {
             if (i_9_ <= 0) aClass258_Sub3_2998 = null;
             else {
                 Packet packet = new Packet(i_9_ * 2);
-                if (aHa_Sub2_3000.aBoolean7775) {
+                if (aOpenGLToolkit_3000.aBoolean7775) {
                     for (int i_19_ = 0; i_8_ > i_19_; i_19_++) {
                         int i_20_ = (i_10_ + (i_19_ + i_11_) * var_s_Sub2.anInt4587);
                         for (int i_21_ = 0; i_8_ > i_21_; i_21_++) {
@@ -99,11 +99,11 @@ final class Class232 {
                         }
                     }
                 }
-                anInterface8_3001 = (aHa_Sub2_3000.method3733(5123, -39, packet.pos, packet.aByteArray7154, false));
-                aClass119_Sub2_3011 = new Class119_Sub2(aHa_Sub2_3000, 5123, null, 1);
+                anInterface8_3001 = (aOpenGLToolkit_3000.method3733(5123, -39, packet.pos, packet.aByteArray7154, false));
+                aClass119_Sub2_3011 = new Class119_Sub2(aOpenGLToolkit_3000, 5123, null, 1);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("sm.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (class104 != null ? "{...}" : "null") + ',' + (var_s_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("sm.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (class104 != null ? "{...}" : "null") + ',' + (var_s_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'));
         }
     }
 
@@ -112,7 +112,7 @@ final class Class232 {
         if (this.aBoolean3009) {
             this.aBoolean3009 = false;
             byte[] is = aClass104_2999.aByteArray1617;
-            byte[] is_23_ = aHa_Sub2_3000.aByteArray7879;
+            byte[] is_23_ = aOpenGLToolkit_3000.aByteArray7879;
             if (i > 115) {
                 int i_24_ = 0;
                 int i_25_ = aClass104_2999.anInt1624;
@@ -144,10 +144,10 @@ final class Class232 {
                         i_26_ += aClass104_2999.anInt1624 - 128;
                     }
                     if (aClass258_Sub3_2998 == null) {
-                        aClass258_Sub3_2998 = new Class258_Sub3(aHa_Sub2_3000, 3553, 6406, 128, 128, false, (aHa_Sub2_3000.aByteArray7879), 6406, false);
+                        aClass258_Sub3_2998 = new Class258_Sub3(aOpenGLToolkit_3000, 3553, 6406, 128, 128, false, (aOpenGLToolkit_3000.aByteArray7879), 6406, false);
                         aClass258_Sub3_2998.method1965(false, false, 10243);
                         aClass258_Sub3_2998.method1957(9728, true);
-                    } else aClass258_Sub3_2998.method1970(0, 0, 128, false, 0, 128, 6406, -69, aHa_Sub2_3000.aByteArray7879, 0);
+                    } else aClass258_Sub3_2998.method1970(0, 0, 128, false, 0, 128, 6406, -69, aOpenGLToolkit_3000.aByteArray7879, 0);
                 }
             }
         }

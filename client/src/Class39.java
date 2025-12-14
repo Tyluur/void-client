@@ -8,7 +8,7 @@ final class Class39 {
     static int anInt516;
     long aLong517;
     static Index aIndex_518;
-    private final Class377 aClass377_519;
+    private final OpenGLxToolkit aOpenGLxToolkit_519;
     static Class112 aClass112_520;
     static Class323 aClass323_521;
 
@@ -27,7 +27,7 @@ final class Class39 {
     }
 
     protected final void finalize() throws Throwable {
-        aClass377_519.method3966(this.aLong517, 34192);
+        aOpenGLxToolkit_519.method3966(this.aLong517, 34192);
         anInt516++;
         super.finalize();
     }
@@ -39,12 +39,12 @@ final class Class39 {
         if (i == -15833) aClass112_520 = null;
     }
 
-    Class39(Class377 class377, long l, int i) {
+    Class39(OpenGLxToolkit openGLxToolkit, long l, int i) {
         try {
             this.aLong517 = l;
-            aClass377_519 = class377;
+            aOpenGLxToolkit_519 = openGLxToolkit;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ifa.<init>(" + (class377 != null ? "{...}" : "null") + ',' + l + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ifa.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + l + ',' + i + ')'));
         }
     }
 }

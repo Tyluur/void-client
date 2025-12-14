@@ -15,7 +15,7 @@ final class Class367_Sub2 extends Class367 {
     private final Class193 aClass193_7293;
     private final Class269 aClass269_7294;
     static int anInt7295;
-    private Class377 aClass377_7296;
+    private OpenGLxToolkit aOpenGLxToolkit_7296;
     static int anInt7297 = 0;
 
     static final void method3536(int i, int i_0_, int i_1_, int i_2_, Class318_Sub1_Sub2 class318_sub1_sub2) {
@@ -44,7 +44,7 @@ final class Class367_Sub2 extends Class367 {
 
     final void method3527(int i, Interface18 interface18, int i_4_) {
         anInt7288++;
-        if (i_4_ != -16776) aClass377_7296 = null;
+        if (i_4_ != -16776) aOpenGLxToolkit_7296 = null;
     }
 
     final void method3525(int i, boolean bool) {
@@ -52,32 +52,32 @@ final class Class367_Sub2 extends Class367 {
             anInt7287++;
             OpenGL.glBindProgramARB(34336, aClass193_7293.anInt2584);
             OpenGL.glEnable(34336);
-            this.aHa_Sub3_4479.method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
+            this.aNativeToolkit_4479.method3849((byte) 47, 0, Class318_Sub1_Sub2.aClass70_8737);
         }
     }
 
-    Class367_Sub2(Class377 class377, Index index, Class269 class269) {
-        super(class377);
+    Class367_Sub2(OpenGLxToolkit openGLxToolkit, Index index, Class269 class269) {
+        super(openGLxToolkit);
         try {
-            aClass377_7296 = class377;
+            aOpenGLxToolkit_7296 = openGLxToolkit;
             aClass269_7294 = class269;
-            if (index == null || !aClass269_7294.method2039(100) || !aClass377_7296.aBoolean9923) aClass193_7293 = null;
-            else aClass193_7293 = za_Sub2.method3442(34336, index.method391("gl", "transparent_water", -29832), aClass377_7296, 4);
+            if (index == null || !aClass269_7294.method2039(100) || !aOpenGLxToolkit_7296.aBoolean9923) aClass193_7293 = null;
+            else aClass193_7293 = za_Sub2.method3442(34336, index.method391("gl", "transparent_water", -29832), aOpenGLxToolkit_7296, 4);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("ov.<init>(" + (class377 != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + (class269 != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("ov.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + (class269 != null ? "{...}" : "null") + ')'));
         }
     }
 
     final void method3521(boolean bool, byte i) {
         if (i != -103) aShortArrayArrayArray7290 = null;
-        this.aHa_Sub3_4479.method3874((Class348_Sub23_Sub2.aClass229_9011), 106, (Class328_Sub3.aClass229_6519));
+        this.aNativeToolkit_4479.method3874((Class348_Sub23_Sub2.aClass229_9011), 106, (Class328_Sub3.aClass229_6519));
         anInt7292++;
     }
 
     final void method3520(byte i) {
         anInt7295++;
         if (i == 87) {
-            this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+            this.aNativeToolkit_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
             OpenGL.glBindProgramARB(34336, 0);
             OpenGL.glDisable(34820);
             OpenGL.glDisable(34336);
@@ -93,12 +93,12 @@ final class Class367_Sub2 extends Class367 {
         anInt7286++;
         if (i == 10756) {
             if (aClass269_7294.aBoolean3458) {
-                float f = (float) ((this.aHa_Sub3_4479.anInt8146) % 4000) / 4000.0F;
-                this.aHa_Sub3_4479.method3850((byte) 79, aClass269_7294.anInterface18_Impl1_3452);
+                float f = (float) ((this.aNativeToolkit_4479.anInt8146) % 4000) / 4000.0F;
+                this.aNativeToolkit_4479.method3850((byte) 79, aClass269_7294.anInterface18_Impl1_3452);
                 OpenGL.glProgramLocalParameter4fARB(34336, 0, f, 0.0F, 0.0F, 1.0F);
             } else {
-                int i_7_ = (16 * (this.aHa_Sub3_4479.anInt8146 % 4000) / 4000);
-                this.aHa_Sub3_4479.method3850((byte) -118, (aClass269_7294.anInterface18_Impl3Array3459[i_7_]));
+                int i_7_ = (16 * (this.aNativeToolkit_4479.anInt8146 % 4000) / 4000);
+                this.aNativeToolkit_4479.method3850((byte) -118, (aClass269_7294.anInterface18_Impl3Array3459[i_7_]));
                 OpenGL.glProgramLocalParameter4fARB(34336, 0, 0.0F, 0.0F, 0.0F, 1.0F);
             }
         }

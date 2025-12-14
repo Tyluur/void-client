@@ -9,7 +9,7 @@ class Class328 {
     static int anInt4100;
     static int anInt4101;
 
-    static final Class39 method2608(Class377 class377, byte[] is, int i, int i_0_) {
+    static final Class39 method2608(OpenGLxToolkit openGLxToolkit, byte[] is, int i, int i_0_) {
         try {
             anInt4099++;
             if (is == null || is.length == 0) return null;
@@ -31,9 +31,9 @@ class Class328 {
                     return null;
                 }
             }
-            return new Class39(class377, l, i_0_);
+            return new Class39(openGLxToolkit, l, i_0_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("dea.E(" + (class377 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("dea.E(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ')'));
         }
     }
 

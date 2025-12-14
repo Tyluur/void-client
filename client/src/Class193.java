@@ -7,7 +7,7 @@ import java.awt.*;
 final class Class193 {
     static int anInt2583;
     int anInt2584;
-    private final Class377 aClass377_2585;
+    private final OpenGLxToolkit aOpenGLxToolkit_2585;
     static int anInt2586;
     static Class351 aClass351_2587 = new Class351(38, 7);
     static int anInt2588;
@@ -68,12 +68,12 @@ final class Class193 {
 
     protected final void finalize() throws Throwable {
         anInt2588++;
-        aClass377_2585.method3971(16386, this.anInt2584);
+        aOpenGLxToolkit_2585.method3971(16386, this.anInt2584);
         super.finalize();
     }
 
-    Class193(Class377 class377, int i, int i_3_) {
-        aClass377_2585 = class377;
+    Class193(OpenGLxToolkit openGLxToolkit, int i, int i_3_) {
+        aOpenGLxToolkit_2585 = openGLxToolkit;
         this.anInt2584 = i_3_;
     }
 

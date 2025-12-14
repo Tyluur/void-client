@@ -199,12 +199,12 @@ final class Canvas_Sub1 extends Canvas {
                 }
             }
             if (bool) {
-                if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3495.method2063(AnimBase.language, 544)) + "<br>(100%)"), 2, Class348_Sub8.aToolkit6654);
+                if (Class36.anInt489 != 0) Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, ((Class274.aClass274_3495.method2063(AnimBase.language, 544)) + "<br>(100%)"), 2, Class348_Sub8.active);
                 Class369_Sub1.method3570(false);
                 Class348_Sub18.method2938((byte) 102);
                 Option_Sub12.method1772(i ^ 0x41);
                 boolean bool_25_ = false;
-                if (Class348_Sub8.aToolkit6654.method3639() && Class316.clientOptions.aClass239_Sub18_7259.method1800(-32350) == 2) {
+                if (Class348_Sub8.active.method3639() && Class316.clientOptions.aClass239_Sub18_7259.method1800(-32350) == 2) {
                     for (int i_26_ = 0; (i_26_ < Class347.aByteArrayArray4281.length); i_26_++) {
                         if ((Class348_Sub23_Sub1.aByteArrayArray8996[i_26_] != null) || ModelParticleEmitter.aByteArrayArray1887[i_26_] != null) {
                             bool_25_ = true;
@@ -215,8 +215,8 @@ final class Canvas_Sub1 extends Canvas {
                 int i_27_;
                 if (Class316.clientOptions.aClass239_Sub16_7247.method1789(-32350) != 1) i_27_ = Class9.anIntArray168[Class348_Sub15.anInt6769];
                 else i_27_ = (Class286_Sub8.anIntArray6296[Class348_Sub15.anInt6769]);
-                if (Class348_Sub8.aToolkit6654.method3670()) i_27_++;
-                Class348_Sub42_Sub2.method3171(Class348_Sub8.aToolkit6654, Option_Sub16.anInt6012, 9, 4, Class367_Sub4.mapLength, Class348_Sub40_Sub3.mapWidth, i_27_, bool_25_, Class348_Sub8.aToolkit6654.method3704() > 0);
+                if (Class348_Sub8.active.method3670()) i_27_++;
+                Class348_Sub42_Sub2.method3171(Class348_Sub8.active, Option_Sub16.anInt6012, 9, 4, Class367_Sub4.mapLength, Class348_Sub40_Sub3.mapWidth, i_27_, bool_25_, Class348_Sub8.active.method3704() > 0);
                 Class348_Sub32.method3018(Class318_Sub1_Sub4_Sub2.anInt10096);
                 if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(Class240.aFontRenderer_4684);
                 else Class348_Sub48.method3328(null);
@@ -224,7 +224,7 @@ final class Canvas_Sub1 extends Canvas {
                     Class348_Sub45.collisionMaps[i_28_].method3500(i ^ 0x2bc);
                 Class52.method491((byte) -86);
                 Class101_Sub2.method921((byte) 99, false);
-                ha_Sub3.method3936(i + i);
+                NativeToolkit.method3936(i + i);
                 VarcTypeList.aClass305_3304 = null;
                 Class55_Sub1.aBoolean5265 = false;
                 Class369_Sub1.method3570(false);
@@ -254,10 +254,10 @@ final class Canvas_Sub1 extends Canvas {
                         Class289.method2193(true, (byte) -125);
                     }
                     TimedVarDomain.aClass237_Sub1_5067.method1679(0, 0, (Class338.aClass237_Sub1_4197.tileHeights[0]));
-                    TimedVarDomain.aClass237_Sub1_5067.method1685(Class348_Sub8.aToolkit6654, null, 21407, null);
+                    TimedVarDomain.aClass237_Sub1_5067.method1685(Class348_Sub8.active, null, 21407, null);
                     Class243.method1879(false);
                 }
-                Class338.aClass237_Sub1_4197.method1685(Class348_Sub8.aToolkit6654, (!bool_25_ ? null : (TimedVarDomain.aClass237_Sub1_5067.tileHeights)), 21407, Class348_Sub45.collisionMaps);
+                Class338.aClass237_Sub1_4197.method1685(Class348_Sub8.active, (!bool_25_ ? null : (TimedVarDomain.aClass237_Sub1_5067.tileHeights)), 21407, Class348_Sub45.collisionMaps);
                 if (Class312.anInt3931 == 0) {
                     Class289.method2193(true, (byte) -128);
                     Class122.method1090(Class14_Sub4.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197);
@@ -269,8 +269,8 @@ final class Canvas_Sub1 extends Canvas {
                 Class348_Sub18.method2938((byte) 66);
                 if (QuickChatCatTypeList.anInt2964 < 96) Class299_Sub2_Sub1.method2271(31268);
                 Class289.method2193(true, (byte) -119);
-                Class338.aClass237_Sub1_4197.method1680(null, (byte) -125, (!bool_25_ ? null : (Class332.aGroundArray4142[0])), Class348_Sub8.aToolkit6654);
-                Class338.aClass237_Sub1_4197.method1697(false, Class348_Sub8.aToolkit6654, -36);
+                Class338.aClass237_Sub1_4197.method1680(null, (byte) -125, (!bool_25_ ? null : (Class332.aGroundArray4142[0])), Class348_Sub8.active);
+                Class338.aClass237_Sub1_4197.method1697(false, Class348_Sub8.active, -36);
                 Class289.method2193(true, (byte) -122);
                 if (bool_25_) {
                     Class243.method1879(true);
@@ -279,8 +279,8 @@ final class Canvas_Sub1 extends Canvas {
                     else Class122.method1090((Class348_Sub23_Sub1.aByteArrayArray8996), i + 65536, TimedVarDomain.aClass237_Sub1_5067);
                     Class348_Sub18.method2938((byte) 73);
                     Class289.method2193(true, (byte) -121);
-                    TimedVarDomain.aClass237_Sub1_5067.method1680((Class348_Sub1_Sub1.aGroundArray8801[0]), (byte) -127, null, (Class348_Sub8.aToolkit6654));
-                    TimedVarDomain.aClass237_Sub1_5067.method1697(true, Class348_Sub8.aToolkit6654, i + -60);
+                    TimedVarDomain.aClass237_Sub1_5067.method1680((Class348_Sub1_Sub1.aGroundArray8801[0]), (byte) -127, null, (Class348_Sub8.active));
+                    TimedVarDomain.aClass237_Sub1_5067.method1697(true, Class348_Sub8.active, i + -60);
                     Class289.method2193(true, (byte) -126);
                     Class243.method1879(false);
                 }

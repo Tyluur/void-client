@@ -12,18 +12,18 @@ final class Class318_Sub4 extends Class318 {
     static int anInt6413;
     LabelBounds[] aClass318_Sub3Array6414;
 
-    static final aa_Sub2 method2501(int i, ha_Sub3 var_ha_Sub3, int[] is, byte i_0_, int[] is_1_, int i_2_) {
+    static final aa_Sub2 method2501(int i, NativeToolkit var_nativeToolkit, int[] is, byte i_0_, int[] is_1_, int i_2_) {
         try {
             if (i_0_ >= -32) method2502(null, -18);
             anInt6412++;
-            if (var_ha_Sub3.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aClass304_9471, (byte) 125)) {
+            if (var_nativeToolkit.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aClass304_9471, (byte) 125)) {
                 byte[] is_3_ = new byte[i * i_2_];
                 for (int i_4_ = 0; i > i_4_; i_4_++) {
                     int i_5_ = is[i_4_] + i_2_ * i_4_;
                     for (int i_6_ = 0; is_1_[i_4_] > i_6_; i_6_++)
                         is_3_[i_5_++] = (byte) -1;
                 }
-                return new aa_Sub2(var_ha_Sub3, i_2_, i, is_3_);
+                return new aa_Sub2(var_nativeToolkit, i_2_, i, is_3_);
             }
             int[] is_7_ = new int[i * i_2_];
             for (int i_8_ = 0; i > i_8_; i_8_++) {
@@ -31,9 +31,9 @@ final class Class318_Sub4 extends Class318 {
                 for (int i_10_ = 0; i_10_ < is_1_[i_8_]; i_10_++)
                     is_7_[i_9_++] = -16777216;
             }
-            return new aa_Sub2(var_ha_Sub3, i_2_, i, is_7_);
+            return new aa_Sub2(var_nativeToolkit, i_2_, i, is_7_);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("jda.A(" + i + ',' + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + i_0_ + ',' + (is_1_ != null ? "{...}" : "null") + ',' + i_2_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("jda.A(" + i + ',' + (var_nativeToolkit != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + i_0_ + ',' + (is_1_ != null ? "{...}" : "null") + ',' + i_2_ + ')'));
         }
     }
 

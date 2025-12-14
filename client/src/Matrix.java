@@ -110,15 +110,15 @@ abstract class Matrix {
 
     abstract void rotate(int i, int i_19_, int i_20_, int i_21_, int i_22_, int i_23_);
 
-    static final Class258_Sub3_Sub1 method904(int i, ha_Sub2 var_ha_Sub2, int i_24_, int i_25_, int i_26_) {
+    static final Class258_Sub3_Sub1 method904(int i, OpenGLToolkit var_openGLToolkit, int i_24_, int i_25_, int i_26_) {
         try {
             anInt1594++;
             if (i <= 42) method906(123);
-            if (var_ha_Sub2.aBoolean7793 || (Class192.method1436(82, i_25_) && Class192.method1436(81, i_26_))) return new Class258_Sub3_Sub1(var_ha_Sub2, 3553, i_24_, i_25_, i_26_);
-            if (var_ha_Sub2.aBoolean7837) return new Class258_Sub3_Sub1(var_ha_Sub2, 34037, i_24_, i_25_, i_26_);
-            return new Class258_Sub3_Sub1(var_ha_Sub2, i_24_, i_25_, i_26_, EnumTypeList.method340(i_25_, (byte) 108), EnumTypeList.method340(i_26_, (byte) 108));
+            if (var_openGLToolkit.aBoolean7793 || (Class192.method1436(82, i_25_) && Class192.method1436(81, i_26_))) return new Class258_Sub3_Sub1(var_openGLToolkit, 3553, i_24_, i_25_, i_26_);
+            if (var_openGLToolkit.aBoolean7837) return new Class258_Sub3_Sub1(var_openGLToolkit, 34037, i_24_, i_25_, i_26_);
+            return new Class258_Sub3_Sub1(var_openGLToolkit, i_24_, i_25_, i_26_, EnumTypeList.method340(i_25_, (byte) 108), EnumTypeList.method340(i_26_, (byte) 108));
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("bca.TA(" + i + ',' + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("bca.TA(" + i + ',' + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'));
         }
     }
 

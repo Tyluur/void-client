@@ -5,10 +5,10 @@
 final class n extends FontRenderer implements Interface19 {
     long nativeid;
 
-    private final native void S(oa var_oa, ya var_ya, byte[][] is, int[] is_0_, int[] is_1_, int[] is_2_, int[] is_3_, int[] is_4_);
+    private final native void S(SafeModeToolkit var_safeModeToolkit, ya var_ya, byte[][] is, int[] is_0_, int[] is_1_, int[] is_2_, int[] is_3_, int[] is_4_);
 
-    n(oa var_oa, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Sprite[] sprites) {
-        super(var_oa, fontMetrics);
+    n(SafeModeToolkit var_safeModeToolkit, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Sprite[] sprites) {
+        super(var_safeModeToolkit, fontMetrics);
         byte[][] is = new byte[class207s.length][];
         int[] is_5_ = new int[class207s.length];
         int[] is_6_ = new int[class207s.length];
@@ -21,7 +21,7 @@ final class n extends FontRenderer implements Interface19 {
             is_7_[i] = class207s[i].anInt2703;
             is_8_[i] = class207s[i].anInt2700;
         }
-        S(var_oa, var_ya, is, class207s[0].anIntArray2697, is_5_, is_6_, is_7_, is_8_);
+        S(var_safeModeToolkit, var_ya, is, class207s[0].anIntArray2697, is_5_, is_6_, is_7_, is_8_);
     }
 
     public final native void w(boolean bool);

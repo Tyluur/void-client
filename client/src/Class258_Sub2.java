@@ -23,10 +23,10 @@ final class Class258_Sub2 extends Class258 {
         anInt8535 = i_1_;
     }
 
-    Class258_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_4_) {
-        super(var_ha_Sub2, 34067, i, i_4_ * (i_4_ * 6), false);
+    Class258_Sub2(OpenGLToolkit var_openGLToolkit, int i, int i_4_) {
+        super(var_openGLToolkit, 34067, i, i_4_ * (i_4_ * 6), false);
         this.anInt8538 = i_4_;
-        this.aHa_Sub2_4851.method3771((byte) -81, this);
+        this.aOpenGLToolkit_4851.method3771((byte) -81, this);
         for (int i_5_ = 0; i_5_ < 6; i_5_++)
             OpenGL.glTexImage2Dub(i_5_ + 34069, 0, this.anInt4858, i_4_, i_4_, 0, Class348_Sub9.method2779(true, (this.anInt4858)), 5121, null, 0);
         this.method1957(9728, true);
@@ -40,34 +40,34 @@ final class Class258_Sub2 extends Class258 {
         anInt8536 = -1;
     }
 
-    Class258_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_6_, boolean bool, byte[][] is, int i_7_) {
-        super(var_ha_Sub2, 34067, i, i_6_ * (i_6_ * 6), bool);
+    Class258_Sub2(OpenGLToolkit var_openGLToolkit, int i, int i_6_, boolean bool, byte[][] is, int i_7_) {
+        super(var_openGLToolkit, 34067, i, i_6_ * (i_6_ * 6), bool);
         try {
             this.anInt8538 = i_6_;
-            this.aHa_Sub2_4851.method3771((byte) -127, this);
+            this.aOpenGLToolkit_4851.method3771((byte) -127, this);
             for (int i_8_ = 0; i_8_ < 6; i_8_++)
                 OpenGL.glTexImage2Dub(i_8_ + 34069, 0, this.anInt4858, i_6_, i_6_, 0, i_7_, 5121, is[i_8_], 0);
             this.method1957(9728, true);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("q.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (is != null ? "{...}" : "null") + ',' + i_7_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("q.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_6_ + ',' + bool + ',' + (is != null ? "{...}" : "null") + ',' + i_7_ + ')'));
         }
     }
 
-    Class258_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_9_, boolean bool, int[][] is) {
-        super(var_ha_Sub2, 34067, i, 6 * i_9_ * i_9_, bool);
+    Class258_Sub2(OpenGLToolkit var_openGLToolkit, int i, int i_9_, boolean bool, int[][] is) {
+        super(var_openGLToolkit, 34067, i, 6 * i_9_ * i_9_, bool);
         try {
             this.anInt8538 = i_9_;
-            this.aHa_Sub2_4851.method3771((byte) -77, this);
+            this.aOpenGLToolkit_4851.method3771((byte) -77, this);
             if (bool) {
                 for (int i_10_ = 0; i_10_ < 6; i_10_++)
-                    Class353.method3460(i_10_ + 34069, this.anInt4858, i_9_, this.aHa_Sub2_4851.anInt7812, i_9_, is[i_10_], 32993, -83);
+                    Class353.method3460(i_10_ + 34069, this.anInt4858, i_9_, this.aOpenGLToolkit_4851.anInt7812, i_9_, is[i_10_], 32993, -83);
             } else {
                 for (int i_11_ = 0; i_11_ < 6; i_11_++)
-                    OpenGL.glTexImage2Di(i_11_ + 34069, 0, this.anInt4858, i_9_, i_9_, 0, 32993, (this.aHa_Sub2_4851.anInt7812), is[i_11_], 0);
+                    OpenGL.glTexImage2Di(i_11_ + 34069, 0, this.anInt4858, i_9_, i_9_, 0, 32993, (this.aOpenGLToolkit_4851.anInt7812), is[i_11_], 0);
             }
             this.method1957(9728, true);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("q.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_9_ + ',' + bool + ',' + (is != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("q.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_9_ + ',' + bool + ',' + (is != null ? "{...}" : "null") + ')'));
         }
     }
 

@@ -58,13 +58,13 @@ abstract class Class348_Sub23 extends Node {
         anInt6866++;
         QuestTypeList.method1406(true);
         if (i == 0) {
-            Class348_Sub8.aToolkit6654 = Class104.method958(true, 0, Class348_Sub40_Sub4.js5TextureSource, Class316.clientOptions.aClass239_Sub20_7248.method1808(-32350) * 2, Class305.aCanvas3869, Class136.SHADERS);
+            Class348_Sub8.active = Class104.method958(true, 0, Class348_Sub40_Sub4.js5TextureSource, Class316.clientOptions.aClass239_Sub20_7248.method1808(-32350) * 2, Class305.aCanvas3869, Class136.SHADERS);
             if (string != null) {
-                Class348_Sub8.aToolkit6654.GA(0);
+                Class348_Sub8.active.GA(0);
                 FontMetrics fontMetrics = Option_Sub23.getFontMetrics(AnimationType.anInt235, 0, -117, Class104.FONT_INDEX);
-                FontRenderer fontRenderer = (Class348_Sub8.aToolkit6654.method3686(fontMetrics, Class207.method1519(Class21.SPRITES, AnimationType.anInt235, 0), true));
+                FontRenderer fontRenderer = (Class348_Sub8.active.method3686(fontMetrics, Class207.method1519(Class21.SPRITES, AnimationType.anInt235, 0), true));
                 Class140.method1170((byte) -89);
-                Class362.method3511(true, fontRenderer, fontMetrics, string, 2, Class348_Sub8.aToolkit6654);
+                Class362.method3511(true, fontRenderer, fontMetrics, string, 2, Class348_Sub8.active);
             }
         } else {
             Toolkit var_toolkit = null;
@@ -77,7 +77,7 @@ abstract class Class348_Sub23 extends Node {
                 Class362.method3511(true, fontRenderer, fontMetrics, string, i_1_ + 2, var_toolkit);
             }
             try {
-                Class348_Sub8.aToolkit6654 = Class104.method958(true, i, Class348_Sub40_Sub4.js5TextureSource, 2 * Class316.clientOptions.aClass239_Sub20_7248.method1808(i_1_ + -32350), Class305.aCanvas3869, Class136.SHADERS);
+                Class348_Sub8.active = Class104.method958(true, i, Class348_Sub40_Sub4.js5TextureSource, 2 * Class316.clientOptions.aClass239_Sub20_7248.method1808(i_1_ + -32350), Class305.aCanvas3869, Class136.SHADERS);
                 if (string != null) {
                     var_toolkit.GA(0);
                     FontMetrics fontMetrics = Option_Sub23.getFontMetrics(AnimationType.anInt235, 0, -51, Class104.FONT_INDEX);
@@ -85,17 +85,17 @@ abstract class Class348_Sub23 extends Node {
                     Class140.method1170((byte) -26);
                     Class362.method3511(true, fontRenderer, fontMetrics, string, i_1_ + 2, var_toolkit);
                 }
-                if (Class348_Sub8.aToolkit6654.method3693()) {
+                if (Class348_Sub8.active.method3693()) {
                     boolean bool_2_ = true;
                     try {
-                        bool_2_ = (Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609) > 256;
+                        bool_2_ = (Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory) > 256;
                     } catch (Throwable throwable) {
                         /* empty */
                     }
                     za var_za;
-                    if (!bool_2_) var_za = Class348_Sub8.aToolkit6654.method3702(104857600);
-                    else var_za = Class348_Sub8.aToolkit6654.method3702(146800640);
-                    Class348_Sub8.aToolkit6654.method3651(var_za);
+                    if (!bool_2_) var_za = Class348_Sub8.active.method3702(104857600);
+                    else var_za = Class348_Sub8.active.method3702(146800640);
+                    Class348_Sub8.active.method3651(var_za);
                 }
             } catch (Throwable throwable) {
                 int i_3_ = Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350);
@@ -116,14 +116,14 @@ abstract class Class348_Sub23 extends Node {
         Class316.clientOptions.aClass239_Sub25_7271.method1826(!bool, -142238264);
         Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7271), i);
         Packet.method3354(i_1_ + -78);
-        Class348_Sub8.aToolkit6654.method3650(10000);
-        Class348_Sub8.aToolkit6654.X(32);
-        Class157.aMatrix_2123 = Class348_Sub8.aToolkit6654.method3654();
-        Class50_Sub1.aMatrix_5209 = Class348_Sub8.aToolkit6654.method3654();
+        Class348_Sub8.active.method3650(10000);
+        Class348_Sub8.active.X(32);
+        Class157.aMatrix_2123 = Class348_Sub8.active.method3654();
+        Class50_Sub1.aMatrix_5209 = Class348_Sub8.active.method3654();
         Class290.method2196((byte) -9);
-        Class348_Sub8.aToolkit6654.method3630(Class316.clientOptions.aClass239_Sub2_7228.method1726(-32350) == 1);
-        if (Class348_Sub8.aToolkit6654.method3627()) Class348_Sub40_Sub33.method3137(Class316.clientOptions.aClass239_Sub12_7243.method1771(-32350) == 1, (byte) -24);
-        Class97.method873(Class367_Sub4.mapLength >> 3, 21719, Class348_Sub8.aToolkit6654, Class348_Sub40_Sub3.mapWidth >> 3);
+        Class348_Sub8.active.method3630(Class316.clientOptions.aClass239_Sub2_7228.method1726(-32350) == 1);
+        if (Class348_Sub8.active.method3627()) Class348_Sub40_Sub33.method3137(Class316.clientOptions.aClass239_Sub12_7243.method1771(-32350) == 1, (byte) -24);
+        Class97.method873(Class367_Sub4.mapLength >> 3, 21719, Class348_Sub8.active, Class348_Sub40_Sub3.mapWidth >> 3);
         Class76.method773(true);
         r.aBoolean9719 = false;
         Class228.aClass57Array2974 = null;

@@ -4,7 +4,7 @@
 
 abstract class Class367 {
     static int anInt4478;
-    ha_Sub3 aHa_Sub3_4479;
+    NativeToolkit aNativeToolkit_4479;
     static int anInt4480;
     static int anInt4481;
     static int anInt4482;
@@ -26,13 +26,13 @@ abstract class Class367 {
         anInt4482++;
     }
 
-    Class367(ha_Sub3 var_ha_Sub3) {
-        this.aHa_Sub3_4479 = var_ha_Sub3;
+    Class367(NativeToolkit var_nativeToolkit) {
+        this.aNativeToolkit_4479 = var_nativeToolkit;
     }
 
     void method3524(int i) {
         anInt4483++;
-        if (i != -14775) this.aHa_Sub3_4479 = null;
+        if (i != -14775) this.aNativeToolkit_4479 = null;
     }
 
     abstract void method3525(int i, boolean bool);
@@ -42,7 +42,7 @@ abstract class Class367 {
     abstract void method3527(int i, Interface18 interface18, int i_2_);
 
     void method3528(int i) {
-        if (i < 45) this.aHa_Sub3_4479 = null;
+        if (i < 45) this.aNativeToolkit_4479 = null;
         anInt4481++;
     }
 
@@ -51,7 +51,7 @@ abstract class Class367 {
         Class318_Sub6 class318_sub6 = (Class318_Sub6) Class62.aClass243_1114.method1875(60);
         if (i != 32564) method3529(-38);
         if (class318_sub6 != null) {
-            Class365.anInt4474--;
+            Renderer.anInt4474--;
             return class318_sub6;
         }
         return new Class318_Sub6();
@@ -61,7 +61,7 @@ abstract class Class367 {
 
     void method3531(boolean bool) {
         anInt4480++;
-        if (bool != false) this.aHa_Sub3_4479 = null;
+        if (bool != false) this.aNativeToolkit_4479 = null;
     }
 
     void method3532(int i) {

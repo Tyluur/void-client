@@ -50,7 +50,7 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
         return (int) this.aLong4291;
     }
 
-    static final Class242 method3249(int i, int i_0_, ha_Sub2 var_ha_Sub2, String string) {
+    static final Class242 method3249(int i, int i_0_, OpenGLToolkit var_openGLToolkit, String string) {
         try {
             anInt9656++;
             int i_1_ = -89 / ((29 - i_0_) / 47);
@@ -71,9 +71,9 @@ final class Class348_Sub42_Sub15 extends Class348_Sub42 {
                     return null;
                 }
             }
-            return new Class242(var_ha_Sub2, l, i);
+            return new Class242(var_openGLToolkit, l, i);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("et.G(" + i + ',' + i_0_ + ',' + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("et.G(" + i + ',' + i_0_ + ',' + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ')'));
         }
     }
 

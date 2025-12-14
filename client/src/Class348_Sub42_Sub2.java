@@ -8,7 +8,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
     static int anInt8561;
     private int anInt8562 = -1;
     private int anInt8563 = -1;
-    private final ha_Sub2 aHa_Sub2_8564;
+    private final OpenGLToolkit aOpenGLToolkit_8564;
     int anInt8565;
     static int anInt8566;
     private final int anInt8567;
@@ -120,7 +120,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
     final void method3172(int i) {
         anInt8566++;
         if (anInt8569 > 0) {
-            aHa_Sub2_8564.method3810(anInt8569, anInt8571, -101);
+            aOpenGLToolkit_8564.method3810(anInt8569, anInt8571, -101);
             anInt8569 = 0;
         }
         if (i != 4) method3171(null, 57, 49, -22, 43, -43, -45, true, true);
@@ -141,35 +141,35 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
         anInt8563 = -1;
     }
 
-    Class348_Sub42_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_11_, int i_12_) {
+    Class348_Sub42_Sub2(OpenGLToolkit var_openGLToolkit, int i, int i_11_, int i_12_) {
         try {
             this.anInt8572 = i_11_;
-            aHa_Sub2_8564 = var_ha_Sub2;
+            aOpenGLToolkit_8564 = var_openGLToolkit;
             this.anInt8565 = i_12_;
             anInt8567 = i;
             OpenGL.glGenRenderbuffersEXT(1, Class348_Sub40_Sub34.anIntArray9431, 0);
             anInt8569 = Class348_Sub40_Sub34.anIntArray9431[0];
             OpenGL.glBindRenderbufferEXT(36161, anInt8569);
             OpenGL.glRenderbufferStorageEXT(36161, anInt8567, (this.anInt8572), (this.anInt8565));
-            anInt8571 = (this.anInt8565 * this.anInt8572 * aHa_Sub2_8564.method3798(anInt8567, 2));
+            anInt8571 = (this.anInt8565 * this.anInt8572 * aOpenGLToolkit_8564.method3798(anInt8567, 2));
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kw.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_11_ + ',' + i_12_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kw.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_11_ + ',' + i_12_ + ')'));
         }
     }
 
-    Class348_Sub42_Sub2(ha_Sub2 var_ha_Sub2, int i, int i_13_, int i_14_, int i_15_) {
+    Class348_Sub42_Sub2(OpenGLToolkit var_openGLToolkit, int i, int i_13_, int i_14_, int i_15_) {
         try {
             this.anInt8572 = i_13_;
             anInt8567 = i;
             this.anInt8565 = i_14_;
-            aHa_Sub2_8564 = var_ha_Sub2;
+            aOpenGLToolkit_8564 = var_openGLToolkit;
             OpenGL.glGenRenderbuffersEXT(1, Class348_Sub40_Sub34.anIntArray9431, 0);
             anInt8569 = Class348_Sub40_Sub34.anIntArray9431[0];
             OpenGL.glBindRenderbufferEXT(36161, anInt8569);
             OpenGL.glRenderbufferStorageMultisampleEXT(36161, i_15_, anInt8567, this.anInt8572, this.anInt8565);
-            anInt8571 = (this.anInt8565 * this.anInt8572 * aHa_Sub2_8564.method3798(anInt8567, 2));
+            anInt8571 = (this.anInt8565 * this.anInt8572 * aOpenGLToolkit_8564.method3798(anInt8567, 2));
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kw.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kw.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ')'));
         }
     }
 }

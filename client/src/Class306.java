@@ -15,7 +15,7 @@ final class Class306 {
         try {
             if (i != -6) method2297(23, -44, null, null, -57);
             anInt3875++;
-            return new oa(canvas, var_d, i_1_, i_0_);
+            return new SafeModeToolkit(canvas, var_d, i_1_, i_0_);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ws.C(" + i + ',' + i_0_ + ',' + (var_d != null ? "{...}" : "null") + ',' + (canvas != null ? "{...}" : "null") + ',' + i_1_ + ')'));
         }

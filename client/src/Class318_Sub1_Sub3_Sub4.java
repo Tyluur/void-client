@@ -75,9 +75,9 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         if (bool != true) aClass46_10336 = null;
         class318_sub6.aClass318_Sub1_Sub3_Sub3_6431 = null;
         anInt10361++;
-        if (Class365.anInt4474 < 20) {
+        if (Renderer.anInt4474 < 20) {
             Class62.aClass243_1114.method1869(-89, class318_sub6);
-            Class365.anInt4474++;
+            Renderer.anInt4474++;
         }
     }
 

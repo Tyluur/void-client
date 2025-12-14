@@ -6,7 +6,7 @@ final class Class354 {
     static int anInt4352;
     static int anInt4353;
     static int anInt4354;
-    private final ha_Sub2 aHa_Sub2_4355;
+    private final OpenGLToolkit aOpenGLToolkit_4355;
     static int[][][] anIntArrayArrayArray4356;
     static int anInt4357;
     static int anInt4358;
@@ -92,16 +92,16 @@ final class Class354 {
         if (object != null) return (Class258_Sub3) object;
         if (!aD4359.method4(-7953, i)) return null;
         TextureMetrics textureMetrics = aD4359.getMetrics(i, -6662);
-        int i_5_ = (!textureMetrics.aBoolean199 ? aHa_Sub2_4355.anInt7712 : 64);
+        int i_5_ = (!textureMetrics.aBoolean199 ? aOpenGLToolkit_4355.anInt7712 : 64);
         Class258_Sub3 class258_sub3;
-        if (textureMetrics.aBoolean218 && aHa_Sub2_4355.method3666()) {
+        if (textureMetrics.aBoolean218 && aOpenGLToolkit_4355.method3666()) {
             float[] fs = aD4359.method1(i_5_, 0.7F, false, -30824, i_5_, i);
-            class258_sub3 = new Class258_Sub3(aHa_Sub2_4355, 3553, 34842, i_5_, i_5_, textureMetrics.aByte205 != 0, fs, 6408);
+            class258_sub3 = new Class258_Sub3(aOpenGLToolkit_4355, 3553, 34842, i_5_, i_5_, textureMetrics.aByte205 != 0, fs, 6408);
         } else {
             int[] is;
             if (textureMetrics.alphaBlendMode == 2 || !Class251.method1915((byte) 4, textureMetrics.effectType)) is = aD4359.method6(-21540, i_5_, 0.7F, i, false, i_5_);
             else is = aD4359.method5(true, i, 0.7F, i_5_, i_5_, i_4_ + -196);
-            class258_sub3 = new Class258_Sub3(aHa_Sub2_4355, 3553, 6408, i_5_, i_5_, textureMetrics.aByte205 != 0, is, 0, 0, false);
+            class258_sub3 = new Class258_Sub3(aOpenGLToolkit_4355, 3553, 6408, i_5_, i_5_, textureMetrics.aByte205 != 0, is, 0, 0, false);
         }
         class258_sub3.method1965(textureMetrics.aBoolean215, textureMetrics.aBoolean217, 10243);
         if (i_4_ != 256) method3466(22);
@@ -121,12 +121,12 @@ final class Class354 {
         }
     }
 
-    Class354(ha_Sub2 var_ha_Sub2, TextureSource var_d) {
+    Class354(OpenGLToolkit var_openGLToolkit, TextureSource var_d) {
         try {
-            aHa_Sub2_4355 = var_ha_Sub2;
+            aOpenGLToolkit_4355 = var_openGLToolkit;
             aD4359 = var_d;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("eo.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("eo.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (var_d != null ? "{...}" : "null") + ')'));
         }
     }
 }

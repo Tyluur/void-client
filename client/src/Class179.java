@@ -32,7 +32,7 @@ final class Class179 {
                 AnimationType.aBoolean247 = true;
             }
         }
-        if (bool) return ha_Sub3.method3873(is, 0);
+        if (bool) return NativeToolkit.method3873(is, 0);
         return is;
     }
 
@@ -58,7 +58,7 @@ final class Class179 {
         try {
             anInt2369++;
             if (bool_3_) {
-                if (Class297.aString3803.startsWith("win") && class297.aBoolean3777) {
+                if (Class297.osNameLower.startsWith("win") && class297.aBoolean3777) {
                     String string_4_ = null;
                     if (Class93.anApplet1530 != null) string_4_ = Class93.anApplet1530.getParameter("haveie6");
                     if (string_4_ == null || !string_4_.equals("1")) {
@@ -69,7 +69,7 @@ final class Class179 {
                         return;
                     }
                 }
-                if (Class297.aString3803.startsWith("mac")) {
+                if (Class297.osNameLower.startsWith("mac")) {
                     String string_5_ = null;
                     if (Class93.anApplet1530 != null) string_5_ = Class93.anApplet1530.getParameter("havefirefox");
                     if (string_5_ != null && string_5_.equals("1") && bool) {

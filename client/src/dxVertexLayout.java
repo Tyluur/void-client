@@ -8,8 +8,8 @@ import jagdx.VertexElementCollection;
 public class dxVertexLayout extends Class130 {
     IDirect3DVertexDeclaration anIDirect3DVertexDeclaration5803;
 
-    dxVertexLayout(Class378 class378, Class58[] class58s) {
-        VertexElementCollection vertexelementcollection = new VertexElementCollection(class378.aHb9788);
+    dxVertexLayout(DirectXToolkit directXToolkit, Class58[] class58s) {
+        VertexElementCollection vertexelementcollection = new VertexElementCollection(directXToolkit.aHb9788);
         int i = 0;
         for (int i_0_ = 0; i_0_ < class58s.length; i_0_++) {
             int i_1_ = 0;
@@ -29,6 +29,6 @@ public class dxVertexLayout extends Class130 {
             }
         }
         vertexelementcollection.finish();
-        this.anIDirect3DVertexDeclaration5803 = class378.anIDirect3DDevice9810.a(vertexelementcollection, null);
+        this.anIDirect3DVertexDeclaration5803 = directXToolkit.anIDirect3DDevice9810.a(vertexelementcollection, null);
     }
 }

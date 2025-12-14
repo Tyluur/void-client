@@ -22,10 +22,10 @@ final class Class367_Sub4 extends Class367 {
     static Class114 aClass114_7324 = new Class114(96, 8);
     static Class107 aClass107_7325 = new Class107();
 
-    Class367_Sub4(ha_Sub3 var_ha_Sub3) {
-        super(var_ha_Sub3);
-        if (var_ha_Sub3.aBoolean8101) {
-            aBoolean7311 = var_ha_Sub3.anInt8090 < 3;
+    Class367_Sub4(NativeToolkit var_nativeToolkit) {
+        super(var_nativeToolkit);
+        if (var_nativeToolkit.aBoolean8101) {
+            aBoolean7311 = var_nativeToolkit.anInt8090 < 3;
             int i = aBoolean7311 ? 48 : 127;
             int[][] is = new int[6][4096];
             int[][] is_0_ = new int[6][4096];
@@ -64,9 +64,9 @@ final class Class367_Sub4 extends Class367 {
                 }
             }
             anInterface18_Impl2Array7315 = new Interface18_Impl2[3];
-            anInterface18_Impl2Array7315[0] = this.aHa_Sub3_4479.method3900(is_0_, false, 52, 64);
-            anInterface18_Impl2Array7315[1] = this.aHa_Sub3_4479.method3900(is_1_, false, 3, 64);
-            anInterface18_Impl2Array7315[2] = this.aHa_Sub3_4479.method3900(is, false, 17, 64);
+            anInterface18_Impl2Array7315[0] = this.aNativeToolkit_4479.method3900(is_0_, false, 52, 64);
+            anInterface18_Impl2Array7315[1] = this.aNativeToolkit_4479.method3900(is_1_, false, 3, 64);
+            anInterface18_Impl2Array7315[2] = this.aNativeToolkit_4479.method3900(is, false, 17, 64);
         }
     }
 
@@ -86,64 +86,64 @@ final class Class367_Sub4 extends Class367 {
     final void method3525(int i, boolean bool) {
         if (i != 15192) method3527(-85, null, -72);
         if (anInterface18_Impl2Array7315 != null && bool) {
-            this.aHa_Sub3_4479.method3897(1, -4382);
-            this.aHa_Sub3_4479.method3871(Class31.aClass113_430, 0);
-            Class101_Sub2 class101_sub2 = this.aHa_Sub3_4479.method3820(false);
+            this.aNativeToolkit_4479.method3897(1, -4382);
+            this.aNativeToolkit_4479.method3871(Class31.aClass113_430, 0);
+            Class101_Sub2 class101_sub2 = this.aNativeToolkit_4479.method3820(false);
             class101_sub2.method899(1024);
-            this.aHa_Sub3_4479.method3853(-32, Class348_Sub40_Sub38.aClass251_9477);
+            this.aNativeToolkit_4479.method3853(-32, Class348_Sub40_Sub38.aClass251_9477);
             if (aBoolean7311) {
-                this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 113, (Class348_Sub23_Sub2.aClass229_9011));
-                this.aHa_Sub3_4479.method3924(true, false, 0, ModelParticleEffector.aClass70_4247, false);
-                this.aHa_Sub3_4479.method3885(0, true, Class285_Sub2.aClass70_8503);
+                this.aNativeToolkit_4479.method3874((Class328_Sub3.aClass229_6519), 113, (Class348_Sub23_Sub2.aClass229_9011));
+                this.aNativeToolkit_4479.method3924(true, false, 0, ModelParticleEffector.aClass70_4247, false);
+                this.aNativeToolkit_4479.method3885(0, true, Class285_Sub2.aClass70_8503);
             } else {
-                this.aHa_Sub3_4479.method3874((JavaThreadResource.aClass229_2207), 117, (Class328_Sub3.aClass229_6519));
-                this.aHa_Sub3_4479.method3849((byte) 47, 0, (Class318_Sub1_Sub2.aClass70_8737));
-                this.aHa_Sub3_4479.method3897(2, -4382);
-                this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 122, (Class348_Sub23_Sub2.aClass229_9011));
-                this.aHa_Sub3_4479.method3849((byte) 47, 0, (Class318_Sub1_Sub2.aClass70_8737));
-                this.aHa_Sub3_4479.method3924(true, false, 1, (Class318_Sub1_Sub2.aClass70_8737), false);
-                this.aHa_Sub3_4479.method3885(0, true, Class285_Sub2.aClass70_8503);
-                this.aHa_Sub3_4479.method3850((byte) -61, (this.aHa_Sub3_4479.anInterface18_8147));
+                this.aNativeToolkit_4479.method3874((JavaThreadResource.aClass229_2207), 117, (Class328_Sub3.aClass229_6519));
+                this.aNativeToolkit_4479.method3849((byte) 47, 0, (Class318_Sub1_Sub2.aClass70_8737));
+                this.aNativeToolkit_4479.method3897(2, -4382);
+                this.aNativeToolkit_4479.method3874((Class328_Sub3.aClass229_6519), 122, (Class348_Sub23_Sub2.aClass229_9011));
+                this.aNativeToolkit_4479.method3849((byte) 47, 0, (Class318_Sub1_Sub2.aClass70_8737));
+                this.aNativeToolkit_4479.method3924(true, false, 1, (Class318_Sub1_Sub2.aClass70_8737), false);
+                this.aNativeToolkit_4479.method3885(0, true, Class285_Sub2.aClass70_8503);
+                this.aNativeToolkit_4479.method3850((byte) -61, (this.aNativeToolkit_4479.anInterface18_8147));
             }
-            this.aHa_Sub3_4479.method3897(0, i + -19574);
+            this.aNativeToolkit_4479.method3897(0, i + -19574);
             aBoolean7317 = true;
-        } else this.aHa_Sub3_4479.method3885(0, true, Class285_Sub2.aClass70_8503);
+        } else this.aNativeToolkit_4479.method3885(0, true, Class285_Sub2.aClass70_8503);
         anInt7313++;
     }
 
     final void method3527(int i, Interface18 interface18, int i_12_) {
         anInt7316++;
-        this.aHa_Sub3_4479.method3850((byte) 91, interface18);
-        this.aHa_Sub3_4479.method3923(true, i);
+        this.aNativeToolkit_4479.method3850((byte) 91, interface18);
+        this.aNativeToolkit_4479.method3923(true, i);
         if (i_12_ != -16776) method3525(61, true);
     }
 
     final void method3520(byte i) {
         if (aBoolean7317) {
-            this.aHa_Sub3_4479.method3897(1, i ^ ~0x114a);
-            this.aHa_Sub3_4479.method3850((byte) -121, null);
-            this.aHa_Sub3_4479.method3871(IDKTypeList.aClass113_2047, 0);
-            this.aHa_Sub3_4479.method3879(-8629);
+            this.aNativeToolkit_4479.method3897(1, i ^ ~0x114a);
+            this.aNativeToolkit_4479.method3850((byte) -121, null);
+            this.aNativeToolkit_4479.method3871(IDKTypeList.aClass113_2047, 0);
+            this.aNativeToolkit_4479.method3879(-8629);
             if (aBoolean7311) {
-                this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, 120, JavaThreadResource.aClass229_2207);
-                this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-                this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
+                this.aNativeToolkit_4479.method3874(JavaThreadResource.aClass229_2207, 120, JavaThreadResource.aClass229_2207);
+                this.aNativeToolkit_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+                this.aNativeToolkit_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
             } else {
-                this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, 115, JavaThreadResource.aClass229_2207);
-                this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-                this.aHa_Sub3_4479.method3897(2, i + -4469);
-                this.aHa_Sub3_4479.method3874((JavaThreadResource.aClass229_2207), i ^ 0x21, (JavaThreadResource.aClass229_2207));
-                this.aHa_Sub3_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-                this.aHa_Sub3_4479.method3849((byte) 47, 1, (Class318_Sub1_Sub2.aClass70_8737));
-                this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
-                this.aHa_Sub3_4479.method3850((byte) 64, null);
+                this.aNativeToolkit_4479.method3874(JavaThreadResource.aClass229_2207, 115, JavaThreadResource.aClass229_2207);
+                this.aNativeToolkit_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+                this.aNativeToolkit_4479.method3897(2, i + -4469);
+                this.aNativeToolkit_4479.method3874((JavaThreadResource.aClass229_2207), i ^ 0x21, (JavaThreadResource.aClass229_2207));
+                this.aNativeToolkit_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
+                this.aNativeToolkit_4479.method3849((byte) 47, 1, (Class318_Sub1_Sub2.aClass70_8737));
+                this.aNativeToolkit_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
+                this.aNativeToolkit_4479.method3850((byte) 64, null);
             }
-            this.aHa_Sub3_4479.method3897(0, i ^ ~0x114a);
+            this.aNativeToolkit_4479.method3897(0, i ^ ~0x114a);
             aBoolean7317 = false;
-        } else this.aHa_Sub3_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
+        } else this.aNativeToolkit_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
         anInt7312++;
         if (i != 87) aBoolean7311 = true;
-        this.aHa_Sub3_4479.method3874(JavaThreadResource.aClass229_2207, i + 13, JavaThreadResource.aClass229_2207);
+        this.aNativeToolkit_4479.method3874(JavaThreadResource.aClass229_2207, i + 13, JavaThreadResource.aClass229_2207);
     }
 
     static final boolean method3542(int i, Class357[][][] class357s, int i_13_, int i_14_, int i_15_, boolean bool) {
@@ -316,7 +316,7 @@ final class Class367_Sub4 extends Class367 {
     }
 
     final void method3521(boolean bool, byte i) {
-        this.aHa_Sub3_4479.method3874((Class328_Sub3.aClass229_6519), 126, JavaThreadResource.aClass229_2207);
+        this.aNativeToolkit_4479.method3874((Class328_Sub3.aClass229_6519), 126, JavaThreadResource.aClass229_2207);
         if (i != -103) method3542(74, null, 65, 65, -77, true);
         anInt7308++;
     }
@@ -324,9 +324,9 @@ final class Class367_Sub4 extends Class367 {
     final void method3526(int i, int i_40_, int i_41_) {
         if (i != 10756) method3520((byte) -127);
         if (aBoolean7317) {
-            this.aHa_Sub3_4479.method3897(1, i + -15138);
-            this.aHa_Sub3_4479.method3850((byte) -67, anInterface18_Impl2Array7315[-1 + i_40_]);
-            this.aHa_Sub3_4479.method3897(0, i ^ ~0x3b19);
+            this.aNativeToolkit_4479.method3897(1, i + -15138);
+            this.aNativeToolkit_4479.method3850((byte) -67, anInterface18_Impl2Array7315[-1 + i_40_]);
+            this.aNativeToolkit_4479.method3897(0, i ^ ~0x3b19);
         }
         anInt7322++;
     }

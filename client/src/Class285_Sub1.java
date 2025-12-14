@@ -68,7 +68,7 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
     public final boolean method18(int i) {
         if (i != 6331) anInt8492 = -14;
         anInt8489++;
-        return super.method2123((this.aClass377_4759.aMapBuffer9915), i ^ 0x18bb);
+        return super.method2123((this.aOpenGLxToolkit_4759.aMapBuffer9915), i ^ 0x18bb);
     }
 
     final int method2130(int i) {
@@ -80,7 +80,7 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
     public final Buffer method19(boolean bool, int i) {
         anInt8490++;
         if (i != 26775) aByte8491 = (byte) 7;
-        return super.method2120(0, (this.aClass377_4759.aMapBuffer9915), bool);
+        return super.method2120(0, (this.aOpenGLxToolkit_4759.aMapBuffer9915), bool);
     }
 
     public final int method16(boolean bool) {
@@ -97,8 +97,8 @@ final class Class285_Sub1 extends Class285 implements Interface5_Impl1 {
         return true;
     }
 
-    Class285_Sub1(Class377 class377, boolean bool) {
-        super(class377, 34962, bool);
+    Class285_Sub1(OpenGLxToolkit openGLxToolkit, boolean bool) {
+        super(openGLxToolkit, 34962, bool);
     }
 
     public final boolean method20(int i, byte i_8_, int i_9_) {

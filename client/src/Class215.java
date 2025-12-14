@@ -24,7 +24,7 @@ final class Class215 {
             if (Class34.aFrame476 != null) {
                 Class346.anInt4276 = i_0_;
                 Option_Sub8.anInt5911 = i_3_;
-                Class14_Sub2.method243(37);
+                Class14_Sub2.saveOptions(37);
             }
         }
         if (i_2_ == 3 && Class34.aFrame476 == null) method1580((byte) -126, true, -1, i_1_, Class316.clientOptions.aClass239_Sub8_7227.method1751(-32350), -1);
@@ -47,7 +47,7 @@ final class Class215 {
             }
             if (i_2_ == 1) {
                 Class321.anInt4017 = Class92.anInt1524;
-                Class348_Sub42_Sub8_Sub2.anInt10432 = ha_Sub2.anInt7666;
+                Class348_Sub42_Sub8_Sub2.anInt10432 = OpenGLToolkit.anInt7666;
                 Class348_Sub48.anInt7129 = (Class272.anInt3473 + -Class92.anInt1524) / 2;
                 Class335.anInt4167 = 0;
             } else Class286_Sub5.method2158((byte) 56);
@@ -59,7 +59,7 @@ final class Class215 {
             if (bool) Class348_Sub47.method3327(1406);
             else {
                 Class305.aCanvas3869.setSize(Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
-                if (!Class59_Sub1.aBoolean5300) Class348_Sub8.aToolkit6654.method3669(Class305.aCanvas3869, Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
+                if (!Class59_Sub1.aBoolean5300) Class348_Sub8.active.method3669(Class305.aCanvas3869, Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
                 else Ground.method3980(86, Class305.aCanvas3869);
                 if (Class52.aFrame4904 == container) {
                     Insets insets = Class52.aFrame4904.getInsets();

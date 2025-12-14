@@ -98,7 +98,7 @@ final class Class85 {
         int i_24_ = Class348_Sub42_Sub12.method3229(-82);
         if (i_22_ == 102) {
             if (i == 3 || i_24_ == 3) bool = true;
-            if (!Class348_Sub8.aToolkit6654.method3695()) bool = true;
+            if (!Class348_Sub8.active.method3695()) bool = true;
             Class215.method1580((byte) -125, bool, i_21_, i_24_, i, i_23_);
         }
     }

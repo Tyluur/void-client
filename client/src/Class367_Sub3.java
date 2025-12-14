@@ -15,7 +15,7 @@ final class Class367_Sub3 extends Class367 {
     static int anInt7307;
 
     final void method3525(int i, boolean bool) {
-        this.aHa_Sub3_4479.method3943(true, i + -47145);
+        this.aNativeToolkit_4479.method3943(true, i + -47145);
         anInt7306++;
         if (i != 15192) method3540(26, 92, -76, -90, 76, -7, -18, -119, 33, false);
     }
@@ -29,15 +29,15 @@ final class Class367_Sub3 extends Class367 {
 
     final void method3527(int i, Interface18 interface18, int i_1_) {
         if (i_1_ != -16776) aClass114_7301 = null;
-        this.aHa_Sub3_4479.method3850((byte) -105, interface18);
+        this.aNativeToolkit_4479.method3850((byte) -105, interface18);
         anInt7300++;
-        this.aHa_Sub3_4479.method3923(true, i);
+        this.aNativeToolkit_4479.method3923(true, i);
     }
 
     final void method3520(byte i) {
         anInt7305++;
         if (i != 87) method3530(71);
-        this.aHa_Sub3_4479.method3943(false, i + -32040);
+        this.aNativeToolkit_4479.method3943(false, i + -32040);
     }
 
     final void method3521(boolean bool, byte i) {
@@ -45,8 +45,8 @@ final class Class367_Sub3 extends Class367 {
         if (i != -103) method3527(-78, null, -100);
     }
 
-    Class367_Sub3(ha_Sub3 var_ha_Sub3) {
-        super(var_ha_Sub3);
+    Class367_Sub3(NativeToolkit var_nativeToolkit) {
+        super(var_nativeToolkit);
     }
 
     final boolean method3530(int i) {

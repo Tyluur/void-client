@@ -156,7 +156,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
         return model.method628(i_14_, i, matrix, false, 0);
     }
 
-    static final Class337 method2493(ha_Sub2 var_ha_Sub2, int i, Class242[] class242s) {
+    static final Class337 method2493(OpenGLToolkit var_openGLToolkit, int i, Class242[] class242s) {
         try {
             anInt10167++;
             for (int i_16_ = 0; i_16_ < class242s.length; i_16_++) {
@@ -182,9 +182,9 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5 implements Interf
                     return null;
                 }
             }
-            return new Class337(var_ha_Sub2, l, class242s);
+            return new Class337(var_openGLToolkit, l, class242s);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("pw.D(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + (class242s != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("pw.D(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + (class242s != null ? "{...}" : "null") + ')'));
         }
     }
 

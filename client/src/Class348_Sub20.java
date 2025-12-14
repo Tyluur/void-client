@@ -13,7 +13,7 @@ final class Class348_Sub20 extends Node {
     static int anInt6828;
     static int anInt6829;
     static int[] anIntArray6830 = {16, 32, 64, 128};
-    private ha_Sub2 aHa_Sub2_6831;
+    private OpenGLToolkit aOpenGLToolkit_6831;
     float aFloat6832;
     int anInt6833;
     static int anInt6834;
@@ -37,9 +37,9 @@ final class Class348_Sub20 extends Node {
     }
 
     final void method2946(int i, int i_3_) {
-        aNativeHeapBuffer6840 = aHa_Sub2_6831.aNativeHeap7730.a(4 * i_3_, true);
+        aNativeHeapBuffer6840 = aOpenGLToolkit_6831.aNativeHeap7730.a(4 * i_3_, true);
         anInt6834++;
-        if (i != 2147483647) aHa_Sub2_6831 = null;
+        if (i != 2147483647) aOpenGLToolkit_6831 = null;
         aStream6846 = new Stream(aNativeHeapBuffer6840);
     }
 
@@ -52,9 +52,9 @@ final class Class348_Sub20 extends Node {
     final void method2948(int i, int i_8_, int[] is) {
         anInt6829++;
         int i_9_ = 0;
-        Class348_Sub49_Sub1 class348_sub49_sub1 = aHa_Sub2_6831.aClass348_Sub49_Sub1_7798;
+        Class348_Sub49_Sub1 class348_sub49_sub1 = aOpenGLToolkit_6831.aClass348_Sub49_Sub1_7798;
         class348_sub49_sub1.pos = 0;
-        if (aHa_Sub2_6831.aBoolean7775) {
+        if (aOpenGLToolkit_6831.aBoolean7775) {
             for (int i_10_ = 0; i_8_ > i_10_; i_10_++) {
                 int i_11_ = is[i_10_];
                 short[] is_12_ = aS_Sub2_6839.aShortArrayArray8267[i_11_];
@@ -99,15 +99,15 @@ final class Class348_Sub20 extends Node {
         }
         if (i_9_ > 0) {
             aClass119_Sub2_6843.method35(class348_sub49_sub1.aByteArray7154, 5123, 64, class348_sub49_sub1.pos);
-            aHa_Sub2_6831.method3794(aS_Sub2_6839.aClass123_8276, aClass123_6844, -26411, aS_Sub2_6839.aClass123_8277, aS_Sub2_6839.aClass123_8275);
-            aHa_Sub2_6831.method3746(((0x7 & aS_Sub2_6839.anInt8235) != 0), this.anInt6841, ((aS_Sub2_6839.anInt8235 & 0x8) != 0), 112);
-            if (aHa_Sub2_6831.aBoolean7846) aHa_Sub2_6831.EA(2147483647, this.anInt6825, this.anInt6833, this.anInt6826);
+            aOpenGLToolkit_6831.method3794(aS_Sub2_6839.aClass123_8276, aClass123_6844, -26411, aS_Sub2_6839.aClass123_8277, aS_Sub2_6839.aClass123_8275);
+            aOpenGLToolkit_6831.method3746(((0x7 & aS_Sub2_6839.anInt8235) != 0), this.anInt6841, ((aS_Sub2_6839.anInt8235 & 0x8) != 0), 112);
+            if (aOpenGLToolkit_6831.aBoolean7846) aOpenGLToolkit_6831.EA(2147483647, this.anInt6825, this.anInt6833, this.anInt6826);
             OpenGL.glMatrixMode(5890);
             OpenGL.glPushMatrix();
             OpenGL.glScalef(1.0F / this.aFloat6832, 1.0F / this.aFloat6832, 1.0F);
             OpenGL.glMatrixMode(5888);
-            aHa_Sub2_6831.method3794(aS_Sub2_6839.aClass123_8276, aClass123_6844, -26411, aS_Sub2_6839.aClass123_8277, aS_Sub2_6839.aClass123_8275);
-            aHa_Sub2_6831.method3759(i_9_, -128, 4, aClass119_Sub2_6843, 0);
+            aOpenGLToolkit_6831.method3794(aS_Sub2_6839.aClass123_8276, aClass123_6844, -26411, aS_Sub2_6839.aClass123_8277, aS_Sub2_6839.aClass123_8275);
+            aOpenGLToolkit_6831.method3759(i_9_, -128, 4, aClass119_Sub2_6843, 0);
             OpenGL.glMatrixMode(5890);
             OpenGL.glPopMatrix();
             OpenGL.glMatrixMode(5888);
@@ -118,7 +118,7 @@ final class Class348_Sub20 extends Node {
     final void method2949(byte i, int i_22_, int i_23_, int i_24_, float f) {
         if (i == 97) {
             if (this.anInt6841 != -1) {
-                TextureMetrics textureMetrics = aHa_Sub2_6831.aD4579.getMetrics(this.anInt6841, -6662);
+                TextureMetrics textureMetrics = aOpenGLToolkit_6831.aD4579.getMetrics(this.anInt6841, -6662);
                 int i_25_ = 0xff & textureMetrics.aByte201;
                 if (i_25_ != 0 && textureMetrics.effectType != 4) {
                     int i_26_;
@@ -182,7 +182,7 @@ final class Class348_Sub20 extends Node {
         if (i == 17795) {
             aStream6846.a();
             anInt6828++;
-            Interface2 interface2 = aHa_Sub2_6831.method3739(8448, aNativeHeapBuffer6840, false, 4, i_37_ * 4);
+            Interface2 interface2 = aOpenGLToolkit_6831.method3739(8448, aNativeHeapBuffer6840, false, 4, i_37_ * 4);
             aClass123_6844 = new Class123(interface2, 5121, 4, 0);
             aStream6846 = null;
             aNativeHeapBuffer6840 = null;
@@ -203,10 +203,10 @@ final class Class348_Sub20 extends Node {
         anIntArray6842 = new int[(aS_Sub2_6839.anInt4587 * aS_Sub2_6839.anInt4590)];
         this.anInt6825 = i_39_;
         this.aFloat6832 = (float) i_38_;
-        aHa_Sub2_6831 = aS_Sub2_6839.aHa_Sub2_8272;
+        aOpenGLToolkit_6831 = aS_Sub2_6839.aOpenGLToolkit_8272;
         this.anInt6841 = i;
         this.anInt6833 = i_40_;
         this.anInt6826 = i_41_;
-        aClass119_Sub2_6843 = new Class119_Sub2(aHa_Sub2_6831, 5123, null, 1);
+        aClass119_Sub2_6843 = new Class119_Sub2(aOpenGLToolkit_6831, 5123, null, 1);
     }
 }

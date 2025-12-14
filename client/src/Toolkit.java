@@ -78,7 +78,7 @@ abstract class Toolkit {
 
     abstract void method3636(int i, int i_16_, int i_17_, int i_18_, int i_19_, int i_20_, aa var_aa, int i_21_, int i_22_);
 
-    abstract Class365 c();//c
+    abstract Renderer renderer();//c
 
     // method3638
     abstract void setCamera(Matrix matrix);

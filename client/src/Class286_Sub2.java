@@ -17,7 +17,7 @@ final class Class286_Sub2 extends Class286 {
 
     final void method2133(int i) {
         if (i < -75) {
-            this.aHa_Sub2_3684.method3804(false, (byte) -61);
+            this.aOpenGLToolkit_3684.method3804(false, (byte) -61);
             anInt6211++;
         }
     }
@@ -36,8 +36,8 @@ final class Class286_Sub2 extends Class286 {
         } while (false);
     }
 
-    Class286_Sub2(ha_Sub2 var_ha_Sub2) {
-        super(var_ha_Sub2);
+    Class286_Sub2(OpenGLToolkit var_openGLToolkit) {
+        super(var_openGLToolkit);
     }
 
     static final void method2145(int i) {
@@ -54,9 +54,9 @@ final class Class286_Sub2 extends Class286 {
 
     final void method2140(Class258 class258, byte i, int i_5_) {
         anInt6206++;
-        this.aHa_Sub2_3684.method3771((byte) -80, class258);
+        this.aOpenGLToolkit_3684.method3771((byte) -80, class258);
         if (i >= -89) method2136(-67, -39, (byte) 18);
-        this.aHa_Sub2_3684.method3761(0, i_5_);
+        this.aOpenGLToolkit_3684.method3761(0, i_5_);
     }
 
     static final void method2146(byte i) {
@@ -84,7 +84,7 @@ final class Class286_Sub2 extends Class286 {
     }
 
     final void method2134(boolean bool, boolean bool_9_) {
-        this.aHa_Sub2_3684.method3804(true, (byte) -83);
+        this.aOpenGLToolkit_3684.method3804(true, (byte) -83);
         if (bool_9_ != false) method2136(-78, 73, (byte) 12);
         anInt6204++;
     }

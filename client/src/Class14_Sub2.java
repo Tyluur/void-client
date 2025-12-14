@@ -11,23 +11,24 @@ final class Class14_Sub2 extends Class14 implements Interface18_Impl2 {
     static int anInt8622;
     /*synthetic*/ static Class aClass8623;
 
-    Class14_Sub2(Class377 class377, int i, boolean bool, int[][] is) {
-        super(class377, 34067, Class108.aClass304_1662, Class68.aClass68_1183, 6 * (i * i), bool);
+    Class14_Sub2(OpenGLxToolkit openGLxToolkit, int i, boolean bool, int[][] is) {
+        super(openGLxToolkit, 34067, Class108.aClass304_1662, Class68.aClass68_1183, 6 * (i * i), bool);
         try {
-            this.aClass377_5082.method3850((byte) -109, this);
+            this.aOpenGLxToolkit_5082.method3850((byte) -109, this);
             if (bool) {
                 for (int i_1_ = 0; i_1_ < 6; i_1_++)
                     this.method233(i, i, is[i_1_], i_1_ + 34069, 255);
             } else {
                 for (int i_0_ = 0; i_0_ < 6; i_0_++)
-                    OpenGL.glTexImage2Di(34069 + i_0_, 0, this.method228(121), i, i, 0, Class348_Sub40_Sub3.method3055(110, this.aClass304_5084), (this.aClass377_5082.anInt9918), is[i_0_], 0);
+                    OpenGL.glTexImage2Di(34069 + i_0_, 0, this.method228(121), i, i, 0, Class348_Sub40_Sub3.method3055(110, this.aClass304_5084), (this.aOpenGLxToolkit_5082.anInt9918), is[i_0_], 0);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("le.<init>(" + (class377 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (is != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("le.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (is != null ? "{...}" : "null") + ')'));
         }
     }
 
-    static final void method243(int i) {
+    // method243
+    static final void saveOptions(int i) {
         anInt8620++;
         Class234 class234 = null;
         try {

@@ -5,7 +5,7 @@
 import jaggl.OpenGL;
 
 final class Class188 {
-    private final ha_Sub2 aHa_Sub2_2511;
+    private final OpenGLToolkit aOpenGLToolkit_2511;
     static Class351 aClass351_2512;
     private Class337 aClass337_2513;
     static boolean aBoolean2514 = false;
@@ -31,10 +31,10 @@ final class Class188 {
         try {
             anInt2517++;
             if (!method1414(35632)) return false;
-            Class206 class206 = aHa_Sub2_2511.aClass206_7778;
+            Class206 class206 = aOpenGLToolkit_2511.aClass206_7778;
             int i_3_ = 30 % ((-55 - i) / 59);
-            Class348_Sub42_Sub2 class348_sub42_sub2 = new Class348_Sub42_Sub2(aHa_Sub2_2511, 6408, (class258_sub1.anInt8523), (class258_sub1.anInt8529));
-            aHa_Sub2_2511.method3773(-1, class206);
+            Class348_Sub42_Sub2 class348_sub42_sub2 = new Class348_Sub42_Sub2(aOpenGLToolkit_2511, 6408, (class258_sub1.anInt8523), (class258_sub1.anInt8529));
+            aOpenGLToolkit_2511.method3773(-1, class206);
             boolean bool = false;
             class206.method1508(0, class348_sub42_sub2, -12);
             if (class206.method1507(117)) {
@@ -52,7 +52,7 @@ final class Class188 {
                 OpenGL.glUniform2fARB(OpenGL.glGetUniformLocationARB(aClass337_2513.aLong4178, "sampleSize"), (1.0F / (float) class258_sub1_2_.anInt8523), (1.0F / (float) class258_sub1_2_.anInt8529));
                 for (int i_4_ = 0; i_4_ < class258_sub1.anInt8522; i_4_++) {
                     float f_5_ = ((float) i_4_ / (float) (class258_sub1.anInt8522));
-                    aHa_Sub2_2511.method3771((byte) -118, class258_sub1_2_);
+                    aOpenGLToolkit_2511.method3771((byte) -118, class258_sub1_2_);
                     OpenGL.glBegin(7);
                     OpenGL.glTexCoord3f(0.0F, 0.0F, f_5_);
                     OpenGL.glVertex2f(0.0F, 0.0F);
@@ -73,7 +73,7 @@ final class Class188 {
                 bool = true;
             }
             class206.method1500(2983, 0);
-            aHa_Sub2_2511.method3770(-422613672, class206);
+            aOpenGLToolkit_2511.method3770(-422613672, class206);
             return bool;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qi.D(" + (class258_sub1 != null ? "{...}" : "null") + ',' + (class258_sub1_2_ != null ? "{...}" : "null") + ',' + i + ',' + f + ')'));
@@ -81,9 +81,9 @@ final class Class188 {
     }
 
     final boolean method1414(int i) {
-        if (aHa_Sub2_2511.aBoolean7820 && aHa_Sub2_2511.aBoolean7783 && aClass337_2513 == null) {
-            Class242 class242 = (Class348_Sub42_Sub15.method3249(35632, 121, aHa_Sub2_2511, "uniform float rcpRelief;\nuniform vec2 sampleSize;\nuniform sampler3D heightMap;\nvoid main() {\nfloat dx = texture3D(heightMap, vec3(-sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r;\nfloat dy = texture3D(heightMap, vec3(0.0, -sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(0.0, sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r;\ngl_FragColor = vec4(0.5+normalize(vec3(dx, dy, rcpRelief))*0.5, texture3D(heightMap, gl_TexCoord[0].xyz).r);\n}\n"));
-            if (class242 != null) aClass337_2513 = Class318_Sub1_Sub5_Sub2.method2493(aHa_Sub2_2511, i + -35633, (new Class242[]{class242}));
+        if (aOpenGLToolkit_2511.aBoolean7820 && aOpenGLToolkit_2511.aBoolean7783 && aClass337_2513 == null) {
+            Class242 class242 = (Class348_Sub42_Sub15.method3249(35632, 121, aOpenGLToolkit_2511, "uniform float rcpRelief;\nuniform vec2 sampleSize;\nuniform sampler3D heightMap;\nvoid main() {\nfloat dx = texture3D(heightMap, vec3(-sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r;\nfloat dy = texture3D(heightMap, vec3(0.0, -sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(0.0, sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r;\ngl_FragColor = vec4(0.5+normalize(vec3(dx, dy, rcpRelief))*0.5, texture3D(heightMap, gl_TexCoord[0].xyz).r);\n}\n"));
+            if (class242 != null) aClass337_2513 = Class318_Sub1_Sub5_Sub2.method2493(aOpenGLToolkit_2511, i + -35633, (new Class242[]{class242}));
         }
         anInt2518++;
         if (i != 35632) method1413(null, null, 102, 0.17865802F);
@@ -140,8 +140,8 @@ final class Class188 {
         return new Class348_Sub17(is);
     }
 
-    Class188(ha_Sub2 var_ha_Sub2) {
-        aHa_Sub2_2511 = var_ha_Sub2;
+    Class188(OpenGLToolkit var_openGLToolkit) {
+        aOpenGLToolkit_2511 = var_openGLToolkit;
     }
 
     static {

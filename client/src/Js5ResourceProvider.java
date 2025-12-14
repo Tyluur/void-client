@@ -228,7 +228,7 @@ final class Js5ResourceProvider extends ResourceProvider {
             Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub25_7251), 0);
             Class367_Sub10.method3553(false, (byte) 120, 0);
         }
-        Class14_Sub2.method243(37);
+        Class14_Sub2.saveOptions(37);
         return i_6_;
     }
 

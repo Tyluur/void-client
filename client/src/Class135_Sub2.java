@@ -20,7 +20,7 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
 
     final void method1152(int i) {
         anInt4840++;
-        this.aHa_Sub2_1927.method3793(1, this);
+        this.aOpenGLToolkit_1927.method3793(1, this);
         if (i >= -78) aClass161_4839 = null;
     }
 
@@ -96,12 +96,12 @@ final class Class135_Sub2 extends Class135 implements Interface8 {
         return 0L;
     }
 
-    Class135_Sub2(ha_Sub2 var_ha_Sub2, int i, byte[] is, int i_8_, boolean bool) {
-        super(var_ha_Sub2, 34963, is, i_8_, bool);
+    Class135_Sub2(OpenGLToolkit var_openGLToolkit, int i, byte[] is, int i_8_, boolean bool) {
+        super(var_openGLToolkit, 34963, is, i_8_, bool);
         try {
             anInt4837 = i;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("kaa.<init>(" + (var_ha_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_8_ + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("kaa.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + (is != null ? "{...}" : "null") + ',' + i_8_ + ',' + bool + ')'));
         }
     }
 

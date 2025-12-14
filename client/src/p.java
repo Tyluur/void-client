@@ -12,7 +12,7 @@ final class p extends Node implements Interface19 {
     Canvas aCanvas5147;
     int anInt5148;
 
-    private final native void sa(oa var_oa, Canvas canvas, int i, int i_0_);
+    private final native void sa(SafeModeToolkit var_safeModeToolkit, Canvas canvas, int i, int i_0_);
 
     public final native void w(boolean bool);
 
@@ -46,11 +46,11 @@ final class p extends Node implements Interface19 {
         if (this.nativeid != 0L) Class257.method1947(0, this);
     }
 
-    p(oa var_oa, Canvas canvas, int i, int i_11_) {
+    p(SafeModeToolkit var_safeModeToolkit, Canvas canvas, int i, int i_11_) {
         this.aCanvas5147 = canvas;
         this.anInt5145 = i;
         this.anInt5148 = i_11_;
-        sa(var_oa, this.aCanvas5147, i, i_11_);
+        sa(var_safeModeToolkit, this.aCanvas5147, i, i_11_);
     }
 
     final void method3434(Rectangle[] rectangles, int i, int i_12_, int i_13_) {
