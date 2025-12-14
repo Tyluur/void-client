@@ -493,7 +493,7 @@ final class Class377 extends ha_Sub3 {
         if (i > -30) ya();
     }
 
-    final Interface4 method3634(Interface3 interface3, Interface13 interface13) {
+    final OffscreenSurface method3634(Interface3 interface3, Interface13 interface13) {
         try {
             anInt9897++;
             return null;
@@ -1210,11 +1210,11 @@ final class Class377 extends ha_Sub3 {
         return is;
     }
 
-    final void method3687(Interface4 interface4) {
+    final void method3687(OffscreenSurface offscreenSurface) {
         try {
             anInt9816++;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, "bga.IA(" + (interface4 != null ? "{...}" : "null") + ')');
+            throw Class348_Sub17.method2929(runtimeexception, "bga.IA(" + (offscreenSurface != null ? "{...}" : "null") + ')');
         }
     }
 }

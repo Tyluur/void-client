@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class wa implements Interface4 {
+final class wa implements OffscreenSurface {
     j aJ4732;
     xa aXa4733;
     private long aLong4734 = 0L;

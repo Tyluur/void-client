@@ -125,7 +125,7 @@ final class Class88 {
                     packet.writeString((byte) -5, Class186.aString2496);
                     packet.writeLong(AnimBase.aLong6966, (byte) -124);
                     packet.writeLong(OutputStream_Sub2.aLong108, (byte) -112);
-                    packet.method3390(Class348_Sub31.aBigInteger6921, (byte) -76, (Class318_Sub1_Sub4.aBigInteger8762));
+                    packet.method3390(JavaSurface.aBigInteger6921, (byte) -76, (Class318_Sub1_Sub4.aBigInteger8762));
                     Class348_Sub3.method2739(0);
                     Class348_Sub47 class348_sub47 = Class203.method1478(true);
                     Class348_Sub49_Sub2 class348_sub49_sub2 = (class348_sub47.aClass348_Sub49_Sub2_7116);

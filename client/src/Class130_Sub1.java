@@ -1008,7 +1008,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub23_Sub3.anInt9040 = 0;
         ha_Sub3.anInt8040 = 0;
         Class42.anInt610 = 0;
-        Class49.anInt4727 = 0;
+        JavaOffscreenSurface.anInt4727 = 0;
         Class318_Sub1_Sub3_Sub5.anInt10394 = 0;
         ha_Sub3.anInt7892 = 0;
         Node.anInt4285 = 0;
@@ -1220,7 +1220,7 @@ final class Class130_Sub1 extends Class130 {
         Class101_Sub2.anInt5723 = 0;
         Class348_Sub42_Sub12.anInt9606 = 0;
         Class318_Sub1_Sub5_Sub2.anInt10171 = 0;
-        Class348_Sub31.anInt6922 = 0;
+        JavaSurface.anInt6922 = 0;
         Class258.anInt4863 = 0;
         Class377.anInt9833 = 0;
         Class205.anInt2690 = 0;
@@ -1338,7 +1338,7 @@ final class Class130_Sub1 extends Class130 {
         Player.anInt10534 = 0;
         Class52.anInt4897 = 0;
         Class5_Sub2.anInt8355 = 0;
-        Class49.anInt4721 = 0;
+        JavaOffscreenSurface.anInt4721 = 0;
         Class285.anInt4735 = 0;
         Class348_Sub40_Sub5.anInt9128 = 0;
         ha_Sub2.anInt7602 = 0;
@@ -2225,7 +2225,7 @@ final class Class130_Sub1 extends Class130 {
         ha_Sub2.anInt7550 = 0;
         Class316.anInt3965 = 0;
         Class318_Sub1_Sub5_Sub2.anInt10158 = 0;
-        Class348_Sub31.anInt6914 = 0;
+        JavaSurface.anInt6914 = 0;
         LoadingScreenOpFactory.anInt1634 = 0;
         Class300.anInt3820 = 0;
         Class377.anInt9841 = 0;
@@ -2419,7 +2419,7 @@ final class Class130_Sub1 extends Class130 {
         Class35.anInt485 = 0;
         Class251.anInt3230 = 0;
         Class348_Sub42_Sub14.anInt9630 = 0;
-        Class348_Sub31.anInt6919 = 0;
+        JavaSurface.anInt6919 = 0;
         Class318_Sub1_Sub5_Sub2.anInt10169 = 0;
         Class233.anInt3019 = 0;
         Class348_Sub9.anInt6669 = 0;
@@ -2505,7 +2505,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub41.anInt7046 = 0;
         Class59.anInt1077 = 0;
         Class348_Sub1_Sub1.anInt8809 = 0;
-        Class49.anInt4723 = 0;
+        JavaOffscreenSurface.anInt4723 = 0;
         Class377.anInt9844 = 0;
         JavaMatrix.anInt5682 = 0;
         Class348_Sub42_Sub11.anInt9583 = 0;
@@ -3451,7 +3451,7 @@ final class Class130_Sub1 extends Class130 {
         Class152.anInt2070 = 0;
         Packet.anInt7148 = 0;
         ha_Sub2.anInt7696 = 0;
-        Class348_Sub31.anInt6915 = 0;
+        JavaSurface.anInt6915 = 0;
         Class348_Sub40_Sub30.anInt9391 = 0;
         Class31.anInt445 = 0;
         Class18.anInt280 = 0;
@@ -3788,7 +3788,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub18.anInt6816 = 0;
         Class318_Sub1_Sub3_Sub5.anInt10377 = 0;
         ha_Sub3.anInt7994 = 0;
-        Class348_Sub31.anInt6918 = 0;
+        JavaSurface.anInt6918 = 0;
         Class192.anInt2580 = 0;
         Class248.anInt3186 = 0;
         Class373_Sub2.anInt7435 = 0;
@@ -4147,7 +4147,7 @@ final class Class130_Sub1 extends Class130 {
         r.anInt9721 = -1;
         Class125.aClass356_4915 = new Class356(8);
         Class99.method882((byte) 11);
-        Class49.aClass46_4730 = null;
+        JavaOffscreenSurface.aClass46_4730 = null;
         for (int i1 = 0; i1 < 8; i1++) {
             Class318_Sub1_Sub2_Sub1.aStringArray10195[i1] = null;
             Class71.aBooleanArray1214[i1] = false;

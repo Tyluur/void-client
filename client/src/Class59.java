@@ -201,8 +201,8 @@ abstract class Class59 {
             anInt1080++;
             Sprite sprite = class42.method375(var_toolkit, false);
             if (sprite != null) {
-                int i_56_ = sprite.method971();
-                if (i_56_ < sprite.method969()) i_56_ = sprite.method969();
+                int i_56_ = sprite.getWidth();
+                if (i_56_ < sprite.getHeight()) i_56_ = sprite.getHeight();
                 int i_57_ = 10;
                 int i_58_ = class348_sub21.anInt6853;
                 int i_59_ = class348_sub21.anInt6855;

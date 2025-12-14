@@ -468,7 +468,7 @@ final class Class64_Sub3 extends Model {
                     float f_91_ = ((float) ((anIntArray5644[class118.anInt1788]) + (anIntArray5644[class118.anInt1781]) + (anIntArray5644[class118.anInt1782])) * 0.3333333F);
                     float f_92_ = (Class190.aFloat2555 + (f_91_ * Class313.aFloat3935 + (f_90_ * Class299_Sub1_Sub1.aFloat8696 + JavaThreadResource.aFloat2203 * f)));
                     float f_93_ = (Class156.aFloat2111 + (Class215.aFloat2836 * f_91_ + (f_90_ * Class252.aFloat3242 + ResourceProvider.aFloat3943 * f)));
-                    float f_94_ = (f * Class318_Sub9_Sub1.aFloat8784 + f_90_ * Class320.aFloat3994 + f_91_ * Class286_Sub8.aFloat6304 + Class49.aFloat4720);
+                    float f_94_ = (f * Class318_Sub9_Sub1.aFloat8784 + f_90_ * Class320.aFloat3994 + f_91_ * Class286_Sub8.aFloat6304 + JavaOffscreenSurface.aFloat4720);
                     float f_95_ = ((float) (1.0 / Math.sqrt(f_94_ * f_94_ + (f_93_ * f_93_ + (f_92_ * f_92_)))) * (float) class118.anInt1784);
                     class101_sub3.method939(-f_94_ + f_94_ * f_95_, (class118.aShort1785 * class48.anInt856) >> 7, (-(f_92_ * f_95_) + (f_92_ + (float) class48.anInt854)), (class118.aShort1790 * class48.anInt857) >> 7, class48.anInt853, 90, (f_95_ * f_93_ + (-f_93_ + (float) class48.anInt847)));
                     aHa_Sub2_5598.method3766((byte) 55, class101_sub3);
@@ -1076,9 +1076,9 @@ final class Class64_Sub3 extends Model {
                 Class101_Sub3 class101_sub3_236_ = (Class101_Sub3) matrix;
                 if (!aBoolean5527) method692((byte) -123);
                 Class320.aFloat3994 = ((class101_sub3_236_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3.aFloat5754 * class101_sub3_236_.aFloat5769) + (class101_sub3.aFloat5784 * class101_sub3_236_.aFloat5754));
-                Class49.aFloat4720 = ((class101_sub3_236_.aFloat5751 * class101_sub3.aFloat5784) + ((class101_sub3.aFloat5756 * class101_sub3_236_.aFloat5747) + (class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5754)) + class101_sub3.aFloat5751);
-                float f = (Class49.aFloat4720 + Class320.aFloat3994 * (float) aShort5591);
-                float f_237_ = (Class320.aFloat3994 * (float) aShort5629 + Class49.aFloat4720);
+                JavaOffscreenSurface.aFloat4720 = ((class101_sub3_236_.aFloat5751 * class101_sub3.aFloat5784) + ((class101_sub3.aFloat5756 * class101_sub3_236_.aFloat5747) + (class101_sub3_236_.aFloat5772 * class101_sub3.aFloat5754)) + class101_sub3.aFloat5751);
+                float f = (JavaOffscreenSurface.aFloat4720 + Class320.aFloat3994 * (float) aShort5591);
+                float f_237_ = (Class320.aFloat3994 * (float) aShort5629 + JavaOffscreenSurface.aFloat4720);
                 float f_238_;
                 float f_239_;
                 if (f > f_237_) {
@@ -1130,13 +1130,13 @@ final class Class64_Sub3 extends Model {
                                 int i_249_ = aShort5617 + aShort5646 >> 1;
                                 int i_250_ = (int) (((float) aShort5591 * Class299_Sub1_Sub1.aFloat8696) + (((float) i_248_ * JavaThreadResource.aFloat2203) + Class190.aFloat2555) + (Class313.aFloat3935 * (float) i_249_));
                                 int i_251_ = (int) (Class156.aFloat2111 + ((float) i_248_ * ResourceProvider.aFloat3943) + (Class252.aFloat3242 * (float) aShort5591) + (Class215.aFloat2836 * (float) i_249_));
-                                int i_252_ = (int) (Class49.aFloat4720 + ((float) i_248_ * (Class318_Sub9_Sub1.aFloat8784)) + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_249_));
+                                int i_252_ = (int) (JavaOffscreenSurface.aFloat4720 + ((float) i_248_ * (Class318_Sub9_Sub1.aFloat8784)) + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_249_));
                                 int i_253_ = (int) ((Class313.aFloat3935 * (float) i_249_) + ((Class299_Sub1_Sub1.aFloat8696 * (float) aShort5629) + (Class190.aFloat2555 + (JavaThreadResource.aFloat2203 * (float) i_248_))));
                                 int i_254_ = (int) (Class156.aFloat2111 + (ResourceProvider.aFloat3943 * (float) i_248_) + (Class252.aFloat3242 * (float) aShort5629) + ((float) i_249_ * Class215.aFloat2836));
                                 class318_sub3.bottomX = (aHa_Sub2_5598.anInt7853 - -(i_250_ * (aHa_Sub2_5598.anInt7771) / i));
                                 class318_sub3.bottomY = ((i_251_ * aHa_Sub2_5598.anInt7794 / i) + aHa_Sub2_5598.anInt7810);
                                 class318_sub3.topY = (aHa_Sub2_5598.anInt7810 + (i_254_ * aHa_Sub2_5598.anInt7794 / i));
-                                int i_255_ = (int) (((float) i_249_ * Class286_Sub8.aFloat6304) + ((Class320.aFloat3994 * (float) aShort5629) + (((Class318_Sub9_Sub1.aFloat8784) * (float) i_248_) + Class49.aFloat4720)));
+                                int i_255_ = (int) (((float) i_249_ * Class286_Sub8.aFloat6304) + ((Class320.aFloat3994 * (float) aShort5629) + (((Class318_Sub9_Sub1.aFloat8784) * (float) i_248_) + JavaOffscreenSurface.aFloat4720)));
                                 class318_sub3.topX = (aHa_Sub2_5598.anInt7853 + (i_253_ * aHa_Sub2_5598.anInt7771 / i));
                                 if (i_252_ >= aHa_Sub2_5598.anInt7826 || i_255_ >= (aHa_Sub2_5598.anInt7826)) {
                                     class318_sub3.visible = true;
@@ -1573,9 +1573,9 @@ final class Class64_Sub3 extends Model {
                 if (!aBoolean5527) method692((byte) -123);
                 Class101_Sub3 class101_sub3_350_ = (Class101_Sub3) matrix;
                 Class320.aFloat3994 = ((class101_sub3_350_.aFloat5754 * class101_sub3.aFloat5784) + ((class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3_350_.aFloat5769 * class101_sub3.aFloat5754)));
-                Class49.aFloat4720 = (class101_sub3.aFloat5751 + ((class101_sub3.aFloat5756 * class101_sub3_350_.aFloat5747) + (class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5754) + (class101_sub3_350_.aFloat5751 * class101_sub3.aFloat5784)));
-                float f = (Class49.aFloat4720 + Class320.aFloat3994 * (float) aShort5591);
-                float f_351_ = (Class320.aFloat3994 * (float) aShort5629 + Class49.aFloat4720);
+                JavaOffscreenSurface.aFloat4720 = (class101_sub3.aFloat5751 + ((class101_sub3.aFloat5756 * class101_sub3_350_.aFloat5747) + (class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5754) + (class101_sub3_350_.aFloat5751 * class101_sub3.aFloat5784)));
+                float f = (JavaOffscreenSurface.aFloat4720 + Class320.aFloat3994 * (float) aShort5591);
+                float f_351_ = (Class320.aFloat3994 * (float) aShort5629 + JavaOffscreenSurface.aFloat4720);
                 float f_352_;
                 float f_353_;
                 if (f > f_351_) {
@@ -1629,14 +1629,14 @@ final class Class64_Sub3 extends Model {
                                 int i_364_ = aShort5617 - -aShort5646 >> 1;
                                 int i_365_ = (int) (((float) i_364_ * Class313.aFloat3935) + ((JavaThreadResource.aFloat2203 * (float) i_363_) + Class190.aFloat2555 + ((float) aShort5591 * (Class299_Sub1_Sub1.aFloat8696))));
                                 int i_366_ = (int) (Class156.aFloat2111 + ((float) i_363_ * ResourceProvider.aFloat3943) + ((float) aShort5591 * Class252.aFloat3242) + ((float) i_364_ * Class215.aFloat2836));
-                                int i_367_ = (int) ((Class318_Sub9_Sub1.aFloat8784 * (float) i_363_) + Class49.aFloat4720 + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_364_));
+                                int i_367_ = (int) ((Class318_Sub9_Sub1.aFloat8784 * (float) i_363_) + JavaOffscreenSurface.aFloat4720 + (Class320.aFloat3994 * (float) aShort5591) + (Class286_Sub8.aFloat6304 * (float) i_364_));
                                 if (aHa_Sub2_5598.anInt7826 <= i_367_) {
                                     class318_sub3.bottomX = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853));
                                     class318_sub3.bottomY = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810));
                                 } else bool = true;
                                 int i_368_ = (int) (Class190.aFloat2555 + (JavaThreadResource.aFloat2203 * (float) i_363_) + (Class299_Sub1_Sub1.aFloat8696 * (float) aShort5629) + (Class313.aFloat3935 * (float) i_364_));
                                 int i_369_ = (int) (((float) i_364_ * Class215.aFloat2836) + ((Class252.aFloat3242 * (float) aShort5629) + (Class156.aFloat2111 + (ResourceProvider.aFloat3943 * (float) i_363_))));
-                                int i_370_ = (int) ((Class286_Sub8.aFloat6304 * (float) i_364_) + (((float) i_363_ * (Class318_Sub9_Sub1.aFloat8784)) + Class49.aFloat4720 + ((float) aShort5629 * Class320.aFloat3994)));
+                                int i_370_ = (int) ((Class286_Sub8.aFloat6304 * (float) i_364_) + (((float) i_363_ * (Class318_Sub9_Sub1.aFloat8784)) + JavaOffscreenSurface.aFloat4720 + ((float) aShort5629 * Class320.aFloat3994)));
                                 if (i_370_ >= aHa_Sub2_5598.anInt7826) {
                                     class318_sub3.topX = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853));
                                     class318_sub3.topY = (i_369_ * (aHa_Sub2_5598.anInt7794) / i_370_ + (aHa_Sub2_5598.anInt7810));

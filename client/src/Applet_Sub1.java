@@ -208,7 +208,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         Class305.aCanvas3869.requestFocus();
         Class348_Sub40_Sub16.aBoolean9229 = true;
         Class175.aBoolean2329 = true;
-        Class49.aBoolean4726 = true;
+        JavaOffscreenSurface.aBoolean4726 = true;
         Class203.aBoolean2674 = false;
         Class348_Sub12.aLong6748 = Class62.safeTime(-106);
     }
@@ -220,7 +220,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     public final synchronized void paint(Graphics graphics) {
         anInt18++;
         if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) {
-            Class49.aBoolean4726 = true;
+            JavaOffscreenSurface.aBoolean4726 = true;
             if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.safeTime(-57) > 1000) {
                 Rectangle rectangle = graphics.getClipBounds();
                 if (rectangle == null || (rectangle.width >= Class272.anInt3473 && (Class348_Sub22.anInt6857 <= rectangle.height))) Class203.aBoolean2674 = true;
@@ -240,7 +240,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         Class152.anInt2071 = Class152.anInt2071 - -1 & 0x1f;
         if (Class159.anInt2127++ > 50) {
             Class159.anInt2127 -= 50;
-            Class49.aBoolean4726 = true;
+            JavaOffscreenSurface.aBoolean4726 = true;
             Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
             Class305.aCanvas3869.setVisible(true);
             if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
@@ -259,7 +259,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     public final void focusGained(FocusEvent focusevent) {
         anInt23++;
         Class348_Sub40_Sub16.aBoolean9229 = true;
-        Class49.aBoolean4726 = true;
+        JavaOffscreenSurface.aBoolean4726 = true;
     }
 
     public final void windowClosed(WindowEvent windowevent) {

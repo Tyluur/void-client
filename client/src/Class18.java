@@ -326,7 +326,7 @@ final class Class18 {
         Class344.anInt4267 = i_23_;
         Class286.anInt3682 = 0;
         Class58.anInt1067 = i_24_;
-        AnimationType.anInterface4_252 = null;
+        AnimationType.anOffscreenSurface_252 = null;
         Packet.anInt7207 = 1;
         Option_Sub12.anInt5965 = i;
         Class85.method828((byte) 38, i_25_, i_21_);

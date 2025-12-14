@@ -4474,7 +4474,7 @@ final class Rasterizer {
         aJavaToolkit_1666 = var_javaToolkit;
         aJavaThreadResource_1670 = javaThreadResource;
         rasterWidth = aJavaToolkit_1666.surfaceWidth;
-        raster = aJavaToolkit_1666.anIntArray7483;
-        depthBuffer = aJavaToolkit_1666.aFloatArray7511;
+        raster = aJavaToolkit_1666.surfaceRaster;
+        depthBuffer = aJavaToolkit_1666.depthBuffer;
     }
 }

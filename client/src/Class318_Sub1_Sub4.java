@@ -94,7 +94,7 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         if (i_7_ == -1 && i_8_ == -1 && i_9_ == -1) return Js5ResourceProvider.method2348(i + -9454);
         i_9_ *= 1.1F;
         i_8_ *= 1.1F;
-        if (i_7_ > i_9_ && i_8_ < i_7_) return Class49.method454(i_7_, (byte) -116);
+        if (i_7_ > i_9_ && i_8_ < i_7_) return JavaOffscreenSurface.method454(i_7_, (byte) -116);
         if (i_9_ <= i_8_) return Class62.method600((byte) -59, 1, i_8_);
         return Class62.method600((byte) -80, 3, i_9_);
     }

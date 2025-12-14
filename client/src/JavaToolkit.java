@@ -6,44 +6,44 @@ import java.awt.*;
 
 // ha_Sub1
 final class JavaToolkit extends Toolkit {
-    private int anInt7465;
+    private int canvasWidth;
     private int anInt7466;
     private Class356 aClass356_7467;
     private Canvas aCanvas7468;
-    Class348_Sub31 aClass348_Sub31_7469;
+    JavaSurface surface;
     private boolean aBoolean7470 = false;
     private boolean aBoolean7471 = false;
-    private int anInt7472;
+    private int canvasHeight;
     int anInt7473;
     int anInt7474;
-    private Class49 aClass49_7475;
+    private JavaOffscreenSurface offscreenSurface;
     int clipY1;
     int surfaceWidth;
     int anInt7478;
     int anInt7479;
-    private JavaThreadResource[] aJavaThreadResourceArray7480;
-    private int anInt7481;
+    private JavaThreadResource[] resources;
+    private int mainSurfaceWidth;
     int zNear;
-    int[] anIntArray7483;
+    int[] surfaceRaster;
     int anInt7484;
     int threadCount;
-    private int anInt7486;
+    private int surfaceHeight;
     private int anInt7487;
-    private int anInt7488;
+    private int depthHeight;
     private boolean aBoolean7489;
     int viewY1;
     int projectionScaleX;
     JavaMatrix camera;
-    private int anInt7493;
+    private int mainSurfaceHeight;
     int zFar;
-    private int anInt7495;
+    private int depthWidth;
     int clipX1;
     int projectionScaleY;
     private final Class60 aClass60_7498;
     private final Class60 aClass60_7499;
     int anInt7500;
     int textureSize;
-    float[] aFloatArray7502;
+    float[] mainDepthBuffer;
     int clipY2;
     int projectionCenterY;
     private int anInt7505;
@@ -52,7 +52,7 @@ final class JavaToolkit extends Toolkit {
     int viewX2;
     int viewX1;
     int projectionCenterX;
-    float[] aFloatArray7511;
+    float[] depthBuffer;
     private int anInt7512;
     private Sprite aSprite_7513;
 
@@ -61,7 +61,7 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void GA(int i) {
-        aa(0, 0, this.surfaceWidth, anInt7486, i, 0);
+        aa(0, 0, this.surfaceWidth, surfaceHeight, i, 0);
     }
 
     final int[] na(int i, int i_0_, int i_1_, int i_2_) {
@@ -70,7 +70,7 @@ final class JavaToolkit extends Toolkit {
         for (int i_4_ = 0; i_4_ < i_2_; i_4_++) {
             int i_5_ = (i_0_ + i_4_) * this.surfaceWidth + i;
             for (int i_6_ = 0; i_6_ < i_1_; i_6_++)
-                is[i_3_++] = this.anIntArray7483[i_5_ + i_6_];
+                is[i_3_++] = this.surfaceRaster[i_5_ + i_6_];
         }
         return is;
     }
@@ -83,9 +83,9 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void pa() {
-        for (int i = 0; i < aJavaThreadResourceArray7480.length; i++) {
-            aJavaThreadResourceArray7480[i].anInt2192 = aJavaThreadResourceArray7480[i].anInt2205;
-            aJavaThreadResourceArray7480[i].fogEnabled = false;
+        for (int i = 0; i < resources.length; i++) {
+            resources[i].fogColour2 = resources[i].fogColour1;
+            resources[i].fogEnabled = false;
         }
     }
 
@@ -127,7 +127,7 @@ final class JavaToolkit extends Toolkit {
                     int i_32_ = i_31_ - i_18_;
                     if (i >= this.clipX1 && i < this.clipX2 && i_31_ >= i_23_ && i_31_ < i_24_ && i_21_ < i_19_) {
                         int i_33_ = i_17_ + is[i_32_];
-                        if (i >= i_33_ && i < i_33_ + is_22_[i_32_]) this.anIntArray7483[i + i_31_ * this.surfaceWidth] = i_15_;
+                        if (i >= i_33_ && i < i_33_ + is_22_[i_32_]) this.surfaceRaster[i + i_31_ * this.surfaceWidth] = i_15_;
                     }
                     i_12_ += i_28_;
                     i++;
@@ -146,9 +146,9 @@ final class JavaToolkit extends Toolkit {
                         int i_37_ = i_17_ + is[i_36_];
                         if (i >= i_37_ && i < i_37_ + is_22_[i_36_]) {
                             int i_38_ = i + i_35_ * this.surfaceWidth;
-                            int i_39_ = this.anIntArray7483[i_38_];
+                            int i_39_ = this.surfaceRaster[i_38_];
                             i_39_ = (((i_39_ & 0xff00ff) * i_34_ >> 8 & 0xff00ff) + ((i_39_ & 0xff00) * i_34_ >> 8 & 0xff00));
-                            this.anIntArray7483[i_38_] = i_15_ + i_39_;
+                            this.surfaceRaster[i_38_] = i_15_ + i_39_;
                         }
                     }
                     i_12_ += i_28_;
@@ -166,11 +166,11 @@ final class JavaToolkit extends Toolkit {
                         int i_42_ = i_17_ + is[i_41_];
                         if (i >= i_42_ && i < i_42_ + is_22_[i_41_]) {
                             int i_43_ = i + i_40_ * this.surfaceWidth;
-                            int i_44_ = this.anIntArray7483[i_43_];
+                            int i_44_ = this.surfaceRaster[i_43_];
                             int i_45_ = i_15_ + i_44_;
                             int i_46_ = (i_15_ & 0xff00ff) + (i_44_ & 0xff00ff);
                             i_44_ = (i_46_ & 0x1000100) + (i_45_ - i_46_ & 0x10000);
-                            this.anIntArray7483[i_43_] = i_45_ - i_44_ | i_44_ - (i_44_ >>> 8);
+                            this.surfaceRaster[i_43_] = i_45_ - i_44_ | i_44_ - (i_44_ >>> 8);
                         }
                     }
                     i_12_ += i_28_;
@@ -193,7 +193,7 @@ final class JavaToolkit extends Toolkit {
             while (i_12_ <= i_14_) {
                 int i_50_ = i >> 16;
                 int i_51_ = i_12_ - i_18_;
-                if (i_12_ >= i_23_ && i_12_ < i_24_ && i_50_ >= this.clipX1 && i_50_ < this.clipX2 && i_21_ < i_19_ && i_50_ >= i_17_ + is[i_51_] && i_50_ < i_17_ + is[i_51_] + is_22_[i_51_]) this.anIntArray7483[i_50_ + i_12_ * this.surfaceWidth] = i_15_;
+                if (i_12_ >= i_23_ && i_12_ < i_24_ && i_50_ >= this.clipX1 && i_50_ < this.clipX2 && i_21_ < i_19_ && i_50_ >= i_17_ + is[i_51_] && i_50_ < i_17_ + is[i_51_] + is_22_[i_51_]) this.surfaceRaster[i_50_ + i_12_ * this.surfaceWidth] = i_15_;
                 i += i_47_;
                 i_12_++;
                 i_21_ += i_48_;
@@ -207,9 +207,9 @@ final class JavaToolkit extends Toolkit {
                 int i_54_ = i_12_ - i_18_;
                 if (i_12_ >= i_23_ && i_12_ < i_24_ && i_53_ >= this.clipX1 && i_53_ < this.clipX2 && i_21_ < i_19_ && i_53_ >= i_17_ + is[i_54_] && i_53_ < i_17_ + is[i_54_] + is_22_[i_54_]) {
                     int i_55_ = i_53_ + i_12_ * this.surfaceWidth;
-                    int i_56_ = this.anIntArray7483[i_55_];
+                    int i_56_ = this.surfaceRaster[i_55_];
                     i_56_ = (((i_56_ & 0xff00ff) * i_52_ >> 8 & 0xff00ff) + ((i_56_ & 0xff00) * i_52_ >> 8 & 0xff00));
-                    this.anIntArray7483[i_53_ + i_12_ * this.surfaceWidth] = i_15_ + i_56_;
+                    this.surfaceRaster[i_53_ + i_12_ * this.surfaceWidth] = i_15_ + i_56_;
                 }
                 i += i_47_;
                 i_12_++;
@@ -222,11 +222,11 @@ final class JavaToolkit extends Toolkit {
                 int i_58_ = i_12_ - i_18_;
                 if (i_12_ >= i_23_ && i_12_ < i_24_ && i_57_ >= this.clipX1 && i_57_ < this.clipX2 && i_21_ < i_19_ && i_57_ >= i_17_ + is[i_58_] && i_57_ < i_17_ + is[i_58_] + is_22_[i_58_]) {
                     int i_59_ = i_57_ + i_12_ * this.surfaceWidth;
-                    int i_60_ = this.anIntArray7483[i_59_];
+                    int i_60_ = this.surfaceRaster[i_59_];
                     int i_61_ = i_15_ + i_60_;
                     int i_62_ = (i_15_ & 0xff00ff) + (i_60_ & 0xff00ff);
                     i_60_ = (i_62_ & 0x1000100) + (i_61_ - i_62_ & 0x10000);
-                    this.anIntArray7483[i_59_] = i_61_ - i_60_ | i_60_ - (i_60_ >>> 8);
+                    this.surfaceRaster[i_59_] = i_61_ - i_60_ | i_60_ - (i_60_ >>> 8);
                 }
                 i += i_47_;
                 i_12_++;
@@ -283,24 +283,24 @@ final class JavaToolkit extends Toolkit {
             int i_76_ = i_73_ >>> 24;
             if (i_74_ == 0 || i_74_ == 1 && i_76_ == 255) {
                 for (int i_77_ = 0; i_77_ < i_72_; i_77_++)
-                    this.anIntArray7483[i_75_ + i_77_ * this.surfaceWidth] = i_73_;
+                    this.surfaceRaster[i_75_ + i_77_ * this.surfaceWidth] = i_73_;
             } else if (i_74_ == 1) {
                 i_73_ = (((i_73_ & 0xff00ff) * i_76_ >> 8 & 0xff00ff) + ((i_73_ & 0xff00) * i_76_ >> 8 & 0xff00) + (i_76_ << 24));
                 int i_78_ = 256 - i_76_;
                 for (int i_79_ = 0; i_79_ < i_72_; i_79_++) {
                     int i_80_ = i_75_ + i_79_ * this.surfaceWidth;
-                    int i_81_ = this.anIntArray7483[i_80_];
+                    int i_81_ = this.surfaceRaster[i_80_];
                     i_81_ = (((i_81_ & 0xff00ff) * i_78_ >> 8 & 0xff00ff) + ((i_81_ & 0xff00) * i_78_ >> 8 & 0xff00));
-                    this.anIntArray7483[i_80_] = i_73_ + i_81_;
+                    this.surfaceRaster[i_80_] = i_73_ + i_81_;
                 }
             } else if (i_74_ == 2) {
                 for (int i_82_ = 0; i_82_ < i_72_; i_82_++) {
                     int i_83_ = i_75_ + i_82_ * this.surfaceWidth;
-                    int i_84_ = this.anIntArray7483[i_83_];
+                    int i_84_ = this.surfaceRaster[i_83_];
                     int i_85_ = i_73_ + i_84_;
                     int i_86_ = (i_73_ & 0xff00ff) + (i_84_ & 0xff00ff);
                     i_84_ = (i_86_ & 0x1000100) + (i_85_ - i_86_ & 0x10000);
-                    this.anIntArray7483[i_83_] = i_85_ - i_84_ | i_84_ - (i_84_ >>> 8);
+                    this.surfaceRaster[i_83_] = i_85_ - i_84_ | i_84_ - (i_84_ >>> 8);
                 }
             } else throw new IllegalArgumentException();
         }
@@ -315,12 +315,12 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void ra(int i, int i_87_, int i_88_, int i_89_) {
-        for (int i_90_ = 0; i_90_ < aJavaThreadResourceArray7480.length; i_90_++) {
-            aJavaThreadResourceArray7480[i_90_].anInt2205 = aJavaThreadResourceArray7480[i_90_].anInt2192;
-            aJavaThreadResourceArray7480[i_90_].anInt2211 = i;
-            aJavaThreadResourceArray7480[i_90_].anInt2192 = i_87_;
-            aJavaThreadResourceArray7480[i_90_].anInt2197 = i_88_;
-            aJavaThreadResourceArray7480[i_90_].fogEnabled = true;
+        for (int i_90_ = 0; i_90_ < resources.length; i_90_++) {
+            resources[i_90_].fogColour1 = resources[i_90_].fogColour2;
+            resources[i_90_].waterHeight = i;
+            resources[i_90_].fogColour2 = i_87_;
+            resources[i_90_].waterDepth = i_88_;
+            resources[i_90_].fogEnabled = true;
         }
     }
 
@@ -348,7 +348,7 @@ final class JavaToolkit extends Toolkit {
                 aSprite_7513 = sprite;
             }
             i_93_++;
-            ((Sprite_Sub3) aSprite_7513).method996(i - i_95_, i_91_ - i_95_, i_92_, i_93_, i_93_, 0, class318_sub9_sub2.anInt8790, 1, 1);
+            ((JavaSprite) aSprite_7513).method996(i - i_95_, i_91_ - i_95_, i_92_, i_93_, i_93_, 0, class318_sub9_sub2.anInt8790, 1, 1);
         }
     }
 
@@ -359,7 +359,7 @@ final class JavaToolkit extends Toolkit {
         this.viewY1 = this.clipY1 - this.projectionCenterY;
         this.viewY2 = this.clipY2 - this.projectionCenterY;
         for (int i = 0; i < this.threadCount; i++) {
-            Rasterizer rasterizer = aJavaThreadResourceArray7480[i].aRasterizer_2220;
+            Rasterizer rasterizer = resources[i].rasterizer;
             rasterizer.minX = this.projectionCenterX - this.clipX1;
             rasterizer.minY = this.projectionCenterY - this.clipY1;
             rasterizer.width = this.clipX2 - this.clipX1;
@@ -368,7 +368,7 @@ final class JavaToolkit extends Toolkit {
         int pixel = (this.clipY1 * this.surfaceWidth + this.clipX1);
         for (int y = this.clipY1; y < this.clipY2; y++) {
             for (int i = 0; i < this.threadCount; i++)
-                aJavaThreadResourceArray7480[i].aRasterizer_2220.lineOffsets[y - this.clipY1] = pixel;
+                resources[i].rasterizer.lineOffsets[y - this.clipY1] = pixel;
             pixel += this.surfaceWidth;
         }
     }
@@ -421,8 +421,8 @@ final class JavaToolkit extends Toolkit {
                 for (int i_118_ = -i_101_; i_118_ < 0; i_118_++) {
                     int i_119_ = (i_107_ >> 16) * i_104_;
                     for (int i_120_ = -i_100_; i_120_ < 0; i_120_++) {
-                        if (is[(i_106_ >> 16) + i_119_] != 0) this.anIntArray7483[i_110_++] = i_103_;
-                        else this.anIntArray7483[i_110_++] = i_102_;
+                        if (is[(i_106_ >> 16) + i_119_] != 0) this.surfaceRaster[i_110_++] = i_103_;
+                        else this.surfaceRaster[i_110_++] = i_102_;
                         i_106_ += i_108_;
                     }
                     i_107_ += i_109_;
@@ -438,8 +438,8 @@ final class JavaToolkit extends Toolkit {
                         if (is[(i_106_ >> 16) + i_123_] != 0) i_125_ = i_103_;
                         int i_126_ = i_125_ >>> 24;
                         int i_127_ = 255 - i_126_;
-                        int i_128_ = this.anIntArray7483[i_110_];
-                        this.anIntArray7483[i_110_++] = ((((i_125_ & 0xff00ff) * i_126_ + (i_128_ & 0xff00ff) * i_127_) & ~0xff00ff) + (((i_125_ & 0xff00) * i_126_ + (i_128_ & 0xff00) * i_127_) & 0xff0000)) >> 8;
+                        int i_128_ = this.surfaceRaster[i_110_];
+                        this.surfaceRaster[i_110_++] = ((((i_125_ & 0xff00ff) * i_126_ + (i_128_ & 0xff00ff) * i_127_) & ~0xff00ff) + (((i_125_ & 0xff00) * i_126_ + (i_128_ & 0xff00) * i_127_) & 0xff0000)) >> 8;
                         i_106_ += i_108_;
                     }
                     i_107_ += i_109_;
@@ -454,11 +454,11 @@ final class JavaToolkit extends Toolkit {
                         int i_133_ = i_102_;
                         if (is[(i_106_ >> 16) + i_131_] != 0) i_133_ = i_103_;
                         if (i_133_ != 0) {
-                            int i_134_ = this.anIntArray7483[i_110_];
+                            int i_134_ = this.surfaceRaster[i_110_];
                             int i_135_ = i_133_ + i_134_;
                             int i_136_ = (i_133_ & 0xff00ff) + (i_134_ & 0xff00ff);
                             i_134_ = (i_136_ & 0x1000100) + (i_135_ - i_136_ & 0x10000);
-                            this.anIntArray7483[i_110_++] = i_135_ - i_134_ | i_134_ - (i_134_ >>> 8);
+                            this.surfaceRaster[i_110_++] = i_135_ - i_134_ | i_134_ - (i_134_ >>> 8);
                         } else i_110_++;
                         i_106_ += i_108_;
                     }
@@ -482,7 +482,7 @@ final class JavaToolkit extends Toolkit {
         if (i < 0) i = 0;
         if (i_142_ < 0) i_142_ = 0;
         if (i_143_ > this.surfaceWidth) i_143_ = this.surfaceWidth;
-        if (i_144_ > anInt7486) i_144_ = anInt7486;
+        if (i_144_ > surfaceHeight) i_144_ = surfaceHeight;
         this.clipX1 = i;
         this.clipX2 = i_143_;
         this.clipY1 = i_142_;
@@ -522,7 +522,7 @@ final class JavaToolkit extends Toolkit {
                 if (this.clipX2 < i_152_ + i_153_) i_153_ = this.clipX2 - i_152_;
                 i_152_ += i_150_;
                 for (int i_154_ = -i_153_; i_154_ < 0; i_154_++)
-                    this.anIntArray7483[i_152_++] = i;
+                    this.surfaceRaster[i_152_++] = i;
                 i_150_ += this.surfaceWidth;
             }
         }
@@ -549,7 +549,7 @@ final class JavaToolkit extends Toolkit {
             if (i_160_ == 0 || i_160_ == 1 && i_165_ == 255) {
                 int i_168_ = 0;
                 while (i_168_ < i_158_) {
-                    if (i + i_168_ >= this.clipX1 && i + i_168_ < this.clipX2 && i_167_ < i_161_) this.anIntArray7483[i_164_ + i_168_] = i_159_;
+                    if (i + i_168_ >= this.clipX1 && i + i_168_ < this.clipX2 && i_167_ < i_161_) this.surfaceRaster[i_164_ + i_168_] = i_159_;
                     i_168_++;
                     i_167_ = ++i_167_ % i_166_;
                 }
@@ -559,9 +559,9 @@ final class JavaToolkit extends Toolkit {
                 int i_170_ = 0;
                 while (i_170_ < i_158_) {
                     if (i + i_170_ >= this.clipX1 && i + i_170_ < this.clipX2 && i_167_ < i_161_) {
-                        int i_171_ = this.anIntArray7483[i_164_ + i_170_];
+                        int i_171_ = this.surfaceRaster[i_164_ + i_170_];
                         i_171_ = (((i_171_ & 0xff00ff) * i_169_ >> 8 & 0xff00ff) + ((i_171_ & 0xff00) * i_169_ >> 8 & 0xff00));
-                        this.anIntArray7483[i_164_ + i_170_] = i_159_ + i_171_;
+                        this.surfaceRaster[i_164_ + i_170_] = i_159_ + i_171_;
                     }
                     i_170_++;
                     i_167_ = ++i_167_ % i_166_;
@@ -570,11 +570,11 @@ final class JavaToolkit extends Toolkit {
                 int i_172_ = 0;
                 while (i_172_ < i_158_) {
                     if (i + i_172_ >= this.clipX1 && i + i_172_ < this.clipX2 && i_167_ < i_161_) {
-                        int i_173_ = this.anIntArray7483[i_164_ + i_172_];
+                        int i_173_ = this.surfaceRaster[i_164_ + i_172_];
                         int i_174_ = i_159_ + i_173_;
                         int i_175_ = (i_159_ & 0xff00ff) + (i_173_ & 0xff00ff);
                         i_173_ = (i_175_ & 0x1000100) + (i_174_ - i_175_ & 0x10000);
-                        this.anIntArray7483[i_164_ + i_172_] = i_174_ - i_173_ | i_173_ - (i_173_ >>> 8);
+                        this.surfaceRaster[i_164_ + i_172_] = i_174_ - i_173_ | i_173_ - (i_173_ >>> 8);
                     }
                     i_172_++;
                     i_167_ = ++i_167_ % i_166_;
@@ -588,21 +588,21 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void ya() {
-        if (this.clipX1 == 0 && this.clipX2 == this.surfaceWidth && this.clipY1 == 0 && this.clipY2 == anInt7486) {
-            int i = this.aFloatArray7511.length;
+        if (this.clipX1 == 0 && this.clipX2 == this.surfaceWidth && this.clipY1 == 0 && this.clipY2 == surfaceHeight) {
+            int i = this.depthBuffer.length;
             int i_176_ = i - (i & 0x7);
             int i_177_ = 0;
             while (i_177_ < i_176_) {
-                this.aFloatArray7511[i_177_++] = 2.14748365E9F;
-                this.aFloatArray7511[i_177_++] = 2.14748365E9F;
-                this.aFloatArray7511[i_177_++] = 2.14748365E9F;
-                this.aFloatArray7511[i_177_++] = 2.14748365E9F;
-                this.aFloatArray7511[i_177_++] = 2.14748365E9F;
-                this.aFloatArray7511[i_177_++] = 2.14748365E9F;
-                this.aFloatArray7511[i_177_++] = 2.14748365E9F;
-                this.aFloatArray7511[i_177_++] = 2.14748365E9F;
+                this.depthBuffer[i_177_++] = 2.14748365E9F;
+                this.depthBuffer[i_177_++] = 2.14748365E9F;
+                this.depthBuffer[i_177_++] = 2.14748365E9F;
+                this.depthBuffer[i_177_++] = 2.14748365E9F;
+                this.depthBuffer[i_177_++] = 2.14748365E9F;
+                this.depthBuffer[i_177_++] = 2.14748365E9F;
+                this.depthBuffer[i_177_++] = 2.14748365E9F;
+                this.depthBuffer[i_177_++] = 2.14748365E9F;
             }
-            while (i_177_ < i) this.aFloatArray7511[i_177_++] = 2.14748365E9F;
+            while (i_177_ < i) this.depthBuffer[i_177_++] = 2.14748365E9F;
         } else {
             int i = this.clipX2 - this.clipX1;
             int i_178_ = this.clipY2 - this.clipY1;
@@ -615,19 +615,19 @@ final class JavaToolkit extends Toolkit {
                 if (i_181_ > 0) {
                     int i_184_ = i_181_;
                     do {
-                        this.aFloatArray7511[++i] = 2.14748365E9F;
-                        this.aFloatArray7511[++i] = 2.14748365E9F;
-                        this.aFloatArray7511[++i] = 2.14748365E9F;
-                        this.aFloatArray7511[++i] = 2.14748365E9F;
-                        this.aFloatArray7511[++i] = 2.14748365E9F;
-                        this.aFloatArray7511[++i] = 2.14748365E9F;
-                        this.aFloatArray7511[++i] = 2.14748365E9F;
-                        this.aFloatArray7511[++i] = 2.14748365E9F;
+                        this.depthBuffer[++i] = 2.14748365E9F;
+                        this.depthBuffer[++i] = 2.14748365E9F;
+                        this.depthBuffer[++i] = 2.14748365E9F;
+                        this.depthBuffer[++i] = 2.14748365E9F;
+                        this.depthBuffer[++i] = 2.14748365E9F;
+                        this.depthBuffer[++i] = 2.14748365E9F;
+                        this.depthBuffer[++i] = 2.14748365E9F;
+                        this.depthBuffer[++i] = 2.14748365E9F;
                     } while (--i_184_ > 0);
                 }
                 if (i_182_ > 0) {
                     int i_185_ = i_182_;
-                    do this.aFloatArray7511[++i] = 2.14748365E9F; while (--i_185_ > 0);
+                    do this.depthBuffer[++i] = 2.14748365E9F; while (--i_185_ > 0);
                 }
                 i += i_179_;
             }
@@ -649,22 +649,22 @@ final class JavaToolkit extends Toolkit {
             int i_191_ = i_188_ >>> 24;
             if (i_189_ == 0 || i_189_ == 1 && i_191_ == 255) {
                 for (int i_192_ = 0; i_192_ < i_187_; i_192_++)
-                    this.anIntArray7483[i_190_ + i_192_] = i_188_;
+                    this.surfaceRaster[i_190_ + i_192_] = i_188_;
             } else if (i_189_ == 1) {
                 i_188_ = (((i_188_ & 0xff00ff) * i_191_ >> 8 & 0xff00ff) + ((i_188_ & 0xff00) * i_191_ >> 8 & 0xff00) + (i_191_ << 24));
                 int i_193_ = 256 - i_191_;
                 for (int i_194_ = 0; i_194_ < i_187_; i_194_++) {
-                    int i_195_ = this.anIntArray7483[i_190_ + i_194_];
+                    int i_195_ = this.surfaceRaster[i_190_ + i_194_];
                     i_195_ = (((i_195_ & 0xff00ff) * i_193_ >> 8 & 0xff00ff) + ((i_195_ & 0xff00) * i_193_ >> 8 & 0xff00));
-                    this.anIntArray7483[i_190_ + i_194_] = i_188_ + i_195_;
+                    this.surfaceRaster[i_190_ + i_194_] = i_188_ + i_195_;
                 }
             } else if (i_189_ == 2) {
                 for (int i_196_ = 0; i_196_ < i_187_; i_196_++) {
-                    int i_197_ = this.anIntArray7483[i_190_ + i_196_];
+                    int i_197_ = this.surfaceRaster[i_190_ + i_196_];
                     int i_198_ = i_188_ + i_197_;
                     int i_199_ = (i_188_ & 0xff00ff) + (i_197_ & 0xff00ff);
                     i_197_ = (i_199_ & 0x1000100) + (i_198_ - i_199_ & 0x10000);
-                    this.anIntArray7483[i_190_ + i_196_] = i_198_ - i_197_ | i_197_ - (i_197_ >>> 8);
+                    this.surfaceRaster[i_190_ + i_196_] = i_198_ - i_197_ | i_197_ - (i_197_ >>> 8);
                 }
             } else throw new IllegalArgumentException();
         }
@@ -722,16 +722,16 @@ final class JavaToolkit extends Toolkit {
         for (int i_220_ = 0; i_220_ < i_217_; i_220_++) {
             int i_221_ = i_220_ * i_216_;
             for (int i_222_ = 0; i_222_ < i_216_; i_222_++)
-                is[i_221_ + i_222_] = this.anIntArray7483[i_218_++];
+                is[i_221_ + i_222_] = this.surfaceRaster[i_218_++];
             i_218_ += i_219_;
         }
-        if (bool) return new Sprite_Sub3_Sub3(this, is, i_216_, i_217_);
-        return new Sprite_Sub3_Sub1(this, is, i_216_, i_217_);
+        if (bool) return new JavaArgbSprite(this, is, i_216_, i_217_);
+        return new JavaRgbSprite(this, is, i_216_, i_217_);
     }
 
     private final void method3717() {
         for (int i = 0; i < this.threadCount; i++)
-            aJavaThreadResourceArray7480[i].method1292(64);
+            resources[i].method1292(64);
         la();
     }
 
@@ -753,21 +753,21 @@ final class JavaToolkit extends Toolkit {
 
     final void method3701(Canvas canvas) {
         if (aCanvas7468 == canvas) method3677(null);
-        Class348_Sub31 class348_sub31 = ((Class348_Sub31) aClass356_7467.method3480(canvas.hashCode(), -6008));
-        if (class348_sub31 != null) class348_sub31.method2715((byte) 100);
+        JavaSurface javaSurface = ((JavaSurface) aClass356_7467.method3480(canvas.hashCode(), -6008));
+        if (javaSurface != null) javaSurface.method2715((byte) 100);
     }
 
     final void L(int i, int i_226_, int i_227_) {
-        for (int i_228_ = 0; i_228_ < aJavaThreadResourceArray7480.length; i_228_++) {
-            JavaThreadResource javaThreadResource = aJavaThreadResourceArray7480[i_228_];
-            javaThreadResource.anInt2192 = i & 0xffffff;
-            int i_229_ = javaThreadResource.anInt2192 >>> 16 & 0xff;
+        for (int i_228_ = 0; i_228_ < resources.length; i_228_++) {
+            JavaThreadResource javaThreadResource = resources[i_228_];
+            javaThreadResource.fogColour2 = i & 0xffffff;
+            int i_229_ = javaThreadResource.fogColour2 >>> 16 & 0xff;
             if (i_229_ < 2) i_229_ = 2;
-            int i_230_ = javaThreadResource.anInt2192 >> 8 & 0xff;
+            int i_230_ = javaThreadResource.fogColour2 >> 8 & 0xff;
             if (i_230_ < 2) i_230_ = 2;
-            int i_231_ = javaThreadResource.anInt2192 & 0xff;
+            int i_231_ = javaThreadResource.fogColour2 & 0xff;
             if (i_231_ < 2) i_231_ = 2;
-            javaThreadResource.anInt2192 = i_229_ << 16 | i_230_ << 8 | i_231_;
+            javaThreadResource.fogColour2 = i_229_ << 16 | i_230_ << 8 | i_231_;
             javaThreadResource.fogActive = i_226_ >= 0;
         }
     }
@@ -777,17 +777,17 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void method3643(Canvas canvas, int i, int i_232_) {
-        Class348_Sub31 class348_sub31 = ((Class348_Sub31) aClass356_7467.method3480(canvas.hashCode(), -6008));
-        if (class348_sub31 == null) {
-            class348_sub31 = Class110.method1035(9029, i_232_, canvas, i);
-            aClass356_7467.method3483((byte) 21, canvas.hashCode(), class348_sub31);
-        } else if (class348_sub31.anInt6917 != i || class348_sub31.anInt6920 != i_232_) method3669(canvas, i, i_232_);
+        JavaSurface javaSurface = ((JavaSurface) aClass356_7467.method3480(canvas.hashCode(), -6008));
+        if (javaSurface == null) {
+            javaSurface = Class110.method1035(9029, i_232_, canvas, i);
+            aClass356_7467.method3483((byte) 21, canvas.hashCode(), javaSurface);
+        } else if (javaSurface.width != i || javaSurface.height != i_232_) method3669(canvas, i, i_232_);
     }
 
     final void b(int i, int i_233_, int i_234_, int i_235_, double d) {
-        int i_236_ = anInt7495 - i_234_;
-        int i_237_ = i_233_ * anInt7495 + i;
-        float[] fs = this.aFloatArray7511;
+        int i_236_ = depthWidth - i_234_;
+        int i_237_ = i_233_ * depthWidth + i;
+        float[] fs = this.depthBuffer;
         int i_238_ = 0;
         while (i_238_ < i_235_) {
             int i_239_ = 0;
@@ -806,11 +806,12 @@ final class JavaToolkit extends Toolkit {
         /* empty */
     }
 
-    final void method3631(int i) {
+    // method3631
+    final void allocateThreads(int i) {
         this.threadCount = i;
-        aJavaThreadResourceArray7480 = new JavaThreadResource[this.threadCount];
-        for (int i_240_ = 0; i_240_ < this.threadCount; i_240_++)
-            aJavaThreadResourceArray7480[i_240_] = new JavaThreadResource(this);
+        resources = new JavaThreadResource[this.threadCount];
+        for (int t = 0; t < this.threadCount; t++)
+            resources[t] = new JavaThreadResource(this);
     }
 
     final void method3709(int i, int i_241_, int i_242_, int i_243_, int i_244_, int i_245_) {
@@ -844,7 +845,7 @@ final class JavaToolkit extends Toolkit {
                 if (i_245_ == 0 || i_245_ == 1 && i_247_ == 255) {
                     for (/**/; i <= i_242_; i++) {
                         int i_248_ = i_241_ >> 16;
-                        if (i_248_ >= this.clipY1 && i_248_ < this.clipY2) this.anIntArray7483[i + i_248_ * this.surfaceWidth] = i_244_;
+                        if (i_248_ >= this.clipY1 && i_248_ < this.clipY2) this.surfaceRaster[i + i_248_ * this.surfaceWidth] = i_244_;
                         i_241_ += i_246_;
                     }
                     return;
@@ -856,9 +857,9 @@ final class JavaToolkit extends Toolkit {
                         int i_250_ = i_241_ >> 16;
                         if (i_250_ >= this.clipY1 && i_250_ < this.clipY2) {
                             int i_251_ = i + i_250_ * this.surfaceWidth;
-                            int i_252_ = this.anIntArray7483[i_251_];
+                            int i_252_ = this.surfaceRaster[i_251_];
                             i_252_ = (((i_252_ & 0xff00ff) * i_249_ >> 8 & 0xff00ff) + ((i_252_ & 0xff00) * i_249_ >> 8 & 0xff00));
-                            this.anIntArray7483[i_251_] = i_244_ + i_252_;
+                            this.surfaceRaster[i_251_] = i_244_ + i_252_;
                         }
                         i_241_ += i_246_;
                     }
@@ -869,11 +870,11 @@ final class JavaToolkit extends Toolkit {
                         int i_253_ = i_241_ >> 16;
                         if (i_253_ >= this.clipY1 && i_253_ < this.clipY2) {
                             int i_254_ = i + i_253_ * this.surfaceWidth;
-                            int i_255_ = this.anIntArray7483[i_254_];
+                            int i_255_ = this.surfaceRaster[i_254_];
                             int i_256_ = i_244_ + i_255_;
                             int i_257_ = (i_244_ & 0xff00ff) + (i_255_ & 0xff00ff);
                             i_255_ = (i_257_ & 0x1000100) + (i_256_ - i_257_ & 0x10000);
-                            this.anIntArray7483[i_254_] = i_256_ - i_255_ | i_255_ - (i_255_ >>> 8);
+                            this.surfaceRaster[i_254_] = i_256_ - i_255_ | i_255_ - (i_255_ >>> 8);
                         }
                         i_241_ += i_246_;
                     }
@@ -895,7 +896,7 @@ final class JavaToolkit extends Toolkit {
             if (i_245_ == 0 || i_245_ == 1 && i_259_ == 255) {
                 for (/**/; i_241_ <= i_243_; i_241_++) {
                     int i_260_ = i >> 16;
-                    if (i_260_ >= this.clipX1 && i_260_ < this.clipX2) this.anIntArray7483[i_260_ + i_241_ * this.surfaceWidth] = i_244_;
+                    if (i_260_ >= this.clipX1 && i_260_ < this.clipX2) this.surfaceRaster[i_260_ + i_241_ * this.surfaceWidth] = i_244_;
                     i += i_258_;
                 }
             } else if (i_245_ == 1) {
@@ -905,9 +906,9 @@ final class JavaToolkit extends Toolkit {
                     int i_262_ = i >> 16;
                     if (i_262_ >= this.clipX1 && i_262_ < this.clipX2) {
                         int i_263_ = i_262_ + i_241_ * this.surfaceWidth;
-                        int i_264_ = this.anIntArray7483[i_263_];
+                        int i_264_ = this.surfaceRaster[i_263_];
                         i_264_ = (((i_264_ & 0xff00ff) * i_261_ >> 8 & 0xff00ff) + ((i_264_ & 0xff00) * i_261_ >> 8 & 0xff00));
-                        this.anIntArray7483[i_262_ + i_241_ * this.surfaceWidth] = i_244_ + i_264_;
+                        this.surfaceRaster[i_262_ + i_241_ * this.surfaceWidth] = i_244_ + i_264_;
                     }
                     i += i_258_;
                 }
@@ -916,11 +917,11 @@ final class JavaToolkit extends Toolkit {
                     int i_265_ = i >> 16;
                     if (i_265_ >= this.clipX1 && i_265_ < this.clipX2) {
                         int i_266_ = i_265_ + i_241_ * this.surfaceWidth;
-                        int i_267_ = this.anIntArray7483[i_266_];
+                        int i_267_ = this.surfaceRaster[i_266_];
                         int i_268_ = i_244_ + i_267_;
                         int i_269_ = (i_244_ & 0xff00ff) + (i_267_ & 0xff00ff);
                         i_267_ = (i_269_ & 0x1000100) + (i_268_ - i_269_ & 0x10000);
-                        this.anIntArray7483[i_266_] = i_268_ - i_267_ | i_267_ - (i_267_ >>> 8);
+                        this.surfaceRaster[i_266_] = i_268_ - i_267_ | i_267_ - (i_267_ >>> 8);
                     }
                     i += i_258_;
                 }
@@ -930,7 +931,7 @@ final class JavaToolkit extends Toolkit {
 
     final void method3676(int i, int i_270_, int i_271_, int i_272_, int i_273_, int i_274_, int i_275_, int i_276_, int i_277_, int i_278_, int i_279_, int i_280_, int i_281_) {
         JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
-        Rasterizer rasterizer = javaThreadResource.aRasterizer_2220;
+        Rasterizer rasterizer = javaThreadResource.rasterizer;
         rasterizer.aBoolean1669 = false;
         i -= this.viewX1;
         i_272_ -= this.viewX1;
@@ -973,8 +974,8 @@ final class JavaToolkit extends Toolkit {
         return new FontRenderer_Sub3(this, fontMetrics, class207s, is, is_283_);
     }
 
-    final Interface4 method3634(Interface3 interface3, Interface13 interface13) {
-        return new Class49(this, (Sprite) interface3, (Class216) interface13);
+    final OffscreenSurface method3634(Interface3 interface3, Interface13 interface13) {
+        return new JavaOffscreenSurface(this, (Sprite) interface3, (Class216) interface13);
     }
 
     final void C(boolean bool) {
@@ -1014,7 +1015,7 @@ final class JavaToolkit extends Toolkit {
                     int i_298_ = i_297_ - i_291_;
                     if (i_297_ >= i_293_ && i_297_ < i_294_) {
                         int i_299_ = i_290_ + is[i_298_];
-                        if (i >= i_299_ && i < i_299_ + is_292_[i_298_]) this.anIntArray7483[i + i_297_ * this.surfaceWidth] = i_288_;
+                        if (i >= i_299_ && i < i_299_ + is_292_[i_298_]) this.surfaceRaster[i + i_297_ * this.surfaceWidth] = i_288_;
                     }
                     i_285_ += i_295_;
                 }
@@ -1030,9 +1031,9 @@ final class JavaToolkit extends Toolkit {
                         int i_303_ = i_290_ + is[i_302_];
                         if (i >= i_303_ && i < i_303_ + is_292_[i_302_]) {
                             int i_304_ = i + i_301_ * this.surfaceWidth;
-                            int i_305_ = this.anIntArray7483[i_304_];
+                            int i_305_ = this.surfaceRaster[i_304_];
                             i_305_ = (((i_305_ & 0xff00ff) * i_300_ >> 8 & 0xff00ff) + ((i_305_ & 0xff00) * i_300_ >> 8 & 0xff00));
-                            this.anIntArray7483[i_304_] = i_288_ + i_305_;
+                            this.surfaceRaster[i_304_] = i_288_ + i_305_;
                         }
                     }
                     i_285_ += i_295_;
@@ -1047,11 +1048,11 @@ final class JavaToolkit extends Toolkit {
                         int i_308_ = i_290_ + is[i_307_];
                         if (i >= i_308_ && i < i_308_ + is_292_[i_307_]) {
                             int i_309_ = i + i_306_ * this.surfaceWidth;
-                            int i_310_ = this.anIntArray7483[i_309_];
+                            int i_310_ = this.surfaceRaster[i_309_];
                             int i_311_ = i_288_ + i_310_;
                             int i_312_ = (i_288_ & 0xff00ff) + (i_310_ & 0xff00ff);
                             i_310_ = (i_312_ & 0x1000100) + (i_311_ - i_312_ & 0x10000);
-                            this.anIntArray7483[i_309_] = i_311_ - i_310_ | i_310_ - (i_310_ >>> 8);
+                            this.surfaceRaster[i_309_] = i_311_ - i_310_ | i_310_ - (i_310_ >>> 8);
                         }
                     }
                     i_285_ += i_295_;
@@ -1076,7 +1077,7 @@ final class JavaToolkit extends Toolkit {
                 int i_315_ = i >> 16;
                 int i_316_ = i_285_ - i_291_;
                 int i_317_ = i_290_ + is[i_316_];
-                if (i_315_ >= this.clipX1 && i_315_ < this.clipX2 && i_315_ >= i_317_ && i_315_ < i_317_ + is_292_[i_316_]) this.anIntArray7483[i_315_ + i_285_ * this.surfaceWidth] = i_288_;
+                if (i_315_ >= this.clipX1 && i_315_ < this.clipX2 && i_315_ >= i_317_ && i_315_ < i_317_ + is_292_[i_316_]) this.surfaceRaster[i_315_ + i_285_ * this.surfaceWidth] = i_288_;
                 i += i_313_;
             }
         } else if (i_289_ == 1) {
@@ -1088,9 +1089,9 @@ final class JavaToolkit extends Toolkit {
                 int i_321_ = i_290_ + is[i_320_];
                 if (i_319_ >= this.clipX1 && i_319_ < this.clipX2 && i_319_ >= i_321_ && i_319_ < i_321_ + is_292_[i_320_]) {
                     int i_322_ = i_319_ + i_285_ * this.surfaceWidth;
-                    int i_323_ = this.anIntArray7483[i_322_];
+                    int i_323_ = this.surfaceRaster[i_322_];
                     i_323_ = (((i_323_ & 0xff00ff) * i_318_ >> 8 & 0xff00ff) + ((i_323_ & 0xff00) * i_318_ >> 8 & 0xff00));
-                    this.anIntArray7483[i_319_ + i_285_ * this.surfaceWidth] = i_288_ + i_323_;
+                    this.surfaceRaster[i_319_ + i_285_ * this.surfaceWidth] = i_288_ + i_323_;
                 }
                 i += i_313_;
             }
@@ -1101,11 +1102,11 @@ final class JavaToolkit extends Toolkit {
                 int i_326_ = i_290_ + is[i_325_];
                 if (i_324_ >= this.clipX1 && i_324_ < this.clipX2 && i_324_ >= i_326_ && i_324_ < i_326_ + is_292_[i_325_]) {
                     int i_327_ = i_324_ + i_285_ * this.surfaceWidth;
-                    int i_328_ = this.anIntArray7483[i_327_];
+                    int i_328_ = this.surfaceRaster[i_327_];
                     int i_329_ = i_288_ + i_328_;
                     int i_330_ = (i_288_ & 0xff00ff) + (i_328_ & 0xff00ff);
                     i_328_ = (i_330_ & 0x1000100) + (i_329_ - i_330_ & 0x10000);
-                    this.anIntArray7483[i_327_] = i_329_ - i_328_ | i_328_ - (i_328_ >>> 8);
+                    this.surfaceRaster[i_327_] = i_329_ - i_328_ | i_328_ - (i_328_ >>> 8);
                 }
                 i += i_313_;
             }
@@ -1147,19 +1148,19 @@ final class JavaToolkit extends Toolkit {
                     if (i_342_ > 0) {
                         i = i_342_;
                         do {
-                            this.anIntArray7483[++i_335_] = i_337_;
-                            this.anIntArray7483[++i_335_] = i_337_;
-                            this.anIntArray7483[++i_335_] = i_337_;
-                            this.anIntArray7483[++i_335_] = i_337_;
-                            this.anIntArray7483[++i_335_] = i_337_;
-                            this.anIntArray7483[++i_335_] = i_337_;
-                            this.anIntArray7483[++i_335_] = i_337_;
-                            this.anIntArray7483[++i_335_] = i_337_;
+                            this.surfaceRaster[++i_335_] = i_337_;
+                            this.surfaceRaster[++i_335_] = i_337_;
+                            this.surfaceRaster[++i_335_] = i_337_;
+                            this.surfaceRaster[++i_335_] = i_337_;
+                            this.surfaceRaster[++i_335_] = i_337_;
+                            this.surfaceRaster[++i_335_] = i_337_;
+                            this.surfaceRaster[++i_335_] = i_337_;
+                            this.surfaceRaster[++i_335_] = i_337_;
                         } while (--i > 0);
                     }
                     if (i_343_ > 0) {
                         i = i_343_;
-                        do this.anIntArray7483[++i_335_] = i_337_; while (--i > 0);
+                        do this.surfaceRaster[++i_335_] = i_337_; while (--i > 0);
                     }
                     i_335_ += i_339_;
                 }
@@ -1168,20 +1169,20 @@ final class JavaToolkit extends Toolkit {
                 int i_345_ = 256 - i_341_;
                 for (int i_346_ = 0; i_346_ < i_336_; i_346_++) {
                     for (int i_347_ = -i_335_; i_347_ < 0; i_347_++) {
-                        int i_348_ = this.anIntArray7483[i_340_];
+                        int i_348_ = this.surfaceRaster[i_340_];
                         i_348_ = (((i_348_ & 0xff00ff) * i_345_ >> 8 & 0xff00ff) + (((i_348_ & ~0xff00ff) >>> 8) * i_345_ & ~0xff00ff));
-                        this.anIntArray7483[i_340_++] = i_337_ + i_348_;
+                        this.surfaceRaster[i_340_++] = i_337_ + i_348_;
                     }
                     i_340_ += i_339_;
                 }
             } else if (i_338_ == 2) {
                 for (int i_349_ = 0; i_349_ < i_336_; i_349_++) {
                     for (int i_350_ = -i_335_; i_350_ < 0; i_350_++) {
-                        int i_351_ = this.anIntArray7483[i_340_];
+                        int i_351_ = this.surfaceRaster[i_340_];
                         int i_352_ = i_337_ + i_351_;
                         int i_353_ = (i_337_ & 0xff00ff) + (i_351_ & 0xff00ff);
                         i_351_ = (i_353_ & 0x1000100) + (i_352_ - i_353_ & 0x10000);
-                        this.anIntArray7483[i_340_++] = i_352_ - i_351_ | i_351_ - (i_351_ >>> 8);
+                        this.surfaceRaster[i_340_++] = i_352_ - i_351_ | i_351_ - (i_351_ >>> 8);
                     }
                     i_340_ += i_339_;
                 }
@@ -1210,10 +1211,10 @@ final class JavaToolkit extends Toolkit {
             Class286_Sub8.method2173(false, -101, true);
             aBoolean7471 = false;
         }
-        this.aClass348_Sub31_7469 = null;
+        this.surface = null;
         aCanvas7468 = null;
-        anInt7465 = 0;
-        anInt7472 = 0;
+        canvasWidth = 0;
+        canvasHeight = 0;
         aClass356_7467 = null;
         aBoolean7470 = true;
     }
@@ -1275,7 +1276,7 @@ final class JavaToolkit extends Toolkit {
         this.clipX1 = 0;
         this.clipY1 = 0;
         this.clipX2 = this.surfaceWidth;
-        this.clipY2 = anInt7486;
+        this.clipY2 = surfaceHeight;
         updateViewport();
     }
 
@@ -1289,15 +1290,15 @@ final class JavaToolkit extends Toolkit {
 
     final void method3632(int[] is) {
         is[0] = this.surfaceWidth;
-        is[1] = anInt7486;
+        is[1] = surfaceHeight;
     }
 
     final void F(int i, int i_370_) {
         int i_371_ = i_370_ * this.surfaceWidth + i;
-        int i_372_ = i_370_ * anInt7495 + i;
+        int i_372_ = i_370_ * depthWidth + i;
         if (i_371_ != 0 || i_372_ != 0) {
-            int[] is = this.anIntArray7483;
-            float[] fs = this.aFloatArray7511;
+            int[] is = this.surfaceRaster;
+            float[] fs = this.depthBuffer;
             if (i_371_ < 0) {
                 int i_373_ = is.length + i_371_;
                 Class214.method1578(is, -i_371_, is, 0, i_373_);
@@ -1315,15 +1316,15 @@ final class JavaToolkit extends Toolkit {
         }
     }
 
-    final void method3687(Interface4 interface4) {
-        Class49 class49 = (Class49) interface4;
-        this.surfaceWidth = class49.anInt4725;
-        anInt7486 = class49.anInt4722;
-        this.anIntArray7483 = class49.anIntArray4731;
-        aClass49_7475 = class49;
-        anInt7495 = class49.anInt4725;
-        anInt7488 = class49.anInt4722;
-        this.aFloatArray7511 = class49.aFloatArray4719;
+    final void method3687(OffscreenSurface offscreenSurface) {
+        JavaOffscreenSurface javaOffscreenSurface = (JavaOffscreenSurface) offscreenSurface;
+        this.surfaceWidth = javaOffscreenSurface.width;
+        surfaceHeight = javaOffscreenSurface.height;
+        this.surfaceRaster = javaOffscreenSurface.raster;
+        this.offscreenSurface = javaOffscreenSurface;
+        depthWidth = javaOffscreenSurface.width;
+        depthHeight = javaOffscreenSurface.height;
+        this.depthBuffer = javaOffscreenSurface.depthBuffer;
         method3717();
     }
 
@@ -1342,7 +1343,7 @@ final class JavaToolkit extends Toolkit {
                     anInt7512 = i_382_;
                     aSprite_7513 = sprite;
                 }
-                ((Sprite_Sub3) aSprite_7513).method996(i - i_379_, i_377_ - i_380_, i_378_, i_379_ << 1, i_380_ << 1, i_384_, i_383_, i_385_, 1);
+                ((JavaSprite) aSprite_7513).method996(i - i_379_, i_377_ - i_380_, i_378_, i_379_ << 1, i_380_ << 1, i_384_, i_383_, i_385_, 1);
             } else method3723(i, i_377_, i_378_, i_379_, i_383_, i_385_);
         }
     }
@@ -1353,9 +1354,9 @@ final class JavaToolkit extends Toolkit {
 
     final void EA(int i, int i_387_, int i_388_, int i_389_) {
         JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
-        javaThreadResource.anInt2211 = i;
-        javaThreadResource.anInt2192 = i_387_;
-        javaThreadResource.anInt2197 = i_388_;
+        javaThreadResource.waterHeight = i;
+        javaThreadResource.fogColour2 = i_387_;
+        javaThreadResource.waterDepth = i_388_;
     }
 
     private final void method3721(int i, int i_390_, int i_391_, int i_392_, int i_393_, int i_394_, int i_395_, int i_396_) {
@@ -1367,7 +1368,7 @@ final class JavaToolkit extends Toolkit {
             if (i_393_ == 0 || i_393_ == 1 && i_398_ == 255) {
                 int i_401_ = 0;
                 while (i_401_ < i_391_) {
-                    if (i_390_ + i_401_ >= this.clipY1 && i_390_ + i_401_ < this.clipY2 && i_400_ < i_394_) this.anIntArray7483[i_397_ + i_401_ * this.surfaceWidth] = i_392_;
+                    if (i_390_ + i_401_ >= this.clipY1 && i_390_ + i_401_ < this.clipY2 && i_400_ < i_394_) this.surfaceRaster[i_397_ + i_401_ * this.surfaceWidth] = i_392_;
                     i_401_++;
                     i_400_ = ++i_400_ % i_399_;
                 }
@@ -1378,9 +1379,9 @@ final class JavaToolkit extends Toolkit {
                 while (i_403_ < i_391_) {
                     if (i_390_ + i_403_ >= this.clipY1 && i_390_ + i_403_ < this.clipY2 && i_400_ < i_394_) {
                         int i_404_ = i_397_ + i_403_ * this.surfaceWidth;
-                        int i_405_ = this.anIntArray7483[i_404_];
+                        int i_405_ = this.surfaceRaster[i_404_];
                         i_405_ = (((i_405_ & 0xff00ff) * i_402_ >> 8 & 0xff00ff) + ((i_405_ & 0xff00) * i_402_ >> 8 & 0xff00));
-                        this.anIntArray7483[i_404_] = i_392_ + i_405_;
+                        this.surfaceRaster[i_404_] = i_392_ + i_405_;
                     }
                     i_403_++;
                     i_400_ = ++i_400_ % i_399_;
@@ -1390,11 +1391,11 @@ final class JavaToolkit extends Toolkit {
                 while (i_406_ < i_391_) {
                     if (i_390_ + i_406_ >= this.clipY1 && i_390_ + i_406_ < this.clipY2 && i_400_ < i_394_) {
                         int i_407_ = i_397_ + i_406_ * this.surfaceWidth;
-                        int i_408_ = this.anIntArray7483[i_407_];
+                        int i_408_ = this.surfaceRaster[i_407_];
                         int i_409_ = i_392_ + i_408_;
                         int i_410_ = (i_392_ & 0xff00ff) + (i_408_ & 0xff00ff);
                         i_408_ = (i_410_ & 0x1000100) + (i_409_ - i_410_ & 0x10000);
-                        this.anIntArray7483[i_407_] = i_409_ - i_408_ | i_408_ - (i_408_ >>> 8);
+                        this.surfaceRaster[i_407_] = i_409_ - i_408_ | i_408_ - (i_408_ >>> 8);
                     }
                     i_406_++;
                     i_400_ = ++i_400_ % i_399_;
@@ -1406,29 +1407,29 @@ final class JavaToolkit extends Toolkit {
     final void method3677(Canvas canvas) {
         if (canvas == null) {
             aCanvas7468 = null;
-            this.aClass348_Sub31_7469 = null;
-            if (aClass49_7475 == null) {
-                this.anIntArray7483 = null;
-                this.surfaceWidth = anInt7486 = 1;
-                anInt7495 = anInt7488 = 1;
+            this.surface = null;
+            if (offscreenSurface == null) {
+                this.surfaceRaster = null;
+                this.surfaceWidth = surfaceHeight = 1;
+                depthWidth = depthHeight = 1;
                 method3717();
             }
         } else {
-            Class348_Sub31 class348_sub31 = ((Class348_Sub31) aClass356_7467.method3480(canvas.hashCode(), -6008));
-            if (class348_sub31 != null) {
+            JavaSurface javaSurface = ((JavaSurface) aClass356_7467.method3480(canvas.hashCode(), -6008));
+            if (javaSurface != null) {
                 aCanvas7468 = canvas;
                 Dimension dimension = canvas.getSize();
-                anInt7465 = dimension.width;
-                anInt7472 = dimension.height;
-                this.aClass348_Sub31_7469 = class348_sub31;
-                if (aClass49_7475 == null) {
-                    this.anIntArray7483 = class348_sub31.anIntArray6916;
-                    this.surfaceWidth = class348_sub31.anInt6917;
-                    anInt7486 = class348_sub31.anInt6920;
-                    if (this.surfaceWidth != anInt7495 || anInt7486 != anInt7488) {
-                        anInt7481 = anInt7495 = this.surfaceWidth;
-                        anInt7493 = anInt7488 = anInt7486;
-                        this.aFloatArray7502 = this.aFloatArray7511 = new float[anInt7495 * anInt7488];
+                canvasWidth = dimension.width;
+                canvasHeight = dimension.height;
+                this.surface = javaSurface;
+                if (offscreenSurface == null) {
+                    this.surfaceRaster = javaSurface.raster;
+                    this.surfaceWidth = javaSurface.width;
+                    surfaceHeight = javaSurface.height;
+                    if (this.surfaceWidth != depthWidth || surfaceHeight != depthHeight) {
+                        mainSurfaceWidth = depthWidth = this.surfaceWidth;
+                        mainSurfaceHeight = depthHeight = surfaceHeight;
+                        this.mainDepthBuffer = this.depthBuffer = new float[depthWidth * depthHeight];
                     }
                     method3717();
                 }
@@ -1456,26 +1457,26 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void method3678(int i) {
-        aJavaThreadResourceArray7480[i].method1291(10000, null);
+        resources[i].method1291(10000, null);
     }
 
     final void method3672() {
         if (aCanvas7468 == null) {
             this.surfaceWidth = 1;
-            anInt7486 = 1;
-            this.anIntArray7483 = null;
-            anInt7495 = 1;
-            anInt7488 = 1;
-            this.aFloatArray7511 = null;
+            surfaceHeight = 1;
+            this.surfaceRaster = null;
+            depthWidth = 1;
+            depthHeight = 1;
+            this.depthBuffer = null;
         } else {
-            this.anIntArray7483 = (this.aClass348_Sub31_7469.anIntArray6916);
-            this.surfaceWidth = (this.aClass348_Sub31_7469.anInt6917);
-            anInt7486 = (this.aClass348_Sub31_7469.anInt6920);
-            this.aFloatArray7511 = this.aFloatArray7502;
-            anInt7495 = anInt7481;
-            anInt7488 = anInt7493;
+            this.surfaceRaster = (this.surface.raster);
+            this.surfaceWidth = (this.surface.width);
+            surfaceHeight = (this.surface.height);
+            this.depthBuffer = this.mainDepthBuffer;
+            depthWidth = mainSurfaceWidth;
+            depthHeight = mainSurfaceHeight;
         }
-        aClass49_7475 = null;
+        offscreenSurface = null;
         method3717();
     }
 
@@ -1504,8 +1505,8 @@ final class JavaToolkit extends Toolkit {
                 }
             }
         }
-        if (bool_425_) return new Sprite_Sub3_Sub3(this, is, i, i_422_, i_423_, i_424_, bool);
-        return new Sprite_Sub3_Sub1(this, is, i, i_422_, i_423_, i_424_, bool);
+        if (bool_425_) return new JavaArgbSprite(this, is, i, i_422_, i_423_, i_424_, bool);
+        return new JavaRgbSprite(this, is, i, i_422_, i_423_, i_424_, bool);
     }
 
     final Sprite method3691(Class207 class207, boolean bool) {
@@ -1513,7 +1514,7 @@ final class JavaToolkit extends Toolkit {
         byte[] is_430_ = class207.aByteArray2699;
         int i = class207.anInt2702;
         int i_431_ = class207.anInt2696;
-        Sprite_Sub3 class105_sub3;
+        JavaSprite class105_sub3;
         if (bool && class207.aByteArray2695 == null) {
             int[] is_432_ = new int[is.length];
             byte[] is_433_ = new byte[i * i_431_];
@@ -1524,7 +1525,7 @@ final class JavaToolkit extends Toolkit {
             }
             for (int i_437_ = 0; i_437_ < is.length; i_437_++)
                 is_432_[i_437_] = is[i_437_];
-            class105_sub3 = new Sprite_Sub3_Sub2(this, is_433_, is_432_, i, i_431_);
+            class105_sub3 = new JavaIndexedSprite(this, is_433_, is_432_, i, i_431_);
         } else {
             int[] is_438_ = new int[i * i_431_];
             byte[] is_439_ = class207.aByteArray2695;
@@ -1536,17 +1537,17 @@ final class JavaToolkit extends Toolkit {
                         is_438_[i_444_ + i_445_] = i_446_ != 0 ? ~0xffffff | i_446_ : 0;
                     }
                 }
-                class105_sub3 = new Sprite_Sub3_Sub1(this, is_438_, i, i_431_);
+                class105_sub3 = new JavaRgbSprite(this, is_438_, i, i_431_);
             } else {
                 for (int i_440_ = 0; i_440_ < i_431_; i_440_++) {
                     int i_441_ = i_440_ * i;
                     for (int i_442_ = 0; i_442_ < i; i_442_++)
                         is_438_[i_441_ + i_442_] = (is[is_430_[i_441_ + i_442_] & 0xff] | is_439_[i_441_ + i_442_] << 24);
                 }
-                class105_sub3 = new Sprite_Sub3_Sub3(this, is_438_, i, i_431_);
+                class105_sub3 = new JavaArgbSprite(this, is_438_, i, i_431_);
             }
         }
-        class105_sub3.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
+        class105_sub3.setOffsets(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
         return class105_sub3;
     }
 
@@ -1574,7 +1575,7 @@ final class JavaToolkit extends Toolkit {
                 if (i_462_ > this.clipX2) i_462_ = this.clipX2;
                 int i_463_ = i_461_ + i_454_ * this.surfaceWidth;
                 for (int i_464_ = i_461_; i_464_ < i_462_; i_464_++) {
-                    if ((float) i_448_ < this.aFloatArray7511[i_463_]) this.anIntArray7483[i_463_] = i_450_;
+                    if ((float) i_448_ < this.depthBuffer[i_463_]) this.surfaceRaster[i_463_] = i_450_;
                     i_463_++;
                 }
                 i_454_++;
@@ -1595,7 +1596,7 @@ final class JavaToolkit extends Toolkit {
                 if (i_466_ > this.clipX2 - 1) i_466_ = this.clipX2 - 1;
                 int i_467_ = i_465_ + i_454_ * this.surfaceWidth;
                 for (int i_468_ = i_465_; i_468_ <= i_466_; i_468_++) {
-                    if ((float) i_448_ < this.aFloatArray7511[i_467_]) this.anIntArray7483[i_467_] = i_450_;
+                    if ((float) i_448_ < this.depthBuffer[i_467_]) this.surfaceRaster[i_467_] = i_450_;
                     i_467_++;
                 }
                 i_454_++;
@@ -1614,10 +1615,10 @@ final class JavaToolkit extends Toolkit {
                 if (i_471_ > this.clipX2) i_471_ = this.clipX2;
                 int i_472_ = i_470_ + i_454_ * this.surfaceWidth;
                 for (int i_473_ = i_470_; i_473_ < i_471_; i_473_++) {
-                    if ((float) i_448_ < this.aFloatArray7511[i_472_]) {
-                        int i_474_ = this.anIntArray7483[i_472_];
+                    if ((float) i_448_ < this.depthBuffer[i_472_]) {
+                        int i_474_ = this.surfaceRaster[i_472_];
                         i_474_ = (((i_474_ & 0xff00ff) * i_469_ >> 8 & 0xff00ff) + ((i_474_ & 0xff00) * i_469_ >> 8 & 0xff00));
-                        this.anIntArray7483[i_472_] = i_450_ + i_474_;
+                        this.surfaceRaster[i_472_] = i_450_ + i_474_;
                     }
                     i_472_++;
                 }
@@ -1639,10 +1640,10 @@ final class JavaToolkit extends Toolkit {
                 if (i_476_ > this.clipX2 - 1) i_476_ = this.clipX2 - 1;
                 int i_477_ = i_475_ + i_454_ * this.surfaceWidth;
                 for (int i_478_ = i_475_; i_478_ <= i_476_; i_478_++) {
-                    if ((float) i_448_ < this.aFloatArray7511[i_477_]) {
-                        int i_479_ = this.anIntArray7483[i_477_];
+                    if ((float) i_448_ < this.depthBuffer[i_477_]) {
+                        int i_479_ = this.surfaceRaster[i_477_];
                         i_479_ = (((i_479_ & 0xff00ff) * i_469_ >> 8 & 0xff00ff) + ((i_479_ & 0xff00) * i_469_ >> 8 & 0xff00));
-                        this.anIntArray7483[i_477_] = i_450_ + i_479_;
+                        this.surfaceRaster[i_477_] = i_450_ + i_479_;
                     }
                     i_477_++;
                 }
@@ -1660,12 +1661,12 @@ final class JavaToolkit extends Toolkit {
                 if (i_481_ > this.clipX2) i_481_ = this.clipX2;
                 int i_482_ = i_480_ + i_454_ * this.surfaceWidth;
                 for (int i_483_ = i_480_; i_483_ < i_481_; i_483_++) {
-                    if ((float) i_448_ < this.aFloatArray7511[i_482_]) {
-                        int i_484_ = this.anIntArray7483[i_482_];
+                    if ((float) i_448_ < this.depthBuffer[i_482_]) {
+                        int i_484_ = this.surfaceRaster[i_482_];
                         int i_485_ = i_450_ + i_484_;
                         int i_486_ = (i_450_ & 0xff00ff) + (i_484_ & 0xff00ff);
                         i_484_ = (i_486_ & 0x1000100) + (i_485_ - i_486_ & 0x10000);
-                        this.anIntArray7483[i_482_] = i_485_ - i_484_ | i_484_ - (i_484_ >>> 8);
+                        this.surfaceRaster[i_482_] = i_485_ - i_484_ | i_484_ - (i_484_ >>> 8);
                     }
                     i_482_++;
                 }
@@ -1687,12 +1688,12 @@ final class JavaToolkit extends Toolkit {
                 if (i_488_ > this.clipX2 - 1) i_488_ = this.clipX2 - 1;
                 int i_489_ = i_487_ + i_454_ * this.surfaceWidth;
                 for (int i_490_ = i_487_; i_490_ <= i_488_; i_490_++) {
-                    if ((float) i_448_ < this.aFloatArray7511[i_489_]) {
-                        int i_491_ = this.anIntArray7483[i_489_];
+                    if ((float) i_448_ < this.depthBuffer[i_489_]) {
+                        int i_491_ = this.surfaceRaster[i_489_];
                         int i_492_ = i_450_ + i_491_;
                         int i_493_ = (i_450_ & 0xff00ff) + (i_491_ & 0xff00ff);
                         i_491_ = (i_493_ & 0x1000100) + (i_492_ - i_493_ & 0x10000);
-                        this.anIntArray7483[i_489_] = i_492_ - i_491_ | i_491_ - (i_491_ >>> 8);
+                        this.surfaceRaster[i_489_] = i_492_ - i_491_ | i_491_ - (i_491_ >>> 8);
                     }
                     i_489_++;
                 }
@@ -1705,7 +1706,7 @@ final class JavaToolkit extends Toolkit {
 
     final void method3688(int i, int i_494_, int i_495_, int i_496_, int i_497_, int i_498_, int i_499_) {
         JavaThreadResource javaThreadResource = method3724(Thread.currentThread());
-        Rasterizer rasterizer = javaThreadResource.aRasterizer_2220;
+        Rasterizer rasterizer = javaThreadResource.rasterizer;
         int i_500_ = i_495_ - i;
         int i_501_ = i_496_ - i_494_;
         int i_502_ = i_500_ >= 0 ? i_500_ : -i_500_;
@@ -1746,8 +1747,8 @@ final class JavaToolkit extends Toolkit {
     }
 
     final Sprite method3629(int i, int i_519_, boolean bool) {
-        if (bool) return new Sprite_Sub3_Sub3(this, i, i_519_);
-        return new Sprite_Sub3_Sub1(this, i, i_519_);
+        if (bool) return new JavaArgbSprite(this, i, i_519_);
+        return new JavaRgbSprite(this, i, i_519_);
     }
 
     final void method3630(boolean bool) {
@@ -1758,7 +1759,7 @@ final class JavaToolkit extends Toolkit {
     final void method3650(int i) {
         JavaModel.anInt5346 = JavaModel.anInt5350 = i;
         if (this.threadCount > 1) throw new IllegalStateException("No MT");
-        method3631(this.threadCount);
+        allocateThreads(this.threadCount);
         method3659(0);
     }
 
@@ -1798,7 +1799,7 @@ final class JavaToolkit extends Toolkit {
                 if (i_540_ > this.clipX2) i_540_ = this.clipX2;
                 int i_541_ = i_539_ + i_532_ * this.surfaceWidth;
                 for (int i_542_ = i_539_; i_542_ < i_540_; i_542_++)
-                    this.anIntArray7483[i_541_++] = i_528_;
+                    this.surfaceRaster[i_541_++] = i_528_;
                 i_532_++;
                 i_536_ -= i_535_-- + i_535_;
                 i_537_ -= i_535_ + i_535_;
@@ -1817,7 +1818,7 @@ final class JavaToolkit extends Toolkit {
                 if (i_544_ > this.clipX2 - 1) i_544_ = this.clipX2 - 1;
                 int i_545_ = i_543_ + i_532_ * this.surfaceWidth;
                 for (int i_546_ = i_543_; i_546_ <= i_544_; i_546_++)
-                    this.anIntArray7483[i_545_++] = i_528_;
+                    this.surfaceRaster[i_545_++] = i_528_;
                 i_532_++;
                 i_537_ += i_535_ + i_535_;
                 i_536_ += i_535_++ + i_535_;
@@ -1834,9 +1835,9 @@ final class JavaToolkit extends Toolkit {
                 if (i_549_ > this.clipX2) i_549_ = this.clipX2;
                 int i_550_ = i_548_ + i_532_ * this.surfaceWidth;
                 for (int i_551_ = i_548_; i_551_ < i_549_; i_551_++) {
-                    int i_552_ = this.anIntArray7483[i_550_];
+                    int i_552_ = this.surfaceRaster[i_550_];
                     i_552_ = (((i_552_ & 0xff00ff) * i_547_ >> 8 & 0xff00ff) + ((i_552_ & 0xff00) * i_547_ >> 8 & 0xff00));
-                    this.anIntArray7483[i_550_++] = i_528_ + i_552_;
+                    this.surfaceRaster[i_550_++] = i_528_ + i_552_;
                 }
                 i_532_++;
                 i_536_ -= i_535_-- + i_535_;
@@ -1856,9 +1857,9 @@ final class JavaToolkit extends Toolkit {
                 if (i_554_ > this.clipX2 - 1) i_554_ = this.clipX2 - 1;
                 int i_555_ = i_553_ + i_532_ * this.surfaceWidth;
                 for (int i_556_ = i_553_; i_556_ <= i_554_; i_556_++) {
-                    int i_557_ = this.anIntArray7483[i_555_];
+                    int i_557_ = this.surfaceRaster[i_555_];
                     i_557_ = (((i_557_ & 0xff00ff) * i_547_ >> 8 & 0xff00ff) + ((i_557_ & 0xff00) * i_547_ >> 8 & 0xff00));
-                    this.anIntArray7483[i_555_++] = i_528_ + i_557_;
+                    this.surfaceRaster[i_555_++] = i_528_ + i_557_;
                 }
                 i_532_++;
                 i_537_ += i_535_ + i_535_;
@@ -1874,11 +1875,11 @@ final class JavaToolkit extends Toolkit {
                 if (i_559_ > this.clipX2) i_559_ = this.clipX2;
                 int i_560_ = i_558_ + i_532_ * this.surfaceWidth;
                 for (int i_561_ = i_558_; i_561_ < i_559_; i_561_++) {
-                    int i_562_ = this.anIntArray7483[i_560_];
+                    int i_562_ = this.surfaceRaster[i_560_];
                     int i_563_ = i_528_ + i_562_;
                     int i_564_ = (i_528_ & 0xff00ff) + (i_562_ & 0xff00ff);
                     i_562_ = (i_564_ & 0x1000100) + (i_563_ - i_564_ & 0x10000);
-                    this.anIntArray7483[i_560_++] = i_563_ - i_562_ | i_562_ - (i_562_ >>> 8);
+                    this.surfaceRaster[i_560_++] = i_563_ - i_562_ | i_562_ - (i_562_ >>> 8);
                 }
                 i_532_++;
                 i_536_ -= i_535_-- + i_535_;
@@ -1898,11 +1899,11 @@ final class JavaToolkit extends Toolkit {
                 if (i_566_ > this.clipX2 - 1) i_566_ = this.clipX2 - 1;
                 int i_567_ = i_565_ + i_532_ * this.surfaceWidth;
                 for (int i_568_ = i_565_; i_568_ <= i_566_; i_568_++) {
-                    int i_569_ = this.anIntArray7483[i_567_];
+                    int i_569_ = this.surfaceRaster[i_567_];
                     int i_570_ = i_528_ + i_569_;
                     int i_571_ = (i_528_ & 0xff00ff) + (i_569_ & 0xff00ff);
                     i_569_ = (i_571_ & 0x1000100) + (i_570_ - i_571_ & 0x10000);
-                    this.anIntArray7483[i_567_++] = i_570_ - i_569_ | i_569_ - (i_569_ >>> 8);
+                    this.surfaceRaster[i_567_++] = i_570_ - i_569_ | i_569_ - (i_569_ >>> 8);
                 }
                 i_532_++;
                 i_537_ += i_535_ + i_535_;
@@ -1913,7 +1914,7 @@ final class JavaToolkit extends Toolkit {
 
     final JavaThreadResource method3724(Runnable runnable) {
         for (int i = 0; i < this.threadCount; i++) {
-            if (aJavaThreadResourceArray7480[i].aRunnable2198 == runnable) return aJavaThreadResourceArray7480[i];
+            if (resources[i].aRunnable2198 == runnable) return resources[i];
         }
         return null;
     }
@@ -1923,10 +1924,10 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void method3626(int i, int i_572_) throws Exception_Sub1 {
-        if (aCanvas7468 == null || this.aClass348_Sub31_7469 == null) throw new IllegalStateException("off");
+        if (aCanvas7468 == null || this.surface == null) throw new IllegalStateException("off");
         try {
             Graphics graphics = aCanvas7468.getGraphics();
-            this.aClass348_Sub31_7469.method3011(0, i, anInt7472, graphics, -1, 0, anInt7465, i_572_);
+            this.surface.method3011(0, i, canvasHeight, graphics, -1, 0, canvasWidth, i_572_);
         } catch (Exception exception) {
             aCanvas7468.repaint();
         }
@@ -1947,23 +1948,23 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void method3669(Canvas canvas, int i, int i_578_) {
-        Class348_Sub31 class348_sub31 = ((Class348_Sub31) aClass356_7467.method3480(canvas.hashCode(), -6008));
-        if (class348_sub31 != null) {
-            class348_sub31.method2715((byte) 95);
-            class348_sub31 = Class110.method1035(9029, i_578_, canvas, i);
-            aClass356_7467.method3483((byte) 112, canvas.hashCode(), class348_sub31);
-            if (aCanvas7468 == canvas && aClass49_7475 == null) {
+        JavaSurface javaSurface = ((JavaSurface) aClass356_7467.method3480(canvas.hashCode(), -6008));
+        if (javaSurface != null) {
+            javaSurface.method2715((byte) 95);
+            javaSurface = Class110.method1035(9029, i_578_, canvas, i);
+            aClass356_7467.method3483((byte) 112, canvas.hashCode(), javaSurface);
+            if (aCanvas7468 == canvas && offscreenSurface == null) {
                 Dimension dimension = canvas.getSize();
-                anInt7465 = dimension.width;
-                anInt7472 = dimension.height;
-                this.aClass348_Sub31_7469 = class348_sub31;
-                this.anIntArray7483 = class348_sub31.anIntArray6916;
-                this.surfaceWidth = class348_sub31.anInt6917;
-                anInt7486 = class348_sub31.anInt6920;
-                if (this.surfaceWidth != anInt7495 || anInt7486 != anInt7488) {
-                    anInt7481 = anInt7495 = this.surfaceWidth;
-                    anInt7493 = anInt7488 = anInt7486;
-                    this.aFloatArray7502 = this.aFloatArray7511 = new float[anInt7495 * anInt7488];
+                canvasWidth = dimension.width;
+                canvasHeight = dimension.height;
+                this.surface = javaSurface;
+                this.surfaceRaster = javaSurface.raster;
+                this.surfaceWidth = javaSurface.width;
+                surfaceHeight = javaSurface.height;
+                if (this.surfaceWidth != depthWidth || surfaceHeight != depthHeight) {
+                    mainSurfaceWidth = depthWidth = this.surfaceWidth;
+                    mainSurfaceHeight = depthHeight = surfaceHeight;
+                    this.mainDepthBuffer = this.depthBuffer = new float[depthWidth * depthHeight];
                 }
                 method3717();
             }
@@ -2014,7 +2015,7 @@ final class JavaToolkit extends Toolkit {
         try {
             aClass60_7498 = new Class60(256);
             this.camera = new JavaMatrix();
-            method3631(1);
+            allocateThreads(1);
             method3659(0);
             Class59_Sub2_Sub1.method566(true, true, (byte) -126);
             aBoolean7471 = true;
@@ -2096,7 +2097,7 @@ final class JavaToolkit extends Toolkit {
                 if (i_596_ == 0 || i_596_ == 1 && i_606_ == 255) {
                     while (i <= i_593_) {
                         int i_608_ = i_592_ >> 16;
-                        if (i >= this.clipX1 && i < this.clipX2 && i_608_ >= this.clipY1 && i_608_ < this.clipY2 && i_599_ < i_597_) this.anIntArray7483[i + i_608_ * this.surfaceWidth] = i_595_;
+                        if (i >= this.clipX1 && i < this.clipX2 && i_608_ >= this.clipY1 && i_608_ < this.clipY2 && i_599_ < i_597_) this.surfaceRaster[i + i_608_ * this.surfaceWidth] = i_595_;
                         i_592_ += i_605_;
                         i++;
                         i_599_ += i_607_;
@@ -2111,9 +2112,9 @@ final class JavaToolkit extends Toolkit {
                         int i_610_ = i_592_ >> 16;
                         if (i >= this.clipX1 && i < this.clipX2 && i_610_ >= this.clipY1 && i_610_ < this.clipY2 && i_599_ < i_597_) {
                             int i_611_ = i + i_610_ * this.surfaceWidth;
-                            int i_612_ = this.anIntArray7483[i_611_];
+                            int i_612_ = this.surfaceRaster[i_611_];
                             i_612_ = (((i_612_ & 0xff00ff) * i_609_ >> 8 & 0xff00ff) + ((i_612_ & 0xff00) * i_609_ >> 8 & 0xff00));
-                            this.anIntArray7483[i_611_] = i_595_ + i_612_;
+                            this.surfaceRaster[i_611_] = i_595_ + i_612_;
                         }
                         i_592_ += i_605_;
                         i++;
@@ -2127,11 +2128,11 @@ final class JavaToolkit extends Toolkit {
                         int i_613_ = i_592_ >> 16;
                         if (i >= this.clipX1 && i < this.clipX2 && i_613_ >= this.clipY1 && i_613_ < this.clipY2 && i_599_ < i_597_) {
                             int i_614_ = i + i_613_ * this.surfaceWidth;
-                            int i_615_ = this.anIntArray7483[i_614_];
+                            int i_615_ = this.surfaceRaster[i_614_];
                             int i_616_ = i_595_ + i_615_;
                             int i_617_ = (i_595_ & 0xff00ff) + (i_615_ & 0xff00ff);
                             i_615_ = (i_617_ & 0x1000100) + (i_616_ - i_617_ & 0x10000);
-                            this.anIntArray7483[i_614_] = i_616_ - i_615_ | i_615_ - (i_615_ >>> 8);
+                            this.surfaceRaster[i_614_] = i_616_ - i_615_ | i_615_ - (i_615_ >>> 8);
                         }
                         i_592_ += i_605_;
                         i++;
@@ -2152,7 +2153,7 @@ final class JavaToolkit extends Toolkit {
             if (i_596_ == 0 || i_596_ == 1 && i_619_ == 255) {
                 while (i_592_ <= i_594_) {
                     int i_621_ = i >> 16;
-                    if (i_592_ >= this.clipY1 && i_592_ < this.clipY2 && i_621_ >= this.clipX1 && i_621_ < this.clipX2 && i_599_ < i_597_) this.anIntArray7483[i_621_ + i_592_ * this.surfaceWidth] = i_595_;
+                    if (i_592_ >= this.clipY1 && i_592_ < this.clipY2 && i_621_ >= this.clipX1 && i_621_ < this.clipX2 && i_599_ < i_597_) this.surfaceRaster[i_621_ + i_592_ * this.surfaceWidth] = i_595_;
                     i += i_618_;
                     i_592_++;
                     i_599_ += i_620_;
@@ -2165,9 +2166,9 @@ final class JavaToolkit extends Toolkit {
                     int i_623_ = i >> 16;
                     if (i_592_ >= this.clipY1 && i_592_ < this.clipY2 && i_623_ >= this.clipX1 && i_623_ < this.clipX2 && i_599_ < i_597_) {
                         int i_624_ = i_623_ + i_592_ * this.surfaceWidth;
-                        int i_625_ = this.anIntArray7483[i_624_];
+                        int i_625_ = this.surfaceRaster[i_624_];
                         i_625_ = (((i_625_ & 0xff00ff) * i_622_ >> 8 & 0xff00ff) + ((i_625_ & 0xff00) * i_622_ >> 8 & 0xff00));
-                        this.anIntArray7483[i_623_ + i_592_ * this.surfaceWidth] = i_595_ + i_625_;
+                        this.surfaceRaster[i_623_ + i_592_ * this.surfaceWidth] = i_595_ + i_625_;
                     }
                     i += i_618_;
                     i_592_++;
@@ -2179,11 +2180,11 @@ final class JavaToolkit extends Toolkit {
                     int i_626_ = i >> 16;
                     if (i_592_ >= this.clipY1 && i_592_ < this.clipY2 && i_626_ >= this.clipX1 && i_626_ < this.clipX2 && i_599_ < i_597_) {
                         int i_627_ = i_626_ + i_592_ * this.surfaceWidth;
-                        int i_628_ = this.anIntArray7483[i_627_];
+                        int i_628_ = this.surfaceRaster[i_627_];
                         int i_629_ = i_595_ + i_628_;
                         int i_630_ = (i_595_ & 0xff00ff) + (i_628_ & 0xff00ff);
                         i_628_ = (i_630_ & 0x1000100) + (i_629_ - i_630_ & 0x10000);
-                        this.anIntArray7483[i_627_] = i_629_ - i_628_ | i_628_ - (i_628_ >>> 8);
+                        this.surfaceRaster[i_627_] = i_629_ - i_628_ | i_628_ - (i_628_ >>> 8);
                     }
                     i += i_618_;
                     i_592_++;
@@ -2203,17 +2204,17 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void method3659(int i) {
-        aJavaThreadResourceArray7480[i].method1291(10000, Thread.currentThread());
+        resources[i].method1291(10000, Thread.currentThread());
     }
 
     final void method3707(Rectangle[] rectangles, int i, int i_631_, int i_632_) throws Exception_Sub1 {
-        if (aCanvas7468 == null || this.aClass348_Sub31_7469 == null) throw new IllegalStateException("off");
+        if (aCanvas7468 == null || this.surface == null) throw new IllegalStateException("off");
         try {
             Graphics graphics = aCanvas7468.getGraphics();
             for (int i_633_ = 0; i_633_ < i; i_633_++) {
                 Rectangle rectangle = rectangles[i_633_];
-                if (rectangle.x + i_631_ <= this.surfaceWidth && rectangle.y + i_632_ <= anInt7486 && rectangle.x + i_631_ + rectangle.width > 0 && rectangle.y + i_632_ + rectangle.height > 0)
-                    this.aClass348_Sub31_7469.method3011(rectangle.y, rectangle.x + i_631_, rectangle.height, graphics, -1, rectangle.x, rectangle.width, rectangle.y + i_632_);
+                if (rectangle.x + i_631_ <= this.surfaceWidth && rectangle.y + i_632_ <= surfaceHeight && rectangle.x + i_631_ + rectangle.width > 0 && rectangle.y + i_632_ + rectangle.height > 0)
+                    this.surface.method3011(rectangle.y, rectangle.x + i_631_, rectangle.height, graphics, -1, rectangle.x, rectangle.width, rectangle.y + i_632_);
             }
         } catch (Exception exception) {
             aCanvas7468.repaint();

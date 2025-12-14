@@ -758,9 +758,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class318_Sub1_Sub1_Sub1.method2397((byte) -124);
             Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3480(i, -6008));
             if (class348_sub41 != null) Class127_Sub1.method1118(true, false, class348_sub41, 2533);
-            if (Class49.aClass46_4730 != null) {
-                Class251.method1916(-9343, Class49.aClass46_4730);
-                Class49.aClass46_4730 = null;
+            if (JavaOffscreenSurface.aClass46_4730 != null) {
+                Class251.method1916(-9343, JavaOffscreenSurface.aClass46_4730);
+                JavaOffscreenSurface.aClass46_4730 = null;
             }
             Class348_Sub3.aClass114_6584 = null;
             return true;

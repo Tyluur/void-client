@@ -92,7 +92,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
             Class5_Sub2.aBooleanArrayArrayArray8361 = new boolean[i_1_][][];
             if (Class348_Sub40_Sub34.aClass293Array9432 != null) Class260.method1978();
             Class348_Sub40_Sub34.aClass293Array9432 = new Class293[Npc.anInt10503];
-            Class9.aToolkit171.method3631((Class348_Sub40_Sub34.aClass293Array9432).length + 1);
+            Class9.aToolkit171.allocateThreads((Class348_Sub40_Sub34.aClass293Array9432).length + 1);
             Class9.aToolkit171.method3659(0);
             for (int i_6_ = 0; i_6_ < Class348_Sub40_Sub34.aClass293Array9432.length; i_6_++) {
                 Class348_Sub40_Sub34.aClass293Array9432[i_6_] = new Class293(i_6_ + 1, Class9.aToolkit171);

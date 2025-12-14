@@ -2,20 +2,21 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class49 implements Interface4 {
-    float[] aFloatArray4719;
+// Class49
+final class JavaOffscreenSurface implements OffscreenSurface {
+    float[] depthBuffer;
     static float aFloat4720;
     static int anInt4721;
-    int anInt4722;
+    int height;
     static int anInt4723;
     private Class216 aClass216_4724;
-    int anInt4725;
+    int width;
     static volatile boolean aBoolean4726 = true;
     static int anInt4727;
     static boolean aBoolean4728 = false;
     private final JavaToolkit aJavaToolkit_4729;
     static Class46 aClass46_4730 = null;
-    int[] anIntArray4731;
+    int[] raster;
 
     public static void method453(int i) {
         if (i == -2001) aClass46_4730 = null;
@@ -48,34 +49,35 @@ final class Class49 implements Interface4 {
 
     public final void method14(int i, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, boolean bool, boolean bool_8_) {
         anInt4723++;
-        ItemDefinition.method1568((aJavaToolkit_4729.aClass348_Sub31_7469.anIntArray6916), i_3_, i, i_7_, bool_8_ ? aJavaToolkit_4729.aFloatArray7502 : null, bool ? this.anIntArray4731 : null, i_4_, 115, i_5_, (aJavaToolkit_4729.aClass348_Sub31_7469.anInt6917), this.anInt4725, i_6_, !bool_8_ ? null : this.aFloatArray4719);
+        ItemDefinition.method1568((aJavaToolkit_4729.surface.raster), i_3_, i, i_7_, bool_8_ ? aJavaToolkit_4729.mainDepthBuffer : null, bool ? this.raster : null, i_4_, 115, i_5_, (aJavaToolkit_4729.surface.width), this.width, i_6_, !bool_8_ ? null : this.depthBuffer);
     }
 
     public final void method15(int i, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, boolean bool, boolean bool_14_) {
         anInt4721++;
-        ItemDefinition.method1568(this.anIntArray4731, i_9_, i, i_13_, bool_14_ ? this.aFloatArray4719 : null, !bool ? null : (aJavaToolkit_4729.aClass348_Sub31_7469.anIntArray6916), i_10_, 113, i_11_, this.anInt4725, (aJavaToolkit_4729.aClass348_Sub31_7469.anInt6917), i_12_, bool_14_ ? aJavaToolkit_4729.aFloatArray7502 : null);
+        ItemDefinition.method1568(this.raster, i_9_, i, i_13_, bool_14_ ? this.depthBuffer : null, !bool ? null : (aJavaToolkit_4729.surface.raster), i_10_, 113, i_11_, this.width, (aJavaToolkit_4729.surface.width), i_12_, bool_14_ ? aJavaToolkit_4729.mainDepthBuffer : null);
     }
 
-    Class49(JavaToolkit var_javaToolkit, Sprite sprite, Class216 class216) {
+    JavaOffscreenSurface(JavaToolkit var_javaToolkit, Sprite sprite, Class216 class216) {
         do {
             try {
                 aJavaToolkit_4729 = var_javaToolkit;
-                if (sprite instanceof Sprite_Sub3_Sub1) {
-                    Sprite_Sub3_Sub1 class105_sub3_sub1 = (Sprite_Sub3_Sub1) sprite;
-                    this.anIntArray4731 = (class105_sub3_sub1.anIntArray9933);
-                    this.anInt4722 = class105_sub3_sub1.anInt8470;
-                    this.anInt4725 = class105_sub3_sub1.anInt8471;
+                if (sprite instanceof JavaRgbSprite) {
+                    JavaRgbSprite class105_sub3_sub1 = (JavaRgbSprite) sprite;
+                    this.raster = (class105_sub3_sub1.raster);
+                    this.height = class105_sub3_sub1.height;
+                    this.width = class105_sub3_sub1.width;
+                } else if (sprite instanceof JavaArgbSprite) {
+                    JavaArgbSprite class105_sub3_sub3 = (JavaArgbSprite) sprite;
+                    this.width = class105_sub3_sub3.width;
+                    this.height = class105_sub3_sub3.height;
+                    this.raster = (class105_sub3_sub3.raster);
                 } else {
-                    if (!(sprite instanceof Sprite_Sub3_Sub3)) throw new RuntimeException();
-                    Sprite_Sub3_Sub3 class105_sub3_sub3 = (Sprite_Sub3_Sub3) sprite;
-                    this.anInt4725 = class105_sub3_sub3.anInt8471;
-                    this.anInt4722 = class105_sub3_sub3.anInt8470;
-                    this.anIntArray4731 = (class105_sub3_sub3.anIntArray9936);
+                    throw new RuntimeException();
                 }
                 if (class216 == null) break;
                 aClass216_4724 = class216;
-                if ((aClass216_4724.anInt4974 != this.anInt4725) || (this.anInt4722 != aClass216_4724.anInt4978)) throw new RuntimeException();
-                this.aFloatArray4719 = aClass216_4724.aFloatArray4980;
+                if ((aClass216_4724.anInt4974 != this.width) || (this.height != aClass216_4724.anInt4978)) throw new RuntimeException();
+                this.depthBuffer = aClass216_4724.aFloatArray4980;
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("it.<init>(" + (var_javaToolkit != null ? "{...}" : "null") + ',' + (sprite != null ? "{...}" : "null") + ',' + (class216 != null ? "{...}" : "null") + ')'));
             }

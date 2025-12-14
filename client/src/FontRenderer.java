@@ -66,7 +66,7 @@ abstract class FontRenderer {
                                                     line++;
                                                     int id = (Class348_Sub41.parseInt(true, (tag.substring(4))));
                                                     Sprite icon = icons[id];
-                                                    int i_13_ = (is_0_ == null ? icon.method980() : is_0_[id]);
+                                                    int i_13_ = (is_0_ == null ? icon.scaleHeight() : is_0_[id]);
                                                     icon.method964(x + width, (-i_13_ + (aFontMetrics_4063.verticalSpacing) + (y - -height)), 1, 0, 1);
                                                     x += icons[id].scaleWidth();
                                                     previous = -1;
@@ -406,7 +406,7 @@ abstract class FontRenderer {
                                                 try {
                                                     int i_112_ = (Class348_Sub41.parseInt(true, (tag.substring(4))));
                                                     Sprite sprite = sprites[i_112_];
-                                                    int i_113_ = (is == null ? sprite.method980() : is[i_112_]);
+                                                    int i_113_ = (is == null ? sprite.scaleHeight() : is[i_112_]);
                                                     if (((Class348_Sub42_Sub1.anInt9492) & ~0xffffff) != -16777216) sprite.method964(i_106_, (-i_113_ + (aFontMetrics_4063.verticalSpacing) + i_103_), 0, (0xffffff | (~0xffffff & (Class348_Sub42_Sub1.anInt9492))), 1);
                                                     else sprite.method964(i_106_, ((aFontMetrics_4063.verticalSpacing) + (i_103_ - i_113_)), 1, 0, 1);
                                                     i_108_ = -1;

@@ -121,7 +121,7 @@ final class JavaModel extends Model {
 
     private final void method632(Thread thread) {
         JavaThreadResource javaThreadResource = toolkit.method3724(thread);
-        aRasterizer_5383 = javaThreadResource.aRasterizer_2220;
+        aRasterizer_5383 = javaThreadResource.rasterizer;
         if (javaThreadResource != aJavaThreadResource_5367) {
             aJavaThreadResource_5367 = javaThreadResource;
             originalZ = aJavaThreadResource_5367.anIntArray2222;
@@ -378,9 +378,9 @@ final class JavaModel extends Model {
             if (faceAlphas != null) alpha = 255 - (faceAlphas[i] & 0xff) << 24;
             if (shadeFacesZ[i] == -1) {
                 int colour = alpha | shadeFacesX[i] & 0xffffff;
-                aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], colour, colour, colour, aJavaThreadResource_5367.anInt2192, 0, 0, 0, faceTextures[i]);
+                aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], colour, colour, colour, aJavaThreadResource_5367.fogColour2, 0, 0, 0, faceTextures[i]);
             } else
-                aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], alpha | shadeFacesX[i] & 0xffffff, alpha | shadeFacesY[i] & 0xffffff, alpha | shadeFacesZ[i] & 0xffffff, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[i]);
+                aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], alpha | shadeFacesX[i] & 0xffffff, alpha | shadeFacesY[i] & 0xffffff, alpha | shadeFacesZ[i] & 0xffffff, (aJavaThreadResource_5367.fogColour2), 0, 0, 0, faceTextures[i]);
         }
     }
 
@@ -2002,9 +2002,9 @@ final class JavaModel extends Model {
                 if (faceAlphas != null) alpha = 255 - (faceAlphas[face] & 0xff) << 24;
                 int colour = alpha | shadeFacesX[face] & 0xffffff;
                 if (shadeFacesZ[face] == -1)
-                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yB, (float) yC, (float) xA, (float) xB, (float) xC, (float) zA, (float) zB, (float) zC, texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[face]);
+                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yB, (float) yC, (float) xA, (float) xB, (float) xC, (float) zA, (float) zB, (float) zC, texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.fogColour2), 0, 0, 0, faceTextures[face]);
                 else
-                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yB, (float) yC, (float) xA, (float) xB, (float) xC, (float) zA, (float) zB, (float) zC, texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[face]);
+                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yB, (float) yC, (float) xA, (float) xB, (float) xC, (float) zA, (float) zB, (float) zC, texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.fogColour2), 0, 0, 0, faceTextures[face]);
             }
         }
         if (i == 4) {
@@ -2023,11 +2023,11 @@ final class JavaModel extends Model {
                 if (faceAlphas != null) alpha = 255 - (faceAlphas[face] & 0xff) << 24;
                 int colour = alpha | shadeFacesX[face] & 0xffffff;
                 if (shadeFacesZ[face] == -1) {
-                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yB, (float) yC, (float) xA, (float) xB, (float) xC, (float) zA, (float) zB, (float) zC, texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[face]);
-                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yC, (float) clippedY[3], (float) xA, (float) xC, (float) clippedX[3], (float) zA, (float) zC, (float) clippedZ[3], texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[face]);
+                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yB, (float) yC, (float) xA, (float) xB, (float) xC, (float) zA, (float) zB, (float) zC, texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.fogColour2), 0, 0, 0, faceTextures[face]);
+                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yC, (float) clippedY[3], (float) xA, (float) xC, (float) clippedX[3], (float) zA, (float) zC, (float) clippedZ[3], texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.fogColour2), 0, 0, 0, faceTextures[face]);
                 } else {
-                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yB, (float) yC, (float) xA, (float) xB, (float) xC, (float) zA, (float) zB, (float) zC, texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[face]);
-                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yC, (float) clippedY[3], (float) xA, (float) xC, (float) clippedX[3], (float) zA, (float) zC, (float) clippedZ[3], texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.anInt2192), 0, 0, 0, faceTextures[face]);
+                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yB, (float) yC, (float) xA, (float) xB, (float) xC, (float) zA, (float) zB, (float) zC, texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.fogColour2), 0, 0, 0, faceTextures[face]);
+                    aRasterizer_5383.drawTexturedTriangle((float) yA, (float) yC, (float) clippedY[3], (float) xA, (float) xC, (float) clippedX[3], (float) zA, (float) zC, (float) clippedZ[3], texCoordU[face][0], texCoordU[face][1], texCoordU[face][2], texCoordV[face][0], texCoordV[face][1], texCoordV[face][2], colour, colour, colour, (aJavaThreadResource_5367.fogColour2), 0, 0, 0, faceTextures[face]);
                 }
             }
         }
@@ -2876,27 +2876,27 @@ final class JavaModel extends Model {
             int i_780_ = 0;
             int i_781_ = 0;
             int i_782_ = 0;
-            if (originalZ[x] > aJavaThreadResource_5367.anInt2197) i_780_ = 255;
-            else if (originalZ[x] > aJavaThreadResource_5367.anInt2211) i_780_ = ((aJavaThreadResource_5367.anInt2211 - originalZ[x]) * 255 / (aJavaThreadResource_5367.anInt2211 - aJavaThreadResource_5367.anInt2197));
-            if (originalZ[y] > aJavaThreadResource_5367.anInt2197) i_781_ = 255;
-            else if (originalZ[y] > aJavaThreadResource_5367.anInt2211) i_781_ = ((aJavaThreadResource_5367.anInt2211 - originalZ[y]) * 255 / (aJavaThreadResource_5367.anInt2211 - aJavaThreadResource_5367.anInt2197));
-            if (originalZ[z] > aJavaThreadResource_5367.anInt2197) i_782_ = 255;
-            else if (originalZ[z] > aJavaThreadResource_5367.anInt2211) i_782_ = ((aJavaThreadResource_5367.anInt2211 - originalZ[z]) * 255 / (aJavaThreadResource_5367.anInt2211 - aJavaThreadResource_5367.anInt2197));
+            if (originalZ[x] > aJavaThreadResource_5367.waterDepth) i_780_ = 255;
+            else if (originalZ[x] > aJavaThreadResource_5367.waterHeight) i_780_ = ((aJavaThreadResource_5367.waterHeight - originalZ[x]) * 255 / (aJavaThreadResource_5367.waterHeight - aJavaThreadResource_5367.waterDepth));
+            if (originalZ[y] > aJavaThreadResource_5367.waterDepth) i_781_ = 255;
+            else if (originalZ[y] > aJavaThreadResource_5367.waterHeight) i_781_ = ((aJavaThreadResource_5367.waterHeight - originalZ[y]) * 255 / (aJavaThreadResource_5367.waterHeight - aJavaThreadResource_5367.waterDepth));
+            if (originalZ[z] > aJavaThreadResource_5367.waterDepth) i_782_ = 255;
+            else if (originalZ[z] > aJavaThreadResource_5367.waterHeight) i_782_ = ((aJavaThreadResource_5367.waterHeight - originalZ[z]) * 255 / (aJavaThreadResource_5367.waterHeight - aJavaThreadResource_5367.waterDepth));
             if (faceAlphas == null) aRasterizer_5383.alpha = 0;
             else aRasterizer_5383.alpha = faceAlphas[i] & 0xff;
             if (faceTextures == null || faceTextures[i] == -1) {
                 if (shadeFacesZ[i] == -1)
-                    aRasterizer_5383.renderTriangleRgb((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesX[i] & 0xffff]), (i_780_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesX[i] & 0xffff]), (i_781_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesX[i] & 0xffff]), (i_782_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255));
+                    aRasterizer_5383.renderTriangleRgb((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesX[i] & 0xffff]), (i_780_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesX[i] & 0xffff]), (i_781_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesX[i] & 0xffff]), (i_782_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255));
                 else
-                    aRasterizer_5383.renderTriangleRgb((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesX[i] & 0xffff]), (i_780_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesY[i] & 0xffff]), (i_781_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesZ[i] & 0xffff]), (i_782_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255));
+                    aRasterizer_5383.renderTriangleRgb((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesX[i] & 0xffff]), (i_780_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesY[i] & 0xffff]), (i_781_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[shadeFacesZ[i] & 0xffff]), (i_782_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255));
             } else {
                 int i_783_ = -16777216;
                 if (faceAlphas != null) i_783_ = 255 - (faceAlphas[i] & 0xff) << 24;
                 if (shadeFacesZ[i] == -1) {
                     int i_784_ = i_783_ | shadeFacesX[i] & 0xffffff;
-                    aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_784_, i_784_, i_784_, (aJavaThreadResource_5367.anInt2192), i_780_, i_781_, i_782_, faceTextures[i]);
+                    aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_784_, i_784_, i_784_, (aJavaThreadResource_5367.fogColour2), i_780_, i_781_, i_782_, faceTextures[i]);
                 } else
-                    aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_783_ | shadeFacesX[i] & 0xffffff, i_783_ | shadeFacesY[i] & 0xffffff, i_783_ | shadeFacesZ[i] & 0xffffff, aJavaThreadResource_5367.anInt2192, i_780_, i_781_, i_782_, faceTextures[i]);
+                    aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_783_ | shadeFacesX[i] & 0xffffff, i_783_ | shadeFacesY[i] & 0xffffff, i_783_ | shadeFacesZ[i] & 0xffffff, aJavaThreadResource_5367.fogColour2, i_780_, i_781_, i_782_, faceTextures[i]);
             }
         } else {
             short x = faceIndexX[i];
@@ -2919,17 +2919,17 @@ final class JavaModel extends Model {
                     else aRasterizer_5383.alpha = faceAlphas[i] & 0xff;
                     if (faceTextures == null || faceTextures[i] == -1) {
                         if (shadeFacesZ[i] == -1)
-                            aRasterizer_5383.renderTriangleRgb((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesX[i] & 0xffff)]), (i_771_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesX[i] & 0xffff)]), (i_772_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesX[i] & 0xffff)]), (i_773_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255));
+                            aRasterizer_5383.renderTriangleRgb((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesX[i] & 0xffff)]), (i_771_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesX[i] & 0xffff)]), (i_772_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesX[i] & 0xffff)]), (i_773_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255));
                         else
-                            aRasterizer_5383.renderTriangleRgb((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesX[i] & 0xffff)]), (i_771_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesY[i] & 0xffff)]), (i_772_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesZ[i] & 0xffff)]), (i_773_ << 24 | (aJavaThreadResource_5367.anInt2192)), 255));
+                            aRasterizer_5383.renderTriangleRgb((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesX[i] & 0xffff)]), (i_771_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesY[i] & 0xffff)]), (i_772_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255), JavaBillboardFace.method206((Class126.HSV_TO_RGB[(shadeFacesZ[i] & 0xffff)]), (i_773_ << 24 | (aJavaThreadResource_5367.fogColour2)), 255));
                     } else {
                         int i_775_ = -16777216;
                         if (faceAlphas != null) i_775_ = 255 - (faceAlphas[i] & 0xff) << 24;
                         if (shadeFacesZ[i] == -1) {
                             int i_776_ = i_775_ | shadeFacesX[i] & 0xffffff;
-                            aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_776_, i_776_, i_776_, aJavaThreadResource_5367.anInt2192, i_771_, i_772_, i_773_, faceTextures[i]);
+                            aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_776_, i_776_, i_776_, aJavaThreadResource_5367.fogColour2, i_771_, i_772_, i_773_, faceTextures[i]);
                         } else
-                            aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_775_ | shadeFacesX[i] & 0xffffff, i_775_ | shadeFacesY[i] & 0xffffff, i_775_ | shadeFacesZ[i] & 0xffffff, aJavaThreadResource_5367.anInt2192, i_771_, i_772_, i_773_, faceTextures[i]);
+                            aRasterizer_5383.drawTexturedTriangle((float) renderVertexY[x], (float) renderVertexY[y], (float) renderVertexY[z], (float) renderVertexX[x], (float) renderVertexX[y], (float) renderVertexX[z], (float) renderVertexZ[x], (float) renderVertexZ[y], (float) renderVertexZ[z], texCoordU[i][0], texCoordU[i][1], texCoordU[i][2], texCoordV[i][0], texCoordV[i][1], texCoordV[i][2], i_775_ | shadeFacesX[i] & 0xffffff, i_775_ | shadeFacesY[i] & 0xffffff, i_775_ | shadeFacesZ[i] & 0xffffff, aJavaThreadResource_5367.fogColour2, i_771_, i_772_, i_773_, faceTextures[i]);
                     }
                 }
             }

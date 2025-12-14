@@ -5,15 +5,16 @@
 import java.awt.*;
 import java.math.BigInteger;
 
-abstract class Class348_Sub31 extends Node {
+// Class348_Sub31
+abstract class JavaSurface extends Node {
     static int anInt6913 = 0;
     static int anInt6914;
     static int anInt6915;
-    int[] anIntArray6916;
-    int anInt6917;
+    int[] raster;
+    int width;
     static int anInt6918;
     static int anInt6919;
-    int anInt6920;
+    int height;
     static BigInteger aBigInteger6921;
     static int anInt6922;
     static int anInt6923 = -1;
@@ -208,7 +209,7 @@ abstract class Class348_Sub31 extends Node {
         }
     }
 
-    public Class348_Sub31() {
+    public JavaSurface() {
         /* empty */
     }
 

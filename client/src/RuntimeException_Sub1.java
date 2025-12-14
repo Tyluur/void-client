@@ -83,7 +83,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
                     Class118.anIntArray1786 = new int[Class132.anInt1905];
                     LoadingScreenOpFactory.anIntArray1636 = new int[Class132.anInt1905];
                 }
-            } else Class348_Sub31.anInt6923 = packet.readUnsignedShort(842397944);
+            } else JavaSurface.anInt6923 = packet.readUnsignedShort(842397944);
         }
         if (!bool) {
             if (Class118.anIntArray1786 == null) {

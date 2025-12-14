@@ -135,7 +135,7 @@ final class FontRenderer_Sub4 extends FontRenderer {
                 i_53_ += i_57_;
                 i_52_ += i_57_;
             }
-            if (i_48_ > 0 && i_49_ > 0) method2594(aByteArrayArray6504[c], aJavaToolkit_6506.anIntArray7483, i_45_, i_54_, i_51_, i_48_, i_49_, i_52_, i_53_, i, i_44_, anIntArray6503[c], var_aa, i_46_, i_47_);
+            if (i_48_ > 0 && i_49_ > 0) method2594(aByteArrayArray6504[c], aJavaToolkit_6506.surfaceRaster, i_45_, i_54_, i_51_, i_48_, i_49_, i_52_, i_53_, i, i_44_, anIntArray6503[c], var_aa, i_46_, i_47_);
         }
     }
 
@@ -172,6 +172,6 @@ final class FontRenderer_Sub4 extends FontRenderer {
             i_65_ += i_69_;
             i_64_ += i_69_;
         }
-        if (i_60_ > 0 && i_61_ > 0) method2595(aByteArrayArray6504[c], aJavaToolkit_6506.anIntArray7483, i_59_, i_66_, i_63_, i_60_, i_61_, i_64_, i_65_);
+        if (i_60_ > 0 && i_61_ > 0) method2595(aByteArrayArray6504[c], aJavaToolkit_6506.surfaceRaster, i_59_, i_66_, i_63_, i_60_, i_61_, i_64_, i_65_);
     }
 }

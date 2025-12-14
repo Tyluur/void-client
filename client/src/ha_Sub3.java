@@ -813,7 +813,7 @@ abstract class ha_Sub3 extends Toolkit {
 
     abstract Interface18_Impl3 method3830(int i, int[] is, boolean bool, byte i_57_, int i_58_, int i_59_, int i_60_);
 
-    final void method3631(int i) {
+    final void allocateThreads(int i) {
         anInt7963++;
         if (i != 1) throw new IllegalArgumentException("");
     }
@@ -1984,7 +1984,7 @@ abstract class ha_Sub3 extends Toolkit {
                 }
                 sprite = this.method3662(class207.anInt2702, is, (byte) 94, 0, class207.anInt2702, class207.anInt2696);
             }
-            sprite.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
+            sprite.setOffsets(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
             return sprite;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.GF(" + (class207 != null ? "{...}" : "null") + ',' + bool + ')'));
@@ -2784,7 +2784,7 @@ abstract class ha_Sub3 extends Toolkit {
             method3908((byte) 29);
             aBoolean8112 = true;
         }
-        if (i >= -37) method3631(74);
+        if (i >= -37) allocateThreads(74);
     }
 
     abstract void method3950(int i);

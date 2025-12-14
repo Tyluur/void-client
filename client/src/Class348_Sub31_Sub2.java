@@ -8,7 +8,7 @@ import java.awt.image.DirectColorModel;
 import java.awt.image.ImageConsumer;
 import java.awt.image.ImageProducer;
 
-final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer {
+final class Class348_Sub31_Sub2 extends JavaSurface implements ImageProducer {
     static int anInt9068;
     static int[] anIntArray9069 = new int[1];
     static int anInt9070;
@@ -29,7 +29,7 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
     private final synchronized void method3015(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
         anInt9068++;
         if (anImageConsumer9083 != null) {
-            anImageConsumer9083.setPixels(i_1_, i_2_, i_3_, i, aColorModel9078, (this.anIntArray6916), i_2_ * (this.anInt6917) + i_1_, this.anInt6917);
+            anImageConsumer9083.setPixels(i_1_, i_2_, i_3_, i, aColorModel9078, (this.raster), i_2_ * (this.width) + i_1_, this.width);
             anImageConsumer9083.imageComplete(2);
             if (i_0_ != 25786) anIntArray9069 = null;
         }
@@ -55,7 +55,7 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
         anInt9071++;
         int i_4_ = -25 % ((i - -41) / 55);
         if (anImageConsumer9083 != null) {
-            anImageConsumer9083.setPixels(0, 0, this.anInt6917, this.anInt6920, aColorModel9078, (this.anIntArray6916), 0, this.anInt6917);
+            anImageConsumer9083.setPixels(0, 0, this.width, this.height, aColorModel9078, (this.raster), 0, this.width);
             anImageConsumer9083.imageComplete(2);
         }
     }
@@ -63,7 +63,7 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
     public final synchronized void addConsumer(ImageConsumer imageconsumer) {
         anInt9072++;
         anImageConsumer9083 = imageconsumer;
-        imageconsumer.setDimensions(this.anInt6917, this.anInt6920);
+        imageconsumer.setDimensions(this.width, this.height);
         imageconsumer.setProperties(null);
         imageconsumer.setColorModel(aColorModel9078);
         imageconsumer.setHints(14);
@@ -85,11 +85,11 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
     }
 
     final void method3008(Canvas canvas, int i, int i_11_, int i_12_) {
-        this.anInt6920 = i_12_;
+        this.height = i_12_;
         anInt9079++;
-        this.anInt6917 = i;
+        this.width = i;
         aCanvas9073 = canvas;
-        this.anIntArray6916 = new int[(this.anInt6917 * this.anInt6920)];
+        this.raster = new int[(this.width * this.height)];
         aColorModel9078 = new DirectColorModel(32, 16711680, 65280, 255);
         if (i_11_ <= -42) {
             anImage9075 = aCanvas9073.createImage(this);

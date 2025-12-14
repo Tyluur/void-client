@@ -57,7 +57,7 @@ final class Class367_Sub3 extends Class367 {
 
     static final void method3540(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, boolean bool) {
         if (i_6_ >= Class369.anInt4960 && Class113.anInt1745 >= i_6_ && Class369.anInt4960 <= i_5_ && Class113.anInt1745 >= i_5_ && i_7_ >= Class369.anInt4960 && i_7_ <= Class113.anInt1745 && Class369.anInt4960 <= i_9_ && Class113.anInt1745 >= i_9_ && i >= Class132.anInt1910 && Class38.anInt513 >= i && i_2_ >= Class132.anInt1910 && Class38.anInt513 >= i_2_ && Class132.anInt1910 <= i_8_ && i_8_ <= Class38.anInt513 && Class132.anInt1910 <= i_4_ && i_4_ <= Class38.anInt513)
-            Class348_Sub31.method3009(i_2_, i_8_, i_5_, i_9_, i_4_, (byte) -1, i_7_, i, i_3_, i_6_);
+            JavaSurface.method3009(i_2_, i_8_, i_5_, i_9_, i_4_, (byte) -1, i_7_, i, i_3_, i_6_);
         else Class316.method2364(i_3_, i_7_, i_6_, i_2_, i_5_, i_8_, i_9_, i, 3, i_4_);
         if (bool != true) method3540(37, -122, 69, -89, -8, -19, 89, 112, 12, false);
         anInt7302++;

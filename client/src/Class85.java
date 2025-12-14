@@ -67,12 +67,12 @@ final class Class85 {
             int i_16_ = Class250.anInt3225;
             Option_Sub8.method1752(-1, i_13_, i_14_);
             if (Packet.anInt7207 == 0) {
-                AnimationType.anInterface4_252 = null;
-                AnimationType.anInterface4_252 = (Class21.aToolkit326.method3634(Class21.aToolkit326.method3665((Class348_Sub16_Sub1.anInt8854), Option_Sub16.anInt6008), Class21.aToolkit326.method3624((Class348_Sub16_Sub1.anInt8854), Option_Sub16.anInt6008)));
-            } else if (Packet.anInt7207 == 1 && (Class92.anInterface4Array1525 == null || i_15_ != Class31.anInt425 || i_16_ != Class250.anInt3225)) {
-                Class92.anInterface4Array1525 = new Interface4[Class250.anInt3225 * Class31.anInt425];
-                for (int i_17_ = 0; Class92.anInterface4Array1525.length > i_17_; i_17_++)
-                    Class92.anInterface4Array1525[i_17_] = (Class21.aToolkit326.method3634(Class21.aToolkit326.method3665(Class58.anInt1067, Class344.anInt4267), Class21.aToolkit326.method3624(Class58.anInt1067, Class344.anInt4267)));
+                AnimationType.anOffscreenSurface_252 = null;
+                AnimationType.anOffscreenSurface_252 = (Class21.aToolkit326.method3634(Class21.aToolkit326.method3665((Class348_Sub16_Sub1.anInt8854), Option_Sub16.anInt6008), Class21.aToolkit326.method3624((Class348_Sub16_Sub1.anInt8854), Option_Sub16.anInt6008)));
+            } else if (Packet.anInt7207 == 1 && (Class92.anOffscreenSurfaceArray1525 == null || i_15_ != Class31.anInt425 || i_16_ != Class250.anInt3225)) {
+                Class92.anOffscreenSurfaceArray1525 = new OffscreenSurface[Class250.anInt3225 * Class31.anInt425];
+                for (int i_17_ = 0; Class92.anOffscreenSurfaceArray1525.length > i_17_; i_17_++)
+                    Class92.anOffscreenSurfaceArray1525[i_17_] = (Class21.aToolkit326.method3634(Class21.aToolkit326.method3665(Class58.anInt1067, Class344.anInt4267), Class21.aToolkit326.method3624(Class58.anInt1067, Class344.anInt4267)));
                 Class132.anIntArray1909 = new int[Class31.anInt425 * Class250.anInt3225];
                 Class318_Sub1_Sub1_Sub2.anInt9997 = 1;
             }

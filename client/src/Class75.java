@@ -539,7 +539,7 @@ class Class75 {
                     Sprite sprite = class218.method1596((class51.aBoolean912 ? is_121_[i_122_] >> 6 & 0x3 : 0), (class51.aBoolean925 && (class51.aBoolean902)), 125, var_toolkit);
                     if (sprite != null) {
                         int i_124_ = i_119_ * sprite.scaleWidth() >> 2;
-                        int i_125_ = i_120_ * sprite.method980() >> 2;
+                        int i_125_ = i_120_ * sprite.scaleHeight() >> 2;
                         if (class218.aBoolean2854) {
                             int i_126_ = class51.anInt961;
                             int i_127_ = class51.anInt926;

@@ -12,8 +12,8 @@ abstract class Sprite implements Interface3 {
             float f_10_ = (f_1_ * f_7_ + -f_2_ * f_8_) / 4096.0F + f_0_;
             float f_11_ = ((((float) scaleWidth() - f_1_) * f_8_ + -f_2_ * f_7_) / 4096.0F + f);
             float f_12_ = ((-((float) scaleWidth() - f_1_) * f_7_ + -f_2_ * f_8_) / 4096.0F + f_0_);
-            float f_13_ = ((-f_1_ * f_8_ + ((float) method980() - f_2_) * f_7_) / 4096.0F + f);
-            float f_14_ = (((f_1_ * f_7_ + ((float) method980() - f_2_) * f_8_) / 4096.0F) + f_0_);
+            float f_13_ = ((-f_1_ * f_8_ + ((float) scaleHeight() - f_2_) * f_7_) / 4096.0F + f);
+            float f_14_ = (((f_1_ * f_7_ + ((float) scaleHeight() - f_2_) * f_8_) / 4096.0F) + f_0_);
             method978(f_9_, f_10_, f_11_, f_12_, f_13_, f_14_, i_4_, i_5_, i_6_);
         }
     }
@@ -37,21 +37,21 @@ abstract class Sprite implements Interface3 {
             float f_45_ = (f_37_ * f_42_ + -f_38_ * f_43_) / 4096.0F + f_36_;
             float f_46_ = ((((float) scaleWidth() - f_37_) * f_43_ + -f_38_ * f_42_) / 4096.0F + f);
             float f_47_ = ((-((float) scaleWidth() - f_37_) * f_42_ + -f_38_ * f_43_) / 4096.0F + f_36_);
-            float f_48_ = ((-f_37_ * f_43_ + ((float) method980() - f_38_) * f_42_) / 4096.0F + f);
-            float f_49_ = ((f_37_ * f_42_ + ((float) method980() - f_38_) * f_43_) / 4096.0F + f_36_);
+            float f_48_ = ((-f_37_ * f_43_ + ((float) scaleHeight() - f_38_) * f_42_) / 4096.0F + f);
+            float f_49_ = ((f_37_ * f_42_ + ((float) scaleHeight() - f_38_) * f_43_) / 4096.0F + f_36_);
             method975(f_44_, f_45_, f_46_, f_47_, f_48_, f_49_, var_aa, i_40_, i_41_);
         }
     }
 
     abstract void method968(int i, int i_50_, int i_51_);
 
-    abstract int method969();
+    abstract int getHeight();
 
     final void method970(int i, int i_52_, int i_53_, int i_54_, int i_55_, int i_56_, int i_57_) {
         method982(i, i_52_, i_53_, i_54_, i_55_, i_56_, i_57_, 1);
     }
 
-    abstract int method971();
+    abstract int getWidth();
 
     final void method972(int i, int i_58_, int i_59_, int i_60_) {
         method965(i, i_58_, i_59_, i_60_, 1, 0, 1);
@@ -70,11 +70,11 @@ abstract class Sprite implements Interface3 {
     }
 
     final void method976(float f, float f_71_, int i, int i_72_, aa var_aa, int i_73_, int i_74_) {
-        method967(f, f_71_, (float) scaleWidth() / 2.0F, (float) method980() / 2.0F, i, i_72_, var_aa, i_73_, i_74_);
+        method967(f, f_71_, (float) scaleWidth() / 2.0F, (float) scaleHeight() / 2.0F, i, i_72_, var_aa, i_73_, i_74_);
     }
 
     final void method977(float f, float f_75_, int i, int i_76_, int i_77_, int i_78_, int i_79_) {
-        method961(f, f_75_, (float) scaleWidth() / 2.0F, (float) method980() / 2.0F, i, i_76_, i_77_, i_78_, i_79_);
+        method961(f, f_75_, (float) scaleWidth() / 2.0F, (float) scaleHeight() / 2.0F, i, i_76_, i_77_, i_78_, i_79_);
     }
 
     private final void method978(float f, float f_80_, float f_81_, float f_82_, float f_83_, float f_84_, int i, int i_85_, int i_86_) {
@@ -83,21 +83,21 @@ abstract class Sprite implements Interface3 {
 
     abstract void method979(int i, int i_87_, int i_88_, int i_89_, int i_90_, int i_91_);
 
-    abstract int method980();
+    abstract int scaleHeight();
 
     final void method981(float f, float f_92_, int i, int i_93_) {
-        method961(f, f_92_, (float) scaleWidth() / 2.0F, (float) method980() / 2.0F, i, i_93_, 1, 0, 1);
+        method961(f, f_92_, (float) scaleWidth() / 2.0F, (float) scaleHeight() / 2.0F, i, i_93_, 1, 0, 1);
     }
 
     abstract void method982(int i, int i_94_, int i_95_, int i_96_, int i_97_, int i_98_, int i_99_, int i_100_);
 
     abstract void method983(float f, float f_101_, float f_102_, float f_103_, float f_104_, float f_105_, int i, aa var_aa, int i_106_, int i_107_);
 
-    abstract void method984(int[] is);
+    abstract void projectOffsets(int[] is);
 
     public Sprite() {
         /* empty */
     }
 
-    abstract void method985(int i, int i_108_, int i_109_, int i_110_);
+    abstract void setOffsets(int i, int i_108_, int i_109_, int i_110_);
 }

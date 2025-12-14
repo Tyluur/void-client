@@ -318,7 +318,7 @@ public final class Class378 extends ha_Sub3 {
         if (i_27_ < 46) method3931(true, null, null);
     }
 
-    final Interface4 method3634(Interface3 interface3, Interface13 interface13) {
+    final OffscreenSurface method3634(Interface3 interface3, Interface13 interface13) {
         return null;
     }
 
@@ -644,7 +644,7 @@ public final class Class378 extends ha_Sub3 {
         return new Class310_Sub2(this, i, i_58_, bool, is, i_56_, i_57_);
     }
 
-    final void method3687(Interface4 interface4) {
+    final void method3687(OffscreenSurface offscreenSurface) {
         /* empty */
     }
 

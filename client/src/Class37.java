@@ -28,7 +28,7 @@ final class Class37 {
         else {
             if (i != 0) method359(-119, -101);
             if (is.length == 5000 && Class348_Sub40_Sub21.anInt9280 < 250) Class133.aByteArrayArray1918[Class348_Sub40_Sub21.anInt9280++] = is;
-            else if (is.length == 30000 && Class348_Sub31.anInt6913 < 50) Class285_Sub2.aByteArrayArray8505[Class348_Sub31.anInt6913++] = is;
+            else if (is.length == 30000 && JavaSurface.anInt6913 < 50) Class285_Sub2.aByteArrayArray8505[JavaSurface.anInt6913++] = is;
             else if (Class348_Sub40_Sub6.aByteArrayArrayArray9134 != null) {
                 for (int i_2_ = 0; Class59_Sub2_Sub2.anIntArray8684.length > i_2_; i_2_++) {
                     if ((is.length == Class59_Sub2_Sub2.anIntArray8684[i_2_]) && (Class348_Sub40_Sub6.aByteArrayArrayArray9134[i_2_]).length > Class190.anIntArray2552[i_2_]) {
@@ -59,9 +59,9 @@ final class Class37 {
             return is;
         }
         if (i_9_ != -1) method359(-88, -45);
-        if (i == 30000 && Class348_Sub31.anInt6913 > 0) {
-            byte[] is = (Class285_Sub2.aByteArrayArray8505[--Class348_Sub31.anInt6913]);
-            Class285_Sub2.aByteArrayArray8505[Class348_Sub31.anInt6913] = null;
+        if (i == 30000 && JavaSurface.anInt6913 > 0) {
+            byte[] is = (Class285_Sub2.aByteArrayArray8505[--JavaSurface.anInt6913]);
+            Class285_Sub2.aByteArrayArray8505[JavaSurface.anInt6913] = null;
             return is;
         }
         if (Class348_Sub40_Sub6.aByteArrayArrayArray9134 != null) {

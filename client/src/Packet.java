@@ -609,10 +609,10 @@ class Packet extends Node {
                 if (Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350) != 0) {
                     Class315.method2355(Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350), (byte) 50, false, Class59_Sub2_Sub1.MUSIC, Class345.anInt4270, 0, 2);
                     Class348_Sub40_Sub17_Sub1.method3093(i ^ 0x66);
-                } else Class348_Sub31.method3007(2, 22684);
+                } else JavaSurface.method3007(2, 22684);
                 SystemInfo.aClass248_6601.method1892(-117, false);
             } else {
-                Class348_Sub31.method3007(2, 22684);
+                JavaSurface.method3007(2, 22684);
                 SystemInfo.aClass248_6601.method1892(i ^ ~0x4b, true);
             }
         }

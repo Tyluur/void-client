@@ -57,11 +57,11 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
             }
             anInt8709++;
             if (OutputStream_Sub2.aSprite_106 != null && Class121.aSprite_1800 != null) {
-                int i_8_ = ((i - 2 * Class121.aSprite_1800.method971()) / OutputStream_Sub2.aSprite_106.method971());
+                int i_8_ = ((i - 2 * Class121.aSprite_1800.getWidth()) / OutputStream_Sub2.aSprite_106.getWidth());
                 for (int i_9_ = 0; i_9_ < i_8_; i_9_++)
-                    OutputStream_Sub2.aSprite_106.method974((Class121.aSprite_1800.method971() + i_4_ + (OutputStream_Sub2.aSprite_106.method971() * i_9_)), i_5_);
+                    OutputStream_Sub2.aSprite_106.method974((Class121.aSprite_1800.getWidth() + i_4_ + (OutputStream_Sub2.aSprite_106.getWidth() * i_9_)), i_5_);
                 Class121.aSprite_1800.method974(i_4_, i_5_);
-                Class348_Sub5.aSprite_6627.method974((-Class348_Sub5.aSprite_6627.method971() + i_4_ - -i), i_5_);
+                Class348_Sub5.aSprite_6627.method974((-Class348_Sub5.aSprite_6627.getWidth() + i_4_ - -i), i_5_);
             }
             if (bool == false) {
                 Class262.aFontRenderer_3326.method2576(string, (Class348_Sub42_Sub11.anInt9586) | ~0xffffff, 14 + i_5_, 3 + i_4_, -1, -127);

@@ -158,7 +158,7 @@ final class Class230 {
                                         Class59_Sub1_Sub1.method560(class318_sub4, i ^ 0x4b);
                                     }
                                 }
-                                if (Packet.anInt7207 == 0) Class21.aToolkit326.method3687(AnimationType.anInterface4_252);
+                                if (Packet.anInt7207 == 0) Class21.aToolkit326.method3687(AnimationType.anOffscreenSurface_252);
                                 Class21.aToolkit326.F(-i_33_, -i_34_);
                                 Class21.aToolkit326.b(i_45_, i_48_, i_43_, i_50_, d_37_);
                                 r.method3284(true, (Class348_Sub42_Sub4.aDouble9517 + d_37_));
@@ -205,7 +205,7 @@ final class Class230 {
                                         for (int i_67_ = 0; (Class31.anInt425 > i_67_); i_67_++) {
                                             int i_68_ = ((JavaBillboardAttributes.method3452(i_67_ + (Option_Sub24.anInt6095), (byte) -15, Class31.anInt425)) + i_66_);
                                             boolean bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)));
-                                            Class92.anInterface4Array1525[i_68_].method15(Class58.anInt1067 * i_67_, i_65_ * Class344.anInt4267, Class58.anInt1067, Class344.anInt4267, 0, 0, bool_69_, true);
+                                            Class92.anOffscreenSurfaceArray1525[i_68_].method15(Class58.anInt1067 * i_67_, i_65_ * Class344.anInt4267, Class58.anInt1067, Class344.anInt4267, 0, 0, bool_69_, true);
                                         }
                                     }
                                 }
@@ -225,7 +225,7 @@ final class Class230 {
                         Sprite_Sub1.anInt8422 = i_4_;
                         Class348_Sub3.anInt6568 = 0;
                         Class348_Sub42_Sub4.aDouble9517 = 0.0;
-                        if (Packet.anInt7207 == 0) Class21.aToolkit326.method3687(AnimationType.anInterface4_252);
+                        if (Packet.anInt7207 == 0) Class21.aToolkit326.method3687(AnimationType.anOffscreenSurface_252);
                         Class21.aToolkit326.la();
                         Class21.aToolkit326.ya();
                         Class21.aToolkit326.GA(Class77.anInt1290);
@@ -253,7 +253,7 @@ final class Class230 {
                         if (Packet.anInt7207 == 0) Class21.aToolkit326.method3672();
                         if (Packet.anInt7207 == 1) Class202.method1469(-117);
                     }
-                    if (Packet.anInt7207 == 0) AnimationType.anInterface4_252.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, Class107.anInt1651, 0, 0, true, true);
+                    if (Packet.anInt7207 == 0) AnimationType.anOffscreenSurface_252.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, Class107.anInt1651, 0, 0, true, true);
                     Class318_Sub1_Sub1_Sub2.anInt9997++;
                     r.method3284(true, Class348_Sub42_Sub4.aDouble9517);
                     Class318_Sub1_Sub5_Sub1.aDouble10120 = Class348_Sub42_Sub4.aDouble9517;

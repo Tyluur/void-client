@@ -44,8 +44,8 @@ final class FontRenderer_Sub1 extends FontRenderer {
             i_6_ += i_11_;
         }
         if (i_2_ > 0 && i_3_ > 0) {
-            if ((i_1_ & ~0xffffff) == -16777216) method2588(aByteArrayArray6490[c], aJavaToolkit_6486.anIntArray7483, i_1_, i_8_, i_5_, i_2_, i_3_, i_6_, i_7_);
-            else if ((i_1_ & ~0xffffff) != 0) method2586(aByteArrayArray6490[c], aJavaToolkit_6486.anIntArray7483, i_1_, i_8_, i_5_, i_2_, i_3_, i_6_, i_7_);
+            if ((i_1_ & ~0xffffff) == -16777216) method2588(aByteArrayArray6490[c], aJavaToolkit_6486.surfaceRaster, i_1_, i_8_, i_5_, i_2_, i_3_, i_6_, i_7_);
+            else if ((i_1_ & ~0xffffff) != 0) method2586(aByteArrayArray6490[c], aJavaToolkit_6486.surfaceRaster, i_1_, i_8_, i_5_, i_2_, i_3_, i_6_, i_7_);
         }
     }
 
@@ -170,8 +170,8 @@ final class FontRenderer_Sub1 extends FontRenderer {
                 i_68_ += i_73_;
             }
             if (i_64_ > 0 && i_65_ > 0) {
-                if ((i_61_ & ~0xffffff) == -16777216) method2587(aByteArrayArray6490[c], aJavaToolkit_6486.anIntArray7483, i_61_, i_70_, i_67_, i_64_, i_65_, i_68_, i_69_, i, i_60_, anIntArray6489[c], var_aa, i_62_, i_63_);
-                else method2589(aByteArrayArray6490[c], aJavaToolkit_6486.anIntArray7483, i_61_, i_70_, i_67_, i_64_, i_65_, i_68_, i_69_, i, i_60_, anIntArray6489[c], var_aa, i_62_, i_63_);
+                if ((i_61_ & ~0xffffff) == -16777216) method2587(aByteArrayArray6490[c], aJavaToolkit_6486.surfaceRaster, i_61_, i_70_, i_67_, i_64_, i_65_, i_68_, i_69_, i, i_60_, anIntArray6489[c], var_aa, i_62_, i_63_);
+                else method2589(aByteArrayArray6490[c], aJavaToolkit_6486.surfaceRaster, i_61_, i_70_, i_67_, i_64_, i_65_, i_68_, i_69_, i, i_60_, anIntArray6489[c], var_aa, i_62_, i_63_);
             }
         }
     }

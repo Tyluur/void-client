@@ -19,7 +19,7 @@ final class EnumTypeList {
             class117 = (Class117) aClass60_460.method583(i, 111);
         }
         if (class117 != null) return class117;
-        byte[] is = aIndex_458.method410(-1860, Class5_Sub3.method200(-107, i), Class348_Sub31.method3013(i, bool));
+        byte[] is = aIndex_458.method410(-1860, Class5_Sub3.method200(-107, i), JavaSurface.method3013(i, bool));
         class117 = new Class117();
         if (is != null) class117.method1069(0, new Packet(is));
         synchronized (aClass60_460) {

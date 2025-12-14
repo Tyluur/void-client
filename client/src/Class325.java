@@ -651,10 +651,10 @@ final class Class325 {
                             Class298.method2252(true, (player.anIntArray10320[0]), (player.anIntArray10317[0]), (byte) -106, player.method2436((byte) 45), 0, player.method2436((byte) 63), -2, 0);
                         }
                     }
-                    if (i_76_ == 16 && Class49.aClass46_4730 == null) {
+                    if (i_76_ == 16 && JavaOffscreenSurface.aClass46_4730 == null) {
                         Class348_Sub40_Sub7.method3065(i_75_, false, i_74_);
-                        Class49.aClass46_4730 = Class348_Sub22.method2957(i_74_, (byte) -54, i_75_);
-                        Class251.method1916(-9343, Class49.aClass46_4730);
+                        JavaOffscreenSurface.aClass46_4730 = Class348_Sub22.method2957(i_74_, (byte) -54, i_75_);
+                        Class251.method1916(-9343, JavaOffscreenSurface.aClass46_4730);
                     }
                     if (i_76_ == 8) {
                         Player player = (Class294.aPlayerArray5058[i_77_]);

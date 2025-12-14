@@ -97,7 +97,7 @@ abstract class Matrix {
             Class341.aSpriteArray4234 = new Sprite[Option_Sub1.anInt5850 + 10];
             Class214.method1575(sprites, 0, Class341.aSpriteArray4234, 0, Option_Sub1.anInt5850);
             for (int i_17_ = 0; Option_Sub1.anInt5850 > i_17_; i_17_++)
-                Class175.anIntArray2330[i_17_] = Class341.aSpriteArray4234[i_17_].method980();
+                Class175.anIntArray2330[i_17_] = Class341.aSpriteArray4234[i_17_].scaleHeight();
             if (i != 515880227) anInt1597 = 49;
             for (int i_18_ = Option_Sub1.anInt5850; (i_18_ < Class341.aSpriteArray4234.length); i_18_++)
                 Class175.anIntArray2330[i_18_] = 12;

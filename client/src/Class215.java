@@ -71,7 +71,7 @@ final class Class215 {
             if (Class348_Sub40_Sub8.aClass238_9165 != null && Class334.method2653(true, Class240.mainLogicStep)) Class286_Sub2.method2145(-24498);
             for (int i_5_ = 0; i_5_ < 100; i_5_++)
                 Class152.aBooleanArray2076[i_5_] = true;
-            Class49.aBoolean4726 = true;
+            JavaOffscreenSurface.aBoolean4726 = true;
         }
     }
 

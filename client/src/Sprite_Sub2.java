@@ -47,7 +47,7 @@ final class Sprite_Sub2 extends Sprite {
         anInt8435++;
         if (aBoolean8427) {
             float f_8_ = (float) scaleWidth();
-            float f_9_ = (float) method980();
+            float f_9_ = (float) scaleHeight();
             float f_10_ = (f_1_ - f) / f_8_;
             float f_11_ = (f_2_ - f_0_) / f_8_;
             float f_12_ = (-f + f_3_) / f_9_;
@@ -87,7 +87,7 @@ final class Sprite_Sub2 extends Sprite {
         OpenGL.glEnd();
     }
 
-    final int method969() {
+    final int getHeight() {
         anInt8439++;
         return aClass258_Sub3_Sub1_8434.anInt9939;
     }
@@ -110,7 +110,7 @@ final class Sprite_Sub2 extends Sprite {
         OpenGL.glPixelTransferf(3355, 0.0F);
     }
 
-    final void method984(int[] is) {
+    final void projectOffsets(int[] is) {
         is[1] = anInt8446;
         anInt8445++;
         is[3] = anInt8432;
@@ -118,7 +118,7 @@ final class Sprite_Sub2 extends Sprite {
         is[2] = anInt8449;
     }
 
-    final int method980() {
+    final int scaleHeight() {
         anInt8433++;
         return (anInt8446 + aClass258_Sub3_Sub1_8434.anInt9939 + anInt8432);
     }
@@ -172,7 +172,7 @@ final class Sprite_Sub2 extends Sprite {
         aHa_Sub2_8430.method3738(-15039, 0);
     }
 
-    final void method985(int i, int i_41_, int i_42_, int i_43_) {
+    final void setOffsets(int i, int i_41_, int i_42_, int i_43_) {
         anInt8447 = i;
         anInt8449 = i_42_;
         anInt8446 = i_41_;
@@ -199,7 +199,7 @@ final class Sprite_Sub2 extends Sprite {
         Class258_Sub3_Sub1 class258_sub3_sub1 = ((aa_Sub1) var_aa).aClass258_Sub3_Sub1_5193;
         if (aBoolean8427) {
             float f_51_ = (float) scaleWidth();
-            float f_52_ = (float) method980();
+            float f_52_ = (float) scaleHeight();
             float f_53_ = (-f + f_45_) / f_51_;
             float f_54_ = (-f_44_ + f_46_) / f_51_;
             float f_55_ = (-f + f_47_) / f_52_;
@@ -347,7 +347,7 @@ final class Sprite_Sub2 extends Sprite {
             OpenGL.glPushMatrix();
             OpenGL.glTranslatef((float) anInt8447, (float) anInt8446, 0.0F);
             int i_83_ = scaleWidth();
-            int i_84_ = method980();
+            int i_84_ = scaleHeight();
             int i_85_ = i_74_ - -(aClass258_Sub3_Sub1_8434.anInt9939);
             OpenGL.glBegin(7);
             int i_86_ = i_74_;
@@ -411,7 +411,7 @@ final class Sprite_Sub2 extends Sprite {
         }
     }
 
-    final int method971() {
+    final int getWidth() {
         anInt8437++;
         return aClass258_Sub3_Sub1_8434.anInt9940;
     }
@@ -424,7 +424,7 @@ final class Sprite_Sub2 extends Sprite {
         OpenGL.glColor4ub((byte) (i_96_ >> 16), (byte) (i_96_ >> 8), (byte) i_96_, (byte) (i_96_ >> 24));
         if (aBoolean8427) {
             float f = (float) i_93_ / (float) scaleWidth();
-            float f_99_ = (float) i_94_ / (float) method980();
+            float f_99_ = (float) i_94_ / (float) scaleHeight();
             float f_100_ = (float) i + f * (float) anInt8447;
             float f_101_ = (float) anInt8446 * f_99_ + (float) i_92_;
             float f_102_ = f_100_ + f * (float) aClass258_Sub3_Sub1_8434.anInt9940;

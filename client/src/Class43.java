@@ -49,7 +49,7 @@ final class Class43 {
             int i_4_ = (JavaBillboardAttributes.method3452(Class286.anInt3682 + i_3_, (byte) -15, Class250.anInt3225) * Class31.anInt425);
             for (int i_5_ = 0; Class31.anInt425 > i_5_; i_5_++) {
                 int i_6_ = (JavaBillboardAttributes.method3452(i_5_ - -Option_Sub24.anInt6095, (byte) -15, Class31.anInt425) + i_4_);
-                if (Class132.anIntArray1909[i_6_] == Class318_Sub1_Sub1_Sub2.anInt9997) Class92.anInterface4Array1525[i_6_].method14(0, 0, Class58.anInt1067, Class344.anInt4267, i_5_ * Class58.anInt1067, Class344.anInt4267 * i_3_, true, true);
+                if (Class132.anIntArray1909[i_6_] == Class318_Sub1_Sub1_Sub2.anInt9997) Class92.anOffscreenSurfaceArray1525[i_6_].method14(0, 0, Class58.anInt1067, Class344.anInt4267, i_5_ * Class58.anInt1067, Class344.anInt4267 * i_3_, true, true);
             }
         }
         anInt612++;

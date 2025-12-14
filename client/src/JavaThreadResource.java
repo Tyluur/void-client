@@ -5,12 +5,12 @@
 // Class167
 final class JavaThreadResource {
     private final JavaToolkit aJavaToolkit_2191;
-    int anInt2192;
+    int fogColour2;
     static int anInt2193;
     static int anInt2194;
     boolean fogEnabled = false;
     static Class114 aClass114_2196 = new Class114(111, -1);
-    int anInt2197;
+    int waterDepth;
     Runnable aRunnable2198;
     static int anInt2199;
     static int anInt2200;
@@ -18,13 +18,13 @@ final class JavaThreadResource {
     boolean aBoolean2202;
     static float aFloat2203;
     static int anInt2204 = 0;
-    int anInt2205;
+    int fogColour1;
     static int anInt2206;
     static Class229 aClass229_2207 = new Class229();
     static Index aIndex_2208;
     JavaMatrix aJavaMatrix_2209;
     int fogPlane;
-    int anInt2211;
+    int waterHeight;
     int[] anIntArray2212;
     int[] anIntArray2213;
     int[] anIntArray2214;
@@ -33,7 +33,7 @@ final class JavaThreadResource {
     int[] anIntArray2217;
     int[] anIntArray2218;
     JavaModel aJavaModel_2219;
-    Rasterizer aRasterizer_2220;
+    Rasterizer rasterizer;
     int width;
     int[] anIntArray2222;
     JavaModel aJavaModel_2223;
@@ -72,7 +72,7 @@ final class JavaThreadResource {
     final void method1292(int i) {
         if (i == 64) {
             anInt2194++;
-            this.aRasterizer_2220 = new Rasterizer(aJavaToolkit_2191, this);
+            this.rasterizer = new Rasterizer(aJavaToolkit_2191, this);
         }
     }
 
@@ -172,11 +172,11 @@ final class JavaThreadResource {
     }
 
     JavaThreadResource(JavaToolkit var_javaToolkit) {
-        this.anInt2192 = 0;
-        this.anInt2197 = 0;
-        this.anInt2205 = 0;
+        this.fogColour2 = 0;
+        this.waterDepth = 0;
+        this.fogColour1 = 0;
         this.aBoolean2202 = true;
-        this.anInt2211 = 0;
+        this.waterHeight = 0;
         this.aJavaMatrix_2209 = new JavaMatrix();
         this.anIntArray2213 = new int[JavaModel.anInt5350];
         this.anIntArray2214 = new int[JavaModel.anInt5350];
@@ -201,7 +201,7 @@ final class JavaThreadResource {
         this.anIntArray2234 = new int[JavaModel.anInt5350];
         aJavaToolkit_2191 = var_javaToolkit;
         this.fogPlane = aJavaToolkit_2191.zFar + -255;
-        this.aRasterizer_2220 = new Rasterizer(var_javaToolkit, this);
+        this.rasterizer = new Rasterizer(var_javaToolkit, this);
         this.aJavaModel_2243 = new JavaModel(aJavaToolkit_2191);
         this.aJavaModel_2224 = new JavaModel(aJavaToolkit_2191);
         this.aJavaModel_2219 = new JavaModel(aJavaToolkit_2191);

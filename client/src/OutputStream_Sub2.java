@@ -75,7 +75,7 @@ final class OutputStream_Sub2 extends OutputStream {
         } else is = (Exception_Sub1.itemTypeList.method1940(-115, (int) class348_sub42_sub12.aLong9605).anIntArray2772);
         if (is != null) string += Class163.method1273(is, true);
         int i = Class369.aFontMetrics_4962.textWidth(string, Class341.aSpriteArray4234, bool);
-        if (class348_sub42_sub12.aBoolean9597) i += Option_Sub24.aSprite_6097.method971() + 4;
+        if (class348_sub42_sub12.aBoolean9597) i += Option_Sub24.aSprite_6097.getWidth() + 4;
         return i;
     }
 

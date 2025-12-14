@@ -4,7 +4,7 @@
 
 final class Class92 {
     static int anInt1524;
-    static Interface4[] anInterface4Array1525;
+    static OffscreenSurface[] anOffscreenSurfaceArray1525;
     static int anInt1526;
     static int anInt1527;
     static float[] aFloatArray1528 = {0.0F, -1.0F, 0.0F, 0.0F};
@@ -69,7 +69,7 @@ final class Class92 {
     }
 
     public static void method860(byte i) {
-        anInterface4Array1525 = null;
+        anOffscreenSurfaceArray1525 = null;
         if (i > 43) aFloatArray1528 = null;
     }
 

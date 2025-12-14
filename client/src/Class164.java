@@ -60,7 +60,7 @@ final class Class164 {
             i_2_ += Class13.js5ResourceProviders[13].indexPercentage(1);
             i_2_ = i_2_ + (!bool ? Class348_Sub40_Sub17_Sub1.LOADING_SCREENS.completePercentage((byte) -31) : 100);
             if (i_2_ != 400) return i_2_ / 4;
-            Class348_Sub31.anInt6924 = Class286_Sub7.LOADING_SPRITES.indexCrc(77);
+            JavaSurface.anInt6924 = Class286_Sub7.LOADING_SPRITES.indexCrc(77);
             Class108.anInt1663 = Class348_Sub40_Sub17_Sub1.LOADING_SCREENS.indexCrc(i + 28561);
             LoadingScreenOpFactory.loadFonts(Class286_Sub7.LOADING_SPRITES, 0);
             int i_3_ = Class316.clientOptions.aClass239_Sub19_7257.method1805(i ^ 0x11ae);
@@ -153,7 +153,7 @@ final class Class164 {
         }
         if (i != -28660) return 2;
         if (Class348_Sub42_Sub15.state == LoadState.SETUP_CONFIG_DECODERS) {
-            if (Class348_Sub31.anInt6923 != -1 && !aa_Sub3.MODELS.requestDownload(-10499, Class348_Sub31.anInt6923, 0)) return 99;
+            if (JavaSurface.anInt6923 != -1 && !aa_Sub3.MODELS.requestDownload(-10499, JavaSurface.anInt6923, 0)) return 99;
             Class348_Sub40_Sub4.js5TextureSource = new Js5TextureSource(Class348_Sub11.TEXTURE_DEFINITIONS, Class369_Sub2.TEXTURES, Class21.SPRITES);
             Class101_Sub3.paramTypeList = new ParamTypeList(Class348_Sub42_Sub8_Sub2.modeGame, AnimBase.language, Class95.CONFIGS);
             Class64_Sub3.basTypeList = new BASTypeList(Class348_Sub42_Sub8_Sub2.modeGame, AnimBase.language, Class95.CONFIGS);

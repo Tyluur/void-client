@@ -273,7 +273,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                 string = (Class286_Sub4.method2157((class46.anInt806), -1431655765));
                                                 if (string == null) string = "";
                                             }
-                                            if (Class49.aClass46_4730 == class46) {
+                                            if (JavaOffscreenSurface.aClass46_4730 == class46) {
                                                 string = (Class274.aClass274_3514.method2063((AnimBase.language), 544));
                                                 i_50_ = (class46.anInt749);
                                             }
@@ -311,7 +311,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40 {
                                                 if (Class348_Sub42_Sub13.aBoolean9616) Class251.method1916(-9343, class46);
                                             } else {
                                                 int i_53_ = sprite.scaleWidth();
-                                                int i_54_ = sprite.method980();
+                                                int i_54_ = sprite.scaleHeight();
                                                 int i_55_ = ((-(i_28_ & 0xff) + 255 << 24) | ((class46.anInt749) != 0 ? (class46.anInt749 & 0xffffff) : 16777215));
                                                 if (class46.aBoolean697) {
                                                     Class348_Sub8.aToolkit6654.T(i_24_, i_25_, i_24_ - -(class46.anInt709), (class46.anInt789) + i_25_);

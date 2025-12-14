@@ -208,7 +208,7 @@ final class Class361 {
                     else i_43_ = (int) ((float) i_40_ * f);
                     i_41_ += (-i_43_ + i) / 2;
                     i_39_ += (i_40_ + -i_42_) / 2;
-                    if (Class67.aSprite_4643 == null || i_40_ != Class67.aSprite_4643.method971() || (Class67.aSprite_4643.method969() != i)) {
+                    if (Class67.aSprite_4643 == null || i_40_ != Class67.aSprite_4643.getWidth() || (Class67.aSprite_4643.getHeight() != i)) {
                         Class75.method751(Class75.anInt1266, (Class75.anInt1267 + Class75.anInt1263), (Class75.anInt1266 - -Class75.anInt1259), Class75.anInt1263, i_39_, i_41_, i_42_ + i_39_, i_43_ + i_41_);
                         Class75.method748(var_toolkit);
                         Class67.aSprite_4643 = var_toolkit.method3683(i_39_, i_41_, i_42_, i_43_, false);

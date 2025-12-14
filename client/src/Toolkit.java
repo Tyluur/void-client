@@ -55,7 +55,7 @@ abstract class Toolkit {
 
     abstract int I();
 
-    abstract void method3631(int i);
+    abstract void allocateThreads(int i);
 
     abstract void method3632(int[] is);
 
@@ -67,7 +67,7 @@ abstract class Toolkit {
 
     abstract void ya();
 
-    abstract Interface4 method3634(Interface3 interface3, Interface13 interface13);
+    abstract OffscreenSurface method3634(Interface3 interface3, Interface13 interface13);
 
     final void method3635(byte i) {
         int i_15_ = -90 % ((i - 8) / 33);
@@ -259,7 +259,7 @@ abstract class Toolkit {
     }
 
     final void method3681(Sprite sprite, int i) {
-        method3687(method3634(sprite, method3624(sprite.method971(), sprite.method969())));
+        method3687(method3634(sprite, method3624(sprite.getWidth(), sprite.getHeight())));
         anInt4561++;
         if (i != 0) DA(-75, -67, 18, -116);
     }
@@ -288,7 +288,7 @@ abstract class Toolkit {
 
     abstract void C(boolean bool);
 
-    abstract void method3687(Interface4 interface4);
+    abstract void method3687(OffscreenSurface offscreenSurface);
 
     abstract void method3688(int i, int i_158_, int i_159_, int i_160_, int i_161_, int i_162_, int i_163_);
 

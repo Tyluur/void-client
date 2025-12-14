@@ -34,7 +34,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40 {
             Class348_Sub45.collisionMaps[i_2_].method3500(700);
         Class348_Sub42_Sub3.method3177(-50, false);
         System.gc();
-        Class348_Sub31.method3007(2, 22684);
+        JavaSurface.method3007(2, 22684);
         Class74.aBoolean1236 = false;
         Class267.anInt3428 = -1;
         Class348_Sub40_Sub17_Sub1.method3093(i + 79);

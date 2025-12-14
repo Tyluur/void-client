@@ -571,10 +571,10 @@ final class JavaSceneGraph extends Ground {
                             if (i_243_ < 765) {
                                 if (i_243_ > 0) {
                                     if (((class145.anIntArray2001[i_234_]) & 0xffffff) != 0)
-                                        rasterizer.renderTriangleRgb((float) i_240_, (float) i_241_, (float) i_242_, (float) i_237_, (float) i_238_, (float) i_239_, (float) is_107_[i_234_], (float) is_107_[i_235_], (float) is_107_[i_236_], (Class298.method2250((class145.anIntArray2001[i_234_]), 117, is_108_[i_234_], (javaThreadResource.anInt2192))), (Class298.method2250((class145.anIntArray2001[i_235_]), 60, is_108_[i_235_], (javaThreadResource.anInt2192))), (Class298.method2250((class145.anIntArray2001[i_236_]), 95, is_108_[i_236_], (javaThreadResource.anInt2192))));
+                                        rasterizer.renderTriangleRgb((float) i_240_, (float) i_241_, (float) i_242_, (float) i_237_, (float) i_238_, (float) i_239_, (float) is_107_[i_234_], (float) is_107_[i_235_], (float) is_107_[i_236_], (Class298.method2250((class145.anIntArray2001[i_234_]), 117, is_108_[i_234_], (javaThreadResource.fogColour2))), (Class298.method2250((class145.anIntArray2001[i_235_]), 60, is_108_[i_235_], (javaThreadResource.fogColour2))), (Class298.method2250((class145.anIntArray2001[i_236_]), 95, is_108_[i_236_], (javaThreadResource.fogColour2))));
                                 } else if (((class145.anIntArray2001[i_234_]) & 0xffffff) != 0)
                                     rasterizer.renderTriangleRgb((float) i_240_, (float) i_241_, (float) i_242_, (float) i_237_, (float) i_238_, (float) i_239_, (float) is_107_[i_234_], (float) is_107_[i_235_], (float) is_107_[i_236_], (class145.anIntArray2001[i_234_]), (class145.anIntArray2001[i_235_]), (class145.anIntArray2001[i_236_]));
-                            } else rasterizer.drawColouredTriangle((float) i_240_, (float) i_241_, (float) i_242_, (float) i_237_, (float) i_238_, (float) i_239_, (float) is_107_[i_234_], (float) is_107_[i_235_], (float) is_107_[i_236_], (javaThreadResource.anInt2192));
+                            } else rasterizer.drawColouredTriangle((float) i_240_, (float) i_241_, (float) i_242_, (float) i_237_, (float) i_238_, (float) i_239_, (float) is_107_[i_234_], (float) is_107_[i_235_], (float) is_107_[i_236_], (javaThreadResource.fogColour2));
                         }
                     }
                 } else if (anInt8228 == -1) {
@@ -597,10 +597,10 @@ final class JavaSceneGraph extends Ground {
                                     if (i_216_ != -1) {
                                         int i_217_ = -16777216;
                                         if (i_216_ != -1 && method3997(aJavaToolkit_8217.aD4579.getMetrics(i_216_, -6662).effectType)) i_217_ = -1694498816;
-                                        rasterizer.drawTexturedTriangle((float) i_212_, (float) i_213_, (float) i_214_, (float) i_209_, (float) i_210_, (float) i_211_, (float) is_107_[i_206_], (float) is_107_[i_207_], (float) is_107_[i_208_], ((float) (class145.aShortArray2009[i_206_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2009[i_207_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2009[i_208_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_206_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_207_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_208_]) / (float) (this.anInt4592)), (i_217_ | ((class145.anIntArray2001[i_206_]) & 0xffffff)), (i_217_ | ((class145.anIntArray2001[i_207_]) & 0xffffff)), (i_217_ | ((class145.anIntArray2001[i_208_]) & 0xffffff)), (javaThreadResource.anInt2192), is_108_[i_206_], is_108_[i_207_], is_108_[i_208_], i_216_);
+                                        rasterizer.drawTexturedTriangle((float) i_212_, (float) i_213_, (float) i_214_, (float) i_209_, (float) i_210_, (float) i_211_, (float) is_107_[i_206_], (float) is_107_[i_207_], (float) is_107_[i_208_], ((float) (class145.aShortArray2009[i_206_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2009[i_207_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2009[i_208_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_206_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_207_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_208_]) / (float) (this.anInt4592)), (i_217_ | ((class145.anIntArray2001[i_206_]) & 0xffffff)), (i_217_ | ((class145.anIntArray2001[i_207_]) & 0xffffff)), (i_217_ | ((class145.anIntArray2001[i_208_]) & 0xffffff)), (javaThreadResource.fogColour2), is_108_[i_206_], is_108_[i_207_], is_108_[i_208_], i_216_);
                                     } else if (((class145.anIntArray2001[i_206_]) & 0xffffff) != 0) {
                                         if (i_216_ != -1 && method3997(aJavaToolkit_8217.aD4579.getMetrics(i_216_, -6662).effectType)) rasterizer.alpha = -1694498816;
-                                        rasterizer.renderTriangleRgb((float) i_212_, (float) i_213_, (float) i_214_, (float) i_209_, (float) i_210_, (float) i_211_, (float) is_107_[i_206_], (float) is_107_[i_207_], (float) is_107_[i_208_], (JavaBillboardFace.method206((class145.anIntArray2001[i_206_]), (is_108_[i_206_] << 24 | (javaThreadResource.anInt2192)), 255)), (JavaBillboardFace.method206((class145.anIntArray2001[i_207_]), (is_108_[i_207_] << 24 | (javaThreadResource.anInt2192)), 255)), (JavaBillboardFace.method206((class145.anIntArray2001[i_208_]), (is_108_[i_208_] << 24 | (javaThreadResource.anInt2192)), 255)));
+                                        rasterizer.renderTriangleRgb((float) i_212_, (float) i_213_, (float) i_214_, (float) i_209_, (float) i_210_, (float) i_211_, (float) is_107_[i_206_], (float) is_107_[i_207_], (float) is_107_[i_208_], (JavaBillboardFace.method206((class145.anIntArray2001[i_206_]), (is_108_[i_206_] << 24 | (javaThreadResource.fogColour2)), 255)), (JavaBillboardFace.method206((class145.anIntArray2001[i_207_]), (is_108_[i_207_] << 24 | (javaThreadResource.fogColour2)), 255)), (JavaBillboardFace.method206((class145.anIntArray2001[i_208_]), (is_108_[i_208_] << 24 | (javaThreadResource.fogColour2)), 255)));
                                         rasterizer.alpha = 0;
                                     }
                                 } else if (i_216_ != -1) {
@@ -612,7 +612,7 @@ final class JavaSceneGraph extends Ground {
                                     rasterizer.renderTriangleRgb((float) i_212_, (float) i_213_, (float) i_214_, (float) i_209_, (float) i_210_, (float) i_211_, (float) is_107_[i_206_], (float) is_107_[i_207_], (float) is_107_[i_208_], (class145.anIntArray2001[i_206_]), (class145.anIntArray2001[i_207_]), (class145.anIntArray2001[i_208_]));
                                     rasterizer.alpha = 0;
                                 }
-                            } else rasterizer.drawColouredTriangle((float) i_212_, (float) i_213_, (float) i_214_, (float) i_209_, (float) i_210_, (float) i_211_, (float) is_107_[i_206_], (float) is_107_[i_207_], (float) is_107_[i_208_], javaThreadResource.anInt2192);
+                            } else rasterizer.drawColouredTriangle((float) i_212_, (float) i_213_, (float) i_214_, (float) i_209_, (float) i_210_, (float) i_211_, (float) is_107_[i_206_], (float) is_107_[i_207_], (float) is_107_[i_208_], javaThreadResource.fogColour2);
                         }
                     }
                 } else {
@@ -636,10 +636,10 @@ final class JavaSceneGraph extends Ground {
                                     if (i_230_ != -1) {
                                         int i_231_ = -16777216;
                                         if (i_230_ != -1 && method3997(aJavaToolkit_8217.aD4579.getMetrics(i_230_, -6662).effectType)) i_231_ = -1694498816;
-                                        rasterizer.drawTexturedTriangle((float) i_226_, (float) i_227_, (float) i_228_, (float) i_223_, (float) i_224_, (float) i_225_, (float) is_107_[i_220_], (float) is_107_[i_221_], (float) is_107_[i_222_], ((float) (class145.aShortArray2009[i_220_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2009[i_221_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2009[i_222_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_220_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_221_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_222_]) / (float) (this.anInt4592)), (i_231_ | ((class145.anIntArray2001[i_220_]) & 0xffffff)), (i_231_ | ((class145.anIntArray2001[i_221_]) & 0xffffff)), (i_231_ | ((class145.anIntArray2001[i_222_]) & 0xffffff)), (javaThreadResource.anInt2192), is_108_[i_220_], is_108_[i_221_], is_108_[i_222_], i_230_);
+                                        rasterizer.drawTexturedTriangle((float) i_226_, (float) i_227_, (float) i_228_, (float) i_223_, (float) i_224_, (float) i_225_, (float) is_107_[i_220_], (float) is_107_[i_221_], (float) is_107_[i_222_], ((float) (class145.aShortArray2009[i_220_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2009[i_221_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2009[i_222_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_220_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_221_]) / (float) (this.anInt4592)), ((float) (class145.aShortArray2002[i_222_]) / (float) (this.anInt4592)), (i_231_ | ((class145.anIntArray2001[i_220_]) & 0xffffff)), (i_231_ | ((class145.anIntArray2001[i_221_]) & 0xffffff)), (i_231_ | ((class145.anIntArray2001[i_222_]) & 0xffffff)), (javaThreadResource.fogColour2), is_108_[i_220_], is_108_[i_221_], is_108_[i_222_], i_230_);
                                     } else if (((class145.anIntArray2001[i_220_]) & 0xffffff) != 0) {
                                         if (i_230_ != -1 && method3997(aJavaToolkit_8217.aD4579.getMetrics(i_230_, -6662).effectType)) rasterizer.alpha = -1694498816;
-                                        rasterizer.renderTriangleRgb((float) i_226_, (float) i_227_, (float) i_228_, (float) i_223_, (float) i_224_, (float) i_225_, (float) is_107_[i_220_], (float) is_107_[i_221_], (float) is_107_[i_222_], (JavaBillboardFace.method206((class145.anIntArray2001[i_220_]), (is_108_[i_220_] << 24 | (javaThreadResource.anInt2192)), 255)), (JavaBillboardFace.method206((class145.anIntArray2001[i_221_]), (is_108_[i_221_] << 24 | (javaThreadResource.anInt2192)), 255)), (JavaBillboardFace.method206((class145.anIntArray2001[i_222_]), (is_108_[i_222_] << 24 | (javaThreadResource.anInt2192)), 255)));
+                                        rasterizer.renderTriangleRgb((float) i_226_, (float) i_227_, (float) i_228_, (float) i_223_, (float) i_224_, (float) i_225_, (float) is_107_[i_220_], (float) is_107_[i_221_], (float) is_107_[i_222_], (JavaBillboardFace.method206((class145.anIntArray2001[i_220_]), (is_108_[i_220_] << 24 | (javaThreadResource.fogColour2)), 255)), (JavaBillboardFace.method206((class145.anIntArray2001[i_221_]), (is_108_[i_221_] << 24 | (javaThreadResource.fogColour2)), 255)), (JavaBillboardFace.method206((class145.anIntArray2001[i_222_]), (is_108_[i_222_] << 24 | (javaThreadResource.fogColour2)), 255)));
                                         rasterizer.alpha = 0;
                                     }
                                 } else if (i_230_ != -1) {
@@ -652,7 +652,7 @@ final class JavaSceneGraph extends Ground {
                                     rasterizer.alpha = 0;
                                 }
                                 rasterizer.alpha = 0;
-                            } else rasterizer.drawColouredTriangle((float) i_226_, (float) i_227_, (float) i_228_, (float) i_223_, (float) i_224_, (float) i_225_, (float) is_107_[i_220_], (float) is_107_[i_221_], (float) is_107_[i_222_], javaThreadResource.anInt2192);
+                            } else rasterizer.drawColouredTriangle((float) i_226_, (float) i_227_, (float) i_228_, (float) i_223_, (float) i_224_, (float) i_225_, (float) is_107_[i_220_], (float) is_107_[i_221_], (float) is_107_[i_222_], javaThreadResource.fogColour2);
                         }
                     }
                 }
@@ -877,10 +877,10 @@ final class JavaSceneGraph extends Ground {
                             if (class266.aShort3379 >= 0) {
                                 int i_178_ = -16777216;
                                 if (bool_176_) i_178_ = -1694498816;
-                                rasterizer.drawTexturedTriangle((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, f_119_, f_120_, f_118_, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, i_178_ | (class266.anInt3380) & 0xffffff, i_178_ | (class266.anInt3381) & 0xffffff, i_178_ | (class266.anInt3387) & 0xffffff, javaThreadResource.anInt2192, i_116_, i_117_, i_115_, class266.aShort3379);
+                                rasterizer.drawTexturedTriangle((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, f_119_, f_120_, f_118_, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, i_178_ | (class266.anInt3380) & 0xffffff, i_178_ | (class266.anInt3381) & 0xffffff, i_178_ | (class266.anInt3387) & 0xffffff, javaThreadResource.fogColour2, i_116_, i_117_, i_115_, class266.aShort3379);
                             } else {
                                 if (bool_176_) rasterizer.alpha = 100;
-                                rasterizer.renderTriangleRgb((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, (float) (int) f_119_, (float) (int) f_120_, (float) (int) f_118_, (JavaBillboardFace.method206(class266.anInt3380, (i_116_ << 24 | javaThreadResource.anInt2192), 255)), (JavaBillboardFace.method206(class266.anInt3381, (i_117_ << 24 | javaThreadResource.anInt2192), 255)), (JavaBillboardFace.method206(class266.anInt3387, (i_115_ << 24 | javaThreadResource.anInt2192), 255)));
+                                rasterizer.renderTriangleRgb((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, (float) (int) f_119_, (float) (int) f_120_, (float) (int) f_118_, (JavaBillboardFace.method206(class266.anInt3380, (i_116_ << 24 | javaThreadResource.fogColour2), 255)), (JavaBillboardFace.method206(class266.anInt3381, (i_117_ << 24 | javaThreadResource.fogColour2), 255)), (JavaBillboardFace.method206(class266.anInt3387, (i_115_ << 24 | javaThreadResource.fogColour2), 255)));
                                 rasterizer.alpha = 0;
                             }
                         } else if (class266.aShort3379 >= 0) {
@@ -892,7 +892,7 @@ final class JavaSceneGraph extends Ground {
                             rasterizer.renderTriangleRgb((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, (float) (int) f_119_, (float) (int) f_120_, (float) (int) f_118_, class266.anInt3380, class266.anInt3381, class266.anInt3387);
                             rasterizer.alpha = 0;
                         }
-                    } else rasterizer.drawColouredTriangle((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, (float) (int) f_119_, (float) (int) f_120_, (float) (int) f_118_, (javaThreadResource.anInt2192));
+                    } else rasterizer.drawColouredTriangle((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, (float) (int) f_119_, (float) (int) f_120_, (float) (int) f_118_, (javaThreadResource.fogColour2));
                 }
                 i_177_ = i_114_ + i_115_ + i_117_;
                 if (((i_121_ - i_123_) * (i_128_ - i_124_) - (i_122_ - i_124_) * (i_127_ - i_123_)) > 0) {
@@ -903,10 +903,10 @@ final class JavaSceneGraph extends Ground {
                             if (class266.aShort3379 >= 0) {
                                 int i_180_ = -16777216;
                                 if (bool_176_) i_180_ = -1694498816;
-                                rasterizer.drawTexturedTriangle((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, f, f_118_, f_120_, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 1.0F, i_180_ | (class266.anInt3389) & 0xffffff, i_180_ | (class266.anInt3387) & 0xffffff, i_180_ | (class266.anInt3381) & 0xffffff, javaThreadResource.anInt2192, i_114_, i_115_, i_117_, class266.aShort3379);
+                                rasterizer.drawTexturedTriangle((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, f, f_118_, f_120_, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 1.0F, i_180_ | (class266.anInt3389) & 0xffffff, i_180_ | (class266.anInt3387) & 0xffffff, i_180_ | (class266.anInt3381) & 0xffffff, javaThreadResource.fogColour2, i_114_, i_115_, i_117_, class266.aShort3379);
                             } else {
                                 if (bool_176_) rasterizer.alpha = 100;
-                                rasterizer.renderTriangleRgb((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, (float) (int) f, (float) (int) f_118_, (float) (int) f_120_, (JavaBillboardFace.method206(class266.anInt3389, (i_114_ << 24 | javaThreadResource.anInt2192), 255)), (JavaBillboardFace.method206(class266.anInt3387, (i_115_ << 24 | javaThreadResource.anInt2192), 255)), (JavaBillboardFace.method206(class266.anInt3381, (i_117_ << 24 | javaThreadResource.anInt2192), 255)));
+                                rasterizer.renderTriangleRgb((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, (float) (int) f, (float) (int) f_118_, (float) (int) f_120_, (JavaBillboardFace.method206(class266.anInt3389, (i_114_ << 24 | javaThreadResource.fogColour2), 255)), (JavaBillboardFace.method206(class266.anInt3387, (i_115_ << 24 | javaThreadResource.fogColour2), 255)), (JavaBillboardFace.method206(class266.anInt3381, (i_117_ << 24 | javaThreadResource.fogColour2), 255)));
                                 rasterizer.alpha = 0;
                             }
                         } else if (class266.aShort3379 >= 0) {
@@ -918,7 +918,7 @@ final class JavaSceneGraph extends Ground {
                             rasterizer.renderTriangleRgb((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, (float) (int) f, (float) (int) f_118_, (float) (int) f_120_, class266.anInt3389, class266.anInt3387, class266.anInt3381);
                             rasterizer.alpha = 0;
                         }
-                    } else rasterizer.drawColouredTriangle((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, (float) (int) f, (float) (int) f_118_, (float) (int) f_120_, (javaThreadResource.anInt2192));
+                    } else rasterizer.drawColouredTriangle((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, (float) (int) f, (float) (int) f_118_, (float) (int) f_120_, (javaThreadResource.fogColour2));
                 }
             } else {
                 int i_182_ = i_115_ + i_116_ + i_117_;
@@ -930,10 +930,10 @@ final class JavaSceneGraph extends Ground {
                             if (class266.aShort3379 >= 0) {
                                 int i_183_ = -16777216;
                                 if (bool_176_) i_183_ = -1694498816;
-                                rasterizer.drawTexturedTriangle((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, f_119_, f_120_, f_118_, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, i_183_ | (class266.anInt3380) & 0xffffff, i_183_ | (class266.anInt3381) & 0xffffff, i_183_ | (class266.anInt3387) & 0xffffff, javaThreadResource.anInt2192, i_116_, i_117_, i_115_, class266.aShort3379);
+                                rasterizer.drawTexturedTriangle((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, f_119_, f_120_, f_118_, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, i_183_ | (class266.anInt3380) & 0xffffff, i_183_ | (class266.anInt3381) & 0xffffff, i_183_ | (class266.anInt3387) & 0xffffff, javaThreadResource.fogColour2, i_116_, i_117_, i_115_, class266.aShort3379);
                             } else {
                                 if (bool_176_) rasterizer.alpha = 100;
-                                rasterizer.renderTriangleRgb((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, (float) (int) f_119_, (float) (int) f_120_, (float) (int) f_118_, (JavaBillboardFace.method206(class266.anInt3380, (i_116_ << 24 | javaThreadResource.anInt2192), 255)), (JavaBillboardFace.method206(class266.anInt3381, (i_117_ << 24 | javaThreadResource.anInt2192), 255)), (JavaBillboardFace.method206(class266.anInt3387, (i_115_ << 24 | javaThreadResource.anInt2192), 255)));
+                                rasterizer.renderTriangleRgb((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, (float) (int) f_119_, (float) (int) f_120_, (float) (int) f_118_, (JavaBillboardFace.method206(class266.anInt3380, (i_116_ << 24 | javaThreadResource.fogColour2), 255)), (JavaBillboardFace.method206(class266.anInt3381, (i_117_ << 24 | javaThreadResource.fogColour2), 255)), (JavaBillboardFace.method206(class266.anInt3387, (i_115_ << 24 | javaThreadResource.fogColour2), 255)));
                                 rasterizer.alpha = 0;
                             }
                         } else if (class266.aShort3379 >= 0) {
@@ -945,7 +945,7 @@ final class JavaSceneGraph extends Ground {
                             rasterizer.renderTriangleRgb((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, (float) (int) f_119_, (float) (int) f_120_, (float) (int) f_118_, class266.anInt3380, class266.anInt3381, class266.anInt3387);
                             rasterizer.alpha = 0;
                         }
-                    } else rasterizer.drawColouredTriangle((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, (float) (int) f_119_, (float) (int) f_120_, (float) (int) f_118_, (javaThreadResource.anInt2192));
+                    } else rasterizer.drawColouredTriangle((float) i_126_, (float) i_128_, (float) i_124_, (float) i_125_, (float) i_127_, (float) i_123_, (float) (int) f_119_, (float) (int) f_120_, (float) (int) f_118_, (javaThreadResource.fogColour2));
                 }
                 i_182_ = i_114_ + i_115_ + i_117_;
                 if (((i_121_ - i_123_) * (i_128_ - i_124_) - (i_122_ - i_124_) * (i_127_ - i_123_)) > 0) {
@@ -956,10 +956,10 @@ final class JavaSceneGraph extends Ground {
                             if (class266.aShort3379 >= 0) {
                                 int i_185_ = -16777216;
                                 if (bool_176_) i_185_ = -1694498816;
-                                rasterizer.drawTexturedTriangle((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, f, f_118_, f_120_, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 1.0F, i_185_ | (class266.anInt3389) & 0xffffff, i_185_ | (class266.anInt3387) & 0xffffff, i_185_ | (class266.anInt3381) & 0xffffff, javaThreadResource.anInt2192, i_114_, i_115_, i_117_, class266.aShort3379);
+                                rasterizer.drawTexturedTriangle((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, f, f_118_, f_120_, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 1.0F, i_185_ | (class266.anInt3389) & 0xffffff, i_185_ | (class266.anInt3387) & 0xffffff, i_185_ | (class266.anInt3381) & 0xffffff, javaThreadResource.fogColour2, i_114_, i_115_, i_117_, class266.aShort3379);
                             } else {
                                 if (bool_176_) rasterizer.alpha = 100;
-                                rasterizer.renderTriangleRgb((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, (float) (int) f, (float) (int) f_118_, (float) (int) f_120_, (JavaBillboardFace.method206(class266.anInt3389, (i_114_ << 24 | javaThreadResource.anInt2192), 255)), (JavaBillboardFace.method206(class266.anInt3387, (i_115_ << 24 | javaThreadResource.anInt2192), 255)), (JavaBillboardFace.method206(class266.anInt3381, (i_117_ << 24 | javaThreadResource.anInt2192), 255)));
+                                rasterizer.renderTriangleRgb((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, (float) (int) f, (float) (int) f_118_, (float) (int) f_120_, (JavaBillboardFace.method206(class266.anInt3389, (i_114_ << 24 | javaThreadResource.fogColour2), 255)), (JavaBillboardFace.method206(class266.anInt3387, (i_115_ << 24 | javaThreadResource.fogColour2), 255)), (JavaBillboardFace.method206(class266.anInt3381, (i_117_ << 24 | javaThreadResource.fogColour2), 255)));
                                 rasterizer.alpha = 0;
                             }
                         } else if (class266.aShort3379 >= 0) {
@@ -971,7 +971,7 @@ final class JavaSceneGraph extends Ground {
                             rasterizer.renderTriangleRgb((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, (float) (int) f, (float) (int) f_118_, (float) (int) f_120_, class266.anInt3389, class266.anInt3387, class266.anInt3381);
                             rasterizer.alpha = 0;
                         }
-                    } else rasterizer.drawColouredTriangle((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, (float) (int) f, (float) (int) f_118_, (float) (int) f_120_, (javaThreadResource.anInt2192));
+                    } else rasterizer.drawColouredTriangle((float) i_122_, (float) i_124_, (float) i_128_, (float) i_121_, (float) i_123_, (float) i_127_, (float) (int) f, (float) (int) f_118_, (float) (int) f_120_, (javaThreadResource.fogColour2));
                 }
             }
         }
@@ -1018,10 +1018,10 @@ final class JavaSceneGraph extends Ground {
 
     private final void method3992(int i, int i_255_, int i_256_) {
         JavaThreadResource javaThreadResource = aJavaToolkit_8217.method3724(Thread.currentThread());
-        javaThreadResource.aRasterizer_2220.alpha = 0;
-        if (aClass266ArrayArray8230 != null) method3990(i, i_255_, javaThreadResource.fogEnabled, javaThreadResource, javaThreadResource.aRasterizer_2220, javaThreadResource.anIntArray2212, javaThreadResource.anIntArray2228, javaThreadResource.anIntArray2217, javaThreadResource.anIntArray2232, i_256_);
-        else if (aClass102ArrayArray8215 != null) method3994(i, i_255_, javaThreadResource.aRasterizer_2220, javaThreadResource.anIntArray2212, javaThreadResource.anIntArray2228, javaThreadResource.anIntArray2217, javaThreadResource.anIntArray2232, i_256_);
-        else if (genericBlendedTiles != null) method3995(i, i_255_, javaThreadResource.fogEnabled, javaThreadResource, javaThreadResource.aRasterizer_2220, javaThreadResource.anIntArray2212, javaThreadResource.anIntArray2228, javaThreadResource.anIntArray2217, javaThreadResource.anIntArray2232, i_256_);
+        javaThreadResource.rasterizer.alpha = 0;
+        if (aClass266ArrayArray8230 != null) method3990(i, i_255_, javaThreadResource.fogEnabled, javaThreadResource, javaThreadResource.rasterizer, javaThreadResource.anIntArray2212, javaThreadResource.anIntArray2228, javaThreadResource.anIntArray2217, javaThreadResource.anIntArray2232, i_256_);
+        else if (aClass102ArrayArray8215 != null) method3994(i, i_255_, javaThreadResource.rasterizer, javaThreadResource.anIntArray2212, javaThreadResource.anIntArray2228, javaThreadResource.anIntArray2217, javaThreadResource.anIntArray2232, i_256_);
+        else if (genericBlendedTiles != null) method3995(i, i_255_, javaThreadResource.fogEnabled, javaThreadResource, javaThreadResource.rasterizer, javaThreadResource.anIntArray2212, javaThreadResource.anIntArray2228, javaThreadResource.anIntArray2217, javaThreadResource.anIntArray2232, i_256_);
     }
 
     final void wa(r var_r, int i, int i_257_, int i_258_, int i_259_, boolean bool) {
@@ -1387,7 +1387,7 @@ final class JavaSceneGraph extends Ground {
 
     final void method3987(int i, int i_411_, int i_412_, int i_413_, int i_414_, int i_415_, int i_416_, boolean[][] bools) {
         JavaThreadResource javaThreadResource = aJavaToolkit_8217.method3724(Thread.currentThread());
-        Rasterizer rasterizer = javaThreadResource.aRasterizer_2220;
+        Rasterizer rasterizer = javaThreadResource.rasterizer;
         rasterizer.alpha = 0;
         rasterizer.restrictEdges = true;
         aJavaToolkit_8217.ya();
@@ -1475,11 +1475,11 @@ final class JavaSceneGraph extends Ground {
                             int i_451_ = i_417_ << this.anInt4588;
                             if ((javaGenericBlendedTile.anIntArray2623[i_441_] & 0xffffff) != 0) {
                                 if (((javaGenericBlendedTile.aShortArray2616[i_441_]) == (javaGenericBlendedTile.aShortArray2616[i_442_])) && ((javaGenericBlendedTile.aShortArray2616[i_441_]) == (javaGenericBlendedTile.aShortArray2616[i_443_])) && ((javaGenericBlendedTile.aShortArray2614[i_441_]) == (javaGenericBlendedTile.aShortArray2614[i_442_])) && ((javaGenericBlendedTile.aShortArray2614[i_441_]) == (javaGenericBlendedTile.aShortArray2614[i_443_])))
-                                    rasterizer.drawTexturedTriangle((float) i_447_, (float) i_448_, (float) i_449_, (float) i_444_, (float) i_445_, (float) i_446_, (float) is_419_[i_441_], (float) is_419_[i_442_], (float) is_419_[i_443_], ((float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_441_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_441_])), ((float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_442_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_442_])), ((float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_443_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_443_])), ((float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_441_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_441_])), ((float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_442_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_442_])), ((float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_443_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_443_])), (javaGenericBlendedTile.anIntArray2623[i_441_]), (javaGenericBlendedTile.anIntArray2623[i_442_]), (javaGenericBlendedTile.anIntArray2623[i_443_]), javaThreadResource.anInt2192, is_420_[i_441_], is_420_[i_442_], is_420_[i_443_], (javaGenericBlendedTile.aShortArray2616[i_441_]));
+                                    rasterizer.drawTexturedTriangle((float) i_447_, (float) i_448_, (float) i_449_, (float) i_444_, (float) i_445_, (float) i_446_, (float) is_419_[i_441_], (float) is_419_[i_442_], (float) is_419_[i_443_], ((float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_441_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_441_])), ((float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_442_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_442_])), ((float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_443_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_443_])), ((float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_441_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_441_])), ((float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_442_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_442_])), ((float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_443_])) / (float) (javaGenericBlendedTile.aShortArray2614[i_443_])), (javaGenericBlendedTile.anIntArray2623[i_441_]), (javaGenericBlendedTile.anIntArray2623[i_442_]), (javaGenericBlendedTile.anIntArray2623[i_443_]), javaThreadResource.fogColour2, is_420_[i_441_], is_420_[i_442_], is_420_[i_443_], (javaGenericBlendedTile.aShortArray2616[i_441_]));
                                 else
-                                    rasterizer.method1020((float) i_447_, (float) i_448_, (float) i_449_, (float) i_444_, (float) i_445_, (float) i_446_, (float) is_419_[i_441_], (float) is_419_[i_442_], (float) is_419_[i_443_], (float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_441_])) / f, (float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_442_])) / f, (float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_443_])) / f, (float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_441_])) / f, (float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_442_])) / f, (float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_443_])) / f, (javaGenericBlendedTile.anIntArray2623[i_441_]), (javaGenericBlendedTile.anIntArray2623[i_442_]), (javaGenericBlendedTile.anIntArray2623[i_443_]), javaThreadResource.anInt2192, is_420_[i_441_], is_420_[i_442_], is_420_[i_443_], (javaGenericBlendedTile.aShortArray2616[i_441_]), f / (float) (javaGenericBlendedTile.aShortArray2614[i_441_]), (javaGenericBlendedTile.aShortArray2616[i_442_]), f / (float) (javaGenericBlendedTile.aShortArray2614[i_442_]), (javaGenericBlendedTile.aShortArray2616[i_443_]), f / (float) (javaGenericBlendedTile.aShortArray2614[i_443_]));
+                                    rasterizer.method1020((float) i_447_, (float) i_448_, (float) i_449_, (float) i_444_, (float) i_445_, (float) i_446_, (float) is_419_[i_441_], (float) is_419_[i_442_], (float) is_419_[i_443_], (float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_441_])) / f, (float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_442_])) / f, (float) (i_450_ + (javaGenericBlendedTile.aShortArray2622[i_443_])) / f, (float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_441_])) / f, (float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_442_])) / f, (float) (i_451_ + (javaGenericBlendedTile.aShortArray2613[i_443_])) / f, (javaGenericBlendedTile.anIntArray2623[i_441_]), (javaGenericBlendedTile.anIntArray2623[i_442_]), (javaGenericBlendedTile.anIntArray2623[i_443_]), javaThreadResource.fogColour2, is_420_[i_441_], is_420_[i_442_], is_420_[i_443_], (javaGenericBlendedTile.aShortArray2616[i_441_]), f / (float) (javaGenericBlendedTile.aShortArray2614[i_441_]), (javaGenericBlendedTile.aShortArray2616[i_442_]), f / (float) (javaGenericBlendedTile.aShortArray2614[i_442_]), (javaGenericBlendedTile.aShortArray2616[i_443_]), f / (float) (javaGenericBlendedTile.aShortArray2614[i_443_]));
                             }
-                        } else rasterizer.drawColouredTriangle((float) i_447_, (float) i_448_, (float) i_449_, (float) i_444_, (float) i_445_, (float) i_446_, (float) is_419_[i_441_], (float) is_419_[i_442_], (float) is_419_[i_443_], (javaThreadResource.anInt2192));
+                        } else rasterizer.drawColouredTriangle((float) i_447_, (float) i_448_, (float) i_449_, (float) i_444_, (float) i_445_, (float) i_446_, (float) is_419_[i_441_], (float) is_419_[i_442_], (float) is_419_[i_443_], (javaThreadResource.fogColour2));
                     }
                 }
             }

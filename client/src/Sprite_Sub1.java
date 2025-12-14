@@ -38,12 +38,12 @@ final class Sprite_Sub1 extends Sprite {
     static int anInt8422;
     static int anInt8423;
 
-    final int method980() {
+    final int scaleHeight() {
         anInt8402++;
         return anInt8417 + (anInt8419 + anInt8397);
     }
 
-    final void method985(int i, int i_0_, int i_1_, int i_2_) {
+    final void setOffsets(int i, int i_0_, int i_1_, int i_2_) {
         anInt8413++;
         anInt8419 = i_0_;
         anInt8397 = i_2_;
@@ -71,7 +71,7 @@ final class Sprite_Sub1 extends Sprite {
         return anInt8416 + anInt8400 + anInt8411;
     }
 
-    final int method969() {
+    final int getHeight() {
         anInt8404++;
         return anInt8417;
     }
@@ -104,7 +104,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3894(-28186, i_17_);
         if (aBoolean8418) {
             float f_21_ = (float) scaleWidth();
-            float f_22_ = (float) method980();
+            float f_22_ = (float) scaleHeight();
             float f_23_ = (-f + f_13_) / f_21_;
             float f_24_ = (-f_12_ + f_14_) / f_21_;
             float f_25_ = (f_15_ - f) / f_22_;
@@ -158,7 +158,7 @@ final class Sprite_Sub1 extends Sprite {
             aHa_Sub3_8407.method3933(-63);
         } else if (bool_42_) {
             int i_43_ = i_37_ + i_35_;
-            int i_44_ = method980();
+            int i_44_ = scaleHeight();
             class101_sub2_41_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -99, (float) anInt8417), anInterface18_Impl3_8403.method67((float) i_36_, 110), (byte) -120);
             aHa_Sub3_8407.method3853(-32, Option_Sub18.aClass251_6030);
             int i_45_ = anInt8419 + i_35_;
@@ -206,7 +206,7 @@ final class Sprite_Sub1 extends Sprite {
             int i_48_ = i_37_ + i_35_;
             int i_49_ = i + i_36_;
             int i_50_ = scaleWidth();
-            int i_51_ = method980();
+            int i_51_ = scaleHeight();
             int i_52_ = anInt8419 + i_35_;
             int i_53_ = i_52_ + anInt8417;
             while (i_48_ >= i_53_) {
@@ -275,7 +275,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3923(true, 1);
         if (aBoolean8418) {
             float f_74_ = (float) anInt8411 / (float) scaleWidth();
-            float f_75_ = (float) anInt8417 / (float) method980();
+            float f_75_ = (float) anInt8417 / (float) scaleHeight();
             class101_sub2.method935(1.0F, f_74_ * (-f_66_ + f_68_), f_75_ * (-f + f_69_), 0.0F, 0.0F, f_75_ * (f_70_ - f_66_), 0.0F, 0.0F, (f_67_ - f) * f_74_, 0);
             class101_sub2.method920(((float) anInt8419 + f_66_) * f_75_, false, 0.0F, ((float) anInt8400 + f) * f_74_);
         } else {
@@ -358,7 +358,7 @@ final class Sprite_Sub1 extends Sprite {
         class101_sub2_101_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -44, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 101), (byte) -30);
         if (aBoolean8418) {
             i_95_ = i_95_ * anInt8411 / scaleWidth();
-            i_96_ = anInt8417 * i_96_ / method980();
+            i_96_ = anInt8417 * i_96_ / scaleHeight();
             i += anInt8400 * i_95_ / anInt8411;
             i_94_ += anInt8419 * i_96_ / anInt8417;
         }
@@ -372,7 +372,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
     }
 
-    final void method984(int[] is) {
+    final void projectOffsets(int[] is) {
         is[0] = anInt8400;
         is[1] = anInt8419;
         anInt8421++;
@@ -405,7 +405,7 @@ final class Sprite_Sub1 extends Sprite {
         aHa_Sub3_8407.method3885(1, true, Class318_Sub1_Sub2.aClass70_8737);
     }
 
-    final int method971() {
+    final int getWidth() {
         anInt8420++;
         return anInt8411;
     }

@@ -21,7 +21,7 @@ final class AnimationType {
     int leftHandItem;
     static Class114 aClass114_250 = new Class114(4, 1);
     AnimTypeList aAnimTypeList_251;
-    static Interface4 anInterface4_252;
+    static OffscreenSurface anOffscreenSurface_252;
     int[] volumes;
     boolean aBoolean254;
     static int[][] anIntArrayArray255;
@@ -175,7 +175,7 @@ final class AnimationType {
         aClass114_250 = null;
         anIntArrayArray255 = null;
         if (bool != false) method268(-22, -54, -101, -115, -107, 90, 13, -47);
-        anInterface4_252 = null;
+        anOffscreenSurface_252 = null;
     }
 
     final Model method266(Model model, int i, int i_27_, byte i_28_, int i_29_, int i_30_, int i_31_, int i_32_) {
@@ -227,7 +227,7 @@ final class AnimationType {
         Class132.anInt1906 = Class132.anInt1911 * i_44_ >> 8;
         int i_45_ = 16384 - i & 0x3fff;
         int i_46_ = 0x3fff & 16384 - i_37_;
-        if (i_40_ != -19360) anInterface4_252 = null;
+        if (i_40_ != -19360) anOffscreenSurface_252 = null;
         int i_47_ = 0;
         int i_48_ = 0;
         int i_49_ = i_42_;

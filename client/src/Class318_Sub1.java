@@ -129,7 +129,7 @@ abstract class Class318_Sub1 extends Class318 {
                     }
                     if (class42.aString597 == null) break;
                     int i_29_ = 0;
-                    if (sprite != null) i_29_ = sprite.method969();
+                    if (sprite != null) i_29_ = sprite.getHeight();
                     FontRenderer fontRenderer = Class240.aFontRenderer_4684;
                     FontMetrics fontMetrics = Class258_Sub1.aFontMetrics_8527;
                     if (class42.anInt576 == 1) {

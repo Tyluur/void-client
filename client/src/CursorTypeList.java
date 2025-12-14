@@ -100,12 +100,12 @@ final class CursorTypeList {
         if (Option_Sub20.anInt6048 == 1) {
             Sprite sprite = (Class348_Sub40_Sub37.aSpriteArray9467[Node.anInt4292 / 100]);
             sprite.method974(i_7_ - 8, i_8_ + -8);
-            Class338.method2663(-5590, -8 + i_7_, -8 + (i_7_ - -sprite.scaleWidth()), -8 + i_8_, sprite.method980() + -8 + i_8_);
+            Class338.method2663(-5590, -8 + i_7_, -8 + (i_7_ - -sprite.scaleWidth()), -8 + i_8_, sprite.scaleHeight() + -8 + i_8_);
         }
         if (Option_Sub20.anInt6048 == 2) {
             Sprite sprite = (Class348_Sub40_Sub37.aSpriteArray9467[Node.anInt4292 / 100 + 4]);
             sprite.method974(i_7_ + -8, -8 + i_8_);
-            Class338.method2663(-5590, i_7_ - 8, sprite.scaleWidth() + i_7_ + -8, -8 + i_8_, sprite.method980() + -8 + i_8_);
+            Class338.method2663(-5590, i_7_ - 8, sprite.scaleWidth() + i_7_ + -8, -8 + i_8_, sprite.scaleHeight() + -8 + i_8_);
         }
         Class289.method2192((byte) 80);
     }

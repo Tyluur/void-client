@@ -106,7 +106,7 @@ final class Class50_Sub1 extends Class50 {
         for (int i = 0; i < 10; i++)
             packet.writeInt((byte) 120, (int) (9.9999999E7 * Math.random()));
         packet.writeShort((byte) 107, (int) (9.9999999E7 * Math.random()));
-        packet.method3390(Class348_Sub31.aBigInteger6921, (byte) -98, Class318_Sub1_Sub4.aBigInteger8762);
+        packet.method3390(JavaSurface.aBigInteger6921, (byte) -98, Class318_Sub1_Sub4.aBigInteger8762);
         class348_sub47.aClass348_Sub49_Sub2_7116.writeBytes(packet.pos, 0, packet.aByteArray7154, 80);
         return is;
     }

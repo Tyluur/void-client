@@ -84,7 +84,7 @@ final class oa extends Toolkit implements Interface19 {
 
     final Sprite method3691(Class207 class207, boolean bool) {
         j var_j = new j(this, class207.anIntArray2697, class207.aByteArray2699, class207.aByteArray2695, 0, class207.anInt2702, class207.anInt2702, class207.anInt2696);
-        var_j.method985(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
+        var_j.setOffsets(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
         return var_j;
     }
 
@@ -203,7 +203,7 @@ final class oa extends Toolkit implements Interface19 {
     final void method3650(int i) {
         anInt5128 = anInt5127 = i;
         if (this.anInt5141 > 1) throw new IllegalStateException("No MT");
-        method3631(this.anInt5141);
+        allocateThreads(this.anInt5141);
         method3659(0);
     }
 
@@ -353,7 +353,7 @@ final class oa extends Toolkit implements Interface19 {
         return new j(this, i, i_143_, i_144_, i_145_, !bool);
     }
 
-    final void method3631(int i) {
+    final void allocateThreads(int i) {
         this.anInt5141 = i;
         anAArray5143 = new a[this.anInt5141];
         for (int i_146_ = 0; i_146_ < this.anInt5141; i_146_++)
@@ -471,7 +471,7 @@ final class oa extends Toolkit implements Interface19 {
                 aBoolean5142 = true;
                 aMatrix_5131 = new ja();
                 setCamera(new ja());
-                method3631(1);
+                allocateThreads(1);
                 method3659(0);
                 if (canvas == null) break;
                 method3643(canvas, i, i_177_);
@@ -499,12 +499,12 @@ final class oa extends Toolkit implements Interface19 {
 
     final native void ZA(int i, float f, float f_186_, float f_187_, float f_188_, float f_189_);
 
-    final Interface4 method3634(Interface3 interface3, Interface13 interface13) {
+    final OffscreenSurface method3634(Interface3 interface3, Interface13 interface13) {
         return new wa(this, (j) interface3, (xa) interface13);
     }
 
-    final void method3687(Interface4 interface4) {
-        wa var_wa = (wa) interface4;
+    final void method3687(OffscreenSurface offscreenSurface) {
+        wa var_wa = (wa) offscreenSurface;
         n(var_wa.aJ4732.nativeid, var_wa.aXa4733.nativeid);
     }
 

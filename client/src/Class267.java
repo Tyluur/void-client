@@ -119,7 +119,7 @@ final class Class267 {
                         i_4_ = class51.anInt961;
                     }
                     int i_6_ = sprite.scaleWidth();
-                    int i_7_ = sprite.method980();
+                    int i_7_ = sprite.scaleHeight();
                     if (class218.aBoolean2854) {
                         i_7_ = i_4_ * 4;
                         i_6_ = i_3_ * 4;

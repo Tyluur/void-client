@@ -9,10 +9,10 @@ final class Class3 {
 
     static final void method175(byte i) {
         Class295.anInt3760 = -1;
-        AnimationType.anInterface4_252 = null;
+        AnimationType.anOffscreenSurface_252 = null;
         r.aMatrix_9720 = null;
         Class132.anIntArray1909 = null;
-        Class92.anInterface4Array1525 = null;
+        Class92.anOffscreenSurfaceArray1525 = null;
         Class21.aToolkit326 = null;
         Class44.aMatrix_624 = null;
         anInt124++;

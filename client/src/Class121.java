@@ -47,7 +47,7 @@ final class Class121 {
         Packet.anInt7207 = 0;
         Class211.anInt2747 = i;
         Class132.anIntArray1909 = null;
-        Class92.anInterface4Array1525 = null;
+        Class92.anOffscreenSurfaceArray1525 = null;
         Class85.method828((byte) 38, i_3_, i_5_);
         Class27.anInt396 = -1;
         Class295.anInt3760 = -1;

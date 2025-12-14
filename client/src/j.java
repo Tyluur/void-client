@@ -25,7 +25,7 @@ final class j extends Sprite implements Interface19 {
         V(this.nativeid, i, i_25_, ((na) var_aa).nativeid, i_26_, i_27_);
     }
 
-    final void method984(int[] is) {
+    final void projectOffsets(int[] is) {
         CA(this.nativeid, is);
     }
 
@@ -33,13 +33,13 @@ final class j extends Sprite implements Interface19 {
         R(this.nativeid, bool);
     }
 
-    final int method980() {
+    final int scaleHeight() {
         return JA(this.nativeid);
     }
 
     private final native void EA(oa var_oa, int i, int i_28_);
 
-    final void method985(int i, int i_29_, int i_30_, int i_31_) {
+    final void setOffsets(int i, int i_29_, int i_30_, int i_31_) {
         A(this.nativeid, i, i_29_, i_30_, i_31_);
     }
 
@@ -53,7 +53,7 @@ final class j extends Sprite implements Interface19 {
         UA(this.nativeid, f, f_39_, f_40_, f_41_, f_42_, f_43_, i, ((na) var_aa).nativeid, i_44_, i_45_);
     }
 
-    final int method969() {
+    final int getHeight() {
         return I(this.nativeid);
     }
 
@@ -65,7 +65,7 @@ final class j extends Sprite implements Interface19 {
         RA(this.nativeid, i, i_50_, i_51_, i_52_, i_53_, i_54_, i_55_, i_56_);
     }
 
-    final int method971() {
+    final int getWidth() {
         return M(this.nativeid);
     }
 

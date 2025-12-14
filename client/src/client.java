@@ -50,8 +50,8 @@ public final class client extends Applet_Sub1 {
             if (SystemInfo.aClass248_6601.anInt3213 >= 4 && Class139.method1167(Class240.mainLogicStep, (byte) -81)) {
                 if (SystemInfo.aClass248_6601.anInt3214 != 7 && SystemInfo.aClass248_6601.anInt3214 != 9) {
                     if (SystemInfo.aClass248_6601.anInt3214 <= 0) this.method82(72, "js5io");
-                    else if (Class348_Sub31.aString6926 == null) this.method82(-116, "js5connect");
-                    else this.method82(113, ("js5proxy_" + Class348_Sub31.aString6926.trim()));
+                    else if (JavaSurface.aString6926 == null) this.method82(-116, "js5connect");
+                    else this.method82(113, ("js5proxy_" + JavaSurface.aString6926.trim()));
                 } else this.method82(-93, "js5connect_full");
                 Class240.mainLogicStep = 14;
                 return;
@@ -67,7 +67,7 @@ public final class client extends Applet_Sub1 {
                 }
                 if (Class47.anInt846 == 1) {
                     if (aa.aClass144_114.anInt1997 == 2) {
-                        if (aa.aClass144_114.anObject1998 != null) Class348_Sub31.aString6926 = (String) aa.aClass144_114.anObject1998;
+                        if (aa.aClass144_114.anObject1998 != null) JavaSurface.aString6926 = (String) aa.aClass144_114.anObject1998;
                         method103(1000, (byte) 100);
                         return;
                     }
@@ -541,8 +541,8 @@ public final class client extends Applet_Sub1 {
         Class348_Sub40_Sub15.method3085(0);
         Class348_Sub40_Sub17.method3091(true);
         Class348_Sub46.method3318((byte) -80);
-        Class348_Sub31.method3010(-1316);
-        Class49.method453(-2001);
+        JavaSurface.method3010(-1316);
+        JavaOffscreenSurface.method453(-2001);
         JavaMatrix.method911(0);
         JavaThreadResource.method1293(1);
         ha_Sub2.method3736((byte) 100);
@@ -1922,9 +1922,9 @@ public final class client extends Applet_Sub1 {
             }
             if (Class34.aFrame476 != null && !Class175.aBoolean2329 && Class260.method1977((byte) -79, Class240.mainLogicStep)) Class85.method830(Class316.clientOptions.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
             boolean bool_120_ = false;
-            if (Class49.aBoolean4726) {
+            if (JavaOffscreenSurface.aBoolean4726) {
                 bool_120_ = true;
-                Class49.aBoolean4726 = false;
+                JavaOffscreenSurface.aBoolean4726 = false;
             }
             if (bool_120_) Class140.method1170((byte) -116);
             if ((Class348_Sub8.aToolkit6654 != null && Class348_Sub8.aToolkit6654.method3655()) || Class348_Sub42_Sub12.method3229(-91) != 1) Class354.method3466(-77);

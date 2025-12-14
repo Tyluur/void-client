@@ -758,7 +758,7 @@ final class Class46 {
         if (this.anInt672 >= 2) class207.method1515(16777215);
         if (this.anInt809 != 0) class207.method1511(~0xffffff | this.anInt809);
         sprite = var_toolkit.method3691(class207, true);
-        Class351.aClass60_4327.method580(31902, sprite, l, (sprite.method971() * sprite.method969() * 4));
+        Class351.aClass60_4327.method580(31902, sprite, l, (sprite.getWidth() * sprite.getHeight() * 4));
         return sprite;
     }
 

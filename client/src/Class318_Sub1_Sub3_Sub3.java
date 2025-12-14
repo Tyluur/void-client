@@ -598,7 +598,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         Option_Sub1.aShortArrayArray5847 = null;
         if (Class348_Sub40_Sub34.aClass293Array9432 != null) {
             Class260.method1978();
-            Class9.aToolkit171.method3631(1);
+            Class9.aToolkit171.allocateThreads(1);
             Class9.aToolkit171.method3659(0);
         }
         if (GfxTypeList.aClass315Array3982 != null) GfxTypeList.aClass315Array3982 = null;

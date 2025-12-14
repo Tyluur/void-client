@@ -24,7 +24,7 @@ final class Class172 {
     static final int method1327(int i) {
         if (i <= 17) anIntArray2280 = null;
         anInt2277++;
-        return Class348_Sub31.anInt6924;
+        return JavaSurface.anInt6924;
     }
 
     static final void method1328(int i) {

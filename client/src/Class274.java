@@ -162,9 +162,9 @@ final class Class274 {
             }
             if (class348_sub41.anInt7053 == 0) Class127_Sub1.method1118(true, bool, class348_sub41, 2533);
         }
-        if (Class49.aClass46_4730 != null) {
-            Class251.method1916(-9343, Class49.aClass46_4730);
-            Class49.aClass46_4730 = null;
+        if (JavaOffscreenSurface.aClass46_4730 != null) {
+            Class251.method1916(-9343, JavaOffscreenSurface.aClass46_4730);
+            JavaOffscreenSurface.aClass46_4730 = null;
         }
     }
 

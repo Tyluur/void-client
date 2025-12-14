@@ -147,16 +147,16 @@ final class SkyBoxTypeList {
         }
         anInt1454++;
         if (Class174.aSprite_2309 != null && Class348_Sub42_Sub15.aSprite_9658 != null && Class348_Sub42_Sub15.aSprite_9659 != null) {
-            int i_30_ = (-(Class348_Sub42_Sub15.aSprite_9659.method971() * 2) + i_25_) / Class174.aSprite_2309.method971();
+            int i_30_ = (-(Class348_Sub42_Sub15.aSprite_9659.getWidth() * 2) + i_25_) / Class174.aSprite_2309.getWidth();
             for (int i_31_ = 0; i_31_ < i_30_; i_31_++)
-                Class174.aSprite_2309.method974(i_24_ + (Class348_Sub42_Sub15.aSprite_9659.method971() - -(i_31_ * Class174.aSprite_2309.method971())), -Class174.aSprite_2309.method969() + (i_28_ + i_26_));
-            int i_32_ = ((i_26_ - (i + Class348_Sub42_Sub15.aSprite_9659.method969())) / Class348_Sub42_Sub15.aSprite_9658.method969());
+                Class174.aSprite_2309.method974(i_24_ + (Class348_Sub42_Sub15.aSprite_9659.getWidth() - -(i_31_ * Class174.aSprite_2309.getWidth())), -Class174.aSprite_2309.getHeight() + (i_28_ + i_26_));
+            int i_32_ = ((i_26_ - (i + Class348_Sub42_Sub15.aSprite_9659.getHeight())) / Class348_Sub42_Sub15.aSprite_9658.getHeight());
             for (int i_33_ = 0; i_33_ < i_32_; i_33_++) {
-                Class348_Sub42_Sub15.aSprite_9658.method974(i_24_, (Class348_Sub42_Sub15.aSprite_9658.method969() * i_33_ + (i_28_ + i)));
-                Class309.aSprite_4808.method974(-Class309.aSprite_4808.method971() + i_25_ + i_24_, (Class348_Sub42_Sub15.aSprite_9658.method969() * i_33_ + i + i_28_));
+                Class348_Sub42_Sub15.aSprite_9658.method974(i_24_, (Class348_Sub42_Sub15.aSprite_9658.getHeight() * i_33_ + (i_28_ + i)));
+                Class309.aSprite_4808.method974(-Class309.aSprite_4808.getWidth() + i_25_ + i_24_, (Class348_Sub42_Sub15.aSprite_9658.getHeight() * i_33_ + i + i_28_));
             }
-            Class348_Sub42_Sub15.aSprite_9659.method974(i_24_, (-Class348_Sub42_Sub15.aSprite_9659.method969() + i_28_ + i_26_));
-            Class110.aSprite_1706.method974(i_24_ + (i_25_ + -Class348_Sub42_Sub15.aSprite_9659.method971()), i_28_ - (-i_26_ + Class348_Sub42_Sub15.aSprite_9659.method969()));
+            Class348_Sub42_Sub15.aSprite_9659.method974(i_24_, (-Class348_Sub42_Sub15.aSprite_9659.getHeight() + i_28_ + i_26_));
+            Class110.aSprite_1706.method974(i_24_ + (i_25_ + -Class348_Sub42_Sub15.aSprite_9659.getWidth()), i_28_ - (-i_26_ + Class348_Sub42_Sub15.aSprite_9659.getHeight()));
         }
         int i_34_ = -24 % ((i_27_ - 85) / 35);
     }
