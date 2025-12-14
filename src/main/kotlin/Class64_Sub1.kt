@@ -2367,7 +2367,7 @@ class Class64_Sub1 : Class64 {
                                 if (i_591_ == `is`!![i_593_] && i_592_ == (class64_sub1_586_.anIntArray5312!![i_593_]) && i_590_ == (class64_sub1_586_.anIntArray5332!![i_593_]) && (class360_594_.anInt4429 != 0)) {
                                     if (aClass360Array5313 == null) aClass360Array5313 = arrayOfNulls<Class360>(anInt5387)
                                     if (class64_sub1_586_.aClass360Array5313 == null) class64_sub1_586_.aClass360Array5313 = arrayOfNulls<Class360>(i_588_)
-                                    var class360_595_ = aClass360Array5313!![i_589_]!!
+                                    var class360_595_ = aClass360Array5313!![i_589_]
                                     if (class360_595_ == null) {
                                         aClass360Array5313!![i_589_] = Class360(class360)
                                         class360_595_ = aClass360Array5313!![i_589_]!!

@@ -28,9 +28,21 @@ class Callback_Sub1 : Callback() {
         if (i_0_ >= 65) SetCursorPos(i, i_1_)
     }
 
+    fun getTopHwnd(component: Component): Long? {
+        try {
+            val peerField = Component::class.java.getDeclaredField("peer")
+            peerField.isAccessible = true
+            val peer = peerField.get(component) ?: return null
+            val hwndMethod = peer.javaClass.getMethod("getTopHwnd")
+            return hwndMethod.invoke(peer) as? Long
+        } catch (e: Exception) {
+            e.printStackTrace()
+            return null
+        }
+    }
+
     fun method3622(bool: Boolean, i: Int, component: Component) {
-        val wcomponentpeer = component.getPeer() as WComponentPeer
-        val i_2_ = wcomponentpeer.getTopHwnd()
+        val i_2_ = getTopHwnd(component)!!.toInt()
         if (i_2_ != anInt7461 || !bool == aBoolean7460) {
             if (!aBoolean7464) {
                 anInt7462 = LoadCursor(0, 32512)

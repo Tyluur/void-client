@@ -97,22 +97,22 @@ class Class272_Sub2 : Class272() {
         if (proxy.type() == Proxy.Type.HTTP) {
             var string: String? = null
             try {
-                val method = (AuthenticationInfo::class.java.getDeclaredMethod("getProxyAuth", (if (aClass6173 == null) String::class.java.also { aClass6173 = it } else aClass6173), Integer.TYPE))
-                method.setAccessible(true)
-                val `object` = method.invoke(null, inetsocketaddress.getHostName(), inetsocketaddress.getPort())
-                if (null != `object`) {
-                    val method_14_ = (AuthenticationInfo::class.java.getDeclaredMethod("supportsPreemptiveAuthorization"))
-                    method_14_.setAccessible(true)
-                    if ((method_14_.invoke(`object`, *arrayOfNulls<Any>(0)) as Boolean)) {
-                        val method_15_ = AuthenticationInfo::class.java.getDeclaredMethod("getHeaderName")
-                        method_15_.setAccessible(true)
-                        val method_16_ = (AuthenticationInfo::class.java.getDeclaredMethod("getHeaderValue", (if (aClass6174 == null) URL::class.java.also { aClass6174 = it } else aClass6174), (if (aClass6173 == null) (String::class.java.also { aClass6173 = it }) else aClass6173)))
-                        method_16_.setAccessible(true)
-                        val string_17_ = (method_15_.invoke(`object`, *arrayOfNulls<Any>(0)) as String?)
-                        val string_18_ = (method_16_.invoke(`object`, *(arrayOf<Any>(URL("https://" + (this.aString3476) + "/"), "https"))) as String?)
-                        string = string_17_ + ": " + string_18_
-                    }
-                }
+//                val method = (AuthenticationInfo::class.java.getDeclaredMethod("getProxyAuth", (if (aClass6173 == null) String::class.java.also { aClass6173 = it } else aClass6173), Integer.TYPE))
+//                method.setAccessible(true)
+//                val `object` = method.invoke(null, inetsocketaddress.getHostName(), inetsocketaddress.getPort())
+//                if (null != `object`) {
+//                    val method_14_ = (AuthenticationInfo::class.java.getDeclaredMethod("supportsPreemptiveAuthorization"))
+//                    method_14_.setAccessible(true)
+//                    if ((method_14_.invoke(`object`, *arrayOfNulls<Any>(0)) as Boolean)) {
+//                        val method_15_ = AuthenticationInfo::class.java.getDeclaredMethod("getHeaderName")
+//                        method_15_.setAccessible(true)
+//                        val method_16_ = (AuthenticationInfo::class.java.getDeclaredMethod("getHeaderValue", (if (aClass6174 == null) URL::class.java.also { aClass6174 = it } else aClass6174), (if (aClass6173 == null) (String::class.java.also { aClass6173 = it }) else aClass6173)))
+//                        method_16_.setAccessible(true)
+//                        val string_17_ = (method_15_.invoke(`object`, *arrayOfNulls<Any>(0)) as String?)
+//                        val string_18_ = (method_16_.invoke(`object`, *(arrayOf<Any>(URL("https://" + (this.aString3476) + "/"), "https"))) as String?)
+//                        string = string_17_ + ": " + string_18_
+//                    }
+//                }
             } catch (exception: Exception) {
                 /* empty */
             }

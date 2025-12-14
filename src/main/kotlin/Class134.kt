@@ -31,10 +31,22 @@ class Class134 : IEnumModesCallback {
         return `is`
     }
 
+    fun getHwnd(component: Component): Long? {
+        try {
+            val peerField = Component::class.java.getDeclaredField("peer")
+            peerField.isAccessible = true
+            val peer = peerField.get(component) ?: return null
+            val hwndMethod = peer.javaClass.getMethod("getHwnd")
+            return hwndMethod.invoke(peer) as? Long
+        } catch (e: Exception) {
+            e.printStackTrace()
+            return null
+        }
+    }
+
     fun method1146(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, frame: Frame) {
         frame.setVisible(true)
-        val wcomponentpeer = frame.getPeer() as WComponentPeer
-        val i_4_ = wcomponentpeer.getHwnd()
+        val i_4_ = getHwnd(frame)!!.toInt()
         User32.SetWindowLong(i_4_, -16, -2147483648)
         User32.SetWindowLong(i_4_, -20, 8)
         aDirectDraw4607.setCooperativeLevel(frame as Component, 17)

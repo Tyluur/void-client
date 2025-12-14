@@ -126,6 +126,7 @@ class Class318_Sub1_Sub4_Sub1 internal constructor(var_ha: ha?, class51: Class51
             }
             anInt10083++
         } catch (runtimeexception: RuntimeException) {
+            runtimeexception.printStackTrace()
             throw Class348_Sub17.method2929(runtimeexception, ("ge.N(" + (if (var_ha != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
         }
     }

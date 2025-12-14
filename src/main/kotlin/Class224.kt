@@ -1,10 +1,10 @@
-import netscape.javascript.JSObject
+//import netscape.javascript.JSObject
 import java.applet.Applet
 
 object Class224 {
     @Throws(Throwable::class)
     fun method1615(applet: Applet?, i: Int, string: String?) {
-        JSObject.getWindow(applet).eval(string)
+//        JSObject.getWindow(applet).eval(string)
         if (i == -15092) {
             /* empty */
         }
@@ -13,13 +13,13 @@ object Class224 {
     @Throws(Throwable::class)
     fun method1616(string: String?, objects: Array<Any?>, applet: Applet?, i: Byte): Any? {
         if (i <= 0) return null
-        return JSObject.getWindow(applet).call(string, *objects)
+        return null//JSObject.getWindow(applet).call(string, *objects)
     }
 
     @JvmStatic
     @Throws(Throwable::class)
     fun method1617(i: Byte, applet: Applet?, string: String?): Any? {
         if (i.toInt() != 125) return null
-        return JSObject.getWindow(applet).call(string, null)
+        return null//JSObject.getWindow(applet).call(string, null)
     }
 }
