@@ -137,7 +137,7 @@ class s_Sub3(var_ha_Sub3: ha_Sub3?, i: Int, i_139_: Int, i_140_: Int, i_141_: In
                         val class348_sub3s_52_ = aClass348_Sub3ArrayArrayArray8312!![i_50_]!![i_51_]!!
                         val is_53_ = (this.anIntArrayArrayArray8321!![i_50_]!![i_51_])!!
                         val is_54_ = (this.anIntArrayArrayArray8313!![i_50_]!![i_51_])!!
-                        var is_55_ = anIntArrayArrayArray8291!![i_50_]!![i_51_]!!
+                        var is_55_ = anIntArrayArrayArray8291!![i_50_]!![i_51_]
                         val is_56_ = (this.anIntArrayArrayArray8296!![i_50_]!![i_51_])!!
                         val is_57_ = (if (anIntArrayArrayArray8308 == null) null else anIntArrayArrayArray8308!![i_50_]!![i_51_])
                         val is_58_ = (if (anIntArrayArrayArray8314 != null) anIntArrayArrayArray8314!![i_50_]!![i_51_] else null)

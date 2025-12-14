@@ -11,10 +11,10 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         anInt5151 = i_2_
         var i_4_ = 0
         val fs = FloatArray(aClass262_5149.method1998(0))
-        var class348_sub1 = aClass262_5149.method1995(4) as Class348_Sub1?
+        var class348_sub1 = aClass262_5149.method1995(4) as? Class348_Sub1?
         while (class348_sub1 != null) {
             fs[i_4_++] = class348_sub1.method2721(-37)
-            class348_sub1 = aClass262_5149.method1990(34.toByte()) as Class348_Sub1?
+            class348_sub1 = aClass262_5149.method1990(34.toByte()) as? Class348_Sub1?
         }
         q(fs)
         for (i_5_ in 0..<i_1_ + i_1_) {
@@ -121,10 +121,10 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         anInt5151 = -1
         var i_66_ = 0
         val fs = FloatArray(aClass262_5149.method1998(0))
-        var class348_sub1 = aClass262_5149.method1995(4) as Class348_Sub1?
+        var class348_sub1 = aClass262_5149.method1995(4) as? Class348_Sub1?
         while (class348_sub1 != null) {
             fs[i_66_++] = class348_sub1.method2721(-65)
-            class348_sub1 = aClass262_5149.method1990(40.toByte()) as Class348_Sub1?
+            class348_sub1 = aClass262_5149.method1990(40.toByte()) as? Class348_Sub1?
         }
         q(fs)
         for (i_67_ in 0..<i_64_ + i_64_) {

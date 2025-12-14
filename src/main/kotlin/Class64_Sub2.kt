@@ -2748,7 +2748,7 @@ class Class64_Sub2 internal constructor(var_ha_Sub3: ha_Sub3?, i: Int, i_764_: I
         run {
             var i = 0
             while (anInt5475 > i) {
-                aShortArray5436!![i] = -aShortArray5436!![i] as Short
+                aShortArray5436!![i] = (-aShortArray5436!![i]).toShort()
                 i++
             }
         }
