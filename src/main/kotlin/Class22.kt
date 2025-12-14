@@ -100,7 +100,6 @@ class Class22 {
         @JvmStatic
         fun method293(i: Byte) {
             aClass114_330 = null
-            if (i >= -40) method295(-6, -74, -119, null, -35, null, 125, 67, -102)
         }
 
         @JvmStatic
@@ -133,7 +132,7 @@ class Class22 {
         }
 
         @JvmStatic
-        fun method295(i: Int, i_11_: Int, i_12_: Int, `is`: ByteArray?, i_13_: Int, is_14_: ByteArray?, i_15_: Int, i_16_: Int, i_17_: Int) {
+        fun method295(i: Int, i_11_: Int, i_12_: Int, `is`: ByteArray, i_13_: Int, is_14_: ByteArray, i_15_: Int, i_16_: Int, i_17_: Int) {
             var i_11_ = i_11_
             var i_13_ = i_13_
             var i_16_ = i_16_
@@ -144,12 +143,12 @@ class Class22 {
                 if (i_12_ != 256) anInt339 = -63
                 for (i_19_ in -i_15_..-1) {
                     for (i_20_ in i_18_..-1) {
-                        is_14_!![i_16_++] = (is_14_[i_16_++] + `is`!![i_11_++]).toByte()
-                        is_14_[i_16_++] = (is_14_[i_16_++] + `is`[i_11_++]).toByte()
-                        is_14_[i_16_++] = (is_14_[i_16_++] + `is`[i_11_++]).toByte()
-                        is_14_[i_16_++] = (is_14_[i_16_++] + `is`[i_11_++]).toByte()
+                        is_14_[i_16_] = (is_14_[i_16_++] + `is`[i_11_++]).toByte()
+                        is_14_[i_16_] = (is_14_[i_16_++] + `is`[i_11_++]).toByte()
+                        is_14_[i_16_] = (is_14_[i_16_++] + `is`[i_11_++]).toByte()
+                        is_14_[i_16_] = (is_14_[i_16_++] + `is`[i_11_++]).toByte()
                     }
-                    for (i_21_ in i_13_..-1) is_14_!![i_16_++] = (is_14_[i_16_++] + `is`!![i_11_++]).toByte()
+                    for (i_21_ in i_13_..-1) is_14_[i_16_] = (is_14_[i_16_++] + `is`[i_11_++]).toByte()
                     i_16_ += i_17_
                     i_11_ += i
                 }

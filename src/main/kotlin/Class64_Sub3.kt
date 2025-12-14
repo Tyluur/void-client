@@ -2373,7 +2373,7 @@ class Class64_Sub3 : Class64 {
         run {
             var i = 0
             while (anInt5529 > i) {
-                aShortArray5576!![i] = -aShortArray5576!![i] as Short
+                aShortArray5576!![i] = (-aShortArray5576!![i]).toShort()
                 i++
             }
         }

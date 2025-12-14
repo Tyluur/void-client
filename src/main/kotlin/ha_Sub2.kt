@@ -700,7 +700,6 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             method3795(-30199)
             anInt7765 = anInt7765 and 0x1f.inv()
         }
-        if (i != 0) method3773(-58, null)
     }
 
     public override fun K(`is`: IntArray?) {
@@ -853,7 +852,7 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             val i_84_ = 67 % ((-4 - i) / 46)
             if (anInt7742 >= 0) anInterface11Array7737[anInt7742]!!.method50(-32502)
             anInterface11Array7737[++anInt7742] = interface11
-            anInterface11_7740 = anInterface11Array7737[++anInt7742]
+            anInterface11_7740 = interface11
             anInterface11_7740!!.method47(-11421)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.NG(" + (if (interface11 != null) "{...}" else "null") + ',' + i + ')'))
@@ -2047,8 +2046,8 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
             if (anInt7738 >= 3) throw RuntimeException()
             if (i != 327685) method3688(-94, -9, -90, -108, 41, -52, 70)
             if (anInt7738 >= 0) anInterface11Array7741[anInt7738]!!.method45((-47).toByte())
+            anInterface11_7745 = interface11
             anInterface11Array7741[++anInt7738] = interface11
-            anInterface11_7745 = anInterface11Array7741[++anInt7738]
             anInterface11_7745!!.method49(-27141)
         } catch (runtimeexception: RuntimeException) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.HD(" + (if (interface11 != null) "{...}" else "null") + ',' + i + ')'))
@@ -2185,13 +2184,11 @@ public class ha_Sub2(canvas: Canvas?, var_d: d?, i: Int) : ha(var_d) {
         this.aClass64_Sub3_7780 = Class64_Sub3(this)
         this.aClass64_Sub3_7802 = Class64_Sub3(this)
         this.aClass64_Sub3_7821 = Class64_Sub3(this)
-        if (bool == false) {
-            this.aClass64_Sub3_7844 = Class64_Sub3(this)
-            this.aClass64_Sub3_7785 = Class64_Sub3(this)
-            if (this.aBoolean7820) {
-                this.aClass206_7778 = Class206(this)
-                Class206(this)
-            }
+        this.aClass64_Sub3_7844 = Class64_Sub3(this)
+        this.aClass64_Sub3_7785 = Class64_Sub3(this)
+        if (this.aBoolean7820) {
+            this.aClass206_7778 = Class206(this)
+            Class206(this)
         }
     }
 

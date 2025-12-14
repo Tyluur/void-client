@@ -145,7 +145,7 @@ class s_Sub2(var_ha_Sub2: ha_Sub2?, i: Int, i_133_: Int, i_134_: Int, i_135_: In
                         val class348_sub20s_38_ = aClass348_Sub20ArrayArrayArray8243!![i_36_]!![i_37_]!!
                         val is_39_ = (this.anIntArrayArrayArray8268!![i_36_]!![i_37_])!!
                         val is_40_ = (this.anIntArrayArrayArray8234!![i_36_]!![i_37_])!!
-                        var is_41_ = anIntArrayArrayArray8245!![i_36_]!![i_37_]!!
+                        var is_41_ = anIntArrayArrayArray8245!![i_36_]!![i_37_]
                         val is_42_ = (this.anIntArrayArrayArray8253!![i_36_]!![i_37_])!!
                         val is_43_ = (if (anIntArrayArrayArray8258 != null) anIntArrayArrayArray8258!![i_36_]!![i_37_] else null)
                         if (is_41_ == null) is_41_ = is_42_
