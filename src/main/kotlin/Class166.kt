@@ -35,7 +35,7 @@ class Class166 internal constructor(class230: Class230?, i: Int, class45: Class4
         anInt2182++
         var class222: Class222?
         synchronized(aClass60_2185) {
-            class222 = aClass60_2185.method583(i_1_.toLong(), i.toInt() xor 0x1d.inv()) as Class222?
+            class222 = aClass60_2185.method583(i_1_.toLong(), i.toInt() xor 0x1d.inv()) as? Class222?
         }
         if (class222 != null) return class222
         if (i.toInt() != -104) this.aClass60_2190 = null

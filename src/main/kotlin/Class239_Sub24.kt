@@ -219,7 +219,7 @@ class Class239_Sub24 : Class239 {
                                     val i_36_ = (player.y + -(-1 + player.method2436(105.toByte()) shl 8))
                                     var i_37_ = 0
                                     while ((Class150.anInt2057 > i_37_)) {
-                                        val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_37_].toLong(), -6008)) as Class348_Sub22?)
+                                        val class348_sub22 = ((Class282.aClass356_3654!!.method3480(Class74.anIntArray1233!![i_37_].toLong(), -6008)) as? Class348_Sub22?)
                                         if (class348_sub22 != null) {
                                             val npc = (class348_sub22.aNpc_6859)!!
                                             if ((Class367_Sub11.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {

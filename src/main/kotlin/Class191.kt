@@ -105,7 +105,7 @@ class Class191 internal constructor(i: Int, i_16_: Int, i_17_: Int) {
                 val i_9_ = class318_sub1_sub3_sub3!!.method2425(-1)
                 if (i_9_ != -1) {
                     val `object`: Any? = null
-                    var class105 = (Class348_Sub1_Sub1.aClass60_8807!!.method583(i_9_.toLong(), 118) as Class105?)
+                    var class105 = (Class348_Sub1_Sub1.aClass60_8807!!.method583(i_9_.toLong(), 118) as? Class105?)
                     if (class105 == null) {
                         val class207s = Class207.method1519(Class21.aClass45_322!!, i_9_, 0)
                         if (class207s == null) return

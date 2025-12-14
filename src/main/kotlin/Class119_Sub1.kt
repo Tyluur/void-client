@@ -79,7 +79,7 @@ class Class119_Sub1 : Class119, Interface2 {
                     if (!Class148.method1197(-12081, class348_sub42_sub12.anInt9608)) {
                         if (class348_sub42_sub12.anInt9599 != -1) `is` = Exception_Sub1.aClass255_112!!.method1940(98, (class348_sub42_sub12.anInt9599)).anIntArray2772
                         else if (method3549((class348_sub42_sub12.anInt9608), 107.toByte())) {
-                            val class348_sub22 = ((Class282.aClass356_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as Class348_Sub22?)
+                            val class348_sub22 = ((Class282.aClass356_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as? Class348_Sub22?)
                             if (class348_sub22 != null) {
                                 val npc = (class348_sub22.aNpc_6859)!!
                                 var class79 = (npc.aClass79_10505)

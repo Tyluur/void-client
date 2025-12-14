@@ -52,7 +52,7 @@ class Class348_Sub2 private constructor(class348_sub49: Class348_Sub49) : Class3
                         val i_13_ = i_4_ shr 16 and 0x7f
                         if (i_13_ > 0) {
                             val i_14_ = is_0_[i_11_]
-                            var class348_sub8 = (this.aClass356_6565!!.method3480(i_14_.toLong(), -6008) as Class348_Sub8?)
+                            var class348_sub8 = (this.aClass356_6565!!.method3480(i_14_.toLong(), -6008) as? Class348_Sub8?)
                             if (class348_sub8 == null) {
                                 class348_sub8 = Class348_Sub8(ByteArray(128))
                                 this.aClass356_6565!!.method3483(21.toByte(), i_14_.toLong(), class348_sub8)

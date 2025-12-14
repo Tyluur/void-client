@@ -27,12 +27,12 @@ object Class99 {
             if (i_2_ != 13880) method880(9, null, null, -128, 85, -75, 62, 85, -51)
             for (i_8_ in -i_3_..-1) {
                 for (i_9_ in i_7_..-1) {
-                    `is`!![i_4_++] = (`is`[i_4_++] + is_0_!![i_1_++]).toByte()
-                    `is`[i_4_++] = (`is`[i_4_++] + is_0_[i_1_++]).toByte()
-                    `is`[i_4_++] = (`is`[i_4_++] + is_0_[i_1_++]).toByte()
-                    `is`[i_4_++] = (`is`[i_4_++] + is_0_[i_1_++]).toByte()
+                    `is`!![i_4_] = (`is`[i_4_++] + is_0_!![i_1_++]).toByte()
+                    `is`[i_4_] = (`is`[i_4_++] + is_0_[i_1_++]).toByte()
+                    `is`[i_4_] = (`is`[i_4_++] + is_0_[i_1_++]).toByte()
+                    `is`[i_4_] = (`is`[i_4_++] + is_0_[i_1_++]).toByte()
                 }
-                for (i_10_ in i..-1) `is`!![i_4_++] = (`is`[i_4_++] + is_0_!![i_1_++]).toByte()
+                for (i_10_ in i..-1) `is`!![i_4_] = (`is`[i_4_++] + is_0_!![i_1_++]).toByte()
                 i_4_ += i_5_
                 i_1_ += i_6_
             }
@@ -46,11 +46,11 @@ object Class99 {
         anInt1576++
         if (Class5_Sub1.aBoolean8335) {
             var i_12_ = 0
-            var class348_sub42_sub12 = (class348_sub42_sub13.aClass107_9621.method1011(-59) as Class348_Sub42_Sub12)
+            var class348_sub42_sub12 = (class348_sub42_sub13.aClass107_9621.method1011(-59) as? Class348_Sub42_Sub12)
             while (class348_sub42_sub12 != null) {
                 val i_13_ = method138(class348_sub42_sub12, false)
                 if (i_13_ > i_12_) i_12_ = i_13_
-                class348_sub42_sub12 = (class348_sub42_sub13.aClass107_9621.method1003(108.toByte()) as Class348_Sub42_Sub12)
+                class348_sub42_sub12 = (class348_sub42_sub13.aClass107_9621.method1003(108.toByte()) as? Class348_Sub42_Sub12)
             }
             i_12_ += 8
             if (bool == true) {

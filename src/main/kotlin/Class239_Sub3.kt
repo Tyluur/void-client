@@ -154,7 +154,7 @@ class Class239_Sub3 : Class239 {
                         if (Class348_Sub1.anIntArray6547!![i_26_] == i) return Class199.aClass352Array2636!![i_26_]
                     }
                 }
-                var class352 = Class332.aClass60_4139!!.method583(i.toLong(), -92) as Class352?
+                var class352 = Class332.aClass60_4139!!.method583(i.toLong(), -92) as? Class352?
                 if (class352 != null) {
                     if (bool && class352.aClass143_4333 == null) {
                         val class143 = Class239_Sub10.method1766((-76).toByte(), i, s.aClass45_4585!!)

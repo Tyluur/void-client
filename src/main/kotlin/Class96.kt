@@ -9,8 +9,7 @@ object Class96 {
         try {
             if (!method215(27165)) throw RuntimeException("")
             if (!method3098(-30282, "jagdx")) throw RuntimeException("")
-            val method = (Class378::class.java.getDeclaredMethod("createToolkit", Canvas::class.java, d::class.java, Class45::class.java, Int::class.java))
-            var_ha = method.invoke(null, *arrayOf(canvas, var_d, class45, i)) as ha
+            var_ha = Class378.createToolkit(canvas, var_d, class45, i) as ha
         } catch (throwable: Throwable) {
             throw RuntimeException("")
         }
