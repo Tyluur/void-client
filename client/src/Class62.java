@@ -48,7 +48,7 @@ final class Class62 {
         if (i_2_ <= 20000) {
             if (i_2_ <= 10000) {
                 if (i_2_ <= 5000) {
-                    Class348_Sub40_Sub12.method3076(0, true);
+                    TextureOpColourGradient.method3076(0, true);
                     i_3_ = 1;
                 } else {
                     i_3_ = 2;

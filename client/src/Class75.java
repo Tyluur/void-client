@@ -20,7 +20,7 @@ class Class75 {
     static byte[][][] aByteArrayArrayArray1251;
     private static short[] aShortArray1252;
     static int anInt1253 = (int) (Math.random() * 17.0) - 8;
-    static Class262 aClass262_1254;
+    static Deque aDeque_1254;
     static int anInt1255;
     private static byte[] aByteArray1256;
     static int anInt1257;
@@ -114,7 +114,7 @@ class Class75 {
         aShortArray1252 = null;
         aByteArray1248 = null;
         aClass252_1246 = null;
-        aClass262_1254 = null;
+        aDeque_1254 = null;
         anIntArray1260 = null;
         aByteArray1273 = null;
         aByteArray1264 = null;
@@ -271,7 +271,7 @@ class Class75 {
                                     Class348_Sub21 class348_sub21 = new Class348_Sub21(i_51_);
                                     class348_sub21.anInt6852 = i;
                                     class348_sub21.anInt6851 = i_48_;
-                                    aClass262_1254.method1999(class348_sub21, -20180);
+                                    aDeque_1254.method1999(class348_sub21, -20180);
                                 }
                             }
                         }
@@ -286,7 +286,7 @@ class Class75 {
                             Class348_Sub21 class348_sub21 = new Class348_Sub21(i_52_);
                             class348_sub21.anInt6852 = i;
                             class348_sub21.anInt6851 = i_48_;
-                            aClass262_1254.method1999(class348_sub21, -20180);
+                            aDeque_1254.method1999(class348_sub21, -20180);
                         }
                     }
                 }
@@ -310,7 +310,7 @@ class Class75 {
                                         Class348_Sub21 class348_sub21 = new Class348_Sub21(i_56_);
                                         class348_sub21.anInt6852 = ((i_53_ + (anInt1266 >> 6)) * 64 + class318_sub8.aByte6466 - anInt1266);
                                         class348_sub21.anInt6851 = ((i_54_ + (anInt1263 >> 6)) * 64 + class318_sub8.aByte6464 - anInt1263);
-                                        aClass262_1254.method1999(class348_sub21, -20180);
+                                        aDeque_1254.method1999(class348_sub21, -20180);
                                     }
                                 }
                             }
@@ -465,7 +465,7 @@ class Class75 {
         return ((Class348_Sub42_Sub14) aClass356_1241.method3480(i, -6008));
     }
 
-    static final Class262 method758(Toolkit var_toolkit) {
+    static final Deque method758(Toolkit var_toolkit) {
         int i = anInt1265 - anInt1274;
         int i_102_ = anInt1277 - anInt1257;
         int i_103_ = (anInt1276 - anInt1272 << 16) / i;
@@ -518,15 +518,15 @@ class Class75 {
                 Class348_Sub21 class348_sub21 = new Class348_Sub21(aClass252_1246.anIntArray3239[i]);
                 class348_sub21.anInt6852 = is[1] - anInt1266;
                 class348_sub21.anInt6851 = is[2] - anInt1263;
-                aClass262_1254.method1999(class348_sub21, -20180);
+                aDeque_1254.method1999(class348_sub21, -20180);
             }
         }
     }
 
-    private static final Class262 method762(Toolkit var_toolkit, int i, int i_115_, int i_116_, int i_117_) {
-        for (Class348_Sub21 class348_sub21 = (Class348_Sub21) aClass262_1254.method1995(4); class348_sub21 != null; class348_sub21 = (Class348_Sub21) aClass262_1254.method1990((byte) 74))
+    private static final Deque method762(Toolkit var_toolkit, int i, int i_115_, int i_116_, int i_117_) {
+        for (Class348_Sub21 class348_sub21 = (Class348_Sub21) aDeque_1254.method1995(4); class348_sub21 != null; class348_sub21 = (Class348_Sub21) aDeque_1254.method1990((byte) 74))
             method747(var_toolkit, class348_sub21, i, i_115_, i_116_, i_117_);
-        return aClass262_1254;
+        return aDeque_1254;
     }
 
     private static final void method763(Toolkit var_toolkit, int i, int i_118_, int i_119_, int i_120_, short[] is, byte[] is_121_) {
@@ -803,6 +803,6 @@ class Class75 {
         aShortArray1252 = new short[1];
         anInt1250 = (int) (Math.random() * 11.0) - 5;
         aByteArray1248 = new byte[1];
-        aClass262_1254 = new Class262();
+        aDeque_1254 = new Deque();
     }
 }

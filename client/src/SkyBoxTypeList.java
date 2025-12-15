@@ -134,7 +134,7 @@ final class SkyBoxTypeList {
     }
 
     static final void method826(int i, int i_24_, int i_25_, int i_26_, int i_27_, int i_28_, Toolkit var_toolkit) {
-        if ((Class174.aSprite_2309 == null || Class348_Sub42_Sub15.aSprite_9658 == null || Class348_Sub42_Sub15.aSprite_9659 == null) && Class21.SPRITES.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257) && Class21.SPRITES.method421(false, Class313.anInt3937) && Class21.SPRITES.method421(false, NPCDefinition.anInt1387)) {
+        if ((Class174.aSprite_2309 == null || Class348_Sub42_Sub15.aSprite_9658 == null || Class348_Sub42_Sub15.aSprite_9659 == null) && Class21.SPRITES.fileReady(false, Class318_Sub1_Sub3_Sub3.anInt10257) && Class21.SPRITES.fileReady(false, Class313.anInt3937) && Class21.SPRITES.fileReady(false, NPCDefinition.anInt1387)) {
             Class207 class207 = Class207.method1521(Class21.SPRITES, Class313.anInt3937, 0);
             Class348_Sub42_Sub15.aSprite_9658 = var_toolkit.method3691(class207, true);
             class207.method1518();

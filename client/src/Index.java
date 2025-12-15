@@ -233,7 +233,7 @@ final class Index {
     }
 
     static final void method395(int i) throws Exception_Sub1 {
-        if (Packet.anInt7207 == 1) Class21.aToolkit326.method3626(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157);
+        if (Packet.anInt7207 == 1) Class21.aToolkit326.method3626(Class339.anInt4211, TextureOpPerlinNoise.anInt9157);
         else Class21.aToolkit326.method3626(0, 0);
         if (i >= 73) anInt642++;
     }
@@ -490,7 +490,8 @@ final class Index {
         return anObjectArray656[i_76_] != null;
     }
 
-    final boolean method421(boolean bool, int i) {
+    // method421
+    final boolean fileReady(boolean bool, int i) {
         anInt661++;
         if (!method399(bool)) return false;
         if (aClass291_629.anIntArray3724.length == 1) return requestDownload(-10499, 0, i);

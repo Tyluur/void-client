@@ -109,11 +109,11 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
             this.anIntArray10236 = null;
         }
         if (this.anInt10269 != -1) {
-            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 118, this.anInt10269));
+            Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 118, this.anInt10269));
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.animTypeList.method835(class368.anInt4503, 7).walkingPrecedence) == 1) this.anInt10269 = -1;
         }
         if (this.anInt10291 != -1) {
-            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 77, this.anInt10291));
+            Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 77, this.anInt10291));
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.animTypeList.method835(class368.anInt4503, 7).walkingPrecedence) == 1) this.anInt10291 = -1;
         }
         if ((~this.anInt10319) > i_16_) this.anInt10319++;
@@ -208,11 +208,11 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
             this.anInt10286 = -1;
         }
         if (this.anInt10269 != -1) {
-            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 117, this.anInt10269));
+            Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 117, this.anInt10269));
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.animTypeList.method835(class368.anInt4503, 7).walkingPrecedence) == 1) this.anInt10269 = -1;
         }
         if (this.anInt10291 != -1) {
-            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 56, this.anInt10291));
+            Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 56, this.anInt10291));
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.animTypeList.method835(class368.anInt4503, 7).walkingPrecedence) == 1) this.anInt10291 = -1;
         }
         if (!bool) {
@@ -331,7 +331,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         if (bool) model.method624(this.aByte10255, this.aByte10206, this.aByte10270, (0xff & this.aByte10279));
         if (this.anInt10269 == -1 || this.anInt10240 == -1) this.aModelArray10323[1] = null;
         else {
-            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 56, this.anInt10269));
+            Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 56, this.anInt10269));
             boolean bool_40_ = (class368.aByte4488 == 3 && (i_37_ != 0 || i_38_ != 0));
             int i_41_ = i_35_;
             if (!bool_40_) {
@@ -380,7 +380,7 @@ final class Npc extends Class318_Sub1_Sub3_Sub3 {
         }
         if (this.anInt10291 == -1 || this.anInt10224 == -1) this.aModelArray10323[2] = null;
         else {
-            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 98, this.anInt10291));
+            Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 98, this.anInt10291));
             boolean bool_51_ = (class368.aByte4488 == 3 && (i_37_ != 0 || i_38_ != 0));
             int i_52_ = i_35_;
             if (!bool_51_) {

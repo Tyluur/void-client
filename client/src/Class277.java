@@ -57,9 +57,9 @@ final class Class277 {
                                 } else this.anInt3558 = (packet.readUnsignedByte(255) << 2);
                             } else this.anInt3559 = packet.readMedium(-1);
                         } else this.aBoolean3560 = true;
-                    } else this.anInt3569 = (Class348_Sub40_Sub34.method3140(-67, packet.readMedium(-1)));
+                    } else this.anInt3569 = (TextureOpColourEdgeDetector.method3140(-67, packet.readMedium(-1)));
                 } else this.aBoolean3561 = false;
-            } else this.anInt3563 = Class348_Sub40_Sub34.method3140(-57, packet.readMedium(-1));
+            } else this.anInt3563 = TextureOpColourEdgeDetector.method3140(-57, packet.readMedium(-1));
         }
     }
 

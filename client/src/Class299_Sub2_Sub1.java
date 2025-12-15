@@ -24,21 +24,21 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
             Class270.anIntArray3464[3] = anInt8711;
             Class270.anIntArray3464[1] = anInt8717;
             Class270.anIntArray3464[4] = anInt8708;
-            TextureSource var_d = aNativeToolkit_8718.aD4579;
+            TextureSource var_d = aNativeToolkit_8718.textureSource;
             Class270.anIntArray3464[5] = anInt8714;
             Class270.anIntArray3464[2] = anInt8715;
             Class270.anIntArray3464[0] = anInt8716;
             boolean bool_0_ = false;
             int i = 0;
             for (int i_1_ = 0; i_1_ < 6; i_1_++) {
-                if (!var_d.method4(-7953, Class270.anIntArray3464[i_1_])) return null;
+                if (!var_d.textureReady(-7953, Class270.anIntArray3464[i_1_])) return null;
                 TextureMetrics textureMetrics = var_d.getMetrics(Class270.anIntArray3464[i_1_], -6662);
                 int i_2_ = textureMetrics.aBoolean199 ? 64 : 128;
                 if (i < i_2_) i = i_2_;
                 if (textureMetrics.aByte205 > 0) bool_0_ = true;
             }
             for (int i_3_ = 0; i_3_ < 6; i_3_++)
-                Option_Sub14.anIntArrayArray5991[i_3_] = var_d.method5(false, Class270.anIntArray3464[i_3_], 1.0F, i, i, 81);
+                Option_Sub14.anIntArrayArray5991[i_3_] = var_d.rgbPixels(false, Class270.anIntArray3464[i_3_], 1.0F, i, i, 81);
             anInterface18_Impl2_8719 = aNativeToolkit_8718.method3900(Option_Sub14.anIntArrayArray5991, bool_0_, 61, i);
         }
         return anInterface18_Impl2_8719;
@@ -47,9 +47,9 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
     static final void method2270(int i, int i_4_, Toolkit var_toolkit, String string, boolean bool, int i_5_, int i_6_, int i_7_) {
         try {
             if (OutputStream_Sub2.aSprite_106 == null || Class121.aSprite_1800 == null) {
-                if (Class21.SPRITES.method421(false, Class231.anInt2996) && Class21.SPRITES.method421(false, Class348_Sub40_Sub16.anInt9231)) {
+                if (Class21.SPRITES.fileReady(false, Class231.anInt2996) && Class21.SPRITES.fileReady(false, TextureOpCombine.anInt9231)) {
                     OutputStream_Sub2.aSprite_106 = (var_toolkit.method3691(Class207.method1521(Class21.SPRITES, Class231.anInt2996, 0), true));
-                    Class207 class207 = Class207.method1521(Class21.SPRITES, Class348_Sub40_Sub16.anInt9231, 0);
+                    Class207 class207 = Class207.method1521(Class21.SPRITES, TextureOpCombine.anInt9231, 0);
                     Class121.aSprite_1800 = var_toolkit.method3691(class207, true);
                     class207.method1518();
                     Class348_Sub5.aSprite_6627 = var_toolkit.method3691(class207, true);
@@ -64,7 +64,7 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
                 Class348_Sub5.aSprite_6627.method974((-Class348_Sub5.aSprite_6627.getWidth() + i_4_ - -i), i_5_);
             }
             if (bool == false) {
-                Class262.aFontRenderer_3326.method2576(string, (Class348_Sub42_Sub11.anInt9586) | ~0xffffff, 14 + i_5_, 3 + i_4_, -1, -127);
+                Deque.aFontRenderer_3326.method2576(string, (Class348_Sub42_Sub11.anInt9586) | ~0xffffff, 14 + i_5_, 3 + i_4_, -1, -127);
                 var_toolkit.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Class264.anInt3376 | 255 + -Class51.anInt948 << 24), 1);
             }
         } catch (RuntimeException runtimeexception) {

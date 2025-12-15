@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub11 extends Class348_Sub42 {
+final class Class348_Sub42_Sub11 extends LinkedNode {
     static int anInt9579;
     int[] anIntArray9580;
     static int anInt9581;
@@ -72,22 +72,22 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
             byte i_5_ = (byte) (0xff & -4 + Option_Sub15.anInt6006);
             int i_6_ = Option_Sub15.anInt6006 % Class367_Sub4.mapLength;
             for (int i_7_ = 0; i_7_ < 4; i_7_++) {
-                for (int i_8_ = 0; Class348_Sub40_Sub3.mapWidth > i_8_; i_8_++)
+                for (int i_8_ = 0; TextureOpBinary.mapWidth > i_8_; i_8_++)
                     Class289.aByteArrayArrayArray3700[i_7_][i_6_][i_8_] = i_5_;
             }
             if (QuickChatPhraseTypeList.anInt4372 != 3) {
                 for (int i_9_ = 0; i_9_ < 2; i_9_++) {
                     Class327.anIntArray4097[i_9_] = -1000000;
                     Class156.anIntArray2117[i_9_] = 1000000;
-                    Class348_Sub40_Sub19.anIntArray9259[i_9_] = 0;
+                    TextureOpHorizontalGradient.anIntArray9259[i_9_] = 0;
                     Model.anIntArray1127[i_9_] = 1000000;
                     LoadState.anIntArray1045[i_9_] = 0;
                 }
                 int i_10_ = (Class132.aPlayer_1907.x);
                 int i_11_ = (Class132.aPlayer_1907.y);
                 if (i >= 100) {
-                    if (Class348_Sub40_Sub21.anInt9282 == 1 || Class9.anInt167 != -1) {
-                        if (Class348_Sub40_Sub21.anInt9282 != 1) {
+                    if (TextureOp37.anInt9282 == 1 || Class9.anInt167 != -1) {
+                        if (TextureOp37.anInt9282 != 1) {
                             i_11_ = Class318_Sub1_Sub5_Sub2.anInt10163;
                             i_10_ = Class9.anInt167;
                         }
@@ -103,7 +103,7 @@ final class Class348_Sub42_Sub11 extends Class348_Sub42 {
                             int i_17_;
                             if (i_15_ <= i_13_) i_17_ = -i_15_ + i_13_;
                             else i_17_ = i_15_ + -i_13_;
-                            if (i_16_ == 0 && i_17_ == 0 || -Class367_Sub4.mapLength >= i_16_ || (Class367_Sub4.mapLength <= i_16_) || i_17_ <= -Class348_Sub40_Sub3.mapWidth || Class348_Sub40_Sub3.mapWidth <= i_17_)
+                            if (i_16_ == 0 && i_17_ == 0 || -Class367_Sub4.mapLength >= i_16_ || (Class367_Sub4.mapLength <= i_16_) || i_17_ <= -TextureOpBinary.mapWidth || TextureOpBinary.mapWidth <= i_17_)
                                 Class156.method1242(("RC: " + i_12_ + "," + i_13_ + " " + i_14_ + "," + i_15_ + " " + za_Sub2.regionTileX + "," + Class90.regionTileY), null, 15004);
                             else if (i_16_ <= i_17_) {
                                 int i_18_ = i_16_ * 65536 / i_17_;

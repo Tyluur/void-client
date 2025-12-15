@@ -63,8 +63,8 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
                     } else if (Option_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                         Object object = null;
                         Class51 class51;
-                        if ((class348_sub42_sub12.anInt9608) != 1001) class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) ((class348_sub42_sub12.aLong9605) >>> 32 & 0x7fffffffL)));
-                        else class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
+                        if ((class348_sub42_sub12.anInt9608) != 1001) class51 = (TextureOpColourGradient.objectTypeList.method2005(0, (int) ((class348_sub42_sub12.aLong9605) >>> 32 & 0x7fffffffL)));
+                        else class51 = (TextureOpColourGradient.objectTypeList.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
                         if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47);
                         if (class51 != null) is = class51.anIntArray917;
                     }
@@ -74,11 +74,11 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
             if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508.method2063(AnimBase.language, 544));
             if (Class348_Sub36.aClass46_6990 != null) {
                 FontRenderer fontRenderer = Class348_Sub36.aClass46_6990.method426(var_toolkit, (byte) 68);
-                if (fontRenderer == null) fontRenderer = Class262.aFontRenderer_3326;
+                if (fontRenderer == null) fontRenderer = Deque.aFontRenderer_3326;
                 fontRenderer.method2585(Class175.anIntArray2330, Class348_Sub36.aClass46_6990.anInt709, Class341.aSpriteArray4234, Class348_Sub36.aClass46_6990.anInt700, Class348_Sub36.aClass46_6990.anInt749, Class348_Sub36.aClass46_6990.anInt789, Class348_Sub36.aClass46_6990.anInt809, OutputStream_Sub1.aRandom93, Class348_Sub36.aClass46_6990.anInt762, Class32.anInt451, Class356.anInt4383, -33, Class332.anInt4141, string, Class195.anIntArray5007);
                 Class13.method226(Class195.anIntArray5007[0], Class195.anIntArray5007[2], Class195.anIntArray5007[1], 0, Class195.anIntArray5007[3]);
             } else if (Class21.aClass46_323 != null && (Class348_Sub42_Sub8_Sub2.modeGame == Class10.aClass230_186)) {
-                int i_1_ = (Class262.aFontRenderer_3326.method2571(-1, Class356.anInt4383, Class175.anIntArray2330, string, 16777215, 0, Class341.aSpriteArray4234, 16 + Class238_Sub1.anInt5832, 4 + Class120.anInt4911, OutputStream_Sub1.aRandom93));
+                int i_1_ = (Deque.aFontRenderer_3326.method2571(-1, Class356.anInt4383, Class175.anIntArray2330, string, 16777215, 0, Class341.aSpriteArray4234, 16 + Class238_Sub1.anInt5832, 4 + Class120.anInt4911, OutputStream_Sub1.aRandom93));
                 Class13.method226(Class120.anInt4911 - -4, (Class369.aFontMetrics_4962.width(true, string) + i_1_), Class238_Sub1.anInt5832, 0, 16);
             }
         }

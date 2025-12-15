@@ -55,12 +55,12 @@ final class Class348_Sub18 extends Node {
         anInt6804++;
         Class229.floorOverlayTypeList.method2037(10205);
         Class362.floorUnderlayTypeList.method1381(true);
-        Class348_Sub40_Sub25.idkTypeList.method1206((byte) -37);
-        Class348_Sub40_Sub12.objectTypeList.method2012(-23828);
+        TextureOpMandelbrot.idkTypeList.method1206((byte) -37);
+        TextureOpColourGradient.objectTypeList.method2012(-23828);
         BillboardType.npcTypeList.method2078(-6080);
         Exception_Sub1.itemTypeList.method1939(-110);
         Class10.animTypeList.method834((byte) -116);
-        Class348_Sub40_Sub18.gfxTypeList.method2546(60);
+        TextureOpColourFill.gfxTypeList.method2546(60);
         Class229.varBitTypeList.method1445(64);
         Class269.varPlayerTypeList.method1589((byte) 127);
         Class64_Sub3.basTypeList.method1985(0);
@@ -122,7 +122,7 @@ final class Class348_Sub18 extends Node {
             Class348_Sub11.TEXTURE_DEFINITIONS.method412((byte) 78);
             Option.PARTICLES.method412((byte) 88);
             Class367_Sub8.DEFAULTS.method412((byte) -109);
-            Class262.BILLBOARDS.method412((byte) 112);
+            Deque.BILLBOARDS.method412((byte) 112);
             Class126.NATIVE_LIBRARIES.method412((byte) 85);
             Class136.SHADERS.method412((byte) 93);
             Class146.VIDEOS.method412((byte) -122);

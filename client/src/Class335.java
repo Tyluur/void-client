@@ -10,9 +10,9 @@ final class Class335 {
 
     static final void method2655(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
         anInt4166++;
-        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class218.aClass262_2859.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) Class218.aClass262_2859.method1990((byte) 97)))
+        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class218.aDeque_2859.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) Class218.aDeque_2859.method1990((byte) 97)))
             Class238_Sub1.method1708(i_1_, i_3_, i_0_, i_2_, (byte) -78, class348_sub9);
-        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) client.aClass262_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) client.aClass262_5185.method1990((byte) 85))) {
+        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) client.aDeque_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) client.aDeque_5185.method1990((byte) 85))) {
             int i_4_ = 1;
             Class225 class225 = class348_sub9.aNpc_6691.method2422((byte) 72);
             if (class348_sub9.aNpc_6691.anInt10268 == -1 || class348_sub9.aNpc_6691.aBoolean10213) i_4_ = 0;

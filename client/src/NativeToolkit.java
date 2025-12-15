@@ -57,7 +57,7 @@ abstract class NativeToolkit extends Toolkit {
     NativeInterface aNativeInterface7924;
     Canvas aCanvas7925;
     static int anInt7926;
-    private Class262 aClass262_7927 = new Class262();
+    private Deque aDeque_7927 = new Deque();
     static int anInt7928;
     static int anInt7929;
     static int anInt7930;
@@ -449,7 +449,7 @@ abstract class NativeToolkit extends Toolkit {
                 byte i_25_ = this.aBoolean8160 ? (byte) 3 : (byte) 0;
                 if (i >= 0) {
                     interface18_impl3 = aClass372_8137.method3587((byte) -97, i);
-                    TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+                    TextureMetrics textureMetrics = this.textureSource.getMetrics(i, -6662);
                     if (textureMetrics.speedU == 0 && textureMetrics.speedV == 0) method3879(-8629);
                     else {
                         int i_26_ = !textureMetrics.aBoolean199 ? 128 : 64;
@@ -580,7 +580,7 @@ abstract class NativeToolkit extends Toolkit {
 
     static final void method3824(int i, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_, int i_40_, int i_41_) {
         anInt7933++;
-        if (i_37_ >= 0 && i >= 0 && -1 + Class367_Sub4.mapLength > i_37_ && (i < -1 + Class348_Sub40_Sub3.mapWidth)) {
+        if (i_37_ >= 0 && i >= 0 && -1 + Class367_Sub4.mapLength > i_37_ && (i < -1 + TextureOpBinary.mapWidth)) {
             if (Class147.aClass357ArrayArrayArray2029 == null) return;
             if (i_41_ == 0) {
                 Interface10 interface10 = (Interface10) r_Sub2.method3297(i_40_, i_37_, i);
@@ -594,7 +594,7 @@ abstract class NativeToolkit extends Toolkit {
                     else Class218.method1591(i_37_, 92, i_41_, i_35_, interface10_42_.method42(-71), i_36_, i, i_38_, i_40_);
                 }
             } else if (i_41_ == 1) {
-                Interface10 interface10 = ((Interface10) Class348_Sub40_Sub32.method3135(i_40_, i_37_, i));
+                Interface10 interface10 = ((Interface10) TextureOpInvert.method3135(i_40_, i_37_, i));
                 if (interface10 != null) {
                     if (interface10 instanceof Class318_Sub1_Sub5_Sub2) ((Class318_Sub1_Sub5_Sub2) interface10).aClass235_10155.method1671(262144, i_35_);
                     else {
@@ -654,7 +654,7 @@ abstract class NativeToolkit extends Toolkit {
     void method3652() {
         anInt8065++;
         if (!aBoolean8176) {
-            for (Node node = aClass262_7927.method1995(4); node != null; node = aClass262_7927.method1990((byte) 102))
+            for (Node node = aDeque_7927.method1995(4); node != null; node = aDeque_7927.method1990((byte) 102))
                 ((za_Sub2) node).method3445(-9503);
             Enumeration enumeration = aHashtable8014.keys();
             while (enumeration.hasMoreElements()) {
@@ -953,8 +953,8 @@ abstract class NativeToolkit extends Toolkit {
         method3903(false);
         anInt8017++;
         method3894(-28186, i_73_);
-        method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
-        method3885(0, true, Class348_Sub40_Sub39.aClass70_9485);
+        method3849((byte) 47, 0, TextureOpRasterizer.aClass70_9485);
+        method3885(0, true, TextureOpRasterizer.aClass70_9485);
         method3817(113, i_74_);
         this.aClass101_Sub2_8074.method932(1.0F, (float) i_72_, (float) i_71_, (byte) -22);
         this.aClass101_Sub2_8074.translate(i, i_70_, 0);
@@ -1030,8 +1030,8 @@ abstract class NativeToolkit extends Toolkit {
         if (method3878((float) i_77_, 0, (float) i_78_ + f, 0.0F, f_82_ + (float) i_79_, 0.0F, (float) i)) {
             method3903(false);
             method3894(-28186, i_80_);
-            method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
-            method3885(0, true, Class348_Sub40_Sub39.aClass70_9485);
+            method3849((byte) 47, 0, TextureOpRasterizer.aClass70_9485);
+            method3885(0, true, TextureOpRasterizer.aClass70_9485);
             method3817(112, i_81_);
             method3942(5);
             method3926((byte) 45, false);
@@ -1071,7 +1071,7 @@ abstract class NativeToolkit extends Toolkit {
             method3850((byte) -47, interface18_impl3);
             method3817(99, 1);
             method3874(Class328_Sub3.aClass229_6519, 114, Class328_Sub3.aClass229_6519);
-            method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
+            method3849((byte) 47, 0, TextureOpRasterizer.aClass70_9485);
             method3894(-28186, i);
             this.aClass101_Sub2_8074.method932(0.0F, (float) this.anInt7962, (float) this.anInt7931, (byte) -52);
             method3915(0);
@@ -1417,8 +1417,8 @@ abstract class NativeToolkit extends Toolkit {
         anInt8026++;
         method3903(false);
         method3894(-28186, i_136_);
-        method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
-        method3885(0, true, Class348_Sub40_Sub39.aClass70_9485);
+        method3849((byte) 47, 0, TextureOpRasterizer.aClass70_9485);
+        method3885(0, true, TextureOpRasterizer.aClass70_9485);
         method3817(83, i_137_);
         this.aClass101_Sub2_8074.method932(1.0F, (float) i_135_, (float) i_135_, (byte) -75);
         this.aClass101_Sub2_8074.translate(i, i_134_, 0);
@@ -1835,7 +1835,7 @@ abstract class NativeToolkit extends Toolkit {
 
     private final void method3905(byte i) {
         method3940(1);
-        if (i < 80) aClass262_7927 = null;
+        if (i < 80) aDeque_7927 = null;
         anInt8047++;
         if (aClass367_8143 != null) aClass367_8143.method3532(10425);
     }
@@ -2221,8 +2221,8 @@ abstract class NativeToolkit extends Toolkit {
         } else f = 1.0F;
         method3903(false);
         method3894(-28186, i_236_);
-        method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
-        method3885(0, true, Class348_Sub40_Sub39.aClass70_9485);
+        method3849((byte) 47, 0, TextureOpRasterizer.aClass70_9485);
+        method3885(0, true, TextureOpRasterizer.aClass70_9485);
         method3817(94, i_237_);
         method3942(5);
         method3926((byte) 86, false);
@@ -2466,8 +2466,8 @@ abstract class NativeToolkit extends Toolkit {
         float f = method3858(false);
         method3903(false);
         method3894(-28186, i_271_);
-        method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
-        method3885(0, true, Class348_Sub40_Sub39.aClass70_9485);
+        method3849((byte) 47, 0, TextureOpRasterizer.aClass70_9485);
+        method3885(0, true, TextureOpRasterizer.aClass70_9485);
         method3817(89, i_272_);
         this.aClass101_Sub2_8074.method932(1.0F, (float) (-1 + i_270_), (float) (i_269_ - 1), (byte) -33);
         this.aClass101_Sub2_8074.method920(-f + (float) i_268_, false, 0.0F, (float) i - f);
@@ -2499,10 +2499,10 @@ abstract class NativeToolkit extends Toolkit {
 
     static final void method3936(int i) {
         anInt7990++;
-        if (Class262.aClass190ArrayArray3335 != null) {
-            for (int i_274_ = 0; (i_274_ < Class262.aClass190ArrayArray3335.length); i_274_++) {
-                for (int i_275_ = 0; (Class262.aClass190ArrayArray3335[i_274_].length > i_275_); i_275_++)
-                    Class262.aClass190ArrayArray3335[i_274_][i_275_] = Class274.aClass190_3547;
+        if (Deque.aClass190ArrayArray3335 != null) {
+            for (int i_274_ = 0; (i_274_ < Deque.aClass190ArrayArray3335.length); i_274_++) {
+                for (int i_275_ = 0; (Deque.aClass190ArrayArray3335[i_274_].length > i_275_); i_275_++)
+                    Deque.aClass190ArrayArray3335[i_274_][i_275_] = Class274.aClass190_3547;
             }
         }
         if (i != 0) method3870(-90);
@@ -2552,7 +2552,7 @@ abstract class NativeToolkit extends Toolkit {
     final za method3702(int i) {
         anInt8049++;
         za_Sub2 var_za_Sub2 = new za_Sub2(i);
-        aClass262_7927.method1999(var_za_Sub2, -20180);
+        aDeque_7927.method1999(var_za_Sub2, -20180);
         return var_za_Sub2;
     }
 
@@ -2685,14 +2685,14 @@ abstract class NativeToolkit extends Toolkit {
                 this.anInt7931 = anInt7958 = dimension.width;
                 this.anInt8178 = i_289_;
                 Class59_Sub2_Sub1.method566(false, true, (byte) -127);
-                if (this.aD4579 == null) {
+                if (this.textureSource == null) {
                     this.aNativeInterface7924 = new NativeInterface(0, this.anInt8178);
                     aClass372_8137 = null;
                 } else {
-                    aClass372_8137 = new Class372(this, this.aD4579);
-                    this.aNativeInterface7924 = new NativeInterface(this.aD4579.method2(true), this.anInt8178);
-                    for (int i_290_ = 0; this.aD4579.method2(true) > i_290_; i_290_++) {
-                        TextureMetrics textureMetrics = this.aD4579.getMetrics(i_290_, -6662);
+                    aClass372_8137 = new Class372(this, this.textureSource);
+                    this.aNativeInterface7924 = new NativeInterface(this.textureSource.method2(true), this.anInt8178);
+                    for (int i_290_ = 0; this.textureSource.method2(true) > i_290_; i_290_++) {
+                        TextureMetrics textureMetrics = this.textureSource.getMetrics(i_290_, -6662);
                         if (textureMetrics != null) this.aNativeInterface7924.initTextureMetrics(i_290_, textureMetrics.aByte201, textureMetrics.aByte216);
                     }
                 }

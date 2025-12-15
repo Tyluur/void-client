@@ -84,7 +84,7 @@ final class BillboardType {
                             do {
                                 if (i_25_ == -4) {
                                     if (i_15_ == i_9_ && (i_16_ == i_14_)) {
-                                        Class348_Sub40_Sub30.anInt9388 = i_15_;
+                                        TextureOpHslAdjust.anInt9388 = i_15_;
                                         Class115.anInt1753 = i_16_;
                                         return true;
                                     }
@@ -100,27 +100,27 @@ final class BillboardType {
                                 }
                                 if (Option_Sub28.method1842(i, i_14_, -1, i_12_, i_15_, i_16_, i_9_, i_12_, i_8_)) {
                                     Class115.anInt1753 = i_16_;
-                                    Class348_Sub40_Sub30.anInt9388 = i_15_;
+                                    TextureOpHslAdjust.anInt9388 = i_15_;
                                     return true;
                                 }
                                 break while_48_;
                             } while (false);
                             if (class361.method3497(-28388, i_9_, i_11_, i_12_, i_8_, i_15_, i_12_, i_16_, i_14_, i)) {
-                                Class348_Sub40_Sub30.anInt9388 = i_15_;
+                                TextureOpHslAdjust.anInt9388 = i_15_;
                                 Class115.anInt1753 = i_16_;
                                 return true;
                             }
                             break while_48_;
                         } while (false);
                         if (class361.method3503(i_15_, (byte) -98, i_14_, i_12_, i_8_, i, i_11_, i_16_, i_9_)) {
-                            Class348_Sub40_Sub30.anInt9388 = i_15_;
+                            TextureOpHslAdjust.anInt9388 = i_15_;
                             Class115.anInt1753 = i_16_;
                             return true;
                         }
                         break while_48_;
                     } while (false);
                     if (class361.method3495(i_9_, i_16_, i_12_, i_5_, i_15_, i_14_, i_13_, -71)) {
-                        Class348_Sub40_Sub30.anInt9388 = i_15_;
+                        TextureOpHslAdjust.anInt9388 = i_15_;
                         Class115.anInt1753 = i_16_;
                         return true;
                     }
@@ -128,7 +128,7 @@ final class BillboardType {
                 } while (false);
                 if (class361.method3504(i_14_, i_16_, i_9_, i_15_, i_13_, 1, i_5_, i_12_)) {
                     Class115.anInt1753 = i_16_;
-                    Class348_Sub40_Sub30.anInt9388 = i_15_;
+                    TextureOpHslAdjust.anInt9388 = i_15_;
                     return true;
                 }
             } while (false);
@@ -236,7 +236,7 @@ final class BillboardType {
             }
         }
         Class115.anInt1753 = i_16_;
-        Class348_Sub40_Sub30.anInt9388 = i_15_;
+        TextureOpHslAdjust.anInt9388 = i_15_;
         return false;
     }
 

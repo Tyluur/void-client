@@ -75,10 +75,10 @@ final class Class112 implements Runnable {
                     int i_9_ = -1;
                     for (int i_10_ = 0; Class8.anInt166 > i_10_; i_10_++) {
                         if (Class71.aBoolean1211) {
-                            int i_11_ = (Class348_Sub42_Sub5.anInt9532 - -33 - -(i_10_ * 16));
+                            int i_11_ = (Texture.anInt9532 - -33 - -(i_10_ * 16));
                             if (i_3_ > -13 + i_11_ && i_3_ <= i_11_ + 3) i_9_ = i_10_;
                         } else {
-                            int i_12_ = (i_10_ * 16 + 31 + Class348_Sub42_Sub5.anInt9532);
+                            int i_12_ = (i_10_ * 16 + 31 + Texture.anInt9532);
                             if (i_3_ > -13 + i_12_ && i_3_ <= i_12_ + 3) i_9_ = i_10_;
                         }
                     }
@@ -86,7 +86,7 @@ final class Class112 implements Runnable {
                         int i_13_ = 0;
                         Class156 class156 = new Class156(Class233.aClass107_3022);
                         for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) class156.method1240(110)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) class156.method1243((byte) 77))) {
-                            if (i_9_ == i_13_++) return ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063).anInt9609;
+                            if (i_9_ == i_13_++) return ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063).anInt9609;
                         }
                     }
                 } else if (Class242.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 < i_2_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252) > i_2_) {
@@ -112,16 +112,16 @@ final class Class112 implements Runnable {
                 int i_14_ = -1;
                 for (int i_15_ = 0; Class73.anInt4776 > i_15_; i_15_++) {
                     if (Class71.aBoolean1211) {
-                        int i_17_ = ((-i_15_ + (-1 + Class73.anInt4776)) * 16 + Class348_Sub42_Sub5.anInt9532 + 33);
+                        int i_17_ = ((-i_15_ + (-1 + Class73.anInt4776)) * 16 + Texture.anInt9532 + 33);
                         if (i_3_ > i_17_ - 13 && i_17_ + 3 >= i_3_) i_14_ = i_15_;
                     } else {
-                        int i_16_ = 31 + (Class348_Sub42_Sub5.anInt9532 + (-i_15_ + (Class73.anInt4776 - 1)) * 16);
+                        int i_16_ = 31 + (Texture.anInt9532 + (-i_15_ + (Class73.anInt4776 - 1)) * 16);
                         if (-13 + i_16_ < i_3_ && i_16_ + 3 >= i_3_) i_14_ = i_15_;
                     }
                 }
                 if (i_14_ != -1) {
                     int i_18_ = 0;
-                    Class312 class312 = new Class312(Class348_Sub40_Sub4.aClass262_9111);
+                    Class312 class312 = new Class312(TextureOpVerticalGradient.aDeque_9111);
                     for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) class312.method2327((byte) -53)); class348_sub42_sub12 != null; class348_sub42_sub12 = ((Class348_Sub42_Sub12) class312.method2329(i + -3102))) {
                         if (i_14_ == i_18_++) return (class348_sub42_sub12.anInt9609);
                     }

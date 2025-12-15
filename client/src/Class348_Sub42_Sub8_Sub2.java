@@ -37,19 +37,19 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
 
     static final boolean method3201(boolean bool) throws IOException {
         anInt10430++;
-        if (Class348_Sub40_Sub8.aClass238_9165 == null) return false;
+        if (TextureOpPerlinNoise.aClass238_9165 == null) return false;
         if (Class348_Sub3.aClass114_6584 == null) {
             if (Class108.aBoolean1661) {
-                if (!Class348_Sub40_Sub8.aClass238_9165.method1705(1, 119)) return false;
-                Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (byte) 6, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                if (!TextureOpPerlinNoise.aClass238_9165.method1705(1, 119)) return false;
+                TextureOpPerlinNoise.aClass238_9165.method1701(1, 0, (byte) 6, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
                 Class348_Sub50.anInt7213 = 0;
                 Class108.aBoolean1661 = false;
                 Class13.anInt221++;
             }
             Class299.aClass348_Sub49_Sub2_3813.pos = 0;
             if (Class299.aClass348_Sub49_Sub2_3813.method3404(-1510)) {
-                if (!Class348_Sub40_Sub8.aClass238_9165.method1705(1, 119)) return false;
-                Class348_Sub40_Sub8.aClass238_9165.method1701(1, 1, (byte) 26, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                if (!TextureOpPerlinNoise.aClass238_9165.method1705(1, 119)) return false;
+                TextureOpPerlinNoise.aClass238_9165.method1701(1, 1, (byte) 26, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
                 Class13.anInt221++;
                 Class348_Sub50.anInt7213 = 0;
             }
@@ -61,31 +61,31 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             if (Loader.debug) {
                 System.out.println("Packet read: " + i + " length: " + Class348_Sub3.aClass114_6584.anInt1749);
             }
-            Class348_Sub40_Sub25.anInt9341 = Class348_Sub3.aClass114_6584.anInt1749;
+            TextureOpMandelbrot.anInt9341 = Class348_Sub3.aClass114_6584.anInt1749;
         }
-        if (Class348_Sub40_Sub25.anInt9341 == -1) {
-            if (!Class348_Sub40_Sub8.aClass238_9165.method1705(1, 116)) return false;
-            Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (byte) -118, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
-            Class348_Sub40_Sub25.anInt9341 = 0xff & (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]);
+        if (TextureOpMandelbrot.anInt9341 == -1) {
+            if (!TextureOpPerlinNoise.aClass238_9165.method1705(1, 116)) return false;
+            TextureOpPerlinNoise.aClass238_9165.method1701(1, 0, (byte) -118, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+            TextureOpMandelbrot.anInt9341 = 0xff & (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]);
             Class13.anInt221++;
             Class348_Sub50.anInt7213 = 0;
         }
-        if (Class348_Sub40_Sub25.anInt9341 == -2) {
-            if (!Class348_Sub40_Sub8.aClass238_9165.method1705(2, 120)) return false;
-            Class348_Sub40_Sub8.aClass238_9165.method1701(2, 0, (byte) 127, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+        if (TextureOpMandelbrot.anInt9341 == -2) {
+            if (!TextureOpPerlinNoise.aClass238_9165.method1705(2, 120)) return false;
+            TextureOpPerlinNoise.aClass238_9165.method1701(2, 0, (byte) 127, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
             Class299.aClass348_Sub49_Sub2_3813.pos = 0;
-            Class348_Sub40_Sub25.anInt9341 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
+            TextureOpMandelbrot.anInt9341 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             Class13.anInt221 += 2;
             Class348_Sub50.anInt7213 = 0;
         }
-        if (Class348_Sub40_Sub25.anInt9341 > 0) {
-            if (!Class348_Sub40_Sub8.aClass238_9165.method1705(Class348_Sub40_Sub25.anInt9341, 104)) return false;
+        if (TextureOpMandelbrot.anInt9341 > 0) {
+            if (!TextureOpPerlinNoise.aClass238_9165.method1705(TextureOpMandelbrot.anInt9341, 104)) return false;
             Class299.aClass348_Sub49_Sub2_3813.pos = 0;
-            Class348_Sub40_Sub8.aClass238_9165.method1701(Class348_Sub40_Sub25.anInt9341, 0, (byte) -123, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
-            Class13.anInt221 += Class348_Sub40_Sub25.anInt9341;
+            TextureOpPerlinNoise.aClass238_9165.method1701(TextureOpMandelbrot.anInt9341, 0, (byte) -123, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+            Class13.anInt221 += TextureOpMandelbrot.anInt9341;
             Class348_Sub50.anInt7213 = 0;
         }
-        Class348_Sub40_Sub36.aClass114_9456 = Option.aClass114_3145;
+        TextureOpWaveform.aClass114_9456 = Option.aClass114_3145;
         Option.aClass114_3145 = Class238.aClass114_3133;
         Class238.aClass114_3133 = Class348_Sub3.aClass114_6584;
         if (IOException_Sub1.aClass114_90 == Class348_Sub3.aClass114_6584) {
@@ -107,7 +107,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                     if (Class122.aStringArray1808[i_7_].equals(string_6_)) {
                         Class51.aStringArray932[i_7_] = string;
                         Class122.aStringArray1808[i_7_] = string_4_;
-                        Class348_Sub40_Sub21.aStringArray9275[i_7_] = string_5_;
+                        TextureOp37.aStringArray9275[i_7_] = string_5_;
                         aa_Sub2.aStringArray5197[i_7_] = string_6_;
                         break;
                     }
@@ -115,7 +115,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             } else {
                 Class51.aStringArray932[Class348_Sub42_Sub12.anInt9604] = string;
                 Class122.aStringArray1808[Class348_Sub42_Sub12.anInt9604] = string_4_;
-                Class348_Sub40_Sub21.aStringArray9275[(Class348_Sub42_Sub12.anInt9604)] = string_5_;
+                TextureOp37.aStringArray9275[(Class348_Sub42_Sub12.anInt9604)] = string_5_;
                 aa_Sub2.aStringArray5197[Class348_Sub42_Sub12.anInt9604] = string_6_;
                 Class367_Sub3.aBooleanArray7304[Class348_Sub42_Sub12.anInt9604] = Class139.method1166(i, 2) == 2;
                 Class348_Sub42_Sub12.anInt9604++;
@@ -161,8 +161,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         }
         if (bool != true) modeGame = null;
         if (Class348_Sub3.aClass114_6584 == Class116.aClass114_1762) {
-            Option_Sub4.aString5882 = (Class348_Sub40_Sub25.anInt9341 > 2 ? Class299.aClass348_Sub49_Sub2_3813.readString((byte) -119) : Class274.aClass274_3509.method2063(AnimBase.language, 544));
-            Class333.anInt4144 = (Class348_Sub40_Sub25.anInt9341 <= 0 ? -1 : Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944));
+            Option_Sub4.aString5882 = (TextureOpMandelbrot.anInt9341 > 2 ? Class299.aClass348_Sub49_Sub2_3813.readString((byte) -119) : Class274.aClass274_3509.method2063(AnimBase.language, 544));
+            Class333.anInt4144 = (TextureOpMandelbrot.anInt9341 <= 0 ? -1 : Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944));
             if (Class333.anInt4144 == 65535) Class333.anInt4144 = -1;
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -185,10 +185,10 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub40_Sub15.aClass114_9216 == Class348_Sub3.aClass114_6584) {
+        if (TextureOpMonochromeFill.aClass114_9216 == Class348_Sub3.aClass114_6584) {
             Class128.anInt1872 = Class299.aClass348_Sub49_Sub2_3813.readShort(13638);
             Class348_Sub3.aClass114_6584 = null;
-            Class348_Sub40_Sub23.anInt9313 = LoadingScreenRenderer.anInt3918;
+            TextureOpIrregularBricks.anInt9313 = LoadingScreenRenderer.anInt3918;
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class330.aClass114_4126) {
@@ -223,14 +223,14 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                     }
                 }
                 if (i <= 1) {
-                    if ((Class348_Sub40_Sub3.aBoolean9103 && !Class133.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_20_ = true;
+                    if ((TextureOpBinary.aBoolean9103 && !Class133.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_20_ = true;
                     else if (Class351.method3455(string_16_, 28280)) bool_20_ = true;
                 }
             } while (false);
             if (!bool_20_ && Class250.anInt3227 == 0) {
                 Class357.aLongArray4410[NPCDefinition.anInt1359] = l_19_;
                 NPCDefinition.anInt1359 = (1 + NPCDefinition.anInt1359) % 100;
-                String string_22_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136((byte) 64, Class299.aClass348_Sub49_Sub2_3813)), 23034));
+                String string_22_ = (Class59_Sub2_Sub2.method572((TextureOpInvert.method3136((byte) 64, Class299.aClass348_Sub49_Sub2_3813)), 23034));
                 if (i == 2 || i == 3) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_16_, string_22_, (byte) -126, -1, "<img=1>" + string, Option_Sub16.method1788((byte) -76, l), 9, 0, string);
                 else if (i != 1) Class318_Sub1_Sub3_Sub5.method2477(string_16_, string_22_, (byte) -125, -1, string, Option_Sub16.method1788((byte) -83, l), 9, 0, string);
                 else Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_16_, string_22_, (byte) -126, -1, "<img=0>" + string, Option_Sub16.method1788((byte) -75, l), 9, 0, string);
@@ -267,7 +267,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         }
         if (Class348_Sub3.aClass114_6584 == Option_Sub24.aClass114_6089) {
             Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813.readByteInverse(-622951480) << 3);
-            Class348_Sub40_Sub12.anInt9200 = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) -84);
+            TextureOpColourGradient.anInt9200 = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) -84);
             NPCTypeList.anInt3581 = (Class299.aClass348_Sub49_Sub2_3813.method3341(-8679) << 3);
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -297,7 +297,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class322.aClass114_4027 == Class348_Sub3.aClass114_6584) {
+        if (ColourImageCache.aClass114_4027 == Class348_Sub3.aClass114_6584) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
             if (i == 65535) i = -1;
             int i_28_ = Class299.aClass348_Sub49_Sub2_3813.readIntInverseMiddle(255);
@@ -331,7 +331,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class296.aClass114_3773) {
-            Class348_Sub40_Sub34.method3141(false, (byte) 11);
+            TextureOpColourEdgeDetector.method3141(false, (byte) 11);
             Class348_Sub3.aClass114_6584 = null;
             return false;
         }
@@ -363,7 +363,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                         int i_46_ = (!bool_41_ ? npc.anInt10269 : npc.anInt10291);
                         if (i_38_ != -1 && i_46_ != -1) {
                             if (i_46_ == i_38_) {
-                                Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 55, i_38_);
+                                Class368 class368 = TextureOpColourFill.gfxTypeList.method2543((byte) 55, i_38_);
                                 if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                                     AnimationType animationType = (Class10.animTypeList.method835(class368.anInt4503, 7));
                                     int i_47_ = animationType.replayMode;
@@ -372,8 +372,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                     } else bool_45_ = false;
                                 }
                             } else {
-                                Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 105, i_38_);
-                                Class368 class368_48_ = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 56, i_46_);
+                                Class368 class368 = TextureOpColourFill.gfxTypeList.method2543((byte) 105, i_38_);
+                                Class368 class368_48_ = TextureOpColourFill.gfxTypeList.method2543((byte) 56, i_46_);
                                 if (class368.anInt4503 != -1 && (class368_48_.anInt4503 != -1)) {
                                     AnimationType animationType = (Class10.animTypeList.method835(class368.anInt4503, 7));
                                     AnimationType animationType_49_ = (Class10.animTypeList.method835((class368_48_.anInt4503), 7));
@@ -393,7 +393,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                 npc.anInt10224 = 0;
                                 if (npc.anInt10211 > Class367_Sub11.anInt7396) npc.anInt10224 = -1;
                                 if (npc.anInt10291 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10211))) {
-                                    int i_51_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 103, (npc.anInt10291)).anInt4503);
+                                    int i_51_ = (TextureOpColourFill.gfxTypeList.method2543((byte) 103, (npc.anInt10291)).anInt4503);
                                     if (i_51_ != -1) {
                                         AnimationType animationType = Class10.animTypeList.method835(i_51_, 7);
                                         if (animationType != null && (animationType.frames) != null && !(npc.aBoolean10309)) Class287.method2178(npc, 0, animationType, -17);
@@ -410,7 +410,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                 npc.anInt10283 = 1;
                                 if (npc.anInt10225 > Class367_Sub11.anInt7396) npc.anInt10240 = -1;
                                 if (npc.anInt10269 != -1 && (Class367_Sub11.anInt7396 == (npc.anInt10225))) {
-                                    int i_50_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 87, (npc.anInt10269)).anInt4503);
+                                    int i_50_ = (TextureOpColourFill.gfxTypeList.method2543((byte) 87, (npc.anInt10269)).anInt4503);
                                     if (i_50_ != -1) {
                                         AnimationType animationType = Class10.animTypeList.method835(i_50_, 7);
                                         if (animationType != null && (animationType.frames) != null && !(npc.aBoolean10309)) Class287.method2178(npc, 0, animationType, -44);
@@ -430,7 +430,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                         int i_54_ = (!bool_41_ ? player.anInt10269 : player.anInt10291);
                         if (i_38_ != -1 && i_54_ != -1) {
                             if (i_38_ == i_54_) {
-                                Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 111, i_38_);
+                                Class368 class368 = TextureOpColourFill.gfxTypeList.method2543((byte) 111, i_38_);
                                 if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                                     AnimationType animationType = (Class10.animTypeList.method835(class368.anInt4503, 7));
                                     int i_57_ = animationType.replayMode;
@@ -439,8 +439,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                     } else bool_53_ = false;
                                 }
                             } else {
-                                Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 105, i_38_);
-                                Class368 class368_55_ = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 118, i_54_);
+                                Class368 class368 = TextureOpColourFill.gfxTypeList.method2543((byte) 105, i_38_);
+                                Class368 class368_55_ = TextureOpColourFill.gfxTypeList.method2543((byte) 118, i_54_);
                                 if (class368.anInt4503 != -1 && class368_55_.anInt4503 != -1) {
                                     AnimationType animationType = (Class10.animTypeList.method835(class368.anInt4503, 7));
                                     AnimationType animationType_56_ = (Class10.animTypeList.method835((class368_55_.anInt4503), 7));
@@ -461,7 +461,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                 if (player.anInt10211 > Class367_Sub11.anInt7396) player.anInt10224 = -1;
                                 if (player.anInt10291 == 65535) player.anInt10291 = -1;
                                 if ((player.anInt10291 != -1) && ((player.anInt10211) == Class367_Sub11.anInt7396)) {
-                                    int i_58_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 45, (player.anInt10291)).anInt4503);
+                                    int i_58_ = (TextureOpColourFill.gfxTypeList.method2543((byte) 45, (player.anInt10291)).anInt4503);
                                     if (i_58_ != -1) {
                                         AnimationType animationType = Class10.animTypeList.method835(i_58_, 7);
                                         if (animationType != null && (animationType.frames) != null && !(player.aBoolean10309)) Class287.method2178(player, 0, animationType, -120);
@@ -479,7 +479,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                                 if (player.anInt10269 == 65535) player.anInt10269 = -1;
                                 if (Class367_Sub11.anInt7396 < (player.anInt10225)) player.anInt10240 = -1;
                                 if ((player.anInt10269 != -1) && (Class367_Sub11.anInt7396 == (player.anInt10225))) {
-                                    int i_59_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 81, (player.anInt10269)).anInt4503);
+                                    int i_59_ = (TextureOpColourFill.gfxTypeList.method2543((byte) 81, (player.anInt10269)).anInt4503);
                                     if (i_59_ != -1) {
                                         AnimationType animationType = Class10.animTypeList.method835(i_59_, 7);
                                         if (animationType != null && (animationType.frames) != null && !(player.aBoolean10309)) Class287.method2178(player, 0, animationType, -101);
@@ -493,13 +493,13 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 int i_60_ = (i_40_ & 0x33705717) >> 28;
                 int i_61_ = -za_Sub2.regionTileX + ((0xffff4fe & i_40_) >> 14);
                 int i_62_ = -Class90.regionTileY + (0x3fff & i_40_);
-                if (i_61_ >= 0 && i_62_ >= 0 && Class367_Sub4.mapLength > i_61_ && Class348_Sub40_Sub3.mapWidth > i_62_) {
+                if (i_61_ >= 0 && i_62_ >= 0 && Class367_Sub4.mapLength > i_61_ && TextureOpBinary.mapWidth > i_62_) {
                     int i_63_ = 256 + 512 * i_61_;
                     int i_64_ = 512 * i_62_ + 256;
                     int i_65_ = i_60_;
                     if (i_65_ < 3 && NPCDefinition.method802(i_62_, i_61_, true)) i_65_++;
                     Class318_Sub1_Sub3_Sub4 class318_sub1_sub3_sub4 = (new Class318_Sub1_Sub3_Sub4(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + Class275.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_));
-                    r_Sub2.aClass262_10492.method1999(new Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180);
+                    r_Sub2.aDeque_10492.method1999(new Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180);
                 }
             }
             Class348_Sub3.aClass114_6584 = null;
@@ -515,7 +515,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         }
         if (Class348_Sub3.aClass114_6584 == Class74.aClass114_1234) {
             Class24.anInt359 = Class299.aClass348_Sub49_Sub2_3813.method3369((byte) 125);
-            Class348_Sub40_Sub3.aBoolean9103 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 1;
+            TextureOpBinary.aBoolean9103 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 1;
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -635,13 +635,13 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class172.aClass114_2279 == Class348_Sub3.aClass114_6584) {
-            Class348_Sub40_Sub34.method3141(Class223.aBoolean2895, (byte) 11);
+            TextureOpColourEdgeDetector.method3141(Class223.aBoolean2895, (byte) 11);
             Class348_Sub3.aClass114_6584 = null;
             return false;
         }
 
         if (Class367_Sub4.aClass114_7323 == Class348_Sub3.aClass114_6584) {
-            Class348_Sub16_Sub1.method2822(-101, Class299.aClass348_Sub49_Sub2_3813, Class348_Sub40_Sub25.anInt9341);
+            Class348_Sub16_Sub1.method2822(-101, Class299.aClass348_Sub49_Sub2_3813, TextureOpMandelbrot.anInt9341);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -695,11 +695,11 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             boolean bool_83_ = false;
             if (i <= 1) {
-                if (Class348_Sub40_Sub3.aBoolean9103 && !Class133.aBoolean1915 || Class50_Sub2.aBoolean5233) bool_83_ = true;
+                if (TextureOpBinary.aBoolean9103 && !Class133.aBoolean1915 || Class50_Sub2.aBoolean5233) bool_83_ = true;
                 else if (i <= 1 && Class351.method3455(string_82_, 28280)) bool_83_ = true;
             }
             if (!bool_83_ && Class250.anInt3227 == 0) {
-                String string_84_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136((byte) 64, Class299.aClass348_Sub49_Sub2_3813)), 23034));
+                String string_84_ = (Class59_Sub2_Sub2.method572((TextureOpInvert.method3136((byte) 64, Class299.aClass348_Sub49_Sub2_3813)), 23034));
                 if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_82_, string_84_, (byte) -119, -1, "<img=1>" + string, null, 24, 0, string);
                 else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_82_, string_84_, (byte) -119, -1, "<img=0>" + string, null, 24, 0, string);
                 else Class318_Sub1_Sub3_Sub5.method2477(string_82_, string_84_, (byte) -115, -1, string, null, 24, 0, string);
@@ -799,7 +799,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             if ((player.aString10544) != null && player.aClass154_10536 != null) {
                 boolean bool_94_ = false;
                 if (i_92_ <= 1) {
-                    if (!bool_93_ && ((Class348_Sub40_Sub3.aBoolean9103 && !Class133.aBoolean1915) || Class50_Sub2.aBoolean5233)) bool_94_ = true;
+                    if (!bool_93_ && ((TextureOpBinary.aBoolean9103 && !Class133.aBoolean1915) || Class50_Sub2.aBoolean5233)) bool_94_ = true;
                     else if (Class351.method3455(player.aString10544, 28280)) bool_94_ = true;
                 }
                 if (!bool_94_ && Class250.anInt3227 == 0) {
@@ -810,7 +810,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                         Class43 class43 = Class52.method490((byte) -104, (Class299.aClass348_Sub49_Sub2_3813));
                         i_95_ = class43.anInt615;
                         string = (class43.aClass348_Sub42_Sub10_614.method3216(Class299.aClass348_Sub49_Sub2_3813, (byte) 119));
-                    } else string = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136((byte) 64, Class299.aClass348_Sub49_Sub2_3813)), 23034));
+                    } else string = (Class59_Sub2_Sub2.method572((TextureOpInvert.method3136((byte) 64, Class299.aClass348_Sub49_Sub2_3813)), 23034));
                     player.aString10292 = string.trim();
                     player.anInt10201 = i_91_ >> 8;
                     player.anInt10234 = i_91_ & 0xff;
@@ -846,14 +846,14 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                     }
                 }
                 if (i <= 1) {
-                    if ((Class348_Sub40_Sub3.aBoolean9103 && !Class133.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_101_ = true;
+                    if ((TextureOpBinary.aBoolean9103 && !Class133.aBoolean1915) || Class50_Sub2.aBoolean5233) bool_101_ = true;
                     else if (Class351.method3455(string_98_, 28280)) bool_101_ = true;
                 }
             } while (false);
             if (!bool_101_ && Class250.anInt3227 == 0) {
                 Class357.aLongArray4410[NPCDefinition.anInt1359] = l_100_;
                 NPCDefinition.anInt1359 = (1 + NPCDefinition.anInt1359) % 100;
-                String string_103_ = (Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136((byte) 64, Class299.aClass348_Sub49_Sub2_3813)), 23034));
+                String string_103_ = (Class59_Sub2_Sub2.method572((TextureOpInvert.method3136((byte) 64, Class299.aClass348_Sub49_Sub2_3813)), 23034));
                 if (i == 2) Class318_Sub1_Sub3_Sub5.method2477("<img=1>" + string_98_, string_103_, (byte) -127, -1, "<img=1>" + string, null, 7, 0, string);
                 else if (i == 1) Class318_Sub1_Sub3_Sub5.method2477("<img=0>" + string_98_, string_103_, (byte) -115, -1, "<img=0>" + string, null, 7, 0, string);
                 else Class318_Sub1_Sub3_Sub5.method2477(string_98_, string_103_, (byte) -128, -1, string, null, 3, 0, string);
@@ -883,14 +883,14 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return false;
         }
         if (Class267.aClass114_3427 == Class348_Sub3.aClass114_6584) {
-            Class110.method1034(Class348_Sub40_Sub25.anInt9341, Class299.aClass348_Sub49_Sub2_3813, Class348_Sub23_Sub1.aClass297_8992, 110);
+            Class110.method1034(TextureOpMandelbrot.anInt9341, Class299.aClass348_Sub49_Sub2_3813, Class348_Sub23_Sub1.aClass297_8992, 110);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
         if (BillboardType.aClass114_2527 == Class348_Sub3.aClass114_6584) {
             boolean bool_108_ = (Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 1);
-            byte[] is = new byte[Class348_Sub40_Sub25.anInt9341 - 1];
-            Class299.aClass348_Sub49_Sub2_3813.method3389(2147483647, 0, (Class348_Sub40_Sub25.anInt9341) + -1, is);
+            byte[] is = new byte[TextureOpMandelbrot.anInt9341 - 1];
+            Class299.aClass348_Sub49_Sub2_3813.method3389(2147483647, 0, (TextureOpMandelbrot.anInt9341) + -1, is);
             Class184.method1385(bool_108_, is, (byte) -104);
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -905,9 +905,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         }
         if (ItemTypeList.aClass114_3265 == Class348_Sub3.aClass114_6584) {
             NPCTypeList.anInt3581 = (Class299.aClass348_Sub49_Sub2_3813.readByteInverse(-622951480) << 3);
-            Class348_Sub40_Sub12.anInt9200 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) 98);
+            TextureOpColourGradient.anInt9200 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) 98);
             Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813.readByteSubtract(-27697) << 3);
-            while ((Class299.aClass348_Sub49_Sub2_3813.pos) < Class348_Sub40_Sub25.anInt9341) {
+            while ((Class299.aClass348_Sub49_Sub2_3813.pos) < TextureOpMandelbrot.anInt9341) {
                 Class74 class74 = (ItemTypeList.method1929((byte) -19)[Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255)]);
                 InputStream_Sub2.method128(class74, (byte) 8); // batch update
             }
@@ -935,7 +935,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-117);
             int i_112_ = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -127);
-            Class348_Sub40_Sub15.method3084(i, (byte) -88, i_112_);
+            TextureOpMonochromeFill.method3084(i, (byte) -88, i_112_);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -988,14 +988,14 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 } else i_122_ = 0;
                 Class9.anInt167 = (i_122_ << 9) - -256;
                 if (i_123_ >= 0) {
-                    if (i_123_ >= Class348_Sub40_Sub3.mapWidth) i_123_ = Class348_Sub40_Sub3.mapWidth;
+                    if (i_123_ >= TextureOpBinary.mapWidth) i_123_ = TextureOpBinary.mapWidth;
                 } else i_123_ = 0;
                 Class318_Sub1_Sub5_Sub2.anInt10163 = 256 + (i_123_ << 9);
             }
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub3.aClass114_6584 == Class348_Sub40_Sub19.aClass114_9254) {
+        if (Class348_Sub3.aClass114_6584 == TextureOpHorizontalGradient.aClass114_9254) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) -88);
             int i_124_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(!bool);
             Class318_Sub1_Sub3_Sub3.timedVarDomain.method1316((byte) -58, i_124_, i);
@@ -1003,7 +1003,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class133.aClass114_1914 == Class348_Sub3.aClass114_6584) {
-            InputStream_Sub2.method128(Class348_Sub40_Sub38.aClass74_9475, (byte) 8); // gfx area
+            InputStream_Sub2.method128(TextureOpClamp.aClass74_9475, (byte) 8); // gfx area
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1045,8 +1045,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 }
             }
             for (int i = 0; Class348_Sub32.anInt6930 > i; i++) {
-                Class348_Sub40_Sub23.aClass348_Sub22Array9319[i].aNpc_6859.anIntArray10236 = null;
-                Class348_Sub40_Sub23.aClass348_Sub22Array9319[i].aNpc_6859.anInt10286 = -1;
+                TextureOpIrregularBricks.aClass348_Sub22Array9319[i].aNpc_6859.anIntArray10236 = null;
+                TextureOpIrregularBricks.aClass348_Sub22Array9319[i].aNpc_6859.anInt10286 = -1;
             }
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -1077,9 +1077,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 Class51.aStringArray932[i] = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -36);
                 Class122.aStringArray1808[i] = Class299.aClass348_Sub49_Sub2_3813.readString((byte) 112);
                 if (Class122.aStringArray1808[i].equals("")) Class122.aStringArray1808[i] = Class51.aStringArray932[i];
-                Class348_Sub40_Sub21.aStringArray9275[i] = Class299.aClass348_Sub49_Sub2_3813.readString((byte) 84);
+                TextureOp37.aStringArray9275[i] = Class299.aClass348_Sub49_Sub2_3813.readString((byte) 84);
                 aa_Sub2.aStringArray5197[i] = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -111);
-                if (aa_Sub2.aStringArray5197[i].equals("")) aa_Sub2.aStringArray5197[i] = Class348_Sub40_Sub21.aStringArray9275[i];
+                if (aa_Sub2.aStringArray5197[i].equals("")) aa_Sub2.aStringArray5197[i] = TextureOp37.aStringArray9275[i];
                 Class367_Sub3.aBooleanArray7304[i] = false;
             }
             Class126.anInt4985 = LoadingScreenRenderer.anInt3918;
@@ -1168,7 +1168,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub3.aClass114_6584 == Class348_Sub45.aClass114_7106) {
-            while ((Class299.aClass348_Sub49_Sub2_3813.pos) < Class348_Sub40_Sub25.anInt9341) {
+            while ((Class299.aClass348_Sub49_Sub2_3813.pos) < TextureOpMandelbrot.anInt9341) {
                 boolean bool_149_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 1;
                 String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -95);
                 String string_150_ = Class299.aClass348_Sub49_Sub2_3813.readString((byte) 118);
@@ -1180,7 +1180,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                     string_152_ = Class299.aClass348_Sub49_Sub2_3813.readString((byte) 119);
                     bool_153_ = (Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 1);
                 }
-                for (int i_154_ = 0; (i_154_ < Class348_Sub40_Sub30.anInt9383); i_154_++) {
+                for (int i_154_ = 0; (i_154_ < TextureOpHslAdjust.anInt9383); i_154_++) {
                     if (!bool_149_) {
                         if (string.equals(Class83.aStringArray1441[i_154_])) {
                             if (i != Toolkit.anIntArray4578[i_154_]) {
@@ -1215,20 +1215,20 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                         break;
                     }
                 }
-                if (string != null && Class348_Sub40_Sub30.anInt9383 < 200) {
-                    Class83.aStringArray1441[Class348_Sub40_Sub30.anInt9383] = string;
-                    Class286_Sub2.aStringArray6205[(Class348_Sub40_Sub30.anInt9383)] = string_150_;
-                    Toolkit.anIntArray4578[Class348_Sub40_Sub30.anInt9383] = i;
-                    Class285.aStringArray4744[Class348_Sub40_Sub30.anInt9383] = string_152_;
-                    Class172.anIntArray2280[Class348_Sub40_Sub30.anInt9383] = i_151_;
-                    Class122.aBooleanArray1806[Class348_Sub40_Sub30.anInt9383] = bool_153_;
-                    Class348_Sub40_Sub30.anInt9383++;
+                if (string != null && TextureOpHslAdjust.anInt9383 < 200) {
+                    Class83.aStringArray1441[TextureOpHslAdjust.anInt9383] = string;
+                    Class286_Sub2.aStringArray6205[(TextureOpHslAdjust.anInt9383)] = string_150_;
+                    Toolkit.anIntArray4578[TextureOpHslAdjust.anInt9383] = i;
+                    Class285.aStringArray4744[TextureOpHslAdjust.anInt9383] = string_152_;
+                    Class172.anIntArray2280[TextureOpHslAdjust.anInt9383] = i_151_;
+                    Class122.aBooleanArray1806[TextureOpHslAdjust.anInt9383] = bool_153_;
+                    TextureOpHslAdjust.anInt9383++;
                 }
             }
             Class125.anInt4930 = 2;
             Class126.anInt4985 = LoadingScreenRenderer.anInt3918;
             boolean bool_156_ = false;
-            int i = Class348_Sub40_Sub30.anInt9383;
+            int i = TextureOpHslAdjust.anInt9383;
             while (i > 0) {
                 i--;
                 bool_156_ = true;
@@ -1262,9 +1262,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         }
         if (Class59_Sub2_Sub2.aClass114_8683 == Class348_Sub3.aClass114_6584) {
             if (Class34.aFrame476 != null) Class85.method830(Class316.clientOptions.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
-            byte[] is = new byte[Class348_Sub40_Sub25.anInt9341];
-            Class299.aClass348_Sub49_Sub2_3813.method3409(Class348_Sub40_Sub25.anInt9341, is, 0, -32769);
-            String string = Class367_Sub8.method3546(is, 0, Class348_Sub40_Sub25.anInt9341, 0);
+            byte[] is = new byte[TextureOpMandelbrot.anInt9341];
+            Class299.aClass348_Sub49_Sub2_3813.method3409(TextureOpMandelbrot.anInt9341, is, 0, -32769);
+            String string = Class367_Sub8.method3546(is, 0, TextureOpMandelbrot.anInt9341, 0);
             Class179.method1360(string, Class348_Sub23_Sub1.aClass297_8992, Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 1, true, 99);
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -1314,7 +1314,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         }
 
         if (Class348_Sub3.aClass114_6584 == Class20.aClass114_318) {
-            Class348_Sub40_Sub26.method3120(-86);
+            TextureOpColourise.method3120(-86);
             Class348_Sub3.aClass114_6584 = null;
             return false;
         }
@@ -1386,10 +1386,10 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i_184_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             int i_185_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -125);
-            if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i] != null) {
+            if (TextureOpKaleidoscope.aClass46ArrayArray9427[i] != null) {
                 for (int i_186_ = i_184_; i_185_ > i_186_; i_186_++) {
                     int i_187_ = Class299.aClass348_Sub49_Sub2_3813.readMedium(-1);
-                    if ((Class348_Sub40_Sub33.aClass46ArrayArray9427[i]).length > i_186_ && (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_186_]) != null) Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_186_].anInt732 = i_187_;
+                    if ((TextureOpKaleidoscope.aClass46ArrayArray9427[i]).length > i_186_ && (TextureOpKaleidoscope.aClass46ArrayArray9427[i][i_186_]) != null) TextureOpKaleidoscope.aClass46ArrayArray9427[i][i_186_].anInt732 = i_187_;
                 }
             }
             Class348_Sub3.aClass114_6584 = null;
@@ -1401,7 +1401,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             return true;
         }
         if (Class348_Sub38.aClass114_7015 == Class348_Sub3.aClass114_6584) {
-            Class348_Sub40_Sub12.anInt9200 = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) 126);
+            TextureOpColourGradient.anInt9200 = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) 126);
             Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813.readByteInverse(-622951480) << 3);
             NPCTypeList.anInt3581 = (Class299.aClass348_Sub49_Sub2_3813.readByteInverse(-622951480) << 3);
             for (Class348_Sub37 class348_sub37 = (Class348_Sub37) Class130.aClass356_1895.method3484(0); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3482(0))) {
@@ -1410,13 +1410,13 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 int i_189_ = i_188_ + -za_Sub2.regionTileX;
                 int i_190_ = (int) (0x3fffL & (class348_sub37.aLong4291 >> 14));
                 int i_191_ = -Class90.regionTileY + i_190_;
-                if (i == Class348_Sub40_Sub12.anInt9200 && NPCTypeList.anInt3581 <= i_189_ && 8 + NPCTypeList.anInt3581 > i_189_ && Class73.anInt4786 <= i_191_ && Class73.anInt4786 - -8 > i_191_) {
+                if (i == TextureOpColourGradient.anInt9200 && NPCTypeList.anInt3581 <= i_189_ && 8 + NPCTypeList.anInt3581 > i_189_ && Class73.anInt4786 <= i_191_ && Class73.anInt4786 - -8 > i_191_) {
                     class348_sub37.method2715((byte) 89);
-                    if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.mapLength && (i_191_ < Class348_Sub40_Sub3.mapWidth)) Class203.method1479(i_191_, (byte) -118, i_189_, Class348_Sub40_Sub12.anInt9200);
+                    if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.mapLength && (i_191_ < TextureOpBinary.mapWidth)) Class203.method1479(i_191_, (byte) -118, i_189_, TextureOpColourGradient.anInt9200);
                 }
             }
-            for (Class348_Sub27 class348_sub27 = ((Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711.method1995(4)); class348_sub27 != null; class348_sub27 = (Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711.method1990((byte) 31)) {
-                if ((NPCTypeList.anInt3581 <= class348_sub27.anInt6905) && (class348_sub27.anInt6905 < NPCTypeList.anInt3581 - -8) && (class348_sub27.anInt6896 >= Class73.anInt4786) && (class348_sub27.anInt6896 < Class73.anInt4786 + 8) && (class348_sub27.anInt6899 == Class348_Sub40_Sub12.anInt9200))
+            for (Class348_Sub27 class348_sub27 = ((Class348_Sub27) Class348_Sub42_Sub20.aDeque_9711.method1995(4)); class348_sub27 != null; class348_sub27 = (Class348_Sub27) Class348_Sub42_Sub20.aDeque_9711.method1990((byte) 31)) {
+                if ((NPCTypeList.anInt3581 <= class348_sub27.anInt6905) && (class348_sub27.anInt6905 < NPCTypeList.anInt3581 - -8) && (class348_sub27.anInt6896 >= Class73.anInt4786) && (class348_sub27.anInt6896 < Class73.anInt4786 + 8) && (class348_sub27.anInt6899 == TextureOpColourGradient.anInt9200))
                     class348_sub27.anInt6893 = 0;
             }
             Class348_Sub3.aClass114_6584 = null;
@@ -1433,12 +1433,12 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub3.aClass114_6584 == Class348_Sub40_Sub22.aClass114_9285) {
+        if (Class348_Sub3.aClass114_6584 == TextureOpBricks.aClass114_9285) {
             VarcTypeList.anInt3306 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub40_Sub24.aClass114_9324 == Class348_Sub3.aClass114_6584) {
+        if (TextureOpSquareWaveform.aClass114_9324 == Class348_Sub3.aClass114_6584) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) -104);
             int i_194_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) -92);
             int i_195_ = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-127);
@@ -1456,9 +1456,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub40_Sub12.aClass114_9197 == Class348_Sub3.aClass114_6584) {
+        if (TextureOpColourGradient.aClass114_9197 == Class348_Sub3.aClass114_6584) {
             String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -43);
-            String string_198_ = Class59_Sub2_Sub2.method572((Class348_Sub40_Sub32.method3136((byte) 64, (Class299.aClass348_Sub49_Sub2_3813))), 23034);
+            String string_198_ = Class59_Sub2_Sub2.method572((TextureOpInvert.method3136((byte) 64, (Class299.aClass348_Sub49_Sub2_3813))), 23034);
             Class286_Sub2.method2144(string, 6, (byte) -101, 0, string_198_, string, string);
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -1498,7 +1498,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub3.aClass114_6584 == Class348_Sub40_Sub19.aClass114_9257) {
+        if (Class348_Sub3.aClass114_6584 == TextureOpHorizontalGradient.aClass114_9257) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readByteInverse((byte) 21);
             int i_202_ = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(127);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -125);
@@ -1515,7 +1515,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         if (Class348_Sub3.aClass114_6584 == Class260.aClass114_3307) {
             if (!Js5MasterIndex.method2672(Class240.mainLogicStep, -105)) Class289.anInt3699 = (Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944) * 30);
             else Class289.anInt3699 = (int) ((float) Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944) * 2.5F);
-            Class348_Sub40_Sub23.anInt9313 = LoadingScreenRenderer.anInt3918;
+            TextureOpIrregularBricks.anInt9313 = LoadingScreenRenderer.anInt3918;
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1580,7 +1580,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         }
         if (Class348_Sub3.aClass114_6584 == AnimationType.aClass114_250) {
             Class309.anInt4816 = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
-            Class348_Sub40_Sub23.anInt9313 = LoadingScreenRenderer.anInt3918;
+            TextureOpIrregularBricks.anInt9313 = LoadingScreenRenderer.anInt3918;
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -1608,16 +1608,16 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i = Class299.aClass348_Sub49_Sub2_3813.readShortAdd(10);
             int i_218_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByteSubtract((byte) 70);
             boolean bool_219_ = (0x1 & i_218_) == 1;
-            Class348_Sub40_Sub3.method3054(bool_219_, i, -128);
+            TextureOpBinary.method3054(bool_219_, i, -128);
             Class199.anIntArray2633[Class139.method1166(31, LoadingScreenOpFactory.anInt1631++)] = i;
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub40_Sub16.aClass114_9225 == Class348_Sub3.aClass114_6584) {
+        if (TextureOpCombine.aClass114_9225 == Class348_Sub3.aClass114_6584) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             int i_220_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             boolean bool_221_ = (i_220_ & 0x1) == 1;
-            while ((Class299.aClass348_Sub49_Sub2_3813.pos) < Class348_Sub40_Sub25.anInt9341) {
+            while ((Class299.aClass348_Sub49_Sub2_3813.pos) < TextureOpMandelbrot.anInt9341) {
                 int i_222_ = Class299.aClass348_Sub49_Sub2_3813.readSmart(-125);
                 int i_223_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
                 int i_224_ = 0;
@@ -1683,7 +1683,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         }
         if (Class348_Sub3.aClass114_6584 == Class359.aClass114_4421) {
             Class230.anInt2986 = LoadingScreenRenderer.anInt3918;
-            if (Class348_Sub40_Sub25.anInt9341 == 0) {
+            if (TextureOpMandelbrot.anInt9341 == 0) {
                 Class37.anInt496 = 0;
                 Class50.aString863 = null;
                 Class169.aClass19Array2261 = null;
@@ -1735,8 +1735,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        Class156.method1242(("T1 - " + (Class348_Sub3.aClass114_6584 == null ? -1 : Class348_Sub3.aClass114_6584.method1058((byte) 110)) + "," + (Option.aClass114_3145 == null ? -1 : Option.aClass114_3145.method1058((byte) 127)) + "," + (Class348_Sub40_Sub36.aClass114_9456 == null ? -1 : Class348_Sub40_Sub36.aClass114_9456.method1058((byte) 125)) + " - " + Class348_Sub40_Sub25.anInt9341), null, 15004);
-        Class348_Sub40_Sub34.method3141(false, (byte) 11);
+        Class156.method1242(("T1 - " + (Class348_Sub3.aClass114_6584 == null ? -1 : Class348_Sub3.aClass114_6584.method1058((byte) 110)) + "," + (Option.aClass114_3145 == null ? -1 : Option.aClass114_3145.method1058((byte) 127)) + "," + (TextureOpWaveform.aClass114_9456 == null ? -1 : TextureOpWaveform.aClass114_9456.method1058((byte) 125)) + " - " + TextureOpMandelbrot.anInt9341), null, 15004);
+        TextureOpColourEdgeDetector.method3141(false, (byte) 11);
         return true;
     }
 

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
+abstract class Class348_Sub42_Sub8 extends LinkedNode {
     int anInt9545;
     static int anInt9546;
     static int anInt9547;
@@ -69,10 +69,10 @@ abstract class Class348_Sub42_Sub8 extends Class348_Sub42 {
         Class132.aPlayer_1907 = new Player();
         Class132.aPlayer_1907.x = 512 * Class367_Sub4.mapLength / 2;
         Class132.aPlayer_1907.anIntArray10320[0] = Class367_Sub4.mapLength / 2;
-        Class132.aPlayer_1907.y = 512 * Class348_Sub40_Sub3.mapWidth / 2;
-        Class132.aPlayer_1907.anIntArray10317[0] = Class348_Sub40_Sub3.mapWidth / 2;
+        Class132.aPlayer_1907.y = 512 * TextureOpBinary.mapWidth / 2;
+        Class132.aPlayer_1907.anIntArray10317[0] = TextureOpBinary.mapWidth / 2;
         Class286_Sub4.anInt6246 = Class59_Sub2_Sub2.anInt8685 = 0;
-        if (Class348_Sub40_Sub21.anInt9282 == 2) {
+        if (TextureOp37.anInt9282 == 2) {
             Class286_Sub4.anInt6246 = Class348_Sub35.anInt6981 << 9;
             Class59_Sub2_Sub2.anInt8685 = Class275.anInt3550 << 9;
         } else Class348_Sub21.method2954((byte) 62);

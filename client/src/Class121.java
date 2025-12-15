@@ -70,7 +70,7 @@ final class Class121 {
             if (!Class286_Sub7.method2169(i_13_, i_13_, i_15_, i_13_, i_15_, i_14_, i_14_, i_10_, i_8_, false)) return false;
             if (!Class286_Sub7.method2169(i_13_, i_13_, i_15_, i_13_, i_8_, i_14_, i_10_, i_10_, i_8_, false)) return false;
         }
-        if (i_8_ >= Class348_Sub40_Sub27.anInt9360) {
+        if (i_8_ >= TextureOpInterpolate.anInt9360) {
             if (!Class286_Sub7.method2169(i_9_, i_13_, i_15_, i_9_, i_15_, i_14_, i_14_, i_10_, i_15_, false)) return false;
             return Class286_Sub7.method2169(i_9_, i_13_, i_15_, i_13_, i_15_, i_14_, i_10_, i_10_, i_15_, false);
         } else {

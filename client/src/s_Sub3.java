@@ -6,7 +6,7 @@ import jaclib.memory.Buffer;
 import jaclib.memory.Stream;
 
 final class s_Sub3 extends Ground {
-    private final Class262 aClass262_8286;
+    private final Deque aDeque_8286;
     static int anInt8287;
     static int anInt8288;
     static int anInt8289;
@@ -167,7 +167,7 @@ final class s_Sub3 extends Ground {
             Stream stream = new Stream(nativeheapbuffer_45_);
             Stream stream_46_ = new Stream(nativeheapbuffer);
             Class348_Sub3[] class348_sub3s_47_ = new Class348_Sub3[anInt8329];
-            int i_48_ = Class348_Sub40_Sub1.method3051(anInt8329 / 4, 4096);
+            int i_48_ = TextureOpBrightness.method3051(anInt8329 / 4, 4096);
             if (i_48_ < 1) i_48_ = 1;
             Class356 class356 = new Class356(i_48_);
             Class348_Sub3[] class348_sub3s_49_ = new Class348_Sub3[anInt8331];
@@ -448,7 +448,7 @@ final class s_Sub3 extends Ground {
 
     s_Sub3(NativeToolkit var_nativeToolkit, int i, int i_139_, int i_140_, int i_141_, int[][] is, int[][] is_142_, int i_143_) {
         super(i_140_, i_141_, i_143_, is);
-        aClass262_8286 = new Class262();
+        aDeque_8286 = new Deque();
         do {
             try {
                 anInt8302 = this.anInt4588 - 2;
@@ -534,7 +534,7 @@ final class s_Sub3 extends Ground {
                 Class101_Sub2 class101_sub2 = this.aNativeToolkit_8322.method3934(-97);
                 class101_sub2.method894(0, -1, 0);
                 this.aNativeToolkit_8322.method3915(0);
-                if (!aClass262_8286.method2002((byte) 18)) {
+                if (!aDeque_8286.method2002((byte) 18)) {
                     int i_165_ = this.aNativeToolkit_8322.anInt8144;
                     int i_166_ = this.aNativeToolkit_8322.anInt8091;
                     this.aNativeToolkit_8322.L(0, i_166_, this.aNativeToolkit_8322.anInt8105);
@@ -544,9 +544,9 @@ final class s_Sub3 extends Ground {
                     this.aNativeToolkit_8322.method3814(false, false, -2, (byte) 100);
                     this.aNativeToolkit_8322.method3850((byte) 63, (this.aNativeToolkit_8322.anInterface18_8147));
                     this.aNativeToolkit_8322.method3874(Class328_Sub3.aClass229_6519, 116, JavaThreadResource.aClass229_2207);
-                    this.aNativeToolkit_8322.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
+                    this.aNativeToolkit_8322.method3849((byte) 47, 0, TextureOpRasterizer.aClass70_9485);
                     this.aNativeToolkit_8322.method3885(0, true, Class285_Sub2.aClass70_8503);
-                    for (Node node = aClass262_8286.method1995(i_151_ + 5); node != null; node = aClass262_8286.method1990((byte) 106)) {
+                    for (Node node = aDeque_8286.method1995(i_151_ + 5); node != null; node = aDeque_8286.method1990((byte) 106)) {
                         Class348_Sub38 class348_sub38 = (Class348_Sub38) node;
                         class348_sub38.method3032(i_149_, i_153_, bools, false, i);
                     }
@@ -568,7 +568,7 @@ final class s_Sub3 extends Ground {
 
     final void method3981(Class348_Sub1 class348_sub1, int[] is) {
         try {
-            aClass262_8286.method1999(new Class348_Sub38((this.aNativeToolkit_8322), this, class348_sub1, is), -20180);
+            aDeque_8286.method1999(new Class348_Sub38((this.aNativeToolkit_8322), this, class348_sub1, is), -20180);
             anInt8287++;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qm.L(" + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
@@ -578,7 +578,7 @@ final class s_Sub3 extends Ground {
     final void U(int i, int i_167_, int[] is, int[] is_168_, int[] is_169_, int[] is_170_, int[] is_171_, int[] is_172_, int[] is_173_, int[] is_174_, int i_175_, int i_176_, int i_177_, boolean bool) {
         try {
             anInt8295++;
-            TextureSource var_d = this.aNativeToolkit_8322.aD4579;
+            TextureSource var_d = this.aNativeToolkit_8322.textureSource;
             if (is_170_ != null && anIntArrayArrayArray8314 == null) anIntArrayArrayArray8314 = new int[this.anInt4587][this.anInt4590][];
             if (is_168_ != null && anIntArrayArrayArray8308 == null) anIntArrayArrayArray8308 = new int[this.anInt4587][this.anInt4590][];
             this.anIntArrayArrayArray8321[i][i_167_] = is;

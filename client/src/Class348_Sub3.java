@@ -118,7 +118,7 @@ final class Class348_Sub3 extends Node {
     }
 
     static final void method2739(int i) {
-        Class348_Sub40_Sub13.aClass262_9201.method1996(98);
+        TextureOpMonochrome.aDeque_9201.clear(98);
         anInt6579++;
         Class348_Sub34.anInt6969 = i;
     }
@@ -135,7 +135,7 @@ final class Class348_Sub3 extends Node {
 
     final void method2741(int i, float f, int i_24_, int i_25_, int i_26_) {
         if (this.anInt6567 != -1) {
-            TextureMetrics textureMetrics = aNativeToolkit_6590.aD4579.getMetrics(this.anInt6567, -6662);
+            TextureMetrics textureMetrics = aNativeToolkit_6590.textureSource.getMetrics(this.anInt6567, -6662);
             int i_27_ = textureMetrics.aByte201 & 0xff;
             if (i_27_ != 0 && textureMetrics.effectType != 4) {
                 int i_28_;

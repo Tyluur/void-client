@@ -528,7 +528,7 @@ final class Sprite_Sub2 extends Sprite {
         anInt8449 = 0;
         try {
             aOpenGLToolkit_8430 = var_openGLToolkit;
-            aClass258_Sub3_Sub1_8434 = Class348_Sub40_Sub32.method3132(is, i_110_, i_111_, i_109_, i, var_openGLToolkit, false, (byte) 12);
+            aClass258_Sub3_Sub1_8434 = TextureOpInvert.method3132(is, i_110_, i_111_, i_109_, i, var_openGLToolkit, false, (byte) 12);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("nda.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + i + ',' + i_109_ + ',' + (is != null ? "{...}" : "null") + ',' + i_110_ + ',' + i_111_ + ')'));
         }

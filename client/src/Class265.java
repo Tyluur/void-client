@@ -67,6 +67,6 @@ final class Class265 implements Interface1 {
     public final boolean method8(byte i) {
         int i_8_ = -105 % ((25 - i) / 52);
         anInt4690++;
-        return aIndex_4694.method421(false, aClass120_4687.anInt4912);
+        return aIndex_4694.fileReady(false, aClass120_4687.anInt4912);
     }
 }

@@ -23,7 +23,7 @@ abstract class Matrix {
     abstract void method892(int i, int i_2_, int i_3_, int[] is);
 
     static final void method893(byte i) {
-        Class348_Sub40_Sub22.method3111(91, Class316.clientOptions.aClass239_Sub6_7226.method1743(-32350));
+        TextureOpBricks.method3111(91, Class316.clientOptions.aClass239_Sub6_7226.method1743(-32350));
         anInt1595++;
         int i_4_ = ((Class286_Sub4.anInt6246 >> 12) - -(za_Sub2.regionTileX >> 3));
         int i_5_ = ((Class90.regionTileY >> 3) + (Class59_Sub2_Sub2.anInt8685 >> 12));
@@ -31,7 +31,7 @@ abstract class Matrix {
         Class132.aPlayer_1907.method2449(8, 8, (byte) 118);
         if (i != -49) anInt1597 = 115;
         int index = 18;
-        Class322.mapNpcs = new int[index];
+        ColourImageCache.mapNpcs = new int[index];
         Class348_Sub50.aByteArrayArray7212 = new byte[index][];
         Option_Sub6.anIntArrayArray5894 = new int[index][4];
         aa_Sub1.mapTiles = new int[index];
@@ -45,15 +45,15 @@ abstract class Matrix {
         ModelParticleEmitter.aByteArrayArray1887 = new byte[index][];
         index = 0;
         for (int regionX = (i_4_ + -(Class367_Sub4.mapLength >> 4)) / 8; (i_4_ - -(Class367_Sub4.mapLength >> 4)) / 8 >= regionX; regionX++) {
-            for (int regionY = (-(Class348_Sub40_Sub3.mapWidth >> 4) + i_5_) / 8; ((i_5_ + (Class348_Sub40_Sub3.mapWidth >> 4)) / 8 >= regionY); regionY++) {
+            for (int regionY = (-(TextureOpBinary.mapWidth >> 4) + i_5_) / 8; ((i_5_ + (TextureOpBinary.mapWidth >> 4)) / 8 >= regionY); regionY++) {
                 int regionId = regionY + (regionX << 8);
                 Class348_Sub23_Sub3.mapRegionIds[index] = regionId;
                 aa_Sub1.mapTiles[index] = Class367_Sub10.MAPS.method417("m" + regionX + "_" + regionY, i + 49);
                 Applet_Sub1.mapLocations[index] = Class367_Sub10.MAPS.method417("l" + regionX + "_" + regionY, 0);
-                Class322.mapNpcs[index] = Class367_Sub10.MAPS.method417("n" + regionX + "_" + regionY, 0);
+                ColourImageCache.mapNpcs[index] = Class367_Sub10.MAPS.method417("n" + regionX + "_" + regionY, 0);
                 Class295.mapUndergroundTiles[index] = Class367_Sub10.MAPS.method417("um" + regionX + "_" + regionY, 0);
                 r.mapUndergroundLocations[index] = (Class367_Sub10.MAPS.method417("ul" + regionX + "_" + regionY, Class348_Sub21.method2955(i, -49)));
-                if (Class322.mapNpcs[index] == -1) {
+                if (ColourImageCache.mapNpcs[index] == -1) {
                     aa_Sub1.mapTiles[index] = -1;
                     Applet_Sub1.mapLocations[index] = -1;
                     Class295.mapUndergroundTiles[index] = -1;
@@ -62,8 +62,8 @@ abstract class Matrix {
                 index++;
             }
         }
-        for (int i_10_ = index; Class322.mapNpcs.length > i_10_; i_10_++) {
-            Class322.mapNpcs[i_10_] = -1;
+        for (int i_10_ = index; ColourImageCache.mapNpcs.length > i_10_; i_10_++) {
+            ColourImageCache.mapNpcs[i_10_] = -1;
             aa_Sub1.mapTiles[i_10_] = -1;
             Applet_Sub1.mapLocations[i_10_] = -1;
             Class295.mapUndergroundTiles[i_10_] = -1;
@@ -135,7 +135,7 @@ abstract class Matrix {
 
     static final void method909(int i) {
         anInt1598++;
-        if (Class348_Sub40_Sub30.aBoolean9403 && i == 3553) {
+        if (TextureOpHslAdjust.aBoolean9403 && i == 3553) {
             while (Class215.anInt2834 < StructTypeList.aClass110_Sub1Array1146.length) {
                 Class110_Sub1 class110_sub1 = StructTypeList.aClass110_Sub1Array1146[Class215.anInt2834];
                 if (class110_sub1 == null || class110_sub1.anInt5788 != -1) Class215.anInt2834++;

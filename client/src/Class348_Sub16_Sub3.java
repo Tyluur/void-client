@@ -301,7 +301,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
             int i_42_ = -123 % ((i_40_ - 24) / 42);
             aClass348_Sub43ArrayArray8928[i_41_][i_39_] = null;
             if ((this.anIntArray8895[i_41_] & 0x2) != 0) {
-                for (Class348_Sub43 class348_sub43_43_ = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1995(4)); class348_sub43_43_ != null; class348_sub43_43_ = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1990((byte) 36))) {
+                for (Class348_Sub43 class348_sub43_43_ = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method1995(4)); class348_sub43_43_ != null; class348_sub43_43_ = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method1990((byte) 36))) {
                     if ((class348_sub43_43_.anInt7067 == class348_sub43.anInt7067) && class348_sub43_43_.anInt7087 < 0 && class348_sub43 != class348_sub43_43_) {
                         class348_sub43.anInt7087 = 0;
                         break;
@@ -313,7 +313,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
 
     private final void method2850(int i, int i_44_) {
         if ((0x4 & this.anIntArray8895[i]) != 0) {
-            for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1995(4)); class348_sub43 != null; class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1990((byte) 65))) {
+            for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method1995(4)); class348_sub43 != null; class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method1990((byte) 65))) {
                 if (i == class348_sub43.anInt7067) class348_sub43.anInt7082 = 0;
             }
         }
@@ -399,7 +399,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
         method2849(64, i_50_, (byte) 86, i_51_);
         anInt8931++;
         if ((0x2 & this.anIntArray8895[i_51_]) != 0) {
-            for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1993(i ^ ~0x51)); class348_sub43 != null; class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method2003(-50))) {
+            for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.last(i ^ ~0x51)); class348_sub43 != null; class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method2003(-50))) {
                 if ((class348_sub43.anInt7067 == i_51_) && class348_sub43.anInt7087 < 0) {
                     aClass348_Sub43ArrayArray8928[i_51_][class348_sub43.anInt7071] = null;
                     aClass348_Sub43ArrayArray8928[i_51_][i_50_] = class348_sub43;
@@ -445,7 +445,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
                     }
                     aClass348_Sub43ArrayArray8915[i_51_][class348_sub43.anInt7088] = class348_sub43;
                 }
-                aClass348_Sub16_Sub1_8958.aClass262_8848.method1999(class348_sub43, i ^ ~0x4ed3);
+                aClass348_Sub16_Sub1_8958.aDeque_8848.method1999(class348_sub43, i ^ ~0x4ed3);
                 aClass348_Sub43ArrayArray8928[i_51_][i_50_] = class348_sub43;
             }
         }
@@ -462,7 +462,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
     private final void method2855(int i, byte i_56_) {
         anInt8927++;
         if (i_56_ < -42) {
-            for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1995(4)); class348_sub43 != null; class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1990((byte) 60))) {
+            for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method1995(4)); class348_sub43 != null; class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method1990((byte) 60))) {
                 if ((i < 0 || i == class348_sub43.anInt7067) && class348_sub43.anInt7087 < 0) {
                     aClass348_Sub43ArrayArray8928[class348_sub43.anInt7067][class348_sub43.anInt7071] = null;
                     class348_sub43.anInt7087 = 0;
@@ -533,7 +533,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
         anInt8893++;
         if (i >= -101) method2856((byte) -89);
         if ((this.anIntArray8895[i_62_] & 0x2) != 0) {
-            for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1995(4)); class348_sub43 != null; class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1990((byte) 41))) {
+            for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method1995(4)); class348_sub43 != null; class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method1990((byte) 41))) {
                 if ((class348_sub43.anInt7067 == i_62_) && (aClass348_Sub43ArrayArray8928[i_62_][class348_sub43.anInt7071]) == null && class348_sub43.anInt7087 < 0) class348_sub43.anInt7087 = 0;
             }
         }
@@ -795,7 +795,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
 
     private final void method2872(int i, int i_90_) {
         anInt8918++;
-        for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1995(i + -2005674596)); class348_sub43 != null; class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aClass262_8848.method1990((byte) 68))) {
+        for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method1995(i + -2005674596)); class348_sub43 != null; class348_sub43 = ((Class348_Sub43) aClass348_Sub16_Sub1_8958.aDeque_8848.method1990((byte) 68))) {
             if (i_90_ < 0 || (class348_sub43.anInt7067 == i_90_)) {
                 if (class348_sub43.aClass348_Sub16_Sub5_7081 != null) {
                     class348_sub43.aClass348_Sub16_Sub5_7081.method2902(Class22.anInt339 / 100);

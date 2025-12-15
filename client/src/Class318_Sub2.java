@@ -32,8 +32,8 @@ final class Class318_Sub2 extends Class318 {
                         } else if (Option_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                             Object object = null;
                             Class51 class51;
-                            if (class348_sub42_sub12.anInt9608 != 1001) class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) (0x7fffffffL & ((class348_sub42_sub12.aLong9605) >>> 32))));
-                            else class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
+                            if (class348_sub42_sub12.anInt9608 != 1001) class51 = (TextureOpColourGradient.objectTypeList.method2005(0, (int) (0x7fffffffL & ((class348_sub42_sub12.aLong9605) >>> 32))));
+                            else class51 = (TextureOpColourGradient.objectTypeList.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
                             if (class51.anIntArray945 != null) class51 = (class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47));
                             if (class51 != null) is = class51.anIntArray917;
                         }
@@ -41,7 +41,7 @@ final class Class318_Sub2 extends Class318 {
                 } else is = (Exception_Sub1.itemTypeList.method1940(-67, (int) (class348_sub42_sub12.aLong9605)).anIntArray2772);
                 String string = Class316.method2367((byte) 125, class348_sub42_sub12);
                 if (is != null) string += Class163.method1273(is, true);
-                Class262.aFontRenderer_3326.method2567(i_1_, string, (byte) 116, i_4_, 0, i_7_ - -3, Class341.aSpriteArray4234, Class175.anIntArray2330);
+                Deque.aFontRenderer_3326.method2567(i_1_, string, (byte) 116, i_4_, 0, i_7_ - -3, Class341.aSpriteArray4234, Class175.anIntArray2330);
                 if (!class348_sub42_sub12.aBoolean9597) break;
                 Option_Sub24.aSprite_6097.method974(Class369.aFontMetrics_4962.width(true, string) + (i_7_ - -5), -12 + i_1_);
             } catch (RuntimeException runtimeexception) {
@@ -148,7 +148,7 @@ final class Class318_Sub2 extends Class318 {
                         }
                     }
                     if (bool) {
-                        float f = (float) (Class348_Sub40_Sub27.anInt9360 - (class338.anIntArray4184[0]));
+                        float f = (float) (TextureOpInterpolate.anInt9360 - (class338.anIntArray4184[0]));
                         if (f < 0.0F) f *= -1.0F;
                         if (!(f < (float) Class11.anInt194) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338))
                             ClientScript.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
@@ -161,7 +161,7 @@ final class Class318_Sub2 extends Class318 {
                     if (i_27_ >= 0 && ((Class318_Sub1_Sub4_Sub1.anInt10084 - -Class318_Sub1_Sub4_Sub1.anInt10084) >= i_27_) && Class99.aBooleanArrayArray1572[i_26_][i_27_]) {
                         float f = (float) (MSITypeList.anInt1974 - (class338.anIntArray4187[0]));
                         if (f < 0.0F) f *= -1.0F;
-                        float f_28_ = (float) (Class348_Sub40_Sub27.anInt9360 + -(class338.anIntArray4184[0]));
+                        float f_28_ = (float) (TextureOpInterpolate.anInt9360 + -(class338.anIntArray4184[0]));
                         if (f_28_ < 0.0F) f_28_ *= -1.0F;
                         if ((!(f < (float) Class11.anInt194) || !((float) Class11.anInt194 > f_28_)) && Class354.method3465(0, 1, class338) && Class354.method3465(1, 1, class338) && Class354.method3465(2, 1, class338) && Class354.method3465(3, 1, class338))
                             ClientScript.aClass338Array9700[Class348_Sub42_Sub10.anInt9577++] = class338;
@@ -204,14 +204,14 @@ final class Class318_Sub2 extends Class318 {
 
     static final boolean method2499(int i, int i_35_, int i_36_, int i_37_, int i_38_, byte i_39_, int i_40_) {
         anInt6398++;
-        if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false;
+        if (!TextureOpIrregularBricks.aBoolean9307 || !Class23.aBoolean351) return false;
         if (Class225.anInt2946 < 100) return false;
         if (i_38_ == i_40_ && i_36_ == i_35_) {
             if (!aa_Sub2.method164(i, i_38_, (byte) -97, i_36_)) return false;
             int i_41_ = i_38_ << Class362.anInt4459;
             int i_42_ = i_36_ << Class362.anInt4459;
             if (Class121.method1084(i_37_, Class270.anInt3465, i_42_, i_41_, aa_Sub1.aGroundArray5191[i].tileHeight((byte) -86, i_36_, i_38_), Class270.anInt3465, 18507)) {
-                Class348_Sub40_Sub4.anInt9112++;
+                TextureOpVerticalGradient.anInt9112++;
                 return true;
             }
             return false;
@@ -225,7 +225,7 @@ final class Class318_Sub2 extends Class318 {
         int i_45_ = (i_38_ << Class362.anInt4459) + 1;
         int i_46_ = (i_36_ << Class362.anInt4459) + 2;
         if (!Class121.method1084(i_37_, (1 + -i_38_ + i_40_) * Class270.anInt3465, i_46_, i_45_, aa_Sub1.aGroundArray5191[i].tileHeight((byte) -86, i_36_, i_38_), Class270.anInt3465 * (i_35_ + -i_36_ + 1), 18507)) return false;
-        Class348_Sub40_Sub4.anInt9112++;
+        TextureOpVerticalGradient.anInt9112++;
         return true;
     }
 }

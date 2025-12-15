@@ -5,7 +5,7 @@
 import jaggl.OpenGL;
 
 final class Class286_Sub5 extends Class286 {
-    static TextureSource aD6247;
+    static TextureSource textureSource;
     static int anInt6248 = -1;
     static int anInt6249;
     static int anInt6250;
@@ -146,7 +146,7 @@ final class Class286_Sub5 extends Class286 {
         Option_Sub10.crossGroup = index.method417("cross", 0);
         Class113.mapDotsGround = index.method417("mapdots", 0);
         Class364.scrollBarGround = index.method417("scrollbar", 0);
-        Class348_Sub40_Sub38.nameIconsGroup = index.method417("name_icons", 0);
+        TextureOpClamp.nameIconsGroup = index.method417("name_icons", 0);
         QuestTypeList.floorShadowsGroup = index.method417("floorshadows", 0);
         Class52.compassGroup = index.method417("compass", 0);
         if (i > -72) method2161((byte) 106, 125L);
@@ -167,7 +167,7 @@ final class Class286_Sub5 extends Class286 {
 
     public static void method2160(int i) {
         if (i == 0) {
-            aD6247 = null;
+            textureSource = null;
             anIntArray6260 = null;
         }
     }

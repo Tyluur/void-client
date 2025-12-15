@@ -24,12 +24,12 @@ abstract class Class348_Sub23 extends Node {
             do {
                 if (i_0_ == 0) {
                     if (bool) return 0;
-                    return Class348_Sub40_Sub8.anInt9157;
+                    return TextureOpPerlinNoise.anInt9157;
                 } else if (i_0_ != 1) {
                     if (i_0_ == 2) break;
                     break while_128_;
                 }
-                return Class348_Sub40_Sub8.anInt9157;
+                return TextureOpPerlinNoise.anInt9157;
             } while (false);
             return 0;
         } while (false);
@@ -58,7 +58,7 @@ abstract class Class348_Sub23 extends Node {
         anInt6866++;
         QuestTypeList.method1406(true);
         if (i == 0) {
-            Class348_Sub8.active = Class104.method958(true, 0, Class348_Sub40_Sub4.js5TextureSource, Class316.clientOptions.aClass239_Sub20_7248.method1808(-32350) * 2, Class305.aCanvas3869, Class136.SHADERS);
+            Class348_Sub8.active = Class104.method958(true, 0, TextureOpVerticalGradient.js5TextureSource, Class316.clientOptions.aClass239_Sub20_7248.method1808(-32350) * 2, Class305.aCanvas3869, Class136.SHADERS);
             if (string != null) {
                 Class348_Sub8.active.GA(0);
                 FontMetrics fontMetrics = Option_Sub23.getFontMetrics(AnimationType.anInt235, 0, -117, Class104.FONT_INDEX);
@@ -69,7 +69,7 @@ abstract class Class348_Sub23 extends Node {
         } else {
             Toolkit var_toolkit = null;
             if (string != null) {
-                var_toolkit = Class104.method958(true, 0, Class348_Sub40_Sub4.js5TextureSource, 0, Class305.aCanvas3869, Class136.SHADERS);
+                var_toolkit = Class104.method958(true, 0, TextureOpVerticalGradient.js5TextureSource, 0, Class305.aCanvas3869, Class136.SHADERS);
                 var_toolkit.GA(0);
                 FontMetrics fontMetrics = Option_Sub23.getFontMetrics(AnimationType.anInt235, 0, -115, Class104.FONT_INDEX);
                 FontRenderer fontRenderer = var_toolkit.method3686(fontMetrics, Class207.method1519((Class21.SPRITES), AnimationType.anInt235, 0), true);
@@ -77,7 +77,7 @@ abstract class Class348_Sub23 extends Node {
                 Class362.method3511(true, fontRenderer, fontMetrics, string, i_1_ + 2, var_toolkit);
             }
             try {
-                Class348_Sub8.active = Class104.method958(true, i, Class348_Sub40_Sub4.js5TextureSource, 2 * Class316.clientOptions.aClass239_Sub20_7248.method1808(i_1_ + -32350), Class305.aCanvas3869, Class136.SHADERS);
+                Class348_Sub8.active = Class104.method958(true, i, TextureOpVerticalGradient.js5TextureSource, 2 * Class316.clientOptions.aClass239_Sub20_7248.method1808(i_1_ + -32350), Class305.aCanvas3869, Class136.SHADERS);
                 if (string != null) {
                     var_toolkit.GA(0);
                     FontMetrics fontMetrics = Option_Sub23.getFontMetrics(AnimationType.anInt235, 0, -51, Class104.FONT_INDEX);
@@ -88,7 +88,7 @@ abstract class Class348_Sub23 extends Node {
                 if (Class348_Sub8.active.method3693()) {
                     boolean bool_2_ = true;
                     try {
-                        bool_2_ = (Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory) > 256;
+                        bool_2_ = (TextureOpNoise.aClass348_Sub4_9264.totalMemory) > 256;
                     } catch (Throwable throwable) {
                         /* empty */
                     }
@@ -122,8 +122,8 @@ abstract class Class348_Sub23 extends Node {
         Class50_Sub1.aMatrix_5209 = Class348_Sub8.active.method3654();
         Class290.method2196((byte) -9);
         Class348_Sub8.active.method3630(Class316.clientOptions.aClass239_Sub2_7228.method1726(-32350) == 1);
-        if (Class348_Sub8.active.method3627()) Class348_Sub40_Sub33.method3137(Class316.clientOptions.aClass239_Sub12_7243.method1771(-32350) == 1, (byte) -24);
-        Class97.method873(Class367_Sub4.mapLength >> 3, 21719, Class348_Sub8.active, Class348_Sub40_Sub3.mapWidth >> 3);
+        if (Class348_Sub8.active.method3627()) TextureOpKaleidoscope.method3137(Class316.clientOptions.aClass239_Sub12_7243.method1771(-32350) == 1, (byte) -24);
+        Class97.method873(Class367_Sub4.mapLength >> 3, 21719, Class348_Sub8.active, TextureOpBinary.mapWidth >> 3);
         Class76.method773(true);
         r.aBoolean9719 = false;
         Class228.aClass57Array2974 = null;

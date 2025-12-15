@@ -4,7 +4,7 @@
 
 final class Class312 {
     private Node aNode_3922;
-    private Class262 aClass262_3923;
+    private Deque aDeque_3923;
     static int anInt3924;
     static Class114 aClass114_3925;
     static int anInt3926;
@@ -17,9 +17,9 @@ final class Class312 {
 
     final Node method2327(byte i) {
         anInt3929++;
-        Node node = (aClass262_3923.aNode_3334.aNode_4294);
+        Node node = (aDeque_3923.aNode_3334.aNode_4294);
         if (i != -53) method2329(-21);
-        if (aClass262_3923.aNode_3334 == node) {
+        if (aDeque_3923.aNode_3334 == node) {
             aNode_3922 = null;
             return null;
         }
@@ -27,17 +27,17 @@ final class Class312 {
         return node;
     }
 
-    final void method2328(Class262 class262, int i) {
+    final void method2328(Deque deque, int i) {
         anInt3927++;
         if (i <= 73) method2327((byte) -67);
-        aClass262_3923 = class262;
+        aDeque_3923 = deque;
     }
 
     final Node method2329(int i) {
         anInt3928++;
         if (i != 10) method2330((byte) -25);
         Node node = aNode_3922;
-        if (aClass262_3923.aNode_3334 == node) {
+        if (aDeque_3923.aNode_3334 == node) {
             aNode_3922 = null;
             return null;
         }
@@ -49,26 +49,26 @@ final class Class312 {
         Class348_Sub3.method2739(0);
         anInt3924++;
         if (i == 86) {
-            Class348_Sub40_Sub25.anInt9341 = 0;
-            Class348_Sub40_Sub36.aClass114_9456 = null;
+            TextureOpMandelbrot.anInt9341 = 0;
+            TextureOpWaveform.aClass114_9456 = null;
             Class299.aClass348_Sub49_Sub2_3813.pos = 0;
             Class238.aClass114_3133 = null;
             Option.aClass114_3145 = null;
             Class348_Sub50.anInt7213 = 0;
             Class348_Sub3.aClass114_6584 = null;
             Class289.anInt3699 = 0;
-            Class348_Sub40_Sub39.method3153(0);
-            Class348_Sub40_Sub37.method3147((byte) 27);
+            TextureOpRasterizer.method3153(0);
+            TextureOpBoxBlur.method3147((byte) 27);
             for (int i_0_ = 0; i_0_ < 2048; i_0_++)
                 Class294.aPlayerArray5058[i_0_] = null;
             Class132.aPlayer_1907 = null;
             for (int i_1_ = 0; Class348_Sub32.anInt6930 > i_1_; i_1_++) {
-                Npc npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_1_].aNpc_6859);
+                Npc npc = (TextureOpIrregularBricks.aClass348_Sub22Array9319[i_1_].aNpc_6859);
                 if (npc != null) npc.anInt10275 = -1;
             }
             Class363.method3515(i + 36);
             Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
-            Class348_Sub40_Sub21.anInt9282 = 1;
+            TextureOp37.anInt9282 = 1;
             Packet.setStep(2, 10);
             for (int i_2_ = 0; i_2_ < 100; i_2_++)
                 Class152.aBooleanArray2076[i_2_] = true;
@@ -93,8 +93,8 @@ final class Class312 {
         /* empty */
     }
 
-    Class312(Class262 class262) {
-        aClass262_3923 = class262;
+    Class312(Deque deque) {
+        aDeque_3923 = deque;
     }
 
     static {

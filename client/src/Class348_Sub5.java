@@ -65,9 +65,9 @@ abstract class Class348_Sub5 extends Node {
             try {
                 if (i >= 82) {
                     if (++Class169.anInt2264 > 2000) {
-                        if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                            Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                            Class348_Sub40_Sub8.aClass238_9165 = null;
+                        if (TextureOpPerlinNoise.aClass238_9165 != null) {
+                            TextureOpPerlinNoise.aClass238_9165.method1700((byte) 36);
+                            TextureOpPerlinNoise.aClass238_9165 = null;
                         }
                         if (Sprite_Sub1.anInt8398 >= 2) {
                             Class367_Sub2.anInt7297 = 0;
@@ -86,26 +86,26 @@ abstract class Class348_Sub5 extends Node {
                     if (Class367_Sub2.anInt7297 == 2) {
                         if (Class130_Sub1.aClass144_5800.anInt1997 == 2) throw new IOException();
                         if (Class130_Sub1.aClass144_5800.anInt1997 != 1) return;
-                        Class348_Sub40_Sub8.aClass238_9165 = Class348_Sub23_Sub3.method2982(((Socket) (Class130_Sub1.aClass144_5800.anObject1998)), (byte) 24, 7500);
+                        TextureOpPerlinNoise.aClass238_9165 = Class348_Sub23_Sub3.method2982(((Socket) (Class130_Sub1.aClass144_5800.anObject1998)), (byte) 24, 7500);
                         Class130_Sub1.aClass144_5800 = null;
                         Option_Sub18.method1802(0);
                         Class367_Sub2.anInt7297 = 4;
                     }
                     if (Class367_Sub2.anInt7297 == 4) {
-                        if (Class348_Sub40_Sub8.aClass238_9165.method1705(1, 104)) {
-                            Class348_Sub40_Sub8.aClass238_9165.method1701(1, 0, (byte) -116, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
+                        if (TextureOpPerlinNoise.aClass238_9165.method1705(1, 104)) {
+                            TextureOpPerlinNoise.aClass238_9165.method1701(1, 0, (byte) -116, (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154));
                             int i_11_ = 0xff & (Class299.aClass348_Sub49_Sub2_3813.aByteArray7154[0]);
                             Class352.anInt4337 = i_11_;
                             Class367_Sub2.anInt7297 = 0;
-                            Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                            Class348_Sub40_Sub8.aClass238_9165 = null;
+                            TextureOpPerlinNoise.aClass238_9165.method1700((byte) 36);
+                            TextureOpPerlinNoise.aClass238_9165 = null;
                         }
                     }
                 }
             } catch (IOException ioexception) {
-                if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                    Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                    Class348_Sub40_Sub8.aClass238_9165 = null;
+                if (TextureOpPerlinNoise.aClass238_9165 != null) {
+                    TextureOpPerlinNoise.aClass238_9165.method1700((byte) 36);
+                    TextureOpPerlinNoise.aClass238_9165 = null;
                 }
                 if (Sprite_Sub1.anInt8398 < 2) {
                     ItemTypeList.aClass161_3285.method1259(0);

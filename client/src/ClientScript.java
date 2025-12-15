@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class ClientScript extends Class348_Sub42 {
+final class ClientScript extends LinkedNode {
     static Class351 aClass351_9687 = new Class351(14, -1);
     int intVariableCount;
     int stringVariableCount;

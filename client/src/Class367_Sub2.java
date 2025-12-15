@@ -126,7 +126,7 @@ final class Class367_Sub2 extends Class367 {
                         for (int i_10_ = i; Class348_Sub42_Sub12.anInt9604 > i_10_; i_10_++) {
                             Class51.aStringArray932[i_10_] = Class51.aStringArray932[i_10_ + 1];
                             Class122.aStringArray1808[i_10_] = Class122.aStringArray1808[1 + i_10_];
-                            Class348_Sub40_Sub21.aStringArray9275[i_10_] = (Class348_Sub40_Sub21.aStringArray9275[1 + i_10_]);
+                            TextureOp37.aStringArray9275[i_10_] = (TextureOp37.aStringArray9275[1 + i_10_]);
                             aa_Sub2.aStringArray5197[i_10_] = aa_Sub2.aStringArray5197[1 + i_10_];
                             Class367_Sub3.aBooleanArray7304[i_10_] = Class367_Sub3.aBooleanArray7304[i_10_ - -1];
                         }

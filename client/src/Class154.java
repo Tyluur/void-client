@@ -524,7 +524,7 @@ final class Class154 {
     private final void method1234(int i) {
         anInt2096++;
         aLong2102 = -1L;
-        long[] ls = Class348_Sub40_Sub21.aLongArray9283;
+        long[] ls = TextureOp37.aLongArray9283;
         aLong2102 = ls[(int) (((long) (anInt2103 >> 8) ^ aLong2102) & 0xffL)] ^ aLong2102 >>> 8;
         if (i > -6) aLong2094 = 43L;
         aLong2102 = aLong2102 >>> 8 ^ ls[(int) (0xffL & ((long) anInt2103 ^ aLong2102))];

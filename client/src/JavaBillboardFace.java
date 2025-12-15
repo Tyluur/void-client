@@ -56,7 +56,7 @@ final class JavaBillboardFace {
 
     static final void method204(int i) {
         anInt155++;
-        while (Class299.aClass348_Sub49_Sub2_3813.method3415(-62, Class348_Sub40_Sub25.anInt9341) >= 15) {
+        while (Class299.aClass348_Sub49_Sub2_3813.method3415(-62, TextureOpMandelbrot.anInt9341) >= 15) {
             int i_18_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 15);
             if (i_18_ == 32767) break;
             boolean bool = false;
@@ -67,7 +67,7 @@ final class JavaBillboardFace {
                 class348_sub22 = new Class348_Sub22(npc);
                 Class282.aClass356_3654.method3483((byte) 57, i_18_, class348_sub22);
                 bool = true;
-                Class348_Sub40_Sub23.aClass348_Sub22Array9319[Class348_Sub32.anInt6930++] = class348_sub22;
+                TextureOpIrregularBricks.aClass348_Sub22Array9319[Class348_Sub32.anInt6930++] = class348_sub22;
             }
             Npc npc = (class348_sub22.aNpc_6859);
             Class74.anIntArray1233[IDKTypeList.anInt2057++] = i_18_;
@@ -140,7 +140,7 @@ final class JavaBillboardFace {
                     if (Class369_Sub2.anInt8587 > 1) i_40_ += ((Class369_Sub2.anInt8587 + (-1 + -Class284.anInt3676)) * (i_38_ - i_39_) / (Class369_Sub2.anInt8587 + -1));
                     var_toolkit.aa(-16 + (Class321.anInt4017 + i_35_), i_36_ + i_40_, 12, i_39_, 0x332277 | Class168.anInt2254 << 24, 2);
                     for (int i_41_ = Class284.anInt3676; ((i_41_ < i_37_ + Class284.anInt3676) && Class369_Sub2.anInt8587 > i_41_); i_41_++) {
-                        String[] strings = (Class348_Sub40_Sub23.method3113('\010', true, Class286_Sub1.aStringArray6200[i_41_]));
+                        String[] strings = (TextureOpIrregularBricks.method3113('\010', true, Class286_Sub1.aStringArray6200[i_41_]));
                         int i_42_ = (-16 + Class321.anInt4017 + -8) / strings.length;
                         for (int i_43_ = 0; i_43_ < strings.length; i_43_++) {
                             int i_44_ = i_42_ * i_43_ + 8;
@@ -152,7 +152,7 @@ final class JavaBillboardFace {
                 Class240.aFontRenderer_4684.method2569("Build: 634", 350 + (i_36_ + -20), -1, (Class321.anInt4017 + i_35_ + -25), -121, -16777216);
                 var_toolkit.KA(i_35_, i_36_, i_35_ - -Class321.anInt4017, i_36_ - -350);
                 var_toolkit.method3649((byte) -80, Class321.anInt4017, -Class348_Sub31_Sub2.anInt9077 + (350 + i_36_), -1, i_35_);
-                Class262.aFontRenderer_3326.method2576("--> " + Class250.method1909((byte) 31, Class363.aString4461), -1, (i_36_ - (-350 + Class369.aFontMetrics_4962.bottomPadding) - 1), 10 + i_35_, -16777216, -127);
+                Deque.aFontRenderer_3326.method2576("--> " + Class250.method1909((byte) 31, Class363.aString4461), -1, (i_36_ - (-350 + Class369.aFontMetrics_4962.bottomPadding) - 1), 10 + i_35_, -16777216, -127);
                 if (!Class175.aBoolean2329) break;
                 int i_45_ = -1;
                 if (Class367_Sub11.anInt7396 % 30 > 15) i_45_ = 16777215;

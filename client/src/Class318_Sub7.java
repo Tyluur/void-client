@@ -159,7 +159,7 @@ final class Class318_Sub7 extends Class318 {
                     Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, 12871);
                     Class348_Sub15.method2811(false);
                     Class75.method760();
-                    Class289.aClass262_3705 = new Class262();
+                    Class289.aDeque_3705 = new Deque();
                     Class75.anInt1250 += (int) (Math.random() * 5.0) + -2;
                     if (Class75.anInt1250 < -8) Class75.anInt1250 = -8;
                     if (Class75.anInt1250 > 8) Class75.anInt1250 = 8;
@@ -241,8 +241,8 @@ final class Class318_Sub7 extends Class318 {
         do {
             try {
                 if (!this.aBoolean6446) {
-                    if (Class348_Sub6.anInt6637 < (this.aClass181_6441.anInt2379)) bool = false;
-                    else if (Class292.anInt4797 <= (Class275.anIntArray3551[Class348_Sub6.anInt6637])) {
+                    if (MonochromeImageCacheSlot.anInt6637 < (this.aClass181_6441.anInt2379)) bool = false;
+                    else if (Class292.anInt4797 <= (Class275.anIntArray3551[MonochromeImageCacheSlot.anInt6637])) {
                         if (!aBoolean6453) {
                             if (this.aClass181_6441.anInt2425 != -1) {
                                 int i_10_ = (int) (-aLong6435 + l);

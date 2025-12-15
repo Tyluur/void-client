@@ -47,7 +47,7 @@ final class Class348_Sub12 extends Node {
         anInt6734++;
         if (i_10_ >= 118) {
             Class348_Sub27 class348_sub27 = null;
-            for (Class348_Sub27 class348_sub27_12_ = ((Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711.method1995(4)); class348_sub27_12_ != null; class348_sub27_12_ = (Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711.method1990((byte) 50)) {
+            for (Class348_Sub27 class348_sub27_12_ = ((Class348_Sub27) Class348_Sub42_Sub20.aDeque_9711.method1995(4)); class348_sub27_12_ != null; class348_sub27_12_ = (Class348_Sub27) Class348_Sub42_Sub20.aDeque_9711.method1990((byte) 50)) {
                 if ((class348_sub27_12_.anInt6899 == i) && i_11_ == class348_sub27_12_.anInt6905 && i_4_ == class348_sub27_12_.anInt6896 && (class348_sub27_12_.anInt6904 == i_7_)) {
                     class348_sub27 = class348_sub27_12_;
                     break;
@@ -59,8 +59,8 @@ final class Class348_Sub12 extends Node {
                 class348_sub27.anInt6904 = i_7_;
                 class348_sub27.anInt6896 = i_4_;
                 class348_sub27.anInt6905 = i_11_;
-                if (i_11_ >= 0 && i_4_ >= 0 && Class367_Sub4.mapLength > i_11_ && Class348_Sub40_Sub3.mapWidth > i_4_) Class184.method1387(-69, class348_sub27);
-                Class348_Sub42_Sub20.aClass262_9711.method1999(class348_sub27, -20180);
+                if (i_11_ >= 0 && i_4_ >= 0 && Class367_Sub4.mapLength > i_11_ && TextureOpBinary.mapWidth > i_4_) Class184.method1387(-69, class348_sub27);
+                Class348_Sub42_Sub20.aDeque_9711.method1999(class348_sub27, -20180);
             }
             class348_sub27.anInt6893 = i_5_;
             class348_sub27.anInt6900 = i_8_;

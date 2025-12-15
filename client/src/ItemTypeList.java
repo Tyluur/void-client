@@ -36,7 +36,7 @@ final class ItemTypeList {
     static final Class74[] method1929(byte i) {
         if (i != -19) method1933(null, null, false);
         anInt3280++;
-        return (new Class74[]{Class348_Sub42_Sub8_Sub2.aClass74_10437, Class348_Sub26.aClass74_6891, Class265.aClass74_4689, Class374.aClass74_4537, Class327.aClass74_4098, MeshBillboard.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, Class348_Sub35.aClass74_6977, Class286_Sub1.aClass74_6201, Class91.aClass74_1519, Class348_Sub16_Sub1.aClass74_8853, Class348_Sub40_Sub38.aClass74_9475, Class186.aClass74_2491});
+        return (new Class74[]{Class348_Sub42_Sub8_Sub2.aClass74_10437, Class348_Sub26.aClass74_6891, Class265.aClass74_4689, Class374.aClass74_4537, Class327.aClass74_4098, MeshBillboard.aClass74_2157, Class59_Sub1_Sub2.aClass74_8662, Class39.aClass74_515, Class348_Sub35.aClass74_6977, Class286_Sub1.aClass74_6201, Class91.aClass74_1519, Class348_Sub16_Sub1.aClass74_8853, TextureOpClamp.aClass74_9475, Class186.aClass74_2491});
     }
 
     final void method1930(int i) {
@@ -126,9 +126,9 @@ final class ItemTypeList {
             for (int i = 0; class207s.length > i; i++)
                 SkyBoxSphereTypeList.aSpriteArray367[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Option_Sub10.crossGroup, 0);
-            Class348_Sub40_Sub37.aSpriteArray9467 = new Sprite[class207s.length];
+            TextureOpBoxBlur.aSpriteArray9467 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
-                Class348_Sub40_Sub37.aSpriteArray9467[i] = var_toolkit.method3691(class207s[i], true);
+                TextureOpBoxBlur.aSpriteArray9467[i] = var_toolkit.method3691(class207s[i], true);
             class207s = Class207.method1519(index, Class113.mapDotsGround, 0);
             Class348_Sub12.aSpriteArray6742 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
@@ -137,7 +137,7 @@ final class ItemTypeList {
             Class240.aSpriteArray4679 = new Sprite[class207s.length];
             for (int i = 0; i < class207s.length; i++)
                 Class240.aSpriteArray4679[i] = var_toolkit.method3691(class207s[i], true);
-            class207s = Class207.method1519(index, Class348_Sub40_Sub38.nameIconsGroup, 0);
+            class207s = Class207.method1519(index, TextureOpClamp.nameIconsGroup, 0);
             Class113.aSpriteArray1744 = new Sprite[class207s.length];
             for (int i = 0; class207s.length > i; i++)
                 Class113.aSpriteArray1744[i] = var_toolkit.method3691(class207s[i], true);

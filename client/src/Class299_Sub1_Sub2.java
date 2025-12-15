@@ -21,7 +21,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
             anInt8703++;
             boolean bool = true;
             Class206 class206 = aOpenGLToolkit_8707.aClass206_7778;
-            aOpenGLToolkit_8707.K(Class348_Sub6.anIntArray6635);
+            aOpenGLToolkit_8707.K(MonochromeImageCacheSlot.anIntArray6635);
             aOpenGLToolkit_8707.la();
             aOpenGLToolkit_8707.method3755(-32);
             OpenGL.glMatrixMode(5889);
@@ -169,7 +169,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
             aOpenGLToolkit_8707.method3738(-15039, 0);
             aOpenGLToolkit_8707.method3771((byte) -88, null);
             OpenGL.glPopAttrib();
-            aOpenGLToolkit_8707.KA(Class348_Sub6.anIntArray6635[0], Class348_Sub6.anIntArray6635[1], Class348_Sub6.anIntArray6635[2], Class348_Sub6.anIntArray6635[3]);
+            aOpenGLToolkit_8707.KA(MonochromeImageCacheSlot.anIntArray6635[0], MonochromeImageCacheSlot.anIntArray6635[1], MonochromeImageCacheSlot.anIntArray6635[2], MonochromeImageCacheSlot.anIntArray6635[3]);
             if (bool && !aOpenGLToolkit_8707.aBoolean7847) aClass258_Sub2_8701.method1950(69);
             return bool;
         } catch (RuntimeException runtimeexception) {

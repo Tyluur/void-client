@@ -160,7 +160,7 @@ final class Class367_Sub8 extends Class367 {
             class101_sub2_21_.method898(class101_sub2);
             class101_sub2_21_.method914(0.125F, 1.0F, 0, 0.125F);
             class101_sub2_21_.method920(0.0F, false, aFloat7350, 0.0F);
-            this.aNativeToolkit_4479.method3853(-32, Class348_Sub40_Sub38.aClass251_9477);
+            this.aNativeToolkit_4479.method3853(-32, TextureOpClamp.aClass251_9477);
             this.aNativeToolkit_4479.method3897(0, -4382);
         }
         anInt7352++;
@@ -182,7 +182,7 @@ final class Class367_Sub8 extends Class367 {
         this.aNativeToolkit_4479.method3910((byte) -26, 0);
         this.aNativeToolkit_4479.method3897(0, -4382);
         this.aNativeToolkit_4479.method3894(-28186, -16777216);
-        this.aNativeToolkit_4479.method3885(0, true, Class348_Sub40_Sub39.aClass70_9485);
+        this.aNativeToolkit_4479.method3885(0, true, TextureOpRasterizer.aClass70_9485);
         method3532(10425);
         if (i != 15192) aShort7355 = (short) 106;
     }

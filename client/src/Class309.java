@@ -33,7 +33,7 @@ final class Class309 implements Interface7 {
             int i_4_ = 0x7fffffff & (int) (l >>> 32);
             if (i_2_ != 10 && i_2_ != 11 && i_2_ != 22) Class298.method2252(true, i_0_, i, (byte) -119, 0, 0, 0, i_2_, i_3_);
             else {
-                Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, i_4_);
+                Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, i_4_);
                 int i_5_;
                 int i_6_;
                 if (i_3_ == 0 || i_3_ == 2) {
@@ -101,13 +101,13 @@ final class Class309 implements Interface7 {
         int i_13_ = 126 / ((i - -54) / 38);
     }
 
-    static final void method2312(int i, int i_14_, Class262 class262, int i_15_, Toolkit var_toolkit) {
+    static final void method2312(int i, int i_14_, Deque deque, int i_15_, Toolkit var_toolkit) {
         do {
             try {
                 anInt4811++;
-                Class289.aClass262_3705.method1996(125);
+                Class289.aDeque_3705.clear(125);
                 if (!Class348_Sub1_Sub1.aBoolean8805) {
-                    for (Class348_Sub21 class348_sub21 = (Class348_Sub21) class262.method1995(4); class348_sub21 != null; class348_sub21 = ((Class348_Sub21) class262.method1990((byte) 104))) {
+                    for (Class348_Sub21 class348_sub21 = (Class348_Sub21) deque.method1995(4); class348_sub21 != null; class348_sub21 = ((Class348_Sub21) deque.method1990((byte) 104))) {
                         Class42 class42 = (Class75.aMapElementTypeList_1238.method1225(class348_sub21.anInt6847, (byte) 82));
                         if (Class60.method589(class42, -4)) {
                             boolean bool = Class190.method1425((byte) -31, class42, class348_sub21, i_14_, var_toolkit, i_15_);
@@ -118,7 +118,7 @@ final class Class309 implements Interface7 {
                     aStringArray4818 = null;
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (class262 != null ? "{...}" : "null") + ',' + i_15_ + ',' + (var_toolkit != null ? "{...}" : "null") + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("cf.G(" + i + ',' + i_14_ + ',' + (deque != null ? "{...}" : "null") + ',' + i_15_ + ',' + (var_toolkit != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);

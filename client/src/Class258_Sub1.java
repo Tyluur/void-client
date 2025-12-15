@@ -54,11 +54,11 @@ final class Class258_Sub1 extends Class258 {
     static final void method1960(int i, int i_12_, int i_13_, int i_14_, byte[][][] is, int[] is_15_, int[] is_16_, int[] is_17_, int[] is_18_, int[] is_19_, int i_20_, byte i_21_, int i_22_, int i_23_, boolean bool, boolean bool_24_, int i_25_, int i_26_, boolean bool_27_) {
         Class23.aBoolean351 = true;
         Class318_Sub1_Sub3_Sub3.aBoolean10221 = Class9.aToolkit171.method3704() > 0;
-        Class348_Sub40_Sub17.aBoolean9242 = bool_24_;
+        TextureOpSprite.aBoolean9242 = bool_24_;
         Option_Sub25.anInt6111 = i_12_ >> Class362.anInt4459;
         Class285_Sub2.anInt8502 = i_14_ >> Class362.anInt4459;
         MSITypeList.anInt1974 = i_12_;
-        Class348_Sub40_Sub27.anInt9360 = i_14_;
+        TextureOpInterpolate.anInt9360 = i_14_;
         Class232.anInt3006 = i_13_;
         Class37.anInt492 = Option_Sub25.anInt6111 - Class318_Sub1_Sub4_Sub1.anInt10084;
         if (Class37.anInt492 < 0) {
@@ -76,7 +76,7 @@ final class Class258_Sub1 extends Class258 {
         if (Class59_Sub1.anInt5293 > Class348_Sub41.anInt7054) Class59_Sub1.anInt5293 = Class348_Sub41.anInt7054;
         boolean[][] bools = Class99.aBooleanArrayArray1572;
         boolean[][] bools_28_ = Class348_Sub8.aBooleanArrayArray6656;
-        if (Class348_Sub40_Sub17.aBoolean9242) {
+        if (TextureOpSprite.aBoolean9242) {
             for (int i_29_ = 0; i_29_ < (Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2); i_29_++) {
                 int i_30_ = 0;
                 int i_31_ = 0;
@@ -141,43 +141,43 @@ final class Class258_Sub1 extends Class258 {
             for (int i_42_ = 0; i_42_ < Class331.anInt4135; i_42_++)
                 Option_Sub14.aClass211Array5993[i_42_].method1544(8688, bool, i);
         }
-        if (Class348_Sub40_Sub5.aBoolean9121) {
+        if (TextureOpVoronoiNoise.aBoolean9121) {
             Class52.anIntArray4906 = Class9.aToolkit171.Y();
-            Class9.aToolkit171.K(Class348_Sub40_Sub10.anIntArray9183);
-            int i_43_ = ((Class348_Sub40_Sub10.anIntArray9183[2] - Class348_Sub40_Sub10.anIntArray9183[0]) / Class75_Sub1.anInt5652);
+            Class9.aToolkit171.K(TextureOpRange.anIntArray9183);
+            int i_43_ = ((TextureOpRange.anIntArray9183[2] - TextureOpRange.anIntArray9183[0]) / Class75_Sub1.anInt5652);
             for (int i_44_ = 0; i_44_ < Class75_Sub1.anInt5652 - 1; i_44_++)
                 AnimationType.anIntArray256[i_44_] = i_43_ * (i_44_ + 1) + Class345.anIntArray4271[i_44_];
-            for (int i_45_ = 0; i_45_ < Class348_Sub40_Sub34.aClass293Array9432.length; i_45_++)
-                Class348_Sub40_Sub34.aClass293Array9432[i_45_].method2209();
+            for (int i_45_ = 0; i_45_ < TextureOpColourEdgeDetector.aClass293Array9432.length; i_45_++)
+                TextureOpColourEdgeDetector.aClass293Array9432[i_45_].method2209();
         }
         if (Class348_Sub31_Sub2.aClass357ArrayArrayArray9082 != null) {
-            if (Class348_Sub40_Sub5.aBoolean9121) Class285_Sub1.method2131(0);
+            if (TextureOpVoronoiNoise.aBoolean9121) Class285_Sub1.method2131(0);
             Class243.method1879(true);
             Class9.aToolkit171.ra(-1, 1583160, 40, 127);
             Class348_Sub49_Sub1.method3398(true, is, i_20_, i_21_, i_25_, i_26_, bool_27_);
-            if (Class348_Sub40_Sub5.aBoolean9121) Class304.method2290();
+            if (TextureOpVoronoiNoise.aBoolean9121) Class304.method2290();
             Class9.aToolkit171.pa();
             Class243.method1879(false);
         }
         Class348_Sub49_Sub1.method3398(false, is, i_20_, i_21_, i_25_, i_26_, bool_27_);
-        if (Class348_Sub40_Sub5.aBoolean9121) {
+        if (TextureOpVoronoiNoise.aBoolean9121) {
             for (int i_46_ = 0; i_46_ < BillboardType.anInt2524; i_46_++)
                 Class5_Sub2.aBooleanArrayArrayArray8361[i_46_] = Class115.aBooleanArrayArrayArray1751[i_46_];
             Class285_Sub1.method2131(0);
-            for (int i_47_ = 0; i_47_ < Class348_Sub40_Sub34.aClass293Array9432.length; i_47_++)
-                Class348_Sub40_Sub34.aClass293Array9432[i_47_].method2209();
+            for (int i_47_ = 0; i_47_ < TextureOpColourEdgeDetector.aClass293Array9432.length; i_47_++)
+                TextureOpColourEdgeDetector.aClass293Array9432[i_47_].method2209();
         }
-        if (Class348_Sub40_Sub5.aBoolean9121) {
+        if (TextureOpVoronoiNoise.aBoolean9121) {
             Class304.method2290();
             for (int i_48_ = 0; i_48_ < BillboardType.anInt2524; i_48_++)
                 Class115.aBooleanArrayArrayArray1751[i_48_] = Class5_Sub2.aBooleanArrayArrayArray8361[i_48_];
             if (Npc.anInt10503 == 2) {
                 if (Class146.aLongArray2013[0] < Class146.aLongArray2013[1]) {
-                    if (AnimationType.anIntArray256[0] + Class345.anIntArray4271[0] > Class348_Sub40_Sub10.anIntArray9183[0]) Class345.anIntArray4271[0]++;
-                } else if ((Class146.aLongArray2013[0] > Class146.aLongArray2013[1]) && ((AnimationType.anIntArray256[0] + Class345.anIntArray4271[0]) < Class348_Sub40_Sub10.anIntArray9183[2])) Class345.anIntArray4271[0]--;
+                    if (AnimationType.anIntArray256[0] + Class345.anIntArray4271[0] > TextureOpRange.anIntArray9183[0]) Class345.anIntArray4271[0]++;
+                } else if ((Class146.aLongArray2013[0] > Class146.aLongArray2013[1]) && ((AnimationType.anIntArray256[0] + Class345.anIntArray4271[0]) < TextureOpRange.anIntArray9183[2])) Class345.anIntArray4271[0]--;
             }
         }
-        if (!Class348_Sub40_Sub17.aBoolean9242) {
+        if (!TextureOpSprite.aBoolean9242) {
             Class99.aBooleanArrayArray1572 = bools;
             Class348_Sub8.aBooleanArrayArray6656 = bools_28_;
         }

@@ -74,8 +74,8 @@ final class Class348_Sub49_Sub1 extends Packet {
                     int i_9_ = Class99.aBooleanArrayArray1572[0].length;
                     if ((Class348_Sub34.anInt6974 + Class99.aBooleanArrayArray1572[0].length) > Class348_Sub41.anInt7054) i_9_ -= (Class348_Sub34.anInt6974 + Class99.aBooleanArrayArray1572[0].length - Class348_Sub41.anInt7054);
                     boolean[][] bools = Class348_Sub8.aBooleanArrayArray6656;
-                    if (Class348_Sub40_Sub17.aBoolean9242) {
-                        if (Class348_Sub40_Sub5.aBoolean9121) bools = Class115.aBooleanArrayArrayArray1751[i_7_];
+                    if (TextureOpSprite.aBoolean9242) {
+                        if (TextureOpVoronoiNoise.aBoolean9121) bools = Class115.aBooleanArrayArrayArray1751[i_7_];
                         for (int i_10_ = Sprite_Sub1.anInt8412; i_10_ < i_8_; i_10_++) {
                             int i_11_ = (i_10_ + Class37.anInt492 - Sprite_Sub1.anInt8412);
                             for (int i_12_ = Class240.anInt4686; i_12_ < i_9_; i_12_++) {
@@ -92,7 +92,7 @@ final class Class348_Sub49_Sub1 extends Packet {
                             }
                         }
                     }
-                    if (Class348_Sub40_Sub5.aBoolean9121) {
+                    if (TextureOpVoronoiNoise.aBoolean9121) {
                         if (i_1_ >= 0) aa_Sub1.aGroundArray5191[i_7_].method3984(0, 0, 0, null, false, i_1_, i_2_);
                         else aa_Sub1.aGroundArray5191[i_7_].method3983(0, 0, 0, null, false, i_2_);
                         for (int i_15_ = 0; i_15_ < Npc.anInt10503; i_15_++)
@@ -105,8 +105,8 @@ final class Class348_Sub49_Sub1 extends Packet {
                     int i_17_ = Class99.aBooleanArrayArray1572[0].length;
                     if ((Class348_Sub34.anInt6974 + Class99.aBooleanArrayArray1572[0].length) > Class348_Sub41.anInt7054) i_17_ -= (Class348_Sub34.anInt6974 + Class99.aBooleanArrayArray1572[0].length - Class348_Sub41.anInt7054);
                     boolean[][] bools = Class348_Sub8.aBooleanArrayArray6656;
-                    if (Class348_Sub40_Sub17.aBoolean9242) {
-                        if (Class348_Sub40_Sub5.aBoolean9121) bools = Class115.aBooleanArrayArrayArray1751[i_7_];
+                    if (TextureOpSprite.aBoolean9242) {
+                        if (TextureOpVoronoiNoise.aBoolean9121) bools = Class115.aBooleanArrayArrayArray1751[i_7_];
                         for (int i_18_ = Sprite_Sub1.anInt8412; i_18_ < i_16_; i_18_++) {
                             int i_19_ = (i_18_ + Class37.anInt492 - Sprite_Sub1.anInt8412);
                             for (int i_20_ = Class240.anInt4686; i_20_ < i_17_; i_20_++) {
@@ -114,7 +114,7 @@ final class Class348_Sub49_Sub1 extends Packet {
                             }
                         }
                     }
-                    if (Class348_Sub40_Sub5.aBoolean9121) {
+                    if (TextureOpVoronoiNoise.aBoolean9121) {
                         if (i_1_ >= 0) aa_Sub1.aGroundArray5191[i_7_].method3984(0, 0, 0, null, false, i_1_, i_2_);
                         else aa_Sub1.aGroundArray5191[i_7_].method3983(0, 0, 0, null, false, i_2_);
                         for (int i_21_ = 0; i_21_ < Npc.anInt10503; i_21_++)

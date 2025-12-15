@@ -51,12 +51,12 @@ final class FontRenderer_Sub2 extends FontRenderer {
                     }
                 }
             }
-            if (!var_nativeToolkit.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aClass304_9471, (byte) 126)) {
+            if (!var_nativeToolkit.method3880(Class68.aClass68_1183, TextureOpClamp.aClass304_9471, (byte) 126)) {
                 int[] is_19_ = new int[is.length];
                 for (int i_20_ = 0; i_20_ < is.length; i_20_++)
                     is_19_[i_20_] = is[i_20_] << 24;
                 anInterface18_Impl3_6492 = var_nativeToolkit.method3839(i_5_, i_5_, -15137, false, is_19_);
-            } else anInterface18_Impl3_6492 = var_nativeToolkit.method3944(is, i_5_, (Class348_Sub40_Sub38.aClass304_9471), 2, false, i_5_);
+            } else anInterface18_Impl3_6492 = var_nativeToolkit.method3944(is, i_5_, (TextureOpClamp.aClass304_9471), 2, false, i_5_);
             aBoolean6493 = true;
         } else {
             int[] is = new int[i_5_ * i_5_];
@@ -169,7 +169,7 @@ final class FontRenderer_Sub2 extends FontRenderer {
         aNativeToolkit_6494.method3850((byte) -41, anInterface18_Impl3_6492);
         if (aBoolean6493 || bool) {
             aNativeToolkit_6494.method3874(JavaThreadResource.aClass229_2207, 112, Class328_Sub3.aClass229_6519);
-            aNativeToolkit_6494.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
+            aNativeToolkit_6494.method3849((byte) 47, 0, TextureOpRasterizer.aClass70_9485);
             aNativeToolkit_6494.method3894(-28186, i_50_);
         } else aNativeToolkit_6494.method3874(Class328_Sub3.aClass229_6519, 126, Class328_Sub3.aClass229_6519);
         Class101_Sub2 class101_sub2 = aNativeToolkit_6494.method3934(-99);

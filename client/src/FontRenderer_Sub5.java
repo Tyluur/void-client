@@ -80,7 +80,7 @@ final class FontRenderer_Sub5 extends FontRenderer {
                     }
                 }
             }
-            aClass258_Sub3_Sub1_6511 = Class348_Sub40_Sub32.method3132(is, 0, 0, i_1_, i_1_, var_openGLToolkit, false, (byte) 12);
+            aClass258_Sub3_Sub1_6511 = TextureOpInvert.method3132(is, 0, 0, i_1_, i_1_, var_openGLToolkit, false, (byte) 12);
             aBoolean6512 = false;
         }
         aClass258_Sub3_Sub1_6511.method1957(9728, false);

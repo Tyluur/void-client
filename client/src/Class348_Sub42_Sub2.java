@@ -4,7 +4,7 @@
 
 import jaggl.OpenGL;
 
-final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
+final class Class348_Sub42_Sub2 extends LinkedNode implements Interface9 {
     static int anInt8561;
     private int anInt8562 = -1;
     private int anInt8563 = -1;
@@ -28,7 +28,7 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
     static final void method3171(Toolkit var_toolkit, int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, boolean bool, boolean bool_5_) {
         Class9.aToolkit171 = var_toolkit;
         Npc.anInt10503 = i;
-        Class348_Sub40_Sub5.aBoolean9121 = (Npc.anInt10503 > 1 && Class9.aToolkit171.method3708());
+        TextureOpVoronoiNoise.aBoolean9121 = (Npc.anInt10503 > 1 && Class9.aToolkit171.method3708());
         Class362.anInt4459 = i_0_;
         Class270.anInt3465 = 1 << Class362.anInt4459;
         Class348_Sub23_Sub2.anInt9037 = Class270.anInt3465 >> 1;
@@ -85,18 +85,18 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
                 [(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2)]);
         Class171.anIntArray2272 = new int[(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 2)];
         Class71.aClass76_1208 = Class71.aClass76_1210;
-        if (Class348_Sub40_Sub5.aBoolean9121) {
+        if (TextureOpVoronoiNoise.aBoolean9121) {
             Class115.aBooleanArrayArrayArray1751 = (new boolean[i_1_]
                     [(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)]
                     [(Class318_Sub1_Sub4_Sub1.anInt10084 + Class318_Sub1_Sub4_Sub1.anInt10084 + 1)]);
             Class5_Sub2.aBooleanArrayArrayArray8361 = new boolean[i_1_][][];
-            if (Class348_Sub40_Sub34.aClass293Array9432 != null) Class260.method1978();
-            Class348_Sub40_Sub34.aClass293Array9432 = new Class293[Npc.anInt10503];
-            Class9.aToolkit171.allocateThreads((Class348_Sub40_Sub34.aClass293Array9432).length + 1);
+            if (TextureOpColourEdgeDetector.aClass293Array9432 != null) Class260.method1978();
+            TextureOpColourEdgeDetector.aClass293Array9432 = new Class293[Npc.anInt10503];
+            Class9.aToolkit171.allocateThreads((TextureOpColourEdgeDetector.aClass293Array9432).length + 1);
             Class9.aToolkit171.method3659(0);
-            for (int i_6_ = 0; i_6_ < Class348_Sub40_Sub34.aClass293Array9432.length; i_6_++) {
-                Class348_Sub40_Sub34.aClass293Array9432[i_6_] = new Class293(i_6_ + 1, Class9.aToolkit171);
-                new Thread(Class348_Sub40_Sub34.aClass293Array9432[i_6_], "wr" + i_6_).start();
+            for (int i_6_ = 0; i_6_ < TextureOpColourEdgeDetector.aClass293Array9432.length; i_6_++) {
+                TextureOpColourEdgeDetector.aClass293Array9432[i_6_] = new Class293(i_6_ + 1, Class9.aToolkit171);
+                new Thread(TextureOpColourEdgeDetector.aClass293Array9432[i_6_], "wr" + i_6_).start();
             }
             int i_7_;
             if (Npc.anInt10503 == 2) {
@@ -147,8 +147,8 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
             aOpenGLToolkit_8564 = var_openGLToolkit;
             this.anInt8565 = i_12_;
             anInt8567 = i;
-            OpenGL.glGenRenderbuffersEXT(1, Class348_Sub40_Sub34.anIntArray9431, 0);
-            anInt8569 = Class348_Sub40_Sub34.anIntArray9431[0];
+            OpenGL.glGenRenderbuffersEXT(1, TextureOpColourEdgeDetector.anIntArray9431, 0);
+            anInt8569 = TextureOpColourEdgeDetector.anIntArray9431[0];
             OpenGL.glBindRenderbufferEXT(36161, anInt8569);
             OpenGL.glRenderbufferStorageEXT(36161, anInt8567, (this.anInt8572), (this.anInt8565));
             anInt8571 = (this.anInt8565 * this.anInt8572 * aOpenGLToolkit_8564.method3798(anInt8567, 2));
@@ -163,8 +163,8 @@ final class Class348_Sub42_Sub2 extends Class348_Sub42 implements Interface9 {
             anInt8567 = i;
             this.anInt8565 = i_14_;
             aOpenGLToolkit_8564 = var_openGLToolkit;
-            OpenGL.glGenRenderbuffersEXT(1, Class348_Sub40_Sub34.anIntArray9431, 0);
-            anInt8569 = Class348_Sub40_Sub34.anIntArray9431[0];
+            OpenGL.glGenRenderbuffersEXT(1, TextureOpColourEdgeDetector.anIntArray9431, 0);
+            anInt8569 = TextureOpColourEdgeDetector.anIntArray9431[0];
             OpenGL.glBindRenderbufferEXT(36161, anInt8569);
             OpenGL.glRenderbufferStorageMultisampleEXT(36161, i_15_, anInt8567, this.anInt8572, this.anInt8565);
             anInt8571 = (this.anInt8565 * this.anInt8572 * aOpenGLToolkit_8564.method3798(anInt8567, 2));

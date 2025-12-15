@@ -25,7 +25,7 @@ final class Class44 {
                 for (int i = 0; i < class237_sub1.levels; i++) {
                     Class369_Sub1.method3570(false);
                     for (int i_6_ = 0; (Class367_Sub4.mapLength >> 3 > i_6_); i_6_++) {
-                        for (int i_7_ = 0; i_7_ < Class348_Sub40_Sub3.mapWidth >> 3; i_7_++) {
+                        for (int i_7_ = 0; i_7_ < TextureOpBinary.mapWidth >> 3; i_7_++) {
                             int i_8_ = (Class62.anIntArrayArrayArray1116[i][i_6_][i_7_]);
                             if (i_8_ != -1) {
                                 int i_9_ = i_8_ >> 24 & 0x3;
@@ -50,7 +50,7 @@ final class Class44 {
                 for (int i = 0; class237_sub1.levels > i; i++) {
                     Class369_Sub1.method3570(false);
                     for (int i_15_ = 0; (i_15_ < Class367_Sub4.mapLength >> 3); i_15_++) {
-                        for (int i_16_ = 0; (i_16_ < Class348_Sub40_Sub3.mapWidth >> 3); i_16_++) {
+                        for (int i_16_ = 0; (i_16_ < TextureOpBinary.mapWidth >> 3); i_16_++) {
                             int i_17_ = (Class62.anIntArrayArrayArray1116[i][i_15_][i_16_]);
                             if (i_17_ == -1) class237_sub1.method1678(i_15_ * 8, 8, i_16_ * 8, -100, 8, i);
                         }

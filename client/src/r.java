@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class r extends Class348_Sub42 {
+abstract class r extends LinkedNode {
     static Class312 aClass312_9716 = new Class312();
     static int anInt9717;
     static boolean[] aBooleanArray9718;

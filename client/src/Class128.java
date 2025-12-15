@@ -12,7 +12,7 @@ final class Class128 {
             Class181.aBooleanArray2374[i_0_] = false;
         anInt1870++;
         Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
-        Class348_Sub40_Sub21.anInt9282 = 1;
+        TextureOp37.anInt9282 = 1;
         za_Sub1.anInt9775 = -1;
         Option_Sub12.anInt5973 = 0;
         Class292.anInt4803 = -1;

@@ -38,11 +38,11 @@ final class Class301 {
     static final void method2280(byte i, int i_20_) {
         anInt3826++;
         if (Class289.aByteArrayArrayArray3700 == null) Class289.aByteArrayArrayArray3700 = (new byte[4][Class367_Sub4.mapLength]
-                [Class348_Sub40_Sub3.mapWidth]);
+                [TextureOpBinary.mapWidth]);
         if (i_20_ != 28587) method2278(35, -47, (byte) 56, -93);
         for (int i_21_ = 0; i_21_ < 4; i_21_++) {
             for (int i_22_ = 0; Class367_Sub4.mapLength > i_22_; i_22_++) {
-                for (int i_23_ = 0; (Class348_Sub40_Sub3.mapWidth > i_23_); i_23_++)
+                for (int i_23_ = 0; (TextureOpBinary.mapWidth > i_23_); i_23_++)
                     Class289.aByteArrayArrayArray3700[i_21_][i_22_][i_23_] = i;
             }
         }

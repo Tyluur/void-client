@@ -137,8 +137,8 @@ final class Class64_Sub2 extends Model {
         if (aClass353Array5524 != null) {
             aNativeToolkit_5419.C(!aBoolean5428);
             aNativeToolkit_5419.method3866(false, true);
-            aNativeToolkit_5419.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
-            aNativeToolkit_5419.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
+            aNativeToolkit_5419.method3849((byte) 47, 1, TextureOpRasterizer.aClass70_9485);
+            aNativeToolkit_5419.method3885(1, true, TextureOpRasterizer.aClass70_9485);
             for (int i_0_ = 0; anInt5406 > i_0_; i_0_++) {
                 Class353 class353 = aClass353Array5524[i_0_];
                 Class334 class334 = aClass334Array5442[i_0_];
@@ -308,17 +308,17 @@ final class Class64_Sub2 extends Model {
         for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-93)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 46))) {
             if (class348_sub42_sub13.anInt9615 > 1) {
                 class348_sub42_sub13.anInt9615 = 0;
-                VarcTypeList.aClass60_3301.method582(class348_sub42_sub13, ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063).aLong9600, (byte) -124);
+                VarcTypeList.aClass60_3301.method582(class348_sub42_sub13, ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063).aLong9600, (byte) -124);
                 class348_sub42_sub13.aClass107_9621.method1009(2110355138);
             }
         }
         Class8.anInt166 = 0;
         if (i < 92) method661((byte) 114);
         Class73.anInt4776 = 0;
-        Class348_Sub40_Sub4.aClass262_9111.method1996(115);
+        TextureOpVerticalGradient.aDeque_9111.clear(115);
         Class348_Sub42_Sub12.aClass356_9603.method3481(0);
         Class233.aClass107_3022.method1009(2110355138);
-        OpenGLToolkit.method3743((byte) 6, Class348_Sub40_Sub7.aClass348_Sub42_Sub12_9144);
+        OpenGLToolkit.method3743((byte) 6, TextureOpFlip.aClass348_Sub42_Sub12_9144);
     }
 
     final void VA(int i) {
@@ -564,7 +564,7 @@ final class Class64_Sub2 extends Model {
                 if (aClass290_5482 != null && !aClass290_5482.method2197((byte) -74)) aBoolean5402 = true;
                 else aShortArray5486 = null;
             }
-            if (aByteArray5515 != null && !Class348_Sub40_Sub29.method3124(anInt5472, (byte) -119, anInt5463)) {
+            if (aByteArray5515 != null && !TextureOpTexture.method3124(anInt5472, (byte) -119, anInt5463)) {
                 if (aClass290_5482 == null || aClass290_5482.method2197((byte) -20)) aByteArray5515 = null;
                 else aBoolean5402 = true;
             }
@@ -947,8 +947,8 @@ final class Class64_Sub2 extends Model {
             else class64_sub2_154_.aBoolean5428 = true;
             class64_sub2_154_.aShort5452 = aShort5452;
             boolean bool_157_ = Class294.method2217(anInt5472, i, 0);
-            boolean bool_158_ = Class348_Sub40_Sub3.method3056(i_156_ + -26704, i, anInt5472);
-            boolean bool_159_ = Class348_Sub40_Sub9.method3073(anInt5472, i, (byte) 50);
+            boolean bool_158_ = TextureOpBinary.method3056(i_156_ + -26704, i, anInt5472);
+            boolean bool_159_ = TextureOpMonorchromeEdgeDetector.method3073(anInt5472, i, (byte) 50);
             boolean bool_160_ = bool_157_ | bool_158_ | bool_159_;
             if (bool_160_) {
                 if (bool_157_) {
@@ -1113,7 +1113,7 @@ final class Class64_Sub2 extends Model {
                 for (int i_173_ = 0; anInt5478 > i_173_; i_173_++)
                     class64_sub2_154_.aShortArray5423[i_173_] = aShortArray5423[i_173_];
             } else class64_sub2_154_.aShortArray5423 = aShortArray5423;
-            if (Class348_Sub40_Sub26.method3119(i, i_156_ ^ 0x6897, anInt5472)) {
+            if (TextureOpColourise.method3119(i, i_156_ ^ 0x6897, anInt5472)) {
                 if (class64_sub2_153_.aClass334Array5442 != null && (anInt5406 <= class64_sub2_153_.aClass334Array5442.length)) {
                     class64_sub2_154_.aClass334Array5442 = class64_sub2_153_.aClass334Array5442;
                     for (int i_174_ = 0; anInt5406 > i_174_; i_174_++)
@@ -1316,10 +1316,10 @@ final class Class64_Sub2 extends Model {
                     i_209_ = i_210_;
                     break;
                 }
-                if (Class348_Sub40_Sub37.aLongArray9465[i_210_] == l) return (short) (-1 + i_211_);
+                if (TextureOpBoxBlur.aLongArray9465[i_210_] == l) return (short) (-1 + i_211_);
             }
             aShortArray5439[i_209_] = (short) (1 + anInt5475);
-            Class348_Sub40_Sub37.aLongArray9465[i_209_] = l;
+            TextureOpBoxBlur.aLongArray9465[i_209_] = l;
             aShortArray5416[anInt5475] = (short) i_200_;
             aShortArray5470[anInt5475] = (short) i_204_;
             aShortArray5493[anInt5475] = (short) i_202_;
@@ -1797,7 +1797,7 @@ final class Class64_Sub2 extends Model {
         anInt5410++;
         if (aShortArray5423 == null) return true;
         for (int i = 0; i < aShortArray5423.length; i++) {
-            if (aShortArray5423[i] != -1 && !aNativeToolkit_5419.aD4579.method4(-7953, aShortArray5423[i])) return false;
+            if (aShortArray5423[i] != -1 && !aNativeToolkit_5419.textureSource.textureReady(-7953, aShortArray5423[i])) return false;
         }
         return true;
     }
@@ -1806,7 +1806,7 @@ final class Class64_Sub2 extends Model {
         this(var_nativeToolkit, i, i_336_, true, false);
         do {
             try {
-                TextureSource var_d = var_nativeToolkit.aD4579;
+                TextureSource var_d = var_nativeToolkit.textureSource;
                 int[] is = new int[mesh.faceCount];
                 anIntArray5455 = new int[1 + mesh.maxVertex];
                 for (int i_337_ = 0; i_337_ < mesh.faceCount; i_337_++) {
@@ -1920,7 +1920,7 @@ final class Class64_Sub2 extends Model {
                 if (mesh.aShortArray1856 != null) aShortArray5432 = new short[anInt5478];
                 aShortArray5470 = new short[i_354_];
                 aShortArray5416 = new short[i_354_];
-                Class348_Sub40_Sub37.aLongArray9465 = new long[i_354_];
+                TextureOpBoxBlur.aLongArray9465 = new long[i_354_];
                 aShortArray5495 = new short[anInt5478];
                 aShort5452 = (short) i_334_;
                 aByteArray5515 = new byte[anInt5478];
@@ -2133,13 +2133,13 @@ final class Class64_Sub2 extends Model {
                                     float f_411_ = ((fs[5] * (float) i_406_ + (fs[3] * (float) i_404_ + (float) i_405_ * fs[4])) / f_408_);
                                     float f_412_ = (((float) i_405_ * fs[7] + fs[6] * (float) i_404_ + fs[8] * (float) i_406_) / f_409_);
                                     i_386_ = Class331.cubeFace(f_411_, false, f_412_, f_410_);
-                                    Class262.cubeMap(f_397_, f_395_, fs, (mesh.vertexZ[i_388_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_388_]), (mesh.vertexY[i_388_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
+                                    Deque.cubeMap(f_397_, f_395_, fs, (mesh.vertexZ[i_388_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_388_]), (mesh.vertexY[i_388_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
                                     f_379_ = Class283.aFloatArray3658[1];
                                     f = Class283.aFloatArray3658[0];
-                                    Class262.cubeMap(f_397_, f_395_, fs, (mesh.vertexZ[i_389_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_389_]), (mesh.vertexY[i_389_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
+                                    Deque.cubeMap(f_397_, f_395_, fs, (mesh.vertexZ[i_389_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_389_]), (mesh.vertexY[i_389_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
                                     f_381_ = Class283.aFloatArray3658[1];
                                     f_380_ = Class283.aFloatArray3658[0];
-                                    Class262.cubeMap(f_397_, f_395_, fs, (mesh.vertexZ[i_390_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_390_]), (mesh.vertexY[i_390_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
+                                    Deque.cubeMap(f_397_, f_395_, fs, (mesh.vertexZ[i_390_]), i_393_, false, i_394_, i_391_, (mesh.vertexX[i_390_]), (mesh.vertexY[i_390_]), f_396_, Class283.aFloatArray3658, i_392_, i_386_);
                                     f_382_ = Class283.aFloatArray3658[0];
                                     f_383_ = Class283.aFloatArray3658[1];
                                 } else if (i_387_ == 3) {
@@ -2255,7 +2255,7 @@ final class Class64_Sub2 extends Model {
                     anIntArray5473[i_450_] = i_455_ + -i_454_ + 1;
                     anIntArray5404[++i_450_] = anInt5516;
                 }
-                Class348_Sub40_Sub37.aLongArray9465 = null;
+                TextureOpBoxBlur.aLongArray9465 = null;
                 aShortArray5470 = Class331.method2639((byte) -111, aShortArray5470, anInt5475);
                 aShortArray5416 = Class331.method2639((byte) 26, aShortArray5416, anInt5475);
                 aShortArray5493 = Class331.method2639((byte) 68, aShortArray5493, anInt5475);
@@ -2649,7 +2649,7 @@ final class Class64_Sub2 extends Model {
 
     final void aa(short i, short i_570_) {
         anInt5403++;
-        TextureSource var_d = aNativeToolkit_5419.aD4579;
+        TextureSource var_d = aNativeToolkit_5419.textureSource;
         for (int i_571_ = 0; anInt5478 > i_571_; i_571_++) {
             if (i == aShortArray5423[i_571_]) aShortArray5423[i_571_] = i_570_;
         }

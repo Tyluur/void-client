@@ -52,13 +52,13 @@ final class Class38 {
 
     static final void method362(int i) {
         anInt509++;
-        Class348_Sub27 class348_sub27 = ((Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711.method1995(4));
+        Class348_Sub27 class348_sub27 = ((Class348_Sub27) Class348_Sub42_Sub20.aDeque_9711.method1995(4));
         int i_3_ = -45 % ((i - -34) / 47);
-        for (/**/; class348_sub27 != null; class348_sub27 = (Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711.method1990((byte) 81)) {
+        for (/**/; class348_sub27 != null; class348_sub27 = (Class348_Sub27) Class348_Sub42_Sub20.aDeque_9711.method1990((byte) 81)) {
             if (class348_sub27.anInt6893 > 0) class348_sub27.anInt6893--;
             if (class348_sub27.anInt6893 != 0) {
                 if (class348_sub27.anInt6894 > 0) class348_sub27.anInt6894--;
-                if (class348_sub27.anInt6894 == 0 && class348_sub27.anInt6905 >= 1 && class348_sub27.anInt6896 >= 1 && (class348_sub27.anInt6905 <= -2 + Class367_Sub4.mapLength) && (class348_sub27.anInt6896 <= -2 + Class348_Sub40_Sub3.mapWidth) && (class348_sub27.anInt6907 < 0 || (Class5_Sub2.method195(class348_sub27.anInt6895, false, class348_sub27.anInt6907)))) {
+                if (class348_sub27.anInt6894 == 0 && class348_sub27.anInt6905 >= 1 && class348_sub27.anInt6896 >= 1 && (class348_sub27.anInt6905 <= -2 + Class367_Sub4.mapLength) && (class348_sub27.anInt6896 <= -2 + TextureOpBinary.mapWidth) && (class348_sub27.anInt6907 < 0 || (Class5_Sub2.method195(class348_sub27.anInt6895, false, class348_sub27.anInt6907)))) {
                     Class218.method1591(class348_sub27.anInt6905, 70, class348_sub27.anInt6904, -1, class348_sub27.anInt6907, class348_sub27.anInt6895, class348_sub27.anInt6896, class348_sub27.anInt6900, class348_sub27.anInt6899);
                     class348_sub27.anInt6894 = -1;
                     if ((class348_sub27.anInt6907 != class348_sub27.anInt6902) || class348_sub27.anInt6902 != -1) {
@@ -103,19 +103,19 @@ final class Class38 {
         }
         if (i >= 124) {
             for (int i_6_ = 0; (ClientScript.anInt9699 > i_6_); i_6_++) {
-                KeyLog keyLog = Class348_Sub42_Sub5.KEYBOARD_EVENT_ARRAY_1[i_6_];
+                KeyLog keyLog = Texture.KEYBOARD_EVENT_ARRAY_1[i_6_];
                 int i_7_ = keyLog.method30(false);
                 char c = keyLog.getKeyChar((byte) 46);
                 int i_8_ = keyLog.method26(-7616);
                 if (i_7_ == 84) Class59_Sub1.method555(false, 0);
                 if (i_7_ != 80) {
                     if (i_7_ == 66 && (0x4 & i_8_) != 0) {
-                        if (Class348_Sub40_Sub27.aClipboard9357 != null) {
+                        if (TextureOpInterpolate.aClipboard9357 != null) {
                             String string = "";
                             for (int i_9_ = -1 + (Class286_Sub1.aStringArray6200).length; i_9_ >= 0; i_9_--) {
                                 if ((Class286_Sub1.aStringArray6200[i_9_] != null) && Class286_Sub1.aStringArray6200[i_9_].length() > 0) string += (Class286_Sub1.aStringArray6200[i_9_]) + '\n';
                             }
-                            Class348_Sub40_Sub27.aClipboard9357.setContents(new StringSelection(string), null);
+                            TextureOpInterpolate.aClipboard9357.setContents(new StringSelection(string), null);
                         }
                     } else if (i_7_ != 67 || (0x4 & i_8_) == 0) {
                         if (i_7_ != 85 || Class348_Sub38.anInt7006 <= 0) {
@@ -130,7 +130,7 @@ final class Class38 {
                                         aa.method159(-615751774);
                                         Class348_Sub38.anInt7006 = Class363.aString4461.length();
                                     } else if (Npc.method2446(c, (byte) 105) || c == 92 || c == 47 || c == 46 || c == 58 || c == 44 || c == 32 || c == 95 || c == 45 || c == 43 || c == 91 || c == 93) {
-                                        Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + Class348_Sub42_Sub5.KEYBOARD_EVENT_ARRAY_1[i_6_].getKeyChar((byte) 23) + (Class363.aString4461.substring(Class348_Sub38.anInt7006)));
+                                        Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006)) + Texture.KEYBOARD_EVENT_ARRAY_1[i_6_].getKeyChar((byte) 23) + (Class363.aString4461.substring(Class348_Sub38.anInt7006)));
                                         Class348_Sub38.anInt7006++;
                                     }
                                 } else {
@@ -143,13 +143,13 @@ final class Class38 {
                             Class363.aString4461 = ((Class363.aString4461.substring(0, Class348_Sub38.anInt7006 - 1)) + Class363.aString4461.substring(Class348_Sub38.anInt7006));
                             Class348_Sub38.anInt7006--;
                         }
-                    } else if (Class348_Sub40_Sub27.aClipboard9357 != null) {
-                        Transferable transferable = Class348_Sub40_Sub27.aClipboard9357.getContents(null);
+                    } else if (TextureOpInterpolate.aClipboard9357 != null) {
+                        Transferable transferable = TextureOpInterpolate.aClipboard9357.getContents(null);
                         if (transferable != null) {
                             try {
                                 String string = (String) (transferable.getTransferData(DataFlavor.stringFlavor));
                                 if (string != null) {
-                                    String[] strings = Class348_Sub40_Sub23.method3113('\n', true, string);
+                                    String[] strings = TextureOpIrregularBricks.method3113('\n', true, string);
                                     Class348_Sub42_Sub6.method3189(0, strings);
                                 }
                             } catch (Exception exception) {
@@ -206,7 +206,7 @@ final class Class38 {
             }
             if (class318_sub4.aBoolean6409) {
                 class318_sub4.aClass318_Sub1_6410 = class318_sub1;
-                if (Class348_Sub40_Sub5.aBoolean9121) {
+                if (TextureOpVoronoiNoise.aBoolean9121) {
                     synchronized (Class71.aClass76_1208) {
                         Class71.aClass76_1208.method774(class318_sub4, 18802);
                     }

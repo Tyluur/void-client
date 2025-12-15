@@ -12,13 +12,13 @@ final class Class289 {
     static int anInt3702;
     static int anInt3703;
     static int anInt3704;
-    static Class262 aClass262_3705;
+    static Deque aDeque_3705;
 
     public static void method2191(int i) {
         if (i != 0) method2192((byte) -74);
         aClass46_3701 = null;
         aByteArrayArrayArray3700 = null;
-        aClass262_3705 = null;
+        aDeque_3705 = null;
     }
 
     static final void method2192(byte i) {
@@ -39,7 +39,7 @@ final class Class289 {
             Class11.anInt193++;
             if (i < -118 && (Class11.anInt193 >= 50 || bool)) {
                 Class11.anInt193 = 0;
-                if (!Class110.aBoolean1712 && Class348_Sub40_Sub8.aClass238_9165 != null) {
+                if (!Class110.aBoolean1712 && TextureOpPerlinNoise.aClass238_9165 != null) {
                     IOException_Sub1.anInt88++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Option_Sub10.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -106);
                     Class348_Sub42_Sub14.method3243(122, class348_sub47);

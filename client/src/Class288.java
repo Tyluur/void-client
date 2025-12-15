@@ -33,7 +33,7 @@ class Class288 implements Interface12 {
     public Class223 method51(byte i) {
         if (i <= 116) method2186((byte) 116, null);
         anInt4957++;
-        return Class348_Sub40_Sub21.aClass223_9274;
+        return TextureOp37.aClass223_9274;
     }
 
     Class288(int i, Class221 class221, Class341 class341, int i_2_, int i_3_) {

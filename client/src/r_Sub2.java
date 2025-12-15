@@ -15,7 +15,7 @@ final class r_Sub2 extends r {
     int anInt10489;
     static int anInt10490;
     static int anInt10491;
-    static Class262 aClass262_10492 = new Class262();
+    static Deque aDeque_10492 = new Deque();
 
     final void method3292(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
         this.anInt10484 = i_1_;
@@ -333,7 +333,7 @@ final class r_Sub2 extends r {
     public static void method3295(int i) {
         ANIMATIONS = null;
         aClass252_10488 = null;
-        aClass262_10492 = null;
+        aDeque_10492 = null;
         if (i != -1) method3295(109);
     }
 

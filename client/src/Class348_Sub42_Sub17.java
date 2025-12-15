@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub17 extends Class348_Sub42 {
+final class Class348_Sub42_Sub17 extends LinkedNode {
     private final int anInt9669;
     static int anInt9670;
     private byte[][] aByteArrayArray9671;
@@ -21,7 +21,7 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
             anInt9674++;
             if (class277.anInt3569 == -1) {
                 if (class277.anInt3575 != -1) {
-                    TextureMetrics textureMetrics = var_toolkit.aD4579.getMetrics(class277.anInt3575, -6662);
+                    TextureMetrics textureMetrics = var_toolkit.textureSource.getMetrics(class277.anInt3575, -6662);
                     if (!textureMetrics.disableable) return textureMetrics.aShort208;
                 }
             } else return class277.anInt3569;
@@ -57,11 +57,11 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
             packet.pos = 1;
             int i_3_ = packet.readUnsignedShort(842397944);
             synchronized (Class135_Sub2.aIndex_4843) {
-                bool &= Class135_Sub2.aIndex_4843.method421(false, i_3_);
+                bool &= Class135_Sub2.aIndex_4843.fileReady(false, i_3_);
             }
         }
         if (!bool) return false;
-        Class262 class262 = new Class262();
+        Deque deque = new Deque();
         int[] is;
         synchronized (Class138.aIndex_1940) {
             int i_4_ = Class138.aIndex_1940.method407(0, anInt9669);
@@ -75,7 +75,7 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
             packet.pos = 1;
             int i_7_ = packet.readUnsignedShort(842397944);//
             AnimBase animBase = null;
-            for (AnimBase animBase_8_ = (AnimBase) class262.method1995(4); animBase_8_ != null; animBase_8_ = (AnimBase) class262.method1990((byte) 78)) {
+            for (AnimBase animBase_8_ = (AnimBase) deque.method1995(4); animBase_8_ != null; animBase_8_ = (AnimBase) deque.method1990((byte) 78)) {
                 if (animBase_8_.anInt6958 == i_7_) {
                     animBase = animBase_8_;
                     break;
@@ -85,7 +85,7 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
                 synchronized (Class135_Sub2.aIndex_4843) {
                     animBase = new AnimBase(i_7_, Class135_Sub2.aIndex_4843.method415((byte) 73, i_7_));
                 }
-                class262.method1999(animBase, -20180);
+                deque.method1999(animBase, -20180);
             }
             this.aAnimFrameArray9673[is[i_5_]] = new AnimFrame(is_6_, animBase);
         }
@@ -102,7 +102,7 @@ final class Class348_Sub42_Sub17 extends Class348_Sub42 {
 
     static final void method3270(byte i) {
         if (i <= 106) method3266(null, -91, null);
-        for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1990((byte) 115)) {
+        for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1990((byte) 115)) {
             if (Option_Sub17.method1796(69, class348_sub42_sub12.anInt9608)) Class5_Sub3.method202(6, class348_sub42_sub12);
         }
         anInt9680++;

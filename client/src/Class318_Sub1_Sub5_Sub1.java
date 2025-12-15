@@ -10,7 +10,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
     static int anInt10122;
     static int anInt10123;
     private Model aModel_10124;
-    static Class262 aClass262_10125 = new Class262();
+    static Deque aDeque_10125 = new Deque();
     static int anInt10126;
     private Class30 aClass30_10127;
     private r aR10128;
@@ -89,7 +89,7 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
     public static void method2490(int i) {
         aClass351_10134 = null;
         if (i != 4) method2490(-26);
-        aClass262_10125 = null;
+        aDeque_10125 = null;
     }
 
     final int method2379(int i) {
@@ -168,9 +168,9 @@ final class Class318_Sub1_Sub5_Sub1 extends Class318_Sub1_Sub5 implements Interf
     }
 
     private final Class2 method2491(byte i, boolean bool, int i_5_, Toolkit var_toolkit) {
-        if (i != -51) aClass262_10125 = null;
+        if (i != -51) aDeque_10125 = null;
         anInt10142++;
-        Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, 0xffff & aShort10129);
+        Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, 0xffff & aShort10129);
         Ground var_ground;
         Ground var_ground_6_;
         if (aBoolean10138) {

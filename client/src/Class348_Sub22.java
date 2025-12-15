@@ -24,23 +24,23 @@ final class Class348_Sub22 extends Node {
     static final int method2958(int i, Index index) {
         anInt6861++;
         int i_2_ = 0;
-        if (index.method421(false, hitmarksGroup)) i_2_++;
-        if (index.method421(false, LoadingScreenOpFactory.hitbarDefaultGroup)) i_2_++;
-        if (index.method421(false, Class373_Sub2.timerbarDefaultGroup)) i_2_++;
-        if (index.method421(false, Toolkit.headIconsPkGroup)) i_2_++;
-        if (index.method421(false, VarcstrTypeList.headIconsPrayerGroup)) i_2_++;
-        if (index.method421(false, Class115.hintHeadIconsGroup)) i_2_++;
-        if (index.method421(false, Class291.hintMapmarkersGroup)) i_2_++;
-        if (index.method421(false, Class86.mapFlagGround)) i_2_++;
-        if (index.method421(false, Option_Sub10.crossGroup)) i_2_++;
-        if (index.method421(false, Class113.mapDotsGround)) i_2_++;
-        if (index.method421(false, Class364.scrollBarGround)) i_2_++;
+        if (index.fileReady(false, hitmarksGroup)) i_2_++;
+        if (index.fileReady(false, LoadingScreenOpFactory.hitbarDefaultGroup)) i_2_++;
+        if (index.fileReady(false, Class373_Sub2.timerbarDefaultGroup)) i_2_++;
+        if (index.fileReady(false, Toolkit.headIconsPkGroup)) i_2_++;
+        if (index.fileReady(false, VarcstrTypeList.headIconsPrayerGroup)) i_2_++;
+        if (index.fileReady(false, Class115.hintHeadIconsGroup)) i_2_++;
+        if (index.fileReady(false, Class291.hintMapmarkersGroup)) i_2_++;
+        if (index.fileReady(false, Class86.mapFlagGround)) i_2_++;
+        if (index.fileReady(false, Option_Sub10.crossGroup)) i_2_++;
+        if (index.fileReady(false, Class113.mapDotsGround)) i_2_++;
+        if (index.fileReady(false, Class364.scrollBarGround)) i_2_++;
         if (i != 22388) return 8;
-        if (index.method421(false, Class348_Sub40_Sub38.nameIconsGroup)) i_2_++;
-        if (index.method421(false, QuestTypeList.floorShadowsGroup)) i_2_++;
-        if (index.method421(false, Class52.compassGroup)) i_2_++;
-        if (index.method421(false, Class186_Sub1.otherLevelGroup)) i_2_++;
-        if (index.method421(false, Class5_Sub3.hintMapEdgeGroup)) i_2_++;
+        if (index.fileReady(false, TextureOpClamp.nameIconsGroup)) i_2_++;
+        if (index.fileReady(false, QuestTypeList.floorShadowsGroup)) i_2_++;
+        if (index.fileReady(false, Class52.compassGroup)) i_2_++;
+        if (index.fileReady(false, Class186_Sub1.otherLevelGroup)) i_2_++;
+        if (index.fileReady(false, Class5_Sub3.hintMapEdgeGroup)) i_2_++;
         return i_2_;
     }
 

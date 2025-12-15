@@ -29,7 +29,7 @@ final class Class305 {
     final boolean method2292(int i, Toolkit var_toolkit, int i_0_) {
         if (anInt3859 != i_0_) {
             anInt3859 = i_0_;
-            int i_1_ = Class348_Sub40_Sub1.method3051(i_0_, 4096);
+            int i_1_ = TextureOpBrightness.method3051(i_0_, 4096);
             if (i_1_ > 512) i_1_ = 512;
             if (i_1_ <= 0) i_1_ = 1;
             if (i_1_ != anInt3863) {
@@ -70,8 +70,8 @@ final class Class305 {
         anInt3860++;
         if (anInt3858 != -1 && anInt3863 != 0) {
             TextureMetrics textureMetrics = JavaMatrix.aD5684.getMetrics(anInt3858, -6662);
-            if (aSprite_3867 == null && JavaMatrix.aD5684.method4(-7953, anInt3858)) {
-                int[] is = (textureMetrics.alphaBlendMode == 2 ? JavaMatrix.aD5684.method6(-21540, anInt3863, 0.7F, anInt3858, false, anInt3863) : JavaMatrix.aD5684.method5(false, anInt3858, 0.7F, anInt3863, anInt3863, -119));
+            if (aSprite_3867 == null && JavaMatrix.aD5684.textureReady(-7953, anInt3858)) {
+                int[] is = (textureMetrics.alphaBlendMode == 2 ? JavaMatrix.aD5684.pixels(-21540, anInt3863, 0.7F, anInt3858, false, anInt3863) : JavaMatrix.aD5684.rgbPixels(false, anInt3858, 0.7F, anInt3863, anInt3863, -119));
                 aSprite_3867 = var_toolkit.method3662(anInt3863, is, (byte) 94, 0, anInt3863, anInt3863);
             }
             if (textureMetrics.alphaBlendMode == 2) var_toolkit.aa(i_7_, i_9_, i_8_, i_13_, i_12_, 0);

@@ -35,7 +35,7 @@ final class Class57 {
         if (ModelParticleEffector.aClass70_4247 != class70) {
             if (class70 != Class285_Sub2.aClass70_8503) {
                 if (Class318_Sub1_Sub2.aClass70_8737 != class70) {
-                    if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 34166;
+                    if (TextureOpRasterizer.aClass70_9485 == class70) return 34166;
                 } else return 34168;
             } else return 34167;
         } else return 5890;

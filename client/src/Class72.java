@@ -25,8 +25,8 @@ final class Class72 {
     private final boolean method730(Toolkit var_toolkit, Class72 class72_0_) {
         if (aSprite_1221 == null) {
             if (anInt1230 == 0) {
-                if (JavaMatrix.aD5684.method4(-7953, anInt1224)) {
-                    int[] is = JavaMatrix.aD5684.method6(-21540, anInt1220, 0.7F, anInt1224, false, anInt1220);
+                if (JavaMatrix.aD5684.textureReady(-7953, anInt1224)) {
+                    int[] is = JavaMatrix.aD5684.pixels(-21540, anInt1220, 0.7F, anInt1224, false, anInt1220);
                     aSprite_1221 = var_toolkit.method3662(anInt1220, is, (byte) 94, 0, anInt1220, anInt1220);
                 }
             } else if (anInt1230 == 2) method740(var_toolkit, class72_0_);
@@ -101,7 +101,7 @@ final class Class72 {
             return false;
         }
         int i_18_ = EnumTypeList.method340(anInt1217, (byte) 108);
-        if (i_18_ > i_13_) i_18_ = Class348_Sub40_Sub1.method3051(i_13_, 4096);
+        if (i_18_ > i_13_) i_18_ = TextureOpBrightness.method3051(i_13_, 4096);
         if (i_18_ > 512) i_18_ = 512;
         if (i_18_ != anInt1220) anInt1220 = i_18_;
         anInt1231 = (int) (Math.asin((float) i_15_ / 256.0F) * 2607.5945876176133) & 0x3fff;

@@ -6,7 +6,7 @@ final class Class348_Sub35 extends Node {
     static int anInt6975;
     int anInt6976;
     static Class74 aClass74_6977 = new Class74(8, 3);
-    static Class262 aClass262_6978;
+    static Deque aDeque_6978;
     static int anInt6979 = 0;
     static Index INTERFACES;
     static int anInt6981;
@@ -17,7 +17,7 @@ final class Class348_Sub35 extends Node {
         else {
             Class348_Sub46.method3319(Class348_Sub8.active, (byte) -121);
             if (i != 33) method3028(-79);
-            if (Class318_Sub1_Sub3_Sub5.anInt10395 != QuickChatPhraseTypeList.anInt4372) Class348_Sub40_Sub9.method3072((byte) -96);
+            if (Class318_Sub1_Sub3_Sub5.anInt10395 != QuickChatPhraseTypeList.anInt4372) TextureOpMonorchromeEdgeDetector.method3072((byte) -96);
         }
     }
 
@@ -25,7 +25,7 @@ final class Class348_Sub35 extends Node {
         if (i != -11677) method3027((byte) -80);
         aClass74_6977 = null;
         INTERFACES = null;
-        aClass262_6978 = null;
+        aDeque_6978 = null;
     }
 
     public Class348_Sub35() {
@@ -37,6 +37,6 @@ final class Class348_Sub35 extends Node {
     }
 
     static {
-        aClass262_6978 = new Class262();
+        aDeque_6978 = new Deque();
     }
 }

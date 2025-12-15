@@ -23,7 +23,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
     static int anInt7438;
     static int anInt7439;
     static int anInt7440;
-    private Class262 aClass262_7441 = new Class262();
+    private Deque aDeque_7441 = new Deque();
     private int anInt7442;
     static int anInt7443;
     static boolean aBoolean7444 = false;
@@ -32,7 +32,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
     static int anInt7447;
     private int anInt7448;
     static int anInt7449;
-    private Class262 aClass262_7450 = new Class262();
+    private Deque aDeque_7450 = new Deque();
     static int anInt7451;
     static int anInt7452;
     private int anInt7453;
@@ -94,10 +94,10 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
         anInt7440++;
         anInt7448 = anInt7453;
         anInt7442 = anInt7454;
-        Class262 class262 = aClass262_7441;
-        aClass262_7441 = aClass262_7450;
-        aClass262_7450 = class262;
-        aClass262_7450.method1996(i ^ 0x66);
+        Deque deque = aDeque_7441;
+        aDeque_7441 = aDeque_7450;
+        aDeque_7450 = deque;
+        aDeque_7450.clear(i ^ 0x66);
     }
 
     public final synchronized void mouseMoved(MouseEvent mouseevent) {
@@ -122,7 +122,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
     final Class348_Sub45 method3596(int i) {
         if (i != 0) mouseReleased(null);
         anInt7437++;
-        return (Class348_Sub45) aClass262_7441.method1997(i + 8);
+        return (Class348_Sub45) aDeque_7441.method1997(i + 8);
     }
 
     private final void method3606(int i, int i_5_, int i_6_, int i_7_, int i_8_) {
@@ -133,7 +133,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
         class348_sub45_sub2.anInt9730 = i_7_;
         class348_sub45_sub2.anInt9736 = i;
         class348_sub45_sub2.aLong9734 = Class62.safeTime(-110);
-        aClass262_7450.method1999(class348_sub45_sub2, -20180);
+        aDeque_7450.method1999(class348_sub45_sub2, -20180);
         if (i_8_ >= -110) method3607(28, null, -68);
     }
 
@@ -192,8 +192,8 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
             aComponent7459.removeMouseMotionListener(this);
             aComponent7459.removeMouseListener(this);
             aComponent7459 = null;
-            aClass262_7441 = null;
-            aClass262_7450 = null;
+            aDeque_7441 = null;
+            aDeque_7450 = null;
             anInt7442 = anInt7448 = anInt7432 = 0;
             int i_13_ = -106 / ((-57 - i) / 46);
             anInt7454 = anInt7453 = anInt7456 = 0;

@@ -20,7 +20,7 @@ abstract class ResourceProvider {
     static final void method2336(Class51 class51, int i, int i_1_, int i_2_, int i_3_) {
         anInt3940++;
         if (i_3_ > -126) anInt3941 = 15;
-        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class218.aClass262_2859.method1995(4); class348_sub9 != null; class348_sub9 = (Class348_Sub9) Class218.aClass262_2859.method1990((byte) 123)) {
+        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class218.aDeque_2859.method1995(4); class348_sub9 != null; class348_sub9 = (Class348_Sub9) Class218.aDeque_2859.method1990((byte) 123)) {
             if (i_2_ == class348_sub9.anInt6693 && (class348_sub9.anInt6678 == i << 9) && (i_1_ << 9 == class348_sub9.anInt6689) && (class348_sub9.aClass51_6695.anInt941 == class51.anInt941)) {
                 if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
                     Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676);

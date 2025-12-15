@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub3 extends Class348_Sub42 {
+final class Class348_Sub42_Sub3 extends LinkedNode {
     static boolean aBoolean9498;
     byte[] aByteArray9499;
     static int anInt9500;
@@ -72,14 +72,14 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         if (!Class348_Sub42_Sub8.method3196(Class240.mainLogicStep, -114) && !Js5MasterIndex.method2672(Class240.mainLogicStep, -103)) {
             int i_12_ = ((Class132.aPlayer_1907.anIntArray10320[0]) >> 3);
             int i_13_ = ((Class132.aPlayer_1907.anIntArray10317[0]) >> 3);
-            if (i_12_ < 0 || Class367_Sub4.mapLength >> 3 <= i_12_ || i_13_ < 0 || (Class348_Sub40_Sub3.mapWidth >> 3 <= i_13_)) Class346_Sub1.method2703(0, Class367_Sub4.mapLength >> 4, (Class348_Sub40_Sub3.mapWidth >> 4), (byte) -13);
+            if (i_12_ < 0 || Class367_Sub4.mapLength >> 3 <= i_12_ || i_13_ < 0 || (TextureOpBinary.mapWidth >> 3 <= i_13_)) Class346_Sub1.method2703(0, Class367_Sub4.mapLength >> 4, (TextureOpBinary.mapWidth >> 4), (byte) -13);
             else Class346_Sub1.method2703(5000, i_12_, i_13_, (byte) -13);
         } else Class346_Sub1.method2703(5000, Class286_Sub4.anInt6246 >> 12, Class59_Sub2_Sub2.anInt8685 >> 12, (byte) -13);
         anInt9509++;
-        Class348_Sub40_Sub32.method3134(-1);
+        TextureOpInvert.method3134(-1);
         Class348_Sub23_Sub4.method2988(true);
         int i_14_ = -8 % ((-30 - i) / 38);
-        Class348_Sub40_Sub30.method3126((byte) 98);
+        TextureOpHslAdjust.method3126((byte) 98);
         Class130_Sub1.method1131(117);
     }
 
@@ -101,9 +101,9 @@ final class Class348_Sub42_Sub3 extends Class348_Sub42 {
         Class75.aClass348_Sub42_Sub14_1243 = null;
         Class168.aClass46_2249 = null;
         Node.anInt4290 = 0;
-        Class289.aClass262_3705 = null;
+        Class289.aDeque_3705 = null;
         Class75.method749();
-        Class75.aClass262_1254.method1996(127);
+        Class75.aDeque_1254.clear(127);
         Class285.aClass323_4754 = null;
         Class168.aClass323_2252 = null;
         Class67.aSprite_4643 = null;

@@ -75,7 +75,7 @@ final class Class348_Sub14 extends Node {
         try {
             anInt6763++;
             int i_5_ = (-104 + Class367_Sub4.mapLength) / 2;
-            int i_6_ = (Class348_Sub40_Sub3.mapWidth - 104) / 2;
+            int i_6_ = (TextureOpBinary.mapWidth - 104) / 2;
             boolean bool_7_ = bool;
             for (int i_8_ = i_5_; i_8_ < 104 + i_5_; i_8_++) {
                 for (int i_9_ = i_6_; i_6_ + 104 > i_9_; i_9_++) {
@@ -162,8 +162,8 @@ final class Class348_Sub14 extends Node {
             var_toolkit.la();
             var_toolkit.GA(-16777215);
             Class354.method3466(-86);
-            Class348_Sub40_Sub38.anInt9479 = 0;
-            Class318_Sub1_Sub5_Sub1.aClass262_10125.method1996(116);
+            TextureOpClamp.anInt9479 = 0;
+            Class318_Sub1_Sub5_Sub1.aDeque_10125.clear(116);
             if (!Class375.aBoolean4542) {
                 for (int i_37_ = i_5_; 104 + i_5_ > i_37_; i_37_++) {
                     for (int i_38_ = i_6_; 104 + i_6_ > i_38_; i_38_++) {
@@ -172,15 +172,15 @@ final class Class348_Sub14 extends Node {
                                 Interface10 interface10 = ((Interface10) Class348_Sub16_Sub3.method2878(i_39_, i_37_, i_38_));
                                 if (interface10 == null) interface10 = ((Interface10) (Class177.method1353(i_39_, i_37_, i_38_, (aClass6767 != null ? aClass6767 : (aClass6767 = Interface10.class)))));
                                 if (interface10 == null) interface10 = ((Interface10) r_Sub2.method3297(i_39_, i_37_, i_38_));
-                                if (interface10 == null) interface10 = ((Interface10) (Class348_Sub40_Sub32.method3135(i_39_, i_37_, i_38_)));
+                                if (interface10 == null) interface10 = ((Interface10) (TextureOpInvert.method3135(i_39_, i_37_, i_38_)));
                                 if (interface10 != null) {
-                                    Class51 class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-99)));
+                                    Class51 class51 = (TextureOpColourGradient.objectTypeList.method2005(0, interface10.method42(-99)));
                                     if (!class51.aBoolean942 || Class130.membersWorld) {
                                         int i_40_ = class51.anInt921;
                                         if (class51.anIntArray945 != null) {
                                             for (int i_41_ = 0; ((class51.anIntArray945).length > i_41_); i_41_++) {
                                                 if ((class51.anIntArray945[i_41_]) != -1) {
-                                                    Class51 class51_42_ = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (class51.anIntArray945[i_41_])));
+                                                    Class51 class51_42_ = (TextureOpColourGradient.objectTypeList.method2005(0, (class51.anIntArray945[i_41_])));
                                                     if (class51_42_.anInt921 >= 0) i_40_ = (class51_42_.anInt921);
                                                 }
                                             }
@@ -205,10 +205,10 @@ final class Class348_Sub14 extends Node {
                                                     if (i_50_ == 3 && (104 + i_6_ - 1 > i_45_) && 3 + i_38_ > i_45_ && ((0x2c0120 & (is_46_[i_44_ - i_47_][(-i_48_ + 1 + i_45_)])) == 0)) i_45_++;
                                                 }
                                             }
-                                            ObjectTypeList.anIntArray3347[(Class348_Sub40_Sub38.anInt9479)] = class51.anInt941;
-                                            Class348_Sub15.anIntArray6770[(Class348_Sub40_Sub38.anInt9479)] = i_44_;
-                                            Class348_Sub40_Sub37.anIntArray9458[(Class348_Sub40_Sub38.anInt9479)] = i_45_;
-                                            Class348_Sub40_Sub38.anInt9479++;
+                                            ObjectTypeList.anIntArray3347[(TextureOpClamp.anInt9479)] = class51.anInt941;
+                                            Class348_Sub15.anIntArray6770[(TextureOpClamp.anInt9479)] = i_44_;
+                                            TextureOpBoxBlur.anIntArray9458[(TextureOpClamp.anInt9479)] = i_45_;
+                                            TextureOpClamp.anInt9479++;
                                         }
                                     }
                                 }
@@ -224,11 +224,11 @@ final class Class348_Sub14 extends Node {
                         if ((Class132.aPlayer_1907.plane) == i_52_ >> 28) {
                             int i_53_ = ((i_52_ >> 14 & 0x3fff) - za_Sub2.regionTileX);
                             int i_54_ = (i_52_ & 0x3fff) + -Class90.regionTileY;
-                            if (i_53_ >= 0 && i_53_ < Class367_Sub4.mapLength && i_54_ >= 0 && (Class348_Sub40_Sub3.mapWidth > i_54_)) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1999(new Class348_Sub35(i_51_), -20180);
+                            if (i_53_ >= 0 && i_53_ < Class367_Sub4.mapLength && i_54_ >= 0 && (TextureOpBinary.mapWidth > i_54_)) Class318_Sub1_Sub5_Sub1.aDeque_10125.method1999(new Class348_Sub35(i_51_), -20180);
                             else {
                                 Class42 class42 = (Class348_Sub23_Sub2.mapElementTypeList.method1225((r_Sub2.aClass252_10488.anIntArray3239[i_51_]), (byte) 120));
-                                if (class42.anIntArray591 != null && (i_53_ + class42.anInt595 >= 0) && (Class367_Sub4.mapLength > class42.anInt603 + i_53_) && i_54_ + class42.anInt570 >= 0 && (Class348_Sub40_Sub3.mapWidth > (i_54_ - -class42.anInt607)))
-                                    Class318_Sub1_Sub5_Sub1.aClass262_10125.method1999(new Class348_Sub35(i_51_), -20180);
+                                if (class42.anIntArray591 != null && (i_53_ + class42.anInt595 >= 0) && (Class367_Sub4.mapLength > class42.anInt603 + i_53_) && i_54_ + class42.anInt570 >= 0 && (TextureOpBinary.mapWidth > (i_54_ - -class42.anInt607)))
+                                    Class318_Sub1_Sub5_Sub1.aDeque_10125.method1999(new Class348_Sub35(i_51_), -20180);
                             }
                         }
                     }

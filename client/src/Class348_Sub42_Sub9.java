@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class348_Sub42_Sub9 extends Class348_Sub42 {
+abstract class Class348_Sub42_Sub9 extends LinkedNode {
     int anInt9556;
     static int anInt9557;
     static int[] anIntArray9558 = {3, 7, 15};

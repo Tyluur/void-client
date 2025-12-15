@@ -37,8 +37,8 @@ final class Class348_Sub49_Sub2 extends Packet {
         if (i != 2012104999) method3405(118, false);
         for (int i_2_ = 0; Class348_Sub1.anIntArray6547.length > i_2_; i_2_++) {
             int i_3_ = Class348_Sub1.anIntArray6547[i_2_];
-            if (Class39.aIndex_518.method421(false, i_3_)) i_1_++;
-            if (Ground.aIndex_4585.method421(false, i_3_)) i_1_++;
+            if (Class39.aIndex_518.fileReady(false, i_3_)) i_1_++;
+            if (Ground.aIndex_4585.fileReady(false, i_3_)) i_1_++;
         }
         return i_1_;
     }
@@ -102,17 +102,17 @@ final class Class348_Sub49_Sub2 extends Packet {
     static final int[][] method3413(int i, int i_15_, int i_16_, int i_17_, int i_18_, boolean bool, int i_19_, float f, boolean bool_20_) {
         anInt9764++;
         int[][] is = new int[i_18_][i_16_];
-        Class348_Sub40_Sub8 class348_sub40_sub8 = new Class348_Sub40_Sub8();
-        class348_sub40_sub8.anInt9149 = (int) (f * 4096.0F);
-        class348_sub40_sub8.anInt9150 = i_15_;
-        class348_sub40_sub8.anInt9158 = i_17_;
-        class348_sub40_sub8.anInt9164 = i;
-        class348_sub40_sub8.aBoolean9160 = bool_20_;
-        class348_sub40_sub8.method3044(109);
-        NPCDefinition.method797(i_18_, i_16_, (byte) 120);
+        TextureOpPerlinNoise textureOpPerlinNoise = new TextureOpPerlinNoise();
+        textureOpPerlinNoise.anInt9149 = (int) (f * 4096.0F);
+        textureOpPerlinNoise.anInt9150 = i_15_;
+        textureOpPerlinNoise.anInt9158 = i_17_;
+        textureOpPerlinNoise.anInt9164 = i;
+        textureOpPerlinNoise.aBoolean9160 = bool_20_;
+        textureOpPerlinNoise.method3044(109);
+        NPCDefinition.setSize(i_18_, i_16_, (byte) 120);
         if (bool != true) anIntArray9757 = null;
         for (int i_21_ = 0; i_21_ < i_18_; i_21_++)
-            class348_sub40_sub8.method3069(i_21_, is[i_21_], (byte) 99);
+            textureOpPerlinNoise.method3069(i_21_, is[i_21_], (byte) 99);
         return is;
     }
 

@@ -346,7 +346,7 @@ final class ClientOptions extends Node {
     ClientOptions(Class230 class230, int i) {
         try {
             aClass230_7269 = class230;
-            aClass199_7221 = new Class199((Class348_Sub23_Sub1.aClass297_8992.aBoolean3777), QuickChatCatTypeList.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780.toLowerCase().indexOf("arm") != -1);
+            aClass199_7221 = new Class199((Class348_Sub23_Sub1.aClass297_8992.aBoolean3777), QuickChatCatTypeList.anInt2964, TextureOpTexture.anInt9372, Class297.aString3780.toLowerCase().indexOf("arm") != -1);
             this.aClass239_Sub25_7271 = new Option_Sub25(i, this);
             method3423(true, 31286);
         } catch (RuntimeException runtimeexception) {
@@ -357,7 +357,7 @@ final class ClientOptions extends Node {
     ClientOptions(Packet packet, Class230 class230, int i) {
         try {
             aClass230_7269 = class230;
-            aClass199_7221 = new Class199((Class348_Sub23_Sub1.aClass297_8992.aBoolean3777), QuickChatCatTypeList.anInt2964, Class348_Sub40_Sub29.anInt9372, Class297.aString3780.indexOf("arm") != -1);
+            aClass199_7221 = new Class199((Class348_Sub23_Sub1.aClass297_8992.aBoolean3777), QuickChatCatTypeList.anInt2964, TextureOpTexture.anInt9372, Class297.aString3780.indexOf("arm") != -1);
             this.aClass239_Sub25_7271 = new Option_Sub25(i, this);
             method3424(925, packet);
         } catch (RuntimeException runtimeexception) {

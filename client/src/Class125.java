@@ -36,14 +36,14 @@ final class Class125 implements Interface12 {
 
     static final boolean method1110(int i, int i_0_, int i_1_, byte i_2_, int i_3_) {
         anInt4916++;
-        if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false;
+        if (!TextureOpIrregularBricks.aBoolean9307 || !Class23.aBoolean351) return false;
         if (Class225.anInt2946 < 100) return false;
         if (!aa_Sub2.method164(i_1_, i_3_, (byte) -97, i)) return false;
         int i_4_ = i_3_ << Class362.anInt4459;
         int i_5_ = i << Class362.anInt4459;
         if (i_2_ != -79) anInt4919 = 64;
         if (Class121.method1084(i_0_, Class270.anInt3465, i_5_, i_4_, aa_Sub1.aGroundArray5191[i_1_].tileHeight((byte) -86, i, i_3_), Class270.anInt3465, 18507)) {
-            Class348_Sub40_Sub4.anInt9112++;
+            TextureOpVerticalGradient.anInt9112++;
             return true;
         }
         return false;

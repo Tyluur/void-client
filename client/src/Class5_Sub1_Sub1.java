@@ -6,13 +6,13 @@ final class Class5_Sub1_Sub1 extends Class5_Sub1 {
     static int anInt9928;
     static Class207[] aClass207Array9929;
     static int anInt9930;
-    static Class262 aClass262_9931 = new Class262();
+    static Deque aDeque_9931 = new Deque();
     static int[] anIntArray9932 = new int[1000];
 
     public static void method190(byte i) {
         if (i < 23) anIntArray9932 = null;
         aClass207Array9929 = null;
-        aClass262_9931 = null;
+        aDeque_9931 = null;
         anIntArray9932 = null;
     }
 

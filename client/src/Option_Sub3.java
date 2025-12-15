@@ -32,7 +32,7 @@ final class Option_Sub3 extends Option {
 
     static final void method1728(int i, int i_2_, int i_3_, boolean bool, int i_4_) {
         anInt5860++;
-        if (Class320.method2547(i_3_, (byte) 84)) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_3_]));
+        if (Class320.method2547(i_3_, (byte) 84)) Class367_Sub1.method3534(false, i_2_, i_4_, bool, i, (TextureOpKaleidoscope.aClass46ArrayArray9427[i_3_]));
     }
 
     Option_Sub3(ClientOptions clientOptions) {
@@ -76,8 +76,8 @@ final class Option_Sub3 extends Option {
 
     static final void method1731(int i) {
         anInt5863++;
-        Class348_Sub45 class348_sub45 = ((Class348_Sub45) Class318_Sub1_Sub3.aClass262_8744.method1995(i ^ 0x5));
-        boolean bool = (Class289.aClass46_3701 != null || Class348_Sub42.anInt7059 > 0);
+        Class348_Sub45 class348_sub45 = ((Class348_Sub45) Class318_Sub1_Sub3.aDeque_8744.method1995(i ^ 0x5));
+        boolean bool = (Class289.aClass46_3701 != null || LinkedNode.anInt7059 > 0);
         int i_19_ = class348_sub45.method3308((byte) -128);
         int i_20_ = class348_sub45.method3311(119);
         if (bool) Class282.anInt3655 = 1;

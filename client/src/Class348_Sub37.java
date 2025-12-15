@@ -5,7 +5,7 @@
 final class Class348_Sub37 extends Node {
     static int anInt6996;
     static boolean aBoolean6997 = false;
-    Class262 aClass262_6998 = new Class262();
+    Deque aDeque_6998 = new Deque();
     static int anInt6999;
 
     static final void method3030(int i, OpenGLToolkit var_openGLToolkit) {
@@ -20,7 +20,7 @@ final class Class348_Sub37 extends Node {
             byte[] is = class59_sub2_sub1.method567(128, (byte) 111, 16, 128);
             GfxTypeList.anObject3985 = Class179.method1357(is, false, (byte) 103);
         }
-        if (i != 8) method3031(-39, null);
+        if (i != 8) decode(-39, null);
         Class188 class188 = var_openGLToolkit.aClass188_7736;
         if (class188.method1414(35632) && Class369_Sub2.anObject8592 == null) {
             byte[] is = Class5_Sub2.method194(128, -1922, 8, 0.6F, 128, 4.0F, 4.0F, 0.5F, 16.0F, new Class186_Sub1(419684), 16);
@@ -28,20 +28,21 @@ final class Class348_Sub37 extends Node {
         }
     }
 
-    static final Class348_Sub40 method3031(int i, Packet packet) {
+    // method3031
+    static final TextureOp decode(int i, Packet packet) {
         anInt6996++;
         packet.readUnsignedByte(255);
-        int i_0_ = packet.readUnsignedByte(255);
-        Class348_Sub40 class348_sub40 = Class59_Sub1_Sub1.method557(i_0_, (byte) -84);
-        class348_sub40.anInt7036 = packet.readUnsignedByte(255);
+        int type = packet.readUnsignedByte(255);
+        TextureOp op = Class59_Sub1_Sub1.create(type, (byte) -84);
+        op.imageCacheCapacity = packet.readUnsignedByte(255);
         int i_1_ = packet.readUnsignedByte(255);
         if (i < 123) return null;
         for (int i_2_ = 0; i_1_ > i_2_; i_2_++) {
-            int i_3_ = packet.readUnsignedByte(255);
-            class348_sub40.method3049(packet, i_3_, 31015);
+            int code = packet.readUnsignedByte(255);
+            op.decode(packet, code, 31015);
         }
-        class348_sub40.method3044(120);
-        return class348_sub40;
+        op.method3044(120);
+        return op;
     }
 
     public Class348_Sub37() {

@@ -54,14 +54,14 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3 {
         Class341.method2681(9864);
         Class348_Sub22.method2959(-1);
         Class348_Sub23.setToolkit(string, i_11_, bool, 0);
-        Class348_Sub24.method2994(2);
+        ColourImageCacheSlot.method2994(2);
         TimedVarDomain.method1311(5139, Class348_Sub8.active);
         Class369.method3568(Class348_Sub8.active, 4);
         ItemTypeList.method1933(Class21.SPRITES, Class348_Sub8.active, true);
         Class274.method2061(-128);
         Matrix.method901(Class113.aSpriteArray1744, 515880227);
         Class354.method3466(i ^ ~0x4f);
-        Class348_Sub40.updateFeatureMask(-1);
+        TextureOp.updateFeatureMask(-1);
         if (Class240.mainLogicStep == 3) Packet.setStep(2, 4);
         else if (Class240.mainLogicStep == 7) Packet.setStep(2, 8);
         else if (Class240.mainLogicStep != 10) {

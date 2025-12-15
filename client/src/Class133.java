@@ -50,7 +50,7 @@ final class Class133 {
             Class237.method1686(-127);
             Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub23_7231), 0);
             Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub29_7229), 4);
-            Class348_Sub40.updateFeatureMask(-1);
+            TextureOp.updateFeatureMask(-1);
             Class76.method773(true);
             RuntimeException_Sub1.aBoolean4604 = true;
         }

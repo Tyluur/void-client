@@ -227,10 +227,10 @@ final class Class361 {
                     int i_49_;
                     if (Class164.anInt2173 <= 50) i_49_ = Class164.anInt2173 * 5;
                     else i_49_ = -(5 * Class164.anInt2173) + 500;
-                    for (Class348_Sub21 class348_sub21 = ((Class348_Sub21) Class75.aClass262_1254.method1995(4)); class348_sub21 != null; class348_sub21 = (Class348_Sub21) Class75.aClass262_1254.method1990((byte) 126)) {
+                    for (Class348_Sub21 class348_sub21 = ((Class348_Sub21) Class75.aDeque_1254.method1995(4)); class348_sub21 != null; class348_sub21 = (Class348_Sub21) Class75.aDeque_1254.method1990((byte) 126)) {
                         Class42 class42 = (Class75.aMapElementTypeList_1238.method1225(class348_sub21.anInt6847, (byte) 71));
                         if (Class60.method589(class42, -4)) {
-                            if (Class348_Sub40_Sub30.anInt9399 == (class348_sub21.anInt6847)) {
+                            if (TextureOpHslAdjust.anInt9399 == (class348_sub21.anInt6847)) {
                                 int i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / Class75.anInt1259));
                                 int i_51_ = (((Class75.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / Class75.anInt1267) + i_41_);
                                 var_toolkit.method3675(4, (byte) -125, i_50_ - 2, -2 + i_51_, 4, (i_49_ << 24 | 0xffff00));

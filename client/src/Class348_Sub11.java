@@ -48,7 +48,7 @@ final class Class348_Sub11 extends Node implements KeyLog {
     static final boolean method2797(String string, byte i) {
         anInt4763++;
         if (string == null) return false;
-        for (int i_1_ = 0; (i_1_ < Class348_Sub40_Sub30.anInt9383); i_1_++) {
+        for (int i_1_ = 0; (i_1_ < TextureOpHslAdjust.anInt9383); i_1_++) {
             if (string.equalsIgnoreCase(Class83.aStringArray1441[i_1_])) return true;
         }
         if (string.equalsIgnoreCase(Class132.aPlayer_1907.aString10544)) return true;

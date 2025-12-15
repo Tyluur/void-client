@@ -21,7 +21,7 @@ final class Class19 {
             if (class318_sub5.anInt6421 <= Class367_Sub11.anInt7396) class318_sub5.method2373(false);
             else {
                 Class318_Sub5.method2505(i_0_ >> 1, class318_sub5.anInt6420 * 2, 0, i_5_, i_2_ >> 1, class318_sub5.anInt6418, 256 + (class318_sub5.anInt6422 << 9), i_1_, (class318_sub5.anInt6419 << 9) + 256);
-                Class262.aFontRenderer_3326.method2575((byte) 122, i_3_ - -Option_Sub21.anIntArray6062[0], ~0xffffff | class318_sub5.anInt6415, class318_sub5.aString6416, 0, i_4_ - -Option_Sub21.anIntArray6062[1]);
+                Deque.aFontRenderer_3326.method2575((byte) 122, i_3_ - -Option_Sub21.anIntArray6062[0], ~0xffffff | class318_sub5.anInt6415, class318_sub5.aString6416, 0, i_4_ - -Option_Sub21.anIntArray6062[1]);
             }
         }
         anInt305++;
@@ -37,7 +37,7 @@ final class Class19 {
     static final Class223[] method285(int i) {
         anInt309++;
         if (i > -62) method286((byte) 66, null);
-        return (new Class223[]{HitmarkTypeList.aClass223_2868, Packet.aClass223_7175, Class313.aClass223_3934, LightTypeList.aClass223_2489, JavaMatrix.aClass223_5689, Class348_Sub40_Sub21.aClass223_9274, Class28.aClass223_4997, Class174.aClass223_2307, Class149.aClass223_2045, QuestTypeList.aClass223_2507});
+        return (new Class223[]{HitmarkTypeList.aClass223_2868, Packet.aClass223_7175, Class313.aClass223_3934, LightTypeList.aClass223_2489, JavaMatrix.aClass223_5689, TextureOp37.aClass223_9274, Class28.aClass223_4997, Class174.aClass223_2307, Class149.aClass223_2045, QuestTypeList.aClass223_2507});
     }
 
     static final Class57[] method286(byte i, Class297 class297) {

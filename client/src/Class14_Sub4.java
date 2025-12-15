@@ -75,7 +75,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
             this.aOpenGLxToolkit_5082.method3850((byte) -127, this);
             OpenGL.glPixelStorei(3317, 1);
             OpenGL.glPixelStorei(3314, i_8_);
-            OpenGL.glTexImage2Dub(this.anInt5093, 0, this.method228(126), i, i_6_, 0, (Class348_Sub40_Sub3.method3055(111, this.aClass304_5084)), 5121, is, i_7_);
+            OpenGL.glTexImage2Dub(this.anInt5093, 0, this.method228(126), i, i_6_, 0, (TextureOpBinary.method3055(111, this.aClass304_5084)), 5121, is, i_7_);
             OpenGL.glPixelStorei(3314, 0);
             OpenGL.glPixelStorei(3317, 4);
         } catch (RuntimeException runtimeexception) {
@@ -94,7 +94,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
             anInt8634 = i_10_;
             anInt8640 = i;
             this.aOpenGLxToolkit_5082.method3850((byte) 115, this);
-            OpenGL.glTexImage2Dub(this.anInt5093, 0, this.method228(109), i, i_10_, 0, Class348_Sub40_Sub3.method3055(105, this.aClass304_5084), Class130.method1128(-54, this.aClass68_5088), null, 0);
+            OpenGL.glTexImage2Dub(this.anInt5093, 0, this.method228(109), i, i_10_, 0, TextureOpBinary.method3055(105, this.aClass304_5084), Class130.method1128(-54, this.aClass68_5088), null, 0);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("tw.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (class304 != null ? "{...}" : "null") + ',' + (class68 != null ? "{...}" : "null") + ',' + i + ',' + i_10_ + ')'));
         }
@@ -160,7 +160,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
             anInt8634 = i_33_;
             this.aOpenGLxToolkit_5082.method3850((byte) -45, this);
             OpenGL.glPixelStorei(3314, i_35_);
-            OpenGL.glTexImage2Df(this.anInt5093, 0, this.method228(107), i, i_33_, 0, (Class348_Sub40_Sub3.method3055(126, this.aClass304_5084)), 5126, fs, i_34_ * 4);
+            OpenGL.glTexImage2Df(this.anInt5093, 0, this.method228(107), i, i_33_, 0, (TextureOpBinary.method3055(126, this.aClass304_5084)), 5126, fs, i_34_ * 4);
             OpenGL.glPixelStorei(3314, 0);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("tw.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (class304 != null ? "{...}" : "null") + ',' + i + ',' + i_33_ + ',' + (fs != null ? "{...}" : "null") + ',' + i_34_ + ',' + i_35_ + ')'));
@@ -203,7 +203,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
             OpenGL.glPixelStorei(3317, 1);
             if (i_43_ >= -4) method250(74, false, -106);
             if (i_46_ != i_44_) OpenGL.glPixelStorei(3314, i_44_);
-            OpenGL.glTexSubImage2Dub(this.anInt5093, 0, i_47_, i, i_46_, i_45_, Class348_Sub40_Sub3.method3055(120, class304), 5121, is, i_42_);
+            OpenGL.glTexSubImage2Dub(this.anInt5093, 0, i_47_, i, i_46_, i_45_, TextureOpBinary.method3055(120, class304), 5121, is, i_42_);
             if (i_46_ != i_44_) OpenGL.glPixelStorei(3314, 0);
             OpenGL.glPixelStorei(3317, 4);
         } catch (RuntimeException runtimeexception) {
@@ -214,10 +214,10 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
     static final void method254(int i, byte i_48_) {
         if (i_48_ > -79) method252(127, 53);
         if (Loader.skipLobby) {
-            Class348_Sub6.anInt6634 = i;
+            MonochromeImageCacheSlot.anInt6634 = i;
             Class107.anInt1645 = i;
         } else if (Option_Sub12.anInt5969 != 1) {
-            if (Option_Sub12.anInt5969 == 2) Class348_Sub6.anInt6634 = i;
+            if (Option_Sub12.anInt5969 == 2) MonochromeImageCacheSlot.anInt6634 = i;
         } else Class107.anInt1645 = i;
         anInt8643++;
     }

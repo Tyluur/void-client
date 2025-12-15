@@ -55,7 +55,7 @@ final class Class348_Sub44 extends Node {
     final int method3307(int i) {
         anInt7100++;
         if (i < 10) this.anInt7093 = -51;
-        return Class348_Sub40_Sub5.method3060(this.anInt7098, true);
+        return TextureOpVoronoiNoise.method3060(this.anInt7098, true);
     }
 
     Class348_Sub44(int i, int i_0_) {

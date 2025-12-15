@@ -360,9 +360,9 @@ public final class DirectXToolkit extends NativeToolkit {
         if (class68 == Class68.aClass68_1183) {
             if (Class348_Sub45.aClass304_7103 != class304) {
                 if (Class108.aClass304_1662 == class304) return 21;
-                if (Class348_Sub40_Sub38.aClass304_9471 == class304) return 28;
-                if (Class348_Sub40_Sub22.aClass304_9303 == class304) return 50;
-                if (class304 == Class191.aClass304_2571) return 51;
+                if (TextureOpClamp.aClass304_9471 == class304) return 28;
+                if (TextureOpBricks.aClass304_9303 == class304) return 50;
+                if (class304 == MonochromeImageCache.aClass304_2571) return 51;
                 if (class304 == Class318.aClass304_3977) return 77;
             } else return 22;
         }
@@ -664,7 +664,7 @@ public final class DirectXToolkit extends NativeToolkit {
         if (ModelParticleEffector.aClass70_4247 == class70) return 2;
         if (class70 == Class285_Sub2.aClass70_8503) return 0;
         if (Class318_Sub1_Sub2.aClass70_8737 != class70) {
-            if (Class348_Sub40_Sub39.aClass70_9485 == class70) return 3;
+            if (TextureOpRasterizer.aClass70_9485 == class70) return 3;
         } else return 1;
         throw new IllegalArgumentException();
     }
@@ -724,7 +724,7 @@ public final class DirectXToolkit extends NativeToolkit {
         if (i != 594) return 7;
         if (class251 == Class135_Sub2.aClass251_4835) return 1;
         if (class251 != Option_Sub18.aClass251_6030) {
-            if (class251 != Class348_Sub40_Sub38.aClass251_9477) {
+            if (class251 != TextureOpClamp.aClass251_9477) {
                 if (Class57.aClass251_1051 == class251) return 4;
                 if (class251 == Option_Sub14.aClass251_5989) return 256;
             } else return 3;

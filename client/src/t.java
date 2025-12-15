@@ -4,15 +4,15 @@
 
 final class t extends Ground implements Interface19 {
     long nativeid;
-    private final Class262 aClass262_5149 = new Class262();
+    private final Deque aDeque_5149 = new Deque();
     private final SafeModeToolkit anSafeModeToolkit5150;
     private int anInt5151 = -1;
 
     final void method3984(int i, int i_0_, int i_1_, boolean[][] bools, boolean bool, int i_2_, int i_3_) {
         anInt5151 = i_2_;
         int i_4_ = 0;
-        float[] fs = new float[aClass262_5149.method1998(0)];
-        for (Class348_Sub1 class348_sub1 = (Class348_Sub1) aClass262_5149.method1995(4); class348_sub1 != null; class348_sub1 = (Class348_Sub1) aClass262_5149.method1990((byte) 34))
+        float[] fs = new float[aDeque_5149.method1998(0)];
+        for (Class348_Sub1 class348_sub1 = (Class348_Sub1) aDeque_5149.method1995(4); class348_sub1 != null; class348_sub1 = (Class348_Sub1) aDeque_5149.method1990((byte) 34))
             fs[i_4_++] = class348_sub1.method2721(-37);
         q(fs);
         for (int i_5_ = 0; i_5_ < i_1_ + i_1_; i_5_++) {
@@ -93,7 +93,7 @@ final class t extends Ground implements Interface19 {
     }
 
     final void method3981(Class348_Sub1 class348_sub1, int[] is) {
-        aClass262_5149.method1999(class348_sub1, -20180);
+        aDeque_5149.method1999(class348_sub1, -20180);
         V(class348_sub1.hashCode(), class348_sub1.method2724(-1), class348_sub1.method2722(124), class348_sub1.method2717((byte) 83), class348_sub1.method2723(-1), class348_sub1.method2720(-1), is);
     }
 
@@ -120,8 +120,8 @@ final class t extends Ground implements Interface19 {
     final void method3983(int i, int i_63_, int i_64_, boolean[][] bools, boolean bool, int i_65_) {
         anInt5151 = -1;
         int i_66_ = 0;
-        float[] fs = new float[aClass262_5149.method1998(0)];
-        for (Class348_Sub1 class348_sub1 = (Class348_Sub1) aClass262_5149.method1995(4); class348_sub1 != null; class348_sub1 = (Class348_Sub1) aClass262_5149.method1990((byte) 40))
+        float[] fs = new float[aDeque_5149.method1998(0)];
+        for (Class348_Sub1 class348_sub1 = (Class348_Sub1) aDeque_5149.method1995(4); class348_sub1 != null; class348_sub1 = (Class348_Sub1) aDeque_5149.method1990((byte) 40))
             fs[i_66_++] = class348_sub1.method2721(-65);
         q(fs);
         for (int i_67_ = 0; i_67_ < i_64_ + i_64_; i_67_++) {

@@ -294,7 +294,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
         anInt10381 = i_29_;
         this.anInt10411 = i_27_;
         anInt10387 = i_31_;
-        int i_35_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 72, anInt10391).anInt4503);
+        int i_35_ = (TextureOpColourFill.gfxTypeList.method2543((byte) 72, anInt10391).anInt4503);
         if (i_35_ != -1) aAnimationType_10375 = Class10.animTypeList.method835(i_35_, 7);
         else aAnimationType_10375 = null;
     }
@@ -314,7 +314,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
 
     private final Model method2476(int i, Toolkit var_toolkit, byte i_36_) {
         anInt10377++;
-        Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 75, anInt10391);
+        Class368 class368 = TextureOpColourFill.gfxTypeList.method2543((byte) 75, anInt10391);
         if (i_36_ < 126) aClass318_Sub10_10378 = null;
         return class368.method3562(anInt10365, var_toolkit, anInt10403, i, anInt10369, Class10.animTypeList, (byte) 121);
     }

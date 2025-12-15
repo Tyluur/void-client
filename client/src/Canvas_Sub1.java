@@ -72,10 +72,10 @@ final class Canvas_Sub1 extends Canvas {
         if (i_6_ != -364570972) anInt70 = -4;
         anInt68++;
         long l = i | (!bool ? 0 : -2147483648);
-        Class348_Sub13 class348_sub13 = ((Class348_Sub13) Class348_Sub40.aClass356_7041.method3480(l, -6008));
+        Class348_Sub13 class348_sub13 = ((Class348_Sub13) TextureOp.aClass356_7041.method3480(l, -6008));
         if (class348_sub13 == null) {
             class348_sub13 = new Class348_Sub13();
-            Class348_Sub40.aClass356_7041.method3483((byte) 109, l, class348_sub13);
+            TextureOp.aClass356_7041.method3483((byte) 109, l, class348_sub13);
         }
         if (class348_sub13.anIntArray6757.length <= i_7_) {
             int[] is = new int[1 + i_7_];
@@ -155,8 +155,8 @@ final class Canvas_Sub1 extends Canvas {
                     FloorOverlayTypeList.anInt3441++;
                 }
             }
-            if (Class322.mapNpcs != null && Class348_Sub50.aByteArrayArray7212[i_19_] == null && Class322.mapNpcs[i_19_] != -1) {
-                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.MAPS.method393(Class322.mapNpcs[i_19_], 0, i + 2, Option_Sub6.anIntArrayArray5894[i_19_]));
+            if (ColourImageCache.mapNpcs != null && Class348_Sub50.aByteArrayArray7212[i_19_] == null && ColourImageCache.mapNpcs[i_19_] != -1) {
+                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.MAPS.method393(ColourImageCache.mapNpcs[i_19_], 0, i + 2, Option_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class348_Sub50.aByteArrayArray7212[i_19_] == null) {
                     bool = false;
                     FloorOverlayTypeList.anInt3441++;
@@ -185,7 +185,7 @@ final class Canvas_Sub1 extends Canvas {
                         i_22_ = 10;
                         i_21_ = 10;
                     }
-                    bool &= Class348_Sub41.method3154(Class367_Sub4.mapLength, i_21_, (Class348_Sub40_Sub3.mapWidth), i_22_, is, (byte) 39);
+                    bool &= Class348_Sub41.method3154(Class367_Sub4.mapLength, i_21_, (TextureOpBinary.mapWidth), i_22_, is, (byte) 39);
                 }
                 is = Class348_Sub23_Sub1.aByteArrayArray8996[i_20_];
                 if (is != null) {
@@ -195,7 +195,7 @@ final class Canvas_Sub1 extends Canvas {
                         i_24_ = 10;
                         i_23_ = 10;
                     }
-                    bool &= Class348_Sub41.method3154(Class367_Sub4.mapLength, i_23_, (Class348_Sub40_Sub3.mapWidth), i_24_, is, (byte) 39);
+                    bool &= Class348_Sub41.method3154(Class367_Sub4.mapLength, i_23_, (TextureOpBinary.mapWidth), i_24_, is, (byte) 39);
                 }
             }
             if (bool) {
@@ -216,7 +216,7 @@ final class Canvas_Sub1 extends Canvas {
                 if (Class316.clientOptions.aClass239_Sub16_7247.method1789(-32350) != 1) i_27_ = Class9.anIntArray168[Class348_Sub15.anInt6769];
                 else i_27_ = (Class286_Sub8.anIntArray6296[Class348_Sub15.anInt6769]);
                 if (Class348_Sub8.active.method3670()) i_27_++;
-                Class348_Sub42_Sub2.method3171(Class348_Sub8.active, Option_Sub16.anInt6012, 9, 4, Class367_Sub4.mapLength, Class348_Sub40_Sub3.mapWidth, i_27_, bool_25_, Class348_Sub8.active.method3704() > 0);
+                Class348_Sub42_Sub2.method3171(Class348_Sub8.active, Option_Sub16.anInt6012, 9, 4, Class367_Sub4.mapLength, TextureOpBinary.mapWidth, i_27_, bool_25_, Class348_Sub8.active.method3704() > 0);
                 Class348_Sub32.method3018(Class318_Sub1_Sub4_Sub2.anInt10096);
                 if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(Class240.aFontRenderer_4684);
                 else Class348_Sub48.method3328(null);
@@ -238,14 +238,14 @@ final class Canvas_Sub1 extends Canvas {
                 OutputStream_Sub2.anInt101 = Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) == 1 ? -1 : JavaThreadResource.anInt2204;
                 IOException_Sub1.aBoolean86 = Class316.clientOptions.aClass239_Sub9_7256.method1759(-32350) == 1;
                 Class47.aBoolean845 = Class316.clientOptions.aClass239_Sub24_7235.method1820(i ^ ~0x7e5d) == 1;
-                Class338.aClass237_Sub1_4197 = new Class237_Sub1(4, Class367_Sub4.mapLength, Class348_Sub40_Sub3.mapWidth, false);
+                Class338.aClass237_Sub1_4197 = new Class237_Sub1(4, Class367_Sub4.mapLength, TextureOpBinary.mapWidth, false);
                 if (Class312.anInt3931 != 0) Class44.method385(false, Class338.aClass237_Sub1_4197, Class347.aByteArrayArray4281);
                 else Class348_Sub1_Sub1.method2727((byte) -65, Class338.aClass237_Sub1_4197, (Class347.aByteArrayArray4281));
-                Class108.method1015(Class367_Sub4.mapLength >> 4, (Class348_Sub40_Sub3.mapWidth >> 4), true);
+                Class108.method1015(Class367_Sub4.mapLength >> 4, (TextureOpBinary.mapWidth >> 4), true);
                 Class348_Sub42_Sub3.method3175((byte) -77);
                 if (bool_25_) {
                     Class243.method1879(true);
-                    TimedVarDomain.aClass237_Sub1_5067 = new Class237_Sub1(1, Class367_Sub4.mapLength, Class348_Sub40_Sub3.mapWidth, true);
+                    TimedVarDomain.aClass237_Sub1_5067 = new Class237_Sub1(1, Class367_Sub4.mapLength, TextureOpBinary.mapWidth, true);
                     if (Class312.anInt3931 == 0) {
                         Class348_Sub1_Sub1.method2727((byte) -44, (TimedVarDomain.aClass237_Sub1_5067), (ModelParticleEmitter.aByteArrayArray1887));
                         Class289.method2193(true, (byte) -119);
@@ -292,16 +292,16 @@ final class Canvas_Sub1 extends Canvas {
                 else SkyBoxTypeList.method824(0);
                 for (int i_30_ = 0; i_30_ < 4; i_30_++) {
                     for (int i_31_ = 0; Class367_Sub4.mapLength > i_31_; i_31_++) {
-                        for (int i_32_ = 0; Class348_Sub40_Sub3.mapWidth > i_32_; i_32_++)
+                        for (int i_32_ = 0; TextureOpBinary.mapWidth > i_32_; i_32_++)
                             Class203.method1479(i_32_, (byte) -126, i_31_, i_30_);
                     }
                 }
-                Class348_Sub40_Sub9.method3072((byte) -99);
+                TextureOpMonorchromeEdgeDetector.method3072((byte) -99);
                 Class369_Sub1.method3570(false);
                 Class363.method3514((byte) -105);
                 Class348_Sub18.method2938((byte) 62);
                 Class130_Sub1.method1131(99);
-                if (Class52.aFrame4904 != null && Class348_Sub40_Sub8.aClass238_9165 != null && Class240.mainLogicStep == 11) {
+                if (Class52.aFrame4904 != null && TextureOpPerlinNoise.aClass238_9165 != null && Class240.mainLogicStep == 11) {
                     Class352.anInt4335++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class327.aClass351_4094, (Class348_Sub23_Sub2.aClass77_9029), i ^ ~0x55);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 108, 1057001181);
@@ -310,8 +310,8 @@ final class Canvas_Sub1 extends Canvas {
                 if (Class312.anInt3931 == 0) {
                     int i_33_ = ((Toolkit.anInt4581 + -(Class367_Sub4.mapLength >> 4)) / 8);
                     int i_34_ = ((Toolkit.anInt4581 - -(Class367_Sub4.mapLength >> 4)) / 8);
-                    int i_35_ = ((Class327.anInt4095 + -(Class348_Sub40_Sub3.mapWidth >> 4)) / 8);
-                    int i_36_ = (((Class348_Sub40_Sub3.mapWidth >> 4) + Class327.anInt4095) / 8);
+                    int i_35_ = ((Class327.anInt4095 + -(TextureOpBinary.mapWidth >> 4)) / 8);
+                    int i_36_ = (((TextureOpBinary.mapWidth >> 4) + Class327.anInt4095) / 8);
                     for (int i_37_ = i_33_ - 1; i_37_ <= i_34_ - -1; i_37_++) {
                         for (int i_38_ = i_35_ + -1; i_38_ <= i_36_ - -1; i_38_++) {
                             if (i_33_ > i_37_ || i_34_ < i_37_ || i_38_ < i_35_ || i_38_ > i_36_) {
@@ -324,7 +324,7 @@ final class Canvas_Sub1 extends Canvas {
                 if (Class240.mainLogicStep != 4) {
                     if (Class240.mainLogicStep != 8) {
                         Packet.setStep(2, 10);
-                        if (Class348_Sub40_Sub8.aClass238_9165 != null) {
+                        if (TextureOpPerlinNoise.aClass238_9165 != null) {
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Js5MasterIndex.aClass351_4223), (Class348_Sub23_Sub2.aClass77_9029), -106);
                             Class348_Sub42_Sub14.method3243(127, class348_sub47);
                         }

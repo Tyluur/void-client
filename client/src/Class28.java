@@ -27,7 +27,7 @@ final class Class28 implements Interface15 {
                 return itemDefinition.aString2795;
             }
             if (i != 1) method54(85, -41L, null, null);
-            if (class138 == Class348_Sub42_Sub5.aClass138_9530 || class138 == Class348_Sub49_Sub1.aClass138_9748 || Class71.aClass138_1213 == class138) return Class348_Sub7.enumTypeList.findEnum(true, is[0]).lookup((int) l, i ^ 0x48);
+            if (class138 == Texture.aClass138_9530 || class138 == Class348_Sub49_Sub1.aClass138_9748 || Class71.aClass138_1213 == class138) return Class348_Sub7.enumTypeList.findEnum(true, is[0]).lookup((int) l, i ^ 0x48);
             return null;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("hu.A(" + i + ',' + l + ',' + (class138 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));

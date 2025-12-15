@@ -291,7 +291,7 @@ class Packet extends Node {
     static final void method3354(int i) {
         if (Class348_Sub34.aToolkit6968 != null) {
             Class348_Sub34.aToolkit6968.method3635((byte) -44);
-            Class348_Sub40_Sub9.aFontRenderer_9173 = null;
+            TextureOpMonorchromeEdgeDetector.aFontRenderer_9173 = null;
             Class348_Sub34.aToolkit6968 = null;
         }
         int i_37_ = -97 % ((i - -14) / 37);
@@ -600,7 +600,7 @@ class Packet extends Node {
             r_Sub2.ANIMATIONS.discardUnpacked = 1;
             Class78.GRAPHICS.discardUnpacked = 1;
         }
-        if (newStep == STEP_GAME_SCREEN || newStep == STEP_LOGIN_SCREEN) Class348_Sub40_Sub16.method3088(9);
+        if (newStep == STEP_GAME_SCREEN || newStep == STEP_LOGIN_SCREEN) TextureOpCombine.method3088(9);
         boolean bool = (i == newStep || Class348_Sub42_Sub8.method3196(newStep, i ^ ~0x58) || Js5MasterIndex.method2672(newStep, -100));
         boolean bool_72_ = (Class240.mainLogicStep == 2 || Class348_Sub42_Sub8.method3196(Class240.mainLogicStep, -110) || Js5MasterIndex.method2672(Class240.mainLogicStep, -128));
         if (bool != bool_72_) {
@@ -608,7 +608,7 @@ class Packet extends Node {
                 Class267.anInt3428 = Class345.anInt4270;
                 if (Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350) != 0) {
                     Class315.method2355(Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350), (byte) 50, false, Class59_Sub2_Sub1.MUSIC, Class345.anInt4270, 0, 2);
-                    Class348_Sub40_Sub17_Sub1.method3093(i ^ 0x66);
+                    TextureOpTiledSprite.method3093(i ^ 0x66);
                 } else JavaSurface.method3007(2, 22684);
                 SystemInfo.aClass248_6601.method1892(-117, false);
             } else {

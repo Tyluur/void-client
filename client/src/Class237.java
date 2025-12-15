@@ -50,9 +50,9 @@ class Class237 {
                                 int i_13_ = (Class348_Sub42_Sub17.method3266(var_toolkit, 127, class277_10_));
                                 if (Class160.aBooleanArrayArray2133[i_11_][i_12_]) {
                                     Class348_Sub15.anIntArray6775[0] = class277_10_.anInt3563;
-                                    Class348_Sub40_Sub38.anIntArray9480[0] = i_13_;
+                                    TextureOpClamp.anIntArray9480[0] = i_13_;
                                     Class223.anIntArray2899[0] = class277_10_.anInt3575;
-                                    Class348_Sub6.anIntArray6631[0] = class277_10_.anInt3570;
+                                    MonochromeImageCacheSlot.anIntArray6631[0] = class277_10_.anInt3570;
                                     Class306.anIntArray3873[0] = class277_10_.anInt3564;
                                     Class180.anIntArray2370[0] = 256;
                                 }
@@ -69,9 +69,9 @@ class Class237 {
                                 int i_18_ = (Class348_Sub42_Sub17.method3266(var_toolkit, 125, class277_15_));
                                 if (Class160.aBooleanArrayArray2133[i_16_][i_17_]) {
                                     Class348_Sub15.anIntArray6775[2] = class277_15_.anInt3563;
-                                    Class348_Sub40_Sub38.anIntArray9480[2] = i_18_;
+                                    TextureOpClamp.anIntArray9480[2] = i_18_;
                                     Class223.anIntArray2899[2] = class277_15_.anInt3575;
-                                    Class348_Sub6.anIntArray6631[2] = class277_15_.anInt3570;
+                                    MonochromeImageCacheSlot.anIntArray6631[2] = class277_15_.anInt3570;
                                     Class306.anIntArray3873[2] = class277_15_.anInt3564;
                                     Class180.anIntArray2370[2] = 512;
                                 }
@@ -90,9 +90,9 @@ class Class237 {
                                 int i_23_ = (Class348_Sub42_Sub17.method3266(var_toolkit, i_3_ ^ ~0x7c, class277_20_));
                                 if (Class160.aBooleanArrayArray2133[i_21_][i_22_]) {
                                     Class348_Sub15.anIntArray6775[6] = class277_20_.anInt3563;
-                                    Class348_Sub40_Sub38.anIntArray9480[6] = i_23_;
+                                    TextureOpClamp.anIntArray9480[6] = i_23_;
                                     Class223.anIntArray2899[6] = class277_20_.anInt3575;
-                                    Class348_Sub6.anIntArray6631[6] = class277_20_.anInt3570;
+                                    MonochromeImageCacheSlot.anIntArray6631[6] = class277_20_.anInt3570;
                                     Class306.anIntArray3873[6] = class277_20_.anInt3564;
                                     Class180.anIntArray2370[6] = 64;
                                 }
@@ -109,9 +109,9 @@ class Class237 {
                                 int i_28_ = (Class348_Sub42_Sub17.method3266(var_toolkit, i_3_ + 127, class277_25_));
                                 if (Class160.aBooleanArrayArray2133[i_26_][i_27_]) {
                                     Class348_Sub15.anIntArray6775[4] = class277_25_.anInt3563;
-                                    Class348_Sub40_Sub38.anIntArray9480[4] = i_28_;
+                                    TextureOpClamp.anIntArray9480[4] = i_28_;
                                     Class223.anIntArray2899[4] = class277_25_.anInt3575;
-                                    Class348_Sub6.anIntArray6631[4] = class277_25_.anInt3570;
+                                    MonochromeImageCacheSlot.anIntArray6631[4] = class277_25_.anInt3570;
                                     Class306.anIntArray3873[4] = class277_25_.anInt3564;
                                     Class180.anIntArray2370[4] = 128;
                                 }
@@ -135,9 +135,9 @@ class Class237 {
                                     i_34_ = 0x7 & i_34_;
                                     if ((Class160.aBooleanArrayArray2133[i_31_][i_34_]) && (Class306.anIntArray3873[i_33_] <= (class277_30_.anInt3564))) {
                                         Class348_Sub15.anIntArray6775[i_33_] = (class277_30_.anInt3563);
-                                        Class348_Sub40_Sub38.anIntArray9480[i_33_] = i_35_;
+                                        TextureOpClamp.anIntArray9480[i_33_] = i_35_;
                                         Class223.anIntArray2899[i_33_] = (class277_30_.anInt3575);
-                                        Class348_Sub6.anIntArray6631[i_33_] = (class277_30_.anInt3570);
+                                        MonochromeImageCacheSlot.anIntArray6631[i_33_] = (class277_30_.anInt3570);
                                         if (Class306.anIntArray3873[i_33_] != (class277_30_.anInt3564)) Class180.anIntArray2370[i_33_] = 32;
                                         else Class180.anIntArray2370[i_33_] = (Class273.method2057((Class180.anIntArray2370[i_33_]), 32));
                                         Class306.anIntArray3873[i_33_] = (class277_30_.anInt3564);
@@ -166,9 +166,9 @@ class Class237 {
                                     i_42_ = 0x7 & i_42_;
                                     if ((Class160.aBooleanArrayArray2133[i_39_][i_42_]) && ((class277_38_.anInt3564) >= Class306.anIntArray3873[i_41_])) {
                                         Class348_Sub15.anIntArray6775[i_41_] = (class277_38_.anInt3563);
-                                        Class348_Sub40_Sub38.anIntArray9480[i_41_] = i_43_;
+                                        TextureOpClamp.anIntArray9480[i_41_] = i_43_;
                                         Class223.anIntArray2899[i_41_] = (class277_38_.anInt3575);
-                                        Class348_Sub6.anIntArray6631[i_41_] = (class277_38_.anInt3570);
+                                        MonochromeImageCacheSlot.anIntArray6631[i_41_] = (class277_38_.anInt3570);
                                         if (Class306.anIntArray3873[i_41_] != (class277_38_.anInt3564)) Class180.anIntArray2370[i_41_] = 16;
                                         else Class180.anIntArray2370[i_41_] = (Class273.method2057((Class180.anIntArray2370[i_41_]), 16));
                                         Class306.anIntArray3873[i_41_] = (class277_38_.anInt3564);
@@ -197,9 +197,9 @@ class Class237 {
                                     i_49_ = 0x7 & i_49_;
                                     if ((Class160.aBooleanArrayArray2133[i_47_][i_50_]) && (Class306.anIntArray3873[i_49_] <= (class277_46_.anInt3564))) {
                                         Class348_Sub15.anIntArray6775[i_49_] = (class277_46_.anInt3563);
-                                        Class348_Sub40_Sub38.anIntArray9480[i_49_] = i_51_;
+                                        TextureOpClamp.anIntArray9480[i_49_] = i_51_;
                                         Class223.anIntArray2899[i_49_] = (class277_46_.anInt3575);
-                                        Class348_Sub6.anIntArray6631[i_49_] = (class277_46_.anInt3570);
+                                        MonochromeImageCacheSlot.anIntArray6631[i_49_] = (class277_46_.anInt3570);
                                         if (Class306.anIntArray3873[i_49_] != (class277_46_.anInt3564)) Class180.anIntArray2370[i_49_] = 8;
                                         else Class180.anIntArray2370[i_49_] = (Class273.method2057((Class180.anIntArray2370[i_49_]), 8));
                                         Class306.anIntArray3873[i_49_] = (class277_46_.anInt3564);
@@ -228,9 +228,9 @@ class Class237 {
                                     i_58_ = 0x7 & i_58_;
                                     if ((Class160.aBooleanArrayArray2133[i_55_][i_58_]) && (Class306.anIntArray3873[i_57_] <= (class277_54_.anInt3564))) {
                                         Class348_Sub15.anIntArray6775[i_57_] = (class277_54_.anInt3563);
-                                        Class348_Sub40_Sub38.anIntArray9480[i_57_] = i_59_;
+                                        TextureOpClamp.anIntArray9480[i_57_] = i_59_;
                                         Class223.anIntArray2899[i_57_] = (class277_54_.anInt3575);
-                                        Class348_Sub6.anIntArray6631[i_57_] = (class277_54_.anInt3570);
+                                        MonochromeImageCacheSlot.anIntArray6631[i_57_] = (class277_54_.anInt3570);
                                         if (class277_54_.anInt3564 == Class306.anIntArray3873[i_57_]) Class180.anIntArray2370[i_57_] = (Class273.method2057((Class180.anIntArray2370[i_57_]), 4));
                                         else Class180.anIntArray2370[i_57_] = 4;
                                         Class306.anIntArray3873[i_57_] = (class277_54_.anInt3564);
@@ -250,9 +250,9 @@ class Class237 {
                     int i_63_ = -(i_4_ * 2) + i_62_ & 0x7;
                     if (Class160.aBooleanArrayArray2133[i_7_][i_62_] && (Class306.anIntArray3873[i_63_] <= class277.anInt3564)) {
                         Class348_Sub15.anIntArray6775[i_63_] = class277.anInt3563;
-                        Class348_Sub40_Sub38.anIntArray9480[i_63_] = i_61_;
+                        TextureOpClamp.anIntArray9480[i_63_] = i_61_;
                         Class223.anIntArray2899[i_63_] = class277.anInt3575;
-                        Class348_Sub6.anIntArray6631[i_63_] = class277.anInt3570;
+                        MonochromeImageCacheSlot.anIntArray6631[i_63_] = class277.anInt3570;
                         if (Class306.anIntArray3873[i_63_] != class277.anInt3564) Class180.anIntArray2370[i_63_] = 2;
                         else Class180.anIntArray2370[i_63_] = Class273.method2057((Class180.anIntArray2370[i_63_]), 2);
                         Class306.anIntArray3873[i_63_] = class277.anInt3564;
@@ -359,7 +359,7 @@ class Class237 {
                             boolean bool_92_ = (class277 != null && (class277.anInt3563 != class277.anInt3569));
                             if (!bool_92_) {
                                 for (int i_93_ = 0; i_93_ < 8; i_93_++) {
-                                    if (Class306.anIntArray3873[i_93_] >= 0 && ((Class348_Sub15.anIntArray6775[i_93_]) != (Class348_Sub40_Sub38.anIntArray9480[i_93_]))) {
+                                    if (Class306.anIntArray3873[i_93_] >= 0 && ((Class348_Sub15.anIntArray6775[i_93_]) != (TextureOpClamp.anIntArray9480[i_93_]))) {
                                         bool_92_ = true;
                                         break;
                                     }
@@ -404,7 +404,7 @@ class Class237 {
                                 is_97_ = Class68.anIntArrayArray1190[i_76_];
                                 i_98_ = (class22 != null ? Class43.anIntArray619[i_76_] : 0);
                                 is_99_ = (Class348_Sub12.anIntArrayArray6740[i_76_]);
-                                i_100_ = (class277 == null ? 0 : (Class348_Sub40_Sub18.anIntArray9249[i_76_]));
+                                i_100_ = (class277 == null ? 0 : (TextureOpColourFill.anIntArray9249[i_76_]));
                             } else if (bool_75_) {
                                 i_100_ = (class277 == null ? 0 : Class48.anIntArray860[i_76_]);
                                 is_96_ = Class98.anIntArrayArray1566[i_76_];
@@ -534,8 +534,8 @@ class Class237 {
                                                 }
                                             }
                                             if (i_121_ < 8 && ((Class306.anIntArray3873[i_122_]) > (class277.anInt3564))) {
-                                                if (is_105_ != null) is_105_[i_103_] = (Class348_Sub40_Sub38.anIntArray9480[i_122_]);
-                                                is_110_[i_103_] = (Class348_Sub6.anIntArray6631[i_122_]);
+                                                if (is_105_ != null) is_105_[i_103_] = (TextureOpClamp.anIntArray9480[i_122_]);
+                                                is_110_[i_103_] = (MonochromeImageCacheSlot.anIntArray6631[i_122_]);
                                                 is_109_[i_103_] = (Class223.anIntArray2899[i_122_]);
                                                 is_108_[i_103_] = (Class348_Sub15.anIntArray6775[i_122_]);
                                             } else {
@@ -550,7 +550,7 @@ class Class237 {
                                     }
                                     if (!this.underwater && i_66_ == 0) Class333.method2643(i_71_, i_73_, class277.anInt3559, 8 * (class277.anInt3558), class277.anInt3574);
                                     if (i_76_ != 12 && (class277.anInt3563 != -1) && class277.aBoolean3566) bool = true;
-                                } else if (bool_94_) i_102_ += (Class348_Sub40_Sub18.anIntArray9249[i_76_]);
+                                } else if (bool_94_) i_102_ += (TextureOpColourFill.anIntArray9249[i_76_]);
                                 else if (!bool_75_) i_102_ += Class334.anIntArray4152[i_76_];
                                 else i_102_ += Class48.anIntArray860[i_76_];
                                 if (class22 != null) {
@@ -648,8 +648,8 @@ class Class237 {
                                                 }
                                             }
                                             if (i_141_ < 8 && (Class306.anIntArray3873[i_142_]) >= 0) {
-                                                if (is_105_ != null) is_105_[i_103_] = (Class348_Sub40_Sub38.anIntArray9480[i_142_]);
-                                                is_110_[i_103_] = (Class348_Sub6.anIntArray6631[i_142_]);
+                                                if (is_105_ != null) is_105_[i_103_] = (TextureOpClamp.anIntArray9480[i_142_]);
+                                                is_110_[i_103_] = (MonochromeImageCacheSlot.anIntArray6631[i_142_]);
                                                 is_109_[i_103_] = (Class223.anIntArray2899[i_142_]);
                                                 is_108_[i_103_] = (Class348_Sub15.anIntArray6775[i_142_]);
                                             } else {
@@ -794,17 +794,17 @@ class Class237 {
             int[][] is = (new int[this.width]
                     [this.height]);
             if (i <= -122) {
-                if (Class348_Sub24.anIntArray6878 == null || (this.height != Class348_Sub24.anIntArray6878.length)) {
+                if (ColourImageCacheSlot.anIntArray6878 == null || (this.height != ColourImageCacheSlot.anIntArray6878.length)) {
                     Class318_Sub9_Sub1.anIntArray8785 = new int[this.height];
-                    Class348_Sub40_Sub6.anIntArray9135 = new int[this.height];
+                    TextureOpPolarDistortion.anIntArray9135 = new int[this.height];
                     Class265.anIntArray4692 = new int[this.height];
-                    Class348_Sub24.anIntArray6878 = new int[this.height];
+                    ColourImageCacheSlot.anIntArray6878 = new int[this.height];
                     Class348_Sub8.anIntArray6655 = new int[this.height];
                 }
                 for (int i_180_ = 0; this.levels > i_180_; i_180_++) {
                     for (int i_181_ = 0; this.height > i_181_; i_181_++) {
-                        Class348_Sub24.anIntArray6878[i_181_] = 0;
-                        Class348_Sub40_Sub6.anIntArray9135[i_181_] = 0;
+                        ColourImageCacheSlot.anIntArray6878[i_181_] = 0;
+                        TextureOpPolarDistortion.anIntArray9135[i_181_] = 0;
                         Class348_Sub8.anIntArray6655[i_181_] = 0;
                         Class265.anIntArray4692[i_181_] = 0;
                         Class318_Sub9_Sub1.anIntArray8785[i_181_] = 0;
@@ -816,8 +816,8 @@ class Class237 {
                                 int i_185_ = ((aByteArrayArrayArray3113[i_180_][i_184_][i_183_]) & 0xff);
                                 if (i_185_ > 0) {
                                     Class22 class22 = aFloorUnderlayTypeList_3120.method1380(true, -1 + i_185_);
-                                    Class348_Sub24.anIntArray6878[i_183_] += class22.anInt341;
-                                    Class348_Sub40_Sub6.anIntArray9135[i_183_] += class22.anInt332;
+                                    ColourImageCacheSlot.anIntArray6878[i_183_] += class22.anInt341;
+                                    TextureOpPolarDistortion.anIntArray9135[i_183_] += class22.anInt332;
                                     Class348_Sub8.anIntArray6655[i_183_] += class22.anInt335;
                                     Class265.anIntArray4692[i_183_] += class22.anInt343;
                                     Class318_Sub9_Sub1.anIntArray8785[i_183_]++;
@@ -828,8 +828,8 @@ class Class237 {
                                 int i_187_ = 0xff & (aByteArrayArrayArray3113[i_180_][i_186_][i_183_]);
                                 if (i_187_ > 0) {
                                     Class22 class22 = aFloorUnderlayTypeList_3120.method1380(true, -1 + i_187_);
-                                    Class348_Sub24.anIntArray6878[i_183_] -= class22.anInt341;
-                                    Class348_Sub40_Sub6.anIntArray9135[i_183_] -= class22.anInt332;
+                                    ColourImageCacheSlot.anIntArray6878[i_183_] -= class22.anInt341;
+                                    TextureOpPolarDistortion.anIntArray9135[i_183_] -= class22.anInt332;
                                     Class348_Sub8.anIntArray6655[i_183_] -= class22.anInt335;
                                     Class265.anIntArray4692[i_183_] -= class22.anInt343;
                                     Class318_Sub9_Sub1.anIntArray8785[i_183_]--;
@@ -846,18 +846,18 @@ class Class237 {
                                 int i_194_ = 5 + i_193_;
                                 if (i_194_ < this.height) {
                                     i_190_ += (Class348_Sub8.anIntArray6655[i_194_]);
-                                    i_189_ += (Class348_Sub40_Sub6.anIntArray9135[i_194_]);
-                                    i_188_ += (Class348_Sub24.anIntArray6878[i_194_]);
+                                    i_189_ += (TextureOpPolarDistortion.anIntArray9135[i_194_]);
+                                    i_188_ += (ColourImageCacheSlot.anIntArray6878[i_194_]);
                                     i_192_ += (Class318_Sub9_Sub1.anIntArray8785[i_194_]);
                                     i_191_ += Class265.anIntArray4692[i_194_];
                                 }
                                 int i_195_ = i_193_ + -5;
                                 if (i_195_ >= 0) {
                                     i_191_ -= Class265.anIntArray4692[i_195_];
-                                    i_188_ -= (Class348_Sub24.anIntArray6878[i_195_]);
+                                    i_188_ -= (ColourImageCacheSlot.anIntArray6878[i_195_]);
                                     i_190_ -= (Class348_Sub8.anIntArray6655[i_195_]);
                                     i_192_ -= (Class318_Sub9_Sub1.anIntArray8785[i_195_]);
-                                    i_189_ -= (Class348_Sub40_Sub6.anIntArray9135[i_195_]);
+                                    i_189_ -= (TextureOpPolarDistortion.anIntArray9135[i_195_]);
                                 }
                                 if (i_193_ >= 0 && i_191_ > 0 && i_192_ > 0) is[i_182_][i_193_] = Class247.method1890(i_190_ / i_192_, (byte) 66, i_189_ / i_192_, (256 * i_188_ / i_191_));
                             }
@@ -981,10 +981,10 @@ class Class237 {
                             int i_232_ = 0;
                             int i_233_ = 0;
                             if (i_228_ != 0) {
-                                i_233_ = (class277 == null ? 0 : (Class348_Sub40_Sub18.anIntArray9249[i_228_]));
+                                i_233_ = (class277 == null ? 0 : (TextureOpColourFill.anIntArray9249[i_228_]));
                                 i_232_ = (class22 != null ? Class43.anIntArray619[i_228_] : 0);
-                            } else if (class277 != null) i_233_ = (Class348_Sub40_Sub18.anIntArray9249[i_228_]);
-                            else if (class22 != null) i_232_ = (Class348_Sub40_Sub18.anIntArray9249[i_228_]);
+                            } else if (class277 != null) i_233_ = (TextureOpColourFill.anIntArray9249[i_228_]);
+                            else if (class22 != null) i_232_ = (TextureOpColourFill.anIntArray9249[i_228_]);
                             int i_234_ = i_233_ + i_232_;
                             int i_235_ = 0;
                             if (i_234_ != 0) {
@@ -1240,7 +1240,7 @@ class Class237 {
 
     static final void method1686(int i) {
         int i_308_ = -110 / ((i - -74) / 44);
-        if (Class348_Sub40_Sub29.anInt9372 > 1) Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub17_7263), 4);
+        if (TextureOpTexture.anInt9372 > 1) Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub17_7263), 4);
         else Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub17_7263), 2);
         anInt3106++;
     }

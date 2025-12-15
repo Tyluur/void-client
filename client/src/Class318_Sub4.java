@@ -16,7 +16,7 @@ final class Class318_Sub4 extends Class318 {
         try {
             if (i_0_ >= -32) method2502(null, -18);
             anInt6412++;
-            if (var_nativeToolkit.method3880(Class68.aClass68_1183, Class348_Sub40_Sub38.aClass304_9471, (byte) 125)) {
+            if (var_nativeToolkit.method3880(Class68.aClass68_1183, TextureOpClamp.aClass304_9471, (byte) 125)) {
                 byte[] is_3_ = new byte[i * i_2_];
                 for (int i_4_ = 0; i > i_4_; i_4_++) {
                     int i_5_ = is[i_4_] + i_2_ * i_4_;

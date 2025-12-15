@@ -42,7 +42,7 @@ final class Class348_Sub41 extends Node {
                     int i_13_ = i_11_ - -i_0_;
                     int i_14_ = i_2_ + i_10_;
                     if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i && -1 + i_1_ > i_14_) {
-                        Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, i_4_);
+                        Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, i_4_);
                         if (i_12_ != 22 || Class316.clientOptions.aClass239_Sub4_7220.method1737(-32350) != 0 || class51.anInt874 != 0 || (class51.anInt920 == 1) || class51.aBoolean947) {
                             bool_7_ = true;
                             if (!class51.method485(9773)) {
@@ -81,14 +81,14 @@ final class Class348_Sub41 extends Node {
             int i_18_ = za_Sub2.regionTileX;
             int i_19_ = Class90.regionTileY;
             za_Sub2.regionTileX = (-(Class367_Sub4.mapLength >> 4) + Toolkit.anInt4581) * 8;
-            Class90.regionTileY = 8 * (Class327.anInt4095 - (Class348_Sub40_Sub3.mapWidth >> 4));
+            Class90.regionTileY = 8 * (Class327.anInt4095 - (TextureOpBinary.mapWidth >> 4));
             Class348_Sub26.aClass348_Sub42_Sub14_6885 = Class75.method766(Toolkit.anInt4581 * 8, Class327.anInt4095 * 8);
             r_Sub2.aClass252_10488 = null;
             int i_20_ = za_Sub2.regionTileX - i_18_;
             int i_21_ = -i_19_ + Class90.regionTileY;
             if (i_17_ == 11) {
                 for (int i_22_ = 0; Class348_Sub32.anInt6930 > i_22_; i_22_++) {
-                    Class348_Sub22 class348_sub22 = Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_22_];
+                    Class348_Sub22 class348_sub22 = TextureOpIrregularBricks.aClass348_Sub22Array9319[i_22_];
                     if (class348_sub22 != null) {
                         Npc npc = (class348_sub22.aNpc_6859);
                         for (int i_23_ = 0; i_23_ < 10; i_23_++) {
@@ -103,9 +103,9 @@ final class Class348_Sub41 extends Node {
                 IDKTypeList.anInt2057 = 0;
                 boolean bool_24_ = false;
                 int i_25_ = Class367_Sub4.mapLength * 512 - 512;
-                int i_26_ = 512 * (-1 + Class348_Sub40_Sub3.mapWidth);
+                int i_26_ = 512 * (-1 + TextureOpBinary.mapWidth);
                 for (int i_27_ = 0; (Class348_Sub32.anInt6930 > i_27_); i_27_++) {
-                    Class348_Sub22 class348_sub22 = Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_27_];
+                    Class348_Sub22 class348_sub22 = TextureOpIrregularBricks.aClass348_Sub22Array9319[i_27_];
                     if (class348_sub22 != null) {
                         Npc npc = (class348_sub22.aNpc_6859);
                         npc.y -= 512 * i_21_;
@@ -119,7 +119,7 @@ final class Class348_Sub41 extends Node {
                             for (int i_29_ = 0; i_29_ < 10; i_29_++) {
                                 npc.anIntArray10320[i_29_] -= i_20_;
                                 npc.anIntArray10317[i_29_] -= i_21_;
-                                if ((npc.anIntArray10320[i_29_]) < 0 || ((npc.anIntArray10320[i_29_]) >= Class367_Sub4.mapLength) || (npc.anIntArray10317[i_29_]) < 0 || (Class348_Sub40_Sub3.mapWidth <= (npc.anIntArray10317[i_29_])))
+                                if ((npc.anIntArray10320[i_29_]) < 0 || ((npc.anIntArray10320[i_29_]) >= Class367_Sub4.mapLength) || (npc.anIntArray10317[i_29_]) < 0 || (TextureOpBinary.mapWidth <= (npc.anIntArray10317[i_29_])))
                                     bool_28_ = false;
                             }
                             if (!bool_28_) {
@@ -132,7 +132,7 @@ final class Class348_Sub41 extends Node {
                 }
                 if (bool_24_) {
                     Class348_Sub32.anInt6930 = Class282.aClass356_3654.method3474(1);
-                    Class282.aClass356_3654.method3477(3, Class348_Sub40_Sub23.aClass348_Sub22Array9319);
+                    Class282.aClass356_3654.method3477(3, TextureOpIrregularBricks.aClass348_Sub22Array9319);
                 }
             }
             if (i_15_ > 122) {
@@ -155,10 +155,10 @@ final class Class348_Sub41 extends Node {
                         class302.anInt3835 -= 512 * i_20_;
                     }
                 }
-                for (Class348_Sub27 class348_sub27 = ((Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711.method1995(4)); class348_sub27 != null; class348_sub27 = (Class348_Sub27) Class348_Sub42_Sub20.aClass262_9711.method1990((byte) 68)) {
+                for (Class348_Sub27 class348_sub27 = ((Class348_Sub27) Class348_Sub42_Sub20.aDeque_9711.method1995(4)); class348_sub27 != null; class348_sub27 = (Class348_Sub27) Class348_Sub42_Sub20.aDeque_9711.method1990((byte) 68)) {
                     class348_sub27.anInt6896 -= i_21_;
                     class348_sub27.anInt6905 -= i_20_;
-                    if (Class312.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= Class367_Sub4.mapLength) || (Class348_Sub40_Sub3.mapWidth <= (class348_sub27.anInt6896)))) class348_sub27.method2715((byte) 101);
+                    if (Class312.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= Class367_Sub4.mapLength) || (TextureOpBinary.mapWidth <= (class348_sub27.anInt6896)))) class348_sub27.method2715((byte) 101);
                 }
                 if (Class312.anInt3931 != 4) {
                     for (Class348_Sub37 class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3484(0)); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3482(0))) {
@@ -166,7 +166,7 @@ final class Class348_Sub41 extends Node {
                         int i_34_ = -za_Sub2.regionTileX + i_33_;
                         int i_35_ = (int) (0x3fffL & (class348_sub37.aLong4291 >> 14));
                         int i_36_ = i_35_ + -Class90.regionTileY;
-                        if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367_Sub4.mapLength) || i_36_ >= Class348_Sub40_Sub3.mapWidth) class348_sub37.method2715((byte) 37);
+                        if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367_Sub4.mapLength) || i_36_ >= TextureOpBinary.mapWidth) class348_sub37.method2715((byte) 37);
                     }
                 }
                 if (Class248.anInt3203 != 0) {
@@ -181,20 +181,20 @@ final class Class348_Sub41 extends Node {
                     Class281.anInt3647 -= i_21_;
                     Class348_Sub35.anInt6981 -= i_20_;
                     Class59_Sub2_Sub2.anInt8685 -= 512 * i_21_;
-                    if ((Class367_Sub4.mapLength < Math.abs(i_20_)) || Math.abs(i_21_) > Class348_Sub40_Sub3.mapWidth) Class76.method773(true);
-                } else if (Class348_Sub40_Sub21.anInt9282 == 4) {
+                    if ((Class367_Sub4.mapLength < Math.abs(i_20_)) || Math.abs(i_21_) > TextureOpBinary.mapWidth) Class76.method773(true);
+                } else if (TextureOp37.anInt9282 == 4) {
                     Class348_Sub7.anInt6652 -= i_21_ * 512;
                     Class130_Sub1.anInt5799 -= i_20_ * 512;
                     Class192.anInt2578 -= 512 * i_21_;
-                    Class348_Sub6.anInt6633 -= i_20_ * 512;
+                    MonochromeImageCacheSlot.anInt6633 -= i_20_ * 512;
                 } else {
-                    Class348_Sub40_Sub21.anInt9282 = 1;
+                    TextureOp37.anInt9282 = 1;
                     Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
                 }
-                Class348_Sub40_Sub39.method3153(0);
+                TextureOpRasterizer.method3153(0);
                 Class50_Sub2.method464(-1);
-                r_Sub2.aClass262_10492.method1996(107);
-                Class348_Sub40_Sub17.aClass262_9240.method1996(103);
+                r_Sub2.aDeque_10492.clear(107);
+                TextureOpSprite.aDeque_9240.clear(103);
                 Class225.aClass243_2957.method1876((byte) -45);
                 Class250.method1911((byte) 99);
             }
@@ -233,7 +233,7 @@ final class Class348_Sub41 extends Node {
         anInt7051++;
         Interface10 interface10 = (Interface10) r_Sub2.method3297(i_43_, i_45_, i_44_);
         if (interface10 != null) {
-            Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-124));
+            Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, interface10.method42(-124));
             int i_48_ = 0x3 & interface10.method41(-32228);
             int i_49_ = interface10.method39(35);
             if (class51.anInt875 == -1) {
@@ -267,7 +267,7 @@ final class Class348_Sub41 extends Node {
         if (bool != false) anInt7054 = 122;
         interface10 = ((Interface10) Class177.method1353(i_43_, i_45_, i_44_, (aClass7056 != null ? aClass7056 : (aClass7056 = Interface10.class))));
         if (interface10 != null) {
-            Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-88));
+            Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, interface10.method42(-88));
             int i_51_ = interface10.method41(-32228) & 0x3;
             int i_52_ = interface10.method39(-126);
             if (class51.anInt875 != -1) Class267.method2028(i_46_, class51, i_42_, var_toolkit, i_51_, -86);
@@ -280,7 +280,7 @@ final class Class348_Sub41 extends Node {
         }
         interface10 = (Interface10) Class348_Sub16_Sub3.method2878(i_43_, i_45_, i_44_);
         if (interface10 != null) {
-            Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-118));
+            Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, interface10.method42(-118));
             int i_54_ = interface10.method41(-32228) & 0x3;
             if (class51.anInt875 != -1) Class267.method2028(i_46_, class51, i_42_, var_toolkit, i_54_, -5);
         }

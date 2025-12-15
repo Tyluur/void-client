@@ -35,7 +35,7 @@ final class Class215 {
                 Class272.anInt3473 = i_0_;
                 container = Class34.aFrame476;
             } else if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                if (Class93.anApplet1530 == null) container = TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169;
                 else container = Class93.anApplet1530;
                 Class272.anInt3473 = container.getSize().width;
                 Class348_Sub22.anInt6857 = container.getSize().height;
@@ -68,7 +68,7 @@ final class Class215 {
             }
             Class50_Sub1.aBoolean5219 = i_2_ >= 2;
             if (r.anInt9721 != -1) Option.method1713(true, 520);
-            if (Class348_Sub40_Sub8.aClass238_9165 != null && Class334.method2653(true, Class240.mainLogicStep)) Class286_Sub2.method2145(-24498);
+            if (TextureOpPerlinNoise.aClass238_9165 != null && Class334.method2653(true, Class240.mainLogicStep)) Class286_Sub2.method2145(-24498);
             for (int i_5_ = 0; i_5_ < 100; i_5_++)
                 Class152.aBooleanArray2076[i_5_] = true;
             JavaOffscreenSurface.aBoolean4726 = true;
@@ -104,11 +104,11 @@ final class Class215 {
                     if (Class348_Sub43.anInt7068 != 3) break;
                     int i_7_ = Class98.aClass348_Sub16_Sub3_1564.method2844((byte) -87);
                     if (i_7_ < Class58.anInt1059 && Class98.aClass348_Sub16_Sub3_1564.method2860(95)) {
-                        i_7_ += Class348_Sub40_Sub35.anInt9444;
+                        i_7_ += TextureOpEmboss.anInt9444;
                         if (Class58.anInt1059 < i_7_) i_7_ = Class58.anInt1059;
                         Class98.aClass348_Sub16_Sub3_1564.method2861(i ^ 0x1eab, i_7_);
                     } else {
-                        Class348_Sub40_Sub35.anInt9444 = 0;
+                        TextureOpEmboss.anInt9444 = 0;
                         Class348_Sub43.anInt7068 = 0;
                     }
                 } catch (Exception exception) {

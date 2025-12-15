@@ -27,13 +27,13 @@ final class Class286_Sub7 extends Class286 {
             if (string.startsWith("*")) string = string.substring(1);
             String string_0_ = Class285_Sub1.method2127(2, string);
             if (string_0_ != null) {
-                for (int i = 0; (Class348_Sub40_Sub30.anInt9383 > i); i++) {
+                for (int i = 0; (TextureOpHslAdjust.anInt9383 > i); i++) {
                     String string_1_ = Class83.aStringArray1441[i];
                     if (string_1_.startsWith("*")) string_1_ = string_1_.substring(1);
                     string_1_ = Class285_Sub1.method2127(2, string_1_);
                     if (string_1_ != null && string_1_.equals(string_0_)) {
-                        Class348_Sub40_Sub30.anInt9383--;
-                        for (int i_2_ = i; i_2_ < Class348_Sub40_Sub30.anInt9383; i_2_++) {
+                        TextureOpHslAdjust.anInt9383--;
+                        for (int i_2_ = i; i_2_ < TextureOpHslAdjust.anInt9383; i_2_++) {
                             Class83.aStringArray1441[i_2_] = Class83.aStringArray1441[i_2_ - -1];
                             Class286_Sub2.aStringArray6205[i_2_] = Class286_Sub2.aStringArray6205[1 + i_2_];
                             Toolkit.anIntArray4578[i_2_] = Toolkit.anIntArray4578[i_2_ - -1];
@@ -210,7 +210,7 @@ final class Class286_Sub7 extends Class286 {
         if (bool != false) return false;
         i_14_ = Class318_Sub1_Sub5_Sub2.anIntArray10172[1];
         i_12_ = Class318_Sub1_Sub5_Sub2.anIntArray10172[0];
-        return Class348_Sub40_Sub29.method3125(i_12_, i_16_, i_10_, i_13_, i_17_, (byte) -76, i_15_, i_11_, i, i_14_);
+        return TextureOpTexture.method3125(i_12_, i_16_, i_10_, i_13_, i_17_, (byte) -76, i_15_, i_11_, i, i_14_);
     }
 
     final void method2139(boolean bool, byte i) {

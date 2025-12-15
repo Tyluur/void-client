@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub7 extends Class348_Sub42 {
+final class Class348_Sub42_Sub7 extends LinkedNode {
     static int anInt9540;
     static int anInt9541 = -1;
     int anInt9542 = 0;

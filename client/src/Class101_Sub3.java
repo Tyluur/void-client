@@ -315,7 +315,7 @@ final class Class101_Sub3 extends Matrix {
             for (int i_52_ = 0; i_52_ < class237_sub1.levels; i_52_++) {
                 Class369_Sub1.method3570(false);
                 for (int i_53_ = 0; (i_53_ < Class367_Sub4.mapLength >> 3); i_53_++) {
-                    for (int i_54_ = 0; (Class348_Sub40_Sub3.mapWidth >> 3 > i_54_); i_54_++) {
+                    for (int i_54_ = 0; (TextureOpBinary.mapWidth >> 3 > i_54_); i_54_++) {
                         int i_55_ = (Class62.anIntArrayArrayArray1116[i_52_][i_53_][i_54_]);
                         if (i_55_ != -1) {
                             int i_56_ = 0x3 & i_55_ >> 24;
@@ -403,10 +403,10 @@ final class Class101_Sub3 extends Matrix {
     static final void method947(byte i) {
         anInt5783++;
         if (i != 41) anInt5768 = 38;
-        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class218.aClass262_2859.method1995(4); class348_sub9 != null; class348_sub9 = (Class348_Sub9) Class218.aClass262_2859.method1990((byte) 117)) {
+        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class218.aDeque_2859.method1995(4); class348_sub9 != null; class348_sub9 = (Class348_Sub9) Class218.aDeque_2859.method1990((byte) 117)) {
             if (class348_sub9.aBoolean6684) class348_sub9.method2781((byte) 21);
         }
-        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) client.aClass262_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) client.aClass262_5185.method1990((byte) 39))) {
+        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) client.aDeque_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) client.aDeque_5185.method1990((byte) 39))) {
             if (class348_sub9.aBoolean6684) class348_sub9.method2781((byte) 21);
         }
     }

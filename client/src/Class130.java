@@ -44,7 +44,7 @@ abstract class Class130 {
         Class367_Sub9.anInt7379 = 3;
         Class164.anInt2173 = i_0_;
         Class34.anInt481 = -1;
-        Class348_Sub40_Sub30.anInt9399 = i;
+        TextureOpHslAdjust.anInt9399 = i;
         anInt1898++;
     }
 

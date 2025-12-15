@@ -25,8 +25,8 @@ abstract class Class5 implements Interface1 {
         int i_2_ = -94 % ((i - 25) / 52);
         anInt4641++;
         boolean bool = true;
-        if (!this.aIndex_4632.method421(false, this.aClass369_4635.anInt4965)) bool = false;
-        if (!aIndex_4631.method421(false, this.aClass369_4635.anInt4965)) bool = false;
+        if (!this.aIndex_4632.fileReady(false, this.aClass369_4635.anInt4965)) bool = false;
+        if (!aIndex_4631.fileReady(false, this.aClass369_4635.anInt4965)) bool = false;
         return bool;
     }
 
@@ -56,7 +56,7 @@ abstract class Class5 implements Interface1 {
     static final void method181(boolean bool, Npc npc) {
         if (bool != true) method180(54);
         anInt4627++;
-        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) client.aClass262_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) client.aClass262_5185.method1990((byte) 78))) {
+        for (Class348_Sub9 class348_sub9 = (Class348_Sub9) client.aDeque_5185.method1995(4); class348_sub9 != null; class348_sub9 = ((Class348_Sub9) client.aDeque_5185.method1990((byte) 78))) {
             if ((class348_sub9.aNpc_6691) == npc) {
                 if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
                     Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676);

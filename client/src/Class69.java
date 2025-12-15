@@ -28,19 +28,19 @@ final class Class69 {
         }
     }
 
-    static final void method721(Class348_Sub42 class348_sub42, Class348_Sub42 class348_sub42_1_, int i) {
+    static final void method721(LinkedNode linkedNode, LinkedNode linkedNode_1_, int i) {
         do {
             try {
-                if (class348_sub42_1_.aClass348_Sub42_7060 != null) class348_sub42_1_.method3162(true);
+                if (linkedNode_1_.aLinkedNode_7060 != null) linkedNode_1_.method3162(true);
                 anInt1194++;
-                class348_sub42_1_.aClass348_Sub42_7063 = class348_sub42;
-                class348_sub42_1_.aClass348_Sub42_7060 = class348_sub42.aClass348_Sub42_7060;
-                class348_sub42_1_.aClass348_Sub42_7060.aClass348_Sub42_7063 = class348_sub42_1_;
-                class348_sub42_1_.aClass348_Sub42_7063.aClass348_Sub42_7060 = class348_sub42_1_;
+                linkedNode_1_.aLinkedNode_7063 = linkedNode;
+                linkedNode_1_.aLinkedNode_7060 = linkedNode.aLinkedNode_7060;
+                linkedNode_1_.aLinkedNode_7060.aLinkedNode_7063 = linkedNode_1_;
+                linkedNode_1_.aLinkedNode_7063.aLinkedNode_7060 = linkedNode_1_;
                 if (i == -1) break;
                 aClass69_1199 = null;
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("kea.B(" + (class348_sub42 != null ? "{...}" : "null") + ',' + (class348_sub42_1_ != null ? "{...}" : "null") + ',' + i + ')'));
+                throw Class348_Sub17.method2929(runtimeexception, ("kea.B(" + (linkedNode != null ? "{...}" : "null") + ',' + (linkedNode_1_ != null ? "{...}" : "null") + ',' + i + ')'));
             }
             break;
         } while (false);

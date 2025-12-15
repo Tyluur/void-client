@@ -70,7 +70,7 @@ final class Class354 {
 
     static final boolean method3465(int i, int i_0_, Class338 class338) {
         anInt4358++;
-        Class348_Sub40_Sub4.aMatrix_9114.method897(class338.anIntArray4187[i], class338.anIntArray4191[i], class338.anIntArray4184[i], Class318_Sub1_Sub5_Sub2.anIntArray10172);
+        TextureOpVerticalGradient.aMatrix_9114.method897(class338.anIntArray4187[i], class338.anIntArray4191[i], class338.anIntArray4184[i], Class318_Sub1_Sub5_Sub2.anIntArray10172);
         int i_1_ = Class318_Sub1_Sub5_Sub2.anIntArray10172[2];
         if (i_1_ < 50) return false;
         class338.aShortArray4194[i] = (short) (Class69.anInt1202 + (Class318_Sub1_Sub5_Sub2.anIntArray10172[0] * Class140.anInt1962 / i_1_));
@@ -90,7 +90,7 @@ final class Class354 {
         anInt4357++;
         Object object = aClass60_4361.method583(i, -127);
         if (object != null) return (Class258_Sub3) object;
-        if (!aD4359.method4(-7953, i)) return null;
+        if (!aD4359.textureReady(-7953, i)) return null;
         TextureMetrics textureMetrics = aD4359.getMetrics(i, -6662);
         int i_5_ = (!textureMetrics.aBoolean199 ? aOpenGLToolkit_4355.anInt7712 : 64);
         Class258_Sub3 class258_sub3;
@@ -99,8 +99,8 @@ final class Class354 {
             class258_sub3 = new Class258_Sub3(aOpenGLToolkit_4355, 3553, 34842, i_5_, i_5_, textureMetrics.aByte205 != 0, fs, 6408);
         } else {
             int[] is;
-            if (textureMetrics.alphaBlendMode == 2 || !Class251.method1915((byte) 4, textureMetrics.effectType)) is = aD4359.method6(-21540, i_5_, 0.7F, i, false, i_5_);
-            else is = aD4359.method5(true, i, 0.7F, i_5_, i_5_, i_4_ + -196);
+            if (textureMetrics.alphaBlendMode == 2 || !Class251.method1915((byte) 4, textureMetrics.effectType)) is = aD4359.pixels(-21540, i_5_, 0.7F, i, false, i_5_);
+            else is = aD4359.rgbPixels(true, i, 0.7F, i_5_, i_5_, i_4_ + -196);
             class258_sub3 = new Class258_Sub3(aOpenGLToolkit_4355, 3553, 6408, i_5_, i_5_, textureMetrics.aByte205 != 0, is, 0, 0, false);
         }
         class258_sub3.method1965(textureMetrics.aBoolean215, textureMetrics.aBoolean217, 10243);

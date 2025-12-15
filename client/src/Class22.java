@@ -93,9 +93,9 @@ final class Class22 {
 
     static final void method294(Toolkit var_toolkit, int i) {
         anInt328++;
-        if (Class5_Sub1_Sub1.aClass262_9931.method1998(i) != 0) {
+        if (Class5_Sub1_Sub1.aDeque_9931.method1998(i) != 0) {
             if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 0) {
-                for (Class348_Sub7 class348_sub7 = ((Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931.method1995(4)); class348_sub7 != null; class348_sub7 = (Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931.method1990((byte) 31)) {
+                for (Class348_Sub7 class348_sub7 = ((Class348_Sub7) Class5_Sub1_Sub1.aDeque_9931.method1995(4)); class348_sub7 != null; class348_sub7 = (Class348_Sub7) Class5_Sub1_Sub1.aDeque_9931.method1990((byte) 31)) {
                     Exception_Sub1.itemTypeList.method1932(var_toolkit, class348_sub7.anInt6647, class348_sub7.anInt6648, Class240.aFontRenderer_4684, (!class348_sub7.aBoolean6650 ? null : (Class132.aPlayer_1907.aClass154_10536)), class348_sub7.anInt6642, false, (byte) 83, var_toolkit, class348_sub7.anInt6649, false, class348_sub7.anInt6645);
                     class348_sub7.method2715((byte) 29);
                 }
@@ -104,11 +104,11 @@ final class Class22 {
                 if (Class348_Sub34.aToolkit6968 == null) {
                     Canvas canvas = new Canvas();
                     canvas.setSize(36, 32);
-                    Class348_Sub34.aToolkit6968 = Class104.method958(true, 0, Class348_Sub40_Sub4.js5TextureSource, 0, canvas, Class136.SHADERS);
-                    Class348_Sub40_Sub9.aFontRenderer_9173 = (Class348_Sub34.aToolkit6968.method3686(Option_Sub23.getFontMetrics(LoadState.anInt1044, 0, -44, Class104.FONT_INDEX), Class207.method1519(Class21.SPRITES, LoadState.anInt1044, 0), true));
+                    Class348_Sub34.aToolkit6968 = Class104.method958(true, 0, TextureOpVerticalGradient.js5TextureSource, 0, canvas, Class136.SHADERS);
+                    TextureOpMonorchromeEdgeDetector.aFontRenderer_9173 = (Class348_Sub34.aToolkit6968.method3686(Option_Sub23.getFontMetrics(LoadState.anInt1044, 0, -44, Class104.FONT_INDEX), Class207.method1519(Class21.SPRITES, LoadState.anInt1044, 0), true));
                 }
-                for (Class348_Sub7 class348_sub7 = ((Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931.method1995(i + 4)); class348_sub7 != null; class348_sub7 = (Class348_Sub7) Class5_Sub1_Sub1.aClass262_9931.method1990((byte) 118)) {
-                    Exception_Sub1.itemTypeList.method1932(Class348_Sub34.aToolkit6968, class348_sub7.anInt6647, class348_sub7.anInt6648, Class348_Sub40_Sub9.aFontRenderer_9173, (class348_sub7.aBoolean6650 ? (Class132.aPlayer_1907.aClass154_10536) : null), class348_sub7.anInt6642, false, (byte) 83, var_toolkit, class348_sub7.anInt6649, false, class348_sub7.anInt6645);
+                for (Class348_Sub7 class348_sub7 = ((Class348_Sub7) Class5_Sub1_Sub1.aDeque_9931.method1995(i + 4)); class348_sub7 != null; class348_sub7 = (Class348_Sub7) Class5_Sub1_Sub1.aDeque_9931.method1990((byte) 118)) {
+                    Exception_Sub1.itemTypeList.method1932(Class348_Sub34.aToolkit6968, class348_sub7.anInt6647, class348_sub7.anInt6648, TextureOpMonorchromeEdgeDetector.aFontRenderer_9173, (class348_sub7.aBoolean6650 ? (Class132.aPlayer_1907.aClass154_10536) : null), class348_sub7.anInt6642, false, (byte) 83, var_toolkit, class348_sub7.anInt6649, false, class348_sub7.anInt6645);
                     class348_sub7.method2715((byte) 21);
                 }
             }

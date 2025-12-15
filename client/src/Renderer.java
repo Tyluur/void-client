@@ -7,14 +7,14 @@ final class Renderer {
     String name;
     long driverVersion;
     String device;
-    static Class262 aClass262_4473;
+    static Deque aDeque_4473;
     static int anInt4474 = 0;
     int version;
     int vendor;
     static Class114 aClass114_4477;
 
     public static void method3518(int i) {
-        aClass262_4473 = null;
+        aDeque_4473 = null;
         if (i != 88) method3518(-49);
         aClass114_4477 = null;
     }
@@ -32,7 +32,7 @@ final class Renderer {
     }
 
     static {
-        aClass262_4473 = new Class262();
+        aDeque_4473 = new Deque();
         aClass114_4477 = new Class114(88, 10);
     }
 }

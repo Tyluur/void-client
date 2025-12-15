@@ -17,16 +17,16 @@ class Class328 {
             OpenGL.glShaderSourceRawARB(l, is);
             OpenGL.glCompileShaderARB(l);
             if (i > -95) method2608(null, null, -27, 75);
-            OpenGL.glGetObjectParameterivARB(l, 35713, (Class348_Sub40_Sub2.anIntArray9096), 0);
-            if (Class348_Sub40_Sub2.anIntArray9096[0] == 0) {
-                if (Class348_Sub40_Sub2.anIntArray9096[0] == 0) System.out.println("Shader compile failed:");
-                OpenGL.glGetObjectParameterivARB(l, 35716, (Class348_Sub40_Sub2.anIntArray9096), 1);
-                if (Class348_Sub40_Sub2.anIntArray9096[1] > 1) {
-                    byte[] is_1_ = new byte[Class348_Sub40_Sub2.anIntArray9096[1]];
-                    OpenGL.glGetInfoLogARB(l, (Class348_Sub40_Sub2.anIntArray9096[1]), Class348_Sub40_Sub2.anIntArray9096, 0, is_1_, 0);
+            OpenGL.glGetObjectParameterivARB(l, 35713, (TextureOpHerringbone.anIntArray9096), 0);
+            if (TextureOpHerringbone.anIntArray9096[0] == 0) {
+                if (TextureOpHerringbone.anIntArray9096[0] == 0) System.out.println("Shader compile failed:");
+                OpenGL.glGetObjectParameterivARB(l, 35716, (TextureOpHerringbone.anIntArray9096), 1);
+                if (TextureOpHerringbone.anIntArray9096[1] > 1) {
+                    byte[] is_1_ = new byte[TextureOpHerringbone.anIntArray9096[1]];
+                    OpenGL.glGetInfoLogARB(l, (TextureOpHerringbone.anIntArray9096[1]), TextureOpHerringbone.anIntArray9096, 0, is_1_, 0);
                     System.out.println(new String(is_1_));
                 }
-                if (Class348_Sub40_Sub2.anIntArray9096[0] == 0) {
+                if (TextureOpHerringbone.anIntArray9096[0] == 0) {
                     OpenGL.glDeleteObjectARB(l);
                     return null;
                 }
@@ -39,7 +39,7 @@ class Class328 {
 
     static final ClientScript method2609(int i, int i_2_) {
         anInt4101++;
-        ClientScript clientScript = ((ClientScript) Class322.aClass308_4036.method2302(i_2_, (byte) -68));
+        ClientScript clientScript = ((ClientScript) ColourImageCache.aClass308_4036.method2302(i_2_, (byte) -68));
         if (clientScript != null) return clientScript;
         byte[] is = Class113.CLIENT_SCRIPTS.method410(-1860, i_2_, 0);
         if (is == null || is.length <= 1) return null;
@@ -49,7 +49,7 @@ class Class328 {
             throw new RuntimeException(exception.getMessage() + " S: " + i_2_);
         }
         if (i > -103) return null;
-        Class322.aClass308_4036.method2305(i_2_, clientScript, -1);
+        ColourImageCache.aClass308_4036.method2305(i_2_, clientScript, -1);
         return clientScript;
     }
 }

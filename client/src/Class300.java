@@ -25,7 +25,7 @@ final class Class300 {
         anInt3816++;
         if (string == null) return -1;
         if (i >= -41) return 97;
-        for (int i_0_ = 0; (i_0_ < Class348_Sub40_Sub30.anInt9383); i_0_++) {
+        for (int i_0_ = 0; (i_0_ < TextureOpHslAdjust.anInt9383); i_0_++) {
             if (string.equalsIgnoreCase(Class83.aStringArray1441[i_0_])) return i_0_;
         }
         return -1;

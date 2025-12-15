@@ -67,8 +67,8 @@ final class Class40 {
         SkyBoxSphereTypeList.aSpriteArray367 = null;
         Option_Sub9.aSpriteArray5933 = null;
         Class200.aSpriteArray2640 = null;
-        Class348_Sub40_Sub37.aSpriteArray9467 = null;
-        Class262.aFontRenderer_3326 = null;
+        TextureOpBoxBlur.aSpriteArray9467 = null;
+        Deque.aFontRenderer_3326 = null;
         Option_Sub24.aSprite_6097 = null;
         Applet_Sub1.aFontRenderer_20 = null;
         Class240.aFontRenderer_4684 = null;

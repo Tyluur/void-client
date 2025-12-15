@@ -28,10 +28,10 @@ abstract class Class272 {
     static final void method2049(int i) {
         anInt3474++;
         if (i > 49) {
-            if (Class240.mainLogicStep == 7) Class348_Sub40_Sub34.method3141(false, (byte) 11);
+            if (Class240.mainLogicStep == 7) TextureOpColourEdgeDetector.method3141(false, (byte) 11);
             else {
-                ItemDefinition.aClass238_2773 = Class348_Sub40_Sub8.aClass238_9165;
-                Class348_Sub40_Sub8.aClass238_9165 = null;
+                ItemDefinition.aClass238_2773 = TextureOpPerlinNoise.aClass238_9165;
+                TextureOpPerlinNoise.aClass238_9165 = null;
                 Packet.setStep(2, 13);
             }
         }
@@ -51,7 +51,7 @@ abstract class Class272 {
             Class86.anInt1479 = i;
             Class348_Sub7.aClass207_6643 = null;
             Class295.anInt3762 = i_8_;
-            Class348_Sub40_Sub1.aClass207_9090 = null;
+            TextureOpBrightness.aClass207_9090 = null;
             Class289.anInt3704 = i_3_;
             Class20.anInt317 = i_5_;
             anInt3471++;

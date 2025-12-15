@@ -17,9 +17,9 @@ final class Class260 {
     }
 
     static final void method1978() {
-        for (int i = 0; i < Class348_Sub40_Sub34.aClass293Array9432.length; i++)
-            Class348_Sub40_Sub34.aClass293Array9432[i].method2205();
-        Class348_Sub40_Sub34.aClass293Array9432 = null;
+        for (int i = 0; i < TextureOpColourEdgeDetector.aClass293Array9432.length; i++)
+            TextureOpColourEdgeDetector.aClass293Array9432[i].method2205();
+        TextureOpColourEdgeDetector.aClass293Array9432 = null;
     }
 
     public static void method1979(byte i) {

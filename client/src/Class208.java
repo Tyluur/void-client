@@ -9,7 +9,7 @@ final class Class208 implements Runnable {
     private IOException anIOException2704;
     private int anInt2705 = 0;
     private final byte[] aByteArray2706;
-    static Class262 aClass262_2707 = new Class262();
+    static Deque aDeque_2707 = new Deque();
     private final Thread aThread2708;
     static int anInt2709;
     static int anInt2710;
@@ -20,8 +20,8 @@ final class Class208 implements Runnable {
     private final int anInt2715;
 
     public static void method1525(byte i) {
-        if (i != 4) aClass262_2707 = null;
-        aClass262_2707 = null;
+        if (i != 4) aDeque_2707 = null;
+        aDeque_2707 = null;
     }
 
     public final void run() {

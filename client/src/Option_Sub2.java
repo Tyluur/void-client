@@ -59,7 +59,7 @@ final class Option_Sub2 extends Option {
         int i_4_ = Class192.anInt2578 >> 9;
         int i_5_ = Class275.method2064(Class130_Sub1.anInt5799, QuickChatPhraseTypeList.anInt4372, 11219, Class192.anInt2578);
         int i_6_ = 0;
-        if (i_3_ > 3 && i_4_ > 3 && -4 + Class367_Sub4.mapLength > i_3_ && Class348_Sub40_Sub3.mapWidth - 4 > i_4_) {
+        if (i_3_ > 3 && i_4_ > 3 && -4 + Class367_Sub4.mapLength > i_3_ && TextureOpBinary.mapWidth - 4 > i_4_) {
             for (int i_7_ = i_3_ - 4; i_3_ - -4 >= i_7_; i_7_++) {
                 for (int i_8_ = -4 + i_4_; i_8_ <= 4 + i_4_; i_8_++) {
                     int i_9_ = QuickChatPhraseTypeList.anInt4372;

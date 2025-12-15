@@ -39,7 +39,7 @@ final class Class157 {
         class348_sub49_sub2.writeInt((byte) 113, Class348_Sub11.TEXTURE_DEFINITIONS.indexCrc(-122));
         class348_sub49_sub2.writeInt((byte) 86, Option.PARTICLES.indexCrc(97));
         class348_sub49_sub2.writeInt((byte) 96, Class367_Sub8.DEFAULTS.indexCrc(-6));
-        class348_sub49_sub2.writeInt((byte) 96, Class262.BILLBOARDS.indexCrc(-122));
+        class348_sub49_sub2.writeInt((byte) 96, Deque.BILLBOARDS.indexCrc(-122));
         class348_sub49_sub2.writeInt((byte) 107, Class126.NATIVE_LIBRARIES.indexCrc(-107));
         class348_sub49_sub2.writeInt((byte) 125, Class136.SHADERS.indexCrc(-118));
         class348_sub49_sub2.writeInt((byte) 90, Class172.method1327(31));

@@ -62,7 +62,7 @@ final class Class127_Sub1 extends Class127 {
             try {
                 Runtime runtime = Runtime.getRuntime();
                 Integer integer = runtime.availableProcessors();
-                Class348_Sub40_Sub29.anInt9372 = integer.intValue();
+                TextureOpTexture.anInt9372 = integer.intValue();
             } catch (Throwable throwable) {
                 /* empty */
             }

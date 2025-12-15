@@ -4,7 +4,7 @@
 
 final class Class348_Sub16_Sub2 extends Class348_Sub16 {
     static int anInt8860;
-    private Class262 aClass262_8861 = new Class262();
+    private Deque aDeque_8861 = new Deque();
     static int[] anIntArray8862;
     static int anInt8863;
     static int anInt8864;
@@ -43,7 +43,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
     private final synchronized Class348_Sub42_Sub4 method2828(int i) {
         if (i != -23076) method2817(null, 71, 78);
         anInt8872++;
-        return (Class348_Sub42_Sub4) aClass262_8861.method1995(i + 23080);
+        return (Class348_Sub42_Sub4) aDeque_8861.method1995(i + 23080);
     }
 
     final Class348_Sub16 method2818() {
@@ -70,7 +70,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
             class348_sub42_sub4.method2715((byte) 71);
             anInt8888--;
             anInt8883 = 0;
-            Class348_Sub40_Sub10.aClass308_9180.method2305(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1);
+            TextureOpRange.aClass308_9180.method2305(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1);
         }
     }
 
@@ -89,7 +89,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
             if (method2828(-23076) == null) {
                 if (aBoolean8884) {
                     this.method2715((byte) 23);
-                    Class348_Sub40_Sub10.aClass308_9180.method2303(true);
+                    TextureOpRange.aClass308_9180.method2303(true);
                 }
             } else {
                 int i_3_ = i - -i_2_;
@@ -136,10 +136,10 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
 
     final synchronized void method2835(Class348_Sub42_Sub4 class348_sub42_sub4, int i) {
         for (/**/; anInt8888 >= 100; anInt8888--)
-            aClass262_8861.method1997(8);
+            aDeque_8861.method1997(8);
         if (i == 30700) {
             anInt8881++;
-            aClass262_8861.method1999(class348_sub42_sub4, -20180);
+            aDeque_8861.method1999(class348_sub42_sub4, -20180);
             anInt8888++;
         }
     }
@@ -151,7 +151,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
 
     final synchronized void method2836(int i) {
         aBoolean8884 = true;
-        if (i != -1) aClass262_8861 = null;
+        if (i != -1) aDeque_8861 = null;
         anInt8865++;
     }
 
@@ -159,7 +159,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
         anInt8868++;
         if (anInt8888 < 1) return -1.0;
         if (i != -21987) method2818();
-        Class348_Sub42_Sub4 class348_sub42_sub4 = (Class348_Sub42_Sub4) aClass262_8861.method1995(4);
+        Class348_Sub42_Sub4 class348_sub42_sub4 = (Class348_Sub42_Sub4) aDeque_8861.method1995(4);
         if (class348_sub42_sub4 == null) return -1.0;
         return ((double) -((float) (class348_sub42_sub4.aShortArrayArray9518[0]).length / (float) Class22.anInt339) + class348_sub42_sub4.aDouble9512);
     }
@@ -167,12 +167,12 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
     final Class348_Sub42_Sub4 method2838(int i, double d, int i_14_) {
         anInt8860++;
         long l = i | anInt8879 << 0;
-        Class348_Sub42_Sub4 class348_sub42_sub4 = ((Class348_Sub42_Sub4) Class348_Sub40_Sub10.aClass308_9180.method2302(l, (byte) -31));
+        Class348_Sub42_Sub4 class348_sub42_sub4 = ((Class348_Sub42_Sub4) TextureOpRange.aClass308_9180.method2302(l, (byte) -31));
         if (i_14_ != 1401320384) return null;
         if (class348_sub42_sub4 == null) class348_sub42_sub4 = new Class348_Sub42_Sub4(new short[anInt8879][i], d);
         else {
             class348_sub42_sub4.aDouble9512 = d;
-            Class348_Sub40_Sub10.aClass308_9180.method2304(-121, l);
+            TextureOpRange.aClass308_9180.method2304(-121, l);
         }
         return class348_sub42_sub4;
     }
@@ -185,7 +185,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                 if (class348_sub42_sub4 == null) {
                     if (aBoolean8884) {
                         this.method2715((byte) 108);
-                        Class348_Sub40_Sub10.aClass308_9180.method2303(true);
+                        TextureOpRange.aClass308_9180.method2303(true);
                     }
                     break;
                 }

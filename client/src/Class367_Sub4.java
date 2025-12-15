@@ -90,7 +90,7 @@ final class Class367_Sub4 extends Class367 {
             this.aNativeToolkit_4479.method3871(Class31.aClass113_430, 0);
             Class101_Sub2 class101_sub2 = this.aNativeToolkit_4479.method3820(false);
             class101_sub2.method899(1024);
-            this.aNativeToolkit_4479.method3853(-32, Class348_Sub40_Sub38.aClass251_9477);
+            this.aNativeToolkit_4479.method3853(-32, TextureOpClamp.aClass251_9477);
             if (aBoolean7311) {
                 this.aNativeToolkit_4479.method3874((Class328_Sub3.aClass229_6519), 113, (Class348_Sub23_Sub2.aClass229_9011));
                 this.aNativeToolkit_4479.method3924(true, false, 0, ModelParticleEffector.aClass70_4247, false);
@@ -221,7 +221,7 @@ final class Class367_Sub4 extends Class367 {
                 if (i_35_ > Class327.anIntArray4097[i_15_]) Class327.anIntArray4097[i_15_] = i_35_;
                 int i_36_ = i_19_ << 9;
                 if (i_36_ < Class156.anIntArray2117[i_15_]) Class156.anIntArray2117[i_15_] = i_36_;
-                else if (i_36_ > Class348_Sub40_Sub19.anIntArray9259[i_15_]) Class348_Sub40_Sub19.anIntArray9259[i_15_] = i_36_;
+                else if (i_36_ > TextureOpHorizontalGradient.anIntArray9259[i_15_]) TextureOpHorizontalGradient.anIntArray9259[i_15_] = i_36_;
                 int i_37_ = i_22_ << 9;
                 if (i_37_ >= Model.anIntArray1127[i_15_]) {
                     if (LoadState.anIntArray1045[i_15_] < i_37_) LoadState.anIntArray1045[i_15_] = i_37_;
@@ -234,7 +234,7 @@ final class Class367_Sub4 extends Class367 {
                     i_17_ = 0xfff & 1 + i_17_;
                     Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][i_19_ - 1][i_22_] = i_16_;
                 }
-                if (++i_22_ < Class348_Sub40_Sub3.mapWidth) {
+                if (++i_22_ < TextureOpBinary.mapWidth) {
                     if (i_19_ - 1 >= 0 && i_16_ != (Class289.aByteArrayArrayArray3700[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][i_22_]) && ((AnimBase.tileFlags[QuickChatPhraseTypeList.anInt4372][i_19_][i_22_]) & 0x4) == 0 && (0x4 & (AnimBase.tileFlags[QuickChatPhraseTypeList.anInt4372][-1 + i_19_][-1 + i_22_])) == 0) {
                         Class348_Sub16_Sub2.anIntArray8862[i_17_] = (Class273.method2057(1375731712, Class273.method2057(i_19_ + -1, 1179648)));
                         Exception_Sub1.anIntArray110[i_17_] = Class273.method2057(i_22_, 1245184);
@@ -286,7 +286,7 @@ final class Class367_Sub4 extends Class367 {
         if (Class327.anIntArray4097[i_15_] != -1000000) {
             Class327.anIntArray4097[i_15_] += 40;
             Class156.anIntArray2117[i_15_] -= 512;
-            Class348_Sub40_Sub19.anIntArray9259[i_15_] += 512;
+            TextureOpHorizontalGradient.anIntArray9259[i_15_] += 512;
             LoadState.anIntArray1045[i_15_] += 512;
             Model.anIntArray1127[i_15_] -= 512;
         }
@@ -305,7 +305,7 @@ final class Class367_Sub4 extends Class367 {
         try {
             anInt7321++;
             int i_38_ = packet.pos;
-            byte[] is = Class348_Sub24.method2992(string, (byte) -20);
+            byte[] is = ColourImageCacheSlot.method2992(string, (byte) -20);
             int i_39_ = 1 % ((-6 - i) / 63);
             packet.method3381(5537, is.length);
             packet.pos += (Model.aClass296_1131.method2227(is.length, 0, packet.pos, is, 103, packet.aByteArray7154));

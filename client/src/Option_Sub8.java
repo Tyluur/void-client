@@ -179,7 +179,7 @@ final class Option_Sub8 extends Option {
         int i_15_ = 2147483647;
         int i_16_ = i_12_ - Class75.anInt1266;
         int i_17_ = i_13_ - Class75.anInt1263;
-        for (Class348_Sub21 class348_sub21 = (Class348_Sub21) Class75.aClass262_1254.method1995(4); class348_sub21 != null; class348_sub21 = (Class348_Sub21) Class75.aClass262_1254.method1990((byte) 113)) {
+        for (Class348_Sub21 class348_sub21 = (Class348_Sub21) Class75.aDeque_1254.method1995(4); class348_sub21 != null; class348_sub21 = (Class348_Sub21) Class75.aDeque_1254.method1990((byte) 113)) {
             if (class348_sub21.anInt6847 == i) {
                 int i_18_ = class348_sub21.anInt6852;
                 int i_19_ = class348_sub21.anInt6851;

@@ -33,10 +33,10 @@ final class Js5ResourceProvider extends ResourceProvider {
     static int anInt6366;
     static int anInt6367;
     private boolean aBoolean6368;
-    private final Class262 aClass262_6369;
+    private final Deque aDeque_6369;
     static int anInt6370;
     private boolean aBoolean6371;
-    private Class262 aClass262_6372;
+    private Deque aDeque_6372;
     private int anInt6373;
     private long aLong6374;
     private boolean aBoolean6375;
@@ -46,7 +46,7 @@ final class Js5ResourceProvider extends ResourceProvider {
         if (aClass291_6342 == null) return 0;
         if (!aBoolean6368) return aClass291_6342.anInt3727;
         if (i != 24940) method2345(-32);
-        Node node = aClass262_6372.method1995(i ^ 0x6168);
+        Node node = aDeque_6372.method1995(i ^ 0x6168);
         if (node == null) return 0;
         return (int) node.aLong4291;
     }
@@ -54,8 +54,8 @@ final class Js5ResourceProvider extends ResourceProvider {
     final void method2342(int i) {
         anInt6349++;
         if (i != 0) aBoolean6375 = false;
-        if (aClass262_6372 != null && method2340((byte) 56) != null) {
-            for (Node node = aClass262_6369.method1995(4); node != null; node = aClass262_6369.method1990((byte) 112)) {
+        if (aDeque_6372 != null && method2340((byte) 56) != null) {
+            for (Node node = aDeque_6369.method1995(4); node != null; node = aDeque_6369.method1990((byte) 112)) {
                 int i_0_ = (int) node.aLong4291;
                 if (i_0_ < 0 || (aClass291_6342.anInt3734 <= i_0_) || aClass291_6342.anIntArray3725[i_0_] == 0) node.method2715((byte) 37);
                 else {
@@ -69,11 +69,11 @@ final class Js5ResourceProvider extends ResourceProvider {
 
     final void method2343(int i) {
         anInt6356++;
-        if (aClass262_6372 != null) {
+        if (aDeque_6372 != null) {
             if (method2340((byte) 56) == null) return;
             if (aBoolean6368) {
                 boolean bool = true;
-                for (Node node = aClass262_6372.method1995(4); node != null; node = aClass262_6372.method1990((byte) 106)) {
+                for (Node node = aDeque_6372.method1995(4); node != null; node = aDeque_6372.method1990((byte) 106)) {
                     int i_1_ = (int) node.aLong4291;
                     if (aByteArray6351[i_1_] == 0) method2350(i_1_, (byte) 65, 1);
                     if (aByteArray6351[i_1_] != 0) node.method2715((byte) 22);
@@ -90,7 +90,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                         if (aByteArray6351[anInt6373] == 0) {
                             Node node = new Node();
                             node.aLong4291 = anInt6373;
-                            aClass262_6372.method1999(node, -20180);
+                            aDeque_6372.method1999(node, -20180);
                             bool = false;
                         }
                         anInt6373++;
@@ -102,7 +102,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                 }
             } else if (aBoolean6371) {
                 boolean bool = true;
-                for (Node node = aClass262_6372.method1995(4); node != null; node = aClass262_6372.method1990((byte) 43)) {
+                for (Node node = aDeque_6372.method1995(4); node != null; node = aDeque_6372.method1990((byte) 43)) {
                     int i_2_ = (int) node.aLong4291;
                     if (aByteArray6351[i_2_] != 1) method2350(i_2_, (byte) 65, 2);
                     if (aByteArray6351[i_2_] != 1) bool = false;
@@ -120,7 +120,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                             Node node = new Node();
                             node.aLong4291 = anInt6373;
                             bool = false;
-                            aClass262_6372.method1999(node, i + -20179);
+                            aDeque_6372.method1999(node, i + -20179);
                         }
                         anInt6373++;
                     }
@@ -129,7 +129,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                     anInt6373 = 0;
                     aBoolean6371 = false;
                 }
-            } else aClass262_6372 = null;
+            } else aDeque_6372 = null;
         }
         if (i == -1) {
             if (aBoolean6375 && Class62.safeTime(-94) >= aLong6374) {
@@ -172,7 +172,7 @@ final class Js5ResourceProvider extends ResourceProvider {
             anInt6366++;
             if (aClass137_6365 != null) {
                 aBoolean6371 = true;
-                if (aClass262_6372 == null) aClass262_6372 = new Class262();
+                if (aDeque_6372 == null) aDeque_6372 = new Deque();
             }
         }
     }
@@ -181,12 +181,12 @@ final class Js5ResourceProvider extends ResourceProvider {
         anInt6345++;
         if (i != -52) aClass291_6342 = null;
         if (aClass137_6365 != null) {
-            for (Node node = aClass262_6369.method1995(i ^ ~0x37); node != null; node = aClass262_6369.method1990((byte) 124)) {
+            for (Node node = aDeque_6369.method1995(i ^ ~0x37); node != null; node = aDeque_6369.method1990((byte) 124)) {
                 if ((long) i_5_ == node.aLong4291) return;
             }
             Node node = new Node();
             node.aLong4291 = i_5_;
-            aClass262_6369.method1999(node, -20180);
+            aDeque_6369.method1999(node, -20180);
         }
     }
 
@@ -204,7 +204,7 @@ final class Js5ResourceProvider extends ResourceProvider {
         if (i != -8454) method2352(44, -11, 126);
         int i_6_;
         if (QuickChatCatTypeList.anInt2964 < 96) {
-            Class348_Sub40_Sub12.method3076(0, true);
+            TextureOpColourGradient.method3076(0, true);
             i_6_ = 1;
         } else {
             int i_7_ = Class284.method2116(-26584);
@@ -216,7 +216,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                     i_6_ = 2;
                     Class161.method1263(true);
                 } else {
-                    Class348_Sub40_Sub12.method3076(0, true);
+                    TextureOpColourGradient.method3076(0, true);
                     i_6_ = 1;
                 }
             } else {
@@ -407,7 +407,7 @@ final class Js5ResourceProvider extends ResourceProvider {
     Js5ResourceProvider(int i, Class137 class137, Class137 class137_23_, Class248 class248, Class112 class112, int i_24_, byte[] is, int i_25_, boolean bool) {
         aClass356_6360 = new Class356(16);
         anInt6373 = 0;
-        aClass262_6369 = new Class262();
+        aDeque_6369 = new Deque();
         aLong6374 = 0L;
         do {
             try {
@@ -415,7 +415,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                 aClass137_6365 = class137;
                 if (aClass137_6365 != null) {
                     aBoolean6368 = true;
-                    aClass262_6372 = new Class262();
+                    aDeque_6372 = new Deque();
                 } else aBoolean6368 = false;
                 anInt6344 = i_24_;
                 aByteArray6346 = is;

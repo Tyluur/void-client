@@ -29,7 +29,7 @@ abstract class Class348_Sub45 extends Node {
         if (i > -113) aClass304_7103 = null;
         Class348_Sub42_Sub10.anInt9577 = 0;
         ClientScript.aClass338Array9700 = new Class338[500];
-        Class348_Sub40_Sub23.aBoolean9307 = !(Class9.aToolkit171 instanceof SafeModeToolkit);
+        TextureOpIrregularBricks.aBoolean9307 = !(Class9.aToolkit171 instanceof SafeModeToolkit);
     }
 
     public Class348_Sub45() {

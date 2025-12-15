@@ -116,8 +116,8 @@ final class Class171 {
         if (i_35_ < 3) {
             int i_38_ = i_32_ >> 9;
             int i_39_ = i_33_ >> 9;
-            if (i_34_ < 0 || i_36_ < 0 || -1 + Class367_Sub4.mapLength < i_34_ || (i_36_ > Class348_Sub40_Sub3.mapWidth - 1)) return 0;
-            if (i_38_ < 1 || i_39_ < 1 || -1 + Class367_Sub4.mapLength < i_38_ || -1 + Class348_Sub40_Sub3.mapWidth < i_39_) return 0;
+            if (i_34_ < 0 || i_36_ < 0 || -1 + Class367_Sub4.mapLength < i_34_ || (i_36_ > TextureOpBinary.mapWidth - 1)) return 0;
+            if (i_38_ < 1 || i_39_ < 1 || -1 + Class367_Sub4.mapLength < i_38_ || -1 + TextureOpBinary.mapWidth < i_39_) return 0;
             boolean bool = ((0x2 & (AnimBase.tileFlags[1][i_32_ >> 9][i_33_ >> 9])) != 0);
             if ((i_32_ & 0x1ff) == 0) {
                 boolean bool_40_ = ((0x2 & (AnimBase.tileFlags[1][-1 + i_38_][i_33_ >> 9])) != 0);

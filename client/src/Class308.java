@@ -11,19 +11,19 @@ final class Class308 {
     static KeyLog[] anKeyLogArray3884 = new KeyLog[75];
     static int anInt3885;
     static int anInt3886;
-    private Class348_Sub42 aClass348_Sub42_3887 = new Class348_Sub42();
+    private LinkedNode aLinkedNode_3887 = new LinkedNode();
     private final Class356 aClass356_3888;
     private Class107 aClass107_3889 = new Class107();
     private final int anInt3890;
     private int anInt3891;
 
-    final Class348_Sub42 method2302(long l, byte i) {
+    final LinkedNode method2302(long l, byte i) {
         try {
             if (i > -25) aClass107_3889 = null;
             anInt3885++;
-            Class348_Sub42 class348_sub42 = (Class348_Sub42) aClass356_3888.method3480(l, -6008);
-            if (class348_sub42 != null) aClass107_3889.method1005(true, class348_sub42);
-            return class348_sub42;
+            LinkedNode linkedNode = (LinkedNode) aClass356_3888.method3480(l, -6008);
+            if (linkedNode != null) aClass107_3889.method1005(true, linkedNode);
+            return linkedNode;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "wu.D(" + l + ',' + i + ')');
         }
@@ -34,7 +34,7 @@ final class Class308 {
         if (bool != true) method2305(-121L, null, -1);
         aClass107_3889.method1009(2110355138);
         aClass356_3888.method3481(0);
-        aClass348_Sub42_3887 = new Class348_Sub42();
+        aLinkedNode_3887 = new LinkedNode();
         anInt3891 = anInt3890;
     }
 
@@ -42,10 +42,10 @@ final class Class308 {
         do {
             try {
                 anInt3880++;
-                Class348_Sub42 class348_sub42 = (Class348_Sub42) aClass356_3888.method3480(l, -6008);
-                if (class348_sub42 != null) {
-                    class348_sub42.method2715((byte) 73);
-                    class348_sub42.method3162(true);
+                LinkedNode linkedNode = (LinkedNode) aClass356_3888.method3480(l, -6008);
+                if (linkedNode != null) {
+                    linkedNode.method2715((byte) 73);
+                    linkedNode.method3162(true);
                     anInt3891++;
                 }
                 if (i <= -110) break;
@@ -57,23 +57,23 @@ final class Class308 {
         } while (false);
     }
 
-    final void method2305(long l, Class348_Sub42 class348_sub42, int i) {
+    final void method2305(long l, LinkedNode linkedNode, int i) {
         try {
             anInt3881++;
             if ((~anInt3891) == i) {
-                Class348_Sub42 class348_sub42_0_ = aClass107_3889.method1008(20);
-                class348_sub42_0_.method2715((byte) 113);
-                class348_sub42_0_.method3162(true);
-                if (class348_sub42_0_ == aClass348_Sub42_3887) {
-                    class348_sub42_0_ = aClass107_3889.method1008(20);
-                    class348_sub42_0_.method2715((byte) 79);
-                    class348_sub42_0_.method3162(true);
+                LinkedNode linkedNode_0_ = aClass107_3889.method1008(20);
+                linkedNode_0_.method2715((byte) 113);
+                linkedNode_0_.method3162(true);
+                if (linkedNode_0_ == aLinkedNode_3887) {
+                    linkedNode_0_ = aClass107_3889.method1008(20);
+                    linkedNode_0_.method2715((byte) 79);
+                    linkedNode_0_.method3162(true);
                 }
             } else anInt3891--;
-            aClass356_3888.method3483((byte) 37, l, class348_sub42);
-            aClass107_3889.method1005(true, class348_sub42);
+            aClass356_3888.method3483((byte) 37, l, linkedNode);
+            aClass107_3889.method1005(true, linkedNode);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wu.E(" + l + ',' + (class348_sub42 != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wu.E(" + l + ',' + (linkedNode != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 

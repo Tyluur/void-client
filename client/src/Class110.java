@@ -96,8 +96,8 @@ abstract class Class110 {
                                 class348_sub48.anIntArray7132[i_6_] = i_7_;
                                 Class[] var_classes = new Class[i_9_];
                                 for (int i_13_ = 0; (i_13_ < i_9_); i_13_++)
-                                    var_classes[i_13_] = (Class348_Sub40_Sub1.method3052(11012, strings[i_13_]));
-                                class348_sub48.aClass144Array7127[i_6_] = (class297.method2230(var_classes, 76, Class348_Sub40_Sub1.method3052(11012, string), string_8_));
+                                    var_classes[i_13_] = (TextureOpBrightness.method3052(11012, strings[i_13_]));
+                                class348_sub48.aClass144Array7127[i_6_] = (class297.method2230(var_classes, 76, TextureOpBrightness.method3052(11012, string), string_8_));
                                 class348_sub48.aByteArrayArrayArray7128[i_6_] = is;
                             }
                         } else {
@@ -107,7 +107,7 @@ abstract class Class110 {
                             if (i_7_ == 1) i_15_ = packet.readInt((byte) -126);
                             class348_sub48.anIntArray7132[i_6_] = i_7_;
                             class348_sub48.anIntArray7136[i_6_] = i_15_;
-                            class348_sub48.aClass144Array7135[i_6_] = (class297.method2243(0, string_14_, Class348_Sub40_Sub1.method3052(11012, string)));
+                            class348_sub48.aClass144Array7135[i_6_] = (class297.method2243(0, string_14_, TextureOpBrightness.method3052(11012, string)));
                         }
                     } catch (ClassNotFoundException classnotfoundexception) {
                         class348_sub48.anIntArray7131[i_6_] = -1;
@@ -121,7 +121,7 @@ abstract class Class110 {
                         class348_sub48.anIntArray7131[i_6_] = -5;
                     }
                 }
-                Class348_Sub35.aClass262_6978.method1999(class348_sub48, -20180);
+                Class348_Sub35.aDeque_6978.method1999(class348_sub48, -20180);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("mr.E(" + i + ',' + (packet != null ? "{...}" : "null") + ',' + (class297 != null ? "{...}" : "null") + ',' + i_5_ + ')'));

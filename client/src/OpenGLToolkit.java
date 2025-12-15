@@ -231,7 +231,7 @@ final class OpenGLToolkit extends Toolkit {
     Class101_Sub3 aClass101_Sub3_7729;
     NativeHeap aNativeHeap7730;
     int anInt7731;
-    private final Class262 aClass262_7732;
+    private final Deque aDeque_7732;
     int anInt7733;
     private boolean aBoolean7734;
     int anInt7735;
@@ -248,14 +248,14 @@ final class OpenGLToolkit extends Toolkit {
     private int anInt7746;
     int anInt7747;
     int anInt7748;
-    private final Class262 aClass262_7749;
+    private final Deque aDeque_7749;
     private int anInt7750;
-    private Class262 aClass262_7751;
-    private final Class262 aClass262_7752;
-    private final Class262 aClass262_7753;
-    private final Class262 aClass262_7754;
-    private final Class262 aClass262_7755;
-    private final Class262 aClass262_7756;
+    private Deque aDeque_7751;
+    private final Deque aDeque_7752;
+    private final Deque aDeque_7753;
+    private final Deque aDeque_7754;
+    private final Deque aDeque_7755;
+    private final Deque aDeque_7756;
     private long aLong7757;
     private boolean aBoolean7758;
     private boolean aBoolean7759;
@@ -571,7 +571,7 @@ final class OpenGLToolkit extends Toolkit {
         Class348_Sub35 class348_sub35 = new Class348_Sub35(i_32_);
         class348_sub35.aLong4291 = i;
         int i_33_ = -124 / ((i_31_ - 79) / 39);
-        aClass262_7752.method1999(class348_sub35, -20180);
+        aDeque_7752.method1999(class348_sub35, -20180);
     }
 
     final void method3738(int i, int i_34_) {
@@ -665,7 +665,7 @@ final class OpenGLToolkit extends Toolkit {
                 anInt7686++;
                 if (i != 6) aClass351_7715 = null;
                 if (class348_sub42_sub12 != null) {
-                    Class348_Sub40_Sub4.aClass262_9111.method1999(class348_sub42_sub12, -20180);
+                    TextureOpVerticalGradient.aDeque_9111.method1999(class348_sub42_sub12, -20180);
                     Class73.anInt4776++;
                     Object object = null;
                     Class348_Sub42_Sub13 class348_sub42_sub13;
@@ -736,7 +736,7 @@ final class OpenGLToolkit extends Toolkit {
             byte i_51_ = !this.aBoolean7846 ? (byte) 0 : (byte) 3;
             if (i >= 0) {
                 class258_sub3 = aClass354_7723.method3467(i, 256);
-                TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+                TextureMetrics textureMetrics = this.textureSource.getMetrics(i, -6662);
                 if (textureMetrics.speedU != 0 || textureMetrics.speedV != 0) {
                     int i_52_ = textureMetrics.aBoolean199 ? 64 : 128;
                     int i_53_ = i_52_ * 50;
@@ -1043,7 +1043,7 @@ final class OpenGLToolkit extends Toolkit {
         this.anInt7731 = 3;
         aBoolean7734 = false;
         this.anInt7733 = 8;
-        aClass262_7732 = new Class262();
+        aDeque_7732 = new Deque();
         anInterface11Array7737 = new Interface11[4];
         anInt7738 = -1;
         anInt7742 = -1;
@@ -1052,13 +1052,13 @@ final class OpenGLToolkit extends Toolkit {
         anInt7746 = -1;
         new Class107();
         new Class356(16);
-        aClass262_7749 = new Class262();
-        aClass262_7751 = new Class262();
-        aClass262_7752 = new Class262();
-        aClass262_7753 = new Class262();
-        aClass262_7754 = new Class262();
-        aClass262_7755 = new Class262();
-        aClass262_7756 = new Class262();
+        aDeque_7749 = new Deque();
+        aDeque_7751 = new Deque();
+        aDeque_7752 = new Deque();
+        aDeque_7753 = new Deque();
+        aDeque_7754 = new Deque();
+        aDeque_7755 = new Deque();
+        aDeque_7756 = new Deque();
         this.aClass101_Sub3_7760 = new Class101_Sub3();
         this.aClass101_Sub3_7766 = new Class101_Sub3();
         this.aClass101_Sub3_7767 = new Class101_Sub3();
@@ -1111,8 +1111,8 @@ final class OpenGLToolkit extends Toolkit {
         try {
             aCanvas7575 = aCanvas7626 = canvas;
             this.anInt7713 = i;
-            if (!Class348_Sub40_Sub19.method3098(-30282, "jaclib")) throw new RuntimeException("");
-            if (!Class348_Sub40_Sub19.method3098(-30282, "jaggl")) throw new RuntimeException("");
+            if (!TextureOpHorizontalGradient.method3098(-30282, "jaclib")) throw new RuntimeException("");
+            if (!TextureOpHorizontalGradient.method3098(-30282, "jaggl")) throw new RuntimeException("");
             try {
                 anOpenGL7664 = new OpenGL();
                 aLong7636 = aLong7553 = anOpenGL7664.init(canvas, 8, 8, 8, 24, 0, this.anInt7713);
@@ -1125,7 +1125,7 @@ final class OpenGLToolkit extends Toolkit {
                     int i_100_ = 0;
                     boolean bool = false;
                     boolean bool_101_ = false;
-                    String[] strings = (Class348_Sub40_Sub23.method3113(' ', true, aString7790.replace('/', ' ')));
+                    String[] strings = (TextureOpIrregularBricks.method3113(' ', true, aString7790.replace('/', ' ')));
                     for (int i_102_ = 0; i_102_ < strings.length; i_102_++) {
                         String string = strings[i_102_];
                         try {
@@ -1171,7 +1171,7 @@ final class OpenGLToolkit extends Toolkit {
                 }
                 Class59_Sub2_Sub1.method566(false, true, (byte) -128);
                 aBoolean7734 = true;
-                aClass354_7723 = new Class354(this, this.aD4579);
+                aClass354_7723 = new Class354(this, this.textureSource);
                 method3786(false);
                 this.aClass188_7736 = new Class188(this);
                 aClass18_7720 = new Class18(this);
@@ -1339,8 +1339,8 @@ final class OpenGLToolkit extends Toolkit {
         anInt7699++;
         int i_122_ = 0;
         i &= 0x7fffffff;
-        while (!aClass262_7751.method2002((byte) 18)) {
-            Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass262_7751.method1997(8);
+        while (!aDeque_7751.method2002((byte) 18)) {
+            Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7751.method1997(8);
             Class328_Sub3.anIntArray6522[i_122_++] = (int) class348_sub35.aLong4291;
             this.anInt7747 -= class348_sub35.anInt6976;
             if (i_122_ == 1000) {
@@ -1352,8 +1352,8 @@ final class OpenGLToolkit extends Toolkit {
             OpenGL.glDeleteBuffersARB(i_122_, Class328_Sub3.anIntArray6522, 0);
             i_122_ = 0;
         }
-        while (!aClass262_7752.method2002((byte) 18)) {
-            Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass262_7752.method1997(8);
+        while (!aDeque_7752.method2002((byte) 18)) {
+            Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7752.method1997(8);
             Class328_Sub3.anIntArray6522[i_122_++] = (int) class348_sub35.aLong4291;
             this.anInt7748 -= class348_sub35.anInt6976;
             if (i_122_ == 1000) {
@@ -1365,8 +1365,8 @@ final class OpenGLToolkit extends Toolkit {
             OpenGL.glDeleteTextures(i_122_, Class328_Sub3.anIntArray6522, 0);
             i_122_ = 0;
         }
-        while (!aClass262_7753.method2002((byte) 18)) {
-            Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass262_7753.method1997(8);
+        while (!aDeque_7753.method2002((byte) 18)) {
+            Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7753.method1997(8);
             Class328_Sub3.anIntArray6522[i_122_++] = class348_sub35.anInt6976;
             if (i_122_ == 1000) {
                 OpenGL.glDeleteFramebuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0);
@@ -1377,8 +1377,8 @@ final class OpenGLToolkit extends Toolkit {
             OpenGL.glDeleteFramebuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0);
             i_122_ = 0;
         }
-        while (!aClass262_7754.method2002((byte) 18)) {
-            Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass262_7754.method1997(8);
+        while (!aDeque_7754.method2002((byte) 18)) {
+            Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7754.method1997(8);
             Class328_Sub3.anIntArray6522[i_122_++] = (int) class348_sub35.aLong4291;
             anInt7750 -= class348_sub35.anInt6976;
             if (i_122_ == 1000) {
@@ -1390,20 +1390,20 @@ final class OpenGLToolkit extends Toolkit {
             OpenGL.glDeleteRenderbuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0);
             boolean bool = false;
         }
-        while (!aClass262_7749.method2002((byte) 18)) {
-            Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass262_7749.method1997(8);
+        while (!aDeque_7749.method2002((byte) 18)) {
+            Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7749.method1997(8);
             OpenGL.glDeleteLists((int) class348_sub35.aLong4291, class348_sub35.anInt6976);
         }
-        while (!aClass262_7755.method2002((byte) 18)) {
-            Node node = aClass262_7755.method1997(8);
+        while (!aDeque_7755.method2002((byte) 18)) {
+            Node node = aDeque_7755.method1997(8);
             OpenGL.glDeleteProgramARB((int) node.aLong4291);
         }
-        while (!aClass262_7756.method2002((byte) 18)) {
-            Node node = aClass262_7756.method1997(8);
+        while (!aDeque_7756.method2002((byte) 18)) {
+            Node node = aDeque_7756.method1997(8);
             OpenGL.glDeleteObjectARB(node.aLong4291);
         }
-        while (!aClass262_7749.method2002((byte) 18)) {
-            Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass262_7749.method1997(8);
+        while (!aDeque_7749.method2002((byte) 18)) {
+            Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7749.method1997(8);
             OpenGL.glDeleteLists((int) class348_sub35.aLong4291, class348_sub35.anInt6976);
         }
         aClass354_7723.method3469(8218);
@@ -1451,7 +1451,7 @@ final class OpenGLToolkit extends Toolkit {
     }
 
     final void method3761(int i, int i_133_) {
-        if (i != 0) aClass262_7751 = null;
+        if (i != 0) aDeque_7751 = null;
         anInt7654++;
         if (i_133_ == 1) method3729(7681, (byte) 114, 7681);
         else if (i_133_ == 0) method3729(8448, (byte) 107, 8448);
@@ -1510,7 +1510,7 @@ final class OpenGLToolkit extends Toolkit {
         Node node = new Node();
         node.aLong4291 = i_137_;
         if (i <= 64) method3685(null, -38);
-        aClass262_7755.method1999(node, -20180);
+        aDeque_7755.method1999(node, -20180);
     }
 
     final void method3766(byte i, Class101_Sub3 class101_sub3) {
@@ -1528,7 +1528,7 @@ final class OpenGLToolkit extends Toolkit {
     }
 
     final void method3700(float f, float f_138_, float f_139_) {
-        Class348_Sub40_Sub13.aFloat9204 = f_139_;
+        TextureOpMonochrome.aFloat9204 = f_139_;
         Class75_Sub1.aFloat5654 = f;
         anInt7685++;
         Option_Sub26.aFloat6120 = f_138_;
@@ -1597,7 +1597,7 @@ final class OpenGLToolkit extends Toolkit {
                 if (i_146_ > 64) {
                     if (i_146_ > 512) i_146_ = 512;
                 } else i_146_ = 64;
-                i_146_ = Class348_Sub40_Sub1.method3051(i_146_, 4096);
+                i_146_ = TextureOpBrightness.method3051(i_146_, 4096);
                 OpenGL.glVertex2f((float) i_141_ + f, f_144_);
                 for (int i_147_ = 16384 + -i_146_; i_147_ > 0; i_147_ -= i_146_)
                     OpenGL.glVertex2f((float) i_141_ * (Class348_Sub23.aFloatArray6867[i_147_]) + f, (float) i_141_ * (Class348_Sub23.aFloatArray6865[i_147_]) + f_144_);
@@ -1620,7 +1620,7 @@ final class OpenGLToolkit extends Toolkit {
     }
 
     final void method3652() {
-        for (Node node = aClass262_7732.method1995(4); node != null; node = aClass262_7732.method1990((byte) 55))
+        for (Node node = aDeque_7732.method1995(4); node != null; node = aDeque_7732.method1990((byte) 55))
             ((za_Sub1) node).method3440(-82);
         anInt7563++;
         if (aClass18_7720 != null) aClass18_7720.method279((byte) -126);
@@ -1682,11 +1682,11 @@ final class OpenGLToolkit extends Toolkit {
 
     final synchronized void method3769(long l, boolean bool) {
         try {
-            if (bool != false) aClass262_7751 = null;
+            if (bool != false) aDeque_7751 = null;
             anInt7533++;
             Node node = new Node();
             node.aLong4291 = l;
-            aClass262_7756.method1999(node, -20180);
+            aDeque_7756.method1999(node, -20180);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "qo.CD(" + l + ',' + bool + ')');
         }
@@ -1836,7 +1836,7 @@ final class OpenGLToolkit extends Toolkit {
     final za method3702(int i) {
         anInt7538++;
         za_Sub1 var_za_Sub1 = new za_Sub1(i);
-        aClass262_7732.method1999(var_za_Sub1, -20180);
+        aDeque_7732.method1999(var_za_Sub1, -20180);
         return var_za_Sub1;
     }
 
@@ -1880,7 +1880,7 @@ final class OpenGLToolkit extends Toolkit {
         if (aString7845.indexOf("microsoft") != -1) i_183_ |= 0x1;
         if (aString7845.indexOf("brian paul") != -1 || aString7845.indexOf("mesa") != -1) i_183_ |= 0x1;
         String string = OpenGL.glGetString(7938);
-        String[] strings = Class348_Sub40_Sub23.method3113(' ', true, string.replace('.', ' '));
+        String[] strings = TextureOpIrregularBricks.method3113(' ', true, string.replace('.', ' '));
         if (strings.length >= 2) {
             try {
                 int i_184_ = Class348_Sub41.parseInt(true, strings[0]);
@@ -2241,7 +2241,7 @@ final class OpenGLToolkit extends Toolkit {
         anInt7616++;
         Class348_Sub35 class348_sub35 = new Class348_Sub35(i);
         class348_sub35.aLong4291 = i_236_;
-        aClass262_7751.method1999(class348_sub35, -20180);
+        aDeque_7751.method1999(class348_sub35, -20180);
         if (i_235_ != -1) method3733(-17, -42, -40, null, true);
     }
 
@@ -2820,7 +2820,7 @@ final class OpenGLToolkit extends Toolkit {
     final synchronized void method3800(int i, int i_299_) {
         anInt7570++;
         Class348_Sub35 class348_sub35 = new Class348_Sub35(i_299_);
-        if (i > 71) aClass262_7753.method1999(class348_sub35, -20180);
+        if (i > 71) aDeque_7753.method1999(class348_sub35, -20180);
     }
 
     final void method3698() {
@@ -3356,7 +3356,7 @@ final class OpenGLToolkit extends Toolkit {
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_436_;
             if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_435_, -6008)).aNpc_6859);
             else class318_sub1_sub3_sub3_436_ = Class294.aPlayerArray5058[i_435_];
-            Class191.method1430(--class318_sub1_sub3_sub3.anInt10261, (byte) 119, i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3);
+            MonochromeImageCache.method1430(--class318_sub1_sub3_sub3.anInt10261, (byte) 119, i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3);
         }
         int i_437_ = i_316_ + (Class369.aFontMetrics_4962.bottomPadding + Class369.aFontMetrics_4962.topPadding);
         for (int i_438_ = 0; i_438_ < Class88.anInt1497; i_438_++) {
@@ -3380,7 +3380,7 @@ final class OpenGLToolkit extends Toolkit {
             int i_445_ = -Class369.aFontMetrics_4962.topPadding + i_440_ + i;
             int i_446_ = i_444_ - -i_443_;
             int i_447_ = i_440_ + i - -Class369.aFontMetrics_4962.bottomPadding;
-            if (Class348_Sub40_Sub31.anInt9408 == 0) {
+            if (TextureOpTile.anInt9408 == 0) {
                 int i_448_ = 16776960;
                 if (Class309.anIntArray4817[i_438_] < 6) i_448_ = (Class115.anIntArray1757[Class309.anIntArray4817[i_438_]]);
                 if (Class309.anIntArray4817[i_438_] == 6) i_448_ = (Option_Sub15.anInt6006 % 20 >= 10 ? 16776960 : 16711680);
@@ -3409,21 +3409,21 @@ final class OpenGLToolkit extends Toolkit {
                 }
                 int i_452_ = ~0xffffff | i_448_;
                 if (Class309.anIntArray4806[i_438_] == 0) {
-                    Class262.aFontRenderer_3326.method2575((byte) 115, i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i);
+                    Deque.aFontRenderer_3326.method2575((byte) 115, i_439_ + i_317_, i_452_, string, -16777216, i_440_ + i);
                     i_444_ -= i_443_ >> 1;
                     i_446_ -= i_443_ >> 1;
                 }
                 if (Class309.anIntArray4806[i_438_] == 1) {
                     i_446_ -= i_443_ >> 1;
                     i_444_ -= i_443_ >> 1;
-                    Class262.aFontRenderer_3326.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, Option_Sub15.anInt6006, false);
+                    Deque.aFontRenderer_3326.method2574(i_452_, i_440_ + i, string, i_317_ - -i_439_, -16777216, Option_Sub15.anInt6006, false);
                     i_447_ += 5;
                     i_445_ -= 5;
                 }
                 if (Class309.anIntArray4806[i_438_] == 2) {
                     i_447_ += 5;
                     i_446_ -= -5 + (i_443_ >> 1);
-                    Class262.aFontRenderer_3326.method2581(string, i_452_, (Option_Sub15.anInt6006), i_440_ + i, (byte) -112, -16777216, i_317_ - -i_439_);
+                    Deque.aFontRenderer_3326.method2581(string, i_452_, (Option_Sub15.anInt6006), i_440_ + i, (byte) -112, -16777216, i_317_ - -i_439_);
                     i_445_ -= 5;
                     i_444_ -= (i_443_ >> 1) - -5;
                 }
@@ -3431,7 +3431,7 @@ final class OpenGLToolkit extends Toolkit {
                     i_446_ -= i_443_ >> 1;
                     i_444_ -= i_443_ >> 1;
                     i_447_ += 7;
-                    Class262.aFontRenderer_3326.method2577(Option_Sub15.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812[i_438_], i_439_ + i_317_, -20509);
+                    Deque.aFontRenderer_3326.method2577(Option_Sub15.anInt6006, i + i_440_, string, i_452_, -16777216, 150 + -Class309.anIntArray4812[i_438_], i_439_ + i_317_, -20509);
                     i_445_ -= 7;
                 }
                 if (Class309.anIntArray4806[i_438_] == 4) {
@@ -3439,7 +3439,7 @@ final class OpenGLToolkit extends Toolkit {
                     Class348_Sub8.active.T(i_317_ - (-i_439_ - -50), i, 50 + (i_439_ + i_317_), i - -i_315_);
                     i_444_ += 50 - i_453_;
                     i_446_ += -i_453_ + 50;
-                    Class262.aFontRenderer_3326.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125);
+                    Deque.aFontRenderer_3326.method2576(string, i_452_, i + i_440_, (i_317_ - (-i_439_ - 50) - i_453_), -16777216, i_316_ + -125);
                     Class348_Sub8.active.KA(i_317_, i, i_318_ + i_317_, i + i_315_);
                 }
                 if (Class309.anIntArray4806[i_438_] == 5) {
@@ -3452,7 +3452,7 @@ final class OpenGLToolkit extends Toolkit {
                     Class348_Sub8.active.T(i_317_, i_440_ + i - (i_456_ - -1), i_318_ + i_317_, 5 + i_440_ + i);
                     i_444_ -= i_443_ >> 1;
                     i_447_ += i_455_;
-                    Class262.aFontRenderer_3326.method2575((byte) -105, i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_));
+                    Deque.aFontRenderer_3326.method2575((byte) -105, i_439_ + i_317_, i_452_, string, -16777216, i_455_ + (i + i_440_));
                     i_445_ += i_455_;
                     i_446_ -= i_443_ >> 1;
                     Class348_Sub8.active.KA(i_317_, i, i_318_ + i_317_, i_315_ + i);
@@ -3460,7 +3460,7 @@ final class OpenGLToolkit extends Toolkit {
             } else {
                 i_444_ -= i_443_ >> 1;
                 i_446_ -= i_443_ >> 1;
-                Class262.aFontRenderer_3326.method2575((byte) 118, i_439_ + i_317_, -256, string, -16777216, i_440_ + i);
+                Deque.aFontRenderer_3326.method2575((byte) 118, i_439_ + i_317_, -256, string, -16777216, i_440_ + i);
             }
             Class338.method2663(i_316_ + -5592, i_444_, 1 + i_446_, i_445_, 1 + i_447_);
         }
@@ -3666,7 +3666,7 @@ final class OpenGLToolkit extends Toolkit {
             anInt7677++;
             Class348_Sub35 class348_sub35 = new Class348_Sub35(i_478_);
             class348_sub35.aLong4291 = i;
-            aClass262_7754.method1999(class348_sub35, -20180);
+            aDeque_7754.method1999(class348_sub35, -20180);
         }
     }
 

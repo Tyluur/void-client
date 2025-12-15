@@ -198,7 +198,7 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
                 anInt10421 -= (long) anInt10421 * l_38_ >> 28;
             }
             if (class181.anIntArray2402 != null) {
-                Node node = (class318_sub10.aClass262_6479.aNode_3334);
+                Node node = (class318_sub10.aDeque_6479.aNode_3334);
                 for (Node node_39_ = node.aNode_4294; node_39_ != node; node_39_ = node_39_.aNode_4294) {
                     Class348_Sub42_Sub20 class348_sub42_sub20 = (Class348_Sub42_Sub20) node_39_;
                     Class174 class174 = (class348_sub42_sub20.aClass174_9704);

@@ -88,7 +88,7 @@ final class FloorOverlayTypeList {
         anInt3445++;
         int i_5_ = Class367_Sub11.anInt7396 - Class348_Sub49_Sub1.anInt9751;
         if (i_5_ >= 100) {
-            Class348_Sub40_Sub21.anInt9282 = 1;
+            TextureOp37.anInt9282 = 1;
             Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
         } else {
             int i_6_ = (int) Class76.aFloat1287;

@@ -8,7 +8,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
     boolean aBoolean8741;
     static int anInt8742;
     short aShort8743;
-    static Class262 aClass262_8744 = new Class262();
+    static Deque aDeque_8744 = new Deque();
     byte aByte8745;
     static int anInt8746;
     short aShort8747;
@@ -46,7 +46,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
     static final int method2408(byte i) {
         anInt8754++;
         int i_4_ = -71 % ((-2 - i) / 44);
-        return Class348_Sub40_Sub31.anInt9411++;
+        return TextureOpTile.anInt9411++;
     }
 
     void method2409(byte i) {
@@ -59,10 +59,10 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
         if (!Class5_Sub1.aBoolean8335) return false;
         int i_7_ = i_6_ >> 16;
         int i_8_ = i_6_ & 0xffff;
-        if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_7_] == null || Class348_Sub40_Sub33.aClass46ArrayArray9427[i_7_][i_8_] == null) return false;
-        Class46 class46 = Class348_Sub40_Sub33.aClass46ArrayArray9427[i_7_][i_8_];
+        if (TextureOpKaleidoscope.aClass46ArrayArray9427[i_7_] == null || TextureOpKaleidoscope.aClass46ArrayArray9427[i_7_][i_8_] == null) return false;
+        Class46 class46 = TextureOpKaleidoscope.aClass46ArrayArray9427[i_7_][i_8_];
         if (i_5_ == -1 && class46.anInt774 == 0) {
-            for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1990((byte) 56)) {
+            for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1990((byte) 56)) {
                 if (class348_sub42_sub12.anInt9608 == 6 || class348_sub42_sub12.anInt9608 == 1011 || (class348_sub42_sub12.anInt9608 == 13) || (class348_sub42_sub12.anInt9608 == 18) || (class348_sub42_sub12.anInt9608 == 16)) {
                     for (Class46 class46_9_ = FontRenderer.method2570(1512932720, (class348_sub42_sub12.anInt9607)); class46_9_ != null; class46_9_ = Class237.method1687(class46_9_, 3)) {
                         if (class46_9_.anInt830 == class46.anInt830) return true;
@@ -70,7 +70,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
                 }
             }
         } else {
-            for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1990((byte) 93)) {
+            for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1990((byte) 93)) {
                 if ((class348_sub42_sub12.anInt9602 == i_5_) && (class348_sub42_sub12.anInt9607 == class46.anInt830) && ((class348_sub42_sub12.anInt9608) == 6 || (class348_sub42_sub12.anInt9608) == 1011 || (class348_sub42_sub12.anInt9608) == 13 || (class348_sub42_sub12.anInt9608) == 18 || (class348_sub42_sub12.anInt9608) == 16))
                     return true;
             }
@@ -104,7 +104,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
     public static void method2412(boolean bool) {
         aIndex_8755 = null;
         aClass114_8756 = null;
-        aClass262_8744 = null;
+        aDeque_8744 = null;
         if (bool != true) method2408((byte) -121);
     }
 
@@ -192,7 +192,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
     static final int method2413(int i, Class348_Sub49_Sub2 class348_sub49_sub2) {
         anInt8749++;
         int i_35_ = class348_sub49_sub2.readBits((byte) -24, 2);
-        if (i != 1) aClass262_8744 = null;
+        if (i != 1) aDeque_8744 = null;
         int i_36_;
         if (i_35_ != 0) {
             if (i_35_ == 1) i_36_ = class348_sub49_sub2.readBits((byte) -24, 5);

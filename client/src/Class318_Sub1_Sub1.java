@@ -34,7 +34,7 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1 {
         anInt8726++;
         i_1_ <<= 3;
         i_2_ <<= 3;
-        if (Class348_Sub40_Sub21.anInt9282 == 2) {
+        if (TextureOp37.anInt9282 == 2) {
             Class5.anInt4638 = i_1_;
             Class338.anInt4186 = i_2_;
             ClientScript.anInt9701 = i;

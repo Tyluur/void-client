@@ -201,7 +201,7 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3 implements Interf
 
     private final Class2 method2417(int i, Toolkit var_toolkit, int i_20_, boolean bool) {
         anInt10007++;
-        Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(i, 0xffff & aShort10032);
+        Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(i, 0xffff & aShort10032);
         Ground var_ground;
         Ground var_ground_21_;
         if (aBoolean10017) {

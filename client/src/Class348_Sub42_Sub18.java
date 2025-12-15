@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub18 extends Class348_Sub42 {
+final class Class348_Sub42_Sub18 extends LinkedNode {
     static int anInt9681;
     Class318_Sub1_Sub3_Sub5 aClass318_Sub1_Sub3_Sub5_9682;
     static int anInt9683;
@@ -12,9 +12,9 @@ final class Class348_Sub42_Sub18 extends Class348_Sub42 {
 
     static final void method3273(boolean bool, int i, Class348_Sub16_Sub3 class348_sub16_sub3) {
         if (i > -55) method3275(117, -54, 56);
-        Class348_Sub40.aClass279_7042.method2088(false, class348_sub16_sub3);
+        TextureOp.aClass279_7042.method2088(false, class348_sub16_sub3);
         anInt9681++;
-        if (bool) Class318_Sub7.method2510(ModelParticleEmitter.SOUND_EFFECTS, class348_sub16_sub3, Option_Sub4.MIDI_INSTRUMENTS, false, Class348_Sub40.aClass279_7042, Class123.aIndex_1815);
+        if (bool) Class318_Sub7.method2510(ModelParticleEmitter.SOUND_EFFECTS, class348_sub16_sub3, Option_Sub4.MIDI_INSTRUMENTS, false, TextureOp.aClass279_7042, Class123.aIndex_1815);
     }
 
     public static void method3274(boolean bool) {

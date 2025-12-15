@@ -26,7 +26,7 @@ final class InputStream_Sub1 extends InputStream {
 
     static final boolean method125(int i, int i_0_, int i_1_, Class318_Sub1_Sub4 class318_sub1_sub4, byte i_2_) {
         anInt72++;
-        if (!Class348_Sub40_Sub23.aBoolean9307 || !Class23.aBoolean351) return false;
+        if (!TextureOpIrregularBricks.aBoolean9307 || !Class23.aBoolean351) return false;
         if (Class225.anInt2946 < 100) return false;
         if (!aa_Sub2.method164(i_1_, i_0_, (byte) -97, i)) return false;
         int i_3_ = i_0_ << Class362.anInt4459;

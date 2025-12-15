@@ -34,7 +34,7 @@ final class JavaOffscreenSurface implements OffscreenSurface {
             i_2_ = 3;
         } else if (i <= 2000) {
             i_2_ = 1;
-            Class348_Sub40_Sub12.method3076(0, true);
+            TextureOpColourGradient.method3076(0, true);
         } else {
             i_2_ = 2;
             Class161.method1263(true);

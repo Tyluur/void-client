@@ -60,7 +60,7 @@ final class Class27 {
         Class367_Sub9.anInt7379 = 3;
         anInt390++;
         Class164.anInt2173 = 100;
-        Class348_Sub40_Sub30.anInt9399 = -1;
+        TextureOpHslAdjust.anInt9399 = -1;
     }
 
     static final int method315(byte i, String string) {
@@ -94,8 +94,8 @@ final class Class27 {
                             Class59.method544((string + (Class274.aClass274_3523.method2063(AnimBase.language, 544))), false, 4);
                             return;
                         }
-                        if (Class348_Sub40_Sub21.aStringArray9275[i_7_] != null) {
-                            String string_9_ = (Class285_Sub1.method2127(2, (Class348_Sub40_Sub21.aStringArray9275[i_7_])));
+                        if (TextureOp37.aStringArray9275[i_7_] != null) {
+                            String string_9_ = (Class285_Sub1.method2127(2, (TextureOp37.aStringArray9275[i_7_])));
                             if (string_9_ != null && string_9_.equals(string_6_)) {
                                 Class59.method544(string + (Class274.aClass274_3523.method2063((AnimBase.language), 544)), false, 4);
                                 return;
@@ -103,7 +103,7 @@ final class Class27 {
                         }
                     }
                     if (i >= 90) {
-                        for (int i_10_ = 0; i_10_ < Class348_Sub40_Sub30.anInt9383; i_10_++) {
+                        for (int i_10_ = 0; i_10_ < TextureOpHslAdjust.anInt9383; i_10_++) {
                             String string_11_ = Class285_Sub1.method2127(2, (Class83.aStringArray1441[i_10_]));
                             if (string_11_ != null && string_11_.equals(string_6_)) {
                                 Class59.method544(((Class274.aClass274_3528.method2063(AnimBase.language, 544)) + string + (Class274.aClass274_3529.method2063(AnimBase.language, 544))), false, 4);

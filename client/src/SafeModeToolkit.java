@@ -8,7 +8,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
     private ya aYa5121;
     private static final int[] anIntArray5122 = new int[Math.max(Math.max(104, 20), 24573)];
     long nativeid = 0L;
-    private final Class262 aClass262_5123;
+    private final Deque aDeque_5123;
     private boolean aBoolean5124 = false;
     private Matrix aMatrix_5125;
     private final Class356 aClass356_5126;
@@ -151,13 +151,13 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
     }
 
     private final boolean WA(short i) {//
-        synchronized (this.aD4579) {
-            if (!this.aD4579.method4(-7953, i)) return false;
-            TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+        synchronized (this.textureSource) {
+            if (!this.textureSource.textureReady(-7953, i)) return false;
+            TextureMetrics textureMetrics = this.textureSource.getMetrics(i, -6662);
             if (textureMetrics == null) return false;
             int[] is;
-            if (textureMetrics.alphaBlendMode != 2) is = this.aD4579.method5(true, i, 0.7F, 128, 128, -128);
-            else is = this.aD4579.method6(-21540, 128, 0.7F, i, true, 128);
+            if (textureMetrics.alphaBlendMode != 2) is = this.textureSource.rgbPixels(true, i, 0.7F, 128, 128, -128);
+            else is = this.textureSource.pixels(-21540, 128, 0.7F, i, true, 128);
             CA(i, is, textureMetrics.aShort208, textureMetrics.alphaBlendMode, textureMetrics.effectType, textureMetrics.effectParam1, textureMetrics.anInt206, textureMetrics.aBoolean199, textureMetrics.aByte201, textureMetrics.aByte216, textureMetrics.speedU, textureMetrics.speedV, textureMetrics.disableable, textureMetrics.aBoolean204, textureMetrics.aBoolean212, textureMetrics.aBoolean217, textureMetrics.aBoolean215, textureMetrics.aByte205, textureMetrics.aBoolean218, textureMetrics.aBoolean207, textureMetrics.anInt203);
         }
         return true;
@@ -196,7 +196,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
 
     final za method3702(int i) {
         ya var_ya = new ya(this, i);
-        aClass262_5123.method1999(var_ya, -20180);
+        aDeque_5123.method1999(var_ya, -20180);
         return var_ya;
     }
 
@@ -259,9 +259,9 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
             aYa5121 = null;
             aMatrix_5131 = null;
             aClass356_5126.method3481(0);
-            for (ya var_ya = (ya) aClass262_5123.method1995(4); var_ya != null; var_ya = (ya) aClass262_5123.method1990((byte) 36))
+            for (ya var_ya = (ya) aDeque_5123.method1995(4); var_ya != null; var_ya = (ya) aDeque_5123.method1990((byte) 36))
                 var_ya.ga();
-            aClass262_5123.method1996(117);
+            aDeque_5123.clear(117);
             FA();
             if (aBoolean5142) {
                 Class286_Sub8.method2173(true, -110, false);
@@ -281,7 +281,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
 
     private final boolean c(short i) {//
         synchronized (this) {
-            TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+            TextureMetrics textureMetrics = this.textureSource.getMetrics(i, -6662);
             if (textureMetrics == null) return false;
             AA(i, textureMetrics.aShort208, textureMetrics.alphaBlendMode, textureMetrics.effectType, textureMetrics.effectParam1, textureMetrics.anInt206, textureMetrics.aBoolean199, textureMetrics.aByte201, textureMetrics.aByte216, textureMetrics.speedU, textureMetrics.speedV, textureMetrics.disableable, textureMetrics.aBoolean204, textureMetrics.aBoolean212, textureMetrics.aBoolean217, textureMetrics.aBoolean215, textureMetrics.aByte205, textureMetrics.aBoolean218, textureMetrics.aBoolean207, textureMetrics.anInt203);
         }
@@ -309,7 +309,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
     final void method3646(int i) {
         Class257.method1948((byte) -71);
         d(i);
-        for (ya var_ya = (ya) aClass262_5123.method1995(4); var_ya != null; var_ya = (ya) aClass262_5123.method1990((byte) 40))
+        for (ya var_ya = (ya) aDeque_5123.method1995(4); var_ya != null; var_ya = (ya) aDeque_5123.method1990((byte) 40))
             var_ya.r();
     }
 
@@ -456,7 +456,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
 
     public SafeModeToolkit(Canvas canvas, TextureSource var_d, int i, int i_177_) {
         super(var_d);
-        aClass262_5123 = new Class262();
+        aDeque_5123 = new Deque();
         anInt5127 = 4096;
         anInt5128 = 4096;
         aClass356_5126 = new Class356(4);
@@ -464,9 +464,9 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
         do {
             try {
 
-                if (!Class348_Sub40_Sub19.method3098(-30282, "sw3d")) throw new RuntimeException("");
+                if (!TextureOpHorizontalGradient.method3098(-30282, "sw3d")) throw new RuntimeException("");
                 Class257.method1949((byte) -128);
-                MA(aD4579, 0, 0);
+                MA(textureSource, 0, 0);
                 Class59_Sub2_Sub1.method566(false, true, (byte) 23);
                 aBoolean5142 = true;
                 aMatrix_5131 = new ja();

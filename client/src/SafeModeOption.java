@@ -24,7 +24,7 @@ final class SafeModeOption extends Option {
             if (bool != true) method1769(-43);
             int i_1_ = (Class318_Sub1_Sub3_Sub3.timedVarDomain.anIntArray5063[i]);
             if (i_0_ == 5) Class318_Sub1_Sub5.anInt8770 = i_1_;
-            if (i_0_ == 6) Class348_Sub40_Sub31.anInt9408 = i_1_;
+            if (i_0_ == 6) TextureOpTile.anInt9408 = i_1_;
         }
     }
 
@@ -93,7 +93,7 @@ final class SafeModeOption extends Option {
             Class267.aClass267_3418.method2025(new Class292(Class130.QUICK_CHAT_MESSAGES), false);
             Class267.aClass267_3419.method2025(new Class292(VarcstrTypeList.QUICK_CHAT_MENUS), false);
             Class267.aClass267_3420.method2025(new Class292(Option.PARTICLES), false);
-            Class267.aClass267_3421.method2025(new Class292(Class262.BILLBOARDS), false);
+            Class267.aClass267_3421.method2025(new Class292(Deque.BILLBOARDS), false);
             Class267.aClass267_3422.method2025(new Class73((Class16.HUFFMAN), "huffman"), false);
             Class267.aClass267_3423.method2025(new Class292(Class348_Sub35.INTERFACES), false);
             Class267.aClass267_3424.method2025(new Class292(Class113.CLIENT_SCRIPTS), false);
@@ -110,7 +110,7 @@ final class SafeModeOption extends Option {
                 int i_8_ = class267.method2027(80).method31(87);
                 i_5_ += i_8_ * i_7_ / 100;
             }
-            Class348_Sub40_Sub24.anInt9327 = i_5_;
+            TextureOpSquareWaveform.anInt9327 = i_5_;
             Class367_Sub8.anInt7365 = 2;
         }
         if (Class126.aClass267Array4987 == null) return 100;
@@ -132,8 +132,8 @@ final class SafeModeOption extends Option {
             if (!((Class309) Class267.aClass267_3407.method2027(i ^ ~0x64)).method2313(103)) Class38.aBoolean510 = NPCDefinition.aClient1367.method100(i ^ ~0x12);
             Class126.aClass267Array4987 = null;
         }
-        i_9_ -= Class348_Sub40_Sub24.anInt9327;
-        i_10_ -= Class348_Sub40_Sub24.anInt9327;
+        i_9_ -= TextureOpSquareWaveform.anInt9327;
+        i_10_ -= TextureOpSquareWaveform.anInt9327;
         int i_14_ = i_9_ <= 0 ? 100 : 100 * i_10_ / i_9_;
         if (!bool && i_14_ > 99) i_14_ = 99;
         return i_14_;

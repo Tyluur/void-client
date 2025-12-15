@@ -19,7 +19,7 @@ final class Class348_Sub13 extends Node {
     private final long method2802(int[] is, int i, boolean bool, int[] is_6_, byte i_7_) {
         try {
             anInt6755++;
-            long[] ls = Class348_Sub40_Sub21.aLongArray9283;
+            long[] ls = TextureOp37.aLongArray9283;
             long l = -1L;
             l = (ls[(int) (0xffL & (l ^ (long) (i >> 8)))] ^ l >>> 8);
             l = ls[(int) (0xffL & (l ^ (long) i))] ^ l >>> 8;

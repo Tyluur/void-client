@@ -32,7 +32,7 @@ final class AnimBase extends Node {
 
     static final void method3025(byte i, Class348_Sub49_Sub2 class348_sub49_sub2) {
         anInt6961++;
-        Class348_Sub48 class348_sub48 = (Class348_Sub48) Class348_Sub35.aClass262_6978.method1995(4);
+        Class348_Sub48 class348_sub48 = (Class348_Sub48) Class348_Sub35.aDeque_6978.method1995(4);
         if (class348_sub48 != null) {
             boolean bool = false;
             for (int i_0_ = 0; i_0_ < class348_sub48.anInt7126; i_0_++) {

@@ -35,7 +35,7 @@ final class StructTypeList {
         if (i_2_ == -1007) {
             if (i == 1009) Class66.method701(Class327.aClass273_4091, i_1_, i_0_);
             else if (i != 1012) {
-                if (i == 1002) Class66.method701(Class348_Sub40_Sub32.aClass273_9415, i_1_, i_0_);
+                if (i == 1002) Class66.method701(TextureOpInvert.aClass273_9415, i_1_, i_0_);
                 else if (i == 1003) Class66.method701(Class348_Sub12.aClass273_6743, i_1_, i_0_);
                 else if (i == 1006) Class66.method701(Option_Sub17.aClass273_6018, i_1_, i_0_);
             } else Class66.method701(Class5_Sub2.aClass273_8356, i_1_, i_0_);
@@ -62,11 +62,11 @@ final class StructTypeList {
     //method699
     static final void initInterfaces(Index index, byte i, Index index_4_, Index index_5_, Index index_6_) {
         try {
-            Class348_Sub40_Sub28.aIndex_9365 = index_6_;
+            TextureOpLineNoise.aIndex_9365 = index_6_;
             anInt1147++;
             Class318_Sub1_Sub3.aIndex_8755 = index_5_;
             Class229.aIndex_2978 = index_4_;
-            Class348_Sub40_Sub33.aClass46ArrayArray9427 = new Class46[Class229.aIndex_2978.method414(-1)][];
+            TextureOpKaleidoscope.aClass46ArrayArray9427 = new Class46[Class229.aIndex_2978.method414(-1)][];
             Class163.aBooleanArray2162 = new boolean[Class229.aIndex_2978.method414(-1)];
             int i_7_ = -72 % ((35 - i) / 41);
         } catch (RuntimeException runtimeexception) {

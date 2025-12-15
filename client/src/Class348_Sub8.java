@@ -78,7 +78,7 @@ final class Class348_Sub8 extends Node {
     static final Class364 method2776(byte i, int i_5_) {
         anInt6659++;
         if (i > -35) aBooleanArrayArray6656 = null;
-        Class364[] class364s = Class348_Sub40_Sub28.method3122((byte) 91);
+        Class364[] class364s = TextureOpLineNoise.method3122((byte) 91);
         for (int i_6_ = 0; class364s.length > i_6_; i_6_++) {
             Class364 class364 = class364s[i_6_];
             if (class364.anInt4466 == i_5_) return class364;

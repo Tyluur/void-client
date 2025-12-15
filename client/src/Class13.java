@@ -32,7 +32,7 @@ final class Class13 {
 
     static final void method227(Class318_Sub1 class318_sub1, boolean bool, boolean bool_5_) {
         class318_sub1.aBoolean6391 = bool_5_;
-        if (Class348_Sub40_Sub5.aBoolean9121) {
+        if (TextureOpVoronoiNoise.aBoolean9121) {
             if (bool) GfxTypeList.aClass315Array3982[GfxTypeList.aClass315Array3982.length - 1].method2353(class318_sub1, false);
             else {
                 int i = Class286_Sub4.method2154(class318_sub1.anInt6386);

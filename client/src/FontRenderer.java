@@ -99,7 +99,7 @@ abstract class FontRenderer {
                             line++;
                             int i_16_ = aFontMetrics_4063.glyphWidth((byte) -48, c);
                             if (Player.anInt10567 != -1) aToolkit4048.method3649((byte) -103, i_16_, y - -(int) ((double) (aFontMetrics_4063.verticalSpacing) * 0.7), Player.anInt10567, x);
-                            if (Class348_Sub40_Sub2.anInt9101 != -1) aToolkit4048.method3649((byte) -96, i_16_, (aFontMetrics_4063.verticalSpacing) + y, (Class348_Sub40_Sub2.anInt9101), x);
+                            if (TextureOpHerringbone.anInt9101 != -1) aToolkit4048.method3649((byte) -96, i_16_, (aFontMetrics_4063.verticalSpacing) + y, (TextureOpHerringbone.anInt9101), x);
                             previous = c;
                             x += i_16_;
                         }
@@ -186,11 +186,11 @@ abstract class FontRenderer {
         if (i != 1512932720) return null;
         int i_46_ = i_45_ >> 16;
         int i_47_ = i_45_ & 0xffff;
-        if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_46_] == null || (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_46_][i_47_] == null)) {
+        if (TextureOpKaleidoscope.aClass46ArrayArray9427[i_46_] == null || (TextureOpKaleidoscope.aClass46ArrayArray9427[i_46_][i_47_] == null)) {
             boolean bool = Class320.method2547(i_46_, (byte) 84);
             if (!bool) return null;
         }
-        return Class348_Sub40_Sub33.aClass46ArrayArray9427[i_46_][i_47_];
+        return TextureOpKaleidoscope.aClass46ArrayArray9427[i_46_][i_47_];
     }
 
     final int method2571(int i, int i_48_, int[] is, String string, int i_49_, int i_50_, Sprite[] sprites, int i_51_, int i_52_, Random random) {
@@ -241,9 +241,9 @@ abstract class FontRenderer {
                                                 if (string.equals("br")) method2579((Class151.anInt2061), 117, (Class186_Sub1.anInt5807));
                                             } else Class20.anInt320 = Class151.anInt2061;
                                         } else Class20.anInt320 = 0;
-                                    } else Class348_Sub40_Sub2.anInt9101 = -1;
-                                } else Class348_Sub40_Sub2.anInt9101 = (Class348_Sub42_Sub1.anInt9492 & ~0xffffff);
-                            } else Class348_Sub40_Sub2.anInt9101 = ((Class348_Sub42_Sub1.anInt9492 & ~0xffffff) | Class48.method450(-20188, string.substring(2), 16));
+                                    } else TextureOpHerringbone.anInt9101 = -1;
+                                } else TextureOpHerringbone.anInt9101 = (Class348_Sub42_Sub1.anInt9492 & ~0xffffff);
+                            } else TextureOpHerringbone.anInt9101 = ((Class348_Sub42_Sub1.anInt9492 & ~0xffffff) | Class48.method450(-20188, string.substring(2), 16));
                         } else Player.anInt10567 = -1;
                     } else Player.anInt10567 = (Class348_Sub42_Sub1.anInt9492 & ~0xffffff | Class48.method450(-20188, string.substring(4), 16));
                 } else Class348_Sub42_Sub1.anInt9492 = Class186_Sub1.anInt5807;
@@ -303,7 +303,7 @@ abstract class FontRenderer {
     abstract void method2578(char c, int i, int i_81_, int i_82_, boolean bool, aa var_aa, int i_83_, int i_84_);
 
     private final void method2579(int i, int i_85_, int i_86_) {
-        Class348_Sub40_Sub2.anInt9101 = -1;
+        TextureOpHerringbone.anInt9101 = -1;
         if (i == -1) i = 0;
         Class348_Sub42_Sub1.anInt9492 = Class186_Sub1.anInt5807 = i_86_;
         Class258.anInt4848 = 0;
@@ -438,7 +438,7 @@ abstract class FontRenderer {
                             }
                             int i_114_ = aFontMetrics_4063.glyphWidth((byte) -48, c);
                             if (Player.anInt10567 != -1) aToolkit4048.method3649((byte) -119, i_114_, (int) ((double) aFontMetrics_4063.verticalSpacing * 0.7) + i_103_, Player.anInt10567, i_106_);
-                            if (Class348_Sub40_Sub2.anInt9101 != -1) aToolkit4048.method3649((byte) -114, i_114_, (aFontMetrics_4063.verticalSpacing) + (i_103_ + 1), (Class348_Sub40_Sub2.anInt9101), i_106_);
+                            if (TextureOpHerringbone.anInt9101 != -1) aToolkit4048.method3649((byte) -114, i_114_, (aFontMetrics_4063.verticalSpacing) + (i_103_ + 1), (TextureOpHerringbone.anInt9101), i_106_);
                             i_106_ += i_114_;
                             i_108_ = c;
                         }

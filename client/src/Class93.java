@@ -25,7 +25,7 @@ final class Class93 {
         try {
             anInt1532++;
             if (!Class9.method215(27165)) throw new RuntimeException("");
-            if (!Class348_Sub40_Sub19.method3098(i ^ ~0x158f, "jaggl")) throw new RuntimeException("");
+            if (!TextureOpHorizontalGradient.method3098(i ^ ~0x158f, "jaggl")) throw new RuntimeException("");
             OpenGL opengl = new OpenGL();
             long l = opengl.init(canvas, 8, 8, 8, 24, 0, i_1_);
             if (l == 0L) throw new RuntimeException("");

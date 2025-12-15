@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub12 extends Class348_Sub42 {
+final class Class348_Sub42_Sub12 extends LinkedNode {
     String aString9593;
     static int anInt9594;
     String aString9595;
@@ -42,15 +42,15 @@ final class Class348_Sub42_Sub12 extends Class348_Sub42 {
         try {
             anInt9606++;
             if (is == null || is_1_ == null) {
-                Class348_Sub40_Sub6.aByteArrayArrayArray9134 = null;
+                TextureOpPolarDistortion.aByteArrayArrayArray9134 = null;
                 Class190.anIntArray2552 = null;
                 Class59_Sub2_Sub2.anIntArray8684 = null;
             } else {
                 Class59_Sub2_Sub2.anIntArray8684 = is;
                 Class190.anIntArray2552 = new int[is.length];
-                Class348_Sub40_Sub6.aByteArrayArrayArray9134 = new byte[is.length][][];
+                TextureOpPolarDistortion.aByteArrayArrayArray9134 = new byte[is.length][][];
                 for (int i_2_ = i; i_2_ < Class59_Sub2_Sub2.anIntArray8684.length; i_2_++)
-                    Class348_Sub40_Sub6.aByteArrayArrayArray9134[i_2_] = new byte[is_1_[i_2_]][];
+                    TextureOpPolarDistortion.aByteArrayArrayArray9134[i_2_] = new byte[is_1_[i_2_]][];
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("db.D(" + (is != null ? "{...}" : "null") + ',' + (is_1_ != null ? "{...}" : "null") + ',' + i + ')'));
@@ -79,7 +79,7 @@ final class Class348_Sub42_Sub12 extends Class348_Sub42 {
             Class338.anInt4186 = 0;
             if (ClientScript.anInt9701 > 3072) ClientScript.anInt9701 = 3072;
         }
-        Class348_Sub40_Sub21.anInt9282 = 2;
+        TextureOp37.anInt9282 = 2;
         Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
     }
 

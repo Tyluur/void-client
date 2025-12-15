@@ -35,7 +35,7 @@ final class LoadingScreenOpFactory {
         Class223 class223 = interface12.method51((byte) 120);
         if (HitmarkTypeList.aClass223_2868 == class223) return new Class177((Class52) interface12);
         if (JavaMatrix.aClass223_5689 == class223) return new Class240(method998(-107), (Class125) interface12);
-        if (class223 == Class348_Sub40_Sub21.aClass223_9274) return new Class127(aIndex_1637, (Class288) interface12);
+        if (class223 == TextureOp37.aClass223_9274) return new Class127(aIndex_1637, (Class288) interface12);
         if (class223 == Class28.aClass223_4997) return new Class127_Sub1(aIndex_1637, (Class288_Sub1) interface12);
         if (class223 == Packet.aClass223_7175) return new Class5_Sub2(aIndex_1637, aIndex_1641, (Class369_Sub2) interface12);
         if (class223 == Class313.aClass223_3934) return new Class5_Sub3(aIndex_1637, aIndex_1641, (Class369_Sub1) interface12);

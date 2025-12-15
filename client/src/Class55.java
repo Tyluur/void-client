@@ -293,7 +293,7 @@ abstract class Class55 {
 
     static final boolean method520(Interface10 interface10, int i) {
         anInt1000++;
-        Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-94));
+        Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, interface10.method42(-94));
         if (class51.anInt875 == -1) return true;
         Class218 class218 = Class2.msiTypeList.method1173((byte) 31, class51.anInt875);
         if (i == class218.anInt2853) return true;
@@ -346,7 +346,7 @@ abstract class Class55 {
     }
 
     Class55(int i) {
-        if (!Class348_Sub40_Sub19.method3098(-30282, "jagtheora")) throw new RuntimeException("Failed to load jagtheora library");
+        if (!TextureOpHorizontalGradient.method3098(-30282, "jagtheora")) throw new RuntimeException("Failed to load jagtheora library");
         aByteArray995 = new byte[i];
         anOggSyncState987 = new OggSyncState();
         anOggPage981 = new OggPage();

@@ -118,7 +118,7 @@ final class Class348_Sub20 extends Node {
     final void method2949(byte i, int i_22_, int i_23_, int i_24_, float f) {
         if (i == 97) {
             if (this.anInt6841 != -1) {
-                TextureMetrics textureMetrics = aOpenGLToolkit_6831.aD4579.getMetrics(this.anInt6841, -6662);
+                TextureMetrics textureMetrics = aOpenGLToolkit_6831.textureSource.getMetrics(this.anInt6841, -6662);
                 int i_25_ = 0xff & textureMetrics.aByte201;
                 if (i_25_ != 0 && textureMetrics.effectType != 4) {
                     int i_26_;

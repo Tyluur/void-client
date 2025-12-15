@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub10 extends Class348_Sub42 {
+final class Class348_Sub42_Sub10 extends LinkedNode {
     static int anInt9560;
     static int anInt9561;
     boolean aBoolean9562 = true;
@@ -60,14 +60,14 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
         anInt9569++;
         Class348_Sub3.method2739(0);
         Class289.anInt3699 = 0;
-        Class348_Sub40_Sub36.aClass114_9456 = null;
+        TextureOpWaveform.aClass114_9456 = null;
         Class348_Sub50.anInt7213 = 0;
         Option.aClass114_3145 = null;
         Class299.aClass348_Sub49_Sub2_3813.pos = 0;
         int i_3_ = -122 % ((i - 13) / 45);
         Class238.aClass114_3133 = null;
         Class305.method2296(-99);
-        Class348_Sub40_Sub30.anInt9383 = 0;
+        TextureOpHslAdjust.anInt9383 = 0;
         Class50.aString863 = null;
         Class37.anInt496 = 0;
         Class169.aClass19Array2261 = null;
@@ -112,7 +112,7 @@ final class Class348_Sub42_Sub10 extends Class348_Sub42 {
                         }
                     }
                 } else if (i == 4) this.aBoolean9562 = false;
-            } else aStringArray9564 = (Class348_Sub40_Sub23.method3113('<', true, packet.readString((byte) -82)));
+            } else aStringArray9564 = (TextureOpIrregularBricks.method3113('<', true, packet.readString((byte) -82)));
             anInt9575++;
         }
     }

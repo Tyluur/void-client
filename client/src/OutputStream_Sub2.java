@@ -46,7 +46,7 @@ final class OutputStream_Sub2 extends OutputStream {
     static final boolean method137(int i, int i_4_, int i_5_) {
         anInt102++;
         int i_6_ = -114 / ((i_4_ - 36) / 55);
-        return (0x70000 & i_5_) != 0 | Class348_Sub40_Sub9.method3073(i, i_5_, (byte) 50) || Class264.method2015(i_5_, i, 7);
+        return (0x70000 & i_5_) != 0 | TextureOpMonorchromeEdgeDetector.method3073(i, i_5_, (byte) 50) || Class264.method2015(i_5_, i, 7);
     }
 
     static final int method138(Class348_Sub42_Sub12 class348_sub42_sub12, boolean bool) {
@@ -66,8 +66,8 @@ final class OutputStream_Sub2 extends OutputStream {
                 } else if (Option_Sub21.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                     Object object = null;
                     Class51 class51;
-                    if ((class348_sub42_sub12.anInt9608) == 1001) class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
-                    else class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, (int) (0x7fffffffL & (class348_sub42_sub12.aLong9605) >>> 32)));
+                    if ((class348_sub42_sub12.anInt9608) == 1001) class51 = (TextureOpColourGradient.objectTypeList.method2005(0, (int) (class348_sub42_sub12.aLong9605)));
+                    else class51 = (TextureOpColourGradient.objectTypeList.method2005(0, (int) (0x7fffffffL & (class348_sub42_sub12.aLong9605) >>> 32)));
                     if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47);
                     if (class51 != null) is = class51.anIntArray917;
                 }

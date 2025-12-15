@@ -6,7 +6,7 @@ final class Class348_Sub16_Sub1 extends Class348_Sub16 {
     static int anInt8845;
     static int anInt8846;
     static int anInt8847;
-    Class262 aClass262_8848 = new Class262();
+    Deque aDeque_8848 = new Deque();
     static int anInt8849;
     static int anInt8850;
     static int anInt8851;
@@ -23,7 +23,7 @@ final class Class348_Sub16_Sub1 extends Class348_Sub16 {
         anInt8856++;
         Class348_Sub43 class348_sub43;
         do {
-            class348_sub43 = (Class348_Sub43) this.aClass262_8848.method1990((byte) 122);
+            class348_sub43 = (Class348_Sub43) this.aDeque_8848.method1990((byte) 122);
             if (class348_sub43 == null) return null;
         } while (class348_sub43.aClass348_Sub16_Sub5_7081 == null);
         return class348_sub43.aClass348_Sub16_Sub5_7081;
@@ -33,7 +33,7 @@ final class Class348_Sub16_Sub1 extends Class348_Sub16 {
         anInt8847++;
         this.aClass348_Sub16_Sub4_8855.method2817(is, i, i_0_);
         while_125_:
-        for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) this.aClass262_8848.method1995(4)); class348_sub43 != null; class348_sub43 = (Class348_Sub43) this.aClass262_8848.method1990((byte) 121)) {
+        for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) this.aDeque_8848.method1995(4)); class348_sub43 != null; class348_sub43 = (Class348_Sub43) this.aDeque_8848.method1990((byte) 121)) {
             if (!aClass348_Sub16_Sub3_8852.method2847(-107, class348_sub43)) {
                 int i_1_ = i;
                 int i_2_ = i_0_;
@@ -54,7 +54,7 @@ final class Class348_Sub16_Sub1 extends Class348_Sub16 {
         anInt8846++;
         Class55.aBoolean979 = false;
         if (i < -17) {
-            Class348_Sub40_Sub18.method3094(-21478, class348_sub49_sub2);
+            TextureOpColourFill.method3094(-21478, class348_sub49_sub2);
             Class375.method3612(75, class348_sub49_sub2);
             if (Class55.aBoolean979) System.out.println("---endgpp---");
             if (class348_sub49_sub2.pos != i_3_) throw new RuntimeException("gpi1 pos:" + class348_sub49_sub2.pos + " psize:" + i_3_);
@@ -96,7 +96,7 @@ final class Class348_Sub16_Sub1 extends Class348_Sub16 {
         this.aClass348_Sub16_Sub4_8855.method2819(i);
         anInt8850++;
         while_127_:
-        for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) this.aClass262_8848.method1995(4)); class348_sub43 != null; class348_sub43 = (Class348_Sub43) this.aClass262_8848.method1990((byte) 38)) {
+        for (Class348_Sub43 class348_sub43 = ((Class348_Sub43) this.aDeque_8848.method1995(4)); class348_sub43 != null; class348_sub43 = (Class348_Sub43) this.aDeque_8848.method1990((byte) 38)) {
             if (!aClass348_Sub16_Sub3_8852.method2847(53, class348_sub43)) {
                 int i_8_ = i;
                 while (i_8_ > class348_sub43.anInt7086) {
@@ -157,7 +157,7 @@ final class Class348_Sub16_Sub1 extends Class348_Sub16 {
 
     final Class348_Sub16 method2816() {
         anInt8851++;
-        Class348_Sub43 class348_sub43 = ((Class348_Sub43) this.aClass262_8848.method1995(4));
+        Class348_Sub43 class348_sub43 = ((Class348_Sub43) this.aDeque_8848.method1995(4));
         if (class348_sub43 == null) return null;
         if (class348_sub43.aClass348_Sub16_Sub5_7081 != null) return class348_sub43.aClass348_Sub16_Sub5_7081;
         return method2818();

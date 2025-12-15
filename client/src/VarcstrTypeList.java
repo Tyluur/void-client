@@ -74,8 +74,8 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.equalsIgnoreCase("occlude")) {
-                            Class348_Sub40_Sub23.aBoolean9307 = !Class348_Sub40_Sub23.aBoolean9307;
-                            if (Class348_Sub40_Sub23.aBoolean9307) {
+                            TextureOpIrregularBricks.aBoolean9307 = !TextureOpIrregularBricks.aBoolean9307;
+                            if (TextureOpIrregularBricks.aBoolean9307) {
                                 Applet_Sub1.method94("Occlsion now on!", -102);
                                 break;
                             } else Applet_Sub1.method94("Occlsion now off!", -106);
@@ -93,7 +93,7 @@ final class VarcstrTypeList {
                         }
                         if (string.equals("systemmem")) {
                             try {
-                                Applet_Sub1.method94(("System memory: " + (jagmisc.getAvailablePhysicalMemory() / 1048576L) + "/" + Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory + "Mb"), i + 26);
+                                Applet_Sub1.method94(("System memory: " + (jagmisc.getAvailablePhysicalMemory() / 1048576L) + "/" + TextureOpNoise.aClass348_Sub4_9264.totalMemory + "Mb"), i + 26);
                             } catch (Throwable throwable) {
                                 /* empty */
                             }
@@ -158,7 +158,7 @@ final class VarcstrTypeList {
                         }
                         if (string.equalsIgnoreCase("breakcon")) {
                             Class348_Sub23_Sub1.aClass297_8992.method2239(-95);
-                            Class348_Sub40_Sub8.aClass238_9165.method1702(i + 123);
+                            TextureOpPerlinNoise.aClass238_9165.method1702(i + 123);
                             SystemInfo.aClass248_6601.method1898(true);
                             Applet_Sub1.method94("Breaking new connections for 5 seconds", i + -4);
                             break;
@@ -299,7 +299,7 @@ final class VarcstrTypeList {
                         }
                         if (string.startsWith("bloom")) {
                             boolean bool_7_ = Class348_Sub8.active.method3666();
-                            if (Class348_Sub40_Sub33.method3137(!bool_7_, (byte) -24)) {
+                            if (TextureOpKaleidoscope.method3137(!bool_7_, (byte) -24)) {
                                 if (bool_7_) {
                                     Applet_Sub1.method94("Bloom disabled", i + -49);
                                     break;
@@ -384,7 +384,7 @@ final class VarcstrTypeList {
                             int i_9_ = -1;
                             int i_10_ = 1000;
                             if (string.length() > 15) {
-                                String[] strings = Class348_Sub40_Sub23.method3113(' ', true, string);
+                                String[] strings = TextureOpIrregularBricks.method3113(' ', true, string);
                                 try {
                                     if (strings.length > 1) i_10_ = Integer.parseInt(strings[1]);
                                 } catch (Throwable throwable) {
@@ -427,7 +427,7 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.startsWith("pc")) {
-                            Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub40_Sub22.aClass351_9304, Class348_Sub23_Sub2.aClass77_9029, -97));
+                            Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(TextureOpBricks.aClass351_9304, Class348_Sub23_Sub2.aClass77_9029, -97));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0);
                             int i_12_ = (class348_sub47.aClass348_Sub49_Sub2_7116.pos);
                             int i_13_ = string.indexOf(" ", 4);
@@ -485,7 +485,7 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.startsWith("directlogin")) {
-                            String[] strings = (Class348_Sub40_Sub23.method3113(' ', true, string.substring(12)));
+                            String[] strings = (TextureOpIrregularBricks.method3113(' ', true, string.substring(12)));
                             if (strings.length >= 2) {
                                 int i_17_ = (strings.length > 2 ? Integer.parseInt(strings[2]) : 0);
                                 Class253.method1922(strings[1], i_17_, strings[0], true);
@@ -618,7 +618,7 @@ final class VarcstrTypeList {
                                 Applet_Sub1.method94("Failed to read file", 119);
                                 break;
                             }
-                            String[] strings = (Class348_Sub40_Sub23.method3113('\n', true, (BASTypeList.method1981(Option_Sub17.method1795(is, true), (byte) -89, '\r', ""))));
+                            String[] strings = (TextureOpIrregularBricks.method3113('\n', true, (BASTypeList.method1981(Option_Sub17.method1795(is, true), (byte) -89, '\r', ""))));
                             Class348_Sub42_Sub6.method3189(0, strings);
                         }
                         if (string.startsWith("zoom ")) {
@@ -662,7 +662,7 @@ final class VarcstrTypeList {
     static final void method814(byte i, long l) {
         try {
             anInt1438++;
-            int i_27_ = Class348_Sub6.anInt6633;
+            int i_27_ = MonochromeImageCacheSlot.anInt6633;
             if (i > 106) {
                 if (Class130_Sub1.anInt5799 != i_27_) {
                     int i_28_ = i_27_ - Class130_Sub1.anInt5799;

@@ -26,8 +26,8 @@ final class Class302 {
         try {
             anInt3841++;
             if (Class147.aClass357ArrayArrayArray2029 != null) {
-                if (Class348_Sub40_Sub21.anInt9282 != 1 && Class348_Sub40_Sub21.anInt9282 != 5) {
-                    if (Class348_Sub40_Sub21.anInt9282 == 4) VarcstrTypeList.method814((byte) 125, l);
+                if (TextureOp37.anInt9282 != 1 && TextureOp37.anInt9282 != 5) {
+                    if (TextureOp37.anInt9282 == 4) VarcstrTypeList.method814((byte) 125, l);
                 } else Canvas_Sub1.method119(-1, l);
             }
             Class348_Sub47.method3324(Class348_Sub8.active, (byte) 83, Class367_Sub11.anInt7396);

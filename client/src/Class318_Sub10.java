@@ -12,7 +12,7 @@ final class Class318_Sub10 extends Class318 {
     int anInt6476 = 0;
     private static boolean[] aBooleanArray6477 = new boolean[8];
     private Class243 aClass243_6478;
-    Class262 aClass262_6479;
+    Deque aDeque_6479;
     private int anInt6480;
     Class98 aClass98_6481;
     boolean aBoolean6482;
@@ -27,7 +27,7 @@ final class Class318_Sub10 extends Class318 {
     static final Class318_Sub10 method2526(int i, boolean bool) {
         if (Class258_Sub3.anInt8550 != Class376.anInt4559) {
             Class318_Sub10 class318_sub10 = ClientOptions.aClass318_Sub10Array7249[Class376.anInt4559];
-            Class376.anInt4559 = Class376.anInt4559 + 1 & (Class348_Sub42_Sub9.anIntArray9558[Class348_Sub6.anInt6637]);
+            Class376.anInt4559 = Class376.anInt4559 + 1 & (Class348_Sub42_Sub9.anIntArray9558[MonochromeImageCacheSlot.anInt6637]);
             class318_sub10.method2531(i, bool);
             return class318_sub10;
         }
@@ -51,7 +51,7 @@ final class Class318_Sub10 extends Class318 {
 
     final void method2530() {
         this.aBoolean6470 = true;
-        for (Class348_Sub42_Sub20 class348_sub42_sub20 = ((Class348_Sub42_Sub20) this.aClass262_6479.method1995(4)); class348_sub42_sub20 != null; class348_sub42_sub20 = (Class348_Sub42_Sub20) this.aClass262_6479.method1990((byte) 89)) {
+        for (Class348_Sub42_Sub20 class348_sub42_sub20 = ((Class348_Sub42_Sub20) this.aDeque_6479.method1995(4)); class348_sub42_sub20 != null; class348_sub42_sub20 = (Class348_Sub42_Sub20) this.aDeque_6479.method1990((byte) 89)) {
             if (class348_sub42_sub20.aClass174_9704.anInt2296 == 1) class348_sub42_sub20.method3162(true);
         }
         for (int i = 0; i < (this.aClass318_Sub9_Sub2_Sub1Array6475).length; i++) {
@@ -63,11 +63,11 @@ final class Class318_Sub10 extends Class318 {
         this.anInt6476 = 0;
         aClass243_6478 = new Class243();
         anInt6480 = 0;
-        this.aClass262_6479 = new Class262();
+        this.aDeque_6479 = new Deque();
         anInt6485 = 0;
         this.method2373(false);
         ClientOptions.aClass318_Sub10Array7249[Class258_Sub3.anInt8550] = this;
-        Class258_Sub3.anInt8550 = (Class258_Sub3.anInt8550 + 1 & Class348_Sub42_Sub9.anIntArray9558[Class348_Sub6.anInt6637]);
+        Class258_Sub3.anInt8550 = (Class258_Sub3.anInt8550 + 1 & Class348_Sub42_Sub9.anIntArray9558[MonochromeImageCacheSlot.anInt6637]);
     }
 
     private final void method2531(int i, boolean bool) {
@@ -158,7 +158,7 @@ final class Class318_Sub10 extends Class318 {
         for (int i = 0; i < 8; i++)
             aBooleanArray6477[i] = false;
         while_112_:
-        for (Class348_Sub42_Sub20 class348_sub42_sub20 = ((Class348_Sub42_Sub20) this.aClass262_6479.method1995(4)); class348_sub42_sub20 != null; class348_sub42_sub20 = (Class348_Sub42_Sub20) this.aClass262_6479.method1990((byte) 85)) {
+        for (Class348_Sub42_Sub20 class348_sub42_sub20 = ((Class348_Sub42_Sub20) this.aDeque_6479.method1995(4)); class348_sub42_sub20 != null; class348_sub42_sub20 = (Class348_Sub42_Sub20) this.aDeque_6479.method1990((byte) 85)) {
             if (modelParticleEffectors != null) {
                 for (int i = 0; i < modelParticleEffectors.length; i++) {
                     if ((class348_sub42_sub20.aModelParticleEffector_9702) == modelParticleEffectors[i] || ((class348_sub42_sub20.aModelParticleEffector_9702) == modelParticleEffectors[i].aModelParticleEffector_4248)) {
@@ -188,7 +188,7 @@ final class Class318_Sub10 extends Class318 {
                         Class318_Sub7.anInt6450++;
                     }
                     if (class348_sub42_sub20 == null) class348_sub42_sub20 = new Class348_Sub42_Sub20(modelParticleEffectors[i], this);
-                    this.aClass262_6479.method1999(class348_sub42_sub20, -20180);
+                    this.aDeque_6479.method1999(class348_sub42_sub20, -20180);
                     anInt6485++;
                     aBooleanArray6477[i] = true;
                 }
@@ -212,7 +212,7 @@ final class Class318_Sub10 extends Class318 {
         this.aBoolean6470 = false;
         aClass243_6478 = new Class243();
         anInt6480 = 0;
-        this.aClass262_6479 = new Class262();
+        this.aDeque_6479 = new Deque();
         this.aBoolean6482 = false;
         anInt6485 = 0;
         aBoolean6484 = false;

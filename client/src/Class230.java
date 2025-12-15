@@ -34,7 +34,7 @@ final class Class230 {
                         int i_23_ = i_6_ + -Class29.anInt403;
                         int i_24_ = -Class348_Sub21.anInt6849 + i_5_;
                         int i_25_ = (int) ((Class247.aDouble3182 * (double) i_22_ + (double) i_23_ * GfxTypeList.aDouble3980 + (double) i_24_ * Class357.aDouble4404) * (double) i_20_ / (double) i_14_);
-                        int i_26_ = (int) ((((double) i_24_ * Class348_Sub42_Sub5.aDouble9531) + (((double) i_22_ * Class348_Sub23_Sub2.aDouble9023) + ((double) i_23_ * Class295.aDouble3761))) * (double) i_21_ / (double) i_14_);
+                        int i_26_ = (int) ((((double) i_24_ * Texture.aDouble9531) + (((double) i_22_ * Class348_Sub23_Sub2.aDouble9023) + ((double) i_23_ * Class295.aDouble3761))) * (double) i_21_ / (double) i_14_);
                         double d = ((double) i_24_ * Class348_Sub16_Sub2.aDouble8869 + (Class348_Sub15.aDouble6774 * (double) i_23_ + (double) i_22_ * Class59.aDouble1083));
                         int i_27_ = i_25_ + Class211.anInt2747 - Class328.anInt4100;
                         int i_28_ = (Class348_Sub42_Sub9_Sub1.anInt10444 + i_26_ + -Class348_Sub3.anInt6568);
@@ -195,7 +195,7 @@ final class Class230 {
                                 Class348_Sub3.anInt6568 += i_34_;
                                 Class328.anInt4100 += i_33_;
                                 Class348_Sub42_Sub4.aDouble9517 += d_37_;
-                                Class348_Sub40_Sub8.anInt9157 = (-Class348_Sub3.anInt6568 + i_26_ + Class348_Sub42_Sub9_Sub1.anInt10444);
+                                TextureOpPerlinNoise.anInt9157 = (-Class348_Sub3.anInt6568 + i_26_ + Class348_Sub42_Sub9_Sub1.anInt10444);
                                 Class339.anInt4211 = (-Class328.anInt4100 + Class211.anInt2747 + i_25_);
                                 if (Packet.anInt7207 == 1) {
                                     Option_Sub24.anInt6095 += i_35_;
@@ -212,14 +212,14 @@ final class Class230 {
                             }
                         } else {
                             Class339.anInt4211 = i_27_;
-                            Class348_Sub40_Sub8.anInt9157 = i_28_;
+                            TextureOpPerlinNoise.anInt9157 = i_28_;
                             if (Packet.anInt7207 == 2) Class348_Sub42_Sub4.aDouble9517 = -d;
                         }
                     }
                     if (Class348_Sub16_Sub2.aBoolean8870) {
                         Class348_Sub21.anInt6849 = i_5_;
                         Class29.anInt403 = i_6_;
-                        Class348_Sub40_Sub8.anInt9157 = Class348_Sub42_Sub9_Sub1.anInt10444;
+                        TextureOpPerlinNoise.anInt9157 = Class348_Sub42_Sub9_Sub1.anInt10444;
                         Class328.anInt4100 = 0;
                         Class339.anInt4211 = Class211.anInt2747;
                         Sprite_Sub1.anInt8422 = i_4_;
@@ -253,7 +253,7 @@ final class Class230 {
                         if (Packet.anInt7207 == 0) Class21.aToolkit326.method3672();
                         if (Packet.anInt7207 == 1) Class202.method1469(-117);
                     }
-                    if (Packet.anInt7207 == 0) AnimationType.anOffscreenSurface_252.method14(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, Class59_Sub1.anInt5283, Class107.anInt1651, 0, 0, true, true);
+                    if (Packet.anInt7207 == 0) AnimationType.anOffscreenSurface_252.method14(Class339.anInt4211, TextureOpPerlinNoise.anInt9157, Class59_Sub1.anInt5283, Class107.anInt1651, 0, 0, true, true);
                     Class318_Sub1_Sub1_Sub2.anInt9997++;
                     r.method3284(true, Class348_Sub42_Sub4.aDouble9517);
                     Class318_Sub1_Sub5_Sub1.aDouble10120 = Class348_Sub42_Sub4.aDouble9517;
@@ -265,7 +265,7 @@ final class Class230 {
                         Class193.anInt2590 = i_20_;
                         ModelParticleEmitter.anInt1879 = i_21_;
                         Class94.anInt1537 = (-Class339.anInt4211 + -Class328.anInt4100 + (i_16_ + Class211.anInt2747));
-                        Class318_Sub5.anInt6417 = (-Class348_Sub40_Sub8.anInt9157 + (i_17_ + Class348_Sub42_Sub9_Sub1.anInt10444 + -Class348_Sub3.anInt6568));
+                        Class318_Sub5.anInt6417 = (-TextureOpPerlinNoise.anInt9157 + (i_17_ + Class348_Sub42_Sub9_Sub1.anInt10444 + -Class348_Sub3.anInt6568));
                         Class21.aToolkit326.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, ModelParticleEmitter.anInt1879);
                     } else if (Packet.anInt7207 == 1) {
                         Class193.anInt2590 = i_20_;
@@ -273,7 +273,7 @@ final class Class230 {
                         Class318_Sub5.anInt6417 = -Class348_Sub3.anInt6568 + i_17_;
                         ModelParticleEmitter.anInt1879 = i_21_;
                         Class21.aToolkit326.DA(Class94.anInt1537, Class318_Sub5.anInt6417, Class193.anInt2590, ModelParticleEmitter.anInt1879);
-                        Class21.aToolkit326.KA(Class339.anInt4211, Class348_Sub40_Sub8.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (Class107.anInt1651 + Class348_Sub40_Sub8.anInt9157));
+                        Class21.aToolkit326.KA(Class339.anInt4211, TextureOpPerlinNoise.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (Class107.anInt1651 + TextureOpPerlinNoise.anInt9157));
                     }
                     Class258_Sub1.method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, is, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, Packet.anInt7207 != 2 ? 2 : 0, Packet.anInt7207 == 1);
                     Class21.aToolkit326.la();
@@ -328,7 +328,7 @@ final class Class230 {
             } while (false);
             do {
                 if ((class318_sub1_sub3_sub3.anInt10269) != -1 && (Class367_Sub11.anInt7396 >= (class318_sub1_sub3_sub3.anInt10225))) {
-                    Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 90, class318_sub1_sub3_sub3.anInt10269));
+                    Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 90, class318_sub1_sub3_sub3.anInt10269));
                     int i_70_ = class368.anInt4503;
                     if (i_70_ != -1) {
                         AnimationType animationType = Class10.animTypeList.method835(i_70_, 7);
@@ -378,7 +378,7 @@ final class Class230 {
             } while (false);
             do {
                 if ((class318_sub1_sub3_sub3.anInt10291) != -1 && (class318_sub1_sub3_sub3.anInt10211 <= Class367_Sub11.anInt7396)) {
-                    Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 93, class318_sub1_sub3_sub3.anInt10291));
+                    Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 93, class318_sub1_sub3_sub3.anInt10291));
                     int i_71_ = class368.anInt4503;
                     if (i_71_ != -1) {
                         AnimationType animationType = Class10.animTypeList.method835(i_71_, 7);

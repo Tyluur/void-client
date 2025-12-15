@@ -54,7 +54,7 @@ final class MapElementTypeList {
     static final ClientScript method1223(int i, int i_5_, int i_6_, Class273 class273) {
         anInt2086++;
         int i_7_ = class273.anInt5167 | i << 10;
-        ClientScript clientScript = ((ClientScript) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -91));
+        ClientScript clientScript = ((ClientScript) ColourImageCache.aClass308_4036.method2302((long) i_7_ << 16, (byte) -91));
         if (clientScript != null) return clientScript;
         byte[] is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) -90)));
         if (is != null) {
@@ -65,11 +65,11 @@ final class MapElementTypeList {
                 throw new RuntimeException(exception.getMessage() + " S: " + i_7_);
             }
             clientScript.aClass273_9691 = class273;
-            Class322.aClass308_4036.method2305((long) i_7_ << 16, clientScript, -1);
+            ColourImageCache.aClass308_4036.method2305((long) i_7_ << 16, clientScript, -1);
             return clientScript;
         }
         i_7_ = class273.anInt5167 | 65536 + i_5_ << 10;
-        clientScript = ((ClientScript) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -31));
+        clientScript = ((ClientScript) ColourImageCache.aClass308_4036.method2302((long) i_7_ << 16, (byte) -31));
         if (clientScript != null) return clientScript;
         is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) -107)));
         if (is != null) {
@@ -80,11 +80,11 @@ final class MapElementTypeList {
                 throw new RuntimeException(exception.getMessage() + " S: " + i_7_);
             }
             clientScript.aClass273_9691 = class273;
-            Class322.aClass308_4036.method2305((long) i_7_ << 16, clientScript, -1);
+            ColourImageCache.aClass308_4036.method2305((long) i_7_ << 16, clientScript, -1);
             return clientScript;
         }
         i_7_ = class273.anInt5167 | 0x3fffc00;
-        clientScript = ((ClientScript) Class322.aClass308_4036.method2302((long) i_7_ << 16, (byte) -107));
+        clientScript = ((ClientScript) ColourImageCache.aClass308_4036.method2302((long) i_7_ << 16, (byte) -107));
         if (clientScript != null) return clientScript;
         is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) 104)));
         if (is != null) {
@@ -95,7 +95,7 @@ final class MapElementTypeList {
                 throw new RuntimeException(exception.getMessage() + " S: " + i_7_);
             }
             clientScript.aClass273_9691 = class273;
-            Class322.aClass308_4036.method2305((long) i_7_ << 16, clientScript, -1);
+            ColourImageCache.aClass308_4036.method2305((long) i_7_ << 16, clientScript, -1);
             return clientScript;
         }
         if (i_6_ != 96837648) return null;

@@ -22,7 +22,7 @@ final class Class237_Sub1 extends Class237 {
             anInt5823++;
             if (Class316.clientOptions.aClass239_Sub27_7261.method1840(i_3_ ^ ~0x7e6f) != 0 || Class58.method536(i_5_, false, i, JavaThreadResource.anInt2204, i_2_)) {
                 if (this.anInt5824 > i_0_) this.anInt5824 = i_0_;
-                Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, i_1_);
+                Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, i_1_);
                 if (Class316.clientOptions.aClass239_Sub24_7235.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {
                     int i_8_;
                     int i_9_;
@@ -107,7 +107,7 @@ final class Class237_Sub1 extends Class237 {
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_);
                         } else if (i_4_ == 0) {
                             int i_22_ = class51.anInt955;
-                            if (Class348_Sub40_Sub10.aBoolean9184 && (class51.anInt955 == -1)) i_22_ = 1;
+                            if (TextureOpRange.aBoolean9184 && (class51.anInt955 == -1)) i_22_ = 1;
                             Class318_Sub1_Sub4 class318_sub1_sub4;
                             if (bool_17_) {
                                 Class318_Sub1_Sub4_Sub1 class318_sub1_sub4_sub1 = (new Class318_Sub1_Sub4_Sub1(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, i_4_, i_7_, bool));
@@ -175,7 +175,7 @@ final class Class237_Sub1 extends Class237 {
                                 class318_sub1_sub4_24_ = (new Class318_Sub1_Sub4_Sub2(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, i_4_, i_23_, i_6_));
                             }
                             Class348_Sub42_Sub16.method3254(i_0_, i, i_5_, class318_sub1_sub4, class318_sub1_sub4_24_);
-                            if (((class51.anInt955 == 1) || (Class348_Sub40_Sub10.aBoolean9184 && class51.anInt955 == -1)) && !this.underwater) {
+                            if (((class51.anInt955 == 1) || (TextureOpRange.aBoolean9184 && class51.anInt955 == -1)) && !this.underwater) {
                                 if (i_7_ == 0) {
                                     Option_Sub21.method1810(i, class51.anInt953, class51.anInt909, i_5_, -1, i_0_, 1);
                                     Option_Sub21.method1810(i, class51.anInt953, class51.anInt909, 1 + i_5_, -1, i_0_, 2);
@@ -235,21 +235,21 @@ final class Class237_Sub1 extends Class237 {
                         } else if (i_4_ == 5) {
                             int i_27_ = 65;
                             Interface10 interface10 = ((Interface10) r_Sub2.method3297(i_0_, i, i_5_));
-                            if (interface10 != null) i_27_ = 1 + (Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-93)).anInt883);
+                            if (interface10 != null) i_27_ = 1 + (TextureOpColourGradient.objectTypeList.method2005(0, interface10.method42(-93)).anInt883);
                             Class318_Sub1_Sub5 class318_sub1_sub5;
                             if (bool_17_) {
-                                Class318_Sub1_Sub5_Sub1 class318_sub1_sub5_sub1 = (new Class318_Sub1_Sub5_Sub1(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, i_27_ * Class148.anIntArray2039[i_7_], (Class348_Sub40_Sub16.anIntArray9230[i_7_]) * i_27_, i_4_, i_7_));
+                                Class318_Sub1_Sub5_Sub1 class318_sub1_sub5_sub1 = (new Class318_Sub1_Sub5_Sub1(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, i_27_ * Class148.anIntArray2039[i_7_], (TextureOpCombine.anIntArray9230[i_7_]) * i_27_, i_4_, i_7_));
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_toolkit);
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1;
-                            } else class318_sub1_sub5 = (new Class318_Sub1_Sub5_Sub2(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, Class148.anIntArray2039[i_7_] * i_27_, i_27_ * (Class348_Sub40_Sub16.anIntArray9230[i_7_]), i_4_, i_7_, i_6_));
+                            } else class318_sub1_sub5 = (new Class318_Sub1_Sub5_Sub2(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, Class148.anIntArray2039[i_7_] * i_27_, i_27_ * (TextureOpCombine.anIntArray9230[i_7_]), i_4_, i_7_, i_6_));
                             Class44.method388(i_0_, i, i_5_, class318_sub1_sub5, null);
                         } else if (i_4_ == 6) {
                             int i_28_ = 33;
                             Interface10 interface10 = ((Interface10) r_Sub2.method3297(i_0_, i, i_5_));
-                            if (interface10 != null) i_28_ = 1 + (Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-117)).anInt883) / 2;
+                            if (interface10 != null) i_28_ = 1 + (TextureOpColourGradient.objectTypeList.method2005(0, interface10.method42(-117)).anInt883) / 2;
                             Class318_Sub1_Sub5 class318_sub1_sub5;
                             if (bool_17_) {
-                                Class318_Sub1_Sub5_Sub1 class318_sub1_sub5_sub1 = (new Class318_Sub1_Sub5_Sub1(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, i_28_ * Class148.anIntArray2039[i_7_], (Class348_Sub40_Sub16.anIntArray9230[i_7_]) * i_28_, i_4_, 4 + i_7_));
+                                Class318_Sub1_Sub5_Sub1 class318_sub1_sub5_sub1 = (new Class318_Sub1_Sub5_Sub1(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, i_28_ * Class148.anIntArray2039[i_7_], (TextureOpCombine.anIntArray9230[i_7_]) * i_28_, i_4_, 4 + i_7_));
                                 if (class318_sub1_sub5_sub1.method38(-18443)) class318_sub1_sub5_sub1.method44(836, var_toolkit);
                                 class318_sub1_sub5 = class318_sub1_sub5_sub1;
                             } else class318_sub1_sub5 = (new Class318_Sub1_Sub5_Sub2(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, (OutputStream_Sub1.anIntArray99[i_7_] * i_28_), i_28_ * Class273.anIntArray5165[i_7_], i_4_, 4 + i_7_, i_6_));
@@ -267,7 +267,7 @@ final class Class237_Sub1 extends Class237 {
                             int i_30_ = 2 + i_7_ & 0x3;
                             int i_31_ = 33;
                             Interface10 interface10 = ((Interface10) r_Sub2.method3297(i_0_, i, i_5_));
-                            if (interface10 != null) i_31_ = (Class348_Sub40_Sub12.objectTypeList.method2005(i_3_ + -50, interface10.method42(-122)).anInt883) / 2 + 1;
+                            if (interface10 != null) i_31_ = (TextureOpColourGradient.objectTypeList.method2005(i_3_ + -50, interface10.method42(-122)).anInt883) / 2 + 1;
                             Class318_Sub1_Sub5 class318_sub1_sub5;
                             Class318_Sub1_Sub5 class318_sub1_sub5_32_;
                             if (bool_17_) {
@@ -297,7 +297,7 @@ final class Class237_Sub1 extends Class237 {
         anInt5822++;
         Interface10 interface10 = null;
         if (i == 0) interface10 = (Interface10) r_Sub2.method3297(i_37_, i_36_, i_35_);
-        if (i == 1) interface10 = (Interface10) Class348_Sub40_Sub32.method3135(i_37_, i_36_, i_35_);
+        if (i == 1) interface10 = (Interface10) TextureOpInvert.method3135(i_37_, i_36_, i_35_);
         if (i == 2) interface10 = ((Interface10) Class177.method1353(i_37_, i_36_, i_35_, (aClass5827 != null ? aClass5827 : (aClass5827 = Interface10.class))));
         if (i_38_ != 30987) method1698(-120);
         if (i == 3) interface10 = (Interface10) Class348_Sub16_Sub3.method2878(i_37_, i_36_, i_35_);
@@ -468,7 +468,7 @@ final class Class237_Sub1 extends Class237 {
                     int i_88_ = i_87_ >> 2;
                     int i_89_ = i_87_ & 0x3;
                     if (i_74_ == i_86_ && i <= i_85_ && i - -8 > i_85_ && i_75_ <= i_84_ && i_75_ - -8 > i_84_) {
-                        Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, i_80_);
+                        Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, i_80_);
                         int i_90_ = Class249.method1908(0x7 & i_84_, i_85_ & 0x7, i_73_, true, class51.anInt926, class51.anInt961, i_89_) + i_77_;
                         int i_91_ = i_76_ + LoadingScreenManager.method1045(0x7 & i_85_, (class51.anInt926), i_89_, (class51.anInt961), i_84_ & 0x7, i_73_, (byte) 16);
                         if (i_90_ > 0 && i_91_ > 0 && i_90_ < -1 + this.width && -1 + this.height > i_91_) {
@@ -505,13 +505,13 @@ final class Class237_Sub1 extends Class237 {
                     Interface10 interface10 = method1690(i, i_95_, i_94_, i_93_, 30987);
                     if (i_96_ <= 66) anInt5819 = -107;
                     if (interface10 == null) break while_77_;
-                    Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, interface10.method42(-89));
+                    Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, interface10.method42(-89));
                     int i_97_ = interface10.method39(-128);
                     int i_98_ = interface10.method41(-32228);
                     if (class51.method474((byte) -50)) ResourceProvider.method2336(class51, i_94_, i_95_, i_93_, -128);
                     if (interface10.method38(-18443)) interface10.method43(var_toolkit, -14218);
                     if (i == 0) {
-                        Class348_Sub40_Sub4.method3058(i_93_, i_94_, i_95_);
+                        TextureOpVerticalGradient.method3058(i_93_, i_94_, i_95_);
                         if (class51.anInt920 != 0) class361.method3506((class51.aBoolean896), i_98_, i_94_, i_97_, i_95_, !(class51.aBoolean876), 29216);
                         if (class51.anInt955 == 1) {
                             if (i_98_ == 0) {

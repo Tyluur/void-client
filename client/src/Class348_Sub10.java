@@ -238,7 +238,7 @@ final class Class348_Sub10 extends Node {
 
     static final Class348_Sub10 method2793(Index index, int i) {
         if (!method2792(index)) {
-            index.method421(false, i);
+            index.fileReady(false, i);
             return null;
         }
         byte[] is = index.method415((byte) 73, i);

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub13 extends Class348_Sub42 {
+final class Class348_Sub42_Sub13 extends LinkedNode {
     static int anInt9613;
     static int anInt9614;
     int anInt9615;
@@ -13,12 +13,13 @@ final class Class348_Sub42_Sub13 extends Class348_Sub42 {
     static int anInt9620;
     Class107 aClass107_9621;
 
-    static final void method3232(double d, byte i) {
+    // method3232
+    static final void setBrightness(double d, byte i) {
         if (i <= -54) {
             if (d != Class299_Sub2_Sub1.aDouble8713) {
                 for (int i_0_ = 0; i_0_ < 256; i_0_++) {
                     int i_1_ = (int) (255.0 * Math.pow((double) i_0_ / 255.0, d));
-                    Class318_Sub1_Sub3_Sub3.anIntArray10266[i_0_] = Math.min(i_1_, 255);
+                    Class318_Sub1_Sub3_Sub3.brightnessMap[i_0_] = Math.min(i_1_, 255);
                 }
                 Class299_Sub2_Sub1.aDouble8713 = d;
             }
@@ -70,7 +71,7 @@ final class Class348_Sub42_Sub13 extends Class348_Sub42 {
     final int method3235(int i) {
         if (i != -17937) return 104;
         anInt9619++;
-        if ((this.aClass107_9621.aClass348_Sub42_1647) != this.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063) return ((Class348_Sub42_Sub12) this.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063).anInt9608;
+        if ((this.aClass107_9621.aLinkedNode_1647) != this.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063) return ((Class348_Sub42_Sub12) this.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063).anInt9608;
         return -1;
     }
 }

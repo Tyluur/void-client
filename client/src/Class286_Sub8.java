@@ -123,8 +123,8 @@ final class Class286_Sub8 extends Class286 {
             if (Class26.anInt383 == 0) Class10.HSL_TO_RGB = null;
         }
         if (bool_6_) {
-            Class348_Sub40_Sub26.anInt9346--;
-            if (Class348_Sub40_Sub26.anInt9346 == 0) Class126.HSV_TO_RGB = null;
+            TextureOpColourise.anInt9346--;
+            if (TextureOpColourise.anInt9346 == 0) Class126.HSV_TO_RGB = null;
         }
     }
 

@@ -245,12 +245,12 @@ final class Class46 {
         anInt837++;
         Class229.floorOverlayTypeList.method2033((byte) 46);
         Class362.floorUnderlayTypeList.method1377(2);
-        Class348_Sub40_Sub25.idkTypeList.method1204(0);
-        Class348_Sub40_Sub12.objectTypeList.method2006(88);
+        TextureOpMandelbrot.idkTypeList.method1204(0);
+        TextureOpColourGradient.objectTypeList.method2006(88);
         BillboardType.npcTypeList.method2080(127);
         Exception_Sub1.itemTypeList.method1938(126);
         Class10.animTypeList.method838(7);
-        Class348_Sub40_Sub18.gfxTypeList.method2542(-101);
+        TextureOpColourFill.gfxTypeList.method2542(-101);
         Class229.varBitTypeList.method1443(83);
         Class269.varPlayerTypeList.method1590(0);
         Class64_Sub3.basTypeList.method1986((byte) -91);
@@ -266,7 +266,7 @@ final class Class46 {
         Class73.hitmarkTypeList.method1598(111);
         Class331.method2638(-4631);
         Class172.method1328(-26162);
-        Class348_Sub40_Sub20.method3102(22385);
+        TextureOpNoise.method3102(22385);
         Class44.method386((byte) -106);
         Class163.method1271(0);
         Class353.aClass60_4346.method587(-108);
@@ -308,7 +308,7 @@ final class Class46 {
                 Model model = (Model) TextureUniverse.aClass60_4417.method583(l, -90);
                 if (model == null || var_toolkit.method3667(model.ua(), i) != 0) {
                     if (model != null) i = var_toolkit.method3679(i, model.ua());
-                    Mesh mesh = Class300.method2277(0, (Class348_Sub40_Sub28.aIndex_9365), this.anInt753, -1);
+                    Mesh mesh = Class300.method2277(0, (TextureOpLineNoise.aIndex_9365), this.anInt753, -1);
                     if (mesh == null) {
                         Class348_Sub42_Sub13.aBoolean9616 = true;
                         return null;
@@ -546,7 +546,7 @@ final class Class46 {
         this.anInt797 = packet.readUnsignedByte(255);
         this.aString780 = packet.readString((byte) -87);
         int i_52_ = -1;
-        if (Class348_Sub40_Sub5.method3060(i_40_, bool) != 0) {
+        if (TextureOpVoronoiNoise.method3060(i_40_, bool) != 0) {
             i_52_ = packet.readUnsignedShort(842397944);
             this.anInt824 = packet.readUnsignedShort(842397944);
             if (i_52_ == 65535) i_52_ = -1;
@@ -710,7 +710,7 @@ final class Class46 {
     }
 
     static final void method440(int i, byte i_67_) {
-        Class348_Sub40_Sub19.anIntArray9259 = new int[i];
+        TextureOpHorizontalGradient.anIntArray9259 = new int[i];
         if (i_67_ == -61) {
             LoadState.anIntArray1045 = new int[i];
             Class156.anIntArray2117 = new int[i];
@@ -768,10 +768,10 @@ final class Class46 {
             anInt804++;
             if (this.anInt705 == -1) return null;
             long l = (((long) this.anInt693 << 16 & 65535L << 16) | (((long) this.anInt733 << 32 & 65535L << 32) | ((long) this.anInt674 << 48 & 65535L << 48)) | (long) this.anInt705 & 0xffffL);
-            Class305 class305 = ((Class305) Class348_Sub40_Sub9.aClass60_9171.method583(l, 78));
+            Class305 class305 = ((Class305) TextureOpMonorchromeEdgeDetector.aClass60_9171.method583(l, 78));
             if (class305 == null) {
                 class305 = skyBoxTypeList.method823(this.anInt733, this.anInt693, this.anInt674, -43, skyBoxSphereTypeList, this.anInt705);
-                Class348_Sub40_Sub9.aClass60_9171.method582(class305, l, (byte) -120);
+                TextureOpMonorchromeEdgeDetector.aClass60_9171.method582(class305, l, (byte) -120);
             }
             return class305;
         } catch (RuntimeException runtimeexception) {

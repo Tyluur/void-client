@@ -11,9 +11,11 @@ interface TextureSource {
     // method3
     TextureMetrics getMetrics(int i, int i_3_);
 
-    boolean method4(int i, int i_4_);
+    // method4
+    boolean textureReady(int i, int i_4_);
 
-    int[] method5(boolean bool, int i, float f, int i_5_, int i_6_, int i_7_);
+    // method5
+    int[] rgbPixels(boolean bool, int i, float f, int i_5_, int i_6_, int i_7_);
 
-    int[] method6(int i, int i_8_, float f, int i_9_, boolean bool, int i_10_);
+    int[] pixels(int i, int i_8_, float f, int i_9_, boolean bool, int i_10_);
 }

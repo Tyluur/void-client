@@ -65,11 +65,11 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
             i_5_ = Class16.method260(false);
         }
         int i_6_ = i_4_ + anInt4717;
-        int i_7_ = Class348_Sub42_Sub5.anInt9532 + i_5_;
+        int i_7_ = Texture.anInt9532 + i_5_;
         int i_8_ = Class63.anInt1117;
         int i_9_ = -3 + Class237_Sub1.anInt5819;
         int i_10_ = 20;
-        Class299_Sub2_Sub1.method2270(Class63.anInt1117, i_4_ + anInt4717, var_toolkit, Class274.aClass274_3507.method2063(AnimBase.language, i + 528), false, i_5_ + Class348_Sub42_Sub5.anInt9532, Class237_Sub1.anInt5819, i_10_);
+        Class299_Sub2_Sub1.method2270(Class63.anInt1117, i_4_ + anInt4717, var_toolkit, Class274.aClass274_3507.method2063(AnimBase.language, i + 528), false, i_5_ + Texture.anInt9532, Class237_Sub1.anInt5819, i_10_);
         int i_11_ = i_4_ + Class258_Sub4.aClass373_8552.method3597(true);
         if (i != 16) method1154((byte) 9);
         int i_12_ = i_5_ + Class258_Sub4.aClass373_8552.method3594((byte) 95);
@@ -77,7 +77,7 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
             int i_15_ = 0;
             for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-73)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 61))) {
                 int i_16_ = 16 * i_15_ + i_7_ - (-i_10_ + -13);
-                if (i_4_ + anInt4717 < i_11_ && i_11_ < Class63.anInt1117 + (i_4_ + anInt4717) && i_12_ > -13 + i_16_ && i_16_ - -4 > i_12_ && ((class348_sub42_sub13.anInt9615) > 1 || ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063).aBoolean9610))
+                if (i_4_ + anInt4717 < i_11_ && i_11_ < Class63.anInt1117 + (i_4_ + anInt4717) && i_12_ > -13 + i_16_ && i_16_ - -4 > i_12_ && ((class348_sub42_sub13.anInt9615) > 1 || ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063).aBoolean9610))
                     var_toolkit.aa(anInt4717 + i_4_, -12 + i_16_, Class63.anInt1117, 16, (255 + -Class348_Sub42_Sub4.anInt9511 << 24) | Class264.anInt3374, 1);
                 i_15_++;
             }
@@ -94,22 +94,22 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
             }
         } else {
             int i_13_ = 0;
-            for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1990((byte) 101)) {
+            for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1990((byte) 101)) {
                 int i_14_ = (16 * (-1 + (Class73.anInt4776 - i_13_)) + 13 + (i_7_ + i_10_));
                 if (i_11_ > anInt4717 - -i_4_ && anInt4717 + i_4_ - -Class63.anInt1117 > i_11_ && i_12_ > i_14_ - 13 && 4 + i_14_ > i_12_ && (class348_sub42_sub12.aBoolean9610))
                     var_toolkit.aa(i_4_ + anInt4717, -12 + i_14_, Class63.anInt1117, 16, (255 + -Class348_Sub42_Sub4.anInt9511 << 24) | Class264.anInt3374, 1);
                 i_13_++;
             }
         }
-        SkyBoxTypeList.method826(i_10_, anInt4717 + i_4_, Class63.anInt1117, Class237_Sub1.anInt5819, -75, Class348_Sub42_Sub5.anInt9532 - -i_5_, var_toolkit);
+        SkyBoxTypeList.method826(i_10_, anInt4717 + i_4_, Class63.anInt1117, Class237_Sub1.anInt5819, -75, Texture.anInt9532 - -i_5_, var_toolkit);
         if (Class348_Sub42_Sub6.aBoolean9535) {
             int i_20_ = 0;
             for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-77)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 111))) {
-                int i_21_ = i_10_ + (i_5_ + Class348_Sub42_Sub5.anInt9532 + 13 - -(16 * i_20_));
+                int i_21_ = i_10_ + (i_5_ + Texture.anInt9532 + 13 - -(16 * i_20_));
                 i_20_++;
                 if (class348_sub42_sub13.anInt9615 == 1)
-                    Class318_Sub2.method2494(Class348_Sub42_Sub5.anInt9532 - -i_5_, ~0xffffff | Class5_Sub2.anInt8363, i_21_, var_toolkit, ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063), Class63.anInt1117, i_12_, Class348_Sub42_Sub11.anInt9586 | ~0xffffff, (byte) 125, Class237_Sub1.anInt5819, anInt4717 - -i_4_, i_11_);
-                else Class318_Sub1_Sub3_Sub3.method2431(~0xffffff | Class348_Sub42_Sub11.anInt9586, i_21_, class348_sub42_sub13, i_11_, Class63.anInt1117, ~0xffffff | Class5_Sub2.anInt8363, i_12_, var_toolkit, Class348_Sub42_Sub5.anInt9532 - -i_5_, i ^ 0x60, i_4_ + anInt4717, Class237_Sub1.anInt5819);
+                    Class318_Sub2.method2494(Texture.anInt9532 - -i_5_, ~0xffffff | Class5_Sub2.anInt8363, i_21_, var_toolkit, ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063), Class63.anInt1117, i_12_, Class348_Sub42_Sub11.anInt9586 | ~0xffffff, (byte) 125, Class237_Sub1.anInt5819, anInt4717 - -i_4_, i_11_);
+                else Class318_Sub1_Sub3_Sub3.method2431(~0xffffff | Class348_Sub42_Sub11.anInt9586, i_21_, class348_sub42_sub13, i_11_, Class63.anInt1117, ~0xffffff | Class5_Sub2.anInt8363, i_12_, var_toolkit, Texture.anInt9532 - -i_5_, i ^ 0x60, i_4_ + anInt4717, Class237_Sub1.anInt5819);
             }
             if (Class242.aClass348_Sub42_Sub13_3152 != null) {
                 i_20_ = 0;
@@ -122,13 +122,13 @@ final class Class135_Sub1 extends Class135 implements Interface2 {
             }
         } else {
             int i_18_ = 0;
-            for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1990((byte) 71)) {
+            for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1990((byte) 71)) {
                 int i_19_ = (i_7_ - -i_10_ - (-13 - (Class73.anInt4776 + (-1 + -i_18_)) * 16));
                 i_18_++;
                 Class318_Sub2.method2494(i_7_, ~0xffffff | Class5_Sub2.anInt8363, i_19_, var_toolkit, class348_sub42_sub12, i_8_, i_12_, (~0xffffff | Class348_Sub42_Sub11.anInt9586), (byte) 125, i_9_, i_6_, i_11_);
             }
         }
-        Class332.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_5_, true, i_4_ + anInt4717, Class237_Sub1.anInt5819);
+        Class332.method2642(Class63.anInt1117, Texture.anInt9532 - -i_5_, true, i_4_ + anInt4717, Class237_Sub1.anInt5819);
     }
 
     public final int method10(boolean bool) {

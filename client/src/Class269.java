@@ -38,11 +38,11 @@ final class Class269 {
     final boolean method2041(byte i) {
         if (i < 42) aFloat3462 = 2.1357973F;
         if (this.anInterface18_Impl1_3455 == null) {
-            if (Class262.anObject3331 == null) {
+            if (Deque.anObject3331 == null) {
                 byte[] is = Class5_Sub2.method194(128, -1922, 8, 0.6F, 128, 4.0F, 4.0F, 0.5F, 16.0F, new Class186_Sub1(419684), 16);
-                Class262.anObject3331 = Class179.method1357(is, false, (byte) 87);
+                Deque.anObject3331 = Class179.method1357(is, false, (byte) 87);
             }
-            byte[] is = Class50_Sub1.method461(false, Class262.anObject3331, 53146732);
+            byte[] is = Class50_Sub1.method461(false, Deque.anObject3331, 53146732);
             byte[] is_0_ = new byte[4 * is.length];
             int i_1_ = 0;
             for (int i_2_ = 0; i_2_ < 16; i_2_++) {
@@ -78,24 +78,24 @@ final class Class269 {
         this.anInterface18_Impl3Array3459 = null;
         aNativeToolkit_3457 = var_nativeToolkit;
         this.aBoolean3458 = aNativeToolkit_3457.aBoolean8159;
-        if (this.aBoolean3458 && !aNativeToolkit_3457.method3931(true, Class191.aClass304_2571, Class68.aClass68_1183)) this.aBoolean3458 = false;
-        if (this.aBoolean3458 || aNativeToolkit_3457.method3880(Class68.aClass68_1183, Class191.aClass304_2571, (byte) 123)) {
+        if (this.aBoolean3458 && !aNativeToolkit_3457.method3931(true, MonochromeImageCache.aClass304_2571, Class68.aClass68_1183)) this.aBoolean3458 = false;
+        if (this.aBoolean3458 || aNativeToolkit_3457.method3880(Class68.aClass68_1183, MonochromeImageCache.aClass304_2571, (byte) 123)) {
             OutputStream_Sub1.method134((byte) -126);
             if (this.aBoolean3458) {
                 byte[] is = Class50_Sub1.method461(false, QuickChatPhraseTypeList.anObject4366, 53146732);
-                this.anInterface18_Impl1_3452 = aNativeToolkit_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, is);
+                this.anInterface18_Impl1_3452 = aNativeToolkit_3457.method3872(16, 128, MonochromeImageCache.aClass304_2571, true, 128, is);
                 is = Class50_Sub1.method461(false, Class227.anObject2969, 53146732);
-                aNativeToolkit_3457.method3872(16, 128, Class191.aClass304_2571, true, 128, is);
+                aNativeToolkit_3457.method3872(16, 128, MonochromeImageCache.aClass304_2571, true, 128, is);
             } else {
                 this.anInterface18_Impl3Array3459 = new Interface18_Impl3[16];
                 for (int i = 0; i < 16; i++) {
                     byte[] is = Class173.method1331((byte) 100, QuickChatPhraseTypeList.anObject4366, 128 * (i * 128 * 2), 32768);
-                    this.anInterface18_Impl3Array3459[i] = aNativeToolkit_3457.method3944(is, 128, Class191.aClass304_2571, 2, true, 128);
+                    this.anInterface18_Impl3Array3459[i] = aNativeToolkit_3457.method3944(is, 128, MonochromeImageCache.aClass304_2571, 2, true, 128);
                 }
                 anInterface18_Impl3Array3454 = new Interface18_Impl3[16];
                 for (int i = 0; i < 16; i++) {
                     byte[] is = Class173.method1331((byte) 120, Class227.anObject2969, 128 * (128 * i) * 2, 32768);
-                    anInterface18_Impl3Array3454[i] = aNativeToolkit_3457.method3944(is, 128, Class191.aClass304_2571, 2, true, 128);
+                    anInterface18_Impl3Array3454[i] = aNativeToolkit_3457.method3944(is, 128, MonochromeImageCache.aClass304_2571, 2, true, 128);
                 }
             }
         }

@@ -51,24 +51,24 @@ final class Class231 {
             i_4_ = Class16.method260(false);
         }
         int i_5_ = -10660793;
-        Class318_Sub7.method2509(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_4_, var_toolkit, Class135_Sub1.anInt4717 - -i_3_, i_5_, true, Class237_Sub1.anInt5819, -16777216);
+        Class318_Sub7.method2509(Class63.anInt1117, Texture.anInt9532 - -i_4_, var_toolkit, Class135_Sub1.anInt4717 - -i_3_, i_5_, true, Class237_Sub1.anInt5819, -16777216);
         if (i > 98) {
-            Class262.aFontRenderer_3326.method2576(Class274.aClass274_3507.method2063(AnimBase.language, 544), i_5_, i_4_ + (Class348_Sub42_Sub5.anInt9532 - -14), i_3_ + (Class135_Sub1.anInt4717 + 3), -1, -125);
+            Deque.aFontRenderer_3326.method2576(Class274.aClass274_3507.method2063(AnimBase.language, 544), i_5_, i_4_ + (Texture.anInt9532 - -14), i_3_ + (Class135_Sub1.anInt4717 + 3), -1, -125);
             int i_6_ = Class258_Sub4.aClass373_8552.method3597(true) - -i_3_;
             int i_7_ = i_4_ + Class258_Sub4.aClass373_8552.method3594((byte) 127);
             if (Class348_Sub42_Sub6.aBoolean9535) {
                 int i_8_ = 0;
                 for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-119)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 44))) {
-                    int i_9_ = (31 + i_4_ + Class348_Sub42_Sub5.anInt9532 + i_8_ * 16);
+                    int i_9_ = (31 + i_4_ + Texture.anInt9532 + i_8_ * 16);
                     i_8_++;
                     if ((class348_sub42_sub13.anInt9615) == 1)
-                        Class318_Sub2.method2494(i_4_ + Class348_Sub42_Sub5.anInt9532, -256, i_9_, var_toolkit, ((Class348_Sub42_Sub12) (class348_sub42_sub13.aClass107_9621.aClass348_Sub42_1647.aClass348_Sub42_7063)), Class63.anInt1117, i_7_, -1, (byte) 124, Class237_Sub1.anInt5819, Class135_Sub1.anInt4717 - -i_3_, i_6_);
-                    else Class318_Sub1_Sub3_Sub3.method2431(-1, i_9_, class348_sub42_sub13, i_6_, Class63.anInt1117, -256, i_7_, var_toolkit, Class348_Sub42_Sub5.anInt9532 + i_4_, 126, Class135_Sub1.anInt4717 - -i_3_, Class237_Sub1.anInt5819);
+                        Class318_Sub2.method2494(i_4_ + Texture.anInt9532, -256, i_9_, var_toolkit, ((Class348_Sub42_Sub12) (class348_sub42_sub13.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063)), Class63.anInt1117, i_7_, -1, (byte) 124, Class237_Sub1.anInt5819, Class135_Sub1.anInt4717 - -i_3_, i_6_);
+                    else Class318_Sub1_Sub3_Sub3.method2431(-1, i_9_, class348_sub42_sub13, i_6_, Class63.anInt1117, -256, i_7_, var_toolkit, Texture.anInt9532 + i_4_, 126, Class135_Sub1.anInt4717 - -i_3_, Class237_Sub1.anInt5819);
                 }
                 if (Class242.aClass348_Sub42_Sub13_3152 != null) {
                     Class318_Sub7.method2509(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, var_toolkit, Class50_Sub3.anInt5252, i_5_, true, Class177.anInt4669, -16777216);
                     i_8_ = 0;
-                    Class262.aFontRenderer_3326.method2576(Class242.aClass348_Sub42_Sub13_3152.aString9617, i_5_, Class373.anInt4534 - -14, 3 + Class50_Sub3.anInt5252, -1, -126);
+                    Deque.aFontRenderer_3326.method2576(Class242.aClass348_Sub42_Sub13_3152.aString9617, i_5_, Class373.anInt4534 - -14, 3 + Class50_Sub3.anInt5252, -1, -126);
                     for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class242.aClass348_Sub42_Sub13_3152.aClass107_9621.method1011(-84)); class348_sub42_sub12 != null; class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class242.aClass348_Sub42_Sub13_3152.aClass107_9621.method1003((byte) 73))) {
                         int i_10_ = 31 + (Class373.anInt4534 + i_8_ * 16);
                         i_8_++;
@@ -78,13 +78,13 @@ final class Class231 {
                 }
             } else {
                 int i_11_ = 0;
-                for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1990((byte) 55)) {
-                    int i_12_ = 31 + (i_4_ + Class348_Sub42_Sub5.anInt9532 - -((-i_11_ + -1 + Class73.anInt4776) * 16));
-                    Class318_Sub2.method2494(i_4_ + Class348_Sub42_Sub5.anInt9532, -256, i_12_, var_toolkit, class348_sub42_sub12, Class63.anInt1117, i_7_, -1, (byte) 124, Class237_Sub1.anInt5819, Class135_Sub1.anInt4717 - -i_3_, i_6_);
+                for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1990((byte) 55)) {
+                    int i_12_ = 31 + (i_4_ + Texture.anInt9532 - -((-i_11_ + -1 + Class73.anInt4776) * 16));
+                    Class318_Sub2.method2494(i_4_ + Texture.anInt9532, -256, i_12_, var_toolkit, class348_sub42_sub12, Class63.anInt1117, i_7_, -1, (byte) 124, Class237_Sub1.anInt5819, Class135_Sub1.anInt4717 - -i_3_, i_6_);
                     i_11_++;
                 }
             }
-            Class332.method2642(Class63.anInt1117, Class348_Sub42_Sub5.anInt9532 - -i_4_, true, Class135_Sub1.anInt4717 + i_3_, Class237_Sub1.anInt5819);
+            Class332.method2642(Class63.anInt1117, Texture.anInt9532 - -i_4_, true, Class135_Sub1.anInt4717 + i_3_, Class237_Sub1.anInt5819);
         }
     }
 

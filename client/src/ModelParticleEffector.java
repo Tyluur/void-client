@@ -95,7 +95,7 @@ final class ModelParticleEffector {
                         }
                         Class318_Sub1_Sub1 class318_sub1_sub1 = class357.aClass318_Sub1_Sub1_4402;
                         if (class318_sub1_sub1 != null && class318_sub1_sub1.method2388(-85)) {
-                            Class262.method1992(class318_sub1_sub1, i, i_8_, i_9_);
+                            Deque.method1992(class318_sub1_sub1, i, i_8_, i_9_);
                             class318_sub1_sub1.method2392(true);
                         }
                     }

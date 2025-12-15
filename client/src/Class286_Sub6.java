@@ -69,7 +69,7 @@ final class Class286_Sub6 extends Class286 {
                 if (class348_sub16_sub3.method2866((Class286.aClass348_Sub2_3683), 22050, MSITypeList.aClass26_1977, Class367_Sub9.aIndex_7371, -35)) {
                     Class98.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3;
                     Class98.aClass348_Sub16_Sub3_1564.method2864((byte) 52);
-                    if (Class348_Sub40_Sub35.anInt9444 <= 0) {
+                    if (TextureOpEmboss.anInt9444 <= 0) {
                         Class348_Sub43.anInt7068 = 0;
                         Class98.aClass348_Sub16_Sub3_1564.method2861(0, Class58.anInt1059);
                         for (int i = 0; i < Class367_Sub3.anIntArray7299.length; i++) {
@@ -78,7 +78,7 @@ final class Class286_Sub6 extends Class286 {
                         }
                     } else {
                         Class348_Sub43.anInt7068 = 3;
-                        Class98.aClass348_Sub16_Sub3_1564.method2861(0, (Math.min(Class58.anInt1059, Class348_Sub40_Sub35.anInt9444)));
+                        Class98.aClass348_Sub16_Sub3_1564.method2861(0, (Math.min(Class58.anInt1059, TextureOpEmboss.anInt9444)));
                         for (int i = 0; (Class367_Sub3.anIntArray7299.length > i); i++) {
                             Class98.aClass348_Sub16_Sub3_1564.method2843(Class367_Sub3.anIntArray7299[i], i, -7836);
                             Class367_Sub3.anIntArray7299[i] = 255;

@@ -8,9 +8,9 @@ import java.awt.event.*;
 final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotionListener, MouseWheelListener {
     private int anInt7416;
     private int anInt7417;
-    private Class262 aClass262_7418 = new Class262();
+    private Deque aDeque_7418 = new Deque();
     private int anInt7419;
-    private Class262 aClass262_7420 = new Class262();
+    private Deque aDeque_7420 = new Deque();
     private int anInt7421;
     private int anInt7422;
     private int anInt7423;
@@ -30,7 +30,7 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
         class348_sub45_sub1.aLong9726 = Class62.safeTime(-115);
         class348_sub45_sub1.anInt9727 = i_2_;
         if (bool) mouseDragged(null);
-        aClass262_7420.method1999(class348_sub45_sub1, -20180);
+        aDeque_7420.method1999(class348_sub45_sub1, -20180);
     }
 
     public final synchronized void mouseReleased(MouseEvent mouseevent) {
@@ -101,7 +101,7 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
 
     final Class348_Sub45 method3596(int i) {
         if (i != 0) mouseReleased(null);
-        return (Class348_Sub45) aClass262_7418.method1997(8);
+        return (Class348_Sub45) aDeque_7418.method1997(8);
     }
 
     public final synchronized void mouseMoved(MouseEvent mouseevent) {
@@ -117,8 +117,8 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
             aComponent7425 = null;
             anInt7423 = anInt7421 = anInt7422 = 0;
             anInt7417 = anInt7416 = anInt7419 = 0;
-            aClass262_7418 = null;
-            aClass262_7420 = null;
+            aDeque_7418 = null;
+            aDeque_7420 = null;
         }
     }
 
@@ -127,10 +127,10 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
         anInt7417 = anInt7423;
         anInt7419 = anInt7422;
         if (i == 0) {
-            Class262 class262 = aClass262_7418;
-            aClass262_7418 = aClass262_7420;
-            aClass262_7420 = class262;
-            aClass262_7420.method1996(127);
+            Deque deque = aDeque_7418;
+            aDeque_7418 = aDeque_7420;
+            aDeque_7420 = deque;
+            aDeque_7420.clear(127);
         }
     }
 

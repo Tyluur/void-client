@@ -1322,7 +1322,7 @@ final class JavaModel extends Model {
 
     private final int method642(int i, short i_305_, int i_306_) {
         int i_307_ = Class10.HSL_TO_RGB[method637(i, i_306_)];
-        TextureMetrics textureMetrics = toolkit.aD4579.getMetrics(i_305_ & 0xffff, -6662);
+        TextureMetrics textureMetrics = toolkit.textureSource.getMetrics(i_305_ & 0xffff, -6662);
         int i_308_ = textureMetrics.aByte201 & 0xff;
         if (i_308_ != 0) {
             int i_309_ = 131586 * i_306_;
@@ -2101,7 +2101,7 @@ final class JavaModel extends Model {
     final void aa(short i, short i_582_) {
         if (faceTextures != null) {
             if (!movingTextures && i_582_ >= 0) {
-                TextureMetrics textureMetrics = toolkit.aD4579.getMetrics(i_582_ & 0xffff, -6662);
+                TextureMetrics textureMetrics = toolkit.textureSource.getMetrics(i_582_ & 0xffff, -6662);
                 if (textureMetrics.speedU != 0 || textureMetrics.speedV != 0) movingTextures = true;
             }
             for (int i_583_ = 0; i_583_ < faceCount; i_583_++) {
@@ -2959,7 +2959,7 @@ final class JavaModel extends Model {
         functionMask = arg3;
         anInt5344 = i_785_;
         anInt5349 = i_786_;
-        TextureSource var_d = toolkit.aD4579;
+        TextureSource var_d = toolkit.textureSource;
         vertexCount = mesh.vertexCount;
         maxVertex = mesh.maxVertex;
         vertexX = mesh.vertexX;
@@ -3164,13 +3164,13 @@ final class JavaModel extends Model {
                             float y = (((float) relativeX * matrix[3] + (float) relativeY * matrix[4] + (float) relativeZ * matrix[5]) / scaleY);
                             float z = (((float) relativeX * matrix[6] + (float) relativeY * matrix[7] + (float) relativeZ * matrix[8]) / scaleZ);
                             int cubeFace = Class331.cubeFace(y, false, z, x);
-                            Class262.cubeMap(offsetZ, offsetX, matrix, vertexZ[faceA], originZ, false, direction, originX, vertexX[faceA], vertexY[faceA], offsetY, fs, originY, cubeFace);
+                            Deque.cubeMap(offsetZ, offsetX, matrix, vertexZ[faceA], originZ, false, direction, originX, vertexX[faceA], vertexY[faceA], offsetY, fs, originY, cubeFace);
                             us[0] = fs[0];
                             uv[0] = fs[1];
-                            Class262.cubeMap(offsetZ, offsetX, matrix, vertexZ[faceB], originZ, false, direction, originX, vertexX[faceB], vertexY[faceB], offsetY, fs, originY, cubeFace);
+                            Deque.cubeMap(offsetZ, offsetX, matrix, vertexZ[faceB], originZ, false, direction, originX, vertexX[faceB], vertexY[faceB], offsetY, fs, originY, cubeFace);
                             us[1] = fs[0];
                             uv[1] = fs[1];
-                            Class262.cubeMap(offsetZ, offsetX, matrix, vertexZ[faceC], originZ, false, direction, originX, vertexX[faceC], vertexY[faceC], offsetY, fs, originY, cubeFace);
+                            Deque.cubeMap(offsetZ, offsetX, matrix, vertexZ[faceC], originZ, false, direction, originX, vertexX[faceC], vertexY[faceC], offsetY, fs, originY, cubeFace);
                             us[2] = fs[0];
                             uv[2] = fs[1];
                         } else if (mappingType == 3) {
@@ -3209,7 +3209,7 @@ final class JavaModel extends Model {
             for (int i = 0; i < faceCount; i++) {
                 short tex = mesh.faceTexture[i];
                 if (tex != -1) {
-                    TextureMetrics metrics = toolkit.aD4579.getMetrics(tex, -6662);
+                    TextureMetrics metrics = toolkit.textureSource.getMetrics(tex, -6662);
                     if ((featureMask & 0x40) == 0 || !metrics.disableable) {
                         faceTextures[i] = tex;
                         hasTextures = true;

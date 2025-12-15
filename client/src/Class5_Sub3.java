@@ -25,8 +25,8 @@ final class Class5_Sub3 extends Class5 {
 
     static final Class348_Sub21 method199(int i) {
         anInt8369++;
-        if (Class75.aClass262_1254 == null || r.aClass312_9716 == null) return null;
-        r.aClass312_9716.method2328(Class75.aClass262_1254, 75);
+        if (Class75.aDeque_1254 == null || r.aClass312_9716 == null) return null;
+        r.aClass312_9716.method2328(Class75.aDeque_1254, 75);
         Class348_Sub21 class348_sub21 = (Class348_Sub21) r.aClass312_9716.method2327((byte) -53);
         if (class348_sub21 == null) return null;
         Class42 class42 = Class75.aMapElementTypeList_1238.method1225(class348_sub21.anInt6847, (byte) 50);
@@ -39,7 +39,7 @@ final class Class5_Sub3 extends Class5 {
         int i_2_ = 2 % ((25 - i) / 52);
         anInt8373++;
         if (!super.method8((byte) 82)) return false;
-        return this.aIndex_4632.method421(false, (((Class369_Sub1) this.aClass369_4635).anInt8582));
+        return this.aIndex_4632.fileReady(false, (((Class369_Sub1) this.aClass369_4635).anInt8582));
     }
 
     static final int method200(int i, int i_3_) {
@@ -90,7 +90,7 @@ final class Class5_Sub3 extends Class5 {
                                 Class348_Sub42_Sub14.method3243(i_5_ + 7281, class348_sub47);
                             } else if (i == 7) {
                                 Class369_Sub2.anInt8588++;
-                                Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub42_Sub5.aClass351_9533, Class348_Sub23_Sub2.aClass77_9029, -116));
+                                Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Texture.aClass351_9533, Class348_Sub23_Sub2.aClass77_9029, -116));
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(i_5_ ^ 0x1c2c, is[i_7_]);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 92, 0);
                                 Class348_Sub42_Sub14.method3243(127, class348_sub47);

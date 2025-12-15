@@ -139,7 +139,7 @@ abstract class Class59 {
         TextureUniverse.aClass60_4417.method578(2, i);
         if (i_49_ != -1) aClass114_1068 = null;
         Option_Sub24.aClass60_6096.method578(2, i);
-        Class348_Sub40_Sub9.aClass60_9171.method578(i_49_ ^ ~0x2, i);
+        TextureOpMonorchromeEdgeDetector.aClass60_9171.method578(i_49_ ^ ~0x2, i);
     }
 
     abstract void method546(int i, int i_50_, int i_51_);
@@ -269,7 +269,7 @@ abstract class Class59 {
                     class348_sub12.anInt6753 = i_69_;
                     class348_sub12.anInt6747 = i_58_ - i_56_;
                     class348_sub12.anInt6745 = i_68_;
-                    Class289.aClass262_3705.method1999(class348_sub12, -20180);
+                    Class289.aDeque_3705.method1999(class348_sub12, -20180);
                 }
             }
         } catch (RuntimeException runtimeexception) {

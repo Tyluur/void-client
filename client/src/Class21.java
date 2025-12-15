@@ -42,7 +42,7 @@ final class Class21 {
             Class295.aDouble3761 = d_6_;
             Class348_Sub16_Sub2.aDouble8869 = d_4_ * d_6_;
             if (i != -15902) method288((byte) -120);
-            Class348_Sub42_Sub5.aDouble9531 = d_7_ * -d_4_;
+            Texture.aDouble9531 = d_7_ * -d_4_;
             Class357.aDouble4404 = d_5_;
             GfxTypeList.aDouble3980 = 0.0;
             Class59.aDouble1083 = d_6_ * -d_5_;

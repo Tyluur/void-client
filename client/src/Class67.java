@@ -33,8 +33,8 @@ final class Class67 implements Interface1 {
     public final boolean method8(byte i) {
         anInt4644++;
         boolean bool = true;
-        if (!aIndex_4650.method421(false, aClass158_4646.anInt4944)) bool = false;
-        if (!aIndex_4651.method421(false, aClass158_4646.anInt4944)) bool = false;
+        if (!aIndex_4650.fileReady(false, aClass158_4646.anInt4944)) bool = false;
+        if (!aIndex_4651.fileReady(false, aClass158_4646.anInt4944)) bool = false;
         int i_2_ = -53 % ((i - 25) / 52);
         return bool;
     }

@@ -258,7 +258,7 @@ final class Class64_Sub3 extends Model {
         anInt5582++;
         int i_33_ = (Class10.HSL_TO_RGB[Class184.method1384(i_32_, i ^ 0x54b313bc, i_29_)]);
         if (i_31_ != -1) {
-            TextureMetrics textureMetrics = aOpenGLToolkit_5598.aD4579.getMetrics(i_31_ & 0xffff, -6662);
+            TextureMetrics textureMetrics = aOpenGLToolkit_5598.textureSource.getMetrics(i_31_ & 0xffff, -6662);
             int i_34_ = 0xff & textureMetrics.aByte201;
             if (i_34_ != 0) {
                 int i_35_;
@@ -291,7 +291,7 @@ final class Class64_Sub3 extends Model {
         anInt5551++;
         if (aShortArray5601 == null) return true;
         for (int i = 0; i < aShortArray5601.length; i++) {
-            if (aShortArray5601[i] != -1 && !aOpenGLToolkit_5598.aD4579.method4(-7953, aShortArray5601[i])) return false;
+            if (aShortArray5601[i] != -1 && !aOpenGLToolkit_5598.textureSource.textureReady(-7953, aShortArray5601[i])) return false;
         }
         return true;
     }
@@ -1259,7 +1259,7 @@ final class Class64_Sub3 extends Model {
 
     final void aa(short i, short i_284_) {
         anInt5590++;
-        TextureSource var_d = aOpenGLToolkit_5598.aD4579;
+        TextureSource var_d = aOpenGLToolkit_5598.textureSource;
         for (int i_285_ = 0; i_285_ < anInt5632; i_285_++) {
             if (aShortArray5601[i_285_] == i) aShortArray5601[i_285_] = i_284_;
         }
@@ -1757,7 +1757,7 @@ final class Class64_Sub3 extends Model {
                 else aFloatArray5552 = aFloatArray5571 = null;
             }
             int i_380_ = -117 / ((69 - i) / 41);
-            if (aShortArray5601 != null && !Class348_Sub40_Sub19.method3100(anInt5556, false, anInt5648)) {
+            if (aShortArray5601 != null && !TextureOpHorizontalGradient.method3100(anInt5556, false, anInt5648)) {
                 if (aClass123_5610 != null && aClass123_5610.anInterface2_1811 == null) aBoolean5555 = true;
                 else aShortArray5601 = null;
             }
@@ -2873,7 +2873,7 @@ final class Class64_Sub3 extends Model {
                 if (aa_Sub3.method166((byte) 69, i_697_, i)) aClass123_5563 = new Class123(null, 5126, 3, 0);
                 if (Class146.method1193(i_697_, i, true)) aClass123_5610 = new Class123(null, 5121, 4, 0);
                 if (Class156.method1238(i, i_697_, -31)) aClass270_5575 = new Class270();
-                TextureSource var_d = var_openGLToolkit.aD4579;
+                TextureSource var_d = var_openGLToolkit.textureSource;
                 anIntArray5528 = new int[mesh.maxVertex + 1];
                 int[] is = new int[mesh.faceCount];
                 for (int i_698_ = 0; (i_698_ < mesh.faceCount); i_698_++) {
@@ -3199,13 +3199,13 @@ final class Class64_Sub3 extends Model {
                                     float f_803_ = ((fs[5] * (float) i_798_ + ((float) i_797_ * fs[4] + fs[3] * (float) i_796_)) / f_800_);
                                     float f_804_ = (((float) i_798_ * fs[8] + (fs[7] * (float) i_797_ + (float) i_796_ * fs[6])) / f_801_);
                                     i_747_ = Class331.cubeFace(f_803_, false, f_804_, f_802_);
-                                    Class262.cubeMap(f_789_, f_787_, fs, (mesh.vertexZ[i_780_]), i_785_, false, i_786_, i_783_, (mesh.vertexX[i_780_]), (mesh.vertexY[i_780_]), f_788_, Class152.aFloatArray2075, i_784_, i_747_);
+                                    Deque.cubeMap(f_789_, f_787_, fs, (mesh.vertexZ[i_780_]), i_785_, false, i_786_, i_783_, (mesh.vertexX[i_780_]), (mesh.vertexY[i_780_]), f_788_, Class152.aFloatArray2075, i_784_, i_747_);
                                     f_740_ = Class152.aFloatArray2075[1];
                                     f = Class152.aFloatArray2075[0];
-                                    Class262.cubeMap(f_789_, f_787_, fs, (mesh.vertexZ[i_781_]), i_785_, false, i_786_, i_783_, (mesh.vertexX[i_781_]), (mesh.vertexY[i_781_]), f_788_, Class152.aFloatArray2075, i_784_, i_747_);
+                                    Deque.cubeMap(f_789_, f_787_, fs, (mesh.vertexZ[i_781_]), i_785_, false, i_786_, i_783_, (mesh.vertexX[i_781_]), (mesh.vertexY[i_781_]), f_788_, Class152.aFloatArray2075, i_784_, i_747_);
                                     f_742_ = Class152.aFloatArray2075[1];
                                     f_741_ = Class152.aFloatArray2075[0];
-                                    Class262.cubeMap(f_789_, f_787_, fs, (mesh.vertexZ[i_782_]), i_785_, false, i_786_, i_783_, (mesh.vertexX[i_782_]), (mesh.vertexY[i_782_]), f_788_, Class152.aFloatArray2075, i_784_, i_747_);
+                                    Deque.cubeMap(f_789_, f_787_, fs, (mesh.vertexZ[i_782_]), i_785_, false, i_786_, i_783_, (mesh.vertexX[i_782_]), (mesh.vertexY[i_782_]), f_788_, Class152.aFloatArray2075, i_784_, i_747_);
                                     f_743_ = Class152.aFloatArray2075[0];
                                     f_744_ = Class152.aFloatArray2075[1];
                                 } else if (i_748_ == 3) {

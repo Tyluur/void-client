@@ -66,7 +66,7 @@ final class Class235 {
         int i_1_ = i_0_;
         boolean bool = false;
         if (i_1_ == -1) {
-            Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(i ^ 0x45, this.anInt3063);
+            Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(i ^ 0x45, this.anInt3063);
             Class51 class51_2_ = class51;
             if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47);
             if (class51 == null) return;
@@ -121,7 +121,7 @@ final class Class235 {
 
     final Model method1668(boolean bool, boolean bool_3_, int i, int i_4_, Toolkit var_toolkit) {
         anInt3082++;
-        Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, this.anInt3063);
+        Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, this.anInt3063);
         if (class51.anIntArray945 != null) class51 = class51.method480(Class318_Sub1_Sub3_Sub3.timedVarDomain, (byte) 47);
         if (class51 == null) {
             method1674(-1, var_toolkit);
@@ -216,7 +216,7 @@ final class Class235 {
                 ModelParticleEmitter[] modelParticleEmitters = model.method619();
                 ModelParticleEffector[] modelParticleEffectors = model.method604();
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081.aBoolean6470) && (modelParticleEmitters != null || modelParticleEffectors != null)) {
-                    Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, this.anInt3063);
+                    Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, this.anInt3063);
                     if (class51.anIntArray945 != null) class51 = class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47);
                     if (class51 != null) this.aClass318_Sub10_3081 = Class318_Sub10.method2526(Class367_Sub11.anInt7396, true);
                 }

@@ -384,7 +384,7 @@ final class JavaToolkit extends Toolkit {
 
     // method3714
     final boolean textureRepeats(int i) {
-        return this.aD4579.getMetrics(i, -6662).aBoolean217 || this.aD4579.getMetrics(i, -6662).aBoolean215;
+        return this.textureSource.getMetrics(i, -6662).aBoolean217 || this.textureSource.getMetrics(i, -6662).aBoolean215;
     }
 
     final void Q(int i, int i_99_, int i_100_, int i_101_, int i_102_, int i_103_, byte[] is, int i_104_, int i_105_) {
@@ -1195,10 +1195,10 @@ final class JavaToolkit extends Toolkit {
         synchronized (aClass60_7498) {
             class348_sub25 = (Class348_Sub25) aClass60_7498.method583(i, 77);
             if (class348_sub25 == null) {
-                if (!this.aD4579.method4(-7953, i)) return null;
-                TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+                if (!this.textureSource.textureReady(-7953, i)) return null;
+                TextureMetrics textureMetrics = this.textureSource.getMetrics(i, -6662);
                 int i_354_ = (textureMetrics.aBoolean199 || aBoolean7489 ? 64 : this.textureSize);
-                class348_sub25 = new Class348_Sub25(i, i_354_, this.aD4579.method5(true, i, 0.7F, i_354_, i_354_, 71), textureMetrics.alphaBlendMode != 1);
+                class348_sub25 = new Class348_Sub25(i, i_354_, this.textureSource.rgbPixels(true, i, 0.7F, i_354_, i_354_, 71), textureMetrics.alphaBlendMode != 1);
                 aClass60_7498.method582(class348_sub25, i, (byte) -122);
             }
         }
@@ -1241,10 +1241,10 @@ final class JavaToolkit extends Toolkit {
         synchronized (aClass60_7498) {
             class348_sub25 = ((Class348_Sub25) aClass60_7498.method583((long) i | ~0x7fffffffffffffffL, 107));
             if (class348_sub25 == null) {
-                if (!this.aD4579.method4(-7953, i)) return null;
-                TextureMetrics textureMetrics = this.aD4579.getMetrics(i, -6662);
+                if (!this.textureSource.textureReady(-7953, i)) return null;
+                TextureMetrics textureMetrics = this.textureSource.getMetrics(i, -6662);
                 int i_356_ = (textureMetrics.aBoolean199 || aBoolean7489 ? 64 : this.textureSize);
-                class348_sub25 = new Class348_Sub25(i, i_356_, this.aD4579.method6(-21540, i_356_, 0.7F, i, true, i_356_), textureMetrics.alphaBlendMode != 1);
+                class348_sub25 = new Class348_Sub25(i, i_356_, this.textureSource.pixels(-21540, i_356_, 0.7F, i, true, i_356_), textureMetrics.alphaBlendMode != 1);
                 aClass60_7498.method582(class348_sub25, (long) i | ~0x7fffffffffffffffL, (byte) -126);
             }
         }
@@ -1330,7 +1330,7 @@ final class JavaToolkit extends Toolkit {
 
     final void method3720(int i, int i_377_, int i_378_, int i_379_, int i_380_, int i_381_, int i_382_, int i_383_, int i_384_, int i_385_) {
         if (i_379_ != 0 && i_380_ != 0) {
-            if (i_382_ != 65535 && !(this.aD4579.getMetrics(i_382_, -6662).disableable)) {
+            if (i_382_ != 65535 && !(this.textureSource.getMetrics(i_382_, -6662).disableable)) {
                 if (anInt7512 != i_382_) {
                     Sprite sprite = ((Sprite) aClass60_7499.method583(i_382_, 97));
                     if (sprite == null) {
@@ -1481,7 +1481,7 @@ final class JavaToolkit extends Toolkit {
     }
 
     final int method3722(int i) {
-        return (this.aD4579.getMetrics(i, -6662).aShort208 & 0xffff);
+        return (this.textureSource.getMetrics(i, -6662).aShort208 & 0xffff);
     }
 
     final boolean method3699() {
@@ -1989,7 +1989,7 @@ final class JavaToolkit extends Toolkit {
     }
 
     final boolean method3725(int i) {
-        return this.aD4579.method4(-7953, i);
+        return this.textureSource.textureReady(-7953, i);
     }
 
     private JavaToolkit(TextureSource var_d) {
@@ -2229,7 +2229,7 @@ final class JavaToolkit extends Toolkit {
 
     // method3726
     final int textureAlphaBlendMode(int i) {
-        return this.aD4579.getMetrics(i, -6662).alphaBlendMode;
+        return this.textureSource.getMetrics(i, -6662).alphaBlendMode;
     }
 
     final int I() {
@@ -2250,7 +2250,7 @@ final class JavaToolkit extends Toolkit {
                 class348_sub25.anInt6879 += i_634_;
                 int i_635_ = class348_sub25.anInt6879 / 20;
                 if (i_635_ > 0) {
-                    TextureMetrics textureMetrics = this.aD4579.getMetrics((class348_sub25.anInt6883), -6662);
+                    TextureMetrics textureMetrics = this.textureSource.getMetrics((class348_sub25.anInt6883), -6662);
                     class348_sub25.method2995((textureMetrics.speedU * i_634_ * 50 / 1000), (textureMetrics.speedV * i_634_ * 50 / 1000));
                     class348_sub25.anInt6879 -= i_635_ * 20;
                 }
@@ -2298,6 +2298,6 @@ final class JavaToolkit extends Toolkit {
 
     // method3727
     final boolean smallTexture(int i) {
-        return aBoolean7489 || this.aD4579.getMetrics(i, -6662).aBoolean199;
+        return aBoolean7489 || this.textureSource.getMetrics(i, -6662).aBoolean199;
     }
 }

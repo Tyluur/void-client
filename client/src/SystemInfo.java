@@ -168,7 +168,7 @@ final class SystemInfo extends Node {
             anInt6612 = i_3_;
             anInt6592 = QuickChatCatTypeList.anInt2964;
             if (anInt6616 <= 3) anInt6599 = 0;
-            else anInt6599 = Class348_Sub40_Sub29.anInt9372;
+            else anInt6599 = TextureOpTexture.anInt9372;
             try {
                 int[] is = HardwareInfo.getCPUInfo();
                 if (is != null && is.length == 7) {

@@ -51,9 +51,9 @@ abstract class Class14 implements Interface18 {
             if (Class68.aClass68_1186 == this.aClass68_5088) {
                 if (this.aClass304_5084 == Class348_Sub45.aClass304_7103) return 34843;
                 if (Class108.aClass304_1662 == this.aClass304_5084) return 34842;
-                if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
-                    if (this.aClass304_5084 != Class348_Sub40_Sub22.aClass304_9303) {
-                        if (Class191.aClass304_2571 != this.aClass304_5084) {
+                if (this.aClass304_5084 != TextureOpClamp.aClass304_9471) {
+                    if (this.aClass304_5084 != TextureOpBricks.aClass304_9303) {
+                        if (MonochromeImageCache.aClass304_2571 != this.aClass304_5084) {
                             if (this.aClass304_5084 == Class318.aClass304_3977) return 6145;
                         } else return 34847;
                     } else return 34846;
@@ -61,9 +61,9 @@ abstract class Class14 implements Interface18 {
             } else if (this.aClass68_5088 == Class68.aClass68_1187) {
                 if (Class348_Sub45.aClass304_7103 != this.aClass304_5084) {
                     if (this.aClass304_5084 == Class108.aClass304_1662) return 34836;
-                    if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
-                        if (Class348_Sub40_Sub22.aClass304_9303 == this.aClass304_5084) return 34840;
-                        if (Class191.aClass304_2571 != this.aClass304_5084) {
+                    if (this.aClass304_5084 != TextureOpClamp.aClass304_9471) {
+                        if (TextureOpBricks.aClass304_9303 == this.aClass304_5084) return 34840;
+                        if (MonochromeImageCache.aClass304_2571 != this.aClass304_5084) {
                             if (Class318.aClass304_3977 == this.aClass304_5084) return 6145;
                         } else return 34841;
                     } else return 34838;
@@ -71,9 +71,9 @@ abstract class Class14 implements Interface18 {
             }
         } else if (this.aClass304_5084 != Class348_Sub45.aClass304_7103) {
             if (this.aClass304_5084 != Class108.aClass304_1662) {
-                if (this.aClass304_5084 != Class348_Sub40_Sub38.aClass304_9471) {
-                    if (Class348_Sub40_Sub22.aClass304_9303 == this.aClass304_5084) return 6409;
-                    if (this.aClass304_5084 == Class191.aClass304_2571) return 6410;
+                if (this.aClass304_5084 != TextureOpClamp.aClass304_9471) {
+                    if (TextureOpBricks.aClass304_9303 == this.aClass304_5084) return 6409;
+                    if (this.aClass304_5084 == MonochromeImageCache.aClass304_2571) return 6410;
                     if (this.aClass304_5084 == Class318.aClass304_3977) return 6145;
                 } else return 6406;
             } else return 6408;
@@ -108,7 +108,7 @@ abstract class Class14 implements Interface18 {
         byte[] is_10_ = is;
         byte[] is_11_ = new byte[i_9_ * (i_8_ * i_5_)];
         for (; ; ) {
-            OpenGL.glTexImage2Dub(i_4_, i_6_, method228(108), i_2_, i_3_, 0, Class348_Sub40_Sub3.method3055(i + -7265, this.aClass304_5084), 5121, is_10_, 0);
+            OpenGL.glTexImage2Dub(i_4_, i_6_, method228(108), i_2_, i_3_, 0, TextureOpBinary.method3055(i + -7265, this.aClass304_5084), 5121, is_10_, 0);
             if (i_7_ <= 1) break;
             int i_12_ = i_2_ * i_5_;
             for (int i_13_ = 0; i_5_ > i_13_; i_13_++) {
@@ -231,7 +231,7 @@ abstract class Class14 implements Interface18 {
         anInt5087++;
         if (i != -1 && Class163.aBooleanArray2162[i]) {
             Class229.aIndex_2978.method411(i, -120);
-            Class348_Sub40_Sub33.aClass46ArrayArray9427[i] = null;
+            TextureOpKaleidoscope.aClass46ArrayArray9427[i] = null;
             Class369_Sub2.aClass46ArrayArray8584[i] = null;
             if (i_46_ <= -94) Class163.aBooleanArray2162[i] = false;
         }
@@ -271,7 +271,7 @@ abstract class Class14 implements Interface18 {
         float[] fs_56_ = fs;
         float[] fs_57_ = new float[i_54_ * (i_55_ * i_51_)];
         for (; ; ) {
-            OpenGL.glTexImage2Df(i, i_52_, method228(123), i_49_, i_50_, 0, (Class348_Sub40_Sub3.method3055(124, this.aClass304_5084)), 5126, fs_56_, 0);
+            OpenGL.glTexImage2Df(i, i_52_, method228(123), i_49_, i_50_, 0, (TextureOpBinary.method3055(124, this.aClass304_5084)), 5126, fs_56_, 0);
             if (i_53_ <= 1) break;
             int i_58_ = i_49_ * i_51_;
             for (int i_59_ = 0; i_51_ > i_59_; i_59_++) {

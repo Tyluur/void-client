@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub1 extends Class348_Sub42 {
+final class Class348_Sub42_Sub1 extends LinkedNode {
     static int anInt9488;
     static int anInt9489;
     static int anInt9490;
@@ -68,7 +68,7 @@ final class Class348_Sub42_Sub1 extends Class348_Sub42 {
     static final boolean method3169(int i, int i_8_) {
         if (i_8_ != 0) return true;
         anInt9496++;
-        for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1990((byte) 99)) {
+        for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1990((byte) 99)) {
             if (Class367_Sub8.method3549(class348_sub42_sub12.anInt9608, (byte) -28) && (long) i == (class348_sub42_sub12.aLong9605)) return true;
         }
         return false;

@@ -99,8 +99,8 @@ final class Sprite_Sub1 extends Sprite {
         aNativeToolkit_8407.method3850((byte) 78, anInterface18_Impl3_8403);
         aNativeToolkit_8407.method3817(81, i_18_);
         aNativeToolkit_8407.method3923(true, i);
-        aNativeToolkit_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
-        aNativeToolkit_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3849((byte) 47, 1, TextureOpRasterizer.aClass70_9485);
+        aNativeToolkit_8407.method3885(1, true, TextureOpRasterizer.aClass70_9485);
         aNativeToolkit_8407.method3894(-28186, i_17_);
         if (aBoolean8418) {
             float f_21_ = (float) scaleWidth();
@@ -144,8 +144,8 @@ final class Sprite_Sub1 extends Sprite {
         aNativeToolkit_8407.method3850((byte) -46, anInterface18_Impl3_8403);
         aNativeToolkit_8407.method3817(98, i_40_);
         aNativeToolkit_8407.method3923(true, i_38_);
-        aNativeToolkit_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
-        aNativeToolkit_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3849((byte) 47, 1, TextureOpRasterizer.aClass70_9485);
+        aNativeToolkit_8407.method3885(1, true, TextureOpRasterizer.aClass70_9485);
         aNativeToolkit_8407.method3894(-28186, i_39_);
         boolean bool = aBoolean8391 && anInt8419 == 0 && anInt8397 == 0;
         boolean bool_42_ = (aBoolean8396 && anInt8400 == 0 && anInt8416 == 0);
@@ -352,8 +352,8 @@ final class Sprite_Sub1 extends Sprite {
         aNativeToolkit_8407.method3850((byte) 65, anInterface18_Impl3_8403);
         aNativeToolkit_8407.method3817(58, i_99_);
         aNativeToolkit_8407.method3923(true, i_97_);
-        aNativeToolkit_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
-        aNativeToolkit_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3849((byte) 47, 1, TextureOpRasterizer.aClass70_9485);
+        aNativeToolkit_8407.method3885(1, true, TextureOpRasterizer.aClass70_9485);
         aNativeToolkit_8407.method3894(-28186, i_98_);
         class101_sub2_101_.method932(1.0F, anInterface18_Impl3_8403.method71((byte) -44, (float) anInt8417), anInterface18_Impl3_8403.method67((float) anInt8411, 101), (byte) -30);
         if (aBoolean8418) {
@@ -391,8 +391,8 @@ final class Sprite_Sub1 extends Sprite {
         aNativeToolkit_8407.method3850((byte) -67, anInterface18_Impl3_8403);
         aNativeToolkit_8407.method3817(96, i_105_);
         aNativeToolkit_8407.method3923(true, i_103_);
-        aNativeToolkit_8407.method3849((byte) 47, 1, Class348_Sub40_Sub39.aClass70_9485);
-        aNativeToolkit_8407.method3885(1, true, Class348_Sub40_Sub39.aClass70_9485);
+        aNativeToolkit_8407.method3849((byte) 47, 1, TextureOpRasterizer.aClass70_9485);
+        aNativeToolkit_8407.method3885(1, true, TextureOpRasterizer.aClass70_9485);
         aNativeToolkit_8407.method3894(-28186, i_104_);
         class101_sub2.method932(0.0F, (float) anInt8417, (float) anInt8411, (byte) -44);
         class101_sub2.translate(i, i_102_, 0);

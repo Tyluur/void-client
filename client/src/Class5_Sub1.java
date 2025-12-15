@@ -37,13 +37,13 @@ class Class5_Sub1 extends Class5 {
         anInt8351++;
         if (!super.method8((byte) -125)) return false;
         Class369_Sub3 class369_sub3 = (Class369_Sub3) this.aClass369_4635;
-        if (!this.aIndex_4632.method421(false, class369_sub3.anInt8599)) return false;
-        if (!this.aIndex_4632.method421(false, class369_sub3.anInt8595)) return false;
-        if (!this.aIndex_4632.method421(false, class369_sub3.anInt8603)) return false;
-        if (!this.aIndex_4632.method421(false, class369_sub3.anInt8602)) return false;
+        if (!this.aIndex_4632.fileReady(false, class369_sub3.anInt8599)) return false;
+        if (!this.aIndex_4632.fileReady(false, class369_sub3.anInt8595)) return false;
+        if (!this.aIndex_4632.fileReady(false, class369_sub3.anInt8603)) return false;
+        if (!this.aIndex_4632.fileReady(false, class369_sub3.anInt8602)) return false;
         int i_1_ = 47 / ((25 - i) / 52);
-        if (!this.aIndex_4632.method421(false, class369_sub3.anInt8600)) return false;
-        return this.aIndex_4632.method421(false, class369_sub3.anInt8597);
+        if (!this.aIndex_4632.fileReady(false, class369_sub3.anInt8600)) return false;
+        return this.aIndex_4632.fileReady(false, class369_sub3.anInt8597);
     }
 
     static final int method185(int i, byte i_2_) {
@@ -93,7 +93,7 @@ class Class5_Sub1 extends Class5 {
                             do {
                                 if (i_26_ == -4) {
                                     if (i_16_ == i && (i_17_ == i_7_)) {
-                                        Class348_Sub40_Sub30.anInt9388 = i_16_;
+                                        TextureOpHslAdjust.anInt9388 = i_16_;
                                         Class115.anInt1753 = i_17_;
                                         return true;
                                     }
@@ -109,20 +109,20 @@ class Class5_Sub1 extends Class5 {
                                 }
                                 if (Option_Sub28.method1842(i_11_, i_7_, -1, 1, i_16_, i_17_, i, 1, i_13_)) {
                                     Class115.anInt1753 = i_17_;
-                                    Class348_Sub40_Sub30.anInt9388 = i_16_;
+                                    TextureOpHslAdjust.anInt9388 = i_16_;
                                     return true;
                                 }
                                 break while_3_;
                             } while (false);
                             if (class361.method3497(-28388, i, i_10_, 1, i_13_, i_16_, 1, i_17_, i_7_, i_11_)) {
                                 Class115.anInt1753 = i_17_;
-                                Class348_Sub40_Sub30.anInt9388 = i_16_;
+                                TextureOpHslAdjust.anInt9388 = i_16_;
                                 return true;
                             }
                             break while_3_;
                         } while (false);
                         if (class361.method3503(i_16_, (byte) 110, i_7_, 1, i_13_, i_11_, i_10_, i_17_, i)) {
-                            Class348_Sub40_Sub30.anInt9388 = i_16_;
+                            TextureOpHslAdjust.anInt9388 = i_16_;
                             Class115.anInt1753 = i_17_;
                             return true;
                         }
@@ -130,13 +130,13 @@ class Class5_Sub1 extends Class5 {
                     } while (false);
                     if (class361.method3495(i, i_17_, 1, i_9_, i_16_, i_7_, i_12_, 91)) {
                         Class115.anInt1753 = i_17_;
-                        Class348_Sub40_Sub30.anInt9388 = i_16_;
+                        TextureOpHslAdjust.anInt9388 = i_16_;
                         return true;
                     }
                     break while_3_;
                 } while (false);
                 if (class361.method3504(i_7_, i_17_, i, i_16_, i_12_, 1, i_9_, 1)) {
-                    Class348_Sub40_Sub30.anInt9388 = i_16_;
+                    TextureOpHslAdjust.anInt9388 = i_16_;
                     Class115.anInt1753 = i_17_;
                     return true;
                 }
@@ -200,7 +200,7 @@ class Class5_Sub1 extends Class5 {
             }
         }
         if (i_15_ != 1109655552) aBoolean8335 = false;
-        Class348_Sub40_Sub30.anInt9388 = i_16_;
+        TextureOpHslAdjust.anInt9388 = i_16_;
         Class115.anInt1753 = i_17_;
         return false;
     }

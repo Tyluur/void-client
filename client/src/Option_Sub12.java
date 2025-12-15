@@ -80,6 +80,6 @@ final class Option_Sub12 extends Option {
 
     static final void method1775(byte i, int i_4_, int i_5_) {
         anInt5967++;
-        if (i == -8 && Class320.method2547(i_4_, (byte) 84)) Class348_Sub40_Sub19.method3097((Class348_Sub40_Sub33.aClass46ArrayArray9427[i_4_]), i_5_, 119);
+        if (i == -8 && Class320.method2547(i_4_, (byte) 84)) TextureOpHorizontalGradient.method3097((TextureOpKaleidoscope.aClass46ArrayArray9427[i_4_]), i_5_, 119);
     }
 }

@@ -46,7 +46,7 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
         boolean bool_5_ = false;
         boolean bool_6_ = false;
         if (Class348_Sub23_Sub1.aClass297_8992.aBoolean3777 && !Class348_Sub23_Sub1.aClass297_8992.aBoolean3794) {
-            bool = (Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory) >= 512 || (Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory) == 0;
+            bool = (TextureOpNoise.aClass348_Sub4_9264.totalMemory) >= 512 || (TextureOpNoise.aClass348_Sub4_9264.totalMemory) == 0;
             if (Class297.osNameLower.startsWith("win")) {
                 bool_6_ = true;
                 bool_5_ = true;
@@ -131,7 +131,7 @@ abstract class Class318_Sub1_Sub4 extends Class318_Sub1 {
     static final void method2480(int i) {
         if (i == -1) {
             anInt8761++;
-            Class348_Sub35.aClass262_6978 = new Class262();
+            Class348_Sub35.aDeque_6978 = new Deque();
         }
     }
 }

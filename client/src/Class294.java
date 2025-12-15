@@ -146,7 +146,7 @@ final class Class294 implements LoadingScreen {
     }
 
     public final void method59(int i) {
-        Class191.method1428(true);
+        MonochromeImageCache.method1428(true);
         anInt5025++;
         if (i != -9719) aBoolean5022 = false;
     }
@@ -264,7 +264,7 @@ final class Class294 implements LoadingScreen {
 
     private final void method2219(int i) {
         anInt5031++;
-        Class199.method1455(Class51.renderer.method2320((byte) 78), Class135.aColorArray1928[Class222.anInt2884], Class51.renderer.method2318(-9324), (Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884]), (byte) -100, Class50_Sub3.aColorArray5242[Class222.anInt2884]);
+        Class199.method1455(Class51.renderer.method2320((byte) 78), Class135.aColorArray1928[Class222.anInt2884], Class51.renderer.method2318(-9324), (TextureOpPerlinNoise.aColorArray9163[Class222.anInt2884]), (byte) -100, Class50_Sub3.aColorArray5242[Class222.anInt2884]);
         if (i != 33) method55((byte) 1);
     }
 

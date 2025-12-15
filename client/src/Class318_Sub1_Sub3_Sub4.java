@@ -157,9 +157,9 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     int i_16_ = i_12_ / 2 + i_11_;
                     int i_17_ = i_14_ - -(i_13_ / 2) - 18 - i_15_;
                     var_toolkit.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0);
-                    var_toolkit.method3628(-152 + i_16_, i_17_, 304, 34, Class348_Sub40_Sub8.aColorArray9163[Class222.anInt2884].getRGB(), 0);
+                    var_toolkit.method3628(-152 + i_16_, i_17_, 304, 34, TextureOpPerlinNoise.aColorArray9163[Class222.anInt2884].getRGB(), 0);
                     var_toolkit.aa(i_16_ - 150, 2 + i_17_, Node.anInt4290 * 3, 30, Class135.aColorArray1928[Class222.anInt2884].getRGB(), 0);
-                    Class262.aFontRenderer_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(AnimBase.language, i + 551), -1, i_15_ + i_17_);
+                    Deque.aFontRenderer_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(AnimBase.language, i + 551), -1, i_15_ + i_17_);
                 } else {
                     int i_18_ = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
                     int i_19_ = ((int) ((float) i_13_ / Class75.aFloat1247) + Class245.anInt3170);
@@ -172,8 +172,8 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     Class75.method751(i_18_ + Class75.anInt1266, i_19_ + Class75.anInt1263, i_20_ - -Class75.anInt1266, Class75.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1);
                     Class75.method748(var_toolkit);
                     if (i != -7) method2462(63, -7, -14);
-                    Class262 class262 = Class75.method758(var_toolkit);
-                    Class309.method2312(-13084, 0, class262, 0, var_toolkit);
+                    Deque deque = Class75.method758(var_toolkit);
+                    Class309.method2312(-13084, 0, deque, 0, var_toolkit);
                     if (Class367_Sub9.anInt7379 > 0) {
                         Class164.anInt2173--;
                         if (Class164.anInt2173 == 0) {
@@ -203,7 +203,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
     private final Model method2465(Toolkit var_toolkit, int i, int i_26_, byte i_27_) {
         anInt10353++;
         if (i_27_ != -82) return null;
-        Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 122, i);
+        Class368 class368 = TextureOpColourFill.gfxTypeList.method2543((byte) 122, i);
         Ground var_ground = Class348_Sub1_Sub1.aGroundArray8801[this.plane];
         Ground var_ground_28_ = (this.aByte6376 < 3 ? (Class348_Sub1_Sub1.aGroundArray8801[1 + this.aByte6376]) : null);
         if (!this.aBoolean10345) return class368.method3565(anInt10339, anInt10335, this.anInt6382, i_26_, true, var_toolkit, anInt10350, this.x, -129, Class10.animTypeList, var_ground_28_, this.y, var_ground);
@@ -283,7 +283,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         if (i == 3613) {
             int i_31_ = 0;
             for (int i_32_ = 0; Class367_Sub4.mapLength > i_32_; i_32_++) {
-                for (int i_33_ = 0; Class348_Sub40_Sub3.mapWidth > i_33_; i_33_++) {
+                for (int i_33_ = 0; TextureOpBinary.mapWidth > i_33_; i_33_++) {
                     if (Class367_Sub4.method3542(i_33_, Class147.aClass357ArrayArrayArray2029, i_32_, 0, i_31_, true)) i_31_++;
                     if (i_31_ >= 512) return;
                 }
@@ -307,7 +307,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
         anInt10355 = i;
         anInt10334 = i_45_;
         this.anInt10349 = i_35_ + i_34_;
-        Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 57, anInt10355);
+        Class368 class368 = TextureOpColourFill.gfxTypeList.method2543((byte) 57, anInt10355);
         int i_46_ = class368.anInt4503;
         if (i_46_ == -1) this.aBoolean10345 = true;
         else {

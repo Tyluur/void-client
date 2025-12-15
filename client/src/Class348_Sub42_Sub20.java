@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub20 extends Class348_Sub42 {
+final class Class348_Sub42_Sub20 extends LinkedNode {
     ModelParticleEffector aModelParticleEffector_9702;
     static int anInt9703;
     Class174 aClass174_9704;
@@ -12,7 +12,7 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
     static int anInt9708;
     static int anInt9709;
     int anInt9710;
-    static Class262 aClass262_9711 = new Class262();
+    static Deque aDeque_9711 = new Deque();
     int anInt9712;
     static int anInt9713;
     static int[] anIntArray9714 = {1, 2, 4, 8};
@@ -29,7 +29,7 @@ final class Class348_Sub42_Sub20 extends Class348_Sub42 {
     }
 
     public static void method3280(int i) {
-        aClass262_9711 = null;
+        aDeque_9711 = null;
         anIntArray9714 = null;
         int i_0_ = 112 / ((i - 16) / 57);
     }

@@ -31,7 +31,7 @@ final class Class5_Sub2 extends Class5 {
     }
 
     static final void method192(Class190 class190, int i, int i_1_, int i_2_) {
-        Class262.aClass190ArrayArray3335[i_1_][i_2_] = class190;
+        Deque.aClass190ArrayArray3335[i_1_][i_2_] = class190;
         anInt8362++;
         if (i != 10000) anInt8363 = 32;
     }
@@ -54,7 +54,7 @@ final class Class5_Sub2 extends Class5 {
 
     static final boolean method195(int i, boolean bool, int i_11_) {
         anInt8364++;
-        Class51 class51 = Class348_Sub40_Sub12.objectTypeList.method2005(0, i_11_);
+        Class51 class51 = TextureOpColourGradient.objectTypeList.method2005(0, i_11_);
         if (i == 11) i = 10;
         if (bool != false) return false;
         if (i >= 5 && i <= 8) i = 4;
@@ -78,7 +78,7 @@ final class Class5_Sub2 extends Class5 {
     static final int method197(boolean bool) {
         anInt8358++;
         if (bool != false) aClass273_8356 = null;
-        return Class348_Sub6.anInt6637;
+        return MonochromeImageCacheSlot.anInt6637;
     }
 
     final void method178(int i, boolean bool, byte i_16_, int i_17_) {

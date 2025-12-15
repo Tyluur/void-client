@@ -35,8 +35,8 @@ final class Class161 {
     }
 
     static final void method1260(boolean bool, int i, Class190 class190) {
-        if (Class348_Sub40_Sub10.aBoolean9181) {
-            Class348_Sub40_Sub10.aBoolean9181 = false;
+        if (TextureOpRange.aBoolean9181) {
+            TextureOpRange.aBoolean9181 = false;
             i = 0;
         }
         anInt2140++;
@@ -44,7 +44,7 @@ final class Class161 {
             Option_Sub14.aClass190_5990 = class190;
             AnimBase.aLong6963 = Class62.safeTime(-78);
             Class206.anInt4889 = Class286_Sub5.anInt6248 = i;
-            if (Class206.anInt4889 == 0) Class348_Sub40_Sub32.method3134(-1);
+            if (Class206.anInt4889 == 0) TextureOpInvert.method3134(-1);
             else {
                 Class318_Sub1_Sub1.aFloat8725 = Class160.aFloat2137;
                 Canvas_Sub1.anInt70 = QuestTypeList.anInt2500;
@@ -95,7 +95,7 @@ final class Class161 {
         Class237.method1686(55);
         Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub23_7231), 2);
         Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub29_7229), 2);
-        Class348_Sub40.updateFeatureMask(-1);
+        TextureOp.updateFeatureMask(-1);
         Class76.method773(bool);
         RuntimeException_Sub1.aBoolean4604 = true;
     }

@@ -90,17 +90,17 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
         return stringbuffer.toString();
     }
 
-    static final void method573(Class348_Sub42 class348_sub42, Class348_Sub42 class348_sub42_15_, byte i) {
+    static final void method573(LinkedNode linkedNode, LinkedNode linkedNode_15_, byte i) {
         try {
-            if (class348_sub42.aClass348_Sub42_7060 != null) class348_sub42.method3162(true);
+            if (linkedNode.aLinkedNode_7060 != null) linkedNode.method3162(true);
             anInt8680++;
-            class348_sub42.aClass348_Sub42_7060 = class348_sub42_15_;
-            class348_sub42.aClass348_Sub42_7063 = class348_sub42_15_.aClass348_Sub42_7063;
+            linkedNode.aLinkedNode_7060 = linkedNode_15_;
+            linkedNode.aLinkedNode_7063 = linkedNode_15_.aLinkedNode_7063;
             if (i != 63) anInt8685 = 110;
-            class348_sub42.aClass348_Sub42_7060.aClass348_Sub42_7063 = class348_sub42;
-            class348_sub42.aClass348_Sub42_7063.aClass348_Sub42_7060 = class348_sub42;
+            linkedNode.aLinkedNode_7060.aLinkedNode_7063 = linkedNode;
+            linkedNode.aLinkedNode_7063.aLinkedNode_7060 = linkedNode;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wd.F(" + (class348_sub42 != null ? "{...}" : "null") + ',' + (class348_sub42_15_ != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wd.F(" + (linkedNode != null ? "{...}" : "null") + ',' + (linkedNode_15_ != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 
@@ -120,7 +120,7 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
             } else bool_29_ = Class5_Sub1.method187(i, i_23_, i_21_, i_26_, i_25_, i_24_, class361, i_19_, i_17_, i_20_, 1109655552);
             int i_30_ = i_20_ - 64;
             int i_31_ = i_21_ + -64;
-            int i_32_ = Class348_Sub40_Sub30.anInt9388;
+            int i_32_ = TextureOpHslAdjust.anInt9388;
             int i_33_ = Class115.anInt1753;
             if (!bool_29_) {
                 if (!bool) return -1;

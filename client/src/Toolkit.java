@@ -25,7 +25,7 @@ abstract class Toolkit {
     static int anInt4576;
     static int anInt4577;
     static int[] anIntArray4578 = new int[200];
-    TextureSource aD4579;
+    TextureSource textureSource;
     static int anInt4580;
     static int anInt4581;
     static float aFloat4582;
@@ -72,7 +72,7 @@ abstract class Toolkit {
     final void method3635(byte i) {
         int i_15_ = -90 % ((i - 8) / 33);
         anInt4573++;
-        Class348_Sub40_Sub26.aBooleanArray9351[this.anInt4567] = false;
+        TextureOpColourise.aBooleanArray9351[this.anInt4567] = false;
         method3652();
     }
 
@@ -306,7 +306,7 @@ abstract class Toolkit {
             anInt4576++;
             if (i_170_ == i_171_) return Class348_Sub5.method2753(true, i_168_, i_169_, canvas, var_d);
             if (i_171_ == 2) return Class306.method2297(-6, i_168_, var_d, canvas, i_169_);
-            if (i_171_ == 1) return Class262.method2000(3, i, canvas, var_d);
+            if (i_171_ == 1) return Deque.method2000(3, i, canvas, var_d);
             if (i_171_ == 5) return Class93.method862(canvas, var_d, index, 25542, i);
             if (i_171_ == 3) return Class96.method870(i, i_170_ ^ 0x4a31, var_d, index, canvas);
             throw new IllegalArgumentException("UM");
@@ -371,11 +371,11 @@ abstract class Toolkit {
     abstract Sprite method3711(int[] is, int i, int i_212_, int i_213_, int i_214_, boolean bool);
 
     Toolkit(TextureSource var_d) {
-        this.aD4579 = var_d;
+        this.textureSource = var_d;
         int i = -1;
         for (int i_215_ = 0; i_215_ < 8; i_215_++) {
-            if (!Class348_Sub40_Sub26.aBooleanArray9351[i_215_]) {
-                Class348_Sub40_Sub26.aBooleanArray9351[i_215_] = true;
+            if (!TextureOpColourise.aBooleanArray9351[i_215_]) {
+                TextureOpColourise.aBooleanArray9351[i_215_] = true;
                 i = i_215_;
                 break;
             }

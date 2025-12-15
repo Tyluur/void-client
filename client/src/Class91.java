@@ -39,16 +39,16 @@ final class Class91 {
         }
         if (bool) {
             Class348_Sub32.anInt6930 = Class282.aClass356_3654.method3474(1);
-            Class282.aClass356_3654.method3477(3, Class348_Sub40_Sub23.aClass348_Sub22Array9319);
+            Class282.aClass356_3654.method3477(3, TextureOpIrregularBricks.aClass348_Sub22Array9319);
         }
-        if (Class348_Sub40_Sub25.anInt9341 != Class299.aClass348_Sub49_Sub2_3813.pos) throw new RuntimeException("gnp1 pos:" + (Class299.aClass348_Sub49_Sub2_3813.pos) + " psize:" + Class348_Sub40_Sub25.anInt9341);
+        if (TextureOpMandelbrot.anInt9341 != Class299.aClass348_Sub49_Sub2_3813.pos) throw new RuntimeException("gnp1 pos:" + (Class299.aClass348_Sub49_Sub2_3813.pos) + " psize:" + TextureOpMandelbrot.anInt9341);
         if (i <= 47) aClass74_1519 = null;
         for (int i_4_ = 0; IDKTypeList.anInt2057 > i_4_; i_4_++) {
             if (Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_4_], -6008) == null) throw new RuntimeException("gnp2 pos:" + i_4_ + " size:" + IDKTypeList.anInt2057);
         }
         if (Class348_Sub32.anInt6930 - IDKTypeList.anInt2057 != 0) throw new RuntimeException("gnp3 mis:" + (Class348_Sub32.anInt6930 - IDKTypeList.anInt2057));
         for (int i_5_ = 0; i_5_ < Class348_Sub32.anInt6930; i_5_++) {
-            if (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_5_].aNpc_6859.anInt10306 != Class348_Sub23_Sub3.anInt9041) throw new RuntimeException("gnp4 uk:" + (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_5_].aNpc_6859.anInt10290));
+            if (TextureOpIrregularBricks.aClass348_Sub22Array9319[i_5_].aNpc_6859.anInt10306 != Class348_Sub23_Sub3.anInt9041) throw new RuntimeException("gnp4 uk:" + (TextureOpIrregularBricks.aClass348_Sub22Array9319[i_5_].aNpc_6859.anInt10290));
         }
     }
 

@@ -69,8 +69,8 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
                 OpenGL.glEnd();
             } else {
                 this.aOpenGLToolkit_6618.method3773(-1, aClass206_8844);
-                int i_4_ = Class348_Sub40_Sub1.method3051(anInt8841, 4096);
-                int i_5_ = Class348_Sub40_Sub1.method3051(anInt8833, 4096);
+                int i_4_ = TextureOpBrightness.method3051(anInt8841, 4096);
+                int i_5_ = TextureOpBrightness.method3051(anInt8833, 4096);
                 int i_6_ = 0;
                 while (i_4_ > 256 || i_5_ > 256) {
                     OpenGL.glViewport(0, 0, i_4_, i_5_);
@@ -162,7 +162,7 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
             OpenGL.glUseProgramObjectARB(l_7_);
             OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l_7_, "sceneTex"), 0);
             OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l_7_, "bloomTex"), 1);
-            OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l_7_, "params"), Class348_Sub40_Sub13.aFloat9204, Option_Sub26.aFloat6120, 0.0F);
+            OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l_7_, "params"), TextureOpMonochrome.aFloat9204, Option_Sub26.aFloat6120, 0.0F);
             this.aOpenGLToolkit_6618.method3738(-15039, 1);
             this.aOpenGLToolkit_6618.method3771((byte) -99, aClass258_Sub3_8835);
             this.aOpenGLToolkit_6618.method3738(-15039, 0);
@@ -220,8 +220,8 @@ final class Class348_Sub5_Sub1 extends Class348_Sub5 {
         if (i_14_ >= 7) {
             anInt8843++;
             anInt8841 = i_15_;
-            int i_16_ = Class348_Sub40_Sub1.method3051(anInt8841, 4096);
-            int i_17_ = Class348_Sub40_Sub1.method3051(anInt8833, 4096);
+            int i_16_ = TextureOpBrightness.method3051(anInt8841, 4096);
+            int i_17_ = TextureOpBrightness.method3051(anInt8833, 4096);
             if (anInt8826 != i_16_ || anInt8838 != i_17_) {
                 if (aClass258_Sub3Array8837 != null) {
                     for (int i_18_ = 0; (i_18_ < aClass258_Sub3Array8837.length); i_18_++)

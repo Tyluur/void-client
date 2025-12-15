@@ -67,16 +67,16 @@ final class Class30 {
             Class59_Sub1.aClass297_5297 = class297;
             anInt410++;
             JavaThreadResource.aIndex_2208 = index;
-            if (!Class348_Sub24.aString6877.startsWith("win")) {
-                if (!Class348_Sub24.aString6877.startsWith("linux")) {
-                    if (Class348_Sub24.aString6877.startsWith("mac")) Class348_Sub41.aString7048 += "macos/";
+            if (!ColourImageCacheSlot.aString6877.startsWith("win")) {
+                if (!ColourImageCacheSlot.aString6877.startsWith("linux")) {
+                    if (ColourImageCacheSlot.aString6877.startsWith("mac")) Class348_Sub41.aString7048 += "macos/";
                 } else Class348_Sub41.aString7048 += "linux/";
             } else Class348_Sub41.aString7048 += "windows/";
             if (i != 95) anIntArray407 = null;
             if (!Class59_Sub1.aClass297_5297.aBoolean3794) {
-                if (!Class348_Sub24.aString6876.startsWith("amd64") && !Class348_Sub24.aString6876.startsWith("x86_64")) {
-                    if (!Class348_Sub24.aString6876.startsWith("i386") && !Class348_Sub24.aString6876.startsWith("i486") && !Class348_Sub24.aString6876.startsWith("i586") && !Class348_Sub24.aString6876.startsWith("x86")) {
-                        if (!Class348_Sub24.aString6876.startsWith("ppc")) Class348_Sub41.aString7048 += "universal/";
+                if (!ColourImageCacheSlot.aString6876.startsWith("amd64") && !ColourImageCacheSlot.aString6876.startsWith("x86_64")) {
+                    if (!ColourImageCacheSlot.aString6876.startsWith("i386") && !ColourImageCacheSlot.aString6876.startsWith("i486") && !ColourImageCacheSlot.aString6876.startsWith("i586") && !ColourImageCacheSlot.aString6876.startsWith("x86")) {
+                        if (!ColourImageCacheSlot.aString6876.startsWith("ppc")) Class348_Sub41.aString7048 += "universal/";
                         else Class348_Sub41.aString7048 += "ppc/";
                     } else Class348_Sub41.aString7048 += "x86/";
                 } else Class348_Sub41.aString7048 += "x86_64/";

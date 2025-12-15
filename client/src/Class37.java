@@ -24,15 +24,15 @@ final class Class37 {
 
     static final synchronized void method357(int i, byte[] is) {
         anInt491++;
-        if (is.length == 100 && Class348_Sub40_Sub31.anInt9412 < 1000) Class24.aByteArrayArray358[Class348_Sub40_Sub31.anInt9412++] = is;
+        if (is.length == 100 && TextureOpTile.anInt9412 < 1000) Class24.aByteArrayArray358[TextureOpTile.anInt9412++] = is;
         else {
             if (i != 0) method359(-119, -101);
-            if (is.length == 5000 && Class348_Sub40_Sub21.anInt9280 < 250) Class133.aByteArrayArray1918[Class348_Sub40_Sub21.anInt9280++] = is;
+            if (is.length == 5000 && TextureOp37.anInt9280 < 250) Class133.aByteArrayArray1918[TextureOp37.anInt9280++] = is;
             else if (is.length == 30000 && JavaSurface.anInt6913 < 50) Class285_Sub2.aByteArrayArray8505[JavaSurface.anInt6913++] = is;
-            else if (Class348_Sub40_Sub6.aByteArrayArrayArray9134 != null) {
+            else if (TextureOpPolarDistortion.aByteArrayArrayArray9134 != null) {
                 for (int i_2_ = 0; Class59_Sub2_Sub2.anIntArray8684.length > i_2_; i_2_++) {
-                    if ((is.length == Class59_Sub2_Sub2.anIntArray8684[i_2_]) && (Class348_Sub40_Sub6.aByteArrayArrayArray9134[i_2_]).length > Class190.anIntArray2552[i_2_]) {
-                        Class348_Sub40_Sub6.aByteArrayArrayArray9134[i_2_][Class190.anIntArray2552[i_2_]++] = is;
+                    if ((is.length == Class59_Sub2_Sub2.anIntArray8684[i_2_]) && (TextureOpPolarDistortion.aByteArrayArrayArray9134[i_2_]).length > Class190.anIntArray2552[i_2_]) {
+                        TextureOpPolarDistortion.aByteArrayArrayArray9134[i_2_][Class190.anIntArray2552[i_2_]++] = is;
                         break;
                     }
                 }
@@ -48,14 +48,14 @@ final class Class37 {
 
     static final synchronized byte[] method359(int i, int i_9_) {
         anInt493++;
-        if (i == 100 && Class348_Sub40_Sub31.anInt9412 > 0) {
-            byte[] is = Class24.aByteArrayArray358[--Class348_Sub40_Sub31.anInt9412];
-            Class24.aByteArrayArray358[Class348_Sub40_Sub31.anInt9412] = null;
+        if (i == 100 && TextureOpTile.anInt9412 > 0) {
+            byte[] is = Class24.aByteArrayArray358[--TextureOpTile.anInt9412];
+            Class24.aByteArrayArray358[TextureOpTile.anInt9412] = null;
             return is;
         }
-        if (i == 5000 && Class348_Sub40_Sub21.anInt9280 > 0) {
-            byte[] is = (Class133.aByteArrayArray1918[--Class348_Sub40_Sub21.anInt9280]);
-            Class133.aByteArrayArray1918[Class348_Sub40_Sub21.anInt9280] = null;
+        if (i == 5000 && TextureOp37.anInt9280 > 0) {
+            byte[] is = (Class133.aByteArrayArray1918[--TextureOp37.anInt9280]);
+            Class133.aByteArrayArray1918[TextureOp37.anInt9280] = null;
             return is;
         }
         if (i_9_ != -1) method359(-88, -45);
@@ -64,11 +64,11 @@ final class Class37 {
             Class285_Sub2.aByteArrayArray8505[JavaSurface.anInt6913] = null;
             return is;
         }
-        if (Class348_Sub40_Sub6.aByteArrayArrayArray9134 != null) {
+        if (TextureOpPolarDistortion.aByteArrayArrayArray9134 != null) {
             for (int i_10_ = 0; Class59_Sub2_Sub2.anIntArray8684.length > i_10_; i_10_++) {
                 if ((i == Class59_Sub2_Sub2.anIntArray8684[i_10_]) && Class190.anIntArray2552[i_10_] > 0) {
-                    byte[] is = (Class348_Sub40_Sub6.aByteArrayArrayArray9134[i_10_][--Class190.anIntArray2552[i_10_]]);
-                    Class348_Sub40_Sub6.aByteArrayArrayArray9134[i_10_][Class190.anIntArray2552[i_10_]] = null;
+                    byte[] is = (TextureOpPolarDistortion.aByteArrayArrayArray9134[i_10_][--Class190.anIntArray2552[i_10_]]);
+                    TextureOpPolarDistortion.aByteArrayArrayArray9134[i_10_][Class190.anIntArray2552[i_10_]] = null;
                     return is;
                 }
             }

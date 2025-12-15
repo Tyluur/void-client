@@ -3,7 +3,7 @@
  */
 
 final class Class341 {
-    static Class348_Sub24 aClass348_Sub24_4226 = new Class348_Sub24(0, 0);
+    static ColourImageCacheSlot USED = new ColourImageCacheSlot(0, 0);
     static int anInt4227;
     static int anInt4228;
     static int anInt4229;
@@ -40,7 +40,7 @@ final class Class341 {
 
     public static void method2677(int i) {
         anIntArrayArray4233 = null;
-        aClass348_Sub24_4226 = null;
+        USED = null;
         if (i >= 93) {
             aSpriteArray4234 = null;
             aMeshArray4236 = null;
@@ -112,7 +112,7 @@ final class Class341 {
                     }
                 }
                 for (int i_14_ = 0; i_14_ < Class348_Sub32.anInt6930; i_14_++) {
-                    Npc npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_14_].aNpc_6859);
+                    Npc npc = (TextureOpIrregularBricks.aClass348_Sub22Array9319[i_14_].aNpc_6859);
                     if (npc != null) {
                         for (int i_15_ = 0; i_15_ < (npc.aModelArray10323).length; i_15_++)
                             npc.aModelArray10323[i_15_] = null;

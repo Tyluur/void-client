@@ -52,7 +52,7 @@ abstract class Class246 {
     static final boolean method1887(int i, int i_16_, int i_17_) {
         anInt3178++;
         if (i != 0) return true;
-        return Class348_Sub40_Sub3.method3056(63, i_17_, i_16_) | (0x70000 & i_17_) != 0 || Class264.method2015(i_17_, i_16_, i + 7);
+        return TextureOpBinary.method3056(63, i_17_, i_16_) | (0x70000 & i_17_) != 0 || Class264.method2015(i_17_, i_16_, i + 7);
     }
 
     abstract Class348_Sub42_Sub8 method1888(int i, Class348_Sub42_Sub8 class348_sub42_sub8);

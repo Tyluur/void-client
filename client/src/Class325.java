@@ -388,7 +388,7 @@ final class Class325 {
         do {
             try {
                 anInt4067++;
-                if (class348_sub42_sub12 != null && (class348_sub42_sub12 != (Class348_Sub40_Sub4.aClass262_9111.aNode_3334))) {
+                if (class348_sub42_sub12 != null && (class348_sub42_sub12 != (TextureOpVerticalGradient.aDeque_9111.aNode_3334))) {
                     int i_74_ = (class348_sub42_sub12.anInt9602);
                     int i_75_ = (class348_sub42_sub12.anInt9607);
                     int i_76_ = (class348_sub42_sub12.anInt9608);
@@ -652,7 +652,7 @@ final class Class325 {
                         }
                     }
                     if (i_76_ == 16 && JavaOffscreenSurface.aClass46_4730 == null) {
-                        Class348_Sub40_Sub7.method3065(i_75_, false, i_74_);
+                        TextureOpFlip.method3065(i_75_, false, i_74_);
                         JavaOffscreenSurface.aClass46_4730 = Class348_Sub22.method2957(i_74_, (byte) -54, i_75_);
                         Class251.method1916(-9343, JavaOffscreenSurface.aClass46_4730);
                     }
@@ -883,7 +883,7 @@ final class Class325 {
                                     Class369_Sub2.anInt8588++;
                                     Node.anInt4292 = 0;
                                     Class26.anInt385 = i_73_;
-                                    Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub42_Sub5.aClass351_9533, Class348_Sub23_Sub2.aClass77_9029, -115));
+                                    Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Texture.aClass351_9533, Class348_Sub23_Sub2.aClass77_9029, -115));
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-88, i_77_);
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -111, Class182.aClass346_2449.method2696(82, -127) ? 1 : 0);
                                     Class348_Sub42_Sub14.method3243(125, class348_sub47);

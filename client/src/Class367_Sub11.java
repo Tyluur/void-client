@@ -60,7 +60,7 @@ final class Class367_Sub11 extends Class367 {
         this.aNativeToolkit_4479.method3850((byte) -128, null);
         this.aNativeToolkit_4479.method3874(JavaThreadResource.aClass229_2207, 116, JavaThreadResource.aClass229_2207);
         this.aNativeToolkit_4479.method3849((byte) 47, 0, ModelParticleEffector.aClass70_4247);
-        this.aNativeToolkit_4479.method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
+        this.aNativeToolkit_4479.method3849((byte) 47, 2, TextureOpRasterizer.aClass70_9485);
         this.aNativeToolkit_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
         this.aNativeToolkit_4479.method3897(0, -4382);
         if (aBoolean7399) {
@@ -134,7 +134,7 @@ final class Class367_Sub11 extends Class367 {
                 if (Class34.aFrame476 == null) {
                     Container container;
                     if (Class52.aFrame4904 != null) container = Class52.aFrame4904;
-                    else if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                    else if (Class93.anApplet1530 == null) container = TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169;
                     else container = Class93.anApplet1530;
                     Class272.anInt3473 = container.getSize().width;
                     Class348_Sub22.anInt6857 = container.getSize().height;
@@ -206,7 +206,7 @@ final class Class367_Sub11 extends Class367 {
         this.aNativeToolkit_4479.method3897(1, i ^ ~0x2a45);
         this.aNativeToolkit_4479.method3850((byte) -32, anInterface18_Impl3_7390);
         this.aNativeToolkit_4479.method3874((Class328_Sub3.aClass229_6519), 109, Class248.aClass229_3196);
-        this.aNativeToolkit_4479.method3849((byte) 47, 0, Class348_Sub40_Sub39.aClass70_9485);
+        this.aNativeToolkit_4479.method3849((byte) 47, 0, TextureOpRasterizer.aClass70_9485);
         if (i == 15192) {
             this.aNativeToolkit_4479.method3924(true, false, 2, ModelParticleEffector.aClass70_4247, false);
             this.aNativeToolkit_4479.method3885(0, true, Class318_Sub1_Sub2.aClass70_8737);

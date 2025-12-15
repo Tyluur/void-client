@@ -10,7 +10,7 @@ final class Class156 {
     static int anInt2112;
     static String[] aStringArray2113 = new String[100];
     static int anInt2114;
-    private Class348_Sub42 aClass348_Sub42_2115;
+    private LinkedNode aLinkedNode_2115;
     static int anInt2116;
     static int[] anIntArray2117 = new int[2];
     private Class107 aClass107_2118;
@@ -29,16 +29,16 @@ final class Class156 {
         if (i != 30114) anIntArray2117 = null;
     }
 
-    final Class348_Sub42 method1240(int i) {
+    final LinkedNode method1240(int i) {
         anInt2114++;
         if (i <= 7) method1240(79);
-        Class348_Sub42 class348_sub42 = (aClass107_2118.aClass348_Sub42_1647.aClass348_Sub42_7063);
-        if (class348_sub42 == aClass107_2118.aClass348_Sub42_1647) {
-            aClass348_Sub42_2115 = null;
+        LinkedNode linkedNode = (aClass107_2118.aLinkedNode_1647.aLinkedNode_7063);
+        if (linkedNode == aClass107_2118.aLinkedNode_1647) {
+            aLinkedNode_2115 = null;
             return null;
         }
-        aClass348_Sub42_2115 = class348_sub42.aClass348_Sub42_7063;
-        return class348_sub42;
+        aLinkedNode_2115 = linkedNode.aLinkedNode_7063;
+        return linkedNode;
     }
 
     static final boolean method1241(int i, int i_2_, int i_3_) {
@@ -82,16 +82,16 @@ final class Class156 {
         } while (false);
     }
 
-    final Class348_Sub42 method1243(byte i) {
+    final LinkedNode method1243(byte i) {
         anInt2120++;
         if (i < 44) aStringArray2113 = null;
-        Class348_Sub42 class348_sub42 = aClass348_Sub42_2115;
-        if (class348_sub42 == aClass107_2118.aClass348_Sub42_1647) {
-            aClass348_Sub42_2115 = null;
+        LinkedNode linkedNode = aLinkedNode_2115;
+        if (linkedNode == aClass107_2118.aLinkedNode_1647) {
+            aLinkedNode_2115 = null;
             return null;
         }
-        aClass348_Sub42_2115 = class348_sub42.aClass348_Sub42_7063;
-        return class348_sub42;
+        aLinkedNode_2115 = linkedNode.aLinkedNode_7063;
+        return linkedNode;
     }
 
     Class156(Class107 class107) {

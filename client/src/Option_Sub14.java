@@ -43,7 +43,7 @@ final class Option_Sub14 extends Option {
     static final void method1779(byte i) {
         anInt5985++;
         Class364.method3517(73);
-        Class262.aClass190ArrayArray3335 = null;
+        Deque.aClass190ArrayArray3335 = null;
         Class60.aToolkit1098 = null;
         if (i <= 89) anInt5994 = -75;
         Option_Sub24.aClass299_6098 = null;

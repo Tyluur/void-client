@@ -111,20 +111,20 @@ final class Class31 {
     private final void method330(Toolkit var_toolkit, int i) {
         anInt446++;
         Index index = this.aHitmarkTypeList_438.aIndex_2873;
-        if (anInt421 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt421, 121) == null && index.method421(false, anInt421)) {
+        if (anInt421 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt421, 121) == null && index.fileReady(false, anInt421)) {
             Class207 class207 = Class207.method1512(index, anInt421);
             this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(class207, true), anInt421, (byte) -112);
         }
-        if (anInt433 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt433, -99) == null && index.method421(false, anInt433)) {
+        if (anInt433 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt433, -99) == null && index.fileReady(false, anInt433)) {
             Class207 class207 = Class207.method1512(index, anInt433);
             this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(class207, true), anInt433, (byte) -128);
         }
-        if (anInt429 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt429, 86) == null && index.method421(false, anInt429)) {
+        if (anInt429 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt429, 86) == null && index.fileReady(false, anInt429)) {
             Class207 class207 = Class207.method1512(index, anInt429);
             this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(class207, true), anInt429, (byte) -108);
         }
         if (i > -7) this.anInt434 = -14;
-        if (anInt439 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt439, -83) == null && index.method421(false, anInt439)) {
+        if (anInt439 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt439, -83) == null && index.fileReady(false, anInt439)) {
             Class207 class207 = Class207.method1512(index, anInt439);
             this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(class207, true), anInt439, (byte) -101);
         }

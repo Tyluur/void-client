@@ -42,7 +42,7 @@ abstract class Class318_Sub1 extends Class318 {
                 anInt6385++;
                 boolean bool = ((Exception_Sub1.itemTypeList.method1941(class46.anInt672, (byte) -74, class46.anInt812, class46.anInt781, ~0xffffff | class46.anInt809, class46.anInt678, var_toolkit, (!class46.aBoolean720 ? null : (Class132.aPlayer_1907.aClass154_10536)))) == null);
                 if (!bool) break;
-                Class5_Sub1_Sub1.aClass262_9931.method1999(new Class348_Sub7(class46.anInt812, class46.anInt781, class46.anInt672, (~0xffffff | class46.anInt809), class46.anInt678, class46.aBoolean720), i ^ 0x4ed2);
+                Class5_Sub1_Sub1.aDeque_9931.method1999(new Class348_Sub7(class46.anInt812, class46.anInt781, class46.anInt672, (~0xffffff | class46.anInt809), class46.anInt678, class46.aBoolean720), i ^ 0x4ed2);
                 Class251.method1916(-9343, class46);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ga.QA(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + (class46 != null ? "{...}" : "null") + ')'));
@@ -65,11 +65,11 @@ abstract class Class318_Sub1 extends Class318 {
                                 [class42.anIntArray591.length]);
                         for (int i_9_ = 0; is.length / 2 > i_9_; i_9_++) {
                             int i_10_;
-                            if (Class348_Sub40_Sub21.anInt9282 != 4) i_10_ = 0x3fff & (r_Sub2.anInt10483 + (int) ResourceProvider.aFloat3938);
+                            if (TextureOp37.anInt9282 != 4) i_10_ = 0x3fff & (r_Sub2.anInt10483 + (int) ResourceProvider.aFloat3938);
                             else i_10_ = (int) ResourceProvider.aFloat3938 & 0x3fff;
                             int i_11_ = Class70.SIN[i_10_];
                             int i_12_ = Class70.COS[i_10_];
-                            if (Class348_Sub40_Sub21.anInt9282 != 4) {
+                            if (TextureOp37.anInt9282 != 4) {
                                 i_11_ = (i_11_ * 256 / (Class348_Sub49_Sub1.anInt9750 + 256));
                                 i_12_ = i_12_ * 256 / (256 + (Class348_Sub49_Sub1.anInt9750));
                             }
@@ -138,7 +138,7 @@ abstract class Class318_Sub1 extends Class318 {
                     }
                     if (class42.anInt576 == 2) {
                         fontMetrics = Class369.aFontMetrics_4962;
-                        fontRenderer = Class262.aFontRenderer_3326;
+                        fontRenderer = Deque.aFontRenderer_3326;
                     }
                     Class334.method2650(fontMetrics, class42.anInt580, var_aa, i_8_, i_6_, class42.aString597, i, fontRenderer, i_29_, class46, i_5_, 100);
                 }

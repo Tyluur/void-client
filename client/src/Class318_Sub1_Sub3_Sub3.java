@@ -69,7 +69,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
     static int anInt10263;
     int anInt10264;
     int anInt10265;
-    static int[] anIntArray10266 = new int[256];
+    static int[] brightnessMap = new int[256];
     int anInt10267;
     int anInt10268;
     int anInt10269;
@@ -368,7 +368,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
     public static void method2429(int i) {
         timedVarDomain = null;
         aShortArrayArray10246 = null;
-        anIntArray10266 = null;
+        brightnessMap = null;
         aShortArrayArray10204 = null;
         aShortArrayArrayArray10253 = null;
         if (i > -101) aShortArrayArray10246 = null;
@@ -409,7 +409,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
             if (i_63_ < i_57_ && i_57_ < i_58_ + i_63_ && i_60_ > i_56_ - 13 && i_60_ < 3 + i_56_) i = i_59_;
             anInt10212++;
             String string = Class348_Sub15.method2812(-44, class348_sub42_sub13);
-            Class262.aFontRenderer_3326.method2567(i_56_, string, (byte) 120, i, 0, i_63_ - -3, Class341.aSpriteArray4234, Class175.anIntArray2330);
+            Deque.aFontRenderer_3326.method2567(i_56_, string, (byte) 120, i, 0, i_63_ - -3, Class341.aSpriteArray4234, Class175.anIntArray2330);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("kda.VA(" + i + ',' + i_56_ + ',' + (class348_sub42_sub13 != null ? "{...}" : "null") + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ',' + i_64_ + ')'));
         }
@@ -596,7 +596,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         Class348_Sub1_Sub2.aByteArrayArray8816 = null;
         ModelParticleEffector.anIntArrayArray4253 = null;
         Option_Sub1.aShortArrayArray5847 = null;
-        if (Class348_Sub40_Sub34.aClass293Array9432 != null) {
+        if (TextureOpColourEdgeDetector.aClass293Array9432 != null) {
             Class260.method1978();
             Class9.aToolkit171.allocateThreads(1);
             Class9.aToolkit171.method3659(0);
@@ -656,7 +656,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
         int i_92_ = (!bool ? this.anInt10269 : this.anInt10291);
         if (i_88_ != -1 && i_92_ != -1) {
             if (i_92_ == i_88_) {
-                Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 65, i_88_);
+                Class368 class368 = TextureOpColourFill.gfxTypeList.method2543((byte) 65, i_88_);
                 if (class368.aBoolean4487 && class368.anInt4503 != -1) {
                     AnimationType animationType = Class10.animTypeList.method835(class368.anInt4503, 7);
                     int i_95_ = animationType.replayMode;
@@ -670,8 +670,8 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
                     }
                 }
             } else {
-                Class368 class368 = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 109, i_88_);
-                Class368 class368_93_ = Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 99, i_92_);
+                Class368 class368 = TextureOpColourFill.gfxTypeList.method2543((byte) 109, i_88_);
+                Class368 class368_93_ = TextureOpColourFill.gfxTypeList.method2543((byte) 99, i_92_);
                 if (class368.anInt4503 != -1 && class368_93_.anInt4503 != -1) {
                     AnimationType animationType = Class10.animTypeList.method835(class368.anInt4503, 7);
                     AnimationType animationType_94_ = Class10.animTypeList.method835((class368_93_.anInt4503), i_89_ ^ ~0x3c5664d6);
@@ -692,7 +692,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
             this.anInt10273 = 0;
             if (i_96_ < this.anInt10211) this.anInt10224 = -1;
             if (this.anInt10291 != -1 && (this.anInt10211 == i_96_)) {
-                int i_97_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 98, this.anInt10291).anInt4503);
+                int i_97_ = (TextureOpColourFill.gfxTypeList.method2543((byte) 98, this.anInt10291).anInt4503);
                 if (i_97_ != -1) {
                     AnimationType animationType = Class10.animTypeList.method835(i_97_, 7);
                     if (animationType != null && animationType.frames != null && !this.aBoolean10309) Class287.method2178(this, 0, animationType, i_89_ + 1012294835);
@@ -709,7 +709,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
             this.anInt10220 = i_91_ >> 16;
             if (i_96_ < this.anInt10225) this.anInt10240 = -1;
             if (this.anInt10269 != -1 && this.anInt10225 == i_96_) {
-                int i_98_ = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 103, this.anInt10269).anInt4503);
+                int i_98_ = (TextureOpColourFill.gfxTypeList.method2543((byte) 103, this.anInt10269).anInt4503);
                 if (i_98_ != -1) {
                     AnimationType animationType = Class10.animTypeList.method835(i_98_, 7);
                     if (animationType != null && animationType.frames != null && !this.aBoolean10309) Class287.method2178(this, 0, animationType, -128);

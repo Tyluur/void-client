@@ -20,7 +20,7 @@ final class Class348_Sub7 extends Node {
     static final void method2772(int i, byte i_0_) {
         anInt6641++;
         if (Class320.method2547(i, (byte) 84) && i_0_ > 105) {
-            Class46[] class46s = Class348_Sub40_Sub33.aClass46ArrayArray9427[i];
+            Class46[] class46s = TextureOpKaleidoscope.aClass46ArrayArray9427[i];
             for (int i_1_ = 0; i_1_ < class46s.length; i_1_++) {
                 Class46 class46 = class46s[i_1_];
                 if (class46 != null) {

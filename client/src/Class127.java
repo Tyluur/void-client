@@ -18,7 +18,7 @@ class Class127 implements Interface1 {
     public final boolean method8(byte i) {
         int i_0_ = -79 / ((i - 25) / 52);
         anInt4658++;
-        return aIndex_4661.method421(false, (this.aClass288_4659.anInt4958));
+        return aIndex_4661.fileReady(false, (this.aClass288_4659.anInt4958));
     }
 
     public void method9(byte i, boolean bool) {

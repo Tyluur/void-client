@@ -101,12 +101,12 @@ final class Class188 {
         Class229.floorOverlayTypeList.method2032(5, -101);
         anInt2515++;
         Class362.floorUnderlayTypeList.method1383(i ^ 0x804c, 5);
-        Class348_Sub40_Sub25.idkTypeList.method1207(-17452, 5);
-        Class348_Sub40_Sub12.objectTypeList.method2010(5, i + -6);
+        TextureOpMandelbrot.idkTypeList.method1207(-17452, 5);
+        TextureOpColourGradient.objectTypeList.method2010(5, i + -6);
         BillboardType.npcTypeList.method2076(5, true);
         Exception_Sub1.itemTypeList.method1937(5, false);
         Class10.animTypeList.method836(5, 93);
-        Class348_Sub40_Sub18.gfxTypeList.method2544(5, (byte) -41);
+        TextureOpColourFill.gfxTypeList.method2544(5, (byte) -41);
         Class229.varBitTypeList.method1442(5, (byte) 1);
         Class269.varPlayerTypeList.method1587(5, i ^ 0xeab);
         Class64_Sub3.basTypeList.method1984((byte) 119, 5);

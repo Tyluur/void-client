@@ -8,12 +8,12 @@ final class Class107 {
     static int anInt1644;
     static int anInt1645 = -2;
     static int anInt1646;
-    Class348_Sub42 aClass348_Sub42_1647 = new Class348_Sub42();
+    LinkedNode aLinkedNode_1647 = new LinkedNode();
     static int anInt1648;
     static int anInt1649;
     static int[] anIntArray1650 = new int[1000];
     static int anInt1651;
-    private Class348_Sub42 aClass348_Sub42_1652;
+    private LinkedNode aLinkedNode_1652;
     static int anInt1653;
     static int anInt1654;
     static int anInt1655;
@@ -21,21 +21,21 @@ final class Class107 {
     final int method1002(int i) {
         anInt1643++;
         int i_0_ = i;
-        for (Class348_Sub42 class348_sub42 = (this.aClass348_Sub42_1647.aClass348_Sub42_7063); this.aClass348_Sub42_1647 != class348_sub42; class348_sub42 = class348_sub42.aClass348_Sub42_7063)
+        for (LinkedNode linkedNode = (this.aLinkedNode_1647.aLinkedNode_7063); this.aLinkedNode_1647 != linkedNode; linkedNode = linkedNode.aLinkedNode_7063)
             i_0_++;
         return i_0_;
     }
 
-    final Class348_Sub42 method1003(byte i) {
+    final LinkedNode method1003(byte i) {
         anInt1644++;
         if (i <= 41) return null;
-        Class348_Sub42 class348_sub42 = aClass348_Sub42_1652;
-        if (class348_sub42 == this.aClass348_Sub42_1647) {
-            aClass348_Sub42_1652 = null;
+        LinkedNode linkedNode = aLinkedNode_1652;
+        if (linkedNode == this.aLinkedNode_1647) {
+            aLinkedNode_1652 = null;
             return null;
         }
-        aClass348_Sub42_1652 = class348_sub42.aClass348_Sub42_7063;
-        return class348_sub42;
+        aLinkedNode_1652 = linkedNode.aLinkedNode_7063;
+        return linkedNode;
     }
 
     public static void method1004(byte i) {
@@ -43,14 +43,14 @@ final class Class107 {
         if (i != 16) method1006(false, (byte) -62);
     }
 
-    final void method1005(boolean bool, Class348_Sub42 class348_sub42) {
-        if (class348_sub42.aClass348_Sub42_7060 != null) class348_sub42.method3162(bool);
+    final void method1005(boolean bool, LinkedNode linkedNode) {
+        if (linkedNode.aLinkedNode_7060 != null) linkedNode.method3162(bool);
         anInt1654++;
-        class348_sub42.aClass348_Sub42_7063 = this.aClass348_Sub42_1647;
-        class348_sub42.aClass348_Sub42_7060 = (this.aClass348_Sub42_1647.aClass348_Sub42_7060);
+        linkedNode.aLinkedNode_7063 = this.aLinkedNode_1647;
+        linkedNode.aLinkedNode_7060 = (this.aLinkedNode_1647.aLinkedNode_7060);
         if (bool == true) {
-            class348_sub42.aClass348_Sub42_7060.aClass348_Sub42_7063 = class348_sub42;
-            class348_sub42.aClass348_Sub42_7063.aClass348_Sub42_7060 = class348_sub42;
+            linkedNode.aLinkedNode_7060.aLinkedNode_7063 = linkedNode;
+            linkedNode.aLinkedNode_7063.aLinkedNode_7060 = linkedNode;
         }
     }
 
@@ -89,9 +89,9 @@ final class Class107 {
                     int i_4_;
                     int i_5_;
                     int i_6_;
-                    if (Class348_Sub40_Sub21.anInt9282 == 4) {
+                    if (TextureOp37.anInt9282 == 4) {
                         i_3_ = Class348_Sub7.anInt6652;
-                        i_4_ = Class348_Sub6.anInt6633;
+                        i_4_ = MonochromeImageCacheSlot.anInt6633;
                         i_5_ = 4096;
                         i_6_ = 0x3fff & (int) -ResourceProvider.aFloat3938;
                     } else {
@@ -101,9 +101,9 @@ final class Class107 {
                         i_4_ = (Class132.aPlayer_1907.x);
                     }
                     int i_7_ = 48 - (-(i_4_ / 128) - -(Class367_Sub4.mapLength * 2)) - -208;
-                    int i_8_ = (208 - (Class348_Sub40_Sub3.mapWidth * 2 - 48) + 4 * Class348_Sub40_Sub3.mapWidth - i_3_ / 128);
+                    int i_8_ = (208 - (TextureOpBinary.mapWidth * 2 - 48) + 4 * TextureOpBinary.mapWidth - i_3_ / 128);
                     Class108.aSprite_1664.method967(((float) class46.anInt709 / 2.0F + (float) i), ((float) class46.anInt789 / 2.0F + (float) i_1_), (float) i_7_, (float) i_8_, i_5_, i_6_ << 2, var_aa, i, i_1_);
-                    for (Class348_Sub35 class348_sub35 = (Class348_Sub35) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1995(i_2_ ^ 0x59b4); class348_sub35 != null; class348_sub35 = (Class348_Sub35) Class318_Sub1_Sub5_Sub1.aClass262_10125.method1990((byte) 92)) {
+                    for (Class348_Sub35 class348_sub35 = (Class348_Sub35) Class318_Sub1_Sub5_Sub1.aDeque_10125.method1995(i_2_ ^ 0x59b4); class348_sub35 != null; class348_sub35 = (Class348_Sub35) Class318_Sub1_Sub5_Sub1.aDeque_10125.method1990((byte) 92)) {
                         int i_9_ = class348_sub35.anInt6976;
                         int i_10_ = (-za_Sub2.regionTileX + ((0xfffe5b0 & (r_Sub2.aClass252_10488.anIntArray3238[i_9_])) >> 14));
                         int i_11_ = (-Class90.regionTileY + (0x3fff & (r_Sub2.aClass252_10488.anIntArray3238[i_9_])));
@@ -111,10 +111,10 @@ final class Class107 {
                         int i_13_ = 2 + (4 * i_11_ - i_3_ / 128);
                         Class318_Sub1.method2385(class46, i_1_, var_aa, (r_Sub2.aClass252_10488.anIntArray3239[i_9_]), i_12_, i, (byte) -94, i_13_, var_toolkit);
                     }
-                    for (int i_14_ = 0; (Class348_Sub40_Sub38.anInt9479 > i_14_); i_14_++) {
+                    for (int i_14_ = 0; (TextureOpClamp.anInt9479 > i_14_); i_14_++) {
                         int i_15_ = (Class348_Sub15.anIntArray6770[i_14_] * 4 - -2 - i_4_ / 128);
-                        int i_16_ = (-(i_3_ / 128) + Class348_Sub40_Sub37.anIntArray9458[i_14_] * 4 - -2);
-                        Class51 class51 = (Class348_Sub40_Sub12.objectTypeList.method2005(0, ObjectTypeList.anIntArray3347[i_14_]));
+                        int i_16_ = (-(i_3_ / 128) + TextureOpBoxBlur.anIntArray9458[i_14_] * 4 - -2);
+                        Class51 class51 = (TextureOpColourGradient.objectTypeList.method2005(0, ObjectTypeList.anIntArray3347[i_14_]));
                         if (class51.anIntArray945 != null) {
                             class51 = class51.method480((Class318_Sub1_Sub3_Sub3.timedVarDomain), (byte) 47);
                             if (class51 == null || (class51.anInt921 == -1)) continue;
@@ -155,7 +155,7 @@ final class Class107 {
                             int i_27_ = (-(i_4_ / 128) + (player.x) / 128);
                             int i_28_ = (-(i_3_ / 128) + (player.y) / 128);
                             boolean bool = false;
-                            for (int i_29_ = 0; (Class348_Sub40_Sub30.anInt9383 > i_29_); i_29_++) {
+                            for (int i_29_ = 0; (TextureOpHslAdjust.anInt9383 > i_29_); i_29_++) {
                                 if ((player.aString10544.equals(Class83.aStringArray1441[i_29_])) && (Toolkit.anIntArray4578[i_29_] != 0)) {
                                     bool = true;
                                     break;
@@ -209,7 +209,7 @@ final class Class107 {
                             }
                         }
                     }
-                    if (Class348_Sub40_Sub21.anInt9282 != 4) {
+                    if (TextureOp37.anInt9282 != 4) {
                         if (Class248.anInt3203 != 0) {
                             int i_40_ = (-(i_4_ / 128) + (Class248.anInt3203 * 4 + 2) - (-(2 * Class132.aPlayer_1907.method2436((byte) 77)) - -2));
                             int i_41_ = (4 * Class97.anInt1548 - (-2 + i_3_ / 128) + (2 * (Class132.aPlayer_1907.method2436((byte) 59) - 1)));
@@ -224,24 +224,24 @@ final class Class107 {
         }
     }
 
-    final Class348_Sub42 method1008(int i) {
-        if (i != 20) aClass348_Sub42_1652 = null;
+    final LinkedNode method1008(int i) {
+        if (i != 20) aLinkedNode_1652 = null;
         anInt1653++;
-        Class348_Sub42 class348_sub42 = (this.aClass348_Sub42_1647.aClass348_Sub42_7063);
-        if (class348_sub42 == this.aClass348_Sub42_1647) return null;
-        class348_sub42.method3162(true);
-        return class348_sub42;
+        LinkedNode linkedNode = (this.aLinkedNode_1647.aLinkedNode_7063);
+        if (linkedNode == this.aLinkedNode_1647) return null;
+        linkedNode.method3162(true);
+        return linkedNode;
     }
 
     final void method1009(int i) {
         anInt1646++;
         if (i == 2110355138) {
             for (; ; ) {
-                Class348_Sub42 class348_sub42 = (this.aClass348_Sub42_1647.aClass348_Sub42_7063);
-                if (this.aClass348_Sub42_1647 == class348_sub42) break;
-                class348_sub42.method3162(true);
+                LinkedNode linkedNode = (this.aLinkedNode_1647.aLinkedNode_7063);
+                if (this.aLinkedNode_1647 == linkedNode) break;
+                linkedNode.method3162(true);
             }
-            aClass348_Sub42_1652 = null;
+            aLinkedNode_1652 = null;
         }
     }
 
@@ -263,20 +263,20 @@ final class Class107 {
         if (bool != false) method1010(true, true);
     }
 
-    final Class348_Sub42 method1011(int i) {
+    final LinkedNode method1011(int i) {
         if (i > -23) method1006(false, (byte) -34);
         anInt1649++;
-        Class348_Sub42 class348_sub42 = (this.aClass348_Sub42_1647.aClass348_Sub42_7063);
-        if (class348_sub42 == this.aClass348_Sub42_1647) {
-            aClass348_Sub42_1652 = null;
+        LinkedNode linkedNode = (this.aLinkedNode_1647.aLinkedNode_7063);
+        if (linkedNode == this.aLinkedNode_1647) {
+            aLinkedNode_1652 = null;
             return null;
         }
-        aClass348_Sub42_1652 = class348_sub42.aClass348_Sub42_7063;
-        return class348_sub42;
+        aLinkedNode_1652 = linkedNode.aLinkedNode_7063;
+        return linkedNode;
     }
 
     public Class107() {
-        this.aClass348_Sub42_1647.aClass348_Sub42_7060 = this.aClass348_Sub42_1647;
-        this.aClass348_Sub42_1647.aClass348_Sub42_7063 = this.aClass348_Sub42_1647;
+        this.aLinkedNode_1647.aLinkedNode_7060 = this.aLinkedNode_1647;
+        this.aLinkedNode_1647.aLinkedNode_7063 = this.aLinkedNode_1647;
     }
 }

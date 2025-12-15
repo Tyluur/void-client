@@ -75,11 +75,11 @@ final class Class287 {
                 if (i_18_ > i_19_ * i_19_) {
                     i_19_ -= 10;
                     int i_20_;
-                    if (Class348_Sub40_Sub21.anInt9282 == 4) i_20_ = (int) ResourceProvider.aFloat3938 & 0x3fff;
+                    if (TextureOp37.anInt9282 == 4) i_20_ = (int) ResourceProvider.aFloat3938 & 0x3fff;
                     else i_20_ = 0x3fff & ((int) ResourceProvider.aFloat3938 + r_Sub2.anInt10483);
                     int i_21_ = Class70.SIN[i_20_];
                     int i_22_ = Class70.COS[i_20_];
-                    if (Class348_Sub40_Sub21.anInt9282 != 4) {
+                    if (TextureOp37.anInt9282 != 4) {
                         i_22_ = i_22_ * 256 / (Class348_Sub49_Sub1.anInt9750 - -256);
                         i_21_ = 256 * i_21_ / (Class348_Sub49_Sub1.anInt9750 - -256);
                     }
@@ -108,7 +108,7 @@ final class Class287 {
             if (JavaMatrix.aClass223_5689 == class223) return Class303.method2287(packet, (byte) -112);
             if (class223 == Class28.aClass223_4997) return Class337.method2660((byte) 26, packet);
             if (bool != true) method2180((byte) -104);
-            if (class223 == Class348_Sub40_Sub21.aClass223_9274) return Class288_Sub1.method2189(packet, 86);
+            if (class223 == TextureOp37.aClass223_9274) return Class288_Sub1.method2189(packet, 86);
             if (class223 == Class313.aClass223_3934) return Class5.method179(16533, packet);
             if (LightTypeList.aClass223_2489 == class223) return Class348_Sub46.method3322(0, packet);
             if (class223 == Class174.aClass223_2307) return Class50_Sub4.method472(-27794, packet);

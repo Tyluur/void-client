@@ -14,7 +14,7 @@ final class CursorTypeList {
     static int anInt2184;
     private final Class60 aClass60_2185 = new Class60(64);
     static int anInt2186;
-    static Class262 aClass262_2187 = new Class262();
+    static Deque aDeque_2187 = new Deque();
     private final Index aIndex_2188;
     static int anInt2189;
     Class60 aClass60_2190 = new Class60(2);
@@ -32,7 +32,7 @@ final class CursorTypeList {
 
     public static void method1284(int i) {
         aClass114_2183 = null;
-        if (i == -21165) aClass262_2187 = null;
+        if (i == -21165) aDeque_2187 = null;
     }
 
     final void method1285(int i, int i_0_) {
@@ -98,12 +98,12 @@ final class CursorTypeList {
             i_8_ += Class16.method260(false);
         }
         if (Option_Sub20.anInt6048 == 1) {
-            Sprite sprite = (Class348_Sub40_Sub37.aSpriteArray9467[Node.anInt4292 / 100]);
+            Sprite sprite = (TextureOpBoxBlur.aSpriteArray9467[Node.anInt4292 / 100]);
             sprite.method974(i_7_ - 8, i_8_ + -8);
             Class338.method2663(-5590, -8 + i_7_, -8 + (i_7_ - -sprite.scaleWidth()), -8 + i_8_, sprite.scaleHeight() + -8 + i_8_);
         }
         if (Option_Sub20.anInt6048 == 2) {
-            Sprite sprite = (Class348_Sub40_Sub37.aSpriteArray9467[Node.anInt4292 / 100 + 4]);
+            Sprite sprite = (TextureOpBoxBlur.aSpriteArray9467[Node.anInt4292 / 100 + 4]);
             sprite.method974(i_7_ + -8, -8 + i_8_);
             Class338.method2663(-5590, i_7_ - 8, sprite.scaleWidth() + i_7_ + -8, -8 + i_8_, sprite.scaleHeight() + -8 + i_8_);
         }

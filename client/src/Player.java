@@ -310,16 +310,16 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
             this.anIntArray10236 = null;
         }
         if (this.anInt10269 != -1) {
-            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 59, this.anInt10269));
+            Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 59, this.anInt10269));
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && Class10.animTypeList.method835((class368.anInt4503), i_50_ ^ ~0x674d).walkingPrecedence == 1) this.anInt10269 = -1;
         }
         if (this.anInt10291 != -1) {
-            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 124, this.anInt10291));
+            Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 124, this.anInt10291));
             if (class368.aBoolean4487 && class368.anInt4503 != -1 && (Class10.animTypeList.method835(class368.anInt4503, 7).walkingPrecedence) == 1) this.anInt10291 = -1;
         }
         this.anInt10524 = -1;
-        if (i_52_ >= 0 && Class367_Sub4.mapLength > i_52_ && i >= 0 && Class348_Sub40_Sub3.mapWidth > i) {
-            if (this.anIntArray10320[0] >= 0 && (this.anIntArray10320[0] < Class367_Sub4.mapLength) && this.anIntArray10317[0] >= 0 && (Class348_Sub40_Sub3.mapWidth > this.anIntArray10317[0])) {
+        if (i_52_ >= 0 && Class367_Sub4.mapLength > i_52_ && i >= 0 && TextureOpBinary.mapWidth > i) {
+            if (this.anIntArray10320[0] >= 0 && (this.anIntArray10320[0] < Class367_Sub4.mapLength) && this.anIntArray10317[0] >= 0 && (TextureOpBinary.mapWidth > this.anIntArray10317[0])) {
                 if (i_51_ == 2) Class218.method1592((byte) 2, i, 4, i_52_, this);
                 method2451(i_51_, i_52_, -29034, i);
             } else method2449(i, i_52_, (byte) 111);
@@ -484,7 +484,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         int i_74_ = this.aClass264_10217.method2019((byte) -106);
         boolean bool = (this.aByte10279 != 0 && (this.anInt10248 <= Class367_Sub11.anInt7396) && (Class367_Sub11.anInt7396 < this.anInt10250));
         if (bool) i |= 0x80000;
-        Model model = (this.aModelArray10323[0] = (this.aClass154_10536.method1226(Class318_Sub1_Sub3_Sub3.timedVarDomain, animationType_71_, this.aClass182Array10308, true, Exception_Sub1.itemTypeList, i_74_, animationType, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, Class348_Sub40_Sub25.idkTypeList, this.anInt10232, var_toolkit, BillboardType.npcTypeList, Class10.animTypeList, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.basTypeList)));
+        Model model = (this.aModelArray10323[0] = (this.aClass154_10536.method1226(Class318_Sub1_Sub3_Sub3.timedVarDomain, animationType_71_, this.aClass182Array10308, true, Exception_Sub1.itemTypeList, i_74_, animationType, this.anInt10244, true, this.anInt10312, this.anIntArray10296, i, TextureOpMandelbrot.idkTypeList, this.anInt10232, var_toolkit, BillboardType.npcTypeList, Class10.animTypeList, this.anInt10245, this.anInt10267, this.anInt10203, Class64_Sub3.basTypeList)));
         int i_75_ = Class292.method2201(2121);
         if (QuickChatCatTypeList.anInt2964 < 96 && i_75_ > 50) Class299_Sub2_Sub1.method2271(31268);
         int i_76_ = 3 % ((63 - i_69_) / 47);
@@ -512,7 +512,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         } else this.method2424(i_74_, method2436((byte) 124) << 9, 0, method2436((byte) 58) << 9, (byte) 65, 0);
         if (bool) model.method624(this.aByte10255, this.aByte10206, this.aByte10270, (this.aByte10279 & 0xff));
         if (!this.aBoolean10521 && this.anInt10269 != -1 && this.anInt10240 != -1) {
-            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 76, this.anInt10269));
+            Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 76, this.anInt10269));
             boolean bool_78_ = (class368.aByte4488 == 3 && (i_72_ != 0 || i_73_ != 0));
             int i_79_ = i_70_;
             if (!bool_78_) {
@@ -559,7 +559,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         } else this.aModelArray10323[1] = null;
         if (this.aBoolean10521 || this.anInt10291 == -1 || this.anInt10224 == -1) this.aModelArray10323[2] = null;
         else {
-            Class368 class368 = (Class348_Sub40_Sub18.gfxTypeList.method2543((byte) 76, this.anInt10291));
+            Class368 class368 = (TextureOpColourFill.gfxTypeList.method2543((byte) 76, this.anInt10291));
             boolean bool_89_ = (class368.aByte4488 == 3 && (i_72_ != 0 || i_73_ != 0));
             int i_90_ = i_70_;
             if (bool_89_) i_90_ |= 0x7;

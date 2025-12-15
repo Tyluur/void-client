@@ -31,9 +31,9 @@ final class Class245 {
         int i = 10;
         int i_1_ = 30;
         if (Class348_Sub18.anInt6818 != 0 && Class362.aFontRenderer_4456 != null) {
-            Class9.aToolkit171.K(Class348_Sub40_Sub10.anIntArray9183);
+            Class9.aToolkit171.K(TextureOpRange.anIntArray9183);
             for (int i_2_ = 0; i_2_ < AnimationType.anIntArray256.length; i_2_++)
-                Class9.aToolkit171.method3660((AnimationType.anIntArray256[i_2_] + Class345.anIntArray4271[i_2_]), -256, (Class348_Sub40_Sub10.anIntArray9183[3] - Class348_Sub40_Sub10.anIntArray9183[1]), Class348_Sub40_Sub10.anIntArray9183[1], true);
+                Class9.aToolkit171.method3660((AnimationType.anIntArray256[i_2_] + Class345.anIntArray4271[i_2_]), -256, (TextureOpRange.anIntArray9183[3] - TextureOpRange.anIntArray9183[1]), TextureOpRange.anIntArray9183[1], true);
             for (int i_3_ = 0; i_3_ < Class348_Sub42_Sub10.anInt9577; i_3_++) {
                 Class338 class338 = ClientScript.aClass338Array9700[i_3_];
                 Class9.aToolkit171.H(class338.anIntArray4187[0], class338.anIntArray4191[0], class338.anIntArray4184[0], Class177.anIntArray4670);
@@ -54,7 +54,7 @@ final class Class245 {
             Class362.aFontRenderer_4456.method2576(("Total Opaque Onscreen: " + Class5_Sub1_Sub1.anInt9930 + "/" + 10000), -256, i_1_ + 60, i, -16777216, -124);
             Class362.aFontRenderer_4456.method2576(("Total Trans Onscreen: " + Class348_Sub42_Sub3.anInt9504 + "/" + 5000), -256, i_1_ + 75, i, -16777216, -111);
             Class362.aFontRenderer_4456.method2576(("Occluders: " + (Option_Sub26.anInt6115 + Class69.anInt1200) + " Active: " + (Class348_Sub42_Sub10.anInt9577)), -256, i_1_ + 90, i, -16777216, -111);
-            Class362.aFontRenderer_4456.method2576(("Occluded: Ground:" + Class348_Sub23_Sub2.anInt9039 + " Walls: " + Class42.anInt562 + " CPs: " + Class348_Sub40_Sub4.anInt9112 + " Pixels: " + Class225.anInt2946), -256, i_1_ + 105, i, -16777216, -115);
+            Class362.aFontRenderer_4456.method2576(("Occluded: Ground:" + Class348_Sub23_Sub2.anInt9039 + " Walls: " + Class42.anInt562 + " CPs: " + TextureOpVerticalGradient.anInt9112 + " Pixels: " + Class225.anInt2946), -256, i_1_ + 105, i, -16777216, -115);
             Class362.aFontRenderer_4456.method2576(("Occlude Calc Took: " + (Class286_Sub6.aLong6276 / 1000L) + "us"), -256, i_1_ + 120, i, -16777216, -123);
             if (Class348_Sub18.anInt6818 == 2 && Class14.anIntArray5091 != null) {
                 for (int i_5_ = 0; i_5_ < Class14.anIntArray5091.length; i_5_++) {

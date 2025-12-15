@@ -174,9 +174,9 @@ final class Class51 {
                 if (bool_14_) model.H(anInt893, anInt954, anInt890);
                 model.s(i_4_);
             } else model = model.method614((byte) 0, i_4_, true);
-            Class348_Sub42.aClass2_7058.aModel_119 = model;
-            Class348_Sub42.aClass2_7058.aR118 = var_r;
-            return Class348_Sub42.aClass2_7058;
+            LinkedNode.aClass2_7058.aModel_119 = model;
+            LinkedNode.aClass2_7058.aR118 = var_r;
+            return LinkedNode.aClass2_7058;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("iv.B(" + (var_toolkit != null ? "{...}" : "null") + ',' + (var_ground != null ? "{...}" : "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + bool + ',' + (var_ground_6_ != null ? "{...}" : "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'));
         }

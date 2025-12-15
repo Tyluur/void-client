@@ -85,7 +85,7 @@ final class Class348_Sub43 extends Node {
                     }
                 }
                 if (!bool) {
-                    for (Class348_Sub42_Sub12 class348_sub42_sub12 = (Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1995(4); class348_sub42_sub12 != null; class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class348_Sub40_Sub4.aClass262_9111.method1990((byte) 105))) {
+                    for (Class348_Sub42_Sub12 class348_sub42_sub12 = (Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1995(4); class348_sub42_sub12 != null; class348_sub42_sub12 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1990((byte) 105))) {
                         if ((class348_sub42_sub12.anInt9608) == 19) {
                             class348_sub42_sub12.aString9595 = "<col=ffffff>" + string;
                             break;

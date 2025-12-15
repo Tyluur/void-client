@@ -69,7 +69,7 @@ final class Class76 {
     }
 
     static final void method773(boolean bool) {
-        Class348_Sub40_Sub10.aBoolean9181 = bool;
+        TextureOpRange.aBoolean9181 = bool;
         anInt1284++;
     }
 

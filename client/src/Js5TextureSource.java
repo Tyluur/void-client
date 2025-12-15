@@ -22,10 +22,11 @@ final class Js5TextureSource implements TextureSource {
     private final int anInt4625;
     static float aFloat4626;
 
-    public final int[] method6(int i, int i_0_, float f, int i_1_, boolean bool, int i_2_) {
+    // method6
+    public final int[] pixels(int i, int height, float brightness, int i_1_, boolean bool, int width) {
         if (i != -21540) getMetrics(-46, 6);
         anInt4617++;
-        return method1881(i_1_, false).method3183(this, i_2_, i_0_, (aTextureMetricsArray4611[i_1_].aBoolean207), f, aIndex_4624, (byte) 11);
+        return method1881(i_1_, false).pixelsAlpha(this, width, height, (aTextureMetricsArray4611[i_1_].aBoolean207), brightness, aIndex_4624, (byte) 11);
     }
 
     public static void method1880(int i) {
@@ -33,16 +34,16 @@ final class Js5TextureSource implements TextureSource {
         anIntArray4623 = null;
     }
 
-    private final Class348_Sub42_Sub5 method1881(int i, boolean bool) {
+    private final Texture method1881(int i, boolean bool) {
         anInt4620++;
-        Class348_Sub42 class348_sub42 = aClass308_4622.method2302(i, (byte) -34);
-        if (class348_sub42 != null) return (Class348_Sub42_Sub5) class348_sub42;
+        LinkedNode linkedNode = aClass308_4622.method2302(i, (byte) -34);
+        if (linkedNode != null) return (Texture) linkedNode;
         byte[] is = aIndex_4619.method415((byte) 73, i);
         if (is == null) return null;
         if (bool != false) method1(-58, 1.9039171F, false, -106, -22, -18);
-        Class348_Sub42_Sub5 class348_sub42_sub5 = new Class348_Sub42_Sub5(new Packet(is));
-        aClass308_4622.method2305(i, class348_sub42_sub5, -1);
-        return class348_sub42_sub5;
+        Texture texture = new Texture(new Packet(is));
+        aClass308_4622.method2305(i, texture, -1);
+        return texture;
     }
 
     public final TextureMetrics getMetrics(int i, int i_3_) {
@@ -51,23 +52,23 @@ final class Js5TextureSource implements TextureSource {
         return aTextureMetricsArray4611[i];
     }
 
-    public final int[] method5(boolean bool, int i, float f, int i_4_, int i_5_, int i_6_) {
+    public final int[] rgbPixels(boolean bool, int i, float f, int i_4_, int i_5_, int i_6_) {
         int i_7_ = 41 / ((i_6_ - -69) / 48);
         anInt4614++;
-        return method1881(i, false).method3185(i_4_, this, 0, aTextureMetricsArray4611[i].aBoolean207, f, bool, aIndex_4624, i_5_);
+        return method1881(i, false).pixelsOpaque(i_4_, this, 0, aTextureMetricsArray4611[i].aBoolean207, f, bool, aIndex_4624, i_5_);
     }
 
-    public final boolean method4(int i, int i_8_) {
+    public final boolean textureReady(int i, int i_8_) {
         anInt4616++;
-        Class348_Sub42_Sub5 class348_sub42_sub5 = method1881(i_8_, false);
-        if (i != -7953) method4(56, -109);
-        return class348_sub42_sub5 != null && class348_sub42_sub5.method3184(this, aIndex_4624, -85);
+        Texture texture = method1881(i_8_, false);
+        if (i != -7953) textureReady(56, -109);
+        return texture != null && texture.available(this, aIndex_4624, -85);
     }
 
     public final float[] method1(int i, float f, boolean bool, int i_9_, int i_10_, int i_11_) {
         if (i_9_ != -30824) return null;
         anInt4612++;
-        return method1881(i_11_, false).method3186(i, this, (aTextureMetricsArray4611[i_11_].aBoolean207), i_10_, aIndex_4624, -20);
+        return method1881(i_11_, false).pixelsBloom(i, this, (aTextureMetricsArray4611[i_11_].aBoolean207), i_10_, aIndex_4624, -20);
     }
 
     public final int method2(boolean bool) {

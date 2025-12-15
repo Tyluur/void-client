@@ -51,7 +51,7 @@ final class Option_Sub28 extends Option {
             Class348_Sub36 class348_sub36 = new Class348_Sub36();
             class348_sub36.aClass46_6989 = class46;
             class348_sub36.anObjectArray6987 = class46.anObjectArray727;
-            Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+            Class348_Sub1_Sub2.aDeque_8810.method1999(class348_sub36, -20180);
         }
     }
 
@@ -59,7 +59,7 @@ final class Option_Sub28 extends Option {
         Class348_Sub42_Sub4.anInt9515 = i_13_;
         Class275.anInt3550 = i_16_;
         if (bool_14_ == false) {
-            Class348_Sub40_Sub31.anInt9406 = i;
+            TextureOpTile.anInt9406 = i;
             anInt6136++;
             Class348_Sub35.anInt6981 = i_12_;
             Class258_Sub2.anInt8537 = i_15_;
@@ -68,7 +68,7 @@ final class Option_Sub28 extends Option {
                 Class286_Sub4.anInt6246 = 256 + Class348_Sub35.anInt6981 * 512;
                 Class305.anInt3855 = (Class275.method2064(Class286_Sub4.anInt6246, QuickChatPhraseTypeList.anInt4372, 11219, Class59_Sub2_Sub2.anInt8685) + -Class348_Sub42_Sub4.anInt9515);
             }
-            Class348_Sub40_Sub21.anInt9282 = 2;
+            TextureOp37.anInt9282 = 2;
             Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
         }
     }

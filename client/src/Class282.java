@@ -11,9 +11,9 @@ final class Class282 {
 
     static final void method2109(int i) {
         anInt3653++;
-        Class348_Sub42_Sub18 class348_sub42_sub18 = ((Class348_Sub42_Sub18) Class348_Sub40_Sub17.aClass262_9240.method1995(4));
+        Class348_Sub42_Sub18 class348_sub42_sub18 = ((Class348_Sub42_Sub18) TextureOpSprite.aDeque_9240.method1995(4));
         if (i != 512) method2110(-125, 79, 70);
-        for (/**/; class348_sub42_sub18 != null; class348_sub42_sub18 = (Class348_Sub42_Sub18) Class348_Sub40_Sub17.aClass262_9240.method1990((byte) 56)) {
+        for (/**/; class348_sub42_sub18 != null; class348_sub42_sub18 = (Class348_Sub42_Sub18) TextureOpSprite.aDeque_9240.method1990((byte) 56)) {
             Class318_Sub1_Sub3_Sub5 class318_sub1_sub3_sub5 = (class348_sub42_sub18.aClass318_Sub1_Sub3_Sub5_9682);
             if (Class367_Sub11.anInt7396 > class318_sub1_sub3_sub5.anInt10392) {
                 class348_sub42_sub18.method2715((byte) 101);
@@ -24,7 +24,7 @@ final class Class282 {
                     Class348_Sub22 class348_sub22 = ((Class348_Sub22) (aClass356_3654.method3480(-1 + class318_sub1_sub3_sub5.anInt10412, -6008)));
                     if (class348_sub22 != null) {
                         Npc npc = (class348_sub22.aNpc_6859);
-                        if ((npc.x) >= 0 && (Class367_Sub4.mapLength * 512 > npc.x) && (npc.y) >= 0 && (512 * Class348_Sub40_Sub3.mapWidth > npc.y))
+                        if ((npc.x) >= 0 && (Class367_Sub4.mapLength * 512 > npc.x) && (npc.y) >= 0 && (512 * TextureOpBinary.mapWidth > npc.y))
                             class318_sub1_sub3_sub5.method2471((byte) -103, ((Class275.method2064(npc.x, (class318_sub1_sub3_sub5.plane), 11219, npc.y)) + -class318_sub1_sub3_sub5.anInt10366), npc.y, Class367_Sub11.anInt7396, npc.x);
                     }
                 }
@@ -33,7 +33,7 @@ final class Class282 {
                     Player player;
                     if (i_0_ == Class348_Sub42_Sub11.index) player = Class132.aPlayer_1907;
                     else player = (Class294.aPlayerArray5058[i_0_]);
-                    if (player != null && (player.x) >= 0 && ((player.x) < 512 * Class367_Sub4.mapLength) && (player.y) >= 0 && (player.y) < 512 * Class348_Sub40_Sub3.mapWidth)
+                    if (player != null && (player.x) >= 0 && ((player.x) < 512 * Class367_Sub4.mapLength) && (player.y) >= 0 && (player.y) < 512 * TextureOpBinary.mapWidth)
                         class318_sub1_sub3_sub5.method2471((byte) -103, ((Class275.method2064((player.x), (class318_sub1_sub3_sub5.plane), 11219, (player.y))) - class318_sub1_sub3_sub5.anInt10366), (player.y), Class367_Sub11.anInt7396, (player.x));
                 }
                 class318_sub1_sub3_sub5.method2475((byte) 75, ClientOptions.anInt7267);

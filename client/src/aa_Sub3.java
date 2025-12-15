@@ -9,7 +9,7 @@ final class aa_Sub3 extends aa {
     static int anInt5203;
     static Class351 aClass351_5204 = new Class351(15, 8);
     static int anInt5205;
-    static Class348_Sub6 aClass348_Sub6_5206 = new Class348_Sub6(0, 0);
+    static MonochromeImageCacheSlot USED = new MonochromeImageCacheSlot(0, 0);
     static Index MODELS;
     /*synthetic*/ static Class aClass5208;
 
@@ -23,7 +23,7 @@ final class aa_Sub3 extends aa {
         if (i != 19612) method167(-70);
         aClass351_5200 = null;
         aClass351_5204 = null;
-        aClass348_Sub6_5206 = null;
+        USED = null;
         MODELS = null;
     }
 

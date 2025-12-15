@@ -6,7 +6,7 @@ import jaggl.OpenGL;
 
 import java.math.BigInteger;
 
-final class Class348_Sub42_Sub15 extends Class348_Sub42 {
+final class Class348_Sub42_Sub15 extends LinkedNode {
     static int anInt9646;
     static int anInt9647;
     static int anInt9648;

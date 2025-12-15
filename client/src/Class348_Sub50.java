@@ -14,9 +14,9 @@ final class Class348_Sub50 extends Node {
     }
 
     static final void method3419(int i) {
-        Class348_Sub24.anIntArray6878 = null;
+        ColourImageCacheSlot.anIntArray6878 = null;
         Class318_Sub9_Sub1.anIntArray8785 = null;
-        Class348_Sub40_Sub6.anIntArray9135 = null;
+        TextureOpPolarDistortion.anIntArray9135 = null;
         anInt7210++;
         if (i != 13022) method3418(-79);
         Class348_Sub42_Sub3.aBoolean9498 = false;

@@ -40,7 +40,7 @@ final class Class367_Sub10 extends Class367 {
             this.aNativeToolkit_4479.method3885(0, true, Class285_Sub2.aClass70_8503);
             Class101_Sub2 class101_sub2 = this.aNativeToolkit_4479.method3820(false);
             class101_sub2.method926(i + -30891, this.aNativeToolkit_4479.method3854((byte) -44));
-            this.aNativeToolkit_4479.method3853(i ^ ~0x3b47, Class348_Sub40_Sub38.aClass251_9477);
+            this.aNativeToolkit_4479.method3853(i ^ ~0x3b47, TextureOpClamp.aClass251_9477);
             this.aNativeToolkit_4479.method3897(0, -4382);
             aBoolean7385 = true;
         } else this.aNativeToolkit_4479.method3885(0, true, Class285_Sub2.aClass70_8503);
@@ -58,7 +58,7 @@ final class Class367_Sub10 extends Class367 {
             this.aNativeToolkit_4479.method3897(1, -4382);
             this.aNativeToolkit_4479.method3871(IDKTypeList.aClass113_2047, i ^ 0x57);
             this.aNativeToolkit_4479.method3874(JavaThreadResource.aClass229_2207, 103, (JavaThreadResource.aClass229_2207));
-            this.aNativeToolkit_4479.method3849((byte) 47, 2, Class348_Sub40_Sub39.aClass70_9485);
+            this.aNativeToolkit_4479.method3849((byte) 47, 2, TextureOpRasterizer.aClass70_9485);
             this.aNativeToolkit_4479.method3885(0, true, ModelParticleEffector.aClass70_4247);
             this.aNativeToolkit_4479.method3879(-8629);
             this.aNativeToolkit_4479.method3850((byte) -111, null);

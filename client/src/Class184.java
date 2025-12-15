@@ -55,7 +55,7 @@ final class Class184 {
             if (i >= -38) method1384(-77, 22, 77);
             Interface10 interface10 = null;
             if (class348_sub27.anInt6904 == 0) interface10 = ((Interface10) r_Sub2.method3297((class348_sub27.anInt6899), (class348_sub27.anInt6905), (class348_sub27.anInt6896)));
-            if (class348_sub27.anInt6904 == 1) interface10 = ((Interface10) (Class348_Sub40_Sub32.method3135(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)));
+            if (class348_sub27.anInt6904 == 1) interface10 = ((Interface10) (TextureOpInvert.method3135(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)));
             if (class348_sub27.anInt6904 == 2) interface10 = ((Interface10) (Class177.method1353(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896, (aClass2478 != null ? aClass2478 : (aClass2478 = Interface10.class)))));
             if (class348_sub27.anInt6904 == 3) interface10 = ((Interface10) (Class348_Sub16_Sub3.method2878(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)));
             if (interface10 == null) {

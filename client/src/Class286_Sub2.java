@@ -64,7 +64,7 @@ final class Class286_Sub2 extends Class286 {
         anInt6213++;
         ClientScript.method3277((byte) -48);
         Class5_Sub1.aBoolean8335 = false;
-        Class13.method226(Class135_Sub1.anInt4717, Class63.anInt1117, Class348_Sub42_Sub5.anInt9532, 0, Class237_Sub1.anInt5819);
+        Class13.method226(Class135_Sub1.anInt4717, Class63.anInt1117, Texture.anInt9532, 0, Class237_Sub1.anInt5819);
     }
 
     final void method2136(int i, int i_7_, byte i_8_) {

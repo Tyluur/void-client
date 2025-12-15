@@ -30,7 +30,7 @@ final class s_Sub2 extends Ground {
     int[][][] anIntArrayArrayArray8253;
     static int anInt8254;
     static int anInt8255;
-    private final Class262 aClass262_8256 = new Class262();
+    private final Deque aDeque_8256 = new Deque();
     private int anInt8257;
     private int[][][] anIntArrayArrayArray8258;
     static int anInt8259;
@@ -139,7 +139,7 @@ final class s_Sub2 extends Ground {
             jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer = this.aOpenGLToolkit_8272.aNativeHeap7730.a(anInt8284 * i, false);
             Stream stream = new Stream(nativeheapbuffer);
             Class348_Sub20[] class348_sub20s = new Class348_Sub20[anInt8284];
-            int i_34_ = Class348_Sub40_Sub1.method3051(anInt8284 / 4, 4096);
+            int i_34_ = TextureOpBrightness.method3051(anInt8284 / 4, 4096);
             if (i_34_ < 1) i_34_ = 1;
             Class356 class356 = new Class356(i_34_);
             Class348_Sub20[] class348_sub20s_35_ = new Class348_Sub20[anInt8280];
@@ -663,7 +663,7 @@ final class s_Sub2 extends Ground {
     final void method3981(Class348_Sub1 class348_sub1, int[] is) {
         try {
             anInt8271++;
-            aClass262_8256.method1999(new Class348_Sub32((this.aOpenGLToolkit_8272), this, class348_sub1, is), -20180);
+            aDeque_8256.method1999(new Class348_Sub32((this.aOpenGLToolkit_8272), this, class348_sub1, is), -20180);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ed.L(" + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
         }
@@ -673,7 +673,7 @@ final class s_Sub2 extends Ground {
         try {
             anInt8261++;
             if (is_177_ != null && anIntArrayArrayArray8258 == null) anIntArrayArrayArray8258 = new int[this.anInt4587][this.anInt4590][];
-            TextureSource var_d = this.aOpenGLToolkit_8272.aD4579;
+            TextureSource var_d = this.aOpenGLToolkit_8272.textureSource;
             if (is_179_ != null && anIntArrayArrayArray8252 == null) anIntArrayArrayArray8252 = new int[this.anInt4587][this.anInt4590][];
             this.anIntArrayArrayArray8268[i][i_176_] = is;
             this.anIntArrayArrayArray8234[i][i_176_] = is_178_;
@@ -746,7 +746,7 @@ final class s_Sub2 extends Ground {
             this.aOpenGLToolkit_8272.method3728((0x7 & (this.anInt8235)) != 0, 120);
             for (int i_208_ = 0; aClass348_Sub20Array8282.length > i_208_; i_208_++)
                 aClass348_Sub20Array8282[i_208_].method2948(5123, i_204_, is);
-            if (!aClass262_8256.method2002((byte) 18)) {
+            if (!aDeque_8256.method2002((byte) 18)) {
                 int i_209_ = this.aOpenGLToolkit_8272.anInt7856;
                 int i_210_ = this.aOpenGLToolkit_8272.anInt7782;
                 this.aOpenGLToolkit_8272.L(0, i_210_, (this.aOpenGLToolkit_8272.anInt7813));
@@ -758,7 +758,7 @@ final class s_Sub2 extends Ground {
                 this.aOpenGLToolkit_8272.method3729(8448, (byte) 98, 7681);
                 this.aOpenGLToolkit_8272.method3762(34166, 770, (byte) -87, 0);
                 this.aOpenGLToolkit_8272.method3775(false, 0, 770, 34167);
-                for (Node node = aClass262_8256.method1995(4); node != null; node = aClass262_8256.method1990((byte) 92)) {
+                for (Node node = aDeque_8256.method1995(4); node != null; node = aDeque_8256.method1990((byte) 92)) {
                     Class348_Sub32 class348_sub32 = (Class348_Sub32) node;
                     class348_sub32.method3023(bools, 255, i_194_, i_196_, i_192_);
                 }

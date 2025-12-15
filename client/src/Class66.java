@@ -65,7 +65,7 @@ final class Class66 {
             int i_3_ = i >>> 16;
             Class46[] class46s = Class369_Sub2.aClass46ArrayArray8584[i_3_];
             if (class46s == null) {
-                Class46[] class46s_4_ = Class348_Sub40_Sub33.aClass46ArrayArray9427[i_3_];
+                Class46[] class46s_4_ = TextureOpKaleidoscope.aClass46ArrayArray9427[i_3_];
                 int i_5_ = class46s_4_.length;
                 class46s = Class369_Sub2.aClass46ArrayArray8584[i_3_] = new Class46[i_5_];
                 Class214.method1575(class46s_4_, 0, class46s, 0, class46s_4_.length);
@@ -83,7 +83,7 @@ final class Class66 {
 
     static final void method703(int i) {
         if (i != -1 && Class320.method2547(i, (byte) 84)) {
-            Class46[] class46s = Class348_Sub40_Sub33.aClass46ArrayArray9427[i];
+            Class46[] class46s = TextureOpKaleidoscope.aClass46ArrayArray9427[i];
             for (int i_7_ = 0; i_7_ < class46s.length; i_7_++) {
                 Class46 class46 = class46s[i_7_];
                 if (class46.anObjectArray815 != null) {
@@ -175,9 +175,9 @@ final class Class66 {
                 anInt1170 -= 2;
                 String string = aStringArray1152[anInt1170];
                 String string_15_ = aStringArray1152[anInt1170 + 1];
-                if (Class192.rights != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || Class133.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
+                if (Class192.rights != 0 || ((!TextureOpBinary.aBoolean9103 || Class133.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
                     anInt1159++;
-                    Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub40_Sub22.aClass351_9304), (Class348_Sub23_Sub2.aClass77_9029), -116);
+                    Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((TextureOpBricks.aClass351_9304), (Class348_Sub23_Sub2.aClass77_9029), -116);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 0);
                     int i_16_ = (class348_sub47.aClass348_Sub49_Sub2_7116.pos);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
@@ -871,7 +871,7 @@ final class Class66 {
                 String string_106_ = aStringArray1152[anInt1170 + 1];
                 int i_107_ = anIntArray1149[--anInt1173];
                 anInt1171++;
-                Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub40_Sub17.aClass351_9234), (Class348_Sub23_Sub2.aClass77_9029), -101);
+                Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((TextureOpSprite.aClass351_9234), (Class348_Sub23_Sub2.aClass77_9029), -101);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (Option_Sub6.method1745(string, -65) + Option_Sub6.method1745(string_106_, -65) + 1));
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                 class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string_106_);
@@ -974,17 +974,17 @@ final class Class66 {
                 Class264.anInt3374 = anIntArray1149[anInt1173 + 2];
                 Class348_Sub42_Sub4.anInt9511 = anIntArray1149[anInt1173 + 3];
                 Class231.anInt2996 = anIntArray1149[anInt1173 + 4];
-                Class348_Sub40_Sub16.anInt9231 = anIntArray1149[anInt1173 + 5];
+                TextureOpCombine.anInt9231 = anIntArray1149[anInt1173 + 5];
                 Class318_Sub1_Sub3_Sub3.anInt10257 = anIntArray1149[anInt1173 + 6];
                 Class313.anInt3937 = anIntArray1149[anInt1173 + 7];
                 NPCDefinition.anInt1387 = anIntArray1149[anInt1173 + 8];
                 Class348_Sub42_Sub11.anInt9586 = anIntArray1149[anInt1173 + 9];
                 Class5_Sub2.anInt8363 = anIntArray1149[anInt1173 + 10];
-                Class21.SPRITES.method421(false, Class231.anInt2996);
-                Class21.SPRITES.method421(false, Class348_Sub40_Sub16.anInt9231);
-                Class21.SPRITES.method421(false, Class318_Sub1_Sub3_Sub3.anInt10257);
-                Class21.SPRITES.method421(false, Class313.anInt3937);
-                Class21.SPRITES.method421(false, NPCDefinition.anInt1387);
+                Class21.SPRITES.fileReady(false, Class231.anInt2996);
+                Class21.SPRITES.fileReady(false, TextureOpCombine.anInt9231);
+                Class21.SPRITES.fileReady(false, Class318_Sub1_Sub3_Sub3.anInt10257);
+                Class21.SPRITES.fileReady(false, Class313.anInt3937);
+                Class21.SPRITES.fileReady(false, NPCDefinition.anInt1387);
                 Class348_Sub42_Sub15.aSprite_9659 = Class110.aSprite_1706 = Class174.aSprite_2309 = null;
                 OutputStream_Sub2.aSprite_106 = Class121.aSprite_1800 = Class348_Sub5.aSprite_6627 = null;
                 Class348_Sub42_Sub15.aSprite_9658 = Class309.aSprite_4808 = null;
@@ -1036,8 +1036,8 @@ final class Class66 {
             }
             if (i == 5432) {
                 String string = "";
-                if (Class348_Sub40_Sub27.aClipboard9357 != null) {
-                    Transferable transferable = Class348_Sub40_Sub27.aClipboard9357.getContents(null);
+                if (TextureOpInterpolate.aClipboard9357 != null) {
+                    Transferable transferable = TextureOpInterpolate.aClipboard9357.getContents(null);
                     if (transferable != null) {
                         try {
                             string = (String) (transferable.getTransferData(DataFlavor.stringFlavor));
@@ -1090,7 +1090,7 @@ final class Class66 {
                 int i_135_ = anIntArray1149[anInt1173 + 5];
                 if (i_135_ + 1 >= (Class348_Sub43.anIntArrayArrayArray7079[Class292.anInt4803]).length >> 1) throw new RuntimeException();
                 Class264.anInt3373 = i_135_;
-                Class348_Sub40_Sub21.anInt9282 = 3;
+                TextureOp37.anInt9282 = 3;
                 Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
                 return;
             }
@@ -1136,10 +1136,10 @@ final class Class66 {
                 else if (i_137_ >= Class367_Sub4.mapLength) i_137_ = Class367_Sub4.mapLength;
                 i_138_ -= Class90.regionTileY;
                 if (i_138_ < 0) i_138_ = 0;
-                else if (i_138_ >= Class348_Sub40_Sub3.mapWidth) i_138_ = Class348_Sub40_Sub3.mapWidth;
-                Class348_Sub6.anInt6633 = (i_137_ << 9) + 256;
+                else if (i_138_ >= TextureOpBinary.mapWidth) i_138_ = TextureOpBinary.mapWidth;
+                MonochromeImageCacheSlot.anInt6633 = (i_137_ << 9) + 256;
                 Class348_Sub7.anInt6652 = (i_138_ << 9) + 256;
-                Class348_Sub40_Sub21.anInt9282 = 4;
+                TextureOp37.anInt9282 = 4;
                 Class9.anInt167 = Class318_Sub1_Sub5_Sub2.anInt10163 = -1;
                 return;
             }
@@ -1165,7 +1165,7 @@ final class Class66 {
                     else if (i_140_ >= Class367_Sub4.mapLength) i_140_ = Class367_Sub4.mapLength;
                     i_141_ -= Class90.regionTileY;
                     if (i_141_ < 0) i_141_ = 0;
-                    else if (i_141_ >= Class348_Sub40_Sub3.mapWidth) i_141_ = Class348_Sub40_Sub3.mapWidth;
+                    else if (i_141_ >= TextureOpBinary.mapWidth) i_141_ = TextureOpBinary.mapWidth;
                     Class9.anInt167 = (i_140_ << 9) + 256;
                     Class318_Sub1_Sub5_Sub2.anInt10163 = (i_141_ << 9) + 256;
                 } else {
@@ -1176,7 +1176,7 @@ final class Class66 {
                 return;
             }
             if (i == 5547) {
-                anIntArray1149[anInt1173++] = Class348_Sub40_Sub21.anInt9282 == 1 ? 1 : 0;
+                anIntArray1149[anInt1173++] = TextureOp37.anInt9282 == 1 ? 1 : 0;
                 return;
             }
         } else if (i < 5700) {
@@ -1201,7 +1201,7 @@ final class Class66 {
             if (i == 5602) {
                 if (Class225.anInt2955 == 0) {
                     Class107.anInt1645 = -2;
-                    Class348_Sub6.anInt6634 = -2;
+                    MonochromeImageCacheSlot.anInt6634 = -2;
                 }
                 return;
             }
@@ -1227,7 +1227,7 @@ final class Class66 {
                 return;
             }
             if (i == 5607) {
-                anIntArray1149[anInt1173++] = Class348_Sub6.anInt6634;
+                anIntArray1149[anInt1173++] = MonochromeImageCacheSlot.anInt6634;
                 return;
             }
             if (i == 5608) {
@@ -1245,9 +1245,9 @@ final class Class66 {
             if (i == 5612) {
                 int i_144_ = anIntArray1149[--anInt1173];
                 if (Class240.mainLogicStep == 7 && (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
-                    if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                        Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                        Class348_Sub40_Sub8.aClass238_9165 = null;
+                    if (TextureOpPerlinNoise.aClass238_9165 != null) {
+                        TextureOpPerlinNoise.aClass238_9165.method1700((byte) 36);
+                        TextureOpPerlinNoise.aClass238_9165 = null;
                     }
                     RuntimeException_Sub1.anInt4596 = i_144_;
                     Packet.setStep(2, 9);
@@ -1256,7 +1256,7 @@ final class Class66 {
                 return;
             }
             if (i == 5613) {
-                anIntArray1149[anInt1173++] = Class348_Sub6.anInt6634;
+                anIntArray1149[anInt1173++] = MonochromeImageCacheSlot.anInt6634;
                 return;
             }
             if (i == 5615) {
@@ -1264,9 +1264,9 @@ final class Class66 {
                 String string = aStringArray1152[anInt1170];
                 String string_145_ = aStringArray1152[anInt1170 + 1];
                 if (string.length() <= 320 && Class240.mainLogicStep == 3 && (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0)) {
-                    if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-                        Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-                        Class348_Sub40_Sub8.aClass238_9165 = null;
+                    if (TextureOpPerlinNoise.aClass238_9165 != null) {
+                        TextureOpPerlinNoise.aClass238_9165.method1700((byte) 36);
+                        TextureOpPerlinNoise.aClass238_9165 = null;
                     }
                     Class64_Sub3.aString5600 = string;
                     Class186.aString2496 = string_145_;
@@ -1276,7 +1276,7 @@ final class Class66 {
                 return;
             }
             if (i == 5616) {
-                Class348_Sub40_Sub34.method3141(false, (byte) 11);
+                TextureOpColourEdgeDetector.method3141(false, (byte) 11);
                 return;
             }
             if (i == 5617) {
@@ -1336,7 +1336,7 @@ final class Class66 {
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub27_7255), bool_147_ ? 1 : 0);
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub27_7261), bool_147_ ? 1 : 0);
                 Class348_Sub20.method2953((byte) -122);
-                Class348_Sub40_Sub9.method3072((byte) 32);
+                TextureOpMonorchromeEdgeDetector.method3072((byte) 32);
                 Class14_Sub2.saveOptions(37);
                 r.aBoolean9719 = false;
                 return;
@@ -1345,7 +1345,7 @@ final class Class66 {
                 boolean bool_148_ = anIntArray1149[--anInt1173] == 1;
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub14_7250), bool_148_ ? 2 : 1);
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub14_7264), bool_148_ ? 2 : 1);
-                Class348_Sub40_Sub9.method3072((byte) -106);
+                TextureOpMonorchromeEdgeDetector.method3072((byte) -106);
                 Class14_Sub2.saveOptions(37);
                 r.aBoolean9719 = false;
                 return;
@@ -1384,7 +1384,7 @@ final class Class66 {
             }
             if (i == 6012) {
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub28_7230), anIntArray1149[--anInt1173] == 1 ? 1 : 0);
-                Class348_Sub40.updateFeatureMask(-1);
+                TextureOp.updateFeatureMask(-1);
                 Class76.method773(true);
                 Class14_Sub2.saveOptions(37);
                 r.aBoolean9719 = false;
@@ -1430,7 +1430,7 @@ final class Class66 {
                     if (Class334.method2653(true, Class240.mainLogicStep)) {
                         if (i_150_ == 0 && Class267.anInt3428 != -1) {
                             Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 94, (Class59_Sub2_Sub1.MUSIC), i_149_);
-                            Class348_Sub40_Sub17_Sub1.method3093(87);
+                            TextureOpTiledSprite.method3093(87);
                             Class74.aBoolean1236 = false;
                         } else if (i_149_ == 0) {
                             Class104.method960(1);
@@ -1452,7 +1452,7 @@ final class Class66 {
             if (i == 6021) {
                 int i_151_ = Class316.clientOptions.aClass239_Sub14_7250.method1778(-32350);
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub14_7264), anIntArray1149[--anInt1173] == 1 ? 0 : i_151_);
-                Class348_Sub40_Sub9.method3072((byte) -118);
+                TextureOpMonorchromeEdgeDetector.method3072((byte) -118);
                 return;
             }
             if (i == 6023) {
@@ -1476,7 +1476,7 @@ final class Class66 {
             if (i == 6027) {
                 int i_153_ = anIntArray1149[--anInt1173];
                 if (i_153_ < 0 || i_153_ > 1) i_153_ = 0;
-                Class348_Sub40_Sub33.method3137(i_153_ == 1, (byte) -24);
+                TextureOpKaleidoscope.method3137(i_153_ == 1, (byte) -24);
                 return;
             }
             if (i == 6028) {
@@ -1519,7 +1519,7 @@ final class Class66 {
             if (i == 6034) {
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub24_7235), anIntArray1149[--anInt1173] == 1 ? 1 : 0);
                 Class14_Sub2.saveOptions(37);
-                Class348_Sub40.updateFeatureMask(-1);
+                TextureOp.updateFeatureMask(-1);
                 r.aBoolean9719 = false;
                 return;
             }
@@ -1527,7 +1527,7 @@ final class Class66 {
                 int i_157_ = Class316.clientOptions.aClass239_Sub27_7255.method1840(-32350);
                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub27_7261), anIntArray1149[--anInt1173] == 1 ? 1 : i_157_);
                 Class348_Sub20.method2953((byte) -110);
-                Class348_Sub40_Sub9.method3072((byte) 125);
+                TextureOpMonorchromeEdgeDetector.method3072((byte) 125);
                 return;
             }
             if (i == 6036) {
@@ -1549,7 +1549,7 @@ final class Class66 {
                     if (!Class334.method2653(true, Class240.mainLogicStep)) {
                         if (i_159_ == 0) {
                             Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 127, (Class59_Sub2_Sub1.MUSIC), i_158_);
-                            Class348_Sub40_Sub17_Sub1.method3093(118);
+                            TextureOpTiledSprite.method3093(118);
                             Class74.aBoolean1236 = false;
                         } else if (i_158_ == 0) {
                             Class104.method960(1);
@@ -1724,7 +1724,7 @@ final class Class66 {
                 return;
             }
             if (i == 6147) {
-                anIntArray1149[anInt1173++] = (Class348_Sub40_Sub20.aClass348_Sub4_9264.totalMemory < 512 || Class348_Sub23_Sub2.aBoolean9038 || Class139.aBoolean1952) ? 1 : 0;
+                anIntArray1149[anInt1173++] = (TextureOpNoise.aClass348_Sub4_9264.totalMemory < 512 || Class348_Sub23_Sub2.aBoolean9038 || Class139.aBoolean1952) ? 1 : 0;
                 return;
             }
             if (i == 6148) {
@@ -1949,7 +1949,7 @@ final class Class66 {
             }
             if (i == 6509) {
                 if (Class240.mainLogicStep == 7) {
-                    Class348_Sub40_Sub30.aBoolean9403 = anIntArray1149[--anInt1173] == 1;
+                    TextureOpHslAdjust.aBoolean9403 = anIntArray1149[--anInt1173] == 1;
                     return;
                 }
                 return;
@@ -1982,9 +1982,9 @@ final class Class66 {
                 }
                 if (i == 6702) {
                     int i_176_ = anIntArray1149[--anInt1173];
-                    if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_176_] == null) aStringArray1152[anInt1170++] = "";
+                    if (TextureOpKaleidoscope.aClass46ArrayArray9427[i_176_] == null) aStringArray1152[anInt1170++] = "";
                     else {
-                        String string = (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_176_][0].aString721);
+                        String string = (TextureOpKaleidoscope.aClass46ArrayArray9427[i_176_][0].aString721);
                         if (string == null) aStringArray1152[anInt1170++] = "";
                         else {
                             aStringArray1152[anInt1170++] = string.substring(0, string.indexOf(':'));
@@ -1996,9 +1996,9 @@ final class Class66 {
                 }
                 if (i == 6703) {
                     int i_177_ = anIntArray1149[--anInt1173];
-                    if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_177_] == null) anIntArray1149[anInt1173++] = 0;
+                    if (TextureOpKaleidoscope.aClass46ArrayArray9427[i_177_] == null) anIntArray1149[anInt1173++] = 0;
                     else {
-                        anIntArray1149[anInt1173++] = (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_177_]).length;
+                        anIntArray1149[anInt1173++] = (TextureOpKaleidoscope.aClass46ArrayArray9427[i_177_]).length;
                         return;
                     }
                     return;
@@ -2007,9 +2007,9 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_178_ = anIntArray1149[anInt1173];
                     int i_179_ = anIntArray1149[anInt1173 + 1];
-                    if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_178_] == null) aStringArray1152[anInt1170++] = "";
+                    if (TextureOpKaleidoscope.aClass46ArrayArray9427[i_178_] == null) aStringArray1152[anInt1170++] = "";
                     else {
-                        String string = (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_178_][i_179_].aString721);
+                        String string = (TextureOpKaleidoscope.aClass46ArrayArray9427[i_178_][i_179_].aString721);
                         if (string == null) aStringArray1152[anInt1170++] = "";
                         else {
                             aStringArray1152[anInt1170++] = string;
@@ -2023,9 +2023,9 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_180_ = anIntArray1149[anInt1173];
                     int i_181_ = anIntArray1149[anInt1173 + 1];
-                    if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i_180_] == null) anIntArray1149[anInt1173++] = 0;
+                    if (TextureOpKaleidoscope.aClass46ArrayArray9427[i_180_] == null) anIntArray1149[anInt1173++] = 0;
                     else {
-                        anIntArray1149[anInt1173++] = Class348_Sub40_Sub33.aClass46ArrayArray9427[i_180_][i_181_].anInt732;
+                        anIntArray1149[anInt1173++] = TextureOpKaleidoscope.aClass46ArrayArray9427[i_180_][i_181_].anInt732;
                         return;
                     }
                     return;
@@ -2165,7 +2165,7 @@ final class Class66 {
                 }
             } else if (i < 7000) {
                 if (i == 6900) {
-                    anIntArray1149[anInt1173++] = (Class348_Sub40_Sub3.aBoolean9103 && !Class133.aBoolean1915) ? 1 : 0;
+                    anIntArray1149[anInt1173++] = (TextureOpBinary.aBoolean9103 && !Class133.aBoolean1915) ? 1 : 0;
                     return;
                 }
                 if (i == 6901) {
@@ -2177,7 +2177,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 6903) {
-                    anIntArray1149[anInt1173++] = Class322.anInt4026;
+                    anIntArray1149[anInt1173++] = ColourImageCache.anInt4026;
                     return;
                 }
                 if (i == 6904) {
@@ -2202,7 +2202,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 6908) {
-                    anIntArray1149[anInt1173++] = Class348_Sub6.anInt6632;
+                    anIntArray1149[anInt1173++] = MonochromeImageCacheSlot.anInt6632;
                     return;
                 }
                 if (i == 6909) {
@@ -2253,7 +2253,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 7004) {
-                    Class348_Sub40_Sub12.method3076(0, true);
+                    TextureOpColourGradient.method3076(0, true);
                     Class348_Sub20.method2953((byte) -107);
                     Class14_Sub2.saveOptions(37);
                     r.aBoolean9719 = false;
@@ -2304,7 +2304,7 @@ final class Class66 {
                     return;
                 }
                 if (i == 7103) {
-                    anIntArray1149[anInt1173++] = Class348_Sub40_Sub31.method3131((byte) 50, "jagtheora") ? 1 : 0;
+                    anIntArray1149[anInt1173++] = TextureOpTile.method3131((byte) 50, "jagtheora") ? 1 : 0;
                     return;
                 }
             } else if (i < 7300) {
@@ -2455,7 +2455,7 @@ final class Class66 {
     }
 
     private static final void method707(String string, int i) {
-        if (Class192.rights != 0 || ((!Class348_Sub40_Sub3.aBoolean9103 || Class133.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
+        if (Class192.rights != 0 || ((!TextureOpBinary.aBoolean9103 || Class133.aBoolean1915) && !Class50_Sub2.aBoolean5233)) {
             String string_240_ = string.toLowerCase();
             int i_241_ = 0;
             if (string_240_.startsWith(Class274.aClass274_3530.method2063(0, 544))) {
@@ -2685,13 +2685,13 @@ final class Class66 {
                 if ((Class132.aPlayer_1907.aClass154_10536) != null) {
                     for (int i_260_ = 0; i_260_ < MSITypeList.anIntArray1973.length; i_260_++) {
                         if (MSITypeList.anIntArray1973[i_260_] == i_258_) {
-                            Class132.aPlayer_1907.aClass154_10536.method1233(Class348_Sub40_Sub25.idkTypeList, i_259_, -1, i_260_);
+                            Class132.aPlayer_1907.aClass154_10536.method1233(TextureOpMandelbrot.idkTypeList, i_259_, -1, i_260_);
                             return;
                         }
                     }
                     for (int i_261_ = 0; i_261_ < Class91.anIntArray1521.length; i_261_++) {
                         if (Class91.anIntArray1521[i_261_] == i_258_) {
-                            Class132.aPlayer_1907.aClass154_10536.method1233(Class348_Sub40_Sub25.idkTypeList, i_259_, -1, i_261_);
+                            Class132.aPlayer_1907.aClass154_10536.method1233(TextureOpMandelbrot.idkTypeList, i_259_, -1, i_261_);
                             break;
                         }
                     }
@@ -3449,7 +3449,7 @@ final class Class66 {
                         class348_sub36.aClass46_6989 = class46;
                         class348_sub36.anObjectArray6987 = class46.anObjectArray727;
                         class348_sub36.anInt6988 = anInt1177 + 1;
-                        Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                        Class348_Sub1_Sub2.aDeque_8810.method1999(class348_sub36, -20180);
                         return;
                     }
                     return;
@@ -3626,7 +3626,7 @@ final class Class66 {
             } else if (i < 3200) {
                 if (i == 3100) {
                     String string = aStringArray1152[--anInt1170];
-                    Class191.method1429(string, 0);
+                    MonochromeImageCache.method1429(string, 0);
                     return;
                 }
                 if (i == 3101) {
@@ -3660,7 +3660,7 @@ final class Class66 {
                 if (i == 3106) {
                     String string = aStringArray1152[--anInt1170];
                     anInt1153++;
-                    Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub40_Sub5.aClass351_9130), (Class348_Sub23_Sub2.aClass77_9029), -93);
+                    Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((TextureOpVoronoiNoise.aClass351_9130), (Class348_Sub23_Sub2.aClass77_9029), -93);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, string.length() + 1);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeString((byte) -5, string);
                     Class348_Sub42_Sub14.method3243(35, class348_sub47);
@@ -3692,7 +3692,7 @@ final class Class66 {
                 if (i == 3110) {
                     int i_311_ = anIntArray1149[--anInt1173];
                     anInt1167++;
-                    Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub40_Sub12.aClass351_9189), (Class348_Sub23_Sub2.aClass77_9029), -121);
+                    Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((TextureOpColourGradient.aClass351_9189), (Class348_Sub23_Sub2.aClass77_9029), -121);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_311_);
                     Class348_Sub42_Sub14.method3243(122, class348_sub47);
                     return;
@@ -3791,7 +3791,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_317_ = anIntArray1149[anInt1173];
                     int i_318_ = anIntArray1149[anInt1173 + 1];
-                    anIntArray1149[anInt1173++] = Class322.method2552(false, i_317_, i_318_, -24667);
+                    anIntArray1149[anInt1173++] = ColourImageCache.method2552(false, i_317_, i_318_, -24667);
                     return;
                 }
                 if (i == 3302) {
@@ -3858,7 +3858,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_333_ = anIntArray1149[anInt1173];
                     int i_334_ = anIntArray1149[anInt1173 + 1];
-                    anIntArray1149[anInt1173++] = Class322.method2552(true, i_333_, i_334_, -24667);
+                    anIntArray1149[anInt1173++] = ColourImageCache.method2552(true, i_333_, i_334_, -24667);
                     return;
                 }
                 if (i == 3314) {
@@ -4083,7 +4083,7 @@ final class Class66 {
                     else {
                         if (Class125.anInt4930 == 1) anIntArray1149[anInt1173++] = -1;
                         else {
-                            anIntArray1149[anInt1173++] = Class348_Sub40_Sub30.anInt9383;
+                            anIntArray1149[anInt1173++] = TextureOpHslAdjust.anInt9383;
                             return;
                         }
                         return;
@@ -4092,7 +4092,7 @@ final class Class66 {
                 }
                 if (i == 3601) {
                     int i_359_ = anIntArray1149[--anInt1173];
-                    if (Class125.anInt4930 == 2 && i_359_ < Class348_Sub40_Sub30.anInt9383) {
+                    if (Class125.anInt4930 == 2 && i_359_ < TextureOpHslAdjust.anInt9383) {
                         aStringArray1152[anInt1170++] = Class83.aStringArray1441[i_359_];
                         if (Class286_Sub2.aStringArray6205[i_359_] != null) aStringArray1152[anInt1170++] = Class286_Sub2.aStringArray6205[i_359_];
                         else aStringArray1152[anInt1170++] = "";
@@ -4105,7 +4105,7 @@ final class Class66 {
                 }
                 if (i == 3602) {
                     int i_360_ = anIntArray1149[--anInt1173];
-                    if (Class125.anInt4930 == 2 && i_360_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149[anInt1173++] = Toolkit.anIntArray4578[i_360_];
+                    if (Class125.anInt4930 == 2 && i_360_ < TextureOpHslAdjust.anInt9383) anIntArray1149[anInt1173++] = Toolkit.anIntArray4578[i_360_];
                     else {
                         anIntArray1149[anInt1173++] = 0;
                         return;
@@ -4114,7 +4114,7 @@ final class Class66 {
                 }
                 if (i == 3603) {
                     int i_361_ = anIntArray1149[--anInt1173];
-                    if (Class125.anInt4930 == 2 && i_361_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149[anInt1173++] = Class172.anIntArray2280[i_361_];
+                    if (Class125.anInt4930 == 2 && i_361_ < TextureOpHslAdjust.anInt9383) anIntArray1149[anInt1173++] = Class172.anIntArray2280[i_361_];
                     else {
                         anIntArray1149[anInt1173++] = 0;
                         return;
@@ -4129,7 +4129,7 @@ final class Class66 {
                 }
                 if (i == 3605) {
                     String string = aStringArray1152[--anInt1170];
-                    Class348_Sub40_Sub30.method3128(-81, string);
+                    TextureOpHslAdjust.method3128(-81, string);
                     return;
                 }
                 if (i == 3606) {
@@ -4155,7 +4155,7 @@ final class Class66 {
                 }
                 if (i == 3610) {
                     int i_363_ = anIntArray1149[--anInt1173];
-                    if (Class125.anInt4930 == 2 && i_363_ < Class348_Sub40_Sub30.anInt9383) aStringArray1152[anInt1170++] = Class285.aStringArray4744[i_363_];
+                    if (Class125.anInt4930 == 2 && i_363_ < TextureOpHslAdjust.anInt9383) aStringArray1152[anInt1170++] = Class285.aStringArray4744[i_363_];
                     else {
                         aStringArray1152[anInt1170++] = "";
                         return;
@@ -4237,7 +4237,7 @@ final class Class66 {
                     int i_367_ = anIntArray1149[--anInt1173];
                     if (Class125.anInt4930 != 0 && i_367_ < Class348_Sub42_Sub12.anInt9604) {
                         aStringArray1152[anInt1170++] = Class51.aStringArray932[i_367_];
-                        if (Class348_Sub40_Sub21.aStringArray9275[i_367_] != null) aStringArray1152[anInt1170++] = (Class348_Sub40_Sub21.aStringArray9275[i_367_]);
+                        if (TextureOp37.aStringArray9275[i_367_] != null) aStringArray1152[anInt1170++] = (TextureOp37.aStringArray9275[i_367_]);
                         else aStringArray1152[anInt1170++] = "";
                     } else {
                         aStringArray1152[anInt1170++] = "";
@@ -4279,7 +4279,7 @@ final class Class66 {
                 }
                 if (i == 3627) {
                     int i_370_ = anIntArray1149[--anInt1173];
-                    if (Class125.anInt4930 == 2 && i_370_ >= 0 && i_370_ < Class348_Sub40_Sub30.anInt9383) anIntArray1149[anInt1173++] = Class122.aBooleanArray1806[i_370_] ? 1 : 0;
+                    if (Class125.anInt4930 == 2 && i_370_ >= 0 && i_370_ < TextureOpHslAdjust.anInt9383) anIntArray1149[anInt1173++] = Class122.aBooleanArray1806[i_370_] ? 1 : 0;
                     else {
                         anIntArray1149[anInt1173++] = 0;
                         return;
@@ -4870,9 +4870,9 @@ final class Class66 {
                     int i_480_ = anIntArray1149[anInt1173];
                     int i_481_ = anIntArray1149[anInt1173 + 1];
                     Class254 class254 = Class101_Sub3.paramTypeList.method2600(i_481_, 28364);
-                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (Class348_Sub40_Sub12.objectTypeList.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16));
+                    if (class254.method1925(false)) aStringArray1152[anInt1170++] = (TextureOpColourGradient.objectTypeList.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16));
                     else {
-                        anIntArray1149[anInt1173++] = (Class348_Sub40_Sub12.objectTypeList.method2005(0, i_480_).method487(i_481_, class254.anInt3256, 81));
+                        anIntArray1149[anInt1173++] = (TextureOpColourGradient.objectTypeList.method2005(0, i_480_).method487(i_481_, class254.anInt3256, 81));
                         return;
                     }
                     return;
@@ -5148,7 +5148,7 @@ final class Class66 {
             int i_520_ = i >>> 16;
             Class46[] class46s = Class369_Sub2.aClass46ArrayArray8584[i_520_];
             if (class46s == null) {
-                Class46[] class46s_521_ = Class348_Sub40_Sub33.aClass46ArrayArray9427[i_520_];
+                Class46[] class46s_521_ = TextureOpKaleidoscope.aClass46ArrayArray9427[i_520_];
                 int i_522_ = class46s_521_.length;
                 class46s = Class369_Sub2.aClass46ArrayArray8584[i_520_] = new Class46[i_522_];
                 Class214.method1575(class46s_521_, 0, class46s, 0, class46s_521_.length);

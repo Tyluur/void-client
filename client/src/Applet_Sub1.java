@@ -80,7 +80,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final void stop() {
         anInt24++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.safeTime(-73) - -4000L;
+        if (this == TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.safeTime(-73) - -4000L;
     }
 
     public final String getParameter(String string) {
@@ -122,12 +122,12 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     final boolean method83(boolean bool) {
         if (bool != true) getDocumentBase();
         anInt5++;
-        return Class348_Sub40_Sub19.method3098(-30282, "jagmisc");
+        return TextureOpHorizontalGradient.method3098(-30282, "jagmisc");
     }
 
     public final void focusLost(FocusEvent focusevent) {
         anInt9++;
-        Class348_Sub40_Sub16.aBoolean9229 = false;
+        TextureOpCombine.aBoolean9229 = false;
     }
 
     private final void method84(int i) {
@@ -140,7 +140,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
             /* empty */
         }
         synchronized (this) {
-            Class175.aBoolean2329 = Class348_Sub40_Sub16.aBoolean9229;
+            Class175.aBoolean2329 = TextureOpCombine.aBoolean9229;
         }
         method99((byte) 93);
         if (i != -1) aBoolean27 = true;
@@ -191,7 +191,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         Container container;
         if (Class34.aFrame476 == null) {
             if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                if (Class93.anApplet1530 == null) container = TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169;
                 else container = Class93.anApplet1530;
             } else container = Class52.aFrame4904;
         } else container = Class34.aFrame476;
@@ -206,7 +206,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
         Class305.aCanvas3869.addFocusListener(this);
         Class305.aCanvas3869.requestFocus();
-        Class348_Sub40_Sub16.aBoolean9229 = true;
+        TextureOpCombine.aBoolean9229 = true;
         Class175.aBoolean2329 = true;
         JavaOffscreenSurface.aBoolean4726 = true;
         Class203.aBoolean2674 = false;
@@ -219,7 +219,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final synchronized void paint(Graphics graphics) {
         anInt18++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) {
+        if (this == TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169 && !Class26.aBoolean384) {
             JavaOffscreenSurface.aBoolean4726 = true;
             if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.safeTime(-57) > 1000) {
                 Rectangle rectangle = graphics.getClipBounds();
@@ -258,7 +258,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final void focusGained(FocusEvent focusevent) {
         anInt23++;
-        Class348_Sub40_Sub16.aBoolean9229 = true;
+        TextureOpCombine.aBoolean9229 = true;
         JavaOffscreenSurface.aBoolean4726 = true;
     }
 
@@ -357,7 +357,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final void destroy() {
         anInt21++;
-        if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == this && !Class26.aBoolean384) {
+        if (TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169 == this && !Class26.aBoolean384) {
             Class113.aLong1739 = Class62.safeTime(-108);
             Class286_Sub5.method2161((byte) 77, 5000L);
             Class231.aClass297_2993 = null;
@@ -393,7 +393,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
                     }
                     if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true;
                 }
-                Applet applet = Class348_Sub40_Sub9.anApplet_Sub1_9169;
+                Applet applet = TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169;
                 if (Class93.anApplet1530 != null) applet = Class93.anApplet1530;
                 Method method = Class297.aMethod3786;
                 if (method != null) {
@@ -436,14 +436,14 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         int i_9_ = Class286_Sub3.aCalendar6221.get(12);
         int i_10_ = Class286_Sub3.aCalendar6221.get(13);
         String string_11_ = (Integer.toString(i_8_ / 10) + i_8_ % 10 + ":" + i_9_ / 10 + i_9_ % 10 + ":" + i_10_ / 10 + i_10_ % 10);
-        String[] strings = Class348_Sub40_Sub23.method3113('\n', true, string);
+        String[] strings = TextureOpIrregularBricks.method3113('\n', true, string);
         for (int i_12_ = 0; i_12_ < strings.length; i_12_++) {
             for (int i_13_ = Class369_Sub2.anInt8587; i_13_ > 0; i_13_--)
                 Class286_Sub1.aStringArray6200[i_13_] = Class286_Sub1.aStringArray6200[-1 + i_13_];
             Class286_Sub1.aStringArray6200[0] = string_11_ + ": " + strings[i_12_];
             if (Class299_Sub1.aFileOutputStream6323 != null) {
                 try {
-                    Class299_Sub1.aFileOutputStream6323.write(Class348_Sub24.method2992(((Class286_Sub1.aStringArray6200[0]) + "\n"), (byte) -20));
+                    Class299_Sub1.aFileOutputStream6323.write(ColourImageCacheSlot.method2992(((Class286_Sub1.aStringArray6200[0]) + "\n"), (byte) -20));
                 } catch (java.io.IOException ioexception) {
                     /* empty */
                 }
@@ -459,13 +459,13 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     final void method95(int i, int i_15_, int i_16_, int i_17_, int i_18_, String string, int i_19_) {
         anInt25++;
         try {
-            if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == null) {
+            if (TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169 == null) {
                 Class348_Sub48.anInt7129 = 0;
                 Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_;
                 Class272.anInt3473 = Class321.anInt4017 = i;
                 Class335.anInt4167 = 0;
                 Class348_Sub1_Sub3.anInt8818 = i_15_;
-                Class348_Sub40_Sub9.anApplet_Sub1_9169 = this;
+                TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169 = this;
                 Class348_Sub8.anApplet6662 = Class93.anApplet1530;
                 Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i_17_, string, i_18_, Class93.anApplet1530 != null);
                 Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, -10240, 1);
@@ -487,7 +487,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
             if (i_23_ != 23499) return;
             Class272.anInt3473 = Class321.anInt4017 = i_20_;
             Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_;
-            Class348_Sub40_Sub9.anApplet_Sub1_9169 = this;
+            TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169 = this;
             Class335.anInt4167 = 0;
             Class348_Sub48.anInt7129 = 0;
             Class348_Sub1_Sub3.anInt8818 = i_21_;
@@ -516,7 +516,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     final boolean method97(int i) {
         if (i != -1) method88(-104);
         anInt4++;
-        return Class348_Sub40_Sub19.method3098(-30282, "jaclib");
+        return TextureOpHorizontalGradient.method3098(-30282, "jaclib");
     }
 
     public static void method98(int i) {
@@ -527,7 +527,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final void start() {
         anInt36++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = 0L;
+        if (this == TextureOpMonorchromeEdgeDetector.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = 0L;
     }
 
     abstract void method99(byte i);
@@ -535,6 +535,6 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     final boolean method100(int i) {
         anInt10++;
         if (i != 10) return true;
-        return Class348_Sub40_Sub19.method3098(-30282, "jagtheora");
+        return TextureOpHorizontalGradient.method3098(-30282, "jagtheora");
     }
 }

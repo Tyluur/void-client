@@ -34,7 +34,7 @@ final class Class126 implements Interface14 {
 
     public final long method52(byte i) {
         anInt4988++;
-        long[] ls = Class348_Sub40_Sub21.aLongArray9283;
+        long[] ls = TextureOp37.aLongArray9283;
         long l = -1L;
         l = (ls[(int) ((l ^ (long) this.anInt4991) & 0xffL)] ^ l >>> 8);
         l = (l >>> 8 ^ ls[(int) (0xffL & ((long) (this.anInt4992 >> 8) ^ l))]);
@@ -57,8 +57,8 @@ final class Class126 implements Interface14 {
     static final void method1114(int i, int i_2_) {
         anInt4986++;
         if (i < 0 || i > 2) i = 0;
-        Class348_Sub6.anInt6637 = i;
-        ClientOptions.aClass318_Sub10Array7249 = new Class318_Sub10[1 + (Class348_Sub42_Sub9.anIntArray9558[Class348_Sub6.anInt6637])];
+        MonochromeImageCacheSlot.anInt6637 = i;
+        ClientOptions.aClass318_Sub10Array7249 = new Class318_Sub10[1 + (Class348_Sub42_Sub9.anIntArray9558[MonochromeImageCacheSlot.anInt6637])];
         Class258_Sub3.anInt8550 = 0;
         if (i_2_ >= -118) method1114(-43, -71);
         Class376.anInt4559 = 0;

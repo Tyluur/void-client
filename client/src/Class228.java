@@ -141,10 +141,10 @@ final class Class228 {
             }
         } else {
             Class34.anInt481 = -1;
-            Class348_Sub40_Sub30.anInt9399 = -1;
+            TextureOpHslAdjust.anInt9399 = -1;
         }
-        if (Class246.aBoolean3174 && Class289.aClass262_3705 != null) {
-            for (Class348_Sub12 class348_sub12 = (Class348_Sub12) Class289.aClass262_3705.method1995(4); class348_sub12 != null; class348_sub12 = ((Class348_Sub12) Class289.aClass262_3705.method1990((byte) 116))) {
+        if (Class246.aBoolean3174 && Class289.aDeque_3705 != null) {
+            for (Class348_Sub12 class348_sub12 = (Class348_Sub12) Class289.aDeque_3705.method1995(4); class348_sub12 != null; class348_sub12 = ((Class348_Sub12) Class289.aDeque_3705.method1990((byte) 116))) {
                 Class42 class42 = (Class75.aMapElementTypeList_1238.method1225(class348_sub12.aClass348_Sub21_6751.anInt6847, (byte) 125));
                 if (class348_sub12.method2799(i_6_, i_7_, 95)) {
                     if (class42.aStringArray577 != null) {

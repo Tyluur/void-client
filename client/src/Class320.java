@@ -16,12 +16,12 @@ final class Class320 {
             Class163.aBooleanArray2162[i] = true;
             return true;
         }
-        if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i] == null) Class348_Sub40_Sub33.aClass46ArrayArray9427[i] = new Class46[i_1_];
+        if (TextureOpKaleidoscope.aClass46ArrayArray9427[i] == null) TextureOpKaleidoscope.aClass46ArrayArray9427[i] = new Class46[i_1_];
         for (int i_2_ = 0; i_1_ > i_2_; i_2_++) {
-            if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_2_] == null) {
+            if (TextureOpKaleidoscope.aClass46ArrayArray9427[i][i_2_] == null) {
                 byte[] is = Class229.aIndex_2978.method410(i_0_ ^ ~0x717, i, i_2_);
                 if (is != null) {
-                    Class46 class46 = (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_2_] = new Class46());
+                    Class46 class46 = (TextureOpKaleidoscope.aClass46ArrayArray9427[i][i_2_] = new Class46());
                     class46.anInt830 = i_2_ + (i << 16);
                     if (is[0] != -1) throw new IllegalStateException("if1");
                     class46.method433(new Packet(is), true);
