@@ -308,17 +308,17 @@ final class NPCDefinition {
     // method797
     static final void setSize(int height, int width, byte i_30_) {
         anInt1379++;
-        if (TextureOpPolarDistortion.anInt9139 != width) {
+        if (TextureOpPolarDistortion.textureWidth != width) {
             Class318_Sub6.anIntArray6432 = new int[width];
             for (int i_31_ = 0; i_31_ < width; i_31_++)
                 Class318_Sub6.anIntArray6432[i_31_] = (i_31_ << 12) / width;
             Option_Sub22.anInt6076 = width + -1;
-            TextureOpPolarDistortion.anInt9139 = width;
+            TextureOpPolarDistortion.textureWidth = width;
             Class248.anInt3201 = 32 * width;
         }
         if (i_30_ <= 108) aClient1367 = null;
         if (Class286_Sub2.anInt6212 != height) {
-            if (TextureOpPolarDistortion.anInt9139 != height) {
+            if (TextureOpPolarDistortion.textureWidth != height) {
                 Option_Sub18.anIntArray6035 = new int[height];
                 for (int i_32_ = 0; i_32_ < height; i_32_++)
                     Option_Sub18.anIntArray6035[i_32_] = (i_32_ << 12) / height;

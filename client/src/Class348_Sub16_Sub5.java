@@ -224,7 +224,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
         if (anInt8969 == -2147483648) {
             anInt8969 = 0;
             anInt8976 = anInt8970 = anInt8974 = 0;
-            this.method2715((byte) 79);
+            this.unlink((byte) 79);
             return true;
         }
         method2918();
@@ -322,12 +322,12 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
     final synchronized void method2902(int i) {
         if (i == 0) {
             method2923(0);
-            this.method2715((byte) 93);
+            this.unlink((byte) 93);
         } else if (anInt8970 == 0 && anInt8974 == 0) {
             anInt8972 = 0;
             anInt8969 = 0;
             anInt8976 = 0;
-            this.method2715((byte) 113);
+            this.unlink((byte) 113);
         } else {
             int i_60_ = -anInt8976;
             if (anInt8976 > i_60_) i_60_ = anInt8976;
@@ -694,7 +694,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                 if (anInt8979 > 0) anInt8983 = 0;
                 else {
                     method2896();
-                    this.method2715((byte) 83);
+                    this.unlink((byte) 83);
                     return;
                 }
             }
@@ -702,7 +702,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                 if (anInt8979 < 0) anInt8983 = i_162_ - 1;
                 else {
                     method2896();
-                    this.method2715((byte) 81);
+                    this.unlink((byte) 81);
                     return;
                 }
             }
@@ -793,14 +793,14 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                     if (anInt8983 < 0) {
                         anInt8983 = -1;
                         method2896();
-                        this.method2715((byte) 24);
+                        this.unlink((byte) 24);
                     }
                 } else {
                     method2919(is, i_164_, i_162_, i_159_, 0);
                     if (anInt8983 >= i_162_) {
                         anInt8983 = i_162_;
                         method2896();
-                        this.method2715((byte) 93);
+                        this.unlink((byte) 93);
                     }
                 }
             }
@@ -850,7 +850,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                 if (anInt8969 == -2147483648) {
                     anInt8969 = 0;
                     anInt8976 = anInt8970 = anInt8974 = 0;
-                    this.method2715((byte) 52);
+                    this.unlink((byte) 52);
                     i = anInt8972;
                 }
                 anInt8972 = 0;
@@ -872,7 +872,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
             if (anInt8979 > 0) anInt8983 = 0;
             else {
                 method2896();
-                this.method2715((byte) 60);
+                this.unlink((byte) 60);
                 return;
             }
         }
@@ -880,7 +880,7 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
             if (anInt8979 < 0) anInt8983 = i_181_ - 1;
             else {
                 method2896();
-                this.method2715((byte) 93);
+                this.unlink((byte) 93);
                 return;
             }
         }
@@ -950,12 +950,12 @@ final class Class348_Sub16_Sub5 extends Class348_Sub16 {
                 if (anInt8983 < 0) {
                     anInt8983 = -1;
                     method2896();
-                    this.method2715((byte) 126);
+                    this.unlink((byte) 126);
                 }
             } else if (anInt8983 >= i_181_) {
                 anInt8983 = i_181_;
                 method2896();
-                this.method2715((byte) 55);
+                this.unlink((byte) 55);
             }
         }
     }

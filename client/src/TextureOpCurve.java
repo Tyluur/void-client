@@ -109,7 +109,7 @@ final class TextureOpCurve extends TextureOp {
         if (i_33_ != 255) anIntArray9214 = null;
         if (this.monochromeCache.dirty) {
             int[] is_34_ = this.monochromeOutput(i, 633706337, 0);
-            for (int i_35_ = 0; i_35_ < TextureOpPolarDistortion.anInt9139; i_35_++) {
+            for (int i_35_ = 0; i_35_ < TextureOpPolarDistortion.textureWidth; i_35_++) {
                 int i_36_ = is_34_[i_35_] >> 4;
                 if (i_36_ < 0) i_36_ = 0;
                 if (i_36_ > 256) i_36_ = 256;
@@ -130,7 +130,7 @@ final class TextureOpCurve extends TextureOp {
         anIntArray9214 = new int[]{is[0] + -is_37_[0] + is[0], is[1] - (-is[1] - -is_37_[1])};
     }
 
-    final void method3044(int i) {
+    final void finish(int i) {
         if (anIntArrayArray9210 == null) anIntArrayArray9210 = new int[][]{new int[2], {4096, 4096}};
         if (i <= 108) anIntArrayArray9210 = null;
         anInt9209++;

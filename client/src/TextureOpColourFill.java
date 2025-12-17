@@ -114,7 +114,7 @@ final class TextureOpColourFill extends TextureOp {
             int[] is_15_ = is[0];
             int[] is_16_ = is[1];
             int[] is_17_ = is[2];
-            for (int i_18_ = 0; i_18_ < TextureOpPolarDistortion.anInt9139; i_18_++) {
+            for (int i_18_ = 0; i_18_ < TextureOpPolarDistortion.textureWidth; i_18_++) {
                 is_15_[i_18_] = anInt9244;
                 is_16_[i_18_] = anInt9252;
                 is_17_[i_18_] = anInt9250;

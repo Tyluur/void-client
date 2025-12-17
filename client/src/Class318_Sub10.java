@@ -169,7 +169,7 @@ final class Class318_Sub10 extends Class318 {
                 }
             }
             if (!bool) {
-                class348_sub42_sub20.method2715((byte) 108);
+                class348_sub42_sub20.unlink((byte) 108);
                 anInt6485--;
                 if (class348_sub42_sub20.method3164((byte) 1)) {
                     class348_sub42_sub20.method3162(true);

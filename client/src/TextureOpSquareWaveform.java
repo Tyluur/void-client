@@ -29,9 +29,9 @@ final class TextureOpSquareWaveform extends TextureOp {
                         break;
                     }
                 }
-                Class214.method1579(is, 0, TextureOpPolarDistortion.anInt9139, i_7_);
+                Class214.method1579(is, 0, TextureOpPolarDistortion.textureWidth, i_7_);
             } else {
-                for (int i_2_ = 0; i_2_ < TextureOpPolarDistortion.anInt9139; i_2_++) {
+                for (int i_2_ = 0; i_2_ < TextureOpPolarDistortion.textureWidth; i_2_++) {
                     int i_3_ = 0;
                     int i_4_ = 0;
                     int i_5_ = Class318_Sub6.anIntArray6432[i_2_];
@@ -64,7 +64,7 @@ final class TextureOpSquareWaveform extends TextureOp {
         return is;
     }
 
-    final void method3044(int i) {
+    final void finish(int i) {
         if (i < 108) decode(null, -68, -1);
         anInt9330++;
         method3116((byte) -111);

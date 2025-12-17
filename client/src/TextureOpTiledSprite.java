@@ -20,7 +20,7 @@ final class TextureOpTiledSprite extends TextureOpSprite {
             int[] is_2_ = is[1];
             int[] is_3_ = is[2];
             int i_4_ = (this.anInt9241 * (i % this.anInt9241));
-            for (int i_5_ = 0; i_5_ < TextureOpPolarDistortion.anInt9139; i_5_++) {
+            for (int i_5_ = 0; i_5_ < TextureOpPolarDistortion.textureWidth; i_5_++) {
                 int i_6_ = (this.anIntArray9232[(i_5_ % this.anInt9237 + i_4_)]);
                 is_3_[i_5_] = Class139.method1166(4080, i_6_ << 4);
                 is_2_[i_5_] = Class139.method1166(65280, i_6_) >> 4;

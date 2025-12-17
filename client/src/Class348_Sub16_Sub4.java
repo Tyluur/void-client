@@ -9,7 +9,7 @@ final class Class348_Sub16_Sub4 extends Class348_Sub16 {
     private int anInt8968 = 0;
 
     final synchronized void method2880(Class348_Sub16 class348_sub16) {
-        class348_sub16.method2715((byte) 94);
+        class348_sub16.unlink((byte) 94);
     }
 
     final synchronized void method2819(int i) {
@@ -55,7 +55,7 @@ final class Class348_Sub16_Sub4 extends Class348_Sub16 {
     }
 
     private final void method2882(Class348_Sub30 class348_sub30) {
-        class348_sub30.method2715((byte) 105);
+        class348_sub30.unlink((byte) 105);
         class348_sub30.method3006();
         Node node = (aDeque_8966.aNode_3334.aNode_4294);
         if (node == aDeque_8966.aNode_3334) anInt8967 = -1;

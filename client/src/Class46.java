@@ -646,7 +646,7 @@ final class Class46 {
         anInt802++;
         if (aClass356_711 != null) {
             Node node = aClass356_711.method3480(i, -6008);
-            if (node != null) node.method2715((byte) 63);
+            if (node != null) node.unlink((byte) 63);
         }
         if (i_60_ != -3437) method425(null, (byte) 83);
     }

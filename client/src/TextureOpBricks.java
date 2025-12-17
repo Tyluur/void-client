@@ -156,7 +156,7 @@ final class TextureOpBricks extends TextureOp {
             int i_14_ = anIntArray9297[i_11_];
             int i_15_ = anIntArray9297[i_11_ - 1];
             if (anInt9298 + i_15_ < i_12_ && i_12_ < i_14_ - anInt9298) {
-                for (int i_16_ = 0; TextureOpPolarDistortion.anInt9139 > i_16_; i_16_++) {
+                for (int i_16_ = 0; TextureOpPolarDistortion.textureWidth > i_16_; i_16_++) {
                     int i_17_ = 0;
                     int i_18_ = !bool ? -anInt9288 : anInt9288;
                     int i_19_;
@@ -175,7 +175,7 @@ final class TextureOpBricks extends TextureOp {
                     if (anInt9298 + i_21_ >= i_19_ || i_19_ >= -anInt9298 + i_22_) is[i_16_] = 0;
                     else is[i_16_] = anIntArrayArray9286[i_13_][i_20_];
                 }
-            } else Class214.method1579(is, 0, TextureOpPolarDistortion.anInt9139, 0);
+            } else Class214.method1579(is, 0, TextureOpPolarDistortion.textureWidth, 0);
         }
         if (i_10_ != 255) method3110(44);
         return is;
@@ -203,7 +203,7 @@ final class TextureOpBricks extends TextureOp {
         }
     }
 
-    final void method3044(int i) {
+    final void finish(int i) {
         if (i <= 108) method3111(-110, -119);
         anInt9295++;
         method3109((byte) -125);

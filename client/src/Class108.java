@@ -58,11 +58,11 @@ final class Class108 {
         for (Class348_Sub42_Sub6 class348_sub42_sub6 = (Class348_Sub42_Sub6) r_Sub2.aDeque_10492.method1995(4); class348_sub42_sub6 != null; class348_sub42_sub6 = ((Class348_Sub42_Sub6) r_Sub2.aDeque_10492.method1990((byte) 55))) {
             Class318_Sub1_Sub3_Sub4 class318_sub1_sub3_sub4 = (class348_sub42_sub6.aClass318_Sub1_Sub3_Sub4_9538);
             if (class318_sub1_sub3_sub4.aBoolean10345) {
-                class348_sub42_sub6.method2715((byte) 76);
+                class348_sub42_sub6.unlink((byte) 76);
                 class318_sub1_sub3_sub4.method2466(false);
             } else if (Class367_Sub11.anInt7396 >= (class318_sub1_sub3_sub4.anInt10349)) {
                 class318_sub1_sub3_sub4.method2470(ClientOptions.anInt7267, (byte) -16);
-                if (class318_sub1_sub3_sub4.aBoolean10345) class348_sub42_sub6.method2715((byte) 42);
+                if (class318_sub1_sub3_sub4.aBoolean10345) class348_sub42_sub6.unlink((byte) 42);
                 else Class89.method850(class318_sub1_sub3_sub4, true);
             }
         }

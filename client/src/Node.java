@@ -139,7 +139,8 @@ class Node {
         return i_35_ == 1 || i_35_ == 3 || i_35_ == 5;
     }
 
-    final void method2715(byte i) {
+    // method2715
+    final void unlink(byte i) {
         anInt4285++;
         if (this.aNode_4295 != null) {
             this.aNode_4295.aNode_4294 = this.aNode_4294;

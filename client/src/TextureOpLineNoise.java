@@ -16,7 +16,7 @@ final class TextureOpLineNoise extends TextureOp {
     private int anInt9369 = 0;
     static int anInt9370;
 
-    final void method3044(int i) {
+    final void finish(int i) {
         anInt9363++;
         Class220.method1605(26188);
         if (i < 108) method3122((byte) -111);
@@ -71,7 +71,7 @@ final class TextureOpLineNoise extends TextureOp {
 
     final int[] monochromeOutput(int i, int i_2_) {
         anInt9366++;
-        if (i_2_ != 255) method3044(-48);
+        if (i_2_ != 255) finish(-48);
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
             int i_3_ = anInt9364 >> 1;
@@ -80,7 +80,7 @@ final class TextureOpLineNoise extends TextureOp {
             for (int i_5_ = 0; anInt9362 > i_5_; i_5_++) {
                 int i_6_ = (anInt9364 > 0 ? anInt9369 + Mesh.method1097((byte) 92, anInt9364, random) + -i_3_ : anInt9369);
                 i_6_ = i_6_ >> 4 & 0xff;
-                int i_7_ = Mesh.method1097((byte) 81, TextureOpPolarDistortion.anInt9139, random);
+                int i_7_ = Mesh.method1097((byte) 81, TextureOpPolarDistortion.textureWidth, random);
                 int i_8_ = Mesh.method1097((byte) 123, Class286_Sub2.anInt6212, random);
                 int i_9_ = i_7_ - -(anInt9368 * Class127.anIntArray4654[i_6_] >> 12);
                 int i_10_ = ((Class235.anIntArray3068[i_6_] * anInt9368 >> 12) + i_8_);

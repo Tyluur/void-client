@@ -256,7 +256,7 @@ final class Class18 {
         if (bool == true) {
             class348_sub5.aBoolean6621 = false;
             class348_sub5.method2763((byte) -126);
-            class348_sub5.method2715((byte) 103);
+            class348_sub5.unlink((byte) 103);
             method281((byte) -80);
         }
     }

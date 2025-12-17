@@ -23,7 +23,7 @@ final class Class367_Sub1 extends Class367 {
         textureOpPerlinNoise.aBoolean9160 = bool;
         textureOpPerlinNoise.anInt9158 = i_2_;
         textureOpPerlinNoise.anInt9156 = i_3_;
-        textureOpPerlinNoise.method3044(110);
+        textureOpPerlinNoise.finish(110);
         NPCDefinition.setSize(1, i_0_, (byte) 115);
         textureOpPerlinNoise.method3069(0, is, (byte) 115);
         if (i < 89) method3535(72, -40);

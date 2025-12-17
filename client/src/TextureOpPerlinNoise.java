@@ -95,7 +95,7 @@ final class TextureOpPerlinNoise extends TextureOp {
         this.anInt9158 = 4;
     }
 
-    final void method3044(int i) {
+    final void finish(int i) {
         aByteArray9152 = Toolkit.method3664(this.anInt9156, 95);
         anInt9148++;
         method3067((byte) -98);
@@ -150,14 +150,14 @@ final class TextureOpPerlinNoise extends TextureOp {
                 int i_47_ = Class199.anIntArray2631[i_41_];
                 int i_48_ = aByteArray9152[0xff & i_44_] & 0xff;
                 if (this.aBoolean9160) {
-                    for (int i_52_ = 0; (TextureOpPolarDistortion.anInt9139 > i_52_); i_52_++) {
+                    for (int i_52_ = 0; (TextureOpPolarDistortion.textureWidth > i_52_); i_52_++) {
                         int i_53_ = (this.anInt9158 * Class318_Sub6.anIntArray6432[i_52_]);
                         int i_54_ = method3070(i_46_, i_41_, i_42_, i_53_ * i_39_ >> 12, i_47_, true, i_48_);
                         i_54_ = i_40_ * i_54_ >> 12;
                         is[i_52_] = (i_54_ >> 1) + 2048;
                     }
                 } else {
-                    for (int i_49_ = 0; i_49_ < TextureOpPolarDistortion.anInt9139; i_49_++) {
+                    for (int i_49_ = 0; i_49_ < TextureOpPolarDistortion.textureWidth; i_49_++) {
                         int i_50_ = (this.anInt9158 * Class318_Sub6.anIntArray6432[i_49_]);
                         int i_51_ = method3070(i_46_, i_41_, i_42_, i_39_ * i_50_ >> 12, i_47_, true, i_48_);
                         is[i_49_] = i_51_ * i_40_ >> 12;
@@ -177,7 +177,7 @@ final class TextureOpPerlinNoise extends TextureOp {
                     int i_17_ = aByteArray9152[0xff & i_16_] & 0xff;
                     int i_18_ = aByteArray9152[0xff & i_15_] & 0xff;
                     int i_19_ = Class199.anIntArray2631[i_12_];
-                    for (int i_20_ = 0; TextureOpPolarDistortion.anInt9139 > i_20_; i_20_++) {
+                    for (int i_20_ = 0; TextureOpPolarDistortion.textureWidth > i_20_; i_20_++) {
                         int i_21_ = (Class318_Sub6.anIntArray6432[i_20_] * this.anInt9158);
                         int i_22_ = method3070(i_17_, i_12_, i_13_, i_11_ * i_21_ >> 12, i_19_, true, i_18_);
                         is[i_20_] = i_10_ * i_22_ >> 12;
@@ -198,14 +198,14 @@ final class TextureOpPerlinNoise extends TextureOp {
                         int i_31_ = Class199.anIntArray2631[i_25_];
                         int i_32_ = 0xff & aByteArray9152[i_29_ & 0xff];
                         if (this.aBoolean9160 && (this.anInt9150 - 1 == i_23_)) {
-                            for (int i_33_ = 0; TextureOpPolarDistortion.anInt9139 > i_33_; i_33_++) {
+                            for (int i_33_ = 0; TextureOpPolarDistortion.textureWidth > i_33_; i_33_++) {
                                 int i_34_ = (Class318_Sub6.anIntArray6432[i_33_] * (this.anInt9158));
                                 int i_35_ = method3070(i_32_, i_25_, i_26_, i_34_ * i_24_ >> 12, i_31_, true, i_30_);
                                 i_35_ = is[i_33_] - -(i_35_ * i_10_ >> 12);
                                 is[i_33_] = (i_35_ >> 1) + 2048;
                             }
                         } else {
-                            for (int i_36_ = 0; (i_36_ < TextureOpPolarDistortion.anInt9139); i_36_++) {
+                            for (int i_36_ = 0; (i_36_ < TextureOpPolarDistortion.textureWidth); i_36_++) {
                                 int i_37_ = (this.anInt9158 * Class318_Sub6.anIntArray6432[i_36_]);
                                 int i_38_ = method3070(i_32_, i_25_, i_26_, i_37_ * i_24_ >> 12, i_31_, true, i_30_);
                                 is[i_36_] += i_10_ * i_38_ >> 12;

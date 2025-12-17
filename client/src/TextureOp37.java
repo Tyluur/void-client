@@ -28,7 +28,7 @@ final class TextureOp37 extends TextureOp {
         if (i_0_ != 255) method3108(-114, -119, -89);
         if (this.monochromeCache.dirty) {
             int i_1_ = -2048 + Option_Sub18.anIntArray6035[i];
-            for (int i_2_ = 0; (i_2_ < TextureOpPolarDistortion.anInt9139); i_2_++) {
+            for (int i_2_ = 0; (i_2_ < TextureOpPolarDistortion.textureWidth); i_2_++) {
                 int i_3_ = -2048 + Class318_Sub6.anIntArray6432[i_2_];
                 int i_4_ = i_3_ - -anInt9269;
                 i_4_ = i_4_ < -2048 ? 4096 + i_4_ : i_4_;
@@ -48,7 +48,7 @@ final class TextureOp37 extends TextureOp {
         return is;
     }
 
-    final void method3044(int i) {
+    final void finish(int i) {
         anInt9272++;
         if (i <= 108) monochromeOutput(69, 74);
         Class220.method1605(26188);

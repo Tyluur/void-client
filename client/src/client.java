@@ -1077,7 +1077,7 @@ public final class client extends Applet_Sub1 {
                         if (class46.aBoolean776 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                             for (Class348_Sub36 class348_sub36 = (Class348_Sub36) Class348_Sub1_Sub2.aDeque_8810.method1995(4); class348_sub36 != null; class348_sub36 = ((Class348_Sub36) Class348_Sub1_Sub2.aDeque_8810.method1990((byte) 71))) {
                                 if (class348_sub36.aBoolean6993) {
-                                    class348_sub36.method2715((byte) 65);
+                                    class348_sub36.unlink((byte) 65);
                                     class348_sub36.aClass46_6989.aBoolean737 = false;
                                 }
                             }

@@ -219,7 +219,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
         if (aP5137.aCanvas5147 == canvas) method3677(null);
         p var_p = (p) aClass356_5126.method3480(canvas.hashCode(), -6008);
         if (var_p != null) {
-            var_p.method2715((byte) 110);
+            var_p.unlink((byte) 110);
             var_p.method3436();
         }
     }

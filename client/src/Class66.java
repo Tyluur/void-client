@@ -732,7 +732,7 @@ final class Class66 {
                 boolean bool_87_ = anIntArray1149[anInt1173 + 1] == 1;
                 if (Class348_Sub42_Sub9_Sub1.aClass356_10442 != null) {
                     Node node = Class348_Sub42_Sub9_Sub1.aClass356_10442.method3480(i_86_, -6008);
-                    if (node != null && !bool_87_) node.method2715((byte) 48);
+                    if (node != null && !bool_87_) node.unlink((byte) 48);
                     else if (node == null && bool_87_) {
                         node = new Node();
                         Class348_Sub42_Sub9_Sub1.aClass356_10442.method3483((byte) 29, i_86_, node);
@@ -757,7 +757,7 @@ final class Class66 {
                 boolean bool_90_ = anIntArray1149[anInt1173 + 1] == 1;
                 if (Class158.aClass356_4934 != null) {
                     Node node = Class158.aClass356_4934.method3480(i_89_, -6008);
-                    if (node != null && !bool_90_) node.method2715((byte) 83);
+                    if (node != null && !bool_90_) node.unlink((byte) 83);
                     else if (node == null && bool_90_) {
                         node = new Node();
                         Class158.aClass356_4934.method3483((byte) 112, i_89_, node);

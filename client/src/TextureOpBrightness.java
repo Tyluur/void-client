@@ -88,7 +88,7 @@ final class TextureOpBrightness extends TextureOp {
             int[] is_10_ = is[0];
             int[] is_11_ = is[1];
             int[] is_12_ = is[2];
-            for (int i_13_ = 0; TextureOpPolarDistortion.anInt9139 > i_13_; i_13_++) {
+            for (int i_13_ = 0; TextureOpPolarDistortion.textureWidth > i_13_; i_13_++) {
                 int i_14_ = is_7_[i_13_];
                 int i_15_ = i_14_ - anIntArray9086[0];
                 if (i_15_ < 0) i_15_ = -i_15_;

@@ -159,11 +159,11 @@ final class InputStream_Sub2 extends InputStream {
                 if (class348_sub37 != null) {
                     for (Class348_Sub34 class348_sub34 = ((Class348_Sub34) class348_sub37.aDeque_6998.method1995(4)); class348_sub34 != null; class348_sub34 = ((Class348_Sub34) class348_sub37.aDeque_6998.method1990((byte) 49))) {
                         if ((0x7fff & i_69_) == class348_sub34.anInt6973) {
-                            class348_sub34.method2715((byte) 127);
+                            class348_sub34.unlink((byte) 127);
                             break;
                         }
                     }
-                    if (class348_sub37.aDeque_6998.method2002((byte) 18)) class348_sub37.method2715((byte) 62);
+                    if (class348_sub37.aDeque_6998.method2002((byte) 18)) class348_sub37.unlink((byte) 62);
                     if (i_73_ >= 0 && i_71_ >= 0 && Class367_Sub4.mapLength > i_73_ && TextureOpBinary.mapWidth > i_71_) Class203.method1479(i_71_, (byte) -125, i_73_, TextureOpColourGradient.anInt9200);
                 }
             } else if (Class59_Sub1_Sub2.aClass74_8662 == class74) {
@@ -204,7 +204,7 @@ final class InputStream_Sub2 extends InputStream {
                         if (class348_sub37 != null) {
                             for (Class348_Sub34 class348_sub34 = ((Class348_Sub34) class348_sub37.aDeque_6998.method1995(4)); class348_sub34 != null; class348_sub34 = ((Class348_Sub34) class348_sub37.aDeque_6998.method1990((byte) 34))) {
                                 if ((class348_sub34.anInt6973) == (0x7fff & i_94_) && i_95_ == class348_sub34.anInt6971) {
-                                    class348_sub34.method2715((byte) 32);
+                                    class348_sub34.unlink((byte) 32);
                                     class348_sub34.anInt6971 = i_96_;
                                     Class352.method3459(class348_sub34, (TextureOpColourGradient.anInt9200), i_91_, i_93_, i ^ ~0x9);
                                     break;

@@ -114,7 +114,7 @@ final class BASTypeList {
         for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1995(4)); class348_sub42_sub12 != null; class348_sub42_sub12 = (Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.method1990((byte) 83)) {
             int i_13_ = class348_sub42_sub12.anInt9608;
             if (i_13_ < 1000) {
-                class348_sub42_sub12.method2715((byte) 97);
+                class348_sub42_sub12.unlink((byte) 97);
                 if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) TextureOpClamp.aDeque_9478.method1999(class348_sub42_sub12, -20180);
                 else CursorTypeList.aDeque_2187.method1999(class348_sub42_sub12, -20180);
             }

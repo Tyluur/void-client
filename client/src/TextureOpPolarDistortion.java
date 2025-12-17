@@ -11,7 +11,7 @@ final class TextureOpPolarDistortion extends TextureOp {
     static int anInt9136;
     static int anInt9137;
     static int anInt9138;
-    static int anInt9139;
+    static int textureWidth;
 
     public TextureOpPolarDistortion() {
         super(3, false);
@@ -24,7 +24,7 @@ final class TextureOpPolarDistortion extends TextureOp {
         if (this.monochromeCache.dirty) {
             int[] is_1_ = this.monochromeOutput(i, i_0_ + 633706082, 1);
             int[] is_2_ = this.monochromeOutput(i, i_0_ ^ 0x25c5979e, 2);
-            for (int i_3_ = 0; i_3_ < anInt9139; i_3_++) {
+            for (int i_3_ = 0; i_3_ < textureWidth; i_3_++) {
                 int i_4_ = 0xff & is_1_[i_3_] >> 4;
                 int i_5_ = anInt9133 * is_2_[i_3_] >> 12;
                 int i_6_ = Class127.anIntArray4654[i_4_] * i_5_ >> 12;
@@ -57,10 +57,10 @@ final class TextureOpPolarDistortion extends TextureOp {
         anInt9138++;
     }
 
-    final void method3044(int i) {
+    final void finish(int i) {
         Class220.method1605(26188);
         anInt9136++;
-        if (i < 108) anInt9139 = 126;
+        if (i < 108) textureWidth = 126;
     }
 
     final int[][] colourOutput(int i, int i_13_) {
@@ -73,7 +73,7 @@ final class TextureOpPolarDistortion extends TextureOp {
             int[] is_16_ = is[0];
             int[] is_17_ = is[1];
             int[] is_18_ = is[2];
-            for (int i_19_ = 0; anInt9139 > i_19_; i_19_++) {
+            for (int i_19_ = 0; textureWidth > i_19_; i_19_++) {
                 int i_20_ = 0xff & 255 * is_14_[i_19_] >> 12;
                 int i_21_ = anInt9133 * is_15_[i_19_] >> 12;
                 int i_22_ = i_21_ * Class127.anIntArray4654[i_20_] >> 12;

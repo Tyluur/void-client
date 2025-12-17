@@ -54,7 +54,7 @@ final class TextureOpClamp extends TextureOp {
             int[] is_7_ = is[0];
             int[] is_8_ = is[1];
             int[] is_9_ = is[2];
-            for (int i_10_ = 0; (i_10_ < TextureOpPolarDistortion.anInt9139); i_10_++) {
+            for (int i_10_ = 0; (i_10_ < TextureOpPolarDistortion.textureWidth); i_10_++) {
                 int i_11_ = is_4_[i_10_];
                 int i_12_ = is_5_[i_10_];
                 int i_13_ = is_6_[i_10_];
@@ -98,7 +98,7 @@ final class TextureOpClamp extends TextureOp {
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
             int[] is_16_ = this.monochromeOutput(i, 633706337, 0);
-            for (int i_17_ = 0; i_17_ < TextureOpPolarDistortion.anInt9139; i_17_++) {
+            for (int i_17_ = 0; i_17_ < TextureOpPolarDistortion.textureWidth; i_17_++) {
                 int i_18_ = is_16_[i_17_];
                 if (anInt9474 > i_18_) is[i_17_] = anInt9474;
                 else is[i_17_] = Math.min(i_18_, anInt9470);

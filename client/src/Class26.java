@@ -72,7 +72,7 @@ final class Class26 {
         }
         class348_sub19_sub1 = class348_sub10.method2791(is);
         if (class348_sub19_sub1 == null) return null;
-        class348_sub10.method2715((byte) 27);
+        class348_sub10.unlink((byte) 27);
         aClass356_381.method3483((byte) 117, l, class348_sub19_sub1);
         return class348_sub19_sub1;
     }

@@ -57,11 +57,11 @@ final class Js5ResourceProvider extends ResourceProvider {
         if (aDeque_6372 != null && method2340((byte) 56) != null) {
             for (Node node = aDeque_6369.method1995(4); node != null; node = aDeque_6369.method1990((byte) 112)) {
                 int i_0_ = (int) node.aLong4291;
-                if (i_0_ < 0 || (aClass291_6342.anInt3734 <= i_0_) || aClass291_6342.anIntArray3725[i_0_] == 0) node.method2715((byte) 37);
+                if (i_0_ < 0 || (aClass291_6342.anInt3734 <= i_0_) || aClass291_6342.anIntArray3725[i_0_] == 0) node.unlink((byte) 37);
                 else {
                     if (aByteArray6351[i_0_] == 0) method2350(i_0_, (byte) 65, 1);
                     if (aByteArray6351[i_0_] == -1) method2350(i_0_, (byte) 65, 2);
-                    if (aByteArray6351[i_0_] == 1) node.method2715((byte) 29);
+                    if (aByteArray6351[i_0_] == 1) node.unlink((byte) 29);
                 }
             }
         }
@@ -76,7 +76,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                 for (Node node = aDeque_6372.method1995(4); node != null; node = aDeque_6372.method1990((byte) 106)) {
                     int i_1_ = (int) node.aLong4291;
                     if (aByteArray6351[i_1_] == 0) method2350(i_1_, (byte) 65, 1);
-                    if (aByteArray6351[i_1_] != 0) node.method2715((byte) 22);
+                    if (aByteArray6351[i_1_] != 0) node.unlink((byte) 22);
                     else bool = false;
                 }
                 while (aClass291_6342.anIntArray3725.length > anInt6373) {
@@ -106,7 +106,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                     int i_2_ = (int) node.aLong4291;
                     if (aByteArray6351[i_2_] != 1) method2350(i_2_, (byte) 65, 2);
                     if (aByteArray6351[i_2_] != 1) bool = false;
-                    else node.method2715((byte) 60);
+                    else node.unlink((byte) 60);
                 }
                 while (aClass291_6342.anIntArray3725.length > anInt6373) {
                     if (aClass291_6342.anIntArray3725[anInt6373] == 0) anInt6373++;
@@ -137,7 +137,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                     if (!class348_sub42_sub16.aBoolean9664) {
                         if (class348_sub42_sub16.aBoolean9667) {
                             if (!class348_sub42_sub16.aBoolean9663) throw new RuntimeException();
-                            class348_sub42_sub16.method2715((byte) 116);
+                            class348_sub42_sub16.unlink((byte) 116);
                         } else class348_sub42_sub16.aBoolean9667 = true;
                     }
                 }
@@ -163,7 +163,7 @@ final class Js5ResourceProvider extends ResourceProvider {
         Class348_Sub42_Sub16 class348_sub42_sub16 = method2350(i, (byte) 65, 0);
         if (class348_sub42_sub16 == null) return null;
         byte[] is = class348_sub42_sub16.method3259(16);
-        class348_sub42_sub16.method2715((byte) 33);
+        class348_sub42_sub16.unlink((byte) 33);
         return is;
     }
 
@@ -256,7 +256,7 @@ final class Js5ResourceProvider extends ResourceProvider {
         anInt6362++;
         Class348_Sub42_Sub16 class348_sub42_sub16 = ((Class348_Sub42_Sub16) aClass356_6360.method3480(i, -6008));
         if (class348_sub42_sub16 != null && i_10_ == 0 && !class348_sub42_sub16.aBoolean9663 && class348_sub42_sub16.aBoolean9664) {
-            class348_sub42_sub16.method2715((byte) 66);
+            class348_sub42_sub16.unlink((byte) 66);
             class348_sub42_sub16 = null;
         }
         if (class348_sub42_sub16 == null) {
@@ -297,7 +297,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                 aClass248_6347.anInt3214 = 0;
             } catch (RuntimeException runtimeexception) {
                 aClass248_6347.method1904(-1);
-                class348_sub42_sub16.method2715((byte) 44);
+                class348_sub42_sub16.unlink((byte) 44);
                 if (class348_sub42_sub16.aBoolean9663 && !aClass248_6347.method1900(i_9_ ^ 0x1f)) {
                     Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = aClass248_6347.method1906((byte) 111, (byte) 2, true, i, anInt6350);
                     aClass356_6360.method3483((byte) 84, i, class348_sub42_sub16_sub1);
@@ -313,7 +313,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                     aByteArray6351[i] = (byte) 1;
                 }
             }
-            if (!class348_sub42_sub16.aBoolean9663) class348_sub42_sub16.method2715((byte) 110);
+            if (!class348_sub42_sub16.aBoolean9663) class348_sub42_sub16.unlink((byte) 110);
             return class348_sub42_sub16;
         }
         try {
@@ -335,11 +335,11 @@ final class Js5ResourceProvider extends ResourceProvider {
                 anInt6361++;
                 aByteArray6351[i] = (byte) 1;
             }
-            if (!class348_sub42_sub16.aBoolean9663) class348_sub42_sub16.method2715((byte) 115);
+            if (!class348_sub42_sub16.aBoolean9663) class348_sub42_sub16.unlink((byte) 115);
             return class348_sub42_sub16;
         } catch (Exception exception) {
             aByteArray6351[i] = (byte) -1;
-            class348_sub42_sub16.method2715((byte) 121);
+            class348_sub42_sub16.unlink((byte) 121);
             if (class348_sub42_sub16.aBoolean9663 && !aClass248_6347.method1900(-30)) {
                 Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = aClass248_6347.method1906((byte) 99, (byte) 2, true, i, anInt6350);
                 aClass356_6360.method3483((byte) 66, i, class348_sub42_sub16_sub1);

@@ -1699,7 +1699,7 @@ final class Class64_Sub3 extends Model {
         if (class348_sub15 != null) {
             class348_sub15.aClass55_Sub1_6768.method508(1);
             Class303.method2285(class348_sub15.aBoolean6776, (byte) -114, class348_sub15.anInt6773);
-            class348_sub15.method2715((byte) 52);
+            class348_sub15.unlink((byte) 52);
         }
     }
 

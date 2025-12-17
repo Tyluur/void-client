@@ -53,7 +53,7 @@ final class ColourImageCacheSlot extends Node {
                     int i_2_ = 0;
                     for (Class348_Sub45 class348_sub45_3_ = ((Class348_Sub45) r_Sub1.aDeque_10479.method1995(4)); class348_sub45_3_ != null; class348_sub45_3_ = (Class348_Sub45) r_Sub1.aDeque_10479.method1990((byte) 79)) {
                         if (class348_sub47 != null && (class348_sub47.aClass348_Sub49_Sub2_7116.pos - i_2_ >= 240)) break;
-                        class348_sub45_3_.method2715((byte) 107);
+                        class348_sub45_3_.unlink((byte) 107);
                         int i_4_ = class348_sub45_3_.method3311(-15);
                         if (i_4_ >= -1) {
                             if (i_4_ > 65534) i_4_ = 65534;

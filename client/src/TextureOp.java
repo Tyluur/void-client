@@ -213,7 +213,8 @@ abstract class TextureOp extends Node {
         return -1;
     }
 
-    void method3044(int i) {
+    // method3044
+    void finish(int i) {
         if (i <= 108) this.monochromeCache = null;
         anInt7029++;
     }

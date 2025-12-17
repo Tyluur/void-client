@@ -111,7 +111,7 @@ final class Class356 {
             for (; ; ) {
                 Node node_9_ = node.aNode_4294;
                 if (node_9_ == node) break;
-                node_9_.method2715((byte) 54);
+                node_9_.unlink((byte) 54);
             }
         }
         aNode_4389 = null;
@@ -139,7 +139,7 @@ final class Class356 {
         try {
             anInt4382++;
             if (i < 18) method3481(71);
-            if (node.aNode_4295 != null) node.method2715((byte) 57);
+            if (node.aNode_4295 != null) node.unlink((byte) 57);
             Node node_10_ = (this.aNodeArray4374[(int) (l & (long) (-1 + this.anInt4377))]);
             node.aNode_4294 = node_10_;
             node.aNode_4295 = node_10_.aNode_4295;

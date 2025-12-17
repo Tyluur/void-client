@@ -33,10 +33,10 @@ final class TimedVarDomain implements Interface17 {
                 if ((0x4000000000000000L & class348_sub14.aLong6762) != 0L) {
                     int i_0_ = (int) class348_sub14.aLong4291;
                     this.anIntArray5063[i_0_] = anIntArray5078[i_0_];
-                    class348_sub14.method2715((byte) 31);
+                    class348_sub14.unlink((byte) 31);
                     return i_0_;
                 }
-                class348_sub14.method2715((byte) 75);
+                class348_sub14.unlink((byte) 75);
             }
         }
         return -1;

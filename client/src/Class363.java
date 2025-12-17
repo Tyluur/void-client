@@ -26,7 +26,7 @@ final class Class363 {
             if (class348_sub27.anInt6893 == -1) {
                 class348_sub27.anInt6894 = 0;
                 if ((class348_sub27.anInt6905 >= 0) && class348_sub27.anInt6896 >= 0 && (class348_sub27.anInt6905 < Class367_Sub4.mapLength) && (class348_sub27.anInt6896 < TextureOpBinary.mapWidth)) Class184.method1387(i + 26, class348_sub27);
-            } else class348_sub27.method2715((byte) 39);
+            } else class348_sub27.unlink((byte) 39);
         }
         if (i != -105) method3516(-128);
     }

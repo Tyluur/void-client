@@ -16,7 +16,7 @@ final class Class282 {
         for (/**/; class348_sub42_sub18 != null; class348_sub42_sub18 = (Class348_Sub42_Sub18) TextureOpSprite.aDeque_9240.method1990((byte) 56)) {
             Class318_Sub1_Sub3_Sub5 class318_sub1_sub3_sub5 = (class348_sub42_sub18.aClass318_Sub1_Sub3_Sub5_9682);
             if (Class367_Sub11.anInt7396 > class318_sub1_sub3_sub5.anInt10392) {
-                class348_sub42_sub18.method2715((byte) 101);
+                class348_sub42_sub18.unlink((byte) 101);
                 class318_sub1_sub3_sub5.method2472(-2159);
             } else if ((class318_sub1_sub3_sub5.anInt10411) <= Class367_Sub11.anInt7396) {
                 class318_sub1_sub3_sub5.method2474((byte) 121);

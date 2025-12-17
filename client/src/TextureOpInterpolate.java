@@ -28,7 +28,7 @@ final class TextureOpInterpolate extends TextureOp {
             int[] is_10_ = is_3_[0];
             int[] is_11_ = is_3_[1];
             int[] is_12_ = is_3_[2];
-            for (int i_13_ = 0; (i_13_ < TextureOpPolarDistortion.anInt9139); i_13_++) {
+            for (int i_13_ = 0; (i_13_ < TextureOpPolarDistortion.textureWidth); i_13_++) {
                 int i_14_ = is_1_[i_13_];
                 if (i_14_ == 4096) {
                     is_4_[i_13_] = is_7_[i_13_];
@@ -57,7 +57,7 @@ final class TextureOpInterpolate extends TextureOp {
             int[] is_17_ = this.monochromeOutput(i, i_16_ ^ 0x25c5979e, 0);
             int[] is_18_ = this.monochromeOutput(i, 633706337, 1);
             int[] is_19_ = this.monochromeOutput(i, i_16_ + 633706082, 2);
-            for (int i_20_ = 0; TextureOpPolarDistortion.anInt9139 > i_20_; i_20_++) {
+            for (int i_20_ = 0; TextureOpPolarDistortion.textureWidth > i_20_; i_20_++) {
                 int i_21_ = is_19_[i_20_];
                 if (i_21_ != 4096) {
                     if (i_21_ == 0) is[i_20_] = is_18_[i_20_];

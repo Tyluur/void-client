@@ -111,7 +111,7 @@ final class TextureOpColourEdgeDetector extends TextureOp {
             int[] is_11_ = is[0];
             int[] is_12_ = is[1];
             int[] is_13_ = is[2];
-            for (int i_14_ = 0; TextureOpPolarDistortion.anInt9139 > i_14_; i_14_++) {
+            for (int i_14_ = 0; TextureOpPolarDistortion.textureWidth > i_14_; i_14_++) {
                 int i_15_ = (-is_8_[i_14_] + is_10_[i_14_]) * anInt9438;
                 int i_16_ = (anInt9438 * (is_9_[1 + i_14_ & Option_Sub22.anInt6076] - is_9_[Option_Sub22.anInt6076 & -1 + i_14_]));
                 int i_17_ = i_16_ >> 12;

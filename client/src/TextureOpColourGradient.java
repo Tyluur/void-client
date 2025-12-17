@@ -70,7 +70,7 @@ final class TextureOpColourGradient extends TextureOp {
             int[] is_5_ = is[0];
             int[] is_6_ = is[1];
             int[] is_7_ = is[2];
-            for (int i_8_ = 0; (TextureOpPolarDistortion.anInt9139 > i_8_); i_8_++) {
+            for (int i_8_ = 0; (TextureOpPolarDistortion.textureWidth > i_8_); i_8_++) {
                 int i_9_ = is_4_[i_8_] >> 4;
                 if (i_9_ < 0) i_9_ = 0;
                 if (i_9_ > 256) i_9_ = 256;
@@ -91,7 +91,7 @@ final class TextureOpColourGradient extends TextureOp {
         objectTypeList = null;
     }
 
-    final void method3044(int i) {
+    final void finish(int i) {
         if (i >= 108) {
             anInt9196++;
             if (anIntArrayArray9194 == null) method3078(1, -97);

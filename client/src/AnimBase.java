@@ -120,7 +120,7 @@ final class AnimBase extends Node {
                     } else class348_sub49_sub2.writeByte(false, (class348_sub48.anIntArray7131[i_2_]));
                 }
                 class348_sub49_sub2.method3344(i_1_, false);
-                class348_sub48.method2715((byte) 46);
+                class348_sub48.unlink((byte) 46);
             }
         }
     }

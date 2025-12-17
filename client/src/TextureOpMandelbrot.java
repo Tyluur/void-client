@@ -46,7 +46,7 @@ final class TextureOpMandelbrot extends TextureOp {
         int[] is = this.monochromeCache.get(0, i);
         if (i_2_ != 255) return null;
         if (this.monochromeCache.dirty) {
-            for (int i_3_ = 0; i_3_ < TextureOpPolarDistortion.anInt9139; i_3_++) {
+            for (int i_3_ = 0; i_3_ < TextureOpPolarDistortion.textureWidth; i_3_++) {
                 int i_4_ = anInt9339 + (Class318_Sub6.anIntArray6432[i_3_] << 12) / anInt9340;
                 int i_5_ = anInt9338 + (Option_Sub18.anIntArray6035[i] << 12) / anInt9340;
                 int i_6_ = i_4_;

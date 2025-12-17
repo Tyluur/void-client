@@ -50,7 +50,7 @@ final class Class175 {
             if (class348_sub42_sub9.anInterface14_9559.method53(94, interface14)) {
                 Object object = class348_sub42_sub9.method3205(65536);
                 if (object == null) {
-                    class348_sub42_sub9.method2715((byte) 36);
+                    class348_sub42_sub9.unlink((byte) 36);
                     class348_sub42_sub9.method3162(true);
                     anInt2311 += (class348_sub42_sub9.anInt9556);
                 } else {
@@ -59,7 +59,7 @@ final class Class175 {
                         aClass356_2312.method3483((byte) 125, (class348_sub42_sub9.aLong4291), class348_sub42_sub9_sub1);
                         aClass107_2316.method1005(true, class348_sub42_sub9_sub1);
                         class348_sub42_sub9_sub1.aLong7057 = 0L;
-                        class348_sub42_sub9.method2715((byte) 65);
+                        class348_sub42_sub9.unlink((byte) 65);
                         class348_sub42_sub9.method3162(true);
                     } else {
                         aClass107_2316.method1005(true, class348_sub42_sub9);
@@ -98,7 +98,7 @@ final class Class175 {
         anInt2317++;
         if (i < 51) method1341(null, null, -110, 119);
         if (class348_sub42_sub9 != null) {
-            class348_sub42_sub9.method2715((byte) 42);
+            class348_sub42_sub9.unlink((byte) 42);
             class348_sub42_sub9.method3162(true);
             anInt2311 += class348_sub42_sub9.anInt9556;
         }
@@ -116,7 +116,7 @@ final class Class175 {
         anInt2319++;
         for (Class348_Sub42_Sub9 class348_sub42_sub9 = (Class348_Sub42_Sub9) aClass107_2316.method1011(-87); class348_sub42_sub9 != null; class348_sub42_sub9 = ((Class348_Sub42_Sub9) aClass107_2316.method1003((byte) 69))) {
             if (class348_sub42_sub9.method3206((byte) 5)) {
-                class348_sub42_sub9.method2715((byte) 127);
+                class348_sub42_sub9.unlink((byte) 127);
                 class348_sub42_sub9.method3162(true);
                 anInt2311 += class348_sub42_sub9.anInt9556;
             }
@@ -138,7 +138,7 @@ final class Class175 {
             for (Class348_Sub42_Sub9 class348_sub42_sub9 = (Class348_Sub42_Sub9) aClass107_2316.method1011(-72); class348_sub42_sub9 != null; class348_sub42_sub9 = ((Class348_Sub42_Sub9) aClass107_2316.method1003((byte) 59))) {
                 if (class348_sub42_sub9.method3206((byte) -124)) {
                     if (class348_sub42_sub9.method3205(i + 67027) == null) {
-                        class348_sub42_sub9.method2715((byte) 103);
+                        class348_sub42_sub9.unlink((byte) 103);
                         class348_sub42_sub9.method3162(true);
                         anInt2311 += (class348_sub42_sub9.anInt9556);
                     }
@@ -146,7 +146,7 @@ final class Class175 {
                     Class348_Sub42_Sub9 class348_sub42_sub9_5_ = Class103.aClass345_1607.method2694(-1, class348_sub42_sub9);
                     aClass356_2312.method3483((byte) 120, (class348_sub42_sub9.aLong4291), class348_sub42_sub9_5_);
                     Class59_Sub2_Sub2.method573(class348_sub42_sub9_5_, class348_sub42_sub9, (byte) 63);
-                    class348_sub42_sub9.method2715((byte) 70);
+                    class348_sub42_sub9.unlink((byte) 70);
                     class348_sub42_sub9.method3162(true);
                 }
             }

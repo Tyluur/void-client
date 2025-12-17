@@ -30,7 +30,7 @@ final class Class127_Sub1 extends Class127 {
         int i_3_ = class348_sub41.anInt7050;
         int i_4_ = (int) class348_sub41.aLong4291;
         if (i == 2533) {
-            class348_sub41.method2715((byte) 35);
+            class348_sub41.unlink((byte) 35);
             if (bool) Class14.method235(i_3_, (byte) -116);
             CursorTypeList.method1288(i ^ ~0x9e2, i_3_);
             Class46 class46 = FontRenderer.method2570(1512932720, i_4_);

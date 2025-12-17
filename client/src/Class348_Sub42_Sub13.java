@@ -54,7 +54,7 @@ final class Class348_Sub42_Sub13 extends LinkedNode {
         class348_sub42_sub12.method3162(true);
         this.anInt9615--;
         if (this.anInt9615 == 0) {
-            this.method2715((byte) 112);
+            this.unlink((byte) 112);
             this.method3162(true);
             Class8.anInt166--;
             VarcTypeList.aClass60_3301.method582(this, class348_sub42_sub12.aLong9600, (byte) -128);

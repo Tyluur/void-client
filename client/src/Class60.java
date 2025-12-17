@@ -55,11 +55,11 @@ final class Class60 {
                             Class348_Sub42_Sub8 class348_sub42_sub8_3_ = JavaMatrix.aClass246_5675.method1888(3, class348_sub42_sub8);
                             aClass356_1100.method3483((byte) 86, (class348_sub42_sub8.aLong4291), class348_sub42_sub8_3_);
                             Class59_Sub2_Sub2.method573(class348_sub42_sub8_3_, class348_sub42_sub8, (byte) 63);
-                            class348_sub42_sub8.method2715((byte) 116);
+                            class348_sub42_sub8.unlink((byte) 116);
                             class348_sub42_sub8.method3162(true);
                         }
                     } else if (class348_sub42_sub8.method3193(100) == null) {
-                        class348_sub42_sub8.method2715((byte) 60);
+                        class348_sub42_sub8.unlink((byte) 60);
                         class348_sub42_sub8.method3162(true);
                         anInt1086 += (class348_sub42_sub8.anInt9545);
                     }
@@ -80,7 +80,7 @@ final class Class60 {
             if (object != null) return object;
             Class348_Sub42_Sub8 class348_sub42_sub8_4_ = class348_sub42_sub8;
             class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass356_1100.method3482(0);
-            class348_sub42_sub8_4_.method2715((byte) 92);
+            class348_sub42_sub8_4_.unlink((byte) 92);
             class348_sub42_sub8_4_.method3162(true);
             anInt1086 += class348_sub42_sub8_4_.anInt9545;
         }
@@ -132,7 +132,7 @@ final class Class60 {
             if (class348_sub42_sub8 == null) return null;
             Object object = class348_sub42_sub8.method3193(86);
             if (object == null) {
-                class348_sub42_sub8.method2715((byte) 102);
+                class348_sub42_sub8.unlink((byte) 102);
                 class348_sub42_sub8.method3162(true);
                 anInt1086 += class348_sub42_sub8.anInt9545;
                 return null;
@@ -142,7 +142,7 @@ final class Class60 {
                 aClass356_1100.method3483((byte) 90, (class348_sub42_sub8.aLong4291), class348_sub42_sub8_sub2);
                 aClass107_1089.method1005(true, class348_sub42_sub8_sub2);
                 class348_sub42_sub8_sub2.aLong7057 = 0L;
-                class348_sub42_sub8.method2715((byte) 112);
+                class348_sub42_sub8.unlink((byte) 112);
                 class348_sub42_sub8.method3162(true);
             } else {
                 aClass107_1089.method1005(true, class348_sub42_sub8);
@@ -163,7 +163,7 @@ final class Class60 {
         int i_8_ = 80 / ((i - 6) / 36);
         anInt1102++;
         if (class348_sub42_sub8 != null) {
-            class348_sub42_sub8.method2715((byte) 117);
+            class348_sub42_sub8.unlink((byte) 117);
             class348_sub42_sub8.method3162(true);
             anInt1086 += class348_sub42_sub8.anInt9545;
         }
@@ -184,7 +184,7 @@ final class Class60 {
         anInt1096++;
         for (Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass107_1089.method1011(-71); class348_sub42_sub8 != null; class348_sub42_sub8 = ((Class348_Sub42_Sub8) aClass107_1089.method1003((byte) 50))) {
             if (class348_sub42_sub8.method3195(-4)) {
-                class348_sub42_sub8.method2715((byte) 118);
+                class348_sub42_sub8.unlink((byte) 118);
                 class348_sub42_sub8.method3162(true);
                 anInt1086 += class348_sub42_sub8.anInt9545;
             }
@@ -201,7 +201,7 @@ final class Class60 {
             if (object == null) {
                 Class348_Sub42_Sub8 class348_sub42_sub8_9_ = class348_sub42_sub8;
                 class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass356_1100.method3482(0);
-                class348_sub42_sub8_9_.method2715((byte) 41);
+                class348_sub42_sub8_9_.unlink((byte) 41);
                 class348_sub42_sub8_9_.method3162(true);
                 anInt1086 += (class348_sub42_sub8_9_.anInt9545);
             } else return object;

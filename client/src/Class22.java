@@ -97,7 +97,7 @@ final class Class22 {
             if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 0) {
                 for (Class348_Sub7 class348_sub7 = ((Class348_Sub7) Class5_Sub1_Sub1.aDeque_9931.method1995(4)); class348_sub7 != null; class348_sub7 = (Class348_Sub7) Class5_Sub1_Sub1.aDeque_9931.method1990((byte) 31)) {
                     Exception_Sub1.itemTypeList.method1932(var_toolkit, class348_sub7.anInt6647, class348_sub7.anInt6648, Class240.aFontRenderer_4684, (!class348_sub7.aBoolean6650 ? null : (Class132.aPlayer_1907.aClass154_10536)), class348_sub7.anInt6642, false, (byte) 83, var_toolkit, class348_sub7.anInt6649, false, class348_sub7.anInt6645);
-                    class348_sub7.method2715((byte) 29);
+                    class348_sub7.unlink((byte) 29);
                 }
                 Class354.method3466(i + -113);
             } else {
@@ -109,7 +109,7 @@ final class Class22 {
                 }
                 for (Class348_Sub7 class348_sub7 = ((Class348_Sub7) Class5_Sub1_Sub1.aDeque_9931.method1995(i + 4)); class348_sub7 != null; class348_sub7 = (Class348_Sub7) Class5_Sub1_Sub1.aDeque_9931.method1990((byte) 118)) {
                     Exception_Sub1.itemTypeList.method1932(Class348_Sub34.aToolkit6968, class348_sub7.anInt6647, class348_sub7.anInt6648, TextureOpMonorchromeEdgeDetector.aFontRenderer_9173, (class348_sub7.aBoolean6650 ? (Class132.aPlayer_1907.aClass154_10536) : null), class348_sub7.anInt6642, false, (byte) 83, var_toolkit, class348_sub7.anInt6649, false, class348_sub7.anInt6645);
-                    class348_sub7.method2715((byte) 21);
+                    class348_sub7.unlink((byte) 21);
                 }
             }
         }

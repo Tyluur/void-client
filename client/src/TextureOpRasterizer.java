@@ -14,7 +14,7 @@ final class TextureOpRasterizer extends TextureOp {
     private final void method3151(int[][] is, byte i) {
         anInt9487++;
         if (i != -27) method3152(86);
-        int i_0_ = TextureOpPolarDistortion.anInt9139;
+        int i_0_ = TextureOpPolarDistortion.textureWidth;
         int i_1_ = Class286_Sub2.anInt6212;
         TextureMetrics.method224((byte) -40, is);
         Class348_Sub27.method3000(Option_Sub22.anInt6076, 0, Class299_Sub2.anInt6325, 0, i ^ 0x28);
@@ -98,7 +98,7 @@ final class TextureOpRasterizer extends TextureOp {
         int[][] is = this.colourCache.get(i_10_ + 1564598923, i);
         if (i_10_ != -1564599039) aClass70_9485 = null;
         if (this.colourCache.dirty) {
-            int i_11_ = TextureOpPolarDistortion.anInt9139;
+            int i_11_ = TextureOpPolarDistortion.textureWidth;
             int i_12_ = Class286_Sub2.anInt6212;
             int[][] is_13_ = new int[i_12_][i_11_];
             int[][][] is_14_ = this.colourCache.get();
@@ -109,7 +109,7 @@ final class TextureOpRasterizer extends TextureOp {
                 int[] is_18_ = is_17_[0];
                 int[] is_19_ = is_17_[1];
                 int[] is_20_ = is_17_[2];
-                for (int i_21_ = 0; i_21_ < TextureOpPolarDistortion.anInt9139; i_21_++) {
+                for (int i_21_ = 0; i_21_ < TextureOpPolarDistortion.textureWidth; i_21_++) {
                     int i_22_ = is_16_[i_21_];
                     is_20_[i_21_] = Class139.method1166(i_22_, 255) << 4;
                     is_19_[i_21_] = Class139.method1166(i_22_ >> 4, 4080);

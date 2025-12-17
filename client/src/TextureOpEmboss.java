@@ -40,7 +40,7 @@ final class TextureOpEmboss extends TextureOp {
             int[] is_6_ = this.monochromeOutput(Class299_Sub2.anInt6325 & -1 + i, 633706337, 0);
             int[] is_7_ = this.monochromeOutput(i, 633706337, 0);
             int[] is_8_ = this.monochromeOutput(Class299_Sub2.anInt6325 & i - -1, i_4_ + 633706082, 0);
-            for (int i_9_ = 0; TextureOpPolarDistortion.anInt9139 > i_9_; i_9_++) {
+            for (int i_9_ = 0; TextureOpPolarDistortion.textureWidth > i_9_; i_9_++) {
                 int i_10_ = i_5_ * (is_8_[i_9_] - is_6_[i_9_]) >> 12;
                 int i_11_ = (i_5_ * (-is_7_[Option_Sub22.anInt6076 & i_9_ - -1] + is_7_[-1 + i_9_ & Option_Sub22.anInt6076]) >> 12);
                 int i_12_ = i_11_ >> 4;
@@ -68,7 +68,7 @@ final class TextureOpEmboss extends TextureOp {
         if (i < 34) method3144((byte) 127);
     }
 
-    final void method3044(int i) {
+    final void finish(int i) {
         if (i <= 108) method3143(38);
         anInt9441++;
         method3143(-119);

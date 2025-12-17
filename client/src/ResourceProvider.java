@@ -30,7 +30,7 @@ abstract class ResourceProvider {
                     Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6673);
                     class348_sub9.aClass348_Sub16_Sub5_6673 = null;
                 }
-                class348_sub9.method2715((byte) 125);
+                class348_sub9.unlink((byte) 125);
                 break;
             }
         }

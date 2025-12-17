@@ -255,7 +255,7 @@ final class ItemTypeList {
                 boolean bool = false;
                 for (Node node = itemDefinition.aClass356_2757.method3484(0); node != null; node = itemDefinition.aClass356_2757.method3482(0)) {
                     Class254 class254 = aParamTypeList_3292.method2600((int) node.aLong4291, 28364);
-                    if (class254.aBoolean3261) node.method2715((byte) 60);
+                    if (class254.aBoolean3261) node.unlink((byte) 60);
                     else bool = true;
                 }
                 if (!bool) itemDefinition.aClass356_2757 = null;

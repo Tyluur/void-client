@@ -67,7 +67,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
         int i_1_ = -13 / ((-66 - i) / 49);
         Class348_Sub42_Sub4 class348_sub42_sub4 = method2828(-23076);
         if (class348_sub42_sub4 != null) {
-            class348_sub42_sub4.method2715((byte) 71);
+            class348_sub42_sub4.unlink((byte) 71);
             anInt8888--;
             anInt8883 = 0;
             TextureOpRange.aClass308_9180.method2305(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1);
@@ -88,7 +88,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
         if (!aBoolean8886) {
             if (method2828(-23076) == null) {
                 if (aBoolean8884) {
-                    this.method2715((byte) 23);
+                    this.unlink((byte) 23);
                     TextureOpRange.aClass308_9180.method2303(true);
                 }
             } else {
@@ -184,7 +184,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                 Class348_Sub42_Sub4 class348_sub42_sub4 = method2828(-23076);
                 if (class348_sub42_sub4 == null) {
                     if (aBoolean8884) {
-                        this.method2715((byte) 108);
+                        this.unlink((byte) 108);
                         TextureOpRange.aClass308_9180.method2303(true);
                     }
                     break;

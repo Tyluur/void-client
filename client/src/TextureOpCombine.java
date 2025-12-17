@@ -66,7 +66,7 @@ final class TextureOpCombine extends TextureOp {
                                                 do {
                                                     do {
                                                         if (i_14_ == 1) {
-                                                            for (i_14_ = 0; ((TextureOpPolarDistortion.anInt9139) > i_14_); i_14_++) {
+                                                            for (i_14_ = 0; ((TextureOpPolarDistortion.textureWidth) > i_14_); i_14_++) {
                                                                 is_5_[i_14_] = ((is_11_[i_14_]) + (is_8_[i_14_]));
                                                                 is_6_[i_14_] = ((is_9_[i_14_]) + (is_12_[i_14_]));
                                                                 is_7_[i_14_] = ((is_10_[i_14_]) + (is_13_[i_14_]));
@@ -98,21 +98,21 @@ final class TextureOpCombine extends TextureOp {
                                                             } else break;
                                                             break while_159_;
                                                         }
-                                                        for (i_14_ = 0; ((TextureOpPolarDistortion.anInt9139) > i_14_); i_14_++) {
+                                                        for (i_14_ = 0; ((TextureOpPolarDistortion.textureWidth) > i_14_); i_14_++) {
                                                             is_5_[i_14_] = (is_8_[i_14_] - (is_11_[i_14_]));
                                                             is_6_[i_14_] = (is_9_[i_14_] + -(is_12_[i_14_]));
                                                             is_7_[i_14_] = (-(is_13_[i_14_]) + (is_10_[i_14_]));
                                                         }
                                                         break while_168_;
                                                     } while (false);
-                                                    for (i_14_ = 0; (i_14_ < (TextureOpPolarDistortion.anInt9139)); i_14_++) {
+                                                    for (i_14_ = 0; (i_14_ < (TextureOpPolarDistortion.textureWidth)); i_14_++) {
                                                         is_5_[i_14_] = ((is_11_[i_14_] * is_8_[i_14_]) >> 12);
                                                         is_6_[i_14_] = ((is_12_[i_14_] * is_9_[i_14_]) >> 12);
                                                         is_7_[i_14_] = ((is_10_[i_14_] * (is_13_[i_14_])) >> 12);
                                                     }
                                                     break while_168_;
                                                 } while (false);
-                                                for (i_14_ = 0; (i_14_ < (TextureOpPolarDistortion.anInt9139)); i_14_++) {
+                                                for (i_14_ = 0; (i_14_ < (TextureOpPolarDistortion.textureWidth)); i_14_++) {
                                                     int i_15_ = is_11_[i_14_];
                                                     int i_16_ = is_13_[i_14_];
                                                     int i_17_ = is_12_[i_14_];
@@ -122,14 +122,14 @@ final class TextureOpCombine extends TextureOp {
                                                 }
                                                 break while_168_;
                                             } while (false);
-                                            for (i_14_ = 0; (i_14_ < (TextureOpPolarDistortion.anInt9139)); i_14_++) {
+                                            for (i_14_ = 0; (i_14_ < (TextureOpPolarDistortion.textureWidth)); i_14_++) {
                                                 is_5_[i_14_] = (4096 + -(((-is_11_[i_14_] + 4096) * (4096 - is_8_[i_14_])) >> 12));
                                                 is_6_[i_14_] = (4096 + -(((4096 + -is_12_[i_14_]) * (4096 - is_9_[i_14_])) >> 12));
                                                 is_7_[i_14_] = (4096 - (((-is_13_[i_14_] + 4096) * (4096 - is_10_[i_14_])) >> 12));
                                             }
                                             break while_168_;
                                         } while (false);
-                                        for (i_14_ = 0; (TextureOpPolarDistortion.anInt9139 > i_14_); i_14_++) {
+                                        for (i_14_ = 0; (TextureOpPolarDistortion.textureWidth > i_14_); i_14_++) {
                                             int i_18_ = is_11_[i_14_];
                                             int i_19_ = is_13_[i_14_];
                                             int i_20_ = is_12_[i_14_];
@@ -139,7 +139,7 @@ final class TextureOpCombine extends TextureOp {
                                         }
                                         break while_168_;
                                     } while (false);
-                                    for (i_14_ = 0; TextureOpPolarDistortion.anInt9139 > i_14_; i_14_++) {
+                                    for (i_14_ = 0; TextureOpPolarDistortion.textureWidth > i_14_; i_14_++) {
                                         int i_21_ = is_10_[i_14_];
                                         int i_22_ = is_9_[i_14_];
                                         int i_23_ = is_8_[i_14_];
@@ -149,7 +149,7 @@ final class TextureOpCombine extends TextureOp {
                                     }
                                     break while_168_;
                                 } while (false);
-                                for (i_14_ = 0; (TextureOpPolarDistortion.anInt9139 > i_14_); i_14_++) {
+                                for (i_14_ = 0; (TextureOpPolarDistortion.textureWidth > i_14_); i_14_++) {
                                     int i_24_ = is_9_[i_14_];
                                     int i_25_ = is_8_[i_14_];
                                     int i_26_ = is_10_[i_14_];
@@ -159,7 +159,7 @@ final class TextureOpCombine extends TextureOp {
                                 }
                                 break while_168_;
                             } while (false);
-                            for (i_14_ = 0; i_14_ < TextureOpPolarDistortion.anInt9139; i_14_++) {
+                            for (i_14_ = 0; i_14_ < TextureOpPolarDistortion.textureWidth; i_14_++) {
                                 int i_27_ = is_9_[i_14_];
                                 int i_28_ = is_12_[i_14_];
                                 int i_29_ = is_13_[i_14_];
@@ -172,7 +172,7 @@ final class TextureOpCombine extends TextureOp {
                             }
                             break while_168_;
                         } while (false);
-                        for (i_14_ = 0; (TextureOpPolarDistortion.anInt9139 > i_14_); i_14_++) {
+                        for (i_14_ = 0; (TextureOpPolarDistortion.textureWidth > i_14_); i_14_++) {
                             int i_33_ = is_9_[i_14_];
                             int i_34_ = is_10_[i_14_];
                             int i_35_ = is_12_[i_14_];
@@ -185,7 +185,7 @@ final class TextureOpCombine extends TextureOp {
                         }
                         break while_168_;
                     } while (false);
-                    for (i_14_ = 0; TextureOpPolarDistortion.anInt9139 > i_14_; i_14_++) {
+                    for (i_14_ = 0; TextureOpPolarDistortion.textureWidth > i_14_; i_14_++) {
                         int i_39_ = is_13_[i_14_];
                         int i_40_ = is_9_[i_14_];
                         int i_41_ = is_10_[i_14_];
@@ -198,7 +198,7 @@ final class TextureOpCombine extends TextureOp {
                     }
                     break while_168_;
                 } while (false);
-                for (i_14_ = 0; (TextureOpPolarDistortion.anInt9139 > i_14_); i_14_++) {
+                for (i_14_ = 0; (TextureOpPolarDistortion.textureWidth > i_14_); i_14_++) {
                     int i_45_ = is_8_[i_14_];
                     int i_46_ = is_10_[i_14_];
                     int i_47_ = is_13_[i_14_];
@@ -254,7 +254,7 @@ final class TextureOpCombine extends TextureOp {
                                                 do {
                                                     do {
                                                         if (i_54_ == 1) {
-                                                            for (i_54_ = 0; ((TextureOpPolarDistortion.anInt9139) > i_54_); i_54_++)
+                                                            for (i_54_ = 0; ((TextureOpPolarDistortion.textureWidth) > i_54_); i_54_++)
                                                                 is[i_54_] = ((is_52_[i_54_]) + (is_53_[i_54_]));
                                                             break while_178_;
                                                         } else if (i_54_ != 2) {
@@ -283,64 +283,64 @@ final class TextureOpCombine extends TextureOp {
                                                             } else break;
                                                             break while_169_;
                                                         }
-                                                        for (i_54_ = 0; ((TextureOpPolarDistortion.anInt9139) > i_54_); i_54_++)
+                                                        for (i_54_ = 0; ((TextureOpPolarDistortion.textureWidth) > i_54_); i_54_++)
                                                             is[i_54_] = ((is_52_[i_54_]) + -(is_53_[i_54_]));
                                                         break while_178_;
                                                     } while (false);
-                                                    for (i_54_ = 0; ((TextureOpPolarDistortion.anInt9139) > i_54_); i_54_++)
+                                                    for (i_54_ = 0; ((TextureOpPolarDistortion.textureWidth) > i_54_); i_54_++)
                                                         is[i_54_] = ((is_53_[i_54_] * (is_52_[i_54_])) >> 12);
                                                     break while_178_;
                                                 } while (false);
-                                                for (i_54_ = 0; ((TextureOpPolarDistortion.anInt9139) > i_54_); i_54_++) {
+                                                for (i_54_ = 0; ((TextureOpPolarDistortion.textureWidth) > i_54_); i_54_++) {
                                                     int i_55_ = is_53_[i_54_];
                                                     is[i_54_] = (i_55_ != 0 ? ((is_52_[i_54_] << 12) / i_55_) : 4096);
                                                 }
                                                 break while_178_;
                                             } while (false);
-                                            for (i_54_ = 0; (TextureOpPolarDistortion.anInt9139 > i_54_); i_54_++)
+                                            for (i_54_ = 0; (TextureOpPolarDistortion.textureWidth > i_54_); i_54_++)
                                                 is[i_54_] = -(((4096 - is_52_[i_54_]) * (4096 - is_53_[i_54_])) >> 12) + 4096;
                                             break while_178_;
                                         } while (false);
-                                        for (i_54_ = 0; (i_54_ < TextureOpPolarDistortion.anInt9139); i_54_++) {
+                                        for (i_54_ = 0; (i_54_ < TextureOpPolarDistortion.textureWidth); i_54_++) {
                                             int i_56_ = is_53_[i_54_];
                                             is[i_54_] = (i_56_ >= 2048 ? (4096 + -(((-i_56_ + 4096) * (4096 - is_52_[i_54_])) >> 11)) : (i_56_ * is_52_[i_54_] >> 11));
                                         }
                                         break while_178_;
                                     } while (false);
-                                    for (i_54_ = 0; i_54_ < TextureOpPolarDistortion.anInt9139; i_54_++) {
+                                    for (i_54_ = 0; i_54_ < TextureOpPolarDistortion.textureWidth; i_54_++) {
                                         int i_57_ = is_52_[i_54_];
                                         is[i_54_] = (i_57_ != 4096 ? ((is_53_[i_54_] << 12) / (-i_57_ + 4096)) : 4096);
                                     }
                                     break while_178_;
                                 } while (false);
-                                for (i_54_ = 0; i_54_ < TextureOpPolarDistortion.anInt9139; i_54_++) {
+                                for (i_54_ = 0; i_54_ < TextureOpPolarDistortion.textureWidth; i_54_++) {
                                     int i_58_ = is_52_[i_54_];
                                     is[i_54_] = (i_58_ == 0 ? 0 : -((4096 - is_53_[i_54_] << 12) / i_58_) + 4096);
                                 }
                                 break while_178_;
                             } while (false);
-                            for (i_54_ = 0; i_54_ < TextureOpPolarDistortion.anInt9139; i_54_++) {
+                            for (i_54_ = 0; i_54_ < TextureOpPolarDistortion.textureWidth; i_54_++) {
                                 int i_59_ = is_53_[i_54_];
                                 int i_60_ = is_52_[i_54_];
                                 is[i_54_] = (Math.min(i_59_, i_60_));
                             }
                             break while_178_;
                         } while (false);
-                        for (i_54_ = 0; TextureOpPolarDistortion.anInt9139 > i_54_; i_54_++) {
+                        for (i_54_ = 0; TextureOpPolarDistortion.textureWidth > i_54_; i_54_++) {
                             int i_61_ = is_53_[i_54_];
                             int i_62_ = is_52_[i_54_];
                             is[i_54_] = Math.max(i_62_, i_61_);
                         }
                         break while_178_;
                     } while (false);
-                    for (i_54_ = 0; i_54_ < TextureOpPolarDistortion.anInt9139; i_54_++) {
+                    for (i_54_ = 0; i_54_ < TextureOpPolarDistortion.textureWidth; i_54_++) {
                         int i_63_ = is_53_[i_54_];
                         int i_64_ = is_52_[i_54_];
                         is[i_54_] = (i_63_ >= i_64_ ? i_63_ + -i_64_ : i_64_ - i_63_);
                     }
                     break while_178_;
                 } while (false);
-                for (i_54_ = 0; TextureOpPolarDistortion.anInt9139 > i_54_; i_54_++) {
+                for (i_54_ = 0; TextureOpPolarDistortion.textureWidth > i_54_; i_54_++) {
                     int i_65_ = is_53_[i_54_];
                     int i_66_ = is_52_[i_54_];
                     is[i_54_] = i_66_ - -i_65_ - (i_66_ * i_65_ >> 11);

@@ -33,7 +33,7 @@ final class Class257 {
             Class348_Sub28 class348_sub28 = (Class348_Sub28) A_DEQUE___3297.method1997(8);
             if (class348_sub28 == null) break;
             class348_sub28.anInterface19_6908.w(true);
-            class348_sub28.method2715((byte) 69);
+            class348_sub28.unlink((byte) 69);
         }
         if (i > -22) aBoolean3296 = false;
     }

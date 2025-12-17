@@ -36,7 +36,7 @@ final class TextureOpWaveform extends TextureOp {
         } while (false);
     }
 
-    final void method3044(int i) {
+    final void finish(int i) {
         Class220.method1605(26188);
         if (i <= 108) method3145(-17);
         anInt9452++;
@@ -54,7 +54,7 @@ final class TextureOpWaveform extends TextureOp {
         if (this.monochromeCache.dirty) {
             int i_3_ = Option_Sub18.anIntArray6035[i];
             int i_4_ = -2048 + i_3_ >> 1;
-            for (int i_5_ = 0; (i_5_ < TextureOpPolarDistortion.anInt9139); i_5_++) {
+            for (int i_5_ = 0; (i_5_ < TextureOpPolarDistortion.textureWidth); i_5_++) {
                 int i_6_ = Class318_Sub6.anIntArray6432[i_5_];
                 int i_7_ = -2048 + i_6_ >> 1;
                 int i_8_;

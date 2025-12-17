@@ -23,7 +23,7 @@ final class TextureOpTile extends TextureOp {
         if (i_0_ != -1564599039) return null;
         int[][] is = this.colourCache.get(-111, i);
         if (this.colourCache.dirty) {
-            int i_1_ = TextureOpPolarDistortion.anInt9139 / anInt9405;
+            int i_1_ = TextureOpPolarDistortion.textureWidth / anInt9405;
             int i_2_ = Class286_Sub2.anInt6212 / anInt9410;
             int[][] is_3_;
             if (i_2_ > 0) {
@@ -36,12 +36,12 @@ final class TextureOpTile extends TextureOp {
             int[] is_8_ = is[0];
             int[] is_9_ = is[1];
             int[] is_10_ = is[2];
-            for (int i_11_ = 0; (i_11_ < TextureOpPolarDistortion.anInt9139); i_11_++) {
+            for (int i_11_ = 0; (i_11_ < TextureOpPolarDistortion.textureWidth); i_11_++) {
                 int i_12_;
                 if (i_1_ <= 0) i_12_ = 0;
                 else {
                     int i_13_ = i_11_ % i_1_;
-                    i_12_ = TextureOpPolarDistortion.anInt9139 * i_13_ / i_1_;
+                    i_12_ = TextureOpPolarDistortion.textureWidth * i_13_ / i_1_;
                 }
                 is_8_[i_11_] = is_5_[i_12_];
                 is_9_[i_11_] = is_6_[i_12_];
@@ -76,18 +76,18 @@ final class TextureOpTile extends TextureOp {
         anInt9409++;
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
-            int i_17_ = TextureOpPolarDistortion.anInt9139 / anInt9405;
+            int i_17_ = TextureOpPolarDistortion.textureWidth / anInt9405;
             int i_18_ = Class286_Sub2.anInt6212 / anInt9410;
             int[] is_19_;
             if (i_18_ > 0) {
                 int i_20_ = i % i_18_;
                 is_19_ = this.monochromeOutput(i_20_ * Class286_Sub2.anInt6212 / i_18_, 633706337, 0);
             } else is_19_ = this.monochromeOutput(0, 633706337, 0);
-            for (int i_21_ = 0; TextureOpPolarDistortion.anInt9139 > i_21_; i_21_++) {
+            for (int i_21_ = 0; TextureOpPolarDistortion.textureWidth > i_21_; i_21_++) {
                 if (i_17_ <= 0) is[i_21_] = is_19_[0];
                 else {
                     int i_22_ = i_21_ % i_17_;
-                    is[i_21_] = is_19_[(TextureOpPolarDistortion.anInt9139 * i_22_ / i_17_)];
+                    is[i_21_] = is_19_[(TextureOpPolarDistortion.textureWidth * i_22_ / i_17_)];
                 }
             }
         }

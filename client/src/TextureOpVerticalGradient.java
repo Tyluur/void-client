@@ -13,7 +13,7 @@ final class TextureOpVerticalGradient extends TextureOp {
         anInt9115++;
         if (i_0_ != 255) aDeque_9111 = null;
         int[] is = this.monochromeCache.get(0, i);
-        if (this.monochromeCache.dirty) Class214.method1579(is, 0, TextureOpPolarDistortion.anInt9139, Option_Sub18.anIntArray6035[i]);
+        if (this.monochromeCache.dirty) Class214.method1579(is, 0, TextureOpPolarDistortion.textureWidth, Option_Sub18.anIntArray6035[i]);
         return is;
     }
 

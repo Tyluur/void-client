@@ -33,7 +33,7 @@ final class Class91 {
             if (Class348_Sub23_Sub3.anInt9041 != (npc.anInt10306)) {
                 if (npc.aNPCDefinition_10505.method793(0)) Class5.method181(true, npc);
                 npc.method2448(null, -2);
-                class348_sub22.method2715((byte) 52);
+                class348_sub22.unlink((byte) 52);
                 bool = true;
             }
         }

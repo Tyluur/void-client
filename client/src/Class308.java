@@ -44,7 +44,7 @@ final class Class308 {
                 anInt3880++;
                 LinkedNode linkedNode = (LinkedNode) aClass356_3888.method3480(l, -6008);
                 if (linkedNode != null) {
-                    linkedNode.method2715((byte) 73);
+                    linkedNode.unlink((byte) 73);
                     linkedNode.method3162(true);
                     anInt3891++;
                 }
@@ -62,11 +62,11 @@ final class Class308 {
             anInt3881++;
             if ((~anInt3891) == i) {
                 LinkedNode linkedNode_0_ = aClass107_3889.method1008(20);
-                linkedNode_0_.method2715((byte) 113);
+                linkedNode_0_.unlink((byte) 113);
                 linkedNode_0_.method3162(true);
                 if (linkedNode_0_ == aLinkedNode_3887) {
                     linkedNode_0_ = aClass107_3889.method1008(20);
-                    linkedNode_0_.method2715((byte) 79);
+                    linkedNode_0_.unlink((byte) 79);
                     linkedNode_0_.method3162(true);
                 }
             } else anInt3891--;

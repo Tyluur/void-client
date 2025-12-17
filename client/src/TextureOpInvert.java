@@ -93,7 +93,7 @@ final class TextureOpInvert extends TextureOp {
             int[] is_14_ = is[0];
             int[] is_15_ = is[1];
             int[] is_16_ = is[2];
-            for (int i_17_ = 0; TextureOpPolarDistortion.anInt9139 > i_17_; i_17_++) {
+            for (int i_17_ = 0; TextureOpPolarDistortion.textureWidth > i_17_; i_17_++) {
                 is_14_[i_17_] = -is_11_[i_17_] + 4096;
                 is_15_[i_17_] = 4096 + -is_12_[i_17_];
                 is_16_[i_17_] = -is_13_[i_17_] + 4096;
@@ -112,7 +112,7 @@ final class TextureOpInvert extends TextureOp {
         if (i_18_ != 255) colourOutput(-113, -46);
         if (this.monochromeCache.dirty) {
             int[] is_19_ = this.monochromeOutput(i, 633706337, 0);
-            for (int i_20_ = 0; (i_20_ < TextureOpPolarDistortion.anInt9139); i_20_++)
+            for (int i_20_ = 0; (i_20_ < TextureOpPolarDistortion.textureWidth); i_20_++)
                 is[i_20_] = 4096 + -is_19_[i_20_];
         }
         return is;

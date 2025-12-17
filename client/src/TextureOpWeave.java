@@ -23,7 +23,7 @@ final class TextureOpWeave extends TextureOp {
         if (i_0_ != 255) anIntArray9185 = null;
         if (this.monochromeCache.dirty) {
             int i_1_ = Option_Sub18.anIntArray6035[i];
-            for (int i_2_ = 0; (i_2_ < TextureOpPolarDistortion.anInt9139); i_2_++) {
+            for (int i_2_ = 0; (i_2_ < TextureOpPolarDistortion.textureWidth); i_2_++) {
                 int i_3_ = Class318_Sub6.anIntArray6432[i_2_];
                 if (anInt9187 < i_3_ && 4096 - anInt9187 > i_3_ && i_1_ > 2048 + -anInt9187 && i_1_ < 2048 + anInt9187) {
                     int i_4_ = -i_3_ + 2048;

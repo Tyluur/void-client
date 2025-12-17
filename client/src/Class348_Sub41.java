@@ -112,7 +112,7 @@ final class Class348_Sub41 extends Node {
                         npc.x -= 512 * i_20_;
                         if ((npc.x) < 0 || i_25_ < (npc.x) || (npc.y) < 0 || i_26_ < (npc.y)) {
                             npc.method2448(null, -2);
-                            class348_sub22.method2715((byte) 80);
+                            class348_sub22.unlink((byte) 80);
                             bool_24_ = true;
                         } else {
                             boolean bool_28_ = true;
@@ -125,7 +125,7 @@ final class Class348_Sub41 extends Node {
                             if (!bool_28_) {
                                 npc.method2448(null, -2);
                                 bool_24_ = true;
-                                class348_sub22.method2715((byte) 113);
+                                class348_sub22.unlink((byte) 113);
                             } else Class74.anIntArray1233[IDKTypeList.anInt2057++] = (npc.anInt10290);
                         }
                     }
@@ -158,7 +158,7 @@ final class Class348_Sub41 extends Node {
                 for (Class348_Sub27 class348_sub27 = ((Class348_Sub27) Class348_Sub42_Sub20.aDeque_9711.method1995(4)); class348_sub27 != null; class348_sub27 = (Class348_Sub27) Class348_Sub42_Sub20.aDeque_9711.method1990((byte) 68)) {
                     class348_sub27.anInt6896 -= i_21_;
                     class348_sub27.anInt6905 -= i_20_;
-                    if (Class312.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= Class367_Sub4.mapLength) || (TextureOpBinary.mapWidth <= (class348_sub27.anInt6896)))) class348_sub27.method2715((byte) 101);
+                    if (Class312.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= Class367_Sub4.mapLength) || (TextureOpBinary.mapWidth <= (class348_sub27.anInt6896)))) class348_sub27.unlink((byte) 101);
                 }
                 if (Class312.anInt3931 != 4) {
                     for (Class348_Sub37 class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3484(0)); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3482(0))) {
@@ -166,7 +166,7 @@ final class Class348_Sub41 extends Node {
                         int i_34_ = -za_Sub2.regionTileX + i_33_;
                         int i_35_ = (int) (0x3fffL & (class348_sub37.aLong4291 >> 14));
                         int i_36_ = i_35_ + -Class90.regionTileY;
-                        if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367_Sub4.mapLength) || i_36_ >= TextureOpBinary.mapWidth) class348_sub37.method2715((byte) 37);
+                        if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367_Sub4.mapLength) || i_36_ >= TextureOpBinary.mapWidth) class348_sub37.unlink((byte) 37);
                     }
                 }
                 if (Class248.anInt3203 != 0) {

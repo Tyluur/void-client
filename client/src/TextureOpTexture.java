@@ -25,16 +25,16 @@ final class TextureOpTexture extends TextureOp {
             int[] is_2_ = is[0];
             int[] is_3_ = is[1];
             int[] is_4_ = is[2];
-            if (TextureOpPolarDistortion.anInt9139 == anInt9374) {
-                for (int i_8_ = 0; (TextureOpPolarDistortion.anInt9139 > i_8_); i_8_++) {
+            if (TextureOpPolarDistortion.textureWidth == anInt9374) {
+                for (int i_8_ = 0; (TextureOpPolarDistortion.textureWidth > i_8_); i_8_++) {
                     int i_9_ = anIntArray9375[i_1_++];
                     is_4_[i_8_] = Class139.method1166(255, i_9_) << 4;
                     is_3_[i_8_] = Class139.method1166(i_9_ >> 4, 4080);
                     is_2_[i_8_] = Class139.method1166(16711680, i_9_) >> 12;
                 }
             } else {
-                for (int i_5_ = 0; i_5_ < TextureOpPolarDistortion.anInt9139; i_5_++) {
-                    int i_6_ = anInt9374 * i_5_ / TextureOpPolarDistortion.anInt9139;
+                for (int i_5_ = 0; i_5_ < TextureOpPolarDistortion.textureWidth; i_5_++) {
+                    int i_6_ = anInt9374 * i_5_ / TextureOpPolarDistortion.textureWidth;
                     int i_7_ = anIntArray9375[i_6_ + i_1_];
                     is_4_[i_5_] = Class139.method1166(i_7_, 255) << 4;
                     is_3_[i_5_] = Class139.method1166(65280, i_7_) >> 4;

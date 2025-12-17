@@ -33,7 +33,7 @@ final class Class348_Sub42_Sub16_Sub2 extends Class348_Sub42_Sub16 {
 
     static final void method3265(int i, Node node, Node node_0_) {
         try {
-            if (node.aNode_4295 != null) node.method2715((byte) 27);
+            if (node.aNode_4295 != null) node.unlink((byte) 27);
             int i_1_ = -109 % ((6 - i) / 43);
             anInt10462++;
             node.aNode_4295 = node_0_.aNode_4295;

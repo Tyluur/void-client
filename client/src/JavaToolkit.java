@@ -754,7 +754,7 @@ final class JavaToolkit extends Toolkit {
     final void method3701(Canvas canvas) {
         if (aCanvas7468 == canvas) method3677(null);
         JavaSurface javaSurface = ((JavaSurface) aClass356_7467.method3480(canvas.hashCode(), -6008));
-        if (javaSurface != null) javaSurface.method2715((byte) 100);
+        if (javaSurface != null) javaSurface.unlink((byte) 100);
     }
 
     final void L(int i, int i_226_, int i_227_) {
@@ -1950,7 +1950,7 @@ final class JavaToolkit extends Toolkit {
     final void method3669(Canvas canvas, int i, int i_578_) {
         JavaSurface javaSurface = ((JavaSurface) aClass356_7467.method3480(canvas.hashCode(), -6008));
         if (javaSurface != null) {
-            javaSurface.method2715((byte) 95);
+            javaSurface.unlink((byte) 95);
             javaSurface = Class110.method1035(9029, i_578_, canvas, i);
             aClass356_7467.method3483((byte) 112, canvas.hashCode(), javaSurface);
             if (aCanvas7468 == canvas && offscreenSurface == null) {

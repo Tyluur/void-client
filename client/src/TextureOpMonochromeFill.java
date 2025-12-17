@@ -7,12 +7,12 @@ final class TextureOpMonochromeFill extends TextureOp {
     static int anInt9217;
     static int anInt9218;
     static int anInt9219;
-    private int anInt9220 = 4096;
+    private int value = 4096;
     static int anInt9221;
 
     final void decode(Packet packet, int i, int i_0_) {
         int i_1_ = i;
-        if (i_1_ == 0) anInt9220 = (packet.readUnsignedByte(255) << 12) / 255;
+        if (i_1_ == 0) value = (packet.readUnsignedByte(255) << 12) / 255;
         if (i_0_ == 31015) anInt9217++;
     }
 
@@ -31,7 +31,7 @@ final class TextureOpMonochromeFill extends TextureOp {
 
     TextureOpMonochromeFill(int i) {
         super(0, true);
-        anInt9220 = i;
+        value = i;
     }
 
     static final void method3086(int i, Class348_Sub16_Sub3 class348_sub16_sub3, int i_5_, Index index, boolean bool, int i_6_, int i_7_) {
@@ -48,7 +48,7 @@ final class TextureOpMonochromeFill extends TextureOp {
     final int[] monochromeOutput(int i, int i_8_) {
         anInt9221++;
         int[] is = this.monochromeCache.get(0, i);
-        if (this.monochromeCache.dirty) Class214.method1579(is, 0, TextureOpPolarDistortion.anInt9139, anInt9220);
+        if (this.monochromeCache.dirty) Class214.method1579(is, 0, TextureOpPolarDistortion.textureWidth, value);
         if (i_8_ != 255) method3085(63);
         return is;
     }

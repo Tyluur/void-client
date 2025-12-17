@@ -30,7 +30,7 @@ final class TextureOpBinary extends TextureOp {
         anInt9105++;
         if (i_2_ < -127) {
             Class348_Sub13 class348_sub13 = Class258_Sub4.method1974((byte) -122, i, bool);
-            if (class348_sub13 != null) class348_sub13.method2715((byte) 97);
+            if (class348_sub13 != null) class348_sub13.unlink((byte) 97);
         }
     }
 
@@ -59,7 +59,7 @@ final class TextureOpBinary extends TextureOp {
         int[] is = this.monochromeCache.get(i_3_ + -255, i);
         if (this.monochromeCache.dirty) {
             int[] is_4_ = this.monochromeOutput(i, 633706337, 0);
-            for (int i_5_ = 0; (TextureOpPolarDistortion.anInt9139 > i_5_); i_5_++) {
+            for (int i_5_ = 0; (TextureOpPolarDistortion.textureWidth > i_5_); i_5_++) {
                 int i_6_ = is_4_[i_5_];
                 is[i_5_] = i_6_ >= anInt9104 && (i_6_ <= anInt9107) ? 4096 : 0;
             }

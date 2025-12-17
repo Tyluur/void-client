@@ -109,7 +109,11 @@ final class ColourImageCache {
     final int[][] get(int i, int index) {
         anInt4034++;
         if (i >= -75) method2554((byte) -61);
-        if (capacity != height) {
+        if (capacity == height) {
+            this.dirty = slots[index] == null;
+            slots[index] = Class341.USED;
+            return pixels[index];
+        } else {
             if (capacity == 1) {
                 this.dirty = index != cachedId;
                 cachedId = index;
@@ -122,7 +126,7 @@ final class ColourImageCache {
                     ColourImageCacheSlot last = (ColourImageCacheSlot) history.last(-126);
                     slot = new ColourImageCacheSlot(index, last.slot);
                     slots[last.id] = null;
-                    last.method2715((byte) 56);
+                    last.unlink((byte) 56);
                 } else {
                     slot = new ColourImageCacheSlot(index, count);
                     count++;
@@ -132,9 +136,6 @@ final class ColourImageCache {
             history.addFirst(slot, -110);
             return (pixels[slot.slot]);
         }
-        this.dirty = slots[index] == null;
-        slots[index] = Class341.USED;
-        return pixels[index];
     }
 
     // method2558

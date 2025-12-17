@@ -39,7 +39,7 @@ final class TextureOpNoise extends TextureOp {
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
             int i_4_ = Option_Sub18.anIntArray6035[i];
-            for (int i_5_ = 0; (i_5_ < TextureOpPolarDistortion.anInt9139); i_5_++)
+            for (int i_5_ = 0; (i_5_ < TextureOpPolarDistortion.textureWidth); i_5_++)
                 is[i_5_] = method3103(i_4_, Class318_Sub6.anIntArray6432[i_5_], 22) % 4096;
         }
         if (i_3_ != 255) monochromeOutput(38, -42);

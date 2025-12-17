@@ -116,7 +116,7 @@ final class MonochromeImageCache {
                     MonochromeImageCacheSlot last = (MonochromeImageCacheSlot) history.last(i + -123);
                     slot = new MonochromeImageCacheSlot(index, last.slot);
                     slots[last.id] = null;
-                    last.method2715((byte) 80);
+                    last.unlink((byte) 80);
                 }
                 slots[index] = slot;
             } else this.dirty = false;

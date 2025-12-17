@@ -36,7 +36,7 @@ final class TextureOpKaleidoscope extends TextureOp {
             int[] is_3_ = is[0];
             int[] is_4_ = is[1];
             int[] is_5_ = is[2];
-            for (int i_6_ = 0; (TextureOpPolarDistortion.anInt9139 > i_6_); i_6_++) {
+            for (int i_6_ = 0; (TextureOpPolarDistortion.textureWidth > i_6_); i_6_++) {
                 method3139(i_6_, i, (byte) -31);
                 int[][] is_7_ = this.outputColour((byte) 43, Class344.anInt4265, 0);
                 is_3_[i_6_] = is_7_[0][Class121.anInt1796];
@@ -52,7 +52,7 @@ final class TextureOpKaleidoscope extends TextureOp {
         if (i_8_ != 255) aClass46ArrayArray9427 = null;
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
-            for (int i_9_ = 0; (i_9_ < TextureOpPolarDistortion.anInt9139); i_9_++) {
+            for (int i_9_ = 0; (i_9_ < TextureOpPolarDistortion.textureWidth); i_9_++) {
                 method3139(i_9_, i, (byte) -31);
                 int[] is_10_ = this.monochromeOutput(Class344.anInt4265, i_8_ ^ 0x25c5979e, 0);
                 is[i_9_] = is_10_[Class121.anInt1796];
@@ -90,14 +90,14 @@ final class TextureOpKaleidoscope extends TextureOp {
                                 Class121.anInt1796 = i_12_;
                             } else if ((double) f >= 2.356194490192345 && (double) f <= 3.141592653589793) {
                                 Class344.anInt4265 = i_12_;
-                                Class121.anInt1796 = -i + TextureOpPolarDistortion.anInt9139;
+                                Class121.anInt1796 = -i + TextureOpPolarDistortion.textureWidth;
                             }
                         } else {
-                            Class121.anInt1796 = -i_12_ + TextureOpPolarDistortion.anInt9139;
+                            Class121.anInt1796 = -i_12_ + TextureOpPolarDistortion.textureWidth;
                             Class344.anInt4265 = -i + Class286_Sub2.anInt6212;
                         }
                     } else {
-                        Class121.anInt1796 = -i + TextureOpPolarDistortion.anInt9139;
+                        Class121.anInt1796 = -i + TextureOpPolarDistortion.textureWidth;
                         Class344.anInt4265 = -i_12_ + Class286_Sub2.anInt6212;
                     }
                 } else {
@@ -105,7 +105,7 @@ final class TextureOpKaleidoscope extends TextureOp {
                     Class344.anInt4265 = Class286_Sub2.anInt6212 - i_12_;
                 }
             } else {
-                Class121.anInt1796 = TextureOpPolarDistortion.anInt9139 - i_12_;
+                Class121.anInt1796 = TextureOpPolarDistortion.textureWidth - i_12_;
                 Class344.anInt4265 = i;
             }
         } else {

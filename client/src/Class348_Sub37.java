@@ -41,7 +41,7 @@ final class Class348_Sub37 extends Node {
             int code = packet.readUnsignedByte(255);
             op.decode(packet, code, 31015);
         }
-        op.method3044(120);
+        op.finish(120);
         return op;
     }
 

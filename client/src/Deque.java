@@ -181,7 +181,7 @@ final class Deque {
             for (; ; ) {
                 Node node = (this.aNode_3334.aNode_4294);
                 if (this.aNode_3334 == node) break;
-                node.method2715((byte) 24);
+                node.unlink((byte) 24);
             }
             aNode_3342 = null;
         }
@@ -192,7 +192,7 @@ final class Deque {
         if (i != 8) aClass190ArrayArray3335 = null;
         Node node = this.aNode_3334.aNode_4294;
         if (this.aNode_3334 == node) return null;
-        node.method2715((byte) 114);
+        node.unlink((byte) 114);
         return node;
     }
 
@@ -208,7 +208,7 @@ final class Deque {
     }
 
     final void method1999(Node node, int i) {
-        if (node.aNode_4295 != null) node.method2715((byte) 91);
+        if (node.aNode_4295 != null) node.unlink((byte) 91);
         anInt3328++;
         node.aNode_4294 = this.aNode_3334;
         node.aNode_4295 = this.aNode_3334.aNode_4295;
@@ -230,7 +230,7 @@ final class Deque {
     // method2001
     final void addFirst(Node node, int i) {
         anInt3330++;
-        if (node.aNode_4295 != null) node.method2715((byte) 63);
+        if (node.aNode_4295 != null) node.unlink((byte) 63);
         node.aNode_4295 = this.aNode_3334;
         node.aNode_4294 = this.aNode_3334.aNode_4294;
         if (i > -89) aFontRenderer_3326 = null;

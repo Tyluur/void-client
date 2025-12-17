@@ -108,7 +108,7 @@ final class Class348_Sub49_Sub2 extends Packet {
         textureOpPerlinNoise.anInt9158 = i_17_;
         textureOpPerlinNoise.anInt9164 = i;
         textureOpPerlinNoise.aBoolean9160 = bool_20_;
-        textureOpPerlinNoise.method3044(109);
+        textureOpPerlinNoise.finish(109);
         NPCDefinition.setSize(i_18_, i_16_, (byte) 120);
         if (bool != true) anIntArray9757 = null;
         for (int i_21_ = 0; i_21_ < i_18_; i_21_++)

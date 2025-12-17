@@ -132,7 +132,7 @@ final class Class5_Sub3 extends Class5 {
             try {
                 anInt8375++;
                 if (i == 6 && !Class5_Sub1.aBoolean8335) {
-                    class348_sub42_sub12.method2715((byte) 111);
+                    class348_sub42_sub12.unlink((byte) 111);
                     Class73.anInt4776--;
                     if (class348_sub42_sub12.aBoolean9611) {
                         for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-99)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 110))) {

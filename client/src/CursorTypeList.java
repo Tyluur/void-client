@@ -84,7 +84,7 @@ final class CursorTypeList {
     static final void method1288(int i, int i_2_) {
         anInt2186++;
         for (Node node = QuickChatCatTypeList.aClass356_2959.method3484(0); node != null; node = QuickChatCatTypeList.aClass356_2959.method3482(0)) {
-            if ((node.aLong4291 >> 48 & 0xffffL) == (long) i_2_) node.method2715((byte) 119);
+            if ((node.aLong4291 >> 48 & 0xffffL) == (long) i_2_) node.unlink((byte) 119);
         }
     }
 

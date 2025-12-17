@@ -59,7 +59,7 @@ final class TextureOpMonorchromeEdgeDetector extends TextureOp {
             int[] is_6_ = this.monochromeOutput(Class299_Sub2.anInt6325 & -1 + i, 633706337, 0);
             int[] is_7_ = this.monochromeOutput(i, 633706337, 0);
             int[] is_8_ = this.monochromeOutput(i - -1 & Class299_Sub2.anInt6325, 633706337, 0);
-            for (int i_9_ = 0; TextureOpPolarDistortion.anInt9139 > i_9_; i_9_++) {
+            for (int i_9_ = 0; TextureOpPolarDistortion.textureWidth > i_9_; i_9_++) {
                 int i_10_ = anInt9167 * (-is_6_[i_9_] + is_8_[i_9_]);
                 int i_11_ = (anInt9167 * (-is_7_[Option_Sub22.anInt6076 & -1 + i_9_] + is_7_[Option_Sub22.anInt6076 & i_9_ - -1]));
                 int i_12_ = i_11_ >> 12;

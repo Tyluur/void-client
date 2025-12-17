@@ -145,7 +145,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub41 class348_sub41_10_ = ((Class348_Sub41) Class125.aClass356_4915.method3480(i, -6008));
             if (class348_sub41_10_ != null) Class127_Sub1.method1118((class348_sub41 == null || (class348_sub41_10_.anInt7050 != class348_sub41.anInt7050)), false, class348_sub41_10_, 2533);
             if (class348_sub41 != null) {
-                class348_sub41.method2715((byte) 32);
+                class348_sub41.unlink((byte) 32);
                 Class125.aClass356_4915.method3483((byte) 102, i, class348_sub41);
             }
             Class46 class46 = FontRenderer.method2570(1512932720, i_9_);
@@ -1160,7 +1160,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                     else class348_sub44_148_ = new Class348_Sub44(0, i_144_);
                 } else {
                     class348_sub44_148_ = new Class348_Sub44((class348_sub44.anInt7098), i_144_);
-                    class348_sub44.method2715((byte) 91);
+                    class348_sub44.unlink((byte) 91);
                 }
                 QuickChatCatTypeList.aClass356_2959.method3483((byte) 125, l, class348_sub44_148_);
             }
@@ -1411,7 +1411,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 int i_190_ = (int) (0x3fffL & (class348_sub37.aLong4291 >> 14));
                 int i_191_ = -Class90.regionTileY + i_190_;
                 if (i == TextureOpColourGradient.anInt9200 && NPCTypeList.anInt3581 <= i_189_ && 8 + NPCTypeList.anInt3581 > i_189_ && Class73.anInt4786 <= i_191_ && Class73.anInt4786 - -8 > i_191_) {
-                    class348_sub37.method2715((byte) 89);
+                    class348_sub37.unlink((byte) 89);
                     if (i_189_ >= 0 && i_191_ >= 0 && i_189_ < Class367_Sub4.mapLength && (i_191_ < TextureOpBinary.mapWidth)) Class203.method1479(i_191_, (byte) -118, i_189_, TextureOpColourGradient.anInt9200);
                 }
             }
@@ -1557,7 +1557,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 Class348_Sub44 class348_sub44_212_;
                 if (class348_sub44 != null) {
                     class348_sub44_212_ = new Class348_Sub44(i_210_, (class348_sub44.anInt7093));
-                    class348_sub44.method2715((byte) 80);
+                    class348_sub44.unlink((byte) 80);
                 } else if (i_211_ == -1) class348_sub44_212_ = (new Class348_Sub44(i_210_, FontRenderer.method2570(1512932720, i_209_).aClass348_Sub44_748.anInt7093));
                 else class348_sub44_212_ = new Class348_Sub44(i_210_, -1);
                 QuickChatCatTypeList.aClass356_2959.method3483((byte) 114, l, class348_sub44_212_);

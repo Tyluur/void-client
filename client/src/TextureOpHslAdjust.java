@@ -40,7 +40,7 @@ final class TextureOpHslAdjust extends TextureOp {
         if (i != 2681) aBoolean9403 = true;
         Class348_Sub42_Sub15 class348_sub42_sub15 = ((Class348_Sub42_Sub15) Class367_Sub4.aClass107_7325.method1011(-47));
         if (class348_sub42_sub15 != null) {
-            class348_sub42_sub15.method2715((byte) 81);
+            class348_sub42_sub15.unlink((byte) 81);
             class348_sub42_sub15.method3162(true);
             return class348_sub42_sub15;
         }
@@ -48,7 +48,7 @@ final class TextureOpHslAdjust extends TextureOp {
             class348_sub42_sub15 = (Class348_Sub42_Sub15) s_Sub2.aClass107_8241.method1011(-87);
             if (class348_sub42_sub15 == null) return null;
             if (Class62.safeTime(-59) < class348_sub42_sub15.method3250((byte) -51)) return null;
-            class348_sub42_sub15.method2715((byte) 113);
+            class348_sub42_sub15.unlink((byte) 113);
             class348_sub42_sub15.method3162(true);
         } while ((~0x7fffffffffffffffL & class348_sub42_sub15.aLong7057) == 0L);
         return class348_sub42_sub15;
@@ -125,7 +125,7 @@ final class TextureOpHslAdjust extends TextureOp {
             int[] is_13_ = is[0];
             int[] is_14_ = is[1];
             int[] is_15_ = is[2];
-            for (int i_16_ = 0; (i_16_ < TextureOpPolarDistortion.anInt9139); i_16_++) {
+            for (int i_16_ = 0; (i_16_ < TextureOpPolarDistortion.textureWidth); i_16_++) {
                 method3129(is_10_[i_16_], is_11_[i_16_], (byte) 82, is_12_[i_16_]);
                 anInt9401 += anInt9390;
                 anInt9400 += anInt9402;
