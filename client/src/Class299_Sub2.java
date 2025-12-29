@@ -4,7 +4,7 @@
 
 abstract class Class299_Sub2 extends Class299 {
     static int anInt6324;
-    static int anInt6325;
+    static int heightMask;
     static int anInt6326;
     static boolean aBoolean6327 = false;
     static Class78 aClass78_6328;
@@ -24,7 +24,7 @@ abstract class Class299_Sub2 extends Class299 {
     }
 
     static final void method2269(boolean bool) {
-        if (bool != true) anInt6325 = -78;
+        if (bool != true) heightMask = -78;
         Class72.method739();
         anInt6326++;
     }

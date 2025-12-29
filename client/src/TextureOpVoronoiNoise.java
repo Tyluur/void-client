@@ -65,14 +65,14 @@ final class TextureOpVoronoiNoise extends TextureOp {
         int[] is = this.monochromeCache.get(0, i);
         if (i_0_ != 255) finish(-57);
         if (this.monochromeCache.dirty) {
-            int i_1_ = anInt9117 * Option_Sub18.anIntArray6035[i] + 2048;
+            int i_1_ = anInt9117 * Option_Sub18.normalisedY[i] + 2048;
             int i_2_ = i_1_ >> 12;
             int i_3_ = 1 + i_2_;
             int i_4_ = 0;
             while_140_:
-            for (/**/; TextureOpPolarDistortion.textureWidth > i_4_; i_4_++) {
+            for (/**/; TextureOpPolarDistortion.width > i_4_; i_4_++) {
                 Class348_Sub42_Sub20.anInt9715 = Class215.anInt2835 = Class147.anInt2023 = Class135_Sub1.anInt4715 = 2147483647;
-                int i_5_ = 2048 - -(Class318_Sub6.anIntArray6432[i_4_] * anInt9129);
+                int i_5_ = 2048 - -(Class318_Sub6.normalisedX[i_4_] * anInt9129);
                 int i_6_ = i_5_ >> 12;
                 int i_7_ = i_6_ + 1;
                 for (int i_8_ = i_2_ + -1; i_8_ <= i_3_; i_8_++) {

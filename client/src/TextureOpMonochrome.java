@@ -26,7 +26,7 @@ final class TextureOpMonochrome extends TextureOp {
             int[] is_2_ = is_1_[0];
             int[] is_3_ = is_1_[1];
             int[] is_4_ = is_1_[2];
-            for (int i_5_ = 0; TextureOpPolarDistortion.textureWidth > i_5_; i_5_++)
+            for (int i_5_ = 0; TextureOpPolarDistortion.width > i_5_; i_5_++)
                 is[i_5_] = (is_2_[i_5_] - (-is_3_[i_5_] - is_4_[i_5_])) / 3;
         }
         return is;

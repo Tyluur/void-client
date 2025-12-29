@@ -125,7 +125,7 @@ final class TextureOpHslAdjust extends TextureOp {
             int[] is_13_ = is[0];
             int[] is_14_ = is[1];
             int[] is_15_ = is[2];
-            for (int i_16_ = 0; (i_16_ < TextureOpPolarDistortion.textureWidth); i_16_++) {
+            for (int i_16_ = 0; (i_16_ < TextureOpPolarDistortion.width); i_16_++) {
                 method3129(is_10_[i_16_], is_11_[i_16_], (byte) 82, is_12_[i_16_]);
                 anInt9401 += anInt9390;
                 anInt9400 += anInt9402;

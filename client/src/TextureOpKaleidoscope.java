@@ -36,7 +36,7 @@ final class TextureOpKaleidoscope extends TextureOp {
             int[] is_3_ = is[0];
             int[] is_4_ = is[1];
             int[] is_5_ = is[2];
-            for (int i_6_ = 0; (TextureOpPolarDistortion.textureWidth > i_6_); i_6_++) {
+            for (int i_6_ = 0; (TextureOpPolarDistortion.width > i_6_); i_6_++) {
                 method3139(i_6_, i, (byte) -31);
                 int[][] is_7_ = this.outputColour((byte) 43, Class344.anInt4265, 0);
                 is_3_[i_6_] = is_7_[0][Class121.anInt1796];
@@ -52,7 +52,7 @@ final class TextureOpKaleidoscope extends TextureOp {
         if (i_8_ != 255) aClass46ArrayArray9427 = null;
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
-            for (int i_9_ = 0; (i_9_ < TextureOpPolarDistortion.textureWidth); i_9_++) {
+            for (int i_9_ = 0; (i_9_ < TextureOpPolarDistortion.width); i_9_++) {
                 method3139(i_9_, i, (byte) -31);
                 int[] is_10_ = this.monochromeOutput(Class344.anInt4265, i_8_ ^ 0x25c5979e, 0);
                 is[i_9_] = is_10_[Class121.anInt1796];
@@ -73,8 +73,8 @@ final class TextureOpKaleidoscope extends TextureOp {
 
     private final void method3139(int i, int i_12_, byte i_13_) {
         anInt9425++;
-        int i_14_ = Class318_Sub6.anIntArray6432[i];
-        int i_15_ = Option_Sub18.anIntArray6035[i_12_];
+        int i_14_ = Class318_Sub6.normalisedX[i];
+        int i_15_ = Option_Sub18.normalisedY[i_12_];
         if (i_13_ != -31) method3139(-44, -111, (byte) 48);
         float f = (float) Math.atan2(i_14_ + -2048, i_15_ + -2048);
         if ((double) f >= -3.141592653589793 && (double) f <= -2.356194490192345) {
@@ -86,33 +86,33 @@ final class TextureOpKaleidoscope extends TextureOp {
                     if (!(f >= 0.0F) || !((double) f <= 0.7853981633974483)) {
                         if (!((double) f >= 0.7853981633974483) || !((double) f <= 1.5707963267948966)) {
                             if ((double) f >= 1.5707963267948966 && (double) f <= 2.356194490192345) {
-                                Class344.anInt4265 = Class286_Sub2.anInt6212 + -i;
+                                Class344.anInt4265 = Class286_Sub2.height + -i;
                                 Class121.anInt1796 = i_12_;
                             } else if ((double) f >= 2.356194490192345 && (double) f <= 3.141592653589793) {
                                 Class344.anInt4265 = i_12_;
-                                Class121.anInt1796 = -i + TextureOpPolarDistortion.textureWidth;
+                                Class121.anInt1796 = -i + TextureOpPolarDistortion.width;
                             }
                         } else {
-                            Class121.anInt1796 = -i_12_ + TextureOpPolarDistortion.textureWidth;
-                            Class344.anInt4265 = -i + Class286_Sub2.anInt6212;
+                            Class121.anInt1796 = -i_12_ + TextureOpPolarDistortion.width;
+                            Class344.anInt4265 = -i + Class286_Sub2.height;
                         }
                     } else {
-                        Class121.anInt1796 = -i + TextureOpPolarDistortion.textureWidth;
-                        Class344.anInt4265 = -i_12_ + Class286_Sub2.anInt6212;
+                        Class121.anInt1796 = -i + TextureOpPolarDistortion.width;
+                        Class344.anInt4265 = -i_12_ + Class286_Sub2.height;
                     }
                 } else {
                     Class121.anInt1796 = i;
-                    Class344.anInt4265 = Class286_Sub2.anInt6212 - i_12_;
+                    Class344.anInt4265 = Class286_Sub2.height - i_12_;
                 }
             } else {
-                Class121.anInt1796 = TextureOpPolarDistortion.textureWidth - i_12_;
+                Class121.anInt1796 = TextureOpPolarDistortion.width - i_12_;
                 Class344.anInt4265 = i;
             }
         } else {
             Class344.anInt4265 = i;
             Class121.anInt1796 = i_12_;
         }
-        Class344.anInt4265 &= Class299_Sub2.anInt6325;
-        Class121.anInt1796 &= Option_Sub22.anInt6076;
+        Class344.anInt4265 &= Class299_Sub2.heightMask;
+        Class121.anInt1796 &= Option_Sub22.widthMask;
     }
 }

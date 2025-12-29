@@ -9,7 +9,7 @@ final class Option_Sub22 extends Option {
     static int anInt6073;
     static int anInt6074;
     static Class114 aClass114_6075 = new Class114(89, 0);
-    static int anInt6076;
+    static int widthMask;
 
     final int method1710(int i) {
         anInt6072++;
@@ -20,7 +20,7 @@ final class Option_Sub22 extends Option {
     final void method1716(boolean bool) {
         if (this.anInt3138 != 1 && this.anInt3138 != 0) this.anInt3138 = method1710(20014);
         anInt6070++;
-        if (bool != false) anInt6076 = 59;
+        if (bool != false) widthMask = 59;
     }
 
     final void method1712(int i, int i_0_) {
@@ -50,7 +50,7 @@ final class Option_Sub22 extends Option {
 
     final int method1714(int i, int i_2_) {
         anInt6073++;
-        if (i != 3) anInt6076 = -121;
+        if (i != 3) widthMask = -121;
         return 1;
     }
 }

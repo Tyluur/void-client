@@ -105,15 +105,15 @@ final class TextureOpColourEdgeDetector extends TextureOp {
         int[][] is = this.colourCache.get(-111, i);
         if (i_7_ != -1564599039) method3140(72, -13);
         if (this.colourCache.dirty) {
-            int[] is_8_ = this.monochromeOutput(-1 + i & Class299_Sub2.anInt6325, 633706337, 0);
+            int[] is_8_ = this.monochromeOutput(-1 + i & Class299_Sub2.heightMask, 633706337, 0);
             int[] is_9_ = this.monochromeOutput(i, i_7_ + -2096661920, 0);
-            int[] is_10_ = this.monochromeOutput(Class299_Sub2.anInt6325 & 1 + i, 633706337, 0);
+            int[] is_10_ = this.monochromeOutput(Class299_Sub2.heightMask & 1 + i, 633706337, 0);
             int[] is_11_ = is[0];
             int[] is_12_ = is[1];
             int[] is_13_ = is[2];
-            for (int i_14_ = 0; TextureOpPolarDistortion.textureWidth > i_14_; i_14_++) {
+            for (int i_14_ = 0; TextureOpPolarDistortion.width > i_14_; i_14_++) {
                 int i_15_ = (-is_8_[i_14_] + is_10_[i_14_]) * anInt9438;
-                int i_16_ = (anInt9438 * (is_9_[1 + i_14_ & Option_Sub22.anInt6076] - is_9_[Option_Sub22.anInt6076 & -1 + i_14_]));
+                int i_16_ = (anInt9438 * (is_9_[1 + i_14_ & Option_Sub22.widthMask] - is_9_[Option_Sub22.widthMask & -1 + i_14_]));
                 int i_17_ = i_16_ >> 12;
                 int i_18_ = i_15_ >> 12;
                 int i_19_ = i_17_ * i_17_ >> 12;

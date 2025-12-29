@@ -101,18 +101,18 @@ final class TextureOpIrregularBricks extends TextureOp {
             int i_7_ = 88 % ((i - 57) / 55);
             int i_8_ = anInt9306 * anInt9314 >> 12;
             int i_9_ = (anInt9306 - (i_8_ > 0 ? Mesh.method1097((byte) 82, i_8_, random) : 0));
-            if (TextureOpPolarDistortion.textureWidth <= i_3_) i_3_ -= TextureOpPolarDistortion.textureWidth;
+            if (TextureOpPolarDistortion.width <= i_3_) i_3_ -= TextureOpPolarDistortion.width;
             if (i_9_ <= 0) {
-                if (TextureOpPolarDistortion.textureWidth < i_3_ + i_5_) {
-                    int i_10_ = TextureOpPolarDistortion.textureWidth + -i_3_;
+                if (TextureOpPolarDistortion.width < i_3_ + i_5_) {
+                    int i_10_ = TextureOpPolarDistortion.width + -i_3_;
                     for (int i_11_ = 0; i_11_ < i_2_; i_11_++) {
                         int[] is_12_ = is[i_11_ + i_4_];
-                        Class214.method1579(is_12_, i_3_, i_10_, i_6_);
-                        Class214.method1579(is_12_, 0, i_5_ - i_10_, i_6_);
+                        Class214.fill(is_12_, i_3_, i_10_, i_6_);
+                        Class214.fill(is_12_, 0, i_5_ - i_10_, i_6_);
                     }
                 } else {
                     for (int i_13_ = 0; i_2_ > i_13_; i_13_++)
-                        Class214.method1579(is[i_13_ + i_4_], i_3_, i_5_, i_6_);
+                        Class214.fill(is[i_13_ + i_4_], i_3_, i_5_, i_6_);
                 }
             } else if (i_2_ > 0 && i_5_ > 0) {
                 int i_14_ = i_5_ / 2;
@@ -128,19 +128,19 @@ final class TextureOpIrregularBricks extends TextureOp {
                         if (anInt9312 == 0) {
                             for (int i_23_ = 0; i_23_ < i_16_; i_23_++) {
                                 int i_24_ = i_6_ * i_23_ / i_16_;
-                                is_21_[Class139.method1166(i_23_ + i_3_, (Option_Sub22.anInt6076))] = is_21_[(Class139.method1166(Option_Sub22.anInt6076, i_3_ - (-i_5_ + (i_23_ - -1))))] = i_22_ * i_24_ >> 12;
+                                is_21_[Class139.method1166(i_23_ + i_3_, (Option_Sub22.widthMask))] = is_21_[(Class139.method1166(Option_Sub22.widthMask, i_3_ - (-i_5_ + (i_23_ - -1))))] = i_22_ * i_24_ >> 12;
                             }
                         } else {
                             for (int i_25_ = 0; i_16_ > i_25_; i_25_++) {
                                 int i_26_ = i_6_ * i_25_ / i_16_;
-                                is_21_[Class139.method1166((Option_Sub22.anInt6076), i_25_ + i_3_)] = is_21_[(Class139.method1166(i_3_ - -i_5_ + (-i_25_ - 1), Option_Sub22.anInt6076))] = Math.min(i_26_, i_22_);
+                                is_21_[Class139.method1166((Option_Sub22.widthMask), i_25_ + i_3_)] = is_21_[(Class139.method1166(i_3_ - -i_5_ + (-i_25_ - 1), Option_Sub22.widthMask))] = Math.min(i_26_, i_22_);
                             }
                         }
-                        if (TextureOpPolarDistortion.textureWidth >= i_19_ + i_18_) Class214.method1579(is_21_, i_18_, i_19_, i_22_);
+                        if (TextureOpPolarDistortion.width >= i_19_ + i_18_) Class214.fill(is_21_, i_18_, i_19_, i_22_);
                         else {
-                            int i_27_ = -i_18_ + TextureOpPolarDistortion.textureWidth;
-                            Class214.method1579(is_21_, i_18_, i_27_, i_22_);
-                            Class214.method1579(is_21_, 0, i_19_ - i_27_, i_22_);
+                            int i_27_ = -i_18_ + TextureOpPolarDistortion.width;
+                            Class214.fill(is_21_, i_18_, i_27_, i_22_);
+                            Class214.fill(is_21_, 0, i_19_ - i_27_, i_22_);
                         }
                     } else {
                         int i_28_ = -1 + (-i_20_ + i_2_);
@@ -149,28 +149,28 @@ final class TextureOpIrregularBricks extends TextureOp {
                             if (anInt9312 == 0) {
                                 for (int i_30_ = 0; i_16_ > i_30_; i_30_++) {
                                     int i_31_ = i_6_ * i_30_ / i_16_;
-                                    is_21_[Class139.method1166((Option_Sub22.anInt6076), i_30_ + i_3_)] = is_21_[(Class139.method1166(Option_Sub22.anInt6076, -1 + i_5_ + i_3_ - i_30_))] = i_31_ * i_29_ >> 12;
+                                    is_21_[Class139.method1166((Option_Sub22.widthMask), i_30_ + i_3_)] = is_21_[(Class139.method1166(Option_Sub22.widthMask, -1 + i_5_ + i_3_ - i_30_))] = i_31_ * i_29_ >> 12;
                                 }
                             } else {
                                 for (int i_32_ = 0; (i_16_ > i_32_); i_32_++) {
                                     int i_33_ = i_32_ * i_6_ / i_16_;
-                                    is_21_[Class139.method1166((Option_Sub22.anInt6076), i_3_ + i_32_)] = is_21_[(Class139.method1166(Option_Sub22.anInt6076, -i_32_ + i_5_ + (i_3_ + -1)))] = Math.min(i_29_, i_33_);
+                                    is_21_[Class139.method1166((Option_Sub22.widthMask), i_3_ + i_32_)] = is_21_[(Class139.method1166(Option_Sub22.widthMask, -i_32_ + i_5_ + (i_3_ + -1)))] = Math.min(i_29_, i_33_);
                                 }
                             }
-                            if (i_19_ + i_18_ <= TextureOpPolarDistortion.textureWidth) Class214.method1579(is_21_, i_18_, i_19_, i_29_);
+                            if (i_19_ + i_18_ <= TextureOpPolarDistortion.width) Class214.fill(is_21_, i_18_, i_19_, i_29_);
                             else {
-                                int i_34_ = -i_18_ + TextureOpPolarDistortion.textureWidth;
-                                Class214.method1579(is_21_, i_18_, i_34_, i_29_);
-                                Class214.method1579(is_21_, 0, -i_34_ + i_19_, i_29_);
+                                int i_34_ = -i_18_ + TextureOpPolarDistortion.width;
+                                Class214.fill(is_21_, i_18_, i_34_, i_29_);
+                                Class214.fill(is_21_, 0, -i_34_ + i_19_, i_29_);
                             }
                         } else {
                             for (int i_35_ = 0; i_35_ < i_16_; i_35_++)
-                                is_21_[Class139.method1166(i_35_ + i_3_, (Option_Sub22.anInt6076))] = is_21_[(Class139.method1166(Option_Sub22.anInt6076, -i_35_ + (i_3_ - (-i_5_ + 1))))] = i_6_ * i_35_ / i_16_;
-                            if (TextureOpPolarDistortion.textureWidth >= i_18_ - -i_19_) Class214.method1579(is_21_, i_18_, i_19_, i_6_);
+                                is_21_[Class139.method1166(i_35_ + i_3_, (Option_Sub22.widthMask))] = is_21_[(Class139.method1166(Option_Sub22.widthMask, -i_35_ + (i_3_ - (-i_5_ + 1))))] = i_6_ * i_35_ / i_16_;
+                            if (TextureOpPolarDistortion.width >= i_18_ - -i_19_) Class214.fill(is_21_, i_18_, i_19_, i_6_);
                             else {
-                                int i_36_ = -i_18_ + TextureOpPolarDistortion.textureWidth;
-                                Class214.method1579(is_21_, i_18_, i_36_, i_6_);
-                                Class214.method1579(is_21_, 0, i_19_ - i_36_, i_6_);
+                                int i_36_ = -i_18_ + TextureOpPolarDistortion.width;
+                                Class214.fill(is_21_, i_18_, i_36_, i_6_);
+                                Class214.fill(is_21_, 0, i_19_ - i_36_, i_6_);
                             }
                         }
                     }
@@ -231,13 +231,13 @@ final class TextureOpIrregularBricks extends TextureOp {
             boolean bool_48_ = true;
             int i_49_ = 0;
             int i_50_ = 0;
-            int i_51_ = anInt9317 * TextureOpPolarDistortion.textureWidth >> 12;
-            int i_52_ = TextureOpPolarDistortion.textureWidth * anInt9320 >> 12;
-            int i_53_ = anInt9322 * Class286_Sub2.anInt6212 >> 12;
-            int i_54_ = Class286_Sub2.anInt6212 * anInt9323 >> 12;
+            int i_51_ = anInt9317 * TextureOpPolarDistortion.width >> 12;
+            int i_52_ = TextureOpPolarDistortion.width * anInt9320 >> 12;
+            int i_53_ = anInt9322 * Class286_Sub2.height >> 12;
+            int i_54_ = Class286_Sub2.height * anInt9323 >> 12;
             if (i_54_ <= 1) return is_42_[i];
-            anInt9306 = TextureOpPolarDistortion.textureWidth / 8 * anInt9311 >> 12;
-            int i_55_ = 1 + TextureOpPolarDistortion.textureWidth / i_51_;
+            anInt9306 = TextureOpPolarDistortion.width / 8 * anInt9311 >> 12;
+            int i_55_ = 1 + TextureOpPolarDistortion.width / i_51_;
             int[][] is_56_ = new int[i_55_][3];
             int[][] is_57_ = new int[i_55_][3];
             Random random = new Random(anInt9318);
@@ -245,9 +245,9 @@ final class TextureOpIrregularBricks extends TextureOp {
                 int i_58_ = i_51_ + Mesh.method1097((byte) 106, i_52_ - i_51_, random);
                 int i_59_ = (Mesh.method1097((byte) 117, -i_53_ + i_54_, random) + i_53_);
                 int i_60_ = i_46_ + i_58_;
-                if (i_60_ > TextureOpPolarDistortion.textureWidth) {
-                    i_60_ = TextureOpPolarDistortion.textureWidth;
-                    i_58_ = TextureOpPolarDistortion.textureWidth - i_46_;
+                if (i_60_ > TextureOpPolarDistortion.width) {
+                    i_60_ = TextureOpPolarDistortion.width;
+                    i_58_ = TextureOpPolarDistortion.width - i_46_;
                 }
                 int i_61_;
                 if (bool_48_) i_61_ = 0;
@@ -256,8 +256,8 @@ final class TextureOpIrregularBricks extends TextureOp {
                     int[] is_63_ = is_57_[i_47_];
                     int i_64_ = 0;
                     int i_65_ = i_43_ + i_60_;
-                    if (i_65_ < 0) i_65_ += TextureOpPolarDistortion.textureWidth;
-                    if (i_65_ > TextureOpPolarDistortion.textureWidth) i_65_ -= TextureOpPolarDistortion.textureWidth;
+                    if (i_65_ < 0) i_65_ += TextureOpPolarDistortion.width;
+                    if (i_65_ > TextureOpPolarDistortion.width) i_65_ -= TextureOpPolarDistortion.width;
                     for (; ; ) {
                         int[] is_66_ = is_57_[i_62_];
                         if (i_65_ >= is_66_[0] && is_66_[1] >= i_65_) break;
@@ -267,8 +267,8 @@ final class TextureOpIrregularBricks extends TextureOp {
                     i_61_ = is_63_[2];
                     if (i_62_ != i_47_) {
                         int i_67_ = i_46_ - -i_43_;
-                        if (i_67_ < 0) i_67_ += TextureOpPolarDistortion.textureWidth;
-                        if (TextureOpPolarDistortion.textureWidth < i_67_) i_67_ -= TextureOpPolarDistortion.textureWidth;
+                        if (i_67_ < 0) i_67_ += TextureOpPolarDistortion.width;
+                        if (TextureOpPolarDistortion.width < i_67_) i_67_ -= TextureOpPolarDistortion.width;
                         for (int i_68_ = 1; i_64_ >= i_68_; i_68_++) {
                             int[] is_69_ = is_57_[(i_68_ + i_47_) % i_49_];
                             i_61_ = Math.max(i_61_, is_69_[2]);
@@ -287,7 +287,7 @@ final class TextureOpIrregularBricks extends TextureOp {
                                         i_76_ = Math.min(i_65_, i_74_);
                                     } else {
                                         i_75_ = Math.max(i_67_, i_73_);
-                                        i_76_ = TextureOpPolarDistortion.textureWidth;
+                                        i_76_ = TextureOpPolarDistortion.width;
                                     }
                                 } else {
                                     i_75_ = Math.max(i_67_, i_73_);
@@ -299,9 +299,9 @@ final class TextureOpIrregularBricks extends TextureOp {
                     }
                     i_47_ = i_62_;
                 }
-                if (Class286_Sub2.anInt6212 >= i_59_ + i_61_) bool = false;
-                else i_59_ = -i_61_ + Class286_Sub2.anInt6212;
-                if (i_60_ == TextureOpPolarDistortion.textureWidth) {
+                if (Class286_Sub2.height >= i_59_ + i_61_) bool = false;
+                else i_59_ = -i_61_ + Class286_Sub2.height;
+                if (i_60_ == TextureOpPolarDistortion.width) {
                     method3112(-59, i_59_, is_42_, random, i_46_ + i_44_, i_61_, i_58_);
                     if (bool) break;
                     bool = true;
@@ -315,13 +315,13 @@ final class TextureOpIrregularBricks extends TextureOp {
                     i_49_ = i_50_;
                     i_45_ = i_44_;
                     i_50_ = 0;
-                    i_44_ = Mesh.method1097((byte) 113, TextureOpPolarDistortion.textureWidth, random);
+                    i_44_ = Mesh.method1097((byte) 113, TextureOpPolarDistortion.width, random);
                     i_43_ = -i_45_ + i_44_;
                     i_46_ = 0;
                     int i_80_ = i_43_;
-                    if (i_80_ < 0) i_80_ += TextureOpPolarDistortion.textureWidth;
+                    if (i_80_ < 0) i_80_ += TextureOpPolarDistortion.width;
                     i_47_ = 0;
-                    if (i_80_ > TextureOpPolarDistortion.textureWidth) i_80_ -= TextureOpPolarDistortion.textureWidth;
+                    if (i_80_ > TextureOpPolarDistortion.width) i_80_ -= TextureOpPolarDistortion.width;
                     bool_48_ = false;
                     for (; ; ) {
                         int[] is_81_ = is_57_[i_47_];

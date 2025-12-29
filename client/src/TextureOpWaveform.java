@@ -37,7 +37,7 @@ final class TextureOpWaveform extends TextureOp {
     }
 
     final void finish(int i) {
-        Class220.method1605(26188);
+        Class220.loadSinCos(26188);
         if (i <= 108) method3145(-17);
         anInt9452++;
     }
@@ -52,10 +52,10 @@ final class TextureOpWaveform extends TextureOp {
         int[] is = this.monochromeCache.get(0, i);
         if (i_2_ != 255) anInt9451 = -74;
         if (this.monochromeCache.dirty) {
-            int i_3_ = Option_Sub18.anIntArray6035[i];
+            int i_3_ = Option_Sub18.normalisedY[i];
             int i_4_ = -2048 + i_3_ >> 1;
-            for (int i_5_ = 0; (i_5_ < TextureOpPolarDistortion.textureWidth); i_5_++) {
-                int i_6_ = Class318_Sub6.anIntArray6432[i_5_];
+            for (int i_5_ = 0; (i_5_ < TextureOpPolarDistortion.width); i_5_++) {
+                int i_6_ = Class318_Sub6.normalisedX[i_5_];
                 int i_7_ = -2048 + i_6_ >> 1;
                 int i_8_;
                 if (anInt9451 == 0) i_8_ = anInt9453 * (-i_3_ + i_6_);
@@ -71,7 +71,7 @@ final class TextureOpWaveform extends TextureOp {
                         if (i_8_ < 0) i_8_ = -i_8_;
                         i_8_ = 2048 - i_8_ << 1;
                     }
-                } else i_8_ = 4096 + (Class235.anIntArray3068[i_8_ >> 4 & 0xff]) >> 1;
+                } else i_8_ = 4096 + (Class235.SINE[i_8_ >> 4 & 0xff]) >> 1;
                 is[i_5_] = i_8_;
             }
         }

@@ -16,7 +16,7 @@ final class TextureOpFlip extends TextureOp {
         anInt9141++;
         int[][] is = this.colourCache.get(-119, i);
         if (this.colourCache.dirty) {
-            int[][] is_1_ = this.outputColour((byte) 120, (aBoolean9147 ? -i + Class299_Sub2.anInt6325 : i), 0);
+            int[][] is_1_ = this.outputColour((byte) 120, (aBoolean9147 ? -i + Class299_Sub2.heightMask : i), 0);
             int[] is_2_ = is_1_[0];
             int[] is_3_ = is_1_[1];
             int[] is_4_ = is_1_[2];
@@ -24,13 +24,13 @@ final class TextureOpFlip extends TextureOp {
             int[] is_6_ = is[1];
             int[] is_7_ = is[2];
             if (aBoolean9140) {
-                for (int i_8_ = 0; i_8_ < TextureOpPolarDistortion.textureWidth; i_8_++) {
-                    is_5_[i_8_] = is_2_[Option_Sub22.anInt6076 + -i_8_];
-                    is_6_[i_8_] = is_3_[Option_Sub22.anInt6076 - i_8_];
-                    is_7_[i_8_] = is_4_[-i_8_ + Option_Sub22.anInt6076];
+                for (int i_8_ = 0; i_8_ < TextureOpPolarDistortion.width; i_8_++) {
+                    is_5_[i_8_] = is_2_[Option_Sub22.widthMask + -i_8_];
+                    is_6_[i_8_] = is_3_[Option_Sub22.widthMask - i_8_];
+                    is_7_[i_8_] = is_4_[-i_8_ + Option_Sub22.widthMask];
                 }
             } else {
-                for (int i_9_ = 0; (i_9_ < TextureOpPolarDistortion.textureWidth); i_9_++) {
+                for (int i_9_ = 0; (i_9_ < TextureOpPolarDistortion.width); i_9_++) {
                     is_5_[i_9_] = is_2_[i_9_];
                     is_6_[i_9_] = is_3_[i_9_];
                     is_7_[i_9_] = is_4_[i_9_];
@@ -462,31 +462,19 @@ final class TextureOpFlip extends TextureOp {
     }
 
     final void decode(Packet packet, int i, int i_72_) {
-        while_146_:
-        do {
-            try {
-                anInt9146++;
-                if (i_72_ == 31015) {
-                    int i_73_ = i;
-                    do {
-                        if (i_73_ == 0) {
-                            aBoolean9140 = packet.readUnsignedByte(255) == 1;
-                            return;
-                        } else if (i_73_ != 1) {
-                            if (i_73_ == 2) break;
-                            break while_146_;
-                        }
-                        aBoolean9147 = packet.readUnsignedByte(255) == 1;
-                        return;
-                    } while (false);
-                    this.monochrome = packet.readUnsignedByte(255) == 1;
-                    break;
-                }
-                break;
-            } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("jia.F(" + (packet != null ? "{...}" : "null") + ',' + i + ',' + i_72_ + ')'));
+        try {
+            anInt9146++;
+            int i_73_ = i;
+            if (i_73_ == 0) {
+                aBoolean9140 = packet.readUnsignedByte(255) == 1;
+            } else if (i_73_ == 1) {
+                aBoolean9147 = packet.readUnsignedByte(255) == 1;
+            } else if (i_73_ == 2) {
+                this.monochrome = packet.readUnsignedByte(255) == 1;
             }
-        } while (false);
+        } catch (RuntimeException runtimeexception) {
+            throw Class348_Sub17.method2929(runtimeexception, ("jia.F(" + (packet != null ? "{...}" : "null") + ',' + i + ',' + i_72_ + ')'));
+        }
     }
 
     public TextureOpFlip() {
@@ -508,11 +496,11 @@ final class TextureOpFlip extends TextureOp {
         if (i_75_ != 255) aClass348_Sub42_Sub12_9144 = null;
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
-            int[] is_76_ = this.monochromeOutput((aBoolean9147 ? Class299_Sub2.anInt6325 - i : i), i_75_ + 633706082, 0);
+            int[] is_76_ = this.monochromeOutput((aBoolean9147 ? Class299_Sub2.heightMask - i : i), i_75_ + 633706082, 0);
             if (aBoolean9140) {
-                for (int i_77_ = 0; (i_77_ < TextureOpPolarDistortion.textureWidth); i_77_++)
-                    is[i_77_] = is_76_[Option_Sub22.anInt6076 + -i_77_];
-            } else Class214.method1578(is_76_, 0, is, 0, TextureOpPolarDistortion.textureWidth);
+                for (int i_77_ = 0; (i_77_ < TextureOpPolarDistortion.width); i_77_++)
+                    is[i_77_] = is_76_[Option_Sub22.widthMask + -i_77_];
+            } else Class214.copy(is_76_, 0, is, 0, TextureOpPolarDistortion.width);
         }
         return is;
     }

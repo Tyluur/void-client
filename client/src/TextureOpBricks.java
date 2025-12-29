@@ -82,58 +82,29 @@ final class TextureOpBricks extends TextureOp {
         anInt9292++;
         if (i_8_ != 31015) method3111(106, 16);
         int i_9_ = i;
-        while_189_:
-        do {
-            while_188_:
-            do {
-                while_187_:
-                do {
-                    while_186_:
-                    do {
-                        while_185_:
-                        do {
-                            while_184_:
-                            do {
-                                do {
-                                    if (i_9_ == 0) {
-                                        anInt9299 = packet.readUnsignedByte(255);
-                                        return;
-                                    } else if (i_9_ != 1) {
-                                        if (i_9_ != 2) {
-                                            if (i_9_ != 3) {
-                                                if (i_9_ != 4) {
-                                                    if (i_9_ != 5) {
-                                                        if (i_9_ != 6) {
-                                                            if (i_9_ != 7) break while_189_;
-                                                        } else break while_187_;
-                                                        break while_188_;
-                                                    }
-                                                } else break while_185_;
-                                                break while_186_;
-                                            }
-                                        } else break;
-                                        break while_184_;
-                                    }
-                                    anInt9301 = packet.readUnsignedByte(255);
-                                    return;
-                                } while (false);
-                                anInt9302 = packet.readUnsignedShort(842397944);
-                                return;
-                            } while (false);
-                            anInt9305 = packet.readUnsignedShort(842397944);
-                            return;
-                        } while (false);
-                        anInt9288 = packet.readUnsignedShort(842397944);
-                        return;
-                    } while (false);
-                    anInt9293 = packet.readUnsignedShort(842397944);
-                    return;
-                } while (false);
-                anInt9294 = packet.readUnsignedShort(842397944);
-                return;
-            } while (false);
+        if (i_9_ == 0) {
+            anInt9299 = packet.readUnsignedByte(255);
+            return;
+        } else if (i_9_ == 1) {
+            anInt9301 = packet.readUnsignedByte(255);
+        } else if (i_9_ == 2) {
+            anInt9302 = packet.readUnsignedShort(842397944);
+            return;
+        } else if (i_9_ == 3) {
+            anInt9305 = packet.readUnsignedShort(842397944);
+            return;
+        } else if (i_9_ == 4) {
+            anInt9288 = packet.readUnsignedShort(842397944);
+            return;
+        } else if (i_9_ == 5) {
+            anInt9293 = packet.readUnsignedShort(842397944);
+            return;
+        } else if (i_9_ == 6) {
+            anInt9294 = packet.readUnsignedShort(842397944);
+            return;
+        } else if (i_9_ == 7) {
             anInt9284 = packet.readUnsignedShort(i_8_ + 842366929);
-        } while (false);
+        }
     }
 
     final int[] monochromeOutput(int i, int i_10_) {
@@ -142,7 +113,7 @@ final class TextureOpBricks extends TextureOp {
         if (this.monochromeCache.dirty) {
             int i_11_ = 0;
             int i_12_;
-            for (i_12_ = anInt9293 + Option_Sub18.anIntArray6035[i]; i_12_ < 0; i_12_ += 4096) {
+            for (i_12_ = anInt9293 + Option_Sub18.normalisedY[i]; i_12_ < 0; i_12_ += 4096) {
                 /* empty */
             }
             for (/**/; i_12_ > 4096; i_12_ -= 4096) {
@@ -156,11 +127,11 @@ final class TextureOpBricks extends TextureOp {
             int i_14_ = anIntArray9297[i_11_];
             int i_15_ = anIntArray9297[i_11_ - 1];
             if (anInt9298 + i_15_ < i_12_ && i_12_ < i_14_ - anInt9298) {
-                for (int i_16_ = 0; TextureOpPolarDistortion.textureWidth > i_16_; i_16_++) {
+                for (int i_16_ = 0; TextureOpPolarDistortion.width > i_16_; i_16_++) {
                     int i_17_ = 0;
                     int i_18_ = !bool ? -anInt9288 : anInt9288;
                     int i_19_;
-                    for (i_19_ = (Class318_Sub6.anIntArray6432[i_16_] + (i_18_ * anInt9291 >> 12)); i_19_ < 0; i_19_ += 4096) {
+                    for (i_19_ = (Class318_Sub6.normalisedX[i_16_] + (i_18_ * anInt9291 >> 12)); i_19_ < 0; i_19_ += 4096) {
                         /* empty */
                     }
                     for (/**/; i_19_ > 4096; i_19_ -= 4096) {
@@ -175,7 +146,7 @@ final class TextureOpBricks extends TextureOp {
                     if (anInt9298 + i_21_ >= i_19_ || i_19_ >= -anInt9298 + i_22_) is[i_16_] = 0;
                     else is[i_16_] = anIntArrayArray9286[i_13_][i_20_];
                 }
-            } else Class214.method1579(is, 0, TextureOpPolarDistortion.textureWidth, 0);
+            } else Class214.fill(is, 0, TextureOpPolarDistortion.width, 0);
         }
         if (i_10_ != 255) method3110(44);
         return is;

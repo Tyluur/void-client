@@ -21,7 +21,7 @@ final class Class235 {
     private final boolean aBoolean3065;
     static int anInt3066;
     private final byte aByte3067;
-    static int[] anIntArray3068;
+    static int[] SINE;
     private boolean aBoolean3069;
     static int anInt3070;
     private r aR3071;
@@ -297,7 +297,7 @@ final class Class235 {
 
     public static void method1673(int i) {
         aClass78_3075 = null;
-        anIntArray3068 = null;
+        SINE = null;
         if (i >= -19) method1669(-110, -13);
     }
 

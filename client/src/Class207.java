@@ -29,7 +29,7 @@ final class Class207 {
             if (i_0_ == -1) {
                 i_0_ = this.anIntArray2697.length;
                 int[] is = new int[this.anIntArray2697.length + 1];
-                Class214.method1578(this.anIntArray2697, 0, is, 0, this.anIntArray2697.length);
+                Class214.copy(this.anIntArray2697, 0, is, 0, this.anIntArray2697.length);
                 this.anIntArray2697 = is;
                 is[i_0_] = i;
             }
@@ -162,7 +162,7 @@ final class Class207 {
             if (i_44_ == -1) {
                 i_44_ = this.anIntArray2697.length;
                 int[] is = new int[this.anIntArray2697.length + 1];
-                Class214.method1578(this.anIntArray2697, 0, is, 0, this.anIntArray2697.length);
+                Class214.copy(this.anIntArray2697, 0, is, 0, this.anIntArray2697.length);
                 this.anIntArray2697 = is;
                 is[i_44_] = i;
             }

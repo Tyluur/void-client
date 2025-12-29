@@ -1301,10 +1301,10 @@ final class JavaToolkit extends Toolkit {
             float[] fs = this.depthBuffer;
             if (i_371_ < 0) {
                 int i_373_ = is.length + i_371_;
-                Class214.method1578(is, -i_371_, is, 0, i_373_);
+                Class214.copy(is, -i_371_, is, 0, i_373_);
             } else if (i_371_ > 0) {
                 int i_374_ = is.length - i_371_;
-                Class214.method1578(is, 0, is, i_371_, i_374_);
+                Class214.copy(is, 0, is, i_371_, i_374_);
             }
             if (i_372_ < 0) {
                 int i_375_ = fs.length + i_372_;

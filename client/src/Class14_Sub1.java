@@ -206,7 +206,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3 {
         OpenGL.glGetTexImagei(this.anInt5093, 0, 32993, 5121, is_38_, 0);
         if (i_36_ == 112) {
             for (int i_39_ = 0; i_35_ > i_39_; i_39_++)
-                Class214.method1578(is_38_, ((-i_39_ + i_35_ + (-1 + i_34_)) * anInt8612), is, i_33_ * i_39_ + i_37_, i_33_);
+                Class214.copy(is_38_, ((-i_39_ + i_35_ + (-1 + i_34_)) * anInt8612), is, i_33_ * i_39_ + i_37_, i_33_);
         }
     }
 

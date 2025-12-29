@@ -48,7 +48,7 @@ final class TextureOpMonochromeFill extends TextureOp {
     final int[] monochromeOutput(int i, int i_8_) {
         anInt9221++;
         int[] is = this.monochromeCache.get(0, i);
-        if (this.monochromeCache.dirty) Class214.method1579(is, 0, TextureOpPolarDistortion.textureWidth, value);
+        if (this.monochromeCache.dirty) Class214.fill(is, 0, TextureOpPolarDistortion.width, value);
         if (i_8_ != 255) method3085(63);
         return is;
     }

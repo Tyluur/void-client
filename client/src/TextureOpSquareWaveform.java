@@ -20,7 +20,7 @@ final class TextureOpSquareWaveform extends TextureOp {
         anInt9328++;
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
-            int i_1_ = Option_Sub18.anIntArray6035[i];
+            int i_1_ = Option_Sub18.normalisedY[i];
             if (anInt9325 == 0) {
                 int i_7_ = 0;
                 for (int i_8_ = 0; i_8_ < anInt9329; i_8_++) {
@@ -29,12 +29,12 @@ final class TextureOpSquareWaveform extends TextureOp {
                         break;
                     }
                 }
-                Class214.method1579(is, 0, TextureOpPolarDistortion.textureWidth, i_7_);
+                Class214.fill(is, 0, TextureOpPolarDistortion.width, i_7_);
             } else {
-                for (int i_2_ = 0; i_2_ < TextureOpPolarDistortion.textureWidth; i_2_++) {
+                for (int i_2_ = 0; i_2_ < TextureOpPolarDistortion.width; i_2_++) {
                     int i_3_ = 0;
                     int i_4_ = 0;
-                    int i_5_ = Class318_Sub6.anIntArray6432[i_2_];
+                    int i_5_ = Class318_Sub6.normalisedX[i_2_];
                     int i_6_ = anInt9325;
                     while_197_:
                     do {

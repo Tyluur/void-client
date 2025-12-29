@@ -11,7 +11,7 @@ final class Option_Sub18 extends Option {
     static int anInt6032;
     static int anInt6033;
     static int anInt6034;
-    static int[] anIntArray6035;
+    static int[] normalisedY;
     static int anInt6036;
     static int anInt6037;
     static int anInt6038;
@@ -22,7 +22,7 @@ final class Option_Sub18 extends Option {
 
     public static void method1799(int i) {
         int i_0_ = 51 / ((i - 33) / 40);
-        anIntArray6035 = null;
+        normalisedY = null;
         aClass251_6030 = null;
     }
 
@@ -35,14 +35,14 @@ final class Option_Sub18 extends Option {
     }
 
     final int method1710(int i) {
-        if (i != 20014) anIntArray6035 = null;
+        if (i != 20014) normalisedY = null;
         anInt6029++;
         return 1;
     }
 
     final int method1800(int i) {
         anInt6031++;
-        if (i != -32350) anIntArray6035 = null;
+        if (i != -32350) normalisedY = null;
         return this.anInt3138;
     }
 

@@ -59,7 +59,7 @@ final class TextureOpBinary extends TextureOp {
         int[] is = this.monochromeCache.get(i_3_ + -255, i);
         if (this.monochromeCache.dirty) {
             int[] is_4_ = this.monochromeOutput(i, 633706337, 0);
-            for (int i_5_ = 0; (TextureOpPolarDistortion.textureWidth > i_5_); i_5_++) {
+            for (int i_5_ = 0; (TextureOpPolarDistortion.width > i_5_); i_5_++) {
                 int i_6_ = is_4_[i_5_];
                 is[i_5_] = i_6_ >= anInt9104 && (i_6_ <= anInt9107) ? 4096 : 0;
             }

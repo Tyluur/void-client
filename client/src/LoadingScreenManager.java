@@ -61,7 +61,7 @@ final class LoadingScreenManager {
         int i_9_ = i_8_ == (~anInt1715) ? 0 : 1;
         Random random = new Random();
         int[] is = new int[anIntArrayArray1724[i].length];
-        Class214.method1578(anIntArrayArray1724[i], 0, is, 0, is.length);
+        Class214.copy(anIntArrayArray1724[i], 0, is, 0, is.length);
         for (int i_10_ = i_9_; is.length > i_10_; i_10_++) {
             int i_11_ = i_9_ + Mesh.method1097((byte) 80, is.length - i_9_, random);
             int i_12_ = is[i_10_];

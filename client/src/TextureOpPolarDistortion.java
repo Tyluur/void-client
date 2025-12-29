@@ -11,7 +11,7 @@ final class TextureOpPolarDistortion extends TextureOp {
     static int anInt9136;
     static int anInt9137;
     static int anInt9138;
-    static int textureWidth;
+    static int width;
 
     public TextureOpPolarDistortion() {
         super(3, false);
@@ -24,13 +24,13 @@ final class TextureOpPolarDistortion extends TextureOp {
         if (this.monochromeCache.dirty) {
             int[] is_1_ = this.monochromeOutput(i, i_0_ + 633706082, 1);
             int[] is_2_ = this.monochromeOutput(i, i_0_ ^ 0x25c5979e, 2);
-            for (int i_3_ = 0; i_3_ < textureWidth; i_3_++) {
+            for (int i_3_ = 0; i_3_ < width; i_3_++) {
                 int i_4_ = 0xff & is_1_[i_3_] >> 4;
                 int i_5_ = anInt9133 * is_2_[i_3_] >> 12;
-                int i_6_ = Class127.anIntArray4654[i_4_] * i_5_ >> 12;
-                int i_7_ = Class235.anIntArray3068[i_4_] * i_5_ >> 12;
-                int i_8_ = i_3_ - -(i_6_ >> 12) & Option_Sub22.anInt6076;
-                int i_9_ = i - -(i_7_ >> 12) & Class299_Sub2.anInt6325;
+                int i_6_ = Class127.COSINE[i_4_] * i_5_ >> 12;
+                int i_7_ = Class235.SINE[i_4_] * i_5_ >> 12;
+                int i_8_ = i_3_ - -(i_6_ >> 12) & Option_Sub22.widthMask;
+                int i_9_ = i - -(i_7_ >> 12) & Class299_Sub2.heightMask;
                 int[] is_10_ = this.monochromeOutput(i_9_, 633706337, 0);
                 is[i_3_] = is_10_[i_8_];
             }
@@ -58,9 +58,9 @@ final class TextureOpPolarDistortion extends TextureOp {
     }
 
     final void finish(int i) {
-        Class220.method1605(26188);
+        Class220.loadSinCos(26188);
         anInt9136++;
-        if (i < 108) textureWidth = 126;
+        if (i < 108) width = 126;
     }
 
     final int[][] colourOutput(int i, int i_13_) {
@@ -73,13 +73,13 @@ final class TextureOpPolarDistortion extends TextureOp {
             int[] is_16_ = is[0];
             int[] is_17_ = is[1];
             int[] is_18_ = is[2];
-            for (int i_19_ = 0; textureWidth > i_19_; i_19_++) {
+            for (int i_19_ = 0; width > i_19_; i_19_++) {
                 int i_20_ = 0xff & 255 * is_14_[i_19_] >> 12;
                 int i_21_ = anInt9133 * is_15_[i_19_] >> 12;
-                int i_22_ = i_21_ * Class127.anIntArray4654[i_20_] >> 12;
-                int i_23_ = i_21_ * Class235.anIntArray3068[i_20_] >> 12;
-                int i_24_ = i_19_ + (i_22_ >> 12) & Option_Sub22.anInt6076;
-                int i_25_ = (i_23_ >> 12) + i & Class299_Sub2.anInt6325;
+                int i_22_ = i_21_ * Class127.COSINE[i_20_] >> 12;
+                int i_23_ = i_21_ * Class235.SINE[i_20_] >> 12;
+                int i_24_ = i_19_ + (i_22_ >> 12) & Option_Sub22.widthMask;
+                int i_25_ = (i_23_ >> 12) + i & Class299_Sub2.heightMask;
                 int[][] is_26_ = this.outputColour((byte) -57, i_25_, 0);
                 is_16_[i_19_] = is_26_[0][i_24_];
                 is_17_[i_19_] = is_26_[1][i_24_];

@@ -45,9 +45,9 @@ final class TextureOpHerringbone extends TextureOp {
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
             int i_3_ = 0;
-            for (/**/; i_3_ < TextureOpPolarDistortion.textureWidth; i_3_++) {
-                int i_4_ = Class318_Sub6.anIntArray6432[i_3_];
-                int i_5_ = Option_Sub18.anIntArray6035[i];
+            for (/**/; i_3_ < TextureOpPolarDistortion.width; i_3_++) {
+                int i_4_ = Class318_Sub6.normalisedX[i_3_];
+                int i_5_ = Option_Sub18.normalisedY[i];
                 int i_6_ = anInt9099 * i_4_ >> 12;
                 int i_7_ = anInt9095 * i_5_ >> 12;
                 int i_8_ = i_4_ % (4096 / anInt9099) * anInt9099;

@@ -39,7 +39,7 @@ final class TextureOpColourise extends TextureOp {
             int[] is_8_ = is[0];
             int[] is_9_ = is[1];
             int[] is_10_ = is[2];
-            for (int i_11_ = 0; (i_11_ < TextureOpPolarDistortion.textureWidth); i_11_++) {
+            for (int i_11_ = 0; (i_11_ < TextureOpPolarDistortion.width); i_11_++) {
                 int i_12_ = is_5_[i_11_];
                 int i_13_ = is_7_[i_11_];
                 int i_14_ = is_6_[i_11_];

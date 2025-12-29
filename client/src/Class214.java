@@ -179,47 +179,48 @@ final class Class214 {
         while (i < i_12_) is_10_[i_11_++] = is[i++];
     }
 
-    static final void method1578(int[] is, int i, int[] is_13_, int i_14_, int i_15_) {
-        if (is == is_13_) {
-            if (i == i_14_) return;
-            if (i_14_ > i && i_14_ < i + i_15_) {
-                i_15_--;
-                i += i_15_;
-                i_14_ += i_15_;
-                i_15_ = i - i_15_;
-                i_15_ += 7;
-                while (i >= i_15_) {
-                    is_13_[i_14_--] = is[i--];
-                    is_13_[i_14_--] = is[i--];
-                    is_13_[i_14_--] = is[i--];
-                    is_13_[i_14_--] = is[i--];
-                    is_13_[i_14_--] = is[i--];
-                    is_13_[i_14_--] = is[i--];
-                    is_13_[i_14_--] = is[i--];
-                    is_13_[i_14_--] = is[i--];
+    // method1578
+    static final void copy(int[] src, int srcOff, int[] dest, int destOff, int len) {
+        if (src == dest) {
+            if (srcOff == destOff) return;
+            if (destOff > srcOff && destOff < srcOff + len) {
+                len--;
+                srcOff += len;
+                destOff += len;
+                len = srcOff - len;
+                len += 7;
+                while (srcOff >= len) {
+                    dest[destOff--] = src[srcOff--];
+                    dest[destOff--] = src[srcOff--];
+                    dest[destOff--] = src[srcOff--];
+                    dest[destOff--] = src[srcOff--];
+                    dest[destOff--] = src[srcOff--];
+                    dest[destOff--] = src[srcOff--];
+                    dest[destOff--] = src[srcOff--];
+                    dest[destOff--] = src[srcOff--];
                 }
-                i_15_ -= 7;
-                while (i >= i_15_) is_13_[i_14_--] = is[i--];
+                len -= 7;
+                while (srcOff >= len) dest[destOff--] = src[srcOff--];
                 return;
             }
         }
-        i_15_ += i;
-        i_15_ -= 7;
-        while (i < i_15_) {
-            is_13_[i_14_++] = is[i++];
-            is_13_[i_14_++] = is[i++];
-            is_13_[i_14_++] = is[i++];
-            is_13_[i_14_++] = is[i++];
-            is_13_[i_14_++] = is[i++];
-            is_13_[i_14_++] = is[i++];
-            is_13_[i_14_++] = is[i++];
-            is_13_[i_14_++] = is[i++];
+        len += srcOff;
+        len -= 7;
+        while (srcOff < len) {
+            dest[destOff++] = src[srcOff++];
+            dest[destOff++] = src[srcOff++];
+            dest[destOff++] = src[srcOff++];
+            dest[destOff++] = src[srcOff++];
+            dest[destOff++] = src[srcOff++];
+            dest[destOff++] = src[srcOff++];
+            dest[destOff++] = src[srcOff++];
+            dest[destOff++] = src[srcOff++];
         }
-        i_15_ += 7;
-        while (i < i_15_) is_13_[i_14_++] = is[i++];
+        len += 7;
+        while (srcOff < len) dest[destOff++] = src[srcOff++];
     }
 
-    static final void method1579(int[] is, int i, int i_16_, int i_17_) {
+    static final void fill(int[] is, int i, int i_16_, int i_17_) {
         i_16_ = i + i_16_ - 7;
         while (i < i_16_) {
             is[i++] = i_17_;

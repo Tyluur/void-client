@@ -48,9 +48,12 @@ final class TextureOpBoxBlur extends TextureOp {
                 if (i_12_ == 0) {
                     anInt9466 = packet.readUnsignedByte(255);
                     return;
-                } else if (i_12_ != 1) {
-                    if (i_12_ == 2) break;
-                    break while_212_;
+                } else {
+                    if (i_12_ == 1) {
+                    } else {
+                        if (i_12_ == 2) break;
+                        break while_212_;
+                    }
                 }
                 anInt9463 = packet.readUnsignedByte(255);
                 return;
@@ -70,21 +73,21 @@ final class TextureOpBoxBlur extends TextureOp {
             int i_17_ = 65536 / i_16_;
             int[][] is_18_ = new int[i_14_][];
             for (int i_19_ = -anInt9463 + i; i - -anInt9463 >= i_19_; i_19_++) {
-                int[] is_20_ = this.monochromeOutput(Class299_Sub2.anInt6325 & i_19_, 633706337, 0);
-                int[] is_21_ = new int[TextureOpPolarDistortion.textureWidth];
+                int[] is_20_ = this.monochromeOutput(Class299_Sub2.heightMask & i_19_, 633706337, 0);
+                int[] is_21_ = new int[TextureOpPolarDistortion.width];
                 int i_22_ = 0;
                 for (int i_23_ = -anInt9466; anInt9466 >= i_23_; i_23_++)
-                    i_22_ += is_20_[i_23_ & Option_Sub22.anInt6076];
+                    i_22_ += is_20_[i_23_ & Option_Sub22.widthMask];
                 int i_24_ = 0;
-                while (i_24_ < TextureOpPolarDistortion.textureWidth) {
+                while (i_24_ < TextureOpPolarDistortion.width) {
                     is_21_[i_24_] = i_17_ * i_22_ >> 16;
-                    i_22_ -= (is_20_[-anInt9466 + i_24_ & Option_Sub22.anInt6076]);
+                    i_22_ -= (is_20_[-anInt9466 + i_24_ & Option_Sub22.widthMask]);
                     i_24_++;
-                    i_22_ += (is_20_[i_24_ + anInt9466 & Option_Sub22.anInt6076]);
+                    i_22_ += (is_20_[i_24_ + anInt9466 & Option_Sub22.widthMask]);
                 }
                 is_18_[-i + (i_19_ + anInt9463)] = is_21_;
             }
-            for (int i_25_ = 0; TextureOpPolarDistortion.textureWidth > i_25_; i_25_++) {
+            for (int i_25_ = 0; TextureOpPolarDistortion.width > i_25_; i_25_++) {
                 int i_26_ = 0;
                 for (int i_27_ = 0; i_14_ > i_27_; i_27_++)
                     i_26_ += is_18_[i_27_][i_25_];
@@ -113,8 +116,8 @@ final class TextureOpBoxBlur extends TextureOp {
             int i_32_ = 65536 / i_31_;
             int[][][] is_33_ = new int[i_29_][][];
             for (int i_34_ = i + -anInt9463; i_34_ <= anInt9463 + i; i_34_++) {
-                int[][] is_35_ = this.outputColour((byte) 55, Class299_Sub2.anInt6325 & i_34_, 0);
-                int[][] is_36_ = new int[3][TextureOpPolarDistortion.textureWidth];
+                int[][] is_35_ = this.outputColour((byte) 55, Class299_Sub2.heightMask & i_34_, 0);
+                int[][] is_36_ = new int[3][TextureOpPolarDistortion.width];
                 int i_37_ = 0;
                 int i_38_ = 0;
                 int i_39_ = 0;
@@ -122,7 +125,7 @@ final class TextureOpBoxBlur extends TextureOp {
                 int[] is_41_ = is_35_[1];
                 int[] is_42_ = is_35_[2];
                 for (int i_43_ = -anInt9466; i_43_ <= anInt9466; i_43_++) {
-                    int i_44_ = Option_Sub22.anInt6076 & i_43_;
+                    int i_44_ = Option_Sub22.widthMask & i_43_;
                     i_39_ += is_42_[i_44_];
                     i_37_ += is_40_[i_44_];
                     i_38_ += is_41_[i_44_];
@@ -131,16 +134,16 @@ final class TextureOpBoxBlur extends TextureOp {
                 int[] is_46_ = is_36_[1];
                 int[] is_47_ = is_36_[2];
                 int i_48_ = 0;
-                while (TextureOpPolarDistortion.textureWidth > i_48_) {
+                while (TextureOpPolarDistortion.width > i_48_) {
                     is_45_[i_48_] = i_37_ * i_32_ >> 16;
                     is_46_[i_48_] = i_38_ * i_32_ >> 16;
                     is_47_[i_48_] = i_39_ * i_32_ >> 16;
-                    int i_49_ = Option_Sub22.anInt6076 & -anInt9466 + i_48_;
+                    int i_49_ = Option_Sub22.widthMask & -anInt9466 + i_48_;
                     i_37_ -= is_40_[i_49_];
                     i_48_++;
                     i_38_ -= is_41_[i_49_];
                     i_39_ -= is_42_[i_49_];
-                    i_49_ = i_48_ - -anInt9466 & Option_Sub22.anInt6076;
+                    i_49_ = i_48_ - -anInt9466 & Option_Sub22.widthMask;
                     i_39_ += is_42_[i_49_];
                     i_38_ += is_41_[i_49_];
                     i_37_ += is_40_[i_49_];
@@ -150,7 +153,7 @@ final class TextureOpBoxBlur extends TextureOp {
             int[] is_50_ = is[0];
             int[] is_51_ = is[1];
             int[] is_52_ = is[2];
-            for (int i_53_ = 0; TextureOpPolarDistortion.textureWidth > i_53_; i_53_++) {
+            for (int i_53_ = 0; TextureOpPolarDistortion.width > i_53_; i_53_++) {
                 int i_54_ = 0;
                 int i_55_ = 0;
                 int i_56_ = 0;

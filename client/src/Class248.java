@@ -21,7 +21,7 @@ final class Class248 {
     static int anInt3198;
     static int anInt3199;
     static int anInt3200;
-    static int anInt3201;
+    static int width32;
     static int anInt3202;
     static int anInt3203 = -1;
     private final Class107 aClass107_3204 = new Class107();

@@ -24,22 +24,17 @@ final class TextureOpClamp extends TextureOp {
     final void decode(Packet packet, int i, int i_0_) {
         if (i_0_ != 31015) anInt9470 = -15;
         int i_1_ = i;
-        while_213_:
-        do {
-            do {
-                if (i_1_ == 0) {
-                    anInt9474 = packet.readUnsignedShort(i_0_ + 842366929);
-                    break while_213_;
-                } else if (i_1_ != 1) {
-                    if (i_1_ == 2) break;
-                    break while_213_;
-                }
-                anInt9470 = packet.readUnsignedShort(i_0_ + 842366929);
-                break while_213_;
-            } while (false);
-            this.monochrome = packet.readUnsignedByte(i_0_ + -30760) == 1;
-        } while (false);
-        anInt9472++;
+        if (i_1_ == 0) {
+            anInt9474 = packet.readUnsignedShort(i_0_ + 842366929);
+            anInt9472++;
+        } else if (i_1_ == 1) {
+            anInt9470 = packet.readUnsignedShort(i_0_ + 842366929);
+            anInt9472++;
+        } else {
+            if (i_1_ == 2) this.monochrome = packet.readUnsignedByte(i_0_ + -30760) == 1;
+            anInt9472++;
+        }
+
     }
 
     final int[][] colourOutput(int i, int i_2_) {
@@ -54,7 +49,7 @@ final class TextureOpClamp extends TextureOp {
             int[] is_7_ = is[0];
             int[] is_8_ = is[1];
             int[] is_9_ = is[2];
-            for (int i_10_ = 0; (i_10_ < TextureOpPolarDistortion.textureWidth); i_10_++) {
+            for (int i_10_ = 0; (i_10_ < TextureOpPolarDistortion.width); i_10_++) {
                 int i_11_ = is_4_[i_10_];
                 int i_12_ = is_5_[i_10_];
                 int i_13_ = is_6_[i_10_];
@@ -98,7 +93,7 @@ final class TextureOpClamp extends TextureOp {
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
             int[] is_16_ = this.monochromeOutput(i, 633706337, 0);
-            for (int i_17_ = 0; i_17_ < TextureOpPolarDistortion.textureWidth; i_17_++) {
+            for (int i_17_ = 0; i_17_ < TextureOpPolarDistortion.width; i_17_++) {
                 int i_18_ = is_16_[i_17_];
                 if (anInt9474 > i_18_) is[i_17_] = anInt9474;
                 else is[i_17_] = Math.min(i_18_, anInt9470);

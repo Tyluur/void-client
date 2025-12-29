@@ -12,7 +12,7 @@ final class Class286_Sub2 extends Class286 {
     static int anInt6209;
     static int anInt6210;
     static int anInt6211;
-    static int anInt6212;
+    static int height;
     static int anInt6213;
 
     final void method2133(int i) {
@@ -74,12 +74,12 @@ final class Class286_Sub2 extends Class286 {
 
     final boolean method2137(int i) {
         anInt6208++;
-        if (i > -5) anInt6212 = 1;
+        if (i > -5) height = 1;
         return true;
     }
 
     public static void method2147(int i) {
-        if (i != -1) anInt6212 = -79;
+        if (i != -1) height = -79;
         aStringArray6205 = null;
     }
 

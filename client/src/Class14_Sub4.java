@@ -144,7 +144,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         this.aOpenGLxToolkit_5082.method3850((byte) -34, this);
         OpenGL.glGetTexImagei(this.anInt5093, 0, 32993, 5121, is_31_, 0);
         for (int i_32_ = 0; i_28_ > i_32_; i_32_++)
-            Class214.method1578(is_31_, anInt8640 * (i_28_ + -1 + (i_27_ + -i_32_)), is, i_32_ * i_26_ + i_30_, i_26_);
+            Class214.copy(is_31_, anInt8640 * (i_28_ + -1 + (i_27_ + -i_32_)), is, i_32_ * i_26_ + i_30_, i_26_);
     }
 
     public final float method67(float f, int i) {

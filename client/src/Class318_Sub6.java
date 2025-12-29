@@ -11,11 +11,11 @@ final class Class318_Sub6 extends Class318 {
     int anInt6429;
     static float aFloat6430;
     Class318_Sub1_Sub3_Sub3 aClass318_Sub1_Sub3_Sub3_6431;
-    static int[] anIntArray6432;
+    static int[] normalisedX;
 
     public static void method2506(byte i) {
         aShortArray6428 = null;
-        anIntArray6432 = null;
+        normalisedX = null;
         if (i != -46) method2506((byte) -93);
         aClass114_6424 = null;
     }

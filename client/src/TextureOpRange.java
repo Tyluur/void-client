@@ -47,7 +47,7 @@ final class TextureOpRange extends TextureOp {
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
             int[] is_3_ = this.monochromeOutput(i, 633706337, 0);
-            for (int i_4_ = 0; TextureOpPolarDistortion.textureWidth > i_4_; i_4_++)
+            for (int i_4_ = 0; TextureOpPolarDistortion.width > i_4_; i_4_++)
                 is[i_4_] = anInt9176 - -(anInt9182 * is_3_[i_4_] >> 12);
         }
         if (i_2_ != 255) return null;
@@ -66,7 +66,7 @@ final class TextureOpRange extends TextureOp {
             int[] is_10_ = is[0];
             int[] is_11_ = is[1];
             int[] is_12_ = is[2];
-            for (int i_13_ = 0; (TextureOpPolarDistortion.textureWidth > i_13_); i_13_++) {
+            for (int i_13_ = 0; (TextureOpPolarDistortion.width > i_13_); i_13_++) {
                 is_10_[i_13_] = (anInt9182 * is_7_[i_13_] >> 12) + anInt9176;
                 is_11_[i_13_] = (anInt9182 * is_8_[i_13_] >> 12) + anInt9176;
                 is_12_[i_13_] = (is_9_[i_13_] * anInt9182 >> 12) + anInt9176;

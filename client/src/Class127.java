@@ -5,7 +5,7 @@
 class Class127 implements Interface1 {
     static int anInt4652;
     static int anInt4653;
-    static int[] anIntArray4654;
+    static int[] COSINE;
     Sprite aSprite_4655;
     static int anInt4656 = 0;
     static int anInt4657;
@@ -48,7 +48,7 @@ class Class127 implements Interface1 {
     }
 
     public static void method1117(int i) {
-        anIntArray4654 = null;
+        COSINE = null;
         int i_13_ = -13 / ((i - 57) / 47);
     }
 

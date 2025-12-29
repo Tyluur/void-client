@@ -36,13 +36,13 @@ final class TextureOpEmboss extends TextureOp {
         anInt9446++;
         int[] is = this.monochromeCache.get(0, i);
         if (this.monochromeCache.dirty) {
-            int i_5_ = Class248.anInt3201 * anInt9448 >> 12;
-            int[] is_6_ = this.monochromeOutput(Class299_Sub2.anInt6325 & -1 + i, 633706337, 0);
+            int i_5_ = Class248.width32 * anInt9448 >> 12;
+            int[] is_6_ = this.monochromeOutput(Class299_Sub2.heightMask & -1 + i, 633706337, 0);
             int[] is_7_ = this.monochromeOutput(i, 633706337, 0);
-            int[] is_8_ = this.monochromeOutput(Class299_Sub2.anInt6325 & i - -1, i_4_ + 633706082, 0);
-            for (int i_9_ = 0; TextureOpPolarDistortion.textureWidth > i_9_; i_9_++) {
+            int[] is_8_ = this.monochromeOutput(Class299_Sub2.heightMask & i - -1, i_4_ + 633706082, 0);
+            for (int i_9_ = 0; TextureOpPolarDistortion.width > i_9_; i_9_++) {
                 int i_10_ = i_5_ * (is_8_[i_9_] - is_6_[i_9_]) >> 12;
-                int i_11_ = (i_5_ * (-is_7_[Option_Sub22.anInt6076 & i_9_ - -1] + is_7_[-1 + i_9_ & Option_Sub22.anInt6076]) >> 12);
+                int i_11_ = (i_5_ * (-is_7_[Option_Sub22.widthMask & i_9_ - -1] + is_7_[-1 + i_9_ & Option_Sub22.widthMask]) >> 12);
                 int i_12_ = i_11_ >> 4;
                 int i_13_ = i_10_ >> 4;
                 if (i_12_ < 0) i_12_ = -i_12_;

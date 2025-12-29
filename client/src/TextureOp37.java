@@ -27,9 +27,9 @@ final class TextureOp37 extends TextureOp {
         int[] is = this.monochromeCache.get(0, i);
         if (i_0_ != 255) method3108(-114, -119, -89);
         if (this.monochromeCache.dirty) {
-            int i_1_ = -2048 + Option_Sub18.anIntArray6035[i];
-            for (int i_2_ = 0; (i_2_ < TextureOpPolarDistortion.textureWidth); i_2_++) {
-                int i_3_ = -2048 + Class318_Sub6.anIntArray6432[i_2_];
+            int i_1_ = -2048 + Option_Sub18.normalisedY[i];
+            for (int i_2_ = 0; (i_2_ < TextureOpPolarDistortion.width); i_2_++) {
+                int i_3_ = -2048 + Class318_Sub6.normalisedX[i_2_];
                 int i_4_ = i_3_ - -anInt9269;
                 i_4_ = i_4_ < -2048 ? 4096 + i_4_ : i_4_;
                 i_4_ = i_4_ <= 2048 ? i_4_ : -4096 + i_4_;
@@ -51,13 +51,13 @@ final class TextureOp37 extends TextureOp {
     final void finish(int i) {
         anInt9272++;
         if (i <= 108) monochromeOutput(69, 74);
-        Class220.method1605(26188);
+        Class220.loadSinCos(26188);
     }
 
     private final boolean method3105(int i, int i_8_, int i_9_) {
         anInt9273++;
         int i_10_ = (i_9_ + i) * anInt9279 >> 12;
-        int i_11_ = Class127.anIntArray4654[(i_10_ * 255 & 0xfff2f) >> 12];
+        int i_11_ = Class127.COSINE[(i_10_ * 255 & 0xfff2f) >> 12];
         if (i_8_ != -7981) anInt9266 = -52;
         i_11_ = (i_11_ << 12) / anInt9279;
         i_11_ = (i_11_ << 12) / anInt9277;
@@ -140,7 +140,7 @@ final class TextureOp37 extends TextureOp {
         if (i_20_ != 9619) return true;
         anInt9271++;
         int i_22_ = anInt9279 * (i - i_21_) >> 12;
-        int i_23_ = Class127.anIntArray4654[(0xff530 & 255 * i_22_) >> 12];
+        int i_23_ = Class127.COSINE[(0xff530 & 255 * i_22_) >> 12];
         i_23_ = (i_23_ << 12) / anInt9279;
         i_23_ = (i_23_ << 12) / anInt9277;
         i_23_ = anInt9276 * i_23_ >> 12;

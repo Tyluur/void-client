@@ -18,7 +18,7 @@ final class TextureOpLineNoise extends TextureOp {
 
     final void finish(int i) {
         anInt9363++;
-        Class220.method1605(26188);
+        Class220.loadSinCos(26188);
         if (i < 108) method3122((byte) -111);
     }
 
@@ -80,10 +80,10 @@ final class TextureOpLineNoise extends TextureOp {
             for (int i_5_ = 0; anInt9362 > i_5_; i_5_++) {
                 int i_6_ = (anInt9364 > 0 ? anInt9369 + Mesh.method1097((byte) 92, anInt9364, random) + -i_3_ : anInt9369);
                 i_6_ = i_6_ >> 4 & 0xff;
-                int i_7_ = Mesh.method1097((byte) 81, TextureOpPolarDistortion.textureWidth, random);
-                int i_8_ = Mesh.method1097((byte) 123, Class286_Sub2.anInt6212, random);
-                int i_9_ = i_7_ - -(anInt9368 * Class127.anIntArray4654[i_6_] >> 12);
-                int i_10_ = ((Class235.anIntArray3068[i_6_] * anInt9368 >> 12) + i_8_);
+                int i_7_ = Mesh.method1097((byte) 81, TextureOpPolarDistortion.width, random);
+                int i_8_ = Mesh.method1097((byte) 123, Class286_Sub2.height, random);
+                int i_9_ = i_7_ - -(anInt9368 * Class127.COSINE[i_6_] >> 12);
+                int i_10_ = ((Class235.SINE[i_6_] * anInt9368 >> 12) + i_8_);
                 int i_11_ = -i_8_ + i_10_;
                 int i_12_ = -i_7_ + i_9_;
                 if (i_12_ != 0 || i_11_ != 0) {
@@ -116,8 +116,8 @@ final class TextureOpLineNoise extends TextureOp {
                     int i_23_ = i_10_ <= i_8_ ? -1 : 1;
                     for (int i_24_ = i_7_; i_24_ < i_9_; i_24_++) {
                         int i_25_ = (i_24_ - i_7_) * i_21_ + (i_22_ + 1024);
-                        int i_26_ = Option_Sub22.anInt6076 & i_24_;
-                        int i_27_ = i_17_ & Class299_Sub2.anInt6325;
+                        int i_26_ = Option_Sub22.widthMask & i_24_;
+                        int i_27_ = i_17_ & Class299_Sub2.heightMask;
                         if (bool) is_4_[i_27_][i_26_] = i_25_;
                         else is_4_[i_26_][i_27_] = i_25_;
                         i_20_ += i_19_;

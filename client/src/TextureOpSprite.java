@@ -64,17 +64,17 @@ class TextureOpSprite extends TextureOp {
             int[] is_2_ = is[0];
             int[] is_3_ = is[1];
             int[] is_4_ = is[2];
-            int i_5_ = (this.anInt9237 * ((this.anInt9241 != Class286_Sub2.anInt6212) ? (this.anInt9241 * i / Class286_Sub2.anInt6212) : i));
-            if (TextureOpPolarDistortion.textureWidth == this.anInt9237) {
-                for (int i_6_ = 0; (TextureOpPolarDistortion.textureWidth > i_6_); i_6_++) {
+            int i_5_ = (this.anInt9237 * ((this.anInt9241 != Class286_Sub2.height) ? (this.anInt9241 * i / Class286_Sub2.height) : i));
+            if (TextureOpPolarDistortion.width == this.anInt9237) {
+                for (int i_6_ = 0; (TextureOpPolarDistortion.width > i_6_); i_6_++) {
                     int i_7_ = this.anIntArray9232[i_5_++];
                     is_4_[i_6_] = Class139.method1166(4080, i_7_ << 4);
                     is_3_[i_6_] = Class139.method1166(65280, i_7_) >> 4;
                     is_2_[i_6_] = Class139.method1166(4080, i_7_ >> 12);
                 }
             } else {
-                for (int i_8_ = 0; (TextureOpPolarDistortion.textureWidth > i_8_); i_8_++) {
-                    int i_9_ = (this.anInt9237 * i_8_ / TextureOpPolarDistortion.textureWidth);
+                for (int i_8_ = 0; (TextureOpPolarDistortion.width > i_8_); i_8_++) {
+                    int i_9_ = (this.anInt9237 * i_8_ / TextureOpPolarDistortion.width);
                     int i_10_ = (this.anIntArray9232[i_9_ + i_5_]);
                     is_4_[i_8_] = Class139.method1166(i_10_, 255) << 4;
                     is_3_[i_8_] = Class139.method1166(i_10_ >> 4, 4080);

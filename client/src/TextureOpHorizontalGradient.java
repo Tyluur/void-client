@@ -47,7 +47,7 @@ final class TextureOpHorizontalGradient extends TextureOp {
     final int[] monochromeOutput(int i, int i_3_) {
         if (i_3_ != 255) aClass114_9254 = null;
         anInt9256++;
-        return Class318_Sub6.anIntArray6432;
+        return Class318_Sub6.normalisedX;
     }
 
     public TextureOpHorizontalGradient() {
