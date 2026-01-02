@@ -75,10 +75,10 @@ final class Class90 {
                             Class348_Sub23_Sub3.mapRegionIds[i_7_] = i_16_;
                             int i_18_ = 0xff & i_16_ >> 8;
                             int i_19_ = 0xff & i_16_;
-                            aa_Sub1.mapTiles[i_7_] = (Class367_Sub10.MAPS.method417("m" + i_18_ + "_" + i_19_, Class348_Sub21.method2955(i, 99)));
-                            Applet_Sub1.mapLocations[i_7_] = Class367_Sub10.MAPS.method417("l" + i_18_ + "_" + i_19_, 0);
-                            Class295.mapUndergroundTiles[i_7_] = (Class367_Sub10.MAPS.method417("um" + i_18_ + "_" + i_19_, 0));
-                            r.mapUndergroundLocations[i_7_] = (Class367_Sub10.MAPS.method417("ul" + i_18_ + "_" + i_19_, 0));
+                            aa_Sub1.mapTiles[i_7_] = (Class367_Sub10.MAPS.groupId("m" + i_18_ + "_" + i_19_, Class348_Sub21.method2955(i, 99)));
+                            Applet_Sub1.mapLocations[i_7_] = Class367_Sub10.MAPS.groupId("l" + i_18_ + "_" + i_19_, 0);
+                            Class295.mapUndergroundTiles[i_7_] = (Class367_Sub10.MAPS.groupId("um" + i_18_ + "_" + i_19_, 0));
+                            r.mapUndergroundLocations[i_7_] = (Class367_Sub10.MAPS.groupId("ul" + i_18_ + "_" + i_19_, 0));
                             i_7_++;
                         }
                     }

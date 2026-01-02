@@ -234,7 +234,7 @@ final class Class348_Sub14 extends Node {
                     }
                     Class348_Sub23_Sub2.mapElementTypeList.method1220((byte) 13, 64, 128);
                     Class95.CONFIGS.discardUnpacked = 2;
-                    Class95.CONFIGS.method412((byte) -126);
+                    Class95.CONFIGS.discardUnpacked((byte) -126);
                 }
             }
             return true;

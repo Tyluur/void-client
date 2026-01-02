@@ -957,21 +957,21 @@ final class JavaToolkit extends Toolkit {
         rasterizer.aBoolean1669 = true;
     }
 
-    final FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
-        int[] is = new int[class207s.length];
-        int[] is_283_ = new int[class207s.length];
+    final FontRenderer method3686(FontMetrics fontMetrics, IndexedImage[] indexedImages, boolean bool) {
+        int[] is = new int[indexedImages.length];
+        int[] is_283_ = new int[indexedImages.length];
         boolean bool_284_ = false;
-        for (int i = 0; i < class207s.length; i++) {
-            is[i] = class207s[i].anInt2702;
-            is_283_[i] = class207s[i].anInt2696;
-            if (class207s[i].aByteArray2695 != null) bool_284_ = true;
+        for (int i = 0; i < indexedImages.length; i++) {
+            is[i] = indexedImages[i].width;
+            is_283_[i] = indexedImages[i].height;
+            if (indexedImages[i].alpha != null) bool_284_ = true;
         }
         if (bool) {
-            if (bool_284_) return new FontRenderer_Sub4(this, fontMetrics, class207s, is, is_283_);
-            return new FontRenderer_Sub1(this, fontMetrics, class207s, is, is_283_);
+            if (bool_284_) return new FontRenderer_Sub4(this, fontMetrics, indexedImages, is, is_283_);
+            return new FontRenderer_Sub1(this, fontMetrics, indexedImages, is, is_283_);
         }
         if (bool_284_) throw new IllegalArgumentException("");
-        return new FontRenderer_Sub3(this, fontMetrics, class207s, is, is_283_);
+        return new FontRenderer_Sub3(this, fontMetrics, indexedImages, is, is_283_);
     }
 
     final OffscreenSurface method3634(Interface3 interface3, Interface13 interface13) {
@@ -1509,13 +1509,13 @@ final class JavaToolkit extends Toolkit {
         return new JavaRgbSprite(this, is, i, i_422_, i_423_, i_424_, bool);
     }
 
-    final Sprite method3691(Class207 class207, boolean bool) {
-        int[] is = class207.anIntArray2697;
-        byte[] is_430_ = class207.aByteArray2699;
-        int i = class207.anInt2702;
-        int i_431_ = class207.anInt2696;
+    final Sprite method3691(IndexedImage indexedImage, boolean bool) {
+        int[] is = indexedImage.palette;
+        byte[] is_430_ = indexedImage.raster;
+        int i = indexedImage.width;
+        int i_431_ = indexedImage.height;
         JavaSprite class105_sub3;
-        if (bool && class207.aByteArray2695 == null) {
+        if (bool && indexedImage.alpha == null) {
             int[] is_432_ = new int[is.length];
             byte[] is_433_ = new byte[i * i_431_];
             for (int i_434_ = 0; i_434_ < i_431_; i_434_++) {
@@ -1528,7 +1528,7 @@ final class JavaToolkit extends Toolkit {
             class105_sub3 = new JavaIndexedSprite(this, is_433_, is_432_, i, i_431_);
         } else {
             int[] is_438_ = new int[i * i_431_];
-            byte[] is_439_ = class207.aByteArray2695;
+            byte[] is_439_ = indexedImage.alpha;
             if (is_439_ == null) {
                 for (int i_443_ = 0; i_443_ < i_431_; i_443_++) {
                     int i_444_ = i_443_ * i;
@@ -1547,7 +1547,7 @@ final class JavaToolkit extends Toolkit {
                 class105_sub3 = new JavaArgbSprite(this, is_438_, i, i_431_);
             }
         }
-        class105_sub3.setOffsets(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
+        class105_sub3.setOffsets(indexedImage.offsetX, indexedImage.offsetY, indexedImage.innerWidth, indexedImage.innerHeight);
         return class105_sub3;
     }
 

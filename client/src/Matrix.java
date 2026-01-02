@@ -48,11 +48,11 @@ abstract class Matrix {
             for (int regionY = (-(TextureOpBinary.mapWidth >> 4) + i_5_) / 8; ((i_5_ + (TextureOpBinary.mapWidth >> 4)) / 8 >= regionY); regionY++) {
                 int regionId = regionY + (regionX << 8);
                 Class348_Sub23_Sub3.mapRegionIds[index] = regionId;
-                aa_Sub1.mapTiles[index] = Class367_Sub10.MAPS.method417("m" + regionX + "_" + regionY, i + 49);
-                Applet_Sub1.mapLocations[index] = Class367_Sub10.MAPS.method417("l" + regionX + "_" + regionY, 0);
-                ColourImageCache.mapNpcs[index] = Class367_Sub10.MAPS.method417("n" + regionX + "_" + regionY, 0);
-                Class295.mapUndergroundTiles[index] = Class367_Sub10.MAPS.method417("um" + regionX + "_" + regionY, 0);
-                r.mapUndergroundLocations[index] = (Class367_Sub10.MAPS.method417("ul" + regionX + "_" + regionY, Class348_Sub21.method2955(i, -49)));
+                aa_Sub1.mapTiles[index] = Class367_Sub10.MAPS.groupId("m" + regionX + "_" + regionY, i + 49);
+                Applet_Sub1.mapLocations[index] = Class367_Sub10.MAPS.groupId("l" + regionX + "_" + regionY, 0);
+                ColourImageCache.mapNpcs[index] = Class367_Sub10.MAPS.groupId("n" + regionX + "_" + regionY, 0);
+                Class295.mapUndergroundTiles[index] = Class367_Sub10.MAPS.groupId("um" + regionX + "_" + regionY, 0);
+                r.mapUndergroundLocations[index] = (Class367_Sub10.MAPS.groupId("ul" + regionX + "_" + regionY, Class348_Sub21.method2955(i, -49)));
                 if (ColourImageCache.mapNpcs[index] == -1) {
                     aa_Sub1.mapTiles[index] = -1;
                     Applet_Sub1.mapLocations[index] = -1;

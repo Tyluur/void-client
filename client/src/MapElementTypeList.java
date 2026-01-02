@@ -56,7 +56,7 @@ final class MapElementTypeList {
         int i_7_ = class273.anInt5167 | i << 10;
         ClientScript clientScript = ((ClientScript) ColourImageCache.aLRUHashTable_4036.method2302((long) i_7_ << 16, (byte) -91));
         if (clientScript != null) return clientScript;
-        byte[] is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) -90)));
+        byte[] is = (Class113.CLIENT_SCRIPTS.fileReady((byte) 73, Class113.CLIENT_SCRIPTS.groupId(i_7_, (byte) -90)));
         if (is != null) {
             if (is.length <= 1) return null;
             try {
@@ -71,7 +71,7 @@ final class MapElementTypeList {
         i_7_ = class273.anInt5167 | 65536 + i_5_ << 10;
         clientScript = ((ClientScript) ColourImageCache.aLRUHashTable_4036.method2302((long) i_7_ << 16, (byte) -31));
         if (clientScript != null) return clientScript;
-        is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) -107)));
+        is = (Class113.CLIENT_SCRIPTS.fileReady((byte) 73, Class113.CLIENT_SCRIPTS.groupId(i_7_, (byte) -107)));
         if (is != null) {
             if (is.length <= 1) return null;
             try {
@@ -86,7 +86,7 @@ final class MapElementTypeList {
         i_7_ = class273.anInt5167 | 0x3fffc00;
         clientScript = ((ClientScript) ColourImageCache.aLRUHashTable_4036.method2302((long) i_7_ << 16, (byte) -107));
         if (clientScript != null) return clientScript;
-        is = (Class113.CLIENT_SCRIPTS.method415((byte) 73, Class113.CLIENT_SCRIPTS.method423(i_7_, (byte) 104)));
+        is = (Class113.CLIENT_SCRIPTS.fileReady((byte) 73, Class113.CLIENT_SCRIPTS.groupId(i_7_, (byte) 104)));
         if (is != null) {
             if (is.length <= 1) return null;
             try {
@@ -123,7 +123,7 @@ final class MapElementTypeList {
         if (i_9_ < 36) return null;
         byte[] is;
         synchronized (aIndex_2084) {
-            is = aIndex_2084.method410(-1860, 36, i);
+            is = aIndex_2084.file(-1860, 36, i);
         }
         class42 = new Class42();
         class42.aMapElementTypeList_593 = this;
@@ -141,7 +141,7 @@ final class MapElementTypeList {
         try {
             aIndex_2084 = index;
             this.aIndex_2087 = index_10_;
-            aIndex_2084.method407(0, 36);
+            aIndex_2084.fileLimit(0, 36);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("on.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_10_ != null ? "{...}" : "null") + ')'));
         }

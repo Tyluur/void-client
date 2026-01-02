@@ -4,14 +4,14 @@
 
 final class Class5_Sub1_Sub1 extends Class5_Sub1 {
     static int anInt9928;
-    static Class207[] aClass207Array9929;
+    static IndexedImage[] aIndexedImageArray9929;
     static int anInt9930;
     static Deque aDeque_9931 = new Deque();
     static int[] anIntArray9932 = new int[1000];
 
     public static void method190(byte i) {
         if (i < 23) anIntArray9932 = null;
-        aClass207Array9929 = null;
+        aIndexedImageArray9929 = null;
         aDeque_9931 = null;
         anIntArray9932 = null;
     }
@@ -21,7 +21,7 @@ final class Class5_Sub1_Sub1 extends Class5_Sub1 {
     }
 
     final void method186(int i, int i_1_, byte i_2_, int i_3_, int i_4_) {
-        if (i_2_ <= 21) aClass207Array9929 = null;
+        if (i_2_ <= 21) aIndexedImageArray9929 = null;
         anInt9928++;
         int i_5_ = this.aSprite_8350.scaleWidth();
         int i_6_ = (((Class369_Sub3_Sub1) this.aClass369_4635).anInt10177 * aa_Sub2.method163(512) / 10 % i_5_);

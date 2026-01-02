@@ -43,11 +43,11 @@ final class Class348_Sub42_Sub17 extends LinkedNode {
         if (this.aAnimFrameArray9673 != null) return true;
         if (aByteArrayArray9671 == null) {
             synchronized (Class138.aIndex_1940) {
-                if (!Class138.aIndex_1940.method408((byte) -116, anInt9669)) return false;
-                int[] is = Class138.aIndex_1940.method396(anInt9669, 0);
+                if (!Class138.aIndex_1940.requestGroup((byte) -116, anInt9669)) return false;
+                int[] is = Class138.aIndex_1940.fileIds(anInt9669, 0);
                 aByteArrayArray9671 = new byte[is.length][];
                 for (int i_1_ = 0; i_1_ < is.length; i_1_++)
-                    aByteArrayArray9671[i_1_] = Class138.aIndex_1940.method410(-1860, anInt9669, is[i_1_]);
+                    aByteArrayArray9671[i_1_] = Class138.aIndex_1940.file(-1860, anInt9669, is[i_1_]);
             }
         }
         boolean bool = true;
@@ -64,9 +64,9 @@ final class Class348_Sub42_Sub17 extends LinkedNode {
         Deque deque = new Deque();
         int[] is;
         synchronized (Class138.aIndex_1940) {
-            int i_4_ = Class138.aIndex_1940.method407(0, anInt9669);
+            int i_4_ = Class138.aIndex_1940.fileLimit(0, anInt9669);
             this.aAnimFrameArray9673 = new AnimFrame[i_4_];
-            is = Class138.aIndex_1940.method396(anInt9669, 0);
+            is = Class138.aIndex_1940.fileIds(anInt9669, 0);
             if (i > -115) method3266(null, 123, null);
         }
         for (int i_5_ = 0; i_5_ < is.length; i_5_++) {
@@ -83,7 +83,7 @@ final class Class348_Sub42_Sub17 extends LinkedNode {
             }
             if (animBase == null) {
                 synchronized (Class135_Sub2.aIndex_4843) {
-                    animBase = new AnimBase(i_7_, Class135_Sub2.aIndex_4843.method415((byte) 73, i_7_));
+                    animBase = new AnimBase(i_7_, Class135_Sub2.aIndex_4843.fileReady((byte) 73, i_7_));
                 }
                 deque.method1999(animBase, -20180);
             }

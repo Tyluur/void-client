@@ -139,7 +139,7 @@ final class Class214 {
         while (i < i_9_) is_7_[i_8_++] = is[i++];
     }
 
-    static final void method1577(byte[] is, int i, byte[] is_10_, int i_11_, int i_12_) {
+    static final void copy(byte[] is, int i, byte[] is_10_, int i_11_, int i_12_) {
         if (is == is_10_) {
             if (i == i_11_) return;
             if (i_11_ > i && i_11_ < i + i_12_) {

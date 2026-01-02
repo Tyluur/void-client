@@ -274,7 +274,7 @@ abstract class Toolkit {
 
     abstract void K(int[] is);
 
-    abstract FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool);
+    abstract FontRenderer method3686(FontMetrics fontMetrics, IndexedImage[] indexedImages, boolean bool);
 
     abstract void H(int i, int i_146_, int i_147_, int[] is);
 
@@ -299,7 +299,7 @@ abstract class Toolkit {
 
     abstract Class348_Sub1 method3690(int i, int i_164_, int i_165_, int i_166_, int i_167_, float f);
 
-    abstract Sprite method3691(Class207 class207, boolean bool);
+    abstract Sprite method3691(IndexedImage indexedImage, boolean bool);
 
     static final synchronized Toolkit method3692(int i, int i_168_, int i_169_, Index index, int i_170_, TextureSource var_d, Canvas canvas, int i_171_) {
         try {

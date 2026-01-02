@@ -119,7 +119,7 @@ final class Option_Sub10 extends Option {
     static final FontMetrics getFontMetrics(byte i, int archiveId, Index index) {
         anInt5944++;
         if (i >= -24) return null;
-        byte[] is = index.method415((byte) 73, archiveId);
+        byte[] is = index.fileReady((byte) 73, archiveId);
         if (is == null) return null;
         return new FontMetrics(is);
     }

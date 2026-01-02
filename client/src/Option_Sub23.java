@@ -54,7 +54,7 @@ final class Option_Sub23 extends Option {
 
     static final FontMetrics getFontMetrics(int archiveId, int fileId, int i_2_, Index index) {
         anInt6081++;
-        byte[] is = index.method410(-1860, archiveId, fileId);
+        byte[] is = index.file(-1860, archiveId, fileId);
         if (i_2_ >= -31) getFontMetrics(65, -4, -97, null);
         if (is == null) return null;
         return new FontMetrics(is);

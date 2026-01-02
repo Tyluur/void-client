@@ -66,8 +66,8 @@ final class StructTypeList {
             anInt1147++;
             Class318_Sub1_Sub3.aIndex_8755 = index_5_;
             Class229.aIndex_2978 = index_4_;
-            TextureOpKaleidoscope.aClass46ArrayArray9427 = new Class46[Class229.aIndex_2978.method414(-1)][];
-            Class163.aBooleanArray2162 = new boolean[Class229.aIndex_2978.method414(-1)];
+            TextureOpKaleidoscope.aClass46ArrayArray9427 = new Class46[Class229.aIndex_2978.groupSize(-1)][];
+            Class163.aBooleanArray2162 = new boolean[Class229.aIndex_2978.groupSize(-1)];
             int i_7_ = -72 % ((35 - i) / 41);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("kb.F(" + (index != null ? "{...}" : "null") + ',' + i + ',' + (index_4_ != null ? "{...}" : "null") + ',' + (index_5_ != null ? "{...}" : "null") + ',' + (index_6_ != null ? "{...}" : "null") + ')'));
@@ -84,7 +84,7 @@ final class StructTypeList {
         if (class348_sub42_sub1 != null) return class348_sub42_sub1;
         byte[] is;
         synchronized (aIndex_1141) {
-            is = aIndex_1141.method410(-1860, 26, i);
+            is = aIndex_1141.file(-1860, 26, i);
         }
         class348_sub42_sub1 = new Class348_Sub42_Sub1();
         if (is != null) class348_sub42_sub1.method3168(new Packet(is), (byte) -101);
@@ -98,7 +98,7 @@ final class StructTypeList {
     StructTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_1141 = index;
-            aIndex_1141.method407(0, 26);
+            aIndex_1141.fileLimit(0, 26);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("kb.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }

@@ -70,7 +70,7 @@ final class CursorTypeList {
         if (i != -104) this.aClass60_2190 = null;
         byte[] is;
         synchronized (aIndex_2188) {
-            is = aIndex_2188.method410(-1860, 33, i_1_);
+            is = aIndex_2188.file(-1860, 33, i_1_);
         }
         class222 = new Class222();
         class222.aCursorTypeList_2886 = this;
@@ -126,7 +126,7 @@ final class CursorTypeList {
         try {
             aIndex_2188 = index;
             this.aIndex_2180 = index_9_;
-            aIndex_2188.method407(0, 33);
+            aIndex_2188.fileLimit(0, 33);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("pg.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_9_ != null ? "{...}" : "null") + ')'));
         }

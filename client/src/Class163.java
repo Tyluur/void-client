@@ -107,9 +107,9 @@ final class Class163 {
             if (class321.itemSprite != -1) {
                 Sprite sprite = ((Sprite) Class34.aClass60_463.method583(class321.itemSprite, -74));
                 if (sprite == null) {
-                    Class207 class207 = Class207.method1521(Class21.SPRITES, class321.itemSprite, 0);
-                    if (class207 != null) {
-                        sprite = Class348_Sub8.active.method3691(class207, true);
+                    IndexedImage indexedImage = IndexedImage.loadFirst(Class21.SPRITES, class321.itemSprite, 0);
+                    if (indexedImage != null) {
+                        sprite = Class348_Sub8.active.method3691(indexedImage, true);
                         Class34.aClass60_463.method582(sprite, class321.itemSprite, (byte) -127);
                     }
                 }

@@ -28,7 +28,7 @@ final class MSITypeList {
         if (class218 != null) return class218;
         byte[] is;
         synchronized (aIndex_1971) {
-            is = aIndex_1971.method410(i + -1891, 34, i_0_);
+            is = aIndex_1971.file(i + -1891, 34, i_0_);
         }
         class218 = new Class218();
         if (i != 31) return null;
@@ -100,7 +100,7 @@ final class MSITypeList {
         try {
             this.aIndex_1965 = index_4_;
             aIndex_1971 = index;
-            aIndex_1971.method407(0, 34);
+            aIndex_1971.fileLimit(0, 34);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("oda.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_4_ != null ? "{...}" : "null") + ')'));
         }

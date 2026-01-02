@@ -394,7 +394,7 @@ class Packet extends Node {
         return i_46_ | i_45_;
     }
 
-    final void method3367(int i, int[] is, int i_47_, int i_48_) {
+    final void tinyDec(int i, int[] is, int i_47_, int i_48_) {
         anInt7178++;
         int i_49_ = this.pos;
         this.pos = i_47_;

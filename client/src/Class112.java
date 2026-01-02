@@ -4,7 +4,7 @@
 
 final class Class112 implements Runnable {
     static int anInt1726;
-    static Class207 aClass207_1727;
+    static IndexedImage aIndexedImage_1727;
     static int anInt1728;
     static int anInt1729;
     private final SecondaryLinkedList aSecondaryLinkedList_1730 = new SecondaryLinkedList();
@@ -39,7 +39,7 @@ final class Class112 implements Runnable {
         synchronized (aSecondaryLinkedList_1730) {
             aSecondaryLinkedList_1730.addTail(true, class348_sub42_sub16_sub2);
             this.anInt1734++;
-            if (i > -100) aClass207_1727 = null;
+            if (i > -100) aIndexedImage_1727 = null;
             aSecondaryLinkedList_1730.notifyAll();
         }
     }
@@ -59,7 +59,7 @@ final class Class112 implements Runnable {
     }
 
     public static void method1052(byte i) {
-        aClass207_1727 = null;
+        aIndexedImage_1727 = null;
         int i_1_ = 107 % ((i - -20) / 50);
     }
 

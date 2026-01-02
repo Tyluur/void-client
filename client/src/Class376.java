@@ -95,9 +95,9 @@ final class Class376 implements Runnable {
             if (i_3_ == i && anIOException4560 != null) throw new IOException(anIOException4560.toString());
             if (anInt4546 < i + anInt4556) {
                 int i_5_ = anInt4546 - anInt4556;
-                Class214.method1577(aByteArray4554, anInt4556, is, i_2_, i_5_);
-                Class214.method1577(aByteArray4554, 0, is, i_2_ - -i_5_, i - i_5_);
-            } else Class214.method1577(aByteArray4554, anInt4556, is, i_2_, i);
+                Class214.copy(aByteArray4554, anInt4556, is, i_2_, i_5_);
+                Class214.copy(aByteArray4554, 0, is, i_2_ - -i_5_, i - i_5_);
+            } else Class214.copy(aByteArray4554, anInt4556, is, i_2_, i);
             anInt4556 = (anInt4556 - -i) % anInt4546;
             this.notifyAll();
             return i;

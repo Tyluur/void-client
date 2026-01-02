@@ -21,11 +21,11 @@ class TextureOpSprite extends TextureOp {
         if (bool != true) return true;
         if (this.anIntArray9232 != null) return true;
         if (spriteId >= 0) {
-            Class207 class207 = (Class101_Sub2.anInt5713 >= 0 ? Class207.method1521(Node.textureCacheIndex, Class101_Sub2.anInt5713, spriteId) : Class207.method1512(Node.textureCacheIndex, spriteId));
-            class207.method1524();
-            this.anIntArray9232 = class207.method1516();
-            this.anInt9237 = class207.anInt2702;
-            this.anInt9241 = class207.anInt2696;
+            IndexedImage indexedImage = (Class101_Sub2.anInt5713 >= 0 ? IndexedImage.loadFirst(Node.textureCacheIndex, Class101_Sub2.anInt5713, spriteId) : IndexedImage.method1512(Node.textureCacheIndex, spriteId));
+            indexedImage.trim();
+            this.anIntArray9232 = indexedImage.method1516();
+            this.anInt9237 = indexedImage.width;
+            this.anInt9241 = indexedImage.height;
             return true;
         }
         return false;

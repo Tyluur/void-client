@@ -102,7 +102,7 @@ final class TimedVarDomain implements Interface17 {
         for (int i_21_ = 0; (i_21_ < Class348_Sub1.anIntArray6547.length); i_21_++) {
             int i_22_ = Class348_Sub1.anIntArray6547[i_21_];
             FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -86, i_22_, Ground.aIndex_4585);
-            FontRenderer fontRenderer = var_toolkit.method3686(fontMetrics, Class207.method1523(Class39.aIndex_518, i_22_), true);
+            FontRenderer fontRenderer = var_toolkit.method3686(fontMetrics, IndexedImage.method1523(Class39.aIndex_518, i_22_), true);
             Class199.aClass352Array2636[i_21_] = new Class352(fontRenderer, fontMetrics);
         }
     }

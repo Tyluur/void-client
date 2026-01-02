@@ -141,12 +141,12 @@ final class Option_Sub3 extends Option {
                 return class352;
             }
             int i_27_ = -118 / ((-33 - i_25_) / 44);
-            Class207[] class207s = Class207.method1523(Class39.aIndex_518, i);
-            if (class207s == null) return null;
+            IndexedImage[] indexedImages = IndexedImage.method1523(Class39.aIndex_518, i);
+            if (indexedImages == null) return null;
             FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -39, i, Ground.aIndex_4585);
             if (fontMetrics == null) return null;
-            if (!bool) class352 = new Class352(var_toolkit.method3686(fontMetrics, class207s, true));
-            else class352 = new Class352(var_toolkit.method3686(fontMetrics, class207s, true), fontMetrics);
+            if (!bool) class352 = new Class352(var_toolkit.method3686(fontMetrics, indexedImages, true));
+            else class352 = new Class352(var_toolkit.method3686(fontMetrics, indexedImages, true), fontMetrics);
             Class332.aClass60_4139.method582(class352, i, (byte) -109);
             return class352;
         } catch (RuntimeException runtimeexception) {

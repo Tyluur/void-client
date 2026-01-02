@@ -41,7 +41,7 @@ class Class328 {
         anInt4101++;
         ClientScript clientScript = ((ClientScript) ColourImageCache.aLRUHashTable_4036.method2302(i_2_, (byte) -68));
         if (clientScript != null) return clientScript;
-        byte[] is = Class113.CLIENT_SCRIPTS.method410(-1860, i_2_, 0);
+        byte[] is = Class113.CLIENT_SCRIPTS.file(-1860, i_2_, 0);
         if (is == null || is.length <= 1) return null;
         try {
             clientScript = Class318_Sub4.method2502(is, -104);

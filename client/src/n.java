@@ -7,21 +7,21 @@ final class n extends FontRenderer implements Interface19 {
 
     private final native void S(SafeModeToolkit var_safeModeToolkit, ya var_ya, byte[][] is, int[] is_0_, int[] is_1_, int[] is_2_, int[] is_3_, int[] is_4_);
 
-    n(SafeModeToolkit var_safeModeToolkit, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Sprite[] sprites) {
+    n(SafeModeToolkit var_safeModeToolkit, ya var_ya, FontMetrics fontMetrics, IndexedImage[] indexedImages, Sprite[] sprites) {
         super(var_safeModeToolkit, fontMetrics);
-        byte[][] is = new byte[class207s.length][];
-        int[] is_5_ = new int[class207s.length];
-        int[] is_6_ = new int[class207s.length];
-        int[] is_7_ = new int[class207s.length];
-        int[] is_8_ = new int[class207s.length];
-        for (int i = 0; i < class207s.length; i++) {
-            is[i] = class207s[i].aByteArray2699;
-            is_5_[i] = class207s[i].anInt2702;
-            is_6_[i] = class207s[i].anInt2696;
-            is_7_[i] = class207s[i].anInt2703;
-            is_8_[i] = class207s[i].anInt2700;
+        byte[][] is = new byte[indexedImages.length][];
+        int[] is_5_ = new int[indexedImages.length];
+        int[] is_6_ = new int[indexedImages.length];
+        int[] is_7_ = new int[indexedImages.length];
+        int[] is_8_ = new int[indexedImages.length];
+        for (int i = 0; i < indexedImages.length; i++) {
+            is[i] = indexedImages[i].raster;
+            is_5_[i] = indexedImages[i].width;
+            is_6_[i] = indexedImages[i].height;
+            is_7_[i] = indexedImages[i].offsetX;
+            is_8_[i] = indexedImages[i].offsetY;
         }
-        S(var_safeModeToolkit, var_ya, is, class207s[0].anIntArray2697, is_5_, is_6_, is_7_, is_8_);
+        S(var_safeModeToolkit, var_ya, is, indexedImages[0].palette, is_5_, is_6_, is_7_, is_8_);
     }
 
     public final native void w(boolean bool);

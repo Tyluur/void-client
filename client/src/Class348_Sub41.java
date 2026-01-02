@@ -201,7 +201,7 @@ final class Class348_Sub41 extends Node {
         }
     }
 
-    static final byte[] method3158(byte[] is, int i) {
+    static final byte[] decompress(byte[] is, int i) {
         anInt7046++;
         Packet packet = new Packet(is);
         int i_37_ = packet.readUnsignedByte(255);

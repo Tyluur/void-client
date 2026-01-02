@@ -99,8 +99,8 @@ final class Class367_Sub9 extends Class367 {
         try {
             aClass269_7375 = class269;
             if (index != null && openGLxToolkit.aBoolean9921 && openGLxToolkit.aBoolean9922) {
-                Class39 class39 = (Class328.method2608(openGLxToolkit, index.method391("gl", "environment_mapped_water_v", -29832), -108, 35633));
-                Class39 class39_13_ = (Class328.method2608(openGLxToolkit, index.method391("gl", "environment_mapped_water_f", -29832), -122, 35632));
+                Class39 class39 = (Class328.method2608(openGLxToolkit, index.file("gl", "environment_mapped_water_v", -29832), -108, 35633));
+                Class39 class39_13_ = (Class328.method2608(openGLxToolkit, index.file("gl", "environment_mapped_water_f", -29832), -122, 35632));
                 aClass89_7369 = FontRenderer.method2582(openGLxToolkit, new Class39[]{class39, class39_13_}, -2113);
                 aBoolean7376 = (aClass89_7369 != null && aClass269_7375.method2041((byte) 120));
             } else aBoolean7376 = false;

@@ -82,9 +82,9 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
         /* empty */
     }
 
-    final Sprite method3691(Class207 class207, boolean bool) {
-        j var_j = new j(this, class207.anIntArray2697, class207.aByteArray2699, class207.aByteArray2695, 0, class207.anInt2702, class207.anInt2702, class207.anInt2696);
-        var_j.setOffsets(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
+    final Sprite method3691(IndexedImage indexedImage, boolean bool) {
+        j var_j = new j(this, indexedImage.palette, indexedImage.raster, indexedImage.alpha, 0, indexedImage.width, indexedImage.width, indexedImage.height);
+        var_j.setOffsets(indexedImage.offsetX, indexedImage.offsetY, indexedImage.innerWidth, indexedImage.innerHeight);
         return var_j;
     }
 
@@ -114,21 +114,21 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
         /* empty */
     }
 
-    final FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
-        int[] is = new int[class207s.length];
-        int[] is_60_ = new int[class207s.length];
+    final FontRenderer method3686(FontMetrics fontMetrics, IndexedImage[] indexedImages, boolean bool) {
+        int[] is = new int[indexedImages.length];
+        int[] is_60_ = new int[indexedImages.length];
         boolean bool_61_ = false;
-        for (int i = 0; i < class207s.length; i++) {
-            is[i] = class207s[i].anInt2702;
-            is_60_[i] = class207s[i].anInt2696;
-            if (class207s[i].aByteArray2695 != null) bool_61_ = true;
+        for (int i = 0; i < indexedImages.length; i++) {
+            is[i] = indexedImages[i].width;
+            is_60_[i] = indexedImages[i].height;
+            if (indexedImages[i].alpha != null) bool_61_ = true;
         }
         if (bool) {
             if (bool_61_) throw new IllegalArgumentException("Cannot specify alpha with non-mono font unless someone writes it");
-            return new h(this, aYa5121, fontMetrics, class207s, null);
+            return new h(this, aYa5121, fontMetrics, indexedImages, null);
         }
         if (bool_61_) throw new IllegalArgumentException("Cannot specify alpha with non-mono font unless someone writes it");
-        return new n(this, aYa5121, fontMetrics, class207s, null);
+        return new n(this, aYa5121, fontMetrics, indexedImages, null);
     }
 
     private final native void wa(int i, int i_62_, int i_63_, int i_64_, int i_65_, int i_66_);

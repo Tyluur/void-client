@@ -41,7 +41,7 @@ final class VarPlayerTypeListClient {
         if (class159 != null) return class159;
         byte[] is;
         synchronized (aIndex_2842) {
-            is = aIndex_2842.method410(-1860, 16, i_1_);
+            is = aIndex_2842.file(-1860, 16, i_1_);
             if (i >= -17) aClass60_2848 = null;
         }
         class159 = new Class159();
@@ -72,7 +72,7 @@ final class VarPlayerTypeListClient {
     VarPlayerTypeListClient(Class230 class230, int i, Index index) {
         try {
             aIndex_2842 = index;
-            if (aIndex_2842 != null) this.anInt2845 = aIndex_2842.method407(0, 16);
+            if (aIndex_2842 != null) this.anInt2845 = aIndex_2842.fileLimit(0, 16);
             else this.anInt2845 = 0;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("rv.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));

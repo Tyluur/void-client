@@ -208,7 +208,7 @@ final class HitmarkTypeList {
         if (class31 != null) return class31;
         byte[] is;
         synchronized (aIndex_2866) {
-            is = aIndex_2866.method410(-1860, i, i_15_);
+            is = aIndex_2866.file(-1860, i, i_15_);
         }
         class31 = new Class31();
         class31.aHitmarkTypeList_438 = this;
@@ -251,7 +251,7 @@ final class HitmarkTypeList {
         try {
             this.aIndex_2873 = index_17_;
             aIndex_2866 = index;
-            aIndex_2866.method407(0, 46);
+            aIndex_2866.fileLimit(0, 46);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("sb.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_17_ != null ? "{...}" : "null") + ')'));
         }

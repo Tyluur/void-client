@@ -21,8 +21,8 @@ final class QuickChatCatTypeList {
         Class348_Sub42_Sub11 class348_sub42_sub11 = (Class348_Sub42_Sub11) aClass60_2960.method583(i_0_, -51);
         if (class348_sub42_sub11 != null) return class348_sub42_sub11;
         byte[] is;
-        if (i_0_ < 32768) is = aIndex_2961.method410(-1860, 0, i_0_);
-        else is = aIndex_2965.method410(-1860, 0, 0x7fff & i_0_);
+        if (i_0_ < 32768) is = aIndex_2961.file(-1860, 0, i_0_);
+        else is = aIndex_2965.file(-1860, 0, 0x7fff & i_0_);
         class348_sub42_sub11 = new Class348_Sub42_Sub11();
         if (is != null) class348_sub42_sub11.method3221(117, new Packet(is));
         if (i_0_ >= 32768) class348_sub42_sub11.method3224((byte) 104);
@@ -50,9 +50,9 @@ final class QuickChatCatTypeList {
             try {
                 aIndex_2961 = index;
                 aIndex_2965 = index_3_;
-                if (aIndex_2961 != null) aIndex_2961.method407(0, 0);
+                if (aIndex_2961 != null) aIndex_2961.fileLimit(0, 0);
                 if (aIndex_2965 == null) break;
-                aIndex_2965.method407(0, 0);
+                aIndex_2965.fileLimit(0, 0);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("sga.<init>(" + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_3_ != null ? "{...}" : "null") + ')'));
             }

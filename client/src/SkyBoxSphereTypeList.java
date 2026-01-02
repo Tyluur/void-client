@@ -42,7 +42,7 @@ final class SkyBoxSphereTypeList {
         if (class38 != null) return class38;
         byte[] is;
         synchronized (aIndex_366) {
-            is = aIndex_366.method410(-1860, 30, i);
+            is = aIndex_366.file(-1860, 30, i);
         }
         if (i_2_ < 6) aClass60_360 = null;
         class38 = new Class38();
@@ -95,7 +95,7 @@ final class SkyBoxSphereTypeList {
     SkyBoxSphereTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_366 = index;
-            aIndex_366.method407(0, 30);
+            aIndex_366.fileLimit(0, 30);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("hq.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }

@@ -32,8 +32,8 @@ final class QuickChatPhraseTypeList {
         Class348_Sub42_Sub10 class348_sub42_sub10 = (Class348_Sub42_Sub10) aClass60_4362.method583(i, 70);
         if (class348_sub42_sub10 != null) return class348_sub42_sub10;
         byte[] is;
-        if (i >= 32768) is = aIndex_4369.method410(-1860, 1, 0x7fff & i);
-        else is = aIndex_4368.method410(-1860, 1, i);
+        if (i >= 32768) is = aIndex_4369.file(-1860, 1, 0x7fff & i);
+        else is = aIndex_4368.file(-1860, 1, i);
         class348_sub42_sub10 = new Class348_Sub42_Sub10();
         class348_sub42_sub10.aQuickChatPhraseTypeList_9567 = this;
         if (is != null) class348_sub42_sub10.method3218(new Packet(is), 0);
@@ -72,9 +72,9 @@ final class QuickChatPhraseTypeList {
                 anInterface15_4373 = interface15;
                 aIndex_4368 = index;
                 aIndex_4369 = index_1_;
-                if (aIndex_4368 != null) this.anInt4365 = aIndex_4368.method407(0, 1);
+                if (aIndex_4368 != null) this.anInt4365 = aIndex_4368.fileLimit(0, 1);
                 if (aIndex_4369 == null) break;
-                this.anInt4364 = aIndex_4369.method407(0, 1);
+                this.anInt4364 = aIndex_4369.fileLimit(0, 1);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("aha.<init>(" + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_1_ != null ? "{...}" : "null") + ',' + (interface15 != null ? "{...}" : "null") + ')'));
             }

@@ -31,7 +31,7 @@ final class Class73 implements Interface7 {
         anInt4777++;
         BillboardType billboardType = (BillboardType) VarPlayerTypeListClient.aClass60_2844.method583(i_0_, -104);
         if (billboardType != null) return billboardType;
-        byte[] is = Class369_Sub3.aIndex_8601.method410(-1860, 0, i_0_);
+        byte[] is = Class369_Sub3.aIndex_8601.file(-1860, 0, i_0_);
         if (i != 104) method741((byte) 98);
         billboardType = new BillboardType();
         if (is != null) billboardType.method1419(i_0_, new Packet(is), (byte) 64);
@@ -42,7 +42,7 @@ final class Class73 implements Interface7 {
     public final int method31(int i) {
         int i_1_ = -62 / ((i - -43) / 62);
         anInt4774++;
-        if (aIndex_4785.method416((byte) -74, aString4778)) return 100;
+        if (aIndex_4785.fileReady((byte) -74, aString4778)) return 100;
         return 0;
     }
 

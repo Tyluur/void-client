@@ -71,7 +71,7 @@ final class Class317 {
     }
 
     static final Class317 method2372(Index index, int i, int i_11_) {
-        byte[] is = index.method410(-1860, i, i_11_);
+        byte[] is = index.file(-1860, i, i_11_);
         if (is == null) return null;
         return new Class317(new Packet(is));
     }

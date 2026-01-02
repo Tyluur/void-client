@@ -956,12 +956,12 @@ final class OpenGLToolkit extends Toolkit {
         anInt7726++;
     }
 
-    final FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
+    final FontRenderer method3686(FontMetrics fontMetrics, IndexedImage[] indexedImages, boolean bool) {
         try {
             anInt7574++;
-            return new FontRenderer_Sub5(this, fontMetrics, class207s, bool);
+            return new FontRenderer_Sub5(this, fontMetrics, indexedImages, bool);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.JE(" + (fontMetrics != null ? "{...}" : "null") + ',' + (class207s != null ? "{...}" : "null") + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.JE(" + (fontMetrics != null ? "{...}" : "null") + ',' + (indexedImages != null ? "{...}" : "null") + ',' + bool + ')'));
         }
     }
 
@@ -2959,11 +2959,11 @@ final class OpenGLToolkit extends Toolkit {
                         if (i_324_ != -1) {
                             Sprite[] spriteS_326_ = ((Sprite[]) (Class353.aClass60_4346.method583(i_324_, i_316_ ^ ~0x79)));
                             if (spriteS_326_ == null) {
-                                Class207[] class207s = Class207.method1519(Class21.SPRITES, i_324_, 0);
-                                if (class207s != null) {
-                                    spriteS_326_ = new Sprite[class207s.length];
-                                    for (int i_327_ = 0; class207s.length > i_327_; i_327_++)
-                                        spriteS_326_[i_327_] = (Class348_Sub8.active.method3691(class207s[i_327_], true));
+                                IndexedImage[] indexedImages = IndexedImage.method1519(Class21.SPRITES, i_324_, 0);
+                                if (indexedImages != null) {
+                                    spriteS_326_ = new Sprite[indexedImages.length];
+                                    for (int i_327_ = 0; indexedImages.length > i_327_; i_327_++)
+                                        spriteS_326_[i_327_] = (Class348_Sub8.active.method3691(indexedImages[i_327_], true));
                                     Class353.aClass60_4346.method582(spriteS_326_, i_324_, (byte) -94);
                                 }
                             }
@@ -2996,11 +2996,11 @@ final class OpenGLToolkit extends Toolkit {
                             if (i_333_ != -1) {
                                 Sprite[] sprites = ((Sprite[]) Class328_Sub2.aClass60_6517.method583(i_333_, -45));
                                 if (sprites == null) {
-                                    Class207[] class207s = Class207.method1519((Class21.SPRITES), i_333_, 0);
-                                    if (class207s != null) {
-                                        sprites = new Sprite[class207s.length];
-                                        for (int i_334_ = 0; (class207s.length > i_334_); i_334_++)
-                                            sprites[i_334_] = (Class348_Sub8.active.method3691(class207s[i_334_], true));
+                                    IndexedImage[] indexedImages = IndexedImage.method1519((Class21.SPRITES), i_333_, 0);
+                                    if (indexedImages != null) {
+                                        sprites = new Sprite[indexedImages.length];
+                                        for (int i_334_ = 0; (indexedImages.length > i_334_); i_334_++)
+                                            sprites[i_334_] = (Class348_Sub8.active.method3691(indexedImages[i_334_], true));
                                         Class328_Sub2.aClass60_6517.method582(sprites, i_333_, (byte) -101);
                                     }
                                 }
@@ -3593,32 +3593,32 @@ final class OpenGLToolkit extends Toolkit {
         OpenGL.glFinish();
     }
 
-    final Sprite method3691(Class207 class207, boolean bool) {
+    final Sprite method3691(IndexedImage indexedImage, boolean bool) {
         try {
             anInt7657++;
-            int[] is = new int[(class207.anInt2702 * class207.anInt2696)];
+            int[] is = new int[(indexedImage.width * indexedImage.height)];
             int i = 0;
             int i_467_ = 0;
-            if (class207.aByteArray2695 == null) {
-                for (int i_470_ = 0; class207.anInt2696 > i_470_; i_470_++) {
-                    for (int i_471_ = 0; (class207.anInt2702 > i_471_); i_471_++) {
-                        int i_472_ = (class207.anIntArray2697[0xff & (class207.aByteArray2699[i++])]);
+            if (indexedImage.alpha == null) {
+                for (int i_470_ = 0; indexedImage.height > i_470_; i_470_++) {
+                    for (int i_471_ = 0; (indexedImage.width > i_471_); i_471_++) {
+                        int i_472_ = (indexedImage.palette[0xff & (indexedImage.raster[i++])]);
                         is[i_467_++] = i_472_ == 0 ? 0 : Class273.method2057(-16777216, i_472_);
                     }
                 }
             } else {
-                for (int i_468_ = 0; class207.anInt2696 > i_468_; i_468_++) {
-                    for (int i_469_ = 0; (i_469_ < class207.anInt2702); i_469_++) {
-                        is[i_467_++] = (Class273.method2057((class207.aByteArray2695[i] << 24), (class207.anIntArray2697[Class139.method1166((class207.aByteArray2699[i]), 255)])));
+                for (int i_468_ = 0; indexedImage.height > i_468_; i_468_++) {
+                    for (int i_469_ = 0; (i_469_ < indexedImage.width); i_469_++) {
+                        is[i_467_++] = (Class273.method2057((indexedImage.alpha[i] << 24), (indexedImage.palette[Class139.method1166((indexedImage.raster[i]), 255)])));
                         i++;
                     }
                 }
             }
-            Sprite sprite = this.method3662(class207.anInt2702, is, (byte) 94, 0, class207.anInt2702, class207.anInt2696);
-            sprite.setOffsets(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
+            Sprite sprite = this.method3662(indexedImage.width, is, (byte) 94, 0, indexedImage.width, indexedImage.height);
+            sprite.setOffsets(indexedImage.offsetX, indexedImage.offsetY, indexedImage.innerWidth, indexedImage.innerHeight);
             return sprite;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("qo.GF(" + (class207 != null ? "{...}" : "null") + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("qo.GF(" + (indexedImage != null ? "{...}" : "null") + ',' + bool + ')'));
         }
     }
 

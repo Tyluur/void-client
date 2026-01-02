@@ -71,8 +71,8 @@ final class Class369_Sub3_Sub1 extends Class369_Sub3 {
         Sprite sprite = (Sprite) Class345.aClass60_4273.method583(i, -68);
         int i_11_ = -86 / ((55 - i_10_) / 51);
         if (sprite == null) {
-            if (Class286_Sub7.loadSpritesRaw) sprite = Class348_Sub8.active.method3691(Class207.method1512(index, i), true);
-            else sprite = Class258_Sub3.method1969(index.method415((byte) 73, i), -5901);
+            if (Class286_Sub7.loadSpritesRaw) sprite = Class348_Sub8.active.method3691(IndexedImage.method1512(index, i), true);
+            else sprite = Class258_Sub3.method1969(index.fileReady((byte) 73, i), -5901);
             Class345.aClass60_4273.method582(sprite, i, (byte) -108);
         }
         return sprite;

@@ -172,7 +172,7 @@ final class Class85 {
             anInt1468 = 0;
         }
         while (anInt1468 < 32) aByteArray1475[anInt1468++] = (byte) 0;
-        Class214.method1577(aByteArray1465, 0, aByteArray1475, 32, 32);
+        Class214.copy(aByteArray1465, 0, aByteArray1475, 32, 32);
         method827(0);
         int i_38_ = 0;
         if (bool != true) method830(-1, -123, (byte) 39, false, 61);

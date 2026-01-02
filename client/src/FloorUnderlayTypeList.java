@@ -82,7 +82,7 @@ final class FloorUnderlayTypeList {
         if (class22 != null) return class22;
         byte[] is;
         synchronized (aIndex_2461) {
-            is = aIndex_2461.method410(-1860, 1, i);
+            is = aIndex_2461.file(-1860, 1, i);
         }
         class22 = new Class22();
         if (is != null) class22.method290(new Packet(is), -1);
@@ -127,7 +127,7 @@ final class FloorUnderlayTypeList {
     FloorUnderlayTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_2461 = index;
-            aIndex_2461.method407(0, 1);
+            aIndex_2461.fileLimit(0, 1);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qe.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }

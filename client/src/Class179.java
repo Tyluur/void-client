@@ -19,7 +19,7 @@ final class Class179 {
     static int anInt2368;
     static int anInt2369;
 
-    static final Object method1357(byte[] is, boolean bool, byte i) {
+    static final Object wrap(byte[] is, boolean bool, byte i) {
         if (i < 73) anInt2361 = -51;
         anInt2363++;
         if (is == null) return null;

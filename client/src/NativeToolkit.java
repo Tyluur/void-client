@@ -1335,7 +1335,7 @@ abstract class NativeToolkit extends Toolkit {
             anInt8015++;
             int i_127_ = is.length;
             byte[] is_128_ = new byte[i_127_];
-            Class214.method1577(is, i, is_128_, 0, i_127_);
+            Class214.copy(is, i, is_128_, 0, i_127_);
             return is_128_;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("wga.GI(" + (is != null ? "{...}" : "null") + ',' + i + ')'));
@@ -1959,36 +1959,36 @@ abstract class NativeToolkit extends Toolkit {
         }
     }
 
-    final Sprite method3691(Class207 class207, boolean bool) {
+    final Sprite method3691(IndexedImage indexedImage, boolean bool) {
         try {
             anInt7978++;
             Sprite sprite;
-            if (class207.anInt2702 == 0 || class207.anInt2696 == 0) sprite = this.method3662(1, new int[1], (byte) 94, 0, 1, 1);
+            if (indexedImage.width == 0 || indexedImage.height == 0) sprite = this.method3662(1, new int[1], (byte) 94, 0, 1, 1);
             else {
-                int[] is = new int[(class207.anInt2702 * class207.anInt2696)];
+                int[] is = new int[(indexedImage.width * indexedImage.height)];
                 int i = 0;
                 int i_211_ = 0;
-                if (class207.aByteArray2695 == null) {
-                    for (int i_212_ = 0; (i_212_ < class207.anInt2696); i_212_++) {
-                        for (int i_213_ = 0; i_213_ < class207.anInt2702; i_213_++) {
-                            int i_214_ = (class207.anIntArray2697[0xff & (class207.aByteArray2699[i++])]);
+                if (indexedImage.alpha == null) {
+                    for (int i_212_ = 0; (i_212_ < indexedImage.height); i_212_++) {
+                        for (int i_213_ = 0; i_213_ < indexedImage.width; i_213_++) {
+                            int i_214_ = (indexedImage.palette[0xff & (indexedImage.raster[i++])]);
                             is[i_211_++] = (i_214_ != 0 ? Class273.method2057(i_214_, -16777216) : 0);
                         }
                     }
                 } else {
-                    for (int i_215_ = 0; i_215_ < class207.anInt2696; i_215_++) {
-                        for (int i_216_ = 0; class207.anInt2702 > i_216_; i_216_++) {
-                            is[i_211_++] = (Class273.method2057((class207.anIntArray2697[Class139.method1166((class207.aByteArray2699[i]), 255)]), (class207.aByteArray2695[i] << 24)));
+                    for (int i_215_ = 0; i_215_ < indexedImage.height; i_215_++) {
+                        for (int i_216_ = 0; indexedImage.width > i_216_; i_216_++) {
+                            is[i_211_++] = (Class273.method2057((indexedImage.palette[Class139.method1166((indexedImage.raster[i]), 255)]), (indexedImage.alpha[i] << 24)));
                             i++;
                         }
                     }
                 }
-                sprite = this.method3662(class207.anInt2702, is, (byte) 94, 0, class207.anInt2702, class207.anInt2696);
+                sprite = this.method3662(indexedImage.width, is, (byte) 94, 0, indexedImage.width, indexedImage.height);
             }
-            sprite.setOffsets(class207.anInt2703, class207.anInt2700, class207.anInt2698, class207.anInt2701);
+            sprite.setOffsets(indexedImage.offsetX, indexedImage.offsetY, indexedImage.innerWidth, indexedImage.innerHeight);
             return sprite;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.GF(" + (class207 != null ? "{...}" : "null") + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.GF(" + (indexedImage != null ? "{...}" : "null") + ',' + bool + ')'));
         }
     }
 
@@ -2519,12 +2519,12 @@ abstract class NativeToolkit extends Toolkit {
 
     abstract void method3939(byte i);
 
-    final FontRenderer method3686(FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
+    final FontRenderer method3686(FontMetrics fontMetrics, IndexedImage[] indexedImages, boolean bool) {
         try {
             anInt7952++;
-            return new FontRenderer_Sub2(this, fontMetrics, class207s, bool);
+            return new FontRenderer_Sub2(this, fontMetrics, indexedImages, bool);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("wga.JE(" + (fontMetrics != null ? "{...}" : "null") + ',' + (class207s != null ? "{...}" : "null") + ',' + bool + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("wga.JE(" + (fontMetrics != null ? "{...}" : "null") + ',' + (indexedImages != null ? "{...}" : "null") + ',' + bool + ')'));
         }
     }
 

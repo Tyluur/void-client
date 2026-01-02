@@ -143,13 +143,13 @@ final class OutputStream_Sub1 extends OutputStream {
         if (QuickChatPhraseTypeList.anObject4366 == null) {
             Class59_Sub1_Sub1 class59_sub1_sub1 = new Class59_Sub1_Sub1();
             byte[] is = class59_sub1_sub1.method559(128, 128, (byte) 106, 16);
-            QuickChatPhraseTypeList.anObject4366 = Class179.method1357(is, false, (byte) 111);
+            QuickChatPhraseTypeList.anObject4366 = Class179.wrap(is, false, (byte) 111);
         }
         anInt92++;
         if (Class227.anObject2969 == null) {
             Class59_Sub2_Sub2 class59_sub2_sub2 = new Class59_Sub2_Sub2();
             byte[] is = class59_sub2_sub2.method571(128, (byte) -38, 16, 128);
-            Class227.anObject2969 = Class179.method1357(is, false, (byte) 106);
+            Class227.anObject2969 = Class179.wrap(is, false, (byte) 106);
         }
     }
 

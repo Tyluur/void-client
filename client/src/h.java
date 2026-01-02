@@ -5,19 +5,19 @@
 final class h extends FontRenderer implements Interface19 {
     long nativeid;
 
-    h(SafeModeToolkit var_safeModeToolkit, ya var_ya, FontMetrics fontMetrics, Class207[] class207s, Sprite[] sprites) {
+    h(SafeModeToolkit var_safeModeToolkit, ya var_ya, FontMetrics fontMetrics, IndexedImage[] indexedImages, Sprite[] sprites) {
         super(var_safeModeToolkit, fontMetrics);
-        byte[][] is = new byte[class207s.length][];
-        int[] is_0_ = new int[class207s.length];
-        int[] is_1_ = new int[class207s.length];
-        int[] is_2_ = new int[class207s.length];
-        int[] is_3_ = new int[class207s.length];
-        for (int i = 0; i < class207s.length; i++) {
-            is[i] = class207s[i].aByteArray2699;
-            is_0_[i] = class207s[i].anInt2702;
-            is_1_[i] = class207s[i].anInt2696;
-            is_2_[i] = class207s[i].anInt2703;
-            is_3_[i] = class207s[i].anInt2700;
+        byte[][] is = new byte[indexedImages.length][];
+        int[] is_0_ = new int[indexedImages.length];
+        int[] is_1_ = new int[indexedImages.length];
+        int[] is_2_ = new int[indexedImages.length];
+        int[] is_3_ = new int[indexedImages.length];
+        for (int i = 0; i < indexedImages.length; i++) {
+            is[i] = indexedImages[i].raster;
+            is_0_[i] = indexedImages[i].width;
+            is_1_[i] = indexedImages[i].height;
+            is_2_[i] = indexedImages[i].offsetX;
+            is_3_[i] = indexedImages[i].offsetY;
         }
         JA(var_safeModeToolkit, var_ya, is, is_0_, is_1_, is_2_, is_3_);
     }

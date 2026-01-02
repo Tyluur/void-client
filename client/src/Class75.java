@@ -241,8 +241,8 @@ class Class75 {
         aMSITypeList_1242 = MSITypeList;
         anInterface17_1244 = interface17;
         aHashTable_1241.clear(0);
-        int i = aIndex_1237.method417("details", 0);
-        int[] is = aIndex_1237.method396(i, 0);
+        int i = aIndex_1237.groupId("details", 0);
+        int[] is = aIndex_1237.fileIds(i, 0);
         if (is != null) {
             for (int i_47_ = 0; i_47_ < is.length; i_47_++) {
                 Class348_Sub42_Sub14 class348_sub42_sub14 = IDKTypeList.method1205(is[i_47_], true, aIndex_1237, i);
@@ -394,7 +394,7 @@ class Class75 {
     }
 
     static final void method756(Toolkit var_toolkit, int i, int i_75_) {
-        Packet packet = (new Packet(aIndex_1237.method391((aClass348_Sub42_Sub14_1243.aString9625), "area", -29832)));
+        Packet packet = (new Packet(aIndex_1237.file((aClass348_Sub42_Sub14_1243.aString9625), "area", -29832)));
         int i_76_ = packet.readUnsignedByte(255);
         int[] is = new int[i_76_];
         for (int i_77_ = 0; i_77_ < i_76_; i_77_++)

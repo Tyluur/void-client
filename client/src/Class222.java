@@ -31,14 +31,14 @@ final class Class222 {
         }
     }
 
-    final synchronized Class207 method1610(byte i) {
+    final synchronized IndexedImage method1610(byte i) {
         anInt2888++;
-        Class207 class207 = (Class207) this.aCursorTypeList_2886.aClass60_2190.method583(anInt2891, -70);
-        if (class207 != null) return class207;
-        class207 = Class207.method1521(this.aCursorTypeList_2886.aIndex_2180, anInt2891, 0);
+        IndexedImage indexedImage = (IndexedImage) this.aCursorTypeList_2886.aClass60_2190.method583(anInt2891, -70);
+        if (indexedImage != null) return indexedImage;
+        indexedImage = IndexedImage.loadFirst(this.aCursorTypeList_2886.aIndex_2180, anInt2891, 0);
         if (i < 49) method1609((byte) 93);
-        if (class207 != null) this.aCursorTypeList_2886.aClass60_2190.method582(class207, anInt2891, (byte) -120);
-        return class207;
+        if (indexedImage != null) this.aCursorTypeList_2886.aClass60_2190.method582(indexedImage, anInt2891, (byte) -120);
+        return indexedImage;
     }
 
     final void method1611(Packet packet, boolean bool) {

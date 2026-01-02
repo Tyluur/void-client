@@ -37,8 +37,8 @@ final class Class136 implements Interface7 {
 
     public final int method31(int i) {
         anInt4790++;
-        if (aIndex_4789.method413(100, aString4788)) return 100;
+        if (aIndex_4789.requestGroup(100, aString4788)) return 100;
         int i_0_ = 31 % ((-43 - i) / 62);
-        return aIndex_4789.method397(aString4788, 0);
+        return aIndex_4789.completePercentage(aString4788, 0);
     }
 }

@@ -29,7 +29,7 @@ final class VarcTypeList {
         int i_2_ = 44 % ((-41 - i_1_) / 33);
         byte[] is;
         synchronized (aIndex_3299) {
-            is = aIndex_3299.method410(-1860, 19, i);
+            is = aIndex_3299.file(-1860, 19, i);
         }
         class160 = new Class160();
         if (is != null) class160.method1255(new Packet(is), -1);
@@ -43,7 +43,7 @@ final class VarcTypeList {
     VarcTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_3299 = index;
-            this.anInt3305 = aIndex_3299.method407(0, 19);
+            this.anInt3305 = aIndex_3299.fileLimit(0, 19);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("uea.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }

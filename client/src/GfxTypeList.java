@@ -48,7 +48,7 @@ final class GfxTypeList {
         if (class368 != null) return class368;
         byte[] is;
         synchronized (aIndex_3979) {
-            is = aIndex_3979.method410(-1860, Class318_Sub1_Sub3_Sub1.method2419((byte) 127, i_1_), Class348_Sub1_Sub2.method2729(i_1_, 16));
+            is = aIndex_3979.file(-1860, Class318_Sub1_Sub3_Sub1.method2419((byte) 127, i_1_), Class348_Sub1_Sub2.method2729(i_1_, 16));
         }
         class368 = new Class368();
         class368.aGfxTypeList_4513 = this;
@@ -93,8 +93,8 @@ final class GfxTypeList {
         try {
             this.aIndex_3981 = index_3_;
             aIndex_3979 = index;
-            int i_4_ = -1 + aIndex_3979.method414(-1);
-            aIndex_3979.method407(0, i_4_);
+            int i_4_ = -1 + aIndex_3979.groupSize(-1);
+            aIndex_3979.fileLimit(0, i_4_);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("cn.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_3_ != null ? "{...}" : "null") + ')'));
         }

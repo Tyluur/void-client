@@ -24,10 +24,10 @@ final class Class367_Sub5 extends Class367 {
         aDirectXToolkit_7328 = directXToolkit;
         if (null == index || ((aDirectXToolkit_7328.aD3DCAPS9791.VertexShaderVersion) & 0xffff) < 257) aBoolean7329 = false;
         else {
-            anIDirect3DVertexShader7332 = aDirectXToolkit_7328.anIDirect3DDevice9810.b(index.method391("dx", "uw_ground_unlit", -29832));
-            anIDirect3DVertexShader7330 = aDirectXToolkit_7328.anIDirect3DDevice9810.b(index.method391("dx", "uw_ground_lit", -29832));
-            anIDirect3DVertexShader7334 = aDirectXToolkit_7328.anIDirect3DDevice9810.b(index.method391("dx", "uw_model_unlit", -29832));
-            anIDirect3DVertexShader7335 = aDirectXToolkit_7328.anIDirect3DDevice9810.b(index.method391("dx", "uw_model_lit", -29832));
+            anIDirect3DVertexShader7332 = aDirectXToolkit_7328.anIDirect3DDevice9810.b(index.file("dx", "uw_ground_unlit", -29832));
+            anIDirect3DVertexShader7330 = aDirectXToolkit_7328.anIDirect3DDevice9810.b(index.file("dx", "uw_ground_lit", -29832));
+            anIDirect3DVertexShader7334 = aDirectXToolkit_7328.anIDirect3DDevice9810.b(index.file("dx", "uw_model_unlit", -29832));
+            anIDirect3DVertexShader7335 = aDirectXToolkit_7328.anIDirect3DDevice9810.b(index.file("dx", "uw_model_lit", -29832));
             if (null != anIDirect3DVertexShader7332 & anIDirect3DVertexShader7330 != null & anIDirect3DVertexShader7334 != null & null != anIDirect3DVertexShader7335) {
                 anInterface18_Impl3_7331 = (this.aNativeToolkit_4479.method3839(1, 2, -15137, false, new int[]{0, -1}));
                 anInterface18_Impl3_7331.method66(false, false, 25688);

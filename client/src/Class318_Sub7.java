@@ -107,8 +107,8 @@ final class Class318_Sub7 extends Class318 {
             anInt6440++;
             if (Class75.aClass348_Sub42_Sub14_1243 != null) {
                 if (Node.anInt4290 < 10) {
-                    if (!Class75.aIndex_1237.method413(100, Class75.aClass348_Sub42_Sub14_1243.aString9625)) {
-                        Node.anInt4290 = (Class348_Sub32.WORLD_MAP.method397((Class75.aClass348_Sub42_Sub14_1243.aString9625), 0)) / 10;
+                    if (!Class75.aIndex_1237.requestGroup(100, Class75.aClass348_Sub42_Sub14_1243.aString9625)) {
+                        Node.anInt4290 = (Class348_Sub32.WORLD_MAP.completePercentage((Class75.aClass348_Sub42_Sub14_1243.aString9625), 0)) / 10;
                         return;
                     }
                     InputStream_Sub1.method126(-16203);
@@ -180,8 +180,8 @@ final class Class318_Sub7 extends Class318 {
                     Class94.method867(true);
                 } else if (i <= -43) {
                     if (Node.anInt4290 == 60) {
-                        if (Class75.aIndex_1237.method400(-18308, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) {
-                            if (!Class75.aIndex_1237.method413(100, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) return;
+                        if (Class75.aIndex_1237.groupExists(-18308, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) {
+                            if (!Class75.aIndex_1237.requestGroup(100, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) return;
                             Class75.aClass252_1246 = (Class307.method2300(Class75.aIndex_1237, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements", Class130.membersWorld, (byte) -91));
                         } else Class75.aClass252_1246 = new Class252(0);
                         Class75.method761();

@@ -6,7 +6,7 @@ final class Index {
     static int anInt626;
     static int anInt627;
     static int anInt628;
-    private Class291 aClass291_629 = null;
+    private Class291 index = null;
     static int anInt630;
     static int anInt631;
     static int anInt632;
@@ -32,16 +32,16 @@ final class Index {
     static int anInt652;
     static int anInt653;
     static int anInt654;
-    private final boolean aBoolean655;
-    private Object[] anObjectArray656;
+    private final boolean discardPacked;
+    private Object[] packed;
     static int anInt657;
     static int anInt658;
-    private ResourceProvider aResourceProvider_659;
+    private ResourceProvider provider;
     static int anInt660;
     static int anInt661;
     static int anInt662;
     static int anInt663;
-    private Object[][] anObjectArrayArray664;
+    private Object[][] unpacked;
     static int anInt665;
     static int anInt666;
     static long aLong667;
@@ -53,8 +53,8 @@ final class Index {
     final int indexCrc(int i) {
         int i_0_ = -117 / ((-60 - i) / 33);
         anInt657++;
-        if (!method399(false)) throw new IllegalStateException("");
-        return aClass291_629.anInt3719;
+        if (!indexReady(false)) throw new IllegalStateException("");
+        return index.anInt3719;
     }
 
     public static void method390(byte i) {
@@ -62,172 +62,174 @@ final class Index {
         if (i != 10) method390((byte) -3);
     }
 
-    final byte[] method391(String string, String string_1_, int i) {
+    final byte[] file(String groupName, String fileName, int i) {
         try {
             anInt647++;
-            if (!method399(false)) return null;
-            string = string.toLowerCase();
-            string_1_ = string_1_.toLowerCase();
-            int i_2_ = aClass291_629.aClass316_3723.method2365(1, Class281.method2108(string, -29286));
-            if (!method392(i_2_, (byte) -40)) return null;
-            if (i != -29832) method392(22, (byte) 12);
-            int i_3_ = (aClass291_629.aClass316Array3728[i_2_].method2365(i ^ ~0x7486, Class281.method2108(string_1_, -29286)));
-            return method410(-1860, i_2_, i_3_);
+            if (!indexReady(false)) return null;
+            groupName = groupName.toLowerCase();
+            fileName = fileName.toLowerCase();
+            int groupId = index.groupNameTable.find(1, Class281.intHashCp1252(groupName, -29286));
+            if (!isValidGroup(groupId, (byte) -40)) return null;
+            if (i != -29832) isValidGroup(22, (byte) 12);
+            int fileId = (index.fileNameTables[groupId].find(i ^ ~0x7486, Class281.intHashCp1252(fileName, -29286)));
+            return file(-1860, groupId, fileId);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("in.EA(" + (string != null ? "{...}" : "null") + ',' + (string_1_ != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("in.EA(" + (groupName != null ? "{...}" : "null") + ',' + (fileName != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 
-    private final boolean method392(int i, byte i_4_) {
+    private final boolean isValidGroup(int i, byte i_4_) {
         anInt646++;
-        if (!method399(false)) return false;
-        if (i < 0 || aClass291_629.anIntArray3724.length <= i || (aClass291_629.anIntArray3724[i] == 0)) {
-            if (Class285.aBoolean4741) throw new IllegalArgumentException(Integer.toString(i));
+        if (!indexReady(false)) return false;
+        if (i < 0 || index.fileLimits.length <= i || (index.fileLimits[i] == 0)) {
+            if (Class285.reportInvalidIds) throw new IllegalArgumentException(Integer.toString(i));
             return false;
         }
         return i_4_ == -40;
     }
 
-    final byte[] method393(int i, int i_5_, int i_6_, int[] is) {
+    final byte[] file(int group, int file, int i_6_, int[] key) {
         anInt639++;
         if (i_6_ != 2) anInt669 = 51;
-        if (!method418(i_5_, i_6_ + -2, i)) return null;
-        if (anObjectArrayArray664[i] == null || anObjectArrayArray664[i][i_5_] == null) {
-            boolean bool = method394(i_5_, (byte) -78, is, i);
+        if (!isValidFile(file, i_6_ + -2, group)) return null;
+        if (unpacked[group] == null || unpacked[group][file] == null) {
+            boolean bool = unpackFile(file, (byte) -78, key, group);
             if (!bool) {
-                method406(i, -117);
-                bool = method394(i_5_, (byte) -103, is, i);
+                fetchGroup(group, -117);
+                bool = unpackFile(file, (byte) -103, key, group);
                 if (!bool) return null;
             }
         }
-        byte[] is_7_ = Class50_Sub1.method461(false, anObjectArrayArray664[i][i_5_], 53146732);
+        byte[] data = Class50_Sub1.unwrap(false, unpacked[group][file], 53146732);
         if (this.discardUnpacked == 1) {
-            anObjectArrayArray664[i][i_5_] = null;
-            if (aClass291_629.anIntArray3724[i] == 1) anObjectArrayArray664[i] = null;
-        } else if (this.discardUnpacked == 2) anObjectArrayArray664[i] = null;
-        return is_7_;
+            unpacked[group][file] = null;
+            if (index.fileLimits[group] == 1) unpacked[group] = null;
+        } else if (this.discardUnpacked == 2) unpacked[group] = null;
+        return data;
     }
 
-    private final boolean method394(int i, byte i_8_, int[] is, int i_9_) {
+    private final boolean unpackFile(int fileId, byte i_8_, int[] key, int groupId) {
         anInt628++;
-        if (!method392(i_9_, (byte) -40)) return false;
-        if (anObjectArray656[i_9_] == null) return false;
-        int i_10_ = aClass291_629.anIntArray3725[i_9_];
-        int[] is_11_ = aClass291_629.anIntArrayArray3721[i_9_];
-        if (anObjectArrayArray664[i_9_] == null) anObjectArrayArray664[i_9_] = new Object[aClass291_629.anIntArray3724[i_9_]];
-        Object[] objects = anObjectArrayArray664[i_9_];
-        boolean bool = true;
-        for (int i_12_ = 0; i_10_ > i_12_; i_12_++) {
-            int i_13_;
-            if (is_11_ == null) i_13_ = i_12_;
-            else i_13_ = is_11_[i_12_];
-            if (objects[i_13_] == null) {
-                bool = false;
+        if (!isValidGroup(groupId, (byte) -40)) return false;
+        if (packed[groupId] == null) return false;
+        int count = index.fileCounts[groupId];
+        int[] ids = index.fileIds[groupId];
+        if (unpacked[groupId] == null) {
+            unpacked[groupId] = new Object[index.fileLimits[groupId]];
+        }
+        Object[] groupData = unpacked[groupId];
+        boolean done = true;
+        for (int i = 0; count > i; i++) {
+            int id;
+            if (ids == null) id = i;
+            else id = ids[i];
+            if (groupData[id] == null) {
+                done = false;
                 break;
             }
         }
-        if (bool) return true;
-        byte[] is_14_;
-        if (is == null || (is[0] == 0 && is[1] == 0 && is[2] == 0 && is[3] == 0)) is_14_ = Class50_Sub1.method461(false, anObjectArray656[i_9_], 53146732);
+        if (done) return true;
+        byte[] unpacked;
+        if (key == null || (key[0] == 0 && key[1] == 0 && key[2] == 0 && key[3] == 0)) unpacked = Class50_Sub1.unwrap(false, packed[groupId], 53146732);
         else {
-            is_14_ = Class50_Sub1.method461(true, anObjectArray656[i_9_], 53146732);
-            Packet packet = new Packet(is_14_);
-            packet.method3367(607818341, is, 5, (packet.aByteArray7154).length);
+            unpacked = Class50_Sub1.unwrap(true, packed[groupId], 53146732);
+            Packet packet = new Packet(unpacked);
+            packet.tinyDec(607818341, key, 5, (packet.aByteArray7154).length);
         }
-        byte[] is_15_;
+        byte[] data;
         try {
-            is_15_ = Class348_Sub41.method3158(is_14_, -120);
+            data = Class348_Sub41.decompress(unpacked, -120);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("T3 - " + (is != null) + "," + i_9_ + "," + is_14_.length + "," + Class59_Sub1.method554(5126, is_14_.length, is_14_) + "," + Class59_Sub1.method554(5126, -2 + is_14_.length, is_14_) + "," + aClass291_629.anIntArray3729[i_9_] + "," + aClass291_629.anInt3719));
+            throw Class348_Sub17.method2929(runtimeexception, ("T3 - " + (key != null) + "," + groupId + "," + unpacked.length + "," + Class59_Sub1.method554(5126, unpacked.length, unpacked) + "," + Class59_Sub1.method554(5126, -2 + unpacked.length, unpacked) + "," + index.anIntArray3729[groupId] + "," + index.anInt3719));
         }
-        if (aBoolean655) anObjectArray656[i_9_] = null;
-        if (i_8_ >= -17) method415((byte) 70, -7);
-        if (i_10_ > 1) {
+        if (discardPacked) packed[groupId] = null;
+        if (i_8_ >= -17) fileReady((byte) 70, -7);
+        if (count > 1) {
             if (this.discardUnpacked == 2) {
-                int i_30_ = is_15_.length;
-                int i_31_ = 0xff & is_15_[--i_30_];
-                i_30_ -= 4 * (i_31_ * i_10_);
-                Packet packet = new Packet(is_15_);
-                int i_32_ = 0;
-                int i_33_ = 0;
-                packet.pos = i_30_;
-                for (int i_34_ = 0; i_34_ < i_31_; i_34_++) {
-                    int i_35_ = 0;
-                    for (int i_36_ = 0; i_36_ < i_10_; i_36_++) {
-                        i_35_ += packet.readInt((byte) -126);
-                        int i_37_;
-                        if (is_11_ == null) i_37_ = i_36_;
-                        else i_37_ = is_11_[i_36_];
-                        if (i == i_37_) {
-                            i_33_ = i_37_;
-                            i_32_ += i_35_;
+                int pos = data.length;
+                int blocks = 0xff & data[--pos];
+                pos -= 4 * (blocks * count);
+                Packet packet = new Packet(data);
+                int size = 0;
+                int target = 0;
+                packet.pos = pos;
+                for (int i = 0; i < blocks; i++) {
+                    int off = 0;
+                    for (int j = 0; j < count; j++) {
+                        off += packet.readInt((byte) -126);
+                        int id;
+                        if (ids == null) id = j;
+                        else id = ids[j];
+                        if (fileId == id) {
+                            target = id;
+                            size += off;
                         }
                     }
                 }
-                if (i_32_ == 0) return true;
-                byte[] is_38_ = new byte[i_32_];
-                packet.pos = i_30_;
-                i_32_ = 0;
-                int i_39_ = 0;
-                for (int i_40_ = 0; i_40_ < i_31_; i_40_++) {
-                    int i_41_ = 0;
-                    for (int i_42_ = 0; i_42_ < i_10_; i_42_++) {
-                        i_41_ += packet.readInt((byte) -126);
-                        int i_43_;
-                        if (is_11_ != null) i_43_ = is_11_[i_42_];
-                        else i_43_ = i_42_;
-                        if (i_43_ == i) {
-                            Class214.method1577(is_15_, i_39_, is_38_, i_32_, i_41_);
-                            i_32_ += i_41_;
+                if (size == 0) return true;
+                byte[] fileData = new byte[size];
+                packet.pos = pos;
+                size = 0;
+                int off = 0;
+                for (int i = 0; i < blocks; i++) {
+                    int len = 0;
+                    for (int j = 0; j < count; j++) {
+                        len += packet.readInt((byte) -126);
+                        int id;
+                        if (ids != null) id = ids[j];
+                        else id = j;
+                        if (id == fileId) {
+                            Class214.copy(data, off, fileData, size, len);
+                            size += len;
                         }
-                        i_39_ += i_41_;
+                        off += len;
                     }
                 }
-                objects[i_33_] = is_38_;
+                groupData[target] = fileData;
             } else {
-                int i_16_ = is_15_.length;
-                int i_17_ = 0xff & is_15_[--i_16_];
-                i_16_ -= 4 * (i_10_ * i_17_);
-                Packet packet = new Packet(is_15_);
-                int[] is_18_ = new int[i_10_];
-                packet.pos = i_16_;
-                for (int i_19_ = 0; i_19_ < i_17_; i_19_++) {
-                    int i_20_ = 0;
-                    for (int i_21_ = 0; i_21_ < i_10_; i_21_++) {
-                        i_20_ += packet.readInt((byte) -126);
-                        is_18_[i_21_] += i_20_;
+                int pos = data.length;
+                int blocks = 0xff & data[--pos];
+                pos -= 4 * (count * blocks);
+                Packet packet = new Packet(data);
+                int[] sizes = new int[count];
+                packet.pos = pos;
+                for (int i = 0; i < blocks; i++) {
+                    int size = 0;
+                    for (int j = 0; j < count; j++) {
+                        size += packet.readInt((byte) -126);
+                        sizes[j] += size;
                     }
                 }
-                byte[][] is_22_ = new byte[i_10_][];
-                for (int i_23_ = 0; i_10_ > i_23_; i_23_++) {
-                    is_22_[i_23_] = new byte[is_18_[i_23_]];
-                    is_18_[i_23_] = 0;
+                byte[][] files = new byte[count][];
+                for (int i = 0; count > i; i++) {
+                    files[i] = new byte[sizes[i]];
+                    sizes[i] = 0;
                 }
-                packet.pos = i_16_;
-                int i_24_ = 0;
-                for (int i_25_ = 0; i_25_ < i_17_; i_25_++) {
-                    int i_26_ = 0;
-                    for (int i_27_ = 0; i_10_ > i_27_; i_27_++) {
-                        i_26_ += packet.readInt((byte) -126);
-                        Class214.method1577(is_15_, i_24_, is_22_[i_27_], is_18_[i_27_], i_26_);
-                        i_24_ += i_26_;
-                        is_18_[i_27_] += i_26_;
+                packet.pos = pos;
+                int off = 0;
+                for (int i = 0; i < blocks; i++) {
+                    int size = 0;
+                    for (int j = 0; count > j; j++) {
+                        size += packet.readInt((byte) -126);
+                        Class214.copy(data, off, files[j], sizes[j], size);
+                        off += size;
+                        sizes[j] += size;
                     }
                 }
-                for (int i_28_ = 0; i_10_ > i_28_; i_28_++) {
-                    int i_29_;
-                    if (is_11_ == null) i_29_ = i_28_;
-                    else i_29_ = is_11_[i_28_];
-                    if (this.discardUnpacked != 0) objects[i_29_] = is_22_[i_28_];
-                    else objects[i_29_] = Class179.method1357(is_22_[i_28_], false, (byte) 126);
+                for (int i = 0; count > i; i++) {
+                    int id;
+                    if (ids == null) id = i;
+                    else id = ids[i];
+                    if (this.discardUnpacked != 0) groupData[id] = files[i];
+                    else groupData[id] = Class179.wrap(files[i], false, (byte) 126);
                 }
             }
         } else {
-            int i_44_;
-            if (is_11_ != null) i_44_ = is_11_[0];
-            else i_44_ = 0;
-            if (this.discardUnpacked != 0) objects[i_44_] = is_15_;
-            else objects[i_44_] = Class179.method1357(is_15_, false, (byte) 104);
+            int id;
+            if (ids != null) id = ids[0];
+            else id = 0;
+            if (this.discardUnpacked != 0) groupData[id] = data;
+            else groupData[id] = Class179.wrap(data, false, (byte) 104);
         }
         return true;
     }
@@ -238,298 +240,298 @@ final class Index {
         if (i >= 73) anInt642++;
     }
 
-    final int[] method396(int i, int i_45_) {
+    final int[] fileIds(int groupId, int i_45_) {
         anInt640++;
         if (i_45_ != 0) indexCrc(-55);
-        if (!method392(i, (byte) -40)) return null;
-        int[] is = aClass291_629.anIntArrayArray3721[i];
-        if (is == null) {
-            is = new int[aClass291_629.anIntArray3725[i]];
-            for (int i_46_ = 0; i_46_ < is.length; i_46_++)
-                is[i_46_] = i_46_;
+        if (!isValidGroup(groupId, (byte) -40)) return null;
+        int[] fileIds = index.fileIds[groupId];
+        if (fileIds == null) {
+            fileIds = new int[index.fileCounts[groupId]];
+            for (int fileId = 0; fileId < fileIds.length; fileId++)
+                fileIds[fileId] = fileId;
         }
-        return is;
+        return fileIds;
     }
 
-    final int method397(String string, int i) {
+    final int completePercentage(String groupName, int i) {
         anInt633++;
-        if (!method399(false)) return 0;
-        string = string.toLowerCase();
-        if (i != 0) aResourceProvider_659 = null;
-        int i_47_ = aClass291_629.aClass316_3723.method2365(1, Class281.method2108(string, i ^ ~0x7265));
-        return method419(i, i_47_);
+        if (!indexReady(false)) return 0;
+        groupName = groupName.toLowerCase();
+        if (i != 0) provider = null;
+        int groupId = index.groupNameTable.find(1, Class281.intHashCp1252(groupName, i ^ ~0x7265));
+        return completePercentage(i, groupId);
     }
 
     // method398
-    final int completePercentage(byte i) {
+    final int completePercentage(byte j) {
         anInt641++;
-        if (!method399(false)) return 0;
-        int i_48_ = 0;
-        int i_49_ = 0;
-        int i_50_ = 0;
-        if (i != -31) return 50;
-        for (/**/; anObjectArray656.length > i_50_; i_50_++) {
-            if (aClass291_629.anIntArray3725[i_50_] > 0) {
-                i_49_ += method419(0, i_50_);
-                i_48_ += 100;
+        if (!indexReady(false)) return 0;
+        int total = 0;
+        int percentage = 0;
+        int i = 0;
+        if (j != -31) return 50;
+        for (/**/; packed.length > i; i++) {
+            if (index.fileCounts[i] > 0) {
+                percentage += completePercentage(0, i);
+                total += 100;
             }
         }
-        if (i_48_ == 0) return 100;
-        int i_51_ = i_49_ * 100 / i_48_;
-        return i_51_;
+        if (total == 0) return 100;
+        return percentage * 100 / total;
     }
 
-    private final boolean method399(boolean bool) {
+    private final boolean indexReady(boolean bool) {
         anInt652++;
-        if (aClass291_629 == null) {
-            aClass291_629 = aResourceProvider_659.method2340((byte) 56);
-            if (aClass291_629 == null) return false;
-            anObjectArray656 = new Object[aClass291_629.anInt3734];
-            anObjectArrayArray664 = new Object[aClass291_629.anInt3734][];
+        if (index == null) {
+            index = provider.index((byte) 56);
+            if (index == null) return false;
+            packed = new Object[index.groupLimit];
+            unpacked = new Object[index.groupLimit][];
         }
-        if (bool != false) aResourceProvider_659 = null;
+        if (bool) provider = null;
         return true;
     }
 
-    final boolean method400(int i, String string) {
+    final boolean groupExists(int i, String groupName) {
         anInt635++;
-        if (!method399(false)) return false;
+        if (!indexReady(false)) return false;
         if (i != -18308) return false;
-        string = string.toLowerCase();
-        int i_52_ = aClass291_629.aClass316_3723.method2365(1, Class281.method2108(string, -29286));
-        return i_52_ >= 0;
+        groupName = groupName.toLowerCase();
+        int groupId = index.groupNameTable.find(1, Class281.intHashCp1252(groupName, -29286));
+        return groupId >= 0;
     }
 
-    // method401
     final boolean isComplete(int i) {
         anInt648++;
-        if (!method399(false)) return false;
+        if (!indexReady(false)) return false;
         boolean bool = true;
-        for (int i_53_ = 0; (i_53_ < aClass291_629.anIntArray3738.length); i_53_++) {
-            int i_54_ = aClass291_629.anIntArray3738[i_53_];
-            if (anObjectArray656[i_54_] == null) {
-                method406(i_54_, -128);
-                if (anObjectArray656[i_54_] == null) bool = false;
+        for (int i_53_ = 0; (i_53_ < index.anIntArray3738.length); i_53_++) {
+            int i_54_ = index.anIntArray3738[i_53_];
+            if (packed[i_54_] == null) {
+                fetchGroup(i_54_, -128);
+                if (packed[i_54_] == null) bool = false;
             }
         }
-        if (i < 33) method407(100, -92);
+        if (i < 33) fileLimit(100, -92);
         return bool;
     }
 
-    private final void method402(byte i, int i_55_) {
+    private final void requestGroup(int groupId) {
         anInt658++;
-        if (i < -70) aResourceProvider_659.method2338((byte) -52, i_55_);
+        provider.requestGroup((byte) -52, groupId);
     }
 
-    private final boolean method403(String string, int i, String string_56_) {
+    private final boolean request(String groupName, int i, String fileName) {
         try {
             anInt626++;
-            if (!method399(false)) return false;
-            string = string.toLowerCase();
-            string_56_ = string_56_.toLowerCase();
-            int i_57_ = (aClass291_629.aClass316_3723.method2365(i ^ 0x1c1a, Class281.method2108(string, -29286)));
-            if (i != 7195) method403(null, -20, null);
-            if (!method392(i_57_, (byte) -40)) return false;
-            int i_58_ = aClass291_629.aClass316Array3728[i_57_].method2365(1, Class281.method2108(string_56_, -29286));
-            return requestDownload(i + -17694, i_57_, i_58_);
+            if (!indexReady(false)) return false;
+            groupName = groupName.toLowerCase();
+            fileName = fileName.toLowerCase();
+            int groupId = (index.groupNameTable.find(i ^ 0x1c1a, Class281.intHashCp1252(groupName, -29286)));
+            if (i != 7195) request(null, -20, null);
+            if (!isValidGroup(groupId, (byte) -40)) return false;
+            int fileId = index.fileNameTables[groupId].find(1, Class281.intHashCp1252(fileName, -29286));
+            return requestDownload(i + -17694, groupId, fileId);
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("in.Q(" + (string != null ? "{...}" : "null") + ',' + i + ',' + (string_56_ != null ? "{...}" : "null") + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("in.Q(" + (groupName != null ? "{...}" : "null") + ',' + i + ',' + (fileName != null ? "{...}" : "null") + ')'));
         }
     }
 
-    final void method404(int i, boolean bool, boolean bool_59_) {
+    final void clear(int i, boolean files, boolean groups) {
         anInt644++;
-        if (i != 0) method391(null, null, -3);
-        if (method399(false)) {
-            if (bool_59_) {
-                aClass291_629.anIntArray3733 = null;
-                aClass291_629.aClass316_3723 = null;
+        if (i != 0) file(null, null, -3);
+        if (indexReady(false)) {
+            if (groups) {
+                index.groupNames = null;
+                index.groupNameTable = null;
             }
-            if (bool) {
-                aClass291_629.anIntArrayArray3735 = null;
-                aClass291_629.aClass316Array3728 = null;
+            if (files) {
+                index.fileNames = null;
+                index.fileNameTables = null;
             }
         }
     }
 
-    final void method405(int i) {
+    final void discardPacked(int i) {
         anInt650++;
-        if (i != 0) method416((byte) -45, null);
-        if (anObjectArray656 != null) {
-            for (int i_60_ = 0; i_60_ < anObjectArray656.length; i_60_++)
-                anObjectArray656[i_60_] = null;
+        if (i != 0) fileReady((byte) -45, null);
+        if (packed != null) {
+            for (int i_60_ = 0; i_60_ < packed.length; i_60_++)
+                packed[i_60_] = null;
         }
     }
 
-    private final void method406(int i, int i_61_) {
-        if (i_61_ > -105) anObjectArrayArray664 = null;
-        if (!aBoolean655) anObjectArray656[i] = Class179.method1357(aResourceProvider_659.method2339(i, (byte) 73), false, (byte) 123);
-        else anObjectArray656[i] = aResourceProvider_659.method2339(i, (byte) 12);
+    private final void fetchGroup(int groupId, int i_61_) {
+        if (i_61_ > -105) unpacked = null;
+        if (discardPacked) {
+            packed[groupId] = provider.fetchGroup(groupId, (byte) 12);
+        } else {
+            packed[groupId] = Class179.wrap(provider.fetchGroup(groupId, (byte) 73), false, (byte) 123);
+        }
         anInt665++;
     }
 
-    final int method407(int i, int i_62_) {
+    final int fileLimit(int i, int groupId) {
         if (i != 0) indexCrc(-61);
         anInt645++;
-        if (!method392(i_62_, (byte) -40)) return 0;
-        return aClass291_629.anIntArray3724[i_62_];
+        if (!isValidGroup(groupId, (byte) -40)) return 0;
+        return index.fileLimits[groupId];
     }
 
-    final boolean method408(byte i, int i_63_) {
+    final boolean requestGroup(byte i, int groupId) {
         anInt632++;
-        if (!method392(i_63_, (byte) -40)) return false;
-        if (anObjectArray656[i_63_] != null) return true;
-        method406(i_63_, -124);
-        if (anObjectArray656[i_63_] != null) return true;
+        if (!isValidGroup(groupId, (byte) -40)) return false;
+        if (packed[groupId] != null) return true;
+        fetchGroup(groupId, -124);
+        if (packed[groupId] != null) return true;
         if (i > -112) this.discardUnpacked = -26;
         return false;
     }
 
-    final void method409(String string, boolean bool) {
+    final void requestGroup(String string, boolean bool) {
         anInt663++;
-        if (bool == true && method399(false)) {
+        if (bool == true && indexReady(false)) {
             string = string.toLowerCase();
-            int i = aClass291_629.aClass316_3723.method2365(1, Class281.method2108(string, -29286));
-            method402((byte) -86, i);
+            int i = index.groupNameTable.find(1, Class281.intHashCp1252(string, -29286));
+            requestGroup(i);
         }
     }
 
-    final byte[] method410(int i, int i_64_, int i_65_) {
-        if (i != -1860) anObjectArrayArray664 = null;
+    final byte[] file(int i, int i_64_, int i_65_) {
+        if (i != -1860) unpacked = null;
         anInt651++;
-        return method393(i_64_, i_65_, i ^ ~0x741, null);
+        return file(i_64_, i_65_, i ^ ~0x741, null);
     }
 
-    final void method411(int i, int i_66_) {
+    final void discardUnpacked(int groupId, int i_66_) {
         anInt627++;
-        if (i_66_ > -9) method394(-111, (byte) -98, null, -71);
-        if (method392(i, (byte) -40)) {
-            if (anObjectArrayArray664 != null) anObjectArrayArray664[i] = null;
+        if (i_66_ > -9) unpackFile(-111, (byte) -98, null, -71);
+        if (isValidGroup(groupId, (byte) -40)) {
+            if (unpacked != null) unpacked[groupId] = null;
         }
     }
 
-    final void method412(byte i) {
-        if (anObjectArrayArray664 != null) {
-            for (int i_67_ = 0; anObjectArrayArray664.length > i_67_; i_67_++)
-                anObjectArrayArray664[i_67_] = null;
+    final void discardUnpacked(byte i) {
+        if (unpacked != null) {
+            for (int i_67_ = 0; unpacked.length > i_67_; i_67_++)
+                unpacked[i_67_] = null;
         }
         int i_68_ = 52 % ((-46 - i) / 62);
         anInt660++;
     }
 
-    final boolean method413(int i, String string) {
+    final boolean requestGroup(int i, String groupName) {
         anInt636++;
-        if (!method399(false)) return false;
-        string = string.toLowerCase();
-        int i_69_ = aClass291_629.aClass316_3723.method2365(i + -99, Class281.method2108(string, -29286));
+        if (!indexReady(false)) return false;
+        groupName = groupName.toLowerCase();
+        int groupId = index.groupNameTable.find(i + -99, Class281.intHashCp1252(groupName, -29286));
         if (i != 100) aFloat670 = 0.37849286F;
-        return method408((byte) -120, i_69_);
+        return requestGroup((byte) -120, groupId);
     }
 
-    final int method414(int i) {
+    final int groupSize(int i) {
         anInt637++;
         if (i != -1) return 49;
-        if (!method399(false)) return -1;
-        return aClass291_629.anIntArray3724.length;
+        if (!indexReady(false)) return -1;
+        return index.fileLimits.length;
     }
 
-    final byte[] method415(byte i, int i_70_) {
+    final byte[] fileReady(byte i, int id) {
         anInt630++;
-        if (!method399(false)) return null;
-        if (aClass291_629.anIntArray3724.length == 1) return method410(i ^ ~0x70a, 0, i_70_);
-        if (!method392(i_70_, (byte) -40)) return null;
-        if (i != 73) anObjectArrayArray664 = null;
-        if (aClass291_629.anIntArray3724[i_70_] == 1) return method410(i ^ ~0x70a, i_70_, 0);
+        if (!indexReady(false)) return null;
+        if (index.fileLimits.length == 1) return file(i ^ ~0x70a, 0, id);
+        if (!isValidGroup(id, (byte) -40)) return null;
+        if (i != 73) unpacked = null;
+        if (index.fileLimits[id] == 1) return file(i ^ ~0x70a, id, 0);
         throw new RuntimeException();
     }
 
-    final boolean method416(byte i, String string) {
+    final boolean fileReady(byte i, String fileName) {
         anInt631++;
-        int i_71_ = method417("", i + 74);
-        if (i_71_ != -1) return method403("", 7195, string);
+        int i_71_ = groupId("", i + 74);
+        if (i_71_ != -1) return request("", 7195, fileName);
         if (i != -74) return false;
-        return method403(string, 7195, "");
+        return request(fileName, 7195, "");
     }
 
-    final int method417(String string, int i) {
+    final int groupId(String groupName, int i) {
         if (i != 0) return 113;
         anInt654++;
-        if (!method399(false)) return -1;
-        string = string.toLowerCase();
-        int i_72_ = aClass291_629.aClass316_3723.method2365(1, Class281.method2108(string, -29286));
-        if (!method392(i_72_, (byte) -40)) return -1;
-        return i_72_;
+        if (!indexReady(false)) return -1;
+        groupName = groupName.toLowerCase();
+        int groupId = index.groupNameTable.find(1, Class281.intHashCp1252(groupName, -29286));
+        if (!isValidGroup(groupId, (byte) -40)) return -1;
+        return groupId;
     }
 
-    private final boolean method418(int i, int i_73_, int i_74_) {
+    private final boolean isValidFile(int file, int i_73_, int group) {
         anInt662++;
-        if (!method399(false)) return false;
-        if (i_74_ < i_73_ || i < 0 || (aClass291_629.anIntArray3724.length <= i_74_) || (aClass291_629.anIntArray3724[i_74_] <= i)) {
-            if (Class285.aBoolean4741) throw new IllegalArgumentException(i_74_ + "," + i);
+        if (!indexReady(false)) return false;
+        if (group < i_73_ || file < 0 || (index.fileLimits.length <= group) || (index.fileLimits[group] <= file)) {
+            if (Class285.reportInvalidIds) throw new IllegalArgumentException(group + "," + file);
             return false;
         }
         return true;
     }
 
-    private final int method419(int i, int i_75_) {
+    private final int completePercentage(int i, int groupId) {
         if (i != 0) return -117;
         anInt653++;
-        if (!method392(i_75_, (byte) -40)) return 0;
-        if (anObjectArray656[i_75_] != null) return 100;
-        return aResourceProvider_659.method2335(i_75_, i + -22197);
+        if (!isValidGroup(groupId, (byte) -40)) return 0;
+        if (packed[groupId] != null) return 100;
+        return provider.completePercentage(groupId, i + -22197);
     }
 
     // method420
     final boolean requestDownload(int i, int i_76_, int i_77_) {
         anInt638++;
-        if (!method418(i_77_, 0, i_76_)) return false;
-        if (anObjectArrayArray664[i_76_] != null && anObjectArrayArray664[i_76_][i_77_] != null) return true;
+        if (!isValidFile(i_77_, 0, i_76_)) return false;
+        if (unpacked[i_76_] != null && unpacked[i_76_][i_77_] != null) return true;
         if (i != -10499) return true;
-        if (anObjectArray656[i_76_] != null) return true;
-        method406(i_76_, -125);
-        return anObjectArray656[i_76_] != null;
+        if (packed[i_76_] != null) return true;
+        fetchGroup(i_76_, -125);
+        return packed[i_76_] != null;
     }
 
     // method421
     final boolean fileReady(boolean bool, int i) {
         anInt661++;
-        if (!method399(bool)) return false;
-        if (aClass291_629.anIntArray3724.length == 1) return requestDownload(-10499, 0, i);
-        if (!method392(i, (byte) -40)) return false;
-        if (aClass291_629.anIntArray3724[i] == 1) return requestDownload(-10499, i, 0);
+        if (!indexReady(bool)) return false;
+        if (index.fileLimits.length == 1) return requestDownload(-10499, 0, i);
+        if (!isValidGroup(i, (byte) -40)) return false;
+        if (index.fileLimits[i] == 1) return requestDownload(-10499, i, 0);
         if (bool != false) return false;
         throw new RuntimeException();
     }
 
-    final boolean method422(String string, String string_78_, int i) {
+    final boolean fileExists(String fileName, String groupName, int i) {
         try {
             anInt668++;
-            if (!method399(false)) return false;
-            string_78_ = string_78_.toLowerCase();
+            if (!indexReady(false)) return false;
+            groupName = groupName.toLowerCase();
             if (i > -18) anInt669 = 40;
-            string = string.toLowerCase();
-            int i_79_ = aClass291_629.aClass316_3723.method2365(1, Class281.method2108(string_78_, -29286));
-            if (i_79_ < 0) return false;
-            int i_80_ = aClass291_629.aClass316Array3728[i_79_].method2365(1, Class281.method2108(string, -29286));
-            return i_80_ >= 0;
+            fileName = fileName.toLowerCase();
+            int groupId = index.groupNameTable.find(1, Class281.intHashCp1252(groupName, -29286));
+            if (groupId < 0) return false;
+            int fileId = index.fileNameTables[groupId].find(1, Class281.intHashCp1252(fileName, -29286));
+            return fileId >= 0;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, ("in.M(" + (string != null ? "{...}" : "null") + ',' + (string_78_ != null ? "{...}" : "null") + ',' + i + ')'));
+            throw Class348_Sub17.method2929(runtimeexception, ("in.M(" + (fileName != null ? "{...}" : "null") + ',' + (groupName != null ? "{...}" : "null") + ',' + i + ')'));
         }
     }
 
-    final int method423(int i, byte i_81_) {
+    final int groupId(int name, byte i_81_) {
         anInt649++;
-        if (!method399(false)) return -1;
-        int i_82_ = aClass291_629.aClass316_3723.method2365(1, i);
-        if (!method392(i_82_, (byte) -40)) return -1;
-        int i_83_ = -60 / ((i_81_ - -4) / 56);
-        return i_82_;
+        if (!indexReady(false)) return -1;
+        int groupId = index.groupNameTable.find(1, name);
+        if (!isValidGroup(groupId, (byte) -40)) return -1;
+        return groupId;
     }
 
     Index(ResourceProvider resourceProvider, boolean bool, int i) {
         if (i < 0 || i > 2) throw new IllegalArgumentException("js5: Invalid value " + i + " supplied for discardunpacked");
-        aResourceProvider_659 = resourceProvider;
-        aBoolean655 = bool;
+        provider = resourceProvider;
+        discardPacked = bool;
         this.discardUnpacked = i;
     }
 

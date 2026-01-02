@@ -26,7 +26,7 @@ final class Class281 {
         class348_sub47.aClass348_Sub49_Sub2_7116.method3350(i_1_, true, is, class348_sub47.aClass348_Sub49_Sub2_7116.pos);
         class348_sub47.aClass348_Sub49_Sub2_7116.method3383(1809639944, -i_0_ + (class348_sub47.aClass348_Sub49_Sub2_7116.pos));
         Class348_Sub42_Sub14.method3243(118, class348_sub47);
-        if (i <= 99) method2108(null, 70);
+        if (i <= 99) intHashCp1252(null, 70);
         Class367_Sub2.anInt7297 = 1;
         Class352.anInt4337 = -3;
         Class169.anInt2264 = 0;
@@ -40,7 +40,7 @@ final class Class281 {
         if (i != 77) method2107((byte) -107);
     }
 
-    static final int method2108(String string, int i) {
+    static final int intHashCp1252(String string, int i) {
         anInt3646++;
         int i_2_ = string.length();
         int i_3_ = 0;

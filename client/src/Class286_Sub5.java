@@ -134,24 +134,24 @@ final class Class286_Sub5 extends Class286 {
 
     // method2159
     static final void getJs5Indexes(byte i, Index index) {
-        Class348_Sub22.hitmarksGroup = index.method417("hitmarks", 0);
+        Class348_Sub22.hitmarksGroup = index.groupId("hitmarks", 0);
         anInt6258++;
-        LoadingScreenOpFactory.hitbarDefaultGroup = index.method417("hitbar_default", 0);
-        Class373_Sub2.timerbarDefaultGroup = index.method417("timerbar_default", 0);
-        Toolkit.headIconsPkGroup = index.method417("headicons_pk", 0);
-        VarcstrTypeList.headIconsPrayerGroup = index.method417("headicons_prayer", 0);
-        Class115.hintHeadIconsGroup = index.method417("hint_headicons", 0);
-        Class291.hintMapmarkersGroup = index.method417("hint_mapmarkers", 0);
-        Class86.mapFlagGround = index.method417("mapflag", 0);
-        Option_Sub10.crossGroup = index.method417("cross", 0);
-        Class113.mapDotsGround = index.method417("mapdots", 0);
-        Class364.scrollBarGround = index.method417("scrollbar", 0);
-        TextureOpClamp.nameIconsGroup = index.method417("name_icons", 0);
-        QuestTypeList.floorShadowsGroup = index.method417("floorshadows", 0);
-        Class52.compassGroup = index.method417("compass", 0);
+        LoadingScreenOpFactory.hitbarDefaultGroup = index.groupId("hitbar_default", 0);
+        Class373_Sub2.timerbarDefaultGroup = index.groupId("timerbar_default", 0);
+        Toolkit.headIconsPkGroup = index.groupId("headicons_pk", 0);
+        VarcstrTypeList.headIconsPrayerGroup = index.groupId("headicons_prayer", 0);
+        Class115.hintHeadIconsGroup = index.groupId("hint_headicons", 0);
+        Class291.hintMapmarkersGroup = index.groupId("hint_mapmarkers", 0);
+        Class86.mapFlagGround = index.groupId("mapflag", 0);
+        Option_Sub10.crossGroup = index.groupId("cross", 0);
+        Class113.mapDotsGround = index.groupId("mapdots", 0);
+        Class364.scrollBarGround = index.groupId("scrollbar", 0);
+        TextureOpClamp.nameIconsGroup = index.groupId("name_icons", 0);
+        QuestTypeList.floorShadowsGroup = index.groupId("floorshadows", 0);
+        Class52.compassGroup = index.groupId("compass", 0);
         if (i > -72) method2161((byte) 106, 125L);
-        Class186_Sub1.otherLevelGroup = index.method417("otherlevel", 0);
-        Class5_Sub3.hintMapEdgeGroup = index.method417("hint_mapedge", 0);
+        Class186_Sub1.otherLevelGroup = index.groupId("otherlevel", 0);
+        Class5_Sub3.hintMapEdgeGroup = index.groupId("hint_mapedge", 0);
     }
 
     final void method2134(boolean bool, boolean bool_11_) {

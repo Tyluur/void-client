@@ -34,7 +34,7 @@ abstract class Class5 implements Interface1 {
         anInt4639++;
         if (i == 10286) {
             FontMetrics fontMetrics = Option_Sub10.getFontMetrics((byte) -85, (this.aClass369_4635.anInt4965), aIndex_4631);
-            aFontRenderer_4637 = (Class348_Sub8.active.method3686(fontMetrics, Class207.method1523(this.aIndex_4632, (this.aClass369_4635.anInt4965)), true));
+            aFontRenderer_4637 = (Class348_Sub8.active.method3686(fontMetrics, IndexedImage.method1523(this.aIndex_4632, (this.aClass369_4635.anInt4965)), true));
         }
     }
 

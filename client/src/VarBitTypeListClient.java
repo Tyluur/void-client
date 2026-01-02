@@ -60,7 +60,7 @@ final class VarBitTypeListClient {
         if (class146 != null) return class146;
         byte[] is;
         synchronized (aIndex_2597) {
-            is = aIndex_2597.method410(i_4_ ^ 0x743, Class179.method1359(true, i), Class348_Sub14.method2806(false, i));
+            is = aIndex_2597.file(i_4_ ^ 0x743, Class179.method1359(true, i), Class348_Sub14.method2806(false, i));
         }
         class146 = new Class146();
         if (i_4_ != -1) return null;
@@ -77,8 +77,8 @@ final class VarBitTypeListClient {
             try {
                 aIndex_2597 = index;
                 if (aIndex_2597 == null) break;
-                int i_5_ = aIndex_2597.method414(-1) + -1;
-                aIndex_2597.method407(0, i_5_);
+                int i_5_ = aIndex_2597.groupSize(-1) + -1;
+                aIndex_2597.fileLimit(0, i_5_);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("qs.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
             }

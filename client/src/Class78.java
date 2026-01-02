@@ -36,7 +36,7 @@ final class Class78 {
             if (aLong1321 != -1 && (aLong1321 > aLong1324 || (aLong1324 > (long) anInt1314 + aLong1321))) method791(-1);
             if (aLong1321 != -1L && (aLong1324 + (long) i_0_ > (long) aByteArray1305.length + aLong1321)) {
                 int i_1_ = (int) ((long) aByteArray1305.length + (aLong1321 + -aLong1324));
-                Class214.method1577(is, i, aByteArray1305, (int) (-aLong1321 + aLong1324), i_1_);
+                Class214.copy(is, i, aByteArray1305, (int) (-aLong1321 + aLong1324), i_1_);
                 i += i_1_;
                 i_0_ -= i_1_;
                 aLong1324 += i_1_;
@@ -59,14 +59,14 @@ final class Class78 {
                 else if ((aLong1324 < (long) anInt1320 + aLong1319) && ((long) i_0_ + aLong1324 >= aLong1319 + (long) anInt1320)) l_2_ = (long) anInt1320 + aLong1319;
                 if (l > -1L && l_2_ > l) {
                     int i_3_ = (int) (l_2_ + -l);
-                    Class214.method1577(is, (int) (-aLong1324 + l + (long) i), aByteArray1311, (int) (-aLong1319 + l), i_3_);
+                    Class214.copy(is, (int) (-aLong1324 + l + (long) i), aByteArray1311, (int) (-aLong1319 + l), i_3_);
                 }
                 aLong1324 += i_0_;
                 return;
             }
             if (i_0_ > 0) {
                 if (aLong1321 == -1L) aLong1321 = aLong1324;
-                Class214.method1577(is, i, aByteArray1305, (int) (-aLong1321 + aLong1324), i_0_);
+                Class214.copy(is, i, aByteArray1305, (int) (-aLong1321 + aLong1324), i_0_);
                 aLong1324 += i_0_;
                 if (aLong1324 + -aLong1321 > (long) anInt1314) anInt1314 = (int) (-aLong1321 + aLong1324);
                 return;
@@ -107,7 +107,7 @@ final class Class78 {
             if (i_5_ + i > is.length) throw new ArrayIndexOutOfBoundsException(i + (i_5_ - is.length));
             if (i_6_ != -16717) return;
             if (aLong1321 != -1 && aLong1324 >= aLong1321 && (aLong1324 - -(long) i_5_ <= (long) anInt1314 + aLong1321)) {
-                Class214.method1577(aByteArray1305, (int) (-aLong1321 + aLong1324), is, i, i_5_);
+                Class214.copy(aByteArray1305, (int) (-aLong1321 + aLong1324), is, i, i_5_);
                 aLong1324 += i_5_;
                 return;
             }
@@ -117,7 +117,7 @@ final class Class78 {
             if (aLong1324 >= aLong1319 && (aLong1319 - -(long) anInt1320 > aLong1324)) {
                 int i_9_ = (int) ((long) anInt1320 - (-aLong1319 + aLong1324));
                 if (i_5_ < i_9_) i_9_ = i_5_;
-                Class214.method1577(aByteArray1311, (int) (aLong1324 + -aLong1319), is, i, i_9_);
+                Class214.copy(aByteArray1311, (int) (aLong1324 + -aLong1319), is, i, i_9_);
                 aLong1324 += i_9_;
                 i_5_ -= i_9_;
                 i += i_9_;
@@ -137,7 +137,7 @@ final class Class78 {
                 method792((byte) -46);
                 int i_11_ = i_5_;
                 if (anInt1320 < i_11_) i_11_ = anInt1320;
-                Class214.method1577(aByteArray1311, 0, is, i, i_11_);
+                Class214.copy(aByteArray1311, 0, is, i, i_11_);
                 i += i_11_;
                 aLong1324 += i_11_;
                 i_5_ -= i_11_;
@@ -162,7 +162,7 @@ final class Class78 {
                 } else l_14_ = aLong1321 - -(long) anInt1314;
                 if (l_13_ > -1L && (l_13_ < l_14_)) {
                     int i_15_ = (int) (l_14_ + -l_13_);
-                    Class214.method1577(aByteArray1305, (int) (l_13_ + -aLong1321), is, i_7_ - -(int) (l_13_ - l), i_15_);
+                    Class214.copy(aByteArray1305, (int) (l_13_ + -aLong1321), is, i_7_ - -(int) (l_13_ - l), i_15_);
                     if (l_14_ > aLong1324) {
                         i_5_ -= -aLong1324 + l_14_;
                         aLong1324 = l_14_;
@@ -212,7 +212,7 @@ final class Class78 {
             else if ((aLong1321 < aLong1319 + (long) anInt1320) && (aLong1319 + (long) anInt1320 <= (long) anInt1314 + aLong1321)) l_18_ = (long) anInt1320 + aLong1319;
             if (l > -1 && l < l_18_) {
                 int i_19_ = (int) (-l + l_18_);
-                Class214.method1577(aByteArray1305, (int) (l - aLong1321), aByteArray1311, (int) (-aLong1319 + l), i_19_);
+                Class214.copy(aByteArray1305, (int) (l - aLong1321), aByteArray1311, (int) (-aLong1319 + l), i_19_);
             }
             aLong1321 = -1L;
             anInt1314 = 0;

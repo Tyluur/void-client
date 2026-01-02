@@ -72,7 +72,7 @@ final class BASTypeList {
         if (class225 != null) return class225;
         byte[] is;
         synchronized (aIndex_3319) {
-            is = aIndex_3319.method410(-1860, i_9_, i);
+            is = aIndex_3319.file(-1860, i_9_, i);
         }
         class225 = new Class225();
         if (is != null) class225.method1620(new Packet(is), -108);
@@ -281,7 +281,7 @@ final class BASTypeList {
     BASTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_3319 = index;
-            aIndex_3319.method407(0, 32);
+            aIndex_3319.fileLimit(0, 32);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("uga.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }

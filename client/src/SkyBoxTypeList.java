@@ -80,7 +80,7 @@ final class SkyBoxTypeList {
         if (class300 != null) return class300;
         byte[] is;
         synchronized (aIndex_1460) {
-            is = aIndex_1460.method410(-1860, i_15_, i);
+            is = aIndex_1460.file(-1860, i_15_, i);
         }
         class300 = new Class300();
         if (is != null) class300.method2275(new Packet(is), (byte) -123);
@@ -135,15 +135,15 @@ final class SkyBoxTypeList {
 
     static final void method826(int i, int i_24_, int i_25_, int i_26_, int i_27_, int i_28_, Toolkit var_toolkit) {
         if ((Class174.aSprite_2309 == null || Class348_Sub42_Sub15.aSprite_9658 == null || Class348_Sub42_Sub15.aSprite_9659 == null) && Class21.SPRITES.fileReady(false, Class318_Sub1_Sub3_Sub3.anInt10257) && Class21.SPRITES.fileReady(false, Class313.anInt3937) && Class21.SPRITES.fileReady(false, NPCDefinition.anInt1387)) {
-            Class207 class207 = Class207.method1521(Class21.SPRITES, Class313.anInt3937, 0);
-            Class348_Sub42_Sub15.aSprite_9658 = var_toolkit.method3691(class207, true);
-            class207.method1518();
-            Class309.aSprite_4808 = var_toolkit.method3691(class207, true);
-            Class174.aSprite_2309 = (var_toolkit.method3691(Class207.method1521(Class21.SPRITES, Class318_Sub1_Sub3_Sub3.anInt10257, 0), true));
-            Class207 class207_29_ = Class207.method1521(Class21.SPRITES, NPCDefinition.anInt1387, 0);
-            Class348_Sub42_Sub15.aSprite_9659 = var_toolkit.method3691(class207_29_, true);
-            class207_29_.method1518();
-            Class110.aSprite_1706 = var_toolkit.method3691(class207_29_, true);
+            IndexedImage indexedImage = IndexedImage.loadFirst(Class21.SPRITES, Class313.anInt3937, 0);
+            Class348_Sub42_Sub15.aSprite_9658 = var_toolkit.method3691(indexedImage, true);
+            indexedImage.method1518();
+            Class309.aSprite_4808 = var_toolkit.method3691(indexedImage, true);
+            Class174.aSprite_2309 = (var_toolkit.method3691(IndexedImage.loadFirst(Class21.SPRITES, Class318_Sub1_Sub3_Sub3.anInt10257, 0), true));
+            IndexedImage indexedImage_29_ = IndexedImage.loadFirst(Class21.SPRITES, NPCDefinition.anInt1387, 0);
+            Class348_Sub42_Sub15.aSprite_9659 = var_toolkit.method3691(indexedImage_29_, true);
+            indexedImage_29_.method1518();
+            Class110.aSprite_1706 = var_toolkit.method3691(indexedImage_29_, true);
         }
         anInt1454++;
         if (Class174.aSprite_2309 != null && Class348_Sub42_Sub15.aSprite_9658 != null && Class348_Sub42_Sub15.aSprite_9659 != null) {
@@ -165,7 +165,7 @@ final class SkyBoxTypeList {
     SkyBoxTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_1460 = index;
-            aIndex_1460.method407(0, 29);
+            aIndex_1460.fileLimit(0, 29);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("lca.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }

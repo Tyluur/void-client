@@ -42,7 +42,7 @@ final class Class93 {
         if (i_2_ < 64) return null;
         anInt1529++;
         byte[] is_3_ = new byte[i];
-        Class214.method1577(is, 0, is_3_, 0, i);
+        Class214.copy(is, 0, is_3_, 0, i);
         return is_3_;
     }
 
@@ -50,7 +50,7 @@ final class Class93 {
         anInt1533++;
         if (i_5_ >= -30) aStringArray1531 = null;
         byte[] is_6_ = new byte[i_4_];
-        Class214.method1577(is, i, is_6_, 0, i_4_);
+        Class214.copy(is, i, is_6_, 0, i_4_);
         return is_6_;
     }
 }

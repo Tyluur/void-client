@@ -84,14 +84,14 @@ final class Class218 {
         Sprite sprite = (Sprite) this.aMSITypeList_2851.aClass60_1976.method583(l, -87);
         if (sprite != null) return sprite;
         if (!this.aMSITypeList_2851.aIndex_1965.fileReady(false, this.anInt2853)) return null;
-        Class207 class207 = Class207.method1521(this.aMSITypeList_2851.aIndex_1965, this.anInt2853, 0);
-        if (class207 != null) {
-            class207.anInt2701 = class207.anInt2703 = class207.anInt2698 = class207.anInt2700 = 0;
-            if (bool) class207.method1514();
+        IndexedImage indexedImage = IndexedImage.loadFirst(this.aMSITypeList_2851.aIndex_1965, this.anInt2853, 0);
+        if (indexedImage != null) {
+            indexedImage.innerHeight = indexedImage.offsetX = indexedImage.innerWidth = indexedImage.offsetY = 0;
+            if (bool) indexedImage.method1514();
             for (int i_19_ = 0; i_19_ < i; i_19_++)
-                class207.method1520();
+                indexedImage.method1520();
         }
-        sprite = var_toolkit.method3691(class207, true);
+        sprite = var_toolkit.method3691(indexedImage, true);
         if (sprite != null) this.aMSITypeList_2851.aClass60_1976.method582(sprite, l, (byte) -101);
         return sprite;
     }

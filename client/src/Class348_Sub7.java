@@ -5,7 +5,7 @@
 final class Class348_Sub7 extends Node {
     static int anInt6641;
     int anInt6642;
-    static Class207 aClass207_6643;
+    static IndexedImage aIndexedImage_6643;
     static Class229 aClass229_6644 = new Class229();
     int anInt6645;
     static int anInt6646;
@@ -33,7 +33,7 @@ final class Class348_Sub7 extends Node {
     }
 
     public static void method2773(int i) {
-        aClass207_6643 = null;
+        aIndexedImage_6643 = null;
         aClass229_6644 = null;
         if (i == 0) enumTypeList = null;
     }

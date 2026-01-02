@@ -128,35 +128,35 @@ final class Canvas_Sub1 extends Canvas {
         boolean bool = true;
         for (int i_19_ = 0; Class347.aByteArrayArray4281.length > i_19_; i_19_++) {
             if (aa_Sub1.mapTiles[i_19_] != -1 && Class347.aByteArrayArray4281[i_19_] == null) {
-                Class347.aByteArrayArray4281[i_19_] = Class367_Sub10.MAPS.method410(-1860, aa_Sub1.mapTiles[i_19_], 0);
+                Class347.aByteArrayArray4281[i_19_] = Class367_Sub10.MAPS.file(-1860, aa_Sub1.mapTiles[i_19_], 0);
                 if (Class347.aByteArrayArray4281[i_19_] == null) {
                     bool = false;
                     FloorOverlayTypeList.anInt3441++;
                 }
             }
             if (Applet_Sub1.mapLocations[i_19_] != -1 && Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
-                Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.MAPS.method393(Applet_Sub1.mapLocations[i_19_], 0, i + 2, Option_Sub6.anIntArrayArray5894[i_19_]));
+                Class14_Sub4.aByteArrayArray8642[i_19_] = (Class367_Sub10.MAPS.file(Applet_Sub1.mapLocations[i_19_], 0, i + 2, Option_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class14_Sub4.aByteArrayArray8642[i_19_] == null) {
                     FloorOverlayTypeList.anInt3441++;
                     bool = false;
                 }
             }
             if (Class295.mapUndergroundTiles[i_19_] != -1 && ModelParticleEmitter.aByteArrayArray1887[i_19_] == null) {
-                ModelParticleEmitter.aByteArrayArray1887[i_19_] = Class367_Sub10.MAPS.method410(-1860, Class295.mapUndergroundTiles[i_19_], 0);
+                ModelParticleEmitter.aByteArrayArray1887[i_19_] = Class367_Sub10.MAPS.file(-1860, Class295.mapUndergroundTiles[i_19_], 0);
                 if (ModelParticleEmitter.aByteArrayArray1887[i_19_] == null) {
                     FloorOverlayTypeList.anInt3441++;
                     bool = false;
                 }
             }
             if (r.mapUndergroundLocations[i_19_] != -1 && Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] == null) {
-                Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] = Class367_Sub10.MAPS.method410(-1860, r.mapUndergroundLocations[i_19_], 0);
+                Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] = Class367_Sub10.MAPS.file(-1860, r.mapUndergroundLocations[i_19_], 0);
                 if (Class348_Sub23_Sub1.aByteArrayArray8996[i_19_] == null) {
                     bool = false;
                     FloorOverlayTypeList.anInt3441++;
                 }
             }
             if (ColourImageCache.mapNpcs != null && Class348_Sub50.aByteArrayArray7212[i_19_] == null && ColourImageCache.mapNpcs[i_19_] != -1) {
-                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.MAPS.method393(ColourImageCache.mapNpcs[i_19_], 0, i + 2, Option_Sub6.anIntArrayArray5894[i_19_]));
+                Class348_Sub50.aByteArrayArray7212[i_19_] = (Class367_Sub10.MAPS.file(ColourImageCache.mapNpcs[i_19_], 0, i + 2, Option_Sub6.anIntArrayArray5894[i_19_]));
                 if (Class348_Sub50.aByteArrayArray7212[i_19_] == null) {
                     bool = false;
                     FloorOverlayTypeList.anInt3441++;
@@ -164,8 +164,8 @@ final class Canvas_Sub1 extends Canvas {
             }
         }
         if (r_Sub2.aClass252_10488 == null) {
-            if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.WORLD_MAP.method400(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))) {
-                if (Class348_Sub32.WORLD_MAP.method413(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))
+            if (Class348_Sub26.aClass348_Sub42_Sub14_6885 != null && (Class348_Sub32.WORLD_MAP.groupExists(-18308, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))) {
+                if (Class348_Sub32.WORLD_MAP.requestGroup(100, (Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"))
                     r_Sub2.aClass252_10488 = Class307.method2300(Class348_Sub32.WORLD_MAP, ((Class348_Sub26.aClass348_Sub42_Sub14_6885.aString9625) + "_staticelements"), Class130.membersWorld, (byte) -91);
                 else {
                     bool = false;
@@ -315,8 +315,8 @@ final class Canvas_Sub1 extends Canvas {
                     for (int i_37_ = i_33_ - 1; i_37_ <= i_34_ - -1; i_37_++) {
                         for (int i_38_ = i_35_ + -1; i_38_ <= i_36_ - -1; i_38_++) {
                             if (i_33_ > i_37_ || i_34_ < i_37_ || i_38_ < i_35_ || i_38_ > i_36_) {
-                                Class367_Sub10.MAPS.method409("m" + i_37_ + "_" + i_38_, true);
-                                Class367_Sub10.MAPS.method409("l" + i_37_ + "_" + i_38_, true);
+                                Class367_Sub10.MAPS.requestGroup("m" + i_37_ + "_" + i_38_, true);
+                                Class367_Sub10.MAPS.requestGroup("l" + i_37_ + "_" + i_38_, true);
                             }
                         }
                     }

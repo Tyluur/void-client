@@ -54,10 +54,10 @@ final class Js5ResourceProvider extends ResourceProvider {
     final void method2342(int i) {
         anInt6349++;
         if (i != 0) aBoolean6375 = false;
-        if (aDeque_6372 != null && method2340((byte) 56) != null) {
+        if (aDeque_6372 != null && index((byte) 56) != null) {
             for (Node node = aDeque_6369.method1995(4); node != null; node = aDeque_6369.method1990((byte) 112)) {
                 int i_0_ = (int) node.key;
-                if (i_0_ < 0 || (aClass291_6342.anInt3734 <= i_0_) || aClass291_6342.anIntArray3725[i_0_] == 0) node.unlink((byte) 37);
+                if (i_0_ < 0 || (aClass291_6342.groupLimit <= i_0_) || aClass291_6342.fileCounts[i_0_] == 0) node.unlink((byte) 37);
                 else {
                     if (aByteArray6351[i_0_] == 0) method2350(i_0_, (byte) 65, 1);
                     if (aByteArray6351[i_0_] == -1) method2350(i_0_, (byte) 65, 2);
@@ -70,7 +70,7 @@ final class Js5ResourceProvider extends ResourceProvider {
     final void method2343(int i) {
         anInt6356++;
         if (aDeque_6372 != null) {
-            if (method2340((byte) 56) == null) return;
+            if (index((byte) 56) == null) return;
             if (aBoolean6368) {
                 boolean bool = true;
                 for (Node node = aDeque_6372.method1995(4); node != null; node = aDeque_6372.method1990((byte) 106)) {
@@ -79,8 +79,8 @@ final class Js5ResourceProvider extends ResourceProvider {
                     if (aByteArray6351[i_1_] != 0) node.unlink((byte) 22);
                     else bool = false;
                 }
-                while (aClass291_6342.anIntArray3725.length > anInt6373) {
-                    if (aClass291_6342.anIntArray3725[anInt6373] == 0) anInt6373++;
+                while (aClass291_6342.fileCounts.length > anInt6373) {
+                    if (aClass291_6342.fileCounts[anInt6373] == 0) anInt6373++;
                     else {
                         if (aClass112_6354.anInt1734 >= 250) {
                             bool = false;
@@ -108,8 +108,8 @@ final class Js5ResourceProvider extends ResourceProvider {
                     if (aByteArray6351[i_2_] != 1) bool = false;
                     else node.unlink((byte) 60);
                 }
-                while (aClass291_6342.anIntArray3725.length > anInt6373) {
-                    if (aClass291_6342.anIntArray3725[anInt6373] == 0) anInt6373++;
+                while (aClass291_6342.fileCounts.length > anInt6373) {
+                    if (aClass291_6342.fileCounts[anInt6373] == 0) anInt6373++;
                     else {
                         if (aClass248_6347.method1899(-124)) {
                             bool = false;
@@ -153,11 +153,11 @@ final class Js5ResourceProvider extends ResourceProvider {
     final int method2345(int i) {
         anInt6357++;
         if (aClass291_6342 == null) return 0;
-        if (i != 0) method2338((byte) -34, 120);
+        if (i != 0) requestGroup((byte) -34, 120);
         return aClass291_6342.anInt3727;
     }
 
-    final byte[] method2339(int i, byte i_3_) {
+    final byte[] fetchGroup(int i, byte i_3_) {
         int i_4_ = -16 / ((i_3_ - -44) / 37);
         anInt6363++;
         Class348_Sub42_Sub16 class348_sub42_sub16 = method2350(i, (byte) 65, 0);
@@ -177,7 +177,7 @@ final class Js5ResourceProvider extends ResourceProvider {
         }
     }
 
-    final void method2338(byte i, int i_5_) {
+    final void requestGroup(byte i, int i_5_) {
         anInt6345++;
         if (i != -52) aClass291_6342 = null;
         if (aClass137_6365 != null) {
@@ -234,16 +234,16 @@ final class Js5ResourceProvider extends ResourceProvider {
 
     // method2349
     final int indexPercentage(int i) {
-        if (i != 1) method2335(11, -116);
+        if (i != 1) completePercentage(11, -116);
         anInt6367++;
-        if (method2340((byte) 56) == null) {
+        if (index((byte) 56) == null) {
             if (aClass348_Sub42_Sub16_6355 == null) return 0;
             return aClass348_Sub42_Sub16_6355.method3257(16);
         }
         return 100;
     }
 
-    final int method2335(int i, int i_8_) {
+    final int completePercentage(int i, int i_8_) {
         anInt6341++;
         Class348_Sub42_Sub16 class348_sub42_sub16 = ((Class348_Sub42_Sub16) aHashTable_6360.get(i, -6008));
         if (i_8_ != -22197) anInt6352 = 21;
@@ -354,7 +354,7 @@ final class Js5ResourceProvider extends ResourceProvider {
         return anInt6361;
     }
 
-    final Class291 method2340(byte i) {
+    final Class291 index(byte i) {
         anInt6348++;
         if (aClass291_6342 != null) return aClass291_6342;
         if (i != 56) return null;
@@ -393,7 +393,7 @@ final class Js5ResourceProvider extends ResourceProvider {
         aClass348_Sub42_Sub16_6355 = null;
         if (aClass137_6365 != null) {
             anInt6361 = 0;
-            aByteArray6351 = new byte[aClass291_6342.anInt3734];
+            aByteArray6351 = new byte[aClass291_6342.groupLimit];
         }
         return aClass291_6342;
     }

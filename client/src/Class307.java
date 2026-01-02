@@ -9,15 +9,15 @@ final class Class307 {
     static final Class252 method2300(Index index, String string, boolean bool, byte i) {
         try {
             anInt3877++;
-            int i_0_ = index.method417(string, 0);
+            int i_0_ = index.groupId(string, 0);
             if (i != -91) return null;
             if (i_0_ == -1) return new Class252(0);
-            int[] is = index.method396(i_0_, i ^ ~0x5a);
+            int[] is = index.fileIds(i_0_, i ^ ~0x5a);
             Class252 class252 = new Class252(is.length);
             int i_1_ = 0;
             int i_2_ = 0;
             while (i_1_ < class252.anInt3241) {
-                Packet packet = new Packet(index.method410(-1860, i_0_, is[i_2_++]));
+                Packet packet = new Packet(index.file(-1860, i_0_, is[i_2_++]));
                 int i_3_ = packet.readInt((byte) -126);
                 int i_4_ = packet.readUnsignedShort(i ^ ~0x3235f8a2);
                 int i_5_ = packet.readUnsignedByte(255);

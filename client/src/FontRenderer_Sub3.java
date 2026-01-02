@@ -107,21 +107,21 @@ final class FontRenderer_Sub3 extends FontRenderer {
         }
     }
 
-    FontRenderer_Sub3(JavaToolkit var_javaToolkit, FontMetrics fontMetrics, Class207[] class207s, int[] is, int[] is_49_) {
+    FontRenderer_Sub3(JavaToolkit var_javaToolkit, FontMetrics fontMetrics, IndexedImage[] indexedImages, int[] is, int[] is_49_) {
         super(var_javaToolkit, fontMetrics);
         aJavaToolkit_6499 = var_javaToolkit;
         aJavaToolkit_6499 = var_javaToolkit;
         anIntArray6500 = is;
         anIntArray6497 = is_49_;
-        aByteArrayArray6502 = new byte[class207s.length][];
-        anIntArray6501 = new int[class207s.length];
-        anIntArray6498 = new int[class207s.length];
-        for (int i = 0; i < class207s.length; i++) {
-            aByteArrayArray6502[i] = class207s[i].aByteArray2699;
-            anIntArray6501[i] = class207s[i].anInt2700;
-            anIntArray6498[i] = class207s[i].anInt2703;
+        aByteArrayArray6502 = new byte[indexedImages.length][];
+        anIntArray6501 = new int[indexedImages.length];
+        anIntArray6498 = new int[indexedImages.length];
+        for (int i = 0; i < indexedImages.length; i++) {
+            aByteArrayArray6502[i] = indexedImages[i].raster;
+            anIntArray6501[i] = indexedImages[i].offsetY;
+            anIntArray6498[i] = indexedImages[i].offsetX;
         }
-        anIntArray6496 = class207s[0].anIntArray2697;
+        anIntArray6496 = indexedImages[0].palette;
     }
 
     final void method2578(char c, int i, int i_50_, int i_51_, boolean bool, aa var_aa, int i_52_, int i_53_) {

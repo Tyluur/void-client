@@ -203,29 +203,29 @@ final class Class46 {
         anInt767++;
         aa var_aa = (aa) Option_Sub24.aClass60_6096.method583(this.anInt830, 119);
         if (var_aa != null) return var_aa;
-        Class207 class207 = Class207.method1521(Class318_Sub1_Sub3.aIndex_8755, this.anInt756, 0);
-        if (class207 == null) return null;
-        int i_10_ = (class207.anInt2703 + (class207.anInt2702 + class207.anInt2698));
-        int i_11_ = (class207.anInt2700 + (class207.anInt2696 + class207.anInt2701));
+        IndexedImage indexedImage = IndexedImage.loadFirst(Class318_Sub1_Sub3.aIndex_8755, this.anInt756, 0);
+        if (indexedImage == null) return null;
+        int i_10_ = (indexedImage.offsetX + (indexedImage.width + indexedImage.innerWidth));
+        int i_11_ = (indexedImage.offsetY + (indexedImage.height + indexedImage.innerHeight));
         this.anIntArray772 = new int[i_11_];
         this.anIntArray677 = new int[i_11_];
-        for (int i_12_ = 0; (i_12_ < class207.anInt2696); i_12_++) {
+        for (int i_12_ = 0; (i_12_ < indexedImage.height); i_12_++) {
             int i_13_ = 0;
-            for (int i_14_ = 0; (i_14_ < class207.anInt2702); i_14_++) {
-                if ((class207.aByteArray2699[class207.anInt2702 * i_12_ + i_14_]) != 0) {
+            for (int i_14_ = 0; (i_14_ < indexedImage.width); i_14_++) {
+                if ((indexedImage.raster[indexedImage.width * i_12_ + i_14_]) != 0) {
                     i_13_ = i_14_;
                     break;
                 }
             }
             int i_15_ = i_10_;
-            for (int i_16_ = i_13_; (i_16_ < class207.anInt2702); i_16_++) {
-                if ((class207.aByteArray2699[class207.anInt2702 * i_12_ + i_16_]) == 0) {
+            for (int i_16_ = i_13_; (i_16_ < indexedImage.width); i_16_++) {
+                if ((indexedImage.raster[indexedImage.width * i_12_ + i_16_]) == 0) {
                     i_15_ = i_16_;
                     break;
                 }
             }
-            this.anIntArray677[(class207.anInt2700 + i_12_)] = class207.anInt2703 + i_13_;
-            this.anIntArray772[(i_12_ + class207.anInt2700)] = i_15_ + -i_13_;
+            this.anIntArray677[(indexedImage.offsetY + i_12_)] = indexedImage.offsetX + i_13_;
+            this.anIntArray772[(i_12_ + indexedImage.offsetY)] = i_15_ + -i_13_;
         }
         if (i < 0) method433(null, false);
         var_aa = var_toolkit.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772);
@@ -745,19 +745,19 @@ final class Class46 {
         Sprite sprite = (Sprite) Class351.aClass60_4327.method583(l, -71);
         if (i > -27) method434(true);
         if (sprite != null) return sprite;
-        Class207 class207 = Class207.method1521(Class318_Sub1_Sub3.aIndex_8755, this.anInt756, 0);
-        if (class207 == null) {
+        IndexedImage indexedImage = IndexedImage.loadFirst(Class318_Sub1_Sub3.aIndex_8755, this.anInt756, 0);
+        if (indexedImage == null) {
             Class348_Sub42_Sub13.aBoolean9616 = true;
             return null;
         }
-        if (this.aBoolean790) class207.method1514();
-        if (this.aBoolean735) class207.method1518();
-        if (this.anInt672 > 0) class207.method1513(this.anInt672);
-        else if (this.anInt809 != 0) class207.method1513(1);
-        if (this.anInt672 >= 1) class207.method1515(1);
-        if (this.anInt672 >= 2) class207.method1515(16777215);
-        if (this.anInt809 != 0) class207.method1511(~0xffffff | this.anInt809);
-        sprite = var_toolkit.method3691(class207, true);
+        if (this.aBoolean790) indexedImage.method1514();
+        if (this.aBoolean735) indexedImage.method1518();
+        if (this.anInt672 > 0) indexedImage.method1513(this.anInt672);
+        else if (this.anInt809 != 0) indexedImage.method1513(1);
+        if (this.anInt672 >= 1) indexedImage.method1515(1);
+        if (this.anInt672 >= 2) indexedImage.method1515(16777215);
+        if (this.anInt809 != 0) indexedImage.method1511(~0xffffff | this.anInt809);
+        sprite = var_toolkit.method3691(indexedImage, true);
         Class351.aClass60_4327.method580(31902, sprite, l, (sprite.getWidth() * sprite.getHeight() * 4));
         return sprite;
     }

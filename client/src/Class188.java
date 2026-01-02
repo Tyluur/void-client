@@ -135,7 +135,7 @@ final class Class188 {
     static final Class348_Sub17 method1417(int i, Index index, int i_7_) {
         anInt2516++;
         if (i != 0) aBoolean2514 = true;
-        byte[] is = index.method415((byte) 73, i_7_);
+        byte[] is = index.fileReady((byte) 73, i_7_);
         if (is == null) return null;
         return new Class348_Sub17(is);
     }

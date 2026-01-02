@@ -21,7 +21,7 @@ final class ParamTypeList {
         if (i_0_ != 28364) anInt4086 = 117;
         byte[] is;
         synchronized (aIndex_4085) {
-            is = aIndex_4085.method410(-1860, 11, i);
+            is = aIndex_4085.file(-1860, 11, i);
         }
         class254 = new Class254();
         if (is != null) class254.method1924(new Packet(is), (byte) -127);
@@ -61,7 +61,7 @@ final class ParamTypeList {
             try {
                 aIndex_4085 = index;
                 if (aIndex_4085 == null) break;
-                aIndex_4085.method407(0, 11);
+                aIndex_4085.fileLimit(0, 11);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("dc.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
             }

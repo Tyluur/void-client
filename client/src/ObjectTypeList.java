@@ -43,7 +43,7 @@ final class ObjectTypeList {
         if (class51 != null) return class51;
         byte[] is;
         synchronized (aIndex_3343) {
-            is = aIndex_3343.method410(i + -1860, Option_Sub29.method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (byte) -90));
+            is = aIndex_3343.file(i + -1860, Option_Sub29.method1850(i_0_, 111), Class5_Sub1.method185(i_0_, (byte) -90));
         }
         class51 = new Class51();
         class51.anInt941 = i_0_;
@@ -344,8 +344,8 @@ final class ObjectTypeList {
                 this.aIndex_3345 = index_29_;
                 aIndex_3343 = index;
                 if (aIndex_3343 == null) break;
-                int i_30_ = aIndex_3343.method414(-1) + -1;
-                aIndex_3343.method407(0, i_30_);
+                int i_30_ = aIndex_3343.groupSize(-1) + -1;
+                aIndex_3343.fileLimit(0, i_30_);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("uha.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (index != null ? "{...}" : "null") + ',' + (index_29_ != null ? "{...}" : "null") + ')'));
             }

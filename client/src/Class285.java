@@ -15,7 +15,7 @@ abstract class Class285 implements Interface5 {
     static int anInt4738;
     private int anInt4739;
     static int anInt4740;
-    static boolean aBoolean4741 = false;
+    static boolean reportInvalidIds = false;
     static int anInt4742;
     static Class348_Sub16_Sub3 aClass348_Sub16_Sub3_4743;
     static String[] aStringArray4744 = new String[200];

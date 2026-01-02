@@ -112,21 +112,21 @@ final class Class31 {
         anInt446++;
         Index index = this.aHitmarkTypeList_438.aIndex_2873;
         if (anInt421 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt421, 121) == null && index.fileReady(false, anInt421)) {
-            Class207 class207 = Class207.method1512(index, anInt421);
-            this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(class207, true), anInt421, (byte) -112);
+            IndexedImage indexedImage = IndexedImage.method1512(index, anInt421);
+            this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(indexedImage, true), anInt421, (byte) -112);
         }
         if (anInt433 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt433, -99) == null && index.fileReady(false, anInt433)) {
-            Class207 class207 = Class207.method1512(index, anInt433);
-            this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(class207, true), anInt433, (byte) -128);
+            IndexedImage indexedImage = IndexedImage.method1512(index, anInt433);
+            this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(indexedImage, true), anInt433, (byte) -128);
         }
         if (anInt429 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt429, 86) == null && index.fileReady(false, anInt429)) {
-            Class207 class207 = Class207.method1512(index, anInt429);
-            this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(class207, true), anInt429, (byte) -108);
+            IndexedImage indexedImage = IndexedImage.method1512(index, anInt429);
+            this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(indexedImage, true), anInt429, (byte) -108);
         }
         if (i > -7) this.anInt434 = -14;
         if (anInt439 >= 0 && this.aHitmarkTypeList_438.aClass60_2862.method583(anInt439, -83) == null && index.fileReady(false, anInt439)) {
-            Class207 class207 = Class207.method1512(index, anInt439);
-            this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(class207, true), anInt439, (byte) -101);
+            IndexedImage indexedImage = IndexedImage.method1512(index, anInt439);
+            this.aHitmarkTypeList_438.aClass60_2862.method582(var_toolkit.method3691(indexedImage, true), anInt439, (byte) -101);
         }
     }
 

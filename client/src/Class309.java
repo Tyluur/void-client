@@ -72,7 +72,7 @@ final class Class309 implements Interface7 {
         if (is == null) return null;
         byte[] is_11_ = new byte[is.length];
         if (i >= -9) anInt4814 = 49;
-        Class214.method1577(is, 0, is_11_, 0, is.length);
+        Class214.copy(is, 0, is_11_, 0, is.length);
         return is_11_;
     }
 

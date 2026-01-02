@@ -24,13 +24,13 @@ final class Class83 {
         this.aBoolean1442 = var_openGLToolkit.aBoolean7831;
         Class348_Sub37.method3030(8, var_openGLToolkit);
         if (this.aBoolean1442) {
-            byte[] is = Class50_Sub1.method461(false, Class337.anObject4177, 53146732);
+            byte[] is = Class50_Sub1.unwrap(false, Class337.anObject4177, 53146732);
             this.aClass258_Sub1_1440 = new Class258_Sub1(var_openGLToolkit, 6410, 128, 128, 16, is, 6410);
-            is = Class50_Sub1.method461(false, GfxTypeList.anObject3985, 53146732);
+            is = Class50_Sub1.unwrap(false, GfxTypeList.anObject3985, 53146732);
             this.aClass258_Sub1_1446 = new Class258_Sub1(var_openGLToolkit, 6410, 128, 128, 16, is, 6410);
             Class188 class188 = var_openGLToolkit.aClass188_7736;
             if (class188.method1414(35632)) {
-                is = Class50_Sub1.method461(false, Class369_Sub2.anObject8592, 53146732);
+                is = Class50_Sub1.unwrap(false, Class369_Sub2.anObject8592, 53146732);
                 this.aClass258_Sub1_1443 = new Class258_Sub1(var_openGLToolkit, 6408, 128, 128, 16);
                 Class258_Sub1 class258_sub1 = new Class258_Sub1(var_openGLToolkit, 6409, 128, 128, 16, is, 6409);
                 if (!class188.method1413(this.aClass258_Sub1_1443, class258_sub1, -114, 2.0F)) {

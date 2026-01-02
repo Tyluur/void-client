@@ -48,11 +48,11 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2 {
         try {
             if (OutputStream_Sub2.aSprite_106 == null || Class121.aSprite_1800 == null) {
                 if (Class21.SPRITES.fileReady(false, Class231.anInt2996) && Class21.SPRITES.fileReady(false, TextureOpCombine.anInt9231)) {
-                    OutputStream_Sub2.aSprite_106 = (var_toolkit.method3691(Class207.method1521(Class21.SPRITES, Class231.anInt2996, 0), true));
-                    Class207 class207 = Class207.method1521(Class21.SPRITES, TextureOpCombine.anInt9231, 0);
-                    Class121.aSprite_1800 = var_toolkit.method3691(class207, true);
-                    class207.method1518();
-                    Class348_Sub5.aSprite_6627 = var_toolkit.method3691(class207, true);
+                    OutputStream_Sub2.aSprite_106 = (var_toolkit.method3691(IndexedImage.loadFirst(Class21.SPRITES, Class231.anInt2996, 0), true));
+                    IndexedImage indexedImage = IndexedImage.loadFirst(Class21.SPRITES, TextureOpCombine.anInt9231, 0);
+                    Class121.aSprite_1800 = var_toolkit.method3691(indexedImage, true);
+                    indexedImage.method1518();
+                    Class348_Sub5.aSprite_6627 = var_toolkit.method3691(indexedImage, true);
                 } else var_toolkit.aa(i_4_, i_5_, i, i_7_, (255 + -Class51.anInt948 << 24 | Class264.anInt3376), 1);
             }
             anInt8709++;

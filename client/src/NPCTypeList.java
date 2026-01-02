@@ -105,7 +105,7 @@ final class NPCTypeList {
         if (NPCDefinition != null) return NPCDefinition;
         byte[] is;
         synchronized (aIndex_3585) {
-            is = aIndex_3585.method410(i_6_ + -1859, Class115.method1060(i, (byte) 69), Class253.method1920(127, i));
+            is = aIndex_3585.file(i_6_ + -1859, Class115.method1060(i, (byte) 69), Class253.method1920(127, i));
         }
         NPCDefinition = new NPCDefinition();
         NPCDefinition.anInt1344 = i;
@@ -142,8 +142,8 @@ final class NPCTypeList {
                 this.aIndex_3576 = index_7_;
                 this.aClass230_3578 = class230;
                 if (aIndex_3585 == null) break;
-                int i_8_ = aIndex_3585.method414(-1) + -1;
-                aIndex_3585.method407(0, i_8_);
+                int i_8_ = aIndex_3585.groupSize(-1) + -1;
+                aIndex_3585.fileLimit(0, i_8_);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("vda.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + bool + ',' + (index != null ? "{...}" : "null") + ',' + (index_7_ != null ? "{...}" : "null") + ')'));
             }

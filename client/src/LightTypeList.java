@@ -32,7 +32,7 @@ final class LightTypeList {
         if (class253 != null) return class253;
         byte[] is;
         synchronized (aIndex_2480) {
-            is = aIndex_2480.method410(-1860, 31, i_1_);
+            is = aIndex_2480.file(-1860, 31, i_1_);
         }
         class253 = new Class253();
         int i_2_ = 50 / ((i - -63) / 56);
@@ -72,7 +72,7 @@ final class LightTypeList {
     LightTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_2480 = index;
-            aIndex_2480.method407(0, 31);
+            aIndex_2480.fileLimit(0, 31);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qf.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }

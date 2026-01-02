@@ -62,7 +62,7 @@ abstract class Class348_Sub23 extends Node {
             if (string != null) {
                 Class348_Sub8.active.GA(0);
                 FontMetrics fontMetrics = Option_Sub23.getFontMetrics(AnimationType.anInt235, 0, -117, Class104.FONT_INDEX);
-                FontRenderer fontRenderer = (Class348_Sub8.active.method3686(fontMetrics, Class207.method1519(Class21.SPRITES, AnimationType.anInt235, 0), true));
+                FontRenderer fontRenderer = (Class348_Sub8.active.method3686(fontMetrics, IndexedImage.method1519(Class21.SPRITES, AnimationType.anInt235, 0), true));
                 Class140.method1170((byte) -89);
                 Class362.method3511(true, fontRenderer, fontMetrics, string, 2, Class348_Sub8.active);
             }
@@ -72,7 +72,7 @@ abstract class Class348_Sub23 extends Node {
                 var_toolkit = Class104.method958(true, 0, TextureOpVerticalGradient.js5TextureSource, 0, Class305.aCanvas3869, Class136.SHADERS);
                 var_toolkit.GA(0);
                 FontMetrics fontMetrics = Option_Sub23.getFontMetrics(AnimationType.anInt235, 0, -115, Class104.FONT_INDEX);
-                FontRenderer fontRenderer = var_toolkit.method3686(fontMetrics, Class207.method1519((Class21.SPRITES), AnimationType.anInt235, 0), true);
+                FontRenderer fontRenderer = var_toolkit.method3686(fontMetrics, IndexedImage.method1519((Class21.SPRITES), AnimationType.anInt235, 0), true);
                 Class140.method1170((byte) -107);
                 Class362.method3511(true, fontRenderer, fontMetrics, string, i_1_ + 2, var_toolkit);
             }
@@ -81,7 +81,7 @@ abstract class Class348_Sub23 extends Node {
                 if (string != null) {
                     var_toolkit.GA(0);
                     FontMetrics fontMetrics = Option_Sub23.getFontMetrics(AnimationType.anInt235, 0, -51, Class104.FONT_INDEX);
-                    FontRenderer fontRenderer = (var_toolkit.method3686(fontMetrics, Class207.method1519(Class21.SPRITES, AnimationType.anInt235, 0), true));
+                    FontRenderer fontRenderer = (var_toolkit.method3686(fontMetrics, IndexedImage.method1519(Class21.SPRITES, AnimationType.anInt235, 0), true));
                     Class140.method1170((byte) -26);
                     Class362.method3511(true, fontRenderer, fontMetrics, string, i_1_ + 2, var_toolkit);
                 }

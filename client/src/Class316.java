@@ -79,9 +79,9 @@ final class Class316 {
         }
     }
 
-    final int method2365(int i, int i_37_) {
+    final int find(int i, int i_37_) {
         anInt3960++;
-        if (i != 1) method2365(-74, 111);
+        if (i != 1) find(-74, 111);
         int i_38_ = -1 + (anIntArray3961.length >> 1);
         int i_39_ = i_38_ & i_37_;
         for (; ; ) {

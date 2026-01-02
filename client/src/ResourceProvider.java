@@ -15,7 +15,7 @@ abstract class ResourceProvider {
         /* empty */
     }
 
-    abstract int method2335(int i, int i_0_);
+    abstract int completePercentage(int i, int i_0_);
 
     static final void method2336(Class51 class51, int i, int i_1_, int i_2_, int i_3_) {
         anInt3940++;
@@ -42,9 +42,9 @@ abstract class ResourceProvider {
         return f + (-f + f_4_) * f_5_;
     }
 
-    abstract void method2338(byte i, int i_6_);
+    abstract void requestGroup(byte i, int i_6_);
 
-    abstract byte[] method2339(int i, byte i_7_);
+    abstract byte[] fetchGroup(int i, byte i_7_);
 
-    abstract Class291 method2340(byte i);
+    abstract Class291 index(byte i);
 }

@@ -35,7 +35,7 @@ final class AnimTypeList {
         if (animationType != null) return animationType;
         byte[] is;
         synchronized (aIndex_1488) {
-            is = aIndex_1488.method410(-1860, Class15.method256(i, (byte) 125), Class52.method494(i_0_ ^ 0x55, i));
+            is = aIndex_1488.file(-1860, Class15.method256(i, (byte) 125), Class52.method494(i_0_ ^ 0x55, i));
         }
         animationType = new AnimationType();
         animationType.anInt269 = i;
@@ -100,8 +100,8 @@ final class AnimTypeList {
         try {
             aIndex_1488 = index;
             if (aIndex_1488 != null) {
-                int i_8_ = aIndex_1488.method414(-1) + -1;
-                aIndex_1488.method407(0, i_8_);
+                int i_8_ = aIndex_1488.groupSize(-1) + -1;
+                aIndex_1488.fileLimit(0, i_8_);
             }
             Option.method1711(7, index_6_, 2, index_7_);
         } catch (RuntimeException runtimeexception) {

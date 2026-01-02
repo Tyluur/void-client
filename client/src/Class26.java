@@ -42,15 +42,15 @@ final class Class26 {
 
     final Class348_Sub19_Sub1 method308(int i, int[] is, int i_3_) {
         anInt373++;
-        if ((~aIndex_379.method414(-1)) == i_3_) return method307(i, is, 122, 0);
-        if (aIndex_379.method407(0, i) == 1) return method307(0, is, 69, i);
+        if ((~aIndex_379.groupSize(-1)) == i_3_) return method307(i, is, 122, 0);
+        if (aIndex_379.fileLimit(0, i) == 1) return method307(0, is, 69, i);
         throw new RuntimeException();
     }
 
     final Class348_Sub19_Sub1 method309(int[] is, int i, int i_4_) {
         anInt376++;
-        if (aIndex_377.method414(i_4_) == 1) return method310(i, 0, (byte) 92, is);
-        if (aIndex_377.method407(0, i) == 1) return method310(0, i, (byte) 78, is);
+        if (aIndex_377.groupSize(i_4_) == 1) return method310(i, 0, (byte) 92, is);
+        if (aIndex_377.fileLimit(0, i) == 1) return method310(0, i, (byte) 78, is);
         if (i_4_ != -1) method307(44, null, -124, -47);
         throw new RuntimeException();
     }

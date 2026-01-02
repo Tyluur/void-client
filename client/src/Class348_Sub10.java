@@ -229,7 +229,7 @@ final class Class348_Sub10 extends Node {
 
     private static final boolean method2792(Index index) {
         if (!aBoolean6724) {
-            byte[] is = index.method410(-1860, 0, 0);
+            byte[] is = index.file(-1860, 0, 0);
             if (is == null) return false;
             method2790(is);
         }
@@ -241,7 +241,7 @@ final class Class348_Sub10 extends Node {
             index.fileReady(false, i);
             return null;
         }
-        byte[] is = index.method415((byte) 73, i);
+        byte[] is = index.fileReady((byte) 73, i);
         if (is == null) return null;
         return new Class348_Sub10(is);
     }
@@ -453,7 +453,7 @@ final class Class348_Sub10 extends Node {
             index.requestDownload(-10499, i, i_115_);
             return null;
         }
-        byte[] is = index.method410(-1860, i, i_115_);
+        byte[] is = index.file(-1860, i, i_115_);
         if (is == null) return null;
         return new Class348_Sub10(is);
     }

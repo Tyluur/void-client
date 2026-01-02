@@ -89,7 +89,7 @@ final class Class178 {
             for (int i_10_ = 0; Class76.anInt1285 > i_10_; i_10_++)
                 strings[i_10_] = Exception_Sub1.itemTypeList.method1940(123, is[i_10_]).aString2795;
             Class174.method1333(Class192.aShortArray2579, 26073, strings);
-            Class174.ITEMS.method412((byte) 116);
+            Class174.ITEMS.discardUnpacked((byte) 116);
             Class174.ITEMS.discardUnpacked = 2;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qa.A(" + bool + ',' + (string != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + (string_2_ != null ? "{...}" : "null") + ',' + bool_3_ + ')'));

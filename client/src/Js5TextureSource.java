@@ -38,7 +38,7 @@ final class Js5TextureSource implements TextureSource {
         anInt4620++;
         LinkedNode linkedNode = aLRUHashTable_4622.method2302(i, (byte) -34);
         if (linkedNode != null) return (Texture) linkedNode;
-        byte[] is = aIndex_4619.method415((byte) 73, i);
+        byte[] is = aIndex_4619.fileReady((byte) 73, i);
         if (is == null) return null;
         if (bool != false) method1(-58, 1.9039171F, false, -106, -22, -18);
         Texture texture = new Texture(new Packet(is));
@@ -82,7 +82,7 @@ final class Js5TextureSource implements TextureSource {
         try {
             aIndex_4619 = index_12_;
             aIndex_4624 = index_13_;
-            Packet packet = new Packet(index.method410(-1860, 0, 0));
+            Packet packet = new Packet(index.file(-1860, 0, 0));
             anInt4625 = packet.readUnsignedShort(842397944);
             aTextureMetricsArray4611 = new TextureMetrics[anInt4625];
             for (int i = 0; anInt4625 > i; i++) {

@@ -39,7 +39,7 @@ final class Class367_Sub6 extends Class367 {
         aClass269_7339 = class269;
         aDirectXToolkit_7340 = directXToolkit;
         if (null == index || !aClass269_7339.method2039(123) || (257 > (aDirectXToolkit_7340.aD3DCAPS9791.VertexShaderVersion & 0xffff))) anIDirect3DVertexShader7341 = null;
-        else anIDirect3DVertexShader7341 = aDirectXToolkit_7340.anIDirect3DDevice9810.b(index.method391("dx", "transparent_water", -29832));
+        else anIDirect3DVertexShader7341 = aDirectXToolkit_7340.anIDirect3DDevice9810.b(index.file("dx", "transparent_water", -29832));
     }
 
     final void method3523(byte i) {

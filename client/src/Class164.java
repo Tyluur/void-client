@@ -140,7 +140,7 @@ final class Class164 {
             ByteArraySecondaryNode.initFontTypeList(Class104.FONT_INDEX, -124, Class5_Sub1.method184(i ^ ~0x40a46ff3), Class21.SPRITES);
         }
         if (LoadState.PLAY_THEME_MUSIC == Class348_Sub42_Sub15.state) {
-            if (Class345.anInt4270 == -1) Class345.anInt4270 = Class59_Sub2_Sub1.MUSIC.method417("scape main", 0);
+            if (Class345.anInt4270 == -1) Class345.anInt4270 = Class59_Sub2_Sub1.MUSIC.groupId("scape main", 0);
             r_Sub1.method3290(56);
             Packet.setStep(2, 2);
         }
@@ -148,8 +148,8 @@ final class Class164 {
         if (LoadState.DOWNLOAD_STUFF == Class348_Sub42_Sub15.state) {
             int i_10_ = SafeModeOption.method1770((byte) -25);
             if (i_10_ < 100) return i_10_;
-            ObjectTypeList.method2013(Class367_Sub8.DEFAULTS.method415((byte) 73, 1), (byte) 112);
-            RuntimeException_Sub1.method4012(Class367_Sub8.DEFAULTS.method415((byte) 73, 3), (byte) -111);
+            ObjectTypeList.method2013(Class367_Sub8.DEFAULTS.fileReady((byte) 73, 1), (byte) 112);
+            RuntimeException_Sub1.method4012(Class367_Sub8.DEFAULTS.fileReady((byte) 73, 3), (byte) -111);
         }
         if (i != -28660) return 2;
         if (Class348_Sub42_Sub15.state == LoadState.SETUP_CONFIG_DECODERS) {
@@ -190,7 +190,7 @@ final class Class164 {
             TextureOp.updateFeatureMask(-1);
             RuntimeException_Sub1.method4011(i + 29684, Option.PARTICLES);
             Class348_Sub29.method3004(aa_Sub3.MODELS, false, TextureOpVerticalGradient.js5TextureSource);
-            Class296 codec = new Class296(Class16.HUFFMAN.method391("huffman", "", -29832));
+            Class296 codec = new Class296(Class16.HUFFMAN.file("huffman", "", -29832));
             NativeToolkit.setHuffman(codec, (byte) 13);
             try {
                 jagmisc.init();
@@ -220,14 +220,14 @@ final class Class164 {
                 Class77.anIntArray1303[i_13_] = -1;
             }
             Class116.method1063(1);
-            Class285.anInt4737 = Class348_Sub35.INTERFACES.method417("loginscreen", i ^ ~0x6ff3);
-            Class54.anInt970 = Class348_Sub35.INTERFACES.method417("lobbyscreen", 0);
-            Class367_Sub10.MAPS.method404(0, true, false);
-            Class59_Sub2_Sub1.MUSIC.method404(0, true, true);
-            Class21.SPRITES.method404(i + 28660, true, true);
-            Class104.FONT_INDEX.method404(0, true, true);
-            Class16.HUFFMAN.method404(0, true, true);
-            Class348_Sub35.INTERFACES.method404(0, true, true);
+            Class285.anInt4737 = Class348_Sub35.INTERFACES.groupId("loginscreen", i ^ ~0x6ff3);
+            Class54.anInt970 = Class348_Sub35.INTERFACES.groupId("lobbyscreen", 0);
+            Class367_Sub10.MAPS.clear(0, true, false);
+            Class59_Sub2_Sub1.MUSIC.clear(0, true, true);
+            Class21.SPRITES.clear(i + 28660, true, true);
+            Class104.FONT_INDEX.clear(0, true, true);
+            Class16.HUFFMAN.clear(0, true, true);
+            Class348_Sub35.INTERFACES.clear(0, true, true);
             Class95.CONFIGS.discardUnpacked = 2;
             GfxTypeList.aBoolean3988 = true;
             Class247.ENUMS.discardUnpacked = 2;

@@ -62,7 +62,7 @@ final class Class367_Sub2 extends Class367 {
             aOpenGLxToolkit_7296 = openGLxToolkit;
             aClass269_7294 = class269;
             if (index == null || !aClass269_7294.method2039(100) || !aOpenGLxToolkit_7296.aBoolean9923) aClass193_7293 = null;
-            else aClass193_7293 = za_Sub2.method3442(34336, index.method391("gl", "transparent_water", -29832), aOpenGLxToolkit_7296, 4);
+            else aClass193_7293 = za_Sub2.method3442(34336, index.file("gl", "transparent_water", -29832), aOpenGLxToolkit_7296, 4);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ov.<init>(" + (openGLxToolkit != null ? "{...}" : "null") + ',' + (index != null ? "{...}" : "null") + ',' + (class269 != null ? "{...}" : "null") + ')'));
         }

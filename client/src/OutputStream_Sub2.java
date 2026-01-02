@@ -19,7 +19,7 @@ final class OutputStream_Sub2 extends OutputStream {
         anInt103++;
         if (i < 101) method139(34);
         byte[] is_1_ = new byte[i_0_];
-        Class214.method1577(is, 0, is_1_, 0, i_0_);
+        Class214.copy(is, 0, is_1_, 0, i_0_);
         return is_1_;
     }
 

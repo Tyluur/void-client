@@ -339,8 +339,8 @@ final class VarcstrTypeList {
                             break;
                         }
                         if (string.equalsIgnoreCase("resetminimap")) {
-                            Class21.SPRITES.method405(i ^ ~0x4e);
-                            Class21.SPRITES.method412((byte) 127);
+                            Class21.SPRITES.discardPacked(i ^ ~0x4e);
+                            Class21.SPRITES.discardUnpacked((byte) 127);
                             Class2.msiTypeList.method1175((byte) 125);
                             Class348_Sub23_Sub2.mapElementTypeList.method1219(7851);
                             Class50_Sub2.method464(-1);
@@ -701,7 +701,7 @@ final class VarcstrTypeList {
         new Class60(64);
         try {
             aIndex_1436 = index;
-            this.anInt1439 = aIndex_1436.method407(0, 15);
+            this.anInt1439 = aIndex_1436.fileLimit(0, 15);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("lba.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }

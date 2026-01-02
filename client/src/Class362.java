@@ -17,10 +17,10 @@ final class Class362 {
             if (bool_0_) {
                 if (Class295.aBoolean3763 && bool_0_) {
                     fontMetrics = Class281.aFontMetrics_3649;
-                    fontRenderer = var_toolkit.method3686(fontMetrics, (Class5_Sub1_Sub1.aClass207Array9929), true);
+                    fontRenderer = var_toolkit.method3686(fontMetrics, (Class5_Sub1_Sub1.aIndexedImageArray9929), true);
                     int i_1_ = fontMetrics.lineWidth(string, false, 250, null);
                     int i_2_ = fontMetrics.method1185(null, i ^ 0x2, fontMetrics.verticalSpacing, 250, string);
-                    int i_3_ = Class348_Sub7.aClass207_6643.anInt2702;
+                    int i_3_ = Class348_Sub7.aIndexedImage_6643.width;
                     int i_4_ = i_3_ + 4;
                     i_2_ += 2 * i_4_;
                     i_1_ += 2 * i_4_;
@@ -32,23 +32,23 @@ final class Class362 {
                         i_5_ += s_Sub3.method4008((byte) -124);
                         i_6_ += Class16.method260(false);
                     }
-                    var_toolkit.method3691(Class112.aClass207_1727, false).method965((TextureOpBrightness.aClass207_9090.anInt2702) + i_5_, (TextureOpBrightness.aClass207_9090.anInt2696) + i_6_, -(2 * (TextureOpBrightness.aClass207_9090.anInt2702)) + i_1_, -((TextureOpBrightness.aClass207_9090.anInt2696) * 2) + i_2_, 1, 0, 0);
-                    var_toolkit.method3691(TextureOpBrightness.aClass207_9090, true).method974(i_5_, i_6_);
-                    TextureOpBrightness.aClass207_9090.method1518();
-                    var_toolkit.method3691(TextureOpBrightness.aClass207_9090, true).method974(i_5_ + i_1_ - i_3_, i_6_);
-                    TextureOpBrightness.aClass207_9090.method1514();
-                    var_toolkit.method3691(TextureOpBrightness.aClass207_9090, true).method974(i_5_ - -i_1_ + -i_3_, -i_3_ + (i_6_ - -i_2_));
-                    TextureOpBrightness.aClass207_9090.method1518();
-                    var_toolkit.method3691(TextureOpBrightness.aClass207_9090, true).method974(i_5_, -i_3_ + i_6_ - -i_2_);
-                    TextureOpBrightness.aClass207_9090.method1514();
-                    var_toolkit.method3691(Class348_Sub7.aClass207_6643, true).method972(i_5_, (TextureOpBrightness.aClass207_9090.anInt2696) + i_6_, i_3_, -(2 * (TextureOpBrightness.aClass207_9090.anInt2696)) + i_2_);
-                    Class348_Sub7.aClass207_6643.method1520();
-                    var_toolkit.method3691(Class348_Sub7.aClass207_6643, true).method972((TextureOpBrightness.aClass207_9090.anInt2702) + i_5_, i_6_, -((TextureOpBrightness.aClass207_9090.anInt2702) * 2) + i_1_, i_3_);
-                    Class348_Sub7.aClass207_6643.method1520();
-                    var_toolkit.method3691(Class348_Sub7.aClass207_6643, true).method972(i_5_ - -i_1_ + -i_3_, (TextureOpBrightness.aClass207_9090.anInt2696) + i_6_, i_3_, -(2 * (TextureOpBrightness.aClass207_9090.anInt2696)) + i_2_);
-                    Class348_Sub7.aClass207_6643.method1520();
-                    var_toolkit.method3691(Class348_Sub7.aClass207_6643, true).method972((TextureOpBrightness.aClass207_9090.anInt2702) + i_5_, -i_3_ + i_6_ - -i_2_, -(2 * (TextureOpBrightness.aClass207_9090.anInt2702)) + i_1_, i_3_);
-                    Class348_Sub7.aClass207_6643.method1520();
+                    var_toolkit.method3691(Class112.aIndexedImage_1727, false).method965((TextureOpBrightness.aIndexedImage_9090.width) + i_5_, (TextureOpBrightness.aIndexedImage_9090.height) + i_6_, -(2 * (TextureOpBrightness.aIndexedImage_9090.width)) + i_1_, -((TextureOpBrightness.aIndexedImage_9090.height) * 2) + i_2_, 1, 0, 0);
+                    var_toolkit.method3691(TextureOpBrightness.aIndexedImage_9090, true).method974(i_5_, i_6_);
+                    TextureOpBrightness.aIndexedImage_9090.method1518();
+                    var_toolkit.method3691(TextureOpBrightness.aIndexedImage_9090, true).method974(i_5_ + i_1_ - i_3_, i_6_);
+                    TextureOpBrightness.aIndexedImage_9090.method1514();
+                    var_toolkit.method3691(TextureOpBrightness.aIndexedImage_9090, true).method974(i_5_ - -i_1_ + -i_3_, -i_3_ + (i_6_ - -i_2_));
+                    TextureOpBrightness.aIndexedImage_9090.method1518();
+                    var_toolkit.method3691(TextureOpBrightness.aIndexedImage_9090, true).method974(i_5_, -i_3_ + i_6_ - -i_2_);
+                    TextureOpBrightness.aIndexedImage_9090.method1514();
+                    var_toolkit.method3691(Class348_Sub7.aIndexedImage_6643, true).method972(i_5_, (TextureOpBrightness.aIndexedImage_9090.height) + i_6_, i_3_, -(2 * (TextureOpBrightness.aIndexedImage_9090.height)) + i_2_);
+                    Class348_Sub7.aIndexedImage_6643.method1520();
+                    var_toolkit.method3691(Class348_Sub7.aIndexedImage_6643, true).method972((TextureOpBrightness.aIndexedImage_9090.width) + i_5_, i_6_, -((TextureOpBrightness.aIndexedImage_9090.width) * 2) + i_1_, i_3_);
+                    Class348_Sub7.aIndexedImage_6643.method1520();
+                    var_toolkit.method3691(Class348_Sub7.aIndexedImage_6643, true).method972(i_5_ - -i_1_ + -i_3_, (TextureOpBrightness.aIndexedImage_9090.height) + i_6_, i_3_, -(2 * (TextureOpBrightness.aIndexedImage_9090.height)) + i_2_);
+                    Class348_Sub7.aIndexedImage_6643.method1520();
+                    var_toolkit.method3691(Class348_Sub7.aIndexedImage_6643, true).method972((TextureOpBrightness.aIndexedImage_9090.width) + i_5_, -i_3_ + i_6_ - -i_2_, -(2 * (TextureOpBrightness.aIndexedImage_9090.width)) + i_1_, i_3_);
+                    Class348_Sub7.aIndexedImage_6643.method1520();
                     fontRenderer.method2584(null, 0, -1, null, ~0xffffff | Class86.anInt1479, 1, i_2_ + -(i_4_ * 2), null, i_6_ + i_4_, 0, 0, -(2 * i_4_) + i_1_, i_5_ + i_4_, false, 1, string);
                     Class13.method226(i_5_, i_1_, i_6_, i ^ 0x2, i_2_);
                 } else {

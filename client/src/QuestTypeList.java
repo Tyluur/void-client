@@ -59,7 +59,7 @@ final class QuestTypeList {
         if (class321 != null) return class321;
         byte[] is;
         synchronized (aIndex_2498) {
-            is = aIndex_2498.method410(-1860, 35, i_3_);
+            is = aIndex_2498.file(-1860, 35, i_3_);
         }
         class321 = new Class321();
         if (is != null) class321.method2551(-125, new Packet(is));
@@ -93,7 +93,7 @@ final class QuestTypeList {
             try {
                 aIndex_2498 = index;
                 if (aIndex_2498 == null) break;
-                aIndex_2498.method407(0, 35);
+                aIndex_2498.fileLimit(0, 35);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("qga.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
             }

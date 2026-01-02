@@ -10,35 +10,35 @@ final class FontRenderer_Sub5 extends FontRenderer {
     private final Class258_Sub3_Sub1 aClass258_Sub3_Sub1_6511;
     private final boolean aBoolean6512;
 
-    FontRenderer_Sub5(OpenGLToolkit var_openGLToolkit, FontMetrics fontMetrics, Class207[] class207s, boolean bool) {
+    FontRenderer_Sub5(OpenGLToolkit var_openGLToolkit, FontMetrics fontMetrics, IndexedImage[] indexedImages, boolean bool) {
         super(var_openGLToolkit, fontMetrics);
         aOpenGLToolkit_6509 = var_openGLToolkit;
         int i = 0;
         for (int i_0_ = 0; i_0_ < 256; i_0_++) {
-            Class207 class207 = class207s[i_0_];
-            if (class207.anInt2696 > i) i = class207.anInt2696;
-            if (class207.anInt2702 > i) i = class207.anInt2702;
+            IndexedImage indexedImage = indexedImages[i_0_];
+            if (indexedImage.height > i) i = indexedImage.height;
+            if (indexedImage.width > i) i = indexedImage.width;
         }
         int i_1_ = i * 16;
         if (bool) {
             byte[] is = new byte[i_1_ * i_1_];
             for (int i_2_ = 0; i_2_ < 256; i_2_++) {
-                Class207 class207 = class207s[i_2_];
-                int i_3_ = class207.anInt2696;
-                int i_4_ = class207.anInt2702;
+                IndexedImage indexedImage = indexedImages[i_2_];
+                int i_3_ = indexedImage.height;
+                int i_4_ = indexedImage.width;
                 int i_5_ = i_2_ % 16 * i;
                 int i_6_ = i_2_ / 16 * i;
                 int i_7_ = i_6_ * i_1_ + i_5_;
                 int i_8_ = 0;
-                if (class207.aByteArray2695 == null) {
-                    byte[] is_9_ = class207.aByteArray2699;
+                if (indexedImage.alpha == null) {
+                    byte[] is_9_ = indexedImage.raster;
                     for (int i_10_ = 0; i_10_ < i_3_; i_10_++) {
                         for (int i_11_ = 0; i_11_ < i_4_; i_11_++)
                             is[i_7_++] = (byte) (is_9_[i_8_++] == 0 ? 0 : -1);
                         i_7_ += i_1_ - i_4_;
                     }
                 } else {
-                    byte[] is_12_ = class207.aByteArray2695;
+                    byte[] is_12_ = indexedImage.alpha;
                     for (int i_13_ = 0; i_13_ < i_3_; i_13_++) {
                         for (int i_14_ = 0; i_14_ < i_4_; i_14_++)
                             is[i_7_++] = is_12_[i_8_++];
@@ -51,12 +51,12 @@ final class FontRenderer_Sub5 extends FontRenderer {
         } else {
             int[] is = new int[i_1_ * i_1_];
             for (int i_15_ = 0; i_15_ < 256; i_15_++) {
-                Class207 class207 = class207s[i_15_];
-                int[] is_16_ = class207.anIntArray2697;
-                byte[] is_17_ = class207.aByteArray2695;
-                byte[] is_18_ = class207.aByteArray2699;
-                int i_19_ = class207.anInt2696;
-                int i_20_ = class207.anInt2702;
+                IndexedImage indexedImage = indexedImages[i_15_];
+                int[] is_16_ = indexedImage.palette;
+                byte[] is_17_ = indexedImage.alpha;
+                byte[] is_18_ = indexedImage.raster;
+                int i_19_ = indexedImage.height;
+                int i_20_ = indexedImage.width;
                 int i_21_ = i_15_ % 16 * i;
                 int i_22_ = i_15_ / 16 * i;
                 int i_23_ = i_22_ * i_1_ + i_21_;
@@ -88,11 +88,11 @@ final class FontRenderer_Sub5 extends FontRenderer {
         float f = (aClass258_Sub3_Sub1_6511.aFloat9937 / (float) (aClass258_Sub3_Sub1_6511.anInt9940));
         float f_30_ = (aClass258_Sub3_Sub1_6511.aFloat9938 / (float) (aClass258_Sub3_Sub1_6511.anInt9939));
         for (int i_31_ = 0; i_31_ < 256; i_31_++) {
-            Class207 class207 = class207s[i_31_];
-            int i_32_ = class207.anInt2696;
-            int i_33_ = class207.anInt2702;
-            int i_34_ = class207.anInt2700;
-            int i_35_ = class207.anInt2703;
+            IndexedImage indexedImage = indexedImages[i_31_];
+            int i_32_ = indexedImage.height;
+            int i_33_ = indexedImage.width;
+            int i_34_ = indexedImage.offsetY;
+            int i_35_ = indexedImage.offsetX;
             float f_36_ = (float) (i_31_ % 16 * i);
             float f_37_ = (float) (i_31_ / 16 * i);
             float f_38_ = f_36_ * f;

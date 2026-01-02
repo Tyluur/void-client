@@ -17,7 +17,7 @@ final class InvTypeList {
         if (class348_sub42_sub7 != null) return class348_sub42_sub7;
         byte[] is;
         synchronized (aIndex_3468) {
-            is = aIndex_3468.method410(-1860, 5, i_0_);
+            is = aIndex_3468.file(-1860, 5, i_0_);
         }
         class348_sub42_sub7 = new Class348_Sub42_Sub7();
         if (i < 78) method2046();
@@ -41,7 +41,7 @@ final class InvTypeList {
     InvTypeList(Class230 class230, int i, Index index) {
         try {
             aIndex_3468 = index;
-            aIndex_3468.method407(0, 5);
+            aIndex_3468.fileLimit(0, 5);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ut.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
         }

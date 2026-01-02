@@ -9,7 +9,7 @@ final class TextureOpBrightness extends TextureOp {
     static int anInt9087;
     static int anInt9088;
     static Class351 aClass351_9089 = new Class351(2, 6);
-    static Class207 aClass207_9090;
+    static IndexedImage aIndexedImage_9090;
     private int anInt9091 = 4096;
     private int anInt9092 = 4096;
     static int anInt9093;
@@ -21,7 +21,7 @@ final class TextureOpBrightness extends TextureOp {
 
     public static void method3050(boolean bool) {
         aClass351_9089 = null;
-        aClass207_9090 = null;
+        aIndexedImage_9090 = null;
         if (bool != true) method3050(true);
     }
 

@@ -21,7 +21,7 @@ final class LoadingScreenManager {
     // method1043
     final Class287 get(int i, byte i_0_) {
         anInt1721++;
-        byte[] is = aIndex_1718.method410(-1860, 1, i);
+        byte[] is = aIndex_1718.file(-1860, 1, i);
         if (i_0_ < 12) return null;
         Class287 class287 = new Class287();
         class287.method2183(new Packet(is), 21890);
@@ -96,8 +96,8 @@ final class LoadingScreenManager {
     LoadingScreenManager(Class230 class230, int i, Index index) {
         try {
             aIndex_1718 = index;
-            aIndex_1718.method407(0, 1);
-            Packet packet = new Packet(aIndex_1718.method410(-1860, 0, 0));
+            aIndex_1718.fileLimit(0, 1);
+            Packet packet = new Packet(aIndex_1718.file(-1860, 0, 0));
             int i_17_ = packet.readUnsignedByte(255);
             if (i_17_ > 3) {
                 anIntArrayArray1724 = new int[0][];

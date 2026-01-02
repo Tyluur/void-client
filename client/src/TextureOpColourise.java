@@ -89,10 +89,10 @@ final class TextureOpColourise extends TextureOp {
         for (int i_21_ = (-(Class367_Sub4.mapLength >> 4) + i_17_) / 8; i_21_ <= (i_17_ + (Class367_Sub4.mapLength >> 4)) / 8; i_21_++) {
             for (int i_22_ = (i_16_ - (TextureOpBinary.mapWidth >> 4)) / 8; (i_22_ <= ((TextureOpBinary.mapWidth >> 4) + i_16_) / 8); i_22_++) {
                 Class348_Sub23_Sub3.mapRegionIds[i_18_] = i_22_ + (i_21_ << 8);
-                aa_Sub1.mapTiles[i_18_] = Class367_Sub10.MAPS.method417("m" + i_21_ + "_" + i_22_, 0);
-                Applet_Sub1.mapLocations[i_18_] = Class367_Sub10.MAPS.method417("l" + i_21_ + "_" + i_22_, 0);
-                Class295.mapUndergroundTiles[i_18_] = Class367_Sub10.MAPS.method417("um" + i_21_ + "_" + i_22_, 0);
-                r.mapUndergroundLocations[i_18_] = Class367_Sub10.MAPS.method417("ul" + i_21_ + "_" + i_22_, 0);
+                aa_Sub1.mapTiles[i_18_] = Class367_Sub10.MAPS.groupId("m" + i_21_ + "_" + i_22_, 0);
+                Applet_Sub1.mapLocations[i_18_] = Class367_Sub10.MAPS.groupId("l" + i_21_ + "_" + i_22_, 0);
+                Class295.mapUndergroundTiles[i_18_] = Class367_Sub10.MAPS.groupId("um" + i_21_ + "_" + i_22_, 0);
+                r.mapUndergroundLocations[i_18_] = Class367_Sub10.MAPS.groupId("ul" + i_21_ + "_" + i_22_, 0);
                 i_18_++;
             }
         }

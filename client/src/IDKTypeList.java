@@ -39,7 +39,7 @@ final class IDKTypeList {
         if (class34 != null) return class34;
         byte[] is;
         synchronized (aIndex_2048) {
-            is = aIndex_2048.method410(i + -1893, 3, i_3_);
+            is = aIndex_2048.file(i + -1893, 3, i_3_);
         }
         class34 = new Class34();
         class34.aIDKTypeList_475 = this;
@@ -60,7 +60,7 @@ final class IDKTypeList {
 
     static final Class348_Sub42_Sub14 method1205(int i, boolean bool, Index index, int i_4_) {
         anInt2053++;
-        Packet packet = new Packet(index.method410(-1860, i_4_, i));
+        Packet packet = new Packet(index.file(-1860, i_4_, i));
         if (bool != true) method1208(102);
         Class348_Sub42_Sub14 class348_sub42_sub14 = new Class348_Sub42_Sub14(i, packet.readString((byte) 88), packet.readString((byte) 120), packet.readInt((byte) -126), packet.readInt((byte) -126), packet.readUnsignedByte(255) == 1, packet.readUnsignedByte(255), packet.readUnsignedByte(255));
         int i_5_ = packet.readUnsignedByte(255);
@@ -97,7 +97,7 @@ final class IDKTypeList {
         try {
             this.aIndex_2054 = index_9_;
             aIndex_2048 = index;
-            aIndex_2048.method407(0, 3);
+            aIndex_2048.fileLimit(0, 3);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("oha.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ',' + (index_9_ != null ? "{...}" : "null") + ')'));
         }

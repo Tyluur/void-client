@@ -19,7 +19,7 @@ final class EnumTypeList {
             class117 = (Class117) aClass60_460.method583(i, 111);
         }
         if (class117 != null) return class117;
-        byte[] is = aIndex_458.method410(-1860, Class5_Sub3.method200(-107, i), JavaSurface.method3013(i, bool));
+        byte[] is = aIndex_458.file(-1860, Class5_Sub3.method200(-107, i), JavaSurface.method3013(i, bool));
         class117 = new Class117();
         if (is != null) class117.method1069(0, new Packet(is));
         synchronized (aClass60_460) {
@@ -34,10 +34,10 @@ final class EnumTypeList {
         if (i_0_ != Class337.anInt4179) {
             if (i_0_ != -1) {
                 Class222 class222 = Option.cursorTypeList.method1287((byte) -104, i_0_);
-                Class207 class207 = class222.method1610((byte) 71);
-                if (class207 == null) i_0_ = -1;
+                IndexedImage indexedImage = class222.method1610((byte) 71);
+                if (indexedImage == null) i_0_ = -1;
                 else {
-                    Class348_Sub23_Sub1.aClass297_8992.method2238(class207.method1522(), class207.method1516(), 17, new Point(class222.anInt2883, class222.anInt2890), Class305.aCanvas3869, class207.method1510());
+                    Class348_Sub23_Sub1.aClass297_8992.method2238(indexedImage.method1522(), indexedImage.method1516(), 17, new Point(class222.anInt2883, class222.anInt2890), Class305.aCanvas3869, indexedImage.method1510());
                     Class337.anInt4179 = i_0_;
                 }
             }
@@ -83,8 +83,8 @@ final class EnumTypeList {
             try {
                 aIndex_458 = index;
                 if (aIndex_458 == null) break;
-                int i_6_ = -1 + aIndex_458.method414(-1);
-                aIndex_458.method407(0, i_6_);
+                int i_6_ = -1 + aIndex_458.groupSize(-1);
+                aIndex_458.fileLimit(0, i_6_);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("iba.<init>(" + (class230 != null ? "{...}" : "null") + ',' + i + ',' + (index != null ? "{...}" : "null") + ')'));
             }

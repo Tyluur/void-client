@@ -63,7 +63,7 @@ final class Class50_Sub1 extends Class50 {
         Toolkit.method3641(i_18_, i_19_, (byte) -75, this.anInt864, i_17_, i_16_);
     }
 
-    static final byte[] method461(boolean bool, Object object, int i) {
+    static final byte[] unwrap(boolean bool, Object object, int i) {
         anInt5215++;
         if (object == null) return null;
         if (object instanceof byte[]) {

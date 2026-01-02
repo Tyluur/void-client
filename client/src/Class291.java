@@ -5,21 +5,21 @@
 final class Class291 {
     int anInt3719;
     static int anInt3720 = 0;
-    int[][] anIntArrayArray3721;
+    int[][] fileIds;
     int[] anIntArray3722;
-    Class316 aClass316_3723;
-    int[] anIntArray3724;
-    int[] anIntArray3725;
+    Class316 groupNameTable;
+    int[] fileLimits;
+    int[] fileCounts;
     static int[] anIntArray3726;
     int anInt3727;
-    Class316[] aClass316Array3728;
+    Class316[] fileNameTables;
     int[] anIntArray3729;
     byte[][] aByteArrayArray3730;
     static int anInt3731;
     int anInt3732;
-    int[] anIntArray3733;
-    int anInt3734;
-    int[][] anIntArrayArray3735;
+    int[] groupNames;
+    int groupLimit;
+    int[][] fileNames;
     static int anInt3736;
     static Class318_Sub1[] aClass318_Sub1Array3737;
     int[] anIntArray3738;
@@ -45,7 +45,7 @@ final class Class291 {
 
     private final void method2200(byte i, byte[] is) {
         anInt3731++;
-        Packet packet = new Packet(Class348_Sub41.method3158(is, -105));
+        Packet packet = new Packet(Class348_Sub41.decompress(is, -105));
         int i_2_ = packet.readUnsignedByte(255);
         if (i_2_ < 5 || i_2_ > 6) throw new RuntimeException();
         if (i_2_ < 6) this.anInt3732 = 0;
@@ -61,20 +61,20 @@ final class Class291 {
             this.anIntArray3738[i_7_] = i_5_ += packet.readUnsignedShort(842397944);
             if (i_6_ < this.anIntArray3738[i_7_]) i_6_ = this.anIntArray3738[i_7_];
         }
-        this.anInt3734 = i_6_ - -1;
-        if (bool_4_) this.aByteArrayArray3730 = new byte[this.anInt3734][];
-        this.anIntArray3729 = new int[this.anInt3734];
-        this.anIntArray3724 = new int[this.anInt3734];
-        this.anIntArray3725 = new int[this.anInt3734];
-        this.anIntArray3722 = new int[this.anInt3734];
-        this.anIntArrayArray3721 = new int[this.anInt3734][];
+        this.groupLimit = i_6_ - -1;
+        if (bool_4_) this.aByteArrayArray3730 = new byte[this.groupLimit][];
+        this.anIntArray3729 = new int[this.groupLimit];
+        this.fileLimits = new int[this.groupLimit];
+        this.fileCounts = new int[this.groupLimit];
+        this.anIntArray3722 = new int[this.groupLimit];
+        this.fileIds = new int[this.groupLimit][];
         if (bool) {
-            this.anIntArray3733 = new int[this.anInt3734];
-            for (int i_8_ = 0; i_8_ < this.anInt3734; i_8_++)
-                this.anIntArray3733[i_8_] = -1;
+            this.groupNames = new int[this.groupLimit];
+            for (int i_8_ = 0; i_8_ < this.groupLimit; i_8_++)
+                this.groupNames[i_8_] = -1;
             for (int i_9_ = 0; (this.anInt3727 > i_9_); i_9_++)
-                this.anIntArray3733[(this.anIntArray3738[i_9_])] = packet.readInt((byte) -126);
-            this.aClass316_3723 = new Class316(this.anIntArray3733);
+                this.groupNames[(this.anIntArray3738[i_9_])] = packet.readInt((byte) -126);
+            this.groupNameTable = new Class316(this.groupNames);
         }
         if (i >= -83) method2200((byte) 42, null);
         for (int i_10_ = 0; i_10_ < this.anInt3727; i_10_++)
@@ -89,36 +89,36 @@ final class Class291 {
         for (int i_13_ = 0; i_13_ < this.anInt3727; i_13_++)
             this.anIntArray3722[(this.anIntArray3738[i_13_])] = packet.readInt((byte) -126);
         for (int i_14_ = 0; this.anInt3727 > i_14_; i_14_++)
-            this.anIntArray3725[(this.anIntArray3738[i_14_])] = packet.readUnsignedShort(842397944);
+            this.fileCounts[(this.anIntArray3738[i_14_])] = packet.readUnsignedShort(842397944);
         for (int i_15_ = 0; this.anInt3727 > i_15_; i_15_++) {
             int i_16_ = this.anIntArray3738[i_15_];
             i_5_ = 0;
-            int i_17_ = this.anIntArray3725[i_16_];
+            int i_17_ = this.fileCounts[i_16_];
             int i_18_ = -1;
-            this.anIntArrayArray3721[i_16_] = new int[i_17_];
+            this.fileIds[i_16_] = new int[i_17_];
             for (int i_19_ = 0; i_17_ > i_19_; i_19_++) {
-                int i_20_ = (this.anIntArrayArray3721[i_16_][i_19_] = i_5_ += packet.readUnsignedShort(842397944));
+                int i_20_ = (this.fileIds[i_16_][i_19_] = i_5_ += packet.readUnsignedShort(842397944));
                 if (i_18_ < i_20_) i_18_ = i_20_;
             }
-            this.anIntArray3724[i_16_] = i_18_ + 1;
-            if (1 + i_18_ == i_17_) this.anIntArrayArray3721[i_16_] = null;
+            this.fileLimits[i_16_] = i_18_ + 1;
+            if (1 + i_18_ == i_17_) this.fileIds[i_16_] = null;
         }
         if (bool) {
-            this.anIntArrayArray3735 = new int[i_6_ + 1][];
-            this.aClass316Array3728 = new Class316[1 + i_6_];
+            this.fileNames = new int[i_6_ + 1][];
+            this.fileNameTables = new Class316[1 + i_6_];
             for (int i_21_ = 0; i_21_ < this.anInt3727; i_21_++) {
                 int i_22_ = this.anIntArray3738[i_21_];
-                int i_23_ = this.anIntArray3725[i_22_];
-                this.anIntArrayArray3735[i_22_] = new int[this.anIntArray3724[i_22_]];
-                for (int i_24_ = 0; this.anIntArray3724[i_22_] > i_24_; i_24_++)
-                    this.anIntArrayArray3735[i_22_][i_24_] = -1;
+                int i_23_ = this.fileCounts[i_22_];
+                this.fileNames[i_22_] = new int[this.fileLimits[i_22_]];
+                for (int i_24_ = 0; this.fileLimits[i_22_] > i_24_; i_24_++)
+                    this.fileNames[i_22_][i_24_] = -1;
                 for (int i_25_ = 0; i_23_ > i_25_; i_25_++) {
                     int i_26_;
-                    if (this.anIntArrayArray3721[i_22_] != null) i_26_ = (this.anIntArrayArray3721[i_22_][i_25_]);
+                    if (this.fileIds[i_22_] != null) i_26_ = (this.fileIds[i_22_][i_25_]);
                     else i_26_ = i_25_;
-                    this.anIntArrayArray3735[i_22_][i_26_] = packet.readInt((byte) -126);
+                    this.fileNames[i_22_][i_26_] = packet.readInt((byte) -126);
                 }
-                this.aClass316Array3728[i_22_] = new Class316(this.anIntArrayArray3735[i_22_]);
+                this.fileNameTables[i_22_] = new Class316(this.fileNames[i_22_]);
             }
         }
     }
