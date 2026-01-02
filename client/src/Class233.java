@@ -12,7 +12,7 @@ final class Class233 {
     static int anInt3019;
     private final Class348_Sub49_Sub1 aClass348_Sub49_Sub1_3020;
     static int anInt3021;
-    static Class107 aClass107_3022 = new Class107();
+    static SecondaryLinkedList aSecondaryLinkedList_3022 = new SecondaryLinkedList();
     static int anInt3023;
     private final float[] aFloatArray3024 = new float[16];
     private Class123 aClass123_3025;
@@ -82,7 +82,7 @@ final class Class233 {
                     i_5_ = 0;
                     Class318_Sub9 class318_sub9_12_ = class318_sub9.aClass318_Sub9_6469;
                     int i_13_ = -2;
-                    if (i > -23) aClass107_3022 = null;
+                    if (i > -23) aSecondaryLinkedList_3022 = null;
                     boolean bool = true;
                     boolean bool_14_ = true;
                     while (class318_sub9 != class318_sub9_12_) {
@@ -142,9 +142,9 @@ final class Class233 {
     }
 
     public static void method1653(int i) {
-        aClass107_3022 = null;
+        aSecondaryLinkedList_3022 = null;
         aFloatArray3015 = null;
-        if (i != 1489574736) aClass107_3022 = null;
+        if (i != 1489574736) aSecondaryLinkedList_3022 = null;
     }
 
     final void method1654(int i, OpenGLToolkit var_openGLToolkit) {

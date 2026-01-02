@@ -28,7 +28,7 @@ final class Class127_Sub1 extends Class127 {
     static final void method1118(boolean bool, boolean bool_2_, Class348_Sub41 class348_sub41, int i) {
         anInt8382++;
         int i_3_ = class348_sub41.anInt7050;
-        int i_4_ = (int) class348_sub41.aLong4291;
+        int i_4_ = (int) class348_sub41.key;
         if (i == 2533) {
             class348_sub41.unlink((byte) 35);
             if (bool) Class14.method235(i_3_, (byte) -116);
@@ -37,14 +37,14 @@ final class Class127_Sub1 extends Class127 {
             if (class46 != null) Class251.method1916(-9343, class46);
             Class348_Sub42_Sub17.method3270((byte) 119);
             if (!bool_2_ && r.anInt9721 != -1) Option_Sub12.method1775((byte) -8, r.anInt9721, 1);
-            Class333 class333 = new Class333(Class125.aClass356_4915);
+            Class333 class333 = new Class333(Class125.aHashTable_4915);
             for (Class348_Sub41 class348_sub41_5_ = (Class348_Sub41) class333.method2644((byte) 123); class348_sub41_5_ != null; class348_sub41_5_ = (Class348_Sub41) class333.method2646((byte) 99)) {
-                if (!class348_sub41_5_.method2712((byte) 4)) {
+                if (!class348_sub41_5_.hasNext((byte) 4)) {
                     class348_sub41_5_ = (Class348_Sub41) class333.method2644((byte) 123);
                     if (class348_sub41_5_ == null) break;
                 }
                 if (class348_sub41_5_.anInt7053 == 3) {
-                    int i_6_ = (int) class348_sub41_5_.aLong4291;
+                    int i_6_ = (int) class348_sub41_5_.key;
                     if (i_3_ == i_6_ >>> 16) method1118(true, bool_2_, class348_sub41_5_, 2533);
                 }
             }

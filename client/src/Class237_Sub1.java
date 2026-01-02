@@ -56,7 +56,7 @@ final class Class237_Sub1 extends Class237 {
                     int i_14_ = ((var_ground.tileHeight((byte) -86, i_13_, i_10_) + var_ground.tileHeight((byte) -86, i_13_, i_11_) - (-var_ground.tileHeight((byte) -86, i_12_, i_10_) - var_ground.tileHeight((byte) -86, i_12_, i_11_))) >> 2);
                     int i_15_ = (i << 9) - -(i_9_ << 8);
                     int i_16_ = (i_8_ << 8) + (i_5_ << 9);
-                    boolean bool = (Class348_Sub42_Sub3.aBoolean9498 && !this.underwater && class51.aBoolean906);
+                    boolean bool = (ByteArraySecondaryNode.aBoolean9498 && !this.underwater && class51.aBoolean906);
                     if (class51.method474((byte) 82)) Class223.method1614(979190089, null, i_0_, i_5_, i, null, class51, i_7_);
                     boolean bool_17_ = (i_6_ == -1 && class51.anInt868 == -1 && class51.anIntArray943 == null && class51.anIntArray945 == null && !class51.aBoolean929);
                     if (!JavaOffscreenSurface.aBoolean4728 || ((!Class140.method1172((byte) -85, i_4_) || class51.anInt955 == 1) && (!Class231.method1639(i_4_, i_3_ ^ 0x3918) || class51.anInt955 != 0))) {
@@ -86,7 +86,7 @@ final class Class237_Sub1 extends Class237 {
                             }
                             if (Class89.method850(class318_sub1_sub3, false)) {
                                 if (class318_sub1_sub3_sub1 != null && class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(836, var_toolkit);
-                                if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
+                                if (class51.aBoolean918 && ByteArraySecondaryNode.aBoolean9498) {
                                     if (i_18_ > 30) i_18_ = 30;
                                     for (int i_20_ = 0; (i_20_ <= i_9_); i_20_++) {
                                         for (int i_21_ = 0; i_8_ >= i_21_; i_21_++)
@@ -103,7 +103,7 @@ final class Class237_Sub1 extends Class237 {
                                 if (class318_sub1_sub3_sub1.method38(-18443)) class318_sub1_sub3_sub1.method44(i_3_ + 786, var_toolkit);
                             } else class318_sub1_sub3 = (new Class318_Sub1_Sub3_Sub2(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, i, i + (i_9_ - 1), i_5_, i_5_ - (-i_8_ - -1), i_4_, i_7_, i_6_));
                             Class89.method850(class318_sub1_sub3, false);
-                            if (Class348_Sub42_Sub3.aBoolean9498 && !this.underwater && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108[i_0_][i][i_5_] = (byte) (Class273.method2057((this.aByteArrayArrayArray3108[i_0_][i][i_5_]), 4));
+                            if (ByteArraySecondaryNode.aBoolean9498 && !this.underwater && i_4_ >= 12 && i_4_ <= 17 && i_4_ != 13 && i_0_ > 0 && (class51.anInt955 != 0)) this.aByteArrayArrayArray3108[i_0_][i][i_5_] = (byte) (Class273.method2057((this.aByteArrayArrayArray3108[i_0_][i][i_5_]), 4));
                             if ((class51.anInt920 != 0) && class361 != null) class361.method3505(!(class51.aBoolean876), i_9_, i_5_, true, i, (class51.aBoolean896), i_8_);
                         } else if (i_4_ == 0) {
                             int i_22_ = class51.anInt955;
@@ -116,25 +116,25 @@ final class Class237_Sub1 extends Class237 {
                             } else class318_sub1_sub4 = (new Class318_Sub1_Sub4_Sub2(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, i_4_, i_7_, i_6_));
                             Class348_Sub42_Sub16.method3254(i_0_, i, i_5_, class318_sub1_sub4, null);
                             if (i_7_ == 0) {
-                                if (Class348_Sub42_Sub3.aBoolean9498 && class51.aBoolean918) {
+                                if (ByteArraySecondaryNode.aBoolean9498 && class51.aBoolean918) {
                                     var_ground.ka(i, i_5_, 50);
                                     var_ground.ka(i, i_5_ - -1, 50);
                                 }
                                 if (i_22_ == 1 && !this.underwater) Option_Sub21.method1810(i, class51.anInt953, class51.anInt909, i_5_, i_3_ + -51, i_0_, 1);
                             } else if (i_7_ == 1) {
-                                if (Class348_Sub42_Sub3.aBoolean9498 && class51.aBoolean918) {
+                                if (ByteArraySecondaryNode.aBoolean9498 && class51.aBoolean918) {
                                     var_ground.ka(i, 1 + i_5_, 50);
                                     var_ground.ka(1 + i, 1 + i_5_, 50);
                                 }
                                 if (i_22_ == 1 && !this.underwater) Option_Sub21.method1810(i, -class51.anInt953, class51.anInt909, 1 + i_5_, -1, i_0_, 2);
                             } else if (i_7_ == 2) {
-                                if (Class348_Sub42_Sub3.aBoolean9498 && class51.aBoolean918) {
+                                if (ByteArraySecondaryNode.aBoolean9498 && class51.aBoolean918) {
                                     var_ground.ka(i - -1, i_5_, 50);
                                     var_ground.ka(1 + i, 1 + i_5_, 50);
                                 }
                                 if (i_22_ == 1 && !this.underwater) Option_Sub21.method1810(1 + i, -class51.anInt953, class51.anInt909, i_5_, i_3_ + -51, i_0_, 1);
                             } else if (i_7_ == 3) {
-                                if (Class348_Sub42_Sub3.aBoolean9498 && class51.aBoolean918) {
+                                if (ByteArraySecondaryNode.aBoolean9498 && class51.aBoolean918) {
                                     var_ground.ka(i, i_5_, 50);
                                     var_ground.ka(1 + i, i_5_, 50);
                                 }
@@ -150,7 +150,7 @@ final class Class237_Sub1 extends Class237 {
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1;
                             } else class318_sub1_sub4 = (new Class318_Sub1_Sub4_Sub2(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, i_4_, i_7_, i_6_));
                             Class348_Sub42_Sub16.method3254(i_0_, i, i_5_, class318_sub1_sub4, null);
-                            if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
+                            if (class51.aBoolean918 && ByteArraySecondaryNode.aBoolean9498) {
                                 if (i_7_ == 0) var_ground.ka(i, i_5_ + 1, 50);
                                 else if (i_7_ != 1) {
                                     if (i_7_ != 2) {
@@ -200,7 +200,7 @@ final class Class237_Sub1 extends Class237 {
                                 class318_sub1_sub4 = class318_sub1_sub4_sub1;
                             } else class318_sub1_sub4 = (new Class318_Sub1_Sub4_Sub2(var_toolkit, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.underwater, i_4_, i_7_, i_6_));
                             Class348_Sub42_Sub16.method3254(i_0_, i, i_5_, class318_sub1_sub4, null);
-                            if (class51.aBoolean918 && Class348_Sub42_Sub3.aBoolean9498) {
+                            if (class51.aBoolean918 && ByteArraySecondaryNode.aBoolean9498) {
                                 if (i_7_ == 0) var_ground.ka(i, 1 + i_5_, 50);
                                 else if (i_7_ == 1) var_ground.ka(1 + i, 1 + i_5_, 50);
                                 else if (i_7_ != 2) {

@@ -438,7 +438,7 @@ final class Class325 {
                         Class93.anInt1534 = i_72_;
                         Class26.anInt385 = i_73_;
                         Node.anInt4292 = 0;
-                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
+                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_77_, -6008));
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
                             NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);
@@ -502,7 +502,7 @@ final class Class325 {
                         Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
                     }
                     if (i_76_ == 46) {
-                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
+                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_77_, -6008));
                         if (class348_sub22 != null) {
                             Node.anInt4292 = 0;
                             QuestTypeList.anInt2499++;
@@ -547,7 +547,7 @@ final class Class325 {
                         Class309.method2307(i_75_, l, i_74_, 93);
                     }
                     if (i_76_ == 30) {
-                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
+                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_77_, -6008));
                         if (class348_sub22 != null) {
                             Node.anInt4292 = 0;
                             Class93.anInt1534 = i_72_;
@@ -701,7 +701,7 @@ final class Class325 {
                         Class298.method2252(true, i_74_, i_75_, (byte) -91, 1, 0, 1, -4, 0);
                     }
                     if (i_76_ == 60) {
-                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
+                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_77_, -6008));
                         if (class348_sub22 != null) {
                             Class290.anInt3707++;
                             Node.anInt4292 = 0;
@@ -792,7 +792,7 @@ final class Class325 {
                         Class309.method2307(i_75_, l, i_74_, 63);
                     }
                     if (i_76_ == 20) {
-                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
+                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_77_, -6008));
                         if (class348_sub22 != null) {
                             Option_Sub20.anInt6048 = 2;
                             Class26.anInt385 = i_73_;
@@ -860,7 +860,7 @@ final class Class325 {
                         } else {
                             if (i_76_ == 1009 || i_76_ == 1012 || i_76_ == 1002 || i_76_ == 1003 || i_76_ == 1006) StructTypeList.method696(i_76_, i_74_, i_77_, -1007);
                             if (i_76_ == 25) {
-                                Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
+                                Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_77_, -6008));
                                 if (class348_sub22 != null) {
                                     Option_Sub20.anInt6048 = 2;
                                     Class93.anInt1534 = i_72_;
@@ -905,7 +905,7 @@ final class Class325 {
                                 Class309.method2307(i_75_, l, i_74_, 24);
                             }
                             if (i_76_ == 44) {
-                                Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_77_, -6008));
+                                Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_77_, -6008));
                                 if (class348_sub22 != null) {
                                     Npc npc = (class348_sub22.aNpc_6859);
                                     Class93.anInt1534 = i_72_;

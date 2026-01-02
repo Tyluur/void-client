@@ -60,12 +60,12 @@ final class JavaBillboardFace {
             int i_18_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 15);
             if (i_18_ == 32767) break;
             boolean bool = false;
-            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_18_, -6008));
+            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_18_, -6008));
             if (class348_sub22 == null) {
                 Npc npc = new Npc();
                 npc.anInt10290 = i_18_;
                 class348_sub22 = new Class348_Sub22(npc);
-                Class282.aClass356_3654.method3483((byte) 57, i_18_, class348_sub22);
+                Class282.aHashTable_3654.put((byte) 57, i_18_, class348_sub22);
                 bool = true;
                 TextureOpIrregularBricks.aClass348_Sub22Array9319[Class348_Sub32.anInt6930++] = class348_sub22;
             }

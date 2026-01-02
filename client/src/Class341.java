@@ -103,7 +103,7 @@ final class Class341 {
                 Class348_Sub18.method2938((byte) 127);
                 Class40.method369(-29776);
                 Class376.method3616(12639);
-                Class348_Sub42_Sub3.method3177(-78, false);
+                ByteArraySecondaryNode.method3177(-78, false);
                 for (int i_12_ = 0; i_12_ < 2048; i_12_++) {
                     Player player = (Class294.aPlayerArray5058[i_12_]);
                     if (player != null) {

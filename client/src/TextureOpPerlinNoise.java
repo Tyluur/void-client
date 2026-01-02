@@ -96,7 +96,7 @@ final class TextureOpPerlinNoise extends TextureOp {
     }
 
     final void finish(int i) {
-        aByteArray9152 = Toolkit.method3664(this.anInt9156, 95);
+        aByteArray9152 = Toolkit.getPermutation(this.anInt9156, 95);
         anInt9148++;
         method3067((byte) -98);
         int i_3_ = this.anInt9150 + -1;

@@ -45,7 +45,7 @@ final class s_Sub3 extends Ground {
     NativeToolkit aNativeToolkit_8322;
     private float[][] aFloatArrayArray8323;
     Class130 aClass130_8324;
-    private Class356 aClass356_8325;
+    private HashTable aHashTable_8325;
     private Interface5_Impl1 anInterface5_Impl1_8326;
     private Interface5_Impl1 anInterface5_Impl1_8327;
     private Class348_Sub3[] aClass348_Sub3Array8328;
@@ -155,8 +155,8 @@ final class s_Sub3 extends Ground {
                 for (int i_44_ = 1; i_44_ < this.anInt4590; i_44_++)
                     is[i][i_44_] = (byte) ((aByteArrayArray8330[i][-1 + i_44_] >> 2) + (aByteArrayArray8330[1 + i][i_44_] >> 3) + ((aByteArrayArray8330[i + -1][i_44_] >> 2) + (aByteArrayArray8330[i][1 + i_44_] >> 3)) + (aByteArrayArray8330[i][i_44_] >> 1));
             }
-            Class348_Sub3[] class348_sub3s = new Class348_Sub3[aClass356_8325.method3474(1)];
-            aClass356_8325.method3477(3, class348_sub3s);
+            Class348_Sub3[] class348_sub3s = new Class348_Sub3[aHashTable_8325.size(1)];
+            aHashTable_8325.toArray(3, class348_sub3s);
             for (int i = 0; i < class348_sub3s.length; i++)
                 class348_sub3s[i].method2736((byte) -57, anInt8329);
             int i = 20;
@@ -169,7 +169,7 @@ final class s_Sub3 extends Ground {
             Class348_Sub3[] class348_sub3s_47_ = new Class348_Sub3[anInt8329];
             int i_48_ = TextureOpBrightness.method3051(anInt8329 / 4, 4096);
             if (i_48_ < 1) i_48_ = 1;
-            Class356 class356 = new Class356(i_48_);
+            HashTable hashTable = new HashTable(i_48_);
             Class348_Sub3[] class348_sub3s_49_ = new Class348_Sub3[anInt8331];
             for (int i_50_ = 0; i_50_ < this.anInt4587; i_50_++) {
                 for (int i_51_ = 0; (i_51_ < this.anInt4590); i_51_++) {
@@ -276,7 +276,7 @@ final class s_Sub3 extends Ground {
                                 }
                             }
                             Node node = null;
-                            if ((i_79_ & anInt8311 - 1) == 0 && (-1 + anInt8311 & i_80_) == 0) node = class356.method3480(l, -6008);
+                            if ((i_79_ & anInt8311 - 1) == 0 && (-1 + anInt8311 & i_80_) == 0) node = hashTable.get(l, -6008);
                             int i_105_;
                             if (node == null) {
                                 int i_106_;
@@ -336,11 +336,11 @@ final class s_Sub3 extends Ground {
                                 i_105_ = anInt8303++;
                                 is_77_[i_78_] = (short) i_105_;
                                 if (i_83_ != -1) class348_sub3s_47_[i_105_] = class348_sub3s_52_[i_78_];
-                                class356.method3483((byte) 108, l, new Class348_Sub29(is_77_[i_78_]));
+                                hashTable.put((byte) 108, l, new Class348_Sub29(is_77_[i_78_]));
                             } else {
                                 is_77_[i_78_] = ((Class348_Sub29) node).aShort6911;
                                 i_105_ = 0xffff & is_77_[i_78_];
-                                if (i_83_ != -1 && (class348_sub3s_47_[i_105_].aLong4291 > class348_sub3s_52_[i_78_].aLong4291)) class348_sub3s_47_[i_105_] = class348_sub3s_52_[i_78_];
+                                if (i_83_ != -1 && (class348_sub3s_47_[i_105_].key > class348_sub3s_52_[i_78_].key)) class348_sub3s_47_[i_105_] = class348_sub3s_52_[i_78_];
                             }
                             for (int i_112_ = 0; i_74_ > i_112_; i_112_++)
                                 class348_sub3s_49_[i_112_].method2741(i_105_, f_103_, 1624, i_88_, i_89_);
@@ -373,11 +373,11 @@ final class s_Sub3 extends Ground {
                             }
                             if (class348_sub3_122_ != null) {
                                 class348_sub3_122_.method2742(i_117_, i_115_, i_114_, (byte) -69);
-                                if (class348_sub3_124_ == null || ((class348_sub3_124_.aLong4291) > (class348_sub3_122_.aLong4291))) class348_sub3_124_ = class348_sub3_122_;
+                                if (class348_sub3_124_ == null || ((class348_sub3_124_.key) > (class348_sub3_122_.key))) class348_sub3_124_ = class348_sub3_122_;
                             }
                             if (class348_sub3_123_ != null) {
                                 class348_sub3_123_.method2742(i_117_, i_115_, i_114_, (byte) -79);
-                                if (class348_sub3_124_ == null || ((class348_sub3_124_.aLong4291) > (class348_sub3_123_.aLong4291))) class348_sub3_124_ = class348_sub3_123_;
+                                if (class348_sub3_124_ == null || ((class348_sub3_124_.key) > (class348_sub3_123_.key))) class348_sub3_124_ = class348_sub3_123_;
                             }
                             if (class348_sub3_124_ != null) {
                                 if (class348_sub3 != null) class348_sub3_124_.method2744((byte) -113, i_119_);
@@ -409,7 +409,7 @@ final class s_Sub3 extends Ground {
             long[] ls = new long[i_125_];
             for (int i_127_ = 0; i_125_ > i_127_; i_127_++) {
                 Class348_Sub3 class348_sub3 = class348_sub3s[i_127_];
-                ls[i_127_] = class348_sub3.aLong4291;
+                ls[i_127_] = class348_sub3.key;
                 aClass348_Sub3Array8328[i_127_] = class348_sub3;
                 class348_sub3.method2740(-84, anInt8303);
             }
@@ -418,7 +418,7 @@ final class s_Sub3 extends Ground {
         }
         anInt8298++;
         anIntArrayArrayArray8308 = null;
-        aClass356_8325 = null;
+        aHashTable_8325 = null;
         anIntArrayArrayArray8291 = null;
         aClass348_Sub3ArrayArrayArray8312 = null;
         aFloatArrayArray8333 = aFloatArrayArray8332 = aFloatArrayArray8323 = null;
@@ -487,7 +487,7 @@ final class s_Sub3 extends Ground {
                 }
                 aFloat8306--;
                 aFloat8305++;
-                aClass356_8325 = new Class356(128);
+                aHashTable_8325 = new HashTable(128);
                 if ((this.anInt8294 & 0x10) == 0) break;
                 aClass330_8307 = new Class330(this.aNativeToolkit_8322, this);
             } catch (RuntimeException runtimeexception) {
@@ -597,13 +597,13 @@ final class s_Sub3 extends Ground {
                 }
                 long l = (long) i_179_ | ((long) (i_180_ << 14) | ((long) i_176_ << 42 | (long) i_177_ << 48 | (long) i_175_ << 28));
                 Node node;
-                for (node = aClass356_8325.method3480(l, -6008); node != null; node = aClass356_8325.method3476(true)) {
+                for (node = aHashTable_8325.get(l, -6008); node != null; node = aHashTable_8325.nextWithKey(true)) {
                     Class348_Sub3 class348_sub3 = (Class348_Sub3) node;
                     if (i_179_ == class348_sub3.anInt6567 && (class348_sub3.aFloat6582 == (float) i_180_) && i_175_ == class348_sub3.anInt6571 && class348_sub3.anInt6575 == i_176_ && class348_sub3.anInt6569 == i_177_) break;
                 }
                 if (node == null) {
                     class348_sub3s[i_178_] = new Class348_Sub3(this, i_179_, i_180_, i_175_, i_176_, i_177_);
-                    aClass356_8325.method3483((byte) 27, l, class348_sub3s[i_178_]);
+                    aHashTable_8325.put((byte) 27, l, class348_sub3s[i_178_]);
                 } else class348_sub3s[i_178_] = (Class348_Sub3) node;
             }
             if (bool) aByteArrayArray8317[i][i_167_] = (byte) Class273.method2057((aByteArrayArray8317[i][i_167_]), 1);

@@ -133,70 +133,70 @@ final class OpenGLxToolkit extends NativeToolkit {
         i &= 0x7fffffff;
         while (!aDeque_9899.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_9899.method1997(8);
-            Class107.anIntArray1650[i_0_++] = (int) class348_sub35.aLong4291;
+            SecondaryLinkedList.anIntArray1650[i_0_++] = (int) class348_sub35.key;
             this.anInt8063 -= class348_sub35.anInt6976;
             if (i_0_ == 1000) {
-                OpenGL.glDeleteBuffersARB(i_0_, Class107.anIntArray1650, 0);
+                OpenGL.glDeleteBuffersARB(i_0_, SecondaryLinkedList.anIntArray1650, 0);
                 i_0_ = 0;
             }
         }
         if (i_0_ > 0) {
-            OpenGL.glDeleteBuffersARB(i_0_, Class107.anIntArray1650, 0);
+            OpenGL.glDeleteBuffersARB(i_0_, SecondaryLinkedList.anIntArray1650, 0);
             i_0_ = 0;
         }
         while (!aDeque_9901.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_9901.method1997(8);
-            Class107.anIntArray1650[i_0_++] = (int) class348_sub35.aLong4291;
+            SecondaryLinkedList.anIntArray1650[i_0_++] = (int) class348_sub35.key;
             this.anInt8062 -= class348_sub35.anInt6976;
             if (i_0_ == 1000) {
-                OpenGL.glDeleteTextures(i_0_, Class107.anIntArray1650, 0);
+                OpenGL.glDeleteTextures(i_0_, SecondaryLinkedList.anIntArray1650, 0);
                 i_0_ = 0;
             }
         }
         if (i_0_ > 0) {
-            OpenGL.glDeleteTextures(i_0_, Class107.anIntArray1650, 0);
+            OpenGL.glDeleteTextures(i_0_, SecondaryLinkedList.anIntArray1650, 0);
             i_0_ = 0;
         }
         while (!aDeque_9902.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_9902.method1997(8);
-            Class107.anIntArray1650[i_0_++] = class348_sub35.anInt6976;
+            SecondaryLinkedList.anIntArray1650[i_0_++] = class348_sub35.anInt6976;
             if (i_0_ == 1000) {
-                OpenGL.glDeleteFramebuffersEXT(i_0_, Class107.anIntArray1650, 0);
+                OpenGL.glDeleteFramebuffersEXT(i_0_, SecondaryLinkedList.anIntArray1650, 0);
                 i_0_ = 0;
             }
         }
         if (i_0_ > 0) {
-            OpenGL.glDeleteFramebuffersEXT(i_0_, Class107.anIntArray1650, 0);
+            OpenGL.glDeleteFramebuffersEXT(i_0_, SecondaryLinkedList.anIntArray1650, 0);
             i_0_ = 0;
         }
         while (!aDeque_9903.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_9903.method1997(8);
-            Class107.anIntArray1650[i_0_++] = (int) class348_sub35.aLong4291;
+            SecondaryLinkedList.anIntArray1650[i_0_++] = (int) class348_sub35.key;
             this.anInt8079 -= class348_sub35.anInt6976;
             if (i_0_ == 1000) {
-                OpenGL.glDeleteRenderbuffersEXT(i_0_, Class107.anIntArray1650, 0);
+                OpenGL.glDeleteRenderbuffersEXT(i_0_, SecondaryLinkedList.anIntArray1650, 0);
                 i_0_ = 0;
             }
         }
         if (i_0_ > 0) {
-            OpenGL.glDeleteRenderbuffersEXT(i_0_, Class107.anIntArray1650, 0);
+            OpenGL.glDeleteRenderbuffersEXT(i_0_, SecondaryLinkedList.anIntArray1650, 0);
             boolean bool = false;
         }
         while (!aDeque_9869.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_9869.method1997(8);
-            OpenGL.glDeleteLists((int) class348_sub35.aLong4291, class348_sub35.anInt6976);
+            OpenGL.glDeleteLists((int) class348_sub35.key, class348_sub35.anInt6976);
         }
         while (!aDeque_9904.method2002((byte) 18)) {
             Node node = aDeque_9904.method1997(8);
-            OpenGL.glDeleteProgramARB((int) node.aLong4291);
+            OpenGL.glDeleteProgramARB((int) node.key);
         }
         while (!aDeque_9905.method2002((byte) 18)) {
             Node node = aDeque_9905.method1997(8);
-            OpenGL.glDeleteObjectARB(node.aLong4291);
+            OpenGL.glDeleteObjectARB(node.key);
         }
         while (!aDeque_9869.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_9869.method1997(8);
-            OpenGL.glDeleteLists((int) class348_sub35.aLong4291, class348_sub35.anInt6976);
+            OpenGL.glDeleteLists((int) class348_sub35.key, class348_sub35.anInt6976);
         }
         if (this.E() > 100663296 && (Class62.safeTime(-82) > 60000L + aLong9906)) {
             System.gc();
@@ -303,7 +303,7 @@ final class OpenGLxToolkit extends NativeToolkit {
         try {
             anInt9853++;
             Node node = new Node();
-            node.aLong4291 = l;
+            node.key = l;
             if (i == 34192) aDeque_9905.method1999(node, i ^ ~0xcb43);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "bga.N(" + l + ',' + i + ')');
@@ -335,7 +335,7 @@ final class OpenGLxToolkit extends NativeToolkit {
         anInt9898++;
         Class348_Sub35 class348_sub35 = new Class348_Sub35(i);
         if (i_8_ != 59) method3818(false);
-        class348_sub35.aLong4291 = i_9_;
+        class348_sub35.key = i_9_;
         aDeque_9901.method1999(class348_sub35, -20180);
     }
 
@@ -538,7 +538,7 @@ final class OpenGLxToolkit extends NativeToolkit {
         if (i_27_ != 3089) this.anIntArray9927 = null;
         anInt9850++;
         Class348_Sub35 class348_sub35 = new Class348_Sub35(i);
-        class348_sub35.aLong4291 = i_26_;
+        class348_sub35.key = i_26_;
         aDeque_9899.method1999(class348_sub35, i_27_ ^ ~0x42c2);
     }
 
@@ -968,7 +968,7 @@ final class OpenGLxToolkit extends NativeToolkit {
     final synchronized void method3971(int i, int i_70_) {
         anInt9819++;
         Node node = new Node();
-        node.aLong4291 = i_70_;
+        node.key = i_70_;
         aDeque_9904.method1999(node, -20180);
         if (i != 16386) method3928(-86);
     }

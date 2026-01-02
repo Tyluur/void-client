@@ -81,7 +81,7 @@ final class Option_Sub24 extends Option {
             int i_11_;
             int i_12_;
             if (Class59_Sub1.aBoolean5300) {
-                Class107.method1010(false, false);
+                SecondaryLinkedList.method1010(false, false);
                 matrix = var_toolkit.method3640();
                 int[] is = var_toolkit.Y();
                 i_7_ = is[0];
@@ -158,7 +158,7 @@ final class Option_Sub24 extends Option {
                 int i_28_ = i;
                 int i_29_ = i_4_;
                 if (Class59_Sub1.aBoolean5300) {
-                    Class107.method1010(false, bool);
+                    SecondaryLinkedList.method1010(false, bool);
                     i_28_ += Class121.method1082(-92, bool);
                     i_29_ += Class348_Sub23.method2960(bool, -48);
                 }
@@ -183,7 +183,7 @@ final class Option_Sub24 extends Option {
                                 int i_35_ = (player.x - (-1 + player.method2436((byte) 82) << 8));
                                 int i_36_ = (player.y + -(-1 + player.method2436((byte) 105) << 8));
                                 for (int i_37_ = 0; (IDKTypeList.anInt2057 > i_37_); i_37_++) {
-                                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_37_], -6008)));
+                                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aHashTable_3654.get(Class74.anIntArray1233[i_37_], -6008)));
                                     if (class348_sub22 != null) {
                                         Npc npc = (class348_sub22.aNpc_6859);
                                         if ((Class367_Sub11.anInt7396 != (npc.anInt10215)) && (npc.aBoolean10309)) {
@@ -221,7 +221,7 @@ final class Option_Sub24 extends Option {
                                     int i_45_ = ((npc.x) - ((-1 + npc.aNPCDefinition_10505.size) << 8));
                                     int i_46_ = ((npc.y) - (npc.aNPCDefinition_10505.size - 1 << 8));
                                     for (int i_47_ = 0; i_47_ < IDKTypeList.anInt2057; i_47_++) {
-                                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_47_], -6008)));
+                                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aHashTable_3654.get(Class74.anIntArray1233[i_47_], -6008)));
                                         if (class348_sub22 != null) {
                                             Npc npc_48_ = (class348_sub22.aNpc_6859);
                                             if (((npc_48_.anInt10215) != Class367_Sub11.anInt7396) && (npc != npc_48_) && (npc_48_.aBoolean10309)) {
@@ -256,7 +256,7 @@ final class Option_Sub24 extends Option {
                         if (class318_sub4.aClass318_Sub1_6410 instanceof Class318_Sub1_Sub2_Sub1) {
                             int i_55_ = za_Sub2.regionTileX + i_33_;
                             int i_56_ = i_32_ - -Class90.regionTileY;
-                            Class348_Sub37 class348_sub37 = ((Class348_Sub37) (Class130.aClass356_1895.method3480((class318_sub4.aClass318_Sub1_6410.plane) << 28 | i_56_ << 14 | i_55_, -6008)));
+                            Class348_Sub37 class348_sub37 = ((Class348_Sub37) (Class130.aHashTable_1895.get((class318_sub4.aClass318_Sub1_6410.plane) << 28 | i_56_ << 14 | i_55_, -6008)));
                             if (class348_sub37 != null) {
                                 int i_57_ = 0;
                                 Class348_Sub34 class348_sub34 = ((Class348_Sub34) class348_sub37.aDeque_6998.last(-92));

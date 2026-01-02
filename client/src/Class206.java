@@ -137,7 +137,7 @@ final class Class206 implements Interface11 {
                         }
                     }
                 } else bool = true;
-            } else if (!class10.aClass348_Sub16_Sub5_176.method2712((byte) 4)) bool = true;
+            } else if (!class10.aClass348_Sub16_Sub5_176.hasNext((byte) 4)) bool = true;
             if (bool) {
                 Class147.anInt2021--;
                 for (int i_19_ = i_4_; Class147.anInt2021 > i_19_; i_19_++)

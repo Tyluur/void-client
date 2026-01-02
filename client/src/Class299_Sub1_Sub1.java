@@ -21,23 +21,23 @@ final class Class299_Sub1_Sub1 extends Class299_Sub1 {
         if (i != -121) method2256((byte) 33);
         if (aClass258_Sub2_8688 == null) {
             TextureSource var_d = aOpenGLToolkit_8693.textureSource;
-            Class308.anIntArray3883[3] = anInt8690;
-            Class308.anIntArray3883[4] = anInt8686;
-            Class308.anIntArray3883[2] = anInt8691;
-            Class308.anIntArray3883[5] = anInt8697;
-            Class308.anIntArray3883[1] = anInt8695;
-            Class308.anIntArray3883[0] = anInt8689;
+            LRUHashTable.anIntArray3883[3] = anInt8690;
+            LRUHashTable.anIntArray3883[4] = anInt8686;
+            LRUHashTable.anIntArray3883[2] = anInt8691;
+            LRUHashTable.anIntArray3883[5] = anInt8697;
+            LRUHashTable.anIntArray3883[1] = anInt8695;
+            LRUHashTable.anIntArray3883[0] = anInt8689;
             boolean bool = false;
             int i_0_ = 0;
             for (int i_1_ = 0; i_1_ < 6; i_1_++) {
-                if (!var_d.textureReady(i ^ 0x1f68, Class308.anIntArray3883[i_1_])) return null;
-                TextureMetrics textureMetrics = var_d.getMetrics(Class308.anIntArray3883[i_1_], -6662);
+                if (!var_d.textureReady(i ^ 0x1f68, LRUHashTable.anIntArray3883[i_1_])) return null;
+                TextureMetrics textureMetrics = var_d.getMetrics(LRUHashTable.anIntArray3883[i_1_], -6662);
                 int i_2_ = !textureMetrics.aBoolean199 ? 128 : 64;
                 if (i_0_ < i_2_) i_0_ = i_2_;
                 if (textureMetrics.aByte205 > 0) bool = true;
             }
             for (int i_3_ = 0; i_3_ < 6; i_3_++)
-                Class341.anIntArrayArray4233[i_3_] = var_d.rgbPixels(false, Class308.anIntArray3883[i_3_], 1.0F, i_0_, i_0_, i + 192);
+                Class341.anIntArrayArray4233[i_3_] = var_d.rgbPixels(false, LRUHashTable.anIntArray3883[i_3_], 1.0F, i_0_, i_0_, i + 192);
             aClass258_Sub2_8688 = new Class258_Sub2(aOpenGLToolkit_8693, 6407, i_0_, bool, Class341.anIntArrayArray4233);
         }
         return aClass258_Sub2_8688;

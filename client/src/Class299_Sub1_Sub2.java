@@ -191,7 +191,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
 
     static final Sprite method2263(Toolkit var_toolkit, int i, int i_4_) {
         anInt8705++;
-        Class348_Sub15 class348_sub15 = ((Class348_Sub15) Class27.aClass356_389.method3480(i_4_, -6008));
+        Class348_Sub15 class348_sub15 = ((Class348_Sub15) Class27.aHashTable_389.get(i_4_, -6008));
         if (class348_sub15 != null) {
             Class348_Sub23_Sub2 class348_sub23_sub2 = class348_sub15.aClass55_Sub1_6768.method506(false);
             class348_sub15.aBoolean6772 = true;

@@ -11,7 +11,7 @@ final class Class158 implements Interface12 {
     int anInt4931;
     int anInt4932;
     static int anInt4933;
-    static Class356 aClass356_4934 = new Class356(8);
+    static HashTable aHashTable_4934 = new HashTable(8);
     int anInt4935;
     int anInt4936;
     int anInt4937;
@@ -55,7 +55,7 @@ final class Class158 implements Interface12 {
 
     public static void method1249(boolean bool) {
         if (bool != true) method1248(-21);
-        aClass356_4934 = null;
+        aHashTable_4934 = null;
         aClass299_4938 = null;
     }
 

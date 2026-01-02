@@ -182,26 +182,26 @@ abstract class Toolkit {
 
     abstract void method3663();
 
-    static final byte[] method3664(int i, int i_88_) {
+    // method3664
+    static final byte[] getPermutation(int seed, int i_88_) {
         anInt4564++;
-        if (i_88_ <= 21) anInt4583 = 60;
-        Class348_Sub42_Sub3 class348_sub42_sub3 = ((Class348_Sub42_Sub3) Class348_Sub1_Sub2.aClass308_8815.method2302(i, (byte) -120));
-        if (class348_sub42_sub3 == null) {
-            byte[] is = new byte[512];
-            Random random = new Random(i);
-            for (int i_89_ = 0; i_89_ < 255; i_89_++)
-                is[i_89_] = (byte) i_89_;
-            for (int i_90_ = 0; i_90_ < 255; i_90_++) {
-                int i_91_ = -i_90_ + 255;
-                int i_92_ = Mesh.method1097((byte) 95, i_91_, random);
-                byte i_93_ = is[i_92_];
-                is[i_92_] = is[i_91_];
-                is[i_91_] = is[511 + -i_90_] = i_93_;
+        ByteArraySecondaryNode byteArraySecondaryNode = ((ByteArraySecondaryNode) Class348_Sub1_Sub2.permutations.method2302(seed, (byte) -120));
+        if (byteArraySecondaryNode == null) {
+            byte[] permutation = new byte[512];
+            Random random = new Random(seed);
+            for (int i = 0; i < 255; i++)
+                permutation[i] = (byte) i;
+            for (int i = 0; i < 255; i++) {
+                int j = 255 - i;
+                int k = Mesh.method1097((byte) 95, j, random);
+                byte temp = permutation[k];
+                permutation[k] = permutation[j];
+                permutation[j] = permutation[511 + -i] = temp;
             }
-            class348_sub42_sub3 = new Class348_Sub42_Sub3(is);
-            Class348_Sub1_Sub2.aClass308_8815.method2305(i, class348_sub42_sub3, -1);
+            byteArraySecondaryNode = new ByteArraySecondaryNode(permutation);
+            Class348_Sub1_Sub2.permutations.put(seed, byteArraySecondaryNode, -1);
         }
-        return class348_sub42_sub3.aByteArray9499;
+        return byteArraySecondaryNode.value;
     }
 
     abstract Interface3 method3665(int i, int i_94_);

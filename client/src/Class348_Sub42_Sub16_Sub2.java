@@ -11,7 +11,7 @@ final class Class348_Sub42_Sub16_Sub2 extends Class348_Sub42_Sub16 {
     static int anInt10462;
     static int anInt10463 = 0;
     static int anInt10464;
-    static Class356 aClass356_10465 = new Class356(16);
+    static HashTable aHashTable_10465 = new HashTable(16);
 
     static final boolean method3263(boolean bool) {
         if (bool != true) return false;
@@ -20,7 +20,7 @@ final class Class348_Sub42_Sub16_Sub2 extends Class348_Sub42_Sub16 {
     }
 
     public static void method3264(byte i) {
-        aClass356_10465 = null;
+        aHashTable_10465 = null;
         if (i != -24) method3265(-70, null, null);
     }
 
@@ -33,13 +33,13 @@ final class Class348_Sub42_Sub16_Sub2 extends Class348_Sub42_Sub16 {
 
     static final void method3265(int i, Node node, Node node_0_) {
         try {
-            if (node.aNode_4295 != null) node.unlink((byte) 27);
+            if (node.next != null) node.unlink((byte) 27);
             int i_1_ = -109 % ((6 - i) / 43);
             anInt10462++;
-            node.aNode_4295 = node_0_.aNode_4295;
-            node.aNode_4294 = node_0_;
-            node.aNode_4295.aNode_4294 = node;
-            node.aNode_4294.aNode_4295 = node;
+            node.next = node_0_.next;
+            node.prev = node_0_;
+            node.next.prev = node;
+            node.prev.next = node;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qh.K(" + i + ',' + (node != null ? "{...}" : "null") + ',' + (node_0_ != null ? "{...}" : "null") + ')'));
         }

@@ -27,9 +27,9 @@ final class Class50_Sub3 extends Class50 {
 
     static final void method465(int i) {
         if (i != -1636518164) anInt5252 = -40;
-        Class158.aClass356_4934.method3481(0);
+        Class158.aHashTable_4934.clear(0);
         anInt5251++;
-        Class348_Sub42_Sub9_Sub1.aClass356_10442.method3481(0);
+        Class348_Sub42_Sub9_Sub1.aHashTable_10442.clear(0);
     }
 
     static final void method466(boolean bool, String string, int i, byte i_0_, boolean bool_1_, int i_2_, int i_3_, boolean bool_4_, int i_5_, long l, String string_6_, long l_7_, int i_8_) {

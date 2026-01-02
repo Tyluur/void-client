@@ -549,7 +549,7 @@ final class VarcstrTypeList {
                                 Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub3_7222), i_21_);
                                 Class14_Sub2.saveOptions(37);
                                 r.aBoolean9719 = false;
-                                Class348_Sub42_Sub3.method3179(i + 79);
+                                ByteArraySecondaryNode.method3179(i + 79);
                                 if (Class316.clientOptions.aClass239_Sub3_7222.method1727(-32350) == i_21_) {
                                     Applet_Sub1.method94("Successfully changed ortho mode", -82);
                                     break;
@@ -572,7 +572,7 @@ final class VarcstrTypeList {
                             int i_23_ = (Class348_Sub41.parseInt(true, string.substring(1 + string.indexOf(' '))));
                             Class186_Sub1.anInt5812 = Index.anInt666 = i_23_;
                             Applet_Sub1.method94("ortho tile size=" + i_23_, -70);
-                            Class348_Sub42_Sub3.method3179(0);
+                            ByteArraySecondaryNode.method3179(0);
                             break;
                         }
                         if (string.equals("orthocamlock")) {

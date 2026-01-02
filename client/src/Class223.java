@@ -71,7 +71,7 @@ final class Class223 {
                     class348_sub9.anInt6677 = player.anInt10558;
                     class348_sub9.anInt6696 = 256;
                     class348_sub9.aBoolean6674 = player.aBoolean10517;
-                    Class348_Sub42_Sub16_Sub2.aClass356_10465.method3483((byte) 65, player.anInt10290, class348_sub9);
+                    Class348_Sub42_Sub16_Sub2.aHashTable_10465.put((byte) 65, player.anInt10290, class348_sub9);
                 }
             } else {
                 class348_sub9.aClass51_6695 = class51;

@@ -8,7 +8,7 @@ final class Class348_Sub1_Sub2 extends Class348_Sub1 {
     static int anInt8812;
     static int anInt8813;
     static int anInt8814;
-    static Class308 aClass308_8815 = new Class308(16);
+    static LRUHashTable permutations = new LRUHashTable(16);
     static byte[][] aByteArrayArray8816;
     static Class114 aClass114_8817 = new Class114(83, 2);
 
@@ -50,7 +50,7 @@ final class Class348_Sub1_Sub2 extends Class348_Sub1 {
         aByteArrayArray8816 = null;
         if (i != -23) method2730(14, 86, null, -106);
         aDeque_8810 = null;
-        aClass308_8815 = null;
+        permutations = null;
         aClass114_8817 = null;
     }
 

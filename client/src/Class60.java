@@ -8,7 +8,7 @@ final class Class60 {
     private int anInt1086;
     static int anInt1087;
     static int anInt1088;
-    private Class107 aClass107_1089 = new Class107();
+    private SecondaryLinkedList aSecondaryLinkedList_1089 = new SecondaryLinkedList();
     static int anInt1090;
     static int anInt1091;
     static int anInt1092;
@@ -19,7 +19,7 @@ final class Class60 {
     static int anInt1097;
     static Toolkit aToolkit1098;
     static int anInt1099;
-    private final Class356 aClass356_1100;
+    private final HashTable aHashTable_1100;
     static int anInt1101;
     static int anInt1102;
     static int anInt1103;
@@ -27,7 +27,7 @@ final class Class60 {
     final int method575(int i) {
         anInt1101++;
         int i_0_ = i;
-        for (Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass107_1089.method1011(-84); class348_sub42_sub8 != null; class348_sub42_sub8 = ((Class348_Sub42_Sub8) aClass107_1089.method1003((byte) 79))) {
+        for (Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aSecondaryLinkedList_1089.method1011(-84); class348_sub42_sub8 != null; class348_sub42_sub8 = ((Class348_Sub42_Sub8) aSecondaryLinkedList_1089.next((byte) 79))) {
             if (!class348_sub42_sub8.method3195(-4)) i_0_++;
         }
         return i_0_;
@@ -49,18 +49,18 @@ final class Class60 {
         if (i == 2) {
             anInt1093++;
             if (JavaMatrix.aClass246_5675 != null) {
-                for (Class348_Sub42_Sub8 class348_sub42_sub8 = ((Class348_Sub42_Sub8) aClass107_1089.method1011(-59)); class348_sub42_sub8 != null; class348_sub42_sub8 = ((Class348_Sub42_Sub8) aClass107_1089.method1003((byte) 97))) {
+                for (Class348_Sub42_Sub8 class348_sub42_sub8 = ((Class348_Sub42_Sub8) aSecondaryLinkedList_1089.method1011(-59)); class348_sub42_sub8 != null; class348_sub42_sub8 = ((Class348_Sub42_Sub8) aSecondaryLinkedList_1089.next((byte) 97))) {
                     if (!class348_sub42_sub8.method3195(-4)) {
-                        if ((long) i_2_ < ++class348_sub42_sub8.aLong7057) {
+                        if ((long) i_2_ < ++class348_sub42_sub8.linkedKey) {
                             Class348_Sub42_Sub8 class348_sub42_sub8_3_ = JavaMatrix.aClass246_5675.method1888(3, class348_sub42_sub8);
-                            aClass356_1100.method3483((byte) 86, (class348_sub42_sub8.aLong4291), class348_sub42_sub8_3_);
+                            aHashTable_1100.put((byte) 86, (class348_sub42_sub8.key), class348_sub42_sub8_3_);
                             Class59_Sub2_Sub2.method573(class348_sub42_sub8_3_, class348_sub42_sub8, (byte) 63);
                             class348_sub42_sub8.unlink((byte) 116);
-                            class348_sub42_sub8.method3162(true);
+                            class348_sub42_sub8.unlinkSecondary(true);
                         }
                     } else if (class348_sub42_sub8.method3193(100) == null) {
                         class348_sub42_sub8.unlink((byte) 60);
-                        class348_sub42_sub8.method3162(true);
+                        class348_sub42_sub8.unlinkSecondary(true);
                         anInt1086 += (class348_sub42_sub8.anInt9545);
                     }
                 }
@@ -74,14 +74,14 @@ final class Class60 {
 
     final Object method579(int i) {
         anInt1094++;
-        Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass356_1100.method3482(0);
+        Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aHashTable_1100.next(0);
         while (class348_sub42_sub8 != null) {
             Object object = class348_sub42_sub8.method3193(114);
             if (object != null) return object;
             Class348_Sub42_Sub8 class348_sub42_sub8_4_ = class348_sub42_sub8;
-            class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass356_1100.method3482(0);
+            class348_sub42_sub8 = (Class348_Sub42_Sub8) aHashTable_1100.next(0);
             class348_sub42_sub8_4_.unlink((byte) 92);
-            class348_sub42_sub8_4_.method3162(true);
+            class348_sub42_sub8_4_.unlinkSecondary(true);
             anInt1086 += class348_sub42_sub8_4_.anInt9545;
         }
         if (i > -67) aToolkit1098 = null;
@@ -95,14 +95,14 @@ final class Class60 {
             method586(l, 0);
             anInt1086 -= i_5_;
             while (anInt1086 < 0) {
-                Class348_Sub42_Sub8 class348_sub42_sub8 = ((Class348_Sub42_Sub8) aClass107_1089.method1008(i ^ 0x7c8a));
+                Class348_Sub42_Sub8 class348_sub42_sub8 = ((Class348_Sub42_Sub8) aSecondaryLinkedList_1089.removeHead(i ^ 0x7c8a));
                 method585(class348_sub42_sub8, i ^ ~0x7cfa);
             }
             Class348_Sub42_Sub8_Sub2 class348_sub42_sub8_sub2 = new Class348_Sub42_Sub8_Sub2(object, i_5_);
-            aClass356_1100.method3483((byte) 54, l, class348_sub42_sub8_sub2);
+            aHashTable_1100.put((byte) 54, l, class348_sub42_sub8_sub2);
             if (i != 31902) anInt1086 = -106;
-            aClass107_1089.method1005(true, class348_sub42_sub8_sub2);
-            class348_sub42_sub8_sub2.aLong7057 = 0L;
+            aSecondaryLinkedList_1089.addTail(true, class348_sub42_sub8_sub2);
+            class348_sub42_sub8_sub2.linkedKey = 0L;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("jr.E(" + i + ',' + (object != null ? "{...}" : "null") + ',' + l + ',' + i_5_ + ')'));
         }
@@ -128,25 +128,25 @@ final class Class60 {
         try {
             int i_6_ = -59 % ((i - 2) / 47);
             anInt1085++;
-            Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass356_1100.method3480(l, -6008);
+            Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aHashTable_1100.get(l, -6008);
             if (class348_sub42_sub8 == null) return null;
             Object object = class348_sub42_sub8.method3193(86);
             if (object == null) {
                 class348_sub42_sub8.unlink((byte) 102);
-                class348_sub42_sub8.method3162(true);
+                class348_sub42_sub8.unlinkSecondary(true);
                 anInt1086 += class348_sub42_sub8.anInt9545;
                 return null;
             }
             if (class348_sub42_sub8.method3195(-4)) {
                 Class348_Sub42_Sub8_Sub2 class348_sub42_sub8_sub2 = new Class348_Sub42_Sub8_Sub2(object, (class348_sub42_sub8.anInt9545));
-                aClass356_1100.method3483((byte) 90, (class348_sub42_sub8.aLong4291), class348_sub42_sub8_sub2);
-                aClass107_1089.method1005(true, class348_sub42_sub8_sub2);
-                class348_sub42_sub8_sub2.aLong7057 = 0L;
+                aHashTable_1100.put((byte) 90, (class348_sub42_sub8.key), class348_sub42_sub8_sub2);
+                aSecondaryLinkedList_1089.addTail(true, class348_sub42_sub8_sub2);
+                class348_sub42_sub8_sub2.linkedKey = 0L;
                 class348_sub42_sub8.unlink((byte) 112);
-                class348_sub42_sub8.method3162(true);
+                class348_sub42_sub8.unlinkSecondary(true);
             } else {
-                aClass107_1089.method1005(true, class348_sub42_sub8);
-                class348_sub42_sub8.aLong7057 = 0L;
+                aSecondaryLinkedList_1089.addTail(true, class348_sub42_sub8);
+                class348_sub42_sub8.linkedKey = 0L;
             }
             return object;
         } catch (RuntimeException runtimeexception) {
@@ -164,16 +164,16 @@ final class Class60 {
         anInt1102++;
         if (class348_sub42_sub8 != null) {
             class348_sub42_sub8.unlink((byte) 117);
-            class348_sub42_sub8.method3162(true);
+            class348_sub42_sub8.unlinkSecondary(true);
             anInt1086 += class348_sub42_sub8.anInt9545;
         }
     }
 
     private final void method586(long l, int i) {
         try {
-            if (i != 0) aClass107_1089 = null;
+            if (i != 0) aSecondaryLinkedList_1089 = null;
             anInt1090++;
-            Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass356_1100.method3480(l, -6008);
+            Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aHashTable_1100.get(l, -6008);
             method585(class348_sub42_sub8, -57);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "jr.J(" + l + ',' + i + ')');
@@ -182,10 +182,10 @@ final class Class60 {
 
     final void method587(int i) {
         anInt1096++;
-        for (Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass107_1089.method1011(-71); class348_sub42_sub8 != null; class348_sub42_sub8 = ((Class348_Sub42_Sub8) aClass107_1089.method1003((byte) 50))) {
+        for (Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aSecondaryLinkedList_1089.method1011(-71); class348_sub42_sub8 != null; class348_sub42_sub8 = ((Class348_Sub42_Sub8) aSecondaryLinkedList_1089.next((byte) 50))) {
             if (class348_sub42_sub8.method3195(-4)) {
                 class348_sub42_sub8.unlink((byte) 118);
-                class348_sub42_sub8.method3162(true);
+                class348_sub42_sub8.unlinkSecondary(true);
                 anInt1086 += class348_sub42_sub8.anInt9545;
             }
         }
@@ -194,15 +194,15 @@ final class Class60 {
 
     final Object method588(int i) {
         anInt1087++;
-        Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass356_1100.method3484(0);
+        Class348_Sub42_Sub8 class348_sub42_sub8 = (Class348_Sub42_Sub8) aHashTable_1100.head(0);
         if (i != -5052) method577(77);
         while (class348_sub42_sub8 != null) {
             Object object = class348_sub42_sub8.method3193(119);
             if (object == null) {
                 Class348_Sub42_Sub8 class348_sub42_sub8_9_ = class348_sub42_sub8;
-                class348_sub42_sub8 = (Class348_Sub42_Sub8) aClass356_1100.method3482(0);
+                class348_sub42_sub8 = (Class348_Sub42_Sub8) aHashTable_1100.next(0);
                 class348_sub42_sub8_9_.unlink((byte) 41);
-                class348_sub42_sub8_9_.method3162(true);
+                class348_sub42_sub8_9_.unlinkSecondary(true);
                 anInt1086 += (class348_sub42_sub8_9_.anInt9545);
             } else return object;
         }
@@ -215,14 +215,14 @@ final class Class60 {
         if (i != -4) return false;
         if (!class42.aBoolean574) return false;
         if (!class42.method373(Class75.anInterface17_1244, i ^ ~0x2d)) return false;
-        if (Class158.aClass356_4934.method3480(class42.anInt581, i ^ 0x1774) != null) return false;
-        return Class348_Sub42_Sub9_Sub1.aClass356_10442.method3480(class42.anInt596, i + -6004) == null;
+        if (Class158.aHashTable_4934.get(class42.anInt581, i ^ 0x1774) != null) return false;
+        return Class348_Sub42_Sub9_Sub1.aHashTable_10442.get(class42.anInt596, i + -6004) == null;
     }
 
     final void method590(int i) {
         anInt1091++;
-        aClass107_1089.method1009(i + 2110355138);
-        aClass356_1100.method3481(i);
+        aSecondaryLinkedList_1089.clear(i + 2110355138);
+        aHashTable_1100.clear(i);
         anInt1086 = anInt1084;
     }
 
@@ -233,6 +233,6 @@ final class Class60 {
         for (i_11_ = 1; i > i_11_ + i_11_ && i_10_ > i_11_; i_11_ += i_11_) {
             /* empty */
         }
-        aClass356_1100 = new Class356(i_11_);
+        aHashTable_1100 = new HashTable(i_11_);
     }
 }

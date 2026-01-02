@@ -19,7 +19,7 @@ final class TextureOpHorizontalGradient extends TextureOp {
                 if (class46 != null) {
                     if (class46.anInt774 == 0) {
                         if (class46.aClass46Array798 != null) method3097(class46.aClass46Array798, i, 125);
-                        Class348_Sub41 class348_sub41 = ((Class348_Sub41) (Class125.aClass356_4915.method3480(class46.anInt830, -6008)));
+                        Class348_Sub41 class348_sub41 = ((Class348_Sub41) (Class125.aHashTable_4915.get(class46.anInt830, -6008)));
                         if (class348_sub41 != null) Option_Sub12.method1775((byte) -8, (class348_sub41.anInt7050), i);
                     }
                     if (i == 0 && class46.anObjectArray840 != null) {

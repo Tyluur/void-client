@@ -30,7 +30,7 @@ final class Class203 {
         int i_5_ = Class90.regionTileY + i;
         if (Class147.aClass357ArrayArrayArray2029 != null && i_2_ >= 0 && i >= 0 && Class367_Sub4.mapLength > i_2_ && TextureOpBinary.mapWidth > i && (Class316.clientOptions.aClass239_Sub27_7261.method1840(-32350) != 0 || i_3_ == (Class132.aPlayer_1907.plane))) {
             long l = i_5_ << 14 | i_3_ << 28 | i_4_;
-            Class348_Sub37 class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3480(l, -6008));
+            Class348_Sub37 class348_sub37 = ((Class348_Sub37) Class130.aHashTable_1895.get(l, -6008));
             if (class348_sub37 == null) Class282.method2110(i_3_, i_2_, i);
             else {
                 Class348_Sub34 class348_sub34 = (Class348_Sub34) class348_sub37.aDeque_6998.method1995(4);

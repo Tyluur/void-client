@@ -33,7 +33,7 @@ final class Class363 {
 
     static final void method3515(int i) {
         int i_2_ = 52 / ((33 - i) / 40);
-        TextureOp.aClass356_7041.method3481(0);
+        TextureOp.aHashTable_7041.clear(0);
         anInt4464++;
     }
 

@@ -72,10 +72,10 @@ final class Canvas_Sub1 extends Canvas {
         if (i_6_ != -364570972) anInt70 = -4;
         anInt68++;
         long l = i | (!bool ? 0 : -2147483648);
-        Class348_Sub13 class348_sub13 = ((Class348_Sub13) TextureOp.aClass356_7041.method3480(l, -6008));
+        Class348_Sub13 class348_sub13 = ((Class348_Sub13) TextureOp.aHashTable_7041.get(l, -6008));
         if (class348_sub13 == null) {
             class348_sub13 = new Class348_Sub13();
-            TextureOp.aClass356_7041.method3483((byte) 109, l, class348_sub13);
+            TextureOp.aHashTable_7041.put((byte) 109, l, class348_sub13);
         }
         if (class348_sub13.anIntArray6757.length <= i_7_) {
             int[] is = new int[1 + i_7_];
@@ -242,7 +242,7 @@ final class Canvas_Sub1 extends Canvas {
                 if (Class312.anInt3931 != 0) Class44.method385(false, Class338.aClass237_Sub1_4197, Class347.aByteArrayArray4281);
                 else Class348_Sub1_Sub1.method2727((byte) -65, Class338.aClass237_Sub1_4197, (Class347.aByteArrayArray4281));
                 Class108.method1015(Class367_Sub4.mapLength >> 4, (TextureOpBinary.mapWidth >> 4), true);
-                Class348_Sub42_Sub3.method3175((byte) -77);
+                ByteArraySecondaryNode.method3175((byte) -77);
                 if (bool_25_) {
                     Class243.method1879(true);
                     TimedVarDomain.aClass237_Sub1_5067 = new Class237_Sub1(1, Class367_Sub4.mapLength, TextureOpBinary.mapWidth, true);

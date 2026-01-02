@@ -155,9 +155,9 @@ final class Class274 {
         Class5_Sub3.anInt8374++;
         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class348_Sub34.aClass351_6970, Class348_Sub23_Sub2.aClass77_9029, -109);
         Class348_Sub42_Sub14.method3243(37, class348_sub47);
-        for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0); class348_sub41 != null; class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3482(0)) {
-            if (!class348_sub41.method2712((byte) 4)) {
-                class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0);
+        for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aHashTable_4915.head(0); class348_sub41 != null; class348_sub41 = (Class348_Sub41) Class125.aHashTable_4915.next(0)) {
+            if (!class348_sub41.hasNext((byte) 4)) {
+                class348_sub41 = (Class348_Sub41) Class125.aHashTable_4915.head(0);
                 if (class348_sub41 == null) break;
             }
             if (class348_sub41.anInt7053 == 0) Class127_Sub1.method1118(true, bool, class348_sub41, 2533);

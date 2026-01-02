@@ -25,7 +25,7 @@ final class Class24 {
 
     static final void method298(boolean bool, int i, int i_0_, int i_1_, int i_2_) {
         anInt354++;
-        if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 0) Class348_Sub42_Sub3.method3177(-98, false);
+        if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 0) ByteArraySecondaryNode.method3177(-98, false);
         else {
             LoadingScreenManager.anInt1720 = Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350);
             Class367_Sub10.method3553(true, (byte) 103, 0);

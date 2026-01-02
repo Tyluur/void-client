@@ -199,7 +199,7 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
             }
             if (class181.anIntArray2402 != null) {
                 Node node = (class318_sub10.aDeque_6479.aNode_3334);
-                for (Node node_39_ = node.aNode_4294; node_39_ != node; node_39_ = node_39_.aNode_4294) {
+                for (Node node_39_ = node.prev; node_39_ != node; node_39_ = node_39_.prev) {
                     Class348_Sub42_Sub20 class348_sub42_sub20 = (Class348_Sub42_Sub20) node_39_;
                     Class174 class174 = (class348_sub42_sub20.aClass174_9704);
                     if (class174.anInt2296 != 1) {
@@ -311,7 +311,7 @@ final class Class318_Sub9_Sub2_Sub1 extends Class318_Sub9_Sub2 {
                     class181.anIntArray2385 = new int[class181.anIntArray2395.length];
                     for (int i_63_ = 0; i_63_ < class181.anIntArray2395.length; i_63_++) {
                         Class256.method1943(false, (class181.anIntArray2395[i_63_]));
-                        class181.anIntArray2385[i_63_] = ((Class348_Sub35) Class59_Sub2_Sub2.aClass356_8679.method3480(class181.anIntArray2395[i_63_], -6008)).anInt6976;
+                        class181.anIntArray2385[i_63_] = ((Class348_Sub35) Class59_Sub2_Sub2.aHashTable_8679.get(class181.anIntArray2395[i_63_], -6008)).anInt6976;
                     }
                 }
                 for (int i_64_ = 0; i_64_ < class181.anIntArray2385.length; i_64_++) {

@@ -9,7 +9,7 @@ final class ClientScript extends LinkedNode {
     String name;
     Class273 aClass273_9691;
     String[] stringOperands;
-    Class356[] aClass356Array9693;
+    HashTable[] aHashTableArray9693;
     int[] intOperands;
     int stringArgumentCount;
     int[] instructions;

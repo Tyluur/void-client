@@ -79,8 +79,8 @@ final class Class348_Sub18 extends Node {
         SkyBoxTypeList.method821(-126);
         Class318.method2375(16127);
         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-            for (int i_6_ = 0; Class308.aByteArrayArray3882.length > i_6_; i_6_++)
-                Class308.aByteArrayArray3882[i_6_] = null;
+            for (int i_6_ = 0; LRUHashTable.aByteArrayArray3882.length > i_6_; i_6_++)
+                LRUHashTable.aByteArrayArray3882[i_6_] = null;
             Class127_Sub1.anInt8388 = 0;
         }
         Class364.method3517(83);

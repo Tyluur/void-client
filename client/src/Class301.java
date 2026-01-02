@@ -55,7 +55,7 @@ final class Class301 {
 
     static final void method2282(int i) {
         anInt3827++;
-        Class348_Sub42_Sub3.method3177(i ^ 0x315e, false);
+        ByteArraySecondaryNode.method3177(i ^ 0x315e, false);
         if (i == -12648) {
             if (LoadingScreenManager.anInt1720 >= 0 && LoadingScreenManager.anInt1720 != 0) {
                 Class367_Sub10.method3553(false, (byte) 116, LoadingScreenManager.anInt1720);

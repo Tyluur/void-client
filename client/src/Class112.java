@@ -7,7 +7,7 @@ final class Class112 implements Runnable {
     static Class207 aClass207_1727;
     static int anInt1728;
     static int anInt1729;
-    private final Class107 aClass107_1730 = new Class107();
+    private final SecondaryLinkedList aSecondaryLinkedList_1730 = new SecondaryLinkedList();
     static int anInt1731;
     static int anInt1732;
     private Thread aThread1733;
@@ -25,7 +25,7 @@ final class Class112 implements Runnable {
             class348_sub42_sub16_sub2.aByteArray10461 = is;
             class348_sub42_sub16_sub2.aBoolean9663 = false;
             class348_sub42_sub16_sub2.aClass137_10458 = class137;
-            class348_sub42_sub16_sub2.aLong7057 = i_0_;
+            class348_sub42_sub16_sub2.linkedKey = i_0_;
             class348_sub42_sub16_sub2.anInt10457 = 2;
             method1050(class348_sub42_sub16_sub2, i + -123);
             return class348_sub42_sub16_sub2;
@@ -36,19 +36,19 @@ final class Class112 implements Runnable {
 
     private final void method1050(Class348_Sub42_Sub16_Sub2 class348_sub42_sub16_sub2, int i) {
         anInt1735++;
-        synchronized (aClass107_1730) {
-            aClass107_1730.method1005(true, class348_sub42_sub16_sub2);
+        synchronized (aSecondaryLinkedList_1730) {
+            aSecondaryLinkedList_1730.addTail(true, class348_sub42_sub16_sub2);
             this.anInt1734++;
             if (i > -100) aClass207_1727 = null;
-            aClass107_1730.notifyAll();
+            aSecondaryLinkedList_1730.notifyAll();
         }
     }
 
     final void method1051(boolean bool) {
         aBoolean1738 = bool;
         anInt1731++;
-        synchronized (aClass107_1730) {
-            aClass107_1730.notifyAll();
+        synchronized (aSecondaryLinkedList_1730) {
+            aSecondaryLinkedList_1730.notifyAll();
         }
         try {
             aThread1733.join();
@@ -84,9 +84,9 @@ final class Class112 implements Runnable {
                     }
                     if (i_9_ != -1) {
                         int i_13_ = 0;
-                        Class156 class156 = new Class156(Class233.aClass107_3022);
+                        Class156 class156 = new Class156(Class233.aSecondaryLinkedList_3022);
                         for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) class156.method1240(110)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) class156.method1243((byte) 77))) {
-                            if (i_9_ == i_13_++) return ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063).anInt9609;
+                            if (i_9_ == i_13_++) return ((Class348_Sub42_Sub12) class348_sub42_sub13.aSecondaryLinkedList_9621.nextPrevious.secondaryNext).anInt9609;
                         }
                     }
                 } else if (Class242.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 < i_2_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252) > i_2_) {
@@ -102,7 +102,7 @@ final class Class112 implements Runnable {
                     }
                     if (i_4_ != -1) {
                         int i_8_ = 0;
-                        Class156 class156 = new Class156(Class242.aClass348_Sub42_Sub13_3152.aClass107_9621);
+                        Class156 class156 = new Class156(Class242.aClass348_Sub42_Sub13_3152.aSecondaryLinkedList_9621);
                         for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) class156.method1240(9)); class348_sub42_sub12 != null; class348_sub42_sub12 = ((Class348_Sub42_Sub12) class156.method1243((byte) 90))) {
                             if (i_8_++ == i_4_) return (class348_sub42_sub12.anInt9609);
                         }
@@ -137,7 +137,7 @@ final class Class112 implements Runnable {
         if (i_19_ != -112) return null;
         class348_sub42_sub16_sub2.aBoolean9663 = false;
         class348_sub42_sub16_sub2.anInt10457 = 3;
-        class348_sub42_sub16_sub2.aLong7057 = i;
+        class348_sub42_sub16_sub2.linkedKey = i;
         class348_sub42_sub16_sub2.aClass137_10458 = class137;
         method1050(class348_sub42_sub16_sub2, -101);
         return class348_sub42_sub16_sub2;
@@ -146,11 +146,11 @@ final class Class112 implements Runnable {
     public final void run() {
         while (!aBoolean1738) {
             Class348_Sub42_Sub16_Sub2 class348_sub42_sub16_sub2;
-            synchronized (aClass107_1730) {
-                class348_sub42_sub16_sub2 = ((Class348_Sub42_Sub16_Sub2) aClass107_1730.method1008(20));
+            synchronized (aSecondaryLinkedList_1730) {
+                class348_sub42_sub16_sub2 = ((Class348_Sub42_Sub16_Sub2) aSecondaryLinkedList_1730.removeHead(20));
                 if (class348_sub42_sub16_sub2 == null) {
                     try {
-                        aClass107_1730.wait();
+                        aSecondaryLinkedList_1730.wait();
                     } catch (InterruptedException interruptedexception) {
                         /* empty */
                     }
@@ -159,8 +159,8 @@ final class Class112 implements Runnable {
             }
             try {
                 if ((class348_sub42_sub16_sub2.anInt10457) != 2) {
-                    if (class348_sub42_sub16_sub2.anInt10457 == 3) class348_sub42_sub16_sub2.aByteArray10461 = (class348_sub42_sub16_sub2.aClass137_10458.method1161((byte) -4, (int) class348_sub42_sub16_sub2.aLong7057));
-                } else class348_sub42_sub16_sub2.aClass137_10458.method1160(class348_sub42_sub16_sub2.aByteArray10461.length, (int) (class348_sub42_sub16_sub2.aLong7057), class348_sub42_sub16_sub2.aByteArray10461, -7305);
+                    if (class348_sub42_sub16_sub2.anInt10457 == 3) class348_sub42_sub16_sub2.aByteArray10461 = (class348_sub42_sub16_sub2.aClass137_10458.method1161((byte) -4, (int) class348_sub42_sub16_sub2.linkedKey));
+                } else class348_sub42_sub16_sub2.aClass137_10458.method1160(class348_sub42_sub16_sub2.aByteArray10461.length, (int) (class348_sub42_sub16_sub2.linkedKey), class348_sub42_sub16_sub2.aByteArray10461, -7305);
             } catch (Exception exception) {
                 Class156.method1242(null, exception, 15004);
             }
@@ -174,9 +174,9 @@ final class Class112 implements Runnable {
         anInt1737++;
         Class348_Sub42_Sub16_Sub2 class348_sub42_sub16_sub2 = new Class348_Sub42_Sub16_Sub2();
         class348_sub42_sub16_sub2.anInt10457 = 1;
-        synchronized (aClass107_1730) {
-            for (Class348_Sub42_Sub16_Sub2 class348_sub42_sub16_sub2_21_ = ((Class348_Sub42_Sub16_Sub2) aClass107_1730.method1011(-95)); class348_sub42_sub16_sub2_21_ != null; class348_sub42_sub16_sub2_21_ = ((Class348_Sub42_Sub16_Sub2) aClass107_1730.method1003((byte) 73))) {
-                if ((class348_sub42_sub16_sub2_21_.aLong7057 == (long) i) && (class348_sub42_sub16_sub2_21_.aClass137_10458 == class137) && class348_sub42_sub16_sub2_21_.anInt10457 == 2) {
+        synchronized (aSecondaryLinkedList_1730) {
+            for (Class348_Sub42_Sub16_Sub2 class348_sub42_sub16_sub2_21_ = ((Class348_Sub42_Sub16_Sub2) aSecondaryLinkedList_1730.method1011(-95)); class348_sub42_sub16_sub2_21_ != null; class348_sub42_sub16_sub2_21_ = ((Class348_Sub42_Sub16_Sub2) aSecondaryLinkedList_1730.next((byte) 73))) {
+                if ((class348_sub42_sub16_sub2_21_.linkedKey == (long) i) && (class348_sub42_sub16_sub2_21_.aClass137_10458 == class137) && class348_sub42_sub16_sub2_21_.anInt10457 == 2) {
                     class348_sub42_sub16_sub2.aByteArray10461 = class348_sub42_sub16_sub2_21_.aByteArray10461;
                     class348_sub42_sub16_sub2.aBoolean9664 = false;
                     return class348_sub42_sub16_sub2;

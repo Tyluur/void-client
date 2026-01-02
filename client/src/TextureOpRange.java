@@ -9,7 +9,7 @@ final class TextureOpRange extends TextureOp {
     static int anInt9177;
     static int anInt9178;
     static int anInt9179;
-    static Class308 aClass308_9180;
+    static LRUHashTable aLRUHashTable_9180;
     static boolean aBoolean9181 = false;
     private int anInt9182;
     static int[] anIntArray9183;
@@ -77,7 +77,7 @@ final class TextureOpRange extends TextureOp {
 
     public static void method3074(int i) {
         anIntArray9183 = null;
-        aClass308_9180 = null;
+        aLRUHashTable_9180 = null;
         if (i != 0) anIntArray9183 = null;
     }
 
@@ -88,7 +88,7 @@ final class TextureOpRange extends TextureOp {
     }
 
     static {
-        aClass308_9180 = new Class308(64);
+        aLRUHashTable_9180 = new LRUHashTable(64);
         anIntArray9183 = new int[4];
         aBoolean9184 = false;
     }

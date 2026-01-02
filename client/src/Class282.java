@@ -6,7 +6,7 @@ final class Class282 {
     static int anInt3651;
     static boolean aBoolean3652;
     static int anInt3653;
-    static Class356 aClass356_3654;
+    static HashTable aHashTable_3654;
     static int anInt3655 = 0;
 
     static final void method2109(int i) {
@@ -21,7 +21,7 @@ final class Class282 {
             } else if ((class318_sub1_sub3_sub5.anInt10411) <= Class367_Sub11.anInt7396) {
                 class318_sub1_sub3_sub5.method2474((byte) 121);
                 if ((class318_sub1_sub3_sub5.anInt10412) > 0) {
-                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) (aClass356_3654.method3480(-1 + class318_sub1_sub3_sub5.anInt10412, -6008)));
+                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) (aHashTable_3654.get(-1 + class318_sub1_sub3_sub5.anInt10412, -6008)));
                     if (class348_sub22 != null) {
                         Npc npc = (class348_sub22.aNpc_6859);
                         if ((npc.x) >= 0 && (Class367_Sub4.mapLength * 512 > npc.x) && (npc.y) >= 0 && (512 * TextureOpBinary.mapWidth > npc.y))
@@ -52,7 +52,7 @@ final class Class282 {
     }
 
     public static void method2111(byte i) {
-        aClass356_3654 = null;
+        aHashTable_3654 = null;
         if (i <= 56) method2111((byte) -49);
     }
 
@@ -63,6 +63,6 @@ final class Class282 {
     }
 
     static {
-        aClass356_3654 = new Class356(64);
+        aHashTable_3654 = new HashTable(64);
     }
 }

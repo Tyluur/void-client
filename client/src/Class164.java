@@ -74,7 +74,7 @@ final class Class164 {
                     Class182.loadingScreens[i_4_] = new Class195(Class186_Sub1.loadingScreenManager.get(is[i_4_], (byte) 102), opFactory);
             }
         }
-        if (Class348_Sub42_Sub15.state == LoadState.INIT_FONT_INFO) Class348_Sub42_Sub3.initFontTypeList(Class104.FONT_INDEX, -81, Class5_Sub1.method184(1084489728), Class286_Sub7.LOADING_SPRITES);
+        if (Class348_Sub42_Sub15.state == LoadState.INIT_FONT_INFO) ByteArraySecondaryNode.initFontTypeList(Class104.FONT_INDEX, -81, Class5_Sub1.method184(1084489728), Class286_Sub7.LOADING_SPRITES);
         if (LoadState.LOAD_FONTS == Class348_Sub42_Sub15.state) {
             int i_5_ = Class348_Sub50.method3420(0);
             int i_6_ = Class348_Sub42_Sub16.method3256(2);
@@ -137,7 +137,7 @@ final class Class164 {
                 return ((percentage + -FloorOverlayTypeList.anInt3435) * 100 / (-FloorOverlayTypeList.anInt3435 + 100));
             }
             Class286_Sub5.getJs5Indexes((byte) -109, Class21.SPRITES);
-            Class348_Sub42_Sub3.initFontTypeList(Class104.FONT_INDEX, -124, Class5_Sub1.method184(i ^ ~0x40a46ff3), Class21.SPRITES);
+            ByteArraySecondaryNode.initFontTypeList(Class104.FONT_INDEX, -124, Class5_Sub1.method184(i ^ ~0x40a46ff3), Class21.SPRITES);
         }
         if (LoadState.PLAY_THEME_MUSIC == Class348_Sub42_Sub15.state) {
             if (Class345.anInt4270 == -1) Class345.anInt4270 = Class59_Sub2_Sub1.MUSIC.method417("scape main", 0);

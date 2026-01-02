@@ -14,7 +14,7 @@ final class Class321 {
     private int[] anIntArray4003;
     private int[] questRequirements;
     static int anInt4005 = -1;
-    private Class356 parameters;
+    private HashTable parameters;
     private int[] anIntArray4007;
     private int[] pathStart;
     private int[] anIntArray4009;
@@ -113,7 +113,7 @@ final class Class321 {
                                 int i_9_ = packet.readUnsignedByte(255);
                                 if (parameters == null) {
                                     int i_10_ = (EnumTypeList.method340(i_9_, (byte) 108));
-                                    parameters = new Class356(i_10_);
+                                    parameters = new HashTable(i_10_);
                                 }
                                 for (int i_11_ = 0; i_9_ > i_11_; i_11_++) {
                                     boolean bool = (packet.readUnsignedByte(255) == 1);
@@ -121,7 +121,7 @@ final class Class321 {
                                     Node node;
                                     if (!bool) node = (new Class348_Sub35(packet.readInt((byte) -126)));
                                     else node = (new Class348_Sub50(packet.readString((byte) -98)));
-                                    parameters.method3483((byte) 123, i_12_, node);
+                                    parameters.put((byte) 123, i_12_, node);
                                 }
                             }
                         } else packet.readInt((byte) -126);

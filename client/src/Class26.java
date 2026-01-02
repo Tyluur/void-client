@@ -4,14 +4,14 @@
 
 final class Class26 {
     static int anInt373;
-    private final Class356 aClass356_374 = new Class356(256);
+    private final HashTable aHashTable_374 = new HashTable(256);
     static int anInt375;
     static int anInt376;
     private final Index aIndex_377;
     static int anInt378;
     private final Index aIndex_379;
     static int anInt380;
-    private final Class356 aClass356_381 = new Class356(256);
+    private final HashTable aHashTable_381 = new HashTable(256);
     static Class364 aClass364_382 = new Class364("WTQA", 2);
     static int anInt383;
     static boolean aBoolean384 = false;
@@ -28,14 +28,14 @@ final class Class26 {
         int i_2_ = i ^ (i_1_ >>> 12 | i_1_ << 4 & 0xfff1);
         i_2_ |= i_1_ << 16;
         long l = i_2_;
-        Class348_Sub19_Sub1 class348_sub19_sub1 = (Class348_Sub19_Sub1) aClass356_381.method3480(l, -6008);
+        Class348_Sub19_Sub1 class348_sub19_sub1 = (Class348_Sub19_Sub1) aHashTable_381.get(l, -6008);
         if (class348_sub19_sub1 != null) return class348_sub19_sub1;
         if (is != null && is[0] <= 0) return null;
         Class317 class317 = Class317.method2372(aIndex_379, i_1_, i);
         if (i_0_ < 50) method311((byte) -60, 'n');
         if (class317 == null) return null;
         class348_sub19_sub1 = class317.method2369();
-        aClass356_381.method3483((byte) 32, l, class348_sub19_sub1);
+        aHashTable_381.put((byte) 32, l, class348_sub19_sub1);
         if (is != null) is[0] -= (class348_sub19_sub1.aByteArray8984).length;
         return class348_sub19_sub1;
     }
@@ -61,19 +61,19 @@ final class Class26 {
         i_7_ |= i_5_ << 16;
         int i_8_ = -113 / ((i_6_ - 16) / 34);
         long l = (long) i_7_ ^ 0x100000000L;
-        Class348_Sub19_Sub1 class348_sub19_sub1 = (Class348_Sub19_Sub1) aClass356_381.method3480(l, -6008);
+        Class348_Sub19_Sub1 class348_sub19_sub1 = (Class348_Sub19_Sub1) aHashTable_381.get(l, -6008);
         if (class348_sub19_sub1 != null) return class348_sub19_sub1;
         if (is != null && is[0] <= 0) return null;
-        Class348_Sub10 class348_sub10 = (Class348_Sub10) aClass356_374.method3480(l, -6008);
+        Class348_Sub10 class348_sub10 = (Class348_Sub10) aHashTable_374.get(l, -6008);
         if (class348_sub10 == null) {
             class348_sub10 = Class348_Sub10.method2795(aIndex_377, i_5_, i);
             if (class348_sub10 == null) return null;
-            aClass356_374.method3483((byte) 108, l, class348_sub10);
+            aHashTable_374.put((byte) 108, l, class348_sub10);
         }
         class348_sub19_sub1 = class348_sub10.method2791(is);
         if (class348_sub19_sub1 == null) return null;
         class348_sub10.unlink((byte) 27);
-        aClass356_381.method3483((byte) 117, l, class348_sub19_sub1);
+        aHashTable_381.put((byte) 117, l, class348_sub19_sub1);
         return class348_sub19_sub1;
     }
 

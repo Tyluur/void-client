@@ -33,16 +33,16 @@ final class Class242 {
     static final void method1868(byte i, Class348_Sub42_Sub13 class348_sub42_sub13) {
         int i_0_ = -104 / ((i - 38) / 54);
         anInt3154++;
-        class348_sub42_sub13.method3162(true);
+        class348_sub42_sub13.unlinkSecondary(true);
         boolean bool = false;
-        for (Class348_Sub42_Sub13 class348_sub42_sub13_1_ = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-85)); class348_sub42_sub13_1_ != null; class348_sub42_sub13_1_ = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 84))) {
+        for (Class348_Sub42_Sub13 class348_sub42_sub13_1_ = ((Class348_Sub42_Sub13) Class233.aSecondaryLinkedList_3022.method1011(-85)); class348_sub42_sub13_1_ != null; class348_sub42_sub13_1_ = ((Class348_Sub42_Sub13) Class233.aSecondaryLinkedList_3022.next((byte) 84))) {
             if (Class318_Sub2.method2496(class348_sub42_sub13_1_.method3235(-17937), class348_sub42_sub13.method3235(-17937), true)) {
                 Class69.method721(class348_sub42_sub13_1_, class348_sub42_sub13, -1);
                 bool = true;
                 break;
             }
         }
-        if (!bool) Class233.aClass107_3022.method1005(true, class348_sub42_sub13);
+        if (!bool) Class233.aSecondaryLinkedList_3022.addTail(true, class348_sub42_sub13);
     }
 
     Class242(OpenGLToolkit var_openGLToolkit, long l, int i) {

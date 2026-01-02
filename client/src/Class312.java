@@ -17,13 +17,13 @@ final class Class312 {
 
     final Node method2327(byte i) {
         anInt3929++;
-        Node node = (aDeque_3923.aNode_3334.aNode_4294);
+        Node node = (aDeque_3923.aNode_3334.prev);
         if (i != -53) method2329(-21);
         if (aDeque_3923.aNode_3334 == node) {
             aNode_3922 = null;
             return null;
         }
-        aNode_3922 = node.aNode_4294;
+        aNode_3922 = node.prev;
         return node;
     }
 
@@ -41,7 +41,7 @@ final class Class312 {
             aNode_3922 = null;
             return null;
         }
-        aNode_3922 = node.aNode_4294;
+        aNode_3922 = node.prev;
         return node;
     }
 

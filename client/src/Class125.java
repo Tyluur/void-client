@@ -5,7 +5,7 @@
 final class Class125 implements Interface12 {
     int anInt4913;
     boolean aBoolean4914;
-    static Class356 aClass356_4915;
+    static HashTable aHashTable_4915;
     static int anInt4916;
     int anInt4917;
     int anInt4918;
@@ -25,7 +25,7 @@ final class Class125 implements Interface12 {
     public static void method1109(byte i) {
         aClass323_4921 = null;
         if (i != -22) method1111(127, -73, -7, -77, -85, 79);
-        aClass356_4915 = null;
+        aHashTable_4915 = null;
     }
 
     public final Class223 method51(byte i) {
@@ -75,6 +75,6 @@ final class Class125 implements Interface12 {
     }
 
     static {
-        aClass356_4915 = new Class356(8);
+        aHashTable_4915 = new HashTable(8);
     }
 }

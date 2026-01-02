@@ -50,7 +50,7 @@ final class Class258_Sub4 extends Class258 {
         anInt8559++;
         int i_4_ = -43 / ((-65 - i) / 55);
         long l = i_3_ | (bool ? -2147483648 : 0);
-        return ((Class348_Sub13) TextureOp.aClass356_7041.method3480(l, -6008));
+        return ((Class348_Sub13) TextureOp.aHashTable_7041.get(l, -6008));
     }
 
     static {

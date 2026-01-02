@@ -2,9 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub42_Sub3 extends LinkedNode {
+// Class348_Sub42_Sub3
+final class ByteArraySecondaryNode extends LinkedNode {
     static boolean aBoolean9498;
-    byte[] aByteArray9499;
+    byte[] value;
     static int anInt9500;
     static int anInt9501;
     static short[] aShortArray9502;
@@ -83,8 +84,8 @@ final class Class348_Sub42_Sub3 extends LinkedNode {
         Class130_Sub1.method1131(117);
     }
 
-    Class348_Sub42_Sub3(byte[] is) {
-        this.aByteArray9499 = is;
+    ByteArraySecondaryNode(byte[] is) {
+        this.value = is;
     }
 
     public static void method3176(boolean bool) {

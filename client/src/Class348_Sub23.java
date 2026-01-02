@@ -128,7 +128,7 @@ abstract class Class348_Sub23 extends Node {
         r.aBoolean9719 = false;
         Class228.aClass57Array2974 = null;
         RuntimeException_Sub1.aBoolean4604 = true;
-        Class348_Sub42_Sub3.method3179(i_1_);
+        ByteArraySecondaryNode.method3179(i_1_);
     }
 
     Class348_Sub23(OggStreamState oggstreamstate) {

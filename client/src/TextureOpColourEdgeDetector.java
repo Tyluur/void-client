@@ -32,7 +32,7 @@ final class TextureOpColourEdgeDetector extends TextureOp {
         if (i != 11) anIntArray9436 = null;
         for (int i_2_ = 0; i_2_ < 4; i_2_++)
             Class348_Sub45.collisionMaps[i_2_].method3500(700);
-        Class348_Sub42_Sub3.method3177(-50, false);
+        ByteArraySecondaryNode.method3177(-50, false);
         System.gc();
         JavaSurface.method3007(2, 22684);
         Class74.aBoolean1236 = false;
@@ -50,9 +50,9 @@ final class TextureOpColourEdgeDetector extends TextureOp {
         for (int i_4_ = 0; i_4_ < 2048; i_4_++)
             Class294.aPlayerArray5058[i_4_] = null;
         IDKTypeList.anInt2057 = 0;
-        Class282.aClass356_3654.method3481(i ^ 0xb);
+        Class282.aHashTable_3654.clear(i ^ 0xb);
         Class348_Sub32.anInt6930 = 0;
-        Class130.aClass356_1895.method3481(0);
+        Class130.aHashTable_1895.clear(0);
         Class128.method1122(0);
         Class135_Sub1.anInt4718 = 0;
         Class318_Sub1_Sub3_Sub3.timedVarDomain.method1314((byte) -107);

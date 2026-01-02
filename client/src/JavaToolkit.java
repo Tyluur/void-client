@@ -8,7 +8,7 @@ import java.awt.*;
 final class JavaToolkit extends Toolkit {
     private int canvasWidth;
     private int anInt7466;
-    private Class356 aClass356_7467;
+    private HashTable aHashTable_7467;
     private Canvas aCanvas7468;
     JavaSurface surface;
     private boolean aBoolean7470 = false;
@@ -753,7 +753,7 @@ final class JavaToolkit extends Toolkit {
 
     final void method3701(Canvas canvas) {
         if (aCanvas7468 == canvas) method3677(null);
-        JavaSurface javaSurface = ((JavaSurface) aClass356_7467.method3480(canvas.hashCode(), -6008));
+        JavaSurface javaSurface = ((JavaSurface) aHashTable_7467.get(canvas.hashCode(), -6008));
         if (javaSurface != null) javaSurface.unlink((byte) 100);
     }
 
@@ -777,10 +777,10 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void method3643(Canvas canvas, int i, int i_232_) {
-        JavaSurface javaSurface = ((JavaSurface) aClass356_7467.method3480(canvas.hashCode(), -6008));
+        JavaSurface javaSurface = ((JavaSurface) aHashTable_7467.get(canvas.hashCode(), -6008));
         if (javaSurface == null) {
             javaSurface = Class110.method1035(9029, i_232_, canvas, i);
-            aClass356_7467.method3483((byte) 21, canvas.hashCode(), javaSurface);
+            aHashTable_7467.put((byte) 21, canvas.hashCode(), javaSurface);
         } else if (javaSurface.width != i || javaSurface.height != i_232_) method3669(canvas, i, i_232_);
     }
 
@@ -1215,7 +1215,7 @@ final class JavaToolkit extends Toolkit {
         aCanvas7468 = null;
         canvasWidth = 0;
         canvasHeight = 0;
-        aClass356_7467 = null;
+        aHashTable_7467 = null;
         aBoolean7470 = true;
     }
 
@@ -1415,7 +1415,7 @@ final class JavaToolkit extends Toolkit {
                 method3717();
             }
         } else {
-            JavaSurface javaSurface = ((JavaSurface) aClass356_7467.method3480(canvas.hashCode(), -6008));
+            JavaSurface javaSurface = ((JavaSurface) aHashTable_7467.get(canvas.hashCode(), -6008));
             if (javaSurface != null) {
                 aCanvas7468 = canvas;
                 Dimension dimension = canvas.getSize();
@@ -1948,11 +1948,11 @@ final class JavaToolkit extends Toolkit {
     }
 
     final void method3669(Canvas canvas, int i, int i_578_) {
-        JavaSurface javaSurface = ((JavaSurface) aClass356_7467.method3480(canvas.hashCode(), -6008));
+        JavaSurface javaSurface = ((JavaSurface) aHashTable_7467.get(canvas.hashCode(), -6008));
         if (javaSurface != null) {
             javaSurface.unlink((byte) 95);
             javaSurface = Class110.method1035(9029, i_578_, canvas, i);
-            aClass356_7467.method3483((byte) 112, canvas.hashCode(), javaSurface);
+            aHashTable_7467.put((byte) 112, canvas.hashCode(), javaSurface);
             if (aCanvas7468 == canvas && offscreenSurface == null) {
                 Dimension dimension = canvas.getSize();
                 canvasWidth = dimension.width;
@@ -1994,7 +1994,7 @@ final class JavaToolkit extends Toolkit {
 
     private JavaToolkit(TextureSource var_d) {
         super(var_d);
-        aClass356_7467 = new Class356(4);
+        aHashTable_7467 = new HashTable(4);
         this.anInt7474 = 45823;
         aBoolean7489 = false;
         anInt7487 = 0;

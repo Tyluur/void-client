@@ -9,7 +9,7 @@ final class Class348_Sub42_Sub1 extends LinkedNode {
     static float[] aFloatArray9491;
     static int anInt9492 = 0;
     static int anInt9493;
-    private Class356 aClass356_9494;
+    private HashTable aHashTable_9494;
     static boolean[][] aBooleanArrayArray9495;
     static int anInt9496;
     static int anInt9497;
@@ -23,8 +23,8 @@ final class Class348_Sub42_Sub1 extends LinkedNode {
 
     final int method3166(int i, int i_0_, byte i_1_) {
         anInt9490++;
-        if (aClass356_9494 == null) return i_0_;
-        Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass356_9494.method3480(i, -6008);
+        if (aHashTable_9494 == null) return i_0_;
+        Class348_Sub35 class348_sub35 = (Class348_Sub35) aHashTable_9494.get(i, -6008);
         if (i_1_ < 91) return 72;
         if (class348_sub35 == null) return i_0_;
         return class348_sub35.anInt6976;
@@ -35,9 +35,9 @@ final class Class348_Sub42_Sub1 extends LinkedNode {
             anInt9489++;
             if (i == 249) {
                 int i_3_ = packet.readUnsignedByte(255);
-                if (aClass356_9494 == null) {
+                if (aHashTable_9494 == null) {
                     int i_4_ = EnumTypeList.method340(i_3_, (byte) 108);
-                    aClass356_9494 = new Class356(i_4_);
+                    aHashTable_9494 = new HashTable(i_4_);
                 }
                 for (int i_5_ = 0; i_5_ < i_3_; i_5_++) {
                     boolean bool = packet.readUnsignedByte(i_2_ + 341) == 1;
@@ -45,7 +45,7 @@ final class Class348_Sub42_Sub1 extends LinkedNode {
                     Node node;
                     if (bool) node = new Class348_Sub50(packet.readString((byte) -39));
                     else node = new Class348_Sub35(packet.readInt((byte) -126));
-                    aClass356_9494.method3483((byte) 29, i_6_, node);
+                    aHashTable_9494.put((byte) 29, i_6_, node);
                 }
             }
         }
@@ -76,9 +76,9 @@ final class Class348_Sub42_Sub1 extends LinkedNode {
 
     final String method3170(int i, String string, int i_9_) {
         anInt9493++;
-        if (aClass356_9494 == null) return string;
+        if (aHashTable_9494 == null) return string;
         if (i != -250) method3165((byte) 0);
-        Class348_Sub50 class348_sub50 = (Class348_Sub50) aClass356_9494.method3480(i_9_, -6008);
+        Class348_Sub50 class348_sub50 = (Class348_Sub50) aHashTable_9494.get(i_9_, -6008);
         if (class348_sub50 == null) return string;
         return class348_sub50.aString7211;
     }

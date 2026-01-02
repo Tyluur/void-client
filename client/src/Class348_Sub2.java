@@ -4,11 +4,11 @@
 
 final class Class348_Sub2 extends Node {
     byte[] aByteArray6564;
-    Class356 aClass356_6565;
+    HashTable aHashTable_6565;
 
     final void method2733() {
-        if (this.aClass356_6565 == null) {
-            this.aClass356_6565 = new Class356(16);
+        if (this.aHashTable_6565 == null) {
+            this.aHashTable_6565 = new HashTable(16);
             int[] is = new int[16];
             int[] is_0_ = new int[16];
             is[9] = is_0_[9] = 128;
@@ -51,10 +51,10 @@ final class Class348_Sub2 extends Node {
                         int i_13_ = i_4_ >> 16 & 0x7f;
                         if (i_13_ > 0) {
                             int i_14_ = is_0_[i_11_];
-                            Class348_Sub8 class348_sub8 = ((Class348_Sub8) this.aClass356_6565.method3480(i_14_, -6008));
+                            Class348_Sub8 class348_sub8 = ((Class348_Sub8) this.aHashTable_6565.get(i_14_, -6008));
                             if (class348_sub8 == null) {
                                 class348_sub8 = new Class348_Sub8(new byte[128]);
-                                this.aClass356_6565.method3483((byte) 21, i_14_, class348_sub8);
+                                this.aHashTable_6565.put((byte) 21, i_14_, class348_sub8);
                             }
                             class348_sub8.aByteArray6657[i_12_] = (byte) 1;
                         }
@@ -73,7 +73,7 @@ final class Class348_Sub2 extends Node {
     }
 
     final void method2735() {
-        this.aClass356_6565 = null;
+        this.aHashTable_6565 = null;
     }
 
     private Class348_Sub2(Packet packet) {

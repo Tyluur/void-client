@@ -27,7 +27,7 @@ final class Class338 {
         Class348_Sub41 class348_sub41 = new Class348_Sub41();
         class348_sub41.anInt7050 = i;
         class348_sub41.anInt7053 = i_1_;
-        Class125.aClass356_4915.method3483((byte) 109, i_0_, class348_sub41);
+        Class125.aHashTable_4915.put((byte) 109, i_0_, class348_sub41);
         Class348_Sub7.method2772(i, (byte) 110);
         Class46 class46 = FontRenderer.method2570(i_2_ + 1512932718, i_0_);
         if (class46 != null) Class251.method1916(-9343, class46);

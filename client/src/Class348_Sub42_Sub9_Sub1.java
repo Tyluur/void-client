@@ -6,7 +6,7 @@ final class Class348_Sub42_Sub9_Sub1 extends Class348_Sub42_Sub9 {
     static int anInt10439;
     private final Object anObject10440;
     static int anInt10441;
-    static Class356 aClass356_10442;
+    static HashTable aHashTable_10442;
     static int anInt10443 = 2;
     static int anInt10444;
     static int anInt10445;
@@ -34,7 +34,7 @@ final class Class348_Sub42_Sub9_Sub1 extends Class348_Sub42_Sub9 {
 
     public static void method3207(byte i) {
         int i_1_ = -126 % ((i - -27) / 61);
-        aClass356_10442 = null;
+        aHashTable_10442 = null;
     }
 
     static final void method3208(Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3, int i, int i_2_) {
@@ -55,6 +55,6 @@ final class Class348_Sub42_Sub9_Sub1 extends Class348_Sub42_Sub9 {
     }
 
     static {
-        aClass356_10442 = new Class356(8);
+        aHashTable_10442 = new HashTable(8);
     }
 }

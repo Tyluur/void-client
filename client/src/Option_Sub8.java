@@ -135,21 +135,21 @@ final class Option_Sub8 extends Option {
     static final void method1752(int i, int i_10_, int i_11_) {
         Class59_Sub1.anInt5283 = i_11_;
         anInt5922++;
-        Class107.anInt1651 = i_10_;
+        SecondaryLinkedList.anInt1651 = i_10_;
         if (i == -1) {
             if (Packet.anInt7207 == 0) {
-                Option_Sub16.anInt6008 = (2 * Class348_Sub42_Sub9_Sub1.anInt10444 + Class107.anInt1651);
+                Option_Sub16.anInt6008 = (2 * Class348_Sub42_Sub9_Sub1.anInt10444 + SecondaryLinkedList.anInt1651);
                 Class348_Sub16_Sub1.anInt8854 = Class211.anInt2747 * 2 + Class59_Sub1.anInt5283;
             } else if (Packet.anInt7207 == 1) {
                 Class31.anInt425 = (Option_Sub12.anInt5965 + Class59_Sub1.anInt5283 / Class58.anInt1067 - -2);
-                Class250.anInt3225 = (Class73.anInt4784 + Class107.anInt1651 / Class344.anInt4267 - -2);
+                Class250.anInt3225 = (Class73.anInt4784 + SecondaryLinkedList.anInt1651 / Class344.anInt4267 - -2);
                 Class348_Sub16_Sub1.anInt8854 = Class58.anInt1067 * Class31.anInt425;
                 Option_Sub16.anInt6008 = Class344.anInt4267 * Class250.anInt3225;
                 Class211.anInt2747 = (-Class59_Sub1.anInt5283 + Class348_Sub16_Sub1.anInt8854 >> 1);
-                Class348_Sub42_Sub9_Sub1.anInt10444 = (Option_Sub16.anInt6008 - Class107.anInt1651 >> 1);
+                Class348_Sub42_Sub9_Sub1.anInt10444 = (Option_Sub16.anInt6008 - SecondaryLinkedList.anInt1651 >> 1);
             } else if (Packet.anInt7207 == 2) {
                 Class348_Sub16_Sub1.anInt8854 = Class59_Sub1.anInt5283;
-                Option_Sub16.anInt6008 = Class107.anInt1651;
+                Option_Sub16.anInt6008 = SecondaryLinkedList.anInt1651;
             }
         }
     }

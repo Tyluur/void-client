@@ -580,7 +580,7 @@ final class Class66 {
                 return;
             }
             if (i == 5213) {
-                Class348_Sub21 class348_sub21 = Class356.method3479(-1);
+                Class348_Sub21 class348_sub21 = HashTable.method3479(-1);
                 if (class348_sub21 == null) {
                     anIntArray1149[anInt1173++] = -1;
                     anIntArray1149[anInt1173++] = -1;
@@ -605,9 +605,9 @@ final class Class66 {
                 anInt1173 -= 2;
                 int i_71_ = anIntArray1149[anInt1173];
                 int i_72_ = anIntArray1149[anInt1173 + 1];
-                Class107 class107 = Class75.method767(i_71_ >> 14 & 0x3fff, i_71_ & 0x3fff);
+                SecondaryLinkedList secondaryLinkedList = Class75.method767(i_71_ >> 14 & 0x3fff, i_71_ & 0x3fff);
                 boolean bool_73_ = false;
-                for (Class348_Sub42_Sub14 class348_sub42_sub14 = (Class348_Sub42_Sub14) class107.method1011(-48); class348_sub42_sub14 != null; class348_sub42_sub14 = ((Class348_Sub42_Sub14) class107.method1003((byte) 113))) {
+                for (Class348_Sub42_Sub14 class348_sub42_sub14 = (Class348_Sub42_Sub14) secondaryLinkedList.method1011(-48); class348_sub42_sub14 != null; class348_sub42_sub14 = ((Class348_Sub42_Sub14) secondaryLinkedList.next((byte) 113))) {
                     if (class348_sub42_sub14.anInt9628 == i_72_) {
                         bool_73_ = true;
                         break;
@@ -730,23 +730,23 @@ final class Class66 {
                 anInt1173 -= 2;
                 int i_86_ = anIntArray1149[anInt1173];
                 boolean bool_87_ = anIntArray1149[anInt1173 + 1] == 1;
-                if (Class348_Sub42_Sub9_Sub1.aClass356_10442 != null) {
-                    Node node = Class348_Sub42_Sub9_Sub1.aClass356_10442.method3480(i_86_, -6008);
+                if (Class348_Sub42_Sub9_Sub1.aHashTable_10442 != null) {
+                    Node node = Class348_Sub42_Sub9_Sub1.aHashTable_10442.get(i_86_, -6008);
                     if (node != null && !bool_87_) node.unlink((byte) 48);
                     else if (node == null && bool_87_) {
                         node = new Node();
-                        Class348_Sub42_Sub9_Sub1.aClass356_10442.method3483((byte) 29, i_86_, node);
+                        Class348_Sub42_Sub9_Sub1.aHashTable_10442.put((byte) 29, i_86_, node);
                     }
                 }
                 return;
             }
             if (i == 5232) {
                 int i_88_ = anIntArray1149[--anInt1173];
-                if (Class348_Sub42_Sub9_Sub1.aClass356_10442 == null) {
+                if (Class348_Sub42_Sub9_Sub1.aHashTable_10442 == null) {
                     anIntArray1149[anInt1173++] = 0;
                     return;
                 } else {
-                    Node node = Class348_Sub42_Sub9_Sub1.aClass356_10442.method3480(i_88_, -6008);
+                    Node node = Class348_Sub42_Sub9_Sub1.aHashTable_10442.get(i_88_, -6008);
                     anIntArray1149[anInt1173++] = node != null ? 1 : 0;
                 }
                 return;
@@ -755,23 +755,23 @@ final class Class66 {
                 anInt1173 -= 2;
                 int i_89_ = anIntArray1149[anInt1173];
                 boolean bool_90_ = anIntArray1149[anInt1173 + 1] == 1;
-                if (Class158.aClass356_4934 != null) {
-                    Node node = Class158.aClass356_4934.method3480(i_89_, -6008);
+                if (Class158.aHashTable_4934 != null) {
+                    Node node = Class158.aHashTable_4934.get(i_89_, -6008);
                     if (node != null && !bool_90_) node.unlink((byte) 83);
                     else if (node == null && bool_90_) {
                         node = new Node();
-                        Class158.aClass356_4934.method3483((byte) 112, i_89_, node);
+                        Class158.aHashTable_4934.put((byte) 112, i_89_, node);
                     }
                 }
                 return;
             }
             if (i == 5234) {
                 int i_91_ = anIntArray1149[--anInt1173];
-                if (Class158.aClass356_4934 == null) {
+                if (Class158.aHashTable_4934 == null) {
                     anIntArray1149[anInt1173++] = 0;
                     return;
                 } else {
-                    Node node = Class158.aClass356_4934.method3480(i_91_, -6008);
+                    Node node = Class158.aHashTable_4934.get(i_91_, -6008);
                     anIntArray1149[anInt1173++] = node != null ? 1 : 0;
                 }
                 return;
@@ -1200,7 +1200,7 @@ final class Class66 {
             }
             if (i == 5602) {
                 if (Class225.anInt2955 == 0) {
-                    Class107.anInt1645 = -2;
+                    SecondaryLinkedList.anInt1645 = -2;
                     MonochromeImageCacheSlot.anInt6634 = -2;
                 }
                 return;
@@ -1280,7 +1280,7 @@ final class Class66 {
                 return;
             }
             if (i == 5617) {
-                anIntArray1149[anInt1173++] = Class107.anInt1645;
+                anIntArray1149[anInt1173++] = SecondaryLinkedList.anInt1645;
                 return;
             }
             if (i == 5618) {
@@ -1578,7 +1578,7 @@ final class Class66 {
                     Class316.clientOptions.update((byte) 74, (Class316.clientOptions.aClass239_Sub3_7222), i_161_);
                     Class14_Sub2.saveOptions(37);
                     r.aBoolean9719 = false;
-                    Class348_Sub42_Sub3.method3179(0);
+                    ByteArraySecondaryNode.method3179(0);
                 }
                 return;
             }
@@ -1766,7 +1766,7 @@ final class Class66 {
                 return;
             }
             if (i == 6203) {
-                Class348_Sub42_Sub3.method3174(0, 0, Class348_Sub1.aClass46_6561.anInt709, false, (byte) 74, Class348_Sub1.aClass46_6561.anInt789);
+                ByteArraySecondaryNode.method3174(0, 0, Class348_Sub1.aClass46_6561.anInt709, false, (byte) 74, Class348_Sub1.aClass46_6561.anInt789);
                 anIntArray1149[anInt1173++] = Class127.anInt4656;
                 anIntArray1149[anInt1173++] = Class280.anInt3643;
                 return;
@@ -1961,7 +1961,7 @@ final class Class66 {
         } else if (i >= 6700) {
             if (i < 6800 && Class11.aClass231_196 == Class288.aClass231_4953) {
                 if (i == 6700) {
-                    int i_174_ = Class125.aClass356_4915.method3474(1);
+                    int i_174_ = Class125.aHashTable_4915.size(1);
                     if (r.anInt9721 != -1) i_174_++;
                     anIntArray1149[anInt1173++] = i_174_;
                     return;
@@ -1975,8 +1975,8 @@ final class Class66 {
                         }
                         i_175_--;
                     }
-                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3484(0));
-                    while (i_175_-- > 0) class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3482(0));
+                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.head(0));
+                    while (i_175_-- > 0) class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.next(0));
                     anIntArray1149[anInt1173++] = class348_sub41.anInt7050;
                     return;
                 }
@@ -3563,7 +3563,7 @@ final class Class66 {
                 }
                 if (i == 2702) {
                     int i_298_ = anIntArray1149[--anInt1173];
-                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3480(i_298_, -6008));
+                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.get(i_298_, -6008));
                     if (class348_sub41 == null) {
                         anIntArray1149[anInt1173++] = 0;
                         return;
@@ -3590,7 +3590,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_301_ = anIntArray1149[anInt1173];
                     int i_302_ = anIntArray1149[anInt1173 + 1];
-                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3480(i_301_, -6008));
+                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.get(i_301_, -6008));
                     if (class348_sub41 != null && (class348_sub41.anInt7050 == i_302_)) anIntArray1149[anInt1173++] = 1;
                     else {
                         anIntArray1149[anInt1173++] = 0;
@@ -3701,7 +3701,7 @@ final class Class66 {
                     anInt1173 -= 2;
                     int i_312_ = anIntArray1149[anInt1173];
                     int i_313_ = anIntArray1149[anInt1173 + 1];
-                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3480(i_312_, -6008));
+                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.get(i_312_, -6008));
                     if (class348_sub41 != null) Class127_Sub1.method1118((class348_sub41.anInt7050 != i_313_), true, class348_sub41, 2533);
                     Class338.method2661(i_313_, i_312_, 3, true, 2);
                     return;
@@ -3709,7 +3709,7 @@ final class Class66 {
                 if (i == 3112) {
                     anInt1173--;
                     int i_314_ = anIntArray1149[anInt1173];
-                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3480(i_314_, -6008));
+                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.get(i_314_, -6008));
                     if (class348_sub41 != null && class348_sub41.anInt7053 == 3) Class127_Sub1.method1118(true, true, class348_sub41, 2533);
                     return;
                 }
@@ -4074,7 +4074,7 @@ final class Class66 {
                 if (i == 3411) {
                     int i_358_ = anIntArray1149[--anInt1173];
                     Class117 class117 = Class348_Sub7.enumTypeList.findEnum(true, i_358_);
-                    anIntArray1149[anInt1173++] = class117.aClass356_1767.method3474(1);
+                    anIntArray1149[anInt1173++] = class117.aHashTable_1767.size(1);
                     return;
                 }
             } else if (i < 3700) {
@@ -5045,8 +5045,8 @@ final class Class66 {
                         Class258_Sub2.aStringArray8532[i_512_] = aStringArray1152[--anInt1170];
                         Class57.method529(i_512_, true);
                     } else if (i_490_ == 51) {
-                        Class356 class356 = (clientScript.aClass356Array9693[is_489_[i_488_]]);
-                        Class348_Sub35 class348_sub35 = ((Class348_Sub35) class356.method3480(anIntArray1149[--anInt1173], -6008));
+                        HashTable hashTable = (clientScript.aHashTableArray9693[is_489_[i_488_]]);
+                        Class348_Sub35 class348_sub35 = ((Class348_Sub35) hashTable.get(anIntArray1149[--anInt1173], -6008));
                         if (class348_sub35 != null) i_488_ += class348_sub35.anInt6976;
                     } else if (i_490_ == 86) {
                         if (anIntArray1149[--anInt1173] == 1) {
@@ -5067,9 +5067,9 @@ final class Class66 {
         } catch (Exception exception) {
             if (clientScript.name == null) {
                 StringBuffer stringbuffer = new StringBuffer(30);
-                stringbuffer.append("CS2: ").append(clientScript.aLong4291).append(" ");
+                stringbuffer.append("CS2: ").append(clientScript.key).append(" ");
                 for (int i_514_ = anInt1154 - 1; i_514_ >= 0; i_514_--)
-                    stringbuffer.append("v: ").append(aClass184Array1168[i_514_].aClientScript_2474.aLong4291).append(" ");
+                    stringbuffer.append("v: ").append(aClass184Array1168[i_514_].aClientScript_2474.key).append(" ");
                 stringbuffer.append("op: ").append(i_490_);
                 Class156.method1242(stringbuffer.toString(), exception, 15004);
             } else {

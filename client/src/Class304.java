@@ -93,10 +93,10 @@ final class Class304 {
         int i_6_ = (Class369.aFontMetrics_4962.width(true, Class274.aClass274_3507.method2063(AnimBase.language, 544)));
         int i_7_;
         if (Class348_Sub42_Sub6.aBoolean9535) {
-            for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-87)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 126))) {
+            for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aSecondaryLinkedList_3022.method1011(-87)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aSecondaryLinkedList_3022.next((byte) 126))) {
                 int i_9_;
                 if (class348_sub42_sub13.anInt9615 != 1) i_9_ = Class289.method2194(-1, class348_sub42_sub13);
-                else i_9_ = (OutputStream_Sub2.method138(((Class348_Sub42_Sub12) (class348_sub42_sub13.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063)), false));
+                else i_9_ = (OutputStream_Sub2.method138(((Class348_Sub42_Sub12) (class348_sub42_sub13.aSecondaryLinkedList_9621.nextPrevious.secondaryNext)), false));
                 if (i_6_ < i_9_) i_6_ = i_9_;
             }
             i_6_ += 8;

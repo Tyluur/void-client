@@ -131,8 +131,8 @@ final class Class348_Sub41 extends Node {
                     }
                 }
                 if (bool_24_) {
-                    Class348_Sub32.anInt6930 = Class282.aClass356_3654.method3474(1);
-                    Class282.aClass356_3654.method3477(3, TextureOpIrregularBricks.aClass348_Sub22Array9319);
+                    Class348_Sub32.anInt6930 = Class282.aHashTable_3654.size(1);
+                    Class282.aHashTable_3654.toArray(3, TextureOpIrregularBricks.aClass348_Sub22Array9319);
                 }
             }
             if (i_15_ > 122) {
@@ -161,10 +161,10 @@ final class Class348_Sub41 extends Node {
                     if (Class312.anInt3931 != 4 && (class348_sub27.anInt6905 < 0 || class348_sub27.anInt6896 < 0 || (class348_sub27.anInt6905 >= Class367_Sub4.mapLength) || (TextureOpBinary.mapWidth <= (class348_sub27.anInt6896)))) class348_sub27.unlink((byte) 101);
                 }
                 if (Class312.anInt3931 != 4) {
-                    for (Class348_Sub37 class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3484(0)); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3482(0))) {
-                        int i_33_ = (int) (0x3fffL & class348_sub37.aLong4291);
+                    for (Class348_Sub37 class348_sub37 = ((Class348_Sub37) Class130.aHashTable_1895.head(0)); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aHashTable_1895.next(0))) {
+                        int i_33_ = (int) (0x3fffL & class348_sub37.key);
                         int i_34_ = -za_Sub2.regionTileX + i_33_;
-                        int i_35_ = (int) (0x3fffL & (class348_sub37.aLong4291 >> 14));
+                        int i_35_ = (int) (0x3fffL & (class348_sub37.key >> 14));
                         int i_36_ = i_35_ + -Class90.regionTileY;
                         if (i_34_ < 0 || i_36_ < 0 || (i_34_ >= Class367_Sub4.mapLength) || i_36_ >= TextureOpBinary.mapWidth) class348_sub37.unlink((byte) 37);
                     }

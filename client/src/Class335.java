@@ -58,9 +58,9 @@ final class Class335 {
             class348_sub9.anInt6687 = ((class348_sub9.aNpc_6691.y) + (class348_sub9.aNpc_6691.method2436((byte) 92) << 8));
             Class238_Sub1.method1708(i_1_, i_3_, i_0_, i_2_, (byte) -78, class348_sub9);
         }
-        Class348_Sub9 class348_sub9 = ((Class348_Sub9) Class348_Sub42_Sub16_Sub2.aClass356_10465.method3484(0));
+        Class348_Sub9 class348_sub9 = ((Class348_Sub9) Class348_Sub42_Sub16_Sub2.aHashTable_10465.head(0));
         int i_6_ = -122 / (-i / 47);
-        for (/**/; class348_sub9 != null; class348_sub9 = ((Class348_Sub9) Class348_Sub42_Sub16_Sub2.aClass356_10465.method3482(0))) {
+        for (/**/; class348_sub9 != null; class348_sub9 = ((Class348_Sub9) Class348_Sub42_Sub16_Sub2.aHashTable_10465.next(0))) {
             int i_7_ = 1;
             Class225 class225 = class348_sub9.aPlayer_6679.method2422((byte) 72);
             if (class348_sub9.aPlayer_6679.anInt10268 != -1 && !class348_sub9.aPlayer_6679.aBoolean10213) {

@@ -52,7 +52,7 @@ final class Class318_Sub10 extends Class318 {
     final void method2530() {
         this.aBoolean6470 = true;
         for (Class348_Sub42_Sub20 class348_sub42_sub20 = ((Class348_Sub42_Sub20) this.aDeque_6479.method1995(4)); class348_sub42_sub20 != null; class348_sub42_sub20 = (Class348_Sub42_Sub20) this.aDeque_6479.method1990((byte) 89)) {
-            if (class348_sub42_sub20.aClass174_9704.anInt2296 == 1) class348_sub42_sub20.method3162(true);
+            if (class348_sub42_sub20.aClass174_9704.anInt2296 == 1) class348_sub42_sub20.unlinkSecondary(true);
         }
         for (int i = 0; i < (this.aClass318_Sub9_Sub2_Sub1Array6475).length; i++) {
             if (this.aClass318_Sub9_Sub2_Sub1Array6475[i] != null) {
@@ -171,8 +171,8 @@ final class Class318_Sub10 extends Class318 {
             if (!bool) {
                 class348_sub42_sub20.unlink((byte) 108);
                 anInt6485--;
-                if (class348_sub42_sub20.method3164((byte) 1)) {
-                    class348_sub42_sub20.method3162(true);
+                if (class348_sub42_sub20.isSecondaryLinked((byte) 1)) {
+                    class348_sub42_sub20.unlinkSecondary(true);
                     Class318_Sub7.anInt6450--;
                 }
             }

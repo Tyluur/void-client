@@ -26,7 +26,7 @@ abstract class Ground {
             anInt4586++;
             Dimension dimension = canvas.getSize();
             Class85.method828((byte) 38, dimension.height, dimension.width);
-            if (Packet.anInt7207 != 1) Class21.aToolkit326.method3669(canvas, Class59_Sub1.anInt5283, Class107.anInt1651);
+            if (Packet.anInt7207 != 1) Class21.aToolkit326.method3669(canvas, Class59_Sub1.anInt5283, SecondaryLinkedList.anInt1651);
             else Class21.aToolkit326.method3669(canvas, Class348_Sub16_Sub1.anInt8854, Option_Sub16.anInt6008);
         }
     }

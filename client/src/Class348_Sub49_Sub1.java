@@ -20,7 +20,7 @@ final class Class348_Sub49_Sub1 extends Packet {
     static final void method3398(boolean bool, byte[][][] is, int i, byte i_0_, int i_1_, int i_2_, boolean bool_3_) {
         int i_4_ = bool ? 1 : 0;
         Class5_Sub1_Sub1.anInt9930 = 0;
-        Class348_Sub42_Sub3.anInt9504 = 0;
+        ByteArraySecondaryNode.anInt9504 = 0;
         Class234.anInt3049++;
         if ((i_2_ & 0x2) == 0) {
             for (Class318_Sub1 class318_sub1 = Node.aClass318_Sub1Array4293[i_4_]; class318_sub1 != null; class318_sub1 = class318_sub1.aClass318_Sub1_6379) {
@@ -34,14 +34,14 @@ final class Class348_Sub49_Sub1 extends Packet {
             for (Class318_Sub1 class318_sub1 = Class250.aClass318_Sub1Array3226[i_4_]; class318_sub1 != null; class318_sub1 = class318_sub1.aClass318_Sub1_6379) {
                 if (!Class348_Sub9.method2778(class318_sub1, bool, is, i, i_0_)) {
                     s_Sub2.method4001(class318_sub1);
-                    if (class318_sub1.anInt6389 != -1) Class291.aClass318_Sub1Array3737[Class348_Sub42_Sub3.anInt9504++] = class318_sub1;
+                    if (class318_sub1.anInt6389 != -1) Class291.aClass318_Sub1Array3737[ByteArraySecondaryNode.anInt9504++] = class318_sub1;
                 }
             }
             for (Class318_Sub1 class318_sub1 = Class115.aClass318_Sub1Array1754[i_4_]; class318_sub1 != null; class318_sub1 = class318_sub1.aClass318_Sub1_6379) {
                 if (!Class348_Sub9.method2778(class318_sub1, bool, is, i, i_0_)) {
                     if (class318_sub1.method2377((byte) 122)) {
                         s_Sub2.method4001(class318_sub1);
-                        if (class318_sub1.anInt6389 != -1) Class291.aClass318_Sub1Array3737[Class348_Sub42_Sub3.anInt9504++] = class318_sub1;
+                        if (class318_sub1.anInt6389 != -1) Class291.aClass318_Sub1Array3737[ByteArraySecondaryNode.anInt9504++] = class318_sub1;
                     } else {
                         s_Sub2.method4001(class318_sub1);
                         if (class318_sub1.anInt6389 != -1) Option_Sub21.aClass318_Sub1Array6066[Class5_Sub1_Sub1.anInt9930++] = class318_sub1;
@@ -53,7 +53,7 @@ final class Class348_Sub49_Sub1 extends Packet {
                     if (!Class348_Sub9.method2778((Class24.aClass318_Sub1_Sub3Array357[i_5_]), bool, is, i, i_0_)) {
                         s_Sub2.method4001(Class24.aClass318_Sub1_Sub3Array357[i_5_]);
                         if ((Class24.aClass318_Sub1_Sub3Array357[i_5_].anInt6389) != -1) {
-                            if (Class24.aClass318_Sub1_Sub3Array357[i_5_].method2377((byte) 122)) Class291.aClass318_Sub1Array3737[Class348_Sub42_Sub3.anInt9504++] = (Class24.aClass318_Sub1_Sub3Array357[i_5_]);
+                            if (Class24.aClass318_Sub1_Sub3Array357[i_5_].method2377((byte) 122)) Class291.aClass318_Sub1Array3737[ByteArraySecondaryNode.anInt9504++] = (Class24.aClass318_Sub1_Sub3Array357[i_5_]);
                             else Option_Sub21.aClass318_Sub1Array6066[Class5_Sub1_Sub1.anInt9930++] = (Class24.aClass318_Sub1_Sub3Array357[i_5_]);
                         }
                     }
@@ -124,9 +124,9 @@ final class Class348_Sub49_Sub1 extends Packet {
                 }
             }
         }
-        if (Class348_Sub42_Sub3.anInt9504 > 0) {
-            Class67.method718(Class291.aClass318_Sub1Array3737, 0, Class348_Sub42_Sub3.anInt9504 - 1);
-            for (int i_22_ = 0; i_22_ < Class348_Sub42_Sub3.anInt9504; i_22_++)
+        if (ByteArraySecondaryNode.anInt9504 > 0) {
+            Class67.method718(Class291.aClass318_Sub1Array3737, 0, ByteArraySecondaryNode.anInt9504 - 1);
+            for (int i_22_ = 0; i_22_ < ByteArraySecondaryNode.anInt9504; i_22_++)
                 Class13.method227(Class291.aClass318_Sub1Array3737[i_22_], true, bool_3_);
         }
     }

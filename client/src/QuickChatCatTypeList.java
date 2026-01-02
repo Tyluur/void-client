@@ -3,7 +3,7 @@
  */
 
 final class QuickChatCatTypeList {
-    static Class356 aClass356_2959 = new Class356(512);
+    static HashTable aHashTable_2959 = new HashTable(512);
     private final Class60 aClass60_2960 = new Class60(64);
     private final Index aIndex_2961;
     static int anInt2962;
@@ -12,8 +12,8 @@ final class QuickChatCatTypeList {
     private Index aIndex_2965;
 
     public static void method1624(int i) {
-        aClass356_2959 = null;
-        if (i != 28962) aClass356_2959 = null;
+        aHashTable_2959 = null;
+        if (i != 28962) aHashTable_2959 = null;
     }
 
     final Class348_Sub42_Sub11 method1625(int i, int i_0_) {

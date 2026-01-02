@@ -70,7 +70,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
             class348_sub42_sub4.unlink((byte) 71);
             anInt8888--;
             anInt8883 = 0;
-            TextureOpRange.aClass308_9180.method2305(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1);
+            TextureOpRange.aLRUHashTable_9180.put(class348_sub42_sub4.method3182(90), class348_sub42_sub4, -1);
         }
     }
 
@@ -89,7 +89,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
             if (method2828(-23076) == null) {
                 if (aBoolean8884) {
                     this.unlink((byte) 23);
-                    TextureOpRange.aClass308_9180.method2303(true);
+                    TextureOpRange.aLRUHashTable_9180.method2303(true);
                 }
             } else {
                 int i_3_ = i - -i_2_;
@@ -167,12 +167,12 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
     final Class348_Sub42_Sub4 method2838(int i, double d, int i_14_) {
         anInt8860++;
         long l = i | anInt8879 << 0;
-        Class348_Sub42_Sub4 class348_sub42_sub4 = ((Class348_Sub42_Sub4) TextureOpRange.aClass308_9180.method2302(l, (byte) -31));
+        Class348_Sub42_Sub4 class348_sub42_sub4 = ((Class348_Sub42_Sub4) TextureOpRange.aLRUHashTable_9180.method2302(l, (byte) -31));
         if (i_14_ != 1401320384) return null;
         if (class348_sub42_sub4 == null) class348_sub42_sub4 = new Class348_Sub42_Sub4(new short[anInt8879][i], d);
         else {
             class348_sub42_sub4.aDouble9512 = d;
-            TextureOpRange.aClass308_9180.method2304(-121, l);
+            TextureOpRange.aLRUHashTable_9180.method2304(-121, l);
         }
         return class348_sub42_sub4;
     }
@@ -185,7 +185,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
                 if (class348_sub42_sub4 == null) {
                     if (aBoolean8884) {
                         this.unlink((byte) 108);
-                        TextureOpRange.aClass308_9180.method2303(true);
+                        TextureOpRange.aLRUHashTable_9180.method2303(true);
                     }
                     break;
                 }

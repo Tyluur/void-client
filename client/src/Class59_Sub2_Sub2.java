@@ -7,7 +7,7 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
     static int anInt8676;
     static int anInt8677;
     static int anInt8678;
-    static Class356 aClass356_8679 = new Class356(16);
+    static HashTable aHashTable_8679 = new HashTable(16);
     static int anInt8680;
     private byte[] aByteArray8681;
     static int anInt8682;
@@ -46,7 +46,7 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
         if (i < 51) method570(-85);
         aClass114_8683 = null;
         anIntArray8684 = null;
-        aClass356_8679 = null;
+        aHashTable_8679 = null;
     }
 
     public Class59_Sub2_Sub2() {
@@ -72,7 +72,7 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
 
     static final String method572(String string, int i) {
         anInt8677++;
-        if (i != 23034) aClass356_8679 = null;
+        if (i != 23034) aHashTable_8679 = null;
         int i_11_ = string.length();
         int i_12_ = 0;
         for (int i_13_ = 0; i_11_ > i_13_; i_13_++) {
@@ -92,13 +92,13 @@ final class Class59_Sub2_Sub2 extends Class59_Sub2 {
 
     static final void method573(LinkedNode linkedNode, LinkedNode linkedNode_15_, byte i) {
         try {
-            if (linkedNode.aLinkedNode_7060 != null) linkedNode.method3162(true);
+            if (linkedNode.secondaryPrevious != null) linkedNode.unlinkSecondary(true);
             anInt8680++;
-            linkedNode.aLinkedNode_7060 = linkedNode_15_;
-            linkedNode.aLinkedNode_7063 = linkedNode_15_.aLinkedNode_7063;
+            linkedNode.secondaryPrevious = linkedNode_15_;
+            linkedNode.secondaryNext = linkedNode_15_.secondaryNext;
             if (i != 63) anInt8685 = 110;
-            linkedNode.aLinkedNode_7060.aLinkedNode_7063 = linkedNode;
-            linkedNode.aLinkedNode_7063.aLinkedNode_7060 = linkedNode;
+            linkedNode.secondaryPrevious.secondaryNext = linkedNode;
+            linkedNode.secondaryNext.secondaryPrevious = linkedNode;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("wd.F(" + (linkedNode != null ? "{...}" : "null") + ',' + (linkedNode_15_ != null ? "{...}" : "null") + ',' + i + ')'));
         }

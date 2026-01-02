@@ -10,7 +10,7 @@ final class ItemDefinition {
     static int anInt2754;
     boolean aBoolean2755;
     private int anInt2756;
-    Class356 aClass356_2757;
+    HashTable aHashTable_2757;
     int anInt2758;
     int anInt2759;
     private int anInt2760;
@@ -163,7 +163,7 @@ final class ItemDefinition {
             anInt2832++;
             anInt2807 = itemDefinition_9_.anInt2807;
             anInt2792 = itemDefinition_9_.anInt2792;
-            this.aClass356_2757 = itemDefinition_9_.aClass356_2757;
+            this.aHashTable_2757 = itemDefinition_9_.aHashTable_2757;
             anInt2805 = itemDefinition_9_.anInt2805;
             this.anInt2827 = itemDefinition_9_.anInt2827;
             this.anInt2787 = itemDefinition_10_.anInt2787;
@@ -193,7 +193,7 @@ final class ItemDefinition {
         anInt2809++;
         int i = this.anInt2815;
         int i_14_ = anInt2804;
-        if (bool_13_ != false) this.aClass356_2757 = null;
+        if (bool_13_ != false) this.aHashTable_2757 = null;
         int i_15_ = anInt2805;
         if (bool) {
             i = this.anInt2788;
@@ -306,9 +306,9 @@ final class ItemDefinition {
     final String method1561(String string, int i, int i_36_) {
         try {
             anInt2751++;
-            if (this.aClass356_2757 == null) return string;
+            if (this.aHashTable_2757 == null) return string;
             if (i_36_ != -1511086397) method1569(25, null);
-            Class348_Sub50 class348_sub50 = ((Class348_Sub50) this.aClass356_2757.method3480(i, i_36_ ^ 0x5a114e4b));
+            Class348_Sub50 class348_sub50 = ((Class348_Sub50) this.aHashTable_2757.get(i, i_36_ ^ 0x5a114e4b));
             if (class348_sub50 == null) return string;
             return class348_sub50.aString7211;
         } catch (RuntimeException runtimeexception) {
@@ -534,9 +534,9 @@ final class ItemDefinition {
                                                                 } else if (i_57_ == 134) this.anInt2784 = packet.readUnsignedByte(255);
                                                                 else if (i_57_ == 249) {
                                                                     int i_64_ = packet.readUnsignedByte(255);
-                                                                    if (this.aClass356_2757 == null) {
+                                                                    if (this.aHashTable_2757 == null) {
                                                                         int i_65_ = EnumTypeList.method340(i_64_, (byte) 108);
-                                                                        this.aClass356_2757 = new Class356(i_65_);
+                                                                        this.aHashTable_2757 = new HashTable(i_65_);
                                                                     }
                                                                     for (int i_66_ = 0; i_66_ < i_64_; i_66_++) {
                                                                         boolean bool = packet.readUnsignedByte(255) == 1;
@@ -544,7 +544,7 @@ final class ItemDefinition {
                                                                         Node node;
                                                                         if (bool) node = new Class348_Sub50(packet.readString((byte) 107));
                                                                         else node = new Class348_Sub35(packet.readInt((byte) -126));
-                                                                        this.aClass356_2757.method3483((byte) 76, i_67_, node);
+                                                                        this.aHashTable_2757.put((byte) 76, i_67_, node);
                                                                     }
                                                                 }
                                                             } else this.anInt2812 = packet.readUnsignedShort(i + 842397940);
@@ -568,8 +568,8 @@ final class ItemDefinition {
 
     final int method1567(int i, int i_70_, int i_71_) {
         anInt2793++;
-        if (this.aClass356_2757 == null) return i;
-        Class348_Sub35 class348_sub35 = ((Class348_Sub35) this.aClass356_2757.method3480(i_71_, -6008));
+        if (this.aHashTable_2757 == null) return i;
+        Class348_Sub35 class348_sub35 = ((Class348_Sub35) this.aHashTable_2757.get(i_71_, -6008));
         if (class348_sub35 == null) return i;
         int i_72_ = 56 % ((-32 - i_70_) / 50);
         return class348_sub35.anInt6976;

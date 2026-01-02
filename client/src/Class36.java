@@ -9,7 +9,7 @@ final class Class36 {
     static int anInt489 = 0;
 
     static final void method354(int i) {
-        Class348_Sub42_Sub3.aBoolean9498 = true;
+        ByteArraySecondaryNode.aBoolean9498 = true;
         if (i != 2) method355(84);
         anInt488++;
     }

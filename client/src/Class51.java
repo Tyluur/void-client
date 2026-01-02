@@ -18,7 +18,7 @@ final class Class51 {
     int anInt878;
     private byte aByte879;
     private int anInt880;
-    private Class356 aClass356_881;
+    private HashTable aHashTable_881;
     private int anInt882;
     int anInt883;
     String aString884;
@@ -118,9 +118,9 @@ final class Class51 {
 
     final String method475(String string, int i, int i_3_) {
         anInt866++;
-        if (aClass356_881 == null) return string;
+        if (aHashTable_881 == null) return string;
         if (i_3_ != -16) return null;
-        Class348_Sub50 class348_sub50 = (Class348_Sub50) aClass356_881.method3480(i, -6008);
+        Class348_Sub50 class348_sub50 = (Class348_Sub50) aHashTable_881.get(i, -6008);
         if (class348_sub50 == null) return string;
         return class348_sub50.aString7211;
     }
@@ -472,9 +472,9 @@ final class Class51 {
                                                                                                                     this.anInt916 = packet.readUnsignedShort(842397944);
                                                                                                                 } else if (i == 249) {
                                                                                                                     int i_42_ = packet.readUnsignedByte(255);
-                                                                                                                    if (aClass356_881 == null) {
+                                                                                                                    if (aHashTable_881 == null) {
                                                                                                                         int i_43_ = EnumTypeList.method340(i_42_, (byte) 108);
-                                                                                                                        aClass356_881 = new Class356(i_43_);
+                                                                                                                        aHashTable_881 = new HashTable(i_43_);
                                                                                                                     }
                                                                                                                     for (int i_44_ = 0; i_44_ < i_42_; i_44_++) {
                                                                                                                         boolean bool = packet.readUnsignedByte(255) == 1;
@@ -482,7 +482,7 @@ final class Class51 {
                                                                                                                         Node node;
                                                                                                                         if (!bool) node = new Class348_Sub35(packet.readInt((byte) -126));
                                                                                                                         else node = new Class348_Sub50(packet.readString((byte) -87));
-                                                                                                                        aClass356_881.method3483((byte) 86, i_45_, node);
+                                                                                                                        aHashTable_881.put((byte) 86, i_45_, node);
                                                                                                                     }
                                                                                                                 }
                                                                                                             } else this.anInt909 = packet.readSmart(-121);
@@ -626,8 +626,8 @@ final class Class51 {
     final int method487(int i, int i_79_, int i_80_) {
         int i_81_ = 81 % ((i_80_ - -53) / 44);
         anInt898++;
-        if (aClass356_881 == null) return i_79_;
-        Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass356_881.method3480(i, -6008);
+        if (aHashTable_881 == null) return i_79_;
+        Class348_Sub35 class348_sub35 = (Class348_Sub35) aHashTable_881.get(i, -6008);
         if (class348_sub35 == null) return i_79_;
         return class348_sub35.anInt6976;
     }

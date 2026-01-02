@@ -24,7 +24,7 @@ final class Class348_Sub42_Sub16_Sub1 extends Class348_Sub42_Sub16 {
     }
 
     static final void method3260(int i) {
-        for (Class348_Sub15 class348_sub15 = (Class348_Sub15) Class27.aClass356_389.method3484(0); class348_sub15 != null; class348_sub15 = (Class348_Sub15) Class27.aClass356_389.method3482(0)) {
+        for (Class348_Sub15 class348_sub15 = (Class348_Sub15) Class27.aHashTable_389.head(0); class348_sub15 != null; class348_sub15 = (Class348_Sub15) Class27.aHashTable_389.next(0)) {
             if (class348_sub15.aClass55_Sub1_6768.method510((byte) -125)) Class64_Sub3.method690((byte) 70, (class348_sub15.anInt6773));
             else {
                 class348_sub15.aClass55_Sub1_6768.method522((byte) -91);

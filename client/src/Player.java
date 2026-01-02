@@ -363,7 +363,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
                 Class302 class302 = Class348_Sub27.aClass302Array6897[i_56_];
                 if (class302 != null && class302.anInt3834 != -1) {
                     if (class302.anInt3840 == 1) {
-                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480(class302.anInt3833, -6008)));
+                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aHashTable_3654.get(class302.anInt3833, -6008)));
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
                             int i_57_ = (-(Class132.aPlayer_1907.x) + npc.x);
@@ -491,14 +491,14 @@ final class Player extends Class318_Sub1_Sub3_Sub3 {
         if (Class55_Sub1.aClass364_5271 != Class8.aClass364_165 && i_75_ < 50) {
             int i_77_;
             for (i_77_ = -i_75_ + 50; Class127_Sub1.anInt8388 < i_77_; Class127_Sub1.anInt8388++)
-                Class308.aByteArrayArray3882[Class127_Sub1.anInt8388] = new byte[102400];
+                LRUHashTable.aByteArrayArray3882[Class127_Sub1.anInt8388] = new byte[102400];
             while (Class127_Sub1.anInt8388 > i_77_) {
                 Class127_Sub1.anInt8388--;
-                Class308.aByteArrayArray3882[Class127_Sub1.anInt8388] = null;
+                LRUHashTable.aByteArrayArray3882[Class127_Sub1.anInt8388] = null;
             }
         } else if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) {
             Class127_Sub1.anInt8388 = 0;
-            Class308.aByteArrayArray3882 = new byte[50][];
+            LRUHashTable.aByteArrayArray3882 = new byte[50][];
         }
         if (model == null) return false;
         this.anInt10207 = model.fa();

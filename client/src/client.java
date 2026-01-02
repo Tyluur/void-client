@@ -124,7 +124,7 @@ public final class client extends Applet_Sub1 {
         Class39.aClass112_520 = new Class112(Class348_Sub23_Sub1.aClass297_8992);
         SystemInfo.aClass248_6601 = new Class248();
         Class348_Sub42_Sub12.method3230(new int[]{20, 260}, new int[]{1000, 100}, 0);
-        if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class308.aByteArrayArray3882 = new byte[50][];
+        if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) LRUHashTable.aByteArrayArray3882 = new byte[50][];
         Class316.clientOptions = Class14_Sub3.method247(24916);
         if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) Class135_Sub2.aClass161_4839.aString2147 = this.getCodeBase().getHost();
         else if (Class315.method2354(Class8.aClass364_165, i ^ ~0x7044)) {
@@ -146,7 +146,7 @@ public final class client extends Applet_Sub1 {
             ItemTypeList.aClass161_3285.anInt2138 = ItemTypeList.aClass161_3285.anInt2143 + 50000;
             TextureOpEmboss.aClass161_9443.anInt2138 = 50000 - -TextureOpEmboss.aClass161_9443.anInt2143;
         }
-        Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172 = new short[256];
+        Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889 = ByteArraySecondaryNode.aShortArray9502 = Class336.aShortArray4172 = new short[256];
         if (Class348_Sub42_Sub8_Sub2.modeGame == Class10.aClass230_186) RuntimeException_Sub1.aBoolean4599 = false;
         if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.modeGame) {
             Class116.shiftClick = true;
@@ -207,8 +207,8 @@ public final class client extends Applet_Sub1 {
         Class157.method1246(-83);
         LinkedNode.method3161(0);
         Node.method2713(0);
-        Class107.method1004((byte) 16);
-        Class356.method3478(false);
+        SecondaryLinkedList.method1004((byte) 16);
+        HashTable.method3478(false);
         Applet_Sub1.method98(i + 32609);
         Class241.method1860((byte) -89);
         Class231.method1641((byte) 85);
@@ -427,7 +427,7 @@ public final class client extends Applet_Sub1 {
         Class181.method1369((byte) 2);
         Class174.method1334((byte) -110);
         Class115.method1061(16711680);
-        Class308.method2306((byte) -90);
+        LRUHashTable.method2306((byte) -90);
         Class103.method948(false);
         Class281.method2107((byte) 77);
         Class282.method2111((byte) 68);
@@ -707,7 +707,7 @@ public final class client extends Applet_Sub1 {
         Class284.method2117(0);
         ColourImageCacheSlot.method2993((byte) 50);
         MonochromeImageCacheSlot.method2768(3);
-        Class348_Sub42_Sub3.method3176(true);
+        ByteArraySecondaryNode.method3176(true);
         Class347.method2707(false);
         Class8.method213((byte) -106);
         Class270.method2043(true);
@@ -781,7 +781,7 @@ public final class client extends Applet_Sub1 {
         for (int i_9_ = 0; i_9_ < i_8_; i_9_++) {
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_9_]]);
-            else class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_9_ - i_7_], -6008)).aNpc_6859);
+            else class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aHashTable_3654.get(Class74.anIntArray1233[i_9_ - i_7_], -6008)).aNpc_6859);
             if (class318_sub1_sub3_sub3.plane == i) {
                 class318_sub1_sub3_sub3.anInt10261 = 0;
                 if ((class318_sub1_sub3_sub3.anInt10285) < 0) class318_sub1_sub3_sub3.aBoolean10309 = false;
@@ -833,7 +833,7 @@ public final class client extends Applet_Sub1 {
     }
 
     static final Class348_Sub44 method105(Class46 class46) {
-        Class348_Sub44 class348_sub44 = (Class348_Sub44) (QuickChatCatTypeList.aClass356_2959.method3480((((long) class46.anInt830 << 32) + (long) class46.anInt704), -6008));
+        Class348_Sub44 class348_sub44 = (Class348_Sub44) (QuickChatCatTypeList.aHashTable_2959.get((((long) class46.anInt830 << 32) + (long) class46.anInt704), -6008));
         if (class348_sub44 != null) return class348_sub44;
         return class46.aClass348_Sub44_748;
     }
@@ -841,7 +841,7 @@ public final class client extends Applet_Sub1 {
     static final void method106() {
         Index.anInt669 = 0;
         for (int i = 0; i < IDKTypeList.anInt2057; i++) {
-            Npc npc = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i], -6008)).aNpc_6859);
+            Npc npc = (((Class348_Sub22) Class282.aHashTable_3654.get(Class74.anIntArray1233[i], -6008)).aNpc_6859);
             if ((npc.aBoolean10309) && npc.method2425(-1) != -1) {
                 int i_20_ = ((npc.method2436((byte) 119) - 1) * 256 + 252);
                 int i_21_ = (npc.x - i_20_) >> 9;
@@ -1459,7 +1459,7 @@ public final class client extends Applet_Sub1 {
                                 }
                                 class46.anInt715 = ParamTypeList.anInt4086;
                             }
-                            if ((Class348_Sub42_Sub3.anInt9501 > class46.anInt726) && (class46.anObjectArray820 != null)) {
+                            if ((ByteArraySecondaryNode.anInt9501 > class46.anInt726) && (class46.anObjectArray820 != null)) {
                                 Class348_Sub36 class348_sub36 = new Class348_Sub36();
                                 class348_sub36.aClass46_6989 = class46;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray820;
@@ -1512,7 +1512,7 @@ public final class client extends Applet_Sub1 {
                         if (class46.anInt774 == 0) {
                             method107(class46s, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_);
                             if (class46.aClass46Array798 != null) method107(class46.aClass46Array798, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_);
-                            Class348_Sub41 class348_sub41 = ((Class348_Sub41) (Class125.aClass356_4915.method3480(class46.anInt830, -6008)));
+                            Class348_Sub41 class348_sub41 = ((Class348_Sub41) (Class125.aHashTable_4915.get(class46.anInt830, -6008)));
                             if (class348_sub41 != null) {
                                 if ((Class348_Sub42_Sub8_Sub2.modeGame == Class10.aClass230_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !Class299_Sub2.aBoolean6327) Class64_Sub2.method661((byte) 105);
                                 Class182.method1373(class348_sub41.anInt7050, i_43_, i_45_, i_47_, i_39_, i_38_, -1391, i_40_, i_48_, i_44_, i_41_, i_46_);
@@ -1576,7 +1576,7 @@ public final class client extends Applet_Sub1 {
         for (int i_93_ = 0; i_93_ < i_92_; i_93_++) {
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_93_ < i) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_93_]]);
-            else class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_93_ - i], -6008)).aNpc_6859);
+            else class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aHashTable_3654.get(Class74.anIntArray1233[i_93_ - i], -6008)).aNpc_6859);
             if (class318_sub1_sub3_sub3.anInt10285 >= 0) {
                 int i_94_ = class318_sub1_sub3_sub3.method2436((byte) 74);
                 if ((i_94_ & 0x1) == 0) {
@@ -1720,8 +1720,8 @@ public final class client extends Applet_Sub1 {
             Class367_Sub11.anInt7396++;
             if (Class367_Sub11.anInt7396 % 1000 == 1) {
                 GregorianCalendar gregoriancalendar = new GregorianCalendar();
-                Class356.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6);
-                OutputStream_Sub1.aRandom93.setSeed(Class356.anInt4383);
+                HashTable.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6);
+                OutputStream_Sub1.aRandom93.setSeed(HashTable.anInt4383);
             }
             if (Class367_Sub11.anInt7396 % 50 == 0) {
                 Class348_Sub48.anInt7134 = Class81.anInt1433;
@@ -1751,7 +1751,7 @@ public final class client extends Applet_Sub1 {
                     } else if (!Class348_Sub42_Sub16_Sub2.method3263(true)) Class316.method2363(-84);
                     else Class367_Sub4.method3543((byte) -89);
                 } else if (i_109_ == 0 && Class253.anInt3246 < 75) {
-                    Class308.anKeyLogArray3884[Class253.anInt3246] = keyLog;
+                    LRUHashTable.anKeyLogArray3884[Class253.anInt3246] = keyLog;
                     Class253.anInt3246++;
                 }
             }
@@ -1826,7 +1826,7 @@ public final class client extends Applet_Sub1 {
             }
         }
         for (int i_115_ = 0; i_115_ < IDKTypeList.anInt2057; i_115_++) {
-            Npc npc = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_115_], -6008)).aNpc_6859);
+            Npc npc = (((Class348_Sub22) Class282.aHashTable_3654.get(Class74.anIntArray1233[i_115_], -6008)).aNpc_6859);
             if (!npc.method2445((byte) -4) || !(npc.aNPCDefinition_10505.method796(Class318_Sub1_Sub3_Sub3.timedVarDomain, 18627))) npc.anInt10285 = -1;
             else {
                 npc.method2409((byte) -118);
@@ -1854,7 +1854,7 @@ public final class client extends Applet_Sub1 {
             Class302 class302 = Class348_Sub27.aClass302Array6897[i_117_];
             if (class302 != null) {
                 if (class302.anInt3840 == 1) {
-                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480(class302.anInt3833, -6008)));
+                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aHashTable_3654.get(class302.anInt3833, -6008)));
                     if (class348_sub22 != null) {
                         Npc npc = (class348_sub22.aNpc_6859);
                         if (npc.anInt10285 >= 0) npc.anInt10285 += 2048;
@@ -2003,7 +2003,7 @@ public final class client extends Applet_Sub1 {
         for (int i_123_ = 0; i_123_ < i_122_ + IDKTypeList.anInt2057; i_123_++) {
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_123_]]);
-            else class318_sub1_sub3_sub3 = ((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_123_ - i_122_], -6008)).aNpc_6859;
+            else class318_sub1_sub3_sub3 = ((Class348_Sub22) Class282.aHashTable_3654.get(Class74.anIntArray1233[i_123_ - i_122_], -6008)).aNpc_6859;
             if (class318_sub1_sub3_sub3.plane == i && (class318_sub1_sub3_sub3.anInt10285) >= 0) {
                 int i_124_ = class318_sub1_sub3_sub3.method2436((byte) 114);
                 if ((i_124_ & 0x1) == 0) {

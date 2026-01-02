@@ -135,7 +135,7 @@ final class InputStream_Sub2 extends InputStream {
                             else class318_sub1_sub3_sub3 = (Class132.aPlayer_1907);
                         } else {
                             int i_68_ = i_58_ + -1;
-                            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_68_, -6008));
+                            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_68_, -6008));
                             if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aNpc_6859);
                         }
                         if (class318_sub1_sub3_sub3 != null) {
@@ -155,7 +155,7 @@ final class InputStream_Sub2 extends InputStream {
                 int i_72_ = Class90.regionTileY + i_71_;
                 int i_73_ = NPCTypeList.anInt3581 + (i_70_ >> 4 & 0x7);
                 int i_74_ = za_Sub2.regionTileX + i_73_;
-                Class348_Sub37 class348_sub37 = ((Class348_Sub37) (Class130.aClass356_1895.method3480(i_72_ << 14 | TextureOpColourGradient.anInt9200 << 28 | i_74_, -6008)));
+                Class348_Sub37 class348_sub37 = ((Class348_Sub37) (Class130.aHashTable_1895.get(i_72_ << 14 | TextureOpColourGradient.anInt9200 << 28 | i_74_, -6008)));
                 if (class348_sub37 != null) {
                     for (Class348_Sub34 class348_sub34 = ((Class348_Sub34) class348_sub37.aDeque_6998.method1995(4)); class348_sub34 != null; class348_sub34 = ((Class348_Sub34) class348_sub37.aDeque_6998.method1990((byte) 49))) {
                         if ((0x7fff & i_69_) == class348_sub34.anInt6973) {
@@ -199,8 +199,8 @@ final class InputStream_Sub2 extends InputStream {
                     int i_94_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
                     int i_95_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(i + 842397936);
                     int i_96_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
-                    if (Class130.aClass356_1895 != null) {
-                        Class348_Sub37 class348_sub37 = ((Class348_Sub37) (Class130.aClass356_1895.method3480(i_93_ | ((TextureOpColourGradient.anInt9200 << 28) | i_91_ << 14), -6008)));
+                    if (Class130.aHashTable_1895 != null) {
+                        Class348_Sub37 class348_sub37 = ((Class348_Sub37) (Class130.aHashTable_1895.get(i_93_ | ((TextureOpColourGradient.anInt9200 << 28) | i_91_ << 14), -6008)));
                         if (class348_sub37 != null) {
                             for (Class348_Sub34 class348_sub34 = ((Class348_Sub34) class348_sub37.aDeque_6998.method1995(4)); class348_sub34 != null; class348_sub34 = ((Class348_Sub34) class348_sub37.aDeque_6998.method1990((byte) 34))) {
                                 if ((class348_sub34.anInt6973) == (0x7fff & i_94_) && i_95_ == class348_sub34.anInt6971) {

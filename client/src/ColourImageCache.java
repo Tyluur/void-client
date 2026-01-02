@@ -22,7 +22,7 @@ final class ColourImageCache {
     private ColourImageCacheSlot[] slots;
     static int anInt4034;
     boolean dirty;
-    static Class308 aClass308_4036;
+    static LRUHashTable aLRUHashTable_4036;
 
     static final int method2552(boolean bool, int i, int i_0_, int i_1_) {
         if (i_1_ != -24667) method2554((byte) 95);
@@ -48,7 +48,7 @@ final class ColourImageCache {
         if (Class312.anInt3931 == 1 || Class312.anInt3931 == 3 || (Class312.anInt3931 != Class83.anInt1447 && (Class312.anInt3931 == 0 || Class83.anInt1447 == 0))) {
             Class348_Sub32.anInt6930 = 0;
             IDKTypeList.anInt2057 = 0;
-            Class282.aClass356_3654.method3481(0);
+            Class282.aHashTable_3654.clear(0);
         }
         Class83.anInt1447 = Class312.anInt3931;
     }
@@ -57,7 +57,7 @@ final class ColourImageCache {
         if (i != 28) method2554((byte) 21);
         mapNpcs = null;
         aClass114_4027 = null;
-        aClass308_4036 = null;
+        aLRUHashTable_4036 = null;
     }
 
     static final void method2556(boolean bool, int i, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
@@ -166,6 +166,6 @@ final class ColourImageCache {
 
     static {
         aClass114_4027 = new Class114(90, 10);
-        aClass308_4036 = new Class308(128);
+        aLRUHashTable_4036 = new LRUHashTable(128);
     }
 }

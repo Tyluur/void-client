@@ -99,33 +99,19 @@ final class TextureOpColourise extends TextureOp {
         Class348_Sub41.method3157(i_16_, (byte) 123, i_17_, 11, bool);
     }
 
-    final void decode(Packet packet, int i, int i_23_) {
-        do {
-            try {
-                int i_24_ = i;
-                while_201_:
-                do {
-                    do {
-                        if (i_24_ == 0) {
-                            anInt9344 = packet.readUnsignedShort(i_23_ + 842366929);
-                            break while_201_;
-                        } else if (i_24_ != 1) {
-                            if (i_24_ == 2) break;
-                            break while_201_;
-                        }
-                        anInt9354 = packet.readUnsignedShort(842397944);
-                        break while_201_;
-                    } while (false);
-                    anInt9347 = packet.readUnsignedShort(842397944);
-                } while (false);
-                anInt9350++;
-                if (i_23_ == 31015) break;
-                method3118((byte) 96);
-            } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("uf.F(" + (packet != null ? "{...}" : "null") + ',' + i + ',' + i_23_ + ')'));
+    final void decode(Packet packet, int i_24_, int i_23_) {
+        try {
+            if (i_24_ == 0) {
+                anInt9344 = packet.readUnsignedShort(i_23_ + 842366929);
+            } else if (i_24_ == 1) {
+                anInt9354 = packet.readUnsignedShort(842397944);
+            } else if (i_24_ == 2) {
+                anInt9347 = packet.readUnsignedShort(842397944);
             }
-            break;
-        } while (false);
+            anInt9350++;
+        } catch (RuntimeException runtimeexception) {
+            throw Class348_Sub17.method2929(runtimeexception, ("uf.F(" + (packet != null ? "{...}" : "null") + ',' + i_24_ + ',' + i_23_ + ')'));
+        }
     }
 
     public TextureOpColourise() {

@@ -11,7 +11,7 @@ final class Class348_Sub42_Sub13 extends LinkedNode {
     static int anInt9618;
     static int anInt9619;
     static int anInt9620;
-    Class107 aClass107_9621;
+    SecondaryLinkedList aSecondaryLinkedList_9621;
 
     // method3232
     static final void setBrightness(double d, byte i) {
@@ -30,18 +30,18 @@ final class Class348_Sub42_Sub13 extends LinkedNode {
     final boolean method3233(Class348_Sub42_Sub12 class348_sub42_sub12, int i) {
         anInt9613++;
         boolean bool = true;
-        class348_sub42_sub12.method3162(true);
-        Class348_Sub42_Sub12 class348_sub42_sub12_2_ = ((Class348_Sub42_Sub12) this.aClass107_9621.method1011(-74));
+        class348_sub42_sub12.unlinkSecondary(true);
+        Class348_Sub42_Sub12 class348_sub42_sub12_2_ = ((Class348_Sub42_Sub12) this.aSecondaryLinkedList_9621.method1011(-74));
         while (class348_sub42_sub12_2_ != null) {
             if (Class318_Sub2.method2496(class348_sub42_sub12_2_.anInt9608, class348_sub42_sub12.anInt9608, true)) {
                 Class69.method721(class348_sub42_sub12_2_, class348_sub42_sub12, -1);
                 this.anInt9615++;
                 return !bool;
             }
-            class348_sub42_sub12_2_ = (Class348_Sub42_Sub12) this.aClass107_9621.method1003((byte) 48);
+            class348_sub42_sub12_2_ = (Class348_Sub42_Sub12) this.aSecondaryLinkedList_9621.next((byte) 48);
             bool = false;
         }
-        this.aClass107_9621.method1005(true, class348_sub42_sub12);
+        this.aSecondaryLinkedList_9621.addTail(true, class348_sub42_sub12);
         int i_3_ = 80 % ((i - -81) / 33);
         this.anInt9615++;
         return bool;
@@ -51,11 +51,11 @@ final class Class348_Sub42_Sub13 extends LinkedNode {
         anInt9614++;
         int i_4_ = 41 % ((-30 - i) / 39);
         int i_5_ = method3235(-17937);
-        class348_sub42_sub12.method3162(true);
+        class348_sub42_sub12.unlinkSecondary(true);
         this.anInt9615--;
         if (this.anInt9615 == 0) {
             this.unlink((byte) 112);
-            this.method3162(true);
+            this.unlinkSecondary(true);
             Class8.anInt166--;
             VarcTypeList.aClass60_3301.method582(this, class348_sub42_sub12.aLong9600, (byte) -128);
             return false;
@@ -65,13 +65,13 @@ final class Class348_Sub42_Sub13 extends LinkedNode {
 
     Class348_Sub42_Sub13(String string) {
         this.aString9617 = string;
-        this.aClass107_9621 = new Class107();
+        this.aSecondaryLinkedList_9621 = new SecondaryLinkedList();
     }
 
     final int method3235(int i) {
         if (i != -17937) return 104;
         anInt9619++;
-        if ((this.aClass107_9621.aLinkedNode_1647) != this.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063) return ((Class348_Sub42_Sub12) this.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063).anInt9608;
+        if ((this.aSecondaryLinkedList_9621.nextPrevious) != this.aSecondaryLinkedList_9621.nextPrevious.secondaryNext) return ((Class348_Sub42_Sub12) this.aSecondaryLinkedList_9621.nextPrevious.secondaryNext).anInt9608;
         return -1;
     }
 }

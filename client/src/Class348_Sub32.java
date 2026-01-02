@@ -8,7 +8,7 @@ final class Class348_Sub32 extends Node {
     private final s_Sub2 aS_Sub2_6929;
     static int anInt6930 = 0;
     static int anInt6931;
-    private Class356 aClass356_6932;
+    private HashTable aHashTable_6932;
     static int anInt6933;
     private int anInt6934;
     private final int anInt6935;
@@ -43,14 +43,14 @@ final class Class348_Sub32 extends Node {
         int i_8_ = aS_Sub2_6929.method3986(i_6_, i_7_, (byte) -17);
         if ((i_3_ & 0x7f) == 0 || (i & 0x7f) == 0) {
             l = ((long) i_7_ << 16 & 65535L << 16 | 0xffffL & (long) i_6_);
-            Node node = aClass356_6932.method3480(l, -6008);
+            Node node = aHashTable_6932.get(l, -6008);
             if (node != null) {
                 method3022((byte) -46, (((Class348_Sub29) node).aShort6911));
                 return;
             }
         }
         short i_9_ = (short) anInt6940++;
-        if (l != -1L) aClass356_6932.method3483((byte) 107, l, new Class348_Sub29(i_9_));
+        if (l != -1L) aHashTable_6932.put((byte) 107, l, new Class348_Sub29(i_9_));
         float f;
         float f_10_;
         float f_11_;
@@ -232,7 +232,7 @@ final class Class348_Sub32 extends Node {
             if (anInt6934 > 0) {
                 aPacket_6936 = new Packet(anInt6934 * 2);
                 aClass348_Sub49_Sub1_6953 = new Class348_Sub49_Sub1(anInt6934 * 16);
-                aClass356_6932 = new Class356(EnumTypeList.method340(anInt6934, (byte) 108));
+                aHashTable_6932 = new HashTable(EnumTypeList.method340(anInt6934, (byte) 108));
                 int i_56_ = 0;
                 i_50_ = 0;
                 for (int i_57_ = anInt6948; anInt6944 >= i_57_; i_57_++) {
@@ -296,7 +296,7 @@ final class Class348_Sub32 extends Node {
             aClass348_Sub49_Sub1_6953 = null;
             aFloatArrayArray6949 = aFloatArrayArray6947 = aFloatArrayArray6928 = null;
             aPacket_6936 = null;
-            aClass356_6932 = null;
+            aHashTable_6932 = null;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qw.<init>(" + (var_openGLToolkit != null ? "{...}" : "null") + ',' + (var_s_Sub2 != null ? "{...}" : "null") + ',' + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
         }

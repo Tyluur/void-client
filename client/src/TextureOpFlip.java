@@ -129,7 +129,7 @@ final class TextureOpFlip extends TextureOp {
                                     if (class46.anInt765 == Class290.anInt3717) {
                                         if (class46.method425((Class348_Sub8.active), (byte) 8) != null) {
                                             Class369_Sub1.method3570(false);
-                                            Class107.method1007(class46, (Class348_Sub8.active), i_24_, i_25_, 22960);
+                                            SecondaryLinkedList.method1007(class46, (Class348_Sub8.active), i_24_, i_25_, 22960);
                                             FloorOverlayTypeList.aBooleanArray3438[i_23_] = true;
                                             Class348_Sub8.active.KA(i, i_12_, i_14_, i_17_);
                                             if (Class59_Sub1.aBoolean5300) {
@@ -240,7 +240,7 @@ final class TextureOpFlip extends TextureOp {
                                     if ((class46.anInt765 == Class372.anInt4532) && Class348_Sub8.active.method3666()) Class348_Sub8.active.method3658(i_24_, i_25_, class46.anInt709, class46.anInt789);
                                     method3064(i_31_, -class46.anInt755 + i_25_, bool, i_24_ - class46.anInt747, i_32_, i_23_, i_34_, false, class46s, class46.anInt830, i_33_);
                                     if (class46.aClass46Array798 != null) method3064(i_31_, -(class46.anInt755) + i_25_, bool, i_24_ - (class46.anInt747), i_32_, i_23_, i_34_, false, (class46.aClass46Array798), (class46.anInt830), i_33_);
-                                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) (Class125.aClass356_4915.method3480(class46.anInt830, -6008)));
+                                    Class348_Sub41 class348_sub41 = ((Class348_Sub41) (Class125.aHashTable_4915.get(class46.anInt830, -6008)));
                                     if (class348_sub41 != null) Class159.method1252(i_25_, (class348_sub41.anInt7050), i_32_, i_23_, i_24_, i_34_, i_33_, (byte) 60, i_31_);
                                     if ((class46.anInt765 == Class372.anInt4532) && Class348_Sub8.active.method3666()) Class348_Sub8.active.method3698();
                                     Class348_Sub8.active.KA(i, i_12_, i_14_, i_17_);

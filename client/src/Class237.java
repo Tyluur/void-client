@@ -1250,9 +1250,9 @@ class Class237 {
         anInt3110++;
         if (class46.anInt834 != -1) return FontRenderer.method2570(1512932720, class46.anInt834);
         int i_309_ = class46.anInt830 >>> 16;
-        Class333 class333 = new Class333(Class125.aClass356_4915);
+        Class333 class333 = new Class333(Class125.aHashTable_4915);
         for (Class348_Sub41 class348_sub41 = (Class348_Sub41) class333.method2644((byte) 123); class348_sub41 != null; class348_sub41 = (Class348_Sub41) class333.method2646((byte) 117)) {
-            if (i_309_ == class348_sub41.anInt7050) return FontRenderer.method2570(1512932720, (int) (class348_sub41.aLong4291));
+            if (i_309_ == class348_sub41.anInt7050) return FontRenderer.method2570(1512932720, (int) (class348_sub41.key));
         }
         return null;
     }

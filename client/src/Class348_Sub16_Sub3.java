@@ -7,7 +7,7 @@ import java.net.URL;
 final class Class348_Sub16_Sub3 extends Class348_Sub16 {
     static int anInt8889;
     static int anInt8890;
-    private final Class356 aClass356_8891;
+    private final HashTable aHashTable_8891;
     static int anInt8892;
     static int anInt8893;
     private final int[] anIntArray8894;
@@ -412,7 +412,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
                 }
             }
         }
-        Class348_Sub17 class348_sub17 = ((Class348_Sub17) aClass356_8891.method3480(anIntArray8916[i_51_], -6008));
+        Class348_Sub17 class348_sub17 = ((Class348_Sub17) aHashTable_8891.get(anIntArray8916[i_51_], -6008));
         if (class348_sub17 != null) {
             Class348_Sub19_Sub1 class348_sub19_sub1 = (class348_sub17.aClass348_Sub19_Sub1Array6800[i_50_]);
             if (class348_sub19_sub1 != null) {
@@ -661,7 +661,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
     final synchronized void method2864(byte i) {
         anInt8924++;
         if (i <= 46) aClass204_8944 = null;
-        for (Class348_Sub17 class348_sub17 = (Class348_Sub17) aClass356_8891.method3484(0); class348_sub17 != null; class348_sub17 = (Class348_Sub17) aClass356_8891.method3482(0))
+        for (Class348_Sub17 class348_sub17 = (Class348_Sub17) aHashTable_8891.head(0); class348_sub17 != null; class348_sub17 = (Class348_Sub17) aHashTable_8891.next(0))
             class348_sub17.method2933((byte) -103);
     }
 
@@ -694,16 +694,16 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
             boolean bool = true;
             int[] is = null;
             if (i > 0) is = new int[]{i};
-            for (Class348_Sub8 class348_sub8 = (Class348_Sub8) class348_sub2.aClass356_6565.method3484(0); class348_sub8 != null; class348_sub8 = (Class348_Sub8) class348_sub2.aClass356_6565.method3482(0)) {
-                int i_78_ = (int) class348_sub8.aLong4291;
-                Class348_Sub17 class348_sub17 = ((Class348_Sub17) aClass356_8891.method3480(i_78_, -6008));
+            for (Class348_Sub8 class348_sub8 = (Class348_Sub8) class348_sub2.aHashTable_6565.head(0); class348_sub8 != null; class348_sub8 = (Class348_Sub8) class348_sub2.aHashTable_6565.next(0)) {
+                int i_78_ = (int) class348_sub8.key;
+                Class348_Sub17 class348_sub17 = ((Class348_Sub17) aHashTable_8891.get(i_78_, -6008));
                 if (class348_sub17 == null) {
                     class348_sub17 = Class188.method1417(0, index, i_78_);
                     if (class348_sub17 == null) {
                         bool = false;
                         continue;
                     }
-                    aClass356_8891.method3483((byte) 69, i_78_, class348_sub17);
+                    aHashTable_8891.put((byte) 69, i_78_, class348_sub17);
                 }
                 if (!class348_sub17.method2932(class26, is, (class348_sub8.aByteArray6657), 0)) bool = false;
             }
@@ -718,7 +718,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
     final synchronized void method2867(int i) {
         anInt8903++;
         if (i == 4) {
-            for (Class348_Sub17 class348_sub17 = (Class348_Sub17) aClass356_8891.method3484(0); class348_sub17 != null; class348_sub17 = (Class348_Sub17) aClass356_8891.method3482(i ^ 0x4))
+            for (Class348_Sub17 class348_sub17 = (Class348_Sub17) aHashTable_8891.head(0); class348_sub17 != null; class348_sub17 = (Class348_Sub17) aHashTable_8891.next(i ^ 0x4))
                 class348_sub17.unlink((byte) 53);
         }
     }
@@ -938,7 +938,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
         anIntArray8947 = new int[16];
         aClass204_8944 = new Class204();
         aClass348_Sub16_Sub1_8958 = new Class348_Sub16_Sub1(this);
-        aClass356_8891 = new Class356(128);
+        aHashTable_8891 = new HashTable(128);
         method2843(256, -1, -7836);
         method2851(true, true);
     }
@@ -967,7 +967,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
         aClass204_8944 = new Class204();
         aClass348_Sub16_Sub1_8958 = new Class348_Sub16_Sub1(this);
         try {
-            aClass356_8891 = class348_sub16_sub3_107_.aClass356_8891;
+            aHashTable_8891 = class348_sub16_sub3_107_.aHashTable_8891;
             method2843(256, -1, -7836);
             method2851(true, true);
         } catch (RuntimeException runtimeexception) {

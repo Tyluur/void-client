@@ -53,15 +53,15 @@ final class Class318_Sub4 extends Class318 {
         script.stringArgumentCount = packet.readUnsignedShort(842397944);
         int i_14_ = packet.readUnsignedByte(255);
         if (i_14_ > 0) {
-            script.aClass356Array9693 = new Class356[i_14_];
+            script.aHashTableArray9693 = new HashTable[i_14_];
             for (int i_15_ = 0; i_15_ < i_14_; i_15_++) {
                 int i_16_ = packet.readUnsignedShort(842397944);
-                Class356 class356 = new Class356(EnumTypeList.method340(i_16_, (byte) 108));
-                script.aClass356Array9693[i_15_] = class356;
+                HashTable hashTable = new HashTable(EnumTypeList.method340(i_16_, (byte) 108));
+                script.aHashTableArray9693[i_15_] = hashTable;
                 while (i_16_-- > 0) {
                     int i_17_ = packet.readInt((byte) -126);
                     int i_18_ = packet.readInt((byte) -126);
-                    class356.method3483((byte) 124, i_17_, new Class348_Sub35(i_18_));
+                    hashTable.put((byte) 124, i_17_, new Class348_Sub35(i_18_));
                 }
             }
         }

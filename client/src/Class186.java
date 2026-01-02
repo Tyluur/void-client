@@ -35,7 +35,7 @@ abstract class Class186 {
         }
         for (int i_2_ = i; i_2_ < IDKTypeList.anInt2057; i_2_++) {
             long l = Class74.anIntArray1233[i_2_];
-            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(l, -6008));
+            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(l, -6008));
             if (class348_sub22 != null) {
                 Npc npc = (class348_sub22.aNpc_6859);
                 if ((npc.anInt10264) > 0) {

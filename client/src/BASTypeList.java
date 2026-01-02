@@ -122,9 +122,9 @@ final class BASTypeList {
         CursorTypeList.aDeque_2187.method1988(TextureOpVerticalGradient.aDeque_9111, (byte) -115);
         TextureOpClamp.aDeque_9478.method1988(TextureOpVerticalGradient.aDeque_9111, (byte) -115);
         if (Class73.anInt4776 > 1) {
-            if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.aNode_3334.aNode_4295);
-            else Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.aNode_3334.aNode_4295.aNode_4295);
-            Class135_Sub2.aClass348_Sub42_Sub12_4846 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.aNode_3334.aNode_4295);
+            if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.aNode_3334.next);
+            else Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.aNode_3334.next.next);
+            Class135_Sub2.aClass348_Sub42_Sub12_4846 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.aNode_3334.next);
         } else {
             Class316.aClass348_Sub42_Sub12_3963 = null;
             Class135_Sub2.aClass348_Sub42_Sub12_4846 = null;
@@ -165,7 +165,7 @@ final class BASTypeList {
                             }
                             if (i_17_ != -1) {
                                 int i_22_ = 0;
-                                Class156 class156 = new Class156(Class233.aClass107_3022);
+                                Class156 class156 = new Class156(Class233.aSecondaryLinkedList_3022);
                                 for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) class156.method1240(75)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) class156.method1243((byte) 74))) {
                                     if (i_17_ == i_22_) {
                                         if (class348_sub42_sub13.anInt9615 > 1) Class99.method881(class348_sub42_sub13, i_16_, true, i_18_);
@@ -194,7 +194,7 @@ final class BASTypeList {
                     }
                     if (i_25_ != -1) {
                         int i_29_ = 0;
-                        Class156 class156 = new Class156(Class242.aClass348_Sub42_Sub13_3152.aClass107_9621);
+                        Class156 class156 = new Class156(Class242.aClass348_Sub42_Sub13_3152.aSecondaryLinkedList_9621);
                         for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) class156.method1240(98)); class348_sub42_sub12 != null; class348_sub42_sub12 = ((Class348_Sub42_Sub12) class156.method1243((byte) 122))) {
                             if (i_29_ == i_25_) {
                                 Class325.method2599((byte) 126, class348_sub42_sub12, i_24_, i_23_);
@@ -224,10 +224,10 @@ final class BASTypeList {
                         }
                         if (i_30_ != -1) {
                             int i_34_ = 0;
-                            Class156 class156 = new Class156(Class233.aClass107_3022);
+                            Class156 class156 = new Class156(Class233.aSecondaryLinkedList_3022);
                             for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) class156.method1240(18)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) class156.method1243((byte) 55))) {
                                 if (i_34_ == i_30_) {
-                                    Class325.method2599((byte) 122, ((Class348_Sub42_Sub12) (class348_sub42_sub13.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063)), i_24_, i_23_);
+                                    Class325.method2599((byte) 122, ((Class348_Sub42_Sub12) (class348_sub42_sub13.aSecondaryLinkedList_9621.nextPrevious.secondaryNext)), i_24_, i_23_);
                                     Class286_Sub2.method2146((byte) 118);
                                     break;
                                 }

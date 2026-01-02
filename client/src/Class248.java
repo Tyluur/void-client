@@ -17,16 +17,16 @@ final class Class248 {
     static int anInt3194;
     static int anInt3195;
     static Class229 aClass229_3196 = new Class229();
-    private final Class107 aClass107_3197 = new Class107();
+    private final SecondaryLinkedList aSecondaryLinkedList_3197 = new SecondaryLinkedList();
     static int anInt3198;
     static int anInt3199;
     static int anInt3200;
     static int width32;
     static int anInt3202;
     static int anInt3203 = -1;
-    private final Class107 aClass107_3204 = new Class107();
-    private final Class107 aClass107_3205 = new Class107();
-    private final Class107 aClass107_3206 = new Class107();
+    private final SecondaryLinkedList aSecondaryLinkedList_3204 = new SecondaryLinkedList();
+    private final SecondaryLinkedList aSecondaryLinkedList_3205 = new SecondaryLinkedList();
+    private final SecondaryLinkedList aSecondaryLinkedList_3206 = new SecondaryLinkedList();
     private long aLong3207;
     private final Packet aPacket_3208 = new Packet(4);
     private Class202 aClass202_3209;
@@ -80,21 +80,21 @@ final class Class248 {
         }
         try {
             aClass202_3209.method1472(true);
-            for (Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aClass107_3197.method1011(-30)); class348_sub42_sub16_sub1 != null; class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aClass107_3197.method1003((byte) 65))) {
+            for (Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aSecondaryLinkedList_3197.method1011(-30)); class348_sub42_sub16_sub1 != null; class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aSecondaryLinkedList_3197.next((byte) 65))) {
                 aPacket_3208.pos = 0;
                 aPacket_3208.writeByte(false, 1);
-                aPacket_3208.method3340(-9912, (int) (class348_sub42_sub16_sub1.aLong7057));
+                aPacket_3208.method3340(-9912, (int) (class348_sub42_sub16_sub1.linkedKey));
                 aClass202_3209.method1470((aPacket_3208.aByteArray7154), 4, 0, -1);
-                aClass107_3204.method1005(true, class348_sub42_sub16_sub1);
+                aSecondaryLinkedList_3204.addTail(true, class348_sub42_sub16_sub1);
             }
-            Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = (Class348_Sub42_Sub16_Sub1) aClass107_3205.method1011(-75);
+            Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = (Class348_Sub42_Sub16_Sub1) aSecondaryLinkedList_3205.method1011(-75);
             if (i <= 72) return false;
-            for (/**/; class348_sub42_sub16_sub1 != null; class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aClass107_3205.method1003((byte) 102))) {
+            for (/**/; class348_sub42_sub16_sub1 != null; class348_sub42_sub16_sub1 = ((Class348_Sub42_Sub16_Sub1) aSecondaryLinkedList_3205.next((byte) 102))) {
                 aPacket_3208.pos = 0;
                 aPacket_3208.writeByte(false, 0);
-                aPacket_3208.method3340(-9912, (int) (class348_sub42_sub16_sub1.aLong7057));
+                aPacket_3208.method3340(-9912, (int) (class348_sub42_sub16_sub1.linkedKey));
                 aClass202_3209.method1470((aPacket_3208.aByteArray7154), 4, 0, -1);
-                aClass107_3206.method1005(true, class348_sub42_sub16_sub1);
+                aSecondaryLinkedList_3206.addTail(true, class348_sub42_sub16_sub1);
             }
             for (int i_1_ = 0; i_1_ < 100; i_1_++) {
                 int i_2_ = aClass202_3209.method1467((byte) 83);
@@ -117,7 +117,7 @@ final class Class248 {
                     aClass348_Sub42_Sub16_Sub1_3215.anInt10456 += i_5_;
                     aClass348_Sub42_Sub16_Sub1_3215.aPacket_10453.pos += i_5_;
                     if (i_4_ == aClass348_Sub42_Sub16_Sub1_3215.aPacket_10453.pos) {
-                        aClass348_Sub42_Sub16_Sub1_3215.method3162(true);
+                        aClass348_Sub42_Sub16_Sub1_3215.unlinkSecondary(true);
                         aClass348_Sub42_Sub16_Sub1_3215.aBoolean9664 = false;
                         aClass348_Sub42_Sub16_Sub1_3215 = null;
                     } else if (aClass348_Sub42_Sub16_Sub1_3215.anInt10456 == 512) aClass348_Sub42_Sub16_Sub1_3215.anInt10456 = 0;
@@ -143,12 +143,12 @@ final class Class248 {
                             Object object = null;
                             Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1_14_;
                             if (prefetch) {
-                                for (class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aClass107_3206.method1011(-89)); class348_sub42_sub16_sub1_14_ != null; class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aClass107_3206.method1003((byte) 98))) {
-                                    if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break;
+                                for (class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aSecondaryLinkedList_3206.method1011(-89)); class348_sub42_sub16_sub1_14_ != null; class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aSecondaryLinkedList_3206.next((byte) 98))) {
+                                    if (l == (class348_sub42_sub16_sub1_14_.linkedKey)) break;
                                 }
                             } else {
-                                for (class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aClass107_3204.method1011(-108)); class348_sub42_sub16_sub1_14_ != null; class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aClass107_3204.method1003((byte) 90))) {
-                                    if (l == (class348_sub42_sub16_sub1_14_.aLong7057)) break;
+                                for (class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aSecondaryLinkedList_3204.method1011(-108)); class348_sub42_sub16_sub1_14_ != null; class348_sub42_sub16_sub1_14_ = ((Class348_Sub42_Sub16_Sub1) aSecondaryLinkedList_3204.next((byte) 90))) {
+                                    if (l == (class348_sub42_sub16_sub1_14_.linkedKey)) break;
                                 }
                             }
                             if (class348_sub42_sub16_sub1_14_ == null) throw new IOException();
@@ -185,7 +185,7 @@ final class Class248 {
     private final int method1894(int i) {
         anInt3199++;
         if (i != 4350) return 29;
-        return aClass107_3205.method1002(0) - -aClass107_3206.method1002(0);
+        return aSecondaryLinkedList_3205.size(0) - -aSecondaryLinkedList_3206.size(0);
     }
 
     static final void method1895(int i, byte[] is, int i_16_, int i_17_, int i_18_, int i_19_, byte[] is_20_, int i_21_, byte i_22_) {
@@ -265,7 +265,7 @@ final class Class248 {
     final int method1902(int i) {
         anInt3192++;
         if (i != 4) this.anInt3213 = 18;
-        return aClass107_3197.method1002(0) + aClass107_3204.method1002(0);
+        return aSecondaryLinkedList_3197.size(0) + aSecondaryLinkedList_3204.size(0);
     }
 
     final void method1903(boolean bool, boolean bool_28_, Class202 class202) {
@@ -285,14 +285,14 @@ final class Class248 {
         aClass348_Sub42_Sub16_Sub1_3215 = null;
         if (bool != false) aLong3207 = -35L;
         for (; ; ) {
-            Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = (Class348_Sub42_Sub16_Sub1) aClass107_3204.method1008(20);
+            Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = (Class348_Sub42_Sub16_Sub1) aSecondaryLinkedList_3204.removeHead(20);
             if (class348_sub42_sub16_sub1 == null) break;
-            aClass107_3197.method1005(true, class348_sub42_sub16_sub1);
+            aSecondaryLinkedList_3197.addTail(true, class348_sub42_sub16_sub1);
         }
         for (; ; ) {
-            Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = (Class348_Sub42_Sub16_Sub1) aClass107_3206.method1008(20);
+            Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = (Class348_Sub42_Sub16_Sub1) aSecondaryLinkedList_3206.removeHead(20);
             if (class348_sub42_sub16_sub1 == null) break;
-            aClass107_3205.method1005(!bool, class348_sub42_sub16_sub1);
+            aSecondaryLinkedList_3205.addTail(!bool, class348_sub42_sub16_sub1);
         }
         if (aByte3212 != 0) {
             try {
@@ -356,14 +356,14 @@ final class Class248 {
         long l = (i_31_ << 16) - -i_30_;
         Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = new Class348_Sub42_Sub16_Sub1();
         class348_sub42_sub16_sub1.aBoolean9663 = bool;
-        class348_sub42_sub16_sub1.aLong7057 = l;
+        class348_sub42_sub16_sub1.linkedKey = l;
         class348_sub42_sub16_sub1.aByte10449 = i_29_;
         if (bool) {
             if (method1902(4) >= 20) throw new RuntimeException();
-            aClass107_3197.method1005(true, class348_sub42_sub16_sub1);
+            aSecondaryLinkedList_3197.addTail(true, class348_sub42_sub16_sub1);
         } else {
             if (method1894(4350) >= 20) throw new RuntimeException();
-            aClass107_3205.method1005(true, class348_sub42_sub16_sub1);
+            aSecondaryLinkedList_3205.addTail(true, class348_sub42_sub16_sub1);
         }
         return class348_sub42_sub16_sub1;
     }

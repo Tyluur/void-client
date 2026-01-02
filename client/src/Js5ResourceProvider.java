@@ -24,7 +24,7 @@ final class Js5ResourceProvider extends ResourceProvider {
     static int anInt6357;
     static int anInt6358;
     static int anInt6359;
-    private final Class356 aClass356_6360;
+    private final HashTable aHashTable_6360;
     private int anInt6361 = 0;
     static int anInt6362;
     static int anInt6363;
@@ -48,7 +48,7 @@ final class Js5ResourceProvider extends ResourceProvider {
         if (i != 24940) method2345(-32);
         Node node = aDeque_6372.method1995(i ^ 0x6168);
         if (node == null) return 0;
-        return (int) node.aLong4291;
+        return (int) node.key;
     }
 
     final void method2342(int i) {
@@ -56,7 +56,7 @@ final class Js5ResourceProvider extends ResourceProvider {
         if (i != 0) aBoolean6375 = false;
         if (aDeque_6372 != null && method2340((byte) 56) != null) {
             for (Node node = aDeque_6369.method1995(4); node != null; node = aDeque_6369.method1990((byte) 112)) {
-                int i_0_ = (int) node.aLong4291;
+                int i_0_ = (int) node.key;
                 if (i_0_ < 0 || (aClass291_6342.anInt3734 <= i_0_) || aClass291_6342.anIntArray3725[i_0_] == 0) node.unlink((byte) 37);
                 else {
                     if (aByteArray6351[i_0_] == 0) method2350(i_0_, (byte) 65, 1);
@@ -74,7 +74,7 @@ final class Js5ResourceProvider extends ResourceProvider {
             if (aBoolean6368) {
                 boolean bool = true;
                 for (Node node = aDeque_6372.method1995(4); node != null; node = aDeque_6372.method1990((byte) 106)) {
-                    int i_1_ = (int) node.aLong4291;
+                    int i_1_ = (int) node.key;
                     if (aByteArray6351[i_1_] == 0) method2350(i_1_, (byte) 65, 1);
                     if (aByteArray6351[i_1_] != 0) node.unlink((byte) 22);
                     else bool = false;
@@ -89,7 +89,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                         if (aByteArray6351[anInt6373] == 0) method2350(anInt6373, (byte) 65, 1);
                         if (aByteArray6351[anInt6373] == 0) {
                             Node node = new Node();
-                            node.aLong4291 = anInt6373;
+                            node.key = anInt6373;
                             aDeque_6372.method1999(node, -20180);
                             bool = false;
                         }
@@ -103,7 +103,7 @@ final class Js5ResourceProvider extends ResourceProvider {
             } else if (aBoolean6371) {
                 boolean bool = true;
                 for (Node node = aDeque_6372.method1995(4); node != null; node = aDeque_6372.method1990((byte) 43)) {
-                    int i_2_ = (int) node.aLong4291;
+                    int i_2_ = (int) node.key;
                     if (aByteArray6351[i_2_] != 1) method2350(i_2_, (byte) 65, 2);
                     if (aByteArray6351[i_2_] != 1) bool = false;
                     else node.unlink((byte) 60);
@@ -118,7 +118,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                         if (aByteArray6351[anInt6373] != 1) method2350(anInt6373, (byte) 65, 2);
                         if (aByteArray6351[anInt6373] != 1) {
                             Node node = new Node();
-                            node.aLong4291 = anInt6373;
+                            node.key = anInt6373;
                             bool = false;
                             aDeque_6372.method1999(node, i + -20179);
                         }
@@ -133,7 +133,7 @@ final class Js5ResourceProvider extends ResourceProvider {
         }
         if (i == -1) {
             if (aBoolean6375 && Class62.safeTime(-94) >= aLong6374) {
-                for (Class348_Sub42_Sub16 class348_sub42_sub16 = (Class348_Sub42_Sub16) aClass356_6360.method3484(0); class348_sub42_sub16 != null; class348_sub42_sub16 = ((Class348_Sub42_Sub16) aClass356_6360.method3482(0))) {
+                for (Class348_Sub42_Sub16 class348_sub42_sub16 = (Class348_Sub42_Sub16) aHashTable_6360.head(0); class348_sub42_sub16 != null; class348_sub42_sub16 = ((Class348_Sub42_Sub16) aHashTable_6360.next(0))) {
                     if (!class348_sub42_sub16.aBoolean9664) {
                         if (class348_sub42_sub16.aBoolean9667) {
                             if (!class348_sub42_sub16.aBoolean9663) throw new RuntimeException();
@@ -182,10 +182,10 @@ final class Js5ResourceProvider extends ResourceProvider {
         if (i != -52) aClass291_6342 = null;
         if (aClass137_6365 != null) {
             for (Node node = aDeque_6369.method1995(i ^ ~0x37); node != null; node = aDeque_6369.method1990((byte) 124)) {
-                if ((long) i_5_ == node.aLong4291) return;
+                if ((long) i_5_ == node.key) return;
             }
             Node node = new Node();
-            node.aLong4291 = i_5_;
+            node.key = i_5_;
             aDeque_6369.method1999(node, -20180);
         }
     }
@@ -245,7 +245,7 @@ final class Js5ResourceProvider extends ResourceProvider {
 
     final int method2335(int i, int i_8_) {
         anInt6341++;
-        Class348_Sub42_Sub16 class348_sub42_sub16 = ((Class348_Sub42_Sub16) aClass356_6360.method3480(i, -6008));
+        Class348_Sub42_Sub16 class348_sub42_sub16 = ((Class348_Sub42_Sub16) aHashTable_6360.get(i, -6008));
         if (i_8_ != -22197) anInt6352 = 21;
         if (class348_sub42_sub16 != null) return class348_sub42_sub16.method3257(16);
         return 0;
@@ -254,7 +254,7 @@ final class Js5ResourceProvider extends ResourceProvider {
     private final Class348_Sub42_Sub16 method2350(int i, byte i_9_, int i_10_) {
         if (i_9_ != 65) aByteArray6351 = null;
         anInt6362++;
-        Class348_Sub42_Sub16 class348_sub42_sub16 = ((Class348_Sub42_Sub16) aClass356_6360.method3480(i, -6008));
+        Class348_Sub42_Sub16 class348_sub42_sub16 = ((Class348_Sub42_Sub16) aHashTable_6360.get(i, -6008));
         if (class348_sub42_sub16 != null && i_10_ == 0 && !class348_sub42_sub16.aBoolean9663 && class348_sub42_sub16.aBoolean9664) {
             class348_sub42_sub16.unlink((byte) 66);
             class348_sub42_sub16 = null;
@@ -275,7 +275,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                 if (aClass248_6347.method1899(-120)) return null;
                 class348_sub42_sub16 = aClass248_6347.method1906((byte) 97, (byte) 2, false, i, anInt6350);
             }
-            aClass356_6360.method3483((byte) 73, i, class348_sub42_sub16);
+            aHashTable_6360.put((byte) 73, i, class348_sub42_sub16);
         }
         if (class348_sub42_sub16.aBoolean9664) return null;
         byte[] is = class348_sub42_sub16.method3259(16);
@@ -300,7 +300,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                 class348_sub42_sub16.unlink((byte) 44);
                 if (class348_sub42_sub16.aBoolean9663 && !aClass248_6347.method1900(i_9_ ^ 0x1f)) {
                     Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = aClass248_6347.method1906((byte) 111, (byte) 2, true, i, anInt6350);
-                    aClass356_6360.method3483((byte) 84, i, class348_sub42_sub16_sub1);
+                    aHashTable_6360.put((byte) 84, i, class348_sub42_sub16_sub1);
                 }
                 return null;
             }
@@ -342,7 +342,7 @@ final class Js5ResourceProvider extends ResourceProvider {
             class348_sub42_sub16.unlink((byte) 121);
             if (class348_sub42_sub16.aBoolean9663 && !aClass248_6347.method1900(-30)) {
                 Class348_Sub42_Sub16_Sub1 class348_sub42_sub16_sub1 = aClass248_6347.method1906((byte) 99, (byte) 2, true, i, anInt6350);
-                aClass356_6360.method3483((byte) 66, i, class348_sub42_sub16_sub1);
+                aHashTable_6360.put((byte) 66, i, class348_sub42_sub16_sub1);
             }
             return null;
         }
@@ -405,7 +405,7 @@ final class Js5ResourceProvider extends ResourceProvider {
     }
 
     Js5ResourceProvider(int i, Class137 class137, Class137 class137_23_, Class248 class248, Class112 class112, int i_24_, byte[] is, int i_25_, boolean bool) {
-        aClass356_6360 = new Class356(16);
+        aHashTable_6360 = new HashTable(16);
         anInt6373 = 0;
         aDeque_6369 = new Deque();
         aLong6374 = 0L;

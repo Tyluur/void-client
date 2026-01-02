@@ -25,7 +25,7 @@ final class Class139 {
             IDKTypeList.anInt2057 = 0;
             for (int i_2_ = 0; i_2_ < i_0_; i_2_++) {
                 int i_3_ = Class74.anIntArray1233[i_2_];
-                Npc npc = (((Class348_Sub22) Class282.aClass356_3654.method3480(i_3_, -6008)).aNpc_6859);
+                Npc npc = (((Class348_Sub22) Class282.aHashTable_3654.get(i_3_, -6008)).aNpc_6859);
                 int i_4_ = Class299.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 1);
                 if (i_4_ == 0) {
                     Class74.anIntArray1233[IDKTypeList.anInt2057++] = i_3_;

@@ -569,7 +569,7 @@ final class OpenGLToolkit extends Toolkit {
     final synchronized void method3737(int i, byte i_31_, int i_32_) {
         anInt7676++;
         Class348_Sub35 class348_sub35 = new Class348_Sub35(i_32_);
-        class348_sub35.aLong4291 = i;
+        class348_sub35.key = i;
         int i_33_ = -124 / ((i_31_ - 79) / 39);
         aDeque_7752.method1999(class348_sub35, -20180);
     }
@@ -674,14 +674,14 @@ final class OpenGLToolkit extends Toolkit {
                         Class8.anInt166++;
                     } else {
                         long l = (class348_sub42_sub12.aLong9600);
-                        for (class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class348_Sub42_Sub12.aClass356_9603.method3480(l, -6008)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class348_Sub42_Sub12.aClass356_9603.method3476(true))) {
+                        for (class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class348_Sub42_Sub12.aHashTable_9603.get(l, -6008)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class348_Sub42_Sub12.aHashTable_9603.nextWithKey(true))) {
                             if (class348_sub42_sub13.aString9617.equals(class348_sub42_sub12.aString9601)) break;
                         }
                         if (class348_sub42_sub13 == null) {
                             class348_sub42_sub13 = ((Class348_Sub42_Sub13) VarcTypeList.aClass60_3301.method583(l, i ^ 0x3a));
                             if (class348_sub42_sub13 != null && !(class348_sub42_sub13.aString9617.equals(class348_sub42_sub12.aString9601))) class348_sub42_sub13 = null;
                             if (class348_sub42_sub13 == null) class348_sub42_sub13 = (new Class348_Sub42_Sub13(class348_sub42_sub12.aString9601));
-                            Class348_Sub42_Sub12.aClass356_9603.method3483((byte) 71, l, class348_sub42_sub13);
+                            Class348_Sub42_Sub12.aHashTable_9603.put((byte) 71, l, class348_sub42_sub13);
                             Class8.anInt166++;
                         }
                     }
@@ -1050,8 +1050,8 @@ final class OpenGLToolkit extends Toolkit {
         anInterface11Array7741 = new Interface11[4];
         anInterface11Array7743 = new Interface11[4];
         anInt7746 = -1;
-        new Class107();
-        new Class356(16);
+        new SecondaryLinkedList();
+        new HashTable(16);
         aDeque_7749 = new Deque();
         aDeque_7751 = new Deque();
         aDeque_7752 = new Deque();
@@ -1341,7 +1341,7 @@ final class OpenGLToolkit extends Toolkit {
         i &= 0x7fffffff;
         while (!aDeque_7751.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7751.method1997(8);
-            Class328_Sub3.anIntArray6522[i_122_++] = (int) class348_sub35.aLong4291;
+            Class328_Sub3.anIntArray6522[i_122_++] = (int) class348_sub35.key;
             this.anInt7747 -= class348_sub35.anInt6976;
             if (i_122_ == 1000) {
                 OpenGL.glDeleteBuffersARB(i_122_, Class328_Sub3.anIntArray6522, 0);
@@ -1354,7 +1354,7 @@ final class OpenGLToolkit extends Toolkit {
         }
         while (!aDeque_7752.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7752.method1997(8);
-            Class328_Sub3.anIntArray6522[i_122_++] = (int) class348_sub35.aLong4291;
+            Class328_Sub3.anIntArray6522[i_122_++] = (int) class348_sub35.key;
             this.anInt7748 -= class348_sub35.anInt6976;
             if (i_122_ == 1000) {
                 OpenGL.glDeleteTextures(i_122_, Class328_Sub3.anIntArray6522, 0);
@@ -1379,7 +1379,7 @@ final class OpenGLToolkit extends Toolkit {
         }
         while (!aDeque_7754.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7754.method1997(8);
-            Class328_Sub3.anIntArray6522[i_122_++] = (int) class348_sub35.aLong4291;
+            Class328_Sub3.anIntArray6522[i_122_++] = (int) class348_sub35.key;
             anInt7750 -= class348_sub35.anInt6976;
             if (i_122_ == 1000) {
                 OpenGL.glDeleteRenderbuffersEXT(i_122_, Class328_Sub3.anIntArray6522, 0);
@@ -1392,19 +1392,19 @@ final class OpenGLToolkit extends Toolkit {
         }
         while (!aDeque_7749.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7749.method1997(8);
-            OpenGL.glDeleteLists((int) class348_sub35.aLong4291, class348_sub35.anInt6976);
+            OpenGL.glDeleteLists((int) class348_sub35.key, class348_sub35.anInt6976);
         }
         while (!aDeque_7755.method2002((byte) 18)) {
             Node node = aDeque_7755.method1997(8);
-            OpenGL.glDeleteProgramARB((int) node.aLong4291);
+            OpenGL.glDeleteProgramARB((int) node.key);
         }
         while (!aDeque_7756.method2002((byte) 18)) {
             Node node = aDeque_7756.method1997(8);
-            OpenGL.glDeleteObjectARB(node.aLong4291);
+            OpenGL.glDeleteObjectARB(node.key);
         }
         while (!aDeque_7749.method2002((byte) 18)) {
             Class348_Sub35 class348_sub35 = (Class348_Sub35) aDeque_7749.method1997(8);
-            OpenGL.glDeleteLists((int) class348_sub35.aLong4291, class348_sub35.anInt6976);
+            OpenGL.glDeleteLists((int) class348_sub35.key, class348_sub35.anInt6976);
         }
         aClass354_7723.method3469(8218);
         if (E() > 100663296 && 60000L + aLong7757 < Class62.safeTime(-96)) {
@@ -1508,7 +1508,7 @@ final class OpenGLToolkit extends Toolkit {
     final synchronized void method3765(byte i, int i_137_) {
         anInt7566++;
         Node node = new Node();
-        node.aLong4291 = i_137_;
+        node.key = i_137_;
         if (i <= 64) method3685(null, -38);
         aDeque_7755.method1999(node, -20180);
     }
@@ -1685,7 +1685,7 @@ final class OpenGLToolkit extends Toolkit {
             if (bool != false) aDeque_7751 = null;
             anInt7533++;
             Node node = new Node();
-            node.aLong4291 = l;
+            node.key = l;
             aDeque_7756.method1999(node, -20180);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "qo.CD(" + l + ',' + bool + ')');
@@ -2240,7 +2240,7 @@ final class OpenGLToolkit extends Toolkit {
     final synchronized void method3780(int i, int i_235_, int i_236_) {
         anInt7616++;
         Class348_Sub35 class348_sub35 = new Class348_Sub35(i);
-        class348_sub35.aLong4291 = i_236_;
+        class348_sub35.key = i_236_;
         aDeque_7751.method1999(class348_sub35, -20180);
         if (i_235_ != -1) method3733(-17, -42, -40, null, true);
     }
@@ -2923,7 +2923,7 @@ final class OpenGLToolkit extends Toolkit {
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
             if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_322_]]);
             else {
-                class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_322_ + -i_321_], i_316_ ^ ~0x1775)).aNpc_6859);
+                class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aHashTable_3654.get(Class74.anIntArray1233[i_322_ + -i_321_], i_316_ ^ ~0x1775)).aNpc_6859);
                 NPCDefinition = ((Npc) class318_sub1_sub3_sub3).aNPCDefinition_10505;
                 if (NPCDefinition.anIntArray1377 != null) {
                     NPCDefinition = NPCDefinition.method794((Class318_Sub1_Sub3_Sub3.timedVarDomain), i_316_ + -3);
@@ -3350,11 +3350,11 @@ final class OpenGLToolkit extends Toolkit {
         for (int i_433_ = 0; i_433_ < Index.anInt669; i_433_++) {
             int i_434_ = Class258_Sub4.anIntArray8557[i_433_];
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
-            if (i_434_ >= 2048) class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_434_, -6008)).aNpc_6859);
+            if (i_434_ >= 2048) class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aHashTable_3654.get(-2048 + i_434_, -6008)).aNpc_6859);
             else class318_sub1_sub3_sub3 = Class294.aPlayerArray5058[i_434_];
             int i_435_ = FloorOverlayTypeList.anIntArray3432[i_433_];
             Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_436_;
-            if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = (((Class348_Sub22) Class282.aClass356_3654.method3480(-2048 + i_435_, -6008)).aNpc_6859);
+            if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = (((Class348_Sub22) Class282.aHashTable_3654.get(-2048 + i_435_, -6008)).aNpc_6859);
             else class318_sub1_sub3_sub3_436_ = Class294.aPlayerArray5058[i_435_];
             MonochromeImageCache.method1430(--class318_sub1_sub3_sub3.anInt10261, (byte) 119, i_320_, i_315_, i, i_319_, i_318_, i_317_, class318_sub1_sub3_sub3_436_, class318_sub1_sub3_sub3);
         }
@@ -3665,7 +3665,7 @@ final class OpenGLToolkit extends Toolkit {
         if (i_479_ < -57) {
             anInt7677++;
             Class348_Sub35 class348_sub35 = new Class348_Sub35(i_478_);
-            class348_sub35.aLong4291 = i;
+            class348_sub35.key = i;
             aDeque_7754.method1999(class348_sub35, -20180);
         }
     }

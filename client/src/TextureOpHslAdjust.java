@@ -38,19 +38,19 @@ final class TextureOpHslAdjust extends TextureOp {
     static final Class348_Sub42_Sub15 method3127(int i) {
         anInt9395++;
         if (i != 2681) aBoolean9403 = true;
-        Class348_Sub42_Sub15 class348_sub42_sub15 = ((Class348_Sub42_Sub15) Class367_Sub4.aClass107_7325.method1011(-47));
+        Class348_Sub42_Sub15 class348_sub42_sub15 = ((Class348_Sub42_Sub15) Class367_Sub4.aSecondaryLinkedList_7325.method1011(-47));
         if (class348_sub42_sub15 != null) {
             class348_sub42_sub15.unlink((byte) 81);
-            class348_sub42_sub15.method3162(true);
+            class348_sub42_sub15.unlinkSecondary(true);
             return class348_sub42_sub15;
         }
         do {
-            class348_sub42_sub15 = (Class348_Sub42_Sub15) s_Sub2.aClass107_8241.method1011(-87);
+            class348_sub42_sub15 = (Class348_Sub42_Sub15) s_Sub2.aSecondaryLinkedList_8241.method1011(-87);
             if (class348_sub42_sub15 == null) return null;
             if (Class62.safeTime(-59) < class348_sub42_sub15.method3250((byte) -51)) return null;
             class348_sub42_sub15.unlink((byte) 113);
-            class348_sub42_sub15.method3162(true);
-        } while ((~0x7fffffffffffffffL & class348_sub42_sub15.aLong7057) == 0L);
+            class348_sub42_sub15.unlinkSecondary(true);
+        } while ((~0x7fffffffffffffffL & class348_sub42_sub15.linkedKey) == 0L);
         return class348_sub42_sub15;
     }
 
@@ -153,23 +153,26 @@ final class TextureOpHslAdjust extends TextureOp {
     private final void method3129(int i, int i_17_, byte i_18_, int i_19_) {
         anInt9394++;
         int i_20_ = Math.max(i_17_, i);
-        if (i_18_ == 82) {
-            i_20_ = Math.max(i_19_, i_20_);
-            int i_21_ = Math.min(i, i_17_);
-            i_21_ = Math.min(i_19_, i_21_);
-            anInt9389 = (i_20_ + i_21_) / 2;
-            int i_22_ = i_20_ - i_21_;
-            if (i_22_ > 0) {
-                int i_23_ = (i_20_ + -i << 12) / i_22_;
-                int i_24_ = (i_20_ + -i_17_ << 12) / i_22_;
-                int i_25_ = (-i_19_ + i_20_ << 12) / i_22_;
-                if (i == i_20_) anInt9400 = (i_17_ != i_21_ ? 4096 + -i_24_ : i_25_ + 20480);
-                else if (i_17_ != i_20_) anInt9400 = i != i_21_ ? -i_23_ + 20480 : 12288 - -i_24_;
-                else anInt9400 = (i_21_ == i_19_ ? 4096 + i_23_ : -i_25_ + 12288);
-                anInt9400 /= 6;
-            } else anInt9400 = 0;
-            if (anInt9389 > 0 && anInt9389 < 4096) anInt9401 = (i_22_ << 12) / (anInt9389 > 2048 ? 8192 - anInt9389 * 2 : anInt9389 * 2);
-            else anInt9401 = 0;
+        i_20_ = Math.max(i_19_, i_20_);
+        int i_21_ = Math.min(i, i_17_);
+        i_21_ = Math.min(i_19_, i_21_);
+        anInt9389 = (i_20_ + i_21_) / 2;
+        int i_22_ = i_20_ - i_21_;
+        if (i_22_ > 0) {
+            int i_23_ = (i_20_ + -i << 12) / i_22_;
+            int i_24_ = (i_20_ + -i_17_ << 12) / i_22_;
+            int i_25_ = (-i_19_ + i_20_ << 12) / i_22_;
+            if (i == i_20_) anInt9400 = (i_17_ != i_21_ ? 4096 + -i_24_ : i_25_ + 20480);
+            else if (i_17_ != i_20_) anInt9400 = i != i_21_ ? -i_23_ + 20480 : 12288 - -i_24_;
+            else anInt9400 = (i_21_ == i_19_ ? 4096 + i_23_ : -i_25_ + 12288);
+            anInt9400 /= 6;
+        } else {
+            anInt9400 = 0;
+        }
+        if (anInt9389 > 0 && anInt9389 < 4096) {
+            anInt9401 = (i_22_ << 12) / (anInt9389 > 2048 ? 8192 - anInt9389 * 2 : anInt9389 * 2);
+        } else {
+            anInt9401 = 0;
         }
     }
 
@@ -177,8 +180,9 @@ final class TextureOpHslAdjust extends TextureOp {
         anInt9397++;
         int i_29_ = 31 / ((i_27_ - -74) / 40);
         int i_30_ = (i > 2048 ? i_28_ + (i - (i * i_28_ >> 12)) : i * (4096 - -i_28_) >> 12);
-        if (i_30_ <= 0) anInt9386 = anInt9396 = anInt9392 = i;
-        else {
+        if (i_30_ <= 0) {
+            anInt9386 = anInt9396 = anInt9392 = i;
+        } else {
             i_26_ *= 6;
             int i_31_ = -i_30_ + i - -i;
             int i_32_ = (-i_31_ + i_30_ << 12) / i_30_;
@@ -190,83 +194,47 @@ final class TextureOpHslAdjust extends TextureOp {
             int i_36_ = i_35_ + i_31_;
             int i_37_ = i_30_ - i_35_;
             int i_38_ = i_33_;
-            while_208_:
-            do {
-                while_207_:
-                do {
-                    while_206_:
-                    do {
-                        while_205_:
-                        do {
-                            do {
-                                if (i_38_ == 0) {
-                                    anInt9396 = i_36_;
-                                    anInt9386 = i_30_;
-                                    anInt9392 = i_31_;
-                                    return;
-                                } else if (i_38_ != 1) {
-                                    if (i_38_ != 2) {
-                                        if (i_38_ != 3) {
-                                            if (i_38_ != 4) {
-                                                if (i_38_ != 5) break while_208_;
-                                            } else break while_206_;
-                                            break while_207_;
-                                        }
-                                    } else break;
-                                    break while_205_;
-                                }
-                                anInt9392 = i_31_;
-                                anInt9386 = i_37_;
-                                anInt9396 = i_30_;
-                                return;
-                            } while (false);
-                            anInt9392 = i_36_;
-                            anInt9386 = i_31_;
-                            anInt9396 = i_30_;
-                            return;
-                        } while (false);
-                        anInt9396 = i_37_;
-                        anInt9386 = i_31_;
-                        anInt9392 = i_30_;
-                        return;
-                    } while (false);
-                    anInt9396 = i_31_;
-                    anInt9386 = i_36_;
-                    anInt9392 = i_30_;
-                    return;
-                } while (false);
+            if (i_38_ == 0) {
+                anInt9396 = i_36_;
+                anInt9386 = i_30_;
+                anInt9392 = i_31_;
+            } else if (i_38_ == 1) {
+                anInt9392 = i_31_;
+                anInt9386 = i_37_;
+                anInt9396 = i_30_;
+            } else if (i_38_ == 2) {
+                anInt9392 = i_36_;
+                anInt9386 = i_31_;
+                anInt9396 = i_30_;
+            } else if (i_38_ == 3) {
+                anInt9396 = i_37_;
+                anInt9386 = i_31_;
+                anInt9392 = i_30_;
+            } else if (i_38_ == 4) {
+                anInt9396 = i_31_;
+                anInt9386 = i_36_;
+                anInt9392 = i_30_;
+            } else if (i_38_ == 5) {
                 anInt9386 = i_30_;
                 anInt9392 = i_37_;
                 anInt9396 = i_31_;
-            } while (false);
+            }
         }
     }
 
     final void decode(Packet packet, int i, int i_39_) {
-        while_209_:
-        do {
-            try {
-                anInt9384++;
-                if (i_39_ == 31015) {
-                    int i_40_ = i;
-                    do {
-                        if (i_40_ == 0) {
-                            anInt9402 = packet.readShort(13638);
-                            return;
-                        } else if (i_40_ != 1) {
-                            if (i_40_ == 2) break;
-                            break while_209_;
-                        }
-                        anInt9390 = (packet.readByte(-83) << 12) / 100;
-                        return;
-                    } while (false);
-                    anInt9398 = (packet.readByte(i_39_ + -31101) << 12) / 100;
-                    break;
-                }
-                break;
-            } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("vj.F(" + (packet != null ? "{...}" : "null") + ',' + i + ',' + i_39_ + ')'));
+        try {
+            anInt9384++;
+            int i_40_ = i;
+            if (i_40_ == 0) {
+                anInt9402 = packet.readShort(13638);
+            } else if (i_40_ == 1) {
+                anInt9390 = (packet.readByte(-83) << 12) / 100;
+            } else if (i_40_ == 2) {
+                anInt9398 = (packet.readByte(i_39_ + -31101) << 12) / 100;
             }
-        } while (false);
+        } catch (RuntimeException runtimeexception) {
+            throw Class348_Sub17.method2929(runtimeexception, ("vj.F(" + (packet != null ? "{...}" : "null") + ',' + i + ',' + i_39_ + ')'));
+        }
     }
 }

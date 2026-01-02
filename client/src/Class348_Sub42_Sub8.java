@@ -46,15 +46,15 @@ abstract class Class348_Sub42_Sub8 extends LinkedNode {
         if (i != -45) aShort9555 = (short) -74;
         if (bool) {
             if (r.anInt9721 != -1) Class14.method235(r.anInt9721, (byte) -113);
-            for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0); class348_sub41 != null; class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3482(0))) {
-                if (!class348_sub41.method2712((byte) 4)) {
-                    class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3484(i ^ ~0x2c));
+            for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aHashTable_4915.head(0); class348_sub41 != null; class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.next(0))) {
+                if (!class348_sub41.hasNext((byte) 4)) {
+                    class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.head(i ^ ~0x2c));
                     if (class348_sub41 == null) break;
                 }
                 Class127_Sub1.method1118(true, false, class348_sub41, 2533);
             }
             r.anInt9721 = -1;
-            Class125.aClass356_4915 = new Class356(8);
+            Class125.aHashTable_4915 = new HashTable(8);
             Class99.method882((byte) 11);
             r.anInt9721 = Class285.anInt4737;
             Option.method1713(false, 520);

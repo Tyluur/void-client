@@ -29,7 +29,7 @@ final class Deque {
 
     final void method1988(Deque deque_0_, byte i) {
         if (i != -115) method1995(-53);
-        method1989((this.aNode_3334.aNode_4294), false, deque_0_);
+        method1989((this.aNode_3334.prev), false, deque_0_);
         anInt3340++;
     }
 
@@ -37,14 +37,14 @@ final class Deque {
         do {
             try {
                 anInt3325++;
-                Node node_2_ = (this.aNode_3334.aNode_4295);
-                this.aNode_3334.aNode_4295 = node.aNode_4295;
-                node.aNode_4295.aNode_4294 = this.aNode_3334;
+                Node node_2_ = (this.aNode_3334.next);
+                this.aNode_3334.next = node.next;
+                node.next.prev = this.aNode_3334;
                 if (this.aNode_3334 != node) {
-                    node.aNode_4295 = (deque_1_.aNode_3334.aNode_4295);
-                    node.aNode_4295.aNode_4294 = node;
-                    deque_1_.aNode_3334.aNode_4295 = node_2_;
-                    node_2_.aNode_4294 = deque_1_.aNode_3334;
+                    node.next = (deque_1_.aNode_3334.next);
+                    node.next.prev = node;
+                    deque_1_.aNode_3334.next = node_2_;
+                    node_2_.prev = deque_1_.aNode_3334;
                 }
                 if (bool == false) break;
                 BILLBOARDS = null;
@@ -63,7 +63,7 @@ final class Deque {
             aNode_3342 = null;
             return null;
         }
-        aNode_3342 = node.aNode_4294;
+        aNode_3342 = node.prev;
         return node;
     }
 
@@ -144,12 +144,12 @@ final class Deque {
     // method1993
     final Node last(int i) {
         anInt3336++;
-        Node node = this.aNode_3334.aNode_4295;
+        Node node = this.aNode_3334.next;
         if (this.aNode_3334 == node) {
             aNode_3342 = null;
             return null;
         }
-        aNode_3342 = node.aNode_4295;
+        aNode_3342 = node.next;
         if (i > -65) last(67);
         return node;
     }
@@ -165,12 +165,12 @@ final class Deque {
     final Node method1995(int i) {
         if (i != 4) addFirst(null, -30);
         anInt3332++;
-        Node node = this.aNode_3334.aNode_4294;
+        Node node = this.aNode_3334.prev;
         if (node == this.aNode_3334) {
             aNode_3342 = null;
             return null;
         }
-        aNode_3342 = node.aNode_4294;
+        aNode_3342 = node.prev;
         return node;
     }
 
@@ -179,7 +179,7 @@ final class Deque {
         if (i > 97) {
             anInt3339++;
             for (; ; ) {
-                Node node = (this.aNode_3334.aNode_4294);
+                Node node = (this.aNode_3334.prev);
                 if (this.aNode_3334 == node) break;
                 node.unlink((byte) 24);
             }
@@ -190,7 +190,7 @@ final class Deque {
     final Node method1997(int i) {
         anInt3341++;
         if (i != 8) aClass190ArrayArray3335 = null;
-        Node node = this.aNode_3334.aNode_4294;
+        Node node = this.aNode_3334.prev;
         if (this.aNode_3334 == node) return null;
         node.unlink((byte) 114);
         return node;
@@ -199,22 +199,22 @@ final class Deque {
     final int method1998(int i) {
         anInt3333++;
         int i_22_ = i;
-        Node node = this.aNode_3334.aNode_4294;
+        Node node = this.aNode_3334.prev;
         while (node != this.aNode_3334) {
-            node = node.aNode_4294;
+            node = node.prev;
             i_22_++;
         }
         return i_22_;
     }
 
     final void method1999(Node node, int i) {
-        if (node.aNode_4295 != null) node.unlink((byte) 91);
+        if (node.next != null) node.unlink((byte) 91);
         anInt3328++;
-        node.aNode_4294 = this.aNode_3334;
-        node.aNode_4295 = this.aNode_3334.aNode_4295;
-        node.aNode_4295.aNode_4294 = node;
+        node.prev = this.aNode_3334;
+        node.next = this.aNode_3334.next;
+        node.next.prev = node;
         if (i != -20180) addFirst(null, -94);
-        node.aNode_4294.aNode_4295 = node;
+        node.prev.next = node;
     }
 
     static final Toolkit method2000(int i, int i_23_, Canvas canvas, TextureSource var_d) {
@@ -230,18 +230,18 @@ final class Deque {
     // method2001
     final void addFirst(Node node, int i) {
         anInt3330++;
-        if (node.aNode_4295 != null) node.unlink((byte) 63);
-        node.aNode_4295 = this.aNode_3334;
-        node.aNode_4294 = this.aNode_3334.aNode_4294;
+        if (node.next != null) node.unlink((byte) 63);
+        node.next = this.aNode_3334;
+        node.prev = this.aNode_3334.prev;
         if (i > -89) aFontRenderer_3326 = null;
-        node.aNode_4295.aNode_4294 = node;
-        node.aNode_4294.aNode_4295 = node;
+        node.next.prev = node;
+        node.prev.next = node;
     }
 
     final boolean method2002(byte i) {
         if (i != 18) aClass190ArrayArray3335 = null;
         anInt3327++;
-        return this.aNode_3334 == this.aNode_3334.aNode_4294;
+        return this.aNode_3334 == this.aNode_3334.prev;
     }
 
     final Node method2003(int i) {
@@ -252,12 +252,12 @@ final class Deque {
             return null;
         }
         int i_24_ = -111 / ((i - -88) / 38);
-        aNode_3342 = node.aNode_4295;
+        aNode_3342 = node.next;
         return node;
     }
 
     public Deque() {
-        this.aNode_3334.aNode_4295 = this.aNode_3334;
-        this.aNode_3334.aNode_4294 = this.aNode_3334;
+        this.aNode_3334.next = this.aNode_3334;
+        this.aNode_3334.prev = this.aNode_3334;
     }
 }

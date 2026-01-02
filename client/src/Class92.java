@@ -11,7 +11,7 @@ final class Class92 {
 
     static final void method858(boolean bool, Player player) {
         anInt1526++;
-        Class348_Sub9 class348_sub9 = ((Class348_Sub9) (Class348_Sub42_Sub16_Sub2.aClass356_10465.method3480(player.anInt10290, -6008)));
+        Class348_Sub9 class348_sub9 = ((Class348_Sub9) (Class348_Sub42_Sub16_Sub2.aHashTable_10465.get(player.anInt10290, -6008)));
         if (bool == true) {
             if (class348_sub9 == null) Class223.method1614(979190089, null, player.plane, (player.anIntArray10317[0]), (player.anIntArray10320[0]), player, null, 0);
             else class348_sub9.method2781((byte) 21);
@@ -47,12 +47,12 @@ final class Class92 {
                         int x = (i_8_ + (-za_Sub2.regionTileX + (Class348_Sub23_Sub3.mapRegionIds[i_1_] >> 8) * 64));
                         int y = (-Class90.regionTileY + (64 * (0xff & (Class348_Sub23_Sub3.mapRegionIds[i_1_])) - -i_9_));
                         NPCDefinition definition = (BillboardType.npcTypeList.method2079(packet.readUnsignedShort(842397944), -1));
-                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_5_, -6008));
+                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_5_, -6008));
                         if (class348_sub22 == null && (definition.walkMask & 0x1) > 0 && i_7_ == JavaThreadResource.anInt2204 && x >= 0 && (Class367_Sub4.mapLength > x - -definition.size) && y >= 0 && (TextureOpBinary.mapWidth > y + definition.size)) {
                             Npc npc = new Npc();
                             npc.anInt10290 = i_5_;
                             Class348_Sub22 class348_sub22_12_ = (new Class348_Sub22(npc));
-                            Class282.aClass356_3654.method3483((byte) 91, i_5_, class348_sub22_12_);
+                            Class282.aHashTable_3654.put((byte) 91, i_5_, class348_sub22_12_);
                             TextureOpIrregularBricks.aClass348_Sub22Array9319[Class348_Sub32.anInt6930++] = class348_sub22_12_;
                             Class74.anIntArray1233[IDKTypeList.anInt2057++] = i_5_;
                             npc.anInt10306 = Class367_Sub11.anInt7396;

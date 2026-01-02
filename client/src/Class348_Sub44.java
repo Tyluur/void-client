@@ -49,7 +49,7 @@ final class Class348_Sub44 extends Node {
         if (i >= -90) anInt7101 = -7;
         anInt7097++;
         if (Packet.anInt7207 == 1) return Option_Sub16.anInt6008;
-        return Class107.anInt1651;
+        return SecondaryLinkedList.anInt1651;
     }
 
     final int method3307(int i) {

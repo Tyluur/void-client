@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class308 {
+final class LRUHashTable {
     static int anInt3879;
     static int anInt3880;
     static int anInt3881;
@@ -12,17 +12,17 @@ final class Class308 {
     static int anInt3885;
     static int anInt3886;
     private LinkedNode aLinkedNode_3887 = new LinkedNode();
-    private final Class356 aClass356_3888;
-    private Class107 aClass107_3889 = new Class107();
-    private final int anInt3890;
-    private int anInt3891;
+    private final HashTable table;
+    private SecondaryLinkedList aSecondaryLinkedList_3889 = new SecondaryLinkedList();
+    private final int capacity;
+    private int available;
 
     final LinkedNode method2302(long l, byte i) {
         try {
-            if (i > -25) aClass107_3889 = null;
+            if (i > -25) aSecondaryLinkedList_3889 = null;
             anInt3885++;
-            LinkedNode linkedNode = (LinkedNode) aClass356_3888.method3480(l, -6008);
-            if (linkedNode != null) aClass107_3889.method1005(true, linkedNode);
+            LinkedNode linkedNode = (LinkedNode) table.get(l, -6008);
+            if (linkedNode != null) aSecondaryLinkedList_3889.addTail(true, linkedNode);
             return linkedNode;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "wu.D(" + l + ',' + i + ')');
@@ -31,22 +31,22 @@ final class Class308 {
 
     final void method2303(boolean bool) {
         anInt3879++;
-        if (bool != true) method2305(-121L, null, -1);
-        aClass107_3889.method1009(2110355138);
-        aClass356_3888.method3481(0);
+        if (bool != true) put(-121L, null, -1);
+        aSecondaryLinkedList_3889.clear(2110355138);
+        table.clear(0);
         aLinkedNode_3887 = new LinkedNode();
-        anInt3891 = anInt3890;
+        available = capacity;
     }
 
     final void method2304(int i, long l) {
         do {
             try {
                 anInt3880++;
-                LinkedNode linkedNode = (LinkedNode) aClass356_3888.method3480(l, -6008);
+                LinkedNode linkedNode = (LinkedNode) table.get(l, -6008);
                 if (linkedNode != null) {
                     linkedNode.unlink((byte) 73);
-                    linkedNode.method3162(true);
-                    anInt3891++;
+                    linkedNode.unlinkSecondary(true);
+                    available++;
                 }
                 if (i <= -110) break;
                 method2304(36, -86L);
@@ -57,21 +57,21 @@ final class Class308 {
         } while (false);
     }
 
-    final void method2305(long l, LinkedNode linkedNode, int i) {
+    final void put(long l, LinkedNode linkedNode, int i) {
         try {
             anInt3881++;
-            if ((~anInt3891) == i) {
-                LinkedNode linkedNode_0_ = aClass107_3889.method1008(20);
+            if ((~available) == i) {
+                LinkedNode linkedNode_0_ = aSecondaryLinkedList_3889.removeHead(20);
                 linkedNode_0_.unlink((byte) 113);
-                linkedNode_0_.method3162(true);
+                linkedNode_0_.unlinkSecondary(true);
                 if (linkedNode_0_ == aLinkedNode_3887) {
-                    linkedNode_0_ = aClass107_3889.method1008(20);
+                    linkedNode_0_ = aSecondaryLinkedList_3889.removeHead(20);
                     linkedNode_0_.unlink((byte) 79);
-                    linkedNode_0_.method3162(true);
+                    linkedNode_0_.unlinkSecondary(true);
                 }
-            } else anInt3891--;
-            aClass356_3888.method3483((byte) 37, l, linkedNode);
-            aClass107_3889.method1005(true, linkedNode);
+            } else available--;
+            table.put((byte) 37, l, linkedNode);
+            aSecondaryLinkedList_3889.addTail(true, linkedNode);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("wu.E(" + l + ',' + (linkedNode != null ? "{...}" : "null") + ',' + i + ')'));
         }
@@ -84,14 +84,14 @@ final class Class308 {
         aByteArrayArray3882 = null;
     }
 
-    Class308(int i) {
-        anInt3891 = i;
-        anInt3890 = i;
-        int i_1_;
-        for (i_1_ = 1; i_1_ + i_1_ < i; i_1_ += i_1_) {
+    LRUHashTable(int capacity) {
+        available = capacity;
+        this.capacity = capacity;
+        int buckets;
+        for (buckets = 1; buckets + buckets < capacity; buckets += buckets) {
             /* empty */
         }
-        aClass356_3888 = new Class356(i_1_);
+        table = new HashTable(buckets);
     }
 
     static {

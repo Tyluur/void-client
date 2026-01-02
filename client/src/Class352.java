@@ -20,10 +20,10 @@ final class Class352 {
     static final void method3459(Class348_Sub34 class348_sub34, int i, int i_0_, int i_1_, int i_2_) {
         anInt4330++;
         long l = i_0_ << 14 | i << 28 | i_1_;
-        Class348_Sub37 class348_sub37 = (Class348_Sub37) Class130.aClass356_1895.method3480(l, -6008);
+        Class348_Sub37 class348_sub37 = (Class348_Sub37) Class130.aHashTable_1895.get(l, -6008);
         if (class348_sub37 == null) {
             class348_sub37 = new Class348_Sub37();
-            Class130.aClass356_1895.method3483((byte) 50, l, class348_sub37);
+            Class130.aHashTable_1895.put((byte) 50, l, class348_sub37);
             class348_sub37.aDeque_6998.method1999(class348_sub34, -20180);
         } else {
             ItemDefinition itemDefinition = Exception_Sub1.itemTypeList.method1940(i_2_ ^ ~0x72, (class348_sub34.anInt6973));

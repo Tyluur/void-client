@@ -93,7 +93,7 @@ final class Class85 {
 
     static final void method830(int i, int i_21_, byte i_22_, boolean bool, int i_23_) {
         anInt1461++;
-        Class348_Sub42_Sub3.method3179(0);
+        ByteArraySecondaryNode.method3179(0);
         Class348_Sub16_Sub2.aLong8866 = 0L;
         int i_24_ = Class348_Sub42_Sub12.method3229(-82);
         if (i_22_ == 102) {

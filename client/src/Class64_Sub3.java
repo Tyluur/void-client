@@ -1694,7 +1694,7 @@ final class Class64_Sub3 extends Model {
 
     static final void method690(byte i, int i_378_) {
         anInt5565++;
-        Class348_Sub15 class348_sub15 = ((Class348_Sub15) Class27.aClass356_389.method3480(i_378_, -6008));
+        Class348_Sub15 class348_sub15 = ((Class348_Sub15) Class27.aHashTable_389.get(i_378_, -6008));
         int i_379_ = -8 % ((i - -49) / 44);
         if (class348_sub15 != null) {
             class348_sub15.aClass55_Sub1_6768.method508(1);

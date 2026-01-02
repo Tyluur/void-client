@@ -11,7 +11,7 @@ final class Class100 {
     private Class83 aClass83_1582;
     static int[] anIntArray1583 = new int[14];
     private int anInt1584 = 0;
-    static Class356 aClass356_1585 = new Class356(16);
+    static HashTable aHashTable_1585 = new HashTable(16);
     Class286_Sub1 aClass286_Sub1_1586;
     static int anInt1587;
     private final Class286[] aClass286Array1588;
@@ -58,7 +58,7 @@ final class Class100 {
     }
 
     public static void method886(int i) {
-        aClass356_1585 = null;
+        aHashTable_1585 = null;
         aClass78Array1579 = null;
         if (i != 16) aClass78Array1579 = null;
         anIntArray1583 = null;

@@ -10,11 +10,11 @@ class Node {
     static int[] anIntArray4288;
     static int anInt4289;
     static int anInt4290;
-    long aLong4291;
+    long key;
     static int anInt4292 = 0;
     static Class318_Sub1[] aClass318_Sub1Array4293;
-    Node aNode_4294;
-    Node aNode_4295;
+    Node prev;
+    Node next;
     static int anInt4296;
     static int anInt4297;
     static int anInt4298;
@@ -120,10 +120,9 @@ class Node {
         }
     }
 
-    final boolean method2712(byte i) {
-        if (i != 4) return true;
+    final boolean hasNext(byte i) {
         anInt4297++;
-        return this.aNode_4295 != null;
+        return this.next != null;
     }
 
     public static void method2713(int i) {
@@ -142,12 +141,11 @@ class Node {
     // method2715
     final void unlink(byte i) {
         anInt4285++;
-        if (this.aNode_4295 != null) {
-            this.aNode_4295.aNode_4294 = this.aNode_4294;
-            this.aNode_4294.aNode_4295 = this.aNode_4295;
-            if (i < 18) method2712((byte) 46);
-            this.aNode_4294 = null;
-            this.aNode_4295 = null;
+        if (this.next != null) {
+            this.next.prev = this.prev;
+            this.prev.next = this.next;
+            this.prev = null;
+            this.next = null;
         }
     }
 

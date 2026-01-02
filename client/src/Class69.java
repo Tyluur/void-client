@@ -31,12 +31,12 @@ final class Class69 {
     static final void method721(LinkedNode linkedNode, LinkedNode linkedNode_1_, int i) {
         do {
             try {
-                if (linkedNode_1_.aLinkedNode_7060 != null) linkedNode_1_.method3162(true);
+                if (linkedNode_1_.secondaryPrevious != null) linkedNode_1_.unlinkSecondary(true);
                 anInt1194++;
-                linkedNode_1_.aLinkedNode_7063 = linkedNode;
-                linkedNode_1_.aLinkedNode_7060 = linkedNode.aLinkedNode_7060;
-                linkedNode_1_.aLinkedNode_7060.aLinkedNode_7063 = linkedNode_1_;
-                linkedNode_1_.aLinkedNode_7063.aLinkedNode_7060 = linkedNode_1_;
+                linkedNode_1_.secondaryNext = linkedNode;
+                linkedNode_1_.secondaryPrevious = linkedNode.secondaryPrevious;
+                linkedNode_1_.secondaryPrevious.secondaryNext = linkedNode_1_;
+                linkedNode_1_.secondaryNext.secondaryPrevious = linkedNode_1_;
                 if (i == -1) break;
                 aClass69_1199 = null;
             } catch (RuntimeException runtimeexception) {

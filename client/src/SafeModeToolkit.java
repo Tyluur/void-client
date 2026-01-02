@@ -11,7 +11,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
     private final Deque aDeque_5123;
     private boolean aBoolean5124 = false;
     private Matrix aMatrix_5125;
-    private final Class356 aClass356_5126;
+    private final HashTable aHashTable_5126;
     private int anInt5127;
     private int anInt5128;
     private static final float[] aFloatArray5129 = new float[20];
@@ -217,7 +217,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
 
     final void method3701(Canvas canvas) {
         if (aP5137.aCanvas5147 == canvas) method3677(null);
-        p var_p = (p) aClass356_5126.method3480(canvas.hashCode(), -6008);
+        p var_p = (p) aHashTable_5126.get(canvas.hashCode(), -6008);
         if (var_p != null) {
             var_p.unlink((byte) 110);
             var_p.method3436();
@@ -258,7 +258,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
             aP5137 = null;
             aYa5121 = null;
             aMatrix_5131 = null;
-            aClass356_5126.method3481(0);
+            aHashTable_5126.clear(0);
             for (ya var_ya = (ya) aDeque_5123.method1995(4); var_ya != null; var_ya = (ya) aDeque_5123.method1990((byte) 36))
                 var_ya.ga();
             aDeque_5123.clear(117);
@@ -274,7 +274,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
     }
 
     final void method3669(Canvas canvas, int i, int i_108_) {
-        p var_p = (p) aClass356_5126.method3480(canvas.hashCode(), -6008);
+        p var_p = (p) aHashTable_5126.get(canvas.hashCode(), -6008);
         var_p.method3435(canvas, i, i_108_);
         if (canvas != null && canvas == aP5137.aCanvas5147) method3677(canvas);
     }
@@ -365,11 +365,11 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
     private final native void va(za var_za);
 
     final void method3643(Canvas canvas, int i, int i_153_) {
-        p var_p = (p) aClass356_5126.method3480(canvas.hashCode(), -6008);
+        p var_p = (p) aHashTable_5126.get(canvas.hashCode(), -6008);
         if (var_p == null) {
             canvas.setIgnoreRepaint(true);
             var_p = new p(this, canvas, i, i_153_);
-            aClass356_5126.method3483((byte) 36, canvas.hashCode(), var_p);
+            aHashTable_5126.put((byte) 36, canvas.hashCode(), var_p);
         } else if (var_p.anInt5145 != i || var_p.anInt5148 != i_153_) var_p.method3435(canvas, i, i_153_);
     }
 
@@ -422,7 +422,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
             aP5137 = null;
             t(null);
         } else {
-            p var_p = (p) aClass356_5126.method3480(canvas.hashCode(), -6008);
+            p var_p = (p) aHashTable_5126.get(canvas.hashCode(), -6008);
             aP5137 = var_p;
             t(var_p);
         }
@@ -459,7 +459,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
         aDeque_5123 = new Deque();
         anInt5127 = 4096;
         anInt5128 = 4096;
-        aClass356_5126 = new Class356(4);
+        aHashTable_5126 = new HashTable(4);
         aBoolean5142 = false;
         do {
             try {

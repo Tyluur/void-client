@@ -148,7 +148,7 @@ final class Class348_Sub9 extends Node {
                             Class348_Sub42_Sub14.method3243(119, class348_sub47);
                         }
                         if (i_8_ != 10) break;
-                        Class308.anInt3886++;
+                        LRUHashTable.anInt3886++;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class281.aClass351_3644, (Class348_Sub23_Sub2.aClass77_9029), -120);
                         Class375.method3614(i_9_, i, class46.anInt812, class348_sub47, -19692);
                         Class348_Sub42_Sub14.method3243(117, class348_sub47);

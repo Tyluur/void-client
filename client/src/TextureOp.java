@@ -19,7 +19,7 @@ abstract class TextureOp extends Node {
     static int anInt7038;
     static int anInt7039;
     static int anInt7040;
-    static Class356 aClass356_7041 = new Class356(32);
+    static HashTable aHashTable_7041 = new HashTable(32);
     static Class279 aClass279_7042;
     static int anInt7043;
     static int anInt7044;
@@ -80,7 +80,7 @@ abstract class TextureOp extends Node {
     public static void method3040(boolean bool) {
         aClass279_7042 = null;
         if (bool != true) method3036(null, -43);
-        aClass356_7041 = null;
+        aHashTable_7041 = null;
     }
 
     static final void method3041(int i, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_) {

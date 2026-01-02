@@ -127,7 +127,7 @@ final class ColourImageCacheSlot extends Node {
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class328_Sub1_Sub1.aClass351_8798), (Class348_Sub23_Sub2.aClass77_9029), -111);
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 3 * Class253.anInt3246);
                     for (int i_13_ = 0; (i_13_ < Class253.anInt3246); i_13_++) {
-                        KeyLog keyLog = Class308.anKeyLogArray3884[i_13_];
+                        KeyLog keyLog = LRUHashTable.anKeyLogArray3884[i_13_];
                         long l = ((keyLog.method29((byte) -29) + -Class348_Sub7.aLong6651) / 50L);
                         Class348_Sub7.aLong6651 = keyLog.method29((byte) 106);
                         if (l > 65535L) l = 65535L;
@@ -174,7 +174,7 @@ final class ColourImageCacheSlot extends Node {
                 else Class50_Sub1.aBoolean5224 = false;
                 Class348_Sub35.method3027((byte) 33);
                 if (Class240.mainLogicStep == 10) {
-                    Class348_Sub42_Sub3.method3175((byte) 55);
+                    ByteArraySecondaryNode.method3175((byte) 55);
                     Class38.method362(i + -11335);
                     Class206.method1501(-123);
                     Class348_Sub50.anInt7213++;

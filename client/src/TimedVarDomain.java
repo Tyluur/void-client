@@ -11,7 +11,7 @@ final class TimedVarDomain implements Interface17 {
     static Class237_Sub1 aClass237_Sub1_5067;
     static int anInt5068;
     static int anInt5069;
-    private Class356 aClass356_5070 = new Class356(128);
+    private HashTable aHashTable_5070 = new HashTable(128);
     static int anInt5071;
     static int anInt5072;
     static int anInt5073;
@@ -28,10 +28,10 @@ final class TimedVarDomain implements Interface17 {
         anInt5071++;
         if (i >= -124) method1308(-105, 89, -65, -52, (byte) 76, 37, -61, 73);
         long l = Class62.safeTime(-79);
-        for (Class348_Sub14 class348_sub14 = (bool ? (Class348_Sub14) aClass356_5070.method3484(0) : (Class348_Sub14) aClass356_5070.method3482(0)); class348_sub14 != null; class348_sub14 = (Class348_Sub14) aClass356_5070.method3482(0)) {
+        for (Class348_Sub14 class348_sub14 = (bool ? (Class348_Sub14) aHashTable_5070.head(0) : (Class348_Sub14) aHashTable_5070.next(0)); class348_sub14 != null; class348_sub14 = (Class348_Sub14) aHashTable_5070.next(0)) {
             if (l > (class348_sub14.aLong6762 & 0x3fffffffffffffffL)) {
                 if ((0x4000000000000000L & class348_sub14.aLong6762) != 0L) {
-                    int i_0_ = (int) class348_sub14.aLong4291;
+                    int i_0_ = (int) class348_sub14.key;
                     this.anIntArray5063[i_0_] = anIntArray5078[i_0_];
                     class348_sub14.unlink((byte) 31);
                     return i_0_;
@@ -46,10 +46,10 @@ final class TimedVarDomain implements Interface17 {
         if (i == -78) {
             anInt5066++;
             this.anIntArray5063[i_2_] = i_1_;
-            Class348_Sub14 class348_sub14 = ((Class348_Sub14) aClass356_5070.method3480(i_2_, -6008));
+            Class348_Sub14 class348_sub14 = ((Class348_Sub14) aHashTable_5070.get(i_2_, -6008));
             if (class348_sub14 == null) {
                 class348_sub14 = new Class348_Sub14(500L + Class62.safeTime(-122));
-                aClass356_5070.method3483((byte) 73, i_2_, class348_sub14);
+                aHashTable_5070.put((byte) 73, i_2_, class348_sub14);
             } else class348_sub14.aLong6762 = Class62.safeTime(-88) - -500L;
         }
     }
@@ -118,10 +118,10 @@ final class TimedVarDomain implements Interface17 {
         anInt5073++;
         if (i != 42) anInt5065 = -16;
         anIntArray5078[i_25_] = i_24_;
-        Class348_Sub14 class348_sub14 = ((Class348_Sub14) aClass356_5070.method3480(i_25_, i + -6050));
+        Class348_Sub14 class348_sub14 = ((Class348_Sub14) aHashTable_5070.get(i_25_, i + -6050));
         if (class348_sub14 == null) {
             class348_sub14 = new Class348_Sub14(4611686018427387905L);
-            aClass356_5070.method3483((byte) 19, i_25_, class348_sub14);
+            aHashTable_5070.put((byte) 19, i_25_, class348_sub14);
         } else if (class348_sub14.aLong6762 != 4611686018427387905L) class348_sub14.aLong6762 = 0x4000000000000000L | 500L + Class62.safeTime(-108);
     }
 
@@ -134,7 +134,7 @@ final class TimedVarDomain implements Interface17 {
             }
         }
         anInt5076++;
-        aClass356_5070 = new Class356(128);
+        aHashTable_5070 = new HashTable(128);
         int i_27_ = -69 % ((25 - i) / 39);
     }
 
@@ -184,7 +184,7 @@ final class TimedVarDomain implements Interface17 {
         if (i != -65536) method1310(false);
         for (int i_38_ = 0; i_38_ < Matrix.anInt1597; i_38_++) {
             int i_39_ = Class13.anIntArray224[i_38_];
-            Npc npc = (((Class348_Sub22) Class282.aClass356_3654.method3480(i_39_, -6008)).aNpc_6859);
+            Npc npc = (((Class348_Sub22) Class282.aHashTable_3654.get(i_39_, -6008)).aNpc_6859);
             int i_40_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             if ((0x10 & i_40_) != 0) i_40_ += Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(i ^ ~0xff00) << 8;
             if ((0x2 & i_40_) != 0) {

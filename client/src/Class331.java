@@ -36,9 +36,9 @@ final class Class331 {
     static final void method2636(int i) {
         int i_5_ = -114 % ((i - 22) / 33);
         anInt4137++;
-        Class100.aClass356_1585.method3481(0);
-        s_Sub2.aClass107_8241.method1009(2110355138);
-        Class367_Sub4.aClass107_7325.method1009(2110355138);
+        Class100.aHashTable_1585.clear(0);
+        s_Sub2.aSecondaryLinkedList_8241.clear(2110355138);
+        Class367_Sub4.aSecondaryLinkedList_7325.clear(2110355138);
     }
 
     public static void method2637(int i) {

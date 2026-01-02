@@ -17,7 +17,7 @@ final class Class348_Sub38 extends Node {
     static int anInt7008 = 0;
     static int anInt7009;
     private final int anInt7010;
-    private Class356 aClass356_7011;
+    private HashTable aHashTable_7011;
     static int anInt7012;
     private int anInt7013;
     private final int anInt7014;
@@ -61,14 +61,14 @@ final class Class348_Sub38 extends Node {
         int i_14_ = aS_Sub3_7019.method3986(i_12_, i_13_, (byte) -127);
         if ((i_10_ & 0x7f) == 0 || (i_8_ & 0x7f) == 0) {
             l = ((long) i_13_ & 0xffffL) << 16 | (long) i_12_ & 0xffffL;
-            Node node = aClass356_7011.method3480(l, i_7_ + 23335);
+            Node node = aHashTable_7011.get(l, i_7_ + 23335);
             if (node != null) {
                 method3034((((Class348_Sub29) node).aShort6911), (byte) 49);
                 return;
             }
         }
         short i_15_ = (short) anInt7013++;
-        if (l != -1) aClass356_7011.method3483((byte) 101, l, new Class348_Sub29(i_15_));
+        if (l != -1) aHashTable_7011.put((byte) 101, l, new Class348_Sub29(i_15_));
         float f;
         float f_16_;
         float f_17_;
@@ -220,7 +220,7 @@ final class Class348_Sub38 extends Node {
                 } else i_48_ += -anInt7023 + anInt7017;
             }
             if (anInt7018 > 0) {
-                aClass356_7011 = new Class356(EnumTypeList.method340(anInt7018, (byte) 108));
+                aHashTable_7011 = new HashTable(EnumTypeList.method340(anInt7018, (byte) 108));
                 anInterface5_Impl2_7002 = aNativeToolkit_7007.method3840(-28633, false);
                 anInterface5_Impl2_7002.method23(15959, anInt7018);
                 jaclib.memory.heap.NativeHeapBuffer nativeheapbuffer = aNativeToolkit_7007.method3869((byte) 86, false, 16 * anInt7018);
@@ -282,7 +282,7 @@ final class Class348_Sub38 extends Node {
                         aStream7021.a();
                         if (anInterface5_Impl2_7002.method22(-23)) break;
                         aStream7022.e(0);
-                        aClass356_7011.method3481(0);
+                        aHashTable_7011.clear(0);
                     }
                 }
                 aStream7022.a();
@@ -295,7 +295,7 @@ final class Class348_Sub38 extends Node {
             aFloatArrayArray7005 = aFloatArrayArray7016 = aFloatArrayArray7001 = null;
             aStream7022 = null;
             aStream7021 = null;
-            aClass356_7011 = null;
+            aHashTable_7011 = null;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("sea.<init>(" + (var_nativeToolkit != null ? "{...}" : "null") + ',' + (var_s_Sub3 != null ? "{...}" : "null") + ',' + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
         }

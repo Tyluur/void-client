@@ -31,7 +31,7 @@ final class Class295 {
     static final void method2221(Player player, int i) {
         anInt3752++;
         if (i != -28482) aClass348_Sub42_Sub17Array3753 = null;
-        Class348_Sub9 class348_sub9 = ((Class348_Sub9) (Class348_Sub42_Sub16_Sub2.aClass356_10465.method3480(player.anInt10290, -6008)));
+        Class348_Sub9 class348_sub9 = ((Class348_Sub9) (Class348_Sub42_Sub16_Sub2.aHashTable_10465.get(player.anInt10290, -6008)));
         if (class348_sub9 != null) {
             if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
                 Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676);

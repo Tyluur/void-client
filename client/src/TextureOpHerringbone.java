@@ -14,21 +14,13 @@ final class TextureOpHerringbone extends TextureOp {
     final void decode(Packet packet, int i, int i_0_) {
         anInt9100++;
         int i_1_ = i;
-        while_132_:
-        do {
-            do {
-                if (i_1_ == 0) {
-                    anInt9099 = packet.readUnsignedByte(i_0_ ^ 0x79d8);
-                    break while_132_;
-                } else if (i_1_ != 1) {
-                    if (i_1_ == 2) break;
-                    break while_132_;
-                }
-                anInt9095 = packet.readUnsignedByte(255);
-                break while_132_;
-            } while (false);
+        if (i_1_ == 0) {
+            anInt9099 = packet.readUnsignedByte(i_0_ ^ 0x79d8);
+        } else if (i_1_ == 1) {
+            anInt9095 = packet.readUnsignedByte(255);
+        } else if (i_1_ == 2) {
             anInt9098 = packet.readUnsignedShort(842397944);
-        } while (false);
+        }
         if (i_0_ != 31015) monochromeOutput(-14, -114);
     }
 

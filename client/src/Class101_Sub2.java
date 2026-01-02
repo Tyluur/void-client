@@ -308,7 +308,7 @@ final class Class101_Sub2 extends Matrix {
                     }
                     class348_sub9.unlink((byte) 66);
                 }
-                for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class348_Sub42_Sub16_Sub2.aClass356_10465.method3484(0); class348_sub9 != null; class348_sub9 = (Class348_Sub9) Class348_Sub42_Sub16_Sub2.aClass356_10465.method3482(0)) {
+                for (Class348_Sub9 class348_sub9 = (Class348_Sub9) Class348_Sub42_Sub16_Sub2.aHashTable_10465.head(0); class348_sub9 != null; class348_sub9 = (Class348_Sub9) Class348_Sub42_Sub16_Sub2.aHashTable_10465.next(0)) {
                     if ((class348_sub9.aClass348_Sub16_Sub5_6676) != null) {
                         Class348_Sub43.aClass348_Sub16_Sub4_7065.method2880(class348_sub9.aClass348_Sub16_Sub5_6676);
                         class348_sub9.aClass348_Sub16_Sub5_6676 = null;

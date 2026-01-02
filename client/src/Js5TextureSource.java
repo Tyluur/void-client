@@ -16,7 +16,7 @@ final class Js5TextureSource implements TextureSource {
     private final Index aIndex_4619;
     static int anInt4620;
     static int anInt4621;
-    private final Class308 aClass308_4622 = new Class308(256);
+    private final LRUHashTable aLRUHashTable_4622 = new LRUHashTable(256);
     static int[] anIntArray4623 = new int[8];
     private final Index aIndex_4624;
     private final int anInt4625;
@@ -36,13 +36,13 @@ final class Js5TextureSource implements TextureSource {
 
     private final Texture method1881(int i, boolean bool) {
         anInt4620++;
-        LinkedNode linkedNode = aClass308_4622.method2302(i, (byte) -34);
+        LinkedNode linkedNode = aLRUHashTable_4622.method2302(i, (byte) -34);
         if (linkedNode != null) return (Texture) linkedNode;
         byte[] is = aIndex_4619.method415((byte) 73, i);
         if (is == null) return null;
         if (bool != false) method1(-58, 1.9039171F, false, -106, -22, -18);
         Texture texture = new Texture(new Packet(is));
-        aClass308_4622.method2305(i, texture, -1);
+        aLRUHashTable_4622.put(i, texture, -1);
         return texture;
     }
 

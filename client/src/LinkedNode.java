@@ -4,13 +4,13 @@
 
 // Class348_Sub42
 class LinkedNode extends Node {
-    long aLong7057;
+    long linkedKey;
     static Class2 aClass2_7058;
     static int anInt7059 = 0;
-    LinkedNode aLinkedNode_7060;
+    LinkedNode secondaryPrevious;
     static int anInt7061;
     static int anInt7062;
-    LinkedNode aLinkedNode_7063;
+    LinkedNode secondaryNext;
     static int anInt7064;
 
     public static void method3161(int i) {
@@ -18,14 +18,13 @@ class LinkedNode extends Node {
         aClass2_7058 = null;
     }
 
-    final void method3162(boolean bool) {
+    final void unlinkSecondary(boolean bool) {
         anInt7064++;
-        if (bool != true) method3163((byte) 50);
-        if (this.aLinkedNode_7060 != null) {
-            this.aLinkedNode_7060.aLinkedNode_7063 = this.aLinkedNode_7063;
-            this.aLinkedNode_7063.aLinkedNode_7060 = this.aLinkedNode_7060;
-            this.aLinkedNode_7060 = null;
-            this.aLinkedNode_7063 = null;
+        if (this.secondaryPrevious != null) {
+            this.secondaryPrevious.secondaryNext = this.secondaryNext;
+            this.secondaryNext.secondaryPrevious = this.secondaryPrevious;
+            this.secondaryPrevious = null;
+            this.secondaryNext = null;
         }
     }
 
@@ -41,10 +40,10 @@ class LinkedNode extends Node {
         }
     }
 
-    final boolean method3164(byte i) {
+    final boolean isSecondaryLinked(byte i) {
         anInt7061++;
-        if (this.aLinkedNode_7060 == null) return false;
-        if (i != 1) method3162(false);
+        if (this.secondaryPrevious == null) return false;
+        if (i != 1) unlinkSecondary(false);
         return true;
     }
 

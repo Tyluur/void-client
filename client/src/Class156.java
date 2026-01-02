@@ -13,7 +13,7 @@ final class Class156 {
     private LinkedNode aLinkedNode_2115;
     static int anInt2116;
     static int[] anIntArray2117 = new int[2];
-    private Class107 aClass107_2118;
+    private SecondaryLinkedList aSecondaryLinkedList_2118;
     static int anInt2119;
     static int anInt2120;
 
@@ -32,12 +32,12 @@ final class Class156 {
     final LinkedNode method1240(int i) {
         anInt2114++;
         if (i <= 7) method1240(79);
-        LinkedNode linkedNode = (aClass107_2118.aLinkedNode_1647.aLinkedNode_7063);
-        if (linkedNode == aClass107_2118.aLinkedNode_1647) {
+        LinkedNode linkedNode = (aSecondaryLinkedList_2118.nextPrevious.secondaryNext);
+        if (linkedNode == aSecondaryLinkedList_2118.nextPrevious) {
             aLinkedNode_2115 = null;
             return null;
         }
-        aLinkedNode_2115 = linkedNode.aLinkedNode_7063;
+        aLinkedNode_2115 = linkedNode.secondaryNext;
         return linkedNode;
     }
 
@@ -86,15 +86,15 @@ final class Class156 {
         anInt2120++;
         if (i < 44) aStringArray2113 = null;
         LinkedNode linkedNode = aLinkedNode_2115;
-        if (linkedNode == aClass107_2118.aLinkedNode_1647) {
+        if (linkedNode == aSecondaryLinkedList_2118.nextPrevious) {
             aLinkedNode_2115 = null;
             return null;
         }
-        aLinkedNode_2115 = linkedNode.aLinkedNode_7063;
+        aLinkedNode_2115 = linkedNode.secondaryNext;
         return linkedNode;
     }
 
-    Class156(Class107 class107) {
-        aClass107_2118 = class107;
+    Class156(SecondaryLinkedList secondaryLinkedList) {
+        aSecondaryLinkedList_2118 = secondaryLinkedList;
     }
 }

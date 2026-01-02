@@ -22,7 +22,7 @@ final class Class318_Sub2 extends Class318 {
                 if (!Class148.method1197(-12081, class348_sub42_sub12.anInt9608)) {
                     if ((class348_sub42_sub12.anInt9599) == -1) {
                         if (Class367_Sub8.method3549((class348_sub42_sub12.anInt9608), (byte) -119)) {
-                            Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480((int) (class348_sub42_sub12.aLong9605), -6008)));
+                            Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aHashTable_3654.get((int) (class348_sub42_sub12.aLong9605), -6008)));
                             if (class348_sub22 != null) {
                                 Npc npc = (class348_sub22.aNpc_6859);
                                 NPCDefinition NPCDefinition = (npc.aNPCDefinition_10505);

@@ -853,7 +853,7 @@ final class Mesh {
         Dimension dimension = canvas.getSize();
         if (i != -99) method1096(57);
         Class85.method828((byte) 38, dimension.height, dimension.width);
-        if (Packet.anInt7207 != 1) Class21.aToolkit326.method3643(canvas, Class59_Sub1.anInt5283, Class107.anInt1651);
+        if (Packet.anInt7207 != 1) Class21.aToolkit326.method3643(canvas, Class59_Sub1.anInt5283, SecondaryLinkedList.anInt1651);
         else Class21.aToolkit326.method3643(canvas, Class348_Sub16_Sub1.anInt8854, Option_Sub16.anInt6008);
     }
 

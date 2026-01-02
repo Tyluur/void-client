@@ -38,3 +38,10 @@ Class348_Sub40_Sub29,TextureOpTexture
 Class348_Sub40_Sub21,TextureOp37
 Class348_Sub40_Sub28,TextureOpLineNoise
 Class348_Sub40_Sub17,TextureOpSprite
+Class348_Sub42_Sub3,ByteArraySecondaryNode
+Class308,LRUHashTable
+Class356,HashTable
+Class348,Node
+Class348_Sub42,LinkedNode
+Class107,SecondaryLinkedList
+Class207,Class207

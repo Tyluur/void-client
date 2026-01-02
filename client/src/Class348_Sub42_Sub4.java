@@ -22,7 +22,7 @@ final class Class348_Sub42_Sub4 extends LinkedNode {
                     if (class46.anInt774 == 0) {
                         method3180(class46.anInt830, class46s, 24235);
                         if (class46.aClass46Array798 != null) method3180(class46.anInt830, class46.aClass46Array798, i_0_);
-                        Class348_Sub41 class348_sub41 = ((Class348_Sub41) (Class125.aClass356_4915.method3480(class46.anInt830, -6008)));
+                        Class348_Sub41 class348_sub41 = ((Class348_Sub41) (Class125.aHashTable_4915.get(class46.anInt830, -6008)));
                         if (class348_sub41 != null) Class75_Sub1.method769(class348_sub41.anInt7050, (byte) 116);
                     }
                     if (class46.anInt774 == 6 && class46.anInt699 != -1) {

@@ -67,7 +67,7 @@ final class NPCDefinition {
     int anInt1383;
     byte aByte1384;
     int anInt1385;
-    private Class356 aClass356_1386;
+    private HashTable aHashTable_1386;
     static int anInt1387;
     private int[][] anIntArrayArray1388;
     static int anInt1389;
@@ -256,9 +256,9 @@ final class NPCDefinition {
                                                                                     } else if (i != 165) {
                                                                                         if (i == 249) {
                                                                                             int i_17_ = packet.readUnsignedByte(255);
-                                                                                            if (aClass356_1386 == null) {
+                                                                                            if (aHashTable_1386 == null) {
                                                                                                 int i_18_ = EnumTypeList.method340(i_17_, (byte) 108);
-                                                                                                aClass356_1386 = new Class356(i_18_);
+                                                                                                aHashTable_1386 = new HashTable(i_18_);
                                                                                             }
                                                                                             for (int i_19_ = 0; i_17_ > i_19_; i_19_++) {
                                                                                                 boolean bool = packet.readUnsignedByte(255) == 1;
@@ -266,7 +266,7 @@ final class NPCDefinition {
                                                                                                 Node node;
                                                                                                 if (!bool) node = new Class348_Sub35(packet.readInt((byte) -126));
                                                                                                 else node = new Class348_Sub50(packet.readString((byte) -120));
-                                                                                                aClass356_1386.method3483((byte) 61, i_20_, node);
+                                                                                                aHashTable_1386.put((byte) 61, i_20_, node);
                                                                                             }
                                                                                         }
                                                                                     } else this.anInt1337 = packet.readUnsignedByte(255);
@@ -533,7 +533,7 @@ final class NPCDefinition {
                 if (aShortArray1328 != null) {
                     for (int i_80_ = 0; (i_80_ < aShortArray1328.length); i_80_++) {
                         if (aByteArray1374 == null || aByteArray1374.length <= i_80_) model.ia(aShortArray1328[i_80_], aShortArray1352[i_80_]);
-                        else model.ia(aShortArray1328[i_80_], (Class348_Sub42_Sub3.aShortArray9502[aByteArray1374[i_80_] & 0xff]));
+                        else model.ia(aShortArray1328[i_80_], (ByteArraySecondaryNode.aShortArray9502[aByteArray1374[i_80_] & 0xff]));
                     }
                 }
                 if (aShortArray1393 != null) {
@@ -604,9 +604,9 @@ final class NPCDefinition {
 
     final String method801(byte i, int i_92_, String string) {
         anInt1378++;
-        if (aClass356_1386 == null) return string;
+        if (aHashTable_1386 == null) return string;
         if (i != 17) method801((byte) -115, -68, null);
-        Class348_Sub50 class348_sub50 = ((Class348_Sub50) aClass356_1386.method3480(i_92_, i + -6025));
+        Class348_Sub50 class348_sub50 = ((Class348_Sub50) aHashTable_1386.get(i_92_, i + -6025));
         if (class348_sub50 == null) return string;
         return class348_sub50.aString7211;
     }
@@ -661,7 +661,7 @@ final class NPCDefinition {
                 model = var_toolkit.method3625(mesh, i_100_, (this.aNPCTypeList_1348.anInt3593), 64, 768);
                 if (aShortArray1328 != null) {
                     for (int i_104_ = 0; (aShortArray1328.length > i_104_); i_104_++) {
-                        if (aByteArray1374 != null && aByteArray1374.length > i_104_) model.ia(aShortArray1328[i_104_], (Class348_Sub42_Sub3.aShortArray9502[0xff & aByteArray1374[i_104_]]));
+                        if (aByteArray1374 != null && aByteArray1374.length > i_104_) model.ia(aShortArray1328[i_104_], (ByteArraySecondaryNode.aShortArray9502[0xff & aByteArray1374[i_104_]]));
                         else model.ia(aShortArray1328[i_104_], aShortArray1352[i_104_]);
                     }
                 }
@@ -691,9 +691,9 @@ final class NPCDefinition {
 
     final int method805(int i, int i_106_, int i_107_) {
         anInt1326++;
-        if (aClass356_1386 == null) return i;
+        if (aHashTable_1386 == null) return i;
         if (i_107_ <= 12) method805(46, 116, 126);
-        Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass356_1386.method3480(i_106_, -6008);
+        Class348_Sub35 class348_sub35 = (Class348_Sub35) aHashTable_1386.get(i_106_, -6008);
         if (class348_sub35 == null) return i;
         return class348_sub35.anInt6976;
     }

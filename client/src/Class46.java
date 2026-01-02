@@ -43,7 +43,7 @@ final class Class46 {
     Object[] anObjectArray708;
     int anInt709;
     int anInt710;
-    private Class356 aClass356_711;
+    private HashTable aHashTable_711;
     static int anInt712;
     int anInt713;
     Object[] anObjectArray714;
@@ -279,9 +279,9 @@ final class Class46 {
 
     final int method428(int i, int i_18_, int i_19_) {
         anInt736++;
-        if (aClass356_711 == null) return i;
+        if (aHashTable_711 == null) return i;
         if (i_19_ >= -124) this.anInt700 = 46;
-        Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass356_711.method3480(i_18_, -6008);
+        Class348_Sub35 class348_sub35 = (Class348_Sub35) aHashTable_711.get(i_18_, -6008);
         if (class348_sub35 == null) return i;
         return class348_sub35.anInt6976;
     }
@@ -289,8 +289,8 @@ final class Class46 {
     final String method429(int i, String string, int i_20_) {
         anInt783++;
         if (i_20_ != -1) method437(-123, null, null, -35, null);
-        if (aClass356_711 == null) return string;
-        Class348_Sub50 class348_sub50 = (Class348_Sub50) aClass356_711.method3480(i, -6008);
+        if (aHashTable_711 == null) return string;
+        Class348_Sub50 class348_sub50 = (Class348_Sub50) aHashTable_711.get(i, -6008);
         if (class348_sub50 == null) return string;
         return class348_sub50.aString7211;
     }
@@ -564,13 +564,13 @@ final class Class46 {
             for (int i_54_ = 0; i_53_ > i_54_; i_54_++) {
                 int i_55_ = packet.readMedium(-1);
                 int i_56_ = packet.readInt((byte) -126);
-                aClass356_711.method3483((byte) 120, i_55_, new Class348_Sub35(i_56_));
+                aHashTable_711.put((byte) 120, i_55_, new Class348_Sub35(i_56_));
             }
             int i_57_ = packet.readUnsignedByte(255);
             for (int i_58_ = 0; i_58_ < i_57_; i_58_++) {
                 int i_59_ = packet.readMedium(-1);
                 String string = packet.method3371(-13487);
-                aClass356_711.method3483((byte) 119, i_59_, new Class348_Sub50(string));
+                aHashTable_711.put((byte) 119, i_59_, new Class348_Sub50(string));
             }
         }
         this.anObjectArray815 = method432(packet, -1);
@@ -644,8 +644,8 @@ final class Class46 {
 
     final void method435(int i, int i_60_) {
         anInt802++;
-        if (aClass356_711 != null) {
-            Node node = aClass356_711.method3480(i, -6008);
+        if (aHashTable_711 != null) {
+            Node node = aHashTable_711.get(i, -6008);
             if (node != null) node.unlink((byte) 63);
         }
         if (i_60_ != -3437) method425(null, (byte) 83);
@@ -653,12 +653,12 @@ final class Class46 {
 
     final void method436(int i, int i_61_, int i_62_) {
         anInt694++;
-        if (aClass356_711 == null) {
-            aClass356_711 = new Class356(16);
-            aClass356_711.method3483((byte) 60, i_61_, new Class348_Sub35(i_62_));
+        if (aHashTable_711 == null) {
+            aHashTable_711 = new HashTable(16);
+            aHashTable_711.put((byte) 60, i_61_, new Class348_Sub35(i_62_));
         } else if (i < -38) {
-            Class348_Sub35 class348_sub35 = ((Class348_Sub35) aClass356_711.method3480(i_61_, -6008));
-            if (class348_sub35 == null) aClass356_711.method3483((byte) 67, i_61_, new Class348_Sub35(i_62_));
+            Class348_Sub35 class348_sub35 = ((Class348_Sub35) aHashTable_711.get(i_61_, -6008));
+            if (class348_sub35 == null) aHashTable_711.put((byte) 67, i_61_, new Class348_Sub35(i_62_));
             else class348_sub35.anInt6976 = i_62_;
         }
     }
@@ -699,12 +699,12 @@ final class Class46 {
     final void method439(int i, int i_66_, String string) {
         anInt758++;
         if (i != 0) this.anInt756 = -106;
-        if (aClass356_711 == null) {
-            aClass356_711 = new Class356(16);
-            aClass356_711.method3483((byte) 86, i_66_, new Class348_Sub50(string));
+        if (aHashTable_711 == null) {
+            aHashTable_711 = new HashTable(16);
+            aHashTable_711.put((byte) 86, i_66_, new Class348_Sub50(string));
         } else {
-            Class348_Sub50 class348_sub50 = ((Class348_Sub50) aClass356_711.method3480(i_66_, -6008));
-            if (class348_sub50 == null) aClass356_711.method3483((byte) 73, i_66_, new Class348_Sub50(string));
+            Class348_Sub50 class348_sub50 = ((Class348_Sub50) aHashTable_711.get(i_66_, -6008));
+            if (class348_sub50 == null) aHashTable_711.put((byte) 73, i_66_, new Class348_Sub50(string));
             else class348_sub50.aString7211 = string;
         }
     }

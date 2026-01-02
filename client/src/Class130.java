@@ -4,7 +4,7 @@
 
 abstract class Class130 {
     static Class60 aClass60_1894 = new Class60(5);
-    static Class356 aClass356_1895 = new Class356(64);
+    static HashTable aHashTable_1895 = new HashTable(64);
     static int anInt1896;
     static Index QUICK_CHAT_MESSAGES;
     static int anInt1898;
@@ -13,7 +13,7 @@ abstract class Class130 {
 
     public static void method1127(int i) {
         QUICK_CHAT_MESSAGES = null;
-        aClass356_1895 = null;
+        aHashTable_1895 = null;
         if (i == 5125) aClass60_1894 = null;
     }
 

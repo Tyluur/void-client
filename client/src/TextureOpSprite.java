@@ -14,14 +14,14 @@ class TextureOpSprite extends TextureOp {
     static Deque aDeque_9240 = new Deque();
     int anInt9241;
     static boolean aBoolean9242;
-    private int anInt9243 = -1;
+    private int spriteId = -1;
 
     final boolean method3090(boolean bool) {
         anInt9235++;
         if (bool != true) return true;
         if (this.anIntArray9232 != null) return true;
-        if (anInt9243 >= 0) {
-            Class207 class207 = (Class101_Sub2.anInt5713 >= 0 ? Class207.method1521(Node.textureCacheIndex, Class101_Sub2.anInt5713, anInt9243) : Class207.method1512(Node.textureCacheIndex, anInt9243));
+        if (spriteId >= 0) {
+            Class207 class207 = (Class101_Sub2.anInt5713 >= 0 ? Class207.method1521(Node.textureCacheIndex, Class101_Sub2.anInt5713, spriteId) : Class207.method1512(Node.textureCacheIndex, spriteId));
             class207.method1524();
             this.anIntArray9232 = class207.method1516();
             this.anInt9237 = class207.anInt2702;
@@ -37,7 +37,7 @@ class TextureOpSprite extends TextureOp {
 
     final void decode(Packet packet, int i, int i_0_) {
         if (i_0_ == 31015) {
-            if (i == 0) anInt9243 = packet.readUnsignedShort(842397944);
+            if (i == 0) spriteId = packet.readUnsignedShort(842397944);
             anInt9236++;
         }
     }
@@ -45,7 +45,7 @@ class TextureOpSprite extends TextureOp {
     final int spriteId(int i) {
         anInt9233++;
         if (i > -113) aBoolean9242 = false;
-        return anInt9243;
+        return spriteId;
     }
 
     final void cacheReset(byte i) {

@@ -58,18 +58,18 @@ final class Class231 {
             int i_7_ = i_4_ + Class258_Sub4.aClass373_8552.method3594((byte) 127);
             if (Class348_Sub42_Sub6.aBoolean9535) {
                 int i_8_ = 0;
-                for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-119)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 44))) {
+                for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aSecondaryLinkedList_3022.method1011(-119)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aSecondaryLinkedList_3022.next((byte) 44))) {
                     int i_9_ = (31 + i_4_ + Texture.anInt9532 + i_8_ * 16);
                     i_8_++;
                     if ((class348_sub42_sub13.anInt9615) == 1)
-                        Class318_Sub2.method2494(i_4_ + Texture.anInt9532, -256, i_9_, var_toolkit, ((Class348_Sub42_Sub12) (class348_sub42_sub13.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063)), Class63.anInt1117, i_7_, -1, (byte) 124, Class237_Sub1.anInt5819, Class135_Sub1.anInt4717 - -i_3_, i_6_);
+                        Class318_Sub2.method2494(i_4_ + Texture.anInt9532, -256, i_9_, var_toolkit, ((Class348_Sub42_Sub12) (class348_sub42_sub13.aSecondaryLinkedList_9621.nextPrevious.secondaryNext)), Class63.anInt1117, i_7_, -1, (byte) 124, Class237_Sub1.anInt5819, Class135_Sub1.anInt4717 - -i_3_, i_6_);
                     else Class318_Sub1_Sub3_Sub3.method2431(-1, i_9_, class348_sub42_sub13, i_6_, Class63.anInt1117, -256, i_7_, var_toolkit, Texture.anInt9532 + i_4_, 126, Class135_Sub1.anInt4717 - -i_3_, Class237_Sub1.anInt5819);
                 }
                 if (Class242.aClass348_Sub42_Sub13_3152 != null) {
                     Class318_Sub7.method2509(Class348_Sub1_Sub1.anInt8806, Class373.anInt4534, var_toolkit, Class50_Sub3.anInt5252, i_5_, true, Class177.anInt4669, -16777216);
                     i_8_ = 0;
                     Deque.aFontRenderer_3326.method2576(Class242.aClass348_Sub42_Sub13_3152.aString9617, i_5_, Class373.anInt4534 - -14, 3 + Class50_Sub3.anInt5252, -1, -126);
-                    for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class242.aClass348_Sub42_Sub13_3152.aClass107_9621.method1011(-84)); class348_sub42_sub12 != null; class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class242.aClass348_Sub42_Sub13_3152.aClass107_9621.method1003((byte) 73))) {
+                    for (Class348_Sub42_Sub12 class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class242.aClass348_Sub42_Sub13_3152.aSecondaryLinkedList_9621.method1011(-84)); class348_sub42_sub12 != null; class348_sub42_sub12 = ((Class348_Sub42_Sub12) Class242.aClass348_Sub42_Sub13_3152.aSecondaryLinkedList_9621.next((byte) 73))) {
                         int i_10_ = 31 + (Class373.anInt4534 + i_8_ * 16);
                         i_8_++;
                         Class318_Sub2.method2494(Class373.anInt4534, -256, i_10_, var_toolkit, class348_sub42_sub12, Class348_Sub1_Sub1.anInt8806, i_7_, -1, (byte) 125, Class177.anInt4669, Class50_Sub3.anInt5252, i_6_);

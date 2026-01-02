@@ -5,7 +5,7 @@
 final class Class27 {
     static int anInt387;
     static int anInt388 = 0;
-    static Class356 aClass356_389 = new Class356(4);
+    static HashTable aHashTable_389 = new HashTable(4);
     static int anInt390;
     static int anInt391;
     static int anInt392;
@@ -74,7 +74,7 @@ final class Class27 {
     }
 
     public static void method316(byte i) {
-        aClass356_389 = null;
+        aHashTable_389 = null;
         aClass351_398 = null;
         aClass341_399 = null;
         if (i != -94) method313(98L, -24);

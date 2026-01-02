@@ -39,7 +39,7 @@ class Class328 {
 
     static final ClientScript method2609(int i, int i_2_) {
         anInt4101++;
-        ClientScript clientScript = ((ClientScript) ColourImageCache.aClass308_4036.method2302(i_2_, (byte) -68));
+        ClientScript clientScript = ((ClientScript) ColourImageCache.aLRUHashTable_4036.method2302(i_2_, (byte) -68));
         if (clientScript != null) return clientScript;
         byte[] is = Class113.CLIENT_SCRIPTS.method410(-1860, i_2_, 0);
         if (is == null || is.length <= 1) return null;
@@ -49,7 +49,7 @@ class Class328 {
             throw new RuntimeException(exception.getMessage() + " S: " + i_2_);
         }
         if (i > -103) return null;
-        ColourImageCache.aClass308_4036.method2305(i_2_, clientScript, -1);
+        ColourImageCache.aLRUHashTable_4036.put(i_2_, clientScript, -1);
         return clientScript;
     }
 }

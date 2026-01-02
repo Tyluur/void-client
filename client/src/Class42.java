@@ -29,7 +29,7 @@ final class Class42 {
     private int anInt585;
     private int anInt586;
     private int anInt587;
-    private Class356 aClass356_588;
+    private HashTable aHashTable_588;
     static int anInt589;
     private int anInt590;
     int[] anIntArray591;
@@ -119,8 +119,8 @@ final class Class42 {
     final String method376(String string, int i, byte i_5_) {
         anInt589++;
         int i_6_ = -100 / ((63 - i_5_) / 58);
-        if (aClass356_588 == null) return string;
-        Class348_Sub50 class348_sub50 = (Class348_Sub50) aClass356_588.method3480(i, -6008);
+        if (aHashTable_588 == null) return string;
+        Class348_Sub50 class348_sub50 = (Class348_Sub50) aHashTable_588.get(i, -6008);
         if (class348_sub50 == null) return string;
         return class348_sub50.aString7211;
     }
@@ -181,9 +181,9 @@ final class Class42 {
                             this.anInt568 = packet.readShort(13638);
                         } else if (i == 249) {
                             int i_14_ = packet.readUnsignedByte(255);
-                            if (aClass356_588 == null) {
+                            if (aHashTable_588 == null) {
                                 int i_15_ = EnumTypeList.method340(i_14_, (byte) 108);
-                                aClass356_588 = new Class356(i_15_);
+                                aHashTable_588 = new HashTable(i_15_);
                             }
                             for (int i_16_ = 0; (i_16_ < i_14_); i_16_++) {
                                 boolean bool = (packet.readUnsignedByte(255) == 1);
@@ -191,7 +191,7 @@ final class Class42 {
                                 Node node;
                                 if (!bool) node = (new Class348_Sub35(packet.readInt((byte) -126)));
                                 else node = (new Class348_Sub50(packet.readString((byte) -41)));
-                                aClass356_588.method3483((byte) 60, i_17_, node);
+                                aHashTable_588.put((byte) 60, i_17_, node);
                             }
                         }
                     } else this.anInt604 = packet.readInt((byte) -126);
@@ -203,9 +203,9 @@ final class Class42 {
 
     final int method378(int i, int i_18_, boolean bool) {
         anInt600++;
-        if (aClass356_588 == null) return i;
+        if (aHashTable_588 == null) return i;
         if (bool != false) return -1;
-        Class348_Sub35 class348_sub35 = (Class348_Sub35) aClass356_588.method3480(i_18_, -6008);
+        Class348_Sub35 class348_sub35 = (Class348_Sub35) aHashTable_588.get(i_18_, -6008);
         if (class348_sub35 == null) return i;
         return class348_sub35.anInt6976;
     }

@@ -27,7 +27,7 @@ final class Class91 {
         boolean bool = false;
         for (int i_2_ = 0; i_2_ < TextureUniverse.anInt4411; i_2_++) {
             int i_3_ = Class5_Sub1_Sub1.anIntArray9932[i_2_];
-            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_3_, -6008));
+            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_3_, -6008));
             Npc npc = (class348_sub22.aNpc_6859);
             if (Class5_Sub1.aBoolean8335 && Class348_Sub42_Sub1.method3169(i_3_, 0)) Class286_Sub2.method2146((byte) 84);
             if (Class348_Sub23_Sub3.anInt9041 != (npc.anInt10306)) {
@@ -38,13 +38,13 @@ final class Class91 {
             }
         }
         if (bool) {
-            Class348_Sub32.anInt6930 = Class282.aClass356_3654.method3474(1);
-            Class282.aClass356_3654.method3477(3, TextureOpIrregularBricks.aClass348_Sub22Array9319);
+            Class348_Sub32.anInt6930 = Class282.aHashTable_3654.size(1);
+            Class282.aHashTable_3654.toArray(3, TextureOpIrregularBricks.aClass348_Sub22Array9319);
         }
         if (TextureOpMandelbrot.anInt9341 != Class299.aClass348_Sub49_Sub2_3813.pos) throw new RuntimeException("gnp1 pos:" + (Class299.aClass348_Sub49_Sub2_3813.pos) + " psize:" + TextureOpMandelbrot.anInt9341);
         if (i <= 47) aClass74_1519 = null;
         for (int i_4_ = 0; IDKTypeList.anInt2057 > i_4_; i_4_++) {
-            if (Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_4_], -6008) == null) throw new RuntimeException("gnp2 pos:" + i_4_ + " size:" + IDKTypeList.anInt2057);
+            if (Class282.aHashTable_3654.get(Class74.anIntArray1233[i_4_], -6008) == null) throw new RuntimeException("gnp2 pos:" + i_4_ + " size:" + IDKTypeList.anInt2057);
         }
         if (Class348_Sub32.anInt6930 - IDKTypeList.anInt2057 != 0) throw new RuntimeException("gnp3 mis:" + (Class348_Sub32.anInt6930 - IDKTypeList.anInt2057));
         for (int i_5_ = 0; i_5_ < Class348_Sub32.anInt6930; i_5_++) {

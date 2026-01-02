@@ -18,22 +18,13 @@ final class TextureOpWaveform extends TextureOp {
     final void decode(Packet packet, int i, int i_0_) {
         anInt9450++;
         if (i_0_ != 31015) anInt9451 = -15;
-        int i_1_ = i;
-        while_211_:
-        do {
-            do {
-                if (i_1_ == 0) {
-                    anInt9451 = packet.readUnsignedByte(255);
-                    return;
-                } else if (i_1_ != 1) {
-                    if (i_1_ == 3) break;
-                    break while_211_;
-                }
-                anInt9455 = packet.readUnsignedByte(255);
-                return;
-            } while (false);
+        if (i == 0) {
+            anInt9451 = packet.readUnsignedByte(255);
+        } else if (i == 1) {
+            anInt9455 = packet.readUnsignedByte(255);
+        } else if (i == 3) {
             anInt9453 = packet.readUnsignedByte(255);
-        } while (false);
+        }
     }
 
     final void finish(int i) {
@@ -50,7 +41,6 @@ final class TextureOpWaveform extends TextureOp {
     final int[] monochromeOutput(int i, int i_2_) {
         anInt9454++;
         int[] is = this.monochromeCache.get(0, i);
-        if (i_2_ != 255) anInt9451 = -74;
         if (this.monochromeCache.dirty) {
             int i_3_ = Option_Sub18.normalisedY[i];
             int i_4_ = -2048 + i_3_ >> 1;

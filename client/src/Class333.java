@@ -5,7 +5,7 @@
 final class Class333 {
     static int anInt4144 = -1;
     static int anInt4145;
-    private Class356 aClass356_4146;
+    private HashTable aHashTable_4146;
     static Index aIndex_4147;
     private int anInt4148 = 0;
     static int anInt4149;
@@ -32,15 +32,15 @@ final class Class333 {
     final Node method2646(byte i) {
         anInt4149++;
         int i_4_ = -49 / ((i - 44) / 40);
-        if (anInt4148 > 0 && (aClass356_4146.aNodeArray4374[-1 + anInt4148] != aNode_4150)) {
+        if (anInt4148 > 0 && (aHashTable_4146.buckets[-1 + anInt4148] != aNode_4150)) {
             Node node = aNode_4150;
-            aNode_4150 = node.aNode_4294;
+            aNode_4150 = node.prev;
             return node;
         }
-        while (aClass356_4146.anInt4377 > anInt4148) {
-            Node node = (aClass356_4146.aNodeArray4374[anInt4148++].aNode_4294);
-            if (aClass356_4146.aNodeArray4374[anInt4148 + -1] != node) {
-                aNode_4150 = node.aNode_4294;
+        while (aHashTable_4146.bucketCount > anInt4148) {
+            Node node = (aHashTable_4146.buckets[anInt4148++].prev);
+            if (aHashTable_4146.buckets[anInt4148 + -1] != node) {
+                aNode_4150 = node.prev;
                 return node;
             }
         }
@@ -51,7 +51,7 @@ final class Class333 {
         /* empty */
     }
 
-    Class333(Class356 class356) {
-        aClass356_4146 = class356;
+    Class333(HashTable hashTable) {
+        aHashTable_4146 = hashTable;
     }
 }

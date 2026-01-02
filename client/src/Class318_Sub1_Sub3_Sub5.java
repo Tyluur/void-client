@@ -163,7 +163,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
                     else class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[i_9_]);
                 } else {
                     int i_10_ = -1 + anInt10387;
-                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_10_, -6008));
+                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_10_, -6008));
                     if (class348_sub22 != null) class318_sub1_sub3_sub3 = (class348_sub22.aNpc_6859);
                 }
                 if (class318_sub1_sub3_sub3 != null) {
@@ -328,7 +328,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3 {
             if (class147 == null) class147 = new Class147(i_41_, i_42_, string_39_, string, string_43_, string_40_, i_38_, string_37_);
             else class147.method1196(i_41_, i_42_, string_43_, string, string_40_, -18691, i_38_, string_39_, string_37_);
             Class318_Sub2.aClass147Array6400[0] = class147;
-            Class348_Sub42_Sub3.anInt9501 = LoadingScreenRenderer.anInt3918;
+            ByteArraySecondaryNode.anInt9501 = LoadingScreenRenderer.anInt3918;
             if (i <= -109) za_Sub1.anInt9774++;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("to.K(" + (string != null ? "{...}" : "null") + ',' + (string_37_ != null ? "{...}" : "null") + ',' + i + ',' + i_38_ + ',' + (string_39_ != null ? "{...}" : "null") + ',' + (string_40_ != null ? "{...}" : "null") + ',' + i_41_ + ',' + i_42_ + ',' + (string_43_ != null ? "{...}" : "null") + ')'));

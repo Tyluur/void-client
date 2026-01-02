@@ -32,7 +32,7 @@ final class OutputStream_Sub1 extends OutputStream {
             Class192.method1434(-14988);
             if (!bool) Class282.method2109(512);
             Class108.method1014(-4);
-            Class348_Sub42_Sub3.method3174(i_1_, i_3_, i_0_, true, (byte) -82, i_2_);
+            ByteArraySecondaryNode.method3174(i_1_, i_3_, i_0_, true, (byte) -82, i_2_);
             i_3_ = Class234.anInt3047;
             i_1_ = Class295.anInt3764;
             i_2_ = Class280.anInt3643;
@@ -76,7 +76,7 @@ final class OutputStream_Sub1 extends OutputStream {
             if (Class59_Sub2_Sub2.anInt8685 < 0) Class59_Sub2_Sub2.anInt8685 = 0;
             if (Class59_Sub2_Sub2.anInt8685 > (Class348_Sub41.anInt7054 << 9) + -1) Class59_Sub2_Sub2.anInt8685 = (Class348_Sub41.anInt7054 << 9) - 1;
             Class348_Sub42_Sub11.method3225(114);
-            Class348_Sub42_Sub3.method3175((byte) -107);
+            ByteArraySecondaryNode.method3175((byte) -107);
             Class348_Sub8.active.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_);
             QuickChatCatTypeList.method1626(1, true);
             if (Class59_Sub1.aBoolean5300) {

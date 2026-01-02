@@ -19,7 +19,7 @@ final class Class348_Sub50 extends Node {
         TextureOpPolarDistortion.anIntArray9135 = null;
         anInt7210++;
         if (i != 13022) method3418(-79);
-        Class348_Sub42_Sub3.aBoolean9498 = false;
+        ByteArraySecondaryNode.aBoolean9498 = false;
         Class265.anIntArray4692 = null;
         Class348_Sub8.anIntArray6655 = null;
     }

@@ -20,7 +20,7 @@ final class Class367_Sub4 extends Class367 {
     static int anInt7322;
     static Class114 aClass114_7323 = new Class114(105, -2);
     static Class114 aClass114_7324 = new Class114(96, 8);
-    static Class107 aClass107_7325 = new Class107();
+    static SecondaryLinkedList aSecondaryLinkedList_7325 = new SecondaryLinkedList();
 
     Class367_Sub4(NativeToolkit var_nativeToolkit) {
         super(var_nativeToolkit);
@@ -79,7 +79,7 @@ final class Class367_Sub4 extends Class367 {
     public static void method3541(byte i) {
         aClass114_7323 = null;
         aClass114_7324 = null;
-        aClass107_7325 = null;
+        aSecondaryLinkedList_7325 = null;
         if (i == 23) aClass351_7318 = null;
     }
 

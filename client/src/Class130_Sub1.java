@@ -122,7 +122,7 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub2.anInt5480 = 0;
         Class367_Sub10.anInt7384 = 0;
         Class265.anInt4690 = 0;
-        Class107.anInt1648 = 0;
+        SecondaryLinkedList.anInt1648 = 0;
         SkyBoxTypeList.anInt1455 = 0;
         Class348_Sub16_Sub3.anInt8940 = 0;
         Class135_Sub2.anInt4833 = 0;
@@ -413,7 +413,7 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub2.anInt5481 = 0;
         Class132.anInt1908 = 0;
         client.anInt5180 = 0;
-        Class356.anInt4387 = 0;
+        HashTable.anInt4387 = 0;
         Class318_Sub1_Sub2.anInt8738 = 0;
         Class119_Sub1.anInt4705 = 0;
         Class318_Sub1_Sub2_Sub1.anInt10188 = 0;
@@ -639,7 +639,7 @@ final class Class130_Sub1 extends Class130 {
         ItemDefinition.anInt2829 = 0;
         Class5_Sub1.anInt8345 = 0;
         Matrix.anInt1594 = 0;
-        Class348_Sub42_Sub3.anInt9500 = 0;
+        ByteArraySecondaryNode.anInt9500 = 0;
         Packet.anInt7170 = 0;
         ItemDefinition.anInt2832 = 0;
         TextureOpHorizontalGradient.anInt9258 = 0;
@@ -684,7 +684,7 @@ final class Class130_Sub1 extends Class130 {
         QuickChatPhraseTypeList.anInt4371 = 0;
         Class238_Sub1.anInt5828 = 0;
         NativeToolkit.anInt7945 = 0;
-        Class308.anInt3885 = 0;
+        LRUHashTable.anInt3885 = 0;
         TextureOpInterpolate.anInt9359 = 0;
         Class353.anInt4351 = 0;
         Class14.anInt5104 = 0;
@@ -757,7 +757,7 @@ final class Class130_Sub1 extends Class130 {
         OpenGLxToolkit.anInt9850 = 0;
         Class348_Sub42_Sub9_Sub1.anInt10439 = 0;
         Class5.anInt4634 = 0;
-        Class107.anInt1654 = 0;
+        SecondaryLinkedList.anInt1654 = 0;
         Class151.anInt2065 = 0;
         LinkedNode.anInt7062 = 0;
         OpenGLToolkit.anInt7599 = 0;
@@ -821,7 +821,7 @@ final class Class130_Sub1 extends Class130 {
         Class112.anInt1735 = 0;
         OpenGLxToolkit.anInt9888 = 0;
         Class64_Sub3.anInt5624 = 0;
-        Class308.anInt3886 = 0;
+        LRUHashTable.anInt3886 = 0;
         Class367_Sub10.anInt7388 = 0;
         NativeToolkit.anInt8061 = 0;
         Class286_Sub1.anInt6190 = 0;
@@ -864,7 +864,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub42_Sub11.anInt9581 = 0;
         OpenGLToolkit.anInt7592 = 0;
         Class348_Sub23_Sub4.anInt9063 = 0;
-        Class356.anInt4382 = 0;
+        HashTable.anInt4382 = 0;
         Matrix.anInt1595 = 0;
         NativeToolkit.anInt8076 = 0;
         ItemTypeList.anInt3281 = 0;
@@ -1291,7 +1291,7 @@ final class Class130_Sub1 extends Class130 {
         IDKTypeList.anInt2051 = 0;
         Class64_Sub3.anInt5597 = 0;
         Class46.anInt758 = 0;
-        Class107.anInt1644 = 0;
+        SecondaryLinkedList.anInt1644 = 0;
         client.anInt5182 = 0;
         Class286_Sub3.anInt6224 = 0;
         Class348_Sub1.anInt6560 = 0;
@@ -1322,7 +1322,7 @@ final class Class130_Sub1 extends Class130 {
         OpenGLToolkit.anInt7672 = 0;
         Class318_Sub1_Sub4_Sub2.anInt10098 = 0;
         Class348_Sub9.anInt6690 = 0;
-        Class107.anInt1655 = 0;
+        SecondaryLinkedList.anInt1655 = 0;
         Class309.anInt4809 = 0;
         SkyBoxTypeList.anInt1454 = 0;
         s_Sub3.anInt8293 = 0;
@@ -1845,7 +1845,7 @@ final class Class130_Sub1 extends Class130 {
         TextureOpBricks.anInt9290 = 0;
         OpenGLToolkit.anInt7620 = 0;
         TextureOpInvert.anInt9417 = 0;
-        Class308.anInt3881 = 0;
+        LRUHashTable.anInt3881 = 0;
         Option_Sub23.anInt6079 = 0;
         Class113.anInt1740 = 0;
         Class64_Sub2.anInt5469 = 0;
@@ -1963,7 +1963,7 @@ final class Class130_Sub1 extends Class130 {
         Packet.anInt7155 = 0;
         s_Sub2.anInt8263 = 0;
         Packet.anInt7189 = 0;
-        Class107.anInt1649 = 0;
+        SecondaryLinkedList.anInt1649 = 0;
         Class5_Sub3.anInt8373 = 0;
         TextureOpColourGradient.anInt9192 = 0;
         Class55.anInt996 = 0;
@@ -2201,7 +2201,7 @@ final class Class130_Sub1 extends Class130 {
         NativeToolkit.anInt8002 = 0;
         Class318_Sub1_Sub3_Sub4.anInt10360 = 0;
         Index.anInt641 = 0;
-        Class348_Sub42_Sub3.anInt9509 = 0;
+        ByteArraySecondaryNode.anInt9509 = 0;
         Class348_Sub14.anInt6763 = 0;
         NPCDefinition.anInt1389 = 0;
         Class58.anInt1063 = 0;
@@ -2341,7 +2341,7 @@ final class Class130_Sub1 extends Class130 {
         Class179.anInt2355 = 0;
         Class367_Sub1.anInt7277 = 0;
         Class348_Sub41.anInt7049 = 0;
-        Class308.anInt3879 = 0;
+        LRUHashTable.anInt3879 = 0;
         OpenGLxToolkit.anInt9889 = 0;
         Class348_Sub15.anInt6778 = 0;
         StructTypeList.anInt1143 = 0;
@@ -2449,7 +2449,7 @@ final class Class130_Sub1 extends Class130 {
         Packet.anInt7147 = 0;
         TextureOpPolarDistortion.anInt9131 = 0;
         Option_Sub14.anInt5983 = 0;
-        Class356.anInt4381 = 0;
+        HashTable.anInt4381 = 0;
         Class368.anInt4486 = 0;
         OpenGLToolkit.anInt7671 = 0;
         Applet_Sub1.anInt16 = 0;
@@ -2457,7 +2457,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub3.anInt8748 = 0;
         Class285_Sub1.anInt8489 = 0;
         Class202.anInt2653 = 0;
-        Class308.anInt3880 = 0;
+        LRUHashTable.anInt3880 = 0;
         Class43.anInt613 = 0;
         Ground.anInt4593 = 0;
         FontRenderer.anInt4049 = 0;
@@ -2474,7 +2474,7 @@ final class Class130_Sub1 extends Class130 {
         Packet.anInt7191 = 0;
         Class50_Sub2.anInt5235 = 0;
         Class64_Sub3.anInt5636 = 0;
-        Class348_Sub42_Sub3.anInt9507 = 0;
+        ByteArraySecondaryNode.anInt9507 = 0;
         Player.anInt10545 = 0;
         Class348_Sub1.anInt6563 = 0;
         Class348_Sub16_Sub3.anInt8903 = 0;
@@ -2966,7 +2966,7 @@ final class Class130_Sub1 extends Class130 {
         OpenGLToolkit.anInt7528 = 0;
         NativeToolkit.anInt8067 = 0;
         Class208.anInt2714 = 0;
-        Class356.anInt4380 = 0;
+        HashTable.anInt4380 = 0;
         ItemTypeList.anInt3277 = 0;
         Class235.anInt3080 = 0;
         ObjectTypeList.anInt3356 = 0;
@@ -3022,7 +3022,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub3_Sub1.anInt10033 = 0;
         OpenGLToolkit.anInt7558 = 0;
         TextureOpFlip.anInt9142 = 0;
-        Class356.anInt4384 = 0;
+        HashTable.anInt4384 = 0;
         Class330.anInt4119 = 0;
         Class251.anInt3233 = 0;
         Applet_Sub1.anInt9 = 0;
@@ -3039,7 +3039,7 @@ final class Class130_Sub1 extends Class130 {
         Class289.anInt3703 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10205 = 0;
         Option_Sub24.anInt6085 = 0;
-        Class356.anInt4375 = 0;
+        HashTable.anInt4375 = 0;
         Npc.anInt10498 = 0;
         Option_Sub10.anInt5944 = 0;
         ItemTypeList.anInt3272 = 0;
@@ -3085,7 +3085,7 @@ final class Class130_Sub1 extends Class130 {
         Class101_Sub3.anInt5778 = 0;
         Option_Sub7.anInt5910 = 0;
         Class235.anInt3077 = 0;
-        Class107.anInt1642 = 0;
+        SecondaryLinkedList.anInt1642 = 0;
         MSITypeList.anInt1970 = 0;
         Option_Sub23.anInt6080 = 0;
         Class367_Sub8.anInt7357 = 0;
@@ -3376,7 +3376,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub5.anInt6623 = 0;
         Class341.anInt4230 = 0;
         OpenGLxToolkit.anInt9878 = 0;
-        Class356.anInt4378 = 0;
+        HashTable.anInt4378 = 0;
         Option_Sub18.anInt6037 = 0;
         Class348_Sub16_Sub2.anInt8880 = 0;
         Option_Sub15.anInt6000 = 0;
@@ -3427,8 +3427,8 @@ final class Class130_Sub1 extends Class130 {
         Class64_Sub3.anInt5637 = 0;
         Class325.anInt4066 = 0;
         Class301.anInt3828 = 0;
-        Class107.anInt1643 = 0;
-        Class107.anInt1653 = 0;
+        SecondaryLinkedList.anInt1643 = 0;
+        SecondaryLinkedList.anInt1653 = 0;
         Class348_Sub44.anInt7095 = 0;
         Class348_Sub16_Sub3.anInt8909 = 0;
         Class318_Sub1_Sub3_Sub3.anInt10200 = 0;
@@ -3438,7 +3438,7 @@ final class Class130_Sub1 extends Class130 {
         SystemInfo.anInt6615 = 0;
         FontMetrics.anInt1978 = 0;
         Class364.anInt4468 = 0;
-        Class348_Sub42_Sub3.anInt9508 = 0;
+        ByteArraySecondaryNode.anInt9508 = 0;
         NativeToolkit.anInt7912 = 0;
         Class348_Sub41.anInt7055 = 0;
         TextureOpFlip.anInt9146 = 0;
@@ -3670,7 +3670,7 @@ final class Class130_Sub1 extends Class130 {
         Option_Sub8.anInt5915 = 0;
         Class318_Sub1_Sub3_Sub2.anInt10050 = 0;
         Class64_Sub2.anInt5471 = 0;
-        Class356.anInt4379 = 0;
+        HashTable.anInt4379 = 0;
         Class298.anInt3810 = 0;
         Class348_Sub23_Sub2.anInt9012 = 0;
         Option_Sub6.anInt5903 = 0;
@@ -3748,8 +3748,8 @@ final class Class130_Sub1 extends Class130 {
         Class206.anInt4866 = 0;
         Option_Sub14.anInt5986 = 0;
         TextureOpBoxBlur.anInt9462 = 0;
-        Class356.anInt4386 = 0;
-        Class348_Sub42_Sub3.anInt9506 = 0;
+        HashTable.anInt4386 = 0;
+        ByteArraySecondaryNode.anInt9506 = 0;
         LoadingScreenRenderer.anInt3903 = 0;
         Option_Sub23.anInt6083 = 0;
         Option_Sub20.anInt6051 = 0;
@@ -3868,9 +3868,9 @@ final class Class130_Sub1 extends Class130 {
         Class55_Sub1.anInt5273 = 0;
         OpenGLToolkit.anInt7676 = 0;
         Option_Sub25.anInt6109 = 0;
-        Class356.anInt4376 = 0;
+        HashTable.anInt4376 = 0;
         Class285_Sub1.anInt8484 = 0;
-        Class107.anInt1646 = 0;
+        SecondaryLinkedList.anInt1646 = 0;
         ColourImageCache.anInt4030 = 0;
         TextureOp37.anInt9273 = 0;
         NativeToolkit.anInt8060 = 0;
@@ -4114,11 +4114,11 @@ final class Class130_Sub1 extends Class130 {
 
         IDKTypeList.anInt2057 = 0;
         Class348_Sub32.anInt6930 = 0;
-        Class282.aClass356_3654.method3481(0);
+        Class282.aHashTable_3654.clear(0);
         TextureOpSprite.aDeque_9240.clear(112);
         r_Sub2.aDeque_10492.clear(109);
         Class225.aClass243_2957.method1876((byte) -45);
-        Class130.aClass356_1895.method3481(0);
+        Class130.aHashTable_1895.clear(0);
         Class348_Sub42_Sub20.aDeque_9711 = new Deque();
         Class318_Sub1_Sub3_Sub3.timedVarDomain.method1314((byte) 74);
         Class331.method2636(i + 69);
@@ -4136,16 +4136,16 @@ final class Class130_Sub1 extends Class130 {
             if (!Class286_Sub6.aBooleanArray6270[l]) Class77.anIntArray1303[l] = -1;
 
         if (r.anInt9721 != -1) Class14.method235(r.anInt9721, (byte) -105);
-        for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0); class348_sub41 != null; class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3482(0)) {
-            if (!class348_sub41.method2712((byte) 4)) {
-                class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0);
+        for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aHashTable_4915.head(0); class348_sub41 != null; class348_sub41 = (Class348_Sub41) Class125.aHashTable_4915.next(0)) {
+            if (!class348_sub41.hasNext((byte) 4)) {
+                class348_sub41 = (Class348_Sub41) Class125.aHashTable_4915.head(0);
                 if (class348_sub41 == null) break;
             }
             Class127_Sub1.method1118(true, false, class348_sub41, 2533);
         }
 
         r.anInt9721 = -1;
-        Class125.aClass356_4915 = new Class356(8);
+        Class125.aHashTable_4915 = new HashTable(8);
         Class99.method882((byte) 11);
         JavaOffscreenSurface.aClass46_4730 = null;
         for (int i1 = 0; i1 < 8; i1++) {
@@ -4170,7 +4170,7 @@ final class Class130_Sub1 extends Class130 {
 
         Class76.method773(true);
         Class369_Sub3_Sub1.aBoolean10174 = true;
-        Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172 = new short[256];
+        Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889 = ByteArraySecondaryNode.aShortArray9502 = Class336.aShortArray4172 = new short[256];
         Option_Sub4.aString5882 = Class274.aClass274_3509.method2063(AnimBase.language, 544);
         Class316.clientOptions.update((byte) 74, Class316.clientOptions.aClass239_Sub14_7264, Class316.clientOptions.aClass239_Sub14_7250.method1778(i + -32350));
         Class316.clientOptions.update((byte) 74, Class316.clientOptions.aClass239_Sub27_7261, Class316.clientOptions.aClass239_Sub27_7255.method1840(-32350));

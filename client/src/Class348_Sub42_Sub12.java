@@ -13,7 +13,7 @@ final class Class348_Sub42_Sub12 extends LinkedNode {
     long aLong9600;
     String aString9601;
     int anInt9602;
-    static Class356 aClass356_9603;
+    static HashTable aHashTable_9603;
     static int anInt9604 = 0;
     long aLong9605;
     static int anInt9606;
@@ -27,7 +27,7 @@ final class Class348_Sub42_Sub12 extends LinkedNode {
     public static void method3228(int i) {
         anIntArray9612 = null;
         int i_0_ = 29 / ((31 - i) / 43);
-        aClass356_9603 = null;
+        aHashTable_9603 = null;
     }
 
     static final int method3229(int i) {
@@ -103,7 +103,7 @@ final class Class348_Sub42_Sub12 extends LinkedNode {
     }
 
     static {
-        aClass356_9603 = new Class356(16);
+        aHashTable_9603 = new HashTable(16);
         anIntArray9612 = new int[8];
     }
 }

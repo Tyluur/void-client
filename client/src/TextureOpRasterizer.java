@@ -46,18 +46,18 @@ final class TextureOpRasterizer extends TextureOp {
 
     static final void method3153(int i) {
         anInt9482++;
-        for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1011(-49)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aClass107_3022.method1003((byte) 51))) {
+        for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aSecondaryLinkedList_3022.method1011(-49)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aSecondaryLinkedList_3022.next((byte) 51))) {
             if (class348_sub42_sub13.anInt9615 > 1) {
                 class348_sub42_sub13.anInt9615 = 0;
-                VarcTypeList.aClass60_3301.method582(class348_sub42_sub13, ((Class348_Sub42_Sub12) class348_sub42_sub13.aClass107_9621.aLinkedNode_1647.aLinkedNode_7063).aLong9600, (byte) -108);
-                class348_sub42_sub13.aClass107_9621.method1009(i ^ 0x7dc976c2);
+                VarcTypeList.aClass60_3301.method582(class348_sub42_sub13, ((Class348_Sub42_Sub12) class348_sub42_sub13.aSecondaryLinkedList_9621.nextPrevious.secondaryNext).aLong9600, (byte) -108);
+                class348_sub42_sub13.aSecondaryLinkedList_9621.clear(i ^ 0x7dc976c2);
             }
         }
         Class8.anInt166 = 0;
         Class73.anInt4776 = i;
         TextureOpVerticalGradient.aDeque_9111.clear(125);
-        Class348_Sub42_Sub12.aClass356_9603.method3481(0);
-        Class233.aClass107_3022.method1009(2110355138);
+        Class348_Sub42_Sub12.aHashTable_9603.clear(0);
+        Class233.aSecondaryLinkedList_3022.clear(2110355138);
         Class5_Sub1.aBoolean8335 = false;
     }
 

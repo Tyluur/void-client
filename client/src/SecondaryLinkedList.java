@@ -2,40 +2,40 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class107 {
+final class SecondaryLinkedList {
     static int anInt1642;
     static int anInt1643;
     static int anInt1644;
     static int anInt1645 = -2;
     static int anInt1646;
-    LinkedNode aLinkedNode_1647 = new LinkedNode();
+    LinkedNode nextPrevious = new LinkedNode();
     static int anInt1648;
     static int anInt1649;
     static int[] anIntArray1650 = new int[1000];
     static int anInt1651;
-    private LinkedNode aLinkedNode_1652;
+    private LinkedNode cursor;
     static int anInt1653;
     static int anInt1654;
     static int anInt1655;
 
-    final int method1002(int i) {
+    final int size(int i) {
         anInt1643++;
-        int i_0_ = i;
-        for (LinkedNode linkedNode = (this.aLinkedNode_1647.aLinkedNode_7063); this.aLinkedNode_1647 != linkedNode; linkedNode = linkedNode.aLinkedNode_7063)
-            i_0_++;
-        return i_0_;
+        int count = i;
+        for (LinkedNode linkedNode = (this.nextPrevious.secondaryNext); this.nextPrevious != linkedNode; linkedNode = linkedNode.secondaryNext)
+            count++;
+        return count;
     }
 
-    final LinkedNode method1003(byte i) {
+    final LinkedNode next(byte i) {
         anInt1644++;
         if (i <= 41) return null;
-        LinkedNode linkedNode = aLinkedNode_1652;
-        if (linkedNode == this.aLinkedNode_1647) {
-            aLinkedNode_1652 = null;
+        LinkedNode node = cursor;
+        if (node == this.nextPrevious) {
+            cursor = null;
             return null;
         }
-        aLinkedNode_1652 = linkedNode.aLinkedNode_7063;
-        return linkedNode;
+        cursor = node.secondaryNext;
+        return node;
     }
 
     public static void method1004(byte i) {
@@ -43,14 +43,14 @@ final class Class107 {
         if (i != 16) method1006(false, (byte) -62);
     }
 
-    final void method1005(boolean bool, LinkedNode linkedNode) {
-        if (linkedNode.aLinkedNode_7060 != null) linkedNode.method3162(bool);
+    final void addTail(boolean bool, LinkedNode node) {
+        if (node.secondaryPrevious != null) node.unlinkSecondary(bool);
         anInt1654++;
-        linkedNode.aLinkedNode_7063 = this.aLinkedNode_1647;
-        linkedNode.aLinkedNode_7060 = (this.aLinkedNode_1647.aLinkedNode_7060);
-        if (bool == true) {
-            linkedNode.aLinkedNode_7060.aLinkedNode_7063 = linkedNode;
-            linkedNode.aLinkedNode_7063.aLinkedNode_7060 = linkedNode;
+        node.secondaryNext = this.nextPrevious;
+        node.secondaryPrevious = (this.nextPrevious.secondaryPrevious);
+        if (bool) {
+            node.secondaryPrevious.secondaryNext = node;
+            node.secondaryNext.secondaryPrevious = node;
         }
     }
 
@@ -58,15 +58,15 @@ final class Class107 {
         anInt1655++;
         if (bool) {
             if (r.anInt9721 != -1) Class14.method235(r.anInt9721, (byte) -108);
-            for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aClass356_4915.method3484(0); class348_sub41 != null; class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3482(0))) {
-                if (!class348_sub41.method2712((byte) 4)) {
-                    class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3484(0));
+            for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aHashTable_4915.head(0); class348_sub41 != null; class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.next(0))) {
+                if (!class348_sub41.hasNext((byte) 4)) {
+                    class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.head(0));
                     if (class348_sub41 == null) break;
                 }
                 Class127_Sub1.method1118(true, false, class348_sub41, 2533);
             }
             r.anInt9721 = -1;
-            Class125.aClass356_4915 = new Class356(8);
+            Class125.aHashTable_4915 = new HashTable(8);
             Class99.method882((byte) 11);
             r.anInt9721 = Class54.anInt970;
             Option.method1713(false, 520);
@@ -121,18 +121,18 @@ final class Class107 {
                         }
                         Class318_Sub1.method2385(class46, i_1_, var_aa, class51.anInt921, i_15_, i, (byte) -113, i_16_, var_toolkit);
                     }
-                    for (Class348_Sub37 class348_sub37 = (Class348_Sub37) Class130.aClass356_1895.method3484(i_2_ ^ 0x59b0); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3482(0))) {
-                        int i_17_ = (int) (0x3L & (class348_sub37.aLong4291) >> 28);
+                    for (Class348_Sub37 class348_sub37 = (Class348_Sub37) Class130.aHashTable_1895.head(i_2_ ^ 0x59b0); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aHashTable_1895.next(0))) {
+                        int i_17_ = (int) (0x3L & (class348_sub37.key) >> 28);
                         if (Class334.anInt4155 == i_17_) {
-                            int i_18_ = (-za_Sub2.regionTileX + (int) ((class348_sub37.aLong4291) & 0x3fffL));
-                            int i_19_ = (-Class90.regionTileY + (int) ((class348_sub37.aLong4291) >> 14 & 0x3fffL));
+                            int i_18_ = (-za_Sub2.regionTileX + (int) ((class348_sub37.key) & 0x3fffL));
+                            int i_19_ = (-Class90.regionTileY + (int) ((class348_sub37.key) >> 14 & 0x3fffL));
                             int i_20_ = -(i_4_ / 128) + (2 + i_18_ * 4);
                             int i_21_ = -(i_3_ / 128) + (2 + i_19_ * 4);
                             Class151.method1211(i_1_, (Class348_Sub12.aSpriteArray6742[0]), i, class46, var_aa, i_21_, i_2_ ^ 0x59b2, i_20_);
                         }
                     }
                     for (int i_22_ = 0; (i_22_ < IDKTypeList.anInt2057); i_22_++) {
-                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_22_], -6008)));
+                        Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aHashTable_3654.get(Class74.anIntArray1233[i_22_], -6008)));
                         if (class348_sub22 != null) {
                             Npc npc = (class348_sub22.aNpc_6859);
                             if (npc.method2445((byte) -126) && ((npc.plane) == (Class132.aPlayer_1907.plane))) {
@@ -184,7 +184,7 @@ final class Class107 {
                         Class302 class302 = class302s[i_33_];
                         if (class302 != null && (class302.anInt3840 != 0) && Class367_Sub11.anInt7396 % 20 < 10) {
                             if (class302.anInt3840 == 1) {
-                                Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480(class302.anInt3833, -6008)));
+                                Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aHashTable_3654.get(class302.anInt3833, -6008)));
                                 if (class348_sub22 != null) {
                                     Npc npc = (class348_sub22.aNpc_6859);
                                     int i_34_ = (-(i_4_ / 128) + (npc.x) / 128);
@@ -224,24 +224,24 @@ final class Class107 {
         }
     }
 
-    final LinkedNode method1008(int i) {
-        if (i != 20) aLinkedNode_1652 = null;
+    final LinkedNode removeHead(int i) {
+        if (i != 20) cursor = null;
         anInt1653++;
-        LinkedNode linkedNode = (this.aLinkedNode_1647.aLinkedNode_7063);
-        if (linkedNode == this.aLinkedNode_1647) return null;
-        linkedNode.method3162(true);
-        return linkedNode;
+        LinkedNode node = (this.nextPrevious.secondaryNext);
+        if (node == this.nextPrevious) return null;
+        node.unlinkSecondary(true);
+        return node;
     }
 
-    final void method1009(int i) {
+    final void clear(int i) {
         anInt1646++;
         if (i == 2110355138) {
             for (; ; ) {
-                LinkedNode linkedNode = (this.aLinkedNode_1647.aLinkedNode_7063);
-                if (this.aLinkedNode_1647 == linkedNode) break;
-                linkedNode.method3162(true);
+                LinkedNode linkedNode = (this.nextPrevious.secondaryNext);
+                if (this.nextPrevious == linkedNode) break;
+                linkedNode.unlinkSecondary(true);
             }
-            aLinkedNode_1652 = null;
+            cursor = null;
         }
     }
 
@@ -266,17 +266,17 @@ final class Class107 {
     final LinkedNode method1011(int i) {
         if (i > -23) method1006(false, (byte) -34);
         anInt1649++;
-        LinkedNode linkedNode = (this.aLinkedNode_1647.aLinkedNode_7063);
-        if (linkedNode == this.aLinkedNode_1647) {
-            aLinkedNode_1652 = null;
+        LinkedNode linkedNode = (this.nextPrevious.secondaryNext);
+        if (linkedNode == this.nextPrevious) {
+            cursor = null;
             return null;
         }
-        aLinkedNode_1652 = linkedNode.aLinkedNode_7063;
+        cursor = linkedNode.secondaryNext;
         return linkedNode;
     }
 
-    public Class107() {
-        this.aLinkedNode_1647.aLinkedNode_7060 = this.aLinkedNode_1647;
-        this.aLinkedNode_1647.aLinkedNode_7063 = this.aLinkedNode_1647;
+    public SecondaryLinkedList() {
+        this.nextPrevious.secondaryPrevious = this.nextPrevious;
+        this.nextPrevious.secondaryNext = this.nextPrevious;
     }
 }

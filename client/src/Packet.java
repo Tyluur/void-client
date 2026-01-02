@@ -562,7 +562,7 @@ class Packet extends Node {
             ItemDefinition.aClass238_2773 = null;
         }
         if (newStep == STEP_LOGIN_SCREEN) Class348_Sub42_Sub8.method3198((Class285.anInt4737 != r.anInt9721), (byte) -45);
-        if (newStep == STEP_LOBBY_SCREEN) Class107.method1006((r.anInt9721 != Class54.anInt970), (byte) 102);
+        if (newStep == STEP_LOBBY_SCREEN) SecondaryLinkedList.method1006((r.anInt9721 != Class54.anInt970), (byte) 102);
         if (newStep == STEP_LOGGING_IN_FROM_LOGINSCREEN_TO_LOBBY) {
             if (Class348_Sub23_Sub3.aString9043 == null) Class151.method1213(Class64_Sub3.aString5600, Class186.aString2496, -124);
             else Class182.method1372(-1);
@@ -591,7 +591,7 @@ class Packet extends Node {
             Class348_Sub46.anInt7115 = 1;
             Class154.anInt2101 = 0;
             FloorOverlayTypeList.anInt3441 = 0;
-            Class348_Sub42_Sub3.method3177(-111, true);
+            ByteArraySecondaryNode.method3177(-111, true);
             Class95.CONFIGS.discardUnpacked = 1;
             Class247.ENUMS.discardUnpacked = 1;
             Class94.OBJECTS.discardUnpacked = 1;

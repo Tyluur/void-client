@@ -152,7 +152,7 @@ final class Class18 {
         if (anInt286 != i || i_10_ != anInt275) {
             anInt286 = i;
             anInt275 = i_10_;
-            for (Node node = aDeque_292.method1995(i_12_ ^ ~0x4); aDeque_292.aNode_3334 != node; node = node.aNode_4294)
+            for (Node node = aDeque_292.method1995(i_12_ ^ ~0x4); aDeque_292.aNode_3334 != node; node = node.prev)
                 ((Class348_Sub5) node).method2754(anInt275, (byte) 41, anInt286);
             aBoolean297 = true;
             aBoolean293 = true;
@@ -270,7 +270,7 @@ final class Class18 {
         aClass348_Sub42_Sub2_298 = null;
         aClass258_Sub3Array295 = null;
         if (!aDeque_292.method2002((byte) 18)) {
-            for (Node node = aDeque_292.method1995(4); aDeque_292.aNode_3334 != node; node = node.aNode_4294)
+            for (Node node = aDeque_292.method1995(4); aDeque_292.aNode_3334 != node; node = node.prev)
                 ((Class348_Sub5) node).method2763((byte) -124);
         }
         anInt286 = anInt275 = 1;

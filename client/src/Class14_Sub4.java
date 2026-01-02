@@ -215,10 +215,10 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3 {
         if (i_48_ > -79) method252(127, 53);
         if (Loader.skipLobby) {
             MonochromeImageCacheSlot.anInt6634 = i;
-            Class107.anInt1645 = i;
+            SecondaryLinkedList.anInt1645 = i;
         } else if (Option_Sub12.anInt5969 != 1) {
             if (Option_Sub12.anInt5969 == 2) MonochromeImageCacheSlot.anInt6634 = i;
-        } else Class107.anInt1645 = i;
+        } else SecondaryLinkedList.anInt1645 = i;
         anInt8643++;
     }
 }

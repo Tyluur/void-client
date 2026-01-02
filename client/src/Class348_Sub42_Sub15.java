@@ -26,13 +26,13 @@ final class Class348_Sub42_Sub15 extends LinkedNode {
     final int method3245(boolean bool) {
         anInt9646++;
         if (bool != true) method3248(-60);
-        return (int) (this.aLong4291 >>> 32 & 0xffL);
+        return (int) (this.key >>> 32 & 0xffL);
     }
 
     final void method3246(int i) {
-        this.aLong7057 |= ~0x7fffffffffffffffL;
+        this.linkedKey |= ~0x7fffffffffffffffL;
         anInt9653++;
-        if (method3250((byte) -89) == 0L) Class367_Sub4.aClass107_7325.method1005(true, this);
+        if (method3250((byte) -89) == 0L) Class367_Sub4.aSecondaryLinkedList_7325.addTail(true, this);
         if (i != -25490) aSprite_9659 = null;
     }
 
@@ -47,7 +47,7 @@ final class Class348_Sub42_Sub15 extends LinkedNode {
     final int method3248(int i) {
         if (i != 1) return -110;
         anInt9647++;
-        return (int) this.aLong4291;
+        return (int) this.key;
     }
 
     static final Class242 method3249(int i, int i_0_, OpenGLToolkit var_openGLToolkit, String string) {
@@ -80,17 +80,17 @@ final class Class348_Sub42_Sub15 extends LinkedNode {
     final long method3250(byte i) {
         anInt9649++;
         if (i >= -37) method3250((byte) 79);
-        return this.aLong7057 & 0x7fffffffffffffffL;
+        return this.linkedKey & 0x7fffffffffffffffL;
     }
 
     Class348_Sub42_Sub15(int i, int i_2_) {
-        this.aLong4291 = (long) i << 32 | (long) i_2_;
+        this.key = (long) i << 32 | (long) i_2_;
     }
 
     final void method3251(int i) {
         anInt9648++;
-        this.aLong7057 = (~0x7fffffffffffffffL & this.aLong7057 | Class62.safeTime(-120) + 500L);
-        s_Sub2.aClass107_8241.method1005(true, this);
+        this.linkedKey = (~0x7fffffffffffffffL & this.linkedKey | Class62.safeTime(-120) + 500L);
+        s_Sub2.aSecondaryLinkedList_8241.addTail(true, this);
         if (i != -16058) aSprite_9658 = null;
     }
 }

@@ -7,7 +7,7 @@ class Class75 {
     static MapElementTypeList aMapElementTypeList_1238;
     private static FloorOverlayTypeList aFloorOverlayTypeList_1239;
     private static FloorUnderlayTypeList aFloorUnderlayTypeList_1240;
-    private static Class356 aClass356_1241 = new Class356(16);
+    private static HashTable aHashTable_1241 = new HashTable(16);
     static MSITypeList aMSITypeList_1242;
     static Class348_Sub42_Sub14 aClass348_Sub42_Sub14_1243;
     static Interface17 anInterface17_1244;
@@ -37,7 +37,7 @@ class Class75 {
     static int anInt1268;
     private static Class243[][][] aClass243ArrayArrayArray1269;
     private static short[] aShortArray1270;
-    private static Class356 aClass356_1271;
+    private static HashTable aHashTable_1271;
     static int anInt1272;
     private static byte[] aByteArray1273;
     static int anInt1274;
@@ -109,7 +109,7 @@ class Class75 {
         anInterface17_1244 = null;
         aClass348_Sub42_Sub14_1243 = null;
         aIndex_1237 = null;
-        aClass356_1241 = null;
+        aHashTable_1241 = null;
         aByteArrayArrayArray1251 = null;
         aShortArray1252 = null;
         aByteArray1248 = null;
@@ -123,7 +123,7 @@ class Class75 {
         aByteArray1275 = null;
         aShortArray1261 = null;
         aByteArray1258 = null;
-        aClass356_1271 = null;
+        aHashTable_1271 = null;
         aClass243ArrayArrayArray1269 = null;
     }
 
@@ -148,7 +148,7 @@ class Class75 {
         aByteArray1275 = null;
         aShortArray1261 = null;
         aByteArray1258 = null;
-        aClass356_1271 = null;
+        aHashTable_1271 = null;
         aClass243ArrayArrayArray1269 = null;
         anIntArray1260 = null;
     }
@@ -200,7 +200,7 @@ class Class75 {
                             is_34_[i_36_] = (short) packet.readUnsignedShort(842397944);
                             is_35_[i_36_] = packet.readByte(-120);
                         }
-                        aClass356_1271.method3483((byte) 33, i_22_ << 16 | i_23_, new Class348_Sub39(is_34_, is_35_));
+                        aHashTable_1271.put((byte) 33, i_22_ << 16 | i_23_, new Class348_Sub39(is_34_, is_35_));
                     }
                 } else {
                     short[] is_37_ = null;
@@ -240,13 +240,13 @@ class Class75 {
         aMapElementTypeList_1238 = mapElementTypeList;
         aMSITypeList_1242 = MSITypeList;
         anInterface17_1244 = interface17;
-        aClass356_1241.method3481(0);
+        aHashTable_1241.clear(0);
         int i = aIndex_1237.method417("details", 0);
         int[] is = aIndex_1237.method396(i, 0);
         if (is != null) {
             for (int i_47_ = 0; i_47_ < is.length; i_47_++) {
                 Class348_Sub42_Sub14 class348_sub42_sub14 = IDKTypeList.method1205(is[i_47_], true, aIndex_1237, i);
-                aClass356_1241.method3483((byte) 25, class348_sub42_sub14.anInt9628, class348_sub42_sub14);
+                aHashTable_1241.put((byte) 25, class348_sub42_sub14.anInt9628, class348_sub42_sub14);
             }
         }
         Class59_Sub2_Sub1.method566(true, false, (byte) 11);
@@ -258,7 +258,7 @@ class Class75 {
                 int i_49_ = aShortArray1261[i + i_48_ * anInt1259] & 0xffff;
                 if (i_49_ != 0) {
                     if (i_49_ == 65535) {
-                        Class348_Sub39 class348_sub39 = ((Class348_Sub39) aClass356_1271.method3480(i << 16 | i_48_, -6008));
+                        Class348_Sub39 class348_sub39 = ((Class348_Sub39) aHashTable_1271.get(i << 16 | i_48_, -6008));
                         if (class348_sub39 != null) {
                             for (int i_50_ = 0; i_50_ < (class348_sub39.aShortArray7024).length; i_50_++) {
                                 Class51 class51 = (aObjectTypeList_1245.method2005(0, (class348_sub39.aShortArray7024[i_50_]) & 0xffff));
@@ -322,7 +322,7 @@ class Class75 {
     }
 
     static final void method754(int i) {
-        aClass348_Sub42_Sub14_1243 = (Class348_Sub42_Sub14) aClass356_1241.method3480(i, -6008);
+        aClass348_Sub42_Sub14_1243 = (Class348_Sub42_Sub14) aHashTable_1241.get(i, -6008);
     }
 
     private static final void method755(Toolkit var_toolkit, int i, int i_57_, int i_58_, int i_59_, int i_60_, int i_61_, int i_62_, short[] is, byte[] is_63_, boolean bool) {
@@ -462,7 +462,7 @@ class Class75 {
     }
 
     static final Class348_Sub42_Sub14 method757(int i) {
-        return ((Class348_Sub42_Sub14) aClass356_1241.method3480(i, -6008));
+        return ((Class348_Sub42_Sub14) aHashTable_1241.get(i, -6008));
     }
 
     static final Deque method758(Toolkit var_toolkit) {
@@ -505,7 +505,7 @@ class Class75 {
         aByteArray1275 = new byte[anInt1259 * anInt1267];
         aShortArray1261 = new short[anInt1259 * anInt1267];
         aByteArray1258 = new byte[anInt1259 * anInt1267];
-        aClass356_1271 = new Class356(1024);
+        aHashTable_1271 = new HashTable(1024);
         aClass243ArrayArrayArray1269 = new Class243[3][anInt1259 >> 6][anInt1267 >> 6];
         anIntArray1260 = new int[aFloorOverlayTypeList_1239.anInt3429 + 1];
     }
@@ -602,7 +602,7 @@ class Class75 {
                                 var_toolkit.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0);
                             } else if (i_154_ > 0) {
                                 if (i_154_ == 65535) {
-                                    Class348_Sub39 class348_sub39 = ((Class348_Sub39) (aClass356_1271.method3480(i_140_ << 16 | i_150_, -6008)));
+                                    Class348_Sub39 class348_sub39 = ((Class348_Sub39) (aHashTable_1271.get(i_140_ << 16 | i_150_, -6008)));
                                     if (class348_sub39 != null) method755(var_toolkit, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275[i_151_], (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025), true);
                                 } else {
                                     aShortArray1252[0] = (short) (i_154_ - 1);
@@ -644,7 +644,7 @@ class Class75 {
                                 int i_165_ = ((aShortArray1261[i_159_ + i_164_ * anInt1259]) & 0xffff);
                                 if (i_165_ > 0) {
                                     if (i_165_ == 65535) {
-                                        Class348_Sub39 class348_sub39 = ((Class348_Sub39) (aClass356_1271.method3480(i_159_ << 16 | i_164_, -6008)));
+                                        Class348_Sub39 class348_sub39 = ((Class348_Sub39) (aHashTable_1271.get(i_159_ << 16 | i_164_, -6008)));
                                         if (class348_sub39 != null) method763(var_toolkit, i_156_, i_161_, i_158_, i_163_, (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025));
                                     } else {
                                         aShortArray1252[0] = (short) (i_165_ - 1);
@@ -707,18 +707,18 @@ class Class75 {
     }
 
     static final Class348_Sub42_Sub14 method766(int i, int i_191_) {
-        for (Class348_Sub42_Sub14 class348_sub42_sub14 = (Class348_Sub42_Sub14) aClass356_1241.method3484(0); class348_sub42_sub14 != null; class348_sub42_sub14 = (Class348_Sub42_Sub14) aClass356_1241.method3482(0)) {
+        for (Class348_Sub42_Sub14 class348_sub42_sub14 = (Class348_Sub42_Sub14) aHashTable_1241.head(0); class348_sub42_sub14 != null; class348_sub42_sub14 = (Class348_Sub42_Sub14) aHashTable_1241.next(0)) {
             if (class348_sub42_sub14.aBoolean9639 && class348_sub42_sub14.method3238((byte) -120, i, i_191_)) return class348_sub42_sub14;
         }
         return null;
     }
 
-    static final Class107 method767(int i, int i_192_) {
-        Class107 class107 = new Class107();
-        for (Class348_Sub42_Sub14 class348_sub42_sub14 = (Class348_Sub42_Sub14) aClass356_1241.method3484(0); class348_sub42_sub14 != null; class348_sub42_sub14 = (Class348_Sub42_Sub14) aClass356_1241.method3482(0)) {
-            if (class348_sub42_sub14.aBoolean9639 && class348_sub42_sub14.method3238((byte) 29, i, i_192_)) class107.method1005(true, class348_sub42_sub14);
+    static final SecondaryLinkedList method767(int i, int i_192_) {
+        SecondaryLinkedList secondaryLinkedList = new SecondaryLinkedList();
+        for (Class348_Sub42_Sub14 class348_sub42_sub14 = (Class348_Sub42_Sub14) aHashTable_1241.head(0); class348_sub42_sub14 != null; class348_sub42_sub14 = (Class348_Sub42_Sub14) aHashTable_1241.next(0)) {
+            if (class348_sub42_sub14.aBoolean9639 && class348_sub42_sub14.method3238((byte) 29, i, i_192_)) secondaryLinkedList.addTail(true, class348_sub42_sub14);
         }
-        return class107;
+        return secondaryLinkedList;
     }
 
     private static final void method768(byte[] is, byte[] is_193_, short[] is_194_, int i, int i_195_) {

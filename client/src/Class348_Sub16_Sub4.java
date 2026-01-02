@@ -36,7 +36,7 @@ final class Class348_Sub16_Sub4 extends Class348_Sub16 {
                     method2882(class348_sub30);
                 } else {
                     class348_sub30.anInt6912 = i_1_;
-                    method2881(class348_sub30.aNode_4294, class348_sub30);
+                    method2881(class348_sub30.prev, class348_sub30);
                 }
             }
         } while (i != 0);
@@ -47,17 +47,17 @@ final class Class348_Sub16_Sub4 extends Class348_Sub16 {
     }
 
     private final void method2881(Node node, Class348_Sub30 class348_sub30) {
-        for (/**/; (node != aDeque_8966.aNode_3334 && (((Class348_Sub30) node).anInt6912 <= class348_sub30.anInt6912)); node = node.aNode_4294) {
+        for (/**/; (node != aDeque_8966.aNode_3334 && (((Class348_Sub30) node).anInt6912 <= class348_sub30.anInt6912)); node = node.prev) {
             /* empty */
         }
         Class348_Sub42_Sub16_Sub2.method3265(-106, class348_sub30, node);
-        anInt8967 = ((Class348_Sub30) aDeque_8966.aNode_3334.aNode_4294).anInt6912;
+        anInt8967 = ((Class348_Sub30) aDeque_8966.aNode_3334.prev).anInt6912;
     }
 
     private final void method2882(Class348_Sub30 class348_sub30) {
         class348_sub30.unlink((byte) 105);
         class348_sub30.method3006();
-        Node node = (aDeque_8966.aNode_3334.aNode_4294);
+        Node node = (aDeque_8966.aNode_3334.prev);
         if (node == aDeque_8966.aNode_3334) anInt8967 = -1;
         else anInt8967 = ((Class348_Sub30) node).anInt6912;
     }
@@ -122,7 +122,7 @@ final class Class348_Sub16_Sub4 extends Class348_Sub16 {
                     method2882(class348_sub30);
                 } else {
                     class348_sub30.anInt6912 = i_5_;
-                    method2881(class348_sub30.aNode_4294, class348_sub30);
+                    method2881(class348_sub30.prev, class348_sub30);
                 }
             }
         } while (i_3_ != 0);

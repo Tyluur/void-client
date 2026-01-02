@@ -22,7 +22,7 @@ final class Class238_Sub1 extends Class238 {
 
     static final void method1707(int i) {
         if (i != 26469) method1708(20, 93, 118, 24, (byte) -1, null);
-        ColourImageCache.aClass308_4036.method2303(true);
+        ColourImageCache.aLRUHashTable_4036.method2303(true);
         anInt5829++;
     }
 
@@ -143,7 +143,7 @@ final class Class238_Sub1 extends Class238 {
                         } else {
                             class348_sub9.aClass348_Sub16_Sub5_6673.method2915(i_9_);
                             class348_sub9.aClass348_Sub16_Sub5_6673.method2909(i_10_);
-                            if (!class348_sub9.aClass348_Sub16_Sub5_6673.method2712((byte) 4)) {
+                            if (!class348_sub9.aClass348_Sub16_Sub5_6673.hasNext((byte) 4)) {
                                 class348_sub9.aClass348_Sub10_6683 = null;
                                 class348_sub9.aClass348_Sub19_Sub1_6692 = null;
                                 class348_sub9.aClass348_Sub16_Sub5_6673 = null;

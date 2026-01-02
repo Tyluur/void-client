@@ -93,7 +93,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub3.aClass114_6584 == Class348_Sub42_Sub3.aClass114_9503) {
+        if (Class348_Sub3.aClass114_6584 == ByteArraySecondaryNode.aClass114_9503) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             boolean bool_3_ = (i & 0x1) == 1;
             String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) 108);
@@ -129,7 +129,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class356.aClass114_4388 == Class348_Sub3.aClass114_6584) {
+        if (HashTable.aClass114_4388 == Class348_Sub3.aClass114_6584) {
             byte i = Class299.aClass348_Sub49_Sub2_3813.readByte(-100);
             int i_8_ = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-111);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -126);
@@ -141,12 +141,12 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i = Class299.aClass348_Sub49_Sub2_3813.readIntLittle((byte) -123);
             int i_9_ = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -124);
-            Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3480(i_9_, -6008));
-            Class348_Sub41 class348_sub41_10_ = ((Class348_Sub41) Class125.aClass356_4915.method3480(i, -6008));
+            Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.get(i_9_, -6008));
+            Class348_Sub41 class348_sub41_10_ = ((Class348_Sub41) Class125.aHashTable_4915.get(i, -6008));
             if (class348_sub41_10_ != null) Class127_Sub1.method1118((class348_sub41 == null || (class348_sub41_10_.anInt7050 != class348_sub41.anInt7050)), false, class348_sub41_10_, 2533);
             if (class348_sub41 != null) {
                 class348_sub41.unlink((byte) 32);
-                Class125.aClass356_4915.method3483((byte) 102, i, class348_sub41);
+                Class125.aHashTable_4915.put((byte) 102, i, class348_sub41);
             }
             Class46 class46 = FontRenderer.method2570(1512932720, i_9_);
             if (class46 != null) Class251.method1916(-9343, class46);
@@ -355,7 +355,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             if (i_40_ >> 30 == 0) {
                 if (i_40_ >> 29 != 0) {
                     int i_44_ = i_40_ & 0xffff;
-                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_44_, -6008));
+                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_44_, -6008));
                     if (class348_sub22 != null) {
                         Npc npc = (class348_sub22.aNpc_6859);
                         if (i_38_ == 65535) i_38_ = -1;
@@ -756,7 +756,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
         if (Class348_Sub3.aClass114_6584 == Class264.aClass114_3368) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -124);
-            Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3480(i, -6008));
+            Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.get(i, -6008));
             if (class348_sub41 != null) Class127_Sub1.method1118(true, false, class348_sub41, 2533);
             if (JavaOffscreenSurface.aClass46_4730 != null) {
                 Class251.method1916(-9343, JavaOffscreenSurface.aClass46_4730);
@@ -1153,7 +1153,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             if (i_146_ == 65535) i_146_ = -1;
             for (int i_147_ = i_146_; i_145_ >= i_147_; i_147_++) {
                 long l = ((long) i << 32) - -(long) i_147_;
-                Class348_Sub44 class348_sub44 = ((Class348_Sub44) QuickChatCatTypeList.aClass356_2959.method3480(l, -6008));
+                Class348_Sub44 class348_sub44 = ((Class348_Sub44) QuickChatCatTypeList.aHashTable_2959.get(l, -6008));
                 Class348_Sub44 class348_sub44_148_;
                 if (class348_sub44 == null) {
                     if (i_147_ == -1) class348_sub44_148_ = (new Class348_Sub44(FontRenderer.method2570(1512932720, i).aClass348_Sub44_748.anInt7098, i_144_));
@@ -1162,7 +1162,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                     class348_sub44_148_ = new Class348_Sub44((class348_sub44.anInt7098), i_144_);
                     class348_sub44.unlink((byte) 91);
                 }
-                QuickChatCatTypeList.aClass356_2959.method3483((byte) 125, l, class348_sub44_148_);
+                QuickChatCatTypeList.aHashTable_2959.put((byte) 125, l, class348_sub44_148_);
             }
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -1363,7 +1363,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i_182_ = Class299.aClass348_Sub49_Sub2_3813.readIntLittle((byte) -122);
             int i_183_ = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) -95);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -125);
-            Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aClass356_4915.method3480(i_182_, -6008));
+            Class348_Sub41 class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.get(i_182_, -6008));
             if (class348_sub41 != null) Class127_Sub1.method1118(i != (class348_sub41.anInt7050), false, class348_sub41, 2533);
             Class338.method2661(i, i_182_, i_183_, false, 2);
             Class348_Sub3.aClass114_6584 = null;
@@ -1404,11 +1404,11 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             TextureOpColourGradient.anInt9200 = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) 126);
             Class73.anInt4786 = (Class299.aClass348_Sub49_Sub2_3813.readByteInverse(-622951480) << 3);
             NPCTypeList.anInt3581 = (Class299.aClass348_Sub49_Sub2_3813.readByteInverse(-622951480) << 3);
-            for (Class348_Sub37 class348_sub37 = (Class348_Sub37) Class130.aClass356_1895.method3484(0); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aClass356_1895.method3482(0))) {
-                int i = (int) ((class348_sub37.aLong4291 >> 28) & 0x3L);
-                int i_188_ = (int) (class348_sub37.aLong4291 & 0x3fffL);
+            for (Class348_Sub37 class348_sub37 = (Class348_Sub37) Class130.aHashTable_1895.head(0); class348_sub37 != null; class348_sub37 = ((Class348_Sub37) Class130.aHashTable_1895.next(0))) {
+                int i = (int) ((class348_sub37.key >> 28) & 0x3L);
+                int i_188_ = (int) (class348_sub37.key & 0x3fffL);
                 int i_189_ = i_188_ + -za_Sub2.regionTileX;
-                int i_190_ = (int) (0x3fffL & (class348_sub37.aLong4291 >> 14));
+                int i_190_ = (int) (0x3fffL & (class348_sub37.key >> 14));
                 int i_191_ = -Class90.regionTileY + i_190_;
                 if (i == TextureOpColourGradient.anInt9200 && NPCTypeList.anInt3581 <= i_189_ && 8 + NPCTypeList.anInt3581 > i_189_ && Class73.anInt4786 <= i_191_ && Class73.anInt4786 - -8 > i_191_) {
                     class348_sub37.unlink((byte) 89);
@@ -1428,7 +1428,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             for (int i_192_ = 0; i_192_ < 4; i_192_++)
                 is[i_192_] = Class299.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
             int i_193_ = Class299.aClass348_Sub49_Sub2_3813.readShortLittle(false);
-            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aClass356_3654.method3480(i_193_, -6008));
+            Class348_Sub22 class348_sub22 = ((Class348_Sub22) Class282.aHashTable_3654.get(i_193_, -6008));
             if (class348_sub22 != null) Class348_Sub17.method2931(i, (byte) 110, is, (class348_sub22.aNpc_6859));
             Class348_Sub3.aClass114_6584 = null;
             return true;
@@ -1553,14 +1553,14 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class318_Sub1_Sub1_Sub1.method2397((byte) -127);
             for (int i_211_ = i_208_; i_211_ <= i; i_211_++) {
                 long l = (long) i_211_ + ((long) i_209_ << 32);
-                Class348_Sub44 class348_sub44 = ((Class348_Sub44) QuickChatCatTypeList.aClass356_2959.method3480(l, -6008));
+                Class348_Sub44 class348_sub44 = ((Class348_Sub44) QuickChatCatTypeList.aHashTable_2959.get(l, -6008));
                 Class348_Sub44 class348_sub44_212_;
                 if (class348_sub44 != null) {
                     class348_sub44_212_ = new Class348_Sub44(i_210_, (class348_sub44.anInt7093));
                     class348_sub44.unlink((byte) 80);
                 } else if (i_211_ == -1) class348_sub44_212_ = (new Class348_Sub44(i_210_, FontRenderer.method2570(1512932720, i_209_).aClass348_Sub44_748.anInt7093));
                 else class348_sub44_212_ = new Class348_Sub44(i_210_, -1);
-                QuickChatCatTypeList.aClass356_2959.method3483((byte) 114, l, class348_sub44_212_);
+                QuickChatCatTypeList.aHashTable_2959.put((byte) 114, l, class348_sub44_212_);
             }
             Class348_Sub3.aClass114_6584 = null;
             return true;

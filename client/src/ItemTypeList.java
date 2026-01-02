@@ -251,14 +251,14 @@ final class ItemTypeList {
             itemDefinition.aStringArray2763 = aStringArray3293;
             itemDefinition.aBoolean2755 = false;
             itemDefinition.anIntArray2772 = null;
-            if (itemDefinition.aClass356_2757 != null) {
+            if (itemDefinition.aHashTable_2757 != null) {
                 boolean bool = false;
-                for (Node node = itemDefinition.aClass356_2757.method3484(0); node != null; node = itemDefinition.aClass356_2757.method3482(0)) {
-                    Class254 class254 = aParamTypeList_3292.method2600((int) node.aLong4291, 28364);
+                for (Node node = itemDefinition.aHashTable_2757.head(0); node != null; node = itemDefinition.aHashTable_2757.next(0)) {
+                    Class254 class254 = aParamTypeList_3292.method2600((int) node.key, 28364);
                     if (class254.aBoolean3261) node.unlink((byte) 60);
                     else bool = true;
                 }
-                if (!bool) itemDefinition.aClass356_2757 = null;
+                if (!bool) itemDefinition.aHashTable_2757 = null;
             }
         }
         synchronized (aClass60_3278) {
