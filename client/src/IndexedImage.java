@@ -382,8 +382,8 @@ final class IndexedImage {
         /* empty */
     }
 
-    static final IndexedImage loadFirst(Index index, int i, int i_112_) {
-        byte[] data = index.file(-1860, i, i_112_);
+    static final IndexedImage loadFirst(Index index, int groupId, int fileId) {
+        byte[] data = index.file(-1860, groupId, fileId);
         if (data == null) return null;
         return load(data)[0];
     }

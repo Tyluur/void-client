@@ -88,23 +88,23 @@ final class Index {
         return i_4_ == -40;
     }
 
-    final byte[] file(int group, int file, int i_6_, int[] key) {
+    final byte[] file(int groupId, int fileId, int i_6_, int[] key) {
         anInt639++;
         if (i_6_ != 2) anInt669 = 51;
-        if (!isValidFile(file, i_6_ + -2, group)) return null;
-        if (unpacked[group] == null || unpacked[group][file] == null) {
-            boolean bool = unpackFile(file, (byte) -78, key, group);
+        if (!isValidFile(fileId, i_6_ + -2, groupId)) return null;
+        if (unpacked[groupId] == null || unpacked[groupId][fileId] == null) {
+            boolean bool = unpackFile(fileId, (byte) -78, key, groupId);
             if (!bool) {
-                fetchGroup(group, -117);
-                bool = unpackFile(file, (byte) -103, key, group);
+                fetchGroup(groupId, -117);
+                bool = unpackFile(fileId, (byte) -103, key, groupId);
                 if (!bool) return null;
             }
         }
-        byte[] data = Class50_Sub1.unwrap(false, unpacked[group][file], 53146732);
+        byte[] data = Class50_Sub1.unwrap(false, unpacked[groupId][fileId], 53146732);
         if (this.discardUnpacked == 1) {
-            unpacked[group][file] = null;
-            if (index.fileLimits[group] == 1) unpacked[group] = null;
-        } else if (this.discardUnpacked == 2) unpacked[group] = null;
+            unpacked[groupId][fileId] = null;
+            if (index.fileLimits[groupId] == 1) unpacked[groupId] = null;
+        } else if (this.discardUnpacked == 2) unpacked[groupId] = null;
         return data;
     }
 
@@ -397,10 +397,10 @@ final class Index {
         }
     }
 
-    final byte[] file(int i, int i_64_, int i_65_) {
+    final byte[] file(int i, int groupId, int fileId) {
         if (i != -1860) unpacked = null;
         anInt651++;
-        return file(i_64_, i_65_, i ^ ~0x741, null);
+        return file(groupId, fileId, i ^ ~0x741, null);
     }
 
     final void discardUnpacked(int groupId, int i_66_) {
@@ -483,14 +483,14 @@ final class Index {
     }
 
     // method420
-    final boolean requestDownload(int i, int i_76_, int i_77_) {
+    final boolean requestDownload(int i, int groupId, int fileId) {
         anInt638++;
-        if (!isValidFile(i_77_, 0, i_76_)) return false;
-        if (unpacked[i_76_] != null && unpacked[i_76_][i_77_] != null) return true;
+        if (!isValidFile(fileId, 0, groupId)) return false;
+        if (unpacked[groupId] != null && unpacked[groupId][fileId] != null) return true;
         if (i != -10499) return true;
-        if (packed[i_76_] != null) return true;
-        fetchGroup(i_76_, -125);
-        return packed[i_76_] != null;
+        if (packed[groupId] != null) return true;
+        fetchGroup(groupId, -125);
+        return packed[groupId] != null;
     }
 
     // method421
