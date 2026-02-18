@@ -31,8 +31,8 @@ abstract class Model {
                     short i_12_ = animFrame_8_.translateIndices[i_11_];
                     if (bools == null || bools[i_12_] != !bool || (animBase.transformTypes[i_12_]) == 0) {
                         short i_13_ = animFrame_8_.frameIndices[i_11_];
-                        if (i_13_ != -1) method627((animBase.anIntArrayArray6959[i_13_]), bool_10_, i, 0, 0, i_9_ & (animBase.anIntArray6960[i_13_]), (byte) -93, 0, is, 0);
-                        method627((animBase.anIntArrayArray6959[i_12_]), bool_10_, i, animFrame_8_.transformY[i_11_], (animBase.transformTypes[i_12_]), (animBase.anIntArray6960[i_12_]) & i_9_, (byte) -93, animFrame_8_.transformX[i_11_], is, animFrame_8_.transformZ[i_11_]);
+                        if (i_13_ != -1) method627((animBase.groupLabels[i_13_]), bool_10_, i, 0, 0, i_9_ & (animBase.resetFlag[i_13_]), (byte) -93, 0, is, 0);
+                        method627((animBase.groupLabels[i_12_]), bool_10_, i, animFrame_8_.transformY[i_11_], (animBase.transformTypes[i_12_]), (animBase.resetFlag[i_12_]) & i_9_, (byte) -93, animFrame_8_.transformX[i_11_], is, animFrame_8_.transformZ[i_11_]);
                     }
                 }
             } else {
@@ -40,7 +40,7 @@ abstract class Model {
                 int i_15_ = 0;
                 int i_16_ = 0;
                 int i_17_ = -53 % ((i_5_ - 76) / 41);
-                for (/**/; animBase.anInt6965 > i_16_; i_16_++) {
+                for (/**/; animBase.length > i_16_; i_16_++) {
                     boolean bool_18_ = false;
                     if (animFrame_8_.transformCount > i_14_ && animFrame_8_.translateIndices[i_14_] == i_16_) bool_18_ = true;
                     boolean bool_19_ = false;
@@ -91,8 +91,8 @@ abstract class Model {
                                 i_27_ = i_20_;
                                 i_29_ = (byte) 0;
                             }
-                            if (i_23_ != -1) method627((animBase.anIntArrayArray6959[i_23_]), bool_10_, i, 0, 0, (i_9_ & (animBase.anIntArray6960[i_23_])), (byte) -93, 0, is, 0);
-                            else if (i_31_ != -1) method627((animBase.anIntArrayArray6959[i_31_]), bool_10_, i, 0, 0, (i_9_ & (animBase.anIntArray6960[i_31_])), (byte) -93, 0, is, 0);
+                            if (i_23_ != -1) method627((animBase.groupLabels[i_23_]), bool_10_, i, 0, 0, (i_9_ & (animBase.resetFlag[i_23_])), (byte) -93, 0, is, 0);
+                            else if (i_31_ != -1) method627((animBase.groupLabels[i_31_]), bool_10_, i, 0, 0, (i_9_ & (animBase.resetFlag[i_31_])), (byte) -93, 0, is, 0);
                             int i_32_;
                             int i_33_;
                             int i_34_;
@@ -126,7 +126,7 @@ abstract class Model {
                                 i_34_ = i_22_ - -((i_28_ + -i_22_) * i_7_ / i_6_);
                                 i_33_ = (i_7_ * (-i_24_ + i_27_) / i_6_ + i_24_);
                             }
-                            method627((animBase.anIntArrayArray6959[i_16_]), bool_10_, i, i_33_, i_21_, i_9_ & (animBase.anIntArray6960[i_16_]), (byte) -93, i_32_, is, i_34_);
+                            method627((animBase.groupLabels[i_16_]), bool_10_, i, i_33_, i_21_, i_9_ & (animBase.resetFlag[i_16_]), (byte) -93, i_32_, is, i_34_);
                         }
                     }
                 }
@@ -276,7 +276,7 @@ abstract class Model {
                 AnimBase animBase = animFrame.base;
                 for (int i_75_ = 0; (i_75_ < animFrame.transformCount); i_75_++) {
                     short i_76_ = animFrame.translateIndices[i_75_];
-                    if (animBase.aBooleanArray6954[i_76_]) {
+                    if (animBase.reset[i_76_]) {
                         if (animFrame.frameIndices[i_75_] != -1) P(0, 0, 0, 0);
                         P((animBase.transformTypes[i_76_]), animFrame.transformX[i_75_], animFrame.transformY[i_75_], animFrame.transformZ[i_75_]);
                     }

@@ -9,7 +9,7 @@ final class AnimTypeList {
     static int anInt1485;
     static int anInt1486;
     private Class60 aClass60_1487 = new Class60(64);
-    private final Index aIndex_1488;
+    private final Index animationsIndex;
     static int anInt1489;
     static int anInt1490;
     private Class60 aClass60_1491 = new Class60(100);
@@ -34,8 +34,8 @@ final class AnimTypeList {
         if (i_0_ != 7) aClass60_1491 = null;
         if (animationType != null) return animationType;
         byte[] is;
-        synchronized (aIndex_1488) {
-            is = aIndex_1488.file(-1860, Class15.method256(i, (byte) 125), Class52.method494(i_0_ ^ 0x55, i));
+        synchronized (animationsIndex) {
+            is = animationsIndex.file(-1860, Class15.method256(i, (byte) 125), Class52.method494(i_0_ ^ 0x55, i));
         }
         animationType = new AnimationType();
         animationType.anInt269 = i;
@@ -98,10 +98,10 @@ final class AnimTypeList {
     // Class87
     AnimTypeList(Class230 class230, int i, Index index, Index index_6_, Index index_7_) {
         try {
-            aIndex_1488 = index;
-            if (aIndex_1488 != null) {
-                int i_8_ = aIndex_1488.groupSize(-1) + -1;
-                aIndex_1488.fileLimit(0, i_8_);
+            animationsIndex = index;
+            if (animationsIndex != null) {
+                int i_8_ = animationsIndex.groupSize(-1) + -1;
+                animationsIndex.fileLimit(0, i_8_);
             }
             Option.method1711(7, index_6_, 2, index_7_);
         } catch (RuntimeException runtimeexception) {

@@ -29,10 +29,10 @@ abstract class Option {
 
     static final void method1711(int i, Index index, int i_0_, Index index_1_) {
         try {
-            Class135_Sub2.aIndex_4843 = index_1_;
+            Class135_Sub2.animSkeletons = index_1_;
             anInt3140++;
             if (i != 7) PARTICLES = null;
-            Class138.aIndex_1940 = index;
+            Class138.animFrameIndex = index;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("su.Q(" + i + ',' + (index != null ? "{...}" : "null") + ',' + i_0_ + ',' + (index_1_ != null ? "{...}" : "null") + ')'));
         }

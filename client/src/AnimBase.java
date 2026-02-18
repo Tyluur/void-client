@@ -9,18 +9,18 @@ import java.lang.reflect.Method;
 
 // Class348_Sub33
 final class AnimBase extends Node {
-    boolean[] aBooleanArray6954;
+    boolean[] reset;
     static Class152 aClass152_6955 = new Class152();
     static int anInt6956;
     int[] transformTypes;
     int anInt6958;
-    int[][] anIntArrayArray6959;
-    int[] anIntArray6960;
+    int[][] groupLabels;
+    int[] resetFlag;
     static int anInt6961;
     static byte[][][] tileFlags;
     static long aLong6963 = 0L;
     static int anInt6964;
-    int anInt6965;
+    int length;
     static long aLong6966;
     static int language = 0;
 
@@ -128,24 +128,24 @@ final class AnimBase extends Node {
     AnimBase(int i, byte[] is) {
         this.anInt6958 = i;
         Packet packet = new Packet(is);
-        this.anInt6965 = packet.readUnsignedByte(255);
-        this.anIntArrayArray6959 = new int[this.anInt6965][];
-        this.transformTypes = new int[this.anInt6965];
-        this.anIntArray6960 = new int[this.anInt6965];
-        this.aBooleanArray6954 = new boolean[this.anInt6965];
-        for (int i_8_ = 0; (i_8_ < this.anInt6965); i_8_++) {
+        this.length = packet.readUnsignedByte(255);
+        this.groupLabels = new int[this.length][];
+        this.transformTypes = new int[this.length];
+        this.resetFlag = new int[this.length];
+        this.reset = new boolean[this.length];
+        for (int i_8_ = 0; (i_8_ < this.length); i_8_++) {
             this.transformTypes[i_8_] = packet.readUnsignedByte(255);
             if (this.transformTypes[i_8_] == 6) this.transformTypes[i_8_] = 2;
         }
-        for (int i_9_ = 0; (i_9_ < this.anInt6965); i_9_++)
-            this.aBooleanArray6954[i_9_] = packet.readUnsignedByte(255) == 1;
-        for (int i_10_ = 0; (i_10_ < this.anInt6965); i_10_++)
-            this.anIntArray6960[i_10_] = packet.readUnsignedShort(842397944);
-        for (int i_11_ = 0; (this.anInt6965 > i_11_); i_11_++)
-            this.anIntArrayArray6959[i_11_] = new int[packet.readUnsignedByte(255)];
-        for (int i_12_ = 0; i_12_ < this.anInt6965; i_12_++) {
-            for (int i_13_ = 0; (i_13_ < this.anIntArrayArray6959[i_12_].length); i_13_++)
-                this.anIntArrayArray6959[i_12_][i_13_] = packet.readUnsignedByte(255);
+        for (int i_9_ = 0; (i_9_ < this.length); i_9_++)
+            this.reset[i_9_] = packet.readUnsignedByte(255) == 1;
+        for (int i_10_ = 0; (i_10_ < this.length); i_10_++)
+            this.resetFlag[i_10_] = packet.readUnsignedShort(842397944);
+        for (int i_11_ = 0; (this.length > i_11_); i_11_++)
+            this.groupLabels[i_11_] = new int[packet.readUnsignedByte(255)];
+        for (int i_12_ = 0; i_12_ < this.length; i_12_++) {
+            for (int i_13_ = 0; (i_13_ < this.groupLabels[i_12_].length); i_13_++)
+                this.groupLabels[i_12_][i_13_] = packet.readUnsignedByte(255);
         }
     }
 
