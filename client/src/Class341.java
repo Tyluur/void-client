@@ -27,7 +27,7 @@ final class Class341 {
         i_3_ -= (i_0_ + -i_5_) / 2;
         Class48.anInt859 = -1;
         Class245.anInt3170 = -(Class75.anInt1267 * i_3_ / i_5_) + Class75.anInt1267;
-        Class348_Sub36.anInt6992 = Class75.anInt1259 * i_1_ / i_4_;
+        HookRequest.anInt6992 = Class75.anInt1259 * i_1_ / i_4_;
         Js5TextureSource.anInt4609 = -1;
         int i_6_ = 50 / ((-12 - i_2_) / 40);
         VideoType.method2811(false);
@@ -57,10 +57,10 @@ final class Class341 {
         if (r.aBoolean9722) {
             Class46 class46 = Class348_Sub22.method2957(Class9.anInt169, (byte) -54, Class149.anInt2046);
             if (class46 != null && class46.anObjectArray680 != null) {
-                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                class348_sub36.aClass46_6989 = class46;
-                class348_sub36.anObjectArray6987 = class46.anObjectArray680;
-                Class66.method705(class348_sub36);
+                HookRequest hookRequest = new HookRequest();
+                hookRequest.source = class46;
+                hookRequest.arguments = class46.anObjectArray680;
+                Class66.method705(hookRequest);
             }
             Class301.anInt3829 = -1;
             r.aBoolean9722 = false;

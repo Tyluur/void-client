@@ -161,11 +161,11 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3 {
                     var_toolkit.aa(i_16_ - 150, 2 + i_17_, Node.anInt4290 * 3, 30, Class135.aColorArray1928[Class222.anInt2884].getRGB(), 0);
                     Deque.aFontRenderer_3326.method2575((byte) -116, i_16_, Class50_Sub3.aColorArray5242[Class222.anInt2884].getRGB(), Class274.aClass274_3501.method2063(AnimBase.language, i + 551), -1, i_15_ + i_17_);
                 } else {
-                    int i_18_ = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
+                    int i_18_ = (HookRequest.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
                     int i_19_ = ((int) ((float) i_13_ / Class75.aFloat1247) + Class245.anInt3170);
-                    int i_20_ = ((int) ((float) i_12_ / Class75.aFloat1247) + Class348_Sub36.anInt6992);
+                    int i_20_ = ((int) ((float) i_12_ / Class75.aFloat1247) + HookRequest.anInt6992);
                     Class59_Sub1_Sub2.anInt8665 = Class245.anInt3170 + -(int) ((float) i_13_ / Class75.aFloat1247);
-                    Class368.anInt4509 = (Class348_Sub36.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
+                    Class368.anInt4509 = (HookRequest.anInt6992 + -(int) ((float) i_12_ / Class75.aFloat1247));
                     int i_21_ = (Class245.anInt3170 + -(int) ((float) i_13_ / Class75.aFloat1247));
                     Class182.anInt2446 = (int) ((float) (2 * i_13_) / Class75.aFloat1247);
                     SkyBoxSphereTypeList.anInt370 = (int) ((float) (i_12_ * 2) / Class75.aFloat1247);

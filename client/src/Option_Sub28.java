@@ -48,10 +48,10 @@ final class Option_Sub28 extends Option {
         }
         if (Option_Sub10.anInt5943 == class46.anInt765) Class348_Sub1.aClass46_6561 = class46;
         if (bool && class46.anObjectArray727 != null && (i_10_ != class46.anInt709 || (i_11_ != class46.anInt789))) {
-            Class348_Sub36 class348_sub36 = new Class348_Sub36();
-            class348_sub36.aClass46_6989 = class46;
-            class348_sub36.anObjectArray6987 = class46.anObjectArray727;
-            Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+            HookRequest hookRequest = new HookRequest();
+            hookRequest.source = class46;
+            hookRequest.arguments = class46.anObjectArray727;
+            Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
         }
     }
 

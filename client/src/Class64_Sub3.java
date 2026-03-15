@@ -1688,7 +1688,7 @@ final class Class64_Sub3 extends Model {
         Js5TextureSource.anInt4609 = -1;
         if (i != -59) anInt5584 = 77;
         anInt5577++;
-        Class348_Sub36.anInt6992 = i_377_;
+        HookRequest.anInt6992 = i_377_;
         VideoType.method2811(false);
     }
 

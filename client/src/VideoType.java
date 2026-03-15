@@ -30,13 +30,13 @@ final class VideoType extends Node {
 
     static final void method2811(boolean bool) {
         anInt6777++;
-        if (Class348_Sub36.anInt6992 < 0) {
-            Class348_Sub36.anInt6992 = 0;
+        if (HookRequest.anInt6992 < 0) {
+            HookRequest.anInt6992 = 0;
             Js5TextureSource.anInt4609 = -1;
             Class48.anInt859 = -1;
         }
-        if (Class348_Sub36.anInt6992 > Class75.anInt1259) {
-            Class348_Sub36.anInt6992 = Class75.anInt1259;
+        if (HookRequest.anInt6992 > Class75.anInt1259) {
+            HookRequest.anInt6992 = Class75.anInt1259;
             Class48.anInt859 = -1;
             Js5TextureSource.anInt4609 = -1;
         }

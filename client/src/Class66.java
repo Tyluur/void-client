@@ -87,10 +87,10 @@ final class Class66 {
             for (int i_7_ = 0; i_7_ < class46s.length; i_7_++) {
                 Class46 class46 = class46s[i_7_];
                 if (class46.anObjectArray815 != null) {
-                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                    class348_sub36.aClass46_6989 = class46;
-                    class348_sub36.anObjectArray6987 = class46.anObjectArray815;
-                    method712(class348_sub36, 2000000);
+                    HookRequest hookRequest = new HookRequest();
+                    hookRequest.source = class46;
+                    hookRequest.arguments = class46.anObjectArray815;
+                    method712(hookRequest, 2000000);
                 }
             }
         }
@@ -536,7 +536,7 @@ final class Class66 {
                 return;
             }
             if (i == 5209) {
-                anIntArray1149[anInt1173++] = Class348_Sub36.anInt6992 + Class75.anInt1266;
+                anIntArray1149[anInt1173++] = HookRequest.anInt6992 + Class75.anInt1266;
                 anIntArray1149[anInt1173++] = Class245.anInt3170 + Class75.anInt1263;
                 return;
             }
@@ -646,7 +646,7 @@ final class Class66 {
                     anIntArray1149[anInt1173++] = -1;
                     return;
                 } else {
-                    boolean bool_76_ = (class348_sub42_sub14.method3239(true, Class245.anInt3170 + Class75.anInt1263, Class348_Sub36.anInt6992 + Class75.anInt1266, anIntArray1175));
+                    boolean bool_76_ = (class348_sub42_sub14.method3239(true, Class245.anInt3170 + Class75.anInt1263, HookRequest.anInt6992 + Class75.anInt1266, anIntArray1175));
                     if (bool_76_) {
                         anIntArray1149[anInt1173++] = anIntArray1175[1];
                         anIntArray1149[anInt1173++] = anIntArray1175[2];
@@ -2446,8 +2446,8 @@ final class Class66 {
         throw new IllegalStateException(String.valueOf(i));
     }
 
-    static final void method705(Class348_Sub36 class348_sub36) {
-        method712(class348_sub36, 200000);
+    static final void method705(HookRequest hookRequest) {
+        method712(hookRequest, 200000);
     }
 
     static final void method706() {
@@ -3269,7 +3269,7 @@ final class Class66 {
                         class46.anObjectArray671 = objects;
                         class46.anIntArray731 = is;
                     } else if (i == 1416) class46.anObjectArray714 = objects;
-                    else if (i == 1417) class46.anObjectArray803 = objects;
+                    else if (i == 1417) class46.onScrollWheel = objects;
                     else if (i == 1418) class46.anObjectArray820 = objects;
                     else if (i == 1419) class46.anObjectArray822 = objects;
                     else if (i == 1420) class46.anObjectArray734 = objects;
@@ -3445,11 +3445,11 @@ final class Class66 {
                 if (anInt1177 >= 10) throw new RuntimeException("C29xx-1");
                 if (i == 1927) {
                     if (class46.anObjectArray727 != null) {
-                        Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                        class348_sub36.aClass46_6989 = class46;
-                        class348_sub36.anObjectArray6987 = class46.anObjectArray727;
-                        class348_sub36.anInt6988 = anInt1177 + 1;
-                        Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                        HookRequest hookRequest = new HookRequest();
+                        hookRequest.source = class46;
+                        hookRequest.arguments = class46.anObjectArray727;
+                        hookRequest.anInt6988 = anInt1177 + 1;
+                        Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                         return;
                     }
                     return;
@@ -5087,8 +5087,8 @@ final class Class66 {
         }
     }
 
-    private static final void method712(Class348_Sub36 class348_sub36, int i) {
-        Object[] objects = class348_sub36.anObjectArray6987;
+    private static final void method712(HookRequest hookRequest, int i) {
+        Object[] objects = hookRequest.arguments;
         int i_515_ = ((Integer) objects[0]).intValue();
         ClientScript clientScript = Class328.method2609(-122, i_515_);
         boolean print = false;
@@ -5100,27 +5100,27 @@ final class Class66 {
             for (int i_518_ = 1; i_518_ < objects.length; i_518_++) {
                 if (objects[i_518_] instanceof Integer) {
                     int i_519_ = ((Integer) objects[i_518_]).intValue();
-                    if (i_519_ == -2147483647) i_519_ = class348_sub36.anInt6984;
-                    if (i_519_ == -2147483646) i_519_ = class348_sub36.anInt6995;
+                    if (i_519_ == -2147483647) i_519_ = hookRequest.anInt6984;
+                    if (i_519_ == -2147483646) i_519_ = hookRequest.mouseY;
                     if (i_519_ == -2147483645)
-                        i_519_ = ((class348_sub36.aClass46_6989 != null) ? class348_sub36.aClass46_6989.anInt830 : -1);
-                    if (i_519_ == -2147483644) i_519_ = class348_sub36.anInt6986;
+                        i_519_ = ((hookRequest.source != null) ? hookRequest.source.anInt830 : -1);
+                    if (i_519_ == -2147483644) i_519_ = hookRequest.anInt6986;
                     if (i_519_ == -2147483643)
-                        i_519_ = ((class348_sub36.aClass46_6989 != null) ? class348_sub36.aClass46_6989.anInt704 : -1);
+                        i_519_ = ((hookRequest.source != null) ? hookRequest.source.anInt704 : -1);
                     if (i_519_ == -2147483642)
-                        i_519_ = ((class348_sub36.aClass46_6983 != null) ? class348_sub36.aClass46_6983.anInt830 : -1);
+                        i_519_ = ((hookRequest.aClass46_6983 != null) ? hookRequest.aClass46_6983.anInt830 : -1);
                     if (i_519_ == -2147483641)
-                        i_519_ = ((class348_sub36.aClass46_6983 != null) ? class348_sub36.aClass46_6983.anInt704 : -1);
-                    if (i_519_ == -2147483640) i_519_ = class348_sub36.anInt6991;
-                    if (i_519_ == -2147483639) i_519_ = class348_sub36.anInt6982;
+                        i_519_ = ((hookRequest.aClass46_6983 != null) ? hookRequest.aClass46_6983.anInt704 : -1);
+                    if (i_519_ == -2147483640) i_519_ = hookRequest.anInt6991;
+                    if (i_519_ == -2147483639) i_519_ = hookRequest.anInt6982;
                     anIntArray1164[i_516_++] = i_519_;
                 } else if (objects[i_518_] instanceof String) {
                     String string = (String) objects[i_518_];
-                    if (string.equals("event_opbase")) string = class348_sub36.aString6994;
+                    if (string.equals("event_opbase")) string = hookRequest.aString6994;
                     aStringArray1155[i_517_++] = string;
                 }
             }
-            anInt1177 = class348_sub36.anInt6988;
+            anInt1177 = hookRequest.anInt6988;
             method711(clientScript, i, i_515_);
         }
     }

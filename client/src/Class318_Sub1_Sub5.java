@@ -98,7 +98,7 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1 {
 
     static final Class110_Sub1 method2487(int i) {
         anInt8778++;
-        Class348_Sub36.anInt6985 = 0;
+        HookRequest.anInt6985 = 0;
         if (i >= -91) anInt8775 = -63;
         return Class2.method170(true);
     }

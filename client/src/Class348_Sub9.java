@@ -84,12 +84,12 @@ final class Class348_Sub9 extends Node {
                 Class46 class46 = Class348_Sub22.method2957(i, (byte) -54, i_9_);
                 if (class46 != null) {
                     if (class46.anObjectArray741 != null) {
-                        Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                        class348_sub36.aClass46_6989 = class46;
-                        class348_sub36.aString6994 = string;
-                        class348_sub36.anObjectArray6987 = class46.anObjectArray741;
-                        class348_sub36.anInt6986 = i_8_;
-                        Class66.method705(class348_sub36);
+                        HookRequest hookRequest = new HookRequest();
+                        hookRequest.source = class46;
+                        hookRequest.aString6994 = string;
+                        hookRequest.arguments = class46.anObjectArray741;
+                        hookRequest.anInt6986 = i_8_;
+                        Class66.method705(hookRequest);
                     }
                     if (Class240.mainLogicStep == 10 && client.method105(class46).method3301(-1 + i_8_, false)) {
                         if (i_8_ == 1) {

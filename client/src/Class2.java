@@ -14,7 +14,7 @@ final class Class2 {
     static final Class110_Sub1 method170(boolean bool) {
         if (bool != true) method174(-106, -36);
         anInt122++;
-        if (Class348_Sub36.anInt6985 < StructTypeList.aClass110_Sub1Array1146.length) return StructTypeList.aClass110_Sub1Array1146[Class348_Sub36.anInt6985++];
+        if (HookRequest.anInt6985 < StructTypeList.aClass110_Sub1Array1146.length) return StructTypeList.aClass110_Sub1Array1146[HookRequest.anInt6985++];
         return null;
     }
 

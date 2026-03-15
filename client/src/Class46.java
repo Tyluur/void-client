@@ -135,7 +135,7 @@ final class Class46 {
     int anInt800;
     int[] anIntArray801;
     static int anInt802;
-    Object[] anObjectArray803;
+    Object[] onScrollWheel;
     static int anInt804;
     Object[] anObjectArray805;
     int anInt806;
@@ -591,7 +591,7 @@ final class Class46 {
         this.anObjectArray805 = method432(packet, -1);
         this.anObjectArray823 = method432(packet, -1);
         this.anObjectArray692 = method432(packet, -1);
-        this.anObjectArray803 = method432(packet, -1);
+        this.onScrollWheel = method432(packet, -1);
         this.anObjectArray685 = method432(packet, -1);
         this.anObjectArray708 = method432(packet, -1);
         this.anIntArray686 = method441(!bool, packet);
@@ -624,7 +624,7 @@ final class Class46 {
         this.anIntArray818 = null;
         this.anObjectArray708 = null;
         this.anObjectArray687 = null;
-        this.anObjectArray803 = null;
+        this.onScrollWheel = null;
         this.anObjectArray823 = null;
         this.anObjectArray805 = null;
         anInt829++;

@@ -333,34 +333,34 @@ final class ColourImageCacheSlot extends Node {
                             Class237.aBoolean3103 = false;
                         }
                         for (; ; ) {
-                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class208.aDeque_2707.removeFirst(8));
-                            if (class348_sub36 == null) break;
-                            Class46 class46 = (class348_sub36.aClass46_6989);
+                            HookRequest hookRequest = ((HookRequest) Class208.aDeque_2707.removeFirst(8));
+                            if (hookRequest == null) break;
+                            Class46 class46 = (hookRequest.source);
                             if (class46.anInt704 >= 0) {
                                 Class46 class46_27_ = FontRenderer.method2570(1512932720, (class46.anInt834));
                                 if (class46_27_ == null || (class46_27_.aClass46Array798) == null || ((class46_27_.aClass46Array798).length <= class46.anInt704) || (class46 != (class46_27_.aClass46Array798[class46.anInt704]))) continue;
                             }
-                            Class66.method705(class348_sub36);
+                            Class66.method705(hookRequest);
                         }
                         for (; ; ) {
-                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Renderer.aDeque_4473.removeFirst(8));
-                            if (class348_sub36 == null) break;
-                            Class46 class46 = (class348_sub36.aClass46_6989);
+                            HookRequest hookRequest = ((HookRequest) Renderer.aDeque_4473.removeFirst(8));
+                            if (hookRequest == null) break;
+                            Class46 class46 = (hookRequest.source);
                             if (class46.anInt704 >= 0) {
                                 Class46 class46_28_ = FontRenderer.method2570(1512932720, (class46.anInt834));
                                 if (class46_28_ == null || (class46_28_.aClass46Array798) == null || (class46.anInt704 >= (class46_28_.aClass46Array798).length) || ((class46_28_.aClass46Array798[class46.anInt704]) != class46)) continue;
                             }
-                            Class66.method705(class348_sub36);
+                            Class66.method705(hookRequest);
                         }
                         for (; ; ) {
-                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class348_Sub1_Sub2.aDeque_8810.removeFirst(i + -11424));
-                            if (class348_sub36 == null) break;
-                            Class46 class46 = (class348_sub36.aClass46_6989);
+                            HookRequest hookRequest = ((HookRequest) Class348_Sub1_Sub2.hookRequests.removeFirst(i + -11424));
+                            if (hookRequest == null) break;
+                            Class46 class46 = (hookRequest.source);
                             if (class46.anInt704 >= 0) {
                                 Class46 class46_29_ = FontRenderer.method2570(1512932720, (class46.anInt834));
                                 if (class46_29_ == null || (class46_29_.aClass46Array798) == null || (class46.anInt704 >= (class46_29_.aClass46Array798).length) || ((class46_29_.aClass46Array798[class46.anInt704]) != class46)) continue;
                             }
-                            Class66.method705(class348_sub36);
+                            Class66.method705(hookRequest);
                         }
                         if (Class168.aClass46_2249 == null) LinkedNode.anInt7059 = 0;
                         if (Class289.aClass46_3701 != null) Class347.method2708(-30206);

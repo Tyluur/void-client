@@ -3,7 +3,7 @@
  */
 
 final class Class348_Sub1_Sub2 extends Class348_Sub1 {
-    static Deque aDeque_8810 = new Deque();
+    static Deque hookRequests = new Deque();
     static int anInt8811;
     static int anInt8812;
     static int anInt8813;
@@ -49,7 +49,7 @@ final class Class348_Sub1_Sub2 extends Class348_Sub1 {
     public static void method2731(byte i) {
         aByteArrayArray8816 = null;
         if (i != -23) method2730(14, 86, null, -106);
-        aDeque_8810 = null;
+        hookRequests = null;
         permutations = null;
         aClass114_8817 = null;
     }

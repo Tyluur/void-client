@@ -389,7 +389,7 @@ public final class client extends Applet_Sub1 {
         Class69.method722(13569);
         Class184.method1386(true);
         Class43.method380(0);
-        Class348_Sub36.method3029(126);
+        HookRequest.method3029(126);
         ClientScript.method3278(1);
         Class168.method1298(-1);
         Class348_Sub42_Sub16.method3252(353);
@@ -1074,10 +1074,10 @@ public final class client extends Applet_Sub1 {
                     }
                     if (class46.aBoolean676 || i_45_ < i_47_ && i_46_ < i_48_) {
                         if (class46.aBoolean776 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
-                            for (Class348_Sub36 class348_sub36 = (Class348_Sub36) Class348_Sub1_Sub2.aDeque_8810.method1995(4); class348_sub36 != null; class348_sub36 = ((Class348_Sub36) Class348_Sub1_Sub2.aDeque_8810.method1990((byte) 71))) {
-                                if (class348_sub36.aBoolean6993) {
-                                    class348_sub36.unlink((byte) 65);
-                                    class348_sub36.aClass46_6989.aBoolean737 = false;
+                            for (HookRequest hookRequest = (HookRequest) Class348_Sub1_Sub2.hookRequests.method1995(4); hookRequest != null; hookRequest = ((HookRequest) Class348_Sub1_Sub2.hookRequests.method1990((byte) 71))) {
+                                if (hookRequest.mouseEvent) {
+                                    hookRequest.unlink((byte) 65);
+                                    hookRequest.source.aBoolean737 = false;
                                 }
                             }
                             if (Class318_Sub1.anInt6392 == 0) {
@@ -1135,13 +1135,13 @@ public final class client extends Applet_Sub1 {
                             Class40.anInt558 = i_44_;
                         }
                         if (class46.aBoolean682 || class46.anInt765 != 0) {
-                            if (bool && Class98.mouseWheelRotation != 0 && (class46.anObjectArray803 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aBoolean6993 = true;
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anInt6995 = Class98.mouseWheelRotation;
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray803;
-                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                            if (bool && Class98.mouseWheelRotation != 0 && (class46.onScrollWheel != null)) {
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.mouseEvent = true;
+                                hookRequest.source = class46;
+                                hookRequest.mouseY = Class98.mouseWheelRotation;
+                                hookRequest.arguments = class46.onScrollWheel;
+                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                             }
                             if (Class289.aClass46_3701 != null || Class5_Sub1.aBoolean8335 || ((class46.anInt765 != MouseLog.anInt7102) && LinkedNode.anInt7059 > 0)) {
                                 bool_54_ = false;
@@ -1212,7 +1212,7 @@ public final class client extends Applet_Sub1 {
                                     if (bool_54_) {
                                         int i_70_ = (int) ((double) (i_51_ + (mouseLog.method3308((byte) -127)) - i_43_ - ((class46.anInt709) / 2)) * 2.0 / (double) (Class75.aFloat1247));
                                         int i_71_ = (int) -((double) (i_52_ + (mouseLog.method3311(-111)) - i_44_ - ((class46.anInt789) / 2)) * 2.0 / (double) (Class75.aFloat1247));
-                                        int i_72_ = (Class348_Sub36.anInt6992 + i_70_ + Class75.anInt1266);
+                                        int i_72_ = (HookRequest.anInt6992 + i_70_ + Class75.anInt1266);
                                         int i_73_ = (Class245.anInt3170 + i_71_ + Class75.anInt1263);
                                         Class348_Sub42_Sub14 class348_sub42_sub14 = Class163.method1269(-17096);
                                         if (class348_sub42_sub14 != null) {
@@ -1235,7 +1235,7 @@ public final class client extends Applet_Sub1 {
                                         }
                                     } else if (bool_53_ && (LinkedNode.anInt7059 > 0)) {
                                         if (LinkedNode.anInt7059 == 1 && ((Class318_Sub4.anInt6411 != Class258_Sub4.mouseMonitor.method3597(true)) || (HitmarkTypeList.anInt2872 != (Class258_Sub4.mouseMonitor.method3594((byte) 117))))) {
-                                            FloorUnderlayTypeList.anInt2464 = Class348_Sub36.anInt6992;
+                                            FloorUnderlayTypeList.anInt2464 = HookRequest.anInt6992;
                                             s_Sub2.anInt8237 = Class245.anInt3170;
                                             LinkedNode.anInt7059 = 2;
                                         }
@@ -1265,100 +1265,100 @@ public final class client extends Applet_Sub1 {
                             if (!class46.aBoolean793 && bool_54_) {
                                 class46.aBoolean793 = true;
                                 if (class46.anObjectArray763 != null) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                    class348_sub36.aBoolean6993 = true;
-                                    class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anInt6984 = (i_51_ + mouseLog.method3308((byte) -128) - i_43_);
-                                    class348_sub36.anInt6995 = (i_52_ + mouseLog.method3311(-123) - i_44_);
-                                    class348_sub36.anObjectArray6987 = class46.anObjectArray763;
-                                    Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                    HookRequest hookRequest = new HookRequest();
+                                    hookRequest.mouseEvent = true;
+                                    hookRequest.source = class46;
+                                    hookRequest.anInt6984 = (i_51_ + mouseLog.method3308((byte) -128) - i_43_);
+                                    hookRequest.mouseY = (i_52_ + mouseLog.method3311(-123) - i_44_);
+                                    hookRequest.arguments = class46.anObjectArray763;
+                                    Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                 }
                             }
                             if (class46.aBoolean793 && bool_53_ && (class46.anObjectArray785 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aBoolean6993 = true;
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anInt6984 = i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_;
-                                class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 98) - i_44_);
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray785;
-                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.mouseEvent = true;
+                                hookRequest.source = class46;
+                                hookRequest.anInt6984 = i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_;
+                                hookRequest.mouseY = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 98) - i_44_);
+                                hookRequest.arguments = class46.anObjectArray785;
+                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                             }
                             if (class46.aBoolean793 && !bool_53_) {
                                 class46.aBoolean793 = false;
                                 if (class46.anObjectArray742 != null) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                    class348_sub36.aBoolean6993 = true;
-                                    class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anInt6984 = (i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_);
-                                    class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 75) - i_44_);
-                                    class348_sub36.anObjectArray6987 = class46.anObjectArray742;
-                                    Renderer.aDeque_4473.addLast(class348_sub36, -20180);
+                                    HookRequest hookRequest = new HookRequest();
+                                    hookRequest.mouseEvent = true;
+                                    hookRequest.source = class46;
+                                    hookRequest.anInt6984 = (i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_);
+                                    hookRequest.mouseY = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 75) - i_44_);
+                                    hookRequest.arguments = class46.anObjectArray742;
+                                    Renderer.aDeque_4473.addLast(hookRequest, -20180);
                                 }
                             }
                             if (bool_53_ && (class46.anObjectArray805 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aBoolean6993 = true;
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anInt6984 = i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_;
-                                class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 80) - i_44_);
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray805;
-                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.mouseEvent = true;
+                                hookRequest.source = class46;
+                                hookRequest.anInt6984 = i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_;
+                                hookRequest.mouseY = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 80) - i_44_);
+                                hookRequest.arguments = class46.anObjectArray805;
+                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                             }
                             if (!class46.aBoolean737 && bool) {
                                 class46.aBoolean737 = true;
                                 if (class46.anObjectArray811 != null) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                    class348_sub36.aBoolean6993 = true;
-                                    class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anInt6984 = (i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_);
-                                    class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 112) - i_44_);
-                                    class348_sub36.anObjectArray6987 = class46.anObjectArray811;
-                                    Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                    HookRequest hookRequest = new HookRequest();
+                                    hookRequest.mouseEvent = true;
+                                    hookRequest.source = class46;
+                                    hookRequest.anInt6984 = (i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_);
+                                    hookRequest.mouseY = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 112) - i_44_);
+                                    hookRequest.arguments = class46.anObjectArray811;
+                                    Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                 }
                             }
                             if (class46.aBoolean737 && bool && (class46.anObjectArray839 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aBoolean6993 = true;
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anInt6984 = i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_;
-                                class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 95) - i_44_);
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray839;
-                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.mouseEvent = true;
+                                hookRequest.source = class46;
+                                hookRequest.anInt6984 = i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_;
+                                hookRequest.mouseY = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 95) - i_44_);
+                                hookRequest.arguments = class46.anObjectArray839;
+                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                             }
                             if (class46.aBoolean737 && !bool) {
                                 class46.aBoolean737 = false;
                                 if (class46.anObjectArray683 != null) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                    class348_sub36.aBoolean6993 = true;
-                                    class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anInt6984 = (i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_);
-                                    class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 90) - i_44_);
-                                    class348_sub36.anObjectArray6987 = class46.anObjectArray683;
-                                    Renderer.aDeque_4473.addLast(class348_sub36, -20180);
+                                    HookRequest hookRequest = new HookRequest();
+                                    hookRequest.mouseEvent = true;
+                                    hookRequest.source = class46;
+                                    hookRequest.anInt6984 = (i_51_ + Class258_Sub4.mouseMonitor.method3597(true) - i_43_);
+                                    hookRequest.mouseY = (i_52_ + Class258_Sub4.mouseMonitor.method3594((byte) 90) - i_44_);
+                                    hookRequest.arguments = class46.anObjectArray683;
+                                    Renderer.aDeque_4473.addLast(hookRequest, -20180);
                                 }
                             }
                             if (class46.anObjectArray764 != null) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray764;
-                                Class208.aDeque_2707.addLast(class348_sub36, -20180);
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.source = class46;
+                                hookRequest.arguments = class46.anObjectArray764;
+                                Class208.aDeque_2707.addLast(hookRequest, -20180);
                             }
                             if (class46.anObjectArray685 != null && (Class5_Sub1.anInt8352 > class46.anInt738)) {
                                 if (class46.anIntArray818 == null || (Class5_Sub1.anInt8352 - class46.anInt738) > 32) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                    class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anObjectArray6987 = class46.anObjectArray685;
-                                    Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                    HookRequest hookRequest = new HookRequest();
+                                    hookRequest.source = class46;
+                                    hookRequest.arguments = class46.anObjectArray685;
+                                    Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                 } else {
                                     while_224_:
                                     for (int i_74_ = class46.anInt738; i_74_ < Class5_Sub1.anInt8352; i_74_++) {
                                         int i_75_ = (Class348_Sub26.anIntArray6890[i_74_ & 0x1f]);
                                         for (int i_76_ = 0; i_76_ < (class46.anIntArray818).length; i_76_++) {
                                             if ((class46.anIntArray818[i_76_]) == i_75_) {
-                                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                                class348_sub36.aClass46_6989 = class46;
-                                                class348_sub36.anObjectArray6987 = (class46.anObjectArray685);
-                                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                                HookRequest hookRequest = new HookRequest();
+                                                hookRequest.source = class46;
+                                                hookRequest.arguments = (class46.anObjectArray685);
+                                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                                 break while_224_;
                                             }
                                         }
@@ -1368,20 +1368,20 @@ public final class client extends Applet_Sub1 {
                             }
                             if (class46.anObjectArray708 != null && (TextureOpHslAdjust.anInt9385 > class46.anInt814)) {
                                 if (class46.anIntArray831 == null || (TextureOpHslAdjust.anInt9385 - class46.anInt814) > 32) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                    class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anObjectArray6987 = class46.anObjectArray708;
-                                    Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                    HookRequest hookRequest = new HookRequest();
+                                    hookRequest.source = class46;
+                                    hookRequest.arguments = class46.anObjectArray708;
+                                    Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                 } else {
                                     while_225_:
                                     for (int i_77_ = class46.anInt814; (i_77_ < TextureOpHslAdjust.anInt9385); i_77_++) {
                                         int i_78_ = (Option_Sub21.anIntArray6061[i_77_ & 0x1f]);
                                         for (int i_79_ = 0; i_79_ < (class46.anIntArray831).length; i_79_++) {
                                             if ((class46.anIntArray831[i_79_]) == i_78_) {
-                                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                                class348_sub36.aClass46_6989 = class46;
-                                                class348_sub36.anObjectArray6987 = (class46.anObjectArray708);
-                                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                                HookRequest hookRequest = new HookRequest();
+                                                hookRequest.source = class46;
+                                                hookRequest.arguments = (class46.anObjectArray708);
+                                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                                 break while_225_;
                                             }
                                         }
@@ -1391,20 +1391,20 @@ public final class client extends Applet_Sub1 {
                             }
                             if (class46.anObjectArray777 != null && (Class287.anInt3695 > class46.anInt725)) {
                                 if (class46.anIntArray686 == null || (Class287.anInt3695 - class46.anInt725) > 32) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                    class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anObjectArray6987 = class46.anObjectArray777;
-                                    Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                    HookRequest hookRequest = new HookRequest();
+                                    hookRequest.source = class46;
+                                    hookRequest.arguments = class46.anObjectArray777;
+                                    Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                 } else {
                                     while_226_:
                                     for (int i_80_ = class46.anInt725; i_80_ < Class287.anInt3695; i_80_++) {
                                         int i_81_ = (Class327.anIntArray4096[i_80_ & 0x1f]);
                                         for (int i_82_ = 0; i_82_ < (class46.anIntArray686).length; i_82_++) {
                                             if ((class46.anIntArray686[i_82_]) == i_81_) {
-                                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                                class348_sub36.aClass46_6989 = class46;
-                                                class348_sub36.anObjectArray6987 = (class46.anObjectArray777);
-                                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                                HookRequest hookRequest = new HookRequest();
+                                                hookRequest.source = class46;
+                                                hookRequest.arguments = (class46.anObjectArray777);
+                                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                                 break while_226_;
                                             }
                                         }
@@ -1414,20 +1414,20 @@ public final class client extends Applet_Sub1 {
                             }
                             if (class46.anObjectArray751 != null && (LoadingScreenOpFactory.anInt1631 > class46.anInt723)) {
                                 if (class46.anIntArray771 == null || (LoadingScreenOpFactory.anInt1631 - class46.anInt723) > 32) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                    class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anObjectArray6987 = class46.anObjectArray751;
-                                    Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                    HookRequest hookRequest = new HookRequest();
+                                    hookRequest.source = class46;
+                                    hookRequest.arguments = class46.anObjectArray751;
+                                    Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                 } else {
                                     while_227_:
                                     for (int i_83_ = class46.anInt723; i_83_ < LoadingScreenOpFactory.anInt1631; i_83_++) {
                                         int i_84_ = (Class199.anIntArray2633[i_83_ & 0x1f]);
                                         for (int i_85_ = 0; i_85_ < (class46.anIntArray771).length; i_85_++) {
                                             if ((class46.anIntArray771[i_85_]) == i_84_) {
-                                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                                class348_sub36.aClass46_6989 = class46;
-                                                class348_sub36.anObjectArray6987 = (class46.anObjectArray751);
-                                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                                HookRequest hookRequest = new HookRequest();
+                                                hookRequest.source = class46;
+                                                hookRequest.arguments = (class46.anObjectArray751);
+                                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                                 break while_227_;
                                             }
                                         }
@@ -1437,20 +1437,20 @@ public final class client extends Applet_Sub1 {
                             }
                             if (class46.anObjectArray671 != null && (ParamTypeList.anInt4086 > class46.anInt715)) {
                                 if (class46.anIntArray731 == null || (ParamTypeList.anInt4086 - class46.anInt715) > 32) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                    class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anObjectArray6987 = class46.anObjectArray671;
-                                    Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                    HookRequest hookRequest = new HookRequest();
+                                    hookRequest.source = class46;
+                                    hookRequest.arguments = class46.anObjectArray671;
+                                    Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                 } else {
                                     while_228_:
                                     for (int i_86_ = class46.anInt715; i_86_ < ParamTypeList.anInt4086; i_86_++) {
                                         int i_87_ = (Class199.anIntArray2632[i_86_ & 0x1f]);
                                         for (int i_88_ = 0; i_88_ < (class46.anIntArray731).length; i_88_++) {
                                             if ((class46.anIntArray731[i_88_]) == i_87_) {
-                                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                                class348_sub36.aClass46_6989 = class46;
-                                                class348_sub36.anObjectArray6987 = (class46.anObjectArray671);
-                                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                                HookRequest hookRequest = new HookRequest();
+                                                hookRequest.source = class46;
+                                                hookRequest.arguments = (class46.anObjectArray671);
+                                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                                 break while_228_;
                                             }
                                         }
@@ -1459,51 +1459,51 @@ public final class client extends Applet_Sub1 {
                                 class46.anInt715 = ParamTypeList.anInt4086;
                             }
                             if ((ByteArraySecondaryNode.anInt9501 > class46.anInt726) && (class46.anObjectArray820 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray820;
-                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.source = class46;
+                                hookRequest.arguments = class46.anObjectArray820;
+                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                             }
                             if ((Class126.anInt4985 > class46.anInt726) && (class46.anObjectArray734 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray734;
-                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.source = class46;
+                                hookRequest.arguments = class46.anObjectArray734;
+                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                             }
                             if ((Class230.anInt2986 > class46.anInt726) && (class46.anObjectArray761 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray761;
-                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.source = class46;
+                                hookRequest.arguments = class46.anObjectArray761;
+                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                             }
                             if ((BillboardType.anInt2523 > class46.anInt726) && (class46.anObjectArray807 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray807;
-                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.source = class46;
+                                hookRequest.arguments = class46.anObjectArray807;
+                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                             }
                             if ((TextureOpIrregularBricks.anInt9313 > class46.anInt726) && (class46.anObjectArray836 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray836;
-                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.source = class46;
+                                hookRequest.arguments = class46.anObjectArray836;
+                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                             }
                             class46.anInt726 = LoadingScreenRenderer.anInt3918;
                             if (class46.anObjectArray822 != null) {
                                 for (int i_89_ = 0; i_89_ < ClientScript.anInt9699; i_89_++) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                    class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anInt6991 = Texture.KEYBOARD_EVENT_ARRAY_1[i_89_].method30(false);
-                                    class348_sub36.anInt6982 = Texture.KEYBOARD_EVENT_ARRAY_1[i_89_].getKeyChar((byte) 39);
-                                    class348_sub36.anObjectArray6987 = class46.anObjectArray822;
-                                    Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                    HookRequest hookRequest = new HookRequest();
+                                    hookRequest.source = class46;
+                                    hookRequest.anInt6991 = Texture.KEYBOARD_EVENT_ARRAY_1[i_89_].method30(false);
+                                    hookRequest.anInt6982 = Texture.KEYBOARD_EVENT_ARRAY_1[i_89_].getKeyChar((byte) 39);
+                                    hookRequest.arguments = class46.anObjectArray822;
+                                    Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                                 }
                             }
                             if (Class347.aBoolean4284 && (class46.anObjectArray687 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                                class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anObjectArray6987 = class46.anObjectArray687;
-                                Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
+                                HookRequest hookRequest = new HookRequest();
+                                hookRequest.source = class46;
+                                hookRequest.arguments = class46.anObjectArray687;
+                                Class348_Sub1_Sub2.hookRequests.addLast(hookRequest, -20180);
                             }
                         }
                         if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, Class123.skyBoxSphereTypeList, Class30.skyBoxTypeList).method2292(84, Class348_Sub8.active, class46.anInt789);
@@ -1649,34 +1649,34 @@ public final class client extends Applet_Sub1 {
         }
         if (i != 112) anInt5171 = 22;
         for (; ; ) {
-            Class348_Sub36 class348_sub36 = (Class348_Sub36) Class208.aDeque_2707.removeFirst(8);
-            if (class348_sub36 == null) break;
-            Class46 class46 = class348_sub36.aClass46_6989;
+            HookRequest hookRequest = (HookRequest) Class208.aDeque_2707.removeFirst(8);
+            if (hookRequest == null) break;
+            Class46 class46 = hookRequest.source;
             if (class46.anInt704 >= 0) {
                 Class46 class46_106_ = FontRenderer.method2570(i ^ 0x5a2d8500, class46.anInt834);
                 if (class46_106_ == null || class46_106_.aClass46Array798 == null || (class46_106_.aClass46Array798.length <= class46.anInt704) || class46 != (class46_106_.aClass46Array798[class46.anInt704])) continue;
             }
-            Class66.method705(class348_sub36);
+            Class66.method705(hookRequest);
         }
         for (; ; ) {
-            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Renderer.aDeque_4473.removeFirst(i + -104));
-            if (class348_sub36 == null) break;
-            Class46 class46 = class348_sub36.aClass46_6989;
+            HookRequest hookRequest = ((HookRequest) Renderer.aDeque_4473.removeFirst(i + -104));
+            if (hookRequest == null) break;
+            Class46 class46 = hookRequest.source;
             if (class46.anInt704 >= 0) {
                 Class46 class46_107_ = FontRenderer.method2570(1512932720, class46.anInt834);
                 if (class46_107_ == null || class46_107_.aClass46Array798 == null || (class46_107_.aClass46Array798.length <= class46.anInt704) || class46 != (class46_107_.aClass46Array798[class46.anInt704])) continue;
             }
-            Class66.method705(class348_sub36);
+            Class66.method705(hookRequest);
         }
         for (; ; ) {
-            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class348_Sub1_Sub2.aDeque_8810.removeFirst(i ^ 0x78));
-            if (class348_sub36 == null) break;
-            Class46 class46 = class348_sub36.aClass46_6989;
+            HookRequest hookRequest = ((HookRequest) Class348_Sub1_Sub2.hookRequests.removeFirst(i ^ 0x78));
+            if (hookRequest == null) break;
+            Class46 class46 = hookRequest.source;
             if (class46.anInt704 >= 0) {
                 Class46 class46_108_ = FontRenderer.method2570(1512932720, class46.anInt834);
                 if (class46_108_ == null || class46_108_.aClass46Array798 == null || (class46_108_.aClass46Array798.length <= class46.anInt704) || class46 != (class46_108_.aClass46Array798[class46.anInt704])) continue;
             }
-            Class66.method705(class348_sub36);
+            Class66.method705(hookRequest);
         }
         if (Class289.aClass46_3701 != null) Class347.method2708(-30206);
         if (Class367_Sub11.anInt7396 % 1500 == 0) TextureOpCombine.method3088(9);

@@ -109,10 +109,10 @@ final class Class339 implements Runnable {
         anInt4199++;
         if (class46 != null) {
             if (class46.anObjectArray714 != null) {
-                Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                class348_sub36.anObjectArray6987 = class46.anObjectArray714;
-                class348_sub36.aClass46_6989 = class46;
-                Class66.method705(class348_sub36);
+                HookRequest hookRequest = new HookRequest();
+                hookRequest.arguments = class46.anObjectArray714;
+                hookRequest.source = class46;
+                Class66.method705(hookRequest);
             }
             Class362.anInt4458 = class46.anInt695;
             Class246.anInt3176 = i;

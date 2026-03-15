@@ -130,12 +130,12 @@ final class Class318_Sub7 extends Class318 {
                         if (Option_Sub7.anInt5909 == -1 || Class339.anInt4202 == -1) {
                             Class75.aClass348_Sub42_Sub14_1243.method3242(is, 123, 0x3fff & (Class75.aClass348_Sub42_Sub14_1243.anInt9640), (Class75.aClass348_Sub42_Sub14_1243.anInt9640) >> 14 & 0x3fff);
                             Class245.anInt3170 = is[2] - Class75.anInt1263;
-                            Class348_Sub36.anInt6992 = is[1] - Class75.anInt1266;
+                            HookRequest.anInt6992 = is[1] - Class75.anInt1266;
                         } else {
                             Class75.aClass348_Sub42_Sub14_1243.method3242(is, 88, Class339.anInt4202, Option_Sub7.anInt5909);
                             Option_Sub7.anInt5909 = Class339.anInt4202 = -1;
                             if (is != null) {
-                                Class348_Sub36.anInt6992 = -Class75.anInt1266 + is[1];
+                                HookRequest.anInt6992 = -Class75.anInt1266 + is[1];
                                 Class245.anInt3170 = -Class75.anInt1263 + is[2];
                             }
                             Class88.aBoolean1500 = false;
@@ -143,7 +143,7 @@ final class Class318_Sub7 extends Class318 {
                     } else {
                         i_7_ += (int) (10.0 * Math.random()) + -5;
                         i_8_ += (int) (Math.random() * 10.0) + -5;
-                        Class348_Sub36.anInt6992 = i_7_;
+                        HookRequest.anInt6992 = i_7_;
                         Class245.anInt3170 = i_8_;
                     }
                     if (Class75.aClass348_Sub42_Sub14_1243.anInt9631 != 37) {

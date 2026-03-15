@@ -51,24 +51,24 @@ final class Class347 {
                         if (Class289.aClass46_3701.anInt729 < i_6_ || (-Class289.aClass46_3701.anInt729 > i_6_) || (i_7_ > Class289.aClass46_3701.anInt729) || i_7_ < -Class289.aClass46_3701.anInt729) Class300.aBoolean3819 = true;
                     }
                     if ((Class289.aClass46_3701.anObjectArray823 != null) && Class300.aBoolean3819) {
-                        Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                        class348_sub36.aClass46_6989 = Class289.aClass46_3701;
-                        class348_sub36.anInt6984 = i_4_;
-                        class348_sub36.anObjectArray6987 = (Class289.aClass46_3701.anObjectArray823);
-                        class348_sub36.anInt6995 = i_5_;
-                        Class66.method705(class348_sub36);
+                        HookRequest hookRequest = new HookRequest();
+                        hookRequest.source = Class289.aClass46_3701;
+                        hookRequest.anInt6984 = i_4_;
+                        hookRequest.arguments = (Class289.aClass46_3701.anObjectArray823);
+                        hookRequest.mouseY = i_5_;
+                        Class66.method705(hookRequest);
                     }
                 } else {
                     if (Class300.aBoolean3819) {
                         Class341.method2678(-2049);
                         if (Class289.aClass46_3701.anObjectArray692 != null) {
-                            Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                            class348_sub36.aClass46_6983 = Class318_Sub1_Sub3_Sub4.aClass46_10336;
-                            class348_sub36.anInt6984 = i_4_;
-                            class348_sub36.anObjectArray6987 = (Class289.aClass46_3701.anObjectArray692);
-                            class348_sub36.anInt6995 = i_5_;
-                            class348_sub36.aClass46_6989 = Class289.aClass46_3701;
-                            Class66.method705(class348_sub36);
+                            HookRequest hookRequest = new HookRequest();
+                            hookRequest.aClass46_6983 = Class318_Sub1_Sub3_Sub4.aClass46_10336;
+                            hookRequest.anInt6984 = i_4_;
+                            hookRequest.arguments = (Class289.aClass46_3701.anObjectArray692);
+                            hookRequest.mouseY = i_5_;
+                            hookRequest.source = Class289.aClass46_3701;
+                            Class66.method705(hookRequest);
                         }
                         if (Class318_Sub1_Sub3_Sub4.aClass46_10336 != null && (client.method108(Class289.aClass46_3701) != null)) Class2.method173(-67, Class289.aClass46_3701, (Class318_Sub1_Sub3_Sub4.aClass46_10336));
                     } else if ((Class318_Sub1_Sub5.anInt8770 == 1 || Class318_Sub1_Sub5.method2485(-113)) && Class73.anInt4776 > 2) Class5_Sub2.method191(true, (NativeToolkit.anInt8001 + Class318_Sub4.anInt6411), (HitmarkTypeList.anInt2872 - -(TextureOpMonochrome.anInt9203)));

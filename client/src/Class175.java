@@ -106,7 +106,7 @@ final class Class175 {
 
     static final void method1343(int i, Class46 class46, int i_1_, int i_2_) {
         Class32.anInt451 = i;
-        Class348_Sub36.aClass46_6990 = class46;
+        HookRequest.aClass46_6990 = class46;
         Class332.anInt4141 = i_2_;
         anInt2328++;
         if (i_1_ != 1) method1349((byte) 119);

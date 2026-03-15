@@ -121,10 +121,10 @@ final class Class228 {
         }
         anInt2971++;
         if (i != (~Js5TextureSource.anInt4609) && Class48.anInt859 != -1) {
-            int i_8_ = Js5TextureSource.anInt4609 - Class348_Sub36.anInt6992;
+            int i_8_ = Js5TextureSource.anInt4609 - HookRequest.anInt6992;
             if (i_8_ < 2 || i_8_ > 2) i_8_ /= 8;
             int i_9_ = -Class245.anInt3170 + Class48.anInt859;
-            Class348_Sub36.anInt6992 = i_8_ + Class348_Sub36.anInt6992;
+            HookRequest.anInt6992 = i_8_ + HookRequest.anInt6992;
             if (i_9_ < 2 || i_9_ > 2) i_9_ /= 8;
             Class245.anInt3170 -= -i_9_;
             if (i_8_ == 0 && i_9_ == 0) {

@@ -732,9 +732,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             }
             objects[0] = new Integer(Class299.aClass348_Sub49_Sub2_3813.readInt((byte) -126));
             Class318_Sub1_Sub1_Sub1.method2397((byte) -127);
-            Class348_Sub36 class348_sub36 = new Class348_Sub36();
-            class348_sub36.anObjectArray6987 = objects;
-            Class66.method705(class348_sub36);
+            HookRequest hookRequest = new HookRequest();
+            hookRequest.arguments = objects;
+            Class66.method705(hookRequest);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }

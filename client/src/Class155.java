@@ -20,11 +20,11 @@ final class Class155 {
             if (class46.anObjectArray679 != null) {
                 Class46 class46_0_ = Class348_Sub22.method2957(Class9.anInt169, (byte) -54, Class149.anInt2046);
                 if (class46_0_ != null) {
-                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                    class348_sub36.aClass46_6989 = class46;
-                    class348_sub36.aClass46_6983 = class46_0_;
-                    class348_sub36.anObjectArray6987 = class46.anObjectArray679;
-                    Class66.method705(class348_sub36);
+                    HookRequest hookRequest = new HookRequest();
+                    hookRequest.source = class46;
+                    hookRequest.aClass46_6983 = class46_0_;
+                    hookRequest.arguments = class46.anObjectArray679;
+                    Class66.method705(hookRequest);
                 }
             }
             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class344.aClass351_4266, Class348_Sub23_Sub2.aClass77_9029, -120);

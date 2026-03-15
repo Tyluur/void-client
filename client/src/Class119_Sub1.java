@@ -72,10 +72,10 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
                 if (is != null) string += Class163.method1273(is, true);
             } else string = Class316.method2367((byte) 125, Class316.aClass348_Sub42_Sub12_3963);
             if (Class73.anInt4776 > 2) string += ("<col=ffffff> / " + (Class73.anInt4776 - 2) + Class274.aClass274_3508.method2063(AnimBase.language, 544));
-            if (Class348_Sub36.aClass46_6990 != null) {
-                FontRenderer fontRenderer = Class348_Sub36.aClass46_6990.method426(var_toolkit, (byte) 68);
+            if (HookRequest.aClass46_6990 != null) {
+                FontRenderer fontRenderer = HookRequest.aClass46_6990.method426(var_toolkit, (byte) 68);
                 if (fontRenderer == null) fontRenderer = Deque.aFontRenderer_3326;
-                fontRenderer.method2585(Class175.anIntArray2330, Class348_Sub36.aClass46_6990.anInt709, Class341.aSpriteArray4234, Class348_Sub36.aClass46_6990.anInt700, Class348_Sub36.aClass46_6990.anInt749, Class348_Sub36.aClass46_6990.anInt789, Class348_Sub36.aClass46_6990.anInt809, OutputStream_Sub1.random, Class348_Sub36.aClass46_6990.anInt762, Class32.anInt451, HashTable.randomSeed, -33, Class332.anInt4141, string, Class195.anIntArray5007);
+                fontRenderer.method2585(Class175.anIntArray2330, HookRequest.aClass46_6990.anInt709, Class341.aSpriteArray4234, HookRequest.aClass46_6990.anInt700, HookRequest.aClass46_6990.anInt749, HookRequest.aClass46_6990.anInt789, HookRequest.aClass46_6990.anInt809, OutputStream_Sub1.random, HookRequest.aClass46_6990.anInt762, Class32.anInt451, HashTable.randomSeed, -33, Class332.anInt4141, string, Class195.anIntArray5007);
                 Class13.method226(Class195.anIntArray5007[0], Class195.anIntArray5007[2], Class195.anIntArray5007[1], 0, Class195.anIntArray5007[3]);
             } else if (Class21.aClass46_323 != null && (Class348_Sub42_Sub8_Sub2.modeGame == Class10.aClass230_186)) {
                 int i_1_ = (Deque.aFontRenderer_3326.method2571(-1, HashTable.randomSeed, Class175.anIntArray2330, string, 16777215, 0, Class341.aSpriteArray4234, 16 + Class238_Sub1.anInt5832, 4 + Class120.anInt4911, OutputStream_Sub1.random));

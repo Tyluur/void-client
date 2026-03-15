@@ -23,20 +23,20 @@ final class TextureOpHorizontalGradient extends TextureOp {
                         if (class348_sub41 != null) Option_Sub12.method1775((byte) -8, (class348_sub41.anInt7050), i);
                     }
                     if (i == 0 && class46.anObjectArray840 != null) {
-                        Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                        class348_sub36.aClass46_6989 = class46;
-                        class348_sub36.anObjectArray6987 = class46.anObjectArray840;
-                        Class66.method705(class348_sub36);
+                        HookRequest hookRequest = new HookRequest();
+                        hookRequest.source = class46;
+                        hookRequest.arguments = class46.anObjectArray840;
+                        Class66.method705(hookRequest);
                     }
                     if (i == 1 && class46.anObjectArray701 != null) {
                         if (class46.anInt704 >= 0) {
                             Class46 class46_2_ = FontRenderer.method2570(1512932720, (class46.anInt830));
                             if (class46_2_ == null || (class46_2_.aClass46Array798 == null) || (class46.anInt704 >= (class46_2_.aClass46Array798).length) || class46 != (class46_2_.aClass46Array798[class46.anInt704])) continue;
                         }
-                        Class348_Sub36 class348_sub36 = new Class348_Sub36();
-                        class348_sub36.aClass46_6989 = class46;
-                        class348_sub36.anObjectArray6987 = class46.anObjectArray701;
-                        Class66.method705(class348_sub36);
+                        HookRequest hookRequest = new HookRequest();
+                        hookRequest.source = class46;
+                        hookRequest.arguments = class46.anObjectArray701;
+                        Class66.method705(hookRequest);
                     }
                 }
             }
