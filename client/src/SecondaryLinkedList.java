@@ -112,7 +112,7 @@ final class SecondaryLinkedList {
                         Class318_Sub1.method2385(class46, i_1_, var_aa, (r_Sub2.aClass252_10488.anIntArray3239[i_9_]), i_12_, i, (byte) -94, i_13_, var_toolkit);
                     }
                     for (int i_14_ = 0; (TextureOpClamp.anInt9479 > i_14_); i_14_++) {
-                        int i_15_ = (Class348_Sub15.anIntArray6770[i_14_] * 4 - -2 - i_4_ / 128);
+                        int i_15_ = (VideoType.anIntArray6770[i_14_] * 4 - -2 - i_4_ / 128);
                         int i_16_ = (-(i_3_ / 128) + TextureOpBoxBlur.anIntArray9458[i_14_] * 4 - -2);
                         Class51 class51 = (TextureOpColourGradient.objectTypeList.method2005(0, ObjectTypeList.anIntArray3347[i_14_]));
                         if (class51.anIntArray945 != null) {

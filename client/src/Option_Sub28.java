@@ -51,7 +51,7 @@ final class Option_Sub28 extends Option {
             Class348_Sub36 class348_sub36 = new Class348_Sub36();
             class348_sub36.aClass46_6989 = class46;
             class348_sub36.anObjectArray6987 = class46.anObjectArray727;
-            Class348_Sub1_Sub2.aDeque_8810.method1999(class348_sub36, -20180);
+            Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
         }
     }
 

@@ -59,7 +59,7 @@ abstract class Class348_Sub5 extends Node {
 
     abstract void method2756(byte i, int i_10_);
 
-    static final void method2757(int i) {
+    static final void changeMainState(int i) {
         anInt6620++;
         if (Class367_Sub2.anInt7297 != 0) {
             try {
@@ -136,7 +136,7 @@ abstract class Class348_Sub5 extends Node {
 
     int method2761(boolean bool) {
         anInt6622++;
-        if (bool != true) method2757(-63);
+        if (bool != true) changeMainState(-63);
         return 0;
     }
 

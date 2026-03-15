@@ -269,7 +269,7 @@ abstract class Class59 {
                     class348_sub12.anInt6753 = i_69_;
                     class348_sub12.anInt6747 = i_58_ - i_56_;
                     class348_sub12.anInt6745 = i_68_;
-                    Class289.aDeque_3705.method1999(class348_sub12, -20180);
+                    Class289.aDeque_3705.addLast(class348_sub12, -20180);
                 }
             }
         } catch (RuntimeException runtimeexception) {

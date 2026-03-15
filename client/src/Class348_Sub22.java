@@ -45,14 +45,14 @@ final class Class348_Sub22 extends Node {
     }
 
     static final void method2959(int i) {
-        Class182.aClass346_2449.method2698(14174);
+        Class182.keyboardMonitor.method2698(14174);
         anInt6860++;
-        Class258_Sub4.aClass373_8552.method3592(0);
+        Class258_Sub4.mouseMonitor.method3592(0);
         NPCDefinition.aClient1367.method87((byte) -49);
         Class305.aCanvas3869.setBackground(Color.black);
         Class337.anInt4179 = i;
-        Class182.aClass346_2449 = Class348_Sub3.method2743(Class305.aCanvas3869, (byte) 84);
-        Class258_Sub4.aClass373_8552 = Class348_Sub18.method2941(Class305.aCanvas3869, 0, true);
+        Class182.keyboardMonitor = Class348_Sub3.method2743(Class305.aCanvas3869, (byte) 84);
+        Class258_Sub4.mouseMonitor = Class348_Sub18.method2941(Class305.aCanvas3869, 0, true);
     }
 
     Class348_Sub22(Npc npc) {

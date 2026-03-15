@@ -171,7 +171,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             int i = Class299.aClass348_Sub49_Sub2_3813.readByteAdd((byte) 62);
             int i_11_ = Class299.aClass348_Sub49_Sub2_3813.readIntLittle((byte) -126);
             Class318_Sub1_Sub1_Sub1.method2397((byte) -124);
-            Class348_Sub15.method2813(true, i, i_11_);
+            VideoType.method2813(true, i, i_11_);
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
@@ -499,7 +499,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                     int i_65_ = i_60_;
                     if (i_65_ < 3 && NPCDefinition.method802(i_62_, i_61_, true)) i_65_++;
                     Class318_Sub1_Sub3_Sub4 class318_sub1_sub3_sub4 = (new Class318_Sub1_Sub3_Sub4(i_38_, i_39_, Class367_Sub11.anInt7396, i_60_, i_65_, i_63_, -i_37_ + Class275.method2064(i_63_, i_60_, 11219, i_64_), i_64_, i_61_, i_61_, i_62_, i_62_, i_42_));
-                    r_Sub2.aDeque_10492.method1999(new Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180);
+                    r_Sub2.aDeque_10492.addLast(new Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180);
                 }
             }
             Class348_Sub3.aClass114_6584 = null;
@@ -1124,7 +1124,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub3.aClass114_6584 == Class348_Sub45.aClass114_7105) {
+        if (Class348_Sub3.aClass114_6584 == MouseLog.aClass114_7105) {
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             if (Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 0) Option_Sub26.aClass54Array6114[i] = new Class54();
             else {
@@ -1167,7 +1167,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }
-        if (Class348_Sub3.aClass114_6584 == Class348_Sub45.aClass114_7106) {
+        if (Class348_Sub3.aClass114_6584 == MouseLog.aClass114_7106) {
             while ((Class299.aClass348_Sub49_Sub2_3813.pos) < TextureOpMandelbrot.anInt9341) {
                 boolean bool_149_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 1;
                 String string = Class299.aClass348_Sub49_Sub2_3813.readString((byte) -95);

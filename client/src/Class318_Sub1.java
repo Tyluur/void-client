@@ -42,7 +42,7 @@ abstract class Class318_Sub1 extends Class318 {
                 anInt6385++;
                 boolean bool = ((Exception_Sub1.itemTypeList.method1941(class46.anInt672, (byte) -74, class46.anInt812, class46.anInt781, ~0xffffff | class46.anInt809, class46.anInt678, var_toolkit, (!class46.aBoolean720 ? null : (Class132.aPlayer_1907.aClass154_10536)))) == null);
                 if (!bool) break;
-                Class5_Sub1_Sub1.aDeque_9931.method1999(new Class348_Sub7(class46.anInt812, class46.anInt781, class46.anInt672, (~0xffffff | class46.anInt809), class46.anInt678, class46.aBoolean720), i ^ 0x4ed2);
+                Class5_Sub1_Sub1.aDeque_9931.addLast(new Class348_Sub7(class46.anInt812, class46.anInt781, class46.anInt672, (~0xffffff | class46.anInt809), class46.anInt678, class46.aBoolean720), i ^ 0x4ed2);
                 Class251.method1916(-9343, class46);
             } catch (RuntimeException runtimeexception) {
                 throw Class348_Sub17.method2929(runtimeexception, ("ga.QA(" + (var_toolkit != null ? "{...}" : "null") + ',' + i + ',' + (class46 != null ? "{...}" : "null") + ')'));

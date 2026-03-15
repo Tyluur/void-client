@@ -54,8 +54,8 @@ final class Class231 {
         Class318_Sub7.method2509(Class63.anInt1117, Texture.anInt9532 - -i_4_, var_toolkit, Class135_Sub1.anInt4717 - -i_3_, i_5_, true, Class237_Sub1.anInt5819, -16777216);
         if (i > 98) {
             Deque.aFontRenderer_3326.method2576(Class274.aClass274_3507.method2063(AnimBase.language, 544), i_5_, i_4_ + (Texture.anInt9532 - -14), i_3_ + (Class135_Sub1.anInt4717 + 3), -1, -125);
-            int i_6_ = Class258_Sub4.aClass373_8552.method3597(true) - -i_3_;
-            int i_7_ = i_4_ + Class258_Sub4.aClass373_8552.method3594((byte) 127);
+            int i_6_ = Class258_Sub4.mouseMonitor.method3597(true) - -i_3_;
+            int i_7_ = i_4_ + Class258_Sub4.mouseMonitor.method3594((byte) 127);
             if (Class348_Sub42_Sub6.aBoolean9535) {
                 int i_8_ = 0;
                 for (Class348_Sub42_Sub13 class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aSecondaryLinkedList_3022.method1011(-119)); class348_sub42_sub13 != null; class348_sub42_sub13 = ((Class348_Sub42_Sub13) Class233.aSecondaryLinkedList_3022.next((byte) 44))) {

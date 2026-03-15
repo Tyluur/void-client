@@ -30,7 +30,7 @@ final class Class341 {
         Class348_Sub36.anInt6992 = Class75.anInt1259 * i_1_ / i_4_;
         Js5TextureSource.anInt4609 = -1;
         int i_6_ = 50 / ((-12 - i_2_) / 40);
-        Class348_Sub15.method2811(false);
+        VideoType.method2811(false);
     }
 
     public final String toString() {

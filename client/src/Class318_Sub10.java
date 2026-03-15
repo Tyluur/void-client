@@ -188,7 +188,7 @@ final class Class318_Sub10 extends Class318 {
                         Class318_Sub7.anInt6450++;
                     }
                     if (class348_sub42_sub20 == null) class348_sub42_sub20 = new Class348_Sub42_Sub20(modelParticleEffectors[i], this);
-                    this.aDeque_6479.method1999(class348_sub42_sub20, -20180);
+                    this.aDeque_6479.addLast(class348_sub42_sub20, -20180);
                     anInt6485++;
                     aBooleanArray6477[i] = true;
                 }

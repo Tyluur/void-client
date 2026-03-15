@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub15 extends Node {
+// Class348_Sub15
+final class VideoType extends Node {
     Class55_Sub1 aClass55_Sub1_6768;
     static int anInt6769;
     static int[] anIntArray6770 = new int[1000];
@@ -76,7 +77,7 @@ final class Class348_Sub15 extends Node {
         }
     }
 
-    Class348_Sub15(int i, Class55_Sub1 class55_sub1, int i_2_, boolean bool) {
+    VideoType(int i, Class55_Sub1 class55_sub1, int i_2_, boolean bool) {
         this.anInt6782 = i_2_;
         this.aClass55_Sub1_6768 = class55_sub1;
         this.anInt6773 = i;

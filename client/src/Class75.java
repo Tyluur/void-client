@@ -271,7 +271,7 @@ class Class75 {
                                     Class348_Sub21 class348_sub21 = new Class348_Sub21(i_51_);
                                     class348_sub21.anInt6852 = i;
                                     class348_sub21.anInt6851 = i_48_;
-                                    aDeque_1254.method1999(class348_sub21, -20180);
+                                    aDeque_1254.addLast(class348_sub21, -20180);
                                 }
                             }
                         }
@@ -286,7 +286,7 @@ class Class75 {
                             Class348_Sub21 class348_sub21 = new Class348_Sub21(i_52_);
                             class348_sub21.anInt6852 = i;
                             class348_sub21.anInt6851 = i_48_;
-                            aDeque_1254.method1999(class348_sub21, -20180);
+                            aDeque_1254.addLast(class348_sub21, -20180);
                         }
                     }
                 }
@@ -310,7 +310,7 @@ class Class75 {
                                         Class348_Sub21 class348_sub21 = new Class348_Sub21(i_56_);
                                         class348_sub21.anInt6852 = ((i_53_ + (anInt1266 >> 6)) * 64 + class318_sub8.aByte6466 - anInt1266);
                                         class348_sub21.anInt6851 = ((i_54_ + (anInt1263 >> 6)) * 64 + class318_sub8.aByte6464 - anInt1263);
-                                        aDeque_1254.method1999(class348_sub21, -20180);
+                                        aDeque_1254.addLast(class348_sub21, -20180);
                                     }
                                 }
                             }
@@ -518,7 +518,7 @@ class Class75 {
                 Class348_Sub21 class348_sub21 = new Class348_Sub21(aClass252_1246.anIntArray3239[i]);
                 class348_sub21.anInt6852 = is[1] - anInt1266;
                 class348_sub21.anInt6851 = is[2] - anInt1263;
-                aDeque_1254.method1999(class348_sub21, -20180);
+                aDeque_1254.addLast(class348_sub21, -20180);
             }
         }
     }

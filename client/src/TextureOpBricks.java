@@ -154,7 +154,7 @@ final class TextureOpBricks extends TextureOp {
 
     static final void method3111(int i, int i_23_) {
         anInt9290++;
-        if (i_23_ != Class348_Sub15.anInt6769) {
+        if (i_23_ != VideoType.anInt6769) {
             if (i < 18) aClass304_9303 = null;
             Class367_Sub4.mapLength = TextureOpBinary.mapWidth = Class73.anIntArray4780[i_23_];
             Class290.method2196((byte) -9);
@@ -165,12 +165,12 @@ final class TextureOpBricks extends TextureOp {
             Class348_Sub42_Sub17.anIntArrayArray9678 = (new int[Class367_Sub4.mapLength]
                     [TextureOpBinary.mapWidth]);
             for (int i_24_ = 0; i_24_ < 4; i_24_++)
-                Class348_Sub45.collisionMaps[i_24_] = Sprite_Sub1.method988(TextureOpBinary.mapWidth, 1, Class367_Sub4.mapLength);
+                MouseLog.collisionMaps[i_24_] = Sprite_Sub1.method988(TextureOpBinary.mapWidth, 1, Class367_Sub4.mapLength);
             Class289.aByteArrayArrayArray3700 = (new byte[4][Class367_Sub4.mapLength]
                     [TextureOpBinary.mapWidth]);
             Option.method1717(19278, TextureOpBinary.mapWidth, Class367_Sub4.mapLength, 4);
             Class97.method873(Class367_Sub4.mapLength >> 3, 21719, Class348_Sub8.active, TextureOpBinary.mapWidth >> 3);
-            Class348_Sub15.anInt6769 = i_23_;
+            VideoType.anInt6769 = i_23_;
         }
     }
 

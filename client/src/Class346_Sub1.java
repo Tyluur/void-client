@@ -31,10 +31,10 @@ final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener
     private boolean[] aBooleanArray6543 = new boolean[112];
     private Component aComponent6544;
 
-    final KeyLog method2697(int i) {
+    final KeyLog removeFirstRecorded(int i) {
         if (i != 0) aBooleanArray6543 = null;
         anInt6525++;
-        return (KeyLog) aDeque_6541.method1997(8);
+        return (KeyLog) aDeque_6541.removeFirst(8);
     }
 
     final boolean method2696(int i, int i_0_) {
@@ -96,7 +96,7 @@ final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener
         class348_sub11.anInt4767 = i;
         class348_sub11.aChar4761 = c;
         class348_sub11.aLong4764 = Class62.safeTime(-102);
-        aDeque_6542.method1999(class348_sub11, -20180);
+        aDeque_6542.addLast(class348_sub11, -20180);
         if (i_4_ != 128) aComponent6544 = null;
     }
 
@@ -134,11 +134,11 @@ final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener
         return i_9_;
     }
 
-    final synchronized void method2695(int i) {
+    final synchronized void record(int i) {
         anInt6534++;
         aDeque_6541.clear(110);
         if (i >= 51) {
-            for (Class348_Sub11 class348_sub11 = (Class348_Sub11) aDeque_6542.method1997(8); class348_sub11 != null; class348_sub11 = (Class348_Sub11) aDeque_6542.method1997(8)) {
+            for (Class348_Sub11 class348_sub11 = (Class348_Sub11) aDeque_6542.removeFirst(8); class348_sub11 != null; class348_sub11 = (Class348_Sub11) aDeque_6542.removeFirst(8)) {
                 class348_sub11.anInt4766 = method2704((byte) 127);
                 if (class348_sub11.anInt4771 == 0) {
                     if (!aBooleanArray6543[class348_sub11.anInt4767]) {
@@ -148,11 +148,11 @@ final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener
                         class348_sub11_10_.aChar4761 = '\0';
                         class348_sub11_10_.anInt4766 = class348_sub11.anInt4766;
                         class348_sub11_10_.aLong4764 = class348_sub11.aLong4764;
-                        aDeque_6541.method1999(class348_sub11_10_, -20180);
+                        aDeque_6541.addLast(class348_sub11_10_, -20180);
                         aBooleanArray6543[(class348_sub11.anInt4767)] = true;
                     }
                     class348_sub11.anInt4771 = 2;
-                    aDeque_6541.method1999(class348_sub11, -20180);
+                    aDeque_6541.addLast(class348_sub11, -20180);
                 } else if (class348_sub11.anInt4771 != 1) {
                     if (class348_sub11.anInt4771 == -1) {
                         for (int i_11_ = 0; i_11_ < 112; i_11_++) {
@@ -163,13 +163,13 @@ final class Class346_Sub1 extends Class346 implements KeyListener, FocusListener
                                 class348_sub11_12_.anInt4766 = (class348_sub11.anInt4766);
                                 class348_sub11_12_.anInt4771 = 1;
                                 class348_sub11_12_.aLong4764 = (class348_sub11.aLong4764);
-                                aDeque_6541.method1999(class348_sub11_12_, -20180);
+                                aDeque_6541.addLast(class348_sub11_12_, -20180);
                                 aBooleanArray6543[i_11_] = false;
                             }
                         }
-                    } else if (class348_sub11.anInt4771 == 3) aDeque_6541.method1999(class348_sub11, -20180);
+                    } else if (class348_sub11.anInt4771 == 3) aDeque_6541.addLast(class348_sub11, -20180);
                 } else if (aBooleanArray6543[class348_sub11.anInt4767]) {
-                    aDeque_6541.method1999(class348_sub11, -20180);
+                    aDeque_6541.addLast(class348_sub11, -20180);
                     aBooleanArray6543[(class348_sub11.anInt4767)] = false;
                 }
             }

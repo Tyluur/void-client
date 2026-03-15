@@ -68,8 +68,8 @@ final class Class112 implements Runnable {
         if (i != 3112) method1052((byte) 121);
         if (Class289.aClass46_3701 == null) {
             if (!Class5_Sub1.aBoolean8335 && Class316.aClass348_Sub42_Sub12_3963 != null) return (Class316.aClass348_Sub42_Sub12_3963.anInt9609);
-            int i_2_ = Class258_Sub4.aClass373_8552.method3597(true);
-            int i_3_ = Class258_Sub4.aClass373_8552.method3594((byte) 81);
+            int i_2_ = Class258_Sub4.mouseMonitor.method3597(true);
+            int i_3_ = Class258_Sub4.mouseMonitor.method3594((byte) 81);
             if (Class348_Sub42_Sub6.aBoolean9535) {
                 if (i_2_ > Class135_Sub1.anInt4717 && i_2_ < Class63.anInt1117 + Class135_Sub1.anInt4717) {
                     int i_9_ = -1;

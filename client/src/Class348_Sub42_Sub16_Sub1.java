@@ -24,24 +24,24 @@ final class Class348_Sub42_Sub16_Sub1 extends Class348_Sub42_Sub16 {
     }
 
     static final void method3260(int i) {
-        for (Class348_Sub15 class348_sub15 = (Class348_Sub15) Class27.aHashTable_389.head(0); class348_sub15 != null; class348_sub15 = (Class348_Sub15) Class27.aHashTable_389.next(0)) {
-            if (class348_sub15.aClass55_Sub1_6768.method510((byte) -125)) Class64_Sub3.method690((byte) 70, (class348_sub15.anInt6773));
+        for (VideoType videoType = (VideoType) Class27.aHashTable_389.head(0); videoType != null; videoType = (VideoType) Class27.aHashTable_389.next(0)) {
+            if (videoType.aClass55_Sub1_6768.method510((byte) -125)) Class64_Sub3.method690((byte) 70, (videoType.anInt6773));
             else {
-                class348_sub15.aClass55_Sub1_6768.method522((byte) -91);
+                videoType.aClass55_Sub1_6768.method522((byte) -91);
                 try {
-                    class348_sub15.aClass55_Sub1_6768.method517(-2);
+                    videoType.aClass55_Sub1_6768.method517(-2);
                 } catch (Exception exception) {
-                    Class156.method1242("TV: " + class348_sub15.anInt6773, exception, 15004);
-                    Class64_Sub3.method690((byte) 15, (class348_sub15.anInt6773));
+                    Class156.method1242("TV: " + videoType.anInt6773, exception, 15004);
+                    Class64_Sub3.method690((byte) 15, (videoType.anInt6773));
                 }
-                if (!class348_sub15.aBoolean6783 && !class348_sub15.aBoolean6781) {
-                    Class348_Sub23_Sub1 class348_sub23_sub1 = class348_sub15.aClass55_Sub1_6768.method512(0);
+                if (!videoType.aBoolean6783 && !videoType.aBoolean6781) {
+                    Class348_Sub23_Sub1 class348_sub23_sub1 = videoType.aClass55_Sub1_6768.method512(0);
                     if (class348_sub23_sub1 != null) {
                         Class348_Sub16_Sub2 class348_sub16_sub2 = class348_sub23_sub1.method2971(-61);
                         if (class348_sub16_sub2 != null) {
-                            class348_sub16_sub2.method2827(-17708, (class348_sub15.anInt6782));
+                            class348_sub16_sub2.method2827(-17708, (videoType.anInt6782));
                             Class348_Sub43.aClass348_Sub16_Sub4_7065.method2883(class348_sub16_sub2);
-                            class348_sub15.aBoolean6783 = true;
+                            videoType.aBoolean6783 = true;
                         }
                     }
                 }

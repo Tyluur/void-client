@@ -408,7 +408,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3 {
             if (i_62_ < 111) aShortArrayArray10246 = null;
             if (i_63_ < i_57_ && i_57_ < i_58_ + i_63_ && i_60_ > i_56_ - 13 && i_60_ < 3 + i_56_) i = i_59_;
             anInt10212++;
-            String string = Class348_Sub15.method2812(-44, class348_sub42_sub13);
+            String string = VideoType.method2812(-44, class348_sub42_sub13);
             Deque.aFontRenderer_3326.method2567(i_56_, string, (byte) 120, i, 0, i_63_ - -3, Class341.aSpriteArray4234, Class175.anIntArray2330);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("kda.VA(" + i + ',' + i_56_ + ',' + (class348_sub42_sub13 != null ? "{...}" : "null") + ',' + i_57_ + ',' + i_58_ + ',' + i_59_ + ',' + i_60_ + ',' + (var_toolkit != null ? "{...}" : "null") + ',' + i_61_ + ',' + i_62_ + ',' + i_63_ + ',' + i_64_ + ')'));

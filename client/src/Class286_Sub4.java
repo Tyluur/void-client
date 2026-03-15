@@ -138,11 +138,11 @@ final class Class286_Sub4 extends Class286 {
     static final String method2157(int i, int i_15_) {
         anInt6238++;
         if (i_15_ != -1431655765) method2157(-27, 75);
-        Class348_Sub15 class348_sub15 = ((Class348_Sub15) Class27.aHashTable_389.get(i, -6008));
-        if (class348_sub15 != null) {
-            Class348_Sub23_Sub4 class348_sub23_sub4 = class348_sub15.aClass55_Sub1_6768.method513(i_15_ + 1431655815);
+        VideoType videoType = ((VideoType) Class27.aHashTable_389.get(i, -6008));
+        if (videoType != null) {
+            Class348_Sub23_Sub4 class348_sub23_sub4 = videoType.aClass55_Sub1_6768.method513(i_15_ + 1431655815);
             if (class348_sub23_sub4 != null) {
-                double d = class348_sub15.aClass55_Sub1_6768.method519(i_15_ ^ 0x55555524);
+                double d = videoType.aClass55_Sub1_6768.method519(i_15_ ^ 0x55555524);
                 if ((double) class348_sub23_sub4.method2983((byte) 85) <= d && d <= (double) class348_sub23_sub4.method2984((byte) 97)) return class348_sub23_sub4.method2989(9);
             }
         }

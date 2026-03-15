@@ -136,10 +136,10 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16 {
 
     final synchronized void method2835(Class348_Sub42_Sub4 class348_sub42_sub4, int i) {
         for (/**/; anInt8888 >= 100; anInt8888--)
-            aDeque_8861.method1997(8);
+            aDeque_8861.removeFirst(8);
         if (i == 30700) {
             anInt8881++;
-            aDeque_8861.method1999(class348_sub42_sub4, -20180);
+            aDeque_8861.addLast(class348_sub42_sub4, -20180);
             anInt8888++;
         }
     }

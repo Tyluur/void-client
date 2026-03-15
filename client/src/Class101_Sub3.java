@@ -326,7 +326,7 @@ final class Class101_Sub3 extends Matrix {
                                 int i_60_ = i_59_ / 8 + (i_58_ / 8 << 8);
                                 for (int i_61_ = 0; i_61_ < Class348_Sub23_Sub3.mapRegionIds.length; i_61_++) {
                                     if (i_60_ == (Class348_Sub23_Sub3.mapRegionIds[i_61_]) && is[i_61_] != null) {
-                                        class237_sub1.method1692((i_58_ & 0x7) * 8, i_57_, is[i_61_], i_56_, (i_59_ & 0x7) * 8, Class348_Sub8.active, 8 * i_54_, 8 * i_53_, i + 8219, Class348_Sub45.collisionMaps, i_52_);
+                                        class237_sub1.method1692((i_58_ & 0x7) * 8, i_57_, is[i_61_], i_56_, (i_59_ & 0x7) * 8, Class348_Sub8.active, 8 * i_54_, 8 * i_53_, i + 8219, MouseLog.collisionMaps, i_52_);
                                         break;
                                     }
                                 }

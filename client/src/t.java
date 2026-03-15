@@ -93,7 +93,7 @@ final class t extends Ground implements Interface19 {
     }
 
     final void method3981(Class348_Sub1 class348_sub1, int[] is) {
-        aDeque_5149.method1999(class348_sub1, -20180);
+        aDeque_5149.addLast(class348_sub1, -20180);
         V(class348_sub1.hashCode(), class348_sub1.method2724(-1), class348_sub1.method2722(124), class348_sub1.method2717((byte) 83), class348_sub1.method2723(-1), class348_sub1.method2720(-1), is);
     }
 

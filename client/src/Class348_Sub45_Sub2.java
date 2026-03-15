@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class348_Sub45_Sub2 extends Class348_Sub45 {
+final class Class348_Sub45_Sub2 extends MouseLog {
     int anInt9730;
     static int anInt9731;
     static int anInt9732;
@@ -15,7 +15,7 @@ final class Class348_Sub45_Sub2 extends Class348_Sub45 {
     int anInt9739;
     static int anInt9740;
 
-    final int method3310(int i) {
+    final int type(int i) {
         anInt9731++;
         if (i < 50) this.anInt9739 = 69;
         return this.anInt9736;
@@ -45,7 +45,7 @@ final class Class348_Sub45_Sub2 extends Class348_Sub45 {
         return this.aLong9734;
     }
 
-    final int method3315(int i) {
+    final int extra(int i) {
         if (i != 0) this.anInt9739 = 66;
         anInt9738++;
         return this.anInt9730;

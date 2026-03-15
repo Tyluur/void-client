@@ -91,7 +91,7 @@ final class InputStream_Sub1 extends InputStream {
         Class318_Sub1_Sub3_Sub3.method2433();
         anInt73++;
         for (int i_7_ = 0; i_7_ < 4; i_7_++)
-            Class348_Sub45.collisionMaps[i_7_].method3500(700);
+            MouseLog.collisionMaps[i_7_].method3500(700);
         if (i != -16203) method125(125, -95, 109, null, (byte) -52);
         Class50_Sub2.method464(-1);
         Class348_Sub18.method2938((byte) 98);

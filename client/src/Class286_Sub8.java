@@ -40,7 +40,7 @@ final class Class286_Sub8 extends Class286 {
         if (i_0_ != 3) method2170(-109, (byte) 7);
         Class245.anInt3170 = i;
         Class48.anInt859 = -1;
-        Class348_Sub15.method2811(false);
+        VideoType.method2811(false);
     }
 
     public static void method2171(int i) {

@@ -76,10 +76,10 @@ final class Option_Sub3 extends Option {
 
     static final void method1731(int i) {
         anInt5863++;
-        Class348_Sub45 class348_sub45 = ((Class348_Sub45) Class318_Sub1_Sub3.aDeque_8744.method1995(i ^ 0x5));
+        MouseLog mouseLog = ((MouseLog) Class318_Sub1_Sub3.mouseLogs.method1995(i ^ 0x5));
         boolean bool = (Class289.aClass46_3701 != null || LinkedNode.anInt7059 > 0);
-        int i_19_ = class348_sub45.method3308((byte) -128);
-        int i_20_ = class348_sub45.method3311(119);
+        int i_19_ = mouseLog.method3308((byte) -128);
+        int i_20_ = mouseLog.method3311(119);
         if (bool) Class282.anInt3655 = 1;
         if (!bool) Class325.method2599((byte) 109, Class316.aClass348_Sub42_Sub12_3963, i_20_, i_19_);
         else Class138.aClass348_Sub42_Sub12_1946 = Class316.aClass348_Sub42_Sub12_3963;

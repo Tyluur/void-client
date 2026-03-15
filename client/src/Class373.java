@@ -41,7 +41,7 @@ abstract class Class373 {
 
     abstract boolean method3595(int i);
 
-    abstract Class348_Sub45 method3596(int i);
+    abstract MouseLog removeFirstLog(int i);
 
     abstract int method3597(boolean bool);
 }

@@ -2552,7 +2552,7 @@ abstract class NativeToolkit extends Toolkit {
     final za method3702(int i) {
         anInt8049++;
         za_Sub2 var_za_Sub2 = new za_Sub2(i);
-        aDeque_7927.method1999(var_za_Sub2, -20180);
+        aDeque_7927.addLast(var_za_Sub2, -20180);
         return var_za_Sub2;
     }
 

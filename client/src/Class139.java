@@ -67,7 +67,7 @@ final class Class139 {
         return i & i_12_;
     }
 
-    static final boolean method1167(int i, byte i_13_) {
+    static final boolean isLoading(int i, byte i_13_) {
         anInt1955++;
         if (i_13_ >= -45) anInt1949 = 88;
         return i == 0 || i == 1 || i == 2;

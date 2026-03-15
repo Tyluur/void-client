@@ -12,7 +12,7 @@ final class HashTable {
     static int anInt4380;
     static int anInt4381;
     static int anInt4382;
-    public static int anInt4383;
+    public static int randomSeed;
     static int anInt4384;
     private long searchKey;
     static int anInt4386;
@@ -57,7 +57,7 @@ final class HashTable {
     }
 
     final int toArray(int i, Node[] nodes) {
-        if (i != 3) anInt4383 = -76;
+        if (i != 3) randomSeed = -76;
         anInt4380++;
         int size = 0;
         for (int index = 0; this.bucketCount > index; index++) {
@@ -70,12 +70,12 @@ final class HashTable {
 
     public static void method3478(boolean bool) {
         aClass114_4388 = null;
-        if (bool != false) anInt4383 = 67;
+        if (bool != false) randomSeed = 67;
     }
 
     static final Class348_Sub21 method3479(int i) {
         anInt4378++;
-        if (i != -1) anInt4383 = 43;
+        if (i != -1) randomSeed = 43;
         if (Class75.aDeque_1254 == null || r.aClass312_9716 == null) return null;
         for (Class348_Sub21 class348_sub21 = (Class348_Sub21) r.aClass312_9716.method2329(10); class348_sub21 != null; class348_sub21 = (Class348_Sub21) r.aClass312_9716.method2329(i ^ ~0xa)) {
             Class42 class42 = Class75.aMapElementTypeList_1238.method1225(class348_sub21.anInt6847, (byte) 92);

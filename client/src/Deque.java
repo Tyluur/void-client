@@ -187,7 +187,7 @@ final class Deque {
         }
     }
 
-    final Node method1997(int i) {
+    final Node removeFirst(int i) {
         anInt3341++;
         if (i != 8) aClass190ArrayArray3335 = null;
         Node node = this.aNode_3334.prev;
@@ -207,7 +207,7 @@ final class Deque {
         return i_22_;
     }
 
-    final void method1999(Node node, int i) {
+    final void addLast(Node node, int i) {
         if (node.next != null) node.unlink((byte) 91);
         anInt3328++;
         node.prev = this.aNode_3334;

@@ -445,7 +445,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16 {
                     }
                     aClass348_Sub43ArrayArray8915[i_51_][class348_sub43.anInt7088] = class348_sub43;
                 }
-                aClass348_Sub16_Sub1_8958.aDeque_8848.method1999(class348_sub43, i ^ ~0x4ed3);
+                aClass348_Sub16_Sub1_8958.aDeque_8848.addLast(class348_sub43, i ^ ~0x4ed3);
                 aClass348_Sub43ArrayArray8928[i_51_][i_50_] = class348_sub43;
             }
         }

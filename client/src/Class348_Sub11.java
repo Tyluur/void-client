@@ -16,15 +16,15 @@ final class Class348_Sub11 extends Node implements KeyLog {
     static Index TEXTURE_DEFINITIONS;
     int anInt4771;
 
-    public final int method27(int i) {
-        if (i != 26276) method27(113);
+    public final int type(int i) {
+        if (i != 26276) type(113);
         anInt4769++;
         return this.anInt4771;
     }
 
     public final char getKeyChar(byte i) {
         anInt4768++;
-        if (i < 8) method27(113);
+        if (i < 8) type(113);
         return this.aChar4761;
     }
 

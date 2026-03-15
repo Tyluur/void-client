@@ -60,7 +60,7 @@ final class Class223 {
                         class348_sub9.anInt6681 = NPCDefinition.anInt1363;
                         class348_sub9.aBoolean6674 = NPCDefinition.aBoolean1370;
                     }
-                    client.aDeque_5185.method1999(class348_sub9, i + -979210269);
+                    client.aDeque_5185.addLast(class348_sub9, i + -979210269);
                 } else if (player != null) {
                     class348_sub9.aPlayer_6679 = player;
                     class348_sub9.anInt6698 = (player.method2436((byte) 74) + i_4_) << 9;
@@ -98,7 +98,7 @@ final class Class223 {
                     class348_sub9.method2781((byte) 21);
                 }
                 if (class348_sub9.anIntArray6697 != null) class348_sub9.anInt6670 = (class348_sub9.anInt6680 - -(int) ((double) (-class348_sub9.anInt6680 + class348_sub9.anInt6668) * Math.random()));
-                Class218.aDeque_2859.method1999(class348_sub9, -20180);
+                Class218.aDeque_2859.addLast(class348_sub9, -20180);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ad.B(" + i + ',' + (npc != null ? "{...}" : "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (player != null ? "{...}" : "null") + ',' + (class51 != null ? "{...}" : "null") + ',' + i_5_ + ')'));

@@ -213,15 +213,15 @@ final class Canvas_Sub1 extends Canvas {
                     }
                 }
                 int i_27_;
-                if (Class316.clientOptions.aClass239_Sub16_7247.method1789(-32350) != 1) i_27_ = Class9.anIntArray168[Class348_Sub15.anInt6769];
-                else i_27_ = (Class286_Sub8.anIntArray6296[Class348_Sub15.anInt6769]);
+                if (Class316.clientOptions.aClass239_Sub16_7247.method1789(-32350) != 1) i_27_ = Class9.anIntArray168[VideoType.anInt6769];
+                else i_27_ = (Class286_Sub8.anIntArray6296[VideoType.anInt6769]);
                 if (Class348_Sub8.active.method3670()) i_27_++;
                 Class348_Sub42_Sub2.method3171(Class348_Sub8.active, Option_Sub16.anInt6012, 9, 4, Class367_Sub4.mapLength, TextureOpBinary.mapWidth, i_27_, bool_25_, Class348_Sub8.active.method3704() > 0);
                 Class348_Sub32.method3018(Class318_Sub1_Sub4_Sub2.anInt10096);
                 if (Class318_Sub1_Sub4_Sub2.anInt10096 != 0) Class348_Sub48.method3328(Class240.aFontRenderer_4684);
                 else Class348_Sub48.method3328(null);
                 for (int i_28_ = 0; i_28_ < 4; i_28_++)
-                    Class348_Sub45.collisionMaps[i_28_].method3500(i ^ 0x2bc);
+                    MouseLog.collisionMaps[i_28_].method3500(i ^ 0x2bc);
                 Class52.method491((byte) -86);
                 Class101_Sub2.method921((byte) 99, false);
                 NativeToolkit.method3936(i + i);
@@ -257,7 +257,7 @@ final class Canvas_Sub1 extends Canvas {
                     TimedVarDomain.aClass237_Sub1_5067.method1685(Class348_Sub8.active, null, 21407, null);
                     Class243.method1879(false);
                 }
-                Class338.aClass237_Sub1_4197.method1685(Class348_Sub8.active, (!bool_25_ ? null : (TimedVarDomain.aClass237_Sub1_5067.tileHeights)), 21407, Class348_Sub45.collisionMaps);
+                Class338.aClass237_Sub1_4197.method1685(Class348_Sub8.active, (!bool_25_ ? null : (TimedVarDomain.aClass237_Sub1_5067.tileHeights)), 21407, MouseLog.collisionMaps);
                 if (Class312.anInt3931 == 0) {
                     Class289.method2193(true, (byte) -128);
                     Class122.method1090(Class14_Sub4.aByteArrayArray8642, i + 65536, Class338.aClass237_Sub1_4197);
@@ -332,7 +332,7 @@ final class Canvas_Sub1 extends Canvas {
                 } else Packet.setStep(i ^ 0x2, 3);
                 Class348_Sub1.method2718(-106);
                 Class369_Sub1.method3570(false);
-                Class94.method867(true);
+                Class94.doneSlowUpdate(true);
                 Class348_Sub16_Sub2.aBoolean8870 = true;
                 if (Class258_Sub4.aBoolean8558) {
                     Applet_Sub1.method94(("Took: " + (Class62.safeTime(-117) + -Class90.aLong1516) + "ms"), i + 52);

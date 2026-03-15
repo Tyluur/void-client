@@ -46,7 +46,7 @@ final class InputStream_Sub2 extends InputStream {
                     int i_17_ = TextureOpColourGradient.anInt9200;
                     if (i_17_ < 3 && NPCDefinition.method802(i_10_, i_9_, true)) i_17_++;
                     Class318_Sub1_Sub3_Sub4 class318_sub1_sub3_sub4 = (new Class318_Sub1_Sub3_Sub4(i_11_, i_13_, Class367_Sub11.anInt7396, TextureOpColourGradient.anInt9200, i_17_, i_15_, Class275.method2064(i_15_, TextureOpColourGradient.anInt9200, 11219, i_16_) + -i_12_, i_16_, i_9_, i_9_, i_10_, i_10_, i_14_));
-                    r_Sub2.aDeque_10492.method1999(new Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180);
+                    r_Sub2.aDeque_10492.addLast(new Class348_Sub42_Sub6(class318_sub1_sub3_sub4), -20180);
                 }
             } else if (class74 == Class91.aClass74_1519) {
                 int i_18_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
@@ -146,7 +146,7 @@ final class InputStream_Sub2 extends InputStream {
                     }
                     Class318_Sub1_Sub3_Sub5 class318_sub1_sub3_sub5 = (new Class318_Sub1_Sub3_Sub5(i_60_, TextureOpColourGradient.anInt9200, TextureOpColourGradient.anInt9200, i_51_, i_52_, i_61_, i_63_ - -Class367_Sub11.anInt7396, i_64_ + Class367_Sub11.anInt7396, i_65_, i_66_, i_58_, i_59_, i_62_, bool, i_55_));
                     class318_sub1_sub3_sub5.method2471((byte) -103, (-i_62_ + Class275.method2064(i_56_, TextureOpColourGradient.anInt9200, 11219, i_57_)), i_57_, i_63_ + Class367_Sub11.anInt7396, i_56_);
-                    TextureOpSprite.aDeque_9240.method1999(new Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180);
+                    TextureOpSprite.aDeque_9240.addLast(new Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180);
                 }
             } else if (class74 == Class348_Sub42_Sub8_Sub2.aClass74_10437) {
                 int i_69_ = Class299.aClass348_Sub49_Sub2_3813.readShortAddLittle(-128);
@@ -255,7 +255,7 @@ final class InputStream_Sub2 extends InputStream {
                         i_112_ <<= 2;
                         Class318_Sub1_Sub3_Sub5 class318_sub1_sub3_sub5 = (new Class318_Sub1_Sub3_Sub5(i_111_, TextureOpColourGradient.anInt9200, TextureOpColourGradient.anInt9200, i_106_, i_107_, i_112_, i_114_ + Class367_Sub11.anInt7396, Class367_Sub11.anInt7396 + i_115_, i_116_, i_117_, 0, i_110_, i_113_, bool, -1));
                         class318_sub1_sub3_sub5.method2471((byte) -103, Class275.method2064(i_108_, (TextureOpColourGradient.anInt9200), 11219, i_109_) + -i_113_, i_109_, i_114_ + Class367_Sub11.anInt7396, i_108_);
-                        TextureOpSprite.aDeque_9240.method1999(new Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180);
+                        TextureOpSprite.aDeque_9240.addLast(new Class348_Sub42_Sub18(class318_sub1_sub3_sub5), -20180);
                     }
                 } else if (Class186.aClass74_2491 == class74) {
                     Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);

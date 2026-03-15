@@ -13,7 +13,7 @@ final class Class348_Sub42_Sub16_Sub2 extends Class348_Sub42_Sub16 {
     static int anInt10464;
     static HashTable aHashTable_10465 = new HashTable(16);
 
-    static final boolean method3263(boolean bool) {
+    static final boolean isConsoleOpen(boolean bool) {
         if (bool != true) return false;
         anInt10459++;
         return Class351.aBoolean4328;

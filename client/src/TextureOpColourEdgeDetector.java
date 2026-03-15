@@ -31,7 +31,7 @@ final class TextureOpColourEdgeDetector extends TextureOp {
         Class318_Sub1_Sub3_Sub3.method2433();
         if (i != 11) anIntArray9436 = null;
         for (int i_2_ = 0; i_2_ < 4; i_2_++)
-            Class348_Sub45.collisionMaps[i_2_].method3500(700);
+            MouseLog.collisionMaps[i_2_].method3500(700);
         ByteArraySecondaryNode.method3177(-50, false);
         System.gc();
         JavaSurface.method3007(2, 22684);

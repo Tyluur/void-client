@@ -45,7 +45,7 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
             if (i >= -71) method1077(null, (byte) -41);
             String string;
             if (r.aBoolean9722 && Class73.anInt4776 < 2) string = (Class28.aString5001 + Class274.aClass274_3515.method2063(AnimBase.language, 544) + Class28.aString5000 + " ->");
-            else if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -121) || Class73.anInt4776 <= 2) {
+            else if (!Class116.shiftClick || !Class182.keyboardMonitor.method2696(81, -121) || Class73.anInt4776 <= 2) {
                 Class348_Sub42_Sub12 class348_sub42_sub12 = Class316.aClass348_Sub42_Sub12_3963;
                 if (class348_sub42_sub12 == null) return;
                 string = Class316.method2367((byte) -52, class348_sub42_sub12);
@@ -75,10 +75,10 @@ final class Class119_Sub1 extends Class119 implements Interface2 {
             if (Class348_Sub36.aClass46_6990 != null) {
                 FontRenderer fontRenderer = Class348_Sub36.aClass46_6990.method426(var_toolkit, (byte) 68);
                 if (fontRenderer == null) fontRenderer = Deque.aFontRenderer_3326;
-                fontRenderer.method2585(Class175.anIntArray2330, Class348_Sub36.aClass46_6990.anInt709, Class341.aSpriteArray4234, Class348_Sub36.aClass46_6990.anInt700, Class348_Sub36.aClass46_6990.anInt749, Class348_Sub36.aClass46_6990.anInt789, Class348_Sub36.aClass46_6990.anInt809, OutputStream_Sub1.aRandom93, Class348_Sub36.aClass46_6990.anInt762, Class32.anInt451, HashTable.anInt4383, -33, Class332.anInt4141, string, Class195.anIntArray5007);
+                fontRenderer.method2585(Class175.anIntArray2330, Class348_Sub36.aClass46_6990.anInt709, Class341.aSpriteArray4234, Class348_Sub36.aClass46_6990.anInt700, Class348_Sub36.aClass46_6990.anInt749, Class348_Sub36.aClass46_6990.anInt789, Class348_Sub36.aClass46_6990.anInt809, OutputStream_Sub1.random, Class348_Sub36.aClass46_6990.anInt762, Class32.anInt451, HashTable.randomSeed, -33, Class332.anInt4141, string, Class195.anIntArray5007);
                 Class13.method226(Class195.anIntArray5007[0], Class195.anIntArray5007[2], Class195.anIntArray5007[1], 0, Class195.anIntArray5007[3]);
             } else if (Class21.aClass46_323 != null && (Class348_Sub42_Sub8_Sub2.modeGame == Class10.aClass230_186)) {
-                int i_1_ = (Deque.aFontRenderer_3326.method2571(-1, HashTable.anInt4383, Class175.anIntArray2330, string, 16777215, 0, Class341.aSpriteArray4234, 16 + Class238_Sub1.anInt5832, 4 + Class120.anInt4911, OutputStream_Sub1.aRandom93));
+                int i_1_ = (Deque.aFontRenderer_3326.method2571(-1, HashTable.randomSeed, Class175.anIntArray2330, string, 16777215, 0, Class341.aSpriteArray4234, 16 + Class238_Sub1.anInt5832, 4 + Class120.anInt4911, OutputStream_Sub1.random));
                 Class13.method226(Class120.anInt4911 - -4, (Class369.aFontMetrics_4962.width(true, string) + i_1_), Class238_Sub1.anInt5832, 0, 16);
             }
         }

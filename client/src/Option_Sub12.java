@@ -39,10 +39,10 @@ final class Option_Sub12 extends Option {
 
     static final void method1772(int i) {
         anInt5968++;
-        Class348_Sub15 class348_sub15 = (Class348_Sub15) Class27.aHashTable_389.head(0);
+        VideoType videoType = (VideoType) Class27.aHashTable_389.head(0);
         if (i <= 4) aString5966 = null;
-        for (/**/; class348_sub15 != null; class348_sub15 = (Class348_Sub15) Class27.aHashTable_389.next(0))
-            Class64_Sub3.method690((byte) 108, (class348_sub15.anInt6773));
+        for (/**/; videoType != null; videoType = (VideoType) Class27.aHashTable_389.next(0))
+            Class64_Sub3.method690((byte) 108, (videoType.anInt6773));
     }
 
     public static void method1773(byte i) {

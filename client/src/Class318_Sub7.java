@@ -157,7 +157,7 @@ final class Class318_Sub7 extends Class318 {
                     } else Class75.aFloat1249 = Class75.aFloat1247 = 3.0F;
                     Class75.anInt1255 = (int) Class75.aFloat1247 >> 1;
                     Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, 12871);
-                    Class348_Sub15.method2811(false);
+                    VideoType.method2811(false);
                     Class75.method760();
                     Class289.aDeque_3705 = new Deque();
                     Class75.anInt1250 += (int) (Math.random() * 5.0) + -2;
@@ -177,7 +177,7 @@ final class Class318_Sub7 extends Class318 {
                     Class75.method756(var_toolkit, Class75.anInt1250, Class75.anInt1253);
                     Node.anInt4290 = 60;
                     Class289.method2193(true, (byte) -122);
-                    Class94.method867(true);
+                    Class94.doneSlowUpdate(true);
                 } else if (i <= -43) {
                     if (Node.anInt4290 == 60) {
                         if (Class75.aIndex_1237.groupExists(-18308, (Class75.aClass348_Sub42_Sub14_1243.aString9625) + "_staticelements")) {
@@ -187,47 +187,47 @@ final class Class318_Sub7 extends Class318 {
                         Class75.method761();
                         Node.anInt4290 = 70;
                         Class289.method2193(true, (byte) -127);
-                        Class94.method867(true);
+                        Class94.doneSlowUpdate(true);
                     } else if (Node.anInt4290 == 70) {
                         Class125.aClass323_4921 = new Class323(var_toolkit, 11, true, Class305.aCanvas3869);
                         Node.anInt4290 = 73;
                         Class289.method2193(true, (byte) -123);
-                        Class94.method867(true);
+                        Class94.doneSlowUpdate(true);
                     } else if (Node.anInt4290 == 73) {
                         Class14_Sub4.aClass323_8644 = new Class323(var_toolkit, 12, true, Class305.aCanvas3869);
                         Node.anInt4290 = 76;
                         Class289.method2193(true, (byte) -125);
-                        Class94.method867(true);
+                        Class94.doneSlowUpdate(true);
                     } else if (Node.anInt4290 == 76) {
                         Class39.aClass323_521 = new Class323(var_toolkit, 14, true, Class305.aCanvas3869);
                         Node.anInt4290 = 79;
                         Class289.method2193(true, (byte) -123);
-                        Class94.method867(true);
+                        Class94.doneSlowUpdate(true);
                     } else if (Node.anInt4290 == 79) {
                         Class168.aClass323_2252 = new Class323(var_toolkit, 17, true, Class305.aCanvas3869);
                         Node.anInt4290 = 82;
                         Class289.method2193(true, (byte) -124);
-                        Class94.method867(true);
+                        Class94.doneSlowUpdate(true);
                     } else if (Node.anInt4290 == 82) {
                         Class176.aClass323_2333 = new Class323(var_toolkit, 19, true, Class305.aCanvas3869);
                         Node.anInt4290 = 85;
                         Class289.method2193(true, (byte) -128);
-                        Class94.method867(true);
+                        Class94.doneSlowUpdate(true);
                     } else if (Node.anInt4290 == 85) {
                         Class285.aClass323_4754 = new Class323(var_toolkit, 22, true, Class305.aCanvas3869);
                         Node.anInt4290 = 88;
                         Class289.method2193(true, (byte) -124);
-                        Class94.method867(true);
+                        Class94.doneSlowUpdate(true);
                     } else if (Node.anInt4290 == 88) {
                         Class348_Sub3.aClass323_6581 = new Class323(var_toolkit, 26, true, Class305.aCanvas3869);
                         Node.anInt4290 = 91;
                         Class289.method2193(true, (byte) -125);
-                        Class94.method867(true);
+                        Class94.doneSlowUpdate(true);
                     } else {
                         Class240.aClass323_4672 = new Class323(var_toolkit, 30, true, Class305.aCanvas3869);
                         Node.anInt4290 = 100;
                         Class289.method2193(true, (byte) -119);
-                        Class94.method867(true);
+                        Class94.doneSlowUpdate(true);
                         System.gc();
                     }
                 }

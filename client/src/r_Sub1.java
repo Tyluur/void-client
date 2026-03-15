@@ -16,7 +16,7 @@ final class r_Sub1 extends r {
     static int anInt10476;
     static Class351 aClass351_10477 = new Class351(22, 7);
     static int[] anIntArray10478 = new int[1];
-    static Deque aDeque_10479;
+    static Deque mouseMovements;
 
     final void method3286(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
         this.anInt10466 = i - i_3_;
@@ -317,7 +317,7 @@ final class r_Sub1 extends r {
         int i_14_ = 107 % ((i - 27) / 34);
         anIntArray10478 = null;
         aClass351_10477 = null;
-        aDeque_10479 = null;
+        mouseMovements = null;
     }
 
     final void method3289(int i) {
@@ -339,7 +339,7 @@ final class r_Sub1 extends r {
     }
 
     static final void method3290(int i) {
-        if (i < 30) aDeque_10479 = null;
+        if (i < 30) mouseMovements = null;
         IOException_Sub1.method131(Class316.clientOptions.aClass239_Sub5_7240.method1739(-32350) == 1, 2, true, 22050);
         anInt10470++;
         TextureOp.aClass279_7042 = Class193.method1439(22050, Class348_Sub23_Sub1.aClass297_8992, Class305.aCanvas3869, 0, 7);
@@ -367,6 +367,6 @@ final class r_Sub1 extends r {
 
     static {
         new Class273("", 76);
-        aDeque_10479 = new Deque();
+        mouseMovements = new Deque();
     }
 }

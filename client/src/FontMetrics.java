@@ -335,10 +335,10 @@ final class FontMetrics {
     static final void method1189(int i, int i_41_) {
         anInt1991++;
         if (i != -1) aClass351_1987 = null;
-        Class348_Sub15 class348_sub15 = ((Class348_Sub15) Class27.aHashTable_389.get(i_41_, -6008));
-        if (class348_sub15 != null) {
-            class348_sub15.aBoolean6781 = !class348_sub15.aBoolean6781;
-            class348_sub15.aClass55_Sub1_6768.method514((byte) 116, class348_sub15.aBoolean6781);
+        VideoType videoType = ((VideoType) Class27.aHashTable_389.get(i_41_, -6008));
+        if (videoType != null) {
+            videoType.aBoolean6781 = !videoType.aBoolean6781;
+            videoType.aClass55_Sub1_6768.method514((byte) 116, videoType.aBoolean6781);
         }
     }
 

@@ -121,7 +121,7 @@ abstract class Class110 {
                         class348_sub48.anIntArray7131[i_6_] = -5;
                     }
                 }
-                Class348_Sub35.aDeque_6978.method1999(class348_sub48, -20180);
+                Class348_Sub35.aDeque_6978.addLast(class348_sub48, -20180);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("mr.E(" + i + ',' + (packet != null ? "{...}" : "null") + ',' + (class297 != null ? "{...}" : "null") + ',' + i_5_ + ')'));

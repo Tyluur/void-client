@@ -60,7 +60,7 @@ final class Class348_Sub12 extends Node {
                 class348_sub27.anInt6896 = i_4_;
                 class348_sub27.anInt6905 = i_11_;
                 if (i_11_ >= 0 && i_4_ >= 0 && Class367_Sub4.mapLength > i_11_ && TextureOpBinary.mapWidth > i_4_) Class184.method1387(-69, class348_sub27);
-                Class348_Sub42_Sub20.aDeque_9711.method1999(class348_sub27, -20180);
+                Class348_Sub42_Sub20.aDeque_9711.addLast(class348_sub27, -20180);
             }
             class348_sub27.anInt6893 = i_5_;
             class348_sub27.anInt6900 = i_8_;

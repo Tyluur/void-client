@@ -49,7 +49,7 @@ class Class237 {
                                 int i_12_ = 4 + is_2_[i + -1][-1 + i_1_] * 2 & 0x7;
                                 int i_13_ = (Class348_Sub42_Sub17.method3266(var_toolkit, 127, class277_10_));
                                 if (Class160.aBooleanArrayArray2133[i_11_][i_12_]) {
-                                    Class348_Sub15.anIntArray6775[0] = class277_10_.anInt3563;
+                                    VideoType.anIntArray6775[0] = class277_10_.anInt3563;
                                     TextureOpClamp.anIntArray9480[0] = i_13_;
                                     Class223.anIntArray2899[0] = class277_10_.anInt3575;
                                     MonochromeImageCacheSlot.anIntArray6631[0] = class277_10_.anInt3570;
@@ -68,7 +68,7 @@ class Class237 {
                                 int i_17_ = 0x7 & 2 * is_2_[1 + i][i_1_ + -1] + 6;
                                 int i_18_ = (Class348_Sub42_Sub17.method3266(var_toolkit, 125, class277_15_));
                                 if (Class160.aBooleanArrayArray2133[i_16_][i_17_]) {
-                                    Class348_Sub15.anIntArray6775[2] = class277_15_.anInt3563;
+                                    VideoType.anIntArray6775[2] = class277_15_.anInt3563;
                                     TextureOpClamp.anIntArray9480[2] = i_18_;
                                     Class223.anIntArray2899[2] = class277_15_.anInt3575;
                                     MonochromeImageCacheSlot.anIntArray6631[2] = class277_15_.anInt3570;
@@ -89,7 +89,7 @@ class Class237 {
                                 int i_22_ = 2 * is_2_[-1 + i][1 + i_1_] + 2 & 0x7;
                                 int i_23_ = (Class348_Sub42_Sub17.method3266(var_toolkit, i_3_ ^ ~0x7c, class277_20_));
                                 if (Class160.aBooleanArrayArray2133[i_21_][i_22_]) {
-                                    Class348_Sub15.anIntArray6775[6] = class277_20_.anInt3563;
+                                    VideoType.anIntArray6775[6] = class277_20_.anInt3563;
                                     TextureOpClamp.anIntArray9480[6] = i_23_;
                                     Class223.anIntArray2899[6] = class277_20_.anInt3575;
                                     MonochromeImageCacheSlot.anIntArray6631[6] = class277_20_.anInt3570;
@@ -108,7 +108,7 @@ class Class237 {
                                 int i_27_ = 0x7 & /*--*/(is_2_[i - -1][1 + i_1_] * 2);
                                 int i_28_ = (Class348_Sub42_Sub17.method3266(var_toolkit, i_3_ + 127, class277_25_));
                                 if (Class160.aBooleanArrayArray2133[i_26_][i_27_]) {
-                                    Class348_Sub15.anIntArray6775[4] = class277_25_.anInt3563;
+                                    VideoType.anIntArray6775[4] = class277_25_.anInt3563;
                                     TextureOpClamp.anIntArray9480[4] = i_28_;
                                     Class223.anIntArray2899[4] = class277_25_.anInt3575;
                                     MonochromeImageCacheSlot.anIntArray6631[4] = class277_25_.anInt3570;
@@ -134,7 +134,7 @@ class Class237 {
                                     i_33_ &= 0x7;
                                     i_34_ = 0x7 & i_34_;
                                     if ((Class160.aBooleanArrayArray2133[i_31_][i_34_]) && (Class306.anIntArray3873[i_33_] <= (class277_30_.anInt3564))) {
-                                        Class348_Sub15.anIntArray6775[i_33_] = (class277_30_.anInt3563);
+                                        VideoType.anIntArray6775[i_33_] = (class277_30_.anInt3563);
                                         TextureOpClamp.anIntArray9480[i_33_] = i_35_;
                                         Class223.anIntArray2899[i_33_] = (class277_30_.anInt3575);
                                         MonochromeImageCacheSlot.anIntArray6631[i_33_] = (class277_30_.anInt3570);
@@ -165,7 +165,7 @@ class Class237 {
                                     i_41_ &= 0x7;
                                     i_42_ = 0x7 & i_42_;
                                     if ((Class160.aBooleanArrayArray2133[i_39_][i_42_]) && ((class277_38_.anInt3564) >= Class306.anIntArray3873[i_41_])) {
-                                        Class348_Sub15.anIntArray6775[i_41_] = (class277_38_.anInt3563);
+                                        VideoType.anIntArray6775[i_41_] = (class277_38_.anInt3563);
                                         TextureOpClamp.anIntArray9480[i_41_] = i_43_;
                                         Class223.anIntArray2899[i_41_] = (class277_38_.anInt3575);
                                         MonochromeImageCacheSlot.anIntArray6631[i_41_] = (class277_38_.anInt3570);
@@ -196,7 +196,7 @@ class Class237 {
                                     i_50_ &= 0x7;
                                     i_49_ = 0x7 & i_49_;
                                     if ((Class160.aBooleanArrayArray2133[i_47_][i_50_]) && (Class306.anIntArray3873[i_49_] <= (class277_46_.anInt3564))) {
-                                        Class348_Sub15.anIntArray6775[i_49_] = (class277_46_.anInt3563);
+                                        VideoType.anIntArray6775[i_49_] = (class277_46_.anInt3563);
                                         TextureOpClamp.anIntArray9480[i_49_] = i_51_;
                                         Class223.anIntArray2899[i_49_] = (class277_46_.anInt3575);
                                         MonochromeImageCacheSlot.anIntArray6631[i_49_] = (class277_46_.anInt3570);
@@ -227,7 +227,7 @@ class Class237 {
                                     i_57_ = 0x7 & i_57_;
                                     i_58_ = 0x7 & i_58_;
                                     if ((Class160.aBooleanArrayArray2133[i_55_][i_58_]) && (Class306.anIntArray3873[i_57_] <= (class277_54_.anInt3564))) {
-                                        Class348_Sub15.anIntArray6775[i_57_] = (class277_54_.anInt3563);
+                                        VideoType.anIntArray6775[i_57_] = (class277_54_.anInt3563);
                                         TextureOpClamp.anIntArray9480[i_57_] = i_59_;
                                         Class223.anIntArray2899[i_57_] = (class277_54_.anInt3575);
                                         MonochromeImageCacheSlot.anIntArray6631[i_57_] = (class277_54_.anInt3570);
@@ -249,7 +249,7 @@ class Class237 {
                 for (int i_62_ = 0; i_62_ < 8; i_62_++) {
                     int i_63_ = -(i_4_ * 2) + i_62_ & 0x7;
                     if (Class160.aBooleanArrayArray2133[i_7_][i_62_] && (Class306.anIntArray3873[i_63_] <= class277.anInt3564)) {
-                        Class348_Sub15.anIntArray6775[i_63_] = class277.anInt3563;
+                        VideoType.anIntArray6775[i_63_] = class277.anInt3563;
                         TextureOpClamp.anIntArray9480[i_63_] = i_61_;
                         Class223.anIntArray2899[i_63_] = class277.anInt3575;
                         MonochromeImageCacheSlot.anIntArray6631[i_63_] = class277.anInt3570;
@@ -359,7 +359,7 @@ class Class237 {
                             boolean bool_92_ = (class277 != null && (class277.anInt3563 != class277.anInt3569));
                             if (!bool_92_) {
                                 for (int i_93_ = 0; i_93_ < 8; i_93_++) {
-                                    if (Class306.anIntArray3873[i_93_] >= 0 && ((Class348_Sub15.anIntArray6775[i_93_]) != (TextureOpClamp.anIntArray9480[i_93_]))) {
+                                    if (Class306.anIntArray3873[i_93_] >= 0 && ((VideoType.anIntArray6775[i_93_]) != (TextureOpClamp.anIntArray9480[i_93_]))) {
                                         bool_92_ = true;
                                         break;
                                     }
@@ -410,7 +410,7 @@ class Class237 {
                                 is_96_ = Class98.anIntArrayArray1566[i_76_];
                                 is_95_ = LoadingScreenOpFactory.anIntArrayArray1638[i_76_];
                                 is_97_ = Class163.anIntArrayArray2165[i_76_];
-                                is_99_ = (Class348_Sub15.anIntArrayArray6780[i_76_]);
+                                is_99_ = (VideoType.anIntArrayArray6780[i_76_]);
                                 i_98_ = (class22 != null ? Class283.anIntArray3659[i_76_] : 0);
                             } else {
                                 i_98_ = (class22 == null ? 0 : Class246.anIntArray3173[i_76_]);
@@ -537,7 +537,7 @@ class Class237 {
                                                 if (is_105_ != null) is_105_[i_103_] = (TextureOpClamp.anIntArray9480[i_122_]);
                                                 is_110_[i_103_] = (MonochromeImageCacheSlot.anIntArray6631[i_122_]);
                                                 is_109_[i_103_] = (Class223.anIntArray2899[i_122_]);
-                                                is_108_[i_103_] = (Class348_Sub15.anIntArray6775[i_122_]);
+                                                is_108_[i_103_] = (VideoType.anIntArray6775[i_122_]);
                                             } else {
                                                 if (is_105_ != null) is_105_[i_103_] = i_116_;
                                                 is_109_[i_103_] = (class277.anInt3575);
@@ -651,7 +651,7 @@ class Class237 {
                                                 if (is_105_ != null) is_105_[i_103_] = (TextureOpClamp.anIntArray9480[i_142_]);
                                                 is_110_[i_103_] = (MonochromeImageCacheSlot.anIntArray6631[i_142_]);
                                                 is_109_[i_103_] = (Class223.anIntArray2899[i_142_]);
-                                                is_108_[i_103_] = (Class348_Sub15.anIntArray6775[i_142_]);
+                                                is_108_[i_103_] = (VideoType.anIntArray6775[i_142_]);
                                             } else {
                                                 if (!bool_75_ || !(Class160.aBooleanArrayArray2133[i_76_][i_141_])) {
                                                     if ((i_146_ == 0) && i_145_ == 0) {
@@ -1231,7 +1231,7 @@ class Class237 {
                 if (Class186.aBoolean2492) i_306_ |= 0x7;
                 if (!Class47.aBoolean845) i_306_ |= 0x20;
                 int[][] is_307_ = (is == null || is.length <= i_304_ ? this.tileHeights[i_304_] : is[i_304_]);
-                Class348_Sub45.method3313(i_304_, var_toolkit.method3648(this.width, this.height, (this.tileHeights[i_304_]), is_307_, 512, i_305_, i_306_));
+                MouseLog.method3313(i_304_, var_toolkit.method3648(this.width, this.height, (this.tileHeights[i_304_]), is_307_, 512, i_305_, i_306_));
             }
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("sr.J(" + (var_toolkit != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ',' + i + ',' + (class361s != null ? "{...}" : "null") + ')'));

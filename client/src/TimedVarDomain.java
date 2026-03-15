@@ -110,7 +110,7 @@ final class TimedVarDomain implements Interface17 {
     static final Class52 method1312(byte i, Packet packet) {
         anInt5075++;
         int i_23_ = packet.readInt((byte) -126);
-        if (i < 47) method1315(4);
+        if (i < 47) tickUrlTools(4);
         return new Class52(i_23_);
     }
 
@@ -144,7 +144,7 @@ final class TimedVarDomain implements Interface17 {
         return this.anIntArray5063[i];
     }
 
-    static final void method1315(int i) {
+    static final void tickUrlTools(int i) {
         anInt5077++;
         if (Class318_Sub1_Sub5.aClass144_8766 != null) {
             if (Class318_Sub1_Sub5.aClass144_8766.anInt1997 == 1) {

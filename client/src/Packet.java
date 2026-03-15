@@ -601,8 +601,8 @@ class Packet extends Node {
             Class78.GRAPHICS.discardUnpacked = 1;
         }
         if (newStep == STEP_GAME_SCREEN || newStep == STEP_LOGIN_SCREEN) TextureOpCombine.method3088(9);
-        boolean bool = (i == newStep || Class348_Sub42_Sub8.method3196(newStep, i ^ ~0x58) || Js5MasterIndex.method2672(newStep, -100));
-        boolean bool_72_ = (Class240.mainLogicStep == 2 || Class348_Sub42_Sub8.method3196(Class240.mainLogicStep, -110) || Js5MasterIndex.method2672(Class240.mainLogicStep, -128));
+        boolean bool = (i == newStep || Class348_Sub42_Sub8.isLoggedOut(newStep, i ^ ~0x58) || Js5MasterIndex.method2672(newStep, -100));
+        boolean bool_72_ = (Class240.mainLogicStep == 2 || Class348_Sub42_Sub8.isLoggedOut(Class240.mainLogicStep, -110) || Js5MasterIndex.method2672(Class240.mainLogicStep, -128));
         if (bool != bool_72_) {
             if (bool) {
                 Class267.anInt3428 = Class345.anInt4270;

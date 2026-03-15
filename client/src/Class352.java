@@ -24,7 +24,7 @@ final class Class352 {
         if (class348_sub37 == null) {
             class348_sub37 = new Class348_Sub37();
             Class130.aHashTable_1895.put((byte) 50, l, class348_sub37);
-            class348_sub37.aDeque_6998.method1999(class348_sub34, -20180);
+            class348_sub37.aDeque_6998.addLast(class348_sub34, -20180);
         } else {
             ItemDefinition itemDefinition = Exception_Sub1.itemTypeList.method1940(i_2_ ^ ~0x72, (class348_sub34.anInt6973));
             int i_3_ = itemDefinition.anInt2819;
@@ -38,7 +38,7 @@ final class Class352 {
                     return;
                 }
             }
-            class348_sub37.aDeque_6998.method1999(class348_sub34, i_2_ ^ 0x4ed2);
+            class348_sub37.aDeque_6998.addLast(class348_sub34, i_2_ ^ 0x4ed2);
         }
     }
 

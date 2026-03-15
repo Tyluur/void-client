@@ -5,7 +5,7 @@
 final class Class253 {
     int anInt3244;
     int anInt3245 = 0;
-    static int anInt3246 = 0;
+    static int keyPressCount = 0;
     static int anInt3247;
     static int anInt3248;
     int anInt3249;

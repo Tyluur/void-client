@@ -68,7 +68,7 @@ final class Class215 {
             }
             Class50_Sub1.aBoolean5219 = i_2_ >= 2;
             if (r.anInt9721 != -1) Option.method1713(true, 520);
-            if (TextureOpPerlinNoise.aClass238_9165 != null && Class334.method2653(true, Class240.mainLogicStep)) Class286_Sub2.method2145(-24498);
+            if (TextureOpPerlinNoise.aClass238_9165 != null && Class334.isAtGameScreen(true, Class240.mainLogicStep)) Class286_Sub2.method2145(-24498);
             for (int i_5_ = 0; i_5_ < 100; i_5_++)
                 Class152.aBooleanArray2076[i_5_] = true;
             JavaOffscreenSurface.aBoolean4726 = true;

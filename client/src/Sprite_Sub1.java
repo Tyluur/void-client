@@ -461,7 +461,7 @@ final class Sprite_Sub1 extends Sprite {
         anInt8417 = i_118_;
         anInt8411 = i;
         aNativeToolkit_8407 = var_nativeToolkit;
-        anInterface18_Impl3_8403 = var_nativeToolkit.method3861(i_118_, (byte) -84, i, Class68.aClass68_1183, (bool ? Class108.aClass304_1662 : Class348_Sub45.aClass304_7103));
+        anInterface18_Impl3_8403 = var_nativeToolkit.method3861(i_118_, (byte) -84, i, Class68.aClass68_1183, (bool ? Class108.aClass304_1662 : MouseLog.aClass304_7103));
         anInterface18_Impl3_8403.method66(true, true, 25688);
         aBoolean8410 = (i != anInterface18_Impl3_8403.method69(false));
         aBoolean8408 = (i_118_ != anInterface18_Impl3_8403.method72(-39));

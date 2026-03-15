@@ -1689,17 +1689,17 @@ final class Class64_Sub3 extends Model {
         if (i != -59) anInt5584 = 77;
         anInt5577++;
         Class348_Sub36.anInt6992 = i_377_;
-        Class348_Sub15.method2811(false);
+        VideoType.method2811(false);
     }
 
     static final void method690(byte i, int i_378_) {
         anInt5565++;
-        Class348_Sub15 class348_sub15 = ((Class348_Sub15) Class27.aHashTable_389.get(i_378_, -6008));
+        VideoType videoType = ((VideoType) Class27.aHashTable_389.get(i_378_, -6008));
         int i_379_ = -8 % ((i - -49) / 44);
-        if (class348_sub15 != null) {
-            class348_sub15.aClass55_Sub1_6768.method508(1);
-            Class303.method2285(class348_sub15.aBoolean6776, (byte) -114, class348_sub15.anInt6773);
-            class348_sub15.unlink((byte) 52);
+        if (videoType != null) {
+            videoType.aClass55_Sub1_6768.method508(1);
+            Class303.method2285(videoType.aBoolean6776, (byte) -114, videoType.anInt6773);
+            videoType.unlink((byte) 52);
         }
     }
 

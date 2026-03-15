@@ -27,7 +27,7 @@ final class Class38 {
 
     static final Class227 method360(byte i, int i_0_) {
         anInt505++;
-        if (i != -57) method363(97);
+        if (i != -57) drawDebugConsole(97);
         Class227[] class227s = Class88.method841(i + -70);
         for (int i_1_ = 0; class227s.length > i_1_; i_1_++) {
             Class227 class227 = class227s[i_1_];
@@ -37,7 +37,7 @@ final class Class38 {
     }
 
     private final void method361(int i, Packet packet, int i_2_) {
-        if (i != -6617) method363(95);
+        if (i != -6617) drawDebugConsole(95);
         anInt497++;
         if (i_2_ == 1) this.anInt501 = packet.readUnsignedShort(842397944);
         else if (i_2_ == 2) this.aBoolean507 = true;
@@ -72,7 +72,7 @@ final class Class38 {
         }
     }
 
-    static final void method363(int i) {
+    static final void drawDebugConsole(int i) {
         if (Class168.anInt2254 < 102) Class168.anInt2254 += 6;
         anInt512++;
         if (Class121.anInt1794 != -1 && (Class299_Sub1_Sub1.aLong8694 < Class62.safeTime(-127))) {
@@ -95,10 +95,10 @@ final class Class38 {
             }
             Class121.anInt1794 = -1;
         }
-        if (Class98.anInt1565 != 0) {
-            Class284.anInt3676 -= Class98.anInt1565 * 5;
+        if (Class98.mouseWheelRotation != 0) {
+            Class284.anInt3676 -= Class98.mouseWheelRotation * 5;
             if (Class284.anInt3676 >= Class369_Sub2.anInt8587) Class284.anInt3676 = -1 + Class369_Sub2.anInt8587;
-            Class98.anInt1565 = 0;
+            Class98.mouseWheelRotation = 0;
             if (Class284.anInt3676 < 0) Class284.anInt3676 = 0;
         }
         if (i >= 124) {
@@ -160,7 +160,7 @@ final class Class38 {
                 } else Class59_Sub1.method555(true, 0);
             }
             ClientScript.anInt9699 = 0;
-            Class253.anInt3246 = 0;
+            Class253.keyPressCount = 0;
             Class354.method3466(89);
         }
     }

@@ -91,7 +91,7 @@ final class Class164 {
         }
         if (Class348_Sub42_Sub15.state == LoadState.CREATE_COLLISION_MAPS) {
             for (int i_7_ = 0; i_7_ < 4; i_7_++)
-                Class348_Sub45.collisionMaps[i_7_] = Sprite_Sub1.method988(TextureOpBinary.mapWidth, 1, Class367_Sub4.mapLength);
+                MouseLog.collisionMaps[i_7_] = Sprite_Sub1.method988(TextureOpBinary.mapWidth, 1, Class367_Sub4.mapLength);
         }
         if (Class348_Sub42_Sub15.state == LoadState.OPEN_JS5_GROUPS) {
             Class21.SPRITES = Class369_Sub2.index(false, 8, (byte) -23, 1);

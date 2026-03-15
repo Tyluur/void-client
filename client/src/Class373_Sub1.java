@@ -30,7 +30,7 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
         class348_sub45_sub1.aLong9726 = Class62.safeTime(-115);
         class348_sub45_sub1.anInt9727 = i_2_;
         if (bool) mouseDragged(null);
-        aDeque_7420.method1999(class348_sub45_sub1, -20180);
+        aDeque_7420.addLast(class348_sub45_sub1, -20180);
     }
 
     public final synchronized void mouseReleased(MouseEvent mouseevent) {
@@ -99,9 +99,9 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
         return (anInt7419 & 0x1) != 0;
     }
 
-    final Class348_Sub45 method3596(int i) {
+    final MouseLog removeFirstLog(int i) {
         if (i != 0) mouseReleased(null);
-        return (Class348_Sub45) aDeque_7418.method1997(8);
+        return (MouseLog) aDeque_7418.removeFirst(8);
     }
 
     public final synchronized void mouseMoved(MouseEvent mouseevent) {

@@ -35,7 +35,7 @@ final class Class289 {
     static final void method2193(boolean bool, byte i) {
         anInt3698++;
         Class369_Sub1.method3570(false);
-        if (Class334.method2653(true, Class240.mainLogicStep)) {
+        if (Class334.isAtGameScreen(true, Class240.mainLogicStep)) {
             Class11.anInt193++;
             if (i < -118 && (Class11.anInt193 >= 50 || bool)) {
                 Class11.anInt193 = 0;
@@ -57,7 +57,7 @@ final class Class289 {
     static final int method2194(int i, Class348_Sub42_Sub13 class348_sub42_sub13) {
         anInt3696++;
         if (i != -1) return -42;
-        String string = Class348_Sub15.method2812(i + -43, class348_sub42_sub13);
+        String string = VideoType.method2812(i + -43, class348_sub42_sub13);
         return Class369.aFontMetrics_4962.textWidth(string, Class341.aSpriteArray4234, false);
     }
 

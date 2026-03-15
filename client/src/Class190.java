@@ -145,7 +145,7 @@ final class Class190 {
                 class348_sub12.anInt6735 = i_14_;
                 class348_sub12.anInt6737 = i_20_;
                 class348_sub12.anInt6750 = i_12_;
-                Class289.aDeque_3705.method1999(class348_sub12, -20180);
+                Class289.aDeque_3705.addLast(class348_sub12, -20180);
             }
             return false;
         } catch (RuntimeException runtimeexception) {

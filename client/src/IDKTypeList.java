@@ -65,7 +65,7 @@ final class IDKTypeList {
         Class348_Sub42_Sub14 class348_sub42_sub14 = new Class348_Sub42_Sub14(i, packet.readString((byte) 88), packet.readString((byte) 120), packet.readInt((byte) -126), packet.readInt((byte) -126), packet.readUnsignedByte(255) == 1, packet.readUnsignedByte(255), packet.readUnsignedByte(255));
         int i_5_ = packet.readUnsignedByte(255);
         for (int i_6_ = 0; i_6_ < i_5_; i_6_++)
-            class348_sub42_sub14.aDeque_9629.method1999(new Class348_Sub18(packet.readUnsignedByte(255), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944)), -20180);
+            class348_sub42_sub14.aDeque_9629.addLast(new Class348_Sub18(packet.readUnsignedByte(255), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944), packet.readUnsignedShort(842397944)), -20180);
         class348_sub42_sub14.method3240((byte) 37);
         return class348_sub42_sub14;
     }

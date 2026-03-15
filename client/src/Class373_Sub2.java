@@ -72,7 +72,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
         if (bool && bool_2_) return 4;
         if (bool) return 1;
         if (bool_1_) return 2;
-        if (i != -6345) method3596(-12);
+        if (i != -6345) removeFirstLog(-12);
         if (bool_2_) return 4;
         return 0;
     }
@@ -119,10 +119,10 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
         return anInt7448;
     }
 
-    final Class348_Sub45 method3596(int i) {
+    final MouseLog removeFirstLog(int i) {
         if (i != 0) mouseReleased(null);
         anInt7437++;
-        return (Class348_Sub45) aDeque_7441.method1997(i + 8);
+        return (MouseLog) aDeque_7441.removeFirst(i + 8);
     }
 
     private final void method3606(int i, int i_5_, int i_6_, int i_7_, int i_8_) {
@@ -133,7 +133,7 @@ final class Class373_Sub2 extends Class373 implements MouseListener, MouseMotion
         class348_sub45_sub2.anInt9730 = i_7_;
         class348_sub45_sub2.anInt9736 = i;
         class348_sub45_sub2.aLong9734 = Class62.safeTime(-110);
-        aDeque_7450.method1999(class348_sub45_sub2, -20180);
+        aDeque_7450.addLast(class348_sub45_sub2, -20180);
         if (i_8_ >= -110) method3607(28, null, -68);
     }
 

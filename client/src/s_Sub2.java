@@ -663,7 +663,7 @@ final class s_Sub2 extends Ground {
     final void method3981(Class348_Sub1 class348_sub1, int[] is) {
         try {
             anInt8271++;
-            aDeque_8256.method1999(new Class348_Sub32((this.aOpenGLToolkit_8272), this, class348_sub1, is), -20180);
+            aDeque_8256.addLast(new Class348_Sub32((this.aOpenGLToolkit_8272), this, class348_sub1, is), -20180);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("ed.L(" + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));
         }

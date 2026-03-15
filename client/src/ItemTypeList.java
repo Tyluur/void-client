@@ -98,9 +98,9 @@ final class ItemTypeList {
             for (int i = 0; indexedImages.length > i; i++)
                 Class169.aSpriteArray2260[i] = var_toolkit.method3691(indexedImages[i], true);
             indexedImages = IndexedImage.method1519(index, LoadingScreenOpFactory.hitbarDefaultGroup, 0);
-            Class348_Sub45.aSpriteArray7107 = new Sprite[indexedImages.length];
+            MouseLog.aSpriteArray7107 = new Sprite[indexedImages.length];
             for (int i = 0; indexedImages.length > i; i++)
-                Class348_Sub45.aSpriteArray7107[i] = var_toolkit.method3691(indexedImages[i], true);
+                MouseLog.aSpriteArray7107[i] = var_toolkit.method3691(indexedImages[i], true);
             indexedImages = IndexedImage.method1519(index, Class373_Sub2.timerbarDefaultGroup, 0);
             Option_Sub2.aSpriteArray5857 = new Sprite[indexedImages.length];
             for (int i = 0; indexedImages.length > i; i++)

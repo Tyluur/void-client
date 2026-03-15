@@ -58,7 +58,7 @@ final class Class40 {
     }
 
     static final void method369(int i) {
-        Class348_Sub45.aSpriteArray7107 = null;
+        MouseLog.aSpriteArray7107 = null;
         Option_Sub2.aSpriteArray5857 = null;
         Class348_Sub12.aSpriteArray6742 = null;
         Class240.aSpriteArray4679 = null;

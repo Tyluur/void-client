@@ -16,7 +16,7 @@ final class Class316 {
     static final void method2363(int i) {
         if (i <= -39) {
             anInt3958++;
-            if (Class275.method2066((byte) 106)) {
+            if (Class275.isNotLoading((byte) 106)) {
                 if (Class286_Sub1.aStringArray6200 == null) Class14_Sub3.method249(2);
                 Class168.anInt2254 = 0;
                 Class351.aBoolean4328 = true;

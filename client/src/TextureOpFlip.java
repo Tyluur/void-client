@@ -81,8 +81,8 @@ final class TextureOpFlip extends TextureOp {
                                     continue;
                                 }
                                 if (Class300.aBoolean3819 && Class127_Sub1.aBoolean8386) {
-                                    int i_29_ = (Class258_Sub4.aClass373_8552.method3597(true) - -i_26_);
-                                    int i_30_ = (Class258_Sub4.aClass373_8552.method3594((byte) 101) + i_27_);
+                                    int i_29_ = (Class258_Sub4.mouseMonitor.method3597(true) - -i_26_);
+                                    int i_30_ = (Class258_Sub4.mouseMonitor.method3594((byte) 101) + i_27_);
                                     i_29_ -= Class318_Sub4.anInt6411;
                                     i_30_ -= HitmarkTypeList.anInt2872;
                                     if (TextureOpBoxBlur.anInt9461 > i_29_) i_29_ = TextureOpBoxBlur.anInt9461;
@@ -151,7 +151,7 @@ final class TextureOpFlip extends TextureOp {
                                         }
                                         continue;
                                     }
-                                    if (class46.anInt765 == Class348_Sub45.anInt7102) {
+                                    if (class46.anInt765 == MouseLog.anInt7102) {
                                         Class318_Sub1_Sub3_Sub4.method2464((byte) -7, i_24_, class46.anInt709, class46.anInt789, Class348_Sub8.active, i_25_, TextureOpVerticalGradient.js5TextureSource);
                                         Class152.aBooleanArray2076[i_23_] = true;
                                         Class348_Sub8.active.KA(i, i_12_, i_14_, i_17_);

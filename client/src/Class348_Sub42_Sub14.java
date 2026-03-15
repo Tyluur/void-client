@@ -154,7 +154,7 @@ final class Class348_Sub42_Sub14 extends LinkedNode {
 
     static final void method3243(int i, Class348_Sub47 class348_sub47) {
         anInt9630++;
-        TextureOpMonochrome.aDeque_9201.method1999(class348_sub47, -20180);
+        TextureOpMonochrome.aDeque_9201.addLast(class348_sub47, -20180);
         class348_sub47.anInt7119 = class348_sub47.aClass348_Sub49_Sub2_7116.pos;
         class348_sub47.aClass348_Sub49_Sub2_7116.pos = 0;
         Class348_Sub34.anInt6969 += class348_sub47.anInt7119;

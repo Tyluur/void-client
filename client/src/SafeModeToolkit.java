@@ -196,7 +196,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
 
     final za method3702(int i) {
         ya var_ya = new ya(this, i);
-        aDeque_5123.method1999(var_ya, -20180);
+        aDeque_5123.addLast(var_ya, -20180);
         return var_ya;
     }
 

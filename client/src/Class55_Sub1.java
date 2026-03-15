@@ -44,9 +44,9 @@ final class Class55_Sub1 extends Class55 {
         if (i_3_ > -108) aBoolean5265 = false;
         if (Class27.aHashTable_389.get(i_2_, -6008) == null) {
             if (Class38.aBoolean510) {
-                Class348_Sub15 class348_sub15 = new Class348_Sub15(i_2_, new Class55_Sub1(4096, (Class146.VIDEOS), i_2_), i, bool);
-                class348_sub15.aClass55_Sub1_6768.method509(-92, Class59_Sub2.aStringArray5305[AnimBase.language]);
-                Class27.aHashTable_389.put((byte) 35, i_2_, class348_sub15);
+                VideoType videoType = new VideoType(i_2_, new Class55_Sub1(4096, (Class146.VIDEOS), i_2_), i, bool);
+                videoType.aClass55_Sub1_6768.method509(-92, Class59_Sub2.aStringArray5305[AnimBase.language]);
+                Class27.aHashTable_389.put((byte) 35, i_2_, videoType);
             } else Class303.method2285(bool, (byte) -90, i_2_);
         }
         anInt5268++;

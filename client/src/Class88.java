@@ -57,7 +57,7 @@ final class Class88 {
         }
     }
 
-    static final void method843(byte i) {
+    static final void changeMainState(byte i) {
         anInt1499++;
         if (Class225.anInt2955 != 0 && Class225.anInt2955 != 5) {
             try {
@@ -461,7 +461,7 @@ final class Class88 {
     static final void method847(String string, int i) {
         System.out.println("Error: " + Class341.method2680("\n", true, "%0a", string));
         anInt1492++;
-        if (i != -5192) method843((byte) 17);
+        if (i != -5192) changeMainState((byte) 17);
     }
 
     final Class318_Sub9 method848(int i) {

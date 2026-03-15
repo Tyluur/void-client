@@ -109,13 +109,13 @@ final class Class228 {
         if (Class75.aFloat1249 > Class75.aFloat1247) {
             Class75.aFloat1247 += (double) Class75.aFloat1247 / 30.0;
             if (Class75.aFloat1249 < Class75.aFloat1247) Class75.aFloat1247 = Class75.aFloat1249;
-            Class348_Sub15.method2811(false);
+            VideoType.method2811(false);
             Class75.anInt1255 = (int) Class75.aFloat1247 >> 1;
             Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, 12871);
         } else if (Class75.aFloat1247 > Class75.aFloat1249) {
             Class75.aFloat1247 -= (double) Class75.aFloat1247 / 30.0;
             if (Class75.aFloat1249 > Class75.aFloat1247) Class75.aFloat1247 = Class75.aFloat1249;
-            Class348_Sub15.method2811(false);
+            VideoType.method2811(false);
             Class75.anInt1255 = (int) Class75.aFloat1247 >> 1;
             Class75.aByteArrayArrayArray1251 = Class325.method2596(Class75.anInt1255, i + 12871);
         }
@@ -131,7 +131,7 @@ final class Class228 {
                 Js5TextureSource.anInt4609 = -1;
                 Class48.anInt859 = -1;
             }
-            Class348_Sub15.method2811(false);
+            VideoType.method2811(false);
         }
         if (Class367_Sub9.anInt7379 > 0) {
             Class164.anInt2173--;

@@ -49,7 +49,7 @@ abstract class Class14 implements Interface18 {
         anInt5085++;
         if (Class68.aClass68_1183 != this.aClass68_5088) {
             if (Class68.aClass68_1186 == this.aClass68_5088) {
-                if (this.aClass304_5084 == Class348_Sub45.aClass304_7103) return 34843;
+                if (this.aClass304_5084 == MouseLog.aClass304_7103) return 34843;
                 if (Class108.aClass304_1662 == this.aClass304_5084) return 34842;
                 if (this.aClass304_5084 != TextureOpClamp.aClass304_9471) {
                     if (this.aClass304_5084 != TextureOpBricks.aClass304_9303) {
@@ -59,7 +59,7 @@ abstract class Class14 implements Interface18 {
                     } else return 34846;
                 } else return 34844;
             } else if (this.aClass68_5088 == Class68.aClass68_1187) {
-                if (Class348_Sub45.aClass304_7103 != this.aClass304_5084) {
+                if (MouseLog.aClass304_7103 != this.aClass304_5084) {
                     if (this.aClass304_5084 == Class108.aClass304_1662) return 34836;
                     if (this.aClass304_5084 != TextureOpClamp.aClass304_9471) {
                         if (TextureOpBricks.aClass304_9303 == this.aClass304_5084) return 34840;
@@ -69,7 +69,7 @@ abstract class Class14 implements Interface18 {
                     } else return 34838;
                 } else return 34837;
             }
-        } else if (this.aClass304_5084 != Class348_Sub45.aClass304_7103) {
+        } else if (this.aClass304_5084 != MouseLog.aClass304_7103) {
             if (this.aClass304_5084 != Class108.aClass304_1662) {
                 if (this.aClass304_5084 != TextureOpClamp.aClass304_9471) {
                     if (TextureOpBricks.aClass304_9303 == this.aClass304_5084) return 6409;

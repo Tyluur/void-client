@@ -8,7 +8,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
     boolean aBoolean8741;
     static int anInt8742;
     short aShort8743;
-    static Deque aDeque_8744 = new Deque();
+    static Deque mouseLogs = new Deque();
     byte aByte8745;
     static int anInt8746;
     short aShort8747;
@@ -104,7 +104,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
     public static void method2412(boolean bool) {
         aIndex_8755 = null;
         aClass114_8756 = null;
-        aDeque_8744 = null;
+        mouseLogs = null;
         if (bool != true) method2408((byte) -121);
     }
 
@@ -192,7 +192,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1 {
     static final int method2413(int i, Class348_Sub49_Sub2 class348_sub49_sub2) {
         anInt8749++;
         int i_35_ = class348_sub49_sub2.readBits((byte) -24, 2);
-        if (i != 1) aDeque_8744 = null;
+        if (i != 1) mouseLogs = null;
         int i_36_;
         if (i_35_ != 0) {
             if (i_35_ == 1) i_36_ = class348_sub49_sub2.readBits((byte) -24, 5);

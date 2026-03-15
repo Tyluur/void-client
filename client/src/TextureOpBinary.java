@@ -42,7 +42,7 @@ final class TextureOpBinary extends TextureOp {
     static final int method3055(int i, Class304 class304) {
         anInt9106++;
         if (i < 94) method3054(false, -98, -116);
-        if (class304 != Class348_Sub45.aClass304_7103) {
+        if (class304 != MouseLog.aClass304_7103) {
             if (Class108.aClass304_1662 == class304) return 6408;
             if (class304 == TextureOpClamp.aClass304_9471) return 6406;
             if (TextureOpBricks.aClass304_9303 != class304) {

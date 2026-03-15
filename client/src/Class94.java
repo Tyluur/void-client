@@ -18,7 +18,7 @@ final class Class94 {
         if (i == -14603) OBJECTS = null;
     }
 
-    static final void method867(boolean bool) {
+    static final void doneSlowUpdate(boolean bool) {
         Class348_Sub8.tickScheduler.method1856((byte) 106);
         if (bool != true) OBJECTS = null;
         anInt1535++;

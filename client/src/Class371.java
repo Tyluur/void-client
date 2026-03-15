@@ -22,7 +22,7 @@ final class Class371 {
         }
     }
 
-    static final boolean method3584(int i, int i_4_) {
+    static final boolean isPress(int i, int i_4_) {
         if (i_4_ != 1) return false;
         anInt4523++;
         return i == 0 || i == 1 || i == 2;

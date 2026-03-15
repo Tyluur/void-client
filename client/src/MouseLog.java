@@ -2,7 +2,8 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class348_Sub45 extends Node {
+// Class348_Sub45
+abstract class MouseLog extends Node {
     static int anInt7102 = 1400;
     static Class304 aClass304_7103 = new Class304(3);
     static int anInt7104;
@@ -32,11 +33,11 @@ abstract class Class348_Sub45 extends Node {
         TextureOpIrregularBricks.aBoolean9307 = !(Class9.aToolkit171 instanceof SafeModeToolkit);
     }
 
-    public Class348_Sub45() {
+    public MouseLog() {
         /* empty */
     }
 
-    abstract int method3310(int i);
+    abstract int type(int i);
 
     abstract int method3311(int i);
 
@@ -55,5 +56,5 @@ abstract class Class348_Sub45 extends Node {
         aClass304_7103 = null;
     }
 
-    abstract int method3315(int i);
+    abstract int extra(int i);
 }

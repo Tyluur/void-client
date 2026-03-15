@@ -7,7 +7,7 @@ final class Class182 {
     static int anInt2446;
     static LoadingScreen[] loadingScreens;
     int anInt2448;
-    static Class346 aClass346_2449;
+    static Class346 keyboardMonitor;
     static int anInt2450;
     int anInt2451;
     static int anInt2452;
@@ -41,14 +41,14 @@ final class Class182 {
     }
 
     static final Class50_Sub4 method1374(int i, Packet packet) {
-        if (i < 106) aClass346_2449 = null;
+        if (i < 106) keyboardMonitor = null;
         anInt2453++;
         return new Class50_Sub4(packet.readShort(13638), packet.readShort(13638), packet.readShort(13638), packet.readShort(13638), packet.readMedium(-1), packet.readUnsignedByte(255));
     }
 
     public static void method1375(int i) {
-        if (i != 5616) aClass346_2449 = null;
-        aClass346_2449 = null;
+        if (i != 5616) keyboardMonitor = null;
+        keyboardMonitor = null;
         loadingScreens = null;
     }
 

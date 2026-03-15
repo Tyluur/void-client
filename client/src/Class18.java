@@ -131,7 +131,7 @@ final class Class18 {
         anInt273++;
         if (aClass206_284 != null) {
             if (class348_sub5.method2751(bool) || class348_sub5.method2758(85)) {
-                aDeque_292.method1999(class348_sub5, -20180);
+                aDeque_292.addLast(class348_sub5, -20180);
                 method281((byte) -94);
                 if (method276(false)) {
                     if (anInt286 != -1 && anInt275 != -1) class348_sub5.method2754(anInt275, (byte) 55, anInt286);

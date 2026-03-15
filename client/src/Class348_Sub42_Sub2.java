@@ -38,7 +38,7 @@ final class Class348_Sub42_Sub2 extends LinkedNode implements Interface9 {
         Class348_Sub41.anInt7054 = i_3_;
         Class318_Sub1_Sub4_Sub1.anInt10084 = i_4_;
         Class50_Sub4.aClass47_5262 = Class348_Sub16_Sub1.method2826(15);
-        Class348_Sub45.method3309(-124);
+        MouseLog.method3309(-124);
         StructTypeList.aClass357ArrayArrayArray1148 = (new Class357[i_1_][Class318_Sub7.anInt6451]
                 [Class348_Sub41.anInt7054]);
         Class348_Sub1_Sub1.aGroundArray8801 = new Ground[i_1_];

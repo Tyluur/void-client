@@ -115,14 +115,14 @@ final class BASTypeList {
             int i_13_ = class348_sub42_sub12.anInt9608;
             if (i_13_ < 1000) {
                 class348_sub42_sub12.unlink((byte) 97);
-                if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) TextureOpClamp.aDeque_9478.method1999(class348_sub42_sub12, -20180);
-                else CursorTypeList.aDeque_2187.method1999(class348_sub42_sub12, -20180);
+                if (i_13_ == 15 || i_13_ == 2 || i_13_ == 30 || i_13_ == 49 || i_13_ == 51 || i_13_ == 50 || i_13_ == 6) TextureOpClamp.aDeque_9478.addLast(class348_sub42_sub12, -20180);
+                else CursorTypeList.aDeque_2187.addLast(class348_sub42_sub12, -20180);
             }
         }
         CursorTypeList.aDeque_2187.method1988(TextureOpVerticalGradient.aDeque_9111, (byte) -115);
         TextureOpClamp.aDeque_9478.method1988(TextureOpVerticalGradient.aDeque_9111, (byte) -115);
         if (Class73.anInt4776 > 1) {
-            if (!Class116.shiftClick || !Class182.aClass346_2449.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.aNode_3334.next);
+            if (!Class116.shiftClick || !Class182.keyboardMonitor.method2696(81, -122) || Class73.anInt4776 <= 2) Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.aNode_3334.next);
             else Class316.aClass348_Sub42_Sub12_3963 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.aNode_3334.next.next);
             Class135_Sub2.aClass348_Sub42_Sub12_4846 = ((Class348_Sub42_Sub12) TextureOpVerticalGradient.aDeque_9111.aNode_3334.next);
         } else {
@@ -130,12 +130,12 @@ final class BASTypeList {
             Class135_Sub2.aClass348_Sub42_Sub12_4846 = null;
         }
         int i_14_ = -1;
-        Class348_Sub45 class348_sub45 = (Class348_Sub45) Class318_Sub1_Sub3.aDeque_8744.method1995(4);
-        if (class348_sub45 != null) i_14_ = class348_sub45.method3310(58);
+        MouseLog mouseLog = (MouseLog) Class318_Sub1_Sub3.mouseLogs.method1995(4);
+        if (mouseLog != null) i_14_ = mouseLog.type(58);
         if (Class5_Sub1.aBoolean8335) {
             if (i_14_ == -1) {
-                int i_15_ = Class258_Sub4.aClass373_8552.method3597(true);
-                int i_16_ = Class258_Sub4.aClass373_8552.method3594((byte) 116);
+                int i_15_ = Class258_Sub4.mouseMonitor.method3597(true);
+                int i_16_ = Class258_Sub4.mouseMonitor.method3594((byte) 116);
                 boolean bool = false;
                 if (Class242.aClass348_Sub42_Sub13_3152 != null) {
                     if (Class50_Sub3.anInt5252 + -10 > i_15_ || ((Class50_Sub3.anInt5252 - -Class348_Sub1_Sub1.anInt8806 + 10) < i_15_) || -10 + Class373.anInt4534 > i_16_ || (Class177.anInt4669 + Class373.anInt4534 + 10 < i_16_)) ClientScript.method3277((byte) -48);
@@ -179,8 +179,8 @@ final class BASTypeList {
                 }
             }
             if (i_14_ == 0) {
-                int i_23_ = class348_sub45.method3308((byte) -128);
-                int i_24_ = class348_sub45.method3311(33);
+                int i_23_ = mouseLog.method3308((byte) -128);
+                int i_24_ = mouseLog.method3311(33);
                 if (Class242.aClass348_Sub42_Sub13_3152 != null && Class50_Sub3.anInt5252 <= i_23_ && (Class348_Sub1_Sub1.anInt8806 + Class50_Sub3.anInt5252 >= i_23_) && i_24_ >= Class373.anInt4534 && Class373.anInt4534 + Class177.anInt4669 >= i_24_) {
                     int i_25_ = -1;
                     for (int i_26_ = 0; (Class242.aClass348_Sub42_Sub13_3152.anInt9615 > i_26_); i_26_++) {
@@ -262,8 +262,8 @@ final class BASTypeList {
             }
         } else {
             if (i_14_ == 0 && ((Class318_Sub1_Sub5.anInt8770 == 1 && Class73.anInt4776 > 2) || Class318_Sub1_Sub5.method2485(-100))) i_14_ = 2;
-            if (i_14_ == 2 && Class73.anInt4776 > 0 && class348_sub45 != null) {
-                if (Class289.aClass46_3701 == null && LinkedNode.anInt7059 == 0) Class304.method2291((byte) -124, class348_sub45.method3308((byte) -127), class348_sub45.method3311(-104));
+            if (i_14_ == 2 && Class73.anInt4776 > 0 && mouseLog != null) {
+                if (Class289.aClass46_3701 == null && LinkedNode.anInt7059 == 0) Class304.method2291((byte) -124, mouseLog.method3308((byte) -127), mouseLog.method3311(-104));
                 else Class282.anInt3655 = 2;
             }
             if (i_14_ == 0) {

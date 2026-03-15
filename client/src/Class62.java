@@ -26,9 +26,9 @@ final class Class62 {
     static final void method598(int i) {
         anInt1111++;
         if (i != 9013) method597((byte) 86);
-        for (Class348_Sub15 class348_sub15 = (Class348_Sub15) Class27.aHashTable_389.head(0); class348_sub15 != null; class348_sub15 = (Class348_Sub15) Class27.aHashTable_389.next(0)) {
-            if (!class348_sub15.aBoolean6772) Class64_Sub3.method690((byte) -94, (class348_sub15.anInt6773));
-            else class348_sub15.aBoolean6772 = false;
+        for (VideoType videoType = (VideoType) Class27.aHashTable_389.head(0); videoType != null; videoType = (VideoType) Class27.aHashTable_389.next(0)) {
+            if (!videoType.aBoolean6772) Class64_Sub3.method690((byte) -94, (videoType.anInt6773));
+            else videoType.aBoolean6772 = false;
         }
     }
 

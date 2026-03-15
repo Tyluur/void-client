@@ -38,7 +38,7 @@ final class Class21 {
             double d_6_ = Math.cos(d);
             double d_7_ = Math.sin(d);
             Class247.aDouble3182 = d_4_;
-            Class348_Sub15.aDouble6774 = d_7_;
+            VideoType.aDouble6774 = d_7_;
             Class295.aDouble3761 = d_6_;
             Class348_Sub16_Sub2.aDouble8869 = d_4_ * d_6_;
             if (i != -15902) method288((byte) -120);

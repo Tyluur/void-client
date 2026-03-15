@@ -90,7 +90,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                         if (aByteArray6351[anInt6373] == 0) {
                             Node node = new Node();
                             node.key = anInt6373;
-                            aDeque_6372.method1999(node, -20180);
+                            aDeque_6372.addLast(node, -20180);
                             bool = false;
                         }
                         anInt6373++;
@@ -120,7 +120,7 @@ final class Js5ResourceProvider extends ResourceProvider {
                             Node node = new Node();
                             node.key = anInt6373;
                             bool = false;
-                            aDeque_6372.method1999(node, i + -20179);
+                            aDeque_6372.addLast(node, i + -20179);
                         }
                         anInt6373++;
                     }
@@ -186,7 +186,7 @@ final class Js5ResourceProvider extends ResourceProvider {
             }
             Node node = new Node();
             node.key = i_5_;
-            aDeque_6369.method1999(node, -20180);
+            aDeque_6369.addLast(node, -20180);
         }
     }
 

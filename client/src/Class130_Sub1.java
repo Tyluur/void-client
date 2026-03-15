@@ -151,7 +151,7 @@ final class Class130_Sub1 extends Class130 {
         Class318_Sub1_Sub3_Sub3.anInt10311 = 0;
         NativeToolkit.anInt8026 = 0;
         FloorOverlayTypeList.anInt3431 = 0;
-        Class348_Sub45.anInt7104 = 0;
+        MouseLog.anInt7104 = 0;
         Class283.anInt3656 = 0;
         TextureOpBricks.anInt9295 = 0;
         Model.anInt1132 = 0;
@@ -803,7 +803,7 @@ final class Class130_Sub1 extends Class130 {
         Class31.anInt442 = 0;
         Class238.anInt3132 = 0;
         Option_Sub15.anInt6003 = 0;
-        Class348_Sub15.anInt6777 = 0;
+        VideoType.anInt6777 = 0;
         Class237.anInt3118 = 0;
         Class5_Sub2.anInt8359 = 0;
         Class318.anInt3975 = 0;
@@ -1635,7 +1635,7 @@ final class Class130_Sub1 extends Class130 {
         Class157.anInt2122 = 0;
         Option_Sub17.anInt6020 = 0;
         Class348_Sub9.anInt6672 = 0;
-        Class348_Sub15.anInt6779 = 0;
+        VideoType.anInt6779 = 0;
         OpenGLToolkit.anInt7640 = 0;
         Class248.anInt3195 = 0;
         OpenGLxToolkit.anInt9826 = 0;
@@ -1788,7 +1788,7 @@ final class Class130_Sub1 extends Class130 {
         Class286_Sub3.anInt6226 = 0;
         Player.anInt10562 = 0;
         Toolkit.anInt4576 = 0;
-        Class348_Sub15.anInt6771 = 0;
+        VideoType.anInt6771 = 0;
         OpenGLToolkit.anInt7576 = 0;
         Applet_Sub1.anInt21 = 0;
         Option_Sub17.anInt6022 = 0;
@@ -2343,7 +2343,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub41.anInt7049 = 0;
         LRUHashTable.anInt3879 = 0;
         OpenGLxToolkit.anInt9889 = 0;
-        Class348_Sub15.anInt6778 = 0;
+        VideoType.anInt6778 = 0;
         StructTypeList.anInt1143 = 0;
         OpenGLToolkit.anInt7681 = 0;
         Class258.anInt4861 = 0;

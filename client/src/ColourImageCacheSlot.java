@@ -47,18 +47,18 @@ final class ColourImageCacheSlot extends Node {
                         Class101_Sub2.aLong5745 = Class62.safeTime(-106) + 30000L;
                     }
                 } else if (Class101_Sub2.aLong5745 <= Class62.safeTime(-121)) Option_Sub4.aClass348_Sub26_5881 = Class76.aClass169_1286.method1302(-5255, (Class3.aClass161_125.aString2147));
-                Class348_Sub45 class348_sub45 = ((Class348_Sub45) Class318_Sub1_Sub3.aDeque_8744.method1995(4));
-                if (class348_sub45 != null || (QuickChatPhraseTypeList.aLong4367 < -2000L + Class62.safeTime(-97))) {
+                MouseLog mouseLog = ((MouseLog) Class318_Sub1_Sub3.mouseLogs.method1995(4));
+                if (mouseLog != null || (QuickChatPhraseTypeList.aLong4367 < -2000L + Class62.safeTime(-97))) {
                     Class348_Sub47 class348_sub47 = null;
                     int i_2_ = 0;
-                    for (Class348_Sub45 class348_sub45_3_ = ((Class348_Sub45) r_Sub1.aDeque_10479.method1995(4)); class348_sub45_3_ != null; class348_sub45_3_ = (Class348_Sub45) r_Sub1.aDeque_10479.method1990((byte) 79)) {
+                    for (MouseLog mouseLog_3_ = ((MouseLog) r_Sub1.mouseMovements.method1995(4)); mouseLog_3_ != null; mouseLog_3_ = (MouseLog) r_Sub1.mouseMovements.method1990((byte) 79)) {
                         if (class348_sub47 != null && (class348_sub47.aClass348_Sub49_Sub2_7116.pos - i_2_ >= 240)) break;
-                        class348_sub45_3_.unlink((byte) 107);
-                        int i_4_ = class348_sub45_3_.method3311(-15);
+                        mouseLog_3_.unlink((byte) 107);
+                        int i_4_ = mouseLog_3_.method3311(-15);
                         if (i_4_ >= -1) {
                             if (i_4_ > 65534) i_4_ = 65534;
                         } else i_4_ = -1;
-                        int i_5_ = class348_sub45_3_.method3308((byte) -127);
+                        int i_5_ = mouseLog_3_.method3308((byte) -127);
                         if (i_5_ >= -1) {
                             if (i_5_ > 65534) i_5_ = 65534;
                         } else i_5_ = -1;
@@ -73,7 +73,7 @@ final class ColourImageCacheSlot extends Node {
                             s_Sub2.anInt8270 = i_5_;
                             int i_7_ = i_4_ - ColourImageCache.anInt4032;
                             ColourImageCache.anInt4032 = i_4_;
-                            int i_8_ = (int) ((class348_sub45_3_.method3312((byte) -107) + -QuickChatPhraseTypeList.aLong4367) / 20L);
+                            int i_8_ = (int) ((mouseLog_3_.method3312((byte) -107) + -QuickChatPhraseTypeList.aLong4367) / 20L);
                             if (i_8_ >= 8 || i_6_ < -32 || i_6_ > 31 || i_7_ < -32 || i_7_ > 31) {
                                 if (i_8_ < 32 && i_6_ >= -128 && i_6_ <= 127 && i_7_ >= -128 && i_7_ <= 127) {
                                     i_6_ += 128;
@@ -94,7 +94,7 @@ final class ColourImageCacheSlot extends Node {
                                 i_7_ += 32;
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, (i_7_ + (i_6_ << 6) + (i_8_ << 12)));
                             }
-                            QuickChatPhraseTypeList.aLong4367 = class348_sub45_3_.method3312((byte) -109);
+                            QuickChatPhraseTypeList.aLong4367 = mouseLog_3_.method3312((byte) -109);
                         }
                     }
                     if (class348_sub47 != null) {
@@ -102,19 +102,19 @@ final class ColourImageCacheSlot extends Node {
                         Class348_Sub42_Sub14.method3243(23, class348_sub47);
                     }
                 }
-                if (class348_sub45 != null) {
-                    long l = ((class348_sub45.method3312((byte) -110) + -Class14.aLong5089) / 50L);
-                    Class14.aLong5089 = class348_sub45.method3312((byte) -87);
+                if (mouseLog != null) {
+                    long l = ((mouseLog.method3312((byte) -110) + -Class14.aLong5089) / 50L);
+                    Class14.aLong5089 = mouseLog.method3312((byte) -87);
                     if (l > 32767) l = 32767L;
-                    int i_9_ = class348_sub45.method3311(20);
+                    int i_9_ = mouseLog.method3311(20);
                     if (i_9_ >= 0) {
                         if (i_9_ > 65535) i_9_ = 65535;
                     } else i_9_ = 0;
-                    int i_10_ = class348_sub45.method3308((byte) -128);
+                    int i_10_ = mouseLog.method3308((byte) -128);
                     if (i_10_ < 0) i_10_ = 0;
                     else if (i_10_ > 65535) i_10_ = 65535;
                     int i_11_ = 0;
-                    if (class348_sub45.method3310(i ^ 0x2cee) == 2) i_11_ = 1;
+                    if (mouseLog.type(i ^ 0x2cee) == 2) i_11_ = 1;
                     int i_12_ = (int) l;
                     Class10.anInt182++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class27.aClass351_395, (Class348_Sub23_Sub2.aClass77_9029), i + -11525);
@@ -122,12 +122,12 @@ final class ColourImageCacheSlot extends Node {
                     class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 121, i_9_ << 16 | i_10_);
                     Class348_Sub42_Sub14.method3243(25, class348_sub47);
                 }
-                if (Class253.anInt3246 > 0) {
+                if (Class253.keyPressCount > 0) {
                     TextureOpColourise.anInt9348++;
                     Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class328_Sub1_Sub1.aClass351_8798), (Class348_Sub23_Sub2.aClass77_9029), -111);
-                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 3 * Class253.anInt3246);
-                    for (int i_13_ = 0; (i_13_ < Class253.anInt3246); i_13_++) {
-                        KeyLog keyLog = LRUHashTable.anKeyLogArray3884[i_13_];
+                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, 3 * Class253.keyPressCount);
+                    for (int i_13_ = 0; (i_13_ < Class253.keyPressCount); i_13_++) {
+                        KeyLog keyLog = LRUHashTable.KEYBOARD_EVENT_ARRAY_2[i_13_];
                         long l = ((keyLog.method29((byte) -29) + -Class348_Sub7.aLong6651) / 50L);
                         Class348_Sub7.aLong6651 = keyLog.method29((byte) 106);
                         if (l > 65535L) l = 65535L;
@@ -333,7 +333,7 @@ final class ColourImageCacheSlot extends Node {
                             Class237.aBoolean3103 = false;
                         }
                         for (; ; ) {
-                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class208.aDeque_2707.method1997(8));
+                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class208.aDeque_2707.removeFirst(8));
                             if (class348_sub36 == null) break;
                             Class46 class46 = (class348_sub36.aClass46_6989);
                             if (class46.anInt704 >= 0) {
@@ -343,7 +343,7 @@ final class ColourImageCacheSlot extends Node {
                             Class66.method705(class348_sub36);
                         }
                         for (; ; ) {
-                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Renderer.aDeque_4473.method1997(8));
+                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Renderer.aDeque_4473.removeFirst(8));
                             if (class348_sub36 == null) break;
                             Class46 class46 = (class348_sub36.aClass46_6989);
                             if (class46.anInt704 >= 0) {
@@ -353,7 +353,7 @@ final class ColourImageCacheSlot extends Node {
                             Class66.method705(class348_sub36);
                         }
                         for (; ; ) {
-                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class348_Sub1_Sub2.aDeque_8810.method1997(i + -11424));
+                            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class348_Sub1_Sub2.aDeque_8810.removeFirst(i + -11424));
                             if (class348_sub36 == null) break;
                             Class46 class46 = (class348_sub36.aClass46_6989);
                             if (class46.anInt704 >= 0) {
@@ -364,8 +364,8 @@ final class ColourImageCacheSlot extends Node {
                         }
                         if (Class168.aClass46_2249 == null) LinkedNode.anInt7059 = 0;
                         if (Class289.aClass46_3701 != null) Class347.method2708(-30206);
-                        if (Class192.rights > 0 && Class182.aClass346_2449.method2696(82, i ^ ~0x2cd5) && Class182.aClass346_2449.method2696(81, -121) && Class98.anInt1565 != 0) {
-                            int i_30_ = ((Class132.aPlayer_1907.plane) - Class98.anInt1565);
+                        if (Class192.rights > 0 && Class182.keyboardMonitor.method2696(82, i ^ ~0x2cd5) && Class182.keyboardMonitor.method2696(81, -121) && Class98.mouseWheelRotation != 0) {
+                            int i_30_ = ((Class132.aPlayer_1907.plane) - Class98.mouseWheelRotation);
                             if (i_30_ >= 0) {
                                 if (i_30_ > 3) i_30_ = 3;
                             } else i_30_ = 0;

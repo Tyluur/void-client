@@ -568,7 +568,7 @@ final class s_Sub3 extends Ground {
 
     final void method3981(Class348_Sub1 class348_sub1, int[] is) {
         try {
-            aDeque_8286.method1999(new Class348_Sub38((this.aNativeToolkit_8322), this, class348_sub1, is), -20180);
+            aDeque_8286.addLast(new Class348_Sub38((this.aNativeToolkit_8322), this, class348_sub1, is), -20180);
             anInt8287++;
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qm.L(" + (class348_sub1 != null ? "{...}" : "null") + ',' + (is != null ? "{...}" : "null") + ')'));

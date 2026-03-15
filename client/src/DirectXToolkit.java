@@ -358,7 +358,7 @@ public final class DirectXToolkit extends NativeToolkit {
 
     static final int method3958(int i, Class68 class68, Class304 class304) {
         if (class68 == Class68.aClass68_1183) {
-            if (Class348_Sub45.aClass304_7103 != class304) {
+            if (MouseLog.aClass304_7103 != class304) {
                 if (Class108.aClass304_1662 == class304) return 21;
                 if (TextureOpClamp.aClass304_9471 == class304) return 28;
                 if (TextureOpBricks.aClass304_9303 == class304) return 50;

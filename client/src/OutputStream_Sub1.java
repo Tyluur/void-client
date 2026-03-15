@@ -8,7 +8,7 @@ import java.util.Random;
 
 final class OutputStream_Sub1 extends OutputStream {
     static int anInt92;
-    static Random aRandom93 = new Random();
+    static Random random = new Random();
     static int anInt94;
     static int anInt95;
     static int anInt96;
@@ -135,7 +135,7 @@ final class OutputStream_Sub1 extends OutputStream {
         anIntArray99 = null;
         aClass110_Sub1Array97 = null;
         if (i != -41) anIntArray99 = null;
-        aRandom93 = null;
+        random = null;
     }
 
     static final void method134(byte i) {

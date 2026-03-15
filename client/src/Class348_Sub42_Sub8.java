@@ -19,13 +19,13 @@ abstract class Class348_Sub42_Sub8 extends LinkedNode {
 
     static final boolean method3194(int i, int i_0_, byte i_1_) {
         anInt9551++;
-        if (i_1_ <= 118) method3196(122, -41);
+        if (i_1_ <= 118) isLoggedOut(122, -41);
         return false;
     }
 
     abstract boolean method3195(int i);
 
-    static final boolean method3196(int i, int i_2_) {
+    static final boolean isLoggedOut(int i, int i_2_) {
         if (i_2_ >= -39) return false;
         anInt9546++;
         return i == 3 || i == 4 || i == 5 || i == 6;
@@ -81,7 +81,7 @@ abstract class Class348_Sub42_Sub8 extends LinkedNode {
 
     public static void method3199(int i) {
         aClass114_9550 = null;
-        if (i < 17) method3196(60, -85);
+        if (i < 17) isLoggedOut(60, -85);
         aClass114_9552 = null;
         aClass351_9553 = null;
         aString9554 = null;

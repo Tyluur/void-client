@@ -85,7 +85,7 @@ final class Class348_Sub42_Sub17 extends LinkedNode {
                 synchronized (Class135_Sub2.animSkeletons) {
                     animBase = new AnimBase(i_7_, Class135_Sub2.animSkeletons.fileReady((byte) 73, i_7_));
                 }
-                deque.method1999(animBase, -20180);
+                deque.addLast(animBase, -20180);
             }
             this.aAnimFrameArray9673[is[i_5_]] = new AnimFrame(is_6_, animBase);
         }

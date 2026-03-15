@@ -8,7 +8,7 @@ abstract class Class346 {
     static int anInt4276;
     static int anInt4277;
 
-    abstract void method2695(int i);
+    abstract void record(int i);
 
     abstract boolean method2696(int i, int i_0_);
 
@@ -16,7 +16,7 @@ abstract class Class346 {
         /* empty */
     }
 
-    abstract KeyLog method2697(int i);
+    abstract KeyLog removeFirstRecorded(int i);
 
     abstract void method2698(int i);
 

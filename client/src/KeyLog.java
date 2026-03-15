@@ -6,7 +6,7 @@
 interface KeyLog {
     int method26(int i);
 
-    int method27(int i);
+    int type(int i);
 
     // method28
     char getKeyChar(byte i);

@@ -91,7 +91,7 @@ final class Class22 {
         if (i >= -40) method295(-6, -74, -119, null, -35, null, 125, 67, -102);
     }
 
-    static final void method294(Toolkit var_toolkit, int i) {
+    static final void updateObjSprites(Toolkit var_toolkit, int i) {
         anInt328++;
         if (Class5_Sub1_Sub1.aDeque_9931.method1998(i) != 0) {
             if (Class316.clientOptions.aClass239_Sub25_7271.method1829(-32350) == 0) {

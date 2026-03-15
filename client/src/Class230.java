@@ -35,7 +35,7 @@ final class Class230 {
                         int i_24_ = -Class348_Sub21.anInt6849 + i_5_;
                         int i_25_ = (int) ((Class247.aDouble3182 * (double) i_22_ + (double) i_23_ * GfxTypeList.aDouble3980 + (double) i_24_ * Class357.aDouble4404) * (double) i_20_ / (double) i_14_);
                         int i_26_ = (int) ((((double) i_24_ * Texture.aDouble9531) + (((double) i_22_ * Class348_Sub23_Sub2.aDouble9023) + ((double) i_23_ * Class295.aDouble3761))) * (double) i_21_ / (double) i_14_);
-                        double d = ((double) i_24_ * Class348_Sub16_Sub2.aDouble8869 + (Class348_Sub15.aDouble6774 * (double) i_23_ + (double) i_22_ * Class59.aDouble1083));
+                        double d = ((double) i_24_ * Class348_Sub16_Sub2.aDouble8869 + (VideoType.aDouble6774 * (double) i_23_ + (double) i_22_ * Class59.aDouble1083));
                         int i_27_ = i_25_ + Class211.anInt2747 - Class328.anInt4100;
                         int i_28_ = (Class348_Sub42_Sub9_Sub1.anInt10444 + i_26_ + -Class348_Sub3.anInt6568);
                         int i_29_ = Class59_Sub1.anInt5283 + i_27_;

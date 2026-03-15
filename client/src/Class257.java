@@ -23,14 +23,14 @@ final class Class257 {
             else {
                 Class348_Sub28 class348_sub28 = new Class348_Sub28();
                 class348_sub28.anInterface19_6908 = interface19;
-                A_DEQUE___3297.method1999(class348_sub28, -20180);
+                A_DEQUE___3297.addLast(class348_sub28, -20180);
             }
         }
     }
 
     static final synchronized void method1948(byte i) {
         for (; ; ) {
-            Class348_Sub28 class348_sub28 = (Class348_Sub28) A_DEQUE___3297.method1997(8);
+            Class348_Sub28 class348_sub28 = (Class348_Sub28) A_DEQUE___3297.removeFirst(8);
             if (class348_sub28 == null) break;
             class348_sub28.anInterface19_6908.w(true);
             class348_sub28.unlink((byte) 69);

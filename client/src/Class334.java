@@ -21,7 +21,7 @@ final class Class334 {
 
     static final boolean method2647(boolean bool, char c) {
         anInt4161++;
-        if (bool != true) method2653(true, 83);
+        if (bool != true) isAtGameScreen(true, 83);
         return c >= '0' && c <= '9';
     }
 
@@ -91,7 +91,7 @@ final class Class334 {
         return i_22_ & 0xfc00 | 0x380 & i_21_ | i_20_ & 0x7f;
     }
 
-    static final boolean method2653(boolean bool, int i) {
+    static final boolean isAtGameScreen(boolean bool, int i) {
         if (bool != true) anIntArray4152 = null;
         anInt4164++;
         return i == 10 || i == 11 || i == 12;

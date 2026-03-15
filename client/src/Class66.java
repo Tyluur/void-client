@@ -52,8 +52,8 @@ final class Class66 {
                     i_1_ = Class168.aClass46_2249.anInt800;
                     i_2_ = Class168.aClass46_2249.anInt750;
                 }
-                anIntArray1164[0] = Class258_Sub4.aClass373_8552.method3597(true) - i_1_;
-                anIntArray1164[1] = (Class258_Sub4.aClass373_8552.method3594((byte) 80) - i_2_);
+                anIntArray1164[0] = Class258_Sub4.mouseMonitor.method3597(true) - i_1_;
+                anIntArray1164[1] = (Class258_Sub4.mouseMonitor.method3594((byte) 80) - i_2_);
             }
             method711(clientScript, 200000, -1);
         }
@@ -475,7 +475,7 @@ final class Class66 {
             }
         } else if (i < 5200) {
             if (i == 5100) {
-                if (Class182.aClass346_2449.method2696(86, -121)) anIntArray1149[anInt1173++] = 1;
+                if (Class182.keyboardMonitor.method2696(86, -121)) anIntArray1149[anInt1173++] = 1;
                 else {
                     anIntArray1149[anInt1173++] = 0;
                     return;
@@ -483,7 +483,7 @@ final class Class66 {
                 return;
             }
             if (i == 5101) {
-                if (Class182.aClass346_2449.method2696(82, -126)) anIntArray1149[anInt1173++] = 1;
+                if (Class182.keyboardMonitor.method2696(82, -126)) anIntArray1149[anInt1173++] = 1;
                 else {
                     anIntArray1149[anInt1173++] = 0;
                     return;
@@ -491,7 +491,7 @@ final class Class66 {
                 return;
             }
             if (i == 5102) {
-                if (Class182.aClass346_2449.method2696(81, -128)) anIntArray1149[anInt1173++] = 1;
+                if (Class182.keyboardMonitor.method2696(81, -128)) anIntArray1149[anInt1173++] = 1;
                 else {
                     anIntArray1149[anInt1173++] = 0;
                     return;
@@ -1427,7 +1427,7 @@ final class Class66 {
                 int i_149_ = anIntArray1149[--anInt1173];
                 int i_150_ = Class316.clientOptions.aClass239_Sub26_7260.method1838(-32350);
                 if (i_149_ != i_150_) {
-                    if (Class334.method2653(true, Class240.mainLogicStep)) {
+                    if (Class334.isAtGameScreen(true, Class240.mainLogicStep)) {
                         if (i_150_ == 0 && Class267.anInt3428 != -1) {
                             Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 94, (Class59_Sub2_Sub1.MUSIC), i_149_);
                             TextureOpTiledSprite.method3093(87);
@@ -1546,7 +1546,7 @@ final class Class66 {
                 int i_158_ = anIntArray1149[--anInt1173];
                 int i_159_ = Class316.clientOptions.aClass239_Sub26_7245.method1838(-32350);
                 if (i_158_ != i_159_ && Class267.anInt3428 == Class345.anInt4270) {
-                    if (!Class334.method2653(true, Class240.mainLogicStep)) {
+                    if (!Class334.isAtGameScreen(true, Class240.mainLogicStep)) {
                         if (i_159_ == 0) {
                             Class348_Sub1_Sub3.method2732(0, Class267.anInt3428, false, 127, (Class59_Sub2_Sub1.MUSIC), i_158_);
                             TextureOpTiledSprite.method3093(118);
@@ -3449,7 +3449,7 @@ final class Class66 {
                         class348_sub36.aClass46_6989 = class46;
                         class348_sub36.anObjectArray6987 = class46.anObjectArray727;
                         class348_sub36.anInt6988 = anInt1177 + 1;
-                        Class348_Sub1_Sub2.aDeque_8810.method1999(class348_sub36, -20180);
+                        Class348_Sub1_Sub2.aDeque_8810.addLast(class348_sub36, -20180);
                         return;
                     }
                     return;
@@ -3991,11 +3991,11 @@ final class Class66 {
                     return;
                 }
                 if (i == 3342) {
-                    anIntArray1149[anInt1173++] = Class258_Sub4.aClass373_8552.method3597(true);
+                    anIntArray1149[anInt1173++] = Class258_Sub4.mouseMonitor.method3597(true);
                     return;
                 }
                 if (i == 3343) {
-                    anIntArray1149[anInt1173++] = Class258_Sub4.aClass373_8552.method3594((byte) 127);
+                    anIntArray1149[anInt1173++] = Class258_Sub4.mouseMonitor.method3594((byte) 127);
                     return;
                 }
                 if (i == 3344) {
@@ -4019,9 +4019,9 @@ final class Class66 {
                     return;
                 }
                 if (i == 3351) {
-                    anIntArray1149[anInt1173++] = Class258_Sub4.aClass373_8552.method3595(-83) ? 1 : 0;
-                    anIntArray1149[anInt1173++] = Class258_Sub4.aClass373_8552.method3588(-121) ? 1 : 0;
-                    anIntArray1149[anInt1173++] = Class258_Sub4.aClass373_8552.method3590((byte) 125) ? 1 : 0;
+                    anIntArray1149[anInt1173++] = Class258_Sub4.mouseMonitor.method3595(-83) ? 1 : 0;
+                    anIntArray1149[anInt1173++] = Class258_Sub4.mouseMonitor.method3588(-121) ? 1 : 0;
+                    anIntArray1149[anInt1173++] = Class258_Sub4.mouseMonitor.method3590((byte) 125) ? 1 : 0;
                     return;
                 }
             } else if (i < 3500) {

@@ -31,7 +31,7 @@ final class Class275 {
         if (i != 31913) anInt3550 = 52;
     }
 
-    static final boolean method2066(byte i) {
+    static final boolean isNotLoading(byte i) {
         anInt3553++;
         if (Class240.mainLogicStep < 1) return false;
         if (i < 101) method2065(66);

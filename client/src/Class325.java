@@ -396,7 +396,7 @@ final class Class325 {
                     if (i_76_ >= 2000) i_76_ -= 2000;
                     long l = (class348_sub42_sub12.aLong9605);
                     if (i_76_ == 19) {
-                        if (Class192.rights <= 0 || !Class182.aClass346_2449.method2696(82, -125) || !Class182.aClass346_2449.method2696(81, -126)) {
+                        if (Class192.rights <= 0 || !Class182.keyboardMonitor.method2696(82, -125) || !Class182.keyboardMonitor.method2696(81, -126)) {
                             Class348_Sub47 class348_sub47 = Class348_Sub14.method2807(i_75_, i_74_, (byte) -110, i_77_);
                             if (i_77_ == 1) {
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, -1);
@@ -428,7 +428,7 @@ final class Class325 {
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub42_Sub8.aClass351_9553), (Class348_Sub23_Sub2.aClass77_9029), -113);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class90.regionTileY + i_75_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(120, i_74_ + za_Sub2.regionTileX);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) 117, (!Class182.aClass346_2449.method2696(82, -122) ? 0 : 1));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) 117, (!Class182.keyboardMonitor.method2696(82, -122) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, 0x7fffffff & (int) (l >>> 32));
                         Class348_Sub42_Sub14.method3243(117, class348_sub47);
                         Class309.method2307(i_75_, l, i_74_, 51);
@@ -461,7 +461,7 @@ final class Class325 {
                             Option_Sub20.anInt6048 = 2;
                             Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub42_Sub18.aClass351_9684, Class348_Sub23_Sub2.aClass77_9029, -126));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(81, i_77_);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -126) ? 0 : 1));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.keyboardMonitor.method2696(82, -126) ? 0 : 1));
                             Class348_Sub42_Sub14.method3243(116, class348_sub47);
                             Class298.method2252(true, (player.anIntArray10320[0]), (player.anIntArray10317[0]), (byte) -89, player.method2436((byte) 106), 0, player.method2436((byte) 43), -2, 0);
                         }
@@ -477,7 +477,7 @@ final class Class325 {
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-107, i_77_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class9.anInt169, (byte) 3);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class90.regionTileY + i_75_);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -126) ? 0 : 1));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.keyboardMonitor.method2696(82, -126) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(90, Class301.anInt3829);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeIntMiddle(Class149.anInt2046, (byte) 44);
                         Class348_Sub42_Sub14.method3243(120, class348_sub47);
@@ -496,7 +496,7 @@ final class Class325 {
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class190.aClass351_2539, (Class348_Sub23_Sub2.aClass77_9029), -110);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, Class90.regionTileY + i_75_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-110, i_74_ + za_Sub2.regionTileX);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -44, (!Class182.aClass346_2449.method2696(82, -122) ? 0 : 1));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -44, (!Class182.keyboardMonitor.method2696(82, -122) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(97, i_77_);
                         Class348_Sub42_Sub14.method3243(118, class348_sub47);
                         Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
@@ -512,7 +512,7 @@ final class Class325 {
                             Npc npc = (class348_sub22.aNpc_6859);
                             Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class318_Sub1_Sub5_Sub1.aClass351_10134, Class348_Sub23_Sub2.aClass77_9029, -96));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_77_, (byte) 3);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 124, (Class182.aClass346_2449.method2696(82, -121) ? 1 : 0));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 124, (Class182.keyboardMonitor.method2696(82, -121) ? 1 : 0));
                             Class348_Sub42_Sub14.method3243(117, class348_sub47);
                             Class298.method2252(true, (npc.anIntArray10320[0]), (npc.anIntArray10317[0]), (byte) -100, npc.method2436((byte) 68), 0, npc.method2436((byte) 106), -2, 0);
                         }
@@ -527,7 +527,7 @@ final class Class325 {
                             Class26.anInt385 = i_73_;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Option_Sub9.aClass351_5929), (Class348_Sub23_Sub2.aClass77_9029), -94);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, i_77_);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -108, (Class182.aClass346_2449.method2696(82, -124) ? 1 : 0));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -108, (Class182.keyboardMonitor.method2696(82, -124) ? 1 : 0));
                             Class348_Sub42_Sub14.method3243(119, class348_sub47);
                             Class298.method2252(true, (player.anIntArray10320[0]), (player.anIntArray10317[0]), (byte) -128, player.method2436((byte) 53), 0, player.method2436((byte) 110), -2, 0);
                         }
@@ -539,7 +539,7 @@ final class Class325 {
                         Class178.anInt2336++;
                         Option_Sub20.anInt6048 = 2;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((JavaMatrix.aClass351_5677), (Class348_Sub23_Sub2.aClass77_9029), -83);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 86, (!Class182.aClass346_2449.method2696(82, -121) ? 0 : 1));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 86, (!Class182.keyboardMonitor.method2696(82, -121) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(31, (int) (l >>> 32) & 0x7fffffff);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-104, za_Sub2.regionTileX + i_74_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class90.regionTileY + i_75_, (byte) 3);
@@ -559,14 +559,14 @@ final class Class325 {
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, Class9.anInt169);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeInt((byte) 108, Class149.anInt2046);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_77_, (byte) 3);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -89, (!Class182.aClass346_2449.method2696(82, -127) ? 0 : 1));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -89, (!Class182.keyboardMonitor.method2696(82, -127) ? 0 : 1));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-116, Class301.anInt3829);
                             Class348_Sub42_Sub14.method3243(122, class348_sub47);
                             Class298.method2252(true, (npc.anIntArray10320[0]), (npc.anIntArray10317[0]), (byte) -107, npc.method2436((byte) 88), 0, npc.method2436((byte) 108), -2, 0);
                         }
                     }
                     if (i_76_ == 12) {
-                        if (Class192.rights > 0 && Class182.aClass346_2449.method2696(82, -127) && Class182.aClass346_2449.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (Class132.aPlayer_1907.plane), za_Sub2.regionTileX - -i_74_);
+                        if (Class192.rights > 0 && Class182.keyboardMonitor.method2696(82, -127) && Class182.keyboardMonitor.method2696(81, -126)) Class361.method3502(i_75_ + Class90.regionTileY, 2, (Class132.aPlayer_1907.plane), za_Sub2.regionTileX - -i_74_);
                         else {
                             Class93.anInt1534 = i_72_;
                             Class26.anInt385 = i_73_;
@@ -602,7 +602,7 @@ final class Class325 {
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_77_, (byte) 3);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class301.anInt3829, (byte) 3);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeIntInverseMiddle(Class149.anInt2046, -4086);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -89, (Class182.aClass346_2449.method2696(82, -127) ? 1 : 0));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -89, (Class182.keyboardMonitor.method2696(82, -127) ? 1 : 0));
                             Class348_Sub42_Sub14.method3243(-33, class348_sub47);
                             Class298.method2252(true, (player.anIntArray10320[0]), (player.anIntArray10317[0]), (byte) -88, player.method2436((byte) 44), 0, player.method2436((byte) 110), -2, 0);
                         }
@@ -616,7 +616,7 @@ final class Class325 {
                             Option_Sub20.anInt6048 = 2;
                             Class26.anInt385 = i_73_;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class299_Sub1_Sub2.aClass351_8706), (Class348_Sub23_Sub2.aClass77_9029), -84);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -125, (Class182.aClass346_2449.method2696(82, -126) ? 1 : 0));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -125, (Class182.keyboardMonitor.method2696(82, -126) ? 1 : 0));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_77_, (byte) 3);
                             Class348_Sub42_Sub14.method3243(30, class348_sub47);
                             Class298.method2252(true, (player.anIntArray10320[0]), (player.anIntArray10317[0]), (byte) -91, player.method2436((byte) 70), 0, player.method2436((byte) 125), -2, 0);
@@ -630,7 +630,7 @@ final class Class325 {
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148(Class193.aClass351_2587, (Class348_Sub23_Sub2.aClass77_9029), -112);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class90.regionTileY + i_75_, (byte) 3);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -96, (Class182.aClass346_2449.method2696(82, -125) ? 1 : 0));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -96, (Class182.keyboardMonitor.method2696(82, -125) ? 1 : 0));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, za_Sub2.regionTileX + i_74_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(68, 0x7fffffff & (int) (l >>> 32));
                         Class348_Sub42_Sub14.method3243(-68, class348_sub47);
@@ -646,7 +646,7 @@ final class Class325 {
                             Class93.anInt1534 = i_72_;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class52.aClass351_4905), (Class348_Sub23_Sub2.aClass77_9029), -113);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 60, (!Class182.aClass346_2449.method2696(82, -121) ? 0 : 1));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) 60, (!Class182.keyboardMonitor.method2696(82, -121) ? 0 : 1));
                             Class348_Sub42_Sub14.method3243(118, class348_sub47);
                             Class298.method2252(true, (player.anIntArray10320[0]), (player.anIntArray10317[0]), (byte) -106, player.method2436((byte) 45), 0, player.method2436((byte) 63), -2, 0);
                         }
@@ -665,7 +665,7 @@ final class Class325 {
                             Class296.anInt3768++;
                             Node.anInt4292 = 0;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class251.aClass351_3232), (Class348_Sub23_Sub2.aClass77_9029), -84);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -128) ? 0 : 1));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.keyboardMonitor.method2696(82, -128) ? 0 : 1));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-99, i_77_);
                             Class348_Sub42_Sub14.method3243(127, class348_sub47);
                             Class298.method2252(true, (player.anIntArray10320[0]), (player.anIntArray10317[0]), (byte) -106, player.method2436((byte) 100), 0, player.method2436((byte) 99), -2, 0);
@@ -681,7 +681,7 @@ final class Class325 {
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, za_Sub2.regionTileX + i_74_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_75_ + Class90.regionTileY);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) 120, (!Class182.aClass346_2449.method2696(82, -123) ? 0 : 1));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) 120, (!Class182.keyboardMonitor.method2696(82, -123) ? 0 : 1));
                         Class348_Sub42_Sub14.method3243(120, class348_sub47);
                         Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
                     }
@@ -711,7 +711,7 @@ final class Class325 {
                             Option_Sub20.anInt6048 = 2;
                             Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(RuntimeException_Sub1.aClass351_4601, Class348_Sub23_Sub2.aClass77_9029, -123));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -67, (Class182.aClass346_2449.method2696(82, -122) ? 1 : 0));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -67, (Class182.keyboardMonitor.method2696(82, -122) ? 1 : 0));
                             Class348_Sub42_Sub14.method3243(119, class348_sub47);
                             Class298.method2252(true, (npc.anIntArray10320[0]), (npc.anIntArray10317[0]), (byte) -111, npc.method2436((byte) 65), 0, npc.method2436((byte) 42), -2, 0);
                         }
@@ -727,7 +727,7 @@ final class Class325 {
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, za_Sub2.regionTileX + i_74_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeIntLittle(-128, Class149.anInt2046);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-82, Class90.regionTileY + i_75_);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -74, (!Class182.aClass346_2449.method2696(82, -125) ? 0 : 1));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -74, (!Class182.keyboardMonitor.method2696(82, -125) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class9.anInt169, (byte) 3);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle((int) (l >>> 32) & 0x7fffffff, (byte) 3);
                         Class348_Sub42_Sub14.method3243(117, class348_sub47);
@@ -742,7 +742,7 @@ final class Class325 {
                             Option_Sub20.anInt6048 = 2;
                             Class98.anInt1570++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class175.aClass351_2315), (Class348_Sub23_Sub2.aClass77_9029), -90);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -121) ? 0 : 1));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.keyboardMonitor.method2696(82, -121) ? 0 : 1));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(52, i_77_);
                             Class348_Sub42_Sub14.method3243(-127, class348_sub47);
                             Class298.method2252(true, (player.anIntArray10320[0]), (player.anIntArray10317[0]), (byte) -93, player.method2436((byte) 119), 0, player.method2436((byte) 54), -2, 0);
@@ -757,7 +757,7 @@ final class Class325 {
                             Class26.anInt385 = i_73_;
                             Node.anInt4292 = 0;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((SkyBoxSphereTypeList.aClass351_364), (Class348_Sub23_Sub2.aClass77_9029), -113);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -126) ? 0 : 1));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.keyboardMonitor.method2696(82, -126) ? 0 : 1));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
                             Class348_Sub42_Sub14.method3243(121, class348_sub47);
                             Class298.method2252(true, (player.anIntArray10320[0]), (player.anIntArray10317[0]), (byte) -123, player.method2436((byte) 96), 0, player.method2436((byte) 97), -2, 0);
@@ -772,7 +772,7 @@ final class Class325 {
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub49_Sub1.aClass351_9749), (Class348_Sub23_Sub2.aClass77_9029), -81);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(106, i_74_ - -za_Sub2.regionTileX);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.aClass346_2449.method2696(82, -128) ? 0 : 1));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, (!Class182.keyboardMonitor.method2696(82, -128) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, i_75_ - -Class90.regionTileY);
                         Class348_Sub42_Sub14.method3243(116, class348_sub47);
                         Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
@@ -784,7 +784,7 @@ final class Class325 {
                         Option_Sub20.anInt6048 = 2;
                         Class93.anInt1534 = i_72_;
                         Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class348_Sub42_Sub17.aClass351_9679), (Class348_Sub23_Sub2.aClass77_9029), -98);
-                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -83, (!Class182.aClass346_2449.method2696(82, -128) ? 0 : 1));
+                        class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -83, (!Class182.keyboardMonitor.method2696(82, -128) ? 0 : 1));
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, za_Sub2.regionTileX + i_74_);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_75_ + Class90.regionTileY, (byte) 3);
                         class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, 0x7fffffff & (int) (l >>> 32));
@@ -802,7 +802,7 @@ final class Class325 {
                             Class328_Sub2.anInt6516++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class339.aClass351_4207), (Class348_Sub23_Sub2.aClass77_9029), -81);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, i_77_);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -119, (!Class182.aClass346_2449.method2696(82, -123) ? 0 : 1));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -119, (!Class182.keyboardMonitor.method2696(82, -123) ? 0 : 1));
                             Class348_Sub42_Sub14.method3243(-85, class348_sub47);
                             Class298.method2252(true, (npc.anIntArray10320[0]), (npc.anIntArray10317[0]), (byte) -121, npc.method2436((byte) 99), 0, npc.method2436((byte) 99), -2, 0);
                         }
@@ -825,7 +825,7 @@ final class Class325 {
                             Class26.anInt385 = i_73_;
                             Class348_Sub42_Sub13.anInt9620++;
                             Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class202.aClass351_2661), (Class348_Sub23_Sub2.aClass77_9029), -117);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -101, (!Class182.aClass346_2449.method2696(82, -125) ? 0 : 1));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteSubtract((byte) -101, (!Class182.keyboardMonitor.method2696(82, -125) ? 0 : 1));
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-69, za_Sub2.regionTileX + i_74_);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class90.regionTileY + i_75_, (byte) 3);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
@@ -843,7 +843,7 @@ final class Class325 {
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle((Class132.aPlayer_1907.anInt10290), (byte) 3);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(Class301.anInt3829, (byte) 3);
                             class348_sub47.aClass348_Sub49_Sub2_7116.writeIntInverseMiddle(Class149.anInt2046, -4086);
-                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -29, (Class182.aClass346_2449.method2696(82, -121) ? 1 : 0));
+                            class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -29, (Class182.keyboardMonitor.method2696(82, -121) ? 1 : 0));
                             Class348_Sub42_Sub14.method3243(-40, class348_sub47);
                         }
                         if (i_76_ == 18 || i_76_ == 1011) Class348_Sub9.method2780(i_74_, (class348_sub42_sub12.aString9601), (byte) 5, i_77_, i_75_);
@@ -869,7 +869,7 @@ final class Class325 {
                                     Class26.anInt385 = i_73_;
                                     Node.anInt4292 = 0;
                                     Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class348_Sub18.aClass351_6814, Class348_Sub23_Sub2.aClass77_9029, -125));
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, !Class182.aClass346_2449.method2696(82, -125) ? 0 : 1);
+                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, !Class182.keyboardMonitor.method2696(82, -125) ? 0 : 1);
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_77_, (byte) 3);
                                     Class348_Sub42_Sub14.method3243(-37, class348_sub47);
                                     Class298.method2252(true, (npc.anIntArray10320[0]), (npc.anIntArray10317[0]), (byte) -85, npc.method2436((byte) 124), 0, npc.method2436((byte) 84), -2, 0);
@@ -885,7 +885,7 @@ final class Class325 {
                                     Class26.anInt385 = i_73_;
                                     Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Texture.aClass351_9533, Class348_Sub23_Sub2.aClass77_9029, -115));
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-88, i_77_);
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -111, Class182.aClass346_2449.method2696(82, -127) ? 1 : 0);
+                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -111, Class182.keyboardMonitor.method2696(82, -127) ? 1 : 0);
                                     Class348_Sub42_Sub14.method3243(125, class348_sub47);
                                     Class298.method2252(true, (player.anIntArray10320[0]), (player.anIntArray10317[0]), (byte) -98, player.method2436((byte) 83), 0, player.method2436((byte) 91), -2, 0);
                                 }
@@ -900,7 +900,7 @@ final class Class325 {
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-96, Class90.regionTileY + i_75_);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAddLittle(4325, 0x7fffffff & (int) (l >>> 32));
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(i_74_ - -za_Sub2.regionTileX, (byte) 3);
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -91, (!Class182.aClass346_2449.method2696(82, -127) ? 0 : 1));
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeByteAdd((byte) -91, (!Class182.keyboardMonitor.method2696(82, -127) ? 0 : 1));
                                 Class348_Sub42_Sub14.method3243(118, class348_sub47);
                                 Class309.method2307(i_75_, l, i_74_, 24);
                             }
@@ -915,7 +915,7 @@ final class Class325 {
                                     Class73.anInt4773++;
                                     Class348_Sub47 class348_sub47 = (Class286_Sub3.method2148(Class43.aClass351_618, Class348_Sub23_Sub2.aClass77_9029, -117));
                                     class348_sub47.aClass348_Sub49_Sub2_7116.writeShort((byte) 107, i_77_);
-                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class182.aClass346_2449.method2696(82, -124) ? 1 : 0);
+                                    class348_sub47.aClass348_Sub49_Sub2_7116.writeByte(false, Class182.keyboardMonitor.method2696(82, -124) ? 1 : 0);
                                     Class348_Sub42_Sub14.method3243(-25, class348_sub47);
                                     Class298.method2252(true, (npc.anIntArray10320[0]), (npc.anIntArray10317[0]), (byte) -107, npc.method2436((byte) 104), 0, npc.method2436((byte) 50), -2, 0);
                                 }
@@ -930,7 +930,7 @@ final class Class325 {
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-108, i_75_ - -Class90.regionTileY);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortAdd(-70, i_77_);
                                 class348_sub47.aClass348_Sub49_Sub2_7116.writeShortLittle(za_Sub2.regionTileX + i_74_, (byte) 3);
-                                class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -70, (!Class182.aClass346_2449.method2696(82, -128) ? 0 : 1));
+                                class348_sub47.aClass348_Sub49_Sub2_7116.writeByteInverse((byte) -70, (!Class182.keyboardMonitor.method2696(82, -128) ? 0 : 1));
                                 Class348_Sub42_Sub14.method3243(-22, class348_sub47);
                                 Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
                             }

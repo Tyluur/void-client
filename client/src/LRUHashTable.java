@@ -8,7 +8,7 @@ final class LRUHashTable {
     static int anInt3881;
     static byte[][] aByteArrayArray3882;
     static int[] anIntArray3883;
-    static KeyLog[] anKeyLogArray3884 = new KeyLog[75];
+    static KeyLog[] KEYBOARD_EVENT_ARRAY_2 = new KeyLog[75];
     static int anInt3885;
     static int anInt3886;
     private LinkedNode aLinkedNode_3887 = new LinkedNode();
@@ -80,7 +80,7 @@ final class LRUHashTable {
     public static void method2306(byte i) {
         if (i != -90) method2306((byte) -74);
         anIntArray3883 = null;
-        anKeyLogArray3884 = null;
+        KEYBOARD_EVENT_ARRAY_2 = null;
         aByteArrayArray3882 = null;
     }
 

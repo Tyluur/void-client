@@ -24,7 +24,7 @@ final class Class169 implements Runnable {
             Class348_Sub26 class348_sub26;
             synchronized (aDeque_2258) {
                 Node node;
-                for (node = aDeque_2258.method1997(8); node == null; node = aDeque_2258.method1997(8)) {
+                for (node = aDeque_2258.removeFirst(8); node == null; node = aDeque_2258.removeFirst(8)) {
                     try {
                         aDeque_2258.wait();
                     } catch (InterruptedException interruptedexception) {
@@ -96,7 +96,7 @@ final class Class169 implements Runnable {
     private final void method1304(int i, Node node) {
         if (i != 1000) method1303((byte) 95);
         synchronized (aDeque_2258) {
-            aDeque_2258.method1999(node, -20180);
+            aDeque_2258.addLast(node, -20180);
             aDeque_2258.notify();
         }
         anInt2262++;

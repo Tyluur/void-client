@@ -57,7 +57,7 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1 {
                     int i_18_ = -za_Sub2.regionTileX + i_16_ * 64;
                     int i_19_ = -Class90.regionTileY + i_17_ * 64;
                     Class369_Sub1.method3570(false);
-                    class237_sub1.method1681(packet, i_18_, Class348_Sub45.collisionMaps, Class90.regionTileY, za_Sub2.regionTileX, i_19_, (byte) 110);
+                    class237_sub1.method1681(packet, i_18_, MouseLog.collisionMaps, Class90.regionTileY, za_Sub2.regionTileX, i_19_, (byte) 110);
                     class237_sub1.method1691(i_19_, Class348_Sub8.active, packet, is_11_, i_18_, (byte) -126);
                     if (!class237_sub1.underwater && i_16_ == Toolkit.anInt4581 / 8 && (i_17_ == Class327.anInt4095 / 8) && is_11_[0] != -1) {
                         VarcTypeList.aClass305_3304 = Class30.skyBoxTypeList.method823(is_11_[2], is_11_[3], is_11_[1], -66, (Class123.skyBoxSphereTypeList), is_11_[0]);
