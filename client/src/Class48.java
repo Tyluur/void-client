@@ -7,7 +7,7 @@ final class Class48 {
     static int anInt848;
     static int anInt849;
     static int anInt850;
-    static short aShort851;
+    static short maxZoom;
     static char[] aCharArray852 = {'_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
     int anInt853;
     int anInt854;
@@ -104,7 +104,7 @@ final class Class48 {
     }
 
     static {
-        aShort851 = (short) 32767;
+        maxZoom = (short) 32767;
         anInt859 = -1;
         anIntArray860 = new int[]{4, 2, 1, 1, 2, 2, 3, 1, 3, 3, 3, 2, 0};
     }

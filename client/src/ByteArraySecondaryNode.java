@@ -17,56 +17,55 @@ final class ByteArraySecondaryNode extends LinkedNode {
     static int anInt9508;
     static int anInt9509;
 
-    static final void method3174(int i, int i_0_, int i_1_, boolean bool, byte i_2_, int i_3_) {
-        if (i_1_ < 1) i_1_ = 1;
+    static final void method3174(int viewX, int viewY, int viewHeight, boolean drawBars, byte i_2_, int screenHeight) {
+        if (viewHeight < 1) viewHeight = 1;
         anInt9507++;
-        if (i_3_ < 1) i_3_ = 1;
-        int i_4_ = i_3_ - 334;
-        if (i_4_ < 0) i_4_ = 0;
-        else if (i_4_ > 100) i_4_ = 100;
-        int i_5_ = ((-Class110.aShort1700 + Class168.aShort2250) * i_4_ / 100 + Class110.aShort1700);
-        if (i_5_ < Class348_Sub42_Sub8.aShort9555) i_5_ = Class348_Sub42_Sub8.aShort9555;
-        else if (Class48.aShort851 < i_5_) i_5_ = Class48.aShort851;
-        int i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334);
-        if (i_6_ >= Class367_Sub8.aShort7355) {
-            if (i_6_ > Class171.aShort2269) {
-                i_6_ = Class171.aShort2269;
-                i_5_ = i_1_ * i_6_ * 334 / (i_3_ * 512);
-                if (i_5_ < Class348_Sub42_Sub8.aShort9555) {
-                    i_5_ = Class348_Sub42_Sub8.aShort9555;
-                    int i_7_ = i_6_ * (i_1_ * 334) / (i_5_ * 512);
-                    int i_8_ = (-i_7_ + i_3_) / 2;
-                    if (bool) {
+        if (screenHeight < 1) screenHeight = 1;
+        int heightExcess = screenHeight - 334;
+        if (heightExcess < 0) heightExcess = 0;
+        else if (heightExcess > 100) heightExcess = 100;
+        int adjustedZoom = ((-Class110.baseZoom + Class168.zoom) * heightExcess / 100 + Class110.baseZoom);
+        if (adjustedZoom < Class348_Sub42_Sub8.minZoom) adjustedZoom = Class348_Sub42_Sub8.minZoom;
+        else if (Class48.maxZoom < adjustedZoom) adjustedZoom = Class48.maxZoom;
+        int scaledWidth = 512 * adjustedZoom * screenHeight / (viewHeight * 334);
+        if (scaledWidth >= Class367_Sub8.minWidth) {
+            if (scaledWidth > Class171.maxWidth) {
+                scaledWidth = Class171.maxWidth;
+                adjustedZoom = viewHeight * scaledWidth * 334 / (screenHeight * 512);
+                if (adjustedZoom < Class348_Sub42_Sub8.minZoom) {
+                    adjustedZoom = Class348_Sub42_Sub8.minZoom;
+                    int fittedScreenHeight = scaledWidth * (viewHeight * 334) / (adjustedZoom * 512);
+                    int letterboxBarHeight = (-fittedScreenHeight + screenHeight) / 2;
+                    if (drawBars) {
                         Class348_Sub8.active.la();
-                        Class348_Sub8.active.method3675(i_1_, (byte) -125, i, i_0_, i_8_, -16777216);
-                        Class348_Sub8.active.method3675(i_1_, (byte) -125, i, i_3_ + i_0_ - i_8_, i_8_, -16777216);
+                        Class348_Sub8.active.method3675(viewHeight, (byte) -125, viewX, viewY, letterboxBarHeight, -16777216);
+                        Class348_Sub8.active.method3675(viewHeight, (byte) -125, viewX, screenHeight + viewY - letterboxBarHeight, letterboxBarHeight, -16777216);
                     }
-                    i_0_ += i_8_;
-                    i_3_ -= 2 * i_8_;
+                    viewY += letterboxBarHeight;
+                    screenHeight -= 2 * letterboxBarHeight;
                 }
             }
         } else {
-            i_6_ = Class367_Sub8.aShort7355;
-            i_5_ = i_6_ * (i_1_ * 334) / (i_3_ * 512);
-            if (Class48.aShort851 < i_5_) {
-                i_5_ = Class48.aShort851;
-                int i_9_ = i_5_ * i_3_ * 512 / (334 * i_6_);
-                int i_10_ = (i_1_ + -i_9_) / 2;
-                if (bool) {
+            scaledWidth = Class367_Sub8.minWidth;
+            adjustedZoom = scaledWidth * (viewHeight * 334) / (screenHeight * 512);
+            if (Class48.maxZoom < adjustedZoom) {
+                adjustedZoom = Class48.maxZoom;
+                int fittedScreenWidth = adjustedZoom * screenHeight * 512 / (334 * scaledWidth);
+                int barWidth = (viewHeight + -fittedScreenWidth) / 2;
+                if (drawBars) {
                     Class348_Sub8.active.la();
-                    Class348_Sub8.active.method3675(i_10_, (byte) -125, i, i_0_, i_3_, -16777216);
-                    Class348_Sub8.active.method3675(i_10_, (byte) -125, -i_10_ + i + i_1_, i_0_, i_3_, -16777216);
+                    Class348_Sub8.active.method3675(barWidth, (byte) -125, viewX, viewY, screenHeight, -16777216);
+                    Class348_Sub8.active.method3675(barWidth, (byte) -125, -barWidth + viewX + viewHeight, viewY, screenHeight, -16777216);
                 }
-                i += i_10_;
-                i_1_ -= i_10_ * 2;
+                viewX += barWidth;
+                viewHeight -= barWidth * 2;
             }
         }
-        Class97.anInt1550 = i_3_ * i_5_ / 334;
-        Class234.anInt3047 = i_0_;
-        Class280.anInt3643 = (short) i_3_;
-        Class127.anInt4656 = (short) i_1_;
-        Class295.anInt3764 = i;
-        int i_11_ = -3 % ((-8 - i_2_) / 56);
+        Class97.anInt1550 = screenHeight * adjustedZoom / 334;
+        Class234.anInt3047 = viewY;
+        Class280.anInt3643 = (short) screenHeight;
+        Class127.anInt4656 = (short) viewHeight;
+        Class295.anInt3764 = viewX;
     }
 
     static final void method3175(byte i) {

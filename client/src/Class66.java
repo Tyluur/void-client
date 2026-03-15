@@ -1734,10 +1734,10 @@ final class Class66 {
         } else if (i < 6300) {
             if (i == 6200) {
                 anInt1173 -= 2;
-                Class110.aShort1700 = (short) anIntArray1149[anInt1173];
-                if (Class110.aShort1700 <= 0) Class110.aShort1700 = (short) 256;
-                Class168.aShort2250 = (short) anIntArray1149[anInt1173 + 1];
-                if (Class168.aShort2250 <= 0) Class168.aShort2250 = (short) 205;
+                Class110.baseZoom = (short) anIntArray1149[anInt1173];
+                if (Class110.baseZoom <= 0) Class110.baseZoom = (short) 256;
+                Class168.zoom = (short) anIntArray1149[anInt1173 + 1];
+                if (Class168.zoom <= 0) Class168.zoom = (short) 205;
                 return;
             }
             if (i == 6201) {
@@ -1750,17 +1750,17 @@ final class Class66 {
             }
             if (i == 6202) {
                 anInt1173 -= 4;
-                Class348_Sub42_Sub8.aShort9555 = (short) anIntArray1149[anInt1173];
-                if (Class348_Sub42_Sub8.aShort9555 <= 0) Class348_Sub42_Sub8.aShort9555 = (short) 1;
-                Class48.aShort851 = (short) anIntArray1149[anInt1173 + 1];
-                if (Class48.aShort851 <= 0) Class48.aShort851 = (short) 32767;
-                else if (Class48.aShort851 < Class348_Sub42_Sub8.aShort9555) Class48.aShort851 = Class348_Sub42_Sub8.aShort9555;
-                Class367_Sub8.aShort7355 = (short) anIntArray1149[anInt1173 + 2];
-                if (Class367_Sub8.aShort7355 <= 0) Class367_Sub8.aShort7355 = (short) 1;
-                Class171.aShort2269 = (short) anIntArray1149[anInt1173 + 3];
-                if (Class171.aShort2269 <= 0) Class171.aShort2269 = (short) 32767;
+                Class348_Sub42_Sub8.minZoom = (short) anIntArray1149[anInt1173];
+                if (Class348_Sub42_Sub8.minZoom <= 0) Class348_Sub42_Sub8.minZoom = (short) 1;
+                Class48.maxZoom = (short) anIntArray1149[anInt1173 + 1];
+                if (Class48.maxZoom <= 0) Class48.maxZoom = (short) 32767;
+                else if (Class48.maxZoom < Class348_Sub42_Sub8.minZoom) Class48.maxZoom = Class348_Sub42_Sub8.minZoom;
+                Class367_Sub8.minWidth = (short) anIntArray1149[anInt1173 + 2];
+                if (Class367_Sub8.minWidth <= 0) Class367_Sub8.minWidth = (short) 1;
+                Class171.maxWidth = (short) anIntArray1149[anInt1173 + 3];
+                if (Class171.maxWidth <= 0) Class171.maxWidth = (short) 32767;
                 else {
-                    if (Class171.aShort2269 < Class367_Sub8.aShort7355) Class171.aShort2269 = Class367_Sub8.aShort7355;
+                    if (Class171.maxWidth < Class367_Sub8.minWidth) Class171.maxWidth = Class367_Sub8.minWidth;
                     return;
                 }
                 return;
@@ -1777,8 +1777,8 @@ final class Class66 {
                 return;
             }
             if (i == 6205) {
-                anIntArray1149[anInt1173++] = Class110.aShort1700;
-                anIntArray1149[anInt1173++] = Class168.aShort2250;
+                anIntArray1149[anInt1173++] = Class110.baseZoom;
+                anIntArray1149[anInt1173++] = Class168.zoom;
                 return;
             }
         } else if (i < 6400) {

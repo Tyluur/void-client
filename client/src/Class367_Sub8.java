@@ -9,7 +9,7 @@ final class Class367_Sub8 extends Class367 {
     static int anInt7352;
     private final Class269 aClass269_7353;
     static int anInt7354;
-    static short aShort7355 = 1;
+    static short minWidth = 1;
     static int anInt7356;
     static int anInt7357;
     static int anInt7358;
@@ -184,7 +184,7 @@ final class Class367_Sub8 extends Class367 {
         this.aNativeToolkit_4479.method3894(-28186, -16777216);
         this.aNativeToolkit_4479.method3885(0, true, TextureOpRasterizer.aClass70_9485);
         method3532(10425);
-        if (i != 15192) aShort7355 = (short) 106;
+        if (i != 15192) minWidth = (short) 106;
     }
 
     final void method3527(int i, Interface18 interface18, int i_22_) {

@@ -7,7 +7,7 @@ import java.lang.reflect.Field;
 
 abstract class Class110 {
     static int anInt1699;
-    static short aShort1700 = 256;
+    static short baseZoom = 256;
     static int anInt1701;
     static Class114 aClass114_1702;
     static int anInt1703;

@@ -5,7 +5,7 @@
 final class Class168 {
     static Class114 aClass114_2248;
     static Class46 aClass46_2249;
-    static short aShort2250 = 205;
+    static short zoom = 205;
     static int anInt2251;
     static Class323 aClass323_2252;
     static int anInt2253;

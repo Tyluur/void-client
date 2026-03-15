@@ -13,7 +13,7 @@ abstract class Class348_Sub42_Sub8 extends LinkedNode {
     static Class114 aClass114_9552 = new Class114(72, 0);
     static Class351 aClass351_9553 = new Class351(36, 7);
     static String aString9554;
-    static short aShort9555 = 1;
+    static short minZoom = 1;
 
     abstract Object method3193(int i);
 
@@ -43,7 +43,7 @@ abstract class Class348_Sub42_Sub8 extends LinkedNode {
 
     static final void method3198(boolean bool, byte i) {
         anInt9547++;
-        if (i != -45) aShort9555 = (short) -74;
+        if (i != -45) minZoom = (short) -74;
         if (bool) {
             if (r.anInt9721 != -1) Class14.method235(r.anInt9721, (byte) -113);
             for (Class348_Sub41 class348_sub41 = (Class348_Sub41) Class125.aHashTable_4915.head(0); class348_sub41 != null; class348_sub41 = ((Class348_Sub41) Class125.aHashTable_4915.next(0))) {

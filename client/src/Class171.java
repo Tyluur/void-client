@@ -5,7 +5,7 @@
 final class Class171 {
     static int anInt2267;
     private final OpenGLToolkit aOpenGLToolkit_2268;
-    static short aShort2269 = 32767;
+    static short maxWidth = 32767;
     int anInt2270;
     static int anInt2271;
     static int[] anIntArray2272;
