@@ -19,9 +19,9 @@ final class OutputStream_Sub1 extends OutputStream {
 
     static final void method132(int i, boolean bool, int i_0_, int i_1_, int i_2_, int i_3_) {
         anInt94++;
-        if (Class147.aClass357ArrayArrayArray2029 == null) Class348_Sub8.active.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
+        if (Class147.aClass357ArrayArrayArray2029 == null) Class348_Sub8.active.fillRect(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
         else if (Class132.aPlayer_1907.x < 0 || (Class132.aPlayer_1907.x >= Class367_Sub4.mapLength * 512) || Class132.aPlayer_1907.y < 0 || (512 * TextureOpBinary.mapWidth <= Class132.aPlayer_1907.y))
-            Class348_Sub8.active.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
+            Class348_Sub8.active.fillRect(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
         else {
             Option_Sub15.anInt6006++;
             if (Class132.aPlayer_1907 != null && Class248.anInt3203 == (Class132.aPlayer_1907.x + -(256 * Class132.aPlayer_1907.method2436((byte) 90)) - -256) >> 9 && Class97.anInt1548 == (Class132.aPlayer_1907.y + 256 + -(256 * Class132.aPlayer_1907.method2436((byte) 112))) >> 9) {
@@ -117,7 +117,7 @@ final class OutputStream_Sub1 extends OutputStream {
                 Class59_Sub2_Sub2.anInt8685 = i_10_;
                 if (Class238_Sub1.aBoolean5840 && SystemInfo.aClass248_6601.method1902(4) == 0) Class238_Sub1.aBoolean5840 = false;
                 if (Class238_Sub1.aBoolean5840) {
-                    Class348_Sub8.active.method3675(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
+                    Class348_Sub8.active.fillRect(i_0_, (byte) -125, i_1_, i_3_, i_2_, -16777216);
                     Class362.method3511(false, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, (Class274.aClass274_3495.method2063(AnimBase.language, 544)), 2, Class348_Sub8.active);
                 }
                 QuickChatCatTypeList.method1626(1, false);

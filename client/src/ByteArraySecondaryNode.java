@@ -37,9 +37,9 @@ final class ByteArraySecondaryNode extends LinkedNode {
                     int fittedScreenHeight = scaledWidth * (viewHeight * 334) / (adjustedZoom * 512);
                     int letterboxBarHeight = (-fittedScreenHeight + screenHeight) / 2;
                     if (drawBars) {
-                        Class348_Sub8.active.la();
-                        Class348_Sub8.active.method3675(viewHeight, (byte) -125, viewX, viewY, letterboxBarHeight, -16777216);
-                        Class348_Sub8.active.method3675(viewHeight, (byte) -125, viewX, screenHeight + viewY - letterboxBarHeight, letterboxBarHeight, -16777216);
+                        Class348_Sub8.active.resetClipping();
+                        Class348_Sub8.active.fillRect(viewHeight, (byte) -125, viewX, viewY, letterboxBarHeight, -16777216);
+                        Class348_Sub8.active.fillRect(viewHeight, (byte) -125, viewX, screenHeight + viewY - letterboxBarHeight, letterboxBarHeight, -16777216);
                     }
                     viewY += letterboxBarHeight;
                     screenHeight -= 2 * letterboxBarHeight;
@@ -53,9 +53,9 @@ final class ByteArraySecondaryNode extends LinkedNode {
                 int fittedScreenWidth = adjustedZoom * screenHeight * 512 / (334 * scaledWidth);
                 int barWidth = (viewHeight + -fittedScreenWidth) / 2;
                 if (drawBars) {
-                    Class348_Sub8.active.la();
-                    Class348_Sub8.active.method3675(barWidth, (byte) -125, viewX, viewY, screenHeight, -16777216);
-                    Class348_Sub8.active.method3675(barWidth, (byte) -125, -barWidth + viewX + viewHeight, viewY, screenHeight, -16777216);
+                    Class348_Sub8.active.resetClipping();
+                    Class348_Sub8.active.fillRect(barWidth, (byte) -125, viewX, viewY, screenHeight, -16777216);
+                    Class348_Sub8.active.fillRect(barWidth, (byte) -125, -barWidth + viewX + viewHeight, viewY, screenHeight, -16777216);
                 }
                 viewX += barWidth;
                 viewHeight -= barWidth * 2;

@@ -932,7 +932,7 @@ final class OpenGLxToolkit extends NativeToolkit {
             int i_67_ = this.anInt8183;
             int i_68_ = this.anInt8165;
             int i_69_ = this.anInt8096;
-            this.la();
+            this.resetClipping();
             OpenGL.glReadBuffer(1028);
             OpenGL.glDrawBuffer(1029);
             this.method3932((byte) -107);

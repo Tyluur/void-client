@@ -199,7 +199,7 @@ final class Class361 {
             try {
                 anInt4442++;
                 var_toolkit.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i);
-                var_toolkit.method3675(i_40_, (byte) -125, i_39_, i_41_, i, -16777216);
+                var_toolkit.fillRect(i_40_, (byte) -125, i_39_, i_41_, i, -16777216);
                 if (Node.anInt4290 >= 100) {
                     float f = ((float) Class75.anInt1267 / (float) Class75.anInt1259);
                     int i_42_ = i_40_;
@@ -233,11 +233,11 @@ final class Class361 {
                             if (TextureOpHslAdjust.anInt9399 == (class348_sub21.anInt6847)) {
                                 int i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / Class75.anInt1259));
                                 int i_51_ = (((Class75.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / Class75.anInt1267) + i_41_);
-                                var_toolkit.method3675(4, (byte) -125, i_50_ - 2, -2 + i_51_, 4, (i_49_ << 24 | 0xffff00));
+                                var_toolkit.fillRect(4, (byte) -125, i_50_ - 2, -2 + i_51_, 4, (i_49_ << 24 | 0xffff00));
                             } else if (Class34.anInt481 != -1 && (class42.anInt596 == Class34.anInt481)) {
                                 int i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / Class75.anInt1259));
                                 int i_53_ = i_41_ - -(i_43_ * (Class75.anInt1267 + -(class348_sub21.anInt6851)) / Class75.anInt1267);
-                                var_toolkit.method3675(4, (byte) -125, i_52_ + -2, -2 + i_53_, 4, (i_49_ << 24 | 0xffff00));
+                                var_toolkit.fillRect(4, (byte) -125, i_52_ + -2, -2 + i_53_, 4, (i_49_ << 24 | 0xffff00));
                             }
                         }
                     }

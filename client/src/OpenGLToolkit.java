@@ -722,7 +722,7 @@ final class OpenGLToolkit extends Toolkit {
                 method3809(true);
             }
             method3755(-32);
-            la();
+            resetClipping();
         }
     }
 
@@ -929,7 +929,7 @@ final class OpenGLToolkit extends Toolkit {
         this.anInt7641 = anInt7523;
         method3755(-32);
         method3809(true);
-        la();
+        resetClipping();
     }
 
     final void method3751(Interface11 interface11, int i) {
@@ -1648,7 +1648,7 @@ final class OpenGLToolkit extends Toolkit {
             int i_148_ = anInt7855;
             int i_149_ = anInt7773;
             int i_150_ = anInt7787;
-            la();
+            resetClipping();
             OpenGL.glReadBuffer(1028);
             OpenGL.glDrawBuffer(1029);
             method3755(-32);
@@ -2490,7 +2490,7 @@ final class OpenGLToolkit extends Toolkit {
         if (i <= -101) anInt7545++;
     }
 
-    final void la() {
+    final void resetClipping() {
         anInt7773 = 0;
         anInt7642++;
         anInt7787 = this.anInt7641;
@@ -2608,7 +2608,7 @@ final class OpenGLToolkit extends Toolkit {
         if (i != 25858) this.aClass64_Sub3_7864 = null;
         OpenGL.glHint(3156, 4353);
         anInt7808 = this.anInt7856 = -1;
-        la();
+        resetClipping();
     }
 
     final void method3792(int i) {

@@ -378,7 +378,7 @@ final class ItemDefinition {
             int i_51_ = var_toolkit_38_.XA();
             var_toolkit_38_.f(50, 2147483647);
             var_toolkit_38_.ya();
-            var_toolkit_38_.la();
+            var_toolkit_38_.resetClipping();
             var_toolkit_38_.aa(0, 0, 36, 32, 0, 0);
             model.render(matrix_49_, null, 1);
             var_toolkit_38_.f(i_50_, i_51_);

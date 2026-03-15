@@ -732,7 +732,7 @@ final class JavaToolkit extends Toolkit {
     private final void method3717() {
         for (int i = 0; i < this.threadCount; i++)
             resources[i].method1292(64);
-        la();
+        resetClipping();
     }
 
     final boolean method3682() {
@@ -1272,7 +1272,7 @@ final class JavaToolkit extends Toolkit {
         return new JavaMatrix();
     }
 
-    final void la() {
+    final void resetClipping() {
         this.clipX1 = 0;
         this.clipY1 = 0;
         this.clipX2 = this.surfaceWidth;

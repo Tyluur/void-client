@@ -69,7 +69,7 @@ final class Class18 {
             aOpenGLToolkit_290.method3753(0, 1);
             aOpenGLToolkit_290.method3761(0, 1);
             int i_3_ = 19 % ((i - 12) / 49);
-            aOpenGLToolkit_290.la();
+            aOpenGLToolkit_290.resetClipping();
             int i_4_ = 0;
             int i_5_ = 1;
             Class348_Sub5 class348_sub5;

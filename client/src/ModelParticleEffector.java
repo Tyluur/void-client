@@ -41,7 +41,7 @@ final class ModelParticleEffector {
                 anInt4242++;
                 int i_4_ = -5 + i - i_3_ / 2;
                 int i_5_ = i_2_ - -2;
-                if (class42.anInt602 != 0) var_toolkit.method3675(i_3_ + 10, (byte) -125, i_4_, i_5_, (i_2_ - -(class323.method2565() * i_1_) - (i_5_ - 1)), class42.anInt602);
+                if (class42.anInt602 != 0) var_toolkit.fillRect(i_3_ + 10, (byte) -125, i_4_, i_5_, (i_2_ - -(class323.method2565() * i_1_) - (i_5_ - 1)), class42.anInt602);
                 if (class42.anInt604 != 0) var_toolkit.method3668(i_3_ + 10, i_5_, class42.anInt604, i_4_, (i_1_ * class323.method2565() + i_2_ - (i_5_ + -1)), 92);
                 int i_6_ = class42.anInt580;
                 if (class348_sub21.aBoolean6848 && class42.anInt567 != -1) i_6_ = class42.anInt567;

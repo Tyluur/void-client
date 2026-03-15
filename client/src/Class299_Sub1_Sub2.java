@@ -22,7 +22,7 @@ final class Class299_Sub1_Sub2 extends Class299_Sub1 {
             boolean bool = true;
             Class206 class206 = aOpenGLToolkit_8707.aClass206_7778;
             aOpenGLToolkit_8707.K(MonochromeImageCacheSlot.anIntArray6635);
-            aOpenGLToolkit_8707.la();
+            aOpenGLToolkit_8707.resetClipping();
             aOpenGLToolkit_8707.method3755(-32);
             OpenGL.glMatrixMode(5889);
             OpenGL.glLoadIdentity();

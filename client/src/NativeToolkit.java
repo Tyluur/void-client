@@ -1306,7 +1306,7 @@ abstract class NativeToolkit extends Toolkit {
 
     final void KA(int i, int i_119_, int i_120_, int i_121_) {
         anInt7972++;
-        if (i <= 0 && i_120_ >= -1 + this.anInt7931 && i_119_ <= 0 && this.anInt7962 - 1 <= i_121_) la();
+        if (i <= 0 && i_120_ >= -1 + this.anInt7931 && i_119_ <= 0 && this.anInt7962 - 1 <= i_121_) resetClipping();
         else {
             this.anInt8165 = Math.max(i_119_, 0);
             this.anInt8106 = Math.max(i, 0);
@@ -1439,7 +1439,7 @@ abstract class NativeToolkit extends Toolkit {
 
     abstract Object method3876(int i, Canvas canvas);
 
-    final void la() {
+    final void resetClipping() {
         this.anInt8183 = this.anInt7931;
         this.anInt8096 = this.anInt7962;
         anInt8037++;
@@ -2117,7 +2117,7 @@ abstract class NativeToolkit extends Toolkit {
         method3937((byte) -33);
         method3904(-71);
         method3932((byte) -126);
-        la();
+        resetClipping();
     }
 
     private final void method3918(int i) {
@@ -2416,7 +2416,7 @@ abstract class NativeToolkit extends Toolkit {
         if (!aClass367Array8139[8].method3530(-116)) aClass367Array8139[8] = aClass367Array8139[4];
         if (!aClass367Array8139[9].method3530(-104)) aClass367Array8139[9] = aClass367Array8139[8];
         method3882((byte) 52);
-        la();
+        resetClipping();
         this.method3673();
     }
 

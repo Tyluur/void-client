@@ -215,7 +215,7 @@ final class SecondaryLinkedList {
                             int i_41_ = (4 * Class97.anInt1548 - (-2 + i_3_ / 128) + (2 * (Class132.aPlayer_1907.method2436((byte) 59) - 1)));
                             Class151.method1211(i_1_, (SkyBoxSphereTypeList.aSpriteArray367[(!Class348_Sub13.aBoolean6759 ? 0 : 1)]), i, class46, var_aa, i_41_, 2, i_40_);
                         }
-                        if (!Class132.aPlayer_1907.aBoolean10551) var_toolkit.method3675(3, (byte) -125, -1 + (i - -((class46.anInt709) / 2)), -1 + ((class46.anInt789) / 2 + i_1_), 3, -1);
+                        if (!Class132.aPlayer_1907.aBoolean10551) var_toolkit.fillRect(3, (byte) -125, -1 + (i - -((class46.anInt709) / 2)), -1 + ((class46.anInt789) / 2 + i_1_), 3, -1);
                     }
                 } else var_toolkit.A(-16777216, var_aa, i, i_1_);
             }

@@ -44,7 +44,7 @@ final class Class302 {
                 Class348_Sub38.anInt7008 = 0;
                 Class88.method842(false);
             }
-            Class348_Sub8.active.la();
+            Class348_Sub8.active.resetClipping();
             Class348_Sub42_Sub20.method3281((byte) 46, Class348_Sub8.active);
             int i_4_ = Class112.method1053(3112);
             if (i_4_ == -1) i_4_ = Class362.anInt4458;

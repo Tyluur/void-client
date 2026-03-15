@@ -540,7 +540,7 @@ final class SafeModeToolkit extends Toolkit implements Interface19 {
         return new j(this, is, i, i_209_, i_210_, i_211_, false);
     }
 
-    final native void la();
+    final native void resetClipping();
 
     final void method3630(boolean bool) {
         /* empty */

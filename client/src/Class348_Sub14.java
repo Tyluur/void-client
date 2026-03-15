@@ -146,7 +146,7 @@ final class Class348_Sub14 extends Node {
                                 int i_34_ = i_16_ + i_32_;
                                 int i_35_ = i_33_ + i_17_;
                                 int i_36_ = (class361.anIntArrayArray4438[(-class361.anInt4453 + i_34_)][(-class361.anInt4441 + i_35_)]);
-                                if ((0x40240000 & i_36_) != 0) var_toolkit.method3675(4, (byte) -125, i_32_ * 4 + i_18_, -4 + (RuntimeException_Sub1.anInt4600 + -i_33_) * 4 + i_19_, 4, -1713569622);
+                                if ((0x40240000 & i_36_) != 0) var_toolkit.fillRect(4, (byte) -125, i_32_ * 4 + i_18_, -4 + (RuntimeException_Sub1.anInt4600 + -i_33_) * 4 + i_19_, 4, -1713569622);
                                 else if ((0x800000 & i_36_) == 0) {
                                     if ((i_36_ & 0x2000000) != 0) var_toolkit.method3660(3 + (i_18_ - -(i_32_ * 4)), -1713569622, 4, (-4 + (4 * (-i_33_ + (RuntimeException_Sub1.anInt4600)) + i_19_)), true);
                                     else if ((i_36_ & 0x8000000) != 0) var_toolkit.method3649((byte) -126, 4, 3 + (i_19_ + ((RuntimeException_Sub1.anInt4600) - i_33_) * 4) + -4, -1713569622, i_18_ + 4 * i_32_);
@@ -159,7 +159,7 @@ final class Class348_Sub14 extends Node {
                     Class108.aSprite_1664.method979((-i_5_ + i_16_) * 4 + 48, (-(4 * (i_17_ - i_6_)) + 464 + -(RuntimeException_Sub1.anInt4600 * 4)), RuntimeException_Sub1.anInt4600 * 4, 4 * RuntimeException_Sub1.anInt4600, i_18_, i_19_);
                 }
             }
-            var_toolkit.la();
+            var_toolkit.resetClipping();
             var_toolkit.GA(-16777215);
             Class354.method3466(-86);
             TextureOpClamp.anInt9479 = 0;

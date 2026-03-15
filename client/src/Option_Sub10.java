@@ -50,7 +50,7 @@ final class Option_Sub10 extends Option {
             Class348_Sub38.anInt7008 = 0;
             Class88.method842(false);
         }
-        Class348_Sub8.active.la();
+        Class348_Sub8.active.resetClipping();
         Class348_Sub42_Sub20.method3281((byte) 77, Class348_Sub8.active);
         int i_7_ = Class112.method1053(3112);
         if (i_7_ == -1) i_7_ = Class362.anInt4458;

@@ -248,11 +248,11 @@ final class Class348_Sub41 extends Node {
                 }
                 if (i_49_ == 3) {
                     if (i_48_ != 0) {
-                        if (i_48_ == 1) var_toolkit.method3675(1, (byte) -125, 3 + i_46_, i_42_, 1, i_50_);
+                        if (i_48_ == 1) var_toolkit.fillRect(1, (byte) -125, 3 + i_46_, i_42_, 1, i_50_);
                         else if (i_48_ != 2) {
-                            if (i_48_ == 3) var_toolkit.method3675(1, (byte) -125, i_46_, 3 + i_42_, 1, i_50_);
-                        } else var_toolkit.method3675(1, (byte) -125, 3 + i_46_, 3 + i_42_, 1, i_50_);
-                    } else var_toolkit.method3675(1, (byte) -125, i_46_, i_42_, 1, i_50_);
+                            if (i_48_ == 3) var_toolkit.fillRect(1, (byte) -125, i_46_, 3 + i_42_, 1, i_50_);
+                        } else var_toolkit.fillRect(1, (byte) -125, 3 + i_46_, 3 + i_42_, 1, i_50_);
+                    } else var_toolkit.fillRect(1, (byte) -125, i_46_, i_42_, 1, i_50_);
                 }
                 if (i_49_ == 2) {
                     if (i_48_ != 0) {

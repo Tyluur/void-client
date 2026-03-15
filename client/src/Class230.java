@@ -189,7 +189,7 @@ final class Class230 {
                                     Class21.aToolkit326.GA(Class77.anInt1290);
                                     Class258_Sub1.method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, is, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false);
                                 }
-                                Class21.aToolkit326.la();
+                                Class21.aToolkit326.resetClipping();
                                 InvTypeList.method2046();
                                 if (Packet.anInt7207 == 0) Class21.aToolkit326.method3672();
                                 Class348_Sub3.anInt6568 += i_34_;
@@ -226,7 +226,7 @@ final class Class230 {
                         Class348_Sub3.anInt6568 = 0;
                         Class348_Sub42_Sub4.aDouble9517 = 0.0;
                         if (Packet.anInt7207 == 0) Class21.aToolkit326.method3687(AnimationType.anOffscreenSurface_252);
-                        Class21.aToolkit326.la();
+                        Class21.aToolkit326.resetClipping();
                         Class21.aToolkit326.ya();
                         Class21.aToolkit326.GA(Class77.anInt1290);
                         Class51.aMatrix_905.rotate(Sprite_Sub1.anInt8422, Class29.anInt403, Class348_Sub21.anInt6849, Class369_Sub1.anInt8583, Class295.anInt3760, Class27.anInt396);
@@ -276,7 +276,7 @@ final class Class230 {
                         Class21.aToolkit326.KA(Class339.anInt4211, TextureOpPerlinNoise.anInt9157, (Class339.anInt4211 - -Class59_Sub1.anInt5283), (SecondaryLinkedList.anInt1651 + TextureOpPerlinNoise.anInt9157));
                     }
                     Class258_Sub1.method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, is, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, Packet.anInt7207 != 2 ? 2 : 0, Packet.anInt7207 == 1);
-                    Class21.aToolkit326.la();
+                    Class21.aToolkit326.resetClipping();
                     Class21.aToolkit326.DA(i_16_, i_17_, i_18_, i_19_);
                     if (i == -2) break;
                     anInt2986 = -82;

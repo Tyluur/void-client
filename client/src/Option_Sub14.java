@@ -73,7 +73,7 @@ final class Option_Sub14 extends Option {
             Class362.method3511(true, Applet_Sub1.aFontRenderer_20, Class246.aFontMetrics_3179, Class274.aClass274_3496.method2063(AnimBase.language, 544), 2, Class348_Sub8.active);
             Mesh mesh = Class300.method2277(0, aa_Sub3.MODELS, JavaSurface.anInt6923, -1);
             long l = Class62.safeTime(-88);
-            Class348_Sub8.active.la();
+            Class348_Sub8.active.resetClipping();
             Class157.aMatrix_2123.method894(0, Class348_Sub23_Sub2.anInt9037, 0);
             Class348_Sub8.active.setCamera(Class157.aMatrix_2123);
             Class348_Sub8.active.DA(dimension.width / 2, dimension.height / 2, 512, 512);

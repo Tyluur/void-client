@@ -44,7 +44,7 @@ final class Class284 {
             var_toolkit.method3676(5, 10, 100, 75, 50, 100, 15, 90, 100, -65536, -65536, -65536, 1);
         int i_2_ = (int) (-l + Class62.safeTime(-71));
         if (i != -26584) method2116(-124);
-        var_toolkit.method3675(100, (byte) -125, 0, 0, 100, -16777216);
+        var_toolkit.fillRect(100, (byte) -125, 0, 0, 100, -16777216);
         if (bool) var_toolkit.method3635((byte) 121);
         return i_2_;
     }

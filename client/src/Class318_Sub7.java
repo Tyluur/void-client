@@ -68,8 +68,8 @@ final class Class318_Sub7 extends Class318 {
     static final void method2509(int i, int i_0_, Toolkit var_toolkit, int i_1_, int i_2_, boolean bool, int i_3_, int i_4_) {
         anInt6438++;
         if (bool != true) anInt6451 = -14;
-        var_toolkit.method3675(i, (byte) -125, i_1_, i_0_, i_3_, i_2_);
-        var_toolkit.method3675(i - 2, (byte) -125, 1 + i_1_, 1 + i_0_, 16, i_4_);
+        var_toolkit.fillRect(i, (byte) -125, i_1_, i_0_, i_3_, i_2_);
+        var_toolkit.fillRect(i - 2, (byte) -125, 1 + i_1_, 1 + i_0_, 16, i_4_);
         var_toolkit.method3668(-2 + i, 18 + i_0_, i_4_, 1 + i_1_, -19 + i_3_, 115);
     }
 

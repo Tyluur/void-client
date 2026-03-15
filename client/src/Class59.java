@@ -249,7 +249,7 @@ abstract class Class59 {
                     i_68_ = i_65_ + -(i_61_ / 2) - 5;
                     i_71_ = 3 + (i_60_ * Class39.aClass323_521.method2565() + i_69_);
                     i_70_ = i_61_ + (i_68_ + 10);
-                    if (class42.anInt602 != 0) var_toolkit.method3675(-i_68_ + i_70_, (byte) -125, i_68_, i_69_, i_71_ - i_69_, class42.anInt602);
+                    if (class42.anInt602 != 0) var_toolkit.fillRect(-i_68_ + i_70_, (byte) -125, i_68_, i_69_, i_71_ - i_69_, class42.anInt602);
                     if (class42.anInt604 != 0) var_toolkit.method3668(-i_68_ + i_70_, i_69_, class42.anInt604, i_68_, -i_69_ + i_71_, 67);
                     for (int i_72_ = 0; i_60_ > i_72_; i_72_++) {
                         String string = NativeToolkit.aStringArray8019[i_72_];

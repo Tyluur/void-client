@@ -160,7 +160,7 @@ abstract class Toolkit {
 
     abstract void f(int i, int i_75_);
 
-    abstract void la();
+    abstract void resetClipping();
 
     abstract void method3658(int i, int i_76_, int i_77_, int i_78_);
 
@@ -237,7 +237,7 @@ abstract class Toolkit {
 
     abstract void EA(int i, int i_122_, int i_123_, int i_124_);
 
-    final void method3675(int i, byte i_125_, int i_126_, int i_127_, int i_128_, int i_129_) {
+    final void fillRect(int i, byte i_125_, int i_126_, int i_127_, int i_128_, int i_129_) {
         if (i_125_ == -125) {
             aa(i_126_, i_127_, i, i_128_, i_129_, 1);
             anInt4566++;
