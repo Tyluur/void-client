@@ -1,5 +1,3 @@
-//import netscape.javascript.JSObject
-
 object Class224 {
     @Throws(Throwable::class)
     fun method1615(applet: GameApplet?, i: Int, string: String?) {

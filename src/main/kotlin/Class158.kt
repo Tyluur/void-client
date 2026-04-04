@@ -1,5 +1,4 @@
 import Class133.method1142
-import com.sun.management.HotSpotDiagnosticMXBean
 import java.io.File
 
 class Class158 internal constructor(string: String?, class221: Class221?, class341: Class341?, i: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int) : Interface12 {
@@ -58,8 +57,8 @@ class Class158 internal constructor(string: String?, class221: Class221?, class3
             anInt4939++
             if (bool_0_ != false) aClass299_4938 = null
             try {
-                val method = (HotSpotDiagnosticMXBean::class.java.getDeclaredMethod("dumpHeap", (if (aClass4949 != null) aClass4949 else (String::class.java.also { aClass4949 = it })), java.lang.Boolean.TYPE))
-                method.invoke(Class168.anObject2256, file.getAbsolutePath(), bool)
+//                val method = (HotSpotDiagnosticMXBean::class.java.getDeclaredMethod("dumpHeap", (if (aClass4949 != null) aClass4949 else (String::class.java.also { aClass4949 = it })), java.lang.Boolean.TYPE))
+//                method.invoke(Class168.anObject2256, file.getAbsolutePath(), bool)
             } catch (exception: Exception) {
                 println("HeapDump error:")
                 exception.printStackTrace()

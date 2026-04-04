@@ -1,8 +1,6 @@
 import Class239_Sub16.Companion.method1791
 import Class348_Sub40.Companion.method3038
 import Class76.Companion.method773
-import com.sun.management.HotSpotDiagnosticMXBean
-import java.lang.management.ManagementFactory
 
 object Class133 {
     var anInt1912: Int = 0
@@ -243,7 +241,7 @@ object Class133 {
         anInt1913++
         if (Class168.anObject2256 == null) {
             try {
-                Class168.anObject2256 = ManagementFactory.newPlatformMXBeanProxy<HotSpotDiagnosticMXBean?>(ManagementFactory.getPlatformMBeanServer(), "com.sun.management:type=HotSpotDiagnostic", HotSpotDiagnosticMXBean::class.java)
+//                Class168.anObject2256 = ManagementFactory.newPlatformMXBeanProxy<HotSpotDiagnosticMXBean?>(ManagementFactory.getPlatformMBeanServer(), "com.sun.management:type=HotSpotDiagnostic", HotSpotDiagnosticMXBean::class.java)
             } catch (exception: Exception) {
                 println("HeapDump setup error:")
                 exception.printStackTrace()
