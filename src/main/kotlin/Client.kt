@@ -536,12 +536,13 @@ import za.Companion.method3438
 import za_Sub1.Companion.method3441
 import za_Sub2.Companion.method3443
 import za_Sub2.Companion.method3444
-import java.applet.Applet
 import java.awt.Canvas
+import java.awt.Component
 import java.awt.Container
 import java.awt.Frame
 import java.io.IOException
 import java.net.Socket
+import java.net.URL
 import java.util.*
 import kotlin.math.max
 import kotlin.math.min
@@ -1670,7 +1671,7 @@ class Client : Applet_Sub1() {
                 val container: Container?
                 if (Class52.aFrame4904 == null) {
                     if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169
-                    else container = Class93.anApplet1530
+                    else container = Class93.anApplet1530 as? Container
                 } else container = Class52.aFrame4904
                 var i = container!!.getSize().width
                 var i_119_ = container.getSize().height
@@ -1839,6 +1840,13 @@ class Client : Applet_Sub1() {
             /* empty */
         }
         return string
+    }
+
+    override fun getPulseComponent(): Component? {
+        return null
+    }
+
+    override fun showDocument(url: URL?, target: String?) {
     }
 
     companion object {

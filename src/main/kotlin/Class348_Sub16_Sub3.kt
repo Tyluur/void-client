@@ -1010,7 +1010,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                 }
                 if (i_71_ == 2) {
                     try {
-                        Class93.anApplet1530!!.getAppletContext().showDocument(URL(Class93.anApplet1530!!.getCodeBase(), string), "_blank")
+                        Class93.anApplet1530!!.showDocument(URL(Class93.anApplet1530!!.getCodeBase(), string), "_blank")
                         val class144 = Class144()
                         class144.anInt1997 = 1
                         return class144
@@ -1027,7 +1027,7 @@ class Class348_Sub16_Sub3 : Class348_Sub16 {
                         /* empty */
                     }
                     try {
-                        Class93.anApplet1530!!.getAppletContext().showDocument(URL(Class93.anApplet1530!!.getCodeBase(), string), "_top")
+                        Class93.anApplet1530!!.showDocument(URL(Class93.anApplet1530!!.getCodeBase(), string), "_top")
                         val class144 = Class144()
                         class144.anInt1997 = 1
                         return class144

@@ -1,10 +1,9 @@
 import jagex3.jagmisc.jagmisc.quit
-import java.applet.Applet
-import java.applet.AppletContext
 import java.awt.Color
 import java.awt.Container
 import java.awt.Frame
 import java.awt.Graphics
+import java.awt.Panel
 import java.awt.event.FocusEvent
 import java.awt.event.FocusListener
 import java.awt.event.WindowEvent
@@ -13,12 +12,12 @@ import java.io.IOException
 import java.net.URL
 import java.util.*
 
-abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
+abstract class Applet_Sub1 : Panel(), GameApplet, Runnable, FocusListener, WindowListener {
     private var aBoolean17 = false
     private var aBoolean27 = false
     abstract fun method80(i: Int)
 
-    override fun stop() {
+    fun stop() {
         anInt24++
         if (this === Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L
     }
@@ -27,7 +26,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         anInt3++
         if (Class52.aFrame4904 != null) return null
         if (Class93.anApplet1530 != null && Class93.anApplet1530 !== this) return Class93.anApplet1530!!.getParameter(string)
-        return super.getParameter(string)
+        return null
     }
 
     open fun method81(i: Byte): String? {
@@ -48,7 +47,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
                 /* empty */
             }
             try {
-                getAppletContext()!!.showDocument(URL(getCodeBase(), ("error_game_" + string + ".ws")), "_top")
+                showDocument(URL(getCodeBase(), ("error_game_" + string + ".ws")), "_top")
             } catch (exception: Exception) {
                 /* empty */
             }
@@ -100,7 +99,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         anInt30++
         if (Class52.aFrame4904 != null) return null
         if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getDocumentBase()
-        return super.getDocumentBase()
+        return getCodeBase()
     }
 
     override fun windowDeactivated(windowevent: WindowEvent?) {
@@ -120,7 +119,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         if (Class34.aFrame476 == null) {
             if (Class52.aFrame4904 == null) {
                 if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169!!
-                else container = Class93.anApplet1530!!
+                else container = Class93.anApplet1530!!.getPulseComponent() as Container
             } else container = Class52.aFrame4904 as Container
         } else container = Class34.aFrame476 as Container
         container.setLayout(null)
@@ -265,21 +264,14 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
 
     abstract fun method91(i: Byte)
 
-    override fun getAppletContext(): AppletContext? {
-        anInt19++
-        if (Class52.aFrame4904 != null) return null
-        if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getAppletContext()
-        return super.getAppletContext()
-    }
-
     override fun getCodeBase(): URL? {
         anInt29++
         if (Class52.aFrame4904 != null) return null
         if (Class93.anApplet1530 != null && this !== Class93.anApplet1530) return Class93.anApplet1530!!.getCodeBase()
-        return super.getCodeBase()
+        return null
     }
 
-    abstract override fun init()
+    abstract fun init()
 
     override fun destroy() {
         anInt21++
@@ -319,8 +311,13 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
                     }
                     if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true
                 }
-                var applet: Applet? = Class348_Sub40_Sub9.anApplet_Sub1_9169
-                if (Class93.anApplet1530 != null) applet = Class93.anApplet1530
+                var applet: Panel? = Class348_Sub40_Sub9.anApplet_Sub1_9169
+                if (Class93.anApplet1530 != null) {
+                    val container = Class93.anApplet1530!!.getPulseComponent() as? Container
+                    if (container != null) {
+                        applet = container as Panel
+                    }
+                }
                 val method = Class297.aMethod3786
                 if (method != null) {
                     try {
@@ -378,7 +375,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
             } else {
                 Class348_Sub51.anInt7252++
                 if (Class348_Sub51.anInt7252 >= 3) method82(112, "alreadyloaded")
-                else getAppletContext()!!.showDocument(getDocumentBase(), "_self")
+                else showDocument(getDocumentBase(), "_self")
             }
         } catch (throwable: Throwable) {
             Class156.method1242(null, throwable, 15004)
@@ -426,7 +423,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         return Class348_Sub40_Sub19.method3098(-30282, "jaclib")
     }
 
-    override fun start() {
+    fun start() {
         anInt36++
         if (this === Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = 0L
     }
@@ -534,7 +531,7 @@ abstract class Applet_Sub1 : Applet(), Runnable, FocusListener, WindowListener {
         }
 
         @JvmStatic
-        fun provideLoaderApplet(applet: Applet) {
+        fun provideLoaderApplet(applet: GameApplet) {
             anInt11++
             Class93.anApplet1530 = applet
         }

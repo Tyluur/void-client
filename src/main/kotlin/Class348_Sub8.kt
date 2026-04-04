@@ -1,4 +1,3 @@
-import java.applet.Applet
 import kotlin.math.atan2
 
 class Class348_Sub8 internal constructor(@JvmField var aByteArray6657: ByteArray?) : Class348() {
@@ -16,7 +15,7 @@ class Class348_Sub8 internal constructor(@JvmField var aByteArray6657: ByteArray
         var aClass241_6660: Class241? = null
         private var aShortArray6661: ShortArray? = shortArrayOf(967, 20428, -21577, 11219, -10290)
         @JvmField
-        var anApplet6662: Applet? = null
+        var anApplet6662: GameApplet? = null
         private var aShortArray6663: ShortArray? = shortArrayOf(957, 20418, -21587, 11209, -10300)
         @JvmField
         var aShortArrayArray6664: Array<ShortArray?>?

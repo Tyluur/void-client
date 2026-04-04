@@ -1,8 +1,9 @@
 import Applet_Sub1.Companion.provideLoaderApplet
-import java.applet.Applet
 import java.awt.BorderLayout
+import java.awt.Component
 import java.awt.Dimension
 import java.awt.Image
+import java.awt.Panel
 import java.math.BigInteger
 import java.net.URL
 import java.util.*
@@ -10,10 +11,10 @@ import javax.swing.ImageIcon
 import javax.swing.JFrame
 import javax.swing.JPanel
 
-class Loader : Applet() {
+class Loader : Panel(), GameApplet {
     var aJFrame2: JFrame? = null
     var aJPanel3: JPanel = JPanel()
-    override fun init() {
+    fun init() {
         doApplet()
     }
 
@@ -98,6 +99,17 @@ class Loader : Applet() {
 
     override fun getDocumentBase(): URL? {
         return getCodeBase()
+    }
+
+    override fun destroy() {
+    }
+
+    override fun getPulseComponent(): Component {
+        return this
+    }
+
+    override fun showDocument(url: URL?, target: String?) {
+        println("Show document: $url, target: $target")
     }
 
     override fun getCodeBase(): URL? {

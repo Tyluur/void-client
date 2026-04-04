@@ -45,7 +45,7 @@ object Class140 {
                         val container: Container?
                         if (Class52.aFrame4904 == null) {
                             if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169
-                            else container = Class93.anApplet1530
+                            else container = Class93.anApplet1530 as? Container
                         } else container = Class52.aFrame4904
                         var i_5_ = 0
                         var i_6_ = 0

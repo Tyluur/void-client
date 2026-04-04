@@ -39,7 +39,7 @@ object Class215 {
                 container = Class34.aFrame476
             } else if (Class52.aFrame4904 == null) {
                 if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169
-                else container = Class93.anApplet1530
+                else container = Class93.anApplet1530 as? Container
                 Class272.anInt3473 = container!!.getSize().width
                 Class348_Sub22.anInt6857 = container.getSize().height
             } else {

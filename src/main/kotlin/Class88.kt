@@ -398,7 +398,7 @@ class Class88 {
                                 } catch (throwable: Throwable) {
                                     if (Class318_Sub1_Sub5.aBoolean8773) {
                                         try {
-                                            Class93.anApplet1530!!.getAppletContext().showDocument(URL(Class93.anApplet1530!!.getCodeBase(), "blank.ws"), "tbi")
+                                            Class93.anApplet1530!!.showDocument(URL(Class93.anApplet1530!!.getCodeBase(), "blank.ws"), "tbi")
                                         } catch (exception: Exception) {
                                             /* empty */
                                         }

@@ -1,14 +1,13 @@
 import Class348_Sub40_Sub19.Companion.method3098
 import Class9.method215
 import jaggl.OpenGL
-import java.applet.Applet
 import java.awt.Canvas
 
 object Class93 {
     @JvmField
     var anInt1529: Int = 0
     @JvmField
-    var anApplet1530: Applet? = null
+    var anApplet1530: GameApplet? = null
     var aStringArray1531: Array<String>? = arrayOf("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
     @JvmField
     var anInt1532: Int = 0
