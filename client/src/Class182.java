@@ -40,10 +40,10 @@ final class Class182 {
         }
     }
 
-    static final Class50_Sub4 method1374(int i, Packet packet) {
+    static final TextureOpRasterizerLine createOpRasterLine(int i, Packet packet) {
         if (i < 106) keyboardMonitor = null;
         anInt2453++;
-        return new Class50_Sub4(packet.readShort(13638), packet.readShort(13638), packet.readShort(13638), packet.readShort(13638), packet.readMedium(-1), packet.readUnsignedByte(255));
+        return new TextureOpRasterizerLine(packet.readShort(13638), packet.readShort(13638), packet.readShort(13638), packet.readShort(13638), packet.readMedium(-1), packet.readUnsignedByte(255));
     }
 
     public static void method1375(int i) {

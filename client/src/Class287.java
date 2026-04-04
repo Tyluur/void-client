@@ -111,7 +111,7 @@ final class Class287 {
             if (class223 == TextureOp37.aClass223_9274) return Class288_Sub1.method2189(packet, 86);
             if (class223 == Class313.aClass223_3934) return Class5.method179(16533, packet);
             if (LightTypeList.aClass223_2489 == class223) return Class348_Sub46.method3322(0, packet);
-            if (class223 == Class174.aClass223_2307) return Class50_Sub4.method472(-27794, packet);
+            if (class223 == Class174.aClass223_2307) return TextureOpRasterizerLine.method472(-27794, packet);
             if (Class149.aClass223_2045 == class223) return Class328_Sub2.method2612(packet, true);
             if (QuestTypeList.aClass223_2507 == class223) return Class285_Sub1.method2128(-1730, packet);
             return null;

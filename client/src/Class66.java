@@ -4163,14 +4163,14 @@ final class Class66 {
                     return;
                 }
                 if (i == 3611) {
-                    if (Class50.aString863 == null) {
+                    if (TextureOpRasterizerShape.aString863 == null) {
                         aStringArray1152[anInt1170++] = "";
                         return;
-                    } else aStringArray1152[anInt1170++] = Class157.method1245(Class50.aString863, false);
+                    } else aStringArray1152[anInt1170++] = Class157.method1245(TextureOpRasterizerShape.aString863, false);
                     return;
                 }
                 if (i == 3612) {
-                    if (Class50.aString863 == null) {
+                    if (TextureOpRasterizerShape.aString863 == null) {
                         anIntArray1149[anInt1173++] = 0;
                         return;
                     } else anIntArray1149[anInt1173++] = Class37.anInt496;
@@ -4178,7 +4178,7 @@ final class Class66 {
                 }
                 if (i == 3613) {
                     int i_364_ = anIntArray1149[--anInt1173];
-                    if (Class50.aString863 != null && i_364_ < Class37.anInt496) aStringArray1152[anInt1170++] = (Class169.aClass19Array2261[i_364_].aString314);
+                    if (TextureOpRasterizerShape.aString863 != null && i_364_ < Class37.anInt496) aStringArray1152[anInt1170++] = (Class169.aClass19Array2261[i_364_].aString314);
                     else {
                         aStringArray1152[anInt1170++] = "";
                         return;
@@ -4187,7 +4187,7 @@ final class Class66 {
                 }
                 if (i == 3614) {
                     int i_365_ = anIntArray1149[--anInt1173];
-                    if (Class50.aString863 != null && i_365_ < Class37.anInt496) anIntArray1149[anInt1173++] = (Class169.aClass19Array2261[i_365_].anInt308);
+                    if (TextureOpRasterizerShape.aString863 != null && i_365_ < Class37.anInt496) anIntArray1149[anInt1173++] = (Class169.aClass19Array2261[i_365_].anInt308);
                     else {
                         anIntArray1149[anInt1173++] = 0;
                         return;
@@ -4196,7 +4196,7 @@ final class Class66 {
                 }
                 if (i == 3615) {
                     int i_366_ = anIntArray1149[--anInt1173];
-                    if (Class50.aString863 != null && i_366_ < Class37.anInt496) anIntArray1149[anInt1173++] = (Class169.aClass19Array2261[i_366_].aByte310);
+                    if (TextureOpRasterizerShape.aString863 != null && i_366_ < Class37.anInt496) anIntArray1149[anInt1173++] = (Class169.aClass19Array2261[i_366_].aByte310);
                     else {
                         anIntArray1149[anInt1173++] = 0;
                         return;
@@ -4270,7 +4270,7 @@ final class Class66 {
                 }
                 if (i == 3626) {
                     int i_369_ = anIntArray1149[--anInt1173];
-                    if (Class50.aString863 != null && i_369_ < Class37.anInt496) aStringArray1152[anInt1170++] = (Class169.aClass19Array2261[i_369_].aString313);
+                    if (TextureOpRasterizerShape.aString863 != null && i_369_ < Class37.anInt496) aStringArray1152[anInt1170++] = (Class169.aClass19Array2261[i_369_].aString313);
                     else {
                         aStringArray1152[anInt1170++] = "";
                         return;
@@ -4308,7 +4308,7 @@ final class Class66 {
                 }
                 if (i == 3632) {
                     int i_372_ = anIntArray1149[--anInt1173];
-                    if (Class50.aString863 != null && i_372_ < Class37.anInt496) aStringArray1152[anInt1170++] = (Class169.aClass19Array2261[i_372_].aString306);
+                    if (TextureOpRasterizerShape.aString863 != null && i_372_ < Class37.anInt496) aStringArray1152[anInt1170++] = (Class169.aClass19Array2261[i_372_].aString306);
                     else {
                         aStringArray1152[anInt1170++] = "";
                         return;

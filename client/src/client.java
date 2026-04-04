@@ -715,8 +715,8 @@ public final class client extends Applet_Sub1 {
         Class192.method1438(-120);
         Class63.method601((byte) -85);
         Class151.method1209(i + -51);
-        Class50.method458(-14487);
-        Class50_Sub4.method471(i ^ ~0x751c);
+        TextureOpRasterizerShape.method458(-14487);
+        TextureOpRasterizerLine.method471(i ^ ~0x751c);
         Class50_Sub3.method469((byte) -62);
         Class50_Sub1.method460(i ^ 0x6e);
         Class59_Sub1_Sub2.method561(120);

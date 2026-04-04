@@ -32,7 +32,7 @@ final class Class103 {
             StructTypeList.aClass110_Sub1Array1146[i_13_] = StructTypeList.aClass110_Sub1Array1146[i_8_];
             StructTypeList.aClass110_Sub1Array1146[i_8_] = class110_sub1;
             for (int i_15_ = i_7_; i_15_ < i_8_; i_15_++) {
-                if (Class50_Sub4.method473((byte) -122, i_10_, class110_sub1, i, bool_11_, bool, (StructTypeList.aClass110_Sub1Array1146[i_15_])) <= 0) {
+                if (TextureOpRasterizerLine.method473((byte) -122, i_10_, class110_sub1, i, bool_11_, bool, (StructTypeList.aClass110_Sub1Array1146[i_15_])) <= 0) {
                     Class110_Sub1 class110_sub1_16_ = StructTypeList.aClass110_Sub1Array1146[i_15_];
                     StructTypeList.aClass110_Sub1Array1146[i_15_] = StructTypeList.aClass110_Sub1Array1146[i_14_];
                     StructTypeList.aClass110_Sub1Array1146[i_14_++] = class110_sub1_16_;

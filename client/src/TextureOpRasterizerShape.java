@@ -4,18 +4,19 @@
 
 import jaggl.OpenGL;
 
-abstract class Class50 {
+// Class50
+abstract class TextureOpRasterizerShape {
     static int anInt861;
-    int anInt862;
+    int outlineWidth;
     static String aString863 = null;
-    int anInt864;
-    int anInt865;
+    int outlineColour;
+    int fillColour;
 
-    abstract void method455(int i, int i_0_, int i_1_);
+    abstract void renderOutline(int i, int i_0_, int i_1_);
 
-    abstract void method456(int i, int i_2_, int i_3_);
+    abstract void renderFill(int i, int i_2_, int i_3_);
 
-    abstract void method457(int i, int i_4_, int i_5_);
+    abstract void render(int i, int i_4_, int i_5_);
 
     public static void method458(int i) {
         if (i != -14487) method459(-97, null, null, true);
@@ -41,9 +42,9 @@ abstract class Class50 {
         }
     }
 
-    Class50(int i, int i_7_, int i_8_) {
-        this.anInt862 = i_8_;
-        this.anInt864 = i;
-        this.anInt865 = i_7_;
+    TextureOpRasterizerShape(int i, int i_7_, int i_8_) {
+        this.outlineWidth = i_8_;
+        this.outlineColour = i;
+        this.fillColour = i_7_;
     }
 }

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class50_Sub1 extends Class50 {
+final class Class50_Sub1 extends TextureOpRasterizerShape {
     static Matrix aMatrix_5209;
     static int anInt5210;
     static int anInt5211;
@@ -22,14 +22,14 @@ final class Class50_Sub1 extends Class50 {
     static boolean[][] aBooleanArrayArray5225;
     static boolean aBoolean5226;
 
-    final void method455(int i, int i_0_, int i_1_) {
+    final void renderOutline(int i, int i_0_, int i_1_) {
         anInt5220++;
         if (i_1_ >= -98) aBoolean5221 = false;
         int i_2_ = anInt5214 * i >> 12;
         int i_3_ = i * anInt5213 >> 12;
         int i_4_ = anInt5212 * i_0_ >> 12;
         int i_5_ = i_0_ * anInt5222 >> 12;
-        Class299_Sub2.method2267(10499, i_5_, i_2_, this.anInt865, this.anInt864, this.anInt862, i_4_, i_3_);
+        Class299_Sub2.method2267(10499, i_5_, i_2_, this.fillColour, this.outlineColour, this.outlineWidth, i_4_, i_3_);
     }
 
     public static void method460(int i) {
@@ -48,19 +48,19 @@ final class Class50_Sub1 extends Class50 {
         anInt5212 = i_6_;
     }
 
-    final void method457(int i, int i_12_, int i_13_) {
+    final void render(int i, int i_12_, int i_13_) {
         anInt5211++;
         if (i_13_ >= -29) method460(-42);
     }
 
-    final void method456(int i, int i_14_, int i_15_) {
+    final void renderFill(int i, int i_14_, int i_15_) {
         if (i <= 87) anInt5214 = -17;
         anInt5218++;
         int i_16_ = i_14_ * anInt5214 >> 12;
         int i_17_ = anInt5213 * i_14_ >> 12;
         int i_18_ = anInt5212 * i_15_ >> 12;
         int i_19_ = i_15_ * anInt5222 >> 12;
-        Toolkit.method3641(i_18_, i_19_, (byte) -75, this.anInt864, i_17_, i_16_);
+        Toolkit.method3641(i_18_, i_19_, (byte) -75, this.outlineColour, i_17_, i_16_);
     }
 
     static final byte[] unwrap(boolean bool, Object object, int i) {

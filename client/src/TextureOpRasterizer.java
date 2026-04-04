@@ -3,7 +3,7 @@
  */
 
 final class TextureOpRasterizer extends TextureOp {
-    private Class50[] aClass50Array9481;
+    private TextureOpRasterizerShape[] aClass50Array9481;
     static int anInt9482;
     static int anInt9483;
     static int anInt9484;
@@ -20,13 +20,13 @@ final class TextureOpRasterizer extends TextureOp {
         Class348_Sub27.method3000(Option_Sub22.widthMask, 0, Class299_Sub2.heightMask, 0, i ^ 0x28);
         if (aClass50Array9481 != null) {
             for (int i_2_ = 0; aClass50Array9481.length > i_2_; i_2_++) {
-                Class50 class50 = aClass50Array9481[i_2_];
-                int i_3_ = class50.anInt864;
-                int i_4_ = class50.anInt865;
+                TextureOpRasterizerShape class50 = aClass50Array9481[i_2_];
+                int i_3_ = class50.outlineColour;
+                int i_4_ = class50.fillColour;
                 if (i_3_ < 0) {
-                    if (i_4_ >= 0) class50.method457(i_1_, i_0_, -43);
-                } else if (i_4_ < 0) class50.method456(i ^ ~0x6a, i_0_, i_1_);
-                else class50.method455(i_0_, i_1_, -124);
+                    if (i_4_ >= 0) class50.render(i_1_, i_0_, -43);
+                } else if (i_4_ < 0) class50.renderFill(i ^ ~0x6a, i_0_, i_1_);
+                else class50.renderOutline(i_0_, i_1_, -124);
             }
         }
     }
@@ -64,7 +64,7 @@ final class TextureOpRasterizer extends TextureOp {
     final void decode(Packet packet, int i, int i_6_) {
         if (i_6_ != 31015) aClass70_9485 = null;
         if (i == 0) {
-            aClass50Array9481 = new Class50[packet.readUnsignedByte(255)];
+            aClass50Array9481 = new TextureOpRasterizerShape[packet.readUnsignedByte(255)];
             while_216_:
             for (int i_7_ = 0; aClass50Array9481.length > i_7_; i_7_++) {
                 int i_8_ = packet.readUnsignedByte(255);
@@ -73,12 +73,16 @@ final class TextureOpRasterizer extends TextureOp {
                 do {
                     do {
                         if (i_9_ == 0) {
-                            aClass50Array9481[i_7_] = Class182.method1374(107, packet);
+                            aClass50Array9481[i_7_] = Class182.createOpRasterLine(107, packet);
                             continue while_216_;
-                        } else if (i_9_ != 1) {
-                            if (i_9_ != 2) {
-                                if (i_9_ != 3) continue while_216_;
-                            } else break;
+                        } else if (i_9_ == 1) {
+                        } else {
+                            if (i_9_ == 2) {
+                                break;
+                            } else if (i_9_ == 3) {
+                            } else {
+                                continue while_216_;
+                            }
                             break while_214_;
                         }
                         aClass50Array9481[i_7_] = (Class348_Sub23_Sub1.method2970(Class348_Sub21.method2955(i_6_, 31013), packet));

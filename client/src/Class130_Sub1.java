@@ -1266,7 +1266,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub16_Sub2.anInt8871 = 0;
         Class312.anInt3928 = 0;
         NativeToolkit.anInt8003 = 0;
-        Class50_Sub4.anInt5257 = 0;
+        TextureOpRasterizerLine.anInt5257 = 0;
         Class179.anInt2363 = 0;
         OpenGLxToolkit.anInt9831 = 0;
         Class14_Sub4.anInt8648 = 0;
@@ -1371,7 +1371,7 @@ final class Class130_Sub1 extends Class130 {
         OpenGLxToolkit.anInt9839 = 0;
         Class328_Sub3.anInt6520 = 0;
         OpenGLxToolkit.anInt9829 = 0;
-        Class50.anInt861 = 0;
+        TextureOpRasterizerShape.anInt861 = 0;
         Class318_Sub1_Sub3_Sub5.anInt10380 = 0;
         Class127_Sub1.anInt8380 = 0;
         Class367_Sub4.anInt7314 = 0;
@@ -1471,7 +1471,7 @@ final class Class130_Sub1 extends Class130 {
         Class306.anInt3875 = 0;
         Class318_Sub1_Sub5.anInt8776 = 0;
         TextureOpHslAdjust.anInt9384 = 0;
-        Class50_Sub4.anInt5256 = 0;
+        TextureOpRasterizerLine.anInt5256 = 0;
         Class91.anInt1522 = 0;
         Class348_Sub32.anInt6941 = 0;
         VarcstrTypeList.anInt1437 = 0;
@@ -1553,7 +1553,7 @@ final class Class130_Sub1 extends Class130 {
         FloorUnderlayTypeList.anInt2467 = 0;
         Packet.anInt7190 = 0;
         ObjectTypeList.anInt3357 = 0;
-        Class50_Sub4.anInt5260 = 0;
+        TextureOpRasterizerLine.anInt5260 = 0;
         s_Sub2.anInt8250 = 0;
         JavaThreadResource.anInt2200 = 0;
         Class318_Sub1_Sub1_Sub1.anInt9967 = 0;
@@ -2320,7 +2320,7 @@ final class Class130_Sub1 extends Class130 {
         Class286_Sub5.anInt6256 = 0;
         FontRenderer.anInt4061 = 0;
         Class98.anInt1568 = 0;
-        Class50_Sub4.anInt5261 = 0;
+        TextureOpRasterizerLine.anInt5261 = 0;
         Class348_Sub11.anInt4768 = 0;
         JavaMatrix.anInt5667 = 0;
         Applet_Sub1.anInt26 = 0;
@@ -3394,7 +3394,7 @@ final class Class130_Sub1 extends Class130 {
         Class348_Sub32.anInt6933 = 0;
         Class135.anInt1925 = 0;
         Class286_Sub4.anInt6238 = 0;
-        Class50_Sub4.anInt5263 = 0;
+        TextureOpRasterizerLine.anInt5263 = 0;
         NativeToolkit.anInt7918 = 0;
         NativeToolkit.anInt7973 = 0;
         Class64_Sub3.anInt5604 = 0;

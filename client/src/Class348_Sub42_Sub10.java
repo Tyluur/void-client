@@ -68,7 +68,7 @@ final class Class348_Sub42_Sub10 extends LinkedNode {
         Class238.aClass114_3133 = null;
         Class305.method2296(-99);
         TextureOpHslAdjust.anInt9383 = 0;
-        Class50.aString863 = null;
+        TextureOpRasterizerShape.aString863 = null;
         Class37.anInt496 = 0;
         Class169.aClass19Array2261 = null;
         Class125.anInt4930 = 0;

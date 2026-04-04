@@ -1685,7 +1685,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             Class230.anInt2986 = LoadingScreenRenderer.anInt3918;
             if (TextureOpMandelbrot.anInt9341 == 0) {
                 Class37.anInt496 = 0;
-                Class50.aString863 = null;
+                TextureOpRasterizerShape.aString863 = null;
                 Class169.aClass19Array2261 = null;
                 Class348_Sub21.aString6854 = null;
                 Class348_Sub3.aClass114_6584 = null;
@@ -1695,7 +1695,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
             boolean bool_233_ = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255) == 1;
             if (bool_233_) Class299.aClass348_Sub49_Sub2_3813.readString((byte) 108);
             long l = Class299.aClass348_Sub49_Sub2_3813.readLong(-456577760);
-            Class50.aString863 = Class27.method313(l, -104);
+            TextureOpRasterizerShape.aString863 = Class27.method313(l, -104);
             HitmarkTypeList.aByte2871 = Class299.aClass348_Sub49_Sub2_3813.readByte(-90);
             int i = Class299.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             if (i == 255) {

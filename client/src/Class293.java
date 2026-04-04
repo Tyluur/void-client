@@ -40,7 +40,7 @@ final class Class293 implements Runnable {
         while (!aBoolean3750 && aBoolean3745) {
             if (aClass315_3743 == null || aClass315_3743.method2360(-112)) {
                 aBoolean3744 = false;
-                aLong3742 = Class50_Sub4.aClass47_5262.method446(1);
+                aLong3742 = TextureOpRasterizerLine.aClass47_5262.method446(1);
                 synchronized (this) {
                     try {
                         this.wait();

@@ -87,7 +87,7 @@ final class Class348_Sub42_Sub14 extends LinkedNode {
         anInt9637++;
         if (!TextureOpIrregularBricks.aBoolean9307 || !Class23.aBoolean351) Class348_Sub42_Sub10.anInt9577 = 0;
         else {
-            if (TextureOpColourise.aBoolean9352) ItemDefinition.aLong2789 = Class50_Sub4.aClass47_5262.method446(1);
+            if (TextureOpColourise.aBoolean9352) ItemDefinition.aLong2789 = TextureOpRasterizerLine.aClass47_5262.method446(1);
             Class42.anInt562 = 0;
             Class348_Sub23_Sub2.anInt9039 = 0;
             TextureOpVerticalGradient.anInt9112 = 0;
@@ -136,7 +136,7 @@ final class Class348_Sub42_Sub14 extends LinkedNode {
                 }
                 JavaBillboardAttributes.anInt4319 = 2;
             }
-            if (TextureOpColourise.aBoolean9352) Class286_Sub6.aLong6276 = (Class50_Sub4.aClass47_5262.method446(1) + -ItemDefinition.aLong2789);
+            if (TextureOpColourise.aBoolean9352) Class286_Sub6.aLong6276 = (TextureOpRasterizerLine.aClass47_5262.method446(1) + -ItemDefinition.aLong2789);
         }
     }
 

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class50_Sub4 extends Class50 {
+final class TextureOpRasterizerLine extends TextureOpRasterizerShape {
     private final int anInt5255;
     static int anInt5256;
     static int anInt5257;
@@ -14,31 +14,31 @@ final class Class50_Sub4 extends Class50 {
     static int anInt5263;
     private int anInt5264;
 
-    final void method455(int i, int i_0_, int i_1_) {
+    final void renderOutline(int i, int i_0_, int i_1_) {
         anInt5256++;
         if (i_1_ >= -98) method472(-91, null);
     }
 
-    final void method457(int i, int i_2_, int i_3_) {
+    final void render(int i, int i_2_, int i_3_) {
         anInt5261++;
         int i_4_ = i_2_ * anInt5255 >> 12;
         if (i_3_ >= -29) anInt5264 = 119;
         int i_5_ = i_2_ * anInt5264 >> 12;
         int i_6_ = anInt5259 * i >> 12;
         int i_7_ = anInt5258 * i >> 12;
-        Class339.method2665(i_4_, (byte) 118, this.anInt865, i_6_, i_7_, i_5_);
+        Class339.method2665(i_4_, (byte) 118, this.fillColour, i_6_, i_7_, i_5_);
     }
 
     public static void method471(int i) {
         if (i == -30065) aClass47_5262 = null;
     }
 
-    final void method456(int i, int i_8_, int i_9_) {
+    final void renderFill(int i, int i_8_, int i_9_) {
         if (i < 87) anInt5264 = 33;
         anInt5260++;
     }
 
-    Class50_Sub4(int i, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_) {
+    TextureOpRasterizerLine(int i, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_) {
         super(-1, i_13_, i_14_);
         anInt5258 = i_12_;
         anInt5264 = i_11_;
