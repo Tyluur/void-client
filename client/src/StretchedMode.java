@@ -10,7 +10,7 @@ final class StretchedMode {
     // ---------------------------------------------------------------
 
     /** Master toggle. Set to true to enable stretched mode. */
-    static boolean enabled = false;
+    static boolean enabled = true;
 
     /**
      * When true, adds black bars to preserve the game's aspect ratio.
