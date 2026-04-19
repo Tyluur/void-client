@@ -13,14 +13,30 @@ final class Class348_Sub31_Sub1 extends Class348_Sub31 {
     private Rectangle aRectangle9067;
 
     final void method3011(int i, int i_0_, int i_1_, Graphics graphics, int i_2_, int i_3_, int i_4_, int i_5_) {
-        aShape9064 = graphics.getClip();
-        aRectangle9067.x = i_3_;
-        aRectangle9067.width = i_4_;
-        aRectangle9067.y = i;
-        aRectangle9067.height = i_1_;
-        graphics.setClip(aRectangle9067);
-        graphics.drawImage(anImage9066, i_3_ + -i_0_, -i_5_ + i, aCanvas9065);
-        if (i_2_ == -1) graphics.setClip(aShape9064);
+        if (StretchedMode.enabled) {
+            Shape savedClip = graphics.getClip();
+            graphics.setClip(null);
+            StretchedMode.applyInterpolation(graphics);
+            graphics.drawImage(anImage9066,
+                    StretchedMode.destX,
+                    StretchedMode.destY,
+                    StretchedMode.destX + StretchedMode.destW,
+                    StretchedMode.destY + StretchedMode.destH,
+                    0, 0,
+                    anInt6917,
+                    anInt6920,
+                    aCanvas9065);
+            if (i_2_ == -1) graphics.setClip(savedClip);
+        } else {
+            aShape9064 = graphics.getClip();
+            aRectangle9067.x = i_3_;
+            aRectangle9067.width = i_4_;
+            aRectangle9067.y = i;
+            aRectangle9067.height = i_1_;
+            graphics.setClip(aRectangle9067);
+            graphics.drawImage(anImage9066, i_3_ + -i_0_, -i_5_ + i, aCanvas9065);
+            if (i_2_ == -1) graphics.setClip(aShape9064);
+        }
     }
 
     final void method3008(Canvas canvas, int i, int i_6_, int i_7_) {
