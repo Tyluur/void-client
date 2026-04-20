@@ -59,15 +59,6 @@ java -d32 -jar client/build/libs/void-client.jar
 
 - `./gradlew shadowJar`: Builds the executable fat JAR.
 - `./gradlew bundleApp`: Bundles the client with a local 32-bit JRE.
-- `context-txt.py`: TODO: Document purpose of this script.
-
-## Environment Variables
-
-- TODO: Document any environment variables used by the client or build process.
-
-## Tests
-
-- TODO: Automated tests are not currently implemented.
 
 ## License
 
