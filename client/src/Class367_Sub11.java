@@ -39,7 +39,8 @@ final class Class367_Sub11 extends Class367 {
         anInt7401++;
         int i_0_ = this.aHa_Sub3_4479.method3941(102);
         Class101_Sub2 class101_sub2 = this.aHa_Sub3_4479.method3887((byte) 98);
-        if (!aBoolean7411) OpenGL.glBindProgramARB(34336, (i_0_ != 2147483647 ? aClass193_7404.anInt2584 : aClass193_7395.anInt2584));
+        if (!aBoolean7411)
+            OpenGL.glBindProgramARB(34336, (i_0_ != 2147483647 ? aClass193_7404.anInt2584 : aClass193_7395.anInt2584));
         else OpenGL.glBindProgramARB(34336, (i_0_ == 2147483647 ? aClass193_7392.anInt2584 : aClass193_7407.anInt2584));
         OpenGL.glEnable(34336);
         aBoolean7406 = true;
@@ -154,15 +155,32 @@ final class Class367_Sub11 extends Class367 {
                             /* empty */
                         }
                     }
-                    Class305.aCanvas3869.setSize(Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
-                    if (Class348_Sub8.aHa6654 != null) {
-                        if (Class59_Sub1.aBoolean5300) s.method3980(120, Class305.aCanvas3869);
-                        else Class348_Sub8.aHa6654.method3669(Class305.aCanvas3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
+                    if (StretchedMode.enabled) {
+                        // Class272.anInt3473 and Class348_Sub22.anInt6857 have already been updated
+                        // to window content dimensions in the lines above this block, so they are
+                        // safe to use directly here as the stretched canvas dimensions.
+                        // Note: method3669 still receives game resolution — this is intentional,
+                        // as it sets up the internal render buffer which must stay at game resolution.
+                        Class305.aCanvas3869.setSize(Class272.anInt3473, Class348_Sub22.anInt6857);
+                        Class305.aCanvas3869.setLocation(0, 0);
+                        StretchedMode.updateStretchedDimensions(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, Class272.anInt3473, Class348_Sub22.anInt6857);
+                        if (Class348_Sub8.aHa6654 != null) {
+                            if (Class59_Sub1.aBoolean5300) s.method3980(120, Class305.aCanvas3869);
+                            else
+                                Class348_Sub8.aHa6654.method3669(Class305.aCanvas3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
+                        }
+                    } else {
+                        Class305.aCanvas3869.setSize(Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
+                        if (Class348_Sub8.aHa6654 != null) {
+                            if (Class59_Sub1.aBoolean5300) s.method3980(120, Class305.aCanvas3869);
+                            else
+                                Class348_Sub8.aHa6654.method3669(Class305.aCanvas3869, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
+                        }
+                        if (Class52.aFrame4904 == container) {
+                            Insets insets = Class52.aFrame4904.getInsets();
+                            Class305.aCanvas3869.setLocation(insets.left - -Class348_Sub48.anInt7129, Class335.anInt4167 + insets.top);
+                        } else Class305.aCanvas3869.setLocation((Class348_Sub48.anInt7129), Class335.anInt4167);
                     }
-                    if (Class52.aFrame4904 == container) {
-                        Insets insets = Class52.aFrame4904.getInsets();
-                        Class305.aCanvas3869.setLocation(insets.left - -Class348_Sub48.anInt7129, Class335.anInt4167 + insets.top);
-                    } else Class305.aCanvas3869.setLocation((Class348_Sub48.anInt7129), Class335.anInt4167);
                     if (r.anInt9721 != -1) Class239.method1713(true, 520);
                     Class140.method1170((byte) -78);
                 } else {

@@ -83,6 +83,11 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
         graphics.setClip(null);
 
         if (StretchedMode.enabled) {
+            int cW = aCanvas9073.getWidth();
+            int cH = aCanvas9073.getHeight();
+            if (cW > 0 && cH > 0 && (cW != anInt6917 || cH != anInt6920)) {
+                StretchedMode.updateStretchedDimensions(anInt6917, anInt6920, cW, cH);
+            }
             StretchedMode.applyInterpolation(graphics);
             graphics.drawImage(anImage9075,
                     StretchedMode.destX,

@@ -14,6 +14,13 @@ final class Class348_Sub31_Sub1 extends Class348_Sub31 {
 
     final void method3011(int i, int i_0_, int i_1_, Graphics graphics, int i_2_, int i_3_, int i_4_, int i_5_) {
         if (StretchedMode.enabled) {
+            // Read live canvas dimensions — avoids stale stored values from startup timing.
+            int cW = aCanvas9065.getWidth();
+            int cH = aCanvas9065.getHeight();
+            if (cW > 0 && cH > 0 && (cW != anInt6917 || cH != anInt6920)) {
+                // Canvas is window-sized, not game-sized — update stored dest rect.
+                StretchedMode.updateStretchedDimensions(anInt6917, anInt6920, cW, cH);
+            }
             Shape savedClip = graphics.getClip();
             graphics.setClip(null);
             StretchedMode.applyInterpolation(graphics);
