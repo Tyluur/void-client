@@ -52,7 +52,7 @@ final class Class199 {
                         graphics_3_.setColor(color_2_);
                         graphics_3_.drawString(Class348_Sub42_Sub16.aString9665, (Class321.anInt4017 / 2 - (Class348_Sub42_Sub16.aString9665.length() * 6 / 2)), -26 + Class348_Sub42_Sub8_Sub2.anInt10432 / 2);
                     }
-                    graphics.drawImage(Class342.anImage4249, 0, 0, null);
+                    StretchedMode.drawScaled(graphics, Class342.anImage4249);
                 } catch (Exception exception) {
                     graphics.setColor(Color.black);
                     graphics.fillRect(0, 0, Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);

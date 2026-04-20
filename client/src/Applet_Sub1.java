@@ -195,14 +195,41 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
             } else container = Class52.aFrame4904;
         } else container = Class34.aFrame476;
         container.setLayout(null);
+
         Class305.aCanvas3869 = new Canvas_Sub1(this);
         container.add(Class305.aCanvas3869);
-        Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
+
+        if (StretchedMode.enabled) {
+            // Class272.anInt3473 equals game resolution at startup — it is only updated
+            // to window dimensions once the game loop runs method116 for the first time.
+            // Read the container size directly so the canvas is correctly window-sized
+            // even during the loading phase (before the game loop has started).
+            int winW = container.getSize().width;
+            int winH = container.getSize().height;
+            if (container == Class52.aFrame4904) {
+                Insets ins = Class52.aFrame4904.getInsets();
+                winW -= ins.left + ins.right;
+                winH -= ins.top + ins.bottom;
+            }
+            if (winW <= 0) winW = Class272.anInt3473;
+            if (winH <= 0) winH = Class348_Sub22.anInt6857;
+            Class305.aCanvas3869.setSize(winW, winH);
+            Class305.aCanvas3869.setLocation(0, 0);
+            StretchedMode.updateStretchedDimensions(
+                    Class321.anInt4017,
+                    Class348_Sub42_Sub8_Sub2.anInt10432,
+                    winW, winH);
+        } else {
+            Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
+            if (container == Class52.aFrame4904) {
+                Insets insets = Class52.aFrame4904.getInsets();
+                Class305.aCanvas3869.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -Class335.anInt4167);
+            } else {
+                Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
+            }
+        }
+
         Class305.aCanvas3869.setVisible(true);
-        if (container == Class52.aFrame4904) {
-            Insets insets = Class52.aFrame4904.getInsets();
-            Class305.aCanvas3869.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -Class335.anInt4167);
-        } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
         Class305.aCanvas3869.addFocusListener(this);
         Class305.aCanvas3869.requestFocus();
         Class348_Sub40_Sub16.aBoolean9229 = true;
@@ -240,12 +267,24 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         if (Class159.anInt2127++ > 50) {
             Class159.anInt2127 -= 50;
             Class49.aBoolean4726 = true;
-            Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
+            if (StretchedMode.enabled) {
+                Class305.aCanvas3869.setSize(Class272.anInt3473, Class348_Sub22.anInt6857);
+                Class305.aCanvas3869.setLocation(0, 0);
+                StretchedMode.updateStretchedDimensions(
+                        Class321.anInt4017,
+                        Class348_Sub42_Sub8_Sub2.anInt10432,
+                        Class272.anInt3473,
+                        Class348_Sub22.anInt6857);
+            } else {
+                Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
+                if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
+                    Insets insets = Class52.aFrame4904.getInsets();
+                    Class305.aCanvas3869.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + Class335.anInt4167));
+                } else {
+                    Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
+                }
+            }
             Class305.aCanvas3869.setVisible(true);
-            if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
-                Insets insets = Class52.aFrame4904.getInsets();
-                Class305.aCanvas3869.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + Class335.anInt4167));
-            } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
         }
         method93(-11018);
         if (i > -107) method90(true, true);

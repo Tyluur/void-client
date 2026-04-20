@@ -36,9 +36,9 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
     public final synchronized void mouseReleased(MouseEvent mouseevent) {
         int i = method3600(mouseevent, -75);
         if ((i & anInt7422) == 0) i = anInt7422;
-        if (0 != (0x1 & i)) method3598(mouseevent.getX(), 3, mouseevent.getClickCount(), mouseevent.getY(), false);
-        if ((i & 0x4) != 0) method3598(mouseevent.getX(), 5, mouseevent.getClickCount(), mouseevent.getY(), false);
-        if ((0x2 & i) != 0) method3598(mouseevent.getX(), 4, mouseevent.getClickCount(), mouseevent.getY(), false);
+        if (0 != (0x1 & i)) method3598(StretchedMode.toGameX(mouseevent.getX()), 3, mouseevent.getClickCount(), StretchedMode.toGameY(mouseevent.getY()), false);
+        if ((i & 0x4) != 0) method3598(StretchedMode.toGameX(mouseevent.getX()), 5, mouseevent.getClickCount(), StretchedMode.toGameY(mouseevent.getY()), false);
+        if ((0x2 & i) != 0) method3598(StretchedMode.toGameX(mouseevent.getX()), 4, mouseevent.getClickCount(), StretchedMode.toGameY(mouseevent.getY()), false);
         anInt7422 &= ~i;
         if (mouseevent.isPopupTrigger()) mouseevent.consume();
     }
@@ -50,9 +50,9 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
 
     private final void method3599(int i, int i_4_, int i_5_) {
         if (i_4_ == -1) {
-            anInt7421 = i_5_;
-            anInt7423 = i;
-            if (aBoolean7424) method3598(i, -1, 0, i_5_, false);
+            anInt7421 = StretchedMode.toGameY(i_5_);
+            anInt7423 = StretchedMode.toGameX(i);
+            if (aBoolean7424) method3598(StretchedMode.toGameX(i), -1, 0, StretchedMode.toGameY(i_5_), false);
         }
     }
 
@@ -63,9 +63,9 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
 
     public final synchronized void mousePressed(MouseEvent mouseevent) {
         int i = method3600(mouseevent, -90);
-        if (1 == i) method3598(mouseevent.getX(), 0, mouseevent.getClickCount(), mouseevent.getY(), false);
-        else if (i == 4) method3598(mouseevent.getX(), 2, mouseevent.getClickCount(), mouseevent.getY(), false);
-        else if (i == 2) method3598(mouseevent.getX(), 1, mouseevent.getClickCount(), mouseevent.getY(), false);
+        if (1 == i) method3598(StretchedMode.toGameX(mouseevent.getX()), 0, mouseevent.getClickCount(), StretchedMode.toGameY(mouseevent.getY()), false);
+        else if (i == 4) method3598(StretchedMode.toGameX(mouseevent.getX()), 2, mouseevent.getClickCount(), StretchedMode.toGameY(mouseevent.getY()), false);
+        else if (i == 2) method3598(StretchedMode.toGameX(mouseevent.getX()), 1, mouseevent.getClickCount(), StretchedMode.toGameY(mouseevent.getY()), false);
         anInt7422 |= i;
         if (mouseevent.isPopupTrigger()) mouseevent.consume();
     }
@@ -135,8 +135,8 @@ final class Class373_Sub1 extends Class373 implements MouseListener, MouseMotion
     }
 
     public final synchronized void mouseWheelMoved(MouseWheelEvent mousewheelevent) {
-        int i = mousewheelevent.getX();
-        int i_8_ = mousewheelevent.getY();
+        int i = StretchedMode.toGameX(mousewheelevent.getX());
+        int i_8_ = StretchedMode.toGameY(mousewheelevent.getY());
         int i_9_ = mousewheelevent.getWheelRotation();
         method3598(i, 6, i_9_, i_8_, false);
         mousewheelevent.consume();

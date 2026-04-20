@@ -246,7 +246,7 @@ final class Class294 implements Interface16 {
                     graphics_6_.setFont(aFont5053);
                     graphics_6_.setColor(aColor5034);
                     graphics_6_.drawString(string, i_26_ + (anInt5023 + -aFontMetrics5024.stringWidth(string)) / 2, anInt5046 + (4 + anInt5036 / 2 + i_27_));
-                    graphics.drawImage(Class342.anImage4249, 0, 0, null);
+                    StretchedMode.drawScaled(graphics, Class342.anImage4249);
                 } catch (Exception exception) {
                     aBoolean5022 = true;
                 }

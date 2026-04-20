@@ -78,9 +78,31 @@ final class Class348_Sub31_Sub2 extends Class348_Sub31 implements ImageProducer 
         if (i_7_ != -1) method3011(-26, 63, -8, null, 101, 114, -111, 37);
         anInt9074++;
         method3015(i_6_, 25786, i_5_, i_10_, i_9_);
+
         Shape shape = graphics.getClip();
-        graphics.clipRect(i_8_, i, i_9_, i_6_);
-        graphics.drawImage(anImage9075, i_8_ - i_5_, -i_10_ + i, aCanvas9073);
+        graphics.setClip(null);
+
+        if (StretchedMode.enabled) {
+            int cW = aCanvas9073.getWidth();
+            int cH = aCanvas9073.getHeight();
+            if (cW > 0 && cH > 0 && (cW != anInt6917 || cH != anInt6920)) {
+                StretchedMode.updateStretchedDimensions(anInt6917, anInt6920, cW, cH);
+            }
+            StretchedMode.applyInterpolation(graphics);
+            graphics.drawImage(anImage9075,
+                    StretchedMode.destX,
+                    StretchedMode.destY,
+                    StretchedMode.destX + StretchedMode.destW,
+                    StretchedMode.destY + StretchedMode.destH,
+                    0, 0,
+                    anInt6917,
+                    anInt6920,
+                    aCanvas9073);
+        } else {
+            graphics.clipRect(i_8_, i, i_9_, i_6_);
+            graphics.drawImage(anImage9075, i_8_ - i_5_, -i_10_ + i, aCanvas9073);
+        }
+
         graphics.setClip(shape);
     }
 
