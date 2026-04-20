@@ -27,7 +27,8 @@ final class Class215 {
                 Class14_Sub2.method243(37);
             }
         }
-        if (i_2_ == 3 && Class34.aFrame476 == null) method1580((byte) -126, true, -1, i_1_, Class316.aClass348_Sub51_3959.aClass239_Sub8_7227.method1751(-32350), -1);
+        if (i_2_ == 3 && Class34.aFrame476 == null)
+            method1580((byte) -126, true, -1, i_1_, Class316.aClass348_Sub51_3959.aClass239_Sub8_7227.method1751(-32350), -1);
         else {
             java.awt.Container container;
             if (Class34.aFrame476 != null) {
@@ -58,17 +59,32 @@ final class Class215 {
             }
             if (bool) Class348_Sub47.method3327(1406);
             else {
-                Class305.aCanvas3869.setSize(Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
-                if (!Class59_Sub1.aBoolean5300) Class348_Sub8.aHa6654.method3669(Class305.aCanvas3869, Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
-                else s.method3980(86, Class305.aCanvas3869);
-                if (Class52.aFrame4904 == container) {
-                    Insets insets = Class52.aFrame4904.getInsets();
-                    Class305.aCanvas3869.setLocation((Class348_Sub48.anInt7129 + insets.left), (insets.top - -Class335.anInt4167));
-                } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
+                // STRETCHED MODE: size canvas to full window, not game resolution.
+                // Without this guard, the 500ms deferred resize timer (aLong8866)
+                // calls method830 → method1580 → setSize(gameRes) and snaps the
+                // canvas back to game resolution ~500ms after every layout event.
+                if (StretchedMode.enabled) {
+                    Class305.aCanvas3869.setSize(Class272.anInt3473, Class348_Sub22.anInt6857);
+                    Class305.aCanvas3869.setLocation(0, 0);
+                    StretchedMode.updateStretchedDimensions(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432, Class272.anInt3473, Class348_Sub22.anInt6857);
+                    if (!Class59_Sub1.aBoolean5300)
+                        Class348_Sub8.aHa6654.method3669(Class305.aCanvas3869, Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
+                    else s.method3980(86, Class305.aCanvas3869);
+                } else {
+                    Class305.aCanvas3869.setSize(Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
+                    if (!Class59_Sub1.aBoolean5300)
+                        Class348_Sub8.aHa6654.method3669(Class305.aCanvas3869, Class321.anInt4017, (Class348_Sub42_Sub8_Sub2.anInt10432));
+                    else s.method3980(86, Class305.aCanvas3869);
+                    if (Class52.aFrame4904 == container) {
+                        Insets insets = Class52.aFrame4904.getInsets();
+                        Class305.aCanvas3869.setLocation((Class348_Sub48.anInt7129 + insets.left), (insets.top - -Class335.anInt4167));
+                    } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
+                }
             }
             Class50_Sub1.aBoolean5219 = i_2_ >= 2;
             if (r.anInt9721 != -1) Class239.method1713(true, 520);
-            if (Class348_Sub40_Sub8.aClass238_9165 != null && Class334.method2653(true, Class240.anInt4674)) Class286_Sub2.method2145(-24498);
+            if (Class348_Sub40_Sub8.aClass238_9165 != null && Class334.method2653(true, Class240.anInt4674))
+                Class286_Sub2.method2145(-24498);
             for (int i_5_ = 0; i_5_ < 100; i_5_++)
                 Class152.aBooleanArray2076[i_5_] = true;
             Class49.aBoolean4726 = true;
