@@ -3,7 +3,9 @@ package runelite.plugins.xptracker;
 import runelite.api.Experience;
 import runelite.api.Skill;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -13,10 +15,13 @@ import java.util.Map;
 public class XpState
 {
 	private final Map<Skill, SkillSnapshot> skillSnapshots = new HashMap<>();
+	// Maintains the order of skills as they appear in the UI
+	private final List<Skill> order = new ArrayList<>(Skill.values().length);
 
 	public void reset()
 	{
 		skillSnapshots.clear();
+		order.clear();
 	}
 
 	public void updateSkill(Skill skill, int startXp, int currentXp, int startLevel, int currentLevel)
@@ -32,6 +37,60 @@ public class XpState
 	public boolean isTracking(Skill skill)
 	{
 		return skillSnapshots.containsKey(skill);
+	}
+
+	/**
+	 * Update the stored order of a skill, following a drag-and-drop operation.
+	 *
+	 * @param skill       Skill that has been moved
+	 * @param newPosition New 0-indexed position of this skill
+	 */
+	public void setOrder(Skill skill, int newPosition)
+	{
+		int oldPosition = order.indexOf(skill);
+		if (oldPosition != -1 && oldPosition != newPosition)
+		{
+			order.remove(oldPosition);
+			order.add(newPosition, skill);
+		}
+	}
+
+	/**
+	 * Update the order list when a skill gains XP.
+	 * If prioritizeRecentSkills is true, moves the skill to the front.
+	 * Otherwise, adds it to the end if not already present.
+	 *
+	 * @param skill                Skill that gained XP
+	 * @param prioritizeRecentSkills Whether to prioritize recent skills
+	 */
+	public void updateOrder(Skill skill, boolean prioritizeRecentSkills)
+	{
+		if (prioritizeRecentSkills)
+		{
+			int idx = order.indexOf(skill);
+			if (idx != 0)
+			{
+				order.remove(skill);
+				order.add(0, skill);
+			}
+		}
+		else
+		{
+			if (!order.contains(skill))
+			{
+				order.add(skill);
+			}
+		}
+	}
+
+	/**
+	 * Get the ordered list of skills.
+	 *
+	 * @return List of skills in their display order
+	 */
+	public List<Skill> getOrder()
+	{
+		return order;
 	}
 
 	public int getTotalXpGained()

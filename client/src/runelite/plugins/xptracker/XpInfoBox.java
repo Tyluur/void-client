@@ -20,7 +20,7 @@ class XpInfoBox extends JPanel
 	private final XpTrackerPlugin xpTrackerPlugin;
 	private final XpTrackerConfig xpTrackerConfig;
 	private final Client client;
-	private final JPanel panel;
+	private final java.awt.Container panel;
 	private final Skill skill;
 
 	private final JPanel container = new JPanel();
@@ -34,7 +34,7 @@ class XpInfoBox extends JPanel
 	private final JLabel topRightStat = new JLabel();
 	private final JLabel bottomRightStat = new JLabel();
 
-	XpInfoBox(XpTrackerPlugin xpTrackerPlugin, XpTrackerConfig xpTrackerConfig, Client client, JPanel panel, Skill skill, SkillIconManager iconManager)
+	XpInfoBox(XpTrackerPlugin xpTrackerPlugin, XpTrackerConfig xpTrackerConfig, Client client, java.awt.Container panel, Skill skill, SkillIconManager iconManager)
 	{
 		this.xpTrackerPlugin = xpTrackerPlugin;
 		this.xpTrackerConfig = xpTrackerConfig;

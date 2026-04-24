@@ -6,6 +6,7 @@ import runelite.game.SkillIconManager;
 import runelite.ui.ColorScheme;
 import runelite.ui.FontManager;
 import runelite.ui.PluginPanel;
+import runelite.ui.components.DragAndDropReorderPane;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,7 +20,7 @@ public class XpPanel extends PluginPanel
 	private final JLabel overallExpHour = new JLabel(htmlLabel("Per hour: ", "0"));
 	private final JPanel overallPanel = new JPanel();
 	private final JPanel errorPanel = new JPanel();
-	private final JPanel infoBoxPanel;
+	private final DragAndDropReorderPane infoBoxPanel;
 	private final SkillIconManager iconManager;
 
 	XpPanel(XpTrackerPlugin xpTrackerPlugin, XpTrackerConfig xpTrackerConfig, Client client)
@@ -58,9 +59,13 @@ public class XpPanel extends PluginPanel
 		overallPanel.add(overallIconLabel, BorderLayout.WEST);
 		overallPanel.add(overallInfo, BorderLayout.CENTER);
 
-		infoBoxPanel = new JPanel();
-		infoBoxPanel.setLayout(new BoxLayout(infoBoxPanel, BoxLayout.Y_AXIS));
+		infoBoxPanel = new DragAndDropReorderPane();
 		infoBoxPanel.setBackground(ColorScheme.DARK_GRAY_COLOR);
+		infoBoxPanel.addDragListener(component ->
+		{
+			XpInfoBox c = (XpInfoBox) component;
+			xpTrackerPlugin.updateSkillOrderState(c.getSkill(), infoBoxPanel.getPosition(component));
+		});
 
 		layoutPanel.add(overallPanel);
 		layoutPanel.add(infoBoxPanel);

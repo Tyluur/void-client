@@ -105,7 +105,12 @@ public class XpTrackerPlugin extends Plugin
 	{
 		java.util.Set<Skill> changedSkills = new java.util.HashSet<>();
 
-		for (Skill skill : Skill.values())
+		// Iterate through skills in the stored order, falling back to enum order if empty
+		java.util.List<Skill> skillsToCheck = xpState.getOrder().isEmpty() 
+			? java.util.Arrays.asList(Skill.values())
+			: xpState.getOrder();
+
+		for (Skill skill : skillsToCheck)
 		{
 			if (skill == Skill.OVERALL)
 			{
@@ -132,12 +137,14 @@ public class XpTrackerPlugin extends Plugin
 				{
 					snapshot.update(currentXp, currentLevel);
 					changedSkills.add(skill);
+					// Update order to prioritize this skill (recent XP)
+					xpState.updateOrder(skill, true);
 				}
 			}
 		}
 
-		// Update panel with snapshot data for all tracked skills
-		for (Skill skill : Skill.values())
+		// Update panel with snapshot data for all tracked skills in order
+		for (Skill skill : xpState.getOrder())
 		{
 			if (skill == Skill.OVERALL)
 			{
@@ -195,6 +202,17 @@ public class XpTrackerPlugin extends Plugin
 	XpTrackerConfig getConfig()
 	{
 		return config;
+	}
+
+	/**
+	 * Update the stored order of a skill, following a drag-and-drop operation.
+	 *
+	 * @param skill       Skill that has been moved
+	 * @param newPosition New 0-indexed position of this skill
+	 */
+	void updateSkillOrderState(Skill skill, int newPosition)
+	{
+		xpState.setOrder(skill, newPosition);
 	}
 
 	private static BufferedImage createIcon()
