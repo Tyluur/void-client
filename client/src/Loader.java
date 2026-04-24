@@ -126,8 +126,19 @@ public class Loader extends Applet {
             aJPanel3.setPreferredSize(new Dimension(765, 503));
             clientUI.getClientPanel().add(aJPanel3, BorderLayout.CENTER);
 
+            // Initialize Guice DI and plugin system
+            com.google.inject.Injector injector = com.google.inject.Guice.createInjector(
+                new runelite.VoidClientModule(clientUI));
+
+            runelite.plugins.PluginManager pluginManager = runelite.plugins.PluginManager.getInstance();
+            pluginManager.setClientUI(clientUI);
+            pluginManager.setInjector(injector);
+
             // Add default navigation buttons (placeholder plugins)
             addDefaultNavButtons(clientUI);
+
+            // Load plugins (plugins can now use @Inject for Client, ConfigManager, etc.)
+            pluginManager.add(runelite.plugins.tileindicators.TileIndicatorsPlugin.class);
 
             // Set window icons
             ArrayList<Image> icons = new ArrayList<>();
@@ -201,7 +212,7 @@ public class Loader extends Applet {
         // Configuration panel
         clientUI.addNavigation(runelite.ui.NavigationButton.builder()
             .priority(0)
-            .icon(createIcon(new Color(200, 200, 200), "\u2699"))
+            .icon(createIcon(new Color(200, 200, 200), 0))
             .tooltip("Configuration")
             .panel(new runelite.ui.PluginPanel() {
                 { // instance initializer
@@ -219,7 +230,7 @@ public class Loader extends Applet {
         // Account panel
         clientUI.addNavigation(runelite.ui.NavigationButton.builder()
             .priority(1)
-            .icon(createIcon(new Color(220, 138, 0), "\u263A"))
+            .icon(createIcon(new Color(220, 138, 0), 1))
             .tooltip("Account")
             .panel(new runelite.ui.PluginPanel() {
                 {
@@ -237,7 +248,7 @@ public class Loader extends Applet {
         // Loot Tracker panel
         clientUI.addNavigation(runelite.ui.NavigationButton.builder()
             .priority(2)
-            .icon(createIcon(new Color(55, 240, 70), "\u2605"))
+            .icon(createIcon(new Color(55, 240, 70), 2))
             .tooltip("Loot Tracker")
             .panel(new runelite.ui.PluginPanel() {
                 {
@@ -255,7 +266,7 @@ public class Loader extends Applet {
         // HiScores panel
         clientUI.addNavigation(runelite.ui.NavigationButton.builder()
             .priority(3)
-            .icon(createIcon(new Color(50, 160, 250), "\u2191"))
+            .icon(createIcon(new Color(50, 160, 250), 3))
             .tooltip("HiScores")
             .panel(new runelite.ui.PluginPanel() {
                 {
@@ -271,16 +282,39 @@ public class Loader extends Applet {
             .build());
     }
 
-    private static java.awt.image.BufferedImage createIcon(Color color, String symbol) {
+    private static java.awt.image.BufferedImage createIcon(Color color, int shape) {
         java.awt.image.BufferedImage img = new java.awt.image.BufferedImage(16, 16, java.awt.image.BufferedImage.TYPE_INT_ARGB);
         Graphics2D g = img.createGraphics();
         g.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
         g.setColor(color);
-        g.setFont(new Font(Font.DIALOG, Font.BOLD, 14));
-        java.awt.FontMetrics fm = g.getFontMetrics();
-        int x = (16 - fm.stringWidth(symbol)) / 2;
-        int y = (16 + fm.getAscent() - fm.getDescent()) / 2;
-        g.drawString(symbol, x, y);
+        switch (shape) {
+            case 0: // gear (config)
+                g.setStroke(new java.awt.BasicStroke(1.5f));
+                g.drawOval(4, 4, 8, 8);
+                g.fillOval(6, 6, 4, 4);
+                for (int a = 0; a < 360; a += 45) {
+                    double r = Math.toRadians(a);
+                    g.drawLine(8 + (int)(5 * Math.cos(r)), 8 + (int)(5 * Math.sin(r)),
+                               8 + (int)(7 * Math.cos(r)), 8 + (int)(7 * Math.sin(r)));
+                }
+                break;
+            case 1: // person (account)
+                g.fillOval(5, 2, 6, 6);
+                g.fillArc(2, 9, 12, 10, 0, 180);
+                break;
+            case 2: // chest (loot)
+                g.fillRoundRect(2, 5, 12, 9, 3, 3);
+                g.setColor(color.darker());
+                g.drawLine(2, 9, 14, 9);
+                g.setColor(color);
+                g.fillOval(6, 7, 4, 4);
+                break;
+            case 3: // chart (hiscores)
+                g.fillRect(2, 9, 3, 5);
+                g.fillRect(6, 5, 3, 9);
+                g.fillRect(10, 2, 3, 12);
+                break;
+        }
         g.dispose();
         return img;
     }

@@ -100,7 +100,7 @@ public class ClientUI
 		sidebar.setBackground(ColorScheme.DARKER_GRAY_COLOR);
 		sidebar.setOpaque(true);
 		sidebar.putClientProperty(FlatClientProperties.STYLE,
-			"tabInsets: 2,5,2,5; variableSize: true; deselectable: true; tabHeight: 26");
+			"tabInsets: 4,8,4,8; variableSize: true; deselectable: true; tabHeight: 28");
 		sidebar.setSelectedIndex(-1);
 		sidebar.addChangeListener(ev ->
 		{
@@ -160,6 +160,7 @@ public class ClientUI
 		{
 			// Toolbar in the menu bar (title bar area), matching RuneLite
 			JMenuBar menuBar = new JMenuBar();
+			menuBar.setBorder(new EmptyBorder(0, 0, 0, 4));
 			menuBar.add(Box.createGlue());
 			menuBar.add(toolbarPanel);
 			frame.setJMenuBar(menuBar);
@@ -230,30 +231,39 @@ public class ClientUI
 
 	public void addNavigation(NavigationButton navBtn)
 	{
-		if (navBtn.getPanel() == null)
+		Runnable task = () ->
 		{
-			toolbarPanel.add(navBtn, true);
-			return;
-		}
+			if (navBtn.getPanel() == null)
+			{
+				toolbarPanel.add(navBtn, true);
+				return;
+			}
 
-		if (!sidebarEntries.add(navBtn))
-		{
-			return;
-		}
+			if (!sidebarEntries.add(navBtn))
+			{
+				return;
+			}
 
-		final int TAB_SIZE = 16;
-		Icon icon = new ImageIcon(ImageUtil.resizeImage(navBtn.getIcon(), TAB_SIZE, TAB_SIZE));
-		sidebar.insertTab(null, icon, navBtn.getPanel().getWrappedPanel(), navBtn.getTooltip(),
-			sidebarEntries.headSet(navBtn).size());
+			final int TAB_SIZE = 16;
+			Icon icon = new ImageIcon(ImageUtil.resizeImage(navBtn.getIcon(), TAB_SIZE, TAB_SIZE));
+			sidebar.insertTab(null, icon, navBtn.getPanel().getWrappedPanel(), navBtn.getTooltip(),
+				sidebarEntries.headSet(navBtn).size());
 
-		// insertTab changes the selected index when the first tab is inserted, avoid this
-		if (sidebar.getTabCount() == 1)
-		{
+			// insertTab changes the selected index when the first tab is inserted, avoid this
 			sidebar.setSelectedIndex(-1);
+		};
+
+		if (SwingUtilities.isEventDispatchThread())
+		{
+			task.run();
+		}
+		else
+		{
+			SwingUtilities.invokeLater(task);
 		}
 	}
 
-	void removeNavigation(NavigationButton navBtn)
+	public void removeNavigation(NavigationButton navBtn)
 	{
 		if (navBtn.getPanel() == null)
 		{

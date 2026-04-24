@@ -5,9 +5,31 @@ package runelite.api;
  */
 public enum GameState
 {
+	STARTING,
 	LOGIN_SCREEN,
+	LOGIN_SCREEN_AUTHENTICATOR,
 	LOGGING_IN,
+	LOADING,
 	LOGGED_IN,
 	HOPPING,
-	CONNECTION_LOST
+	CONNECTION_LOST,
+	UNKNOWN;
+
+	/**
+	 * Returns the state for a given void-client state integer, or UNKNOWN.
+	 */
+	public static GameState of(int state)
+	{
+		switch (state)
+		{
+			case 0: return STARTING;
+			case 10: return LOGIN_SCREEN;
+			case 20: return LOGGING_IN;
+			case 25: return LOADING;
+			case 30: return LOGGED_IN;
+			case 40: return HOPPING;
+			case 50: return CONNECTION_LOST;
+			default: return UNKNOWN;
+		}
+	}
 }

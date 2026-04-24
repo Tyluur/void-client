@@ -2,90 +2,50 @@ package runelite.adapter;
 
 import runelite.api.Client;
 import runelite.api.GameState;
+import runelite.api.Skill;
+import runelite.api.VoidClient;
 
 import java.awt.Canvas;
 import java.awt.Dimension;
 import java.awt.Point;
 
 /**
- * Adapter that implements RuneLite's Client API using void-client's game state.
+ * Legacy adapter — delegates to VoidClient singleton.
+ * @deprecated Use VoidClient directly via @Inject Client.
  */
+@Deprecated
 public class VoidClientAdapter implements Client
 {
-	private final Canvas canvas;
-	private final Object clientInstance;
+	private final VoidClient delegate = VoidClient.getInstance();
 
-	public VoidClientAdapter(Canvas canvas, Object clientInstance)
-	{
-		this.canvas = canvas;
-		this.clientInstance = clientInstance;
-	}
+	public VoidClientAdapter(Canvas canvas, Object clientInstance) {}
 
-	@Override
-	public Canvas getCanvas()
-	{
-		return canvas;
-	}
-
-	@Override
-	public Dimension getRealDimensions()
-	{
-		if (canvas != null)
-		{
-			return new Dimension(canvas.getWidth(), canvas.getHeight());
-		}
-		return new Dimension(765, 503); // Default RS2 client size
-	}
-
-	@Override
-	public int getViewportXOffset()
-	{
-		// void-client doesn't have viewport offsets like modern RS
-		return 0;
-	}
-
-	@Override
-	public int getViewportYOffset()
-	{
-		// void-client doesn't have viewport offsets like modern RS
-		return 0;
-	}
-
-	@Override
-	public Point getMouseCanvasPosition()
-	{
-		// This would need to be implemented by hooking into void-client's mouse handling
-		// For now, return a default position
-		return new Point(0, 0);
-	}
-
-	@Override
-	public GameState getGameState()
-	{
-		// Map void-client's login state to RuneLite's GameState
-		// This needs to be implemented by examining void-client's state variables
-		// For now, default to LOGGED_IN
-		return GameState.LOGGED_IN;
-	}
-
-	@Override
-	public boolean isResized()
-	{
-		// void-client revision 634 is fixed mode only
-		return false;
-	}
-
-	@Override
-	public int getCanvasWidth()
-	{
-		Dimension dim = getRealDimensions();
-		return dim.width;
-	}
-
-	@Override
-	public int getCanvasHeight()
-	{
-		Dimension dim = getRealDimensions();
-		return dim.height;
-	}
+	@Override public Canvas getCanvas() { return delegate.getCanvas(); }
+	@Override public Dimension getRealDimensions() { return delegate.getRealDimensions(); }
+	@Override public int getViewportXOffset() { return delegate.getViewportXOffset(); }
+	@Override public int getViewportYOffset() { return delegate.getViewportYOffset(); }
+	@Override public Point getMouseCanvasPosition() { return delegate.getMouseCanvasPosition(); }
+	@Override public GameState getGameState() { return delegate.getGameState(); }
+	@Override public boolean isResized() { return delegate.isResized(); }
+	@Override public int getCanvasWidth() { return delegate.getCanvasWidth(); }
+	@Override public int getCanvasHeight() { return delegate.getCanvasHeight(); }
+	@Override public int getTickCount() { return delegate.getTickCount(); }
+	@Override public int getGameCycle() { return delegate.getGameCycle(); }
+	@Override public int getWorld() { return delegate.getWorld(); }
+	@Override public int getFPS() { return delegate.getFPS(); }
+	@Override public int getBaseX() { return delegate.getBaseX(); }
+	@Override public int getBaseY() { return delegate.getBaseY(); }
+	@Override public int getPlane() { return delegate.getPlane(); }
+	@Override public String getLocalPlayerName() { return delegate.getLocalPlayerName(); }
+	@Override public int getLocalPlayerCombatLevel() { return delegate.getLocalPlayerCombatLevel(); }
+	@Override public int getBoostedSkillLevel(Skill skill) { return delegate.getBoostedSkillLevel(skill); }
+	@Override public int getRealSkillLevel(Skill skill) { return delegate.getRealSkillLevel(skill); }
+	@Override public int getSkillExperience(Skill skill) { return delegate.getSkillExperience(skill); }
+	@Override public int getEnergy() { return delegate.getEnergy(); }
+	@Override public int getWeight() { return delegate.getWeight(); }
+	@Override public int getVarbitValue(int varbitId) { return delegate.getVarbitValue(varbitId); }
+	@Override public int getVarpValue(int varpId) { return delegate.getVarpValue(varpId); }
+	@Override public Object getWidget(int groupId, int childId) { return delegate.getWidget(groupId, childId); }
+	@Override public int getScale() { return delegate.getScale(); }
+	@Override public void addChatMessage(int type, String name, String message, String sender) { delegate.addChatMessage(type, name, message, sender); }
 }

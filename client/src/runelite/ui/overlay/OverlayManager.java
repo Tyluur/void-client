@@ -14,6 +14,13 @@ import java.util.Map;
  */
 public class OverlayManager
 {
+	private static final OverlayManager INSTANCE = new OverlayManager();
+
+	public static OverlayManager getInstance()
+	{
+		return INSTANCE;
+	}
+
 	private final List<Overlay> overlays = new ArrayList<>();
 	private final Map<OverlayLayer, List<Overlay>> overlayLayers = new HashMap<>();
 
