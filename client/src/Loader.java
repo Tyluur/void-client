@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.applet.Applet;
 import java.awt.*;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.math.BigInteger;
 import java.net.URL;
 import java.util.ArrayList;
@@ -73,8 +75,8 @@ public class Loader extends Applet {
 
     public void doFrame() {
         setParms();
-        openFrame();
-        startClient();
+        initRuneLiteFrame();
+        startClient(this);
     }
 
     void setParms() {
@@ -110,6 +112,42 @@ public class Loader extends Applet {
         aProperties1.put("worldflags", "8");
     }
 
+    private runelite.ui.ClientUI clientUI;
+
+    void initRuneLiteFrame() {
+        try {
+            clientUI = new runelite.ui.ClientUI();
+            clientUI.init();
+            aJFrame2 = clientUI.getFrame();
+
+            // Add Loader applet into the ClientPanel (game area)
+            aJPanel3.setLayout(new BorderLayout());
+            aJPanel3.add(this);
+            aJPanel3.setPreferredSize(new Dimension(765, 503));
+            clientUI.getClientPanel().add(aJPanel3, BorderLayout.CENTER);
+
+            // Add default navigation buttons (placeholder plugins)
+            addDefaultNavButtons(clientUI);
+
+            // Set window icons
+            ArrayList<Image> icons = new ArrayList<>();
+            for (String name : Arrays.asList("icon-16.png", "icon-32.png", "icon-64.png", "icon-128.png", "icon-256.png")) {
+                URL resource = Loader.class.getResource(name);
+                if (resource != null) {
+                    icons.add(new ImageIcon(resource).getImage());
+                }
+            }
+            aJFrame2.setIconImages(icons);
+
+            // Show the frame
+            clientUI.show();
+            System.out.println("RuneLite frame initialized");
+        } catch (Exception e) {
+            System.err.println("Failed to create RuneLite frame: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
     void openFrame() {
         aJFrame2 = new JFrame("Client");
         aJFrame2.setLayout(new BorderLayout());
@@ -130,15 +168,121 @@ public class Loader extends Applet {
         aJFrame2.setIconImages(icons);
     }
 
-    void startClient() {
+    public static void startClient() {
+        startClient(null);
+    }
+
+    public static void startClient(Applet loaderApplet) {
         try {
-            Applet_Sub1.provideLoaderApplet(this);
-            client var_client = new client();
-            var_client.init();
-            var_client.start();
+            System.out.println("Loading void-client...");
+
+            // Register the Loader applet so client.getParameter() delegates to it
+            if (loaderApplet != null) {
+                Applet_Sub1.provideLoaderApplet(loaderApplet);
+                System.out.println("Loader applet registered for parameter delegation");
+            }
+
+            // Create client instance
+            Class var_client = Class.forName("client");
+            Object clientInstance = var_client.newInstance();
+
+            // Call init() which reads parameters and calls method95() to start the game thread
+            Method initMethod = var_client.getMethod("init");
+            initMethod.invoke(clientInstance);
+
+            System.out.println("Client initialized successfully");
         } catch (Exception e) {
+            System.err.println("Failed to start client: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+
+    private static void addDefaultNavButtons(runelite.ui.ClientUI clientUI) {
+        // Configuration panel
+        clientUI.addNavigation(runelite.ui.NavigationButton.builder()
+            .priority(0)
+            .icon(createIcon(new Color(200, 200, 200), "\u2699"))
+            .tooltip("Configuration")
+            .panel(new runelite.ui.PluginPanel() {
+                { // instance initializer
+                    javax.swing.JLabel title = new javax.swing.JLabel("Configuration");
+                    title.setForeground(Color.WHITE);
+                    title.setFont(title.getFont().deriveFont(16f));
+                    add(title);
+                    javax.swing.JLabel desc = new javax.swing.JLabel("<html>Plugin configuration will appear here.</html>");
+                    desc.setForeground(new Color(170, 170, 170));
+                    add(desc);
+                }
+            })
+            .build());
+
+        // Account panel
+        clientUI.addNavigation(runelite.ui.NavigationButton.builder()
+            .priority(1)
+            .icon(createIcon(new Color(220, 138, 0), "\u263A"))
+            .tooltip("Account")
+            .panel(new runelite.ui.PluginPanel() {
+                {
+                    javax.swing.JLabel title = new javax.swing.JLabel("Account");
+                    title.setForeground(Color.WHITE);
+                    title.setFont(title.getFont().deriveFont(16f));
+                    add(title);
+                    javax.swing.JLabel desc = new javax.swing.JLabel("<html>Not logged in.</html>");
+                    desc.setForeground(new Color(170, 170, 170));
+                    add(desc);
+                }
+            })
+            .build());
+
+        // Loot Tracker panel
+        clientUI.addNavigation(runelite.ui.NavigationButton.builder()
+            .priority(2)
+            .icon(createIcon(new Color(55, 240, 70), "\u2605"))
+            .tooltip("Loot Tracker")
+            .panel(new runelite.ui.PluginPanel() {
+                {
+                    javax.swing.JLabel title = new javax.swing.JLabel("Loot Tracker");
+                    title.setForeground(Color.WHITE);
+                    title.setFont(title.getFont().deriveFont(16f));
+                    add(title);
+                    javax.swing.JLabel desc = new javax.swing.JLabel("<html>No loot tracked yet.</html>");
+                    desc.setForeground(new Color(170, 170, 170));
+                    add(desc);
+                }
+            })
+            .build());
+
+        // HiScores panel
+        clientUI.addNavigation(runelite.ui.NavigationButton.builder()
+            .priority(3)
+            .icon(createIcon(new Color(50, 160, 250), "\u2191"))
+            .tooltip("HiScores")
+            .panel(new runelite.ui.PluginPanel() {
+                {
+                    javax.swing.JLabel title = new javax.swing.JLabel("HiScores");
+                    title.setForeground(Color.WHITE);
+                    title.setFont(title.getFont().deriveFont(16f));
+                    add(title);
+                    javax.swing.JLabel desc = new javax.swing.JLabel("<html>Look up player hiscores.</html>");
+                    desc.setForeground(new Color(170, 170, 170));
+                    add(desc);
+                }
+            })
+            .build());
+    }
+
+    private static java.awt.image.BufferedImage createIcon(Color color, String symbol) {
+        java.awt.image.BufferedImage img = new java.awt.image.BufferedImage(16, 16, java.awt.image.BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = img.createGraphics();
+        g.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+        g.setColor(color);
+        g.setFont(new Font(Font.DIALOG, Font.BOLD, 14));
+        java.awt.FontMetrics fm = g.getFontMetrics();
+        int x = (16 - fm.stringWidth(symbol)) / 2;
+        int y = (16 + fm.getAscent() - fm.getDescent()) / 2;
+        g.drawString(symbol, x, y);
+        g.dispose();
+        return img;
     }
 
     @Override

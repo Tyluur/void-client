@@ -2211,6 +2211,12 @@ final class ha_Sub1 extends ha {
                 if (rectangle.x + i_631_ <= this.anInt7477 && rectangle.y + i_632_ <= anInt7486 && rectangle.x + i_631_ + rectangle.width > 0 && rectangle.y + i_632_ + rectangle.height > 0)
                     this.aClass348_Sub31_7469.method3011(rectangle.y, rectangle.x + i_631_, rectangle.height, graphics, -1, rectangle.x, rectangle.width, rectangle.y + i_632_);
             }
+            // Render RuneLite overlays after rendering game rectangles
+            try {
+                runelite.ui.OverlayIntegration.getInstance().renderOverlays((Graphics2D) graphics);
+            } catch (Exception e) {
+                // Ignore overlay rendering errors to not break game rendering
+            }
         } catch (Exception exception) {
             aCanvas7468.repaint();
         }

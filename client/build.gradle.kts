@@ -12,6 +12,22 @@ repositories {
 
 dependencies {
     implementation(files("../libs/clientlibs.jar"))
+    // RuneLite UI dependencies
+    implementation("com.google.inject:guice:5.1.0") {
+        exclude("com.google.guava", "guava")
+    }
+    implementation("com.google.guava:guava:31.1-jre")
+    implementation("com.formdev:flatlaf:3.2.5")
+    implementation("com.formdev:flatlaf-extras:3.2.5")
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("org.slf4j:slf4j-api:2.0.7")
+    implementation("ch.qos.logback:logback-classic:1.4.7") {
+        exclude("org.slf4j", "slf4j-api")
+    }
+    implementation("net.sf.jopt-simple:jopt-simple:5.0.4")
+    implementation("org.apache.commons:commons-text:1.10.0")
+    implementation("net.java.dev.jna:jna:5.13.0")
+    implementation("net.java.dev.jna:jna-platform:5.13.0")
 }
 
 java {
