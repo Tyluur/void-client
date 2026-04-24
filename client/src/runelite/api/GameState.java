@@ -23,7 +23,18 @@ public enum GameState
 		switch (state)
 		{
 			case 0: return STARTING;
-			case 10: return LOGIN_SCREEN;
+			case 1: return LOGIN_SCREEN; // early connected state
+			case 2: return LOGGING_IN;
+			case 3: return LOGIN_SCREEN_AUTHENTICATOR;
+			case 5: return LOADING;
+			case 7: return LOGGED_IN;
+			case 8: return LOGGED_IN;
+			case 9: return LOGGED_IN;
+			case 10: return LOGGED_IN; // lobby/world select, method1977 considers in-game
+			case 11: return LOGGED_IN;
+			case 12: return LOADING;
+			case 13: return HOPPING;
+			case 14: return CONNECTION_LOST;
 			case 20: return LOGGING_IN;
 			case 25: return LOADING;
 			case 30: return LOGGED_IN;

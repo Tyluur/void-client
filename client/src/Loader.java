@@ -139,6 +139,8 @@ public class Loader extends Applet {
 
             // Load plugins (plugins can now use @Inject for Client, ConfigManager, etc.)
             pluginManager.add(runelite.plugins.tileindicators.TileIndicatorsPlugin.class);
+            pluginManager.add(runelite.plugins.xpdrop.XpDropPlugin.class);
+            pluginManager.add(runelite.plugins.xptracker.XpTrackerPlugin.class);
 
             // Set window icons
             ArrayList<Image> icons = new ArrayList<>();
@@ -200,6 +202,9 @@ public class Loader extends Applet {
             // Call init() which reads parameters and calls method95() to start the game thread
             Method initMethod = var_client.getMethod("init");
             initMethod.invoke(clientInstance);
+
+            // Start GameTick poster for event system
+            runelite.eventbus.GameTickPoster.getInstance().start();
 
             System.out.println("Client initialized successfully");
         } catch (Exception e) {

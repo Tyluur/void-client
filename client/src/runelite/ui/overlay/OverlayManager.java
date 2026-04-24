@@ -39,6 +39,12 @@ public class OverlayManager
 		rebuildOverlayLayers();
 	}
 
+	public void removeIf(java.util.function.Predicate<Overlay> predicate)
+	{
+		overlays.removeIf(predicate);
+		rebuildOverlayLayers();
+	}
+
 	public Collection<Overlay> getLayer(OverlayLayer layer)
 	{
 		return overlayLayers.getOrDefault(layer, Collections.emptyList());
