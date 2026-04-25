@@ -134,6 +134,12 @@ public class Loader extends Applet {
             pluginManager.setClientUI(clientUI);
             pluginManager.setInjector(injector);
 
+            // Register stat update callback for event-driven stat changes
+            runelite.hooks.StatUpdateBridge.register(
+                runelite.eventbus.EventBus.getInstance(),
+                runelite.api.VoidClient.getInstance()
+            );
+
             // Load plugins (plugins can now use @Inject for Client, ConfigManager, etc.)
             pluginManager.add(runelite.plugins.xptracker.XpTrackerPlugin.class);
 

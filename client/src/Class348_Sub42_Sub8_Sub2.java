@@ -1597,6 +1597,12 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8 {
                 if (Class59_Sub1_Sub2.anIntArray8663[i_217_] <= i_215_) Class256.anIntArray3295[i_214_] = i_217_ - -2;
             }
             Class199.anIntArray2632[Class139.method1166(31, Class326.anInt4086++)] = i_214_;
+            // RuneLite integration: Fire stat update callback
+            runelite.hooks.StatUpdateCallback callback = runelite.hooks.StatCallbackManager.getCallback();
+            if (callback != null) {
+                System.out.println("[PacketHandler] Stat update callback: skillIndex=" + i_214_ + " xp=" + i_215_ + " boosted=" + i);
+                callback.onStatUpdate(i_214_, i_215_, i);
+            }
             Class348_Sub3.aClass114_6584 = null;
             return true;
         }

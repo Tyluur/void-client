@@ -8,6 +8,7 @@ import runelite.api.Skill;
 import runelite.config.ConfigGroup;
 import runelite.eventbus.Subscribe;
 import runelite.events.GameTick;
+import runelite.events.StatChanged;
 import runelite.plugins.Plugin;
 import runelite.plugins.PluginDescriptor;
 import runelite.ui.ColorScheme;
@@ -82,7 +83,38 @@ public class XpTrackerPlugin extends Plugin
 			return;
 		}
 
-		checkSkillChanges();
+		// Panel updates now handled by StatChanged events (event-driven)
+		// No polling needed
+	}
+
+	@Subscribe
+	private void onStatChanged(StatChanged event)
+	{
+		Skill skill = event.getSkill();
+		int xp = event.getXp();
+		int level = event.getLevel();
+
+		System.out.println("[XpTracker] StatChanged event: " + skill + " XP=" + xp + " Level=" + level);
+
+		// Update XP state from event-driven stat changes
+		if (!xpState.isTracking(skill))
+		{
+			xpState.updateSkill(skill, xp, xp, level, level);
+		}
+		else
+		{
+			XpState.SkillSnapshot snapshot = xpState.getSnapshot(skill);
+			snapshot.update(xp, level);
+			xpState.updateOrder(skill, true);
+
+			// Update panel immediately
+			XpSnapshotSingle singleSnapshot = createSnapshot(snapshot);
+			xpPanel.updateSkillExperience(true, skill, singleSnapshot);
+		}
+
+		// Update overall panel
+		XpSnapshotSingle overall = createOverallSnapshot();
+		xpPanel.updateTotal(overall);
 	}
 
 	private void initializeSkills()
@@ -101,48 +133,8 @@ public class XpTrackerPlugin extends Plugin
 		}
 	}
 
-	private void checkSkillChanges()
+	private void updatePanelFromState()
 	{
-		java.util.Set<Skill> changedSkills = new java.util.HashSet<>();
-
-		// Iterate through skills in the stored order, falling back to enum order if empty
-		java.util.List<Skill> skillsToCheck = xpState.getOrder().isEmpty()
-			? java.util.Arrays.asList(Skill.values())
-			: new java.util.ArrayList<>(xpState.getOrder());
-
-		for (Skill skill : skillsToCheck)
-		{
-			if (skill == Skill.OVERALL)
-			{
-				continue;
-			}
-
-			int currentXp = client.getSkillExperience(skill);
-			int currentLevel = client.getRealSkillLevel(skill);
-
-			if (!xpState.isTracking(skill))
-			{
-				xpState.updateSkill(skill, currentXp, currentXp, currentLevel, currentLevel);
-			}
-			else
-			{
-				XpState.SkillSnapshot snapshot = xpState.getSnapshot(skill);
-				// Re-initialize if snapshot was created with 0 XP before real data loaded
-				if (snapshot.getStartXp() == 0 && currentXp > 0)
-				{
-					xpState.updateSkill(skill, currentXp, currentXp, currentLevel, currentLevel);
-					changedSkills.add(skill);
-				}
-				else if (currentXp != snapshot.getCurrentXp() || currentLevel != snapshot.getCurrentLevel())
-				{
-					snapshot.update(currentXp, currentLevel);
-					changedSkills.add(skill);
-					// Update order to prioritize this skill (recent XP)
-					xpState.updateOrder(skill, true);
-				}
-			}
-		}
-
 		// Update panel with snapshot data for all tracked skills in order
 		for (Skill skill : xpState.getOrder())
 		{
@@ -157,9 +149,8 @@ public class XpTrackerPlugin extends Plugin
 				continue;
 			}
 
-			boolean skillChanged = changedSkills.contains(skill);
 			XpSnapshotSingle singleSnapshot = createSnapshot(snapshot);
-			xpPanel.updateSkillExperience(skillChanged, skill, singleSnapshot);
+			xpPanel.updateSkillExperience(false, skill, singleSnapshot);
 		}
 
 		// Update overall panel

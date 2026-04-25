@@ -2,7 +2,12 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class186 {
+public abstract class Class186 {
+    boolean aBoolean1900;
+    boolean aBoolean1901;
+    // Interface7_Impl1 anInterface7_Impl1_1902; // Missing class - commented out
+    // Interface7_Impl1 anInterface7_Impl1_1903; // Missing class - commented out
+
     static Class45 aClass45_2490;
     static Class74 aClass74_2491;
     static boolean aBoolean2492 = false;
@@ -11,6 +16,22 @@ abstract class Class186 {
     static Class351 aClass351_2495;
     static String aString2496;
     static int[] anIntArray2497;
+
+    boolean method1848() {
+        return (((Class186) this).aBoolean1900 && !((Class186) this).aBoolean1901);
+    }
+
+    Class186(boolean bool) {
+        ((Class186) this).aBoolean1901 = bool;
+    }
+
+    void method1849() {
+        // if (((Class186) this).anInterface7_Impl1_1903 != null)
+        //     ((Class186) this).anInterface7_Impl1_1903.b();
+        ((Class186) this).aBoolean1900 = false;
+    }
+
+    abstract void method1398(int i, int i_3_, float f, float f_4_, int i_5_, float f_6_, int i_7_, float f_8_, int i_9_, int i_10_, float[] fs);
 
     public static void method1396(int i) {
         aClass45_2490 = null;
@@ -49,8 +70,6 @@ abstract class Class186 {
     public Class186() {
         /* empty */
     }
-
-    abstract void method1398(int i, int i_3_, float f, float f_4_, int i_5_, float f_6_, int i_7_, float f_8_, int i_9_, int i_10_, float[] fs);
 
     static {
         aClass74_2491 = new Class74(13, -1);
