@@ -134,12 +134,7 @@ public class Loader extends Applet {
             pluginManager.setClientUI(clientUI);
             pluginManager.setInjector(injector);
 
-            // Add default navigation buttons (placeholder plugins)
-            addDefaultNavButtons(clientUI);
-
             // Load plugins (plugins can now use @Inject for Client, ConfigManager, etc.)
-            pluginManager.add(runelite.plugins.tileindicators.TileIndicatorsPlugin.class);
-            pluginManager.add(runelite.plugins.xpdrop.XpDropPlugin.class);
             pluginManager.add(runelite.plugins.xptracker.XpTrackerPlugin.class);
 
             // Set window icons
@@ -211,117 +206,6 @@ public class Loader extends Applet {
             System.err.println("Failed to start client: " + e.getMessage());
             e.printStackTrace();
         }
-    }
-
-    private static void addDefaultNavButtons(runelite.ui.ClientUI clientUI) {
-        // Configuration panel
-        clientUI.addNavigation(runelite.ui.NavigationButton.builder()
-            .priority(0)
-            .icon(createIcon(new Color(200, 200, 200), 0))
-            .tooltip("Configuration")
-            .panel(new runelite.ui.PluginPanel() {
-                { // instance initializer
-                    javax.swing.JLabel title = new javax.swing.JLabel("Configuration");
-                    title.setForeground(Color.WHITE);
-                    title.setFont(title.getFont().deriveFont(16f));
-                    add(title);
-                    javax.swing.JLabel desc = new javax.swing.JLabel("<html>Plugin configuration will appear here.</html>");
-                    desc.setForeground(new Color(170, 170, 170));
-                    add(desc);
-                }
-            })
-            .build());
-
-        // Account panel
-        clientUI.addNavigation(runelite.ui.NavigationButton.builder()
-            .priority(1)
-            .icon(createIcon(new Color(220, 138, 0), 1))
-            .tooltip("Account")
-            .panel(new runelite.ui.PluginPanel() {
-                {
-                    javax.swing.JLabel title = new javax.swing.JLabel("Account");
-                    title.setForeground(Color.WHITE);
-                    title.setFont(title.getFont().deriveFont(16f));
-                    add(title);
-                    javax.swing.JLabel desc = new javax.swing.JLabel("<html>Not logged in.</html>");
-                    desc.setForeground(new Color(170, 170, 170));
-                    add(desc);
-                }
-            })
-            .build());
-
-        // Loot Tracker panel
-        clientUI.addNavigation(runelite.ui.NavigationButton.builder()
-            .priority(2)
-            .icon(createIcon(new Color(55, 240, 70), 2))
-            .tooltip("Loot Tracker")
-            .panel(new runelite.ui.PluginPanel() {
-                {
-                    javax.swing.JLabel title = new javax.swing.JLabel("Loot Tracker");
-                    title.setForeground(Color.WHITE);
-                    title.setFont(title.getFont().deriveFont(16f));
-                    add(title);
-                    javax.swing.JLabel desc = new javax.swing.JLabel("<html>No loot tracked yet.</html>");
-                    desc.setForeground(new Color(170, 170, 170));
-                    add(desc);
-                }
-            })
-            .build());
-
-        // HiScores panel
-        clientUI.addNavigation(runelite.ui.NavigationButton.builder()
-            .priority(3)
-            .icon(createIcon(new Color(50, 160, 250), 3))
-            .tooltip("HiScores")
-            .panel(new runelite.ui.PluginPanel() {
-                {
-                    javax.swing.JLabel title = new javax.swing.JLabel("HiScores");
-                    title.setForeground(Color.WHITE);
-                    title.setFont(title.getFont().deriveFont(16f));
-                    add(title);
-                    javax.swing.JLabel desc = new javax.swing.JLabel("<html>Look up player hiscores.</html>");
-                    desc.setForeground(new Color(170, 170, 170));
-                    add(desc);
-                }
-            })
-            .build());
-    }
-
-    private static java.awt.image.BufferedImage createIcon(Color color, int shape) {
-        java.awt.image.BufferedImage img = new java.awt.image.BufferedImage(16, 16, java.awt.image.BufferedImage.TYPE_INT_ARGB);
-        Graphics2D g = img.createGraphics();
-        g.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
-        g.setColor(color);
-        switch (shape) {
-            case 0: // gear (config)
-                g.setStroke(new java.awt.BasicStroke(1.5f));
-                g.drawOval(4, 4, 8, 8);
-                g.fillOval(6, 6, 4, 4);
-                for (int a = 0; a < 360; a += 45) {
-                    double r = Math.toRadians(a);
-                    g.drawLine(8 + (int)(5 * Math.cos(r)), 8 + (int)(5 * Math.sin(r)),
-                               8 + (int)(7 * Math.cos(r)), 8 + (int)(7 * Math.sin(r)));
-                }
-                break;
-            case 1: // person (account)
-                g.fillOval(5, 2, 6, 6);
-                g.fillArc(2, 9, 12, 10, 0, 180);
-                break;
-            case 2: // chest (loot)
-                g.fillRoundRect(2, 5, 12, 9, 3, 3);
-                g.setColor(color.darker());
-                g.drawLine(2, 9, 14, 9);
-                g.setColor(color);
-                g.fillOval(6, 7, 4, 4);
-                break;
-            case 3: // chart (hiscores)
-                g.fillRect(2, 9, 3, 5);
-                g.fillRect(6, 5, 3, 9);
-                g.fillRect(10, 2, 3, 12);
-                break;
-        }
-        g.dispose();
-        return img;
     }
 
     @Override

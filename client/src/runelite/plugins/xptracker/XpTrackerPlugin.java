@@ -178,7 +178,8 @@ public class XpTrackerPlugin extends Plugin
 			snapshot.getXpRemainingToGoal(),
 			snapshot.getXpPerHour(),
 			snapshot.getSkillProgressToGoal(),
-			snapshot.getTimeTillGoalShort()
+			snapshot.getTimeTillGoalShort(),
+			snapshot.isCompactView()
 		);
 	}
 
@@ -190,7 +191,8 @@ public class XpTrackerPlugin extends Plugin
 			0,
 			xpState.getTotalXpPerHour(),
 			0.0,
-			"N/A"
+			"N/A",
+			false
 		);
 	}
 
@@ -213,6 +215,17 @@ public class XpTrackerPlugin extends Plugin
 	void updateSkillOrderState(Skill skill, int newPosition)
 	{
 		xpState.setOrder(skill, newPosition);
+	}
+
+	/**
+	 * Update the stored 'compact view' state of a skill, following it being toggled via the UI.
+	 *
+	 * @param skill       Skill that has been toggled
+	 * @param compactView New 'compact view' flag
+	 */
+	void setSkillCompactViewState(Skill skill, boolean compactView)
+	{
+		xpState.setCompactView(skill, compactView);
 	}
 
 	private static BufferedImage createIcon()

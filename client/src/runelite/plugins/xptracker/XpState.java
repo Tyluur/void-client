@@ -93,6 +93,15 @@ public class XpState
 		return order;
 	}
 
+	void setCompactView(Skill skill, boolean compactView)
+	{
+		SkillSnapshot snapshot = skillSnapshots.get(skill);
+		if (snapshot != null)
+		{
+			snapshot.setCompactView(compactView);
+		}
+	}
+
 	public int getTotalXpGained()
 	{
 		return skillSnapshots.values().stream().mapToInt(SkillSnapshot::getXpGained).sum();
@@ -122,6 +131,7 @@ public class XpState
 		private int currentLevel;
 		private final long startTime;
 		private long lastUpdateTime;
+		private boolean compactView;
 
 		public SkillSnapshot(int startXp, int currentXp, int startLevel, int currentLevel)
 		{
@@ -168,6 +178,16 @@ public class XpState
 		public void setCurrentLevel(int level)
 		{
 			this.currentLevel = level;
+		}
+
+		public void setCompactView(boolean compactView)
+		{
+			this.compactView = compactView;
+		}
+
+		public boolean isCompactView()
+		{
+			return compactView;
 		}
 
 		public int getXpGained()

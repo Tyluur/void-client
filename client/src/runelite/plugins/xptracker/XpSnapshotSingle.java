@@ -11,10 +11,11 @@ class XpSnapshotSingle
 	private final int xpPerHour;
 	private final double skillProgressToGoal;
 	private final String timeTillGoalShort;
+	private final boolean compactView;
 
 	XpSnapshotSingle(int startLevel, int endLevel, int startGoalXp, int endGoalXp,
 					 int xpGainedInSession, int xpRemainingToGoal, int xpPerHour,
-					 double skillProgressToGoal, String timeTillGoalShort)
+					 double skillProgressToGoal, String timeTillGoalShort, boolean compactView)
 	{
 		this.startLevel = startLevel;
 		this.endLevel = endLevel;
@@ -25,6 +26,7 @@ class XpSnapshotSingle
 		this.xpPerHour = xpPerHour;
 		this.skillProgressToGoal = skillProgressToGoal;
 		this.timeTillGoalShort = timeTillGoalShort;
+		this.compactView = compactView;
 	}
 
 	int getStartLevel()
@@ -70,5 +72,10 @@ class XpSnapshotSingle
 	String getTimeTillGoalShort()
 	{
 		return timeTillGoalShort;
+	}
+
+	boolean isCompactView()
+	{
+		return compactView;
 	}
 }

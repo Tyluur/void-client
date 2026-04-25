@@ -29,6 +29,7 @@ class XpInfoBox extends JPanel
 	private final JPanel statsPanel = new JPanel();
 	private final JPanel progressWrapper = new JPanel();
 	private final ProgressBar progressBar = new ProgressBar();
+	private final JLabel compactSkillIcon;
 
 	private final JLabel topLeftStat = new JLabel();
 	private final JLabel bottomLeftStat = new JLabel();
@@ -74,11 +75,15 @@ class XpInfoBox extends JPanel
 		progressWrapper.setLayout(new BorderLayout());
 		progressWrapper.setBorder(BorderFactory.createEmptyBorder(0, 7, 7, 7));
 
+		compactSkillIcon = getSkillIcon(iconManager, skill, 25, 16, true);
+		compactSkillIcon.setVisible(false);
+
 		progressBar.setMaximumValue(100);
 		progressBar.setBackground(new Color(61, 56, 49));
 		progressBar.setForeground(SkillColor.find(skill).getColor());
 		progressBar.setDimmedText("Paused");
 
+		progressWrapper.add(compactSkillIcon, BorderLayout.WEST);
 		progressWrapper.add(progressBar, BorderLayout.CENTER);
 
 		container.add(headerPanel, BorderLayout.NORTH);
@@ -90,6 +95,21 @@ class XpInfoBox extends JPanel
 		container.addMouseMotionListener(mouseDragEventForwarder);
 		progressBar.addMouseListener(mouseDragEventForwarder);
 		progressBar.addMouseMotionListener(mouseDragEventForwarder);
+
+		// collapse/expand on mouse click
+		final java.awt.event.MouseAdapter clickToggleCompact = new java.awt.event.MouseAdapter()
+		{
+			@Override
+			public void mouseClicked(java.awt.event.MouseEvent e)
+			{
+				if (e.getButton() == java.awt.event.MouseEvent.BUTTON1)
+				{
+					xpTrackerPlugin.setSkillCompactViewState(skill, toggleCompactView());
+				}
+			}
+		};
+		container.addMouseListener(clickToggleCompact);
+		progressBar.addMouseListener(clickToggleCompact);
 
 		add(container, BorderLayout.NORTH);
 	}
@@ -105,6 +125,8 @@ class XpInfoBox extends JPanel
 
 	void update(boolean updated, XpSnapshotSingle snapshot)
 	{
+		setCompactView(snapshot.isCompactView());
+
 		if (updated)
 		{
 			if (getParent() != panel)
@@ -172,6 +194,20 @@ class XpInfoBox extends JPanel
 	private static String colorToHex(Color color)
 	{
 		return String.format("#%02x%02x%02x", color.getRed(), color.getGreen(), color.getBlue());
+	}
+
+	private boolean toggleCompactView()
+	{
+		final boolean isCompact = !headerPanel.isVisible();
+		setCompactView(!isCompact);
+		return !isCompact;
+	}
+
+	private void setCompactView(final boolean compact)
+	{
+		progressWrapper.setBorder(compact ? BorderFactory.createEmptyBorder(0, 2, 7, 7) : BorderFactory.createEmptyBorder(0, 7, 7, 7));
+		headerPanel.setVisible(!compact);
+		compactSkillIcon.setVisible(compact);
 	}
 
 	Skill getSkill()
