@@ -65,7 +65,7 @@ class XpInfoBox extends JPanel
 		statsPanel.add(bottomLeftStat);
 		statsPanel.add(bottomRightStat);
 
-		JLabel headerSkillIcon = getSkillIcon(iconManager, skill, 35, 35);
+		JLabel headerSkillIcon = getSkillIcon(iconManager, skill, 25, 16, true);
 		headerPanel.add(headerSkillIcon, BorderLayout.WEST);
 		headerPanel.add(statsPanel, BorderLayout.CENTER);
 
@@ -122,14 +122,14 @@ class XpInfoBox extends JPanel
 		bottomRightStat.setText(htmlLabel("TTL: ", snapshot.getTimeTillGoalShort()));
 	}
 
-	private static JLabel getSkillIcon(SkillIconManager iconManager, Skill skill, int width, int height)
+	private static JLabel getSkillIcon(SkillIconManager iconManager, Skill skill, int width, int height, boolean small)
 	{
 		JLabel skillIcon = new JLabel();
 		ImageIcon icon = null;
-		BufferedImage img = iconManager.getSkillImage(skill);
+		BufferedImage img = iconManager.getSkillImage(skill, small);
 		if (img != null)
 		{
-			icon = new ImageIcon(img.getScaledInstance(width, height, Image.SCALE_SMOOTH));
+			icon = new ImageIcon(img);
 		}
 		skillIcon.setIcon(icon);
 		skillIcon.setPreferredSize(new Dimension(width, height));

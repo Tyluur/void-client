@@ -164,10 +164,10 @@ public class XpPanel extends PluginPanel
 
 	private ImageIcon loadOverallIcon()
 	{
-		java.awt.image.BufferedImage img = iconManager.getSkillImage(Skill.OVERALL);
+		java.awt.image.BufferedImage img = iconManager.getSkillImage(Skill.OVERALL, true);
 		if (img != null)
 		{
-			return new ImageIcon(img.getScaledInstance(35, 35, Image.SCALE_SMOOTH));
+			return new ImageIcon(img);
 		}
 		return null;
 	}

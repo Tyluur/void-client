@@ -106,9 +106,9 @@ public class XpTrackerPlugin extends Plugin
 		java.util.Set<Skill> changedSkills = new java.util.HashSet<>();
 
 		// Iterate through skills in the stored order, falling back to enum order if empty
-		java.util.List<Skill> skillsToCheck = xpState.getOrder().isEmpty() 
+		java.util.List<Skill> skillsToCheck = xpState.getOrder().isEmpty()
 			? java.util.Arrays.asList(Skill.values())
-			: xpState.getOrder();
+			: new java.util.ArrayList<>(xpState.getOrder());
 
 		for (Skill skill : skillsToCheck)
 		{
