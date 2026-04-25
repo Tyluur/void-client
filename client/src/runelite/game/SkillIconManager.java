@@ -20,8 +20,12 @@ public class SkillIconManager
 			return imgCache[skillIdx];
 		}
 
-		String skillIconPath = (small ? "/skill_icons_small/" : "/skill_icons/")
-			+ skill.getName().toLowerCase() + ".png";
+		String skillName = skill.getName().toLowerCase();
+		if (skill == Skill.HITPOINTS)
+		{
+			skillName = "constitution";
+		}
+		String skillIconPath = "/skill_icons_634/" + skillName + ".png";
 
 		try (InputStream in = getClass().getResourceAsStream(skillIconPath))
 		{

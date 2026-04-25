@@ -171,7 +171,7 @@ public class XpTrackerPlugin extends Plugin
 	{
 		return new XpSnapshotSingle(
 			snapshot.getStartLevel(),
-			snapshot.getCurrentLevel(),
+			snapshot.getCurrentLevel() >= 99 ? 99 : snapshot.getCurrentLevel() + 1,
 			Experience.getXpForLevel(snapshot.getStartLevel()),
 			Experience.getXpForLevel(snapshot.getCurrentLevel() + 1),
 			snapshot.getXpGained(),

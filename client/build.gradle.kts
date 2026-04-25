@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "world.gregs.void"
-version = "1.2.0"
+version = "1.2.1"
 
 repositories {
     mavenCentral()
@@ -52,7 +52,6 @@ application {
 tasks.shadowJar {
     archiveBaseName.set("void-client")
     archiveClassifier.set("")
-    minimize()
 }
 
 // Must be a 32-bit jre - ideally with jlink
