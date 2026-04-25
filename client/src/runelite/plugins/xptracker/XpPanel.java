@@ -60,7 +60,6 @@ public class XpPanel extends PluginPanel
 		overallPanel.add(overallInfo, BorderLayout.CENTER);
 
 		infoBoxPanel = new DragAndDropReorderPane();
-		infoBoxPanel.setBackground(ColorScheme.DARK_GRAY_COLOR);
 		infoBoxPanel.addDragListener(component ->
 		{
 			XpInfoBox c = (XpInfoBox) component;

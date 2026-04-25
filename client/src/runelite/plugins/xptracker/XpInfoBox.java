@@ -8,6 +8,7 @@ import runelite.ui.ColorScheme;
 import runelite.ui.DynamicGridLayout;
 import runelite.ui.FontManager;
 import runelite.ui.SkillColor;
+import runelite.ui.components.MouseDragEventForwarder;
 import runelite.ui.components.ProgressBar;
 
 import javax.swing.*;
@@ -82,6 +83,13 @@ class XpInfoBox extends JPanel
 
 		container.add(headerPanel, BorderLayout.NORTH);
 		container.add(progressWrapper, BorderLayout.SOUTH);
+
+		// forward mouse drag events to parent panel for drag and drop reordering
+		MouseDragEventForwarder mouseDragEventForwarder = new MouseDragEventForwarder(panel);
+		container.addMouseListener(mouseDragEventForwarder);
+		container.addMouseMotionListener(mouseDragEventForwarder);
+		progressBar.addMouseListener(mouseDragEventForwarder);
+		progressBar.addMouseMotionListener(mouseDragEventForwarder);
 
 		add(container, BorderLayout.NORTH);
 	}
